@@ -15,14 +15,39 @@ maps:
       '4': Legendarna
       '5': Eteryczna
   realmDescriptions(map):
-    galeforge: \t\t Galeforge jest miastem <c>innowacji i postępu</c>, podbite przez wspaniałe Imperium Wallisii. Położone między Walisią i <c>archipelagiem</c>, jest miejscem w którym rozkwita technologia oraz przemysł.\n\n\t\t Mieszkańcy Galeforge są <c>ambitni i dumni</c>, nieustannie przesuwając granice tego, co możliwe. Miasto jest tętniącą życiem metropolią, <c>gdzie ciągle słychać pracujące fabryki</c>, a ulice pełne są kupców sprzedających najnowsze wynalazki.
-    gdte: \t\t Wielkie Księstwo Trellin-Erdwise, podzielone <c>w obliczu obecnego kryzysu</c>, jest krainą naturalnego <c>piękna</c> i <c>wyzwań</c>.\n\n\t\t Bagna Trellin oraz przybrzeżne porty w Erdwise są zarówno urokliwe, jak i niebezpieczne. Mieszkańcy Wielkiego Księstwa charakteryzują się <c>dumą and chciwością</c>.
-    jarvonia: \t\t Jarvonia, <c>kraina pełna lodu i mroku</c> rządzona przez potężne bractwo religijne, jest niezależnym królestwem wytrzymałych ludzi, których łączy niezachwiana <c>wiara</c> i <c>zaciekła determinacja</c> by przetrwać.\n\n\t\t Pomimo surowych zim i odosobnienia, znajdują siłę i opiekę dzięki swojej religii, a ich <c>serca płoną jasno w obliczu zimna</c>.
+    galeforge: \t\t Galeforge jest miastem <c>innowacji i postępu</c>, podbite przez
+      wspaniałe Imperium Wallisii. Położone między Walisią i <c>archipelagiem</c>,
+      jest miejscem w którym rozkwita technologia oraz przemysł.\n\n\t\t Mieszkańcy
+      Galeforge są <c>ambitni i dumni</c>, nieustannie przesuwając granice tego, co
+      możliwe. Miasto jest tętniącą życiem metropolią, <c>gdzie ciągle słychać pracujące
+      fabryki</c>, a ulice pełne są kupców sprzedających najnowsze wynalazki.
+    gdte: \t\t Wielkie Księstwo Trellin-Erdwise, podzielone <c>w obliczu obecnego
+      kryzysu</c>, jest krainą naturalnego <c>piękna</c> i <c>wyzwań</c>.\n\n\t\t
+      Bagna Trellin oraz przybrzeżne porty w Erdwise są zarówno urokliwe, jak i niebezpieczne.
+      Mieszkańcy Wielkiego Księstwa charakteryzują się <c>dumą and chciwością</c>.
+    jarvonia: \t\t Jarvonia, <c>kraina pełna lodu i mroku</c> rządzona przez potężne
+      bractwo religijne, jest niezależnym królestwem wytrzymałych ludzi, których łączy
+      niezachwiana <c>wiara</c> i <c>zaciekła determinacja</c> by przetrwać.\n\n\t\t
+      Pomimo surowych zim i odosobnienia, znajdują siłę i opiekę dzięki swojej religii,
+      a ich <c>serca płoną jasno w obliczu zimna</c>.
     painfulislands: Wyspy bólu
+    "wallisia": ''
+    "wrentmark": ''
+    "ewerethien": ''
+    "braemercia": ''
+    "ridraddak": ''
+    "ethereal": ''
   realmMottos(map):
     galeforge: Kształtuj przyszłość i niczego się nie bój
     painfulislands: Wyspy bólu
     wrentmark: Nasze złoto lśni jaśniej od słońca
+    "jarvonia": ''
+    "gdte": ''
+    "wallisia": ''
+    "ewerethien": ''
+    "braemercia": ''
+    "ridraddak": ''
+    "ethereal": ''
   realms(map):
     braemercia: Braemercia
     ethereal: Ethereal
@@ -34,6 +59,8 @@ maps:
     ridraddak: Rid Raddak
     wallisia: Wallisia
     wrentmark: Wrentmark
+  raceDescriptions(map):
+    "human": ''
 singulars:
   items:
     gearTypes:
@@ -53,6 +80,7 @@ singulars:
       ring: Pierścień
       secondary: Drugorzędny
       woodcutting: Narzędzie do cięcia drewna
+      back: ''
     itemTags:
       fine: Zacne
     itemTypes:
@@ -63,6 +91,26 @@ singulars:
       material: Materiał
       other: Różne
       quest: Zadanie
+      collectible: ''
   requirements:
     skills:
-      level: Wymaga <skill skill="${skill}" level="${level}"" isRequirement="true"/> poziomu.
+      level: Wymaga <skill skill="${skill}" level="${level}"" isRequirement="true"/>
+        poziomu.
+  placeholder:
+    placeholder: ''
+  intro:
+    welcome: ''
+    whereAreYouFrom: ''
+  commonPhrases:
+    noActivity: ''
+    allSkills: ''
+    lookingForInternet: ''
+plurals:
+  items:
+    money(param=amount):
+      two: ''
+      few: ''
+      many: ''
+      other: ''
+      zero: ''
+      one: ''
