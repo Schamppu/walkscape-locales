@@ -4,7 +4,7 @@ maps:
       '0': Normal
       '1': Bra
       '2': Flott
-      '3': |2-
+      '3': |-
         Utmerket
       '4': Perfekt
       '5': Evig
@@ -21,6 +21,11 @@ maps:
     ewerethien: Ewerethien
     painfulislands: Smerteøyene
     ridraddak: Rid Raddak
+    "jarvonia": ''
+    "gdte": ''
+    "wallisia": ''
+    "galeforge": ''
+    "wrentmark": ''
   realmMottos(map):
     braemercia: Braemercia
     ethereal: Eterisk
@@ -29,7 +34,7 @@ maps:
     gdte: Bundet av tidevannet og sivet
     jarvonia: Gjennom kulden brenner hjertene våre sterkt
     painfulislands: Smerteøyene
-    ridraddak: |2-
+    ridraddak: |-
       Rid Raddak
     wallisia: Der avlingene blir høye, gjør vi det også
     wrentmark: Gullet vårt brenner sterkere enn solen
@@ -44,13 +49,15 @@ maps:
     ridraddak: Rid Raddak
     wallisia: Wallisia
     wrentmark: Wrentmark
+  raceDescriptions(map):
+    "human": ''
 singulars:
   items:
     gearTypes:
       agility: Smidighetsverktøy
       cape: Kappe
       chest: Bryst
-      cooking: |2-
+      cooking: |-
         Matlagingsverktøy
       feet: Føtter
       fishing: Fiskeverktøy
@@ -64,6 +71,7 @@ singulars:
       ring: Ring
       secondary: Sekundær
       woodcutting: Trehoggingsverktøy
+      back: ''
     itemTags:
       fine: Fint
     itemTypes:
@@ -74,8 +82,26 @@ singulars:
       material: Materiale
       other: Annet
       quest: Oppdrag
+      collectible: ''
   placeholder:
     placeholder: Plassholder
   requirements:
     skills:
-      level: Krever <skill skill skill="${skill}" level="${level}"" isRequirement="true"/> nivå.
+      level: Krever <skill skill skill="${skill}" level="${level}"" isRequirement="true"/>
+        nivå.
+  intro:
+    welcome: ''
+    whereAreYouFrom: ''
+  commonPhrases:
+    noActivity: ''
+    allSkills: ''
+    lookingForInternet: ''
+plurals:
+  items:
+    money(param=amount):
+      zero: ''
+      one: ''
+      two: ''
+      few: ''
+      many: ''
+      other: ''
