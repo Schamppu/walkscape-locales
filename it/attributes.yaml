@@ -1,0 +1,42 @@
+singulars:
+  skilling:
+    chestFind:
+      global:
+        desc: '-'
+        name: '-'
+      whileMainSkill:
+        desc: '-'
+        text: |
+          <stat s="chestFind"/> mentre <supp k="skill"/>
+      whileTraveling:
+        desc: Mentre viaggi verso la tua prossima meta, ti imbatti in un baule! Con attenzione, lo prendi e lo metti nello zaino.
+        name: Ritrovamenti fortunati
+        text: <stat s="chestFind"/> mentre viaggi
+    craftingOutcome:
+      global:
+        desc: Le tue abilità ed esperienze nella lavorazione non ti hanno traviato, il lavoro che hai fatto regge bene.
+      whileMainSkill:
+        text: |
+          <stat s="craftingOutcome"/> mentre <supp k="skill"/>
+    doubleAction:
+      whileMainSkill:
+        text: |
+          <stat s="doubleAction"/> mentre <supp k="skill"/>
+      whileTraveling:
+        text: |
+          <stat s="doubleAction"/> mentre viaggi
+    doubleRewards:
+      whileMainSkill:
+        text: |
+          <stat s="doubleRewards"/> mentre <supp k="skill"/>
+    experience:
+      whileMainSkill:
+        text: |
+          <stat s="bonusExperience"/> mentre <supp k="skill"/>
+      whileTraveling:
+        text: |
+          <stat s="bonusExperience"/>mentre viaggi
+    fineMaterialFind:
+      whileMainSkill:
+        text: |
+          <stat s="fineMaterialFind"/> mentre <supp k="skill"/>
