@@ -57,14 +57,17 @@ singulars:
     phrases:
       abilities: Abilities
       useAbility: Use ability
+      useConsumable: Use consumable
       noAction: No action
       holdToCast: Hold to cast
+      holdToConsume: Hold to consume
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Requirements to use are not met:'
       followingMustBeTrueToTick: 'Following must be true for the cooldown to decrease:'
       cooldownRemaining: 'Cooldown remaining:'
       cooldownReady: 'Cooldown: Ready'
+      noCooldown: 'No cooldown.'
   treasury:
     phrases:
       noItems: You have no treasures to open. You can gain chests from various activities.
@@ -101,6 +104,13 @@ singulars:
       allSkills: All skills
       noItemEquipped: No item equipped
       noItemSelected: No item selected
+      duration: Duration
+      durationInSteps: Active for <c>${steps}</c> <icon i="Steps" /> steps
+      inUse: In use
+      disableWhenChanging: Disable when changing activity
+      enableWhenBack: Re-enable when starting an activity where previously used
+      selectedConsumable: Selected consumable
+      consumables: Consumables
     options:
       consenseInventory: Condense inventory
       expandInventory: Expand inventory
