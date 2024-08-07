@@ -1,4 +1,9 @@
 singulars:
+  activity:
+    info:
+      consumablesUsage: You can choose a <c>food</c> and a <c>potion</c> to use while doing activities.
+    phrases:
+      consumables: Consumables
   character:
     info:
       skillBreakdown: Here is the total breakdown of all of the skills your character has leveled up throughout your journey.
@@ -57,19 +62,25 @@ singulars:
     phrases:
       abilities: Abilities
       useAbility: Use ability
+      useConsumable: Use consumable
       noAction: No action
       holdToCast: Hold to cast
+      holdToUse: Hold to use
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Requirements to use are not met:'
       followingMustBeTrueToTick: 'Following must be true for the cooldown to decrease:'
       cooldownRemaining: 'Cooldown remaining:'
       cooldownReady: 'Cooldown: Ready'
+      noCooldown: 'No cooldown.'
   treasury:
     phrases:
       noItems: You have no treasures to open. You can gain chests from various activities.
       openChest: Open
       openAll: Open all
+  jobs:
+    phrases:
+      rewards: Completion rewards
   inventory:
     info:
       noItemEquipped: No item equipped. \n\n You can equip an item by selecting one from the list below and pressing "Equip".
@@ -101,6 +112,15 @@ singulars:
       allSkills: All skills
       noItemEquipped: No item equipped
       noItemSelected: No item selected
+      duration: Duration
+      durationInSteps: Active for <c>${steps}</c> <icon i="Steps" /> steps
+      inUse: In use
+      disableWhenChanging: Disable when changing activity
+      enableWhenBack: Re-enable when starting an activity where previously used
+      selectedConsumable: Selected consumable
+      consumables: Consumables
+      noConsumableSelected: No consumable selected. You can select one from below.
+      noConsumables: No consumables in your inventory.
     options:
       consenseInventory: Condense inventory
       expandInventory: Expand inventory
@@ -169,6 +189,7 @@ singulars:
       services: Services
       buildings: Buildings
       noActivites: No activites available in this location.
+      factions: Factions
   pfpCreation:
     buttons:
       randomize: Randomize
