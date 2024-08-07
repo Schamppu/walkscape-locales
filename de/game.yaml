@@ -14,6 +14,9 @@ maps:
       '3': Episch
       '4': Legendär
       '5': Ätherisch
+    consumableTypes(map):
+      "food": Essen
+      "potion": Trank
   raceDescriptions(map):
     human: \t\t In den ausgedehnten und verzauberten Weiten von <c>Arenum</c> haben
       Menschen ihren Anspruch auf <c>den Westlichen Kontinent</c> erhoben. Diese gewaltigen
@@ -122,18 +125,19 @@ singulars:
       level: Erfordert <skill skill="${skill}" level="${level}"" isRequirement="true"/>
         Level.
   commonPhrases:
-    allSkills: ''
-    lookingForInternet: ''
-    noActivity: ''
+    allSkills: 'Alle Fähigkeiten'
+    lookingForInternet: 'Suche Internet...'
+    noActivity: 'Keine Aktivität.'
   intro:
-    welcome: ''
-    whereAreYouFrom: ''
+    welcome: 'Willkommen in Arenum, Fremder. Scheint als wärst du knapp vor <hl>Kallaheim</hl>
+      aufgetaucht, eine Großstadt im Norden.'
+    whereAreYouFrom: 'Darf ich fragen wo Sie herkommen?'
 plurals:
   items:
     money(param=amount):
-      zero: ''
-      one: ''
-      two: ''
-      few: ''
-      many: ''
-      other: ''
+      zero: '-'
+      one: 'Münze'
+      two: '-'
+      few: '-'
+      many: '-'
+      other: 'Münzen'
