@@ -127,6 +127,12 @@ singulars:
         shoes:
           desc: Zumindest sind sie leichter als das Eisenpaar!
           name: Bronzestiefel
+        shield:
+          desc: Ein Schild.
+          name: Bronzeschild
+        sword:
+          name: Bronzeschwert
+          desc: Ein Schwert.
       copper:
         chest:
           desc: Benötigt eine beträchtliche Menge an Kupfer, schützt aber die wichtigsten
@@ -150,6 +156,12 @@ singulars:
         shoes:
           desc: Ein Paar schwerer Stiefel, die einen geringen Schutz bieten.
           name: Kupferstiefel
+        sword:
+          name: Kupferschwert
+          desc: Ein leichtes Schwert.
+        shield:
+          name: Kupferschild
+          desc: Ein leichter Schild.
       farganite:
         chest:
           desc: Eine undurchdringliche Festung auf deiner Brust, auf wessen der Feind
@@ -173,6 +185,10 @@ singulars:
         shoes:
           desc: Zumindest sind sie heller als das schwarze Paar!
           name: Farganitstiefel
+        sword:
+          desc: Ein blaues Schwert.
+        shield:
+          desc: Ein blauer Schild.
       iron:
         chest:
           desc: Es agiert als ein unnachgiebiges Bollwerk gegen Gefahr, und schützt
@@ -199,6 +215,12 @@ singulars:
             dass sie von einem schweren Karren überfahren werden könnten und es unverseht
             überstehen.
           name: Eisenstiefel
+        sword:
+          name: Eisenschwert
+          desc: Ein Schwert.
+        shield:
+          name: Eisenschild
+          desc: Ein Schild.
       steel:
         chest:
           desc: Ein mächtiges Bollwerk für den Oberkörper und ein Zeugnis für den
@@ -225,6 +247,12 @@ singulars:
         shoes:
           desc: Zumindest sind sie leichter als das Eisenpaar!
           name: Stahlstiefel
+        sword:
+          name: Stahlschwert
+          desc: Ein glänzendes Schwert.
+        shield:
+          name: Stahlschild
+          desc: Ein glänzender Schild.
       tarsilium:
         chest:
           desc: Ein schwarzer Plattenpanzer.
@@ -244,6 +272,17 @@ singulars:
         shoes:
           desc: Ein schwarzes Paar Schuhe. Zumindest sind sie leichter als das Stahlpaar!
           name: Tarsiliumstiefel
+        sword:
+          desc: Ein schwarzes Schwert.
+        shield:
+          desc: Ein schwarzer Schild.
+      basic:
+        woodenSword:
+          name: Holzschwert
+          desc: Du hoffst, dass du dich mit diesem einfachen Stock verteidigen kannst.
+        woodenShield:
+          name: Holzschild
+          desc: Du hoffst, dass du dich mit diesem einfachen Schild verteidigen kannst.
     skilling:
       fishing:
         basicFishingPole:
@@ -270,6 +309,13 @@ singulars:
           desc: Das gemeine Netz, ein bescheidenes Werkzeug einfacher Fischer. Kaum
             mehr als einpaar zusammengebundene Seilstücke.
           name: Kleines Fischernetz
+        willowFishingRod:
+          name: Weidenangel
+          desc: Diese Angel aus Weide ist leicht und fühlt sich sanft an.
+        advancedFishingRod:
+          desc: Diese fortgeschrittenen Angel soll vom professionellen Fischern benutzt
+            werden.
+          name: Fortgeschrittenen Angel
       mining:
         basicPickaxe:
           desc: Die gemeine Spitzhacke, ein bescheidenes Werkzeug einfacher Bergmänner.
@@ -322,6 +368,26 @@ singulars:
         tarsiliumHatchet:
           desc: Eine schwarze Axt.
           name: Tarsiliumbeil
+        bronzeHatchet:
+          name: Bronzebeil
+          desc: Gut für Anfänger die ein paar Bäume fällen wollen.
+      miscellaneous:
+        bagOfRocks:
+          name: Tasche mit Steinen
+          desc: Es ist schwierig ihn mitzunehmen. Warum machst du das?
+      foraging:
+        stoneSickle:
+          name: Einfache Sichel
+        copperSickle:
+          name: Kupfersichel
+          desc: Bietet eine moderate Effizienz beim schneiden einfacher Pflanzen.
+        ironSickle:
+          name: Eisen Sichel
+          desc: Robust und verlässlich. Sie schneidet mit Leichtigkeit durch Stängel.
+        steelSickle:
+          name: Stahlsichel
+          desc: Stark und belastbar, bietet zuverlässige Leistung beim umfangreichen
+            Sammeln.
   looted:
     equipmentSets:
       dimensional:
@@ -399,6 +465,12 @@ singulars:
           desc: Mit jedem Schwung spaltet es die Zutaten wie ein Krieger in der Hitze
             des Gefechts, und wandelt die Rohelemente in kulinarische Triumphe um.
           name: Hackbeil
+        simplePan:
+          name: Einfache Pfanne
+        measuringSpoonsNecklace:
+          name: Messlöffelhalzkette
+          desc: Drei Messlöffel immer an deiner Seite. Keine Spülmaschine ist mehr
+            sicher.
       crafting:
         candlehat:
           desc: Es ist ein Hut mit einer angebrachten Kerze. Was kann man sich mehr
@@ -516,6 +588,90 @@ singulars:
           oder bei der Fahrt durch tückische Sumpfgebiete trocken und komfortabel
           bleibt.
         name: Wasserdichte Hosen
+    achievements:
+      adventurersGloves:
+        name: Abenteurerhandschuhe
+        desc: Diese Leserhandschuhe haben einen verstellbaren Gurt für die perfekte
+          Passform.
+      treasureHunterHat:
+        desc: Auch wenn es unklar ist, ob es ein Cowboyhut oder ein Fedora ist, hat
+          er den gewissen 'Indy' vibe.
+        name: Schatzjägerhut
+      treasureHunterJacket:
+        desc: Es scheint eine klassische Lederjacke zu sein. Die kommt nie aus der
+          Mode.
+        name: Schatzjägerjacke
+      adventurersShirt:
+        desc: Dieses Ledershirt hat eine hellbraune Farbe und hat mehrere Tachen um
+          Sachen zu verstauen.
+        name: Abenteurershirt
+      otherSock:
+        name: Andere Socke
+        desc: Die andere Socke, die du nicht Dobby gegeben hast.
+      pathfinder:
+        desc: An diese Halskette ist eine kleine Karte gebunden, die den kürzesten
+          Weg zeigt.
+        name: Pfadfinder
+      amuletOfLightness:
+        desc: Dieses Amulett strahlt ein ablichten aus, welches dich selbst an den
+          dunkelsten Orten mit Hoffnung füllt.
+        name: Amulett des Lichts
+      tinyBackpack:
+        desc: Es ist ein normalgroßer Rucksack. Wenn du ein Kind bist.
+        name: Kleiner Rucksack
+      greedyPiggyBank:
+        desc: Jedes Mal wenn eine Münze hineingeworfen wird, grunzt dieses Sparschwein
+          laut.
+        name: Gieriges Sparschwein
+      bootsOfSpeed:
+        desc: Diese Schuhe geben dir das Gefühl leichter zu sein und lassen dich schneller
+          voranschreiten.
+        name: Schuhe der Geschwindigkeit
+      adventurersHat:
+        name: Abenteurerhut
+      adventurersPants:
+        name: Abenteurerhose
+        desc: Diese zähen Lederhosen haben verschiedene Gurte, für den Nutzen aber
+          auch weil sie modisch sind.
+      adventurersBoots:
+        name: Abenteurerschuhe
+      adventurersCape:
+        name: Abenteurerumhang
+        desc: Dieser zähe Lederumhang wird seinen Träger vor dem meisten Wetter schützen.
+          Er hat Gurte für einfache Anpassung.
+      ringOfHomesickness:
+        name: Ring des Heimwehs
+        desc: Dieser Eing erinnert dich daran, dass es nur ein Zuhause gibt.
+      axeOfDestruction:
+        name: Axt der Zerstörung
+        desc: Die Klinge dieser Axt hat die Form eines Mundes, bereit Holz zu verschlingen.
+      shoesOfEscape:
+        name: Schuhe der Flucht
+        desc: Diese Schuhe lassen dich manchmal richtig schnell gehen.
+      shinyRing:
+        name: Glänzender Ring
+        desc: Nicht der eleganteste Ring, aber er glänzt.
+      gemBracelet:
+        name: Edelsteinarmband
+        desc: Sechs farbige Edelsteine bilden ein Armband.
+      rustySpyglass:
+        name: Rostiges Fernglas
+      pantsOfHaste:
+        name: Hose der Hast
+        desc: Bruder muss los!
+      omniTool:
+        name: Universalwerkzeug
+        desc: Dieses Werkzeug kann am Unterarm befestigt werden. Es ist Entwickelt
+          worden um dir auf Kommando bei verschiedenen Aufgaben zu helfen.
+      treasureHunterPants:
+        name: Schatzjägerhose
+      jugglingBalls:
+        name: Jonglierbälle
+        desc: Drei mehrfarbige Bälle, gefüllt mit Getreide sind perfekt zum Jonglieren.
+      travelersKit:
+        desc: Dieser Koffer ist gefüllt mit allem was für jede Reise essenziell ist.
+      absorbingAmulet:
+        name: Absorbierendes Amulett
   materials:
     carpentry:
       birchPlank:
@@ -539,6 +695,21 @@ singulars:
         desc: Das Fichtenbrett mit seiner feinen Holzmaserung verkörpert mit seinem
           klaren und klassischen Erscheinungsbild ein Gefühl von Eleganz.
         name: Fichtenbrett
+      teakPlank:
+        name: Teak Planken
+      woodScrap:
+        desc: Einige Holzreste mit niedriger Qualität
+        name: Holzschrott
+      willowPlank:
+        name: Weiden Planke
+      mangrovePlank:
+        name: Mangroven Planke
+      woodShaving:
+        name: ''
+      coralPlank:
+        name: Korallenplanke
+        desc: Eine Planke, gemacht aus den größten Korallen. Es ist stabil, sowohl
+          unter als auch über Wasser.
     cooking:
       milk:
         desc: Direkt von der Kuh, einer Ziege oder einem Kamel. Oder aus ein paar
@@ -549,6 +720,15 @@ singulars:
           der Kraft, zu reinigen, zu schützen und jedem Gericht einen Hauch von Zauber
           zu verleihen.
         name: Salz
+      honey:
+        name: Honigwabe
+        desc: Aus dieser Honigwabe tropft frischer Honig.
+      carrot:
+        name: Karotte
+        desc: Man sagt sie ist gut für die Augen.
+      mushroom:
+        name: Pilz
+        desc: Dieser Pilz ist technisch gesehen ein Gemüse.
     foraging:
       acidSapling:
         desc: Kaum so groß wie ein Zweig, verbrennt dieser ockerfarbene Setzling bei
@@ -626,6 +806,17 @@ singulars:
         desc: Ein spitzes Stück Holz. Vielleicht kannst du damit etwas herstellen,
           das dir beim Überleben hilft?
         name: Hölzerner Stock
+      berries:
+        name: Beeren
+      underwaterLotus:
+        desc: Eine Pflanze die oft in Syrenthianischer Poesie erwähnt wird. Berühmt
+          für ihre Schönheit und Anmut.
+        name: Unterwasserlotus
+      cucumber:
+        name: Gurke
+      wheat:
+        name: Weizen
+        desc: Weizen.
     mining:
       coal:
         desc: Das bescheidene und unprätentiöse Kohleerz steht für seine Zweckmäßigkeit
@@ -651,6 +842,47 @@ singulars:
         desc: Das Zinnerz ist einfach und unscheinbar und zeigt seine unkomplizierte
           mineralische Zusammensetzung.
         name: Zinnerz
+      saltCrystal:
+        name: Salzkristall
+      ruby:
+        desc: Dieser rote Edelstein ist sehr beliebt bei den Adeligen. Die rote Farbe
+          repräsentiert Macht und Leidenschaft.
+        name: Rubin
+      silverOre:
+        desc: Silber ist ein kostbares Material, es wird oft bei der Herstellung von
+          Schmuck, wie Ringen, Amuletten und Ohrringen genutzt.
+        name: Silbererz
+      jade:
+        desc: Die hellgrüne Farbe macht es zum perfekten Edelstein für Schmuck, welcher
+          laut Gerüchten böse Geister fernhält, wenn er getragen wird.
+        name: Jade
+      goldOre:
+        name: Golderz
+        desc: Gold ist eines der kostbarsten Metalle, welches oft bei der Herstellung
+          von Schmuck genutzt wird.
+      starPearl:
+        name: Sternenperle
+      opal:
+        name: Opal
+        desc: Wunderschöne schillernde Farben erscheinen auf ihrer Oberfläche, wenn
+          man Sie in die Sonne hält.
+      topaz:
+        name: Topas
+        desc: Glänzender Edelstein, dessen Farbe die Sonne widerspiegelt. Deine Augen
+          könnten wehtun, wenn du ihn zu lange anstarrst.
+      sunStone:
+        name: Sonnenstein
+        desc: Er kommt nicht wirklich von der Sonne, könnte er aber, wenn man seine
+          leuchtenden feurigen Farben sieht.
+      largeStone:
+        name: Großer Stein
+        desc: Ein Stein, der größer ist als normal.
+      volcanicRock:
+        name: Vulkanstein
+        desc: Dieser Stein ist das Überbleibsel eines uralten Vulkans der seit tausenden
+          Jahren unter Wasser liegt.
+      volcanicAsh:
+        name: Vulkanasche
     rawFish:
       rawCarp:
         desc: Der milde Geschmack des Karpfens eignet sich gut für verschiedene kulinarische
@@ -701,6 +933,13 @@ singulars:
         desc: Die Forelle zeigt einen faszinierenden Wandteppich aus schillernden
           Schuppen, die in Silber- und Rosatönen sowie gesprenkelten Mustern schimmern.
         name: Rohe Forelle
+      rawStingray:
+        desc: Ein Fisch in Pfannkuchenform, welche er nutzt um durch das Wasser zu
+          gleiten.
+      rawSwordfish:
+        name: Roher Schwertfisch
+      rawShark:
+        name: Roher Hai
     smithing:
       bronzeBar:
         desc: Der Bronzebarren, ein Relikt aus den Schmieden der Zwerge, strahlt rustikalen
@@ -747,3 +986,59 @@ singulars:
         desc: Die Fichtenstämme haben einen reichen und warmen Ton, der ihre natürliche
           Schönheit und Attraktivität unterstreicht.
         name: Fichtenstämme
+      willowLogs:
+        name: Weisenscheite
+      mangroveLogs:
+        name: Mangrovenscheite
+      sturdyBranch:
+        name: Stabiler Ast
+        desc: Ein ganz besonderes stabiler Ast.
+      teakLogs:
+        desc: Sehr robust und schwer, mit sehr dicker Rinde die auf der Innenseite
+          eine viel hellere Farbe hat als der Rest des Holzes.
+        name: Teakscheite
+      coral:
+        name: Koralle
+        desc: Diese Korallen treten in jeder Größe auf und werden für verschiedene
+          Dinge genutzt.
+    misc:
+      glacierMap:
+        desc: Diese Karte stellt den Nördlichen Teil von Jarvonia dar. Markiert mit
+          einer roten Linie ist ein Weg zu einem Gletscher, auf dem ein Iglu steht.
+        name: Mysteriöse nördliche Karte
+      adventurersPin:
+        desc: Ein Anstecker mit dem Symbol der Abenteurer Gilde. Ein bisschen rostig,
+          aber immernoch glänzend. Die Abenteurer Gilde würde die Rückgabe schätzen.
+      unidentifiedRemains:
+        desc: Die Abenteurer Gilde würde es schätzen, wenn du diesen Knochenhaufen
+          zurückbringst, es könnte dabei helfen einen offenen Fall zu lösen.
+        name: Nicht identifizierte Überbleibsel
+      trash:
+        name: Müll
+        desc: Eine Ansammlung aus nutzlosen und wertlosen Gegenständen. Warum hast
+          du es überhaupt aufgehoben?
+      fishbone:
+        desc: Auch wenn es irgendwie grausam ist und stinkt, sieht es immernoch cool
+          aus.
+      seashell:
+        name: Muschel
+        desc: Wird wahrscheinlich von jemandem am Strand verkauft.
+      clam:
+        name: Venusmuschel
+        desc: Perpignan weiß und in perfektem Zustand. Ein wunderbares Exemplar für
+          Sammler.
+      pearls:
+        name: Perlen
+      crosswordPuzzle:
+        name: Altes Kreuzworträtsel
+      fishingLine:
+        desc: Dies aus der Natur zu holen hat vielleicht ein Tierleben gerettet.
+      nameTag:
+        name: Namensschild
+        desc: Ein Namensschild mit dem Namen eines lange Verlorenen Abenteurers darauf.
+          Die Abenteurer Gilde könnte interessiert sein.
+    crafting:
+      rope:
+        name: Seil
+        desc: Eine Überlebensausrüstung ist nichts ohne etwas Seil. Essenziell um
+          ein paar einfache Werkzeuge zu machen.
