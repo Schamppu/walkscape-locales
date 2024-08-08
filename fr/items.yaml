@@ -255,6 +255,10 @@ singulars:
           desc: 'Une seule taille convient à tout le monde. Étonnant pour des chaussures
             en métal. '
           name: Chaussures en bronze
+        sword:
+          name: Épée en bronze
+        shield:
+          name: Bouclier en bronze
       copper:
         chest:
           desc: "La partie de l'équipement en bronze qui protège le torse, le ventre
@@ -277,6 +281,13 @@ singulars:
         shoes:
           desc: Des bottes lourdes qui offrent une légère protection.
           name: Chaussures en cuivre
+        sword:
+          name: Épée en cuivre
+          desc: Cette épée est quand même plus convaincante qu'un simple bout de bois.
+        shield:
+          name: Bouclier en cuivre
+          desc: Ce bouclier est quand même plus convaincant qu'un simple morceau de
+            bois.
       farganite:
         chest:
           desc: "Les gens pensent parfois que ce plastron est vraiment fait de diamants,
@@ -301,6 +312,10 @@ singulars:
         shoes:
           desc: Au moins elles sont plus légères que la paire noire !
           name: Chaussures en farganite
+        sword:
+          name: Épée en farganite
+        shield:
+          name: Bouclier en farganite
       iron:
         chest:
           desc: 'Vous devriez sûrement rester loin des aimants lorsque vous le portez. '
@@ -314,8 +329,8 @@ singulars:
             et manger. '
           name: Casque lourd en fer
         legs:
-          desc: 'Ne restez pas sans bouger trop longtemps, on tout va finir par rouiller.
-            Aller, on avance ! '
+          desc: 'Ne restez pas sans bouger trop longtemps, ou tout va finir par rouiller.
+            Aller, on avance !'
           name: Jambières en fer
         lightHelmet:
           desc: "Il est recommandé d'avoir des protections sur les oreilles lorsque
@@ -326,6 +341,10 @@ singulars:
             pourraient se faire rouler dessus par un lourd chariot et s'en sortir
             indemnes.
           name: Chaussures en fer
+        sword:
+          name: Épée en fer
+        shield:
+          name: Bouclier en fer
       steel:
         chest:
           desc: Pas tout à fait impénétrable, mais néanmoins capable d'absorber des
@@ -349,6 +368,10 @@ singulars:
         shoes:
           desc: Pour quand une simple protection aux orteils ne suffit pas.
           name: Chaussures en acier
+        sword:
+          name: Épée en acier
+        shield:
+          name: Bouclier en acier
       tarsilium:
         chest:
           desc: Le tarsilium sombre confère à cette cuirasse une certaine apparence
@@ -372,6 +395,19 @@ singulars:
           desc: "Chaque pas que vous faites avec ces bottes produit un son sourd et
             menaçant, qui attire immédiatement l'attention où que vous alliez. "
           name: Chaussures en tarsilium
+        shield:
+          name: Bouclier en tarsilium
+        sword:
+          name: Épée en tarsilium
+      basic:
+        woodenSword:
+          name: Épée en bois
+          desc: Vous commencez vous faire à l'illusion que ce simple bout de bois
+            peut vous protéger.
+        woodenShield:
+          name: Bouclier en bois
+          desc: Vous commencez vous faire à l'illusion que ce simple morceau de bois
+            peut vous protéger.
     skilling:
       fishing:
         basicFishingPole:
@@ -399,6 +435,13 @@ singulars:
           desc: Le filet de base, humble outil d'un simple pêcheur. À peine plus que
             quelques bouts de corde attachés ensemble.
           name: Petit filet de pêche
+        coralFishingSpear:
+          name: Lance de pêche en corail
+          desc: Cette lance de pêche est faite de coraux et d'hydrilium. Elle possède
+            plusieurs extrémités pointues pour faciliter le perçage des poissons.
+        willowFishingRod:
+          name: Canne à pêche en saule
+          desc: La canne à pêche en saule est plutôt légère et douce au toucher.
       mining:
         basicPickaxe:
           desc: La pioche de base, humble outil du mineur. À peine plus qu'un bâton,
@@ -409,7 +452,7 @@ singulars:
           name: Pioche en bronze
         copperPickaxe:
           desc: Une pioche fragile et légère pour l'exploitation minière. Elle fait
-            bien l'affaire.
+            tout de même l'affaire.
           name: Pioche en cuivre
         farganitePickaxe:
           desc: Un reflet parfait des teintes du ciel tout au long de la journée,
@@ -426,17 +469,21 @@ singulars:
         tarsiliumPickaxe:
           desc: Une pioche noire.
           name: Pioche en tarsilium
+        hydriliumPickaxe:
+          name: Pioche en hydrilium
+          desc: Une pioche fabriquée à partir d'un matériau sous-marin rare appelé
+            l'hydrilium.
       woodcutting:
         basicHatchet:
           desc: La hachette de base, humble outil des forestiers. À peine plus qu'un
             bâton, une pierre et une ficelle qui relie le tout.
           name: Hachette basique
         bronzeHatchet:
-          desc: Idéal pour les débutants qui se lancent dans l'abattage d'arbres.
+          desc: Idéale pour les débutants qui se lancent dans l'abattage d'arbres.
           name: Hachette en bronze
         copperHatchet:
-          desc: 'Fragile et relativement légère pour du bûcheronnage. Mais ça fais
-            le boulot. '
+          desc: 'Fragile et relativement légère pour du bûcheronnage. Mais ça fait
+            le boulot.'
           name: Hachette en cuivre
         farganiteHatchet:
           desc: Un reflet parfait des teintes du ciel tout au long de la journée,
@@ -453,6 +500,26 @@ singulars:
         tarsiliumHatchet:
           desc: Une hache noire.
           name: Hachette en tarsilium
+        hydriliumHatchet:
+          name: Hachette en hydrilium
+          desc: Une hachette fabriquée à partir d'un matériau sous-marin rare appelé
+            l'hydrilium.
+      foraging:
+        stoneSickle:
+          desc: Un outil basique qui sert à récolter les richesses de la nature. Sa
+            lame peu tranchante n'est pas vraiment efficace.
+          name: Faucille basique
+        copperSickle:
+          name: Faucille en cuivre
+          desc: Offre une efficacité modeste lors de la coupe de plantes basiques.
+        ironSickle:
+          name: Faucille en fer
+        steelSickle:
+          name: Faucille en acier
+        hydriliumSickle:
+          name: Faucille en hydrilium
+          desc: Une faucille fabriquée à partir d'un matériau sous-marin rare appelé
+            l'hydrilium.
   looted:
     equipmentSets:
       dimensional:
@@ -678,6 +745,17 @@ singulars:
           les averses les plus torrentielles ou lorsqu'il se fraye un chemin à travers
           des dangereux marécages.
         name: Pantalon imperméable
+    achievements:
+      adventurersBoots:
+        name: Bottes de l'Aventurier
+      adventurersHat:
+        name: Chapeau de l'Aventurier
+      adventurersPants:
+        name: Pantalon de l'Aventurier
+      adventurersGloves:
+        name: Gants de l'Aventurier
+      adventurersCape:
+        name: Cape de l'Aventurier
   materials:
     carpentry:
       birchPlank:
@@ -715,6 +793,16 @@ singulars:
         desc: Avec son aspect délicat et pâle et son grain subtil, la planche de saule
           apporte une touche de beauté éthérée à vos projets de construction.
         name: Planche de saule
+      woodScrap:
+        name: Débris de bois
+        desc: Des chutes de bois de mauvaise qualité
+      coralPlank:
+        desc: Une planche faite à partir des plus gros coraux. Elle est robuste tant
+          à la surface que dans les milieux sous-marins.
+        name: Planche de corail
+      woodShaving:
+        name: Copeaux de bois
+        desc: Des chutes de bois de qualité moyenne
     cooking:
       milk:
         desc: Directement issu de la vache, de la chèvre ou du chameau. Ou pressé
@@ -724,6 +812,14 @@ singulars:
         desc: Chaque grain est un fragment d'océans oubliés, doté du pouvoir de purifier,
           de protéger et d'ajouter une touche d'enchantement à n'importe quel plat.
         name: Sel
+      honey:
+        name: Rayon de miel
+        desc: Ce rayon de miel dégouline de miel frais.
+      carrot:
+        name: Carotte
+        desc: Il est dit qu'en consommer améliore votre vision.
+      mushroom:
+        name: Champignon
     foraging:
       acidSapling:
         desc: À peine de la taille d'une brindille, le jeune arbre ocre brûle presque
@@ -801,7 +897,39 @@ singulars:
       woodenStick:
         desc: Un morceau de bois pointu. Peut-être pouvez vous créer quelque chose
           avec pour vous aider à survivre ?
-        name: 'Bâton '
+        name: 'Bâton'
+      seaCabbage:
+        desc: Un aliment populaire qui pousse sous l'eau. Les Syrenthiens en font
+          des choux marins séchés.
+        name: Chou marin
+      berries:
+        desc: Elles vous garderont raisonnablement nourris en cas de besoin, ou bien
+          vous pourriez les utiliser comme ingrédient pour vos créations culinaires.
+        name: Baies
+      sweetKelp:
+        desc: La canne à sucre sous-marine, le varech à sucre est principalement utilisé
+          pour produire la boisson alcoolique - saltrum.
+        name: Varech à sucre
+      kelp:
+        desc: Le varech est une algue connue pour ses divers usages, à la fois dans
+          la confection d'équipements robustes mais élastiques et en cuisine, lors
+          de la cuisson de délicieux aliments sous-marins.
+        name: Varech
+      seaSpinach:
+        name: Bette maritime
+      underwaterLotus:
+        name: Lotus sous-marin
+        desc: Une plante qui est souvent mentionnée dans la poésie Syrenthienne. Elle
+          est connue pour sa grâce et sa beauté.
+      cucumber:
+        name: Concombre
+      wheat:
+        name: Blé
+        desc: Du blé.
+      hardenedKelp:
+        name: Varech durci
+        desc: Grâce à diverses techniques, le varech peut être durci pour en faire
+          un matériau prisé dans l'artisanat.
     mining:
       coal:
         desc: Modeste et humble, le charbon témoigne de sa praticité en tant que ressource
@@ -827,6 +955,59 @@ singulars:
         desc: Simple et modeste, le minerai d'étain met en évidence sa composition
           minérale directe.
         name: Minerai d'étain
+      saltCrystal:
+        desc: Dans leur forme brute ils présentent des formes jolies et délicates
+          mais une fois finement broyés, ils se révèlent être assez polyvalents.
+        name: Cristal de sel
+      goldOre:
+        desc: L'or est l'un des métaux les plus précieux, il est souvent utilisé dans
+          la fabrication de bijoux.
+        name: Minerai d'or
+      opal:
+        desc: De magnifiques couleurs irisées brillent à sa surface lorsqu'elle est
+          maintenue à la lumière du soleil.
+        name: Opale
+      jade:
+        desc: Son ton vert clair en fait une pierre précieuse parfaite pour la confection
+          de bijoux qui, d'après les rumeurs, éloignent les mauvais esprits lorsqu'ils
+          sont portés.
+        name: Jade
+      ruby:
+        desc: Cette gemme de couleur rouge est très populaire auprès des nobles. Le
+          rouge symbolise la passion et le pouvoir.
+        name: Rubis
+      silverOre:
+        name: Minerai d'argent
+        desc: L'argent est un métal très prisé, il est fréquemment utilisé dans la
+          création de bijoux tels que les bagues, amulettes et boucles d'oreilles.
+      wrentmarine:
+        name: Wrentmarine
+        desc: Lorsqu'on la bouge de droite à gauche, il semblerait que de l'eau coule
+          d'un côté à l'autre de la surface de cette pierre d'un bleu océan.
+      starPearl:
+        name: Perle étoile
+      ethernite:
+        name: Éthernite
+        desc: Une gemme violette et vitreuse d'une grande valeur. Vous ressentez une
+          sensation effroyable en la regardant mais, curieusement, il est très difficile
+          d'en détourner le regard.
+      topaz:
+        name: Topaze
+        desc: Une gemme scintillante aux couleurs qui rappellent le soleil. Elle pourrait
+          même vous blesser les yeux si vous la fixez trop longtemps.
+      sunStone:
+        name: Joyau du soleil
+        desc: Il ne provient pas vraiment du soleil mais, à en juger par ses couleurs
+          brillantes et ardentes, il pourrait peut-être bien l'être.
+      largeStone:
+        name: Grosse pierre
+        desc: Une pierre plus grande que la normale.
+      volcanicRock:
+        name: Roche volcanique
+        desc: Cette roche est le vestige d'un volcan ancien qui a été plongé sous
+          l'eau pendant des millénaires.
+      volcanicAsh:
+        name: Cendre volcanique
     rawFish:
       rawCarp:
         desc: La saveur délicate de la carpe se prête bien à diverses préparations
@@ -867,8 +1048,8 @@ singulars:
           d'un festin de fruits de mer délectable.
         name: Crevette crue
       rawSquid:
-        desc: Le calmar surprend par son abilité à disparaître.
-        name: Calmar cru
+        desc: Le calamar surprend par son talent pour les petits tours de disparition.
+        name: Calamar cru
       rawStreamEel:
         desc: La forme de l'anguille d'eau douce reflète son adaptabilité aux rivières
           et aux cours d'eau.
@@ -877,6 +1058,16 @@ singulars:
         desc: La truite exhibe un envoûtant tableau d'écailles iridescentes qui reflètent
           des nuances d'argent, de rose et des motifs parsemés.
         name: Truite crue
+      rawAnglerfish:
+        name: Baudroie crue
+      rawStingray:
+        name: Raie crue
+        desc: Un poisson en forme de pancake qui utilise tout son corps pour glisser
+          dans l'eau.
+      rawSwordfish:
+        name: Espadon cru
+      rawShark:
+        name: Requin cru
     smithing:
       bronzeBar:
         desc: La barre de bronze, vestige des forges naines, dégage un charme rustique
@@ -899,26 +1090,84 @@ singulars:
           éclat éthéré.
         name: Lingot d'acier
       tarsiliumBar:
-        desc: La barre de tarsilium brille comme le ciel nocturne, une texture huileuse
+        desc: Le lingot de tarsilium brille comme le ciel nocturne, une texture huileuse
           recouvrant sa surface.
         name: Lingot de Tarsilium
+      metalScrap:
+        name: Tas de ferraille
+        desc: Des chutes de métal de mauvaise qualité
+      hydriliumBar:
+        name: Lingot d'Hydrilium
     woodcutting:
       birchLogs:
         desc: Lisses et pâles, les bûches de bouleau exhalent une simplicité élégante.
         name: Bûches de bouleau
       mapleLogs:
-        desc: Les bûches d'érable dévoile leur grain raffiné et accueillant, mettant
-          en évidence leur nature artistique dans chaque morceau.
+        desc: Les bûches d'érable présentent un grain raffiné et accueillant, mettant
+          en évidence le talent artistique de la nature à chaque morceau.
         name: Bûches d'érable
       oakLogs:
-        desc: Ornés de leur caractère distinctif, les bûches de chêne rayonnent d'une
+        desc: Ornées de leur caractère distinctif, les bûches de chêne rayonnent d'une
           présence noble et d'une grâce pérenne.
         name: Bûches de chêne
       pineLogs:
-        desc: Robustes et résineux, les bûches de pin diffusent un arôme distinctif
+        desc: Robustes et résineuses, les bûches de pin diffusent un arôme distinctif
           et réconfortant.
         name: Bûches de pin
       spruceLogs:
         desc: Les bûches d'épicéa révèlent une tonalité chaleureuse et riche, mettant
           en lumière leur beauté naturelle et leur attrait.
         name: Bûches d'épicéa
+      teakLogs:
+        name: Bûches de teck
+        desc: Très dures et lourdes, avec une écorce très épaisse qui, à l'intérieur,
+          a une couleur bien plus claire que le reste de la bûche.
+      willowLogs:
+        name: Bûches de saule
+        desc: Ces bûches terreuses sont plutôt légères, ce qui les rend très agréables
+          à manipuler et à travailler.
+      sturdyBranch:
+        name: Branche robuste
+        desc: Une branche anormalement robuste.
+      mangroveLogs:
+        name: Bûches de palétuvier
+        desc: Encore humides à cause de l’environnement où elles ont jadis grandi,
+          ces bûches possèdent un joli scintillement.
+      coral:
+        name: Corail
+        desc: Ces coraux peuvent varier en taille, allant de minuscules à massifs,
+          ils peuvent être utilisés pour diverses choses.
+    misc:
+      clam:
+        desc: Parfaitement intacte, elle brille d'un blanc nacré. Un bel exemplaire
+          pour un collectionneur.
+        name: Palourde
+      pearls:
+        name: Perles
+      fishingLine:
+        desc: Retirer ça de la nature vient peut-être bien de sauver la vie d'un animal.
+        name: Ligne de pêche
+      trash:
+        name: Déchets
+        desc: Un amas d'objets inutiles et sans valeur. Une question, pourquoi les
+          avoir ramassés?
+      fishbone:
+        name: Arête de poisson
+        desc: Bien que ce soit assez macabre et que ça pue un peu, ça a l'air plutôt
+          cool.
+      seashell:
+        name: Coquillage
+        desc: Probablement vendu par quelqu’un sur une plage.
+      unidentifiedRemains:
+        name: Restes non identifiés
+    crafting:
+      rope:
+        name: Corde
+        desc: Un kit de survie n'est jamais complet sans quelques cordes. Indispensables
+          pour fabriquer les outils de base.
+      hydrilium:
+        name: Hydrilium
+        desc: Cet étrange matériau est fabriqué en combinant des roches volcaniques
+          avec des laminaires dans l'atelier de la marée.
+      kelpRope:
+        name: Corde de varech
