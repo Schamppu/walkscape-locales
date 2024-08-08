@@ -2,8 +2,10 @@ plurals:
   dialogs:
     deleteClass:
       text:
-        one: Usunięcie obiektów jest nieodwracalne. Ten obiekt jest odwoływany w innych obiektach $n razy.
-        other: Usunięcie obiektów jest nieodwracalne. Ten obiekt jest odwoływany w innych obiektach $n razy.
+        one: Usunięcie obiektów jest nieodwracalne. Ten obiekt jest odwoływany w innych
+          obiektach $n razy.
+        other: Usunięcie obiektów jest nieodwracalne. Ten obiekt jest odwoływany w
+          innych obiektach $n razy.
       title: Czy na pewno chcesz usunąć
 singulars:
   messages:
@@ -12,3 +14,62 @@ singulars:
       title: Zapisano pomyślnie
     saveUnsuccesfullLootTables:
       title: Zapis się nie powiódł
+      text: Tabela łupów zawiera wiersz(e), z którymi nie jest powiązany żaden przedmiot.
+    comingSoon:
+      title: Dostępne Wkrótce
+      text: Ta treść <hl>jest jeszcze niedostępna</hl> w tej wersji WalkScape.
+    disabled:
+      title: Wyłączone
+      text: Ta funkcja została <hl>tymczasowo wyłączona</hl>. Sprawdź Portal, Reddit
+        albo Discord po więcej informacji.
+  popups:
+    skillLevel:
+      newActivity: <chip><stext><c>Nowa aktywność</c></stext></chip> Odblokowano <c>${activityName}</c>.
+      skillLevelUp: Awansowano ${skillName}
+      unlocks: Odblokowania
+      noNewUnlocks: Brak nowych odblokowań na ten poziom.
+    idleSteps:
+      characterLeveledUpFrom: Postać awansowała z <c i="0">${from}</c> do <c i="1">${to}</c>.
+      craftedItem: Wytworzono <c>+${amount}</c> <item id="${item}" />
+      gainedMoney: Otrzymano <c i="0">+${amount}</c> <c i="1">monet</c>
+      characterGained: Postać otrzymała <c>+${amount}</c> doświadczenia />
+      arrivedAt: Dotarto do <location /> <c>${location}</c>.
+    inactiveSteps:
+      stepsWhileInactive: Kroki otrzymane w trakcie nieaktywności gry
+    achievementUnlocked:
+      achievementPoints: ${points} Punktów Osiągnięć
+      rewards: Nagrody
+      achievementUnlocked: Odblokowano osiągnięcie ${achievement}
+      requirements: Wymagania
+    characterLevelUp:
+      characterLevelUp: Awans postaci
+      unlocks: Odblokowania
+      noNewUnlocks: Brak nowych odblokowań na ten poziom.
+  errors:
+    characterValidation:
+      nameContainsleadingTrailingSpaces: Spacje początkowe i końcowe są niedozwolone.
+      nameContaintsConsecutiveSpaces: Następujące po sobie spacje są niedozwolone.
+      nameTooShort: Nazwa postaci musi mieć przynajmniej 3 znaki.
+      nameTooShortWithSpacesRemoved: Po usunięciu spacji imię postaci musi mieć więcej
+        niż trzy litery.
+      nameContainsSpecialCharacters: Nazwa postaci zawiera znaki specjalne. Dozwolone
+        są tylko litery, cyfry i spacje.
+    serverError:
+      noClosedBetaAccess:
+        title: Brak dostępu do Zamkniętej Bety
+        text: Nie masz dostępu do Zamkniętej Bety. Albo twój dostęp się wyczerpał
+          albo nie otrzymałeś dostępu wcześniej.
+      newClientUpdate:
+        title: Aktualizacja klienta jest dostępna
+        text: Twoja gra działa na starej wersji, a dostępna jest nowa. Prosimy ściągnij
+          najnowszą wersję, by móc kontynuować grę.
+      noInternetConnection:
+        title: Brak połączenia z Internetem
+        text: Nie posiadasz aktywnego połączenia z Internetem, które wymagane jest,
+          by zweryfikować twojego klienta z serwerem. Spróbuj ponownie, kiedy nawiążesz
+          połączenie.
+      serverOffline:
+        title: Serwer WalkScape jest wyłączony
+    fatalError:
+      error: Wybacz nam ten błąd. Pamiętaj, że ta gra znajduje się w Zamkniętej Becie,
+        a wszystkie postępy graczy są zapisywane codziennie w chmurze.
