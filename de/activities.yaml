@@ -159,12 +159,27 @@ singulars:
         desc: Entlang der winterlichen Küste findest du einen abgelegenen Platz und
           wirfst dein Netz in das ruhige, kühle Wasser, um die friedliche Einsamkeit
           des Meeresangelns zu genießen.
-        name: Angeln im Meer (Netz)
+        name: Meeresfischerei (Netz)
       seaFishingRod:
         desc: Entlang der winterlichen Küste findest du einen abgelegenen Platz und
           wirfst deine Leine in das ruhige, kühle Wasser, um die friedliche Einsamkeit
           des Meeresangelns zu genießen.
-        name: Angeln im Meer (Rute)
+        name: Angeln im Meer (Angelrute)
+      seaFishingCage:
+        name: Meeresfischerei (Käfig)
+        desc: Eine nährstoffreiche Strömung bringt alle Arten von Krustentieren in
+          dieses Gebiet.
+    syrenthia:
+      seaFishingSpear:
+        name: Meeresfischerei (Speer)
+        desc: Mit dem Speer in der Hand schwimmst du um das Schiffswrack herum, immer
+          auf der Hut vor jedem großen Fisch, der es wagt, sich in Schlagdistanz zu
+          begeben.
+      predatorHunting:
+        desc: Von der Jagd getrieben, gleitest du durch das tiefe Wasser, wobei du
+          dir deiner Umgebung sehr bewusst bist. Jede Faser deines Geistes ist darauf
+          vorbereitet, jedes Raubtier anzugreifen, bevor es dich angreifen kann.
+        name: Raubtierjagd (Speer)
   foraging:
     gdte:
       butterflyCatching:
@@ -207,6 +222,25 @@ singulars:
           Natur ein und sammelst wilde Beeren, Samen und zarte Triebe, die im Boden
           unter deinen Füßen gedeihen.
         name: Sammeln in der Ebene
+      glacierForaging:
+        desc: Du suchst weit und breit in dem leeren Gletscher. Du lernst viel über
+          dich selbst, aber gibt es hier überhaupt etwas zu finden?
+        name: Gletscher Suche
+      caveForaging:
+        desc: Es ist dunkel da drin, bring besser eine Lampe mit.
+        name: Höhlensuche
+      hornOfRespiteTreasureHunt:
+        name: Schatzsuche
+      seashellSearching:
+        name: Muscheln suchen
+        desc: Du suchst sorgfältig entlang der Küste nach wertvollen Muscheln oder
+          Perlen.
+    global:
+      litterLooting:
+        name: Plünderung von Abfällen
+        desc: Inmitten des hektischen Treibens der Stadt durchkämmen Sie weggeworfenen
+          Krimskrams, in der Hoffnung, inmitten des gewöhnlichen Mülls einen versteckten
+          Schatz zu finden.
   mining:
     global:
       mineCoal:
@@ -235,6 +269,47 @@ singulars:
         desc: Das Geräusch deiner Spitzhacke hallt durch im Bergbau, während du unermüdlich
           die verborgenen Zinnerzadern freilegst, die darauf warten entdeckt zu werden.
         name: Zinnerz abbauen
+    jarvonia:
+      goldPanning:
+        desc: Hierbei handelt es sich um eine einfache Goldwaschtechnik, die sich
+          die Sedimentablagerungen in Flüssen zunutze macht. Zunächst wird die Pfanne
+          in den Bodensand getaucht. Dann wird der Kies durch Schütteln mit der Hand
+          gelockert, bis nur noch der Sand und mögliche Goldnuggets übrig sind.
+        name: Goldwaschen
+      surfaceSaltMining:
+        desc: Der Salzabbau in einem Bergwerk ist harte Arbeit, denn durch den ständigen
+          Kontakt mit dem Salz trocknet man sehr schnell aus. Zu deinem Glück befinden
+          sich die Halitkristalle (Salzgestein) an der gut belüfteten Oberfläche und
+          lösen sich leicht, wenn du mit der Spitzhacke darauf schlägst.
+        name: Salzbergbau im Tagebau
+      spelunking:
+        name: Höhlenwandern
+        desc: Du kriechst auf dem Boden wie eine Eidechse. Unheilvolle Gedanken vernebeln
+          deinen Geist und lähmen dich fast. Es gelingt dir, sie für einen Moment
+          zu verdrängen und weiterzugehen. Schon bald offenbart sich ein neuer, unerforschter
+          Weg und erfüllt Dich mit Freude
+      stoneQuarrying:
+        name: Steinabbau
+        desc: Fels und Stein!
+    syrenthia:
+      caveDiving:
+        name: Höhlentauchen
+        desc: Sie tauchen mutig (oder dumm) in die dunklen, riesigen Höhlen. Diese
+          Aktivität ist eine der gefährlichsten in ganz Arenum. Sie lässt dein Herz
+          pumpen und Adrenalin in deine Adern fließen.
+      mineVolcanicRock:
+        name: Bau Vulkangestein ab
+        desc: Die Spitzhacke unter Wasser zu schwingen ist eine Herausforderung, aber
+          gelegentlich bricht beim Auftreffen auf das Vulkangestein ein ausreichend
+          großes Stück ab, das du dann in deinen Rucksack stopfts.
+      mineTarsiliumOre:
+        name: Tarsilium-Erz abbauen
+        desc: Du bist überrascht, unter Wasser Tarsiliumerze zu finden, und beginnst
+          ohne zu zögern, diese abzubauen.
+      fossilMining:
+        name: Fossilienabbau
+        desc: Angelockt von den Wundern der Vergangenheit richten Sie Ihre Aufmerksamkeit
+          auf die Suche nach uralten Fossilien.
   woodcutting:
     jarvonia:
       cutBirchTrees:
@@ -275,7 +350,7 @@ singulars:
         name: Feuerholz herstellen
         desc: Mit Geduld, Schweiß, Mühen und deinem treuen Beil spaltet du die Scheite
           gnadenlos. Wenn du sie nur mit den bloßen Händen spalten könntest. Du müsstest
-          ein Superheld sein, um ehrlich zu sein.
+          mindestens ein Superheld sein, um ehrlich zu sein.
       branchTrimming:
         name: Äste schneiden
         desc: Die Äste in der Nähe des Bodens aufzuräumen hilft dabei, Waldbrände
