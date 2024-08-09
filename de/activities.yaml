@@ -82,6 +82,9 @@ singulars:
           um dich herum, und für einen Moment bist du ein Winterflitzer, der den verschneiten
           Hügel bezwingt.
         name: Schlittenfahren
+      traveling:
+        name: Reisen
+        desc: Zu einem neuen Ort reisen
     jarvonia:
       mountainClimbingBeginner:
         desc: Ein schöner, windstiller Tag für deinen Aufstieg. Während du langsam
@@ -101,6 +104,26 @@ singulars:
           das angrenzende Dach. Eine Fliese löst sich und fällt klirrend zu Boden.
           Nächstes mal bist du vorsichtiger.
         name: Von Dach zu Dach (Anfänger)
+      blackEyePeakSearchTeam:
+        desc: Hilf der Abenteurergilde dabei Informationen über offene Genehmigungen,
+          die noch nicht zurück sind, zu finden.
+        name: Suchteam
+      blackEyePeakRescueTeam:
+        name: Rettungsteam
+        desc: Nutze die Informationen von den Suchteams um aktiv zu werden und Rettungseinsätze
+          durchzuführen.
+    syrenthia:
+      swimmingExpert:
+        desc: Durch die verschiedenen Wege und Höhlen der Unterwasserstadt Vastalum
+          zu schwimmen erweist sich als schwierig. Du musst wuseligen Seekreaturen
+          ausweichen, ob bewusst oder nicht.
+        name: Schwimmen (Experte)
+      merfolkDancing:
+        name: Meeresvolk tanzen
+        desc: Den Meeresvolktanz zu tanzen wie das Unterwasservolk erfordert eine
+          Menge können. Mit jedem Versuch wirst du besser darin mit den anderen Tänzern
+          mitzuhalten, bis du einen durchgängigen Fluss erreichst, der einen Fischschwarm
+          mit synchronen Bewegungen widerspiegelt.
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -112,8 +135,16 @@ singulars:
     jarvonia:
       shipRepairBeginner:
         name: Schiffsreperatur (Anfänger)
+        desc: Du machst bei den Reperaturarbeiten wegen der Abnutzung von kleinen
+          Schiffen, sowie kleinen Schäden, teil. Holz, Nägel, Tauwerk, Halterungen
+          und Seile stehen dir zur Verfügung. Der Vorarbeiter gibt die Anweisungen,
+          welche du meisterhaft ausführst. Vielleicht gibst du eines Tages die Anweisungen.
       woodCarving:
         name: Holzschnitzerei
+        desc: 'Holz mit einem scharfen Werkzeug, wie einem Messer, zu formen ist eine
+          uralte Handwerkskunst. Es gibt eine Menge Ikonografie: Von kleinen Figuren
+          und Spielzeugen, zeremoniellen- oder Kriegsmasken bis hin zu großen Mosaiks
+          und riesigen Totems.'
   cooking:
     gdte:
       wineGrapeStomping:
@@ -132,12 +163,20 @@ singulars:
     jarvonia:
       iceSculpting:
         name: Eisbildhauen
+        desc: Mit einem Meißel, Handsäge und einer kleinen Hacke verwandelst du einen
+          Eisblock in etwas anderes, entweder nützlich oder künstlerisch. Die Lebenszeit
+          dieses Kunststücks ist abhängig von der Außentemperatur, schwankend zwischen
+          Minuten und der Ewigkeit.
       tinkering:
         desc: Du kratzt dich am Kinn, während du überlegst, wie du diesen Schrott
           reparieren kannst. Dir fallen tausend Möglichkeiten ein, aber für die meisten
           davon fehlen dir Bauteile. In der Werkstatt schaust du nach etwas Bestimmtem.
           Da ist es! An die Arbeit.
         name: Heimwerken
+    syrenthia:
+      underwaterBasketWeaving:
+        name: Unterwasser Körbe flechten
+        desc: <Placeholder>
   fishing:
     gdte:
       magnetFishing:
@@ -184,6 +223,10 @@ singulars:
     gdte:
       butterflyCatching:
         name: Schmetterlinge fangen
+        desc: Schmetterlinge fangen braucht Geduld und ein gutes Netz. Auch wenn es
+          Spaß macht sie zu jagen, ist es der effizienteste Weg sie zu fangen, wenn
+          sie still sitzen. Sie bewundern und wieder freilassen schütz ihre Rolle
+          in der natürlichen Balance.
       forestForaging:
         desc: Während du durch die friedliche Umarmung des Walders wanderst, tauchst
           du in die Harmonie der Gewälder ein und sammelst die Gaben der Natur, welche
@@ -201,6 +244,16 @@ singulars:
           der Hoffnung, vergessene Errinerungen und Relikte eines einst fruchtbaren
           Lebens zu finden.
         name: Sammeln im Sumpf
+      trellinDumpsterDiving:
+        name: Trelliner Mülcontainer durchsuchen
+        desc: Innerhalb der Labyrinthähnlichen Gassen der Stadt durchsuchst du die
+          vergessenen Ecken, wühlst dich durch die weggeworfenen Dinge und hoffst
+          zwischen dem Weggeworfenem versteckte Schätze ans Tageslicht zu bringen.
+      erdwiseDumpsterDiving:
+        name: Erdweiser Müllcontainer durchsuchen
+        desc: Innerhalb der Labyrinthähnlichen Gassen der Stadt durchsuchst du die
+          vergessenen Ecken, wühlst dich durch die weggeworfenen Dinge und hoffst
+          zwischen dem Weggeworfenem versteckte Schätze ans Tageslicht zu bringen.
     jarvonia:
       cliffForaging:
         desc: Am Rande der hoch aufragenden Klippe erkundest du vorsichtig das zerklüftete
@@ -231,6 +284,8 @@ singulars:
         name: Höhlensuche
       hornOfRespiteTreasureHunt:
         name: Schatzsuche
+        desc: Die Abenteurergilde fordert alle heraus beim Horn der Atempause besondere
+          Gegenstände zu finden. Wie lange brauchst du, um alle zu finden?
       seashellSearching:
         name: Muscheln suchen
         desc: Du suchst sorgfältig entlang der Küste nach wertvollen Muscheln oder
@@ -241,6 +296,25 @@ singulars:
         desc: Inmitten des hektischen Treibens der Stadt durchkämmen Sie weggeworfenen
           Krimskrams, in der Hoffnung, inmitten des gewöhnlichen Mülls einen versteckten
           Schatz zu finden.
+    syrenthia:
+      seashellForaging:
+        name: Muscheln sammeln
+        desc: Auf der Suche nach schönen Muscheln schwimmst du in der Nähe des Meeresbodens.
+          Die meisten sind unter dem Sand versteckt, während andere in an den Ecken
+          und Kanten von Unterwassersteinen haften.
+      kelpForaging:
+        desc: Bei dem Überfluss an Seetang um dich herum inspizierst du jeden einzelnen,
+          bevor du nur den besten pflückst.
+        name: Seetang sammeln
+      merfolkFarmForaging:
+        desc: Dein gemeinschaftlicher See-Farm Zugang gibt dir die Freiheit die endlosen
+          Unterwasser-Felder zu ernten. Hier findest du viele verschieden Pflanzen,
+          die darauf warten gepflückt zu werden.
+        name: Meeresvolks Farm ernten
+      wreckDiving:
+        name: Wrack tauchen
+        desc: Du tauchst tief in das Schiffswrack, welches Casbrant's Grab genannt
+          wird, in der Hoffnung Schätze zu finden.
   mining:
     global:
       mineCoal:
@@ -362,3 +436,11 @@ singulars:
           dein Beil auf ihre Stämme und fällst einen nach dem anderen. Anders als
           Bäume auf der Oberfläche fallen sie nicht auf den Boden, sondern treiben
           nach oben.
+  smithing:
+    jarvonia:
+      horseshoeMaking:
+        desc: Aus starkem Metall machst du ein Eisen, dass den Huf eines Pferdes auf
+          schwierigem Terrain schützen wird. Auch wenn Nägel zum fixieren genutzt
+          werden, muss das Pferd nicht leiden, da der Huf nicht empfindlich ist, ähnlich
+          wie ein menschlicher Fingernagel.
+        name: Hufeisen schmieden
