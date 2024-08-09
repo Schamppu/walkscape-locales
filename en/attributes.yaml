@@ -5,6 +5,10 @@ singulars:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
         text: "Global <stat s=\"workEfficiency\"/>"
+      whileRealm:
+        name: "<PLACEHOLDER>"
+        desc: "<PLACEHOLDER>"
+        text: "Global <stat s=\"workEfficiency\"/> while in <supp k=\"realm\"/>"      
       whileMainSkill:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
@@ -58,10 +62,6 @@ singulars:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
         text: "Global <stat s=\"fineMaterialFind\"/> when <supp k=\"achievementPoints\"/>"
-      whileRealm:
-        name: "<PLACEHOLDER>"
-        desc: "<PLACEHOLDER>"
-        text: "<stat s=\"fineMaterialFind\"/> while in <supp k=\"realm\"/>"
       whenKeywordSetBonus:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
@@ -95,10 +95,6 @@ singulars:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
         text: "<stat s=\"craftingOutcome\"/> while <supp k=\"skill\"/> in <supp k=\"keyword\"/> location."
-      whileRealm:
-        name: "<PLACEHOLDER>"
-        desc: "<PLACEHOLDER>"
-        text: "<stat s=\"craftingOutcome\"/> while in <supp k=\"realm\"/>"      
       whileLocationKeyword:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
@@ -132,10 +128,6 @@ singulars:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
         text: "Global <stat s=\"chestFind\"/> while in <supp k=\"keyword\"/> location."
-      whileRealm:
-        name: "<PLACEHOLDER>"
-        desc: "<PLACEHOLDER>"
-        text: "<stat s=\"chestFind\"/> while in <supp k=\"realm\"/>"
     doubleAction:
       global:
         name: "<PLACEHOLDER>"
@@ -149,6 +141,10 @@ singulars:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
         text: "<stat s=\"doubleAction\"/> while traveling"
+      whileTravelingAndRealm:
+        name: "<PLACEHOLDER>"
+        desc: "<PLACEHOLDER>"
+        text: "<stat s=\"doubleAction\"/> while traveling and in <supp k=\"realm\"/>"
       whenKeywordSetBonus:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
@@ -186,10 +182,6 @@ singulars:
         name: "<PLACEHOLDER>"
         desc: "<PLACEHOLDER>"
         text: "Global <stat s=\"doubleRewards\"/> while in <supp k=\"keyword\"/> location."
-      whileActivity:
-        name: "<PLACEHOLDER>"
-        desc: "<PLACEHOLDER>"
-        text: "Global <stat s=\"doubleRewards\"/> while doing <supp k=\"activityType\"/>."
     rollSpecialTable:
       whileMainSkill:
         name: "<PLACEHOLDER>"
