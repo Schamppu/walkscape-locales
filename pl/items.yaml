@@ -82,17 +82,48 @@ singulars:
         desc: Płynna rozkosz dla szlachty oraz poszukiwaczy przygód, obiecująca smak
           przeszłości jak i teraźniejszości dla wznoszących swoje kielichy w toaście.
         name: Wino
+      egg:
+        name: Jajko
+        desc: Prosto od kury.
+      potato:
+        name: Ziemniak
+      tomato:
+        name: Pomidor
+        desc: Czy to owoc czy warzywo?
+      chocolateMilk:
+        name: Mleko czekoladowe
+      dynamite:
+        name: Dynamit
+      nettleTea:
+        name: Herbata z pokrzywy
+        desc: Ciepły napój w zimnym miejscu.
+      underwaterSalad:
+        desc: Mieszanka podwodnych warzyw - wyjątkowo orzeźwiająca.
+        name: Podwodna sałatka
   containers:
     skilling:
       foraging:
         foragingChest:
           desc: Zachwycający asortyment przyborów związanych ze zbieractwem.
           name: Skrzynia Zbieractwa
+        sunkenChest:
+          name: Zatopiona skrzynia
       regional:
         galeforgeChest:
           desc: Plotka głosi, że ta skrzynia została zaokrąglona, aby łatwiej było
             toczyć ją po mieście. Jakie to pomysłowe!
           name: Skrzynia Galeforge
+        coinPouch:
+          name: Sakiewka na monety
+        gdteChest:
+          desc: Bagno.
+      woodcutting:
+        birdNest:
+          name: Ptasie gniazdo
+      mining:
+        gemPouch:
+          desc: Mała sakiewka wypełniona cennymi klejnotami. Czujesz ciężar klejnotów
+            trzymając ją w ręce.
   crafted:
     equipmentSets:
       bronze:
@@ -365,7 +396,7 @@ singulars:
       catsBell:
         name: Koci dzwonek
       cotton:
-        desc: Miękki i puszysty materiał zapewniający delikatność i poczucie komfortu
+        desc: Miękki i puszysty materiał zapewniający delikatność i poczucie komfortu.
         name: Bawełna
       deathsToll:
         desc: Może i wygląda zachęcająco, ale nie jadł był tego w tej formie.
@@ -480,6 +511,10 @@ singulars:
         name: Rubin
         desc: Ten czerwony klejnot jest bardzo popularny wśród wysoko urodzonych.
           Czerwony kolor symbolizuje siłę i pasję.
+      volcanicRock:
+        name: Skała wulkaniczna
+      volcanicAsh:
+        name: Popiół wulkaniczny
     rawFish:
       rawCarp:
         desc: Łagodny smak karpia bardzo dobrze komponuje się z różnymi potrawami.
@@ -529,6 +564,14 @@ singulars:
         desc: Pstrąg prezentuje hipnotyzującą mozaikę opalizujących łusek odbijających
           srebrzyste, różowe oraz plamiste wzory.
         name: Surowy pstrąg
+      rawStingray:
+        name: Surowa płaszczka
+      rawSwordfish:
+        name: Surowy miecznik
+      rawShark:
+        name: Surowy rekin
+      rawAnglerfish:
+        name: Surowa żabnica
     smithing:
       bronzeBar:
         name: Sztabka brązu
@@ -581,3 +624,7 @@ singulars:
       sturdyBranch:
         name: Solidna gałąź
         desc: Niezwykle mocna gałąź.
+  collectibles:
+    fromActivity:
+      veryOldWine:
+        name: 99-letnie wino
