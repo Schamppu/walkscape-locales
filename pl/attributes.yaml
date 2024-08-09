@@ -11,7 +11,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> w trakcie <supp k="skill"/>
+        text: <stat s="workEfficiency"/> wykonując <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -38,6 +38,19 @@ singulars:
           k="realm"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileRealmAndTraveling:
+        name: <PLACEHOLDER>
+        text: <stat s="workEfficiency"/> w trakcie podróżowania przez <supp k="realm"/>
+        desc: <PLACEHOLDER>
+      whileRealmAndMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="workEfficiency"/> wykonując <supp k="skill"/> w <supp k="realm"/>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalne <stat s="workEfficiency"/> jeżeli założone są <supp k="quantity"/>
+          <supp k="keyword"/> przedmioty.
     fineMaterialFind:
       whenAchievementPoints:
         text: Globalne <stat s="fineMaterialFind"/> mając <supp k="achievementPoints"/>
@@ -61,3 +74,16 @@ singulars:
         desc: <PLACEHOLDER>
         text: <stat s="fineMaterialFind"/> wykonując <supp k="skill"/> w lokacji <supp
           k="keyword"/>.
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="fineMaterialFind"/> wykonując <supp k="skill"/> w <supp k="realm"/>.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalne <stat s="fineMaterialFind"/> będąc w <supp k="keyword"/> .
+    craftingOutcome:
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalne <stat s="craftingOutcome"/>
