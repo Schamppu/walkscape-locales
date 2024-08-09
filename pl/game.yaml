@@ -33,24 +33,34 @@ maps:
       niezachwiana <c>wiara</c> i <c>zaciekła determinacja</c> by przetrwać.\n\n\t\t
       Pomimo surowych zim i odosobnienia, znajdują siłę i opiekę dzięki swojej religii,
       a ich <c>serca płoną jasno w obliczu zimna</c>.
-    painfulislands: Wyspy bólu
-    "wallisia": ''
-    "wrentmark": ''
-    "ewerethien": ''
-    "braemercia": ''
-    "ridraddak": ''
-    "ethereal": ''
+    painfulislands: Wyspy Bólu
+    "wallisia": '\t\t Wallisia, kraina obfitości i mocy. <c>Imperatorka</c>, potomkini
+      wielkiego wojownika, dowodzi armią, która <c>podbiła kontynent</c>, pozostawiając
+      tylko Jarvonię nietkniętą.\n\n\t\t Zielone łąki są <c>sercem całego kontynentu</c>,
+      zapewniając obfite zbiory, a także zasoby stanowiące paliwo do przemysłu oraz
+      militarnych możliwości <c>imperium</c>. Te szczyci się największą populacją
+      na kontynencie, a ludzie są <c>dumni ze swojej siły i władzy</c>.'
+    "wrentmark": '\t\t Wrentmark jest <c>krainą wykutą ogniem</c>, w której palące
+      słońce praży <c>piaski pustyni</c>. Ludzie z Wrentmark są <c>dumni i twardzi</c>,
+      którzy wynieśli krainę do rozkwitu mimo trudnego otoczenia przez wieki.\n\n\t\t
+      Wrentmark to kraina niezliczonych bogactw, gdzie <c>cenne minerały i klejnoty</c>
+      są wydobywane z ziemi i sprzedawane na świecie. Mieszkańcy Wrentmark są <c>mistrzami
+      wymiany</c>, ich umiejętności doskonaliły się przez stulecia handlu.'
+    "ewerethien": 'Ewerethien'
+    "braemercia": 'Braemercia'
+    "ridraddak": 'Rid Raddak'
+    "ethereal": 'Ethereal'
   realmMottos(map):
     galeforge: Kształtuj przyszłość i niczego się nie bój
-    painfulislands: Wyspy bólu
+    painfulislands: Wyspy Bólu
     wrentmark: Nasze złoto lśni jaśniej od słońca
-    "jarvonia": ''
-    "gdte": ''
-    "wallisia": ''
-    "ewerethien": ''
-    "braemercia": ''
-    "ridraddak": ''
-    "ethereal": ''
+    "jarvonia": 'Przez zimno nasze serca płoną jasno'
+    "gdte": 'Związani przypływami i trzcinami'
+    "wallisia": 'Tam, gdzie rośliny rosną wysoko, my również'
+    "ewerethien": 'Ewerethien'
+    "braemercia": 'Braemercia'
+    "ridraddak": 'Rid Raddak'
+    "ethereal": 'Ethereal'
   realms(map):
     braemercia: Braemercia
     ethereal: Ethereal
@@ -58,12 +68,19 @@ maps:
     galeforge: Galeforge
     gdte: Wielkie Księstwo Trellin-Erdwise
     jarvonia: Jarvonia
-    painfulislands: Wyspy bólu
+    painfulislands: Wyspy Bólu
     ridraddak: Rid Raddak
     wallisia: Wallisia
     wrentmark: Wrentmark
   raceDescriptions(map):
-    "human": ''
+    "human": '\t\t Na rozległej i zaczarowanej przestrzeni <c>Arenum</c> ludzie założyli
+      swoje ziemie na <c>Zachodnim Kontynencie</c>. Te budzące grozę krainy, zamaskowane
+      <c>nieujarzmioną dziczą</c> i <c>majestatycznymi krajobrazami</c> stały się
+      sercem ludzkiej cywilizacji.\n\n\t\t Jednak pod powierzchnią piękna i dobrobytu
+      <c>płynie burzliwy prąd</c>. Kontynent Zachodni był świadkiem bezlitosnej sagi
+      <c>zmagań</c> i <c>konfliktów</c>, tak jak ludzie toczą nieustanne walki o dominację
+      i władzę. \n\n\t\t Rywalizacja i spory, stare i nowe, <c>pokryły cieniem Wschodni
+      Kontynent</c>.'
 singulars:
   items:
     gearTypes:
@@ -112,9 +129,9 @@ singulars:
 plurals:
   items:
     money(param=amount):
-      two: ''
-      few: ''
-      many: ''
-      other: ''
-      zero: ''
-      one: ''
+      two: '-'
+      few: '-'
+      many: '-'
+      other: 'monet'
+      zero: '-'
+      one: 'moneta'
