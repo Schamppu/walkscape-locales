@@ -9,11 +9,14 @@ maps:
       '5': Éternel
     rarities(map):
       '0': Commun
-      '1': inhabituel
+      '1': Inhabituel
       '2': Rare
       '3': Épique
       '4': Légendaire
       '5': Éthéré
+    consumableTypes(map):
+      "food": Nourriture
+      "potion": Potion
   raceDescriptions(map):
     human: \t\t Dans les vastes étendues enchantées d'<c>Arenum</c>, les humains se
       sont imposés sur <c>le continent occidental</c>. Ces terres formidables, couvertes
@@ -52,7 +55,7 @@ maps:
     ewerethien: Ewerethien
     galeforge: Galeforge
     gdte: Grand-Duché de Trellin-Erdwise
-    jarvonia: Jarvonia
+    jarvonia: Jarvonie
     ridraddak: Rid Raddak
     wallisia: Wallisia
     wrentmark: Wrentmark
@@ -70,7 +73,7 @@ singulars:
   commonPhrases:
     allSkills: Toutes les compétences
     noActivity: Pas d'activité.
-    lookingForInternet: ''
+    lookingForInternet: 'À la recherche d''internet...'
   intro:
     whereAreYouFrom: Puis-je vous demander d'où vous venez ?
     welcome: ''
@@ -92,7 +95,7 @@ singulars:
       ring: Anneau
       secondary: Secondaire
       woodcutting: Matériel de bûcheron
-      back: ''
+      back: 'Dos'
     itemTags:
       fine: Raffiné
     itemTypes:
@@ -103,7 +106,7 @@ singulars:
       material: Matériau
       other: Autre
       quest: Quête
-      collectible: ''
+      collectible: 'Objet de collection'
   requirements:
     skills:
       level: Requiert <skill skill="${skill}" level="${level}"" isRequirement="true"/>
