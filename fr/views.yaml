@@ -62,10 +62,30 @@ plurals:
 singulars:
   achievements:
     info:
-      viewDescription: Déverrouillez des succès pour obtenir des <hl>Récompenses De Progression</hl>. Lorsque la Progression des Récompenses est remplie, vous obtenez une récompense pour tous vos personnages. Certains succès donnent également des récompenses une fois débloqués.
+      viewDescription: Déverrouillez des succès pour obtenir des <hl>points de réussite</hl>.
+        A chaque fois que vous atteignez un nombre spécifique de points de réussite,
+        vous débloquerez des récompenses spéciales. De plus, certains succès donnent
+        directement une récompense une fois débloqués.
+      specialItems: Les items spéciaux tels que <c>les objets de collection </c>,
+        <c>les objets de quête</c> et <c>les artéfacts</c> sont obtenus tout au long
+        de votre voyage dans WalkScape. Vous pouvez les consulter ici. Les objets
+        de collection vous donnent des points de réussite.
+      collectibleItems: Les objets de collection sont des items que tu peux obtenir
+        n'importe où dans le monde de WalkScape. Il existe plusieurs types d'objets
+        de collection que tu peux essayer de rassembler. Ils ne prennent aucune place
+        dans ton inventaire et sont toujours sur ton personnage.
+      noCollectibleItems: Tu n'as encore rassemblé aucun objet de collection.
+      totalProgressUnlocks: Tu gagneras ces récompenses en fonction de ta progression
+        totale dans les succès, mais tu perdras cependant accès à ces objets si plus
+        de points de réussite deviennent disponibles dans le futur.
+      checkPointUnlocks: Ces succès sont disponibles après avoir atteint certains
+        paliers de points de réussite. Tu ne perdras pas accès à ces succès même si
+        plus de points de réussite deviennent disponibles dans le futur.
     phrases:
       notUnlocked: Succès verrouillé
       rewardProgress: Progression de récompense
+      showRewards: Montrer les récompenses
+      unclaimedRewards: 'Récompenses non récupérées: '
   crafting:
     phrases:
       materials: Matériaux
@@ -75,12 +95,16 @@ singulars:
       requiresMaterial: Nécessite un matériau.
       requiresOneOfTheFollowing: Nécessite l'un des matériaux suivants.
       rewards: Récompenses
+      noMaterials: Tu n'as aucun matériau disponible pour fabriquer cela en ce moment.
   inventory:
     info:
-      noItemEquipped: Aucun objet n'est équipé. \n\n Vous pouvez équiper un objet en le sélectionnant dans la liste ci-dessous et en appuyant sur "Equiper".
-      noItemSelected: Aucun objet n'est sélectionné. \n\n Sélectionnez un objet dans la liste ci-dessous afin de le comparer à l'objet actuel et de l'équiper.
+      noItemEquipped: Aucun objet n'est équipé. \n\n Vous pouvez équiper un objet
+        en le sélectionnant dans la liste ci-dessous et en appuyant sur "Equiper".
+      noItemSelected: Aucun objet n'est sélectionné. \n\n Sélectionnez un objet dans
+        la liste ci-dessous afin de le comparer à l'objet actuel et de l'équiper.
     phrases:
       treasury: Salle au trésor
+      abilities: Aptitudes
   location:
     phrases:
       activities: Activités
@@ -93,3 +117,34 @@ singulars:
       showHat: Montrer les couvre-chefs
     phrases:
       currentSelection: Sélection actuelle
+  character:
+    phrases:
+      skills: Compétences
+      stepsOfLastWeek: Nombre de pas effectués au cours des 7 derniers jours
+      checkOutSubject: Jette un coup d'oeil à mon progrès sur WalkScape!
+      checkOut: Voici mon personnage WalkScape ${name}. Jettes-y un oeil!\nhttps://walkscape.app
+  activity:
+    phrases:
+      consumables: Consommables
+  permissions:
+    phrases:
+      pedometerPermission: Permissions du compteur de pas
+      permissionExplanation: Pour que le jeu fonctionne, nous avons besoin de votre
+        permission pour utiliser les données du compteur de pas de votre appareil.
+        Veuillez nous donner cette permission pour reprendre le jeu.
+  rewards:
+    phrases:
+      alreadyClaimed: Déjà récupéré
+  abilities:
+    info:
+      youHaveNoAbilities: <hl>Tu n'as aucune aptitude</hl>. Certains équipements dans
+        le jeu peuvent t'accorder des aptitudes que tu peux utiliser pour obtenir
+        un avantage immédiat dans le jeu pendant un certain temps.
+      abilitiesInfo: Les aptitudes sont des actions spéciales que tu peux utiliser
+        pour gagner des avantages immédiats dans le jeu. Les aptitudes ont un temps
+        de recherche que tu devras attendre avant de pouvoir utiliser l'aptitude à
+        nouveau.
+    phrases:
+      abilities: Aptitudes
+      useAbility: Utiliser l'aptitude
+      useConsumable: Utiliser le consommable
