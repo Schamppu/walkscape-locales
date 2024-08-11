@@ -214,22 +214,45 @@ singulars:
     twoHandedSword:
       desc: Une épée à deux mains à l'allure épique !
       name: Épée à deux mains
+    pickaxe:
+      name: Pioche
+      desc: La pioche à votre dos peut briser n'importe quelle roche.
+    birdCompanion:
+      desc: Un petit oiseau qui te suit partout.
+      name: Oiseau de compagnie
+    penguinCompanion:
+      desc: Un pingouin minuscule est assis sur ton épaule. De temps en temps, lorsqu'il
+        couine, on dirait qu'il dit:\n\n<i>"Mon roi! Mon roi!"</i>
+      name: Pingouin de compagnie
+    largeIcicle:
+      name: Long stalactite de glace
+      desc: Ce long stalactite de glace à ton dos choquera même les fashionistas qui
+        ont déjà tout vu.
+    rodOfMoss:
+      name: Canne à mousse
+      desc: Un morceau de mousse rare est attaché au bout du fil de ce bâton.
+    floatingOrb:
+      name: Orbe flottante
+      desc: Une orbe flottante qui te fait sentir comme un vrai accomplisseur.
   bodyTypes:
     a: A - Masculin
     b: B - Féminin
   eyeAccessory:
     coolGlasses:
-      desc: 'Des très belles lunettes. On dirait que vous êtes prêt à vous y mettre. '
+      desc: 'Des très belles lunettes. On dirait que tu es prêt à te mettre au travail.'
       name: Super lunettes
     fancyEarring:
       desc: Une boucle d'oreille argentée et brillante. Elle a l'air plutôt cool.
       name: Boucle d'oreille chic
     goggles:
-      desc: Des lunettes d'allure Galeforgian
+      desc: Des lunettes d'allure Galeforgienne.
       name: Lunettes de protection
     goldenGlasses:
       desc: Lunettes en or, très brillantes !
       name: Lunettes dorées
+    smokeEyes:
+      name: Yeux fumants
+      desc: Une fumée colorée se dégage de tes orbites.
   faceAccessories:
     fancyEarring:
       desc: Une boucle d'oreille argentée et brillante. Elle a l'air plutôt cool.
@@ -243,6 +266,13 @@ singulars:
     goldenPiercings:
       desc: Deux piercings dorés, un sur l'oreille et un autre sur les sourcils.
       name: Deux piercings dorés
+    hearingAid:
+      name: Appareil auditif
+      desc: Conçu à Galeforge.
+    carrot:
+      name: Carotte
+      desc: Lorsque t'as besoin de faire un cosplay de bonhomme de neige, prends une
+        carotte!
   facepaints:
     manyStripes:
       desc: Des rayures multiples qui couvrent presque tout le visage !
@@ -366,6 +396,7 @@ singulars:
       name: Cheveux longs et oreilles de chat
     longMiddlePart:
       desc: Cheveux longs, séparés au milieu.
+      name: Coupe longue avec raie au milieu
     longerMullet:
       desc: Une coupe mulet plus longue.
       name: Mullet plus long
@@ -391,8 +422,8 @@ singulars:
       name: Mullet
       desc: Un mullet.
     middlePart:
-      name: Double mèche
-      desc: Cheveux courts séparés de chaque côté.
+      name: Raie au milieu
+      desc: Cheveux courts séparés de chaque côté par une raie au milieu.
     middlePartAndBangs:
       name: Double mèche avec frange
       desc: Comme une double mèche mais avec deux franges qui pendent.
@@ -400,11 +431,75 @@ singulars:
       name: Double chignon
       desc: Une coiffure joviale avec ses deux petits chignons positionnés sur chaque
         côté de la tête.
+    mediumLengthMiddlePart:
+      name: Coupe mi-longue avec raie au milieu
+      desc: Cheveux mi-longs séparés par une raie au milieu.
+    highAndThightWithSides:
+      name: Haut et serré avec côtés
+      desc: Des cheveux plus longs en haut avec des côtés moins rasés.
+    longAndBow:
+      desc: Des cheveux longs avec un serre-tête nœud papillon.
+      name: Coupe longue avec nœud papillon
+    braidBun:
+      desc: Ces cheveux tressés se rejoignent pour former un gros chignon.
+      name: Chignon tressé
+    neckLength:
+      desc: Une coupe courte qui a été coupée au niveau du cou.
+      name: Coupe à hauteur du cou
+    shortTwoColor:
+      desc: Le double de couleurs pour doubler votre bonheur.
+      name: Coupe courte avec deux couleurs
+    longMerfolkHair:
+      desc: Cette coupe ondulée du peuple de l'eau a été délicatement décorée par
+        un machin bidule.
+      name: Cheveux d'ondin longs
+    voluminousMiddlePart:
+      name: Coupe volumineuse avec raie au milieu
+      desc: Cheveux longs et volumineux séparés en deux côtés par une raie au milieu.
+    squareCut:
+      name: Coupe au carré
+      desc: Un joli carré.
+    mohawk:
+      name: Crète iroquoise
+      desc: Une crète iroquoise.
+    voluminousBun:
+      name: Chignon volumineux
+      desc: Un chignon avec du volume.
+    longHair:
+      name: Cheveux longs
+      desc: De magnifiques cheveux longs, un classique.
+    pixieCut:
+      name: Coupe pixie
+      desc: Une coupe pixie.
+    shortCutWithFade:
+      name: Coupe courte avec dégradé
+      desc: Une coupe courte avec un dégradé stylé.
+    shortAndBow:
+      name: Coupe courte avec nœud papillon
+      desc: Une coupe courte avec un serre-tête nœud papillon.
+    shortAndCatEars:
+      name: Coupe courte avec oreilles de chat
+      desc: Une coupe courte avec des oreilles de chat. Miaou!
+    twoBunsLongHair:
+      name: Double chignon et cheveux longs
+      desc: Cette coupe longue a deux petits chignons tout en haut.
+    longHairWithGoggles:
+      name: Cheveux longs avec lunettes
+      desc: Cheveux longs et ondulés avec des lunettes de style Steam punk au-dessus.
+    assymetricalLongCut:
+      name: Asymétrique long
+      desc: Coupe asymétrique avec des tresses longues sur un seul côté.
+    braidedForeheadLongHair:
+      name: Cheveux longs tressés
+      desc: Une grosse mèche de cheveux a été tressée au-dessus du front, le reste
+        des cheveux s'écoule librement jusqu'aux épaules.
   headwear:
     bronzeHelmet:
       name: Casque en bronze
+      desc: Un simple mais magnifique casque.
     cap:
-      desc: C'est un véritable classique.
+      desc: C'est un vrai classique.
+      name: Casquette
     chefsHat:
       desc: Vous avez l'air d'être prêt à préparer un bon dîner !
       name: Toque de chef
@@ -437,6 +532,7 @@ singulars:
       name: Casque léger en farganite
     ironHelmet:
       name: Casque en fer
+      desc: On dirait un garde, pas vrai?
     lightBronzeHelmet:
       desc: Il ressemble un peu à un bonnet, mais protège très bien la tête.
       name: Casque léger en bronze
@@ -448,6 +544,7 @@ singulars:
       name: Casque léger en diamant
     lightIronHelmet:
       name: Casque léger en fer
+      desc: Un casque qui te fait ressembler à un garde. Et en plus il est très léger!
     partyHat:
       desc: Combien de temps avez-vous passé au guichet de la banque ?
       name: Chapeau de fête
@@ -456,6 +553,7 @@ singulars:
       name: Masque de médecin de la peste
     royalHelmet:
       name: Casque royal
+      desc: Tu ressembles à un vrai membre royal Wallisien.
     steelHelmet:
       desc: Protège votre tête.
       name: Casque en acier
@@ -483,6 +581,44 @@ singulars:
     warmBeanie:
       desc: Protège très bien du froid. Et il donne l'air cool.
       name: Bonnet chaud
+    christmasHat:
+      desc: Ratiritiralla, mistäs tuli halla. C'est une chanson de noël finlandaise.
+      name: Chapeau de noël
+    hatWithFeather:
+      desc: Ce chapeau léger a une plume fixée sur le côté. Pour ceux en quête d'enfance
+        éternelle.
+      name: Chapeau avec une plume
+    chaplinHat:
+      desc: Le chapeau le plus comique.
+      name: Chapeau de Chaplin
+    headwrap:
+      desc: Une couvre-chef polyvalent qui protège, orne et reflète le style personnel
+        de son porteur. Souvent porté par les Wrentmarkiens.
+      name: Turban simple
+    arcticHat:
+      name: Chapeau arctique
+      desc: Pour un vrai camarade.
+    pirateHat:
+      name: Chapeau pirate
+      desc: Mais où est parti le reste de l'équipage?
+    bowlerHat:
+      name: Chapeau melon
+      desc: Le chapeau favori des hommes d'affaire.
+    wizardHat:
+      desc: Toujours en vogue chez les magiciens.
+      name: Chapeau de mage
+    royalGuardHelmet:
+      name: Casque de Garde Royal
+      desc: Pour ceux qui protègent la frontière Wallisienne.
+    warmWoolenHat:
+      name: Chapeau en laine
+      desc: Ce simple chapeau est fait de laine et apporte une douce chaleur durant
+        l'hiver.
+    treasureHunterHat:
+      name: Chapeau de chasseur de trésor
+      desc: Personne ne sait si ce chapeau devrait être considéré comme un chapeau
+        fedora ou un chapeau de cow-boy. Quoi qu'il en soit, il te fait paraître aussi
+        cool qu'Indy.
   noses:
     bigAndPointy:
       desc: Un nez un peu gros et pointu. Ne blessez personne avec ça !
