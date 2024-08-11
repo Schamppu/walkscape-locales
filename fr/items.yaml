@@ -257,8 +257,10 @@ singulars:
           name: Chaussures en bronze
         sword:
           name: Épée en bronze
+          desc: Une épée.
         shield:
           name: Bouclier en bronze
+          desc: Un bouclier.
       copper:
         chest:
           desc: "La partie de l'équipement en bronze qui protège le torse, le ventre
@@ -314,8 +316,10 @@ singulars:
           name: Chaussures en farganite
         sword:
           name: Épée en farganite
+          desc: Une épée bleue miroitant le ciel.
         shield:
           name: Bouclier en farganite
+          desc: Un bouclier bleu miroitant le ciel.
       iron:
         chest:
           desc: 'Vous devriez sûrement rester loin des aimants lorsque vous le portez. '
@@ -343,8 +347,10 @@ singulars:
           name: Chaussures en fer
         sword:
           name: Épée en fer
+          desc: Une épée solide.
         shield:
           name: Bouclier en fer
+          desc: Un bouclier solide.
       steel:
         chest:
           desc: Pas tout à fait impénétrable, mais néanmoins capable d'absorber des
@@ -370,8 +376,10 @@ singulars:
           name: Chaussures en acier
         sword:
           name: Épée en acier
+          desc: Une épée solide et brillante.
         shield:
           name: Bouclier en acier
+          desc: Un bouclier solide et brillant.
       tarsilium:
         chest:
           desc: Le tarsilium sombre confère à cette cuirasse une certaine apparence
@@ -397,8 +405,10 @@ singulars:
           name: Chaussures en tarsilium
         shield:
           name: Bouclier en tarsilium
+          desc: Un bouclier noir de jais.
         sword:
           name: Épée en tarsilium
+          desc: Une épée noir de jais.
       basic:
         woodenSword:
           name: Épée en bois
@@ -442,6 +452,16 @@ singulars:
         willowFishingRod:
           name: Canne à pêche en saule
           desc: La canne à pêche en saule est plutôt légère et douce au toucher.
+        advancedFishingRod:
+          desc: Cette canne à pêche améliorée a été conçue pour les pêcheurs professionnels.
+          name: Canne à pêche améliorée
+        lobsterPot:
+          name: Casier à homard
+          desc: À placer dans l'océan, et un homard y apparaîtra.
+        tidalLure:
+          name: Appât à marée
+          desc: Cet appât ressemble à un tourbillon. Très efficace pour attirer des
+            poissons.
       mining:
         basicPickaxe:
           desc: La pioche de base, humble outil du mineur. À peine plus qu'un bâton,
@@ -514,8 +534,11 @@ singulars:
           desc: Offre une efficacité modeste lors de la coupe de plantes basiques.
         ironSickle:
           name: Faucille en fer
+          desc: Robuste et fiable, elle coupe facilement les tiges coriaces.
         steelSickle:
           name: Faucille en acier
+          desc: Solide et résistante, elle offre une prestation exemplaire lors des
+            cueillettes extensives.
         hydriliumSickle:
           name: Faucille en hydrilium
           desc: Une faucille fabriquée à partir d'un matériau sous-marin rare appelé
@@ -618,11 +641,11 @@ singulars:
         chefsApron:
           desc: 'Blanc, noir ou avec des phrases amusantes, ne cuisiner jamais sans
             tablier. '
-          name: Tablier
+          name: Tablier de Chef
         chefsHat:
           desc: Ce chapeau fantaisiste semble canaliser la magie de la cuisine, inspirant
             des merveilles culinaires à chaque coup de spatule.
-          name: Toque
+          name: Toque de Chef
         meatCleaver:
           desc: Il coupe facilement la viande et les os s'il est correctement entretenu.
             Il règle également les différents simplement en le tenant de façon menaçante.
@@ -761,6 +784,26 @@ singulars:
         name: Gants de l'Aventurier
       adventurersCape:
         name: Cape de l'Aventurier
+      conservationistShorts:
+        desc: Ce short te permet de bouger librement et possède de grandes poches
+          pour y ranger des outils.
+        name: Short des Défenseurs de l'Environnement
+      conservationistHat:
+        desc: Ce chapeau bleu fournit une bonne protection contre les éléments.
+        name: Chapeau des Défenseurs de l'Environnement
+      amuletOfLightness:
+        name: Amulette de clarté
+        desc: Cette amulette émet une lumière brillante qui t'emplit d'espoir même
+          dans les endroits les plus sombres.
+      axeOfDestruction:
+        name: Hache de la Destruction
+      conservationistShirt:
+        desc: Cette veste assure le confort de son porteur et possède quelques poches
+          en plus pour y cacher des trouvailles.
+        name: Veste des Défenseurs de l'Environnement
+      conservationistBoots:
+        name: Bottes des Défenseurs de l'Environnement
+        desc: Ces bottes bleues sont confortables et résistantes.
   materials:
     carpentry:
       birchPlank:
@@ -808,6 +851,9 @@ singulars:
       woodShaving:
         name: Copeaux de bois
         desc: Des chutes de bois de qualité moyenne
+      woodFragment:
+        name: Fragment de bois
+        desc: Des chutes de bois d'une grande qualité
     cooking:
       milk:
         desc: Directement issu de la vache, de la chèvre ou du chameau. Ou pressé
@@ -825,6 +871,7 @@ singulars:
         desc: Il est dit qu'en consommer améliore votre vision.
       mushroom:
         name: Champignon
+        desc: Ce petit fungi est souvent appelé un végétal, à tord.
     foraging:
       acidSapling:
         desc: À peine de la taille d'une brindille, le jeune arbre ocre brûle presque
@@ -917,17 +964,20 @@ singulars:
         name: Varech à sucre
       kelp:
         desc: Le varech est une algue connue pour ses divers usages, à la fois dans
-          la confection d'équipements robustes mais élastiques et en cuisine, lors
-          de la cuisson de délicieux aliments sous-marins.
+          la confection d'équipements tout aussi robustes qu'élastiques et en cuisine,
+          lors de la cuisson de délicieux aliments sous-marins.
         name: Varech
       seaSpinach:
         name: Bette maritime
+        desc: Une plante comestible qui est très savoureuse et nutritive. Fait partie
+          de la même famille que la betterave.
       underwaterLotus:
-        name: Lotus sous-marin
+        name: Lotus des fonds aquatiques
         desc: Une plante qui est souvent mentionnée dans la poésie Syrenthienne. Elle
           est connue pour sa grâce et sa beauté.
       cucumber:
         name: Concombre
+        desc: Combien est-ce que ça coûte ça de là d'où tu viens?
       wheat:
         name: Blé
         desc: Du blé.
@@ -935,6 +985,9 @@ singulars:
         name: Varech durci
         desc: Grâce à diverses techniques, le varech peut être durci pour en faire
           un matériau prisé dans l'artisanat.
+      saltyHops:
+        name: Houblon salé
+        desc: Le houblon salé fait des bières salées.
     mining:
       coal:
         desc: Modeste et humble, le charbon témoigne de sa praticité en tant que ressource
@@ -991,6 +1044,8 @@ singulars:
           d'un côté à l'autre de la surface de cette pierre d'un bleu océan.
       starPearl:
         name: Perle étoile
+        desc: Mise en valeur dans le fameux tableau \"La jeune fille à la perle étoile\"
+          réalisé par un peintre Wallisien.
       ethernite:
         name: Éthernite
         desc: Une gemme violette et vitreuse d'une grande valeur. Vous ressentez une
@@ -1103,6 +1158,12 @@ singulars:
         desc: Des chutes de métal de mauvaise qualité
       hydriliumBar:
         name: Lingot d'Hydrilium
+      metalShaving:
+        name: Copeaux de métal
+        desc: Des chutes de métal de qualité moyenne
+      metalFragment:
+        name: Fragment de métal
+        desc: Des chutes de métal d'une grande qualité
     woodcutting:
       birchLogs:
         desc: Lisses et pâles, les bûches de bouleau exhalent une simplicité élégante.
@@ -1149,6 +1210,8 @@ singulars:
         name: Palourde
       pearls:
         name: Perles
+        desc: De petites perles aussi blanches que la neige. Un élément très apprécié
+          des bijoutiers.
       fishingLine:
         desc: Retirer ça de la nature vient peut-être bien de sauver la vie d'un animal.
         name: Ligne de pêche
@@ -1165,6 +1228,26 @@ singulars:
         desc: Probablement vendu par quelqu’un sur une plage.
       unidentifiedRemains:
         name: Restes non identifiés
+        desc: La Guilde des Aventuriers apprécierait si tu pouvais leur ramener ces
+          ossements, cela pourra peut être les aider à résoudre une affaire non résolue.
+      glacierMap:
+        name: Mystérieuse carte du nord
+        desc: La partie nord de la Jarvonie est distinguable sur la carte. Il y a
+          un chemin marqué d'une ligne rouge qui mène à ce qui semble être un igloo
+          sur un glacier.
+      crosswordPuzzle:
+        name: Vieux puzzle de mots croisés
+        desc: Jeu de lettres, neuf lettres, commence par un C.
+      nameTag:
+        name: Pendentif gravé
+        desc: Un collier avec un pendentif portant le nom d'un aventurier parti depuis
+          longtemps gravé dessus. La Guilde des Aventuriers pourrait être intéressée
+          par ceci.
+      adventurersPin:
+        name: Pins en émail de l'aventurier
+        desc: Un pins avec le symbole de la Guilde des Aventuriers émaillé dessus.
+          C'est un peu rouillé mais il brille toujours. La Guilde des Aventuriers
+          apprécierait si tu pouvais leur rendre ceci.
     crafting:
       rope:
         name: Corde
@@ -1176,3 +1259,5 @@ singulars:
           avec des laminaires dans l'atelier de la marée.
       kelpRope:
         name: Corde de varech
+        desc: De longs morceaux de varech enroulés et attachés ensemble pour en faire
+          une corde.
