@@ -186,6 +186,12 @@ singulars:
           desc: Más ligeros que el par de hierro. Talla única. Algo realmente extraño
             tratándose de calzado metálico.
           name: Escarpes de bronce
+        shield:
+          name: Escudo de bronce
+          desc: Un escudo.
+        sword:
+          name: Espada de bronce
+          desc: Una espada.
       copper:
         chest:
           desc: Requiere un montón de cobre, pero al menos proteje las partes más
@@ -209,6 +215,12 @@ singulars:
         shoes:
           desc: Unas botas pesadas de cobre, que proporcionan algo de protección.
           name: Escarpes de cobre
+        sword:
+          name: Espada de cobre
+          desc: Una espada ligera.
+        shield:
+          name: Escudo de cobre
+          desc: Un escudo ligero.
       farganite:
         chest:
           desc: Una fortaleza impenetrable para tu pecho. Además, tu enemigo podrá
@@ -232,6 +244,12 @@ singulars:
           desc: Ofrecen una gran protección y son lo suficientemente ligeros como
             para poder huir rápidamente de situaciones peligrosas.
           name: Escarpes de farganita
+        sword:
+          name: Espada de farganita
+          desc: Una espada azul.
+        shield:
+          name: Escudo de farganita
+          desc: Un escudo azul.
       iron:
         chest:
           desc: Actúa como un bastión inquebrantable contra el peligro, protegiendo
@@ -257,6 +275,12 @@ singulars:
           desc: Nunca has sentido los pies tan pesados. Pero tienes cierta confianza
             en que podrían ser pasados por encima por un carro y salir ilesos.
           name: 'Escarpes de hierro '
+        sword:
+          name: Espada de hierro
+          desc: Una espada.
+        shield:
+          name: Escudo de hierro
+          desc: Un escudo.
       steel:
         chest:
           desc: Un poderoso baluarte para el torso y un testamento del indomable espíritu
@@ -285,6 +309,12 @@ singulars:
           desc: Al menos son más ligeros que los zapatos de hierro! Y eso ya es decir
             mucho.
           name: 'Escarpes de acero '
+        sword:
+          desc: Una espada brillante.
+          name: Espada de acero
+        shield:
+          name: Escudo de acero
+          desc: Un escudo brillante.
       tarsilium:
         chest:
           desc: El tono oscuro del tarsilium confiere a este peto un aura intimidante.
@@ -312,6 +342,19 @@ singulars:
             de acero! Cada paso que des con estas botas, intimida. No lo estropees
             bailando.
           name: Escarpes de tarsilium
+        shield:
+          name: Escudo de alquitranio
+          desc: Un escudo negro.
+        sword:
+          name: Espada de alquitranio
+          desc: Una espada negra.
+      basic:
+        woodenShield:
+          desc: Esperas que este simple escudo pueda defenderte.
+          name: Escudo de madera
+        woodenSword:
+          name: Espada de madera
+          desc: Esperas que este simple palo afilado pueda defenderte.
     skilling:
       fishing:
         basicFishingPole:
@@ -342,6 +385,20 @@ singulars:
           name: Red de pesca pequeña
         willowFishingRod:
           name: Caña de pescar de sauce
+          desc: La caña de pescar elaborada con sauce es ligera y suave al tacto.
+        coralFishingSpear:
+          name: Lanza de pesca de coral
+          desc: Esta lanza de pesca está hecha de corales e hidrilio. Tiene múltiples
+            extremos puntiagudos para facilitar la perforación del pez.
+        advancedFishingRod:
+          name: Caña de pescar avanzada
+          desc: La caña avanzada está destinada a pescadores profesionales.
+        lobsterPot:
+          name: Trampa para langostas
+          desc: En el mar colocar y langosta recolectar.
+        tidalLure:
+          name: Señuelo de marea
+          desc: El señuelo parece un remolino. Muy eficaz para atraer peces.
       foraging:
         copperSickle:
           desc: Ofrece una modesta eficiencia en el corte de plantas básicas.
@@ -357,6 +414,9 @@ singulars:
           desc: Una herramienta básica para cosechar la generosidad de la naturaleza.
             Su borde rugoso no es tan eficiente.
           name: Hoz de piedra
+        hydriliumSickle:
+          name: Hoz de hidrilio
+          desc: Una hoz hecha de un material submarino raro llamado hidrilio.
       mining:
         basicPickaxe:
           desc: El pico básico, una humilde herramienta de minero. Apenas más que
@@ -384,6 +444,9 @@ singulars:
           desc: Un pico negro como la noche. Muy resistente, aunque es ideal para
             perderlo en minas mal iluminadas.
           name: Pico de tarsilium
+        hydriliumPickaxe:
+          desc: Un pico hecho de un material submarino raro llamado hidrilio.
+          name: Pico de hidrilio
       woodcutting:
         basicHatchet:
           desc: El hacha básica, una humilde herramienta de los silvicultores. Apenas
@@ -411,6 +474,13 @@ singulars:
           desc: Un hacha negra como la noche. Resistente e ideal para perderla en
             un bosque mal iluminado.
           name: Hacha de tarsilium
+        hydriliumHatchet:
+          name: Hacha de hidrilio
+          desc: Un hacha hecha de un material submarino raro llamado hidrilio.
+      miscellaneous:
+        bagOfRocks:
+          name: Bolsa con rocas
+          desc: Es difícil arrastrarla, ¿por qué haces esto si se puede saber?
   looted:
     equipmentSets:
       dimensional:
@@ -669,6 +739,51 @@ singulars:
           agua. Con ellos, el objeto mágico de tu bolsillo permanecerá a salvo sin
           mojarse.
         name: Pantalones impermeables
+    achievements:
+      capeOfAchiever:
+        desc: La capa de color rosa despierta interés en cualquiera que la presencia.
+          El dueño de la capa ha cumplido lo que otros sólo sueñan.
+        name: Capa del triunfador
+      adventurersPants:
+        desc: Estos resistentes pantalones de cuero tienen varias correas, tanto por
+          utilidad como por moda.
+        name: Pantalones de aventurero
+      capeOfHalfAchiever:
+        desc: Esta magnífica capa azul representa a alguien lleno de determinación
+          para alcanzar la grandeza.
+        name: Capa del medio triunfador
+      shoesOfEscape:
+        desc: Estos zapatos te permiten ir muy rápido de vez en cuando.
+        name: Zapatos de escape
+      adventurersCape:
+        desc: Esta resistente capa de cuero protegerá a quien la lleve contra la mayoría
+          de las inclemencias del tiempo. Tiene correas para un fácil ajuste.
+        name: Capa de aventurero
+      adventurersHat:
+        name: Sombrero de aventurero
+        desc: Este sombrero de cuero te protegerá del sol, el viento y la lluvia.
+      adventurersShirt:
+        name: Camisa de aventurero
+        desc: Esta camisa de cuero es de color marrón claro y tiene múltiples bolsillos
+          para guardar cosas.
+      adventurersBoots:
+        name: Botas de aventurero
+        desc: Estas botas resistentes están hechas para resistir el desgaste intenso
+          y las condiciones climáticas adversas.
+      adventurersGloves:
+        name: Guantes de aventurero
+        desc: Estos guantes de cuero tienen una correa multi-posición para un ajuste
+          perfecto.
+      ringOfHomesickness:
+        name: Anillo de nostalgia
+        desc: Este anillo te recuerda que no hay lugar como el hogar.
+      amuletOfLightness:
+        name: Amuleto de ligereza
+        desc: Este amuleto irradia luz brillante y te llena de esperanza incluso en
+          el lugar más oscuro.
+      axeOfDestruction:
+        name: Hacha de destrucción
+        desc: La hoja de este hacha tiene forma de boca dispuesta a devorar madera.
   materials:
     carpentry:
       birchPlank:
@@ -722,10 +837,17 @@ singulars:
           almendras? Sólo tú sabes dónde la has encontrado.
         name: Leche
       salt:
-        desc: Cada grano es un fragmento de océanos olvidados, imbuido del poder de
-          purificar, proteger y añadir una pizca de encanto a cualquier plato. Vigila
-          siempre tu tensión arterial.
+        desc: <PLACEHOLDER>
         name: Sal
+      honey:
+        name: Panal
+        desc: Este panal crudo está goteando miel fresca.
+      carrot:
+        name: Zanahoria
+        desc: Se dice que esto ayuda a la vista.
+      mushroom:
+        name: Champiñon
+        desc: Este hongo es técnicamente un vegetal.
     foraging:
       acidSapling:
         desc: Apenas del tamaño de una ramita, este árbol ocre casi quema la piel
@@ -1011,6 +1133,15 @@ singulars:
       metalScrap:
         name: Restos de metal
         desc: Algunos restos de metal de baja calidad
+      metalShaving:
+        name: Virutas de metal
+        desc: Algunos recortes de metal de calidad media
+      metalFragment:
+        name: Fragmentos de metal
+        desc: Algunos recortes de metal de alta calidad
+      hydriliumBar:
+        desc: <Placeholder>
+        name: Lingote de hidrilio
     woodcutting:
       birchLogs:
         desc: Suaves y pálidos, los troncos de abedul destilan una elegante sencillez.
@@ -1050,3 +1181,54 @@ singulars:
         name: Leños de sauce
         desc: Estos leños terrosos son bastante livianos, lo que los hace muy cómodos
           de manipular y trabajar.
+    misc:
+      glacierMap:
+        desc: El mapa se parece a la parte norte de Jarvonia. Marcado con una línea
+          roja hay un camino hacia lo que parece ser un glaciar con un iglú.
+        name: Mapa norteño misterioso
+      trash:
+        desc: Una colección de objetos inútiles y sin valor. ¿Por qué cogiste esto?
+        name: Basura
+      clam:
+        desc: De color blanco nacarado y perfectamente intacto. Un hermoso ejemplar
+          para un coleccionista.
+        name: Almeja
+      unidentifiedRemains:
+        desc: El Gremio de Aventureros agradecería que les devolvieras este montón
+          de huesos, ya que podría ayudarles a resolver un permiso abierto.
+        name: Restos no identificados
+      adventurersPin:
+        desc: Un broche con el símbolo del Gremio de Aventureros. Está un poco oxidado,
+          pero aún brilla. El Gremio de Aventureros agradecería que se lo devolvieras.
+        name: Broche esmaltado de aventurero
+      fishbone:
+        name: Raspa
+        desc: Aunque es un poco espantoso y huele bastante mal, se ve muy bien.
+      seashell:
+        name: Concha de mar
+        desc: Probablemente lo vendió alguien en la playa.
+      pearls:
+        name: Perlas
+        desc: Un conjunto de blancos nacarados. Excelente material para hacer joyas.
+      crosswordPuzzle:
+        name: Viejo crucigrama
+        desc: Juego de palabras, nueve letras, comienza con C.
+      fishingLine:
+        name: Sedal
+        desc: Recuperar esto de la naturaleza puede haber salvado la vida de un animal.
+      nameTag:
+        desc: Una etiqueta con el nombre de algún aventurero desaparecido escrito
+          en ella. El Gremio de Aventureros podría estar interesado en esto.
+        name: Etiqueta con nombre
+    crafting:
+      rope:
+        name: Cuerda
+        desc: Un kit de supervivencia no está completo sin una cuerda. Imprescindible
+          para hacerte tú mismo algunas herramientas básicas.
+      hydrilium:
+        name: Hidrilio
+        desc: Este extraño material se fabrica combinando roca volcánica y quelpos
+          en el taller de mareas.
+      kelpRope:
+        name: Cuerda de quelpo
+        desc: Largos trozos de quelpo ensartados en una cuerda.
