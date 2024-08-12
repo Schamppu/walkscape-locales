@@ -2,3 +2,18 @@ singulars:
   factionReputation:
     title: Fraktionsruf
     text: <c>+$amount Fraktionsruf </c> zu <realm realm="${realm}" />
+  skillXp:
+    title: Fähigkeitserfahrung
+    text: <c>+$amount</c> Erfahrung in <skill skill="${skill}" />
+  customRewards:
+    adventurersGuild:
+      title: Abenteurergilde
+      text: Schaltet Zugang zur Abenteurergilde frei.
+maps:
+  rewardTypes(map):
+    "none": Keine
+    "lootTable": Zufällige Beute
+    "item": Gegenstand
+    "skillXp": Fähigkeitserfahrung
+    "pfpOption": Kosmetischer Gegenstand
+    "achievementPoint": Erfolgspunkt
