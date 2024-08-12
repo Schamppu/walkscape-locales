@@ -261,11 +261,11 @@ singulars:
       name: Bande sur les joues
   faces:
     agedFace:
-      desc: Visage plus âgé.
-      name: Visage âgé
+      desc: Visage qui révèle un certain âge.
+      name: Visage vieilli
     agedWithBeardFace:
-      desc: Visage plus âgé avec barbe
-      name: Visage âgé avec barbe
+      desc: Visage qui révèle un certain âge, avec une barbe.
+      name: Visage vieilli avec une barbe
     basic:
       desc: Un visage d'apparence générique.
       name: Visage basique
@@ -277,44 +277,56 @@ singulars:
       name: Visage rougi
     chiselledFace:
       desc: Un visage dont la forme est légèrement plus prononcée.
-      name: Visage buriné
+      name: Visage ciselé
     fancyMoustache:
       desc: Visage avec une moustache très chic
       name: Visage moustachu chic
     goatee:
-      desc: Ce style de barbe est un classique, n'est-ce pas ?
-      name: Visage avec bouc
+      desc: Ce style de barbe est un classique, n'est-ce pas?
+      name: Visage avec un bouc
     largeBeard:
       desc: Un visage qui a une barbe un peu plus touffue.
-      name: Visage avec grande barbe
+      name: Visage avec une grande barbe
     makeupFace:
-      desc: Un visage un peu plus maquillé !
-      name: Visage maquillé
+      desc: Un visage un peu plus maquillé!
+      name: Visage avec du makeup
     moustache:
       desc: Un visage avec une moustache de taille moyenne.
-      name: Visage avec moustache
+      name: Visage avec une moustache
     roundedFace:
       desc: Un visage légèrement arrondi.
       name: Visage arrondi
     scarredFace:
       desc: Visage avec une grande cicatrice sur l'un des yeux.
-      name: Visage avec cicatrices
+      name: Visage avec une cicatrice
     smallerFace:
       desc: Visage légèrement plus petit horizontalement.
       name: Visage plus petit
+    epicBeard:
+      name: Barbe épique
+      desc: Celle-ci fait rougir même les nains.
+    masculineMerfolkFace:
+      desc: Un visage masculin avec une peau bleuâtre semblable à celle d'un dauphin.
+      name: Visage d'ondin
+    feminineMerfolkFace:
+      name: Visage d'ondine
+      desc: Un visage féminin avec une peau bleuâtre semblable à celle d'un dauphin.
+    merfolkFace:
+      name: Visage de peuple marin
+      desc: Un visage avec une peau bleuâtre semblable à celle des dauphins.
   hairstyles:
     afro:
       desc: Une coupe afro.
       name: Afro
     assymetrical:
       desc: Une coupe de cheveux asymétrique.
-      name: Assymétrique
+      name: Asymétrique
     bald:
       desc: Un crâne chauve.
       name: Chauve
     balded:
-      desc: Une tête chauve.
-      name: Chauve
+      desc: Une tête presque chauve, presque.
+      name: Calvitie
     bowlCut:
       desc: Une coupe au bol de type Kaarija.
       name: Coupe au bol
@@ -340,10 +352,11 @@ singulars:
       desc: Juste la partie supérieure.
       name: Haut et serré
     highAndTightBun:
-      desc: Côtés rasés et reste en chignon.
+      desc: Côtés rasés et le haut en chignon.
       name: Haut et serré et chignon
     highPonytail:
-      desc: Une allure élégante et raffinée avec des cheveux rassemblés haut sur la tête.
+      desc: Une allure élégante et raffinée avec des cheveux rassemblés haut sur la
+        tête.
       name: Queue de cheval haute
     lionsMane:
       desc: Canaliser le lion qui sommeille en vous.
@@ -356,6 +369,37 @@ singulars:
     longerMullet:
       desc: Une coupe mulet plus longue.
       name: Mullet plus long
+    unevenBowlCut:
+      desc: Une coupe courte avec un effet coiffé-décoiffé.
+      name: Coiffé-décoiffé court
+    voluminousAfro:
+      name: Afro volumineux
+      desc: Une coupe afro encore plus volumineuse.
+    waveFade:
+      desc: Une mèche sur le côté avec un dégradé.
+      name: Mèche avec dégradé
+    looseBun:
+      desc: Un chignon avec des mèches libres.
+      name: Chignon décoiffé
+    highSwoop:
+      name: Houpette avec côtés rasés
+      desc: Une houpette avec des côtés rasés.
+    swoop:
+      desc: Une coupe en brosse avec une mèche sur le côté.
+      name: Coupe en brosse avec mèche
+    mullet:
+      name: Mullet
+      desc: Un mullet.
+    middlePart:
+      name: Double mèche
+      desc: Cheveux courts séparés de chaque côté.
+    middlePartAndBangs:
+      name: Double mèche avec frange
+      desc: Comme une double mèche mais avec deux franges qui pendent.
+    spaceBuns:
+      name: Double chignon
+      desc: Une coiffure joviale avec ses deux petits chignons positionnés sur chaque
+        côté de la tête.
   headwear:
     bronzeHelmet:
       name: Casque en bronze
@@ -453,7 +497,8 @@ singulars:
       desc: On dirait que vous vous êtes fait mal au nez. Oh non.
       name: Nez avec pansement
     prettyNose:
-      desc: Je ne savais pas vraiment comment l'appeler, mais je trouve qu'il est joli.
+      desc: Je ne savais pas vraiment comment l'appeler, mais je trouve qu'il est
+        joli.
       name: Joli nez
     smallAndPointy:
       desc: Un nez plus petit mais également pointu.
@@ -473,6 +518,7 @@ singulars:
       name: Couverture
     botShirt:
       desc: Le personnage de base d'un certain MMO.
+      name: T-shirt Robot
     coat:
       desc: Un manteau classique.
       name: Manteau
@@ -484,6 +530,7 @@ singulars:
       name: Robe élégante
     furCoat:
       name: Manteau de fourrure
+      desc: Un manteau très doux et chaud.
     hoodedMonkRobe:
       desc: Pas membre d'une secte.
       name: Robe de moine à capuche
@@ -492,13 +539,13 @@ singulars:
       name: Sweat à capuche
     outlanderFurs:
       desc: Des fourrures pour vous tenir chaud dans les environnements les plus froids.
-      name: 'Fourrures '
+      name: 'Fourrures'
     simpleShirt:
-      desc: Une chemise simple pour une personne du peuple.
+      desc: Une chemise simple pour un simple paysan.
       name: Chemise simple
     sleevelessDress:
       desc: Une robe sans manches avec un collier.
-      name: Robe sans manches avec collier
+      name: Robe Sans Manches avec Collier
     sleevelessGown:
       desc: Une robe sans manches.
       name: Robe sans manches
@@ -511,3 +558,79 @@ singulars:
     woodworkersApron:
       desc: Tablier destiné au travail du bois.
       name: Tablier de menuisier.
+    partyGown:
+      desc: Une robe pour se balader dans les rues les plus chics.
+      name: Robe de Soirée
+    shirtJacket:
+      name: T-shirt et Veste
+      desc: Un t-shirt avec une veste claire.
+    rancherOveralls:
+      name: Salopette de Fermier
+      desc: Une salopette adaptée à l'élevage.
+    dragonLeatherArmor:
+      desc: Cette armure a été créée à partir de la peau d'un dragon ancien, elle
+        garde son porteur au chaud et bien protégé.
+      name: Armure en Cuir de Dragon
+    lightBrandedHoodie:
+      desc: Un sweat à capuche plutôt léger avec une marque circulaire.
+      name: Sweat à Capuche Léger
+    hazmatSuit:
+      desc: Que tu sois entrain de manipuler des noyaux radioactifs, cuisiner des
+        stupéfiants illégaux ou encore visiter des villes dans les fonds marins, cette
+        combinaison te protégera.
+      name: Combinaison de Protection
+    halflingCloak:
+      desc: Lorsque tu te recouvres de cette longue et lourde cape, il devient impossible
+        de te différencier d'un gros caillou.
+      name: Cape d'Halfelin
+    farmApron:
+      name: Tablier de Ferme
+      desc: Un simple tablier de fermier.
+    simplePullover:
+      name: Pull Simple
+      desc: Un simple pull.
+    capedGown:
+      name: Robe avec Cape
+      desc: Une robe avec une cape.
+    fancySuit:
+      name: Costume Chic
+      desc: Un costume pour parler affaires.
+    scoopNeckDress:
+      name: Robe à Col Rond
+      desc: Une robe à col rond plutôt chic.
+    minecraftOutfit:
+      name: Tenue de Mine et Craft
+      desc: Cette tenue peut paraître simpliste et un peu cubique mais les mineurs
+        et crafteurs l'adorent.
+    tailoredBusinessSuit:
+      desc: Ce costume fait sur-mesure par des professionnels te sied à merveille.
+        Tu es prêt à impressionner n'importe qui.
+      name: Costume d'Affaires sur-mesure
+    lumberjackShirt:
+      name: Chemise de Bûcheron
+      desc: Une chemise typique de quelqu’un qui a abattu plus de 5000 arbres.
+    chefsUniform:
+      name: Tenue de Chef
+      desc: L’uniforme est propre et confortable ce qui permet un travail efficace
+        dans n’importe quelle cuisine.
+    orientalDress:
+      name: Robe Orientale
+      desc: Cette robe élégante fera de vous un homme.
+    warmWoolenCoat:
+      name: Manteau en Laine
+      desc: Ce manteau simplet est incrusté de laine et offre une protection supplémentaire
+        contre le froid autour du cou.
+    cloakWithGem:
+      name: Cape avec une gemme
+      desc: Cette longue cape est jointe bout à bout par une gemme scintillante.
+    treasureHunterJacket:
+      desc: Cette veste en cuir durci te protègera des pièges et des fosses. Elle
+        possède des poches où tu peux planquer le trésor, pratique.
+      name: Veste de Chasseur de Trésor
+    scarfShirt:
+      name: Chemise et Foulard
+      desc: Une chemise avec un foulard. Ça réchauffe!
+    runningPoloShirt:
+      name: Polo de Course
+      desc: Ce polo est élégant et confortable. Parfaitement adapté pour courir à
+        travers les continents.

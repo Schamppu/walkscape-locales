@@ -14,6 +14,9 @@ maps:
       '3': Destansı
       '4': Efsanevi
       '5': Semavi
+    consumableTypes(map):
+      "food": Yiyecek
+      "potion": İksir
   raceDescriptions(map):
     human: \t\t <c>Arenum</c>'un uçsuz bucaksız ve büyülü topraklarında, insanlar
       <c>Batı Kıtası</c>'nda hak iddia etti. <c>Vahşi doğa</c> ve <c>görkemli manzaralarla</c>
@@ -84,10 +87,10 @@ plurals:
     money(param=amount):
       one: akçe
       other: akçe
-      zero: ''
-      two: ''
-      few: ''
-      many: ''
+      zero: '-'
+      two: '-'
+      few: '-'
+      many: '-'
 singulars:
   commonPhrases:
     allSkills: Bütün beceriler
@@ -100,7 +103,7 @@ singulars:
   items:
     gearTypes:
       agility: Çeviklik aleti
-      cape: Sırt
+      cape: Pelerin
       chest: Göğüs
       cooking: Aşçılık aleti
       feet: Ayak
@@ -115,7 +118,7 @@ singulars:
       ring: Yüzük
       secondary: Yan Obje
       woodcutting: Odunculuk aleti
-      back: ''
+      back: 'Sırt'
     itemTags:
       fine: İyi
     itemTypes:

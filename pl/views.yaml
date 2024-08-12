@@ -40,10 +40,31 @@ plurals:
 singulars:
   achievements:
     info:
-      viewDescription: Odblokuj osiągnięcia, aby zwiększyć <hl>Postęp Nagrody</hl>. Gdy Postęp Nagrody jest wypełniony, otrzymasz nagrodę dla wszystkich swoich postaci. Niektóre osiągnięcia mają też nagrody za ich odblokowanie.
+      viewDescription: Odblokuj osiągnięcia, aby zwiększyć <hl>Postęp Nagrody</hl>.
+        Gdy Postęp Nagrody jest wypełniony, otrzymasz nagrodę dla wszystkich swoich
+        postaci. Niektóre osiągnięcia mają też nagrody za ich odblokowanie.
+      specialItems: Specjalne przedmioty, takie jak <c>Znajdźki</c>, <c>Przedmioty
+        do Zadań</c> i <c>Artefakty</c> są zbierane w trakcie twojej podróży przez
+        WalkScape. Możesz sprawdzić je tutaj. Znajdźki dają ci progres w punktach
+        osiągnięć.
+      collectibleItems: Przedmioty kolekcjonerskie (Znajdźki) to rzeczy, które możesz
+        zdobyć ze świata WalkScape. Istnieje kilka rodzajów przedmiotów kolekcjonerskich,
+        które możesz spróbować zebrać. Nie zajmują miejsca w ekwipunku i zawsze są
+        na wyposażeniu twojej postaci.
+      noCollectibleItems: Nie udało ci się odnaleźć jeszcze żadnych Znajdziek.
+      totalProgressUnlocks: Otrzymasz te nagrody na podstawie całkowitego postępu
+        w Osiągnięciach i utracisz dostęp do przedmiotów, jeżeli dostępnych będzie
+        więcej punktów osiągnięć.
+      checkPointUnlocks: Te osiągnięcia są dostępne w określonych miejscach kontrolnych
+        osiągnięć. Nie stracisz do nich dostępu, nawet jeśli dostępnych będzie więcej
+        punktów osiągnięć.
     phrases:
       notUnlocked: Zablokowane osiągnięcie
       rewardProgress: Postęp Nagrody
+      showRewards: Pokaż Nagrody
+      totalProgressUnlocks: Całkowity postęp odblokowań
+      checkPointUnlocks: Sprawdzenie punktów odblokowań
+      unclaimedRewards: 'Nieodebrane nagrody: '
   crafting:
     phrases:
       materials: Materiały
@@ -53,13 +74,84 @@ singulars:
       requiresMaterial: Wymaga materiału.
       requiresOneOfTheFollowing: Wymaga jednego z następujących materiałów.
       rewards: Nagrody
+      noMaterials: Nie posiadasz materiałów dostępnych do wytwarzania w tej chwili.
+      noServiceRequirements: Brak wymagań.
+      noMaterialsThatCouldBeUsed: W twoim ekwipunku nie ma materiałów, które można
+        wykorzystać do produkcji.
+      showingRecipiesThatUses: Pokaż przepisy, które używają
+      requiresService: Requires a service.
   inventory:
     info:
-      noItemEquipped: Nie wyposażono żadnego przedmiotu. \n\n Przedmiot można wyposażyć, wybierając go z poniższej listy i naciskając przycisk "Wyposaż".
-      noItemSelected: Nie wybrano żadnego przedmiotu. \n\n Wybierz przedmiot z poniższej listy, aby porównać go z bieżącym przedmiotem i wyposażyć go.
+      noItemEquipped: Nie wyposażono żadnego przedmiotu. \n\n Przedmiot można wyposażyć,
+        wybierając go z poniższej listy i naciskając przycisk "Wyposaż".
+      noItemSelected: Nie wybrano żadnego przedmiotu. \n\n Wybierz przedmiot z poniższej
+        listy, aby porównać go z bieżącym przedmiotem i wyposażyć go.
     phrases:
       treasury: Skarbiec
   location:
     phrases:
       activities: Działania
       services: Usługi
+  activity:
+    info:
+      consumablesUsage: Możesz wybrać <c>jedzenie</c> oraz <c>miksturę</c>, by użyć
+        w trakcie aktywności.
+    phrases:
+      consumables: Przedmioty Używalne
+  character:
+    info:
+      skillBreakdown: Tutaj znajduje się całkowite podsumowanie wszystkich twoich
+        umiejętności na tej postaci w trakcie swojej przygody.
+    phrases:
+      skills: Umiejętności
+      stepsOfLastWeek: Kroków w ciągu 7 dni
+      checkOut: To moja postać ${name} w WalkScape. Sprawdź to!\nhttps://walkscape.app
+      checkOutSubject: Sprawdź mój postęp w WalkScape!
+  permissions:
+    phrases:
+      pedometerPermission: Uprawnienia do liczenia kroków
+      permissionExplanation: By gra działała poprawnie potrzebne są uprawnienia do
+        zliczania kroków z twojego urządzenia. Proszę zaakceptować te uprawnienia,
+        by móc kontynuować grę.
+      exactAlarmPermission: Uprawnienia alarmu
+  rewards:
+    phrases:
+      alreadyClaimed: Już odebrano
+  wardrobe:
+    phrases:
+      noHeadwear: Nie posiadasz żadnego nakrycia głowy.
+      noFaceAccessories: Nie posiadasz żadnych dodatków do twarzy.
+      noBackAccessories: Nie posiadasz żadnych akcesoriów na plecach.
+      noEyeAccessories: Nie masz żadnych akcesoriów dla oczu.
+  abilities:
+    info:
+      youHaveNoAbilities: <hl>Nie masz żadnych umiejętności</hl>. Określony sprzęt
+        w grze może zapewnić ci umiejętności, których możesz użyć, aby uzyskać natychmiastowe
+        opcje w grze, w zamian za ich czas odnowienia.
+      abilitiesInfo: Umiejętności to specjalne akcje, których możesz użyć, aby zyskać
+        natychmiastowe korzyści w grze. Umiejętności mają czas odnowienia, który musi
+        minąć, by ponownie móc je użyć.
+    phrases:
+      abilities: Zdolności
+      useAbility: Użyj Zdolności
+      useConsumable: Użyj przedmiotu używalnego
+      noAction: Brak Akcji
+      holdToCast: Przytrzymaj, by rzucić
+      holdToUse: Trzymaj, by użyć
+  cooldowns:
+    phrases:
+      followingMustBeTrueToUse: 'Wymagania do użycia nie są spełnione:'
+      followingMustBeTrueToTick: 'Poniższe cechy muszą być spełnione, by czas odnowienia
+        spadał:'
+      cooldownRemaining: 'Czas Odnowienia:'
+      cooldownReady: 'Czas Odnowienia: Gotowe'
+      noCooldown: Brak Czasu Odnowienia.
+  treasury:
+    phrases:
+      noItems: Nie masz żadnych skarbów do otwarcia. Możesz je otrzymać z najróżniejszych
+        aktywności.
+      openChest: Otwórz
+      openAll: Otwórz Wszystkie
+  jobs:
+    phrases:
+      rewards: Nagrody za ukończenie

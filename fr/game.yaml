@@ -9,11 +9,14 @@ maps:
       '5': Éternel
     rarities(map):
       '0': Commun
-      '1': inhabituel
+      '1': Inhabituel
       '2': Rare
       '3': Épique
       '4': Légendaire
       '5': Éthéré
+    consumableTypes(map):
+      "food": Nourriture
+      "potion": Potion
   raceDescriptions(map):
     human: \t\t Dans les vastes étendues enchantées d'<c>Arenum</c>, les humains se
       sont imposés sur <c>le continent occidental</c>. Ces terres formidables, couvertes
@@ -26,18 +29,46 @@ maps:
       <c>ont jeté leurs ombres sur le Continent Occidental</c>.
   realmDescriptions(map):
     braemercia: Braemercia
-    ethereal: Ethereal
+    ethereal: Etheréel
     ewerethien: Ewerethien
     ridraddak: Rid Raddak
-    "jarvonia": ''
-    "gdte": ''
-    "wallisia": ''
-    "galeforge": ''
-    "wrentmark": ''
-    "painfulislands": ''
+    "jarvonia": '\t\t La Jarvonie, <c>une contrée emplie de glace et d''obscurité</c>,
+      est un domaine indépendant gouverné par une puissante confrérie religieuse et
+      habité par un peuple robuste, uni par leur <c>foi</c> inébranlable et leur <c>immense
+      détermination</c> à survivre. \n\n\t\t Malgré l''isolation et de rudes hivers,
+      ils trouvent force et protection dans leur religion, leurs <c>cœurs brûlant
+      vaillamment contre le froid</c>.'
+    "gdte": '\t\t Le Grand-Duché de Trellin-Erdwise, divisé <c>face à une crise actuelle</c>,
+      est un pays empli de <c>beauté</c> naturelle et de <c>défis</c>. \n\n\t\t Les
+      marécages de Trellin et les ports côtiers d’Erdwise sont à la fois sources de
+      beauté et de danger. Le peuple du Grand-Duché est défini par <c>leur orgueil
+      et leur cupidité</c>.'
+    "wallisia": '\t\t Wallisia, une terre d''abondance et de pouvoir. <c>L''Impératrice</c>,
+      descendante d''un grand guerrier, est aux commandes d''une armée qui a <c>conquis
+      le continent</c>, ne laissant intacte que la Jarvonie. \n\n\t\t Les prairies
+      vertes sont <c>le cœur de tout le continent</c>, fournissant d''abondantes récoltes
+      et ressources qui alimentent les structures industrielles et militaires de <c>l''empire</c>.
+      Ce dernier possède d''ailleurs la plus grande population du continent et leur
+      peuple est <c>fier de sa force et de son pouvoir</c>.'
+    "galeforge": '\t\t Galeforge est une ville <c>d''innovation et de progrès</c>
+      conquise par le puissant empire de Wallisia. Nichée entre Wallisia et <c>l''archipel</c>,
+      elle est un endroit où la technologie et l''industrie prospèrent.\n\n\t\t Les
+      habitants de Galeforge sont <c>ambitieux et motivés</c>, repoussant constamment
+      les limites du possible. Cette ville est une métropole en constant mouvement
+      <c>où les industries bourdonnent d''activité</c> et où les rues sont bordées
+      de marchants vendant les dernières innovations.'
+    "wrentmark": '\t\t Wrentmark est <c> un royaume forgé par le feu</c> où le soleil
+      ardent s''abat sur <c>les sables du désert</c>. Le peuple de Wrentmark est <c>un
+      amas de personnes fières et aguerries</c> qui ont prospéré dans cet environnement
+      hostile pendant des siècles. \n\n\t\t Wrentmark est une terre de richesses incalculables
+      où <c>des minerais et des pierres précieuses</c> sont extraits de la terre et
+      échangés à travers le pays. Les habitants de Wrentmark sont des <c>marchands-nés,
+      maîtres de leur art</c>, dont le savoir-faire s''est perfectionné au fil des
+      siècles de commerce.'
+    "painfulislands": 'Iles Endolories'
   realmMottos(map):
     braemercia: Braemercia
-    ethereal: Ethereal
+    ethereal: Etheréel
     ewerethien: Ewerethien
     galeforge: Forges l'avenir et n'ai peur de rien
     gdte: Liés par les marées et les roseaux
@@ -45,18 +76,18 @@ maps:
     ridraddak: Rid Raddak
     wallisia: Là où les cultures prospèrent, nous prosperons
     wrentmark: Notre or brûle plus fort que le soleil
-    "painfulislands": ''
+    "painfulislands": 'Iles Endolories'
   realms(map):
     braemercia: Braemercia
-    ethereal: Ethereal
+    ethereal: Etheréel
     ewerethien: Ewerethien
     galeforge: Galeforge
     gdte: Grand-Duché de Trellin-Erdwise
-    jarvonia: Jarvonia
+    jarvonia: Jarvonie
     ridraddak: Rid Raddak
     wallisia: Wallisia
     wrentmark: Wrentmark
-    "painfulislands": ''
+    "painfulislands": 'Iles Endolories'
 plurals:
   items:
     money(param=amount):
@@ -70,10 +101,11 @@ singulars:
   commonPhrases:
     allSkills: Toutes les compétences
     noActivity: Pas d'activité.
-    lookingForInternet: ''
+    lookingForInternet: 'À la recherche d''internet...'
   intro:
     whereAreYouFrom: Puis-je vous demander d'où vous venez ?
-    welcome: ''
+    welcome: 'Bienvenue à Arenum, étranger. Il semble que tu sois apparu juste en
+      dehors de <hl>Kallaheim</hl>, une ville majeure du nord.'
   items:
     gearTypes:
       agility: Matériel d'agilité
@@ -92,7 +124,7 @@ singulars:
       ring: Anneau
       secondary: Secondaire
       woodcutting: Matériel de bûcheron
-      back: ''
+      back: 'Dos'
     itemTags:
       fine: Raffiné
     itemTypes:
@@ -103,7 +135,7 @@ singulars:
       material: Matériau
       other: Autre
       quest: Quête
-      collectible: ''
+      collectible: 'Objet de collection'
   requirements:
     skills:
       level: Requiert <skill skill="${skill}" level="${level}"" isRequirement="true"/>

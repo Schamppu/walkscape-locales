@@ -6,22 +6,189 @@ maps:
     sell: Sprzedaj przedmioty
     talk: Rozmawiaj
     withdraw: Wycofaj się
+    "guidance": Przewodnik
+    "barber": Fryzjer
+    "buySpecial": Kup Specjały
   buildingTypes(map):
     animalShelter: Schronisko dla zwierząt
     bank: Bank
     castle: Zamek
     fishingStore: Sklep wędkarski
-    generalStore: 'Kramik z różnościami '
+    generalStore: 'Sklep z Różnościami'
     house: Dom
     tavern: Tawerna
     temple: Świątynia
+    "activityShop": Sklep Aktywności
+    "marketStall": Stoisko Handlowe
+    "barber": Fryzjer
+    "clothingShop": Sklep z Ubraniami
+    "outpost": Posterunek
 singulars:
   buildings:
     jarvonia:
       frostyFinds:
-        desc: Sprzedaje różnego rodzaju dobra, które wędrowiec może potrzebować podczas swoich wypraw.
+        desc: Sprzedaje różnego rodzaju dobra, które wędrowiec może potrzebować podczas
+          swoich wypraw.
+        name: Mroźne Znajdźki Kallaheim
       frozenCapital:
         name: Bank Lodowy Kapitał
+        desc: Znany i wpływowy bank w Jarvonii. Lodowy Kapitał dba o bezpieczeństwo
+          spraw.
       icyGoblet:
-        desc: W tawernie pod Mroźnym Pucharem legendy ożywają, gdy lodowate napitki płyną swobodnie, a wszędzie słychać śmiech poszukiwaczy przygód dzielących się swoimi mroźnymi wyczynami.
+        desc: W tawernie pod Mroźnym Pucharem legendy ożywają, gdy lodowate napitki
+          płyną swobodnie, a wszędzie słychać śmiech poszukiwaczy przygód dzielących
+          się swoimi mroźnymi wyczynami.
         name: Mroźny Puchar
+      fortofPermafrost:
+        name: Fort Permafrost
+        desc: Gigantyczny fort leży na wprost ciebie, spoczywa pomiędzy Jarvonią i
+          Wielkim Księstwem Trellin-Erwdise. Potężny fort jest znany z rozgrywki,
+          jaką trzeba odbyć, by móc przejść na lodowe ziemie Jarvonii.
+      frosthookEmporium:
+        name: Frosthook Emporium
+        desc: Dobrze doświadczona kobieca piratka wita cię lekkim skinieniem. Drewniana
+          noga rytmicznie uderza o drewnianą podłogę, gdy wślizguje się za ladę. Masa
+          rybackich dóbr wypełnia mury i półki. Zaskakująco, wielka głowa rekina zamontowana
+          jest na jednym z murów, a plakietka pod nią mówi "Bruce".
+      jarvoJoy:
+        name: JarvoJoy
+        desc: Wydaje się, że za ladą na stołku stoi tęgi i spory krasnolud. Jego twarz
+          zawiera kilka świeżo zaleczonych blizn, a jego broda wydaje się być mocno
+          nadpalona. Otacza go sporo wyposażenia - narty, frisbee i masa innych rodzajów
+          sprzętu sportowego.
+      polarPruning:
+        name: Polarna Przycinka
+        desc: Polarna Przycinka to przytulny zakład fryzjerski położony w sercu Azurazery.
+          Wejdź do środka, a doświadczony fryzjer przytnie twoje włosy i zadba o twoją
+          brodę z precyzją. Mury są przyozdobione, a powietrze wypełnione zapachem
+          sosny.
+      tundraTrends:
+        name: Trendy w Tundrze
+        desc: Trendy w Tundrze oferują najnowszą zimową modę z zabawnymi dodatkami.
+          Odkryj wyraziste szaliki, ciekawe czapki i kolorowe płaszcze, które odcisną
+          swoje piętno na śniegu.
+      hornOfRespiteOutpost:
+        name: Posterunek Gildii Poszukiwaczy Przygód
+        desc: Posterunek Gildii Poszukiwaczy Przygód to miejsce, w jakim podróżnicy
+          mogą zebrać się i podzielić opowieściami, poszukać wskazówek i przygotować
+          się na kolejną podróż. Mury przyozdobione są mapami, bronią i trofeami z
+          poprzednich wypraw.
+      northstarMercantile:
+        name: Handel Północnej Gwiazdy
+        desc: Handel Północnej Gwiazdy rozkwita w swej aktualnej lokalizacji, wielu
+          ludzi często tu przybywa i wybywa. Palenisko przy dalszym murze leciutko
+          trzeszczy, a towary na sprzedaż wypełniają półki.
+      templeOfAzurazera:
+        name: Świątynia Azurazery
+        desc: Duża świątynia wypełniona jest dymiącymi kadzidłami i szemraniem różnych
+          świętych słów, wielu podchodzi do masywnego niebieskiego połyskującego kamienia
+          i zdaje się modlić. Wielki głaz zdaje się sięgać z podłogi wysoko w górę,
+          jakby groził przebiciem nieba. Mimo to jego powierzchnia jest idealnie gładka
+          i emanuje mocą.
+      tutorialCabin:
+        name: Pomocna Chatka Herberta
+        desc: Skromna chatka znajduje się w Odczarowanym Lesie, jest tam kilka pni
+          drzew i mężczyzna siedzący na zewnątrz przy stole obok którego są dwa krzesła.
+          Wygląda, jakby przyglądał się szachownicy leżącej na stoliku.
+      woodcuttersCabin:
+        name: Chata Drwala
+        desc: Chata z powalonych drzew znajduje się na małej polanie w gęstym lesie,
+          a ziemia wokół jest usłana wieloma pniami. Wiele mniejszych stosów małych
+          gałęzi i patyków wydaje się być starannie ułożonych w pobliżu każdego pnia
+          lub ciasno związanych sznurkiem.
+      bigloo:
+        name: Bigloo
+        desc: Bigloo, zaskakująco przestronne igloo, jest domem dla eklektycznej kolekcji
+          lodowych artefaktów i serdecznej gościnności, a wszystko to za sprawą uroczego
+          sklepikarza z pingwinami, znanego z muszki i wesołego bujania się.
+    gdte:
+      animalShelter:
+        name: Łapy to My
+        desc: Sklep pełen jest różnych typów zwierząt, niektóre z nich mają masę kolorów
+          futra albo swoich łusek. Na jednej ze ścian widnieje napis objaśniający,
+          że wiele z tych stworzeń zostało uratowanych z bagien po porzuceniu lub
+          po zaginięciu.
+      bilgemontCastle:
+        name: Zamek Bilgemont
+        desc: Duży zamek jest kosztowny i niemal nieskazitelny. Żadnych pęknięć w
+          kamieniu ani śladów przypaleń po pożarze. Mieszkający tu władcy są znani
+          ze swojej wyśmienitej biżuterii i bogactw, a miejsce to wygląda na prawie
+          niezamieszkane ze względu na nieskazitelny stan wielkiego zamku.
+      bureauOfMoss:
+        name: Biuro Mchu
+        desc: Ściany tawerny są wypełnione mchem i bagiennymi kolorami, co ukazuje
+          oszczędności na zastawie stołowej. Mały staw znajduje się w rogu obok paleniska,
+          a także kilka ropuch zdaje się cieszyć z biesiady w środku. Lekka melodia
+          jest grana przez grajka na dziwnym instrumencie, brzmi jak gitara, ale ma
+          w środku wodę.
+      fishMarketStall:
+        name: Stoisko z Rybami
+        desc: Mężczyzna palący fajkę zdaje się prowadzić stoisko rybne, niesamowita
+          ilość wielkich ryb oraz filetów spoczywa na lodzie. Chociaż wydaje się,
+          że są tam jeszcze kosze innych całych ryb, a nawet wiaderka na przynęty.
+      foodMarketStall:
+        name: Stoisko z Jedzeniem
+        desc: Przepiękny aromat wypełnia powietrze wokół ciebie mijając Stoisko z
+          Jedzeniem, świeży chleb i wypieki. Chociaż zdaje się, że jest tu również
+          mnóstwo produktów w słoikach oraz marynacie na sprzedaż. Na szczęście chyba
+          nie ma tu dostępnego Surströmming.
+      mossyMerchantsBreezeMart:
+        name: Stoisko Zamszonej Bryzy
+        desc: Stoisko Zamszonej Bryzy ma kilka otwartych okien, wiatr wieje przez
+          sklep powoli wprowadzając podmuchy i odgłosy okolicy z zewnątrz. Wiele półek
+          jest pełnych ciekawych i unikalnych przedmiotów.
+      bogsideBankOfProsperity:
+        name: Bank Pomyślności w Bogside
+        desc: Podłoga banku pokrywa mech i skrzypi, kiedy tylko na nią nastąpisz.
+          Kilka żab zdaje się ukrywać w krokwiach, jakie trzymają w ryzach komary.
+          Jeden z urzędników kiwa głową na powitanie. Wydaje się też, że na głowie
+          urzędnika znajduje się żaba, która bezczynnie klapie w stronę dużej ćmy
+          latającej wokół.
+      maritimeFortuneBank:
+        name: Bank Morskiej Fortuny
+        desc: Złote wykończenia, podłoga z marmuru oraz nawet masywny żyrandol zwisający
+          z sufitu. Pozornie wykonane ze złota i nieco klejnotów miały odbijać swoje
+          naturalne kolory przez niewielki płomień. Nawet dzwony mające wzywać służbę
+          są ze złota.
+      toolMarketStall:
+        name: Stoisko z Narzędziami
+        desc: Stojak na narzędzia przykryty jest starą skórzaną płachtą, a one same
+          ułożone są w pozornie ustalonym porządku. Kilka latarni zwisa z szczytu
+          stoiska, inne narzędzia wiszą nad głową kupca na starannie związanych linach
+          oraz leżą w koszach.
+      bogAndBlade:
+        name: Bagno & Ostrze
+        desc: Bagno & Ostrze oferuje najlepsze strzyżenie w Salsfirth. Fryzjerzy w
+          woderach zapewniają najlepszej klasy pielęgnację z domieszką zabawy. Zrelaksuj
+          się na wygodnych fotelach i napij się herbatki, podczas kiedy twoje włosy
+          będą strzyżone.
+      quagmireCouture:
+        name: Quagmire Couture
+        desc: Quagmire Couture to modny butik w Salsfirth, który specjalizuje się
+          w inspirowanych bagnami ubraniach. Przejrzyj kolekcję stylowych ubrań, które
+          będą idealne na każdą okazję.
+    syrenthia:
+      vastalumeTavern:
+        desc: <Placeholder>
+        name: Tawerna Vastalume
+      vastalumeBank:
+        name: Bank Vastalume
+        desc: <Placeholder>
+      vastalumeGeneralStore:
+        desc: <Placeholder>
+        name: Główny Sklep Vastalume
+      vastalumeBarber:
+        name: Tawerna Vastalume
+        desc: <Placeholder>
+      vastalumeSpecializedStore:
+        name: Wyspecjalizowany Sklep w Vastalume
+        desc: <Placeholder>
+      vastalumeClothingShop:
+        name: Sklep z Ubraniami w Vastalume
+        desc: <Placeholder>
+      throneOfTheNeverdrown:
+        name: Tron Nieutopionych
+        desc: <Placeholder>
+      casbrantsSunkenShip:
+        name: Zatopiony Statek Casbranta
+        desc: <Placeholder>
