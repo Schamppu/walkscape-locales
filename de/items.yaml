@@ -696,20 +696,30 @@ singulars:
           klaren und klassischen Erscheinungsbild ein Gefühl von Eleganz.
         name: Fichtenbrett
       teakPlank:
-        name: Teak Planken
+        name: Teakbretter
+        desc: Bekannt für ihre Haltbarkeit und glänzend goldbraunen Farbton sind Teakbretter
+          eine ausgezeichnete Wahl für die Herstellung schöner und robuster Gegenstände.
       woodScrap:
-        desc: Einige Holzreste mit niedriger Qualität
-        name: Holzschrott
+        desc: Kleine Holzstücke minderer Qualität
+        name: Holzabfälle
       willowPlank:
-        name: Weiden Planke
+        name: Weidenbrett
+        desc: Zart und bleich mit subtiler Maserung, gibt das Weidenbrett deinen Schreinerarbeiten
+          einen Hauch himmlischer Schönheit.
       mangrovePlank:
-        name: Mangroven Planke
+        name: Mangrovenbrett
+        desc: Widerstandsfähig und wetterbeständig sind Mangrovenbretter ideal für
+          den Außenbereich und vereinen Stärke mit tropischem Flair.
       woodShaving:
-        name: ''
+        name: 'Holzspäne'
+        desc: Einige Holzabfälle mittlerer Qualität
       coralPlank:
-        name: Korallenplanke
-        desc: Eine Planke, gemacht aus den größten Korallen. Es ist stabil, sowohl
-          unter als auch über Wasser.
+        name: Korallenbrett
+        desc: Aus den größten Korallen gefertigtes Brett. Es ist stabil, sowohl unter
+          als auch über Wasser.
+      woodFragment:
+        name: Holzstücke
+        desc: Einige qualitativ hochwertige Holzstücke
     cooking:
       milk:
         desc: Direkt von der Kuh, einer Ziege oder einem Kamel. Oder aus ein paar
@@ -743,7 +753,7 @@ singulars:
           Gefühl vermittelt.
         name: Baumwolle
       deathsToll:
-        desc: Seht zwar verlockend aus, würde ich aber nicht in dieser Form verzehren.
+        desc: Sieht zwar verlockend aus, würde ich aber nicht in dieser Form verzehren.
         name: Tribut des Todes
       flax:
         desc: Zarte blaue Blüten, die kräftige Fäden enthalten. Perfekt für die Leinenproduktion.
@@ -808,15 +818,39 @@ singulars:
         name: Hölzerner Stock
       berries:
         name: Beeren
+        desc: Zur Not kannst Du sie verzehren, oder Du verwendest sie als Zutat in
+          Deinen Kochkreationen.
       underwaterLotus:
         desc: Eine Pflanze die oft in Syrenthianischer Poesie erwähnt wird. Berühmt
           für ihre Schönheit und Anmut.
         name: Unterwasserlotus
       cucumber:
         name: Gurke
+        desc: Wie teuer sind die in deiner Ecke der Welt?
       wheat:
         name: Weizen
         desc: Weizen.
+      sweetKelp:
+        desc: Süßer Tang, das Zuckerrohr der Meere, wird hauptsächlich zur Produktion
+          des alkoholhaltigen Getränks Salzrum verwendet.
+        name: Süßer Tang
+      kelp:
+        name: Tang
+        desc: Mit Tang lässt sich eine Menge machen, sei es um stabile aber elastische
+          Ausrüstung herzustellen oder um köstliche Unterwassergerichte zu kochen.
+      hardenedKelp:
+        name: Gehärteter Tang
+        desc: Mittels verschiedener Techniken lässt sich normaler Tang härten und
+          wird so zu einem begehrten Material.
+      seaCabbage:
+        name: Meerkohl
+      seaSpinach:
+        name: Meerspinat
+        desc: Eine essbare Pflanze, ausgesprochen lecker und nahrhaft. Schmeckt überhaupt
+          nicht wie normaler Spinat.
+      saltyHops:
+        name: Salzhopfen
+        desc: Salzhopfen wird zu Salzmalz.
     mining:
       coal:
         desc: Das bescheidene und unprätentiöse Kohleerz steht für seine Zweckmäßigkeit
@@ -862,6 +896,8 @@ singulars:
           von Schmuck genutzt wird.
       starPearl:
         name: Sternenperle
+        desc: Zu sehen in dem berühmten Gemälde \“Mädchen mit einem Sternenperlenohrring\"
+          eines wallisischen Malers.
       opal:
         name: Opal
         desc: Wunderschöne schillernde Farben erscheinen auf ihrer Oberfläche, wenn
@@ -878,11 +914,16 @@ singulars:
         name: Großer Stein
         desc: Ein Stein, der größer ist als normal.
       volcanicRock:
-        name: Vulkanstein
+        name: Vulkangestein
         desc: Dieser Stein ist das Überbleibsel eines uralten Vulkans der seit tausenden
           Jahren unter Wasser liegt.
       volcanicAsh:
         name: Vulkanasche
+        desc: Dieser Stein ist das Überbleibsel eines uralten Vulkans der seit tausenden
+          Jahren unter Wasser liegt.
+      ethernite:
+        desc: Ein wertvoller glasig-purpurner Edelstein. Beim Betrachten läuft es
+          einem kalt über den Rücken, aber es ist unglaublich schwer den Blick abzuwenden.
     rawFish:
       rawCarp:
         desc: Der milde Geschmack des Karpfens eignet sich gut für verschiedene kulinarische
@@ -936,10 +977,13 @@ singulars:
       rawStingray:
         desc: Ein Fisch in Pfannkuchenform, welche er nutzt um durch das Wasser zu
           gleiten.
+        name: Roher Stachelrochen
       rawSwordfish:
         name: Roher Schwertfisch
       rawShark:
         name: Roher Hai
+      rawAnglerfish:
+        name: Roher Seeteufel
     smithing:
       bronzeBar:
         desc: Der Bronzebarren, ein Relikt aus den Schmieden der Zwerge, strahlt rustikalen
@@ -965,6 +1009,17 @@ singulars:
         desc: Der Tarsilium-Barren schimmert wie der Nachthimmel, eine ölige Textur
           überzieht seine Oberfläche.
         name: Tarsiliumbarren
+      metalScrap:
+        name: Metallabfälle
+        desc: Einige Metallstücke minderer Qualität
+      metalShaving:
+        name: Metallspäne
+        desc: Einige Metallstücke mittlerer Qualität
+      metalFragment:
+        name: Metallstücke
+        desc: Einige hochwertige Metallstücke
+      hydriliumBar:
+        name: Hydriliumbarren
     woodcutting:
       birchLogs:
         desc: Die glatten und hellen Birkenstämme strahlen eine elegante Schlichtheit
@@ -1010,6 +1065,7 @@ singulars:
       adventurersPin:
         desc: Ein Anstecker mit dem Symbol der Abenteurer Gilde. Ein bisschen rostig,
           aber immernoch glänzend. Die Abenteurer Gilde würde die Rückgabe schätzen.
+        name: Emailleanstecknadel der Abenteurer
       unidentifiedRemains:
         desc: Die Abenteurer Gilde würde es schätzen, wenn du diesen Knochenhaufen
           zurückbringst, es könnte dabei helfen einen offenen Fall zu lösen.
@@ -1021,6 +1077,7 @@ singulars:
       fishbone:
         desc: Auch wenn es irgendwie grausam ist und stinkt, sieht es immernoch cool
           aus.
+        name: Fischgräten
       seashell:
         name: Muschel
         desc: Wird wahrscheinlich von jemandem am Strand verkauft.
@@ -1030,10 +1087,13 @@ singulars:
           Sammler.
       pearls:
         name: Perlen
+        desc: Buchstäblich perlweiß. Grandios zur Schmuckherstellung.
       crosswordPuzzle:
         name: Altes Kreuzworträtsel
+        desc: Wörterspiel, 15 Buchstaben, beginnt mit K.
       fishingLine:
         desc: Dies aus der Natur zu holen hat vielleicht ein Tierleben gerettet.
+        name: Angelschnur
       nameTag:
         name: Namensschild
         desc: Ein Namensschild mit dem Namen eines lange Verlorenen Abenteurers darauf.
@@ -1043,3 +1103,10 @@ singulars:
         name: Seil
         desc: Eine Überlebensausrüstung ist nichts ohne etwas Seil. Essenziell um
           ein paar einfache Werkzeuge zu machen.
+      hydrilium:
+        name: Hydrilium
+        desc: Dieses seltsame Material lässt sich durch die Verbindung von Vulkangestein
+          und Tang in der Gezeiten Werkstatt herstellen.
+      kelpRope:
+        name: Tangseil
+        desc: Hier wurden lange Tangstränge zu einem Seil verflochten.
