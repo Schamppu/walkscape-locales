@@ -10,7 +10,7 @@ singulars:
     phrases:
       skills: Skills
       stepsOfLastWeek: Steps of last 7 days
-      checkOut: Here's my WAlkScape character ${name}. Check it out!\nhttps://walkscape.app
+      checkOut: Here's my WalkScape character {name}. Check it out!\nhttps://walkscape.app
       checkOutSubject: Check out my progress in WalkScape!
   permissions:
     phrases:
@@ -90,10 +90,10 @@ singulars:
     phrases:
       rewards: Completion rewards
       acceptJob: Accept job
-      acceptedJobs: Currently accepted jobs <chip><c i=0>${count}</c>/<c i=1>${maxCount}</c></chip>
+      acceptedJobs: Currently accepted jobs <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
       itemsFromInventory: Items from inventory
       itemsFromBank: Items from bank
-      youMustBeInLocation: You must be in same location with <object id="${obj}"/> to return items.
+      youMustBeInLocation: You must be in same location with <object id="{obj}"/> to return items.
       hasNoBank: There is no bank in this location.
       hasNoItemsInInventory: There are no eligible items in your inventory.
       hasNoItemsInBank: There are no eligible items in your bank.
@@ -111,9 +111,9 @@ singulars:
       dropItems: Drop items?
       areYouSureToDrop: Are you sure you want to drop items? The items will be gone forever when dropped.
       itemsInUse: You have selected items that are already in use. You can't drop or bank items in use.
-      slots: Slots <c>${slots}</c>
+      slots: Slots <c>{slots}</c>
       slotsCount: 'Slots:'
-      selectedStacks: Selected <c>${stacks}</c> stacks
+      selectedStacks: Selected <c>{stacks}</c> stacks
       requirementsNotMet: Requirements are not met.
       cantEquip: Can't equip.
       checkBank: Check bank
@@ -126,13 +126,13 @@ singulars:
       requires: Requires
       equipToRingOne: Equip to ring slot 1
       equipToRingTwo: Equip to ring slot 2
-      equipToToolSlot: Equip to tool slot ${id}
+      equipToToolSlot: Equip to tool slot {id}
       emptySlot: Empty slot
       allSkills: All skills
       noItemEquipped: No item equipped
       noItemSelected: No item selected
       duration: Duration
-      durationInSteps: Active for <c>${steps}</c> <icon i="Steps" /> steps
+      durationInSteps: Active for <c>{steps}</c> <icon i="Steps" /> steps
       inUse: In use
       disableWhenChanging: Disable when changing activity
       enableWhenBack: Re-enable when starting an activity where previously used
@@ -158,7 +158,7 @@ singulars:
     phrases:
       emptyToolSlot: Empty tool slot
       noToolEquipped: No tool equipped to this slot.
-      lockedToolSlot: Locked tool slot until <c>character level ${level}</c>.
+      lockedToolSlot: Locked tool slot until <c>character level {level}</c>.
   bank:
     phrases:
       noItemsInventory: No items in your inventory.
@@ -166,9 +166,9 @@ singulars:
   trade:
     phrases:
       trade: TRADE
-      restockIn: 'Restock in: ${time}'
-      buying: Buying ${amount}
-      selling: Selling ${amount}
+      restockIn: 'Restock in: {time}'
+      buying: Buying {amount}
+      selling: Selling {amount}
       total: Total
   characterCreation:
     phrases:
@@ -240,7 +240,7 @@ singulars:
       colorOptions: Color options
       homeRegion: Home region
       race: Race
-      selectedVariant(param=index): Variant $index selected
+      selectedVariant: Variant {index} selected
   worldMap:
     phrases:
       activities: Activities
@@ -251,7 +251,7 @@ singulars:
       information: Information
       routeRequirementsNotMet: 'Routes in your selected path have requirements that are not met:'
       youHaveNotExplored: You haven't explored this location yet. You'll see information about this location after you've visited it once.
-      routeFromTo: '<location i="${fromID}"/> to <location i="${toID}"/>'
+      routeFromTo: '<location i="{fromID}"/> to <location i="{toID}"/>'
       route: Route
       youreHere: You're currently in this location.
       currentLocation: Current location
@@ -289,7 +289,7 @@ singulars:
       logOut: Log out
       noInternet: No internet connection
       lostInternet: Your device has lost internet connection. Waiting for a connection...
-      areYouSureYouWantToDelete: Are you sure you want to delete <hl>${name}</hl>?
+      areYouSureYouWantToDelete: Are you sure you want to delete <hl>{name}</hl>?
       dontDoIt: Don't do it if you are not sure.
       ifYouAreSure: If you are sure, write <c>DELETE</c> to the field and press continue.
       deleteWord: DELETE
