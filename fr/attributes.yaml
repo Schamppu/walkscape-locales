@@ -2,18 +2,28 @@ singulars:
   skilling:
     chestFind:
       global:
-        desc: Un sorcier nommé Tarhiel prétendait qu'il était possible de marcher sur de la poussière d'étoile avec ces chaussures, l'on raconte qu'il chute toujours aujourd'hui.
-        name: Un sorcier nommé Tarhiel prétendait qu'il était possible de marcher sur de la poussière d'étoile avec ces chaussures, l'on raconte qu'il chute toujours aujourd'hui.
+        desc: Un sorcier nommé Tarhiel prétendait qu'il était possible de marcher
+          sur de la poussière d'étoile avec ces chaussures, l'on raconte qu'il chute
+          toujours aujourd'hui.
+        name: Un sorcier nommé Tarhiel prétendait qu'il était possible de marcher
+          sur de la poussière d'étoile avec ces chaussures, l'on raconte qu'il chute
+          toujours aujourd'hui.
       whileMainSkill:
-        desc: Un sorcier nommé Tarhiel prétendait qu'il était possible de marcher sur de la poussière d'étoile avec ces chaussures, l'on raconte qu'il chute toujours aujourd'hui.
+        desc: Un sorcier nommé Tarhiel prétendait qu'il était possible de marcher
+          sur de la poussière d'étoile avec ces chaussures, l'on raconte qu'il chute
+          toujours aujourd'hui.
         name: <PLACEHOLDER>Richesses inattendues
       whileTraveling:
-        desc: <PLACEHOLDER>Lors de votre voyage vers votre prochaine destination, vous tombez sur un coffre ! Avec précaution, vous le ramassez et le placez dans votre sac.
+        desc: <PLACEHOLDER>Lors de votre voyage vers votre prochaine destination,
+          vous tombez sur un coffre ! Avec précaution, vous le ramassez et le placez
+          dans votre sac.
         name: <PLACEHOLDER>Fortes constatations
         text: <stat s="chestFind"/> en voyageant
     craftingOutcome:
       global:
-        desc: <PLACEHOLDER>Votre compétence et votre expertise en matière d'artisanat ne vous ont pas induit en erreur, le travail que vous avez réalisé tient la route.
+        desc: <PLACEHOLDER>Votre compétence et votre expertise en matière d'artisanat
+          ne vous ont pas induit en erreur, le travail que vous avez réalisé tient
+          la route.
     doubleAction:
       whileTraveling:
         text: <stat s="doubleAction"/> en voyageant
@@ -34,3 +44,33 @@ singulars:
     workEfficiency:
       whileTraveling:
         text: <stat s="workEfficiency"/> en voyageant
+      whileRealmAndTraveling:
+        text: <stat s="workEfficiency"/> en voyageant en <supp k="realm"/>
+      whileMainSkill:
+        text: <stat s="workEfficiency"/> lorsque <supp k="skill"/>
+      whenKeywordSetBonus:
+        text: Global <stat s="workEfficiency"/> si tu portes au moins <supp k="quantity"/>
+          <supp k="keyword"/> objets.
+      whileRealm:
+        text: <stat s="workEfficiency"/> lorsque présent en <supp k="realm"/>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="workEfficiency"/> lorsque <supp k="skill"/> à l'emplacement
+          <supp k="keyword"/> .
+      whileLocationKeyword:
+        text: Global <stat s="workEfficiency"/> lorsque présent à <supp k="keyword"/>
+          .
+      global:
+        text: Global <stat s="workEfficiency"/>
+      whileRealmAndMainSkill:
+        text: <stat s="workEfficiency"/> en utilisant <supp k="skill"/> en<supp k="realm"/>
+      whileMainSkillAndRealm:
+        text: <stat s="workEfficiency"/> lorsque <supp k="skill"/> en <supp k="realm"/>.
+    fineMaterialFind:
+      global:
+        text: Global <stat s="fineMaterialFind"/>
+      whileMainSkill:
+        text: <stat s="fineMaterialFind"/> lorsque <supp k="skill"/>
+      whenAchievementPoints:
+        text: Global <stat s="fineMaterialFind"/> lorsque <supp k="achievementPoints"/>
+      whileMainSkillAndRealm:
+        text: <stat s="fineMaterialFind"/> lors de <supp k="skill"/> en <supp k="realm"/>.
