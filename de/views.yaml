@@ -42,9 +42,9 @@ maps:
     languages(map):
       'en': Englisch
       'de': Deutsch
+      'fi': Suomi
     notificationImportance(map):
-      'low': Kein Ton, keine Vibration und taucht nicht in der Benachrichtigungsleiste
-        auf.
+      'low': Kein Ton, keine Vibration und wird nicht in der Statusleiste angezeigt.
       'high': Macht einen Ton oder vibriert
       'urgent': Macht einen Ton oder vibriert und taucht als Benachrichtigung auf.
     leaderboardFilter(map):
@@ -160,6 +160,9 @@ singulars:
         werden. Es gibt verschiedene Arten von Sammelgegenständen die du suchen kannst.
         Sie nehmen keinen Platz im Inventar weg und sind immer bei dir.
       noCollectibleItems: Du hast noch keine Sammelgegenstände gefunden.
+      checkPointUnlocks: Diese Errungenschaften sind bei bestimmten Erfolgspunkt-Checkpoints
+        verfügbar. Du wirst den Zugang zu diesen nicht verlieren, wenn weitere Erfolgspunkte
+        verfügbar werden.
     phrases:
       notUnlocked: Gesperrter Erfolg
       rewardProgress: Belohnungsfortschritt
@@ -229,6 +232,8 @@ singulars:
       selectedConsumable: Ausgewählter Verbrauchsgegenstand
       consumables: Verbrauchsgegenstände
       noConsumables: Keine Verbrauchsgegenstände in deinem Inventar.
+      enableWhenBack: Wieder aktivieren, wenn eine Aktivität begonnen wird, bei der
+        dies vorher verwendet wurde
     options:
       consenseInventory: Inventar verkleinern
       expandInventory: Inventar erweitern
@@ -263,6 +268,7 @@ singulars:
         die Daten deines Schrittzählers zu nutzen. Bitte bestätige dies, damit du
         das Spiel starten kannst.
       pedometerPermission: Schrittzähler Erlaubnis
+      exactAlarmPermission: Alarmerlaubnis
   settings:
     categories:
       account:
@@ -316,14 +322,16 @@ singulars:
       dynamicBackground: Dynamischer Hintergrund verändert dein Hintergrundbild basierend
         auf dem Standort deines Charakters.
       currentSelection: Aktuelle Auswahl
+      mainOptions: Haupteinstellungen
+      race: Ethnie
   worldMap:
     phrases:
       activities: Aktivitäten
       services: Services
       buildings: Gebäude
       pointsOfInterest: Sehenswürdigkeiten
-      afterExploring: Wenn du diesen Ort erkundet hast, kannst du seine Sehenswürdigkeiten
-        sehen.
+      afterExploring: Nachdem Sie den Ort erkundet haben, können Sie sich die Sehenswürdigkeiten
+        dieses Ortes ansehen.
       information: Information
       youHaveNotExplored: Du hast diesen Ort noch nicht erkundet. Du siehst Informationen
         über diesen Ort, nachdem du ihn einmal besucht hast.
@@ -395,6 +403,7 @@ singulars:
     phrases:
       pendingInvites: Ausstehende Einladungen
       friends: Freunde
+      manageFriends: Soziales verwalten
   cooldowns:
     phrases:
       followingMustBeTrueToTick: 'Folgendes muss passieren damit der Cooldown sinkt:'
@@ -405,8 +414,8 @@ singulars:
   abilities:
     info:
       youHaveNoAbilities: <hl>Du hast keine Fähigkeiten</hl>. Bestimmte Ausrüstung
-        im Spiel kann dir Fähigkeiten geben die dir einen sofortigen Vorteil im Gegenzug
-        für einen Cooldown zu verschaffen.
+        im Spiel kann dir Fähigkeiten geben, die dir einen sofortigen Vorteil im Gegenzug
+        für einen Cooldown verschaffen.
       abilitiesInfo: Fähigkeiten sind besondere Aktionen, die dir einen sofortigen
         Vorteil im Spiel verschaffen. Fähigkeiten haben einen Cooldown, den du abwarten
         musst, bevor du sie wieder einsetzten darfst.
@@ -416,6 +425,7 @@ singulars:
       useConsumable: Verbrauchsgegenstand nutzen
       noAction: Keine Aktion
       holdToUse: Halten zum nutzen
+      holdToCast: Halten zum nutzen
   trade:
     phrases:
       trade: TAUSCHEN
@@ -462,6 +472,10 @@ singulars:
       bodyTypeA: A
       bodyTypeB: B
       characterName: Name des Charakters
+      race: Ethnie
     info:
-      rememberSwipe: Vergiss nicht, dass du zurückwischen kannst um während der Charaktererstellung
-        gewählte Optionen zu ändern.
+      rememberSwipe: Vergiss nicht, dass du jederzeit zurückwischen kannst um während
+        der Charaktererstellung gewählte Optionen zu ändern.
+  jobs:
+    phrases:
+      rewards: Belohnung fürs beenden
