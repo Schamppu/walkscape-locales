@@ -64,6 +64,71 @@ singulars:
         desc: La carpa cocinada conserva su sabor suave y puede prepararse de varias
           maneras, desde al horno hasta frita. Su tierna carne es un lienzo culinario.
         name: Carpa cocinada
+      cookedPerch:
+        desc: Frita a la sartén o a la plancha, la perca cocida ofrece una deliciosa
+          escamosidad y un sabor suave y ligeramente dulce. Perfecta para una comida
+          ligera.
+        name: Perca cocida
+      cookedSeabass:
+        name: Lubina cocida
+        desc: La lubina de escamas plateadas cocida es una elección gourmet, conocida
+          por su delicado sabor y su carne hojaldrada y húmeda.
+      cookedJellyfish:
+        desc: Transformada en un manjar único, la medusa cocida desafía al paladar
+          con su intrigante textura y su sutil sabor oceánico.
+        name: Medusas cocidas
+      cookedStreamEel:
+        desc: La anguila de rio cocida, adaptada a los ríos y arroyos caudalosos,
+          es un manjar único por su carne tierna y escamosa, perfecta para quienes
+          aprecian el sabor del pescado de agua dulce.
+        name: Anguila de río cocida
+      cookedMoray:
+        desc: El misterioso aspecto de la morena cocida se corresponde con su sabor
+          único. Su carne, tierna y ligeramente dulce, la convierte en una rara delicia
+          de las profundidades marinas.
+        name: Morena cocida
+      cookedCrayfish:
+        desc: Estos cangrejos de río cocidos son una delicia para los amantes del
+          marisco, con su carne tierna y dulce y un toque de salmuera.
+        name: Cangrejos de río cocidos
+      cookedShrimp:
+        name: Gamba cocida
+        desc: Tiernas y suculentas, estas gambas cocidas son una delicia de marisco.
+          Tienen un sabor delicado y ligeramente dulce.
+      cookedPike:
+        name: Lucio cocido
+        desc: A la plancha o a la sartén, el lucio cocido ofrece una deliciosa escamabilidad
+          y un sabor suave y ligeramente dulce. Es un pescado versátil para varios
+          platos.
+      cookedTrout:
+        name: Trucha cocida
+        desc: Es una trucha.
+      cookedSalmon:
+        name: Salmón cocido
+        desc: El salmón cocido es un manjar de lujo, con su carne mantecosa y aterciopelada
+          y su rico sabor. Es el favorito de los amantes del pescado azul.
+      cookedLobster:
+        name: Langosta cocida
+        desc: El bogavante cocido, con su carne suculenta y sabrosa, aporta un toque
+          de nostalgia con su duro caparazón y sus fuertes pinzas. Un manjar clásico
+          del marisco.
+      cookedSquid:
+        name: Calamares cocidos
+        desc: El calamar cocido es una maravilla culinaria, conocida por su versatilidad
+          en diversos platos. Puede resultar tierno y sabroso si se prepara con las
+          técnicas adecuadas.
+      cookedStingray:
+        name: Raya cocida
+        desc: <Placeholder>
+      cookedSwordfish:
+        name: Pez espada cocido
+        desc: <Placeholder>
+      cookedShark:
+        name: Tiburón cocido
+        desc: <Placeholder>
+      cookedAnglerfish:
+        name: Rape cocido
+        desc: <Placeholder>
     cooking:
       bagel:
         desc: Un bollo con un agujero. En realidad sólo un donut sin azúcar.
@@ -147,6 +212,46 @@ singulars:
         desc: El néctar de nobles y aventureros por igual, promete un sabor tanto
           del pasado como del presente a aquellos que levantan sus copas para brindar.
         name: Vino
+      kelpRolls:
+        name: Rollos de quelpo
+        desc: Famoso manjar sirenciano, los rollos de quelpo se elaboran con algas
+          cuidadosamente enrolladas para darles la forma adecuada.
+      chocolateMilk:
+        desc: Los halflings fueron los primeros en descubrir la magia del chocolate
+          con leche.
+        name: Leche con chocolate
+      dynamite:
+        desc: ¿Qué tipo de velas son esas? ¡Din-a-mit-ah! Deben ser de Wrentmark.
+        name: Dinamita
+      egg:
+        name: Huevo
+        desc: De una gallina.
+      potato:
+        name: Patata
+        desc: Del grupo.
+      saltrum:
+        name: Saltrum
+        desc: Bebida alcohólica destilada fuerte que emborracha hasta a los peces.
+      nettleTea:
+        name: Té de ortiga
+        desc: Una bebida caliente en un lugar frío.
+      underwaterSalad:
+        name: Ensalada submarina
+        desc: Esta mezcla de verduras submarinas es especialmente refrescante.
+      sweetCarrotPie:
+        name: Pastel dulce de zanahoria
+        desc: Zanahorias en un pastel, ¡pon el mantel!
+      troutSoup:
+        name: Sopa de trucha
+        desc: Una sopa bastante problemática.
+      jarvonianPastry:
+        name: Pastelería jarvoniana
+        desc: Un pastel caliente muy apreciado por los norteños.
+      schnitzel:
+        name: San Jacobo
+        desc: Historiadores de Ewerethien.
+      salmonPie:
+        name: Pastel de salmón
   containers:
     skilling:
       foraging:
@@ -518,6 +623,12 @@ singulars:
           desc: Estos pantalones siempre se ajustan perfectamente, ¡e incluso tienen
             bolsillos!
           name: Pantalones encantados
+      adventurersTools:
+        adventurersRing:
+          desc: Un anillo con el escudo del Gremio de Aventureros.
+        adventurersAmulet:
+          desc: Un amuleto con el símbolo del Gremio de Aventureros.
+          name: Amuleto de aventurero
     skilling:
       agility:
         birchSkis:
@@ -1192,18 +1303,104 @@ singulars:
           palabra de comando para apagarse.
       herbertsPants:
         name: Pantalones de Sergio
+        desc: Un par de jeans viejos, una talla más grande que la tuya. Afortunadamente,
+          viene con un cinturón de cuero, así que no es un problema.
       herbertsBoots:
         name: Botas de Sergio
+        desc: Botas de cuero muy gastadas que podrían necesitar un poco de pulido,
+          pero son botas de trabajo decentes.
       herbertsShirt:
         name: Camisa de Sergio
+        desc: Camisa roja de manga larga, con cuello que se puede doblar hacia arriba.
+          Le faltan algunos botones, pero al menos te viste.
       herbertsHat:
         name: Sombrero de Sergio
+        desc: Un gorro de lana marrón que incluso te calentará las orejas. No es viejo,
+          es vintage.
       herbertsCape:
         name: Capa de Sergio
+        desc: Está un poco polvoriento, lo que demuestra que Sergio no lo ha usado
+          en mucho tiempo. Tal vez podrías darle una segunda vida.
       simpleRing:
         name: Anillo simple
+        desc: Un anillo brillante de color latón. No tiene detalles intrincados ni
+          gemas bonitas, pero hay elegancia en su simplicidad.
       simpleAmulet:
         name: Amuleto simple
+        desc: Un collar de color bronce con un colgante de un color similar que tiene
+          algunas formas absurdas de colores más claros.
+      properBoots:
+        desc: Botas resistentes y cómodas diseñadas para ofrecer estilo y funcionalidad.
+          Tanto si paseas por Fragua de los Vientos como si caminas por las junglas
+          de Rid Raddak, estas botas tienen tus pies cubiertos.
+        name: Botas adecuadas
+      adoringFanStatue:
+        desc: "Una estatua de un fan que te adora. Es un poco espeluznante, a la vez
+          que extrañamente halagadora. Puedes oírle decir:\n<i>\\\"¿Sí, oh gran y
+          poderoso Gran Campeón? ¿Necesitas algo? ¿Puedo llevar tu arma? ¿Lustrar
+          tus botas? ¿Un masaje en los pies, quizás?</i>"
+        name: Estatua de un admirador
+      algaeRing:
+        desc: El anillo tiene adherido un enorme trozo de alga que se mueve como si
+          estuviera bajo el agua incluso cuando estás en la superficie.
+        name: Anillo de algas
+      tentacleCrown:
+        desc: Los tentáculos de la corona no paran de moverse y retorcerse, lo que
+          hace que sea bastante incómoda de llevar.
+        name: Corona de tentáculos
+      ringOfAsh:
+        desc: El anillo está hecho de carbón comprimido. Aunque es indestructible,
+          deja para siempre una marca negra en el dedo en el que se lleva.
+        name: Anillo de ceniza
+      properPants:
+        desc: No querrás mancharlos, ¡son muy apropiados!
+        name: Pantalones adecuados
+      properHat:
+        desc: Un bonito gorro de punto estilo gorrito que te ayuda a mantener la cabeza
+          fresca en tus aventuras invernales.
+        name: Sombrero adecuado
+      oxygenTank:
+        desc: La botella que se lleva a la espalda se llena de oxígeno, lo que permite
+          al usuario nadar bajo el agua durante largos periodos de tiempo.
+        name: Tanque de oxígeno
+      properShirt:
+        name: Camisa apropiada
+        desc: Una camisa bonita, pero nada demasiado sofisticado. Adecuada para cualquier
+          ocasión informal.
+      properCape:
+        name: Capa adecuada
+        desc: Una capa con estilo que añade un toque de elegancia a tu atuendo, perfecta
+          para eventos formales o cuando quieras hacer una atrevida declaración de
+          moda.
+      smellySocks:
+        name: Calcetines malolientes
+        desc: Los calcetines perfectos para liberar a un elfo.
+      finGloves:
+        desc: Estos guantes tienen aletas en forma de pez en los laterales para facilitar
+          la natación en el agua.
+      flippers:
+        name: Aletas
+        desc: Estas aletas hacen que nadar bajo el agua sea rápido y agradable.
+      merfolkDress:
+        name: Vestido de sirena
+        desc: El vestido se ajusta muy bien al cuerpo, aplastando las piernas en casi
+          una sola unidad.
+      pearlAmulet:
+        name: Amuleto de perlas
+        desc: Precioso collar de perlas blancas con destellos de colores translúcidos
+          a la luz.
+      coralCape:
+        name: Capa de coral
+        desc: La capa está tejida con corales de diferentes colores. Es cómoda de
+          llevar tanto bajo el agua como en la superficie.
+      flowingPocketwatch:
+        name: Reloj de bolsillo fluido
+        desc: El reloj sale flotando del bolsillo al pronunciar la palabra de mando.
+          Es bastante poco fiable para dar la hora.
+      shellSnatcher:
+        name: Ladrón de conchas
+        desc: La herramienta perfecta para atrapar conchas. Vibra cuando hay conchas
+          cerca.
     achievements:
       capeOfAchiever:
         desc: La capa de color rosa despierta interés en cualquiera que la presencia.
