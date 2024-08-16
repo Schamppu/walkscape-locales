@@ -17,6 +17,10 @@ plurals:
       achievementPoint(param=pointCount):
         one: $pointCount punkt osiągnięć
         other: $pointCount punktów osiągnięć
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
   activity:
     phrases:
       actionsRemaining(param=actions):
@@ -28,15 +32,31 @@ plurals:
       stepsRemainingInTotal(param=steps):
         one: Krok pozostał do końca
         other: Kroki pozostałe do końca
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
       stepsRequired(param=steps):
         one: Wymagany krok
         other: Wymagane kroki
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
       stepsToCraft(param=steps):
         one: Krok do wytworzenia
         other: Kroki do wytworzenia
+        two: '-'
+        few: '-'
+        many: '-'
+        zero: '-'
       stepsToLevelUp(param=steps):
         one: Krok do wyższego poziomu
         other: Kroki do awansu na wyższy poziom
+        zero: '-'
+        few: '-'
+        many: '-'
+        two: '-'
 singulars:
   achievements:
     info:
@@ -124,6 +144,9 @@ singulars:
     phrases:
       activities: Działania
       services: Usługi
+      factions: Frakcje
+      noActivites: Brak aktywności dostępnych w tej lokacji.
+      buildings: Budynki
   activity:
     info:
       consumablesUsage: Możesz wybrać <c>jedzenie</c> oraz <c>miksturę</c>, by użyć
@@ -187,3 +210,145 @@ singulars:
   jobs:
     phrases:
       rewards: Nagrody za ukończenie
+  settings:
+    categories:
+      notifications:
+        title: Powiadomienia
+        stepCountInterval: Częstotliwość powiadomień
+        notificationType: Typ powiadomień
+        stepCountNotifications: Powiadomienia o krokach
+      accessibility:
+        title: Opcje Dostępności
+        leftHandedMode: Tryb leworęczny
+      gameplay:
+        title: Rozgrywka
+        stopWhenOverEncumberedDefault: Zawsze zatrzymaj przy przeciążeniu
+      closedBeta:
+        title: Zamknięta Beta
+        useThisToClear: Użyj tego, jeżeli chcesz zresetować wykres kroków. Przydatne,
+          kiedy kroki osiągnąłeś błędem lub, by mieć czysty wykres.
+        clearStepsGraph: Wyczyść wykres kroków
+      account:
+        visibility: Widoczność Profilu
+        title: Konto
+      character:
+        title: Postać
+        anonOnLeaderboard: Anonimizuj w Rankingu
+        hideSteps: Ukryj Kroki
+      language:
+        title: Język
+    phrases:
+      settings: Ustawienia
+      exitToCharacterSelection: Wyjście do wyboru postaci
+  characterCreation:
+    phrases:
+      race: Rasa
+      chooseABodyType: Wybierz typ ciała
+      bodyTypeA: A
+      bodyTypeB: B
+      characterName: Nazwa postaci
+    info:
+      rememberSwipe: Pamiętaj, że możesz macnąć ekran i wrócić, by zmienić wybrane
+        opcje w dowolnym momencie tworzenia postaci.
+  pfpCreation:
+    phrases:
+      currentSelection: Aktualnie wybrane
+      dynamicBackground: Dynamiczne tło zmienia się w tle twojej postaci w zależności
+        od lokacji, w której się znajduje.
+      defaultExpression: Podstawowy wyraz
+      noVariantSelected: Brak wybranego wariantu
+      resetToDefault: Zresetuj do podstawowego
+      homeRegion: Domowy region
+      race: Rasa
+      selectedVariant(param=index): Wariant $index wybrany
+      colorOptions: Opcje koloru
+      mainOptions: Główne opcje
+      extras: Dodatki
+      variants: Warianty
+    buttons:
+      randomize: Wylosuj
+      showHat: Pokaż nakrycie głowy
+      hideHat: Ukryj nakrycie głowy
+      enableFaceAccessorie: Włącz akcesoria twarzy
+      enableBackAccessorie: Włącz akcesoria tyłu
+      enableFacepaint: Włącz farby na twarzy
+      enableDynamicBackground: Włącz dynamiczne tło
+      choose: Wybierz
+  worldMap:
+    phrases:
+      activities: Aktywności
+      services: Usługi
+      buildings: Budynki
+      pointsOfInterest: Ciekawe miejsca
+      information: Informacje
+      routeRequirementsNotMet: 'Drogi do wybranego celu mają wymagania, które nie
+        są spełnione:'
+      youHaveNotExplored: Nie udało ci się jeszcze zwiedzić tej lokacji. Otrzymasz
+        informacje o tej lokacji, kiedy przynajmniej raz ją odwiedzisz.
+      routeFromTo: Z <location i="${fromID}"/> do <location i="${toID}"/>
+      route: Droga
+      youreHere: Jesteś aktualnie w tej lokacji.
+      currentLocation: Aktualna lokacja
+      afterExploring: Po eksploracji lokacji będziesz mieć opcję zobaczenia ciekawych
+        miejsc w tej okolicy.
+  stats:
+    phrases:
+      stats: Statystyki
+      totalSteps: Całkowicie kroków
+      totalSkillXp: Całkowite XP umiejętności
+    info:
+      stats: Kolekcja statystyk o każdym kroku, jaki udało ci się zrobić w świecie
+        Arenum.
+  tutorial:
+    phrases:
+      noMoreMessages: Nie ma więcej wiadomości samouczka
+      youWillGain: Otrzymasz poniższy przedmiot(y) po wybraniu tej opcji.
+  leaderboards:
+    phrases:
+      show: Pokaż
+      everyone: Wszyscy
+      friends: Znajomi
+      leaderboards: Rankingi
+      first: Pierwszy
+      me: Ja
+      last: Ostatni
+      loadingPage: Wczytywanie strony...
+      totalSteps: Całkowicie kroków
+      totalLevel: Całkowity poziom
+      totalExperience: Całkowite doświadczenie
+      achievementPoints: Punkty osiągnięć
+  mainMenu:
+    phrases:
+      chooseCharacter: Wybierz postać lub stwórz nową.
+      pleaseWait: Proszę czekać...
+      createCharacter: Stwórz nową postać
+      logOut: Wyloguj
+      noInternet: Brak połączenia internetowego
+      areYouSureYouWantToDelete: Na pewno chcesz usunąć <hl>${name}</hl>?
+      dontDoIt: Nie rób tego, jeżeli nie masz całkowitej pewności.
+      deleteWord: DELETE
+      deletingCharacter: Usunięcie twojej postaci jest <hl>nieodwracalne</hl>.
+      areYouAbsolutelySure: Czy jesteś definitywnie pewien? Po tym kroku stracisz
+        postać całkowicie.
+      iAmSure: Tak, definitywnie
+      downloadingLocalisations: Pobieranie zaktualizowanych tłumaczeń
+      downloadingContent: Pobieranie nowej treści gry
+      logIn: Zaloguj
+      register: Zarejestruj
+      welcomeToWalkscape: Witaj w WalkScape, <hl>przybyszu</hl>. Proszę, zaloguj się.
+      pleaseEnterCredentials: Wpisz detale swojego konta WalkScape.
+      email: E-mail
+      password: Hasło
+      noBetaAccess: Brak dostępu do bety.
+      googlePlay: Zaktualizuj poprzez Google Play
+      ifYouAreSure: Jeżeli masz całkowitą pewność napisz <c>DELETE</c> w polu i pacnij
+        kontynuuj.
+      authenticating: Autoryzacja...
+      lostInternet: Twoje urządzenie utraciło połączenie z siecią. Oczekiwanie na
+        połączenie...
+      loadingGame: Wczytywanie gry... proszę czekać!
+  social:
+    phrases:
+      manageFriends: Zarządzaj Znajomymi
+      pendingInvites: Oczekujące zaproszenia
+      friends: Znajomi
