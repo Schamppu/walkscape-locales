@@ -6,11 +6,81 @@ maps:
         "1": Normalny
         "2": Trudny
         "3": Ekstremalny
+        'easy': Łatwy
+        'normal': Normalny
+        'hard': Trudny
+        'extreme': Ekstremalny
       difficultyTitle(map):
         "0": Łatwe osiągnięcia
         "1": Normalne osiągnięcia
         "2": Trudne osiągnięcia
         "3": Ekstremalne osiągnięcia
+        'easy': Łatwe Osiągnięcia
+        'normal': Normalne Osiągnięcia
+        'hard': Trudne Osiągnięcia
+        'extreme': Ekstremalne Osiągnięcia
+  character:
+    stepsTime(map):
+      'hourly': Kroków na godzinę
+      'daily': Kroków dziennie
+      'monthly': Kroków miesięcznie
+  settings:
+    boolSettings(map):
+      'showRecipesRequirementsAreMet': Wymagania poziomu nie są spełnione
+      'showRecipesServiceAreMet': Wymagania usług nie są spełnione
+      'showRecipesMaterialsAreMet': Wymagania materiałów nie są spełnione
+    stepCountNotifications(map):
+      'never': Nigdy
+      'always': Zawsze
+      'everyHundred': Co sto kroków
+      'everyThousand': Co tysiąc kroków
+      'everyTenThousand': Co 10 tysięcy kroków
+    languages(map):
+      'en': English
+      'fi': Suomi
+      'de': Deutsch
+    visibilitySettings(map):
+      'private': Prywatny
+      'friends': Tylko Znajomi
+      'public': Publiczny
+    notificationImportance(map):
+      'high': Dźwięk i wibracje
+      'urgent': Dźwięk, wibracje oraz notyfikacja na górnym pasku.
+      'low': Brak dźwięku, wibracji i statusu w górnym pasku.
+    leaderboardFilter(map):
+      'everyone': Wszyscy
+      'friends': Znajomi
+  characterCreation:
+    phrases:
+      optionTypes(map):
+        'none': Brak
+        'face': Twarz
+        'body': Ciało
+        'outfit': Ubranie
+        'eyes': Oczy
+        'faceAccessorie': Akcesoria twarzy
+        'nose': Nos
+        'background': Tło
+        'headwear': Nakrycie głowy
+        'facepaint': Malowanie twarzy
+        'backAccessorie': Akcesoria pleców
+        'hair': Styl włosów
+      raceTypes(map):
+        'human': Człowiek
+        'none': Brak
+      expressions(map):
+        'normal': Normalny
+        'angry': Zły
+        'laughing': Śmiejący
+        'sad': Smutny
+        'smile': Uśmiechnięty
+        'smirk': Zadziorny
+        'surprise': Zaskoczony
+        'veryAngry': Bardzo zły
+      bodyTypes(map):
+        'none': Brak
+        'masculine': A (Męski)
+        'feminine': B (Żeński)
 plurals:
   achievements:
     phrases:
@@ -26,9 +96,17 @@ plurals:
       actionsRemaining(param=actions):
         one: Pozostałe działania
         other: Pozostałe działania
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
       actionsToLevelUp(param=actions):
         one: Działanie do następnego poziomu
         other: Działania do następnego poziomu
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
       stepsRemainingInTotal(param=steps):
         one: Krok pozostał do końca
         other: Kroki pozostałe do końca
@@ -57,6 +135,13 @@ plurals:
         few: '-'
         many: '-'
         two: '-'
+      stepsUntilArrival(param=steps):
+        zero: '-'
+        one: Kroków, by dotrzeć
+        two: '-'
+        few: '-'
+        many: '-'
+        other: Kroków do celu
 singulars:
   achievements:
     info:
@@ -99,7 +184,7 @@ singulars:
       noMaterialsThatCouldBeUsed: W twoim ekwipunku nie ma materiałów, które można
         wykorzystać do produkcji.
       showingRecipiesThatUses: Pokaż przepisy, które używają
-      requiresService: Requires a service.
+      requiresService: Wymaga usługi.
   inventory:
     info:
       noItemEquipped: Nie wyposażono żadnego przedmiotu. \n\n Przedmiot można wyposażyć,
@@ -140,6 +225,18 @@ singulars:
       areYouSureToDrop: Na pewno chcesz wyrzucić te przedmioty? Będą zniszczone na
         zawsze, kiedy zostaną wyrzucone.
       selectedStacks: Wybrano <c>${stacks}</c> stacków
+      disableWhenChanging: Wyłącz przy zmianie aktywności
+      enableWhenBack: Włącz przy rozpoczęciu poprzednio wykonywanej aktywności
+      selectedConsumable: Wybrany przedmiot zużywalny
+      consumables: Przedmioty Zużywalne
+      noConsumableSelected: Brak wybranego przedmiotu zużywalnego. Możesz wybrać poniższy.
+      noConsumables: Brak przedmiotów zużywalnych w ekwipunku.
+    options:
+      consenseInventory: Poukładaj ekwipunek
+      expandInventory: Rozwiń ekwipunek
+      showMaterials: Pokaż materiały
+      showGear: Pokaż wyposażenie
+      showConsumables: Pokaż zużywalne
   location:
     phrases:
       activities: Działania
@@ -247,6 +344,7 @@ singulars:
       bodyTypeA: A
       bodyTypeB: B
       characterName: Nazwa postaci
+      bodyType: Typ ciała
     info:
       rememberSwipe: Pamiętaj, że możesz macnąć ekran i wrócić, by zmienić wybrane
         opcje w dowolnym momencie tworzenia postaci.
@@ -352,3 +450,28 @@ singulars:
       manageFriends: Zarządzaj Znajomymi
       pendingInvites: Oczekujące zaproszenia
       friends: Znajomi
+  gear:
+    phrases:
+      combatModifiers: Modyfikatory walki
+      noCombatModifiers: Brak modyfikatorów walki z założonych przedmiotów.
+      skillModifiers: Modyfikatory umiejętności
+      noSkillModifiers: Brak modyfikatorów umiejętności z założonych przedmiotów.
+      permanentModifiers: Trwałe modyfikatory
+      noPermanentModifiers: Brak trwałych modyfikatorów.
+  tools:
+    phrases:
+      emptyToolSlot: Pusty slot na narzędzie
+      noToolEquipped: Brak narzędzi założonych na ten slot.
+      lockedToolSlot: Slot na narzędzie będzie dostępny po osiągnięciu <c>${level}</c>
+        poziomu postaci.
+  bank:
+    phrases:
+      noItemsInventory: Brak przedmiotów w ekwipunku.
+      noItemsBank: Brak przedmiotów w banku.
+  trade:
+    phrases:
+      trade: HANDLUJ
+      restockIn: 'Odnowienie zasobów: ${time}'
+      buying: Zakup ${amount}
+      selling: Sprzedaż ${amount}
+      total: Łącznie
