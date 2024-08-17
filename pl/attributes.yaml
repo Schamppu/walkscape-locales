@@ -3,11 +3,20 @@ singulars:
     chestFind:
       whileMainSkill:
         name: Niespodziewane Bogactwa
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="chestFind"/>
+      whileMainSkillAndLocationKeyword:
+        desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> wykonując <supp k="skill"/> w <supp k="keyword"/>.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
     workEfficiency:
       global:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
-        text: Globalna <stat s="workEfficiency"/>
+        text: Globalnie <stat s="workEfficiency"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -87,3 +96,20 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globalne <stat s="craftingOutcome"/>
+      whileLocationKeyword:
+        text: Globalne <stat s="craftingOutcome"/> będąc w <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="craftingOutcome"/> wykonując <supp k="skill"/> w <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> wykonując <supp k="skill"/>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="craftingOutcome"/> mając na sobie przynajmniej <supp
+          k="quantity"/> <supp k="keyword"/>.
