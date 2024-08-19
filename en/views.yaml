@@ -90,6 +90,7 @@ singulars:
     phrases:
       rewards: Completion rewards
       acceptJob: Accept job
+      abandonJob: Abandon job
       acceptedJobs: Currently accepted jobs <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
       itemsFromInventory: Items from inventory
       itemsFromBank: Items from bank
@@ -99,6 +100,12 @@ singulars:
       hasNoItemsInBank: There are no eligible items in your bank.
       giveItems: Give items
       give: Give
+      noJobsAvailable: 'There are no jobs available at this location at the moment. New jobs will be available in:'
+      refreshIn: 'The job board will be refreshed in:'
+    dialogs:
+      abandonJob:
+        title: Abandon job
+        text: Are you sure you want to abandon this job? You will lose all progress and rewards from this job.
 
   inventory:
     info:
