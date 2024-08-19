@@ -84,58 +84,58 @@ maps:
 plurals:
   achievements:
     phrases:
-      achievementPoint(param=pointCount):
+      achievementPoint:
         few: '-'
         many: '-'
-        one: $pointCount Erfolgspunkt
-        other: $pointCount Erfolgspunkte
+        one: {} Erfolgspunkt
+        other: {} Erfolgspunkte
         two: '-'
         zero: '-'
   activity:
     phrases:
-      actionsRemaining(param=actions):
+      actionsRemaining:
         few: '-'
         many: '-'
         one: Verbleibende Aktion
         other: Verbleibende Aktionen
         two: '-'
         zero: '-'
-      actionsToLevelUp(param=actions):
+      actionsToLevelUp:
         few: '-'
         many: '-'
         one: Aktion zum Levelaufstieg
         other: Aktionen zum Levelaufstieg
         two: '-'
         zero: '-'
-      stepsRemainingInTotal(param=steps):
+      stepsRemainingInTotal:
         few: '-'
         many: '-'
         one: Verbleibender Schritt insgesamt
         other: Verbleibende Schritte insgesamt
         two: '-'
         zero: '-'
-      stepsRequired(param=steps):
+      stepsRequired:
         few: '-'
         many: '-'
         one: Schritt erforderlich
         other: Schritte erforderlich
         two: '-'
         zero: '-'
-      stepsToCraft(param=steps):
+      stepsToCraft:
         few: '-'
         many: '-'
         one: Schritt zur Herstellung
         other: Schritte zur Herstellung
         two: '-'
         zero: '-'
-      stepsToLevelUp(param=steps):
+      stepsToLevelUp:
         few: '-'
         many: '-'
         one: Schritt zum Levelaufstieg
         other: Schritte zum Levelaufstieg
         two: '-'
         zero: '-'
-      stepsUntilArrival(param=steps):
+      stepsUntilArrival:
         zero: '-'
         one: Schritt bis zur Ankunft
         two: '-'
@@ -219,9 +219,9 @@ singulars:
       areYouSureToDrop:
         Bist du dir sicher, dass du die Gegenstände fallenlassen willst?
         Die Gegenstände sind dann für immer verloren.
-      slots: Ausrüstungsplätze <c>${slots}</c>
+      slots: Ausrüstungsplätze <c>{slots}</c>
       slotsCount: 'Ausrüstungsplätze:'
-      selectedStacks: <c>${stacks}</c> Stapel gewählt
+      selectedStacks: <c>{stacks}</c> Stapel gewählt
       requirementsNotMet: Anforderungen nicht erfüllt.
       cantEquip: Kann nicht ausgerüstet werden.
       checkBank: Bank ansehen
@@ -235,12 +235,12 @@ singulars:
       requires: Benötigt
       equipToRingOne: Auf Ringplatz 1 ausrüsten
       equipToRingTwo: Auf Ringplatz 2 ausrüsten
-      equipToToolSlot: Auf Werkzeugplatz ${id} ausrüsten
+      equipToToolSlot: Auf Werkzeugplatz {id} ausrüsten
       emptySlot: Leerer Ausrüstungsplatz
       allSkills: Alle Skills
       noItemSelected: Kein Gegenstand ausgewählt
       duration: Dauer
-      durationInSteps: Aktiv für <c>${steps}</c> <icon i="Steps" /> Schritte
+      durationInSteps: Aktiv für <c>{steps}</c> <icon i="Steps" /> Schritte
       inUse: In Benutzung
       disableWhenChanging: Bei Aktivitätswechsel deaktivieren
       selectedConsumable: Ausgewählter Verbrauchsgegenstand
@@ -278,7 +278,7 @@ singulars:
       skills: Skills
       stepsOfLastWeek: Schritte der letzten 7 Tage
       checkOutSubject: Sieh dir meinen Fortschritt in WalkScape an!
-      checkOut: Das ist mein WalkScape Charakter ${name}. Sieh ihn dir an!\nhttps://walkscape.app
+      checkOut: Das ist mein WalkScape Charakter {name}. Sieh ihn dir an!\nhttps://walkscape.app
   permissions:
     phrases:
       permissionExplanation:
@@ -337,7 +337,7 @@ singulars:
       resetToDefault: Auf Standard zurücksetzen
       colorOptions: Farboptionen
       homeRegion: Heimatregion
-      selectedVariant(param=index): Variante $index gewählt
+      selectedVariant: Variante {index} gewählt
       dynamicBackground:
         Dynamischer Hintergrund verändert dein Hintergrundbild basierend
         auf dem Standort deines Charakters.
@@ -357,7 +357,7 @@ singulars:
       youHaveNotExplored:
         Du hast diesen Ort noch nicht erkundet. Du siehst Informationen
         über diesen Ort, nachdem du ihn einmal besucht hast.
-      routeFromTo: <location i="${fromID}"/> nach <location i="${toID}"/>
+      routeFromTo: <location i="{fromID}"/> nach <location i="{toID}"/>
       route: Route
       youreHere: Du bist aktuell an diesem Ort.
       currentLocation: Aktueller Standort
@@ -400,7 +400,7 @@ singulars:
       logOut: Ausloggen
       noInternet: Keine Internetverbindung
       areYouSureYouWantToDelete:
-        Bist du sicher, dass du <hl>${name}</hl> löschen
+        Bist du sicher, dass du <hl>{name}</hl> löschen
         willst?
       dontDoIt: Tu es nicht, wenn du dir nicht sicher bist.
       ifYouAreSure:
@@ -460,9 +460,9 @@ singulars:
   trade:
     phrases:
       trade: TAUSCHEN
-      restockIn: 'Wiederauffüllen in: ${time}'
-      buying: ${amount} kaufen
-      selling: ${amount} verkaufen
+      restockIn: 'Wiederauffüllen in: {time}'
+      buying: {amount} kaufen
+      selling: {amount} verkaufen
       total: Gesamt
   rewards:
     phrases:
@@ -492,7 +492,7 @@ singulars:
     phrases:
       emptyToolSlot: Leerer Werkzeugplatz
       noToolEquipped: Kein Werkzeug auf diesem Platz ausgerüstet.
-      lockedToolSlot: Werkzeugplatz gesperrt bis <c>Charakterlevel ${level}</c>.
+      lockedToolSlot: Werkzeugplatz gesperrt bis <c>Charakterlevel {level}</c>.
   bank:
     phrases:
       noItemsInventory: Keine Items in deinem Inventar.

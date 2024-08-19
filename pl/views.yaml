@@ -84,58 +84,58 @@ maps:
 plurals:
   achievements:
     phrases:
-      achievementPoint(param=pointCount):
-        one: $pointCount punkt osiągnięć
-        other: $pointCount punktów osiągnięć
+      achievementPoint:
+        one: {} punkt osiągnięć
+        other: {} punktów osiągnięć
         zero: '-'
         two: '-'
         few: '-'
         many: '-'
   activity:
     phrases:
-      actionsRemaining(param=actions):
+      actionsRemaining:
         one: Pozostałe działania
         other: Pozostałe działania
         zero: '-'
         two: '-'
         few: '-'
         many: '-'
-      actionsToLevelUp(param=actions):
+      actionsToLevelUp:
         one: Działanie do następnego poziomu
         other: Działania do następnego poziomu
         zero: '-'
         two: '-'
         few: '-'
         many: '-'
-      stepsRemainingInTotal(param=steps):
+      stepsRemainingInTotal:
         one: Krok pozostał do końca
         other: Kroki pozostałe do końca
         zero: '-'
         two: '-'
         few: '-'
         many: '-'
-      stepsRequired(param=steps):
+      stepsRequired:
         one: Wymagany krok
         other: Wymagane kroki
         zero: '-'
         two: '-'
         few: '-'
         many: '-'
-      stepsToCraft(param=steps):
+      stepsToCraft:
         one: Krok do wytworzenia
         other: Kroki do wytworzenia
         two: '-'
         few: '-'
         many: '-'
         zero: '-'
-      stepsToLevelUp(param=steps):
+      stepsToLevelUp:
         one: Krok do wyższego poziomu
         other: Kroki do awansu na wyższy poziom
         zero: '-'
         few: '-'
         many: '-'
         two: '-'
-      stepsUntilArrival(param=steps):
+      stepsUntilArrival:
         zero: '-'
         one: Kroków, by dotrzeć
         two: '-'
@@ -209,7 +209,7 @@ singulars:
       itemsInUse:
         Wśród zaznaczonych przedmiotów są takie, które są w użyciu. Nie
         możesz ich wyrzucić lub umieścić w banku.
-      slots: Slotów <c>${slots}</c>
+      slots: Slotów <c>{slots}</c>
       slotsCount: 'Slotów:'
       requirementsNotMet: Nie spełniono wymagań.
       cantEquip: Nie można założyć.
@@ -223,20 +223,20 @@ singulars:
       abilities: Zdolności
       requires: Wymaga
       equipToRingTwo: Załóż na slot 2 pierścieni
-      equipToToolSlot: Załóż na slot ${id} narzędzi
+      equipToToolSlot: Załóż na slot {id} narzędzi
       emptySlot: Pusty slot
       allSkills: Wszystkie umiejętności
       noItemEquipped: Brak założonych przedmiotów
       noItemSelected: Brak wybranych przedmiotów
       duration: Czas Trwania
-      durationInSteps: Aktywne przez kolejne <c>${steps}</c> <icon i="Steps" /> kroków
+      durationInSteps: Aktywne przez kolejne <c>{steps}</c> <icon i="Steps" /> kroków
       inUse: W użyciu
       slotDoesntExist: Ten slot na przedmioty już nie istnieje.
       equipToRingOne: Załóż na slot 1 pierścieni
       areYouSureToDrop:
         Na pewno chcesz wyrzucić te przedmioty? Będą zniszczone na
         zawsze, kiedy zostaną wyrzucone.
-      selectedStacks: Wybrano <c>${stacks}</c> stacków
+      selectedStacks: Wybrano <c>{stacks}</c> stacków
       disableWhenChanging: Wyłącz przy zmianie aktywności
       enableWhenBack: Włącz przy rozpoczęciu poprzednio wykonywanej aktywności
       selectedConsumable: Wybrany przedmiot zużywalny
@@ -271,7 +271,7 @@ singulars:
     phrases:
       skills: Umiejętności
       stepsOfLastWeek: Kroków w ciągu 7 dni
-      checkOut: To moja postać ${name} w WalkScape. Sprawdź to!\nhttps://walkscape.app
+      checkOut: To moja postać {name} w WalkScape. Sprawdź to!\nhttps://walkscape.app
       checkOutSubject: Sprawdź mój postęp w WalkScape!
   permissions:
     phrases:
@@ -380,7 +380,7 @@ singulars:
       resetToDefault: Zresetuj do podstawowego
       homeRegion: Domowy region
       race: Rasa
-      selectedVariant(param=index): Wariant $index wybrany
+      selectedVariant: Wariant {index} wybrany
       colorOptions: Opcje koloru
       mainOptions: Główne opcje
       extras: Dodatki
@@ -407,7 +407,7 @@ singulars:
       youHaveNotExplored:
         Nie udało ci się jeszcze zwiedzić tej lokacji. Otrzymasz
         informacje o tej lokacji, kiedy przynajmniej raz ją odwiedzisz.
-      routeFromTo: Z <location i="${fromID}"/> do <location i="${toID}"/>
+      routeFromTo: Z <location i="{fromID}"/> do <location i="{toID}"/>
       route: Droga
       youreHere: Jesteś aktualnie w tej lokacji.
       currentLocation: Aktualna lokacja
@@ -448,7 +448,7 @@ singulars:
       createCharacter: Stwórz nową postać
       logOut: Wyloguj
       noInternet: Brak połączenia internetowego
-      areYouSureYouWantToDelete: Na pewno chcesz usunąć <hl>${name}</hl>?
+      areYouSureYouWantToDelete: Na pewno chcesz usunąć <hl>{name}</hl>?
       dontDoIt: Nie rób tego, jeżeli nie masz całkowitej pewności.
       deleteWord: DELETE
       deletingCharacter: Usunięcie twojej postaci jest <hl>nieodwracalne</hl>.
@@ -492,7 +492,7 @@ singulars:
       emptyToolSlot: Pusty slot na narzędzie
       noToolEquipped: Brak narzędzi założonych na ten slot.
       lockedToolSlot:
-        Slot na narzędzie będzie dostępny po osiągnięciu <c>${level}</c>
+        Slot na narzędzie będzie dostępny po osiągnięciu <c>{level}</c>
         poziomu postaci.
   bank:
     phrases:
@@ -501,7 +501,7 @@ singulars:
   trade:
     phrases:
       trade: HANDLUJ
-      restockIn: 'Odnowienie zasobów: ${time}'
-      buying: Zakup ${amount}
-      selling: Sprzedaż ${amount}
+      restockIn: 'Odnowienie zasobów: {time}'
+      buying: Zakup {amount}
+      selling: Sprzedaż {amount}
       total: Łącznie

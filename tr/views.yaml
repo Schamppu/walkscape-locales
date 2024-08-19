@@ -45,58 +45,58 @@ maps:
 plurals:
   achievements:
     phrases:
-      achievementPoint(param=pointCount):
+      achievementPoint:
         few: '-'
         many: '-'
-        one: $pointCount başarım puanı
-        other: $pointCount başarım puanı
+        one: {} başarım puanı
+        other: {} başarım puanı
         two: '-'
         zero: '-'
   activity:
     phrases:
-      actionsRemaining(param=actions):
+      actionsRemaining:
         few: '-'
         many: '-'
         one: Kalan eylem
         other: Kalan eylem
         two: '-'
         zero: '-'
-      actionsToLevelUp(param=actions):
+      actionsToLevelUp:
         few: '-'
         many: '-'
         one: Seviye atlamaya kalan eylem
         other: Seviye atlamaya kalan eylem
         two: '-'
         zero: '-'
-      stepsRemainingInTotal(param=steps):
+      stepsRemainingInTotal:
         few: '-'
         many: '-'
         one: Toplamda kalan adım
         other: Toplamda kalan adım
         two: '-'
         zero: '-'
-      stepsRequired(param=steps):
+      stepsRequired:
         few: '-'
         many: '-'
         one: Gereken adım
         other: Gereken adım
         two: '-'
         zero: '-'
-      stepsToCraft(param=steps):
+      stepsToCraft:
         few: '-'
         many: '-'
         one: Üretime kalan adım
         other: Üretime kalan adım
         two: '-'
         zero: '-'
-      stepsToLevelUp(param=steps):
+      stepsToLevelUp:
         few: '-'
         many: '-'
         one: Seviye atlamaya kalan adım
         other: Seviye atlamaya kalan adım
         two: '-'
         zero: '-'
-      stepsUntilArrival(param=steps):
+      stepsUntilArrival:
         few: '-'
         many: '-'
         one: Hedefe kalan adım
@@ -132,7 +132,7 @@ singulars:
         Karakterinin yolculuğu boyunca geliştirdiği bütün becerilerinin
         tablosu.
     phrases:
-      checkOut: İşte WalkScape karakterim ${name}. Bir göz at!\nhttps://walkscape.app
+      checkOut: İşte WalkScape karakterim {name}. Bir göz at!\nhttps://walkscape.app
       checkOutSubject: WalkScape'teki ilerlememe bir göz atın!
       skills: Beceriler
       stepsOfLastWeek: Son 7 günlük adımlar
@@ -199,7 +199,7 @@ singulars:
       emptySlot: Boş yuva
       equipToRingOne: 1. yüzük yuvasına kuşan
       equipToRingTwo: 2. yüzük yuvasına kuşan
-      equipToToolSlot: ${id}. alet yuvasına kuşan
+      equipToToolSlot: {id}. alet yuvasına kuşan
       itemsInUse:
         Zaten kullanımda olan eşyaları seçtin. Kullanımdaki eşyaları atamaz
         veya bankaya koyamazsın.
@@ -211,7 +211,7 @@ singulars:
       requirementsNotMet: Gereksinimler karşılanmıyor.
       requires: Gerekli
       slotDoesntExist: Bu eşya yuvası artık yok.
-      slots: Yuvalar <c>${slots}</c>
+      slots: Yuvalar <c>{slots}</c>
       slotsCount: 'Yuvalar:'
       treasury: Hazine
   leaderboards:
@@ -235,7 +235,7 @@ singulars:
       areYouAbsolutelySure:
         Kesinlikle emin misin? Bu adımdan sonra, karakterini kalıcı
         olarak kaybedeceksin.
-      areYouSureYouWantToDelete: <hl>${name}</hl>'i silmek istediğinden emin misin?
+      areYouSureYouWantToDelete: <hl>{name}</hl>'i silmek istediğinden emin misin?
       chooseCharacter: Karakterini seç veya yeni bir karakter oluştur.
       createCharacter: Yeni karakter oluştur
       deleteWord: SİL
@@ -285,7 +285,7 @@ singulars:
       noVariantSelected: Seçili çeşit yok
       race: Irk
       resetToDefault: Varsayılana sıfırla
-      selectedVariant(param=index): Çeşit $index seçildi
+      selectedVariant: Çeşit {index} seçildi
       variants: Çeşitler
   stats:
     info:
@@ -297,13 +297,13 @@ singulars:
   tools:
     phrases:
       emptyToolSlot: Boş alet yuvası
-      lockedToolSlot: <c>Karakter seviyesi ${level}</c> olana kadar kilitli alet yuvası.
+      lockedToolSlot: <c>Karakter seviyesi {level}</c> olana kadar kilitli alet yuvası.
       noToolEquipped: Bu yuvada alet yok.
   trade:
     phrases:
-      buying: Alım ${amount}
-      restockIn: 'Yeni stoklara: ${time}'
-      selling: Satım ${amount}
+      buying: Alım {amount}
+      restockIn: 'Yeni stoklara: {time}'
+      selling: Satım {amount}
       total: Toplam
       trade: TAKAS
   tutorial:

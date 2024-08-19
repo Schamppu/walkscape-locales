@@ -45,58 +45,58 @@ maps:
 plurals:
   achievements:
     phrases:
-      achievementPoint(param=pointCount):
-        few: $pointCount pasiekimo taškai
-        many: $pointCount pasiekimo taško
-        one: '$pointCount pasiekimo taškas '
-        other: $pointCount pasiekimo taškų
+      achievementPoint:
+        few: {} pasiekimo taškai
+        many: {} pasiekimo taško
+        one: '{} pasiekimo taškas '
+        other: {} pasiekimo taškų
         two: '-'
         zero: '-'
   activity:
     phrases:
-      actionsRemaining(param=actions):
+      actionsRemaining:
         few: Likę veiksmai
         many: Likusio veiksmo
         one: Likęs veiksmas
         other: Likusių veiksmų
         two: '-'
         zero: '-'
-      actionsToLevelUp(param=actions):
+      actionsToLevelUp:
         few: Veiksmai pakelti lygiui
         many: Veiksmo pakelti lygiui
         one: Veiksmas pakelti lygiui
         other: Veiksmų pakelti lygiui
         two: '-'
         zero: '-'
-      stepsRemainingInTotal(param=steps):
+      stepsRemainingInTotal:
         few: Iš viso likę žingsniai
         many: Iš viso likusio žingsnio
         one: Iš viso likęs žingsnis
         other: Iš viso likusių žingsnių
         two: '-'
         zero: '-'
-      stepsRequired(param=steps):
+      stepsRequired:
         few: Reikalingi žingsniai
         many: Reikalingo žingsnio
         one: Reikalingas žingsnis
         other: Reikalingų žingsnių
         two: '-'
         zero: '-'
-      stepsToCraft(param=steps):
+      stepsToCraft:
         few: Žingsniai pagaminimui
         many: Žingsnio pagaminimui
         one: Žingsnis pagaminimui
         other: Žingsnių pagaminimui
         two: '-'
         zero: '-'
-      stepsToLevelUp(param=steps):
+      stepsToLevelUp:
         few: Žingsiai pakelti lygiui
         many: Žingsnio pakelti lygiui
         one: Žingsnis pakelti lygiui
         other: Žingsnių pakelti lygiui
         two: '-'
         zero: '-'
-      stepsUntilArrival(param=steps):
+      stepsUntilArrival:
         few: Žingsniai iki atvykimo
         many: Žingsnio iki atvykimo
         one: Žingsnis iki atvykimo
@@ -133,7 +133,7 @@ singulars:
         Čia pateikiamas bendras visų įgūdžių, kuriuos tavo personažas
         įgijo kelionės metu, pasiskirstymas.
     phrases:
-      checkOut: Štai mano WalkScape personažas ${name}. Žvilgtelk!\nhttps://walkscape.app
+      checkOut: Štai mano WalkScape personažas {name}. Žvilgtelk!\nhttps://walkscape.app
       checkOutSubject: Pažiūrėk į mano pažangą "WalkScape" žaidime!
       skills: Įgūdžiai
       stepsOfLastWeek: Pastarųjų 7 dienų žingsniai
@@ -221,5 +221,5 @@ singulars:
       noVariantSelected: Nepasirinktas joks variantas
       race: Rasė
       resetToDefault: Atstatyti numatytuosius
-      selectedVariant(param=index): Pasirinktas variantas $index
+      selectedVariant: Pasirinktas variantas {index}
       variants: Variantai

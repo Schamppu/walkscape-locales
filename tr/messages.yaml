@@ -4,9 +4,11 @@ plurals:
       text:
         few: '-'
         many: '-'
-        one: Nesneleri silme işlemi geri alınamaz. Bu nesneye diğer nesnelerde $n
+        one:
+          Nesneleri silme işlemi geri alınamaz. Bu nesneye diğer nesnelerde {n}
           kere atıfta bulunulmuş.
-        other: Nesneleri silme işlemi geri alınamaz. Bu nesneye diğer nesnelerde $n
+        other:
+          Nesneleri silme işlemi geri alınamaz. Bu nesneye diğer nesnelerde {n}
           kere atıfta bulunulmuş.
         two: '-'
         zero: '-'
@@ -40,16 +42,17 @@ singulars:
       title: Kayıt başarısız.
   popups:
     achievementUnlocked:
-      achievementPoints: ${points} başarım puanı
+      achievementPoints: {points} başarım puanı
       requirements: Gereksinimler
       rewards: Ödüller
     idleSteps:
-      characterGained: Karakter <c>+${amount}</c> tecrübe kazandı />
-      characterLeveledUpFrom: Karakter <c i="0">${from}</c>'den <c i="1">${to}</c>'e
+      characterGained: Karakter <c>+{amount}</c> tecrübe kazandı />
+      characterLeveledUpFrom:
+        Karakter <c i="0">{from}</c>'den <c i="1">{to}</c>'e
         seviye atladı.
-      craftedItem: <c>+${amount}</c> <item id="${item}" /> üretildi.
-      gainedExperience: <skill skill="$skill" /> <c>+${exp}</c> tecrübe kazandı.
-      gainedItem: <c>+${amount}</c> <item id="${item}" /> kazanıldı.
+      craftedItem: <c>+{amount}</c> <item id="{item}" /> üretildi.
+      gainedExperience: <skill skill="{skill}" /> <c>+{exp}</c> tecrübe kazandı.
+      gainedItem: <c>+{amount}</c> <item id="{item}" /> kazanıldı.
       nothingHappened: Kayda değer bir şey olmadı.
       stepsWhileAway: Oyun kapalıyken kazanılan adım
       whileYouWereAway: Sen yokken...
