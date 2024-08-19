@@ -584,6 +584,12 @@ singulars:
           desc: Aus widerstandsfähigem, wasserdichtem Material gefertigt, bieten sie
             Schutz vor den Elementen, während sie agile Bewegungen ermöglichen.
           name: Fischerhosen
+        pirateHat:
+          name: Piratenhut
+          desc: Land in Sicht!
+        rodOfMoss:
+          name: Moosstab
+          desc: Der Ring ist mit Moos überwuchert.
       foraging:
         halflingsFeetSlippers:
           desc: Diese gemütlichen und reizvollen Pantoffeln winzigen Zehen und skurillen
@@ -694,6 +700,34 @@ singulars:
         steelToeBoots:
           name: Stahlkappenstiefel
           desc: An diesen Stiefeln entgleisen die Loren, statt deine Zehen zu zerquetschen.
+        minersPants:
+          name: Bergbauer Hose
+          desc: Sie haben gepolsterte Knie, damit du entspannt auf ihnen sitzen kannst,
+            während du unter dir nach Erzen suchst ohne dir wehzutun.
+        minersShirt:
+          name: Bergbauer Shirt
+          desc: Hochsichtbarkeits Shirt, damit du schneller gefunden wirst, wenn du
+            in dem Labyrinth aus Berkwerkshöhlen verloren gehst.
+        handLantern:
+          name: Handlaterne
+          desc: Hoffentlich hast du zusätzliche Streichhölzer dabei, denn wenn die
+            Kerze in den tiefen der Höhle ausgeht, bist du verloren.
+        goldPan:
+          desc: Tu ein paar Steine und etwas Wasser rein, schütteln und dann werden
+            sich dir die Goldklumpen offenbaren.
+        minersBeard:
+          name: Bergmannsbart
+          desc: Kannst du wirklich als Bergmann gelten, wenn du keinen Bart trägst?
+        minersMagnet:
+          name: Bergmannsmagnet
+          desc: Besonders nützlich um in den Felswänden Edelmetalle aufzuspüren.
+        simpleMiningShovel:
+          name: Einfache Bergbauschaufel
+          desc: Damit kannst du einigen Schutt von dem Erzreichen Boden entfernen,
+            damit es einfacher ist, wertvolle Mineralien zu entdecken.
+        iceAxe:
+          name: Eispickel
+          desc: Es brennt beim anfassen. Trag lieber Handschuhe!
       smithing:
         smeltingGoggles:
           desc: Ein Augenschutz der es erlaubt, sich am gleißenden Glanz geschmolzenen
@@ -703,11 +737,20 @@ singulars:
           desc: Ein schützender Mantel der Schmiede - diese Schürze ist wahrlich eine
             Verflechtung aus Widerstandskraft und Handwerkskunst.
           name: Schmiedeschürze
+        jarvonianSmithsHammer:
+          name: Jarvonischer Schmiedehammer
+        coolingIceAmulet:
+          name: Kühlendes Eis-Amulett
+          desc: Dieses Amulett strahlt dauerhaft Kälte aus
       woodcutting:
         lumberjackShirt:
           desc: Diese robuste, karierte Jacke schützt den Träger vor den Elementen
             und ist ein Zeugnis für die Hartnäckigkeit eines Holzfällers.
           name: Holzfällerhemd
+        lumberjackBoots:
+          name: Holzfäller-Stiefel
+        logSplitter:
+          name: Holzspalter
     versatile:
       backpack:
         desc: Mehr Platz im Rucksack, für noch mehr Dinge!
@@ -952,13 +995,11 @@ singulars:
           Nüssen gepresst? Nur du weißt, woher du das hast.
         name: Milch
       salt:
-        desc: Jedes Korn ist ein Fragment eines vergessenen Ozeans, durchdrungen von
-          der Kraft, zu reinigen, zu schützen und jedem Gericht einen Hauch von Zauber
-          zu verleihen.
+        desc: Salz ist der am weitesten verbreitete Geschmacksverstärker in ganz Arenum.
         name: Salz
       honey:
         name: Honigwabe
-        desc: Aus dieser Honigwabe tropft frischer Honig.
+        desc: Aus dieser rohen Honigwabe tropft frischer Honig.
       carrot:
         name: Karotte
         desc: Man sagt sie ist gut für die Augen.
@@ -1215,10 +1256,17 @@ singulars:
         name: Roher Stachelrochen
       rawSwordfish:
         name: Roher Schwertfisch
+        desc: Dieser silberne Fisch ist lang und hat eine Schwertartige Nase, die
+          er nutzt um seine Beute bewegungsunfähig zu machen.
       rawShark:
         name: Roher Hai
+        desc: Der große Fisch hat viele scharfe Zähne in mehreren Reihen. Du hast
+          einen solchen Kopf schonmal an der Wand im Frosthaken Kaufhaus gesehen.
       rawAnglerfish:
         name: Roher Seeteufel
+        desc: Dieser seltsame Fisch hat einen riesigen Mund mit langen dolchähnlichen
+          Zähnen. Seine Augen sehen blind sein. Ein heller Fleck wächst auf seiner
+          Stirn.
     smithing:
       bronzeBar:
         desc: Der Bronzebarren, ein Relikt aus den Schmieden der Zwerge, strahlt rustikalen
@@ -1230,8 +1278,7 @@ singulars:
           metallische Stärke und Vielseitigkeit in verschiedenen Anwendungen widerspiegelt.
         name: Kupferbarren
       farganiteBar:
-        desc: Durch seinen Blauton zwischen Ozean und Himmel, sieht er auch in erhitztem
-          Zustand kühl aus.
+        desc: Ein hellblauer Barren.
         name: Farganitbarren
       ironBar:
         desc: Er ist ein Zeugnis für die eherne Stärke des Erdkerns, schwer und unnachgiebig.
@@ -1255,6 +1302,7 @@ singulars:
         desc: Einige hochwertige Metallstücke
       hydriliumBar:
         name: Hydriliumbarren
+        desc: Der Hydriliumbarren hat eine bleiche grüne Farbe.
     woodcutting:
       birchLogs:
         desc: Die glatten und hellen Birkenstämme strahlen eine elegante Schlichtheit
@@ -1300,11 +1348,11 @@ singulars:
           einer roten Linie ist ein Weg zu einem Gletscher, auf dem ein Iglu steht.
         name: Mysteriöse nördliche Karte
       adventurersPin:
-        desc: Ein Anstecker mit dem Symbol der Abenteurer Gilde. Ein bisschen rostig,
-          aber immernoch glänzend. Die Abenteurer Gilde würde die Rückgabe schätzen.
+        desc: Ein Anstecker mit dem Symbol der Abenteuer Gilde. Ein bisschen rostig,
+          aber immernoch glänzend. Die Abenteuer Gilde würde die Rückgabe schätzen.
         name: Emailleanstecknadel der Abenteurer
       unidentifiedRemains:
-        desc: Die Abenteurer Gilde würde es schätzen, wenn du diesen Knochenhaufen
+        desc: Die Abenteuer Gilde würde es schätzen, wenn du diesen Knochenhaufen
           zurückbringst, es könnte dabei helfen einen offenen Fall zu lösen.
         name: Nicht identifizierte Überbleibsel
       trash:
@@ -1334,7 +1382,7 @@ singulars:
       nameTag:
         name: Namensschild
         desc: Ein Namensschild mit dem Namen eines lange Verlorenen Abenteurers darauf.
-          Die Abenteurer Gilde könnte interessiert sein.
+          Die Abenteuer Gilde könnte interessiert sein.
     crafting:
       rope:
         name: Seil
