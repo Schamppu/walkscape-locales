@@ -23,7 +23,7 @@ singulars:
         name: Ugotowane jajko
       cookedMushrooms:
         desc: Orzechowy zapach sprawia, że stajesz się bardzo głodny. Zjesz je na
-          szybko,  czy zachowasz do innego dania?
+          szybko, czy zachowasz do innego dania?
         name: Ugotowane grzyby
       cookedPotato:
         desc: Z ziemi do pieca!
@@ -33,7 +33,7 @@ singulars:
           na pewno zapewniło małe ćwiczenie z gotowania.
         name: Ugotowany pomidor
       fishSoup:
-        desc: Gratulacje, zabrałeś rybę z jednego akwenu i umieściłeś ją w drugim.
+        desc: <PLACEHOLDER>
         name: Zupa rybna
       friedFishSandwich:
         desc: Kanapka ze smażoną rybą. Uważaj na ości!
@@ -147,7 +147,7 @@ singulars:
             mobilności.
           name: Lekki hełm z brązu
         shoes:
-          desc: Przynajmniej są lżejsze od tej pary z żelaza
+          desc: Przynajmniej są lżejsze od tej pary z żelaza!
           name: Buty z brązu
       copper:
         chest:
@@ -226,50 +226,102 @@ singulars:
       fishing:
         basicFishingPole:
           name: Podstawowa wędka
+          desc: Jak to mówią, zły dzień nad jeziorem jest lepszy niż dobry dzień w
+            pracy.
         fishingSpear:
           name: Włócznia wędkarska
+          desc: Włócznia ucieleśnia drapieżnika i ofiarę pod powiechrznią, oferując
+            bezpośredni i groźny sposób by zapewnić pożywienie z wód.
         largeFishingNet:
           name: Duża sieć rybacka
         oakFishingRod:
           name: Wędka z dębu
         pineFishingRod:
           name: Wędka z sosny
+          desc: Świeżo pachnąca wędka, która wytrzyma najcięższe ryby.
         smallFishingNet:
           name: Mała sieć rybacka
+          desc: Podstawowa siatka, skromne narzędzie prostego rybaka. Trudno powiedzieć,
+            by coś więcej niż kilka połączonych ze sobą kawałków liny.
+        coralFishingSpear:
+          name: Włócznia do połowu koralowców
       mining:
         basicPickaxe:
           name: Zwykły kilof
+          desc: Podstawowy kilof, skromne narzędzie górnika. Niewiele więcej niż kij,
+            kamień i sznur łączący to wszystko w całość.
         bronzePickaxe:
           name: Kilof z brązu
+          desc: Kilof z brązu emanuje rustykalnym urokiem i nieustępliwą siłą.
         copperPickaxe:
           name: Kilof z miedzi
+          desc: Dość łamliwy i lekki kilof służący do kopania. Robi swoją robotę.
         farganitePickaxe:
           name: Kilof z farganitu
+          desc: Idealne odbicie barw nieba w ciągu dnia, faktycznie rzadki kilof.
         ironPickaxe:
           name: Kilof z żelaza
+          desc: Dzięki swojej ciężkiej głowni służy jako lojalny partner tym, którzy
+            chcą posiąść dziką przyrodę lub stawić czoła nieznanemu.
         steelPickaxe:
           name: Kilof ze stali
+          desc: Stalowy kilof lśni determinacją swojego twórcy, gotowy spełnić jego
+            rozkaz.
         tarsiliumPickaxe:
           desc: Czarny kilof.
           name: Kilof z tarsilu
+        hydriliumPickaxe:
+          name: Kilof z Hydrilium
+          desc: Kilof wykonany z rzadkiego podwodnego materiału zwanego hydrilium.
       woodcutting:
         basicHatchet:
           name: Podstawowa Siekera
+          desc: Podstawowy topór, skromne narzędzie leśników. Niewiele więcej niż
+            kij, kamień i sznur trzymający to wszystko razem.
         bronzeHatchet:
           desc: Dobra dla początkujących, aby zacząć ścinać drzewa.
-          name: Siekera z brązu
+          name: Siekiera z Brązu
         copperHatchet:
           desc: Delikatna i dosyć lekka w użyciu do cięcia drewna. Ale wykonuje zadanie.
           name: Siekiera z Miedzi
         farganiteHatchet:
-          name: Siekera z Farganitu
+          name: Siekiera z Farganitu
+          desc: Idealne odbicie barw nieba w ciągu dnia, to faktycznie rzadki topór.
         ironHatchet:
           name: Siekiera z Żelaza
+          desc: Dzięki swojemu ciężkiemu ostrzu służy jako lojalny partner tym, którzy
+            chcą posiąść dzicz lub stawić czoła nieznanemu.
         steelHatchet:
-          name: Siekiera z Stalu
+          name: Siekiera z Stali
+          desc: Stalowy topór połyskuje determinacją swojego twórcy, gotowego spełnić
+            jego rozkaz.
         tarsiliumHatchet:
-          desc: Czarna Siekiera.
-          name: Siekiera z tarsilu
+          desc: Czarna siekiera.
+          name: Siekiera z Tarsilium
+        hydriliumHatchet:
+          name: Siekiera z Hydrilium
+          desc: Topór wykonany z rzadkiego podwodnego materiału zwanego hydrilium.
+      miscellaneous:
+        bagOfRocks:
+          name: Torba Kamieni
+          desc: Ciężko taszczyć te klamoty wokół, dlaczego znowu to robisz?
+      foraging:
+        stoneSickle:
+          name: Podstawowy Sierp
+          desc: Podstawowe narzędzie do czerpania korzyści z natury. Jego potępiona
+            krawędź nie jest aż tak wydajna.
+        copperSickle:
+          name: Miedziany Sierp
+          desc: Oferuje zwyczajną wydajność w ścinaniu podstawowych roślin.
+        ironSickle:
+          name: Żelazny Sierp
+          desc: Wytrzymały i poręczny, przeciwna łodygi bez problemu.
+        hydriliumSickle:
+          name: Sierp z Hydrilium
+          desc: Sierp wykonany z rzadkiego podwodnego materiału zwanego hydrilium.
+        steelSickle:
+          name: Stalowy Sierp
+          desc: Wytrzymały i poręczny, oferuje dobrą wydajność przy intensywnym zbieractwie.
   looted:
     equipmentSets:
       dimensional:
@@ -312,6 +364,62 @@ singulars:
           name: Czapka kucharza
         meatCleaver:
           name: Tasak do mięsa
+        simplePan:
+          name: Zwykła Patelnia
+          desc: Ta patelnia nie ma powłoki zapobiegającej przywieraniu, ale uratuje
+            cię w potrzebie.
+        measuringSpoonsNecklace:
+          name: Naszyjnik z Łyżkami do Odmierzania
+          desc: Trzy miarki są zawsze do twojej dyspozycji. Nie wsadzać do zmywarki.
+        eberhartCorkscrew:
+          name: Korkociąg Eberharta
+          desc: Ten klasyczny korkociąg charakteryzuje się jakością znacznie przewyższające
+            inne, jakie kiedykolwiek widziałeś. Rękojeść jest ergonomiczna i wykonana
+            z wykwintnego drewna, a spirala ze stali nierdzewnej o bardzo precyzyjnym
+            wykończeniu.
+        dullKnife:
+          name: Tępy Nóż
+          desc: Nie ma nic groźniejszego niż tępy nóż. Albo tylko tak mówią.
+        cuttingBoard:
+          name: Deska do Krojenia
+          desc: Kwadratowa deska do rąbania mięsa, owoców i warzyw.
+        largePot:
+          name: Duży Garnek
+          desc: Zrobiony ze stali i odpowiednio duży, by pomieścić jedzenie dla kilku
+            osób.
+        chefsLegApron:
+          name: Kucharska Opaska na Nogę
+          desc: Swego rodzaju fartuch, ale na nogę, z kieszeniami na narzędzia kucharskie.
+        nonSlipShoes:
+          name: Nie-ślizgające się Kapcie
+          desc: Nie są zbyt modne, ale dają więcej przyczepności, więc mniej razy
+            się pośliźniesz.
+        sturdyWhisk:
+          name: Solidna Trzepaczka
+          desc: Stalowe pnącza są mocno przymocowane do poręcznego uchwytu, dzięki
+            czemu można ubić tysiące jajek.
+        northernSpices:
+          name: Północne Przyprawy
+          desc: Silny aromat tych przypraw sprawia, że twój brzuch burczy głośno,
+            byłoby po tobie na jakiejkolwiek cichej misji.
+        flippySpatula:
+          desc: To nie tylko szpatułka, to odskakująca szpatułka. Jak dużo obrotów
+            w jednym podrzucie zrobisz?
+          name: Odskakująca Szpatułka
+        recipeBook:
+          name: Książka Kucharska
+          desc: Są tu setki przepisów w tej księdze, opisująca każdą możliwą do wymyślenia
+            potrawę, od jarvońskiej po rid raddakańską.
+        rottenEggplant:
+          name: Zgniły Bakłażan (przedmiot testowy)
+          desc: Tylko dla testerów. Gwarantuje nielimitowaną moc.
+        lavaCookingPan:
+          name: Patelnia z Lawy
+          desc: Tę patelnię wytworzono w wulkanie. Lawa z jakiej została zrobiona
+            sprawia, że jest zawsze gotowa do gotowania.
+        sharpKnife:
+          desc: Ma rustykalną drewnianą rączkę, a jego ostrze wygląda, jakby zostało
+            niedawno naostrzone.
       crafting:
         candlehat:
           name: Czapkoświeczka
@@ -329,8 +437,32 @@ singulars:
       foraging:
         halflingsFeetSlippers:
           name: Kapcie stopy Niziołka
+          desc: Te przytulne i urocze kapcie naśladują futrzane stopy niziołków, wykończone
+            małymi palcami i fantazyjnymi detalami.
         hatWithAFeather:
           name: Kapelusz z piórkiem
+          desc: Obecność tego przedmiotu przywołuje ducha przygody i urok odległych
+            krain, obiecując, że gdziekolwiek go założysz, z pewnością pojawią się
+            opowieści o odważnych eskapadach.
+        blueIceSickle:
+          name: Sierp Niebieskiego Lodu
+          desc: Ten sierp wykonany jest z lodu i ukazuje sobą intensywny niebieski
+            kolor, jak czyste niebo w letni dzień. Tnie jak wyśmienity sierp, ale
+            jest chłodny w ręku, kiedy go używasz, a mimo to nie topi się. Co ten
+            sierp robił w lodowcu?
+        simpleBugCatchingNet:
+          name: Prosta Siatka na Owady
+          desc: To nie jest duża sprawa, ale łapie robale.
+        wildernessShirt:
+          name: Koszula Dziczy
+          desc: Komfortowa zielona koszula połączona z czerwonym szalikiem na szyję
+            sprawia, że czujesz się jednością z naturą.
+        wildernessPants:
+          name: Spodnie Dziczy
+          desc: Para zielonych spodni stworzona do buszowania po naturze na czworakach.
+        foragingShorts:
+          name: Zbierackie Szorty
+          desc: Wytrzymałe i komfortowe szorty, idealne do zbierania w każdym terenie.
       mining:
         miningHelm:
           name: Hełm górniczy
@@ -356,7 +488,7 @@ singulars:
       hatOfWisdom:
         name: Kapelusz wiedzy
       mosquitoNethat:
-        name: 'Kapelusz z siatką '
+        name: 'Kapelusz z siatką'
       protectiveEarmuffs:
         name: Nauszniki ochronne
       recipeBook:
@@ -373,23 +505,126 @@ singulars:
         name: Ciepła Kurtka
       waterproofPants:
         name: Wodoodporne spodnie
+    achievements:
+      ringOfHomesickness:
+        name: Pierścień Nostalgii
+        desc: Ten pierścień przypomina ci, że nie ma nic lepszego niż dom.
+      amuletOfLightness:
+        name: Amulet Lekkości
+        desc: Ten amulet emanuje mocnym światłem i wypełnia cię nadzieją, nawet w
+          najciemniejszych miejscach.
+      axeOfDestruction:
+        name: Topór Zniszczenia
+        desc: Ostrze tego topora jest w kształcie paszczy gotowej pożerać drewno.
+      shoesOfEscape:
+        name: Kapcie Ucieczki
+        desc: Te papucie pozwalają ci podróżować szybko, od czasu do czasu.
+      otherSock:
+        name: Inna Skarpeta
+        desc: Inna skarpeta, której Dobby nie dostał.
+      tinyBackpack:
+        name: Mały Plecak
+        desc: Zwykłej wielkości plecak, jeżeli jesteś dzieckiem.
+      shinyRing:
+        name: Lśniący Pierścień
+        desc: Nie jest to może najbardziej elegancki pierścień, ale na pewno lśni.
+      gemBracelet:
+        name: Bransoleta z Klejnotami
+        desc: Sześć kolorowych kamieni tworzy tę bransoletę.
+      pathfinder:
+        name: Poszukiwacz
+        desc: Dodana do tego naszyjnika jest mała mapa, która ukazuje najszybszą trasę.
+      runningVisor:
+        name: Czapka Biegacza
+        desc: Ta czerwona czapka z daszkiem chroni oczy przed słońcem, jednocześnie
+          pozwalając głowie chłodzić się przez górę.
+      rustySpyglass:
+        name: Zardzewiała Luneta
+        desc: Jest jakiś urok w starych i już mocno używanych instrumentach, takich
+          jak ta zardzewiała luneta.
+      pantsOfHaste:
+        name: Gacie Szybkości
+        desc: Czas ruszyć wiadomo, co!
+      omniTool:
+        name: Wszystko-Rzędzie
+        desc: Te narzędzie może być zamontowane do twojego przedramienia, jest zaprojektowane
+          tak, by pomagać ci wielu czynnościach.
+      trashGrabber:
+        name: Zbieracz Śmieci
+      rockstarAmulet:
+        desc: Amulet, który jest albo kamieniem wyrzeźbionym jak gwiazda, albo gwiazdą
+          wyrzeźbioną, jak kamień.
+        name: Gwiazdokamienny Amulet
+      adventurersCape:
+        name: Płaszcz Poszukiwacza Przygód
+        desc: Ta gruba skórzana peleryna ochroni noszącego przed większością warunków
+          pogodowych. Posiada paski ułatwiające regulację.
   materials:
     carpentry:
       birchPlank:
         name: Brzozowa deska
+        desc: Gładka i jasna deska brzozowa uosabia prostotę i elegancję dzięki czystemu,
+          jasnemu wyglądowi drewna.
       maplePlank:
         name: Klonowa deska
+        desc: Estetyczna i przyciągająca, deska klonowa ma gładką, jasną powierzchnię,
+          dodając odrobinę wyrafinowania każdemu projektowi.
       oakPlank:
         name: Dębowa deska
+        desc: Ponadczasowy wybór do projektów związanych z obróbką drewna, wyróżniający
+          się bogatym, ziemistym odcieniem i wyrazistymi, skomplikowanymi wzorami
+          drewna.
       pinePlank:
         name: Sosnowa deska
+        desc: Wyróżniająca się ciepłymi, ziemistymi odcieniami deska sosnowa emanuje
+          rustykalnym pięknem dzięki naturalnemu wzorowi słojów drewna.
       sprucePlank:
         name: Świerkowa deska
+        desc: z wyraźną teksturą drewna, świerkowa deska emanuje elegancją z swoją
+          czysta i klasyczną prezentacją.
+      woodShaving:
+        name: Heblowanie Drewna
+        desc: Trochę średniej jakości ścinek drewna
+      woodFragment:
+        name: Ścinki Drewna
+        desc: Trochę wysokiej jakości ścinek drewna
+      coralPlank:
+        name: Koralowa deska
+        desc: Deska wykonana z największych koralowców. Jest wytrzymała zarówno na
+          powierzchni, jak i pod wodą.
+      teakPlank:
+        name: Tekowa deska
+        desc: Znana ze swojej trwałości i lśniącego, złotobrązowego odcienia, tekowa
+          deska jest najlepszym wyborem do tworzenia solidnych i pięknych kreacji.
+      willowPlank:
+        name: Wierzbowa deska
+        desc: Z delikatnym, bladym wyglądem i subtelnym wzorem, wierzbowa deska wnosi
+          nutę eterycznego piękna do projektów stolarskich.
+      mangrovePlank:
+        name: Namorzynowa deska
+        desc: Wytrzymała i odporna na pogodę, namorzynowe deski są idealnym wyborem
+          do stolarstwa na zewnątrz, łącząc wytrzymałość z wyjątkowym tropikalnym
+          urokiem.
+      woodScrap:
+        name: Ścinki Drewna
+        desc: kilka nisko jakościowych ścinek drewna
     cooking:
       milk:
         name: Mleko
+        desc: Prosto od krowy, kozy lub wielbłąda. Albo wyciśnięta z orzechów? Tylko
+          ty wiesz, gdzie to znalazłeś.
       salt:
         name: Sól
+        desc: <PLACEHOLDER>
+      honey:
+        name: Plaster Miodu
+        desc: Ten wielki plaster ocieka świeżutkim miodkiem.
+      carrot:
+        name: Marchewka
+        desc: Mówi się, że poprawia wzrok.
+      mushroom:
+        name: Grzyb
+        desc: Technicznie ta narośl jest warzywem.
     foraging:
       acidSapling:
         name: Kwaśne drzewko
@@ -485,6 +720,21 @@ singulars:
           kapustę morską.
       seaSpinach:
         name: Morski Szpinak
+        desc: Roślina jadalna, bardzo pożywna i smaczna. W ogóle nie smakuje jak zwykły
+          szpinak.
+      underwaterLotus:
+        name: Podwodny Lotos
+        desc: Roślina często wspominana w poezji syrentyjskiej. Znany ze swojego piękna
+          i wdzięku.
+      saltyHops:
+        name: Słony Chmiel
+        desc: Słony chmiel robi słony słód.
+      cucumber:
+        name: Ogórek
+        desc: Nie myśl sobie za dużo, jak można go użyć.
+      wheat:
+        desc: Pszenica.
+        name: Pszenica
     mining:
       coal:
         desc: Skromny i bezpretensjonalny, węgiel oznacza swoją praktyczność jako
@@ -631,15 +881,33 @@ singulars:
           i trwałością, niosąc sekrety miedzi i cyny połączonych przez wprawne ręce.
       copperBar:
         name: Sztabka miedzi
+        desc: Miedziana sztaba błyszczy czerwono-pomarańczowym połyskiem, odzwierciedlając
+          jej metaliczną wytrzymałość i wszechstronność w różnych zastosowaniach.
       farganiteBar:
         name: Sztabka Farganitu
+        desc: Jasnoniebieska sztaba.
       ironBar:
         name: Sztabka żelazu
         desc: Jest świadectwem siły wnętrza ziemi, ciężkiej i nieustępliwej.
       steelBar:
         name: Sztabka stalu
+        desc: Wykuta w ogniu determinacji stalowa sztaba błyszczy eterycznym blaskiem.
       tarsiliumBar:
         name: Sztabka tarsilu
+        desc: Sztaba tarsilium mieni się jak nocne niebo, a jej powierzchnię pokrywa
+          oleista konsystencja.
+      metalScrap:
+        name: Metalowe Resztki
+        desc: Nieco niskiej jakości resztek metalu
+      metalShaving:
+        name: Metalowe Opiłki
+        desc: Nieco średniej jakości metalowych opiłków
+      metalFragment:
+        name: Metalowe Resztki
+        desc: Nieco wysokiej jakości metalowych pozostałości
+      hydriliumBar:
+        name: Sztaba Hydrilium
+        desc: <Placeholder>
     woodcutting:
       birchLogs:
         desc: Gładkie i blade, drewno brzozowe emanuje elegancją i prostotą.
@@ -679,6 +947,59 @@ singulars:
       sturdyBranch:
         name: Solidna gałąź
         desc: Niezwykle mocna gałąź.
+    crafting:
+      rope:
+        name: Lina
+        desc: Zestaw survivalowy nie może być kompletny bez liny. Jest niezbędna do
+          zrobienia sobie podstawowych narzędzi.
+      hydrilium:
+        name: Hydrilium
+        desc: Ten dziwny materiał powstaje w wyniku połączenia skał wulkanicznych
+          i wodorostów w nadbrzeżnym warsztacie.
+      kelpRope:
+        name: Lina z Wodorostów
+        desc: Długie kawałki wodorostów połączone w linę.
+    misc:
+      trash:
+        name: Śmieci
+        desc: Bywa, że jak posprzątasz w domu bardzo dokładnie ostatnim śmieciem,
+          jaki został...
+      fishbone:
+        name: Rybie Kości
+        desc: Chociaż to trochę makabryczne i dość śmierdzące, to wygląda całkiem
+          fajnie.
+      seashell:
+        name: Skorupa Morska
+        desc: Prawdopodobnie sprzedana przez kogoś na plaży.
+      clam:
+        name: Małża
+        desc: Perłowobiała, idealnie nienaruszona. Piękny egzemplarz dla kolekcjonera.
+      pearls:
+        name: Perły
+        desc: Zestaw dosłownej perłowej bieli. Świetny materiał do wyrobu biżuterii.
+      glacierMap:
+        name: Tajemnicza Północna Mapa
+        desc: Przypomina nieco mapę północnej Jarvonii. Na czerwono została zaznaczona
+          ścieżka, która zdaje się prowadzić do lodowca i igloo.
+      crosswordPuzzle:
+        name: Stara Krzyżówka
+        desc: Gra oparta o znaki, dziewięć liter, rozpoczyna się od C.
+      fishingLine:
+        name: Linka Rybacka
+        desc: Odzyskując ją ze środowiska możliwe, że uratujesz życie jakiegoś zwierzaka.
+      unidentifiedRemains:
+        name: Niezidentyfikowane Szczątki
+        desc: Gildia Poszukiwaczy Przygód byłaby wdzięczna, jeżeli uda ci się zwrócić
+          im ten stos kości, może to pomóc im w rozwiązaniu otwartego zgłoszenia.
+      nameTag:
+        name: Nieśmiertelnik
+        desc: Nieśmiertelnik z zapisanym imieniem podróżnika, którego od dawna nikt
+          nie widział. Gildia Poszukiwaczy Przygód będzie nim zainteresowana.
+      adventurersPin:
+        name: Emaliowana Szpilka Poszukiwacza Przygód
+        desc: Przypinka z symbolem Gildii Poszukiwaczy Przygód. Jest trochę zardzewiała,
+          ale wciąż błyszcząca. Gildia Poszukiwaczy Przygód wyrazi wdzięczność za
+          jej zwrot.
   collectibles:
     fromActivity:
       veryOldWine:

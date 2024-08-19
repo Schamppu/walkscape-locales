@@ -3,11 +3,38 @@ singulars:
     chestFind:
       whileMainSkill:
         name: Niespodziewane Bogactwa
+        desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> kiedy <supp k="skill"/>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="chestFind"/>
+      whileMainSkillAndLocationKeyword:
+        desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> wykonując <supp k="skill"/> w <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: globalnie <stat s="chestFind"/>kiedy w<supp k="keyword"/> lokacji.
+      whileTraveling:
+        name: <PLACEHOLDER>
+        text: <stat s="chestFind"/> kiedy podróżujesz
+        desc: <PLACEHOLDER>
+      whenAchievementPoints:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="chestFind"/> kiedy <supp k="achievementPoints"/>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="chestFind"/>jeśli nosisz co najmniej <supp k="quantity"/>
+          <supp k="keyword"/>przedmiotów.
     workEfficiency:
       global:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
-        text: Globalna <stat s="workEfficiency"/>
+        text: Globalnie <stat s="workEfficiency"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -87,3 +114,232 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globalne <stat s="craftingOutcome"/>
+      whileLocationKeyword:
+        text: Globalne <stat s="craftingOutcome"/> będąc w <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="craftingOutcome"/> wykonując <supp k="skill"/> w <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> wykonując <supp k="skill"/>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="craftingOutcome"/> mając na sobie przynajmniej <supp
+          k="quantity"/> <supp k="keyword"/>.
+    doubleAction:
+      whileMainSkillAndLocationKeyword:
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> kiedy<supp k="skill"/> w <supp k="keyword"/>lokalizacji.
+        name: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="doubleAction"/>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> kiedy <supp k="skill"/>
+      whileTraveling:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> podczas podróży
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="doubleAction"/>, jeśli nosisz co najmniej <supp k="quantity"/>
+          <supp k="keyword"/> przedmiotów.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="doubleAction"/> kiedy w <supp k="keyword"/>lokalizacji.
+    doubleRewards:
+      whileMainSkill:
+        text: <stat s="doubleRewards"/> kiedy <supp k="skill"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whenKeywordSetBonus:
+        text: Globalnie <stat s="doubleRewards"/> jeśli nosisz co najmniej <supp k="quantity"/>
+          <supp k="keyword"/> przedmiotów.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="doubleRewards"/>
+      whenAchievementPoints:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="doubleRewards"/>, gdy <supp k="achievementPoints"/>
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleRewards"/> kiedy <supp k="skill"/> w <supp k="keyword"/>lokacji.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="doubleRewards"/> kiedy w <supp k="keyword"/>lokacji.
+    experience:
+      globalSkillXp:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: Globalnie <stat s="bonusExperience"/> do <supp k="skill"/>
+      whileMainSkill:
+        text: <stat s="bonusExperience"/> kiedy <supp k="skill"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> kiedy <supp k="skill"/> w <supp k="keyword"/>
+          lokacji.
+        name: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="bonusExperience"/>
+      whileTraveling:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> podczas podróży
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="bonusExperience"/> kiedy w <supp k="keyword"/>lokacji.
+    stepsRequired:
+      whileMainSkill:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> kiedy <supp k="skill"/>
+      whenKeywordSetBonus:
+        text: Globalnie <stat s="stepsRequired"/>, jeśli masz na sobie co najmniej
+          <supp k="quantity"/> <supp k="keyword"/> przedmiotów.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="stepsRequired"/>
+      whileTraveling:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> podczas podróży
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> kiedy <supp k="skill"/> w <supp k="keyword"/>lokacji.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="stepsRequired"/> kiedy w <supp k="keyword"/> lokacji.
+    noMaterialsConsumed:
+      global:
+        text: Globalnie <stat s="noMaterialsConsumed"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="noMaterialsConsumed"/> kiedy <supp k="skill"/> w <supp k="keyword"/>
+          lokacji.
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+      whileTraveling:
+        text: <stat s="noMaterialsConsumed"/> podczas podróży
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> kiedy <supp k="skill"/>
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="noMaterialsConsumed"/> kiedy w <supp k="keyword"/>
+          lokacji.
+    skillLevel:
+      whileMainSkill:
+        text: <stat s="skillLevel"/> poziom kiedy <supp k="skill"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="skillLevel"/> poziom
+      whileTraveling:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="skillLevel"/> poziom podczas podróży
+    rollSpecialTable:
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="rollSpecialTable"/> kiedy <supp k="skill"/>
+    travelingDistance:
+      whileTraveling:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="travelingDistance"/>
+    inventorySpace:
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="inventorySpace"/>
+  special:
+    findBirdNests:
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="findBirdNests">szansa na znalezienie ptasich gniazd</stat>
+          kiedy <supp k="skill"/> w <supp k="keyword"/>lokacji.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileWoodcutting:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findBirdNests">szansa na znalezienie ptasich gniazd</stat>
+          kiedy <supp k="skill"/>
+    findCollectibles:
+      whenKeywordSetBonus:
+        text: Globalnie <stat s="findCollectibles">szansa na znalezienie znajdziek</stat>,
+          jeśli masz na sobie co najmniej <supp k="quantity"/> <supp k="keyword"/>
+          przedmiotów.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileLocationKeyword:
+        text: Globalnie <stat s="findCollectibles"/> kiedy w <supp k="keyword"/> lokacji.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="findCollectibles">szansa na znalezienie znajdziek</stat>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> kiedy <supp k="skill"/>
+      whenAchievementPoints:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globalnie <stat s="findCollectibles">szansa na znalezienie znajdziek</stat>
+          kiedy <supp k="achievementPoints"/>
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> kiedy <supp k="skill"/> w <supp k="keyword"/>lokacji.
+    findGems:
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="findGems">szansa na znalezienie ptasich gniazd</stat> kiedy
+          <supp k="skill"/> w <supp k="keyword"/>lokacji.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMining:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findGems">szansa na znalezienie klejnotów</stat> kiedy <supp
+          k="skill"/>
+  custom:
+    gainAdventurersGuildToken:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Globalnie <stat>szansa na znalezienie</stat> <hl>1</hl> <item id="item-adventurer's_guild_token-dad84ad7-050a-4ec2-9bc7-7f2dae5c4a08"
+        />

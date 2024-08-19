@@ -187,8 +187,10 @@ singulars:
           name: Farganitstiefel
         sword:
           desc: Ein blaues Schwert.
+          name: Farganitschwert
         shield:
           desc: Ein blauer Schild.
+          name: Farganitschild
       iron:
         chest:
           desc: Es agiert als ein unnachgiebiges Bollwerk gegen Gefahr, und schützt
@@ -274,8 +276,10 @@ singulars:
           name: Tarsiliumstiefel
         sword:
           desc: Ein schwarzes Schwert.
+          name: Tarsiliumschwert
         shield:
           desc: Ein schwarzer Schild.
+          name: Tarsiliumschild
       basic:
         woodenSword:
           name: Holzschwert
@@ -316,6 +320,16 @@ singulars:
           desc: Diese fortgeschrittenen Angel soll vom professionellen Fischern benutzt
             werden.
           name: Fortgeschrittenen Angel
+        coralFishingSpear:
+          name: Korallenharpune
+          desc: Diese Harpune ist aus Korallen und Hydrilium gefertigt. Sie hat mehrere
+            Spitzen, was das Aufspiessen der Fische erleichtert.
+        lobsterPot:
+          name: Hummerreuse
+          desc: Leg sie ins Meer und der Hummer ist drin.
+        tidalLure:
+          name: Gezeitenköder
+          desc: Der Köder sieht aus wie ein Strudel. Sehr effektiv, um Fische anzulocken.
       mining:
         basicPickaxe:
           desc: Die gemeine Spitzhacke, ein bescheidenes Werkzeug einfacher Bergmänner.
@@ -344,18 +358,21 @@ singulars:
         tarsiliumPickaxe:
           desc: Eine schwarze Spitzhacke.
           name: Tarsiliumspitzhacke
+        hydriliumPickaxe:
+          name: Hydriliumspitzhacke
+          desc: Eine Spitzhacke aus dem seltenen Unterwassermaterial Hydrilium.
       woodcutting:
         basicHatchet:
-          desc: Die gemeine Axt, ein bescheidenes Werkzeug einfacher Holzfäller. Kaum
-            mehr als ein Stock, ein Stein, und eine Schnur, die das Ganze  zusammenhält.
-          name: Grundlegende Axt
+          desc: Das einfache Beil, ein bescheidenes Werkzeug einfacher Holzfäller.
+            Kaum mehr als ein Stock, ein Stein, und eine Schnur, die das Ganze zusammenhält.
+          name: Einfaches Beil
         copperHatchet:
           desc: Zerbrechlich und ziemlich leicht zum Holzfällen, aber erledigt die
             Arbeit.
           name: Kupferbeil
         farganiteHatchet:
           desc: 'Eine perfekte Spiegelung der Farbtöne des Himmels im Laufe des Tages,
-            eine seltene Axt eben. '
+            eine seltene Axt eben.'
           name: Farganitbeil
         ironHatchet:
           desc: Mit ihrer schweren Klinge dient sie als treuer Partner diejeniger,
@@ -371,6 +388,9 @@ singulars:
         bronzeHatchet:
           name: Bronzebeil
           desc: Gut für Anfänger die ein paar Bäume fällen wollen.
+        hydriliumHatchet:
+          name: Hydriliumbeil
+          desc: Ein Beil aus dem seltenen Material namens Hydrilium.
       miscellaneous:
         bagOfRocks:
           name: Tasche mit Steinen
@@ -378,6 +398,8 @@ singulars:
       foraging:
         stoneSickle:
           name: Einfache Sichel
+          desc: Ein einfaches Werkzeug um vom Reichtum der Natur zu ernten. Durch
+            die eher stumpfe Schneide wenig effizient.
         copperSickle:
           name: Kupfersichel
           desc: Bietet eine moderate Effizienz beim schneiden einfacher Pflanzen.
@@ -388,6 +410,9 @@ singulars:
           name: Stahlsichel
           desc: Stark und belastbar, bietet zuverlässige Leistung beim umfangreichen
             Sammeln.
+        hydriliumSickle:
+          name: Hydrilium Sichel
+          desc: Eine Sichel aus dem seltenen Unterwassermaterial Hydrilium.
   looted:
     equipmentSets:
       dimensional:
@@ -467,10 +492,70 @@ singulars:
           name: Hackbeil
         simplePan:
           name: Einfache Pfanne
+          desc: Diese Pfanne ist zwar nicht antihaftbeschichtet, aber rettet dich
+            zur Not.
         measuringSpoonsNecklace:
           name: Messlöffelhalzkette
           desc: Drei Messlöffel immer an deiner Seite. Keine Spülmaschine ist mehr
             sicher.
+        chefsLegApron:
+          desc: Eine Schürze, die über dem Bein getragen wird, mit einer Tasche für
+            Küchenutensilien.
+          name: Beinschürze für Köche
+        recipeBook:
+          desc: Dieses Kochbuch enthält Hunderte von Rezepten für alle erdenklichen
+            Küchen, von der jarvonischen bis zur rid-raddakischen.
+          name: Kochbuch
+        florasSilverSpoon:
+          desc: Ein besonderer Silberlöffel. Flora muss ihn eines Tages in der Küche
+            verloren haben. Jetzt gehört er dir!
+          name: Floras Silberlöffel
+        dullKnife:
+          desc: Nichts ist so gefährlich wie ein stumpfes Messer. Heißt es jedenfalls.
+          name: Stumpfes Messer
+        northernSpices:
+          desc: Das kräftige Aroma dieser Gewürze lässt deinen Magen so laut knurren,
+            dass du auf einer Schleichmission erledigt wärst.
+          name: Gewürze aus dem Norden
+        eberhartCorkscrew:
+          name: Eberhart Korkenzieher
+          desc: Dieser klassische Korkenzieher ist von einer Qualität, die weit über
+            der liegt, die du sonst kennst. Der Griff ist ergonomisch und aus exquisitem
+            Holz und die Spirale ist aus rostfreiem Stahl mit einer sehr präzisen
+            Verarbeitung.
+        ovenMittens:
+          name: Ofenhandschuhe
+          desc: Schön warm, aber nicht so warm wie die Dinge, für die du sie brauchen
+            wirst.
+        sharpKnife:
+          name: Scharfes Messer
+          desc: Es hat einen rustikalen Holzgriff und seine Klinge scheint kürzlich
+            geschärft worden zu sein.
+        cuttingBoard:
+          name: Schneidebrett
+          desc: Ein quadratisches Holzbrett zum Zerkleinern von Fleisch, Obst und
+            Gemüse.
+        largePot:
+          name: Großer Topf
+          desc: Aus Stahl und groß genug Essen für ein Dutzend Leute zuzubereiten.
+        nonSlipShoes:
+          name: Anti-Rutsch-Schuhe
+          desc: Nicht gerade hip, bieten aber mehr Halt, so dass man weniger oft ausrutscht.
+        sturdyWhisk:
+          name: Stabiler Schneebesen
+          desc: Seine Stahldrähte sind fest mit dem griffigen Griff verbunden. Du
+            könntest Tausende von Eiern damit zu Schnee schlagen.
+        flippySpatula:
+          name: Wendiger Pfannenwender
+          desc: Nicht irgendein Pfannenwender, ein wendiger Pfannenwender. Wieviele
+            Umdrehungen schaffst du in einem Wurf?
+        rottenEggplant:
+          name: Verfaulte Aubergine (Testobjekt)
+          desc: Nur für Tester. Verleiht unbegrenzte Macht.
+        lavaCookingPan:
+          name: Lavapfanne
+          desc: Diese Pfanne wurde in einem Vulkan geschmiedet. Die Lava, aus der
+            sie gemacht ist, sorgt dafür, dass sie immer heiß und kochbereit ist.
       crafting:
         candlehat:
           desc: Es ist ein Hut mit einer angebrachten Kerze. Was kann man sich mehr
@@ -509,6 +594,87 @@ singulars:
             ferner Länder, und verspricht Geschichten von waghalsigen Eskapaden überall,
             wo man ihn trägt.
           name: Hut mit Feder
+        blueIceSickle:
+          desc: Diese Sichel ist aus Eis gefertigt und hat eine intensive blaue Farbe,
+            wie der klare Himmel an einem Sommertag. Sie schneidet wie die besten
+            Sicheln, aber sie kühlt die Hand, wenn man sie benutzt, obwohl sie nicht
+            schmilzt. Was hatte eine Sichel auf einem Gletscher zu suchen?
+          name: Blaue Eissichel
+        waterproofBoots:
+          desc: Gummistiefel, so gelb wie ein Kanarienvogel, die deine Socken trocken
+            halten. Und es gibt nicht viele Dinge, die sich schlimmer anfühlen als
+            nasse Socken.
+          name: Gummistiefel
+        bigBasket:
+          name: Großer Korb
+          desc: Wunderschön aus Weide gefertigt. Was auch immer du sammelst, sollte
+            hier locker rein passen.
+        wildernessShirt:
+          name: Wildnishemd
+          desc: Ein bequemes grünes Hemd, kombiniert mit einem roten Halstuch, das
+            dir das Gefühl gibt, eins mit der Natur zu sein.
+        sharpMachete:
+          desc: Die rasiermesserscharfe Klinge macht das Navigieren durch dichtes
+            Laub zu einem Spaziergang im Park.
+          name: Scharfe Machete
+        longSpade:
+          desc: Ein schwerer Spaten mit stabilem Holzgriff und rostfreiem Stahlblatt.
+            Damit kann man sicher ein großes Loch graben.
+          name: Langer Spaten
+        foragingShirt:
+          desc: Hält dich beim Sammeln in heißen Umgebungen kühl, in kalten Umgebungen
+            jedoch warm.
+          name: Erntehemd
+        compassNecklace:
+          desc: Ein funktionierender Kompass an einer Schnur, die du dir um den Hals
+            binden kannst. Wenn du weißt, wie man ihn benutzt, findest du immer den
+            Weg nach Hause.
+          name: Kompasshalskette
+        simpleBugCatchingNet:
+          desc: Nix besonderes, aber es fängt Käfer.
+          name: Einfaches Schmetterlingsnetz
+        wildernessPants:
+          name: Wildnishose
+          desc: Eine grüne Hose, die darauf ausgelegt ist, auf allen Vieren durch
+            die Natur zu stöbern.
+        foragingShorts:
+          name: Ernteshorts
+          desc: Strapazierfähige und bequeme Shorts, perfekt um in jedwedem Terrain
+            sammeln zu gehen.
+        camouflageCape:
+          name: Tarnumhang
+          desc: Man könnte ihn auch als Unsichtbarkeitsumhang bezeichnen, denn er
+            macht dich praktisch unsichtbar, während du auf der Suche nach Schätzen
+            umherstreifst.
+        dullMachete:
+          name: Stumpfe Machete
+          desc: Die Klinge ist in keinem guten Zustand, als ob damit schon ganze Wälder
+            abgeholzt worden wären.
+        pointyShears:
+          name: Spitze Gartenschere
+          desc: Mit dieser findest du vielleicht auch Schätze, die völlig von Sträuchern
+            oder anderem Laub überwuchert wurden.
+        nonWaterproofBoots:
+          name: Nicht wasserdichte Schuhe
+          desc: Sie bieten zwar einen gewissen Schutz vor Wind und unwegsamem Gelände
+            beim Sammeln, aber ich würde nicht darauf wetten, dass deine Füße auch
+            trocken bleiben.
+        gardeningGloves:
+          name: Gartenhandschuhe
+          desc: Diese griffigen, wasserdichten Handschuhe sind ideal für alle Gartenarbeiten
+            wie Pflanzen, Gießen, Zurückschneiden und Unkrautjäten.
+        pickersGloves:
+          name: Pflückerhandschuhe
+          desc: Bequeme Lederhandschuhe, die deine Hände vor Dornen und anderen natürlichen
+            Abwehrsystemen schützen, wenn du nach im Laub versteckten Schätzen suchst.
+        smallSack:
+          name: Kleiner Beutel
+          desc: Ein kleiner Jutebeutel. Wenn du ihn trägst kannst du einen zusätzlichen
+            Gegenstand unterbringen.
+        wildernessGuideBook:
+          name: Wildnishandbuch
+          desc: Randvoll mit Tipps zum Überleben in der Wildnis. Tiere, Pflanzen,
+            Wasserquellen etc.
       mining:
         miningHelm:
           desc: Dieser Bergbaumhelm, ein Fanal in den Tiefen der Erde, stahlt ein
@@ -519,6 +685,15 @@ singulars:
             daran versuchen, vergrabene Geheimnisse zu bergen und sich gegen die daraus
             resultierenden Gefahren zu schützen.
           name: Schaufelaxt
+        simpleGoldPan:
+          desc: Diese Pfanne erlaubt es dir Gold in Flüssen zu finden.
+          name: Einfache Goldwäscherpfanne
+        simpleMagnet:
+          name: Einfacher Magnet
+          desc: Du kannst damit fischen, aber erwarte bitte keine Fische.
+        steelToeBoots:
+          name: Stahlkappenstiefel
+          desc: An diesen Stiefeln entgleisen die Loren, statt deine Zehen zu zerquetschen.
       smithing:
         smeltingGoggles:
           desc: Ein Augenschutz der es erlaubt, sich am gleißenden Glanz geschmolzenen
@@ -629,12 +804,15 @@ singulars:
         name: Schuhe der Geschwindigkeit
       adventurersHat:
         name: Abenteurerhut
+        desc: Dieser lederne Eimerhut schützt Dich vor Sonne, Wind und Regen.
       adventurersPants:
         name: Abenteurerhose
         desc: Diese zähen Lederhosen haben verschiedene Gurte, für den Nutzen aber
           auch weil sie modisch sind.
       adventurersBoots:
         name: Abenteurerschuhe
+        desc: Diese robusten Stiefel sind für starke Beanspruchung und widrige Wetterbedingungen
+          ausgelegt.
       adventurersCape:
         name: Abenteurerumhang
         desc: Dieser zähe Lederumhang wird seinen Träger vor dem meisten Wetter schützen.
@@ -656,6 +834,8 @@ singulars:
         desc: Sechs farbige Edelsteine bilden ein Armband.
       rustySpyglass:
         name: Rostiges Fernglas
+        desc: Ein gut benutztes Instrument, wie dieses rostige Fernrohr, hat einen
+          gewissen Charme.
       pantsOfHaste:
         name: Hose der Hast
         desc: Bruder muss los!
@@ -665,13 +845,59 @@ singulars:
           worden um dir auf Kommando bei verschiedenen Aufgaben zu helfen.
       treasureHunterPants:
         name: Schatzjägerhose
+        desc: Diese eng anliegende Lederhose betont Deine Beinmuskeln.
       jugglingBalls:
         name: Jonglierbälle
         desc: Drei mehrfarbige Bälle, gefüllt mit Getreide sind perfekt zum Jonglieren.
       travelersKit:
         desc: Dieser Koffer ist gefüllt mit allem was für jede Reise essenziell ist.
+        name: Reiseausrüstung
       absorbingAmulet:
         name: Absorbierendes Amulett
+        desc: Dieses aus antikem Metall gefertigte Amulett ist dafür bekannt feine
+          Dinge anzuziehen.
+      capeOfHalfAchiever:
+        name: Umhang des Halberfolgreichen
+        desc: Dieser prachtvolle blaue Umhang repräsentiert jemanden, der fest entschlossen
+          ist Großes zu erreichen.
+      capeOfAchiever:
+        name: Umhang des Erfolgreichen
+        desc: Dieser rosenfarbene Umhang weckt das Interesse aller, die ihn zu sehen
+          bekommen. Der Besitzer des Umhangs hat erreicht wovon andere nur träumen
+          können.
+      runningVisor:
+        name: Rennvisier
+        desc: Dieses rote Visier schützt Deine Augen vor der Sonne und erlaubt es
+          Dir gleichzeitig einen kühlen Kopf zu bewahren.
+      trashGrabber:
+        name: Müllgreifer
+        desc: Das Design dieses verlängerten Instruments erleichtert das Aufsammeln
+          von Müll, ohne dass man sich bücken muss.
+      trekkingPoles:
+        name: Trekkingstöcke
+        desc: Diese Stöcke helfen dabei, das Gleichgewicht zu halten und unwegsames
+          Gelände zu durchqueren.
+      conservationistHat:
+        name: Naturschützerhut
+        desc: Dieser blaue Hut bietet einen guten Schutz vor den Elementen.
+      conservationistShirt:
+        name: Naturschützerhemd
+        desc: Dieses komfortable Hemd hat viele Taschen um Entdeckungen zu verstauen.
+      conservationistShorts:
+        name: Naturschützershorts
+        desc: Diese Shorts bieten viel Bewegungsfreiheit und haben große Taschen für
+          Werkzeuge.
+      conservationistBoots:
+        name: Naturschützerstiefel
+        desc: Diese bequemen blauen Stiefel sind auch langlebig.
+      cursedAwl:
+        name: Verfluchte Ahle
+        desc: Diese Ahle stößt bei Gebrauch Rauch in blauen und violetten Farbtönen
+          aus.
+      rockstarAmulet:
+        name: Stern-stein-amulett
+        desc: Amulett, das entweder ein sternförmiger Stein oder ein steinförmiger
+          Stern ist.
   materials:
     carpentry:
       birchPlank:
@@ -696,20 +922,30 @@ singulars:
           klaren und klassischen Erscheinungsbild ein Gefühl von Eleganz.
         name: Fichtenbrett
       teakPlank:
-        name: Teak Planken
+        name: Teakbretter
+        desc: Bekannt für ihre Haltbarkeit und glänzend goldbraunen Farbton sind Teakbretter
+          eine ausgezeichnete Wahl für die Herstellung schöner und robuster Gegenstände.
       woodScrap:
-        desc: Einige Holzreste mit niedriger Qualität
-        name: Holzschrott
+        desc: Kleine Holzstücke minderer Qualität
+        name: Holzabfälle
       willowPlank:
-        name: Weiden Planke
+        name: Weidenbrett
+        desc: Zart und bleich mit subtiler Maserung, gibt das Weidenbrett deinen Schreinerarbeiten
+          einen Hauch himmlischer Schönheit.
       mangrovePlank:
-        name: Mangroven Planke
+        name: Mangrovenbrett
+        desc: Widerstandsfähig und wetterbeständig sind Mangrovenbretter ideal für
+          den Außenbereich und vereinen Stärke mit tropischem Flair.
       woodShaving:
-        name: ''
+        name: 'Holzspäne'
+        desc: Einige Holzabfälle mittlerer Qualität
       coralPlank:
-        name: Korallenplanke
-        desc: Eine Planke, gemacht aus den größten Korallen. Es ist stabil, sowohl
-          unter als auch über Wasser.
+        name: Korallenbrett
+        desc: Aus den größten Korallen gefertigtes Brett. Es ist stabil, sowohl unter
+          als auch über Wasser.
+      woodFragment:
+        name: Holzstücke
+        desc: Einige qualitativ hochwertige Holzstücke
     cooking:
       milk:
         desc: Direkt von der Kuh, einer Ziege oder einem Kamel. Oder aus ein paar
@@ -743,7 +979,7 @@ singulars:
           Gefühl vermittelt.
         name: Baumwolle
       deathsToll:
-        desc: Seht zwar verlockend aus, würde ich aber nicht in dieser Form verzehren.
+        desc: Sieht zwar verlockend aus, würde ich aber nicht in dieser Form verzehren.
         name: Tribut des Todes
       flax:
         desc: Zarte blaue Blüten, die kräftige Fäden enthalten. Perfekt für die Leinenproduktion.
@@ -808,15 +1044,41 @@ singulars:
         name: Hölzerner Stock
       berries:
         name: Beeren
+        desc: Zur Not kannst Du sie verzehren, oder Du verwendest sie als Zutat in
+          Deinen Kochkreationen.
       underwaterLotus:
-        desc: Eine Pflanze die oft in Syrenthianischer Poesie erwähnt wird. Berühmt
-          für ihre Schönheit und Anmut.
+        desc: Eine Pflanze die oft in Syrenthischer Poesie erwähnt wird. Berühmt für
+          ihre Schönheit und Anmut.
         name: Unterwasserlotus
       cucumber:
         name: Gurke
+        desc: Wie teuer sind die in deiner Ecke der Welt?
       wheat:
         name: Weizen
         desc: Weizen.
+      sweetKelp:
+        desc: Süßer Tang, das Zuckerrohr der Meere, wird hauptsächlich zur Produktion
+          des alkoholhaltigen Getränks Salzrum verwendet.
+        name: Süßer Tang
+      kelp:
+        name: Tang
+        desc: Mit Tang lässt sich eine Menge machen, sei es um stabile aber elastische
+          Ausrüstung herzustellen oder um köstliche Unterwassergerichte zu kochen.
+      hardenedKelp:
+        name: Gehärteter Tang
+        desc: Mittels verschiedener Techniken lässt sich normaler Tang härten und
+          wird so zu einem begehrten Material.
+      seaCabbage:
+        name: Meerkohl
+        desc: Ein beliebtes Nahrungsmittel, das unter Wasser wächst. Die Syrenthier
+          stellen daraus gedörrten Seekohl her.
+      seaSpinach:
+        name: Meerspinat
+        desc: Eine essbare Pflanze, ausgesprochen lecker und nahrhaft. Schmeckt überhaupt
+          nicht wie normaler Spinat.
+      saltyHops:
+        name: Salzhopfen
+        desc: Salzhopfen wird zu Salzmalz.
     mining:
       coal:
         desc: Das bescheidene und unprätentiöse Kohleerz steht für seine Zweckmäßigkeit
@@ -844,6 +1106,8 @@ singulars:
         name: Zinnerz
       saltCrystal:
         name: Salzkristall
+        desc: Fein gemahlen vielfältig nutzbar, haben sie in ihrer Ursprungsform wunderbar
+          komplexe Strukturen.
       ruby:
         desc: Dieser rote Edelstein ist sehr beliebt bei den Adeligen. Die rote Farbe
           repräsentiert Macht und Leidenschaft.
@@ -862,6 +1126,8 @@ singulars:
           von Schmuck genutzt wird.
       starPearl:
         name: Sternenperle
+        desc: Zu sehen in dem berühmten Gemälde \“Mädchen mit einem Sternenperlenohrring\"
+          eines wallisischen Malers.
       opal:
         name: Opal
         desc: Wunderschöne schillernde Farben erscheinen auf ihrer Oberfläche, wenn
@@ -878,11 +1144,21 @@ singulars:
         name: Großer Stein
         desc: Ein Stein, der größer ist als normal.
       volcanicRock:
-        name: Vulkanstein
+        name: Vulkangestein
         desc: Dieser Stein ist das Überbleibsel eines uralten Vulkans der seit tausenden
           Jahren unter Wasser liegt.
       volcanicAsh:
         name: Vulkanasche
+        desc: Dieser Stein ist das Überbleibsel eines uralten Vulkans der seit tausenden
+          Jahren unter Wasser liegt.
+      ethernite:
+        desc: Ein wertvoller glasig-purpurner Edelstein. Beim Betrachten läuft es
+          einem kalt über den Rücken, aber es ist unglaublich schwer den Blick abzuwenden.
+        name: Äthernit
+      wrentmarine:
+        name: Wrentmarine
+        desc: Wenn man ihn bewegt, sieht es so aus, als würde das Wasser auf der Oberfläche
+          dieses ozeanblauen Steins von einer Seite zur anderen fließen.
     rawFish:
       rawCarp:
         desc: Der milde Geschmack des Karpfens eignet sich gut für verschiedene kulinarische
@@ -936,10 +1212,13 @@ singulars:
       rawStingray:
         desc: Ein Fisch in Pfannkuchenform, welche er nutzt um durch das Wasser zu
           gleiten.
+        name: Roher Stachelrochen
       rawSwordfish:
         name: Roher Schwertfisch
       rawShark:
         name: Roher Hai
+      rawAnglerfish:
+        name: Roher Seeteufel
     smithing:
       bronzeBar:
         desc: Der Bronzebarren, ein Relikt aus den Schmieden der Zwerge, strahlt rustikalen
@@ -965,6 +1244,17 @@ singulars:
         desc: Der Tarsilium-Barren schimmert wie der Nachthimmel, eine ölige Textur
           überzieht seine Oberfläche.
         name: Tarsiliumbarren
+      metalScrap:
+        name: Metallabfälle
+        desc: Einige Metallstücke minderer Qualität
+      metalShaving:
+        name: Metallspäne
+        desc: Einige Metallstücke mittlerer Qualität
+      metalFragment:
+        name: Metallstücke
+        desc: Einige hochwertige Metallstücke
+      hydriliumBar:
+        name: Hydriliumbarren
     woodcutting:
       birchLogs:
         desc: Die glatten und hellen Birkenstämme strahlen eine elegante Schlichtheit
@@ -991,6 +1281,8 @@ singulars:
         desc: Diese erdigen Stämme sind sehr leicht und daher angenehm zu verarbeiten.
       mangroveLogs:
         name: Mangrovenstämme
+        desc: Sie sind noch feucht von der Umgebung, in der sie einst wuchsen, und
+          haben einen schönen Schimmer.
       sturdyBranch:
         name: Stabiler Ast
         desc: Ein ungewöhnlich kräftiger Ast.
@@ -1010,6 +1302,7 @@ singulars:
       adventurersPin:
         desc: Ein Anstecker mit dem Symbol der Abenteurer Gilde. Ein bisschen rostig,
           aber immernoch glänzend. Die Abenteurer Gilde würde die Rückgabe schätzen.
+        name: Emailleanstecknadel der Abenteurer
       unidentifiedRemains:
         desc: Die Abenteurer Gilde würde es schätzen, wenn du diesen Knochenhaufen
           zurückbringst, es könnte dabei helfen einen offenen Fall zu lösen.
@@ -1021,6 +1314,7 @@ singulars:
       fishbone:
         desc: Auch wenn es irgendwie grausam ist und stinkt, sieht es immernoch cool
           aus.
+        name: Fischgräten
       seashell:
         name: Muschel
         desc: Wird wahrscheinlich von jemandem am Strand verkauft.
@@ -1030,10 +1324,13 @@ singulars:
           Sammler.
       pearls:
         name: Perlen
+        desc: Buchstäblich perlweiß. Grandios zur Schmuckherstellung.
       crosswordPuzzle:
         name: Altes Kreuzworträtsel
+        desc: Wörterspiel, 15 Buchstaben, beginnt mit K.
       fishingLine:
         desc: Dies aus der Natur zu holen hat vielleicht ein Tierleben gerettet.
+        name: Angelschnur
       nameTag:
         name: Namensschild
         desc: Ein Namensschild mit dem Namen eines lange Verlorenen Abenteurers darauf.
@@ -1043,3 +1340,14 @@ singulars:
         name: Seil
         desc: Eine Überlebensausrüstung ist nichts ohne etwas Seil. Essenziell um
           ein paar einfache Werkzeuge zu machen.
+      hydrilium:
+        name: Hydrilium
+        desc: Dieses seltsame Material lässt sich durch die Verbindung von Vulkangestein
+          und Tang in der Gezeitenwerkstatt herstellen.
+      kelpRope:
+        name: Tangseil
+        desc: Hier wurden lange Tangstränge zu einem Seil verflochten.
+  collectibles:
+    visas:
+      jarvonianLetterOfPassage:
+        name: Jarvonischer Passierschein
