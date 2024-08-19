@@ -1,6 +1,6 @@
 maps:
   items:
-    qualities(map):
+    qualities:
       '0': Normal
       '1': Bra
       '2': Flott
@@ -8,25 +8,25 @@ maps:
         Utmerket
       '4': Perfekt
       '5': Evig
-    rarities(map):
+    rarities:
       '0': Vanlig
       '1': Uvanlig
       '2': Sjelden
       '3': Episk
       '4': Legendarisk
       '5': Eterisk
-  realmDescriptions(map):
+  realmDescriptions:
     braemercia: Braemercia
     ethereal: Eterisk
     ewerethien: Ewerethien
     painfulislands: Smerteøyene
     ridraddak: Rid Raddak
-    "jarvonia": ''
-    "gdte": ''
-    "wallisia": ''
-    "galeforge": ''
-    "wrentmark": ''
-  realmMottos(map):
+    'jarvonia': ''
+    'gdte': ''
+    'wallisia': ''
+    'galeforge': ''
+    'wrentmark': ''
+  realmMottos:
     braemercia: Braemercia
     ethereal: Eterisk
     ewerethien: Ewerethien
@@ -38,7 +38,7 @@ maps:
       Rid Raddak
     wallisia: Der avlingene blir høye, gjør vi det også
     wrentmark: Gullet vårt brenner sterkere enn solen
-  realms(map):
+  realms:
     braemercia: Braemercia
     ethereal: Eterisk
     ewerethien: Ewerethien
@@ -49,8 +49,8 @@ maps:
     ridraddak: Rid Raddak
     wallisia: Wallisia
     wrentmark: Wrentmark
-  raceDescriptions(map):
-    "human": ''
+  raceDescriptions:
+    'human': ''
 singulars:
   items:
     gearTypes:
@@ -87,7 +87,8 @@ singulars:
     placeholder: Plassholder
   requirements:
     skills:
-      level: Krever <skill skill skill="${skill}" level="${level}"" isRequirement="true"/>
+      level:
+        Krever <skill skill skill="${skill}" level="${level}"" isRequirement="true"/>
         nivå.
   intro:
     welcome: ''

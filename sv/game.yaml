@@ -1,21 +1,22 @@
 maps:
   items:
-    qualities(map):
+    qualities:
       '0': Normal
       '1': Bra
       '2': Väldigt bra
       '3': Utmärkt
       '4': Perfekt
       '5': Evig
-    rarities(map):
+    rarities:
       '0': Vanlig
       '1': Ovanlig
       '2': Sällsynt
       '3': Episkt
       '4': Legendarisk
       '5': Eterisk
-  raceDescriptions(map):
-    human: \t\t I den vidsträckta och förtrollade vidden <c>Arenum</c> har människorna
+  raceDescriptions:
+    human:
+      \t\t I den vidsträckta och förtrollade vidden <c>Arenum</c> har människorna
       gjort anspråk på <c>den västra kontinenten</c>. Dessa formidabla länder, klädda
       i <c>tämjd vildmark</c> och <c>majestätiska landskap</c>, har blivit den mänskliga
       civilisationens hjärtland.\n\n\t Men under ytan av skönhet och välstånd flödar
@@ -23,40 +24,45 @@ maps:
       om <c>stridigheter</c> och <c>konflikter</c>, där människan har utkämpat ständiga
       strider om dominans och makt. \Rivaliteter och fejder, gamla och nya, <c>har
       kastat skuggor över den västra kontinenten</c>.
-  realmDescriptions(map):
+  realmDescriptions:
     braemercia: Braemercia
     ethereal: Eterisk
     ewerethien: Ewerethien
-    galeforge: \Galeforge är en stad som präglas av <c>innovation och framsteg</c>,
+    galeforge:
+      \Galeforge är en stad som präglas av <c>innovation och framsteg</c>,
       erövrad av det mäktiga imperiet Wallisia. Inbäddat mellan Wallisien och <c>skärgården</c>
       är det en plats där teknik och industri blomstrar.\n\n\t\t Folket i Galeforge
       är <c>ambitiösa och drivna</c> och tänjer ständigt på gränserna för vad som
       är möjligt. Staden är en livlig metropol, <c>där fabrikerna sjuder av aktivitet</c>
       och gatorna kantas av köpmän som säljer de senaste innovationerna.
-    gdte: \Storhertigdömet Trellin-Erdwise, delat <c>i en aktuell kris</c>, är ett
+    gdte:
+      \Storhertigdömet Trellin-Erdwise, delat <c>i en aktuell kris</c>, är ett
       land med varierande naturliga <c>skönheter</c> och <c>utmaningar</c>.\n\n\t\t
       Träskmarkerna i Trellin och kusthamnarna i Erdwise är både källor till skönhet
       och fara. Folket i Storhertigdömet definieras av sin <c>stolthet och girighet</c>.
-    jarvonia: \Jarvonia, <c>ett land av is och mörker</c>, som styrs av ett mäktigt
+    jarvonia:
+      \Jarvonia, <c>ett land av is och mörker</c>, som styrs av ett mäktigt
       religiöst brödraskap, är ett oberoende rike med tåliga människor som förenas
       av sin orubbliga <c>tro</c> och <c>fasta beslutsamhet</c> att överleva.\n\n\t\t
       Trots de hårda vintrarna och isoleringen finner de styrka och skydd genom sin
       religion, deras <c>hjärtan brinner klart mot kylan</c>.
     painfulislands: Smärtsamma öarna
     ridraddak: Rid Raddak
-    wallisia: \Wallisien, ett land av överflöd och makt. <c>Kejserinnan</c>, ättling
+    wallisia:
+      \Wallisien, ett land av överflöd och makt. <c>Kejserinnan</c>, ättling
       till en stor krigare, leder en armé som har <c>erövrat kontinenten</c> och bara
       lämnat Jarvonia orört.\n\n\t\t De gröna gräsmarkerna är <c>hjärtat på hela kontinenten</c>
       och ger rikliga skördar samt resurser som driver <c>väldets</c> industriella
       och militära kapacitet. Imperiet har den största befolkningen på kontinenten,
       och folket är <c>stolta över sin styrka och makt</c>.
-    wrentmark: \Wrentmark är <c>ett rike gord av eld</c>, där den brännande solen
+    wrentmark:
+      \Wrentmark är <c>ett rike gord av eld</c>, där den brännande solen
       slår ner på <c>ökensanden</c>. Folket i Wrentmark är en <c>stolt och tålig skara</c>,
       som har klarat sig i denna hårda miljö i evigheter.\n\n\t\t Wrentmark är ett
       land med oanade rikedomar, där <c>ädelstenar och mineraler</c> bryts ur jorden
       och handlas över hela landet. Folket i Wrentmark är <c>mästarhandlare</c> och
       deras färdigheter har finslipats genom århundraden av handel.
-  realmMottos(map):
+  realmMottos:
     braemercia: Braemercia
     ethereal: Eterisk
     ewerethien: Ewerethien
@@ -67,7 +73,7 @@ maps:
     ridraddak: Rid Raddak
     wallisia: När växterna växer sig höga, gör vi det också
     wrentmark: Vårt guld brinner klarare än solen
-  realms(map):
+  realms:
     braemercia: Braemercia
     ethereal: Eterisk
     ewerethien: Ewerethien
@@ -113,7 +119,8 @@ singulars:
     placeholder: Platshållare
   requirements:
     skills:
-      level: Kräver <skill skill skill="${skill}" level="${level}"" isRequirement="true"/>
+      level:
+        Kräver <skill skill skill="${skill}" level="${level}"" isRequirement="true"/>
         nivå.
   intro:
     welcome: ''

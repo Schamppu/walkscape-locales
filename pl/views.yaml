@@ -1,58 +1,58 @@
 maps:
   achievements:
     phrases:
-      difficulty(map):
-        "0": Łatwy
-        "1": Normalny
-        "2": Trudny
-        "3": Ekstremalny
+      difficulty:
+        '0': Łatwy
+        '1': Normalny
+        '2': Trudny
+        '3': Ekstremalny
         'easy': Łatwy
         'normal': Normalny
         'hard': Trudny
         'extreme': Ekstremalny
-      difficultyTitle(map):
-        "0": Łatwe osiągnięcia
-        "1": Normalne osiągnięcia
-        "2": Trudne osiągnięcia
-        "3": Ekstremalne osiągnięcia
+      difficultyTitle:
+        '0': Łatwe osiągnięcia
+        '1': Normalne osiągnięcia
+        '2': Trudne osiągnięcia
+        '3': Ekstremalne osiągnięcia
         'easy': Łatwe Osiągnięcia
         'normal': Normalne Osiągnięcia
         'hard': Trudne Osiągnięcia
         'extreme': Ekstremalne Osiągnięcia
   character:
-    stepsTime(map):
+    stepsTime:
       'hourly': Kroków na godzinę
       'daily': Kroków dziennie
       'monthly': Kroków miesięcznie
   settings:
-    boolSettings(map):
+    boolSettings:
       'showRecipesRequirementsAreMet': Wymagania poziomu nie są spełnione
       'showRecipesServiceAreMet': Wymagania usług nie są spełnione
       'showRecipesMaterialsAreMet': Wymagania materiałów nie są spełnione
-    stepCountNotifications(map):
+    stepCountNotifications:
       'never': Nigdy
       'always': Zawsze
       'everyHundred': Co sto kroków
       'everyThousand': Co tysiąc kroków
       'everyTenThousand': Co 10 tysięcy kroków
-    languages(map):
+    languages:
       'en': English
       'fi': Suomi
       'de': Niemiecki
-    visibilitySettings(map):
+    visibilitySettings:
       'private': Prywatny
       'friends': Tylko Znajomi
       'public': Publiczny
-    notificationImportance(map):
+    notificationImportance:
       'high': Dźwięk i wibracje
       'urgent': Dźwięk, wibracje oraz notyfikacja na górnym pasku.
       'low': Brak dźwięku, wibracji i statusu w górnym pasku.
-    leaderboardFilter(map):
+    leaderboardFilter:
       'everyone': Wszyscy
       'friends': Znajomi
   characterCreation:
     phrases:
-      optionTypes(map):
+      optionTypes:
         'none': Brak
         'face': Twarz
         'body': Ciało
@@ -65,10 +65,10 @@ maps:
         'facepaint': Malowanie twarzy
         'backAccessorie': Akcesoria pleców
         'hair': Styl włosów
-      raceTypes(map):
+      raceTypes:
         'human': Człowiek
         'none': Brak
-      expressions(map):
+      expressions:
         'normal': Normalny
         'angry': Zły
         'laughing': Śmiejący
@@ -77,7 +77,7 @@ maps:
         'smirk': Zadziorny
         'surprise': Zaskoczony
         'veryAngry': Bardzo zły
-      bodyTypes(map):
+      bodyTypes:
         'none': Brak
         'masculine': A (Męski)
         'feminine': B (Żeński)
@@ -145,22 +145,27 @@ plurals:
 singulars:
   achievements:
     info:
-      viewDescription: Odblokuj osiągnięcia, aby zwiększyć <hl>Postęp Nagrody</hl>.
+      viewDescription:
+        Odblokuj osiągnięcia, aby zwiększyć <hl>Postęp Nagrody</hl>.
         Gdy Postęp Nagrody jest wypełniony, otrzymasz nagrodę dla wszystkich swoich
         postaci. Niektóre osiągnięcia mają też nagrody za ich odblokowanie.
-      specialItems: Specjalne przedmioty, takie jak <c>Znajdźki</c>, <c>Przedmioty
+      specialItems:
+        Specjalne przedmioty, takie jak <c>Znajdźki</c>, <c>Przedmioty
         do Zadań</c> i <c>Artefakty</c> są zbierane w trakcie twojej podróży przez
         WalkScape. Możesz sprawdzić je tutaj. Znajdźki dają ci progres w punktach
         osiągnięć.
-      collectibleItems: Przedmioty kolekcjonerskie (Znajdźki) to rzeczy, które możesz
+      collectibleItems:
+        Przedmioty kolekcjonerskie (Znajdźki) to rzeczy, które możesz
         zdobyć ze świata WalkScape. Istnieje kilka rodzajów przedmiotów kolekcjonerskich,
         które możesz spróbować zebrać. Nie zajmują miejsca w ekwipunku i zawsze są
         na wyposażeniu twojej postaci.
       noCollectibleItems: Nie udało ci się odnaleźć jeszcze żadnych Znajdziek.
-      totalProgressUnlocks: Otrzymasz te nagrody na podstawie całkowitego postępu
+      totalProgressUnlocks:
+        Otrzymasz te nagrody na podstawie całkowitego postępu
         w Osiągnięciach i utracisz dostęp do przedmiotów, jeżeli dostępnych będzie
         więcej punktów osiągnięć.
-      checkPointUnlocks: Te osiągnięcia są dostępne w określonych miejscach kontrolnych
+      checkPointUnlocks:
+        Te osiągnięcia są dostępne w określonych miejscach kontrolnych
         osiągnięć. Nie stracisz do nich dostępu, nawet jeśli dostępnych będzie więcej
         punktów osiągnięć.
     phrases:
@@ -181,30 +186,36 @@ singulars:
       rewards: Nagrody
       noMaterials: Nie posiadasz materiałów dostępnych do wytwarzania w tej chwili.
       noServiceRequirements: Brak wymagań.
-      noMaterialsThatCouldBeUsed: W twoim ekwipunku nie ma materiałów, które można
+      noMaterialsThatCouldBeUsed:
+        W twoim ekwipunku nie ma materiałów, które można
         wykorzystać do produkcji.
       showingRecipiesThatUses: Pokaż przepisy, które używają
       requiresService: Wymaga usługi.
   inventory:
     info:
-      noItemEquipped: Nie wyposażono żadnego przedmiotu. \n\n Przedmiot można wyposażyć,
+      noItemEquipped:
+        Nie wyposażono żadnego przedmiotu. \n\n Przedmiot można wyposażyć,
         wybierając go z poniższej listy i naciskając przycisk "Wyposaż".
-      noItemSelected: Nie wybrano żadnego przedmiotu. \n\n Wybierz przedmiot z poniższej
+      noItemSelected:
+        Nie wybrano żadnego przedmiotu. \n\n Wybierz przedmiot z poniższej
         listy, aby porównać go z bieżącym przedmiotem i wyposażyć go.
       noItemsFound: Nie znaleziono żadnych przedmiotów, które pasowałyby do tego slotu.
     phrases:
       treasury: Skarbiec
-      longPressTip: <c>Porada:</c> Długie przytrzymanie na przedmiocie lub wielu przedmiotach
+      longPressTip:
+        <c>Porada:</c> Długie przytrzymanie na przedmiocie lub wielu przedmiotach
         zaznacza wszystkie podobne przedmioty.
       dropItems: Wyrzucić?
-      itemsInUse: Wśród zaznaczonych przedmiotów są takie, które są w użyciu. Nie
+      itemsInUse:
+        Wśród zaznaczonych przedmiotów są takie, które są w użyciu. Nie
         możesz ich wyrzucić lub umieścić w banku.
       slots: Slotów <c>${slots}</c>
       slotsCount: 'Slotów:'
       requirementsNotMet: Nie spełniono wymagań.
       cantEquip: Nie można założyć.
       checkBank: Sprawdź bank
-      allItemsInUse: Wszystkie te przedmioty są aktualnie w użyciu i nie mogą być
+      allItemsInUse:
+        Wszystkie te przedmioty są aktualnie w użyciu i nie mogą być
         upuszczone.
       cantBeDropped: Przedmiot nie może zostać upuszczony.
       oneOrMoreCantBeDropped: Jeden lub więcej przedmiotów nie może być upuszczony.
@@ -222,7 +233,8 @@ singulars:
       inUse: W użyciu
       slotDoesntExist: Ten slot na przedmioty już nie istnieje.
       equipToRingOne: Załóż na slot 1 pierścieni
-      areYouSureToDrop: Na pewno chcesz wyrzucić te przedmioty? Będą zniszczone na
+      areYouSureToDrop:
+        Na pewno chcesz wyrzucić te przedmioty? Będą zniszczone na
         zawsze, kiedy zostaną wyrzucone.
       selectedStacks: Wybrano <c>${stacks}</c> stacków
       disableWhenChanging: Wyłącz przy zmianie aktywności
@@ -246,13 +258,15 @@ singulars:
       buildings: Budynki
   activity:
     info:
-      consumablesUsage: Możesz wybrać <c>jedzenie</c> oraz <c>miksturę</c>, by użyć
+      consumablesUsage:
+        Możesz wybrać <c>jedzenie</c> oraz <c>miksturę</c>, by użyć
         w trakcie aktywności.
     phrases:
       consumables: Przedmioty Używalne
   character:
     info:
-      skillBreakdown: Tutaj znajduje się całkowite podsumowanie wszystkich twoich
+      skillBreakdown:
+        Tutaj znajduje się całkowite podsumowanie wszystkich twoich
         umiejętności na tej postaci w trakcie swojej przygody.
     phrases:
       skills: Umiejętności
@@ -262,7 +276,8 @@ singulars:
   permissions:
     phrases:
       pedometerPermission: Uprawnienia do liczenia kroków
-      permissionExplanation: By gra działała poprawnie potrzebne są uprawnienia do
+      permissionExplanation:
+        By gra działała poprawnie potrzebne są uprawnienia do
         zliczania kroków z twojego urządzenia. Proszę zaakceptować te uprawnienia,
         by móc kontynuować grę.
       exactAlarmPermission: Uprawnienia alarmu
@@ -277,10 +292,12 @@ singulars:
       noEyeAccessories: Nie masz żadnych akcesoriów dla oczu.
   abilities:
     info:
-      youHaveNoAbilities: <hl>Nie masz żadnych umiejętności</hl>. Określony sprzęt
+      youHaveNoAbilities:
+        <hl>Nie masz żadnych umiejętności</hl>. Określony sprzęt
         w grze może zapewnić ci umiejętności, których możesz użyć, aby uzyskać natychmiastowe
         opcje w grze, w zamian za ich czas odnowienia.
-      abilitiesInfo: Umiejętności to specjalne akcje, których możesz użyć, aby zyskać
+      abilitiesInfo:
+        Umiejętności to specjalne akcje, których możesz użyć, aby zyskać
         natychmiastowe korzyści w grze. Umiejętności mają czas odnowienia, który musi
         minąć, by ponownie móc je użyć.
     phrases:
@@ -293,14 +310,16 @@ singulars:
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Wymagania do użycia nie są spełnione:'
-      followingMustBeTrueToTick: 'Poniższe cechy muszą być spełnione, by czas odnowienia
+      followingMustBeTrueToTick:
+        'Poniższe cechy muszą być spełnione, by czas odnowienia
         spadał:'
       cooldownRemaining: 'Czas Odnowienia:'
       cooldownReady: 'Czas Odnowienia: Gotowe'
       noCooldown: Brak Czasu Odnowienia.
   treasury:
     phrases:
-      noItems: Nie masz żadnych skarbów do otwarcia. Możesz je otrzymać z najróżniejszych
+      noItems:
+        Nie masz żadnych skarbów do otwarcia. Możesz je otrzymać z najróżniejszych
         aktywności.
       openChest: Otwórz
       openAll: Otwórz Wszystkie
@@ -322,7 +341,8 @@ singulars:
         stopWhenOverEncumberedDefault: Zawsze zatrzymaj przy przeciążeniu
       closedBeta:
         title: Zamknięta Beta
-        useThisToClear: Użyj tego, jeżeli chcesz zresetować wykres kroków. Przydatne,
+        useThisToClear:
+          Użyj tego, jeżeli chcesz zresetować wykres kroków. Przydatne,
           kiedy kroki osiągnąłeś błędem lub, by mieć czysty wykres.
         clearStepsGraph: Wyczyść wykres kroków
       account:
@@ -346,12 +366,14 @@ singulars:
       characterName: Nazwa postaci
       bodyType: Typ ciała
     info:
-      rememberSwipe: Pamiętaj, że możesz macnąć ekran i wrócić, by zmienić wybrane
+      rememberSwipe:
+        Pamiętaj, że możesz macnąć ekran i wrócić, by zmienić wybrane
         opcje w dowolnym momencie tworzenia postaci.
   pfpCreation:
     phrases:
       currentSelection: Aktualnie wybrane
-      dynamicBackground: Dynamiczne tło zmienia się w tle twojej postaci w zależności
+      dynamicBackground:
+        Dynamiczne tło zmienia się w tle twojej postaci w zależności
         od lokacji, w której się znajduje.
       defaultExpression: Podstawowy wyraz
       noVariantSelected: Brak wybranego wariantu
@@ -379,15 +401,18 @@ singulars:
       buildings: Budynki
       pointsOfInterest: Ciekawe miejsca
       information: Informacje
-      routeRequirementsNotMet: 'Drogi do wybranego celu mają wymagania, które nie
+      routeRequirementsNotMet:
+        'Drogi do wybranego celu mają wymagania, które nie
         są spełnione:'
-      youHaveNotExplored: Nie udało ci się jeszcze zwiedzić tej lokacji. Otrzymasz
+      youHaveNotExplored:
+        Nie udało ci się jeszcze zwiedzić tej lokacji. Otrzymasz
         informacje o tej lokacji, kiedy przynajmniej raz ją odwiedzisz.
       routeFromTo: Z <location i="${fromID}"/> do <location i="${toID}"/>
       route: Droga
       youreHere: Jesteś aktualnie w tej lokacji.
       currentLocation: Aktualna lokacja
-      afterExploring: Po eksploracji lokacji będziesz mieć opcję zobaczenia ciekawych
+      afterExploring:
+        Po eksploracji lokacji będziesz mieć opcję zobaczenia ciekawych
         miejsc w tej okolicy.
   stats:
     phrases:
@@ -395,7 +420,8 @@ singulars:
       totalSteps: Całkowicie kroków
       totalSkillXp: Całkowite XP umiejętności
     info:
-      stats: Kolekcja statystyk o każdym kroku, jaki udało ci się zrobić w świecie
+      stats:
+        Kolekcja statystyk o każdym kroku, jaki udało ci się zrobić w świecie
         Arenum.
   tutorial:
     phrases:
@@ -426,7 +452,8 @@ singulars:
       dontDoIt: Nie rób tego, jeżeli nie masz całkowitej pewności.
       deleteWord: DELETE
       deletingCharacter: Usunięcie twojej postaci jest <hl>nieodwracalne</hl>.
-      areYouAbsolutelySure: Czy jesteś definitywnie pewien? Po tym kroku stracisz
+      areYouAbsolutelySure:
+        Czy jesteś definitywnie pewien? Po tym kroku stracisz
         postać całkowicie.
       iAmSure: Tak, definitywnie
       downloadingLocalisations: Pobieranie zaktualizowanych tłumaczeń
@@ -439,10 +466,12 @@ singulars:
       password: Hasło
       noBetaAccess: Brak dostępu do bety.
       googlePlay: Zaktualizuj poprzez Google Play
-      ifYouAreSure: Jeżeli masz całkowitą pewność napisz <c>DELETE</c> w polu i pacnij
+      ifYouAreSure:
+        Jeżeli masz całkowitą pewność napisz <c>DELETE</c> w polu i pacnij
         kontynuuj.
       authenticating: Autoryzacja...
-      lostInternet: Twoje urządzenie utraciło połączenie z siecią. Oczekiwanie na
+      lostInternet:
+        Twoje urządzenie utraciło połączenie z siecią. Oczekiwanie na
         połączenie...
       loadingGame: Wczytywanie gry... proszę czekać!
   social:
@@ -462,7 +491,8 @@ singulars:
     phrases:
       emptyToolSlot: Pusty slot na narzędzie
       noToolEquipped: Brak narzędzi założonych na ten slot.
-      lockedToolSlot: Slot na narzędzie będzie dostępny po osiągnięciu <c>${level}</c>
+      lockedToolSlot:
+        Slot na narzędzie będzie dostępny po osiągnięciu <c>${level}</c>
         poziomu postaci.
   bank:
     phrases:

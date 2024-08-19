@@ -1,58 +1,58 @@
 maps:
   achievements:
     phrases:
-      difficulty(map):
-        "0": Leicht
-        "1": Normal
-        "2": Schwer
-        "3": Extrem
+      difficulty:
+        '0': Leicht
+        '1': Normal
+        '2': Schwer
+        '3': Extrem
         'easy': Einfach
         'normal': Normal
         'hard': Schwer
         'extreme': Extrem
-      difficultyTitle(map):
-        "0": Leichte Erfolge
-        "1": Normale Erfolge
-        "2": Schwere Erfolge
-        "3": Extreme Erfolge
+      difficultyTitle:
+        '0': Leichte Erfolge
+        '1': Normale Erfolge
+        '2': Schwere Erfolge
+        '3': Extreme Erfolge
         'hard': Schwere Erfolge
         'extreme': Extreme Erfolge
         'easy': Einfache Erfolge
         'normal': Normale Erfolge
   character:
-    stepsTime(map):
+    stepsTime:
       'hourly': Stündliche Schritte
       'daily': Tägliche Schritte
       'monthly': Monatliche Schritte
   settings:
-    boolSettings(map):
+    boolSettings:
       'showRecipesMaterialsAreMet': Materialanforderungen nicht erfüllt
       'showRecipesRequirementsAreMet': Levelanforderungen nicht erfüllt
       'showRecipesServiceAreMet': Serviceanforderungen nicht erfüllt
-    visibilitySettings(map):
+    visibilitySettings:
       'private': Privat
       'friends': Nur Freunde
       'public': Öffentlich
-    stepCountNotifications(map):
+    stepCountNotifications:
       'never': Niemals
       'always': Immer
       'everyHundred': Alle Hundert
       'everyThousand': Alle Tausend
       'everyTenThousand': Alle Zehntausend
-    languages(map):
+    languages:
       'en': Englisch
       'de': Deutsch
       'fi': Suomi
-    notificationImportance(map):
+    notificationImportance:
       'low': Kein Ton, keine Vibration und wird nicht in der Statusleiste angezeigt.
       'high': Macht einen Ton oder vibriert
       'urgent': Macht einen Ton oder vibriert und taucht als Benachrichtigung auf.
-    leaderboardFilter(map):
+    leaderboardFilter:
       'everyone': Jeder
       'friends': Freunde
   characterCreation:
     phrases:
-      optionTypes(map):
+      optionTypes:
         'none': Keine
         'eyes': Augen
         'faceAccessorie': Gesichtszubehör
@@ -65,14 +65,14 @@ maps:
         'nose': Nase
         'hair': Haarschnitt
         'outfit': Outfit
-      raceTypes(map):
+      raceTypes:
         'none': Keine
         'human': Mensch
-      bodyTypes(map):
+      bodyTypes:
         'none': Keine
         'masculine': A (Maskulin)
         'feminine': B (Feminin)
-      expressions(map):
+      expressions:
         'normal': Normal
         'angry': Wütend
         'laughing': Lachend
@@ -145,22 +145,27 @@ plurals:
 singulars:
   achievements:
     info:
-      viewDescription: Schalte Erfolge frei, um <hl>Belohnungsfortschritt</hl> zu
+      viewDescription:
+        Schalte Erfolge frei, um <hl>Belohnungsfortschritt</hl> zu
         verdienen. Wenn der Belohnungsfortschritt gefüllt ist, erhältst du eine Belohnung
         für alle deine Charaktere. Einige Erfolge geben direkt Belohnungen für das
         Freischalten.
-      totalProgressUnlocks: Du bekommst Belohnungen basierend auf deinem Erfolgsfortschritt
+      totalProgressUnlocks:
+        Du bekommst Belohnungen basierend auf deinem Erfolgsfortschritt
         und du verlierst den Zugriff auf die Gegenstände, wenn mehr Erfolgspunkte
         verfügbar werden.
-      specialItems: Besondere Gegenstände, wie <c>Sammelgegenstände</c>, <c>Quest
+      specialItems:
+        Besondere Gegenstände, wie <c>Sammelgegenstände</c>, <c>Quest
         Gegenstände</c> und <c>Artefakte</c> werden während deiner Reise durch WalkScape
         gesammelt. Du kannst sie hier ansehen. Sammelgegenstände geben dir Erfolgspunkt
         Fortschritt.
-      collectibleItems: Sammelgegenstände können in der Welt von WalkScape gefunden
+      collectibleItems:
+        Sammelgegenstände können in der Welt von WalkScape gefunden
         werden. Es gibt verschiedene Arten von Sammelgegenständen die du suchen kannst.
         Sie nehmen keinen Platz im Inventar weg und sind immer bei dir.
       noCollectibleItems: Du hast noch keine Sammelgegenstände gefunden.
-      checkPointUnlocks: Diese Errungenschaften sind bei bestimmten Erfolgspunkt-Checkpoints
+      checkPointUnlocks:
+        Diese Errungenschaften sind bei bestimmten Erfolgspunkt-Checkpoints
         verfügbar. Du wirst den Zugang zu diesen nicht verlieren, wenn weitere Erfolgspunkte
         verfügbar werden.
     phrases:
@@ -181,30 +186,38 @@ singulars:
       rewards: Belohnungen
       noMaterials: Du hast im Moment kein Material für die Herstellung.
       noServiceRequirements: Keine Service Anforderungen.
-      noMaterialsThatCouldBeUsed: Keine Materialien in deinem Inventar können zur
+      noMaterialsThatCouldBeUsed:
+        Keine Materialien in deinem Inventar können zur
         Herstellung genutzt werden.
       showingRecipiesThatUses: Diese Rezepte nutzen
       requiresService: Benötigt einen Service.
   inventory:
     info:
-      noItemEquipped: Kein Gegenstand ausgerüstet. \n\n Du kannst einen Gegenstand
+      noItemEquipped:
+        Kein Gegenstand ausgerüstet. \n\n Du kannst einen Gegenstand
         ausrüsten, indem du einen aus der Liste unten auswählst und "Ausrüsten" drückst.
-      noItemSelected: Kein Gegenstand ausgewählt. \n\n Wähle einen Gegenstand aus
+      noItemSelected:
+        Kein Gegenstand ausgewählt. \n\n Wähle einen Gegenstand aus
         der Liste unten, um ihn mit dem aktuellen Gegenstand zu vergleichen und auszurüsten.
       noItemsFound: Kein Gegenstand in deinem Inventar passt zu diesem Ausrüstungsplatz.
     phrases:
       treasury: Schätze
-      longPressTip: <c>Tipp:</c> Lange auf einen Stapel Gegenstände zu drücken wählt
+      longPressTip:
+        <c>Tipp:</c> Lange auf einen Stapel Gegenstände zu drücken wählt
         alle ähnlichen Stapel aus.
-      itemsInUse: Du hast Gegenstände ausgewählt die bereits genutzt werden. Du kannst
+      itemsInUse:
+        Du hast Gegenstände ausgewählt die bereits genutzt werden. Du kannst
         keine Gegenstände fallenlassen und in die Bank tun, während sie genutzt werden.
       noItemEquipped: Kein Gegenstand ausgerüstet
-      noConsumableSelected: Keine Verbrauchsgegenstände gewählt. Du kannst sie unten
+      noConsumableSelected:
+        Keine Verbrauchsgegenstände gewählt. Du kannst sie unten
         auswählen.
-      oneOrMoreCantBeDropped: Einer oder mehr Gegenstände kann nicht fallengelassen
+      oneOrMoreCantBeDropped:
+        Einer oder mehr Gegenstände kann nicht fallengelassen
         werden.
       dropItems: Gegenstände fallenlassen?
-      areYouSureToDrop: Bist du dir sicher, dass du die Gegenstände fallenlassen willst?
+      areYouSureToDrop:
+        Bist du dir sicher, dass du die Gegenstände fallenlassen willst?
         Die Gegenstände sind dann für immer verloren.
       slots: Ausrüstungsplätze <c>${slots}</c>
       slotsCount: 'Ausrüstungsplätze:'
@@ -213,7 +226,8 @@ singulars:
       cantEquip: Kann nicht ausgerüstet werden.
       checkBank: Bank ansehen
       slotDoesntExist: Dieser Ausrüstungsplatz existiert nicht mehr.
-      allItemsInUse: Jeder dieser Gegenstände wird gerade genutzt und können nicht
+      allItemsInUse:
+        Jeder dieser Gegenstände wird gerade genutzt und können nicht
         fallengelassen werden.
       cantBeDropped: Gegenstand kann nicht fallengelassen werden.
       attributes: Attribute
@@ -232,7 +246,8 @@ singulars:
       selectedConsumable: Ausgewählter Verbrauchsgegenstand
       consumables: Verbrauchsgegenstände
       noConsumables: Keine Verbrauchsgegenstände in deinem Inventar.
-      enableWhenBack: Wieder aktivieren, wenn eine Aktivität begonnen wird, bei der
+      enableWhenBack:
+        Wieder aktivieren, wenn eine Aktivität begonnen wird, bei der
         dies vorher verwendet wurde
     options:
       consenseInventory: Inventar verkleinern
@@ -249,13 +264,15 @@ singulars:
       factions: Fraktionen
   activity:
     info:
-      consumablesUsage: Du kannst ein <c>Nahrungsmittel</c> und einen <c>Trank</c>
+      consumablesUsage:
+        Du kannst ein <c>Nahrungsmittel</c> und einen <c>Trank</c>
         auswählen, die du bei deinen Aktivitäten verwenden kannst.
     phrases:
       consumables: Verbrauchsgegenstände
   character:
     info:
-      skillBreakdown: Hier siehst du alle Skills, die dein Charakter während deiner
+      skillBreakdown:
+        Hier siehst du alle Skills, die dein Charakter während deiner
         Reise aufgelevelt hat.
     phrases:
       skills: Skills
@@ -264,7 +281,8 @@ singulars:
       checkOut: Das ist mein WalkScape Charakter ${name}. Sieh ihn dir an!\nhttps://walkscape.app
   permissions:
     phrases:
-      permissionExplanation: Damit das Spiel funktioniert, brauchen wir die Erlaubnis,
+      permissionExplanation:
+        Damit das Spiel funktioniert, brauchen wir die Erlaubnis,
         die Daten deines Schrittzählers zu nutzen. Bitte bestätige dies, damit du
         das Spiel starten kannst.
       pedometerPermission: Schrittzähler Erlaubnis
@@ -280,7 +298,8 @@ singulars:
         hideSteps: Schritte verstecken
       closedBeta:
         clearStepsGraph: Schrittgraphen zurücksetzen
-        useThisToClear: Nutze dies um deinen Schrittgraphen zurückzusetzen. Nützlich
+        useThisToClear:
+          Nutze dies um deinen Schrittgraphen zurückzusetzen. Nützlich
           wenn du durch einen Fehler Schritte bekommen hast und den Graphen zurücksetzten
           willst.
         title: Geschlossene Beta
@@ -319,7 +338,8 @@ singulars:
       colorOptions: Farboptionen
       homeRegion: Heimatregion
       selectedVariant(param=index): Variante $index gewählt
-      dynamicBackground: Dynamischer Hintergrund verändert dein Hintergrundbild basierend
+      dynamicBackground:
+        Dynamischer Hintergrund verändert dein Hintergrundbild basierend
         auf dem Standort deines Charakters.
       currentSelection: Aktuelle Auswahl
       mainOptions: Haupteinstellungen
@@ -330,16 +350,19 @@ singulars:
       services: Services
       buildings: Gebäude
       pointsOfInterest: Sehenswürdigkeiten
-      afterExploring: Nachdem Sie den Ort erkundet haben, können Sie sich die Sehenswürdigkeiten
+      afterExploring:
+        Nachdem Sie den Ort erkundet haben, können Sie sich die Sehenswürdigkeiten
         dieses Ortes ansehen.
       information: Information
-      youHaveNotExplored: Du hast diesen Ort noch nicht erkundet. Du siehst Informationen
+      youHaveNotExplored:
+        Du hast diesen Ort noch nicht erkundet. Du siehst Informationen
         über diesen Ort, nachdem du ihn einmal besucht hast.
       routeFromTo: <location i="${fromID}"/> nach <location i="${toID}"/>
       route: Route
       youreHere: Du bist aktuell an diesem Ort.
       currentLocation: Aktueller Standort
-      routeRequirementsNotMet: 'Routen auf deinem gewählten Weg haben Anforderungen
+      routeRequirementsNotMet:
+        'Routen auf deinem gewählten Weg haben Anforderungen
         die nicht erfüllt sind:'
   stats:
     phrases:
@@ -347,7 +370,8 @@ singulars:
       totalSteps: Gesamte Schritte
       stats: Werte
     info:
-      stats: Gesammelte Werte von jedem Schritt den du bei deiner Reise durch die
+      stats:
+        Gesammelte Werte von jedem Schritt den du bei deiner Reise durch die
         Welt von Arenum gemacht hast.
   tutorial:
     phrases:
@@ -375,13 +399,16 @@ singulars:
       createCharacter: Erstelle einen neuen Charakter
       logOut: Ausloggen
       noInternet: Keine Internetverbindung
-      areYouSureYouWantToDelete: Bist du sicher, dass du <hl>${name}</hl> löschen
+      areYouSureYouWantToDelete:
+        Bist du sicher, dass du <hl>${name}</hl> löschen
         willst?
       dontDoIt: Tu es nicht, wenn du dir nicht sicher bist.
-      ifYouAreSure: Wenn du dir sicher bist, schreibe <c>LÖSCHEN</c> in das Feld und
+      ifYouAreSure:
+        Wenn du dir sicher bist, schreibe <c>LÖSCHEN</c> in das Feld und
         drücke fortfahren.
       deleteWord: LÖSCHEN
-      areYouAbsolutelySure: Bist du dir wirklich sicher? Nach diesem Schritt ist dein
+      areYouAbsolutelySure:
+        Bist du dir wirklich sicher? Nach diesem Schritt ist dein
         Charakter für immer verloren.
       iAmSure: Ich bin sicher
       downloadingContent: Neuer Spielinhalt wird heruntergeladen
@@ -394,9 +421,11 @@ singulars:
       noBetaAccess: Kein Beta Zugang.
       downloadingLocalisations: Lade aktualisierte Lokalisierungen herunter
       googlePlay: Aktualisieren bei Google Play
-      welcomeToWalkscape: Willkommen bei WalkScape, <hl>Fremder</hl>. Bitte melde
+      welcomeToWalkscape:
+        Willkommen bei WalkScape, <hl>Fremder</hl>. Bitte melde
         dich an.
-      lostInternet: Dein Gerät hat die Internetverbindung verloren. Warte auf eine
+      lostInternet:
+        Dein Gerät hat die Internetverbindung verloren. Warte auf eine
         Verbindung...
       deletingCharacter: Deinen Charakter zu löschen ist <hl>unwiderruflich</hl>.
   social:
@@ -413,10 +442,12 @@ singulars:
       noCooldown: Kein Cooldown.
   abilities:
     info:
-      youHaveNoAbilities: <hl>Du hast keine Fähigkeiten</hl>. Bestimmte Ausrüstung
+      youHaveNoAbilities:
+        <hl>Du hast keine Fähigkeiten</hl>. Bestimmte Ausrüstung
         im Spiel kann dir Fähigkeiten geben, die dir einen sofortigen Vorteil im Gegenzug
         für einen Cooldown verschaffen.
-      abilitiesInfo: Fähigkeiten sind besondere Aktionen, die dir einen sofortigen
+      abilitiesInfo:
+        Fähigkeiten sind besondere Aktionen, die dir einen sofortigen
         Vorteil im Spiel verschaffen. Fähigkeiten haben einen Cooldown, den du abwarten
         musst, bevor du sie wieder einsetzten darfst.
     phrases:
@@ -444,7 +475,8 @@ singulars:
       noEyeAccessories: Du besitzt kein Augenzubehör.
   treasury:
     phrases:
-      noItems: Du hast keine Schätze zum öffnen. Du kannst Kisten von verschiedenen
+      noItems:
+        Du hast keine Schätze zum öffnen. Du kannst Kisten von verschiedenen
         Aktivitäten bekommen.
       openChest: Öffnen
       openAll: Alle Öffnen
@@ -474,7 +506,8 @@ singulars:
       characterName: Name des Charakters
       race: Ethnie
     info:
-      rememberSwipe: Vergiss nicht, dass du jederzeit zurückwischen kannst um während
+      rememberSwipe:
+        Vergiss nicht, dass du jederzeit zurückwischen kannst um während
         der Charaktererstellung gewählte Optionen zu ändern.
   jobs:
     phrases:

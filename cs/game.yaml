@@ -1,42 +1,42 @@
 maps:
   items:
-    qualities(map):
+    qualities:
       '0': Obyčejné
       '1': Dobré
       '2': Výborné
       '3': Vynikající
       '4': Perfektní
       '5': Nejlepší
-    rarities(map):
+    rarities:
       '0': Běžné
       '1': Neobvyklé
       '2': Vzácné
       '3': Epické
       '4': Legendární
       '5': Éterické
-  realmDescriptions(map):
+  realmDescriptions:
     braemercia: Braemercia
     ethereal: Ethereal
     ewerethien: Ewerethien
     painfulislands: Painful Islands
     ridraddak: Rid Raddak
-    "jarvonia": ''
-    "gdte": ''
-    "wallisia": ''
-    "galeforge": ''
-    "wrentmark": ''
-  realmMottos(map):
+    'jarvonia': ''
+    'gdte': ''
+    'wallisia': ''
+    'galeforge': ''
+    'wrentmark': ''
+  realmMottos:
     braemercia: Braemercia
     ethereal: Ethereal
     ewerethien: Ewerethien
     painfulislands: Painful Islands
     ridraddak: Rid Raddak
-    "jarvonia": ''
-    "gdte": ''
-    "wallisia": ''
-    "galeforge": ''
-    "wrentmark": ''
-  realms(map):
+    'jarvonia': ''
+    'gdte': ''
+    'wallisia': ''
+    'galeforge': ''
+    'wrentmark': ''
+  realms:
     braemercia: Braemercia
     ethereal: Ethereal
     ewerethien: Ewerethien
@@ -47,8 +47,8 @@ maps:
     ridraddak: Rid Raddak
     wallisia: Wallisia
     wrentmark: Wrentmark
-  raceDescriptions(map):
-    "human": ''
+  raceDescriptions:
+    'human': ''
 plurals:
   items:
     money(param=amount):
@@ -93,7 +93,8 @@ singulars:
     placeholder: Placeholder
   requirements:
     skills:
-      level: Vyžadována <skill skill="${skill}" level="${level}"" isRequirement="true"/>
+      level:
+        Vyžadována <skill skill="${skill}" level="${level}"" isRequirement="true"/>
         úroveň.
   intro:
     welcome: ''

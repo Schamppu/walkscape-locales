@@ -1,24 +1,25 @@
 maps:
   items:
-    qualities(map):
+    qualities:
       '0': Normal
       '1': Gut
       '2': Großartig
       '3': Exzellent
       '4': Perfekt
       '5': Ewig
-    rarities(map):
+    rarities:
       '0': Gewöhnlich
       '1': Ungewöhnlich
       '2': Selten
       '3': Episch
       '4': Legendär
       '5': Ätherisch
-    consumableTypes(map):
-      "food": Essen
-      "potion": Trank
-  raceDescriptions(map):
-    human: \t\t In den ausgedehnten und verzauberten Weiten von <c>Arenum</c> haben
+    consumableTypes:
+      'food': Essen
+      'potion': Trank
+  raceDescriptions:
+    human:
+      \t\t In den ausgedehnten und verzauberten Weiten von <c>Arenum</c> haben
       Menschen ihren Anspruch auf <c>den Westlichen Kontinent</c> erhoben. Diese gewaltigen
       Länder, umhüllt von <c>ungezähmter Widnis</c> und <c>majestätischen Landschaften</c>,
       sind zum Kernland der menschlichen Zivilisation geworden.\n\n\t\t Dennoch, unter
@@ -27,23 +28,26 @@ maps:
       und <c>Konflikten</c>, als Menschen in unaufhörlichen Kämpfen für Dominanz und
       Macht verwickelt waren. \n\n\t\t Rivalitäten und Fehden, antike und neue, <c>haben
       Schatten über den Westlichen Kontinent geworfen</c>.
-  realmDescriptions(map):
+  realmDescriptions:
     braemercia: Braemercia
     ethereal: Ethereal
     ewerethien: Ewerethien
-    galeforge: \t\t Sturmschmiede ist einer Stadt der <c>Innovation und des Forschritts</c>,
+    galeforge:
+      \t\t Sturmschmiede ist einer Stadt der <c>Innovation und des Forschritts</c>,
       eingenommen von dem mächtigen Imperium von Wallisia. Eingebettet zwischen Wallisia
       und <c>dem Archipel</c> ist es ein Ort, an welchem Technologie und Industrie
       florieren.\n\n\t\t Die Einwohner von Sturmschmiede sind <c>ambitioniert und
       ehrgeizig</c>, ständig am Erweitern der Grenzen des Möglichen. Die Stadt ist
       eine geschäftige Metropole, <c>in welcher Fabriken brummen mit Aktivität</c>
       und die Straßen gesäumt sind mit Händlern, die die neuesten Innovationen verkaufen.
-    gdte: \t\t Das Großherzogtum Trellin-Erdwise, gespalten <c>in einer aktuellen
+    gdte:
+      \t\t Das Großherzogtum Trellin-Erdwise, gespalten <c>in einer aktuellen
       Krise</c>, ist ein Land von diverser <c>Schönheit</c> und <c>Herausforderungen</c>.\n\n\t\t
       Die Marschlandschaften von Trellin und die Küstenhäfen in Erdwise sind sowohl
       Quellen der Schönheit als auch der Gefahr. Das Volk des Großherzogtums ist geprägt
       von <c>Stolz und Gier</c>.
-    jarvonia: \t\t Jarvonia, <c>ein Land des Eises und der Dunkelheit</c>, regiert
+    jarvonia:
+      \t\t Jarvonia, <c>ein Land des Eises und der Dunkelheit</c>, regiert
       von einer einflussreichen religiösen Bruderschaft, ist ein unabhängiges Reich
       eines abgehärteten Volkes, vereinigt durch deren unerschütterlichen <c>Glauben</c>
       sowie ihrer <c>festen Entschlossenheit</c> zu überleben.\n\n\t\t Trotz der strengen
@@ -51,21 +55,23 @@ maps:
       <c>Herzen hell brennent zuwider der Kälte</c>.
     painfulislands: Schmerzvolle Inseln
     ridraddak: Rid Raddak
-    wallisia: \t\t Wallisia, ein Land des Überflusses und der Macht. <c>Die Kaiserin</c>,
+    wallisia:
+      \t\t Wallisia, ein Land des Überflusses und der Macht. <c>Die Kaiserin</c>,
       Nachfahrin eines großen Kriegers, kommandiert eine Armee, die <c>den Kontinent
       erorberte</c>, und nur Jarvonia unberührt ließ.\n\n\t\ Die grünen Weiden sind
       <c>das Herz des gesamten Kontinents</c> und stellen beträchtliche Ernten sowie
       Ressourcen zur Verfügung, die <c>des Reiches</c> industrielle und militärischen
       Kapazitäten antreiben. Das Reich verfügt über die größte Bevölkerung des Kontinents,
       und das Volk ist <c>stolz auf ihre Stärke und Macht</c>.
-    wrentmark: \t\t Wrentmark ist <c>ein Reich geschmiedet von Feuer</c>, in welchem
+    wrentmark:
+      \t\t Wrentmark ist <c>ein Reich geschmiedet von Feuer</c>, in welchem
       die sengede Sonne auf <c>den Wüstensand</c> niederprasselt. Das Volk von Wrentmark
       ist <c>ein stolzer und widerstandsfähiger Haufen</c>, der seit Jahren in dieser
       unfreundlichen Umwelt gedeiht.\n\n\t\t Wrentmark ist ein Land von unerahnten
       Reichtümern, in dem <c>kostbare Edelsteine und Mineralien</c> abgebaut werden
       und im ganzen Land gehandelt werden. Das Bewohner Wrentmarks sind <c>Handelsmeister</c>,
       deren Fähigkeiten über jahrhundertelangen Handels verfeinert wurden.
-  realmMottos(map):
+  realmMottos:
     braemercia: Braemercia
     ethereal: Ethereal
     ewerethien: Ewerethien
@@ -76,7 +82,7 @@ maps:
     ridraddak: Rid Raddak
     wallisia: Dort wo das Erntegut hochwächst, so wachsen wir auch
     wrentmark: Unser Gold brennt heller als die Sonne
-  realms(map):
+  realms:
     braemercia: Braemercia
     ethereal: Ethereal
     ewerethien: Ewerethien
@@ -122,14 +128,16 @@ singulars:
     placeholder: Platzhalter
   requirements:
     skills:
-      level: Erfordert <skill skill="${skill}" level="${level}"" isRequirement="true"/>
+      level:
+        Erfordert <skill skill="${skill}" level="${level}"" isRequirement="true"/>
         Level.
   commonPhrases:
     allSkills: 'Alle Fähigkeiten'
     lookingForInternet: 'Suche Internet...'
     noActivity: 'Keine Aktivität.'
   intro:
-    welcome: 'Willkommen in Arenum, Fremder. Scheint als wärst du knapp vor <hl>Kallaheim</hl>
+    welcome:
+      'Willkommen in Arenum, Fremder. Scheint als wärst du knapp vor <hl>Kallaheim</hl>
       aufgetaucht, eine Großstadt im Norden.'
     whereAreYouFrom: 'Darf ich fragen wo Sie herkommen?'
 plurals:
