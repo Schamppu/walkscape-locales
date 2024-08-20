@@ -10,6 +10,11 @@ singulars:
     saveUnsuccesfullLootTables:
       text: La tabla de botín contiene filas que no tienen ningún objeto asociado.
       title: Fallo al guardar
+    comingSoon:
+      title: Próximamente
+      text: Este contenido <hl>no está disponible</hl> en la versión actual de WalkScape.
+    disabled:
+      title: Deshabilitado
   popups:
     skillLevel:
       skillLevelUp: '{skillName} sube de nivel'
@@ -40,3 +45,14 @@ singulars:
     idleSteps:
       stepsWhileAway: Pasos ganados mientras el juego estaba cerrado
       whileYouWereAway: Mientras no estabas...
+      gainedExperience: <skill skill="{skill}" /> ha ganado <c>+{exp}</c> de experiencia.
+      gainedItem: Obtenido <c>+{amount}</c> <item id="{item}" />
+      craftedItem: Fabricado <c>+{amount}</c> <item id="{item}" />
+      gainedMoney: Obtenido <c i="0">+{amount}</c> <c i="1">monedas</c>
+      characterGained: El personaje obtiene <c>+{amount}</c> de experiencia />
+      arrivedAt: Has llegado a <location /> <c>{location}</c>.
+      nothingHappened: No ha sucedido nada notorio.
+      skillLeveledUp: <skill skill="{skill}" /> ha subido del nivel <c i="0">{from}</c>
+        al nivel <c i="1">{to}</c>.
+      characterLeveledUpFrom: El personaje ha subido del nivel <c i="0">{from}</c>
+        al nivel <c i="1">{to}</c>.
