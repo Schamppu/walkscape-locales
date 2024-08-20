@@ -2,14 +2,11 @@ singulars:
   skilling:
     chestFind:
       global:
-        desc: Un mago llamado Tarhiel afirmó que se podía caminar sobre polvo de estrellas
-          con estos zapatos. Algunos dicen que sigue cayendo a día de hoy.
-        name: Un mago llamado Tarhiel afirmó que se podía caminar sobre polvo de estrellas
-          con estos zapatos. Algunos dicen que sigue cayendo a día de hoy.
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
         text: Global <stat s="chestFind"/>
       whileMainSkill:
-        desc: Un mago llamado Tarhiel afirmó que se podía caminar sobre polvo de estrellas
-          con estos zapatos. Algunos dicen que sigue cayendo a día de hoy.
+        desc: <PLACEHOLDER>
         text: <stat s="chestFind"/> mientras <supp k="skill"/>
         name: <PLACEHOLDER>
       whenKeywordSetBonus:
@@ -344,8 +341,20 @@ singulars:
           objetos.
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> mientras <supp k="skill"/> en <supp k="keyword"/>
+          .
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="findCollectibles"> Posibilidad de encontrar coleccionables
           </stat>
+      whileLocationKeyword:
+        desc: <PLACEHOLDER>
+        text: Global <stat s="findCollectibles"/> mientras <supp k="keyword"/> .
+        name: <PLACEHOLDER>
+  custom:
+    gainAdventurersGuildToken:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Posibilidad de encontrar <hl>1</hl> token de guía del Aventurero
