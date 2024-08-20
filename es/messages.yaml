@@ -10,3 +10,33 @@ singulars:
     saveUnsuccesfullLootTables:
       text: La tabla de botín contiene filas que no tienen ningún objeto asociado.
       title: Fallo al guardar
+  popups:
+    skillLevel:
+      skillLevelUp: '{skillName} sube de nivel'
+      newActivity: <chip><stext><c>¡Nueva actividad debloqueada!</c></stext></chip><c>{activityName}</c>
+        ahora disponible.
+      newItem: <chip><stext><c>'Nuevo objeto desbloqueado!</c></stext></chip> Puedes
+        equipar <item id="{item}"/>.
+      newRecipe: <chip><stext><c i="0">¡Nueva receta desbloqueada!</c></stext></chip><c
+        i="1">{recipeName}</c>.
+      newDrop: <chip><stext><c i="0">Ahora puedes conseguir </c></stext></chip><c
+        i="1">{itemName}</c> de la actividad <c>{activityName}</c>.
+      newRoute: '<chip><stext><c i="0">Nueva ruta de viaje desbloqueda: </c></stext></chip>
+        <c i="1"><location id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c>
+        .'
+      unlocks: Desbloqueo
+      noNewUnlocks: No hay nuevos desbloqueos para este nivel.
+    inactiveSteps:
+      stepsWhileInactive: Pasos ganados mientras el juego estaba inactivo
+    achievementUnlocked:
+      achievementUnlocked: '{achievement} logro desbloqueado'
+      requirements: Requerimientos
+      rewards: Recompensas
+      achievementPoints: '{points} puntos de logro'
+    characterLevelUp:
+      characterLevelUp: ¡Subes de nivel!
+      unlocks: Desbloqueos
+      noNewUnlocks: No hay desbloqueos nuevos para este nivel.
+    idleSteps:
+      stepsWhileAway: Pasos ganados mientras el juego estaba cerrado
+      whileYouWereAway: Mientras no estabas...
