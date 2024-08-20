@@ -81,7 +81,7 @@ singulars:
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> estando en <supp k="realm"/>
+        text: Global <stat s="workEfficiency"/> estando en <supp k="realm"/>
       whileRealmAndTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -169,6 +169,10 @@ singulars:
         desc: <PLACEHOLDER>
         text: Global <stat s="doubleAction"/> mientras estés en <supp k="keyword"/>
           localización.
+      whileTravelingAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> mientras viajabas a <supp k="realm"/>
     craftingOutcome:
       whenKeywordSetBonus:
         text: Global <stat s="craftingOutcome"/> si llevas puesto al menos <supp k="quantity"/>
@@ -309,3 +313,39 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="findGems"> posibilidad de encontrar nidos de pájaros </stat>
+          mientras <supp k="skill"/> en <supp k="keyword"/> .
+    findBirdNests:
+      whileWoodcutting:
+        text: <stat s="findBirdNests"> posibilidad de encontrar nidos de pájaros </stat>
+          mientras <supp k="skill"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findBirdNests"> posibilidad de encontrar nidos de pájaros</stat>
+          mientras <supp k="skill"/> en <supp k="keyword"/> .
+    findCollectibles:
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> mientras <supp k="skill"/>
+      whenAchievementPoints:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"> Posibilidad de encontrar coleccionables
+          </stat> cuando <supp k="achievementPoints"/>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"> Posibilidad de encontrar coleccionables
+          </stat> si llevas equipados al menos <supp k="quantity"/> <supp k="keyword"/>
+          objetos.
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"> Posibilidad de encontrar coleccionables
+          </stat>
