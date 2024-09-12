@@ -141,6 +141,8 @@ singulars:
           name: Ciężki hełm z brązu
         legs:
           name: Bigwanty z brązu
+          desc: Te pokryte brązem nogi zapewniają niezachwianą ochronę podczas każdej
+            wyprawy.
         lightHelmet:
           desc: Ten hełm nosi na sobie znamię tych, którzy opanowali sztukę tworzenia
             nakryć głowy które chronią, a jednocześnie nie ograniczają szybkości i
@@ -149,6 +151,12 @@ singulars:
         shoes:
           desc: Przynajmniej są lżejsze od tej pary z żelaza!
           name: Buty z brązu
+        sword:
+          desc: Miecz.
+          name: Miecz z brązu
+        shield:
+          name: Tarcza z brązu
+          desc: Tarcza.
       copper:
         chest:
           desc: Wymaga sporej ilości miedzi, ale chroni najważniejsze części ciała.
@@ -158,15 +166,25 @@ singulars:
           name: Rękawice z miedzi
         heavyHelmet:
           name: Ciężki hełm z miedzi
+          desc: Miedziany, ciężki hełm, będący wizją odporności, poświęca całą zwinność
+            dla maksymalnej obrony.
         legs:
           name: Bigwanty z miedzi
+          desc: Niektóre miedziane nogawice, charakteryzujące się połączeniem wytrzymałości
+            i swobody ruchu, zapewniają podstawowy poziom ochrony.
         lightHelmet:
           name: Lekki hełm z miedzi
+          desc: Miedziany lekki hełm, błyszcząca korona ochronna, zapewnia równowagę
+            między lekką obroną a zwinnością.
         shoes:
           desc: Ciężkie buty zapewniające niewielką ochronę.
           name: Buty z miedzi
         sword:
           name: Miedziany miecz
+          desc: Lekki miecz.
+        shield:
+          desc: Lekka tarcza.
+          name: Miedziana tarcza
       farganite:
         chest:
           name: Napierśnik z farganitu
@@ -188,10 +206,15 @@ singulars:
           name: Napierśnik z żelaza
         gloves:
           name: Rękawice z żelaza
+          desc: Te rękawice , wytrzymałe i dopracowane w najdrobniejszych szczegółach
+            , zapewniają pewny uścisk dłoniom poszukiwaczy przygód.
         heavyHelmet:
           name: Ciężki hełm z żelaza
+          desc: Ten hełm służy jako strażnik dla tych, którzy maszerują w samo serce
+            niebezpieczeństwa, wpajając niezachwianą pewność siebie noszącego.
         legs:
           name: Bigwanty z żelaza
+          desc: Nogawice płytowe są ciężkie, ale zapewniają umiarkowaną ochronę kończyn.
         lightHelmet:
           name: Lekki hełm z żelaza
         shoes:
@@ -256,6 +279,8 @@ singulars:
             bezpośredni i groźny sposób by zapewnić pożywienie z wód.
         largeFishingNet:
           name: Duża sieć rybacka
+          desc: Wielka sieć rybacka, stworzona przez społeczności przybrzeżne, jest
+            siecią aspiracji rzuconą szeroko na ciągle zmieniające się pływy.
         oakFishingRod:
           name: Wędka z dębu
           desc: Dębowa wędka, arcydzieło doświadczonych rzemieślników, niesie w sobie
@@ -280,6 +305,9 @@ singulars:
         willowFishingRod:
           name: Wierzbowa wędka
           desc: Wędka wykonana z wierzby jest lekka i miękka w dotyku.
+        tidalLure:
+          name: Przynęta pływowa
+          desc: Przynęta wygląda jak wir. Bardzo skuteczna w przyciąganiu ryb.
       mining:
         basicPickaxe:
           name: Zwykły kilof
@@ -648,7 +676,7 @@ singulars:
           ty wiesz, gdzie to znalazłeś.
       salt:
         name: Sól
-        desc: <PLACEHOLDER>
+        desc: Sól jest najbardziej rozpowszechnionym wzmacniaczem smaku w całym Arenum.
       honey:
         name: Plaster Miodu
         desc: Ten wielki plaster ocieka świeżutkim miodkiem.
@@ -900,13 +928,16 @@ singulars:
           się w wodzie.
       rawSwordfish:
         name: Surowy miecznik
-        desc: <Placeholder>
+        desc: Ta srebrna ryba jest długa, a na jej nosie znajduje się wyrostek przypominający
+          miecz, którego używa do ogłuszania ofiary.
       rawShark:
         name: Surowy rekin
-        desc: <Placeholder>
+        desc: Ta ogromna ryba ma wiele ostrych zębów ustawionych w wielu rzędach.
+          Widziałeś głowę jednej z nich zamontowaną na ścianie w Frosthook Emporium.
       rawAnglerfish:
         name: Surowa żabnica
-        desc: <Placeholder>
+        desc: Ta dziwna ryba ma ogromną paszczę z długimi zębami przypominającymi
+          sztylety. Jej oczy wydają się być ślepe. Na jej czole wyrasta jasna plama.
     smithing:
       bronzeBar:
         name: Sztabka brązu
@@ -940,7 +971,7 @@ singulars:
         desc: Nieco wysokiej jakości metalowych pozostałości
       hydriliumBar:
         name: Sztaba Hydrilium
-        desc: <Placeholder>
+        desc: Sztabka hydrilu ma bladozielony kolor.
     woodcutting:
       birchLogs:
         desc: Gładkie i blade, drewno brzozowe emanuje elegancją i prostotą.
@@ -1029,7 +1060,7 @@ singulars:
         desc: Nieśmiertelnik z zapisanym imieniem podróżnika, którego od dawna nikt
           nie widział. Gildia Poszukiwaczy Przygód będzie nim zainteresowana.
       adventurersPin:
-        name: Emaliowana Szpilka Poszukiwacza Przygód
+        name: Emaliowana szpilka poszukiwacza przygód
         desc: Przypinka z symbolem Gildii Poszukiwaczy Przygód. Jest trochę zardzewiała,
           ale wciąż błyszcząca. Gildia Poszukiwaczy Przygód wyrazi wdzięczność za
           jej zwrot.
