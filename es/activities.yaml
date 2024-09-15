@@ -82,6 +82,8 @@ singulars:
           correr por tus venas. El mundo se desdibuja a tu alrededor y, por un momento,
           te conviertes en un velocista invernal que conquista la colina nevada.
         name: Montar en trineo
+      traveling:
+        name: Viajar
     jarvonia:
       mountainClimbingBeginner:
         desc: Te preparas para subir. Hace un día precioso, con sol y sin viento.
@@ -155,24 +157,24 @@ singulars:
       lakeFishing:
         desc: Colocas cuidadosamente el cebo con los dedos helados y lo lanzas sobre
           la tranquila superficie del lago.
-        name: Pesca en lago
+        name: Pescar en lago
       pondFishing:
         desc: En medio del paisaje invernal, el tranquilo estanque brilla con una
-          serena belleza.
-        name: Pesca en estanque
+          serena belleza. Sus calmadas aguas prometen captura.
+        name: Pescar en estanque
       seaFishingNet:
         desc: A lo largo de la costa invernal, buscas un lugar apartado y lanzas la
           red en las tranquilas y frías aguas, disfrutando de la apacible soledad
           de la pesca en el mar.
-        name: Pesca marítima (Red)
+        name: Pesca en mar (Red)
       seaFishingRod:
         desc: A lo largo de la costa invernal, buscas un lugar apartado y lanzas el
           sedal en las tranquilas y frías aguas, disfrutando de la apacible soledad
           de la pesca en el mar.
-        name: Pesca marítima (Caña)
+        name: Pesca en mar (Caña)
       seaFishingCage:
         desc: Una corriente rica en nutrientes trae todo tipo de crustáceos a la zona.
-        name: Pesca marítima (Jaula)
+        name: Pesca en mar (Jaula)
     syrenthia:
       seaFishingSpear:
         name: Pesca en mar (Lanza)
@@ -183,7 +185,7 @@ singulars:
         desc: Impulsado por la caza, recorres las aguas profundas, muy consciente
           de lo que te rodea. Cada fibra de tu ser está preparada para atacar a cualquier
           depredador antes de que éste pueda atacarte a ti.
-        name: Caza de deprepador (Lanza)
+        name: Caza de depredadores (Lanza)
   foraging:
     gdte:
       butterflyCatching:
@@ -194,19 +196,18 @@ singulars:
       forestForaging:
         desc: Mientras paseas por el tranquilo abrazo del bosque, te sumerges en su
           armonía y recoges los dones de la naturaleza que prosperan bajo su suave
-          dosel.
-        name: Forrajeo en el bosque
+          tapiz.
+        name: Recolectar en el bosque
       plainsForaging:
         desc: A medida que serpenteas por las llanuras templadas, te encontrarás en
           un viaje de descubrimiento, tejiendo a través de un paisaje donde los tesoros
           de la naturaleza aguardan bajo el suave sol y el cielo azul.
-        name: Forrajeo en las llanuras
+        name: Recolectar en las llanuras
       swampForaging:
         desc: Entre la fina niebla y las misteriosas marañas de raíces de los árboles,
           atraviesas charcos y espesa vegetación en busca de los misterios que esconden
-          los lechos de musgo y las barcas abandonadas. Con la esperanza de encontrar
-          recuerdos olvidados y reliquias de la vida fructífera de otros.
-        name: Forrajeo en pantanos
+          los lechos de musgo y las barcas abandonadas.
+        name: Recolectar en pantanos
       trellinDumpsterDiving:
         name: Buceo en contenedores de basura de Trellin
         desc: En medio de los callejones laberínticos de la ciudad, exploras los rincones
@@ -227,32 +228,32 @@ singulars:
         desc: Encaramado al borde del imponente acantilado, exploraras cuidadosamente
           el escarpado terreno en busca de hierbas silvestres, setas resistentes y
           otros tesoros comestibles que prosperan en este entorno elevado.
-        name: Forrajeo en acantilados
+        name: Recolectar en acantilados
       coastForaging:
         desc: Al pasear por los invernales paisajes costeros, uno se funde con el
           frío, buscando sustento y calor entre las rocas cubiertas de nieve y los
           charcos helados.
-        name: Forrajeo en costa
+        name: Recolectar en costa
       forestForaging:
         desc: En medio del bosque invernal, te aventuras con ojo avizor en busca de
           tesoros ocultos bajo el manto de nieve, abrazando la emoción de descubrir
           las ofrendas comestibles de la naturaleza.
-        name: Forrajeo en el bosque
+        name: Recolectar en el bosque
       glacierForaging:
         desc: Buscas a lo largo y ancho del vacío glaciar. Aprendes mucho sobre ti
           mismo, pero ¿hay algo que encontrar aquí?
-        name: Forrajeo en glaciar
+        name: Recolectar en glaciar
       plainsForaging:
         desc: Con cada suave zancada por las llanuras, te sumerges en la abundancia
           natural, recogiendo bayas silvestres, semillas y brotes tiernos que prosperan
           en el suelo bajo tus pies.
-        name: Forrajeo en las llanuras
+        name: Recolectar en las llanuras
       seashellSearching:
         name: Buscar conchas
         desc: Buscas cuidadosamente a lo largo de la costa alguna concha o perla valiosa.
       caveForaging:
         desc: Está oscuro aquí, mejor traer una fuente de luz.
-        name: Forrajeo en cueva
+        name: Recolectar en cueva
       hornOfRespiteTreasureHunt:
         desc: El Gremio de Aventureros ha propuesto el desafío de encontrar algunos
           objetos especiales alrededor del Cuerno del Respiro. ¿Cuánto tiempo te llevará
@@ -263,9 +264,9 @@ singulars:
         desc: En busca de preciosas conchas marinas, nadas cerca del fondo del mar.
           La mayoría se encuentran escondidas bajo la arena, mientras que otras se
           aferran a los rincones de las rocas submarinas.
-        name: Forrajeo de conchas
+        name: Recolectar conchas
       merfolkFarmForaging:
-        name: Forrajeo en granja de tritones
+        name: Recolectar en granja de tritones
         desc: Tu acceso a la Granja Marina Comunal te otorga la libertad de buscar
           comida en los interminables campos agrícolas submarinos. Aquí encontrarás
           una gran variedad de plantas esperando a ser recogidas.
@@ -273,6 +274,10 @@ singulars:
         name: Recolectar quelpo
         desc: Con una gran cantidad de quelpo moviendose a tu alrededor, inspeccionas
           con cuidado cada uno de ellos, antes de arrancar el mejor.
+      wreckDiving:
+        name: Bucear en naufragio
+        desc: Buceas profundo, entre los restos del naufragio que es la tumba de Casbrant,
+          esperando encontrar tesoros.
   mining:
     global:
       mineCoal:
@@ -282,27 +287,27 @@ singulars:
         name: Extraer carbón
       mineCopperOre:
         desc: El rítmico tintineo de tu pico al golpear la superficie rocosa llena
-          el aire mientras extraes con insistencia el mineral de cobre.
-        name: Extraer mineral de cobre
+          el aire mientras extraes con insistencia la mena de cobre.
+        name: Extraer mena de cobre
       mineFarganiteOre:
         desc: Con sudor y lágrimas, extraes lentamente parte de la farganita a pesar
           de su tremenda dureza.
-        name: Extraer mineral de farganita
+        name: Extraer mena de farganita
       mineIronOre:
         desc: Cada una de tus oscilaciones revela la humilde belleza del mineral de
-          hierro, una materia prima fiable con una amplia gama de usos prácticos.
-        name: Extraer mineral de hierro
+          hierro, una materia prima fiable y con una amplia gama de usos prácticos.
+        name: Extraer mena de hierro
       mineTarsiliumOre:
-        desc: En tu aventura para extraer mineral de alquitranio, las profundas y
-          resonantes cámaras de la tierra se convierten en tu lienzo, y el descubrimiento
-          de cada nueva veta se siente como desenterrar un pedazo de historia.
-        name: Extraer mineral de alquitranio
+        desc: En tu aventura para extraer menas de alquitranio, las profundas y resonantes
+          cámaras de la tierra se convierten en tu lienzo, y el descubrimiento de
+          cada nueva veta se siente como desenterrar un pedazo de historia.
+        name: Extraer mena de alquitranio
       mineTinOre:
-        desc: El sonido de tu pico resuena por toda la mina mientras picas incansablemente,
+        desc: El sonido de tu pico retumba por toda la mina mientras picas incansablemente,
           descubriendo las vetas ocultas de mineral de estaño que esperan ser descubiertas.
-        name: Extraer mineral de estaño
+        name: Extraer mena de estaño
       mineTarsiliumOreUnderwater:
-        name: Extraer mineral de alquitranio (bajo el agua)
+        name: Extraer mena de alquitranio (bajo el agua)
         desc: La luz no llega a estas profundidades, pero no es diferente a una cueva.
           Con alquitranio, siempre es dificil ver la negra mena en un entorno oscuro.
     jarvonia:
@@ -336,11 +341,11 @@ singulars:
         name: Extraer roca volcánica
         desc: Balancear el pico bajo el agua es un desafío, pero ocasionalmente, al
           golpear la roca volcánica, se suelta un trozo lo suficientemente grande
-          que luego guardas en tu mochila.
+          que guardas en tu mochila.
       mineTarsiliumOre:
-        name: Extraer mineral de alquitranio
-        desc: Sorprendido al encontrar minerales de alquitranio bajo el agua, comienzas
-          a extraerlos sin mucha vacilación.
+        name: Extraer mena de alquitranio
+        desc: Sorprendido al encontrar menas de alquitranio bajo el agua, comienzas
+          a extraerlas sin dudarlo.
       fossilMining:
         name: Extraer fósiles
         desc: Atraído por las maravillas del pasado, centras tu atención en encontrar
@@ -364,18 +369,18 @@ singulars:
           conseguir algunos troncos de estos árboles de formas fascinantes.
         name: Talar mangles
       cutMapleTrees:
-        desc: Con constantes golpes de hacha, trabajas para derribar los resistentes
-          arces, cuyos robustos troncos requieren perseverancia para ser vencidos.
+        desc: Con constantes hachazos, trabajas para derribar los resistentes arces,
+          cuyos robustos troncos requieren perseverancia para ser vencidos.
         name: Talar arces
       cutOakTrees:
         desc: Con firmeza, talas los imponentes robles, cuyas ramas se extienden como
           un abrazo de la naturaleza.
         name: Talar robles
       cutPineTrees:
-        desc: Manejas el hacha con determinación para derribar los pinos.
+        desc: Blandes el hacha con determinación para derribar los pinos.
         name: Talar pinos
       cutSpruceTrees:
-        desc: Agarrando el hacha con fuerza, canalizas tus fuerzas para derribar los
+        desc: Agarrando el hacha firmemente, canalizas tus fuerzas para derribar los
           imponentes abetos.
         name: Talar abetos
       cutTeakTrees:
@@ -384,20 +389,20 @@ singulars:
         name: Talar teca
       cutWillowTrees:
         desc: Los anchos troncos de estos sauces están resultando todo un desafío,
-          pero con tus hábiles y potentes balanceos consigues derribarlos uno a uno.
+          pero con tus hábiles y potentes blandidos consigues derribarlos uno a uno.
         name: Talar sauces
       firewoodMaking:
         desc: Con paciencia, sudor, esfuerzo y tu fiel hacha, partes los troncos sin
           piedad. Ojalá pudieras partirlos con tus propias manos. Tendrías que ser,
           como mínimo, un superhéroe.
-        name: Fabricación de leña
+        name: Fabricar leña
       branchTrimming:
         desc: Podar las ramas cercanas al suelo ayuda a prevenir incendios forestales.
         name: Podar ramas
     syrenthia:
       coralCutting:
         name: Cortar coral
-        desc: Corales, algunos tan grandes como árboles pequeños, te rodean. Balanceas
+        desc: Corales, algunos tan grandes como árboles pequeños, te rodean. Blandes
           tu hacha hacia su base y los extraes, uno tras otro. A diferencia de los
           árboles en la superficie, los corales no tocan el suelo al caer sino que
           flotan.
