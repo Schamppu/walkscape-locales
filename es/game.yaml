@@ -32,10 +32,10 @@ maps:
     ethereal: Etéreo
     ewerethien: Ewerethien
     galeforge: \t\t Forja Vendaval es una ciudad de <c>innovación y progreso</c>,
-      conquistada por el poderoso Imperio de Wallisia. Enclavada entre Wallisia y
-      <c>el archipiélago</c>, es un lugar donde florecen la tecnología y la industria.\n\n\t\t
+      conquistada por el poderoso Imperio de Valisia. Enclavada entre Valisia y <c>el
+      archipiélago</c>, es un lugar donde florecen la tecnología y la industria.\n\n\t\t
       Los habitantes de Forja Vendaval son <c>ambiciosos e impulsivos</c>, y no dejan
-      de superar los límites de lo posible. La ciudad es una metrópolis bulliciosa,
+      de superar los límites de lo posible. La ciudad es una metrópolis inquieta,
       <c>donde las fábricas bullen de actividad</c> y las calles están repletas de
       mercaderes que venden las últimas innovaciones.
     gdte: \t\t El Gran Ducado de Trellin-Erdwise, dividido <c>enfrentándose a una
@@ -45,7 +45,7 @@ maps:
       y codicia</c>.
     jarvonia: \t\t Jarvonia, <c>una tierra de hielo y oscuridad</c>, gobernada por
       una poderosa hermandad religiosa, es un reino independiente de gente resistente
-      unida por su inquebrantable <c>fe</c> y su <c>férrea determinación</c> de sobrevivir.\n\n\t\
+      unida por su inquebrantable <c>fe</c> y su <c>férrea determinación</c> de sobrevivir.\n\n\t\t
       A pesar de los duros inviernos y el aislamiento, encuentran fuerza y protección
       a través de su religión, sus <c>corazones brillantes contra el frío</c>.
     painfulislands: Islas Dolorosas
@@ -54,9 +54,9 @@ maps:
       descendiente de un gran guerrero, comanda un ejército que ha <c>conquistado
       el continente</c>, dejando sólo Jarvonia intacta.\n\n\t\t Las verdes praderas
       son <c>el corazón de todo el continente</c>, proporcionando abundantes cosechas
-      así como recursos que alimentan <c>las capacidades industriales y militares
-      del imperio</c>. El imperio cuenta con la mayor población del continente, y
-      sus gentes están <c>orgullosas de su fuerza y poder</c>.
+      así como recursos que alimentan las capacidades industriales y militares del
+      <c>imperio</c>. El imperio cuenta con la mayor población del continente, y sus
+      gentes están <c>orgullosas de su fuerza y poder</c>.
     wrentmark: \t\t Wrentmark es <c>un reino forjado por el fuego</c>, donde el sol
       abrasador azota <c>las arenas del desierto</c>. Los habitantes de Wrentmark
       son <c>un grupo orgulloso y resistente</c>, que ha prosperado en este duro entorno
@@ -69,7 +69,7 @@ maps:
     ethereal: Etéreo
     ewerethien: Ewerethien
     galeforge: Forja el futuro y no temas nada
-    gdte: Atado por las mareas y los juncos
+    gdte: Unidos por las mareas y los juncos
     jarvonia: A través del frío, nuestros corazones brillan
     painfulislands: Islas Dolorosas
     ridraddak: Rid Raddak
@@ -91,37 +91,37 @@ plurals:
     money:
       one: moneda
       other: monedas
-      two: ''
-      few: ''
-      many: ''
-      zero: ''
+      two: 'monedas'
+      few: '-'
+      many: '-'
+      zero: '-'
 singulars:
   commonPhrases:
     lookingForInternet: Buscando conexión a internet...
     noActivity: Sin actividad.
-    allSkills: ''
+    allSkills: 'Todas las habilidades'
   intro:
     whereAreYouFrom: ¿Puedo preguntarte de dónde eres?
     welcome: 'Bienvenido a Arenum, forastero. Parece que has aparecido justo a las
       afueras de <hl>Kallaheim</hl>, la ciudad más grande del norte.'
   items:
     gearTypes:
-      agility: Herramienta de Agilidad
+      agility: Herramienta de agilidad
       cape: Capa
-      chest: Pechera
-      cooking: Utensilio de Cocina
+      chest: Torso
+      cooking: Utensilio de cocina
       feet: Pies
-      fishing: Herramienta de Pesca
-      foraging: Herramienta de Forrajeo
+      fishing: Herramienta de pesca
+      foraging: Herramienta de recolección
       hands: Manos
       head: Cabeza
       legs: Piernas
-      mining: Herramienta de Minería
+      mining: Herramienta de minería
       neck: Cuello
       primary: Principal
       ring: Anillo
       secondary: Secundario
-      woodcutting: Herramienta de Tala
+      woodcutting: Herramienta de tala
       back: 'Espalda'
     itemTags:
       fine: Fino
@@ -138,5 +138,4 @@ singulars:
     placeholder: Marcador de posición
   requirements:
     skills:
-      level: Requiere <skill skill="{skill}" level="{level}"" isRequirement="true"/>
-        nivel.
+      level: Requiere nivel <skill skill="{skill}" level="{level}"" isRequirement="true"/>.
