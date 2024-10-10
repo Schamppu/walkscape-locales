@@ -10,3 +10,74 @@ singulars:
     saveUnsuccesfullLootTables:
       text: La tabla de botín contiene filas que no tienen ningún objeto asociado.
       title: Fallo al guardar
+    comingSoon:
+      title: Próximamente
+      text: Este contenido <hl>no está disponible</hl> en la versión actual de WalkScape.
+    disabled:
+      title: Deshabilitado
+  popups:
+    skillLevel:
+      skillLevelUp: '{skillName} sube de nivel'
+      newActivity: <chip><stext><c>¡Nueva actividad debloqueada!</c></stext></chip><c>{activityName}</c>
+        ahora disponible.
+      newItem: <chip><stext><c>'Nuevo objeto desbloqueado!</c></stext></chip> Puedes
+        equipar <item id="{item}"/>.
+      newRecipe: <chip><stext><c i="0">¡Nueva receta desbloqueada!</c></stext></chip><c
+        i="1">{recipeName}</c>.
+      newDrop: <chip><stext><c i="0">Ahora puedes conseguir </c></stext></chip><c
+        i="1">{itemName}</c> de la actividad <c>{activityName}</c>.
+      newRoute: '<chip><stext><c i="0">Nueva ruta de viaje desbloqueda: </c></stext></chip>
+        <c i="1"><location id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c>
+        .'
+      unlocks: Desbloqueo
+      noNewUnlocks: No hay nuevos desbloqueos para este nivel.
+    inactiveSteps:
+      stepsWhileInactive: Pasos ganados mientras el juego estaba inactivo
+    achievementUnlocked:
+      achievementUnlocked: '{achievement} logro desbloqueado'
+      requirements: Requerimientos
+      rewards: Recompensas
+      achievementPoints: '{points} puntos de logro'
+    characterLevelUp:
+      characterLevelUp: ¡Subes de nivel!
+      unlocks: Desbloqueos
+      noNewUnlocks: No hay desbloqueos nuevos para este nivel.
+    idleSteps:
+      stepsWhileAway: Pasos ganados mientras el juego estaba cerrado
+      whileYouWereAway: Mientras no estabas...
+      gainedExperience: <skill skill="{skill}" /> ha ganado <c>+{exp}</c> de experiencia.
+      gainedItem: Obtenido <c>+{amount}</c> <item id="{item}" />
+      craftedItem: Fabricado <c>+{amount}</c> <item id="{item}" />
+      gainedMoney: Obtenido <c i="0">+{amount}</c> <c i="1">monedas</c>
+      characterGained: El personaje obtiene <c>+{amount}</c> de experiencia />
+      arrivedAt: Has llegado a <location /> <c>{location}</c>.
+      nothingHappened: No ha sucedido nada notorio.
+      skillLeveledUp: <skill skill="{skill}" /> ha subido del nivel <c i="0">{from}</c>
+        al nivel <c i="1">{to}</c>.
+      characterLeveledUpFrom: El personaje ha subido del nivel <c i="0">{from}</c>
+        al nivel <c i="1">{to}</c>.
+  errors:
+    fatalError:
+      error: Sentimos el error. Recuerda que el juego está en fase Beta, y las copias
+        de seguridad del jugador se hacen diariamente.
+    serverError:
+      noClosedBetaAccess:
+        title: Sin acceso a la beta cerrada
+        text: No tienes acceso a la beta cerrada. O tu acceso limitado ha caducado,
+          o nunca has tenido acceso.
+      newClientUpdate:
+        title: Nueva actualización del juego disponible
+        text: Tu juego no está actualizado, y hay una nueva versión disponible. Por
+          favor, descarga la última versión para continuar jugando.
+      noInternetConnection:
+        title: Sin conexión a internet
+      serverOffline:
+        title: El servidor de WalkScape está desconectado
+      serverMaintenance:
+        title: El servidor de WalkScape está en mantenimiento
+      newUpdate:
+        title: Nueva actualización
+      unknownError:
+        title: Error desconocido.
+    characterValidation:
+      nameTooShort: El nombre de tu personaje ha de tener 3 letras o más.

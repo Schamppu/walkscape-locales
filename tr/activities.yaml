@@ -57,8 +57,34 @@ singulars:
         name: Gölet balıkçılığı
       seaFishingNet:
         name: Ağlı deniz balıkçılığı
+        desc: Kış tarafından ele geçirilmiş kıyı şeridinde tenha bir köşe bularak
+          ipini sessiz ve soğuk sulara atar, deniz balıkçılığındaki huzurlu yalnızlığın
+          tadını çıkarırsın.
       seaFishingRod:
         name: Oltalı deniz balıkçılığı
+        desc: Kış tarafından ele geçirilmiş kıyı şeridinde tenha bir köşe bularak
+          ipini sessiz ve soğuk sulara atar, deniz balıkçılığındaki huzurlu yalnızlığın
+          tadını çıkarırsın.
+      seaFishingCage:
+        desc: Besleyici bir akıntı her çeşit kabukluyu bu bölgeye getirir.
+        name: Kafesli deniz balıkçılığı
+    gdte:
+      magnetFishing:
+        desc: 'Güçlü bir mıknatıs kullanarak sudan eşya çıkarmak nadiren karın doyurur,
+          ancak birkaç faydası da yok değil: Çevreyi temizler ve suçların aydınlatılmasına
+          yardımcı olur. Bu konudaki düzenlemelere dikkat ederek keyfine bak! Oltana
+          her şey takılabilir!'
+        name: Mıknatıs balıkçılığı
+    syrenthia:
+      seaFishingSpear:
+        name: Mızraklı deniz balıkçılığı
+        desc: Sıkıca kavradığın mızrağınla gemi enkazının çevresinde tur atarken vurabileceğin
+          kadar yaklaşmaya cesaret edecek büyük balıklar için tetikte beklersin.
+      predatorHunting:
+        name: Mızraklı yırtıcı avı
+        desc: Av hırsıyla derin suları ikiye yarar, gözünü dört açarsın. Varlığının
+          her zerresi onlar sana saldırmadan önce yırtıcılara saldırmak için hazır
+          durumda.
   foraging:
     gdte:
       butterflyCatching:
@@ -90,8 +116,9 @@ singulars:
           engebeli araziyi dikkatlice keşfedersin.
         name: Yamaç toplayıcılığı
       coastForaging:
-        desc: Buz gibi kıyılarda gezinip dururken, karla kaplı taşlarla donmuş havuzlar
-          arasında rızık ve bir parça sıcaklık ararken soğukla bütünleşirsin.
+        desc: Buz gibi kıyılarda gezinip dururken, karla kaplı taşlar ile donmuş havuzcuklar
+          arasında bir lokma rızık, bir parça sıcaklık ararken havadaki soğuk kemiklerine
+          işler.
         name: Kıyı toplayıcılığı
       forestForaging:
         desc: Kışlık ormanın ortasında, keskin gözlerinle kar örtüsünün altında kalmış
@@ -103,34 +130,80 @@ singulars:
           meyveleri, tohumları ve körpe filizleri toplarken kendini doğanın bereketine
           kaptırırsın.
         name: Ova toplayıcılığı
+      seashellSearching:
+        name: Deniz kabuğu arayışı
+        desc: Kıyı boyunca dikkatlice değerli deniz kabukları ve incileri ararsın.
   mining:
     global:
       mineCoal:
         desc: 'Sadık kazmanın her bir darbesi, krallığı koruyan silahları ve zırhları
           dövmek için bu diyarın demircilerine yakacak sağlayan vazgeçilmez kömür
-          damarlarını ortaya çıkarır. '
-        name: Kömür çıkart
+          damarlarını ortaya çıkarır.'
+        name: Kömür çıkar
       mineCopperOre:
         desc: Israrla bakır madeni arayan kazmanın taş yüzeyde çıkardığı ritmik şıngırtılar
           havayı doldurur.
-        name: Bakır madeni çıkart
+        name: Bakır madeni çıkar
       mineFarganiteOre:
         desc: Muazzam sağlamlığına rağmen, farganitin bir kısmını ter ve gözyaşı dökerek
           yavaşça çıkarırsın.
-        name: Farganit madeni çıkart
+        name: Farganit madeni çıkar
       mineIronOre:
-        desc: Kazmayı her savuruşun demir madeninin mütevazı güzelliğini ortaya çıkarır.
-          Çeşit çeşit pratik kullanımıyla güvenilir bir madde.
-        name: Demir madeni çıkart
+        desc: Her bir kazma savuruşunla demir madeninin mütevazı güzelliği ortaya
+          çıkar. Çeşit çeşit pratik kullanımıyla güvenilir bir madde.
+        name: Demir madeni çıkar
       mineTarsiliumOre:
-        desc: Tarsilyum madeni çıkartma girişiminde, yeryüzünün derin ve yankılı mağaraları
-          tuvalin haline gelir. Her yeni damarın keşfi, tarihin bir parçasını açığa
-          çıkarmak gibi hissettirir.
-        name: Tarsilyum madeni çıkart
+        desc: Tarsilyum madeni çıkarma girişiminde, yeryüzünün derin ve yankılı mağaraları
+          senin tuvalin olur. Her bir yeni damarın keşfiyle, tarihin bir parçasını
+          açığa çıkarmış gibi hissedersin.
+        name: Tarsilyum madeni çıkar
       mineTinOre:
         desc: Sen kalay madeninin keşfedilmeyi bekleyen gizli damarlarını yorulmak
           bilmeden kazıyarak ortaya çıkarırken, kazmanın sesi maden sahasında yankılanır.
-        name: Kalay madeni çıkart
+        name: Kalay madeni çıkar
+      mineTarsiliumOreUnderwater:
+        name: Su altında tarsilyum madeni çıkar
+        desc: Su altında ışık çok az olsa da mağaralardan pek farklı sayılmaz. Mesele
+          tarsilyum olunca, bu siyah madeni karanlıkta görmek her zaman zor iş.
+    jarvonia:
+      goldPanning:
+        desc: Bu yöntem, nehirlerdeki tortul yataklardan faydalanarak yapılan ilkel
+          bir madencilik tekniğidir. Önce, elek dipteki kumun altına daldırılır. Daha
+          sonra, elde sallayarak geriye sadece kum ve bir ihtimal altın parçaları
+          kalana kadar çakıllar ayrılır.
+        name: Altın arayışı
+      spelunking:
+        name: Mağaracılık
+        desc: Yerdeki bir kertenkele gibi zorla sürünürsün. Aklını saran uğursuz düşüncelerle
+          neredeyse donakalırsın. Bir anlığına hepsini bir kenara bırakıp yoluna devam
+          edersin. Çok geçmeden, meydana çıkan keşfedilmemiş yeni bir yol içini neşeyle
+          doldurur.
+      surfaceSaltMining:
+        name: Yüzeyde tuz madenciliği
+        desc: Sürekli tuzla haşır neşir olmaktan susuz kalındığı için madenlerden
+          tuz çıkarmak zor iştir. Şansın var ki, bu kaya tuzu kristalleri havadar
+          yüzeyde bulunurlar ve kazmayla vurunca kolayca koparlar.
+      stoneQuarrying:
+        name: Taş çıkarma
+        desc: Taş ve kaya!
+    syrenthia:
+      caveDiving:
+        name: Mağara dalgıçlığı
+        desc: Karanlık ve engin mağaralara cesurca(veya aptalca) dalarsın. Bu meşgale
+          bütün Arenum'un en tehlikeli meşgalelerinden birisidir. Kalbini çarpıntı,
+          damarlarını adrenalinle doldurduğu kesin.
+      mineVolcanicRock:
+        name: Volkanik taş çıkar
+        desc: Su altında kazma sallamak zorlasa da, volkanik taşa vurmak ara sıra
+          yeterince büyük bir parçanın kopmasını sağlayarak çantanı doldurmanı sağlar.
+      mineTarsiliumOre:
+        name: Tarsilyum madeni çıkar
+        desc: Su altında bulduğuna şaşırdığın tarsilyumu fazla tereddüt etmeden çıkarmaya
+          başlarsın.
+      fossilMining:
+        name: Fosil kazısı
+        desc: Geçmişin mucizelerinin ardına düşerek tüm dikkatini antik fosilleri
+          bulmaya verirsin.
   smithing:
     jarvonia:
       horseshoeMaking:
@@ -142,6 +215,8 @@ singulars:
         name: Huş ağacı kes
       cutMangroveTrees:
         name: Mangrov ağacı kes
+        desc: Bir yandan karmaşık köklere takılmamaya dikkat ederken, bu muazzam şekilli
+          ağaçlardan birkaç kütük elde etmek için ter dökersin.
       cutMapleTrees:
         desc: Üstesinden gelmesi sabır gerektiren sağlam gövdeli ve dirençli akçaağaçları,
           kuvvetli balta darbelerinle devirmeye çalışırsın.
@@ -151,12 +226,31 @@ singulars:
           kesersin.
         name: Meşe ağacı kes
       cutPineTrees:
-        desc: Çam ağaçlarını devirmek için baltanı kararlı bir şekilde sallarsın.
+        desc: Çam ağaçlarını devirmek için baltanı kararlıca sallarsın.
         name: Çam ağacı kes
       cutSpruceTrees:
         desc: Sıkıca kavradığın baltanı yükselen ladin ağaçlarına tüm gücünle indirirsin.
         name: Ladin ağacı kes
       cutTeakTrees:
         name: Tik ağacı kes
+        desc: Terli alnın ve su toplayan parmaklarınla, bu sapasağlam odundan birkaç
+          kütük çıkarmaya kararlısın.
       cutWillowTrees:
         name: Söğüt ağacı kes
+        desc: Söğütlerin geniş tomrukları mücadele gerektirse de, becerikli ve kuvvetli
+          darbelerle birer birer devirmeyi başarırsın.
+      firewoodMaking:
+        name: Yakacak odun hazırlama
+        desc: Sabır, emek, gayret ve güvenilir nacağınla birlikte, kütükleri acımasızca
+          yararsın. Keşke çıplak ellerinle de yapabilseydin. En azından süper kahraman
+          olman gerekirdi.
+      branchTrimming:
+        name: Dal budama
+        desc: Yere yakın dalları budamak bu civardaki orman yangınlarına mani olmaya
+          katkı sağlar.
+    syrenthia:
+      coralCutting:
+        name: Mercan toplama
+        desc: Bazıları ufak ağaçlar boyunda olan mercanlar dört bir yanını sarar.
+          Diplerine indirdiğin nacağınla teker teker kesersin. Yüzeydeki ağaçların
+          aksine, yere devrilmek yerine yüzeye yükselirler.

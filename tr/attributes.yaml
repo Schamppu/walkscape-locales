@@ -2,11 +2,14 @@ singulars:
   skilling:
     chestFind:
       global:
-        desc: <PLACEHOLDER> Becerilerin üzerinde çalışırken, terk edilmiş bir sandık bulursun. Durduğu yerden çabucak alırsın. Ağzına kadar eşya dolu, neredeyse dökülecek. Çalışmana geri dönmeden önce, alelacele çantana koyarsın.
+        desc: <PLACEHOLDER> Becerilerin üzerinde çalışırken, terk edilmiş bir sandık
+          bulursun. Durduğu yerden çabucak alırsın. Ağzına kadar eşya dolu, neredeyse
+          dökülecek. Çalışmana geri dönmeden önce, alelacele çantana koyarsın.
         name: <PLACEHOLDER>Kısmetli Mükafat
         text: Genel <stat s="chestFind"/>
       whileMainSkill:
-        desc: <PLACEHOLDER>Çalışırken bir sandık bulursun! Önceki işine geri dönmeden önce, sandığı heyecanla alıp çantana koyarsın.
+        desc: <PLACEHOLDER>Çalışırken bir sandık bulursun! Önceki işine geri dönmeden
+          önce, sandığı heyecanla alıp çantana koyarsın.
         name: <PLACEHOLDER>Beklenmedik Servet
         text: <supp k="skill"/> için <stat s="chestFind"/>
       whileTraveling:
@@ -54,7 +57,33 @@ singulars:
     workEfficiency:
       global:
         text: Genel <stat s="workEfficiency"/>
+        desc: <YERTUTUCU>
+        name: <YERTUTUCU>
       whileMainSkill:
         text: <supp k="skill"/> için <stat s="workEfficiency"/>
+        name: <YERTUTUCU>
+        desc: <YERTUTUCU>
       whileTraveling:
         text: Seyahat ederken <stat s="workEfficiency"/>
+        name: <YERTUTUCU>
+        desc: <YERTUTUCU>
+      whileRealmAndTraveling:
+        name: <YERTUTUCU>
+        text: <supp k="realm"/> içerisinde gezerken <stat s="workEfficiency"/>
+        desc: <YERTUTUCU>
+      whileRealm:
+        name: <YERTUTUCU>
+        desc: <YERTUTUCU>
+        text: <supp k="realm"/> içerisindeyken, küresel <stat s="workEfficiency"/>
+      whileRealmAndMainSkill:
+        name: <YERTUTUCU>
+        desc: <YERTUTUCU>
+        text: <supp k="realm"/> içerisinde <supp k="skill"/> iken <stat s="workEfficiency"/>
+      whenKeywordSetBonus:
+        name: <YERTUTUCU>
+        desc: <YERTUTUCU>
+        text: En az <supp k="quantity"/><supp k="keyword"/> eşya giyerken küresel
+          <stat s="workEfficiency"/>.
+      whileMainSkillAndLocationKeyword:
+        name: <YERTUTUCU>
+        desc: <YERTUTUCU>
