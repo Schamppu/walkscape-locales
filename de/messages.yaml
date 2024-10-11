@@ -4,11 +4,9 @@ plurals:
       text:
         few: '-'
         many: '-'
-        one:
-          Das Löschen von Objekten ist nicht rückgängig zu machen. Das Objekt wird
+        one: Das Löschen von Objekten ist nicht rückgängig zu machen. Das Objekt wird
           in anderen Objekten {n} mal referenziert.
-        other:
-          Das Löschen von Objekten ist nicht rückgängig zu machen. Das Objekt
+        other: Das Löschen von Objekten ist nicht rückgängig zu machen. Das Objekt
           wird in anderen Objekten {n} mal referenziert.
         two: '-'
         zero: '-'
@@ -19,45 +17,37 @@ singulars:
       text: Deine Änderungen wurden erfolgreich gespeichert.
       title: Speichern erfolgreich
     saveUnsuccesfullLootTables:
-      text:
-        Die Beutetabelle enthält Zeilen, die nicht mit einem Gegenstand verknüpft
+      text: Die Beutetabelle enthält Zeilen, die nicht mit einem Gegenstand verknüpft
         sind.
       title: Speichern fehlgeschlagen
     disabled:
-      text:
-        Diese Funktion wurde <hl>temporär deaktiviert</hl>. Weitere Informationen
+      text: Diese Funktion wurde <hl>temporär deaktiviert</hl>. Weitere Informationen
         findest du auf Portal, Reddit oder Discord.
       title: Deaktiviert
     comingSoon:
       title: Demnächst
-      text:
-        Dieser Inhalt <hl>is nicht verfügbar</hl> in der aktuellen Version von
+      text: Dieser Inhalt <hl>is nicht verfügbar</hl> in der aktuellen Version von
         WalkScape.
   popups:
     inactiveSteps:
       stepsWhileInactive: Schritte, während das Spiel inaktiv war
     achievementUnlocked:
-      achievementUnlocked: {achievement} Errungenschaft freigeschaltet
+      achievementUnlocked: '{achievement} Errungenschaft freigeschaltet'
       requirements: Anforderungen
       rewards: Belohnungen
-      achievementPoints: {points} Errungenschaftspunkte
+      achievementPoints: '{points} Errungenschaftspunkte'
     skillLevel:
-      newDrop:
-        <chip><stext><c i="0">Neue Beute</c></stext></chip> <c i="1">{itemName}</c>
+      newDrop: <chip><stext><c i="0">Neue Beute</c></stext></chip> <c i="1">{itemName}</c>
         kann jetzt erhalten werden von <c>{activityName}</c>.
-      newActivity:
-        <chip><stext><c>Neue Aktivität</c></stext></chip> <c>{activityName}</c>
+      newActivity: <chip><stext><c>Neue Aktivität</c></stext></chip> <c>{activityName}</c>
         freigeschaltet.
       unlocks: Freischaltungen
       noNewUnlocks: Keine neuen Freischaltungen für dieses Level.
-      newItem:
-        <chip><stext><c>Gegenstand freigeschaltet</c></stext></chip> <item
+      newItem: <chip><stext><c>Gegenstand freigeschaltet</c></stext></chip> <item
         id="{item}"/> kann ausgerüstet werden.
-      newRecipe:
-        <chip><stext><c i="0">Neues Rezept</c></stext></chip> <c i="1">{recipeName}</c>
+      newRecipe: <chip><stext><c i="0">Neues Rezept</c></stext></chip> <c i="1">{recipeName}</c>
         freigeschaltet.
-      newRoute:
-        <chip><stext><c i="0">Neue Reiseroute</c></stext></chip> <c i="1"><location
+      newRoute: <chip><stext><c i="0">Neue Reiseroute</c></stext></chip> <c i="1"><location
         id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c> freigeschaltet.
     idleSteps:
       gainedExperience: <skill skill="{skill}" /> erhielt <c>+{exp}</c> Erfahrung.
@@ -72,35 +62,28 @@ singulars:
       noNewUnlocks: Keine neuen Freischaltungen für dieses Level.
   errors:
     fatalError:
-      error:
-        Entschuldigung für den Fehler. Denk daran, dass das Spiel eine geschlossene
+      error: Entschuldigung für den Fehler. Denk daran, dass das Spiel eine geschlossene
         Beta ist und alle Spielstände täglich in der Cloud gesichert werden.
     characterValidation:
-      nameContainsleadingTrailingSpaces:
-        Führende oder folgende Leerzeichen sind nicht
+      nameContainsleadingTrailingSpaces: Führende oder folgende Leerzeichen sind nicht
         erlaubt.
       nameContaintsConsecutiveSpaces: Aufeinanderfolgende Leerzeichen sind nicht erlaubt.
       nameTooShort: Charaktername muss mindestens 3 Buchstaben lang sein.
-      nameTooShortWithSpacesRemoved:
-        Ohne Leerzeichen muss der Charaktername mehr
+      nameTooShortWithSpacesRemoved: Ohne Leerzeichen muss der Charaktername mehr
         als drei Buchstaben lang sein.
-      nameContainsSpecialCharacters:
-        Der Charaktername enthält Sonderzeichen. Es sind
+      nameContainsSpecialCharacters: Der Charaktername enthält Sonderzeichen. Es sind
         nur Buchstaben, Zahlen und Leerzeichen erlaubt.
     serverError:
       noClosedBetaAccess:
         title: Kein geschlossener Beta Zugang
-        text:
-          Du hast keinen Zugang zur geschlossenen Beta. Entweder ist dein begrenzter
+        text: Du hast keinen Zugang zur geschlossenen Beta. Entweder ist dein begrenzter
           Zugang abgelaufen, oder du hattest nie welchen.
       newClientUpdate:
-        text:
-          Dein Spiel ist veraltet und es ist eine neue Version des Spiels verfügbar.
+        text: Dein Spiel ist veraltet und es ist eine neue Version des Spiels verfügbar.
           Bitte lade die neueste Version des Spiels herunter, um weiterzuspielen.
       noInternetConnection:
         title: Keine Internetverbindung
-        text:
-          Du hast keine aktive Internetverbindung, die für die Validierung deines
+        text: Du hast keine aktive Internetverbindung, die für die Validierung deines
           Clients mit dem Server erforderlich ist. Bitte versuchen Sie es erneut,
           wenn du eine Internetverbindung hast.
       serverOffline:
