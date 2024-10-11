@@ -6,11 +6,19 @@ maps:
         '1': 'Normal '
         '2': 'Difícil '
         '3': Extrema
+        'normal': Normal
+        'hard': Dificil
+        'extreme': Extremo
+        'easy': Fácil
       difficultyTitle:
         '0': Logros fáciles
         '1': Logros normales
         '2': Logros difíciles
         '3': Logros extremos
+        'hard': Logros difíciles
+        'extreme': Logros extremos
+        'easy': Logros fáciles
+        'normal': Logros normales
   characterCreation:
     phrases:
       bodyTypes:
@@ -33,6 +41,50 @@ maps:
       raceTypes:
         human: Humano
         none: Ninguno
+      expressions:
+        'normal': Normal
+        'angry': Enojado
+        'laughing': Riendo
+        'sad': Triste
+        'smile': Sonriendo
+        'smirk': Sonrisa
+        'surprise': Sorpresa
+        'veryAngry': Muy enfadado
+  character:
+    stepsTime:
+      'hourly': Pasos por hora
+      'daily': Pasos diarios
+      'monthly': Pasos mensuales
+  settings:
+    boolSettings:
+      'showRecipesMaterialsAreMet': Se cumplen los requisitos materiales
+      'showRecipesRequirementsAreMet': Se cumplen los requisitos de nivel
+      'showCompletedAchievements': Mostrar logros completados
+      'showRecipesServiceAreMet': Se cumplen los requisitos de servicio
+    visibilitySettings:
+      'public': Público
+      'friends': Solo amigos
+      'private': Privado
+    notificationImportance:
+      'high': Emite un sonido o vibra
+      'low': No hay sonido, no hay vibración y no aparece en la barra de estado.
+      'urgent': Emite un sonido o vibra y aparece como notificación emergente.
+    languages:
+      'de': Alemán
+      'fi': Finés
+      'pl': Polaco
+      'es': Español (España)
+      'en': Inglés
+      'it': Italiano
+    stepCountNotifications:
+      'never': Nunca
+      'always': Siempre
+      'everyThousand': Cada mil
+      'everyTenThousand': Cada diez mil
+      'everyHundred': Cada cien
+    leaderboardFilter:
+      'everyone': Todo el mundo
+      'friends': Amigos
 plurals:
   achievements:
     phrases:
@@ -87,13 +139,40 @@ plurals:
         other: Pasos para subir de nivel
         two: '-'
         zero: '-'
+      stepsUntilArrival:
+        zero: '-'
+        one: Paso hasta llegar
+        many: '-'
+        other: Pasos hasta llegar
+        two: Pasos hasta llegar
+        few: '-'
 singulars:
   achievements:
     info:
-      viewDescription: Desbloquea logros para ganar <hl>Progreso de Recompensas</hl>. Cuando se llena el Progreso de recompensas, ganas una recompensa para todos tus personajes. Algunos logros también dan recompensas por desbloquearlos.
+      viewDescription: Desbloquea logros para ganar <hl>Progreso de Recompensas</hl>.
+        Cuando se llena el Progreso de recompensas, ganas una recompensa para todos
+        tus personajes. Algunos logros también dan recompensas por desbloquearlos.
+      specialItems: Objetos especiales, tales como <c>coleccionables</c>, <c>objetos
+        de misión</c> y <c>artefactos</c> son recolectados durante tu aventura en
+        WalkScape. Puedes comprobarlos aquí. Los coleccionables te otorgan puntos
+        de logro.
+      collectibleItems: Los coleccionables son objetos que puedes obtener en el mundo
+        de WalkScape. Hay varios tipos de coleccionables que puedes intentar conseguir.
+        No ocupan espacio en el inventario y están siempre con tu personaje.
+      totalProgressUnlocks: Ganarás recompensas en proporción a tu progreso total
+        de los logros, y perderás el acceso a los objetos si se van añadiendo más
+        logros.
+      checkPointUnlocks: Esos logros están disponibles a partir de cierto número de
+        puntos de logro. No perderás acceso a ellos incluso si más puntos de logro
+        son añadidos en un futuro.
+      noCollectibleItems: No has conseguido ningún coleccionable aún.
     phrases:
       notUnlocked: Logro bloqueado
       rewardProgress: Progreso de recompensa
+      unclaimedRewards: 'Recompensas sin reclamar: '
+      showRewards: Mostrar recompensas
+      totalProgressUnlocks: Progreso total desbloqueado
+      checkPointUnlocks: Desbloqueos con progreso guardado
   crafting:
     phrases:
       materials: Materiales
@@ -103,21 +182,342 @@ singulars:
       requiresMaterial: Requiere un material.
       requiresOneOfTheFollowing: Requiere uno de los siguientes materiales.
       rewards: Recompensas
+      noMaterials: No tienes materiales disponibles para fabricar en este momento.
+      noServiceRequirements: No hay servicios requeridos.
+      noMaterialsThatCouldBeUsed: No hay materiales que puedan usarse para fabricar
+        en tu inventario.
+      showingRecipiesThatUses: Mostrando recetas que usan
+      requiresService: Requiere un servicio.
   inventory:
     info:
-      noItemEquipped: No hay ningún objeto equipado. \n\n Puedes equipar un objeto seleccionando uno de la siguiente lista y pulsando "Equipar".
-      noItemSelected: No hay ningún objeto seleccionado. \n\n Selecciona un objeto de la siguiente lista para compararlo con el objeto actual y equiparlo.
+      noItemEquipped: No hay ningún objeto equipado. \n\n Puedes equipar un objeto
+        seleccionando uno de la siguiente lista y pulsando "Equipar".
+      noItemSelected: No hay ningún objeto seleccionado. \n\n Selecciona un objeto
+        de la siguiente lista para compararlo con el objeto actual y equiparlo.
+      noItemsFound: No se han encontrado objetos en tu inventario que encajen en esta
+        ranura.
     phrases:
       treasury: Tesoro
+      selectedStacks: <c>{stacks}</c> pilas seleccionadas
+      requirementsNotMet: No se cumplen los requisitos.
+      cantEquip: No se puede equipar.
+      checkBank: Ver banco
+      slotDoesntExist: Esta ranura ya no existe.
+      allItemsInUse: Todos estos objetos están actualmente en uso y no pueden dejarse
+        caer.
+      noConsumables: No hay consumibles en tu inventario.
+      noConsumableSelected: No se ha seleccionado ningún consumible. Puede seleccionar
+        uno de los siguientes.
+      equipToRingTwo: Equipar en la ranura de anillo 2
+      noItemEquipped: Ningún objeto equipado
+      longPressTip: <c>Consejo:</c> La pulsación larga en una pila de objetos selecciona
+        todas las pilas similares.
+      areYouSureToDrop: ¿Estás seguro de que quieres soltar los objetos? Los objetos
+        desaparecen para siempre cuando se sueltan.
+      dropItems: ¿Soltar objetos?
+      slots: Ranuras <c>{slots}</c>
+      slotsCount: 'Ranuras:'
+      cantBeDropped: El objeto no se puede dejar caer.
+      attributes: Atributos
+      abilities: Capacidades
+      equipToRingOne: Equipar en la ranura de anillo 1
+      emptySlot: Ranura vacía
+      allSkills: Todas las habilidades
+      noPotionConsumables: No hay <hl>pociones</hl> en tu inventario.
+      noItemSelected: Ningún objeto seleccionado
+      duration: Duración
+      durationInSteps: Activo durante<c>{pasos}</c> <icon i="Steps" /> pasos
+      inUse: En uso
+      disableWhenChanging: Desactivar al cambiar de actividad
+      selectedConsumable: Consumible seleccionado
+      consumables: Consumibles
+      oneOrMoreCantBeDropped: No se pueden soltar uno o más objetos.
+      noFoodConsumables: No hay <hl>alimentos</hl> en tu inventario.
+      itemsInUse: Has seleccionado objetos que ya están en uso. No puedes soltar o
+        depositar objetos en uso.
+      enableWhenBack: Volver a activar al iniciar una actividad en la que se utilizó
+        anteriormente
+      requires: Requiere
+      equipToToolSlot: Equipar en la ranura de herramienta {id}
+    options:
+      consenseInventory: Condensar inventario
+      expandInventory: Expandir inventario
+      showMaterials: Mostrar materiales
+      showGear: Mostrar equipo
+      showConsumables: Mostrar consumibles
   location:
     phrases:
       activities: Actividades
       services: Servicios
+      jobBoard: Tablón de trabajos
+      jobs: Trabajos
+      noActivites: No hay actividades disponibles en este lugar.
+      factions: Facciones
+      routes: Rutas
+      tapToShowRoutes: Pulsa para mostrar rutas
+      buildings: Edificios
   pfpCreation:
     buttons:
       choose: Elegir
       hideHat: Ocultar el sombrero
       randomize: Aleatorizar
       showHat: Mostrar sombreros
+      enableFaceAccessorie: Habilitar accesorio facial
+      enableBackAccessorie: Habilitar accesorio trasero
+      enableFacepaint: Habilitar pintura facial
+      enableDynamicBackground: Activar fondo dinámico
     phrases:
       currentSelection: Selección actual
+      homeRegion: Región de origen
+      race: Raza
+      selectedVariant: Variante {index} seleccionada
+      resetToDefault: Restablecer valores por defecto
+      colorOptions: Opciones de color
+      mainOptions: Opciones principales
+      extras: Extras
+      dynamicBackground: El fondo dinámico cambia la imagen de fondo en función de
+        la ubicación del personaje.
+      defaultExpression: Expresión por defecto
+      variants: Variantes
+      noVariantSelected: Ninguna variante seleccionada
+  faction:
+    phrases:
+      openFaction: Abrir facción
+  journal:
+    info:
+      jobInfo: Los trabajos son <c>tareas sencillas y repetibles</c> que puedes completar
+        para obtener recompensas. Puedes aceptar trabajos en los <c>tablones de trabajo</c>
+        en varias ubicaciones, como ciudades. Puedes tener hasta tres trabajos activos
+        a la vez.
+    phrases:
+      jobs: Trabajos
+  jobs:
+    phrases:
+      acceptJob: Aceptar trabajo
+      itemsFromInventory: Objetos del Inventario
+      abandonJob: Abandonar trabajo
+      youMustBeInLocation: Debe estar en la misma ubicación con <object id="{obj}"/>
+        para entregar los objetos.
+      hasNoItemsInBank: No hay objetos elegibles en tu banco.
+      rewards: Recompensas por completar
+      noJobsAvailable: 'En este momento no hay trabajos disponibles en esta ubicación.
+        Nuevos trabajos estarán disponibles en:'
+      acceptedJobs: Trabajos aceptados actualmente <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      itemsFromBank: Objetos del banco
+      hasNoBank: No hay banco en esta ubicación.
+      giveItems: Entregar objetos
+      give: Entregar
+      refreshIn: 'La tablón de trabajos se actualizará en:'
+      hasNoItemsInInventory: No hay objetos elegibles en tu inventario.
+      openJournal: Abrir diario
+    dialogs:
+      abandonJob:
+        title: Abandonar trabajo
+        text: ¿Estás seguro de que quieres abandonar este trabajo? Perderás todo el
+          progreso y recompensas de este trabajo.
+  mainMenu:
+    phrases:
+      email: E-mail / Nombre de usuario
+      password: Contraseña
+      pleaseEnterCredentials: Introduce las credenciales de tu cuenta de WalkScape.
+      authenticating: Autentificando...
+      pleaseWait: Por favor, espera...
+      createCharacter: Crear un nuevo personaje
+      logOut: Cerrar sesión
+      lostInternet: Tu dispositivo ha perdido la conexión a Internet. Esperando una
+        conexión...
+      areYouSureYouWantToDelete: ¿Estás seguro de que quieres borrar <hl>{name}</hl>?
+      deleteWord: BORRAR
+      downloadingContent: Descargando nuevos contenidos de juego
+      loadingGame: Cargando juego... ¡por favor espera!
+      logIn: Iniciar sesión
+      noBetaAccess: No hay acceso a la beta.
+      googlePlay: Actualización de Google Play
+      accountPage: Página de la cuenta
+      noInternet: Sin conexión a internet
+      downloadingLocalisations: Descargando localizaciones actualizadas
+      register: Registrarse
+      support: Apoya el juego
+      chooseCharacter: Elige tu personaje o crea uno nuevo.
+      dontDoIt: No lo hagas si no estás seguro.
+      deletingCharacter: Borrar tu personaje es <hl>irreversible</hl>.
+      iAmSure: Estoy seguro
+      ifYouAreSure: Si estás seguro, escribe <c>DELETE</c> en el campo y pulsa continuar.
+      areYouAbsolutelySure: ¿Estás completamente seguro? Después de este paso, perderás
+        permanentemente tu personaje.
+      welcomeToWalkscape: Bienvenido a WalkScape, <hl>forastero</hl>. Por favor, inicia
+        sesión.
+  activity:
+    info:
+      consumablesUsage: Puedes elegir una <c>comida</c> y una <c>poción</c> para usar
+        mientras haces actividades.
+    phrases:
+      consumables: Consumibles
+  character:
+    info:
+      skillBreakdown: Aquí está el desglose total de todas las habilidades que tu
+        personaje ha subido de nivel durante su aventura.
+    phrases:
+      skills: Habilidades
+      stepsOfLastWeek: Pasos de los últimos 7 días
+      checkOut: Mira mi personaje {name} de WalkScape. Échale un vistazo en:\nhttps://walkscape.app
+      checkOutSubject: ¡Mira mi progreso en WalkScape!
+  permissions:
+    phrases:
+      pedometerPermission: Permisos para la cuenta de pasos
+      permissionExplanation: Para que el juego funcione, necesitamos que aceptes el
+        permiso para leer el contador de pasos de tu dispositivo. Por favor, actívalo
+        para continuar.
+      exactAlarmPermission: Permiso de alarma
+  rewards:
+    phrases:
+      alreadyClaimed: Ya reclamado
+  wardrobe:
+    phrases:
+      noHeadwear: No tienes ningún casco.
+      noFaceAccessories: No tienes ningún accesorio facial.
+      noBackAccessories: No tienes accesorios para la espalda.
+      noEyeAccessories: No tienes ningún accesorio ocular.
+  abilities:
+    phrases:
+      abilities: Capacidades
+      useAbility: Usar capacidad
+      useConsumable: Usar consumible
+      noAction: Sin acción
+      holdToUse: Mantener pulsado para usar
+      holdToCast: Mantener pulsado para lanzar
+    info:
+      youHaveNoAbilities: <hl>No tienes capacidades</hl>. Cierto equipamiento del
+        juego puede otorgarte capacidades que puedes usar para obtener algún beneficio
+        instantáneo en el juego por un tiempo de enfriamiento.
+      abilitiesInfo: Las capacidades son acciones especiales que puedes usar para
+        ganar beneficios instantáneos en el juego. Las habilidades tienen un tiempo
+        de recuperación, el cual debes esperar antes de volver a utilizarlas.
+  cooldowns:
+    phrases:
+      followingMustBeTrueToUse: 'No se cumplen los requisitos de uso:'
+      followingMustBeTrueToTick: 'Lo siguiente debe ser cierto para que el enfriamiento
+        se reduzca:'
+      cooldownRemaining: 'Tiempo de reutilización restante:'
+      cooldownReady: 'Tiempo de reutilización: Listo'
+      noCooldown: Sin tiempo de reutilización.
+  treasury:
+    phrases:
+      openChest: Abrir
+      openAll: Abrir todo
+      noItems: No tienes tesoros que abrir. Puedes conseguir cofres haciendo diversas
+        actividades.
+  settings:
+    categories:
+      account:
+        title: Cuenta
+        visibility: Visibilidad del perfil
+      character:
+        title: Personaje
+        anonOnLeaderboard: Anonimizar en la clasificación
+        hideSteps: Ocultar pasos
+      gameplay:
+        title: Jugabilidad
+        stopWhenOverEncumberedDefault: Parar por defecto en caso de sobrecarga
+      accessibility:
+        title: Accesibilidad
+        leftHandedMode: Modo zurdo
+      closedBeta:
+        title: Beta cerrada
+        clearStepsGraph: Limpiar el gráfico de pasos
+        useThisToClear: Utiliza esta opción si deseas restablecer el gráfico de pasos.
+          Es útil si has ganado pasos por errores y quieres restablecer el gráfico.
+      notifications:
+        title: Notificaciones
+        stepCountInterval: Intervalo de notificación
+        stepCountNotifications: Notificaciones de recuento de pasos
+        notificationType: Tipo de notificación
+      language:
+        title: Idioma
+    phrases:
+      exitToCharacterSelection: Salir a la selección de personajes
+      settings: Ajustes
+  leaderboards:
+    phrases:
+      first: Primero
+      me: Yo
+      leaderboards: Tablas de clasificación
+      totalExperience: Experiencia total
+      show: Mostrar
+      everyone: Todo el mundo
+      friends: Amigos
+      totalSteps: Pasos totales
+      totalLevel: Nivel total
+      loadingPage: Cargando página...
+      last: Último
+      achievementPoints: Puntos de logro
+  gear:
+    phrases:
+      combatModifiers: Modificadores de combate
+      noCombatModifiers: Sin modificadores de combate por objetos equipados.
+      skillModifiers: Modificadores de habilidad
+      permanentModifiers: Modificadores permanentes
+      noPermanentModifiers: Sin modificadores permanentes.
+      noSkillModifiers: No hay modificadores de habilidad de los objetos equipados.
+  tools:
+    phrases:
+      emptyToolSlot: Ranura de herramienta vacía
+      noToolEquipped: No hay ninguna herramienta equipada en esta ranura.
+      lockedToolSlot: Ranura de herramienta bloqueada hasta <c>nivel de personaje
+        {level}</c>.
+  trade:
+    phrases:
+      trade: CAMBIAR
+      restockIn: 'Reabastece en: '
+      selling: Vendiendo {ammount}
+      total: Total
+      buying: Comprando {ammount}
+  characterCreation:
+    phrases:
+      bodyType: Tipo de cuerpo
+      race: Raza
+      chooseABodyType: Elige un tipo de cuerpo
+      bodyTypeA: A
+      characterName: Nombre del personaje
+      bodyTypeB: B
+    info:
+      rememberSwipe: Recuerda que puedes volver atrás para cambiar las opciones elegidas
+        en cualquier momento durante la creación del personaje.
+  worldMap:
+    phrases:
+      activities: Actividades
+      services: Servicios
+      buildings: Edificios
+      pointsOfInterest: Puntos de interés
+      youHaveNotExplored: Aún no has explorado este lugar. Verás información sobre
+        esta ubicación después de haberla visitado una vez.
+      routeFromTo: <location i="{fromID}"/> a <location i="{toID}"/>
+      route: Ruta
+      currentLocation: Ubicación actual
+      routeRequirementsNotMet: 'Rutas del la camino seleccionado tienen requisitos
+        que no se cumplen:'
+      afterExploring: Después de explorar el lugar, podrás ver sus puntos de interés.
+      youreHere: Actualmente te encuentras en esta ubicación.
+      noActivities: No hay actividades disponibles en este ubicación.
+      information: Información
+  stats:
+    phrases:
+      stats: Estadísticas
+      totalSkillXp: Experiencia total de habilidad
+      totalSteps: Pasos totales
+    info:
+      stats: Recopilación de estadísticas de cada paso que has dado por el mundo de
+        Arenum.
+  tutorial:
+    phrases:
+      noMoreMessages: No mostrar los mensajes del tutorial
+      youWillGain: Si seleccionas esta opción, obtendrás los siguientes objetos.
+  social:
+    phrases:
+      manageFriends: Gestión social
+      pendingInvites: Invitaciones pendientes
+      friends: Amigos
+  bank:
+    phrases:
+      noItemsInventory: No hay objetos en tu inventario.
+      noItemsBank: No hay objetos en tu banco.
