@@ -15,6 +15,9 @@ maps:
       '3': Episk
       '4': Legendarisk
       '5': Eterisk
+    consumableTypes:
+      "food": ''
+      "potion": ''
   realmDescriptions:
     braemercia: Braemercia
     ethereal: Eterisk
@@ -87,8 +90,7 @@ singulars:
     placeholder: Plassholder
   requirements:
     skills:
-      level:
-        Krever <skill skill skill="{skill}" level="{level}"" isRequirement="true"/>
+      level: Krever <skill skill skill="{skill}" level="{level}"" isRequirement="true"/>
         nivå.
   intro:
     welcome: ''
