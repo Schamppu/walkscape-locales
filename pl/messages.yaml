@@ -2,11 +2,9 @@ plurals:
   dialogs:
     deleteClass:
       text:
-        one:
-          Usunięcie obiektów jest nieodwracalne. Ten obiekt jest odwoływany w innych
+        one: Usunięcie obiektów jest nieodwracalne. Ten obiekt jest odwoływany w innych
           obiektach {n} razy.
-        other:
-          Usunięcie obiektów jest nieodwracalne. Ten obiekt jest odwoływany w
+        other: Usunięcie obiektów jest nieodwracalne. Ten obiekt jest odwoływany w
           innych obiektach {n} razy.
         zero: '-'
         two: '-'
@@ -26,8 +24,7 @@ singulars:
       text: Ta treść <hl>jest jeszcze niedostępna</hl> w tej wersji WalkScape.
     disabled:
       title: Wyłączone
-      text:
-        Ta funkcja została <hl>tymczasowo wyłączona</hl>. Sprawdź Portal, Reddit
+      text: Ta funkcja została <hl>tymczasowo wyłączona</hl>. Sprawdź Portal, Reddit
         albo Discord po więcej informacji.
   popups:
     skillLevel:
@@ -35,17 +32,13 @@ singulars:
       skillLevelUp: Awansowano {skillName}
       unlocks: Odblokowania
       noNewUnlocks: Brak nowych odblokowań na ten poziom.
-      newItem:
-        <chip><stext><c>Odblokowano przedmiot</c></stext></chip> <item id="{item}"/>
+      newItem: <chip><stext><c>Odblokowano przedmiot</c></stext></chip> <item id="{item}"/>
         może być założony.
-      newRecipe:
-        <chip><stext><c i="0">Nowy przepis</c></stext></chip> Odblokowano
+      newRecipe: <chip><stext><c i="0">Nowy przepis</c></stext></chip> Odblokowano
         <c i="1">{recipeName}</c>.
-      newDrop:
-        <chip><stext><c i="0">Nowe przedmioty</c></stext></chip> Można założyć
+      newDrop: <chip><stext><c i="0">Nowe przedmioty</c></stext></chip> Można założyć
         <c i="1">{itemName}</c> w aktywności <c>{activityName}</c>.
-      newRoute:
-        <chip><stext><c i="0">Nowa trasa podróży</c></stext></chip> <c i="1"><location
+      newRoute: <chip><stext><c i="0">Nowa trasa podróży</c></stext></chip> <c i="1"><location
         id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c> została
         odblokowana.
     idleSteps:
@@ -58,14 +51,13 @@ singulars:
       whileYouWereAway: Kiedy ciebie nie było...
       nothingHappened: Nic ciekawego się nie stało.
       gainedExperience: <skill skill="{skill}" /> zwiększyło się o <c>+{exp}</c> doświadczenia.
-      skillLeveledUp:
-        Awansowano <skill skill="{skill}" /> z <c i="0">{from}</c>
+      skillLeveledUp: Awansowano <skill skill="{skill}" /> z <c i="0">{from}</c>
         do <c i="1">{to}</c>.
       gainedItem: Otrzymano <c>+{amount}</c> <item id="{item}" />
     inactiveSteps:
       stepsWhileInactive: Kroki otrzymane w trakcie nieaktywności gry
     achievementUnlocked:
-      achievementPoints: {points} Punktów Osiągnięć
+      achievementPoints: '{points} Punktów Osiągnięć'
       rewards: Nagrody
       achievementUnlocked: Odblokowano osiągnięcie {achievement}
       requirements: Wymagania
@@ -78,33 +70,27 @@ singulars:
       nameContainsleadingTrailingSpaces: Spacje początkowe i końcowe są niedozwolone.
       nameContaintsConsecutiveSpaces: Następujące po sobie spacje są niedozwolone.
       nameTooShort: Nazwa postaci musi mieć przynajmniej 3 znaki.
-      nameTooShortWithSpacesRemoved:
-        Po usunięciu spacji imię postaci musi mieć więcej
+      nameTooShortWithSpacesRemoved: Po usunięciu spacji imię postaci musi mieć więcej
         niż trzy litery.
-      nameContainsSpecialCharacters:
-        Nazwa postaci zawiera znaki specjalne. Dozwolone
+      nameContainsSpecialCharacters: Nazwa postaci zawiera znaki specjalne. Dozwolone
         są tylko litery, cyfry i spacje.
     serverError:
       noClosedBetaAccess:
         title: Brak dostępu do Zamkniętej Bety
-        text:
-          Nie masz dostępu do Zamkniętej Bety. Albo twój dostęp się wyczerpał
+        text: Nie masz dostępu do Zamkniętej Bety. Albo twój dostęp się wyczerpał
           albo nie otrzymałeś dostępu wcześniej.
       newClientUpdate:
         title: Aktualizacja klienta jest dostępna
-        text:
-          Twoja gra działa na starej wersji, a dostępna jest nowa. Prosimy ściągnij
+        text: Twoja gra działa na starej wersji, a dostępna jest nowa. Prosimy ściągnij
           najnowszą wersję, by móc kontynuować grę.
       noInternetConnection:
         title: Brak połączenia z Internetem
-        text:
-          Nie posiadasz aktywnego połączenia z Internetem, które wymagane jest,
+        text: Nie posiadasz aktywnego połączenia z Internetem, które wymagane jest,
           by zweryfikować twojego klienta z serwerem. Spróbuj ponownie, kiedy nawiążesz
           połączenie.
       serverOffline:
         title: Serwer WalkScape jest wyłączony
-        text:
-          Serwer gry jest aktualnie wyłączony. Może być to spowodowane pracami
+        text: Serwer gry jest aktualnie wyłączony. Może być to spowodowane pracami
           konserwacyjnymi albo problemem z serwerem. Spróbuj ponownie później.
       serverMaintenance:
         title: Serwer WalkScape jest w trybie konserwacji
@@ -116,11 +102,9 @@ singulars:
         text: Nieznany błąd.
       failureToUpdateContent:
         title: Aktualizacja treści nieudana
-        text:
-          Klient gry nie zdołał zaktualizować treści. Prosimy zgłoś to deweloperom
+        text: Klient gry nie zdołał zaktualizować treści. Prosimy zgłoś to deweloperom
           na Discordzie z detalami o tym błędzie i twoim urządzeniu. Możesz również
           spróbować otworzyć grę ponownie, by sprawdzić czy treść pobierze się poprawnie.
     fatalError:
-      error:
-        Wybacz nam ten błąd. Pamiętaj, że ta gra znajduje się w Zamkniętej Becie,
+      error: Wybacz nam ten błąd. Pamiętaj, że ta gra znajduje się w Zamkniętej Becie,
         a wszystkie postępy graczy są zapisywane codziennie w chmurze.
