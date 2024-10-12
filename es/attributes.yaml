@@ -25,12 +25,16 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="chestFind"/> mientras <supp k="skill"/> en <supp k="keyword"/>
-          localización.
+        text: <stat s="chestFind"/> mientras <supp k="skill"/> en ubicación<supp k="keyword"/>
+          .
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Global <stat s="chestFind"/> mientras estés en <supp k="keyword"/> localización.
+        text: Global <stat s="chestFind"/> mientras estés en ubicación<supp k="keyword"/>.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> mientras estés en<supp k="realm"/>
     stepsRequired:
       whileTraveling:
         text: <stat s="stepsRequired"/> al viajar
@@ -52,12 +56,12 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="stepsRequired"/> mientras <supp k="skill"/> en <supp k="keyword"/>
-          localización.
+        text: <stat s="stepsRequired"/> mientras <supp k="skill"/> en ubicación<supp
+          k="keyword"/> .
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Global <stat s="stepsRequired"/> mientras en <supp k="keyword"/> localización.
+        text: Global <stat s="stepsRequired"/> mientras en ubicación<supp k="keyword"/>.
     workEfficiency:
       whileTraveling:
         text: <stat s="workEfficiency"/> al viajar
@@ -95,8 +99,8 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> mientras <supp k="skill"/> en <supp k="keyword"/>
-          localización.
+        text: <stat s="workEfficiency"/> mientras <supp k="skill"/> en ubicación <supp
+          k="keyword"/> .
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -104,12 +108,12 @@ singulars:
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Global <stat s="workEfficiency"/> mientras estés en <supp k="keyword"/>
-          localización.
+        text: Global <stat s="workEfficiency"/> mientras estés en ubicación<supp k="keyword"/>
+          .
     fineMaterialFind:
       whileMainSkillAndLocationKeyword:
-        text: <stat s="fineMaterialFind"/> mientras <supp k="skill"/> en <supp k="keyword"/>
-          localización.
+        text: <stat s="fineMaterialFind"/> mientras <supp k="skill"/> en ubicación<supp
+          k="keyword"/> .
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whenAchievementPoints:
@@ -136,8 +140,12 @@ singulars:
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Global <stat s="fineMaterialFind"/> mientras estés en <supp k="keyword"/>
-          localización.
+        text: Global <stat s="fineMaterialFind"/> mientras estés en ubicación<supp
+          k="keyword"/>.
+      whileRealm:
+        text: <stat s="fineMaterialFind"/> mientras estés en <supp k="realm"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     doubleAction:
       whileMainSkill:
         text: <stat s="doubleAction"/> mientras <supp k="skill"/>
@@ -159,8 +167,8 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="doubleAction"/> mientras <supp k="skill"/> en <supp k="keyword"/>
-          localización.
+        text: <stat s="doubleAction"/> mientras <supp k="skill"/> en ubicación<supp
+          k="keyword"/> .
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -187,13 +195,17 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="craftingOutcome"/> mientras <supp k="skill"/> en <supp k="keyword"/>
-          localización.
+        text: <stat s="craftingOutcome"/> mientras <supp k="skill"/> en ubicación<supp
+          k="keyword"/> .
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Global <stat s="craftingOutcome"/> mientras estés en <supp k="keyword"/>
-          localización.
+        text: Global <stat s="craftingOutcome"/> mientras estés en ubicación <supp
+          k="keyword"/>.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> mientras que en <supp k="realm"/>
     doubleRewards:
       whenAchievementPoints:
         text: Global <stat s="doubleRewards"/> cuando <supp k="achievementPoints"/>
@@ -204,8 +216,8 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
-        text: <stat s="doubleRewards"/> mientras <supp k="skill"/> en <supp k="keyword"/>
-          localización.
+        text: <stat s="doubleRewards"/> mientras <supp k="skill"/> en ubicación<supp
+          k="keyword"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkill:
@@ -220,16 +232,19 @@ singulars:
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Global <stat s="doubleRewards"/> mientras estés en <supp k="keyword"/>
-          localización.
+        text: Global <stat s="doubleRewards"/> mientras estés en ubicación<supp k="keyword"/>.
+      whileActivity:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="doubleRewards"/> mientras se hace <supp k="activityType"/>.
     experience:
       globalSkillXp:
         text: Global <stat s="bonusExperience"/> en <supp k="skill"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
-        text: <stat s="bonusExperience"/> mientras <supp k="skill"/> en <supp k="keyword"/>
-          localización.
+        text: <stat s="bonusExperience"/> mientras <supp k="skill"/> en ubicación
+          <supp k="keyword"/> loc.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       global:
@@ -247,8 +262,7 @@ singulars:
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Global <stat s="bonusExperience"/> mientras estés en <supp k="keyword"/>
-          localización.
+        text: Global <stat s="bonusExperience"/> mientras estés ubicación<supp k="keyword"/>.
     travelingDistance:
       whileTraveling:
         desc: <PLACEHOLDER>
@@ -262,11 +276,10 @@ singulars:
       whileMainSkillAndLocationKeyword:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
-        text: <stat s="noMaterialsConsumed"/> mientras <supp k="skill"/> en <supp
-          k="keyword"/> localización.
+        text: <stat s="noMaterialsConsumed"/> mientras <supp k="skill"/> en ubicación<supp
+          k="keyword"/>.
       whileLocationKeyword:
-        text: Global <stat s="noMaterialsConsumed"/> estando en <supp k="keyword"/>
-          localización.
+        text: Global <stat s="noMaterialsConsumed"/> estando en ubicación <supp k="keyword"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkill:
