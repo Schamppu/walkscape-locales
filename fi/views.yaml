@@ -62,10 +62,29 @@ plurals:
 singulars:
   achievements:
     info:
-      viewDescription: Avaa saavutuksia ansaitaksesi <hl>palkintopisteitä</hl>. Kun palkitsemispistepalkki täyttyy, saat palkinnon kaikille hahmoillesi. Jotkut saavutukset antavat myös palkintoja niiden avaamisesta.
+      viewDescription: Avaa saavutuksia ansaitaksesi <hl>palkintopisteitä</hl>. Kun
+        palkitsemispistepalkki täyttyy, saat palkinnon kaikille hahmoillesi. Jotkut
+        saavutukset antavat myös palkintoja niiden avaamisesta.
+      collectibleItems: Keräilyesineet ovat asioita, joita voit saada WalkScapen maailmasta.
+        Keräilyesineitä on useita erilaisia, joita voit yrittää löytää. Ne eivät vie
+        repputilaa ja ovat aina hahmosi mukana.
+      noCollectibleItems: Sinulla ei ole vielä keräilyesineitä.
+      checkPointUnlocks: Nämä saavutukset ovat lunastettavissa tietyissä saavutuspisteiden
+        määrän etapeissa. Et menetä näitä saavutuksia, vaikka saavutuspisteitä tulisi
+        lisää.
+      totalProgressUnlocks: Saat nämä palkinnot sen mukaan, kuinka paljon saavutuksia
+        olet saavuttanut prosentuaalisesti kokonaismäärästä, ja menetät pääsyn esineisiin,
+        jos saavutuspisteitä tulee lisää ja jäät vaaditun prosentuaalisen määrän alle.
+      specialItems: Erikoisesineitä, kuten <c>keräilyesineitä</c>, <c>tehtäväesineitä</c>
+        ja <c>artifakteja</c>, kerätään koko matkasi aikana WalkScapessa. Voit tarkistaa
+        ne täältä. Keräilyesineet antavat sinulle saavutuspisteisiin edistystä.
     phrases:
       notUnlocked: Lukittu saavutus
       rewardProgress: Palkitsemispisteiden eteneminen
+      showRewards: Näytä palkinnot
+      totalProgressUnlocks: Kokonaisetenemisen palkinnot
+      checkPointUnlocks: Etappien palkinnot
+      unclaimedRewards: 'Lunastamattomat palkinnot: '
   crafting:
     phrases:
       materials: Materiaalit
@@ -75,12 +94,24 @@ singulars:
       requiresMaterial: Vaatii materiaalin.
       requiresOneOfTheFollowing: Vaatii yhden seuraavista materiaaleista.
       rewards: Palkinnot
+      noMaterials: Sinulla ei ole tällä hetkellä materiaaleja käsitöihin.
+      noServiceRequirements: Ei palveluvaatimuksia.
+      noMaterialsThatCouldBeUsed: Repussasi ei ole materiaaleja, joita voisi käyttää
+        käsityöhön.
+      showingRecipiesThatUses: Näytetään reseptit, joissa käytetään
+      requiresService: Vaatii palvelun.
   inventory:
     info:
-      noItemEquipped: Ei varustetta käytössä. \n\n Voit pukea esineen valitsemalla jonkin alla olevasta luettelosta ja painamalla "pue".
-      noItemSelected: Ei valittua esinettä. \n\n Valitse esine alla olevasta luettelosta, jotta voit verrata sitä nykyiseen esineeseen ja pukea sen.
+      noItemEquipped: Ei varustetta käytössä. \n\n Voit pukea esineen valitsemalla
+        jonkin alla olevasta luettelosta ja painamalla "pue".
+      noItemSelected: Ei valittua esinettä. \n\n Valitse esine alla olevasta luettelosta,
+        jotta voit verrata sitä nykyiseen esineeseen ja pukea sen.
+      noItemsFound: Repustasi ei löytynyt esineitä, jotka sopisivat tähän.
     phrases:
       treasury: Aarrekammio
+      dropItems: Pudota esineitä?
+      longPressTip: <c>Vinkki:</c> Esineen pitkä painallus valitsee kaikki samankaltaiset
+        esineet.
   location:
     phrases:
       activities: Toiminnat
@@ -93,3 +124,94 @@ singulars:
       showHat: Näytä päähine
     phrases:
       currentSelection: Nykyinen valinta
+  faction:
+    phrases:
+      openFaction: Avaa ryhmittymä
+  journal:
+    info:
+      jobInfo: Työtehtävät ovat <c>yksinkertaisia ja toistettavia tehtäviä</c>, jotka
+        voit suorittaa palkintoja saadaksesi. Voit ottaa vastaan töitä <c>työpaikkatauluilta</c>
+        eri paikoissa, kuten kaupungeissa. Sinulla voi olla kolme työtehtävää kerrallaan.
+    phrases:
+      jobs: Työtehtävät
+  jobs:
+    phrases:
+      acceptJob: Hyväksy työ
+      give: Anna
+      openJournal: Avaa päiväkirja
+      itemsFromInventory: Esineet repusta
+      itemsFromBank: Esineet pankista
+      hasNoItemsInBank: Pankissasi ei ole sopivia esineitä.
+      giveItems: Anna esineitä
+      refreshIn: 'Työtehtävätaulu päivitetään:'
+      rewards: Valmistumispalkinnot
+      hasNoItemsInInventory: Repussasi ei ole sopivia esineitä.
+      noJobsAvailable: 'Tällä hetkellä tässä paikassa ei ole töitä. Uusia työtehtäviä
+        on tulossa saataville:'
+      abandonJob: Luovu työstä
+      acceptedJobs: Tällä hetkellä hyväksytyt työt <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      youMustBeInLocation: Sinun on oltava samassa paikassa <object id="{obj}"/> kanssa
+        palauttaaksesi esineet.
+      hasNoBank: Tässä paikassa ei ole pankkia.
+    dialogs:
+      abandonJob:
+        title: Luovu työstä
+        text: Oletko varma, että haluat luopua tästä työstä? Menetät kaiken edistymisen
+          ja palkinnot tästä työstä.
+  activity:
+    phrases:
+      consumables: Kulutettavat
+    info:
+      consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
+  character:
+    phrases:
+      skills: Taidot
+      stepsOfLastWeek: Viimeisten 7 päivän askeleet
+      checkOut: Tässä on WalkScape-hahmoni {nimi}. Tsekkaa se!\nhttps://walkscape.app
+      checkOutSubject: Katso edistymiseni WalkScapessa!
+    info:
+      skillBreakdown: Tässä on hahmosi matkan aikana saavutettujen taitojen kokonaisjakauma.
+  permissions:
+    phrases:
+      pedometerPermission: Askelmittarin lupa
+      exactAlarmPermission: Hälytyslupa
+      permissionExplanation: Jotta peli toimii, tarvitsemme lupasi käyttää laitteesi
+        askelmittarin tietoja. Hyväksy tämä lupa jatkaaksesi peliin.
+  rewards:
+    phrases:
+      alreadyClaimed: Jo lunastettu
+  wardrobe:
+    phrases:
+      noHeadwear: Et omista mitään päähineitä.
+      noBackAccessories: Et omista mitään selkäasusteita.
+      noFaceAccessories: Et omista mitään kasvoasusteita.
+      noEyeAccessories: Et omista mistään silmäasusteita.
+  treasury:
+    phrases:
+      openChest: Avaa
+      openAll: Avaa kaikki
+      noItems: Sinulla ei ole aarteita avattavaksi. Voit saada arkkuja erilaisista
+        aktiviteeteistä.
+  abilities:
+    info:
+      abilitiesInfo: Kyvyt ovat erikoistoimintoja, joilla voit saada välittömiä etuja
+        pelissä. Kyvyillä on jäähdytysaika, joka sinun on odotettava, ennen kuin voit
+        käyttää kykyä uudelleen.
+      youHaveNoAbilities: <hl>Sinulla ei ole kykyjä</hl>. Tietyt pelissä olevat varusteet
+        voivat antaa sinulle kykyjä, joita voit käyttää saadaksesi jonkin välittömän
+        hyödyn pelissä jäähdytysaikaa vastaan.
+    phrases:
+      abilities: Kyvyt
+      useAbility: Käytä kykyä
+      useConsumable: Käytä kulutettava
+      noAction: Ei toimenpidettä
+      holdToCast: Pidä pohjassa loihtiaksesi
+      holdToUse: Pidä pohjassa käyttääksesi
+  cooldowns:
+    phrases:
+      followingMustBeTrueToTick: 'Seuraavien täytyy olla totta jotta jäähdytysaika
+        kuluu:'
+      cooldownRemaining: 'Jäljellä oleva jäähdytysaika:'
+      cooldownReady: 'Jäähdytysaika: Valmis'
+      noCooldown: Ei jäähdytysaikaa.
+      followingMustBeTrueToUse: 'Vaatimukset käyttämiseen eivät täyty:'
