@@ -15,19 +15,45 @@ maps:
       '4': Legendaarinen
       '5': Eteerinen
     consumableTypes:
-      "food": ''
-      "potion": ''
+      "food": 'Ruoka'
+      "potion": 'Rohto'
   realmDescriptions:
     painfulislands: Tuskan saaret
     ridraddak: Rid Raddak
-    'jarvonia': ''
-    'gdte': ''
-    'wallisia': ''
-    'galeforge': ''
-    'wrentmark': ''
-    'ewerethien': ''
-    'braemercia': ''
-    'ethereal': ''
+    'jarvonia': '\t\t Jarvonia, <c>jään ja koleuden maa</c>, jota hallitsee mahtava
+      uskonnollinen veljeskunta, on itsenäinen valtakunta, jossa elää sisukkaita ihmisiä.
+      Jarvonialaisia yhdistää horjumaton <c>usko</c> ja <c>kiivas päättäväisyys</c>
+      selviytyä.\n\n\t\t Kovista talvista ja eristyneisyydestä huolimatta he löytävät
+      voimaa ja turvallisuuden tunnetta uskonnostaan, ja kuten Jarvonialaiset sanovat:
+      heidän <c>sydämensä palavat kirkkaina kylmää vasten</c>.'
+    'gdte': '\t\t Trellin-Erdwisen suuriruhtinaskunta, joka on jakautunut <c>meneillään
+      olevan kriisin</c> edessä, on maa, jossa on monimuotoista luonnon <c>kauneutta</c>
+      ja <c>haasteita</c>.\n\n\t\t\t Trellinin suoalueet ja Erdwisen rannikkosatamat
+      ovat sekä kauneuden että vaaran lähteitä. Suuriruhtinaskunnan ihmisiä määrittelevät
+      <c>ylpeys ja ahneus</c>.'
+    'wallisia': '\t\t Wallisia, runsauden ja voiman maa. <c>Keisarinna</c>, suuren
+      soturin jälkeläinen, johtaa armeijaa, joka on <c>valloittanut koko mantereen</c>
+      ja jättänyt vain Jarvonian koskemattomaksi.\n\n\t\t\t\t Wallisian vihreät niityt
+      ovat <c>koko mantereen</c> sydän, joka tarjoaa runsaat sadot sekä resursseja,
+      jotka ruokkivat <c>valtakunnan</c> teollista ja sotilaallista kapasiteettia.
+      Valtakunnassa on maanosan suurin väestö, ja ihmiset ovat <c>ylpeitä voimastaan</c>.'
+    'galeforge': '\t\t Galeforge on <c>innovaation ja edistyksen kaupunki</c>, jonka
+      valloitti mahtava Wallisian valtakunta. Se sijaitsee Wallisian ja <c>saariston</c>
+      välissä ja on paikka, jossa teknologia ja teollisuus kukoistavat.\n\n\t\t\t\t
+      Galeforgen asukkaat ovat <c>kunnianhimoisia ja innokkaita</c>, ja he koettelevat
+      jatkuvasti teknologian mahdollisuuksien rajoja. Kaupunki on vilkas metropoli,
+      <c>jossa tehtaat tupruttavat savua</c> ja kadut ovat täynnä kauppiaita, jotka
+      myyvät uusimpia innovaatioita uteliaille.'
+    'wrentmark': '\t\t Wrentmark on <c>tulen takoma valtakunta</c>, jossa aurinko
+      paahtaa <c>aavikon hiekkaa</c>. Wrentmarkin kansa on <c>ylpeää ja sitkeää</c>,
+      joka on menestynyt tässä karussa ympäristössä iät ja ajat.\n\n\t\t\t Wrentmark
+      on sanoinkuvaamattoman rikkauden maa, jossa <c>kallisarvoisia jalokiviä ja mineraaleja</c>
+      louhitaan maasta ja kaupataan ympäri läntistä mannerta. Wrentmarkin asukkaat
+      ovat <c>mestarikauppiaita</c>, ja heidän taitonsa ovat hioutuneet vuosisatojen
+      kaupankäynnin aikana.'
+    'ewerethien': 'Ewerethien'
+    'braemercia': 'Braemercia'
+    'ethereal': 'Eteriaali'
   realmMottos:
     braemercia: Braemercia
     ethereal: Eteerinen
@@ -51,7 +77,14 @@ maps:
     wallisia: Wallisia
     wrentmark: Wrentmark
   raceDescriptions:
-    'human': ''
+    'human': '\t\t <c>Arenumin</c> valtavilla ja lumotuilla alueilla ihmiset ovat
+      asettuneet <c>läntiselle mantereelle</c>. Näistä mahtavista maista, jotka ovat
+      <c>kesyttämättömän erämaan</c> ja <c>majesteettisten maisemien</c> peittämiä,
+      on tullut ihmisen sivilisaation ydinaluetta.\n\n\t\t\t Kauneuden ja vaurauden
+      pinnan alla <c>kuitenkin velloo myrskyisät ajat</c>. Länsimanner on todistanut
+      armotonta <c>riitojen</c> ja <c>konfliktien</c> jatkumoa, kun ihmiset ovat käyneet
+      jatkuvia taisteluita vallasta. \n\n\t\t\t Ikivanhat sekä uudet konflikit <c>ovat
+      peittäneet länsimantereen varjojensa alle</c>.'
 singulars:
   items:
     gearTypes:
@@ -71,7 +104,7 @@ singulars:
       ring: Sormus
       secondary: Toissijainen
       woodcutting: Puunhakkuutyökalu
-      back: ''
+      back: 'Takaisin'
     itemTags:
       fine: Oiva
     itemTypes:
@@ -82,25 +115,27 @@ singulars:
       material: Materiaali
       other: Muu
       quest: Tehtävä
-      collectible: ''
+      collectible: 'Keräiltävä'
   placeholder:
     placeholder: tilanpitäjä
   intro:
-    welcome: ''
-    whereAreYouFrom: ''
+    welcome: 'Tervetuloa Arenumiin, muukalainen. Näyttää siltä että olet havahtunut
+      lyhyen matkan päässä pohjoisen suurkaupungista, <hl>Kallaheimista</hl>.'
+    whereAreYouFrom: 'Voinko kysyä, että mistä sinä tulet?'
   commonPhrases:
-    noActivity: ''
-    allSkills: ''
-    lookingForInternet: ''
+    noActivity: 'Ei aktiviteettia.'
+    allSkills: 'Kaikki taidot'
+    lookingForInternet: 'Etsitään internettiä...'
   requirements:
     skills:
-      level: ''
+      level: 'Vaatii <skill skill="{skill}" level="{level}"" isRequirement="true"/>
+        tason.'
 plurals:
   items:
     money:
-      one: ''
-      two: ''
-      few: ''
-      many: ''
-      zero: ''
-      other: ''
+      one: 'kolikko'
+      two: 'kolikot'
+      few: '-'
+      many: '-'
+      zero: '-'
+      other: 'kolikot'
