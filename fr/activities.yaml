@@ -65,6 +65,27 @@ singulars:
           de vous devient flou et, pour un instant, vous devenez un bolide hivernal
           à la conquête d'une colline couverte de neige.
         name: Faire de la luge
+      traveling:
+        name: Voyager
+        desc: Voyager vers un nouveau lieu
+      frisbeeGolfingBeginner:
+        name: Frisbee-golf (Débutant)
+        desc: En tant que débutant au frisbee-golf, chaque lancer est une nouvelle
+          découverte.Tu apprends à identifier le vent et à éviter habillement les
+          arbres, en appréciant la simplicité du jeu et regardant heureux le frisbee
+          s'envoler vers le panier.
+      frisbeeGolfingIntermediate:
+        name: Frisbee-golf (Intermédiaire)
+        desc: Avec ton niveau intermédiaire au frisbee-golf intermédiaire, tu développes
+          un sens aigu de la stratégie. Chaque parcours présente un nouveau défi,
+          courbant habilement ton frisbee autour des obstacles, perfectionnant tes
+          compétences à chaque lancer savamment calculé.
+      frisbeeGolfingDifficult:
+        name: Frisbee-golf (Difficile)
+        desc: En tant que joueur chevronné de frisbee-golf, chaque parcours est un
+          champ de bataille tactique. Tu exécutes des tirs complexes, maîtrisant l'art
+          de la rotation et de la précision, transformant des paysages difficiles
+          en victoires triomphales.
     jarvonia:
       mountainClimbingBeginner:
         desc: Vous vous préparez pour votre ascension. C'est une belle journée, ensoleillée
@@ -84,6 +105,27 @@ singulars:
           entendez des bruits de pas tout près, alors vous vous précipitez sur le
           toit voisin en faisant un petit saut. Une tuile se détache et tombe sur
           le sol, provoquant un fracas. Il faudra être plus prudent la prochaine fois.
+        name: Course sur les toits (Débutant)
+      blackEyePeakSearchTeam:
+        name: Recherche d'equipe
+        desc: Aide la guilde des aventuriers à localiser et à trouver des informations
+          sur les permis ouverts qui sont manquants.
+      blackEyePeakRescueTeam:
+        name: Équipe de secours
+        desc: Utilise les informations des équipes de recherche pour mener les opérations
+          de sauvetage.
+    syrenthia:
+      swimmingExpert:
+        name: Nage (Expert)
+        desc: Nager à travers les différents chemins et grottes de la vaste ville
+          sous-marine de Vastalume s'avère un véritable défi. Tu dois échapper aux
+          créatures marines dérangées par ta présence.
+      merfolkDancing:
+        name: Danse des ondins
+        desc: Exécuter la danse des ondins comme le fait le peuple sous-marin nécessite
+          beaucoup de compétences. À chaque tentative, tu progresses dans tes mouvements
+          à l'unisson avec les autres danseurs, jusqu'à obtenir un mouvement fluide,
+          ressemblant à un banc de poissons dans leurs mouvements synchronisés.
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -134,6 +176,12 @@ singulars:
           d'entre elles, il vous manque des composants. Vous regardez autour de l'atelier,
           à la recherche de quelque chose de précis. Le voilà ! Mettons-nous au travail.
         name: Bricolage
+    syrenthia:
+      underwaterBasketWeaving:
+        name: Vannerie sous-marine
+        desc: Tu tisses habilement les minces morceaux de corail en un panier. Le
+          processus est lent et fastidieux, mais le résultat final remplit ton cœur
+          de fierté pour ta création.
   fishing:
     gdte:
       magnetFishing:
@@ -155,12 +203,26 @@ singulars:
         desc: Le long du littoral hivernal, vous trouvez un endroit isolé et vous
           jetez votre filet dans les eaux calmes et froides, profitant de la solitude
           paisible de la pêche en mer.
-        name: Pêche en mer (filet)
+        name: Pêche en mer (Filet)
       seaFishingRod:
         desc: Le long du littoral hivernal, vous trouvez un endroit isolé et lancez
           votre ligne dans les eaux calmes et froides, profitant de la solitude paisible
           de la pêche en mer.
-        name: Pêche en mer (canne)
+        name: Pêche en mer (Canne)
+      seaFishingCage:
+        name: Pêche en mer (Cage)
+        desc: Un courant riche en nutriments amène toutes sortes de crustacés dans
+          la région.
+    syrenthia:
+      seaFishingSpear:
+        name: Pêche en mer (Lance)
+        desc: Saisissant fermement la lance, tu nages autour de l'épave, toujours
+          vigilant à l'égard de tout gros poisson qui ose s'approcher trop près.
+      predatorHunting:
+        name: Chasse aux prédateurs (Lance)
+        desc: Animé par l'envie de chasser, tu fends les eaux profondes, attentif
+          à chaque detail de l'environnement. Chaque muscle de ton être est prête
+          à frapper n’importe quel prédateur avant qu’il ne le fasse.
   foraging:
     gdte:
       butterflyCatching:
@@ -186,6 +248,16 @@ singulars:
           abandonnés. Espérant y trouver des souvenirs perdus et des reliques d'une
           vie autrefois fructueuse.
         name: Récolte dans les marais
+      trellinDumpsterDiving:
+        name: Fouille dans la décharge de Trellin
+        desc: Au milieu des ruelles labyrinthiques de la ville, tu explores les coins
+          oubliés, passant au crible les bricoles abandonnées dans l'espoir de dénicher
+          des trésors cachés parmi les rebuts.
+      erdwiseDumpsterDiving:
+        name: Fouille de la décharge d'Erdwise
+        desc: Au milieu des ruelles labyrinthiques de la ville, tu explores les coins
+          oubliés, passant au crible les bricoles abandonnées dans l'espoir de dénicher
+          des trésors cachés parmi les rebuts.
     global:
       litterLooting:
         desc: Dans l'effervescence de la cité médiévale, vous passez au peigne fin
@@ -221,6 +293,33 @@ singulars:
         desc: |
           <PLACEHOLDER>Un vent violent venant de la côte ne vous décourage pas dans votre recherche de coquillages. Certains sont givrés, accrochés au sable épais. D'autres ont été détachés par les vagues ou la faune. Ils attendent d'être réclamés par un aventurier ou d'être ramenés à terre.
         name: Recherche de coquillages
+      caveForaging:
+        desc: C'est sombre par ici, tu ferais mieux d'amener une source de lumière.
+        name: Récolte en grotte
+      hornOfRespiteTreasureHunt:
+        name: Chasse au trésor
+        desc: La guilde des aventuriers à initié le défi de trouver des trésors autour
+          de la Corne du Répit. Combien de temps te faudra-t-il pour tous les trouver
+          ?
+    syrenthia:
+      seashellForaging:
+        name: Récolte de coquillages
+        desc: A la recherche de précieux coquillages, tu nages près des fonds marins.
+          La plupart se cachent sous le sable, tandis que d’autres s’accrochent aux
+          coins et recoins des rochers sous-marins.
+      merfolkFarmForaging:
+        name: Récolte à la ferme de Merfolk
+        desc: Ton accès à la ferme maritime communale t'accorde la liberté de te nourrir
+          dans les champs agricoles sous-marins. Ici, tu trouvera une vaste gamme
+          de plantes en attente d'être cueillies.
+      wreckDiving:
+        name: Exploration d'epave
+        desc: Tu plonges profondément dans l'épave servant de tombe à Casbrant, dans
+          l'espoir de trouver un trésor.
+      kelpForaging:
+        name: Récolte de varechs
+        desc: Le varzch étant en abondance autour de toi, tu inspectes méticuleusement
+          chacun d’eux avant de cueillir soigneusement les meilleurs.
   mining:
     global:
       mineCoal:
@@ -283,6 +382,22 @@ singulars:
     syrenthia:
       caveDiving:
         name: Plongée souterraine
+        desc: Tu plonges courageusement (ou stupidement) dans ces vastes caves sombres.
+          C'est certainement l'activité la plus dangereuse de tout Arenum. Tu sens
+          ton cœur battre et l'adrénaline dans tes veines.
+      mineVolcanicRock:
+        name: Miner la roche volcanique
+        desc: Utiliser ta pioche sous l'eau est complexe. Mais parfois, après un coup,
+          un morceau suffisamment gros de roche volcanique se detache, te permettant
+          de le ranger dans ton sac.
+      mineTarsiliumOre:
+        name: Miner le minerai de Tarsilium
+        desc: Surpris de voir du Tarsilium sous l'eau, tu commences à le miner sans
+          hésitation.
+      fossilMining:
+        name: Miner des fossiles
+        desc: Attiré par les merveilles du passé, tu essayes de trouver d'anciens
+          fossiles.
   smithing:
     jarvonia:
       horseshoeMaking:
@@ -343,3 +458,9 @@ singulars:
           élancez votre hache à leur tronc en les coupant l'un après l'autre. A la
           différence des arbres à la surface, ils ne s'écrasent pas au sol mais flottent
           à la place.
+  misc:
+    emergencySwimEscape:
+      desc: Tu as perdu ton équipement de plongée et tu manques d'air. Tu dois nager
+        jusqu'au rivage aussi vite que possible, mais sans paniquer. Tu sais que si
+        tu remontes trop vite, tu pourrais souffrir d’un accident de décompression.
+      name: Fuite à la nage
