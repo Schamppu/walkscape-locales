@@ -6,16 +6,25 @@ maps:
         '1': Normaali
         '2': Vaikea
         '3': Tukala
+        'easy': Helppo
+        'normal': Normaali
+        'hard': Vaikea
+        'extreme': Äärimmäinen
       difficultyTitle:
         '0': Helpot saavutukset
         '1': Normaalit saavutukset
         '2': Vaikeat saavutukset
         '3': Tukalat saavutukset
+        'easy': Helpot saavutukset
+        'normal': Normaalit saavutukset
+        'hard': Vaikeat saavutukset
+        'extreme': Äärimmäiset saavutukset
   characterCreation:
     phrases:
       bodyTypes:
         feminine: Feminiininen
         masculine: Maskuliininen
+        'none': Ei mitään
       expressions:
         angry: Vihainen
         laughing: Naurava
@@ -24,6 +33,7 @@ maps:
         smile: Hymy
         smirk: Virne
         surprise: Yllätys
+        'veryAngry': Erittäin vihainen
       optionTypes:
         backAccessorie: Selän asusteet
         background: Tausta
@@ -36,29 +46,106 @@ maps:
         headwear: Päähine
         nose: Nenä
         outfit: Asu
+        'none': Ei mitään
       raceTypes:
         human: Ihminen
+        'none': Ei mitään
+  settings:
+    stepCountNotifications:
+      'always': Aina
+      'never': Ei koskaan
+      'everyHundred': Joka sadas
+      'everyThousand': Joka tuhannes
+      'everyTenThousand': Joka kymmenes tuhannes
+    notificationImportance:
+      'low': Ei ääntä, ei värinää, ja ei näy tilapalkissa.
+      'high': Pitää ääntä tai värisee
+      'urgent': Pitää ääntä tai värisee ja näkyy ilmoituksena.
+    languages:
+      'pl': Puola
+      'es': Espanja
+      'de': Saksa
+      'fi': Suomi
+      'it': Italia
+      'en': Englanti
+    visibilitySettings:
+      'private': Yksityinen
+      'public': Julkinen
+      'friends': Vain kaverit
+    boolSettings:
+      'showRecipesMaterialsAreMet': Materiaalivaatimukset eivät täyty
+      'showRecipesServiceAreMet': Palveluvaatimukset eivät täyty
+      'showCompletedAchievements': Näytä suoritetut saavutukset
+      'showRecipesRequirementsAreMet': Tasovaatimukset eivät täyty
+    leaderboardFilter:
+      'everyone': Kaikki
+      'friends': Kaverit
+  character:
+    stepsTime:
+      'hourly': Askeleet tunneittain
+      'daily': Askeleet päivittäin
+      'monthly': Askeleet kuukausittain
 plurals:
   activity:
     phrases:
       actionsRemaining:
         one: Jäljellä oleva toiminto
         other: Jäljellä olevat toiminnot
+        zero: '-'
+        two: Toimintoja jäljellä
+        few: '-'
+        many: '-'
       actionsToLevelUp:
         one: Toiminto tason nostamiseksi
         other: Toimintoa tason nostamiseksi
+        few: '-'
+        two: Toimintoja tason nousuun
+        many: '-'
+        zero: '-'
       stepsRemainingInTotal:
         one: Jäljellä oleva askel yhteensä
         other: Jäljellä olevaa askelta yhteensä
+        zero: '-'
+        two: Askeleita jäljellä yhteensä
+        few: '-'
+        many: '-'
       stepsRequired:
         one: Askel vaadittu
         other: Askelta vaadittu
+        zero: '-'
+        two: Vaaditut askeleet
+        few: '-'
+        many: '-'
       stepsToCraft:
         one: Askel valmistukseen
         other: Askelta valmistukseen
+        two: Askeleita valmistukseen
+        few: '-'
+        many: '-'
+        zero: '-'
       stepsToLevelUp:
         one: Askel tason nostamiseen
         other: Askelta tason nostamiseen
+        zero: '-'
+        two: Askeleita tason nousuun
+        few: '-'
+        many: '-'
+      stepsUntilArrival:
+        one: Askel saapumiseen
+        zero: '-'
+        few: '-'
+        many: '-'
+        other: Askeleita saapumiseen
+        two: Askeleita saapumiseen
+  achievements:
+    phrases:
+      achievementPoint:
+        zero: '-'
+        one: '{} saavutuspiste'
+        two: '{} saavutuspisteet'
+        few: '-'
+        many: '-'
+        other: '{} saavutuspisteet'
 singulars:
   achievements:
     info:
@@ -112,18 +199,82 @@ singulars:
       dropItems: Pudota esineitä?
       longPressTip: <c>Vinkki:</c> Esineen pitkä painallus valitsee kaikki samankaltaiset
         esineet.
+      slots: Repun tila <c>{slots}</c>
+      slotsCount: 'Repun tila:'
+      selectedStacks: Valitut <c>{stacks}</c> esinepinot
+      cantEquip: Ei voi pukea.
+      allItemsInUse: Kaikki nämä esineet ovat tällä hetkellä käytössä, eikä niitä
+        voi pudottaa.
+      oneOrMoreCantBeDropped: Yhtä tai useampaa esinettä ei voi pudottaa.
+      attributes: Attribuutit
+      abilities: Kyvyt
+      requires: Vaatii
+      equipToRingOne: Pue sormustilaan 1
+      equipToRingTwo: Pue sormustilaan 2
+      emptySlot: Tyhjä tila
+      allSkills: Kaikki taidot
+      noItemEquipped: Ei puettua esinettä
+      noItemSelected: Ei valittua esinettä
+      duration: Kesto
+      durationInSteps: Aktiivisena <c>{steps}</c> <icon i="Steps" /> askeleen ajan
+      inUse: Käytössä
+      selectedConsumable: Valitut kulutettavat
+      consumables: Kulutettavat
+      noConsumableSelected: Kulutettavaa ei ole valittu. Voit valita yhden alla olevista.
+      noConsumables: Ei hyödykkeitä repussasi.
+      cantBeDropped: Esinettä ei voi pudottaa.
+      noFoodConsumables: Repussasi ei ole <hl>ruokaa</hl>.
+      noPotionConsumables: Repussasi ei ole <hl>rohtoja</hl>.
+      areYouSureToDrop: Oletko varma, että haluat pudottaa esineitä? Esineet katoavat
+        lopullisesti, kun ne on pudotettu.
+      equipToToolSlot: Pue työkalutilaan {id}
+      disableWhenChanging: Poista käytöstä aktiviteetin vaihtuessa
+      enableWhenBack: Ota käyttöön aloittaessasi aktiviteetin missä viimeksi käytetty
+      itemsInUse: Olet valinnut esineitä, jotka ovat jo käytössä. Käytössä olevia
+        esineitä ei voi pudottaa tai laittaa pankkiin.
+      requirementsNotMet: Vaatimukset eivät täyty.
+      checkBank: Katso pankki
+      slotDoesntExist: Tämä repun tila ei enää ole olemassa.
+    options:
+      showConsumables: Näytä hyödykkeet
+      consenseInventory: Tiivistä reppunäkymä
+      expandInventory: Laajenna reppunäkymä
+      showMaterials: Näytä materiaalit
+      showGear: Näytä varusteet
   location:
     phrases:
       activities: Toiminnat
       services: Palvelut
+      buildings: Rakennukset
+      noActivites: Paikassa ei ole saatavilla olevia aktiviteetteja.
+      routes: Reitit
+      tapToShowRoutes: Näytä reitit napauttamalla
+      jobBoard: Töiden ilmoitustaulu
+      jobs: Työt
+      factions: Ryhmittymät
   pfpCreation:
     buttons:
       choose: Valitse
       hideHat: Piilota päähine
       randomize: Arvo
       showHat: Näytä päähine
+      enableBackAccessorie: Ota käyttöön selkäasuste
+      enableFacepaint: Ota käyttöön kasvomaalaus
+      enableDynamicBackground: Ota käyttöön dynaaminen tausta
+      enableFaceAccessorie: Ota käyttöön kasvoasusteet
     phrases:
       currentSelection: Nykyinen valinta
+      mainOptions: Päävaihtoehdot
+      extras: Ekstrat
+      variants: Variantit
+      noVariantSelected: Ei varianttia valittuna
+      resetToDefault: Palauta oletus
+      homeRegion: Kotimaa
+      race: Rotu
+      selectedVariant: Variantti {index} valittu
+      dynamicBackground: Dynaaminen tausta muuttaa taustakuvaa hahmosi sijainnin mukaan.
+      defaultExpression: Perusilme
+      colorOptions: Värivaihtoehdot
   faction:
     phrases:
       openFaction: Avaa ryhmittymä
@@ -215,3 +366,147 @@ singulars:
       cooldownReady: 'Jäähdytysaika: Valmis'
       noCooldown: Ei jäähdytysaikaa.
       followingMustBeTrueToUse: 'Vaatimukset käyttämiseen eivät täyty:'
+  trade:
+    phrases:
+      total: Yhteensä
+      trade: KAUPPAA
+      restockIn: 'Täydennys: '
+      buying: Ostetaan {amount}
+      selling: Myydään {amount}
+  gear:
+    phrases:
+      combatModifiers: Taisteluattribuutit
+      skillModifiers: Taitoattribuutit
+      noSkillModifiers: Ei taitoattribuutteja puetuista esineistä.
+      permanentModifiers: Pysyvät attribuutit
+      noPermanentModifiers: Ei pysyviä attribuutteja.
+      noCombatModifiers: Ei taisteluattribuutteja puetuista esineistä.
+  characterCreation:
+    phrases:
+      race: Rotu
+      chooseABodyType: Valitse kehon tyyppi
+      bodyTypeA: A
+      bodyTypeB: B
+      characterName: Hahmon nimi
+      bodyType: Kehon tyyppi
+    info:
+      rememberSwipe: Muista, että voit vaihtaa valittuja vaihtoehtoja milloin tahansa
+        hahmon luomisen aikana pyyhkäisemällä takaisin.
+  settings:
+    categories:
+      accessibility:
+        title: Saavutettavuus
+        leftHandedMode: Vasemman käden tila
+      account:
+        title: Tili
+        visibility: Profiilin näkyvyys
+      character:
+        title: Hahmo
+        anonOnLeaderboard: Anonymisoi tulostaulukossa
+        hideSteps: Piilota askeleet
+      language:
+        title: Kieli
+      gameplay:
+        title: Pelattavuus
+        stopWhenOverEncumberedDefault: Lopeta oletuksena aktiviteetti kun hahmosi
+          ylikuormittuu
+      closedBeta:
+        clearStepsGraph: Nollaa askelkuvaaja
+        title: Suljettu Beta
+        useThisToClear: Käytä tätä, jos haluat nollata askelten kuvaajan. Hyödyllinen,
+          jos olet saanut askelia virheistä ja haluat nollata kuvaajan.
+      notifications:
+        title: Ilmoitukset
+        stepCountInterval: Ilmoitusväli
+        stepCountNotifications: Askelten lukumäärän ilmoitukset
+        notificationType: Ilmoituksen tyyppi
+    phrases:
+      settings: Asetukset
+      exitToCharacterSelection: Poistu hahmon valintaan
+  worldMap:
+    phrases:
+      activities: Aktiviteetit
+      noActivities: Tässä paikassa ei ole aktiviteetteja.
+      buildings: Rakennukset
+      services: Palvelut
+      pointsOfInterest: Mielenkiintoiset kohteet
+      routeFromTo: Paikasta <location i="{fromID}"/> paikkaan <location i="{toID}"/>
+      route: Reitti
+      youreHere: Olet tässä paikassa.
+      currentLocation: Nykyinen paikka
+      afterExploring: Kun olet tutkinut paikan, voit nähdä sen sisällön.
+      information: Tiedot
+      routeRequirementsNotMet: 'Valitulla reitillä on polkuja joiden vaatimukset eivät
+        toteudu:'
+      youHaveNotExplored: Et ole vielä tutkinut tätä paikkaa. Näet tietoa tästä paikasta,
+        kun olet käynyt siellä kerran.
+  stats:
+    phrases:
+      stats: Tilastot
+      totalSkillXp: Taidon XP yhteensä
+      totalSteps: Kokonaisaskelmäärä
+    info:
+      stats: Kokoelma tilastoja jokaisesta askeleesta, jonka olet ottanut Arenumissa.
+  tutorial:
+    phrases:
+      noMoreMessages: Ei enempää ohjeistusviestejä
+      youWillGain: Saat seuraavat esineet mikäli valitset tämän vaihtoehdon.
+  mainMenu:
+    phrases:
+      support: Tue peliä
+      accountPage: Tilisivu
+      authenticating: Todennetaan...
+      chooseCharacter: Valitse hahmosi tai luo uusi hahmo.
+      pleaseWait: Odota...
+      deletingCharacter: Hahmosi poistaminen on <hl>peruuttamattomissa</hl>.
+      areYouAbsolutelySure: Oletko aivan varma? Tämän vaiheen jälkeen menetät hahmosi
+        pysyvästi.
+      iAmSure: Olen varma
+      createCharacter: Luo uusi hahmo
+      downloadingLocalisations: Ladataan päivitettyjä lokalisaatioita
+      logOut: Kirjaudu ulos
+      noInternet: Ei internet-yhteyttä
+      lostInternet: Laitteesi on menettänyt internet-yhteyden. Odotetaan yhteyttä...
+      areYouSureYouWantToDelete: Haluatko varmasti poistaa <hl>{name}</hl>?
+      dontDoIt: Älä tee sitä, jos et ole varma.
+      ifYouAreSure: Jos olet varma, kirjoita kenttään <c>DELETE</c> ja paina Jatka.
+      deleteWord: DELETE
+      downloadingContent: Ladataan uutta pelisisältöä
+      email: S-posti / Käyttäjänimi
+      password: Salasana
+      noBetaAccess: Ei beta-käyttöoikeutta.
+      googlePlay: Päivitä Google Playssa
+      loadingGame: Ladataan peliä... menee hetki!
+      logIn: Kirjaudu sisään
+      register: Rekisteröidy
+      welcomeToWalkscape: Tervetuloa WalkScapeen, <hl>vieras</hl>. Ole hyvä ja kirjaudu
+        sisään.
+      pleaseEnterCredentials: Syötä WalkScape-tilisi tunnukset.
+  social:
+    phrases:
+      manageFriends: Hallitse yhteisöjä
+      pendingInvites: Odottavat kutsut
+      friends: Kaverit
+  tools:
+    phrases:
+      lockedToolSlot: Lukittu työkalutila kunnes <c> hahmon taso {level}</c>.
+      noToolEquipped: Ei työkalua puettuna tähän tilaan.
+      emptyToolSlot: Tyhjä työkalutila
+  bank:
+    phrases:
+      noItemsBank: Pankissasi ei ole esineitä.
+      noItemsInventory: Repussasi ei ole esineitä.
+  leaderboards:
+    phrases:
+      show: Näytä
+      everyone: Kaikki
+      achievementPoints: Saavutuspisteet
+      friends: Kaverit
+      leaderboards: Tulostaulut
+      first: Ensimmäinen
+      me: Minä
+      last: Viimeinen
+      loadingPage: Ladataan sivua...
+      totalSteps: Kokonaisaskelmäärä
+      totalLevel: Kokonaistaso
+      totalExperience: Kokemus yhteensä
