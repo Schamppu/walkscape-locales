@@ -1,14 +1,28 @@
 maps:
   buildingActions:
-    buy: Osta tarvikkeita
+    buy: Osta
     deposit: Talleta
-    rumors: Huhuja
-    sell: Myy tavaroita
+    rumors: Juoruile
+    sell: Myy
     talk: Puhu
-    withdraw: Nostaa
+    withdraw: Nosta
+    'guidance': Ohjeistus
+    'barber': Parturoi
+    'buySpecial': Osta (erityisiä)
   buildingTypes:
     bank: Pankki
     generalStore: Kauppa
+    'animalShelter': Eläinten suojakoti
+    'fishingStore': Kalastusliike
+    'temple': Temppeli
+    'tavern': Taverna
+    'house': Talo
+    'activityShop': Aktiviteettikauppa
+    'marketStall': Torikoju
+    'castle': Linna
+    'barber': Parturi
+    'clothingShop': Vaatekauppa
+    'outpost': Etuvartioasema
 singulars:
   buildings:
     jarvonia:
@@ -104,3 +118,89 @@ singulars:
           oudolla soittimella, joka kuulostaa kitaralta, mutta jonka sisällä on vettä.
       fishMarketStall:
         name: Kalamarkkinakoju
+        desc: Piippua polttava mies näyttää pyörittävän kalastuskoppia, jonka jäätiskillä
+          lepää varsin laaja valikoima suuria fileitä ja kalanpaloja. Tosin sen vierustalla
+          näyttää olevan myös koreja täynnä kokonaisia kaloja ja jopa muutamia syöttiämpäreitä.
+      bogsideBankOfProsperity:
+        desc: Pankin lattia on sammaleen peittämä, ja se natisee, kun astut sen päälle.
+          Useat sammakot näyttävät piileskelevän sen nurkkauksissa pitäen hyttysiä
+          loitolla. Yksi virkailijoista nyökkää tervehdykseksi. Myös virkailijan pään
+          päällä näyttää olevan sammakko, joka nappaa suuhunsa sen ympärillä lepattavan
+          suuren koiperhosen.
+        name: Suonsilmän vaurauden pankki
+      maritimeFortuneBank:
+        desc: Kultainen koristelu, marmorilattia ja massiivinen valaisin roikkuu katosta.
+          Näyttää siltä, että sekin on tehty kullasta ja jalokivistä heijastamaan
+          niiden luonnollisia värejä pienen liekin läpi. Jopa henkilökunnan kutsumista
+          varten tehdyt kutsukellot on valmistettu kullasta.
+        name: Merenkulkijan säästöpankki
+      toolMarketStall:
+        desc: Työkalukoppi on peitetty vanhalla nahkaliinalla, ja työkalut on aseteltu
+          näennäisesti järjestykseen. Muutama lyhty roikkuu kioskin katosta, ja muut
+          työkalut roikkuvat kauppiaan pään yläpuolella huolellisesti sidotuissa köysissä
+          ja koreissa.
+        name: Työkalukoju
+      foodMarketStall:
+        name: Elintarvikekoju
+        desc: Elintarvikekojun ympärillä on ihana tuoreen leivän ja leivonnaisten
+          tuoksu. Tosin siellä näyttää olevan myynnissä myös runsaasti purkitettuja
+          ja marinoituja tuotteita. Onneksi Surströmmingiä ei näytä olevan saatavilla.
+      mossyMerchantsBreezeMart:
+        name: Jäkäläjätkän Pikamarketti
+        desc: Jäkäläjätkän pikamarketissa on useita ikkunoita auki, ja tuuli puhaltaa
+          sen sisälle hitaasti kantaen mukana ulkoa tulevat äänet. Useat hyllyistä
+          ovat täynnä mielenkiintoisen näköisiä esineitä.
+      bogAndBlade:
+        name: Räme & Partaveitsi
+        desc: Räme & Partaveitsi tarjoaa ammattitaisoisesti huoliteltuja hiustyylejä.
+          Partureilla on jaloissaan polvisaappaat, ja he tarjoavat hyvää palvelua
+          joka on höystetty lennokkaalla huumorilla.
+      quagmireCouture:
+        name: Muotiliike Heteikkö
+        desc: Muotiliike Heteikössä on Salsfirthin parhaat suoaiheiset vaateuutuudet.
+          Siellä on laaja valikoima aina hauskoista tyylikkäisiin vaatteisiin, jotain
+          siis joka tilanteeseen.
+    syrenthia:
+      vastalumeTavern:
+        name: Meren helmi
+        desc: Koko lattia on hiekan peitossa. Baaritiskin takana on oranssi mustekala,
+          joka sekoittaa juomia ja täyttää kuppeja. Huoneen nurkassa on suurin koskaan
+          näkemäsi helmi.
+      vastalumeBank:
+        name: Thalassa Aaltopankki
+        desc: Suuri, kirkkaan keltainen käärme luikertelee hiekkapohjalla. Vedenalaisissa
+          kallioseinämissä on pyöreä ovi, jossa on valtavan kokoinen avaimenreikä,
+          joka mitä luultavimmin johtaa pankin kassakaappiin.
+      vastalumeGeneralStore:
+        name: Uponnut ankkuri
+        desc: Ruosteinen ankkuri makaa hiekassa. Pienessä kaupassa on muutamia hyllyjä
+          ja tynnyreitä täynnä tavaraa. Seinissä olevista rei'istä ja raoista nousee
+          kuplia. Luulet tunnistavasi seinällä olevassa maalauksessa kuvatut vuoret.
+      vastalumeBarber:
+        name: Mene virran mukana -parturikampaaja
+        desc: Tässä ahtaassa parturi-kampaamossa on useita hiustenleikkausasemia.
+          Jatkuva asiakasvirta, joka tulee ja menee, viittaa siihen, että se on Vastalumessa
+          suosittu paikka käydä parturissa.
+      vastalumeSpecializedStore:
+        name: Alivirtaama
+        desc: Aivan sisäänkäynnin kohdalle on aseteltu Syrentian lippu, joka osoittaa,
+          että tänne saavat tulla vain ne, joihin Syrenthialaiset luottavat. Rakennuksesta
+          löytyy vähän kaikkea - oleskelutila, seinälle kiinnitettyjä työkaluja ja
+          jopa vedenalainen bonsaipuu.
+      vastalumeClothingShop:
+        name: Eväilemätön Muoti
+        desc: Monet syrenthalaiset suosivat simpukankuorista tehtyjä asuja, joten
+          tämä paikka on melko tyhjä. Kaupasta löytyy vain vähän kankaita ja asuja.
+          Useimmat kävijät tulevat tänne kuuluisan merenväen tanssipuvun takia ostoksille.
+      throneOfTheNeverdrown:
+        name: Hukkumattoman valtakuntasali
+        desc: Tarkkaavainen mustekala vartioi sisäänkäyntiä. Merensininen matto johtaa
+          valtaistuimelle, jota koristavat useat liikkuvat lonkerot. Koko valtaistuinsali
+          huokuu aavemaista tunnelmaa, ja tuntuu kuin jopa harmiton rapu tarkkailisi
+          sinua, ettet tee ensimmäistäkään liikettä, joka voisi vaarantaa merenalaisen
+          valtiaan.
+      casbrantsSunkenShip:
+        name: Casbrantin uponnut alus
+        desc: Aluksen koko päämasto on katkennut. Hylky on täynnä reikiä ja rikkinäisiä
+          lautoja, joista nousee lukuisia pieniä ilmakuplia. Tuntuu kuin täällä olisi
+          toinen läsnäolija, joka tarkkailee ja odottaa.
