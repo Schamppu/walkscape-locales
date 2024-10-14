@@ -2,26 +2,101 @@ singulars:
   consumables:
     alcohol:
       name: Alkoholi
+      requirement: Vaatii alkoholia.
+      requirementLevel: Vaatii alkoholia, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     food:
       name: Ruoka
+      requirement: Vaatii ruokaa.
+      requirementLevel: Vaatii ruokaa, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     water:
       name: Vesi
+      requirement: Vaatii vettä.
+      requirementLevel: Vaatii vettä, jonka vaatimukset ovat vähintään <keywordRequirements
+        />.
+    sandwich:
+      requirement: Vaatii voileivän
+      name: Voileipä
+      requirementLevel: Vaatii ruokaa, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    fruit:
+      requirementLevel: Vaatii hedelmän, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      name: Hedelmä
+      requirement: Vaatii hedelmän.
+    memosphere:
+      requirementLevel: Vaatii memosfäärin, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      requirement: Vaatii muistosfäärin.
+      name: Muistosfääri
+    cookedFish:
+      name: Kokattu kala
+      requirement: Vaatii kokatun kalan.
+      requirementLevel: Vaatii kypsennettyä kalaa, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+    beverage:
+      name: Juoma
+      requirement: Vaatii juoman.
+      requirementLevel: Vaatii juoman, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
   gear:
     lifeVest:
       name: Pelastusliivi
+      requirement: Vaatii pelastusliivin.
+      requirementLevel: Vaatii pelastusliivin, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     skis:
       name: Sukset
       requirement: Vaatii sukset.
+      requirementLevel: Vaatii sukset, joiden vaatimuksissa on vähintään <keywordRequirements
+        />.
+    climbing:
+      requirementLevel: Vaatii kiipeilyvälineen, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+      requirement: Vaaii kiipeilyvarusteet.
+      name: Kiipeilyvarusteet
+    skillingGear:
+      name: Taitovarusteet
+      requirement: Edellyttää ammattitaitoa vaativia varusteita.
+      requirementLevel: Vaatii skilling gear, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    frisbee:
+      name: Frisbee
+      requirement: Vaatii frisbeen.
+      requirementLevel: Vaatii frisbeen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    bugCatchingNet:
+      name: Ötökkäverkko
+      requirement: Vaatii ötökkäverkon.
+      requirementLevel: Vaaditaan hyönteisverkko, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+    ring:
+      name: Sormus
+      requirement: Vaatii sormuksen.
+      requirementLevel: Vaatii renkaan, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    socks:
+      name: Sukat
+      requirement: Vaatii sukat.
+      requirementLevel: Vaatii sukat, joiden vaatimuksissa on vähintään <keywordRequirements
+        />.
   general:
     fuel:
       name: Polttoaine
       requirement: Vaatii polttoainetta.
+      requirementLevel: Vaatii polttoainetta, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     lightSource:
       name: Valonlähde
+      requirement: Vaatii valonlähteen.
+      requirementLevel: Edellyttää, että käyttäjällä on <keywordRequirements />.
   materials:
     bar:
       name: Harkko
       requirement: Vaatii harkon.
+      requirementLevel: Vaatii baarin, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     fish:
       name: Kala
       requirement: Vaatii kalan.
@@ -30,9 +105,11 @@ singulars:
     gem:
       name: Jalokivi
       requirement: Vaatii jalokiven.
+      requirementLevel: Vaatii jalokiven, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     logs:
       name: Tukit
-      requirement: Vaatii puisen tukin
+      requirement: Vaatii puisen tukin.
       requirementLevel: Tarvitset puisen halon, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
     plant:
@@ -40,6 +117,21 @@ singulars:
       requirement: Vaatii kasvin.
       requirementLevel: Tarvitset kasvin, jossa on ainakin <keywordRequirements />
         sen vaatimuksissa.
+    ore:
+      name: Malmi
+      requirement: Vaatii malmin.
+      requirementLevel: Vaatii malmin, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    plank:
+      name: Lauta
+      requirement: Vaatii laudan.
+      requirementLevel: Vaatii lankun, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    mushroom:
+      name: Sieni
+      requirement: Vaatii sienen.
+      requirementLevel: Vaatii sienen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
   tools:
     chisel:
       name: Taltta
@@ -53,7 +145,7 @@ singulars:
         <keywordRequirements /> sen vaatimuksissa.
     fishingCage:
       name: Kalastushäkki
-      requirement: Vaatii katiskan
+      requirement: Vaatii kalastushäkin
       requirementLevel: Tarvitset kalastus häkin, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
     fishingNet:
@@ -74,18 +166,28 @@ singulars:
     localMap:
       name: Paikallinen kartta
       requirement: Vaatii paikallisen kartan.
+      requirementLevel: Vaatii paikallisen kartan, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
     magnetic:
       name: Magneettinen
       requirement: Vaatii magneettisen esineen.
+      requirementLevel: Vaatii magneettisen esineen, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
     pickaxe:
       name: Hakku
       requirement: Vaatii hakun.
+      requirementLevel: Vaatii kiikarin, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     saw:
       name: Saha
       requirement: Vaatii sahan.
+      requirementLevel: Vaatii sahan, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     screwdriver:
       name: Ruuvimeisseli
       requirement: Vaatii ruuvimeisselin.
+      requirementLevel: Vaatii ruuvimeisselin, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     tool:
       name: Työkalu
       requirement: Vaatii työkalun.
@@ -93,9 +195,94 @@ singulars:
         /> sen vaatimuksissa.
     woodcuttingHatchet:
       name: Kaatokirves
-      requirement: Vaatii kaatokirveen
+      requirement: Vaatii puunhakkuukirveen
       requirementLevel: Tarvitset puutyö kirveen, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
+    sickle:
+      requirement: Vaatii sirpin.
+      requirementLevel: Vaatii sirpin, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      name: Sirppi
+    cookingPan:
+      requirementLevel: Vaatii paistinpannun, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      name: Paistinpannu
+      requirement: Vaatii paistinpannun.
+    fishingLure:
+      requirementLevel: Vaatii kalastusvieheen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      requirement: Vaatii uistimen.
+      name: Uistin
+    cookingSpices:
+      requirement: Maatii mausteita.
+      name: Mausteet
+      requirementLevel: Vaatii mausteita, joiden vaatimuksissa on vähintään <keywordRequirements
+        />.
+    cuttingBoard:
+      requirementLevel: Vaatii leikkuulaudan, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      name: Leikkuulauta
+      requirement: Vaatii leikkuulaudan.
+    ruler:
+      name: Mittanauha
+      requirement: Vaatii mittanauhan.
+      requirementLevel: Vaatii viivottimen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    goldPan:
+      name: Kullanhuuhdontapannu
+      requirement: Vaatii kullanhuuhdontapannun.
+      requirementLevel: Vaatii kultapannun, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    cookingTool:
+      name: Keittiötyökalu
+      requirement: Vaatii keittiötyökalun.
+      requirementLevel: Vaatii keittotyökalun, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    carpentryTool:
+      name: Pyytyö työkalu
+      requirement: Vaatii puutyö työkalun.
+      requirementLevel: Vaatii puusepäntyökalun, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+    craftingTool:
+      name: Käsityö työkalu
+      requirement: VAatii käsityö työkalun.
+      requirementLevel: Vaatii käsityökalun, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    cookingKnife:
+      name: Keittiöveitsi
+      requirement: Vaatii keittiöveitsen.
+      requirementLevel: Vaatii keittoveitsen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    cookingPot:
+      name: Keittokattila
+      requirement: Vaatii keittokattilan.
+      requirementLevel: Vaatii keittoastian, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    foragingTool:
+      name: Keräilytyökalu
+      requirement: Vaatii keräilytyökalun.
+      requirementLevel: Vaatii ruokintatyökalun, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+    knife:
+      name: Veitsi
+      requirement: Vaatii veitsen.
+      requirementLevel: Vaatii veitsen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    wrench:
+      name: Jakoavain
+      requirement: Vaatii jakoavaimen.
+      requirementLevel: Vaatii jakoavaimen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    smithingHammer:
+      requirementLevel: Vaatii seppävasaran, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      name: Taontaasara
+      requirement: Vaatii taontavasaran.
+    magnifyingLense:
+      name: Suurennuslasi
+      requirement: Vaatii suurennuslasin.
+      requirementLevel: Vaatii suurennuslasin, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
   recipes:
     products:
       sandwich:
@@ -119,3 +306,158 @@ singulars:
       requirement: Vaatii malmien louhinta-aktiviteetin.
       requirementLevel: Vaatii malmien louhinta-aktiviteetin jolla on vähintään <keywordRequirements
         /> sen vaatimuksissa.
+    foragingPlants:
+      name: Kasvien keräily
+      requirement: Vaatii ravintokasvien toimintaa.
+      requirementLevel: Vaatii ravintokasvien toimintaa, jonka vaatimuksiin kuuluu
+        vähintään <keywordRequirements />.
+  weight:
+    ultraLight:
+      requirementLevel: <PLACEHOLDER>
+      name: Erittäin kevyt
+      requirement: <PLACEHOLDER>
+    light:
+      name: Kevyt
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    heavy:
+      name: Raskas
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+  achievements:
+    percentage:
+      name: Saavutusprosentti
+      requirement: none
+      requirementLevel: none
+  search:
+    skills:
+      smithing:
+        requirementLevel: <PLACEHOLDER>
+        requirement: <PLACEHOLDER>
+        name: Taonta
+      crafting:
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+        name: Käsityöt
+      agility:
+        name: Ketteryys
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      carpentry:
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+        name: Puutyöt
+      cooking:
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+        name: Ruoanlaitto
+      fishing:
+        name: Kalastus
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      foraging:
+        name: Keräily
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      mining:
+        name: Louhinta
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      woodcutting:
+        name: Puunhakkaus
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      traveling:
+        name: Matkustaminen
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      global:
+        name: Globaali
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+    items:
+      consumables:
+        food:
+          requirementLevel: <PLACEHOLDER>
+          name: Ruoka
+          requirement: <PLACEHOLDER>
+        memosphere:
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+          name: Muistosfääri
+        beverage:
+          name: Juoma
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+        potion:
+          name: Rohto
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+  itemSets:
+    divingGear:
+      requirementLevel: Vaatii sukellusvälineet joilla on vähintään <keywordRequirements
+        /> vaatimuksissa.
+      requirement: Vaatii sukellusvälineet.
+      name: Sukellusvälineet
+    expertDivingGear:
+      requirementLevel: Vaatii asiantuntijasukellusvarusteet, joiden vaatimuksissa
+        on vähintään <keywordRequirements />.
+      name: Ammattilaisen sukellusvälineet
+      requirement: Vaatii ammattilaiset sukellusvälineet.
+    treasureHunter:
+      name: Aarteenetsijän setti
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    adventuringTools:
+      name: Seikkailijan työkalusetti
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    advancedDivingGear:
+      name: Edistyneet sukellusvälineet
+      requirement: Vaadii edistyneet sukellusvälineet.
+      requirementLevel: Vaatii edistyneen sukellusvarustuksen, jonka vaatimukset ovat
+        vähintään <keywordRequirements />.
+  services:
+    kitchen:
+      requirement: <PLACEHOLDER>
+      name: Keittiö
+      requirementLevel: <PLACEHOLDER>
+    sawmill:
+      name: Saha
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    workshop:
+      name: Työpaja
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    forge:
+      name: Ahjo
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+  containers:
+    regionalChest:
+      requirementLevel: Vaatii alueellisen rintakehän, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+      name: Paikallinen arkku
+      requirement: Vaatii paikallisen arkun.
+    chest:
+      name: Arkku
+      requirement: Vaatii arkun.
+      requirementLevel: Vaatii rintakehän, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    skillingChest:
+      name: Taitoarkku
+      requirement: Vaatii taitoarkun.
+      requirementLevel: Vaatii kyvykkyyden, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+  misc:
+    trash:
+      name: Roska
+      requirement: Vaatii roskan.
+      requirementLevel: Vaatii roskia, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+  locations:
+    underwater:
+      name: Vedenalainen
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
