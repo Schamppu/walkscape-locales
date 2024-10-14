@@ -1,0 +1,144 @@
+{
+  'maps':
+    {
+      'characterCreation':
+        {
+          'phrases':
+            {
+              'bodyTypes(map)':
+                { 'feminine': 'B (Vrouwelijk)', 'masculine': 'A (Mannelijk)', 'none': 'Geen' },
+              'optionTypes(map)':
+                {
+                  'backAccessorie': 'Rugaccessoires',
+                  'background': 'Achtergrond',
+                  'body': 'Lichaam',
+                  'eyes': 'Ogen',
+                  'face': 'Gezicht',
+                  'faceAccessorie': 'Gezichtsaccessoires',
+                  'facepaint': 'Schmink',
+                  'hair': 'Kapsel',
+                  'headwear': 'Hoofddeksels',
+                  'none': 'Geen',
+                  'nose': 'Neus',
+                  'outfit': 'Kleding',
+                },
+              'raceTypes(map)': { 'human': 'Mens', 'none': 'Geen' },
+            },
+        },
+    },
+  'plurals':
+    {
+      'achievements':
+        {
+          'phrases':
+            {
+              'achievementPoint':
+                {
+                  'few': '-',
+                  'many': '-',
+                  'one': '{pointCount} prestatiepunt',
+                  'other': '{pointCount} prestatiepunten',
+                  'two': '-',
+                  'zero': '-',
+                },
+            },
+        },
+      'activity':
+        {
+          'phrases':
+            {
+              'actionsRemaining':
+                {
+                  'few': '-',
+                  'many': '-',
+                  'one': 'Resterende actie',
+                  'other': 'Resterende acties',
+                  'two': '-',
+                  'zero': '-',
+                },
+              'actionsToLevelUp':
+                {
+                  'few': '-',
+                  'many': '-',
+                  'one': 'Actie tot het volgende niveau',
+                  'other': 'Acties tot het volgende niveau',
+                  'two': '-',
+                  'zero': '-',
+                },
+              'stepsRemainingInTotal':
+                {
+                  'few': '-',
+                  'many': '-',
+                  'one': 'Stap nodig in totaal',
+                  'other': 'Stappen nodig in totaal',
+                  'two': '-',
+                  'zero': '-',
+                },
+              'stepsRequired':
+                {
+                  'few': '-',
+                  'many': '-',
+                  'one': 'Stap nodig',
+                  'other': 'Stappen nodig',
+                  'two': '-',
+                  'zero': '-',
+                },
+              'stepsToCraft':
+                {
+                  'few': '-',
+                  'many': '-',
+                  'one': 'Stap om te maken',
+                  'other': 'Stappen om te maken',
+                  'two': '-',
+                  'zero': '-',
+                },
+              'stepsToLevelUp':
+                {
+                  'few': '-',
+                  'many': '-',
+                  'one': 'Stap voor een hoger niveau',
+                  'other': 'Stappen voor een hoger niveau',
+                  'two': '-',
+                  'zero': '-',
+                },
+            },
+        },
+    },
+  'singulars':
+    {
+      'achievements':
+        {
+          'info':
+            {
+              'pointsNeeded': '<iconText name="achievement_point" text="@views.plurals.achievements.phrases.achievementPoint" color="${color}"/> totdat de volgende beloning is vrijgespeeld.',
+            },
+        },
+      'crafting':
+        {
+          'phrases':
+            {
+              'requiresMaterial': 'Vereist een materiaal.',
+              'requiresOneOfTheFollowing': 'Vereist een van de volgende materialen.',
+            },
+        },
+      'inventory':
+        {
+          'info':
+            {
+              'noItemEquipped': "Geen voorwerp aan het dragen.\\n\\nJe kunt een voorwerp dragen door er een te selecteren in de onderstaande lijst en op \"Dragen\" te drukken.",
+              'noItemSelected': "Geen voorwerp geselecteerd.\\n\\nSelecteer hieronder een voorwerp om het te vergelijken met het huidige voorwerp en het te dragen.",
+            },
+        },
+      'pfpCreation':
+        {
+          'buttons':
+            {
+              'choose': 'Kiezen',
+              'hideHat': 'Hoofddeksels verbergen',
+              'randomize': 'Willekeurig',
+              'showHat': 'Hoofddeksels tonen',
+            },
+          'phrases': { 'currentSelection': 'Huidige selectie' },
+        },
+    },
+}
