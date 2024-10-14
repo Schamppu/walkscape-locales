@@ -96,6 +96,28 @@ singulars:
           oppitunnin jälkeen uskallat kokeilla sitä itse.
       swimmingIntermediate:
         name: Uinti (keskitaso)
+        desc: 'Ennen veteen menoa on tarkistettava olosuhteet: tuulen voimakkuus ja
+          sen suunta, kivien esiintyminen ja niiden terävyys, kalastajien, veneiden
+          tai vaarallisten eläinten läsnäolo. Kaikki on kunnossa. Lähdet uimaan aaltojen
+          keskelle.'
+      rooftopJumpingIntermediate:
+        desc: 'Hyppelet kissamaisen tyylikkäästi ympäri kaupunkia ja käytät apunasi
+          mitä tahansa arkkitehtonista piirrettä: seiniä, kattoja, parvekkeita ja
+          katuvaloja. Kaupunki muuttuu ympärilläsi kuin esteradaksi, ja kiidät sen
+          katoilla taidokkaasti.'
+        name: Hyppele katoilla (keskitaso)
+    syrenthia:
+      merfolkDancing:
+        desc: Merenväen tanssin esittäminen vedenalaisen kansan tapaan vaatii paljon
+          taitoa. Jokaisella yrityksellä pystyt paremmin liikkumaan yhdessä muiden
+          tanssijoiden kanssa, kunnes saavutat saumattoman rytmin, joka muistuttaa
+          kalaparven synkronoitua liikehdintää.
+        name: Merenväen tanssiminen
+      swimmingExpert:
+        name: Uinti (ammattilainen)
+        desc: Vastalumen valtavan vedenalaisen kaupungin eri polkujen ja luolien läpi
+          uiminen on haastavaa. Sinun on väisteltävä vilkkaita merieläimiä samalla
+          kun nautiskelet vedessä liikkumisen vapauttavasta tunteesta.
   fishing:
     gdte:
       magnetFishing:
@@ -141,9 +163,9 @@ singulars:
       forestForaging:
         desc: Vaellellessasi metsän rauhallisessa syleilyssä, uppoudut metsän harmoniaan,
           keräilemällä sen antimia, jotka kukoistavat metsän lempeän latvuston alla.
-        name: Metsän antimien keräily
+        name: Keräile metsässä
       plainsForaging:
-        name: Niityn antimien keräily
+        name: Keräile tasangolla
         desc: Kun kuljeskelet lauhkean tasangon halki, huomaat olevasi kuin löytöretkellä,
           jossa luonnon aarteet odottavat löytäjäänsä lempeän auringon ja kirkkaan
           sinisen taivaan alla.
@@ -152,7 +174,7 @@ singulars:
           lätäköiden ja paksun kasvillisuuden läpi, löytääksesi salaisuuksia kaiken
           tämän sammaleen ja hylättyjen veneiden raatojen alta, rukoillen löytäväsi
           unohdettuja mysteerejä tai muistoja muiden menneistä elämistä.
-        name: Suon antimien keräily
+        name: Keräile suolla
       butterflyCatching:
         name: Perhosten pyydystäminen
         desc: Perhosten pyydystäminen vaatii kärsivällisyyttä ja hyvän verkon. Vaikka
@@ -181,31 +203,31 @@ singulars:
         desc: Tutustut varovasti jyrkän kallion reunalla olevaan karuun maastoon etsien
           villejä vuoristoyrttejä, sitkeitä sieniä ja muita syötäviä herkkuja, jotka
           viihtyvät tässä korkeassa ympäristössä.
-        name: Jyrkännekeräily
+        name: Keräile jyrkänteellä
       coastForaging:
         desc: Kun kuljet läpi tätä talvista rannikkoa, pakkanen tulee sinulle tutuksi,
           kun yrität etsiä lumen peittämien kivien ja jäisten lampien joukosta jotakin
           ravintoa ja lämmön lähdettä.
-        name: Rannikon antimien keräily
+        name: Keräile rannikolla
       forestForaging:
         desc: Talvisen metsän keskellä etsit tarkalla silmällä lumipeitteen alle piilotettuja
           aarteita ja nautit syötävien luonnon antimien löytämisen jännityksestä.
-        name: Luonnonantimien kerääminen
+        name: Keräile metsässä
       plainsForaging:
         desc: Jokaisella hennolla askeleella tasangon poikki uppoat luonnon yltäkylläisyyteen,
           keräät villimarjoja, siemeniä ja hentoja versoja, jotka kukoistavat maaperässä
           jalkojesi alla.
-        name: Tasangolla keräily
+        name: Keräile tasangolla
       seashellSearching:
         name: Simpukoiden etsintä
         desc: Etsit rannikkoa pitkin huolellisesti arvokkaita simpukankuoria tai helmiä.
       glacierForaging:
-        name: Jäätikkökeräily
+        name: Keräile jäätiköllä
         desc: Etsit mitään löytämisen arvoista laajalta ja tyhjältä vaikuttavalta
           jäätiköltä. Opit tuntemaan itsesi ehkä paremmin tässä täydellisessä yksinäisyydessä,
           mutta onkohan täällä oikeasti mitään löydettävää?
       caveForaging:
-        name: Luolakeräily
+        name: Keräile luolassa
         desc: Täällä on säkkipimeää, joten on aina hyvä olla jokin valonlähde mukana.
       hornOfRespiteTreasureHunt:
         name: Aarteenetsintä
@@ -219,12 +241,12 @@ singulars:
           Useimmat simpukat ovat piilossa hiekan alla, kun taas toiset takertuvat
           vedenalaisten kivien väliin jääviin koloihin.
       merfolkFarmForaging:
-        name: Keräily merenväen maatilalla
+        name: Keräile merenväen maatilalla
         desc: Yhteiskäyttöön tarkoitettu merenväen maatila antaa sinulle vapauden
           ruokailla lähes loputtomilta vaikuttavilla vedenalaisilla pelloilla. Täältä
           löydät laajan valikoiman kasveja, jotka odottavat poimijaa.
       kelpForaging:
-        name: Levän keräily
+        name: Keräile levää
         desc: Ympärilläsi heiluu runsaasti levää, ja tarkastat jokaisen niistä huolellisesti
           ennen kuin poimit parhaat.
       wreckDiving:
@@ -349,3 +371,72 @@ singulars:
         desc: Sinua ympäröivät korallit, joista osa on pienen puun kokoisia. Heilautat
           kirvestäsi niiden heidän kantojaan kohti ja hakkaat ne yksitellen. Toisin
           kuin pinnalla olevat puut, ne eivät kaadu maahan, vaan kelluvat ylös.
+  carpentry:
+    jarvonia:
+      woodCarving:
+        desc: 'Puun muotoilu terävällä esineellä, kuten veitsellä, on ikivanha käsityötaidon
+          muoto. Taidetta ja ikonografiaa on hyvin monenlaista: pienistä hahmoista
+          ja leluista seremoniallisiin esineisiin tai sotanaamioihin, suuriin mosaiikkeihin
+          ja korkeisiin toteemipylväisiin.'
+        name: Puunveisto
+      shipRepairBeginner:
+        name: Korjaa laivoja (aloittelija)
+        desc: Osallistut pienten alusten normaalista kulumisesta johtuviin korjauksiin.
+          Käytössäsi on puutavaraa, nauloja, takiloita, varusteita ja köysiä. Työnjohtaja
+          antaa käskyt, ja sinä toteutat ne parhaasi mukaan. Ehkä jonain päivänä sinä
+          olet se, joka pääsee antamaan käskyjä muille.
+    gdte:
+      shipRepairIntermediate:
+        name: Korjaa laivoja (keskitaso)
+        desc: Et ole enää pelkkä oppipoika, joten osaat korjata suurempia aluksia
+          ongelmitta. Työnjohtajasi luottaa taitoihisi ja harkintakykyysi. Työkalupakkisi
+          on ammattimainen, aivan kuten sinäkin työssäsi.
+  smithing:
+    jarvonia:
+      horseshoeMaking:
+        desc: Vahvaa metallia käyttäen taot kenkiä, jotka suojaavat hevosen kaviota
+          keskikovassa tai kovassa maastossa. Vaikka sen kiinnittämiseen käytetään
+          nauloja, hevonen ei kärsi, koska kaviossa ei ole tuntoaistia, sillä se rakenteellisesti
+          on kuin äärimmäisen paksu kynsi.
+        name: Tee hevosenkenkiä
+  misc:
+    emergencySwimEscape:
+      desc: Olet hukannut sukellusvarusteesi ja happi on loppumassa. Sinun on uitava
+        rantaan niin nopeasti kuin voit, mutta ilman että joudut paniikkiin. Tiedät,
+        että jos nouset liian nopeasti ylös, saatat alkaa dekompression vuoksi vuomaan
+        pahoin.
+      name: Hätäpoistuminen uimalla
+  crafting:
+    jarvonia:
+      tinkering:
+        desc: Raaputat leukaasi miettiessäsi, miten voisit korjata edessäsi olevan
+          romukasan. Keksit tuhat tapaa tehdä siitä jotakin hyödyllistä, mutta useimmista
+          romukasan asioista puuttuu olennaisia osia. Katselet ympäri verstasta etsien
+          vastausta ongelmaasi. Kunnes yhtäkkiä saat oivalluksen, ja keksit mitä tehdä!
+          On siis aika ryhtyä töihin.
+        name: Nikkaroi
+      iceSculpting:
+        name: Jään veistäminen
+        desc: Taltalla, käsisahalla ja pienellä hakulla varustautuneena muutat jääkuution
+          joksikin muuksi, joko toiminnalliseksi tai taiteelliseksi. Nämä teokset
+          ovat luonnoltaan varsin lyhytikäisiä, ja se riippuu paljon ympäristön lämpötilasta.
+    syrenthia:
+      underwaterBasketWeaving:
+        name: Vedenalainen korinkudonta
+        desc: Kudot ohuet korallinpalat taitavasti muodostaaksesi niistä korin. Prosessi
+          on hidas ja työläs, mutta lopputulos saa sinut tuntemaan ylpeyttä kauniista
+          ja käytännöllisestä luomuksestasi.
+  cooking:
+    jarvonia:
+      soupKitchenVolunteering:
+        name: Vapaaehtoistyö soppatykillä
+        desc: Puet esiliinan päällesi ja alat keittiömestarin ohjeiden mukaan tarjoilla
+          kuumaa keittoa sitä eniten tarvitseville. Kun kaikki ovat saaneet annoksensa,
+          tunnet että olet tehnyt jotakin hyvää yhteiskunnan huono-osaisimpien eteen.
+    gdte:
+      wineGrapeStomping:
+        name: Viinirypäleiden polkeminen
+        desc: Astut rypäleiden päälle paljain jaloin, jotta siemenet eivät rikkoontuisi.
+          Siirryt rypälepuristimen keskeltä kohti sen päitä, mikä helpottaa käymistä,
+          sillä hedelmiin kohdistuva paine mahdollistaa, että ne pääsevät kosketukseen
+          prosessista vastaavien hiivojen kanssa.
