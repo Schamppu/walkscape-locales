@@ -2,32 +2,38 @@ singulars:
   skilling:
     chestFind:
       global:
-        desc: Velho nimeltään Tarhiel väitti näiden kenkien antavan sinun kävellä
-          tähtipölyn päällä, jotkut kertovat hänen putoavan vielä tänäkin päivänä.
-        name: Velho nimeltään Tarhiel väitti näiden kenkien antavan sinun kävellä
-          tähtipölyn päällä, jotkut kertovat hänen putoavan vielä tänäkin päivänä.
-      whileMainSkill:
-        desc: Velho nimeltään Tarhiel väitti näiden kenkien antavan sinun kävellä
-          tähtipölyn päällä, jotkut kertovat hänen putoavan vielä tänäkin päivänä.
+        desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: Globaali <stat s="chestFind"/>
+      whileMainSkill:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: <stat s="chestFind"/> kun teet <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> matkustaessa
       whenAchievementPoints:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: Globaali <stat s="chestFind"/> kun vähintään <supp k="achievementPoints"/>
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="chestFind"/> jos puettuna<supp k="quantity"/> kappaletta
+          <supp k="keyword"/> esineitä.
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> kun teet<supp k="skill"/> paikassa<supp k="keyword"/>.
       whileLocationKeyword:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: Globaali <stat s="chestFind"/> kun olet <supp k="keyword"/> sijainnissa.
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> paikassa<supp k="realm"/>
     workEfficiency:
       whileRealmAndTraveling:
         desc: <PLACEHOLDER>
@@ -95,6 +101,7 @@ singulars:
       whileLocationKeyword:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: Globaali <stat s="fineMaterialFind"/> kun olet <supp k="keyword"/> paikassa.
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -110,180 +117,253 @@ singulars:
       whileMainSkillAndRealm:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: <stat s="fineMaterialFind"/> kun teet <supp k="skill"/> paikassa <supp
+          k="realm"/>.
     craftingOutcome:
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="craftingOutcome"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> kun teet <supp k="skill"/>
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="craftingOutcome"/> jos puettuna <supp k="quantity"/>
+          kappalatte <supp k="keyword"/> esineitä.
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> kun teet <supp k="skill"/> paikassa <supp
+          k="keyword"/>.
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> kun olet paikassa <supp k="realm"/>
       whileLocationKeyword:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: Globaali <stat s="craftingOutcome"/> kun olet <supp k="keyword"/> sijainnissa.
     doubleAction:
       global:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: Globaali <stat s="doubleAction"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> kun teet <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> matkustaessa
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="doubleAction"/> jos puettuna <supp k="quantity"/>
+          kappaletta <supp k="keyword"/> esineitä.
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> kun teet <supp k="skill"/> paikassa <supp k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="doubleAction"/> kun olet paikassa <supp k="keyword"/>.
       whileTravelingAndRealm:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> kun matkustat ja olet paikassa <supp k="realm"/>
     doubleRewards:
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="doubleRewards"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="doubleRewards"/> kun teet <supp k="skill"/>
       whenAchievementPoints:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: Globaali <stat s="doubleRewards"/> kun sinulla on <supp k="achievementPoints"/>
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="doubleRewards"/> kun puettuna <supp k="quantity"/>
+          kappaletta <supp k="keyword"/> esineitä.
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="doubleRewards"/> kun teet <supp k="skill"/> paikassa <supp
+          k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="doubleRewards"/> kun olet paikassa <supp k="keyword"/>.
       whileActivity:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="doubleRewards"/> kun teet aktiviteettityyppiä <supp
+          k="activityType"/>.
     rollSpecialTable:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="rollSpecialTable"/> kun teet <supp k="skill"/>
     experience:
       global:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: Globaali <stat s="bonusExperience"/>
       globalSkillXp:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="bonusExperience"/> taitoon <supp k="skill"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> kun teet <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> matkustaessa
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> kun teet <supp k="skill"/> paikassa <supp
+          k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="bonusExperience"/> kun olet paikassa <supp k="keyword"/>.
     travelingDistance:
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="travelingDistance"/>
     inventorySpace:
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="inventorySpace"/>
     stepsRequired:
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="stepsRequired"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> kun teet <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> matkustaessa
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="stepsRequired"/> jos puettuna <supp k="quantity"/>
+          kappaletta <supp k="keyword"/> esineitä.
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> kunt teet <supp k="skill"/> paikassa <supp
+          k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="stepsRequired"/> kun olet paikassa <supp k="keyword"/>.
     noMaterialsConsumed:
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="noMaterialsConsumed"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> kun teet <supp k="skill"/>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> kun teet <supp k="skill"/> paikassa
+          <supp k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="noMaterialsConsumed"/> kun olet paikassa <supp k="keyword"/>.
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> matkustaessa
     skillLevel:
       global:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: <stat s="skillLevel"/> tasoon
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="skillLevel"/> tasoon kun teet <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="skillLevel"/> tasoon matkustaessa
   special:
     findGems:
       whileMining:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="findGems"> mahdollisuus löytää jalokiviä</stat> kun teet <supp
+          k="skill"/>
       whileMainSkillAndLocationKeyword:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: <stat s="findGems">mahdollisuus löytyy linnunpesiä</stat> kun teet <supp
+          k="skill"/> paikassa <supp k="keyword"/>.
     findBirdNests:
       whileWoodcutting:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: <stat s="findBirdNests">mahdollisuus löytää linnunpesiä</stat> kun teet
+          <supp k="skill"/>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="findBirdNests">mahdollisuus löytää linnunpesiä</stat> kun teet
+          <supp k="skill"/> paikassa <supp k="keyword"/>.
     findCollectibles:
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="findCollectibles">mahdollisuus löytää keräilyesineitä</stat>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> kun teet <supp k="skill"/>
       whenAchievementPoints:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="findCollectibles">mahdollisuus löytää keräilyesineitä</stat>
+          kun sinulla on <supp k="achievementPoints"/>
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="findCollectibles">mahdollisuus löytää keräilyesineitä</stat>
+          kun puettuna <supp k="quantity"/> kappaletta <supp k="keyword"/> esineitä.
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> kun teet <supp k="skill"/> paikassa <supp
+          k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Globaali <stat s="findCollectibles"/> kun olet paikassa <supp k="keyword"/>.
   custom:
     gainAdventurersGuildToken:
       desc: <PLACEHOLDER>
       name: <PLACEHOLDER>
+      text: Mahdollisyys löytää <hl>1</hl> Seikkailijakillan merkkejä
