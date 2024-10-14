@@ -1,40 +1,390 @@
-{
-  "singulars": {
-    "materials": {
-      "fish": {
-        "requirementLevel": "Vereist een vis die ten minste aan de <keywordRequirements /> vereiste voldoet."
-      },
-      "logs": {
-        "requirementLevel": "Vereist een boomstam die ten minste aan de <keywordRequirements /> vereiste voldoet."
-      },
-      "plant": {
-        "requirementLevel": "Vereist een plant die ten minste aan de <keywordRequirements /> vereiste voldoet."
-      }
-    },
-    "tools": {
-      "fishing": {
-        "requirementLevel": "Vereist visgereedschap dat ten minste aan de <keywordRequirements /> vereiste voldoet."
-      },
-      "fishingCage": {
-        "requirementLevel": "Vereist een viskooi die ten minste aan de <keywordRequirements /> vereiste voldoet."
-      },
-      "fishingNet": {
-        "requirementLevel": "Vereist een visnet dat ten minste aan de <keywordRequirements /> vereiste voldoet."
-      },
-      "fishingRod": {
-        "requirementLevel": "Vereist een hengel die ten minste aan de <keywordRequirements /> vereiste voldoet."
-      },
-      "fishingSpear": {
-        "requirementLevel": "Vereist een visspeer die ten minste aan de <keywordRequirements /> vereiste voldoet."
-      },
-      "tool": {
-        "requirementLevel": "Vereist gereedschap dat ten minste aan de <keywordRequirements /> vereiste voldoet."
-      },
-      "woodcuttingHatchet": {
-        "name": "Hakbijl",
-        "requirement": "Vereist een houthakkersbijl.",
-        "requirementLevel": "Vereist een houthakkersbijl die ten minste aan de <keywordRequirements /> vereiste voldoet."
-      }
-    }
-  }
-}
+singulars:
+  activities:
+    fishing:
+      name: Vissen
+      requirementLevel: Vissen activiteit vereist welke op z'n minst <keywordRequirements
+        /> vereist.
+      requirement: Vissen activiteit vereist.
+    miningOres:
+      requirementLevel: Erts mijnen activiteit vereist welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Erts mijnen
+      requirement: Erts mijnen activiteit vereist.
+    woodcuttingTrees:
+      requirementLevel: Houthakken activiteit vereist welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Houthakken
+      requirement: Houthakken activiteit vereist.
+    foragingPlants:
+      name: Planten zoeken
+      requirement: Planten zoeken activiteit vereist.
+      requirementLevel: Planten zoeken activiteit vereist welke op z'n minst <keywordRequirements
+        /> vereist.
+  materials:
+    fish:
+      name: Vis
+      requirement: Vereist een vis.
+      requirementLevel: Vereist een vis welke op z'n minst <keywordRequirements />
+        vereist.
+    logs:
+      name: Houtblokken
+      requirement: Vereist een houtblok.
+      requirementLevel: Vereist een houtblok welke op z'n minst <keywordRequirements
+        /> vereist.
+    plant:
+      name: Plant
+      requirement: Vereist een plant.
+      requirementLevel: Vereist een plant welke op z'n minst <keywordRequirements
+        /> vereist.
+    ore:
+      name: Erts
+      requirement: Vereist erts.
+      requirementLevel: Vereist erts welke op z'n minst <keywordRequirements /> vereist.
+    bar:
+      name: Staaf
+      requirement: Vereist een staaf.
+      requirementLevel: Vereist een staaf welke op z'n minst <keywordRequirements
+        /> vereist.
+    plank:
+      name: Plank
+      requirement: Vereist een plank.
+      requirementLevel: Vereist een plank welke op z'n minst <keywordRequirements
+        /> vereist.
+    gem:
+      name: Juweel
+      requirement: Vereist een juweel.
+      requirementLevel: Vereist een juweel welke op z'n minst <keywordRequirements
+        /> vereist.
+    mushroom:
+      name: Paddenstoel
+      requirement: Vereist een paddenstoel.
+      requirementLevel: Vereist een paddenstoel welke op z'n minst <keywordRequirements
+        /> vereist.
+  tools:
+    ruler:
+      requirement: Vereist een liniaal.
+      name: Liniaal
+      requirementLevel: Vereist een liniaal welke op z'n minst <keywordRequirements
+        /> vereist.
+    cookingPan:
+      requirementLevel: Vereist een pan welke op z'n minst <keywordRequirements />
+        vereist.
+      name: Pan
+      requirement: Vereist een pan.
+    woodcuttingHatchet:
+      requirementLevel: Vereist een houthakkersbijl welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Bijl
+      requirement: Vereist een houthakkersbijl.
+    carpentryTool:
+      requirementLevel: Vereist timmergereedschap welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Timmergereedschap
+      requirement: Vereist timmergereedschap.
+    knife:
+      requirementLevel: Vereist een mes welke op z'n minst <keywordRequirements />
+        vereist.
+      name: Mes
+      requirement: Vereist een mes.
+    sickle:
+      requirementLevel: Vereist een sikkel welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Sikkel
+      requirement: Vereist een sikkel.
+    pickaxe:
+      requirementLevel: Vereist een pikhouweel welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Pikhouweel
+      requirement: Vereist een pikhouweel.
+    fishingNet:
+      requirementLevel: Vereist een visnet welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Visnet
+      requirement: Vereist een visnet.
+    screwdriver:
+      requirementLevel: Vereist een schroevendraaier welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Schroevendraaier
+      requirement: Vereist een schroevendraaier.
+    cookingSpices:
+      requirementLevel: Vereist specerijen welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Specerijen
+      requirement: Vereist specerijen.
+    goldPan:
+      name: Goudpan
+      requirement: Vereist een goudpan.
+      requirementLevel: Vereist een goudpan welke op z'n minst <keywordRequirements
+        /> vereist.
+    magnetic:
+      name: Magnetisch
+      requirement: Vereist een magneet.
+      requirementLevel: Vereist een magneet welke op z'n minst <keywordRequirements
+        /> vereist.
+    tool:
+      name: Gereedschap
+      requirement: Vereist gereedschap.
+      requirementLevel: Vereist gereedschap welke op z'n minst <keywordRequirements
+        /> vereist.
+    fishingRod:
+      name: Vishengel
+      requirement: Vereist een vishengel.
+      requirementLevel: Vereist een vishengel welke op z'n minst <keywordRequirements
+        /> vereist.
+    fishingSpear:
+      name: Visserij speer
+      requirement: Vereist een visserij speer.
+      requirementLevel: Vereist een visserij speer welke op z'n minst <keywordRequirements
+        /> vereist.
+    fishingCage:
+      name: Visserij kooi
+      requirement: Vereist een visserij kooi.
+      requirementLevel: Vereist een visserij kooi welke op z'n minst <keywordRequirements
+        /> vereist.
+    fishing:
+      name: Vissen
+      requirement: Vereist een hulpmiddel voor vissen.
+      requirementLevel: Vereist een hulpmiddel voor vissen welke op z'n minst <keywordRequirements
+        /> vereist.
+    cookingTool:
+      requirement: Vereist kookgereedschap.
+      name: Kookgereedschap
+      requirementLevel: Vereist kookgereedschap welke op z'n minst <keywordRequirements
+        /> vereist.
+    craftingTool:
+      name: Ambacht gereedschap
+      requirement: Vereist ambacht gereedschap.
+      requirementLevel: Vereist ambacht gereedschap welke op z'n minst <keywordRequirements
+        /> vereist.
+    fishingLure:
+      name: Lokaas
+      requirement: Vereist lokaas.
+      requirementLevel: Vereist lokaas welke op z'n minst <keywordRequirements />
+        vereist.
+    magnifyingLense:
+      name: Vergrootglas
+      requirement: Vereist een vergrootglas.
+      requirementLevel: Vereist een vergrootglas welke op z'n minst <keywordRequirements
+        /> vereist.
+    cookingKnife:
+      name: Mes
+      requirement: Vereist een mes.
+      requirementLevel: Vereist een mes welke op z'n minst <keywordRequirements />
+        vereist.
+    cookingPot:
+      name: Kookpot
+      requirement: Vereist een kookpot.
+      requirementLevel: Vereist een kookpot welke op z'n minst <keywordRequirements
+        /> vereist.
+    cuttingBoard:
+      name: Snijplank
+      requirement: Vereist een snijplank.
+      requirementLevel: Vereist een snijplank welke op z'n minst <keywordRequirements
+        /> vereist.
+    chisel:
+      name: Beitel
+      requirement: Vereist een beitel.
+      requirementLevel: Vereist een beitel welke op z'n minst <keywordRequirements
+        /> vereist.
+    saw:
+      name: Zaag
+      requirement: Vereist een zaag.
+      requirementLevel: Vereist een zaag welke op z'n minst <keywordRequirements />
+        vereist.
+    smithingHammer:
+      name: Smidshamer
+      requirement: Vereist een smidshamer.
+      requirementLevel: Vereist een smidshamer welke op z'n minst <keywordRequirements
+        /> vereist.
+    localMap:
+      name: Lokale kaart
+      requirement: Vereist een lokale kaart.
+      requirementLevel: Vereist een lokale kaart welke op z'n minst <keywordRequirements
+        /> vereist.
+    wrench:
+      name: Moersleutel
+      requirement: Vereist een moersleutel.
+      requirementLevel: Vereist een moersleutel welke op z'n minst <keywordRequirements
+        /> vereist.
+consumables:
+  cookedFish:
+    name: Gekookte vis
+    requirement: Vereist een gekookte vis.
+    requirementLevel: Vereist een gekookte vis welke op z'n minst <keywordRequirements
+      /> vereist.
+  food:
+    name: Eten
+    requirement: Vereist eten.
+    requirementLevel: Vereist eten welke op z'n minst <keywordRequirements /> vereist.
+  fruit:
+    name: Fruit
+    requirement: Vereist fruit.
+    requirementLevel: Vereist fruit welke op z'n minst <keywordRequirements /> vereist.
+  alcohol:
+    name: Alcohol
+    requirement: Vereist alcohol.
+    requirementLevel: Vereist alcohol welke op z'n minst <keywordRequirements />
+      vereist.
+  water:
+    name: Water
+    requirement: Vereist water.
+    requirementLevel: Vereist water welke op z'n minst <keywordRequirements /> vereist.
+  sandwich:
+    name: Broodje
+    requirement: Het is een broodje, echt waar
+    requirementLevel: Vereist eten welke op z'n minst <keywordRequirements /> vereist.
+  beverage:
+    name: Drankje
+    requirementLevel: Vereist een drankje dat op z'n minst <keywordRequirements
+      /> vereist.
+    requirement: Vereist een drankje.
+  containers:
+    chest:
+      name: Kist
+      requirement: Vereist een kist.
+      requirementLevel: Vereist een kist welke op z'n minst <keywordRequirements />
+        vereist.
+    regionalChest:
+      name: Regionale kist
+      requirement: Vereist een regionale kist.
+      requirementLevel: Vereist een regionale kist welke op z'n minst <keywordRequirements
+        /> vereist.
+    skillingChest:
+      name: Vaardigheidskist
+      requirement: Vereist een vaardigheidskist.
+      requirementLevel: Vereist een vaardigheidskist welke op z'n minst <keywordRequirements
+        /> vereist.
+  general:
+    fuel:
+      name: Brandstof
+      requirement: Vereist brandstof.
+      requirementLevel: Vereist brandstof welke op z'n minst <keywordRequirements
+        /> vereist.
+    lightSource:
+      name: Lichtbron
+      requirement: Vereist een lichtbron.
+      requirementLevel: Vereist dat de gebruiker <keywordRequirements /> aan heeft.
+  misc:
+    trash:
+      name: Afval
+      requirement: Vereist afval.
+      requirementLevel: Vereist afval welke op z'n minst <keywordRequirements /> vereist.
+  achievements:
+    percentage:
+      requirement: geen
+      requirementLevel: geen
+      name: Prestatie percentage
+  search:
+    skills:
+      agility:
+        name: Behendigheid
+      carpentry:
+        name: Timmerwerk
+      cooking:
+        name: Koken
+      crafting:
+        name: Ambacht
+      fishing:
+        name: Vissen
+      mining:
+        name: Mijnen
+      traveling:
+        name: Reizen
+      smithing:
+        name: Smeden
+      woodcutting:
+        name: Houthakken
+      foraging:
+        name: Verzamelen
+    items:
+      consumables:
+        food:
+          name: Eten
+        beverage:
+          name: Drankje
+        potion:
+          name: Toverdrank
+  weight:
+    light:
+      name: Licht
+    heavy:
+      name: Zwaar
+    ultraLight:
+      name: Zeer licht
+  services:
+    sawmill:
+      name: Zagerij
+    workshop:
+      name: Werkplaats
+    forge:
+      name: Smederij
+    kitchen:
+      name: Keuken
+  itemSets:
+    adventuringTools:
+      name: Avontuurgereedschap set
+    divingGear:
+      name: Duik spullen
+      requirement: Vereist duik spullen.
+      requirementLevel: Vereist duik spullen welke op z'n minst <keywordRequirements
+        /> vereist.
+    advancedDivingGear:
+      name: Geavanceerde duik spullen
+      requirement: Vereist geavanceerde duik spullen.
+      requirementLevel: Vereist geavanceerde duik spullen welke op z'n minst <keywordRequirements
+        /> vereist.
+    expertDivingGear:
+      name: Expert duik spullen
+      requirement: Vereist expert duik spullen.
+      requirementLevel: Vereist expert duik spullen welke op z'n minst <keywordRequirements
+        /> vereist.
+    treasureHunter:
+      name: Schatzoeker set
+  locations:
+    underwater:
+      name: Onder water
+  recipes:
+    skills:
+      cooking:
+        name: Koken
+    products:
+      sandwich:
+        name: Broodje
+  gear:
+    lifeVest:
+      requirementLevel: Vereist een reddingsvest welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Reddingsvest
+      requirement: Vereist een reddingsvest.
+    bugCatchingNet:
+      requirementLevel: Vereist een insectenvangnet welke op z'n minst <keywordRequirements
+        /> vereist.
+      name: Insectenvangnet
+      requirement: Vereist een insectenvangnet.
+    frisbee:
+      name: Frisbee
+      requirement: Vereist een frisbee.
+      requirementLevel: Vereist een frisbee welke op z'n minst <keywordRequirements
+        /> vereist.
+    skis:
+      name: Ski's
+      requirement: Vereist ski's.
+      requirementLevel: Vereist ski's welke op zn minst <keywordRequirements /> vereist.
+    climbing:
+      name: Klimmen
+      requirement: Vereist klimuitrusting.
+      requirementLevel: Vereist klimuitrusting welke op z'n minst <keywordRequirements
+        /> vereist.
+    ring:
+      name: Ring
+      requirement: Vereist een ring.
+      requirementLevel: Vereist een ring welke op z'n minst <keywordRequirements />
+        vereist.
+    socks:
+      name: Sokken
+      requirement: Vereist sokken.
+      requirementLevel: Vereist sokken welke op z'n minst <keywordRequirements />
+        vereist.
+    skillingGear:
+      name: Vaardigheden uitrusting
+      requirement: Vaardigheden uitrusting benodigd.
