@@ -147,6 +147,23 @@ plurals:
         few: '-'
         many: '-'
         other: '{} saavutuspisteet'
+  inventory:
+    info:
+      consumableDuration:
+        one: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
+          askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
+          <c>{toimet} toimintoa</c>.
+        other: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
+          askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
+          <c>{toimet} toimintoa</c>.
+        zero: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
+          askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
+          <c>{toimet} toimintoa</c>.
+        two: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
+          askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
+          <c>{toimet} toimintoa</c>.
+        few: '-'
+        many: '-'
 singulars:
   achievements:
     info:
@@ -332,6 +349,7 @@ singulars:
       stepsOfLastWeek: Viimeisten 7 päivän askeleet
       checkOut: Tässä on WalkScape-hahmoni {nimi}. Tsekkaa se!\nhttps://walkscape.app
       checkOutSubject: Katso edistymiseni WalkScapessa!
+      totalLevel: Kokonaistaso
     info:
       skillBreakdown: Tässä on hahmosi matkan aikana saavutettujen taitojen kokonaisjakauma.
   permissions:
