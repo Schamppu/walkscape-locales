@@ -2,8 +2,12 @@ singulars:
   activity:
     info:
       consumablesUsage: You can choose a <c>food</c> and a <c>potion</c> to use while doing activities.
+      noActivity: No activity currently selected. <hl>Choose one below</hl>, or swipe left to see everything available in this location.
+      savedSteps: You have saved steps that are being spent. Each step counts as two until all saved steps are depleted.
     phrases:
       consumables: Consumables
+      noActivity: No activity
+      savedSteps: Saved steps
   character:
     info:
       skillBreakdown: Here is the total breakdown of all of the skills your character has leveled up throughout your journey.
@@ -55,6 +59,11 @@ singulars:
       noMaterialsThatCouldBeUsed: No materials that could be used for crafting in your inventory.
       showingRecipiesThatUses: Showing recipies that uses
       requiresService: Requires a service.
+    errors:
+      notSameQuality: 'Materials must either all be fine or normal'
+      noService: 'Service requirement is not met'
+      noMaterials: 'Crafting materials are missing'
+      skillRequirementsNotMet: 'Skill requirements are not met'
   abilities:
     info:
       youHaveNoAbilities: <hl>You have no abilities</hl>. Certain gear in the game can grant you abilities that you can use to gain some instant benefit in the game for a cooldown.
@@ -322,6 +331,22 @@ singulars:
       googlePlay: Update from Google Play
       support: Support the game
       accountPage: Account Page
+    loadingStates:
+      localizationFiles: Loading localization files
+      gameVersion: Getting game version
+      initializingPlayer: Initializing the player data
+      startingGameLoad: Starting to load the game data
+      validatingGame: Validating the game data from the server
+      checkingLocalizations: Checking localizations from the server
+      initializingProviders: Initializing providers
+      loadingComplete: Loading complete!
+      readingLocalGameData: Reading local game data
+      initializingObjects: Initializing game objects
+      initializingDatabases: Initializing databases
+      readingCloudData: Reading cloud data
+      cleaningUpData: Cleaning up data
+      dataLoadingComplete: Data loading complete!
+      loadingCharactersFromCloud: Loading characters from the cloud
   social:
     phrases:
       manageFriends: Manage social
