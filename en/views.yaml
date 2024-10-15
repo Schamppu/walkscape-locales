@@ -16,6 +16,7 @@ singulars:
       stepsOfLastWeek: Steps of last 7 days
       checkOut: Here's my WalkScape character {name}. Check it out!\nhttps://walkscape.app
       checkOutSubject: Check out my progress in WalkScape!
+      totalLevel: Total level
   permissions:
     phrases:
       pedometerPermission: Step counter permission
@@ -353,6 +354,15 @@ singulars:
       pendingInvites: Pending invites
       friends: Friends
 plurals:
+  inventory:
+    info:
+      consumableDuration:
+        zero: 'Activity <object id="{activity}" alwaysShow="true"/> requires <c>{steps}</c> steps per action. The chosen amount of consumables would buff <c>{actions} actions</c>.'
+        one: 'Activity <object id="{activity}" alwaysShow="true"/> requires <c>{steps}</c> steps per action. The chosen amount of consumables would buff <c>{actions} action</c>.'
+        two: 'Activity <object id="{activity}" alwaysShow="true"/> requires <c>{steps}</c> steps per action. The chosen amount of consumables would buff <c>{actions} actions</c>.'
+        few: '-'
+        many: '-'
+        other: 'Activity <object id="{activity}" alwaysShow="true"/> requires <c>{steps}</c> steps per action. The chosen amount of consumables would buff <c>{actions} actions</c>.'
   achievements:
     phrases:
       achievementPoint:
