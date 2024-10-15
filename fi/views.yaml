@@ -68,6 +68,7 @@ maps:
       'fi': Suomi
       'it': Italia
       'en': Englanti
+      'nl-NL': Hollanti
     visibilitySettings:
       'private': Yksityinen
       'public': Julkinen
@@ -96,8 +97,8 @@ plurals:
         few: '-'
         many: '-'
       actionsToLevelUp:
-        one: Toiminto tason nostamiseksi
-        other: Toimintoa tason nostamiseksi
+        one: Toiminto tason nousuun
+        other: Toimintoa tason nousuun
         few: '-'
         two: Toimintoja tason nousuun
         many: '-'
@@ -124,8 +125,8 @@ plurals:
         many: '-'
         zero: '-'
       stepsToLevelUp:
-        one: Askel tason nostamiseen
-        other: Askelta tason nostamiseen
+        one: Askel tason nousuun
+        other: Askelta tason nousuun
         zero: '-'
         two: Askeleita tason nousuun
         few: '-'
@@ -149,9 +150,9 @@ plurals:
 singulars:
   achievements:
     info:
-      viewDescription: Avaa saavutuksia ansaitaksesi <hl>palkintopisteitä</hl>. Kun
-        palkitsemispistepalkki täyttyy, saat palkinnon kaikille hahmoillesi. Jotkut
-        saavutukset antavat myös palkintoja niiden avaamisesta.
+      viewDescription: Avaa saavutuksia ansaitaksesi <hl>saavutuspisteitä</hl>. Kun
+        saavutuspistepalkki täyttyy, voit lunastaa näkymästä palkintoja. Jotkut saavutukset
+        antavat myös palkintoja niiden avaamisesta.
       collectibleItems: Keräilyesineet ovat asioita, joita voit saada WalkScapen maailmasta.
         Keräilyesineitä on useita erilaisia, joita voit yrittää löytää. Ne eivät vie
         repputilaa ja ovat aina hahmosi mukana.
@@ -189,13 +190,13 @@ singulars:
       requiresService: Vaatii palvelun.
   inventory:
     info:
-      noItemEquipped: Ei varustetta käytössä. \n\n Voit pukea esineen valitsemalla
-        jonkin alla olevasta luettelosta ja painamalla "pue".
+      noItemEquipped: Ei esinettä puettuna. \n\n Voit pukea esineen valitsemalla jonkin
+        alla olevasta luettelosta ja painamalla "pue".
       noItemSelected: Ei valittua esinettä. \n\n Valitse esine alla olevasta luettelosta,
         jotta voit verrata sitä nykyiseen esineeseen ja pukea sen.
       noItemsFound: Repustasi ei löytynyt esineitä, jotka sopisivat tähän.
     phrases:
-      treasury: Aarrekammio
+      treasury: Arkut
       dropItems: Pudota esineitä?
       longPressTip: <c>Vinkki:</c> Esineen pitkä painallus valitsee kaikki samankaltaiset
         esineet.
@@ -218,9 +219,9 @@ singulars:
       duration: Kesto
       durationInSteps: Aktiivisena <c>{steps}</c> <icon i="Steps" /> askeleen ajan
       inUse: Käytössä
-      selectedConsumable: Valitut kulutettavat
-      consumables: Kulutettavat
-      noConsumableSelected: Kulutettavaa ei ole valittu. Voit valita yhden alla olevista.
+      selectedConsumable: Valitut hyödykkeet
+      consumables: Hyödykkeet
+      noConsumableSelected: Hyödykettä ei ole valittu. Voit valita yhden alla olevista.
       noConsumables: Ei hyödykkeitä repussasi.
       cantBeDropped: Esinettä ei voi pudottaa.
       noFoodConsumables: Repussasi ei ole <hl>ruokaa</hl>.
@@ -243,7 +244,7 @@ singulars:
       showGear: Näytä varusteet
   location:
     phrases:
-      activities: Toiminnat
+      activities: Aktiviteetit
       services: Palvelut
       buildings: Rakennukset
       noActivites: Paikassa ei ole saatavilla olevia aktiviteetteja.
@@ -311,7 +312,7 @@ singulars:
           ja palkinnot tästä työstä.
   activity:
     phrases:
-      consumables: Kulutettavat
+      consumables: Hyödykkeet
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
   character:
@@ -354,7 +355,7 @@ singulars:
     phrases:
       abilities: Kyvyt
       useAbility: Käytä kykyä
-      useConsumable: Käytä kulutettava
+      useConsumable: Käytä hyödyke
       noAction: Ei toimenpidettä
       holdToCast: Pidä pohjassa loihtiaksesi
       holdToUse: Pidä pohjassa käyttääksesi
