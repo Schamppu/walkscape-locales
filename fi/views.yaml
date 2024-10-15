@@ -188,6 +188,11 @@ singulars:
         käsityöhön.
       showingRecipiesThatUses: Näytetään reseptit, joissa käytetään
       requiresService: Vaatii palvelun.
+    errors:
+      notSameQuality: Kaikkien materiaalien on oltava joko oivia tai normaaleja
+      noService: Palveluvaatimus ei täyty
+      noMaterials: Sinulta puuttuu materiaaleja
+      skillRequirementsNotMet: Taitovaatimukset eivät täyty
   inventory:
     info:
       noItemEquipped: Ei esinettä puettuna. \n\n Voit pukea esineen valitsemalla jonkin
@@ -313,8 +318,14 @@ singulars:
   activity:
     phrases:
       consumables: Hyödykkeet
+      noActivity: Ei aktiviteettia
+      savedSteps: Pelastetut askeleet
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
+      savedSteps: Sinulla on käytössä pelastettuja askelia. Jokainen askeleesi lasketaan
+        kahtena kunnes kaikki pelastetut askeleet ovat kulutettu.
+      noActivity: Et ole valinnut mitään aktiviteettia. <hl>Valitse jokin alla olevista</hl>,
+        tai pyyhkäise vasemmalle nähdäksesi kaiken mitä voit tehdä tässä paikassa.
   character:
     phrases:
       skills: Taidot
@@ -483,6 +494,22 @@ singulars:
       welcomeToWalkscape: Tervetuloa WalkScapeen, <hl>vieras</hl>. Ole hyvä ja kirjaudu
         sisään.
       pleaseEnterCredentials: Syötä WalkScape-tilisi tunnukset.
+    loadingStates:
+      localizationFiles: Ladataan kielitiedostoja
+      gameVersion: Haetaan pelin versiota
+      initializingPlayer: Alustetaan pelaajadataa
+      startingGameLoad: Aloitetaan pelidatan lataaminen
+      validatingGame: Vahvistetaan pelidataa palvelimelta
+      checkingLocalizations: Vahvistetaan kielidataa palvelimelta
+      initializingProviders: Alustetaan palveluita
+      loadingComplete: Lataus valmis!
+      readingLocalGameData: Luetaan paikallista pelidataa
+      initializingObjects: Alustetaan peliobjekteja
+      initializingDatabases: Alustetaan tietokantoja
+      readingCloudData: Luetaan pilvidataa
+      cleaningUpData: Siivotaan pelidataa
+      dataLoadingComplete: Pelidatan lataus valmis!
+      loadingCharactersFromCloud: Ladataan hahmoja pilvestä
   social:
     phrases:
       manageFriends: Hallitse yhteisöjä
