@@ -29,6 +29,7 @@ maps:
       'showRecipesRequirementsAreMet': Wymagania poziomu nie są spełnione
       'showRecipesServiceAreMet': Wymagania usług nie są spełnione
       'showRecipesMaterialsAreMet': Wymagania materiałów nie są spełnione
+      'showCompletedAchievements': Pokaż ukończone osiągnięcia
     stepCountNotifications:
       'never': Nigdy
       'always': Zawsze
@@ -142,6 +143,12 @@ plurals:
         few: '-'
         many: '-'
         other: Kroków do celu
+  inventory:
+    info:
+      consumableDuration:
+        other: Aktywność <object id="{activity}" alwaysShow="true"/> wymaga <c>{steps}</c>
+          kroków na akcję. Wybrana ilość przedmiotów zużywalnych zadziała na <c>{actions}
+          akcji</c>.
 singulars:
   achievements:
     info:
@@ -247,12 +254,17 @@ singulars:
       buildings: Budynki
       routes: Drogi
       tapToShowRoutes: Tapnij, by pokazać drogi
+      jobs: Prace
+      jobBoard: Tablica pracy
   activity:
     info:
       consumablesUsage: Możesz wybrać <c>jedzenie</c> oraz <c>miksturę</c>, by użyć
         w trakcie aktywności.
+      savedSteps: Posiadasz zapisane kroki, które są wykorzystywane. Każdy krok liczy
+        się jako dwa, dopóki wszystkie zapisane kroki nie zostaną wyczerpane.
     phrases:
       consumables: Przedmioty Używalne
+      savedSteps: Zapisane kroki
   character:
     info:
       skillBreakdown: Tutaj znajduje się całkowite podsumowanie wszystkich twoich
@@ -310,6 +322,26 @@ singulars:
   jobs:
     phrases:
       rewards: Nagrody za ukończenie
+      abandonJob: Porzuć pracę
+      itemsFromInventory: Przedmioty w ekwipunku
+      itemsFromBank: Przedmioty z banku
+      youMustBeInLocation: Musisz być w tej samej lokacji mając <object id="{obj}"/>,
+        by oddać przedmioty.
+      hasNoBank: W tej lokacji nie ma banku.
+      hasNoItemsInInventory: Nie ma żadnych pasujących przedmiotów w twoim ekwipunku.
+      give: Daj
+      refreshIn: 'Tablica pracy zostanie odświeżona za:'
+      acceptJob: Akceptuj pracę
+      hasNoItemsInBank: Nie ma pasujących przedmiotów w twoim banku.
+      acceptedJobs: Aktualnie aktywne prace <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      noJobsAvailable: 'Nie ma żadnych dostępnych prac w tej lokacji w tym momencie.
+        Nowe prace będą dostępne za:'
+      giveItems: Daj przedmioty
+    dialogs:
+      abandonJob:
+        title: Porzuć pracę
+        text: Na pewno chcesz porzucić tę pracę? Stracisz cały postęp oraz nagrody
+          z tej pracy.
   settings:
     categories:
       notifications:
@@ -392,6 +424,7 @@ singulars:
       currentLocation: Aktualna lokacja
       afterExploring: Po eksploracji lokacji będziesz mieć opcję zobaczenia ciekawych
         miejsc w tej okolicy.
+      noActivities: Nie ma dostępnych żadnych aktywności w tej lokacji.
   stats:
     phrases:
       stats: Statystyki
@@ -486,3 +519,6 @@ singulars:
         aby zdobyć zapłatę. Możesz akceptować zadania z <c>tablic ogłoszeń</c> w różnych
         lokalizacjach, takich jak miasta. Możesz mieć aktywne trzy zadania w tym samym
         czasie.
+  faction:
+    phrases:
+      openFaction: Otwórz frakcję
