@@ -82,6 +82,12 @@ maps:
         'none': Brak
         'masculine': A (Męski)
         'feminine': B (Żeński)
+  shop:
+    phrases:
+      itemType:
+        "tool": Narzędzia
+        "gear": Wyposażenie
+        "material": Materiały
 plurals:
   achievements:
     phrases:
@@ -192,6 +198,11 @@ singulars:
         wykorzystać do produkcji.
       showingRecipiesThatUses: Pokaż przepisy, które używają
       requiresService: Wymaga usługi.
+    errors:
+      noService: Wymóg usług nie jest spełniony
+      notSameQuality: Wszystkie materiały muszą być albo zacne albo normalne
+      skillRequirementsNotMet: Wymagania umiejętności nie są spełnione
+      noMaterials: Brakuje materiałów do wytwarzania
   inventory:
     info:
       noItemEquipped: Nie wyposażono żadnego przedmiotu. \n\n Przedmiot można wyposażyć,
@@ -268,6 +279,12 @@ singulars:
       consumables: Przedmioty Używalne
       savedSteps: Zapisane kroki
       stopWhenOverEncumbered: Zatrzymaj przy przeciążeniu
+      notAffectingTraveling: (nie wpływa na wydajność podróżowania)
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Globalna wydajność pracy
+        <c>-{penalty}%</c>
+      noActivity: Brak Aktywności
+      inventoryIsOverLimit: Ekwipunek jest przeciążony!
+      options: Opcje
   character:
     info:
       skillBreakdown: Tutaj znajduje się całkowite podsumowanie wszystkich twoich
@@ -277,6 +294,7 @@ singulars:
       stepsOfLastWeek: Kroków w ciągu 7 dni
       checkOut: To moja postać {name} w WalkScape. Sprawdź to!\nhttps://walkscape.app
       checkOutSubject: Sprawdź mój postęp w WalkScape!
+      totalLevel: Całkowity poziom
   permissions:
     phrases:
       pedometerPermission: Uprawnienia do liczenia kroków
@@ -340,6 +358,10 @@ singulars:
       noJobsAvailable: 'Nie ma żadnych dostępnych prac w tej lokacji w tym momencie.
         Nowe prace będą dostępne za:'
       giveItems: Daj przedmioty
+      youMustBeInLocationToCollect: Aby odebrać nagrody, musisz mieć <object id="{obj}"/>
+        i być w tej samej lokacji.
+      collectRewards: Odbierz nagrody
+      openJournal: Otwórz dziennik
     dialogs:
       abandonJob:
         title: Porzuć pracę
@@ -525,3 +547,11 @@ singulars:
   faction:
     phrases:
       openFaction: Otwórz frakcję
+  shop:
+    phrases:
+      buyBack: Odkupowanie
+      bought: Kupione
+      sold: Sprzedane
+      buying: Kupowanie
+      selling: Sprzedawanie
+      resetTrade: Resetowanie handlu
