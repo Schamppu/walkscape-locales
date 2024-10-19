@@ -15,6 +15,13 @@ singulars:
       text: Este contenido <hl>no está disponible</hl> en la versión actual de WalkScape.
     disabled:
       title: Deshabilitado
+      text: Esta funcionalidad ha sido <hl>desactivada temporalmente</hl>. Visita
+        el Portal, Reddit o Discord para más información.
+    workInProgress:
+      title: En desarrollo
+      text: Esta opción está aún en desarrollo y muchas de sus funcionalidades <hl>no
+        están aún disponibles</hl>. ¡Puedes comenzar a probarla ya o bien volver más
+        adelante cuando esté completamente implementada!
   popups:
     skillLevel:
       skillLevelUp: '{skillName} sube de nivel'
@@ -81,3 +88,12 @@ singulars:
         title: Error desconocido.
     characterValidation:
       nameTooShort: El nombre de tu personaje ha de tener 3 letras o más.
+      nameContainsSpecialCharacters: El nombre del persona contiene caracteres especiales.
+        Solo se permiten letras, números y espacios.
+      nameContainsleadingTrailingSpaces: No se permiten espacios por delante o por
+        detrás.
+      nameContaintsConsecutiveSpaces: No se permiten espacios consecutivos.
+      nameTooShortWithSpacesRemoved: Sin contar los espacios, el nombre del personaje
+        debe tener una longitud mayor de tres letras.
+    activityCancelled:
+      title: Actividad cancelada
