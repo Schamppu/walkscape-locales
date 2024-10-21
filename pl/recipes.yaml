@@ -124,6 +124,10 @@ singulars:
         name: Stwórz siatkę na meduzy
         desc: Narzędzie do łapania meduz, wykonane z wytrzymałych materiałów i wyposażone
           w siatkę o drobnych oczkach.
+      hydriliumMinersMagnet:
+        name: Magnes górnika z Hydrilium
+      hydriliumLogSplitter:
+        name: Łuparka do drewna z Hydrilium
     misc:
       hardenedKelp:
         activityDesc: Dokładnie czyścisz świeże wodorosty, usuwając wszelkie zanieczyszczenia.
@@ -214,25 +218,565 @@ singulars:
         name: Stwórz maskę do nurkowania z wodorostów
         desc: Podstawowy aparat do widzenia w podwodnym świecie, wykonany z suszonych
           wodorostów, dopasowany do twarzy i wyposażony w przezroczysty otwór do obserwacji.
+        activityDesc: Starannie wybierasz i czyścisz duży, płaski kawałek suszonego
+          wodorostu. Kształtując wodorost tak, aby pasował do twojej twarzy, tworzysz
+          formę na wizjer umożliwiający widzenie. Po zabezpieczeniu otworu w swoim
+          miejscu, tworzysz maskę, zapewniając jej wygodę noszenia i wodoszczelność.
       kelpDivingBody:
         name: Stwórz koszulkę do nurkowania z wodorostów
+        desc: Elastyczny i wyporny strój wykonany z włókien wodorostów, zaprojektowany,
+          aby ułatwić podwodną eksplorację.
+        activityDesc: Przetwarzasz wodorosty na miękkie włókna, ostrożnie przędząc
+          je w przędzę. Używając technik dziania lub tkania, tworzysz ubranie przypominające
+          koszulę, które zapewnia ciepło i pływalność w zimnych, wodnych głębinach.
       kelpDivingLegs:
         name: Stwórz spodnie do nurkowania z wodorostów
+        desc: Ciepłe, elastyczne i wyporne spodnie wykonane z włókien wodorostów,
+          przeznaczone do podwodnych eksploracji.
+        activityDesc: Przetwarzasz wodorosty na miękkie włókna, a następnie przędzisz
+          je na przędzę. Używając technik dziewiarskich lub tkackich, tworzysz spodnie,
+          które zapewniają ciepło, wyporność i swobodę ruchów podczas podwodnych przygód.
       hydriliumDivingHelm:
         name: Stwórz hydrilowy hełm do nurkowania
+        desc: Wytrzymałe i ochronne nakrycie głowy wytworzone z hydrilu, przeznaczone
+          do eksploracji podwodnej.
+        activityDesc: Kształtujesz kawałek metalu hydrilu w formę przypominającą hełm,
+          zapewniając odpowiednią ochronę głowy. Dołączając przezroczysty otwór obserwacyjny
+          i łącząc w sobie mechanizmy dostarczania powietrza, tworzysz wyrafinowany
+          hełm do nurkowania, który jest w stanie wytrzymać podwodne ciśnienie.
       hydriliumDivingBody:
         name: Stwórz hydrilowy tors do nurkowania
+        desc: Ochronny i wypornościowy pancerz wytworzony z hydrilu, przeznaczony
+          do eksploracji podwodnej.
+        activityDesc: Kształtujesz hydril w dopasowany pancerz tułowia, zapewniający
+          maksymalną ochronę i elastyczność. Łącząc w sobie kieszenie powietrzne lub
+          elementy wypornościowe, tworzysz sprzęt do nurkowania, który pomaga w manewrowaniu
+          pod wodą i przetrwaniu.
       hydriliumDivingLegs:
         name: Stwórz hydrilowe legginsy do nurkowania
         desc: Elastyczna i ochronna odzież na nogi wykonana z hydrilu, zaprojektowana
           do podwodnej eksploracji.
+        activityDesc: Kształtujesz metal hydrilu w dopasowaną parę legginsów, zapewniając
+          im ciepło, ochronę i elastyczność. Łącząc w sobie kieszenie powietrzne lub
+          elementy wypornościowe, tworzysz sprzęt do nurkowania, który pomaga w manewrowaniu
+          pod wodą i przetrwaniu.
   smithing:
     scrap:
       copperBarScrap:
         name: Utwórz sztabkę miedzi (Złom)
+        activityDesc: Dzięki odpowiednim technikom przetapiasz skrawki metalu w trwałą
+          sztabkę miedzi.
+        desc: Podgrzewanie i kształtowanie skrawków metalu w solidny pręt do różnych
+          zastosowań.
       bronzeBarScrap:
         name: Utwórz sztabkę z brązu (Złom)
         desc: Roztop metalowy złom, aby stworzyć wszechstronną sztabkę z brązu.
+        activityDesc: Umiejętnie łącząc metalowe skrawki w uniwersalny metalowy pręt,
+          tworzysz pręt z brązu.
       ironBarScrap:
         name: Utwórz żelazną sztabkę (Złom)
         desc: Przekształć metalowy złom w solidną i użyteczną sztabkę żelaza.
+        activityDesc: Fachowo przetapiając metalowe skrawki w uniwersalny metalowy
+          pręt, wytwarzasz żelazną sztabkę.
+      steelBarScrap:
+        name: Utwórz sztabkę stali (Złom)
+        desc: Wykuj mocną sztabkę stali do różnych ciężkich zastosowań.
+        activityDesc: Precyzyjnie formując metalowe skrawki w wytrzymały metalowy
+          pręt, tworzysz sztabkę stali.
+      tarsiliumBarScrap:
+        name: Utwórz sztabkę tarsilu (Złom)
+        desc: Utwórz sztabkę tarsilu ze skrawków metalu.
+        activityDesc: Skrawki metalu topi się w formie, tworząc mętną, gęstą ciecz.
+          Powoli stygnie, tworząc idealną sztabkę tarsilu.
+      farganiteBarScrap:
+        name: Utwórz sztabkę farganitu (Wióry)
+        desc: Utwórz sztabkę farganitu z metalowych wiórów.
+        activityDesc: Wióry opierają się ciepłu, ale dzięki twojemu poświęceniu przy
+          piecu. One również topią się i formują w miękką niebieską sztabkę.
+    copper:
+      copperShield:
+        activityDesc: Tworzysz miedzianą tarczę z miedzianych sztabek.
+        name: Wykonaj miedzianą tarczę
+        desc: Wykonaj miedzianą tarczę z miedzianej sztabki.
+      copperSword:
+        name: Zrób miedziany miecz
+        desc: Wykonaj miedziany miecz ze sztabki miedzi.
+        activityDesc: Tworzysz miedziany miecz ze sztabki miedzi.
+    bronze:
+      bronzeSword:
+        name: Zrób miecz z brązu
+        desc: Wykonaj miecz z brązu ze sztabki brązu.
+        activityDesc: Tworzysz miecz z brązu ze sztabki brązu.
+      bronzeShield:
+        name: Wykonaj tarczę z brązu
+        desc: Wykonaj tarczę z brązu ze sztabek brązu.
+        activityDesc: Tworzysz tarczę z brązu ze sztabek brązu.
+    wooden:
+      woodenShield:
+        activityDesc: Tworzysz drewnianą tarczę z desek.
+        desc: Wykonaj drewnianą tarczę z desek.
+        name: Wykonaj drewnianą tarczę
+      woodenSword:
+        activityDesc: Tworzysz drewniany miecz z desek.
+        desc: Wykonaj drewniany miecz z desek.
+        name: Wykonaj drewniany miecz
+    iron:
+      ironSword:
+        name: Wykonaj żelazny miecz
+        desc: Wykonaj żelazny miecz z żelaznej sztabki.
+        activityDesc: Tworzysz żelazny miecz z żelaznej sztabki.
+      ironShield:
+        name: Wykonaj żelazną tarczę
+        desc: Wykonaj żelazną tarczę z żelaznych sztabek.
+        activityDesc: Tworzysz żelazną tarczę z żelaznych sztabek.
+    bars:
+      copperBar:
+        name: Wytop sztabkę miedzi
+        desc: Podgrzej i kształtuj miedź w solidną sztabę do różnych zastosowań.
+        activityDesc: Dzięki odpowiednim technikom wytapiasz miedź w trwałą sztabkę
+          metalu, tworząc sztabkę miedzi.
+      bronzeBar:
+        name: Wytop sztabkę z brązu
+        desc: Roztop i połącz miedź i cynę, aby stworzyć wszechstronną sztabkę z brązu.
+        activityDesc: Umiejętnie łącząc miedź i cynę w uniwersalną metalową sztabkę,
+          tworzysz sztabkę z brązu.
+      ironBar:
+        name: Wytop sztabkę żelaza
+        desc: Przekształć rudę żelaza w solidną i użyteczną sztabkę żelaza.
+        activityDesc: Fachowo przetapiając rudę żelaza w uniwersalną sztabkę metalu,
+          tworzysz sztabkę żelaza.
+      steelBar:
+        name: Wytop sztabkę stali
+        desc: Wykuj mocną sztabkę stali do różnych ciężkich zastosowań.
+        activityDesc: Precyzyjnie kształtując stal w wytrzymały metalowy pręt, tworzysz
+          stalową sztabkę.
+      tarsiliumBar:
+        name: Wytop sztabkę tarsilu
+        desc: Stwórz sztabkę tarsilu z wcześniej zebranej rudy.
+        activityDesc: Ciemny metal topi się w formie, tworząc mętną, gęstą ciecz.
+          Powoli stygnie, tworząc idealną sztabkę tarsilu.
+      farganiteBar:
+        name: Wytop sztabkę farganitu
+        desc: Utwórz sztabkę farganitu z wcześniej zebranej rudy.
+        activityDesc: Ruda farganitu opiera się ciepłu, ale dzięki twojemu poświęceniu
+          przy piecu. Topi się i formuje w miękką, niebieską sztabkę.
+      hydriliumBar:
+        name: Wytop sztabkę hydrilu
+        desc: Stwórz hydrilową sztabkę z hydrilu i wodorostów
+        activityDesc: Podgrzewasz rudę hydrilu w potężnym piecu do ekstremalnie wysokich
+          temperatur, topiąc ją do stanu ciekłego. Ostrożnie wlewasz stopiony metal
+          do formy, pozwalasz mu ostygnąć i zestalić się, tworząc cenną sztabkę hydrilu.
+    steel:
+      steelSword:
+        name: Wykonaj stalowy miecz
+        desc: Wykonaj stalowy miecz ze stalowej sztabki.
+        activityDesc: Tworzysz stalowy miecz ze stalowej sztabki.
+      steelShield:
+        name: Wykonaj stalową tarczę
+        desc: Wykonaj stalową tarczę ze sztabki stali.
+        activityDesc: Tworzysz stalową tarczę ze stalowych sztabek.
+    tarsilium:
+      tarsiliumSword:
+        name: Wykonaj miecz tarsilu
+        desc: Wykonaj tarsilowy miecz ze sztabki tarsilu.
+        activityDesc: Tworzysz tarsilowy miecz ze sztabki tarsilu.
+      tarsiliumShield:
+        name: Wykonaj tarczę z tarsilu
+        desc: Wykonaj tarsilową tarczę ze sztabek tarsilu.
+        activityDesc: Tworzysz tarsilową tarczę ze sztabek tarsilu.
+    farganite:
+      farganiteSword:
+        name: Wykonaj miecz z farganitu
+        desc: Wykonaj farganitowy miecz ze sztabki farganitu.
+        activityDesc: Wykonaj farganitowy miecz ze sztabki farganitu.
+      farganiteShield:
+        name: Wykonaj tarczę z farganitu
+        activityDesc: Tworzysz farganitową tarczę ze sztabek farganitu.
+        desc: Wykonaj farganitową tarczę ze sztabek farganitu.
+  cooking:
+    fish:
+      cookedSwordfish:
+        activityDesc: Soczyste steki z miecznika smaży się na gorącej patelni, aż
+          staną się złocistobrązowe i idealnie przygotowane.
+        name: Usmaż miecznika
+        desc: Rozkoszuj się bogatym, maślanym smakiem doskonale przyrządzonych steków
+          z miecznika. Chrupiąca, złocista skórka, delikatne i kruche wnętrze. Wyśmienita
+          uczta w kilka minut.
+      cookedStingray:
+        desc: Ciesz się delikatnym smakiem płaszczki przekształconym w złocisty, chrupiący
+          przysmak. Doskonałe z dodatkiem limonki.
+        activityDesc: Ostrożnie zanurz filet z płaszczki do skwierczącego oleju. Jego
+          delikatne mięso szybko chrupie, tworząc złotobrązową skórkę, podczas gdy
+          wnętrze pozostaje delikatne i soczyste.
+        name: Usmaż płaszczkę
+      cookedStreamEel:
+        name: Usmaż węgorza strumieniowego
+        desc: Rozsmakuj się delikatnym i chrupiącym smażonym węgorzem, przysmaku z
+          ryb słodkowodnych.
+        activityDesc: Z finezją smażysz węgorza do perfekcji, tworząc soczystego smażonego
+          węgorza strumieniowego.
+      cookedSquid:
+        activityDesc: Ostrożnie usmaż kalmara do chrupkości, uzyskując pyszną smażoną
+          kałamarnicę.
+        name: Usmaż kalmara
+        desc: Usmażone kalmary, znane są z tego, że potrafią znikać z talerza.
+      cookedShrimp:
+        name: Usmaż krewetkę
+        desc: Delektuj się smakiem smażonych krewetek, wspaniałego przysmaku z owoców
+          morza.
+        activityDesc: Z finezją smażysz krewetki do perfekcji, tworząc pyszne smażone
+          krewetki.
+      cookedPerch:
+        name: Usmaż okonia
+        desc: Rozkoszuj się smakiem smażonego okonia, smacznego połowu z wód.
+        activityDesc: Umiejętnie usmaż okonia na chrupiąco, uzyskując pysznego smażonego
+          okonia.
+      cookedCrayfish:
+        name: Usmaż raka
+        desc: Usmażone raki to przysmak dla miłośników owoców morza.
+        activityDesc: Z wprawą smażysz raki do perfekcji, uzyskując soczyste usmażone
+          raki.
+      cookedCarp:
+        name: Usmaż karpia
+        desc: Rozkoszuj się smakiem usmażonego karpia, znanego z łagodnego smaku i
+          delikatnego mięsa.
+        activityDesc: Starannie usmaż karpia do perfekcji, tworząc pysznego smażonego
+          karpia.
+      cookedSeabass:
+        name: Usmaż labraksa
+        desc: Usmażony labraks w srebrnej łusce to doskonały wybór dla smakoszy.
+        activityDesc: Z finezją smażysz labraksa do chrupiąco, tworząc pysznego smażonego
+          labraksa.
+      cookedPike:
+        name: Usmaż szczupaka
+        desc: Ciesz się smakiem usmażonego szczupaka, znanego z kruchego i delikatnego
+          mięsa.
+        activityDesc: Z wprawą usmażymy szczupaka do perfekcji, tworząc pysznego smażonego
+          szczupaka.
+      cookedJellyfish:
+        name: Usmaż meduzę
+        desc: Poznaj wyjątkową konsystencję i smak smażonej meduzy, kulinarną ciekawostkę.
+        activityDesc: Z wprawą smażysz meduzę do perfekcji, tworząc intrygującą usmażoną
+          meduzę.
+      cookedTrout:
+        name: Usmaż pstrąga
+        desc: Poznaj hipnotyzujące smaki smażonego pstrąga, z jego opalizującymi łuskami
+          i zachwycającym smakiem.
+        activityDesc: Ostrożnie usmaż pstrąga do chrupkości, uzyskując pysznego smażonego
+          pstrąga.
+      cookedSalmon:
+        name: Usmaż łososia
+        desc: Rozkoszuj się bogatym i maślanym smakiem usmażonego łososia
+        activityDesc: Z finezją smażysz łososia do perfekcji, uzyskując soczystego
+          smażonego łososia.
+      cookedMoray:
+        name: Usmaż murenę
+        desc: Odkryj wyjątkowy smak smażonej mureny o wyglądzie przypominającym węża
+          i tajemniczym smaku.
+        activityDesc: Z wprawą smażysz murenę do chrupkości, tworząc pyszną usmażoną
+          murenę.
+      cookedLobster:
+        name: Usmaż homara
+        activityDesc: Z wprawą usmaż homara do perfekcji, uzyskując soczystego usmażonego
+          homara.
+        desc: Rozkoszuj się soczystym i aromatycznym smażonym homarem, klasycznego
+          przysmaku z owoców morza.
+      cookedShark:
+        name: Usmaż rekina
+        activityDesc: Ostrożnie opuść gruby stek z rekina na skwierczący olej. Gdy
+          skwierczy i rozpryskuje się, tworzy się złota skórka, podczas gdy wnętrze
+          gotuje się do perfekcji.
+        desc: Ciesz się wyjątkowym smakiem rekina przekształconym w złocistą, chrupiącą
+          rozkosz. Doskonałe z sosem tatarskim.
+      cookedAnglerfish:
+        name: Usmaż żabnicę
+        desc: Odkryj zaskakujący przysmak żabnicy przekształcony w złocisty, chrupiący
+          przysmak. Wyjątkowa kulinarna przygoda.
+        activityDesc: Ostrożnie usuwasz groteskową głowę żabnicy, odsłaniając jędrne,
+          białe mięso pod spodem. Po przygotowaniu filetów, wrzucasz je do skwierczącego
+          oleju, a dziwny kształt ryby sprawia, że jej obrócenie jest nie lada wyzwaniem.
+    consumables:
+      underwaterSalad:
+        name: Przygotuj podwodną sałatkę
+        desc: Orzeźwiająca mieszanka podwodnych smakołyków w sałatce.
+        activityDesc: Ostrożnie zbierasz różne podwodne rośliny i stworzenia, a następnie
+          łączysz je w misce, dodając pikantny sos z wodorostów.
+      bread:
+        name: Upiecz chleb
+        activityDesc: Odmierz i wymieszaj mąkę, wodę, drożdże i sól w ciasto, ugniataj
+          je do uzyskania gładkości, pozwól mu wyrosnąć, uformuj bochenki i piecz,
+          aż staną się złotobrązowe i chrupiące.
+        desc: Domowy chleb, od podstaw. Połącz mąkę, wodę, drożdże i sól, ugniataj,
+          wyrastaj, formuj i piecz, aż stanie się złotobrązowy i chrupiący.
+      bagel:
+        name: Upiecz bajgla
+        activityDesc: Ciasto formuje się w krążki, krótko gotuje, a następnie piecze
+          do perfekcji, aby uzyskać złociste, ciągnące się bajgle.
+        desc: Żujące na zewnątrz, miękkie i przewiewne w środku, domowe bajgle to
+          rozkoszny przysmak. Delektuj się nimi ze swoim ulubionym smarowidłem!
+      jellySandwich:
+        name: Wykonaj kanapkę z galaretką
+        desc: Klasyczne połączenie słodkiej galaretki i miękkiego chleba to szybka
+          i sycąca przekąska.
+        activityDesc: Dwie kromki chleba należy obficie posmarować ulubioną galaretką
+          i połączyć ze sobą, aby uzyskać pyszny smakołyk.
+      nettleTea:
+        name: Uwarz herbatę z pokrzywy
+        desc: Smaczny i potencjalnie korzystny napar sporządzany poprzez zaparzanie
+          świeżych lub suszonych liści pokrzywy w gorącej wodzie.
+        activityDesc: Świeże lub suszone pokrzywy parzy się we wrzącej wodzie, tworząc
+          rewitalizującą herbatę ziołową.
+      chocolateMilk:
+        name: Wymieszaj mleko czekoladowe
+        activityDesc: Wlej zimne mleko do szklanki, dodaj kakao w proszku i słodzik,
+          a następnie energicznie mieszaj, aż mieszanina będzie gładka i spieniona.
+        desc: Kremowe i pyszne mleko czekoladowe to klasyczny przysmak. Połącz mleko
+          z czekoladą i słodzikiem, aby uzyskać orzeźwiający napój.
+      fruitCake:
+        name: Upiecz ciasto owocowe
+        desc: Bogaty i uroczysty przysmak pełen suszonych owoców i orzechów, ciasto
+          owocowe to klasyczna świąteczna rozkosz. Smaczne z filiżanką herbaty lub
+          kawy.
+        activityDesc: Suszone owoce, orzechy i przyprawy łączy się z mąką, cukrem
+          i jajkami, tworząc gęste ciasto. Po upieczeniu ciasto owocowe dojrzewa,
+          aby uzyskać optymalny smak.
+      sweetCarrotPie:
+        name: Upiecz słodkie ciasto marchewkowe
+        activityDesc: Zetrzyj marchew na tarce, połączyć z cukrem, jajkami i przyprawami,
+          a następnie wlać masę do przygotowanego ciasta. Po upieczeniu ciasto należy
+          ostudzić przed podaniem.
+        desc: Wspaniałe połączenie słodkiej marchewki, kremowego budyniu i kruchego
+          ciasta. Idealne na deser lub specjalną okazję.
+      saltrum:
+        activityDesc: Po oczyszczeniu i przygotowaniu wodorostów rozpoczyna się proces
+          fermentacji w drewnianej beczce, dodając drożdże i wodę. Z cierpliwością
+          doglądasz mieszanki, pozwalając jej przekształcić się w bogaty, alkoholowy
+          napój.
+        desc: Mocny napar stworzony ze słodkiej esencji wodorostów, sfermentowany
+          do perfekcji. Bogaty, złożony smak z nutą oceanicznej bryzy.
+        name: Uwarz słony rum
+      kelpRolls:
+        desc: Orzeźwiająca i zdrowa przekąska. Stwórz własne pyszne połączenie ryżu,
+          warzyw i białka zawinięte w arkusz pikantnych wodorostów.
+        name: Przygotuj bułkę z wodorostów
+        activityDesc: Ostrożnie rozprowadza się cienką warstwę przyprawionego ryżu
+          na arkuszu soczystych wodorostów, a następnie ciasno zwija, zabezpieczając
+          wstążką wodorostów.
+      frozenBait:
+        name: Przygotuj mroźną przynętę
+        activityDesc: Oczyść i przygotuj przynętę, upewniając się, że jest wolna od
+          wilgoci. Następnie zapakuj ją w hermetyczne pojemniki lub torby i umieść
+          w zamrażarce w celu długotrwałego przechowywania.
+        desc: Zachowaj świeżą przynętę na przyszłe wyprawy wędkarskie, odpowiednio
+          ją zamrażając. Zachowaj ich jakość poprzez staranne przygotowanie i przechowywanie.
+      pickles:
+        name: Przygotuj pikle
+        desc: Chrupiące i pikantne pikle, idealne do kanapek lub jako przekąska. Wykonane
+          ze świeżych ogórków i aromatycznej zalewy.
+        activityDesc: Umyj i przygotuj ogórki, następnie zapakuj do słoików z przyprawami
+          i solanką. Pozostaw je w słoiku, aby nabrały charakterystycznego pikantnego
+          smaku.
+      troutSoup:
+        desc: Pożywna i aromatyczna zupa ze świeżego pstrąga, warzyw i bogatego bulionu.
+          Idealna na pocieszający posiłek.
+        activityDesc: Starannie oczyść i przygotuj pstrąga, a następnie ugotuj go
+          w aromatycznym bulionie z mieszanką warzyw. Dopraw do smaku i ciesz się
+          miską ciepłej, pożywnej zupy.
+        name: Ugotuj zupę z pstrąga
+      bugBait:
+        name: Przygotuj przynętę na owady
+        desc: Kusząca mikstura zapachów i smaków zaprojektowana do wabienia ryb. Ta
+          mieszanka naturalnych składników może być dostosowana do różnych gatunków
+          i warunków wodnych.
+        activityDesc: Połącz starannie różne składniki, takie jak robaki, gąsienice
+          lub sztuczne zapachy, aby stworzyć lepką, kuszącą przynętę. Mieszanka jest
+          następnie nakładana na haczyki lub inne narzędzia w ramach przygotowań do
+          udanego połowu.
+      porridge:
+        name: Przygotuj owsiankę
+        desc: Ciepła i pocieszająca miska owsianki, gotowana na mleku lub wodzie i
+          posypana ulubionymi słodkimi lub pikantnymi dodatkami.
+        activityDesc: Owies lub inne zboże, mleko i szczyptę soli umieszcza się w
+          garnku i gotuje na wolnym ogniu, stale mieszając. Po zgęstnieniu, przelej
+          owsiankę do miski i dodaj dodatki, takie jak owoce, orzechy lub miód.
+      mushroomCurry:
+        name: Ugotuj curry z grzybów
+        desc: Bogate i aromatyczne danie z delikatnymi grzybami w kremowym, aromatycznym
+          sosie. Doskonałe z ryżem lub naan.
+        activityDesc: Podsmaż cebulę, czosnek i imbir, a następnie dodaj aromatyczne
+          przyprawy. Wymieszaj z pokrojonymi w plasterki grzybami, aż zmiękną, a następnie
+          wlej mleko kokosowe lub śmietanę. Dusić, aż sos zgęstnieje, tworząc pyszne
+          curry.
+      dynamite:
+        name: Żłóż dynamit
+        desc: Lotna mikstura niestabilnych kryształów, silnych olejków i wytrzymałej
+          obudowy. Wymaga ostrożnego obchodzenia się i precyzyjnego wyczucia czasu.
+        activityDesc: Rozdrabnij skrupulatnie niestabilne kryształy na drobny proszek,
+          mieszaj je z silnymi olejami, aby stworzyć wysoce wybuchową mieszankę. Mieszanina
+          jest starannie pakowana do wytrzymałej obudowy, tworząc potężne urządzenie
+          wybuchowe.
+      jarvonianPastry:
+        name: Upiecz ciasto jarvońskie
+        desc: Delikatne i kruche ciasto, ukochany przysmak jarvońskiej wsi.
+        activityDesc: Ostrożnie przygotowujesz maślane ciasto, rozwałkowując je. Ciasto
+          jest następnie pieczone do złotej perfekcji, tworząc zachwycający smakołyk.
+      pancakes:
+        name: Usmaż naleśniki
+        desc: Puszyste naleśniki, lekkie i przewiewne, idealne na pyszne śniadanie.
+          Podawać z syropem klonowym, masłem i ulubionymi dodatkami.
+        activityDesc: Wymieszaj mąkę, proszek do pieczenia i cukier, a następnie delikatnie
+          dodaj mleko, jajka i roztopione masło. Ostrożnie wylej ciasto na rozgrzaną
+          patelnię, przewracając, gdy nabierze złotobrązowego koloru, aby uzyskać
+          puszyste naleśniki.
+      spicyPumpkinJuice:
+        name: Ugotuj pikantny sok z dyni
+        desc: Ciepła i orzeźwiająca mieszanka dyni, rozgrzewających przypraw i odrobiny
+          ciepła. Idealna na chłodne dni.
+        activityDesc: Połącz w garnku puree z dyni, cydr jabłkowy i mieszankę rozgrzewających
+          przypraw, takich jak cynamon, imbir i goździki. Mieszankę gotuj na wolnym
+          ogniu, aż smaki się połączą, a następnie dodaj odrobinę ciepła za pomocą
+          chili lub pieprzu cayenne, aby uzyskać pikantny kopniak.
+      schnitzel:
+        name: Usmaż sznycel
+        desc: Cienko rozbite mięso panierowane w bułce tartej i usmażone na patelni
+          na złoty kolor. Klasyczne danie z nieskończoną ilością wariacji.
+        activityDesc: Rozbij kawałek mięsa na cienką, równą warstwę, a następnie obtoczyć
+          w mące, jajku i bułce tartej. Usmaż ostrożnie sznycel na gorącym oleju,
+          aż będzie chrupiący i złotobrązowy.
+      friedFishSandwich:
+        desc: Chrupiący, złocisty filet rybny w miękkiej bułce z ulubionymi dodatkami.
+          Klasyczny, satysfakcjonujący posiłek.
+        activityDesc: Obtocz filety rybne w cieście, usmażone na złoty kolor i ułożone
+          na tostowej bułce z sosem tatarskim, sałatą i pomidorem tworzą pyszną kanapkę.
+        name: Przygotuj kanapkę ze smażoną rybą
+      salmonPie:
+        desc: Obfite i pocieszające danie z delikatnym łososiem w kremowym nadzieniu
+          z ziemniaków i warzyw, zwieńczone maślaną skórką.
+        name: Upiecz ciasto z łososiem
+        activityDesc: Ugotowanego łososia połącz z puree ziemniaczanym, warzywami
+          i kremowym sosem. Wlej mieszaninę do naczynia do pieczenia, przykryj kruchym
+          ciastem i piecz do uzyskania złotobrązowego koloru i bąbelków.
+      wine:
+        name: Sferementuj wino
+        desc: Złożony napój powstały w wyniku fermentacji winogron, przekształcający
+          słodki sok w napój alkoholowy o wyraźnych smakach i aromatach.
+        activityDesc: Winogrona są miażdżone w celu uzyskania soku, a następnie przenoszone
+          do naczynia fermentacyjnego. Po dodaniu drożdży uważnie monitorujesz temperaturę
+          i chronisz mieszaninę przed zanieczyszczeniem. Cierpliwość pozwala naturalnemu
+          procesowi fermentacji przekształcić sok winogronowy w wino.
+      veggieSoup:
+        name: Ugotuj zupę wegetariańską
+        desc: Obfita i zdrowa mieszanka warzyw gotowanych na wolnym ogniu w aromatycznym
+          bulionie. Możliwość dodania ulubionych składników.
+        activityDesc: Siekasz różne warzywa i podsmażasz je w garnku przed dodaniem
+          bulionu i przypraw. Zupę gotuje się na wolnym ogniu, aż warzywa zmiękną,
+          a smaki się połączą.
+      beer:
+        desc: Złożony proces obejmujący ziarna słodu, chmiel, drożdże i wodę w celu
+          stworzenia aromatycznego napoju alkoholowego.
+        name: Uwarz piwo
+        activityDesc: Ziarna słodu są miażdżone i moczone w gorącej wodzie w celu
+          ekstrakcji cukrów. Po zagotowaniu brzeczki z chmielem, schładzasz ją i dodajesz
+          drożdże do fermentacji. Z cierpliwością czekasz, aż magia się wydarzy i
+          otrzymasz pyszne domowe piwo.
+      friednoodles:
+        desc: Szybkie i aromatyczne danie z makaronem wymieszanym z wybranymi warzywami,
+          białkiem i pikantnym sosem.
+        name: Przygotuj smażony makaron
+        activityDesc: Makaron ugotuj zgodnie z instrukcją na opakowaniu, a następnie
+          usmażyć z czosnkiem, imbirem i preferowanymi warzywami. Dodaj aromatyczny
+          sos i wymieszaj wszystko razem, aż będzie dobrze pokryte, tworząc pyszny
+          i satysfakcjonujący posiłek.
+  carpentry:
+    scrap:
+      birchPlankScrap:
+        name: Stwórz deskę brzozową (Złom)
+        desc: Starannie przekształć skrawki drewna w użyteczną i wszechstronną deskę.
+        activityDesc: Z precyzją kształtujesz skrawki w uniwersalną deskę, tworząc
+          brzozową deskę.
+      pinePlankScrap:
+        name: Stwórz deskę sosnową (Skrawki)
+        desc: Przekształć skrawki drewna w solidną i niezawodną deskę.
+        activityDesc: Umiejętnie formując skrawki w solidną deskę, wykonujesz deskę
+          sosnową.
+      sprucePlankScrap:
+        name: Stwórz deskę świerkową (Skrawki)
+        activityDesc: Dzięki fachowej wiedzy kształtujesz skrawki w uniwersalną deskę,
+          tworząc deskę świerkową.
+        desc: Stwórz świerkową deskę, znaną ze swojej wytrzymałości i wszechstronności.
+      maplePlankScrap:
+        name: Stwórz deskę klonową (Skrawki)
+        desc: Uformuj skrawki w gładką i elegancką deskę.
+        activityDesc: Skrupulatnie przetwarzając skrawki drewna w gładką deskę, tworzysz
+          deskę klonową.
+      oakPlankScrap:
+        name: Stwórz deskę dębową (Skrawki)
+        desc: Stwórz dębową deskę, cenioną za trwałość i piękno.
+        activityDesc: Ostrożnie kształtujesz skrawki drewna w piękną deskę, tworząc
+          deskę dębową.
+      teakPlankScrap:
+        name: Stwórz deskę tekową (Skrawki)
+        desc: Stwórz deskę tekową, cenioną za trwałość i wytrzymałość.
+        activityDesc: Skrawki drewna wymagają czasu na obróbkę, ale deska jest wykończona
+          bez wad.
+      willowPlankScrap:
+        name: Stwórz wierzbową deskę (Skrawki)
+        desc: Stwórz wierzbową deskę, drewno jest cenione ze względu na niewielką
+          wagę.
+        activityDesc: Skrawki drewna łatwo formuje się w deskę, jakby była zrobiona
+          z masła.
+      mangrovePlankShavings:
+        name: Stwórz deskę namorzynową (Wióry)
+        activityDesc: Wióry są grube i gęste. Prawie grożą zniszczeniem narzędzia,
+          ale dzięki wytrwałości udaje się je uformować w deskę.
+        desc: Stwórz deskę namorzynową, twarde i gęste drewno jest przydatne w trudnych
+          warunkach.
+    planks:
+      birchPlank:
+        name: Wytnij deskę brzozową
+        desc: Starannie przycięte drewno brzozowe tworzy użyteczną i wszechstronną
+          deskę.
+        activityDesc: Z precyzją kształtujesz drewno brzozowe w uniwersalną deskę,
+          tworząc deskę brzozową.
+      pinePlank:
+        desc: Przekształć drewno sosnowe w solidną i niezawodną deskę.
+        name: Wytnij deskę sosnową
+        activityDesc: Umiejętnie kształtując drewno sosnowe w solidną deskę, wykonujesz
+          deskę sosnową.
+      sprucePlank:
+        name: Wytnij świerkową deskę
+        desc: Wykonaj deskę świerkową, znaną ze swojej wytrzymałości i wszechstronności.
+        activityDesc: Dzięki fachowej wiedzy kształtujesz drewno świerkowe w uniwersalną
+          deskę, tworząc deskę świerkową.
+      maplePlank:
+        name: Wytnij deskę klonową
+        activityDesc: Skrupulatnie obrabiając drewno klonowe w gładką deskę, tworzysz
+          deskę klonową.
+        desc: Uformuj drewno klonowe w gładką i elegancką deskę.
+      oakPlank:
+        name: Wytnij deskę dębową
+        desc: Wykonaj deskę dębową, cenioną za trwałość i piękno.
+        activityDesc: Ostrożnie kształtujesz drewno dębowe w piękną deskę, tworząc
+          deskę dębową.
+      teakPlank:
+        name: Wytnij deskę tekową
+        desc: Wykonaj deskę tekową, cenioną za trwałość i wytrzymałość.
+        activityDesc: Obróbka mocnego drewna zajmuje trochę czasu, ale deska jest
+          wykończona bez wad.
+      willowPlank:
+        name: Wytnij wierzbową deskę
+        desc: Deska wierzbowa jest ceniona ze względu na swoją niewielką wagę.
+        activityDesc: Drewno wierzbowe można łatwo przyciąć na deskę, jakby było zrobione
+          z masła.
+      mangrovePlank:
+        name: Wytnij deskę namorzynową
+        desc: Stwórz deskę namorzynową, twarde i gęste drewno jest przydatne w trudnych
+          warunkach.
+        activityDesc: Drewno namorzynowe jest grube i gęste. Prawie grozi zniszczeniem
+          narzędzia, ale dzięki wytrwałości udaje się je uformować w deskę.
+      coralPlank:
+        name: Wytnij deskę koralową
+        desc: Wytrzymały materiał budowlany wytworzony ze sprężystego szkieletu koralowca.
+          Wymaga starannego wydobycia i przetworzenia.
+        activityDesc: Używając specjalistycznych narzędzi, kształtujesz koralowiec
+          w użyteczną deskę, zapewniając wytrzymałość i trwałość na potrzeby budowy.
