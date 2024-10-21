@@ -60,7 +60,7 @@ Verzamelobjecten geven je voortgang in prestatiepunten.', noCollectibleItems: Je
 nog geen verzamelobjecten gevonden., viewDescription: Ontgredel prestaties om <hl>prestatiepunten</hl>
 te verdienen. Bij bepaalde hoeveelheden prestatiepunten speel je speciale beloningen
 vrij. Sommige prestaties geven zelf ook beloningen voor het ontgredelen ervan., totalProgressUnlocks: 'Je
-krijgt deze beloningspunten gebaseerd op je totale voortgang in prestaties, en je
+krijgt deze beloningspunten gebaseerd op je totale voortgang met prestaties, en je
 verliest toegang tot de voorwerpen wanneer meer prestatiepunten beschikbaar komen.',
 checkPointUnlocks: Deze prestaties zijn beschikbaar bij bepaalde prestatiepunt-checkpoints.
 Je behoudt toegang tot deze zelfs als er meer prestatiepunten beschikbaar komen.},
@@ -120,59 +120,58 @@ op reisefficiëntie), workEfficiencyPenalty: '<icon i="Work efficiency"/>Globale
 activiteit, savedSteps: Bewaarde stappen, consumables: Verbruiksartikelen, stopWhenOverEncumbered: Stop
 wanneer overbelast, options: Opties}, info: {noActivity: 'Momenteel geen activiteit
 geselecteerd. <hl>Kies er hieronder een</hl>, of swipe naar links om alle beschikbare
-activiteiten van deze locatie te zien.', savedSteps: Je hebt bewaarde stappen die
-verbruikt worden. Elke stap telt voor twee totdat alle bewaarde stappen op zijn.,
-consumablesUsage: Je kunt een <c>voedingsmiddel</c> en een <c>drankje</c> kiezen om
-te gebruiken tijdens activiteiten.}}, abilities: {phrases: {abilities: Abilities,
-useAbility: Gebruik ability, holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt
-houden om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel},
-info: {abilitiesInfo: Abilities zijn speciale acties die je direct een voordeel in
-het spel geven. Abilities hebben een cooldown waar je op moet wachten voordat je de
-ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>.
-Bepaalde uitrusting in het spel geven je abilities die je kunt gebruiken om direct
-een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten
-om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet
-voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
-cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown.}}, journal: {phrases: {
-jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare taken</c>
-die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren vanaf <c>prikborden</c>
-in verschillende locaties, zoals steden. Je kunt maximaal drie actieve klusjes hebben.'}},
-treasury: {phrases: {noItems: Je hebt geen schatten om te openen. Je kunt schatkisten
-vinden bij verschillende activiteiten., openChest: Openen, openAll: Alles openen}},
-jobs: {phrases: {rewards: Voltooiingsbeloningen, abandonJob: Klusje opgeven, openJournal: Dagboek
-openen, itemsFromInventory: Voorwerpen uit inventaris, itemsFromBank: Voorwerpen uit
-bank, youMustBeInLocation: 'Je moet in dezelfde locatie zijn met <object id="{obj}"/>
-om voorwerpen in te leveren.', hasNoBank: Er is geen bank in deze locatie., hasNoItemsInInventory: Er
-zijn geen geschikte voorwerpen in je inventaris., giveItems: Voorwerpen geven, give: Geven,
-noJobsAvailable: 'Er zijn momenteel geen klusjes beschikbaar op deze locatie. Nieuwe
-klusjes komen beschikbaar over:', refreshIn: 'Het prikbord wordt ververst over:',
-acceptedJobs: 'Huidig geaccepteerde klusjes <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>',
-hasNoItemsInBank: Er zijn geen geschikte voorwerpen in je bank., acceptJob: Klusje
-accepteren, youMustBeInLocationToCollect: 'Je moet op dezelfde locatie zijn als <object
-id="{obj}"/> om de beloning te ontvangen.', collectRewards: Beloning ophalen}, dialogs: {
-abandonJob: {title: Klusje opgeven, text: Weet je zeker dat je dit klusje wilt opgeven?
-Je zal de voortgang en beloningen van dit klusje kwijtraken.}}}, gear: {phrases: {
-skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen gevechtsmodificatoren
-door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators door gedragen
-voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
-modificatoren, combatModifiers: Gevechtsmodificatoren}}, tools: {phrases: {emptyToolSlot: Leeg
-gereedschapsvak, lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau
-{level}</c>.', noToolEquipped: Geen gereedschap gedragen in dit vak.}}, bank: {phrases: {
-noItemsInventory: Geen voorwerpen in je inventaris., noItemsBank: Geen voorwerpen
-in je bank., withdraw: Terugnemen, deposit: Opbergen}}, trade: {phrases: {trade: RUILEN,
-restockIn: 'Hervullen in: ', buying: '{amount} kopen', selling: '{amount} verkopen',
-total: Totaal}}, characterCreation: {phrases: {bodyType: Lichaamstype, race: Ras,
-chooseABodyType: Kies een lichaamstype, bodyTypeA: A, characterName: Naam personage,
-bodyTypeB: B}, info: {rememberSwipe: Vergeet niet dat je terug kunt swipen om gekozen
-opties te veranderen op elk moment tijdens het aanmaken van het personage.}}, settings: {
-categories: {accessibility: {title: Toegankelijkheid, leftHandedMode: Linkshandigenmodus},
-account: {title: Account, visibility: Zichtbaarheid van profiel}, character: {title: Personage,
-anonOnLeaderboard: Anonimiseren op klassement, hideSteps: Stappen verbergen}, gameplay: {
-title: Gameplay, stopWhenOverEncumberedDefault: Standaard stoppen wanneer overbelast},
-closedBeta: {title: Gesloten Beta, clearStepsGraph: Stappengrafiek leegmaken, useThisToClear: Gebruik
-dit als je je stappengrafiek wilt resetten. Handig voor als je stappen hebt verkregen
-door een bug en een reset in de grafiek wilt.}, notifications: {title: Notificaties,
-stepCountInterval: Notificatie-interval, stepCountNotifications: Stappenteller-notificaties,
+activiteiten op deze locatie te zien.', savedSteps: Je hebt bewaarde stappen die verbruikt
+worden. Elke stap telt voor twee totdat alle bewaarde stappen op zijn., consumablesUsage: Je
+kunt <c>voedsel</c> en een <c>drankje</c> kiezen om te gebruiken tijdens activiteiten.}},
+abilities: {phrases: {abilities: Abilities, useAbility: Gebruik ability, holdToCast: Ingedrukt
+houden om uit te voeren, holdToUse: Ingedrukt houden om te gebruiken, noAction: Geen
+actie, useConsumable: Gebruik verbruiksartikel}, info: {abilitiesInfo: Abilities zijn
+speciale acties die je direct een voordeel in het spel geven. Abilities hebben een
+cooldown waar je op moet wachten voordat je de ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je
+hebt geen abilities</hl>. Bepaalde uitrusting in het spel geven je abilities die je
+kunt gebruiken om direct een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {
+phrases: {followingMustBeTrueToUse: 'Vereisten om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan
+het volgende moet voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown
+resterend:', cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown.}}, journal: {
+phrases: {jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare
+taken</c> die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren
+vanaf <c>prikborden</c> op verschillende locaties, zoals steden. Je kunt maximaal
+drie actieve klusjes hebben.'}}, treasury: {phrases: {noItems: Je hebt geen schatten
+om te openen. Je kunt schatkisten vinden bij verschillende activiteiten., openChest: Openen,
+openAll: Alles openen}}, jobs: {phrases: {rewards: Voltooiingsbeloningen, abandonJob: Klusje
+opgeven, openJournal: Dagboek openen, itemsFromInventory: Voorwerpen uit inventaris,
+itemsFromBank: Voorwerpen uit bank, youMustBeInLocation: 'Je moet op dezelfde locatie
+zijn als <object id="{obj}"/> om voorwerpen in te leveren.', hasNoBank: Er is geen
+bank op deze locatie., hasNoItemsInInventory: Er zijn geen geschikte voorwerpen in
+je inventaris., giveItems: Voorwerpen geven, give: Geven, noJobsAvailable: 'Er zijn
+momenteel geen klusjes beschikbaar op deze locatie. Nieuwe klusjes komen beschikbaar
+over:', refreshIn: 'Het prikbord wordt ververst over:', acceptedJobs: 'Huidig geaccepteerde
+klusjes <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>', hasNoItemsInBank: Er
+zijn geen geschikte voorwerpen in je bank., acceptJob: Klusje accepteren, youMustBeInLocationToCollect: 'Je
+moet op dezelfde locatie zijn als <object id="{obj}"/> om de beloning te ontvangen.',
+collectRewards: Beloning ophalen}, dialogs: {abandonJob: {title: Klusje opgeven, text: Weet
+je zeker dat je dit klusje wilt opgeven? Je zal de voortgang en beloningen van dit
+klusje kwijtraken.}}}, gear: {phrases: {skillModifiers: Vaardigheidsmodificatoren,
+noCombatModifiers: Geen gevechtsmodificatoren door gedragen voorwerpen., noSkillModifiers: Geen
+vaardigheidsmodificators door gedragen voorwerpen., noPermanentModifiers: Geen permanente
+modificatoren., permanentModifiers: Permanente modificatoren, combatModifiers: Gevechtsmodificatoren}},
+tools: {phrases: {emptyToolSlot: Leeg gereedschapsvak, lockedToolSlot: 'Vergrendeld
+gereedschapsvak tot <c>personage-niveau {level}</c>.', noToolEquipped: Geen gereedschap
+gedragen in dit vak.}}, bank: {phrases: {noItemsInventory: Geen voorwerpen in je inventaris.,
+noItemsBank: Geen voorwerpen in je bank., withdraw: Terugnemen, deposit: Opbergen}},
+trade: {phrases: {trade: ACCEPTEREN, restockIn: 'Nieuwe voorraad over: ', buying: '{amount}
+kopen', selling: '{amount} verkopen', total: Totaal}}, characterCreation: {phrases: {
+bodyType: Lichaamstype, race: Ras, chooseABodyType: Kies een lichaamstype, bodyTypeA: A,
+characterName: Naam personage, bodyTypeB: B}, info: {rememberSwipe: Vergeet niet dat
+je terug kunt swipen om gekozen opties te veranderen op elk moment tijdens het aanmaken
+van het personage.}}, settings: {categories: {accessibility: {title: Toegankelijkheid,
+leftHandedMode: Linkshandigenmodus}, account: {title: Account, visibility: Zichtbaarheid
+van profiel}, character: {title: Personage, anonOnLeaderboard: Anonimiseren op klassement,
+hideSteps: Stappen verbergen}, gameplay: {title: Gameplay, stopWhenOverEncumberedDefault: Standaard
+stoppen wanneer overbelast}, closedBeta: {title: Gesloten Beta, clearStepsGraph: Stappengrafiek
+leegmaken, useThisToClear: Gebruik dit als je je stappengrafiek wilt resetten. Handig
+voor als je stappen hebt verkregen door een bug en een reset in de grafiek wilt.},
+notifications: {title: Notificaties, stepCountInterval: Notificatie-interval, stepCountNotifications: Stappenteller-notificaties,
 notificationType: Notificatietype}, language: {title: Taal}}, phrases: {settings: Instellingen,
 exitToCharacterSelection: Naar personageselectie terugkeren}}, location: {phrases: {
 activities: Activiteiten, services: Diensten, buildings: Gebouwen, noActivites: Geen
@@ -198,7 +197,7 @@ pleaseWait: Een ogenblik geduld..., noInternet: Geen internetverbinding, lostInt
 toestel heeft verbinding met het internet verloren. Wachten op een connectie..., dontDoIt: Niet
 doen als je het niet zeker weet., ifYouAreSure: 'Als je het zeker weet, typ dan <c>VERWIJDEREN</c>
 in het veld en druk op doorgaan.', logOut: Uitloggen, createCharacter: Een nieuw personage
-maken, areYouSureYouWantToDelete: 'Weet je zeker dat je <hl>{name}</hl> wilt verwijderen?',
+aanmaken, areYouSureYouWantToDelete: 'Weet je zeker dat je <hl>{name}</hl> wilt verwijderen?',
 authenticating: Authenticeren..., deleteWord: VERWIJDEREN, deletingCharacter: Het
 verwijderen van je personage is <hl>niet terug te draaien</hl>., areYouAbsolutelySure: Weet
 je het 100% zeker? Na deze stap raak je permanent je personage kwijt., iAmSure: Ik
@@ -221,7 +220,7 @@ laden afgerond!}}, character: {phrases: {checkOutSubject: Check mijn voortgang i
 WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen van de laatste 7 dagen,
 checkOut: 'Hier is mijn WalkScape personage {name}. Moet je kijken!\nhttps://walkscape.app',
 totalLevel: Totaalniveau}, info: {skillBreakdown: Hier is het complete overzicht van
-alle vaardigheden die je personage beoefend heeft tijdens je reis.}}, permissions: {
+alle vaardigheden die je personage beoefend heeft tijdens zijn/haar reis.}}, permissions: {
 phrases: {pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om
 het spel te laten functioneren, hebben we toestemming nodig om de gegevens van de
 stappenteller op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan
@@ -229,6 +228,6 @@ met het spel.', exactAlarmPermission: Alarm toestemming}}, wardrobe: {phrases: {
 hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires., noBackAccessories: Je
 hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}}, rewards: {
 phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open factie}},
-shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Reset ruil, buying: Kopen,
+shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien, buying: Kopen,
 selling: Verkopen, buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden, pendingInvites: Openstande
 uitnodigingen, manageFriends: Vrienden beheren}}}}
