@@ -38,8 +38,12 @@ maps:
       'everyTenThousand': Co 10 tysięcy kroków
     languages:
       'en': English
-      'fi': Suomi
+      'fi': Fiński
       'de': Niemiecki
+      'it': Włoski
+      'nl-NL': Holenderski
+      'es': Hiszpański
+      'pl': Polski
     visibilitySettings:
       'private': Prywatny
       'friends': Tylko Znajomi
@@ -88,6 +92,13 @@ maps:
         "tool": Narzędzia
         "gear": Wyposażenie
         "material": Materiały
+        "collectible": Znajdźki
+        "container": Kontenery
+        "loot": Łupy
+        "consumable": Przedmioty Zużywalne
+        "crafted": Wytworzone
+        "cosmetic": Kosmetyki
+        "special": Specjalne
 plurals:
   achievements:
     phrases:
@@ -153,6 +164,17 @@ plurals:
     info:
       consumableDuration:
         other: Aktywność <object id="{activity}" alwaysShow="true"/> wymaga <c>{steps}</c>
+          kroków na akcję. Wybrana ilość przedmiotów zużywalnych zadziała na <c>{actions}
+          akcji</c>.
+        one: Aktywność <object id="{activity}" alwaysShow="true"/> wymaga <c>{steps}</c>
+          kroków na akcję. Wybrana ilość przedmiotów zużywalnych zadziała na <c>{actions}
+          akcje</c>.
+        few: '-'
+        many: '-'
+        zero: Aktywność <object id="{activity}" alwaysShow="true"/> wymaga <c>{steps}</c>
+          kroków na akcję. Wybrana ilość przedmiotów zużywalnych zadziała na <c>{actions}
+          akcji</c>.
+        two: Aktywność <object id="{activity}" alwaysShow="true"/> wymaga <c>{steps}</c>
           kroków na akcję. Wybrana ilość przedmiotów zużywalnych zadziała na <c>{actions}
           akcji</c>.
 singulars:
@@ -250,6 +272,7 @@ singulars:
       noConsumableSelected: Brak wybranego przedmiotu zużywalnego. Możesz wybrać poniższy.
       noConsumables: Brak przedmiotów zużywalnych w ekwipunku.
       noPotionConsumables: Brak <hl>mikstur</hl> w twoim plecaku.
+      noFoodConsumables: Brak <hl>żywności</hl> w ekwipunku.
     options:
       consenseInventory: Poukładaj ekwipunek
       expandInventory: Rozwiń ekwipunek
@@ -496,7 +519,7 @@ singulars:
       register: Zarejestruj
       welcomeToWalkscape: Witaj w WalkScape, <hl>przybyszu</hl>. Proszę, zaloguj się.
       pleaseEnterCredentials: Wpisz detale swojego konta WalkScape.
-      email: E-mail
+      email: E-mail / Nazwa użytkownika
       password: Hasło
       noBetaAccess: Brak dostępu do bety.
       googlePlay: Zaktualizuj poprzez Google Play
@@ -506,6 +529,24 @@ singulars:
       lostInternet: Twoje urządzenie utraciło połączenie z siecią. Oczekiwanie na
         połączenie...
       loadingGame: Wczytywanie gry... proszę czekać!
+      support: Wsparcie dla gry
+      accountPage: Strona konta
+    loadingStates:
+      localizationFiles: Ładowanie plików lokalizacyjnych
+      loadingComplete: Ładowanie zakończone!
+      loadingCharactersFromCloud: Ładowanie postaci z chmury
+      gameVersion: Pobieranie wersji gry
+      initializingPlayer: Inicjalizacja danych gracza
+      startingGameLoad: Rozpoczęcie ładowania danych gry
+      validatingGame: Weryfikacja danych gry z serwera
+      checkingLocalizations: Sprawdzanie lokalizacji z serwera
+      initializingProviders: Inicjowanie dostawców
+      readingLocalGameData: Odczytywanie lokalnych danych gry
+      initializingObjects: Inicjowanie obiektów gry
+      initializingDatabases: Inicjowanie baz danych
+      readingCloudData: Odczytywanie danych w chmurze
+      cleaningUpData: Czyszczenie danych
+      dataLoadingComplete: Ładowanie danych zakończone!
   social:
     phrases:
       manageFriends: Zarządzaj Znajomymi
@@ -529,6 +570,8 @@ singulars:
     phrases:
       noItemsInventory: Brak przedmiotów w ekwipunku.
       noItemsBank: Brak przedmiotów w banku.
+      deposit: Zdeponuj
+      withdraw: Wyjmij
   trade:
     phrases:
       trade: HANDLUJ
