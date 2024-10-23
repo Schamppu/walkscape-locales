@@ -30,64 +30,66 @@ per uur, 'daily': Stappen per dag, 'monthly': Stappen per maand}}}, 'plurals': {
 'other': '{pointCount} prestatiepunten', 'two': '{} prestatiepunten', 'zero': '-'}}},
 'activity': {'phrases': {'actionsRemaining': {'few': '-', 'many': '-', 'one': 'Resterende
 actie', 'other': 'Resterende acties', 'two': '-', 'zero': '-'}, 'actionsToLevelUp': {
-'few': '-', 'many': '-', 'one': 'Actie tot het volgende niveau', 'other': 'Acties
-tot het volgende niveau', 'two': '-', 'zero': '-'}, 'stepsRemainingInTotal': {'few': '-',
-'many': '-', 'one': 'Stap nodig in totaal', 'other': 'Stappen nodig in totaal', 'two': '-',
-'zero': '-'}, 'stepsRequired': {'few': '-', 'many': '-', 'one': 'Stap nodig', 'other': 'Stappen
-nodig', 'two': '-', 'zero': '-'}, 'stepsToCraft': {'few': '-', 'many': '-', 'one': 'Stap
-om te maken', 'other': 'Stappen om te maken', 'two': '-', 'zero': '-'}, 'stepsToLevelUp': {
-'few': '-', 'many': '-', 'one': 'Stap voor een hoger niveau', 'other': 'Stappen voor
-hoger niveau', 'two': '-', 'zero': '-'}, stepsUntilArrival: {other: Stappen tot aankomst,
-few: '-', many: '-', two: Stappen tot aankomst, zero: '-', one: Stap tot aankomst}}},
-inventory: {info: {consumableDuration: {many: '-', two: 'Activiteit <object id="{activity}"
-alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie. De gekozen hoeveelheid
-verbruiksartikelen is goed voor een effect op <c>{actions} acties</c>.', one: 'Activiteit
+'few': '-', 'many': '-', 'one': 'Actie tot volgende niveau', 'other': 'Acties tot
+volgende niveau', 'two': 'Acties tot volgende niveau', 'zero': '-'}, 'stepsRemainingInTotal': {
+'few': '-', 'many': '-', 'one': 'Stap nodig in totaal', 'other': 'Stappen nodig in
+totaal', 'two': 'Stappen resterend in totaal', 'zero': '-'}, 'stepsRequired': {'few': '-',
+'many': '-', 'one': 'Stap nodig', 'other': 'Stappen nodig', 'two': 'Stappen benodigd',
+'zero': '-'}, 'stepsToCraft': {'few': '-', 'many': '-', 'one': 'Stap om te maken',
+'other': 'Stappen om te maken', 'two': 'Stappen om te maken', 'zero': '-'}, 'stepsToLevelUp': {
+'few': '-', 'many': '-', 'one': 'Stap tot volgende niveau', 'other': 'Stappen tot
+volgende niveau', 'two': 'Stappen tot volgende niveau', 'zero': '-'}, stepsUntilArrival: {
+other: Stappen tot aankomst, few: '-', many: '-', two: Stappen tot aankomst, zero: '-',
+one: Stap tot aankomst}}}, inventory: {info: {consumableDuration: {many: '-', two: 'Activiteit
 <object id="{activity}" alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie.
 De gekozen hoeveelheid verbruiksartikelen is goed voor een effect op <c>{actions}
-actie</c>.', zero: 'Activiteit <object id="{activity}" alwaysShow="true"/> vereist
+acties</c>.', one: 'Activiteit <object id="{activity}" alwaysShow="true"/> vereist
 <c>{steps}</c> stappen per actie. De gekozen hoeveelheid verbruiksartikelen is goed
-voor een effect op <c>{actions} acties</c>.', other: 'Activiteit <object id="{activity}"
+voor een effect op <c>{actions} actie</c>.', zero: 'Activiteit <object id="{activity}"
 alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie. De gekozen hoeveelheid
-verbruiksartikelen is goed voor een effect op <c>{actions} acties</c>.', few: '-'}}}},
-'singulars': {'achievements': {'info': {'pointsNeeded': '<iconText name="achievement_point"
-text="@views.plurals.achievements.phrases.achievementPoint" color="${color}"/> totdat
-de volgende beloning is vrijgespeeld.', collectibleItems: Verzamelobjecten zijn voorwerpen
-die je kunt vinden in de wereld van WalkScape. Er zijn verschillende soorten verzamelobjecten
-die je kunt verzamelen. Ze nemen geen inventarisplaats in beslag en je hebt ze altijd
-bij je., specialItems: 'Speciale voorwerpen, zoals <c>verzamelobjecten</c>, <c>questvoorwerpen</c>
-en <c>artefacten</c> verzamel je tijdens je reis in WalkScape. Je kunt ze hier bekijken.
-Verzamelobjecten geven je voortgang in prestatiepunten.', noCollectibleItems: Je hebt
-nog geen verzamelobjecten gevonden., viewDescription: Ontgredel prestaties om <hl>prestatiepunten</hl>
-te verdienen. Bij bepaalde hoeveelheden prestatiepunten speel je speciale beloningen
-vrij. Sommige prestaties geven zelf ook beloningen voor het ontgredelen ervan., totalProgressUnlocks: 'Je
-krijgt deze beloningspunten gebaseerd op je totale voortgang met prestaties, en je
-verliest toegang tot de voorwerpen wanneer meer prestatiepunten beschikbaar komen.',
-checkPointUnlocks: Deze prestaties zijn beschikbaar bij bepaalde prestatiepunt-checkpoints.
-Je behoudt toegang tot deze zelfs als er meer prestatiepunten beschikbaar komen.},
-phrases: {notUnlocked: Vergrendelde prestatie, rewardProgress: Beloningsvoortgang,
-showRewards: Beloningen bekijken, totalProgressUnlocks: Totale voortgang ontgredelingen,
-checkPointUnlocks: Checkpoint ontgrendelingen, unclaimedRewards: 'Niet-geclaimde beloningen: '}},
-'crafting': {'phrases': {'requiresMaterial': 'Vereist een materiaal.', 'requiresOneOfTheFollowing': 'Vereist
-een van de volgende materialen.', requirements: Vereisten, requirementsNotMet: Je
-voldoet niet aan de vereisten., noServiceRequirements: Geen dienst-vereisten., showingRecipiesThatUses: Recepten
-weergeven voor, requiresService: Vereist een dienst., noMaterials: Je hebt momenteel
-geen materialen beschikbaar om iets te maken., noMaterialsThatCouldBeUsed: Geen materialen
-in je inventaris die gebruikt kunnen worden om iets te maken., materials: Materialen,
-rewards: Beloningen, recipes: Recepten}, errors: {notSameQuality: Materialen moeten
-óf allemaal subliem óf allemaal normaal zijn, noService: Dienstvereisten niet voldaan,
-noMaterials: Materialen om iets te maken ontbreken, skillRequirementsNotMet: Vaardigheidsvereisten
-niet voldaan}}, 'inventory': {'info': {'noItemEquipped': "Geen voorwerp aan het dragen.\\
-n\\nJe kunt een voorwerp dragen door er een te selecteren in de onderstaande lijst
-en op \"Dragen\" te drukken.", 'noItemSelected': "Geen voorwerp geselecteerd.\\n\\
-nSelecteer hieronder een voorwerp om het te vergelijken met het huidige voorwerp en
-het te dragen.", noItemsFound: Geen voorwerpen in je inventaris gevonden die in dit
-vak passen.}, phrases: {areYouSureToDrop: Weet je zeker dat je voorwerpen wilt achterlaten?
-Deze voorwerpen zullen voor altijd verloren gaan., slotsCount: 'Vakken:', selectedStacks: '<c>{stacks}</c>
-stapels geselecteerd', requirementsNotMet: Vereisten niet voldaan., cantEquip: Kan
-niet gedragen worden., slotDoesntExist: Dit voorwerpvak bestaat niet meer., attributes: Attributen,
-abilities: Abilities, requires: Vereist, equipToRingOne: In ringvak 1 dragen, equipToRingTwo: In
-ringvak 2 dragen, equipToToolSlot: 'In gereedschapsvak {id} dragen', emptySlot: Leeg
-vak, allSkills: Alle vaardigheden, noItemEquipped: Geen voorwerp gedragen, noItemSelected: Geen
+verbruiksartikelen is goed voor een effect op <c>{actions} acties</c>.', other: 'Activiteit
+<object id="{activity}" alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie.
+De gekozen hoeveelheid verbruiksartikelen is goed voor een effect op <c>{actions}
+acties</c>.', few: '-'}}}}, 'singulars': {'achievements': {'info': {'pointsNeeded': '<iconText
+name="achievement_point" text="@views.plurals.achievements.phrases.achievementPoint"
+color="${color}"/> totdat de volgende beloning is vrijgespeeld.', collectibleItems: Verzamelobjecten
+zijn voorwerpen die je kunt vinden in de wereld van WalkScape. Er zijn verschillende
+soorten verzamelobjecten die je kunt verzamelen. Ze nemen geen inventarisplaats in
+beslag en je hebt ze altijd bij je., specialItems: 'Speciale voorwerpen, zoals <c>verzamelobjecten</c>,
+<c>questvoorwerpen</c> en <c>artefacten</c> verzamel je tijdens je reis in WalkScape.
+Je kunt ze hier bekijken. Verzamelobjecten geven je voortgang in prestatiepunten.',
+noCollectibleItems: Je hebt nog geen verzamelobjecten gevonden., viewDescription: Ontgredel
+prestaties om <hl>prestatiepunten</hl> te verdienen. Bij bepaalde hoeveelheden prestatiepunten
+speel je speciale beloningen vrij. Sommige prestaties geven zelf ook beloningen voor
+het ontgredelen ervan., totalProgressUnlocks: 'Je krijgt deze beloningspunten gebaseerd
+op je totale voortgang met prestaties, en je verliest toegang tot de voorwerpen wanneer
+meer prestatiepunten beschikbaar komen.', checkPointUnlocks: Deze prestaties zijn
+beschikbaar bij bepaalde prestatiepunt-checkpoints. Je behoudt toegang tot deze zelfs
+als er meer prestatiepunten beschikbaar komen.}, phrases: {notUnlocked: Vergrendelde
+prestatie, rewardProgress: Beloningsvoortgang, showRewards: Beloningen bekijken, totalProgressUnlocks: Totale
+voortgang ontgredelingen, checkPointUnlocks: Checkpoint ontgrendelingen, unclaimedRewards: 'Niet-geclaimde
+beloningen: '}}, 'crafting': {'phrases': {'requiresMaterial': 'Vereist een materiaal.',
+'requiresOneOfTheFollowing': 'Vereist een van de volgende materialen.', requirements: Vereisten,
+requirementsNotMet: Je voldoet niet aan de vereisten., noServiceRequirements: Geen
+dienst-vereisten., showingRecipiesThatUses: Recepten weergeven voor, requiresService: Vereist
+een dienst., noMaterials: Je hebt momenteel geen materialen beschikbaar om iets te
+maken., noMaterialsThatCouldBeUsed: Geen materialen in je inventaris die gebruikt
+kunnen worden om iets te maken., materials: Materialen, rewards: Beloningen, recipes: Recepten},
+errors: {notSameQuality: Materialen moeten óf allemaal subliem óf allemaal normaal
+zijn, noService: Dienstvereisten niet voldaan, noMaterials: Materialen om iets te
+maken ontbreken, skillRequirementsNotMet: Vaardigheidsvereisten niet voldaan}}, 'inventory': {
+'info': {'noItemEquipped': "Geen voorwerp aan het dragen.\\ n\\nJe kunt een voorwerp
+dragen door er een te selecteren in de onderstaande lijst en op \"Dragen\" te drukken.",
+'noItemSelected': "Geen voorwerp geselecteerd.\\n\\ nSelecteer hieronder een voorwerp
+om het te vergelijken met het huidige voorwerp en het te dragen.", noItemsFound: Geen
+voorwerpen in je inventaris gevonden die in dit vak passen.}, phrases: {areYouSureToDrop: Weet
+je zeker dat je voorwerpen wilt achterlaten? Deze voorwerpen zullen voor altijd verloren
+gaan., slotsCount: 'Vakken:', selectedStacks: '<c>{stacks}</c> stapels geselecteerd',
+requirementsNotMet: Vereisten niet voldaan., cantEquip: Kan niet gedragen worden.,
+slotDoesntExist: Dit voorwerpvak bestaat niet meer., attributes: Attributen, abilities: Abilities,
+requires: Vereist, equipToRingOne: In ringvak 1 dragen, equipToRingTwo: In ringvak
+2 dragen, equipToToolSlot: 'In gereedschapsvak {id} dragen', emptySlot: Leeg vak,
+allSkills: Alle vaardigheden, noItemEquipped: Geen voorwerp gedragen, noItemSelected: Geen
 voorwerp geselecteerd, inUse: In gebruik, disableWhenChanging: Uitschakelen bij wisselen
 van activiteit, enableWhenBack: Opnieuw inschakelen wanneer een activiteit start waar
 deze eerder gebruikt werd, selectedConsumable: Geselecteerd verbruiksartikel, consumables: Verbruiksartikelen,
