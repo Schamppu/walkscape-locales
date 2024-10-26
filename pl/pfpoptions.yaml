@@ -3,10 +3,10 @@ maps:
     eyebrows:
       black: Czarny
       blue: Niebieski
-      blueish: Szaro-niebieski
-      blueishDark: Ciemny szaro-niebieski
-      blueishDarker: Ciemniejszy szaro-niebieski
-      blueishDarkest: Najciemniejszy szaro-niebieski
+      blueish: Szaroniebieski
+      blueishDark: Ciemny szaroniebieski
+      blueishDarker: Ciemniejszy szaroniebieski
+      blueishDarkest: Najciemniejsze szaroniebieskie
       brown: Brązowy
       brownish: Szaro-brązowy
       dark: Ciemny
@@ -34,7 +34,7 @@ maps:
       lightGray: Jasny szary
       lightGreen: Jasny zielony
       lightMagenta: Jasna magenta
-      lightPurple: Jasny fioletowy
+      lightPurple: Jasnofioletowe
       lightRed: Jasny czerwony
       magenta: Magenta
       purple: Fioletowy
@@ -68,7 +68,7 @@ maps:
       lightGray: Jasny rudy
       lightGreen: Jasnozielony
       lightMagenta: Jasna magenta
-      lightPurple: Jasny fioletowy
+      lightPurple: Jasnofioletowe
       magenta: Magenta
       purple: Fioletowy
       red: Czerwony
@@ -110,7 +110,9 @@ maps:
       blueishDarkest: Najciemniejszy szaroniebieski
       'purple': Fioletowy
       'lightPurple': Jasnofioletowy
-      'lightBlueish': Jasnoszaro-niebieski
+      'lightBlueish': Jasny szaroniebieski
+      'gray': Szary
+      'lightGray': Jasnoszary
     options:
       'eyebrows': Kolor brwi
       'hair': Kolor włosów
@@ -118,6 +120,53 @@ maps:
       'facepaint': Kolor malowania twarzy
       'skin': Kolor skóry
       'facialHair': Kolor wąsów lub brody
+    skin:
+      'veryLight': Bardzo jasna
+      'light': Jasna
+      'medium': Umiarkowana
+      'dark': Ciemna
+      'veryDark': Bardzo ciemna
+    hair:
+      'brown': Brązowe
+      'lightBrown': Jasnobrązowe
+      'darkestRed': Najciemniejsza czerwień
+      'red': Czerwone
+      'lightRed': Jasnoczerwone
+      'darkerBlue': Ciemniejsze niebieskie
+      'blue': Niebieskie
+      'lightBlue': Jasnoniebieskie
+      'darkGreen': Ciemnozielone
+      'green': Zielone
+      'lightGreen': Jasnozielone
+      'darkestMagenta': Najciemniejsza magenta
+      'darkMagenta': Ciemna magenta
+      'magenta': Magenta
+      'darkestBrownish': Najciemniejsze szarobrązowe
+      'darkBrownish': Ciemne szarobrązowe
+      'brownish': Szarobrązowe
+      'lightBrownish': Jasne szarobrązowe
+      'black': Najciemniejsza czerń
+      'darker': Ciemniejsze czarne
+      'darkGinger': Ciemnorude
+      'ginger': Rude
+      'darkPurple': Ciemnofioletowe
+      'purple': Fioletowe
+      'lightPurple': Jasnofioletowe
+      'blueishDarkest': Najciemniejsze szaroniebieskie
+      'blueishDarker': Ciemniejszy szaroniebieski
+      'blueishDark': Ciemny szaroniebieski
+      'blueish': Szaroniebieski
+      'dark': Czarny
+      'gray': Szary
+      'lightGray': Jasnoszary
+      'darkestGreen': Najciemniejsza zieleń
+      'lightMagenta': Jasna magenta
+      'lightGinger': Jasnorude
+      'lightBlueish': Jasny szaroniebieski
+      'darkBrown': Ciemnobrązowe
+      'darkRed': Ciemnoczerwone
+      'darkestBrown': Najciemniejszy brąz
+      'darkestBlue': Najciemniejsze niebieskie
 singulars:
   faces:
     moustache:
@@ -339,7 +388,7 @@ singulars:
       name: Wysoko i Wąsko
       desc: Tylko górna część.
     balded:
-      desc: Łysa głowa.
+      desc: Łysa główka.
       name: Łysy
     highSwoop:
       name: Wysoki skok
@@ -389,8 +438,158 @@ singulars:
       name: Długie merfolskie włosy
     highAndTightBun:
       name: Wysoki i wąski kok
+    highAndThightWithSides:
+      name: Wysoko i wąsko z bokami
+    shortAndBow:
+      name: Krótkie z kokardką
+      desc: Krótkie włosy z kokardką.
+    longAndBow:
+      name: Długie z kokardką
+      desc: Długie włosy z kokardką.
+    shortAndCatEars:
+      name: Krótkie i kocie uszy
+      desc: Krótkie włosy z kocimi uszami. Miau!
+    longAndCatEars:
+      name: Długie i kocie uszy
+      desc: Długie włosy z kocimi uszami. Miau miau!
+    shortTwoColor:
+      name: Krótkie dwukolorowe
   headwear:
     turban:
       name: Turban
     arcticHat:
       desc: Dla prawdziwego towarzysza.
+    copperHelmet:
+      name: Miedziany Hełm
+      desc: Hełm wykonany z miedzi. Prosty wygląd, ale bardzo użyteczny.
+    diamondHelmet:
+      name: Diamentowy Hełm
+      desc: To wygląda na bardzo drogie. Może nawet oślepić wrogów.
+    bronzeHelmet:
+      name: Hełm z Brązu
+      desc: Piękny, ale prosto wyglądający hełm.
+    ironHelmet:
+      name: Żelazny Hełm
+      desc: Wygląda jak strażnik, prawda?
+    steelHelmet:
+      name: Stalowy Hełm
+      desc: Chroni twoją głowę.
+    tarsiliumHelmet:
+      name: Tarsilowy Hełm
+      desc: Czarny i bardzo wytrzymały.
+    farganiteHelmet:
+      name: Farganitowy Hełm
+      desc: Niebieski hełm, wykonany z rzadkiego metalu. Bardzo dobrze chroni głowę.
+    crystalHelmet:
+      name: Kryształowy Hełm
+      desc: Kryształowy hełm, świecący na fioletowo.
+    lightCopperHelmet:
+      desc: Hełm użytkowy o lekkiej konstrukcji.
+      name: Lekki Miedziany Hełm
+    lightDiamondHelmet:
+      name: Lekki Diamentowy Hełm
+      desc: Bardzo wytrzymały i drogi hełm.
+    lightBronzeHelmet:
+      name: Lekki Hełm z Brązu
+      desc: Wygląda trochę jak czapka, ale bardzo dobrze chroni głowę.
+    lightIronHelmet:
+      name: Lekki Żelazny Hełm
+      desc: Bardzo ochronny kask do noszenia. I to w lekkim opakowaniu!
+    steelLightHelmet:
+      name: Lekki Stalowy Hełm
+      desc: Doskonale chroni głowę.
+    tarsiliumLightHelmet:
+      desc: Czarny i lekki hełm.
+      name: Lekki Tarsilowy Hełm
+    farganiteLightHelmet:
+      name: Lekki Farganitowy Hełm
+      desc: Bardzo lekki hełm wykonany z wytrzymałego farganitu.
+    syrenthianCoralCrown:
+      name: Syrentyjska Koralowa Korona
+    erdwissMerchantsHat:
+      desc: Zabawnie wyglądająca czapka ma w górnej części wyhaftowany emblemat złotej
+        monety.
+    jarvonianBearHelmet:
+      name: Niedźwiedzi Hełm
+      desc: Stalowy hełm pokryty jest głową potężnego niedźwiedzia.
+    gemmedCirclet:
+      name: Pierścień z Klejnotem
+      decs: Pośrodku platynowego pierścienia połyskuje turkusowy klejnot.
+    aviatorHatWithGoggles:
+      name: Czapka lotnika z goglami
+      desc: Typowa czapka lotnika noszona przez galeforgiańskich pilotów. Ma dołączone
+        gogle.
+    treasureHunterHat:
+      desc: Nikt nie może powiedzieć, czy należy go uznać za fedorę czy kapelusz kowbojski.
+        Cokolwiek to jest, sprawia, że wyglądasz tak fajnie jak Indy.
+  facepaints:
+    manyStripes:
+      name: Wiele pasków
+      desc: Wiele pasków, które prawie zakrywają całą twarz!
+    stripeOverCheeks:
+      name: Pasek na policzkach
+      desc: Pasek przechodzący przez oba policzki.
+  bodyTypes:
+    a: A - Męski
+    b: B - Żeński
+  backAccessories:
+    dwarvenAxe:
+      name: Krasnoludzki Topór
+      desc: Tylko nie mów elfowi, dobrze?
+    pickaxe:
+      name: Kilof
+      desc: Kilof na plecach może rozbić każdą skałę i kamień.
+    largeIcicle:
+      name: Duży Sopel
+      desc: Duży sopel na plecach zszokuje nawet tych fashionistów, którzy widzieli
+        już wszystko.
+    rodOfMoss:
+      name: Mszana Wędka
+      desc: Na końcu sznurka przymocowany jest kawałek rzadkiego mchu.
+    birdCompanion:
+      name: Ptasi Towarzysz
+      desc: Mały ptak, który podąża za tobą.
+    floatingOrb:
+      name: Pływająca Kula
+      desc: Pływająca kula, dzięki której poczujesz się jak prawdziwy zdobywca.
+    penguinCompanion:
+      name: Przyjaciel Pingwin
+      desc: Mały pingwin siedzi na twoim ramieniu. Od czasu do czasu piszczy i brzmi
+        jak:\n\n<i>"Malik! Malik!"</i>
+    merfolkFishWings:
+      name: Rybie Skrzydła Merfolka
+      desc: Syntetyczne skrzydła na plecach przypominają latające ryby.
+    jarvonianBanner:
+      name: Jarvoński Sztandar
+      desc: Dwa odcienie niebieskiego sztandaru przypominają barwy Jarvonii.
+    arrows:
+      desc: Świetny dla łuczników.
+  faceAccessories:
+    hearingAid:
+      name: Aparat słuchowy
+      desc: Zaprojektowany w Galeforge.
+    carrot:
+      name: Marchewka
+      desc: Kiedy musisz odegrać rolę bałwana, chwyć marchewkę!
+    pearlEarring:
+      name: Delikatny Perłowy Kolczyk
+      desc: Z tym gustownym kolczykiem wyglądasz prawie jak obraz.
+    fancyEarring:
+      desc: Błyszczący, srebrny kolczyk. Wygląda całkiem fajnie.
+  eyeAccessory:
+    goldenGlasses:
+      name: Złote Okulary
+      desc: Złote okulary, bardzo błyszczące!
+    coolGlasses:
+      name: Fajne Okulary
+      desc: Bardzo fajnie wyglądające okulary. Wygląda na to, że jesteś gotowy do
+        pracy.
+    goggles:
+      name: Gogle
+      desc: Gogle o galeforgiańskim wyglądzie.
+    fancyEarring:
+      name: Fantazyjny Kolczyk
+      desc: Błyszczący, srebrny kolczyk. Wygląda całkiem fajnie.
+    smokeEyes:
+      desc: Z oczodołów wydobywa się kolorowy dym.
+      name: Dymiące Oczy
