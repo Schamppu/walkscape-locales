@@ -6,21 +6,35 @@ maps:
     sell: Waren verkaufen
     talk: Reden
     withdraw: Abheben
+    'guidance': Orientierung
+    'barber': Friseur
+    'buySpecial': Sonderangebot kaufen
   buildingTypes:
     bank: Bank
     generalStore: Krämerladen
+    'temple': Tempel
+    'tavern': Taverne
+    'house': Haus
+    'animalShelter': Tierheim
+    'activityShop': Aktivitätsladen
+    'marketStall': Marktstand
+    'castle': Schloss
+    'barber': Friseur
+    'clothingShop': Bekleidungsgeschäft
+    'outpost': Außenposten
+    'fishingStore': Fischladen
 singulars:
   buildings:
     jarvonia:
       fortofPermafrost:
         name: Permafrost Festung
         desc: Die gigantische Festung liegt vor dir, sie liegt zwischen Jarvonia und
-          dem Großherzogtum Trellin-Erdweis. Dies mächtige Festung ist dafür bekannt,
+          dem Großherzogtum Trellin-Erdweis. Diese mächtige Festung ist dafür bekannt,
           dass man ein Spiel spielen muss, bevor man die gefrorenen Länder von Jarvonia
           betritt.
       tutorialCabin:
         desc: Eine bescheidene Hütte steht im entzaubertem Wald, einige Baumstümpfe
-          und ein Mann der an einem Außentisch mit zwei Stühlen sitz, sind zu sehen.
+          und ein Mann der an einem Außentisch mit zwei Stühlen sitzt, sind zu sehen.
           Er scheint sich ein Schachbrett auf dem Tisch anzusehen.
         name: Hütte vom Hilfreichen Herbert
       bigloo:
@@ -38,12 +52,12 @@ singulars:
       tundraTrends:
         desc: Tundra Trends bietet dir die neueste Wintermode mit einer spielerischen
           Besonderheit. Entdecke lebendige Schals, unkonventionelle Hüte und bunte
-          Umhäng, die ein Statement im Schnee setzen.
+          Umhänge, die ein Statement im Schnee setzen.
         name: Tundra Trends
       frosthookEmporium:
         name: Frosthaken Kaufhaus
         desc: 'Eine gutaussehende Piratin begrüßt dich mit einem kurzen Nicken. Ein
-          Holzbein klopft auf den Boden als Sie hinter den Tresen geht. Eine Vielzahl
+          Holzbein klopft auf den Boden als sie hinter den Tresen geht. Eine Vielzahl
           von Fischereigütern sind an den Wänden und auf den Regalen. Überraschenderweise
           hängt ein riesiger Haikopf an einer Wand, darunter ein Namensschild: Bruce.'
       jarvoJoy:
@@ -72,7 +86,7 @@ singulars:
           knistert ruhig und Ware schmückt die Regale.
       templeOfAzurazera:
         name: Tempel in Azurazera
-        desc: Der große Tempel ist gefüllt mit glühendem Weihrauch und dem gemurmel
+        desc: Der große Tempel ist gefüllt mit glühendem Weihrauch und dem Gemurmel
           heiliger Worte. Viele gehen zu einem riesigen blau schimmernden Stein und
           scheinen zu beten. Der große Stein scheint vom Boden den Himmel selbst zu
           erreichen, dennoch ist seine Oberfläche komplett glatt und dröhnt vor Kraft.
@@ -85,9 +99,16 @@ singulars:
       hornOfRespiteOutpost:
         name: Abenteurergilden Außenposten
         desc: Der Abenteurergilden Außenposten ist ein Ort an dem Abenteurer ihre
-          Geschichten austauschen können, nach dem Weg fragen können und sich auf
-          ihre nächste Reise vorbereiten können. Die Wände sind bestückt mit Karte,
-          Waffen und Trophäen der vergangenen Expeditionen.
+          Geschichten austauschen, nach dem Weg fragen und sich auf ihre nächste Reise
+          vorbereiten können. Die Wände sind bestückt mit Karte, Waffen und Trophäen
+          der vergangenen Expeditionen.
+      notAShop:
+        name: Not a Shop
+        desc: Ein merkwürdiges Gebäude hebt sich vom Rest des Dorfes ab. Beim Betreten
+          werden die Besucher mit einem Glas Salmiakki begrüßt. An der Wand hängt
+          ein Banner mit der Aufschrift „WalkScape“, dessen Bedeutung jedoch unklar
+          bleibt. Der Innenraum scheint ein Büroraum zu sein, mit einem Kanban-Board,
+          einem Stehpult und einem brandneuen Walking Pad von Galgenschmied.
     gdte:
       animalShelter:
         desc: Der Laden ist gefüllt mit verschiedenen Tieren, einige davon mit mehreren
@@ -110,7 +131,7 @@ singulars:
         name: Das Moosbüro
       fishMarketStall:
         name: Fischmarktstand
-        desc: Ein man mit einer Pfeife betreibt den Fischstand, es liegen Unmengen
+        desc: Ein Mann mit einer Pfeife betreibt den Fischstand, es liegen Unmengen
           an Fisch und Fischteilen auf Eis. Es scheint außerdem auch Körbe mit verschiedenen
           Fischarten, sowie Eimer mit Ködern zu geben.
       foodMarketStall:
@@ -119,3 +140,70 @@ singulars:
           Frisches Brot und Gebäck. Es gibt allerdings auch einige eingemachte und
           eingelegte Waren. Glücklicherweise scheint es aber keinen Surströmming zu
           geben.'
+      maritimeFortuneBank:
+        name: Maritime Bank des Reichtums
+        desc: Goldene Verzierungen, Marmorböden und sogar eine massive Leuchte hängt
+          von der Decke. Sie ist scheinbar aus Gold und Edelsteinen gefertigt, damit
+          ihre natürlichen Farben durch eine kleine Flamme reflektiert werden. Um
+          die Aufmerksamkeit des Personals zu erregen, sind sogar die Glocken aus
+          Gold.
+      toolMarketStall:
+        name: Werkzeugmarktstand
+        desc: Der Werkzeugstand ist mit einem alten Ledertuch bedeckt, die Werkzeuge
+          sind in einer scheinbar bestimmten Reihenfolge angeordnet. Ein paar Laternen
+          hängen von der Decke des Standes, andere Werkzeuge baumeln an sorgfältig
+          gebundenen Seilen und in Körben über dem Kopf des Händlers.
+      bogsideBankOfProsperity:
+        desc: Der Boden der Bank ist mit Moos bedeckt und quietscht, wenn man darauf
+          tritt. In den Dachsparren scheinen sich mehrere Frösche zu verstecken, die
+          Mücken fernhalten. Einer der Angestellten nickt zur Begrüßung leicht mit
+          dem Kopf. Auf dem Kopf des Angestellten scheint sich auch ein Frosch zu
+          befinden, der müßig nach einer großen, herumflatternden Motte schnappt.
+        name: Bogside Bank des Wohlstands
+      quagmireCouture:
+        desc: Sumpf Couture ist eine Modeboutique in Salsfirth, die sich auf Kleidung
+          im Sumpfstil spezialisiert hat. Stöbere durch eine Kollektion stilvoller
+          Kleidungsstücke, die für jeden Anlass perfekt sind.
+        name: Sumpf Couture
+    syrenthia:
+      throneOfTheNeverdrown:
+        desc: Ein aufmerksamer Oktopus bewacht den Eingang. Ein königsblauer Teppich
+          führt hinauf zum Thron, der mit mehreren beweglichen Tentakeln geschmückt
+          ist. Der gesamte Thronsaal strahlt eine unheimliche Atmosphäre aus und man
+          hat das Gefühl, als würde selbst die harmlose Krabbe einen beobachten.
+      casbrantsSunkenShip:
+        name: Casbrants versunkenes Schiff
+        desc: Der gesamte Hauptmast des Schiffes ist abgebrochen. Das Wrack ist von
+          Löchern und zerbrochenen Brettern durchsetzt, aus denen zahlreiche kleine
+          Luftblasen aufsteigen. Es fühlt sich an, als ob eine andere Präsenz hier
+          ist, die beobachtet und wartet.
+      vastalumeBank:
+        name: Thalassa Wellenbank
+        desc: Eine große, leuchtend gelbe Schlange schlängelt sich über den sandigen
+          Boden. Unterwasser in den Felswänden gibt es eine runde Tür mit einem riesigen
+          Schlüsselloch, das zu einem Safe führt.
+      vastalumeGeneralStore:
+        name: Versunkener Anker
+        desc: Ein rostiger Anker liegt im Sand. Der kleine Laden verfügt über ein
+          paar Regale und Fässer mit Waren. Aus Löchern und Spalten in den Wänden
+          steigen Blasen auf. Man glaubt, die Berge zu kennen, die auf dem Gemälde
+          an der Wand abgebildet sind.
+      vastalumeBarber:
+        desc: Sein dicht gefüllter Friseursalon verfügt über mehrere Haarschneidestationen.
+          Der ständige Strom an Kunden, die ein- und ausgehen, lässt vermuten, dass
+          es sich in Vastalume um einen beliebten Ort für einen Haarschnitt handelt.
+      vastalumeSpecializedStore:
+        name: Unterströmung
+        desc: Direkt am Eingang ist ein Banner von Syrenthien angebracht, was darauf
+          hinweist, dass hier nur diejenigen Zutritt haben, denen die Syrenthier vertrauen.
+          Hier ist von allem etwas dabei – ein Loungebereich, an der Wand montierte
+          Werkzeuge und sogar ein Unterwasser-Bonsaibaum.
+      vastalumeTavern:
+        desc: Der gesamte Boden ist mit Sand bedeckt. Hinter der Bar steht ein orangefarbener
+          Oktopus, der Getränke mixt und Tassen füllt. In der Ecke des Raumes liegt
+          die größte Perle, die du je gesehen hast.
+        name: Perle des Meeres
+      vastalumeClothingShop:
+        desc: Viele Syrenthier bevorzugen Kleidung aus Muscheln, daher ist dieser
+          Ort ziemlich leer. Im Shop sind nur wenige Stoffe und Outfits zu finden.
+          Die meisten Besucher kommen hierher, für das berühmte Tanzkleid des Meeresvolks.
