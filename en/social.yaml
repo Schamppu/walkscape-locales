@@ -29,21 +29,22 @@ singulars:
         block: Are you sure you want to block this user? Blocked users can no longer send you friend invites.
   createParty:
     rules:
-      mayContain: 'May contain: {list}'
+      mayContain: '<bp />May contain: {list}'
+      noTrailingSpaces: <bp />Cannot start or end with space
 plurals:
   createParty:
     rules:
       minChar:
         zero: '-'
-        one: At least {} character
+        one: <bp />At least {} character
         two: '-'
         few: '-'
         many: '-'
-        other: 'At least {} characters'
+        other: <bp />At least {} characters
       maxChar:
         zero: '-'
-        one: At most {} character
+        one: <bp />At most {} character
         two: '-'
         few: '-'
         many: '-'
-        other: 'At most {} characters'
+        other: <bp />At most {} characters
