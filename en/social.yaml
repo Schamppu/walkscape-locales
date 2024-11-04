@@ -13,6 +13,7 @@ singulars:
       unblock: Unblock
       cancelInvite: Cancel invite
       sendInvite: Send friend invite
+      createParty: Create party
       inviteResponse:
         accept: Accept
         reject: Reject
@@ -28,6 +29,10 @@ singulars:
       inviteResponse:
         block: Are you sure you want to block this user? Blocked users can no longer send you friend invites.
   createParty:
+    input:
+      partyName: Party name
+      catchphrase: Catchphrase
+      catchphraseHint: Catchphrase (Optional)
     rules:
       mayContain: '<bp />May contain: {list}'
       noTrailingSpaces: <bp />Cannot start or end with space
