@@ -87,3 +87,19 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+  special:
+    findCollectibles:
+      whenKeywordSetBonus:
+        text: En az <supp k="quantity"/> <supp k="keyword"/> eşya kuşanılmışken genel
+          <stat s="findCollectibles"> koleksiyonluk bulma şansı </stat>.
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> sırasında <stat s="findCollectibles"/>.
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="findCollectibles"/>.
+      global:
+        text: Genel <stat s="findCollectibles"> koleksiyonluk bulma şansı </stat>
+      whileMainSkill:
+        text: <supp k="skill"/> sırasında <stat s="findCollectibles"/>
+      whenAchievementPoints:
+        text: <supp k="achievementPoints"/> olunca genel <stat s="findCollectibles">
+          koleksiyonluk bulma şansı </stat>
