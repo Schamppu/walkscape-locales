@@ -1,1 +1,130 @@
-{}
+singulars:
+  popups:
+    achievementUnlocked:
+      achievementUnlocked: '{achievement} saavutatud'
+      requirements: Tingimused
+      rewards: Autasud
+      achievementPoints: '{points} saavutuspunkti'
+    characterLevelUp:
+      characterLevelUp: Karakteri uus tase
+      unlocks: Uued võimalused
+      noNewUnlocks: Uued võimalused puuduvad sellel tasemel.
+    skillLevel:
+      skillLevelUp: '{skillName} uus tase'
+      unlocks: Uued võimalused
+      noNewUnlocks: Uued võimalused puuduvad sellel tasemel.
+      newItem: <chip><stext><c>Saadaolev ese</c></stext></chip> <item id="{item}"/>
+        on kasutatav.
+      newRecipe: <chip><stext><c i="0">Uus retsept</c></stext></chip> <c i="1">{recipeName}</c>
+        saadaval.
+      newRoute: <chip><stext><c i="0">Uus marsruut</c></stext></chip> <c i="1"><location
+        id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c> avatud.
+      newActivity: <chip><stext><c>Uus tegevus</c></stext></chip> <c>{activityName}</c>
+        saadaval.
+      newDrop: <chip><stext><c i="0">Uus autasu</c></stext></chip> <c i="1">{itemName}</c>
+        saadaval tegevusest <c>{activityName}</c>.
+    idleSteps:
+      stepsWhileAway: Samme kogutud kui mäng oli kinni
+      whileYouWereAway: Siis kui olid eemal...
+      nothingHappened: Mitte midagi tähelepanuväärset ei toimunud.
+      gainedExperience: <skill skill="{skill}" /> sai <c>+{exp}</c> kogemust.
+      gainedItem: Said <c>+{amount}</c> <item id="{item}" />
+      craftedItem: Valmistasid <c>+{amount}</c> <item id="{item}" />
+      gainedMoney: Said <c i="0">+{amount}</c> <c i="1">münti</c>
+      characterGained: Karakter sai <c>+{amount}</c> kogemust />
+      arrivedAt: Saabusid asukohta <location /> <c>{location}</c>.
+      skillLeveledUp: <skill skill="{skill}" /> sai tasemelt <c i="0">{from}</c> tasemele
+        <c i="1">{to}</c>.
+      characterLeveledUpFrom: Karakter jõudis tasemelt <c i="0">{from}</c> tasemele
+        <c i="1">{to}</c>.
+    inactiveSteps:
+      stepsWhileInactive: Samme kogutud kui mäng oli taustal
+  messages:
+    workInProgress:
+      title: Töö on pooleli
+      text: See funktsioon on veel arendamisel ning paljud selle funktsioonid <hl>ei
+        ole veel saadaval</hl>. Võite seda juba praegu proovida ja tulla hiljem tagasi,
+        kui see on täielikult rakendatud!
+    comingSoon:
+      title: Tuleb varsti
+      text: See sisu <hl>ei ole saadaval</hl> WalkScape'i praeguses versioonis.
+    disabled:
+      title: Keelatud
+      text: See funktsioon on <hl>ajutiselt välja lülitatud</hl>. Lisateabe saamiseks
+        uuri Portaali, Redditit või Discordi.
+    saveSuccesful:
+      title: Salvestus edukas!
+      text: Sinu muudatused on edukalt salvestatud.
+    saveUnsuccesfullLootTables:
+      title: Salvestus ebaõnnestunud.
+      text: Aardetabel sisaldab rida(sid) millega ei ole seotud esemeid.
+  errors:
+    characterValidation:
+      nameContainsleadingTrailingSpaces: Ees- või tagapool olevad tühikud ei ole lubatud.
+      nameContaintsConsecutiveSpaces: Järjestikused tühikud ei ole lubatud.
+      nameTooShort: Tegelase nimi peab olema vähemalt kolme tähe pikkune.
+      nameContainsSpecialCharacters: Tegelase nimi sisaldab erimärke. Lubatud on ainult
+        tähed, numbrid ja tühikud.
+      nameTooShortWithSpacesRemoved: Kui tühikud eemaldada, peab tegelase nimi olema
+        pikem kui kolm tähte.
+    fatalError:
+      error: Vabandame vea pärast. Pea meeles, et mäng on kinnises beetas ja kõik
+        mängijate salvestused varundatakse iga päev pilve.
+    activityCancelled:
+      title: Tegevus tühistatud
+      stepsAreInfinite: Praegune tegevus tühistati, sest te ei vasta enam selle lõpetamiseks
+        vajalikele nõuetele.
+    serverError:
+      noClosedBetaAccess:
+        title: Kinnise beeta juurdepääs lõppenud
+        text: Sinu ligipääs <c i=0>WalkScape'i Kinnisele Beetale on aegunud</c>. Saate
+          taastada juurdepääsu taotlusega ja vastuvõtuga tulevases laines või koheselt
+          toetades mängu<c i=1>Patreonis</c> or <c i=1>Buy Me a Coffee's</c>.\n\nKui
+          otsustate toetada mängu, linkige oma Patreon või Buy Me a Coffee <c i=1>WalkScape
+          Portaali Konto lehel</c>, et taastada mängule ligipääs. Võite ka <c i=1>taotleda
+          juurdepääsu Kinnisele Beetale</c> Konto Lehelt.
+      newClientUpdate:
+        title: Uus kliendi värskendus saadaval
+        text: Teie mäng on aegunud ning mängu uus versioon on saadaval. Mängu jätkamiseks
+          laadige alla mängu uusim versioon.
+      bannedUser:
+        title: Te olete WalkScape'ist jäädavalt keelatud
+        text: Te olete WalkScape'ist jäädavalt keelatud. Kui usute, et tegemist on
+          veaga ja soovite otsuse edasi kaevata, võite meiega ühendust võtta, saates
+          e-kirja aadressil <c i=1>contact@walkscape.app</c>.
+      noInternetConnection:
+        title: Interneti ühendus puudub
+        text: Teil puudub aktiivne internetiühendus, mis on vajalik teie kliendi kinnitamiseks
+          serveriga. Palun proovige uuesti, kui teil on ühendus internetiga.
+      serverOffline:
+        title: WalkScape'i server on väljalülitatud
+        text: Mänguserver on hetkel väljalülitatud. See võib olla tingitud hooldusest
+          või probleemist mänguserveriga. Palun proovige hiljem uuesti.
+      serverMaintenance:
+        title: WalkScape'i serverit hetkel hooldatakse
+      newUpdate:
+        title: Uus uuendus
+        text: Mängu on uuendatud. Uue värskenduse allalaadimiseks palun käivitage
+          mäng uuesti.
+      unknownError:
+        title: Tundmatu viga.
+        text: Tundmatu viga.
+      failureToUpdateContent:
+        title: Sisu uuendamine ebaõnnestus
+        text: Mänguprogrammil ei õnnestunud sisu uuendada. Palun teatage sellest arendajatele
+          Discordis koos oma vea ja seadme üksikasjadega. Samuti võite proovida mängu
+          uuesti avada, et näha, kas sisu laetakse edukalt alla.
+plurals:
+  dialogs:
+    deleteClass:
+      title: Kas olete kindel, et soovite kustutada?
+      text:
+        zero: '-'
+        one: Objektide kustutamine on pöördumatu. Objektile viidatakse teistes objektides
+          {} kord.
+        two: Objektide kustutamine on pöördumatu. Objektile viidatakse teistes objektides
+          {} korda.
+        few: '-'
+        many: '-'
+        other: Objektide kustutamine on pöördumatu. Objektile viidatakse teistes objektides
+          {} korda.
