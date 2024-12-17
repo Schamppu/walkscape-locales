@@ -1,0 +1,107 @@
+singulars:
+  popups:
+    idleSteps:
+      characterLeveledUpFrom: 角色等级从 <c i="0">{from}</c> 级升到了 <c i="1">{to}</c>级。
+      stepsWhileAway: 游戏关闭期间所积累的步数
+      whileYouWereAway: 在你离开的期间...
+      nothingHappened: 没有发生什么特别的事。
+      gainedExperience: <skill skill="{skill}" /> 获得了 <c>+{exp}</c> 经验值。
+      skillLeveledUp: <skill skill="{skill}" /> 从 <c i="0">{from}</c> 级升到了 <c i="1">{to}</c>级。
+      gainedItem: 获得了 <c>+{amount}</c> <item id="{item}" />
+      craftedItem: 制作了 <c>+{amount}</c> <item id="{item}" />
+      gainedMoney: 获得了 <c i="0">+{amount}</c> <c i="1">金钱</c>
+      characterGained: 角色获得了 <c>+{amount}</c> 经验值 />
+      arrivedAt: 到达了 <location /> <c>{location}</c>。
+    achievementUnlocked:
+      achievementUnlocked: '{achievement} 成就已解锁'
+      requirements: 需求
+      rewards: 奖励
+      achievementPoints: '{points} 成就点数'
+    characterLevelUp:
+      characterLevelUp: 角色升级
+      unlocks: 解锁
+      noNewUnlocks: 此等级没有新解锁事物。
+    skillLevel:
+      skillLevelUp: '{skillName} 升级'
+      unlocks: 解锁
+      newActivity: <chip><stext><c>新活动</c></stext></chip> <c>{activityName}</c> 已解锁。
+      newRecipe: <chip><stext><c i="0">新食谱</c></stext></chip> <c i="1">{recipeName}</c>
+        已解锁。
+      newDrop: <chip><stext><c i="0">新掉落物品</c></stext></chip> <c i="1">{itemName}</c>
+        可以从 <c>{activityName}</c>活动中获得。
+      newItem: <chip><stext><c>道具已解锁</c></stext></chip> <item id="{item}"/> 可装备。
+      noNewUnlocks: 此等级没有新解锁事物。
+      newRoute: <chip><stext><c i="0">新行程路线</c></stext></chip> <c i="1"><location
+        id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c> 已解锁。
+    inactiveSteps:
+      stepsWhileInactive: 游戏未启动时所积累的步数
+  messages:
+    saveUnsuccesfullLootTables:
+      title: 保存不成功。
+      text: 战利品表包含没有与之关联道具的行。
+    workInProgress:
+      title: 正在执行行为
+      text: 此功能仍在开发中，很多部分 <hl>尚不可用</hl>。 您可以先试用一下，等其完全开发完后再回来！
+    comingSoon:
+      title: 即将推出
+      text: 此内容在当前版本的Walkscape中 <hl>暂不可用</hl> 。
+    disabled:
+      title: 已禁用
+      text: 此功能已被 <hl>暂时禁用</hl>。请查看Portal，Reddit或是Discord了解更多信息。
+    saveSuccesful:
+      title: 保存成功！
+      text: 您的更改已成功保存。
+  errors:
+    serverError:
+      newClientUpdate:
+        text: 您的游戏已过时，并且当前有新版本可用。请下载最新版本的游戏以继续游戏。
+        title: 有新版本的客户端更新
+      noClosedBetaAccess:
+        title: 封闭测试权限已过期
+        text: 您的<c i=0>WalkScape封闭测试访问资格已过期</c>。您可以通过重新申请资格在未来的封闭测试中重新获得权限，也可以通过在
+          <c i=1>Patreon</c> 或是<c i=1>Buy Me a Coffee</c>中支持本游戏立刻获得资格。\n\n如果您决定支持本游戏，可以通过
+          <c i=1>WalkScape Portal账户界面</c> 连接您的 Patreon账户或是Buy Me a Coffee 账户以重新获得访问资格。您也可以从账户界面
+          <c i=1>申请封闭测试资格</c>。
+      bannedUser:
+        title: 您已被永久禁止使用 WalkScape
+        text: 您已被永久禁止使用 WalkScape。如果您认为这是一个错误并希望对该决定提出上诉，可以发送电子邮件至 <c i=1>contact@walkscape.app</c>
+          与我们联系。
+      noInternetConnection:
+        title: 无网络连接
+        text: 您没有有效的网络连接，网络连接是向服务器验证你的客户端所必需的。请在有互联网连接时重试。
+      serverOffline:
+        title: WalkScape 服务器处于离线状态
+        text: 游戏服务器目前处于离线状态。这可能是由于维护，或是因为游戏服务器出现问题。请稍后重试。
+      serverMaintenance:
+        title: WalkScape 服务器正在维护
+      newUpdate:
+        title: 新更新
+        text: 游戏已更新。请重新启动游戏以下载新更新。
+      unknownError:
+        title: 未知错误。
+        text: 未知错误。
+      failureToUpdateContent:
+        title: 无法更新内容
+        text: 游戏客户端无法更新内容。请在 Discord 上向开发人员报告此问题，并附上错误和设备的详细信息。您也可以尝试再次打开游戏检查内容是否能成功下载。
+    characterValidation:
+      nameContainsSpecialCharacters: 此角色名称包含特殊字符。仅允许使用字母、数字和空格。
+      nameContainsleadingTrailingSpaces: 不允许含有空格开头，或含有空格结尾。
+      nameContaintsConsecutiveSpaces: 不允许有连续的空格。
+      nameTooShort: 角色名称长度至少为3个字母。
+      nameTooShortWithSpacesRemoved: 删除空格后，角色名称的长度必须超过三个字母。
+    fatalError:
+      error: 很抱歉出现了错误。请记住，该游戏仍处于封闭测试阶段，所有玩家的保存内容都会每天备份到云端。
+    activityCancelled:
+      title: 活动已取消
+      stepsAreInfinite: 当前活动已被取消，因为您不再满足完成该活动的要求。
+plurals:
+  dialogs:
+    deleteClass:
+      title: 您确定要删除吗？
+      text:
+        zero: '-'
+        one: 删除对象是不可逆的行为。该对象已在其他对象中被引用{}次。
+        two: 删除对象是不可逆的行为。该对象已在其他对象中被引用{}次。
+        few: '-'
+        many: '-'
+        other: 删除对象是不可逆的行为。该对象已在其他对象中被引用{}次。
