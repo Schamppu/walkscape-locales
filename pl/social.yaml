@@ -5,6 +5,10 @@ singulars:
     inviteSent: Zaproszenie wysłane
     inviteReceived: Otrzymałeś zaproszenie
     none: Społecznościowe
+    party:
+      member: Członek
+      admin: Administrator
+      owner: Właściciel
   actions:
     buttonLabels:
       removeFriend: Usuń Znajomego
@@ -15,10 +19,14 @@ singulars:
         accept: Akceptuj
         reject: Odrzuć
         block: Zablokuj
+      createParty: Stwórz drużynę
+      leaveParty: Opuść drużynę
+      leaveAndDestroyParty: Opuść i rozwiąż drużynę
     confirmTitle:
       unblock: Odblokuj użytkownika
       inviteResponse:
         block: Zablokuj użytkownika
+      changeRole: Zmiana pozwoleń
     confirmDescription:
       removeFriend: Na pewno chcesz zerwać więź przyjaźni?
       unblock: Na pewno chcesz odblokować tego użytkownika?
@@ -26,5 +34,35 @@ singulars:
       inviteResponse:
         block: Na pewno chcesz zablokować tego użytkownika? Zablokowani nie mogą wysyłać
           ci więcej zaproszeń do znajomych.
+      leaveAndDestroyParty: Czy na pewno chcesz opuścić i rozwiązać drużynę? Tej akcji
+        nie można cofnąć.
+      changeRole: Czy na pewno chcesz stworzyć <hl>{characterName}</hl> a <hl>{partyRole}</hl>?
+      leaveParty: Czy na pewno chcesz opuścić drużynę?
   status:
     loadingInvites: Sprawdzanie zaproszeń...
+  party:
+    manage: Zarządzaj
+    role: Rola
+  createParty:
+    input:
+      partyName: Nazwa drużyny
+      catchphrase: Slogan
+      catchphraseHint: Slogan (opcjonalnie)
+    rules:
+      mayContain: '<bp />Może zawierać: {list}'
+      noTrailingSpaces: <bp />Nie może zaczynać się ani kończyć spacją
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        two: '-'
+        few: '-'
+        one: <bp />Co najmniej {} postać
+        many: '-'
+        other: <bp />Co najmniej {} postaci
+      maxChar:
+        zero: '-'
+        one: <bp />Co najwyżej {} postać
+        two: '-'
+        other: <bp />Co najwyżej {} postaci
