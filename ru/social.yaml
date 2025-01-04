@@ -5,6 +5,10 @@ singulars:
     inviteReceived: Вы получили приглашение
     blocked: Вы заблокировали этого пользователя
     none: Социальное
+    party:
+      owner: Владелец
+      member: Участник
+      admin: Админ
   status:
     loadingInvites: Проверка приглашений...
   actions:
@@ -17,10 +21,14 @@ singulars:
         accept: Принять
         reject: Отклонить
         block: Заблокировать
+      leaveAndDestroyParty: Покинуть и стереть команду
+      createParty: Создать команду
+      leaveParty: Покинуть команду
     confirmTitle:
       unblock: Разблокировать пользователя
       inviteResponse:
         block: Заблокировать пользователя
+      changeRole: Изменить права
     confirmDescription:
       removeFriend: Вы уверены что хотите перестать дружить?
       unblock: Вы уверены что хотите разблокировать этого пользователя?
@@ -28,3 +36,26 @@ singulars:
       inviteResponse:
         block: Вы уверены, что хотите заблокировать этого пользователя? Заблокированные
           пользователи больше не смогут отправлять вам приглашения в друзья.
+      changeRole: Вы уверены что хотите сделать <hl>{characterName}</hl> a <hl>{partyRole}</hl>?
+      leaveAndDestroyParty: Вы точно уверены что хотите покинуть и стереть команду?
+        Это действие неоспоримо.
+      leaveParty: Вы уверены что хотите выйти с команды?
+  party:
+    manage: Управлять
+    role: Роль
+  createParty:
+    input:
+      partyName: Название команды
+      catchphraseHint: Девиз(Необязательно)
+      catchphrase: Девиз
+    rules:
+      mayContain: '<bp />Может содержать: {list}'
+      noTrailingSpaces: <bp />Не может начинаться или заканчиваться пробелом
+plurals:
+  createParty:
+    rules:
+      minChar:
+        one: <bp />Хотя бы {} букв
+        other: <bp />Хотя бы {} символов
+      maxChar:
+        one: <bp />Максимально {} символов
