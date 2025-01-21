@@ -7,6 +7,10 @@ singulars:
     inviteSent: Uitnodiging verzonden
     inviteReceived: Je hebt een uitnodiging ontvangen
     none: Sociaal
+    party:
+      member: Lid
+      admin: Admin
+      owner: Eigenaar
   actions:
     buttonLabels:
       removeFriend: Vriend verwijderen
@@ -17,10 +21,14 @@ singulars:
         accept: Accepteren
         reject: Afwijzen
         block: Blokkeren
+      createParty: Groep aanmaken
+      leaveParty: Groep verlaten
+      leaveAndDestroyParty: Groep verlaten en verwijderen
     confirmTitle:
       unblock: Gebruiker deblokkeren
       inviteResponse:
         block: Gebruiker blokkeren
+      changeRole: Permissie wijzigen
     confirmDescription:
       removeFriend: Weet je zeker dat je geen vrienden meer wilt zijn?
       unblock: Weet je zeker dat je deze gebruiker wilt deblokkeren?
@@ -28,3 +36,36 @@ singulars:
       inviteResponse:
         block: Weet je zeker dat je deze gebruiker wilt blokkeren? Geblokkeerde gebruikers
           kunnen je geen vriendschapsverzoeken meer sturen.
+      changeRole: Weet je zeker dat je <hl>{characterName}</hl> <hl>{partyRole}</hl>
+        wil maken?
+      leaveParty: Weet je zeker dat je de groep wilt verlaten?
+      leaveAndDestroyParty: Weet je zeker dat je de groep wilt verlaten en verwijderen?
+        Deze actie kan niet ongedaan gemaakt worden.
+  party:
+    manage: Beheren
+    role: Rol
+  createParty:
+    input:
+      partyName: Groepsnaam
+      catchphrase: Slogan
+      catchphraseHint: Slogan (optioneel)
+    rules:
+      mayContain: '<bp />Mag bevatten: {list}'
+      noTrailingSpaces: <bp />Mag niet met een spatie beginnen of eindigen
+plurals:
+  createParty:
+    rules:
+      minChar:
+        one: <bp />Ten minste {} karakter
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Ten minste {} karakters
+      maxChar:
+        zero: '-'
+        one: <bp />Maximaal {} karakter
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Maximaal {} karakters

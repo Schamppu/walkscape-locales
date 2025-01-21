@@ -361,6 +361,9 @@ singulars:
         hydriliumPickaxe:
           name: Hydriliumspitzhacke
           desc: Eine Spitzhacke aus dem seltenen Unterwassermaterial Hydrilium.
+        hydriliumMagnet:
+          name: Hydrilium Magnet
+          desc: Ein mit Hydrilium versetzter Magnet eines Minenarbeiters.
       woodcutting:
         basicHatchet:
           desc: Das einfache Beil, ein bescheidenes Werkzeug einfacher Holzfäller.
@@ -391,6 +394,9 @@ singulars:
         hydriliumHatchet:
           name: Hydriliumbeil
           desc: Ein Beil aus dem seltenen Material namens Hydrilium.
+        hydriliumLogSplitter:
+          name: Hydrilium Spaltaxt
+          desc: Eine mit Hydrilium verstärkte Spaltaxt.
       miscellaneous:
         bagOfRocks:
           name: Tasche mit Steinen
@@ -474,6 +480,65 @@ singulars:
           name: Parkour-Handschuhe
           desc: Diese Handschuhe verbessern den Halt um 800%. Das steht zumindest
             auf der Verpackung.
+        runningShirt:
+          desc: Die richtige Kleidung ist auf langen läufen entscheidend. Ein Shirt
+            wie dieses ist unverzichtbar.
+          name: Laufshirt
+        oakSkis:
+          desc: Schwere Ski weshalb sie schnell aber schwer zu steuern sind. Dank
+            ihrer Stabilität werden sie aber nicht so schnell brechen wenn du stürzt.
+          name: Eichen Ski
+        flowyTrousers:
+          name: Weite Hosen
+          desc: Weit wo sie es sein müssen und eng wo es eng sein soll. Diese Hose
+            eignet sich perfekt für gefährliche Manöver zwischen Straßenmobiliar.
+        simpleTorch:
+          name: Einfache Fackel
+          desc: Mit einem Holzstock, Stoff und einer entflammbaren Substanz hast du
+            ein tragbares Licht. Es könnte nicht einfacher sein.
+        simpleRope:
+          name: Einfaches Seil
+          desc: Ein Seil hat viele Einsatzmöglichkeiten. Zum Beispiel Bergsteigen.
+        clayFrisbee:
+          name: Ton Frisbee
+          desc: Er ist relativ schwer und zerbrechlich. Hoffentlich sind keine Tontauben-Schützen
+            in der Nähe!
+        goldenFrisbee:
+          name: Goldener Frisbee
+          desc: Da er nur vergoldet ist, ist er relativ leicht und trotzdem langlebig.
+            Man würde sich erwarten, dass er im Flug einen Regenbogen hinter sich
+            herzieht, aber leider nein.
+        birchSkis:
+          name: Birken Ski
+          desc: Ein paar anfänger Ski. Schwer zu kontrollieren und nicht wirklich
+            schnell. Sie bringen dich einen verschneiten Abhang aber schneller hinunter
+            als wenn du gehst.
+        pineSkis:
+          name: Kiefer Ski
+          desc: Stabile und leichte Ski. Aus dem Holz der Bäume gefertigt denen du
+            ausweichen willst.
+        walkingStick:
+          name: Gehstock
+          desc: Ein stabiler Holzstock mit einem bequemen Metallgriff der dich auf
+            langen Spaziergängen unterstützt.
+        runningShorts:
+          name: Laufhose
+          desc: Sie sind bequem und einfach zu tragen. Die blaue Farbe macht dich
+            auch leichter sichtbar.
+        waterBottle:
+          name: Wasserflasche
+          desc: Eine Glasflasche, gefüllt mit perfekt klarem, frischem Süßwasser.
+            Bleib hydriert!
+        mapOfJarvonia:
+          name: Karte von Jarvonien
+          desc: Die Karte zeigt die Ländereien und Städte des nördlichen Kontinents.
+        mapOfGDTE:
+          name: Karte von GDTE
+        toughRope:
+          name: Stabiles Seil
+          desc: Mit diesem stabilen Seil kann man selbst die höchsten Berge erklimmen.
+        grapplingHook:
+          name: Enterhaken
       carpentry:
         handsaw:
           desc: Diese Säge verkörpert die Harmonie zwischen Handwerker und Natur und
@@ -612,7 +677,7 @@ singulars:
           name: Watenschuhe
           desc: Diese leichten Schuhe sind eine gute Wahl für Angelabenteuer.
         squishyFlipFlops:
-          name: Matschige Flip Flops
+          name: Weiche Flip Flops
           desc: Die weiche Stoffschicht ist wie ein Schild zwischen deinen Füßen und
             dem glühenden Sand, selbst an den heißesten Stränden von Wrentmark.
         bugBait:
@@ -633,6 +698,7 @@ singulars:
         shinySpinner:
           desc: Wenn er nicht zum Fische fangen benutz wird, kann man ihn als Fidget-Spinner
             verwenden.
+          name: Glänzender Spinner
         eyePatch:
           name: Augenklappe
           desc: Offenbar ist es leichter, mit nur einem offenen Auge zu fischen.
@@ -810,6 +876,7 @@ singulars:
         wolfJawTongs:
           desc: Damit kannst du glühend heißes Metall handhaben. Es wurden keine Wölfe
             bei der Herstellung dieses Werkzeugs verletzt.
+          name: Wolfsmaulzange
         smithsPants:
           name: Schmiedehosen
           desc: Auch wenn sie sehr heiß sind, schützen sie deine Beine vor Verbrennungen,
@@ -1061,6 +1128,10 @@ singulars:
         name: Stern-stein-amulett
         desc: Amulett, das entweder ein sternförmiger Stein oder ein steinförmiger
           Stern ist.
+      finePearlRing:
+        name: Glänzender Perlenring
+        desc: Eine Perle wie diese wird normalerweise für Ohrringe verwendet aber
+          eignet sich auch für einen großartigen Ring.
   materials:
     carpentry:
       birchPlank:
@@ -1384,9 +1455,9 @@ singulars:
           einen solchen Kopf schonmal an der Wand im Frosthaken Kaufhaus gesehen.
       rawAnglerfish:
         name: Roher Seeteufel
-        desc: Dieser seltsame Fisch hat einen riesigen Mund mit langen dolchähnlichen
-          Zähnen. Seine Augen sehen blind sein. Ein heller Fleck wächst auf seiner
-          Stirn.
+        desc: Dieser seltsame Fisch hat einen riesigen Mund mit langen dolchartigen
+          Zähnen. Es wirkt als wären seine Augen blind. Ein heller Blob wächst aus
+          seiner Stirn.
     smithing:
       bronzeBar:
         desc: Der Bronzebarren, ein Relikt aus den Schmieden der Zwerge, strahlt rustikalen

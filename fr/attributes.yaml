@@ -52,7 +52,7 @@ singulars:
         text: Global <stat s="workEfficiency"/> si tu portes au moins <supp k="quantity"/>
           <supp k="keyword"/> objets.
       whileRealm:
-        text: <stat s="workEfficiency"/> lorsque présent en <supp k="realm"/>
+        text: <stat s="workEfficiency"/> en se trouvant en <supp k="realm"/>
       whileMainSkillAndLocationKeyword:
         text: <stat s="workEfficiency"/> lorsque <supp k="skill"/> à l'emplacement
           <supp k="keyword"/> .
@@ -67,12 +67,20 @@ singulars:
         text: <stat s="workEfficiency"/> en utilisant <supp k="skill"/> en<supp k="realm"/>
       whileMainSkillAndRealm:
         text: <stat s="workEfficiency"/> lorsque <supp k="skill"/> en <supp k="realm"/>.
+      whileHistoryData:
+        text: Global <stat s="workEfficiency"/> lorsque <supp k="historyData"/>.
     fineMaterialFind:
       global:
         text: Global <stat s="fineMaterialFind"/>
       whileMainSkill:
-        text: <stat s="fineMaterialFind"/> lorsque <supp k="skill"/>
+        text: <stat s="fineMaterialFind"/> en pratiquant <supp k="skill"/>
       whenAchievementPoints:
         text: Global <stat s="fineMaterialFind"/> lorsque <supp k="achievementPoints"/>
       whileMainSkillAndRealm:
-        text: <stat s="fineMaterialFind"/> lors de <supp k="skill"/> en <supp k="realm"/>.
+        text: <stat s="fineMaterialFind"/> en pratiquant <supp k="skill"/> en <supp
+          k="realm"/>.
+      whileRealm:
+        text: <stat s="fineMaterialFind"/>en se trouvant en <supp k="realm"/>
+      whenKeywordSetBonus:
+        text: Global <stat s="fineMaterialFind"/> si équipé d'au moins<supp k="quantity"/>
+          <supp k="keyword"/> objets.

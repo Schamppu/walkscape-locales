@@ -218,6 +218,15 @@ singulars:
       rememberSwipe: Remember that you can swipe back to change chosen options at any time during character creation.
   settings:
     categories:
+      dataSource:
+        title: Data Source
+        thisPhone: This phone
+        otherSource: Other source
+        requiresPermissionIos: If the dropdown below doesn't show any external devices, make sure you have granted the app permission to use step data from Apple Health in Settings > Privacy & Security > Health > (under Apps) WalkScape and that Apple Health has registered steps on those devices in the past 7 days.
+        lastSync: 'Last sync: {timestamp}'
+        changeWarning:
+          title: Change data source?
+          description: Please note that this may lead to a loss of steps around the time of change.
       accessibility:
         title: Accessibility
         leftHandedMode: Left handed mode
