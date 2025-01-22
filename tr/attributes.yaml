@@ -57,36 +57,39 @@ singulars:
     workEfficiency:
       global:
         text: Genel <stat s="workEfficiency"/>
-        desc: <PLACEHOLDER>
-        name: <PLACEHOLDER>
+        desc: ''
+        name: ''
       whileMainSkill:
         text: <supp k="skill"/> için <stat s="workEfficiency"/>
-        name: <PLACEHOLDER>
-        desc: <PLACEHOLDER>
+        name: ''
+        desc: ''
       whileTraveling:
         text: Seyahat ederken <stat s="workEfficiency"/>
-        name: <PLACEHOLDER>
-        desc: <PLACEHOLDER>
+        name: ''
+        desc: ''
       whileRealmAndTraveling:
-        name: <PLACEHOLDER>
-        text: <supp k="realm"/> içerisinde gezerken <stat s="workEfficiency"/>
-        desc: <PLACEHOLDER>
+        name: ''
+        text: <supp k="realm"/> konumunda seyahat ederken <stat s="workEfficiency"/>
+        desc: ''
       whileRealm:
-        name: <PLACEHOLDER>
-        desc: <PLACEHOLDER>
-        text: <supp k="realm"/> içerisindeyken, küresel <stat s="workEfficiency"/>
+        name: ''
+        desc: ''
+        text: <supp k="realm"/> konumunda genel <stat s="workEfficiency"/>
       whileRealmAndMainSkill:
-        name: <PLACEHOLDER>
-        desc: <PLACEHOLDER>
-        text: <supp k="realm"/> içerisinde <supp k="skill"/> iken <stat s="workEfficiency"/>
+        name: ''
+        desc: ''
+        text: <supp k="realm"/> konumunda <supp k="skill"/> için <stat s="workEfficiency"/>
       whenKeywordSetBonus:
-        name: <PLACEHOLDER>
-        desc: <PLACEHOLDER>
-        text: En az <supp k="quantity"/><supp k="keyword"/> eşya giyerken küresel
+        name: ''
+        desc: ''
+        text: En az <supp k="quantity"/><supp k="keyword"/> eşya kuşanmışken genel
           <stat s="workEfficiency"/>.
       whileMainSkillAndLocationKeyword:
-        name: <PLACEHOLDER>
-        desc: <PLACEHOLDER>
+        name: ''
+        desc: ''
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="workEfficiency"/>
+      whileMainSkillAndRealm:
+        text: <supp k="realm"/> konumunda <supp k="skill"/> için <stat s="workEfficiency"/>
   special:
     findCollectibles:
       whenKeywordSetBonus:
