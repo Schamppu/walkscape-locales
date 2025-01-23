@@ -218,6 +218,15 @@ singulars:
       rememberSwipe: Remember that you can swipe back to change chosen options at any time during character creation.
   settings:
     categories:
+      dataSource:
+        title: Data Source
+        thisPhone: This phone
+        otherSource: Other source
+        requiresPermissionIos: If the dropdown below doesn't show any external devices, make sure you have granted the app permission to use step data from Apple Health in Settings > Privacy & Security > Health > (under Apps) WalkScape and that Apple Health has registered steps on those devices in the past 7 days.
+        lastSync: 'Last sync: {timestamp}'
+        changeWarning:
+          title: Change data source?
+          description: Please note that this may lead to a loss of steps around the time of change.
       accessibility:
         title: Accessibility
         leftHandedMode: Left handed mode
@@ -231,6 +240,7 @@ singulars:
       gameplay:
         title: Gameplay
         stopWhenOverEncumberedDefault: Stop when overencumbered by default
+        showFpsCounter: Show FPS counter
       closedBeta:
         title: Closed Beta
         useThisToClear: Use this if you want to reset you steps graph. Useful if you've gained steps from bugs and want a reset to the graph.
@@ -245,6 +255,35 @@ singulars:
     phrases:
       settings: Settings
       exitToCharacterSelection: Exit to character selection
+  gearSets:
+    phrases:
+      gearSets: Gear sets
+      copyCurrentlyEquippedGear: Copy currently equipped gear
+      forActivities: 'For activities: '
+      noActivitiesSelected: No activities selected
+      optionsAndFilters: Options & filters
+      sortBy: 'Sort by: '
+      toolSlot: Tool slot
+      default: Default
+      level: 'Lvl. '
+      showAttributes: Show attributes
+      gear: Gear
+      tools: Tools
+      name: Name
+      unequipGear: Unequip gear
+      unequipTools: Unequip tools
+      noItemSelected: No item selected
+      newSetDefaultName: My New Gear Set
+      importedGearSetDefaultName: Imported Gear Set
+    errors:
+      keywordError: 'Gear set already has: <object id="{keyword}" />'
+    info:
+      gearSetsDescription: Gear sets help you to quickly switch between different gear.
+      gearSetManageDesc: 'Choose a gear set you want to equip from below. To create, import or edit your gear sets, you can press <c i=0>Manage</c>.'
+      gearSetsListDesc: 'You can manage your gear sets here. If you want to <c i=0>create a new one</c>, click the button below. You can also <c i=1>copy your currently equipped gear</c> when creating a new gear set.'
+      noGearSetsManage: "You haven't created any gear sets yet. Create your first one by pressing the <c i=0>Create new</c> button below."
+      noGearSetsList: "You don't have any gear sets yet. Choose <c i=0>Manage</c> to create or import new gear sets."
+      youDontHaveAnyItems: "No items. You either don't know or have any items of this type, or your filters and search didn't return anything that fits."
   location:
     phrases:
       activities: Activities
@@ -261,8 +300,9 @@ singulars:
       randomize: Randomize
       showHat: Showing headwear
       hideHat: Hiding headwear
-      enableFaceAccessorie: Enable face accessorie
-      enableBackAccessorie: Enable back accessorie
+      enableFaceAccessory: Enable face accessory
+      enableBackAccessory: Enable back accessory
+      enableEyeAccessory: Enable eye accessory
       enableFacepaint: Enable facepaint
       enableDynamicBackground: Enable dynamic background
       choose: Choose
@@ -294,6 +334,7 @@ singulars:
       youreHere: You're currently in this location.
       currentLocation: Current location
       noActivities: There are no activities available in this location.
+      changeRouteWarning: Changing your route will cancel your current travel and return you to the previous location. Are you sure?
   stats:
     phrases:
       stats: Stats
@@ -516,10 +557,11 @@ maps:
         'hair': Hairstyle
         'outfit': Outfit
         'eyes': Eyes
-        'faceAccessorie': Face accessories
+        'faceAccessory': Face accessories
         'headwear': Headwear
         'facepaint': Facepaint
-        'backAccessorie': Back accessories
+        'backAccessory': Back accessories
+        'eyeAccessory': Eye accessories
         'background': Background
       raceTypes:
         'none': None
