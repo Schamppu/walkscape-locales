@@ -2,45 +2,189 @@ singulars:
   skilling:
     chestFind:
       global:
-        desc: Un sorcier nommé Tarhiel prétendait qu'il était possible de marcher
-          sur de la poussière d'étoile avec ces chaussures, l'on raconte qu'il chute
-          toujours aujourd'hui.
-        name: Un sorcier nommé Tarhiel prétendait qu'il était possible de marcher
-          sur de la poussière d'étoile avec ces chaussures, l'on raconte qu'il chute
-          toujours aujourd'hui.
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: Global <stat s="chestFind"/>
       whileMainSkill:
-        desc: Un sorcier nommé Tarhiel prétendait qu'il était possible de marcher
-          sur de la poussière d'étoile avec ces chaussures, l'on raconte qu'il chute
-          toujours aujourd'hui.
-        name: <PLACEHOLDER>Richesses inattendues
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: <stat s="chestFind"/> en pratiquant la compétence <supp k="skill"/>
       whileTraveling:
         desc: <PLACEHOLDER>Lors de votre voyage vers votre prochaine destination,
           vous tombez sur un coffre ! Avec précaution, vous le ramassez et le placez
           dans votre sac.
-        name: <PLACEHOLDER>Fortes constatations
+        name: <PLACEHOLDER>
         text: <stat s="chestFind"/> en voyageant
+      whenKeywordSetBonus:
+        text: Global <stat s="chestFind"/> en portant au moins <supp k="quantity"/>
+          objets d'<supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="chestFind"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whenAchievementPoints:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="chestFind"/> en ayant <supp k="achievementPoints"/>
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="chestFind"/> étant dans <supp k="keyword"/>.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> en se trouvant en <supp k="realm"/>
     craftingOutcome:
       global:
         desc: <PLACEHOLDER>Votre compétence et votre expertise en matière d'artisanat
           ne vous ont pas induit en erreur, le travail que vous avez réalisé tient
           la route.
+        name: <PLACEHOLDER>
+        text: Global <stat s="craftingOutcome"/>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> en pratiquant la compétence <supp k="skill"/>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="craftingOutcome"/> en portant au moins <supp k="quantity"/>
+          objets d'<supp k="keyword"/>.
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> en se trouvant en <supp k="realm"/>
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="craftingOutcome"/> dans <supp k="keyword"/>.
     doubleAction:
       whileTraveling:
         text: <stat s="doubleAction"/> en voyageant
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="doubleAction"/>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> en pratiquant la compétence <supp k="skill"/>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="doubleAction"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileTravelingAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> en voyageant en <supp k="realm"/>
+      whileLocationKeyword:
+        desc: <PLACEHOLDER>
+        text: Global <stat s="doubleAction"/> dans <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="doubleAction"/> en portant au moins <supp k="quantity"/>
+          objets d'<supp k="keyword"/>.
     experience:
       whileTraveling:
         text: <stat s="bonusExperience"/> en voyageant
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        text: Global <stat s="bonusExperience"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      globalSkillXp:
+        text: Global <stat s="bonusExperience"/> à la compétence <supp k="skill"/>
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> en pratiquant la compétence <supp k="skill"/>
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="bonusExperience"/> dans <supp k="keyword"/>.
     noMaterialsConsumed:
       whileTraveling:
         text: <stat s="noMaterialsConsumed"/> en voyageant
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="noMaterialsConsumed"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="noMaterialsConsumed"/>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> en pratiquant la compétence <supp k="skill"/>
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="noMaterialsConsumed"/> dans <supp k="keyword"/>.
     skillLevel:
       global:
         text: Niveau <stat s="skillLevel"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileTraveling:
         text: <stat s="skillLevel"/> niveau en voyageant
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="skillLevel"/> niveau à la compétence <supp k="skill"/>
     stepsRequired:
       whileTraveling:
         text: <stat s="stepsRequired"/> en voyageant
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkill:
+        text: <stat s="stepsRequired"/> en pratiquant la compétence <supp k="skill"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: Global <stat s="stepsRequired"/>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="stepsRequired"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="stepsRequired"/> en portant au moins <supp k="quantity"/>
+          objets d'<supp k="keyword"/>.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="stepsRequired"/> dans <supp k="keyword"/>.
     workEfficiency:
       whileTraveling:
         text: <stat s="workEfficiency"/> en voyageant
@@ -51,7 +195,7 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkill:
-        text: <stat s="workEfficiency"/> lorsque <supp k="skill"/>
+        text: <stat s="workEfficiency"/> en pratiquant la compétence <supp k="skill"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whenKeywordSetBonus:
@@ -64,13 +208,12 @@ singulars:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
-        text: <stat s="workEfficiency"/> lorsque <supp k="skill"/> à l'emplacement
-          <supp k="keyword"/> .
+        text: <stat s="workEfficiency"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/> .
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileLocationKeyword:
-        text: Global <stat s="workEfficiency"/> lorsque présent à <supp k="keyword"/>
-          .
+        text: Global <stat s="workEfficiency"/> dans <supp k="keyword"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       global:
@@ -78,11 +221,13 @@ singulars:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
       whileRealmAndMainSkill:
-        text: <stat s="workEfficiency"/> en utilisant <supp k="skill"/> en<supp k="realm"/>
+        text: <stat s="workEfficiency"/> en pratiquant la compétence <supp k="skill"/>
+          en <supp k="realm"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkillAndRealm:
-        text: <stat s="workEfficiency"/> lorsque <supp k="skill"/> en <supp k="realm"/>.
+        text: <stat s="workEfficiency"/> en pratiquant la compétence <supp k="skill"/>
+          en <supp k="realm"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileHistoryData:
@@ -95,16 +240,18 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkill:
-        text: <stat s="fineMaterialFind"/> en pratiquant <supp k="skill"/>
+        text: <stat s="fineMaterialFind"/> en pratiquant la compétence <supp k="skill"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whenAchievementPoints:
-        text: Global <stat s="fineMaterialFind"/> lorsque <supp k="achievementPoints"/>
+        text: Global <stat s="fineMaterialFind"/> en ayant <supp k="achievementPoints"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkillAndRealm:
-        text: <stat s="fineMaterialFind"/> en pratiquant <supp k="skill"/> en <supp
-          k="realm"/>.
+        text: <stat s="fineMaterialFind"/> en pratiquant la compétence <supp k="skill"/>
+          en <supp k="realm"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileRealm:
         text: <stat s="fineMaterialFind"/>en se trouvant en <supp k="realm"/>
         name: <PLACEHOLDER>
@@ -114,3 +261,110 @@ singulars:
           <supp k="keyword"/> objets.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="fineMaterialFind"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+      whileLocationKeyword:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: Global <stat s="fineMaterialFind"/> dans <supp k="keyword"/>.
+    doubleRewards:
+      whenAchievementPoints:
+        text: Global <stat s="doubleRewards"/> en ayant <supp k="achievementPoints"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkill:
+        text: <stat s="doubleRewards"/> en pratiquant la compétence <supp k="skill"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="doubleRewards"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="doubleRewards"/> en portant au moins <supp k="quantity"/>
+          objets d'<supp k="keyword"/>.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="doubleRewards"/> dans <supp k="keyword"/>.
+      whileActivity:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="doubleRewards"/>
+    rollSpecialTable:
+      whileMainSkill:
+        text: <stat s="rollSpecialTable"/> en pratiquant la compétence <supp k="skill"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+    travelingDistance:
+      whileTraveling:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="travelingDistance"/>
+    inventorySpace:
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="inventorySpace"/>
+  special:
+    findCollectibles:
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="findCollectibles"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whenAchievementPoints:
+        text: Global <stat s="findCollectibles"/> en ayant <supp k="achievementPoints"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="findCollectibles"/>
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> en pratiquant la compétence <supp k="skill"/>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="findCollectibles"/> en portant au moins <supp k="quantity"/>
+          objets d'<supp k="keyword"/>.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="findCollectibles"/> dans <supp k="keyword"/>.
+    findGems:
+      whileMining:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findGems"/> en pratiquant la compétence <supp k="skill"/>
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findGems"/> en pratiquant la compétence <supp k="skill"/> dans
+          <supp k="keyword"/>.
+    findBirdNests:
+      whileWoodcutting:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findBirdNests"/> en pratiquant la compétence <supp k="skill"/>
+      whileMainSkillAndLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findBirdNests"/> en pratiquant la compétence <supp k="skill"/>
+          dans <supp k="keyword"/>.
+  custom:
+    gainAdventurersGuildToken:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Chance de trouver <hl>1</hl> Jeton de la Guilde des Aventuriers
