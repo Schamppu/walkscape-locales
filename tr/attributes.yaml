@@ -2,23 +2,40 @@ singulars:
   skilling:
     chestFind:
       global:
-        desc: <PLACEHOLDER> Becerilerin üzerinde çalışırken, terk edilmiş bir sandık
-          bulursun. Durduğu yerden çabucak alırsın. Ağzına kadar eşya dolu, neredeyse
-          dökülecek. Çalışmana geri dönmeden önce, alelacele çantana koyarsın.
-        name: <PLACEHOLDER>Kısmetli Mükafat
+        desc: ''
+        name: ''
         text: Genel <stat s="chestFind"/>
       whileMainSkill:
-        desc: <PLACEHOLDER>Çalışırken bir sandık bulursun! Önceki işine geri dönmeden
-          önce, sandığı heyecanla alıp çantana koyarsın.
-        name: <PLACEHOLDER>Beklenmedik Servet
+        desc: ''
+        name: ''
         text: <supp k="skill"/> için <stat s="chestFind"/>
       whileTraveling:
         text: Seyahat ederken <stat s="chestFind"/>
+      whenAchievementPoints:
+        text: <supp k="achievementPoints"/> iken genel <stat s="chestFind"/>
+      whenKeywordSetBonus:
+        text: En az <supp k="quantity"/> <supp k="keyword"/> kuşanınca genel <stat
+          s="chestFind"/>
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="chestFind"/>
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="chestFind"/>
+      whileRealm:
+        text: <supp k="realm"/> diyarında <stat s="chestFind"/>
     craftingOutcome:
       global:
         text: Genel <stat s="craftingOutcome"/>
       whileMainSkill:
         text: <supp k="skill"/> için <stat s="craftingOutcome"/>
+      whenKeywordSetBonus:
+        text: En az <supp k="quantity"/> <supp k="keyword"/> kuşanmışken genel <stat
+          s="craftingOutcome"/>
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="craftingOutcome"/>
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="craftingOutcome"/>
+      whileRealm:
+        text: <supp k="realm"/> diyarında <stat s="craftingOutcome"/>
     doubleAction:
       global:
         text: Genel <stat s="doubleAction"/>
@@ -26,11 +43,31 @@ singulars:
         text: <supp k="skill"/> için <stat s="doubleAction"/>
       whileTraveling:
         text: 'Seyahat ederken <stat s="doubleAction"/> '
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="doubleAction"/>
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="doubleAction"/>
+      whenKeywordSetBonus:
+        text: En az <supp k="quantity"/> <supp k="keyword"/> kuşanınca genel <stat
+          s="doubleAction"/>
+      whileTravelingAndRealm:
+        text: <supp k="realm"/> diyarında seyahat ederken <stat s="doubleAction"/>
     doubleRewards:
       global:
         text: Genel <stat s="doubleRewards"/>
       whileMainSkill:
         text: <supp k="skill"/> için <stat s="doubleRewards"/>
+      whileActivity:
+        text: <supp k="activityType"/> yaparken genel <stat s="doubleRewards"/>
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="doubleRewards"/>
+      whenAchievementPoints:
+        text: <supp k="achievementPoints"/> iken genel <stat s="doubleRewards"/>
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="doubleRewards"/>
+      whenKeywordSetBonus:
+        text: En az <supp k="quantity"/> <supp k="keyword"/> kuşanınca genel <stat
+          s="doubleRewards"/>
     experience:
       global:
         text: Genel <stat s="bonusExperience"/>
@@ -38,14 +75,41 @@ singulars:
         text: <supp k="skill"/> için <stat s="bonusExperience"/>
       whileTraveling:
         text: Seyahat ederken <stat s="bonusExperience"/>
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="bonusExperience"/>
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="bonusExperience"/>
+      globalSkillXp:
+        text: <supp k="skill"/> için genel <stat s="bonusExperience"/>
     fineMaterialFind:
       global:
         text: Genel <stat s="fineMaterialFind"/>
       whileMainSkill:
         text: <supp k="skill"/> için <stat s="fineMaterialFind"/>
+      whenKeywordSetBonus:
+        text: En az <supp k="quantity"/><supp k="keyword"/> kuşanmışken genel <stat
+          s="fineMaterialFind"/>
+      whileRealm:
+        text: <supp k="realm"/> diyarında <stat s="fineMaterialFind"/>
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="fineMaterialFind"/>
+      whileMainSkillAndRealm:
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="fineMaterialFind"/>
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="fineMaterialFind"/>
+      whenAchievementPoints:
+        text: <supp k="achievementPoints"/> iken genel <stat s="fineMaterialFind"/>
     noMaterialsConsumed:
       whileMainSkill:
         text: <supp k="skill"/> için <stat s="noMaterialsConsumed"/>
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="noMaterialsConsumed"/>
+      global:
+        text: Genel <stat s="noMaterialsConsumed"/>
+      whileTraveling:
+        text: Seyahat ederken <stat s="noMaterialsConsumed"/>
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="noMaterialsConsumed"/>
     rollSpecialTable:
       whileMainSkill:
         text: <supp k="skill"/> için <stat s="rollSpecialTable"/>
@@ -54,6 +118,15 @@ singulars:
         text: Genel <stat s="stepsRequired"/>
       whileMainSkill:
         text: <supp k="skill"/> için <stat s="stepsRequired"/>
+      whileTraveling:
+        text: Seyahat ederken <stat s="stepsRequired"/>
+      whenKeywordSetBonus:
+        text: En az <supp k="quantity"/> <supp k="keyword"/> kuşanmışken genel <stat
+          s="stepsRequired"/>
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="stepsRequired"/>
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="stepsRequired"/>
     workEfficiency:
       global:
         text: Genel <stat s="workEfficiency"/>
@@ -69,16 +142,16 @@ singulars:
         desc: ''
       whileRealmAndTraveling:
         name: ''
-        text: <supp k="realm"/> konumunda seyahat ederken <stat s="workEfficiency"/>
+        text: <supp k="realm"/> diyarında seyahat ederken <stat s="workEfficiency"/>
         desc: ''
       whileRealm:
         name: ''
         desc: ''
-        text: <supp k="realm"/> konumunda genel <stat s="workEfficiency"/>
+        text: <supp k="realm"/> diyarında genel <stat s="workEfficiency"/>
       whileRealmAndMainSkill:
         name: ''
         desc: ''
-        text: <supp k="realm"/> konumunda <supp k="skill"/> için <stat s="workEfficiency"/>
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="workEfficiency"/>
       whenKeywordSetBonus:
         name: ''
         desc: ''
@@ -89,20 +162,38 @@ singulars:
         desc: ''
         text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="workEfficiency"/>
       whileMainSkillAndRealm:
-        text: <supp k="realm"/> konumunda <supp k="skill"/> için <stat s="workEfficiency"/>
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="workEfficiency"/>
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat s="workEfficiency"/>
+      whileHistoryData:
+        text: <supp k="historyData"/> için genel <stat s="workEfficiency"/>
+    travelingDistance:
+      whileTraveling:
+        text: <stat s="travelingDistance"/>
+    inventorySpace:
+      global:
+        text: <stat s="inventorySpace"/>
+    skillLevel:
+      global:
+        text: <stat s="skillLevel"/> seviyesi
+      whileMainSkill:
+        text: <supp k="skill"/> için <stat s="skillLevel"/> seviyesi
+      whileTraveling:
+        text: Seyahat ederken <stat s="skillLevel"/> seviyesi
   special:
     findCollectibles:
       whenKeywordSetBonus:
-        text: En az <supp k="quantity"/> <supp k="keyword"/> eşya kuşanılmışken genel
-          <stat s="findCollectibles"> koleksiyonluk bulma şansı </stat>.
+        text: ''
       whileMainSkillAndLocationKeyword:
-        text: <supp k="keyword"/> konumunda <supp k="skill"/> sırasında <stat s="findCollectibles"/>.
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat s="findCollectibles"/>.
       whileLocationKeyword:
         text: <supp k="keyword"/> konumunda genel <stat s="findCollectibles"/>.
       global:
-        text: Genel <stat s="findCollectibles"> koleksiyonluk bulma şansı </stat>
+        text: ''
       whileMainSkill:
-        text: <supp k="skill"/> sırasında <stat s="findCollectibles"/>
+        text: <supp k="skill"/> için <stat s="findCollectibles"/>
       whenAchievementPoints:
-        text: <supp k="achievementPoints"/> olunca genel <stat s="findCollectibles">
-          koleksiyonluk bulma şansı </stat>
+        text: ''
+  custom:
+    gainAdventurersGuildToken:
+      text: <hl>1</hl> Macera Loncası jetonu bulma şansı
