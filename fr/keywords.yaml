@@ -15,6 +15,31 @@ singulars:
       requirement: Nécessite une plante.
       requirementLevel: Nécessite une plante qui a au moins <keywordRequirements />
         dans ses prérequis.
+    gem:
+      requirementLevel: Requiert une gemme ayant au moins <keywordRequirements />
+        de pré-requis.
+      name: Gemme
+      requirement: Requiert une gemme.
+    bar:
+      requirementLevel: Requiert un lingot ayant au moins <keywordRequirements />
+        de pré-requis.
+      name: Lingot
+      requirement: Requiert un lingot.
+    ore:
+      requirement: Requiert un minerai.
+      name: Minerai
+      requirementLevel: Requiert un minerai ayant au moins <keywordRequirements />
+        de pré-requis.
+    plank:
+      name: Planche
+      requirement: Requiert une planche.
+      requirementLevel: Requiert une planche ayant au moins <keywordRequirements />
+        de pré-requis.
+    mushroom:
+      name: Champignon
+      requirement: Requiert un champignon.
+      requirementLevel: Requiert un champignon ayant au moins <keywordRequirements
+        /> de pré-requis.
   tools:
     carpentryTool:
       name: Outil de construction
@@ -61,6 +86,116 @@ singulars:
         /> de pré-requis minimal.
       name: Outil de cueillette
       requirement: Requiert un outil de cueillette.
+    magnifyingLense:
+      requirementLevel: Requiert une loupe ayant au moins <keywordRequirements />
+        de pré-requis.
+      name: Loupe
+      requirement: Requiert d'équiper une loupe.
+    logSplitter:
+      requirementlevel: Requiert un fendeur de bûches ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un fendeur de bûches.
+      name: Fendeur de bûches
+    ruler:
+      name: Règle
+      requirementLevel: Requiert une règle ayant au moins <keywordRequirements />
+        de pré-requis.
+      requirement: Requiert d'équiper une règle.
+    sickle:
+      name: Faucille
+      requirementLevel: Requiert une faucille ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper une faucille.
+    goldPan:
+      name: Pan d'orpaillage
+      requirementLevel: Requiert un pan d'orpaillage ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un pan d'orpaillage.
+    magnetic:
+      name: Magnétique
+      requirementLevel: Requiert un objet magnétique ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un objet magnétique.
+    cookingPan:
+      name: Poêle de cuisine
+      requirementLevel: Requiert une poêle de cuisine ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper une poêle de cuisine.
+    pickaxe:
+      name: Pioche
+      requirementLevel: Requiert une pioche ayant au moins <keywordRequirements />
+        de pré-requis.
+      requirement: Requiert d'équiper une pioche.
+    cookingTool:
+      name: Ustensile de cuisine
+      requirementLevel: Requiert un ustensile de cuisine ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un ustensile de cuisine.
+    craftingTool:
+      name: Outil d'artisanat
+      requirementLevel: Requiert un outil d'artisanat ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un outil d'artisanat.
+    fishingLure:
+      name: Leurre de pêche
+      requirementLevel: Requiert un leurre de pêche ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un leurre de pêche.
+    cookingKnife:
+      name: Couteau de cuisine
+      requirementLevel: Requiert d'équiper un couteau de cuisine ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un couteau de cuisine.
+    cookingPot:
+      name: Marmite
+      requirementLevel: Requiert une marmite ayant au moins <keywordRequirements />
+        de pré-requis.
+      requirement: Requiert d'équiper une marmite.
+    cuttingBoard:
+      name: Planche à découper
+      requirementLevel: Requiert une planche à découper ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper une planche à découper.
+    cookingSpices:
+      name: Épices
+      requirement: Requiert d'équiper des épices.
+      requirementLevel: Requiert des épices ayant au moins <keywordRequirements />
+        de pré-requis.
+    chisel:
+      name: Ciseau à bois
+      requirementLevel: Requiert un ciseau à bois ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un ciseau à bois.
+    saw:
+      name: Scie
+      requirementLevel: Requiert une scie ayant au moins <keywordRequirements /> de
+        pré-requis.
+      requirement: Requiert d'équiper une scie.
+    screwdriver:
+      name: Tournevis
+      requirementLevel: Requiert un tournevis ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un tournevis.
+    smithingHammer:
+      name: Marteau de forgeron
+      requirementLevel: Requiert un marteau de forgeron ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un marteau de forgeron.
+    localMap:
+      name: Carte régionale
+      requirementLevel: Requiert une carte régionale ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper une carte régionale.
+    knife:
+      name: Couteau
+      requirementLevel: Requiert un couteau ayant au moins <keywordRequirements />
+        de pré-requis.
+      requirement: Requiert d'équiper un couteau.
+    wrench:
+      name: Clé de serrage
+      requirementLevel: Requiert une clé de serrage ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper une clé de serrage.
   recipes:
     products:
       sandwich:
@@ -72,6 +207,8 @@ singulars:
     fishing:
       name: Pêche
       requirement: Nécessite une activité de pêche.
+      requirementLevel: Requiert une activité de pêche ayant au moins <keywordRequirements
+        /> de pré-requis.
     woodcuttingTrees:
       requirementLevel: Nécessite une activité de coupe d'arbres avec au moins <keywordRequirements
         /> dans ses critères.
@@ -79,10 +216,92 @@ singulars:
       requirement: Nécessite l'activité de coupe d'arbres.
     foragingPlants:
       requirement: Requiert l'activité récolte de plantes.
-      requirementLevel: Requiert une activité de récolte de plantes ayant <keywordRequirements
-        /> de pré-requis minimal.
+      requirementLevel: Requiert une activité de récolte de plantes ayant au moins
+        <keywordRequirements /> de pré-requis.
       name: Collecte de plantes
+    miningOres:
+      name: Extraction de minerais
+      requirementLevel: Requiert une activité d'extraction de minerais ayant au moins
+        <keywordRequirements /> de pré-requis.
+      requirement: Requiert une activité d'extraction de minerais.
   search:
     skills:
       foraging:
         name: Collecte
+  consumables:
+    food:
+      requirementLevel: Requiert de la nourriture ayant au moins <keywordRequirements
+        /> de pré-requis.
+      name: Nourriture
+      requirement: Requiert de la nourriture.
+    alcohol:
+      requirementLevel: Requiert un alcool ayant au moins <keywordRequirements />
+        de pré-requis.
+      name: Alcool
+      requirement: Requiert un alcool.
+    cookedFish:
+      name: Poisson cuit
+      requirement: Requiert un poisson cuit.
+      requirementLevel: Requiert un poisson cuit ayant au moins <keywordRequirements
+        /> de pré-requis.
+    fruit:
+      name: Fruit
+      requirement: Requiert un fruit.
+      requirementLevel: Requiert un fruit ayant au moins <keywordRequirements /> de
+        pré-requis.
+    beverage:
+      name: Boisson
+      requirement: Requiert une boisson.
+      requirementLevel: Requiert une boisson ayant au moins <keywordRequirements />
+        de pré-requis.
+    water:
+      name: Eau
+      requirement: Requiert de l'eau.
+      requirementLevel: Requiert de l'eau ayant au moins <keywordRequirements /> de
+        pré-requis.
+    memosphere:
+      name: Memosphere
+      requirement: Requiert une memosphere.
+      requirementLevel: Requiert une memosphere ayant au moins <keywordRequirements
+        /> de pré-requis.
+  gear:
+    skillingGear:
+      name: Équipement de compétences
+      requirementLevel: Requiert un équipement de compétences ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert le port d'équipements de compétences.
+    frisbee:
+      name: Frisbee
+      requirementLevel: Requiert un frisbee ayant au moins <keywordRequirements />
+        de pré-requis.
+      requirement: Requiert d'équiper un frisbee.
+    skis:
+      name: Skis
+      requirementLevel: Requiert des skis ayant au moins <keywordRequirements /> de
+        pré-requis.
+      requirement: Requiert d'équiper des skis.
+    lifeVest:
+      name: Gilet de sauvetage
+      requirementLevel: Requiert un gilet de sauvetage ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un gilet de sauvetage.
+    climbing:
+      name: Escalade
+      requirementLevel: Requiert un matériel d'escalade ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un matériel d'escalade.
+    bugCatchingNet:
+      name: Filet de capture
+      requirementLevel: Requiert un filet de capture ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper un filet de capture.
+    ring:
+      name: Anneau
+      requirementLevel: Requiert un anneau ayant au moins <keywordRequirements />
+        de pré-requis.
+      requirement: Requiert d'équiper un anneau.
+    socks:
+      name: Chaussettes
+      requirementLevel: Requiert des chaussettes ayant au moins <keywordRequirements
+        /> de pré-requis.
+      requirement: Requiert d'équiper des chaussettes.
