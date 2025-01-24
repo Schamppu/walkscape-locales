@@ -75,6 +75,9 @@ maps:
         'facepaint': Malowanie twarzy
         'backAccessorie': Akcesoria pleców
         'hair': Styl włosów
+        'faceAccessory': Akcesoria twarzy
+        'backAccessory': Akcesoria pleców
+        'eyeAccessory': Akcesoria oczu
       raceTypes:
         'human': Człowiek
         'none': Brak
@@ -408,6 +411,7 @@ singulars:
       gameplay:
         title: Rozgrywka
         stopWhenOverEncumberedDefault: Zawsze zatrzymaj przy przeciążeniu
+        showFpsCounter: Pokaż licznik FPS
       closedBeta:
         title: Zamknięta Beta
         useThisToClear: Użyj tego, jeżeli chcesz zresetować wykres kroków. Przydatne,
@@ -422,6 +426,21 @@ singulars:
         hideSteps: Ukryj Kroki
       language:
         title: Język
+      dataSource:
+        title: Źródło danych
+        otherSource: Inne źródło
+        requiresPermissionIos: Jeśli na poniższej liście rozwijanej nie widać żadnych
+          urządzeń zewnętrznych, upewnij się, że aplikacja otrzymała zezwolenie na
+          korzystanie z danych dotyczących kroków z aplikacji Apple Health w Ustawieniach
+          > Prywatność i bezpieczeństwo > Zdrowie > WalkScape (w obszarze Aplikacje)
+          oraz że aplikacja Apple Health zarejestrowała kroki na tych urządzeniach
+          w ciągu ostatnich 7 dni.
+        thisPhone: Ten telefon
+        changeWarning:
+          title: Zmienić źródło danych?
+          description: Należy pamiętać, że może to spowodować utratę kroków w momencie
+            zmiany.
+        lastSync: 'Ostatnia synchronizacja: {znacznik czasu}'
     phrases:
       settings: Ustawienia
       exitToCharacterSelection: Wyjście do wyboru postaci
@@ -460,6 +479,9 @@ singulars:
       enableFacepaint: Włącz farby na twarzy
       enableDynamicBackground: Włącz dynamiczne tło
       choose: Wybierz
+      enableFaceAccessory: Włącz akcesoria twarzy
+      enableBackAccessory: Włącz akcesoria pleców
+      enableEyeAccessory: Włącz akcesoria oczu
   worldMap:
     phrases:
       activities: Aktywności
@@ -478,6 +500,8 @@ singulars:
       afterExploring: Po eksploracji lokacji będziesz mieć opcję zobaczenia ciekawych
         miejsc w tej okolicy.
       noActivities: Nie ma dostępnych żadnych aktywności w tej lokacji.
+      changeRouteWarning: Zmiana trasy spowoduje anulowanie bieżącej podróży i powrót
+        do poprzedniej lokalizacji. Jesteś pewien?
   stats:
     phrases:
       stats: Statystyki
@@ -603,3 +627,39 @@ singulars:
       buying: Kupowanie
       selling: Sprzedawanie
       resetTrade: Resetowanie handlu
+  gearSets:
+    errors:
+      keywordError: 'Zestaw wyposażenia jest: <object id="{keyword}" />'
+    info:
+      noGearSetsList: Nie masz jeszcze żadnych zestawów wyposażenia. Wybierz <c i=0>Zarządzaj</c>,
+        aby utworzyć lub zaimportować nowe zestawy wyposażenia.
+      gearSetManageDesc: Wybierz zestaw wyposażenia, który chcesz założyć. Aby utworzyć,
+        zaimportować lub edytować swoje wyposażenie, możesz nacisnąć <c i=0>Zarządzaj</c>.
+      gearSetsDescription: Zestawy wyposażenia pomagają szybko przełączać się między
+        różnym wyposażeniem.
+      gearSetsListDesc: Tutaj możesz zarządzać swoim wyposażeniem. Jeśli chcesz <c
+        i=0>utworzyć nowy</c>, kliknij przycisk poniżej. Możesz również <c i=1>skopiować
+        aktualnie posiadane wyposażenie</c> podczas tworzenia nowego zestawu.
+      noGearSetsManage: Nie utworzyłeś jeszcze żadnego zestawu wyposażenia. Utwórz
+        swój pierwszy, naciskając przycisk <c i=0>Utwórz nowy</c> poniżej.
+      youDontHaveAnyItems: Brak elementów. Nie znasz lub nie masz żadnych elementów
+        tego typu, albo Twoje filtry i wyszukiwanie nie zwróciły niczego, co by pasowało.
+    phrases:
+      copyCurrentlyEquippedGear: Kopiowanie aktualnie posiadanego wyposażenia
+      unequipTools: Zdejmij narzędzia
+      gearSets: Zestaw wyposażenia
+      forActivities: 'Aktywności: '
+      noActivitiesSelected: Aktywność nie została wybrana
+      optionsAndFilters: Opcje i filtry
+      sortBy: 'Sortuj według: '
+      toolSlot: Slot na narzędzia
+      default: Domyślne
+      level: 'Poz. '
+      showAttributes: Pokaż atrybuty
+      gear: Wyposażenie
+      tools: Narzędzia
+      name: Nazwa
+      unequipGear: Zdejmij wyposażenie
+      noItemSelected: Brak wybranych przedmiotów
+      newSetDefaultName: Mój nowy zestaw wyposażenia
+      importedGearSetDefaultName: Zaimportowany zestaw wyposażenia
