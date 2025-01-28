@@ -48,6 +48,18 @@ singulars:
     saveUnsuccesfullLootTables:
       title: Save unsuccessful.
       text: Loot table contains row(s) that don't have an item associated with it.
+  info:
+    game:
+      importGearSetFailed:
+        title: Failed to import gear set
+        text: Error while importing gear set. Gear set data may be corrupted or invalid.
+      importGearSetTooManyTools:
+        title: Gearset has too many tools
+        text: The gear set had more tools than is allowed.
+      changingActivityFailed:
+        title: Failed to change activity
+        text: Could not change activity. You are either already doing it or it is not available.
+
   errors:
     characterValidation:
       nameContainsleadingTrailingSpaces: Leading or trailing spaces are not allowed.
@@ -61,6 +73,9 @@ singulars:
       title: Activity cancelled
       stepsAreInfinite: The current activity was canceled because you no longer meet the requirements to complete it.
     gameError:
+      loadingPlayerFailed:
+        title: Failed to load player
+        text: Invalid player data. Loading failed. Please contact the developers through Discord or email.
       stepLoadingFailed:
         title: Failed to load steps
         text: The game client failed to load the steps. Please report this to the developers on Discord with details of your error and device. You can also try opening the game again to see if the steps would load succesfully.
@@ -95,6 +110,9 @@ singulars:
       unknownError:
         title: Unknown error.
         text: Unknown error.
+      connectionError:
+        title: Connection error
+        text: There was an error connecting to the server. Please check your internet connection and try again.
       failureToUpdateContent:
         title: Failed to update content
         text: The game client failed to update the content. Please report this to the developers on Discord with details of your error and device. You can also try opening the game again to see if the content would download succesfully.
