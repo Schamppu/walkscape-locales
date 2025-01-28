@@ -59,7 +59,18 @@ singulars:
       changingActivityFailed:
         title: Failed to change activity
         text: Could not change activity. You are either already doing it or it is not available.
-
+      withdrawZero:
+        title: Withdraw failed
+        text: You can't withdraw zero or less items.
+      withdrawTooFew:
+        title: Withdraw failed
+        text: You don't have enough items to withdraw.
+      withdrawDidNotExist:
+        title: Withdraw failed
+        text: The item you tried to withdraw does not exist. Reopening the bank should fix this issue.
+      withdrawFailed:
+        title: Withdraw failed
+        text: Withdraw failed. Please try again.
   errors:
     characterValidation:
       nameContainsleadingTrailingSpaces: Leading or trailing spaces are not allowed.
