@@ -21,6 +21,11 @@ singulars:
           zwierząt. Rozmawiałeś nawet z miejscowymi. Wszystko jest w porządku. Idziesz
           więc popływać wśród fal.'
         name: Pływanie (adept)
+      treetopJumping:
+        desc: Będąc wysoko na drzewach, adrenalina przepływa przez ciebie, gdy skaczesz
+          z gałęzi na gałąź, mając nadzieję, że się nie złamią. Upadek poniżej wygląda
+          zniechęcająco.
+        name: Skoki w koronach drzew
     global:
       birdWatching:
         desc: Obserwowanie ptaków jest oknem na ich królestwo. Cierpliwie je badasz,
@@ -80,6 +85,10 @@ singulars:
       traveling:
         name: Podróżowanie
         desc: Podróżowanie do nowej lokacji
+      exploreArea:
+        desc: Tworzysz notatki na czystej kartce papieru podczas odkrywania okolicy.
+          Będą one przydatne podczas przyszłych eksploracji.
+        name: Odkrywanie obszaru
     jarvonia:
       mountainClimbingBeginner:
         desc: Przygotowujesz się do wspinaczki. Jest piękny, słoneczny i bezwietrzny
@@ -126,6 +135,10 @@ singulars:
           naczynia. Twój nadzorca ufa twoim umiejętnościom i rozsądkowi. Wiesz, kiedy
           działać skutecznie, a kiedy efektywnie. Twój zestaw narzędzi jest profesjonalny,
           tak jak ty.
+      underwaterAqueductConstruction:
+        desc: Wykopujesz i wzmacniasz naturalny rurociąg wodny w pobliżu obozowiska
+          niziołków.
+        name: Budowa podwodnego akweduktu
     jarvonia:
       shipRepairBeginner:
         name: Naprawa statku (początkujący)
@@ -166,6 +179,10 @@ singulars:
           rachunki, ale daje kilka pozytywów: oczyszcza otoczenie oraz pozwala rozwiązać
           zagadki kryminalne. Miej na uwadze prawne regulacje i baw się dobrze! Możesz
           wyciągnąć wszystko!'
+      pondFishingNet:
+        name: Wędkarstwo stawowe (sieć)
+        desc: Opuszczasz sieć wędkarską w mętnej wodzie. Nie trzeba długo czekać,
+          aż utkną w niej różne wodne stworzenia.
     jarvonia:
       lakeFishing:
         desc: Z antycypacją w rześkim zimowym powietrzu, ostrożnie wybierasz przynętę
@@ -416,6 +433,11 @@ singulars:
           do drzew na powierzchni nie upadają na ziemię, a zaczynają się unosić na
           powierzchni wody.
         name: Cięcie koralowców
+    global:
+      cutBambooLogs:
+        desc: Uderzasz siekierą w bambus. Tworzysz satysfakcjonujący, chrzęszczący
+          dźwięk.
+        name: Zetnij bambus
   cooking:
     gdte:
       wineGrapeStomping:
@@ -437,3 +459,77 @@ singulars:
       desc: Zgubiłeś sprzęt do nurkowania i kończy ci się powietrze. Musisz jak najszybciej
         wypłynąć na powierzchnię, jednak bez paniki. Wiesz, że jeśli wynurzysz się
         zbyt szybko, możesz cierpieć na chorobę dekompresyjną.
+  hunting:
+    jarvonia:
+      bearHunting:
+        desc: Duże zadrapania pazurów na drzewach wskazują, że jesteś na dobrej drodze
+          do znalezienia niedźwiedzi w okolicy. Twoje zmysły są skupione, a ciało
+          gotowe do walki.
+        name: Polowanie na niedźwiedzie
+      deerHunting:
+        desc: Wypatrujesz odchodów jeleni w lesie, co jest pewną wskazówką, że można
+          je znaleźć w okolicy. Twój łuk i strzały są gotowe do zestrzelenia jednego
+          z nich.
+        name: Polowanie na jelenie
+      wolfHunting:
+        desc: Podążasz za dużymi odciskami łap w ziemi w poszukiwaniu powszechnego
+          leśnego łowcy, wilka. Twój łuk i strzały są gotowe, by go zabić.
+        name: Polowanie na wilki
+      rabbitTracking:
+        name: Śledzenie królików
+        desc: Zwracasz uwagę na nadgryzione rośliny, połamane gałązki i ślady królików
+          w ziemi, szukając zwierząt.
+    gdte:
+      halfmawHunt:
+        desc: Z łukiem i strzałami przemierzasz bagna w poszukiwaniu legendarnego
+          węża Półpaszczy. Pokonał już wielu łowców przed tobą, ale masz nadzieję,
+          że taki los nie spotka ciebie i że będziesz drapieżnikiem, a nie ofiarą.
+        name: Polowanie na Półpaszczę
+      lizardHunting:
+        name: Polowanie na jaszczurki
+        desc: Szukasz jakichkolwiek wskazówek na temat wielu gatunków jaszczurek żyjących
+          w okolicy. Polowanie na nie jest bezpieczne, ale z pewnością żmudne.
+      invasiveSpeciesHunting:
+        name: Polowanie na szkodniki
+        desc: Bagno jest pełne robakopodobnych stworzeń, które nie są rodzime dla
+          tego siedliska. Należy uważnie szukać śladów ich obecności i eliminować
+          wszystkie znalezione.
+    global:
+      crabTracking:
+        desc: Spacerując po plaży, szukasz śladów pobliskich krabów. Pozostawiają
+          one specyficzne odciski na piasku, ale niestety są one często zmywane przez
+          przypływy i odpływy.
+        name: Śledzenie krabów
+      boxTrapping:
+        desc: Skonfigurowano prosty system pułapkowy wykorzystujący przynętę umieszczoną
+          pod drewnianym pudełkiem wspartym na gałązce. Gdy zwierzę poluje na przynętę,
+          przesuwa gałązkę, więżąc się w pudełku.
+        name: Zastawianie sideł
+      birdhouseTrappingBeginner:
+        desc: Ustawiasz karmnik, który został wyposażony w system pułapek, dzięki
+          czemu ptak może wejść do karmnika, ale nie może go opuścić.
+        name: Łapanie ptaków (początkujące)
+      birdhouseTrappingIntermediate:
+        name: Łapanie ptaków (zaawansowane)
+        desc: W karmniku umieszcza się przynętę gotową do odłowu różnych gatunków
+          ptaków. Następnie należy przymocować karmnik do drzewa. Z pewnością przyciągnie
+          to skrzydlate stworzenia.
+    syrenthia:
+      driftNetHunting:
+        name: Polowanie z siecią dryfującą
+        desc: Rozplątujesz ogromną sieć przed wrzuceniem jej do wody. Można w nią
+          łapać ryby i inne wodne stworzenia setkami, jeśli bogowie morza się do ciebie
+          uśmiechną.
+  tailoring:
+    gdte:
+      sailRepairIntermediate:
+        desc: Duży żagiel przeszedł kilka sztormów i jest podziurawiony. Pracujesz
+          szybko i precyzyjnie, aby załatać dziury, dzięki czemu żagiel jest prawie
+          jak nowy.
+        name: Naprawa żagli (zaawansowana)
+    jarvonia:
+      sailRepairBeginner:
+        name: Naprawa żagli (początkująca)
+        desc: Używając mocnej igły i nici, ostrożnie przyszyj wiele łatek z materiału,
+          aby naprawić żagle łodzi. Nie będą one tak dobre jak nowe, ale z pewnością
+          posłużą przez jakiś czas.

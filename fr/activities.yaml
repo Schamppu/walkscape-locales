@@ -22,6 +22,11 @@ singulars:
           de bateaux ou d'animaux dangereux. Vous avez même discuté avec les habitants.
           Tout va bien. Vous allez vous baigner dans les vagues."
         name: Natation (intermédiaire)
+      treetopJumping:
+        desc: Dans les hauteurs des arbres, l'adrénaline vous envahit alors que vous
+          sautez de branche en branche, espérant qu'elles ne cèdent pas. La chute
+          semble redoutable.
+        name: Sauter d'arbre en arbre
     global:
       birdWatching:
         desc: L'observation des oiseaux est une fenêtre sur le règne aviaire. Vous
@@ -86,6 +91,10 @@ singulars:
           champ de bataille tactique. Tu exécutes des tirs complexes, maîtrisant l'art
           de la rotation et de la précision, transformant des paysages difficiles
           en victoires triomphales.
+      exploreArea:
+        desc: Vous prenez des notes sur une feuille de papier vierge en explorant
+          les environs. Cela vous sera utile pour de futures explorations.
+        name: Explorer la zone
     jarvonia:
       mountainClimbingBeginner:
         desc: Vous vous préparez pour votre ascension. C'est une belle journée, ensoleillée
@@ -134,6 +143,10 @@ singulars:
           et à votre bon jugement. Vous savez quand il faut être efficace et quand
           il faut l'être. Votre boîte à outils est professionnelle, tout comme vous.
         name: Réparation navale (intermédiaire)
+      underwaterAqueductConstruction:
+        desc: Vous creusez et renforcez la conduite d'eau naturelle qui mène vers
+          le campement des Halfelins.
+        name: Construction d'aqueduc sous-marin
     jarvonia:
       shipRepairBeginner:
         desc: Vous participez aux réparations dues à l'usure des petits navires. Bois,
@@ -190,6 +203,10 @@ singulars:
           l'environnement et aide à résoudre des crimes. Respectez les réglementations
           en vigueur et amusez-vous ! Vous pouvez tirer n'importe quoi !"
         name: Pêche à l'aimant
+      pondFishingNet:
+        desc: Vous trempez le filet de pêche dans l'eau trouble. Il ne faut pas longtemps
+          avant que différentes créatures aquatiques ne s'y retrouvent piégées.
+        name: Pêcher au marais (Filet)
     jarvonia:
       lakeFishing:
         desc: Dans l'air vif de l'hiver, vous choisissez soigneusement votre appât
@@ -283,7 +300,7 @@ singulars:
       glacierForaging:
         desc: Vous fouillez le glacier vide de fond en comble. Vous apprenez beaucoup
           de choses sur vous-même, mais y a-t-il quelque chose à trouver ici ?
-        name: Recherche de nourriture sur les glaciers
+        name: Collecte sur glacier
       plainsForaging:
         desc: À chaque pas dans la campagne, vous vous immergez dans l'abondance naturelle;
           cueillant des baies sauvages, des graines et des pousses tendres qui se
@@ -303,7 +320,7 @@ singulars:
           ?
     syrenthia:
       seashellForaging:
-        name: Récolte de coquillages
+        name: Collecte de coquillages
         desc: A la recherche de précieux coquillages, tu nages près des fonds marins.
           La plupart se cachent sous le sable, tandis que d’autres s’accrochent aux
           coins et recoins des rochers sous-marins.
@@ -458,9 +475,91 @@ singulars:
           élancez votre hache à leur tronc en les coupant l'un après l'autre. A la
           différence des arbres à la surface, ils ne s'écrasent pas au sol mais flottent
           à la place.
+    global:
+      cutBambooLogs:
+        name: Couper du bambou
+        desc: Vous frappez le bambou avec votre hachette. Un craquement satisfaisant
+          retentit.
   misc:
     emergencySwimEscape:
       desc: Tu as perdu ton équipement de plongée et tu manques d'air. Tu dois nager
         jusqu'au rivage aussi vite que possible, mais sans paniquer. Tu sais que si
         tu remontes trop vite, tu pourrais souffrir d’un accident de décompression.
       name: Fuite à la nage
+  hunting:
+    jarvonia:
+      rabbitTracking:
+        desc: À la recherche des petites créatures, vous prêtez attention aux plantes
+          grignotées, aux brindilles cassées et aux empreintes dans le sol.
+        name: Pistage de lapin
+      wolfHunting:
+        desc: Vous suivez les empreintes de pattes dans le sol à la recherche du chasseur
+          de la forêt, le loup. Muni de votre arc, vous êtes prêt à décocher votre
+          flèche.
+        name: Chasse au loup
+      deerHunting:
+        desc: Vous cherchez des déjections de cerfs dans la forêt, une preuve de leur
+          présence dans les environs. Muni de votre arc, vous êtes prêt à décocher
+          votre flèche.
+        name: Chasse au cerf
+      bearHunting:
+        name: Chasse à l'ours
+        desc: Les grandes griffures sur les arbres indiquent que vous êtes sur la
+          bonne voie pour trouver des ours dans les environs. Vos sens sont aiguisés,
+          et votre corps est prêt à en abattre un.
+    gdte:
+      halfmawHunt:
+        desc: Emportant arc et flèches, vous vous déplacez à travers le marais à la
+          recherche du légendaire Serpent Halfmaw. Il a terrassé de nombreux chasseurs
+          avant vous, mais vous espérez qu'un tel sort ne vous arrivera pas, et que
+          vous serez le prédateur, non la proie.
+        name: Chasser Halfmaw
+      lizardHunting:
+        name: Chasse au lézard
+        desc: Vous cherchez des indices de la présence de diverses espèces de lézards
+          vivant dans les environs. Les chasser n'est pas dangereux, mais assurément
+          fastidieux.
+      invasiveSpeciesHunting:
+        name: Chasse aux espèces envahissantes
+        desc: Le marais est infesté de créatures ressemblant à des vers, qui n'appartiennent
+          pas à cet écosystème. Vous cherchez soigneusement des signes de leur présence
+          et éliminez celles que vous trouvez.
+    global:
+      crabTracking:
+        desc: En marchant sur la plage, vous cherchez des indices de la présence de
+          crabes à proximité. Ils laissent des empreintes spécifiques dans le sable,
+          mais malheureusement, celles-ci sont souvent effacées par la marée.
+        name: Pistage de crabe
+      boxTrapping:
+        desc: Vous installez un piège simple en plaçant un appât sous une caisse en
+          bois soutenue par une brindille. Lorsque la créature s'approche de l'appât,
+          elle déplace la brindille, se piégeant à l'intérieur.
+        name: Pose de caisse-piège
+      birdhouseTrappingIntermediate:
+        desc: Vous placez un appât dans le nichoir qui prêt à être installé pour piéger
+          diverses espèces d'oiseaux. Ensuite, vous accrochez le nichoir à un arbre.
+          Il attirera sûrement les volatiles.
+        name: Pose de piège à oiseaux (Intermédiaire)
+      birdhouseTrappingBeginner:
+        desc: Vous installez un nichoir qui a été équipé d'une trappe, permettant
+          à l'oiseau d'entrer mais pas de sortir.
+        name: Pose de piège à oiseaux (Débutant)
+    syrenthia:
+      driftNetHunting:
+        desc: Vous démêlez l'énorme filet avant de le placer dans l'eau. Il peut attraper
+          des poissons et d'autres créatures aquatiques par centaines, si les dieux
+          de la mer vous sourient.
+        name: Capture au filet dérivant
+  tailoring:
+    jarvonia:
+      sailRepairBeginner:
+        desc: Avec une aiguille solide et du fil, vous cousez plusieurs morceaux de
+          tissu pour réparer les voiles du bateau. Elles ne seront pas comme neuves,
+          mais elles tiendront sûrement un moment.
+        name: Réparation de voile (Débutant)
+    gdte:
+      sailRepairIntermediate:
+        desc: La grande voile, après de violentes tempêtes, est criblée de trous.
+          Vous travaillez rapidement et avec précision pour les refermer, la rendant
+          presque comme neuve.
+        name: Réparation de voile (Intermédiaire)

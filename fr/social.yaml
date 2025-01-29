@@ -1,1 +1,70 @@
-{}
+singulars:
+  party:
+    manage: Gérer
+    role: Rôle
+  relationship:
+    friends: Vous êtes amis
+    blocked: Vous avez bloqué cet utilisateur
+    inviteSent: Invitation envoyée
+    inviteReceived: Vous avez reçu une invitation
+    none: Social
+    party:
+      member: Membre
+      admin: Admin
+      owner: Propriétaire
+  actions:
+    buttonLabels:
+      removeFriend: Supprimer l'ami
+      unblock: Débloquer
+      cancelInvite: Annuler l'invitation
+      sendInvite: Envoyer une demande d'ami
+      createParty: Créer un groupe
+      leaveParty: Quitter le groupe
+      inviteResponse:
+        accept: Accepter
+        reject: Refuser
+        block: Bloquer
+      leaveAndDestroyParty: Dissoudre le groupe
+    confirmDescription:
+      unblock: Êtes-vous sûr de vouloir débloquer cet utilisateur ?
+      cancelInvite: Êtes-vous sûr de vouloir annuler cette demande d'ami ?
+      changeRole: Êtes-vous sûr de vouloir désigner <hl>{characterName}</hl> comme
+        <hl>{partyRole}</hl> ?
+      leaveParty: Êtes-vous sûr de vouloir quitter le groupe ?
+      removeFriend: Êtes-vous sûr de ne plus vouloir être amis ?
+      inviteResponse:
+        block: Êtes-vous sûr de vouloir bloquer cet utilisateur ? Les utilisateurs
+          bloqués ne peuvent plus vous envoyer d'invitations.
+      leaveAndDestroyParty: Êtes-vous sûr de vouloir dissoudre le groupe ? Cette action
+        ne peut pas être annulée.
+    confirmTitle:
+      unblock: Débloquer un utilisateur
+      inviteResponse:
+        block: Bloquer un utilisateur
+  createParty:
+    input:
+      partyName: Nom du groupe
+      catchphraseHint: Phrase d'accroche (optionnel)
+      catchphrase: Phrase d'accroche
+    rules:
+      mayContain: '<bp />Peut inclure : {list}'
+      noTrailingSpaces: <bp />Ne peut pas commencer ou finir par un espace
+  status:
+    loadingInvites: Recherche d'invitations...
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Au moins {} caractères
+        one: <bp />Au moins {} caractère
+      maxChar:
+        zero: '-'
+        one: <bp />Au plus {} caractère
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Au plus {} caractères

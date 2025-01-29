@@ -86,10 +86,10 @@ singulars:
         name: Wino
       egg:
         name: Jajko
-        desc: Prosto od kury.
+        desc: Jajko, które jest używane w niezliczonych przepisach od zarania dziejów.
       potato:
         name: Ziemniak
-        desc: Z ziemi.
+        desc: Kar-to-fel.
       tomato:
         name: Pomidor
         desc: Czy to owoc czy warzywo?
@@ -128,6 +128,44 @@ singulars:
         desc: Słynny syrentyjski przysmak, bułeczki z wodorostów są wytwarzane z wodorostów,
           które są starannie zwijane w odpowiedni kształt.
         name: Bułka z Wodorostów
+      mudPie:
+        name: Ciasto Błotne
+        desc: Prosty, ziemisty przysmak, stworzony z błota i wyobraźni.
+      spaghettiAndMeatballs:
+        desc: Pocieszające spaghetti z pikantnymi klopsikami i bogatym sosem pomidorowym.
+        name: Spaghetti z Klopsikami
+      honeyChicken:
+        desc: Złocisto-brązowe, chrupiące miodowe udka z kurczaka, glazurowane słodkim
+          i pikantnym sosem miodowym, oferują zachwycającą równowagę smaków i tekstur.
+        name: Miodowy Kurczak
+      spicyPepper:
+        desc: Ognista papryczka chili, pełna intensywnego ciepła i wyrazistego smaku,
+          dodaje kopa każdej potrawie.
+        name: Ostra Papryka
+      cookedMeat:
+        name: Gotowane Mięso
+        desc: Soczyste, ugotowane mięso, perfekcyjnie usmażone, oferuje smakowite
+          i satysfakcjonujące doznania kulinarne.
+      hamburger:
+        name: Hamburger
+        desc: Soczysty burger z serem, sałatą, pomidorem i specjalnym sosem, podawany
+          na opiekanej bułce.
+      stuffedPotato:
+        name: Faszerowany Ziemniak
+        desc: Puszysty ziemniak, upieczony do perfekcji, wypełniony kremową mieszanką
+          sera, masła i ziół, zwieńczony chrupiącym bekonem.
+      beefStew:
+        name: Gulasz Wołowy
+        desc: Obfity gulasz wołowy, idealnie ugotowany z delikatnymi kawałkami wołowiny,
+          warzywami korzennymi i bogatym, aromatycznym bulionem.
+      bellPepper:
+        name: Papryka
+        desc: Kolorowe, chrupiące warzywo, idealne do sałatek i frytek.
+      crabRolls:
+        name: Bułeczki Krabowe
+        desc: Bułeczki z kraba, delikatny i aromatyczny przysmak, zawierają soczyste
+          mięso kraba w miękkiej, maślanej bułce, często w towarzystwie świeżej sałaty
+          i pikantnego sosu.
     memosphere:
       carpentryMemosphere:
         name: Memosfera Stolarstwa
@@ -243,6 +281,10 @@ singulars:
         name: Gotowane Krewetki
         desc: Delikatne i soczyste, gotowane krewetki są wyśmienitym przysmakiem z
           owoców morza. Mają delikatny i lekko słodki smak.
+      cookedLargemouthBass:
+        desc: Ta ryba o dużych ustach ma pyszny, mętny smak, lubiany głównie przez
+          mieszkańców bagien.
+        name: Gotowany Bass
   containers:
     skilling:
       foraging:
@@ -411,11 +453,11 @@ singulars:
           desc: Przynajmniej są lżejsze niż te czarne!
           name: Buty z Farganitu
         sword:
-          desc: Niebieski miecz.
+          desc: Niebieski lodowy miecz wykonany ze sztabek farganitu.
           name: Miecz z Farganitu
         shield:
           name: Tarcza z Farganitu
-          desc: Niebieska tarcza.
+          desc: Niebieska tarcza która o dziwo nie jest aż tak ciężka.
       iron:
         chest:
           desc: Działa niczym niepokonany bastion, chroniąc tors użytkownika z niesamowitą
@@ -440,11 +482,12 @@ singulars:
           desc: Twoje stopy nigdy nie były cięższe. Ale jesteś pewien, że mogą zostać
             przewrócone przez ciężki wózek i przetrwać bez szwanku.
         sword:
-          desc: Miecz.
+          desc: Żelazny miecz, podstawowy element wyposażenia wielu oddziałów wojskowych.
           name: Żelazny miecz
         shield:
           name: Żelazna tarcza
-          desc: Tarcza.
+          desc: Żelazna tarcza, która jest ciężka do podniesienia, ale nie chciałbyś
+            używać lekkiej tarczy, aby wytrzymać ciosy wrogów.
       steel:
         chest:
           name: Napierśnik ze stali
@@ -471,36 +514,43 @@ singulars:
           name: Buty ze stali
           desc: Przynajmniej są lżejsze niż te żelazne!
         sword:
-          desc: Lśniący miecz.
+          desc: Błyszczący stalowy miecz, który jest wystarczająco ostry, by kroić
+            chleb.
           name: Miecz ze stali
         shield:
-          desc: Lśniąca tarcza.
+          desc: Błyszcząca stalowa tarcza, która uratuje cię w bitwie, ale także będzie
+            dobrze wyglądać w pokoju wojennym.
           name: Stalowa Tarcza
       tarsilium:
         chest:
           name: Napierśnik z Tarsilu
-          desc: Czarny korpus płytowy.
+          desc: Czarny korpus płytowy, który jest popularnym wyborem wśród mrocznych
+            rycerzy królestwa.
         gloves:
           name: Rękawice z Tarsilu
-          desc: Para czarnych rękawiczek.
+          desc: Para czarnych rękawiczek umożliwiających płynny ruch dłoni i palców.
         heavyHelmet:
-          desc: Ciężki, czarny hełm.
+          desc: Czarny, ciężki hełm zapewnia dobrą ochronę przed ciosami w ulubiony
+            organ - mózg.
           name: Ciężki Hełm z Tarsilu
         legs:
           name: Bigwanty z Tarsilu
-          desc: Zestaw Czarnych Nogawic Płytowych.
+          desc: Zestaw czarnych nogawic płytowych, które są idealnym wyborem dla gotyckich
+            rycerzy.
         lightHelmet:
-          desc: Lekki, czarny hełm.
+          desc: Kask z czarnym światłem, który nie tylko zapewnia dobrą ochronę głowy,
+            ale jest również przydatny do poruszania się niezauważonym w ciemności.
           name: Lekki Hełm z Tarsilu
         shoes:
           name: Buty z Tarsilu
           desc: Czarna para butów. Przynajmniej są lżejsze niż te stalowe!
         shield:
           name: Tarcza z Tarsilu
-          desc: Czarna tarcza.
+          desc: Czarna tarcza wykonana ze stopu jest dobrym wyborem do obrony przed
+            uderzeniami i ciosami.
         sword:
           name: Miecz z Tarsilu
-          desc: Czarny miecz.
+          desc: Czarny miecz, który nigdy nie rdzewieje.
       basic:
         woodenShield:
           name: Drewniana tarcza
@@ -549,6 +599,9 @@ singulars:
         tidalLure:
           name: Przynęta pływowa
           desc: Przynęta wygląda jak wir. Bardzo skuteczna w przyciąganiu ryb.
+        elderhideFishingNet:
+          name: Sieć Rybacka z Czarnej Skóry
+          desc: Sieć rybacka wykonana z wytrzymałej czarnej skóry.
       mining:
         basicPickaxe:
           name: Podstawowy Kilof
@@ -572,7 +625,7 @@ singulars:
           desc: Stalowy kilof lśni determinacją swojego twórcy, gotowy spełnić jego
             rozkaz.
         tarsiliumPickaxe:
-          desc: Czarny kilof.
+          desc: Mroczny metalowy kilof bardzo dobrze komponuje się z ciężką muzyką.
           name: Kilof z Tarsilu
         hydriliumPickaxe:
           name: Kilof z Hydrilu
@@ -603,7 +656,8 @@ singulars:
           desc: Stalowy topór połyskuje determinacją swojego twórcy, gotowego spełnić
             jego rozkaz.
         tarsiliumHatchet:
-          desc: Czarna siekiera.
+          desc: Ciemna metalowa głowica siekiery nie odbija zbytnio światła, ale bardzo
+            dobrze tnie drewno.
           name: Siekiera z Tarsilu
         hydriliumHatchet:
           name: Siekiera z Hydrilu
@@ -632,6 +686,198 @@ singulars:
         steelSickle:
           name: Stalowy Sierp
           desc: Wytrzymały i poręczny, oferuje dobrą wydajność przy intensywnym zbieractwie.
+      tailoring:
+        apprenticeBreeches:
+          desc: Bryczesy są wygodne przez długie godziny noszenia i mają poręczne
+            kieszenie na wiele miniaturowych przedmiotów.
+          name: Bryczesy Praktykanta
+        shadowquillChaps:
+          desc: Chapsy z piórami sprawiają, że nogi wyglądają jakby miały skrzydła,
+            niestety nie można w nich latać.
+          name: Krucze Chapsy
+        linenCloth:
+          desc: Podstawowy kawałek materiału, zwykle używany przez początkujących
+            krawców do szycia odzieży.
+          name: Lniana Tkanina
+        elderHideScraps:
+          desc: Kawałki zniszczonej czarnej skóry, które ekspert mógłby złożyć w użyteczny
+            materiał.
+          name: Skrawki Czarnej Skóry
+        elderHide:
+          desc: Skóra majestatycznej bestii.
+          name: Czarna Skóra
+        aerofibrilMitts:
+          desc: Rękawice zostały wzbogacone o aerodynamiczną nić, która sprawia, że
+            dłonie poruszają się szybciej niż zwykle.
+          name: Aerofibrylowe Rękawice
+        aerofibrilChaps:
+          desc: Chapsy są bardzo lekkie w noszeniu, prawie tak, jakbyś w ogóle nie
+            miał na sobie spodni. Upewnij się, że tak jest!
+          name: Aerofibrylowe Chapsy
+        elderhideTunic:
+          desc: Tunika z czarnej skóry jest noszona przez zbieraczy, którzy wyruszają
+            na poszukiwanie surowców w trudnych miejscach.
+          name: Tunika z Czarnej Skóry
+        journeymanHandwear:
+          desc: Dobrze wykonane rękawice, przydatne do różnych prac rzemieślniczych.
+          name: Rękawice Czeladnika
+        spikescaleMitts:
+          desc: Rękawice zostały ulepszone poprzez dodanie skóry i kolczastych łusek,
+            zapewniając dobrą ochronę podczas zbierania.
+          name: Rękawice z Kolcami
+        aerofibrilTunic:
+          desc: Aerodynamiczna nić sprawia, że tunika lekko świeci, gdy wieje na nią
+            wiatr.
+          name: Aerofibrylowa Tunika
+        rootweaveMitts:
+          desc: Rękawice te, wzmocnione przez dodanie cierni, są zaskakująco wygodne,
+            a jednocześnie zapewniają ochronę palców.
+          name: Cierniowe Rękawice
+        tattyTunic:
+          desc: Tunika z podartego materiału, często noszona przez chłopów i innych
+            biednych ludzi.
+          name: Wytarta Tunika
+        elderhideLeather:
+          desc: Elastyczny materiał, który został opalony, aby zapobiec gniciu.
+        hideScraps:
+          name: Skrawki Skóry
+          desc: Kawałki zniszczonej skóry, które można połączyć w użyteczny materiał.
+        basicLeather:
+          name: Podstawowa Skóra
+          desc: Kawałek skóry gotowy do przerobienia na coś bardziej użytecznego.
+        basicHide:
+          name: Podstawowa Czarna Skóra
+          desc: Naturalny materiał znany ze swojej trwałości i unikalnej tekstury.
+        tattyMitts:
+          name: Wytarte Rękawiczki
+          desc: Podarte rękawice z materiału, wykonane przez kogoś o wątpliwych umiejętnościach.
+        tattyChaps:
+          name: Wytarte Chapsy
+          desc: Poszarpane chapsy z materiału, w których łatwo się poruszać, ale tkanina
+            powoduje swędzenie skóry.
+        grassknotMitts:
+          name: Konopne Rękawice
+          desc: Rękawiczki materiałowe z wplecionymi sznurkami z konopii, co czyni
+            je wyjątkowymi.
+        apprenticeHandwear:
+          name: Rękawice Praktykanta
+          desc: Popularny wybór rękawic dla praktykantów różnych zawodów.
+        grassknotChaps:
+          name: Konopne Chapsy
+          desc: Lniane chapsy przeplatane konopią, przeznaczone do noszenia na legginsy.
+        grassknotTunic:
+          name: Konopna Tunika
+          desc: Tunika ulepszona przez dodanie konopii, mało prawdopodobny wybór,
+            ale zaskakująco skuteczny.
+        apprenticeVest:
+          name: Kamizelka Praktykanta
+          desc: Prosta kamizelka pozostawia wolne ręce do starannej pracy rzemieślniczej.
+        shadowquillMitts:
+          desc: Te ciemne rękawice z piórami są idealne dla podstępnych zbieraczy.
+          name: Krucze Rękawice
+        spikescaleChaps:
+          name: Chapsy z Kolcami
+          desc: Kolczaste chapsy zapewniają dobrą ochronę przed zadrapaniami i warunkami
+            pogodowymi podczas zbierania na zewnątrz.
+        spikescaleTunic:
+          name: Tunika z Kolcami
+          desc: Tunika ulepszona przez dodanie kolczastych łusek, dzięki czemu wygląda
+            onieśmielająco.
+        shadowquillTunic:
+          desc: Tunika, ulepszona przez dodanie ciemnych piór, sprawia, że wyglądasz
+            jak ptak.
+          name: Krucza Tunika
+        journeymanBreeches:
+          name: Bryczesy Czeladnika
+          desc: Bryczesy wykonane przez doświadczonych krawców dla wykwalifikowanych
+            kowali, stolarzy i innych rzemieślników.
+        rootweaveTunic:
+          name: Cierniowa Tunika
+          desc: Tunika ulepszona poprzez dodanie korzeni do tkaniny, dzięki czemu
+            wyglądasz jak wielolistny krzew.
+        journeymanVest:
+          name: Kamizelka Czeladnika
+          desc: Kamizelka posiada wiele wewnętrznych kieszeni do przechowywania narzędzi
+            i innych przydatnych rzeczy do tworzenia i innych aktywności.
+        elderhideMitts:
+          name: Rękawice z Czarnej Skóry
+          desc: Te rękawice są wykonane z legendarnej czarnej skóry, dzięki czemu
+            przyciągają wzrok innych zbieraczy, gdy przechodzisz obok.
+        elderhideBreeches:
+          name: Bryczesy ze Czarnej Skóry
+          desc: Bryczesy wykonane z czarnej skóry zapewniają doskonałą ochronę przed
+            żywiołami.
+        rootweaveChaps:
+          name: Cierniowe Chapsy
+          desc: Chapsy wzmocnione cierniami, zapewniające ochronę nóg w dziczy.
+      hunting:
+        mangroveBirdhouse:
+          desc: Namorzyny nie są często wykorzystywane do produkcji domków dla ptaków,
+            ponieważ są trudne w obróbce. Jednakże, jeśli są wykonane przez wykwalifikowanego
+            rzemieślnika, stanowią dobry domek dla ptaków.
+          name: Namorzynowy Ptasi Domek
+        elmHuntingBow:
+          desc: Łuk myśliwski wykonany z giętkiego, ale wytrzymałego drewna wiązu.
+          name: Wiązowy Łuk Myśliwski
+        mapleBirdhouse:
+          desc: Klonowy karmnik ma wyraźny zapach, który przyciąga ptaki różnej wielkości.
+          name: Klonowy Ptasi Domek
+        simpleBowstring:
+          desc: Kluczowy element łuku i strzały, zapewniający napięcie niezbędne do
+            wystrzelenia strzały.
+          name: Prosta Cięciwa
+        bambooHuntingBow:
+          desc: Łuk myśliwski wykonany z bambusa, rozpowszechniony na obszarach, gdzie
+            bambus jest łatwo dostępny. Jest bardzo lekki i stanowi precyzyjną broń.
+          name: Bambusowy Łuk Myśliwski
+        steelArrows:
+          desc: Błyszczące końcówki tych strzał wskazują na ich ostrość. Nie chciałbyś
+            zostać dźgnięty taką strzałą.
+          name: Stalowe Strzały
+        pineBirdhouse:
+          desc: Budka dla ptaków wykonana z drewna sosnowego, której brązowy odcień
+            czyni ją atrakcyjnym domem dla różnych ptaków.
+          name: Sosnowy Ptasi Domek
+        oakHuntingBow:
+          name: Dębowy Łuk Myśliwski
+          desc: Łuk myśliwski wykonany z drewna dębowego, popularny wśród myśliwych.
+        mahoganyHuntingBow:
+          name: Mahoniowy Łuk Myśliwski
+          desc: Ten dobrze wykonany łuk myśliwski to dobra broń dla doświadczonego
+            myśliwego.
+        birchBirdhouse:
+          name: Brzozowy Ptasi Domek
+          desc: Typowy domek dla ptaków, który może wykonać nawet amator. Mimo to,
+            stanowi ładny dom dla małych ptaków w okresie lęgowym.
+        spruceBirdhouse:
+          name: Świerkowy Ptasi Domek
+          desc: Dobrze wykonany domek dla ptaków wykonany ze świerku, jego kształt
+            jest dostosowany do gniazdowania ptaków.
+        teakBirdhouse:
+          name: Tekowy Ptasi Domek
+          desc: Bardziej zaawansowany domek dla ptaków, którego wykonanie wymaga umiejętności.
+            Stanowi dobry dom dla ptaków o różnych piórach.
+        copperArrows:
+          name: Miedziane Strzały
+          desc: Gorsze od nich są tylko strzały wykonane z patyków, ale każdy myśliwy
+            musi od czegoś zacząć.
+        bronzeArrows:
+          name: Strzały z Brązu
+          desc: Brąz nie jest idealnym materiałem do wytwarzania broni, która ma być
+            trwała, ale w przypadku strzał takich jak te sprawdza się całkiem dobrze.
+        ironArrows:
+          name: Żelazne Strzały
+          desc: Podstawowe strzały wielu jednostek wojskowych.
+        tarsiliumArrows:
+          name: Tarsilowe Strzały
+          desc: Czarne strzały, preferowane przez mrocznych strażników lasu.
+        farganiteArrows:
+          name: Farganitowe Strzały
+          desc: Niebieskie końcówki strzał sprawiają, że wyglądają niemal magicznie.
+            Są one wykonane ze słynnego metalu farganitu.
+        kelpDriftNet:
+          name: Wodorostowa Sieć Dryfująca
+          desc: Niemal nieskończenie duża sieć wykonana z podwodnych wodorostów.
   looted:
     equipmentSets:
       dimensional:
@@ -1506,6 +1752,10 @@ singulars:
         name: Sukienka Merfolk
         desc: Sukienka bardzo ciasno przylega do ciała, zgniatając nogi niemal w jedną
           całość.
+      aerofibrilCape:
+        desc: Peleryna z piórami, inkrustowana aerodynamiczną nicią, sprawia, że możesz
+          jechać naprawdę szybko.
+        name: Aerofibrylowa Peleryna
     achievements:
       ringOfHomesickness:
         name: Pierścień Nostalgii
@@ -1645,6 +1895,14 @@ singulars:
         name: Miecz Awanturnika
         desc: Zakrzywiony miecz jest idealny do bitew szturmowych. Wymaga techniki
           cięcia, aby być skutecznym w walce.
+    agGuildSpecials:
+      superskis:
+        desc: Te narty są najszybsze, gdy są używane na super śniegu.
+        name: Super-Narty
+      adventuringCompass:
+        name: Kompas Przygód
+        desc: Kompas zawsze wskazuje północ, co jest niezbędne dla każdego szanującego
+          się poszukiwacza przygód.
   materials:
     carpentry:
       birchPlank:
@@ -1798,8 +2056,8 @@ singulars:
           potraw.
       sweetKelp:
         name: Słodki Wodorost
-        desc: Podwodna trzcina cukrowa, słodkie wodorosty, wykorzystuje się je najczęściej
-          do produkcji napoju alkoholowego – saltrum.
+        desc: Wodorosty mają słodki smak i są używane w podwodnej kuchni, dodając
+          specyficznego, niezapomnianego smaku.
       seaCabbage:
         name: Kapusta Morska
         desc: Popularna żywność rosnąca pod wodą. Syrentyjczycy robią z niej suszoną
@@ -1819,8 +2077,24 @@ singulars:
         name: Ogórek
         desc: Jaki jest koszt tego w twojej okolicy ?
       wheat:
-        desc: Pszenica.
+        desc: Ziarno zbóż odpowiedzialne za rozwój większości cywilizacji.
         name: Pszenica
+      grass:
+        name: Trawa
+        desc: Bujny kawałek zielonej trawy.
+      pepper:
+        name: Pieprz
+        desc: Małe, okrągłe, niezmielone kulki pieprzu.
+      mud:
+        name: Błoto
+        desc: Mokry i oślizgły kawałek błota. Bez względu na to, jak ostrożnie się
+          z nim obchodzisz, brudzisz się.
+      milkweed:
+        name: Mlecznik
+        desc: Roślina kwitnąca znana z mlecznego soku. Motyle i gąsienice je uwielbiają!
+      wildRice:
+        name: Dziki Ryż
+        desc: Rodzaj dzikiej trawy, która produkuje jadalne ziarno.
     mining:
       coal:
         desc: Skromny i bezpretensjonalny, węgiel oznacza swoją praktyczność jako
@@ -1963,6 +2237,14 @@ singulars:
         name: Surowa Żabnica
         desc: Ta dziwna ryba ma ogromną paszczę z długimi zębami przypominającymi
           sztylety. Jej oczy wydają się być ślepe. Na jej czole wyrasta jasna plama.
+      rawLargemouthBass:
+        name: Surowy Bass
+        desc: Zielona ryba ma bardzo duży stosunek pyska do ciała, który wykorzystuje
+          do połykania przedmiotów.
+      rawCrab:
+        name: Surowy Krab
+        desc: Rozpowszechniony skorupiak o krótkim, okrągłym ciele, dwóch paciorkowatych
+          ciemnych oczach i dużych pazurach, których używa do szczypania. Auć!
     smithing:
       bronzeBar:
         name: Sztabka brązu
@@ -2036,6 +2318,16 @@ singulars:
       sturdyBranch:
         name: Solidna Gałąź
         desc: Niezwykle mocna gałąź.
+      root:
+        desc: Przydatne korzenie roślin, które mogą być wykorzystywane do różnych
+          celów.
+        name: Korzeń
+      elmLogs:
+        name: Wiązowe Kłody
+        desc: Kłody te są znane ze swojej jakości gięcia i ściskania.
+      heartwood:
+        name: Twardziel
+        desc: Jest to wewnętrzna część drewna, ciemniejsza niż reszta.
     crafting:
       rope:
         name: Lina
@@ -2048,6 +2340,9 @@ singulars:
       kelpRope:
         name: Lina z Wodorostów
         desc: Długie kawałki wodorostów połączone w linę.
+      elderhideRope:
+        name: Lina z Czarnej Skóry
+        desc: Wytrzymała lina wykonana ze skóry.
     misc:
       trash:
         name: Śmieci
@@ -2088,6 +2383,37 @@ singulars:
         desc: Przypinka z symbolem Gildii Poszukiwaczy Przygód. Jest trochę zardzewiała,
           ale wciąż błyszcząca. Gildia Poszukiwaczy Przygód wyrazi wdzięczność za
           jej zwrot.
+      invasiveSpeciesTag:
+        desc: Metalowa przywieszka z wizerunkiem paszczy robakopodobnego stworzenia.
+        name: Znak Gatunków Inwazyjnych
+    hunting:
+      sinew:
+        desc: Twarda, włóknista tkanka łącząca mięśnie z kośćmi.
+        name: Ścięgno
+      lizardTail:
+        desc: Ogon jaszczurki, który został zrzucony jako mechanizm obronny.
+        name: Ogon Jaszczurki
+      animalFur:
+        desc: Ten kawałek zwierzęcego futra jest miękki w dotyku i musi zapewniać
+          duże ciepło, jeśli wykonana jest z niej odzież.
+        name: Futro Zwierzęce
+      feather:
+        name: Pióro
+        desc: Piękne, lekkie i aerodynamiczne ptasie pióro.
+      darkfeather:
+        name: Ciemne Pióro
+        desc: Ciemne pióro ptaka, prawdopodobnie wrony, kruka lub innego ciemnego
+          ptaka.
+      bones:
+        name: Kości
+        desc: Wiele kawałków kości.
+      animalMeat:
+        name: Zwierzęce Mięso
+        desc: Kawałek świeżego mięsa, gotowy do gotowania, suszenia lub solenia.
+    tailoring:
+      aerodynamicThread:
+        name: Aerodynamiczna Nitka
+        desc: Rzadka nić, znana ze swojej lekkości i wytrzymałości.
   collectibles:
     fromActivity:
       veryOldWine:
