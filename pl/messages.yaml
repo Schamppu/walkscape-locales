@@ -97,15 +97,15 @@ singulars:
           najnowszą wersję, by móc kontynuować grę.
       noInternetConnection:
         title: Brak połączenia z Internetem
-        text: Nie posiadasz aktywnego połączenia z Internetem, które wymagane jest,
-          by zweryfikować twojego klienta z serwerem. Spróbuj ponownie, kiedy nawiążesz
-          połączenie.
+        text: Połączenie z serwerem zostało utracone. Sprawdź połączenie internetowe
+          i spróbuj ponownie.
       serverOffline:
         title: Serwer WalkScape jest wyłączony
         text: Serwer gry jest aktualnie wyłączony. Może być to spowodowane pracami
           konserwacyjnymi albo problemem z serwerem. Spróbuj ponownie później.
       serverMaintenance:
         title: Serwer WalkScape jest w trybie konserwacji
+        text: Serwer gry jest obecnie w trakcie konserwacji. Spróbuj ponownie później.
       newUpdate:
         title: Nowa Aktualizacja
         text: Gra została zaktualizowana. Zrestartuj grę, by pobrać nową wersję.
@@ -122,6 +122,16 @@ singulars:
         text: Zostałeś permanentnie zbanowany z WalkScape. Jeśli uważasz, że to pomyłka
           i chciałbyś odwołać się od tej decyzji, możesz skontaktować się z nami,
           wysyłając wiadomość e-mail na adres <c i=1>contact@walkscape.app</c>.
+      unauthorized:
+        title: Nieautoryzowany
+        text: Nie masz autoryzacji. Zaloguj się ponownie.
+      invalidSession:
+        title: Nieprawidłowa sesja
+        text: Twoja sesja jest nieprawidłowa. Zaloguj się ponownie.
+      connectionError:
+        title: Błąd połączenia
+        text: Wystąpił błąd połączenia z serwerem. Sprawdź połączenie internetowe
+          i spróbuj ponownie.
     fatalError:
       error: Wybacz nam ten błąd. Pamiętaj, że ta gra znajduje się w Zamkniętej Becie,
         a wszystkie postępy graczy są zapisywane codziennie w chmurze.
@@ -129,3 +139,39 @@ singulars:
       title: Działanie anulowane
       stepsAreInfinite: Bieżąca aktywność została anulowana, ponieważ nie spełniasz
         już wymagań do jej ukończenia.
+    gameError:
+      loadingPlayerFailed:
+        title: Nie udało się załadować postaci
+        text: Nieprawidłowe dane gracza. Ładowanie nie powiodło się. Prosimy o kontakt
+          z twórcami poprzez Discord lub e-mail.
+      stepLoadingFailed:
+        title: Nie udało się załadować kroków
+        text: Klient gry nie mógł załadować kroków. Zgłoś to twórcom na Discordzie,
+          podając szczegóły błędu i urządzenia. Możesz także spróbować ponownie otworzyć
+          grę, aby sprawdzić, czy kroki załadują się pomyślnie.
+  info:
+    game:
+      importGearSetFailed:
+        title: Nie udało się zaimportować zestawu wyposażenia
+        text: Błąd podczas importowania wyposażenia. Dane wyposażenia mogą być uszkodzone
+          lub nieprawidłowe.
+      importGearSetTooManyTools:
+        title: Zestaw wyposażenia ma zbyt wiele narzędzi
+        text: Zestaw wyposażenia posiadał więcej narzędzi niż jest to dozwolone.
+      changingActivityFailed:
+        title: Aktywność nie została zmieniona
+        text: Nie można zmienić aktywności. Albo już ją wykonujesz, albo nie jest
+          dostępna.
+      withdrawZero:
+        title: Wyjmowanie nie powiodło się
+        text: Nie można wyjąć zero lub mniej przedmiotów.
+      withdrawTooFew:
+        title: Wyjmowanie nie powiodło się
+        text: Nie masz wystarczającej liczby przedmiotów do wyjęcia.
+      withdrawDidNotExist:
+        title: Wyjmowanie nie powiodło się
+        text: Przedmiot, który próbowałeś wyjąć nie istnieje. Ponowne otwarcie banku
+          powinno rozwiązać ten problem.
+      withdrawFailed:
+        title: Wyjmowanie nie powiodło się
+        text: Wyjmowanie nie powiodło się. Spróbuj ponownie.
