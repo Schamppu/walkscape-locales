@@ -188,6 +188,10 @@ singulars:
         en tu inventario.
       showingRecipiesThatUses: Mostrando recetas que usan
       requiresService: Requiere un servicio.
+    errors:
+      notSameQuality: Los materiales han de ser todos finos o normales
+      noService: Requerimiento de servicio no satisfecho
+      skillRequirementsNotMet: Requerimiento de habilidad no satisfecho
   inventory:
     info:
       noItemEquipped: No hay ningún objeto equipado. \n\n Puedes equipar un objeto
@@ -226,7 +230,7 @@ singulars:
       noPotionConsumables: No hay <hl>pociones</hl> en tu inventario.
       noItemSelected: Ningún objeto seleccionado
       duration: Duración
-      durationInSteps: Activo durante<c>{pasos}</c> <icon i="Steps" /> pasos
+      durationInSteps: Activo durante<c>{steps}</c> <icon i="Steps" /> pasos
       inUse: En uso
       disableWhenChanging: Desactivar al cambiar de actividad
       selectedConsumable: Consumible seleccionado
@@ -310,6 +314,9 @@ singulars:
       refreshIn: 'La tablón de trabajos se actualizará en:'
       hasNoItemsInInventory: No hay objetos elegibles en tu inventario.
       openJournal: Abrir diario
+      youMustBeInLocationToCollect: Has de estar en la misma localización con <object
+        id="{obj}"/> para obtener las recompensas.
+      collectRewards: Obtener recompensas
     dialogs:
       abandonJob:
         title: Abandonar trabajo
@@ -342,7 +349,7 @@ singulars:
       dontDoIt: No lo hagas si no estás seguro.
       deletingCharacter: Borrar tu personaje es <hl>irreversible</hl>.
       iAmSure: Estoy seguro
-      ifYouAreSure: Si estás seguro, escribe <c>DELETE</c> en el campo y pulsa continuar.
+      ifYouAreSure: Si estás seguro, escribe <c>BORRAR</c> en el campo y pulsa continuar.
       areYouAbsolutelySure: ¿Estás completamente seguro? Después de este paso, perderás
         permanentemente tu personaje.
       welcomeToWalkscape: Bienvenido a WalkScape, <hl>forastero</hl>. Por favor, inicia
@@ -351,8 +358,20 @@ singulars:
     info:
       consumablesUsage: Puedes elegir una <c>comida</c> y una <c>poción</c> para usar
         mientras haces actividades.
+      noActivity: Ninguna actividad seleccionada. <hl>Selecciona una aquí debajo</hl>,
+        o desliza hacia la izquierda para ver todo lo disponible en esta localización.
+      savedSteps: Tienes pasos guardados que están siendo usados. Cada paso cuenta
+        como dos hasta que no queden pasos guardados.
     phrases:
       consumables: Consumibles
+      noActivity: Sin actividad
+      savedSteps: Pasos guardados
+      inventoryIsOverLimit: ¡Inventario por encima del límite!
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Eficiencia de trabajo global
+        <c>-{penalty}%</c>
+      notAffectingTraveling: (no afecta a la eficiencia al viajar)
+      stopWhenOverEncumbered: Parar al sobrecargarse
+      options: Opciones
   character:
     info:
       skillBreakdown: Aquí está el desglose total de todas las habilidades que tu
@@ -362,6 +381,7 @@ singulars:
       stepsOfLastWeek: Pasos de los últimos 7 días
       checkOut: Mira mi personaje {name} de WalkScape. Échale un vistazo en:\nhttps://walkscape.app
       checkOutSubject: ¡Mira mi progreso en WalkScape!
+      totalLevel: Nivel total
   permissions:
     phrases:
       pedometerPermission: Permisos para la cuenta de pasos
@@ -434,6 +454,18 @@ singulars:
         notificationType: Tipo de notificación
       language:
         title: Idioma
+      dataSource:
+        changeWarning:
+          title: ¿Cambiar origen de datos?
+        title: Origen de datos
+        thisPhone: Este teléfono
+        otherSource: Otro origen
+        requiresPermissionIos: Si el menú desplegable de abajo no muestra ningún dispositivo
+          externo, asegúrate de haber dado permisos a la aplicación para usar datos
+          que provienen de Apple Health en Configuración > Privacidad y Seguridad
+          > Salud > (bajo Apps) Walkscape. Asegúrate también de que Apple Health ha
+          registrado pasos en esos dispositivos en los últimos 7 días.
+        lastSync: 'Última sincronización: {timestamp}'
     phrases:
       exitToCharacterSelection: Salir a la selección de personajes
       settings: Ajustes
@@ -521,3 +553,17 @@ singulars:
     phrases:
       noItemsInventory: No hay objetos en tu inventario.
       noItemsBank: No hay objetos en tu banco.
+      deposit: Depositar
+      withdraw: Retirar
+  popupBubbles:
+    phrases:
+      overEncumbered: Tu inventario está lleno y estás sobrecargado.
+      arrivedToLocation: Llegado a <object id={location} />
+  shop:
+    phrases:
+      sold: Vendido
+      bought: Comprado
+      resetTrade: Reiniciar trueque
+      buying: Comprando
+      selling: Vendiendo
+      buyBack: Comprar de vuelta
