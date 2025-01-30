@@ -6,11 +6,19 @@ maps:
         '1': Normal
         '2': Difficile
         '3': Extrême
+        'easy': Facile
+        'normal': Normal
+        'hard': Difficile
+        'extreme': Extrême
       difficultyTitle:
         '0': Succès faciles
         '1': Succès normaux
         '2': Succès difficiles
         '3': Succès extrêmes
+        'easy': Succès faciles
+        'hard': Succès difficiles
+        'normal': Succès normaux
+        'extreme': Succès extrêmes
   characterCreation:
     phrases:
       bodyTypes:
@@ -30,35 +38,153 @@ maps:
         none: Aucun
         nose: Nez
         outfit: Tenue
+        'backAccessory': Accessoires dorsaux
+        'eyeAccessory': Accessoires oculaires
+        'faceAccessory': Accessoires de visage
       raceTypes:
         human: Humain
         none: Aucun
+      expressions:
+        'angry': Mécontent
+        'laughing': Rieur
+        'smile': Souriant
+        'smirk': Sournois
+        'surprise': Surpris
+        'veryAngry': Furieux
+        'sad': Triste
+        'normal': Normal
+  shop:
+    phrases:
+      itemType:
+        'collectible': Objets de collection
+        'cosmetic': Cosmétiques
+        'special': Spéciaux
+        'tool': Outils
+        'gear': Équipements
+        'container': Conteneurs
+        'loot': Butin
+        'consumable': Consommables
+        'crafted': Artisanal
+        'material': Matériaux
+  character:
+    stepsTime:
+      'hourly': Pas par heure
+      'monthly': Pas par mois
+      'daily': Pas par jour
+  settings:
+    languages:
+      'pl': Polonais
+      'es': Espagnol
+      'sv': Suédois
+      'fi': Finlandais
+      'de': Allemand
+      'en': Anglais
+      'it': Italien
+      'zh_Hans': Chinois (simplifié)
+      'nl-NL': Danois
+      'pt': Portugais
+      'tr': Turc
+      'fr': Français
+    visibilitySettings:
+      'private': Privé
+      'friends': Amis uniquement
+      'public': Public
+    notificationImportance:
+      'high': Émet un son ou vibre
+      'urgent': Émet un son ou vibre et apparait comme notification contextuelle.
+      'low': Pas de son ni vibration et n'apparait pas dans la barre de statut.
+    leaderboardFilter:
+      'everyone': Tout le monde
+      'friends': Amis
+    stepCountNotifications:
+      'everyTenThousand': Tous les 10 000
+      'everyThousand': Tous les 1 000
+      'never': Jamais
+      'always': Toujours
+      'everyHundred': Tous les 100
+    boolSettings:
+      'showRecipesMaterialsAreMet': Les prérequis de matériaux sont remplis
+      'showRecipesRequirementsAreMet': Les prérequis de niveau sont remplis
+      'showRecipesServiceAreMet': Les prérequis de service sont remplis
+      'showCompletedAchievements': Afficher les succès terminés
 plurals:
   achievements:
     phrases:
       achievementPoint:
         one: '{} point de succès'
         other: '{} points de succès'
+        zero: '-'
+        two: '{} points de succès'
+        few: '-'
+        many: '-'
   activity:
     phrases:
       actionsRemaining:
         one: Action restante
         other: Actions restantes
+        zero: '-'
+        many: '-'
+        two: Actions restantes
+        few: '-'
       actionsToLevelUp:
         one: Action de montée de niveau
         other: Actions de montée de niveau
+        zero: '-'
+        two: Actions pour monter de niveau
+        few: '-'
+        many: '-'
       stepsRemainingInTotal:
         one: Pas requis au total
         other: Pas requis au total
+        zero: '-'
+        two: Pas restants au total
+        few: '-'
+        many: '-'
       stepsRequired:
         one: Pas requis
         other: Pas requis
+        few: '-'
+        two: Pas requis
+        many: '-'
+        zero: '-'
       stepsToCraft:
         one: Pas pour fabriquer
         other: Pas pour fabriquer
+        two: Pas pour fabriquer
+        few: '-'
+        many: '-'
+        zero: '-'
       stepsToLevelUp:
         one: Pas pour monter de niveau
         other: Pas pour monter de niveau
+        few: '-'
+        many: '-'
+        zero: '-'
+        two: Pas pour monter de niveau
+      stepsUntilArrival:
+        many: '-'
+        other: Pas avant d'arriver
+        few: '-'
+        two: Pas avant d'arriver
+        zero: '-'
+        one: Pas avant d'arriver
+  inventory:
+    info:
+      consumableDuration:
+        zero: L'activité <object id="{activity}" alwaysShow="true"/> requiert <c>{steps}</c>
+          pas par action. La quantité sélectionnée de consommables influencera <c>{actions}
+          actions</c>.
+        one: L'activité <object id="{activity}" alwaysShow="true"/> requiert <c>{steps}</c>
+          pas par action. La quantité sélectionnée de consommables influencera <c>{actions}
+          action</c>.
+        two: L'activité <object id="{activity}" alwaysShow="true"/> requiert <c>{steps}</c>
+          pas par action. La quantité sélectionnée de consommables influencera <c>{actions}
+          actions</c>.
+        few: '-'
+        many: '-'
+        other: L'activité <object id="{activity}" alwaysShow="true"/> requiert <c>{steps}</c>
+          pas par action. La quantité sélectionnée de consommables influencera <c>{actions}
+          actions</c>.
 singulars:
   achievements:
     info:
@@ -66,10 +192,10 @@ singulars:
         A chaque fois que vous atteignez un nombre spécifique de points de réussite,
         vous débloquerez des récompenses spéciales. De plus, certains succès donnent
         directement une récompense une fois débloqués.
-      specialItems: Les items spéciaux tels que <c>les objets de collection </c>,
-        <c>les objets de quête</c> et <c>les artéfacts</c> sont obtenus tout au long
+      specialItems: Les objets spéciaux tels que <c>les objets de collection</c>,
+        <c>les objets de quête</c> et <c>les artéfacts</c> s'obtiennent tout au long
         de votre voyage dans WalkScape. Vous pouvez les consulter ici. Les objets
-        de collection vous donnent des points de réussite.
+        de collection vous octroient des points de succès.
       collectibleItems: Les objets de collection sont des items que tu peux obtenir
         n'importe où dans le monde de WalkScape. Il existe plusieurs types d'objets
         de collection que tu peux essayer de rassembler. Ils ne prennent aucune place
@@ -86,6 +212,8 @@ singulars:
       rewardProgress: Progression de récompense
       showRewards: Montrer les récompenses
       unclaimedRewards: 'Récompenses non récupérées: '
+      totalProgressUnlocks: Récompenses de progression totale
+      checkPointUnlocks: Récompenses d'étapes
   crafting:
     phrases:
       materials: Matériaux
@@ -96,49 +224,143 @@ singulars:
       requiresOneOfTheFollowing: Nécessite l'un des matériaux suivants.
       rewards: Récompenses
       noMaterials: Tu n'as aucun matériau disponible pour fabriquer cela en ce moment.
+      noMaterialsThatCouldBeUsed: Aucun matériau de fabrication dans votre inventaire.
+      noServiceRequirements: Aucune condition d'utilisation.
+      showingRecipiesThatUses: Montre les recettes qui utilisent
+      requiresService: Requiert une installation.
+    errors:
+      notSameQuality: Les matériaux doivent tous être soit normaux soit de qualité
+      noService: Les conditions d'utilisation ne sont pas remplies
+      noMaterials: Des matériaux de fabrication sont manquants
+      skillRequirementsNotMet: Les conditions de compétence ne sont pas remplies
   inventory:
     info:
       noItemEquipped: Aucun objet n'est équipé. \n\n Vous pouvez équiper un objet
         en le sélectionnant dans la liste ci-dessous et en appuyant sur "Equiper".
       noItemSelected: Aucun objet n'est sélectionné. \n\n Sélectionnez un objet dans
         la liste ci-dessous afin de le comparer à l'objet actuel et de l'équiper.
+      noItemsFound: Aucun objet dans votre inventaire pour cet emplacement.
     phrases:
       treasury: Réserve de butins
       abilities: Aptitudes
+      attributes: Attributs
+      inUse: Utilisé
+      noConsumables: Aucun consommable dans votre inventaire.
+      cantBeDropped: L'objet ne peut pas être lâché.
+      itemsInUse: Vous avez sélectionné des objets qui sont en cours d'utilisation.
+        Ces objets ne peuvent ni être lâchés ni mis à la banque.
+      slots: <c>{slots}</c> Emplacements
+      slotDoesntExist: Cet emplacement d'inventaire n'existe plus.
+      oneOrMoreCantBeDropped: Un ou plusieurs objets ne peuvent pas être lâchés.
+      requires: Requiert
+      equipToRingOne: Équiper dans l'emplacement d'anneau 1
+      equipToRingTwo: Équiper dans l'emplacement d'anneau 2
+      equipToToolSlot: Équiper dans l'emplacement d'outil {id}
+      duration: Durée
+      durationInSteps: Actif pendant <c>{steps}</c> <icon i="Steps" /> pas
+      noFoodConsumables: Aucune <hl>nourriture</hl> dans votre inventaire.
+      noPotionConsumables: Aucune <hl>potion</hl> dans votre inventaire.
+      emptySlot: Emplacement vide
+      allSkills: Toutes les compétences
+      noItemEquipped: Aucun objet équipé
+      noItemSelected: Aucun objet sélectionné
+      allItemsInUse: Tous ces objets sont en cours d'utilisation et ne peuvent pas
+        être lâchés.
+      noConsumableSelected: Aucun consommable sélectionné. Vous pouvez en sélectionner
+        un ci-dessous.
+      areYouSureToDrop: Êtes-vous sûr de vouloir lâcher ces objets ? Ils cesseront
+        d'exister et seront perdus pour toujours.
+      slotsCount: 'Emplacements :'
+      selectedStacks: <c>{stacks}</c> piles sélectionnées
+      requirementsNotMet: Les conditions ne sont pas remplies.
+      cantEquip: Impossible d'équiper
+      checkBank: Voir la banque
+      disableWhenChanging: Désactiver au changement d'activité
+      enableWhenBack: Activer au lancement d'une activité y ayant eu recours la dernière
+        fois
+      selectedConsumable: Consommable sélectionné
+      consumables: Consommables
+      longPressTip: <c>Astuce :</c> Rester appuyé sur une pile d'objets sélectionne
+        tous les objets similaires.
+      dropItems: Lâcher ces objets ?
+    options:
+      consenseInventory: Réduire l'inventaire
+      expandInventory: Étendre l'inventaire
+      showMaterials: Montrer les matériaux
+      showGear: Montrer les équipements
+      showConsumables: Montrer les consommables
   location:
     phrases:
       activities: Activités
       services: Services
+      buildings: Bâtiments
+      noActivites: Aucune activité disponible dans ce lieu.
+      factions: Factions
+      jobBoard: Tableau de missions
+      jobs: Missions
+      routes: Routes
+      tapToShowRoutes: Touchez pour afficher les routes
   pfpCreation:
     buttons:
       choose: Choisir
       hideHat: Cacher les couvre-chefs
       randomize: Aléatoire
       showHat: Montrer les couvre-chefs
+      enableFaceAccessory: Activer l'accessoire de visage
+      enableBackAccessory: Activer l'accessoire dorsal
+      enableEyeAccessory: Activer l'accessoire oculaire
+      enableDynamicBackground: Activer l'arrière-plan dynamique
+      enableFacepaint: Activer la peinture faciale
     phrases:
       currentSelection: Sélection actuelle
+      variants: Variantes
+      mainOptions: Options principales
+      defaultExpression: Expression par défaut
+      colorOptions: Options de couleur
+      homeRegion: Région d'origine
+      noVariantSelected: Aucune variante sélectionnée
+      resetToDefault: Réinitialiser par défaut
+      race: Origine
+      selectedVariant: Variante {index} sélectionnée
+      extras: Extras
+      dynamicBackground: L'arrière-plan dynamique change l'arrière-plan selon le lieu
+        où se trouve votre personnage.
   character:
     phrases:
       skills: Compétences
       stepsOfLastWeek: Nombre de pas effectués au cours des 7 derniers jours
       checkOutSubject: Jette un coup d'oeil à mon progrès sur WalkScape!
       checkOut: Voici mon personnage WalkScape {name}. Jettes-y un oeil!\nhttps://walkscape.app
+      totalLevel: Niveau total
+    info:
+      skillBreakdown: Voici la liste complète de toutes les compétences que votre
+        personnage a développé au fil de votre aventure.
   activity:
     phrases:
       consumables: Consommables
       savedSteps: Pas en Réserve
+      noActivity: Aucune activité
+      inventoryIsOverLimit: L'inventaire dépasse la limite !
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Efficacité de travail globale
+        <c>-{penalty}%</c>
+      notAffectingTraveling: (n'affecte pas l'efficacité des voyages)
+      options: Options
+      stopWhenOverEncumbered: S'arrêter quand surchargé
     info:
       consumablesUsage: Vous pouvez choisir de la <c>nourriture</c> et une <c>potion</c>
         à consommer pendant vos activités.
       noActivity: Aucune activité actuellement sélectionnée. <hl>Choississez-en une
         ci-dessous</hl>, ou faites défiler vers la gauche pour voir toutes celles
         disponibles ici.
+      savedSteps: Vous utilisez vos pas en réserve. Chaque pas effectué compte double
+        jusqu'à ce que vos pas en réserve soient épuisés.
   permissions:
     phrases:
       pedometerPermission: Permissions du compteur de pas
       permissionExplanation: Pour que le jeu fonctionne, nous avons besoin de votre
         permission pour utiliser les données du compteur de pas de votre appareil.
         Veuillez nous donner cette permission pour reprendre le jeu.
+      exactAlarmPermission: Autoriser les alertes
   rewards:
     phrases:
       alreadyClaimed: Déjà récupéré
@@ -155,3 +377,297 @@ singulars:
       abilities: Aptitudes
       useAbility: Utiliser l'aptitude
       useConsumable: Utiliser le consommable
+      noAction: Aucune action
+      holdToCast: Maintenir pour utiliser
+      holdToUse: Maintenir pour utiliser
+  mainMenu:
+    phrases:
+      pleaseWait: Veuillez patienter...
+      downloadingLocalisations: Téléchargement des traductions mises à jour
+      downloadingContent: Téléchargement de nouveau contenu de jeu
+      register: S'inscrire
+      googlePlay: Mise à jour depuis Google Play
+      authenticating: Authentification...
+      createCharacter: Créer un nouveau personnage
+      logOut: Se déconnecter
+      lostInternet: Votre appareil a perdu la connexion internet. En attente de connexion...
+      dontDoIt: Ne le faites pas si vous n'êtes pas sûr.
+      iAmSure: Je suis sûr
+      pleaseEnterCredentials: Veuillez saisir les identifiants de votre compte WalkScape.
+      email: E-mail / Nom d'utilisateur
+      password: Mot de passe
+      noBetaAccess: Aucun accès Bêta.
+      support: Soutenir le jeu
+      accountPage: Page du Compte
+      deleteWord: SUPPRIMER
+      areYouAbsolutelySure: Êtes-vous absolument sûr ? Après cette étape, vous perdre
+        définitivement votre personnage.
+      logIn: Se connecter
+      noInternet: Pas de connexion internet
+      welcomeToWalkscape: Bienvenue sur WalkScape, <hl>étranger</hl>. Veuillez vous
+        connecter.
+      chooseCharacter: Choisissez votre personnage, ou créez en un nouveau.
+      areYouSureYouWantToDelete: Êtes-vous sûr de vouloir supprimer <hl>{name}</hl>
+        ?
+      ifYouAreSure: Si vous êtes sûr, saisissez <c>SUPPRIMER</c> et appuyez sur continuer.
+      loadingGame: Chargement du jeu... Veuillez patientez !
+      testFlight: Vous pouvez télécharger la dernière version depuis <c>TestFlight</c>.
+      deletingCharacter: La suppression de votre personnage est <hl>irréversible</hl>.
+    loadingStates:
+      loadingComplete: Chargement terminé !
+      localizationFiles: Chargement des fichiers de traduction
+      gameVersion: Obtenir la version du jeu
+      startingGameLoad: Initialisation des données de jeu
+      validatingGame: Validation des données de jeu par le serveur
+      checkingLocalizations: Vérification des traductions par le serveur
+      initializingProviders: Initialisation des services
+      initializingObjects: Initialisation des objets du jeu
+      readingCloudData: Lecture des données serveur
+      loadingCharactersFromCloud: Chargement des personnages depuis le serveur
+      dataLoadingComplete: Chargement des données terminé !
+      initializingDatabases: Initialisation des bases de données
+      cleaningUpData: Nettoyage des données
+      initializingPlayer: Initialisation des données du joueur
+      readingLocalGameData: Lecture des données de jeu locales
+  tools:
+    phrases:
+      noToolEquipped: Aucun outil équipé dans cet emplacement.
+      lockedToolSlot: Emplacement d'outil verrouillé jusqu'au <c>niveau de personnage
+        {level}</c>.
+      emptyToolSlot: Emplacement d'outil vide
+  treasury:
+    phrases:
+      openAll: Tout ouvrir
+      noItems: Vous n'avez aucun coffre à ouvrir. Vous pouvez obtenir des coffres
+        depuis différentes activités.
+      openChest: Ouvrir
+  popupBubbles:
+    phrases:
+      arrivedToLocation: Arrivé à <object id={location} />
+      overEncumbered: Votre inventaire est plein et vous êtes surchargé.
+  wardrobe:
+    phrases:
+      noEyeAccessories: Vous ne possédez aucun accessoire oculaire.
+      noFaceAccessories: Vous ne possédez aucun accessoire de visage.
+      noHeadwear: Vous ne possédez aucun accessoire de tête.
+      noBackAccessories: Vous ne possédez aucun accessoire dorsal.
+  jobs:
+    dialogs:
+      abandonJob:
+        title: Abandonner la mission
+        text: Êtes-vous sûr de vouloir abandonner cette mission ? Vous perdrez toute
+          progression ainsi que les objets et récompenses associés.
+    phrases:
+      rewards: Récompenses de mission
+      acceptJob: Accepter la mission
+      abandonJob: Abandonner la mission
+      acceptedJobs: Missions actives <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      noJobsAvailable: "Il n'y a actuellement pas de mission disponible dans ce lieu.
+        De nouvelles missions seront disponibles dans :"
+      refreshIn: 'Le tableau de missions sera actualisé dans :'
+      itemsFromBank: Objets à la banque
+      itemsFromInventory: Objets dans l'inventaire
+      hasNoBank: Il n'y a pas de banque dans ce lieu.
+      hasNoItemsInInventory: Il n'y a pas d'objet approprié dans votre inventaire.
+      hasNoItemsInBank: Il n'y a pas d'objet approprié dans votre banque.
+      giveItems: Livrer les objets
+      give: Livrer
+      openJournal: Ouvrir le journal
+      youMustBeInLocation: Vous devez être au même endroit que <object id="{obj}"/>
+        pour livrer les objets.
+      youMustBeInLocationToCollect: Vous devez être au même endroit que <object id="{obj}"/>
+        pour réclamer la récompense.
+      collectRewards: Réclamer la récompense
+  cooldowns:
+    phrases:
+      cooldownRemaining: 'Temps de recharge restant :'
+      followingMustBeTrueToTick: 'Ces conditions doivent être remplies pour que le
+        temps de recharge diminue :'
+      cooldownReady: 'Temps de recharge : Prêt'
+      noCooldown: Aucun temps de recharge.
+      followingMustBeTrueToUse: "Les conditions d'utilisation ne sont pas remplies
+        :"
+  journal:
+    phrases:
+      jobs: Missions
+    info:
+      jobInfo: Les missions sont <c>des tâches simples et répétables</c> que vous
+        pouvez compléter afin d'obtenir des récompenses. Vous pouvez accepter des
+        missions depuis les <c>tableaux de missions</c> situés à divers endroits,
+        comme les villes. Vous pouvez avoir jusqu'à trois missions actives à la fois.
+  faction:
+    phrases:
+      openFaction: Ouvrir la faction
+  characterCreation:
+    phrases:
+      bodyType: Type de corps
+      bodyTypeB: B
+      characterName: Nom de personnage
+      bodyTypeA: A
+      race: Origine
+      chooseABodyType: Choisir un type de corps
+    info:
+      rememberSwipe: Rappelez-vous que vous pouvez revenir en arrière à tout moment
+        durant la création du personnage pour modifier les options choisies.
+  settings:
+    categories:
+      accessibility:
+        title: Accessibilité
+        leftHandedMode: Mode gaucher
+      account:
+        title: Compte
+        visibility: Visibilité du profil
+      gameplay:
+        title: Jouabilité
+        stopWhenOverEncumberedDefault: S'arrêter quand surchargé par défaut
+        showFpsCounter: Montrer les IPS
+      notifications:
+        title: Notifications
+        stepCountInterval: Fréquence de notification
+        stepCountNotifications: Notifications de compte de pas
+        notificationType: Type de notification
+      dataSource:
+        title: Source de données
+        thisPhone: Cet appareil
+        otherSource: Autre appareil
+        requiresPermissionIos: Si le menu déroulant ci-dessous n'affiche aucun appareil,
+          assurez-vous d'avoir accordé à l'application l'autorisation d'utiliser les
+          données de pas d'Apple Health dans Réglages > Confidentialité et Sécurité
+          > Santé > (sous Apps) WalkScape et que Apple Health a enregistré des pas
+          sur ces appareils au cours des 7 derniers jours.
+        lastSync: 'Dernière sync : {timestamp}'
+        changeWarning:
+          title: Changer la source de données ?
+          description: Veuillez noter que cela peut causer une perte de pas le temps
+            d'effectuer la transition.
+      closedBeta:
+        useThisToClear: Utilisez ceci si vous souhaitez réinitialiser le graphique
+          de vos pas. Utile si vous avez obtenu des pas à cause de bugs.
+        clearStepsGraph: Effacer le graphique de pas
+        title: Bêta fermée
+      language:
+        title: Langue
+      character:
+        hideSteps: Masquer les pas
+        title: Personnage
+        anonOnLeaderboard: Anonyme sur le classement
+    phrases:
+      settings: Paramètres
+      exitToCharacterSelection: Retour à la sélection de personnage
+  gearSets:
+    phrases:
+      noActivitiesSelected: Aucune activité sélectionnée
+      optionsAndFilters: Options et filtres
+      sortBy: 'Trier par : '
+      toolSlot: Emplacement d'outil
+      level: 'Niv. '
+      gear: Équipement
+      tools: Outils
+      name: Nom
+      unequipTools: Enlever les outils
+      unequipGear: Enlever les équipements
+      noItemSelected: Pas d'objet sélectionné
+      newSetDefaultName: Mon ensemble d'équipement
+      gearSets: Ensembles d'équipement
+      copyCurrentlyEquippedGear: Copier l'équipement actuellement équipé
+      forActivities: 'Pour les activités : '
+      default: Défaut
+      importedGearSetDefaultName: Ensemble d'équipement importé
+      showAttributes: Montrer les attributs
+    errors:
+      keywordError: "L'ensemble contient déjà : <object id=\"{keyword}\" />"
+    info:
+      gearSetsListDesc: Vous pouvez gérer vos ensembles ici. Si vous souhaitez en
+        <c i=0>créer un nouveau</c>, appuyez sur le bouton ci-dessous. Vous pouvez
+        aussi <c i=1>copier l'équipement actuel</c>.
+      noGearSetsList: Vous n'avez encore aucun ensemble d'équipement. Appuyez sur
+        <c i=0>Gérer</c> pour créer ou importer de nouveaux ensembles.
+      youDontHaveAnyItems: Aucun objet. Vous ne possédez ou ne connaissez aucun objet
+        de ce type, ou alors votre recherche et vos filtres n'ont rien trouvé.
+      gearSetManageDesc: Choisissez un ensemble que vous souhaitez équiper ci-dessous.
+        Pour en créer, importer ou les modifier, vous pouvez appuyer sur <c i=0>Gérer</c>.
+      noGearSetsManage: Vous n'avez pas encore créé d'ensemble d'équipement. Créer
+        votre premier en appuyant sur le bouton <c i=0>Créer un nouveau</c> ci-dessous.
+      gearSetsDescription: Les ensembles vous aident à échanger rapidement entre vos
+        différents équipements.
+  worldMap:
+    phrases:
+      buildings: Bâtiments
+      information: Information
+      routeRequirementsNotMet: 'Des conditions de certaines routes de votre parcours
+        ne sont pas remplies :'
+      youHaveNotExplored: Vous n'avez pas encore exploré ce lieu. Vous pourrez voir
+        ses informations après votre première visite.
+      routeFromTo: De <location i="{fromID}"/> vers <location i="{toID}"/>
+      route: Route
+      youreHere: Vous êtes ici.
+      currentLocation: Lieu actuel
+      changeRouteWarning: Modifier votre parcours annulera votre voyage actuel et
+        vous ramènera au lieu précédent. Êtes-vous sûr ?
+      activities: Activités
+      noActivities: Il n'y a aucune activité disponible dans ce lieu.
+      pointsOfInterest: Points d'intérêt
+      afterExploring: Après avoir explorer le lieu, vous serez capable d'en voir les
+        points d'intérêt.
+      services: Services
+  stats:
+    phrases:
+      stats: Stats
+      totalSkillXp: XP de compétence totale
+      totalSteps: Total de pas
+    info:
+      stats: Une compilation de statistiques pour chacun de vos pas à travers le monde
+        d'Arenum.
+  tutorial:
+    phrases:
+      youWillGain: Vous obtiendrez la liste d'objet(s) suivante si vous sélectionnez
+        cette option.
+      noMoreMessages: Ne plus afficher de tutoriels
+  leaderboards:
+    phrases:
+      friends: Amis
+      everyone: Tout le monde
+      leaderboards: Classements
+      me: Moi
+      totalLevel: Niveau total
+      totalExperience: Expérience totale
+      achievementPoints: Points de succès
+      last: Dernier
+      show: Afficher
+      loadingPage: Chargement de la page...
+      totalSteps: Total de pas
+      first: Premier
+  shop:
+    phrases:
+      buying: Achat
+      selling: Vente
+      buyBack: Racheter
+      bought: Acheté
+      sold: Vendu
+      resetTrade: Réinitialiser l'échange
+  gear:
+    phrases:
+      combatModifiers: Modificateurs de combat
+      noCombatModifiers: Aucun modificateur de combat provenant des objets équipés.
+      skillModifiers: Modificateurs de compétence
+      noSkillModifiers: Aucun modificateur de compétence provenant des objets équipés.
+      permanentModifiers: Modificateurs permanents
+      noPermanentModifiers: Aucun modificateur permanent.
+  bank:
+    phrases:
+      deposit: Dépôt
+      noItemsInventory: Aucun objet dans votre inventaire.
+      noItemsBank: Aucun objet dans votre banque.
+      withdraw: Retrait
+  trade:
+    phrases:
+      restockIn: 'Arrivage dans : '
+      buying: Achat de {amount}
+      selling: Vente de {amount}
+      total: Total
+      trade: ÉCHANGER
+  social:
+    phrases:
+      pendingInvites: Invitations en attente
+      friends: Amis
+      manageFriends: Gérer les relations
