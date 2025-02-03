@@ -8,18 +8,19 @@ plurals:
           in anderen Objekten {n} mal referenziert.
         other: Das Löschen von Objekten ist nicht rückgängig zu machen. Das Objekt
           wird in anderen Objekten {n} mal referenziert.
-        two: '-'
+        two: 'Das Löschen des Objekts kann nicht rückgängig gemacht werden. Es wird
+          in {} anderen Objekten referenziert.'
         zero: '-'
-      title: Bist du dir sicher, dass du das löschen möchtest
+      title: Bist du dir sicher, dass du das löschen möchtest?
 singulars:
   messages:
     saveSuccesful:
       text: Deine Änderungen wurden erfolgreich gespeichert.
-      title: Speichern erfolgreich
+      title: Speichern erfolgreich!
     saveUnsuccesfullLootTables:
       text: Die Beutetabelle enthält Zeilen, die nicht mit einem Gegenstand verknüpft
         sind.
-      title: Speichern fehlgeschlagen
+      title: Speichern fehlgeschlagen.
     disabled:
       text: Diese Funktion wurde <hl>temporär deaktiviert</hl>. Weitere Informationen
         findest du auf Portal, Reddit oder Discord.
@@ -28,6 +29,11 @@ singulars:
       title: Demnächst
       text: Dieser Inhalt <hl>is nicht verfügbar</hl> in der aktuellen Version von
         WalkScape.
+    workInProgress:
+      title: In Bearbeitung
+      text: Dieses Feature ist noch in der Entwicklung, und viele seiner Funktionen
+        <hl>sind noch nicht freigeschaltet</hl>. Du kannst es bereits testen und später
+        zurückkommen, wenn alles umgesetzt wurde!
   popups:
     inactiveSteps:
       stepsWhileInactive: Schritte, während das Spiel inaktiv war
@@ -49,6 +55,7 @@ singulars:
         freigeschaltet.
       newRoute: <chip><stext><c i="0">Neue Reiseroute</c></stext></chip> <c i="1"><location
         id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c> freigeschaltet.
+      skillLevelUp: '{skillName} Levelaufstieg'
     idleSteps:
       gainedExperience: <skill skill="{skill}" /> erhielt <c>+{exp}</c> Erfahrung.
       stepsWhileAway: Schritte, während das Spiel geschlossen war
@@ -57,9 +64,16 @@ singulars:
       craftedItem: Stellte <c>+{amount}</c> <item id="{item}" /> her
       characterGained: Charakter erhielt <c>+{amount}</c> Erfahrung />
       arrivedAt: Angekommen bei <location /> <c>{location}</c>.
+      skillLeveledUp: <skill skill="{skill}" />hat sich von<c i="0">{from}</c> auf
+        <c i="1">{to}</c> verbessert.
+      gainedItem: Erhalten <c>+{amount}</c> <item id="{item}" />
+      gainedMoney: <c i="0">+{amount}</c> <c i="1">Münzen erhalten</c>
+      characterLeveledUpFrom: Der Charakter ist von <c i="0">{from}</c> auf <c i="1">{to}</c>
+        aufgestiegen.
     characterLevelUp:
       unlocks: Freischaltungen
       noNewUnlocks: Keine neuen Freischaltungen für dieses Level.
+      characterLevelUp: Levelaufstieg
   errors:
     fatalError:
       error: Entschuldigung für den Fehler. Denk daran, dass das Spiel eine geschlossene
@@ -75,16 +89,98 @@ singulars:
         nur Buchstaben, Zahlen und Leerzeichen erlaubt.
     serverError:
       noClosedBetaAccess:
-        title: Kein geschlossener Beta Zugang
-        text: Du hast keinen Zugang zur geschlossenen Beta. Entweder ist dein begrenzter
-          Zugang abgelaufen, oder du hattest nie welchen.
+        title: Der Zugang zur geschlossenen Beta ist abgelaufen.
+        text: Dein Zugang zur <c i=0>WalkScape Closed Beta ist abgelaufen</c>.. Du
+          kannst deinen Zugang wiedererlangen, indem du dich für die Closed Beta bewirbst
+          und in einer zukünftigen Welle akzeptiert wirst, oder sofort, indem du das
+          Spiel auf <c i=1>Patreon</c> oder <c i=1>Buy Me a Coffee</c> unterstützt.\n\nWenn
+          du dich entscheidest, das Spiel zu unterstützen, verlinke dein Patreon oder
+          Buy Me a Coffee auf der <c i=1>WalkScape Portal Account-Seite</c>, um wieder
+          Zugang zum Spiel zu erhalten. Du kannst dich auch direkt auf der Account-Seite
+          für den <c i=1>Beta-Zugang</c> bewerben.
       newClientUpdate:
         text: Dein Spiel ist veraltet und es ist eine neue Version des Spiels verfügbar.
           Bitte lade die neueste Version des Spiels herunter, um weiterzuspielen.
+        title: Ein Update für den Client ist verfügbar.
       noInternetConnection:
         title: Keine Internetverbindung
-        text: Du hast keine aktive Internetverbindung, die für die Validierung deines
-          Clients mit dem Server erforderlich ist. Bitte versuchen Sie es erneut,
-          wenn du eine Internetverbindung hast.
+        text: Die Verbindung zum Server wurde getrennt. Bitte prüfe deine Internetverbindung
+          und versuche es erneut.
       serverOffline:
         title: WalkScape Server is offline
+        text: Der Spielserver ist derzeit offline. Dies könnte auf Wartungsarbeiten
+          oder ein Problem mit dem Server zurückzuführen sein. Bitte versuche es später
+          erneut.
+      unauthorized:
+        title: Nicht berechtigt
+        text: Du hast keine Berechtigung. Bitte logge dich erneut ein.
+      invalidSession:
+        title: Sitzung ungültig
+        text: Deine Sitzung ist abgelaufen. Melde dich bitte erneut an.
+      bannedUser:
+        title: Dein Zugang zu WalkScape wurde dauerhaft gesperrt.
+        text: Du wurdest dauerhaft von WalkScape gesperrt. Wenn du der Meinung bist,
+          dass dies ein Fehler ist und die Entscheidung anfechten möchtest, kannst
+          du uns eine E-Mail an <c i=1>contact@walkscape.app</c> senden.
+      serverMaintenance:
+        title: WalkScape führt derzeit Wartungsarbeiten am Server durch
+        text: WalkScape führt derzeit Wartungsarbeiten am Server durch. Bitte versuche
+          es später erneut.
+      newUpdate:
+        title: Update verfügbar
+        text: Das Spiel wurde auf die neueste Version aktualisiert. Starte das Spiel
+          bitte neu, um das Update herunterzuladen.
+      unknownError:
+        title: Unbekannter Fehler.
+        text: Unbekannter Fehler.
+      connectionError:
+        title: Verbindungsfehler
+        text: Es konnte keine Verbindung zum Server hergestellt werden. Bitte überprüfe
+          deine Internetverbindung und versuche es erneut.
+      failureToUpdateContent:
+        title: Fehler beim Aktualisieren des Inhalts
+        text: Der Spiel-Client konnte den Inhalt nicht aktualisieren. Bitte melde
+          diesen Fehler den Entwicklern auf Discord und gib dabei Details zu deinem
+          Fehler und Gerät an. Du kannst auch versuchen, das Spiel erneut zu öffnen,
+          um zu sehen, ob der Inhalt erfolgreich heruntergeladen wird.
+    gameError:
+      loadingPlayerFailed:
+        title: Spieler konnte nicht geladen werden
+        text: Ungültige Spieldaten. Laden fehlgeschlagen. Bitte kontaktiere die Entwickler
+          über Discord oder per E-Mail.
+      stepLoadingFailed:
+        title: Schritte konnten nicht geladen werden
+        text: Der Spiel-Client konnte die Schritte nicht laden. Bitte melde dies den
+          Entwicklern auf Discord und gib dabei Details zu deinem Fehler und Gerät
+          an. Du kannst auch versuchen, das Spiel erneut zu öffnen, um zu sehen, ob
+          die Schritte erfolgreich geladen werden.
+    activityCancelled:
+      title: Aktivität abgebrochen
+      stepsAreInfinite: Die aktuelle Aktivität wurde gestoppt, da du die Anforderungen
+        nicht mehr erfüllst.
+  info:
+    game:
+      importGearSetFailed:
+        title: Ausrüstungsset konnte nicht importiert werden
+        text: Fehler beim Importieren des Ausrüstungssets. Die Daten könnten beschädigt
+          oder ungültig sein.
+      importGearSetTooManyTools:
+        title: Das Ausrüstungsset enthält zu viele Werkzeuge.
+        text: Das Ausrüstungsset enthält mehr Werkzeuge als zulässig.
+      changingActivityFailed:
+        title: Fehler beim Wechseln der Aktivität
+        text: Die Aktivität konnte nicht gewechselt werden. Entweder bist du schon
+          dabei oder sie steht nicht zur Verfügung.
+      withdrawZero:
+        text: Es ist nicht möglich, null oder weniger Gegenstände abzuheben.
+        title: Abheben nicht möglich
+      withdrawTooFew:
+        text: Du verfügst nicht über genügend Gegenstände, um sie abzuheben.
+        title: Abheben nicht möglich
+      withdrawDidNotExist:
+        title: Abheben nicht möglich
+        text: Der Gegenstand, den du abheben wolltest, ist nicht vorhanden. Ein erneutes
+          Öffnen der Bank sollte das Problem lösen.
+      withdrawFailed:
+        title: Abheben nicht möglich
+        text: Abheben nicht möglich. Bitte erneut versuchen.
