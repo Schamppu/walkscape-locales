@@ -29,6 +29,7 @@ maps:
       'showRecipesMaterialsAreMet': Materialanforderungen nicht erfüllt
       'showRecipesRequirementsAreMet': Levelanforderungen nicht erfüllt
       'showRecipesServiceAreMet': Serviceanforderungen nicht erfüllt
+      'showCompletedAchievements': Abgeschlossene Erfolge anzeigen
     visibilitySettings:
       'private': Privat
       'friends': Nur Freunde
@@ -42,7 +43,16 @@ maps:
     languages:
       'en': Englisch
       'de': Deutsch
-      'fi': Suomi
+      'fi': Finnisch
+      'pl': Polnisch
+      'es': Spanisch
+      'it': Italienisch
+      'fr': Französisch
+      'zh_Hans': Chinesisch (vereinfacht)
+      'sv': Schwedisch
+      'nl-NL': Niederländisch
+      'pt': Portugiesisch
+      'tr': Türkisch
     notificationImportance:
       'low': Kein Ton, keine Vibration und wird nicht in der Statusleiste angezeigt.
       'high': Macht einen Ton oder vibriert
@@ -65,6 +75,9 @@ maps:
         'nose': Nase
         'hair': Haarschnitt
         'outfit': Outfit
+        'faceAccessory': Gesichtsaccessoires
+        'backAccessory': Rückenaccessoires
+        'eyeAccessory': Augenzubehör
       raceTypes:
         'none': Keine
         'human': Mensch
@@ -81,6 +94,19 @@ maps:
         'smirk': Grinsen
         'surprise': Überrascht
         'veryAngry': Sehr wütend
+  shop:
+    phrases:
+      itemType:
+        'container': Behälter
+        'loot': Beute
+        'consumable': Verbrauchsgegenstände
+        'crafted': Hergestellt
+        'collectible': Sammelgegenstände
+        'cosmetic': Kosmetika
+        'special': Besonderes
+        'tool': Werkzeuge
+        'gear': Ausrüstung
+        'material': Materialien
 plurals:
   achievements:
     phrases:
@@ -142,6 +168,23 @@ plurals:
         few: '-'
         many: '-'
         other: Schritte bis zur Ankunft
+  inventory:
+    info:
+      consumableDuration:
+        one: Aktivität <object id="{activity}" alwaysShow="true"/> erfordert <c>{steps}</c>
+          Schritte pro Aktion. Die gewählte Menge an Verbrauchsmaterialien würde <c>{actions}
+          Aktionen</c> verstärken.
+        many: '-'
+        two: Aktivität <object id="{activity}" alwaysShow="true"/> erfordert <c>{steps}</c>
+          Schritte pro Aktion. Die gewählte Menge an Verbrauchsmaterialien würde <c>{actions}
+          Aktionen</c> verstärken.
+        zero: Aktivität <object id="{activity}" alwaysShow="true"/> erfordert <c>{steps}</c>
+          Schritte pro Aktion. Die gewählte Menge an Verbrauchsmaterialien würde <c>{actions}
+          Aktionen</c> verstärken.
+        other: Aktivität <object id="{activity}" alwaysShow="true"/> erfordert <c>{steps}</c>
+          Schritte pro Aktion. Die gewählte Menge an Verbrauchsmaterialien würde <c>{actions}
+          Aktionen</c> verstärken.
+        few: '-'
 singulars:
   achievements:
     info:
@@ -185,6 +228,12 @@ singulars:
         Herstellung genutzt werden.
       showingRecipiesThatUses: Diese Rezepte nutzen
       requiresService: Benötigt einen Service.
+    errors:
+      noMaterials: Handwerksmaterialien fehlen
+      skillRequirementsNotMet: Fähigkeitsanforderungen nicht erfüllt
+      notSameQuality: Materialien müssen entweder alle von guter oder normaler Qualität
+        sein
+      noService: Serviceanforderung nicht erfüllt
   inventory:
     info:
       noItemEquipped: Kein Gegenstand ausgerüstet. \n\n Du kannst einen Gegenstand
@@ -196,8 +245,8 @@ singulars:
       treasury: Schätze
       longPressTip: <c>Tipp:</c> Lange auf einen Stapel Gegenstände zu drücken wählt
         alle ähnlichen Stapel aus.
-      itemsInUse: Du hast Gegenstände ausgewählt die bereits genutzt werden. Du kannst
-        keine Gegenstände fallenlassen und in die Bank tun, während sie genutzt werden.
+      itemsInUse: Du hast Gegenstände ausgewählt, die bereits in Gebrauch sind. Du
+        kannst keine Gegenstände ablegen oder in die Bank legen, die in Gebrauch sind.
       noItemEquipped: Kein Gegenstand ausgerüstet
       noConsumableSelected: Keine Verbrauchsgegenstände gewählt. Du kannst sie unten
         auswählen.
@@ -234,6 +283,8 @@ singulars:
       noConsumables: Keine Verbrauchsgegenstände in deinem Inventar.
       enableWhenBack: Wieder aktivieren, wenn eine Aktivität begonnen wird, bei der
         dies vorher verwendet wurde
+      noFoodConsumables: Kein <hl>Essen</hl> in deinem Inventar.
+      noPotionConsumables: Keine <hl>Tränke</hl> in deinem Inventar.
     options:
       consenseInventory: Inventar verkleinern
       expandInventory: Inventar erweitern
@@ -247,21 +298,37 @@ singulars:
       buildings: Gebäude
       noActivites: An diesem Ort sind keine Aktivitäten verfügbar.
       factions: Fraktionen
+      jobBoard: Jobbörse
+      routes: Routen
+      tapToShowRoutes: Tippen, um die Routen anzuzeigen
+      jobs: Jobs
   activity:
     info:
       consumablesUsage: Du kannst ein <c>Nahrungsmittel</c> und einen <c>Trank</c>
         auswählen, die du bei deinen Aktivitäten verwenden kannst.
+      savedSteps: Du hast gespeicherte Schritte, die nun verbraucht werden. Jeder
+        Schritt zählt als zwei, bis alle gespeicherten Schritte aufgebraucht sind.
+      noActivity: Derzeit ist keine Aktivität ausgewählt. <hl>Wähle eine unten aus</hl>,
+        oder wische nach links, um alle verfügbaren Optionen an diesem Ort zu sehen.
     phrases:
       consumables: Verbrauchsgegenstände
+      inventoryIsOverLimit: Inventar ist über dem Limit!
+      noActivity: Keine Aktivität
+      savedSteps: Gespeicherte Schritte
+      stopWhenOverEncumbered: Beenden, wenn überladen
+      options: Optionen
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Globale Arbeitseffizienz<c>-{penalty}%</c>
+      notAffectingTraveling: (Beeinflusst nicht die Reiseeffizienz)
   character:
     info:
       skillBreakdown: Hier siehst du alle Skills, die dein Charakter während deiner
         Reise aufgelevelt hat.
     phrases:
-      skills: Skills
+      skills: Fähigkeiten
       stepsOfLastWeek: Schritte der letzten 7 Tage
       checkOutSubject: Sieh dir meinen Fortschritt in WalkScape an!
       checkOut: Das ist mein WalkScape Charakter {name}. Sieh ihn dir an!\nhttps://walkscape.app
+      totalLevel: Gesamtlevel
   permissions:
     phrases:
       permissionExplanation: Damit das Spiel funktioniert, brauchen wir die Erlaubnis,
@@ -295,8 +362,23 @@ singulars:
       gameplay:
         title: Gameplay
         stopWhenOverEncumberedDefault: Standartmäßig beenden wenn überlastet
+        showFpsCounter: FPS-Zähler anzeigen
       language:
         title: Sprache
+      dataSource:
+        lastSync: 'Letzte Synchronisierung: {timestamp}'
+        changeWarning:
+          title: Datenquelle ändern?
+          description: Bitte beachten Sie, dass dies zu einem Verlust von Schritten
+            um den Zeitpunkt der Änderung herum führen kann.
+        title: Datenquelle
+        thisPhone: Dieses Telefon
+        requiresPermissionIos: Wenn das Dropdown unten keine externen Geräte anzeigt,
+          stelle sicher, dass du der App in den Einstellungen unter “Datenschutz &
+          Sicherheit” > “Health” > (unter Apps) WalkScape die Erlaubnis gegeben hast,
+          Schritt-Daten von Apple Health zu verwenden, und dass Apple Health in den
+          letzten 7 Tagen Schritte auf diesen Geräten registriert hat.
+        otherSource: Andere Quelle
     phrases:
       settings: Einstellungen
       exitToCharacterSelection: Zur Charaktererstellung zurückgehen
@@ -310,6 +392,9 @@ singulars:
       enableFacepaint: Gesichtsbemalung aktivieren
       choose: Wählen
       enableDynamicBackground: Dynamischen Hintergrund aktivieren
+      enableBackAccessory: Rückenaccessoire aktivieren
+      enableFaceAccessory: Gesichtsaccessoire aktivieren
+      enableEyeAccessory: Augenzubehör aktivieren
     phrases:
       extras: Extras
       defaultExpression: Standard Gesichtsausdruck
@@ -341,6 +426,9 @@ singulars:
       currentLocation: Aktueller Standort
       routeRequirementsNotMet: 'Routen auf deinem gewählten Weg haben Anforderungen
         die nicht erfüllt sind:'
+      noActivities: An diesem Ort sind keine Aktivitäten verfügbar.
+      changeRouteWarning: Das Ändern deiner Route wird deine aktuelle Reise abbrechen
+        und dich zum vorherigen Standort zurückbringen. Bist du sicher?
   stats:
     phrases:
       totalSkillXp: Gesamte Skill Erfahrung
@@ -388,7 +476,7 @@ singulars:
       register: Registrieren
       logIn: Anmelden
       pleaseEnterCredentials: Bitte gib deine WalkScape Anmeldedaten ein.
-      email: E-Mail
+      email: E-Mail / Benutzername
       password: Passwort
       noBetaAccess: Kein Beta Zugang.
       downloadingLocalisations: Lade aktualisierte Lokalisierungen herunter
@@ -398,6 +486,25 @@ singulars:
       lostInternet: Dein Gerät hat die Internetverbindung verloren. Warte auf eine
         Verbindung...
       deletingCharacter: Deinen Charakter zu löschen ist <hl>unwiderruflich</hl>.
+      support: Unterstützen das Spiel
+      testFlight: Du kannst die neueste Version von <c>TestFlight</c> herunterladen.
+      accountPage: Benutzeraccount-Seite
+    loadingStates:
+      initializingProviders: Anbieter werden initialisiert
+      localizationFiles: Laden der Lokalisierungsdateien
+      gameVersion: Spielversion abrufen
+      startingGameLoad: Lade die Spieldaten…
+      checkingLocalizations: Lokalisierungen vom Server werden überprüft
+      loadingComplete: Laden abgeschlossen!
+      initializingObjects: Spielobjekte werden initialisiert
+      initializingDatabases: Datenbank wird initialisiert
+      readingCloudData: Cloud-Daten werden gelesen
+      cleaningUpData: Daten werden bereinigt
+      dataLoadingComplete: Laden der Daten abgeschlossen!
+      loadingCharactersFromCloud: Charaktere werden aus der Cloud geladen
+      initializingPlayer: Spielerdaten initialisiert
+      validatingGame: Die Spieldaten vom Server werden validiert
+      readingLocalGameData: Lokale Spieldaten werden gelesen
   social:
     phrases:
       pendingInvites: Ausstehende Einladungen
@@ -428,7 +535,7 @@ singulars:
   trade:
     phrases:
       trade: TAUSCHEN
-      restockIn: 'Wiederauffüllen in: {time}'
+      restockIn: 'Aufstocken in: {time} '
       buying: '{amount} kaufen'
       selling: '{amount} verkaufen'
       total: Gesamt
@@ -464,6 +571,8 @@ singulars:
     phrases:
       noItemsInventory: Keine Items in deinem Inventar.
       noItemsBank: Keine Items in deiner Bank.
+      deposit: Einzahlen
+      withdraw: Entnehmen
   characterCreation:
     phrases:
       bodyType: Körpertyp
@@ -478,3 +587,90 @@ singulars:
   jobs:
     phrases:
       rewards: Belohnung fürs beenden
+      noJobsAvailable: 'An diesem Ort sind derzeit keine Jobs verfügbar. Neue Jobs
+        sind verfügbar in:'
+      acceptJob: Job annehmen
+      abandonJob: Job abbrechen
+      acceptedJobs: Aktuell angenommene Jobs<chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      openJournal: Journal öffnen
+      itemsFromInventory: Gegenstände aus dem Inventar
+      itemsFromBank: Gegenstände von der Bank
+      collectRewards: Belohnungen erhalten
+      hasNoBank: An diesem Ort gibt es keine Bank.
+      hasNoItemsInInventory: Es befinden sich keine passenden Gegenstände in deinem
+        Inventar.
+      hasNoItemsInBank: Es befinden sich keine passenden Gegenstände in deiner Bank.
+      giveItems: Gegenstände übergeben
+      give: Gib
+      youMustBeInLocation: Du musst sich am gleichen Ort wie die <object id="{obj}"/>
+        befinden, um Gegenstände zurückzugeben.
+      refreshIn: 'Die Jobbörse wird aktualisiert in:'
+      youMustBeInLocationToCollect: Du musst sich am gleichen Ort wie die <object
+        id="{obj}"/> befinden, um Belohnungen entgegenzunehmen.
+    dialogs:
+      abandonJob:
+        title: Job abbrechen
+        text: Bist du sicher, dass du diesen Job abbrechen möchtest? Du wirst allen
+          Fortschritt und alle Belohnungen dieses Jobs verlieren.
+  popupBubbles:
+    phrases:
+      arrivedToLocation: Angekommen in <object id={location} />
+      overEncumbered: Dein Inventar ist voll und du bist überladen.
+  faction:
+    phrases:
+      openFaction: Fraktion öffnen
+  journal:
+    phrases:
+      jobs: Jobs
+    info:
+      jobInfo: Jobs sind <c>einfache und wiederholbare Aufgaben</c>, die du erledigen
+        kannst, um Belohnungen zu erhalten. Du kannst Jobs von <c>Jobbörsen</c> an
+        verschiedenen Orten, wie Städten, annehmen. Du kannst gleichzeitig bis zu
+        drei aktive Jobs haben.
+  shop:
+    phrases:
+      buying: Kaufen
+      selling: Verkaufen
+      buyBack: Zurückkaufen
+      bought: Gekauft
+      sold: Verkauft
+      resetTrade: Handel zurücksetzen
+  gearSets:
+    phrases:
+      gearSets: Ausrüstungs-Sets
+      copyCurrentlyEquippedGear: Aktuell ausgestattete Ausrüstung kopieren
+      forActivities: 'Für Aktivitäten: '
+      noActivitiesSelected: Keine Aktivitäten ausgewählt
+      optionsAndFilters: Optionen & Filter
+      sortBy: 'Sortieren nach: '
+      toolSlot: Werkzeug Slot
+      default: Standard
+      level: 'Lvl. '
+      showAttributes: Attribute anzeigen
+      gear: Ausrüstung
+      tools: Werkzeuge
+      name: Name
+      unequipGear: Ausrüstung ablegen
+      unequipTools: Werkzeuge ablegen
+      noItemSelected: Kein Gegenstand ausgewählt
+      newSetDefaultName: Mein neues Ausrüstungs-Sets
+      importedGearSetDefaultName: Importiertes Ausrüstungs-Sets
+    info:
+      gearSetsDescription: Ausrüstungssets helfen dir, schnell zwischen verschiedenen
+        Ausrüstungen zu wechseln.
+      noGearSetsManage: Du hast noch keine Ausrüstungssets erstellt. Erstelle dein
+        erstes, indem du auf den <c i=0>Neues erstellen</c> Button unten drückst.
+      noGearSetsList: Du hast noch keine Ausrüstungssets. Wähle <c i=0>Verwalten</c>,
+        um neue Ausrüstungssets zu erstellen oder zu importieren.
+      youDontHaveAnyItems: Keine Gegenstände. Entweder kennst du keine oder hast keine
+        Gegenstände dieses Typs, oder deine Filter und die Suche haben keine passenden
+        Ergebnisse geliefert.
+      gearSetManageDesc: Wähle von unten ein Ausrüstungsset aus, das du ausrüsten
+        möchtest. Um deine Ausrüstungssets zu erstellen, zu importieren oder zu bearbeiten,
+        kannst du auf <c i=0>Verwalten</c> drücken.
+      gearSetsListDesc: Hier kannst du deine Ausrüstungssets verwalten. Wenn du ein
+        <c i=0>neues erstellen</c> möchtest, klicke auf den Button unten. Du kannst
+        auch deine <c i=1>aktuell ausgestattete Ausrüstung kopieren</c>, wenn du ein
+        neues Ausrüstungsset erstellst.
+    errors:
+      keywordError: 'Ausrüstungs-Sets hat bereits: <object id="{keyword}" />'
