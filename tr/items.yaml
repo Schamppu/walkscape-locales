@@ -439,12 +439,21 @@ singulars:
       foraging:
         copperSickle:
           name: Bakır orak
+          desc: Sıradan bitkileri keserken mütevazı bir verim sunar.
         ironSickle:
           name: Demir orak
+          desc: Sağlam ve güvenilir. Sert sapları bile kolayca keser geçer.
         steelSickle:
           name: Çelik orak
+          desc: Güçlü ve dayanıklı. Daha gelişmiş toplayıcılık yöntemleri için güvenilir
+            bir performans sunar.
         stoneSickle:
-          name: Taş orak
+          name: Basit orak
+          desc: Doğanın armağanlarını biçmeye yarayan basit bir alet. Pürüzlü kenarı
+            çok da etkili sayılmaz.
+        hydriliumSickle:
+          name: Hidrilyum orak
+          desc: Hidrilyum adındaki nadir su altı malzemesinden yapılmış bir orak.
       mining:
         basicPickaxe:
           desc: Basit kazma, madencilerin mütevazı aletidir. Bir sopa, bir taş ve
@@ -916,8 +925,15 @@ singulars:
     crafting:
       rope:
         desc: Acil durum çantasında halat olmazsa olmaz. Bazı basit aletleri yapmak
-          için mutlaka lazım.
+          için mutlaka lazım bir şey.
         name: Halat
+      hydrilium:
+        name: Hidrilyum
+        desc: Bu acayip malzeme, volkanik taş ve su yosununun deniz atölyelerinde
+          birleştirilmesiyle yapılır.
+      kelpRope:
+        name: Yosun halat
+        desc: Halat olarak örülmüş uzun su yosunu iplikleri.
     foraging:
       acidSapling:
         desc: Taş çatlasa kısa bir çubuk kadar uzayan bu koyu sarı renkli fidan, temas
@@ -1110,15 +1126,30 @@ singulars:
     misc:
       clam:
         desc: İnci kadar beyaz ve sapasağlam. Koleksiyoncular için güzel bir örnek.
+        name: İstiridye
       crosswordPuzzle:
-        desc: Kelime oyunu, altı harfli, Ç ile başlıyor.
+        desc: Kelime bulmacası, altı harfli, ilk harfi "Ç".
         name: Eski çengel bulmaca
       seashell:
         desc: Muhtemelen kumsaldaki birisi satmıştır.
         name: Deniz kabuğu
       trash:
-        desc: İşe yaramaz ve değersiz eşya yığını. Bunu neden topladın ki?
+        desc: İşe yaramaz ve değersiz eşya öbeği. Bunu neden topladın ki?
         name: Çöp
+      fishbone:
+        name: Kılçık
+        desc: Hem tiksinç gelse hem de kötü kokuyor olsa bile aslında görüntüsü pek
+          bir hoş.
+      pearls:
+        name: İnci
+        desc: Bir sıra gerçek inci. Mücevher yapmak için harika bir malzeme.
+      glacierMap:
+        name: Gizemli kuzey haritası
+        desc: Bu harita Jarvonya'nın kuzey kısmına benziyor. Kırmızıyla çizilmiş yeri
+          ise üzerinde iglu bulunan buzula giden bir yol gibi.
+      fishingLine:
+        name: Misina
+        desc: Bunu doğadan geri toplayarak bir hayvanın hayatını kurtarmış olabilirsin.
     rawFish:
       rawCarp:
         desc: Sazanın hafif aroması, çeşit çeşit yemek tarifine kolayca uyum sağlar.
@@ -1270,3 +1301,31 @@ singulars:
       sturdyBranch:
         name: Sağlam dal
         desc: Anormal şekilde sağlam bir dal.
+    hunting:
+      bones:
+        name: Kemik
+        desc: Birkaç kemik parçası.
+      sinew:
+        name: Sinir
+        desc: Kasları kemiklere bağlayan sert ve lifsi doku.
+      animalMeat:
+        name: Hayvan eti
+        desc: Bir parça taze et. Pişirmeye, kurutmaya veya tuzlamaya hazır.
+      lizardTail:
+        name: Kertenkele kuyruğu
+        desc: Savunma mekanizması olarak bırakılmış bir kertenkele kuyruğu.
+      feather:
+        name: Tüy
+        desc: Güzel, hafif ve aerodinamik bir kuşun tüyü.
+      darkfeather:
+        name: Kara tüy
+        desc: Kara bir kuş tüyü. Muhtemelen bir kargaya, kuzguna ya da başka bir siyah
+          kuşa aitti.
+      animalFur:
+        name: Hayvan kürkü
+        desc: Bu hayvan kürkü parçası yumuşacıktır ve olur da kıyafete çevrilirse
+          sıcacık tutar.
+    tailoring:
+      aerodynamicThread:
+        name: Aerodinamik iplik
+        desc: Hafif ama kuvvetli olmasıyla bilinen nadir bir iplik.
