@@ -5,6 +5,10 @@ singulars:
     inviteSent: Einladung versendet
     inviteReceived: Du hast eine Einladung erhalten
     none: Soziales
+    party:
+      member: Mitglied
+      admin: Admin
+      owner: Eigentümer
   actions:
     buttonLabels:
       removeFriend: Freund entfernen
@@ -15,10 +19,14 @@ singulars:
         accept: Akzeptieren
         reject: Ablehnen
         block: Blockieren
+      createParty: Gruppe erstellen
+      leaveParty: Gruppe verlassen
+      leaveAndDestroyParty: Gruppe verlassen und auflösen
     confirmTitle:
       unblock: Nutzer entblocken
       inviteResponse:
         block: Nutzer blockieren
+      changeRole: Berechtigung ändern
     confirmDescription:
       removeFriend: Bist du dir sicher, dass ihr keine Freunde mehr sein sollt?
       unblock: Bist du dir sicher, dass du diesen Nutzer entblocken willst?
@@ -27,5 +35,31 @@ singulars:
       inviteResponse:
         block: Bist du dir sicher, dass du diesen Nutzer blockieren willst? Blockierte
           Nutzer können dir keine Freundschaftseinladung mehr schicken.
+      changeRole: Bist du sicher, dass du <hl>{characterName}</hl> zu einem <hl>{partyRole}</hl>
+        machen möchtest?
+      leaveAndDestroyParty: Bist du sicher, dass du die Gruppe verlassen und auflösen
+        möchtest? Diese Aktion kann nicht rückgängig gemacht werden.
+      leaveParty: Bist du sicher, dass du die Gruppe verlassen möchtest?
   status:
     loadingInvites: Suche nach Einladungen...
+  party:
+    manage: Verwalten
+    role: Rolle
+  createParty:
+    input:
+      partyName: Name der Gruppe
+      catchphrase: Schlagwort
+      catchphraseHint: Schlagwort (Optional)
+    rules:
+      mayContain: '<bp />Kann enthalten: {list}'
+      noTrailingSpaces: <bp />Kann nicht mit einem Leerzeichen beginnen oder enden
+plurals:
+  createParty:
+    rules:
+      maxChar:
+        one: <bp />Höchstens {} Charakter
+        other: <bp />Höchstens {} Charaktere
+      minChar:
+        zero: '-'
+        one: <bp />Mindestens {} Charakter
+        other: <bp />Mindestens {} Charaktere
