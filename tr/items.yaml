@@ -439,12 +439,21 @@ singulars:
       foraging:
         copperSickle:
           name: Bakır orak
+          desc: Sıradan bitkileri keserken mütevazı bir verim sunar.
         ironSickle:
           name: Demir orak
+          desc: Sağlam ve güvenilir. Sert sapları bile kolayca keser geçer.
         steelSickle:
           name: Çelik orak
+          desc: Güçlü ve dayanıklı. Daha gelişmiş toplayıcılık yöntemleri için güvenilir
+            bir performans sunar.
         stoneSickle:
-          name: Taş orak
+          name: Basit orak
+          desc: Doğanın armağanlarını biçmeye yarayan basit bir alet. Pürüzlü kenarı
+            çok da etkili sayılmaz.
+        hydriliumSickle:
+          name: Hidrilyum orak
+          desc: Hidrilyum adındaki nadir su altı malzemesinden yapılmış bir orak.
       mining:
         basicPickaxe:
           desc: Basit kazma, madencilerin mütevazı aletidir. Bir sopa, bir taş ve
@@ -856,70 +865,100 @@ singulars:
   materials:
     carpentry:
       birchPlank:
-        desc: Pürüzsüz ve soluk renkli huş kerestesi, temiz ve hafif odunsu görünümüyle
-          sade bir zarafete örnek teşkil eder.
-        name: Huş kerestesi
+        desc: Pürüzsüz ve soluk renkli huş kereste, hem temiz hem de hafif odunumsu
+          görünümüyle sade bir zarafete örnek teşkil eder.
+        name: Huş kereste
       mangrovePlank:
-        name: Mangrov kerestesi
+        name: Mangrov kereste
       maplePlank:
-        desc: Estetik ve davetkar akçaağaç kerestesi, pürüzsüz, açık renkli bir yüzeye
-          sahiptir ve her projeye ince bir dokunuş katar.
-        name: Akçaağaç kerestesi
+        desc: Göze hitap eden akçaağaç kereste, pürüzsüz va açık renkli bir yüzeye
+          sahiptir. Her projeye ince bir dokunuş katar.
+        name: Akçaağaç kereste
       oakPlank:
-        desc: Zengin, kahvemsi ve göze çarpan karmaşık damarlı desenleriyle öne çıkan
-          marangozluk projeleri için hiç eskimeyen bir seçim.
-        name: Meşe kerestesi
+        desc: Zengin, kahvemsi ve göze çarpan karmaşık desenleriyle, öne çıkan marangozluk
+          projeleri için asla eskimeyecek bir seçim.
+        name: Meşe kereste
       pinePlank:
-        desc: Sıcak ve toprak rengi tonlarıyla öne çıkan çam kerestesi, doğal damarlı
-          deseniyle sade bir cazibe yayar.
-        name: Çam kerestesi
+        desc: Sıcak ve toprak rengi tonlarıyla öne çıkan çam kereste, doğal damarlı
+          desenleriyle rustik bir cazibe yayar.
+        name: Çam kereste
       sprucePlank:
-        desc: İnce ahşap damarlı dokusuyla ladin kerestesi, temiz ve klasik görünümüyle
-          zarafet hissi uyandırır.
-        name: Ladin kerestesi
+        desc: İnce ağaç damarı dokusuyla ladin kereste, temiz ve klasik görünümüyle
+          albenisini gösterir.
+        name: Ladin kereste
       teakPlank:
-        name: Tik kerestesi
+        name: Tik kereste
+        desc: Dayanıklılığı ve altına çalan göz alıcı kahverengi tonuyla, tik kereste
+          sağlam ve güzel sonuçlar almak için en iyi seçimlerden biridir.
       willowPlank:
-        name: Söğüt kerestesi
+        name: Söğüt kereste
+      woodScrap:
+        desc: Düşük kaliteli odun fazlası.
+        name: Odun parçası
+      woodShaving:
+        name: Odun yongası
+        desc: Orta kaliteli odun fazlası.
+      woodFragment:
+        name: Odun parçası
+        desc: Yüksek kaliteli odun fazlası.
+      coralPlank:
+        name: Mercan kereste
+        desc: En büyük mercanlardan yapılmış bir kereste. Hem yüzeyde hem de su altında
+          dayanıklı.
     cooking:
       milk:
-        desc: İnekten, keçiden veya deveden. Yoksa bademden mi çıkarılmış? Nereden
-          bulduğunu sadece sen bilirsin.
+        desc: İneğin, keçinin veya devenin kendisinden. Yoksa bademden mi çıkarılmış?
+          Nereden bulduğunu anca sen bilirsin.
         name: Süt
       salt:
-        desc: Her bir tanesi, unutulmuş okyanusların parçasıdır. Arındırma, muhafaza
-          ve her yemeğe bir tutam sihir katma gücüyle doludur.
+        desc: Tuz, bütün Arenum'daki en yaygın lezzetlendiricidir.
         name: Tuz
+      honey:
+        name: Bal peteği
+        desc: Bu işlenmemiş petekten taze bal damlıyor.
+      carrot:
+        name: Havuç
+        desc: Gözlere faydalı olduğu söylenir.
+      mushroom:
+        name: Mantar
+        desc: Bu mantar aslında teknik olarak sebze sayılır.
     crafting:
       rope:
         desc: Acil durum çantasında halat olmazsa olmaz. Bazı basit aletleri yapmak
-          için mutlaka lazım.
+          için mutlaka lazım bir şey.
         name: Halat
+      hydrilium:
+        name: Hidrilyum
+        desc: Bu acayip malzeme, volkanik taş ve su yosununun deniz atölyelerinde
+          birleştirilmesiyle yapılır.
+      kelpRope:
+        name: Yosun halat
+        desc: Halat olarak örülmüş uzun su yosunu iplikleri.
     foraging:
       acidSapling:
-        desc: En fazla kısa bir çubuk boyunda olan bu koyu sarı fidan, temas edince
-          sanki cildinizi yakar.
-        name: Asit fidanı
+        desc: Taş çatlasa kısa bir çubuk kadar uzayan bu koyu sarı renkli fidan, temas
+          edenlerin cildini yakar.
+        name: Hamız fidanı
       berries:
-        desc: Dara düşünce karnını doyurmaya yarayabilir. Veya mutfakta harikalar
+        desc: Dara düşünce açlığını bastırabilir. Veya mutfakta elinden harikalar
           çıkarırken malzeme olarak kullanabilirsin.
         name: Yemiş
       catsBell:
-        desc: Rüzgarla savrulduğu zaman üç sarı çiçeği olan basit gövdesinden güzel
-          bir ses çıkar.
+        desc: Üç sarı çiçeği olan basit gövdesi rüzgarda sallanınca güzel bir ses
+          çıkarır.
         name: Kedi zili
       cotton:
         desc: Nazik bir dokunuş ve rahatlatıcı bir his sunan yumuşak ve kabarık malzeme.
         name: Pamuk
       deathsToll:
-        desc: Hoş görünebilir ama ben olsam bu haliyle tüketmezdim.
+        desc: Ne kadar hoş görünse de ben olsam bu halini yemezdim.
         name: Ölüm çanı
       flax:
         desc: Güçlü iplikler veren hassas mavi çiçek. Kumaş üretimi için mükemmel.
         name: Keten
       hemp:
-        desc: Çok yönlü lifleri ve pratik kullanım alanlarıyla meşhur olan, ince saplı,
-          uzun boylu ve yapraklı bir bitki.
+        desc: Çok işlevli lifleri ve pratik kullanım alanlarıyla meşhur olan, ince
+          saplı, uzun boylu ve yapraklı bir bitki.
         name: Kenevir
       iceplum:
         desc: Morun tonlarında parıldayan, dış kabuğu donmuş küçük bir meyve.
@@ -932,20 +971,19 @@ singulars:
           bitki.
         name: Isırgan
       nightgem:
-        desc: Koyu renkli cevheri etrafındaki tüm ışığı manyetik bir şekilde emiyor
-          gibi.
-        name: Gecevher
+        desc: Koyu renkli cevheri etrafındaki tüm ışığı sanki mıknatıs gibi çekiyor.
+        name: Gecevheri
       rotbud:
-        desc: Yer mantarı domuzları nasıl kendine çekerse, çöpdomur da Büyük Bataklar'daki
+        desc: Yer mantarı domuzları nasıl kendine çekerse, pisdomur da Büyük Bataklar'daki
           buçuklukları öyle kendine çeker.
-        name: Çöpdomur
+        name: Pisdomur
       shadowLeaf:
-        desc: Koyu yaprakları dokununca veya ışık görünce ufalanıverir. En iyisi karanlık
+        desc: Koyu yaprakları ne dokunmaya ve de ışığa dayanamaz. En iyisi karanlık
           bir yerde saklamak.
         name: Gölge otu
       silkwormSilk:
-        desc: O kadar kaliteli bir ipek ki kıtayı boydan boya saran bir ticaret yolu
-          inşa etmeye mecbur bırakabilir.
+        desc: O kadar kaliteli bir ipek ki kıtanın başından sonuna uzanan bir ticaret
+          yolu kurmaya mecbur bırakabilir.
         name: İpek böceği ipeği
       snowdrop:
         desc: Kışın açan minik beyaz çiçek. Umudun ve yeni başlangıçların narin bir
@@ -956,38 +994,69 @@ singulars:
           tutmak adettendir.
         name: Yıldız çiçeği
       stone:
-        desc: Bir taş. Belki bununla hayatta kalmana yardımcı olacak bir şey yapabilirsin.
+        desc: Bir taş. Belki bununla hayatta kalmana yardım edecek bir şey yapabilirsin.
         name: Taş
       sunblossom:
         desc: Işıl ışıl parlayan altın yapraklarıyla Güneş'in ihtişamını yansıtan
           güzel çiçek.
         name: Şemsibahar
       thistle:
-        desc: Renkli çiçeklerinin etrafına dikenli yapraklarıyla kalkan oluşturan
-          dayanıklı bir bitki.
+        desc: Renkli çiçeklerinin etrafına dikenli yapraklarıyla kalkan ören dayanıklı
+          bir bitki.
         name: Deve dikeni
       widowsKiss:
-        desc: Pembe çiçeği sizi yaklaşmaya davet ediyor. Yine de mesafeyi korumak
-          en iyisi.
+        desc: Pembe çiçeği insanı yanına yaklaşmaya davet etse de en iyisi aradaki
+          mesafeyi korumak.
         name: Dul busesi
       woodenStick:
-        desc: Sivri bir tahta parçası. Belki bununla hayatta kalmana yardımcı olacak
+        desc: Sivri bir tahta parçası. Belki bununla hayatta kalmana yardım edecek
           bir şey yapabilirsin.
         name: Tahta çubuk
       kelp:
         name: Su yosunu
+        desc: Su yosunu, hem sağlam ama elastik teçhizat üretimindeki hem de leziz
+          mi leziz deniz mahsulü tariflerindeki çeşitli kullanımıyla bilinir.
       seaSpinach:
-        desc: Fazlasıyla besleyici ve lezzetli bir bitki. Tadının pancarla alakası
+        desc: Fazlasıyla besleyici ve lezzetli bir bitki. Ama tadının pancarla alakası
           bile yok.
         name: Kıyı pancarı
       sweetKelp:
         name: Tatlı su yosunu
-        desc: Su altındaki şeker kamışı olan tatlı su yosunu, genellikle alkollü bir
-          içki olan tuzromu yapımında kullanılır.
+        desc: Bu yosunun şekerimsi bir tadı vardır ve unutulmaz aromasını katarak
+          su altı yemeklerinde kullanılır.
+      seaCabbage:
+        name: Deniz lahanası
+      saltyHops:
+        name: Tuzlu şerbetçi otu
+        desc: Tuzlu şerbetçi otundan tuzlu malt çıkar.
+      cucumber:
+        name: Salatalık
+      wheat:
+        name: Buğday
+        desc: Çoğu medeniyetin gelişmesinden sorumlu olan tahıl tanesi.
+      grass:
+        name: Çim
+        desc: Yemyeşil bir çimen parçası.
+      pepper:
+        name: Biber
+        desc: Küçük, yuvarlak, henüz öğütülmemiş biber.
+      mud:
+        name: Çamur
+        desc: Islak ve kaygan bir çamur parçası. Ne kadar dikkatli davransan da üstün
+          başın kirleniyor.
+      milkweed:
+        name: İpekotu
+        desc: Süte benzeyen özüyle bilinen çiçekli bir bitki. Kelebek ve tırtılların
+          vazgeçilmezi!
+      wildRice:
+        name: Siyah pirinç
+        desc: Yemeklik hububat üreten yabani bir ot türü.
+      underwaterLotus:
+        name: Dip nilüferi
     mining:
       coal:
-        desc: Mütevazı ve gösterişsiz kömür, hayati bir enerji kaynağı olarak ne de
-          kullanışlı bir şey.
+        desc: Gösterişten uzak dursa da kömür, hayati bir enerji kaynağı olarak ne
+          de kullanışlı bir şey.
         name: Kömür
       copperOre:
         desc: Kırmızımsı rengiyle bakır madeni, göze çarpan bir mineral olarak öne
@@ -995,18 +1064,18 @@ singulars:
         name: Bakır madeni
       farganiteOre:
         desc: İnatçı kuvveti ve büyüleyici mavi parıltısıyla farganit madeni, kırılmaz
-          azmin sembolüdür.
+          azmin bir sembolüdür.
         name: Farganit madeni
       ironOre:
-        desc: Demir madeni, güçlü ve ham doğasının bir yansıması olarak pütürlü ve
-          ağır bir his uyandırır.
+        desc: Demir madeni, güçlü ve işlenmemiş doğasının bir yansıması olarak pütürlü
+          ve ağır bir yapıya sahiptir.
         name: Demir madeni
       jade:
-        desc: Parlak yeşil rengi bunu ziynet eşyaları için mükemmel bir değerli taş
-          yapar. Takıldığı zaman kötü ruhları uzaklaştırdığı söylenir.
+        desc: Parlak yeşil rengiyle ziynet eşyaları için mükemmel bir değerli taş
+          olan yeşimin, takıldığı zaman kötü ruhları uzaklaştırdığı söylenir.
         name: Yeşim
       opal:
-        desc: Güneş ışığı altındayken güzel yüzeyi renk renk parıldar.
+        desc: Yüzeyi güneş ışığına tutulunca güzel renklerle parıldar.
         name: Opal
       saltCrystal:
         desc: İyice öğütülürse çok işe yarar. Ham haliyle ise güzel ve karmaşık şekiller
@@ -1014,46 +1083,84 @@ singulars:
         name: Tuz kristali
       starPearl:
         desc: Valisyalı bir ressamın meşhur "Yıldız İnci Küpeli Kız" tablosunda yer
-          almaktadır.
+          alır.
         name: Yıldız inci
       sunStone:
         desc: Aslında güneşten gelmiyor, ama göz alıcı ateş rengine bakacak olursak,
           belki de geliyordur.
         name: Güneş taşı
       tarsiliumOre:
-        desc: Tarsilyum madeninin pürüzsüz ve parlak yüzeyi, etrafındaki dünyayı adeta
+        desc: Katrilyum madeninin pürüzsüz ve parlak yüzeyi, etrafındaki dünyayı adeta
           sihirli bir ışıltıyla yansıtır.
-        name: Tarsilyum madeni
+        name: Katrilyum madeni
       tinOre:
-        desc: Sade ve mütevazı kalay madeni, basit mineral bileşimini sergiler.
+        desc: Sade ve mütevazı kalay madeni, amiyane bir mineral bileşimine sahiptir.
         name: Kalay madeni
       topaz:
-        desc: Güneşe benzeyen renkleri olan parlak bir cevher. Hatta fazla bakarsan
-          gözlerin acıyabilir.
+        desc: Güneşi andıran renkleri olan parlak bir cevher. Hatta uzun süre bakmak
+          gözlerine zarar bile verebilir.
         name: Topaz
+      silverOre:
+        name: Gümüş madeni
+        desc: Yüzük, kolye ve küpe gibi takıların yapımında sıklıkla kullanılan gümüş
+          madeni fazlasıyla değer gören bir metaldir.
+      goldOre:
+        name: Altın madeni
+        desc: Genellikle kuyumculukta kullanılan altın, en değerli metallerden biridir.
+      ethernite:
+        name: Semanit
+        desc: Kıymetli bir mor camsı cevher. Bakınca ürkütücü bir hisse kapılıyor
+          olsan da gözünü ayırmak çok zor geliyor.
+      largeStone:
+        name: Büyük taş
+        desc: Normalden daha büyük bir taş.
+      ruby:
+        name: Yakut
+        desc: Bu kırmızı cevher soylular arasında fazlasıyla popülerdir. Kırmızı rengi
+          güç ve tutkuyu simgeler.
+      volcanicRock:
+        name: Volkanik taş
+        desc: Bu taş, binlerce yıldır su altında yatan antik bir volkanın kalıntısıdır.
+      volcanicAsh:
+        name: Volkanik kül
     misc:
       clam:
         desc: İnci kadar beyaz ve sapasağlam. Koleksiyoncular için güzel bir örnek.
+        name: İstiridye
       crosswordPuzzle:
-        desc: Kelime oyunu, altı harfli, Ç ile başlıyor.
+        desc: Kelime bulmacası, altı harfli, ilk harfi "Ç".
         name: Eski çengel bulmaca
       seashell:
         desc: Muhtemelen kumsaldaki birisi satmıştır.
         name: Deniz kabuğu
       trash:
-        desc: İşe yaramaz ve değersiz eşya yığını. Bunu neden topladın ki?
+        desc: İşe yaramaz ve değersiz eşya öbeği. Bunu neden topladın ki?
         name: Çöp
+      fishbone:
+        name: Kılçık
+        desc: Hem tiksinç gelse hem de kötü kokuyor olsa bile aslında görüntüsü pek
+          bir hoş.
+      pearls:
+        name: İnci
+        desc: Bir sıra gerçek inci. Mücevher yapmak için harika bir malzeme.
+      glacierMap:
+        name: Gizemli kuzey haritası
+        desc: Bu harita Jarvonya'nın kuzey kısmına benziyor. Kırmızıyla çizilmiş yeri
+          ise üzerinde iglu bulunan buzula giden bir yol gibi.
+      fishingLine:
+        name: Misina
+        desc: Bunu doğadan geri toplayarak bir hayvanın hayatını kurtarmış olabilirsin.
     rawFish:
       rawCarp:
-        desc: Sazanın hafif aroması, çeşitli yemek hazırlığına iyi uyum sağlar. Bu
-          balıklar zıplamaya bayılır.
+        desc: Sazanın hafif aroması, çeşit çeşit yemek tarifine kolayca uyum sağlar.
+          Ayrıca bu balıklar zıplamaya bayılır.
         name: Çiğ sazan
       rawCrayfish:
-        desc: Kerevit, su ürünü düşkünleri için tatlı bir lezzet sunar.
+        desc: Kerevit, su ürünü düşkünlerine tatlı bir lezzet sunar.
         name: Çiğ kerevit
       rawJellyfish:
-        desc: Mutfaklarda merak uyandıran denizanası, aşçıları onu keşfetmeye davet
-          ederek acayip dokusunu benimsemeye zorlar.
+        desc: Mutfaklarda merak uyandıran denizanası, acayip dokusunu keşfedip benimsesinler
+          diye aşçılara meydan okuyor.
         name: Çiğ denizanası
       rawLobster:
         desc: Istakozun sağlam bir kabuğu ve güçlü kıskaçları vardır. Mazide bir yolculuğa
@@ -1064,74 +1171,161 @@ singulars:
           gelen gizemli bir görünüm kazandırır.
         name: Çiğ müren
       rawPerch:
-        desc: Zarif bir kıvrımı olan çevik ispendek, balıkçılığa yeni meraklananların
+        desc: Zarif bir kıvraklığa sahip olan çevik ispendek, balıkçılığa yeni meraklananların
           yakalaması için iyi bir seçenek.
         name: Çiğ ispendek
       rawPike:
-        desc: Pul pul ayrılan narin etiyle çiğ turna balığı, pişirmeye pek bir uygun.
+        desc: Pul pul ayrılan yumuşak etiyle çiğ turna balığı, pişirmek için hazır
+          durumda.
         name: Çiğ turna balığı
       rawSalmon:
-        desc: Dolgun yağlı etiyle somon, zengin ve kadifemsi dokusuyla damakları şenlendirir.
+        desc: Dolgun ve yağlı etiyle, somonun zengin ve kadifemsi dokusu damakları
+          şenlendirir.
         name: Çiğ somon
       rawSeabass:
         desc: Deniz levreği gümüş pullarıyla parıldar.
         name: Çiğ levrek
       rawShrimp:
-        desc: Eski çağlardan beri hiç değişmemiş gibi duran karides, keyifli bir ziyafet
-          vaadiyle cezbeder.
+        desc: Sanki eski çağlardan beri hiç değişmemiş gibi görünen karides, keyifli
+          bir ziyafet vadediyor.
         name: Çiğ karides
       rawSquid:
-        desc: Kalamar, ortadan kaybolma hüneriyle şaşırtır.
+        desc: Kalamar, ortadan kaybolma hünerleriyle şaşırtır.
         name: Çiğ kalamar
       rawStreamEel:
-        desc: Yılan balığının modern hali, akarsulara nasıl da uyum sağladığını gösterir.
+        desc: Yılan balığının modern hali, akarsulara nasıl da uyum sağladığını gösteriyor.
         name: Çiğ yılan balığı
       rawTrout:
-        desc: Benekli desenleri ile gümüş ve pembenin çeşitli tonlarını yansıtan alabalık,
-          yanardöner pullarıyla büyüleyici bir tablo ortaya koyar.
+        desc: Benekli desenleri ile gümüş rengi ve pembenin çeşitli tonlarını yansıtan
+          alabalık, yanardöner pullarıyla büyüleyici bir tablo ortaya koyuyor.
         name: Çiğ alabalık
+      rawStingray:
+        name: Çiğ vatoz
+        desc: Suda süzülerek ilerlemek için bütün vücudunu kullanan krep şeklinde
+          bir balık.
+      rawSwordfish:
+        name: Çiğ kılıç balığı
+        desc: Bu gümüş balık upuzundur ve burnundan avını sersemletmek için kullandığı
+          kılıcımsı bir uzantı çıkar.
+      rawShark:
+        name: Çiğ köpek balığı
+        desc: Bu kocaman balığın birkaç sıra halinde dizilen bir sürü sivri dişi bulunur.
+          Bunlardan birinin kafasını Karkanca Mağazası'nın duvarında asılı görmüştün.
+      rawAnglerfish:
+        name: Çiğ fener balığı
+        desc: Bu acayip balığı, upuzun hançerlere benzeyen dişlerinin dışarıya uzandığı
+          devasa bir ağzı vardır. Gözleri tamamen kör gibi. Alnından çıkan parlak
+          bir ışık damlası bulunur.
+      rawCrab:
+        name: Çiğ yengeç
+        desc: Yaygın bulunan bu kabuklunun kısa ve yuvarlak bir gövdesi, boncuk gibi
+          iki gözü, kıstırmak için kullandığı kocaman kıskaçları vardır. Ah, parmağım!
     smithing:
       bronzeBar:
-        desc: Cüce demirhanelerinden yadigar kalan bronz külçesi, hünerli eller tarafından
-          bir araya getirilen bakır ile kalayın sırlarını taşıyarak sade bir cazibe
-          ve dayanıklılık sergiler.
-        name: Bronz külçesi
+        desc: Cüce demirhanelerinin yadigarı olan bronz külçe, hünerli eller tarafından
+          bir araya getirilmiş olan bakır ile kalayın sırlarını taşıyan mütevazı bir
+          alım ve dayanıklılık örneğidir.
+        name: Bronz külçe
       copperBar:
-        desc: Bakır külçesi, metalik gücünü ve çeşitli alanlardaki çok yönlülüğünü
-          yansıtan kırmızımsı-turuncu bir parıltıyla ışıldar.
-        name: Bakır külçesi
+        desc: Bakır külçe, metalik gücünü ve çeşitli alanlardaki işlevselliğini yansıtan
+          kırmızımsı turuncu parıltısıyla ışıldar.
+        name: Bakır külçe
       farganiteBar:
-        desc: Deniz ile gökyüzü arasındaki mavi rengiyle, sıcak ve işlenmeye hazırken
-          bile öyle çalımlı duruyor ki.
-        name: Farganit külçesi
+        desc: Parlak mavi bir külçe.
+        name: Farganit külçe
       ironBar:
-        desc: Dünya'nın merkezi kuvvetinin şahidi. Ağır ve de boyun eğmeyen.
-        name: Demir külçesi
+        desc: Dünya'nın iç çekirdek kuvvetinin kanıtı. Hem ağır hem dirençli.
+        name: Demir külçe
       steelBar:
-        desc: Kararlılığın ateşinde dövülen çelik külçesi, ruhani bir parıltıyla ışıldar.
-        name: Çelik külçesi
+        desc: Kararlılığın ateşinde dövülen çelik külçe, ruhani bir parıltıyla ışıldar.
+        name: Çelik külçe
       tarsiliumBar:
-        desc: Tarsilyum külçesi gece seması gibi ışıldar. Dış yüzeyi yağlı bir dokuyla
-          kaplıdır.
-        name: Tarsilyum külçesi
+        desc: Dış yüzeyi yağlı bir dokuyla kaplı olan katrilyum külçe, gece seması
+          gibi ışıldar.
+        name: Katrilyum külçe
+      hydriliumBar:
+        desc: Hidrilyum külçe soluk yeşil renklidir.
+        name: Hidrilyum külçe
+      metalScrap:
+        name: Metal parçası
+        desc: Düşük kaliteli metal fazlası.
+      metalShaving:
+        name: Metal yongası
+        desc: Orta kaliteli metal fazlası.
+      metalFragment:
+        name: Metal parçası
+        desc: Yüksek kaliteli metal fazlası.
     woodcutting:
       birchLogs:
-        desc: Pürüzsüz ve renksiz huş kütüğü, şık bir sadelik örneğidir.
-        name: Huş kütüğü
+        desc: Pürüzsüz ve renksiz huş kütük, şık bir sadelik örneğidir.
+        name: Huş kütük
       mapleLogs:
-        desc: Akçaağaç kütüğünün zengin ve cazip görünen damarlı yapısı, her parçasıyla
-          doğanın sanatkarlığını sergiler.
-        name: Akçaağaç kütüğü
+        desc: Akçaağaç kütük, zengin ve göz alıcı duran damarlı yapısı sayesinde,
+          her bir parçasıyla doğanın sanatkarlığını sergiler.
+        name: Akçaağaç kütük
       oakLogs:
-        desc: Şahsına münhasır meşe kütüğü, asil bir duruş ve kalıcı bir zarafet hissi
-          bırakır.
-        name: Meşe kütüğü
+        desc: Nevi şahsına münhasır meşe kütük, asil duruşu ve zarafetiyle kalıcı
+          bir izlenim bırakır.
+        name: Meşe kütük
       pineLogs:
-        desc: Sağlam ve reçineli çam kütüğü, keskin ve rahatlatıcı bir aroma yayar.
-        name: Çam kütüğü
+        desc: Sağlam ve reçineli çam kütük, keskin ve rahatlatıcı bir aroma yayar.
+        name: Çam kütük
       spruceLogs:
-        desc: Ladin kütüğü zengin ve sıcak bir renk tonu sergileyerek doğal güzelliğini
-          ve cazibesini ortaya koyar.
-        name: Ladin kütüğü
+        desc: Ladin kütük zengin ve sıcak renk tonlarıyla doğal güzelliği ve cazibesini
+          ortaya koyar.
+        name: Ladin kütük
       coral:
         name: Mercan
+        desc: Çeşitli boyutlarda olabilen bu mercanlar pek çok farklı şeyde kullanılır.
+      elmLogs:
+        name: Karaağaç kütük
+        desc: Bu kütükler esneklikleri ve sıkıştırılabilmeleriyle meşhurdur.
+      root:
+        name: Kök
+        desc: Farklı amaçlarla kullanılabilen yararlı bir bitki kökü.
+      heartwood:
+        name: Öz odun
+        desc: Odunun gerisinden daha koyu renkli olan iç kısmı.
+      teakLogs:
+        name: Tik kütük
+        desc: Kapkalın kabuklu sert ve de ağır tik kütüğün içi dışından daha açık
+          bir renge sahiptir.
+      willowLogs:
+        name: Söğüt kütük
+        desc: Bu toprak renkli kütükler o kadar hafiftir ki işlemesi de kullanması
+          da pek bir kolaydır.
+      mangroveLogs:
+        name: Mangrov kütük
+        desc: Büyüdüğü ortam yüzünden hala nemli olsa da üzerinde güzel bir parıltı
+          var.
+      sturdyBranch:
+        name: Sağlam dal
+        desc: Anormal şekilde sağlam bir dal.
+    hunting:
+      bones:
+        name: Kemik
+        desc: Birkaç kemik parçası.
+      sinew:
+        name: Sinir
+        desc: Kasları kemiklere bağlayan sert ve lifsi doku.
+      animalMeat:
+        name: Hayvan eti
+        desc: Bir parça taze et. Pişirmeye, kurutmaya veya tuzlamaya hazır.
+      lizardTail:
+        name: Kertenkele kuyruğu
+        desc: Savunma mekanizması olarak bırakılmış bir kertenkele kuyruğu.
+      feather:
+        name: Tüy
+        desc: Güzel, hafif ve aerodinamik bir kuşun tüyü.
+      darkfeather:
+        name: Kara tüy
+        desc: Kara bir kuş tüyü. Muhtemelen bir kargaya, kuzguna ya da başka bir siyah
+          kuşa aitti.
+      animalFur:
+        name: Hayvan kürkü
+        desc: Bu hayvan kürkü parçası yumuşacıktır ve olur da kıyafete çevrilirse
+          sıcacık tutar.
+    tailoring:
+      aerodynamicThread:
+        name: Aerodinamik iplik
+        desc: Hafif ama kuvvetli olmasıyla bilinen nadir bir iplik.

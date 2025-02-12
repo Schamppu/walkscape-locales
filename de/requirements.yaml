@@ -2,7 +2,7 @@ singulars:
   mainSkill:
     text: Während der Ausführung von <skill skill="{skill}"/>
   skillLevel:
-    text: Mindestens <skill skill="{skill}" level="{level}" needed/>
+    text: Mindestens <skill skill="{skill}" level="{level}" notwendig/>
   traveling:
     text: Während dem Reisen
   itemAnywhereWithYou:
@@ -12,10 +12,9 @@ singulars:
   itemInInventory:
     text: Habe <item id="{item}"/> in deinem Inventar.
   itemAnywhere:
-    text: Habe <item id="{item}"/>.
+    text: Besitze <item id="{item}"/>.
   distinctItemsEquippedKeyword:
-    text:
-      Habe <numberProgress current="{current}" max="{max}" /> mal <object id="{obj}"
+    text: Habe <numberProgress current="{current}" max="{max}" /> mal <object id="{obj}"
       /> ausgerüstet.
   totalSteps:
     text: Sei <numberProgress current="{current}" max="{max}" /> Schritte gelaufen.
@@ -24,73 +23,59 @@ singulars:
   unlocked:
     text: Hab <object id="{obj}" alwaysShow="true" /> freigeschaltet.
   achievementPoints:
-    text:
-      Habe <icon i="achievement point"/><numberProgress current="{current}" max="{max}"
+    text: Habe <icon i="achievement point"/><numberProgress current="{current}" max="{max}"
       /> Erfolgspunkte.
   achievementPointsPercent:
-    text:
-      Habe <icon i="achievement point"/><numberProgress current="{current}" max="{max}"
+    text: Habe <icon i="achievement point"/><numberProgress current="{current}" max="{max}"
       /> Erfolgspunkte ({percentage}% von gesamten).
   haveCoins:
-    text:
-      Habe <icon i="money small"/><numberProgress current="{current}" max="{max}"
+    text: Habe <icon i="money small"/><numberProgress current="{current}" max="{max}"
       /> Münzen.
   minimumSkillLevel:
-    text:
-      Habe alle Skills mindestens auf Level <numberProgress current="{current}"
+    text: Habe alle Skills mindestens auf Level <numberProgress current="{current}"
       max="{max}" />.
   levelUpSkills:
-    text: Level deine Skills <numberProgress current="{current}" max="{max}" />
-      mal auf.
+    text: Level deine Skills <numberProgress current="{current}" max="{max}" /> mal
+      auf.
   overencumbered:
     text: Sei über dem Inventarlimit (überladen).
   exploreRegion:
-    text:
-      Erkunde <object id="{obj}" alwaysShow="true" /> vollständig. <numberProgress
+    text: Erkunde <object id="{obj}" alwaysShow="true" /> vollständig. <numberProgress
       current="{current}" max="{max}" />.
   haveBankStacks:
-    text:
-      Habe <numberProgress current="{current}" max="{max}" /> Gegenstandsstapel
+    text: Habe <numberProgress current="{current}" max="{max}" /> Gegenstandsstapel
       in deiner Bank.
   activityType:
     singleKeyword: Während einer <object id="{obj}" /> Aktivität.
   service:
-    text:
-      Braucht <serviceTier tier="{tier}" /> <object id="{obj}" /> Service oder
+    text: Braucht <serviceTier tier="{tier}" /> <object id="{obj}" /> Service oder
       besser.
   realm:
     text: Während du in <realm realm="{realm}" /> bist.
   uniques:
-    firewoodMaking:
-      Beende die Feuerholz herstellen Aktivität <numberProgress current="{current}"
+    firewoodMaking: Beende die Feuerholz herstellen Aktivität <numberProgress current="{current}"
       max="{max} /> mal.
-    woodCarving:
-      Beende die Holzschnitzerei Aktivität <numberProgress current="{current}"
+    woodCarving: Beende die Holzschnitzerei Aktivität <numberProgress current="{current}"
       max="{max} /> mal.
-    searchTeam:
-      Beende die Schwarzaugen Gipfel Suchteam Aktivität <numberProgress
+    searchTeam: Beende die Schwarzaugen Gipfel Suchteam Aktivität <numberProgress
       current="{current}" max="{max} /> mal.
-    intermediateShipRepair:
-      Beende die Schiffsreperatur (Fortgeschritten) Aktivität
+    intermediateShipRepair: Beende die Schiffsreperatur (Fortgeschritten) Aktivität
       <numberProgress current="{current}" max="{max} /> mal.
-    beginnerCrossCountry:
-      Beende die Skilanglauf (Anfänger) Aktivität <numberProgress
+    beginnerCrossCountry: Beende die Skilanglauf (Anfänger) Aktivität <numberProgress
       current="{current}" max="{max} /> mal.
-    intermediateCrossCountry:
-      Beende die Skilanglauf (Fortgeschritten) Aktivität <numberProgress
+    intermediateCrossCountry: Beende die Skilanglauf (Fortgeschritten) Aktivität <numberProgress
       current="{current}" max="{max} /> mal.
   factionReputations:
-    jarvoniaReputation:
-      <numberProgress current="{current}" max="{max}" /> <realm
+    jarvoniaReputation: <numberProgress current="{current}" max="{max}" /> <realm
       realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db" /> Fraktionsruf.
-    trellinReputation: <numberProgress current="{current}" max="{max}" /> <realm
-      realm="faction-trellin-239a0ad8-3812-4f2a-9c11-1c312490249b" /> Fraktionsruf.
-    erdwiseReputation: <numberProgress current="{current}" max="{max}" /> <realm
-      realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb" /> Fraktionsruf.
-    syrenthiaReputation:
-      <numberProgress current="{current}" max="{max}" /> <realm
+    trellinReputation: <numberProgress current="{current}" max="{max}" /> <realm realm="faction-trellin-239a0ad8-3812-4f2a-9c11-1c312490249b"
+      /> Fraktionsruf.
+    erdwiseReputation: <numberProgress current="{current}" max="{max}" /> <realm realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb"
+      /> Fraktionsruf.
+    syrenthiaReputation: <numberProgress current="{current}" max="{max}" /> <realm
       realm="faction-syrenthia-6e9359fa-597b-4448-9df5-cc3fff9a5108" /> Fraktionsruf.
   haveItemStack:
-    text:
-      Habe einen <object id="{obj}" alwaysShow="true" /> Stapel mit der Größe
+    text: Habe einen <object id="{obj}" alwaysShow="true" /> Stapel mit der Größe
       von <numberProgress current="{current}" max="{max}" />.
+  locationHasKeywords:
+    text: Während du in <object id="{obj}" /> bist.
