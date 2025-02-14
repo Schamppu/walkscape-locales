@@ -96,8 +96,10 @@ singulars:
         text: Twoja gra działa na starej wersji, a dostępna jest nowa. Prosimy ściągnij
           najnowszą wersję, by móc kontynuować grę.
       noInternetConnection:
-        title: Brak połączenia z Internetem
-        text: Połączenie z serwerem zostało utracone. Sprawdź połączenie internetowe
+        title: Nie można połączyć się z serwerem WalkScape
+        text: Nawiązanie połączenia z serwerem WalkScape nie powiodło się. Może to
+          oznaczać, że nie masz połączenia z Internetem, serwer nie działa lub połączenie
+          zostało zablokowane przez zaporę sieciową. Sprawdź połączenie internetowe
           i spróbuj ponownie.
       serverOffline:
         title: Serwer WalkScape jest wyłączony
@@ -149,6 +151,11 @@ singulars:
         text: Klient gry nie mógł załadować kroków. Zgłoś to twórcom na Discordzie,
           podając szczegóły błędu i urządzenia. Możesz także spróbować ponownie otworzyć
           grę, aby sprawdzić, czy kroki załadują się pomyślnie.
+      initializingGameFailed:
+        title: Inicjowanie gry nie powiodło się
+        text: Inicjowanie klienta gry nie powiodło się. Zgłoś to deweloperom na Discordzie,
+          podając szczegóły błędu i urządzenia. Możesz również spróbować otworzyć
+          grę ponownie, aby sprawdzić, czy gra załaduje się pomyślnie.
   info:
     game:
       importGearSetFailed:
@@ -175,3 +182,15 @@ singulars:
       withdrawFailed:
         title: Wyjmowanie nie powiodło się
         text: Wyjmowanie nie powiodło się. Spróbuj ponownie.
+      equipGearSetSomeFailed:
+        title: Nie udało się wyposażyć przedmiotów w zestawie wyposażenia
+        text: Niektóre z przedmiotów z zestawu wyposażenia nie mogą być wyposażone.
+          Zestaw wyposażenia może być nieprawidłowy lub nie spełniono wymagań dotyczących
+          wyposażenia niektórych przedmiotów.
+      equipGearSetFailed:
+        title: Nie udało się wyposażyć zestawu
+        text: Nie udało się wyposażyć zestawu. Zestaw wyposażenia, który próbowałeś
+          wyposażyć, jest prawdopodobnie nieprawidłowy lub uszkodzony.
+      equipGearFailed:
+        title: Nie udało się wyposażyć przedmiotu
+        text: Przedmiot nie może być wyposażony. Spróbuj ponownie.
