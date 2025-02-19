@@ -4,31 +4,90 @@ plurals:
       text:
         few: '-'
         many: '-'
-        one: Nesneleri silme işlemi geri alınamaz. Bu nesneye diğer nesnelerde {n}
+        one: Nesneleri silme işlemi geri alınamaz. Bu nesneye diğer nesnelerde {}
           kere atıfta bulunulmuş.
-        other: Nesneleri silme işlemi geri alınamaz. Bu nesneye diğer nesnelerde {n}
+        other: Nesneleri silme işlemi geri alınamaz. Bu nesneye diğer nesnelerde {}
           kere atıfta bulunulmuş.
-        two: '-'
+        two: 'Nesneleri silme işlemi geri alınamaz. Bu nesneye diğer nesnelerde {}
+          kere atıfta bulunulmuş.'
         zero: '-'
       title: Silmek istediğinden emin misin?
 singulars:
   errors:
     characterValidation:
       nameTooShort: Karakter adı en az 3 harften oluşmalıdır.
+      nameContainsleadingTrailingSpaces: Boşlukla başlanamaz veya peş peşe boşluk
+        konamaz.
+      nameContaintsConsecutiveSpaces: Art arda boşluk konamaz.
+      nameTooShortWithSpacesRemoved: Karakter adı boşluklar sayılmadan en az 3 harften
+        oluşmalıdır.
+      nameContainsSpecialCharacters: Karakter adı özel işaretler içeriyor. Yalnızca
+        harfler, sayılar ve boşluk kullanılabilir.
     serverError:
       newUpdate:
         title: Yeni güncelleme
+        text: Oyuna güncelleme geldi. Lütfen yeni güncellemeyi indirmek için oyunu
+          yeniden başlatın.
       noClosedBetaAccess:
-        title: Kapalı beta erişimi yok
+        title: Kapalı beta erişimi süresi dolmuş
       noInternetConnection:
-        title: İnternet bağlantısı yok
+        title: WalkScape sunucusuna bağlanılamadı
+        text: WalkScape sunucusuna bağlanma girişimi başarısız oldu. İnternet bağlantının
+          olmaması, sunucunun kapalı olması veya güvenlik duvarının bağlantıyı engellemesi
+          buna neden olabilir. Lütfen internet bağlantını kontrol edip tekrar dene.
       serverMaintenance:
         title: WalkScape sunucusu bakımda
+        text: Oyun sunucusu şu anda bakımda. Lütfen daha sonra tekrar dene.
       serverOffline:
-        title: WalkScape sunucusu çevrimdışı
+        title: WalkScape sunucusu çevrim dışı
+        text: Oyun sunucusu şu anda çevrim dışı. Bakım yapılması veya sunucudaki bir
+          sorun nedeniyle olabilir. Lütfen daha sonra tekrar dene.
       unknownError:
         text: Bilinmeyen hata.
         title: Bilinmeyen hata.
+      bannedUser:
+        text: WalkScape'ten kalıcı olarak men edildin. Bir yanlışlık olduğunu düşünüyor
+          ve itirazda bulunmak istiyorsan, <c i=1>contact@walkscape.app</c> adresine
+          e-posta göndererek bize ulaşabilirsin.
+        title: WalkScape'ten kalıcı olarak men edildin
+      connectionError:
+        text: Sunucuya bağlanırken bir hata oluştu. Lütfen internet bağlantını kontrol
+          edip tekrar dene.
+        title: Bağlantı hatası
+      invalidSession:
+        title: Geçersiz oturum
+        text: Oturumun geçersiz. Lütfen tekrar giriş yap.
+      newClientUpdate:
+        text: Oyunun güncel değil ve yeni bir sürüm mevcut. Lütfen oynamaya devam
+          etmek için oyunun en son sürümünü indir.
+        title: Yeni istemci güncellemesi mevcut
+      unauthorized:
+        title: Yetkisiz kişi
+        text: Yetkin bulunmuyor. Lütfen tekrar giriş yap.
+      failureToUpdateContent:
+        title: İçerik güncellenemedi
+    gameError:
+      initializingGameFailed:
+        text: Oyun istemcisi başlatılamadı. Lütfen bu durumu hatanın ve cihazının
+          detaylarıyla birlikte Discord üzerinden geliştiricilere bildir. Başarıyla
+          açılacak mı görmek için oyunu yeniden başlatmayı da deneyebilirsin.
+        title: Oyun başlatılamadı
+      loadingPlayerFailed:
+        title: Oyuncu yüklenemedi
+        text: Geçersiz oyuncu verisi. Yükleme başarısız. Lütfen Discord veya e-posta
+          ile geliştiricilerle iletişime geç.
+      stepLoadingFailed:
+        title: Adımlar yüklenemedi
+        text: Oyun istemcisi adımları yükleyemedi. Lütfen bu durumu hatanın ve cihazının
+          detaylarıyla birlikte Discord üzerinden geliştiricilere bildir. Adımlar
+          başarıyla yüklenecek mi görmek için oyunu yeniden başlatmayı da deneyebilirsin.
+    activityCancelled:
+      title: Faaliyet iptal edildi
+      stepsAreInfinite: Gereksinimlerini artık karşılamadığın için mevcut faaliyet
+        iptal edildi.
+    fatalError:
+      error: Hata için üzgünüz. Unutma ki oyun henüz kapalı betada ve bütün oyuncu
+        kayıtları her gün buluta kaydediliyor.
   messages:
     comingSoon:
       title: Çok yakında
@@ -81,3 +140,27 @@ singulars:
           veya bozulmuş olabilir.
       equipGearFailed:
         title: Eşya kuşanılamadı
+        text: Eşya kuşanılamadı. Lütfen tekrar dene.
+      importGearSetFailed:
+        title: Teçhizat seti içe aktarılamadı
+        text: Teçhizat seti içe aktarılırken hata oluştu. Teçhizat seti verisi bozulmuş
+          veya geçersiz olabilir.
+      importGearSetTooManyTools:
+        title: Teçhizat setinde çok fazla alet var
+        text: Teçhizat setinde izin verilenden daha çok alet var.
+      changingActivityFailed:
+        title: Faaliyet değiştirilemedi
+        text: Faaliyet değiştirilemedi. Ya zaten yapıyorsundur ya da mevcut değildir.
+      withdrawZero:
+        title: Çekme başarısız
+        text: Sıfır veya daha az eşya çekemezsin.
+      withdrawTooFew:
+        title: Çekme başarısız
+        text: Çekecek yeterince eşyan yok.
+      withdrawDidNotExist:
+        title: Çekme başarısız
+        text: Çekmeye çalıştığın eşya bulunmuyor. Bankayı yeniden açmak bu sorunu
+          düzeltebilir.
+      withdrawFailed:
+        title: Çekme başarısız
+        text: Çekme işlemi başarısız. Lütfen tekrar dene.
