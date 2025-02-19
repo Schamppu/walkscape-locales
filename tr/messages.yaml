@@ -32,12 +32,17 @@ singulars:
   messages:
     comingSoon:
       title: Çok yakında
+      text: Bu içerik Walkscape'in şimdiki sürümünde <hl>mevcut değil</hl>.
     saveSuccesful:
       text: Değişikliklerin başarıyla kaydedildi.
       title: Kayıt başarılı!
     saveUnsuccesfullLootTables:
-      text: Ganimet tablosu, ilgili eşyası olmayan satır(lar) içeriyor.
+      text: Ganimet tablosu, ilgili bir eşya bulunmayan satır(lar) içeriyor.
       title: Kayıt başarısız.
+    disabled:
+      title: Devre dışı
+      text: Bu özellik şu anda <hl>geçici olarak devre dışı</hl>. Daha fazla bilgi
+        için Portal'ı, Reddit'i veya Discord'u kontrol edebilirsin.
   popups:
     achievementUnlocked:
       achievementPoints: '{points} başarım puanı'
@@ -56,11 +61,23 @@ singulars:
       whileYouWereAway: Sen yokken...
     characterLevelUp:
       unlocks: Açılanlar
-      noNewUnlocks: Bu seviyede yeni açılan bir şey yok.
+      noNewUnlocks: Bu seviyede açılan yeni bir şey yok.
       characterLevelUp: Karakter seviye atladı
     skillLevel:
       skillLevelUp: '{skillName} seviye atladı'
       unlocks: Açılanlar
-      noNewUnlocks: Bu seviyede yeni açılan bir şey yok.
+      noNewUnlocks: Bu seviyede açılan yeni bir şey yok.
     inactiveSteps:
       stepsWhileInactive: Oyun uykudayken kazanılan adım
+  info:
+    game:
+      equipGearSetSomeFailed:
+        title: Teçhizat setindeki eşyalar kuşanılamadı
+        text: Teçhizat setindeki bazı eşyalar kuşanılamadı. Teçhizat seti geçersiz
+          olabilir. Veya bazı eşyaları kuşanmak için gereksinimleri karşılamıyor olabilirsin.
+      equipGearSetFailed:
+        title: Teçhizat seti kuşanılamadı
+        text: Teçhizat seti kuşanılamadı. Kuşanmaya çalıştığın teçhizat seti geçersiz
+          veya bozulmuş olabilir.
+      equipGearFailed:
+        title: Eşya kuşanılamadı
