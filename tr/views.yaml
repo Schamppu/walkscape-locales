@@ -46,6 +46,38 @@ maps:
     phrases:
       itemType:
         'collectible': Koleksiyonluklar
+  settings:
+    boolSettings:
+      'showRecipesServiceAreMet': Hizmet gereksinimleri karşılandı
+      'showRecipesMaterialsAreMet': Malzeme gereksinimleri karşılandı
+      'showRecipesRequirementsAreMet': Seviye gereksinimleri karşılandı
+      'showCompletedAchievements': Tamamlanan başarımları göster
+    languages:
+      'pt': Portekizce
+      'de': Almanca
+      'fi': Fince
+      'pl': Lehçe
+      'es': İspanyolca
+      'it': İtalyanca
+      'nl-NL': Felemenkçe
+      'tr': Türkçe
+      'fr': Fransızca
+      'zh_Hans': Çince (Basitleştirilmiş)
+      'sv': İsveççe
+      'en': İngilizce
+    visibilitySettings:
+      'friends': Sadece arkadaşlar
+      'private': Gizli
+      'public': Herkese açık
+    stepCountNotifications:
+      'everyHundred': Yüz adımda bir
+      'never': Asla
+      'always': Daima
+      'everyThousand': Bin adımda bir
+      'everyTenThousand': On bin adımda bir
+    leaderboardFilter:
+      'everyone': Herkes
+      'friends': Arkadaşlar
 plurals:
   achievements:
     phrases:
@@ -124,10 +156,13 @@ singulars:
       notUnlocked: Kilitli başarım
       rewardProgress: Ödül İlerlemesi
       unclaimedRewards: 'Alınmamış ödüller: '
+      showRewards: Ödülleri göster
   bank:
     phrases:
       noItemsBank: Bankanda hiç eşya yok.
       noItemsInventory: Envanterinde hiç eşya yok.
+      deposit: Yatır
+      withdraw: Çek
   character:
     info:
       skillBreakdown: Karakterinin yolculuğu boyunca geliştirdiği bütün becerilerinin
@@ -181,7 +216,7 @@ singulars:
     options:
       consenseInventory: Envanteri sıkıştır
       expandInventory: Envanteri genişlet
-      showConsumables: Tüketmelikleri göster
+      showConsumables: Tek kullanımlıkları göster
       showGear: Teçhizatı göster
       showMaterials: Malzemeleri göster
     phrases:
@@ -206,10 +241,11 @@ singulars:
       requirementsNotMet: Gereksinimler karşılanmıyor.
       requires: Gerekli
       slotDoesntExist: Bu eşya yuvası artık yok.
-      slots: Yuvalar <c>{slots}</c>
-      slotsCount: 'Yuvalar:'
+      slots: Eşya yuvası <c>{slots}</c>
+      slotsCount: 'Eşya yuvası:'
       treasury: Hazine
       noPotionConsumables: Envanterinde hiç <hl>iksir</hl> yok.
+      abilities: Yetenekler
   leaderboards:
     phrases:
       first: İlk
@@ -220,6 +256,10 @@ singulars:
       totalExperience: Toplam tecrübe
       totalLevel: Toplam seviye
       totalSteps: Toplam adım
+      show: Göster
+      everyone: Herkes
+      friends: Arkadaşlar
+      achievementPoints: Başarım puanı
   location:
     phrases:
       activities: Faaliyetler
@@ -340,7 +380,58 @@ singulars:
     categories:
       gameplay:
         stopWhenOverEncumberedDefault: Envanter taşınca kendiliğinden dur
+        title: Oynanış
+        showFpsCounter: FPS sayacını göster
+      notifications:
+        stepCountNotifications: Adım sayacı bildirimleri
+        stepCountInterval: Bildirim aralığı
+        title: Bildirimler
+        notificationType: Bildirim türü
+      dataSource:
+        title: Veri Kaynağı
+        thisPhone: Bu telefon
+        otherSource: Diğer kaynak
+        changeWarning:
+          title: Veri kaynağını değiştir?
+      language:
+        title: Dil
+      account:
+        visibility: Profil görünürlüğü
+        title: Hesap
+      character:
+        title: Karakter
+        hideSteps: Adımları gizle
+      accessibility:
+        leftHandedMode: Solak modu
+        title: Erişilebilirlik
+      closedBeta:
+        clearStepsGraph: Adım grafiğini temizle
+        title: Kapalı Beta
+    phrases:
+      exitToCharacterSelection: Karakter menüsüne çık
+      settings: Ayarlar
   popupBubbles:
     phrases:
       overEncumbered: Envanterin doldu taştı.
       arrivedToLocation: <object id={location} /> konumuna varıldı
+  abilities:
+    info:
+      youHaveNoAbilities: <hl>Herhangi bir özel yeteneğin yok.</hl> Oyundaki bazı
+        teçhizatlar bekleme süresi karşılığında hızlı avantajlar sağlayan özel yetenekler
+        kullanmanı sağlayabilir.
+      abilitiesInfo: Yetenekler, oyunda kullanarak hızlı avantajlar elde edebileceğin
+        özel eylemlerdir. Yetenekleri tekrar kullanmadan önce beklemen gereken bekleme
+        süreleri bulunur.
+    phrases:
+      holdToCast: Yapmak için basılı tut
+      abilities: Yetenekler
+      useAbility: Yeteneği kullan
+      useConsumable: Tek kullanımlığı kullan
+      noAction: Eylem yok
+      holdToUse: Kullanmak için basılı tut
+  faction:
+    phrases:
+      openFaction: Diyara bak
+  social:
+    phrases:
+      friends: Arkadaşlar
