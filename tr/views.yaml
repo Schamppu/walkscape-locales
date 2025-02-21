@@ -23,7 +23,7 @@ maps:
         normal: Normal
         sad: Üzgün
         smile: Tebessüm
-        smirk: Tebessüm
+        smirk: Sırıtış
         surprise: Şaşkın
         veryAngry: Çok kızgın
       optionTypes:
@@ -39,6 +39,9 @@ maps:
         none: Hiçbiri
         nose: Burun
         outfit: Kıyafet
+        'faceAccessory': Yüz aksesuarı
+        'backAccessory': Sırt aksesuarı
+        'eyeAccessory': Göz aksesuarı
       raceTypes:
         human: İnsan
         none: Hiçbiri
@@ -46,6 +49,14 @@ maps:
     phrases:
       itemType:
         'collectible': Koleksiyonluklar
+        'consumable': Tek kullanımlıklar
+        'crafted': Ürün
+        'gear': Teçhizat
+        'material': Malzemeler
+        'container': Kaplar
+        'loot': Ganimet
+        'special': Özel
+        'tool': Aletler
   settings:
     boolSettings:
       'showRecipesServiceAreMet': Hizmet gereksinimleri karşılandı
@@ -78,6 +89,11 @@ maps:
     leaderboardFilter:
       'everyone': Herkes
       'friends': Arkadaşlar
+  character:
+    stepsTime:
+      'hourly': Saatlik adımlar
+      'daily': Günlük adımlar
+      'monthly': Aylık adımlar
 plurals:
   achievements:
     phrases:
@@ -95,50 +111,55 @@ plurals:
         many: '-'
         one: Kalan eylem
         other: Kalan eylem
-        two: '-'
+        two: 'Kalan eylem'
         zero: '-'
       actionsToLevelUp:
         few: '-'
         many: '-'
         one: Seviye atlamaya kalan eylem
         other: Seviye atlamaya kalan eylem
-        two: '-'
+        two: 'Seviye atlamaya kalan eylem'
         zero: '-'
       stepsRemainingInTotal:
         few: '-'
         many: '-'
         one: Toplamda kalan adım
         other: Toplamda kalan adım
-        two: '-'
+        two: 'Toplamda kalan adım'
         zero: '-'
       stepsRequired:
         few: '-'
         many: '-'
         one: Gereken adım
         other: Gereken adım
-        two: '-'
+        two: 'Gereken adım'
         zero: '-'
       stepsToCraft:
         few: '-'
         many: '-'
         one: Üretime kalan adım
         other: Üretime kalan adım
-        two: '-'
+        two: 'Üretime kalan adım'
         zero: '-'
       stepsToLevelUp:
         few: '-'
         many: '-'
         one: Seviye atlamaya kalan adım
         other: Seviye atlamaya kalan adım
-        two: '-'
+        two: 'Seviye atlamaya kalan adım'
         zero: '-'
       stepsUntilArrival:
         few: '-'
         many: '-'
         one: Hedefe kalan adım
         other: Hedefe kalan adım
-        two: '-'
+        two: 'Hedefe kalan adım'
         zero: '-'
+  inventory:
+    info:
+      consumableDuration:
+        few: '-'
+        many: '-'
 singulars:
   achievements:
     info:
@@ -266,6 +287,11 @@ singulars:
       buildings: Yapılar
       noActivites: Bu konumda yapacak faaliyet bulunmuyor.
       services: Hizmetler
+      jobs: İşler
+      jobBoard: İş panosu
+      routes: Rotalar
+      tapToShowRoutes: Rotaları göstermek için dokun
+      factions: Diyarlar
   mainMenu:
     phrases:
       areYouAbsolutelySure: Kesinlikle emin misin? Bu adımdan sonra, karakterini kalıcı
@@ -278,7 +304,7 @@ singulars:
       dontDoIt: Emin değilsen bunu yapma.
       downloadingContent: Yeni oyun içeriği indiriliyor
       downloadingLocalisations: Güncellenmiş yerelleştirme indiriliyor
-      email: E-posta
+      email: E-posta / Kullanıcı adı
       iAmSure: Eminim
       loadingGame: Oyun yükleniyor... Lütfen bekle!
       logIn: Giriş yap
@@ -291,6 +317,19 @@ singulars:
       pleaseWait: Lütfen bekle...
       register: Kaydol
       welcomeToWalkscape: WalkScape'e hoş geldin, <hl>yabancı</hl>. Lütfen giriş yap.
+      googlePlay: Play Store'dan güncelle
+      support: Oyunu destekle
+      accountPage: Hesap Sayfası
+    loadingStates:
+      loadingCharactersFromCloud: Karakterler buluttan yükleniyor
+      gameVersion: Oyun versiyonu alınıyor
+      initializingPlayer: Oyuncu verisi başlatılıyor
+      loadingComplete: Yükleme tamamlandı!
+      readingLocalGameData: Yerel oyun verisi okunuyor
+      initializingDatabases: Veri tabanları başlatılıyor
+      readingCloudData: Bulut verisi okunuyor
+      dataLoadingComplete: Veri yüklemesi tamamlandı!
+      validatingGame: Oyun verisi sunucudan doğrulanıyor
   permissions:
     phrases:
       pedometerPermission: Adım sayacı izni
@@ -306,6 +345,9 @@ singulars:
       hideHat: Başlığı gizle
       randomize: Rastgele
       showHat: Başlığı göster
+      enableFaceAccessory: Yüz aksesuarı olsun
+      enableBackAccessory: Sırt aksesuarı olsun
+      enableEyeAccessory: Göz aksesuarı olsun
     phrases:
       colorOptions: Renk seçenekleri
       currentSelection: Mevcut seçim
@@ -335,7 +377,7 @@ singulars:
   trade:
     phrases:
       buying: Alım {amount}
-      restockIn: 'Yeni stoklara: {time}'
+      restockIn: 'Yeni stoklara: '
       selling: Satım {amount}
       total: Toplam
       trade: TAKAS
@@ -358,6 +400,9 @@ singulars:
       youHaveNotExplored: Bu konumu henüz keşfetmedin. Bir kere ziyaret edince konum
         bilgilerini görebilirsin.
       youreHere: Şu anda bu konumdasın.
+      noActivities: Bu konumda herhangi bir faaliyet mevcut değil.
+      changeRouteWarning: Rotanı değiştirirsen mevcut seyahatini iptal ederek önceki
+        konuma döneceksin. Emin misin?
   treasury:
     phrases:
       openAll: Tümünü aç
@@ -435,3 +480,30 @@ singulars:
   social:
     phrases:
       friends: Arkadaşlar
+      pendingInvites: Bekleyen davetler
+  gearSets:
+    phrases:
+      name: İsim
+      noActivitiesSelected: Hiçbir faaliyet seçilmedi
+      optionsAndFilters: Seçenekler & filtreler
+      sortBy: 'Sıralama: '
+      toolSlot: Alet yuvası
+      default: Varsayılan
+      level: 'Svy. '
+      showAttributes: Nitelikleri göster
+      gear: Teçhizat
+      tools: Aletler
+      gearSets: Teçhizat setleri
+      copyCurrentlyEquippedGear: Şu anda kuşanılan teçhizatı kopyala
+      forActivities: 'Faaliyetler için: '
+      unequipGear: Teçhizatı çıkar
+      unequipTools: Aletleri çıkar
+      noItemSelected: Seçili eşya yok
+      newSetDefaultName: Yeni Teçhizat Setim
+      importedGearSetDefaultName: İçe Aktarılan Teçhizat Seti
+    info:
+      gearSetsDescription: Teçhizat setleri, teçhizatını çabucak değiştirmene yardım
+        eder.
+    errors:
+      keywordError: Teçhizat setinde zaten <object id="{keyword}" /> var
+      duplicateItem: Eşya teçhizat setinde zaten bulunuyor
