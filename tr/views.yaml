@@ -237,7 +237,7 @@ singulars:
     options:
       consenseInventory: Envanteri sıkıştır
       expandInventory: Envanteri genişlet
-      showConsumables: Tek kullanımlıkları göster
+      showConsumables: Tüketimlikleri göster
       showGear: Teçhizatı göster
       showMaterials: Malzemeleri göster
     phrases:
@@ -258,15 +258,21 @@ singulars:
       longPressTip: <c>İpucu:</c> Bir eşya yığınına basılı tutmak bütün benzer yığınları
         seçer.
       noItemEquipped: Kuşanılmamış eşya yok
-      noItemSelected: Seçili eşya yok
+      noItemSelected: Seçilmiş bir eşya yok
       requirementsNotMet: Gereksinimler karşılanmıyor.
       requires: Gerekli
       slotDoesntExist: Bu eşya yuvası artık yok.
       slots: Eşya yuvası <c>{slots}</c>
       slotsCount: 'Eşya yuvası:'
       treasury: Hazine
-      noPotionConsumables: Envanterinde hiç <hl>iksir</hl> yok.
+      noPotionConsumables: Envanterinde <hl>iksir</hl> bulunmuyor.
       abilities: Yetenekler
+      consumables: Tüketimlikler
+      noConsumables: Envanterinde tüketimlik bulunmuyor.
+      noFoodConsumables: Envanterinde <hl>yiyecek</hl> bulunmuyor.
+      selectedConsumable: Seçilmiş tüketimlik
+      noConsumableSelected: Seçilmiş tüketimlik bulunmuyor. Aşağıdakilerden birini
+        seçebilirsin.
   leaderboards:
     phrases:
       first: İlk
@@ -357,7 +363,7 @@ singulars:
       extras: Ekstralar
       homeRegion: Memleket
       mainOptions: Ana seçenekler
-      noVariantSelected: Seçili çeşit yok
+      noVariantSelected: Seçilmiş çeşit yok
       race: Irk
       resetToDefault: Varsayılana sıfırla
       selectedVariant: Çeşit {index} seçildi
@@ -414,6 +420,7 @@ singulars:
     phrases:
       stopWhenOverEncumbered: Envanter taşınca dur
       savedSteps: Birikmiş adım
+      consumables: Tüketimlikler
     info:
       consumablesUsage: Faaliyetler esnasında kullanmak için birer <c>yiyecek</c>
         ve <c>iksir</c> seçebilirsin.
@@ -471,7 +478,7 @@ singulars:
       holdToCast: Yapmak için basılı tut
       abilities: Yetenekler
       useAbility: Yeteneği kullan
-      useConsumable: Tek kullanımlığı kullan
+      useConsumable: Tüketimliği kullan
       noAction: Eylem yok
       holdToUse: Kullanmak için basılı tut
   faction:
@@ -484,7 +491,7 @@ singulars:
   gearSets:
     phrases:
       name: İsim
-      noActivitiesSelected: Hiçbir faaliyet seçilmedi
+      noActivitiesSelected: Seçilmiş faaliyet bulunmuyor
       optionsAndFilters: Seçenekler & filtreler
       sortBy: 'Sıralama: '
       toolSlot: Alet yuvası
@@ -498,7 +505,7 @@ singulars:
       forActivities: 'Faaliyetler için: '
       unequipGear: Teçhizatı çıkar
       unequipTools: Aletleri çıkar
-      noItemSelected: Seçili eşya yok
+      noItemSelected: Seçilmiş eşya yok
       newSetDefaultName: Yeni Teçhizat Setim
       importedGearSetDefaultName: İçe Aktarılan Teçhizat Seti
     info:
