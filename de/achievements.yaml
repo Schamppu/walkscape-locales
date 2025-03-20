@@ -147,10 +147,8 @@ singulars:
       desc: Ihr würdet mir nicht glauben, wenn ich es euch sage, aber ich konnte rennen
         wie der Wind. Von diesem Tag an rannte ich immer, wenn ich irgendwo hin wollte!
     spaceCarsAndBirds:
-      name: Weltraum, Autos und Vögel
-      desc: Ich gebe niemals auf. Ich müsste schon tot oder völlig handlungsunfähig
-        sein. Und wenn ich sage "niemals", dann meine ich damit, dass ich dich niemals
-        aufgeben, dich niemals im Stich lassen werde" -Melon Usk
+      name: All die Dinge, die ich tun könnte
+      desc: Ein Vermögen erspielt, nichts bleibt wie es war…
     tutorialComplete:
       desc: Du bist jetzt bereit das Anfangsgebiet zu verlassen, richtig?
       name: Tutorial beendet
@@ -204,55 +202,116 @@ singulars:
       name: Ooh, Glänzender!
       desc: Das seltenste auf der Welt, neben einem Geist des Scharfsinns, ist eine
         schöne, glänzende Sternenperle.
+    moreThanMeetsTheEye:
+      desc: Du kamst für Diamanten, doch fandest eine Schaufel. Die Geheimnisse der
+        Erdweis-Kunsthandwerkfabrik sind zahlreich.
+      name: Mehr, als das Auge erfassen kann
+    aVeryFashionableCoast:
+      desc: Zum ersten Mal fühlst du dich wie ein echter Bewohner der Modehochburg
+        von Arenum, eingebettet zwischen Middlecrest und Ewighafen.
+      name: Ein stilvoller Küstenstreifen
+    nice:
+      desc: Klasse.
+      name: Klasse.
   requirements:
-    catchCrabs: Fange <numberProgress /> Krabben beim Fischen.
-    chop5kTrees: Fälle <numberProgress /> Bäume.
-    collect1kMushrooms: Sammle <numberProgress /> Pilze.
+    catchCrabs: Fange <numberProgress /><object id="fish" /> beim <object id="activity_fishing"
+      />
+    chop5kTrees: Fälle <numberProgress /><object id="woodcuttingTrees" />
+    collect1kMushrooms: Sammle <numberProgress /><object id="item-mushroom-aa67c861-9b00-4b66-8692-2ca8d6619181"
+      alwaysShow="true" /> beim <object id="activity_foraging" />.
     cook20DifferentRecipes: Koche <numberProgress /> verschiedene Rezepte.
-    craftPickaxeOfHighestQuality: Stelle eine Spitzhacke der höchsten Qualität her.
-      <numberProgress />
+    craftPickaxeOfHighestQuality: Stelle eine <object id="pickaxe" /> der höchsten
+      Qualität her. <numberProgress />
     findMysteriousG: Finde das geheimnisvolle G. <numberProgress />
-    gain99Agility: Erhöhe deine Beweglichkeit auf <numberProgress />.
-    gainRingWhileFishing: Erhalte einen Ring beim Fischen. <numberProgress />
-    goToBarbantok: Gehe zum Dorf Barbantok. <numberProgress />
-    goToNoiselessPass: Gehe zum Stummen Pass. <numberProgress />
-    have5DifferentGems: Habe <numberProgress /> verschiedene Edelsteine im Inventar.
+    gain99Agility: Steigere deine Beweglichkeit auf <numberProgress />
+    gainRingWhileFishing: Erhalte einen <object id="item-ring_of_the_heron-331538f6-1905-4d1e-bd29-75100a2b59f6"
+      /> beim <object id="activity_fishing" /> <numberProgress />
+    goToBarbantok: Gehe zum Dorf <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" /> <numberProgress />
+    goToNoiselessPass: Begib dich zu dem Ort namens <object id="location-noiseless_pass-e081df71-97eb-4708-90b0-f33e61b2a0c7"
+      alwaysShow="true" /> <numberProgress />
+    have5DifferentGems: Habe <numberProgress /> verschiedene <object id="cut_gem"
+      /> in deinem Inventar.
     levelUpAnySkill: Verbessere dich in einer Fähigkeit. <numberProgress />
     mine10kOres: Baue insgesamt <numberProgress /> Erze ab.
-    mine1kGoldOres: Erhalte bei Aktivitäten <numberProgress /> Golderz.
+    mine1kGoldOres: Erhalte <numberProgress /> <object id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f"
+      alwaysShow="true" /> von Aktivitäten.
     useALamp: Nutze eine XP-Lampe. <numberProgress />
     walkSteps: Gehe <numberProgress /> Schritte.
     walkStepsWithoutGear: Gehe <numberProgress /> Schritte, ohne dabei Ausrüstung
       zu tragen.
     cookRecipes: Koche <numberProgress /> Rezepte.
-    gainSocksFromActivity: Finde Socken bei einer Aktivität. <numberProgress />
-    forageHoney: Sammle <numberProgress /> Honigwaben.
+    gainSocksFromActivity: Erhalte <object id="item_socks" /> als Beute bei einer
+      Aktivität. <numberProgress />
+    forageHoney: Sammle <numberProgress /><object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
+      alwaysShow="true" /> beim <object id="activity_foraging" />.
     characterLevel: Habe Charakterlevel <numberProgress />.
     haveCoins: Habe <numberProgress /> Münzen.
-    makeSandwich: Mache <numberProgress /> Sandwich.
+    makeSandwich: Mache <numberProgress /><object id="sandwich" />
     walkStepsInDay: Laufe <numberProgress /> Schritte an einem Tag.
-    craftHatchetOfHighestQuality: Stelle ein Beil von höchster Qualität her. <numberProgress
-      />
+    craftHatchetOfHighestQuality: Stelle eine <object id="woodcuttingHatchet" /> der
+      höchster Qualität her. <numberProgress />
     craftPerfectItem: Stelle ein perfektes Item her. <numberProgress />
     haveAllSkillsLevel: Habe alle Skills mindestens auf Stufe.<numberProgress />
-    mineOres: Baue <numberProgress /> Erze ab.
+    mineOres: Baue <numberProgress /> <object id="ore" /> ab.
     haveBankStacks: Habe <numberProgress /> Stapel in der Bank.
-    haveFoodStackQuantity: Habe <numberProgress /> von einem Lebensmittel.
+    haveFoodStackQuantity: Besitze von einem beliebigen <object id="food" /> eine
+      Menge von <numberProgress /> Stück.
     exploreJarvonia: Erforsche jeden Ort in Jarvonia. <numberProgress />
-    gainFineMaterial: Erhalte <numberProgress /> feines Material.
+    gainFineMaterial: Erhalte <numberProgress /> "edle" Materialien.
     dropItem: Lasse <numberProgress /> Items fallen.
     dropItems: Lasse <numberProgress /> Items fallen.
     haveInventoryFilled: Sei überladen. <numberProgress />
-    haveRingsEquipped: Habe zwei Ringe angelegt.<numberProgress />
+    haveRingsEquipped: Rüste beide <object id="item_ring" /> Plätze aus. <numberProgress
+      />
     haveEverySlotFilled: In jedem Ausrüstungsplatz muss ein Gegenstand ausgerüstet
       sein.<numberProgress />
     gainItem: Erhalte Gegenstand<item id="{item}"/>. <numberProgress />
-    haveSickleEquipped: Habe Sichel ausgerüstet. <numberProgress />
-    haveHammerEquipped: Habe Hammer ausgerüstet. <numberProgress />
-    gainTreasureChest: Erhalte eine Schatztruhe aus einer beliebigen Aktivität. <numberProgress
+    haveSickleEquipped: Habe eine <object id="sickle" /> ausgerüstet. <numberProgress
       />
-    openTreasureChest: Öffne<numberProgress /> Schatztruhen.
-    consumeBeer: Trinke<numberProgress /> Bier.
-    useMemosphere: Benutze <numberProgress /> Erinnerungssphere.
+    haveHammerEquipped: Habe einen <object id="smithingHammer" /> ausgerüstet. <numberProgress
+      />
+    gainTreasureChest: Erhalte eine <object id="chest" /> von einer beliebigen Aktivität.
+      <numberProgress />
+    openTreasureChest: Öffne<numberProgress /> <object id="chest" />.
+    consumeBeer: Trinke ein <object id="item-beer-9a2b6380-7270-43e0-bd9a-67e8bcb9d925"
+      alwaysShow="true" /> <numberProgress />
+    useMemosphere: Benutze <numberProgress /> <object id="memosphere" />
     findIceSickle: Finde ein <hl>sehr seltenes Werkzeug</hl> von dem Gletscher. <numberProgress
       />
+    gainFineStarPearl: Erhalte eine "edle" <object id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81"
+      alwaysShow="true" /> von einer Aktivität. <numberProgress />
+    activitySwimInt: Beende die <object id="activity-swimming_(intermediate)-37f761f4-f6fd-49a5-8389-5816388e0cf9"
+      /> Aktivität <numberProgress /> mal.
+    activitySand: Beende die <object id="activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d"
+      /> Aktivität <numberProgress /> mal.
+    prepUnderwaterSalad: Bereite <object id="item-underwater_salad-ea06cde2-d58d-4a79-8b05-6f515d5b02da"
+      /> <numberProgress /> Mal zu.
+    activityBasket: Beende die <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
+      /> Aktivität <numberProgress /> mal.
+    activityButterfly: <object id="activity-butterfly_catching-ddef8fc5-a61e-4689-bacb-e49ee89f09c8"
+      /> Aktivität <numberProgress /> mal.
+    activityGlacier: Beende die <object id="activity-glacier_foraging-dfdd59cc-e38b-48fc-9a0e-439163abac12"
+      /> Aktivität <numberProgress /> mal.
+    activityIce: Beende die <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
+      /> Aktivität <numberProgress /> mal.
+    activitySled: Beende die <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
+      /> Aktivität <numberProgress /> mal.
+    activitySwimBeg: Beende die <object id="activity-swimming_(beginner)-1ccee641-01d9-4bcb-8dd7-9df9c61142f2"
+      /> Aktivität <numberProgress /> mal.
+    activitySwimExp: Beende die <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
+      /> Aktivität <numberProgress /> mal.
+    activityTinkering: Beende die <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
+      /> Aktivität <numberProgress /> mal.
+    completeActivity: Beende die <item id="{item}" alwaysShow="true" /> Aktivität
+      <numberProgress /> mal.
+    gainFineTrash: Finde "edlen" <object id="item-trash-40c14f4e-3ef2-435a-a5de-123843f824bf"
+      alwaysShow="true" /> bei einer Aktivität. <numberProgress />
+    prepKelpRoll: Bereite <object id="item-kelp_rolls-90004956-7275-4b13-9488-61cc320afd09"
+      /> <numberProgress /> Mal zu.
+    prepSaltrum: Bereite <object id="item-saltrum-f2df867a-21a7-48db-b13b-efea9e46cb5d"
+      /> <numberProgress /> Mal zu.
+    sharkFish: Erhalte einen <object id="item-raw_shark-f543d44b-0cc7-4d5a-9cdc-50ce8d90cb86"
+      alwaysShow="true" /> von einer Aktivität. <numberProgress />
+    sharkCook: Koche einen <object id="item-cooked_shark-4eadab85-170e-42b5-a086-cb57cd9d9dc3"
+      alwaysShow="true" />. <numberProgress />
