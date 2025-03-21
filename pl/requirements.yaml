@@ -3,7 +3,7 @@ singulars:
     text: Awansuj poziomy umiejętności <numberProgress current="{current}" max="{max}"
       /> razy.
   skillLevel:
-    text: Wymaga przynajmniej <skill skill="{skill}" level="{level}" needed/>
+    text: Wymaga co najmniej <skill skill="{skill}" level="{level}" needed/>
   itemAnywhere:
     text: Posiadaj przedmiot <item id="{item}"/>.
   traveling:
@@ -33,8 +33,8 @@ singulars:
   overencumbered:
     text: Miej więcej przedmiotów niż limit ekwipunku (przeciążenie).
   haveItemStack:
-    text: Miej pole ekwipunku <object id="{obj}" alwaysShow="true" /> wielkości <numberProgress
-      current="{current}" max="{max}" /> sztuk.
+    text: Miej w ekwipunku stack <object id="{obj}" alwaysShow="true" /> wielkości
+      <numberProgress current="{current}" max="{max}" /> sztuk.
   haveBankStacks:
     text: Miej <numberProgress current="{current}" max="{max}" /> stacków przedmiotów
       w swoim banku.
@@ -54,8 +54,9 @@ singulars:
     intermediateCrossCountry: Ukończ aktywność <object 
       id="activity-cross-country_skiing_(intermediate)-42788047-6cc3-4711-88be-999e9504fc2a"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> razy.
-    searchTeam: Ukończ aktywność Grupa Poszukiwawcza Szczyt Czarnego Oka <numberProgress
-      current="{current}" max="{max} /> razy.
+    searchTeam: Ukończ aktywność na Szczycie Czarnego Oka <object id="activity-black_eye_peak_search_team-d1ad835f-0898-4fc7-8f0a-4b0626d95306"
+      alwaysShow="true" /> w <object id="location-horn_of_respite-1661d247-11f1-49eb-b927-6e59c8fd7774"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> razy.
     woodCarving: Ukończ aktywność <object id="activity-wood_carving-af675674-c972-4e2e-80fe-1501b972e353"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> razy.
     beginnerCrossCountry: Ukończ aktywność <object 
@@ -72,6 +73,9 @@ singulars:
     trellinReputation: <numberProgress current="{current}" max="{max}" /> w frakcji
       <realm realm="faction-trellin-239a0ad8-3812-4f2a-9c11-1c312490249b" /> faction
       reputation.
+    halflingRebelsReputation: <numberProgress current="{current}" max="{max}" /> w
+      frakcji <realm realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb"
+      />.
   mainSkill:
     text: W trakcie wykonywania <skill skill="{skill}"/>
   totalSteps:
@@ -82,4 +86,25 @@ singulars:
       /> Punktów Osiągnięć.
   exploreRegion:
     text: Zwiedź obszar <object id="{obj}" alwaysShow="true" /> całkowicie. <numberProgress
+      current="{current}" max="{max}" />.
+  gear:
+    beginnerSkydisc: Miej ukończoną aktywność <object id="activity-frisbee_golfing_(beginner)-0fb41f4d-f46b-4a6d-acdf-f2525654c714"
+      alwaysShow="true" /> w <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> razy.
+    tinkering: Miej zrobionych kroków <numberProgress current="{current}" max="{max}"
+      /> w aktywności <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
+      /> w <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a" alwaysShow="true"
+      />.
+    iceSculpting: Miej zrobionych kroków <numberProgress current="{current}" max="{max}"
+      /> w aktywności <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
+      alwaysShow="true" /> w <object id="location-frusenholm-5ddb0735-4582-4858-80a0-7489f1b043a2"
+      alwaysShow="true" />.
+    swimmingExpert: Miej ukończoną aktywność <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> razy.
+    underwaterBasketweaving: Miej zrobionych kroków <numberProgress current="{current}"
+      max="{max}" /> w aktywności <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
+      alwaysShow="true" /> w <object id="location-fertile_shallows-6561e4b5-fce3-4307-a641-86ca5aee36d6"
+      alwaysShow="true" />.
+  exploreRealm:
+    text: Zbadaj całkowicie <object id="{obj}" alwaysShow="true" /> . <numberProgress
       current="{current}" max="{max}" />.
