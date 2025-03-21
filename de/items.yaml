@@ -179,6 +179,10 @@ singulars:
         name: Feurige Chilischote
         desc: Mit ihrer intensiven Schärfe und ihrem kräftigen Aroma verleiht diese
           Chilischote jeder Speise eine feurige Note.
+      cremeBrulee:
+        desc: Knusprig karamellisiert, cremig im Kern – kein Wunder, dass Erdweis
+          es zur Nationalspeise erhoben hat.
+        name: Crème Brûlée
     memosphere:
       smithingMemosphere:
         desc: Innerhalb der Glaskugel erscheint eine Szene, in der du mit geschickten
@@ -216,6 +220,10 @@ singulars:
         name: Memosphäre des Holzfällens
         desc: Die Kugel zeigt eine alte Erinnerung – der Duft von frischem Holz liegt
           in der Luft, während du einen gewaltigen Baum mit präzisen Axtschlägen fällst.
+      trinketryMemosphere:
+        name: Memosphäre des Kunsthandwerks
+        desc: Eine vage Vision erscheint im Inneren des Orbs– deine Hände gleiten
+          über einen funkelnden Edelstein, polieren ihn zu vollkommener Reinheit.
     cookedFish:
       cookedLobster:
         desc: Mit seinem saftigen Fleisch und der charakteristischen harten Schale
@@ -389,12 +397,17 @@ singulars:
           desc: Während du trainierst, fällt plötzlich ein brauner Lederstiefel direkt
             neben dir zu Boden – doch weit und breit ist niemand zu sehen. Als du
             genauer hinsiehst, erkennst du, dass etwas darin versteckt ist.
+      trinketry:
+        trinketryChest:
+          name: Kunsthandwerk-Truhe
+          desc: Eine Kiste voller Wertgegenstände – ich hoffe für dich, dass es kein
+            getarntes Monster ist!
   crafted:
     equipmentSets:
       bronze:
         chest:
-          desc: Der bronzene Plattenpanzer, eine formidable Brustplatte der Verteidigung,
-            trägt das zeitlose Vermächtnis des Rüstungshandwerkes.
+          desc: Die bronzene Plattenrüstung schützt nicht nur hervorragend die Brust,
+            sondern erzählt die Geschichte der alten Meister des Schmiedefeuers.
           name: Bronzebrustplatte
         gloves:
           desc: Bronzene Handschuhe, meisterhaft gefertigt und robust, wiegen die
@@ -430,12 +443,12 @@ singulars:
           desc: Kupferüberzüge für deine Hände.
           name: Kupferhandschuhe
         heavyHelmet:
-          desc: Der Kupferschwerhelm, eine Visage der Widerstandsfähigkeit, opfert
-            jegliche Agilität für maximale Verteidung.
+          desc: Dieser massive Kupferhelm steht für Standhaftigkeit und Stärke – Beweglichkeit
+            wird dem Schutz völlig untergeordnet.
           name: Schwerer Kupferhelm
         legs:
-          desc: Ein Paar Kupferplattenbeine, gestaltet mit einer Mischung aus Robustheit
-            und Bewegunsfreiheit, bieten ein Grundniveau an Schutz.
+          desc: Diese Beinschienen aus Kupfer vereinen Stabilität mit Beweglichkeit
+            – ideal für grundlegenden Schutz im Kampf.
           name: Kupferbeinschienen
         lightHelmet:
           desc: Der Kupferne Leichthelm, eine strahlende Krone des Schutzes, bietet
@@ -452,12 +465,12 @@ singulars:
           desc: Ein leichter Schild.
       farganite:
         chest:
-          desc: Eine undurchdringliche Festung auf deiner Brust, auf wessen der Feind
-            sich selbst in der reflektierenden blauen Oberfläche sehen kann.
+          desc: Dieser Brustpanzer ist eine Festung aus Farganit und Glanz – so makellos,
+            dass selbst der Feind sein Spiegelbild darin erkennt.
           name: Fanganitbrustplatte
         gloves:
-          desc: Ein wunderbares Paar Handschuhe, das die aktuelle Farbe des Himmels
-            zu reflektieren scheint.
+          desc: Ein wundersames Paar Handschuhe, das scheinbar die aktuelle Farbe
+            des Himmels widerspiegelt.
           name: Farganithandschuhe
         heavyHelmet:
           desc: Ein Zeichen der erfahrendsten Krieger des Westlichen Kontinentes.
@@ -467,8 +480,8 @@ singulars:
             sie dem Träger hohe Mobilität und hohe Verteidigung.
           name: Fanganitbeinschienen
         lightHelmet:
-          desc: Ein enigmatisches Meisterwerk der Schmiedekunst, das dein Gesicht
-            in ein schimmerndes Blau hüllt.
+          desc: Dieses geheimnisvolle Stück Schmiedekunst legt sich wie ein blauer
+            Schleier aus Licht über dein Gesicht.
           name: Leichter Farganithelm
         shoes:
           desc: Zumindest sind sie heller als das schwarze Paar!
@@ -495,8 +508,8 @@ singulars:
             marschieren, und flößt seinem Träger standhaftes Vertrauen ein.
           name: Schwerer Eisenhelm
         legs:
-          desc: Diese Plattenbeine sind schwer, bieten aber maßvollen Schutz für deine
-            Gliedmaßen.
+          desc: Die Platten an den Beinen sind schwer, bieten jedoch einen moderaten
+            Schutz für deine Gliedmaßen.
           name: Eisenbeinschienen
         lightHelmet:
           desc: Es funkelt mit dem Versprechen, den Schutz von Abenteurern auf ihren
@@ -551,8 +564,8 @@ singulars:
             auch im Kriegsraum ein wahrer Blickfang ist.
       tarsilium:
         chest:
-          desc: Ein schwarzes Plattenhemd, die bevorzugte Wahl der dunklen Ritter
-            im Reich.
+          desc: Beliebt bei den dunklen Rittern des Reiches – dieser schwarze Plattenpanzer
+            vereint Stil mit Stärke.
           name: Tarsiliumbrustplatte
         gloves:
           desc: Ein schwarzes Paar Handschuhe, das dir völlige Freiheit bei der Bewegung
@@ -563,8 +576,8 @@ singulars:
             dein wertvollstes Organ – das Gehirn.
           name: Schwerer Tarsiliumhelm
         legs:
-          desc: Dieses schwarze Set Plattenbeine ist die perfekte Ausrüstung für die
-            Goth-Ritter des Mittelalters.
+          desc: Ein schwarzes Beinschutz-Set aus Platten – die perfekte Wahl für gothische
+            Ritter mit Stil.
           name: Tarsiliumbeinschienen
         lightHelmet:
           desc: Ein leichter, schwarzer Helm, der nicht nur deinen Kopf schützt, sondern
@@ -1037,7 +1050,7 @@ singulars:
           desc: Genauigkeit in ihrer reinsten Form – dieses magische Amulett trägt
             die Essenz des perfekten Maßes.
         amuletOfTheRoot:
-          name: Kreiswurzel-Amulett
+          name: Wurzel-Amulett
           desc: Ein glänzendes Amulett, das seinen Träger mit der uralten Energie
             einer verwundenen Wurzel umgibt.
         amuletOfTheSharkTooth:
@@ -1064,6 +1077,42 @@ singulars:
           name: Wrentmarin-Ring aus Gold
           desc: Das Gold, das den Wrentmarin umgibt, reflektiert das Licht in tanzenden
             Mustern – als wäre es ein Schatz, der einst in den Tiefen versank.
+        cutStarPearl:
+          name: Sternenperle
+          desc: Bekannt aus dem berühmten Gemälde „Mädchen mit dem Sternenperlen-Ohrring“,
+            geschaffen von einem wallisischen Maler.
+        cutWrentmarine:
+          name: Wrentmarin
+          desc: Bei jeder Bewegung scheint eine Welle durch den ozeanblauen Stein
+            zu laufen – als würde er das Meer in sich tragen.
+        cutTopaz:
+          name: Topas
+          desc: Wie ein Stück Sonnenlicht in fester Form – dieser Edelstein ist so
+            hell, dass man besser nicht zu lange hinsieht.
+        cutJade:
+          name: Jade
+          desc: Ein Juwel in kräftigem Grün, das nicht nur das Auge erfreut, sondern
+            laut alten Legenden auch Unheil fernhält.
+        cutRuby:
+          name: Rubin
+          desc: Dieser rubinrote Edelstein erfreut sich großer Beliebtheit unter den
+            Adligen. Seine Farbe symbolisiert Macht und brennende Leidenschaft.
+        cutSunStone:
+          name: Sonnenstein
+          desc: Er stammt nicht von der Sonne – aber bei seinem glänzenden, feurigen
+            Farben könnte man es fast glauben.
+        goldRing:
+          name: Ring aus Gold
+          desc: Ein schlichter Goldring – zeitlos und in seiner Reinheit von unschätzbarem
+            Wert.
+        cutEthernite:
+          name: Ethernite
+          desc: Ein funkelnder, violetter Edelstein von hohem Wert. Etwas Dunkles
+            scheint in seinem Inneren zu lauern – und doch zieht er dich unaufhaltsam
+            in seinen Bann.
+        silverRing:
+          desc: Ein schlichter Silberring – elegant und unaufdringlich.
+          name: Ring aus Silber
   looted:
     equipmentSets:
       dimensional:
@@ -1170,8 +1219,8 @@ singulars:
           desc: Diese Handschuhe verbessern den Halt um 800%. Das steht zumindest
             auf der Verpackung.
         runningShirt:
-          desc: Die richtige Kleidung ist auf langen läufen entscheidend. Ein Shirt
-            wie dieses ist unverzichtbar.
+          desc: Die richtige Kleidung ist beim Laufen unerlässlich – ein Shirt wie
+            dieses darf dabei nicht fehlen.
           name: Laufshirt
         oakSkis:
           desc: Schwere Ski weshalb sie schnell aber schwer zu steuern sind. Dank
@@ -1189,11 +1238,11 @@ singulars:
           name: Einfaches Seil
           desc: Ein Seil hat viele Einsatzmöglichkeiten. Zum Beispiel Bergsteigen.
         clayFrisbee:
-          name: Ton Frisbee
+          name: Frisbee aus Ton
           desc: Er ist relativ schwer und zerbrechlich. Hoffentlich sind keine Tontauben-Schützen
             in der Nähe!
         goldenFrisbee:
-          name: Goldener Frisbee
+          name: Frisbee aus Gold
           desc: Da er nur vergoldet ist, ist er relativ leicht und trotzdem langlebig.
             Man würde sich erwarten, dass er im Flug einen Regenbogen hinter sich
             herzieht, aber leider nein.
@@ -1286,6 +1335,10 @@ singulars:
           name: Präzisionslineal
           desc: Sauber gravierte Maßmarkierungen auf dem Holz zeigen sowohl Zentimeter
             als auch Zoll.
+        goldenChisel:
+          desc: Man sagt, Geld wächst nicht auf Bäumen – aber offenbar auf Meißeln
+            schon.
+          name: Goldener Meißel
       cooking:
         chefsApron:
           desc: Mit dieser Schürze wird jede Mahlzeit zu einem Meisterwerk und jedes
@@ -1365,6 +1418,9 @@ singulars:
           name: Lavapfanne
           desc: Diese Pfanne wurde in einem Vulkan geschmiedet. Die Lava, aus der
             sie gemacht ist, sorgt dafür, dass sie immer heiß und kochbereit ist.
+        rottenWrentmarine:
+          name: Verdorbener Wrentmarine (Testgegenstand)
+          desc: Nur für Tester. Gewährt unbegrenztes Inventar.
       crafting:
         candlehat:
           desc: Es ist ein Hut mit einer angebrachten Kerze. Was kann man sich mehr
@@ -1514,7 +1570,7 @@ singulars:
           desc: Ein funktionierender Kompass an einer Schnur, die du dir um den Hals
             binden kannst. Wenn du weißt, wie man ihn benutzt, findest du immer den
             Weg nach Hause.
-          name: Kompasshalskette
+          name: Amulett der Offenbarung
         simpleBugCatchingNet:
           desc: Es mag bescheiden sein, doch für Käfer ist es ein unausweichliches
             Schicksal.
@@ -1624,7 +1680,7 @@ singulars:
             in jeden Schwung bringen kannst.
         coolingIceAmulet:
           name: Kühlendes Eis-Amulett
-          desc: Dieses Amulett strahlt dauerhaft Kälte aus
+          desc: Dieses Amulett strahlt eine stetige Kälte aus.
         metalworkingGloves:
           desc: Du kannst damit deine Hand in einen brennenden Ofen stecken, ohne
             Blasen zu bekommen. Über deine Arme kann man das aber nicht sagen.
@@ -1706,6 +1762,37 @@ singulars:
           name: Verwurzelter Ring
           desc: Der Ring ist aus magischen Wurzeln gemacht, welche ineinander verwachsen
             sind.
+      trinketry:
+        roughSandpaper:
+          name: Grobes Schleifpapier
+          desc: Das grobe Schleifpapier droht, deine Haut zu malträtieren, wenn du
+            es zu fest hältst.
+        gemTippedTweezers:
+          name: Edelsteinbesetzte Pinzette
+          desc: Fein gearbeitete Pinzette, deren Spitzen mit funkelnden Edelsteinchen
+            besetzt sind.
+        prettyPliers:
+          name: Verzierte Zange
+          desc: Ein Bestseller in Erdweis! Heute 10% günstiger in der Kunsthandwerk-Fabrik.
+        zipPouch:
+          name: Reißverschlusstasche
+          desc: Eine sichere Methode, hochwertige Edelsteine vom Arbeitstisch bis
+            zum Markt zu transportieren.
+        handFile:
+          name: Praktische Handfeile
+          desc: Liegt wirklich gut in der Hand – aber vergiss nicht, den Staub danach
+            wegzuwischen.
+        autoAdjustingMandrel:
+          name: Selbstjustierender Dorn
+          desc: Ein technisches Wunderwerk aus Galgenschmied – kaum vorstellbar, dass
+            die Justierung einst von Hand erfolgte.
+        gemistryGuidebook:
+          name: Leitfaden zur Edelsteinverarbeitung
+          desc: Die Grundlagen zum Verständnis der chemischen Aspekte des Kunsthandwerks.
+        darWittsMonocle:
+          name: Dar Witt's Monokel
+          desc: Ein Erbstück der Dar Witts, einer der einflussreichsten Familien in
+            Schwarzzauber.
     versatile:
       backpack:
         desc: Ein hochwertiger Leder-Rucksack, der mit extra Taschen und großzügigem
@@ -1980,6 +2067,10 @@ singulars:
         name: Aerofibril-Umhang
         desc: Gefertigt aus leichten Federn und aerodynamischen Fäden, lässt dich
           dieser Umhang mit rasanter Geschwindigkeit dahingleiten.
+      pentafrostAmulet:
+        name: Pentafrost-Amulett
+        desc: Ein Relikt der Geweihten, geformt aus ewigem Eis und nur den höchsten
+          Rängen vorbehalten. Wie ist es in deine Hände geraten?
     achievements:
       adventurersGloves:
         name: Abenteurerhandschuhe
@@ -1994,8 +2085,7 @@ singulars:
           Mode.
         name: Schatzjägerjacke
       adventurersShirt:
-        desc: Dieses Ledershirt hat eine hellbraune Farbe und hat mehrere Tachen um
-          Sachen zu verstauen.
+        desc: Dieses Lederhemd in warmem Braun verfügt über mehrere Taschen zur Aufbewahrung.
         name: Abenteurershirt
       otherSock:
         name: Andere Socke
@@ -2048,7 +2138,7 @@ singulars:
         desc: Nicht der eleganteste Ring, aber er glänzt.
       gemBracelet:
         name: Edelsteinarmband
-        desc: Sechs farbige Edelsteine bilden ein Armband.
+        desc: Sechs farbenfrohe Edelsteine bilden ein Armband.
       rustySpyglass:
         name: Rostiges Fernglas
         desc: Ein gut benutztes Instrument, wie dieses rostige Fernrohr, hat einen
@@ -2079,9 +2169,8 @@ singulars:
           ist Großes zu erreichen.
       capeOfAchiever:
         name: Umhang des Erfolgreichen
-        desc: Dieser rosenfarbene Umhang weckt das Interesse aller, die ihn zu sehen
-          bekommen. Der Besitzer des Umhangs hat erreicht wovon andere nur träumen
-          können.
+        desc: Der rosafarbene Umhang weckt das Interesse aller, die ihn erblicken.
+          Sein Träger hat vollbracht, wovon andere nur träumen.
       runningVisor:
         name: Rennvisier
         desc: Dieses rote Visier schützt Deine Augen vor der Sonne und erlaubt es
@@ -2880,6 +2969,10 @@ singulars:
       lostTimmysSandShovel:
         name: Lost Timmy's Sandschaufel
         desc: Ob der Junge ebenfalls verloren gegangen ist, bleibt unklar.
+      meteoriteFragment:
+        desc: Durch Raum und Zeit gereist, vom Feuer der Atmosphäre geformt – dieses
+          Fragment erzählt die Geschichte eines fernen Himmelskörpers.
+        name: Meteoritensplitter
   currencies:
     adventurersGuildToken:
       desc: Ein Token, der in der Abenteurergilde für Waren und Dienstleistungen eingelöst
