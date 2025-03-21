@@ -3,10 +3,10 @@ singulars:
     fish:
       name: Ryba
       requirement: Wymaga ryby.
-      requirementLevel: Wymaga ryby która ma prznajmniej <keywordRequirements /> w
-        swoich wymaganiach.
+      requirementLevel: Wymaga ryby która ma przynajmniej <keywordRequirements />
+        w swoich wymaganiach.
     logs:
-      name: Kłody
+      name: Kłoda
       requirement: Wymaga kłody drewna.
       requirementLevel: Wymaga drewnianej kłody, która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
@@ -40,6 +40,41 @@ singulars:
       requirement: Wymaga sztabki.
       requirementLevel: Wymaga sztabki, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+    roughGem:
+      name: Nieoszlifowany Klejnot
+      requirement: Wymaga nieoszlifowanego klejnotu.
+      requirementLevel: Wymaga nieoszlifowanego klejnotu który ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    trinket:
+      name: Błyskotka
+      requirement: Wymaga błyskotki.
+      requirementLevel: Wymaga błyskotki która ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    food:
+      name: Jedzenie
+      requirement: Wymaga jedzenia.
+      requirementLevel: Wymaga jedzenia które ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    ingredient:
+      name: Składnik
+      ingredient: Wymaga składnika.
+      requirementLevel: Wymaga składnika który ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    misc:
+      name: Różnorodny.
+      requirement: Wymaga różnorodnych przedmiotów.
+      requirementLevel: Wymaga różnorodnych przedmiotów które mają przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    processed:
+      name: Przetworzony
+      requirement: Wymaga przetworzonego materiału.
+      requirementLevel: Wymaga przetworzonego materiału który ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    offcut:
+      name: Odcięty
+      requirement: Wymaga odcięcia.
+      requirementLevel: Wymaga odcięcia które ma co przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
   tools:
     fishing:
       name: Wędkarstwo
@@ -49,7 +84,7 @@ singulars:
     fishingNet:
       name: Sieć rybacka
       requirement: Wymaga założonej sieci rybackiej.
-      requirementLevel: Wymaga Sieci rybackiej, która ma przynajmniej <keywordRequirements
+      requirementLevel: Wymaga sieci rybackiej, która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
     fishingRod:
       name: Wędka
@@ -231,9 +266,9 @@ singulars:
       requirementLevel: Wymaga Kamizelki Ratunkowej, która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
     climbing:
-      name: Wspinaczka
+      name: Ekwipunek Wspinaczkowy
       requirement: Wymaga założonego ekwipunku wspinaczkowego.
-      requirementLevel: Wymaga Ekwipunku Wspinaczkowego, który posiada przynajmniej
+      requirementLevel: Wymaga ekwipunku wspinaczkowego, który posiada przynajmniej
         <keywordRequirements /> w swoich wymaganiach.
     bugCatchingNet:
       name: Siatka na Owady
@@ -248,7 +283,7 @@ singulars:
     socks:
       name: Skarpety
       requirement: Wymaga założonych skarpet.
-      requirementLevel: Wymaga Skarpet, które mają przynajmniej <keywordRequirements
+      requirementLevel: Wymaga skarpet, które mają przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
     skis:
       requirementLevel: Wymaga nart, które mają przynajmniej <keywordRequirements
@@ -262,8 +297,23 @@ singulars:
         /> w swoich wymaganiach.
     frisbee:
       name: Golf dyskowy
-      requirement: Wymaga założonego frisbee.
-      requirementLevel: Wymaga Frisbee, które ma przynajmniej <keywordRequirements
+      requirement: Wymaga założonego dysku do golfa.
+      requirementLevel: Wymaga dysku do golfa, które ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    bellows:
+      name: Miechy
+      requirement: Wymaga wyposażonych miechów.
+      requirementLevel: Wymaga miechów, które mają przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    basket:
+      name: Kosz
+      requirement: Wymaga wyposażonego kosza.
+      requirementLevel: Wymaga kosza, który ma przynajmniej <keywordRequirements />
+        w swoich wymaganiach.
+    amulet:
+      name: Amulet
+      requirement: Wymaga wyposażonego amuletu.
+      requirementLevel: Wymaga amuletu, który ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
   consumables:
     cookedFish:
@@ -298,13 +348,13 @@ singulars:
         w swoich wymaganiach.
     sandwich:
       name: Kanapka
-      requirement: To kanapka, przysięgam
-      requirementLevel: Wymaga jedzenia która ma przynajmniej <keywordRequirements
+      requirement: Wymaga kanapki.
+      requirementLevel: Wymaga jedzenia które ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
     memosphere:
       name: Memosfera
       requirement: Wymaga memosfery.
-      requirementLevel: Wymaga memosfery, która ma co najmniej <keywordRequirements
+      requirementLevel: Wymaga memosfery która ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
   containers:
     chest:
@@ -336,8 +386,10 @@ singulars:
     trash:
       name: Śmieci
       requirement: Wymaga śmieci.
-      requirementLevel: Wymaga śmieci, które mają co najmniej <keywordRequirements
+      requirementLevel: Wymaga śmieci które mają co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+    currency:
+      name: Waluta
   achievements:
     percentage:
       name: Procent osiągnięć
@@ -389,6 +441,8 @@ singulars:
         name: Globalny
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
+      trinketry:
+        name: Jubilerstwo
     items:
       consumables:
         food:
@@ -437,6 +491,8 @@ singulars:
       name: Kuchnia
       requirementLevel: <PLACEHOLDER>
       requirement: <PLACEHOLDER>
+    bench:
+      name: Pracownia Jubilerska
   itemSets:
     treasureHunter:
       name: Zestaw Poszukiwacza Skarbów
@@ -461,6 +517,11 @@ singulars:
       requirement: Wymaga eksperckiego sprzętu do nurkowania.
       requirementLevel: Wymaga eksperckiego sprzętu do nurkowania, który ma przynajmniej
         <keywordRequirements /> w swoich wymaganiach.
+    properGear:
+      name: Odpowiednie Wyposażenie
+      requirement: Wymaga zużytych elementów odpowiedniego zestawu wyposażenia.
+      requirementLevel: Wymaga odpowiedniego wyposażenia które ma co najmniej <keywordRequirements
+        /> w swoich wymaganiach.
   locations:
     underwater:
       name: Podwodny
