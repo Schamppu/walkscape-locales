@@ -1912,8 +1912,8 @@ singulars:
           jasnemu wyglądowi drewna.
       maplePlank:
         name: Klonowa Deska
-        desc: Estetyczna i przyciągająca, deska klonowa ma gładką, jasną powierzchnię,
-          dodając odrobinę wyrafinowania każdemu projektowi.
+        desc: Estetyczna i zachęcająca deska klonowa ma gładką, jasną powierzchnię,
+          dodając odrobinę wyrafinowania do każdego projektu.
       oakPlank:
         name: Dębowa Deska
         desc: Ponadczasowy wybór do projektów związanych z obróbką drewna, wyróżniający
@@ -1929,7 +1929,7 @@ singulars:
           czysta i klasyczną prezentacją.
       woodShaving:
         name: Heblowanie Drewna
-        desc: Trochę średniej jakości ścinek drewna
+        desc: Trochę średniej jakości skrawków drewna
       woodFragment:
         name: Skrawki Drewna
         desc: Trochę wysokiej jakości ścinek drewna
@@ -1953,6 +1953,9 @@ singulars:
       woodScrap:
         name: Skrawki Drewna
         desc: kilka nisko jakościowych ścinek drewna
+      elmPlank:
+        name: Wiązowa Deska
+        desc: Deska z wiązu, przydatna do formowania łuku.
     cooking:
       milk:
         name: Mleko
@@ -2124,25 +2127,25 @@ singulars:
         desc: Srebro jest cennym metalem, często wykorzystywanym do tworzenia biżuterii,
           takiej jak pierścienie amulety albo kolczyki.
       wrentmarine:
-        name: Wrentmarine
-        desc: Kiedy tym poruszasz, wygląda to tak, jakby woda przepływała z jednej
-          strony na drugą po powierzchni tego kamienia koloru niebieskiego oceanu.
+        name: Nieoszlifowany Wrentmarine
+        desc: Patrząc na tę surową skałę, można dostrzec błękitny błysk wewnątrz,
+          jak światło słoneczne odbijające się od fali.
       starPearl:
-        name: Gwiezdna Perła
-        desc: Uwieczniona w znanym obrazie "Dziewczyna z kolczykiem Perłowa Gwiazda"
-          autorstwa wallisiańskiego malarza.
+        name: Nieoszlifowana Gwiezdna Perła
+        desc: Surowa i niewypolerowana perła, choć z potencjałem do bycia czymś naprawdę
+          dobrym.
       opal:
-        name: Opal
-        desc: Pięknie opalizujące kolory lśnią na powierzchni, gdy tylko trzymane
-          są w świetle słońca.
+        name: Nieoszlifowany Opal
+        desc: Wciąż otoczony piaskiem i błotem, w którym powstał, ten delikatny klejnot
+          kryje w sobie wewnętrzny ogień, który tylko czeka na ujawnienie.
       ethernite:
-        name: Eternit
-        desc: Cenny szklany fioletowy klejnot. Czujesz patrząc na niego okropne uczucie,
-          mimo że bardzo trudno jest oderwać od niego wzrok.
+        name: Nieoszlifowany Ethernite
+        desc: Poszarpany fioletowy kryształ wyrosły w geodzie. Zbyt długie wpatrywanie
+          się w niego jest niepokojące.
       jade:
-        name: Jadeit
-        desc: Ten jasnozielony kolor sprawia, że klejnot jest idealny do biżuterii,
-          o jakiej mówi się, że noszona odstrasza złe duchy.
+        name: Nieoszlifowany Jadeit
+        desc: Ta twarda ultramaficzna skała dzwoni czystym dźwiękiem, gdy uderza się
+          w nią kilofem.
       goldOre:
         name: Ruda Złota
         desc: Złoto jest jednym z najcenniejszych metali, głównie używanym w jubilerstwie.
@@ -2151,28 +2154,36 @@ singulars:
         desc: Wszechstronne po finalnym zmieleniu, piękne, skomplikowane kształty
           w ich surowej formie.
       topaz:
-        name: Topaz
-        desc: Błyszczący klejnot o kolorach wyglądających jak słońce. Jeśli będziesz
-          wpatrywać się w niego zbyt długo, możesz nawet zranić oczy.
+        name: Nieoszlifowany Topaz
+        desc: Surowy klejnot z lekkim złotym blaskiem, czekający na wycięcie w coś
+          olśniewającego.
       sunStone:
-        name: Słoneczny Kamień
-        desc: W rzeczywistości nie pochodzi ze słońca, ale sądząc po jego błyszczących,
-          ognistych kolorach, równie dobrze mogłoby tak być.
+        name: Nieoszlifowany Słoneczny Kamień
+        desc: Ten rzadki dwukolorowy kamień szlachetny wygląda jak fragment samego
+          słońca.
       largeStone:
         name: Wielki Kamień
         desc: Większy kamień niż zwykły.
       ruby:
-        name: Rubin
-        desc: Ten czerwony klejnot jest bardzo popularny wśród wysoko urodzonych.
-          Czerwony kolor symbolizuje siłę i pasję.
+        name: Nieoszlifowany Rubin
+        desc: Głęboko karmazynowy minerał wystaje z wnętrza skały, urzekając swoim
+          pięknem i prostotą
       volcanicRock:
         name: Skała Wulkaniczna
         desc: Skała ta jest pozostałością po starożytnym wulkanie, który od tysięcy
           lat leży pod wodą.
       volcanicAsh:
         name: Popiół Wulkaniczny
-        desc: Skała ta jest pozostałością po starożytnym wulkanie, który od tysięcy
-          lat leży pod wodą.
+        desc: Popiół ten przypomina o gwałtowności starożytnej erupcji, której część
+          nadal znajduje się w jego wnętrzu.
+      silverNugget:
+        name: Srebrny Samorodek
+        desc: Srebro jest cennym metalem, często wykorzystywanym do tworzenia biżuterii,
+          takiej jak pierścienie amulety albo kolczyki.
+      goldNugget:
+        name: Złoty Samorodek
+        desc: Złoto jest jednym z najcenniejszych metali, często wykorzystywanym w
+          jubilerstwie.
     rawFish:
       rawCarp:
         desc: Łagodny smak karpia bardzo dobrze komponuje się z różnymi potrawami.
@@ -2280,6 +2291,14 @@ singulars:
       hydriliumBar:
         name: Sztabka Hydrilu
         desc: Sztabka hydrilu ma bladozielony kolor.
+      silverBar:
+        name: Sztabka Srebra
+        desc: Niezależnie od tego, czy użyto samorodków, czy rudy, sztabka srebra
+          osiąga standardową czystość 92,5%.
+      goldBar:
+        name: Sztabka Złota
+        desc: Niezależnie od tego, czy użyto samorodków, czy rudy, sztabka złota osiąga
+          margines próby 333 dyktowany przez jubilerów.
     woodcutting:
       birchLogs:
         desc: Gładkie i blade, drewno brzozowe emanuje elegancją i prostotą.
