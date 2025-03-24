@@ -93,6 +93,8 @@ singulars:
     location:
       realm: Realm
       activities: Activities
+    common:
+      unknown: This content is still unknown to your character. Keep exploring to see its full details!
 maps:
   phrases:
     item:
@@ -103,6 +105,28 @@ maps:
         "consumable": Consumables
         "crafted": Crafted
         "collectible": Collectibles
-
+plurals:
+  skillUnlocks:
+    itemRequirementsMet:
+      zero: '-'
+      one: '<c>{}</c> item requirement met'
+      two: '<c>{}</c> item requirements met'
+      few: '-'
+      many: '-'
+      other: '<c>{}</c> item requirements met'
+    recipeRequirementsMet:
+      zero: '-'
+      one: '<c>{}</c> recipe requirement met'
+      two: '<c>{}</c> recipe requirements met'
+      few: '-'
+      many: '-'
+      other: '<c>{}</c> recipe requirements met'
+    activityRequirementsMet:
+      zero: '-'
+      one: '<c>{}</c> activity requirement met'
+      two: '<c>{}</c> activity requirements met'
+      few: '-'
+      many: '-'
+      other: '<c>{}</c> activity requirements met'
 
       
