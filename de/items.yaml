@@ -179,6 +179,10 @@ singulars:
         name: Feurige Chilischote
         desc: Mit ihrer intensiven Schärfe und ihrem kräftigen Aroma verleiht diese
           Chilischote jeder Speise eine feurige Note.
+      cremeBrulee:
+        desc: Knusprig karamellisiert, cremig im Kern – kein Wunder, dass Erdweis
+          es zur Nationalspeise erhoben hat.
+        name: Crème Brûlée
     memosphere:
       smithingMemosphere:
         desc: Innerhalb der Glaskugel erscheint eine Szene, in der du mit geschickten
@@ -216,6 +220,10 @@ singulars:
         name: Memosphäre des Holzfällens
         desc: Die Kugel zeigt eine alte Erinnerung – der Duft von frischem Holz liegt
           in der Luft, während du einen gewaltigen Baum mit präzisen Axtschlägen fällst.
+      trinketryMemosphere:
+        name: Memosphäre des Kunsthandwerks
+        desc: Eine vage Vision erscheint im Inneren des Orbs– deine Hände gleiten
+          über einen funkelnden Edelstein, polieren ihn zu vollkommener Reinheit.
     cookedFish:
       cookedLobster:
         desc: Mit seinem saftigen Fleisch und der charakteristischen harten Schale
@@ -389,12 +397,17 @@ singulars:
           desc: Während du trainierst, fällt plötzlich ein brauner Lederstiefel direkt
             neben dir zu Boden – doch weit und breit ist niemand zu sehen. Als du
             genauer hinsiehst, erkennst du, dass etwas darin versteckt ist.
+      trinketry:
+        trinketryChest:
+          name: Kunsthandwerk-Truhe
+          desc: Eine Kiste voller Wertgegenstände – ich hoffe für dich, dass es kein
+            getarntes Monster ist!
   crafted:
     equipmentSets:
       bronze:
         chest:
-          desc: Der bronzene Plattenpanzer, eine formidable Brustplatte der Verteidigung,
-            trägt das zeitlose Vermächtnis des Rüstungshandwerkes.
+          desc: Die bronzene Plattenrüstung schützt nicht nur hervorragend die Brust,
+            sondern erzählt die Geschichte der alten Meister des Schmiedefeuers.
           name: Bronzebrustplatte
         gloves:
           desc: Bronzene Handschuhe, meisterhaft gefertigt und robust, wiegen die
@@ -430,12 +443,12 @@ singulars:
           desc: Kupferüberzüge für deine Hände.
           name: Kupferhandschuhe
         heavyHelmet:
-          desc: Der Kupferschwerhelm, eine Visage der Widerstandsfähigkeit, opfert
-            jegliche Agilität für maximale Verteidung.
+          desc: Dieser massive Kupferhelm steht für Standhaftigkeit und Stärke – Beweglichkeit
+            wird dem Schutz völlig untergeordnet.
           name: Schwerer Kupferhelm
         legs:
-          desc: Ein Paar Kupferplattenbeine, gestaltet mit einer Mischung aus Robustheit
-            und Bewegunsfreiheit, bieten ein Grundniveau an Schutz.
+          desc: Diese Beinschienen aus Kupfer vereinen Stabilität mit Beweglichkeit
+            – ideal für grundlegenden Schutz im Kampf.
           name: Kupferbeinschienen
         lightHelmet:
           desc: Der Kupferne Leichthelm, eine strahlende Krone des Schutzes, bietet
@@ -452,12 +465,12 @@ singulars:
           desc: Ein leichter Schild.
       farganite:
         chest:
-          desc: Eine undurchdringliche Festung auf deiner Brust, auf wessen der Feind
-            sich selbst in der reflektierenden blauen Oberfläche sehen kann.
+          desc: Dieser Brustpanzer ist eine Festung aus Farganit und Glanz – so makellos,
+            dass selbst der Feind sein Spiegelbild darin erkennt.
           name: Fanganitbrustplatte
         gloves:
-          desc: Ein wunderbares Paar Handschuhe, das die aktuelle Farbe des Himmels
-            zu reflektieren scheint.
+          desc: Ein wundersames Paar Handschuhe, das scheinbar die aktuelle Farbe
+            des Himmels widerspiegelt.
           name: Farganithandschuhe
         heavyHelmet:
           desc: Ein Zeichen der erfahrendsten Krieger des Westlichen Kontinentes.
@@ -467,8 +480,8 @@ singulars:
             sie dem Träger hohe Mobilität und hohe Verteidigung.
           name: Fanganitbeinschienen
         lightHelmet:
-          desc: Ein enigmatisches Meisterwerk der Schmiedekunst, das dein Gesicht
-            in ein schimmerndes Blau hüllt.
+          desc: Dieses geheimnisvolle Stück Schmiedekunst legt sich wie ein blauer
+            Schleier aus Licht über dein Gesicht.
           name: Leichter Farganithelm
         shoes:
           desc: Zumindest sind sie heller als das schwarze Paar!
@@ -495,8 +508,8 @@ singulars:
             marschieren, und flößt seinem Träger standhaftes Vertrauen ein.
           name: Schwerer Eisenhelm
         legs:
-          desc: Diese Plattenbeine sind schwer, bieten aber maßvollen Schutz für deine
-            Gliedmaßen.
+          desc: Die Platten an den Beinen sind schwer, bieten jedoch einen moderaten
+            Schutz für deine Gliedmaßen.
           name: Eisenbeinschienen
         lightHelmet:
           desc: Es funkelt mit dem Versprechen, den Schutz von Abenteurern auf ihren
@@ -551,8 +564,8 @@ singulars:
             auch im Kriegsraum ein wahrer Blickfang ist.
       tarsilium:
         chest:
-          desc: Ein schwarzes Plattenhemd, die bevorzugte Wahl der dunklen Ritter
-            im Reich.
+          desc: Beliebt bei den dunklen Rittern des Reiches – dieser schwarze Plattenpanzer
+            vereint Stil mit Stärke.
           name: Tarsiliumbrustplatte
         gloves:
           desc: Ein schwarzes Paar Handschuhe, das dir völlige Freiheit bei der Bewegung
@@ -563,8 +576,8 @@ singulars:
             dein wertvollstes Organ – das Gehirn.
           name: Schwerer Tarsiliumhelm
         legs:
-          desc: Dieses schwarze Set Plattenbeine ist die perfekte Ausrüstung für die
-            Goth-Ritter des Mittelalters.
+          desc: Ein schwarzes Beinschutz-Set aus Platten – die perfekte Wahl für gothische
+            Ritter mit Stil.
           name: Tarsiliumbeinschienen
         lightHelmet:
           desc: Ein leichter, schwarzer Helm, der nicht nur deinen Kopf schützt, sondern
@@ -723,6 +736,10 @@ singulars:
         hydriliumSickle:
           name: Hydrilium Sichel
           desc: Eine Sichel aus dem seltenen Unterwassermaterial Hydrilium.
+        mangroveBasket:
+          name: Mangrovenkorb
+          desc: Aus zwei Körben vereint, doch mit Mangrovenplanken kunstvoll versteckt
+            – dieser Korb wirkt wie aus einem Guss.
       hunting:
         mapleBirdhouse:
           desc: Wie ein leiser Ruf trägt der sanfte Ahornholzduft durch den Wind und
@@ -930,6 +947,172 @@ singulars:
           name: Tunika aus altem Leder
           desc: Diese Tunika aus altem Leder wird von Sammlern getragen, die sich
             in unwegsame Gebiete begeben, um wertvolle Ressourcen zu sammeln.
+        qualityLeather:
+          name: Hochwertiges Leder
+      smithing:
+        tarsiliumToeBoots:
+          name: Stiefel mit Tarsilium-Kappen
+          desc: Stahlkappen waren einst das Maß aller Dinge – doch diese Stiefel beweisen
+            das Gegenteil.
+      carpentry:
+        reinforcedBellows:
+          name: Verstärkte Blasebalg
+          desc: Du warst es leid, dass dein Blasebalg ständig kaputtging – doch wie
+            sich herausstellte, brauchte er nur etwas Verstärkung!
+      trinketry:
+        silverOpalRing:
+          name: Opalring aus Silber
+          desc: Dieses dezente Silberband reflektiert das Licht in einem faszinierenden
+            Farbenspiel.
+        silverStarPearlRing:
+          name: Stern-Perlenring aus Silber
+          desc: Ein fein gearbeiteter Silberring, in dessen Zentrum eine Sternenperle
+            ruht, die ein schwaches, magisches Licht ausstrahlt.
+        silverWrentmarineRing:
+          name: Wrentmarin-Ring aus Silber
+          desc: Der sanfte Schimmer des Silbers unterstreicht die Tiefe des makellos
+            geschliffenen blauen Edelsteins.
+        silverTopazRing:
+          name: Topas-Ring aus Silber
+          desc: Der glänzende Topas und das polierte Silber wirken, als würden Sonne
+            und Mond deinen Finger umschlingen.
+        silverJadeRing:
+          name: Jade-Ring aus Silber
+          desc: Ein glänzender Silberring, in dessen Zentrum eine fein geschliffene
+            Jade-Scheibe ruht – ein Symbol für Glück und Schutz.
+        silverRubyRing:
+          name: Rubinring aus Silber
+          desc: Häufig an den Fingern des niederen Adels zu sehen, symbolisieren das
+            Silber und tiefe Rot den unersättlichen Hunger nach Macht.
+        silverSunStoneRing:
+          name: Sonnenstein-Ring aus Silber
+          desc: Ein schmales Silberband mit einem kleinen Sonnenstein, dessen Leuchten
+            im Tageslicht besonders zur Geltung kommt.
+        silverEtherniteRing:
+          name: Ethernit-Ring aus Silber
+          desc: Das silberne Band hält einen scharfkantigen Ethernit, dessen irisierender
+            Schimmer zwischen Schönheit und Unbehagen schwankt.
+        goldOpalRing:
+          name: Opal-Ring aus Gold
+          desc: 'Ein goldenes Band umschließt den feurigen Opal und zieht die Blicke
+            jener an, die seine tiefe Leuchtkraft erkennen können. '
+        goldStarPearlRing:
+          name: Stern-Perlenring aus Gold
+          desc: Dieser goldene Ring, besetzt mit einer fein geschliffenen Sternenperle,
+            verleiht seinem Träger eine Aura von Würde und Klasse.
+        goldTopazRing:
+          name: Topas-Ring aus Gold
+          desc: Dieses goldene Band birgt einen Topas, dessen Glanz wie ein eingefangener
+            Sonnenstrahl erstrahlt – fast zu hell, um ihn direkt zu betrachten.
+        goldJadeRing:
+          name: Jade-Ring aus Gold
+          desc: Dieser fein gearbeitete Goldring trägt einen sorgfältig geschliffenen
+            Jade-Stein – möge er dich mit Glück und Gesundheit segnen.
+        goldRubyRing:
+          name: Rubin-Ring aus Gold
+          desc: Ein massives goldenes Band mit einer königlichen Rubinfassung – eine
+            subtile Aura der Autorität umgibt seinen Träger.
+        goldSunStoneRing:
+          name: Sonnenstein-Ring aus Gold
+          desc: Der große Sonnenstein verleiht dem Gold eine beständige Wärme, die
+            selbst die kältesten Orte nicht zu trüben vermögen.
+        goldEtherniteRing:
+          name: Ethernit-Ring aus Gold
+          desc: Ein Goldring, der einen geheimnisvollen Ethernit-Edelstein trägt.
+            Kaum hast du ihn angelegt, scheinen die Menschen ihn mit verstohlener
+            Bewunderung zu mustern.
+        amuletOfTheEel:
+          name: Amulett des Aals
+          desc: Ein glänzendes Amulett, das die Essenz eines Aals in sich birgt –
+            geschmeidig, kraftvoll und unaufhaltsam.
+        amuletOfTheBat:
+          name: Amulett der Fledermaus
+          desc: Dieses Amulett strahlt mit der Kraft einer Fledermaus – wendig, lautlos
+            und mit unfehlbarem Instinkt.
+        amuletOfTheHeron:
+          name: Amulett des Reihers
+          desc: Dieses Amulett strahlt mit der Kraft eines Reihers – wachsam, elegant
+            und mit unerschütterlicher Balance.
+        amuletOfTheShrimp:
+          name: Amulett der Garnele
+          desc: Klein, doch unaufhaltsam – dieses glänzende Amulett bewahrt die Essenz
+            der Garnele, ein Meister der Tiefen.
+        amuletOfTheLuckyRabbitFoot:
+          name: Kaninchenpfoten-Amulett
+          desc: Ein funkelndes Amulett, das die legendäre Glückskraft einer Kaninchenpfote
+            in sich trägt.
+        amuletOfTheCoolingIce:
+          name: Amulett aus kühlendem Eis
+          desc: Dieses schimmernde Amulett strahlt die Kälte und Klarheit eines gefrorenen
+            Eiszapfens aus.
+        amuletOfTheMeasuringSpoons:
+          name: Amulett des Messlöffels
+          desc: Genauigkeit in ihrer reinsten Form – dieses magische Amulett trägt
+            die Essenz des perfekten Maßes.
+        amuletOfTheRoot:
+          name: Amulett der umlaufenden Wurzel
+          desc: Ein glänzendes Amulett, das seinen Träger mit der uralten Energie
+            einer verwundenen Wurzel umgibt.
+        amuletOfTheSharkTooth:
+          name: Haizahn-Amulett
+          desc: Ein leuchtendes Amulett, geziert von einem Haifischzahn – ein Symbol
+            für Stärke und unerbittlichen Überlebenswillen.
+        amuletOfTheAnimalKingdom:
+          name: Amulett des Tierreichs
+          desc: Ein glänzendes Amulett, das seinen Träger mit der Kraft, dem Instinkt
+            und der Ausdauer vieler Tiere erfüllt.
+        amuletOfTheBeaver:
+          name: Biber-Amulett
+          desc: Ein funkelndes Amulett, das die Ausdauer und den Fleiß eines Bibers
+            in sich trägt.
+        flowerNecklace:
+          name: Jarvonische Blumenhalskette
+          desc: Diese blumige Halskette, verwoben aus jarvonischen Mondgänseblümchen
+            und Schneeglöckchen, trägt den Hauch des Frühlings in sich.
+        cutOpal:
+          name: Opal
+          desc: Im Sonnenlicht tanzen schillernde Farben über seine Oberfläche, ein
+            faszinierendes Spiel aus Licht und Eleganz.
+        goldWrentmarineRing:
+          name: Wrentmarin-Ring aus Gold
+          desc: Das Gold, das den Wrentmarin umgibt, reflektiert das Licht in tanzenden
+            Mustern – als wäre es ein Schatz, der einst in den Tiefen versank.
+        cutStarPearl:
+          name: Sternenperle
+          desc: Bekannt aus dem berühmten Gemälde „Mädchen mit dem Sternenperlen-Ohrring“,
+            geschaffen von einem wallisischen Maler.
+        cutWrentmarine:
+          name: Wrentmarin
+          desc: Bei jeder Bewegung scheint eine Welle durch den ozeanblauen Stein
+            zu laufen – als würde er das Meer in sich tragen.
+        cutTopaz:
+          name: Topas
+          desc: Wie ein Stück Sonnenlicht in fester Form – dieser Edelstein ist so
+            hell, dass man besser nicht zu lange hinsieht.
+        cutJade:
+          name: Jade
+          desc: Ein Juwel in kräftigem Grün, das nicht nur das Auge erfreut, sondern
+            laut alten Legenden auch Unheil fernhält.
+        cutRuby:
+          name: Rubin
+          desc: Dieser rubinrote Edelstein erfreut sich großer Beliebtheit unter den
+            Adligen. Seine Farbe symbolisiert Macht und brennende Leidenschaft.
+        cutSunStone:
+          name: Sonnenstein
+          desc: Er stammt nicht von der Sonne – aber bei seinem glänzenden, feurigen
+            Farben könnte man es fast glauben.
+        goldRing:
+          name: Goldring
+          desc: Ein schlichter Goldring – zeitlos und in seiner Reinheit von unschätzbarem
+            Wert.
+        cutEthernite:
+          name: Ethernite
+          desc: Ein funkelnder, violetter Edelstein von hohem Wert. Etwas Dunkles
+            scheint in seinem Inneren zu lauern – und doch zieht er dich unaufhaltsam
+            in seinen Bann.
+        silverRing:
+          desc: Ein schlichter Silberring – elegant und unaufdringlich.
+          name: Silberring
   looted:
     equipmentSets:
       dimensional:
@@ -1036,8 +1219,8 @@ singulars:
           desc: Diese Handschuhe verbessern den Halt um 800%. Das steht zumindest
             auf der Verpackung.
         runningShirt:
-          desc: Die richtige Kleidung ist auf langen läufen entscheidend. Ein Shirt
-            wie dieses ist unverzichtbar.
+          desc: Die richtige Kleidung ist beim Laufen unerlässlich – ein Shirt wie
+            dieses darf dabei nicht fehlen.
           name: Laufshirt
         oakSkis:
           desc: Schwere Ski weshalb sie schnell aber schwer zu steuern sind. Dank
@@ -1055,11 +1238,11 @@ singulars:
           name: Einfaches Seil
           desc: Ein Seil hat viele Einsatzmöglichkeiten. Zum Beispiel Bergsteigen.
         clayFrisbee:
-          name: Ton Frisbee
+          name: Frisbee aus Ton
           desc: Er ist relativ schwer und zerbrechlich. Hoffentlich sind keine Tontauben-Schützen
             in der Nähe!
         goldenFrisbee:
-          name: Goldener Frisbee
+          name: Frisbee aus Gold
           desc: Da er nur vergoldet ist, ist er relativ leicht und trotzdem langlebig.
             Man würde sich erwarten, dass er im Flug einen Regenbogen hinter sich
             herzieht, aber leider nein.
@@ -1152,6 +1335,10 @@ singulars:
           name: Präzisionslineal
           desc: Sauber gravierte Maßmarkierungen auf dem Holz zeigen sowohl Zentimeter
             als auch Zoll.
+        goldenChisel:
+          desc: Man sagt, Geld wächst nicht auf Bäumen – aber offenbar auf Meißeln
+            schon.
+          name: Goldener Meißel
       cooking:
         chefsApron:
           desc: Mit dieser Schürze wird jede Mahlzeit zu einem Meisterwerk und jedes
@@ -1231,6 +1418,9 @@ singulars:
           name: Lavapfanne
           desc: Diese Pfanne wurde in einem Vulkan geschmiedet. Die Lava, aus der
             sie gemacht ist, sorgt dafür, dass sie immer heiß und kochbereit ist.
+        rottenWrentmarine:
+          name: Verdorbener Wrentmarine (Testgegenstand)
+          desc: Nur für Tester. Gewährt unbegrenztes Inventar.
       crafting:
         candlehat:
           desc: Es ist ein Hut mit einer angebrachten Kerze. Was kann man sich mehr
@@ -1380,7 +1570,7 @@ singulars:
           desc: Ein funktionierender Kompass an einer Schnur, die du dir um den Hals
             binden kannst. Wenn du weißt, wie man ihn benutzt, findest du immer den
             Weg nach Hause.
-          name: Kompasshalskette
+          name: Amulett des Pfadfinders
         simpleBugCatchingNet:
           desc: Es mag bescheiden sein, doch für Käfer ist es ein unausweichliches
             Schicksal.
@@ -1490,7 +1680,7 @@ singulars:
             in jeden Schwung bringen kannst.
         coolingIceAmulet:
           name: Kühlendes Eis-Amulett
-          desc: Dieses Amulett strahlt dauerhaft Kälte aus
+          desc: Dieses Amulett strahlt eine stetige Kälte aus.
         metalworkingGloves:
           desc: Du kannst damit deine Hand in einen brennenden Ofen stecken, ohne
             Blasen zu bekommen. Über deine Arme kann man das aber nicht sagen.
@@ -1572,6 +1762,37 @@ singulars:
           name: Verwurzelter Ring
           desc: Der Ring ist aus magischen Wurzeln gemacht, welche ineinander verwachsen
             sind.
+      trinketry:
+        roughSandpaper:
+          name: Grobes Schleifpapier
+          desc: Das grobe Schleifpapier droht, deine Haut zu malträtieren, wenn du
+            es zu fest hältst.
+        gemTippedTweezers:
+          name: Edelsteinbesetzte Pinzette
+          desc: Fein gearbeitete Pinzette, deren Spitzen mit funkelnden Edelsteinchen
+            besetzt sind.
+        prettyPliers:
+          name: Verzierte Zange
+          desc: Ein Bestseller in Erdweis! Heute 10% günstiger in der Kunsthandwerk-Fabrik.
+        zipPouch:
+          name: Reißverschlusstasche
+          desc: Eine sichere Methode, hochwertige Edelsteine vom Arbeitstisch bis
+            zum Markt zu transportieren.
+        handFile:
+          name: Praktische Handfeile
+          desc: Liegt wirklich gut in der Hand – aber vergiss nicht, den Staub danach
+            wegzuwischen.
+        autoAdjustingMandrel:
+          name: Selbstjustierender Dorn
+          desc: Ein technisches Wunderwerk aus Galgenschmied – kaum vorstellbar, dass
+            die Justierung einst von Hand erfolgte.
+        gemistryGuidebook:
+          name: Leitfaden zur Edelsteinverarbeitung
+          desc: Die Grundlagen zum Verständnis der chemischen Aspekte des Kunsthandwerks.
+        darWittsMonocle:
+          name: Dar Witt's Monokel
+          desc: Ein Erbstück der Dar Witts, einer der einflussreichsten Familien in
+            Schwarzzauber.
     versatile:
       backpack:
         desc: Ein hochwertiger Leder-Rucksack, der mit extra Taschen und großzügigem
@@ -1743,7 +1964,7 @@ singulars:
           Politur vertragen, aber sie sind immer noch gut genug für die Arbeit!
         name: Herberts Stiefel
       luckyRabbitsFootNecklace:
-        name: Talisman-Halskette mit Kaninchenpfote
+        name: Halskette mit Kaninchenpfote
         desc: Ein ausgedörrtes Relikt, das Glück verspricht – doch verschwende es
           nicht leichtfertig.
       treeScalingClaws:
@@ -1846,6 +2067,10 @@ singulars:
         name: Aerofibril-Umhang
         desc: Gefertigt aus leichten Federn und aerodynamischen Fäden, lässt dich
           dieser Umhang mit rasanter Geschwindigkeit dahingleiten.
+      pentafrostAmulet:
+        name: Pentafrost-Amulett
+        desc: Ein Relikt der Geweihten, geformt aus ewigem Eis und nur den höchsten
+          Rängen vorbehalten. Wie ist es in deine Hände geraten?
     achievements:
       adventurersGloves:
         name: Abenteurerhandschuhe
@@ -1860,8 +2085,7 @@ singulars:
           Mode.
         name: Schatzjägerjacke
       adventurersShirt:
-        desc: Dieses Ledershirt hat eine hellbraune Farbe und hat mehrere Tachen um
-          Sachen zu verstauen.
+        desc: Dieses Lederhemd in warmem Braun verfügt über mehrere Taschen zur Aufbewahrung.
         name: Abenteurershirt
       otherSock:
         name: Andere Socke
@@ -1914,7 +2138,7 @@ singulars:
         desc: Nicht der eleganteste Ring, aber er glänzt.
       gemBracelet:
         name: Edelsteinarmband
-        desc: Sechs farbige Edelsteine bilden ein Armband.
+        desc: Sechs farbenfrohe Edelsteine bilden ein Armband.
       rustySpyglass:
         name: Rostiges Fernglas
         desc: Ein gut benutztes Instrument, wie dieses rostige Fernrohr, hat einen
@@ -1945,9 +2169,8 @@ singulars:
           ist Großes zu erreichen.
       capeOfAchiever:
         name: Umhang des Erfolgreichen
-        desc: Dieser rosenfarbene Umhang weckt das Interesse aller, die ihn zu sehen
-          bekommen. Der Besitzer des Umhangs hat erreicht wovon andere nur träumen
-          können.
+        desc: Der rosafarbene Umhang weckt das Interesse aller, die ihn erblicken.
+          Sein Träger hat vollbracht, wovon andere nur träumen.
       runningVisor:
         name: Rennvisier
         desc: Dieses rote Visier schützt Deine Augen vor der Sonne und erlaubt es
@@ -2047,6 +2270,9 @@ singulars:
       woodFragment:
         name: Holzstücke
         desc: Einige qualitativ hochwertige Holzstücke
+      elmPlank:
+        name: Ulmenbrett
+        desc: Ein Ulmenbrett, perfekt geeignet für die Herstellung eines Bogens.
     cooking:
       milk:
         desc: Direkt von der Kuh, einer Ziege oder einem Kamel. Oder aus ein paar
@@ -2226,37 +2452,37 @@ singulars:
         desc: Fein gemahlen vielfältig nutzbar, haben sie in ihrer Ursprungsform wunderbar
           komplexe Strukturen.
       ruby:
-        desc: Dieser rote Edelstein ist sehr beliebt bei den Adeligen. Die rote Farbe
-          repräsentiert Macht und Leidenschaft.
-        name: Rubin
+        desc: Ein tiefrotes Mineral durchbricht das Gestein, faszinierend in seiner
+          reinen, ungeschmückten Eleganz.
+        name: Ungeschliffener Rubin
       silverOre:
         desc: Silber ist ein kostbares Material, es wird oft bei der Herstellung von
           Schmuck, wie Ringen, Amuletten und Ohrringen genutzt.
         name: Silbererz
       jade:
-        desc: Die hellgrüne Farbe macht es zum perfekten Edelstein für Schmuck, welcher
-          laut Gerüchten böse Geister fernhält, wenn er getragen wird.
-        name: Jade
+        desc: Dieses widerstandsfähige ultramafische Gestein singt mit einem klaren
+          Ton, wenn es von einer Spitzhacke getroffen wird.
+        name: Ungeschliffener Jade
       goldOre:
         name: Golderz
         desc: Gold ist eines der kostbarsten Metalle, welches oft bei der Herstellung
           von Schmuck genutzt wird.
       starPearl:
-        name: Sternenperle
-        desc: Zu sehen in dem berühmten Gemälde “Mädchen mit einem Sternenperlenohrring"
-          eines wallisischen Malers.
+        name: Ungeschliffene Sternenperle
+        desc: Eine unbehandelte Perle, noch rau, aber mit der Möglichkeit, zu etwas
+          Kostbarem heranzureifen.
       opal:
-        name: Opal
-        desc: Die wunderschönen schillernden Farben glänzen auf seiner Oberfläche,
-          wenn er im Sonnenlicht gehalten wird.
+        name: Ungeschliffener Opal
+        desc: Umhüllt von der Erde, aus der es kam, trägt dieses Juwel eine ungezähmte
+          Glut in sich, bereit, ans Licht gebracht zu werden.
       topaz:
-        name: Topas
-        desc: Glänzender Edelstein, dessen Farbe die Sonne widerspiegelt. Deine Augen
-          könnten wehtun, wenn du ihn zu lange anstarrst.
+        name: Ungeschliffener Topas
+        desc: Ein ungeschliffener Edelstein mit einem Hauch goldenen Lichts, bereit,
+          in funkelnde Pracht verwandelt zu werden.
       sunStone:
-        name: Sonnenstein
-        desc: Er kommt nicht wirklich von der Sonne, könnte er aber, wenn man seine
-          leuchtenden feurigen Farben sieht.
+        name: Ungeschliffener Sonnenstein
+        desc: Ein seltener zweifarbiger Edelstein, der leuchtet, als sei er ein Splitter
+          der Sonne.
       largeStone:
         name: Großer Stein
         desc: Ein größerer Stein als gewöhnlich.
@@ -2266,16 +2492,24 @@ singulars:
           Jahren unter Wasser liegt.
       volcanicAsh:
         name: Vulkanasche
-        desc: Dieser Stein ist das Überbleibsel eines uralten Vulkans der seit tausenden
-          Jahren unter Wasser liegt.
+        desc: Ein stilles Zeugnis urzeitlicher Gewalt – in dieser Asche schlummert
+          die ungezähmte Kraft eines längst vergangenen Vulkanausbruchs.
       ethernite:
-        desc: Ein wertvoller glasig-purpurner Edelstein. Beim Betrachten läuft es
-          einem kalt über den Rücken, aber es ist unglaublich schwer den Blick abzuwenden.
-        name: Äthernit
+        desc: Von der Natur in einer Geode geformt, funkelt dieser zerklüftete violette
+          Kristall. Doch wer ihn zu lange betrachtet, spürt eine unerklärliche Unruhe.
+        name: Ungeschliffener Äthernit
       wrentmarine:
-        name: Wrentmarine
-        desc: Wenn man ihn bewegt, sieht es so aus, als würde das Wasser auf der Oberfläche
-          dieses ozeanblauen Steins von einer Seite zur anderen fließen.
+        name: Ungeschliffener Wrentmarin
+        desc: Der ungeschliffene Stein verbirgt einen blauen Glanz – ein flüchtiger
+          Lichtschein, der an Sonnenstrahlen auf den Wellen erinnert.
+      silverNugget:
+        name: Silbernugget
+        desc: Als begehrtes Metall findet Silber häufig Verwendung in der Schmuckherstellung,
+          insbesondere für Ringe, Amulette und Ohrringe.
+      goldNugget:
+        name: Goldnugget
+        desc: Gold zählt zu den kostbarsten Metallen und findet oft Verwendung in
+          der Schmuckherstellung.
     rawFish:
       rawCarp:
         desc: Der milde Geschmack des Karpfens eignet sich gut für verschiedene kulinarische
@@ -2388,6 +2622,14 @@ singulars:
       hydriliumBar:
         name: Hydriliumbarren
         desc: Der Hydriliumbarren hat eine bleiche grüne Farbe.
+      silverBar:
+        name: Silberbarren
+        desc: Egal, ob aus Nuggets oder Erz geschmolzen – dieser Silberbarren erfüllt
+          mit 92,5 % die Reinheitsnorm für Silber.
+      goldBar:
+        name: Goldbarren
+        desc: Ob aus Nuggets oder Erz gefertigt, dieser Goldbarren entspricht mit
+          einer Feinheit von 333 den Standards der Kunsthandwerk-Fabrik.
     woodcutting:
       birchLogs:
         desc: Die glatten und hellen Birkenstämme strahlen eine elegante Schlichtheit
@@ -2462,7 +2704,7 @@ singulars:
         name: Muschel
         desc: Wird wahrscheinlich von jemandem am Strand verkauft.
       clam:
-        name: Venusmuschel
+        name: Muschelschale
         desc: Perlweiß und vollkommen unversehrt. Ein wunderschönes Exemplar für einen
           Sammler.
       pearls:
@@ -2528,6 +2770,51 @@ singulars:
         name: Aerodynamischer Faden
         desc: Ein besonders seltener Faden, der für seine leichte, aber robuste Beschaffenheit
           geschätzt wird.
+    trinketry:
+      eelTrinket:
+        name: Aal-Schmuckstück
+        desc: Das Aal-Schmuckstück glänzt strahlend im Licht. Vielleicht wird es eines
+          Tages ein mächtiges Amulett.
+      batTrinket:
+        name: Fledermaus-Schmuckstück
+        desc: Das Fledermaus-Schmuckstück glitzert im Licht – als hätte es eine tiefere
+          Bestimmung, vielleicht als Amulett.
+      heronTrinket:
+        name: Reiher-Schmuckstück
+        desc: Das Licht bricht sich auf der Oberfläche des Reiher-Schmuckstück. Wer
+          weiß, vielleicht wird es irgendwann in ein Amulett eingefasst.
+      shrimpTrinket:
+        name: Krabben-Schmuckstück
+        desc: Das Krabben-Schmuckstück funkelt strahlend im Licht. Vielleicht wird
+          es eines Tages ein mächtiges Amulett.
+      luckyRabbitFootTrinket:
+        name: Kaninchenpfoten-Schmuckstück
+        desc: Das Kaninchenpfoten-Schmuckstück glitzert im Licht – als hätte es eine
+          tiefere Bestimmung, vielleicht als Amulett.
+      coolingIceTrinket:
+        name: Kühlendes Eiszapfen-Schmuckstück
+        desc: Das Licht bricht sich auf der Oberfläche des kühlenden Eiszapfen-Schmuckstücks.
+          Wer weiß, vielleicht wird es irgendwann in ein Amulett eingefasst.
+      measuringSpoonsTrinket:
+        name: Messlöffel-Schmuckstück
+        desc: Das Messlöffel-Schmuckstück glänzt strahlend im Licht. Vielleicht wird
+          es eines Tages ein mächtiges Amulett.
+      circularRootTrinket:
+        desc: Das umlaufende Wurzel-Schmuckstück fängt das Licht ein und glänzt sanft.
+          Mit etwas Feinarbeit könnte es ein bedeutendes Amulett werden.
+        name: Umlaufendes Wurzel-Schmuckstück
+      sharkToothTrinket:
+        name: Haizahn-Schmuckstück
+        desc: Das Haizahn-Schmuckstück reflektiert das Licht auf geheimnisvolle Weise.
+          Wer weiß, vielleicht wird es bald ein Amulett.
+      beaverTrinket:
+        name: Biber-Schmuckstück
+        desc: Noch ein einfaches Biber-Schmuckstück, doch sein Leuchten im Licht deutet
+          darauf hin, dass es einst ein starkes Amulett sein könnte.
+      compassTrinket:
+        name: Kompass-Schmuckstück
+        desc: Das Licht tanzt auf der Oberfläche des Kompass-Schmuckstück s. Mit etwas
+          Feinarbeit könnte es ein bedeutendes Amulett werden.
   collectibles:
     visas:
       jarvonianLetterOfPassage:
@@ -2682,6 +2969,10 @@ singulars:
       lostTimmysSandShovel:
         name: Lost Timmy's Sandschaufel
         desc: Ob der Junge ebenfalls verloren gegangen ist, bleibt unklar.
+      meteoriteFragment:
+        desc: Durch Raum und Zeit gereist, vom Feuer der Atmosphäre geformt – dieses
+          Fragment erzählt die Geschichte eines fernen Himmelskörpers.
+        name: Meteoritensplitter
   currencies:
     adventurersGuildToken:
       desc: Ein Token, der in der Abenteurergilde für Waren und Dienstleistungen eingelöst

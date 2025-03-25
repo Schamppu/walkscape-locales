@@ -6,7 +6,7 @@ singulars:
       requirementLevel: Erfordert einen Fisch, der mindestens <keywordRequirements
         /> in seinen Anforderungen hat.
     logs:
-      name: Baumstämme
+      name: Baumstamm
       requirement: Erfordert einen Baumstamm.
       requirementLevel: Erfordert einen Baumstamm, der mindestens <keywordRequirements
         /> in seinen Anforderungen enthält.
@@ -40,6 +40,46 @@ singulars:
       requirementLevel: Erfordert einen Pilz, der mindestens <keywordRequirements
         /> benötigt.
       name: Pilz
+    ingredient:
+      requirementLevel: Erfordert eine Zutat, die mindestens <keywordRequirements
+        /> in ihren Anforderungen erfüllt.
+      name: Zutat
+      ingredient: Erfordert eine Zutat.
+    roughGem:
+      requirement: Erfordert einen ungeschliffenen Edelstein.
+      name: Ungeschliffener Edelstein
+      requirementLevel: Erfordert einen ungeschliffenen Edelstein, der mindestens
+        <keywordRequirements /> in seinen Anforderungen erfüllt.
+    cutGem:
+      name: Geschliffener Edelstein
+      requirement: Erfordert einen geschliffener Edelstein.
+      requirementLevel: Erfordert einen geschliffener Edelstein, der mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt.
+    trinket:
+      name: Schmuckstück
+      requirement: Erfordert ein Schmuckstück.
+      requirementLevel: Erfordert ein Schmuckstück, das mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt.
+    food:
+      requirement: Erfordert Lebensmittel.
+      requirementLevel: Erfordert ein Lebensmittel, das mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt.
+      name: Lebensmittel
+    misc:
+      name: Sonstiges
+      requirement: Erfordert ein Item aus der Kategorie „Sonstiges“.
+      requirementLevel: Erfordert ein Item aus der Kategorie „Sonstiges“, das mindestens
+        <keywordRequirements /> in seinen Anforderungen erfüllt.
+    processed:
+      name: Bearbeitet
+      requirement: Erfordert ein bearbeitetes Material.
+      requirementLevel: Erfordert ein bearbeitetes Material, das mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt.
+    offcut:
+      name: Reststück
+      requirement: Erfordert ein Reststück.
+      requirementLevel: Erfordert ein Reststück, das mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt.
   tools:
     fishing:
       name: Fischen
@@ -155,7 +195,7 @@ singulars:
       name: Meißel
       requirement: Benötigt einen ausgerüsteten Meißel.
       requirementLevel: Erfordert einen Meißel, der mindestens <keywordRequirements
-        /> benötigt.
+        /> in seinen Anforderungen erfüllt.
     saw:
       name: Säge
       requirement: Benötigt eine ausgerüstete Säge.
@@ -213,9 +253,9 @@ singulars:
       requirementLevel: Erfordert die Aktivität "Erze abbauen", die mindestens <keywordRequirements
         /> in ihren Anforderungen hat.
     foragingPlants:
-      name: Pflanzen ernten
+      name: Sammeln von Pflanzen
       requirement: Erfordert die Aktivität Pflanzen sammeln.
-      requirementLevel: Erfordert die Aktivität "Pflanzen ernten", die mindestens
+      requirementLevel: Erfordert die Aktivität "Pflanzen sammeln", die mindestens
         <keywordRequirements /> in ihren Anforderungen hat.
   gear:
     skillingGear:
@@ -226,8 +266,8 @@ singulars:
     frisbee:
       name: Frisbee
       requirement: Benötigt eine ausgerüstete Frisbee.
-      requirementLevel: Erfordert eine Frisbee, der mindestens <keywordRequirements
-        /> in seinen Anforderungen hat.
+      requirementLevel: Erfordert eine Frisbee, die mindestens <keywordRequirements
+        /> in ihren Anforderungen hat.
     skis:
       requirementLevel: Erfordert Skier, die mindestens <keywordRequirements /> in
         ihren Anforderungen haben.
@@ -239,7 +279,7 @@ singulars:
       requirementLevel: Erfordert eine Rettungsweste, die mindestens <keywordRequirements
         /> in ihren Anforderungen hat.
     climbing:
-      name: Klettern
+      name: Kletterausrüstung
       requirement: Benötigt eine ausgerüstete Kletterausrüstung.
       requirementLevel: Erfordert eine Kletterausrüstung, die mindestens <keywordRequirements
         /> in ihren Anforderungen hat.
@@ -255,9 +295,24 @@ singulars:
         /> in seinen Anforderungen enthält.
     socks:
       name: Socken
-      requirement: Benötigt ausgerüstete Socken.
-      requirementLevel: Benötigt Socken, die mindestens <keywordRequirements /> in
+      requirement: Erfordert eine ausgerüstete Socke.
+      requirementLevel: Erfordert Socken, die mindestens <keywordRequirements /> in
         ihren Anforderungen enthalten.
+    bellows:
+      name: Blasebalg
+      requirement: Erfordert einen ausgerüsteten Blasebalg.
+      requirementLevel: Ein Blasebalg mit mindestens <keywordRequirements /> wird
+        benötigt.
+    basket:
+      requirementLevel: Erfordert einen Korb, der mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt.
+      name: Korb
+      requirement: Erfordert einen ausgerüsteten Korb.
+    amulet:
+      name: Amulett
+      requirement: Erfordert ein ausgerüstetes Amulett.
+      requirementLevel: Erfordert ein Amulett, das mindestens <keywordRequirements
+        /> in seinen Anforderungen hat.
   recipes:
     skills:
       cooking:
@@ -297,14 +352,14 @@ singulars:
       requirementLevel: Erfordert Wasser, das mindestens <keywordRequirements /> benötigt.
     sandwich:
       name: Sandwich
-      requirement: Es ist ein Sandwich, ich schwöre
+      requirement: Erfordert ein Sandwich.
       requirementLevel: Erfordert Lebensmittel, das mindestens <keywordRequirements
         /> benötigt.
     memosphere:
       name: Memosphäre
-      requirementLevel: Erfordert Memosphäre, die mindestens <keywordRequirements
-        /> benötigt.
-      requirement: Erfordert Memosphäre.
+      requirementLevel: Erfordert eine Memosphäre, die mindestens <keywordRequirements
+        /> in ihren Anforderungen erfüllt.
+      requirement: Erfordert eine Memosphäre.
   containers:
     chest:
       name: Truhe
@@ -326,6 +381,8 @@ singulars:
       name: Müll
       requirement: Erfordert Müll.
       requirementLevel: Erfordert Müll, der mindestens <keywordRequirements /> benötigt.
+    currency:
+      name: Währung
   general:
     lightSource:
       name: Lichtquelle
@@ -361,6 +418,8 @@ singulars:
         name: Reisen
       global:
         name: Weltweit
+      trinketry:
+        name: Kunsthandwerk
     items:
       consumables:
         potion:
@@ -396,6 +455,11 @@ singulars:
       name: Set des Schatzjägers
     adventuringTools:
       name: Set für Abenteurer
+    properGear:
+      name: Passende Ausrüstung
+      requirement: Erfordert getragene Teile des passenden Ausrüstungssets.
+      requirementLevel: Erfordert getragene passende Ausrüstung, die mindestens <keywordRequirements
+        /> in ihren Anforderungen erfüllt.
   locations:
     underwater:
       name: Unterwasser
@@ -408,6 +472,8 @@ singulars:
       name: Schmiede
     kitchen:
       name: Küche
+    bench:
+      name: Kunsthandwerksbank
   weight:
     light:
       name: Leicht

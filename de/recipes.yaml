@@ -75,7 +75,7 @@ singulars:
           der Erde voranzutreiben.
       farganitePickaxe:
         name: Stelle eine Spitzhacke aus Farganit her
-        desc: Stelle eine Arganitspitzhacke her, um deine Erkundungen in den Tiefen
+        desc: Stelle eine Farganitspitzhacke her, um deine Erkundungen in den Tiefen
           der Erde effizienter zu gestalten.
         activityDesc: Die lodernden Flammen formen das Metall, sodass es zu einem
           Werkzeug wird, das bereit ist, die Erde einmal mehr zu erschließen.
@@ -110,7 +110,7 @@ singulars:
         desc: Schmiede eine kraftvolle Stahlaxt für schnelles Holzfällen.
       tarsiliumHatchet:
         name: Stelle eine Tarsilium-Axt her
-        desc: Schaffe eine Axt, die die stille Dunkelheit des Nachthimmels in sich
+        desc: Erschaffe eine Axt, die die stille Dunkelheit des Nachthimmels in sich
           trägt.
         activityDesc: Im glühenden Ofen wird das Metall geformt, gehämmert und geschärft,
           sodass es Bäume mit Leichtigkeit durchschneidet.
@@ -339,6 +339,16 @@ singulars:
           Anwendungen.
         activityDesc: Mit fachkundigem Handwerk formst du Stahl zu einem stabilen
           und dauerhaften Stahlbarren.
+      silverBar:
+        name: Schmelze einen Silberbarren
+        desc: Schmelze einen Silberbarren aus Silbernuggets.
+        activityDesc: Es braucht viele Nuggets, aber du erhitzt das Silber im Ofen,
+          bis es sich zu einem Barren formt.
+      goldBar:
+        name: Schmelze einen Goldbarren
+        desc: Schmelze einen Goldbarren aus Goldnuggets.
+        activityDesc: Es braucht viele Nuggets, aber du erhitzt das Gold im Ofen,
+          bis es sich zu einem Barren formt.
     wooden:
       woodenSword:
         desc: Stelle ein Holzschwert aus einem Brett her.
@@ -451,6 +461,18 @@ singulars:
         activityDesc: Aus Kupferbarren formst du ein Schild, das die Kraft des Schmiedefeuers
           in sich trägt.
         desc: Stelle ein Kupferschild aus Kupferbarren her.
+    other:
+      tarsiliumToeBoots:
+        desc: Verwandle deine Stahlkappenschuhe in Stiefel mit Tarsilium-Kappen.
+        name: Erstelle Stiefel mit Tarsilium-Kappen
+        activityDesc: Du arbeitest daran, die Stahlkappen der Stiefel durch Tarsilium
+          zu ersetzen.
+      reinforcedBellows:
+        desc: Rüste den Schmiedeblasebalg zu einem verstärkten Blasebalg auf, um die
+          Feuerkraft zu steigern
+        name: Stelle einen verstärkten Blasebalg her
+        activityDesc: Deine Erfahrung mit dem Blasebalg hat dir gezeigt, welche Stellen
+          du verstärken musst, um seine Leistung zu maximieren.
   carpentry:
     planks:
       mangrovePlank:
@@ -507,6 +529,11 @@ singulars:
         activityDesc: Mit feiner Handarbeit schneidest du das Eichenholz, bis es in
           die perfekte Form eines Bretts übergeht, das die Kraft und Eleganz der Eiche
           bewahrt.
+      elmPlank:
+        name: Schneide ein Ulmenbrett
+        activityDesc: Es erfordert Geduld, doch du bearbeitest das Ulmenholz zu einem
+          brauchbaren Brett für kommende Projekte.
+        desc: Ein äußerst biegsames Ulmenbrett herstellen
     scrap:
       sprucePlankScrap:
         activityDesc: Mit meisterhaftem Handwerk verwandelst du Fichtenreste in ein
@@ -1013,6 +1040,13 @@ singulars:
           activityDesc: Du wählst sorgfältig ein Stück Ahornholz aus und formst es
             zu einem klassischen Vogelhaus. Die natürliche Schönheit und Haltbarkeit
             des Holzes bieten den gefiederten Freunden ein langanhaltendes Zuhause.
+        spruceBirdhouse:
+          name: Fertige ein Vogelhaus aus Fichtenholz
+          desc: Baue ein robustes Vogelhaus, gefertigt aus dem starken Holz der Fichte,
+            das zusätzlich einen angenehmen Duft verströmt.
+          activityDesc: Mit geschickten Händen gestaltest du ein Vogelhaus aus Fichte,
+            dessen robuste Natur allen Elementen standhält und den Bewohnern Schutz
+            verspricht.
       net:
         kelpDriftNet:
           name: Stelle ein Treibnet aus Seetang her
@@ -1284,3 +1318,237 @@ singulars:
           und passt sie sorgfältig aneinander. Jeder Stich wird mit ruhiger Hand gesetzt,
           bis aus den Teilen ein robustes, schützendes Werk entsteht – ein Meisterwerk
           aus Leder und Handwerkskunst.
+  foraging:
+    other:
+      mangroveBasket:
+        name: Fertige einen Mangrovenkorb
+        activityDesc: Du kombinierst den Holzkorb mit dem großen Korb und erhältst
+          einen verbesserten Korb, der für beide Fähigkeiten verwendbar ist.
+        desc: Verbessere deine Körbe, zu einem Mangrovenkorb
+  trinketry:
+    gems:
+      shapeOpal:
+        activityDesc: Langsam und mit ruhiger Hand entfernst du das nutzlose Gestein,
+          bis der Feueropal in faszinierenden Farben zu leuchten beginnt.
+        name: Schleife einen Opal
+        desc: Bearbeite den rauen Edelstein, um den funkelnden Feueropal freizulegen.
+      shapeTopaz:
+        desc: Schneide den Topas aus seiner Rohform.
+        activityDesc: Ein friedliches Gefühl begleitet dich, während du den Topas
+          formst – Gerüchten zufolge ist er verwandt mit dem Edelstein, mit dem alles
+          begann.
+        name: Forme einen Topas
+      shapeJade:
+        desc: Schneide eine Jadescheibe ohne Einschlüsse.
+        activityDesc: Sorgfältig bearbeitest du den Jade und offenbarst seine tiefgrünen
+          Farbtöne. Während du seine glatte Oberfläche polierst, erfüllt dich eine
+          tiefe Ruhe.
+        name: Forme einen Jade
+      shapeEthernite:
+        activityDesc: Vorsichtig bearbeitest du den Ethernite, seine glatte Oberfläche
+          wirft ein unheimliches Licht zurück, während scharfe Splitter die Werkbank
+          bedecken.
+        desc: Schleife den Ethernite zu einem scharfen und gefährlichen Edelstein.
+        name: Forme einen Ethernite
+      shapeWrentmarine:
+        activityDesc: Behutsam schleifst du den rohen Wrentmarine zu einer formvollendeten
+          Tropfenform, während der Edelstein die umgebende Feuchtigkeit beinahe magisch
+          anzieht.
+        name: Forme einen Wrentmarine
+        desc: Löse den Wrentmarine vorsichtig aus dem umgebenden Rohgestein.
+      shapeStarPearl:
+        name: Forme eine Sternenperle
+        desc: Durch präzisen Schnitt offenbarst du das zarte Muster im Inneren der
+          Sternenperle.
+        activityDesc: Deine Hand arbeitet ruhig und exakt, während du die Sternenperle
+          geduldig zu ihrer perfekten, runden Form schleifst.
+      shapeRuby:
+        name: Forme einen Rubin
+        desc: Schleife den rohen Rubin zu einem glänzenden Edelstein.
+        activityDesc: Geschickt formst du den Rubin, dessen tiefroter Farbton mit
+          jedem Schnitt intensiver wird.
+      shapeSunStone:
+        name: Forme einen Sonnenstein
+        desc: Löse den Sonnenstein aus dem ihn umschließenden Gestein.
+        activityDesc: Behutsam entfernst du das Gestein rund um den Sonnenstein, sodass
+          seine ursprüngliche Schönheit erhalten bleibt.
+    rings:
+      silverSunStoneRing:
+        activityDesc: Du befestigst den Sonnenstein im silbernen Ringband und richtest
+          dabei sorgfältig die Strahlen des Steins aus. Selbst im hellen Licht leuchten
+          seine feurigen Farbtöne kraftvoll hervor.
+        name: Fertige einen Sonnenstein-Ring aus Silber
+        desc: Setzen Sie einen leuchtenden Sonnenstein in einen Silberring ein.
+      silverEtherniteRing:
+        activityDesc: Du setzt das scharf geschliffene Ethernite in seine silberne
+          Fassung ein. Einen Moment lang schweift dein Blick über die gläsernen Kanten,
+          von einer zur nächsten – immer tiefer in den Stein hinein, bis dir ein Schauer
+          über den Rücken läuft und du die Arbeit schließlich vollendest.
+        name: Fertige einen Ethernite-Ring aus Silber
+        desc: Setzen Sie einen seltenen Ethernite-Edelstein in einen Silberring.
+      goldWrentmarineRing:
+        activityDesc: Du bettest den tiefblauen Wrentmarin in das goldene Band ein,
+          seine schimmernden Farbtöne kommen voll zur Geltung, während du die Fassung
+          mit kleinen Anpassungen perfektionierst.
+        name: Fertige einen Wrentmarine-Ring aus Gold
+        desc: Setze einen geschliffenen Wrentmarine in einen Goldring ein.
+      silverWrentmarineRing:
+        activityDesc: Mit ruhiger Hand platzierst du den Wrentmarine in der silbernen
+          Fassung. Sein Schimmer gleicht dem Spiel von Mondlicht auf Wasser.
+        name: Fertige einen Wrentmarine-Ring aus Silber
+        desc: Setzen Sie eine geschliffene Wrentmarine auf einen Silberring.
+      silverRubyRing:
+        activityDesc: Sorgfältig platzierst du den geschliffenen Rubin in das Silber
+          und drehst ihn behutsam, bis jede Facette optimal zur Geltung kommt.
+        name: Fertige einen Rubin-Ring aus Silber
+        desc: Setze einen königlich roten Rubin in einen Silberring.
+      goldSunStoneRing:
+        activityDesc: Du richtest den leuchtenden Sonnenstein an der Gravur aus –
+          das Gold umschließt ihn, als hielte es den Moment fest, in dem Sonne und
+          Metall eins werden.
+        name: Fertige einen Sonnenstein-Ring aus Gold
+        desc: Setze einen glühenden Sonnenstein in einen Goldring ein.
+      silverOpalRing:
+        activityDesc: Du bereitest das Silber sorgfältig vor, bevor du den Opal in
+          die fertige Silberfassung einsetzt. Beim finalen Justieren fängt sein Farbenspiel
+          das Licht auf faszinierende Weise ein.
+        name: Fertige einen Opal-Ring aus Silber
+        desc: Setze den glühenden Opal in den Silberring ein.
+      silverJadeRing:
+        activityDesc: Du legst den Jade in die silberne Fassung und rollst den Rand
+          behutsam um den Edelstein – ein letzter, sichernder Schritt, der die Kraft
+          der Jade bewahrt.
+        name: Fertige einen Jade-Ring aus Silber
+        desc: Setze das polierte Stück Jade in einen Silberring ein.
+      goldJadeRing:
+        activityDesc: Du verankerst den Jade sicher im Gold. Seine satte Farbe hebt
+          sich eindrucksvoll vom warmen Glanz des Metalls ab und scheint in unbekannte
+          Tiefen zu führen.
+        name: Fertige einen Jade-Ring aus Gold
+        desc: Setze ein poliertes Stück Jade in einen Goldring ein.
+      goldEtherniteRing:
+        activityDesc: Du bettest den Ethernite in den goldenen Rahmen. Er senkt sich
+          beinahe wie von selbst in das Metall, die Grenzen verschwimmen – du suchst
+          vergeblich nach der Stelle, an der Stein und Gold sich trennen.
+        name: Fertige einen Ethernite-Ring aus Gold
+        desc: Setze einen seltenen Ethernite Edelstein in einen Goldring ein.
+      goldRing:
+        name: Fertige einen Goldring
+        desc: Fertige einen einfachen, aber wertvollen Goldring.
+        activityDesc: Wie in einem stillen Tanz zwischen Handwerk und Kunst erwächst
+          aus rohem Gold ein Ring, schlicht, sanft – und doch von zeitloser Schönheit.
+      silverRing:
+        name: Fertige einen Silberring
+        desc: Fertige einen klassischen Silberring.
+        activityDesc: Durch sorgfältiges Ziehen und Formen verwandelst du das Silber
+          in einen Ring, der mit silbrigem Glanz von meisterlichem Handwerk zeugt.
+      silverStarPearlRing:
+        name: Fertige einen Sternenperlen-Ring aus Silber
+        desc: Setze eine leuchtende Sternenperle in einen Silberring.
+        activityDesc: Die Sternenperle gleitet sanft in die Fassung, ihr dezentes
+          Strahlen verschmilzt mit dem kühlen Glanz des Silbers zu zeitloser Eleganz.
+      silverTopazRing:
+        name: Fertige einen Topas-Ring aus Silber
+        desc: Setzen Sie einen schimmernden Topas in einen Silberring ein.
+        activityDesc: Sorgfältig setzt du den strahlenden Topas in das matte Silber
+          – das warme Leuchten des Steins harmoniert mit dem dezenten Glanz des Metalls.
+      goldOpalRing:
+        name: Fertige einen Opal-Ring aus Gold
+        desc: Setze einen glühenden Opal in einen Goldring ein.
+        activityDesc: Du bettest den glühenden Opal in das Gold ein, seine Farben
+          flackern wie lebendiges Feuer, während du die Fassung abschließend veredelst.
+      goldStarPearlRing:
+        name: Fertige einen Sternenperlen-Ring aus Gold
+        desc: Setze eine leuchtende Sternenperle in einen Goldring ein.
+        activityDesc: Du verankerst die Sternenperle im goldenen Band, und ihr weiches
+          Licht scheint sich mit der goldenen Wärme zu vereinen.
+      goldTopazRing:
+        name: Fertige einen Topas-Ring aus Gold
+        desc: Setze einen schimmernden Topas in einen Goldring ein.
+        activityDesc: 'Mit ruhiger Hand setzt du den leuchtenden Topas in das goldene
+          Band ein – und fragst dich, was stärker strahlt: der Edelstein oder das
+          polierte Gold.'
+      goldRubyRing:
+        name: Fertige einen Rubin-Ring aus Gold
+        desc: Setze einen königlich roten Rubin in einen Goldring ein.
+        activityDesc: Du befestigst den Rubin sicher in seinem goldenen Käfig. Das
+          massive Gold verstärkt seine Aura von Stärke und Würde.
+    amulets:
+      amuletOfTheShrimp:
+        activityDesc: Das Garnelen-Schmuckstück gleitet in seine Fassung zwischen
+          Gold und Silber – es passt perfekt. Es benötigt Zeit, doch das Ergebnis
+          wirkt wie geschaffen fürs Sammeln.
+        name: Stelle ein Amulett der Garnele her
+        desc: Setze ein Garnelen-Schmuckstück in ein Amulett ein
+      amuletOfTheEel:
+        activityDesc: Das Aal-Schmuckstück gleitet in seine Fassung zwischen Gold
+          und Silber – es passt perfekt. Es erfordert Zeit, doch das Ergebnis wirkt
+          wie geschaffen für mehr Beweglichkeit.
+        desc: Setze ein Aal-Schmuckstück in ein Amulett ein
+        name: Stelle ein Amulett des Aals her
+      amuletOfTheHeron:
+        activityDesc: Das Reiher-Schmuckstück gleitet in seine Fassung zwischen Gold
+          und Silber – es passt perfekt. Es erfordert Zeit, doch das Ergebnis wirkt
+          wie geschaffen fürs Fischen.
+        name: Stelle ein Amulett desReihers her
+        desc: Setze ein Reiher-Schmuckstück in ein Amulett ein
+      amuletOfTheCoolingIce:
+        activityDesc: Das kühlende Eis-Schmuckstück gleitet in seine Fassung zwischen
+          Gold und Silber – es passt perfekt. Es erfordert Zeit, doch das Ergebnis
+          wirkt wie geschaffen fürs Schmieden.
+        name: Stelle ein Amulett des kühlenden Eises her
+        desc: Setze ein kühlendes Eis-Schmuckstück in ein Amulett ein
+      amuletOfTheRoot:
+        activityDesc: Das umlaufende Wurzel-Schmuckstück gleitet in seine Fassung
+          zwischen Gold und Silber – es passt perfekt. Es erfordert Zeit, doch das
+          Ergebnis wirkt wie geschaffen fürs Holzfällen.
+        name: Stelle ein Amulett der Wurzel her
+        desc: Setze ein umlaufendes Wurzel-Schmuckstück in ein Amulett ein
+      amuletOfTheAnimalKingdom:
+        activityDesc: Die Schmuckstücke gleiten in die Fassung zwischen Gold und Silber
+          – sie passen perfekt. Es erfordert viel Zeit, doch das Ergebnis macht dich
+          überaus glücklich.
+        name: Stelle ein Amulett des Tierreichs her
+        desc: Setze viele Tier-Schmuckstücke in ein Amulett ein
+      amuletOfTheBat:
+        name: Stelle ein Amulett der Fledermaus her
+        desc: Setze ein Fledermaus-Schmuckstück in ein Amulett ein
+        activityDesc: Das Fledermaus-Schmuckstück gleitet in seine Fassung zwischen
+          Gold und Silber – es passt perfekt. Es braucht seine Zeit, doch das Ergebnis
+          wirkt wie geschaffen fürs Bergbauen.
+      amuletOfTheLuckyRabbitFoot:
+        name: Stelle ein Amulett der Kaninchenpfoten her
+        desc: Setze ein Kaninchenpfoten-Schmuckstück in ein Amulett ein
+        activityDesc: Das Kaninchenpfoten-Schmuckstück gleitet in seine Fassung zwischen
+          Gold und Silber – es passt perfekt. Es erfordert Zeit, doch das Ergebnis
+          wirkt wie geschaffen fürs Kunsthandwerk.
+      amuletOfTheMeasuringSpoons:
+        name: Stelle ein Amulett des Messlöffels her
+        desc: Setze ein Messlöffel-Schmuckstück in ein Amulett ein
+        activityDesc: Das Messlöffel-Schmuckstück gleitet in seine Fassung zwischen
+          Gold und Silber – es passt perfekt. Es erfordert Zeit, doch das Ergebnis
+          wirkt wie geschaffen fürs Kochen.
+      amuletOfTheSharkTooth:
+        name: Stelle ein Amulett des Haizahns her
+        desc: Setze ein Haizahn-Schmuckstück in ein Amulett ein
+        activityDesc: Das Haizahn-Schmuckstück gleitet in seine Fassung zwischen Gold
+          und Silber – es passt perfekt. Es erfordert Zeit, doch das Ergebnis wirkt
+          wie geschaffen fürs Jagen.
+      amuletOfTheBeaver:
+        name: Stelle ein Amulett des Bibers her
+        desc: Setze ein Biber-Schmuckstück in ein Amulett ein
+        activityDesc: Das Biber-Schmuckstück gleitet in seine Fassung zwischen Gold
+          und Silber – es passt perfekt. Es erfordert Zeit, doch das Ergebnis wirkt
+          wie geschaffen für die Tischlerei.
+      amuletOfTheFinding:
+        name: Stelle ein Amulett des Pfadfinders her
+        desc: Setze ein Kompass-Schmuckstück in ein Amulett ein
+        activityDesc: Das Kompass-Schmuckstück gleitet in seine Fassung zwischen Gold
+          und Silber – es passt perfekt. Es erfordert Zeit, doch das Ergebnis wirkt
+          wie geschaffen fürs Reisen.
+      jarvonianFlowerNecklace:
+        name: Stelle eine jarvonische Blumenhalskette her
+        desc: Setze Mondblumen und Schneeglöckchen in eine Blumenhalskette ein
+        activityDesc: Du verbindest die zarten Blüten zu einer Kette, und ein sanftes
+          Gefühl von Heimat durchflutet dich – Erinnerungen an den Entzauberten Wald
+          erwachen.
