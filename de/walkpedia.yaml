@@ -67,6 +67,74 @@ singulars:
     item:
       info:
         title: Gegenstand <object id="{obj}">
+    skill:
+      info:
+        xp: XP
+        xpTo99: XP bis Level 99
+        ofTotalSteps: '% aller zurückgelegten Schritte'
+        nextUnlock: Nächste Freischaltung
+        lastUnlock: Letzte Freischaltung
+        unlocks: Alle Freischaltungen
+        fromLevelToLevel: Von Level <c>{from}</c> bis Level <c>{to}</c>
+        guide: Leitfaden
+        unlocksDesc: Entdecke, was du durch das Verbessern dieser Fähigkeit freischaltest.
+        level: Level
+        xpToNext: XP bis zum nächsten Level
+        stepsWalked: Zurückgelegte Schritte
+      guides:
+        crafting: "<object id=\"crafting\" /> ist eine Verarbeitungsfertigkeit zur
+          Herstellung nützlicher Werkzeuge.\n\n<li><hl>Startgebiet</hl>: Du kannst
+          mit dem <c>Handwerk</c> sofort loslegen - \"Hilfreicher Herbert\" in <object
+          id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> gibt dir einige kostenlose <object id=\"processed\" /><icon i=\"crafting\"\
+          \ /> Materialien, mit denen du erste einfache Rezepte ausprobieren kannst.</li>\n
+          \n<li><hl>Wo zu finden</hl>: Die meisten städtischen Orte bieten mit etwas
+          Glück Zugang zum <object id=\"service_workshop\" /> Service, den du aufsuchen
+          musst, um höherstufige Handwerksrezepte umzusetzen. Vielleicht findest du
+          unterwegs sogar einige Orte mit eigenen<c>Handwerk</c>-Aktivitäten.</li>\n
+          \n<li><hl>Wofür genutzt</hl>: Die Kombination und Verarbeitung von <object
+          id=\"bar\" />, <object id=\"plank\" /> und <object id=\"processed\" /> Gegenständen
+          zu potentiellen <object id=\"woodcuttingTool\" />, <object id=\"miningTool\"\
+          \ />, <object id=\"fishingTool\" /> oder <object id=\"foragingTool\" />
+          die jeweils die zugehörigen Fähigkeiten unterstützen.</li>\n"
+        agility: "<object id=\"agility\" /> ist eine Fertigkeit, die für das Reisen
+          unerlässlich ist.\n\n<li><hl>Startgebiet</hl>:<c>Beweglichkeit</c> wird
+          oft zusammen mit anderen Fähigkeiten trainiert. Du kannst also direkt im
+          <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> mit <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
+          \ /> damit beginnen. Später wirst du merken, dass sie beim Auswählen neuer
+          Reiseziele wichtig ist – aber eine eigene Aktivität taucht erst auf, wenn
+          du weiter erkundest und passende Ausrüstung findest. Ein paar <object id=\"\
+          skis\" /> oder <object id=\"climbingTool\" /> könnten dabei hilfreich sein.</li>\n
+          \n<li><hl>Wo zu finden</hl>: Auf Feldern, in Bergen oder sogar in Städten
+          –<c>Beweglichkeit</c>-Aktivitäten tauchen oft unerwartet auf. </li>\n\n
+          <li><hl>Wofür genutzt</hl>: Reisen, Abkürzungen und gelegentlich das Finden
+          von zufälligen Materialien. Sie ist entscheidend, um sich schneller in Arenum
+          fortzubewegen – ein höheres Level bedeutet schnellere Reisen.</li>\n"
+        cooking: "<object id=\"cooking\" /> ist eine Verarbeitungsfertigkeit zur Herstellung
+          kulinarischer <object id=\"food\" /> Köstlichkeiten und verzehrbarer Gegenstände.\n
+          \n<li><hl>Startgebiet</hl>: Du kannst mit <c>Kochen</c> in <object id=\"\
+          location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\" /> beginnen. Entweder
+          über <object id=\"a34e2643-5c41-4d15-94de-8df53d3d4c19\" /> oder mithilfe
+          der <object id=\"recipe_cooking\" /> Option.</li>\n\n<li><hl>Wo zu finden</hl>:
+          Die meisten städtischen Orte bieten mit etwas Glück Zugang zum <object id=\"\
+          service_kitchen\" /> Service. Vielleicht gibt es sogar noch einige weitere
+          Küchen, die bei <c>Koch</c>-Aktivitäten auf deine Hilfe warten.</li>\n\n
+          <li><hl>Wofür genutzt</hl>: Die Verwandlung von <object id=\"fish\" /> und
+          <object id=\"ingredient\" /> Gegenständen in <object id=\"food\" /> und
+          <object id=\"beverage\" /> Verbrauchsgüter, die allerlei Attributsboni für
+          deine Fähigkeiten verleihen können.</li>\n"
+        carpentry: "<object id=\"carpentry\" /> ist eine Verarbeitungsfertigkeit zur
+          Bearbeitung von Holzelementen und <object id=\"plank\" />.\n\n<li><hl>Startgebiet</hl>:
+          Du kannst mit <c>Tischlerei</c> in <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> beginnen - über die <icon i=\"crafting\" /> Optionen, oder du reist
+          an den <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
+          \ /> und baust dort ein paar <object id=\"activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d\"\
+          \ />.</li>\n\n<li><hl>Wo zu finden</hl>: Die meisten städtischen Orte haben
+          mit etwas Glück Zugang zum <object id=\"service_sawmill\" /> Service. Einige
+          wenige bieten sogar eigene <c>Tischlerei</c>-Aktivitäten an.</li>\n\n<li><hl>Wofür
+          genutzt</hl>: Verarbeite <object id=\"logs\" /> in <object id=\"plank\"
+          /> die wiederum nützlich für <object id=\"crafting\" /> sind.</li>\n"
   phrases:
     home:
       leveling: Leveln
@@ -106,6 +174,9 @@ singulars:
     location:
       realm: Reich
       activities: Aktivitäten
+    common:
+      unknown: Dein Charakter hat diesen Inhalt noch nicht entdeckt. Bleib neugierig
+        und erkunde weiter!
 maps:
   phrases:
     item:
@@ -116,3 +187,26 @@ maps:
         "consumable": Verbrauchsgegenstände
         "crafted": Hergestellt
         "collectible": Sammelgegenstände
+plurals:
+  skillUnlocks:
+    itemRequirementsMet:
+      zero: '-'
+      few: '-'
+      many: '-'
+      other: <c>{}</c> Gegenstandsvoraussetzungen erfüllt
+      one: <c>{}</c> Gegenstandsvoraussetzung erfüllt
+      two: <c>{}</c> Gegenstandsvoraussetzungen erfüllt
+    recipeRequirementsMet:
+      zero: '-'
+      few: '-'
+      many: '-'
+      two: <c>{}</c> Rezeptvorraussetungen erfüllt
+      one: <c>{}</c> Rezeptvorraussetung erfüllt
+      other: <c>{}</c> Rezeptvorraussetungen erfüllt
+    activityRequirementsMet:
+      zero: '-'
+      two: <c>{}</c> Aktivitätsvorraussetungen erfüllt
+      few: '-'
+      many: '-'
+      other: <c>{}</c> Aktivitätsvorraussetungen erfüllt
+      one: <c>{}</c> Aktivitätsvorraussetung erfüllt
