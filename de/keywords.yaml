@@ -21,10 +21,10 @@ singulars:
       requirementLevel: Erfordert ein Erz, das mindestens <keywordRequirements />
         benötigt.
     bar:
-      name: Stange
-      requirement: Benötigt eine Stange.
-      requirementLevel: Erfordert eine Stange, die mindestens <keywordRequirements
-        /> benötigt.
+      name: Barren
+      requirement: Benötigt einen <object id="bar" />.
+      requirementLevel: Erfordert einen Barren, der mindestens <keywordRequirements
+        /> in seinen Voraussetzungen erfüllt.
     plank:
       name: Brett
       requirement: Erfordert ein Brett.
@@ -236,6 +236,21 @@ singulars:
       requirement: Für diese Aufgabe wird eine Spaltaxt benötigt.
       requirementlevel: Erfordert eine Spaltaxt, die mindestens <keywordRequirements
         /> benötigt.
+    fishingTool:
+      name: Angelwerkzeug
+      requirement: Erfordert ein ausgerüstetes <object id="fishingTool" />.
+      requirementLevel: Erfordert ein fischereibezogenes Werkzeug, das mindestens
+        <keywordRequirements /> in seinen Anforderungen erfüllt.
+    miningTool:
+      name: Bergbauwerkzeug
+      requirement: Erfordert ein ausgerüstetes <object id="miningTool" />.
+      requirementLevel: Erfordert ein Bergbauwerkzeug, das mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt.
+    woodcuttingTool:
+      requirement: Benötigt ein ausgerüstetes <object id="woodcuttingTool" />.
+      name: Holzfällerwerkzeug
+      requirementLevel: Erfordert ein Holzfällerwerkzeug, das mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt.
   activities:
     woodcuttingTrees:
       name: Bäume fällen
