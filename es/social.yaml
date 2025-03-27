@@ -7,6 +7,10 @@ singulars:
     inviteSent: Invitación enviada
     inviteReceived: Has recibido una invitación
     none: Social
+    party:
+      member: Miembro
+      admin: Administrador
+      owner: Propietario
   actions:
     buttonLabels:
       removeFriend: Eliminar amigo
@@ -17,10 +21,14 @@ singulars:
         accept: Aceptar
         reject: Rechazar
         block: Bloquear
+      createParty: Crear grupo
+      leaveParty: Dejar grupo
+      leaveAndDestroyParty: Dejar y eliminar el grupo
     confirmTitle:
       unblock: Desbloquear usuario
       inviteResponse:
         block: Bloquear usuario
+      changeRole: Cambiar permiso
     confirmDescription:
       unblock: ¿Estás seguro de que quieres desbloquear a este usuario?
       removeFriend: ¿Estás seguro de que quieres dejar de ser amigos?
@@ -28,3 +36,35 @@ singulars:
       inviteResponse:
         block: ¿Estás seguro de que quieres bloquear a este usuario? Los usuario bloqueados
           no podrán enviarte invitaciones de amigo.
+      changeRole: 'Confirmar: ¿Cambiar <hl>{characterName}</hl> a <hl>{partyRole}</hl>?'
+      leaveParty: ¿Estás seguro de dejar el grupo?
+      leaveAndDestroyParty: ¿Estás seguro de dejar y eliminar el grupo? Esta acción
+        no se puede deshacer.
+  party:
+    role: Rol
+    manage: Administrar
+  createParty:
+    input:
+      partyName: Nombre del grupo
+      catchphrase: Eslogan
+      catchphraseHint: Eslogan (opcional)
+    rules:
+      mayContain: '<bp />Puede contener: {list}'
+      noTrailingSpaces: <bp />No puede empezar ni terminar con espacio
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        one: <bp />Al menos {} caracter
+        two: '-'
+        many: '-'
+        other: <bp />Al menos {} caracteres
+        few: '-'
+      maxChar:
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Como máximo {} caracteres
+        one: <bp />Como máximo {} caracter
