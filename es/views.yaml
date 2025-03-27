@@ -38,6 +38,9 @@ maps:
         none: Ninguno
         nose: Nariz
         outfit: Conjunto
+        'faceAccessory': Accesorios faciales
+        'backAccessory': Accesorios traseros
+        'eyeAccessory': Accesorios de ojo
       raceTypes:
         human: Humano
         none: Ninguno
@@ -76,6 +79,8 @@ maps:
       'es': Español (España)
       'en': Inglés
       'it': Italiano
+      'zh_Hans': Chino (simplificado)
+      'sv': Sueco
     stepCountNotifications:
       'never': Nunca
       'always': Siempre
@@ -192,6 +197,7 @@ singulars:
       notSameQuality: Los materiales han de ser todos finos o normales
       noService: Requerimiento de servicio no satisfecho
       skillRequirementsNotMet: Requerimiento de habilidad no satisfecho
+      noMaterials: Faltan materiales de transformación
   inventory:
     info:
       noItemEquipped: No hay ningún objeto equipado. \n\n Puedes equipar un objeto
@@ -205,7 +211,7 @@ singulars:
       selectedStacks: <c>{stacks}</c> pilas seleccionadas
       requirementsNotMet: No se cumplen los requisitos.
       cantEquip: No se puede equipar.
-      checkBank: Ver banco
+      checkBank: Abrir banco
       slotDoesntExist: Esta ranura ya no existe.
       allItemsInUse: Todos estos objetos están actualmente en uso y no pueden dejarse
         caer.
@@ -270,6 +276,9 @@ singulars:
       enableBackAccessorie: Habilitar accesorio trasero
       enableFacepaint: Habilitar pintura facial
       enableDynamicBackground: Activar fondo dinámico
+      enableFaceAccessory: Activar complementos faciales
+      enableBackAccessory: Activar complementos traseros
+      enableEyeAccessory: Activar complementos de ojo
     phrases:
       currentSelection: Selección actual
       homeRegion: Región de origen
@@ -375,7 +384,8 @@ singulars:
   character:
     info:
       skillBreakdown: Aquí está el desglose total de todas las habilidades que tu
-        personaje ha subido de nivel durante su aventura.
+        personaje ha subido de nivel durante su aventura. Pulsa en cualquiera de las
+        habilidades para ver información detallada sobre ella y qué desbloquea.
     phrases:
       skills: Habilidades
       stepsOfLastWeek: Pasos de los últimos 7 días
@@ -439,6 +449,7 @@ singulars:
       gameplay:
         title: Jugabilidad
         stopWhenOverEncumberedDefault: Parar por defecto en caso de sobrecarga
+        showFpsCounter: Mostrar contador FPS
       accessibility:
         title: Accesibilidad
         leftHandedMode: Modo zurdo
@@ -457,6 +468,8 @@ singulars:
       dataSource:
         changeWarning:
           title: ¿Cambiar origen de datos?
+          description: Por favor ten en cuenta que podría haber una pérdida de pasos
+            alrededor del momento del cambio.
         title: Origen de datos
         thisPhone: Este teléfono
         otherSource: Otro origen
@@ -466,6 +479,10 @@ singulars:
           > Salud > (bajo Apps) Walkscape. Asegúrate también de que Apple Health ha
           registrado pasos en esos dispositivos en los últimos 7 días.
         lastSync: 'Última sincronización: {timestamp}'
+      graphics:
+        title: Gráficos
+        shaderOutlines: Renderizar contornos con sombreadores
+        renderOutlines: Renderizar contornos
     phrases:
       exitToCharacterSelection: Salir a la selección de personajes
       settings: Ajustes
@@ -567,3 +584,40 @@ singulars:
       buying: Comprando
       selling: Vendiendo
       buyBack: Comprar de vuelta
+  gearSets:
+    phrases:
+      gearSets: Sets de equipo
+      copyCurrentlyEquippedGear: Copiar equipo actual
+      forActivities: 'Para actividades: '
+      noActivitiesSelected: Ninguna actividad seleccionada
+      unequipGear: Quitar equipo
+      unequipTools: Quitar herramientas
+      noItemSelected: Ningún objeto seleccionado
+      newSetDefaultName: Mi nuevo set de equipo
+      importedGearSetDefaultName: Set de equipo importado
+      tools: Herramientas
+      optionsAndFilters: Opciones y filtros
+      sortBy: 'Ordenar por: '
+      toolSlot: Hueco de herramienta
+      default: Por defecto
+      level: 'Nvl. '
+      showAttributes: Mostrar atributos
+      gear: Equipo
+      name: Nombre
+    errors:
+      keywordError: 'Set de equipo ya tiene: <object id="{keyword}" />'
+      duplicateItem: Objeto ya existe en el set de equipo
+    info:
+      gearSetsDescription: Los sets de equipo te permiten cambiar de equipo rápidamente.
+      gearSetManageDesc: Elige un set de equipo que quieras ponerte de la lista de
+        abajo. Para crear, importar o editar tus sets de equipo, pulsa <c i=0>Administrar</c>.
+      noGearSetsManage: No has creado ningún set de equipo todavía. Crea el primero
+        pulsando el botón <c i=0>Crear nuevo</c>.
+      gearSetsListDesc: Puedes administrar tus sets de equipo desde aquí. Si quieres
+        <c i=0>crear uno nuevo</c>, pulsa el botón de abajo. También puedes <c i=1>copiar
+        tu equipo actual</c> al crear un nuevo set de equipo.
+      noGearSetsList: No tienes ningún set de equipo todavía. Elige <c i=0>Administrar</c>
+        para crear o importar sets de equipo nuevos.
+      youDontHaveAnyItems: Sin objetos. Puede que no conozcas o no tengas ningún objeto
+        de este tipo, o puede que tus filtros de búsqueda no hayan encontrado nada
+        que coincida.
