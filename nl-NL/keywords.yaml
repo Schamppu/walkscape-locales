@@ -11,10 +11,10 @@ singulars:
       name: Erts mijnen
       requirement: Erts mijnen activiteit vereist.
     woodcuttingTrees:
-      requirementLevel: Houthakken activiteit vereist welke op z'n minst <keywordRequirements
-        /> vereist.
+      requirementLevel: Vereist een houthakactiviteit met tenminste <keywordRequirements
+        /> in zijn vereisten.
       name: Houthakken
-      requirement: Een houthakken activiteit is vereist.
+      requirement: Vereist een <object id="woodcuttingTrees" />-activiteit.
     foragingPlants:
       name: Planten zoeken
       requirement: Planten zoeken activiteit vereist.
@@ -217,10 +217,13 @@ singulars:
   recipes:
     skills:
       cooking:
-        name: Koken
+        name: Kookrecept
+        requirement: Vereist een <object id="recipe_cooking" />.
     products:
       sandwich:
-        name: Boterham
+        name: Boterhamrecept
+        requirements: Vereist het maken van een <object id="sandwich" /> volgens een
+          <object id="recipe_cooking" />.
   gear:
     frisbee:
       name: Frisbee
