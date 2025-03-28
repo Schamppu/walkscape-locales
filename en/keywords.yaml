@@ -69,7 +69,7 @@ singulars:
     socks:
       name: Socks
       requirement: Requires a equipped <object id="item_socks" />.
-      requirementLevel: "Requires socks that has at least <keywordRequirements /> in their requirements."
+      requirementLevel: "Requires socks that have at least <keywordRequirements /> in their requirements."
     underwater:
       name: Underwater
       requirement: Requires <object id="item_underwater" /> equipment.
@@ -82,6 +82,10 @@ singulars:
       name: Shield
       requirement: Requires an equipped <object id="shield" />.
       requirementLevel: "Requires a shield that has at least <keywordRequirements /> in its requirements."
+    arrows:
+      name: Arrows
+      requirement: Requires equipped <object id="arrows" />.
+      requirementLevel: "Requires arrows that have at least <keywordRequirements /> in their requirements."
   tools:
     sickle:
       name: Sickle
@@ -231,6 +235,14 @@ singulars:
       name: Skill book
       requirement: Requires an equipped <object id="skillBook" />.
       requirementlevel: "Requires a skill book that has at least <keywordRequirements /> in its requirements."
+    huntingBow:
+      name: Hunting bow
+      requirement: Requires an equipped <object id="huntingBow" />.
+      requirementLevel: "Requires a hunting bow that has at least <keywordRequirements /> in its requirements."
+    huntingTrap:
+      name: Hunting trap
+      requirement: Requires an equipped <object id="huntingTrap" />.
+      requirementLevel: "Requires a hunting trap that has at least <keywordRequirements /> in its requirements."
   materials:
     logs:
       name: Log
@@ -345,7 +357,7 @@ singulars:
   general:
     lightSource:
       name: Light source
-      requirement: Requires a <object id="lightSource" />.
+      requirement: Requires an equipped <object id="lightSource" />.
       requirementLevel: "Requires the user to have a <keywordRequirements /> equipped."
   misc:
     trash:
@@ -396,6 +408,10 @@ singulars:
         name: Foraging
         requirement: "<PLACEHOLDER>"
         requirementLevel: "<PLACEHOLDER>"
+      hunting:
+        name: Hunting
+        requirement: "<PLACEHOLDER>"
+        requirementLevel: "<PLACEHOLDER>"
       mining:
         name: Mining
         requirement: "<PLACEHOLDER>"
@@ -406,6 +422,10 @@ singulars:
         requirementLevel: "<PLACEHOLDER>"
       woodcutting:
         name: Woodcutting
+        requirement: "<PLACEHOLDER>"
+        requirementLevel: "<PLACEHOLDER>"
+      tailoring:
+        name: Tailoring
         requirement: "<PLACEHOLDER>"
         requirementLevel: "<PLACEHOLDER>"
       trinketry:
@@ -470,6 +490,10 @@ singulars:
       requirementLevel: "<PLACEHOLDER>"
     bench:
       name: Trinketry Bench
+      requirement: "<PLACEHOLDER>"
+      requirementLevel: "<PLACEHOLDER>"
+    loom:
+      name: Loom
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
   itemSets:
