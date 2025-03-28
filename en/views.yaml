@@ -179,7 +179,6 @@ singulars:
       noFoodConsumables: No <hl>food</hl> in your inventory.
       noPotionConsumables: No <hl>potions</hl> in your inventory.
     options:
-      consenseInventory: Condense inventory
       expandInventory: Expand inventory
       showMaterials: Show materials
       showGear: Show gear
@@ -231,9 +230,6 @@ singulars:
         changeWarning:
           title: Change data source?
           description: Please note that this may lead to a loss of steps around the time of change.
-      accessibility:
-        title: Accessibility
-        leftHandedMode: Left handed mode
       account:
         title: Account
         visibility: Profile visibility
@@ -244,7 +240,6 @@ singulars:
       gameplay:
         title: Gameplay
         stopWhenOverEncumberedDefault: Stop when overencumbered by default
-        showFpsCounter: Show FPS counter
       closedBeta:
         title: Closed Beta
         useThisToClear: Use this if you want to reset you steps graph. Useful if you've gained steps from bugs and want a reset to the graph.
@@ -254,12 +249,6 @@ singulars:
         stepCountInterval: Notification interval
         stepCountNotifications: Step count notifications
         notificationType: Notification type
-      graphics:
-        title: Graphics
-        shaderOutlines: Render outlines with shaders
-        renderOutlines: Render outlines
-      language:
-        title: Language
     phrases:
       settings: Settings
       exitToCharacterSelection: Exit to character selection
@@ -522,11 +511,14 @@ maps:
     boolSettings:
       'leftHandedMode': Left handed mode
       'inventoryCollapsed': Condense inventory
-      'alwaysStopWhenInventoryFull': Always stop when over overencumbered
+      'alwaysStopWhenInventoryFull': Stop when overencumbered by default
       'showRecipesMaterialsAreMet': Material requirements are met
       'showRecipesRequirementsAreMet': Level requirements are met
       'showRecipesServicesAreMet': Service requirements are met
       'showCompletedAchievements': Show completed achievements
+      'spriteOutlines': Render outlines
+      'showFpsCounter': Show FPS counter
+      'shaderOutlineRendering': Render outlines with shaders
     enumSettings:
       'language': Language
       'leaderboardFilter': Show
