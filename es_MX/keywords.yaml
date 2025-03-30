@@ -7,3 +7,23 @@ singulars:
     products:
       sandwich:
         name: Receta de sandwich
+        requirements: Requiere un <object id="sandwich" /> que sea hecho por un <object
+          id="recipe_cooking" />.
+  activities:
+    woodcuttingTrees:
+      requirementLevel: Requiere una actividad de talar árboles que tenga al menos
+        <keywordRequirements /> en sus requerimientos.
+      requirement: Requiere una actividad <object id="woodcuttingTrees" /> .
+      name: Talar árboles
+    foragingPlants:
+      requirement: Requiere una actividad <object id="activity_foraging" />.
+    fishing:
+      name: Pescar
+      requirement: Requiere una actividad <object id="activity_fishing" />.
+      requirementLevel: Requiere una actividad de pesca que tenga al menos <keywordRequirements
+        /> en sus requerimientos.
+    miningOres:
+      requirement: Requiere una actividad <object id="activity_mining" />.
+      requirementLevel: Requiere una actividad de minería que tenga al menos <keywordRequirements
+        /> en sus requerimientos.
+      name: Minar minerales
