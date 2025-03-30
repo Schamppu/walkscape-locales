@@ -1,19 +1,2427 @@
 singulars:
-  runnyNose:
-    name: Runny Nose
-    desc: (just example, pls rewrite) you got a runny nose sir
-  traineeOfCold:
-    name: Trainee of Cold
-    desc: (just example, pls rewrite) you are a trainee of cold madam
-  frostApprentice:
-    name: Frost Apprentice
-    desc: (just example, pls rewrite) you are a frost apprentice milady
-  acolyteOfWinter:
-    name: Acolyte of Winter
-    desc: (just example, pls rewrite) you are an acolyte of winter sir
-  friendOfIce:
-    name: Friend of Ice
-    desc: (just example, pls rewrite) you are a friend of ice madam
-  allyOfFrost:
-    name: Ally of Frost
-    desc: (just example, pls rewrite) you are an ally of frost sir
+  faction:
+    jarvonia:
+      runnyNose:
+        name: Runny Nose
+        desc: (just example, pls rewrite) you got a runny nose sir
+      traineeOfCold:
+        name: Trainee of Cold
+        desc: (just example, pls rewrite) you are a trainee of cold madam
+      frostApprentice:
+        name: Frost Apprentice
+        desc: (just example, pls rewrite) you are a frost apprentice milady
+      acolyteOfWinter:
+        name: Acolyte of Winter
+        desc: (just example, pls rewrite) you are an acolyte of winter sir
+      friendOfIce:
+        name: Friend of Ice
+        desc: (just example, pls rewrite) you are a friend of ice madam
+      allyOfFrost:
+        name: Ally of Frost
+        desc: (just example, pls rewrite) you are an ally of frost sir
+  skill:
+    agility:
+      activity:
+        classicSki:
+          title1:
+            name: Classic Ski Swiftling
+            desc: Obtain mastery IV in the Classic skiing activity
+          title2:
+            name: Classic Ski Fleetfoot
+            desc: Obtain mastery VII in the Classic skiing activity
+          title3:
+            name: Classic Ski Acrobat
+            desc: Obtain mastery X in the Classic skiing activity
+        skateSki:
+          title1:
+            name: Skate Ski Swiftling
+            desc: Obtain mastery IV in the Skate skiing activity
+          title2:
+            name: Skate Ski Fleetfoot
+            desc: Obtain mastery VII in the Skate skiing activity
+          title3:
+            name: Skate Ski Acrobat
+            desc: Obtain mastery X in the Skate skiing activity
+        swimEscape:
+          title1:
+            name: Swim Escape Swiftling
+            desc: Obtain mastery IV in the Emergency Swim Escape activity
+          title2:
+            name: Swim Escape Fleetfoot
+            desc: Obtain mastery VII in the Emergency Swim Escape activity
+          title3:
+            name: Swim Escape Acrobat
+            desc: Obtain mastery X in the Emergency Swim Escape activity
+        guard:
+          title1:
+            name: Guard Swiftling
+            desc: Obtain mastery IV in the Guard Duty activity
+          title2:
+            name: Guard Fleetfoot
+            desc: Obtain mastery VII in the Guard Duty activity
+          title3:
+            name: Guard Acrobat
+            desc: Obtain mastery X in the Guard Duty activity
+        kayak:
+          title1:
+            name: Kayak Swiftling
+            desc: Obtain mastery IV in the Kayaking activity
+          title2:
+            name: Kayak Fleetfoot
+            desc: Obtain mastery VII in the Kayaking activity
+          title3:
+            name: Kayak Acrobat
+            desc: Obtain mastery X in the Kayaking activity
+        merfolkDance:
+          title1:
+            name: Merfolk Dance Swiftling
+            desc: Obtain mastery IV in the Merfolk Dancing activity
+          title2:
+            name: Merfolk Dance Fleetfoot
+            desc: Obtain mastery VII in the Merfolk Dancing activity
+          title3:
+            name: Merfolk Dance Acrobat
+            desc: Obtain mastery X in the Merfolk Dancing activity
+        mountain:
+          title1:
+            name: Mountain Swiftling
+            desc: Obtain mastery IV in the Mountain Climbing activity
+          title2:
+            name: Mountain Fleetfoot
+            desc: Obtain mastery VII in the Mountain Climbing activity
+          title3:
+            name: Mountain Acrobat
+            desc: Obtain mastery X in the Mountain Climbing activity
+        ridge:
+          title1:
+            name: Ridge Swiftling
+            desc: Obtain mastery IV in the Ridge Scrambling activity
+          title2:
+            name: Ridge Fleetfoot
+            desc: Obtain mastery VII in the Ridge Scrambling activity
+          title3:
+            name: Ridge Acrobat
+            desc: Obtain mastery X in the Ridge Scrambling activity
+        rescue:
+          title1:
+            name: Rescue Swiftling
+            desc: Obtain mastery IV in the Rescue Team activity
+          title2:
+            name: Rescue Fleetfoot
+            desc: Obtain mastery VII in the Rescue Team activity
+          title3:
+            name: Rescue Acrobat
+            desc: Obtain mastery X in the Rescue Team activity
+        hut:
+          title1:
+            name: Hut Swiftling
+            desc: Obtain mastery IV in the Hut Jumping activity
+          title2:
+            name: Hut Fleetfoot
+            desc: Obtain mastery VII in the Hut Jumping activity
+          title3:
+            name: Hut Acrobat
+            desc: Obtain mastery X in the Hut Jumping activity
+        house:
+          title1:
+            name: House Swiftling
+            desc: Obtain mastery IV in the House Jumping activity
+          title2:
+            name: House Fleetfoot
+            desc: Obtain mastery VII in the House Jumping activity
+          title3:
+            name: House Acrobat
+            desc: Obtain mastery X in the House Jumping activity
+        search:
+          title1:
+            name: Search Swiftling
+            desc: Obtain mastery IV in the Search Team activity
+          title2:
+            name: Search Fleetfoot
+            desc: Obtain mastery VII in the Search Team activity
+          title3:
+            name: Search Acrobat
+            desc: Obtain mastery X in the Search Team activity
+        jarvoniaSkydisc:
+          title1:
+            name: Jarvonia Skydisc Swiftling
+            desc: Obtain mastery IV in the Jarvonia Skydisc Course activity
+          title2:
+            name: Jarvonia Skydisc Fleetfoot
+            desc: Obtain mastery VII in the Jarvonia Skydisc Course activity
+          title3:
+            name: Jarvonia Skydisc Acrobat
+            desc: Obtain mastery X in the Jarvonia Skydisc Course activity
+        gdteSkydisc:
+          title1:
+            name: GDTE Skydisc Swiftling
+            desc: Obtain mastery IV in the GDTE Skydisc Course activity
+          title2:
+            name: GDTE Skydisc Fleetfoot
+            desc: Obtain mastery VII in the GDTE Skydisc Course activity
+          title3:
+            name: GDTE Skydisc Acrobat
+            desc: Obtain mastery X in the GDTE Skydisc Course activity
+        sledding:
+          title1:
+            name: Sledding Swiftling
+            desc: Obtain mastery IV in the Sledding activity
+          title2:
+            name: Sledding Fleetfoot
+            desc: Obtain mastery VII in the Sledding activity
+          title3:
+            name: Sledding Acrobat
+            desc: Obtain mastery X in the Sledding activity
+        surfaceSwim:
+          title1:
+            name: Surface Swim Swiftling
+            desc: Obtain mastery IV in the Surface Swimming activity
+          title2:
+            name: Surface Swim Fleetfoot
+            desc: Obtain mastery VII in the Surface Swimming activity
+          title3:
+            name: Surface Swim Acrobat
+            desc: Obtain mastery X in the Surface Swimming activity
+        underwaterSwim:
+          title1:
+            name: Underwater Swim Swiftling
+            desc: Obtain mastery IV in the Underwater Swimming activity
+          title2:
+            name: Underwater Swim Fleetfoot
+            desc: Obtain mastery VII in the Underwater Swimming activity
+          title3:
+            name: Underwater Swim Acrobat
+            desc: Obtain mastery X in the Underwater Swimming activity
+        bodysurfing:
+          title1:
+            name: Bodysurfing Swiftling
+            desc: Obtain mastery IV in the Bodysurfing activity
+          title2:
+            name: Bodysurfing Fleetfoot
+            desc: Obtain mastery VII in the Bodysurfing activity
+          title3:
+            name: Bodysurfing Acrobat
+            desc: Obtain mastery X in the Bodysurfing activity
+        traveling:
+          title1:
+            name: Traveling Swiftling
+            desc: Obtain mastery IV in the Traveling activity
+          title2:
+            name: Traveling Fleetfoot
+            desc: Obtain mastery VII in the Traveling activity
+          title3:
+            name: Traveling Acrobat
+            desc: Obtain mastery X in the Traveling activity
+    carpentry:
+      activity:
+        sandcastle:
+          title1:
+            name: Sandcastle Carver
+            desc: Obtain mastery IV in the Sandcastle Building activity
+          title2:
+            name: Sandcastle Molder
+            desc: Obtain mastery VII in the Sandcastle Building activity
+          title3:
+            name: Sandcastle Architect
+            desc: Obtain mastery X in the Sandcastle Building activity
+        brig:
+          title1:
+            name: Brig Carver
+            desc: Obtain mastery IV in the Brig repair activity
+          title2:
+            name: Brig Molder
+            desc: Obtain mastery VII in the Brig repair activity
+          title3:
+            name: Brig Architect
+            desc: Obtain mastery X in the Brig repair activity
+        hull:
+          title1:
+            name: Hull Carver
+            desc: Obtain mastery IV in the Hull repair activity
+          title2:
+            name: Hull Molder
+            desc: Obtain mastery VII in the Hull repair activity
+          title3:
+            name: Hull Architect
+            desc: Obtain mastery X in the Hull repair activity
+        wood:
+          title1:
+            name: Wood Carver
+            desc: Obtain mastery IV in the Wood Carving activity
+          title2:
+            name: Wood Molder
+            desc: Obtain mastery VII in the Wood Carving activity
+          title3:
+            name: Wood Architect
+            desc: Obtain mastery X in the Wood Carving activity
+      recipe:
+        birchPlankScrap:
+          title1:
+            name: Birch Plank Scrap Carver
+            desc: Obtain mastery IV in the Create a Birch Plank (Scrap) recipe
+          title2:
+            name: Birch Plank Scrap Molder
+            desc: Obtain mastery VII in the Create a Birch Plank (Scrap) recipe
+          title3:
+            name: Birch Plank Scrap Architect
+            desc: Obtain mastery X in the Create a Birch Plank (Scrap) recipe
+        birchPlank:
+          title1:
+            name: Birch Plank Carver
+            desc: Obtain mastery IV in the Cut a Birch Plank recipe
+          title2:
+            name: Birch Plank Molder
+            desc: Obtain mastery VII in the Cut a Birch Plank recipe
+          title3:
+            name: Birch Plank Architect
+            desc: Obtain mastery X in the Cut a Birch Plank recipe
+        woodenShield:
+          title1:
+            name: Wooden Shield Carver
+            desc: Obtain mastery IV in the Make a Wooden Shield recipe
+          title2:
+            name: Wooden Shield Molder
+            desc: Obtain mastery VII in the Make a Wooden Shield recipe
+          title3:
+            name: Wooden Shield Architect
+            desc: Obtain mastery X in the Make a Wooden Shield recipe
+        woodenSword:
+          title1:
+            name: Wooden Sword Carver
+            desc: Obtain mastery IV in the Make a Wooden Sword recipe
+          title2:
+            name: Wooden Sword Molder
+            desc: Obtain mastery VII in the Make a Wooden Sword recipe
+          title3:
+            name: Wooden Sword Architect
+            desc: Obtain mastery X in the Make a Wooden Sword recipe
+        pinePlankScrap:
+          title1:
+            name: Pine Plank Scrap Carver
+            desc: Obtain mastery IV in the Create a Pine Plank (Scrap) recipe
+          title2:
+            name: Pine Plank Scrap Molder
+            desc: Obtain mastery VII in the Create a Pine Plank (Scrap) recipe
+          title3:
+            name: Pine Plank Scrap Architect
+            desc: Obtain mastery X in the Create a Pine Plank (Scrap) recipe
+        pinePlank:
+          title1:
+            name: Pine Plank Carver
+            desc: Obtain mastery IV in the Cut a Pine Plank recipe
+          title2:
+            name: Pine Plank Molder
+            desc: Obtain mastery VII in the Cut a Pine Plank recipe
+          title3:
+            name: Pine Plank Architect
+            desc: Obtain mastery X in the Cut a Pine Plank recipe
+        sprucePlankScrap:
+          title1:
+            name: Spruce Plank Scrap Carver
+            desc: Obtain mastery IV in the Create a Spruce Plank (Scrap) recipe
+          title2:
+            name: Spruce Plank Scrap Molder
+            desc: Obtain mastery VII in the Create a Spruce Plank (Scrap) recipe
+          title3:
+            name: Spruce Plank Scrap Architect
+            desc: Obtain mastery X in the Create a Spruce Plank (Scrap) recipe
+        sprucePlank:
+          title1:
+            name: Spruce Plank Carver
+            desc: Obtain mastery IV in the Cut a Spruce Plank recipe
+          title2:
+            name: Spruce Plank Molder
+            desc: Obtain mastery VII in the Cut a Spruce Plank recipe
+          title3:
+            name: Spruce Plank Architect
+            desc: Obtain mastery X in the Cut a Spruce Plank recipe
+        oakPlankScrap:
+          title1:
+            name: Oak Plank Scrap Carver
+            desc: Obtain mastery IV in the Create an Oak Plank (Scrap) recipe
+          title2:
+            name: Oak Plank Scrap Molder
+            desc: Obtain mastery VII in the Create an Oak Plank (Scrap) recipe
+          title3:
+            name: Oak Plank Scrap Architect
+            desc: Obtain mastery X in the Create an Oak Plank (Scrap) recipe
+        oakPlank:
+          title1:
+            name: Oak Plank Carver
+            desc: Obtain mastery IV in the Cut an Oak Plank recipe
+          title2:
+            name: Oak Plank Molder
+            desc: Obtain mastery VII in the Cut an Oak Plank recipe
+          title3:
+            name: Oak Plank Architect
+            desc: Obtain mastery X in the Cut an Oak Plank recipe
+        maplePlankScrap:
+          title1:
+            name: Maple Plank Scrap Carver
+            desc: Obtain mastery IV in the Create a Maple Plank (Scrap) recipe
+          title2:
+            name: Maple Plank Scrap Molder
+            desc: Obtain mastery VII in the Create a Maple Plank (Scrap) recipe
+          title3:
+            name: Maple Plank Scrap Architect
+            desc: Obtain mastery X in the Create a Maple Plank (Scrap) recipe
+        maplePlank:
+          title1:
+            name: Maple Plank Carver
+            desc: Obtain mastery IV in the Cut a Maple Plank recipe
+          title2:
+            name: Maple Plank Molder
+            desc: Obtain mastery VII in the Cut a Maple Plank recipe
+          title3:
+            name: Maple Plank Architect
+            desc: Obtain mastery X in the Cut a Maple Plank recipe
+        teakPlankScrap:
+          title1:
+            name: Teak Plank Scrap Carver
+            desc: Obtain mastery IV in the Create a Teak Plank (Scrap) recipe
+          title2:
+            name: Teak Plank Scrap Molder
+            desc: Obtain mastery VII in the Create a Teak Plank (Scrap) recipe
+          title3:
+            name: Teak Plank Scrap Architect
+            desc: Obtain mastery X in the Create a Teak Plank (Scrap) recipe
+        willowPlankScrap:
+          title1:
+            name: Willow Plank Scrap Carver
+            desc: Obtain mastery IV in the Create a Willow Plank (Scrap) recipe
+          title2:
+            name: Willow Plank Scrap Molder
+            desc: Obtain mastery VII in the Create a Willow Plank (Scrap) recipe
+          title3:
+            name: Willow Plank Scrap Architect
+            desc: Obtain mastery X in the Create a Willow Plank (Scrap) recipe
+        teakPlank:
+          title1:
+            name: Teak Plank Carver
+            desc: Obtain mastery IV in the Cut a Teak Plank recipe
+          title2:
+            name: Teak Plank Molder
+            desc: Obtain mastery VII in the Cut a Teak Plank recipe
+          title3:
+            name: Teak Plank Architect
+            desc: Obtain mastery X in the Cut a Teak Plank recipe
+        willowPlank:
+          title1:
+            name: Willow Plank Carver
+            desc: Obtain mastery IV in the Cut a Willow Plank recipe
+          title2:
+            name: Willow Plank Molder
+            desc: Obtain mastery VII in the Cut a Willow Plank recipe
+          title3:
+            name: Willow Plank Architect
+            desc: Obtain mastery X in the Cut a Willow Plank recipe
+        coralPlank:
+          title1:
+            name: Coral Plank Carver
+            desc: Obtain mastery IV in the Cut a Coral Plank recipe
+          title2:
+            name: Coral Plank Molder
+            desc: Obtain mastery VII in the Cut a Coral Plank recipe
+          title3:
+            name: Coral Plank Architect
+            desc: Obtain mastery X in the Cut a Coral Plank recipe
+        mangrovePlank:
+          title1:
+            name: Mangrove Plank Carver
+            desc: Obtain mastery IV in the Cut a Mangrove Plank recipe
+          title2:
+            name: Mangrove Plank Molder
+            desc: Obtain mastery VII in the Cut a Mangrove Plank recipe
+          title3:
+            name: Mangrove Plank Architect
+            desc: Obtain mastery X in the Cut a Mangrove Plank recipe
+    cooking:
+      activity:
+        volunteering:
+          title1:
+            name: Volunteering Preparer
+            desc: Obtain mastery IV in the Soup Kitchen Volunteering activity
+          title2:
+            name: Volunteering Baker
+            desc: Obtain mastery VII in the Soup Kitchen Volunteering activity
+          title3:
+            name: Volunteering Gourmet
+            desc: Obtain mastery X in the Soup Kitchen Volunteering activity
+        vegetable:
+          title1:
+            name: Vegetable Preparer
+            desc: Obtain mastery IV in the Vegetable Chopping activity
+          title2:
+            name: Vegetable Baker
+            desc: Obtain mastery VII in the Vegetable Chopping activity
+          title3:
+            name: Vegetable Gourmet
+            desc: Obtain mastery X in the Vegetable Chopping activity
+        stomping:
+          title1:
+            name: Stomping Preparer
+            desc: Obtain mastery IV in the Wine Grape Stomping activity
+          title2:
+            name: Stomping Baker
+            desc: Obtain mastery VII in the Wine Grape Stomping activity
+          title3:
+            name: Stomping Gourmet
+            desc: Obtain mastery X in the Wine Grape Stomping activity
+      recipe:
+        perch:
+          title1:
+            name: Perch Preparer
+            desc: Obtain mastery IV in the Fry a Perch recipe
+          title2:
+            name: Perch Baker
+            desc: Obtain mastery VII in the Fry a Perch recipe
+          title3:
+            name: Perch Gourmet
+            desc: Obtain mastery X in the Fry a Perch recipe
+        shrimp:
+          title1:
+            name: Shrimp Preparer
+            desc: Obtain mastery IV in the Fry a Shrimp recipe
+          title2:
+            name: Shrimp Baker
+            desc: Obtain mastery VII in the Fry a Shrimp recipe
+          title3:
+            name: Shrimp Gourmet
+            desc: Obtain mastery X in the Fry a Shrimp recipe
+        nettleTea:
+          title1:
+            name: Nettle Tea Preparer
+            desc: Obtain mastery IV in the Brew Nettle Tea recipe
+          title2:
+            name: Nettle Tea Baker
+            desc: Obtain mastery VII in the Brew Nettle Tea recipe
+          title3:
+            name: Nettle Tea Gourmet
+            desc: Obtain mastery X in the Brew Nettle Tea recipe
+        carp:
+          title1:
+            name: Carp Preparer
+            desc: Obtain mastery IV in the Fry a Carp recipe
+          title2:
+            name: Carp Baker
+            desc: Obtain mastery VII in the Fry a Carp recipe
+          title3:
+            name: Carp Gourmet
+            desc: Obtain mastery X in the Fry a Carp recipe
+        bread:
+          title1:
+            name: Bread Preparer
+            desc: Obtain mastery IV in the Bake Bread recipe
+          title2:
+            name: Bread Baker
+            desc: Obtain mastery VII in the Bake Bread recipe
+          title3:
+            name: Bread Gourmet
+            desc: Obtain mastery X in the Bake Bread recipe
+        pike:
+          title1:
+            name: Pike Preparer
+            desc: Obtain mastery IV in the Fry a Pike recipe
+          title2:
+            name: Pike Baker
+            desc: Obtain mastery VII in the Fry a Pike recipe
+          title3:
+            name: Pike Gourmet
+            desc: Obtain mastery X in the Fry a Pike recipe
+        porridge:
+          title1:
+            name: Porridge Preparer
+            desc: Obtain mastery IV in the Make Porridge recipe
+          title2:
+            name: Porridge Baker
+            desc: Obtain mastery VII in the Make Porridge recipe
+          title3:
+            name: Porridge Gourmet
+            desc: Obtain mastery X in the Make Porridge recipe
+        pancakes:
+          title1:
+            name: Pancakes Preparer
+            desc: Obtain mastery IV in the Make Pancakes recipe
+          title2:
+            name: Pancakes Baker
+            desc: Obtain mastery VII in the Make Pancakes recipe
+          title3:
+            name: Pancakes Gourmet
+            desc: Obtain mastery X in the Make Pancakes recipe
+        trout:
+          title1:
+            name: Trout Preparer
+            desc: Obtain mastery IV in the Fry a Trout recipe
+          title2:
+            name: Trout Baker
+            desc: Obtain mastery VII in the Fry a Trout recipe
+          title3:
+            name: Trout Gourmet
+            desc: Obtain mastery X in the Fry a Trout recipe
+        chocolateMilk:
+          title1:
+            name: Chocolate Milk Preparer
+            desc: Obtain mastery IV in the Mix Chocolate Milk recipe
+          title2:
+            name: Chocolate Milk Baker
+            desc: Obtain mastery VII in the Mix Chocolate Milk recipe
+          title3:
+            name: Chocolate Milk Gourmet
+            desc: Obtain mastery X in the Mix Chocolate Milk recipe
+        bagel:
+          title1:
+            name: Bagel Preparer
+            desc: Obtain mastery IV in the Bake a Bagel recipe
+          title2:
+            name: Bagel Baker
+            desc: Obtain mastery VII in the Bake a Bagel recipe
+          title3:
+            name: Bagel Gourmet
+            desc: Obtain mastery X in the Bake a Bagel recipe
+        pickles:
+          title1:
+            name: Pickles Preparer
+            desc: Obtain mastery IV in the Make Pickles recipe
+          title2:
+            name: Pickles Baker
+            desc: Obtain mastery VII in the Make Pickles recipe
+          title3:
+            name: Pickles Gourmet
+            desc: Obtain mastery X in the Make Pickles recipe
+        salmon:
+          title1:
+            name: Salmon Preparer
+            desc: Obtain mastery IV in the Fry a Salmon recipe
+          title2:
+            name: Salmon Baker
+            desc: Obtain mastery VII in the Fry a Salmon recipe
+          title3:
+            name: Salmon Gourmet
+            desc: Obtain mastery X in the Fry a Salmon recipe
+        jellyfish:
+          title1:
+            name: Jellyfish Preparer
+            desc: Obtain mastery IV in the Fry a Jellyfish recipe
+          title2:
+            name: Jellyfish Baker
+            desc: Obtain mastery VII in the Fry a Jellyfish recipe
+          title3:
+            name: Jellyfish Gourmet
+            desc: Obtain mastery X in the Fry a Jellyfish recipe
+        troutSoup:
+          title1:
+            name: Trout Soup Preparer
+            desc: Obtain mastery IV in the Make Trout Soup recipe
+          title2:
+            name: Trout Soup Baker
+            desc: Obtain mastery VII in the Make Trout Soup recipe
+          title3:
+            name: Trout Soup Gourmet
+            desc: Obtain mastery X in the Make Trout Soup recipe
+        mushroomCurry:
+          title1:
+            name: Mushroom Curry Preparer
+            desc: Obtain mastery IV in the Make Mushroom Curry recipe
+          title2:
+            name: Mushroom Curry Baker
+            desc: Obtain mastery VII in the Make Mushroom Curry recipe
+          title3:
+            name: Mushroom Curry Gourmet
+            desc: Obtain mastery X in the Make Mushroom Curry recipe
+        lobster:
+          title1:
+            name: Lobster Preparer
+            desc: Obtain mastery IV in the Fry a Lobster recipe
+          title2:
+            name: Lobster Baker
+            desc: Obtain mastery VII in the Fry a Lobster recipe
+          title3:
+            name: Lobster Gourmet
+            desc: Obtain mastery X in the Fry a Lobster recipe
+        hardenedKelp:
+          title1:
+            name: Hardened Kelp Preparer
+            desc: Obtain mastery IV in the Harden Kelp recipe
+          title2:
+            name: Hardened Kelp Baker
+            desc: Obtain mastery VII in the Harden Kelp recipe
+          title3:
+            name: Hardened Kelp Gourmet
+            desc: Obtain mastery X in the Harden Kelp recipe
+        kelpRolls:
+          title1:
+            name: Kelp Rolls Preparer
+            desc: Obtain mastery IV in the Prepare a Kelp Roll recipe
+          title2:
+            name: Kelp Rolls Baker
+            desc: Obtain mastery VII in the Prepare a Kelp Roll recipe
+          title3:
+            name: Kelp Rolls Gourmet
+            desc: Obtain mastery X in the Prepare a Kelp Roll recipe
+        jellySandwich:
+          title1:
+            name: Jelly Sandwich Preparer
+            desc: Obtain mastery IV in the Make a Jelly Sandwich recipe
+          title2:
+            name: Jelly Sandwich Baker
+            desc: Obtain mastery VII in the Make a Jelly Sandwich recipe
+          title3:
+            name: Jelly Sandwich Gourmet
+            desc: Obtain mastery X in the Make a Jelly Sandwich recipe
+        dynamite:
+          title1:
+            name: Dynamite Preparer
+            desc: Obtain mastery IV in the Assemble Dynamite recipe
+          title2:
+            name: Dynamite Baker
+            desc: Obtain mastery VII in the Assemble Dynamite recipe
+          title3:
+            name: Dynamite Gourmet
+            desc: Obtain mastery X in the Assemble Dynamite recipe
+        swordfish:
+          title1:
+            name: Swordfish Preparer
+            desc: Obtain mastery IV in the Fry a Swordfish recipe
+          title2:
+            name: Swordfish Baker
+            desc: Obtain mastery VII in the Fry a Swordfish recipe
+          title3:
+            name: Swordfish Gourmet
+            desc: Obtain mastery X in the Fry a Swordfish recipe
+        saltrum:
+          title1:
+            name: Saltrum Preparer
+            desc: Obtain mastery IV in the Brew Saltrum recipe
+          title2:
+            name: Saltrum Baker
+            desc: Obtain mastery VII in the Brew Saltrum recipe
+          title3:
+            name: Saltrum Gourmet
+            desc: Obtain mastery X in the Brew Saltrum recipe
+        stingray:
+          title1:
+            name: Stingray Preparer
+            desc: Obtain mastery IV in the Fry a Stingray recipe
+          title2:
+            name: Stingray Baker
+            desc: Obtain mastery VII in the Fry a Stingray recipe
+          title3:
+            name: Stingray Gourmet
+            desc: Obtain mastery X in the Fry a Stingray recipe
+        squid:
+          title1:
+            name: Squid Preparer
+            desc: Obtain mastery IV in the Fry a Squid recipe
+          title2:
+            name: Squid Baker
+            desc: Obtain mastery VII in the Fry a Squid recipe
+          title3:
+            name: Squid Gourmet
+            desc: Obtain mastery X in the Fry a Squid recipe
+        sweetCarrotPie:
+          title1:
+            name: Sweet Carrot Pie Preparer
+            desc: Obtain mastery IV in the Make a Sweet Carrot Pie recipe
+          title2:
+            name: Sweet Carrot Pie Baker
+            desc: Obtain mastery VII in the Make a Sweet Carrot Pie recipe
+          title3:
+            name: Sweet Carrot Pie Gourmet
+            desc: Obtain mastery X in the Make a Sweet Carrot Pie recipe
+        salmonPie:
+          title1:
+            name: Salmon Pie Preparer
+            desc: Obtain mastery IV in the Bake Salmon Pie recipe
+          title2:
+            name: Salmon Pie Baker
+            desc: Obtain mastery VII in the Bake Salmon Pie recipe
+          title3:
+            name: Salmon Pie Gourmet
+            desc: Obtain mastery X in the Bake Salmon Pie recipe
+        friedFishSandwich:
+          title1:
+            name: Fried Fish Sandwich Preparer
+            desc: Obtain mastery IV in the Make a Fried Fish Sandwich recipe
+          title2:
+            name: Fried Fish Sandwich Baker
+            desc: Obtain mastery VII in the Make a Fried Fish Sandwich recipe
+          title3:
+            name: Fried Fish Sandwich Gourmet
+            desc: Obtain mastery X in the Make a Fried Fish Sandwich recipe
+        underwaterSalad:
+          title1:
+            name: Underwater Salad Preparer
+            desc: Obtain mastery IV in the Prepare an Underwater Salad recipe
+          title2:
+            name: Underwater Salad Baker
+            desc: Obtain mastery VII in the Prepare an Underwater Salad recipe
+          title3:
+            name: Underwater Salad Gourmet
+            desc: Obtain mastery X in the Prepare an Underwater Salad recipe
+        shark:
+          title1:
+            name: Shark Preparer
+            desc: Obtain mastery IV in the Fry a Shark recipe
+          title2:
+            name: Shark Baker
+            desc: Obtain mastery VII in the Fry a Shark recipe
+          title3:
+            name: Shark Gourmet
+            desc: Obtain mastery X in the Fry a Shark recipe
+        anglerfish:
+          title1:
+            name: Anglerfish Preparer
+            desc: Obtain mastery IV in the Fry an Anglerfish recipe
+          title2:
+            name: Anglerfish Baker
+            desc: Obtain mastery VII in the Fry an Anglerfish recipe
+          title3:
+            name: Anglerfish Gourmet
+            desc: Obtain mastery X in the Fry an Anglerfish recipe
+    crafting:
+      activity:
+        loifs:
+          title1:
+            name: Loif's Assembler
+            desc: Obtain mastery IV in the Apprentice For Loif activity
+          title2:
+            name: Loif's Fabricator
+            desc: Obtain mastery VII in the Apprentice For Loif activity
+          title3:
+            name: Loif's Expert
+            desc: Obtain mastery X in the Apprentice For Loif activity
+        ice:
+          title1:
+            name: Ice Assembler
+            desc: Obtain mastery IV in the Ice Sculpting activity
+          title2:
+            name: Ice Fabricator
+            desc: Obtain mastery VII in the Ice Sculpting activity
+          title3:
+            name: Ice Expert
+            desc: Obtain mastery X in the Ice Sculpting activity
+        tinkering:
+          title1:
+            name: Tinkering Assembler
+            desc: Obtain mastery IV in the Tinkering activity
+          title2:
+            name: Tinkering Fabricator
+            desc: Obtain mastery VII in the Tinkering activity
+          title3:
+            name: Tinkering Expert
+            desc: Obtain mastery X in the Tinkering activity
+        basketWeaving:
+          title1:
+            name: Basket Weaving Assembler
+            desc: Obtain mastery IV in the Underwater Basket Weaving activity
+          title2:
+            name: Basket Weaving Fabricator
+            desc: Obtain mastery VII in the Underwater Basket Weaving activity
+          title3:
+            name: Basket Weaving Expert
+            desc: Obtain mastery X in the Underwater Basket Weaving activity
+      recipe:
+        copperHatchet:
+          title1:
+            name: Copper Hatchet Assembler
+            desc: Obtain mastery IV in the Craft a Copper Hatchet recipe
+          title2:
+            name: Copper Hatchet Fabricator
+            desc: Obtain mastery VII in the Craft a Copper Hatchet recipe
+          title3:
+            name: Copper Hatchet Expert
+            desc: Obtain mastery X in the Craft a Copper Hatchet recipe
+        copperPickaxe:
+          title1:
+            name: Copper Pickaxe Assembler
+            desc: Obtain mastery IV in the Craft a Copper Pickaxe recipe
+          title2:
+            name: Copper Pickaxe Fabricator
+            desc: Obtain mastery VII in the Craft a Copper Pickaxe recipe
+          title3:
+            name: Copper Pickaxe Expert
+            desc: Obtain mastery X in the Craft a Copper Pickaxe recipe
+        basicHatchet:
+          title1:
+            name: Basic Hatchet Assembler
+            desc: Obtain mastery IV in the Make a Basic Hatchet recipe
+          title2:
+            name: Basic Hatchet Fabricator
+            desc: Obtain mastery VII in the Make a Basic Hatchet recipe
+          title3:
+            name: Basic Hatchet Expert
+            desc: Obtain mastery X in the Make a Basic Hatchet recipe
+        basicPickaxe:
+          title1:
+            name: Basic Pickaxe Assembler
+            desc: Obtain mastery IV in the Make a Basic Pickaxe recipe
+          title2:
+            name: Basic Pickaxe Fabricator
+            desc: Obtain mastery VII in the Make a Basic Pickaxe recipe
+          title3:
+            name: Basic Pickaxe Expert
+            desc: Obtain mastery X in the Make a Basic Pickaxe recipe
+        basicSickle:
+          title1:
+            name: Basic Sickle Assembler
+            desc: Obtain mastery IV in the Make a Basic Sickle recipe
+          title2:
+            name: Basic Sickle Fabricator
+            desc: Obtain mastery VII in the Make a Basic Sickle recipe
+          title3:
+            name: Basic Sickle Expert
+            desc: Obtain mastery X in the Make a Basic Sickle recipe
+        copperSickle:
+          title1:
+            name: Copper Sickle Assembler
+            desc: Obtain mastery IV in the Make a Copper Sickle recipe
+          title2:
+            name: Copper Sickle Fabricator
+            desc: Obtain mastery VII in the Make a Copper Sickle recipe
+          title3:
+            name: Copper Sickle Expert
+            desc: Obtain mastery X in the Make a Copper Sickle recipe
+        rope:
+          title1:
+            name: Rope Assembler
+            desc: Obtain mastery IV in the Spin Flax into Rope recipe
+          title2:
+            name: Rope Fabricator
+            desc: Obtain mastery VII in the Spin Flax into Rope recipe
+          title3:
+            name: Rope Expert
+            desc: Obtain mastery X in the Spin Flax into Rope recipe
+        basicFishingNet:
+          title1:
+            name: Basic Fishing Net Assembler
+            desc: Obtain mastery IV in the Weave a Basic Fishing Net recipe
+          title2:
+            name: Basic Fishing Net Fabricator
+            desc: Obtain mastery VII in the Weave a Basic Fishing Net recipe
+          title3:
+            name: Basic Fishing Net Expert
+            desc: Obtain mastery X in the Weave a Basic Fishing Net recipe
+        basicFishingRod:
+          title1:
+            name: Basic Fishing Rod Assembler
+            desc: Obtain mastery IV in the Craft a Basic Fishing Rod recipe
+          title2:
+            name: Basic Fishing Rod Fabricator
+            desc: Obtain mastery VII in the Craft a Basic Fishing Rod recipe
+          title3:
+            name: Basic Fishing Rod Expert
+            desc: Obtain mastery X in the Craft a Basic Fishing Rod recipe
+        bagOfRocks:
+          title1:
+            name: Bag of Rocks Assembler
+            desc: Obtain mastery IV in the Craft a Bag of Rocks recipe
+          title2:
+            name: Bag of Rocks Fabricator
+            desc: Obtain mastery VII in the Craft a Bag of Rocks recipe
+          title3:
+            name: Bag of Rocks Expert
+            desc: Obtain mastery X in the Craft a Bag of Rocks recipe
+        bronzeHatchet:
+          title1:
+            name: Bronze Hatchet Assembler
+            desc: Obtain mastery IV in the Craft a Bronze Hatchet recipe
+          title2:
+            name: Bronze Hatchet Fabricator
+            desc: Obtain mastery VII in the Craft a Bronze Hatchet recipe
+          title3:
+            name: Bronze Hatchet Expert
+            desc: Obtain mastery X in the Craft a Bronze Hatchet recipe
+        bronzePickaxe:
+          title1:
+            name: Bronze Pickaxe Assembler
+            desc: Obtain mastery IV in the Craft a Bronze Pickaxe recipe
+          title2:
+            name: Bronze Pickaxe Fabricator
+            desc: Obtain mastery VII in the Craft a Bronze Pickaxe recipe
+          title3:
+            name: Bronze Pickaxe Expert
+            desc: Obtain mastery X in the Craft a Bronze Pickaxe recipe
+        pineFishingRod:
+          title1:
+            name: Pine Fishing Rod Assembler
+            desc: Obtain mastery IV in the Craft a Pine Fishing Rod recipe
+          title2:
+            name: Pine Fishing Rod Fabricator
+            desc: Obtain mastery VII in the Craft a Pine Fishing Rod recipe
+          title3:
+            name: Pine Fishing Rod Expert
+            desc: Obtain mastery X in the Craft a Pine Fishing Rod recipe
+        largeFishingNet:
+          title1:
+            name: Large Fishing Net Assembler
+            desc: Obtain mastery IV in the Weave a Large Fishing Net recipe
+          title2:
+            name: Large Fishing Net Fabricator
+            desc: Obtain mastery VII in the Weave a Large Fishing Net recipe
+          title3:
+            name: Large Fishing Net Expert
+            desc: Obtain mastery X in the Weave a Large Fishing Net recipe
+        ironHatchet:
+          title1:
+            name: Iron Hatchet Assembler
+            desc: Obtain mastery IV in the Craft an Iron Hatchet recipe
+          title2:
+            name: Iron Hatchet Fabricator
+            desc: Obtain mastery VII in the Craft an Iron Hatchet recipe
+          title3:
+            name: Iron Hatchet Expert
+            desc: Obtain mastery X in the Craft an Iron Hatchet recipe
+        ironPickaxe:
+          title1:
+            name: Iron Pickaxe Assembler
+            desc: Obtain mastery IV in the Craft an Iron Pickaxe recipe
+          title2:
+            name: Iron Pickaxe Fabricator
+            desc: Obtain mastery VII in the Craft an Iron Pickaxe recipe
+          title3:
+            name: Iron Pickaxe Expert
+            desc: Obtain mastery X in the Craft an Iron Pickaxe recipe
+        ironSickle:
+          title1:
+            name: Iron Sickle Assembler
+            desc: Obtain mastery IV in the Craft an Iron Sickle recipe
+          title2:
+            name: Iron Sickle Fabricator
+            desc: Obtain mastery VII in the Craft an Iron Sickle recipe
+          title3:
+            name: Iron Sickle Expert
+            desc: Obtain mastery X in the Craft an Iron Sickle recipe
+        fishingSpear:
+          title1:
+            name: Fishing Spear Assembler
+            desc: Obtain mastery IV in the Craft a Fishing Spear recipe
+          title2:
+            name: Fishing Spear Fabricator
+            desc: Obtain mastery VII in the Craft a Fishing Spear recipe
+          title3:
+            name: Fishing Spear Expert
+            desc: Obtain mastery X in the Craft a Fishing Spear recipe
+        kelpDivingMask:
+          title1:
+            name: Kelp Diving Mask Assembler
+            desc: Obtain mastery IV in the Craft a Kelp Diving Mask recipe
+          title2:
+            name: Kelp Diving Mask Fabricator
+            desc: Obtain mastery VII in the Craft a Kelp Diving Mask recipe
+          title3:
+            name: Kelp Diving Mask Expert
+            desc: Obtain mastery X in the Craft a Kelp Diving Mask recipe
+        kelpDivingPants:
+          title1:
+            name: Kelp Diving Pants Assembler
+            desc: Obtain mastery IV in the Craft a Kelp Diving Pants recipe
+          title2:
+            name: Kelp Diving Pants Fabricator
+            desc: Obtain mastery VII in the Craft a Kelp Diving Pants recipe
+          title3:
+            name: Kelp Diving Pants Expert
+            desc: Obtain mastery X in the Craft a Kelp Diving Pants recipe
+        kelpDivingShirt:
+          title1:
+            name: Kelp Diving Shirt Assembler
+            desc: Obtain mastery IV in the Craft a Kelp Diving Shirt recipe
+          title2:
+            name: Kelp Diving Shirt Fabricator
+            desc: Obtain mastery VII in the Craft a Kelp Diving Shirt recipe
+          title3:
+            name: Kelp Diving Shirt Expert
+            desc: Obtain mastery X in the Craft a Kelp Diving Shirt recipe
+        steelHatchet:
+          title1:
+            name: Steel Hatchet Assembler
+            desc: Obtain mastery IV in the Craft a Steel Hatchet recipe
+          title2:
+            name: Steel Hatchet Fabricator
+            desc: Obtain mastery VII in the Craft a Steel Hatchet recipe
+          title3:
+            name: Steel Hatchet Expert
+            desc: Obtain mastery X in the Craft a Steel Hatchet recipe
+        steelPickaxe:
+          title1:
+            name: Steel Pickaxe Assembler
+            desc: Obtain mastery IV in the Craft a Steel Pickaxe recipe
+          title2:
+            name: Steel Pickaxe Fabricator
+            desc: Obtain mastery VII in the Craft a Steel Pickaxe recipe
+          title3:
+            name: Steel Pickaxe Expert
+            desc: Obtain mastery X in the Craft a Steel Pickaxe recipe
+        steelSickle:
+          title1:
+            name: Steel Sickle Assembler
+            desc: Obtain mastery IV in the Craft a Steel Sickle recipe
+          title2:
+            name: Steel Sickle Fabricator
+            desc: Obtain mastery VII in the Craft a Steel Sickle recipe
+          title3:
+            name: Steel Sickle Expert
+            desc: Obtain mastery X in the Craft a Steel Sickle recipe
+        oakFishingRod:
+          title1:
+            name: Oak Fishing Rod Assembler
+            desc: Obtain mastery IV in the Craft an Oak Fishing Rod recipe
+          title2:
+            name: Oak Fishing Rod Fabricator
+            desc: Obtain mastery VII in the Craft an Oak Fishing Rod recipe
+          title3:
+            name: Oak Fishing Rod Expert
+            desc: Obtain mastery X in the Craft an Oak Fishing Rod recipe
+        lobsterPot:
+          title1:
+            name: Lobster Pot Assembler
+            desc: Obtain mastery IV in the Craft a Lobster Pot recipe
+          title2:
+            name: Lobster Pot Fabricator
+            desc: Obtain mastery VII in the Craft a Lobster Pot recipe
+          title3:
+            name: Lobster Pot Expert
+            desc: Obtain mastery X in the Craft a Lobster Pot recipe
+        reinforcedBellows:
+          title1:
+            name: Reinforced Bellows Assembler
+            desc: Obtain mastery IV in the Craft Reinforced Bellows recipe
+          title2:
+            name: Reinforced Bellows Fabricator
+            desc: Obtain mastery VII in the Craft Reinforced Bellows recipe
+          title3:
+            name: Reinforced Bellows Expert
+            desc: Obtain mastery X in the Craft Reinforced Bellows recipe
+        kelpRope:
+          title1:
+            name: Kelp Rope Assembler
+            desc: Obtain mastery IV in the Craft Kelp Rope recipe
+          title2:
+            name: Kelp Rope Fabricator
+            desc: Obtain mastery VII in the Craft Kelp Rope recipe
+          title3:
+            name: Kelp Rope Expert
+            desc: Obtain mastery X in the Craft Kelp Rope recipe
+        jellyfishingNet:
+          title1:
+            name: Jellyfishing Net Assembler
+            desc: Obtain mastery IV in the Craft a Jellyfishing Net recipe
+          title2:
+            name: Jellyfishing Net Fabricator
+            desc: Obtain mastery VII in the Craft a Jellyfishing Net recipe
+          title3:
+            name: Jellyfishing Net Expert
+            desc: Obtain mastery X in the Craft a Jellyfishing Net recipe
+        tarsiliumHatchet:
+          title1:
+            name: Tarsilium Hatchet Assembler
+            desc: Obtain mastery IV in the Craft a Tarsilium Hatchet recipe
+          title2:
+            name: Tarsilium Hatchet Fabricator
+            desc: Obtain mastery VII in the Craft a Tarsilium Hatchet recipe
+          title3:
+            name: Tarsilium Hatchet Expert
+            desc: Obtain mastery X in the Craft a Tarsilium Hatchet recipe
+        tarsiliumPickaxe:
+          title1:
+            name: Tarsilium Pickaxe Assembler
+            desc: Obtain mastery IV in the Craft a Tarsilium Pickaxe recipe
+          title2:
+            name: Tarsilium Pickaxe Fabricator
+            desc: Obtain mastery VII in the Craft a Tarsilium Pickaxe recipe
+          title3:
+            name: Tarsilium Pickaxe Expert
+            desc: Obtain mastery X in the Craft a Tarsilium Pickaxe recipe
+        willowFishingRod:
+          title1:
+            name: Willow Fishing Rod Assembler
+            desc: Obtain mastery IV in the Craft a Willow Fishing Rod recipe
+          title2:
+            name: Willow Fishing Rod Fabricator
+            desc: Obtain mastery VII in the Craft a Willow Fishing Rod recipe
+          title3:
+            name: Willow Fishing Rod Expert
+            desc: Obtain mastery X in the Craft a Willow Fishing Rod recipe
+        hydrilium:
+          title1:
+            name: Hydrilium Assembler
+            desc: Obtain mastery IV in the Craft Hydrilium recipe
+          title2:
+            name: Hydrilium Fabricator
+            desc: Obtain mastery VII in the Craft Hydrilium recipe
+          title3:
+            name: Hydrilium Expert
+            desc: Obtain mastery X in the Craft Hydrilium recipe
+        coralFishingSpear:
+          title1:
+            name: Coral Fishing Spear Assembler
+            desc: Obtain mastery IV in the Craft a Coral Fishing Spear recipe
+          title2:
+            name: Coral Fishing Spear Fabricator
+            desc: Obtain mastery VII in the Craft a Coral Fishing Spear recipe
+          title3:
+            name: Coral Fishing Spear Expert
+            desc: Obtain mastery X in the Craft a Coral Fishing Spear recipe
+        hydriliumDivingHelm:
+          title1:
+            name: Hydrilium Diving Helm Assembler
+            desc: Obtain mastery IV in the Craft a Hydrilium Diving Helm recipe
+          title2:
+            name: Hydrilium Diving Helm Fabricator
+            desc: Obtain mastery VII in the Craft a Hydrilium Diving Helm recipe
+          title3:
+            name: Hydrilium Diving Helm Expert
+            desc: Obtain mastery X in the Craft a Hydrilium Diving Helm recipe
+        hydriliumDivingLeggings:
+          title1:
+            name: Hydrilium Diving Leggings Assembler
+            desc: Obtain mastery IV in the Craft a Hydrilium Diving Leggings recipe
+          title2:
+            name: Hydrilium Diving Leggings Fabricator
+            desc: Obtain mastery VII in the Craft a Hydrilium Diving Leggings recipe
+          title3:
+            name: Hydrilium Diving Leggings Expert
+            desc: Obtain mastery X in the Craft a Hydrilium Diving Leggings recipe
+        hydriliumDivingTorso:
+          title1:
+            name: Hydrilium Diving Torso Assembler
+            desc: Obtain mastery IV in the Craft a Hydrilium Diving Torso recipe
+          title2:
+            name: Hydrilium Diving Torso Fabricator
+            desc: Obtain mastery VII in the Craft a Hydrilium Diving Torso recipe
+          title3:
+            name: Hydrilium Diving Torso Expert
+            desc: Obtain mastery X in the Craft a Hydrilium Diving Torso recipe
+        hydriliumHatchet:
+          title1:
+            name: Hydrilium Hatchet Assembler
+            desc: Obtain mastery IV in the Craft a Hydrilium Hatchet recipe
+          title2:
+            name: Hydrilium Hatchet Fabricator
+            desc: Obtain mastery VII in the Craft a Hydrilium Hatchet recipe
+          title3:
+            name: Hydrilium Hatchet Expert
+            desc: Obtain mastery X in the Craft a Hydrilium Hatchet recipe
+        hydriliumPickaxe:
+          title1:
+            name: Hydrilium Pickaxe Assembler
+            desc: Obtain mastery IV in the Craft a Hydrilium Pickaxe recipe
+          title2:
+            name: Hydrilium Pickaxe Fabricator
+            desc: Obtain mastery VII in the Craft a Hydrilium Pickaxe recipe
+          title3:
+            name: Hydrilium Pickaxe Expert
+            desc: Obtain mastery X in the Craft a Hydrilium Pickaxe recipe
+        hydriliumSickle:
+          title1:
+            name: Hydrilium Sickle Assembler
+            desc: Obtain mastery IV in the Craft a Hydrilium Sickle recipe
+          title2:
+            name: Hydrilium Sickle Fabricator
+            desc: Obtain mastery VII in the Craft a Hydrilium Sickle recipe
+          title3:
+            name: Hydrilium Sickle Expert
+            desc: Obtain mastery X in the Craft a Hydrilium Sickle recipe
+        farganiteHatchet:
+          title1:
+            name: Farganite Hatchet Assembler
+            desc: Obtain mastery IV in the Craft a Farganite Hatchet recipe
+          title2:
+            name: Farganite Hatchet Fabricator
+            desc: Obtain mastery VII in the Craft a Farganite Hatchet recipe
+          title3:
+            name: Farganite Hatchet Expert
+            desc: Obtain mastery X in the Craft a Farganite Hatchet recipe
+        farganitePickaxe:
+          title1:
+            name: Farganite Pickaxe Assembler
+            desc: Obtain mastery IV in the Craft a Farganite Pickaxe recipe
+          title2:
+            name: Farganite Pickaxe Fabricator
+            desc: Obtain mastery VII in the Craft a Farganite Pickaxe recipe
+          title3:
+            name: Farganite Pickaxe Expert
+            desc: Obtain mastery X in the Craft a Farganite Pickaxe recipe
+        hydriliumLogSplitter:
+          title1:
+            name: Hydrilium Log Splitter Assembler
+            desc: Obtain mastery IV in the Craft a Hydrilium Log Splitter recipe
+          title2:
+            name: Hydrilium Log Splitter Fabricator
+            desc: Obtain mastery VII in the Craft a Hydrilium Log Splitter recipe
+          title3:
+            name: Hydrilium Log Splitter Expert
+            desc: Obtain mastery X in the Craft a Hydrilium Log Splitter recipe
+        hydriliumMagnet:
+          title1:
+            name: Hydrilium Magnet Assembler
+            desc: Obtain mastery IV in the Craft a Hydrilium Magnet recipe
+          title2:
+            name: Hydrilium Magnet Fabricator
+            desc: Obtain mastery VII in the Craft a Hydrilium Magnet recipe
+          title3:
+            name: Hydrilium Magnet Expert
+            desc: Obtain mastery X in the Craft a Hydrilium Magnet recipe
+        mangroveBasket:
+          title1:
+            name: Mangrove Basket Assembler
+            desc: Obtain mastery IV in the Craft a Mangrove Basket recipe
+          title2:
+            name: Mangrove Basket Fabricator
+            desc: Obtain mastery VII in the Craft a Mangrove Basket recipe
+          title3:
+            name: Mangrove Basket Expert
+            desc: Obtain mastery X in the Craft a Mangrove Basket recipe
+    fishing:
+      activity:
+        lake:
+          title1:
+            name: Lake Caster
+            desc: Obtain mastery IV in the Lake Fishing activity
+          title2:
+            name: Lake Angler
+            desc: Obtain mastery VII in the Lake Fishing activity
+          title3:
+            name: Lake Trawler
+            desc: Obtain mastery X in the Lake Fishing activity
+        predatorSpear:
+          title1:
+            name: Predator Spear Caster
+            desc: Obtain mastery IV in the Predator Hunting (Spear) activity
+          title2:
+            name: Predator Spear Angler
+            desc: Obtain mastery VII in the Predator Hunting (Spear) activity
+          title3:
+            name: Predator Spear Trawler
+            desc: Obtain mastery X in the Predator Hunting (Spear) activity
+        seaCage:
+          title1:
+            name: Sea Cage Caster
+            desc: Obtain mastery IV in the Sea Fishing (Cage) activity
+          title2:
+            name: Sea Cage Angler
+            desc: Obtain mastery VII in the Sea Fishing (Cage) activity
+          title3:
+            name: Sea Cage Trawler
+            desc: Obtain mastery X in the Sea Fishing (Cage) activity
+        seaNet:
+          title1:
+            name: Sea Net Caster
+            desc: Obtain mastery IV in the Sea Fishing (Net) activity
+          title2:
+            name: Sea Net Angler
+            desc: Obtain mastery VII in the Sea Fishing (Net) activity
+          title3:
+            name: Sea Net Trawler
+            desc: Obtain mastery X in the Sea Fishing (Net) activity
+        seaRod:
+          title1:
+            name: Sea Rod Caster
+            desc: Obtain mastery IV in the Sea Fishing (Rod) activity
+          title2:
+            name: Sea Rod Angler
+            desc: Obtain mastery VII in the Sea Fishing (Rod) activity
+          title3:
+            name: Sea Rod Trawler
+            desc: Obtain mastery X in the Sea Fishing (Rod) activity
+        seaSpear:
+          title1:
+            name: Sea Spear Caster
+            desc: Obtain mastery IV in the Sea Fishing (Spear) activity
+          title2:
+            name: Sea Spear Angler
+            desc: Obtain mastery VII in the Sea Fishing (Spear) activity
+          title3:
+            name: Sea Spear Trawler
+            desc: Obtain mastery X in the Sea Fishing (Spear) activity
+        magnet:
+          title1:
+            name: Magnet Caster
+            desc: Obtain mastery IV in the Magnet Fishing activity
+          title2:
+            name: Magnet Angler
+            desc: Obtain mastery VII in the Magnet Fishing activity
+          title3:
+            name: Magnet Trawler
+            desc: Obtain mastery X in the Magnet Fishing activity
+    foraging:
+      activity:
+        butterfly:
+          title1:
+            name: Butterfly Picker
+            desc: Obtain mastery IV in the Butterfly Catching activity
+          title2:
+            name: Butterfly Scavenger
+            desc: Obtain mastery VII in the Butterfly Catching activity
+          title3:
+            name: Butterfly Tracker
+            desc: Obtain mastery X in the Butterfly Catching activity
+        cave:
+          title1:
+            name: Cave Picker
+            desc: Obtain mastery IV in the Cave Foraging activity
+          title2:
+            name: Cave Scavenger
+            desc: Obtain mastery VII in the Cave Foraging activity
+          title3:
+            name: Cave Tracker
+            desc: Obtain mastery X in the Cave Foraging activity
+        cliff:
+          title1:
+            name: Cliff Picker
+            desc: Obtain mastery IV in the Cliff Foraging activity
+          title2:
+            name: Cliff Scavenger
+            desc: Obtain mastery VII in the Cliff Foraging activity
+          title3:
+            name: Cliff Tracker
+            desc: Obtain mastery X in the Cliff Foraging activity
+        erdwiseDumpster:
+          title1:
+            name: Erdwise Dumpster Picker
+            desc: Obtain mastery IV in the Erdwise Dumpster Diving activity
+          title2:
+            name: Erdwise Dumpster Scavenger
+            desc: Obtain mastery VII in the Erdwise Dumpster Diving activity
+          title3:
+            name: Erdwise Dumpster Tracker
+            desc: Obtain mastery X in the Erdwise Dumpster Diving activity
+        forest:
+          title1:
+            name: Forest Picker
+            desc: Obtain mastery IV in the Forest Foraging activity
+          title2:
+            name: Forest Scavenger
+            desc: Obtain mastery VII in the Forest Foraging activity
+          title3:
+            name: Forest Tracker
+            desc: Obtain mastery X in the Forest Foraging activity
+        glacier:
+          title1:
+            name: Glacier Picker
+            desc: Obtain mastery IV in the Glacier Foraging activity
+          title2:
+            name: Glacier Scavenger
+            desc: Obtain mastery VII in the Glacier Foraging activity
+          title3:
+            name: Glacier Tracker
+            desc: Obtain mastery X in the Glacier Foraging activity
+        kelp:
+          title1:
+            name: Kelp Picker
+            desc: Obtain mastery IV in the Kelp Foraging activity
+          title2:
+            name: Kelp Scavenger
+            desc: Obtain mastery VII in the Kelp Foraging activity
+          title3:
+            name: Kelp Tracker
+            desc: Obtain mastery X in the Kelp Foraging activity
+        litter:
+          title1:
+            name: Litter Picker
+            desc: Obtain mastery IV in the Litter Looting activity
+          title2:
+            name: Litter Scavenger
+            desc: Obtain mastery VII in the Litter Looting activity
+          title3:
+            name: Litter Tracker
+            desc: Obtain mastery X in the Litter Looting activity
+        merfolkFarm:
+          title1:
+            name: Merfolk Farm Picker
+            desc: Obtain mastery IV in the Merfolk Farm Foraging activity
+          title2:
+            name: Merfolk Farm Scavenger
+            desc: Obtain mastery VII in the Merfolk Farm Foraging activity
+          title3:
+            name: Merfolk Farm Tracker
+            desc: Obtain mastery X in the Merfolk Farm Foraging activity
+        plains:
+          title1:
+            name: Plains Picker
+            desc: Obtain mastery IV in the Plains Foraging activity
+          title2:
+            name: Plains Scavenger
+            desc: Obtain mastery VII in the Plains Foraging activity
+          title3:
+            name: Plains Tracker
+            desc: Obtain mastery X in the Plains Foraging activity
+        seashell:
+          title1:
+            name: Seashell Picker
+            desc: Obtain mastery IV in the Seashell Searching activity
+          title2:
+            name: Seashell Scavenger
+            desc: Obtain mastery VII in the Seashell Searching activity
+          title3:
+            name: Seashell Tracker
+            desc: Obtain mastery X in the Seashell Searching activity
+        treasure:
+          title1:
+            name: Treasure Picker
+            desc: Obtain mastery IV in the Treasure Hunt activity
+          title2:
+            name: Treasure Scavenger
+            desc: Obtain mastery VII in the Treasure Hunt activity
+          title3:
+            name: Treasure Tracker
+            desc: Obtain mastery X in the Treasure Hunt activity
+        trellinDumpster:
+          title1:
+            name: Trellin Dumpster Picker
+            desc: Obtain mastery IV in the Trellin Dumpster Diving activity
+          title2:
+            name: Trellin Dumpster Scavenger
+            desc: Obtain mastery VII in the Trellin Dumpster Diving activity
+          title3:
+            name: Trellin Dumpster Tracker
+            desc: Obtain mastery X in the Trellin Dumpster Diving activity
+        wreck:
+          title1:
+            name: Wreck Picker
+            desc: Obtain mastery IV in the Wreck Diving activity
+          title2:
+            name: Wreck Scavenger
+            desc: Obtain mastery VII in the Wreck Diving activity
+          title3:
+            name: Wreck Tracker
+            desc: Obtain mastery X in the Wreck Diving activity
+    mining:
+      activity:
+        cave:
+          title1:
+            name: Cave Prospector
+            desc: Obtain mastery IV in the Cave Diving activity
+          title2:
+            name: Cave Excavator
+            desc: Obtain mastery VII in the Cave Diving activity
+          title3:
+            name: Cave Driller
+            desc: Obtain mastery X in the Cave Diving activity
+        fossil:
+          title1:
+            name: Fossil Prospector
+            desc: Obtain mastery IV in the Fossil Mining activity
+          title2:
+            name: Fossil Excavator
+            desc: Obtain mastery VII in the Fossil Mining activity
+          title3:
+            name: Fossil Driller
+            desc: Obtain mastery X in the Fossil Mining activity
+        panning:
+          title1:
+            name: Panning Prospector
+            desc: Obtain mastery IV in the Gold Panning activity
+          title2:
+            name: Panning Excavator
+            desc: Obtain mastery VII in the Gold Panning activity
+          title3:
+            name: Panning Driller
+            desc: Obtain mastery X in the Gold Panning activity
+        coal:
+          title1:
+            name: Coal Prospector
+            desc: Obtain mastery IV in the Mine Coal activity
+          title2:
+            name: Coal Excavator
+            desc: Obtain mastery VII in the Mine Coal activity
+          title3:
+            name: Coal Driller
+            desc: Obtain mastery X in the Mine Coal activity
+        copperOre:
+          title1:
+            name: Copper Ore Prospector
+            desc: Obtain mastery IV in the Mine Copper Ore activity
+          title2:
+            name: Copper Ore Excavator
+            desc: Obtain mastery VII in the Mine Copper Ore activity
+          title3:
+            name: Copper Ore Driller
+            desc: Obtain mastery X in the Mine Copper Ore activity
+        farganiteOre:
+          title1:
+            name: Farganite Ore Prospector
+            desc: Obtain mastery IV in the Mine Farganite Ore activity
+          title2:
+            name: Farganite Ore Excavator
+            desc: Obtain mastery VII in the Mine Farganite Ore activity
+          title3:
+            name: Farganite Ore Driller
+            desc: Obtain mastery X in the Mine Farganite Ore activity
+        ironOre:
+          title1:
+            name: Iron Ore Prospector
+            desc: Obtain mastery IV in the Mine Iron Ore activity
+          title2:
+            name: Iron Ore Excavator
+            desc: Obtain mastery VII in the Mine Iron Ore activity
+          title3:
+            name: Iron Ore Driller
+            desc: Obtain mastery X in the Mine Iron Ore activity
+        tarsiliumOre:
+          title1:
+            name: Tarsilium Ore Prospector
+            desc: Obtain mastery IV in the Mine Tarsilium Ore activity
+          title2:
+            name: Tarsilium Ore Excavator
+            desc: Obtain mastery VII in the Mine Tarsilium Ore activity
+          title3:
+            name: Tarsilium Ore Driller
+            desc: Obtain mastery X in the Mine Tarsilium Ore activity
+        underwaterTarsiliumOre:
+          title1:
+            name: Underwater Tarsilium Ore Prospector
+            desc: Obtain mastery IV in the Mine Tarsilium Ore (Underwater) activity
+          title2:
+            name: Underwater Tarsilium Ore Excavator
+            desc: Obtain mastery VII in the Mine Tarsilium Ore (Underwater) activity
+          title3:
+            name: Underwater Tarsilium Ore Driller
+            desc: Obtain mastery X in the Mine Tarsilium Ore (Underwater) activity
+        tinOre:
+          title1:
+            name: Tin Ore Prospector
+            desc: Obtain mastery IV in the Mine Tin Ore activity
+          title2:
+            name: Tin Ore Excavator
+            desc: Obtain mastery VII in the Mine Tin Ore activity
+          title3:
+            name: Tin Ore Driller
+            desc: Obtain mastery X in the Mine Tin Ore activity
+        volcanicRock:
+          title1:
+            name: Volcanic Rock Prospector
+            desc: Obtain mastery IV in the Mine Volcanic Rock activity
+          title2:
+            name: Volcanic Rock Excavator
+            desc: Obtain mastery VII in the Mine Volcanic Rock activity
+          title3:
+            name: Volcanic Rock Driller
+            desc: Obtain mastery X in the Mine Volcanic Rock activity
+        spelunking:
+          title1:
+            name: Spelunking Prospector
+            desc: Obtain mastery IV in the Spelunking activity
+          title2:
+            name: Spelunking Excavator
+            desc: Obtain mastery VII in the Spelunking activity
+          title3:
+            name: Spelunking Driller
+            desc: Obtain mastery X in the Spelunking activity
+        stone:
+          title1:
+            name: Stone Prospector
+            desc: Obtain mastery IV in the Stone Quarrying activity
+          title2:
+            name: Stone Excavator
+            desc: Obtain mastery VII in the Stone Quarrying activity
+          title3:
+            name: Stone Driller
+            desc: Obtain mastery X in the Stone Quarrying activity
+        surfaceSalt:
+          title1:
+            name: Surface Salt Prospector
+            desc: Obtain mastery IV in the Surface Salt Mining activity
+          title2:
+            name: Surface Salt Excavator
+            desc: Obtain mastery VII in the Surface Salt Mining activity
+          title3:
+            name: Surface Salt Driller
+            desc: Obtain mastery X in the Surface Salt Mining activity
+    smithing:
+      activity:
+        flame:
+          title1:
+            name: Flame Hammerling
+            desc: Obtain mastery IV in the Flame Stoking activity
+          title2:
+            name: Flame Smelter
+            desc: Obtain mastery VII in the Flame Stoking activity
+          title3:
+            name: Flame Emberhand
+            desc: Obtain mastery X in the Flame Stoking activity
+        horseshoe:
+          title1:
+            name: Horseshoe Hammerling
+            desc: Obtain mastery IV in the Horseshoe Making activity
+          title2:
+            name: Horseshoe Smelter
+            desc: Obtain mastery VII in the Horseshoe Making activity
+          title3:
+            name: Horseshoe Emberhand
+            desc: Obtain mastery X in the Horseshoe Making activity
+      recipe:
+        copperBarScrap:
+          title1:
+            name: Copper Bar Scrap Hammerling
+            desc: Obtain mastery IV in the Create a Copper Bar (Scrap) recipe
+          title2:
+            name: Copper Bar Scrap Smelter
+            desc: Obtain mastery VII in the Create a Copper Bar (Scrap) recipe
+          title3:
+            name: Copper Bar Scrap Emberhand
+            desc: Obtain mastery X in the Create a Copper Bar (Scrap) recipe
+        copperBar:
+          title1:
+            name: Copper Bar Hammerling
+            desc: Obtain mastery IV in the Smelt a Copper Bar recipe
+          title2:
+            name: Copper Bar Smelter
+            desc: Obtain mastery VII in the Smelt a Copper Bar recipe
+          title3:
+            name: Copper Bar Emberhand
+            desc: Obtain mastery X in the Smelt a Copper Bar recipe
+        copperSword:
+          title1:
+            name: Copper Sword Hammerling
+            desc: Obtain mastery IV in the Make a Copper Sword recipe
+          title2:
+            name: Copper Sword Smelter
+            desc: Obtain mastery VII in the Make a Copper Sword recipe
+          title3:
+            name: Copper Sword Emberhand
+            desc: Obtain mastery X in the Make a Copper Sword recipe
+        silverBar:
+          title1:
+            name: Silver Bar Hammerling
+            desc: Obtain mastery IV in the Smelt a Silver Bar recipe
+          title2:
+            name: Silver Bar Smelter
+            desc: Obtain mastery VII in the Smelt a Silver Bar recipe
+          title3:
+            name: Silver Bar Emberhand
+            desc: Obtain mastery X in the Smelt a Silver Bar recipe
+        copperShield:
+          title1:
+            name: Copper Shield Hammerling
+            desc: Obtain mastery IV in the Make a Copper Shield recipe
+          title2:
+            name: Copper Shield Smelter
+            desc: Obtain mastery VII in the Make a Copper Shield recipe
+          title3:
+            name: Copper Shield Emberhand
+            desc: Obtain mastery X in the Make a Copper Shield recipe
+        bronzeBarScrap:
+          title1:
+            name: Bronze Bar Scrap Hammerling
+            desc: Obtain mastery IV in the Create a Bronze Bar (Scrap) recipe
+          title2:
+            name: Bronze Bar Scrap Smelter
+            desc: Obtain mastery VII in the Create a Bronze Bar (Scrap) recipe
+          title3:
+            name: Bronze Bar Scrap Emberhand
+            desc: Obtain mastery X in the Create a Bronze Bar (Scrap) recipe
+        bronzeBar:
+          title1:
+            name: Bronze Bar Hammerling
+            desc: Obtain mastery IV in the Smelt a Bronze Bar recipe
+          title2:
+            name: Bronze Bar Smelter
+            desc: Obtain mastery VII in the Smelt a Bronze Bar recipe
+          title3:
+            name: Bronze Bar Emberhand
+            desc: Obtain mastery X in the Smelt a Bronze Bar recipe
+        bronzeSword:
+          title1:
+            name: Bronze Sword Hammerling
+            desc: Obtain mastery IV in the Make a Bronze Sword recipe
+          title2:
+            name: Bronze Sword Smelter
+            desc: Obtain mastery VII in the Make a Bronze Sword recipe
+          title3:
+            name: Bronze Sword Emberhand
+            desc: Obtain mastery X in the Make a Bronze Sword recipe
+        goldBar:
+          title1:
+            name: Gold Bar Hammerling
+            desc: Obtain mastery IV in the Smelt a Gold Bar recipe
+          title2:
+            name: Gold Bar Smelter
+            desc: Obtain mastery VII in the Smelt a Gold Bar recipe
+          title3:
+            name: Gold Bar Emberhand
+            desc: Obtain mastery X in the Smelt a Gold Bar recipe
+        bronzeShield:
+          title1:
+            name: Bronze Shield Hammerling
+            desc: Obtain mastery IV in the Make a Bronze Shield recipe
+          title2:
+            name: Bronze Shield Smelter
+            desc: Obtain mastery VII in the Make a Bronze Shield recipe
+          title3:
+            name: Bronze Shield Emberhand
+            desc: Obtain mastery X in the Make a Bronze Shield recipe
+        ironBarScrap:
+          title1:
+            name: Iron Bar Scrap Hammerling
+            desc: Obtain mastery IV in the Create a Iron Bar (Scrap) recipe
+          title2:
+            name: Iron Bar Scrap Smelter
+            desc: Obtain mastery VII in the Create a Iron Bar (Scrap) recipe
+          title3:
+            name: Iron Bar Scrap Emberhand
+            desc: Obtain mastery X in the Create a Iron Bar (Scrap) recipe
+        ironBar:
+          title1:
+            name: Iron Bar Hammerling
+            desc: Obtain mastery IV in the Smelt an Iron Bar recipe
+          title2:
+            name: Iron Bar Smelter
+            desc: Obtain mastery VII in the Smelt an Iron Bar recipe
+          title3:
+            name: Iron Bar Emberhand
+            desc: Obtain mastery X in the Smelt an Iron Bar recipe
+        ironSword:
+          title1:
+            name: Iron Sword Hammerling
+            desc: Obtain mastery IV in the Make an Iron Sword recipe
+          title2:
+            name: Iron Sword Smelter
+            desc: Obtain mastery VII in the Make an Iron Sword recipe
+          title3:
+            name: Iron Sword Emberhand
+            desc: Obtain mastery X in the Make an Iron Sword recipe
+        ironShield:
+          title1:
+            name: Iron Shield Hammerling
+            desc: Obtain mastery IV in the Make an Iron Shield recipe
+          title2:
+            name: Iron Shield Smelter
+            desc: Obtain mastery VII in the Make an Iron Shield recipe
+          title3:
+            name: Iron Shield Emberhand
+            desc: Obtain mastery X in the Make an Iron Shield recipe
+        steelBarScrap:
+          title1:
+            name: Steel Bar Scrap Hammerling
+            desc: Obtain mastery IV in the Create a Steel Bar (Scrap) recipe
+          title2:
+            name: Steel Bar Scrap Smelter
+            desc: Obtain mastery VII in the Create a Steel Bar (Scrap) recipe
+          title3:
+            name: Steel Bar Scrap Emberhand
+            desc: Obtain mastery X in the Create a Steel Bar (Scrap) recipe
+        steelBar:
+          title1:
+            name: Steel Bar Hammerling
+            desc: Obtain mastery IV in the Smelt a Steel Bar recipe
+          title2:
+            name: Steel Bar Smelter
+            desc: Obtain mastery VII in the Smelt a Steel Bar recipe
+          title3:
+            name: Steel Bar Emberhand
+            desc: Obtain mastery X in the Smelt a Steel Bar recipe
+        steelSword:
+          title1:
+            name: Steel Sword Hammerling
+            desc: Obtain mastery IV in the Make a Steel Sword recipe
+          title2:
+            name: Steel Sword Smelter
+            desc: Obtain mastery VII in the Make a Steel Sword recipe
+          title3:
+            name: Steel Sword Emberhand
+            desc: Obtain mastery X in the Make a Steel Sword recipe
+        steelShield:
+          title1:
+            name: Steel Shield Hammerling
+            desc: Obtain mastery IV in the Make a Steel Shield recipe
+          title2:
+            name: Steel Shield Smelter
+            desc: Obtain mastery VII in the Make a Steel Shield recipe
+          title3:
+            name: Steel Shield Emberhand
+            desc: Obtain mastery X in the Make a Steel Shield recipe
+        tarsiliumBarScrap:
+          title1:
+            name: Tarsilium Bar Scrap Hammerling
+            desc: Obtain mastery IV in the Create a Tarsilium Bar (Scrap) recipe
+          title2:
+            name: Tarsilium Bar Scrap Smelter
+            desc: Obtain mastery VII in the Create a Tarsilium Bar (Scrap) recipe
+          title3:
+            name: Tarsilium Bar Scrap Emberhand
+            desc: Obtain mastery X in the Create a Tarsilium Bar (Scrap) recipe
+        tarsiliumBar:
+          title1:
+            name: Tarsilium Bar Hammerling
+            desc: Obtain mastery IV in the Smelt a Tarsilium Bar recipe
+          title2:
+            name: Tarsilium Bar Smelter
+            desc: Obtain mastery VII in the Smelt a Tarsilium Bar recipe
+          title3:
+            name: Tarsilium Bar Emberhand
+            desc: Obtain mastery X in the Smelt a Tarsilium Bar recipe
+        tarsiliumToedBoots:
+          title1:
+            name: Tarsilium-toed Boots Hammerling
+            desc: Obtain mastery IV in the Make Tarsilium-toed Boots recipe
+          title2:
+            name: Tarsilium-toed Boots Smelter
+            desc: Obtain mastery VII in the Make Tarsilium-toed Boots recipe
+          title3:
+            name: Tarsilium-toed Boots Emberhand
+            desc: Obtain mastery X in the Make Tarsilium-toed Boots recipe
+        tarsiliumSword:
+          title1:
+            name: Tarsilium Sword Hammerling
+            desc: Obtain mastery IV in the Make a Tarsilium Sword recipe
+          title2:
+            name: Tarsilium Sword Smelter
+            desc: Obtain mastery VII in the Make a Tarsilium Sword recipe
+          title3:
+            name: Tarsilium Sword Emberhand
+            desc: Obtain mastery X in the Make a Tarsilium Sword recipe
+        hydriliumBar:
+          title1:
+            name: Hydrilium Bar Hammerling
+            desc: Obtain mastery IV in the Smelt a Hydrilium Bar recipe
+          title2:
+            name: Hydrilium Bar Smelter
+            desc: Obtain mastery VII in the Smelt a Hydrilium Bar recipe
+          title3:
+            name: Hydrilium Bar Emberhand
+            desc: Obtain mastery X in the Smelt a Hydrilium Bar recipe
+        tarsiliumShield:
+          title1:
+            name: Tarsilium Shield Hammerling
+            desc: Obtain mastery IV in the Make a Tarsilium Shield recipe
+          title2:
+            name: Tarsilium Shield Smelter
+            desc: Obtain mastery VII in the Make a Tarsilium Shield recipe
+          title3:
+            name: Tarsilium Shield Emberhand
+            desc: Obtain mastery X in the Make a Tarsilium Shield recipe
+        farganiteBar:
+          title1:
+            name: Farganite Bar Hammerling
+            desc: Obtain mastery IV in the Smelt a Farganite Bar recipe
+          title2:
+            name: Farganite Bar Smelter
+            desc: Obtain mastery VII in the Smelt a Farganite Bar recipe
+          title3:
+            name: Farganite Bar Emberhand
+            desc: Obtain mastery X in the Smelt a Farganite Bar recipe
+        farganiteSword:
+          title1:
+            name: Farganite Sword Hammerling
+            desc: Obtain mastery IV in the Make a Farganite Sword recipe
+          title2:
+            name: Farganite Sword Smelter
+            desc: Obtain mastery VII in the Make a Farganite Sword recipe
+          title3:
+            name: Farganite Sword Emberhand
+            desc: Obtain mastery X in the Make a Farganite Sword recipe
+        farganiteShield:
+          title1:
+            name: Farganite Shield Hammerling
+            desc: Obtain mastery IV in the Make a Farganite Shield recipe
+          title2:
+            name: Farganite Shield Smelter
+            desc: Obtain mastery VII in the Make a Farganite Shield recipe
+          title3:
+            name: Farganite Shield Emberhand
+            desc: Obtain mastery X in the Make a Farganite Shield recipe
+    trinketry:
+      activity:
+        antique:
+          title1:
+            name: Antique Polisher
+            desc: Obtain mastery IV in the Antique Market Assessor activity
+          title2:
+            name: Antique Faceter
+            desc: Obtain mastery VII in the Antique Market Assessor activity
+          title3:
+            name: Antique Gemshaper
+            desc: Obtain mastery X in the Antique Market Assessor activity
+      recipe:
+        jarvonianFlowerNecklace:
+          title1:
+            name: Jarvonian Flower Necklace Polisher
+            desc: Obtain mastery IV in the Create a Jarvonian Flower Necklace recipe
+          title2:
+            name: Jarvonian Flower Necklace Faceter
+            desc: Obtain mastery VII in the Create a Jarvonian Flower Necklace recipe
+          title3:
+            name: Jarvonian Flower Necklace Gemshaper
+            desc: Obtain mastery X in the Create a Jarvonian Flower Necklace recipe
+        opal:
+          title1:
+            name: Opal Polisher
+            desc: Obtain mastery IV in the Shape an Opal recipe
+          title2:
+            name: Opal Faceter
+            desc: Obtain mastery VII in the Shape an Opal recipe
+          title3:
+            name: Opal Gemshaper
+            desc: Obtain mastery X in the Shape an Opal recipe
+        silverRing:
+          title1:
+            name: Silver Ring Polisher
+            desc: Obtain mastery IV in the Create a Silver Ring recipe
+          title2:
+            name: Silver Ring Faceter
+            desc: Obtain mastery VII in the Create a Silver Ring recipe
+          title3:
+            name: Silver Ring Gemshaper
+            desc: Obtain mastery X in the Create a Silver Ring recipe
+        starPearl:
+          title1:
+            name: Star Pearl Polisher
+            desc: Obtain mastery IV in the Shape a Star Pearl recipe
+          title2:
+            name: Star Pearl Faceter
+            desc: Obtain mastery VII in the Shape a Star Pearl recipe
+          title3:
+            name: Star Pearl Gemshaper
+            desc: Obtain mastery X in the Shape a Star Pearl recipe
+        silverOpalRing:
+          title1:
+            name: Silver Opal Ring Polisher
+            desc: Obtain mastery IV in the Create a Silver Opal Ring recipe
+          title2:
+            name: Silver Opal Ring Faceter
+            desc: Obtain mastery VII in the Create a Silver Opal Ring recipe
+          title3:
+            name: Silver Opal Ring Gemshaper
+            desc: Obtain mastery X in the Create a Silver Opal Ring recipe
+        goldRing:
+          title1:
+            name: Gold Ring Polisher
+            desc: Obtain mastery IV in the Create a Gold Ring recipe
+          title2:
+            name: Gold Ring Faceter
+            desc: Obtain mastery VII in the Create a Gold Ring recipe
+          title3:
+            name: Gold Ring Gemshaper
+            desc: Obtain mastery X in the Create a Gold Ring recipe
+        wrentmarine:
+          title1:
+            name: Wrentmarine Polisher
+            desc: Obtain mastery IV in the Shape a Wrentmarine recipe
+          title2:
+            name: Wrentmarine Faceter
+            desc: Obtain mastery VII in the Shape a Wrentmarine recipe
+          title3:
+            name: Wrentmarine Gemshaper
+            desc: Obtain mastery X in the Shape a Wrentmarine recipe
+        silverStarPearlRing:
+          title1:
+            name: Silver Star Pearl Ring Polisher
+            desc: Obtain mastery IV in the Create a Silver Star Pearl Ring recipe
+          title2:
+            name: Silver Star Pearl Ring Faceter
+            desc: Obtain mastery VII in the Create a Silver Star Pearl Ring recipe
+          title3:
+            name: Silver Star Pearl Ring Gemshaper
+            desc: Obtain mastery X in the Create a Silver Star Pearl Ring recipe
+        goldOpalRing:
+          title1:
+            name: Gold Opal Ring Polisher
+            desc: Obtain mastery IV in the Create a Gold Opal Ring recipe
+          title2:
+            name: Gold Opal Ring Faceter
+            desc: Obtain mastery VII in the Create a Gold Opal Ring recipe
+          title3:
+            name: Gold Opal Ring Gemshaper
+            desc: Obtain mastery X in the Create a Gold Opal Ring recipe
+        topaz:
+          title1:
+            name: Topaz Polisher
+            desc: Obtain mastery IV in the Shape a Topaz recipe
+          title2:
+            name: Topaz Faceter
+            desc: Obtain mastery VII in the Shape a Topaz recipe
+          title3:
+            name: Topaz Gemshaper
+            desc: Obtain mastery X in the Shape a Topaz recipe
+        silverWrentmarineRing:
+          title1:
+            name: Silver Wrentmarine Ring Polisher
+            desc: Obtain mastery IV in the Create a Silver Wrentmarine Ring recipe
+          title2:
+            name: Silver Wrentmarine Ring Faceter
+            desc: Obtain mastery VII in the Create a Silver Wrentmarine Ring recipe
+          title3:
+            name: Silver Wrentmarine Ring Gemshaper
+            desc: Obtain mastery X in the Create a Silver Wrentmarine Ring recipe
+        jade:
+          title1:
+            name: Jade Polisher
+            desc: Obtain mastery IV in the Shape a Jade recipe
+          title2:
+            name: Jade Faceter
+            desc: Obtain mastery VII in the Shape a Jade recipe
+          title3:
+            name: Jade Gemshaper
+            desc: Obtain mastery X in the Shape a Jade recipe
+        goldStarPearlRing:
+          title1:
+            name: Gold Star Pearl Ring Polisher
+            desc: Obtain mastery IV in the Create a Gold Star Pearl Ring recipe
+          title2:
+            name: Gold Star Pearl Ring Faceter
+            desc: Obtain mastery VII in the Create a Gold Star Pearl Ring recipe
+          title3:
+            name: Gold Star Pearl Ring Gemshaper
+            desc: Obtain mastery X in the Create a Gold Star Pearl Ring recipe
+        amuletOfFinding:
+          title1:
+            name: Amulet of Finding Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Finding recipe
+          title2:
+            name: Amulet of Finding Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Finding recipe
+          title3:
+            name: Amulet of Finding Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Finding recipe
+        silverTopazRing:
+          title1:
+            name: Silver Topaz Ring Polisher
+            desc: Obtain mastery IV in the Create a Silver Topaz Ring recipe
+          title2:
+            name: Silver Topaz Ring Faceter
+            desc: Obtain mastery VII in the Create a Silver Topaz Ring recipe
+          title3:
+            name: Silver Topaz Ring Gemshaper
+            desc: Obtain mastery X in the Create a Silver Topaz Ring recipe
+        ruby:
+          title1:
+            name: Ruby Polisher
+            desc: Obtain mastery IV in the Shape a Ruby recipe
+          title2:
+            name: Ruby Faceter
+            desc: Obtain mastery VII in the Shape a Ruby recipe
+          title3:
+            name: Ruby Gemshaper
+            desc: Obtain mastery X in the Shape a Ruby recipe
+        amuletOfEel:
+          title1:
+            name: Amulet of Eel Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Eel recipe
+          title2:
+            name: Amulet of Eel Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Eel recipe
+          title3:
+            name: Amulet of Eel Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Eel recipe
+        amuletOfHeron:
+          title1:
+            name: Amulet of Heron Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Heron recipe
+          title2:
+            name: Amulet of Heron Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Heron recipe
+          title3:
+            name: Amulet of Heron Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Heron recipe
+        goldWrentmarineRing:
+          title1:
+            name: Gold Wrentmarine Ring Polisher
+            desc: Obtain mastery IV in the Create a Gold Wrentmarine Ring recipe
+          title2:
+            name: Gold Wrentmarine Ring Faceter
+            desc: Obtain mastery VII in the Create a Gold Wrentmarine Ring recipe
+          title3:
+            name: Gold Wrentmarine Ring Gemshaper
+            desc: Obtain mastery X in the Create a Gold Wrentmarine Ring recipe
+        sunStone:
+          title1:
+            name: Sun Stone Polisher
+            desc: Obtain mastery IV in the Shape a Sun Stone recipe
+          title2:
+            name: Sun Stone Faceter
+            desc: Obtain mastery VII in the Shape a Sun Stone recipe
+          title3:
+            name: Sun Stone Gemshaper
+            desc: Obtain mastery X in the Shape a Sun Stone recipe
+        silverJadeRing:
+          title1:
+            name: Silver Jade Ring Polisher
+            desc: Obtain mastery IV in the Create a Silver Jade Ring recipe
+          title2:
+            name: Silver Jade Ring Faceter
+            desc: Obtain mastery VII in the Create a Silver Jade Ring recipe
+          title3:
+            name: Silver Jade Ring Gemshaper
+            desc: Obtain mastery X in the Create a Silver Jade Ring recipe
+        amuletOfBat:
+          title1:
+            name: Amulet of Bat Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Bat recipe
+          title2:
+            name: Amulet of Bat Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Bat recipe
+          title3:
+            name: Amulet of Bat Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Bat recipe
+        amuletOfCoolingIce:
+          title1:
+            name: Amulet of Cooling Ice Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Cooling Ice recipe
+          title2:
+            name: Amulet of Cooling Ice Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Cooling Ice recipe
+          title3:
+            name: Amulet of Cooling Ice Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Cooling Ice recipe
+        ethernite:
+          title1:
+            name: Ethernite Polisher
+            desc: Obtain mastery IV in the Shape an Ethernite recipe
+          title2:
+            name: Ethernite Faceter
+            desc: Obtain mastery VII in the Shape an Ethernite recipe
+          title3:
+            name: Ethernite Gemshaper
+            desc: Obtain mastery X in the Shape an Ethernite recipe
+        silverRubyRing:
+          title1:
+            name: Silver Ruby Ring Polisher
+            desc: Obtain mastery IV in the Create a Silver Ruby Ring recipe
+          title2:
+            name: Silver Ruby Ring Faceter
+            desc: Obtain mastery VII in the Create a Silver Ruby Ring recipe
+          title3:
+            name: Silver Ruby Ring Gemshaper
+            desc: Obtain mastery X in the Create a Silver Ruby Ring recipe
+        goldTopazRing:
+          title1:
+            name: Gold Topaz Ring Polisher
+            desc: Obtain mastery IV in the Create a Gold Topaz Ring recipe
+          title2:
+            name: Gold Topaz Ring Faceter
+            desc: Obtain mastery VII in the Create a Gold Topaz Ring recipe
+          title3:
+            name: Gold Topaz Ring Gemshaper
+            desc: Obtain mastery X in the Create a Gold Topaz Ring recipe
+        amuletOfRoot:
+          title1:
+            name: Amulet of Root Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Root recipe
+          title2:
+            name: Amulet of Root Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Root recipe
+          title3:
+            name: Amulet of Root Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Root recipe
+        silverSunStoneRing:
+          title1:
+            name: Silver Sun Stone Ring Polisher
+            desc: Obtain mastery IV in the Create a Silver Sun Stone Ring recipe
+          title2:
+            name: Silver Sun Stone Ring Faceter
+            desc: Obtain mastery VII in the Create a Silver Sun Stone Ring recipe
+          title3:
+            name: Silver Sun Stone Ring Gemshaper
+            desc: Obtain mastery X in the Create a Silver Sun Stone Ring recipe
+        amuletOfMeasuringSpoons:
+          title1:
+            name: Amulet of Measuring Spoons Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Measuring Spoons recipe
+          title2:
+            name: Amulet of Measuring Spoons Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Measuring Spoons recipe
+          title3:
+            name: Amulet of Measuring Spoons Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Measuring Spoons recipe
+        goldJadeRing:
+          title1:
+            name: Gold Jade Ring Polisher
+            desc: Obtain mastery IV in the Create a Gold Jade Ring recipe
+          title2:
+            name: Gold Jade Ring Faceter
+            desc: Obtain mastery VII in the Create a Gold Jade Ring recipe
+          title3:
+            name: Gold Jade Ring Gemshaper
+            desc: Obtain mastery X in the Create a Gold Jade Ring recipe
+        amuletOfShrimp:
+          title1:
+            name: Amulet of Shrimp Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Shrimp recipe
+          title2:
+            name: Amulet of Shrimp Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Shrimp recipe
+          title3:
+            name: Amulet of Shrimp Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Shrimp recipe
+        silverEtherniteRing:
+          title1:
+            name: Silver Ethernite Ring Polisher
+            desc: Obtain mastery IV in the Create a Silver Ethernite Ring recipe
+          title2:
+            name: Silver Ethernite Ring Faceter
+            desc: Obtain mastery VII in the Create a Silver Ethernite Ring recipe
+          title3:
+            name: Silver Ethernite Ring Gemshaper
+            desc: Obtain mastery X in the Create a Silver Ethernite Ring recipe
+        goldRubyRing:
+          title1:
+            name: Gold Ruby Ring Polisher
+            desc: Obtain mastery IV in the Create a Gold Ruby Ring recipe
+          title2:
+            name: Gold Ruby Ring Faceter
+            desc: Obtain mastery VII in the Create a Gold Ruby Ring recipe
+          title3:
+            name: Gold Ruby Ring Gemshaper
+            desc: Obtain mastery X in the Create a Gold Ruby Ring recipe
+        amuletOfBeaver:
+          title1:
+            name: Amulet of Beaver Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Beaver recipe
+          title2:
+            name: Amulet of Beaver Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Beaver recipe
+          title3:
+            name: Amulet of Beaver Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Beaver recipe
+        amuletOfLuckyRabbitFoot:
+          title1:
+            name: Amulet of Lucky Rabbit's Foot Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Lucky Rabbit's Foot recipe
+          title2:
+            name: Amulet of Lucky Rabbit's Foot Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Lucky Rabbit's Foot recipe
+          title3:
+            name: Amulet of Lucky Rabbit's Foot Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Lucky Rabbit's Foot recipe
+        goldSunStoneRing:
+          title1:
+            name: Gold Sun Stone Ring Polisher
+            desc: Obtain mastery IV in the Create a Gold Sun Stone Ring recipe
+          title2:
+            name: Gold Sun Stone Ring Faceter
+            desc: Obtain mastery VII in the Create a Gold Sun Stone Ring recipe
+          title3:
+            name: Gold Sun Stone Ring Gemshaper
+            desc: Obtain mastery X in the Create a Gold Sun Stone Ring recipe
+        amuletOfAnimalKingdom:
+          title1:
+            name: Amulet of Animal Kingdom Polisher
+            desc: Obtain mastery IV in the Create an Amulet of Animal Kingdom recipe
+          title2:
+            name: Amulet of Animal Kingdom Faceter
+            desc: Obtain mastery VII in the Create an Amulet of Animal Kingdom recipe
+          title3:
+            name: Amulet of Animal Kingdom Gemshaper
+            desc: Obtain mastery X in the Create an Amulet of Animal Kingdom recipe
+        goldEtherniteRing:
+          title1:
+            name: Gold Ethernite Ring Polisher
+            desc: Obtain mastery IV in the Create a Gold Ethernite Ring recipe
+          title2:
+            name: Gold Ethernite Ring Faceter
+            desc: Obtain mastery VII in the Create a Gold Ethernite Ring recipe
+          title3:
+            name: Gold Ethernite Ring Gemshaper
+            desc: Obtain mastery X in the Create a Gold Ethernite Ring recipe
+    woodcutting:
+      activity:
+        branch:
+          title1:
+            name: Branch Chopper
+            desc: Obtain mastery IV in the Branch Trimming activity
+          title2:
+            name: Branch Harvester
+            desc: Obtain mastery VII in the Branch Trimming activity
+          title3:
+            name: Branch Destroyer
+            desc: Obtain mastery X in the Branch Trimming activity
+        coral:
+          title1:
+            name: Coral Chopper
+            desc: Obtain mastery IV in the Coral Cutting activity
+          title2:
+            name: Coral Harvester
+            desc: Obtain mastery VII in the Coral Cutting activity
+          title3:
+            name: Coral Destroyer
+            desc: Obtain mastery X in the Coral Cutting activity
+        birchLog:
+          title1:
+            name: Birch Log Chopper
+            desc: Obtain mastery IV in the Cut Birch Trees activity
+          title2:
+            name: Birch Log Harvester
+            desc: Obtain mastery VII in the Cut Birch Trees activity
+          title3:
+            name: Birch Log Destroyer
+            desc: Obtain mastery X in the Cut Birch Trees activity
+        mangroveLog:
+          title1:
+            name: Mangrove Log Chopper
+            desc: Obtain mastery IV in the Cut Mangrove Trees activity
+          title2:
+            name: Mangrove Log Harvester
+            desc: Obtain mastery VII in the Cut Mangrove Trees activity
+          title3:
+            name: Mangrove Log Destroyer
+            desc: Obtain mastery X in the Cut Mangrove Trees activity
+        mapleLog:
+          title1:
+            name: Maple Log Chopper
+            desc: Obtain mastery IV in the Cut Maple Trees activity
+          title2:
+            name: Maple Log Harvester
+            desc: Obtain mastery VII in the Cut Maple Trees activity
+          title3:
+            name: Maple Log Destroyer
+            desc: Obtain mastery X in the Cut Maple Trees activity
+        oakLog:
+          title1:
+            name: Oak Log Chopper
+            desc: Obtain mastery IV in the Cut Oak Trees activity
+          title2:
+            name: Oak Log Harvester
+            desc: Obtain mastery VII in the Cut Oak Trees activity
+          title3:
+            name: Oak Log Destroyer
+            desc: Obtain mastery X in the Cut Oak Trees activity
+        pineLog:
+          title1:
+            name: Pine Log Chopper
+            desc: Obtain mastery IV in the Cut Pine Trees activity
+          title2:
+            name: Pine Log Harvester
+            desc: Obtain mastery VII in the Cut Pine Trees activity
+          title3:
+            name: Pine Log Destroyer
+            desc: Obtain mastery X in the Cut Pine Trees activity
+        spruceLog:
+          title1:
+            name: Spruce Log Chopper
+            desc: Obtain mastery IV in the Cut Spruce Trees activity
+          title2:
+            name: Spruce Log Harvester
+            desc: Obtain mastery VII in the Cut Spruce Trees activity
+          title3:
+            name: Spruce Log Destroyer
+            desc: Obtain mastery X in the Cut Spruce Trees activity
+        teakLog:
+          title1:
+            name: Teak Log Chopper
+            desc: Obtain mastery IV in the Cut Teak Trees activity
+          title2:
+            name: Teak Log Harvester
+            desc: Obtain mastery VII in the Cut Teak Trees activity
+          title3:
+            name: Teak Log Destroyer
+            desc: Obtain mastery X in the Cut Teak Trees activity
+        willowLog:
+          title1:
+            name: Willow Log Chopper
+            desc: Obtain mastery IV in the Cut Willow Trees activity
+          title2:
+            name: Willow Log Harvester
+            desc: Obtain mastery VII in the Cut Willow Trees activity
+          title3:
+            name: Willow Log Destroyer
+            desc: Obtain mastery X in the Cut Willow Trees activity
+        firewood:
+          title1:
+            name: Firewood Chopper
+            desc: Obtain mastery IV in the Firewood Making activity
+          title2:
+            name: Firewood Harvester
+            desc: Obtain mastery VII in the Firewood Making activity
+          title3:
+            name: Firewood Destroyer
+            desc: Obtain mastery X in the Firewood Making activity
