@@ -204,18 +204,22 @@ singulars:
     nice:
       desc: Nieźle.
       name: Nieźle.
+    residualRelic:
+      desc: Odpowiedni drobiazg w nieodpowiednim miejscu może zrobić różnicę.
+      name: Pradawny Relikt
   requirements:
-    catchCrabs: Złap <numberProgress /> <object id="fish" /> podczas <object id="activity_fishing"
+    catchCrabs: Złap <object id="fish" /> podczas <object id="activity_fishing" />
+      <numberProgress />
+    chop5kTrees: Ukończ aktywność <object id="woodcuttingTrees" /> <numberProgress
       />
-    chop5kTrees: Zetnij <numberProgress /> <object id="woodcuttingTrees" />
-    collect1kMushrooms: Zbierz <numberProgress /> <object id="item-mushroom-aa67c861-9b00-4b66-8692-2ca8d6619181"
-      alwaysShow="true" /> z aktywności <object id="activity_foraging" />.
+    collect1kMushrooms: Zbierz <object id="mushroom" alwaysShow="true" /> z aktywności
+      <object id="activity_foraging" /> . <numberProgress />
     craftHatchetOfHighestQuality: Stwórz <object id="woodcuttingHatchet" /> najwyższej
       jakości. <numberProgress />
     craftPickaxeOfHighestQuality: Stwórz <object id="pickaxe" /> najwyższej jakości.
       <numberProgress />
     craftPerfectItem: Wytwórz przedmiot perfekcyjny. <numberProgress />
-    cookRecipes: Ugotuj potrawy <numberProgress /> razy.
+    cookRecipes: Ugotuj <object id="recipe_cooking" /> <numberProgress />
     forageHoney: Zbierz <numberProgress /> <object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
       alwaysShow="true" /> z aktywności <object id="activity_foraging" />.
     gain99Agility: Rozwiń zwinność do poziomu <numberProgress />
@@ -283,15 +287,15 @@ singulars:
     activitySled: Ukończ aktywność <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
       />. <numberProgress />
     activitySwimBeg: Ukończ aktywność <object id="activity-swimming_(beginner)-1ccee641-01d9-4bcb-8dd7-9df9c61142f2"
-      /> <numberProgress /> razy.
-    activitySwimExp: Ukończ aktywność <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
-      /> <numberProgress /> razy.
-    activitySwimInt: Ukończ aktywność <object id="activity-swimming_(intermediate)-37f761f4-f6fd-49a5-8389-5816388e0cf9"
-      /> <numberProgress /> razy.
+      />. <numberProgress />
+    activitySwimExp: Ukończ aktywność<object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
+      />. <numberProgress />
+    activitySwimInt: Ukończ aktywność<object id="activity-swimming_(intermediate)-37f761f4-f6fd-49a5-8389-5816388e0cf9"
+      />. <numberProgress />
     activityTinkering: Ukończ aktywność <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
-      /> <numberProgress /> razy.
-    completeActivity: Ukończ aktywność <item id="{item}" alwaysShow="true" /> <numberProgress
-      /> razy.
+      />. <numberProgress />
+    completeActivity: Ukończ aktywność <item id="{item}" alwaysShow="true" />. <numberProgress
+      />
     gainFineStarPearl: Zdobądź "świetny" <object id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81"
       alwaysShow="true" /> z aktywności. <numberProgress />
     prepKelpRoll: Przygotuj <object id="item-kelp_rolls-90004956-7275-4b13-9488-61cc320afd09"
