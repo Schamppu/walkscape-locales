@@ -28,9 +28,54 @@ singulars:
       totalLevel: Total level
   permissions:
     phrases:
+      youNeedToGivePermissions: You need to grant following permissions to proceed to the game. Tap on the permissions to grant them.
       pedometerPermission: Step counter permission
-      permissionExplanation: In order for the game to work, we need your permission to use the step counter data of your device. Please approve this permission to continue to the game.
+      pedometerPermissionExplanation: We need this permission to use the step counter data of your device.
+      noDeviceFound: No device found. Please make sure you have pressed the <c>Connect to Apple Health</c> button above and granted permission to read Apple Health data.
+      connectAppleHealth: Connect to Apple Health
+      connect: Connect
+      connectAppleHealthExplanation: You need to connect to Apple Health so that we can read steps synced by your watch, and to see which devices you have connected. If this is your first time using WalkScape, you will be asked for a permission to read data from Apple Health.
       exactAlarmPermission: Alarm permission
+      continueWillEnable: Continue button will be enabled after you have granted the necessary permissions above.
+      youCanChangeAnyTime: 'You can change the step counting source from <c>Game Settings</c> at any point.'
+    deviceSource:
+      phone: Phone
+      appleWatch: Apple Watch
+      watch: Other watch
+    deviceInfo:
+      phone: >
+        <icon i="Phone small" /> <c>Phone</c> is the default recommended step counting source for WalkScape. For intensive sport activities, we recommend using <icon i="Watch small" /> <c>a watch</c> as the step counting source. For most players, using <icon i="Phone small" /> <c>Phone</c> is the best option.
+
+
+        <bp /> <c i=1>Your steps are updated live in the game while you are walking.</c>
+
+
+        <bp /> For your steps to count, <c>you must have your phone with you</c>. This might be difficult while doing more intensive sports.
+      appleWatch: >
+        <icon i="Apple watch small" /> <c>Apple Watch</c> differs from some <icon i="Watch small" /> <c>other watches</c> in that it syncs your steps to Apple Health periodically. WalkScape reads your steps from Apple Health that are synced from your <icon i="Apple watch small" /> <c>Apple Watch</c> or any other watch.
+
+
+        <bp /> <c i=2>Apple Watch syncs your steps to Apple Health periodically.</c> You cannot see your steps updating live in the game, and your steps might come with a delay.
+
+
+        <bp /> You need to grant extra permission to read data from Apple Health to connect your watch.
+
+
+        <bp /> Only steps that are reported by your watch are recorded in the game.
+      watch: >
+        WalkScape reads your steps from <c>Apple Health</c> that are synced there from your <icon i="Watch small" /> <c>watch</c>. Depending on the manufacturer, you might need to manually sync your steps from a separate app to <c>Apple Health</c>.
+
+
+        <bp /> <c i=2>You might need to sync your steps to Apple Health manually through other applications</c> for any steps to be counted in WalkScape.
+
+
+        <bp /> Step syncing process to <c>Apple Health</c> depends on the manufacturer. This can require some extra setup and technical knowledge.
+
+
+        <bp /> You need to grant extra permission to read data from Apple Health to connect your watch.
+
+
+        <bp /> Only steps that are reported by your watch are recorded in the game.
   rewards:
     phrases:
       alreadyClaimed: Already claimed
