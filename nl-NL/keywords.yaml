@@ -2,24 +2,24 @@ singulars:
   activities:
     fishing:
       name: Vissen
-      requirementLevel: Vissen activiteit vereist welke op z'n minst <keywordRequirements
-        /> vereist.
-      requirement: Vissen activiteit vereist.
+      requirementLevel: Vereist een visactiviteit met ten minste <keywordRequirements
+        /> in zijn vereisten.
+      requirement: Vereist een <object id="activity_fishing" /> activiteit.
     miningOres:
-      requirementLevel: Erts mijnen activiteit vereist welke op z'n minst <keywordRequirements
-        /> vereist.
+      requirementLevel: Vereist een ertsdelf-activiteit met ten minste <keywordRequirements
+        /> in zijn vereisten.
       name: Erts mijnen
-      requirement: Erts mijnen activiteit vereist.
+      requirement: Vereist een <object id="activity_mining" /> activiteit.
     woodcuttingTrees:
       requirementLevel: Vereist een houthakactiviteit met tenminste <keywordRequirements
         /> in zijn vereisten.
       name: Houthakken
       requirement: Vereist een <object id="woodcuttingTrees" />-activiteit.
     foragingPlants:
-      name: Planten zoeken
-      requirement: Planten zoeken activiteit vereist.
-      requirementLevel: Planten zoeken activiteit vereist welke op z'n minst <keywordRequirements
-        /> vereist.
+      name: Planten verzamelen
+      requirement: Vereist een <object id="activity_foraging" /> activiteit.
+      requirementLevel: Vereist een plantenverzamel-activiteit met ten minste <keywordRequirements
+        /> in zijn vereisten.
   materials:
     fish:
       name: Vis
@@ -226,18 +226,18 @@ singulars:
           <object id="recipe_cooking" />.
   gear:
     frisbee:
-      name: Frisbee
-      requirementLevel: Vereist een frisbee die minstens <keywordRequirements /> in
-        zijn vereisten heeft.
-      requirement: Vereist een frisbee.
+      name: Luchtschijf
+      requirementLevel: Vereist een luchtschijf met ten minste <keywordRequirements
+        /> in zijn vereisten.
+      requirement: Vereist het dragen van een <object id="frisbee" />.
     skillingGear:
       name: Vaardigheidsuitrusting
-      requirement: Vaardigheidsuitrusting benodigd.
+      requirement: Vereist het dragen van <object id="skillingGear" />.
       requirementLevel: Vereist vaardigheidsuitrusting die minstens <keywordRequirements
         /> in zijn vereisten heeft.
     skis:
       name: Ski's
-      requirement: Vereist ski's.
+      requirement: Vereist het dragen van <object id="skis" />.
       requirementLevel: Vereist ski's die minstens <keywordRequirements /> in hun
         vereisten hebben.
     lifeVest:
