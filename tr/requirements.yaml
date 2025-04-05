@@ -1,7 +1,7 @@
 singulars:
   achievementPoints:
     text: <icon i="achievement point"/> <numberProgress current="{current}" max="{max}"
-      /> başarım puanın olsun.
+      /> başarım puanına ulaş.
   uniques:
     intermediateCrossCountry: <object 
       id="activity-cross-country_skiing_(intermediate)-42788047-6cc3-4711-88be-999e9504fc2a"
@@ -20,10 +20,14 @@ singulars:
     intermediateShipRepair: <object id="activity-ship_repair_(intermediate)-44f2f2e7-bef1-437f-ac35-bf64b97cc249"
       alwaysShow="true" /> faaliyetini <numberProgress current="{current}" max="{max}"
       /> kere tamamla.
+    searchTeam: Kara Gözlü Zirve <object id="activity-black_eye_peak_search_team-d1ad835f-0898-4fc7-8f0a-4b0626d95306"
+      alwaysShow="true" /> faaliyetini <object id="location-horn_of_respite-1661d247-11f1-49eb-b927-6e59c8fd7774"
+      alwaysShow="true" /> konumunda <numberProgress current="{current}" max="{max}"
+      /> kere tamamla.
   mainSkill:
     text: <skill skill="{skill}"/> yaparken
   itemAnywhereWithYou:
-    text: <item id="{item}"/> bulundur.
+    text: Yanında <item id="{item}"/> bulundur.
   distinctItemsEquippedKeyword:
     text: <numberProgress current="{current}" max="{max}" /> adet <object id="{obj}"
       /> kuşan.
@@ -60,15 +64,15 @@ singulars:
   totalSteps:
     text: Toplam <numberProgress current="{current}" max="{max}" /> adım yürü.
   characterLevel:
-    text: Karakter seviyen <numberProgress current="{current}" max="{max}" /> olsun.
+    text: <numberProgress current="{current}" max="{max}" /> karakter seviyesine ulaş.
   unlocked:
     text: <object id="{obj}" alwaysShow="true" /> açmış ol.
   achievementPointsPercent:
     text: <icon i="achievement point"/> <numberProgress current="{current}" max="{max}"
-      /> başarım puanın olsun (Toplamın %{percentage}'si).
+      /> başarım puanına ulaş. (Toplamının %{percentage} kadarı).
   haveCoins:
     text: <icon i="money small"/> <numberProgress current="{current}" max="{max}"
-      /> akçen olsun.
+      /> akçe sahibi ol.
   minimumSkillLevel:
     text: Her becerin en az <numberProgress current="{current}" max="{max}" /> seviye
       olsun.
@@ -79,7 +83,7 @@ singulars:
     text: <object id="{obj}" alwaysShow="true" /> diyarını tamamen keşfet. <numberProgress
       current="{current}" max="{max}" />.
   overencumbered:
-    text: Envanterin dolup taşmış olsun.
+    text: Envanterini doldurup taşır.
   haveBankStacks:
     text: Bankanda <numberProgress current="{current}" max="{max}" /> eşya yığını
       bulundur.
@@ -91,15 +95,21 @@ singulars:
     text: <object id="{obj}" /> konumundayken.
   factionReputations:
     jarvoniaReputation: <numberProgress current="{current}" max="{max}" /> <realm
-      realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db" /> diyar itibarın
-      olsun.
+      realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db" /> diyar itibarına
+      ulaş.
     trellinReputation: <numberProgress current="{current}" max="{max}" /> <realm realm="faction-trellin-239a0ad8-3812-4f2a-9c11-1c312490249b"
-      /> diyar itibarın olsun.
+      /> diyar itibarına ulaş.
     erdwiseReputation: <numberProgress current="{current}" max="{max}" /> <realm realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb"
-      /> diyar itibarın olsun.
+      /> diyar itibarına ulaş.
     halflingRebelsReputation: <numberProgress current="{current}" max="{max}" /> <realm
-      realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb" /> diyar itibarın
-      olsun.
+      realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb" /> diyar itibarına
+      ulaş.
     syrenthiaReputation: <numberProgress current="{current}" max="{max}" /> <realm
-      realm="faction-syrenthia-6e9359fa-597b-4448-9df5-cc3fff9a5108" /> diyar itibarın
-      olsun.
+      realm="faction-syrenthia-6e9359fa-597b-4448-9df5-cc3fff9a5108" /> diyar itibarına
+      ulaş.
+  haveItemStack:
+    text: <object id="{obj}" alwaysShow="true" /> eşyasından <numberProgress current="{current}"
+      max="{max}" /> sayılı bir yığın oluştur.
+  service:
+    text: En az <serviceTier tier="{tier}" /> veya daha yüksek <object id="{obj}"
+      /> hizmeti gerekli.
