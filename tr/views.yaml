@@ -163,21 +163,27 @@ plurals:
 singulars:
   achievements:
     info:
-      collectibleItems: WalkScape dünyasından toplayabileceğin koleksiyonluk eşyaların
-        birkaç farklı çeşidi bulunur. Bu eşyalar envanterinde yer kaplamazlar ve her
-        daim karakterinin yanındadır.
-      noCollectibleItems: Henüz koleksiyonluk eşya bulmuş değilsin.
+      collectibleItems: WalkScape dünyasından toplayabileceğin koleksiyonlukların
+        birkaç farklı çeşidi vardır. Bu eşyalar envanterinde yer kaplamazlar ve her
+        daim karakterinin yanında bulunurlar.
+      noCollectibleItems: Henüz koleksiyonluk bulmuş değilsin.
       specialItems: WalkScape'teki yolculuğun boyunca <c>koleksiyonluklar</c>, <c>görev
         eşyaları</c> ve <c>eserler</c> gibi özel eşyalar toplarsın. Onlara buradan
-        bakabilirsin. Koleksiyonluklar başarım puanı ilerlemesi sağlar.
-      viewDescription: <hl>Ödül İlerlemesi</hl> kazanmak için başarımları tamamla.
-        Ödül İlerlemesi dolunca tüm karakterlerin için ödül kazanırsın. Bazı başarımlar
-        tamamlanınca da ödül verirler.
+        bakabilirsin. Koleksiyonluklar başarım puanı ilerlemesi de sağlar.
+      viewDescription: <hl>Başarım puanı</hl> kazanmak için başarımları tamamla. Belirli
+        başarım puanlarına ulaştığın zaman özel ödüller açarsın. Bazı başarımların
+        kendileri de tamamlanınca ödül verirler.
+      totalProgressUnlocks: Bu ödülleri başarımlarının toplam ilerlemesine göre kazanırsın.
+        Daha fazla başarım puanı eklenince eşyalara erişimini kaybedebilirsin.
+      checkPointUnlocks: Bu başarımları belirli başarım puanlarına erişince açarsın.
+        Daha fazla başarım puanı eklense bile bunlara erişimini kaybetmezsin.
     phrases:
       notUnlocked: Kilitli başarım
       rewardProgress: Ödül İlerlemesi
       unclaimedRewards: 'Alınmamış ödüller: '
       showRewards: Ödülleri göster
+      totalProgressUnlocks: Toplam ilerleme ödülleri
+      checkPointUnlocks: İlerleme aşaması ödülleri
   bank:
     phrases:
       noItemsBank: Bankanda hiç eşya yok.
@@ -187,12 +193,13 @@ singulars:
   character:
     info:
       skillBreakdown: Karakterinin yolculuğu boyunca geliştirdiği bütün becerilerinin
-        tablosu.
+        tablosu. Herhangi bir beceriye dokunarak daha detaylı bilgiye ulaşabilir ve
+        neler açtığını görebilirsin.
     phrases:
       checkOut: İşte WalkScape karakterim {name}. Bir göz at!\nhttps://walkscape.app
-      checkOutSubject: WalkScape'teki ilerlememe bir göz atın!
+      checkOutSubject: WalkScape'teki ilerlememe bir göz at!
       skills: Beceriler
-      stepsOfLastWeek: Son 7 günlük adımlar
+      stepsOfLastWeek: Son 7 günlük adım
       totalLevel: Toplam seviye
   characterCreation:
     info:
@@ -211,7 +218,7 @@ singulars:
       noMaterials: Şu anda üretim yapmak için hiç malzemen bulunmuyor.
       noMaterialsThatCouldBeUsed: Envanterindeki hiçbir malzeme üretim yapmak için
         kullanılamaz.
-      noServiceRequirements: Hizmet gereksinimi yok.
+      noServiceRequirements: Hizmet gereksinimi bulunmuyor.
       recipes: Tarifler
       requirements: Gereksinimler
       requirementsNotMet: Gereksinimleri karşılamıyorsun.
@@ -219,6 +226,12 @@ singulars:
       requiresOneOfTheFollowing: Aşağıdaki malzemelerden biri gerekli.
       rewards: Ödüller
       showingRecipiesThatUses: 'Bunu kullanan tarifler:'
+      requiresService: Hizmet gerekli.
+    errors:
+      notSameQuality: Malzemelerin tamamı ya iyi ya normal olmalı
+      noService: Hizmet gereksinimi karşılanmıyor
+      noMaterials: Üretim malzemeleri eksik
+      skillRequirementsNotMet: Beceri gereksinimleri karşılanmıyor
   gear:
     phrases:
       combatModifiers: Savaş modifikasyonları
@@ -229,8 +242,8 @@ singulars:
       skillModifiers: Beceri modifikasyonları
   inventory:
     info:
-      noItemEquipped: Kuşanılmış eşya yok. \n\n Aşağıdaki listeden bir eşya seçip
-        "Kuşan" düğmesine basarak kuşanabilirsin.
+      noItemEquipped: Kuşanılmış eşya bulunmuyor. \n\n Aşağıdaki listeden bir eşya
+        seçip "Kuşan" düğmesine basarak kuşanabilirsin.
       noItemSelected: Seçilmiş eşya yok. \n\n Mevcut eşyanla karşılaştırmak ve kuşanmak
         için aşağıdaki listeden bir eşya seç.
       noItemsFound: Envanterinde bu yuvaya uyacak bir eşya bulunamadı.
@@ -340,7 +353,8 @@ singulars:
     phrases:
       pedometerPermission: Adım sayacı izni
       permissionExplanation: Oyunun çalışması için, cihazının adım sayacı verilerini
-        kullanma iznine ihtiyacımız var. Oyuna devam etmek için lütfen bu izni onayla.
+        kullanma iznine ihtiyacımız var. Lütfen oyuna devam etmek için bu izni onayla.
+      exactAlarmPermission: Bildirim izni
   pfpCreation:
     buttons:
       choose: Seç
@@ -413,20 +427,51 @@ singulars:
     phrases:
       openAll: Tümünü aç
       openChest: Aç
+      noItems: Açılacak bir hazinen bulunmuyor. Sandıkları çeşitli faaliyetlerden
+        elde edebilirsin.
   jobs:
     phrases:
       rewards: Tamamlama ödülleri
+      collectRewards: Ödülleri al
+      youMustBeInLocationToCollect: Ödülleri almak için <object id="{obj}"/> ile aynı
+        konumda bulunmalısın.
+      youMustBeInLocation: Eşyaları teslim etmek için <object id="{obj}"/> ile aynı
+        konumda bulunmalısın.
+      acceptJob: İşi kabul et
+      abandonJob: İşten vazgeç
+      acceptedJobs: Elindeki iş sayısı
+      itemsFromInventory: Envanterindeki eşyalar
+      itemsFromBank: Bankandaki eşyalar
+      hasNoBank: Bu konumda banka bulunmuyor.
+      hasNoItemsInInventory: Envanterinde uygun eşya bulunmuyor.
+      hasNoItemsInBank: Bankanda uygun eşya bulunmuyor.
+      giveItems: Eşyaları ver
+      noJobsAvailable: 'Bu konumda şu anda mevcut bir iş bulunmuyor. Yeni işlere kalan
+        süre:'
+      refreshIn: 'İş panosunun yenilenmesine kalan süre:'
+      openJournal: Günlüğü aç
+      give: Ver
+    dialogs:
+      abandonJob:
+        title: İşten vazgeç
+        text: Bu işten vazgeçmek istediğine emin misin? Bu işin bütün ilerlemesini
+          ve ödüllerini kaybedeceksin.
   activity:
     phrases:
-      stopWhenOverEncumbered: Envanter taşınca dur
+      stopWhenOverEncumbered: Envanter dolup taşınca dur
       savedSteps: Birikmiş adım
       consumables: Tüketimlikler
+      noActivity: Faaliyet yok
+      inventoryIsOverLimit: Envanter limitine ulaştın!
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Genel verim <c>-{penalty}%</c>
+      notAffectingTraveling: (seyahat verimi etkilenmez)
+      options: Seçenekler
     info:
       consumablesUsage: Faaliyetler esnasında kullanmak için birer <c>yiyecek</c>
         ve <c>iksir</c> seçebilirsin.
-      noActivity: Şu anda seçilmiş bir faaliyet yok. <hl>Aşağıdakilerden birini seçebilir</hl>
-        veya sola kaydırarak bu konumdaki mevcut her şeyi görebilirsin.
-      savedSteps: Birikmiş adımların kullanılıyor. Tamamı tükenene kadar her adımın
+      noActivity: Şu anda seçilmiş bir faaliyet bulunmuyor. <hl>Aşağıdakilerden birini
+        seçebilir</hl> veya sola kaydırarak bu konumdaki mevcut her şeyi görebilirsin.
+      savedSteps: Birikmiş adımların harcanıyor. Tamamı tükenene kadar her adımın
         iki adım sayılır.
   settings:
     categories:
@@ -469,10 +514,10 @@ singulars:
   abilities:
     info:
       youHaveNoAbilities: <hl>Herhangi bir özel yeteneğin yok.</hl> Oyundaki bazı
-        teçhizatlar bekleme süresi karşılığında hızlı avantajlar sağlayan özel yetenekler
+        teçhizatlar bekleme süresi karşılığında hızlı avantajlar veren özel yetenekler
         kullanmanı sağlayabilir.
-      abilitiesInfo: Yetenekler, oyunda kullanarak hızlı avantajlar elde edebileceğin
-        özel eylemlerdir. Yetenekleri tekrar kullanmadan önce beklemen gereken bekleme
+      abilitiesInfo: Yetenekler, oyunda hızlı avantajlar elde etmeni sağlayan özel
+        eylemlerdir. Yetenekleri tekrar kullanmadan önce beklemen gereken bekleme
         süreleri bulunur.
     phrases:
       holdToCast: Yapmak için basılı tut
@@ -514,3 +559,34 @@ singulars:
     errors:
       keywordError: Teçhizat setinde zaten <object id="{keyword}" /> var
       duplicateItem: Eşya teçhizat setinde zaten bulunuyor
+  shop:
+    phrases:
+      resetTrade: Takası sıfırla
+      buying: Alınıyor
+      selling: Satılıyor
+      buyBack: Geri al
+      sold: Satılan
+      bought: Alınan
+  cooldowns:
+    phrases:
+      cooldownReady: 'Bekleme süresi: Hazır'
+      followingMustBeTrueToUse: 'Kullanmak için gereksinimler karşılanmıyor:'
+      followingMustBeTrueToTick: 'Bekleme süresinin azalması için:'
+      cooldownRemaining: 'Kalan bekleme süresi:'
+      noCooldown: Bekleme süresi yok.
+  wardrobe:
+    phrases:
+      noHeadwear: Herhangi bir başlığın bulunmuyor.
+      noFaceAccessories: Herhangi bir yüz aksesuarın bulunmuyor.
+      noBackAccessories: Herhangi bir sırt aksesuarın bulunmuyor.
+      noEyeAccessories: Herhangi bir göz aksesuarın bulunmuyor.
+  journal:
+    info:
+      jobInfo: İşler, ödül kazanmak için tamamlayabileceğin <c>basit ve tekrarlanabilir</c>
+        görevlerdir. İşleri şehirler gibi farklı konumlarda bulabileceğin <c>iş panolarından</c>
+        kabul edebilirsin. Aynı anda en fazla üç aktif işin bulunabilir.
+    phrases:
+      jobs: İşler
+  rewards:
+    phrases:
+      alreadyClaimed: Zaten alınmış
