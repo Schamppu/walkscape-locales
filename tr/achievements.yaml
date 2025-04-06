@@ -197,6 +197,7 @@ singulars:
       desc: <DEĞİŞKEN>
     residualRelic:
       desc: Doğru süs yanlış yerdeyken bütün dünyayı değiştirebilir.
+      name: Bırakılan Yadigar
     moreThanMeetsTheEye:
       name: Göründüğünden Daha Fazlası
       desc: Elmasların peşine geldin ama anca bir kürek buldun. Erdwise Takıcılık
@@ -209,51 +210,125 @@ singulars:
       desc: Güzel.
       name: Güzel.
   requirements:
-    dropItem: <numberProgress /> eşyayı bırak.
-    goToNoiselessPass: Sükunet Geçidi'ne git. <numberProgress />
-    catchCrabs: Balık tutarken <numberProgress /> balık tut.
-    chop5kTrees: <numberProgress /> ağaç kes.
-    collect1kMushrooms: <numberProgress /> mantar topla.
-    craftHatchetOfHighestQuality: En yüksek kalitede bir nacak üret. <numberProgress
+    dropItem: Bir eşyayı bırak. <numberProgress />
+    goToNoiselessPass: <object id="location-noiseless_pass-e081df71-97eb-4708-90b0-f33e61b2a0c7"
+      alwaysShow="true" /> konumuna git. <numberProgress />
+    catchCrabs: <object id="activity_fishing" /> faaliyetinde <object id="fish" />
+      yakala. <numberProgress />
+    chop5kTrees: <object id="woodcuttingTrees" /> faaliyeti tamamla. <numberProgress
       />
-    craftPickaxeOfHighestQuality: En yüksek kalitede bir kazma üret. <numberProgress
-      />
+    collect1kMushrooms: <object id="activity_foraging" /> faaliyetinde <object id="mushroom"
+      alwaysShow="true" /> topla. <numberProgress />
+    craftHatchetOfHighestQuality: En yüksek kalitede bir <object id="woodcuttingHatchet"
+      /> üret. <numberProgress />
+    craftPickaxeOfHighestQuality: En yüksek kalitede bir <object id="pickaxe" /> üret.
+      <numberProgress />
     craftPerfectItem: Mükemmel bir eşya üret. <numberProgress />
-    cookRecipes: <numberProgress /> kere yemek pişir.
+    cookRecipes: <object id="recipe_cooking" /> tamamla. <numberProgress />
     findMysteriousG: Gizemli G'yi bul. <numberProgress />
     gain99Agility: Çevikliğini <numberProgress /> seviyesine yükselt.
-    gainRingWhileFishing: Balık tutarken bir yüzük bul. <numberProgress />
-    gainSocksFromActivity: Bir faaliyet sırasında bir çorap bul. <numberProgress />
-    have5DifferentGems: Envanterinde <numberProgress /> farklı cevher bulundur.
-    makeSandwich: <numberProgress /> sandviç yap.
-    mine1kGoldOres: Faaliyetlerden <numberProgress /> altın madeni kazan.
-    useALamp: TP lambası kullan. <numberProgress />
-    walkSteps: <numberProgress /> adım yürü.
-    walkStepsInDay: Bir gün içinde <numberProgress /> adım at.
-    characterLevel: <numberProgress /> karakter seviyesine ulaş.
-    haveCoins: <numberProgress /> akçe sahibi ol.
-    haveFoodStackQuantity: Herhangi bir yiyecekten <numberProgress /> adet biriktir.
-    mineOres: <numberProgress /> maden çıkar.
-    haveBankStacks: Bankada <numberProgress /> yığın oluştur.
-    gainFineMaterial: <numberProgress /> iyi malzeme kazan.
-    dropItems: <numberProgress /> eşyayı bırak.
-    haveInventoryFilled: Envanterini aşırı yükle. <numberProgress />
-    haveRingsEquipped: İki yüzük kuşan. <numberProgress />
-    gainItem: <item id="{item}"/> eşyasını kazan. <numberProgress />
-    haveSickleEquipped: Orak kuşan. <numberProgress />
-    haveHammerEquipped: Çekiç kuşan. <numberProgress />
-    gainTreasureChest: Herhangi bir faaliyetten hazine sandığı kazan. <numberProgress
+    gainRingWhileFishing: <object id="activity_fishing" /> faaliyetinden <object id="item_ring"
+      /> kazan. <numberProgress />
+    gainSocksFromActivity: Bir faaliyetten <object id="item_socks" /> kazan. <numberProgress
       />
-    openTreasureChest: <numberProgress /> sandık aç.
-    consumeBeer: <numberProgress /> bira iç.
-    useMemosphere: <numberProgress /> hatırküre kullan.
+    have5DifferentGems: Envanterinde aynı anda farklı <object id="cut_gem" /> bulundur.
+      <numberProgress />
+    makeSandwich: <object id="sandwich" /> yap. <numberProgress />
+    mine1kGoldOres: Faaliyetlerden <object id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f"
+      alwaysShow="true" /> kazan. <numberProgress />
+    useALamp: TP lambası kullan. <numberProgress />
+    walkSteps: Adım at. <numberProgress />
+    walkStepsInDay: Aynı gün içinde adım at. <numberProgress />
+    characterLevel: <numberProgress /> karakter seviyesine ulaş.
+    haveCoins: <icon i="money small"/> Akçe biriktir. <numberProgress />
+    haveFoodStackQuantity: Herhangi bir <object id="food" />'ten <numberProgress />
+      adet biriktir.
+    mineOres: <object id="activity_mining" /> faaliyetlerinden <object id="ore" />
+      çıkar. <numberProgress />
+    haveBankStacks: Bankada farklı eşya yığınları oluştur. <numberProgress />
+    gainFineMaterial: İyi bir malzeme kazan. <numberProgress />
+    dropItems: Birkaç eşyayı bırak. <numberProgress />
+    haveInventoryFilled: Envanterini aşırı yükle. <numberProgress />
+    haveRingsEquipped: İki <object id="item_ring" /> yuvasına da eşya kuşan. <numberProgress
+      />
+    gainItem: <item id="{item}"/> eşyasını kazan. <numberProgress />
+    haveSickleEquipped: <object id="sickle" /> kuşan. <numberProgress />
+    haveHammerEquipped: <object id="smithingHammer" /> kuşan. <numberProgress />
+    gainTreasureChest: Herhangi bir faaliyetten <object id="chest" /> kazan. <numberProgress
+      />
+    openTreasureChest: <object id="chest" /> açılışı yap. <numberProgress />
+    consumeBeer: <object id="item-beer-9a2b6380-7270-43e0-bd9a-67e8bcb9d925" alwaysShow="true"
+      /> iç. <numberProgress />
+    useMemosphere: <object id="memosphere" /> kullan. <numberProgress />
     findIceSickle: Buzul'da <hl>çok nadir bir alet</hl> bul. <numberProgress />
-    exploreJarvonia: Jarvonya'daki her konumu keşfet. <numberProgress />
+    exploreJarvonia: <object id="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db"
+      /> diyarındaki her konumu keşfet. <numberProgress />
     levelUpAnySkill: Herhangi bir becerini geliştir. <numberProgress />
     haveEverySlotFilled: Her teçhizat yuvasına bir eşya kuşan. <numberProgress />
-    cook20DifferentRecipes: <numberProgress /> farklı tarif pişir.
-    forageHoney: <numberProgress /> bal peteği topla.
-    goToBarbantok: Barbantok köyüne git. <numberProgress />
-    mine10kOres: <numberProgress /> maden çıkar.
-    walkStepsWithoutGear: Hiçbir teçhizat kuşanmadan <numberProgress /> adım yürü.
+    cook20DifferentRecipes: Farklı <object id="recipe_cooking" /> tamamla. <numberProgress
+      />
+    forageHoney: Faaliyetlerden <object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
+      alwaysShow="true" /> bul. <numberProgress />
+    goToBarbantok: <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" /> köyüne git. <numberProgress />
+    mine10kOres: Herhangi bir <object id="ore" /> çıkar. <numberProgress />
+    walkStepsWithoutGear: Hiçbir teçhizat kuşanmadan adım at. <numberProgress />
     haveAllSkillsLevel: Bütün becerilerini en az <numberProgress /> seviyesine getir.
+    findCrossword: <object id="item-jarvonian_crossword_puzzle-01c3fefd-6d9e-4b4d-bb76-91981c663085"
+      /> bul. <numberProgress />
+    activitySand: <object id="activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d"
+      /> faaliyeti tamamla. <numberProgress />
+    activitySled: <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
+      /> faaliyeti tamamla. <numberProgress />
+    activitySwimBeg: <object id="activity-swimming_(beginner)-1ccee641-01d9-4bcb-8dd7-9df9c61142f2"
+      /> faaliyeti tamamla. <numberProgress />
+    activitySwimExp: <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
+      /> faaliyeti tamamla. <numberProgress />
+    activitySwimInt: <object id="activity-swimming_(intermediate)-37f761f4-f6fd-49a5-8389-5816388e0cf9"
+      /> faaliyeti tamamla. <numberProgress />
+    activityTinkering: <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
+      /> faaliyeti tamamla. <numberProgress />
+    completeActivity: <item id="{item}" alwaysShow="true" /> faaliyeti tamamla. <numberProgress
+      />
+    equipHatchet: <object id="item-basic_hatchet-dc4b21f3-e651-4103-9127-e7d3b74151fe"
+      /> kuşan. <numberProgress />
+    equipNet: <object id="item-small_fishing_net-05cb692d-840c-4c57-911c-1f65464aa800"
+      /> kuşan. <numberProgress />
+    equipPickaxe: <object id="item-basic_pickaxe-a00d8626-e415-481c-88ee-fdafbb4a45f0"
+      /> kuşan. <numberProgress />
+    lootFindCommon: <object id="chest" />'lardan sıradan ganimet kazan. <numberProgress
+      />
+    lootFindUncommon: <object id="chest" />'lardan nadir ganimet kazan. <numberProgress
+      />
+    lootFindRare: <object id="chest" />'lardan ender ganimet kazan. <numberProgress
+      />
+    lootFindEpic: <object id="chest" />'lardan destansı ganimet kazan. <numberProgress
+      />
+    lootFindLegendary: <object id="chest" />'lardan efsanevi ganimet kazan. <numberProgress
+      />
+    goToTrench: <object id="location-darkdepths-385aa267-b46d-47b8-b124-aa3827c39fef"
+      alwaysShow="true" /> konumuna git. <numberProgress />
+    gainTrinketFromActivity: Bir faaliyetten <object id="item_trinket" /> kazan. <numberProgress
+      />
+    activityBasket: <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
+      /> faaliyeti tamamla. <numberProgress />
+    activityButterfly: <object id="activity-butterfly_catching-ddef8fc5-a61e-4689-bacb-e49ee89f09c8"
+      /> faaliyeti tamamla. <numberProgress />
+    activityIce: <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
+      /> faaliyeti tamamla. <numberProgress />
+    activityGlacier: <object id="activity-glacier_foraging-dfdd59cc-e38b-48fc-9a0e-439163abac12"
+      /> faaliyeti tamamla. <numberProgress />
+    gainFineStarPearl: Bir faaliyetten iyi <object id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81"
+      alwaysShow="true" /> kazan. <numberProgress />
+    gainFineTrash: Bir faaliyetten <object id="item-trash-40c14f4e-3ef2-435a-a5de-123843f824bf"
+      alwaysShow="true" /> kazan. <numberProgress />
+    prepKelpRoll: <object id="item-kelp_rolls-90004956-7275-4b13-9488-61cc320afd09"
+      /> hazırla. <numberProgress />
+    prepSaltrum: <object id="item-saltrum-f2df867a-21a7-48db-b13b-efea9e46cb5d" />
+      hazırla. <numberProgress />
+    prepUnderwaterSalad: <object id="item-underwater_salad-ea06cde2-d58d-4a79-8b05-6f515d5b02da"
+      /> hazırla. <numberProgress />
+    sharkFish: Bir faaliyetten <object id="item-raw_shark-f543d44b-0cc7-4d5a-9cdc-50ce8d90cb86"
+      alwaysShow="true" /> kazan. <numberProgress />
+    sharkCook: <object id="recipe_cooking" /> faaliyetinden <object id="item-cooked_shark-4eadab85-170e-42b5-a086-cb57cd9d9dc3"
+      alwaysShow="true" /> kazan. <numberProgress />
