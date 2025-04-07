@@ -103,7 +103,7 @@ singulars:
       requirement: Wymaga założonej włóczni rybackiej.
     tool:
       name: Narzędzie
-      requirement: Wymaga wyposażonego narzędzia.
+      requirement: Wymaga wyposażonego <object id="tool" />.
       requirementLevel: Wymaga narzędzia które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
     woodcuttingHatchet:
@@ -113,22 +113,22 @@ singulars:
         /> w swoich wymaganiach.
     sickle:
       name: Sierp
-      requirement: Wymaga wyposażonego sierpa.
+      requirement: Wymaga wyposażonego <object id="sickle" />.
       requirementLevel: Wymaga sierpa który, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
     goldPan:
       name: Złota Misa
-      requirement: Wymaga wyposażonej złotej misy.
+      requirement: Wymaga wyposażonej <object id="goldPan" />.
       requirementLevel: Wymaga złotej misy która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
     magnetic:
       name: Magnetyczny
-      requirement: Wymaga wyposażonego przedmiotu magnetycznego.
+      requirement: Wymaga wyposażonego przedmiotu <object id="magnetic" />.
       requirementLevel: Wymaga magnetycznego przedmiotu który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
     cookingPan:
       name: Patelnia do Gotowania
-      requirement: Wymaga wyposażonej patelni.
+      requirement: Wymaga wyposażonej <object id="cookingPan" />.
       requirementLevel: Wymaga patelni która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
     cuttingBoard:
@@ -244,6 +244,8 @@ singulars:
     products:
       sandwich:
         name: Przepis na Kanapkę
+        requirements: Wymaga <object id="sandwich" /> wytworzone <object id="recipe_cooking"
+          />.
   activities:
     woodcuttingTrees:
       name: Ścinanie Drzew
@@ -288,14 +290,14 @@ singulars:
         /> w swoich wymaganiach.
     socks:
       name: Skarpety
-      requirement: Wymaga założonych skarpet.
+      requirement: Wymaga wyposażonych <object id="item_socks" />.
       requirementLevel: Wymaga skarpet które, mają co najmniej <keywordRequirements
         /> w swoich wymaganiach.
     skis:
       requirementLevel: Wymaga nart które, mają co najmniej <keywordRequirements />
         w swoich wymaganiach.
       name: Narty
-      requirement: Wymaga założonych nart.
+      requirement: Wymaga wyposażonych <object id="skis" />.
     skillingGear:
       name: Sprzęt do Umiejętności
       requirement: Wymaga wyposażonego <object id="skillingGear" />.
@@ -303,24 +305,36 @@ singulars:
         /> w swoich wymaganiach.
     frisbee:
       name: Dysk Golfowy
-      requirement: Wymaga założonego dysku do golfa.
+      requirement: Wymaga wyposażonego <object id="frisbee" />.
       requirementLevel: Wymaga dysku do golfa który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
     bellows:
       name: Miechy
-      requirement: Wymaga wyposażonych miechów.
+      requirement: Wymaga wyposażonych <object id="bellows" />.
       requirementLevel: Wymaga miechów które, mają co najmniej <keywordRequirements
         /> w swoich wymaganiach.
     basket:
       name: Kosz
-      requirement: Wymaga wyposażonego kosza.
+      requirement: Wymaga wyposażonego <object id="basket" />.
       requirementLevel: Wymaga kosza który, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
     amulet:
       name: Amulet
-      requirement: Wymaga wyposażonego amuletu.
+      requirement: Wymaga wyposażonego <object id="item_amulet" />.
       requirementLevel: Wymaga amuletu który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+    underwater:
+      name: Podwodny
+      requirement: Wymaga sprzętu <object id="item_underwater" />.
+    weapon:
+      name: Broń
+      requirement: Wymaga wyposażonej <object id="weapon" />.
+    shield:
+      name: Tarcza
+      requirement: Wymaga wyposażonej <object id="shield" />.
+    arrows:
+      name: Strzały
+      requirement: Wymaga wyposażonych <object id="arrows" />.
   consumables:
     cookedFish:
       name: usmażona ryba
