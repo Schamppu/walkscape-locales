@@ -291,13 +291,16 @@ singulars:
   recipes:
     products:
       sandwich:
-        name: Voileipä
+        name: Voileivän resepti
+        requirements: Vaatii <object id="sandwich" /> joka valmistetaan <object id="recipe_cooking"
+          />.
     skills:
       cooking:
-        name: Ruoanlaitto
+        name: Ruoanlaitto resepti
+        requirement: Vaatii <object id="recipe_cooking" />.
   activities:
     woodcuttingTrees:
-      requirement: Vaatii puunhakkaus (puut) aktiviteetin.
+      requirement: Vaatii puunhakkaus <object id="woodcuttingTrees" /> aktiviteetin.
       requirementLevel: Vaatii puunhakkaus (puut) aktiviteetin jolla on vähintään
         <keywordRequirements /> sen vaatimuksissa.
       name: Puunhakkaus (puut)
