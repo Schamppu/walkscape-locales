@@ -80,7 +80,7 @@ singulars:
       requirementLevel: Vereist timmergereedschap welke op z'n minst <keywordRequirements
         /> vereist.
       name: Timmergereedschap
-      requirement: Vereist timmergereedschap.
+      requirement: Vereist het dragen van timmergereedschap.
     knife:
       requirementLevel: Vereist een mes welke op z'n minst <keywordRequirements />
         vereist.
@@ -95,7 +95,7 @@ singulars:
       requirementLevel: Vereist een pikhouweel welke op z'n minst <keywordRequirements
         /> vereist.
       name: Pikhouweel
-      requirement: Vereist een pikhouweel.
+      requirement: Vereist het dragen van een <object id="pickaxe" />.
     fishingNet:
       requirementLevel: Vereist een visnet welke op z'n minst <keywordRequirements
         /> vereist.
@@ -138,7 +138,7 @@ singulars:
         /> vereist.
     fishingCage:
       name: Visserij kooi
-      requirement: Vereist een visserij kooi.
+      requirement: Vereist het dragen van een <object id="fishingCage" />.
       requirementLevel: Vereist een visserij kooi welke op z'n minst <keywordRequirements
         /> vereist.
     fishing:
@@ -147,25 +147,25 @@ singulars:
       requirementLevel: Vereist een hulpmiddel voor vissen welke op z'n minst <keywordRequirements
         /> vereist.
     cookingTool:
-      requirement: Vereist kookgereedschap.
+      requirement: Vereist het dragen van <object id="cookingTool" />.
       name: Kookgereedschap
       requirementLevel: Vereist kookgereedschap welke op z'n minst <keywordRequirements
         /> vereist.
     craftingTool:
       name: Ambacht gereedschap
-      requirement: Vereist ambacht gereedschap.
+      requirement: Vereist het dragen van een <object id="craftingTool" />.
       requirementLevel: Vereist ambacht gereedschap welke op z'n minst <keywordRequirements
         /> vereist.
     fishingLure:
       name: Lokaas
-      requirement: Vereist lokaas.
+      requirement: Vereist het dragen van een <object id="fishingLure" />.
       requirementLevel: Vereist lokaas welke op z'n minst <keywordRequirements />
         vereist.
     magnifyingLense:
       name: Vergrootglas
-      requirement: Vereist een vergrootglas.
-      requirementLevel: Vereist een vergrootglas welke op z'n minst <keywordRequirements
-        /> vereist.
+      requirement: Vereist het dragen van een <object id="magnifyingLense" />.
+      requirementLevel: Vereist een vergrootglas met minstens <keywordRequirements
+        /> in zijn vereisten.
     cookingKnife:
       name: Mes
       requirement: Vereist een mes.
@@ -214,6 +214,12 @@ singulars:
     logSplitter:
       requirement: Vereist een hout splijter.
       name: Hout Splijter
+    fishingTool:
+      name: Visgerei
+      requirement: Vereist het dragen van <object id="fishingTool" /> gerelateerd
+        gereedschap.
+      requirementLevel: Vereist visgerei met minstens <keywordRequirements /> in zijn
+        vereisten.
   recipes:
     skills:
       cooking:
