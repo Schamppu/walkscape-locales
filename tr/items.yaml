@@ -324,6 +324,8 @@ singulars:
         sword:
           name: Bronz kılıç
           desc: Bir kılıç.
+        shield:
+          name: Bronz kalkan
       copper:
         chest:
           desc: Önemli miktarda bakır gerektirir, ancak vücudun en hayati kısımlarını
@@ -350,6 +352,8 @@ singulars:
         sword:
           desc: Hafif bir kılıç.
           name: Bakır kılıç
+        shield:
+          name: Bakır kalkan
       farganite:
         chest:
           desc: Göğsündeki aşılmaz hisar. Ayna gibi mavi yüzeyi sayesinde düşmanlarının
@@ -376,6 +380,8 @@ singulars:
         sword:
           name: Farganit kılıç
           desc: Mavi bir kılıç.
+        shield:
+          name: Farganit kalkan
       iron:
         chest:
           desc: Tehlikelere karşı bükülmez bir siper görevi görerek giyenin gövdesini
@@ -403,6 +409,8 @@ singulars:
         sword:
           name: Demir kılıç
           desc: Bir kılıç.
+        shield:
+          name: Demir kalkan
       steel:
         chest:
           desc: Hem gövden için güçlü bir kale hem de savaşçılar ve şövalyelerin yılmaz
@@ -430,6 +438,8 @@ singulars:
         sword:
           name: Çelik kılıç
           desc: Parlak bir kılıç.
+        shield:
+          name: Çelik kalkan
       tarsilium:
         chest:
           desc: Siyah bir göğüs zırhı.
@@ -452,6 +462,13 @@ singulars:
         sword:
           desc: Siyah bir kılıç.
           name: Katrilyum kılıç
+        shield:
+          name: Katrilyum kalkan
+      basic:
+        woodenShield:
+          name: Tahta kalkan
+        woodenSword:
+          name: Tahta kılıç
     skilling:
       fishing:
         basicFishingPole:
@@ -476,11 +493,19 @@ singulars:
         smallFishingNet:
           desc: Bu basit ağ, basit balıkçıların mütevazı aletidir. Birbirine bağlanmış
             birkaç ip parçasından fazlası değil.
-          name: Küçük balık ağı
+          name: Basit balık ağı
         willowFishingRod:
           name: Söğüt olta
         coralFishingSpear:
           name: Mercan balık mızrağı
+        advancedFishingRod:
+          name: Gelişmiş olta
+        lobsterPot:
+          name: Istakoz sepeti
+        tidalLure:
+          name: Gelgit yemi
+        elderhideFishingNet:
+          name: Bayrıpost balık ağı
       foraging:
         copperSickle:
           name: Bakır orak
@@ -499,6 +524,8 @@ singulars:
         hydriliumSickle:
           name: Hidrilyum orak
           desc: Hidrilyum adındaki nadir su altı malzemesinden yapılmış bir orak.
+        mangroveBasket:
+          name: Mangrov sepet
       mining:
         basicPickaxe:
           desc: Basit kazma, madencilerin mütevazı aletidir. Bir sopa, bir taş ve
@@ -526,6 +553,10 @@ singulars:
         tarsiliumPickaxe:
           desc: Siyah bir kazma.
           name: Katrilyum kazma
+        hydriliumPickaxe:
+          name: Hidrilyum kazma
+        hydriliumMagnet:
+          name: Hidrilyum mıknatıs
       woodcutting:
         basicHatchet:
           desc: Basit nacak, ormancıların mütevazı aletidir. Bir sopa, bir taş ve
@@ -555,6 +586,142 @@ singulars:
         hydriliumLogSplitter:
           desc: Hidrilyumla güçlendirilmiş bir odun yarıcı.
           name: Hidrilyum odun yarıcı
+        hydriliumHatchet:
+          name: Hidrilyum nacak
+      hunting:
+        teakBirdhouse:
+          name: Tik kuş evi
+        mapleBirdhouse:
+          name: Akçaağaç kuş evi
+        simpleBowstring:
+          name: Basit kiriş
+        elmHuntingBow:
+          name: Karaağaç avcı yayı
+        pineBirdhouse:
+          name: Çam kuş evi
+        oakHuntingBow:
+          name: Meşe avcı yayı
+        bambooHuntingBow:
+          name: Bambu avcı yayı
+        mahoganyHuntingBow:
+          name: Maun avcı yayı
+        birchBirdhouse:
+          name: Huş kuş evi
+        spruceBirdhouse:
+          name: Ladin kuş evi
+        mangroveBirdhouse:
+          name: Mangrov kuş evi
+        copperArrows:
+          name: Bakır ok
+        bronzeArrows:
+          name: Bronz ok
+        ironArrows:
+          name: Demir ok
+        steelArrows:
+          name: Çelik ok
+        tarsiliumArrows:
+          name: Katrilyum ok
+        farganiteArrows:
+          name: Farganit ok
+        kelpDriftNet:
+          name: Su yosunu akıntı ağı
+      tailoring:
+        qualityLeather:
+          name: Kaliteli deri
+        elderHideScraps:
+          name: Bayrıpost kırpıntısı
+        elderhideLeather:
+          name: Bayrıpost derisi
+        hideScraps:
+          name: Post kırpıntısı
+        elderHide:
+          name: Bayrıpost
+        basicLeather:
+          name: Basit deri
+        basicHide:
+          name: Basit post
+        linenCloth:
+          name: Keten kumaş
+      trinketry:
+        silverEtherniteRing:
+          name: Gümüş semanit yüzük
+        amuletOfTheCoolingIce:
+          name: Buz sarkıtı kolyesi
+        amuletOfTheAnimalKingdom:
+          name: Hayvan krallığı kolyesi
+        silverJadeRing:
+          name: Gümüş yeşim yüzük
+        amuletOfTheEel:
+          name: Yılan balığı kolyesi
+        silverOpalRing:
+          name: Gümüş opal yüzük
+        silverStarPearlRing:
+          name: Gümüş yıldız inci yüzük
+        silverWrentmarineRing:
+          name: Gümüş wrentmarin yüzük
+        silverTopazRing:
+          name: Gümüş topaz yüzük
+        silverRubyRing:
+          name: Gümüş yakut yüzük
+        silverSunStoneRing:
+          name: Gümüş güneş taşı yüzük
+        goldOpalRing:
+          name: Altın opal yüzük
+        goldStarPearlRing:
+          name: Altın yıldız inci yüzük
+        goldWrentmarineRing:
+          name: Altın wrentmarin yüzük
+        goldTopazRing:
+          name: Altın topaz yüzük
+        goldJadeRing:
+          name: Altın yeşim yüzük
+        goldRubyRing:
+          name: Altın yakut yüzük
+        goldSunStoneRing:
+          name: Altın güneş taşı yüzük
+        goldEtherniteRing:
+          name: Altın semanit yüzük
+        amuletOfTheBat:
+          name: Yarasa kolyesi
+        amuletOfTheHeron:
+          name: Balıkçıl kolyesi
+        amuletOfTheShrimp:
+          name: Karides kolyesi
+        amuletOfTheLuckyRabbitFoot:
+          name: Uğurlu tavşan ayağı kolyesi
+        amuletOfTheMeasuringSpoons:
+          name: Ölçü kaşığı kolyesi
+        amuletOfTheRoot:
+          name: Yuvarlak kök kolyesi
+        amuletOfTheSharkTooth:
+          name: Köpek balığı dişi kolyesi
+        amuletOfTheBeaver:
+          name: Kunduz kolyesi
+        flowerNecklace:
+          name: Jarvonya çiçeği kolyesi
+        cutOpal:
+          name: Opal
+        cutStarPearl:
+          name: Yıldız inci
+        cutWrentmarine:
+          name: Wrentmarin
+        cutTopaz:
+          name: Topaz
+        cutJade:
+          name: Yeşim
+        cutRuby:
+          name: Yakut
+        cutSunStone:
+          name: Güneş taşı
+        cutEthernite:
+          name: Semanit
+        silverRing:
+          name: Gümüş yüzük
+        goldRing:
+          name: Altın yüzük
+      miscellaneous:
+        bagOfRocks:
+          name: Taş çantası
   looted:
     equipmentSets:
       dimensional:
@@ -684,7 +851,7 @@ singulars:
         largePot:
           name: Büyük tencere
         measuringSpoonsNecklace:
-          name: Ölçü kaşığı kolyesi
+          name: Ölçülü kaşık kolyesi
         meatCleaver:
           desc: Keskin çelik bıçağıyla et parçalarını daha küçük parçalara ayırabilir.
             Dikkatli olmazsan parmakların dahil.
@@ -704,6 +871,8 @@ singulars:
           name: Basit tava
         sturdyWhisk:
           name: Sağlam çırpıcı
+        eberhartCorkscrew:
+          name: Eberhart tirbuşonu
       crafting:
         candlehat:
           desc: Mum tutuşturulmuş bir şapka. İnsan başka ne ister?
@@ -915,6 +1084,69 @@ singulars:
     achievements:
       bootsOfSpeed:
         name: Sürat botu
+      ringOfHomesickness:
+        name: Sıla yüzüğü
+      omniTool:
+        name: Omnicihaz
+      trashGrabber:
+        name: Çöp toplayıcı
+      treasureHunterJacket:
+        name: Hazine avcısı ceketi
+      jugglingBalls:
+        name: Hokkabaz topları
+      capeOfHalfAchiever:
+        name: Yarı Muvaffak Pelerini
+      adventurersPants:
+        name: Maceracı pantolonu
+      adventurersGloves:
+        name: Maceracı eldiveni
+      capeOfAchiever:
+        name: Muvaffak Pelerini
+      treasureHunterHat:
+        name: Hazine avcısı şapkası
+      treasureHunterPants:
+        name: Hazine avcısı pantolonu
+      rockstarAmulet:
+        name: Rock yıldızı kolyesi
+      adventurersHat:
+        name: Maceracı şapkası
+      adventurersCape:
+        name: Maceracı pelerini
+      axeOfDestruction:
+        name: Yıkım baltası
+      shoesOfEscape:
+        name: Kaçış ayakkabısı
+      otherSock:
+        name: Diğer çorap teki
+      tinyBackpack:
+        name: Ufak sırt çantası
+      shinyRing:
+        name: Parlak yüzük
+      gemBracelet:
+        name: Cevher bileklik
+      pathfinder:
+        name: Kılavuz
+      runningVisor:
+        name: Koşu siperliği
+      rustySpyglass:
+        name: Paslı dürbün
+      greedyPiggyBank:
+        name: Açgözlü domuz kumbarası
+      trekkingPoles:
+        name: Yürüyüş batonları
+      conservationistHat:
+        name: Çevreci şapkası
+      conservationistShirt:
+        name: Çevreci gömleği
+      conservationistShorts:
+        name: Çevreci şortu
+      cursedAwl:
+        name: Lanetli tığ
+      finePearlRing:
+        name: İyi inci yüzük
+    agGuildSpecials:
+      adventuringCompass:
+        name: Macera pusulası
   materials:
     carpentry:
       birchPlank:
@@ -1213,6 +1445,14 @@ singulars:
       fishingLine:
         name: Misina
         desc: Bunu doğadan geri toplayarak bir hayvanın hayatını kurtarmış olabilirsin.
+      invasiveSpeciesTag:
+        name: İstilacı tür etiketi
+      adventurersPin:
+        name: Emaye maceracı broşu
+      unidentifiedRemains:
+        name: Kimliği belirsiz naaş
+      nameTag:
+        name: Künye
     rawFish:
       rawCarp:
         desc: Sazanın hafif aroması, çeşit çeşit yemek tarifine kolayca uyum sağlar.
@@ -1396,3 +1636,26 @@ singulars:
       aerodynamicThread:
         name: Aerodinamik iplik
         desc: Hafif ama kuvvetli olmasıyla bilinen nadir bir iplik.
+    trinketry:
+      circularRootTrinket:
+        name: Süs yuvarlak kök
+      shrimpTrinket:
+        name: Süs karides
+      batTrinket:
+        name: Süs yarasa
+      eelTrinket:
+        name: Süs yılan balığı
+      heronTrinket:
+        name: Süs balıkçıl
+      luckyRabbitFootTrinket:
+        name: Süs uğurlu tavşan ayağı
+      coolingIceTrinket:
+        name: Süs buz sarkıtı
+      measuringSpoonsTrinket:
+        name: Süs ölçü kaşığı
+      sharkToothTrinket:
+        name: Süs köpek balığı dişi
+      beaverTrinket:
+        name: Süs kunduz
+      compassTrinket:
+        name: Süs pusula
