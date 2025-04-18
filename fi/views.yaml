@@ -196,11 +196,11 @@ singulars:
         määrän etapeissa. Et menetä näitä saavutuksia, vaikka saavutuspisteitä tulisi
         lisää.
       totalProgressUnlocks: Saat nämä palkinnot sen mukaan, kuinka paljon saavutuksia
-        olet saavuttanut prosentuaalisesti kokonaismäärästä, ja menetät pääsyn esineisiin,
-        jos saavutuspisteitä tulee lisää ja jäät vaaditun prosentuaalisen määrän alle.
+        olet saavuttanut, ja menetät pääsyn esineisiin, jos saavutuspisteitä tulee
+        lisää ja jäät vaaditun määrän alle.
       specialItems: Erikoisesineitä, kuten <c>keräilyesineitä</c>, <c>tehtäväesineitä</c>
         ja <c>artifakteja</c>, kerätään koko matkasi aikana WalkScapessa. Voit tarkistaa
-        ne täältä. Keräilyesineet antavat sinulle saavutuspisteisiin edistystä.
+        ne täältä. Keräilyesineet antavat sinulle edistystä saavutuspisteisiin.
     phrases:
       notUnlocked: Lukittu saavutus
       rewardProgress: Palkitsemispisteiden eteneminen
@@ -226,7 +226,7 @@ singulars:
     errors:
       notSameQuality: Kaikkien materiaalien on oltava joko oivia tai normaaleja
       noService: Palveluvaatimus ei täyty
-      noMaterials: Sinulta puuttuu materiaaleja
+      noMaterials: Käsityömateriaaleja puuttuu
       skillRequirementsNotMet: Taitovaatimukset eivät täyty
   inventory:
     info:
@@ -274,8 +274,8 @@ singulars:
       itemsInUse: Olet valinnut esineitä, jotka ovat jo käytössä. Käytössä olevia
         esineitä ei voi pudottaa tai laittaa pankkiin.
       requirementsNotMet: Vaatimukset eivät täyty.
-      checkBank: Katso pankki
-      slotDoesntExist: Tämä repun tila ei enää ole olemassa.
+      checkBank: Avaa pankki
+      slotDoesntExist: Tätä esinetilaa ei ole enää olemassa.
     options:
       showConsumables: Näytä hyödykkeet
       consenseInventory: Tiivistä reppunäkymä
@@ -328,7 +328,7 @@ singulars:
       jobs: Työtehtävät
   jobs:
     phrases:
-      acceptJob: Hyväksy työ
+      acceptJob: Hyväksy työtehtävä
       give: Anna
       openJournal: Avaa päiväkirja
       itemsFromInventory: Esineet repusta
@@ -338,10 +338,11 @@ singulars:
       refreshIn: 'Työtehtävätaulu päivitetään:'
       rewards: Valmistumispalkinnot
       hasNoItemsInInventory: Repussasi ei ole sopivia esineitä.
-      noJobsAvailable: 'Tällä hetkellä tässä paikassa ei ole töitä. Uusia työtehtäviä
+      noJobsAvailable: 'Tällä hetkellä tässä paikassa ei ole työtehtäviä. Uusia työtehtäviä
         on tulossa saataville:'
-      abandonJob: Luovu työstä
-      acceptedJobs: Tällä hetkellä hyväksytyt työt <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      abandonJob: Luovu työtehtävästä
+      acceptedJobs: Tällä hetkellä hyväksytyt työtehtävät <chip><c i=0>{count}</c>/<c
+        i=1>{maxCount}</c></chip>
       youMustBeInLocation: Sinun on oltava samassa paikassa <object id="{obj}"/> kanssa
         palauttaaksesi esineet.
       hasNoBank: Tässä paikassa ei ole pankkia.
@@ -350,23 +351,23 @@ singulars:
       collectRewards: Lunasta palkinnot
     dialogs:
       abandonJob:
-        title: Luovu työstä
-        text: Oletko varma, että haluat luopua tästä työstä? Menetät kaiken edistymisen
-          ja palkinnot tästä työstä.
+        title: Hylkää työtehtävä
+        text: Oletko varma, että haluat luopua tästä työtehtävästä? Menetät kaiken
+          edistymisen ja palkinnot tästä työtehtävästä.
   activity:
     phrases:
       consumables: Hyödykkeet
       noActivity: Ei aktiviteettia
-      savedSteps: Pelastetut askeleet
+      savedSteps: Säästetyt askeleet
       stopWhenOverEncumbered: Lopeta repun ylitäyttyessä
       options: Vaihtoehdot
       inventoryIsOverLimit: Reppusi on ylikuormittunut!
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Globaali työtehokkuus <c>-{penalty}%</c>
-      notAffectingTraveling: (ei vaikuta työtehokkuuteen matkustaessa)
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Yleinen työtehokkuus <c>-{penalty}%</c>
+      notAffectingTraveling: (ei vaikuta matkustuksen työtehokkuuteen)
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
-      savedSteps: Sinulla on käytössä pelastettuja askelia. Jokainen askeleesi lasketaan
-        kahtena kunnes kaikki pelastetut askeleet ovat kulutettu.
+      savedSteps: Sinulla on käytössä säästettyjä askelia. Jokainen askeleesi lasketaan
+        kahtena kunnes kaikki säästetyt askeleet ovat kulutettu.
       noActivity: Et ole valinnut mitään aktiviteettia. <hl>Valitse jokin alla olevista</hl>,
         tai pyyhkäise vasemmalle nähdäksesi kaiken mitä voit tehdä tässä paikassa.
   character:
@@ -378,6 +379,8 @@ singulars:
       totalLevel: Kokonaistaso
     info:
       skillBreakdown: Tässä on hahmosi matkan aikana saavutettujen taitojen kokonaisjakauma.
+        Voit napauttaa mitä tahansa taidoista nähdäksesi niistä lisätietoja ja mitä
+        ne avaavat.
   permissions:
     phrases:
       pedometerPermission: Askelmittarin lupa
@@ -398,7 +401,7 @@ singulars:
       openChest: Avaa
       openAll: Avaa kaikki
       noItems: Sinulla ei ole aarteita avattavaksi. Voit saada arkkuja erilaisista
-        aktiviteeteistä.
+        aktiviteeteista.
   abilities:
     info:
       abilitiesInfo: Kyvyt ovat erikoistoimintoja, joilla voit saada välittömiä etuja
@@ -589,9 +592,9 @@ singulars:
       sold: Myyty
       buying: Ostaminen
       selling: Myynti
-      resetTrade: Peruuta kauppa
+      resetTrade: Nollaa kauppa
       buyBack: Takaisinosto
   popupBubbles:
     phrases:
-      arrivedToLocation: Saavuit <object id={location} />
+      arrivedToLocation: Saavuit paikkaan <object id={location} />
       overEncumbered: Reppusi on täynnä ja kantokykysi on ylittynyt.
