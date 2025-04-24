@@ -138,9 +138,7 @@ singulars:
         tuuli. Siitä päivästä lähtien, minne ikinä meninkin, minä juoksin!
     spaceCarsAndBirds:
       name: Avaruutta, Autoja ja Lintuja
-      desc: '"En koskaan anna periksi. Minun täytyisi olla kuollut tai täysin työkyvytön.
-        Ja kun sanon ei koskaan, tarkoitan, etten koskaan anna periksi, enkä koskaan
-        petä teitä" -Melon Usk'
+      desc: 'Win a fortune in a game, my life will never be the same...'
     tutorialComplete:
       desc: Olet vihdoin valmis poistumaan lähtöalueelta, eikö niin?
       name: Oppitunti Ohi
@@ -197,8 +195,10 @@ singulars:
       desc: <PLACEHOLDER>
   requirements:
     forageHoney: Kerää <numberProgress /> hunajakennoa.
-    catchCrabs: Saa <numberProgress /> kalaa kalastaessa.
-    chop5kTrees: Kaada <numberProgress /> puuta.
+    catchCrabs: Saa <object id="fish" /> tehdessäsi<object id="activity_fishing" />
+      <numberProgress />
+    chop5kTrees: Suorita <object id="woodcuttingTrees" /> toimintoja<numberProgress
+      />
     collect1kMushrooms: Kerää <numberProgress /> sientä.
     cook20DifferentRecipes: Kokkaa <numberProgress /> eri reseptiä.
     craftHatchetOfHighestQuality: Luo korkeimman laadun kirves. <numberProgress />
