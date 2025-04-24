@@ -10,9 +10,7 @@ singulars:
         name: <PLACEHOLDER>
         text: <stat s="chestFind"/> en pratiquant la compétence <supp k="skill"/>
       whileTraveling:
-        desc: <PLACEHOLDER>Lors de votre voyage vers votre prochaine destination,
-          vous tombez sur un coffre ! Avec précaution, vous le ramassez et le placez
-          dans votre sac.
+        desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
         text: <stat s="chestFind"/> en voyageant
       whenKeywordSetBonus:
@@ -37,11 +35,13 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="chestFind"/> en se trouvant en <supp k="realm"/>
+      whileSkillGroup:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: <stat s="chestFind"/> en pratiquant une compétence de <supp k="skillGroup"/>.
     craftingOutcome:
       global:
-        desc: <PLACEHOLDER>Votre compétence et votre expertise en matière d'artisanat
-          ne vous ont pas induit en erreur, le travail que vous avez réalisé tient
-          la route.
+        desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
         text: Global <stat s="craftingOutcome"/>
       whileMainSkill:
@@ -97,6 +97,10 @@ singulars:
         desc: <PLACEHOLDER>
         text: Global <stat s="doubleAction"/> en portant au moins <supp k="quantity"/>
           objets d'<supp k="keyword"/>.
+      whileSkillGroup:
+        text: <stat s="doubleAction"/> en pratiquant une compétence de<supp k="skillGroup"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     experience:
       whileTraveling:
         text: <stat s="bonusExperience"/> en voyageant
@@ -123,6 +127,10 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Global <stat s="bonusExperience"/> dans <supp k="keyword"/>.
+      whileSkillGroup:
+        text: <stat s="bonusExperience"/> en pratiquant une compétence de<supp k="skillGroup"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     noMaterialsConsumed:
       whileTraveling:
         text: <stat s="noMaterialsConsumed"/> en voyageant
@@ -145,6 +153,11 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Global <stat s="noMaterialsConsumed"/> dans <supp k="keyword"/>.
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> en pratiquant une compétence de <supp
+          k="skillGroup"/>.
     skillLevel:
       global:
         text: Niveau <stat s="skillLevel"/>
@@ -185,6 +198,10 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Global <stat s="stepsRequired"/> dans <supp k="keyword"/>.
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> en pratiquant une compétence de <supp k="skillGroup"/>.
     workEfficiency:
       whileTraveling:
         text: <stat s="workEfficiency"/> en voyageant
@@ -234,6 +251,11 @@ singulars:
         text: Global <stat s="workEfficiency"/> lorsque <supp k="historyData"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="workEfficiency"/> en pratiquant une compétence de <supp k="skillGroup"/>
+          .
     fineMaterialFind:
       global:
         text: Global <stat s="fineMaterialFind"/>
@@ -270,6 +292,11 @@ singulars:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
         text: Global <stat s="fineMaterialFind"/> dans <supp k="keyword"/>.
+      whileSkillGroup:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: <stat s="fineMaterialFind"/> en pratiquant une compétence de <supp k="skillGroup"/>
+          .
     doubleRewards:
       whenAchievementPoints:
         text: Global <stat s="doubleRewards"/> en ayant <supp k="achievementPoints"/>
@@ -296,10 +323,15 @@ singulars:
       whileActivity:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: Global <stat s="doubleRewards"/> en pratiquant <supp k="activityType"/>.
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Global <stat s="doubleRewards"/>
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleRewards"/> en pratiquant une compétence de <supp k="skillGroup"/>.
     rollSpecialTable:
       whileMainSkill:
         text: <stat s="rollSpecialTable"/> en pratiquant la compétence <supp k="skill"/>
@@ -307,6 +339,8 @@ singulars:
         desc: <PLACEHOLDER>
       global:
         text: <stat s="rollSpecialTable"/>
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
     travelingDistance:
       whileTraveling:
         name: <PLACEHOLDER>
@@ -345,6 +379,10 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Global <stat s="findCollectibles"/> dans <supp k="keyword"/>.
+      whileSkillGroup:
+        text: <stat s="findCollectibles"/> en pratiquant une compétence de <supp k="skillGroup"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     findGems:
       whileMining:
         name: <PLACEHOLDER>
@@ -370,3 +408,15 @@ singulars:
       name: <PLACEHOLDER>
       desc: <PLACEHOLDER>
       text: Chance de trouver <hl>1</hl> Jeton de la Guilde des Aventuriers
+    gainOneMoney:
+      desc: <PLACEHOLDER>
+      text: Chance de trouver <hl>1</hl> pièce d'or
+      name: <PLACEHOLDER>
+    rollGemPouchTable:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Chance d'obtenir<hl>1</hl> gemme du sac de gemmes
+    gainZeroToTenMoney:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Chance de trouver de <hl>0</hl> à<hl>10</hl> pièces d'or

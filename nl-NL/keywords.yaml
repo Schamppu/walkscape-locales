@@ -2,24 +2,24 @@ singulars:
   activities:
     fishing:
       name: Vissen
-      requirementLevel: Vissen activiteit vereist welke op z'n minst <keywordRequirements
-        /> vereist.
-      requirement: Vissen activiteit vereist.
+      requirementLevel: Vereist een visactiviteit met ten minste <keywordRequirements
+        /> in zijn vereisten.
+      requirement: Vereist een <object id="activity_fishing" /> activiteit.
     miningOres:
-      requirementLevel: Erts mijnen activiteit vereist welke op z'n minst <keywordRequirements
-        /> vereist.
+      requirementLevel: Vereist een ertsdelf-activiteit met ten minste <keywordRequirements
+        /> in zijn vereisten.
       name: Erts mijnen
-      requirement: Erts mijnen activiteit vereist.
+      requirement: Vereist een <object id="activity_mining" /> activiteit.
     woodcuttingTrees:
       requirementLevel: Vereist een houthakactiviteit met tenminste <keywordRequirements
         /> in zijn vereisten.
       name: Houthakken
       requirement: Vereist een <object id="woodcuttingTrees" />-activiteit.
     foragingPlants:
-      name: Planten zoeken
-      requirement: Planten zoeken activiteit vereist.
-      requirementLevel: Planten zoeken activiteit vereist welke op z'n minst <keywordRequirements
-        /> vereist.
+      name: Planten verzamelen
+      requirement: Vereist een <object id="activity_foraging" /> activiteit.
+      requirementLevel: Vereist een plantenverzamel-activiteit met ten minste <keywordRequirements
+        /> in zijn vereisten.
   materials:
     fish:
       name: Vis
@@ -70,17 +70,17 @@ singulars:
       requirementLevel: Vereist een pan welke op z'n minst <keywordRequirements />
         vereist.
       name: Pan
-      requirement: Vereist een pan.
+      requirement: Vereist het dragen van een <object id="cookingPan" />.
     woodcuttingHatchet:
       requirementLevel: Vereist een houthakkersbijl welke op z'n minst <keywordRequirements
         /> vereist.
       name: Bijl
-      requirement: Vereist een houthakkersbijl.
+      requirement: Vereist het dragen van een <object id="woodcuttingHatchet" />.
     carpentryTool:
       requirementLevel: Vereist timmergereedschap welke op z'n minst <keywordRequirements
         /> vereist.
       name: Timmergereedschap
-      requirement: Vereist timmergereedschap.
+      requirement: Vereist het dragen van timmergereedschap.
     knife:
       requirementLevel: Vereist een mes welke op z'n minst <keywordRequirements />
         vereist.
@@ -90,17 +90,17 @@ singulars:
       requirementLevel: Vereist een sikkel welke op z'n minst <keywordRequirements
         /> vereist.
       name: Sikkel
-      requirement: Vereist een sikkel.
+      requirement: Vereist het dragen van een <object id="sickle" />.
     pickaxe:
       requirementLevel: Vereist een pikhouweel welke op z'n minst <keywordRequirements
         /> vereist.
       name: Pikhouweel
-      requirement: Vereist een pikhouweel.
+      requirement: Vereist het dragen van een <object id="pickaxe" />.
     fishingNet:
       requirementLevel: Vereist een visnet welke op z'n minst <keywordRequirements
         /> vereist.
       name: Visnet
-      requirement: Vereist een visnet.
+      requirement: Vereist het dragen van een <object id="fishingNet" />.
     screwdriver:
       requirementLevel: Vereist een schroevendraaier welke op z'n minst <keywordRequirements
         /> vereist.
@@ -113,32 +113,32 @@ singulars:
       requirement: Vereist specerijen.
     goldPan:
       name: Goudpan
-      requirement: Vereist een goudpan.
+      requirement: Vereist het dragen van een <object id="goldPan" />.
       requirementLevel: Vereist een goudpan welke op z'n minst <keywordRequirements
         /> vereist.
     magnetic:
       name: Magnetisch
-      requirement: Vereist een magneet.
+      requirement: Vereist het dragen van een <object id="magnetic" /> voorwerp.
       requirementLevel: Vereist een magneet welke op z'n minst <keywordRequirements
         /> vereist.
     tool:
       name: Gereedschap
-      requirement: Vereist gereedschap.
+      requirement: Vereist het dragen van <object id="tool" />.
       requirementLevel: Vereist gereedschap welke op z'n minst <keywordRequirements
         /> vereist.
     fishingRod:
       name: Vishengel
-      requirement: Vereist het dragen van een vishengel.
+      requirement: Vereist het dragen van een <object id="fishingRod" />.
       requirementLevel: Vereist een vishengel welke op z'n minst <keywordRequirements
         /> vereist.
     fishingSpear:
       name: Visserij speer
-      requirement: Vereist een visserij speer.
+      requirement: Vereist het dragen van een <object id="fishingSpear" />.
       requirementLevel: Vereist een visserij speer welke op z'n minst <keywordRequirements
         /> vereist.
     fishingCage:
       name: Visserij kooi
-      requirement: Vereist een visserij kooi.
+      requirement: Vereist het dragen van een <object id="fishingCage" />.
       requirementLevel: Vereist een visserij kooi welke op z'n minst <keywordRequirements
         /> vereist.
     fishing:
@@ -147,33 +147,33 @@ singulars:
       requirementLevel: Vereist een hulpmiddel voor vissen welke op z'n minst <keywordRequirements
         /> vereist.
     cookingTool:
-      requirement: Vereist kookgereedschap.
+      requirement: Vereist het dragen van <object id="cookingTool" />.
       name: Kookgereedschap
       requirementLevel: Vereist kookgereedschap welke op z'n minst <keywordRequirements
         /> vereist.
     craftingTool:
       name: Ambacht gereedschap
-      requirement: Vereist ambacht gereedschap.
+      requirement: Vereist het dragen van een <object id="craftingTool" />.
       requirementLevel: Vereist ambacht gereedschap welke op z'n minst <keywordRequirements
         /> vereist.
     fishingLure:
       name: Lokaas
-      requirement: Vereist lokaas.
+      requirement: Vereist het dragen van een <object id="fishingLure" />.
       requirementLevel: Vereist lokaas welke op z'n minst <keywordRequirements />
         vereist.
     magnifyingLense:
       name: Vergrootglas
-      requirement: Vereist een vergrootglas.
-      requirementLevel: Vereist een vergrootglas welke op z'n minst <keywordRequirements
-        /> vereist.
+      requirement: Vereist het dragen van een <object id="magnifyingLense" />.
+      requirementLevel: Vereist een vergrootglas met minstens <keywordRequirements
+        /> in zijn vereisten.
     cookingKnife:
       name: Mes
-      requirement: Vereist een mes.
+      requirement: Vereist het dragen van een <object id="cookingKnife" />.
       requirementLevel: Vereist een mes welke op z'n minst <keywordRequirements />
         vereist.
     cookingPot:
       name: Kookpot
-      requirement: Vereist een kookpot.
+      requirement: Vereist het dragen van een <object id="cookingPot" />.
       requirementLevel: Vereist een kookpot welke op z'n minst <keywordRequirements
         /> vereist.
     cuttingBoard:
@@ -214,6 +214,12 @@ singulars:
     logSplitter:
       requirement: Vereist een hout splijter.
       name: Hout Splijter
+    fishingTool:
+      name: Visgerei
+      requirement: Vereist het dragen van <object id="fishingTool" /> gerelateerd
+        gereedschap.
+      requirementLevel: Vereist visgerei met minstens <keywordRequirements /> in zijn
+        vereisten.
   recipes:
     skills:
       cooking:
@@ -226,45 +232,80 @@ singulars:
           <object id="recipe_cooking" />.
   gear:
     frisbee:
-      name: Frisbee
-      requirementLevel: Vereist een frisbee die minstens <keywordRequirements /> in
-        zijn vereisten heeft.
-      requirement: Vereist een frisbee.
+      name: Luchtschijf
+      requirementLevel: Vereist een luchtschijf met ten minste <keywordRequirements
+        /> in zijn vereisten.
+      requirement: Vereist het dragen van een <object id="frisbee" />.
     skillingGear:
       name: Vaardigheidsuitrusting
-      requirement: Vaardigheidsuitrusting benodigd.
+      requirement: Vereist het dragen van <object id="skillingGear" />.
       requirementLevel: Vereist vaardigheidsuitrusting die minstens <keywordRequirements
         /> in zijn vereisten heeft.
     skis:
       name: Ski's
-      requirement: Vereist ski's.
-      requirementLevel: Vereist ski's die minstens <keywordRequirements /> in hun
-        vereisten hebben.
+      requirement: Vereist het dragen van <object id="skis" />.
+      requirementLevel: Vereist ski's met minstens <keywordRequirements /> in hun
+        vereisten.
     lifeVest:
       name: Reddingsvest
-      requirement: Vereist een reddingsvest.
+      requirement: Vereist het dragen van een <object id="lifevest" />.
       requirementLevel: Vereist een reddingsvest met minstens <keywordRequirements
         /> in zijn vereisten.
     climbing:
-      requirement: Vereist klimuitrusting.
-      name: Klimmen
+      requirement: Vereist het dragen van <object id="climbingTool" />.
+      name: Klimuitrusting
       requirementLevel: Vereist klimuitrusting met minstens <keywordRequirements />
         in zijn vereisten.
     bugCatchingNet:
       name: Insectenvangnet
-      requirement: Vereist een insectenvangnet.
+      requirement: Vereist het dragen van een <object id="bugCatchingNet" />.
       requirementLevel: Vereist een insectenvangnet met minstens <keywordRequirements
         /> in zijn vereisten.
     ring:
-      requirement: Vereist een ring.
+      requirement: Vereist het dragen van een <object id="item_ring" />.
       name: Ring
       requirementLevel: Vereist een ring met minstens <keywordRequirements /> in zijn
         vereisten.
     socks:
       name: Sokken
-      requirement: Vereist het dragen van sokken.
+      requirement: Vereist het dragen van <object id="item_socks" />.
       requirementLevel: Vereist sokken met minstens <keywordRequirements /> in hun
         vereisten.
+    bellows:
+      requirementLevel: Vereist een blaasbalg met minstens <keywordRequirements />
+        in zijn vereisten.
+      name: Blaasbalg
+      requirement: Vereist het dragen van <object id="bellows" />.
+    basket:
+      name: Mand
+      requirement: Vereist het dragen van een <object id="basket" />.
+      requirementLevel: Vereist een mand met minstens <keywordRequirements /> in zijn
+        vereisten.
+    amulet:
+      name: Amulet
+      requirement: Vereist het dragen van een <object id="item_amulet" />.
+      requirementLevel: Vereist een amulet met minstens <keywordRequirements /> in
+        zijn vereisten.
+    arrows:
+      requirementLevel: Vereist pijlen met minstens <keywordRequirements /> in hun
+        vereisten.
+      name: Pijlen
+      requirement: Vereist het dragen van <object id="arrows" />.
+    underwater:
+      requirement: Vereist <object id="item_underwater" /> uitrusting.
+      name: Onderwater
+      requirementLevel: Vereist onderwateruitrusting met minstens <keywordRequirements
+        /> in zijn vereisten.
+    weapon:
+      name: Wapen
+      requirement: Vereist het dragen van een <object id="weapon" />.
+      requirementLevel: Vereist een wapen met minstens <keywordRequirements /> in
+        zijn vereisten.
+    shield:
+      name: Schild
+      requirement: Vereist het dragen van een <object id="shield" />.
+      requirementLevel: Vereist een schild met minstens <keywordRequirements /> in
+        zijn vereisten.
   consumables:
     cookedFish:
       requirementLevel: Vereist een gebakken vis welke op z'n minst <keywordRequirements

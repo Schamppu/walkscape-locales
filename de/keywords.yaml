@@ -276,6 +276,16 @@ singulars:
       requirement: Erfordert ein ausgerüstetes <object id="skillBook" />.
       requirementlevel: Erfordert ein Fertigkeitsbuch, das mindestens <keywordRequirements
         /> in seinen Anforderungen erfüllt.
+    huntingBow:
+      name: Jagdbogen
+      requirement: Erfordert einen ausgestatteten <object id="huntingBow" />.
+      requirementLevel: Erfordert einen Jagdbogen, der mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt hat.
+    huntingTrap:
+      requirementLevel: Erfordert eine Jagd-Falle, die mindestens <keywordRequirements
+        /> in ihren Anforderungen erfüllt hat.
+      name: Jagd-Falle
+      requirement: Erfordert eine ausgerüstete <object id="huntingTrap" />.
   activities:
     woodcuttingTrees:
       name: Bäume fällen
@@ -368,6 +378,11 @@ singulars:
       requirementLevel: Erfordert einen Schild, der mindestens <keywordRequirements
         /> in seinen Anforderungen erfüllt.
       requirement: Erfordert einen ausgerüsteten <object id="shield" />.
+    arrows:
+      name: Pfeile
+      requirementLevel: Erfordert Pfeile, die mindestens <keywordRequirements /> in
+        ihren Anforderungen erfüllt haben.
+      requirement: Erfordert ausgerüstete <object id="arrows" />.
   recipes:
     skills:
       cooking:
@@ -441,10 +456,13 @@ singulars:
       requirementLevel: Erfordert Müll, der mindestens <keywordRequirements /> benötigt.
     currency:
       name: Währung
+      requirementLevel: Erfordert Währung, die mindestens <keywordRequirements />
+        in ihren Anforderungen erfüllt.
+      requirement: Erfordert <object id="currency" />.
   general:
     lightSource:
       name: Lichtquelle
-      requirement: Erfordert eine <object id="lightSource" />.
+      requirement: Erfordert eine ausgerüstete <object id="lightSource" />.
       requirementLevel: Voraussetzung ist, dass der Benutzer ein <keywordRequirements
         /> ausgestattet hat.
     fuel:
@@ -478,6 +496,10 @@ singulars:
         name: Weltweit
       trinketry:
         name: Kunsthandwerk
+      hunting:
+        name: Jagen
+      tailoring:
+        name: Schneiderei
     items:
       consumables:
         potion:
@@ -493,29 +515,43 @@ singulars:
       name: Prozent der erreichten Erfolge
       requirement: Keine
       requirementLevel: Keine
+    reward:
+      requirementLevel: Erfordert eine Belohnung für die Errungenschaft, die mindestens
+        <keywordRequirements /> in ihren Anforderungen erfüllt.
+      name: Belohnung für die Errungenschaft
+      requirement: Erfordert eine <object id="achievement_reward" />.
   itemSets:
     expertDivingGear:
       requirementLevel: Erfordert Experten-Tauchausrüstung, die mindestens <keywordRequirements
         /> benötigt.
       name: Experten Tauchausrüstung
-      requirement: Experten Tauchausrüstung erforderlich.
+      requirement: Erfordert <object id="itemset_diving_gear_expert" />.
     divingGear:
       requirementLevel: Erfordert Tauchausrüstung, die mindestens <keywordRequirements
         /> benötigt.
       name: Tauchausrüstung
-      requirement: Tauchausrüstung erforderlich.
+      requirement: Erfordert <object id="itemset_diving_gear" />.
     advancedDivingGear:
       requirementLevel: Erfordert fortgeschrittene Tauchausrüstung, die mindestens
         <keywordRequirements /> benötigt.
       name: Fortgeschrittene Tauchausrüstung
-      requirement: Fortgeschrittene Tauchausrüstung erforderlich.
+      requirement: Erfordert <object id="itemset_diving_gear_advanced" />.
     treasureHunter:
       name: Set des Schatzjägers
+      requirement: Erfordert ausgerüstete Teile des <object id="itemset_treasure_hunter"
+        />-Sets.
+      requirementLevel: Erfordert Schatzsucher-Ausrüstung, die mindestens <keywordRequirements
+        /> in ihren Anforderungen erfüllt.
     adventuringTools:
       name: Set für Abenteurer
+      requirementLevel: Erfordert ein Abenteurerwerkzeug, das mindestens <keywordRequirements
+        /> in seinen Anforderungen erfüllt.
+      requirement: Erfordert ausgerüstete Teile des <object id="itemset_adventuring_tools"
+        />-Sets.
     properGear:
       name: Passende Ausrüstung
-      requirement: Erfordert getragene Teile des passenden Ausrüstungssets.
+      requirement: Erfordert getragene Teile des <object id="itemset_proper_gear"
+        />-Sets.
       requirementLevel: Erfordert getragene passende Ausrüstung, die mindestens <keywordRequirements
         /> in ihren Anforderungen erfüllt.
   locations:
@@ -532,6 +568,8 @@ singulars:
       name: Küche
     bench:
       name: Kunsthandwerksbank
+    loom:
+      name: Webstuhl
   weight:
     light:
       name: Leicht
@@ -539,3 +577,9 @@ singulars:
       name: Superleicht
     heavy:
       name: Schwer
+  faction:
+    reward:
+      name: Fraktionsbelohnung
+      requirement: Erfordert eine <object id="faction_reward" />.
+      requirementLevel: Erfordert eine Fraktionsbelohnung, die mindestens <keywordRequirements
+        /> in ihren Anforderungen erfüllt.

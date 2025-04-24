@@ -16,20 +16,27 @@ singulars:
   errors:
     characterValidation:
       nameTooShort: Karakter adı en az 3 harften oluşmalıdır.
-      nameContainsleadingTrailingSpaces: Boşlukla başlanamaz veya peş peşe boşluk
+      nameContainsleadingTrailingSpaces: Boşlukla başlanamaz veya art arda boşluk
         konamaz.
       nameContaintsConsecutiveSpaces: Art arda boşluk konamaz.
       nameTooShortWithSpacesRemoved: Karakter adı boşluklar sayılmadan en az 3 harften
         oluşmalıdır.
-      nameContainsSpecialCharacters: Karakter adı özel işaretler içeriyor. Yalnızca
+      nameContainsSpecialCharacters: Karakter adı özel semboller içeriyor. Yalnızca
         harfler, sayılar ve boşluk kullanılabilir.
     serverError:
       newUpdate:
         title: Yeni güncelleme
         text: Oyuna güncelleme geldi. Lütfen yeni güncellemeyi indirmek için oyunu
-          yeniden başlatın.
+          yeniden başlat.
       noClosedBetaAccess:
         title: Kapalı beta erişimi süresi dolmuş
+        text: <c i=0>WalkScape Kapalı Beta erişimi süren dolmuş</c>. Erişimini Kapalı
+          Beta'ya yeniden başvurarak gelecekteki bir kabul dalgasında ya da oyuna
+          <c i=1>Patreon</c> veya <c i=1>Buy Me a Coffee</c> üzerinden destek vererek
+          derhal geri kazanabilirsin.\n\nOyuna destek vermeye karar verirsen, Patreon
+          veya Buy Me a Coffee hesabını <c i=1>WalkScape Portal Hesabı Sayfanda</c>
+          bağlayarak oyuna erişimini geri kazanabilirsin. Ayrıca <c i=1>Beta erişimi
+          başvurunu</c> da Hesap Sayfandan yapabilirsin.
       noInternetConnection:
         title: WalkScape sunucusuna bağlanılamadı
         text: WalkScape sunucusuna bağlanma girişimi başarısız oldu. İnternet bağlantının
@@ -40,8 +47,8 @@ singulars:
         text: Oyun sunucusu şu anda bakımda. Lütfen daha sonra tekrar dene.
       serverOffline:
         title: WalkScape sunucusu çevrim dışı
-        text: Oyun sunucusu şu anda çevrim dışı. Bakım yapılması veya sunucudaki bir
-          sorun nedeniyle olabilir. Lütfen daha sonra tekrar dene.
+        text: Oyun sunucusu şu anda çevrim dışı. Bakım yapılması ya da sunucudaki
+          bir sorun buna neden olabilir. Lütfen daha sonra tekrar dene.
       unknownError:
         text: Bilinmeyen hata.
         title: Bilinmeyen hata.
@@ -56,21 +63,25 @@ singulars:
         title: Bağlantı hatası
       invalidSession:
         title: Geçersiz oturum
-        text: Oturumun geçersiz. Lütfen tekrar giriş yap.
+        text: Oturumun geçersiz. Lütfen oyunu yeniden başlatarak tekrar giriş yap.
       newClientUpdate:
-        text: Oyunun güncel değil ve yeni bir sürüm mevcut. Lütfen oynamaya devam
-          etmek için oyunun en son sürümünü indir.
-        title: Yeni istemci güncellemesi mevcut
+        text: Oyunun güncel değil ve daha yeni bir sürümü mevcut. Lütfen oynamaya
+          devam etmek için oyunun en son sürümünü indir.
+        title: Yeni uygulama güncellemesi mevcut
       unauthorized:
         title: Yetkisiz kişi
         text: Yetkin bulunmuyor. Lütfen tekrar giriş yap.
       failureToUpdateContent:
         title: İçerik güncellenemedi
+        text: Oyun uygulaması içeriği güncelleyemedi. Lütfen bu durumu hatanın ve
+          cihazının detaylarıyla birlikte Discord üzerinden geliştiricilere bildir.
+          Oyunu yeniden başlatarak içerik başarıyla indirilecek mi diye bakmayı da
+          deneyebilirsin.
     gameError:
       initializingGameFailed:
-        text: Oyun istemcisi başlatılamadı. Lütfen bu durumu hatanın ve cihazının
-          detaylarıyla birlikte Discord üzerinden geliştiricilere bildir. Başarıyla
-          açılacak mı görmek için oyunu yeniden başlatmayı da deneyebilirsin.
+        text: Oyun uygulaması başlatılamadı. Lütfen bu durumu hatanın ve cihazının
+          detaylarıyla birlikte Discord üzerinden geliştiricilere bildir. Oyunu yeniden
+          başlatarak yükleme başarılı olacak mı diye bakmayı da deneyebilirsin.
         title: Oyun başlatılamadı
       loadingPlayerFailed:
         title: Oyuncu yüklenemedi
@@ -78,16 +89,16 @@ singulars:
           ile geliştiricilerle iletişime geç.
       stepLoadingFailed:
         title: Adımlar yüklenemedi
-        text: Oyun istemcisi adımları yükleyemedi. Lütfen bu durumu hatanın ve cihazının
-          detaylarıyla birlikte Discord üzerinden geliştiricilere bildir. Adımlar
-          başarıyla yüklenecek mi görmek için oyunu yeniden başlatmayı da deneyebilirsin.
+        text: Oyun uygulaması adımları yükleyemedi. Lütfen bu durumu hatanın ve cihazının
+          detaylarıyla birlikte Discord üzerinden geliştiricilere bildir. Oyunu yeniden
+          başlatarak adımlar başarıyla yüklenecek mi diye bakmayı da deneyebilirsin.
     activityCancelled:
       title: Faaliyet iptal edildi
       stepsAreInfinite: Gereksinimlerini artık karşılamadığın için mevcut faaliyet
         iptal edildi.
     fatalError:
       error: Hata için üzgünüz. Unutma ki oyun henüz kapalı betada ve bütün oyuncu
-        kayıtları her gün buluta kaydediliyor.
+        kayıtları her gün buluta yükleniyor.
   messages:
     comingSoon:
       title: Çok yakında
@@ -102,6 +113,10 @@ singulars:
       title: Devre dışı
       text: Bu özellik şu anda <hl>geçici olarak devre dışı</hl>. Daha fazla bilgi
         için Portal'ı, Reddit'i veya Discord'u kontrol edebilirsin.
+    workInProgress:
+      title: Devam eden çalışma
+      text: Bu özellik hala geliştirme aşamasında ve pek çok işlevi <hl>henüz mevcut
+        değil</hl>. Yine de deneyebilir ve tamamlandığı zaman geri gelebilirsin!
   popups:
     achievementUnlocked:
       achievementPoints: '{points} başarım puanı'
@@ -110,14 +125,18 @@ singulars:
       achievementUnlocked: '{achievement} başarımı açıldı'
     idleSteps:
       characterGained: Karakter <c>+{amount}</c> tecrübe kazandı />
-      characterLeveledUpFrom: Karakter <c i="0">{from}</c>'den <c i="1">{to}</c>'e
-        seviye atladı.
+      characterLeveledUpFrom: Karakter <c i="0">{from}</c> seviyeden <c i="1">{to}</c>
+        seviyeye çıktı.
       craftedItem: <c>+{amount}</c> <item id="{item}" /> üretildi.
       gainedExperience: <skill skill="{skill}" /> <c>+{exp}</c> tecrübe kazandı.
       gainedItem: <c>+{amount}</c> <item id="{item}" /> kazanıldı.
       nothingHappened: Kayda değer bir şey olmadı.
       stepsWhileAway: Oyun kapalıyken kazanılan adım
-      whileYouWereAway: Sen yokken...
+      whileYouWereAway: Sen uzaktayken...
+      skillLeveledUp: <skill skill="{skill}" /> <c i="0">{from}</c> seviyeden <c i="1">{to}</c>
+        seviyeye çıktı.
+      gainedMoney: <c i="0">+{amount}</c> <c i="1">akçe</c> kazanıldı.
+      arrivedAt: <location /> <c>{location}</c> konumuna varıldı.
     characterLevelUp:
       unlocks: Açılanlar
       noNewUnlocks: Bu seviyede açılan yeni bir şey yok.
@@ -126,6 +145,16 @@ singulars:
       skillLevelUp: '{skillName} seviye atladı'
       unlocks: Açılanlar
       noNewUnlocks: Bu seviyede açılan yeni bir şey yok.
+      newActivity: <chip><stext><c>Yeni faaliyet</c></stext></chip> <c>{activityName}</c>
+        açıldı.
+      newItem: <chip><stext><c>Eşya açıldı</c></stext></chip> <item id="{item}"/>
+        artık kuşanılabilir.
+      newRecipe: <chip><stext><c i="0">Yeni tarif</c></stext></chip> <c i="1">{recipeName}</c>
+        açıldı.
+      newDrop: <chip><stext><c i="0">Yeni ganimet</c></stext></chip> <c i="1">{itemName}</c>
+        artık <c>{activityName}</c> faaliyetinden kazanılabilir.
+      newRoute: <chip><stext><c i="0">Yeni seyahat rotası</c></stext></chip> <c i="1"><location
+        id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c> açıldı.
     inactiveSteps:
       stepsWhileInactive: Oyun uykudayken kazanılan adım
   info:
@@ -150,17 +179,18 @@ singulars:
         text: Teçhizat setinde izin verilenden daha çok alet var.
       changingActivityFailed:
         title: Faaliyet değiştirilemedi
-        text: Faaliyet değiştirilemedi. Ya zaten yapıyorsundur ya da mevcut değildir.
+        text: Faaliyet değiştirilemedi. Ya zaten yaptığın faaliyettir ya da mevcut
+          değildir.
       withdrawZero:
-        title: Çekme başarısız
+        title: Çekme işlemi başarısız
         text: Sıfır veya daha az eşya çekemezsin.
       withdrawTooFew:
-        title: Çekme başarısız
+        title: Çekme işlemi başarısız
         text: Çekecek yeterince eşyan yok.
       withdrawDidNotExist:
-        title: Çekme başarısız
+        title: Çekme işlemi başarısız
         text: Çekmeye çalıştığın eşya bulunmuyor. Bankayı yeniden açmak bu sorunu
           düzeltebilir.
       withdrawFailed:
-        title: Çekme başarısız
+        title: Çekme işlemi başarısız
         text: Çekme işlemi başarısız. Lütfen tekrar dene.

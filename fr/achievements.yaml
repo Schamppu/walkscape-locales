@@ -38,7 +38,7 @@ singulars:
       name: Le Maitre A Donné Une Chaussette À Dobby
     masterchef:
       desc: Délicieux! Tu fais un bon chef, semble-t-il.
-      name: Masterchef
+      name: Top Chef
     myPrecious:
       desc: |-
         Que le diable emporte le Sacquet! Ça a disparu! Qu’est-ce que ça a dans ses poches? Oh on le devine, on le devine, mon précieux. Il l’a trouvé, oui sans nul doute.
@@ -57,7 +57,7 @@ singulars:
       desc: Hard rock hallelujah!
       name: Rockstar
     thatsXcomBaby:
-      desc: Le hasard peut être très frustrant.
+      desc: Le hasard peut parfois être très frustrant.
       name: C'est ça XCOM Bébé
     touchTheGrass:
       desc: Je t'ai fait toucher de l'herbe, n'est-ce pas?
@@ -140,7 +140,7 @@ singulars:
     jackOfAllTrades:
       desc: Félicitations, vous avez atteint la moitié de toutes les compétences !
         Ou pas ?
-      name: Carré d'As
+      name: Touche-à-tout
     prideAndAccomplishment:
       name: Fierté et accomplissement
       desc: Parfois, c'est dans le pire que tu es le meilleur.
@@ -152,16 +152,14 @@ singulars:
         Depuis ce jour, si j'allais quelque part, j'y allais en courant !
       name: J'avais juste envie de courir
     spaceCarsAndBirds:
-      name: L'espace, les voitures et les oiseaux
-      desc: Je n'abandonne jamais. Il faudrait que je sois mort ou infirme. Et quand
-        je dis jamais, je veux dire "I'm never gonna give you up, never gonna let
-        you down" - Melon Usk
+      name: Toutes les choses que je pourrais faire
+      desc: Et faire fortune à la roulette, pour que ma vie change aussi net...
     tutorialComplete:
       desc: Vous êtes finalement prêt à sortir de la zone de tutoriel, n'est-ce pas
         ?
       name: Tutoriel terminé
     thanksHerbert:
-      name: Merci, Herbet !
+      name: Merci, Herbert !
       desc: Herbert à le cœur sur la main, il vendra volontiers son vieil équipement
         d'aventurier pour quelques pièces.
     trenchExplorer:
@@ -209,15 +207,22 @@ singulars:
       name: Au Delà De l'Apparat
     aVeryFashionableCoast:
       name: Une Côte Très à la Mode
+      desc: Vous vous sentez enfin à votre place parmi les habitants de la capitale
+        de la mode d'Arenum, entre Middlecrest et Everhaven.
     nice:
       desc: Joli.
       name: Joli.
+    residualRelic:
+      desc: Le bon accessoire au mauvais endroit peut faire toute la différence dans
+        ce monde.
+      name: Relique résiduelle
   requirements:
     catchCrabs: Attrapez <numberProgress /> <object id="fish" /> lors de <object id="activity_fishing"
       />
-    chop5kTrees: Coupez <numberProgress /> <object id="woodcuttingTrees" />
-    collect1kMushrooms: Cueillez <numberProgress /> <object id="item-mushroom-aa67c861-9b00-4b66-8692-2ca8d6619181"
-      alwaysShow="true" /> lors de <object id="activity_foraging" />.
+    chop5kTrees: Complétez l'action <object id="woodcuttingTrees" /><numberProgress
+      />fois
+    collect1kMushrooms: Cueillez <numberProgress /> <object id="mushroom" alwaysShow="true"
+      /> lors de <object id="activity_foraging" />
     cook20DifferentRecipes: Préparez <numberProgress /> recettes différentes.
     craftHatchetOfHighestQuality: Fabriquez une <object id="woodcuttingHatchet" />
       de la plus haute qualité. <numberProgress />
@@ -229,8 +234,8 @@ singulars:
     forageHoney: Récupérez <numberProgress /> <object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
       alwaysShow="true" /> lors de <object id="activity_foraging" />.
     gain99Agility: Augmentez votre agilité jusqu'au niveau <numberProgress />
-    gainRingWhileFishing: Obtenez un <object id="item-ring_of_the_heron-331538f6-1905-4d1e-bd29-75100a2b59f6"
-      /> lors de <object id="activity_fishing" />. <numberProgress />
+    gainRingWhileFishing: Obtenez <numberProgress /><object id="item_ring" /> lors
+      de <object id="activity_fishing" />.
     walkSteps: Faites <numberProgress /> pas.
     have5DifferentGems: Détenez <numberProgress /> <object id="cut_gem" /> différentes
       dans votre inventaire.
@@ -272,37 +277,37 @@ singulars:
     goToNoiselessPass: Allez à l'endroit appelé <object id="location-noiseless_pass-e081df71-97eb-4708-90b0-f33e61b2a0c7"
       alwaysShow="true" />. <numberProgress />
     haveInventoryFilled: Soyez encombré. <numberProgress />
-    gainSocksFromActivity: Obtenez des <object id="item_socks" /> comme butin d'activité.
-      <numberProgress />
+    gainSocksFromActivity: Obtenez<numberProgress /> <object id="item_socks" /> comme
+      butin d'activité.
     dropItems: Lâchez <numberProgress /> objets.
     findIceSickle: Trouvez un <hl>outil très rare</hl> dans le Glacier. <numberProgress
       />
     sharkCook: Obtenez un <object id="item-cooked_shark-4eadab85-170e-42b5-a086-cb57cd9d9dc3"
       alwaysShow="true" /> en cuisinant. <numberProgress />
     activityBasket: Complétez l'activité <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
-      /> <numberProgress /> fois.
+      /> <numberProgress /> fois
     activityButterfly: Complétez l'activité <object id="activity-butterfly_catching-ddef8fc5-a61e-4689-bacb-e49ee89f09c8"
-      /> <numberProgress /> fois.
+      /> <numberProgress /> fois
     activityGlacier: Complétez l'activité <object id="activity-glacier_foraging-dfdd59cc-e38b-48fc-9a0e-439163abac12"
-      /> <numberProgress /> fois.
+      /> <numberProgress /> fois
     activityIce: Complétez l'activité <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
-      /> <numberProgress /> fois.
+      /> <numberProgress /> fois
     activitySand: Complétez l'activité <object id="activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d"
-      /> <numberProgress /> fois.
+      /> <numberProgress /> fois
     activitySled: Complétez l'activité <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
-      /> <numberProgress /> fois.
+      /> <numberProgress /> fois
     activitySwimBeg: Complétez l'activité <object id="activity-swimming_(beginner)-1ccee641-01d9-4bcb-8dd7-9df9c61142f2"
-      /> <numberProgress /> fois.
+      /> <numberProgress /> fois
     activitySwimExp: Complétez l'activité <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
-      /> <numberProgress /> fois.
+      /> <numberProgress /> fois
     activitySwimInt: Complétez l'activité <object id="activity-swimming_(intermediate)-37f761f4-f6fd-49a5-8389-5816388e0cf9"
-      /> <numberProgress /> fois.
+      /> <numberProgress /> fois
     activityTinkering: Complétez l'activité <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
-      /> <numberProgress /> fois.
-    gainFineStarPearl: Obtenez une <object id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81"
-      alwaysShow="true" /> de qualité lors d'une activité. <numberProgress />
-    gainFineTrash: Trouvez des <object id="item-trash-40c14f4e-3ef2-435a-a5de-123843f824bf"
-      alwaysShow="true" /> de qualité lors d'une activité. <numberProgress />
+      /> <numberProgress /> fois
+    gainFineStarPearl: Obtenez  <numberProgress /><object id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81"
+      alwaysShow="true" /> de qualité lors d'une activité.
+    gainFineTrash: Trouvez <numberProgress /><object id="item-trash-40c14f4e-3ef2-435a-a5de-123843f824bf"
+      alwaysShow="true" /> de qualité lors d'une activité.
     prepKelpRoll: Préparez <object id="item-kelp_rolls-90004956-7275-4b13-9488-61cc320afd09"
       /> <numberProgress /> fois.
     prepSaltrum: Préparez <object id="item-saltrum-f2df867a-21a7-48db-b13b-efea9e46cb5d"
@@ -311,3 +316,25 @@ singulars:
       /> <numberProgress /> fois.
     sharkFish: Obtenez un <object id="item-raw_shark-f543d44b-0cc7-4d5a-9cdc-50ce8d90cb86"
       alwaysShow="true" /> lors d'une activité. <numberProgress />
+    findCrossword: Trouvez <numberProgress /><object id="item-jarvonian_crossword_puzzle-01c3fefd-6d9e-4b4d-bb76-91981c663085"
+      />
+    equipPickaxe: Equipez <numberProgress /><object id="item-basic_pickaxe-a00d8626-e415-481c-88ee-fdafbb4a45f0"
+      />
+    equipNet: Équipez <numberProgress /><object id="item-small_fishing_net-05cb692d-840c-4c57-911c-1f65464aa800"
+      />
+    equipHatchet: Équipez <numberProgress /><object id="item-basic_hatchet-dc4b21f3-e651-4103-9127-e7d3b74151fe"
+      />
+    goToTrench: Allez à l'endroit appelé <object id="location-darkdepths-385aa267-b46d-47b8-b124-aa3827c39fef"
+      alwaysShow="true" /><numberProgress />
+    lootFindCommon: Obtenez <numberProgress />butin ordinaire d'un<object id="chest"
+      />
+    lootFindUncommon: Obtenez <numberProgress /> butin peu commun d'un<object id="chest"
+      />
+    lootFindRare: Obtenez <numberProgress /> butin rare d'un<object id="chest" />
+    lootFindEpic: Obtenez <numberProgress /> butin épique d'un<object id="chest" />
+    lootFindLegendary: Obtenez <numberProgress /> butin légendaire d'un<object id="chest"
+      />
+    gainTrinketFromActivity: Obtenez<numberProgress /><object id="item_trinket" />
+      comme butin d'activité
+    completeActivity: Complétez l'activité <item id="{item}" alwaysShow="true" />
+      <numberProgress /> fois

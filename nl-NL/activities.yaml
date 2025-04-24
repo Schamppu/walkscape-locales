@@ -34,14 +34,18 @@ biedt een nieuwe uitdaging, terwijl je kundig je frisbee om obstakels heen buigt
 waardoor je met elke gecalculeerde worp weer een beetje beter wordt.", "name": "Frisbee
 golfen (Gemiddeld)"}, "guardDuty": {"desc": "Als bewaker van het Wallisische Rijk
 moet je je rekeningen zien te betalen en dit is hoe. Je waakt over het koninkrijk,
-waardoor je betaald wordt voor je waakzame ogen."}, "sledding": {"desc": "Terwijl
-je de handvatten van de slee vastpakt en jezelf afzet, voel je de adrenaline door
-je aderen stromen. De wereld vervaagt om je heen en voor even ben je een winterse
-snelheidsduivel die de besneeuwde heuvel bedwingt."}}, "jarvonia": {"mountainClimbingBeginner": {
-"desc": "Je bereidt je voor op je klim. Het is een prachtige dag met zon en geen wind.
-Toch slaat je hart over als je langzaam omhoog klimt en verlies je de grip op één
-voet. Wat een schrik! Uiteindelijk bereik je de top en kijk je trots naar de wereld
-onder je voeten.", "name": "Bergbeklimmen (beginner)"}, "mountainClimbingIntermediate": {
+waardoor je betaald wordt voor je waakzame ogen.", name: Wachtdienst}, "sledding": {
+"desc": "Terwijl je de handvatten van de slee vastpakt en jezelf afzet, voel je de
+adrenaline door je aderen stromen. De wereld vervaagt om je heen en voor even ben
+je een winterse snelheidsduivel die de besneeuwde heuvel bedwingt.", name: Sleeën},
+traveling: {name: Reizen, desc: Aan het reizen naar een nieuwe locatie}, sandcastleBuilding: {
+name: Zandkasteel bouwen, desc: 'Het bouwen van zandkastelen op het strand is een
+makkelijke manier om je creativiteit te uiten. Je zanderige creaties blijven misschien
+niet lang staan, maar het is simpel genot op het moment van doen.'}}, "jarvonia": {
+"mountainClimbingBeginner": {"desc": "Je bereidt je voor op je klim. Het is een prachtige
+dag met zon en geen wind. Toch slaat je hart over als je langzaam omhoog klimt en
+verlies je de grip op één voet. Wat een schrik! Uiteindelijk bereik je de top en kijk
+je trots naar de wereld onder je voeten.", "name": "Bergbeklimmen (beginner)"}, "mountainClimbingIntermediate": {
 "desc": "Nou hebben we het ergens over. Deze muur is bijna verticaal en er zijn geen
 makkelijk bereikbare grijppunten. Je houdt je stevig vast aan de muur, en voelt je
 spieren lijden onder de kracht die je nodig hebt. De top smaakt naar bloed en glorie.
@@ -77,12 +81,12 @@ is proportioneel met de omgevingstemperatuur, de duur varieert van minuten tot p
 "name": "IJssculpturen"}, "tinkering": {"desc": "Je krabt aan je kin terwijl je nadenkt
 over hoe je deze rommel kunt repareren. Je bedenkt duizend manieren om het te doen,
 maar voor de meeste daarvan mis je onderdelen. Je kijkt de werkplaats rond, op zoek
-naar iets specifieks. Daar is het! Laten we aan de slag gaan.", "name": "sleutelen"}}},
+naar iets specifieks. Daar is het! Laten we aan de slag gaan.", "name": "Sleutelen"}}},
 "fishing": {"gdte": {"magnetFishing": {"desc": "Met een sterke magneet spullen uit
-een waterlichaam halen betaalt zelden de rekeningen, maar helpt een paar goede doelen:
-het reinigt het milieu en het helpt bij het oplossen van misdaden. Houd rekening met
-de regels eromheen en veel plezier! Je kunt van alles omhoog halen!", "name": "Magneetvissen"},
-pondFishingNet: {name: Moeras vijver vissen (Net), desc: Je laat een vissersnet zakken
+het water vissen betaalt zelden de rekeningen, maar helpt een paar goede doelen: het
+reinigt het milieu en het helpt bij het oplossen van misdaden. Houd rekening met de
+regels eromheen en veel plezier! Je kunt van alles omhoog halen!", "name": "Magneetvissen"},
+pondFishingNet: {name: Moerasvijver vissen (Net), desc: Je laat een vissersnet zakken
 in het troebele water. Het duurt niet lang voordat verschillende waterdieren erin
 vastzitten.}}, "jarvonia": {"lakeFishing": {"desc": "Met bevroren vingers bevestig
 je voorzichtig het aas en werpt het uit over het kalme oppervlak van het meer.", name: Meervissen},
@@ -90,36 +94,74 @@ je voorzichtig het aas en werpt het uit over het kalme oppervlak van het meer.",
 met een serene schoonheid aan het glinsteren. Het stille water is uitnodigend en veelbelovend.",
 name: Vijver vissen}, "seaFishingNet": {"desc": "Langs de winterse kustlijn vind je
 een afgelegen plek en werp je je visnet uit in het kalme, kille water, genietend van
-de vredige eenzaamheid van het zeevissen.", "name": "Zeevissen (net)"}, "seaFishingRod": {
+de vredige eenzaamheid van het zeevissen.", "name": "Zeevissen (Net)"}, "seaFishingRod": {
 "desc": "Langs de winterse kustlijn zoek je een afgelegen plekje en gooi je je hengel
 uit in het kalme, kille water, genietend van de vredige eenzaamheid van het zeevissen.",
-"name": "Zeevissen (hengel)"}, seaFishingCage: {name: Zee vissen (Kooi), desc: Een
+"name": "Zeevissen (Hengel)"}, seaFishingCage: {name: Zeevissen (Kooi), desc: Een
 voedingsrijke stroming brengt allerlei soorten schaaldieren naar het gebied.}}, syrenthia: {
-seaFishingSpear: {name: Zee vissen (Speer)}, predatorHunting: {name: Roofdier jange
-(Speer)}}}, "foraging": {"gdte": {"butterflyCatching": {"desc": "Vlinders vangen vereist
-geduld en een goed net. Hoewel het leuk is om ze te achtervolgen, is de meest efficiënte
-optie om ze te vangen als ze stilzitten. Door ze te bewonderen en daarna weer vrij
-te laten, behoud je hun rol in het delicate natuurlijke evenwicht.", "name": "Vlinders
-vangen"}, "dumpsterDiving": {"desc": "In de doolhofachtige steegjes van de stad verken
-je de vergeten hoekjes, doorzoek je afgedankte spullen in de hoop verborgen schatten
-tussen de afdankertjes te vinden.", "name": "Dumpster diving"}, "swampForaging": {
-"desc": "In de ijle mist en mysterieuze kluwen van boomwortels stap je door plassen
-en dichte begroeiing om op zoek te gaan naar de mysteries die verborgen liggen in
-het mos en verlaten boten, in de hoop vergeten herinneringen en overblijfselen van
-een ooit vruchtbaar leven te vinden."}}, "global": {"dumpsterDiving": {"desc": "In
-de vele steegjes van de stad verken je de vergeten hoekjes en doorzoek je weggegooide
-spullen in de hoop verborgen schatten tussen de afdankertjes te vinden."}, "litterLooting": {
-"desc": "Je kamt door de afgedankte spullen in de drukte van de stad, in de hoop om
-een verborgen schat te vinden tussen al het puin."}}, "jarvonia": {"coastForaging": {
-"desc": "Terwijl je door de winterse kustlandschappen wandelt, word je één met de
-kou, op zoek naar voedsel en warmte tussen de besneeuwde rotsen en ijzige wateren."},
-"glacierForaging": {"desc": "Je zoekt ver en breed door de lege gletsjer. Je leert
-veel over jezelf, maar is er hier ook iets te vinden?", "name": "Gletsjer verzamelen"},
-"seashellSearching": {"desc": "<PLAATSHOLDER>", "name": "Schelpen zoeken"}, caveForaging: {
-desc: 'Het is daarbinnen donker, het is beter om een licht mee te nemen.'}}}, "mining": {
-"global": {"mineCoal": {"desc": "Elke slag van je trouwe houweel legt aders steenkool
-bloot, essentieel als brandstof voor de smeden van het rijk om wapens en pantsers
-te smeden waarmee het koninkrijk verdedigd wordt.", name: Steenkool delven}, "mineTarsiliumOre": {
+seaFishingSpear: {name: Zeevissen (Speer), desc: 'Terwijl je je speer stevig vasthoudt,
+zwem je rondjes rond het scheepswrak, aandachtig op zoek naar grote vissen die zo
+dichtbij durven te komen dat je toe kan slaan.'}, predatorHunting: {name: Roofdier
+jagen (Speer), desc: 'Gedreven door de jacht, race je door het diepe water, hyperalert
+op je omgeving. Elke vezel van je lichaam is klaar om roofdieren aan te vallen voordat
+zij jou aanvallen.'}}}, "foraging": {"gdte": {"butterflyCatching": {"desc": "Vlinders
+vangen vereist geduld en een goed net. Hoewel het leuk is om ze te achtervolgen, is
+de meest efficiënte optie om ze te vangen als ze stilzitten. Door ze te bewonderen
+en daarna weer vrij te laten, behoud je hun rol in het delicate natuurlijke evenwicht.",
+"name": "Vlinders vangen"}, "dumpsterDiving": {"desc": "In de doolhofachtige steegjes
+van de stad verken je de vergeten hoekjes, doorzoek je afgedankte spullen in de hoop
+verborgen schatten tussen de afdankertjes te vinden.", "name": "Dumpster diving"},
+"swampForaging": {"desc": "In de ijle mist en mysterieuze kluwen van boomwortels stap
+je door plassen en dichte begroeiing om op zoek te gaan naar de mysteries die verborgen
+liggen in het mos en verlaten boten, in de hoop vergeten herinneringen en overblijfselen
+van een ooit vruchtbaar leven te vinden.", name: Verzamelen in moeras}, forestForaging: {
+desc: 'Terwijl je door de rustgevende omhelzing van het bos wandelt, bevind je jezelf
+in de harmonie van het woud, en verzamel je de giften van de natuur die gedijen onder
+het bladerdak van de bomen.', name: Verzamelen in het bos}, trellinDumpsterDiving: {
+name: Trellin Containerduiken, desc: 'Middenin het labyrint van steegjes in de stad,
+verken je de vergeten hoekjes, en pluis je de weggegooide prullaria door in de hoop
+om verborgen schatten te ontaarden tussen de troep.'}, erdwiseDumpsterDiving: {name: Erdweis
+containerduiken, desc: 'Middenin het labyrint van steegjes in de stad, verken je de
+vergeten hoekjes, en pluis je de weggegooide prullaria door in de hoop om verborgen
+schatten te ontaarden tussen de troep.'}, plainsForaging: {name: Verzamelen op de
+vlaktes, desc: 'Terwijl je door de gematigde vlaktes door trekt, bevind je jezelf
+op een reis vol ontdekkingen, kronkelend door een landschap waar de schatten van de
+natuur wachten onder de zachte zon en blauwe lucht.'}}, "global": {"dumpsterDiving": {
+"desc": "In de vele steegjes van de stad verken je de vergeten hoekjes en doorzoek
+je weggegooide spullen in de hoop verborgen schatten tussen de afdankertjes te vinden."},
+"litterLooting": {"desc": "Je kamt door de afgedankte spullen in de drukte van de
+stad, in de hoop om een verborgen schat te vinden tussen al het puin.", name: Afval
+graaien}}, "jarvonia": {"coastForaging": {"desc": "Terwijl je door de winterse kustlandschappen
+wandelt, word je één met de kou, op zoek naar voedsel en warmte tussen de besneeuwde
+rotsen en ijzige wateren.", name: Verzamelen aan de kust}, "glacierForaging": {"desc": "Je
+zoekt ver en breed door de lege gletsjer. Je leert veel over jezelf, maar is er hier
+ook iets te vinden?", "name": "Verzamelen op de gletsjer"}, "seashellSearching": {
+"desc": "<PLAATSHOLDER>", "name": "Schelpen zoeken"}, caveForaging: {desc: 'Het is
+daarbinnen donker, het is beter om een licht mee te nemen.', name: Verzamelen in grot},
+forestForaging: {desc: 'Je trekt door het winterwoud met een scherp oog, op zoek naar
+verborgen schatten onder het deken van sneeuw, genietend van de sensatie van het vinden
+van de eetbare bronnen uit de natuur.', name: Verzamelen in het bos}, cliffForaging: {
+desc: 'Aan de rand van de torenhoge klif verken je voorzichtig het ruwe terrein, op
+zoek naar wilde bergkruiden, weerbare paddestoelen, en andere eetbare schatten die
+floreren in deze ijle omgeving.', name: Verzamelen op de klif}, plainsForaging: {
+name: Verzamelen op de vlaktes, desc: 'Met elke voorzichtige stap over de vlakte,
+ervaar je de natuurlijke overvloed, door wilde bessen, zaden, en ontkiemde plantjes
+te verzamelen die in de grond onder je voeten gedijen.'}, hornOfRespiteTreasureHunt: {
+name: Schattenjacht, desc: De Avonturiersgilde heeft een uitdaging georganiseerd om
+speciale voorwerpen te vinden rond de Hoorn der Respijt. Hoelang duurt het voordat
+je ze allemaal vindt?}}, syrenthia: {seashellForaging: {desc: 'Op zoek naar waardevolle
+schelpen zwem je rond de zeebodem. De meeste liggen verborgen onder het zand, maar
+sommige klampen zich vast in de hoeken en gaten van onderwaterrotsen.', name: Schelpen
+verzamelen}, merfolkFarmForaging: {desc: Door je toegang tot de Gemeenschappelijke
+Zeeboerderij heb je de vrijheid om te gaan verzamelen in de eindeloze onderwaterakkers.
+Je vindt hier een groot aanbod van planten die wachten om geplukt te worden., name: Verzamelen
+op de meervolkboerderij}, kelpForaging: {name: Zeewier verzamelen, desc: 'Terwijl
+je omgeven bent door zeewier, inspecteer je nauwkeurig elk exemplaar voordat je alleen
+de allerbeste plukt.'}, wreckDiving: {name: Wrakduiken, desc: 'Je duikt diep het scheepswrak
+van Kasbrants Graf in, in de hoop schatten te kunnen vinden.'}}}, "mining": {"global": {
+"mineCoal": {"desc": "Elke slag van je trouwe houweel legt aders steenkool bloot,
+essentieel als brandstof voor de smeden van het rijk om wapens en pantsers te smeden
+waarmee het koninkrijk verdedigd wordt.", name: Steenkool delven}, "mineTarsiliumOre": {
 "desc": "Door je expertise weet je het donkere erts goed te vinden tussen de rotsen
 en hak je er kundig op los.", name: Teerzilium delven}, mineCopperOre: {name: Kopererts
 delven, desc: De lucht is gevuld met het ritmische geklink van je pikhouweel dat tegen
@@ -130,14 +172,14 @@ om ontdekt te worden.'}, mineIronOre: {name: IJzererts delven, desc: 'Elke zwaai
 de nederige pracht van het ijzererts bloot, wat een betrouwbare grondstof is met een
 breed scala aan mogelijkheden.'}, mineFarganiteOre: {name: Verganieterts delven, desc: Met
 zweet en tranen weet je ondanks zijn ontzettende hardheid langzaamaan wat verganiet
-te delven.}, mineTarsiliumOreUnderwater: {name: Teerziliumerts delven (onder water),
+te delven.}, mineTarsiliumOreUnderwater: {name: Teerziliumerts delven (Onder water),
 desc: 'Er is weinig licht onder water, maar dat is niet anders dan in een grot. Met
 teerzilium is het altijd moeilijk om het zwarte erts te zien in een donkere omgeving.'}},
 "jarvonia": {"goldPanning": {"desc": "Dit is een rudimentaire goudwinningstechniek
 die gebruik maakt van sedimentaire afzettingen in rivieren. Eerst wordt de pan ondergedompeld
 in het bodemzand. Door de pan met de hand te schudden, wordt het grind losgemaakt
 totdat alleen het zand en mogelijke goudklompjes overblijven.", "name": "Goud wassen"},
-"spelunking": {"desc": "Je kruipt hard over de grond als een hagedis. Onheilspellende
+"spelunking": {"desc": "Je kruipt over de harde grond als een hagedis. Onheilspellende
 gedachten vertroebelen je geest en verlammen je bijna. Het lukt je om ze even opzij
 te schuiven en verder te gaan. Al snel openbaart zich een nieuw onontdekt pad dat
 je vervult met vreugde.", "name": "Speleologie"}, "surfaceSaltMining": {"desc": "Zout

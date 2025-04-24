@@ -1,0 +1,70 @@
+singulars:
+  actions:
+    buttonLabels:
+      removeFriend: Arkadaşlıktan çıkar
+      unblock: Engeli kaldır
+      cancelInvite: Daveti iptal et
+      sendInvite: Arkadaşlık daveti gönder
+      createParty: Ekip oluştur
+      leaveParty: Ekipten ayrıl
+      leaveAndDestroyParty: Ekibi dağıt
+      inviteResponse:
+        reject: Reddet
+        block: Engelle
+        accept: Kabul et
+    confirmTitle:
+      unblock: Kullanıcının engelini kaldır
+      changeRole: İzinleri değiştir
+      inviteResponse:
+        block: Kullanıcıyı engelle
+    confirmDescription:
+      cancelInvite: Bu arkadaşlık davetini iptal etmek istediğine emin misin?
+      removeFriend: Arkadaşlığı bırakmak istediğine emin misin?
+      unblock: Bu kullanıcının engelini kaldırmak istediğine emin misin?
+      leaveParty: Ekipten ayrılmak istediğine emin misin?
+      leaveAndDestroyParty: Ekibi dağıtmak istediğine emin misin? Bu işlem geri alınamaz.
+      changeRole: <hl>{characterName}</hl> kişisini <hl>{partyRole}</hl> yapmak istediğine
+        emin misin?
+      inviteResponse:
+        block: Bu kullanıcıyı engellemek istediğine emin misin? Engellenen kullanıcılar
+          sana arkadaşlık daveti gönderemez.
+  status:
+    loadingInvites: Davetler kontrol ediliyor...
+  party:
+    manage: Yönet
+    role: Rol
+  relationship:
+    friends: Arkadaşsınız
+    blocked: Bu kullanıcıyı engelledin
+    inviteSent: Davet gönderildi
+    none: Sosyal
+    party:
+      member: Üye
+      admin: Yönetici
+      owner: Sahip
+    inviteReceived: Bir davet aldın
+  createParty:
+    input:
+      partyName: Ekip adı
+      catchphrase: Slogan
+      catchphraseHint: Slogan (İsteğe bağlı)
+    rules:
+      mayContain: '<bp />Şunları içerebilir: {list}'
+      noTrailingSpaces: <bp />Boşlukla başlayamaz veya bitemez
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        one: <bp />En az {} karakter
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />En az {} karakter
+      maxChar:
+        zero: '-'
+        one: <bp />En fazla {} karakter
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />En fazla {} karakter

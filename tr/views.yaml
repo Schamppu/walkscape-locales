@@ -49,20 +49,27 @@ maps:
     phrases:
       itemType:
         'collectible': Koleksiyonluklar
-        'consumable': Tek kullanımlıklar
+        'consumable': Tüketimlikler
         'crafted': Ürün
         'gear': Teçhizat
         'material': Malzemeler
-        'container': Kaplar
+        'container': Kutular
         'loot': Ganimet
         'special': Özel
         'tool': Aletler
+        'cosmetic': Kozmetikler
   settings:
     boolSettings:
-      'showRecipesServicesAreMet': Hizmet gereksinimleri karşılandı
-      'showRecipesMaterialsAreMet': Malzeme gereksinimleri karşılandı
-      'showRecipesRequirementsAreMet': Seviye gereksinimleri karşılandı
+      'showRecipesServicesAreMet': Hizmet gereksinimleri karşılanıyor
+      'showRecipesMaterialsAreMet': Malzeme gereksinimleri karşılanıyor
+      'showRecipesRequirementsAreMet': Seviye gereksinimleri karşılanıyor
       'showCompletedAchievements': Tamamlanan başarımları göster
+      'leftHandedMode': Solak modu
+      'inventoryCollapsed': Genişletilmiş envanter
+      'spriteOutlines': Çerçeveleri göster
+      'showFpsCounter': FPS sayacını göster
+      'shaderOutlineRendering': Çerçeve gölgelerini göster
+      'alwaysStopWhenInventoryFull': Envanter dolup taşınca kendiliğinden dur
     languages:
       'pt': Portekizce
       'de': Almanca
@@ -89,11 +96,28 @@ maps:
     leaderboardFilter:
       'everyone': Herkes
       'friends': Arkadaşlar
+    categories:
+      'accessibility': Erişilebilirlik
+      'graphics': Grafikler
+      'gameplay': Oynanış
+      'account': Hesap
+      'character': Karakter
+    enumSettings:
+      'language': Dil
+      'leaderboardFilter': Göster
+      'leaderboardType': Liderlik Tablosu
+      'stepDataTime': Zaman dilimi
+    custom:
+      'dataSource': Adım verisi kaynağı
+    notificationImportance:
+      'low': Ses veya titreşim yok, durum çubuğunda da görünmez.
+      'high': Ses veya titreşim çıkarır
+      'urgent': Ses veya titreşim çıkarıp bildirim olarak görünür.
   character:
     stepsTime:
-      'hourly': Saatlik adımlar
-      'daily': Günlük adımlar
-      'monthly': Aylık adımlar
+      'hourly': Saatlik adım
+      'daily': Günlük adım
+      'monthly': Aylık adım
 plurals:
   achievements:
     phrases:
@@ -102,7 +126,7 @@ plurals:
         many: '-'
         one: '{} başarım puanı'
         other: '{} başarım puanı'
-        two: '-'
+        two: '{} başarım puanı'
         zero: '-'
   activity:
     phrases:
@@ -160,44 +184,60 @@ plurals:
       consumableDuration:
         few: '-'
         many: '-'
+        other: <object id="{activity}" alwaysShow="true"/> faaliyeti eylem başına
+          <c>{steps}</c> adım gerektiriyor. Seçilmiş tüketimlik miktarı <c>{actions}
+          eylemi</c> etkiler.
+        one: <object id="{activity}" alwaysShow="true"/> faaliyeti eylem başına <c>{steps}</c>
+          adım gerektiriyor. Seçilmiş tüketimlik miktarı <c>{actions} eylemi</c> etkiler.
+        zero: <object id="{activity}" alwaysShow="true"/> faaliyeti eylem başına <c>{steps}</c>
+          adım gerektiriyor. Seçilmiş tüketimlik miktarı <c>{actions} eylemi</c> etkiler.
+        two: <object id="{activity}" alwaysShow="true"/> faaliyeti eylem başına <c>{steps}</c>
+          adım gerektiriyor. Seçilmiş tüketimlik miktarı <c>{actions} eylemi</c> etkiler.
 singulars:
   achievements:
     info:
-      collectibleItems: WalkScape dünyasından toplayabileceğin koleksiyonluk eşyaların
-        birkaç farklı çeşidi bulunur. Bu eşyalar envanterinde yer kaplamazlar ve her
-        daim karakterinin yanındadır.
-      noCollectibleItems: Henüz koleksiyonluk eşya bulmuş değilsin.
+      collectibleItems: WalkScape dünyasından toplayabileceğin koleksiyonlukların
+        birkaç farklı çeşidi vardır. Bu eşyalar envanterinde yer kaplamazlar ve her
+        daim karakterinin yanında bulunurlar.
+      noCollectibleItems: Henüz koleksiyonluk bulmuş değilsin.
       specialItems: WalkScape'teki yolculuğun boyunca <c>koleksiyonluklar</c>, <c>görev
         eşyaları</c> ve <c>eserler</c> gibi özel eşyalar toplarsın. Onlara buradan
-        bakabilirsin. Koleksiyonluklar başarım puanı ilerlemesi sağlar.
-      viewDescription: <hl>Ödül İlerlemesi</hl> kazanmak için başarımları tamamla.
-        Ödül İlerlemesi dolunca tüm karakterlerin için ödül kazanırsın. Bazı başarımlar
-        tamamlanınca da ödül verirler.
+        bakabilirsin. Koleksiyonluklar başarım puanı ilerlemesi de sağlar.
+      viewDescription: <hl>Başarım puanı</hl> kazanmak için başarımları tamamla. Belirli
+        başarım puanlarına ulaştığın zaman özel ödüller açarsın. Bazı başarımların
+        kendileri de tamamlanınca ödül verirler.
+      totalProgressUnlocks: Bu ödülleri başarımlarının toplam ilerlemesine göre kazanırsın.
+        Daha fazla başarım puanı eklenince eşyalara erişimini kaybedebilirsin.
+      checkPointUnlocks: Bu başarımları belirli başarım puanlarına erişince açarsın.
+        Daha fazla başarım puanı eklense bile bunlara erişimini kaybetmezsin.
     phrases:
       notUnlocked: Kilitli başarım
       rewardProgress: Ödül İlerlemesi
       unclaimedRewards: 'Alınmamış ödüller: '
       showRewards: Ödülleri göster
+      totalProgressUnlocks: Toplam ilerleme ödülleri
+      checkPointUnlocks: İlerleme aşaması ödülleri
   bank:
     phrases:
-      noItemsBank: Bankanda hiç eşya yok.
-      noItemsInventory: Envanterinde hiç eşya yok.
+      noItemsBank: Bankanda eşya bulunmuyor.
+      noItemsInventory: Envanterinde eşya bulunmuyor.
       deposit: Yatır
       withdraw: Çek
   character:
     info:
       skillBreakdown: Karakterinin yolculuğu boyunca geliştirdiği bütün becerilerinin
-        tablosu.
+        tablosu. Herhangi bir beceriye dokunarak daha detaylı bilgiye ulaşabilir ve
+        neler açtığını görebilirsin.
     phrases:
       checkOut: İşte WalkScape karakterim {name}. Bir göz at!\nhttps://walkscape.app
-      checkOutSubject: WalkScape'teki ilerlememe bir göz atın!
+      checkOutSubject: WalkScape'teki ilerlememe bir göz at!
       skills: Beceriler
-      stepsOfLastWeek: Son 7 günlük adımlar
+      stepsOfLastWeek: Son 7 günlük adım
       totalLevel: Toplam seviye
   characterCreation:
     info:
-      rememberSwipe: Eğer istersen karakter oluşturma esnasında seçimlerini değiştirmek
-        için geri dönebileceğini unutma.
+      rememberSwipe: Karakter oluşturma esnasında önceki seçimlerini değiştirmek için
+        geri dönebileceğini unutma.
     phrases:
       bodyType: Vücut tipi
       bodyTypeA: A
@@ -211,7 +251,7 @@ singulars:
       noMaterials: Şu anda üretim yapmak için hiç malzemen bulunmuyor.
       noMaterialsThatCouldBeUsed: Envanterindeki hiçbir malzeme üretim yapmak için
         kullanılamaz.
-      noServiceRequirements: Hizmet gereksinimi yok.
+      noServiceRequirements: Hizmet gereksinimi bulunmuyor.
       recipes: Tarifler
       requirements: Gereksinimler
       requirementsNotMet: Gereksinimleri karşılamıyorsun.
@@ -219,21 +259,27 @@ singulars:
       requiresOneOfTheFollowing: Aşağıdaki malzemelerden biri gerekli.
       rewards: Ödüller
       showingRecipiesThatUses: 'Bunu kullanan tarifler:'
+      requiresService: Hizmet gerekli.
+    errors:
+      notSameQuality: Malzemelerin tamamı ya iyi ya normal olmalı
+      noService: Hizmet gereksinimi karşılanmıyor
+      noMaterials: Üretim malzemeleri eksik
+      skillRequirementsNotMet: Beceri gereksinimleri karşılanmıyor
   gear:
     phrases:
-      combatModifiers: Savaş modifikasyonları
-      noCombatModifiers: Kuşanılmış eşyalardan alınan savaş modifikasyonu yok.
-      noPermanentModifiers: Daimi modifikasyon yok.
-      noSkillModifiers: Kuşanılmış eşyalardan alınan beceri modifikasyonu yok.
-      permanentModifiers: Daimi modifikasyonlar
-      skillModifiers: Beceri modifikasyonları
+      combatModifiers: Savaş nitelikleri
+      noCombatModifiers: Kuşanılmış eşyalardan alınan savaş niteliği bulunmuyor.
+      noPermanentModifiers: Daimi nitelik bulunmuyor.
+      noSkillModifiers: Kuşanılmış eşyalardan alınan beceri niteliği bulunmuyor.
+      permanentModifiers: Daimi nitelikler
+      skillModifiers: Beceri nitelikleri
   inventory:
     info:
-      noItemEquipped: Kuşanılmış eşya yok. \n\n Aşağıdaki listeden bir eşya seçip
-        "Kuşan" düğmesine basarak kuşanabilirsin.
-      noItemSelected: Seçilmiş eşya yok. \n\n Mevcut eşyanla karşılaştırmak ve kuşanmak
-        için aşağıdaki listeden bir eşya seç.
-      noItemsFound: Envanterinde bu yuvaya uyacak bir eşya bulunamadı.
+      noItemEquipped: Kuşanılmış eşya bulunmuyor. \n\n Aşağıdaki listeden bir eşya
+        seçip "Kuşan" düğmesine basarak kuşanabilirsin.
+      noItemSelected: Seçilmiş eşya bulunmuyor. \n\n Mevcut eşyanla karşılaştırıp
+        kuşanmak için aşağıdaki listeden bir eşya seç.
+      noItemsFound: Envanterinde bu yuvaya uygun bir eşya bulunmuyor.
     options:
       consenseInventory: Envanteri sıkıştır
       expandInventory: Envanteri genişlet
@@ -241,27 +287,27 @@ singulars:
       showGear: Teçhizatı göster
       showMaterials: Malzemeleri göster
     phrases:
-      allItemsInUse: Bu eşyaların hepsi şu anda kullanıldığından atılamazlar.
+      allItemsInUse: Bu eşyaların tümü şu anda kullanımda olduğundan bırakılamazlar.
       allSkills: Bütün beceriler
-      areYouSureToDrop: Eşya atmak istediğine emin misin? Eşyalar atılınca ebediyen
-        yok olur.
+      areYouSureToDrop: Eşyaları bırakmak istediğine emin misin? Bırakılan eşyalar
+        ebediyen yok olur.
       attributes: Nitelikler
       cantEquip: Kuşanılamaz.
-      checkBank: Bankaya bak
-      dropItems: Eşyaları at?
+      checkBank: Bankayı aç
+      dropItems: Eşyaları bırak?
       emptySlot: Boş yuva
       equipToRingOne: 1. yüzük yuvasına kuşan
       equipToRingTwo: 2. yüzük yuvasına kuşan
       equipToToolSlot: '{id}. alet yuvasına kuşan'
-      itemsInUse: Zaten kullanımda olan eşyaları seçtin. Kullanımdaki eşyaları atamaz
+      itemsInUse: Zaten kullanımda olan eşyaları seçtin. Kullanımdaki eşyaları bırakamaz
         veya bankaya koyamazsın.
       longPressTip: <c>İpucu:</c> Bir eşya yığınına basılı tutmak bütün benzer yığınları
         seçer.
-      noItemEquipped: Kuşanılmamış eşya yok
-      noItemSelected: Seçilmiş bir eşya yok
+      noItemEquipped: Kuşanılmış eşya bulunmuyor
+      noItemSelected: Seçilmiş eşya bulunmuyor
       requirementsNotMet: Gereksinimler karşılanmıyor.
       requires: Gerekli
-      slotDoesntExist: Bu eşya yuvası artık yok.
+      slotDoesntExist: Bu eşya yuvası artık bulunmuyor.
       slots: Eşya yuvası <c>{slots}</c>
       slotsCount: 'Eşya yuvası:'
       treasury: Hazine
@@ -273,6 +319,14 @@ singulars:
       selectedConsumable: Seçilmiş tüketimlik
       noConsumableSelected: Seçilmiş tüketimlik bulunmuyor. Aşağıdakilerden birini
         seçebilirsin.
+      selectedStacks: Seçilmiş <c>{stacks}</c> yığınlar
+      cantBeDropped: Eu eşya bırakılamaz.
+      oneOrMoreCantBeDropped: Bir veya daha fazla eşya bırakılamaz.
+      duration: Müddet
+      durationInSteps: <c>{steps}</c> <icon i="Steps" /> adım geçerli
+      inUse: Kullanımda
+      disableWhenChanging: Faaliyet değiştirince kullanmayı bırak
+      enableWhenBack: Önceki faaliyete başlayınca yeniden kullan
   leaderboards:
     phrases:
       first: İlk
@@ -291,7 +345,7 @@ singulars:
     phrases:
       activities: Faaliyetler
       buildings: Yapılar
-      noActivites: Bu konumda yapacak faaliyet bulunmuyor.
+      noActivites: Bu konumda yapılacak faaliyet bulunmuyor.
       services: Hizmetler
       jobs: İşler
       jobBoard: İş panosu
@@ -306,7 +360,7 @@ singulars:
       chooseCharacter: Karakterini seç veya yeni bir karakter oluştur.
       createCharacter: Yeni karakter oluştur
       deleteWord: SİL
-      deletingCharacter: Karakterini silmek <hl>geri alınamaz</hl>.
+      deletingCharacter: Karakterini silme işlemi <hl>geri alınamaz</hl>.
       dontDoIt: Emin değilsen bunu yapma.
       downloadingContent: Yeni oyun içeriği indiriliyor
       downloadingLocalisations: Güncellenmiş yerelleştirme indiriliyor
@@ -316,16 +370,20 @@ singulars:
       logIn: Giriş yap
       logOut: Çıkış yap
       lostInternet: Cihazının internet bağlantısı kesildi. Bağlantı bekleniyor...
-      noBetaAccess: Beta erişimi yok.
-      noInternet: İnternet bağlantısı yok
+      noBetaAccess: Beta erişimi bulunmuyor.
+      noInternet: İnternet bağlantısı bulunmuyor
       password: Parola
       pleaseEnterCredentials: Lütfen WalkScape hesabı bilgilerini gir.
       pleaseWait: Lütfen bekle...
       register: Kaydol
       welcomeToWalkscape: WalkScape'e hoş geldin, <hl>yabancı</hl>. Lütfen giriş yap.
       googlePlay: Play Store'dan güncelle
-      support: Oyunu destekle
+      support: Oyuna destek ver
       accountPage: Hesap Sayfası
+      authenticating: Doğrulanıyor...
+      ifYouAreSure: Eğer ki eminsen, aşağıdaki alana <c>SİL</c> yaz ve devam tuşuna
+        dokun.
+      testFlight: <c>TestFlight</c> üzerinden en son sürümü indirebilirsin.
     loadingStates:
       loadingCharactersFromCloud: Karakterler buluttan yükleniyor
       gameVersion: Oyun versiyonu alınıyor
@@ -336,11 +394,18 @@ singulars:
       readingCloudData: Bulut verisi okunuyor
       dataLoadingComplete: Veri yüklemesi tamamlandı!
       validatingGame: Oyun verisi sunucudan doğrulanıyor
+      checkingLocalizations: Sunucudaki yerelleştirme kontrol ediliyor
+      initializingProviders: Sağlayıcılar başlatılıyor
+      initializingObjects: Oyun nesneleri başlatılıyor
+      localizationFiles: Yerelleştirme dosyaları yükleniyor
+      startingGameLoad: Oyun verisi yüklemesi başlatılıyor
+      cleaningUpData: Veriler temizleniyor
   permissions:
     phrases:
       pedometerPermission: Adım sayacı izni
       permissionExplanation: Oyunun çalışması için, cihazının adım sayacı verilerini
-        kullanma iznine ihtiyacımız var. Oyuna devam etmek için lütfen bu izni onayla.
+        kullanma iznine ihtiyacımız var. Lütfen oyuna devam etmek için bu izni onayla.
+      exactAlarmPermission: Bildirim izni
   pfpCreation:
     buttons:
       choose: Seç
@@ -363,7 +428,7 @@ singulars:
       extras: Ekstralar
       homeRegion: Memleket
       mainOptions: Ana seçenekler
-      noVariantSelected: Seçilmiş çeşit yok
+      noVariantSelected: Seçilmiş çeşit bulunmuyor
       race: Irk
       resetToDefault: Varsayılana sıfırla
       selectedVariant: Çeşit {index} seçildi
@@ -371,6 +436,14 @@ singulars:
   stats:
     info:
       stats: Arenum dünyasında attığın her adımın toplam istatistiği.
+      chartWarning:
+        title: Grafiklerdeki yanlışlıklar
+        description: Önceki bir güncelleme sonrasında arka planda yapılan büyük değişiklikler
+          nedeniyle adım grafiklerinde yaşanan tutarsızlıklar birçok oyuncu tarafından
+          bildirildi. Grafiklerinde başka kaynaklardan farklı sonuçlar görme sorunlarıyla
+          karşılaşıyorsan büyük ihtimalle bundan kaynaklanıyordur. Oyunun mantığı
+          hala eskisi gibi çalışıyor. Grafik sorunları ise ileriki güncellemelerde
+          çözülecek.
     phrases:
       stats: İstatistik
       totalSkillXp: Toplam beceri tecrübesi
@@ -379,17 +452,17 @@ singulars:
     phrases:
       emptyToolSlot: Boş alet yuvası
       lockedToolSlot: <c>Karakter seviyesi {level}</c> olana kadar kilitli alet yuvası.
-      noToolEquipped: Bu yuvada alet yok.
+      noToolEquipped: Bu yuvada kuşanılmış alet bulunmuyor.
   trade:
     phrases:
-      buying: Alım {amount}
+      buying: Alınan {amount}
       restockIn: 'Yeni stoklara: '
-      selling: Satım {amount}
+      selling: Satılan {amount}
       total: Toplam
       trade: TAKAS
   tutorial:
     phrases:
-      noMoreMessages: Başka öğretici mesaj yok
+      noMoreMessages: Başka öğretici mesajı bulunmuyor
       youWillGain: Bu seçeneği seçersen aşağıdaki eşyaları kazanacaksın.
   worldMap:
     phrases:
@@ -408,30 +481,62 @@ singulars:
       youreHere: Şu anda bu konumdasın.
       noActivities: Bu konumda herhangi bir faaliyet mevcut değil.
       changeRouteWarning: Rotanı değiştirirsen mevcut seyahatini iptal ederek önceki
-        konuma döneceksin. Emin misin?
+        konuma geri döneceksin. Emin misin?
+      routeFromTo: <location i="{fromID}"/> konumundan <location i="{toID}"/> konumuna
   treasury:
     phrases:
       openAll: Tümünü aç
       openChest: Aç
+      noItems: Açılacak bir hazinen bulunmuyor. Sandıkları çeşitli faaliyetlerden
+        elde edebilirsin.
   jobs:
     phrases:
       rewards: Tamamlama ödülleri
+      collectRewards: Ödülleri al
+      youMustBeInLocationToCollect: Ödülleri almak için <object id="{obj}"/> ile aynı
+        konumda bulunmalısın.
+      youMustBeInLocation: Eşyaları teslim etmek için <object id="{obj}"/> ile aynı
+        konumda bulunmalısın.
+      acceptJob: İşi kabul et
+      abandonJob: İşten vazgeç
+      acceptedJobs: Elindeki iş sayısı
+      itemsFromInventory: Envanterindeki eşyalar
+      itemsFromBank: Bankandaki eşyalar
+      hasNoBank: Bu konumda banka bulunmuyor.
+      hasNoItemsInInventory: Envanterinde uygun eşya bulunmuyor.
+      hasNoItemsInBank: Bankanda uygun eşya bulunmuyor.
+      giveItems: Eşyaları ver
+      noJobsAvailable: 'Bu konumda şu anda mevcut bir iş bulunmuyor. Yeni işlere kalan
+        süre:'
+      refreshIn: 'İş panosunun yenilenmesine kalan süre:'
+      openJournal: Günlüğü aç
+      give: Ver
+    dialogs:
+      abandonJob:
+        title: İşten vazgeç
+        text: Bu işten vazgeçmek istediğine emin misin? Bu işin bütün ilerlemesini
+          ve ödüllerini kaybedeceksin.
   activity:
     phrases:
-      stopWhenOverEncumbered: Envanter taşınca dur
+      stopWhenOverEncumbered: Envanter dolup taşınca dur
       savedSteps: Birikmiş adım
       consumables: Tüketimlikler
+      noActivity: Faaliyet yok
+      inventoryIsOverLimit: Envanter limitine ulaştın!
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Genel verim <c>-{penalty}%</c>
+      notAffectingTraveling: (seyahat verimi etkilenmez)
+      options: Seçenekler
     info:
       consumablesUsage: Faaliyetler esnasında kullanmak için birer <c>yiyecek</c>
         ve <c>iksir</c> seçebilirsin.
-      noActivity: Şu anda seçilmiş bir faaliyet yok. <hl>Aşağıdakilerden birini seçebilir</hl>
-        veya sola kaydırarak bu konumdaki mevcut her şeyi görebilirsin.
-      savedSteps: Birikmiş adımların kullanılıyor. Tamamı tükenene kadar her adımın
+      noActivity: Şu anda seçilmiş bir faaliyet bulunmuyor. <hl>Aşağıdakilerden birini
+        seçebilir</hl> veya sola kaydırarak bu konumdaki mevcut her şeyi görebilirsin.
+      savedSteps: Birikmiş adımların harcanıyor. Tamamı tükenene kadar her adımın
         iki adım sayılır.
   settings:
     categories:
       gameplay:
-        stopWhenOverEncumberedDefault: Envanter taşınca kendiliğinden dur
+        stopWhenOverEncumberedDefault: Envanter dolup taşınca kendiliğinden dur
         title: Oynanış
         showFpsCounter: FPS sayacını göster
       notifications:
@@ -445,6 +550,13 @@ singulars:
         otherSource: Diğer kaynak
         changeWarning:
           title: Veri kaynağını değiştir?
+          description: Lütfen bu işlemin değişim sırasında adım kaybına yol açabileceğine
+            dikkat et.
+        lastSync: 'Son senkronize: {timestamp}'
+        requiresPermissionIos: Aşağıdaki listede cihazlar görünmüyorsa, Apple Sağlık
+          > Gizlilik & Güvenlik > Sağlık >(Uygulamalar) WalkScape menüsünden uygulamaya
+          adım verilerini kullanması için izin verdiğinden ve Apple Sağlık'ın bu cihazlarda
+          son 7 gün içinde adım kaydetmiş olduğundan emin ol.
       language:
         title: Dil
       account:
@@ -453,26 +565,30 @@ singulars:
       character:
         title: Karakter
         hideSteps: Adımları gizle
+        anonOnLeaderboard: Liderlik tablosunda gizle
       accessibility:
         leftHandedMode: Solak modu
         title: Erişilebilirlik
       closedBeta:
         clearStepsGraph: Adım grafiğini temizle
         title: Kapalı Beta
+        useThisToClear: Adım grafiğini sıfırlamak için bunu kullanabilirsin. Hatalar
+          yüzünden yanlış adımlar kazanmış ve grafiği sıfırlamak istiyorsan işine
+          yarar.
     phrases:
       exitToCharacterSelection: Karakter menüsüne çık
       settings: Ayarlar
   popupBubbles:
     phrases:
-      overEncumbered: Envanterin doldu taştı.
+      overEncumbered: Envanterin dolup taştı.
       arrivedToLocation: <object id={location} /> konumuna varıldı
   abilities:
     info:
       youHaveNoAbilities: <hl>Herhangi bir özel yeteneğin yok.</hl> Oyundaki bazı
-        teçhizatlar bekleme süresi karşılığında hızlı avantajlar sağlayan özel yetenekler
+        teçhizatlar bekleme süresi karşılığında hızlı avantajlar veren özel yetenekler
         kullanmanı sağlayabilir.
-      abilitiesInfo: Yetenekler, oyunda kullanarak hızlı avantajlar elde edebileceğin
-        özel eylemlerdir. Yetenekleri tekrar kullanmadan önce beklemen gereken bekleme
+      abilitiesInfo: Yetenekler, oyunda hızlı avantajlar elde etmeni sağlayan özel
+        eylemlerdir. Yetenekleri tekrar kullanmadan önce beklemen gereken bekleme
         süreleri bulunur.
     phrases:
       holdToCast: Yapmak için basılı tut
@@ -488,6 +604,7 @@ singulars:
     phrases:
       friends: Arkadaşlar
       pendingInvites: Bekleyen davetler
+      manageFriends: Sosyal ağını yönet
   gearSets:
     phrases:
       name: İsim
@@ -505,12 +622,55 @@ singulars:
       forActivities: 'Faaliyetler için: '
       unequipGear: Teçhizatı çıkar
       unequipTools: Aletleri çıkar
-      noItemSelected: Seçilmiş eşya yok
+      noItemSelected: Seçilmiş eşya bulunmuyor
       newSetDefaultName: Yeni Teçhizat Setim
       importedGearSetDefaultName: İçe Aktarılan Teçhizat Seti
     info:
       gearSetsDescription: Teçhizat setleri, teçhizatını çabucak değiştirmene yardım
         eder.
+      noGearSetsManage: Henüz oluşturduğun bir teçhizat seti bulunmuyor. İlk setini
+        aşağıdaki <c i=0>Yenisini oluştur</c> tuşu ile oluşturabilirsin.
+      noGearSetsList: Henüz bir teçhizat setin bulunmuyor. Yeni teçhizat setleri oluşturmak
+        veya içe aktarmak için <c i=0>Yönet</c> tuşunu kullan.
+      youDontHaveAnyItems: Eşya bulunmuyor. Ya bu türde bir eşyan bulunmuyordur ya
+        da arama sonuçların uygun bir eşya bulamamıştır.
+      gearSetManageDesc: Kuşanmak istediğin bir teçhizat setini aşağıdaki listeden
+        seç. Yenisi oluşturmak, içe veya dışa aktarmak için <c i=0>Yönet</c> tuşunu
+        kullanabilirsin.
+      gearSetsListDesc: Teçhizat setlerini buradan yönetebilirsin. <c i=0>Yenisini
+        oluşturmak için</c> aşağıdaki tuşu kullan. Yeni bir teçhizat seti oluştururken
+        <c i=1>mevcut kuşanılmış teçhizatını</c> da kopyalayabilirsin.
     errors:
-      keywordError: Teçhizat setinde zaten <object id="{keyword}" /> var
-      duplicateItem: Eşya teçhizat setinde zaten bulunuyor
+      keywordError: Teçhizat setinde zaten <object id="{keyword}" /> bulunuyor
+      duplicateItem: Bu eşya teçhizat setinde zaten bulunuyor
+  shop:
+    phrases:
+      resetTrade: Takası sıfırla
+      buying: Alınıyor
+      selling: Satılıyor
+      buyBack: Geri al
+      sold: Satılan
+      bought: Alınan
+  cooldowns:
+    phrases:
+      cooldownReady: 'Bekleme süresi: Hazır'
+      followingMustBeTrueToUse: 'Kullanmak için gereksinimler karşılanmıyor:'
+      followingMustBeTrueToTick: 'Bekleme süresinin azalması için:'
+      cooldownRemaining: 'Kalan bekleme süresi:'
+      noCooldown: Bekleme süresi yok.
+  wardrobe:
+    phrases:
+      noHeadwear: Herhangi bir başlığın bulunmuyor.
+      noFaceAccessories: Herhangi bir yüz aksesuarın bulunmuyor.
+      noBackAccessories: Herhangi bir sırt aksesuarın bulunmuyor.
+      noEyeAccessories: Herhangi bir göz aksesuarın bulunmuyor.
+  journal:
+    info:
+      jobInfo: İşler, ödül kazanmak için tamamlayabileceğin <c>basit ve tekrarlanabilir</c>
+        görevlerdir. İşleri şehirler gibi farklı konumlarda bulabileceğin <c>iş panolarından</c>
+        kabul edebilirsin. Aynı anda en fazla üç aktif işin bulunabilir.
+    phrases:
+      jobs: İşler
+  rewards:
+    phrases:
+      alreadyClaimed: Zaten alınmış

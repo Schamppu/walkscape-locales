@@ -1,5 +1,8 @@
 {"plurals": {"dialogs": {"deleteClass": {"text": {"few": "-", "many": "-", "two": "-",
-"zero": "-"}, "title": "Weet je zeker dat je door wilt gaan met het verwijderen?"}}},
+"zero": "-", other: 'Het verwijderen van objecten kan niet teruggedraaid worden. Er
+wordt {} keer naar dit object verwezen in andere objecten.', one: 'Het verwijderen
+van objecten kan niet teruggedraaid worden. Er wordt {} keer naar dit object verwezen
+in andere objecten.'}, "title": "Weet je zeker dat je door wilt gaan met het verwijderen?"}}},
 singulars: {popups: {inactiveSteps: {stepsWhileInactive: Stappen gezet terwijl het
 spel inactief was}, achievementUnlocked: {achievementUnlocked: '{achievement} prestatie
 ontgrendeld', requirements: Vereisten, rewards: Beloningen, achievementPoints: '{points}
@@ -60,13 +63,30 @@ is of dat de verbinding is geblokkeerd door een firewall. Controleer je internet
 en probeer het daarna nog eens.'}, serverOffline: {title: WalkScape-server is offline,
 text: 'De server van het spel is momenteel offline. Dit is mogelijk voor onderhoud,
 of er is een probleem met de server. Probeer het later nog een keer.'}, serverMaintenance: {
-title: WalkScape-server is in onderhoud}, newUpdate: {title: Nieuwe update, text: Het
-spel is geüpdatet. Herstart het spel om de nieuwe update te downloaden.}, unknownError: {
+title: WalkScape-server is in onderhoud, text: De spelserver ondergaat momenteel onderhoud.
+Probeer het later a.u.b. nogmaals.}, newUpdate: {title: Nieuwe update, text: Het spel
+is geüpdatet. Herstart het spel om de nieuwe update te downloaden.}, unknownError: {
 title: Onbekende fout., text: Onbekende fout.}, failureToUpdateContent: {title: De
-inhoud update is gefaald}}}, info: {game: {equipGearSetFailed: {text: Uitrustingsset
-dragen mislukt. De uitrustingsset die je probeerde te dragen is mogelijk ongeldig
-of corrupt., title: Uitrustingsset dragen mislukt}, withdrawTooFew: {text: Je hebt
-niet genoeg voorwerpen om terug te nemen., title: Terugnemen mislukt}, importGearSetFailed: {
+inhoud update is gefaald, text: Het bijwerken van de spelinhoud door de spelclient
+is mislukt. Meld dit a.u.b. bij de ontwikkelaars op Discord met details van de fout
+en het toestel. Je kunt ook proberen het spel nogmaals te openen om te zien of het
+bijwerken lukt.}, unauthorized: {title: Niet geauthoriseerd, text: Je bent niet geauthoriseerd.
+Log a.u.b. opnieuw in.}, invalidSession: {text: Je sessie is ongeldig. Open a.u.b.
+het spel opnieuw en log opnieuw in., title: Ongeldige sessie}, connectionError: {
+title: Verbindingsfout, text: Er is een fout opgetreden bij het verbinding maken met
+de server. Controleer a.u.b. je internetverbinding en probeer het nogmaals.}}, gameError: {
+initializingGameFailed: {text: De client heeft niet kunnen initialiseren. Meld dit
+a.u.b. aan de ontwikkelaars op Discord met details van je foutmelding en toestel.
+Je kunt ook proberen het spel opnieuw te openen om te zien of het spel succesvol laadt.,
+title: Spel initialiseren mislukt}, loadingPlayerFailed: {title: Speler laden mislukt,
+text: Ongeldige spelersgegevens. Laden mislukt. Neem a.u.b. contact op met de ontwikkelaars
+via Discord of e-mail.}, stepLoadingFailed: {title: Stappen laden mislukt, text: De
+client heeft de stappen niet kunnen laden. Meld dit au.b. bij de ontwikkelaars op
+Discord met de details van de error en het toestel. Je kunt ook proberen het spel
+opnieuw te openen om te zien of de stappen succesvol laden.}}}, info: {game: {equipGearSetFailed: {
+text: Uitrustingsset dragen mislukt. De uitrustingsset die je probeerde te dragen
+is mogelijk ongeldig of corrupt., title: Uitrustingsset dragen mislukt}, withdrawTooFew: {
+text: Je hebt niet genoeg voorwerpen om op te nemen., title: Opnemen mislukt}, importGearSetFailed: {
 title: Uitrustingsset importeren mislukt, text: Fout opgetreden bij het importeren
 van uitrustingsset. Uitrustingssetgegevens zijn mogelijk corrupt of ongeldig.}, importGearSetTooManyTools: {
 title: Uitrustingsset heeft te veel gereedschappen, text: De uitrustingsset had meer
@@ -77,7 +97,7 @@ in uitrustingsset mislukt, text: 'Sommige voorwerpen in de uitrustingsset kunnen
 worden gedragen. Mogelijk is de uitrustingsset ongeldig, of je voldoet niet aan de
 eisen om sommige voorwerpen te dragen.'}, equipGearFailed: {title: Voorwerp dragen
 mislukt, text: Voorwerp kan niet worden gedragen. Probeer het nogmaals.}, withdrawZero: {
-title: Terugnemen mislukt, text: Je kunt niet nul of minder voorwerpen terugnemen.},
-withdrawDidNotExist: {title: Terugnemen mislukt, text: Het voorwerp dat je probeerde
-terug te nemen bestaat niet. Heropen de bank om dit op te lossen.}, withdrawFailed: {
-title: Terugnemen mislukt, text: Terugnemen mislukt. Probeer het nogmaals.}}}}}
+title: Opnemen mislukt, text: Je kunt niet nul of minder voorwerpen opnemen.}, withdrawDidNotExist: {
+title: Opnemen mislukt, text: Het voorwerp dat je probeerde op te nemen bestaat niet.
+Heropen de bank om dit op te lossen.}, withdrawFailed: {title: Opnemen mislukt, text: Opnemen
+mislukt. Probeer het nogmaals.}}}}}

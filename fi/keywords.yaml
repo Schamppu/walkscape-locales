@@ -81,6 +81,15 @@ singulars:
       requirement: Vaatii sukat.
       requirementLevel: Vaatii sukat, joiden vaatimuksissa on vähintään <keywordRequirements
         />.
+    bellows:
+      requirementLevel: Vaatii palkeet joissa on vähintään <keywordRequirements />
+        edelletys.
+      name: Palkeet
+      requirement: Vaatii <object id="bellows" />.
+    basket:
+      name: Kori
+      requirement: Vaatii <object id="basket" /> käyttöönotettuna.
+      requirementLevel: Vaatii korin, jossa on vähintään <keywordRequirements /> vaatimuksena.
   general:
     fuel:
       name: Polttoaine
@@ -291,13 +300,16 @@ singulars:
   recipes:
     products:
       sandwich:
-        name: Voileipä
+        name: Voileivän resepti
+        requirements: Vaatii <object id="sandwich" /> joka valmistetaan <object id="recipe_cooking"
+          />.
     skills:
       cooking:
-        name: Ruoanlaitto
+        name: Ruoanlaitto resepti
+        requirement: Vaatii <object id="recipe_cooking" />.
   activities:
     woodcuttingTrees:
-      requirement: Vaatii puunhakkaus (puut) aktiviteetin.
+      requirement: Vaatii puunhakkaus <object id="woodcuttingTrees" /> aktiviteetin.
       requirementLevel: Vaatii puunhakkaus (puut) aktiviteetin jolla on vähintään
         <keywordRequirements /> sen vaatimuksissa.
       name: Puunhakkaus (puut)

@@ -1,15 +1,21 @@
 {"maps": {"buildingActions(map)": {"guidance": "Begeleiding"}, "buildingTypes(map)": {
 "activityShop": "Activiteitenwinkel", "animalShelter": "Dierenasiel", "castle": "Kasteel",
 "fishingStore": "Viswinkel", "house": "Huis", "marketStall": "Marktkraam", "tavern": "Herberg",
-"temple": "Tempel"}}, "singulars": {"buildings": {"gdte": {"animalShelter": {"desc": "De
-winkel staat vol met verschillende soorten dieren, sommige met een veel kleuren op
-hun vacht of schubben. Op een van de muren hangt een bord waarop staat dat veel van
-deze huisdieren uit het moeras zijn gered nadat ze waren achtergelaten of verdwaald.",
-"name": "Onze Pootjes"}, "bilgemontCastle": {"desc": "Het grote kasteel ziet er luxueus
-uit, en in uitstekende staat. Geen scheuren in de stenen of schroeiplekken door brand.
-De heersers die hier wonen staan bekend om hun prachtige juwelen en rijkdommen, en
-het perceel ziet eruit alsof er nog nooit iemand in gewoond heeft door de perfecte
-staat van het grote kasteel.", "name": "Kasteel Ruimberg"}, "bogsideBankOfProsperity": {
+"temple": "Tempel"}, buildingTypes: {'bank': Bank, 'generalStore': Winkel, 'fishingStore': Visserszaak,
+'temple': Tempel, 'tavern': Taverne, 'house': Huis, 'animalShelter': Dierenasiel,
+'activityShop': Activiteitswinkel, 'marketStall': Marktkraam, 'castle': Kasteel, 'barber': Kapper,
+'clothingShop': Kledingwinkel, 'outpost': Vestiging}, buildingActions: {'withdraw': Opnemen,
+'buy': Voorwerpen kopen, 'sell': Voorwerpen verkopen, 'deposit': Storten, 'talk': Praten,
+'rumors': Geruchten, 'guidance': Begeleiding, 'barber': Kapper, 'buySpecial': Specialiteiten
+kopen}}, "singulars": {"buildings": {"gdte": {"animalShelter": {"desc": "De winkel
+staat vol met verschillende soorten dieren, sommige met een veel kleuren op hun vacht
+of schubben. Op een van de muren hangt een bord waarop staat dat veel van deze huisdieren
+uit het moeras zijn gered nadat ze waren achtergelaten of verdwaald.", "name": "Onze
+Pootjes"}, "bilgemontCastle": {"desc": "Het grote kasteel ziet er luxueus uit, en
+in uitstekende staat. Geen scheuren in de stenen of schroeiplekken door brand. De
+heersers die hier wonen staan bekend om hun prachtige juwelen en rijkdommen, en het
+perceel ziet eruit alsof er nog nooit iemand in gewoond heeft door de perfecte staat
+van het grote kasteel.", "name": "Kasteel Ruimberg"}, "bogsideBankOfProsperity": {
 "desc": "De vloer van de bank is bedekt met mos en maakt bij elke stap een sponzig
 geluid. Verschillende kikkers verbergen zich tussen de draagbalken van het dak van
 het gebouw om de muggen op afstand te houden. Een van de bedienden begroet je met
@@ -69,7 +75,7 @@ desc: 'De grote tempel is gevuld met smeulend wierook en het gemompel van heilig
 woorden. Velen benaderen de massieve blauwe glinsterende steen om te bidden. De grote
 steen reikt van de vloer tot ver naar boven, dreigend om de lucht te doorboren. Ondanks
 dit is het oppervlak volledig glad en rommelt het van kracht.'}, tutorialCabin: {
-name: Helpende Herbert's Hut, desc: 'Een nederig huisje in het Ontgoochelde Bos waar
+name: Helpende Herberts Hut, desc: 'Een nederig huisje in het Ontgoochelde Bos waar
 een aantal boomstronken rondomheen staat. Buiten het huis staat een tafel met twee
 stoelen, waarop een man een schaakbord aan het bestuderen is.'}, woodcuttersCabin: {
 name: Houthakkershut, desc: 'Er staat een hut gemaakt van boomstammen in een klein
@@ -105,4 +111,21 @@ Er komen luchtbellen uit de gaatjes en openingen in de muren. Je denkt de bergen
 herkennen die op het schilderij aan de muur afgebeeld staan., name: Gezonken Anker},
 vastalumeBank: {name: Thalassagolfbank, desc: 'Er glijdt een grote, felgele slang
 over de zanderige vloer. In de rotsmuren onder water bevindt zich een ronde deur met
-een enorm sleutelgat dat naar een kluis leidt.'}}}}}
+een enorm sleutelgat dat naar een kluis leidt.'}, vastalumeBarber: {name: Met de Stroom
+Mee Kapperszaak, desc: Zijn volle kapperzaak heeft meerdere werkplekken om haar te
+knippen. De constante stroom aan klanten die komen en gaan laten blijken dat het een
+populaire plek is om je haar te laten doen in Vastaloem.}, vastalumeSpecializedStore: {
+name: Onderstroom, desc: 'Een vlag van Syrenthië is geplaatst bij de ingang, om uit
+te drukken dat alleen zij die vertrouwd worden door Syrenthiërs hier toegang krijgen.
+Je vindt hier een beetje van alles - een loungeruimte, gereedschap bevestigd aan de
+muur, en zelfs een onderwater bonsaiboom.'}, vastalumeClothingShop: {name: Meermin-tastische
+Mode, desc: 'Vele Syrenthiërs dragen het liefst outfits gemaakt van schelpen, dus
+het is vrij leeg in deze zaak. Er is maar weinig stof en kleding te vinden in de winkel.
+De meeste bezoekers hier zijn op zoek naar de meervolkdansjurk.'}, throneOfTheNeverdrown: {
+name: Troon van de Nooitverdrinkende, desc: 'Een alerte octopus bewaakt de ingang.
+Een koninklijk blauwe loper leidt naar de troon, die versierd is met verschillende
+bewegende tentakels. De hele troonzaal straalt een enge atmosfeer uit, en het voelt
+alsof zelfs de doodnormale krab je in de gaten houdt.'}, casbrantsSunkenShip: {name: Kasbrants
+Gezonken Schip, desc: 'De complete hoofdmast van het schip is afgebroken. Het scheepswrak
+zit vol gaten en kapotte planken waaruit vele kleine luchtbellen naar boven schieten.
+Het voelt alsof er nog iemand aanwezig is, aan het toekijken en aan het wachten.'}}}}}
