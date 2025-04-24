@@ -32,6 +32,14 @@ singulars:
       text: Tämä ominaisuus on vielä kehitteillä, ja monet sen toiminnoista <hl>eivät
         ole vielä käytettävissä</hl>. Voit kokeilla sitä jo nyt ja tulla takaisin
         myöhemmin, kun se on täysin toteutettu!
+    stepsNotCountedRealTime:
+      title: Askelia ei lasketa reaaliajassa
+      textIOS: Kun käytät askeleiden lähteenä muuta kuin <icon i="Phone small" /><c>puhelinta</c>,
+        askeleitasi ei lasketa reaaliajassa. Riippuen älyrannekkeestasi voit joutua
+        synkronoimaan askeleesi toisesta applikaatiosta tai avaamaan Apple Healthin.
+        Tämä ilmoitus katoaa kun olet synkronoinut vähintään <c>5000</c> askeleesta
+        älyrannekkeestasi. Voit vaihtaa askeleiden lähteen <icon i="Phone small" /><c>puhelimeen</c>
+        pelin <c>Asetuksista</c>.
   popups:
     achievementUnlocked:
       achievementUnlocked: '{achievement} saavutus avattu'
@@ -109,15 +117,17 @@ singulars:
           on virhe ja haluat valittaa päätöksestä, voit ottaa meihin yhteyttä lähettämällä
           sähköpostia osoitteeseen <c i=1>contact@walkscape.app</c>.
       noInternetConnection:
-        title: Ei internet-yhteyttä
-        text: Sinulla ei ole toimivaa internetyhteyttä, jota tarvitaan pelitietojen
-          vahvistamiseksi palvelimella. Yritä uudelleen, kun sinulla on toimiva internet-yhteys.
+        title: WalkScapen palvelimeen ei saatu yhteyttä
+        text: Yhteyden muodostus pelin palvelimeen epäonnistui. Tämä voi tarkoittaa
+          ettei sinulla ole toimivaa internet-yhteyttä, palvelin on rikki, tai että
+          palomuuri esti yhteytesi. Tarkista internet-yhteytesi ja yritä uudelleen.
       serverOffline:
         title: WalkScape-palvelin on offline-tilassa
         text: Pelipalvelin on tällä hetkellä offline-tilassa. Tämä saattaa johtua
           huollosta tai ongelmasta pelipalvelimen kanssa. Yritä myöhemmin uudelleen.
       serverMaintenance:
         title: WalkScape-palvelin on huollossa
+        text: Pelin palvelin on toistaiseksi huollosa. Yritä myöhemmin uudelleen.
       newUpdate:
         title: Uusi päivitys
         text: Peliä on päivitetty. Käynnistä peli uudelleen ladataksesi uuden päivityksen.
@@ -129,3 +139,74 @@ singulars:
         text: Peli ei onnistunut päivittämään sisältöä. Ilmoita tästä pelin kehitystiimissä
           Discordissa ja ilmoita yksityiskohtaiset tiedot virheestäsi ja laitteestasi.
           Voit myös yrittää avata pelin uudelleen nähdäksesi, latautuuko sisältö onnistuneesti.
+      invalidSession:
+        text: Sessiosi on virheellinen. Ole hyvä ja käynnistä peli uudelleen ja kirjaudu
+          sisään.
+        title: Virheellinen sessio
+      unauthorized:
+        text: Et ole tunnistautunut. Kirjaudu uudelleen.
+        title: Ei tunnistautumista
+      connectionError:
+        title: Yhteysvirhe
+        text: Yhteysen muodostaminen pelin palvelimeen epäonnistui. Ole hyvä ja tarkista
+          internet-yhteytesi ja yritä uudelleen.
+    gameError:
+      loadingPlayerFailed:
+        title: Hahmon lataaminen epäonnistui
+        text: Hahmosi data on virheellinen, ja lotus epäonnistui. Ole hyvä ja ota
+          yhteyttä kehittäjiin Discord-palvelimella tai sähköpostitse.
+      initializingGameFailed:
+        title: Pelin käynnistys epäonnistui
+        text: Pelisovelluksen käynnistys epäonnistui. Ole hyvä ja ilmoita tästä ongelmasta
+          pelin Discord-palvelimella kertoen virheestäsi ja mitä laitetta käytät pelaamiseen.
+          Voit myös yrittää käynnistää pelin uudelleen.
+      stepLoadingFailed:
+        title: Askelten lataaminen epäonnistui
+        text: Askelten lataaminen epäonnistui. Ole hyvä ja ilmoita tästä ongelmasta
+          pelin Discord-palvelimella kertoen virheestäsi ja mitä laitetta käytät pelaamiseen.
+          Voit myös yrittää käynnistää pelin uudelleen.
+  confirmations:
+    changingStepSource:
+      title: Vaihda askeleiden lähde?
+      text: Askeleiden lähteen vaihtamisesta voi seurata askeleiden menetys mikäli
+        et vielä ole synkronoinut askeliasi. Varmista että askeleesi on synkronoitu
+        ennen kuin vaihdat askeleiden lähdettä.
+      lastSyncText: Askeleet synkronoitu viimeksi {time}.
+      neverSyncedText: Askeleita ei ole koskaan synkronoitu.
+  info:
+    game:
+      importGearSetFailed:
+        title: Varustesetin tuonti epäonnistui
+        text: Varustesetin tuonti epäonnistui. Varustesetti on joko virheellinen tai
+          korruptoitunut.
+      importGearSetTooManyTools:
+        title: Varustesetissä on liikaa työkaluja
+        text: Varustesetissä on sallittua määrää enemmän työkaluja.
+      withdrawTooFew:
+        text: Sinulla ei ole riittävästi esineitä nostaaksesi niitä.
+        title: Nosto epäonnistui
+      withdrawFailed:
+        title: Nosto epäonnistui
+        text: Nosto epäonnistui. Yritä uudelleen.
+      equipGearSetSomeFailed:
+        title: Esineiden pukeminen varustesetistä epäonnistuim
+        text: Joitakin esineitä varustesetistä ei voitu pukea. Varustesetti saattaa
+          olla virheellinen, tai hahmosi ei täytä joidenkin esineiden vaatimuksia.
+      equipGearSetFailed:
+        title: Varustesetin pukeminen epäonnistui
+        text: Varustesetin pukeminen epäonnistui. Varustesetti on todennäköisesti
+          joko virheellinen tai korruptoitunut.
+      equipGearFailed:
+        title: Esineen pukeminen epäonnistui
+        text: Esinettä ei voitu pukea. Yritä uudelleen.
+      withdrawDidNotExist:
+        title: Nosto epäonnistui
+        text: Esine, mitä yritit nostaa, ei ole olemassa. Pankin uudelleenavauksen
+          tulisi korjata tämä ongelma.
+      changingActivityFailed:
+        title: Aktiviteetin vaihto epäonnistui
+        text: Aktiviteettiä ei voitu vaihtaa. Olet joko jo suorittamassa aktiviteettia
+          tai aktiviteetti ei ole saatavilla.
+      withdrawZero:
+        title: Nosto epäonnistui
+        text: Et voi nostaa nollaa tai negatiivista määrää esineitä.
