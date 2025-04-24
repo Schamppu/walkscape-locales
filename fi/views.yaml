@@ -47,6 +47,9 @@ maps:
         nose: Nenä
         outfit: Asu
         'none': Ei mitään
+        'faceAccessory': Kasvoasusteet
+        'eyeAccessory': Silmäasusteet
+        'backAccessory': Selkäasusteet
       raceTypes:
         human: Ihminen
         'none': Ei mitään
@@ -83,9 +86,28 @@ maps:
       'showRecipesServicesAreMet': Palveluvaatimukset eivät täyty
       'showCompletedAchievements': Näytä suoritetut saavutukset
       'showRecipesRequirementsAreMet': Tasovaatimukset eivät täyty
+      'alwaysStopWhenInventoryFull': Keskeytä aktiviteetti oletuksena repun ylitäyttyessä
+      'leftHandedMode': Vasenkätinen tila
+      'inventoryCollapsed': Tiivistä reppunäkymä
+      'spriteOutlines': Renderöi ääriviivat
+      'showFpsCounter': Näytä FPS mittari
+      'shaderOutlineRendering': Renderöi ääriviivat shadereilla
     leaderboardFilter:
       'everyone': Kaikki
       'friends': Kaverit
+    categories:
+      'accessibility': Saavutettavuus
+      'graphics': Grafiikat
+      'gameplay': Pelattavuus
+      'account': Tili
+      'character': Hahmo
+    enumSettings:
+      'language': Kieli
+      'leaderboardFilter': Näytä
+      'leaderboardType': Tulostaulukot
+      'stepDataTime': Ajanjakso
+    custom:
+      'dataSource': Askelten lähde
   character:
     stepsTime:
       'hourly': Askeleet tunneittain
@@ -104,6 +126,11 @@ maps:
         "special": Erikoiset
         "tool": Työkalut
         "gear": Varusteet
+  locales:
+    grammaticalGender:
+      'masculine': Maskuliini
+      'feminine': Feminiini
+      'neutral': Neutraali
 plurals:
   activity:
     phrases:
@@ -303,6 +330,9 @@ singulars:
       enableFacepaint: Ota käyttöön kasvomaalaus
       enableDynamicBackground: Ota käyttöön dynaaminen tausta
       enableFaceAccessorie: Ota käyttöön kasvoasusteet
+      enableFaceAccessory: Ota käyttöön kasvoasuste
+      enableBackAccessory: Ota käyttöön selkäasuste
+      enableEyeAccessory: Ota käyttöön silmäasuste
     phrases:
       currentSelection: Nykyinen valinta
       mainOptions: Päävaihtoehdot
@@ -412,6 +442,32 @@ singulars:
         Puhelin askelmittaria on oletuksena käytössä.
       phone: Puhelin
       watch: Muu kello
+    deviceInfo:
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> eroaa joistakin
+        muista <icon i=\"Watch small\" /> <c>kelloista</c> siten, että se synkronoi
+        askeleesi Apple Healthiin jaksoittain. WalkScape lukee Apple Healthiin <icon
+        i=\"Apple watch small\" /> <c>Apple Watchista</c> tai muista kelloista synkronoidut
+        askeleesi.\n\n<bp /> <c i=2>Apple Watch synkronoi jaksoittain askeleesi Apple
+        Healthiin.</c> Askeeleesi eivät päivity peliin reaaliajassa, ja askeleiden
+        synkronointi voi tapahtua viiveellä.\n\n<bp /> Sinun on annettava käyttöoikeus
+        Apple Health -datan lukemiseksi.\n\n<bp /> Vain kellosi mittaamat askeleet
+        rekisteröityvät peliin.\n"
+      watch: "WalkScape lukee<icon i=\"Watch small\" /> <c>kellosi</c> synkronoimat
+        askeleet <c>Apple Healthista</c>. Kellosi valmistajasta riippuen, on mahdollista
+        että sinun täytyy synkronoida askeleesi eri sovelluksesta <c>Apple Healthiin</c>.\n
+        \n<bp /> <c i=2>On mahdollista, että sinun tulee synkronoida askeelesi Apple
+        Healthiin muista sovelluksista</c> jotta askeleesi rekisteöityvät WalkScapeen.\n
+        \n<bp /> Askelten synkronointi <c>Apple Healthiin</c> riippuu kellosi valmistajasta.
+        Tämä voi vaatia teknistä osaamista.\n\n<bp /> Sinun on annettava käyttöoikeus
+        Apple Health -datan lukemiseksi.\n\n<bp /> Vain kellosi mittaamat askeleet
+        rekisteröityvät peliin.\n"
+      phone: "<icon i=\"Phone small\" /> <c>puhelin</c> on WalkScapen suositeltu askeltenmittauksen
+        lähde. Vaativampiin urheilusuoritukseen suosittelemme käyttämään <icon i=\"\
+        Watch small\" /> <c>kelloa</c> askelten mittauksen lähteenä. Suurimmalle osalle
+        pelaajista <icon i=\"Phone small\" /> <c>puhelin</c> on paras vaihtoehto.\n
+        \n<bp /> <c i=1>Askeleesi päivittyvät peliin reaaliajassa.</c>\n\n<bp /> Jotta
+        askeleesi rekisteröityvät, <c>sinun on pidettävä puhelin mukanasi</c>. Tämä
+        voi olla vaikeaa vaativampia urheilusuorituksia tehdessä.\n"
   rewards:
     phrases:
       alreadyClaimed: Jo lunastettu
@@ -503,9 +559,36 @@ singulars:
         stepCountInterval: Ilmoitusväli
         stepCountNotifications: Askelten lukumäärän ilmoitukset
         notificationType: Ilmoituksen tyyppi
+      dataSource:
+        thisPhone: Tämä puhelin
+        changeWarning:
+          description: Huomioi, että tämä toimenpide voi johtaa askelten menettämiseen.
+          title: Vaihda askelten lähde?
+        otherSource: Muu lähde
+        requiresPermissionIos: Jos alla olevassa pudotusvalikossa ei näy ainuttakaan
+          laitetta, varmista että olet antanut sovellukselle käyttöoikeuden askeldataasi
+          Apple Healthissa. Voit antaa oikeuden menemällä Asetukset ➤ Tietosuoja &
+          Suojaus ➤ Terveys ➤ (Apit) WalkScape ja että Apple Health on rekisteröinyt
+          askelia laitteestasi viimeisen 7 päivän aikana.
+        lastSync: 'Viimeinen synkronointi: {timestamp}'
+        title: Askelten lähde
+      locales:
+        title: Kieli
+        chooseALanguageInfo: Paina ylläolevaa painiketta avataksesi kielivalikon.
+        changeLanguage: Vaihda kieltä
     phrases:
       settings: Asetukset
       exitToCharacterSelection: Poistu hahmon valintaan
+      connectionInfoIos: Jos yllä olevassa listassa ei ole ainuttakaan laitetta, varmista
+        että olet antanut sovellukselle käyttöoikeuden askeldataasi Apple Healthissa.
+        Voit antaa oikeuden menemällä Asetukset ➤ Tietosuoja & Suojaus ➤ Terveys ➤
+        (Apit) WalkScape ja että Apple Health on rekisteröinyt askelia laitteestasi
+        viimeisen 7 päivän aikana.
+      stepSourceInfoDesc: Näe enemmän tietoa eri askelten mittauksen lähteistä ja
+        niiden välisistä eroista painamalla ylläolevaa painiketta.
+      stepSourceInfo: Tietoja askelten lähteistä
+      connectionInfoAndroid: Älykellotuki on tulossa pian Androidille. Toistaiseksi
+        vain puhelinta tuetaan askelten mittauksen lähteenä.
   worldMap:
     phrases:
       activities: Aktiviteetit
@@ -523,6 +606,8 @@ singulars:
         toteudu:'
       youHaveNotExplored: Et ole vielä tutkinut tätä paikkaa. Näet tietoa tästä paikasta,
         kun olet käynyt siellä kerran.
+      changeRouteWarning: Reitin vaihtaminen peruuttaa nykyisen matkasi ja palauttaa
+        sinut aikaisempaan paikkaan. Oletko varma?
   stats:
     phrases:
       stats: Tilastot
@@ -530,6 +615,13 @@ singulars:
       totalSteps: Kokonaisaskelmäärä
     info:
       stats: Kokoelma tilastoja jokaisesta askeleesta, jonka olet ottanut Arenumissa.
+      chartWarning:
+        description: Useat pelaajat ovat raportoineet ongelmia askelkaavioissa, jotka
+          aiheutuvat suurista taustalla tapahtuneista muutoksista viime päivityksissä.
+          Jos näet epämääräisyyksiä askelkaaviossa, tämä on todennäköisesti syy sihen.
+          Pelilogiikka toimii kuitenkin kuten pitääkin, ja kaavioon liittyvät ongelmat
+          tullaan korjaamaan tulevissa päivityksissä.
+        title: Kaavioissa on epämääräisyyksiä
   tutorial:
     phrases:
       noMoreMessages: Ei enempää ohjeistusviestejä
@@ -565,6 +657,7 @@ singulars:
       welcomeToWalkscape: Tervetuloa WalkScapeen, <hl>vieras</hl>. Ole hyvä ja kirjaudu
         sisään.
       pleaseEnterCredentials: Syötä WalkScape-tilisi tunnukset.
+      testFlight: Voit ladata uusimman version <c>TestFlightista</c>.
     loadingStates:
       localizationFiles: Ladataan kielitiedostoja
       gameVersion: Haetaan pelin versiota
@@ -637,3 +730,40 @@ singulars:
         miten pelin käyttöliittymän tekstit viittaavat sinuun.
       youCanChangeAnyTime: Voit vaihtaa kieltä <c>pelin Asetuksista</c> missä tahansa
         vaiheessa.
+  gearSets:
+    phrases:
+      toolSlot: Työkalupaikka
+      sortBy: 'Lajittelu: '
+      gearSets: Varustesetit
+      copyCurrentlyEquippedGear: Kopioi tämänhetkiset varusteesi
+      forActivities: 'Aktiviteeteille: '
+      noActivitiesSelected: Ei aktiviteetteja valittuna
+      optionsAndFilters: Asetukset & suodattimet
+      default: Oletus
+      level: 'Taso. '
+      showAttributes: Näytä ominaisuudet
+      gear: Varusteet
+      tools: Työkalut
+      name: Nimi
+      unequipGear: Riisu varusteet
+      unequipTools: Riisu työkalut
+      noItemSelected: Ei esinettä valittuna
+      newSetDefaultName: Minun Uusi Varustesettini
+      importedGearSetDefaultName: Tuotu Varustesetti
+    errors:
+      keywordError: 'Varustesetissä on jo: <object id="{keyword}" />'
+      duplicateItem: Esine on jo varustesetissä
+    info:
+      gearSetManageDesc: Valitse varustesetti minkä haluat pukea alapuolelta. Luodaksesi,
+        tuodaksesi tai muokkaaksesi varustesettejä paina <c i=0>Hallitse</c> painiketta.
+      noGearSetsList: Sinulla ei ole vielä ainuttakaan varustesettiä. Paina <c i=0>Hallitse</c>
+        painiketta luodaksesi tai tuodaksesi uusia varustesettejä.
+      gearSetsListDesc: Voit hallinnoida varustesettejäsi täällä. Jos haluat <c i=0>luoda
+        uuden</c>, paina painiketta alapuolelta. Voit myös <c i=1>kopioida tämähetkiset
+        varusteesi</c> luodessasi uutta varustesettiä.
+      gearSetsDescription: Varustesetit auttavat sinua vaihtamaan nopeasti eri varusteiden
+        välillä.
+      noGearSetsManage: Et ole vielä luonut ainuttakaan varustesettiä. Luo ensimmäinen
+        varustesettisi painamalla alhaalta <c i=0>Luo uusi</c> painiketta.
+      youDontHaveAnyItems: Ei esineitä. Sinulla ei joko ole tai hahmosi ei tiedä ainuttakaan
+        tämän tyyppistä esinettä, tai suodattimesi ei palauttanut yhtäkään esinettä.
