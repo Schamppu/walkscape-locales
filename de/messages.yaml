@@ -34,6 +34,16 @@ singulars:
       text: Dieses Feature ist noch in der Entwicklung, und viele seiner Funktionen
         <hl>sind noch nicht freigeschaltet</hl>. Du kannst es bereits testen und später
         zurückkommen, wenn alles umgesetzt wurde!
+    stepsNotCountedRealTime:
+      textIOS: Während du eine andere Schrittquelle als dein <icon i="Phone small"
+        /> <c>Telefon</c> verwendest, werden Schritte nicht in Echtzeit gezählt. Je
+        nach deinem Wearable musst du deine Schritte möglicherweise manuell über eine
+        andere App synchronisieren oder Apple Health öffnen, um deine Schritte ins
+        Spiel zu übertragen. Diese Nachricht verschwindet, sobald du mindestens <c>5000</c>
+        Schritte von deinem Wearable synchronisiert hast. Du kannst deine Schrittquelle
+        jederzeit in den <c>Einstellungen</c> auf <icon i="Phone small" /> <c>Telefon</c>
+        ändern.
+      title: Die Schrittzählung erfolgt nicht in Echtzeit
   popups:
     inactiveSteps:
       stepsWhileInactive: Schritte, während das Spiel inaktiv war
@@ -204,3 +214,11 @@ singulars:
       equipGearFailed:
         title: Ausrüsten des Gegenstands fehlgeschlagen
         text: Fehler beim Ausrüsten des Gegenstands. Bitte erneut versuchen.
+  confirmations:
+    changingStepSource:
+      text: Das Ändern deiner Schrittquelle kann dazu führen, dass nicht synchronisierte
+        Schritte verloren gehen. Stelle sicher, dass deine Schritte synchronisiert
+        sind, bevor du die Quelle wechselst.
+      title: Schrittzählerquelle ändern?
+      lastSyncText: 'Letzte Synchronisierung der Schritte: {time}.'
+      neverSyncedText: Schritte wurden noch nie synchronisiert.
