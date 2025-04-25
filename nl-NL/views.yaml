@@ -12,16 +12,17 @@ raceTypes: {'none': Geen, 'human': Mens}, bodyTypes: {'masculine': A (Mannelijk)
 'laughing': Lachend, 'veryAngry': Kwaad}}}, shop: {phrases: {itemType: {"gear": Uitrusting,
 "special": Speciaal, "tool": Gereedschappen, "collectible": Verzamelobjecten, "crafted": Creaties,
 "cosmetic": Uitstraling, "consumable": Verbruiksartikelen, "material": Materialen,
-"container": Houders, "loot": Buit}}}, settings: {languages: {'en': Engels, 'de': Duits,
-'fi': Fins, 'pl': Pools, 'es': Spaans, 'it': Italiaans, 'nl-NL': Nederlands, 'tr': Turks,
-'fr': Frans, 'sv': Zweeds, 'pt': Portugees, 'zh_Hans': Chinees (Vereenvoudigd)}, visibilitySettings: {
-'private': Privé, 'friends': Alleen vrienden, 'public': Openbaar}, notificationImportance: {
-'low': 'Geen geluid, geen vibrarie, en wordt niet getoond in de statusbalk.', 'urgent': Maakt
-geluid of vibreert en wordt getoond als een heads-up notificatie., 'high': Maakt geluid
-of vibreert}, leaderboardFilter: {'friends': Vrienden, 'everyone': Iedereen}, stepCountNotifications: {
-'everyTenThousand': Elke tienduizend, 'never': Nooit, 'always': Altijd, 'everyHundred': Elke
-honderd, 'everyThousand': Elke duizend}, boolSettings: {'showRecipesMaterialsAreMet': Materiaalvereisten
-voldaan, 'showRecipesRequirementsAreMet': Vaardigheidsvereisten voldaan, 'showRecipesServicesAreMet': Voorzieningsvereisten
+"container": Voorwerpbewaarsels, "loot": Buit}}}, settings: {languages: {'en': Engels,
+'de': Duits, 'fi': Fins, 'pl': Pools, 'es': Spaans, 'it': Italiaans, 'nl-NL': Nederlands,
+'tr': Turks, 'fr': Frans, 'sv': Zweeds, 'pt': Portugees, 'zh_Hans': Chinees (Vereenvoudigd)},
+visibilitySettings: {'private': Privé, 'friends': Alleen vrienden, 'public': Openbaar},
+notificationImportance: {'low': 'Geen geluid, geen vibrarie, en wordt niet getoond
+in de statusbalk.', 'urgent': Maakt geluid of vibreert en wordt getoond als een heads-up
+notificatie., 'high': Maakt geluid of vibreert}, leaderboardFilter: {'friends': Vrienden,
+'everyone': Iedereen}, stepCountNotifications: {'everyTenThousand': Elke tienduizend,
+'never': Nooit, 'always': Altijd, 'everyHundred': Elke honderd, 'everyThousand': Elke
+duizend}, boolSettings: {'showRecipesMaterialsAreMet': Materiaalvereisten voldaan,
+'showRecipesRequirementsAreMet': Vaardigheidsvereisten voldaan, 'showRecipesServicesAreMet': Voorzieningsvereisten
 voldaan, 'showCompletedAchievements': Afgeronde prestaties weergeven}}, achievements: {
 phrases: {difficulty: {'easy': Makkelijk, 'hard': Moeilijk, 'normal': Gemiddeld, 'extreme': Extreem},
 difficultyTitle: {'hard': Moeilijke prestaties, 'normal': Gemiddelde prestaties, 'easy': Makkelijke
@@ -227,11 +228,35 @@ een van de vaardigheden voor meer gedetailleerde informatie en wat ze ontgrendel
 permissions: {phrases: {pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om
 het spel te laten functioneren, hebben we toestemming nodig om de gegevens van de
 stappenteller op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan
-met het spel.', exactAlarmPermission: Alarm toestemming}}, wardrobe: {phrases: {noHeadwear: Je
+met het spel.', exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je
+moet toestemming geven voor de volgende permissies om verder te gaan met het spel.
+Druk op de permissie om toestemming te geven., noDeviceFound: Geen device gevonden.
+Controleer a.u.b. of je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt
+en toestemming hebt gegeven om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We
+hebben deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
+connectAppleHealth: Verbinden met Apple Health, connect: Verbinden, connectAppleHealthExplanation: 'Je
+moet verbinding maken met Apple Health zodat we stappen kunnen inlezen die gesynchroniseerd
+zijn door je horloge, en om te zien met welke devices je bent verbonden. Als dit de
+eerste keer is dat je WalkScape gebruikt, zal er toestemming gevraagd worden om gegevens
+uit Apple Health te kunnen lezen.', continueWillEnable: Doorgaan-knop wordt ingeschakeld
+nadat je hierboven de benodigde toestemmingen hebt gegeven., youCanChangeAnyTime: Je
+kunt op elk moment de stappentellerbron wijzigen in de <c>Spelinstellingen</c>., comingSoonToAndroid: Komt
+binnenkort naar Android, changeStepCountingSource: Stappentellerbron wijzigen, stepCountingSource: Stappentellerbron},
+deviceSource: {featureDisabled: Het veranderen van invoerbron is momenteel tijdelijk
+uitgeschakeld. De standaard stappenteller van de telefoon zal gebruikt worden., phone: Telefoon,
+appleWatch: Apple Watch, watch: Andere smartwatch}}, wardrobe: {phrases: {noHeadwear: Je
 hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires., noBackAccessories: Je
 hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}}, rewards: {
 phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open factie}},
 shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien, buying: Kopen,
 selling: Verkopen, buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden, pendingInvites: Openstande
 uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {phrases: {arrivedToLocation: 'Gearriveerd
-in <object id={location} />', overEncumbered: Je inventaris is vol en je bent overbelast.}}}}
+in <object id={location} />', overEncumbered: Je inventaris is vol en je bent overbelast.}},
+locales: {phrases: {language: Taal, helpToTranslate: WalkScape is <c>vertaald door
+de community</c>. Help ons met het vertalen van het spel naar meer talen en met het
+uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
+te bezoeken. Alle hulp wordt enorm gewaardeerd! ❤️, chooseALanguage: Kies een taal
+uit de onderstaande lijst., percentExplanation: '% laat zien hoeveel vertaald is.',
+selectGrammaticalGender: Selecteer grammaticaal geslacht, grammaticalGenderExplanation: Het
+gekozen grammaticaal geslacht bepaalt hoe de UI teksten van het spel naar je refereren.,
+youCanChangeAnyTime: Je kunt op elk moment de taal veranderen in de <c>Spelinstellingen</c>.}}}}
