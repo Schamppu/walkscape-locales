@@ -357,6 +357,63 @@ singulars:
         das Spiel starten kannst.
       pedometerPermission: Schrittzähler Erlaubnis
       exactAlarmPermission: Alarmerlaubnis
+      noDeviceFound: Kein Gerät gefunden. Bitte stelle sicher, dass du oben auf den
+        Button <c>Mit Apple Health verbinden</c> getippt und die Berechtigung zum
+        Lesen der Apple Health-Daten erteilt hast.
+      stepCountingSource: Schrittzählerquelle
+      connectAppleHealthExplanation: Du musst eine Verbindung zu Apple Health herstellen,
+        damit wir die von deiner Uhr synchronisierten Schritte lesen können und um
+        zu sehen, welche Geräte du verbunden hast. Wenn du WalkScape zum ersten Mal
+        verwendest, wirst du um Erlaubnis gebeten, Daten aus Apple Health auszulesen.
+      youNeedToGivePermissions: Du musst die folgenden Berechtigungen erteilen, um
+        mit dem Spiel fortzufahren. Tippe auf die Berechtigungen, um sie zu erteilen.
+      pedometerPermissionExplanation: Wir benötigen diese Berechtigung, um die Schrittzählerdaten
+        deines Geräts nutzen zu können.
+      connectAppleHealth: mit Apple Health verbinden
+      connect: Verbinden
+      continueWillEnable: Der Weiter-Button wird aktiviert, nachdem du die erforderlichen
+        Berechtigungen erteilt hast.
+      youCanChangeAnyTime: Du kannst die Schrittzählerquelle jederzeit in den <c>Spieleinstellungen</c>
+        ändern.
+      comingSoonToAndroid: Demnächst für Android verfügbar
+      changeStepCountingSource: Schrittzählerquelle ändern
+    deviceSource:
+      featureDisabled: Das Ändern der Eingabequellen wurde vorübergehend remote deaktiviert.
+        Der standardmäßige Schrittzähler deines Telefons wird verwendet.
+      phone: Telefon
+      appleWatch: Apple Watch
+      watch: andere Uhr
+    deviceInfo:
+      phone: "<icon i=\"Phone small\" /> <c>Telefon</c> ist die standardmäßig empfohlene
+        Schrittzählerquelle für WalkScape. Für intensive sportliche Aktivitäten empfehlen
+        wir die Verwendung <icon i=\"Watch small\" /> <c>einer Uhr</c> als Schrittquelle.
+        Für die meisten Spieler ist die Nutzung des <icon i=\"Phone small\" /> <c>Telefons</c>
+        die beste Wahl.\n\n<bp /> <c i=1>Deine Schritte werden während des Gehens
+        live im Spiel aktualisiert.</c>\n\n<bp /> Damit deine Schritte gezählt werden,
+        <c>musst du dein Telefon bei dir tragen</c>. Das kann bei intensiveren Sportarten
+        schwierig sein.\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> unterscheidet
+        sich von manchen <icon i=\"Watch small\" /> <c>anderen Uhren</c> dadurch,
+        dass sie deine Schritte periodisch mit Apple Health synchronisiert. WalkScape
+        liest deine Schritte aus Apple Health aus – egal ob sie von deiner <icon i=\"\
+        Apple watch small\" /> <c>Apple Watch</c> oder einer anderen Uhr stammen.\n
+        \n<bp /> <c i=2>Die Apple Watch synchronisiert deine Schritte in regelmäßigen
+        Abständen mit Apple Health.</c> Deine Schritte werden daher nicht live im
+        Spiel angezeigt und können mit Verzögerung auftauchen.\n\n<bp /> Du musst
+        eine zusätzliche Berechtigung erteilen, damit WalkScape Daten aus Apple Health
+        lesen und deine Uhr verbinden kann.\n\n<bp />Im Spiel werden nur die Schritte
+        gezählt, die von deiner Uhr gemeldet wurden.\n"
+      watch: "WalkScape liest deine Schritte aus <c>Apple Health</c>, die dort von
+        deiner <icon i=\"Watch small\" /> <c>Uhr</c>. synchronisiert wurden. Je nach
+        Hersteller musst du deine Schritte möglicherweise manuell über eine separate
+        App mit<c> Apple Health</c> synchronisieren.\n\n<bp /> <c i=2> Du musst deine
+        Schritte möglicherweise manuell über andere Anwendungen mit Apple Health synchronisieren</c>,
+        damit sie in WalkScape gezählt werden.\n\n<bp />Der Schritt-Synchronisierungsprozess
+        mit <c>Apple Health</c> hängt vom Hersteller ab. Dies kann zusätzliche Einstellungen
+        und technisches Wissen erfordern.\n\n<bp /> Du musst eine zusätzliche Berechtigung
+        erteilen, um Daten aus Apple Health zu lesen und deine Uhr zu verbinden.\n
+        \n<bp /> Im Spiel werden nur die Schritte gezählt, die von deiner Uhr gemeldet
+        wurden.\n"
   settings:
     categories:
       account:
@@ -708,3 +765,17 @@ singulars:
     errors:
       keywordError: 'Ausrüstungs-Sets hat bereits: <object id="{keyword}" />'
       duplicateItem: Der Gegenstand existiert bereits im Ausrüstungsset
+  locales:
+    phrases:
+      helpToTranslate: WalkScape wird von der <c>Community übersetzt</c>. Hilf uns
+        dabei, das Spiel in weitere Sprachen zu übersetzen und bestehende Übersetzungen
+        zu erweitern, indem du den <a href="https://wiki.walkscape.app/wiki/Localization">Übersetzungsleitfaden</a>
+        besuchst. Jede Hilfe ist herzlich willkommen! ❤️
+      language: Sprache
+      chooseALanguage: Wähle eine Sprache aus der Liste aus.
+      percentExplanation: '% zeigt an, wie viel schon übersetzt wurde.'
+      selectGrammaticalGender: Grammatikalisches Geschlecht auswählen
+      grammaticalGenderExplanation: Das gewählte grammatikalische Geschlecht beeinflusst,
+        wie dich die Benutzeroberfläche des Spiels anspricht.
+      youCanChangeAnyTime: Du kannst die Sprache jederzeit in den <c>Spieleinstellungen</c>
+        ändern.
