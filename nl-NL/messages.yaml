@@ -33,15 +33,22 @@ huidige versie van WalkScape.}, disabled: {title: Uitgeschakeld, text: 'Deze fun
 is <hl>tijdelijk uitgeschakeld</hl>. Check de Portal, Reddit, of Discord voor meer
 informatie.'}, saveSuccesful: {title: Succesvol opgeslagen!, text: Je wijzigingen
 zijn succesvol opgeslagen.}, saveUnsuccesfullLootTables: {title: Opslaan mislukt.,
-text: Buittabel bevat rij(en) waar geen voorwerp mee geassocieerd is.}}, errors: {
-characterValidation: {nameContaintsConsecutiveSpaces: Meerdere opeenvolgende spaties
-is niet toegestaan., nameContainsleadingTrailingSpaces: Spaties aan het begin of eind
-zijn niet toegestaan., nameTooShort: De personagenaam moet minstens 3 tekens lang
-zijn., nameTooShortWithSpacesRemoved: 'De personagenaam moet meer dan drie letters
-lang zijn, zonder spaties meegerekend.', nameContainsSpecialCharacters: 'De personagenaam
-bevat special tekens. Alleen letters, cijfers, en spaties zijn toegestaan.'}, fatalError: {
-error: 'Sorry voor de foutmelding. Vergeet niet dat het spel in een gesloten beta
-is, en er wordt dagelijks een back-up gemaakt van alle spelergegevens.'}, activityCancelled: {
+text: Buittabel bevat rij(en) waar geen voorwerp mee geassocieerd is.}, stepsNotCountedRealTime: {
+textIOS: 'Bij het gebruik van alles wat niet <icon i="Phone small" /> <c>Telefoon</c>
+is als stappenbron, worden stappen niet in realtime geteld. Afhankelijk van je wearable
+is het mogelijk nodig om je stappen handmatig te synchroniseren vanuit een andere
+applicatie of moet je Apple Health openen om je stappen naar het spel te synchroniseren.
+Dit bericht zal verdwijnen na het synchroniseren van minstens <c>5000</c> stappen
+met je wearable. Je kunt vanuit de <c>Instellingen</c> de stappenbron wijzigen naar
+<icon i="Phone small" /> <c>Telefoon</c>.', title: Stappen worden niet in realtime
+geteld}}, errors: {characterValidation: {nameContaintsConsecutiveSpaces: Meerdere
+opeenvolgende spaties is niet toegestaan., nameContainsleadingTrailingSpaces: Spaties
+aan het begin of eind zijn niet toegestaan., nameTooShort: De personagenaam moet minstens
+3 tekens lang zijn., nameTooShortWithSpacesRemoved: 'De personagenaam moet meer dan
+drie letters lang zijn, zonder spaties meegerekend.', nameContainsSpecialCharacters: 'De
+personagenaam bevat special tekens. Alleen letters, cijfers, en spaties zijn toegestaan.'},
+fatalError: {error: 'Sorry voor de foutmelding. Vergeet niet dat het spel in een gesloten
+beta is, en er wordt dagelijks een back-up gemaakt van alle spelergegevens.'}, activityCancelled: {
 title: Activiteit geannuleerd, stepsAreInfinite: De huidige activiteit is geannulleerd
 omdat je niet meer voldoet aan de eisen om het te voltooien.}, serverError: {noClosedBetaAccess: {
 title: Toegang tot gesloten beta verlopen, text: 'Je toegang tot de <c i=0>WalkScape
@@ -100,4 +107,8 @@ mislukt, text: Voorwerp kan niet worden gedragen. Probeer het nogmaals.}, withdr
 title: Opnemen mislukt, text: Je kunt niet nul of minder voorwerpen opnemen.}, withdrawDidNotExist: {
 title: Opnemen mislukt, text: Het voorwerp dat je probeerde op te nemen bestaat niet.
 Heropen de bank om dit op te lossen.}, withdrawFailed: {title: Opnemen mislukt, text: Opnemen
-mislukt. Probeer het nogmaals.}}}}}
+mislukt. Probeer het nogmaals.}}}, confirmations: {changingStepSource: {title: Stappenbron
+veranderen?, text: Het veranderen van de stappenbron kan leiden tot het verliezen
+van stappen die nog niet gesynchroniseerd zijn. Controleer of je stappen gesynchroniseerd
+zijn voordat je de bron verandert., lastSyncText: 'Stappen voor het laatst gesynchroniseerd
+om {time}.', neverSyncedText: Stappen zijn nog nooit gesynchroniseerd.}}}}
