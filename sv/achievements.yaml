@@ -4,7 +4,7 @@ singulars:
       desc: Phenomenal cosmic powers, itty bitty living space.
       name: En vän som mig
     anIdiotSandwhich:
-      desc: "-\"What are you?\"\n- \"An idiot sandwich.\""
+      desc: "-\"What are you?\"\\n- \"An idiot sandwich.\""
       name: En idiotmacka
     andMyAxe:
       desc: Let them come! There is one dwarf yet in Moria who still draws breath!
@@ -114,7 +114,7 @@ singulars:
         ringarnas magiska egenskaper.
     oohShiny:
       name: Åh, glänsande!
-      desc: De säger är chansen att hitta denna fina sak 1 på 200.
+      desc: De säger är chansen att hitta denna fina sak 1 på 100.
     treasureHunter:
       desc: Inget slår en gratis skattkista!
       name: Skattjägare
@@ -150,7 +150,7 @@ singulars:
       desc: Nu skulle du inte tro mig om jag sa det, men jag kunde springa som vinden
         blåser. Från den dagen, om jag någonsin skulle någonstans, sprang jag!
     spaceCarsAndBirds:
-      name: Rymden, Bilar och Fåglar
+      name: Alla saker jag kan göra
       desc: Vinna storkovan i ett spel, mitt liv kommer aldrig bli mer sig likt...
     tutorialComplete:
       desc: Du är äntligen redo att lämna startzonen, eller hur?
@@ -206,7 +206,7 @@ singulars:
       name: Restrelik
     moreThanMeetsTheEye:
       desc: Du kom för diamanter, men hittade en spade. Mysterierna kring Erdwise
-        Trinketry Factory är många.
+        Krimskramsfabrik är många.
       name: Skenet bedrar
     aVeryFashionableCoast:
       desc: Du känner dig äntligen som om du passar in bland invånarna i Arenums modemetropol,
@@ -216,116 +216,131 @@ singulars:
       desc: Du gjorde det.
       name: De é nice.
   requirements:
-    catchCrabs: Fånga <numberProgress /> fiskar medan du fiskar.
-    chop5kTrees: Hugg ner <numberProgress /> träd.
-    collect1kMushrooms: Plocka <numberProgress /> svampar.
-    cook20DifferentRecipes: Tillaga <numberProgress /> olika recept.
-    craftHatchetOfHighestQuality: Tillverka en yxa av högsta kvalitet. <numberProgress
+    catchCrabs: Fånga <object id="fish" /> medan du utför <object id="activity_fishing"
+      />. <numberProgress />
+    chop5kTrees: Hugg ner <object id="woodcuttingTrees" />. <numberProgress />
+    collect1kMushrooms: Plocka <object id="mushroom" alwaysShow="true" /> från <object
+      id="activity_foraging" /> aktviteter. <numberProgress />
+    cook20DifferentRecipes: Tillaga olika <object id="recipe_cooking" /> recept. <numberProgress
       />
+    craftHatchetOfHighestQuality: Tillverka <object id="woodcuttingHatchet" /> av
+      högsta kvalitet. <numberProgress />
     craftPerfectItem: Tillverka ett perfekt föremål. <numberProgress />
-    cookRecipes: Laga recept <numberProgress /> gånger.
+    cookRecipes: Tillaga ett <object id="recipe_cooking" />. <numberProgress />
     findMysteriousG: Hitta den mystiska G. <numberProgress />
-    forageHoney: Samla <numberProgress /> honungskakor.
+    forageHoney: Hitta <object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
+      alwaysShow="true" /> från aktiviteter. <numberProgress />
     gain99Agility: Höj din smidighet till <numberProgress />.
-    gainSocksFromActivity: Få strumpor som ett drop från en aktivitet. <numberProgress
-      />
-    goToBarbantok: Gå till byn Barbantok. <numberProgress />
-    have5DifferentGems: Ha <numberProgress /> olika ädelstenar i ditt inventarium.
+    gainSocksFromActivity: Få <object id="item_socks" /> som ett dropp från en aktivitet.
+      <numberProgress />
+    goToBarbantok: Gå till  byn <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" /> <numberProgress />
+    have5DifferentGems: Ha olika typer av <object id="cut_gem" /> i ditt inventarium
+      samtidigt <numberProgress />
     levelUpAnySkill: Höj din nivå i vilken färdighet som helst. <numberProgress />
-    mine10kOres: Bryt <numberProgress /> malmer av vilket slag som helst.
-    mine1kGoldOres: Bryt <numberProgress /> guldmalmer.
+    mine10kOres: Bryt <object id="ore" /> av vilken typ som helst <numberProgress
+      />
+    mine1kGoldOres: Bryt <object id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f"
+      alwaysShow="true" /> under aktiviteter. <numberProgress />
     useALamp: Använd en XP-lampa. <numberProgress />
-    walkSteps: Gå <numberProgress /> steg.
-    walkStepsInDay: Gå <numberProgress /> steg på en dag.
-    characterLevel: Ha <numberProgress /> karaktärsnivå.
-    haveCoins: Ha <numberProgress /> mynt.
-    haveFoodStackQuantity: Ha <numberProgress /> av vilken mat som helst.
-    mineOres: Bryt <numberProgress /> malmer.
-    exploreJarvonia: Utforska varje plats i Jarvonia. <numberProgress />
-    gainFineMaterial: Få <numberProgress /> fina material.
-    dropItem: Släpp <numberProgress /> föremål.
-    dropItems: Släpp <numberProgress /> föremål.
+    walkSteps: Gå totalt <numberProgress /> steg
+    walkStepsInDay: Gå totalt  <numberProgress /> under en hel dag
+    characterLevel: Nå nivå <numberProgress /> med din karaktär
+    haveCoins: Ha totalt <icon i="money small"/> <numberProgress /> mynt
+    haveFoodStackQuantity: Ha vilken som helst <object id="food" /> stapel av <numberProgress
+      />
+    mineOres: Bryt <object id="ore" /> från <object id="activity_mining" /> aktiviteter.
+      <numberProgress />
+    exploreJarvonia: Utforska varje plats i <object id="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db"
+      /> <numberProgress />
+    gainFineMaterial: Få ett fint material <numberProgress />
+    dropItem: Släpp ett föremål <numberProgress />
+    dropItems: Släpp flera föremål <numberProgress />
     haveInventoryFilled: Bli överbelastad. <numberProgress />
-    haveRingsEquipped: Ha två ringar på dig. <numberProgress />
+    haveRingsEquipped: Fyll båda <object id="item_ring" /> platserna i på din karaktär.
+      <numberProgress />
     gainItem: Få föremål <item id="{item}"/>. <numberProgress />
-    haveSickleEquipped: Vara utrustad med en skära. <numberProgress />
-    haveHammerEquipped: Vara utrustad med en hammare. <numberProgress />
-    openTreasureChest: Öppna <numberProgress /> kistor.
-    consumeBeer: Drick <numberProgress /> öl.
+    haveSickleEquipped: Vara utrustad med en <object id="sickle" />   <numberProgress
+      />
+    haveHammerEquipped: Vara utrustad med en <object id="smithingHammer" />  <numberProgress
+      />
+    openTreasureChest: Öppna <object id="chest" />. <numberProgress />
+    consumeBeer: Drick en <object id="item-beer-9a2b6380-7270-43e0-bd9a-67e8bcb9d925"
+      alwaysShow="true" /> <numberProgress />
     findIceSickle: Hitta ett <hl>mycket sällsynt verktyg</hl> från glaciären. <numberProgress
       />
-    goToNoiselessPass: Gå till platsen som kallas Noiseless Pass. <numberProgress
-      />
-    gainRingWhileFishing: Få en ring medan du fiskar. <numberProgress />
-    makeSandwich: Gör <numberProgress /> smörgåsar.
-    useMemosphere: Använd <numberProgress /> memosfärer.
-    craftPickaxeOfHighestQuality: Tillverka en hacka av högsta kvalitet. <numberProgress
-      />
+    goToNoiselessPass: Gå till området som kallas <object id="location-noiseless_pass-e081df71-97eb-4708-90b0-f33e61b2a0c7"
+      alwaysShow="true" /> <numberProgress />
+    gainRingWhileFishing: Fiska upp en <object id="item_ring" /> medan du <object
+      id="activity_fishing" /> <numberProgress />
+    makeSandwich: Gör en <object id="sandwich" /> <numberProgress />
+    useMemosphere: Använd en <object id="memosphere" /> <numberProgress />
+    craftPickaxeOfHighestQuality: Tillverka en <object id="pickaxe" /> av högsta kvalitet.
+      <numberProgress />
     haveAllSkillsLevel: Ha alla färdigheter på minst nivå <numberProgress />
-    walkStepsWithoutGear: Gå <numberProgress /> steg utan att bära någon utrustning.
+    walkStepsWithoutGear: Gå en viss mängd steg helt utan någon utrustning alls <numberProgress
+      />
     haveEverySlotFilled: Ha ett föremål i varje utrustningsplats. <numberProgress
       />
-    gainTreasureChest: Få en skattkista från vilken aktivitet som helst. <numberProgress
+    gainTreasureChest: Få en skattkista <object id="chest" /> från en aktivitet <numberProgress
       />
-    haveBankStacks: Ha <numberProgress /> staplar av något i din bank.
+    haveBankStacks: Ha flera olika staplar av saker i din bank  <numberProgress />
     activitySwimBeg: Utför momenten i aktiviteten <object id="activity-swimming_(beginner)-1ccee641-01d9-4bcb-8dd7-9df9c61142f2"
-      /> <numberProgress /> gånger.
+      />. <numberProgress />
     activityBasket: Utför momenten i aktiviteten <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
-      /> <numberProgress /> gånger.
+      /> <numberProgress />
     activityButterfly: Utför momenten i aktiviteten <object id="activity-butterfly_catching-ddef8fc5-a61e-4689-bacb-e49ee89f09c8"
-      /> <numberProgress /> gånger.
+      /> <numberProgress />
     activityTinkering: Utför momenten i aktiviteten <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
-      /> <numberProgress /> gånger.
+      />. <numberProgress />
     gainFineStarPearl: Få en högklassig <object id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81"
-      alwaysShow="true" /> från en aktivitet <numberProgress /> gånger.
-    gainTrinketFromActivity: Få valfritt <object id="item_trinket" /> som dropp från
-      en aktivitet <numberProgress /> gånger.
+      alwaysShow="true" /> från en aktivitet. <numberProgress />
+    gainTrinketFromActivity: Få en<object id="item_trinket" /> som dropp från en aktivitet.
+      <numberProgress />
     goToTrench: Gå till platsen som heter <object id="location-darkdepths-385aa267-b46d-47b8-b124-aa3827c39fef"
-      alwaysShow="true" /> <numberProgress /> gånger.
+      alwaysShow="true" /> <numberProgress />
     haveDifferentShields: Ha olika typer av <object id="shield" /> i ditt inventarium
-      samtidigt <numberProgress /> gånger.
+      samtidigt <numberProgress />
     completeActivity: Utför momenten i aktiviteten <item id="{item}" alwaysShow="true"
-      /> <numberProgress /> gånger.
+      />. <numberProgress />
     equipHatchet: Utrusta dig med en <object id="item-basic_hatchet-dc4b21f3-e651-4103-9127-e7d3b74151fe"
-      /> <numberProgress /> gånger.
+      /><numberProgress />
     equipNet: Utrusta dig med ett <object id="item-small_fishing_net-05cb692d-840c-4c57-911c-1f65464aa800"
-      /> <numberProgress /> gånger.
+      /> <numberProgress />
     equipPickaxe: Utrusta dig med en <object id="item-basic_pickaxe-a00d8626-e415-481c-88ee-fdafbb4a45f0"
-      /> <numberProgress /> gånger.
-    findCrossword: Hitta ett <object id="item-jarvonian_crossword_puzzle-01c3fefd-6d9e-4b4d-bb76-91981c663085"
-      /> <numberProgress /> gånger.
+      /> <numberProgress />
+    findCrossword: ssHitta ett <object id="item-jarvonian_crossword_puzzle-01c3fefd-6d9e-4b4d-bb76-91981c663085"
+      /> <numberProgress />
     gainFineTrash: Hitta högklassigt <object id="item-trash-40c14f4e-3ef2-435a-a5de-123843f824bf"
-      alwaysShow="true" /> från en aktivitet <numberProgress /> gånger.
+      alwaysShow="true" /> från en aktivitet. <numberProgress />
     lootFindCommon: Få vanligt byte från en <object id="chest" /> <numberProgress
-      /> gånger.
+      />
     lootFindUncommon: Få ovanligt byte från en <object id="chest" /> <numberProgress
-      /> gånger.
+      />
     lootFindRare: Få sällsynt byte från en <object id="chest" /> <numberProgress />
-      gånger.
     lootFindEpic: Få episkt byte från en <object id="chest" /> <numberProgress />
-      gånger.
     lootFindLegendary: Få legendariskt byte från en <object id="chest" /> <numberProgress
-      /> gånger.
+      />
     activityGlacier: Utför momenten i aktiviteten <object id="activity-glacier_foraging-dfdd59cc-e38b-48fc-9a0e-439163abac12"
-      /> <numberProgress /> gånger.
+      /> <numberProgress />
     activityIce: Utför momenten i aktiviteten <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
-      /> <numberProgress /> gånger.
+      />.  <numberProgress />
     activitySand: Utför momenten i aktiviteten <object id="activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d"
-      /> <numberProgress /> gånger.
+      />. <numberProgress />
     activitySled: Utför momenten i aktiviteten <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
-      /> <numberProgress /> gånger.
+      />. <numberProgress />
     activitySwimExp: Utför momenten i aktiviteten <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
-      /> <numberProgress /> gånger.
+      />. <numberProgress />
     activitySwimInt: Utför momenten i aktiviteten <object id="activity-swimming_(intermediate)-37f761f4-f6fd-49a5-8389-5816388e0cf9"
-      /> <numberProgress /> gånger.
+      />. <numberProgress />
     prepKelpRoll: Tillaga <object id="item-kelp_rolls-90004956-7275-4b13-9488-61cc320afd09"
-      /> <numberProgress /> gånger.
+      /> <numberProgress />
     prepSaltrum: Tillaga <object id="item-saltrum-f2df867a-21a7-48db-b13b-efea9e46cb5d"
-      /> <numberProgress /> gånger.
+      /> <numberProgress />
     prepUnderwaterSalad: Förbered <object id="item-underwater_salad-ea06cde2-d58d-4a79-8b05-6f515d5b02da"
-      /> <numberProgress /> gånger.
+      /> <numberProgress />
     sharkFish: Få en <object id="item-raw_shark-f543d44b-0cc7-4d5a-9cdc-50ce8d90cb86"
       alwaysShow="true" /> från en aktivitet. <numberProgress />
     sharkCook: Få en <object id="item-cooked_shark-4eadab85-170e-42b5-a086-cb57cd9d9dc3"
       alwaysShow="true" /> från ett <object id="recipe_cooking" /> <numberProgress
-      /> gånger.
+      />
