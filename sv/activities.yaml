@@ -11,17 +11,22 @@ singulars:
         desc: 'Med kattlik elegans färdas du runt i staden och använder alla dess
           element som hjälp: väggar, tak, balkonger, gatlyktor. De böjer sig alla
           efter dina önskemål.'
-        name: takhoppning (Mellansvår)
+        name: Hoppa över hus
       swimmingBeginner:
         desc: Du har fått höra att simning är ett sätt att bibehålla en god hälsa,
           så efter några lektioner känner du dig säker på att du vill försöka själv.
-        name: Simning (Nybörjare)
+        name: Simma på vattenytan
       swimmingIntermediate:
         desc: 'Innan du ger dig ut i vattnet kontrollerar du förhållandena: vindstyrka
           och riktning, förekomst och storlek på stenar, närvaro av fiskare, båtar
           eller farliga djur. Du har till och med pratat med lokalbefolkningen. Allt
           är som det ska. Du tar en simtur bland vågorna.'
-        name: Simning (Medelsvår)
+        name: Bodysurfing
+      treetopJumping:
+        name: Hoppa bland trädtoppar
+        desc: När man är högt uppe i träden stiger adrenalinet i kroppen när man hoppar
+          från gren till gren och hoppas att de inte ska knäckas. Fallet nedanför
+          ser skrämmande ut.
     global:
       birdWatching:
         desc: Fågelskådning är ett fönster mot fåglarnas värld. Du observerar tålmodigt
@@ -32,32 +37,32 @@ singulars:
         desc: På din nybörjarresa på längdskidor är varje glid fyllt av förundran.
           De snöiga spåren är din lekplats, där du lär dig skidornas rytm och omfamnar
           vinterskogens fridfulla skönhet.
-        name: Längdskidåkning (Nybörjare)
+        name: Klassisk skidåkning
       crossCountrySkiingDifficult:
         desc: I svår längdskidåkning utmanar du gränserna för uthållighet och skicklighet.
           Genom att besegra branta sluttningar och uthärda tuffa förhållanden finner
           du spänning i den hjärtskärande färden genom det otämjda vinterlandskapet.
-        name: längdskidåkning (Svår)
+        name: Utförsåkning på skidor
       crossCountrySkiingIntermediate:
-        desc: Längdskidåkning på medelnivå ger en känsla av äventyr. Du tar dig an
-          varierande terräng med nyvunnet självförtroende, varje steg blir starkare
-          och säkrare när du utforskar de vidsträckta, snötäckta områdena.
-        name: längdskidåkning (medelsvår)
+        desc: Skate-skidåkning ger en känsla av äventyr. Du tar dig an varierande
+          terräng med nyfunnet självförtroende, varje steg är starkare och säkrare
+          när du utforskar de stora, snötäckta vidderna.
+        name: Skridskoåkning
       frisbeeGolfingBeginner:
-        desc: Som nybörjare i frisbeegolf är varje kast en ny upptäckt. Du lär dig
+        desc: Som en nybörjare i frisbeegolf är varje kast en ny lärdom. Du lär dig
           att mäta vinden och navigera runt träd, njuter av spelets enkelhet och glädjen
-          att se discen sväva mot korgen.
-        name: Frisbee Golf (Nybörjare)
+          av att se frisbeen sväva mot korgen.
+        name: Jarvonia Frisbee-kurs
       frisbeeGolfingDifficult:
         desc: Som en erfaren spelare i svår frisbeegolf är varje bana ett taktiskt
-          slagfält. Du utför komplexa slag, bemästrar konsten med spinn och precision
+          slagfält. Du utför komplexa kast, bemästrar konsten med spinn och precision
           och förvandlar utmanande landskap till episka segrar.
-        name: Frisbee Golf (Svår)
+        name: Frisbeegolf (Svår)
       frisbeeGolfingIntermediate:
         desc: I frisbeegolf på mellannivå utvecklar du ett skarpt sinne för strategi.
           Varje bana innebär en ny utmaning, där du skickligt får din disc att svänga
           runt hinder och finslipa dina färdigheter med varje beräknade kast.
-        name: Frisbee Golf (medelsvår)
+        name: GDTE Frisbeekurs
       guardDuty:
         desc: Som vakt i Wallisiska imperiet har du räkningar att betala, och det
           här är hur du gör det. Du kollar över riket och ser till att du får betalt
@@ -81,25 +86,29 @@ singulars:
       traveling:
         name: Resande
         desc: Resande till en ny plats
+      exploreArea:
+        name: Utforska området
+        desc: Du gör anteckningar på ett tomt papper när du utforskar omgivningarna.
+          Detta kommer att vara användbart för framtida utforskningar.
     jarvonia:
       mountainClimbingBeginner:
         desc: Du förbereder dig för din klättring. Det är en vacker dag med solsken
           och vindstilla. Men när du långsamt klättrar upp får du lite panik när du
           tappar greppet under ena foten. Det var läskigt! Till slut når du toppen
           och tittar stolt på världen under dina fötter.
-        name: Bergsklättring (Nybörjare)
+        name: Bergsklättring
       mountainClimbingIntermediate:
         desc: Nu börjar det likna något. Den här väggen är nästan vertikal och det
           finns inga lättillgängliga greppställen. Du klättrar den med envishet och
           känner hur dina muskler lider för att ge dig den kraft du behöver. Toppen
           smakar blod och ära. Du skriker med den luft du har kvar.
-        name: Bergsklättring (Medelsvår)
+        name: Klättring på bergskammen
       rooftopJumpingBeginner:
         desc: Du klättrar upp på en obelyst lyktstolpe och kollar på omgivningen.
           Du hör fotsteg i närheten, så du skyndar dig över till det intilliggande
           hustaket med ett litet hopp. En kakelplatta lossnar och faller till marken,
           vilket orsakar en smäll. Du måste vara mer försiktig nästa gång.
-        name: takhoppning (Nybörjare)
+        name: Hoppa i hoppborg
       blackEyePeakSearchTeam:
         desc: Hjälp The Adventurer's Guild att lokalisera och hitta information om
           öppna tillstånd som inte har återlämnats.
@@ -115,7 +124,7 @@ singulars:
           stimfisk i deras synkroniserade rörelser.
         name: Merfolkdans
       swimmingExpert:
-        name: Simning (Expert)
+        name: Undervattenssimning
         desc: Att simma genom de olika gångarna och grottorna i den stora undervattensstaden
           Vastalume är en utmaning. Du måste undvika de livliga havsvarelserna, både
           medvetna och omedvetna.
@@ -126,14 +135,18 @@ singulars:
           problem. Din förman litar på dina färdigheter och ditt goda omdöme. Du vet
           när och hur du ska vara effektiv. Din verktygslåda är professionell, precis
           som du.
-        name: Båt reparation (Mellansvår)
+        name: Skrovreparation
+      underwaterAqueductConstruction:
+        desc: Du gräver och förstärker den naturliga vattenledningen som går mot Småfolkets
+          campingplats.
+        name: Konstruktion av undervattensakvedukt
     jarvonia:
       shipRepairBeginner:
         desc: Du deltar i reparationer på grund av slitage av små fartyg. Timmer,
           spik, rigg, beslag och rep står till ditt förfogande. Förmannen ger order
           och du utför dem mästerligt. Kanske kommer du en dag att vara den som ger
           order.
-        name: båt reparation (Nybörjare)
+        name: Briggreparation
       woodCarving:
         name: Träsnideri
         desc: 'Att forma trä med ett skarpt verktyg, som en kniv, är en gammal hantverkstradition.
@@ -155,6 +168,11 @@ singulars:
           enligt kockens instruktioner, servera varm soppa till dem som behöver det
           mest. När alla har fått sin portion känner du en blandning av stolthet,
           ödmjukhet och en känsla av gemenskap.
+      vegetableChopping:
+        desc: Det är en stressig miljö med en kock som skriker åt en och man har ingen
+          aning om vad man ska göra, men ibland lyckas man hacka en grönsak på rätt
+          sätt.
+        name: Hacka grönsaker
   crafting:
     jarvonia:
       iceSculpting:
@@ -169,6 +187,11 @@ singulars:
           Du kommer på tusen sätt att göra det, men för de flesta av dem saknas komponenter.
           Du ser dig omkring i verkstaden och letar efter något specifikt. Där är
           det! Dags att sätta igång.
+      apprenticeForLoif:
+        name: Lärling till Loif
+        desc: Gubben Loif Ulfrand behöver många saker, bland annat varma drycker,
+          vässade verktyg och håret klippt. Men ibland får du lite erfarenhet av att
+          meka med hans verktyg när han somnar.
     syrenthia:
       underwaterBasketWeaving:
         name: Undervattenskorgflätning
@@ -183,6 +206,10 @@ singulars:
           räkningarna, men det hjälper till med ett par bra ändamål: det rengör miljön
           och hjälper till att lösa brott. Var uppmärksam på reglerna kring det och
           ha kul! Du kan dra upp vad som helst!'
+      pondFishingNet:
+        name: Fiske i träskdamm (nät)
+        desc: Du sänker ner ett fiskenät i det grumliga vattnet. Du behöver inte vänta
+          länge förrän olika vattenvarelser fastnar i det.
     jarvonia:
       lakeFishing:
         desc: Med förväntan i den friska vinterluften väljer du noggrant ut ditt bete
@@ -336,6 +363,10 @@ singulars:
           dig fram och upptäcker de dolda ådrorna av tennmalm som väntar på att bli
           upptäckta.
         name: Bryta tennmalm
+      mineTarsiliumOreUnderwater:
+        name: Bryta tarsiliummalm (Under vatten)
+        desc: Ljuset är dåligt under vattnet, men det är inte annorlunda än i en grotta.
+          Med tarsilium är det alltid svårt att se den svarta malmen i en mörk miljö.
     jarvonia:
       spelunking:
         desc: Du kryper på den hårda marken som en ödla. Oroliga tankar förpestar
@@ -424,6 +455,11 @@ singulars:
         desc: Koraller, vissa lika stora som små träd, omger dig. Du svingar din yxa
           mot deras stammar och hugger ner dem en efter en. Till skillnad från träd
           på ytan faller de inte till marken, utan flyter istället upp.
+    global:
+      cutBambooLogs:
+        name: Kapa stockar av bambu
+        desc: Du slår på bambun med din yxa. Du hör ett tillfredsställande knastrande
+          ljud.
   smithing:
     jarvonia:
       horseshoeMaking:
@@ -431,3 +467,90 @@ singulars:
         desc: Med starkt metall smider du en sko som kommer att skydda hästens hovar
           på medelhård till hård terräng. Även om spikar används för att fästa skon,
           lider inte hästen eftersom hoven inte är känslig, likt en mycket tjock människotånagel.
+      flameStoking:
+        name: Flamman tänds
+        desc: När Helga ringer klockan, underhåller du elden. Ett enkelt liv.
+  hunting:
+    jarvonia:
+      rabbitTracking:
+        desc: Du lägger märke till de avgnagda växterna, de brutna kvistarna och kaninernas
+          fotspår i marken när du letar efter djuren.
+        name: Spårning av kaniner
+      bearHunting:
+        desc: Stora klösmärken på träd indikerar att du är på rätt väg för att hitta
+          björnar i omgivningen. Dina sinnen är fokuserade och din kropp är redo att
+          ta ner en björn.
+        name: Björnjakt
+      wolfHunting:
+        name: Vargjakt
+        desc: Du följer stora tassavtryck i marken på jakt efter den utbredda skogsjägaren,
+          vargen. Din pilbåge och pil är redo att skjuta ner en.
+      deerHunting:
+        name: Renjakt
+        desc: Du letar efter hjortarnas släpp i skogen, en säker indikation på att
+          de finns i omgivningen. Din pilbåge och pil är redo att skjuta ner en.
+    gdte:
+      lizardHunting:
+        desc: Du letar efter ledtrådar till de många ödlearter som lever i det omgivande
+          området. Att jaga dem är inte farligt, men säkert tråkigt.
+        name: Ödlejakt
+      halfmawHunt:
+        desc: Med pilbåge och pilar rör du dig genom träsket på jakt efter den legendariska
+          Halvkäft. Den har besegrat många jägare före dig, men du hoppas att ett
+          sådant öde inte ska drabba dig, och att du ska bli rovdjuret, inte bytet.
+        name: Jakt på Halvkäft
+      invasiveSpeciesHunting:
+        desc: Träsket är fullt av maskliknande varelser som inte hör hemma här. Du
+          letar noga efter tecken på dem och eliminerar alla som du hittar.
+        name: Jakt på invasiva arter
+    global:
+      birdhouseTrappingBeginner:
+        desc: Du sätter upp en fågelholk som är förberedd med en fälla. Den låter
+          fågeln komma in, men hindrar den från att ta sig ut igen.
+        name: Fågelholksfällor (Nybörjare)
+      boxTrapping:
+        desc: Du sätter upp ett enkelt fångstsystem med hjälp av ett bete som placeras
+          under en trälåda som stöds av en kvist. När ett djur ger sig på betet flyttar
+          det på kvisten och fångas i lådan.
+        name: Fånga under en låda
+      crabTracking:
+        name: Krabbspårning
+        desc: När du går över stranden letar du efter spår av krabbor i närheten.
+          De lämnar särskilda avtryck i sanden, men tyvärr sköljs de ofta bort av
+          tidvattnet.
+      birdhouseTrappingIntermediate:
+        name: Fågelholksfällor (Lagom)
+        desc: Du lägger bete i fågelholken, som är redo att användas för att fånga
+          olika fågelarter. Därefter fäster du holken på ett träd. Den kommer garanterat
+          att locka till sig bevingade varelser.
+    syrenthia:
+      driftNetHunting:
+        name: Drivgarnsfiske
+        desc: Du reder ut det stora nätet innan du sänker det i vattnet. Det kan fånga
+          hundratals fiskar och andra vattenvarelser – om havsgudarna ler mot dig.
+  misc:
+    emergencySwimEscape:
+      desc: Du har tappat din dykutrustning och börjar få slut på luft. Du måste simma
+        till stranden så fort du kan, men utan att få panik. Du vet att om du stiger
+        upp för snabbt kan du drabbas av tryckfallssjuka.
+      name: Nödsimning
+  tailoring:
+    gdte:
+      sailRepairIntermediate:
+        desc: Det stora seglet har varit med om en del hårda stormar och är fullt
+          med hål. Du arbetar snabbt och exakt för att laga hålen och det ser nästan
+          som nytt ut.
+        name: Reparation av segel (Lagom)
+    jarvonia:
+      sailRepairBeginner:
+        name: Reparation av segel (Nybörjare)
+        desc: Med hjälp av en kraftig nål och tråd syr du försiktigt ihop flera tyglappar
+          för att reparera båtens segel. De blir inte som nya, men kommer säkert att
+          hålla ett tag till.
+  trinketry:
+    gdte:
+      antiqueMarketAssessor:
+        desc: Antikmarknaden i Svarta besvärjelsehamnen är kaotisk, och det tar tid
+          att hitta köpare och säljare för olika varor. Då och då snubblar du över
+          en lönsam affär med en ädelsten eller ett sällsynt föremål.
+        name: Antikmarknadsvärderare
