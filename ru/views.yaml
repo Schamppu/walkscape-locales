@@ -66,7 +66,7 @@ singulars:
       arrivedToLocation: Вы прибыли в <object id={location} />
   activity:
     phrases:
-      consumables: Потребляемое
+      consumables: Расходники
       noActivity: Нет активности
       savedSteps: Сохранённые шаги
       options: Опции
@@ -95,7 +95,7 @@ singulars:
     phrases:
       abilities: Способности
       useAbility: Использовать способность
-      useConsumable: Употребить
+      useConsumable: Использовать расходник
       noAction: Нет действий
       holdToCast: Зажмите, чтобы прочитать заклинание
       holdToUse: Зажмите, чтобы использовать
@@ -198,8 +198,8 @@ singulars:
       requiresService: Необходима услуга.
       noServiceRequirements: Услуга не требуется.
       requirements: Требования
-      noMaterials: У вас нет материалов, из которых можно, что-либо изготовить, в
-        данный момент.
+      noMaterials: У вас нет материалов, из которых можно что-либо изготовить, в данный
+        момент.
       noMaterialsThatCouldBeUsed: Нет материалов, которые могли бы использоваться
         для изготовления в вашем инвентаре.
     errors:
@@ -236,3 +236,72 @@ singulars:
     phrases:
       bought: Куплено
       sold: Продано
+      resetTrade: Отменить сделку
+      buying: Покупка
+      selling: Продажа
+      buyBack: Выкуп
+  inventory:
+    info:
+      noItemEquipped: Предмет не экипирован. \n\n Вы можете экипировать предмет, выбрав
+        один из списка ниже и нажав "Экипировать".
+      noItemSelected: Предмет не выбран. \n\n Выберите предмет из списка ниже для
+        того, чтобы сравнить его с текущим предметом и экипировать его.
+      noItemsFound: Не найдено предметов в вашем инвентаре, которые подошли бы в данную
+        ячейку.
+    phrases:
+      treasury: Сокровища
+      longPressTip: <c>Совет:</c> Долгое нажатие на пачку предметов выберет все аналогичные
+        пачки.
+      dropItems: Выбросить предметы?
+      areYouSureToDrop: Вы уверены, что хотите выбросить предметы? Предметы исчезнут
+        навсегда будучи выброшенными.
+      slots: Ячеек <c>{slots}</c>
+      slotsCount: 'Ячеек:'
+      requirementsNotMet: Требования не выполнены.
+      cantEquip: Не можете экипировать.
+      slotDoesntExist: Этой ячейки инвентаря больше не существует.
+      cantBeDropped: Предмет не может быть выброшен.
+      oneOrMoreCantBeDropped: Один или более предметов не могут быть выброшены.
+      attributes: Аттрибуты
+      abilities: Способности
+      requires: Требуется
+      equipToRingOne: Экипировать в ячейку 1 для кольца
+      equipToToolSlot: Экипировать в ячейку для инструмента {id}
+      emptySlot: Пустая ячейка
+      allSkills: Все умения
+      noItemEquipped: Предмет не экипирован
+      noItemSelected: Предмет не выбран
+      inUse: Используется
+      disableWhenChanging: Отключить при смене активности
+      itemsInUse: Вы выбрали предметы, которые уже используются. Вы не можете выбросить
+        или положить в банк предметы, используемые в данный момент.
+      selectedStacks: Выбрано <c>{stacks}</c> пачек
+      checkBank: Открыть банк
+      allItemsInUse: Все эти предметы сейчас используются и не могут быть выброшены.
+      equipToRingTwo: Экипировать в ячейку 2 для кольца
+      durationInSteps: Активно в течение <c>{steps}</c> <icon i="Steps" /> шагов
+      enableWhenBack: Включить заново при старте активности, для которой использовалось
+        ранее
+      duration: Длительность
+  bank:
+    phrases:
+      withdraw: Забрать
+      deposit: Положить
+  trade:
+    phrases:
+      trade: ПРИНЯТЬ
+      restockIn: 'Пополнение через: '
+      buying: Покупаете {amount}
+      selling: Продаёте {amount}
+      total: Всего
+  characterCreation:
+    phrases:
+      bodyType: Тип тела
+      race: Раса
+      bodyTypeA: A
+      bodyTypeB: B
+      characterName: Имя персонажа
+      chooseABodyType: Выберите тип тела
+    info:
+      rememberSwipe: Помните, что вы можете свайпнуть назад, чтобы изменить опции
+        в любое время во время создания персонажа.
