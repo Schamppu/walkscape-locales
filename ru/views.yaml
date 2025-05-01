@@ -156,9 +156,9 @@ singulars:
   wardrobe:
     phrases:
       noHeadwear: У вас нет головных уборов.
-      noFaceAccessories: У вас нет аксессуаров для лица.
-      noBackAccessories: У вас нет аксессуаров для спины.
-      noEyeAccessories: У вас нет аксессуаров для глаз.
+      noFaceAccessories: У вас нет украшений для лица.
+      noBackAccessories: У вас нет украшений для спины.
+      noEyeAccessories: У вас нет украшений для глаз.
   achievements:
     info:
       collectibleItems: Коллекционные предметы — это вещи, которые вы можете получить
@@ -340,9 +340,431 @@ singulars:
         lastSync: 'Последняя синхронизация: {timestamp}'
         changeWarning:
           title: Изменить источник данных?
+          description: Пожалуйста, обратите внимание, что это может привести к потере
+            шагов около времени изменения.
         requiresPermissionIos: Если выпадающий список ниже не показывает внешних устройств,
           убедитесь, что вы дали разрешение приложению на использование данных о шагах
           из Apple Здоровье, перейдя в Настройки ➤ Конфиденциальность и безопасность
           ➤ Здоровье ➤ (под надписью 'Приложения') WalkScape и что шаги для данного
           устройства были зарегистрированы в Apple Здоровье в течение 7 последних
           дней.
+      account:
+        title: Учётная запись
+        visibility: Видимость профиля
+      character:
+        title: Персонаж
+        anonOnLeaderboard: Быть анонимным в таблице лидеров
+        hideSteps: Скрыть шаги
+      gameplay:
+        title: Игровой процесс
+        stopWhenOverEncumberedDefault: По умолчанию остановиться когда перегружены
+      closedBeta:
+        title: Закрытая Beta
+        clearStepsGraph: Очистить график шагов
+        useThisToClear: Можете воспользоваться этим если хотите сбросить ваш график
+          шагов. Полезно если вы получили шаги в результате ошибки и хотите осуществить
+          сброс графика.
+      notifications:
+        title: Оповещения
+        stepCountInterval: Интервал оповещений
+        stepCountNotifications: Оповещения о количестве шагов
+        notificationType: Тип оповещений
+      locales:
+        title: Язык
+        chooseALanguageInfo: Нажмите кнопку выше, чтобы отрыть меню выбора языка.
+        changeLanguage: Поменять язык
+    phrases:
+      settings: Настройки
+      exitToCharacterSelection: Выйти на экран выбора персонажа
+      stepSourceInfo: Информация об источниках шагов
+      stepSourceInfoDesc: Нажав кнопку ниже, можно увидеть больше информации об источниках
+        шагов и их различиях.
+      connectionInfoIos: Если ваши надеваемые устройства не показываются в списке
+        выше, убедитесь, что вы дали разрешение приложению на использование данных
+        о шагах из Apple Здоровье, перейдя в Настройки ➤ Конфиденциальность и безопасность
+        ➤ Здоровье ➤ (под надписью 'Приложения') WalkScape и что шаги для данных устройств
+        были зарегистрированы в Apple Здоровье в течение 7 последних дней.
+      connectionInfoAndroid: Поддержка смарт часов для Android будет реализована скоро.
+        Сейчас только телефон поддержан в качестве источника шагов.
+  gearSets:
+    phrases:
+      gearSets: Наборы экипировки
+      copyCurrentlyEquippedGear: Скопировать текущую экипировку
+      forActivities: 'Для активностей: '
+      optionsAndFilters: Опции и фильтры
+      sortBy: 'Сортировать по: '
+      toolSlot: Ячейка инструмента
+      default: По умолчанию
+      level: 'Ур. '
+      showAttributes: Показать атрибуты
+      gear: Экипировка
+      name: Имя
+      unequipGear: Снять экипировку
+      unequipTools: Снять инструменты
+      noItemSelected: Предмет не выбран
+      importedGearSetDefaultName: Импортированный набор экипировки
+      tools: Инструменты
+      noActivitiesSelected: Не выбрано активностей
+      newSetDefaultName: Мой новый набор экипировки
+    errors:
+      keywordError: 'Набор экипировки уже имеет: <object id="{keyword}" />'
+      duplicateItem: Предмет уже есть в наборе экипировки
+    info:
+      gearSetsDescription: Набор экипировки помогают быстро переключаться между разными
+        экипировками.
+      noGearSetsManage: Пока что вы не создали наборов экипировки. Создайте первый,
+        нажав кнопку <c i=0>Создать новый</c> ниже.
+      noGearSetsList: У вас пока что нет наборов экипировки. Нажмите кнопку <c i=0>Настроить</c>,
+        чтобы создать или импортировать новые наборы экипировки.
+      youDontHaveAnyItems: Нет вещей. Либо вы не знаете или не имеете предметов такого
+        типа, или же ваши фильтры и поиск не вернули ничего подходящего.
+      gearSetManageDesc: Выберите набор экипировки, который вы хотите экипировать,
+        ниже. Для того чтобы создать, импортировать или редактировать ваши наборы
+        экипировки, вы можете нажать <c i=0>Настроить</c>.
+      gearSetsListDesc: Здесь вы можете управлять вашими наборами экипировки. Если
+        вы хотите <c i=0>создать новый</c>, нажмите кнопку ниже. Вы можете также <c
+        i=1>скопировать вашу текущую экипировку</c> при создании нового набора экипировки.
+  location:
+    phrases:
+      activities: Активности
+      services: Услуги
+      buildings: Здания
+      factions: Фракции
+      routes: Маршруты
+      jobBoard: Доска объявлений
+      jobs: Работы
+      noActivites: Нет доступных активностей в данной локации.
+      tapToShowRoutes: Нажмите, чтобы увидеть маршруты
+  pfpCreation:
+    buttons:
+      randomize: Выбрать случайно
+      hideHat: Скрывать головной убор
+      enableFacepaint: Включить раскраску лица
+      enableDynamicBackground: Включить динамический задний фон
+      choose: Выбрать
+      enableFaceAccessory: Включить украшения для лица
+      enableBackAccessory: Включить украшения для спины
+      showHat: Показывать головной убор
+      enableEyeAccessory: Включить украшения для глаз
+    phrases:
+      mainOptions: Основные опции
+      extras: Дополнительно
+      defaultExpression: Выражение по умолчанию
+      variants: Варианты
+      noVariantSelected: Вариант не выбран
+      colorOptions: Опции цвета
+      resetToDefault: Сбросить в начальное значение
+      homeRegion: Домашний регион
+      race: Раса
+      selectedVariant: Вариант {index} выбран
+      dynamicBackground: Динамическое изменение заднего фона меняет картинку на заднем
+        фоне в зависимости от локации персонажа.
+      currentSelection: Сейчас выбрано
+  worldMap:
+    phrases:
+      activities: Активности
+      services: Услуги
+      buildings: Здания
+      pointsOfInterest: Достопримечательности
+      information: Информация
+      routeFromTo: Из локации <location i="{fromID}"/> в локацию <location i="{toID}"/>
+      youreHere: Сейчас вы в этой локации.
+      currentLocation: Текущая локация
+      noActivities: В этой локации нет доступных активностей.
+      route: Маршрут
+      youHaveNotExplored: Вы ещё не исследовали эту локацию. Вы увидите информацию
+        о данной локации после того, как посетите её один раз.
+      routeRequirementsNotMet: 'Участки выбранного вами маршрута имеют требования,
+        которые не выполнены:'
+      afterExploring: После исследования локации, вы сможете увидеть достопримечательности
+        данной локации.
+      changeRouteWarning: Смена маршрута отменит ваше текущее перемещение и вернёт
+        вас в предыдущую локацию. Вы уверены?
+  stats:
+    phrases:
+      stats: Характеристики
+      totalSkillXp: Общий опыт для умения
+      totalSteps: Общее число шагов
+    info:
+      stats: Сбор статистики с каждого шага, который вы сделали через мир Аренум.
+      chartWarning:
+        title: Неточности в графиках
+        description: Некоторое количество игроков сообщило о проблемах с тем, что
+          их графики шагов неточны, это было вызвано большими внутренними изменениями
+          в предыдущем обновлении. Если вы столкнётесь с проблемами, что графики показывают
+          существенно отличные данные от других источников, это может быть причиной.
+          Игровая логика должна по-прежнему работать, как и раньше, а ошибки в графиках
+          будут разрешены в последующих обновлениях.
+  tutorial:
+    phrases:
+      noMoreMessages: Больше нет обучающих сообщений
+      youWillGain: Вы получите предмет(ы) ниже, если выберете эту опцию.
+  leaderboards:
+    phrases:
+      show: Показать
+      everyone: Всех
+      friends: Друзей
+      first: Первые
+      me: Я
+      last: Последние
+      totalSteps: Всего шагов
+      totalLevel: Суммарный уровень
+      totalExperience: Суммарный опыт
+      achievementPoints: Очки достижений
+      loadingPage: Загрузка страницы...
+      leaderboards: Таблицы лидеров
+  mainMenu:
+    phrases:
+      authenticating: Авторизация...
+      pleaseWait: Пожалуйста, подождите...
+      createCharacter: Создать нового персонажа
+      logOut: Выйти
+      noInternet: Нет подключения к интернету
+      dontDoIt: Не делайте этого, если не уверены.
+      deleteWord: УДАЛИТЬ
+      deletingCharacter: Удаление вашего персонажа <hl>необратимо</hl>.
+      iAmSure: Я уверен(а)
+      downloadingLocalisations: Скачиваются обновлённые локализации
+      downloadingContent: Скачивается новое игровое содержимое
+      loadingGame: Загрузка игры... пожалуйста, подождите!
+      logIn: Войти
+      register: Зарегистрироваться
+      pleaseEnterCredentials: Пожалуйста, введите данные вашей учётной записи WalkScape.
+      email: E-mail / Имя пользователя
+      password: Пароль
+      noBetaAccess: Нет доступа к beta.
+      support: Поддержать игру
+      accountPage: Страница учётной записи
+      googlePlay: Обновление из Google Play
+      chooseCharacter: Выберите вашего персонажа или создайте нового.
+      testFlight: Вы можете скачать последнюю версию из приложения <c>TestFlight</c>.
+      lostInternet: Ваше устройство потеряло подключение к интернету. Ожидание подключения...
+      areYouSureYouWantToDelete: Вы уверены, что хотите удалить персонажа <hl>{name}</hl>?
+      welcomeToWalkscape: Добро пожаловать в WalkScape, <hl>незнакомец</hl>. Пожалуйста,
+        войдите.
+      ifYouAreSure: Если вы уверены, напишите <c>УДАЛИТЬ</c> в поле и нажмите 'Продолжить'.
+      areYouAbsolutelySure: Вы точно уверены? После этого шага, вы необратимо потеряете
+        вашего персонажа.
+    loadingStates:
+      localizationFiles: Загрузка файлов локализации
+      gameVersion: Получение версии игры
+      initializingPlayer: Инициализация данных игрока
+      validatingGame: Проверка игровых данных с сервера
+      checkingLocalizations: Проверка локализаций с сервера
+      loadingComplete: Загрузка завершена!
+      readingLocalGameData: Чтение локальных игровых данных
+      initializingObjects: Инициализация игровых объектов
+      readingCloudData: Чтение облачных данных
+      cleaningUpData: Очистка данных
+      dataLoadingComplete: Загрузка данных завершена!
+      loadingCharactersFromCloud: Загрузка персонажей из облака
+      startingGameLoad: Начало загрузки игровых данных
+      initializingDatabases: Инициализация баз данных
+      initializingProviders: Инициализация провайдеров
+  social:
+    phrases:
+      manageFriends: Социальные настройки
+      pendingInvites: Ждущие ответа приглашения
+      friends: Друзья
+plurals:
+  inventory:
+    info:
+      consumableDuration:
+        two: '-'
+        few: Активность <object id="{activity}" alwaysShow="true"/> требует <c>{steps}</c>
+          шага за действие. Выбранное количество расходников усилит <c>{actions} действий</c>.
+        many: Активность <object id="{activity}" alwaysShow="true"/> требует <c>{steps}</c>
+          шагов за действие. Выбранное количество расходников усилит <c>{actions}
+          действий</c>.
+        one: Активность <object id="{activity}" alwaysShow="true"/> требует <c>{steps}</c>
+          шагов за действие. Выбранное количество расходников усилит <c>{actions}
+          действие</c>.
+        zero: Активность <object id="{activity}" alwaysShow="true"/> требует <c>{steps}</c>
+          шагов за действие. Выбранное количество расходников усилит <c>{actions}
+          действий</c>.
+        other: Активность <object id="{activity}" alwaysShow="true"/> требует <c>{steps}</c>
+          шагов за действие. Выбранное количество расходников усилит <c>{actions}
+          действия</c>.
+  achievements:
+    phrases:
+      achievementPoint:
+        one: '{} очко достижений'
+        two: '-'
+        few: '{} очка достижений'
+        zero: '{} очков достижений'
+        other: '{} очка достижений'
+        many: '{} очков достижений'
+  activity:
+    phrases:
+      stepsRequired:
+        one: Шаг требуется
+        zero: Шагов требуется
+        two: '-'
+        few: Шага требуется
+        many: Шагов требуется
+        other: Шага требуется
+      stepsToLevelUp:
+        zero: Шагов до следующего уровня
+        two: '-'
+        few: Шага до следующего уровня
+        many: Шагов до следующего уровня
+        other: Шага до следующего уровня
+        one: Шаг до следующего уровня
+      stepsToCraft:
+        zero: Шагов для изготовления
+        two: '-'
+        many: Шагов для изготовления
+        other: Шага для изготовления
+        few: Шага для изготовления
+        one: Шаг для изготовления
+      stepsRemainingInTotal:
+        zero: Всего шагов осталось
+        two: '-'
+        few: Всего шага осталось
+        many: Всего шагов осталось
+        one: Всего шаг остался
+        other: Всего шага осталось
+      actionsToLevelUp:
+        zero: Действий до следующего уровня
+        two: '-'
+        few: Действия до следующего уровня
+        many: Действий до следующего уровня
+        other: Действия до следующего уровня
+        one: Действие до следующего уровня
+      actionsRemaining:
+        zero: Действий осталось
+        two: '-'
+        few: Действия осталось
+        many: Действий осталось
+        other: Действия осталось
+        one: Действие осталось
+      stepsUntilArrival:
+        zero: Шагов до прибытия
+        one: Шаг до прибытия
+        two: '-'
+        few: Шага до прибытия
+        many: Шагов до прибытия
+        other: Шага до прибытия
+maps:
+  shop:
+    phrases:
+      itemType:
+        'material': Материалы
+        'container': Контейнеры
+        'loot': Добыча
+        'consumable': Расходники
+        'crafted': Изготовленное
+        'tool': Инструменты
+        'special': Особое
+        'gear': Экипировка
+        'cosmetic': Косметические предметы
+        'collectible': Коллекционные предметы
+  character:
+    stepsTime:
+      'hourly': Шагов за час
+      'daily': Шагов за день
+      'monthly': Шагов за месяц
+  settings:
+    categories:
+      'accessibility': Специальные возможности
+      'graphics': Графика
+      'gameplay': Игровой процесс
+      'account': Учётная запись
+      'character': Персонаж
+    boolSettings:
+      'alwaysStopWhenInventoryFull': По умолчанию остановиться когда перегружены
+      'showRecipesRequirementsAreMet': Требования по уровню не выполнены
+      'showRecipesServicesAreMet': Необходимые услуги отсутствуют
+      'spriteOutlines': Отображать контуры
+      'showFpsCounter': Показывать счётчик фпс
+      'shaderOutlineRendering': Показывать контуры для шейдеров
+      'inventoryCollapsed': Сжатый инвентарь
+      'leftHandedMode': Режим для левшей
+      'showRecipesMaterialsAreMet': Требования по материалам не выполнены
+      'showCompletedAchievements': Показать выполненные достижения
+    enumSettings:
+      'language': Язык
+      'leaderboardFilter': Показать
+      'leaderboardType': Таблицы лидеров
+      'stepDataTime': Временной период
+    custom:
+      'dataSource': Источник данных о шагах
+    stepCountNotifications:
+      'never': Никогда
+      'everyHundred': Каждые сто
+      'everyThousand': Каждую тысячу
+      'everyTenThousand': Каждый десять тысяч
+      'always': Всегда
+    languages:
+      'en': Английский
+      'de': Немецкий
+      'fi': Финский
+      'pl': Польский
+      'it': Итальянский
+      'pt': Португальский
+      'tr': Турецкий
+      'fr': Французский
+      'zh_Hans': Китайский (упрощённый)
+      'sv': Шведский
+      'es': Испанский
+      'nl-NL': Нидерландский
+    leaderboardFilter:
+      'everyone': Все
+      'friends': Друзья
+    visibilitySettings:
+      'friends': Только для друзей
+      'public': Публичный
+      'private': Приватный
+    notificationImportance:
+      'high': Издаёт звук и вибрацию
+      'low': Без звука, без вибрации и не показывается в строке состояния.
+      'urgent': Издаёт звук, вибрацию и появляется в виде Head-up уведомления.
+  achievements:
+    phrases:
+      difficulty:
+        'easy': Лёгкие
+        'normal': Нормальные
+        'extreme': Экстремальные
+        'hard': Сложные
+      difficultyTitle:
+        'normal': Нормальные достижения
+        'hard': Сложные достижения
+        'extreme': Экстремальные достижения
+        'easy': Лёгкие достижения
+  characterCreation:
+    phrases:
+      optionTypes:
+        'none': Нет
+        'face': Лицо
+        'body': Тело
+        'nose': Нос
+        'hair': Причёска
+        'eyes': Глаза
+        'faceAccessory': Украшения для лица
+        'facepaint': Раскраска лица
+        'backAccessory': Украшения для спины
+        'background': Задний фон
+        'outfit': Внешний вид
+        'eyeAccessory': Украшения для глаз
+        'headwear': Головной убор
+      raceTypes:
+        'none': Нет
+        'human': Человек
+      bodyTypes:
+        'none': Нет
+        'feminine': Б (Женственный)
+        'masculine': А (Мужественный)
+      expressions:
+        'normal': Нормальный
+        'angry': Злой
+        'laughing': Смеющийся
+        'sad': Печальный
+        'smile': Улыбка
+        'smirk': Ухмылка
+        'surprise': Удивление
+        'veryAngry': Очень злой
+  locales:
+    grammaticalGender:
+      'masculine': Мужественный
+      'feminine': Женственный
+      'neutral': Нейтральный
