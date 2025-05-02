@@ -49,7 +49,7 @@ singulars:
   tools:
     carpentryTool:
       name: Outil de construction
-      requirement: Nécessite un outil de construction.
+      requirement: Nécessite d'équiper un <object id="carpentryTool" />.
       requirementLevel: Requiert un outil de construction qui a au moins <keywordRequirements
         /> dans ses prérequis.
     fishing:
@@ -59,7 +59,7 @@ singulars:
         /> dans ses prérequis.
     fishingCage:
       name: Nasse à poissons
-      requirement: Nécessite une nasse à poissons.
+      requirement: Nécessite une <object id="fishingCage" /> d'équipé.
       requirementLevel: Nécessite une cage de pêche qui a au moins <keywordRequirements
         /> dans ses prérequis.
     fishingNet:
@@ -88,15 +88,15 @@ singulars:
       requirementLevel: Requiert une hache ayant au moins <keywordRequirements />
         de prérequis.
     foragingTool:
-      requirementLevel: Requiert un outil de cueillette ayant <keywordRequirements
-        /> de prérequis minimal.
+      requirementLevel: Requiert un outil de collecte ayant <keywordRequirements />
+        de prérequis minimal.
       name: Outil de cueillette
-      requirement: Requiert un outil de cueillette.
+      requirement: Requiert d'équiper un <object id="foragingTool" />.
     magnifyingLense:
       requirementLevel: Requiert une loupe ayant au moins <keywordRequirements />
         de prérequis.
       name: Loupe
-      requirement: Requiert d'équiper une loupe.
+      requirement: Requiert d'équiper une <object id="magnifyingLense" />.
     logSplitter:
       requirementlevel: Requiert un fendeur de bûches ayant au moins <keywordRequirements
         /> de prérequis.
@@ -131,62 +131,62 @@ singulars:
       name: Pioche
       requirementLevel: Requiert une pioche ayant au moins <keywordRequirements />
         de prérequis.
-      requirement: Requiert d'équiper une pioche.
+      requirement: Requiert d'équiper une <object id="pickaxe" />.
     cookingTool:
       name: Ustensile de cuisine
       requirementLevel: Requiert un ustensile de cuisine ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper un ustensile de cuisine.
+      requirement: Requiert d'équiper un <object id="cookingTool" />.
     craftingTool:
       name: Outil d'artisanat
       requirementLevel: Requiert un outil d'artisanat ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper un outil d'artisanat.
+      requirement: Requiert d'équiper un <object id="craftingTool" />.
     fishingLure:
       name: Leurre de pêche
       requirementLevel: Requiert un leurre de pêche ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper un leurre de pêche.
+      requirement: Requiert d'équiper un <object id="fishingLure" />.
     cookingKnife:
       name: Couteau de cuisine
       requirementLevel: Requiert d'équiper un couteau de cuisine ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper un couteau de cuisine.
+      requirement: Requiert d'équiper un <object id="cookingKnife" />.
     cookingPot:
       name: Marmite
       requirementLevel: Requiert une marmite ayant au moins <keywordRequirements />
         de prérequis.
-      requirement: Requiert d'équiper une marmite.
+      requirement: Requiert d'équiper une <object id="cookingPot" />.
     cuttingBoard:
       name: Planche à découper
       requirementLevel: Requiert une planche à découper ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper une planche à découper.
+      requirement: Requiert d'équiper une <object id="cuttingBoard" />.
     cookingSpices:
       name: Épices
-      requirement: Requiert d'équiper des épices.
+      requirement: Requiert d'équiper des <object id="cookingSpices" />.
       requirementLevel: Requiert des épices ayant au moins <keywordRequirements />
         de prérequis.
     chisel:
       name: Ciseau à bois
       requirementLevel: Requiert un ciseau à bois ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper un ciseau à bois.
+      requirement: Requiert d'équiper un <object id="chisel" />.
     saw:
       name: Scie
       requirementLevel: Requiert une scie ayant au moins <keywordRequirements /> de
         prérequis.
-      requirement: Requiert d'équiper une scie.
+      requirement: Requiert d'équiper une <object id="saw" />.
     screwdriver:
       name: Tournevis
       requirementLevel: Requiert un tournevis ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper un tournevis.
+      requirement: Requiert d'équiper un <object id="screwdriver" />.
     smithingHammer:
       name: Marteau de forgeron
       requirementLevel: Requiert un marteau de forgeron ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper un marteau de forgeron.
+      requirement: Requiert d'équiper un <object id="smithingHammer" />.
     localMap:
       name: Carte régionale
       requirementLevel: Requiert une carte régionale ayant au moins <keywordRequirements
@@ -202,6 +202,16 @@ singulars:
       requirementLevel: Requiert une clé de serrage ayant au moins <keywordRequirements
         /> de prérequis.
       requirement: Requiert d'équiper une clé de serrage.
+    fishingTool:
+      name: Outil de pêche
+      requirement: Requiert un outil du type <object id="fishingTool" /> d'équipé.
+      requirementLevel: Requiert un outil de pêche qui a au moins <keywordRequirements
+        /> dans ses prérequis.
+    agilityTool:
+      name: Outil d'agilité
+      requirement: Requiert un <object id="agilityTool" /> d'équipé.
+      requirementLevel: Requiert un outil d'agilité ayant au moins <keywordRequirements
+        /> de prérequis.
   recipes:
     products:
       sandwich:
@@ -340,8 +350,14 @@ singulars:
       name: Arme
       requirementLevel: Requiert une arme ayant au moins <keywordRequirements /> de
         prérequis.
+      requirement: Requiert un <object id="weapon" /> d'équipé.
     shield:
       name: Bouclier
       requirement: Requiert d'équiper un <object id="shield" />.
       requirementLevel: Requiert un bouclier ayant au moins <keywordRequirements />
         de prérequis.
+    arrows:
+      name: Flèches
+      requirement: Requiert <object id="arrows" /> d'équipé.
+      requirementLevel: Requiert des flèches ayant au moins <keywordRequirements />
+        en prérequis.

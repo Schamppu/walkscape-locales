@@ -27,10 +27,10 @@ singulars:
       requirementLevel: Vereist een vis welke op z'n minst <keywordRequirements />
         vereist.
     logs:
-      name: Houtblokken
-      requirement: Vereist een houtblok.
-      requirementLevel: Vereist een houtblok welke op z'n minst <keywordRequirements
-        /> vereist.
+      name: Boomstam
+      requirement: Vereist een houten <object id="logs" />.
+      requirementLevel: Vereist een houtblok met minstens <keywordRequirements />
+        in zijn vereisten.
     plant:
       name: Plant
       requirement: Vereist een plant.
@@ -60,6 +60,9 @@ singulars:
       requirement: Vereist een paddenstoel.
       requirementLevel: Vereist een paddenstoel welke op z'n minst <keywordRequirements
         /> vereist.
+    nugget:
+      requirement: Vereist een <object id="nugget" />.
+      name: Klompje
   tools:
     ruler:
       requirement: Vereist een liniaal.
@@ -152,10 +155,10 @@ singulars:
       requirementLevel: Vereist kookgereedschap welke op z'n minst <keywordRequirements
         /> vereist.
     craftingTool:
-      name: Ambacht gereedschap
+      name: Ambachtsgereedschap
       requirement: Vereist het dragen van een <object id="craftingTool" />.
-      requirementLevel: Vereist ambacht gereedschap welke op z'n minst <keywordRequirements
-        /> vereist.
+      requirementLevel: Vereist ambachtsgereedschap met minstens <keywordRequirements
+        /> in zijn vereisten.
     fishingLure:
       name: Lokaas
       requirement: Vereist het dragen van een <object id="fishingLure" />.
@@ -208,7 +211,7 @@ singulars:
         /> vereist.
     foragingTool:
       requirement: Vereist het dragen van een <object id="foragingTool" />.
-      requirementLevel: Verzamelgereedschap vereist met minstens <keywordRequirements
+      requirementLevel: Vereist een verzamelgereedschap met minstens <keywordRequirements
         /> in zijn vereisten.
       name: Verzamelgereedschap
     logSplitter:
@@ -222,6 +225,36 @@ singulars:
         vereisten.
     agilityTool:
       name: Behendigheidsgereedschap
+      requirement: Vereist het dragen van een <object id="agilityTool" />.
+      requirementLevel: Vereist een behendigheidsgereedschap met minstens <keywordRequirements
+        /> in zijn vereisten.
+    sander:
+      name: Schuurpapier
+      requirement: Vereist het dragen van <object id="sander" />.
+      requirementLevel: Vereist schuurpapier met minstens <keywordRequirements />
+        in zijn vereisten.
+    woodcuttingTool:
+      requirement: Vereist het dragen van een <object id="woodcuttingTool" />.
+      name: Houthakkersgereedschap
+      requirementLevel: Vereist een houthakkersgereedschap met minstens <keywordRequirements
+        /> in zijn vereisten.
+    miningTool:
+      name: Delfgereedschap
+      requirement: Vereist het dragen van een <object id="miningTool" />.
+      requirementLevel: Vereist een delfgereedschap met minstens <keywordRequirements
+        /> in zijn vereisten.
+    trinketryTool:
+      name: Sierraderijgereedschap
+      requirement: Vereist het dragen van een <object id="trinketryTool" />.
+      requirementLevel: Vereist een sierraderijgereedschap met minstens <keywordRequirements
+        /> in zijn vereisten.
+    smithingTool:
+      requirement: Vereist het dragen van een <object id="smithingTool" />.
+      name: Smidsgereeschap
+      requirementLevel: Vereist een smidsgereedschap met minstens <keywordRequirements
+        /> in zijn vereisten.
+    huntingBow:
+      name: Jachtboog
   recipes:
     skills:
       cooking:

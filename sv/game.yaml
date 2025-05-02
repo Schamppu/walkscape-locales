@@ -15,17 +15,17 @@ maps:
       '4': Legendarisk
       '5': Eterisk
     consumableTypes:
-      "food": ''
-      "potion": ''
+      "food": 'Mat'
+      "potion": 'Elixir'
   raceDescriptions:
-    human: \t\t I den vidsträckta och förtrollade vidden <c>Arenum</c> har människorna
-      gjort anspråk på <c>den västra kontinenten</c>. Dessa formidabla länder, klädda
-      i <c>tämjd vildmark</c> och <c>majestätiska landskap</c>, har blivit den mänskliga
-      civilisationens hjärtland.\n\n\t Men under ytan av skönhet och välstånd flödar
-      <c>en stormig ström</c>. Den västra kontinenten har bevittnat en obeveklig saga
-      om <c>stridigheter</c> och <c>konflikter</c>, där människan har utkämpat ständiga
-      strider om dominans och makt. \Rivaliteter och fejder, gamla och nya, <c>har
-      kastat skuggor över den västra kontinenten</c>.
+    human: \t\t I det väldiga och förtrollade landskapet <c>Arenum</c> har människorna
+      gjort anspråk på <c>den Västra Kontinenten</c>. Dessa mäktiga länder, höljda
+      i <c>otämjd vildmark</c> och <c>majestätiska landskap</c>, har blivit människocivilisationens
+      hjärtland.\n\n\t\t Men under ytan av skönhet och välstånd <c>flödar en stormig
+      ström</c>. Den Västra Kontinenten har bevittnat en obeveklig saga av <c>strid</c>
+      och <c>konflikt</c>, då människor har ägnat sig åt ständiga kamper om dominans
+      och makt.\n\n\t\t Rivaliteter och fejder, gamla som nya, <c>har kastat skuggor
+      över den Västra Kontinenten</c>.
   realmDescriptions:
     braemercia: Braemercia
     ethereal: Eterisk
@@ -74,7 +74,7 @@ maps:
     braemercia: Braemercia
     ethereal: Eterisk
     ewerethien: Ewerethien
-    galeforge: Galeforge
+    galeforge: Stormhärd
     gdte: Storhertigdömet Trellin-Erdwise
     jarvonia: Jarvonia
     painfulislands: Smärtsamma öarna
@@ -100,8 +100,8 @@ singulars:
       ring: Ring
       secondary: Sekundär
       woodcutting: Trähuggningsverktyg
-      back: ''
-      tools: ''
+      back: 'Rygg'
+      tools: 'Verktyg'
     itemTags:
       fine: Fint
     itemTypes:
@@ -112,7 +112,7 @@ singulars:
       material: Material
       other: Annat
       quest: Uppdrag
-      collectible: ''
+      collectible: 'Samlarobjekt'
   placeholder:
     placeholder: Platshållare
   requirements:
@@ -120,18 +120,21 @@ singulars:
       level: Kräver <skill skill skill="{skill}" level="{level}"" isRequirement="true"/>
         nivå.
   intro:
-    welcome: ''
-    whereAreYouFrom: ''
+    welcome: 'Välkommen till Arenum, främling. Det ser ut som att du just dök upp
+      utanför <hl>Kallaheim</hl>, en större stad i norr.'
+    whereAreYouFrom: 'Får jag fråga, vem är du?'
   commonPhrases:
-    noActivity: ''
-    allSkills: ''
-    lookingForInternet: ''
+    noActivity: 'Ingen aktivitet.'
+    allSkills: 'Alla egenskaper'
+    lookingForInternet: 'Ansluter till Walkscape...'
+    loadingSteps: Laddar steg...
+    connectingToServer: Ansluter till server...
 plurals:
   items:
     money:
-      zero: ''
-      one: ''
-      two: ''
-      few: ''
-      many: ''
-      other: ''
+      zero: '-'
+      one: 'mynt'
+      two: 'mynt'
+      few: '-'
+      many: '-'
+      other: 'mynt'

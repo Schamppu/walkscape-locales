@@ -126,6 +126,11 @@ maps:
         'tool': Werkzeuge
         'gear': Ausrüstung
         'material': Materialien
+  locales:
+    grammaticalGender:
+      'masculine': Männlich
+      'neutral': Neutral
+      'feminine': Weiblich
 plurals:
   achievements:
     phrases:
@@ -452,18 +457,33 @@ singulars:
         title: Datenquelle
         thisPhone: Dieses Telefon
         requiresPermissionIos: Wenn das Dropdown unten keine externen Geräte anzeigt,
-          stelle sicher, dass du der App in den Einstellungen unter “Datenschutz &
-          Sicherheit” > “Health” > (unter Apps) WalkScape die Erlaubnis gegeben hast,
-          Schritt-Daten von Apple Health zu verwenden, und dass Apple Health in den
-          letzten 7 Tagen Schritte auf diesen Geräten registriert hat.
+          stelle sicher, dass du der App in den Einstellungen ➤ Datenschutz & Sicherheit
+          ➤ Health ➤ (unter Apps) WalkScape die Erlaubnis gegeben hast, Schritt-Daten
+          von Apple Health zu verwenden, und dass Apple Health in den letzten 7 Tagen
+          Schritte auf diesen Geräten registriert hat.
         otherSource: Andere Quelle
       graphics:
         renderOutlines: Render Umrisse
         title: Grafik
         shaderOutlines: Render Umrisse mit Shaders
+      locales:
+        chooseALanguageInfo: Drücke den Button oben, um das Sprach-Auswahlmenü zu
+          öffnen.
+        title: Sprache
+        changeLanguage: Sprache ändern
     phrases:
       settings: Einstellungen
       exitToCharacterSelection: Zur Charaktererstellung zurückgehen
+      connectionInfoIos: Wenn deine Wearables nicht in der obenstehenden Liste angezeigt
+        werden, stelle sicher, dass du WalkScape die Berechtigung erteilt hast, Schritt-Daten
+        aus Apple Health in <c>Einstellungen ➤ Datenschutz & Sicherheit ➤ Gesundheit
+        ➤ (unter Apps) WalkScape</c> zu nutzen, und dass Apple Health Schritte auf
+        diesen Geräten in den letzten 7 Tagen registriert hat.
+      stepSourceInfo: Informationen zu Schrittquellen
+      stepSourceInfoDesc: Sieh dir mehr Informationen über die Schrittquellen und
+        deren Unterschiede an, indem du den Button unten drückst.
+      connectionInfoAndroid: Die Unterstützung für Smartwatches auf Android kommt
+        bald. Derzeit wird nur das Telefon als Schrittzählerquelle unterstützt.
   pfpCreation:
     buttons:
       randomize: Zufällig

@@ -126,6 +126,11 @@ maps:
         "crafted": Wytworzony
         "cosmetic": Kosmetyki
         "special": Specjalne
+  locales:
+    grammaticalGender:
+      'masculine': Męska
+      'feminine': Żeńska
+      'neutral': Neutralna
 plurals:
   achievements:
     phrases:
@@ -249,7 +254,7 @@ singulars:
       requiresService: Wymaga usługi.
     errors:
       noService: Wymóg usług nie jest spełniony
-      notSameQuality: Wszystkie materiały muszą być albo zacne albo normalne
+      notSameQuality: Wszystkie materiały muszą być albo świetne lub normalne
       skillRequirementsNotMet: Wymagania umiejętności nie są spełnione
       noMaterials: Brakuje materiałów do wytwarzania
   inventory:
@@ -353,6 +358,61 @@ singulars:
         zliczania kroków z twojego urządzenia. Proszę zaakceptować te uprawnienia,
         by móc kontynuować grę.
       exactAlarmPermission: Uprawnienia alarmu
+      youNeedToGivePermissions: Musisz pozwolić grze na poniższe uprawnienia, by móc
+        przejść dalej. Dotknij na ekranie uprawnień, by je przyznać.
+      continueWillEnable: Przycisk kontynuowania zostanie włączony, gdy dasz wymagane
+        uprawnienia podane wyżej.
+      connectAppleHealthExplanation: Musisz podłączyć się do Apple Health, by aplikacja
+        mogła odczytać kroki synchronizowane z zegarka i by mogła zobaczyć jakie masz
+        podpięte urządzenia. Jeżeli to twój pierwszy raz w użytkowaniu Walkscape pojawi
+        się prośba o zgodę na uprawnienia na odczyt danych z Apple Health.
+      pedometerPermissionExplanation: Wymagane jest uprawnienie do zliczania kroków
+        na twoim urządzeniu.
+      noDeviceFound: Nie znaleziono urządzenia. Upewnij się, że opcja <c>Połącz z
+        Apple Health</c> została wybrana i przyznano uprawnienia do odczytu danych
+        z Apple Health.
+      connectAppleHealth: Połącz z Apple Health
+      connect: Połącz
+      youCanChangeAnyTime: Możesz zmienić źródło synchronizacji kroków w <c>Ustawieniach
+        Gry</c> w dowolnym momencie.
+      comingSoonToAndroid: Wkrótce dostępne na Android
+      changeStepCountingSource: Zmień źródło zliczania kroków
+      stepCountingSource: Źródło zliczania kroków
+    deviceSource:
+      featureDisabled: Zmienianie źródła zliczania kroków zostało odgórnie tymczasowo
+        wyłączone. Podstawowy system zliczania z telefonu zostanie zastosowany.
+      appleWatch: Zegarek Apple
+      phone: Telefon
+      watch: Inny zegarek
+    deviceInfo:
+      phone: "<icon i=\"Phone small\" /> <c>Telefon</c> jest podstawowym i rekomendowanym
+        źródłem zliczania kroków w WalkScape. Do intensywnych sportów zalecamy użycie
+        <icon i=\"Watch small\" /> <c>zegarka</c> jako źródła zliczania kroków. Dla
+        większości graczy źródło z <icon i=\"Phone small\" /> <c>Telefonu</c> jest
+        najlepszą opcją.\n\n<bp /> <c i=1>Twoje kroki są aktualizowane na żywo w grze,
+        kiedy chodzisz.</c>\n\n<bp /> By kroki były zliczane <c>musisz mieć telefon
+        przy sobie</c>. To może być trudniejsze, kiedy uprawiasz bardzo intensywny
+        sport.\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Zegarek Apple</c> różni się
+        nieco od <icon i=\"Watch small\" /> <c>innych zegarków</c> tym, że synchronizuje
+        twoje kroki do Apple Health w okresach czasu. WalkScape odczytuje twoje kroki
+        z Apple Health, jaki połączony jest z twoim <icon i=\"Apple watch small\"
+        /> <c>Zegarkiem Apple</c> lub innym zegarkiem.\n\n<bp /> <c i=2>Zegarek Apple
+        synchronizuje twoje kroki do Apple Health w odstępach czasu.</c> Nie możesz
+        widzieć, jak twoje kroki pojawiają się na żywo w grze, bo przychodzą one w
+        opóźnieniem.\n\n<bp /> Musisz nadać dodatkowe uprawnienie do odczytu danych
+        z Apple Health, by podłączyć swój zegarek.\n\n<bp /> Tylko kroki, które są
+        sygnalizowane przez zegarek są odczytywane w grze.\n"
+      watch: "WalkScape odczytuje twoje kroki z <c>Apple Health</c>, które są synchronizowane
+        z twojego <icon i=\"Watch small\" /> <c>zegarka</c>. W zależności od producenta
+        może pojawić się wymóg manualnej synchronizacji kroków z innej aplikacji do
+        <c>Apple Health</c>.\n\n<bp /> <c i=2>Możliwe, że będzie wymagane manualne
+        synchronizowanie kroków z Apple Health poprzez inne aplikacje</c>, by te mogły
+        być zliczone w WalkScape.\n\n<bp /> Synchronizowanie kroków do <c>Apple Health</c>
+        zależy od producenta. Może to wymagać więcej ustawień i wiedzy technicznej.\n
+        \n<bp /> Musisz nadać dodatkowe uprawnienia do odczytu danych z Apple Health,
+        by połączyć zegarek.\n\n<bp /> Tylko kroki zliczone poprzez twój zegarek są
+        odczytywane w grze.\n"
   rewards:
     phrases:
       alreadyClaimed: Już odebrano
@@ -452,7 +512,7 @@ singulars:
         requiresPermissionIos: Jeśli na poniższej liście rozwijanej nie widać żadnych
           urządzeń zewnętrznych, upewnij się, że aplikacja otrzymała zezwolenie na
           korzystanie z danych dotyczących kroków z aplikacji Apple Health w Ustawieniach
-          > Prywatność i bezpieczeństwo > Zdrowie > WalkScape (w obszarze Aplikacje)
+          ➤ Prywatność i bezpieczeństwo ➤ Zdrowie ➤ WalkScape (w obszarze Aplikacje)
           oraz że aplikacja Apple Health zarejestrowała kroki na tych urządzeniach
           w ciągu ostatnich 7 dni.
         thisPhone: Ten telefon
@@ -465,9 +525,23 @@ singulars:
         title: Grafiki
         shaderOutlines: Renderowanie konturów za pomocą shaderów
         renderOutlines: Renderowanie konturów
+      locales:
+        title: Język
+        chooseALanguageInfo: Naciśnij guzik, by otworzyć menu wyboru języka.
+        changeLanguage: Zmień język
     phrases:
       settings: Ustawienia
       exitToCharacterSelection: Wyjście do wyboru postaci
+      stepSourceInfoDesc: Zobacz więcej informacji o źródłach kroków oraz ich różnicach
+        używając guzika poniżej.
+      stepSourceInfo: Informacje o źródłach kroków
+      connectionInfoIos: Jeżeli twoje urządzenia nie pojawiają się na liście powyżej,
+        upewnij się że nadano uprawnienia dla WalkScape do odczytu danych z Apple
+        Health w c>Ustawienia ➤ Prywatność & Bezpieczeństwo ➤ Zdrowie ➤ (pod Aplikacje)
+        WalkScape</c> oraz upewnij się, że Apple Health zarejestrowało kroki na tych
+        urządzeniach w ciągu ostatnich 7 dni.
+      connectionInfoAndroid: Wsparcie smart watchy na Android już wkrótce. Aktualnie
+        tylko telefon jest wspierany jako źródło zliczania kroków.
   characterCreation:
     phrases:
       race: Rasa
@@ -701,3 +775,17 @@ singulars:
     phrases:
       overEncumbered: Twój ekwipunek jest pełny i jesteś przeciążony.
       arrivedToLocation: Dotarłeś do <object id={location} />
+  locales:
+    phrases:
+      language: Język
+      helpToTranslate: WalkScape jest <c>tłumaczony przez społeczność</c>. Pomóż nam
+        przetłumaczyć grę na więcej języków i rozwinąć aktualne tłumaczenia odwiedzając
+        <a href="https://wiki.walkscape.app/wiki/Localization">Poradnik do Tłumaczeń</a>.
+        Bardzo doceniamy pomoc! ❤️
+      chooseALanguage: Wybierz język z listy poniżej.
+      percentExplanation: '% ukazuje ile zostało przetłumaczone.'
+      selectGrammaticalGender: Wybierz płeć gramatyczną
+      grammaticalGenderExplanation: Wybór płci gramatycznej ma wpływ na to, jak interfejs
+        użytkownika odnosi się do ciebie.
+      youCanChangeAnyTime: Możesz zmienić język w <c>Ustawieniach Gry</c> w dowolnym
+        momencie.

@@ -175,22 +175,36 @@ stoppen wanneer overbelast}, closedBeta: {title: Gesloten Beta, clearStepsGraph:
 leegmaken, useThisToClear: Gebruik dit als je je stappengrafiek wilt resetten. Handig
 voor als je stappen hebt verkregen door een bug en een reset in de grafiek wilt.},
 notifications: {title: Notificaties, stepCountInterval: Notificatie-interval, stepCountNotifications: Stappenteller-notificaties,
-notificationType: Notificatietype}, language: {title: Taal}}, phrases: {settings: Instellingen,
-exitToCharacterSelection: Naar personageselectie terugkeren}}, location: {phrases: {
-activities: Activiteiten, services: Voorzieningen, buildings: Gebouwen, noActivites: Geen
-activiteiten beschikbaar op deze locatie., factions: Facties, routes: Routes, tapToShowRoutes: Tik
-aan om routes weer te geven, jobBoard: Prikbord, jobs: Klusjes}}, worldMap: {phrases: {
-activities: Activiteiten, services: Voorzieningen, buildings: Gebouwen, pointsOfInterest: Bezienswaardigheden,
-information: Informatie, routeFromTo: '<location i="{fromID}"/> naar <location i="{toID}"/>',
-route: Route, currentLocation: Huidige locatie, afterExploring: 'Na het verkennen
-van de locatie, zul je de bezienswaardigheden van deze locatie kunnen zien.', routeRequirementsNotMet: 'Routes
-in je geselecteerde pad hebben vereisten waar niet aan wordt voldaan:', youHaveNotExplored: Je
-hebt deze locatie nog niet verkend. Je zult informatie over deze locatie zien nadat
-je er een keer bent geweest., noActivities: Er zijn geen activiteiten beschikbaar
-op deze locatie., youreHere: Je bent momenteel op deze locatie.}}, stats: {phrases: {
-stats: Statistieken, totalSkillXp: Totale vaardigheids-XP, totalSteps: Totaal aantal
-stappen}, info: {stats: Een overzicht van statistieken over elke stap die je hebt
-genomen door de wereld van Arenum.}}, tutorial: {phrases: {noMoreMessages: Geen tutorial-berichten
+notificationType: Notificatietype}, language: {title: Taal}, locales: {chooseALanguageInfo: Druk
+op de knop hierboven om het taal selectie menu te openen., changeLanguage: Verander
+taal, title: Taal}, dataSource: {otherSource: Andere bron, lastSync: 'laatst bijgewerkt:
+{timestamp}', thisPhone: Deze telefoon}}, phrases: {settings: Instellingen, exitToCharacterSelection: Naar
+personageselectie terugkeren, connectionInfoAndroid: Smart watch ondersteuning voor
+Android gebruikers komt binnenkort. Op dit moment wordt alleen de telefoon als stappenbron
+ondersteunt., stepSourceInfo: Stappenbron informatie, stepSourceInfoDesc: Klik op
+onderstaande knop voor meer informatie over de bronnen van de stappen en hun verschillen.}},
+location: {phrases: {activities: Activiteiten, services: Voorzieningen, buildings: Gebouwen,
+noActivites: Geen activiteiten beschikbaar op deze locatie., factions: Facties, routes: Routes,
+tapToShowRoutes: Tik aan om routes weer te geven, jobBoard: Prikbord, jobs: Klusjes}},
+worldMap: {phrases: {activities: Activiteiten, services: Voorzieningen, buildings: Gebouwen,
+pointsOfInterest: Bezienswaardigheden, information: Informatie, routeFromTo: '<location
+i="{fromID}"/> naar <location i="{toID}"/>', route: Route, currentLocation: Huidige
+locatie, afterExploring: 'Na het verkennen van de locatie, zul je de bezienswaardigheden
+van deze locatie kunnen zien.', routeRequirementsNotMet: 'Routes in je geselecteerde
+pad hebben vereisten waar niet aan wordt voldaan:', youHaveNotExplored: Je hebt deze
+locatie nog niet verkend. Je zult informatie over deze locatie zien nadat je er een
+keer bent geweest., noActivities: Er zijn geen activiteiten beschikbaar op deze locatie.,
+youreHere: Je bent momenteel op deze locatie., changeRouteWarning: Wijzigen van je
+route zal je huidige reis annuleren en ga je terug naar je vorige  locatie. Weet je
+het zeker?}}, stats: {phrases: {stats: Statistieken, totalSkillXp: Totale vaardigheids-XP,
+totalSteps: Totaal aantal stappen}, info: {stats: Een overzicht van statistieken over
+elke stap die je hebt genomen door de wereld van Arenum., chartWarning: {title: Onnauwkeurigheden
+in grafieken, description: 'Verschillende spelers hebben problemen gemeld met onnauwkeurige
+stappengrafieken, veroorzaakt door grote wijzigingen achter de schermen in een eerdere
+update. Als je problemen ondervindt waarbij de grafieken significant afwijkende waarden
+weergeven dan andere bronnen, is dit waarschijnlijk de reden. De spellogica zelf zou
+nog steeds moeten werken zoals voorheen en de grafiekproblemen zullen in toekomstige
+updates worden opgelost.'}}}, tutorial: {phrases: {noMoreMessages: Geen tutorial-berichten
 meer, youWillGain: Je ontvangt het volgende als je deze optie selecteert.}}, leaderboards: {
 phrases: {show: Weergeven, everyone: Iedereen, friends: Vrienden, leaderboards: Klassementen,
 first: Eerste, me: Ik, last: Laatste, loadingPage: Pagina laden..., totalSteps: Totaal
@@ -244,17 +258,43 @@ kunt op elk moment de stappentellerbron wijzigen in de <c>Spelinstellingen</c>.,
 binnenkort naar Android, changeStepCountingSource: Stappentellerbron wijzigen, stepCountingSource: Stappentellerbron},
 deviceSource: {featureDisabled: Het veranderen van invoerbron is momenteel tijdelijk
 uitgeschakeld. De standaard stappenteller van de telefoon zal gebruikt worden., phone: Telefoon,
-appleWatch: Apple Watch, watch: Andere smartwatch}}, wardrobe: {phrases: {noHeadwear: Je
-hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires., noBackAccessories: Je
-hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}}, rewards: {
-phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open factie}},
-shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien, buying: Kopen,
-selling: Verkopen, buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden, pendingInvites: Openstande
-uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {phrases: {arrivedToLocation: 'Gearriveerd
-in <object id={location} />', overEncumbered: Je inventaris is vol en je bent overbelast.}},
-locales: {phrases: {language: Taal, helpToTranslate: WalkScape is <c>vertaald door
-de community</c>. Help ons met het vertalen van het spel naar meer talen en met het
-uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
+appleWatch: Apple Watch, watch: Andere smartwatch}, deviceInfo: {watch: "WalkScape
+leest je stappen uit van <c>Apple Health</c> als ze gesynchroniseerd zijn vanuit je
+<icon i=\"Watch small\" /> <c>smartwatch</c>. Afhankelijk van de producent moet je
+mogelijk in een aparte app je stappen handmatig synchroniseren naar <c>Apple Health</c>.\n
+\n<bp /> <c i=2>Je moet mogelijk met behulp van andere applicaties je stappen synchroniseren
+naar Apple Health </c> voordat ze verwerkt worden door WalkScape.\n\n<bp /> Het proces
+van synchroniseren van stappen naar <c>Apple Health</c> kan per producent verschillen.
+Mogelijk is er enige technische kennis nodig om dit op te zetten.\n\n<bp /> Je moet
+een extra permissie geven voor het lezen van gegevens uit Apple Health om je smartwatch
+te kunnen verbinden.\n\n<bp /> Alleen stappen die door je smartwatch geregistreerd
+zijn, worden verwerkt door het spel.\n", phone: "<icon i=\"Phone small\" /> <c>Telefoon</c>
+is de standaard aanbevolen stappentellerbron voor WalkScape. Voor intensieve sportactiviteiten
+raden we aan om <icon i=\"Watch small\" /> <c>een smartwatch</c> als stappentellerbron
+te gebruiken. Voor de meeste spelers zal <icon i=\"Phone small\" /> <c>Telefoon</c>
+de beste optie zijn.\n\n<bp /> <c i=1>Je stappen worden door het spel in realtime
+verwerkt terwijl je aan het lopen bent.</c>\n\n<bp /> Om ervoor te zorgen dat je stappen
+geteld worden <c>moet je je telefoon bij je dragen</c>. Dit is wellicht lastiger bij
+het doen van intensieve sporten.\n", appleWatch: "<icon i=\"Apple watch small\" />
+<c>Apple Watch</c> werkt anders dan <icon i=\"Watch small\" /> <c>andere smartwatches</c>,
+omdat het periodiek je stappen naar Apple Health synchroniseert. WalkScape leest de
+stappen uit van Apple Health als ze gesynchroniseerd zijn vanuit je <icon i=\"Apple
+watch small\" /> <c>Apple Watch</c> of een andere smartwatch.\n\n<bp /> <c i=2>Apple
+Watch synchroniseert periodiek je stappen naar Apple Health.</c> Je kan je stappen
+niet in realtime in het spel zien, en je stappen kunnen met een vertraging binnenkomen.\n
+\n<bp /> Je moet een extra permissie geven voor het lezen van gegevens uit Apple Health
+om je Apple Watch te kunnen verbinden.\n\n<bp /> Alleen stappen die door je Apple
+Watch geregistreerd zijn, worden verwerkt door het spel.\n"}}, wardrobe: {phrases: {
+noHeadwear: Je hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires.,
+noBackAccessories: Je hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}},
+rewards: {phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open
+factie}}, shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien,
+buying: Kopen, selling: Verkopen, buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden,
+pendingInvites: Openstande uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {
+phrases: {arrivedToLocation: 'Gearriveerd in <object id={location} />', overEncumbered: Je
+inventaris is vol en je bent overbelast.}}, locales: {phrases: {language: Taal, helpToTranslate: WalkScape
+is <c>vertaald door de community</c>. Help ons met het vertalen van het spel naar
+meer talen en met het uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
 te bezoeken. Alle hulp wordt enorm gewaardeerd! ❤️, chooseALanguage: Kies een taal
 uit de onderstaande lijst., percentExplanation: '% laat zien hoeveel vertaald is.',
 selectGrammaticalGender: Selecteer grammaticaal geslacht, grammaticalGenderExplanation: Het
