@@ -39,7 +39,7 @@ maps:
         nose: Nez
         outfit: Tenue
         'backAccessory': Accessoires dorsaux
-        'eyeAccessory': Accessoires oculaires
+        'eyeAccessory': Accessoires optiques
         'faceAccessory': Accessoires de visage
       raceTypes:
         human: Humain
@@ -107,6 +107,11 @@ maps:
       'showRecipesRequirementsAreMet': Les prérequis de niveau sont remplis
       'showRecipesServicesAreMet': Les prérequis de service sont remplis
       'showCompletedAchievements': Afficher les succès terminés
+  locales:
+    grammaticalGender:
+      'masculine': Masculin
+      'feminine': Féminin
+      'neutral': Neutre
 plurals:
   achievements:
     phrases:
@@ -361,6 +366,28 @@ singulars:
         permission pour utiliser les données du compteur de pas de votre appareil.
         Veuillez nous donner cette permission pour reprendre le jeu.
       exactAlarmPermission: Autoriser les alertes
+      stepCountingSource: Source de comptage de pas
+      youNeedToGivePermissions: Vous devez donner les permissions suivantes pour accéder
+        au jeu. Appuyez sur les permissions pour les donner.
+      comingSoonToAndroid: Bientôt pour Android
+      youCanChangeAnyTime: Vous pouvez changer la source de comptage depuis <c>paramètres
+        de Jeu</c> n'importe quand.
+      changeStepCountingSource: Changer la source de comptage de pas
+    deviceSource:
+      featureDisabled: La possibilité de changer la source du comptage a été désactivée
+        à distance pour le moment. Le podomètre du téléphone sera utilisé par défaut.
+      phone: Téléphone
+      appleWatch: Apple Watch
+      watch: Autre montre
+    deviceInfo:
+      phone: "<icon i=\"Phone small\" /><c>Téléphone</c> est la source de comptage
+        de pas recommandée par défaut pour WalkScape. Pour les activités intensives,
+        nous recommandons d'utiliser une <icon i=\"Watch small\" /><c>montre intelligente</c>
+        comme source de comptage. Pour la plupart des joueurs, utiliser le <icon i=\"\
+        Phone small\" /><c>Téléphone</c> est la meilleure option.\n\n<bp /> <c i=1>Vos
+        pas sont actualisés directement en jeu pendant que vous marchez.</c>\n\n<bp
+        /> Pour que vos pas soient comptabilisés, <c>vous devez avoir votre téléphone
+        sur vous</c>. Cela peut être difficile lors d'une activité intensive.\n"
   rewards:
     phrases:
       alreadyClaimed: Déjà récupéré
@@ -554,6 +581,8 @@ singulars:
     phrases:
       settings: Paramètres
       exitToCharacterSelection: Retour à la sélection de personnage
+      connectionInfoAndroid: Le support des montres intelligentes Android arrive bientôt.
+        Actuellement, seul le téléphone est supporté comme source de comptage de pas.
   gearSets:
     phrases:
       noActivitiesSelected: Aucune activité sélectionnée
@@ -671,3 +700,17 @@ singulars:
       pendingInvites: Invitations en attente
       friends: Amis
       manageFriends: Gérer les relations
+  locales:
+    phrases:
+      grammaticalGenderExplanation: Le genre grammatical choisi affecte la façon dont
+        les textes du jeu font référence à vous.
+      helpToTranslate: WalkScape est <c>traduit par la communauté</c>. Aidez-nous
+        à traduire le jeu dans plus de langues et à étendre les traductions existantes
+        en consultant le <a href="https://wiki.walkscape.app/wiki/Localization">Guide
+        de Traduction</a>. Toute aide est énormément appréciée ! ❤️
+      chooseALanguage: Choisissez une langue depuis la liste ci-dessous.
+      percentExplanation: '% montre la proportion de contenu traduit.'
+      language: Langue
+      youCanChangeAnyTime: Vous pouvez changer de langue depuis <c>Paramètres de Jeu</c>
+        n'importe quand.
+      selectGrammaticalGender: Sélectionnez un genre grammatical
