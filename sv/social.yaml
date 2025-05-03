@@ -1,1 +1,70 @@
-{}
+singulars:
+  actions:
+    confirmDescription:
+      changeRole: Är du säker på att du vill göra <hl>{characterName}</hl> till <hl>{partyRole}</hl>?
+      removeFriend: Är du säker på att du vill sluta va vänner?
+      unblock: Är du säker på att du vill avblockera denna användare?
+      cancelInvite: Är du säker på att du vill avbryta denna vänskapsförfrågan?
+      leaveParty: Är du säker på att du vill lämna gruppen?
+      leaveAndDestroyParty: Är du säker på att du vill lämna och ta bort gruppen?
+        Detta går inte att ångra.
+      inviteResponse:
+        block: Är du säker på att du vill blockera denna användare? Blockerade användare
+          kan inte längre skicka vänskapsförfrågningar till dig.
+    buttonLabels:
+      unblock: Avblockera
+      cancelInvite: Avbryt inbjudan
+      sendInvite: Skicka vänskaps inbjudan
+      createParty: Skapa grupp
+      leaveParty: Lämna grupp
+      inviteResponse:
+        accept: Acceptera
+        reject: Avböj
+        block: Blockera
+      removeFriend: Ta bort vän
+      leaveAndDestroyParty: Lämna och ta bort grupp
+    confirmTitle:
+      changeRole: Ändra tillgång
+      unblock: Avblockera användare
+      inviteResponse:
+        block: Blockera användare
+  status:
+    loadingInvites: Kollar efter inbjudningar...
+  party:
+    manage: Hantera
+    role: Roll
+  relationship:
+    friends: Ni är vänner
+    blocked: Du har blockerat denna användare
+    inviteSent: Inbjudan skickad
+    none: Socialt
+    party:
+      member: Medlem
+      admin: Admin
+      owner: Ägare
+    inviteReceived: Du har fått en inbjudan
+  createParty:
+    input:
+      partyName: Gruppnamn
+      catchphrase: Slogan
+      catchphraseHint: Slogan (Valfritt)
+    rules:
+      mayContain: '<bp />Kan innehålla: {list}'
+      noTrailingSpaces: <bp />Kan inte börja eller sluta med mellanslag
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        two: '-'
+        one: <bp />Minst {} tecken
+        few: '-'
+        many: '-'
+        other: <bp />Minst {} tecken
+      maxChar:
+        zero: '-'
+        one: <bp />Som mest {} tecken
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Som mest {} tecken
