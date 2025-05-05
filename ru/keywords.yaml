@@ -3,3 +3,22 @@ singulars:
     skills:
       cooking:
         name: Кулинарный рецепт
+        requirement: Требуется <object id="recipe_cooking" />.
+    products:
+      sandwich:
+        requirements: Требуется, чтобы <object id="sandwich" /> был приготовлен <object
+          id="recipe_cooking" />.
+        name: Рецепт сэндвича
+  activities:
+    woodcuttingTrees:
+      requirementLevel: Необходимо вырубить деревья, соответствующие требованиям <keywordRequirements
+        />.
+      name: Рубка леса
+      requirement: Требуется активность <object id="woodcuttingTrees" />.
+    fishing:
+      name: Рыбная ловля
+      requirement: Необходима <object id="activity_fishing" />.
+    miningOres:
+      name: Добыча руды
+    foragingPlants:
+      name: Собирательство растений
