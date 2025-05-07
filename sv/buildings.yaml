@@ -1,14 +1,28 @@
 maps:
   buildingActions:
     buy: Köpa föremål
-    deposit: Lägg in
+    deposit: Insättning
     rumors: Rykten
     sell: Sälj föremål
     talk: Prata
     withdraw: Ta ut
+    'guidance': Vägledning
+    'barber': Barberare
+    'buySpecial': Köp special
   buildingTypes:
     bank: Bank
-    generalStore: Allmän butik
+    generalStore: Allmänbutik
+    'fishingStore': Fiskbutik
+    'temple': Tempel
+    'tavern': Taverna
+    'house': Hus
+    'animalShelter': Djurhem
+    'activityShop': Aktivitetsbutik
+    'marketStall': Marknadsstånd
+    'clothingShop': Klädaffär
+    'outpost': Utpost
+    'barber': Barberare
+    'castle': Slott
 singulars:
   buildings:
     jarvonia:
@@ -76,7 +90,7 @@ singulars:
           med precision. Väggarna är prydda med dekorationer och luften är fylld av
           en uppfriskande doft av tall.
       tundraTrends:
-        name: Tundra Trends
+        name: Tundra Trender
         desc: Tundra Trends erbjuder det senaste inom vintermode med en lekfull twist.
           Utforska färgglada halsdukar, originella mössor och färggranna rockar som
           verkligen gör avtryck i snön.
@@ -115,3 +129,84 @@ singulars:
         desc: En man som röker pipa tycks sköta fiskståndet. En överflödande mängd
           stora fiskar och fiskfiléer vilar på isen. Det tycks finnas andra korgar
           fyllda med varierande sorters fisk och dessutom några hinkar med bete.
+      foodMarketStall:
+        name: Matstånd
+        desc: En härlig doft av bröd och bakverk fyller luften runt matståndet. Det
+          verkar också finnas en mängd inlagda och konserverade varor till salu. Som
+          tur är verkar det inte finnas någon surströmming.
+      mossyMerchantsBreezeMart:
+        name: Mossige köpmannens Brisbutik
+        desc: Mossige köpmannens Brisbutik har flera fönster öppna och vinden sveper
+          långsamt genom affären. Den för in både brisen och ljuden från området utanför.
+          Många av hyllorna är fyllda med intressanta och unika föremål.
+      maritimeFortuneBank:
+        name: Havsframgångens Bank
+        desc: Gyllene detaljer, marmorgolv och till och med en massiv takkrona hänger
+          från taket. Den verkar vara gjord av guld och ädelstenar som reflekterar
+          sina naturliga färger genom en liten låga. Till och med ringklockorna som
+          används för att påkalla personalens uppmärksamhet är av guld.
+      toolMarketStall:
+        name: Verktygsståndet
+        desc: Verktygsståndet är täckt av ett gammalt läderstycke, och verktygen är
+          utlagda i vad som verkar vara en noggrant vald ordning. Några lyktor hänger
+          från ståndets överdel och verktyg dinglar ovanför handlarens huvud, fästa
+          med noggrant knutna rep och lagda i korgar.
+      bogAndBlade:
+        name: Träsk & Tukt
+        desc: Träsk & Tukt erbjuder expertklippningar i Salsfirth. Barberare i vadarbyxor
+          levererar förstklassig hårvård med en glimt av humor. Slå dig ner i bekväma
+          stolar och njut av en kopp te medan ditt hår blir proffsigt tuktat.
+      quagmireCouture:
+        name: Träskchic
+        desc: Träskchic är en modebutik i Salsfirth som specialiserar sig på träskinspirerade
+          kläder. Bläddra bland en kollektion av stilfulla plagg som passar för alla
+          tillfällen.
+      bogsideBankOfProsperity:
+        desc: Bankens golv är täckt av mossa som klafsar under dina steg. Flera grodor
+          verkar gömma sig bland takbjälkarna och håller myggen borta. En av banktjänstemännen
+          nickar lätt till hälsning. Det sitter en groda på dennes huvud, som lojt
+          försöker fånga en stor omkringfladdrande nattfjäril.
+        name: Myrsidans Framgångsbank
+    syrenthia:
+      vastalumeBank:
+        name: Thalassa Vågbank
+        desc: En stor, klargul orm slingrar sig över det sandiga golvet. I en av undervattensklippornas
+          väggar finns en cirkelformad dörr med ett enormt nyckelhål som leder till
+          ett valv.
+      vastalumeGeneralStore:
+        name: Sjunkna Ankaret
+        desc: Ett rostigt ankare ligger i sanden. Den lilla butiken har några få hyllor
+          och tunnor med varor. Bubblor stiger upp från hål och sprickor i väggarna.
+          Du tycker dig känna igen bergen som avbildas på en målning på väggen.
+      vastalumeBarber:
+        name: Klappat & Klippt
+        desc: En tätt packad barberarsalong med flera klippstationer. Den ständiga
+          strömmen av kunder som kommer och går tyder på att det är en populär plats
+          för hårklippning i Vastalume.
+      vastalumeSpecializedStore:
+        name: Underströmmen
+        desc: En banderoll med Syrenthias symbol är placerad vid ingången och visar
+          att endast de som Syrenthiaborna litar på får komma in. Här finns lite av
+          varje – en loungehörna, verktyg uppsatta på väggen och ett bonsaiträd under
+          vattnet.
+      vastalumeClothingShop:
+        name: Fen-omenalt Mode
+        desc: Många Syrenthianer föredrar kläder gjorda av snäckskal, så den här butiken
+          är ganska tom. Bara några få tyger och plagg finns till salu. De flesta
+          besökarna kommer hit i jakt på den berömda dansklänningen från sjöfolket.
+      casbrantsSunkenShip:
+        name: Casbrants sjunkna skepp
+        desc: Skeppets hela huvudmast har brutits av. Vraket är fullt av hål och trasiga
+          brädor där otaliga små luftbubblor stiger upp. Det känns som det finns någon
+          eller något närvarande här. Något som bara väntar och iakttar.
+      throneOfTheNeverdrown:
+        name: Neverdrowns Tron
+        desc: En vaksam bläckfisk bevakar ingången. En kungligt blå matta leder fram
+          till tronen som i sin tur är smyckad med tentakler som rör sig. Hela tronrummet
+          utstrålar en kuslig atmosfär och det känns som om till och med den harmlösa
+          krabban iakttar dig.
+      vastalumeTavern:
+        desc: Hela golvet är täckt av sand. Bakom baren står en orange bläckfisk som
+          blandar drinkar och fyller glas. I rummets hörn vilar den största pärla
+          du någonsin sett.
+        name: Havets Pärla
