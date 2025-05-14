@@ -75,6 +75,10 @@ singulars:
       stoneQuarrying:
         name: Stone quarrying
         desc: 'Rock and stone!'
+    gdte:
+      underwaterAqueductDigging:
+        name: Underwater aqueduct digging
+        desc: Dig the way for the carpenters who come behind you. Removing the debris in the way, while ensuring the area doesn't collapse.
     syrenthia:
       caveDiving:
         name: Cave diving
@@ -109,9 +113,12 @@ singulars:
       magnetFishing:
         name: Magnet fishing
         desc: 'Pulling stuff out of a water body with a strong magnet rarely pays the bills, but helps a couple of good causes: it cleans the environment and it helps solve crimes. Be mindful of the regulations around it and have fun! You could pull anything!'
-      pondFishingNet:
-        name: Swamp pond fishing (Net)
-        desc: You lower a fishing net in the murky water. You don't have to wait long until various water creatures are stuck in it.
+      bogFishingNet:
+        name: Bog fishing (Net)
+        desc: You cast net into the bog. The water is murky, but you can still see the fish swimming around. You wait patiently for them to get caught in your net.
+      bogFishingSpear:
+        name: Bog fishing (Spear)
+        desc: While under the waters of the bog, you ready your fishing spear, primed to strike any fish that comes close enough. The murky water makes it difficult to see, but you are determined to catch something.
     syrenthia:
       seaFishingSpear:
         name: Sea fishing (Spear)
@@ -144,8 +151,8 @@ singulars:
         name: Glacier foraging
         desc: 'You search far and wide through the empty glacier. You learn a lot about yourself, but is there anything here to find?'
       caveForaging:
-        name: Cave foraging
-        desc: "It's dark in there, better bring a light."
+        name: Spring cave foraging
+        desc: "Bats make their home in the springtime here. It's dark, better bring a light."
       hornOfRespiteTreasureHunt:
         name: Treasure hunt
         desc: "The Adventurer's Guild has set a challenge to find some special items around the Horn of Respite. How long will it take you to find them all?"
@@ -168,6 +175,9 @@ singulars:
       swampForaging:
         name: Swamp foraging
         desc: You search through the murky land and water for valuable flowers and plants.
+      summerCaveForaging:
+        name: Summer cave foraging
+        desc: "Bats make their home in the summertime here. It's dark, better bring a light."
     syrenthia:
       seashellForaging:
         name: Seashell foraging
@@ -214,7 +224,7 @@ singulars:
         name: Classic skiing
         desc: 'On your beginner cross-country skiing journey, every glide is filled with wonder. The snowy trails are your playground, where you learn the rhythm of the skis and embrace the serene beauty of the winter woods.'
       crossCountrySkiingIntermediate:
-        name: Skate skiiing
+        name: Skate skiing
         desc: 'Skate skiing brings a sense of adventure. You tackle varied terrains with newfound confidence, each stride stronger and more assured, as you explore the vast, snow-covered expanses.'
       crossCountrySkiingDifficult:
         name: Downhill skiing
@@ -254,6 +264,9 @@ singulars:
       treetopJumping:
         name: Treetop jumping
         desc: Being high up in the trees, adrenaline surges through you as you leap from branch to branch, hoping they won't snap. The fall below looks daunting.
+      exploreBogBottom:
+        name: Explore bog bottom
+        desc: You follow your underwater map and explore the hidden path in the murky depths at the bottom of the bog. They seem to twist and turn endlessly, but they are leading you somewhere. You just have to keep swimming.
     syrenthia:
       swimmingExpert:
         name: Underwater swimming
@@ -261,6 +274,13 @@ singulars:
       merfolkDancing:
         name: Merfolk dancing
         desc: "Performing the merfolk dance like the underwater folk do requires a lot of skill. With each attempt, you're getting better at moving in unison with the other dancers, until you achieve a seamless flow, resembling a school of fish in their synchronized movement."
+      exploreUnderwaterCave:
+        name: Explore underwater cave
+        desc: You follow your underwater map and explore the paths of the underwater cave. They seem to twist and turn endlessly, but they are leading you somewhere. You just have to keep swimming.
+    bats:
+      springBatTracking:
+        name: Spring bat tracking
+        desc: The bats leave the cave flying towards the north-east. Following the bats from their spring home, running day and night to find where their next home is. You might not be back here for a while.
   cooking:
     jarvonia:
       vegetableChopping:
@@ -295,7 +315,7 @@ singulars:
         desc: 'You are no longer an apprentice carpenter, so you repair larger vessels without a problem. Your foreman trusts your skills and good judgment. You know when to be effective and when to be efficient. Your toolkit is professional, just like you.'
       underwaterAqueductConstruction:
         name: Underwater aqueduct construction
-        desc: 'You dig and reinforce the natural water pipeline heading towards the Halfling Campground.'
+        desc: You build and reinforce the natural water pipeline heading towards the Halfling Campground.
   crafting:
     jarvonia:
       apprenticeForLoif:
@@ -370,3 +390,19 @@ singulars:
     emergencySwimEscape:
       name: Emergency swim escape
       desc: "You've lost your diving gear and are running out of air. You must swim to the shore as fast as you can, but without panicking. You know that if you ascend too quickly, you could suffer from decompression sickness."
+    gdte:
+      swampEmergencySwimEscape:
+        name: Emergency swim escape (Swamp)
+        desc: "You've lost your diving gear and are running out of air. You must swim to the shore as fast as you can, but without panicking. You know that if you ascend too quickly, you could suffer from decompression sickness."
+      swampEmergencyDarkEscape:
+        name: Emergency darkness escape (Swamp)
+        desc: You've lost your light source and will have to find your way out of where you are through the dark. You must be careful to make your way out and avoid any dangerous creatures that may lurk in the shadows.
+      ventureIntoTheBog:
+        name: Venture into the bog
+        desc: You venture into the gloomy mists outside of Granfiddich, trying to find the landmarks you recognize from following the bats.
+      ventureIntoTheWoods:
+        name: Venture into the woods
+        desc: You venture into the gloomy mists outside of Salsfirth, a dense network of trees blocking your way.
+      runForYourLife:
+        name: Run for your life
+        desc: You feel claustrophobic as the darkness closes in around you and feel like you are being watched. You start to run for your life, with no sense of direction.
