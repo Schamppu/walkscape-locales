@@ -39,7 +39,7 @@ maps:
         nose: Nez
         outfit: Tenue
         'backAccessory': Accessoires dorsaux
-        'eyeAccessory': Accessoires oculaires
+        'eyeAccessory': Accessoires optiques
         'faceAccessory': Accessoires de visage
       raceTypes:
         human: Humain
@@ -107,6 +107,30 @@ maps:
       'showRecipesRequirementsAreMet': Les prérequis de niveau sont remplis
       'showRecipesServicesAreMet': Les prérequis de service sont remplis
       'showCompletedAchievements': Afficher les succès terminés
+      'inventoryCollapsed': Inventaire compact
+      'alwaysStopWhenInventoryFull': S'arrêter quand surchargé par défaut
+      'leftHandedMode': Mode main gauche
+      'spriteOutlines': Afficher les contours
+      'showFpsCounter': Montrer les IPS
+      'shaderOutlineRendering': Afficher les contours via les shaders
+    categories:
+      'accessibility': Accessibilité
+      'graphics': Graphisme
+      'gameplay': Jouabilité
+      'account': Compte
+      'character': Personnage
+    enumSettings:
+      'language': Langue
+      'leaderboardFilter': Afficher
+      'leaderboardType': Classements
+      'stepDataTime': Période
+    custom:
+      'dataSource': Source des données des pas
+  locales:
+    grammaticalGender:
+      'masculine': Masculin
+      'feminine': Féminin
+      'neutral': Neutre
 plurals:
   achievements:
     phrases:
@@ -127,15 +151,15 @@ plurals:
         two: Actions restantes
         few: '-'
       actionsToLevelUp:
-        one: Action de montée de niveau
-        other: Actions de montée de niveau
+        one: Action pour monter de niveau
+        other: Actions pour monter de niveau
         zero: '-'
         two: Actions pour monter de niveau
         few: '-'
         many: '-'
       stepsRemainingInTotal:
-        one: Pas requis au total
-        other: Pas requis au total
+        one: Pas restant pour finir
+        other: Pas restants pour finir
         zero: '-'
         two: Pas restants au total
         few: '-'
@@ -155,12 +179,12 @@ plurals:
         many: '-'
         zero: '-'
       stepsToLevelUp:
-        one: Pas pour monter de niveau
-        other: Pas pour monter de niveau
+        one: Pas avant prochain niveau
+        other: Pas avant prochain niveau
         few: '-'
         many: '-'
         zero: '-'
-        two: Pas pour monter de niveau
+        two: Pas avant prochain niveau
       stepsUntilArrival:
         many: '-'
         other: Pas avant d'arriver
@@ -211,7 +235,7 @@ singulars:
       notUnlocked: Succès verrouillé
       rewardProgress: Progression de récompense
       showRewards: Montrer les récompenses
-      unclaimedRewards: 'Récompenses non récupérées: '
+      unclaimedRewards: 'Récompenses non récupérées : '
       totalProgressUnlocks: Récompenses de progression totale
       checkPointUnlocks: Récompenses d'étapes
   crafting:
@@ -242,7 +266,7 @@ singulars:
       noItemsFound: Aucun objet dans votre inventaire pour cet emplacement.
     phrases:
       treasury: Réserve de butins
-      abilities: Aptitudes
+      abilities: Capacités
       attributes: Attributs
       inUse: Utilisé
       noConsumables: Aucun consommable dans votre inventaire.
@@ -273,7 +297,7 @@ singulars:
       slotsCount: 'Emplacements :'
       selectedStacks: <c>{stacks}</c> piles sélectionnées
       requirementsNotMet: Les conditions ne sont pas remplies.
-      cantEquip: Impossible d'équiper
+      cantEquip: Impossible d'équiper.
       checkBank: Voir la banque
       disableWhenChanging: Désactiver au changement d'activité
       enableWhenBack: Activer au lancement d'une activité y ayant eu recours la dernière
@@ -292,7 +316,7 @@ singulars:
   location:
     phrases:
       activities: Activités
-      services: Services
+      services: Commodités
       buildings: Bâtiments
       noActivites: Aucune activité disponible dans ce lieu.
       factions: Factions
@@ -334,7 +358,8 @@ singulars:
       totalLevel: Niveau total
     info:
       skillBreakdown: Voici la liste complète de toutes les compétences que votre
-        personnage a développé au fil de votre aventure.
+        personnage a développé au fil de votre aventure. Appuyez sur une compétence
+        pour afficher plus d'informations et ce qu'elle débloque.
   activity:
     phrases:
       consumables: Consommables
@@ -361,21 +386,79 @@ singulars:
         permission pour utiliser les données du compteur de pas de votre appareil.
         Veuillez nous donner cette permission pour reprendre le jeu.
       exactAlarmPermission: Autoriser les alertes
+      stepCountingSource: Source de comptage de pas
+      youNeedToGivePermissions: Vous devez donner les permissions suivantes pour accéder
+        au jeu. Appuyez sur les permissions pour les donner.
+      comingSoonToAndroid: Bientôt pour Android
+      youCanChangeAnyTime: Vous pouvez changer la source de comptage depuis <c>paramètres
+        de Jeu</c> n'importe quand.
+      changeStepCountingSource: Changer la source de comptage de pas
+      pedometerPermissionExplanation: Nous avons besoins de la permission d'utiliser
+        les données du compteur de pas de votre appareil.
+      connectAppleHealth: Se connecter à Apple Santé
+      connect: Connecter
+      noDeviceFound: Aucun appareil trouvé. Assurez vous d'avoir appuyé sur le bouton
+        <c>Se conncter à Apple Santé</c> ci-dessus et d'avoir autorisé la lecture
+        des données d'Apple Santé.
+      connectAppleHealthExplanation: Vous devez connecter Apple Santé afin que nous
+        puissions lire les pas synchronisés depuis votre montre et voir quels appareils
+        vous avez connecté. Si c'est votre première utilisation de WalkScape, il vous
+        sera demandé la permission de lire les données depuis Apple Santé.
+      continueWillEnable: Le bouton pour continuer sera activé une fois que vous aurez
+        accordé les permissions nécessaires ci-dessus.
+    deviceSource:
+      featureDisabled: La possibilité de changer la source du comptage a été désactivée
+        à distance pour le moment. Le podomètre du téléphone sera utilisé par défaut.
+      phone: Téléphone
+      appleWatch: Apple Watch
+      watch: Autre montre
+    deviceInfo:
+      phone: "<icon i=\"Phone small\" /><c>Téléphone</c> est la source de comptage
+        de pas recommandée par défaut pour WalkScape. Pour les activités intensives,
+        nous recommandons d'utiliser une <icon i=\"Watch small\" /><c>montre intelligente</c>
+        comme source de comptage. Pour la plupart des joueurs, utiliser le <icon i=\"\
+        Phone small\" /><c>Téléphone</c> est la meilleure option.\n\n<bp /> <c i=1>Vos
+        pas sont actualisés directement en jeu pendant que vous marchez.</c>\n\n<bp
+        /> Pour que vos pas soient comptabilisés, <c>vous devez avoir votre téléphone
+        sur vous</c>. Cela peut être difficile lors d'une activité intensive.\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>L'Apple Watch</c> se distingue
+        de certaines <icon i=\"Watch small\" /> <c>autres montres</c> car elle synchronise
+        périodiquement vos pas avec Apple Santé. WalkScape récupère vos pas depuis
+        Apple Santé, que ceux-ci proviennent de votre <icon i=\"Apple watch small\"\
+        \ /> <c>Apple Watch</c> ou de tout autre montre.\n\n<bp /> <c i=2>L’Apple
+        Watch synchronise périodiquement vos pas avec Apple Santé.</c> Vous ne pouvez
+        pas voir vos pas se mettre à jour en temps réel dans le jeu, et leur affichage
+        peut comporter un certain délai.\n\n<bp /> Vous devez accorder une autorisation
+        supplémentaire pour que le jeu puisse lire les données d’Apple Santé afin
+        de connecter votre montre.\n\n<bp /> Seuls les pas transmis par votre montre
+        sont comptabilisés dans le jeu..\n"
+      watch: "WalkScape récupère vos pas depuis <c>Apple Santé</c>, où ils sont synchronisés
+        depuis votre <icon i=\"Watch small\" /> <c>montre</c>. Selon le fabricant,
+        il est possible que vous deviez manuellement synchroniser vos pas depuis une
+        application tierce vers <c>Apple Santé</c>.\n\n<bp /> <c i=2>Il peut être
+        nécessaire de synchroniser manuellement vos pas avec Apple Santé via d'autres
+        applications</c> afin qu'ils soient comptabilisés dans WalkScape.\n\n<bp />
+        Le processus de synchronisation des pas vers <c>Apple Santé</c> dépend du
+        fabricant. Cela peut nécessiter une configuration supplémentaire ainsi que
+        quelques connaissances techniques.\n\n<bp /> Vous devez accorder une autorisation
+        supplémentaire afin de permettre au jeu de lire les données d’Apple Santé
+        et connecter votre montre.\n\n<bp /> Seuls les pas transmis par votre montre
+        sont comptabilisés dans le jeu.\n"
   rewards:
     phrases:
       alreadyClaimed: Déjà récupéré
   abilities:
     info:
-      youHaveNoAbilities: <hl>Tu n'as aucune aptitude</hl>. Certains équipements dans
-        le jeu peuvent t'accorder des aptitudes que tu peux utiliser pour obtenir
-        un avantage immédiat dans le jeu pendant un certain temps.
-      abilitiesInfo: Les aptitudes sont des actions spéciales que tu peux utiliser
-        pour gagner des avantages immédiats dans le jeu. Les aptitudes ont un temps
-        de recherche que tu devras attendre avant de pouvoir utiliser l'aptitude à
-        nouveau.
+      youHaveNoAbilities: <hl>Tu ne possèdes aucune capacité</hl>. Certains équipements
+        dans le jeu peuvent t'accorder des capacités que tu peux utiliser pour obtenir
+        un avantage temporaire immédiat dans le jeu.
+      abilitiesInfo: Les capacités sont des actions spéciales que tu peux utiliser
+        pour obtenir des avantages immédiats dans le jeu. Les capacités ont chacune
+        un temps de recharge qui devra être écoulé avant de pouvoir être à nouveau
+        utilisées.
     phrases:
-      abilities: Aptitudes
-      useAbility: Utiliser l'aptitude
+      abilities: Capacités
+      useAbility: Utiliser la capacité
       useConsumable: Utiliser le consommable
       noAction: Aucune action
       holdToCast: Maintenir pour utiliser
@@ -551,9 +634,24 @@ singulars:
         hideSteps: Masquer les pas
         title: Personnage
         anonOnLeaderboard: Anonyme sur le classement
+      locales:
+        title: Langue
+        chooseALanguageInfo: Pressez le bouton ci-dessus pour ouvrir le menu de séléction
+          de la langue.
+        changeLanguage: Change de langue
     phrases:
       settings: Paramètres
       exitToCharacterSelection: Retour à la sélection de personnage
+      connectionInfoAndroid: Le support des montres intelligentes Android arrive bientôt.
+        Actuellement, seul le téléphone est supporté comme source de comptage de pas.
+      connectionInfoIos: Si vos appareils connectés n'apparaissent pas dans la liste
+        ci-dessus, assurez-vous d'avoir autorisé WalkScape à accéder aux données de
+        pas depuis Apple Santé dans <c>Réglages ➤ Confidentialité et sécurité ➤ Santé
+        ➤ (sous Apps) WalkScape</c>, et vérifiez qu'Apple Santé a bien enregistré
+        des pas provenant de ces appareils au cours des 7 derniers jours.
+      stepSourceInfoDesc: Voir plus d'informations à propos des sources de pas et
+        leur différences en pressant le bouton ci-dessous.
+      stepSourceInfo: Informations sur les sources de pas
   gearSets:
     phrases:
       noActivitiesSelected: Aucune activité sélectionnée
@@ -576,6 +674,7 @@ singulars:
       showAttributes: Montrer les attributs
     errors:
       keywordError: "L'ensemble contient déjà : <object id=\"{keyword}\" />"
+      duplicateItem: Cet objet existe déjà dans cet ensemble d'équipement
     info:
       gearSetsListDesc: Vous pouvez gérer vos ensembles ici. Si vous souhaitez en
         <c i=0>créer un nouveau</c>, appuyez sur le bouton ci-dessous. Vous pouvez
@@ -618,6 +717,14 @@ singulars:
     info:
       stats: Une compilation de statistiques pour chacun de vos pas à travers le monde
         d'Arenum.
+      chartWarning:
+        title: Inexactitude du graphique
+        description: Plusieurs joueurs ont signalé des problèmes d’imprécisions avec
+          les graphiques des pas, dus à d'importants changements internes effectués
+          lors d'une précédente mise à jour. Si vous constatez des écarts significatifs
+          entre ces graphiques et d’autres sources, c’est probablement la raison.
+          Le fonctionnement du jeu lui-même devrait rester inchangé, et ces problèmes
+          seront corrigés dans de futures mises à jour.
   tutorial:
     phrases:
       youWillGain: Vous obtiendrez la liste d'objet(s) suivante si vous sélectionnez
@@ -671,3 +778,17 @@ singulars:
       pendingInvites: Invitations en attente
       friends: Amis
       manageFriends: Gérer les relations
+  locales:
+    phrases:
+      grammaticalGenderExplanation: Le genre grammatical choisi affecte la façon dont
+        les textes du jeu font référence à vous.
+      helpToTranslate: WalkScape est <c>traduit par la communauté</c>. Aidez-nous
+        à traduire le jeu dans plus de langues et à étendre les traductions existantes
+        en consultant le <a href="https://wiki.walkscape.app/wiki/Localization">Guide
+        de Traduction</a>. Toute aide est énormément appréciée ! ❤️
+      chooseALanguage: Choisissez une langue depuis la liste ci-dessous.
+      percentExplanation: '% montre la proportion de contenu traduit.'
+      language: Langue
+      youCanChangeAnyTime: Vous pouvez changer de langue depuis <c>Paramètres de Jeu</c>
+        n'importe quand.
+      selectGrammaticalGender: Sélectionnez un genre grammatical

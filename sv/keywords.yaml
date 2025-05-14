@@ -58,14 +58,55 @@ singulars:
         /> i sina krav.
   activities:
     woodcuttingTrees:
-      requirement: Kräver aktiviteten trädhuggning.
+      requirement: Kräver aktiviteten <object id="woodcuttingTrees" />.
       name: Trädfällning
+      requirementLevel: Kräver en trädfällnings-aktivitet som minst har <keywordRequirements
+        /> i krav.
     fishing:
       name: Fiske
+      requirementLevel: Kräver en fiskeaktivitet med minst <keywordRequirements />
+        i krav.
+      requirement: Kräver en <object id="activity_fishing" />-aktivitet.
+    miningOres:
+      name: Bryta malm
+      requirementLevel: Kräver en aktivitet inom malmbrytning som har minst <keywordRequirements
+        /> i krav.
+      requirement: 'Kräver en aktivitet inom: <object id="activity_mining" />.'
+    foragingPlants:
+      name: Växtplockning
+      requirementLevel: Kräver en aktivitet inom växtplockning som har minst <keywordRequirements
+        /> i sina krav.
+      requirement: Kräver en aktivitet inom <object id="activity_foraging" />.
   recipes:
     skills:
       cooking:
-        name: Matlagning
+        name: Matrecept
+        requirement: Kräver ett <object id="recipe_cooking" />.
     products:
       sandwich:
-        name: Macka
+        name: Smörgåsrecept
+        requirements: Kräver en <object id="sandwich" /> gjord av ett <object id="recipe_cooking"
+          />.
+  gear:
+    bellows:
+      name: Bälg
+      requirement: Kräver utrustad <object id="bellows" />.
+      requirementLevel: Kräver en bälg som har minst <keywordRequirements /> i krav.
+    basket:
+      requirementLevel: Kräver en korg som har minst <keywordRequirements /> i krav.
+      name: Korg
+      requirement: Kräver en använd <object id="basket" />.
+    skillingGear:
+      requirement: Kräver påtagen <object id="skillingGear" />.
+      name: Träningsutrustning
+      requirementLevel: Kräver träningsutrustning som har minst <keywordRequirements
+        /> i krav.
+    frisbee:
+      requirement: Kräver att du bär en <object id="frisbee" />.
+      name: Flygskiva
+      requirementLevel: Kräver en flygskiva som har minst <keywordRequirements />
+        i krav.
+    skis:
+      requirement: Kräver påtagna <object id="skis" />.
+      name: Skidor
+      requirementLevel: Kräver skidor som har minst <keywordRequirements /> i krav.
