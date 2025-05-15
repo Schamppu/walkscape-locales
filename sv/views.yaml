@@ -59,15 +59,38 @@ plurals:
       stepsToLevelUp:
         one: Steg för att gå upp nivå
         other: Steg för att gå upp nivå
+  inventory:
+    info:
+      consumableDuration:
+        zero: Aktivitet<object id="{activity}" alwaysShow="true"/> kräver<c>{steps}</c>
+          steg. Den valda mängden förbrukningsvaror skulle utöka antalet<c>{actions}
+          gånger</c>.
 singulars:
   achievements:
     info:
       viewDescription: Lås upp prestationer för att tjäna <hl>belöningsframsteg</hl>.
         När belöningsprogressen är fylld får du en belöning för alla dina karaktärer.
         Vissa prestationer ger också belöningar för att du låser upp dem.
+      collectibleItems: Samlarobjekt är föremål som du kan få från WalkScape-världen.
+        Det finns flera olika typer av samlarobjekt som du kan försöka samla på dig.
+        De tar inte upp något utrymme i Inventarium och de finns alltid med din karaktär.
+      specialItems: Särskilda föremål, som <c>samlarobjekt</c>, <c>uppdrag</c> och
+        <c>artefakter</c> samlas in under hela din resa i WalkScape. Du kan kontrollera
+        dem här. Samlarobjekt ger dig framsteg i form av Prestationspoäng.
+      totalProgressUnlocks: Du får dessa belöningar baserat på dina totala framsteg
+        i prestationer, och du förlorar tillgången till föremålen om fler prestationspoäng
+        blir tillgängliga.
+      checkPointUnlocks: Dessa prestationer är tillgängliga vid vissa checkpoints
+        för prestationspoäng. Du kommer inte att förlora tillgången till dessa även
+        om fler prestationspoäng blir tillgängliga.
+      noCollectibleItems: Du äger inga samlarobjekt ännu.
     phrases:
       notUnlocked: Låst prestation
       rewardProgress: Belöningsframsteg
+      showRewards: Visa belöningar
+      totalProgressUnlocks: Samtliga framstegsbelöningar
+      checkPointUnlocks: Delmålsbelöningar
+      unclaimedRewards: 'Ej uthämtade belöningar: '
   crafting:
     phrases:
       materials: Material
@@ -77,26 +100,107 @@ singulars:
       requiresMaterial: Kräver ett material.
       requiresOneOfTheFollowing: Kräver ett av följande material.
       rewards: Belöningar
+      noMaterials: Du har inga material tillgängliga för att tillverka något just
+        nu.
+      noServiceRequirements: Inga krav på tjänster.
+      noMaterialsThatCouldBeUsed: Inga material som kan användas för att tillverka
+        något i ditt inventarium.
+      showingRecipiesThatUses: Visar recept som använder
+      requiresService: Kräver en tjänst.
+    errors:
+      notSameQuality: Materialen måste antingen alla vara Högklassiga eller normala
+      noService: Kravet på Tjänster uppfylls inte
+      noMaterials: Material för att Tillverka saknas
+      skillRequirementsNotMet: Kraven på Egenskap är inte uppfyllda
   inventory:
     info:
       noItemEquipped: Inget föremål utrustat. \n\n Du kan utrusta ett föremål genom
         att välja ett från listan nedan och trycka på "Utrusta".
       noItemSelected: Inget föremål valt. \n\n Välj ett föremål från listan nedan
         för att jämföra det med det aktuella föremålet och utrusta det.
+      noItemsFound: Inga föremål hittades från ditt Inventarium som skulle passa denna
+        Plats.
     phrases:
       treasury: Skatt
+      selectedStacks: Valda <c>{stacks}</c> staplar
+      longPressTip: <c>Tips och råd:</c> Om du trycker länge på en stapel med föremål
+        väljs alla liknande staplar.
+      enableWhenBack: Återaktivera vid start av en aktivitet där den tidigare använts
+      itemsInUse: Du har valt föremål som redan är i bruk. Du kan inte släppa eller
+        banka föremål som används.
+      slotsCount: 'Utrymmen:'
+      durationInSteps: Gick <c>{steps}</c> <icon i="Steps" /> steg
+      slotDoesntExist: Detta utrymme för föremål finns inte längre.
+      requires: Kräver
+      allItemsInUse: Alla dessa föremål är för närvarande i bruk och kan inte släppas.
+      oneOrMoreCantBeDropped: Ett eller flera föremål kan inte släppas.
+      disableWhenChanging: Avaktivera vid byte av aktivitet
+      noConsumableSelected: Ingen förbrukningsvara vald. Du kan välja en från nedan.
+      noConsumables: Inga förbrukningsvaror i ditt inventarium.
+      noFoodConsumables: Ingen <hl>mat</hl> i ditt inventarium.
+      noPotionConsumables: Inga <hl>elixirer</hl> i ditt inventarium.
+      noItemEquipped: Inget föremål utrustat
+      noItemSelected: Inget föremål valt
+      dropItems: Släppa föremål?
+      slots: Utrymmen <c>{slots}</c>
+      inUse: Används
+      attributes: Attribut
+      areYouSureToDrop: Är du säker på att du vill släppa föremål? Föremålen kommer
+        att vara borta för alltid när de släpps.
+      requirementsNotMet: Kraven är inte uppfyllda.
+      cantEquip: Kan inte utrusta.
+      checkBank: Öppna bank
+      cantBeDropped: Föremålet kan inte släppas.
+      abilities: Förmågor
+      equipToRingOne: Utrusta till ringutrymme 1
+      equipToRingTwo: Utrusta till ringutrymme 2
+      equipToToolSlot: Utrusta till verktygsplats {id}
+      emptySlot: Tomt utrymme
+      allSkills: Alla egenskaper
+      duration: Varaktighet
+      selectedConsumable: Vald förbrukningsvara
+      consumables: Förbrukningsvaror
+    options:
+      showConsumables: Visa förbrukningsvaror
+      expandInventory: Utöka inventariu
+      showMaterials: Visa material
+      showGear: Visa utrustning
   location:
     phrases:
       activities: Aktiviteter
       services: Tjänster
+      routes: Rutter
+      factions: Fraktioner
+      buildings: Byggnader
+      noActivites: Inga aktiviteter tillgängliga på denna plats.
+      tapToShowRoutes: Tryck för att visa rutter
+      jobBoard: Jobbtavla
+      jobs: Arbeten
   pfpCreation:
     buttons:
       choose: Välj
       hideHat: Döljande huvudbonader
       randomize: Slumpmässa
       showHat: Visa huvudbonader
+      enableFaceAccessory: Aktivera ansiktsaccessoar
+      enableEyeAccessory: Aktivera ögontillbehör
+      enableBackAccessory: Aktivera tillbehör för baksida
+      enableFacepaint: Aktivera ansiktsmålning
+      enableDynamicBackground: Aktivera dynamisk bakgrund
     phrases:
       currentSelection: Nuvarande val
+      extras: Extramaterial
+      defaultExpression: Standarduttryck
+      mainOptions: Huvudalternativ
+      noVariantSelected: Ingen variant vald
+      dynamicBackground: Dynamisk bakgrund ändrar bakgrundsbilden baserat på var karaktären
+        befinner sig.
+      variants: Varianter
+      resetToDefault: Återställ till standard
+      colorOptions: Färgalternativ
+      homeRegion: Hemregion
+      race: Ras
+      selectedVariant: Variant {index} vald
   activity:
     info:
       consumablesUsage: Du kan välja ett <c>livsmedel</c> och en <c>elixir</c> att
@@ -118,6 +222,403 @@ singulars:
   wardrobe:
     phrases:
       noHeadwear: Du äger inga huvudbonader.
+      noFaceAccessories: Du äger inte några ansiktsaccessoarer.
+      noBackAccessories: Du äger inte några tillbehör till ryggen.
+      noEyeAccessories: Du äger inga ögontillbehör.
   character:
     phrases:
       stepsOfLastWeek: Steg under de senaste 7 dagarna
+      checkOut: Här är min WalkScape karaktär {namn}. Kolla in den!\nhttps://walkscape.app
+      checkOutSubject: Kolla in mina framsteg i WalkScape!
+      skills: Färdigheter
+      totalLevel: Total nivå
+    info:
+      skillBreakdown: Här är en total nedbrytning av alla färdigheter din karaktär
+        har förbättrat under din resa. Tryck på någon av färdigheterna för att se
+        mer detaljerad information om dem och vad de låser upp.
+  journal:
+    info:
+      jobInfo: Jobb är <c>enkla och upprepbara uppgifter</c> som du kan slutföra för
+        att få belöningar. Du kan acceptera jobb från <c>jobbtavlor</c> på olika platser,
+        till exempel i städer. Du kan ha tre aktiva arbeten åt gången.
+    phrases:
+      jobs: Arbeten
+  jobs:
+    phrases:
+      hasNoItemsInInventory: Det finns inga berättigade föremål i ditt Inventarium.
+      youMustBeInLocationToCollect: Du måste befinna dig på samma plats som <object
+        id="{obj}"/> för att kunna hämta ut belöningarna.
+      hasNoItemsInBank: Det finns inga lämpliga föremål i din bank.
+      itemsFromInventory: Föremål från Inventarium
+      acceptedJobs: Tillgängliga arbeten <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      refreshIn: 'Jobbtavlan kommer att uppdateras i:'
+      giveItems: Ge föremål
+      give: Ge
+      noJobsAvailable: 'Det finns inga lediga jobb på denna plats för tillfället.
+        Nya Arbeten kommer att finnas tillgängliga om:'
+      openJournal: Öppna dagbok
+      itemsFromBank: Föremål från bank
+      youMustBeInLocation: Du måste befinna dig på samma plats som <object id="{obj}"/>
+        för att kunna returnera föremål.
+      hasNoBank: Det finns ingen bank på den här platsen.
+      rewards: Belöningar vid slutförande
+      acceptJob: Acceptera jobb
+      abandonJob: Överge jobbet
+      collectRewards: Samla belöningar
+    dialogs:
+      abandonJob:
+        title: Överge jobbet
+        text: Är du säker på att du vill överge det här jobbet? Du kommer att förlora
+          alla framsteg och belöningar från det här jobbet.
+  shop:
+    phrases:
+      selling: Sälja
+      bought: Köpt
+      sold: Såld
+      resetTrade: Återställ utbyte
+      buying: Köpa
+      buyBack: Köp tillbaka
+  permissions:
+    phrases:
+      connectAppleHealthExplanation: Du måste ansluta till Apple Health så att vi
+        kan läsa steg som synkroniserats av din klocka och för att se vilka enheter
+        du har anslutit. Om det är första gången du använder WalkScape kommer du att
+        bli ombedd att ge tillstånd att läsa data från Apple Health.
+      pedometerPermission: Tillstånd för stegräknare
+      exactAlarmPermission: Tillstånd för larm
+      youNeedToGivePermissions: Du måste tillåta följande behörigheter för att fortsätta
+        med spelet. Tryck på behörigheterna för att bevilja dem.
+      pedometerPermissionExplanation: Vi behöver detta tillstånd för att använda stegräknaruppgifterna
+        från din enhet.
+      noDeviceFound: Ingen enhet hittades. Kontrollera att du har tryckt på knappen
+        <c>Anslut till Apple Health</c> ovan och gett tillstånd att läsa Apple Health-data.
+      connectAppleHealth: Anslut till Apple Health
+      connect: Anslut
+      continueWillEnable: Fortsätt-knappen aktiveras efter att du har beviljat de
+        nödvändiga behörigheterna ovan.
+      youCanChangeAnyTime: Du kan när som helst ändra källa för stegräkning på <c>Inställningar</c>.
+      comingSoonToAndroid: Kommer snart till Android
+      changeStepCountingSource: Ändra källa för stegräkning
+      stepCountingSource: Källa för stegräkning
+    deviceInfo:
+      phone: "<icon i=\"Phone small\" /> <c>Telefonen</c> är den rekommenderade standardkällan
+        för stegräkning i WalkScape. För intensiva aktiviteter rekommenderar vi att
+        du använder <icon i=\"Watch small\" /> <c>en klocka</c> som stegräkningskälla.
+        För de flesta spelare är det bästa alternativet att använda <icon i=\"Phone
+        small\" /> <c>en telefon</c>.\n\n<bp /> <c i=1>Dina steg uppdateras live i
+        spelet medan du går.</c>\n\n<bp /> För att dina steg ska räknas måste <c>du
+        ha din telefon med dig</c>. Detta kan vara svårt när du utövar mer intensiva
+        sporter.\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> skiljer sig
+        från vissa <icon i=\"Watch small\" /> <c>andra klockor</c> genom att den synkroniserar
+        dina steg till Apple Health med jämna mellanrum. WalkScape läser av dina steg
+        från Apple Health som synkroniseras från din <icon i=\"Apple watch small\"\
+        \ /> <c>Apple Watch</c> eller någon annan klocka.\n\n<bp /> <c i=2>Apple Watch
+        synkroniserar dina steg till Apple Health regelbundet.</c> Du kan inte se
+        dina steg uppdateras live i spelet, och dina steg kan komma med en fördröjning.\n
+        \n<bp /> Du måste ge extra tillstånd att läsa data från Apple Health för att
+        ansluta din klocka.\n\n<bp /> Endast steg som rapporteras av din klocka registreras
+        i spelet.\n"
+      watch: "WalkScape läser av dina steg från <c>Apple Health</c> som synkroniseras
+        dit från din <icon i=\"Watch small\" /> <c>klocka</c>. Beroende på tillverkare
+        kan du behöva synkronisera dina steg manuellt från en separat app till <c>Apple
+        Health</c>.\n\n<bp /> <c i=2>Du kan behöva synkronisera dina steg till Apple
+        Health manuellt via andra program</c> för att stegen ska räknas i WalkScape.\n
+        \n<bp /> Processen för synkronisering av steg till <c>Apple Health</c> beror
+        på tillverkaren. Detta kan kräva lite extra inställningar och teknisk kunskap.\n
+        \n<bp /> Du måste ge extra tillstånd att läsa data från Apple Health för att
+        ansluta din klocka.\n\n<bp /> Endast steg som rapporteras av din klocka registreras
+        i spelet.\n"
+    deviceSource:
+      phone: Telefon
+      appleWatch: Apple Watch
+      watch: Annan klocka
+      featureDisabled: Byte av ingångskällor har inaktiverats på distans för tillfället.
+        Telefonens standardpedometer kommer att användas.
+  mainMenu:
+    loadingStates:
+      initializingPlayer: Förbereder spelardata
+      startingGameLoad: Börjar ladda speldata
+      checkingLocalizations: Kontroll av lokaliseringar från servern
+      cleaningUpData: Rensning av data
+      localizationFiles: Ladda lokaliseringsfiler
+      gameVersion: Hämtar spelversion
+      validatingGame: Validering av speldata från servern
+      initializingProviders: Förbereder leverantörer
+      loadingComplete: Laddning klar!
+      readingLocalGameData: Läser lokala speldata
+      initializingObjects: Förbereder spelobjekt
+      initializingDatabases: Förbereder databaser
+      readingCloudData: Läsa molndata
+      dataLoadingComplete: Dataladdningen är klar!
+      loadingCharactersFromCloud: Ladda karaktärer från molnet
+    phrases:
+      ifYouAreSure: Om du är säker skriver du <c>RADERA</c> i fältet och trycker på
+        fortsätt.
+      accountPage: Kontosida
+      areYouSureYouWantToDelete: Är du säker på att du vill radera <hl>{name}</hl>?
+      noInternet: Ingen internetanslutning
+      lostInternet: Din enhet har förlorat internetanslutningen. Väntar på en anslutning...
+      deleteWord: RADERA
+      dontDoIt: Gör det inte om du inte är säker.
+      email: E-post / Användarnamn
+      password: Lösenord
+      chooseCharacter: Välj din karaktär, eller skapa en ny.
+      pleaseWait: Vänligen vänta...
+      authenticating: Autentiserar...
+      googlePlay: Uppdatering från Google Play
+      support: Stöd spelet
+      downloadingLocalisations: Nedladdning av uppdaterade lokaliseringar
+      welcomeToWalkscape: Välkommen till WalkScape, <hl>främling</hl>. Vänligen logga
+        in.
+      pleaseEnterCredentials: Ange dina inloggningsuppgifter för WalkScape-kontot.
+      noBetaAccess: Ingen betatillgång.
+      createCharacter: Skapa en ny karaktär
+      logOut: Logga ut
+      deletingCharacter: Att radera din karaktär är <hl>irreversibelt</hl>.
+      areYouAbsolutelySure: Är du helt säker? Efter detta steg kommer du permanent
+        att förlora din karaktär.
+      iAmSure: Jag är säker
+      downloadingContent: Nedladdning av nytt spelinnehåll
+      loadingGame: Laddar spelet... vänligen vänta!
+      logIn: Logga in
+      register: Registrera
+      testFlight: Du kan ladda ner den senaste versionen från <c>TestFlight</c>.
+  gear:
+    phrases:
+      noCombatModifiers: Inga stridsbonusar för föremålen som du är utrustad med.
+      combatModifiers: Stridsbonusar
+      noSkillModifiers: Inga förändringar av egenskaper av utrustade föremål.
+      skillModifiers: Förändringar av egenskaper
+      permanentModifiers: Permanenta förändringar
+      noPermanentModifiers: Inga permanenta förändringar.
+  leaderboards:
+    phrases:
+      friends: Vänner
+      totalExperience: Total erfarenhet
+      show: Visa
+      everyone: Alla
+      first: Först
+      me: Jag
+      last: Sist
+      achievementPoints: Prestationspoäng
+      leaderboards: Ledartavlor
+      loadingPage: Laddar sidan...
+      totalSteps: Totalt antal steg
+      totalLevel: Total nivå
+  abilities:
+    info:
+      abilitiesInfo: Förmågor är speciella handlingar som du kan använda för att få
+        omedelbara fördelar i spelet. Förmågor har en väntetid som du måste vänta
+        på innan du kan använda förmågan igen.
+      youHaveNoAbilities: <hl>Du har inga Förmågor</hl>. Viss utrustning i spelet
+        kan ge dig förmågor som du kan använda för att få någon omedelbar fördel i
+        spelet under en väntetid.
+    phrases:
+      holdToUse: Håll för att använda
+      holdToCast: Håll för att kasta
+      abilities: Förmågor
+      useAbility: Använd förmåga
+      useConsumable: Konsumera förbrukningsvaror
+      noAction: Ingen åtgärd
+  treasury:
+    phrases:
+      openAll: Öppna alla
+      openChest: Öppna
+      noItems: Du har inga skatter att öppna. Du kan få kistor från olika aktiviteter.
+  settings:
+    categories:
+      dataSource:
+        changeWarning:
+          description: Observera att detta kan leda till en förlust av steg vid tidpunkten
+            för bytet.
+          title: Ändra datakälla?
+        title: Datakälla
+        thisPhone: Denna telefon
+        otherSource: Annan källa
+        requiresPermissionIos: Om rullgardinsmenyn nedan inte visar några externa
+          enheter ska du kontrollera att du har gett appen tillstånd att använda stegdata
+          från Apple Health i Inställningar ➤ Sekretess och säkerhet ➤ Hälsa ➤ (under
+          Appar) WalkScape och att Apple Health har registrerat steg på dessa enheter
+          under de senaste 7 dagarna.
+        lastSync: 'Senaste synkronisering: {timestamp}'
+      closedBeta:
+        useThisToClear: Använd detta om du vill återställa din steggraf. Användbart
+          om du har fått fler steg på grund av buggar och vill återställa grafen.
+        clearStepsGraph: Rensa steggraf
+        title: Stängd beta
+      locales:
+        chooseALanguageInfo: Tryck på knappen ovan för att öppna menyn för språkval.
+        title: Språk
+        changeLanguage: Byt språk
+      notifications:
+        notificationType: Notifikationstyp
+        title: Notifikationer
+        stepCountInterval: Notifieringsintervall
+        stepCountNotifications: Notifikationer om stegräkning
+      account:
+        title: Konto
+        visibility: Profilens synlighet
+      gameplay:
+        title: Spel
+        stopWhenOverEncumberedDefault: Stoppa när du är överlastad
+      character:
+        title: Karaktär
+        anonOnLeaderboard: Anonymisera på Ledartavlan
+        hideSteps: Dölj steg
+    phrases:
+      stepSourceInfoDesc: Läs mer information om stegkällorna och deras skillnader
+        genom att trycka på knappen nedan.
+      connectionInfoIos: Om dina bärbara enhter inte visas i listan ovan ska du kontrollera
+        att du har gett WalkScape tillstånd att använda stegdata från Apple Health
+        i <c>Inställningar ➤ Sekretess och säkerhet ➤ Hälsa ➤ (under Appar) WalkScape</c>
+        och att Apple Health har registrerat steg på dessa enheter under de senaste
+        7 dagarna.
+      settings: Inställningar
+      exitToCharacterSelection: Avsluta till karaktärval
+      stepSourceInfo: Information om stegkälla
+      connectionInfoAndroid: Stöd för smarta klockor för Android kommer snart. För
+        närvarande är det bara telefonen som stöds som en källa för stegräkning.
+  worldMap:
+    phrases:
+      pointsOfInterest: Intressanta platser
+      changeRouteWarning: Om du ändrar din rutt avbryts din pågående resa och du återvänder
+        till föregående plats. Är du säker på det?
+      services: Tjänster
+      currentLocation: Nuvarande plats
+      youreHere: Du befinner dig för närvarande på den här platsen.
+      afterExploring: När du har utforskat området kommer du att kunna se de intressanta
+        platserna här.
+      information: Information
+      youHaveNotExplored: Du har inte utforskat den här platsen ännu. Du kommer att
+        se information om den här platsen efter att du har besökt den en gång.
+      routeFromTo: <location i="{fromID}"/> till <location i="{toID}"/>
+      buildings: Byggnader
+      activities: Aktiviteter
+      routeRequirementsNotMet: 'Rutterna i din valda väg har krav som ännu inte uppfylls:'
+      route: Rutt
+      noActivities: Det finns inga aktiviteter tillgängliga på den här platsen.
+  stats:
+    info:
+      chartWarning:
+        description: Flera spelare har rapporterat problem med att deras stegdiagram
+          är felaktiga, vilket orsakats av stora förändringar bakom kulisserna i en
+          tidigare uppdatering. Om du stöter på problem där diagrammen visar betydligt
+          annorlunda avläsningar än andra källor är detta den mest troliga orsaken.
+          Själva spellogiken bör fortfarande fungera som tidigare och problemen med
+          diagrammen kommer att åtgärdas i framtida uppdateringar.
+        title: Felaktigheter i diagrammen
+      stats: Samlarobjekt med statistik från varje steg du har tagit genom Arenums
+        värld.
+    phrases:
+      totalSkillXp: Total färdighets-XP
+      stats: Statistik
+      totalSteps: Totalt antal steg
+  bank:
+    phrases:
+      withdraw: Ta ut
+      noItemsBank: Inga föremål i din bank.
+      noItemsInventory: Inga föremål i ditt inventarium.
+      deposit: Insättning
+  characterCreation:
+    phrases:
+      bodyTypeB: B
+      bodyTypeA: A
+      chooseABodyType: Välj en kroppstyp
+      characterName: Karaktärens namn
+      bodyType: Kroppstyp
+      race: Ras
+    info:
+      rememberSwipe: Kom ihåg att du kan svepa tillbaka för att ändra valda alternativ
+        när som helst under skapandet av karaktären.
+  social:
+    phrases:
+      friends: Vänner
+      manageFriends: Hantera socialt
+      pendingInvites: Pågående inbjudningar
+  gearSets:
+    phrases:
+      gearSets: Utrustningsset
+      copyCurrentlyEquippedGear: Kopiera utrustningen som sitter på
+      forActivities: 'För aktiviteter: '
+      optionsAndFilters: Alternativ och filter
+      sortBy: 'Sortera efter: '
+      noActivitiesSelected: Inga aktiviteter valda
+      toolSlot: Utrymme för verktyg
+      default: Standard
+      level: 'Lvl. '
+      showAttributes: Visa attribut
+      gear: Utrustning
+      tools: Verktyg
+      name: Namn
+      unequipGear: Ta av utrustning
+      unequipTools: Lägg undan verktyg
+      noItemSelected: Inget föremål valt
+      newSetDefaultName: Mitt nya utrustningsset
+      importedGearSetDefaultName: Importerat utrustningsset
+    errors:
+      keywordError: 'Utrustningen har redan: <object id="{keyword}" />'
+      duplicateItem: Föremål finns redan i utrustningssetet
+    info:
+      gearSetsDescription: Utrustningsseten hjälper dig att snabbt växla mellan olika
+        utrustningar.
+      gearSetManageDesc: Välj ett utrustningsset som du vill utrusta från nedan. För
+        att skapa, importera eller redigera dina utrustningsset kan du trycka på <c
+        i=0>Hantera</c>.
+      noGearSetsList: Du har inga utrustningssatser ännu. Välj <c i=0>Hantera</c>
+        för att skapa eller importera nya utrustningsset.
+      youDontHaveAnyItems: Inga föremål. Antingen känner du inte till eller har inga
+        föremål av den här typen, eller så gav dina filter och din sökning inte något
+        som passar.
+      gearSetsListDesc: Du kan hantera dina utrustningssatser här. Om du vill <c i=0>skapa
+        en ny</c> klickar du på knappen nedan. Du kan också <c i=1>kopiera din nuvarande
+        utrustning</c> när du skapar ett nytt utrustningsset.
+      noGearSetsManage: Du har inte skapat några utrustningsset ännu. Skapa din första
+        genom att trycka på knappen <c i=0>Skapa ny</c> nedan.
+  trade:
+    phrases:
+      total: Totalt
+      selling: Säljer {amount}
+      trade: HANDEL
+      restockIn: 'Lagerhålls på nytt: '
+      buying: Köper {amount}
+  rewards:
+    phrases:
+      alreadyClaimed: Redan tagen
+  cooldowns:
+    phrases:
+      followingMustBeTrueToUse: 'Kraven för användning är inte uppfyllda:'
+      cooldownReady: 'Väntetiden: Över'
+      cooldownRemaining: 'Väntetid som återstår:'
+      noCooldown: Ingen väntetid.
+      followingMustBeTrueToTick: 'Följande måste vara sant för att väntetiden ska
+        minska:'
+  popupBubbles:
+    phrases:
+      arrivedToLocation: Anlänt till <object id=[location] />
+      overEncumbered: Ditt inventarium är fullt och du bär för mycket saker.
+  tools:
+    phrases:
+      emptyToolSlot: Tom plats för verktyg
+      noToolEquipped: Inget verktyg utrustat för detta utrymme.
+      lockedToolSlot: Låst verktygsutrymme tills <c>karaktärnivå {level}</c>.
+  tutorial:
+    phrases:
+      noMoreMessages: Inga fler instruktioner
+      youWillGain: Du kommer att få följande föremål om du väljer detta alternativ.
+  locales:
+    phrases:
+      language: Språk
+      helpToTranslate: WalkScape är <c>community översatt</c>. Hjälp oss att översätta
+        spelet till fler språk och att utöka befintliga översättningar genom att besöka
+        <a href="https://wiki.walkscape.app/wiki/Localization">Översättningsguide</a>.
+        Hjälp är mycket uppskattad! ❤️
+      chooseALanguage: Välj ett språk från listan nedan.
+      percentExplanation: '% visar hur mycket som har översatts.'
+      selectGrammaticalGender: Välj grammatiskt genus
+      grammaticalGenderExplanation: Valet av grammatiskt kön påverkar hur spelets
+        UI texter refererar till dig.
+      youCanChangeAnyTime: Du kan när som helst ändra språk från <c>Inställningar</c>.
+  faction:
+    phrases:
+      openFaction: Öppen fraktion
