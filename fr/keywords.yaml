@@ -2,52 +2,52 @@ singulars:
   materials:
     fish:
       name: Poisson
-      requirement: Nécessite un poisson.
+      requirement: Requiert un <object id="fish" />.
       requirementLevel: Nécessite un poisson qui a au moins <keywordRequirements />
         dans ses prérequis.
     logs:
-      name: Registre
-      requirement: Nécessite une bûche.
+      name: Bûche
+      requirement: Requiert une <object id="logs" />.
       requirementLevel: Nécessite un rondin de bois qui a au moins <keywordRequirements
         /> dans ses prérequis.
     plant:
       name: Plante
-      requirement: Nécessite une plante.
+      requirement: Requiert une <object id="plant" />.
       requirementLevel: Nécessite une plante qui a au moins <keywordRequirements />
         dans ses prérequis.
     gem:
       requirementLevel: Requiert une gemme ayant au moins <keywordRequirements />
         de prérequis.
       name: Gemme
-      requirement: Requiert une gemme.
+      requirement: Requiert une <object id="gem" />.
     bar:
       requirementLevel: Requiert un lingot ayant au moins <keywordRequirements />
         de prérequis.
       name: Lingot
-      requirement: Requiert un lingot.
+      requirement: Requiert un <object id="bar" />.
     ore:
-      requirement: Requiert un minerai.
+      requirement: Requiert un <object id="ore" />.
       name: Minerai
       requirementLevel: Requiert un minerai ayant au moins <keywordRequirements />
         de prérequis.
     plank:
       name: Planche
-      requirement: Requiert une planche.
+      requirement: Requiert une <object id="plank" />.
       requirementLevel: Requiert une planche ayant au moins <keywordRequirements />
         de prérequis.
     mushroom:
       name: Champignon
-      requirement: Requiert un champignon.
+      requirement: Requiert un <object id="mushroom" />.
       requirementLevel: Requiert un champignon ayant au moins <keywordRequirements
         /> de prérequis.
     roughGem:
       name: Gemme brute
-      requirement: Requiert une gemme brute.
+      requirement: Requiert une <object id="rough_gem" />.
       requirementLevel: Requiert une gemme brute ayant au moins <keywordRequirements
         /> de prérequis.
     cutGem:
       name: Gemme taillée
-      requirement: Requiert une gemme taillée.
+      requirement: Requiert une <object id="cut_gem" />.
       requirementLevel: Requiert une gemme taillée ayant au moins <keywordRequirements
         /> de prérequis.
     ingredient:
@@ -398,35 +398,35 @@ singulars:
       requirementLevel: Requiert de la nourriture ayant au moins <keywordRequirements
         /> de prérequis.
       name: Nourriture
-      requirement: Requiert de la nourriture.
+      requirement: Requiert une <object id="food" />.
     alcohol:
       requirementLevel: Requiert un alcool ayant au moins <keywordRequirements />
         de prérequis.
       name: Alcool
-      requirement: Requiert un alcool.
+      requirement: Requiert un <object id="alcohol" />.
     cookedFish:
       name: Poisson cuit
-      requirement: Requiert un poisson cuit.
+      requirement: Requiert un <object id="cookedFish" />.
       requirementLevel: Requiert un poisson cuit ayant au moins <keywordRequirements
         /> de prérequis.
     fruit:
       name: Fruit
-      requirement: Requiert un fruit.
+      requirement: Requiert un <object id="fruit" />.
       requirementLevel: Requiert un fruit ayant au moins <keywordRequirements /> de
         prérequis.
     beverage:
       name: Boisson
-      requirement: Requiert une boisson.
+      requirement: Requiert une <object id="beverage" />.
       requirementLevel: Requiert une boisson ayant au moins <keywordRequirements />
         de prérequis.
     water:
       name: Eau
-      requirement: Requiert de l'eau.
+      requirement: Requiert de l'<object id="water" />.
       requirementLevel: Requiert de l'eau ayant au moins <keywordRequirements /> de
         prérequis.
     memosphere:
       name: Memosphere
-      requirement: Requiert une memosphere.
+      requirement: Requiert une <object id="memosphere" />.
       requirementLevel: Requiert une memosphere ayant au moins <keywordRequirements
         /> de prérequis.
     sandwich:
@@ -591,3 +591,42 @@ singulars:
       requirementLevel: Requiert un déchet ayant au moins <keywordRequirements />
         de prérequis.
       requirement: Requiert un <object id="trash" />.
+  itemSets:
+    advancedDivingGear:
+      requirement: Requiert d'équiper un <object id="itemset_diving_gear_advanced"
+        />.
+      name: Équipement de plongée avancé
+      requirementLevel: Requiert un équipement de plongée avancé ayant au moins <keywordRequirements
+        /> de prérequis.
+    treasureHunter:
+      requirementLevel: Requiert un équipement chasseur de trésor ayant au moins <keywordRequirements
+        /> de prérequis.
+      requirement: Requiert d'équiper les éléments du <object id="itemset_treasure_hunter"
+        />.
+      name: Set chasseur de trésor
+    adventuringTools:
+      name: Set d'outils d'aventure
+      requirement: Requiert d'équiper les éléments du <object id="itemset_adventuring_tools"
+        />.
+      requirementLevel: Requiert un outil d'aventure ayant au moins <keywordRequirements
+        /> de prérequis.
+    divingGear:
+      name: Équipement de plongée
+      requirement: Requiert d'équiper un <object id="itemset_diving_gear" />.
+      requirementLevel: Requiert un équipement de plongée ayant au moins <keywordRequirements
+        /> de prérequis.
+    expertDivingGear:
+      name: Équipement de plongée expert
+      requirement: Requiert d'équiper un <object id="itemset_diving_gear_expert" />.
+      requirementLevel: Requiert un équipement de plongée expert au moins <keywordRequirements
+        /> de prérequis.
+    properGear:
+      name: Équipement propre
+      requirement: Requiert d'équiper les éléments du set <object id="itemset_proper_gear"
+        />.
+      requirementLevel: Requiert un équipement propre ayant au moins <keywordRequirements
+        /> de prérequis.
+  locations:
+    underwater:
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
