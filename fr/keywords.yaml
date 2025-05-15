@@ -43,9 +43,43 @@ singulars:
     roughGem:
       name: Gemme brute
       requirement: Requiert une gemme brute.
+      requirementLevel: Requiert une gemme brute ayant au moins <keywordRequirements
+        /> de prérequis.
     cutGem:
       name: Gemme taillée
       requirement: Requiert une gemme taillée.
+      requirementLevel: Requiert une gemme taillée ayant au moins <keywordRequirements
+        /> de prérequis.
+    ingredient:
+      requirementLevel: Requiert un ingrédient ayant au moins <keywordRequirements
+        /> de prérequis.
+      ingredient: Requiert un <object id="ingredient" />.
+      name: Ingrédient
+    misc:
+      requirement: Requiert un objet <object id="misc" />.
+      requirementLevel: Requiert un objet divers ayant au moins <keywordRequirements
+        /> de prérequis.
+      name: Divers
+    nugget:
+      requirementLevel: Requiert une pépite ayant au moins <keywordRequirements />
+        de prérequis.
+      name: Pépite
+      requirement: Requiert une <object id="nugget" />.
+    trinket:
+      name: Bijou
+      requirement: Requiert un <object id="trinket" />.
+      requirementLevel: Requiert un bijou ayant au moins <keywordRequirements /> de
+        prérequis.
+    offcut:
+      requirementLevel: Requiert un reste ayant au moins <keywordRequirements /> de
+        prérequis.
+      name: Reste
+      requirement: Requiert un <object id="offcut" />.
+    processed:
+      name: Transformé
+      requirement: Requiert un matériau <object id="processed" />.
+      requirementLevel: Requiert un matériau transformé ayant au moins <keywordRequirements
+        /> de prérequis.
   tools:
     carpentryTool:
       name: Outil de construction
@@ -59,12 +93,12 @@ singulars:
         /> dans ses prérequis.
     fishingCage:
       name: Nasse à poissons
-      requirement: Nécessite une <object id="fishingCage" /> d'équipé.
+      requirement: Requiert d'équiper une <object id="fishingCage" />.
       requirementLevel: Nécessite une cage de pêche qui a au moins <keywordRequirements
         /> dans ses prérequis.
     fishingNet:
       name: Filet de pêche
-      requirement: Requiert un <object id="fishingNet" />.
+      requirement: Requiert d'équiper un <object id="fishingNet" />.
       requirementLevel: Nécessite un filet de pêche dont les prérequis sont au moins
         <keywordRequirements />.
     fishingRod:
@@ -79,7 +113,7 @@ singulars:
         dans ses prérequis.
     tool:
       name: Outil
-      requirement: Nécessite un <object id="tool" />.
+      requirement: Requiert d'équiper un <object id="tool" />.
       requirementLevel: Requiert un outil ayant au moins <keywordRequirements /> dans
         ses prérequis.
     woodcuttingHatchet:
@@ -100,13 +134,13 @@ singulars:
     logSplitter:
       requirementlevel: Requiert un fendeur de bûches ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper un fendeur de bûches.
+      requirement: Requiert d'équiper un <object id="item_log_splitter" />.
       name: Fendeur de bûches
     ruler:
       name: Règle
       requirementLevel: Requiert une règle ayant au moins <keywordRequirements />
         de prérequis.
-      requirement: Requiert d'équiper une règle.
+      requirement: Requiert d'équiper une <object id="ruler" />.
     sickle:
       name: Faucille
       requirementLevel: Requiert une faucille ayant au moins <keywordRequirements
@@ -191,31 +225,66 @@ singulars:
       name: Carte régionale
       requirementLevel: Requiert une carte régionale ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper une carte régionale.
+      requirement: Requiert d'équiper une <object id="localMap" />.
     knife:
       name: Couteau
       requirementLevel: Requiert un couteau ayant au moins <keywordRequirements />
         de prérequis.
-      requirement: Requiert d'équiper un couteau.
+      requirement: Requiert d'équiper un <object id="knife" />.
     wrench:
       name: Clé de serrage
       requirementLevel: Requiert une clé de serrage ayant au moins <keywordRequirements
         /> de prérequis.
-      requirement: Requiert d'équiper une clé de serrage.
+      requirement: Requiert d'équiper une <object id="wrench" />.
     fishingTool:
       name: Outil de pêche
-      requirement: Requiert un outil du type <object id="fishingTool" /> d'équipé.
+      requirement: Requiert d'équiper un <object id="fishingTool" />.
       requirementLevel: Requiert un outil de pêche qui a au moins <keywordRequirements
         /> dans ses prérequis.
     agilityTool:
       name: Outil d'agilité
-      requirement: Requiert un <object id="agilityTool" /> d'équipé.
+      requirement: Requiert d'équiper un <object id="agilityTool" />.
       requirementLevel: Requiert un outil d'agilité ayant au moins <keywordRequirements
         /> de prérequis.
     miningTool:
       name: Outil de minage
       requirement: Requiert d'équiper un <object id="miningTool" />.
       requirementLevel: Requiert un outil de minage ayant au moins <keywordRequirements
+        /> de prérequis.
+    sander:
+      name: Abrasif
+      requirement: Requiert d'équiper un <object id="sander" />.
+      requirementLevel: Requiert un abrasif ayant au moins <keywordRequirements />
+        de prérequis.
+    trinketryTool:
+      requirementLevel: Requiert un outil de joaillerie ayant au moins <keywordRequirements
+        /> de prérequis.
+      requirement: Requiert d'équiper un <object id="trinketryTool" />.
+      name: Outil de joaillerie
+    woodcuttingTool:
+      requirement: Requiert d'équiper un <object id="woodcuttingTool" />.
+      name: Outil de bucheron
+      requirementLevel: Requiert un outil de bucheron ayant au moins <keywordRequirements
+        /> de prérequis.
+    skillBook:
+      requirement: Requiert d'équiper un <object id="skillBook" />.
+      name: Livre de compétence
+      requirementlevel: Requiert un livre de compétence ayant au moins <keywordRequirements
+        /> de prérequis.
+    smithingTool:
+      name: Outil de forge
+      requirement: Requiert d'équiper un <object id="smithingTool" />.
+      requirementLevel: Requiert un outil de forge ayant au moins <keywordRequirements
+        /> de prérequis.
+    huntingBow:
+      requirement: Requiert d'équiper un <object id="huntingBow" />.
+      name: Arc de chasse
+      requirementLevel: Requiert un arc de chasse ayant au moins <keywordRequirements
+        /> de prérequis.
+    huntingTrap:
+      name: Piège de chasse
+      requirement: Requiert d'équiper un <object id="huntingTrap" />.
+      requirementLevel: Requiert un piège de chasse ayant au moins <keywordRequirements
         /> de prérequis.
   recipes:
     products:
@@ -252,12 +321,78 @@ singulars:
     skills:
       foraging:
         name: Collecte
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
       trinketry:
         name: Bricolage
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      traveling:
+        name: Voyage
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      crafting:
+        name: Artisanat
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      agility:
+        name: Agilité
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      fishing:
+        name: Pêche
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      hunting:
+        name: Chasse
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      mining:
+        name: Minage
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      smithing:
+        name: Forge
+        requirementLevel: <PLACEHOLDER>
+        requirement: <PLACEHOLDER>
+      woodcutting:
+        name: Bûcheronnage
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      tailoring:
+        name: Couture
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      global:
+        name: Général
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      carpentry:
+        name: Menuiserie
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      cooking:
+        name: Cuisine
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
     items:
       consumables:
         memosphere:
           name: Memosphere
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+        food:
+          name: Nourriture
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+        beverage:
+          name: Boisson
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+        potion:
+          name: Potion
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
   consumables:
     food:
       requirementLevel: Requiert de la nourriture ayant au moins <keywordRequirements
@@ -294,6 +429,11 @@ singulars:
       requirement: Requiert une memosphere.
       requirementLevel: Requiert une memosphere ayant au moins <keywordRequirements
         /> de prérequis.
+    sandwich:
+      requirement: Requiert un <object id="sandwich" />.
+      name: Sandwich
+      requirementLevel: Requiert un sandwich ayant au moins <keywordRequirements />
+        de prérequis.
   gear:
     skillingGear:
       name: Équipement de compétences
@@ -359,7 +499,7 @@ singulars:
       name: Arme
       requirementLevel: Requiert une arme ayant au moins <keywordRequirements /> de
         prérequis.
-      requirement: Requiert un <object id="weapon" /> d'équipé.
+      requirement: Requiert d'équiper une <object id="weapon" />.
     shield:
       name: Bouclier
       requirement: Requiert d'équiper un <object id="shield" />.
@@ -370,3 +510,84 @@ singulars:
       requirement: Requiert <object id="arrows" /> d'équipé.
       requirementLevel: Requiert des flèches ayant au moins <keywordRequirements />
         en prérequis.
+  services:
+    kitchen:
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+      name: Cuisine
+    bench:
+      name: Établi de Joaillerie
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    workshop:
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+      name: Atelier
+    forge:
+      name: Forge
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    loom:
+      name: Métier à tisser
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    sawmill:
+      name: Scierie
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+  containers:
+    chest:
+      requirementLevel: Requiert un coffre ayant au moins <keywordRequirements />
+        de prérequis.
+      name: Coffre
+      requirement: Requiert un <object id="chest" />.
+    regionalChest:
+      name: Coffre régional
+      requirement: Requiert un <object id="regionalChest" />.
+      requirementLevel: Requiert un coffre régional ayant au moins <keywordRequirements
+        /> de prérequis.
+    skillingChest:
+      name: Coffre de compétence
+      requirement: Requiert un <object id="skillingChest" />.
+      requirementLevel: Requiert un coffre de compétence ayant au moins <keywordRequirements
+        /> de prérequis.
+  general:
+    lightSource:
+      name: Source lumineuse
+      requirement: Requiert d'équiper une <object id="lightSource" />.
+      requirementLevel: Requiert d'équiper une <keywordRequirements />.
+  achievements:
+    percentage:
+      name: Pourcentage de succès
+      requirement: aucun
+      requirementLevel: aucun
+    reward:
+      name: Récompense de succès
+      requirement: Requiert une <object id="achievement_reward" />.
+      requirementLevel: Requiert une récompense de succès ayant au moins <keywordRequirements
+        /> de prérequis.
+  faction:
+    reward:
+      name: Récompense de faction
+      requirement: Requiert une <object id="faction_reward" />.
+      requirementLevel: Requiert une récompense de faction ayant au moins <keywordRequirements
+        /> de prérequis.
+  weight:
+    light:
+      name: Léger
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    ultraLight:
+      name: Très léger
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    heavy:
+      name: Lourd
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+  misc:
+    trash:
+      name: Déchet
+      requirementLevel: Requiert un déchet ayant au moins <keywordRequirements />
+        de prérequis.
+      requirement: Requiert un <object id="trash" />.
