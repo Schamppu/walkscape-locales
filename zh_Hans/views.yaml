@@ -1,1 +1,248 @@
-{}
+singulars:
+  activity:
+    info:
+      savedSteps: 你正在消耗积攒的步数，在全部用完之前，每走一步都会算作两步。
+      noActivity: 当前未选择任何活动。<hl>请选择下方的一项</hl>，或向左滑动查看此地点的所有可用内容。
+      consumablesUsage: 你可以选择一个 <c>食物</c> 和一瓶 <c>药剂</c> 在活动中使用。
+    phrases:
+      consumables: 消耗品
+      noActivity: 没有活动
+      options: 选项
+      notAffectingTraveling: （不影响移动效率）
+      savedSteps: 积攒步数
+      inventoryIsOverLimit: 背包满了！
+  locales:
+    phrases:
+      language: 语言
+      chooseALanguage: 从下面的清单选择一个语言。
+      percentExplanation: '% 表示翻译完成程度。'
+      youCanChangeAnyTime: 你可以随时在 <c>游戏设置</c> 中更改语言。
+      selectGrammaticalGender: 选择语法性别
+      grammaticalGenderExplanation: 所选语法性别会影响游戏界面文本中对你的称呼方式。
+      helpToTranslate: WalkScape 当前采用 <c>社区协作翻译</c> 。欢迎访问<a 
+        href="https://wiki.walkscape.app/wiki/Localization">翻译指南</a>，帮助我们将游戏翻译成更多语言或完善现有翻译。感谢你的贡献与支持！❤️
+  permissions:
+    phrases:
+      youNeedToGivePermissions: 你需要授予以下权限才能进入游戏。请点击对应权限进行授权。
+      pedometerPermissionExplanation: 我们需要这个权限来读取你设备的计步数据。
+      noDeviceFound: 未检测到设备。请确认你已点击上方的<c>连接至 Apple 健康</c>按钮，并已授予读取 Apple 健康数据的权限。
+      connectAppleHealth: 连接至 Apple 健康
+      connect: 连接
+      continueWillEnable: 授予上述必要权限后，“继续”按钮将会启用。
+      youCanChangeAnyTime: 你可以随时在<c>游戏设置</c> 中更改步数数据来源。
+      comingSoonToAndroid: Android 版本即将上线
+      changeStepCountingSource: 更改步数数据来源
+      stepCountingSource: 步数数据来源
+      pedometerPermission: 步数计数权限
+      exactAlarmPermission: 提醒权限
+      connectAppleHealthExplanation: 你需要连接至 Apple 健康，以便我们读取由你的手表同步的步数，并查看你已连接的设备。如果这是你第一次使用
+        WalkScape，系统将会请求你授权读取 Apple 健康数据。
+    deviceSource:
+      phone: 手机
+      appleWatch: Apple Watch
+      watch: 其他智能手表
+      featureDisabled: 目前更改步数输入来源已被远程禁用，系统将默认使用手机的计步器作为数据来源。
+    deviceInfo:
+      phone: "<icon i=\"Phone small\" /> <c>手机</c> 是 WalkScape 推荐的默认计步来源。对于高强度运动，我们建议使用
+        <icon i=\"Watch small\" /> <c>智能手表</c> 作为计步来源。对于大多数玩家来说，使用 <icon i=\"Phone
+        small\" /> <c>手机</c> 是最佳选择。\n\n<bp /> <c i=1>当你行走时，游戏中的步数会实时更新。</c>\n\n<bp
+        /> 要使步数被计入，<c>你必须随身携带手机</c>。在进行高强度运动时，这可能会有些不便。\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> 与某些 <icon i=\"\
+        Watch small\" /> <c>其他智能手表</c> 不同，它会定期将步数同步到 Apple 健康。WalkScape 会从 Apple 健康中读取由你的
+        <icon i=\"Apple watch small\" /> <c>Apple Watch</c> 或其他智能手表</c> 同步的步数。\n\n
+        <bp /> <c i=2>Apple Watch 会定期将步数同步到 Apple 健康。</c> 你无法在游戏中实时看到步数更新，步数可能会有延迟。\n
+        \n<bp /> 你需要授予额外权限来允许我们读取 Apple 健康中的数据，才能连接你的智能手表。\n\n<bp /> 游戏中只会记录由智能手表报告的步数。\n"
+      watch: "WalkScape 会从 <c>Apple 健康</c> 中读取由你的 <icon i=\"Watch small\" /> <c>智能手表</c>
+        同步的步数。不同厂商的设备可能需要你通过其他应用手动将步数同步到 <c>Apple 健康</c>。\n\n<bp /> <c i=2>你可能需要通过其他应用手动同步步数到
+        Apple 健康，才能让 WalkScape 记录步数。</c>\n\n<bp /> 将步数同步至 <c>Apple 健康</c> 的具体流程取决于设备厂商，可能需要额外设置和一定的技术知识。\n
+        \n<bp /> 你需要授予额外权限来允许我们读取 Apple 健康中的数据，才能连接你的智能手表。\n\n<bp /> 游戏中只会记录由你的智能手表报告的步数。\n"
+  character:
+    phrases:
+      skills: 技能
+      stepsOfLastWeek: 过去 7 天的步数
+      checkOut: 这是我的 WalkScape 角色 {name}，快来看看吧！\nhttps://walkscape.app
+      checkOutSubject: 快来看看我在 WalkScape 里的进度吧！
+      totalLevel: 总等级
+    info:
+      skillBreakdown: 这是你的角色在旅途中升级的所有技能的完整汇总。点击任意技能可查看详细信息及解锁的内容。
+  rewards:
+    phrases:
+      alreadyClaimed: 已获取
+  achievements:
+    info:
+      viewDescription: 解锁成就可获得<hl>成就点数</hl>。达到一定的成就点数后，你将解锁特殊奖励。部分成就在解锁时还会单独赠送额外奖励。
+      noCollectibleItems: 你还没有收集到任何可收藏物品。
+    phrases:
+      notUnlocked: 未解锁成就
+      rewardProgress: 奖励进度
+      unclaimedRewards: '未领取奖励： '
+      showRewards: 查看奖励
+  wardrobe:
+    phrases:
+      noHeadwear: 你没有任何头饰。
+      noFaceAccessories: 你没有任何面部配饰。
+      noBackAccessories: 你没有任何背部配饰。
+      noEyeAccessories: 你没有任何眼部配饰。
+  crafting:
+    phrases:
+      materials: 材料
+      rewards: 奖励
+      recipes: 配方
+      requiresMaterial: 需要一个材料。
+      noMaterials: 你当前没有可用的制作材料。
+      noMaterialsThatCouldBeUsed: 你的背包里没有可用于制作的材料。
+      requiresOneOfTheFollowing: 需要以下材料中的任意一种。
+    errors:
+      noMaterials: 缺少制作材料
+  abilities:
+    info:
+      abilitiesInfo: 能力是你可以使用的特殊动作，能够在游戏中带来即时增益。能力使用后会进入冷却时间，你需要等待冷却结束才能再次使用。
+      youHaveNoAbilities: <hl>你当前没有任何能力</hl>。游戏中的某些装备可以赋予你能力，让你在游戏中获得即时增益，但这些能力有冷却时间。
+    phrases:
+      abilities: 能力
+      useAbility: 使用能力
+      noAction: 没有动作
+      holdToCast: 长按施放
+      holdToUse: 长按以使用
+      useConsumable: 使用消耗品
+  journal:
+    phrases:
+      jobs: 工作
+    info:
+      jobInfo: 工作是<c>简单且可重复的任务</c>，你可以完成它们以获取奖励。你可以在城市等各地的<c>工作板</c>接受工作。你最多可以同时进行三个工作。
+  treasury:
+    phrases:
+      openChest: 开启
+      openAll: 全部开启
+  jobs:
+    phrases:
+      acceptJob: 接受工作
+      abandonJob: 放弃工作
+      acceptedJobs: 当前已接受的工作 <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      rewards: 完成奖励
+      openJournal: 打开日志
+      itemsFromInventory: 背包中的物品
+      collectRewards: 领取奖励
+      hasNoItemsInInventory: 你的背包中没有符合条件的物品。
+      giveItems: 赠送物品
+      give: 赠送
+      youMustBeInLocationToCollect: 你必须与 <object id="{obj}"/> 位于同一地点才能领取奖励。
+      youMustBeInLocation: 你必须与 <object id="{obj}"/> 位于同一地点才能归还物品。
+      noJobsAvailable: 此地点目前没有可接取的工作。新工作将在以下时间开放：
+  shop:
+    phrases:
+      bought: 已购买
+      sold: 已出售
+      resetTrade: 重制交易
+      buying: 购买中
+      selling: 出售中
+      buyBack: 回购
+  inventory:
+    info:
+      noItemsFound: 你的背包中没有适合此槽位的物品。
+      noItemEquipped: 未装备任何物品。\n\n你可以从以下列表中选择一件物品，然后点击“装备”进行装备。
+      noItemSelected: 未选择任何物品。\n\n请从以下列表中选择一件物品，以便与当前装备进行比较并装备。
+    phrases:
+      treasury: 宝物库
+      longPressTip: <c>提示：</c> 长按一组物品可以选中所有相同的物品组。
+      dropItems: 丢弃物品？
+      areYouSureToDrop: 你确定要丢弃这些物品吗？丢弃后物品将永久消失。
+      slots: 槽位 <c>{slots}</c>
+      slotsCount: 槽位：
+      cantEquip: 无法装备。
+      slotDoesntExist: 该物品槽位已不存在。
+      allItemsInUse: 这些物品当前均在使用中，无法丢弃。
+      cantBeDropped: 物品无法被丢弃。
+      oneOrMoreCantBeDropped: 一个或多个物品无法被丢弃。
+      equipToRingOne: 装备到戒指槽位 1
+      equipToToolSlot: 装备到工具槽位 {id}
+      emptySlot: 空槽位
+      allSkills: 所有技能
+      noItemEquipped: 未装备任何物品
+      noItemSelected: 未选择任何物品
+      duration: 持续时间
+      inUse: 使用中
+      disableWhenChanging: 切换活动时禁用
+      consumables: 消耗品
+      noConsumables: 你的背包中没有消耗品。
+      noFoodConsumables: 你的背包中没有<hl>食物</hl>。
+      noPotionConsumables: 你的背包中没有<hl>药剂</hl>。
+      equipToRingTwo: 装备到戒指槽位 2
+      noConsumableSelected: 未选择消耗品。你可以从下面选择一个。
+      selectedConsumable: 已选消耗品
+  tools:
+    phrases:
+      emptyToolSlot: 空工具槽位
+      noToolEquipped: 该槽位未装备任何工具。
+      lockedToolSlot: 工具槽位已锁定，需达到<c>角色等级 {level}</c>后解锁。
+  bank:
+    phrases:
+      noItemsInventory: 你的背包中没有物品。
+  trade:
+    phrases:
+      trade: 交易
+      restockIn: '补货时间： '
+      buying: 购买 {amount} 件
+      selling: 出售 {amount} 件
+  characterCreation:
+    phrases:
+      bodyType: 体型
+      race: 种族
+      chooseABodyType: 选择一个体型
+      bodyTypeA: A
+      bodyTypeB: B
+      characterName: 角色名称
+    info:
+      rememberSwipe: 在角色创建过程中，你可以随时向左滑动返回，修改已选择的选项。
+  settings:
+    categories:
+      dataSource:
+        title: 数据来源
+        thisPhone: 这部手机
+        otherSource: 其他来源
+        lastSync: 上次同步时间：{timestamp}
+        changeWarning:
+          title: 更改数据来源？
+          description: 请注意这可能会导致更改时段内的步数丢失。
+        requiresPermissionIos: 如果下方下拉菜单未显示任何外部设备，请确保你已在“设置 ➤ 隐私与安全性 ➤ 健康 ➤ （应用程序列表中）WalkScape”中授权应用访问
+          Apple 健康的步数数据，并且 Apple 健康在过去7天内已记录了这些设备的步数。
+      character:
+        anonOnLeaderboard: 排行榜上匿名显示
+        hideSteps: 隐藏步数
+        title: 角色
+      gameplay:
+        title: 游戏玩法
+      closedBeta:
+        title: 内测
+        clearStepsGraph: 清除步数图表
+        useThisToClear: 使用此选项可重置你的步数图表。如果你因 bug 获得了异常步数并希望重置图表，这会很有用。
+      notifications:
+        stepCountInterval: 通知间隔时间
+        stepCountNotifications: 步数通知
+        notificationType: 通知类型
+        title: 通知
+      locales:
+        title: 语言
+        changeLanguage: 更改语言
+        chooseALanguageInfo: 点击上方按钮以打开语言选择菜单。
+      account:
+        title: 帐号
+        visibility: 个人资料可见性
+    phrases:
+      settings: 设置
+      exitToCharacterSelection: 退出至角色选择界面
+      stepSourceInfo: 步数来源信息
+      connectionInfoAndroid: 在 Android 上对于智能手表的支持即将推出。目前，只支持手机作为计步来源。
+      connectionInfoIos: 如果您的可穿戴设备未显示在上述列表中，请确保您已在 <c>设置 ➤ 隐私与安全 ➤ 健康 ➤（应用程序下）WalkScape</c>
+        中授予 WalkScape 使用 Apple 健康步数数据的权限，并且 Apple 健康在过去7天内已记录了这些设备的步数。
+      stepSourceInfoDesc: 点击下方按钮可查看更多关于步数来源及其区别的信息。
+  gearSets:
+    phrases:
+      gearSets: 装备套装
+      copyCurrentlyEquippedGear: 复制当前装备
+      optionsAndFilters: 选项与筛选条件
+      sortBy: '排序方式： '
+      noActivitiesSelected: 未选择任何活动
+  popupBubbles:
+    phrases:
+      arrivedToLocation: 到达 <object id={location} />
