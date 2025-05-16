@@ -27,6 +27,12 @@ singulars:
           sautez de branche en branche, espérant qu'elles ne cèdent pas. La chute
           semble redoutable.
         name: Sauter d'arbre en arbre
+      exploreBogBottom:
+        name: Explorer le fond de la tourbière
+        desc: Vous suivez votre carte des fonds et explorez le chemin caché dans les
+          profondeurs troubles de la tourbière. Elles semblent tourbillonner sans
+          fin, mais elles vous mènent à quelque chose. Vous devez juste continuer
+          à nager.
     global:
       birdWatching:
         desc: L'observation des oiseaux est une fenêtre sur le règne aviaire. Vous
@@ -135,6 +141,14 @@ singulars:
           requiert beaucoup de talent. À chaque essai, vous êtes de plus en plus en
           harmonie avec les autres danseurs, jusqu'à atteindre une fluidité parfaite,
           ressemblant à un banc de poissons en mouvements synchronisés.
+      exploreUnderwaterCave:
+        name: Explorer la grotte sous-marine
+        desc: Vous suivez votre carte des fonds et explorez la grotte sous-marine.
+          L'eau semble tourbillonner sans fin, mais elle vous mène à quelque chose.
+          Vous devez juste continuer à nager.
+    bats:
+      springBatTracking:
+        name: Chasse aux chauve-souris (Printemps)
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -218,6 +232,17 @@ singulars:
         desc: Vous trempez le filet de pêche dans l'eau trouble. Il ne faut pas longtemps
           avant que différentes créatures aquatiques ne s'y retrouvent piégées.
         name: Pêcher au marais (Filet)
+      bogFishingNet:
+        desc: Vous lancez un filet dans la tourbière. L'eau est trouble, mais vous
+          pouvez tout de même voir des poissons nager. Vous attendez patiemment que
+          l'un d'eux se prenne dans votre filet.
+        name: Pêche en tourbière (Filet)
+      bogFishingSpear:
+        desc: Immergé dans les eaux de la tourbière, vous préparez votre lance de
+          pêche, prêt à frapper tout poisson passant à proximité. Les eaux troubles
+          vous empêchent de bien voir, mais vous êtes déterminé à attraper quelque
+          chose.
+        name: Pêche en tourbière (Lance)
     jarvonia:
       lakeFishing:
         desc: Dans l'air vif de l'hiver, vous choisissez soigneusement votre appât
@@ -286,6 +311,10 @@ singulars:
         desc: Au milieu des ruelles labyrinthiques de la ville, tu explores les coins
           oubliés, passant au crible les bricoles abandonnées dans l'espoir de dénicher
           des trésors cachés parmi les rebuts.
+      summerCaveForaging:
+        name: Collecte en grotte (Été)
+        desc: Les chauve-souris font leur nid ici en été. Il fait sombre, tu devrais
+          apporter une source de lumière.
     global:
       litterLooting:
         desc: Dans l'effervescence de la cité médiévale, vous passez au peigne fin
@@ -322,8 +351,9 @@ singulars:
           Un vent violent venant de la côte ne vous décourage pas dans votre recherche de coquillages. Certains sont givrés, accrochés au sable épais. D'autres ont été détachés par les vagues ou la faune. Ils attendent d'être réclamés par un aventurier ou d'être ramenés à terre.
         name: Collecte de coquillages
       caveForaging:
-        desc: C'est sombre par ici, tu ferais mieux d'amener une source de lumière.
-        name: Collecte en grotte
+        desc: Les chauve-souris font leur nid ici au printemps. Il fait sombre, tu
+          devrais apporter une source de lumière.
+        name: Collecte en grotte (Printemps)
       hornOfRespiteTreasureHunt:
         name: Chasse au trésor
         desc: La guilde des aventuriers à initié le défi de trouver des trésors autour
@@ -426,6 +456,11 @@ singulars:
         name: Miner des fossiles
         desc: Attiré par les merveilles du passé, tu essayes de trouver d'anciens
           fossiles.
+    gdte:
+      underwaterAqueductDigging:
+        name: Création d'un aqueduc sous-marin
+        desc: Creusez une voie pour les charpentiers qui vous suivent. Retirez les
+          débris dans le passage, et assurez-vous que la zone ne s'effondre pas.
   smithing:
     jarvonia:
       horseshoeMaking:
