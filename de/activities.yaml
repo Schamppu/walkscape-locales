@@ -27,6 +27,11 @@ singulars:
         desc: In schwindelerregender Höhe rast das Adrenalin durch deinen Körper,
           während du mutig von Ast zu Ast springst – in der Hoffnung, dass keiner
           bricht. Der Abgrund unter dir wirkt furchteinflößend.
+      exploreBogBottom:
+        desc: Du folgst deiner Unterwasserkarte und erkundest den verborgenen Pfad
+          in den trüben Tiefen des Moores. Er scheint sich endlos zu winden und zu
+          drehen, doch er führt dich irgendwohin. Du musst nur weiter schwimmen.
+        name: Erkunde Sumpfboden
     global:
       birdWatching:
         desc: Vogelbeobachtung ist ein Fenster in das Reich der Vögel. Du beobachtest
@@ -48,7 +53,7 @@ singulars:
         desc: Der freier Stil des Skilanglaufs birgt ein Gefühl von Abenteuer. Jeder
           Schritt bringt dich stärker und sicherer durch abwechslungsreiches Gelände
           während du die weiten, schneebedeckten Flächen erkundest.
-        name: freier Stil - Skilanglauf
+        name: Freistil-Skilanglauf
       frisbeeGolfingBeginner:
         desc: Als Anfänger im Frisbee-Golf ist jeder Wurf eine neue Entdeckung. Du
           lernst den Wind abzuschätzen und um Bäume herum zu navigieren, genießt die
@@ -113,7 +118,7 @@ singulars:
           Umgebung. Schritte nähern sich und du eilst mit einem kleinen Sprung auf
           das angrenzende Dach. Eine Fliese löst sich und fällt klirrend zu Boden.
           Nächstes mal bist du vorsichtiger.
-        name: Von Dach zu Dach (Anfänger)
+        name: Von Hütte zu Hütte springen
       blackEyePeakSearchTeam:
         desc: Hilf der Abenteuergilde dabei Informationen über offene Genehmigungen,
           die noch nicht zurückgebracht wurden, zu finden.
@@ -134,6 +139,18 @@ singulars:
           Menge können. Mit jedem Versuch wirst du besser darin mit den anderen Tänzern
           mitzuhalten, bis du einen durchgängigen Fluss erreichst, der einen Fischschwarm
           mit synchronen Bewegungen widerspiegelt.
+      exploreUnderwaterCave:
+        name: Erforsche die Unterwasserhöhle
+        desc: Du folgst deiner Unterwasserkarte und erkundest die verschlungenen Gänge
+          der Unterwasserhöhle. Sie scheinen sich endlos zu winden und zu drehen,
+          doch sie führen dich irgendwohin. Du musst nur weiter schwimmen.
+    bats:
+      springBatTracking:
+        desc: Die Fledermäuse verlassen die Höhle und fliegen Richtung Nord-Ost. Du
+          folgst ihnen von ihrem Frühlingsquartier aus, läufst Tag und Nacht, um herauszufinden,
+          wo sie als Nächstes ihr Zuhause finden. Es könnte eine Weile dauern, bis
+          du hierher zurückkehrst.
+        name: Fledermaus-Tracking im Frühling
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -143,8 +160,8 @@ singulars:
           Dein Werkzeugsatz ist professionell, genau wie du.
         name: Rumpfreparatur
       underwaterAqueductConstruction:
-        desc: Du legst die natürliche Wasserader frei und verstärkst sie auf ihrem
-          Weg zum Halbling-Lager.
+        desc: Du baust und verstärkst die natürliche Wasserleitung, die zum Halblingslager
+          führt.
         name: Konstruktion eines Unterwasseraquädukts
     jarvonia:
       shipRepairBeginner:
@@ -215,6 +232,17 @@ singulars:
         desc: Du lässt ein Fischernetz ins trübe Wasser sinken. Nach kurzer Zeit tummeln
           sich diverse Wasserlebewesen im Netz.
         name: Angeln im Sumpf (Netz)
+      bogFishingNet:
+        desc: Du wirfst dein Netz ins Moorwasser. Das Wasser ist trüb, doch du siehst
+          die Fische umherschwimmen. Geduldig wartest du, bis sie sich in deinem Netz
+          verfangen.
+        name: Moorfischen (Netz)
+      bogFishingSpear:
+        name: Moorfischen (Speer)
+        desc: 'Während du unter dem trüben Moorwasser lauerst, richtest du deinen
+          Speer aus, bereit zuzustoßen, sobald ein Fisch nah genug heranschwimmt.
+          Das undurchsichtige Wasser erschwert die Sicht, doch dein Ziel ist klar:
+          Du wirst etwas fangen.'
     jarvonia:
       lakeFishing:
         desc: Mit einer Vorahnung in der frischen Winterluft wählst du sorgfältig
@@ -284,6 +312,10 @@ singulars:
         desc: Innerhalb der Labyrinthähnlichen Gassen der Stadt durchsuchst du die
           vergessenen Ecken, wühlst dich durch die weggeworfenen Dinge und hoffst
           zwischen dem Weggeworfenem versteckte Schätze ans Tageslicht zu bringen.
+      summerCaveForaging:
+        name: Sommerhöhlensuche
+        desc: Fledermäuse suchen sich hier im Sommer ein Zuhause. Es ist dunkel –
+          nimm besser eine Lichtquelle mit.
     jarvonia:
       cliffForaging:
         desc: Am Rande der hoch aufragenden Klippe erkundest du vorsichtig das zerklüftete
@@ -310,8 +342,9 @@ singulars:
           dich selbst, aber gibt es hier überhaupt etwas zu finden?
         name: Gletscher Suche
       caveForaging:
-        desc: Es ist dunkel da drin, bring besser eine Lampe mit.
-        name: Höhlensuche
+        desc: Fledermäuse suchen sich hier im Frühling ein Zuhause. Es ist dunkel
+          – nimm besser eine Lichtquelle mit.
+        name: Frühlingshöhlensuche
       hornOfRespiteTreasureHunt:
         name: Schatzsuche
         desc: Die Abenteurergilde fordert alle heraus beim Horn der Atempause besondere
@@ -419,6 +452,11 @@ singulars:
         name: Fossilienabbau
         desc: Angelockt von den Wundern der Vergangenheit richten Sie Ihre Aufmerksamkeit
           auf die Suche nach uralten Fossilien.
+    gdte:
+      underwaterAqueductDigging:
+        desc: 'Schaffe den Weg für die Zimmerleute, die dir folgen: Entferne das Geröll
+          und sorge dafür, dass die Umgebung nicht einstürzt.'
+        name: Aquaduktgrabung unter Wasser
   woodcutting:
     jarvonia:
       cutBirchTrees:
@@ -489,11 +527,37 @@ singulars:
         desc: Wenn Helga die Glocke läutet, schürst du das Feuer. Ein einfaches Leben.
   misc:
     emergencySwimEscape:
-      name: Notfall Fluchtschwimmen
+      name: Notfall-Flucht per schwimmen
       desc: Du hast deine Tauchausrüstung verloren und dir geht die Luft aus. Du musst
         so schnell wie möglich an das Ufer schwimmen, aber ohne in Panik zu geraten.
         Du weißt, dass du beim zu schnellen Auftauchen Dekompressionskrankheit erleiden
         könntest.
+    gdte:
+      swampEmergencySwimEscape:
+        name: Notfall-Flucht per schwimmen (Sumpf)
+        desc: Du hast deine Tauchausrüstung verloren und dir geht die Luft aus. Du
+          musst so schnell wie möglich ans Ufer schwimmen – ohne in Panik zu verfallen.
+          Dir ist bewusst, dass ein zu schneller Aufstieg zur Dekompressionskrankheit
+          führen kann.
+      swampEmergencyDarkEscape:
+        name: Notfall-Flucht aus der Dunkelheit (Sumpf)
+        desc: Du hast deine Lichtquelle verloren und musst nun den Weg hinaus durch
+          die Dunkelheit finden. Gehe vorsichtig vor und meide die gefährlichen Kreaturen,
+          die in den Schatten lauern könnten.
+      ventureIntoTheBog:
+        name: Wage dich ins Moor
+        desc: Du wagst dich in den düsteren Nebel vor Granfiddich und versuchst, jene
+          Orientierungspunkte wiederzufinden, die dir auf der Spur der Fledermäuse
+          vertraut geworden sind.
+      ventureIntoTheWoods:
+        name: Wage dich in die Wälder
+        desc: Du wagst dich in die düsteren Nebelschwaden vor Salsfirth, doch ein
+          dichtes Geflecht aus Bäumen versperrt dir den Weg.
+      runForYourLife:
+        name: Renne um dein Leben
+        desc: Beklemmung erfasst dich, als die Schatten dichter werden und unsichtbare
+          Augen dich verfolgen – du läufst los, ohne auch nur zu ahnen, wohin deine
+          Füße dich tragen.
   hunting:
     jarvonia:
       rabbitTracking:
