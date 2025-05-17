@@ -457,7 +457,7 @@ singulars:
           name: Canne à pêche rudimentaire
         fishingSpear:
           desc: "Cette canne à pêche requiert beaucoup de précision et des bons réflexes
-            pour attraper quelque chose, mais c'est très satisfaisant quand vous réussissez. "
+            pour attraper quelque chose, mais c'est très satisfaisant quand vous réussissez."
           name: Lance de pêche
         largeFishingNet:
           desc: Si vous la gardez suffisamment longtemps dans le courant, vous finirez
@@ -465,8 +465,8 @@ singulars:
             contre.
           name: Grand filet de pêche
         oakFishingRod:
-          desc: 'Plutôt lourde et pas très flexible, mais peut supporter une bonne
-            partie de tir à la corde. '
+          desc: 'Plutôt lourde et peu flexible, mais peut supporter une bonne partie
+            de tir à la corde.'
           name: Canne à pêche en chêne
         pineFishingRod:
           desc: 'Une canne à pêche robuste, adaptée pour les poissons qui ne se laisseront
@@ -493,6 +493,9 @@ singulars:
           name: Appât à marée
           desc: Cet appât ressemble à un tourbillon. Très efficace pour attirer des
             poissons.
+        elderhideFishingNet:
+          name: Filet de pêche en peau ancienne
+          desc: Un filet de pêche fait à partir de peau ancienne.
       mining:
         basicPickaxe:
           desc: La pioche de base, humble outil du mineur. À peine plus qu'un bâton,
@@ -518,12 +521,15 @@ singulars:
             à exécuter ses ordres.
           name: Pioche en acier
         tarsiliumPickaxe:
-          desc: Une pioche noire.
+          desc: Le heavy metal est parfait pour aller avec la pioche en métal sombre.
           name: Pioche en tarsilium
         hydriliumPickaxe:
           name: Pioche en hydrilium
           desc: Une pioche fabriquée à partir d'un matériau sous-marin rare appelé
             l'hydrilium.
+        hydriliumMagnet:
+          desc: Un aimant de mineur infusé d'hydrilium.
+          name: Aimant en hydrilium
       woodcutting:
         basicHatchet:
           desc: La hachette de base, humble outil des forestiers. À peine plus qu'un
@@ -549,7 +555,8 @@ singulars:
             à exécuter ses ordres.
           name: Hachette en acier
         tarsiliumHatchet:
-          desc: Une hache noire.
+          desc: La tête de hache en métal sombre reflète peu la lumière, mais elle
+            coupe très bien le bois.
           name: Hachette en tarsilium
         hydriliumHatchet:
           name: Hachette en hydrilium
@@ -577,11 +584,114 @@ singulars:
           name: Faucille en hydrilium
           desc: Une faucille fabriquée à partir d'un matériau sous-marin rare appelé
             l'hydrilium.
+        mangroveBasket:
+          desc: Le panier en palétuvier a été fabriqué à partir de deux paniers différents,
+            mais les planches en palétuvier cachent parfaitement les raccords.
+          name: Panier en palétuvier
       miscellaneous:
         bagOfRocks:
           name: Sac de pierres
           desc: C'est dur de traîner ça partout. Rappelle-moi, pourquoi tu fais ça
             déjà?
+      hunting:
+        birchBirdhouse:
+          desc: Un nichoir classique que même un amateur pourrait créer. C'est tout
+            de même une belle maison pour de petits oiseaux lors de la période de
+            nidification.
+          name: Nichoir en bouleau
+        mangroveBirdhouse:
+          desc: Le palétuvier n'est pas souvent utilisé pour faire des nichoirs, car
+            son bois est difficile à travailler. Cependant, si un artisan qualifié
+            s'en charge, le nichoir sera de bonne qualité.
+          name: Nichoir en palétuvier
+        pineBirdhouse:
+          desc: Un nichoir fait à partir de bois de pin. Sa couleur marron le rend
+            attirant pour de nombreux oiseaux.
+          name: Nichoir en pin
+        steelArrows:
+          desc: La pointe brillante de ces flèches montre à quel point elles sont
+            aiguisées. Mieux vaut ne pas se faire toucher par l'une d'elles.
+          name: Flèches en acier
+        oakHuntingBow:
+          desc: Un arc de chasse fait à partir de bois de chêne, populaire parmi les
+            chasseurs.
+          name: Arc de chasse en chêne
+        bambooHuntingBow:
+          name: Arc de chasse en bambou
+          desc: Un arc de chasse fait à partir de bambou, très répandu dans les zones
+            où le bambou pousse partout. C'est une arme légère et précise.
+        mahoganyHuntingBow:
+          name: Arc de chasse en acajou
+          desc: Cet arc de chasse de bonne facture est une arme idéale pour un chasseur
+            talentueux.
+        spruceBirdhouse:
+          desc: Un nichoir de bonne facture fait à partir de bois d'épicéa. Sa forme
+            permet aux oiseaux d'y faire leur nid.
+          name: Nichoir en épicéa
+        mapleBirdhouse:
+          name: Nichoir en érable
+          desc: Le nichoir en épicéa a une odeur caractéristique, qui attire des oiseaux
+            de toutes les tailles.
+        bronzeArrows:
+          name: Flèches en bronze
+          desc: Le bronze n'est pas idéal pour fabriquer des outils faits pour durer,
+            mais il fonctionne plutôt bien pour des flèches.
+        tarsiliumArrows:
+          name: Flèche en tarsilium
+          desc: Des flèches sombres, beaucoup utilisées par les gardes forestiers
+            sombres.
+        elmHuntingBow:
+          name: Arc de chasse en orme
+          desc: Un arc de chasse fait à partir de bois d'orme, flexible mais durable.
+        teakBirdhouse:
+          name: Nichoir en teck
+          desc: Un nichoir de meilleure qualité qui nécessite des connaissances. C'est
+            une bonne maison pour les oiseaux.
+        copperArrows:
+          name: Flèches de cuivre
+          desc: Tout juste meilleures que des flèches faites à partir de bâtons, mais
+            tout le monde commence bien quelque part.
+        ironArrows:
+          name: Flèches en fer
+          desc: Les flèches de base de la plupart des unités militaires.
+        farganiteArrows:
+          name: Flèches en farganite
+          desc: La pointe bleue des flèches donne l'impression qu'elles sont magiques.
+        simpleBowstring:
+          name: Corde à arc simple
+          desc: Un composant crucial de tout arc, qui donne la tension nécessaire
+            pour propulser les flèches.
+        kelpDriftNet:
+          desc: Un filet dérivant immensément grand, fait à partir de varech sous-marin.
+          name: Filet dérivant en varech
+      tailoring:
+        hideScraps:
+          desc: Des bouts de cuir abîmé qui pourraient être assemblés en quelque chose
+            d'utilisable.
+          name: Chutes de cuir
+        basicHide:
+          desc: Un matériau naturel connu pour sa durabilité et sa texture unique.
+          name: Peau basique
+        linenCloth:
+          desc: Un morceau de tissu basique, souvent utilisé par les apprentis couturier
+            pour faire des vêtements.
+          name: Tissu en lin
+        basicLeather:
+          name: Cuir basique
+          desc: Un bout de cuir prêt à être transformé en quelque chose d'utile.
+        qualityLeather:
+          name: Cuir de qualité
+          desc: Un cuir de haute qualité, utilisé pour des objets de bonne facture.
+        elderHideScraps:
+          name: Chutes de peau ancienne
+          desc: Des bouts de peau ancienne abîmée qui pourraient être assemblés en
+            quelque chose d'utilisable par un expert.
+        elderHide:
+          name: Peau ancienne
+          desc: La peau d'une bête majestueuse.
+        elderhideLeather:
+          name: Cuir de peau ancienne
+          desc: Matériau flexible, tanné pour mieux se conserver.
   looted:
     equipmentSets:
       dimensional:
@@ -926,14 +1036,20 @@ singulars:
       woodFragment:
         name: Fragment de bois
         desc: Des chutes de bois d'une grande qualité
+      bambooPlank:
+        desc: Bien que ça ait pris du temps, la planche flexible a été transformée
+          en élément structurel.
+        name: Planche de bambou
+      elmPlank:
+        name: Planche d'orme
+        desc: Une planche d'orme, utile pour fabriquer un arc.
     cooking:
       milk:
         desc: Directement issu de la vache, de la chèvre ou du chameau. Ou pressé
           à partir de quelques noix ? Vous seul savez où vous avez trouvé cela.
         name: Lait
       salt:
-        desc: Chaque grain est un fragment d'océans oubliés, doté du pouvoir de purifier,
-          de protéger et d'ajouter une touche d'enchantement à n'importe quel plat.
+        desc: Le sel est l'exhausteur de goût le plus utilisé d'Arenum.
         name: Sel
       honey:
         name: Rayon de miel
@@ -1065,6 +1181,18 @@ singulars:
         desc: Un morceau d'herbe verte luxuriante.
       pepper:
         name: Poivre
+        desc: Des grains de poivre ronds non-broyés.
+      milkweed:
+        desc: Une plante à fleurs connue pour sa sève riche. Les papillons et les
+          chenilles l'adorent !
+        name: Asclépiades
+      mud:
+        name: Boue
+        desc: Un peu de boue humide et gluante. Vous aurez beau faire attention, vous
+          allez vous salir.
+      wildRice:
+        name: Riz sauvage
+        desc: Un type d'herbe sauvage qui produit des grains comestibles.
     mining:
       coal:
         desc: Modeste et humble, le charbon témoigne de sa praticité en tant que ressource
@@ -1237,8 +1365,7 @@ singulars:
           métallique et sa polyvalence pour diverses applications.
         name: Lingot de cuivre
       farganiteBar:
-        desc: Avec sa nuance de bleu entre la mer et le ciel, elle semble fraîche
-          même lorsqu'elle est chaude et prête à être travaillé.
+        desc: Un lingot d'un bleu vif.
         name: Lingot de farganite
       ironBar:
         desc: Lourde et inébranlable, elle témoigne de la force du noyau terrestre.
@@ -1256,12 +1383,21 @@ singulars:
         desc: Des chutes de métal de mauvaise qualité
       hydriliumBar:
         name: Lingot d'Hydrilium
+        desc: Le lingot d'hydrilium est vert pâle.
       metalShaving:
         name: Copeaux de métal
         desc: Des chutes de métal de qualité moyenne
       metalFragment:
         name: Fragment de métal
         desc: Des chutes de métal d'une grande qualité
+      goldBar:
+        desc: Que vous utilisiez des pépites ou du minerai, le lingot d'or atteint
+          la pureté minimum de 8 carats requise par la Joaillerie.
+        name: Lingot d'or
+      silverBar:
+        name: Lingot d'argent
+        desc: Que vous utilisiez des pépites ou du minerai, le lingot d'argent atteint
+          la pureté standard pour l'argent de 92,5%.
     woodcutting:
       birchLogs:
         desc: Lisses et pâles, les bûches de bouleau dégagent une simplicité élégante.
@@ -1340,7 +1476,7 @@ singulars:
       unidentifiedRemains:
         name: Restes non identifiés
         desc: La Guilde des Aventuriers apprécierait si tu pouvais leur ramener ces
-          ossements, cela pourra peut être les aider à résoudre une affaire non résolue.
+          ossements, cela pourra peut-être les aider à résoudre une affaire non résolue.
       glacierMap:
         name: Mystérieuse carte du nord
         desc: La partie nord de la Jarvonie est distinguable sur la carte. Il y a
@@ -1351,14 +1487,18 @@ singulars:
         desc: Jeu de lettres, neuf lettres, commence par un C.
       nameTag:
         name: Pendentif gravé
-        desc: Un collier avec un pendentif portant le nom d'un aventurier parti depuis
-          longtemps gravé dessus. La Guilde des Aventuriers pourrait être intéressée
+        desc: Un collier avec un pendentif portant le nom d'un aventurier disparu
+          depuis longtemps gravé dessus. La Guilde des Aventuriers pourrait être intéressée
           par ceci.
       adventurersPin:
         name: Pins en émail de l'aventurier
-        desc: Un pins avec le symbole de la Guilde des Aventuriers émaillé dessus.
-          C'est un peu rouillé mais il brille toujours. La Guilde des Aventuriers
-          apprécierait si tu pouvais leur rendre ceci.
+        desc: Un pins avec le symbole de la Guilde des Aventuriers dessus. Il est
+          un peu rouillé mais il brille toujours. La Guilde des Aventuriers apprécierait
+          si tu pouvais leur rendre ceci.
+      invasiveSpeciesTag:
+        name: Plaquette d'espèce invasive
+        desc: Une plaquette en métal avec la représentation de la gueule d'une créature
+          semblable à un ver.
     crafting:
       rope:
         name: Corde
@@ -1367,8 +1507,84 @@ singulars:
       hydrilium:
         name: Hydrilium
         desc: Cet étrange matériau est fabriqué en combinant des roches volcaniques
-          avec des laminaires dans l'atelier de la marée.
+          avec du varech dans l'atelier de la marée.
       kelpRope:
         name: Corde de varech
         desc: De longs morceaux de varech enroulés et attachés ensemble pour en faire
           une corde.
+      elderhideRope:
+        desc: Un corde résistante faite à partie de peau ancienne.
+        name: Corde en peau ancienne
+    hunting:
+      bones:
+        desc: Plusieurs os.
+        name: Os
+      lizardTail:
+        desc: Une queue dont un lézard s'est débarrassé pour pouvoir s'enfuir.
+        name: Queue de lézard
+      animalFur:
+        name: Fourrure d'animal
+        desc: Cette pièce de fourrure est douce au toucher et très chaude lorsqu'elle
+          est utilisée pour créer des vêtements.
+      animalMeat:
+        name: Viande d'animal
+        desc: Une pièce de viande fraîche, prête à être cuite, séchée ou salée.
+      sinew:
+        name: Tendon
+        desc: Tissu fibreux connectant les os aux muscles.
+      feather:
+        name: Plume
+        desc: La plume magnifique, légère et aérodynamique d'un oiseau.
+      darkfeather:
+        name: Plume foncée
+        desc: Plume foncée provenant d'un corbeau, d'une corneille ou d'un autre oiseau
+          noir.
+    trinketry:
+      luckyRabbitFootTrinket:
+        desc: Le bibelot patte de lapin brille à la lumière. Il sera utile pour créer
+          une amulette un jour.
+        name: Bibelot patte de lapin
+      eelTrinket:
+        desc: Le bibelot anguille brille à la lumière. Il sera utile pour créer une
+          amulette un jour.
+        name: Bibelot anguille
+      batTrinket:
+        desc: Le bibelot chauve-souris brille à la lumière. Il sera utile pour créer
+          une amulette un jour.
+        name: Bibelot chauve-souris
+      measuringSpoonsTrinket:
+        name: Bibelot cuillère à doser
+        desc: Le bibelot cuillère à doser brille à la lumière. Il sera utile pour
+          créer une amulette un jour.
+      coolingIceTrinket:
+        desc: Le bibelot stalactite gelé brille à la lumière. Il sera utile pour créer
+          une amulette un jour.
+        name: Bibelot stalactite gelé
+      circularRootTrinket:
+        name: Bibelot racine circulaire
+        desc: Le bibelot racine circulaire brille à la lumière. Il sera utile pour
+          créer une amulette un jour.
+      sharkToothTrinket:
+        name: Bibelot dent de requin
+        desc: Le bibelot dent de requin brille à la lumière. Il sera utile pour créer
+          une amulette un jour.
+      beaverTrinket:
+        name: Bibelot castor
+        desc: Le bibelot castor brille à la lumière. Il sera utile pour créer une
+          amulette un jour.
+      heronTrinket:
+        name: Bibelot héron
+        desc: Le bibelot héron brille à la lumière. Il sera utile pour créer une amulette
+          un jour.
+      shrimpTrinket:
+        name: Bibelot crevette
+        desc: Le bibelot crevette brille à la lumière. Il sera utile pour créer une
+          amulette un jour.
+      compassTrinket:
+        name: Bibelot compas
+        desc: Le bibelot compas brille à la lumière. Il sera utile pour créer une
+          amulette un jour.
+    tailoring:
+      aerodynamicThread:
+        name: Fil aérodynamique
+        desc: Un fil rare, connu pour être léger mais très résistant.
