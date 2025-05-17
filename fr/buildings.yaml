@@ -8,6 +8,7 @@ maps:
     talk: Parler
     withdraw: Retirer
     'barber': Coiffeur
+    'buySpecial': Achat spécial
   buildingTypes:
     animalShelter: Refuge pour animaux
     bank: Banque
@@ -21,6 +22,7 @@ maps:
     'barber': Coiffeur
     'clothingShop': Boutique de vêtements
     'outpost': Avant-poste
+    'activityShop': Boutique d'Activité
 singulars:
   buildings:
     gdte:
@@ -50,6 +52,7 @@ singulars:
           dans un coin, à côté de l'âtre, et plusieurs grenouilles semblent s'y amuser.
           Un ménestrel joue une douce mélodie sur un instrument étrange, qui ressemble
           à une guitare, mais avec de l'eau à l'intérieur.
+        name: À la Petite Mousse
       fishMarketStall:
         desc: Une femme souriante semble tenir l'étal de pêche, une quantité débordante
           de gros poissons et de morceaux de poissons reposant sur de la glace. Il
@@ -73,8 +76,23 @@ singulars:
           étant disposés dans un ordre apparemment particulier. Quelques lanternes
           sont suspendues au sommet de l'étal, d'autres outils pendent au-dessus de
           la tête du marchand au bout de cordes soigneusement nouées et dans des paniers.
+        name: Étal aux Outils
       bogAndBlade:
         name: Machette et Marais
+        desc: Machette et Marais propose un service haut de gamme à Salstuaire. Les
+          coiffeurs y proposent des coupes d'expert, accompagnées d'une pointe d'humour.
+          Détendez-vous dans les chaises confortables et profitez d'une tasse de thé
+          pendant que vos cheveux se font chouchouter.
+      mossyMerchantsBreezeMart:
+        name: Marché de la Brise du Marchand Mousseux
+        desc: Le Marché de la Brise du Marchand Mousseux a plusieurs fenêtres ouvertes,
+          faisant circuler une brise fraîche qui porte les bruits de l'extérieur.
+          Les nombreuses étagères sont remplies d'objets uniques et intéressants.
+      quagmireCouture:
+        name: Couture Bourbeuse
+        desc: Couture Bourbeuse est une boutique de mode à Salstuaire qui est spécialiste
+          des vêtements sur le thème des marais. Cherchez votre bonheur parmi une
+          collection d'habits parfaits en toute occasion.
     jarvonia:
       bigloo:
         desc: Bigloo, un igloo étonnamment spacieux, abrite une collection éclectique
@@ -145,12 +163,66 @@ singulars:
           tailler votre barbe avec précision. Les murs sont décorés soigneusement,
           tandis que l'air est empli d'une odeur rafraîchissante de pin.
       notAShop:
-        name: Not a Shop
+        name: Not a Boutique
+        desc: Un étrange bâtiment se démarque du reste du village. Lorsqu'ils y entrent,
+          les visiteurs sont accueillis avec un pot de salmiakki. Une bannière où
+          l'on peut lire "WalkScape" est accrochée au mur, bien que sa signification
+          reste un mystère. L'intérieur semble être un bureau, équipé d'un tableau
+          Kanban, d'un bureau assis-debout et d'un tapis de marche flambant neuf de
+          la Forge-Tempête.
       tundraTrends:
         name: Tendances Toundra
+        desc: Tendances Toundra offre les dernières collections hiver, avec une touche
+          amusante. Essayez donc ces écharpes aux couleurs vibrantes, ces chapeaux
+          amusants et ces manteaux colorés qui vous rendront unique dans ce paysage
+          enneigé.
+      hornOfRespiteOutpost:
+        desc: L'avant-poste de la Guilde des Aventuriers est un endroit où les aventuriers
+          se rassemblent pour partager des histoires, chercher des conseils et se
+          préparer pour leur prochain voyage. Les murs sont décorés de cartes, d'armes
+          et de trophées provenant d'anciennes expéditions.
+        name: Avant-poste de la Guilde des Aventuriers
     syrenthia:
       vastalumeClothingShop:
         desc: Beaucoup de Syrenthiens préfèrent les tenues faites de coquillages,
           de fait cet endroit est presque désert. On peut y trouver des tenues et
           quelques bouts de tissus. La plupart des visiteurs viennent ici pour la
           célèbre robe de danse meréenne.
+        name: La Mode à Portée de Nageoire
+      vastalumeSpecializedStore:
+        name: Sous les Flots
+        desc: "Un blason de Syrenthia est placé juste à l'entrée, signalant que seules
+          les personnes auxquelles les Syrenthiens font confiance sont autorisées
+          à entrer. On y trouve de tout : une zone de repos, des outils sur les murs
+          et même un bonsaï sous-marin."
+      throneOfTheNeverdrown:
+        name: Trône des Jamais-Noyés
+        desc: Un garde pieuvre observateur garde l'entrée. Un tapis bleu roi mène
+          au trône, qui est décoré de plusieurs tentacules en mouvement. La pièce
+          du trône a une ambiance très étrange, et vous avez l'impression que même
+          le crabe inoffensif vous regarde.
+      casbrantsSunkenShip:
+        name: Vaisseau Coulé de Casbrant
+        desc: Le grand mât du navire est complètement brisé. L'épave est pleine de
+          trous et de planches brisées, d'où s'échappent plein de petites bulles.
+          Vous avez l'impression qu'une autre présence est ici, observant et patientant.
+      vastalumeBank:
+        name: Banque de Thalassa les Flots
+        desc: Un grand serpent d'un jaune vif serpente sur le sol plein de sable.
+          Une porte circulaire avec un trou de serrure énorme, menant au coffre, se
+          trouve encastrée dans un des murs rocheux sous-marins.
+      vastalumeGeneralStore:
+        name: Ancre Coulée
+        desc: Une ancre rouillée est posée sur le sable. Quelques étagères et tonneaux
+          de biens se trouvent dans la petite boutique. Des bulles sortent des trous
+          et fissures dans les murs. Vous pensez reconnaître les montagnes visibles
+          sur la peinture accrochée au mur.
+      vastalumeBarber:
+        desc: Le salon de coiffure bien organisé dispose de plusieurs sièges. Le flot
+          constant de clients laisse à penser qu'il s'agit d'un endroit populaire
+          pour se faire couper les cheveux à Vastalume.
+      vastalumeTavern:
+        name: Perle de la Mer
+        desc: Le sol est recouvert de sable. Derrière le bar, une pieuvre orange prépare
+          des cocktails et rempli des verres. Dans un coin de la pièce se trouve une
+          perle plus grosse que tout ce que vous avez pu voir.
