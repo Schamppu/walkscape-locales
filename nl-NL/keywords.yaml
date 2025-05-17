@@ -23,7 +23,7 @@ singulars:
   materials:
     fish:
       name: Vis
-      requirement: Vereist een vis.
+      requirement: Vereist een <object id="fish" />.
       requirementLevel: Vereist een vis welke op z'n minst <keywordRequirements />
         vereist.
     logs:
@@ -33,31 +33,31 @@ singulars:
         in zijn vereisten.
     plant:
       name: Plant
-      requirement: Vereist een plant.
+      requirement: Vereist een <object id="plant" />.
       requirementLevel: Vereist een plant welke op z'n minst <keywordRequirements
         /> vereist.
     ore:
       name: Erts
-      requirement: Vereist erts.
+      requirement: Vereist <object id="ore" />.
       requirementLevel: Vereist erts welke op z'n minst <keywordRequirements /> vereist.
     bar:
       name: Staaf
-      requirement: Vereist een staaf.
+      requirement: Vereist een <object id="bar" />.
       requirementLevel: Vereist een staaf welke op z'n minst <keywordRequirements
         /> vereist.
     plank:
       name: Plank
-      requirement: Vereist een plank.
+      requirement: Vereist een <object id="plank" />.
       requirementLevel: Vereist een plank welke op z'n minst <keywordRequirements
         /> vereist.
     gem:
       name: Juweel
-      requirement: Vereist een juweel.
+      requirement: Vereist een <object id="gem" />.
       requirementLevel: Vereist een juweel welke op z'n minst <keywordRequirements
         /> vereist.
     mushroom:
       name: Paddenstoel
-      requirement: Vereist een paddenstoel.
+      requirement: Vereist een <object id="mushroom" />.
       requirementLevel: Vereist een paddenstoel welke op z'n minst <keywordRequirements
         /> vereist.
     nugget:
@@ -65,7 +65,7 @@ singulars:
       name: Klompje
   tools:
     ruler:
-      requirement: Vereist een liniaal.
+      requirement: Vereist het dragen van een <object id="ruler" />.
       name: Liniaal
       requirementLevel: Vereist een liniaal welke op z'n minst <keywordRequirements
         /> vereist.
@@ -83,12 +83,12 @@ singulars:
       requirementLevel: Vereist timmergereedschap welke op z'n minst <keywordRequirements
         /> vereist.
       name: Timmergereedschap
-      requirement: Vereist het dragen van timmergereedschap.
+      requirement: Vereist het dragen van een <object id="carpentryTool" />.
     knife:
       requirementLevel: Vereist een mes welke op z'n minst <keywordRequirements />
         vereist.
       name: Mes
-      requirement: Vereist een mes.
+      requirement: Vereist het dragen van een <object id="knife" />.
     sickle:
       requirementLevel: Vereist een sikkel welke op z'n minst <keywordRequirements
         /> vereist.
@@ -201,12 +201,12 @@ singulars:
         /> vereist.
     localMap:
       name: Lokale kaart
-      requirement: Vereist een lokale kaart.
+      requirement: Vereist het dragen van een <object id="localMap" />.
       requirementLevel: Vereist een lokale kaart welke op z'n minst <keywordRequirements
         /> vereist.
     wrench:
       name: Moersleutel
-      requirement: Vereist een moersleutel.
+      requirement: Vereist het dragen van een <object id="wrench" />.
       requirementLevel: Vereist een moersleutel welke op z'n minst <keywordRequirements
         /> vereist.
     foragingTool:
@@ -215,7 +215,7 @@ singulars:
         /> in zijn vereisten.
       name: Verzamelgereedschap
     logSplitter:
-      requirement: Vereist een hout splijter.
+      requirement: Vereist het dragen van een <object id="item_log_splitter" />.
       name: Hout Splijter
     fishingTool:
       name: Visgerei
@@ -255,6 +255,10 @@ singulars:
         /> in zijn vereisten.
     huntingBow:
       name: Jachtboog
+      requirement: Vereist uitgerust te zijn met een <object id="huntingBow" />.
+    skillBook:
+      name: Vaardigheidsboek
+      requirement: Vereist uitgerust te zijn met een <object id="skillBook" />.
   recipes:
     skills:
       cooking:
@@ -346,10 +350,10 @@ singulars:
       requirementLevel: Vereist een gebakken vis welke op z'n minst <keywordRequirements
         /> heeft.
       name: Gebakken vis
-      requirement: Vereist een gebakken vis.
+      requirement: Vereist een <object id="cookedFish" />.
     food:
       name: Voedsel
-      requirement: Vereist voedsel.
+      requirement: Vereist <object id="food" />.
 consumables:
   cookedFish:
     name: Gekookte vis
