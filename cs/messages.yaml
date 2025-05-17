@@ -20,3 +20,153 @@ singulars:
     saveUnsuccesfullLootTables:
       text: Loot table contains row(s) that don't have an item associated with it.
       title: Uložení se nezdařilo.
+    stepsNotCountedRealTime:
+      textIOS: Při použití jiného zdroje než <icon i="Phone small" /> <c>Telefon</c>
+        jako zdroj kroků, kroky se nepočítají v reálném čase. V závislosti na vašem
+        nositelném zařízení může být nutné synchronizovat kroky ručně z jiné aplikace
+        nebo otevřít Apple Health a synchronizovat kroky do hry. Tato zpráva zmizí
+        po synchronizaci alespoň <c>5000</c> kroků z nositelného zařízení. Na <icon
+        i="Phone small" /> <c>Telefon</c> jako zdroj kroků můžete změnit v <c>Nastavení</c>.
+      title: Kroky se nepočítají v reálném čase
+    comingSoon:
+      title: Již brzy
+      text: Tento obsah <hl>není k dispozici</hl>v aktuální verzi WalkScape.
+    disabled:
+      text: Tato funkce byla <hl>dočasně deaktivována</hl>. Více informací naleznete
+        na Portalu, Redditu nebo Discordu.
+  info:
+    game:
+      importGearSetFailed:
+        title: Vložení sady vybavení se nezdařilo
+      changingActivityFailed:
+        title: Aktivitu se nepodařilo změnit
+        text: Aktivitu se nepodařilo změnit. Buď ji již provádíte, nebo není k dispozici.
+      withdrawZero:
+        title: Výběr se nezdařil
+        text: Nemůžete vybrat nulu nebo méně položek.
+      withdrawTooFew:
+        title: Výběr se nezdařil
+        text: Nemáte dostatek položek k výběru.
+      withdrawDidNotExist:
+        title: Výběr se nezdařil
+        text: Položka, kterou jste se pokusili vybrat neexistuje. Znovuotevření banky
+          by měl tento problém vyřešit.
+      withdrawFailed:
+        title: Výběr se nezdařil
+        text: Výběr se nezdařil. Zkuste to prosím znovu.
+      equipGearSetSomeFailed:
+        text: Některé předměty ze sady výbavy nebylo možné nasadit. Sada výbavy může
+          být neplatná nebo jste nesplnili požadavky pro nasazení některých předmětů.
+      equipGearSetFailed:
+        title: Nepodařilo se nasadit výbavu
+        text: Nepodařilo se nasadit sadu vybavení, kterou jste se pokusili nasadit,
+          je pravděpodobně neplatné nebo poškozené.
+      equipGearFailed:
+        title: Předmět se nepodařilo nasadit
+        text: Předmět se nepodařilo nasadit. Zkuste to prosím znovu.
+  errors:
+    characterValidation:
+      nameContainsSpecialCharacters: Název postavy obsahuje speciální znaky. Povoleny
+        jsou pouze písmena, číslice a mezery.
+      nameTooShort: Jméno postavy musí mít alespoň 3 písmena.
+      nameTooShortWithSpacesRemoved: Po odstranění mezer musí být jméno postavy delší
+        než tři písmena.
+      nameContainsleadingTrailingSpaces: Mezery na začátku nebo na konci nejsou povoleny.
+      nameContaintsConsecutiveSpaces: Po sobě jdoucí mezery nejsou povoleny.
+    fatalError:
+      error: Omlouváme se za chybu. Nezapomeňte, že hra je uzavřená beta verze. Všichni
+        uložení hráči jsou denně zálohovány do cloudu.
+    gameError:
+      initializingGameFailed:
+        text: Herní klient se nepodařilo inicializovat. Nahlaste to prosím vývojářům
+          na Discordu s podrobnostmi o vaší chybě a zařízení. Můžete také zkusit hru
+          znovu otevřít a zjistit, zda se hra úspěšně načte.
+        title: Inicializace hry se nezdařila
+      stepLoadingFailed:
+        title: Kroky se nepodařilo načíst
+        text: Hernímu klientovi se nepodařilo načíst kroky. Nahlaste to prosím vývojářům
+          na Discordu s podrobnostmi o vaší chybě a zařízení. Můžete také zkusit hru
+          znovu otevřít a zjistit, zda se kroky úspěšně načtou.
+      loadingPlayerFailed:
+        text: Neplatná data hráče. Načítání se nezdařilo. Kontaktujte prosím vývojáře
+          přes Discord nebo e-mailem.
+        title: Načtení hráče se nezdařilo
+    serverError:
+      unknownError:
+        text: Neznámá chyba.
+        title: Neznámá chyba.
+      noClosedBetaAccess:
+        text: Váš přístup k <c i=0>WalkScape uzavřené bety platnost vypršela. Přístup
+          můžete znovu získat přihlášením do uzavřené bety a přijetím v budoucí vlně,
+          nebo okamžitě podporou hry na <c i=1>Patreonu</c> nebo <c i=1>Buy Me a Coffee</c>.\n\nPokud
+          se rozhodnete hru podpořit, propojte svůj Patreon nebo Buy Me a Coffee na
+          <c i=1>stránce účtu WalkScape Portal</c>, abyste znovu získali přístup ke
+          hře. Můžete také <c i=1>požádat o přístup k betě</c> ze stránky účtu.
+        title: Platnost uzavřeného přístupu k beta verzi vypršela
+      connectionError:
+        text: Došlo k chybě při připojování k serveru. Zkontrolujte prosím připojení
+          k internetu a zkuste to znovu.
+        title: Chyba připojení
+      newUpdate:
+        text: Hra byla aktualizována. Restartujte hru a stáhněte si novou aktualizaci.
+        title: Nová aktualizace
+      failureToUpdateContent:
+        text: Hernímu klientovi se nepodařilo aktualizovat obsah. Nahlaste to prosím
+          vývojářům na Discordu s podrobnostmi o vaší chybě a zařízení. Můžete také
+          zkusit hru znovu otevřít a zjistit, zda se obsah úspěšně stáhne.
+        title: Aktualizace obsahu se nezdařila
+      newClientUpdate:
+        title: K dispozici nová aktualizace klienta
+        text: Vaše hra je zastaralá a je k dispozici nová verze hry. Pro pokračování
+          ve hraní si prosím stáhněte nejnovější verzi hry.
+      invalidSession:
+        text: Vaše relace je neplatná. Znovu otevřete hru a znovu se přihlaste.
+        title: Neplatná relace
+      noInternetConnection:
+        title: Nepodařilo se připojit k serveru WalkScape
+        text: Navázání připojení k serveru WalkScape se nezdařilo. To může znamenat,
+          že nemáte připojení k internetu, server je nefunkční nebo připojení blokuje
+          firewall. Zkontrolujte prosím připojení k internetu a zkuste to znovu.
+      bannedUser:
+        title: Byl vám trvale zakázán přístup do WalkScape
+        text: Byl vám trvale zakázán přístup do WalkScape. Pokud se domníváte, že
+          se jedná o chybu a chcete se proti rozhodnutí odvolat, můžete nás kontaktovat
+          zasláním e-mailu na adresu <ci=1>contact@walkscape.app</c>.
+      unauthorized:
+        title: Neautorizovaný
+        text: Nemáte oprávnění. Přihlaste se prosím znovu.
+      serverOffline:
+        title: Server WalkScape je mimo provoz
+        text: Herní server je momentálně mimo provoz. Může to být způsobeno údržbou
+          nebo problémem s herním serverem. Zkuste to prosím znovu později.
+      serverMaintenance:
+        title: WalkScape aktuálně provádí údržbu serveru
+        text: WalkScape aktuálně provádí údržbu serveru. Zkuste to znovu později.
+    activityCancelled:
+      title: Aktivita zrušena
+      stepsAreInfinite: Aktuální aktivita byla zrušena, protože již nesplňujete požadavky
+        pro její dokončení.
+  confirmations:
+    changingStepSource:
+      text: Změna zdroje kroků může vést ke ztrátě kroků, které jste dosud nesynchronizovali.
+        Před změnou zdroje se ujistěte, že jsou vaše kroky synchronizované.
+      title: Změnit zdroj kroku?
+      lastSyncText: Kroky naposledy synchronizovány v {time}.
+      neverSyncedText: Kroky nebyly synchronizovány.
+  popups:
+    inactiveSteps:
+      stepsWhileInactive: Kroky získané během neaktivní hry.
+    achievementUnlocked:
+      achievementUnlocked: '{achievement} úspěch odemčený'
+      requirements: Požadavky
+      rewards: Odměny
+      achievementPoints: '{points} bodů úspěchu'
+    idleSteps:
+      stepsWhileAway: Získané kroky během doby, kdy byla hra zavřena
+      whileYouWereAway: Zatímco jsi byl pryč...
+      nothingHappened: Nic pozoruhodného se nestalo.
+    characterLevelUp:
+      characterLevelUp: Jsi o úroveň výš
+      noNewUnlocks: Pro tuto úroveň nejsou k dispozici žádné nové odemykatelné položky.
+    skillLevel:
+      skillLevelUp: skillName} nová úroveň
