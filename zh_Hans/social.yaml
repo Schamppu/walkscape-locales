@@ -5,6 +5,10 @@ singulars:
     inviteReceived: 您收到了好友申请
     none: 社交
     friends: 你们已是朋友
+    party:
+      member: 成员
+      admin: 管理员
+      owner: 所有者
   actions:
     buttonLabels:
       removeFriend: 移除好友
@@ -15,15 +19,50 @@ singulars:
         reject: 拒绝
         block: 屏蔽
       cancelInvite: 撤销此好友申请
+      createParty: 创建队伍
+      leaveAndDestroyParty: 退出并解散队伍
+      leaveParty: 退出队伍
     confirmTitle:
       unblock: 取消屏蔽用户
       inviteResponse:
         block: 屏蔽用户
+      changeRole: 更改权限
     confirmDescription:
       removeFriend: 确定要移除该好友吗？
       unblock: 确定要取消屏蔽该用户吗？
       cancelInvite: 确定要撤销此好友申请吗？
       inviteResponse:
         block: 确定要屏蔽此用户吗？被屏蔽的用户将无法再向您发送好友申请。
+      leaveAndDestroyParty: 你确定要退出并解散队伍吗？此操作无法撤销。
+      changeRole: 你确定要将 <hl>{characterName}</hl> 设置为 <hl>{partyRole}</hl>?
+      leaveParty: 你确定要退出队伍吗？
   status:
     loadingInvites: 检查好友申请...
+  party:
+    manage: 管理
+    role: 角色
+  createParty:
+    input:
+      partyName: 队伍名称
+      catchphrase: 口号
+      catchphraseHint: 口号（可选）
+    rules:
+      mayContain: <bp />可能包含：{list}
+      noTrailingSpaces: <bp />不能以空格开头或结尾
+plurals:
+  createParty:
+    rules:
+      minChar:
+        one: <bp />最少 {} 个字符
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />最少 {} 个字符
+      maxChar:
+        one: <bp />最多 {} 个字符
+        other: <bp />最多 {} 个字符
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
