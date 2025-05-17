@@ -2,9 +2,17 @@ singulars:
   activities:
     woodcuttingTrees:
       name: Dřevorubectví
-      requirement: Vyžaduje činnost dřevorubectví.
+      requirement: Vyžaduje aktivitu <object id="woodcuttingTrees" />.
       requirementLevel: Vyžaduje činnost dřevorubectví, která má v požadavcích alespoň
         <keywordRequirements />.
+    fishing:
+      name: Rybolov
+      requirement: Vyžaduje aktivitu <object id="activity_fishing" />.
+    miningOres:
+      requirement: Vyžaduje aktivitu <object id="activity_mining" />.
+      name: Těžba rud
+    foragingPlants:
+      requirement: Vyžaduje aktivitu <object id="activity_foraging" />.
   consumables:
     alcohol:
       name: Alkohol
@@ -59,7 +67,7 @@ singulars:
       requirementLevel: Vyžaduje síťku na lov hmyzu, která má v požadavcích alespoň
         <keywordRequirements />.
     climbing:
-      name: Horolezecké nářadí
+      name: Horolezecké vybavení
       requirement: Vyžaduje horolezecké nářadí.
       requirementLevel: Vyžaduje horolezecké nářadí, které má v požadavcích alespoň
         <keywordRequirements />.
@@ -83,6 +91,25 @@ singulars:
       requirement: Vyžaduje lyže.
       requirementLevel: Vyžaduje lyže, které mají v požadavcích alespoň <keywordRequirements
         />.
+    basket:
+      name: Košík
+    arrows:
+      requirement: Vyžaduje vybavení <object id="arrows" />.
+      name: Šípy
+    socks:
+      name: Ponožky
+    ring:
+      name: Prsten
+    underwater:
+      requirement: Vyžaduje vybavení <object id="item_underwater" />.
+    weapon:
+      name: Zbraň
+      requirement: Vyžaduje vybavení <object id="weapon" />.
+    shield:
+      name: Štít
+      requirement: Vyžaduje vybavení <object id="shield" />.
+    amulet:
+      name: Amulet
   general:
     fuel:
       name: Palivo
@@ -139,47 +166,47 @@ singulars:
   tools:
     carpentryTool:
       name: Tesařský nástroj
-      requirement: Vyžaduje tesařský nástroj.
+      requirement: Vyžaduje vybavení <object id="carpentryTool" />.
       requirementLevel: Vyžaduje tesařský nástroj, který má v požadavcích alespoň
         <keywordRequirements />.
     chisel:
       name: Dláto
-      requirement: Vyžaduje dláto.
+      requirement: Vyžaduje vybavení <object id="chisel" />.
       requirementLevel: Vyžaduje dláto, který má v požadavcích alespoň <keywordRequirements
         />.
     cookingKnife:
       name: Nůž na vaření
-      requirement: Vyžaduje nůž na vaření.
+      requirement: Vyžaduje vybavení <object id="cookingKnife" />.
       requirementLevel: Vyžaduje nůž na vaření, který má v požadavcích alespoň <keywordRequirements
         />.
     cookingPan:
       name: Pánev na vaření
-      requirement: Vyžaduje pánev na vaření.
+      requirement: Vyžaduje vybavení <object id="cookingPan" />.
       requirementLevel: Vyžaduje pánev na vaření, která má v požadavcích alespoň <keywordRequirements
         />.
     cookingPot:
       name: Hrnec na vaření
-      requirement: Vyžaduje hrnec na vaření.
+      requirement: Vyžaduje vybavení <object id="cookingPot" />.
       requirementLevel: Vyžaduje hrnec na vaření, který má v požadavcích alespoň <keywordRequirements
         />.
     cookingSpices:
       name: Koření
-      requirement: Vyžaduje koření.
+      requirement: Vyžaduje vybavení <object id="cookingSpices" />.
       requirementLevel: Vyžaduje koření, které má v požadavcích alespoň <keywordRequirements
         />.
     cookingTool:
       name: Nástroj na vaření
-      requirement: Vyžaduje nástroj na vaření.
+      requirement: Vyžaduje vybavení <object id="cookingTool" />.
       requirementLevel: Vyžaduje nástroj na vaření, který má v požadavcích alespoň
         <keywordRequirements />.
     craftingTool:
       name: Řemeslný nástroj
-      requirement: Vyžaduje řemeslný nástroj.
+      requirement: Vyžaduje vybavení <object id="craftingTool" />.
       requirementLevel: Vyžaduje řemeslný nástroj, který má v požadavcích alespoň
         <keywordRequirements />.
     cuttingBoard:
       name: Prkénko na krájení
-      requirement: Vyžaduje prkénko na krájení.
+      requirement: Vyžaduje vybavení <object id="cuttingBoard" />.
       requirementLevel: Vyžaduje prkénko na krájení, které má v požadavcích alespoň
         <keywordRequirements />.
     fishing:
@@ -189,37 +216,37 @@ singulars:
         <keywordRequirements />.
     fishingCage:
       name: Rybářská klec
-      requirement: Vyžaduje rybářskou klec.
+      requirement: Vyžaduje vybavení <object id="fishingCage" />.
       requirementLevel: Vyžaduje rybářskou klec, která má v požadavcích alespoň <keywordRequirements
         />.
     fishingLure:
       name: Rybářská návnada
-      requirement: Vyžaduje rybářskou návnadu.
+      requirement: Vyžaduje vybavení <object id="fishingLure" />.
       requirementLevel: Vyžaduje rybářskou návnadu, která má v požadavcích alespoň
         <keywordRequirements />.
     fishingNet:
       name: Rybářská síť
-      requirement: Vyžaduje rybářskou síť.
+      requirement: Vyžaduje vybavení <object id="fishingNet" />.
       requirementLevel: Vyžaduje rybářskou síť, která má v požadavcích alespoň <keywordRequirements
         />.
     fishingRod:
       name: Rybářský prut
-      requirement: Vyžaduje rybářský prut.
+      requirement: Vyžaduje vybavení <object id="fishingRod" />.
       requirementLevel: Vyžaduje rybářský prut, který má v požadavcích alespoň <keywordRequirements
         />.
     fishingSpear:
       name: Rybářská harpuna
-      requirement: Vyžaduje rybářskou harpunu.
+      requirement: Vyžaduje vybavení <object id="fishingSpear" />.
       requirementLevel: Vyžaduje rybářskou harpunu, která má v požadavcích alespoň
         <keywordRequirements />.
     foragingTool:
       name: Nástroj pro sběr
-      requirement: Vyžaduje nástroj pro sběr.
+      requirement: Vyžaduje vybavení <object id="foragingTool" />.
       requirementLevel: Vyžaduje nástroj pro sběr, který má v požadavcích alespoň
         <keywordRequirements />.
     goldPan:
       name: Rýžovací pánev
-      requirement: Vyžaduje rýžovací pánev.
+      requirement: Vyžaduje vybavení <object id="goldPan" />.
       requirementLevel: Vyžaduje rýžovací pánev, která má v požadavcích alespoň <keywordRequirements
         />.
     knife:
@@ -239,41 +266,57 @@ singulars:
         <keywordRequirements />.
     magnifyingLense:
       name: Lupa
-      requirement: Vyžaduje lupu.
+      requirement: Vyžaduje vybavení <object id="magnifyingLense" />.
       requirementLevel: Vyžaduje lupu, která má v požadavcích alespoň <keywordRequirements
         />.
     pickaxe:
       name: Krumpáč
-      requirement: Vyžaduje krumpáč.
+      requirement: Vyžaduje vybavení <object id="pickaxe" />.
       requirementLevel: Vyžaduje krumpáč, který má v požadavcích alespoň <keywordRequirements
         />.
     saw:
       name: Pila
-      requirement: Vyžaduje pilu.
+      requirement: Vyžaduje vybavení <object id="saw" />.
       requirementLevel: Vyžaduje pilu, která má v požadavcích alespoň <keywordRequirements
         />.
     screwdriver:
       name: Šroubovák
-      requirement: Vyžaduje šroubovák.
+      requirement: Vyžaduje vybavení <object id="screwdriver" />.
       requirementLevel: Vyžaduje šroubovák, který má v požadavcích alespoň <keywordRequirements
         />.
     sickle:
       name: Srp
-      requirement: Vyžaduje srp.
+      requirement: Vyžaduje vybavení <object id="sickle" />.
       requirementLevel: Vyžaduje srp, který má v požadavcích alespoň <keywordRequirements
         />.
     smithingHammer:
       name: Kovářské kladivo
-      requirement: Vyžaduje kovářské kladivo.
+      requirement: Vyžaduje vybavení <object id="smithingHammer" />.
       requirementLevel: Vyžaduje kovářské kladivo, které má v požadavcích alespoň
         <keywordRequirements />.
     tool:
       name: Nástroj
-      requirement: Vyžaduje nástroj.
+      requirement: Vyžaduje vybavení <object id="tool" />.
       requirementLevel: Vyžaduje nástroj, který má v požadavcích alespoň <keywordRequirements
         />.
     woodcuttingHatchet:
       name: Sekera
-      requirement: Vyžaduje dřevorubeckou sekeru.
+      requirement: Vyžaduje vybavení <object id="woodcuttingHatchet" />.
       requirementLevel: Vyžaduje dřevorubeckou sekeru, která má v požadavcích alespoň
         <keywordRequirements />.
+    fishingTool:
+      name: Rybářský nástroj
+      requirement: Vyžaduje vybavení <object id="fishingTool" />.
+    agilityTool:
+      requirement: Vyžaduje vybavení <object id="agilityTool" />.
+    miningTool:
+      name: Těžební nástroj
+      requirement: Vyžaduje vybavení <object id="miningTool" />.
+  recipes:
+    skills:
+      cooking:
+        name: Recept na vaření
+        requirement: Vyžaduje <object id="recipe_cooking" />.
+    products:
+      sandwich:
+        name: Recept na sendvič
