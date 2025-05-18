@@ -40,8 +40,11 @@ singulars:
         name: Ovocný dort
       jam:
         name: Marmeláda
+        desc: Roztíratelná kombinace ovoce a cukru.
       jellySandwich:
         name: Želé sendvič
+        desc: Sendvič s tlustou vrstvou sladkého želé. Klasika pro všechny věkové
+          kategorie.
       mushroomCurry:
         desc: Aromatická směs koření a hub. Ideální pro pořádné jídlo.
         name: Houbové kari
@@ -66,6 +69,73 @@ singulars:
         name: Zeleninová polévka
       wine:
         name: Víno
+      potato:
+        desc: Brambor, kulatý a zemitý, se skrývá hluboko v zemi jako tajný poklad.
+          Se svou zlatou duší je vždy připravena okouzlit naše jazýčky.
+        name: Brambor
+      troutSoup:
+        desc: Polévka ze pstruha.
+        name: Pstruhová polévka
+      underwaterSalad:
+        name: Vodní salát
+        desc: Tato směs vodní zeleniny je obzvláště osvěžující.
+      sweetCarrotPie:
+        name: Sladký mrkvový koláč
+        desc: Mrkev v koláči, ach jo!
+      egg:
+        name: Vejce
+        desc: Vejce, které se používá v nesčetných receptech od nepaměti.
+      nettleTea:
+        name: Kopřivový čaj
+        desc: Teplý nápoj na chladném místě.
+      chocolateMilk:
+        name: Čokoládové mléko
+      dynamite:
+        name: Dynamit
+        desc: Co je to za svíčky? Di-na-mit! Musí to být z Wrentmarku.
+    cookedFish:
+      cookedPike:
+        desc: Grilovaná nebo na pánvi opečená, vařená štika nabízí lahodnou křehkost
+          a jemnou, lehce sladkou chuť. Je to všestranná ryba pro různé pokrmy.
+        name: Vařená štika
+      cookedSwordfish:
+        desc: Vařený mečoun má mírně sladkou chuť. Často se griluje nebo opéká pro
+          lahodnou kůrku a nejlépe si ho vychutnáváte, když je uvařený do stavu medium-rare.
+        name: Vařený mečoun
+      cookedSquid:
+        desc: Vařená chobotnice je kulinářský zázrak, známý pro svou všestrannost
+          v různých pokrmech. Při správné přípravě může být křehká a chutná.
+        name: Vařené chobotnice
+      cookedShark:
+        desc: Vařený žralok nabízí pevnou texturu a robustní, poněkud intenzivní chuť.
+          Je to všestranná ryba, kterou lze připravit různými způsoby, od grilování
+          až po dušení.
+        name: Vařený žralok
+      cookedAnglerfish:
+        name: Vařený ďas
+        desc: Díky svému křehkému bílému mase a jemně sladké chuti je vařený ďas ceněnou
+          delikatesou. Krásně se hodí k bohatým přílohám a vytváří nezapomenutelný
+          kulinářský zážitek.
+      cookedLobster:
+        name: Vařený humr
+        desc: Vařený humr se svým šťavnatým a chutným masem přináší díky pevnému krunýři
+          a silným klepetům nádech nostalgie. Klasická mořská lahůdka.
+      cookedStingray:
+        name: Vařený rejnok
+        desc: Vařený rejnok je v některých kulturách lahůdkou. Jeho pevná bílá dužina
+          se dá grilovat, smažit nebo dusit. Má jedinečnou chuť, často přirovnávanou
+          k mořským plodům.
+      cookedLargemouthBass:
+        name: Vařený okoun velkoústý
+        desc: Tato ryba s velkými ústy má lahodnou, kalnou chuť, kterou mají rádi
+          většinou pouze obyvatelé bažin.
+      cookedTrout:
+        name: Vařený pstruh
+        desc: Je to pstruh.
+      cookedSalmon:
+        name: Vařený losos
+        desc: Vařený losos je luxusní pochoutkou s máslem. Sametové maso a bohatou
+          chutí. Je oblíbený mezi milovníky mořských plodů.
   containers:
     skilling:
       foraging:
@@ -92,6 +162,12 @@ singulars:
           name: Bronzová lehká přilba
         shoes:
           name: Bronzová obuv
+        shield:
+          desc: Štít.
+          name: Bronzový štít
+        sword:
+          name: Bronzový meč
+          desc: Meč.
       copper:
         chest:
           desc: Vyžaduje značné množství mědi, ale chrání nejdůležitější části těla.
@@ -106,6 +182,12 @@ singulars:
           name: Měděná lehká přilba
         shoes:
           name: Měděné boty
+        shield:
+          name: Měděný štít
+          desc: Lehký štít.
+        sword:
+          name: Měděný meč
+          desc: Lehký meč.
       farganite:
         chest:
           desc: Neproniknutelná pevnost na tvé hrudi, na jejímž modrém blištivém povrchu
@@ -121,6 +203,12 @@ singulars:
           name: Farganitová lehká přilba
         shoes:
           name: Farganitová obuv
+        sword:
+          name: Farganitový meč
+        gemShield:
+          name: Štít z drahokamú
+          desc: Fantasticky lehký štít vykládaný oslnivými drahokamy, které odrážejí
+            zářící světlo.
       iron:
         chest:
           name: Hrudní železná zbroj
@@ -134,6 +222,13 @@ singulars:
           name: Železná lehká přilba
         shoes:
           name: Železné boty
+        shield:
+          desc: Železný štít, který je těžký na zvedání, ale k odolání úderům nepřátel
+            byste nechtěli použít lehký štít.
+          name: Železný štít
+        sword:
+          name: Železný meč
+          desc: Železný meč, základní výzbroj mnoha vojenských jednotek.
       steel:
         chest:
           name: Hrudní ocelová zbroj
@@ -147,6 +242,13 @@ singulars:
           name: Ocelová lehká přilba
         shoes:
           name: Ocelová obuv
+        sword:
+          desc: Lesklý ocelový meč, který je dostatečně ostrý na krájení chleba.
+          name: Ocelový meč
+        shield:
+          name: Ocelový štít
+          desc: Lesklý ocelový štít, který vás ochrání v bitvě, ale také bude dobře
+            vypadat vystavený ve válečné místnosti.
       tarsilium:
         chest:
           name: Hrudní zbroj z Tarsília
@@ -160,10 +262,25 @@ singulars:
           name: Lehká přilba z Tarsília
         shoes:
           name: Obuv z Tarsília
+        shield:
+          name: Tarsiliový štít
+          desc: Černý štít vyrobený z tarsilia je dobrou volbou pro obranu proti úderům
+            a ranám.
+        sword:
+          name: Tarsiliový meč
+          desc: Černý meč, který nikdy nerezaví.
+      basic:
+        woodenShield:
+          name: Dřevěný štít
+          desc: Doufáš, že tě tento jednoduchý štít ochrání.
+        woodenSword:
+          desc: Doufáš, že tě tato jednoduchá hůl ochrání.
+          name: Dřevěný meč
     skilling:
       fishing:
         basicFishingPole:
           name: Základní rybářský prut
+          desc: Víš, co se říká, že špatný den u jezera je lepší než dobrý den v práci.
         fishingSpear:
           name: Rybářský oštěp
         largeFishingNet:
@@ -172,23 +289,47 @@ singulars:
           name: Dubový rybářský prut
         pineFishingRod:
           name: Borovicový rybářský prut
+          desc: Prut s čerstvou vůní, který vydrží i ty nejtěžší ryby.
         smallFishingNet:
           name: Malá rybářská síť
+          desc: Základní síť, skromný nástroj prostého rybáře. Sotva víc než pár kusů
+            lana svázaných dohromady.
+        advancedFishingRod:
+          desc: Pokročilý prut je určen pro použití profesionálními rybáři.
+          name: Pokročilý rybářský prut
+        willowFishingRod:
+          name: Vrbový rybářský prut
+          desc: Rybářský prut vyrobený z vrbového proutí je lehký a měkký na dotek.
+        lobsterPot:
+          name: Humří hrnec
       mining:
         basicPickaxe:
           name: Základní krumpáč
+          desc: Základní krumpáč, skromný hornícký nástroj. Sotva víc než klacek,
+            kámen a pár provázků, které to všechno spojují dohromady.
         bronzePickaxe:
           name: Bronzový krumpáč
+          desc: Bronzový krumpáč rezonuje rustikálním šarmem a neústupnou silou.
         copperPickaxe:
           name: Měděný krumpáč
+          desc: Křehký a slabý krumpáč na těžbu, ale svou práci splní.
         farganitePickaxe:
           name: Farganitový krumpáč
+          desc: Dokonalý odraz odstínů oblohy po celý den, vskutku vzácný krumpáč.
         ironPickaxe:
           name: Železný krumpáč
         steelPickaxe:
           name: Ocelový krumpáč
+          desc: Ocelový krumpáč září odhodláním svého tvůrce, připraven plnit jeho
+            rozkazy.
         tarsiliumPickaxe:
           name: Krumpáč z Tarsília
+        hydriliumPickaxe:
+          name: Krumpáč Hydrilium
+          desc: Krumpáč vyrobený ze vzácného podvodního materiálu zvaného hydrilium.
+        hydriliumMagnet:
+          name: Hydriliový magnet
+          desc: Hornický magnet naplněný hydriliem.
       woodcutting:
         bronzeHatchet:
           desc: Nanejvýš vhodný nástroj pro dřevorubce začátečníky.
@@ -201,10 +342,169 @@ singulars:
           name: Farganitová sekera
         ironHatchet:
           name: Železná sekyra
+          desc: Díky své těžké čepeli slouží jako věrný partner těm, kteří se snaží
+            zkrotit divočinu nebo čelit neznámému dobrodružství.
         steelHatchet:
           name: Ocelová sekyra
+          desc: Ocelová sekera se třpytí odhodláním svého tvůrce, připravena plnit
+            jeho rozkazy.
         tarsiliumHatchet:
           name: Sekyra z Tarsília
+        basicHatchet:
+          desc: Základní sekerka, skromný nástroj lesníků. Sotva víc než klacek, kámen
+            a provázek, který to všechno spojuje dohromady.
+          name: Základní sekera
+        hydriliumHatchet:
+          name: Hydriliová sekera
+          desc: Sekerka vyrobená ze vzácného podvodního materiálu zvaného hydrilium.
+      foraging:
+        steelSickle:
+          name: Ocelový srp
+          desc: Silný a odolný, nabízí spolehlivý výkon pro rozsáhlé shánění potravy.
+        ironSickle:
+          desc: Je robustní a spolehlivý, snadno prořezává tvrdé stonky.
+          name: Železný srp
+        stoneSickle:
+          name: Základní srp
+          desc: Základní nástroj pro sklízení úrody v přírodě. Jeho hrubá hrana není
+            tak účinná.
+        copperSickle:
+          name: Měděný srp
+          desc: Nabízí mírnou účinnost při sekání základních rostlin.
+        hydriliumSickle:
+          name: Hydriliový srp
+          desc: Srp vyrobený ze vzácného podvodního materiálu zvaný hydrilium.
+        mangroveBasket:
+          name: Mangrovový košík
+      hunting:
+        pineBirdhouse:
+          name: Borová ptačí budka
+          desc: Ptačí budka z borovicového dřeva, jejíž hnědý odstín z ní dělá atraktivní
+            domov pro různé druhy ptáků.
+        copperArrows:
+          name: Měděné šípy
+          desc: Horší než tyto jsou jen šípy vyrobené z klacků, ale každý lovec musí
+            někde začít.
+        farganiteArrows:
+          name: Farganitové šípy
+          desc: Modré hroty ve tvaru šipek jim dodávají téměř magický vzhled. Jsou
+            vyrobeny ze slavného farganitu.
+        bambooHuntingBow:
+          desc: Lovecký luk vyrobený z bambusu, rozšířený v oblastech, kde je bambus
+            snadno dostupný. Je velmi lehký a jedná se o přesnou zbraň.
+          name: Bambusový lovecký luk
+        mapleBirdhouse:
+          desc: Javorová ptačí budka má výraznou vůni, která přitahuje ptáky různých
+            velikostí.
+          name: Javorová ptačí budka
+        bronzeArrows:
+          desc: Bronz není ideální materiál pro výrobu zbraní, které musí vydržet,
+            ale pro šípy, jako jsou tyto, funguje docela dobře.
+          name: Bronzové šípy
+        tarsiliumArrows:
+          desc: Černé šípy, oblíbené u drsných temných strážců lesů.
+          name: Tarsilium šípy
+        oakHuntingBow:
+          name: Dubový lovecký luk
+          desc: Lovecký luk vyrobený z dubu, oblíbená volba mezi lovci.
+        mahoganyHuntingBow:
+          name: Mahagonový lovecký luk
+          desc: Tento dobře vyrobený lovecký luk je dobrou zbraní pro zkušeného lovce.
+        spruceBirdhouse:
+          name: Smrková ptačí budka
+          desc: Dobře vyrobená ptačí budka ze smrku, jeho tvar je vhodný pro hnízdění
+            ptáků.
+        ironArrows:
+          name: Železné šípy
+          desc: Základní šípy mnoha jednotek střelecké armády.
+        steelArrows:
+          name: Ocelové šípy
+          desc: Lesklé hroty těchto šípů naznačují jejich ostrost. Nechtěli byste
+            se s takovým píchnout.
+        simpleBowstring:
+          name: Jednoduchá tětiva
+          desc: Klíčová součást luku a šípu, která zajišťuje potřebné napětí pro vystřelení
+            šípu.
+      tailoring:
+        qualityLeather:
+          name: Kvalitní kůže
+          desc: <PLACEHOLDER>
+        basicHide:
+          name: Základní kůže
+          desc: Přírodní materiál známý svou odolností a jedinečnou texturou.
+        linenCloth:
+          desc: Základní kus látky, obvykle používaný začínajícími krejčími k výrobě
+            oděvů.
+          name: Lněné plátno
+        basicLeather:
+          name: Základní kůže
+          desc: Kus kůže, který je připraven k přetvoření v něco užitečnějšího.
+      trinketry:
+        silverStarPearlRing:
+          desc: Stříbrný prsten osazený leštěnou hvězdicovou perlou, který ve světle
+            odhalí svou jemnou krásu.
+          name: Stříbrný perlový prsten s hvězdou
+        goldJadeRing:
+          name: Zlatý nefritový prsten
+          desc: Na tomto propracovaném zlatém prstenu je zdobí tvarovaný nefritový
+            kámen, který vám přinese štěstí a zdraví.
+        cutSunStone:
+          name: Sluneční kámen
+          desc: Nepochází ze slunce, ale vzhledem k záři jeho lesklých, ohnivých barev
+            by si člověk myslel, že ano.
+        goldEtherniteRing:
+          name: Zlatý ethernitový prsten
+          desc: Zlatý prsten s nadpozemským ethernitem. Když nosíte tento prsten,
+            přitahují se k vašemu prstu pohledy lidí kolem vás.
+        amuletOfTheLuckyRabbitFoot:
+          desc: Zářící amulet se silou šťastné králičí tlapky.
+          name: Amulet z králičí nohy pro štěstí
+        cutEthernite:
+          desc: Cenný sklovitý fialový drahokam. Při pohledu na něj máte děsivý pocit,
+            ale přesto je nějak velmi těžké od něj odtrhnout zrak.
+          name: Ethernit
+        amuletOfTheBat:
+          name: Amulet netopýra
+          desc: Zářící amulet se silou netopýra.
+        cutTopaz:
+          desc: Lesklý drahokam s barvami připomínajícími slunce. Při dlouhém pohledu
+            by mohl dokonce ublížit vašim očím.
+          name: Topas
+        goldRubyRing:
+          name: Zlatý rubínový prsten
+          desc: Těžký zlatý prsten s královským rubínem, nositele jako by předcházela
+            slabá aura velení.
+        amuletOfTheEel:
+          name: Amulet úhoře
+          desc: Zářící amulet se silou úhoře.
+        amuletOfTheShrimp:
+          name: Amulet z krevet
+          desc: Zářící amulet se silou krevety.
+        amuletOfTheSharkTooth:
+          name: Amulet žraločího zubu
+          desc: Zářící amulet se silou žraločího zubu.
+        flowerNecklace:
+          name: Jarvonský květinový náhrdelník
+          desc: Jarvonská květinová girlanda ozdobená sedmikráskami a sněženkami,
+            k nošení na krku.
+        cutOpal:
+          name: Opál
+        cutStarPearl:
+          name: Hvězdná perla
+        cutRuby:
+          name: Rubín
+          desc: Tento červeně zbarvený drahokam je velmi oblíbený mezi šlechtou. Červená
+            barva symbolizuje moc a vášeň.
+        silverRing:
+          name: Stříbrný prsten
+          desc: Jednoduchý stříbrný prsten, elegantní a nenáročný.
+        goldRing:
+          name: Zlatý prsten
+          desc: Prostý zlatý prsten, nadčasový a cenný ve své čistotě.
+      miscellaneous:
+        bagOfRocks:
+          name: Pytel kamenů
+          desc: Je těžké tohle vláčet s sebou, proč to zase děláš?
   looted:
     equipmentSets:
       dimensional:
@@ -231,15 +531,85 @@ singulars:
           name: Sportovní čelenka
         medievalSneakers:
           name: Středověká obuv
+          desc: S každým krokem nabízejí nositeli tichou a hbitou cestu říšemi starověkými
+            i současnými a překlenují tak propast mezi jednotlivými epochami.
+        simpleRope:
+          name: Jednoduché lano
+          desc: Lano má mnoho využití, například v horolezectví.
+        waterBottle:
+          desc: Skleněná láhev naplněná čerstvou čistou pitnou vodou. Zůstaňte bez
+            žízně!
+          name: Láhev na vodu
+        mapOfJarvonia:
+          desc: Mapa zobrazuje země a města severního kontinentu.
+          name: Mapa Jarvonie
+        grapplingHook:
+          name: Uchopovací hák
+          desc: Na konci lana je připevněn čtyřcestný kovový hák.
+        simpleTorch:
+          desc: S dřevěnou tyčí, hadrem a hořlavou látkou máte přenosnou lampu. Jednodušší
+            to být nemůže.
+          name: Jednoduchá svítilna
+        mapOfGDTE:
+          name: Mapa GDTE
+        toughRope:
+          name: Pevné lano
+          desc: S tímto pevným lanem zdoláte i ty nejvyšší hory.
+        featherCape:
+          desc: Tato plášť je lehký jako pírko, protože je z nich ušitý.
+          name: Péřový plášť
       carpentry:
         handsaw:
           name: Ruční pila
+          desc: Tato pila ztělesňuje harmonii mezi řemeslníkem a přírodou a slibuje
+            schopnost tvarovat dřevo s přesností a elegancí.
         protectiveGloves:
           name: Ochranné rukavice
+          desc: Je lepší, když je šance, že vám pila uřízne prsty, snížena na 0 %.
         toolbelt:
           name: Opasek na nářadí
+          desc: Mnohostranné příslušenství, které obsahuje řadu nástrojů pro zpracování
+            dřeva
         woodworkingGlasses:
           name: Ochranné Dřevorubecké brýle
+        iceSaw:
+          name: Fréza na led
+          desc: Tento nástroj je ideální pro řezání ledu a je velmi praktický, pokud
+            si chcete postavit iglů.
+        simpleSaw:
+          desc: Tato pila bude řezat dostatečně dlouho, dokud neseženete lepší.
+          name: Jednoduchá pila
+        protectiveGlasses:
+          name: Ochranné brýle
+          desc: Tyto brýle zabrání tomu, aby vám rychle letící předměty poranily oči.
+            Doufejme.
+        protractor:
+          name: Úhloměr
+          desc: Jedná se o nástroj pro měření úhlů, který se často používá v tesařství.
+        protectiveShirt:
+          desc: Tato košile má přišité ochranné vycpávky.
+          name: Ochranná košile
+        dullChisel:
+          desc: Má dřevěnou rukojeť a tupou ocelovou čepel, i když s ní lze stále
+            vytvářet krásné řemeslné výrobky.
+          name: Tupý sekáč
+        preciseRuler:
+          name: Přesné pravítko
+          desc: Značky měření jsou úhledně vyryty do dřeva a jsou na něm zobrazeny
+            centimetry i palce.
+        protectivePants:
+          name: Ochranné kalhoty
+          desc: Tyto kalhoty mají na sobě přišité ochranné vycpávky.
+        sharpChisel:
+          name: Ostré dláto
+          desc: Tento ostrý nástroj se používá k tvarování dřeva.
+        simpleRuler:
+          name: Jednoduché pravítko
+          desc: Dřevěné pravítko, nezbytná součást tesařské sady nářadí. Lze jej použít
+            k měření věcí nebo k kreslení rovných čar.
+        goldenChisel:
+          name: Zlaté dláto
+          desc: Říká se, že peníze nerostou na stromech, ale zřejmě rostou na dlátech.
       cooking:
         chefsApron:
           name: Kuchařská zástěra
@@ -247,39 +617,155 @@ singulars:
           name: Kuchařská čepice
         meatCleaver:
           name: Sekáček na maso
+        rottenEggplant:
+          name: Shnilý lilek (testovací předmět)
+          desc: Pouze pro testery. Uděluje neomezený výkon.
+        lavaCookingPan:
+          name: Lávová pánev na vaření
+          desc: Tato pánev byla ukuta v sopce. Láva, ze které je vyrobena, ji činí
+            vždy horkou a připravenou k vaření.
       crafting:
         candlehat:
           name: Svícčapka
         craftingGuidebook:
           name: Výrobní příručka
+          desc: Tato příručka pro tvoření, svazek bezmezné kreativity, je úložištěm
+            znalostí předávaných generacemi řemeslníků a kutilů.
         grippyGloves:
           name: Protiskluzové rukavice
+          desc: Tyto rukavice nabízejí pevný úchop a říká se, že vám pomohou nikdy
+            neupustit šroubek ani malou součástku.
         magnifyingLens:
           name: Lupa
+          desc: Nástroj mistrů řemeslníků, kteří se snaží odhalit tajemství složitých
+            strojů a studovat svět na mikroskopické úrovni.
+        wireSaw:
+          desc: Tato lanová pila umožňuje přesné řezání pevných materiálů, jako je
+            kámen, dřevo, sklo, beton a kov, a je nepostradatelným nástrojem pro efektivní
+            práci v dílně.
+          name: Drátová pila
+        carvingKnife:
+          name: Nůž na porcování
+          desc: Malá, elegantně zakřivená čepel, ideální pro přesné odstraňování dřevěných
+            hoblin. Jeho rukojeť je velká pro optimální ovládání - ale zneužívat ji
+            k krájení masa nebo chleba by bylo barbarstvím.
+        craftingShirt:
+          desc: Tričko vhodné pro řemeslníky. Snadno se čistí a je poměrně odolné
+            vůči poškození, které běžně způsobuje řemeslné nářadí.
       fishing:
         fishermansHat:
           name: Rybářský klobouk
         fishermansTrousers:
           name: Rybářské kalhoty
+        bugBait:
+          desc: Hmyz bude večeří ryb a ryba bude tvou večeří. Ale čí večeří budeš
+            ty?
+          name: Návnada na hmyz
+        eyePatch:
+          name: Náplast na oko
+          desc: Zřejmě je snazší rybařit jen s jedním otevřeným okem.
+        pirateHat:
+          name: Pirátský klobouk
+          desc: Země na dohled!
+        fishingGuidebook:
+          desc: Kniha obsahuje obrázky různých ryb a seznam návnad. Návnady vhodné
+            pro každý druh.
+          name: Rybářská příručka
+        wadingShoes:
+          name: Brodící boty
+          desc: Tyto lehké boty jsou dobrou volbou pro rybářská dobrodružství.
+        coolSunglasses:
+          desc: Velmi stylové sluneční brýle, díky kterým je rybaření na pláži při
+            západu slunce mnohem pohodlnější.
+          name: Stylové sluneční brýle
+        breezyShirt:
+          name: Prodyšná košile
+          desc: Toto lehká košile vás na jakékoli pláži odliší.
+        anglerGloves:
+          name: Rybářské rukavice
+          desc: Existují! Legendární rukavice se zářícími konečky prstů, které svým
+            kouzlem přitahují nejrůznější úlovky.
       foraging:
         halflingsFeetSlippers:
           name: Půlčíkovo prstové pantofle
         hatWithAFeather:
           name: Klobouk s pírkem
+        simpleBugCatchingNet:
+          desc: Není to moc, ale chytá to hmyz.
+          name: Jednoduchá síť na chytání hmyzu
       mining:
         miningHelm:
           name: Hornická přilba
         shovelAxe:
           desc: S touto multifunkční lopatou můžete jak hrabat, tak sekat dříví.
           name: Multifunkční lopata
+        goldPan:
+          desc: Dejte tam nějaké kameny a trochu vody, rozvířte to a hrudky zlata
+            se vám samy odhalí.
+          name: Miska na zlato
+        minersMagnet:
+          desc: Mimořádně užitečné pro vyhledávání drahých kovů ukrytých ve skalních
+            stěnách.
+          name: Hornický magnet
+        minersBeard:
+          name: Hornické vousy
+          desc: Lze vás opravdu považovat za horníka, když nemáte vousy?
+        simpleMiningShovel:
+          name: Lehká důlní lopata
+          desc: Můžete to použít k odstranění části suti z rudné půdy, což usnadní
+            nalezení vzácných minerálů.
+        iceAxe:
+          name: Cepín
+          desc: Na dotek pálí. Noste rukavice!
       smithing:
         smeltingGoggles:
           name: Svářečské brýle
         smithsApron:
           name: Kovářova zástěra
+        simpleHammer:
+          desc: Jen obyčejné kladivo. Má ocelovou hlavu a dřevěnou rukojeť. Opravdu
+            jednoduché, ale lepší než žádné.
+          name: Jednoduché kladivo
+        forgeBellows:
+          name: Kovářské měchy
+          desc: Používá se k vhánění vzduchu do výhně, doslova k rozpumpování tepla.
+        coolingIceAmulet:
+          name: Chladivý ledový amulet
+          desc: Tento amulet vyzařuje neustálý chlad.
+        jarvonianSmithsHammer:
+          name: Jarvonské kovářské kladivo
+        smithsPants:
+          name: Kovářské kalhoty
+          desc: I když docela hřejí, zabrání vám spálení nohou, když budete celý den
+            trávit u pece.
+        blacksmithsHandbook:
+          name: Průvodce kovářstvím
+          desc: Kniha obsahuje obrázky různých kováren, kladiv a měchů. Kovářské řemeslo
+            je vysvětleno velmi podrobně.
       woodcutting:
         lumberjackShirt:
           name: Dřevorubecká košile
+          desc: Je pevná a kostkovaná, je zároveň obranou proti nepřízni počasí a
+            zároveň důkazem odolnosti dřevorubce.
+        lumberjackBoots:
+          name: Dřevorubecké boty
+          desc: Dřevorubecké boty, spojení odolnosti a praktičnosti, jsou oblíbeným
+            oděvem těch, kteří se odváží vydat do divočiny (roz)čarovaných lesů.
+        lumberjackSandals:
+          name: Dřevorubecké sandály
+          desc: V těchto otevřených botách se cítíte více propojeni s přírodou, jako
+            by energie vašeho okolí putovala skrze vaše chodidla do vašeho srdce.
+        lumberjackPants:
+          desc: Pro dřevorubce, kteří spí celou noc a pracují celý den, jsou tyto
+            kalhoty nejlepší volbou.
+          name: Dřevorubecké kalhoty
+        lumberjackHat:
+          name: Dřevorubecký klobouk
+          desc: Klobouk vhodný pro dřevorubecká dobrodružství.
+      trinketry:
+        handFile:
+          desc: Velmi praktické v ruce, nezapomeňte po použití utřít prach.
+          name: Praktický ruční pilník
     versatile:
       backpack:
         name: Batoh
@@ -293,6 +779,8 @@ singulars:
         name: Klobouk moudrosti
       mosquitoNethat:
         name: Klobouk s moskytiérou
+        desc: Tento klobouk umožňuje svému nositeli klidně cestovat i těmi nejvíce
+          hmyzem zamořenými oblastmi a zároveň se soustředit na zázraky divočiny.
       protectiveEarmuffs:
         name: Chránič sluchu
       recipeBook:
@@ -305,8 +793,24 @@ singulars:
         name: Teplá čapka
       warmJacket:
         name: Teplá bunda
+        desc: Velmi teplá bunda do velmi chladného počasí.
       waterproofPants:
         name: Nepromokavé kalhoty
+      firefliesInJar:
+        desc: Velmi kreativní a přirozený způsob, jak si osvětlit cestu. Nemají žádné
+          příkazové slovo pro vypnutí.
+        name: Světlušky ve sklenici
+      jellyfishingNet:
+        desc: Nejlepší den vůbec!
+      screwdriver:
+        name: Šroubovák
+        desc: Kterým směrem otáčet, aby se šroub utáhl? Vždycky na to zapomenu.
+    achievements:
+      conservationistHat:
+        name: Památkářský klobouk
+      conservationistShirt:
+        name: Památkářská košile
+        desc: Tato košile nabízí pohodlí a má i další kapsy na uložení drobných věcí.
   materials:
     carpentry:
       birchPlank:
@@ -319,11 +823,24 @@ singulars:
         name: Borovicové prkno
       sprucePlank:
         name: Smrkové prkno
+      willowPlank:
+        name: Vrbové prkno
+      mangrovePlank:
+        name: Mangrovové prkno
+      woodScrap:
+        name: Dřevěný odpad
+      bambooPlank:
+        name: Bambusové prkno
     cooking:
       milk:
         name: Mléko
       salt:
         name: Sůl
+      carrot:
+        name: Mrkev
+        desc: Říká se, že pomáhá vašemu zraku.
+      mushroom:
+        name: Houba
     foraging:
       catsBell:
         name: Cat's bell
@@ -367,6 +884,36 @@ singulars:
         name: Bodlák
       widowsKiss:
         name: Polibek vdovy
+      woodenStick:
+        name: Dřevěná hůl
+      seaCabbage:
+        name: Mořské zelí
+      berries:
+        name: Bobule
+      kelp:
+        name: Řasa
+      sweetKelp:
+        name: Sladká řasa
+      hardenedKelp:
+        name: Ztvrdlé řasy
+      seaSpinach:
+        name: Mořský špenát
+      underwaterLotus:
+        name: Podvodní lotos
+      saltyHops:
+        name: Slaný chmel
+      cucumber:
+        name: Okurka
+      wheat:
+        name: Pšenice
+      grass:
+        name: Tráva
+      pepper:
+        name: Pepř
+      mud:
+        name: Bláto
+      wildRice:
+        name: Divoká rýže
     mining:
       coal:
         name: Uhlí
@@ -383,6 +930,25 @@ singulars:
         name: Tarsíliová ruda
       tinOre:
         name: Cínová ruda
+      largeStone:
+        name: Velký kámen
+        desc: Větší kámen než normálně.
+      saltCrystal:
+        name: Krystal soli
+      opal:
+        name: Hrubý opál
+      ethernite:
+        name: Hrubý ethernit
+      jade:
+        name: Hrubý nefrit
+      topaz:
+        name: Hrubý topaz
+      ruby:
+        name: Hrubý rubín
+      volcanicRock:
+        name: Sopečná hornina
+      volcanicAsh:
+        name: Sopečný popel
     rawFish:
       rawCarp:
         desc: Jemná chuť kaprů se dobře hodí k různým kulinářským úpravám. Tyto ryby
@@ -415,6 +981,18 @@ singulars:
         name: Syrový úhoř říční
       rawTrout:
         name: Syrový pstruh
+      rawShark:
+        name: Syrový žralok
+      rawStingray:
+        name: Syrový rejnok
+      rawSwordfish:
+        name: Syrový mečoun
+      rawAnglerfish:
+        name: Syrový ďas
+      rawLargemouthBass:
+        name: Syrový okoun velkoústý
+      rawCrab:
+        name: Syrový krab
     smithing:
       bronzeBar:
         name: Bronzový ingot
@@ -442,3 +1020,63 @@ singulars:
         name: Borovicové dřevo
       spruceLogs:
         name: Smrkové dřevo
+      root:
+        desc: Užitečné kořeny rostlin, které lze využít k různým účelům.
+        name: Kořen
+      bambooLogs:
+        name: Bambusové polena
+        desc: Bambus je ohebný, ale zároveň pevný, což vede k rozmanitému využití.
+    misc:
+      trash:
+        desc: Sbírka zbytečných, bezcenných věcí. Proč sis tohle vůbec vzal/a?
+        name: Odpadky
+      nameTag:
+        desc: Jmenovka s napsaným jménem nějakého dávno zesnulého dobrodruha. Cech
+          dobrodruhů by o to mohl mít zájem.
+        name: Jmenovka
+      glacierMap:
+        desc: Mapa připomíná severní část Jarvonie. Červenou čarou je vyznačena cesta
+          k něčemu, co vypadá jako ledovec s iglú.
+        name: Tajemná severní mapa
+      fishbone:
+        desc: I když je to trochu ošklivé a docela smrdí, vypadá to docela dobře.
+        name: Rybí kost
+      seashell:
+        name: Mořská mušle
+        desc: Pravděpodobně ji někdo prodal na pláži.
+      clam:
+        name: Mušle škeble
+        desc: Perlově bílá a dokonale neporušená. A krásný exemplář pro sběratele.
+      pearls:
+        name: Perly
+      crosswordPuzzle:
+        name: Stará křížovka
+        desc: Slovní hra, devět písmen, začíná na C.
+      fishingLine:
+        name: Vlasec
+      unidentifiedRemains:
+        name: Neidentifikované ostatky
+    hunting:
+      bones:
+        desc: Více kusů kostí.
+        name: Kosti
+      feather:
+        name: Pero
+        desc: Krásné, lehké a aerodynamické ptačí pero.
+      darkfeather:
+        desc: Tmavé ptačí pero, pravděpodobně od vrány, havrana nebo jiného tmavého
+          ptáka.
+        name: Tmavé pero
+      sinew:
+        name: Šlacha
+        desc: Pevná, vláknitá tkáň, která spojuje svaly s kostmi.
+      animalMeat:
+        name: Zvířecí maso
+        desc: Kus čerstvého masa, připravený k vaření, sušení nebo solení.
+      animalFur:
+        name: Zvířecí srst
+        desc: Tento kus zvířecí srsti je na dotek hebký a pokud se z něj vyrobí oblečení,
+          musí poskytovat velké teplo.
+    crafting:
+      rope:
+        name: Lano
