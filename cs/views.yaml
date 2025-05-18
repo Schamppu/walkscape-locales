@@ -41,6 +41,7 @@ maps:
         outfit: Oblečení
         'faceAccessory': Příslušenství na obličej
         'eyeAccessory': Oční doplňky
+        'backAccessory': Příslušenství na záda
       raceTypes:
         human: Člověk
         none: Žádná
@@ -201,6 +202,11 @@ singulars:
       collectibleItems: Sběratelské předměty jsou věci, které můžete získat ze světa
         WalkScape. Existuje několik typů sběratelských předmětů, které můžete zkusit
         nasbírat. Nezabírají žádné místo v inventáři a jsou vždy s vaší postavou.
+      checkPointUnlocks: Tyto odměny jsou k dispozici po dosažení určitého počtu bodů
+        úspěchu. Neztratíte k nim přístup, ani když bude k dispozici více bodů úspěchu.
+      totalProgressUnlocks: Tyto odměny získáváte na základě svého celkového pokroku
+        v dosažených úspěších. S získáváním dalších bodů úspěchu můžete ztratit přístup
+        k předmětům.
     phrases:
       notUnlocked: Zamčený úspěch
       rewardProgress: Postup odměny
@@ -273,6 +279,8 @@ singulars:
       equipToRingTwo: Nasaďte prsten na slot 2
       equipToToolSlot: Vložit nástroje do slotu {id}
       noConsumables: Ve vašem batohu nejsou žádné spotřební materiály.
+      noConsumableSelected: Není vybrán žádný spotřební materiál. Můžete si vybrat
+        jeden z níže uvedených.
     options:
       expandInventory: Rozšiřte batoh
       showGear: Zobrazit výbavu
@@ -412,6 +420,8 @@ singulars:
       noGearSetsList: Zatím nemáte žádné sady vybavení. Chcete-li vytvořit nebo vložit
         nové sady vybavení, klikněte na <c i=0>Spravovat</c>.
       gearSetsDescription: Sady vám pomohou rychle přepínat mezi různým vybavením.
+      youDontHaveAnyItems: Žádné předměty. Buď žádné předměty tohoto typu neznáte,
+        nebo je nemáte, nebo vaše filtry ve vyhledávání nenašly nic, co by odpovídalo.
   pfpCreation:
     buttons:
       enableFaceAccessory: Povolit doplněk obličeje
@@ -687,6 +697,7 @@ singulars:
       noAction: Žádná akce
       holdToCast: 'Podržením odešlete'
       holdToUse: Podržte pro použití
+      useConsumable: Použijte spotřební materiál
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Nejsou splněny podmínky použití:'
