@@ -40,6 +40,7 @@ maps:
         nose: Nos
         outfit: Oblečení
         'faceAccessory': Příslušenství na obličej
+        'eyeAccessory': Oční doplňky
       raceTypes:
         human: Člověk
         none: Žádná
@@ -54,12 +55,18 @@ maps:
       'gameplay': Hratelnost
       'account': Účet
       'character': Postava
+      'accessibility': Dostupnost
     boolSettings:
       'showFpsCounter': Zobrazit FPS
       'leftHandedMode': Režim pro levou ruku
       'inventoryCollapsed': Zhuštění inventáře
       'showRecipesRequirementsAreMet': Požadavky na úroveň jsou splněny
       'alwaysStopWhenInventoryFull': Automaticky se zastaví, když je batoh plný
+      'shaderOutlineRendering': Zobrazit obrysy pomocí shaderů
+      'spriteOutlines': Zobrazit obrysy
+      'showRecipesServicesAreMet': Požadavky na vybavení splněny
+      'showRecipesMaterialsAreMet': Materiálové požadavky nejsou splněny
+      'showCompletedAchievements': Zobrazit dokončené úspěchy
     custom:
       'dataSource': Zdroj kroků
     stepCountNotifications:
@@ -96,12 +103,19 @@ maps:
       'language': Jazyk
       'leaderboardFilter': Zobrazit
       'leaderboardType': Žebříčky
+      'stepDataTime': Časové období
   shop:
     phrases:
       itemType:
         'material': Materiály
         'loot': Kořist
         'gear': Výbava
+        'crafted': Vyrobeno
+        'collectible': Sběratelské předměty
+        'cosmetic': Kosmetika
+        'consumable': Spotřební materiál
+        'special': Speciální
+        'tool': Nástroje
   locales:
     grammaticalGender:
       'masculine': Pánské
@@ -192,6 +206,7 @@ singulars:
       rewardProgress: Postup odměny
       showRewards: Zobrazit odměny
       unclaimedRewards: 'Nevyzvednuté odměny: '
+      totalProgressUnlocks: Odměny za celkový pokrok
   crafting:
     phrases:
       materials: Materiály
@@ -205,10 +220,12 @@ singulars:
       noMaterialsThatCouldBeUsed: V inventáři nemáte žádné materiály, které by se
         daly použít k výrobě.
       noMaterials: Momentálně nemáte k dispozici žádné materiály k výrobě.
+      noServiceRequirements: Žádné podmínky použití.
     errors:
       notSameQuality: Materiály musí být buď kvalitní, nebo normální
       noMaterials: Chybí material na vyrobu
       skillRequirementsNotMet: Požadavky na dovednosti nejsou splněny
+      noService: Nejsou splněny podmínky použití
   inventory:
     info:
       noItemEquipped: Nemáte nic nasazeno. \n\n Pro nasazení a používání vybavení,
@@ -263,6 +280,7 @@ singulars:
       route: Trasa
       youreHere: Momentálně se nacházíte na tomto místě.
       currentLocation: Aktuální poloha
+      pointsOfInterest: Body zájmu
   trade:
     phrases:
       buying: Koupit {amount}
@@ -349,6 +367,11 @@ singulars:
         postava nachází.
       currentSelection: Aktuální výběr
       race: Rasa
+      variants: Varianty
+      noVariantSelected: Nebyla vybrána žádná varianta
+      resetToDefault: Obnovit výchozí
+      selectedVariant: Vybrána varianta {index}
+      homeRegion: Oblast původu
   stats:
     info:
       chartWarning:
@@ -357,9 +380,11 @@ singulars:
           na problémy, kdy grafy ukazují výrazně odlišné hodnoty než jiné zdroje,
           je to nejpravděpodobnější důvod. Samotná herní logika by měla fungovat stejně
           jako dříve a problémy s grafy budou vyřešeny v budoucích aktualizacích.
+        title: Nepřesnosti v grafech
     phrases:
       stats: Statistiky
       totalSteps: Celkový počet kroků
+      totalSkillXp: Celková dovednost XP
   tutorial:
     phrases:
       noMoreMessages: Přestaňte zobrazovat návody
@@ -444,6 +469,8 @@ singulars:
       savedSteps: Uložené kroky
       inventoryIsOverLimit: Váš batoh je přetížený!
       consumables: Spotřební předměty
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Globální efektivita práce
+        <c>-{penalty}%</c>
     info:
       savedSteps: Máte uložené kroky, které se právě vyčerpávají. Každý krok se počítá
         jako dva, dokud se všechny uložené kroky nevyčerpají.
@@ -498,6 +525,7 @@ singulars:
       changeStepCountingSource: Změnit zdroj počítání kroků
       stepCountingSource: Zdroj počítání kroků
       pedometerPermission: Povolení počítání kroků
+      exactAlarmPermission: Oprávnění k oznámení
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> <c>Telefon</c> je výchozí doporučený zdroj
         počítání kroků pro WalkScape. Pro intenzivní sportovní aktivity doporučujeme
@@ -591,7 +619,8 @@ singulars:
       abilities: Schopnosti
       useAbility: Použijte schopnost
       noAction: Žádná akce
-      holdToCast: ''
+      holdToCast: 'Podržením odešlete'
+      holdToUse: Podržte pro použití
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Nejsou splněny podmínky použití:'
