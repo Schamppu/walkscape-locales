@@ -43,18 +43,18 @@ singulars:
         desc: Lors de votre initiation au ski de fond, chaque glissement est un émerveillement.
           Les pistes enneigées sont votre terrain de jeu, où vous apprenez le rythme
           des skis et profitez de la beauté sereine des forêts d'hiver.
-        name: Ski de fond (débutant)
+        name: Ski classique
       crossCountrySkiingDifficult:
         desc: Dans cette piste difficille de ski de fond, vous repoussez les limites
           de l'endurance et de l'habileté. En affrontant des pentes abruptes et des
           conditions difficiles, vous trouvez l'exaltation dans le voyage qui vous
           fait battre le cœur à travers le paysage hivernal sauvage.
-        name: Ski de fond (difficile)
+        name: Ski en pente
       crossCountrySkiingIntermediate:
-        desc: Le ski de fond intermédiaire apporte un sentiment d'aventure. Vous abordez
-          des terrains variés avec une confiance nouvelle, chaque foulée étant plus
-          forte et plus assurée, tandis que vous explorez les vastes étendues enneigées.
-        name: Ski de fond (intermédiaire)
+        desc: Le ski de fond apporte un sentiment d'aventure. Vous abordez des terrains
+          variés avec une confiance nouvelle, chaque foulée étant plus forte et plus
+          assurée, tandis que vous explorez les vastes étendues enneigées.
+        name: Ski de fond
       guardDuty:
         desc: En tant que garde de l'Empire Wallisien, vous avez des factures à payer,
           et c'est comme ça que vous vous y prenez. Vous surveillez le royaume, vous
@@ -80,13 +80,13 @@ singulars:
         name: Voyager
         desc: Voyager vers un nouveau lieu
       frisbeeGolfingBeginner:
-        name: Disc Golf (Débutant)
+        name: Cours de Disc Golf de Jarvonie
         desc: En tant que débutant au disc Golf, chaque lancer est une nouvelle découverte.
           Vous apprenez à jauger le vent et à éviter habilement les arbres, tout en
           appréciant la simplicité du jeu et la joie de voir le disque s'envoler vers
           le panier.
       frisbeeGolfingIntermediate:
-        name: Disc Golf (Intermédiaire)
+        name: Cours de Disc Golf du GDTE
         desc: En jouant au niveau intermédiaire du Disc Golf , vous développez un
           sens aigu de la stratégie. Chaque parcours présente un nouveau défi, affinant
           vos compétences à chaque lancer, calculé pour contourner habilement les
@@ -131,7 +131,7 @@ singulars:
           de sauvetage.
     syrenthia:
       swimmingExpert:
-        name: Nage (Expert)
+        name: Natation (Expert)
         desc: Nager à travers les différents chemins et grottes de la vaste ville
           sous-marine de Vastalume s'avère un véritable défi. Tu dois échapper aux
           créatures marines dérangées par ta présence.
@@ -149,6 +149,9 @@ singulars:
     bats:
       springBatTracking:
         name: Chasse aux chauve-souris (Printemps)
+        desc: Les chauve-souris partent de la grotte en volant vers le nord-est. Vous
+          les suivez depuis leur habitat de printemps, courant jour et nuit pour trouver
+          leur prochain habitat. Vous risquez de ne pas revenir ici avant un moment.
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -342,8 +345,8 @@ singulars:
           de choses sur vous-même, mais y a-t-il quelque chose à trouver ici ?
         name: Collecte sur glacier
       plainsForaging:
-        desc: À chaque pas dans la campagne, vous vous immergez dans l'abondance naturelle;
-          cueillant des baies sauvages, des graines et des pousses tendres qui se
+        desc: À chaque pas dans la campagne, vous vous immergez dans l'abondance naturelle
+          ; cueillant des baies sauvages, des graines et des pousses tendres qui se
           développent dans le sol sous vos pieds.
         name: Collecte en plaine
       seashellSearching:
@@ -530,10 +533,38 @@ singulars:
           retentit.
   misc:
     emergencySwimEscape:
-      desc: Tu as perdu ton équipement de plongée et tu manques d'air. Tu dois nager
-        jusqu'au rivage aussi vite que possible, mais sans paniquer. Tu sais que si
-        tu remontes trop vite, tu pourrais souffrir d’un accident de décompression.
+      desc: Vous avez perdu votre équipement de plongée et vous manquez d'air. Vous
+        devez nager jusqu'au rivage aussi vite que possible, mais sans paniquer. Vous
+        savez que si vous remontez trop vite, vous pourriez souffrir d’un accident
+        de décompression.
       name: Fuite à la nage
+    gdte:
+      runForYourLife:
+        desc: Vous vous sentez claustrophobe à mesure que l'obscurité se referme sur
+          vous, et vous avez l'impression d'être observé. Vous courez comme si votre
+          vie en dépendait, sans vous soucier de la direction.
+        name: Prendre ses jambes à son cou
+      swampEmergencySwimEscape:
+        desc: Vous avez perdu votre matériel de plongée et vous êtes à court d'oxygène.
+          Vous devez nager vers la côte le plus vite possible, mais sans paniquer.
+          Vous savez que si vous remontez trop vite, vous risquez de subir un accident
+          de décompression.
+        name: Fuite à la nage (marais)
+      swampEmergencyDarkEscape:
+        name: Fuite à la nage dans le noir (marais)
+        desc: Vous avez perdu votre source de lumière et vous devez trouver votre
+          chemin vers la sortie dans le noir. Vous devez rester prudent pour trouver
+          la sortie et éviter les créatures dangereuses qui rôdent peut-être dans
+          l'obscurité.
+      ventureIntoTheBog:
+        name: S'aventurer dans la tourbière
+        desc: Vous vous aventurez au sein des brumes lugubres à l'extérieur de Granbois,
+          tentant de trouver des points de repère que vous connaissez en suivant les
+          chauve-souris.
+      ventureIntoTheWoods:
+        name: S'aventurer dans les bois
+        desc: Vous vous aventurez au sein des brumes lugubres à l'extérieur de Salstuaire,
+          et un fouillis dense d'arbres vous bloque le chemin.
   hunting:
     jarvonia:
       rabbitTracking:
