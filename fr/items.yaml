@@ -356,6 +356,10 @@ singulars:
         shield:
           name: Bouclier en farganite
           desc: Un bouclier bleu miroitant le ciel.
+        gemShield:
+          name: Bouclier de gemme
+          desc: Un superbe bouclier léger orné de gemmes scintillantes qui reflètent
+            parfaitement la lumière.
       iron:
         chest:
           desc: 'Vous devriez sûrement rester loin des aimants lorsque vous le portez. '
@@ -867,6 +871,7 @@ singulars:
         cutWrentmarine:
           desc: Quand vous bougez cette pierre bleu océan, vous avez l'impression
             que de l'eau coule à sa surface.
+          name: Wrentmarin
         cutTopaz:
           desc: Une gemme brillante avec des couleurs semblables à celles du soleil.
             Vous risquez d'avoir mal aux yeux si vous la fixez trop longtemps.
@@ -890,6 +895,7 @@ singulars:
         silverWrentmarineRing:
           desc: L'argent poli brillant se marie élégamment avec la gemme bleue taillée
             qui y est sertie.
+          name: Anneau Wrentmarin argenté
         silverJadeRing:
           name: Anneau d'argent serti de jade
           desc: Un anneau d'argent serti d'un morceau de jade poli, censé apporter
@@ -940,6 +946,10 @@ singulars:
           name: Rubis
           desc: Cette gemme rouge est très populaire chez les nobles. La couleur rouge
             représente le pouvoir et la passion.
+        goldWrentmarineRing:
+          desc: L'or entourant la gemme wrentmarine scintille a la lumière comme un
+            trésor des fonds marins.
+          name: Anneau Wrentmarin doré
       smithing:
         reinforcedBellows:
           desc: Vous en aviez assez de faire réparer votre soufflet constamment, mais
@@ -1216,14 +1226,22 @@ singulars:
     achievements:
       adventurersBoots:
         name: Bottes de l'Aventurier
+        desc: Ces bottes robustes sont faites pour endurer des conditions d'utilisations
+          intensives et des conditions métérologiques difficiles.
       adventurersHat:
         name: Chapeau de l'Aventurier
+        desc: Ce bob en cuir vous protègera du soleil , du vent et de la pluie.
       adventurersPants:
         name: Pantalon de l'Aventurier
+        desc: Ces pantalons en cuir robuste sont dotés de nombreux straps, autant
+          pour leur côté pratique que pour le style .
       adventurersGloves:
         name: Gants de l'Aventurier
+        desc: Ces gants en cuir ont une strap régulable pour un ajustement parfait.
       adventurersCape:
         name: Cape de l'Aventurier
+        desc: "Cette cape en cuir solide protégera son porteur contre la plupards
+          des intempéries.\nSon strap sert a faciliter son ajustement."
       conservationistShorts:
         desc: Ce short te permet de bouger librement et possède de grandes poches
           pour y ranger des outils.
@@ -1247,6 +1265,20 @@ singulars:
       pathfinder:
         desc: Le pendentif de ce collier est une carte miniature indiquant le chemin
           le plus court.
+      capeOfHalfAchiever:
+        desc: Cette magnifique cape bleu représentee un être déterminé a atteindre
+          la grandeur.
+        name: Cape du Semi-Accompli
+      capeOfAchiever:
+        name: Cape de l'accompli
+        desc: Cette cape rosée suscite l'intérêt de tout ceux qui en sont témoin .
+          Sont propriétaire a accompli ce que d'autre ne peuvent que rêver de faire.
+      adventurersShirt:
+        name: T-shirt de l'aventurier
+        desc: Ce t-shirt en cuir de couleur marron clair et est doté de nombreuses
+          poches de rangements.
+      ringOfHomesickness:
+        name: Anneau de la nostalgie
   materials:
     carpentry:
       birchPlank:
@@ -1332,7 +1364,7 @@ singulars:
         name: Cloche-à-chat
       cotton:
         desc: Matière douce et moelleuse, délicate et confortable au touché.
-        name: Cotton
+        name: Coton
       deathsToll:
         desc: Cela peut sembler attirant, mais je ne le mangerai pas sous cette forme.
         name: Mordeuil
@@ -1384,8 +1416,8 @@ singulars:
           aider à survivre ?
         name: Pierre
       sunblossom:
-        desc: Fleur splendide dotée de pétales dorées qui reflètent l'éclat éblouissant
-          du soleil
+        desc: Belle inflorescence reflétant la lumière du soleil, ses pétals dorées
+          brillent de milles feux.
         name: Lysolaire
       thistle:
         desc: Plante robuste avec des feuilles acérées qui forment une protection
@@ -1495,8 +1527,8 @@ singulars:
         desc: Cette roche ultramafique dure tinte clairement quand frappé d'une pioche.
         name: Jade brut
       ruby:
-        desc: Un minéral pourpre s'élève de l'intérieur de la roche, captivante en
-          sa beauté et sa simplicité.
+        desc: Un minéral pourpre s'élève de l'intérieur de la roche, captivante de
+          part sa beauté et sa simplicité.
         name: Rubis brut
       silverOre:
         name: Minerai d'argent
