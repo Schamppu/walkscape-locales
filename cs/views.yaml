@@ -232,6 +232,8 @@ singulars:
         stačí vybrat vybavení z výběru níže a to za pomocí tlačítka "Nasadit".
       noItemSelected: Není vybráno žádné vybavení. \n\n Pro porovnání vybavení s aktuálně
         nasazeným a jeho případné nasazení, stačí vybrat vybavení z výběru níže.
+      noItemsFound: Ve vašem batohu nebyly nalezeny žádné položky, které by se hodily
+        do tohoto slotu.
     phrases:
       treasury: Pokladnice
       noItemSelected: Nebyla vybrána žádná položka
@@ -251,9 +253,31 @@ singulars:
       abilities: Schopnosti
       requires: Vyžaduje
       duration: Trvání
+      slotsCount: 'Sloty:'
+      selectedConsumable: Vybraný spotřební materiál
+      consumables: Spotřební materiál
+      dropItems: Vyhodit?
+      areYouSureToDrop: Jste si jistý/á, že chcete věci vyhodit? Tyto objekty budou
+        navždy ztraceny.
+      itemsInUse: Vybrali jste předměty, které se již používají. Nemůžete vyhodit
+        ani uložit používané předměty.
+      selectedStacks: Vybraných <c>{stacks}</c> zásob
+      slots: Sloty <c>{slots}</c>
+      longPressTip: <c>Tip:</c> Dlouhým stisknutím na předmět, mužete poté označovat
+        více zásob najednou.
+      slotDoesntExist: Tento slot pro předmět již neexistuje.
+      allItemsInUse: Všechny tyto položky jsou aktuálně používány a nelze je vyhodit.
+      cantBeDropped: Položku nelze vyhodit.
+      oneOrMoreCantBeDropped: Jeden nebo více předmětů nelze vyhodit.
+      equipToRingOne: Nasaďte prsten na slot 1
+      equipToRingTwo: Nasaďte prsten na slot 2
+      equipToToolSlot: Vložit nástroje do slotu {id}
+      noConsumables: Ve vašem batohu nejsou žádné spotřební materiály.
     options:
       expandInventory: Rozšiřte batoh
       showGear: Zobrazit výbavu
+      showMaterials: Zobrazit materiály
+      showConsumables: Ukažte spotřební materiál
   location:
     phrases:
       activities: Aktivity
@@ -263,7 +287,7 @@ singulars:
       routes: Trasy
       tapToShowRoutes: Klepnutím zobrazíte trasy
       buildings: Budovy
-      jobBoard: Pracovní deska
+      jobBoard: Nástěnka misí
       jobs: Mise
   worldMap:
     phrases:
@@ -281,6 +305,10 @@ singulars:
       youreHere: Momentálně se nacházíte na tomto místě.
       currentLocation: Aktuální poloha
       pointsOfInterest: Body zájmu
+      afterExploring: Po prozkoumání lokality si budete moci prohlédnout zajímavá
+        místa, která ji obklopuji.
+      changeRouteWarning: Změna trasy zruší vaši aktuální cestu a vrátí vás na předchozí
+        místo. Jsi si jistý?
   trade:
     phrases:
       buying: Koupit {amount}
@@ -290,6 +318,11 @@ singulars:
   characterCreation:
     phrases:
       characterName: Jméno postavy
+      bodyTypeA: A
+      bodyTypeB: B
+      chooseABodyType: Vyberte typ těla
+      bodyType: Typ těla
+      race: Rasa
     info:
       rememberSwipe: Nezapomeňte, že vybrané možnosti můžete kdykoli během vytváření
         postavy změnit přejetím prstem zpět.
@@ -359,9 +392,37 @@ singulars:
       gear: Vybava
       noItemSelected: Nebyla vybrána žádná položka
       newSetDefaultName: Moje nová výbava
+      toolSlot: Slot na nářadí
+      copyCurrentlyEquippedGear: Zkopírujte své aktuální vybavení
+      forActivities: 'Pro aktivity: '
+      unequipGear: Sundat výbavu
+      unequipTools: Odložit nářadí
+      importedGearSetDefaultName: Vložit sadu vybavení
+    errors:
+      keywordError: 'Sada výbavy již obsahuje: <object id="{keyword}" />'
+      duplicateItem: Předmět je již v sadě výbavy
+    info:
+      gearSetManageDesc: Vyberte si níže sadu výbavy, kterou chcete nosit. Chcete-li
+        vytvořit, vložit nebo upravit sady výbavy, můžete stisknout tlačítko <c i=0>Spravovat</c>.
+      gearSetsListDesc: Zde můžete spravovat své sady vybavení. Pokud chcete <c i=0>vytvořit
+        novou</c>, klikněte na tlačítko níže. Při vytváření nové sady vybavení můžete
+        také <c i=1>zkopírovat aktuálně používané vybavení</c>.
+      noGearSetsManage: Nevytvořili jste zatím žádné sady vybavení. Vytvořte si svoji
+        první sadu stisknutím tlačítka <c i=0>Vytvořit nový</c> níže.
+      noGearSetsList: Zatím nemáte žádné sady vybavení. Chcete-li vytvořit nebo vložit
+        nové sady vybavení, klikněte na <c i=0>Spravovat</c>.
+      gearSetsDescription: Sady vám pomohou rychle přepínat mezi různým vybavením.
   pfpCreation:
     buttons:
       enableFaceAccessory: Povolit doplněk obličeje
+      showHat: Zobrazit pokrývku hlavy
+      randomize: Náhodný výběr
+      enableBackAccessory: Povolit příslušenství na záda
+      hideHat: Skrýt pokrývku hlavy
+      enableEyeAccessory: Povolit oční doplňky
+      enableFacepaint: Povolit barvy na obličej
+      enableDynamicBackground: Povolit dynamické pozadí
+      choose: Vybrat
     phrases:
       dynamicBackground: Dynamické pozadí se mění v závislosti na tom, kde se vaše
         postava nachází.
@@ -372,6 +433,8 @@ singulars:
       resetToDefault: Obnovit výchozí
       selectedVariant: Vybrána varianta {index}
       homeRegion: Oblast původu
+      extras: Extra
+      mainOptions: Hlavní možnosti
   stats:
     info:
       chartWarning:
@@ -381,6 +444,7 @@ singulars:
           je to nejpravděpodobnější důvod. Samotná herní logika by měla fungovat stejně
           jako dříve a problémy s grafy budou vyřešeny v budoucích aktualizacích.
         title: Nepřesnosti v grafech
+      stats: Souhrn statistik o každém kroku, který jste podnikli světem Arenum.
     phrases:
       stats: Statistiky
       totalSteps: Celkový počet kroků
@@ -602,6 +666,8 @@ singulars:
       sold: Prodáno
       buying: Koupit
       selling: Prodat
+      resetTrade: Obnovit obchod
+      buyBack: Koupit zpět
   locales:
     phrases:
       language: Jazyk
@@ -624,6 +690,22 @@ singulars:
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Nejsou splněny podmínky použití:'
+      cooldownRemaining: 'Zbývající čas obnovení:'
+      cooldownReady: 'Čas obnoveni: Připraveno'
+      noCooldown: Žádný čas obnovení.
   faction:
     phrases:
       openFaction: Otevřená frakce
+  tools:
+    phrases:
+      noToolEquipped: K tomuto slotu není připojen žádný nástroj.
+      emptyToolSlot: Prázdný slot na nářadí
+      lockedToolSlot: Slot na nástroje je uzamčen do <c>úrovně postavy {level}</c>.
+  gear:
+    phrases:
+      combatModifiers: Bojové modifikátory
+      skillModifiers: Modifikátory dovedností
+      noSkillModifiers: Žádné modifikátory dovedností z vybavených předmětů.
+      permanentModifiers: Trvalé modifikátory
+      noPermanentModifiers: Žádné trvalé modifikátory.
+      noCombatModifiers: Žádné modifikátory boje z vybavených předmětů.
