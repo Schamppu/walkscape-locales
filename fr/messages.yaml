@@ -6,16 +6,21 @@ plurals:
           d'autres objets {n} fois.
         other: La suppression d'objets n'est pas réversible. L'objet est référencé
           dans d'autres objets {n} fois.
-      title: Êtes-vous sûr de vouloir supprimer?
+        many: '-'
+        two: Supprimer des objets est irréversible. Cet objet est référencé dans d'autres
+          objets {} fois.
+        few: '-'
+        zero: '-'
+      title: Êtes-vous sûr de vouloir supprimer ?
 singulars:
   messages:
     saveSuccesful:
       text: Vos modifications ont été sauvegardées avec succès.
-      title: Sauvegarde réussie
+      title: Sauvegarde réussie !
     saveUnsuccesfullLootTables:
       text: La table de butin contient une ou plusieurs lignes qui ne sont pas associées
         à un objet.
-      title: Sauvegarde non réussie
+      title: Sauvegarde non réussie.
     workInProgress:
       text: Cette fonctionnalité est encore en développement et bon nombre d'éléments
         <hl>ne sont pas encore disponibles</hl>. Cependant, vous pouvez déjà l'essayer
@@ -30,6 +35,13 @@ singulars:
         Portal, Reddit ou Discord pour plus d'information.
     stepsNotCountedRealTime:
       title: Les pas ne sont pas comptés en temps réel
+      textIOS: Si vous utilisez une autre source de pas que votre <icon i="Phone small"
+        /><c>Téléphone</c>, les pas ne sont pas comptés en temps réel. Selon l'appareil
+        que vous portez, vous devrez peut-être synchroniser manuellement vos pas depuis
+        une autre application ou ouvrir Apple Health pour synchroniser vos pas dans
+        le jeu. Ce message disparaîtra quand vous aurez synchronisé au moins <c>5
+        000</c> pas depuis votre appareil. Vous pouvez choisir votre <icon i="Phone
+        small" /><c>Téléphone</c> comme source de pas dans les <c>Paramètres</c>.
   popups:
     achievementUnlocked:
       rewards: Récompenses
@@ -115,6 +127,90 @@ singulars:
       nameContaintsConsecutiveSpaces: Les espaces consécutifs ne sont pas autorisés.
       nameTooShortWithSpacesRemoved: Sans les espaces, le nom du personnage doit contenir
         au moins 3 caractères.
+      nameContainsSpecialCharacters: Le nom de personnage contient des caractères
+        spéciaux. Seuls les lettres, les chiffres et les espaces sont autorisés.
+    serverError:
+      noInternetConnection:
+        text: Échec de la connexion au serveur WalkScape. Il se peut que vous n'ayez
+          pas de connexion internet, que le serveur soit indisponible ou qu'un pare-feu
+          bloque la connexion. Merci de vérifier votre connexion internet, puis de
+          réessayer.
+        title: Impossible de se connecter au serveur WalkScape
+      newClientUpdate:
+        text: Votre jeu n'est plus à jour, une nouvelle version est disponible. Merci
+          de télécharger la dernière version du jeu pour continuer a jouer.
+        title: Nouvelle mise à jour client disponible
+      noClosedBetaAccess:
+        text: Votre accès à la <c i=0>Bêta Fermée de WalkScape</c> a expiré. Vous
+          pouvez regagner l'accès en postulant à la Bêta Fermée et en étant accepté
+          lors de la prochaine vague d'admissions, ou immédiatement en soutenant le
+          jeu sur <c i=1>Patreon</c> ou <c i=1>Buy Me a Coffee</c>.\n\nSi vous décidez
+          de soutenir le jeu, liez votre compte Patreon ou Buy Me a Coffee sur votre
+          <c i=1>Page de Compte sur le Portail WalkScape</c> pour retrouver votre
+          accès au jeu. Vous pouvez aussi <c i=1>postuler pour la Bêta Fermée</c>
+          depuis la Page de Compte.
+        title: Accès à la bêta fermée expiré
+      bannedUser:
+        title: Vous avez été banni de manière permanente de WalkScape
+        text: Vous avez été banni de manière permanente de WalkScape. Si vous pensez
+          qu'il s'agit d'une erreur et que vous souhaitez contester cette décision,
+          vous pouvez nous contacter en envoyant un mail à <c i=1>contact@walkscape.app</c>.
+      serverOffline:
+        title: Serveur WalkScape hors-ligne
+        text: Le serveur du jeu est hors-ligne. Cela peut être dû à une maintenance,
+          ou à un problème avec le serveur du jeu. Merci de réessayer ultérieurement.
+      serverMaintenance:
+        title: Serveur WalkScape en maintenance
+        text: Le serveur WalkScape est en cours de maintenance. Merci de réessayer
+          ultérieurement.
+      newUpdate:
+        title: Nouvelle mise à jour
+        text: Le jeu a été mis à jour. Veuillez relancer le jeu pour télécharger la
+          nouvelle mise à jour.
+      unknownError:
+        title: Erreur inconnue
+        text: Erreur inconnue.
+      failureToUpdateContent:
+        text: Le client de jeu a échoué à mettre à jour le contenu. Merci de signaler
+          ceci aux développeurs sur Discord, en incluant des détails sur l'erreur
+          et l'appareil que vous utilisez. Vous pouvez également tenter de fermer
+          le jeu et de l'ouvrir à nouveau.
+        title: Échec de mise à jour du contenu
+      unauthorized:
+        title: Non autorisé
+        text: Vous n'êtes pas autorisé. Veuillez vous reconnecter.
+      invalidSession:
+        title: Session invalide
+        text: Votre session est invalide. Merci de rouvrir le jeu et de vous authentifier
+          à nouveau.
+      connectionError:
+        title: Erreur de connexion
+        text: Une erreur s'est produite lors de la connexion au serveur. Merci de
+          vérifier votre connexion internet, puis de réessayer.
+    gameError:
+      stepLoadingFailed:
+        text: Le client de jeu a échoué à charger les pas. Merci de signaler ceci
+          aux développeurs sur Discord, en incluant des détails sur l'erreur et l'appareil
+          que vous utilisez. Vous pouvez également tenter de fermer le jeu et de l'ouvrir
+          à nouveau.
+        title: Échec de chargement des pas
+      initializingGameFailed:
+        text: Le client de jeu a échoué à s'initialiser. Merci de signaler ceci aux
+          développeurs sur Discord, en incluant des détails sur l'erreur et l'appareil
+          que vous utilisez. Vous pouvez également tenter de fermer le jeu et de l'ouvrir
+          à nouveau.
+        title: Échec d'initialisation du jeu
+      loadingPlayerFailed:
+        title: Échec de chargement du joueur
+        text: Données de joueur incorrectes. Échec du chargement. Merci de contacter
+          les développeurs via Discord ou par mail.
+    fatalError:
+      error: Nous sommes désolés pour cette erreur. N'oubliez pas que le jeu est en
+        bêta fermée, et que les données des joueurs sont sauvegardées quotidiennement.
+    activityCancelled:
+      title: Activité annulée
+      stepsAreInfinite: L'activité en cours a été annulée car vous ne remplissez plus
+        les prérequis pour la compléter.
   confirmations:
     changingStepSource:
       text: Changer la source de comptage de pas peut entraîner la perte des pas qui
