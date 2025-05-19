@@ -63,6 +63,12 @@ singulars:
     nugget:
       requirement: Vereist een <object id="nugget" />.
       name: Klompje
+    processed:
+      requirement: Vereist een <object id="processed" /> materiaal.
+      name: Bewerkt
+    offcut:
+      name: Restant
+      requirement: Vereist een <object id="offcut" />.
   tools:
     ruler:
       requirement: Vereist het dragen van een <object id="ruler" />.
@@ -135,7 +141,7 @@ singulars:
       requirementLevel: Vereist een vishengel welke op z'n minst <keywordRequirements
         /> vereist.
     fishingSpear:
-      name: Visserij speer
+      name: Visspeer
       requirement: Vereist het dragen van een <object id="fishingSpear" />.
       requirementLevel: Vereist een visserij speer welke op z'n minst <keywordRequirements
         /> vereist.
@@ -216,7 +222,7 @@ singulars:
       name: Verzamelgereedschap
     logSplitter:
       requirement: Vereist het dragen van een <object id="item_log_splitter" />.
-      name: Hout Splijter
+      name: Houtklover
     fishingTool:
       name: Visgerei
       requirement: Vereist het dragen van <object id="fishingTool" /> gerelateerd
@@ -259,6 +265,9 @@ singulars:
     skillBook:
       name: Vaardigheidsboek
       requirement: Vereist uitgerust te zijn met een <object id="skillBook" />.
+    huntingTrap:
+      name: Jachtval
+      requirement: Vereist het dragen van een <object id="huntingTrap" />.
   recipes:
     skills:
       cooking:
@@ -354,6 +363,61 @@ singulars:
     food:
       name: Voedsel
       requirement: Vereist <object id="food" />.
+    sandwich:
+      requirement: Vereist een <object id="sandwich" />.
+      name: Boterham
+    fruit:
+      name: Vrucht
+      requirement: Vereist een <object id="fruit" />.
+    beverage:
+      name: Drankje
+      requirement: Vereist een <object id="beverage" />.
+    alcohol:
+      requirement: Vereist <object id="alcohol" />.
+      name: Alcohol
+    water:
+      name: Water
+      requirement: Vereist <object id="water" />.
+    memosphere:
+      requirement: Vereist een <object id="memosphere" />.
+      name: Memosfeer
+  containers:
+    chest:
+      requirement: Vereist een <object id="chest" />.
+      name: Schatkist
+    regionalChest:
+      name: Regionale schatkist
+      requirement: Vereist een <object id="regionalChest" />.
+    skillingChest:
+      requirement: Vereist een <object id="skillingChest" />.
+      name: Vaardigheidsschatkist
+  general:
+    lightSource:
+      requirement: Vereist uitgerust te zijn met een <object id="lightSource" />.
+      name: Lichtbron­
+  misc:
+    trash:
+      name: Afval
+      requirement: Vereist <object id="trash" />.
+    currency:
+      name: Munteenheid
+      requirement: Vereist een <object id="currency" />.
+  achievements:
+    percentage:
+      name: Prestatiepercentage
+      requirementLevel: Geen
+      requirement: geen
+    reward:
+      name: Prestatiebeloning
+      requirement: Vereist een <object id="achievement_reward" />.
+  search:
+    items:
+      consumables:
+        beverage:
+          name: Drankje
+    skills:
+      agility:
+        name: Behendigheid
 consumables:
   cookedFish:
     name: Gekookte vis
