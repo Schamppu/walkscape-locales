@@ -40,6 +40,10 @@ singulars:
           Fähigkeit.
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> während <supp k="skill"/> in <supp k="realm"/>.
     workEfficiency:
       global:
         name: <PLACEHOLDER>
@@ -128,6 +132,14 @@ singulars:
           Fähigkeit.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileRealm:
+        desc: <PLACEHOLDER>
+        text: Global <stat s="doubleAction"/> während in <supp k="realm"/>
+        name: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> während <supp k="skill"/> in <supp k="realm"/>.
     doubleRewards:
       global:
         name: <PLACEHOLDER>
@@ -164,6 +176,14 @@ singulars:
           Fähigkeit.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileRealm:
+        text: Global <stat s="doubleRewards"/> während in <supp k="realm"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleRewards"/> währrend <supp k="skill"/> in <supp k="realm"/>.
     noMaterialsConsumed:
       whileTraveling:
         name: <PLACEHOLDER>
@@ -192,6 +212,10 @@ singulars:
           Fähigkeit.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> während <supp k="skill"/> in <supp k="realm"/>.
     fineMaterialFind:
       whileMainSkill:
         text: <stat s="fineMaterialFind"/> während <supp k="skill"/>
@@ -277,6 +301,10 @@ singulars:
         text: <stat s="craftingOutcome"/> während in<supp k="realm"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> während <supp k="skill"/> in <supp k="realm"/>.
+        name: <PLACEHOLDER>
     experience:
       whileMainSkill:
         text: <stat s="bonusExperience"/> während <supp k="skill"/>
@@ -308,6 +336,14 @@ singulars:
           Fähigkeit.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileRealm:
+        desc: <PLACEHOLDER>
+        text: Global <stat s="bonusExperience"/> während in <supp k="realm"/>
+        name: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> während <supp k="skill"/> in <supp k="realm"/>.
     stepsRequired:
       whileTraveling:
         text: <stat s="stepsRequired"/> beim Reisen
@@ -340,6 +376,14 @@ singulars:
           Fähigkeit.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> während <supp k="skill"/> in <supp k="realm"/>.
+        name: <PLACEHOLDER>
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Global <stat s="stepsRequired"/> während in <supp k="realm"/>
     rollSpecialTable:
       whileMainSkill:
         text: <stat s="rollSpecialTable"/> während <supp k="skill"/>
@@ -401,6 +445,10 @@ singulars:
           Fähigkeit.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="workEfficiency"/> während <supp k="skill"/> in <supp k="realm"/>.
     findGems:
       whileMining:
         text: <stat s="findGems"> Chance Edelsteine zu finden </stat> während <supp
@@ -422,7 +470,7 @@ singulars:
       name: <PLACEHOLDER>
       desc: <PLACEHOLDER>
     gainZeroToTenMoney:
-      text: Möglichkeit, <hl>0</hl> bis <hl>10</hl> Goldstücke zu finden
+      text: Möglichkeit, <hl>1</hl> bis <hl>10</hl> Goldstücke zu finden
       name: <PLACEHOLDER>
       desc: <PLACEHOLDER>
     rollGemPouchTable:
