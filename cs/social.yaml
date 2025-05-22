@@ -1,1 +1,70 @@
-{}
+singulars:
+  party:
+    manage: Spravovat
+    role: Role
+  status:
+    loadingInvites: Kontrola žádostí...
+  relationship:
+    blocked: Tohoto uživatele jste zablokovali
+    inviteSent: Pozvánka odeslána
+    none: Sociální
+    party:
+      member: Člen
+      admin: Správce
+      owner: Majitel
+    friends: Jste přátelé
+    inviteReceived: Obdrželi jste pozvánku
+  actions:
+    buttonLabels:
+      unblock: Odblokovat
+      cancelInvite: Zrušit pozvánku
+      sendInvite: Odeslat žádost o přátelství
+      createParty: Vytvořit skupinu
+      leaveParty: Opustit skupinu
+      leaveAndDestroyParty: Opustit a zrušit skupinu
+      inviteResponse:
+        accept: Přijmout
+        block: Blokovat
+        reject: Odmítnout
+      removeFriend: Odebrat přítele
+    confirmTitle:
+      changeRole: Změnit oprávnění
+      inviteResponse:
+        block: Blokovat uživatele
+      unblock: Odblokovat uživatele
+    confirmDescription:
+      removeFriend: Jsi si jistý/á, že již nechcete být přáteli?
+      unblock: Jste si jisti, že chcete tohoto uživatele odblokovat?
+      cancelInvite: Jste si jisti, že chcete zrušit pozvání tohoto přítele?
+      leaveParty: Jsi si jistý/á, že chceš opustit skupinu?
+      leaveAndDestroyParty: Jste si jistý/á, že chcete odejít a zrušit skupinu? Tuto
+        akci nelze odvolat.
+      changeRole: Jste si jisti, že chcete z <hl> {characterName} </hl> udělat <hl>{partyRole}</hl>?
+      inviteResponse:
+        block: Jste si jisti, že chcete tohoto uživatele zablokovat? Zablokovaní uživatelé
+          vám již nemohou posílat pozvánky o přátelství.
+  createParty:
+    input:
+      partyName: Název skupiny
+      catchphrase: Slogan
+      catchphraseHint: Slogan (volitelné)
+    rules:
+      mayContain: '<bp />Může obsahovat: {list}'
+      noTrailingSpaces: <bp />Nelze začínat ani končit mezerou
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        one: <bp />Nejméně {} znaků
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Nejméně {} znaků
+      maxChar:
+        zero: '-'
+        one: <bp />Maximálně {} znaků
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Maximálně {} znaků
