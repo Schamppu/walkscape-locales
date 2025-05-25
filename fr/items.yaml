@@ -1285,8 +1285,8 @@ singulars:
           desc: Un outil permettant de remodeler le monde à moindre coût.
           name: Ciseau à bois basique
         craftingShirt:
-          desc: Une chemise digne d'un artisan. Facile à nettoyer et assez résistant
-            au dégats régulièrement infligés par les outils d'artisanat.
+          desc: Une chemise digne d'un artisan. Facile à nettoyer et assez résistante
+            aux dégâts régulièrement infligés par les outils d'artisanat.
           name: Chemise d'artisan
         carvingKnife:
           name: Couteau à sculpter
@@ -1300,8 +1300,20 @@ singulars:
             pour vous.
         craftingBoots:
           name: Bottes d'artisan
-          desc: Équipés d'une épaisse semelle qui s'apprête bien à être piétinée pendant
-            de longues heures a l'atelier.
+          desc: Ces bottes sont équipées d'une semelle épaisse, qui peut sans problème
+            être utilisée pendant de longues heures.
+        adjustableWrench:
+          name: Clé à molette
+          desc: Elle est faite à partir d'acier de haute qualité de Braemercia, ce
+            qui la rend quasiment indestructible.
+        slideRuler:
+          name: Règle à calculer
+          desc: Une calculatrice mécanique sophistiquée qui offre diverses façons
+            de résoudre des calculs complexes, afin de vous aider à développer vos
+            créations.
+        simpleWrench:
+          name: Clé basique
+          desc: L'outil parfait pour des bricoleurs amateurs.
       fishing:
         fishermansHat:
           desc: "Ce chapeau est le symbole de la patience du pêcheur et de son lien
@@ -1593,6 +1605,33 @@ singulars:
         prettyPliers:
           desc: Une des meilleures ventes d'Erdwiss ! En promo aujourd'hui avec un
             rabais de 10% à l'Usine de Joaillerie.
+          name: Belles pinces
+        zipPouch:
+          desc: Moyen sécurisé de transporter des gemmes de haute qualité de votre
+            atelier au marché.
+          name: Pochette plastique
+        gemTippedTweezers:
+          name: Pince fine sertie
+          desc: Une pince renforcée par de petits éclats de pierres précieuses.
+        autoAdjustingMandrel:
+          desc: Une merveille technologique venant de Forge-Tempête. Après avoir utilisé
+            cet objet, il est difficile d'imaginer que l'ajustement se faisait à la
+            main autrefois.
+          name: Mandrin auto-ajustant
+        gemistryGuidebook:
+          name: Guide de gemmochimie
+          desc: La meilleure source pour en apprendre plus sur la chimie appliquée
+            à la Joaillerie.
+        darWittsMonocle:
+          name: Monocle des Dar Witt
+          desc: Un héritage des Dar Witt, une famille influente du Port Sombresort.
+        roughSandpaper:
+          name: Papier de verre à gros grain
+          desc: Le papier de verre abîme votre peau si vous le serrez trop.
+        handFile:
+          name: Lime Utile
+          desc: Utile, c'est le mot ! Assurez-vous de nettoyer la poussière après
+            avoir fini.
     versatile:
       backpack:
         desc: 'Un sac à dos en cuir de luxe avec des poches supplémentaires, et beaucoup
@@ -1662,17 +1701,135 @@ singulars:
           l'une contre l'autre comme si elles ne faisaient qu'une.
       herbertsBoots:
         name: Bottes de Serge
+        desc: Des bottes en cuir usées qui aurait bien besoin d'un coup de cirage,
+          mais elles sont utiles pour travailler.
       herbertsPants:
         name: Pantalon de Serge
+        desc: Un vieux pantalon, une taille trop large pour vous. Heureusement, il
+          est accompagné d'une ceinture en cuir, alors tout va bien.
       herbertsShirt:
         name: Chemise de Serge
+        desc: Une chemise rouge à manches longues, avec un col qui peut être relevé.
+          Il lui manque quelques boutons, mais au moins vous êtes habillé.
       herbertsHat:
         name: Chapeau de Serge
+        desc: Un chapeau laineux marron qui réchauffe vos oreilles. Vieux ? Non, c'est
+          vintage.
       herbertsCape:
         name: Cape de Serge
+        desc: Elle est un peu poussiéreuse, ce qui montre que Serge ne l'a pas utilisée
+          depuis une éternité. Peut-être que vous pourrez lui donner une seconde vie.
       trustyTent:
         desc: Cette vieille tente a connu de nombreux propriétaires. Elle est toujours
           transmise à ceux qui ont besoin d'un abri de voyage fiable.
+        name: Tente de confiance
+      screwdriver:
+        desc: De quel côté il faut tourner pour visser ? J'oublie toujours.
+        name: Tournevis
+      properBoots:
+        desc: Des bottes résistantes et confortables, conçues pour être à la fois
+          élégantes et fonctionnelles. Que vous vous promeniez dans les rues de Forge-Tempête
+          ou que vous vous aventuriez dans les jungles de Rid Raddak, ces bottes seront
+          là pour vous.
+        name: Bottes décentes
+      ringOfEel:
+        desc: Cet anneau sigillaire est gravé d'une anguille en train de nager.
+        name: Anneau de l'Anguille
+      sailorsHat:
+        desc: C'est un chapeau blanc immaculé, offert par un gaillard plutôt fin.
+          Quand vous le portez à votre nez, il sent le sel et un peu... les épinards
+          ?
+        name: Chapeau de marin
+      properShirt:
+        desc: Une jolie chemise, mais en restant simple. Utilisable pour des situations
+          de tous les jours.
+        name: Chemise décente
+      oldGoldRing:
+        desc: Cet anneau a perdu son lustre doré et montre des signes de détérioration.
+          Il devait être important pour quelqu'un.
+        name: Vieil anneau d'or
+      jellyfishingNet:
+        desc: Meilleur jour de ma vie !
+        name: Filet à méduses
+      oldSilverRing:
+        desc: Les gravures sur cet anneau ce sont effacées, et il a noirci. Qui sait
+          depuis combien de temps il est ici ?
+        name: Vieil anneau d'argent
+      oldCopperRing:
+        desc: Cet anneau a connu de meilleurs jours. Peut-être que le prêteur sur
+          gage pourra vous en donnera un peu d'argent. Ou peut-être que vous pourrez
+          lui trouver une autre utilité.
+        name: Vieil anneau de cuivre
+      treeScalingClaws:
+        name: Griffes d'escalade
+        desc: Grâce à ces griffes spéciales, plus aucun nid d'oiseau n'est hors de
+          portée.
+      shrimpRing:
+        desc: Peut-être que Sorgo ne le saura pas si tu vends ça au prêteur sur gage
+          - J'ai entendu dire qu'un gars aimait les crevettes, mais il se ferme comme
+          une huître quand on en parle.
+        name: Anneau de la Crevette
+      properCape:
+        desc: Une cape stylée qui ajoute une touche d'élégance à votre ensemble, parfaite
+          pour des événements formels ou si vous voulez vous essayer à la mode.
+        name: Cape décente
+      capeOfTheTrailblazer:
+        desc: Cette cape est le symbole du courage et de la détermination du Précurseur,
+          promettant qu'en la portant, des contes d'échappées osées ne sauront tarder
+          à vous arriver.
+        name: Cape du Précurseur
+      firefliesInJar:
+        name: Lucioles dans un pot
+        desc: Une façon créative et naturelle d'éclairer votre chemin. Malheureusement,
+          elles ne s'éteignent pas à volonté.
+      halflingGloves:
+        name: Gants de Halfelin
+        desc: Des gants populaires auprès des halfelins. Sur des mains de taille normale,
+          ils sont très serrés.
+      luckyRabbitsFootNecklace:
+        name: Collier patte de lapin chanceux
+        desc: Une patte de lapin desséchée qui porte chance. À utiliser avec modération.
+      ringOfHeron:
+        name: Anneau du Héron
+        desc: Cet anneau sigillaire est gravé d'un héron en position de chasse.
+      ringOfBat:
+        name: Anneau de la Chauve-Souris
+        desc: Cet anneau sigillaire est gravé d'une chauve-souris en plein vol.
+      lifeVest:
+        name: Gilet de sauvetage
+        desc: Ce gilet a pour mission de sauver votre vie. C'est un peu votre ange
+          gardien.
+      simpleLifeVest:
+        name: Gilet de sauvetage basique
+        desc: Parfait pour aller faire du kayak. Il y a un embout pour le gonfler.
+      sharkToothNecklace:
+        name: Collier dent de requin
+        desc: Rien de mieux qu'un collier avec une dent de requin pour clamer haut
+          et fort "Je me bats torse nu et à mains nues contre des requins".
+      simpleRing:
+        name: Anneau basique
+        desc: Un anneau brillant couleur laiton. Il n'a pas de gravures délicates
+          ou de pierres précieuses, mais il y a une certaine élégance dans sa simplicité.
+      simpleAmulet:
+        name: Amulette basique
+        desc: Un collier couleur laiton avec un pendentif de la même couleur accroché
+          au bout, avec des formes abstraites dessus.
+      properPants:
+        name: Pantalon décent
+        desc: Faites attention à ne pas le tâcher, ce pantalon est décent !
+      properHat:
+        name: Chapeau décent
+        desc: Un jolie bonnet tricoté qui vous aidera à garder votre tête au chaud
+          pendant vos aventures hivernales.
+      smellySocks:
+        name: Chaussettes puantes
+        desc: Des chaussettes parfaites pour libérer un elfe de maison.
+      adoringFanStatue:
+        name: Statue de fan adorateur
+        desc: "La statue d'un fan qui vous adore. C'est un peu dérangeant, mais aussi
+          bizarrement flatteur. Vous pouvez l'entendre dire :\n<i>\"Oui, Ô Grand Champion
+          ? Que puis-je faire pour vous ? Voulez-vous que je porte votre arme ? Que
+          je cire vos chaussures ? Un petit massage des pieds, peut-être ?\"</i>"
     achievements:
       adventurersBoots:
         name: Bottes de l'Aventurier
