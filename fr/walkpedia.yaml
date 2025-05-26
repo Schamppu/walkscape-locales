@@ -43,9 +43,9 @@ singulars:
           <object id=\"ingredient\" /> et en faire des consommables de type <object
           id=\"food\" /> ou <object id=\"beverage\" /> qui peuvent donner toutes sortes
           de bonus à vos compétences.</li>\n"
-        carpentry: "La <object id=\"carpentry\" /> est une compétence d'artisanat
-          qui consiste à travailler le bois et en manipuler les matériaux comme des
-          <object id=\"plank\" />.\n\n<li><hl>Lieu de départ</hl> : Vous pouvez commencer
+        carpentry: "La <object id=\"carpentry\" /> est une compétence artisanale qui
+          consiste à travailler le bois et en manipuler les matériaux comme des <object
+          id=\"plank\" />.\n\n<li><hl>Lieu de départ</hl> : Vous pouvez commencer
           la <c>menuiserie</c> à <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
           \ /> en consultant les recettes de menuiserie dans le menu d'artisanat <icon
           i=\"crafting\" /> , ou en vous rendant à <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
@@ -55,9 +55,9 @@ singulars:
           même permettre quelques activités de <c>menuiserie</c></li>\n\n<li><hl>Utile
           pour</hl> : Transformer des <object id=\"logs\" /> en <object id=\"plank\"\
           \ /> qui sont utilisées en <object id=\"crafting\" />.</li>\n"
-        fishing: "La <object id=\"fishing\" /> est une compétence essentielle pour
-          attraper du <object id=\"fish\" />.\n\n<li><hl>Lieu de départ</hl> : Vous
-          pouvez commencer la <c>pêche</c> à la <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
+        fishing: "La <object id=\"fishing\" /> est une compétence de récolte essentielle
+          pour attraper du <object id=\"fish\" />.\n\n<li><hl>Lieu de départ</hl>
+          : Vous pouvez commencer la <c>pêche</c> à la <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
           \ /> après avoir eu recours à l' <object id=\"crafting\" /> pour créer votre
           premier <object id=\"fishingNet\" />.</li>\n\n<li><hl>Où trouver</hl> :
           La plupart des lieux proches de points d'eau ont une chance de permettre
@@ -66,6 +66,109 @@ singulars:
           du <object id=\"fish\" /> que vous pouvez ensuite transformer en <object
           id=\"cookedFish\" />, grâce à la <object id=\"cooking\" />, consommable
           pour obtenir des bonus temporaires à vos compétences.</li>\n"
+        foraging: "La <object id=\"foraging\" /> est une compétence de récolte essentielle
+          pour trouver certains matériaux, notamment des <object id=\"plant\" />.\n
+          \n<li><hl>Lieu de départ</hl> : Vous pouvez commencer la <c>collecte</c>
+          directement depuis la <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> via l'activité <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
+          \ />.</li>\n\n<li><hl>Où trouver</hl> : La plupart des lieux naturels (plaines,
+          forêts, collines, montagnes, plages) permettent des activités de <c>collecte</c>,
+          ainsi que certains lieux urbains.</li>\n\n<li><hl>Utile pour</hl> : Récolter
+          des <object id=\"plant\" />, dont certaines sont également des <object id=\"\
+          ingredient\" /> qui peuvent être utilisés par d'autres compétences comme
+          l'<skill skill=\"crafting\"/> et la <skill skill=\"cooking\"/>.</li>\n"
+        smithing: "La <object id=\"smithing\" /> est une compétence artisanale qui
+          consiste à fondre des <object id=\"bar\" /> et forger du métal.\n\n<li><hl>Lieu
+          de départ</hl> : Vous pouvez commencer la <c>forge</c> à <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> via l'activité <object id=\"745d4e6f-5c6a-45a3-a98d-fc88f63bbb25\"
+          /> ou en consultant les recettes de forge dans le menu d'artisanat <icon
+          i=\"crafting\" /> .</li>\n\n<li><hl>Où trouver</hl> : La plupart des lieux
+          urbains peuvent disposer d'une <object id=\"service_forge\" />. Quelques-uns
+          pourraient même permettre quelques activités de <c>forge</c>.</li>\n\n<li><hl>Utile
+          pour</hl> : Fondre du <object id=\"ore\" /> et des <object id=\"nugget\"\
+          \ /> en <object id=\"bar\" /> qui sont utilisés en <object id=\"crafting\"\
+          \ /> et en <object id=\"trinketry\" />.</li>\n"
+        trinketry: "La <object id=\"trinketry\" /> est une compétence artisanale qui
+          consiste à tailler des <object id=\"gem\" /> ainsi qu'à créer des bijoux
+          et accessoires utiles.\n\n<li><hl>Lieu de départ</hl> : Vous pouvez commencer
+          la <c>joaillerie</c> après avoir trouvé quelques <object id=\"plant\" />,
+          issues de la <object id=\"foraging\" />, pour réaliser des recettes de joaillerie
+          basiques depuis le <icon i=\"crafting\" /> menu d'artisanat.</li>\n\n<li><hl>Où
+          trouver</hl> : Les lieux plus prospères ont plus de chances de disposer
+          d'un <object id=\"service_trinketry_bench\" />, dont vous aurez besoin pour
+          réaliser les recettes de joaillerie de niveau supérieur. Il est même possible
+          que certains lieux permettent d'effectuer des activités de <c>joaillerie</c>.</li>\n
+          \n<li><hl>Utile pour</hl> : Tailler une <object id=\"rough_gem\" /> en <object
+          id=\"cut_gem\" />. Une fois que vous en avez une ou un <object id=\"item_trinket\"\
+          \ /> rare en votre possession, ils peuvent être combinés avec le <object
+          id=\"bar\" /> approprié pour créer un <object id=\"item_ring\" /> ou une
+          <object id=\"item_amulet\" /> avantageant vos compétences.</li>\n"
+        crafting: "L' <object id=\"crafting\" /> est une compétence essentielle à
+          la fabrication d'outils.\n\n<li><hl>Lieu de départ</hl> : Vous pouvez commencer
+          l'<c>artisanat</c> immédiatement en utilisant des matériaux <object id=\"\
+          processed\" />, fournis par \"Serge le Serviable\" dans la <object id=\"\
+          location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\" /> ,
+          pour réaliser des recettes de fabrication basiques depuis le <icon i=\"\
+          crafting\" /> menu d'artisanat.</li>\n\n<li><hl>Où trouver</hl> : La plupart
+          des lieux urbains peuvent disposer d'un <object id=\"service_workshop\"
+          /> dont vous aurez besoin pour réaliser les recettes de fabrication de niveau
+          supérieur. Il est même possible que certains lieux permettent d'effectuer
+          des activités d'<c>artisanat</c>.</li>\n\n<li><hl>Utile pour</hl> : Assembler
+          <object id=\"bar\" />, <object id=\"plank\" />, et autres matériaux <object
+          id=\"processed\" /> en éventuels <object id=\"woodcuttingTool\" />, <object
+          id=\"miningTool\" />, <object id=\"fishingTool\" /> ou <object id=\"foragingTool\"\
+          \ /> avantageant leur compétence associée respective et nécessaires à certaines
+          activités.</li>\n"
+        mining: "Le <object id=\"mining\" /> est une compétence de récolte essentielle
+          pour obtenir du <object id=\"ore\" /> et autres matériaux rocheux.\n\n<li><hl>Lieu
+          de départ</hl> : Vous pouvez commencer le <c>minage</c> depuis la <object
+          id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\" /> après
+          avoir eu recours à l' <object id=\"crafting\" /> pour créer votre première
+          <object id=\"pickaxe\" />.</li>\n\n<li><hl>Où trouver</hl> : La plupart
+          des lieux montagneux peuvent permettre d'effectuer des activités de <c>minage</c>,
+          assurez-vous seulement d'emporter l'<object id=\"miningTool\" /> approprié.</li>\n
+          \n<li><hl>Utile pour</hl> : Extraire du <object id=\"ore\" /> et des <object
+          id=\"nugget\" /> que vous pourrez ensuite fondre grâce à votre compétence
+          de <object id=\"smithing\" />. Rarement, il est même possible que vous trouviez
+          une <object id=\"rough_gem\" /> que vous pourrez tailler grâce à votre compétence
+          de <object id=\"trinketry\" />.</li>\n"
+        woodcutting: "Le <object id=\"woodcutting\" /> est une compétence de récolte
+          essentielle pour obtenir des <object id=\"logs\" /> et autres matériaux
+          issus du bois.\n\n<li><hl>Lieu de départ</hl> : Vous pouvez commencer le
+          <c>bûcheronnage</c> dans la <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> après avoir eu recours à l' <object id=\"crafting\" /> pour créer votre
+          première <object id=\"woodcuttingHatchet\" />.</li>\n\n<li><hl>Où trouver</hl>
+          : La plupart des lieux forestiers peuvent permettre d'effectuer des activités
+          de <c>bûcheronnage</c>, assurez-vous seulement d'emporter l'<object id=\"\
+          woodcuttingTool\" /> approprié.</li>\n\n<li><hl>Utile pour</hl> : Obtenir
+          des <object id=\"logs\" /> que vous pourrez ensuite découper grâce à votre
+          compétence de <object id=\"carpentry\" />. Rarement, lors d'une activité
+          de <object id=\"woodcuttingTrees\" />, il est même possible que vous trouviez
+          un <object id=\"item-bird_nest-c459d244-4ef3-41c1-a911-01e18efaeec1\" />
+          pouvant contenir des objets utiles supplémentaires.</li>\n"
+        tailoring: "La <object id=\"tailoring\" /> est une compétence artisanale qui
+          consiste à confectionner des matériaux <object id=\"processed\" /> et créer
+          des vêtements utiles.\n\n<li><hl>Lieu de départ</hl> : Vous pouvez commencer
+          la <c>couture</c> après avoir trouvé quelques <object id=\"plant\" />, issues
+          de la <object id=\"foraging\" />, pour réaliser des recettes de couture
+          basiques depuis le <icon i=\"crafting\" /> menu d'artisanat.</li>\n\n<li><hl>Où
+          trouver</hl> : Certains lieux ont plus de chances de disposer d'un <object
+          id=\"service_loom\" />, dont vous aurez besoin pour réaliser les recettes
+          de couture de niveau supérieur. Il est même possible que certains lieux
+          permettent d'effectuer des activités de <c>couture</c>.</li>\n\n<li><hl>Utile
+          pour</hl> : Transformer des <object id=\"plant\" /> en matériaux <object
+          id=\"processed\" />. Une fois que vous en avez en votre possession, ils
+          peuvent être combinés avec le tissu approprié pour créer des vêtements avantageant
+          vos compétences.</li>\n"
+        hunting: "La <object id=\"hunting\" /> est une compétence de récolte essentielle
+          pour obtenir des <object id=\"ingredient\" />.\n\n<li><hl>Lieu de départ</hl>
+          : Vous pouvez commencer la <c>chasse</c> immédiatement depuis <object id=\"\
+          location\" /> via l'activité <object id=\"activity\" />.</li>\n\n<li><hl>Où
+          trouver</hl> : La plupart des lieux naturels (plaines, forêts, collines,
+          montagnes, plages) permettent des activités de <c>chasse</c>, ainsi que
+          certains lieux urbains.</li>\n\n<li><hl>Utile pour</hl> : Obtenir des <object
+          id=\"ingredient\" /> qui peuvent être utilisés par d'autres compétences
+          comme l'<skill skill=\"crafting\"/> et la <skill skill=\"cooking\"/>.</li>\n"
     item:
       info:
         title: Objet <object id="{obj}">
@@ -168,6 +271,7 @@ singulars:
       inBank: En banque
       purchased: Acheté
       itemsGained: Objets obtenus
+      craftingSources: Recettes sources
     common:
       unknown: Ces informations sont encore inconnues. Continuez d'explorer pour les
         découvrir !
@@ -180,13 +284,23 @@ plurals:
       one: <c>{}</c> activité
       two: <c>{}</c> activités
       other: <c>{}</c> activités
+      zero: '-'
+      few: '-'
+      many: '-'
     recipeRequirementsMet:
       other: <c>{}</c> recettes
       two: <c>{}</c> recettes
+      zero: '-'
+      one: <c>{}</c> recette
+      few: '-'
+      many: '-'
     itemRequirementsMet:
       other: <c>{}</c> objets
       two: <c>{}</c> objets
       one: <c>{}</c> objet
+      zero: '-'
+      many: '-'
+      few: '-'
 maps:
   phrases:
     item:
