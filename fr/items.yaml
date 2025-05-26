@@ -106,10 +106,10 @@ singulars:
           de mer. Elles ont une saveur délicate et un goût légèrement sucré.
         name: Crevettes cuites
       cookedSquid:
-        desc: Le calmar cuit est une merveille culinaire, connue pour sa polyvalence
+        desc: Le calamar cuit est une merveille culinaire, connue pour son utilité
           dans différents plats. Il peut être tendre et savoureux lorsqu'il est préparé
           avec les bonnes techniques.
-        name: Calmar cuits
+        name: Calamar cuit
       cookedStreamEel:
         desc: L'anguille de rivière cuite, adaptée aux rivières et aux ruisseaux,
           est un mets unique à la chair tendre et feuilletée, parfait pour ceux qui
@@ -246,25 +246,65 @@ singulars:
           desc: Les détails sublimes de cette caisse que vous avez trouvée en fouillant
             dans vos fournitures de construction indiquent qu'elle a été fabriquée
             par un maître menuisier.
-          name: Coffre de construction
+          name: Coffre de menuiserie
       foraging:
         foragingChest:
           desc: Un délicieux assortiment d'équipements et d'objets liés à la collecte.
           name: Coffre de collecte
+        sunkenChest:
+          name: Coffre englouti
+          desc: Depuis les profondeurs de la mer, ce coffre est parvenu jusqu'au rivage.
       regional:
         galeforgeChest:
           desc: La rumeur veut que ce coffre soit arrondi pour pouvoir rouler à travers
             la ville. Quelle ingéniosité !
-          name: Coffre de Galeforge
+          name: Coffre de Forge-Tempête
         coinPouch:
           desc: Une petite bourse remplie de pièces. C'est un peu lourd, mais vous
             n'êtes pas à plaindre.
+        syrenthiaChest:
+          desc: Le coffre des profondeurs du monde sous-marin détient surement de
+            nombreux trésors aquatiques.
+          name: Coffre de Syrenthie
+        coralChest:
+          name: Coffre de corail
+          desc: Des coraux multicolores en forme de coffre. Ils bougent comme s'ils
+            étaient sous l'eau.
+        adventureGuildChest:
+          desc: Ce coffre robuste arbore le symbole de la Guilde des Aventuriers.
+          name: Coffre de la guilde des aventuriers
       mining:
         gemPouch:
           name: Sac de gemmes
+        miningChest:
+          name: Coffre de minage
+          desc: Une variété d'objets liés au minage aussi solide que le roc.
       trinketry:
         trinketryChest:
           name: Coffre de joaillerie
+          desc: Une belle boite remplie d'objets de valeur. Espérons que ce ne soit
+            pas un monstre déguisé !
+      woodcutting:
+        woodcuttingChest:
+          name: Coffre de bûcheronnage
+          desc: Un magnifique coffre orné en bois, décoré avec différents types d’écorces.
+            Il était dissimulé entre les racines d’un arbre que vous avez coupé.
+      crafting:
+        craftingChest:
+          name: Coffre d'artisanat
+          desc: Durant votre session d'artisanat, vous avez remarqué une grosse caisse
+            à outils rouge à côté de vos outils personnels.
+      fishing:
+        fishingChest:
+          name: Coffre de pêche
+          desc: La mer regorge de poissons, mais les aquariums abritent ce qu'il y
+            a de plus rares.
+      cooking:
+        cookingChest:
+          name: Coffre de cuisine
+      smithing:
+        smithingChest:
+          name: Coffre de forge
   crafted:
     equipmentSets:
       bronze:
@@ -511,8 +551,8 @@ singulars:
           desc: Un filet de pêche fait à partir de peau ancienne.
       mining:
         basicPickaxe:
-          desc: La pioche de base, humble outil du mineur. À peine plus qu'un bâton,
-            une pierre et un peu de ficelle pour lier le tout.
+          desc: La pioche basique, modeste outil du mineur, n'est rien de plus qu'un
+            baton, une pierre et de la ficelle pour tenir l'ensemble.
           name: Pioche basique
         bronzePickaxe:
           desc: La pioche en bronze évoque le charme rustique et la force inébranlable.
@@ -910,8 +950,8 @@ singulars:
             surtout en plein jour.
         goldOpalRing:
           name: Anneau d'or serti d'une opale
-          desc: "Un anneau d'or gardant en sécurité l'opale éclatante, invitant ceux
-            qui peuvent apprécier son éclat profond à l'observer de plus près. "
+          desc: "Un anneau d'or garde en sécurité l'opale éclatante, invitant ceux
+            qui peuvent apprécier son éclat profond à l'observer de plus près."
         goldTopazRing:
           name: Anneau d'or serti d'une topaze
           desc: Un anneau d'or serti d'une topaze étincelante, presque aveuglante.
@@ -1024,11 +1064,68 @@ singulars:
           name: Bâton de marche
           desc: Un baton en bois résistant avec une poignée en métal confortable pour
             vous procurer une assistance supplémentaire lors de vos aventures à pied.
+        simpleRope:
+          name: Corde simple
+          desc: La corde a plusieurs utilités, l'alpinisme par exemple.
+        flowyTrousers:
+          name: Pantalon flottant
+          desc: Large où il faut, et serré où il faut, ce pantalon est parfait pour
+            des manœuvres dangereuses en terrain urbain.
+        simpleTorch:
+          name: Simple torche
+          desc: Avec un bâton de bois, du tissu et une substance inflammable, on obtient
+            une source de lumière portative. On ne peut pas faire plus simple.
+        runningShorts:
+          name: Short de course
+          desc: Confortable et simple à porter ! Sa couleur bleu vif vous rend plus
+            visible.
+        mapOfJarvonia:
+          desc: La carte montre les terres et les villes du continent du nord.
+          name: Carte de Jarvonie
+        waterBottle:
+          name: Bouteille d'eau
+          desc: Une bouteille en verre remplie d'eau fraîche et propre. Hydratez-vous
+            !
+        mapOfGDTE:
+          name: Carte du GDTE
+          desc: La carte montre la géographie du Grand-Duché de Trellin-Erdwise.
+        toughRope:
+          name: Corde solide
+          desc: Avec cette corde solide, vous pouvez escalader les plus hautes montagnes.
+        runningShirt:
+          name: T-shirt de course
+          desc: Être correctement habillé est important lorsqu'on va courir. Un T-shirt
+            de ce genre est indispensable.
+        clayFrisbee:
+          name: Frisbee en argile
+          desc: Il est relativement lourd et fragile. Espérons que personne ne soit
+            en train de faire du ball-trap dans le coin !
+        goldenFrisbee:
+          name: Frisbee doré
+          desc: Il est simplement plaqué or, ce qui le rend léger mais résistant.
+            Vous aimeriez bien voir une traînée arc-en-ciel quand vous le lancez,
+            mais malheureusement... rien.
+        birchSkis:
+          name: Skis en bois de bouleau
+          desc: Une paire de skis pour débutant. Difficile à contrôler et relativement
+            lents, mais ils vous permettent de descendre une pente plus vite qu'en
+            marchant.
+        oakSkis:
+          name: Skis en bois de chêne
+          desc: Des skis lourds, ce qui les rend rapides mais peu maniables. Au moins,
+            ils sont assez résistants pour ne pas se casser si vous tombez !
+        grapplingHook:
+          name: Grapin
+          desc: Quatre crochets en métal attachés au bout d'une corde.
+        featherCape:
+          name: Cape de plumes
+          desc: Cette cape est aussi légère qu'une plume... Après tout, elle est faite
+            de plumes.
       carpentry:
         dullChisel:
           desc: Il possède un manche en bois et une lame en acier émoussé, mais il
             peut encore produire de beaux objets.
-          name: Ciseau émoussé
+          name: Ciseau à bois émoussé
         handsaw:
           desc: Cette scie incarne l'harmonie entre l'artisan et la nature, promettant
             de façonner le bois avec précision et grâce.
@@ -1043,18 +1140,24 @@ singulars:
           name: Règle précise
         protectiveGlasses:
           name: Lunettes de protection
+          desc: Ces lunettes empêcheront les objets volants de blesser vos yeux...
+            Avec un peu de chance.
         protectiveGloves:
           desc: Il est préférable que le risque de se faire couper les doigts par
             une scie soit réduit à 0 %.
           name: Gants de protection
         protectivePants:
           name: Pantalon de protection
+          desc: Des protections sont cousues sur ce pantalon.
         protectiveShirt:
           name: Chemise de protection
+          desc: Des protections sont cousues sur cette chemise.
         protractor:
           name: Rapporteur
+          desc: C'est un instrument de mesure souvent utilisé en charpenterie.
         sharpChisel:
           name: Ciseau à bois aiguisé
+          desc: Cet outil aiguisé est utilisé pour sculpter du bois.
         simpleRuler:
           desc: Règle en bois, élément essentiel de la panoplie du menuisier. Elle
             peut être utilisée pour mesurer des objets ou tracer des lignes droites.
@@ -1065,12 +1168,15 @@ singulars:
           name: Scie simple
         toolbelt:
           desc: Un accessoire aux multiples facettes qui accueille une série d'instruments
-            de menuiserie
+            de menuiserie.
           name: Ceinture à outils
         woodworkingGlasses:
           desc: Lorsqu'elles sont portées, ces lunettes révèlent les motifs complexes
             et les histoires contenues dans chaque planche.
           name: Lunettes de protection
+        goldenChisel:
+          desc: On dirait bien que l'or pousse sur les ciseaux à bois.
+          name: Ciseau à bois doré
       cooking:
         chefsApron:
           desc: 'Avec ce tablier, chaque repas devient unique, et chaque plat une
@@ -1170,6 +1276,44 @@ singulars:
         magnifyingLens:
           desc: Les fourmis ne sont pas la piste que vous chercher.
           name: Loupe
+        wireSaw:
+          name: Scie à fil
+          desc: Cette scie utilise un fil pour couper de manière mécanique des matériaux
+            solides comme la pierre, le bois, le verre, les métaux, et ainsi de suite.
+            Parfaite pour rendre votre atelier plus performant.
+        simpleChisel:
+          desc: Un outil permettant de remodeler le monde à moindre coût.
+          name: Ciseau à bois basique
+        craftingShirt:
+          desc: Une chemise digne d'un artisan. Facile à nettoyer et assez résistante
+            aux dégâts régulièrement infligés par les outils d'artisanat.
+          name: Chemise d'artisan
+        carvingKnife:
+          name: Couteau à sculpter
+          desc: Ce couteau a une lame, très petite et incurvée , brillante pour peler
+            des copeaux d'un morceau de bois. Ça poignée est beaucoup plus large en
+            comparaison. Couper de la viande ( ou pire, du pain) avec serai un sacrilège
+            impraticable.
+        craftingPants:
+          name: Pantalon d'artisan
+          desc: Pantalon large qui rend la pratique de l'artisanat plus confortable
+            pour vous.
+        craftingBoots:
+          name: Bottes d'artisan
+          desc: Ces bottes sont équipées d'une semelle épaisse, qui peut sans problème
+            être utilisée pendant de longues heures.
+        adjustableWrench:
+          name: Clé à molette
+          desc: Elle est faite à partir d'acier de haute qualité de Braemercia, ce
+            qui la rend quasiment indestructible.
+        slideRuler:
+          name: Règle à calculer
+          desc: Une calculatrice mécanique sophistiquée qui offre diverses façons
+            de résoudre des calculs complexes, afin de vous aider à développer vos
+            créations.
+        simpleWrench:
+          name: Clé basique
+          desc: L'outil parfait pour des bricoleurs amateurs.
       fishing:
         fishermansHat:
           desc: "Ce chapeau est le symbole de la patience du pêcheur et de son lien
@@ -1244,7 +1388,7 @@ singulars:
           desc: Bien qu'elles protègent un peu contre le vent et les terrains difficiles
             lors de vos collectes, il n'y a aucune garantie que vos pieds restent
             secs.
-          name: Chaussures non-étanches
+          name: Bottes non-étanches
         bigBasket:
           desc: Magnifiquement tressé en osier. Il peut facilement contenir tout ce
             que vous collectez.
@@ -1461,6 +1605,33 @@ singulars:
         prettyPliers:
           desc: Une des meilleures ventes d'Erdwiss ! En promo aujourd'hui avec un
             rabais de 10% à l'Usine de Joaillerie.
+          name: Belles pinces
+        zipPouch:
+          desc: Moyen sécurisé de transporter des gemmes de haute qualité de votre
+            atelier au marché.
+          name: Pochette plastique
+        gemTippedTweezers:
+          name: Pince fine sertie
+          desc: Une pince renforcée par de petits éclats de pierres précieuses.
+        autoAdjustingMandrel:
+          desc: Une merveille technologique venant de Forge-Tempête. Après avoir utilisé
+            cet objet, il est difficile d'imaginer que l'ajustement se faisait à la
+            main autrefois.
+          name: Mandrin auto-ajustant
+        gemistryGuidebook:
+          name: Guide de gemmochimie
+          desc: La meilleure source pour en apprendre plus sur la chimie appliquée
+            à la Joaillerie.
+        darWittsMonocle:
+          name: Monocle des Dar Witt
+          desc: Un héritage des Dar Witt, une famille influente du Port Sombresort.
+        roughSandpaper:
+          name: Papier de verre à gros grain
+          desc: Le papier de verre abîme votre peau si vous le serrez trop.
+        handFile:
+          name: Lime Utile
+          desc: Utile, c'est le mot ! Assurez-vous de nettoyer la poussière après
+            avoir fini.
     versatile:
       backpack:
         desc: 'Un sac à dos en cuir de luxe avec des poches supplémentaires, et beaucoup
@@ -1530,17 +1701,135 @@ singulars:
           l'une contre l'autre comme si elles ne faisaient qu'une.
       herbertsBoots:
         name: Bottes de Serge
+        desc: Des bottes en cuir usées qui aurait bien besoin d'un coup de cirage,
+          mais elles sont utiles pour travailler.
       herbertsPants:
         name: Pantalon de Serge
+        desc: Un vieux pantalon, une taille trop large pour vous. Heureusement, il
+          est accompagné d'une ceinture en cuir, alors tout va bien.
       herbertsShirt:
         name: Chemise de Serge
+        desc: Une chemise rouge à manches longues, avec un col qui peut être relevé.
+          Il lui manque quelques boutons, mais au moins vous êtes habillé.
       herbertsHat:
         name: Chapeau de Serge
+        desc: Un chapeau laineux marron qui réchauffe vos oreilles. Vieux ? Non, c'est
+          vintage.
       herbertsCape:
         name: Cape de Serge
+        desc: Elle est un peu poussiéreuse, ce qui montre que Serge ne l'a pas utilisée
+          depuis une éternité. Peut-être que vous pourrez lui donner une seconde vie.
       trustyTent:
         desc: Cette vieille tente a connu de nombreux propriétaires. Elle est toujours
           transmise à ceux qui ont besoin d'un abri de voyage fiable.
+        name: Tente de confiance
+      screwdriver:
+        desc: De quel côté il faut tourner pour visser ? J'oublie toujours.
+        name: Tournevis
+      properBoots:
+        desc: Des bottes résistantes et confortables, conçues pour être à la fois
+          élégantes et fonctionnelles. Que vous vous promeniez dans les rues de Forge-Tempête
+          ou que vous vous aventuriez dans les jungles de Rid Raddak, ces bottes seront
+          là pour vous.
+        name: Bottes décentes
+      ringOfEel:
+        desc: Cet anneau sigillaire est gravé d'une anguille en train de nager.
+        name: Anneau de l'Anguille
+      sailorsHat:
+        desc: C'est un chapeau blanc immaculé, offert par un gaillard plutôt fin.
+          Quand vous le portez à votre nez, il sent le sel et un peu... les épinards
+          ?
+        name: Chapeau de marin
+      properShirt:
+        desc: Une jolie chemise, mais en restant simple. Utilisable pour des situations
+          de tous les jours.
+        name: Chemise décente
+      oldGoldRing:
+        desc: Cet anneau a perdu son lustre doré et montre des signes de détérioration.
+          Il devait être important pour quelqu'un.
+        name: Vieil anneau d'or
+      jellyfishingNet:
+        desc: Meilleur jour de ma vie !
+        name: Filet à méduses
+      oldSilverRing:
+        desc: Les gravures sur cet anneau ce sont effacées, et il a noirci. Qui sait
+          depuis combien de temps il est ici ?
+        name: Vieil anneau d'argent
+      oldCopperRing:
+        desc: Cet anneau a connu de meilleurs jours. Peut-être que le prêteur sur
+          gage pourra vous en donnera un peu d'argent. Ou peut-être que vous pourrez
+          lui trouver une autre utilité.
+        name: Vieil anneau de cuivre
+      treeScalingClaws:
+        name: Griffes d'escalade
+        desc: Grâce à ces griffes spéciales, plus aucun nid d'oiseau n'est hors de
+          portée.
+      shrimpRing:
+        desc: Peut-être que Sorgo ne le saura pas si tu vends ça au prêteur sur gage
+          - J'ai entendu dire qu'un gars aimait les crevettes, mais il se ferme comme
+          une huître quand on en parle.
+        name: Anneau de la Crevette
+      properCape:
+        desc: Une cape stylée qui ajoute une touche d'élégance à votre ensemble, parfaite
+          pour des événements formels ou si vous voulez vous essayer à la mode.
+        name: Cape décente
+      capeOfTheTrailblazer:
+        desc: Cette cape est le symbole du courage et de la détermination du Précurseur,
+          promettant qu'en la portant, des contes d'échappées osées ne sauront tarder
+          à vous arriver.
+        name: Cape du Précurseur
+      firefliesInJar:
+        name: Lucioles dans un pot
+        desc: Une façon créative et naturelle d'éclairer votre chemin. Malheureusement,
+          elles ne s'éteignent pas à volonté.
+      halflingGloves:
+        name: Gants de Halfelin
+        desc: Des gants populaires auprès des halfelins. Sur des mains de taille normale,
+          ils sont très serrés.
+      luckyRabbitsFootNecklace:
+        name: Collier patte de lapin chanceux
+        desc: Une patte de lapin desséchée qui porte chance. À utiliser avec modération.
+      ringOfHeron:
+        name: Anneau du Héron
+        desc: Cet anneau sigillaire est gravé d'un héron en position de chasse.
+      ringOfBat:
+        name: Anneau de la Chauve-Souris
+        desc: Cet anneau sigillaire est gravé d'une chauve-souris en plein vol.
+      lifeVest:
+        name: Gilet de sauvetage
+        desc: Ce gilet a pour mission de sauver votre vie. C'est un peu votre ange
+          gardien.
+      simpleLifeVest:
+        name: Gilet de sauvetage basique
+        desc: Parfait pour aller faire du kayak. Il y a un embout pour le gonfler.
+      sharkToothNecklace:
+        name: Collier dent de requin
+        desc: Rien de mieux qu'un collier avec une dent de requin pour clamer haut
+          et fort "Je me bats torse nu et à mains nues contre des requins".
+      simpleRing:
+        name: Anneau basique
+        desc: Un anneau brillant couleur laiton. Il n'a pas de gravures délicates
+          ou de pierres précieuses, mais il y a une certaine élégance dans sa simplicité.
+      simpleAmulet:
+        name: Amulette basique
+        desc: Un collier couleur laiton avec un pendentif de la même couleur accroché
+          au bout, avec des formes abstraites dessus.
+      properPants:
+        name: Pantalon décent
+        desc: Faites attention à ne pas le tâcher, ce pantalon est décent !
+      properHat:
+        name: Chapeau décent
+        desc: Un jolie bonnet tricoté qui vous aidera à garder votre tête au chaud
+          pendant vos aventures hivernales.
+      smellySocks:
+        name: Chaussettes puantes
+        desc: Des chaussettes parfaites pour libérer un elfe de maison.
+      adoringFanStatue:
+        name: Statue de fan adorateur
+        desc: "La statue d'un fan qui vous adore. C'est un peu dérangeant, mais aussi
+          bizarrement flatteur. Vous pouvez l'entendre dire :\n<i>\"Oui, Ô Grand Champion
+          ? Que puis-je faire pour vous ? Voulez-vous que je porte votre arme ? Que
+          je cire vos chaussures ? Un petit massage des pieds, peut-être ?\"</i>"
     achievements:
       adventurersBoots:
         name: Bottes de l'Aventurier
@@ -1684,6 +1973,13 @@ singulars:
         name: Compas d'aventure
         desc: Ce compas pointe toujours vers le nord, un outil nécessaire pour tout
           aventurier digne de ce nom.
+      bertssuperskis:
+        name: Les super-skis de Bert
+        desc: Les meilleurs skis à utiliser sur de la super-neige.
+      sethsSwampCompass:
+        name: La boussole des marais de Seth
+        desc: La boussole pointe toujours vers le centre du marais, une nécessité
+          pour tout aventurier qui se respecte.
   materials:
     carpentry:
       birchPlank:
@@ -1723,17 +2019,17 @@ singulars:
         name: Planche de saule
       woodScrap:
         name: Débris de bois
-        desc: Des chutes de bois de mauvaise qualité
+        desc: Des chutes de bois de mauvaise qualité.
       coralPlank:
         desc: Une planche faite à partir des plus gros coraux. Elle est robuste tant
           à la surface que dans les milieux sous-marins.
         name: Planche de corail
       woodShaving:
         name: Copeaux de bois
-        desc: Des chutes de bois de qualité moyenne
+        desc: Des chutes de bois de qualité moyenne.
       woodFragment:
-        name: Fragment de bois
-        desc: Des chutes de bois d'une grande qualité
+        name: Débris de bois
+        desc: Des chutes de bois de grande qualité.
       bambooPlank:
         desc: Bien que ça ait pris du temps, la planche flexible a été transformée
           en élément structurel.
@@ -2078,16 +2374,16 @@ singulars:
         name: Lingot de Tarsilium
       metalScrap:
         name: Tas de ferraille
-        desc: Des chutes de métal de mauvaise qualité
+        desc: Des chutes de métal de mauvaise qualité.
       hydriliumBar:
         name: Lingot d'Hydrilium
         desc: Le lingot d'hydrilium est vert pâle.
       metalShaving:
         name: Copeaux de métal
-        desc: Des chutes de métal de qualité moyenne
+        desc: Des chutes de métal de qualité moyenne.
       metalFragment:
         name: Fragment de métal
-        desc: Des chutes de métal d'une grande qualité
+        desc: Des chutes de métal de grande qualité.
       goldBar:
         desc: Que vous utilisiez des pépites ou du minerai, le lingot d'or atteint
           la pureté minimum de 8 carats requise par la Joaillerie.
@@ -2133,8 +2429,9 @@ singulars:
           ces bûches reluisent d'un superbe éclat.
       coral:
         name: Corail
-        desc: Ces coraux peuvent varier en taille, allant de minuscules à massifs,
-          ils peuvent être utilisés pour diverses choses.
+        desc: Ces coraux varient aussi bien en taille qu'en forme ou en couleurs.
+          Chacun d'eux semble être utile pour de nombreuses tâches et recettes de
+          fabrication.
       elmLogs:
         name: Bûches d'orme
         desc: Ces bûches sont connues pour leur souplesse et leur flexibilité.

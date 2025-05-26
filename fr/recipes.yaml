@@ -15,8 +15,8 @@ singulars:
           pour les environnements difficiles.
         name: Découper une planche de palétuvier
       maplePlank:
-        activityDesc: En transformant méticuleusement le bois d'érable en une planche
-          lisse, vous fabriquez une planche d'érable.
+        activityDesc: Vous découpez minutieusement le bois d'érable en une planche
+          lisse. Vous fabriquez une planche d'érable.
         desc: Façonner le bois d'érable en une planche lisse et élégante.
         name: Découper une planche d'érable
       oakPlank:
@@ -45,6 +45,31 @@ singulars:
         desc: Fabriquez une planche de saule, le bois est apprécié pour son absence
           de poids.
         name: Découper une planche de saule
+      bambooPlank:
+        name: Découper une planche de bambou
+    scrap:
+      maplePlankScrap:
+        name: Agglomérer une planche d'érable (Débris)
+        activityDesc: Vous agglomérez minutieusement les débris de bois en une planche
+          lisse. Vous fabriquez une planche d'érable.
+      birchPlankScrap:
+        name: Agglomérer une planche de bouleau (Débris)
+        activityDesc: Avec précision, vous agglomérez les débris de bois en une planche
+          polyvalente. Vous fabriquez une planche de bouleau.
+      pinePlankScrap:
+        name: Agglomérer une planche de pin (Débris)
+      sprucePlankScrap:
+        name: Agglomérer une planche d'épicéa (Débris)
+      oakPlankScrap:
+        name: Agglomérer une planche de chêne (Débris)
+        activityDesc: Avec soin, vous agglomérez les débris de bois en une belle planche.
+          Vous fabriquez une planche de chêne.
+      willowPlankScrap:
+        name: Agglomérer une planche de saule (Débris)
+      teakPlankScrap:
+        name: Agglomérer une planche de teck (Débris)
+      mangrovePlankShavings:
+        name: Agglomérer une planche de palétuvier (Débris)
   crafting:
     tools:
       basicHatchet:
@@ -111,8 +136,8 @@ singulars:
           terrestres plus efficace.
       hydriliumPickaxe:
         name: Fabriquer une pioche en hydrilium
-        desc: Un outil de minage robuste forgé à partir d'une plaque d'hydrilium,
-          conçu pour répondre aux exigences de l'exploration souterraine.
+        desc: Un outil de minage robuste forgé à partir d'un lingot d'hydrilium, conçu
+          pour répondre aux exigences de l'exploration souterraine.
         activityDesc: Vous chauffez un lingot d'hydrilium dans une forge pour le rendre
           malléable, puis vous le façonnez soigneusement en tête de pioche. Après
           l'avoir attaché à un manche en corail, vous affûtez la pointe pour en faire
@@ -131,9 +156,9 @@ singulars:
           collectif.
       hydriliumSickle:
         name: Fabriquer une faucille en hydrilium
-        desc: Un outil de récolte tranchant et robuste fabriqué à partir d'une plaque
+        desc: Un outil de récolte tranchant et robuste fabriqué à partir d'un lingot
           d'hydrilium, façonné et aiguisé à la perfection.
-        activityDesc: Vous chauffez la plaque d'hydrilium dans une forge pour la rendre
+        activityDesc: Vous chauffez le lingot d'hydrilium dans une forge pour le rendre
           malléable, puis vous lui donnez minutieusement la forme courbe d'une lame
           de faucille. Après refroidissement, vous aiguisez le tranchant pour en faire
           un outil de récolte précis et efficace.
@@ -202,10 +227,70 @@ singulars:
         name: Fabriquer un bouclier en bois
         desc: Fabriquer un bouclier en bois à partir de planches.
         activityDesc: Vous fabriquez un bouclier en bois à partir de planches.
+      woodenSword:
+        name: Fabriquer une épée en bois
+        desc: Fabriquer une épée en bois à partir de planches.
+        activityDesc: Vous fabriquez une épée en bois à partir de planches.
     bars:
       goldBar:
         desc: Fondre des pépites d'or en lingot.
         name: Fondre un lingot d'or
+      copperBar:
+        name: Fondre un lingot de cuivre
+      bronzeBar:
+        name: Fondre un lingot de bronze
+      steelBar:
+        name: Fondre un lingot d'acier
+      ironBar:
+        name: Fondre un lingot de fer
+      tarsiliumBar:
+        name: Fondre un lingot de tarsilium
+      farganiteBar:
+        name: Fondre un lingot de farganite
+      hydriliumBar:
+        name: Fondre un lingot d'hydrilium
+      silverBar:
+        name: Fondre un lingot d'argent
+    scrap:
+      bronzeBarScrap:
+        name: Fondre un lingot de bronze (Débris)
+      tarsiliumBarScrap:
+        name: Fondre un lingot de tarsilium (Débris)
+      copperBarScrap:
+        name: Fondre un lingot de cuivre (Débris)
+      ironBarScrap:
+        name: Fondre un lingot de fer (Débris)
+      steelBarScrap:
+        name: Fondre un lingot d'acier (Débris)
+      farganiteBarScrap:
+        name: Fondre un lingot de farganite (Débris)
+    farganite:
+      gemShield:
+        name: Fabriquer un bouclier serti
+      farganiteSword:
+        name: Fabriquer une épée en farganite
+      farganiteShield:
+        name: Fabriquer un bouclier en farganite
+    copper:
+      copperShield:
+        name: Fabriquer un bouclier en cuivre
+      copperSword:
+        name: Fabriquer une épée en cuivre
+    bronze:
+      bronzeSword:
+        name: Fabriquer une épée en bronze
+      bronzeShield:
+        name: Fabriquer un bouclier en bronze
+    steel:
+      steelSword:
+        name: Fabriquer une épée en acier
+      steelShield:
+        name: Fabriquer un bouclier en acier
+    tarsilium:
+      tarsiliumSword:
+        name: Fabriquer une épée en tarsilium
+      tarsiliumShield:
+        name: Fabriquer un bouclier en tarsilium
   tailoring:
     clothing:
       linen:
@@ -219,3 +304,70 @@ singulars:
         name: Préparer une infusion d'ortie
         desc: Un breuvage savoureux potentiellement bénéfique composé de feuilles
           d'ortie, fraîches ou séchées, infusées dans l'eau chaude.
+      bagel:
+        name: Faire un bagel
+      salmonPie:
+        name: Faire une tourte au saumon
+      jellySandwich:
+        name: Faire un sandwich à la confiture
+      sweetCarrotPie:
+        name: Faire une tarte sucrée à la carotte
+      bread:
+        name: Faire du pain
+      fruitCake:
+        name: Faire un gâteau aux fruits
+      friedFishSandwich:
+        name: Faire un sandwich au poisson
+      hamburger:
+        name: Faire un hamburger
+    fish:
+      cookedSalmon:
+        name: Frire un saumon
+      cookedMoray:
+        name: Frire une murène
+      cookedStingray:
+        name: Frire une raie
+      cookedPike:
+        name: Frire un brochet
+      cookedPerch:
+        name: Frire une perche
+      cookedTrout:
+        name: Frire une truite
+      cookedCrayfish:
+        name: Frire une écrevisse
+      cookedSquid:
+        name: Frire un calamar
+      cookedLargemouthBass:
+        name: Frire un achigan à grande bouche
+      cookedShrimp:
+        name: Frire une crevette
+      cookedCarp:
+        name: Frire une carpe
+      cookedJellyfish:
+        name: Frire une méduse
+      cookedLobster:
+        name: Frire un homard
+      cookedSwordfish:
+        name: Frire un espadon
+      cookedShark:
+        name: Frire un requin
+      cookedAnglerfish:
+        name: Frire une baudroie
+  trinketry:
+    gems:
+      shapeRuby:
+        name: Tailler un rubis
+      shapeOpal:
+        name: Tailler une opale
+      shapeStarPearl:
+        name: Tailler une perle
+      shapeWrentmarine:
+        name: Tailler une rent-marine
+      shapeTopaz:
+        name: Tailler une topaze
+      shapeJade:
+        name: Tailler une pierre de jade
+      shapeSunStone:
+        name: Tailler une pierre de soleil
+      shapeEthernite:
+        name: Tailler une éthernite
