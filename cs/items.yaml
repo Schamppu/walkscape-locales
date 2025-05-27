@@ -192,10 +192,15 @@ singulars:
           desc: Říká se, že tato truhla je zaoblená, aby se dala kutálet po městě.
             Jak důmyslné!
           name: Truhla z Galeforge
+        jarvoniaChest:
+          name: Truhla Jarvonie
       mining:
         gemPouch:
           desc: Malý váček plný drahokamů. Když ho držíte v ruce, cítíte jejich tíhu.
           name: Pouzdro na drahokamy
+        miningChest:
+          name: Hornická truhla
+          desc: Neobyčejná rozmanitost předmětů souvisejících s těžbou.
       carpentry:
         carpentryChest:
           name: Truhlářská truhla
@@ -209,6 +214,16 @@ singulars:
           name: Ptačí hnízdo
           desc: Tohle hnízdo spadlo ze stromu, který jsi kácel. Jeho majitel ho už
             nenajde, takže bys mohl zkontrolovat, co v něm je.
+        woodcuttingChest:
+          name: Dřevorubcova truhla
+          desc: Krásně zdobená dřevěná truhla, vyzdobená různými druhy stromové kůry.
+            Byla ukrytá mezi kořeny stromu, který jste pokáceli.
+      agility:
+        agilityChest:
+          desc: Hnědá kožená truhla, která spadla těsně vedle vás, když jste cvičili,
+            i když se zdálo, že nikdo poblíž není. Při bližším zkoumání se zdá, že
+            v ní něco je schované.
+          name: Truhla hbitosti
   crafted:
     equipmentSets:
       bronze:
@@ -699,6 +714,14 @@ singulars:
           desc: Můžete ji naplnit kávou, mlékem, vínem, brandy nebo jakoukoli jinou
             tekutinou, kterou si vzpomenete, a dokonce i zkombinovat několik z nich.
             Nebo ji můžete naplnit vodou a vrátit se z expedice v pořádku a zdraví.
+        birchSkis:
+          desc: Lyže pro začátečníky. Těžko se ovládají a nejsou moc rychlé, ale dostanou
+            vás ze zasněžené sjezdovky rychleji než chůzí.
+          name: Březové lyže
+        walkingStick:
+          desc: Pevná dřevěná hůl s pohodlnou kovovou rukojetí, která vám poskytne
+            extra oporu při vašich turistických dobrodružstvích.
+          name: Vycházková hůl
       carpentry:
         handsaw:
           name: Ruční pila
@@ -910,6 +933,8 @@ singulars:
           name: Ruční lucerna
           desc: Doufejme, že jste si vzali další zápalky, protože pokud svíčka zhasne,
             když jste hluboko v jeskyních, jste ztraceni.
+        steelToeBoots:
+          name: Boty s ocelovou špičkou
       smithing:
         smeltingGoggles:
           name: Svářečské brýle
@@ -1008,6 +1033,12 @@ singulars:
       screwdriver:
         name: Šroubovák
         desc: Kterým směrem otáčet, aby se šroub utáhl? Vždycky na to zapomenu.
+      adoringFanStatue:
+        desc: "Socha fanouška, který vás zbožňuje. Je to trochu strašidelné, a zároveň
+          podivně lichotivé. Slyšíte, jak říká: \n<i>„Ano, ó, velký a mocný Grand
+          Champione? Potřebujete něco? Můžu vám vzít zbraň? Vyleštit vám boty? Možná
+          masáž nohou?“</i>"
+        name: Socha zbožňujícího fanouška
     achievements:
       conservationistHat:
         name: Památkářský klobouk
@@ -1088,6 +1119,31 @@ singulars:
         name: Sběrač odpadků
       treasureHunterHat:
         name: Klobouk lovce pokladů
+      greedyPiggyBank:
+        desc: Pokaždé, když se dovnitř vhodí mince, toto zlaté prasátko hlasitě cinkne.
+        name: Chamtivé prasátko
+      trekkingPoles:
+        desc: Tyto hole poskytují pomoc s udržováním rovnováhy a překonáváním náročného
+          terénu.
+        name: Trekingové hole
+      absorbingAmulet:
+        name: Absorpční amulet
+        desc: Tento amulet, vyrobený ze starověkého kovu, je známý tím, že přitahuje
+          krásné věci.
+      bootsOfSpeed:
+        name: Boty rychlosti
+      conservationistShorts:
+        desc: Tyto kraťasy vám umožňují volný pohyb a mají velké kapsy na nářadí.
+        name: Ochranářské kraťasy
+      conservationistBoots:
+        name: Památkářské boty
+        desc: Tyto modré pohodlné boty jsou také odolné.
+      runningVisor:
+        name: Běžecké hledí
+        desc: Tento červený kšilt chrání vaše oči před sluncem a zároveň umožňuje
+          ochlazovat hlavu skrz horní část.
+      travelersKit:
+        name: Cestovatelská souprava
   materials:
     carpentry:
       birchPlank:
@@ -1150,7 +1206,9 @@ singulars:
       silkwormSilk:
         name: Hedvábí
       snowdrop:
-        name: Snowdrop
+        name: Sněženka
+        desc: Drobný bílý kvítek, který kvete v zimě, jemná připomínka naděje a nových
+          začátků.
       starflower:
         name: Starflower
       stone:
@@ -1229,6 +1287,8 @@ singulars:
         name: Sopečná hornina
       volcanicAsh:
         name: Sopečný popel
+      starPearl:
+        name: Hrubá hvězdicová perla
     rawFish:
       rawCarp:
         desc: Jemná chuť kaprů se dobře hodí k různým kulinářským úpravám. Tyto ryby
@@ -1275,17 +1335,17 @@ singulars:
         name: Syrový krab
     smithing:
       bronzeBar:
-        name: Bronzový ingot
+        name: Bronzová tyč
       copperBar:
-        name: Měděný ingot
+        name: Měděná tyč
       farganiteBar:
-        name: Farganitový ingot
+        name: Farganitová tyč
       ironBar:
-        name: Železný ingot
+        name: Železná tyč
       steelBar:
-        name: Ocelový ingot
+        name: Ocelová tyč
       tarsiliumBar:
-        name: Ingot z Tarsília
+        name: Tarziliová tyč
     woodcutting:
       birchLogs:
         desc: Hladké a světlé, březové dřevo vyzařuje elegantní jednoduchostí.
@@ -1336,6 +1396,8 @@ singulars:
         name: Vlasec
       unidentifiedRemains:
         name: Neidentifikované ostatky
+      adventurersPin:
+        name: Smaltovaný špendlík dobrodruhů
     hunting:
       bones:
         desc: Více kusů kostí.
@@ -1390,3 +1452,14 @@ singulars:
         name: Dřevěná vyřezávaná figurka medvěda
       oldWarSword:
         name: Starý válečný meč
+      jarvonianCrosswordPuzzle:
+        desc: 'Tyto křížovky jsou navrhovány, kopírovány a distribuovány mezi obyvatelstvo
+          Jarvonie jednou za sezónu. Existuje velká soutěživost, protože první, kdo
+          je vyřeší, obdrží finanční odměnu. 1. Horizontální: Hora, kde zmizela těžařská
+          expedice (devět políček)'
+        name: Jarvonská křížovka
+    visas:
+      westernContinentBoatPass:
+        name: Lodní karta západního kontinentu
+        desc: Tato formální permanentka vám opravňuje k projíždění různých míst na
+          lodích a člunech. Je označena malým lodním razítkem.
