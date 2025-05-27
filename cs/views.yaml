@@ -188,6 +188,18 @@ plurals:
       consumableDuration:
         many: '-'
         few: '-'
+        other: Aktivita <object id="{activity}" alwaysShow="true"/> vyžaduje <c>{steps}</c>
+          kroků na akci. Zvolené množství spotřebních předmětů by vylepšilo <c>{actions}
+          akcí</c>.
+        zero: Aktivita <object id="{activity}" alwaysShow="true"/> vyžaduje <c>{steps}</c>
+          na akci. Zvolené množství spotřebních předmětů by vylepšilo <c>{actions}
+          akcí</c>.
+        two: Aktivita <object id="{activity}" alwaysShow="true"/> vyžaduje <c>{steps}</c>
+          kroků na akci. Zvolené množství spotřebních předmětů by vylepšilo <c>{actions}
+          akcí</c>.
+        one: Aktivita <object id="{activity}" alwaysShow="true"/> vyžaduje <c>{steps}</c>
+          kroků na akci. Zvolené množství spotřebních předmětů by vylepšilo <c> {actions}
+          akcí</c>.
 singulars:
   achievements:
     info:
@@ -213,6 +225,7 @@ singulars:
       showRewards: Zobrazit odměny
       unclaimedRewards: 'Nevyzvednuté odměny: '
       totalProgressUnlocks: Odměny za celkový pokrok
+      checkPointUnlocks: Odměny za určitý počet bodů
   crafting:
     phrases:
       materials: Materiály
@@ -227,6 +240,7 @@ singulars:
         daly použít k výrobě.
       noMaterials: Momentálně nemáte k dispozici žádné materiály k výrobě.
       noServiceRequirements: Žádné podmínky použití.
+      requiresService: Vyžaduje službu.
     errors:
       notSameQuality: Materiály musí být buď kvalitní, nebo normální
       noMaterials: Chybí material na vyrobu
@@ -252,7 +266,7 @@ singulars:
       emptySlot: Prázdný slot
       allSkills: Všechny dovednosti
       noItemEquipped: Žádná výbava
-      durationInSteps: Aktivní <c>{steps}</c> <icon i="Kroků" /> steps
+      durationInSteps: Aktivní <c>{steps}</c> <icon i="Kroků" /> kroků
       noFoodConsumables: Žádné <hl>jídlo</hl> ve vašem batohu.
       noPotionConsumables: Žádné <hl>lektvary</hl> ve vašem batohu.
       attributes: Atributy
@@ -468,7 +482,7 @@ singulars:
     phrases:
       me: Já
       show: Zobrazit
-      everyone: Každý
+      everyone: Všichni
       friends: Přátelé
       leaderboards: Žebříčky
       first: První
@@ -542,7 +556,7 @@ singulars:
       noActivity: Žádná aktivita
       notAffectingTraveling: (neovlivňuje efektivitu cestování)
       savedSteps: Uložené kroky
-      inventoryIsOverLimit: Váš batoh je přetížený!
+      inventoryIsOverLimit: Váš batoh je přeplňěný!
       consumables: Spotřební předměty
       workEfficiencyPenalty: <icon i="Work efficiency"/> Globální efektivita práce
         <c>-{penalty}%</c>
@@ -662,6 +676,9 @@ singulars:
       hasNoItemsInBank: Ve vaší bance nejsou žádné vhodné položky.
       collectRewards: Získat odměnu
       giveItems: Vložit předměty
+      youMustBeInLocation: Pro odevzdání položek musíte být na stejném místě jako
+        <object id="{obj}"/>.
+      give: Vložit
     dialogs:
       abandonJob:
         text: Jste si jistý/á, že chcete tuto úlohu opustit? Ztratíte veškerý postup
