@@ -382,6 +382,13 @@ singulars:
         elderhideFishingNet:
           name: Rybářská síť z bezové kůže
           desc: Rybářská síť vyrobená z odolné bezové kůže.
+        coralFishingSpear:
+          desc: Tato rybářská štěpka je vyrobena z korálů a hydrilia. Má několik špičatých
+            konců pro snazší propíchnutí ryby.
+          name: Oštěp pro lov korálů
+        tidalLure:
+          name: Přílivová návnada
+          desc: Návnada vypadá jako vířivka. Velmi účinný pro přilákání ryb.
       mining:
         basicPickaxe:
           name: Základní krumpáč
@@ -521,6 +528,9 @@ singulars:
           name: Teaková ptačí budka
           desc: Tato mistrovsky zpracovaná ptačí budka, vytvořená s péčí a dovedností,
             se stane bezpečným domovem pro ptáky stejného druhu.
+        kelpDriftNet:
+          name: Síť pro unášení řas
+          desc: Téměř nekonečně velká unášecí síť vyrobená z podvodní řasy.
       tailoring:
         qualityLeather:
           name: Kvalitní kůže
@@ -577,6 +587,22 @@ singulars:
           name: Rukavice z bezové kůže
           desc: Tyto rukavice jsou vyrobeny z legendární bezové kůže, díky čemuž přitahují
             pozornost ostatních sběračů, když jdete kolem.
+        hideScraps:
+          name: Odřezky kůže
+          desc: Kusy zničené kůže, které by se daly sestavit do použitelného materiálu.
+        elderHideScraps:
+          desc: Kusy zničené bezové kůže, které by odborník mohl sestavit do použitelného
+            materiálu.
+          name: Zbytky staré kůže
+        tattyMitts:
+          desc: Potrhané látkové palčáky, vyrobené někým s pochybnou dovedností.
+          name: Nošené rukavice
+        elderhideLeather:
+          name: Bezová kůže
+          desc: Pružný materiál, který byl opálen, aby se zabránilo hnilobě.
+        elderHide:
+          name: Starověká kůže
+          desc: Kůže majestátní bestie.
       trinketry:
         silverStarPearlRing:
           desc: Stříbrný prsten osazený leštěnou hvězdicovou perlou, který ve světle
@@ -639,6 +665,10 @@ singulars:
         goldRing:
           name: Zlatý prsten
           desc: Prostý zlatý prsten, nadčasový a cenný ve své čistotě.
+        silverRubyRing:
+          name: Stříbrný rubínový prsten
+          desc: Stříbro, často vídané na prstech nižších šlechticů, v kombinaci s
+            tmavě červeným kamenem je symbolem těch, kteří touží po moci.
       miscellaneous:
         bagOfRocks:
           name: Pytel kamenů
@@ -813,6 +843,11 @@ singulars:
         simplePan:
           name: Jednoduchá pánev
           desc: Tato pánev není nepřilnavá, ale v nouzi vám pomůže.
+        eberhartCorkscrew:
+          name: Vývrtka Eberhart
+          desc: Tato klasická vývrtka vykazuje kvalitu daleko předčící jakoukoli jinou,
+            kterou jste dosud viděli. Rukojeť je ergonomická a vyrobená z ušlechtilého
+            dřeva a spirála je z nerezové oceli s velmi precizní povrchovou úpravou.
       crafting:
         candlehat:
           name: Svícčapka
@@ -880,6 +915,10 @@ singulars:
           name: Rybářské rukavice
           desc: Existují! Legendární rukavice se zářícími konečky prstů, které svým
             kouzlem přitahují nejrůznější úlovky.
+        frozenBait:
+          desc: Je to malinká rybka, která láká větší ryby. Někde v tom je skrytá
+            metafora...
+          name: Zmrazená návnada
       foraging:
         halflingsFeetSlippers:
           name: Půlčíkovo prstové pantofle
@@ -1002,6 +1041,21 @@ singulars:
         woodcuttingGuidebook:
           name: Průvodce řezáním dřeva
           desc: Tato kniha obsahuje obrázky různých dřev nalezených po celých říších.
+        logSplitter:
+          name: Štípačka dřeva
+          desc: Širší čepel sekery ji činí efektivní při štípání polen.
+        forestersPants:
+          name: Foresterovy kalhoty
+          desc: Tyto zelené kalhoty jsou vyrobeny tak, aby odolaly oděrkám a škrábancům
+            od větviček a větví.
+        forestersFlannelShirt:
+          name: Foresterova flanelová košile
+          desc: Tato zelená flanelová košile je teplá a pohodlná. Skvěle se hodí pro
+            práci v přírodě.
+        logBasket:
+          name: Košík na dřevo
+          desc: Dřevěný s rukojetí na přenášení. Ideální pro přenášení dřeva, ale
+            vhodný i pro jiné předměty. Jako další koš na polena.
       trinketry:
         handFile:
           desc: Velmi praktické v ruce, nezapomeňte po použití utřít prach.
@@ -1055,6 +1109,21 @@ singulars:
         desc: Mosazný náhrdelník s podobně zbarveným přívěskem, který má na sobě nějaké
           světlejší barevné, nesmyslné tvary.
         name: Jednoduchý amulet
+      herbertsHat:
+        name: Herbertova čepice
+        desc: Hnědá vlněná čepice, která vám zahřeje i uši. Není stará, je prastará.
+      herbertsShirt:
+        name: Herbertova košile
+      herbertsBoots:
+        name: Herbertovy boty
+      herbertsPants:
+        name: Herbertovy kalhoty
+        desc: Staré džíny, o číslo větší. Naštěstí k nim přichází kožený opasek, takže
+          to není problém.
+      herbertsCape:
+        name: Herbertův plášť
+        desc: Je trochu zaprášený, což je vidět, Herbert ho už dlouho nepoužíval.
+          Možná bys mu mohl dát druhý život.
     achievements:
       conservationistHat:
         name: Památkářský klobouk
@@ -1174,22 +1243,50 @@ singulars:
         name: Smrkové prkno
       willowPlank:
         name: Vrbové prkno
+        desc: Díky jemnému, bledému vzhledu a decentnímu vzoru dřevin vnáší vrbová
+          prkna do vašich tesařských projektů nádech éterické krásy.
       mangrovePlank:
         name: Mangrovové prkno
+        desc: Odolné vůči povětrnostním vlivům, Mangrovové prkno je perfektní volbou
+          pro venkovní tesařské práce, kombinuje pevnost s jedinečným tropickým kouzlem.
       woodScrap:
         name: Dřevěný odpad
+        desc: Nekvalitní dřevěné odřezky.
       bambooPlank:
         name: Bambusové prkno
+        desc: Dalo to trochu práce, ale z ohebného prkna se podařilo vytvarovat konstrukční
+          prvek.
+      teakPlank:
+        name: Teakové prkno
+        desc: Teakové prkno, známé pro svou odolnost a lesklý zlatavě hnědý odstín,
+          je špičkovou volbou pro výrobu robustních a krásných výtvorů.
+      woodShaving:
+        name: Dřevěné hobliny
+        desc: Dřevěné odřezky střední kvality.
+      woodFragment:
+        name: Dřevěný fragment
+        desc: Vysoce kvalitní dřevěné odřezky.
+      coralPlank:
+        name: Korálové prkno
+        desc: Prkno vyrobené z největších korálů. Je pevné jak na hladině, tak i pod
+          vodou.
+      elmPlank:
+        name: Jilmové prkno
+        desc: Prkno z jilmu, užitečné pro tvarování do tvaru luku.
     cooking:
       milk:
         name: Mléko
+        desc: Přímo z krávy, kozy nebo velblouda. Nebo vymačkané z ořechů? Jen vy
+          víte, kde jste tohle našli.
       salt:
         name: Sůl
+        desc: Sůl je nejrozšířenějším zvýrazňovačem chuti v celém Arenum.
       carrot:
         name: Mrkev
         desc: Říká se, že pomáhá vašemu zraku.
       mushroom:
         name: Houba
+        desc: Tato houba je technicky vzato zelenina.
       honey:
         name: Plástev
         desc: Tato plástev je plná čerstvého medu.
@@ -1271,24 +1368,33 @@ singulars:
     mining:
       coal:
         name: Uhlí
+        desc: Skromné a nenáročné uhlí symbolizuje jeho praktičnost jako životně důležitého
+          energetického zdroje.
       copperOre:
-        desc: Díky své načervenalé barvě je měděná ruda výrazným materiálem.
+        desc: Díky své načervenalé barvě vyniká měděná ruda jako výrazný minerál.
         name: Měděná ruda
       farganiteOre:
         name: Farganitová ruda
+        desc: Díky své neústupné síle a podmanivému modrému lesku se farganitová ruda
+          stala symbolem nezlomného odhodlání.
       ironOre:
         name: Železná ruda
+        desc: Železná ruda má drsný a hustý povrch, což odráží její robustní a nerafinovanou
+          povahu.
       tarsiliumOre:
         desc: Hladký a odrazivý povrch tarsíliové rudy zrcadlí okolní svět s téměř
           magickým leskem.
         name: Tarsíliová ruda
       tinOre:
         name: Cínová ruda
+        desc: Jednoduchá a nenápadná cínová ruda prezentuje své přímočaré minerální
+          složení.
       largeStone:
         name: Velký kámen
         desc: Větší kámen než normálně.
       saltCrystal:
         name: Krystal soli
+        desc: Víceúčelové, pokud je nejprve jemně namletá.
       opal:
         name: Hrubý opál
       ethernite:
@@ -1362,6 +1468,21 @@ singulars:
         name: Ocelová tyč
       tarsiliumBar:
         name: Tarziliová tyč
+      silverBar:
+        name: Stříbrná cihla
+      goldBar:
+        name: Zlatá cihla
+      metalScrap:
+        name: Kovový šrot
+        desc: Kovové odřezky nízké kvality.
+      metalShaving:
+        desc: Kovové odřezky střední kvality.
+        name: Kovové odřezky
+      metalFragment:
+        desc: Vysoce kvalitní kovové odřezky.
+      hydriliumBar:
+        name: Hydriliová cihla
+        desc: Hydriliová cihla má světle zelenou barvu.
     woodcutting:
       birchLogs:
         desc: Hladké a světlé, březové dřevo vyzařuje elegantní jednoduchostí.
@@ -1382,6 +1503,9 @@ singulars:
       bambooLogs:
         name: Bambusové polena
         desc: Bambus je ohebný, ale zároveň pevný, což vede k rozmanitému využití.
+      heartwood:
+        name: Jádrové dřevo
+        desc: Toto je jádrové dřevo, má tmavší barvu než ostatní.
     misc:
       trash:
         desc: Sbírka zbytečných, bezcenných věcí. Proč sis tohle vůbec vzal/a?
@@ -1441,6 +1565,8 @@ singulars:
     crafting:
       rope:
         name: Lano
+        desc: Sada pro přežití se neobejde bez lana. Je nezbytné si vyrobit nějaké
+          základní nástroje.
       hydrilium:
         name: Hydrilium
       kelpRope:
@@ -1453,6 +1579,23 @@ singulars:
       aerodynamicThread:
         desc: Vzácná příze, známá svou lehkostí a zároveň velmi pevnou vlastností.
         name: Aerodynamické vlákno
+    trinketry:
+      shrimpTrinket:
+        name: Krevetová cetka
+        desc: Ten drobný náhrdelník s krevetami se ve světle jasně leskne. Jednou
+          by se z něj mohl hodit amulet.
+      eelTrinket:
+        desc: Ten úhoří šperk se ve světle jasně třpytí. Jednou by se to hodilo jako
+          amulet
+        name: Cetka z úhoře
+      batTrinket:
+        desc: Ten netopýří šperk se ve světle jasně leskne. Jednou by se to hodilo
+          jako amulet.
+        name: Netopýří cetka
+      sharkToothTrinket:
+        name: Cetka ze žraločích zubů
+        desc: Cetka ze žraločího zubu se leskne, jasnou září ve světle. To by se jednoho
+          dne hodilo jako amulet.
   collectibles:
     fromActivity:
       veryOldWine:
