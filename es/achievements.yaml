@@ -175,7 +175,7 @@ singulars:
       desc: Sólo un verdadero tasador puede distinguir una basura normal de una fina.
       name: Tesoro ajeno
     gottaCollectThemAll:
-      desc: Llegaré a ser el mejor. El mejor que habrá jamás.
+      desc: Llegaré a ser el mejor. ¡El mejor que habrá jamás!
       name: ¡Hazte con todos!
     tasteTheRainbow:
       desc: Se rumorea que el arco iris sabe a polvo de cuerno de unicornio, pero
@@ -185,19 +185,25 @@ singulars:
       desc: Un gran vestido puede hacerte recordar lo que hay de hermoso en la vida.
       name: A la moda
     humanFish:
-      desc: <PLACEHOLDER>
+      desc: Ser medio humano y medio pez puede ser muy divertido. Todo depende de
+        qué mitad te toque.
       name: Anfibio
   requirements:
-    catchCrabs: Atrapa <numberProgress /> peces mientras pescas.
-    chop5kTrees: Tala <numberProgress /> árboles.
-    collect1kMushrooms: Recolecta <numberProgress /> champiñones.
-    cook20DifferentRecipes: Prepara <numberProgress /> recetas diferentes.
+    catchCrabs: Atrapa <object id="fish" /> mientras <object id="activity_fishing"
+      /> <numberProgress />
+    chop5kTrees: Completa acciones de <object id="woodcuttingTrees" /> <numberProgress
+      />
+    collect1kMushrooms: Recolecta <object id="mushroom" alwaysShow="true" /> durante
+      las actividades de <object id="activity_foraging" />. <numberProgress />
+    cook20DifferentRecipes: Completa diferentes <object id="recipe_cooking" />. <numberProgress
+      />
     craftPickaxeOfHighestQuality: Fabrica un pico de la mayor calidad. <numberProgress
       />
     craftPerfectItem: Fabrica un objeto perfecto. <numberProgress />
-    cookRecipes: Prepara recetas <numberProgress /> veces.
+    cookRecipes: Completa <object id="recipe_cooking" /> <numberProgress />
     findMysteriousG: Encuentra la G misteriosa. <numberProgress />
-    forageHoney: Recolecta <numberProgress /> panales.
+    forageHoney: Encuentra <object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
+      alwaysShow="true" /> durante las actividades. <numberProgress />
     gain99Agility: Sube tu agilidad a nivel <numberProgress />.
     gainRingWhileFishing: Consigue un anillo pescando. <numberProgress />
     goToBarbantok: Ve a la aldea de Barbantok. <numberProgress />
