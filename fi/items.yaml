@@ -491,6 +491,8 @@ singulars:
           name: Farganiittikirves
         ironHatchet:
           name: Rautakirves
+          desc: Raskaalla terällään se on luotettava kumppani niille, ketkä haluavat
+            kesyttää erämaan tai kohdata tuntemattoman.
         steelHatchet:
           name: Teräskirves
         tarsiliumHatchet:
@@ -498,8 +500,11 @@ singulars:
           name: Tarsiliumkirves
         hydriliumLogSplitter:
           name: Hydrilium tukinhalkoja
+          desc: Hydriliumilla vahvistettu halkaisukone.
         hydriliumHatchet:
           name: Hydriliumkirves
+          desc: Kirves, joka on tehty harvinaisesta vedenalaisesta materiaalista nimeltään
+            hydrilium.
       miscellaneous:
         bagOfRocks:
           name: Säkillinen kiviä
@@ -523,6 +528,11 @@ singulars:
           desc: Harvinaisesta vedenalaisesta hydriliumista valmistettu sirppi.
         mangroveBasket:
           name: Mangrovekori
+      hunting:
+        farganiteArrows:
+          name: Farganiitti nuolet
+          desc: Siniset nuolenkärjet saavat ne näyttämään lähes maagisilta. Valmistetaan
+            kuuluisasta farganiitti metallista.
   looted:
     equipmentSets:
       dimensional:
@@ -1197,12 +1207,16 @@ singulars:
         name: Maito
       salt:
         name: Suola
+        desc: Suola on koko Arenumin käytetyin arominvahvenne.
       honey:
         name: Hunajakenno
+        desc: Tästä käsittelemättömästä hunajakennosta valuu tuoretta hunajaa.
       carrot:
         name: Porkkana
+        desc: Sanotaan että se parantaa näkökykyäsi.
       mushroom:
         name: Sieni
+        desc: Nämä sienet ovat käytännössä kasviksia.
     foraging:
       acidSapling:
         desc: Tuskin risunkaan kokoinen, taimi melkein polttaa kätesi koskettaessasi
@@ -1529,6 +1543,7 @@ singulars:
         desc: Vaikka onkin tavallaan iljettävä ja melko haiseva, näyttää silti makealta.
       seashell:
         name: Kotilo
+        desc: Luultavasti joku myy näitä rannalla.
       clam:
         name: Simpukka
         desc: Helmenvalkea ja täysin koskematon. Kaunis näytekappale keräilijälle.
@@ -1541,7 +1556,7 @@ singulars:
           reitti joka kulkee jäätikölle.
       crosswordPuzzle:
         name: Vanha sanaristikko
-        desc: Klassinen ja edelleenkin erittäin suosittu sanapeli.
+        desc: Sanapeli, kaksitoista kirjainta, alkaa s:llä.
       unidentifiedRemains:
         name: Tunnistamattomat jäännökset
         desc: Seikkailijakilta arvostaisi kovasti jos palauttaisit tämän kasan luita
@@ -1561,12 +1576,15 @@ singulars:
     crafting:
       rope:
         name: Köysi
+        desc: Selviytymispakkaus ei ole täydellinen ilman köyttä. Oleellinen, jotta
+          voit valmistaa perustyökaluja.
       hydrilium:
         name: Hydrilium
         desc: Tämä outo materiaali on vuorovetten työpajassa valmistunut vulkaanisesta
           kivestä ja merilevästä.
       kelpRope:
         name: Leväköysi
+        desc: Pitkiä levänpalasia pujotettuna köydeksi.
     hunting:
       darkfeather:
         desc: Tumma linnunsulka, luultavimmin varikselta, harakalta tai muulta tummalta
@@ -1585,6 +1603,12 @@ singulars:
         name: Eläimen turkki
         desc: Tämä eläimen turkki on pehmeä ja lämmittää todella hyvin, jos siitä
           tekee vaatekappaleita.
+      bones:
+        name: Luita
+        desc: Useita luunkappaleita.
+      sinew:
+        name: Jänne
+        desc: Vahvaa syistä kudosta, joka yhdistää lihakset luihin.
     trinketry:
       compassTrinket:
         desc: Kompassihely hohtaa kirkkaasti valossa. Tästä voisi tehdä amuletin jonain
