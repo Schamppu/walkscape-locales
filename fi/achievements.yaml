@@ -137,13 +137,13 @@ singulars:
       desc: Ette varmaan uskoisi, vaikka kertoisin, mutta pystyin juoksemaan kuin
         tuuli. Siitä päivästä lähtien, minne ikinä meninkin, minä juoksin!
     spaceCarsAndBirds:
-      name: Avaruutta, Autoja ja Lintuja
+      name: Mitä kaikkea voisinkaan tehdä
       desc: 'Win a fortune in a game, my life will never be the same...'
     tutorialComplete:
       desc: Olet vihdoin valmis poistumaan lähtöalueelta, eikö niin?
       name: Oppitunti Ohi
     oohShiny:
-      desc: Kuten sanotaan, mahdollisuus löytää tämä hieno asia on 1:200.
+      desc: Kuten sanotaan, mahdollisuus löytää tämä hieno asia on 1:100.
       name: Oijoi, kiiltävä!
     areYouSickleOfItYet:
       name: Etkö vieläkään ole kyllästynyt?
@@ -188,21 +188,47 @@ singulars:
         katsot alas maailmaan.
       name: Ooh, kiiltävämpi!
     youreGonnaNeedaBiggerKitchen:
-      desc: Sinä paistoit hain.
+      desc: Sinä paistoit hain. Ei SITÄ haita.
       name: Tarvitset isomman keittiön
     feedYourInnerChild:
       name: Ruoki sisäistä lastasi
       desc: <PLACEHOLDER>
+    needToGoDeeper:
+      name: Meidän täytyy mennä syvemmälle
+      desc: Joskus sinun täytyy tutkia hieman pidemmälle kuin aiemmin löytääksesi
+        jotain hyvää.
+    theCircleOfLife:
+      name: Elämän kiertokulku
+    shieldWall:
+      desc: Paras hyökkäys on... öö...
+      name: Kilpimuuri
+    moreThanMeetsTheEye:
+      name: Enemmän kuin miltä näyttää
+    aVeryFashionableCoast:
+      desc: Sinusta tuntuu että lopultakin sovit Keskiharjun ja Ikisataman välissä
+        olevan muotipääkaupunki Arenumin asukkaiden joukkoon.
+      name: Todella muodikas rannikko
+    nice:
+      desc: Sinä teit sen.
+      name: Vau.
+    residualRelic:
+      desc: Oikea hely väärässä paikassa voi muuttaa kaiken.
+    lighthouse:
+      desc: Muutu pimeydessä ohjaavaksi valoksi.
+      name: Majakka
   requirements:
     forageHoney: Kerää <numberProgress /> hunajakennoa.
     catchCrabs: Saa <object id="fish" /> tehdessäsi<object id="activity_fishing" />
       <numberProgress />
     chop5kTrees: Suorita <object id="woodcuttingTrees" /> toimintoja<numberProgress
       />
-    collect1kMushrooms: Kerää <numberProgress /> sientä.
+    collect1kMushrooms: Kerää <object id="mushroom" alwaysShow="true" /> <object id="activity_foraging"
+      /> aktiviteeteistä. <numberProgress />
     cook20DifferentRecipes: Kokkaa <numberProgress /> eri reseptiä.
-    craftHatchetOfHighestQuality: Luo korkeimman laadun kirves. <numberProgress />
-    craftPickaxeOfHighestQuality: Luo korkeimman laadun hakku. <numberProgress />
+    craftHatchetOfHighestQuality: Valmista korkeimman laadun <object id="woodcuttingHatchet"
+      />. <numberProgress />
+    craftPickaxeOfHighestQuality: Valmista korkeimman laadun <object id="pickaxe"
+      /> . <numberProgress />
     craftPerfectItem: Luo täydellinen esine. <numberProgress />
     cookRecipes: Kokkaa reseptejä <numberProgress /> kertaa.
     gain99Agility: Etene ketteryyden tasolle <numberProgress />.
