@@ -73,8 +73,8 @@ singulars:
         <keywordRequirements />.
     ring:
       name: Sormus
-      requirement: Vaatii sormuksen.
-      requirementLevel: Vaatii renkaan, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirement: Vaaditaan että sinulla on <object id="item_ring" /> käytössä.
+      requirementLevel: Vaaditaan sormus, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     socks:
       name: Sukat
@@ -90,6 +90,26 @@ singulars:
       name: Kori
       requirement: Vaatii <object id="basket" /> käyttöönotettuna.
       requirementLevel: Vaatii korin, jossa on vähintään <keywordRequirements /> vaatimuksena.
+    amulet:
+      requirement: Vaaditaan että sinulla on <object id="item_amulet" /> käytössä.
+      requirementLevel: Vaaditaan amuletti, jonka vaatimuksissa on vähintään <keywordRequirements
+        /> .
+      name: Amuletti
+    arrows:
+      requirement: Vaaditaan että sinulla on <object id="arrows" /> käytössä.
+      name: Nuolia
+      requirementLevel: Vaaditaan nuolia, joiden vaatimuksissa on vähintään <keywordRequirements
+        />.
+    weapon:
+      name: Ase
+      requirementLevel: Vaaditaan ase, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      requirement: Vaaditaan käytössä oleva <object id="weapon" />.
+    shield:
+      name: Kilpi
+      requirement: Vaaditaan että sinulla on <object id="shield" /> käytössä.
+      requirementLevel: Vaaditaan kilpi, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
   general:
     fuel:
       name: Polttoaine
@@ -208,7 +228,7 @@ singulars:
       requirementLevel: Tarvitset puutyö kirveen, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
     sickle:
-      requirement: Vaatii sirpin.
+      requirement: Vaatii että sinulla on <object id="sickle" /> käytössä.
       requirementLevel: Vaatii sirpin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Sirppi
@@ -423,7 +443,8 @@ singulars:
       requirement: Vaatii ammattilaiset sukellusvälineet.
     treasureHunter:
       name: Aarteenetsijän setti
-      requirement: <PLACEHOLDER>
+      requirement: Vaaditaan että sinulla on käytössä osia <object id="itemset_treasure_hunter"
+        /> setistä.
       requirementLevel: <PLACEHOLDER>
     adventuringTools:
       name: Seikkailijan työkalusetti
@@ -451,6 +472,10 @@ singulars:
       name: Ahjo
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+    bench:
+      name: Korutyöpenkki
+    loom:
+      name: Kangaspuut
   containers:
     regionalChest:
       requirementLevel: Vaatii alueellisen rintakehän, jonka vaatimuksissa on vähintään
