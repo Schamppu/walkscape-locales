@@ -5,6 +5,7 @@ singulars:
         description: WalkPedia je osobní deník vaší postavy. Zde můžete sledovat naučené
           znalosti a statistiky vaší postavy a snadno se orientovat v herním obsahu.
         title: WalkPedia
+        tabText: Domů
     itemList:
       info:
         title: Předměty
@@ -33,6 +34,9 @@ singulars:
     recipeList:
       info:
         title: Recepty
+        description: Recepty jsou způsob, jak si vyrábět předměty. Obvykle vyžadují
+          materiál a službu.
+        tabText: Seznam receptů
     characterList:
       info:
         title: Postavy
@@ -56,6 +60,7 @@ singulars:
         title: Služby
         description: Služby vám poskytují výhody v dané lokalitě. Nejčastěji vám umožňují
           provádět řemesla.
+        tabText: Seznam služeb
   contentPages:
     item:
       info:
@@ -73,11 +78,13 @@ singulars:
         stepsWalked: Provedené kroky
         lastUnlock: Poslední odemčení
         nextUnlock: Další odemčení
+        unlocks: Všechny odemčené
   phrases:
     home:
       content: Obsah
       story: Příběh
       leveling: Levlování
+      combat: Bitva
     activity:
       stepsRequired: Potřebné kroky
       xpGained: Získané XP
@@ -87,6 +94,9 @@ singulars:
       level: LVL
       stepsToLevelUp: 'Kroky pro zvýšení úrovně:'
       stepsWalked: Provedené kroky
+      actionsCompleted: Akce dokončena
+      maxWorkEfficiency: Maximální efektivita práce
+      each: každý
     item:
       inInventory: V batohu
       inBank: V bance
@@ -99,9 +109,18 @@ singulars:
       abilities: Schopnosti
       dropped: Vyhozeno
       activitySources: Zdroj aktivity
+      fromChests: Z truhel
+      fromCrafting: Z výroby
+      opened: Otevřeno
+      itemsGained: Získané položky
+      chestSources: Zdroj truhel
+      craftingSources: Zdroj výroby
     location:
       realm: Oblast
       activities: Aktivity
+    common:
+      unknown: Tento obsah je vaší postavě stále neznámý. Pokračujte v prozkoumávání
+        a zobrazte si jeho všechny podrobnosti!
 maps:
   phrases:
     item:
@@ -110,6 +129,8 @@ maps:
         "loot": Kořist
         "container": Truhly
         "collectible": Sběratelské předměty
+        "consumable": Spotřební materiál
+        "crafted": Vyrobeno
 plurals:
   skillUnlocks:
     itemRequirementsMet:
