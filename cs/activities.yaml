@@ -73,6 +73,13 @@ singulars:
         desc: Netopýři opouštějí jeskyni a letí severovýchodním směrem. Sledujete
           je z jejich jarního stanoviště a ve dne v noci běžíte, abyste našli jejich
           další stanoviště. Možná se sem nějakou dobu nevrátíš.
+    syrenthia:
+      merfolkDancing:
+        name: Namořnický tanec
+        desc: Provádění tance mořských lidí, stejně jako to dělají podvodní lidé,
+          vyžaduje hodně dovedností. S každým pokusem se zlepšujete v pohybu v souladu
+          s ostatními tanečníky, dokud nedosáhnete plynulého pohybu, připomínajícího
+          hejno ryb v jejich synchronizovaném pohybu.
   fishing:
     jarvonia:
       lakeFishing:
@@ -85,8 +92,40 @@ singulars:
         name: Rybolov na rybníku
       seaFishingNet:
         name: Mořský rybolov (síťí)
+        desc: Na zimním pobřeží najdete odlehlé místo a nahodíte síť do klidných,
+          chladných vod a užíváte si poklidného a samotářského mořského rybolovu.
       seaFishingRod:
         name: Mořský rybolov (prut)
+        desc: Podél zimního pobřeží najdete odlehlé místo a nahodíte prut do klidné,
+          chladné vody, kde si užíváte klidné samoty mořského rybolovu.
+      seaFishingCage:
+        name: Mořský rybolov (klecový)
+        desc: Proud bohatý na živiny přináší do oblasti nejrůznější korýše.
+    gdte:
+      magnetFishing:
+        name: Magnetický rybolov
+        desc: 'Vytahování věcí z vodní plochy silným magnetem se málokdy vyplatí,
+          ale pomáhá k několika dobrým věcem: čistí životní prostředí a pomáhá řešit
+          zločiny. Dodržujte související předpisy a bavte se! Můžete vytáhnout cokoli!'
+      bogFishingNet:
+        name: Rybolov v bažinách (síť)
+        desc: Nahodíš síť do bažiny. Voda je kalná, ale stále vidíš ryby, jak kolem
+          plavou. Trpělivě čekáš, až se ti chytí do sítě.
+      bogFishingSpear:
+        desc: 'Zatímco se schováváte pod kalnou bažinatou vodou, připravíte si oštěp,
+          připravený zaútočit, jakmile se ryba přiblíží dostatečně blízko. Neprůhledná
+          voda ztěžuje viditelnost, ale váš cíl je jasný: Něco chytít.'
+        name: Rybaření v bažinách (oštěp)
+    syrenthia:
+      seaFishingSpear:
+        name: Mořský rybolov (oštěp)
+        desc: S pevně svíraným oštěpem plavete kolem vraku lodi a neustále hlídáte
+          jakoukoli velkou rybu, která se odváží přiblížit na dostřel.
+      predatorHunting:
+        name: Lov predátorů (oštěp)
+        desc: Inspirováni rybařením, budete se prořezávat hlubokou vodou, s intenzivním
+          vědomím svého okolí a každou buňkou svého těla připravenou zaútočit na bestie
+          dříve, než ony zaútočí na vás.
   foraging:
     gdte:
       forestForaging:
@@ -108,6 +147,16 @@ singulars:
         desc: Chytání motýlů vyžaduje trpělivost a dobrou síť. I když je jejich honění
           zábavné, nejúčinnější možností je chytit je, když jsou v klidu. Obdivováním
           a následným vypuštěním zachováte jejich roli v křehké přírodní rovnováze.
+      erdwiseDumpsterDiving:
+        desc: Uprostřed labyrintu uliček města, prozkoumáváte zapomenutá zákoutí,
+          prohrabujete se vyřazenými drobnostmi v naději, že mezi nimi objevíte skryté
+          poklady.
+      summerCaveForaging:
+        desc: Netopýři si tu v létě nacházejí domov. Je tma, raději si vezměte světlo.
+        name: Letní jeskynní shánění potravy
+      trellinDumpsterDiving:
+        desc: Uprostřed labyrintu uliček města prozkoumáváte zapomenutá zákoutí, prohledáváte
+          odhozené drobnosti v naději, že mezi nimi objevíte skryté poklady.
     global:
       litterLooting:
         desc: Ve shonu středověkého města pročesáváš vyhozené harampádí, s nadějí
@@ -144,14 +193,26 @@ singulars:
         desc: Hledáte cokoli, co stojí za objevení, v rozlehlém a prázdně vypadajícím
           ledovci. V této naprosté samotě se možná lépe poznáte, ale je tu opravdu
           něco k objevování?
+      caveForaging:
+        name: Jarní shánění potravy v jeskyni
+        desc: Netopýři si tu na jaře vytvářejí domov. Je tma, raději si vezměte světlo.
     syrenthia:
       seashellForaging:
         desc: Při hledání vzácných mušlí plavete blízko mořského dna. Většina leží
           skrytá pod pískem, zatímco jiné se drží zákoutí a štěrbin podvodních skal.
+        name: Sbírání mušlí
       wreckDiving:
         name: Potápění k vrakům
         desc: Ponoříte se hluboko do vraku lodi zvaného Casbrantova hrobka v naději,
           že najdete poklad.
+      kelpForaging:
+        name: Sběr mořských řas
+        desc: S hojností řas, které se kolem vás pohupují, si každou z nich pečlivě
+          prohlédnete, než si opatrně utrhnete tu nejlepší.
+      merfolkFarmForaging:
+        desc: Přístup ke společné mořské farmě vám dává svobodu shánět potravu na
+          nekonečných podvodních zemědělských polích. Najdete zde širokou škálu rostlin,
+          které čekají na sklizeň.
   mining:
     global:
       mineCoal:
@@ -161,8 +222,12 @@ singulars:
         name: Těžba uhlí
       mineCopperOre:
         name: Těžba měděné rudy
+        desc: Rytmické cinkání vašeho krumpáče o skalnatý povrch naplňuje vzduch,
+          zatímco vytrvale těžíte měděnou rudu.
       mineFarganiteOre:
         name: Těžba farganitové rudy
+        desc: S potem a slzami pomalu vytahujete část farganitu, navzdory jeho obrovské
+          tvrdosti.
       mineIronOre:
         name: Těžba železné rudy
         desc: Každý švih krumpáčem odhaluje skromnou krásu železné rudy, spolehlivé
@@ -173,6 +238,13 @@ singulars:
           je vždy těžké vidět černou rudu v tmavém prostředí.
       mineTarsiliumOre:
         name: Těžba tarsilové rudy
+        desc: Při vaší snaze těžit tarsiliumovou rudu se hluboké, ozvěnou dunící komory
+          Země stanou vaším plátnem a objev každé nové žíly se cítí jako odhalení
+          kusu historie.
+      mineTinOre:
+        name: Těžit cínovou rudu
+        desc: Zvuk tvého krumpáče rezonuje těžebním místem, zatímco neúnavně sekáte
+          a odhalujete skryté žíly cínové rudy, které čekají na objevení.
     jarvonia:
       goldPanning:
         name: Rýžování zlata
@@ -189,11 +261,34 @@ singulars:
       stoneQuarrying:
         name: Těžba kamene
         desc: Kámen a skála!
+      spelunking:
+        desc: Plazíš se po tvrdé zemi jako ještěrka. Zlověstné myšlenky ti zatemňují
+          mysl a téměř tě paralyzují. Na chvíli se ti je podaří odsunout stranou a
+          pokračovat. Brzy se před tebou objeví nová neprobádaná cesta a naplní tě
+          radostí
+        name: Jeskyňářství
     syrenthia:
       mineTarsiliumOre:
         name: Těžba tarsiliové rudy
         desc: Překvapen nálezem tarsiliumových rud pod vodou je začnete těžit bez
           velkého váhání.
+      mineVolcanicRock:
+        name: Těžit vulkanickou horninu
+        desc: Mávnutí krumpáčem pod vodou je to náročné, ale občas se při nárazu na
+          sopečnou skálu uvolní dostatečně velký kus, který si pak nacpete do batohu.
+      fossilMining:
+        desc: Veškerou svou pozornost věnujete hledání starověkých fosilií, hledání
+          zázraků z minulosti.
+        name: Těžit zkameněliny
+      caveDiving:
+        name: Jeskynní potápění
+        desc: Statečně (nebo hloupě) se ponoříte do temných, rozlehlých jeskyní. Tato
+          aktivita je jednou z nejnebezpečnějších v celém Arenu. Rozhodně vám rozbuší
+          srdce a adrenalin vám naplní žíly.
+    gdte:
+      underwaterAqueductDigging:
+        desc: Vykopejte cestu pro tesaře, kteří přijdou za vámi. Odstraňte sutiny
+          v cestě a zároveň dbejte na to, aby se plocha nezřítila.
   woodcutting:
     jarvonia:
       cutBirchTrees:
@@ -219,6 +314,34 @@ singulars:
         name: Stříhání větví
         desc: Prořezávání větví nízko u země snižuje riziko lesních požárů v této
           oblasti.
+      cutWillowTrees:
+        desc: Široké kmeny těchto vrb se ukazují být výzvou, ale díky svým obratným
+          a silným švihům se ti je podaří jeden po druhém srazit na zem.
+        name: Pokácet vrby
+      cutMangroveTrees:
+        name: Pokácet mangrovové stromy
+        desc: Dáváte si pozor, abyste nezakopli o jejich zamotané kořeny, a zároveň
+          usilovně pracujete na získání klád těchto fascinujícím způsobem tvarovaných
+          stromů.
+      firewoodMaking:
+        name: Výroba palivového dřeva
+        desc: S trpělivostí, potem, úsilím a svou věrnou sekerou nemilosrdně štípete
+          polena. Kéž byste je dokázali štípat holýma rukama. Museli byste být přinejmenším
+          superhrdina.
+      cutTeakTrees:
+        desc: Pot na čele, puchýře na prstech, ale jste odhodlaní sehnat pár polen
+          z tohoto odolného a pevného dřeva.
+        name: Pokácet teakové stromy
+    syrenthia:
+      coralCutting:
+        name: Ořezávání korálů
+        desc: Obklopují tě korály, některé vysoké jako stromy. Mávneš sekerou a jeden
+          po druhém je kácíš. Na rozdíl od stromů na hladině se vznášejí, místo aby
+          padaly na zem.
+    global:
+      cutBambooLogs:
+        name: Pokácet bambus
+        desc: Udeříš sekerkou do bambusu. Vydá to uspokojivý křupavý zvuk.
   smithing:
     jarvonia:
       flameStoking:
