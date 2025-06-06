@@ -8,8 +8,8 @@ singulars:
         xpToNext: XP jusqu'au prochain niveau
         xpTo99: XP jusqu'au niveau 99
         stepsWalked: Pas effectués
-        nextUnlock: Prochain jalon
-        lastUnlock: Dernier jalon
+        nextUnlock: Jalon suivant
+        lastUnlock: Jalon précédent
         unlocks: Tous les jalons
         unlocksDesc: Voir quel contenu est débloqué en améliorant cette compétence.
         fromLevelToLevel: Du niveau <c>{from}</c> au niveau <c>{to}</c>
@@ -31,18 +31,18 @@ singulars:
           est primordiale pour se déplacer plus vite à travers Arenum puisque l'améliorer
           vous permet de voyager plus rapidement.</li>\n"
         cooking: "La <object id=\"cooking\" /> est une compétence artisanale qui consiste
-          à préparer de la <object id=\"food\" /> et d'autres consommables alimentaires.\n
-          \n<li><hl>Lieu de départ</hl> : Vous pouvez commencer la <c>cuisine</c>
+          à préparer de la <object id=\"food\" /> et d'autres consommables alimentaires.\n\
+          \ \n<li><hl>Lieu de départ</hl> : Vous pouvez commencer la <c>cuisine</c>
           à <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
-          \ /> via l'activité <object id=\"a34e2643-5c41-4d15-94de-8df53d3d4c19\"
-          /> ou en suivant une <object id=\"recipe_cooking\" />.</li>\n\n<li><hl>Où
+          \ /> via l'activité <object id=\"a34e2643-5c41-4d15-94de-8df53d3d4c19\"\
+          \ /> ou en suivant une <object id=\"recipe_cooking\" />.</li>\n\n<li><hl>Où
           trouver</hl> : La plupart des lieux urbains peuvent disposer d'une <object
           id=\"service_kitchen\" />. Il est même possible qu'il y en ait d'autres
-          ailleurs attendant de l'aide pour des activités de <c>cuisine</c>.</li>\n
-          \n<li><hl>Utile pour</hl> : Préparer du <object id=\"fish\" /> ou tout autre
-          <object id=\"ingredient\" /> et en faire des consommables de type <object
-          id=\"food\" /> ou <object id=\"beverage\" /> qui peuvent donner toutes sortes
-          de bonus à vos compétences.</li>\n"
+          ailleurs attendant de l'aide pour des activités de <c>cuisine</c>.</li>\n\
+          \ \n<li><hl>Utile pour</hl> : Préparer du <object id=\"fish\" /> ou tout
+          autre <object id=\"ingredient\" /> et en faire des consommables de type
+          <object id=\"food\" /> ou <object id=\"beverage\" /> qui peuvent donner
+          toutes sortes de bonus à vos compétences.</li>\n"
         carpentry: "La <object id=\"carpentry\" /> est une compétence artisanale qui
           consiste à travailler le bois et en manipuler les matériaux comme des <object
           id=\"plank\" />.\n\n<li><hl>Lieu de départ</hl> : Vous pouvez commencer
@@ -67,8 +67,8 @@ singulars:
           id=\"cookedFish\" />, grâce à la <object id=\"cooking\" />, consommable
           pour obtenir des bonus temporaires à vos compétences.</li>\n"
         foraging: "La <object id=\"foraging\" /> est une compétence de récolte essentielle
-          pour trouver certains matériaux, notamment des <object id=\"plant\" />.\n
-          \n<li><hl>Lieu de départ</hl> : Vous pouvez commencer la <c>collecte</c>
+          pour trouver certains matériaux, notamment des <object id=\"plant\" />.\n\
+          \ \n<li><hl>Lieu de départ</hl> : Vous pouvez commencer la <c>collecte</c>
           directement depuis la <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
           \ /> via l'activité <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
           \ />.</li>\n\n<li><hl>Où trouver</hl> : La plupart des lieux naturels (plaines,
@@ -80,8 +80,8 @@ singulars:
         smithing: "La <object id=\"smithing\" /> est une compétence artisanale qui
           consiste à fondre des <object id=\"bar\" /> et forger du métal.\n\n<li><hl>Lieu
           de départ</hl> : Vous pouvez commencer la <c>forge</c> à <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
-          \ /> via l'activité <object id=\"745d4e6f-5c6a-45a3-a98d-fc88f63bbb25\"
-          /> ou en consultant les recettes de forge dans le menu d'artisanat <icon
+          \ /> via l'activité <object id=\"745d4e6f-5c6a-45a3-a98d-fc88f63bbb25\"\
+          \ /> ou en consultant les recettes de forge dans le menu d'artisanat <icon
           i=\"crafting\" /> .</li>\n\n<li><hl>Où trouver</hl> : La plupart des lieux
           urbains peuvent disposer d'une <object id=\"service_forge\" />. Quelques-uns
           pourraient même permettre quelques activités de <c>forge</c>.</li>\n\n<li><hl>Utile
@@ -97,12 +97,12 @@ singulars:
           trouver</hl> : Les lieux plus prospères ont plus de chances de disposer
           d'un <object id=\"service_trinketry_bench\" />, dont vous aurez besoin pour
           réaliser les recettes de joaillerie de niveau supérieur. Il est même possible
-          que certains lieux permettent d'effectuer des activités de <c>joaillerie</c>.</li>\n
-          \n<li><hl>Utile pour</hl> : Tailler une <object id=\"rough_gem\" /> en <object
-          id=\"cut_gem\" />. Une fois que vous en avez une ou un <object id=\"item_trinket\"\
-          \ /> rare en votre possession, ils peuvent être combinés avec le <object
-          id=\"bar\" /> approprié pour créer un <object id=\"item_ring\" /> ou une
-          <object id=\"item_amulet\" /> avantageant vos compétences.</li>\n"
+          que certains lieux permettent d'effectuer des activités de <c>joaillerie</c>.</li>\n\
+          \ \n<li><hl>Utile pour</hl> : Tailler une <object id=\"rough_gem\" /> en
+          <object id=\"cut_gem\" />. Une fois que vous en avez une ou un <object id=\"\
+          item_trinket\" /> rare en votre possession, ils peuvent être combinés avec
+          le <object id=\"bar\" /> approprié pour créer un <object id=\"item_ring\"\
+          \ /> ou une <object id=\"item_amulet\" /> avantageant vos compétences.</li>\n"
         crafting: "L' <object id=\"crafting\" /> est une compétence essentielle à
           la fabrication d'outils.\n\n<li><hl>Lieu de départ</hl> : Vous pouvez commencer
           l'<c>artisanat</c> immédiatement en utilisant des matériaux <object id=\"\
@@ -110,9 +110,9 @@ singulars:
           location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\" /> ,
           pour réaliser des recettes de fabrication basiques depuis le <icon i=\"\
           crafting\" /> menu d'artisanat.</li>\n\n<li><hl>Où trouver</hl> : La plupart
-          des lieux urbains peuvent disposer d'un <object id=\"service_workshop\"
-          /> dont vous aurez besoin pour réaliser les recettes de fabrication de niveau
-          supérieur. Il est même possible que certains lieux permettent d'effectuer
+          des lieux urbains peuvent disposer d'un <object id=\"service_workshop\"\
+          \ /> dont vous aurez besoin pour réaliser les recettes de fabrication de
+          niveau supérieur. Il est même possible que certains lieux permettent d'effectuer
           des activités d'<c>artisanat</c>.</li>\n\n<li><hl>Utile pour</hl> : Assembler
           <object id=\"bar\" />, <object id=\"plank\" />, et autres matériaux <object
           id=\"processed\" /> en éventuels <object id=\"woodcuttingTool\" />, <object
@@ -126,8 +126,8 @@ singulars:
           avoir eu recours à l' <object id=\"crafting\" /> pour créer votre première
           <object id=\"pickaxe\" />.</li>\n\n<li><hl>Où trouver</hl> : La plupart
           des lieux montagneux peuvent permettre d'effectuer des activités de <c>minage</c>,
-          assurez-vous seulement d'emporter l'<object id=\"miningTool\" /> approprié.</li>\n
-          \n<li><hl>Utile pour</hl> : Extraire du <object id=\"ore\" /> et des <object
+          assurez-vous seulement d'emporter l'<object id=\"miningTool\" /> approprié.</li>\n\
+          \ \n<li><hl>Utile pour</hl> : Extraire du <object id=\"ore\" /> et des <object
           id=\"nugget\" /> que vous pourrez ensuite fondre grâce à votre compétence
           de <object id=\"smithing\" />. Rarement, il est même possible que vous trouviez
           une <object id=\"rough_gem\" /> que vous pourrez tailler grâce à votre compétence
