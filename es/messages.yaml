@@ -2,14 +2,21 @@ plurals:
   dialogs:
     deleteClass:
       title: ¿Estás seguro de que quieres eliminar?
+      text:
+        one: Eliminar objetos no se puede deshacer. El objeto está referenciado en
+          otros objetos {} veces.
+        other: Eliminar objetos no se puede deshacer. El objeto está referenciado
+          en otros objetos {} veces.
+        two: Eliminar objetos no se puede deshacer. El objeto está referenciado en
+          otros objetos {} veces.
 singulars:
   messages:
     saveSuccesful:
       text: Los cambios se han guardado correctamente.
-      title: Guardado con éxito
+      title: ¡Guardado con éxito!
     saveUnsuccesfullLootTables:
       text: La tabla de botín contiene filas que no tienen ningún objeto asociado.
-      title: Fallo al guardar
+      title: Fallo al guardar.
     comingSoon:
       title: Próximamente
       text: Este contenido <hl>no está disponible</hl> en la versión actual de WalkScape.
@@ -22,6 +29,15 @@ singulars:
       text: Esta opción está aún en desarrollo y muchas de sus funcionalidades <hl>no
         están aún disponibles</hl>. ¡Puedes comenzar a probarla ya o bien volver más
         adelante cuando esté completamente implementada!
+    stepsNotCountedRealTime:
+      title: Los pasos no se registran en tiempo real
+      textIOS: Mientras estés usando una fuente de pasos distinta del <icon i="Phone
+        small" /> <c>Phone</c>, los pasos no se contarán en tiempo real. Dependiendo
+        de tu dispositivo, puede que necesites sincronizar los pasos manualmente desde
+        otra aplicación o abrir Apple Health para sincronizarlos con el juego. Este
+        mensaje desaparecerá una vez hayas sincronizado al menos <c>5000</c> pasos
+        desde tu dispositivo portátil. Puedes cambiar la fuente de pasos a <icon i="Phone
+        small" /> <c>Phone</c> desde los <c>Settings</c>.
   popups:
     skillLevel:
       skillLevelUp: '{skillName} sube de nivel'
@@ -70,8 +86,13 @@ singulars:
     serverError:
       noClosedBetaAccess:
         title: Sin acceso a la beta cerrada
-        text: No tienes acceso a la beta cerrada. O tu acceso limitado ha caducado,
-          o nunca has tenido acceso.
+        text: Tu acceso a <c i=0>WalkScape Closed Beta has expired</c>. Puedes recuperar
+          tu acceso solicitando nuevamente la Beta Cerrada y siendo aceptado en una
+          futura ronda, o de inmediato apoyando el juego en <c i=1>Patreon</c> o <c
+          i=1>Buy Me a Coffee</c>. Si decides apoyar el juego, vincula tu cuenta de
+          Patreon o Buy Me a Coffee en la <c i=1>WalkScape Portal Account page</c>
+          para recuperar el acceso al juego. También puedes <c i=1>apply for beta
+          access</c> desde la página de cuenta.
       newClientUpdate:
         title: Nueva actualización del juego disponible
         text: Tu juego no está actualizado, y hay una nueva versión disponible. Por
@@ -84,8 +105,20 @@ singulars:
         title: El servidor de WalkScape está en mantenimiento
       newUpdate:
         title: Nueva actualización
+        text: El juego ha sido actualizado. Por favor, reinicia el juego para descargar
+          la nueva actualización.
       unknownError:
         title: Error desconocido.
+      invalidSession:
+        text: Tu sesión no es válida. Por favor, vuelve a abrir el juego e inicia
+          sesión de nuevo.
+      bannedUser:
+        title: Has sido baneado permanentemente de WalkScape
+      unauthorized:
+        text: Acceso denegado. Por favor, inicia sesión nuevamente.
+        title: No tienes permiso
+      connectionError:
+        title: Error de conexión
     characterValidation:
       nameTooShort: El nombre de tu personaje ha de tener 3 letras o más.
       nameContainsSpecialCharacters: El nombre del persona contiene caracteres especiales.
@@ -97,3 +130,59 @@ singulars:
         debe tener una longitud mayor de tres letras.
     activityCancelled:
       title: Actividad cancelada
+      stepsAreInfinite: La actividad actual fue cancelada porque ya no cumples con
+        los requisitos para completarla.
+    gameError:
+      loadingPlayerFailed:
+        text: Datos del jugador inválidos. No se pudo cargar. Contacta a los desarrolladores
+          por Discord o email.
+        title: Error al cargar el jugador
+      stepLoadingFailed:
+        title: Error al cargar los pasos
+        text: El cliente del juego no pudo cargar los pasos. Por favor, reporta este
+          problema a los desarrolladores en Discord, incluyendo detalles del error
+          y de tu dispositivo. También puedes intentar abrir el juego nuevamente para
+          ver si los pasos se cargan correctamente.
+      initializingGameFailed:
+        title: Error al inicializar el juego
+        text: El cliente del juego no pudo inicializarse. Por favor, reporta este
+          problema a los desarrolladores en Discord, incluyendo detalles del error
+          y de tu dispositivo. También puedes intentar abrir el juego nuevamente para
+          ver si se carga correctamente.
+  info:
+    game:
+      equipGearSetSomeFailed:
+        text: No se pudieron equipar algunos objetos del conjunto. Es posible que
+          el conjunto sea inválido o que no cumplas los requisitos para equipar ciertos
+          objetos.
+        title: No se logró equipar el equipo seleccionado
+      equipGearFailed:
+        text: No se pudo equipar el objeto. Por favor, inténtalo de nuevo.
+        title: No se pudo equipar el objeto
+      importGearSetFailed:
+        title: No se pudo importar el conjunto de equipo
+        text: Error al importar el conjunto de equipo. Los datos del conjunto podrían
+          estar corruptos o ser inválidos.
+      importGearSetTooManyTools:
+        title: El conjunto de equipo tiene demasiadas herramientas
+        text: El conjunto de equipo tenía más herramientas de las permitidas.
+      equipGearSetFailed:
+        title: No se pudo equipar un conjunto de equipo
+        text: No se pudo equipar el conjunto de equipo. Es probable que el conjunto
+          que intentaste equipar sea inválido o esté dañado.
+      withdrawZero:
+        text: No puedes retirar una cantidad igual o menor a cero.
+        title: No se pudo retirar
+      changingActivityFailed:
+        title: No se pudo cambiar la actividad
+        text: No se pudo cambiar la actividad. O bien ya la estás realizando o no
+          está disponible.
+      withdrawTooFew:
+        text: No tienes suficientes artículos para retirar.
+  confirmations:
+    changingStepSource:
+      text: Cambiar tu contador de pasos podría causar la pérdida de pasos no sincronizados.
+        Asegúrate de sincronizarlos antes de hacer el cambio.
+      lastSyncText: Tus pasos se sincronizaron por última vez a las {time}.
+      neverSyncedText: Tus pasos no han sido sincronizados.
+      title: ¿Deseas cambiar la fuente de pasos?

@@ -39,7 +39,7 @@ maps:
         none: Žádné
         nose: Nos
         outfit: Oblečení
-        'faceAccessory': Příslušenství na obličej
+        'faceAccessory': Doplňky na obličej
         'eyeAccessory': Oční doplňky
         'backAccessory': Příslušenství na záda
       raceTypes:
@@ -60,7 +60,7 @@ maps:
     boolSettings:
       'showFpsCounter': Zobrazit FPS
       'leftHandedMode': Režim pro levou ruku
-      'inventoryCollapsed': Zhuštění inventáře
+      'inventoryCollapsed': Zhuštění batohu
       'showRecipesRequirementsAreMet': Požadavky na úroveň jsou splněny
       'alwaysStopWhenInventoryFull': Automaticky se zastaví, když je batoh plný
       'shaderOutlineRendering': Zobrazit obrysy pomocí shaderů
@@ -188,6 +188,18 @@ plurals:
       consumableDuration:
         many: '-'
         few: '-'
+        other: Aktivita <object id="{activity}" alwaysShow="true"/> vyžaduje <c>{steps}</c>
+          kroků na akci. Zvolené množství spotřebních předmětů by vylepšilo <c>{actions}
+          akcí</c>.
+        zero: Aktivita <object id="{activity}" alwaysShow="true"/> vyžaduje <c>{steps}</c>
+          na akci. Zvolené množství spotřebních předmětů by vylepšilo <c>{actions}
+          akcí</c>.
+        two: Aktivita <object id="{activity}" alwaysShow="true"/> vyžaduje <c>{steps}</c>
+          kroků na akci. Zvolené množství spotřebních předmětů by vylepšilo <c>{actions}
+          akcí</c>.
+        one: Aktivita <object id="{activity}" alwaysShow="true"/> vyžaduje <c>{steps}</c>
+          kroků na akci. Zvolené množství spotřebních předmětů by vylepšilo <c> {actions}
+          akcí</c>.
 singulars:
   achievements:
     info:
@@ -213,6 +225,7 @@ singulars:
       showRewards: Zobrazit odměny
       unclaimedRewards: 'Nevyzvednuté odměny: '
       totalProgressUnlocks: Odměny za celkový pokrok
+      checkPointUnlocks: Odměny za určitý počet bodů
   crafting:
     phrases:
       materials: Materiály
@@ -223,10 +236,11 @@ singulars:
       requiresOneOfTheFollowing: Je vyžadován jeden z následujících materiálů.
       rewards: Odměny
       showingRecipiesThatUses: Zobrazují se recepty, které používají
-      noMaterialsThatCouldBeUsed: V inventáři nemáte žádné materiály, které by se
-        daly použít k výrobě.
+      noMaterialsThatCouldBeUsed: V batohu nemáte žádné materiály, které by se daly
+        použít k výrobě.
       noMaterials: Momentálně nemáte k dispozici žádné materiály k výrobě.
       noServiceRequirements: Žádné podmínky použití.
+      requiresService: Vyžaduje službu.
     errors:
       notSameQuality: Materiály musí být buď kvalitní, nebo normální
       noMaterials: Chybí material na vyrobu
@@ -252,7 +266,7 @@ singulars:
       emptySlot: Prázdný slot
       allSkills: Všechny dovednosti
       noItemEquipped: Žádná výbava
-      durationInSteps: Aktivní <c>{steps}</c> <icon i="Kroků" /> steps
+      durationInSteps: Aktivní <c>{steps}</c> <icon i="Kroků" /> kroků
       noFoodConsumables: Žádné <hl>jídlo</hl> ve vašem batohu.
       noPotionConsumables: Žádné <hl>lektvary</hl> ve vašem batohu.
       attributes: Atributy
@@ -323,6 +337,7 @@ singulars:
       selling: Prodat {amount}
       total: Celkem
       trade: OBCHOD
+      restockIn: 'Nové zásoby za: '
   characterCreation:
     phrases:
       characterName: Jméno postavy
@@ -459,6 +474,7 @@ singulars:
       stats: Statistiky
       totalSteps: Celkový počet kroků
       totalSkillXp: Celková dovednost XP
+      highestStepsIn24Hours: Nejvíce kroků za 24 hodin
   tutorial:
     phrases:
       noMoreMessages: Přestaňte zobrazovat návody
@@ -467,7 +483,7 @@ singulars:
     phrases:
       me: Já
       show: Zobrazit
-      everyone: Každý
+      everyone: Všichni
       friends: Přátelé
       leaderboards: Žebříčky
       first: První
@@ -532,16 +548,16 @@ singulars:
       friends: Přátelé
   popupBubbles:
     phrases:
-      overEncumbered: Váš inventář je plný, nesete příliš mnoho věcí.
+      overEncumbered: Váš batoh je plný, nesete příliš mnoho věcí.
       arrivedToLocation: Dorazili jste do <object id={location} />
   activity:
     phrases:
-      stopWhenOverEncumbered: Zastavit, až když je inventář plný
+      stopWhenOverEncumbered: Zastavit, až když je batoh plný
       options: Možnosti
       noActivity: Žádná aktivita
       notAffectingTraveling: (neovlivňuje efektivitu cestování)
       savedSteps: Uložené kroky
-      inventoryIsOverLimit: Váš batoh je přetížený!
+      inventoryIsOverLimit: Váš batoh je přeplňěný!
       consumables: Spotřební předměty
       workEfficiencyPenalty: <icon i="Work efficiency"/> Globální efektivita práce
         <c>-{penalty}%</c>
@@ -661,6 +677,9 @@ singulars:
       hasNoItemsInBank: Ve vaší bance nejsou žádné vhodné položky.
       collectRewards: Získat odměnu
       giveItems: Vložit předměty
+      youMustBeInLocation: Pro odevzdání položek musíte být na stejném místě jako
+        <object id="{obj}"/>.
+      give: Vložit
     dialogs:
       abandonJob:
         text: Jste si jistý/á, že chcete tuto úlohu opustit? Ztratíte veškerý postup
@@ -698,7 +717,7 @@ singulars:
       noAction: Žádná akce
       holdToCast: 'Podržením odešlete'
       holdToUse: Podržte pro použití
-      useConsumable: Použijte spotřební materiál
+      useConsumable: Použít
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Nejsou splněny podmínky použití:'

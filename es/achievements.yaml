@@ -4,7 +4,7 @@ singulars:
       desc: Poderes cósmicos fenomenales, dentro de esta lamparita.
       name: 'No hay un genio tan genial'
     anIdiotSandwhich:
-      desc: "Para ti la tortilla,\n¿con o sin cebolla?"
+      desc: "-¿Qué eres?\n\\n- Un sandwich tonto"
       name: Mi primer bocadillo de tortilla
     andMyAxe:
       desc: ¡Dejad que vengan! ¡Aún queda un enano con vida en Moria!
@@ -133,7 +133,7 @@ singulars:
         de las propiedades mágicas de los anillos.
     oohShiny:
       name: ¡Oh, brillante!
-      desc: Dicen que la posibilidad de encontrar algo fino es 1 entre 200.
+      desc: Dicen que la posibilidad de encontrar algo fino es 1 entre 100.
     arcticExplorer:
       name: Explorador ártico
       desc: Puedes considerarte un orgulloso jarvoniano, pues conoces esta tierra
@@ -145,7 +145,7 @@ singulars:
       desc: ¡Nada sienta mejor que un cofre gratis!
       name: Cazador de tesoros
     spaceCarsAndBirds:
-      name: Espacio, coches y pájaros
+      name: Todas Las Cosas Que Podría Hacer
       desc: Yo nunca me rindo. Tendría que estar muerto o completamente incapacitado.
         Y cuando digo nunca, me refiero a que nunca debí enamorarme, vivir sin ti,
         cariño, lo que me está costando. - Camelon Musk
@@ -175,7 +175,7 @@ singulars:
       desc: Sólo un verdadero tasador puede distinguir una basura normal de una fina.
       name: Tesoro ajeno
     gottaCollectThemAll:
-      desc: Llegaré a ser el mejor. El mejor que habrá jamás.
+      desc: Llegaré a ser el mejor. ¡El mejor que habrá jamás!
       name: ¡Hazte con todos!
     tasteTheRainbow:
       desc: Se rumorea que el arco iris sabe a polvo de cuerno de unicornio, pero
@@ -185,43 +185,69 @@ singulars:
       desc: Un gran vestido puede hacerte recordar lo que hay de hermoso en la vida.
       name: A la moda
     humanFish:
-      desc: <PLACEHOLDER>
+      desc: Ser medio humano y medio pez puede ser muy divertido. Todo depende de
+        qué mitad te toque.
       name: Anfibio
+    moreThanMeetsTheEye:
+      desc: Viniste a por diamantes pero encontraste una pala. Los misterios de  la
+        fábrica de cacharros de Erdwise son innumerables.
+      name: Las apariencias engañan...
+    oohShinier:
+      name: Ooh, ¡más brillante!
+    youreGonnaNeedaBiggerKitchen:
+      desc: Te has hecho a un tiburón, pero no EL tiburon.
+      name: Vas a necesitar una cocina más grande
+    feedYourInnerChild:
+      name: Alimenta a tu niño interno
+    aVeryFashionableCoast:
+      name: Una costa bastante moderna
+    nice:
+      desc: Lo has logrado.
+      name: Wow.
   requirements:
-    catchCrabs: Atrapa <numberProgress /> peces mientras pescas.
-    chop5kTrees: Tala <numberProgress /> árboles.
-    collect1kMushrooms: Recolecta <numberProgress /> champiñones.
-    cook20DifferentRecipes: Prepara <numberProgress /> recetas diferentes.
-    craftPickaxeOfHighestQuality: Fabrica un pico de la mayor calidad. <numberProgress
+    catchCrabs: Atrapa <object id="fish" /> mientras <object id="activity_fishing"
+      /> <numberProgress />
+    chop5kTrees: Completa acciones de <object id="woodcuttingTrees" /> <numberProgress
       />
+    collect1kMushrooms: Recolecta <object id="mushroom" alwaysShow="true" /> durante
+      las actividades de <object id="activity_foraging" />. <numberProgress />
+    cook20DifferentRecipes: Completa diferentes <object id="recipe_cooking" />. <numberProgress
+      />
+    craftPickaxeOfHighestQuality: Fabrica un<object id="pickaxe" /> de la mayor calidad.
+      <numberProgress />
     craftPerfectItem: Fabrica un objeto perfecto. <numberProgress />
-    cookRecipes: Prepara recetas <numberProgress /> veces.
+    cookRecipes: Completa <object id="recipe_cooking" /> <numberProgress />
     findMysteriousG: Encuentra la G misteriosa. <numberProgress />
-    forageHoney: Recolecta <numberProgress /> panales.
-    gain99Agility: Sube tu agilidad a nivel <numberProgress />.
+    forageHoney: Encuentra <object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
+      alwaysShow="true" /> durante las actividades. <numberProgress />
+    gain99Agility: Sube tu agilidad a nivel <numberProgress />
     gainRingWhileFishing: Consigue un anillo pescando. <numberProgress />
-    goToBarbantok: Ve a la aldea de Barbantok. <numberProgress />
-    gainSocksFromActivity: Consigue calcetines como recompensa de una actividad. <numberProgress
-      />
-    craftHatchetOfHighestQuality: Fabrica un hacha de la mayor calidad. <numberProgress
-      />
+    goToBarbantok: Ve a la aldea de<object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" /> <numberProgress />
+    gainSocksFromActivity: Consigue <object id="item_socks" /> como recompensa de
+      una actividad. <numberProgress />
+    craftHatchetOfHighestQuality: Fabrica un <object id="woodcuttingHatchet" /> de
+      la mayor calidad. <numberProgress />
     haveEverySlotFilled: Ten un objeto equipado en cada uno de los huecos. <numberProgress
       />
     haveRingsEquipped: Ten dos anillos equipados. <numberProgress />
-    have5DifferentGems: Ten <numberProgress /> gemas diferentes en tu inventario.
+    have5DifferentGems: Ten diferentes tipos de <object id="cut_gem" /> en tu inventario.<numberProgress
+      />
     levelUpAnySkill: Sube de nivel cualquier habilidad. <numberProgress />
-    makeSandwich: Prepara <numberProgress /> sándwiches.
-    mine10kOres: Extrae <numberProgress /> menas de cualquier tipo.
-    mine1kGoldOres: Extrae <numberProgress /> menas de oro.
+    makeSandwich: Prepara <object id="sandwich" /><numberProgress />
+    mine10kOres: Extrae <object id="ore" /> de cualquier tipo.<numberProgress />
+    mine1kGoldOres: Extrae <object id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f"
+      alwaysShow="true" />.<numberProgress />
     useALamp: Usa una lámpara de EXP. <numberProgress />
-    walkSteps: Camina <numberProgress /> pasos.
+    walkSteps: Camina un total de pasos.<numberProgress />
     walkStepsWithoutGear: Camina <numberProgress /> pasos sin llevar nada equipado.
-    walkStepsInDay: Camina <numberProgress /> pasos en un día.
-    characterLevel: Consigue <numberProgress /> niveles de personaje.
-    haveCoins: Consigue <numberProgress /> monedas.
+    walkStepsInDay: Camina <numberProgress /> pasos en 24 horas.
+    characterLevel: Consigue un personaje de nivel <numberProgress />
+    haveCoins: Consigue<icon i="money small"/> un total de <numberProgress />
     haveAllSkillsLevel: Consigue todas las habilidades a nivel. <numberProgress />
-    haveFoodStackQuantity: Amontona <numberProgress /> unidades de una misma comida.
-    mineOres: Extrae <numberProgress /> menas.
+    haveFoodStackQuantity: Amontona <object id="food" /> . <numberProgress />
+    mineOres: Extrae<object id="ore" /> <object id="activity_mining" />.<numberProgress
+      />
     haveBankStacks: Consigue <numberProgress /> montones en el banco.
     exploreJarvonia: Explora todas las localizaciones de Jarvonia. <numberProgress
       />
@@ -238,5 +264,5 @@ singulars:
     useMemosphere: Usa <numberProgress /> memosfera.
     findIceSickle: Encuentra una <hl>herramienta muy rara</hl> en el Glaciar. <numberProgress
       />
-    goToNoiselessPass: Ve a la localización llamada Paso Silencioso. <numberProgress
-      />
+    goToNoiselessPass: Ve a la localización llamada <object id="location-noiseless_pass-e081df71-97eb-4708-90b0-f33e61b2a0c7"
+      alwaysShow="true" /> <numberProgress />

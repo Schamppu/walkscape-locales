@@ -10,7 +10,7 @@ singulars:
         text: Глобальный <stat s="chestFind"/> если есть <supp k="achievementPoints"/>
         desc: <PLACEHOLDER>
       whileMainSkill:
-        text: <stat s="chestFind"/> для умения <supp k="skill"/>
+        text: <stat s="chestFind"/> для навыка <supp k="skill"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       global:
@@ -25,7 +25,7 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="chestFind"/> для умения <supp k="skill"/> в локации <supp k="keyword"/>.
+        text: <stat s="chestFind"/> для навыка <supp k="skill"/> в локации <supp k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -37,7 +37,7 @@ singulars:
       whileSkillGroup:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="chestFind"/> для любого умения из группы <supp k="skillGroup"/>.
+        text: <stat s="chestFind"/> для любого навыка из группы <supp k="skillGroup"/>.
     workEfficiency:
       global:
         name: <PLACEHOLDER>
@@ -58,7 +58,7 @@ singulars:
       whileRealmAndMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> для умения <supp k="skill"/> в области <supp
+        text: <stat s="workEfficiency"/> для навыка <supp k="skill"/> в области <supp
           k="realm"/>
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
@@ -68,7 +68,7 @@ singulars:
       whileSkillGroup:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> для любого умения из группы <supp k="skillGroup"/>.
+        text: <stat s="workEfficiency"/> для любого навыка из группы <supp k="skillGroup"/>.
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -76,12 +76,12 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> для умения <supp k="skill"/> в локации <supp
+        text: <stat s="workEfficiency"/> для навыка <supp k="skill"/> в локации <supp
           k="keyword"/>.
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> для умения <supp k="skill"/> в области <supp
+        text: <stat s="workEfficiency"/> для навыка <supp k="skill"/> в области <supp
           k="realm"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
@@ -108,19 +108,21 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="craftingOutcome"/> для умения <supp k="skill"/>
+        text: <stat s="craftingOutcome"/> для навыка <supp k="skill"/>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="craftingOutcome"/> для умения <supp k="skill"/> в локации <supp
+        text: <stat s="craftingOutcome"/> для навыка <supp k="skill"/> в локации <supp
           k="keyword"/>.
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="craftingOutcome"/> в области <supp k="realm"/>
+      whileMainSkillAndRealm:
+        text: <stat s="craftingOutcome"/> пока<supp k="skill"/>в<supp k="realm"/>.
     fineMaterialFind:
       whileSkillGroup:
-        text: <stat s="fineMaterialFind"/> для любого умения из группы <supp k="skillGroup"/>.
+        text: <stat s="fineMaterialFind"/> для любого навыка из группы <supp k="skillGroup"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileRealm:
@@ -128,11 +130,11 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkill:
-        text: <stat s="fineMaterialFind"/> для умения <supp k="skill"/>
+        text: <stat s="fineMaterialFind"/> для навыка <supp k="skill"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
-        text: <stat s="fineMaterialFind"/> для умения <supp k="skill"/> в локации
+        text: <stat s="fineMaterialFind"/> для навыка <supp k="skill"/> в локации
           <supp k="keyword"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -152,7 +154,7 @@ singulars:
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="fineMaterialFind"/> для умения <supp k="skill"/> в области
+        text: <stat s="fineMaterialFind"/> для навыка <supp k="skill"/> в области
           <supp k="realm"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
@@ -160,7 +162,7 @@ singulars:
         text: Глобальное <stat s="fineMaterialFind"/> в локации <supp k="keyword"/>.
     doubleAction:
       whileSkillGroup:
-        text: <stat s="doubleAction"/> для любого умения из группы <supp k="skillGroup"/>.
+        text: <stat s="doubleAction"/> для любого навыка из группы <supp k="skillGroup"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileTraveling:
@@ -183,11 +185,11 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="doubleAction"/> для умения <supp k="skill"/>
+        text: <stat s="doubleAction"/> для навыка <supp k="skill"/>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="doubleAction"/> для умения <supp k="skill"/> в локации <supp
+        text: <stat s="doubleAction"/> для навыка <supp k="skill"/> в локации <supp
           k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
@@ -210,11 +212,11 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="stepsRequired"/> для умения <supp k="skill"/>
+        text: <stat s="stepsRequired"/> для навыка <supp k="skill"/>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="stepsRequired"/> для умения <supp k="skill"/> в локации <supp
+        text: <stat s="stepsRequired"/> для навыка <supp k="skill"/> в локации <supp
           k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
@@ -223,14 +225,14 @@ singulars:
       whileSkillGroup:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="stepsRequired"/> для любого умения из группы <supp k="skillGroup"/>.
+        text: <stat s="stepsRequired"/> для любого навыка из группы <supp k="skillGroup"/>.
     doubleRewards:
       whenAchievementPoints:
         text: Глобальные <stat s="doubleRewards"/> если есть <supp k="achievementPoints"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
-        text: <stat s="doubleRewards"/> для умения <supp k="skill"/> в локации <supp
+        text: <stat s="doubleRewards"/> для навыка <supp k="skill"/> в локации <supp
           k="keyword"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -239,7 +241,7 @@ singulars:
         name: <PLACEHOLDER>
         text: Глобальные <stat s="doubleRewards"/> в локации <supp k="keyword"/>.
       whileSkillGroup:
-        text: <stat s="doubleRewards"/> для любого умения из группы <supp k="skillGroup"/>.
+        text: <stat s="doubleRewards"/> для любого навыка из группы <supp k="skillGroup"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       global:
@@ -249,7 +251,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="doubleRewards"/> для умения <supp k="skill"/>
+        text: <stat s="doubleRewards"/> для навыка <supp k="skill"/>
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -267,7 +269,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="rollSpecialTable"/> для умения <supp k="skill"/>
+        text: <stat s="rollSpecialTable"/> для навыка <supp k="skill"/>
     experience:
       global:
         text: Глобальный <stat s="bonusExperience"/>
@@ -278,13 +280,13 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileSkillGroup:
-        text: <stat s="bonusExperience"/> для любого умения из группы <supp k="skillGroup"/>.
+        text: <stat s="bonusExperience"/> для любого навыка из группы <supp k="skillGroup"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="bonusExperience"/> для умения <supp k="skill"/> в локации <supp
+        text: <stat s="bonusExperience"/> для навыка <supp k="skill"/> в локации <supp
           k="keyword"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
@@ -293,11 +295,11 @@ singulars:
       globalSkillXp:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Глобальный <stat s="bonusExperience"/> к умению <supp k="skill"/>
+        text: Глобальный <stat s="bonusExperience"/> к навыку <supp k="skill"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="bonusExperience"/> для умения <supp k="skill"/>
+        text: <stat s="bonusExperience"/> для навыка <supp k="skill"/>
     inventorySpace:
       global:
         name: <PLACEHOLDER>
@@ -311,7 +313,7 @@ singulars:
       whileMainSkillAndLocationKeyword:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
-        text: <stat s="noMaterialsConsumed"/> для умения <supp k="skill"/> в локации
+        text: <stat s="noMaterialsConsumed"/> для навыка <supp k="skill"/> в локации
           <supp k="keyword"/>.
       global:
         name: <PLACEHOLDER>
@@ -320,7 +322,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="noMaterialsConsumed"/> для умения <supp k="skill"/>
+        text: <stat s="noMaterialsConsumed"/> для навыка <supp k="skill"/>
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -328,7 +330,7 @@ singulars:
       whileSkillGroup:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="noMaterialsConsumed"/> для любого умения из группы <supp k="skillGroup"/>.
+        text: <stat s="noMaterialsConsumed"/> для любого навыка из группы <supp k="skillGroup"/>.
     travelingDistance:
       whileTraveling:
         name: <PLACEHOLDER>
@@ -342,7 +344,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="skillLevel"/> уровень для умения <supp k="skill"/>
+        text: <stat s="skillLevel"/> уровень для навыка <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -351,24 +353,24 @@ singulars:
     findBirdNests:
       whileWoodcutting:
         desc: <PLACEHOLDER>
-        text: <stat s="findBirdNests">шанс нахождения птичьих гнёзд</stat> для умения
+        text: <stat s="findBirdNests">шанс нахождения птичьих гнёзд</stat> для навыка
           <supp k="skill"/>
         name: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findBirdNests">шанс нахождения птичьих гнёзд</stat> для умения
+        text: <stat s="findBirdNests">шанс нахождения птичьих гнёзд</stat> для навыка
           <supp k="skill"/> в локации <supp k="keyword"/>.
     findGems:
       whileMainSkillAndLocationKeyword:
-        text: <stat s="findGems">шанс нахождения птичьих гнёзд</stat> для умения <supp
+        text: <stat s="findGems">шанс нахождения птичьих гнёзд</stat> для навыка <supp
           k="skill"/> в локации <supp k="keyword"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMining:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findGems">шанс нахождения драгоценных камней</stat> для умения
+        text: <stat s="findGems">шанс нахождения драгоценных камней</stat> для навыка
           <supp k="skill"/>
     findCollectibles:
       global:

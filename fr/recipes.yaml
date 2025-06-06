@@ -47,6 +47,22 @@ singulars:
         name: Découper une planche de saule
       bambooPlank:
         name: Découper une planche de bambou
+        desc: Fabriquer une planche en bambou, un produit flexible aux nombreux usages.
+        activityDesc: C'est un travail difficile, mais vous coupez et laminez les
+          lamelles de bambou en une planche magnifique.
+      elmPlank:
+        activityDesc: Ça ne vous semble peut-être pas évident pour le moment, mais
+          cette planche en bois d'orme que vous fabriquez vous servira dans des produits
+          futurs.
+        desc: Fabriquer une planche en orme très flexible
+        name: Tailler une planche d'orme
+      coralPlank:
+        activityDesc: À l'aide de vous outils très spécifiques, vous transformez et
+          affinez le corail en une planche utilisable, la rendant durable et résistante
+          pour des travaux de construction.
+        name: Découper une planche de corail
+        desc: Un matériau de construction solide, fabriqué à partir du squelette résistant
+          du corail. Celui-ci doit être collecté et transformé précautionneusement.
     scrap:
       maplePlankScrap:
         name: Agglomérer une planche d'érable (Débris)
@@ -92,7 +108,7 @@ singulars:
           tu crées un outil de récolte basique.
       copperSickle:
         name: Fabriquer une faucille en cuivre
-        desc: Forge une faucille en cuivre, un outil de base pour couper la végétation.
+        desc: Forger une faucille en cuivre, un outil de base pour couper la végétation.
         activityDesc: Vous chauffez et façonnez le cuivre, vous formez une faucille
           qui promet un peu plus d'efficacité une fois en main.
       ironSickle:
@@ -186,10 +202,81 @@ singulars:
         name: Façonner une hachette en farganite
         desc: Créer une hachette qui viendra a bout de la résistance du plus majestueux
           des arbres.
+        activityDesc: La puissance et la sueur façonnent le métal en une hachette,
+          véritable symbole de votre détermination à devenir bûcheron.
+      hydriliumHatchet:
+        name: Fabriquer une hachette en hydrilium
+        desc: Un outil polyvalent fabriqué à partir d'un lingot d'hydrilium, conçu
+          pour abattre et tailler le bois.
+        activityDesc: Vous faites chauffer un lingot d'hydrilium dans un fourneau
+          pour qu'il ramollisse, avant de le transformer en tête de hache. Après l'avoir
+          attachée à un manche en bois, vous affûtez la lame pour créer un outil tranchant
+          et efficace.
+      jellyfishingNet:
+        name: Fabriquer un filet à méduses
+        activityDesc: Vous tissez un filet à partir de corde résistante, attachée
+          à une poignée tout aussi solide. Vous vous assurez que le maillage soit
+          assez fin pour laisser l'eau passer tout en capturant les méduses, créant
+          un outil utile pour l'exploration sous-marine.
+        desc: Un outil fait pour capturer des méduses, fabriqué à partir de matériaux
+          solides transformés en un filet de qualité.
+      hydriliumLogSplitter:
+        desc: Renforcez votre outil avec la puissance de l'hydrilium, vous permettant
+          de fendre les bûches les plus résistantes sans effort.
+        activityDesc: À chaque coup de marteau, vous infusez un peu plus d'hydrilium
+          dans le merlin, le transformant en un outil au pouvoir immense. Le métal
+          luit, et vous sentez l'énergie de la terre parcourir vos veines.
+        name: Fabriquer un merlin en hydrilium
+      hydriliumMinersMagnet:
+        name: Fabriquer un aimant en hydrilium
+        desc: Forgez un outil magnétique qui saura extraire toutes les richesses enfouies
+          profondément dans le sol.
+        activityDesc: Avec une concentration intense, vous améliorez l'aimant à l'aide
+          d'hydrilium, créant un outil avec le pouvoir de révéler les secrets du royaume
+          sous-terrain.
     misc:
       rope:
         name: Confectionner une corde en lin
         desc: Vous tressez le lin pour en faire une corde.
+        activityDesc: Le lin se raidit sur la roue, et est ensuite tressé en une corde
+          solide.
+      bagofRocks:
+        name: Fabriquer un sac de pierres
+        desc: Vous fabriquez un sac de pierres à partir d'une grosse roche et d'une
+          branche solide.
+        activityDesc: Les pierres sont attachées au bout de la branche, le tout est
+          lourd.
+      hydrilium:
+        name: Fabriquer de l'hydrilium
+        desc: Combinez le varech et la roche volcanique pour produire de l'hydrilium.
+        activityDesc: Vous combinez le varech et la roche volcanique pour produire
+          de l'hydrilium.
+      kelpRope:
+        name: Fabriquer une corde en varech
+        desc: Une corde flexible mais résistante, créée en entremêlant des brins de
+          varech séché.
+        activityDesc: Vous nettoyez attentivement les brins de varech, retirant toute
+          impureté. En tressant les brins ensemble, vous créez une corde résistante
+          et durable, idéale pour être utilisée sur la côte.
+      hardenedKelp:
+        activityDesc: Vous nettoyez attentivement le varech, retirant toute impureté.
+          Après cela, vous l'étalez dans un endroit sec et aéré, afin de le protéger
+          de l'humidité. Vous attendez patiemment que le varech sèche, devenant un
+          ingrédient pouvant être conservé plus longtemps.
+        name: Varech séché
+        desc: Préservez la saveur de l'océan en déshydratant du varech frais pour
+          l'utiliser plus tard.
+      trash:
+        name: Recycler des déchets
+        activityDesc: L'esprit ouvert, vous examinez les déchets et trouvez comment
+          leur donner une seconde vie.
+        desc: Examiner les déchets et leur trouver une nouvelle utilité.
+      elderhideRope:
+        name: Fabriquer une corde en peau ancienne
+        activityDesc: Avec des mains stables et un esprit concentré, vous tressez
+          la peau ancienne en une corde incroyablement solide et durable.
+        desc: Tresser une corde à partir de peau robuste, un lien assez résistant
+          pour maîtriser les plus indomptables.
     fishing:
       basicFishingRod:
         desc: Fabriquer une canne à pêche basique avec des bâtons et une ligne de
@@ -213,14 +300,43 @@ singulars:
       smallFishingNet:
         desc: Fabriquer un filet de pêche basique à partir d'une corde.
         name: Confectionner un filet de pêche basique
+        activityDesc: Plusieurs petits nœuds sont soigneusement noués ensemble, formant
+          un petit filet de pêche.
       pineFishingRod:
         desc: Fabriquer une canne à pêche avec des planches de pin et une ligne de
           pêche.
         name: Fabriquer une canne à pêche en pin
+        activityDesc: Le bois de pin étant tendre, votre travail avance rapidement.
+          Une fois la ligne fixée, votre nouvelle canne à pêche est prête à l’emploi.
       willowFishingRod:
         name: Fabriquer une canne à pêche en saule
         desc: Fabriquer une canne à pêche avec des planches de saule et une ligne
           de pêche.
+        activityDesc: Les planches de saule, bien plus légères et robustes, permettent
+          un travail précis. L'ajout de la ligne vient finaliser votre nouvelle canne
+          à pêche.
+      lobsterPot:
+        name: Fabriquer un casier à homards
+        desc: Fabriquer un casier à homards à partir de planches et de métal
+        activityDesc: C'est un tout nouveau concept pour vous, mais vous vous sentez
+          assez expérimenté pour entreprendre une nouvelle forme de construction.
+      elderhideFishingNet:
+        name: Fabriquer un filet de pêche en peau ancienne
+        desc: Confectionner un filet à partir d'une épaisse peau ancienne, conçu pour
+          capturer les poissons les plus insaisissables.
+        activityDesc: Avec patience et précision, vous tressez la peau ancienne en
+          un filet. Chaque nœud scellant la promesse d’une prise abondante, les propriétés
+          uniques du filet attireront même les poissons les plus méfiants.
+      largeFishingNet:
+        name: Confectionner un grand filet de pêche
+        desc: Créer un plus grand filet de pêche à l'aide de cordes.
+        activityDesc: Plusieurs nœuds sont formés, beaucoup plus que pour un petit
+          filet. Le grand filet de pêche est maintenant terminé.
+      fishingSpear:
+        desc: Un outil dédié à la chasse sous-marine, fabriqué à partir d'un manche
+          robuste, d'une pointe acérée et parfois agrémenté de ardillons ou d'une
+          ligne.
+        name: Fabriquer une lance de pêche
   smithing:
     wooden:
       woodenShield:
@@ -371,3 +487,75 @@ singulars:
         name: Tailler une pierre de soleil
       shapeEthernite:
         name: Tailler une éthernite
+  hunting:
+    traps:
+      birdhouses:
+        birchBirdhouse:
+          activityDesc: Vous transformez avec délicatesse le bois en un nichoir, créant
+            ainsi un lieu de paix pour nos amis à plumes. Alors que vous finissez,
+            vous pouvez presque entendre les piaillements joyeux qui résonneront bientôt.
+          name: Fabriquer un nichoir en bouleau
+          desc: Construire un nichoir confortable à partir du bois léger et durable
+            de bouleau.
+        mangroveBirdhouse:
+          desc: Fabriquer un nichoir unique à partir du bois résistant et durable
+            du palétuvier.
+          name: Fabriquer un nichoir en palétuvier
+          activityDesc: Vous portez attention aux détails, alors que vous transformez
+            le palétuvier en un nichoir peu ordinaire. Sa résistance naturelle à l'humidité
+            et aux insectes en fera une maison sure et résistante pour nos amis à
+            plumes.
+        spruceBirdhouse:
+          activityDesc: Vous transformez le bois d'épicéa en un nichoir solide d'une
+            main prudente. La résistance naturelle du bois face aux éléments en fera
+            une maison qui durera longtemps pour nos amis à plumes.
+          name: Fabriquer un nichoir en épicéa
+          desc: Fabriquer un nichoir durable à partir du bois résistant et aromatique
+            de l'épicéa.
+        teakBirdhouse:
+          activityDesc: Vous transformez méticuleusement le bois de teck en un nichoir
+            raffiné. La beauté naturelle du bois et sa résistance à l'humidité en
+            feront une maison qui durera longtemps pour nos amis à plumes.
+          name: Fabriquer un nichoir en teck
+          desc: Fabriquer un nichoir élégant à partir du bois riche et solide de teck.
+        pineBirdhouse:
+          name: Fabriquer un nichoir en pin
+          desc: Fabriquer un nichoir rustique à partir du bois de pin, chaleureux
+            et résistant.
+          activityDesc: Vous transformez le pin en un nichoir confortable d'une main
+            assurée. Tandis que vous travaillez, vous imaginez les oiseaux qui en
+            feront bientôt leur maison, trouvant réconfort et sécurité entre ses murs.
+        mapleBirdhouse:
+          name: Fabriquer un nichoir en érable
+          desc: Fabriquer un nichoir classique à partir du bois solide et magnifique
+            de l'érable.
+          activityDesc: Vous sélectionnez soigneusement un morceau de bois d'érable,
+            et vous le transformez en un nichoir. La beauté du bois et sa durabilité
+            en feront une maison qui durera longtemps pour nos amis à plumes.
+    bows:
+      elmHuntingBow:
+        name: Fabriquer un arc de chasse en orme
+        desc: Fabriquer un arc de chasse rapide et précis à partir du bois solide
+          d'un orme.
+        activityDesc: Vous sélectionnez soigneusement un morceau de bois d'orme, et
+          vos mains expérimentées le transforment en arc. Vous pouvez sentir la force
+          naturelle du bois tandis que vous le travaillez. Chaque mouvement de votre
+          outil approche un peu plus l'arc de son état final.
+      oakHuntingBow:
+        activityDesc: Vous sélectionnez un morceau de bois provenant du cœur d'un
+          chêne et le transformez en un arc de chasse. À chaque mouvement, l'arc se
+          rapproche de son état final, un outil qui vous servira quand vous chasserez.
+        name: Fabriquer un arc de chasse en chêne
+        desc: Fabriquer un arc de chasse résistant à partir du duramen d'un chêne.
+      bambooHuntingBow:
+        name: Fabriquer un arc de chasse en bambou
+        desc: Fabriquer un arc de chasse léger et rapide à partir de bambou.
+        activityDesc: D'une main assurée, vous transformez le bambou en un arc élégant,
+          sa flexibilité promettant que vous n'aurez pas de mal à tirer votre flèche,
+          et que celle-ci atteindra sa cible.
+      mahoganyHuntingBow:
+        name: Fabriquer un arc de chasse en acajou
+        desc: Fabriquer un arc de chasse lisse et puissant à partir de l'acajou, bois
+          riche à la teinte sombre.
+        activityDesc: Avec une précision attentive, vous transformez l'acajou en un
+          arc de chasse tout aussi beau que mortel.

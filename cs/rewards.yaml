@@ -1,12 +1,22 @@
 singulars:
   factionReputation:
     title: Pověst frakce
+    text: <c>+{amount} reputace frakce</c> do <realm realm="{realm}" />
   skillXp:
     title: Dovednostní body
+    text: <c>+{amount}</c> zkušeností v <skill skill="{skill}" />
   customRewards:
     adventurersGuild:
       title: Cech dobrodruhů
       text: Odemkne přístup do cechu dobrodruhů.
+    partialSwampost:
+      text: Toto je podmínka pro přístup k bažinářskému sloupu cechu dobrodruhů.
+      title: Požadavek na částečný bažinatý sloup
+    halflingSawmill:
+      title: Přístup k pokročilé pile
+    halflingSawmillStats:
+      title: Poloviční zvýšení bonusu pily
+      text: Pila nyní poskytuje další bonusy k atributům.
 maps:
   rewardTypes:
     "none": Žádný
@@ -14,3 +24,4 @@ maps:
     "item": Položka
     "skillXp": Dovednostní body
     "achievementPoint": Bod úspěchu
+    "pfpOption": Kosmetický

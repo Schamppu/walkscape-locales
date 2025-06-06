@@ -114,7 +114,7 @@ singulars:
         desc: Leivän päällä paksu kerros hilloa. Ikuinen klassikko.
         name: Hillovoileipä
       mushroomCurry:
-        desc: 'Aromaattinen sekoitus mausteita ja sieniä. Täydellinen ja runsas ateria. '
+        desc: 'Aromaattinen sekoitus mausteita ja sieniä. Täydellinen ja runsas ateria.'
         name: Sienicurry
       pancake:
         desc: Tarjoile hillon kera.
@@ -134,7 +134,7 @@ singulars:
         name: Mausteinen kurpitsamehu
       tofu:
         desc: 'Hieman kimmoisa koostumus. Sisältää paljon proteiinia, vitamiineja
-          ja kivennäisaineita. '
+          ja kivennäisaineita.'
         name: Tofu
       veggieSoup:
         desc: Kulhollinen vihanneskeittoa. Se on vaatimaton, mutta tyydyttävä ruokalaji,
@@ -491,6 +491,8 @@ singulars:
           name: Farganiittikirves
         ironHatchet:
           name: Rautakirves
+          desc: Raskaalla terällään se on luotettava kumppani niille, ketkä haluavat
+            kesyttää erämaan tai kohdata tuntemattoman.
         steelHatchet:
           name: Teräskirves
         tarsiliumHatchet:
@@ -498,8 +500,11 @@ singulars:
           name: Tarsiliumkirves
         hydriliumLogSplitter:
           name: Hydrilium tukinhalkoja
+          desc: Hydriliumilla vahvistettu halkaisukone.
         hydriliumHatchet:
           name: Hydriliumkirves
+          desc: Kirves, joka on tehty harvinaisesta vedenalaisesta materiaalista nimeltään
+            hydrilium.
       miscellaneous:
         bagOfRocks:
           name: Säkillinen kiviä
@@ -507,14 +512,27 @@ singulars:
       foraging:
         stoneSickle:
           name: Simppeli sirppi
+          desc: Perustyökalu luonnon antimien keräilyyn. Rosoinen terä ei ole kovinkaan
+            tehokas.
         copperSickle:
           name: Kuparisirppi
+          desc: Tarjoaa vaatimattoman leikkuutehon peruskasveille.
         ironSickle:
           name: Rautasirppi
+          desc: Vankka ja luotettava, leikkaa kasvien varret vaivatta.
         steelSickle:
           name: Terässirppi
+          desc: Vahva ja kestävä, tarjoten luotettavan suorituskyvyn mittavaan keräilyyn.
         hydriliumSickle:
           name: Hydriliumsirppi
+          desc: Harvinaisesta vedenalaisesta hydriliumista valmistettu sirppi.
+        mangroveBasket:
+          name: Mangrovekori
+      hunting:
+        farganiteArrows:
+          name: Farganiitti nuolet
+          desc: Siniset nuolenkärjet saavat ne näyttämään lähes maagisilta. Valmistetaan
+            kuuluisasta farganiitti metallista.
   looted:
     equipmentSets:
       dimensional:
@@ -1166,16 +1184,21 @@ singulars:
         name: Tiikkilankku
       willowPlank:
         name: Pajulankku
+        desc: Pajulankku tuo herkällä, vaalealla ilmeellään ja hienovaraisella syykuvioinnillaan
+          puutöihisi ripauksen eteeristä kauneutta.
       mangrovePlank:
         name: Mangrovelankku
       woodFragment:
         name: Puupala
       woodScrap:
         name: Puuromu
+        desc: Heikkolaatuisia hukkapaloja puusta.
       woodShaving:
         name: Puulastu
       coralPlank:
         name: Korallilankku
+        desc: Suurimmista koralleista valmistettu lankku. Se on vankka niin pinnan
+          päällä kuin allakin.
     cooking:
       milk:
         desc: Suoraan lypsetty lehmästä, vuohesta tai jopa kamelista. Mahdollisesti
@@ -1184,12 +1207,16 @@ singulars:
         name: Maito
       salt:
         name: Suola
+        desc: Suola on koko Arenumin käytetyin arominvahvenne.
       honey:
         name: Hunajakenno
+        desc: Tästä käsittelemättömästä hunajakennosta valuu tuoretta hunajaa.
       carrot:
         name: Porkkana
+        desc: Sanotaan että se parantaa näkökykyäsi.
       mushroom:
         name: Sieni
+        desc: Nämä sienet ovat käytännössä kasviksia.
     foraging:
       acidSapling:
         desc: Tuskin risunkaan kokoinen, taimi melkein polttaa kätesi koskettaessasi
@@ -1336,8 +1363,8 @@ singulars:
           vuosituhansia.
         name: Vulkaaninen kivi
       ruby:
-        desc: Tämä punainen jalokivi on erittäin suosittu aatelisten keskuudessa.
-          Punainen väri symboloi valtaa ja intohimoa.
+        desc: Syvän purppuranpunainen mineraali nousee kiven sisältä, kauneudessaan
+          ja yksinkertaisuudessaan vangitseva.
         name: Rubiini
       goldOre:
         name: Kultamalmi
@@ -1436,10 +1463,13 @@ singulars:
         name: Pronssiharkko
       copperBar:
         name: Kupariharkko
+        desc: Kupariharkko välkehtii punaoranssin hohtoisena, kuvastaen sen metallista
+          voimaa ja monipuolisuutta eri käyttötarkoituksissa.
       farganiteBar:
         name: Farganiittiharkko
       ironBar:
         name: Rautaharkko
+        desc: Todiste maan perusvoimasta, raskas ja taipumaton.
       steelBar:
         name: Teräsharkko
       tarsiliumBar:
@@ -1452,6 +1482,14 @@ singulars:
         name: Metallipala
       hydriliumBar:
         name: Hydriliumharkko
+        desc: Hydriliumharkko on kalpeanvihreä.
+      silverBar:
+        name: Hopeaharkko
+        desc: Käytitpä sitten hippuja tai malmia, hopeaharkko saavuttaa 92.5%:n puhtausvaatimukset.
+      goldBar:
+        name: Kultaharkko
+        desc: Käytitpä sitten hippuja tai malmia, kultaharkko yltää Helytehtaan sanelemaan
+          333:n hienousrajaan.
     woodcutting:
       birchLogs:
         desc: Sileät ja vaaleat koivuhalot huokuvat eleganttia yksinkertaisuutta.
@@ -1489,6 +1527,9 @@ singulars:
       coral:
         name: Koralli
         desc: Tämäkin koralli saattoi olla joskus koti jollekin merenelävälle.
+      root:
+        name: Juuri
+        desc: Hyödyllisiä kasvien juuria monenlaisiin tarkoituksiin.
     misc:
       fishingLine:
         desc: Mikäli tällaisen kerää ajelehtimasta vedessä saattaa hyvinkin pelastaa
@@ -1499,19 +1540,23 @@ singulars:
         desc: Miksi edes keräsit tämän hyödyttömän roskan mukaasi?
       fishbone:
         name: Kalanluu
+        desc: Vaikka onkin tavallaan iljettävä ja melko haiseva, näyttää silti makealta.
       seashell:
         name: Kotilo
+        desc: Luultavasti joku myy näitä rannalla.
       clam:
         name: Simpukka
+        desc: Helmenvalkea ja täysin koskematon. Kaunis näytekappale keräilijälle.
       pearls:
         name: Helmet
+        desc: Valikoima kirjaimellisesti helmenvalkeita. Loistavaa materiaalia koruihin.
       glacierMap:
         name: Salaperäinen pohjoisen kartta
         desc: Kartta muistuttaa Jarvonian pohjoisosia, ja siihen on piirretty punaisella
           reitti joka kulkee jäätikölle.
       crosswordPuzzle:
         name: Vanha sanaristikko
-        desc: Klassinen ja edelleenkin erittäin suosittu sanapeli.
+        desc: Sanapeli, kaksitoista kirjainta, alkaa s:llä.
       unidentifiedRemains:
         name: Tunnistamattomat jäännökset
         desc: Seikkailijakilta arvostaisi kovasti jos palauttaisit tämän kasan luita
@@ -1525,13 +1570,49 @@ singulars:
         name: Seikkailijan pinssi
         desc: Seikkailijakillan tunnuksella varustettu pinssi. Hieman ruosteen peitossa.
           Seikkailijakilta arvostaisi, jos palauttaisit tämän heille.
+      invasiveSpeciesTag:
+        name: Vieraslajimerkki
+        desc: Metallinen merkki jossa on kuvattuna matomaisen olennon suu.
     crafting:
       rope:
         name: Köysi
+        desc: Selviytymispakkaus ei ole täydellinen ilman köyttä. Oleellinen, jotta
+          voit valmistaa perustyökaluja.
       hydrilium:
         name: Hydrilium
+        desc: Tämä outo materiaali on vuorovetten työpajassa valmistunut vulkaanisesta
+          kivestä ja merilevästä.
       kelpRope:
         name: Leväköysi
+        desc: Pitkiä levänpalasia pujotettuna köydeksi.
+    hunting:
+      darkfeather:
+        desc: Tumma linnunsulka, luultavimmin varikselta, harakalta tai muulta tummalta
+          linnulta.
+        name: Tumma sulka
+      feather:
+        desc: Kaunis, kevyt ja aerodynaaminen linnunsulka.
+        name: Sulka
+      animalMeat:
+        desc: Pala tuoretta lihaa valmiina kypsennettäväksi, kuivattavaksi tai suolattavaksi.
+        name: Eläimen liha
+      lizardTail:
+        desc: Häntä jonka lisko on pudottanut puolustuskeinona.
+        name: Liskon häntä
+      animalFur:
+        name: Eläimen turkki
+        desc: Tämä eläimen turkki on pehmeä ja lämmittää todella hyvin, jos siitä
+          tekee vaatekappaleita.
+      bones:
+        name: Luita
+        desc: Useita luunkappaleita.
+      sinew:
+        name: Jänne
+        desc: Vahvaa syistä kudosta, joka yhdistää lihakset luihin.
+    trinketry:
+      compassTrinket:
+        desc: Kompassihely hohtaa kirkkaasti valossa. Tästä voisi tehdä amuletin jonain
+          päivänä.
   currencies:
     adventurersGuildToken:
       name: Seikkailijakillan merkki
