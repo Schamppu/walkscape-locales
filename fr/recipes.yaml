@@ -420,22 +420,78 @@ singulars:
         name: Préparer une infusion d'ortie
         desc: Un breuvage savoureux potentiellement bénéfique composé de feuilles
           d'ortie, fraîches ou séchées, infusées dans l'eau chaude.
+        activityDesc: Vous faites infuser des orties fraîches ou séchées dans de l'eau
+          bouillante afin de créer un thé herbacé revigorant.
       bagel:
         name: Faire un bagel
+        desc: Moelleux à l'extérieur et léger à l'intérieur, les bagels fait maison
+          sont un vrai délice. À vous de choisir ce que vous mettrez dessus !
+        activityDesc: Vous formez des anneaux avec la pâte, vous les faites bouillir
+          un instant, puis vous les cuisez à la perfection pour obtenir des bagels
+          dorés et moelleux.
       salmonPie:
         name: Faire une tourte au saumon
       jellySandwich:
         name: Faire un sandwich à la confiture
+        activityDesc: Vous étalez généreusement votre confiture favorite sur deux
+          tranches de pain, avant de les assembler pour créer un encas délicieux.
+        desc: Une combinaison classique de confiture sucrée et de pain pour un goûter
+          rapide et satisfaisant.
       sweetCarrotPie:
         name: Faire une tarte sucrée à la carotte
       bread:
         name: Faire du pain
+        desc: Du pain fait maison, sans aucune aide. Combinez la farine, l'eau, la
+          levure et le sel, pétrissez, faites pousser, mettez en forme, et faites
+          cuire jusqu'à obtenir un pain doré et croustillant.
+        activityDesc: Vous mesurez et mélangez la farine, l'eau, la levure et le sel
+          pour créer la pâte, vous la pétrissez, vous la laissez pousser, puis vous
+          mettez en forme vos miches et les faites cuire jusqu'à ce qu'elles soient
+          dorées et croustillantes.
       fruitCake:
         name: Faire un gâteau aux fruits
+        activityDesc: Vous combinez les fruits séchés, les noix, des épices, de la
+          farine, du sucre et des œufs pour créer un mélange épais. Après cuisson,
+          vous laissez le gâteau reposer un peu pour obtenir un goût encore meilleur.
+        desc: Le gâteau aux fruits est un gâteau riche et festif, plein de fruits
+          séchés et de noix. À déguster avec une tasse de thé ou de café.
       friedFishSandwich:
         name: Faire un sandwich au poisson
       hamburger:
         name: Faire un hamburger
+      chocolateMilk:
+        activityDesc: Vous versez du lait froid dans un verre avant d'y ajouter de
+          la poudre de cacao et du sucre, et de mélanger vigoureusement jusqu'à ce
+          que le mélange soit crémeux.
+        desc: Le lait chocolaté, crémeux et délicieux, est une douceur classique.
+          Combinez le lait froid avec du chocolat pour obtenir une boisson rafraîchissante.
+        name: Créer du lait chocolaté
+      saltrum:
+        activityDesc: Après avoir nettoyé et préparé le varech, vous commencez le
+          processus de fermentation dans un tonneau en bois, en y ajoutant de la levure
+          et de l'eau. Vous vous occupez patiemment de cette mixture, lui permettant
+          de se transformer en une boisson alcoolisée riche.
+        name: Créer du saltrum
+        desc: Une boisson alcoolisée distillée à partir de l'essence du varech, et
+          fermentée à la perfection. Elle a un goût riche, complexe, et une pointe
+          de brise océanique.
+      underwaterSalad:
+        activityDesc: Vous rassemblez un ensemble de plantes sous-marines et de fruits
+          de mer avant de les combiner dans un bol, accompagnés d'une sauce faite
+          à partir de varech.
+        name: Préparer une salade sous-marine
+        desc: Un mélange rafraichissant de produits sous-marins rassemblés en une
+          salade.
+      kelpRolls:
+        name: Préparer un roulé au varech
+        desc: Une petite douceur fraîche et bonne pour la santé. Créez votre propre
+          mélange de riz, de légumes et de protéines, le tout roulé dans une feuille
+          de varech goûtu.
+        activityDesc: Vous étalez soigneusement une fine couche de riz assaisonné
+          sur une feuille juteuse de varech, avant de la rouler et de la garder fermée
+          avec un ruban d'algue.
+      milk:
+        name: Faire du lait
     fish:
       cookedSalmon:
         name: Frire un saumon
@@ -447,18 +503,32 @@ singulars:
         name: Frire un brochet
       cookedPerch:
         name: Frire une perche
+        desc: Appréciez le goût d'une perche frite, un poisson d'eau douce délicieux.
+        activityDesc: Vous faites frire la perche avec aisance, et préparez ainsi
+          une délicieuse perche frite.
       cookedTrout:
         name: Frire une truite
       cookedCrayfish:
         name: Frire une écrevisse
+        desc: Appréciez le goût délicieux d'une écrevisse frite, un met de qualité
+          pour les amateurs de fruits de mer.
+        activityDesc: Vous faites frire d'une main de maître l'écrevisse, préparant
+          ainsi une écrevisse frite succulente.
       cookedSquid:
         name: Frire un calamar
       cookedLargemouthBass:
         name: Frire un achigan à grande bouche
       cookedShrimp:
         name: Frire une crevette
+        desc: Savourez le goût d'une crevette frite, un fruit de mer délicieux.
+        activityDesc: Vous faites frire à la perfection la crevette d'une main d'expert,
+          préparant une délicieuse crevette frite.
       cookedCarp:
         name: Frire une carpe
+        desc: Savourez les saveurs de la carpe frite, connue pour son goût et sa viande
+          tendre.
+        activityDesc: Vous faites frire soigneusement la carpe, préparant ainsi une
+          délicieuse carpe frite.
       cookedJellyfish:
         name: Frire une méduse
       cookedLobster:
@@ -469,6 +539,9 @@ singulars:
         name: Frire un requin
       cookedAnglerfish:
         name: Frire une baudroie
+      cookedSeabass:
+        name: Frire un bar
+        desc: Appréciez le goût d'un bar frit, un choix de gourmet aux écailles argentées.
   trinketry:
     gems:
       shapeRuby:
@@ -532,6 +605,15 @@ singulars:
           activityDesc: Vous sélectionnez soigneusement un morceau de bois d'érable,
             et vous le transformez en un nichoir. La beauté du bois et sa durabilité
             en feront une maison qui durera longtemps pour nos amis à plumes.
+      net:
+        kelpDriftNet:
+          activityDesc: D'une main patiente, vous tissez le varech en un filet solide
+            et flexible. Chaque nœud vous rapproche un peu plus de merveilleuses prises,
+            et vous pouvez déjà imaginer la vie marine qui sera bientôt piégée par
+            ces mailles.
+          name: Fabriquer un filet dérivant en varech
+          desc: Tisser un filet solide à partir du varech, parfait pour attraper tout
+            ce que l'océan a à offrir.
     bows:
       elmHuntingBow:
         name: Fabriquer un arc de chasse en orme
@@ -559,3 +641,48 @@ singulars:
           riche à la teinte sombre.
         activityDesc: Avec une précision attentive, vous transformez l'acajou en un
           arc de chasse tout aussi beau que mortel.
+    arrows:
+      farganiteArrows:
+        name: Fabriquer des flèches en farganite
+        desc: Fabriquer des projectiles dotés d'une pointe en farganite.
+        activityDesc: Vous transformez la farganite, sa lueur bleu ciel illuminant
+          vos mains. Le métal, légèrement froid, prend la forme de pointe de flèches
+          entre vos mains. Chaque flèche est soigneusement empennée et préparée.
+      ironArrows:
+        desc: Fabriquer des projectiles solides dotés d'une pointe en fer.
+        activityDesc: Vous faites chauffer le fer dans le feu, avant de le transformer
+          en pointes de flèche. Une fois refroidies, vous les attachez au corps des
+          flèches, créant des projectiles simples mais efficaces.
+        name: Fabriquer des flèches en fer
+      steelArrows:
+        name: Fabriquer des flèches en acier
+        desc: Fabriquer des projectiles supérieurs dotés d'une pointe en acier, faites
+          pour percer les cibles les plus résistantes.
+        activityDesc: D'une main aguerrie, vous transformez l'acier chauffé à blanc
+          en des pointes mortelles. La lumière du feu illumine votre visage concentré,
+          alors que vous les attachez au corps des flèches.
+      simpleBowstring:
+        activityDesc: Vous sélectionnez les fibres solides et commencez à les assembler
+          méticuleusement. Chaque brin, soigneusement aligné, apporte de la force
+          et de la durabilité à la corde.
+        name: Fabriquer une corde d'arc basique
+        desc: Fabriquer une corde basique pour votre arc.
+      bronzeArrows:
+        activityDesc: D'une main assurée, vous transformez le bronze en pointes de
+          flèche, dont le bout pointu brille à la lumière de la flamme. Vous les assemblez
+          soigneusement avec le corps des flèches, créant des projectiles puissants
+          et précis.
+        name: Fabriquer des flèches en bronze
+        desc: Fabriquer des flèches solides dotées d'une pointe en bronze.
+      tarsiliumArrows:
+        desc: Fabriquer des projectiles sinistres dotés d'une pointe en tarsilium.
+        activityDesc: Vous transformez le tarsilium sombre en pointes de flèche, leur
+          couleur aussi noire que l'encre promettant un sort silencieux et rapide
+          à vos cibles. Les plumes, qui contrastent avec le métal, sont soigneusement
+          attachées afin de compléter ces projectiles mortels.
+        name: Fabriquer des flèches en tarsilium
+      copperArrows:
+        desc: Fabriquer des flèches fines dotées d'une pointe en cuivre.
+        activityDesc: Vous vous concentrez, et transformez le cuivre en pointes de
+          flèche, dont le bout pointu brille à la lumière de la flamme.
+        name: Fabriquer des flèches en cuivre
