@@ -163,7 +163,7 @@ singulars:
         activityDesc: Dubové dřevo je husté a pevné. Výroba prutu zabere nějaký čas,
           ale odměnou vám bude robustní rybářský prut.
       lobsterPot:
-        name: Vytvořte hrnec na humry
+        name: Vyrobte past na humry
         desc: Vyrobte si hrnec na humry z prken a kovových tyčí
         activityDesc: Jedná se o zcela nový koncept pro vás, ale cítíte se dostatečně
           pokročilý/á na to, abyste se pustil/a do nové formy konstrukce.
@@ -216,6 +216,12 @@ singulars:
           který poskytuje teplo a vznáší se v chladných, vodních hlubinách.
       hydriliumDivingBody:
         name: Vytvořte si hydriliový potápěčský trup
+      hydriliumDivingLegs:
+        name: Vyrobte si hydriliové potápěčské legíny
+        activityDesc: Kovové hydrilium vytvarujete do tvaru padnoucích legín, které
+          zajistí teplo, ochranu a flexibilitu. Začleněním vzduchových kapes nebo
+          vztlakových prvků vytvoříte potápěčské vybavení, které napomáhá manévrování
+          a přežití pod vodou.
     misc:
       rope:
         name: Spřádejte len do provazu
@@ -285,6 +291,14 @@ singulars:
         name: Tavit železnou cihlu
         activityDesc: Odborným tavením železné rudy do všestranné kovové cihly vytváříte
           železnou cihlu.
+      steelBar:
+        name: Vytavit ocelovou cihlu
+      farganiteBar:
+        name: Roztavte farganitovou cihlu
+      hydriliumBar:
+        name: Vytavit hydriliovou cihlu
+      tarsiliumBar:
+        name: Vytavit tarsiliumovou cihlu
     copper:
       copperSword:
         name: Vyrobte si měděný meč
@@ -312,6 +326,44 @@ singulars:
         name: Vyrobte si železný štít
         activityDesc: Vyrobíte si železný štít ze železných cihel.
         desc: Vyrobte si železný štít ze železných cihel.
+    steel:
+      steelSword:
+        name: Vyrobte si ocelový meč
+        desc: Vyrobte si ocelový meč z ocelové cihly.
+        activityDesc: Vyrobíte si ocelový meč z ocelové cihly.
+      steelShield:
+        name: Vytvořte ocelový štít
+        activityDesc: Vyrobíte ocelový štít z ocelových cihel.
+        desc: Vyrobte ocelový štít z ocelových cihel.
+    tarsilium:
+      tarsiliumShield:
+        name: Vyrobte si tarsilium štít
+        desc: Vyrobte si tarsiliumový štít z tarsiliumových cihel.
+        activityDesc: Vyrobíte si tarsiliumový štít z tarsiliumových cihel.
+      tarsiliumSword:
+        desc: Vyrobte si tarsiliumový meč z tarsiliumové cihly.
+        name: Vyrobte si tarsiliumový meč
+        activityDesc: Vyrobíte si tarsiliumový meč z tarsiliumové cihly.
+    farganite:
+      gemShield:
+        name: Vyrobte si drahokamový štít
+        desc: Vyrobte si drahokamový štít ze zlata a farganitových cihel vykládaný
+          broušenými drahokamy.
+        activityDesc: Vyrobíte si drahokamový štít z farganitových cihel, ozdobíte
+          ho zlatem a pečlivě vyložíte drahokamy.
+      farganiteSword:
+        name: Vyrobte si farganitový meč
+        desc: Vyrobte si farganitový meč z farganitové cihly.
+        activityDesc: Vyrobíte si farganitový meč z farganitové cihly.
+      farganiteShield:
+        name: Vyrobte farganitový štít
+        desc: Vyrobte si farganitový štít z farganitových cihel.
+        activityDesc: Vyrobíte si farganitový štít z farganitových cihel.
+    other:
+      tarsiliumToeBoots:
+        name: Vyrobte si boty s tarsiliumovou špičkou
+      reinforcedBellows:
+        name: Vytvořte zesílené měchy
   trinketry:
     rings:
       silverRing:
@@ -373,9 +425,46 @@ singulars:
       shapeJade:
         name: Vytvarujte nefrit
         desc: Uřízněte plátek nefritu zbavený příměsí.
+      shapeEthernite:
+        name: Vytvarujte ethernit
+        desc: Vybrousit ethernit do ostrého a nebezpečného drahokamu.
+        activityDesc: Pečlivě tvarujete ethernit, jehož sklovitý povrch odráží znepokojivou
+          záři. Váš pracovní stůl je postupně pokrývaný ostrými střepy drsného kamene.
+      shapeSunStone:
+        name: Vytvarujte sluneční kámen
+        desc: Vyřízněte sluneční kámen z okolní skály.
+        activityDesc: Opatrně odstraňte kámen kolem slunečního kamene, aby byla zachována
+          jeho původní krása.
+      shapeRuby:
+        name: Vytvarujte rubín
+        desc: Z hrubého rubínu vybrousíte do leštěného drahokamu.
+        activityDesc: Dovedně tvarujete rubín, jehož tmavě červený odstín je s každým
+          brusem intenzivnější.
     amulets:
       jarvonianFlowerNecklace:
         name: Vytvořte si jarvonský květinový náhrdelník
+      amuletOfTheShrimp:
+        name: Vytvořte amulet z krevet
+      amuletOfTheBat:
+        name: Vytvořte amulet netopýra
+      amuletOfTheEel:
+        name: Vytvořte amulet úhoře
+      amuletOfTheAnimalKingdom:
+        name: Vytvořte amulet zvířecí říše
+      amuletOfTheBeaver:
+        name: Vytvořte bobří amulet
+      amuletOfTheMeasuringSpoons:
+        name: Vyrobte si amulet z odměrky
+      amuletOfTheRoot:
+        name: Vytvořte amulet kořene
+      amuletOfTheCoolingIce:
+        name: Vyrobte si amulet z chladivého ledu
+      amuletOfTheFinding:
+        name: Vytvořte amulet nálezu
+      amuletOfTheLuckyRabbitFoot:
+        name: Vytvořte amulet z králičí nohy pro štěstí
+      amuletOfTheHeron:
+        name: Vytvořte amulet volavky
   carpentry:
     scrap:
       birchPlankScrap:
@@ -388,6 +477,14 @@ singulars:
       oakPlankScrap:
         desc: Vytvořte dubové prkno, ceněné pro svou odolnost a krásu.
         name: Vytvořte dubové prkno (odřezek)
+      maplePlankScrap:
+        name: Vytvořte javorové prkno (odřezek)
+      teakPlankScrap:
+        name: Vytvořte teakové prkno (odřezky)
+        desc: Vytvořte teakové prkno, ceněné pro svou odolnost a pevnost.
+      willowPlankScrap:
+        name: Vytvořte vrbové prkno (odřezky)
+        desc: Vytvořte vrbové prkno. Dřevo je ceněno pro svou nízkou hmotnost.
     planks:
       birchPlank:
         name: Uřízněte březové prkno
@@ -399,6 +496,18 @@ singulars:
         name: Uřízněte smrkové prkno
       oakPlank:
         name: Uřízněte dubové prkno
+      maplePlank:
+        name: Uřízněte javorové prkno
+      teakPlank:
+        name: Uřízněte teakové prkno
+      mangrovePlank:
+        name: Uřízněte mangrovové prkno
+      coralPlank:
+        name: Uřízněte korálové prkno
+      bambooPlank:
+        name: Uřízněte bambusové prkno
+      willowPlank:
+        name: Uřízněte vrbové prkno
   cooking:
     fish:
       cookedPerch:
@@ -411,6 +520,24 @@ singulars:
         name: Osmažit štiku
       cookedTrout:
         name: Osmažit pstruha
+      cookedSalmon:
+        name: Osmažit lososa
+      cookedSquid:
+        name: Osmažit chobotnici
+      cookedLobster:
+        name: Osmažit humra
+      cookedShark:
+        name: Osmažit žraloka
+      cookedStingray:
+        name: Osmažit rejnoka
+      cookedSwordfish:
+        name: Osmažit mečouna
+      cookedAnglerfish:
+        name: Osmažit ďasa
+      cookedLargemouthBass:
+        name: Osmažit velkoústého okouna
+      cookedJellyfish:
+        name: Osmažit medůzu
     consumables:
       bread:
         name: Upéct chleba
@@ -433,3 +560,38 @@ singulars:
           do dokonalosti, abyste získali zlatavé, žvýkací bagely.
       pancakes:
         name: Udělejte palačinky
+      saltrum:
+        name: Uvařte si slanou omáčku
+        desc: Silný nápoj vyrobený ze sladké esence mořské řasy, fermentovaný k dokonalosti.
+          Bohatá, komplexní chuť s nádechem oceánského vánku.
+      underwaterSalad:
+        name: Připravte si podvodní salát
+      kelpRolls:
+        name: Připravte rolku z mořských řas
+      jellySandwich:
+        name: Udělejte želé sendvič
+      sweetCarrotPie:
+        name: Upečte sladký mrkvový koláč
+      troutSoup:
+        name: Udělejte si pstruhovou polévku
+      pickles:
+        name: Udělejte okurky
+      friedFishSandwich:
+        name: Udělejte si smažený rybí sendvič
+      dynamite:
+        name: Sestavte dynamit
+      salmonPie:
+        name: Upéct lososový koláč
+        activityDesc: Uvařeného lososa smíchejte s bramborovou kaší, zeleninou a krémovou
+          omáčkou. Směs nalijte do koláčové formy, přikryjte vločkovou kůrkou a pečte
+          dozlatova.
+      mudPie:
+        name: Udělejte koláč z bahna
+      roastedBellPepper:
+        name: Udělejte pečené papriky
+      mushroomCurry:
+        name: Udělejte houbové kari
+  foraging:
+    other:
+      mangroveBasket:
+        name: Vyrobte si mangrovový košík
