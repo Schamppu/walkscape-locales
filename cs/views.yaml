@@ -117,6 +117,7 @@ maps:
         'consumable': Spotřební materiál
         'special': Speciální
         'tool': Nástroje
+        'container': Truhly
   locales:
     grammaticalGender:
       'masculine': Pánské
@@ -461,6 +462,7 @@ singulars:
       extras: Extra
       mainOptions: Hlavní možnosti
       defaultExpression: Výchozí výraz
+      colorOptions: Barevné možnosti
   stats:
     info:
       chartWarning:
@@ -681,6 +683,8 @@ singulars:
       youMustBeInLocation: Pro odevzdání položek musíte být na stejném místě jako
         <object id="{obj}"/>.
       give: Vložit
+      youMustBeInLocationToCollect: Abyste si mohli vyzvednout odměny, musíte být
+        na stejném místě jako <object id="{obj}"/>.
     dialogs:
       abandonJob:
         text: Jste si jistý/á, že chcete tuto úlohu opustit? Ztratíte veškerý postup
@@ -719,12 +723,20 @@ singulars:
       holdToCast: 'Podržením odešlete'
       holdToUse: Podržte pro použití
       useConsumable: Použít
+    info:
+      abilitiesInfo: Schopnosti jsou speciální akce, které můžete použít k získání
+        okamžitých výhod ve hře. Schopnosti mají dobu zpoždění, na kterou musíte počkat,
+        než je budete moci znovu použít.
+      youHaveNoAbilities: <hl>Nemáte žádné schopnosti</hl>. Některé vybavení ve hře
+        vám může poskytnout schopnosti, které můžete použít k získání okamžité dočasné
+        výhody ve hře.
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Nejsou splněny podmínky použití:'
       cooldownRemaining: 'Zbývající čas obnovení:'
       cooldownReady: 'Čas obnoveni: Připraveno'
       noCooldown: Žádný čas obnovení.
+      followingMustBeTrueToTick: 'Pro zkrácení doby čekání musí být splněny tyto podmínky:'
   faction:
     phrases:
       openFaction: Otevřená frakce
