@@ -38,6 +38,10 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="chestFind"/> для любого навыка из группы <supp k="skillGroup"/>.
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> для навыка <supp k="skill"/> в <supp k="realm"/>.
     workEfficiency:
       global:
         name: <PLACEHOLDER>
@@ -120,6 +124,8 @@ singulars:
         text: <stat s="craftingOutcome"/> в области <supp k="realm"/>
       whileMainSkillAndRealm:
         text: <stat s="craftingOutcome"/> пока<supp k="skill"/>в<supp k="realm"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     fineMaterialFind:
       whileSkillGroup:
         text: <stat s="fineMaterialFind"/> для любого навыка из группы <supp k="skillGroup"/>.
@@ -195,6 +201,12 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Глобальное <stat s="doubleAction"/> в локации <supp k="keyword"/>.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     stepsRequired:
       whenKeywordSetBonus:
         text: Глобально <stat s="stepsRequired"/> если надето хотя бы <supp k="quantity"/>
@@ -226,6 +238,13 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="stepsRequired"/> для любого навыка из группы <supp k="skillGroup"/>.
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> для навыка <supp k="skill"/> в <supp k="realm"/>.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     doubleRewards:
       whenAchievementPoints:
         text: Глобальные <stat s="doubleRewards"/> если есть <supp k="achievementPoints"/>
@@ -261,6 +280,13 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Глобальные <stat s="doubleRewards"/> в процессе <supp k="activityType"/>.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: <stat s="doubleRewards"/> для навыка <supp k="skill"/> в <supp k="realm"/>.
     rollSpecialTable:
       global:
         name: <PLACEHOLDER>
@@ -300,6 +326,13 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="bonusExperience"/> для навыка <supp k="skill"/>
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> для навыка <supp k="skill"/> в <supp k="realm"/>.
     inventorySpace:
       global:
         name: <PLACEHOLDER>
@@ -331,6 +364,10 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="noMaterialsConsumed"/> для любого навыка из группы <supp k="skillGroup"/>.
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> выполняя <supp k="skill"/> в <supp k="realm"/>.
     travelingDistance:
       whileTraveling:
         name: <PLACEHOLDER>
@@ -376,3 +413,48 @@ singulars:
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+      whileMainSkillAndLocationKeyword:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> для навыка <supp k="skill"/> в локации
+          <supp k="keyword"/>.
+      whileMainSkill:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> для навыка <supp k="skill"/>
+      whenAchievementPoints:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whenKeywordSetBonus:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="workEfficiency"/> для навыка <supp k="skill"/> в <supp k="realm"/>.
+      whileLocationKeyword:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+  custom:
+    findFishingBait:
+      desc: <PLACEHOLDER>
+      name: <PLACEHOLDER>
+      text: Шанс найти <hl>1</hl> приманку для рыбы
+    trashTable:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+    gainAdventurersGuildToken:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+    gainOneMoney:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+    gainZeroToTenMoney:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+    rollGemPouchTable:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
