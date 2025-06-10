@@ -31,7 +31,7 @@ maps:
       'showRecipesMaterialsAreMet': Wymagania materiałów nie są spełnione
       'showCompletedAchievements': Pokaż ukończone osiągnięcia
       'leftHandedMode': Tryb dla leworęcznych
-      'alwaysStopWhenInventoryFull': Zawsze zatrzymaj przy przeciążeniu
+      'alwaysStopWhenInventoryFull': Domyślnie przerwij akcję przy przeciążeniu
       'spriteOutlines': Renderowanie konturów
       'showFpsCounter': Pokaż licznik FPS
       'shaderOutlineRendering': Renderowanie konturów za pomocą shaderów
@@ -326,14 +326,14 @@ singulars:
     info:
       consumablesUsage: Możesz wybrać <c>jedzenie</c> oraz <c>miksturę</c>, by użyć
         w trakcie aktywności.
-      savedSteps: Posiadasz zapisane kroki, które są wykorzystywane. Każdy krok liczy
-        się jako dwa, dopóki wszystkie zapisane kroki nie zostaną wyczerpane.
+      savedSteps: Masz zaoszczędzone kroki, które są właśnie zużywane. Każdy krok
+        liczy się podwójnie, dopóki wszystkie zaoszczędzone kroki nie zostaną wykorzystane.
       noActivity: Nie wybrano żadnej aktywności. <hl>Wybierz jedną z poniższych</hl>
         lub przesuń w lewo, aby zobaczyć wszystkie dostępne aktywności w tej lokalizacji.
     phrases:
       consumables: Przedmioty Zużywalne
       savedSteps: Zapisane kroki
-      stopWhenOverEncumbered: Zatrzymaj przy przeciążeniu
+      stopWhenOverEncumbered: Przerwij przy przeciążeniu
       notAffectingTraveling: (nie wpływa na wydajność podróżowania)
       workEfficiencyPenalty: <icon i="Work efficiency"/> Globalna wydajność pracy
         <c>-{penalty}%</c>
@@ -396,21 +396,21 @@ singulars:
       appleWatch: "<icon i=\"Apple watch small\" /> <c>Zegarek Apple</c> różni się
         nieco od <icon i=\"Watch small\" /> <c>innych zegarków</c> tym, że synchronizuje
         twoje kroki do Apple Health w okresach czasu. WalkScape odczytuje twoje kroki
-        z Apple Health, jaki połączony jest z twoim <icon i=\"Apple watch small\"
-        /> <c>Zegarkiem Apple</c> lub innym zegarkiem.\n\n<bp /> <c i=2>Zegarek Apple
-        synchronizuje twoje kroki do Apple Health w odstępach czasu.</c> Nie możesz
-        widzieć, jak twoje kroki pojawiają się na żywo w grze, bo przychodzą one w
-        opóźnieniem.\n\n<bp /> Musisz nadać dodatkowe uprawnienie do odczytu danych
-        z Apple Health, by podłączyć swój zegarek.\n\n<bp /> Tylko kroki, które są
-        sygnalizowane przez zegarek są odczytywane w grze.\n"
+        z Apple Health, jaki połączony jest z twoim <icon i=\"Apple watch small\"\
+        \ /> <c>Zegarkiem Apple</c> lub innym zegarkiem.\n\n<bp /> <c i=2>Zegarek
+        Apple synchronizuje twoje kroki do Apple Health w odstępach czasu.</c> Nie
+        możesz widzieć, jak twoje kroki pojawiają się na żywo w grze, bo przychodzą
+        one w opóźnieniem.\n\n<bp /> Musisz nadać dodatkowe uprawnienie do odczytu
+        danych z Apple Health, by podłączyć swój zegarek.\n\n<bp /> Tylko kroki, które
+        są sygnalizowane przez zegarek są odczytywane w grze.\n"
       watch: "WalkScape odczytuje twoje kroki z <c>Apple Health</c>, które są synchronizowane
         z twojego <icon i=\"Watch small\" /> <c>zegarka</c>. W zależności od producenta
         może pojawić się wymóg manualnej synchronizacji kroków z innej aplikacji do
         <c>Apple Health</c>.\n\n<bp /> <c i=2>Możliwe, że będzie wymagane manualne
         synchronizowanie kroków z Apple Health poprzez inne aplikacje</c>, by te mogły
         być zliczone w WalkScape.\n\n<bp /> Synchronizowanie kroków do <c>Apple Health</c>
-        zależy od producenta. Może to wymagać więcej ustawień i wiedzy technicznej.\n
-        \n<bp /> Musisz nadać dodatkowe uprawnienia do odczytu danych z Apple Health,
+        zależy od producenta. Może to wymagać więcej ustawień i wiedzy technicznej.\n\
+        \ \n<bp /> Musisz nadać dodatkowe uprawnienia do odczytu danych z Apple Health,
         by połączyć zegarek.\n\n<bp /> Tylko kroki zliczone poprzez twój zegarek są
         odczytywane w grze.\n"
   rewards:
@@ -490,7 +490,7 @@ singulars:
         leftHandedMode: Tryb leworęczny
       gameplay:
         title: Rozgrywka
-        stopWhenOverEncumberedDefault: Zawsze zatrzymaj przy przeciążeniu
+        stopWhenOverEncumberedDefault: Domyślnie przerwij akcję przy przeciążeniu
         showFpsCounter: Pokaż licznik FPS
       closedBeta:
         title: Zamknięta Beta

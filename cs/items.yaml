@@ -181,6 +181,9 @@ singulars:
       agilityMemosphere:
         name: Memosféra hbitosti
         desc: Uvnitř skleněné koule vidíte vzpomínku na projetí cílové pásky závodu.
+      woodcuttingMemosphere:
+        name: Dřevorubecká memosféra
+        desc: Uvnitř skleněné koule vidíte vzpomínku na pokácení velkého stromu sekerou.
   containers:
     skilling:
       foraging:
@@ -215,7 +218,7 @@ singulars:
           desc: Tohle hnízdo spadlo ze stromu, který jsi kácel. Jeho majitel ho už
             nenajde, takže bys mohl zkontrolovat, co v něm je.
         woodcuttingChest:
-          name: Dřevorubcova truhla
+          name: Dřevorubecká truhla
           desc: Krásně zdobená dřevěná truhla, vyzdobená různými druhy stromové kůry.
             Byla ukrytá mezi kořeny stromu, který jste pokáceli.
       agility:
@@ -420,23 +423,23 @@ singulars:
       woodcutting:
         bronzeHatchet:
           desc: Nanejvýš vhodný nástroj pro dřevorubce začátečníky.
-          name: Bronzová sekyra
+          name: Bronzová sekera
         copperHatchet:
           desc: Křehká a poměrně lehká pro užití v dřevorubectví, ale svojí práci
             odvede.
-          name: Měděná sekyra
+          name: Měděná sekera
         farganiteHatchet:
           name: Farganitová sekera
         ironHatchet:
-          name: Železná sekyra
+          name: Železná sekera
           desc: Díky své těžké čepeli slouží jako věrný partner těm, kteří se snaží
             zkrotit divočinu nebo čelit neznámému dobrodružství.
         steelHatchet:
-          name: Ocelová sekyra
+          name: Ocelová sekera
           desc: Ocelová sekera se třpytí odhodláním svého tvůrce, připravena plnit
             jeho rozkazy.
         tarsiliumHatchet:
-          name: Sekyra z Tarsília
+          name: Sekera z Tarsília
         basicHatchet:
           desc: Základní sekerka, skromný nástroj lesníků. Sotva víc než klacek, kámen
             a provázek, který to všechno spojuje dohromady.
@@ -463,6 +466,8 @@ singulars:
           desc: Srp vyrobený ze vzácného podvodního materiálu zvaný hydrilium.
         mangroveBasket:
           name: Mangrovový košík
+          desc: Mangrovový koš byl postaven ze dvou různých košů, ale mangrovové prkna
+            bezchybně zakrývají spoje.
       hunting:
         pineBirdhouse:
           name: Borová ptačí budka
@@ -669,6 +674,9 @@ singulars:
           name: Stříbrný rubínový prsten
           desc: Stříbro, často vídané na prstech nižších šlechticů, v kombinaci s
             tmavě červeným kamenem je symbolem těch, kteří touží po moci.
+        amuletOfTheRoot:
+          name: Kořenový amulet
+          desc: Zářící amulet se silou kruhového kořene.
       miscellaneous:
         bagOfRocks:
           name: Pytel kamenů
@@ -693,6 +701,11 @@ singulars:
           name: Očarovaný klobouk
         legs:
           name: Očarované kalhoty
+      adventurersTools:
+        adventuringSickle:
+          desc: Srp s vyrytým znakem cechu dobrodruhů na čepeli. Lze jej použít ke
+            sklizni bylin a dalších rostlin.
+          name: Dobrodružný srp
     skilling:
       agility:
         exerciseHeadband:
@@ -1013,6 +1026,8 @@ singulars:
         simpleGoldPan:
           name: Jednoduchá zlatá pánev
           desc: Tato pánev vám pomůže najít zlato v řekách.
+        minersPants:
+          name: Hornické kalhoty
       smithing:
         smeltingGoggles:
           name: Svářečské brýle
@@ -1038,6 +1053,8 @@ singulars:
           name: Průvodce kovářstvím
           desc: Kniha obsahuje obrázky různých kováren, kladiv a měchů. Kovářské řemeslo
             je vysvětleno velmi podrobně.
+        wolfJawTongs:
+          name: Vlčí kleště
       woodcutting:
         lumberjackShirt:
           name: Dřevorubecká košile
@@ -1069,7 +1086,7 @@ singulars:
           name: Průvodce řezáním dřeva
           desc: Tato kniha obsahuje obrázky různých dřev nalezených po celých říších.
         logSplitter:
-          name: Štípačka dřeva
+          name: Štípač dřeva
           desc: Širší čepel sekery ji činí efektivní při štípání polen.
         forestersPants:
           name: Foresterovy kalhoty
@@ -1205,6 +1222,16 @@ singulars:
         desc: Pěkně pletená čepice ve stylu, která vám pomůže udržet si chladnou hlavu
           během zimních dobrodružství.
         name: Pěkná čepice
+      kelpDivingMask:
+        name: Potápěčská maska z řas
+        desc: Tato lehká potápěčská maska je vyrobena z tvrzené mořské řasy.
+      kelpDivingBody:
+        name: Potápěčský oblek z řas
+        desc: Potápěčské oblek s mořskými řasami těsně přiléhá na tvé tělo.
+      kelpDivingLegs:
+        desc: Tyto potápěčské kalhoty jsou těsné na vaše nohy, ale sotva cítíte odpor
+          vody.
+        name: Potápěčské kalhoty z řas
     achievements:
       conservationistHat:
         name: Památkářský klobouk
@@ -1280,7 +1307,7 @@ singulars:
         desc: Tři vícebarevné koule naplněné obilím tvoří ideální předměty pro žonglování.
         name: Žonglovací míčky
       trashGrabber:
-        desc: Konstrukce tohoto prodlouženého nástroje usnadňuje sbírání odpadků bez
+        desc: Konstrukce tohoto prodlouženého nástroje usnadňuje sběr odpadků bez
           nutnosti ohýbání.
         name: Sběrač odpadků
       treasureHunterHat:
@@ -1388,7 +1415,8 @@ singulars:
       iceplum:
         name: Ledová švestka
       moondaisy:
-        name: Moondaisy
+        name: Sedmikráska
+        desc: Křehká květina, která září měsíčním světlem i za nejtemnějších nocí.
       nettle:
         name: Kopřiva
       nightgem:
@@ -1444,6 +1472,8 @@ singulars:
         name: Pepř
       mud:
         name: Bláto
+        desc: Mokrý a slizký kus bláta. Ať s ním zacházíš sebeopatrněji, zašpiníš
+          se.
       wildRice:
         name: Divoká rýže
     mining:

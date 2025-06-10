@@ -180,6 +180,89 @@ singulars:
           \ \n<li><hl>Применение</hl>: Плавка <object id=\"ore\" /> и <object id=\"\
           nugget\" /> в <object id=\"bar\" />, которые используются в <object id=\"\
           crafting\" /> и <object id=\"trinketry\" />.</li>\n"
+        trinketry: "<object id=\"trinketry\" /> – это ремесленное умение придавать
+          форму <object id=\"gem\" /> и создавать ювелирные изделия.\n\n<li><hl>Начальное
+          обучение</hl>: Вы можете начать осваивать <c>ювелирное дело</c> когда найдете
+          несколько нужных <object id=\"plant\" /> материалов, выполняя <object id=\"\
+          foraging\" /> и получите несколько базовых ювелирных <icon i=\"crafting\"\
+          \ /> рецептов.</li>\n\n<li><hl>Где найти</hl>: В более богатых локация есть
+          больший шанс найти <object id=\"service_trinketry_bench\" /> оборудование,
+          которое вам понадобиться для ювелирных рецептов более высокого уровня. Там
+          же вы можете обнаружить некоторые активности, связанные с <c>ювелирным делом</c>.</li>\n\
+          \n<li><hl>Примечание</hl>: Нужно для огранки <object id=\"rough_gem\" />
+          в <object id=\"cut_gem\" />. Когда они у вас появятся, а так же более редкие
+          <object id=\"item_trinket\" /> вы сможете комбинировать их со <object id=\"\
+          bar\" /> слитками, чтобы создавать <object id=\"item_ring\" /> и <object
+          id=\"item_amulet\" />, которые могут усилить ваши умения.</li>\n"
     item:
       info:
         title: Предмет <object id="{obj}">
+  phrases:
+    activity:
+      stepsWalked: Шагов пройдено
+      actionsCompleted: Действий завершено
+      xpGained: XP получено
+      level: УР
+      stepsToLevelUp: 'Шагов до след. уровня:'
+      stepsTo99: 'Шагов до 99 уровня:'
+      itemsGained: Получено
+      availableLocations: Локации
+      each: на
+      stepsRequired: Шагов требуется
+    item:
+      inBank: В банке
+      fromActivites: Из активностей
+      fromChests: Из сундуков
+      dropped: Выброшено
+      opened: Открыто
+      purchased: Куплено
+      itemsGained: Предметы получены
+      attributes: Свойства
+      notCrafted: (отсутствует)
+      requirements: Требования
+      abilities: Способности
+      chestSources: Получено из сундуков
+      craftingSources: Изготовлено
+      inInventory: В инвентаре
+      sold: Продано
+      fromCrafting: Создано
+      activitySources: Получено из активностей
+    location:
+      activities: Активности
+      realm: Страна
+    common:
+      unknown: Этот контент пока неизвестен вашему персонажу. Продолжайте исследовать,
+        чтобы узнать все подробности!
+maps:
+  phrases:
+    item:
+      itemType:
+        "material": Материалы
+        "container": Контейнеры
+        "crafted": Созданные предметы
+        "loot": Приобретенные предметы
+        "consumable": Расходники
+        "collectible": Коллекционные предметы
+plurals:
+  skillUnlocks:
+    recipeRequirementsMet:
+      zero: '-'
+      two: <c>{}</c> рецепты
+      one: <c>{}</c> рецепты
+      other: <c>{}</c> рецепты
+      few: '<c>{}</c> рецепты'
+      many: '<c>{}</c> рецепты'
+    itemRequirementsMet:
+      few: '<c>{}</c> предметы'
+      many: '<c>{}</c> предметы'
+      zero: '-'
+      one: <c>{}</c> предметы
+      other: <c>{}</c> предметы
+      two: <c>{}</c> предметы
+    activityRequirementsMet:
+      one: <c>{}</c> активности
+      few: '<c>{}</c> активности'
+      many: '<c>{}</c> активности'
+      zero: '-'
+      other: <c>{}</c> активности
+      two: <c>{}</c> активности
