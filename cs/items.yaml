@@ -90,6 +90,7 @@ singulars:
         desc: Teplý nápoj na chladném místě.
       chocolateMilk:
         name: Čokoládové mléko
+        desc: Půlčíci byli první, kdo objevil kouzlo čokolády v mléce.
       dynamite:
         name: Dynamit
         desc: Co je to za svíčky? Dy-na-mit! Musí to být z Wrentmarku.
@@ -104,6 +105,8 @@ singulars:
         desc: Teplé pečivo, na kterém si pochutnávají seveřané.
       schnitzel:
         name: Řízek
+        desc: Historici z Ewerethienu předpokládají že řízek vznikl v malé chatrči
+          na půli cesty mezi Salsfirthem a Granfiddichem.
       tomato:
         name: Rajče
         desc: Je to ovoce nebo zelenina?
@@ -134,6 +137,28 @@ singulars:
         desc: Ohnivá chilli paprička, plná intenzivní pálivosti a výrazné chuti, dodá
           šmrnc každému pokrmu.
         name: Pikantní paprika
+      honeyChicken:
+        desc: Křupavá, zlatavě hnědá kuřecí stehna s medem přelitá sladkou a pikantní
+          medovou omáčkou nabízející krásnou kombinaci chutí a textur.
+        name: Medové kuře
+      crabRolls:
+        name: Krabí rolky
+        desc: Krabí rolky, delikátní a chutná pochoutka, se vyznačují šťavnatým krabím
+          masem zasazeným do měkké máslové rolky, často doplněné čerstvým hlávkovým
+          salátem a pikantní omáčkou.
+      kelpRolls:
+        name: Mořské rolky
+        desc: Slavná syrská lahůdka, rolky z mořských řas, se vyrábějí z mořských
+          řas, které jsou pečlivě srolovány do správného tvaru.
+      saltrum:
+        desc: Silný destilovaný alkoholický nápoj, který opije i ryby.
+        name: Slaný rum
+      mudPie:
+        name: Bábovička
+        desc: Jednoduchá, zemitá pochoutka, vytvořená z bláta a fantazie.
+      cremeBrulee:
+        name: Creme brulée
+        desc: Přepálená smetana nikdy nechutnala tak dobře, je to národní pokrm Erdwise.
     cookedFish:
       cookedPike:
         desc: Grilovaná nebo na pánvi opečená, vařená štika nabízí lahodnou křehkost
@@ -184,12 +209,45 @@ singulars:
       woodcuttingMemosphere:
         name: Dřevorubecká memosféra
         desc: Uvnitř skleněné koule vidíte vzpomínku na pokácení velkého stromu sekerou.
+      trinketryMemosphere:
+        name: Šperkařská memosféra
+        desc: Uvnitř skleněné koule vidíš vzpomínku na leštění třpytivého drahokamu.
+      cookingMemosphere:
+        name: Memosféra vaření
+        desc: Uvnitř skleněné koule vidíte vzpomínku na to, jak jste v obrovském hrnci
+          vařili vydatný vývar, který si mohli všichni vychutnat.
+      fishingMemosphere:
+        name: Rybářská memosféra
+        desc: Uvnitř skleněné koule vidíte vzpomínku na ulovení rekordní ryby, která
+          ohromila všechny rybáře.
+      foragingMemosphere:
+        name: Memosféra sběru
+        desc: Uvnitř skleněné koule vidíte vzpomínku na nalezení plně rozkvetlého
+          bobulového keře.
+      smithingMemosphere:
+        name: Kovářská memosféra
+        desc: Uvnitř skleněné koule vidíš vzpomínku na výrobu smrtící zbraně a pevného
+          brnění.
+      craftingMemosphere:
+        name: Memosféra výroby
+        desc: Uvnitř skleněné koule vidíte vzpomínku na to, jak jste vrtali u pracovního
+          stolu, dokud nevzniklo něco velkolepého.
+      carpentryMemosphere:
+        name: Tesařská memosféra
+        desc: Uvnitř skleněné koule vidíte vzpomínku na proces výroby krásného kusu
+          nábytku na pile.
+      miningMemosphere:
+        name: Hornická memosféra
+        desc: Uvnitř skleněné koule vidíte vzpomínku na těžbu bohaté rudné žíly.
   containers:
     skilling:
       foraging:
         foragingChest:
           desc: Znamenitý výběr vybavení a předmětů souvisejících se sběrem.
           name: Pytlácká truhla
+        sunkenChest:
+          desc: Z hlubin moře si tato truhla našla cestu na břeh.
+          name: Potopená truhla
       regional:
         galeforgeChest:
           desc: Říká se, že tato truhla je zaoblená, aby se dala kutálet po městě.
@@ -197,10 +255,27 @@ singulars:
           name: Truhla z Galeforge
         jarvoniaChest:
           name: Truhla Jarvonie
+          desc: Zmrzlá truhla nalezená v Jarvonii, studená na dotek.
         rustyChest:
           desc: Stará zrezivělá truhla, kterou našel a uchoval Herbert. Jen čeká,
             aby novým dobrodruhům poskytla užitečný začátek.
           name: Rezavá truhla
+        adventureGuildChest:
+          name: Truhla cechu dobrodruhů
+          desc: Tato robustní truhla nese symbol Cechu dobrodruhů.
+        coralChest:
+          name: Korálová truhla
+          desc: Vícebarevné korály ve tvaru truhly. Pohybují se, jako by byly pod
+            vodou.
+        syrenthiaChest:
+          name: Truhla Syrenthie
+          desc: Hluboký podvodní svět musí ukrývat spoustu vodních pokladů.
+        gdteChest:
+          name: Truhla GDTE
+          desc: Bažinatá truhla, která vypadá, jako by ji někdo vylovil z bažin GDTE.
+        coinPouch:
+          name: Sáček na mince
+          desc: Malý váček plný mincí. Je trochu těžký, ale nestěžuješ si.
       mining:
         gemPouch:
           desc: Malý váček plný drahokamů. Když ho držíte v ruce, cítíte jejich tíhu.
@@ -216,6 +291,7 @@ singulars:
       fishing:
         fishingChest:
           name: Rybářská truhla
+          desc: V moři je spousta ryb, ale akvária obsahují ty nejvzácnější.
       woodcutting:
         birdNest:
           name: Ptačí hnízdo
@@ -246,6 +322,11 @@ singulars:
           name: Kovářská truhla
           desc: Při tavení rud jsi v rozpálené peci našel tuhle těžkou kovovou truhlu
             ve tvaru kovadliny. Kdo by ji tam jen tak nechal?
+      trinketry:
+        trinketryChest:
+          name: Klenotnická truhla
+          desc: Krabice plná cenností, doufám pro vaše dobro, že to není převlečená
+            příšera!
   crafted:
     equipmentSets:
       bronze:
@@ -708,6 +789,10 @@ singulars:
           name: Zlatý prsten se slunečním kamenem
           desc: Tento větší sluneční kámen jako by naplňoval zlato slunečním světlem
             a záříl i v těch nejtemnějších místech.
+        silverEtherniteRing:
+          name: Stříbrný ethernitový prsten
+          desc: Stříbrný prsten osazený ostrým ethernitem. Jeho hypnotický lesk je
+            zároveň svůdný i znepokojivý.
       miscellaneous:
         bagOfRocks:
           name: Pytel kamenů
@@ -1112,12 +1197,20 @@ singulars:
             vodní zdroje a další.
         compassNecklace:
           name: Amulet nálezu
+          desc: Funkční kompas na provázku, který si můžete uvázat kolem krku. Pokud
+            víte, jak ho používat, vždycky najdete cestu domů.
         foragingShorts:
           desc: Odolné a pohodlné kraťasy, ideální pro shánění potravy v jakémkoli
             terénu.
           name: Šortky na shánění potravy
         nonWaterproofBoots:
           name: Nepromokavé boty
+          desc: I když nabízejí určitou ochranu před větrem a drsným terénem při shánění
+            potravy, neexistuje žádná záruka, že vám udrží nohy v suchu.
+        waterproofBoots:
+          name: Voděodolné boty
+          desc: Holínky žluté jako kanárek, které udrží vaše ponožky suché. A není
+            mnoho věcí, které by se cítily horší než mokré ponožky.
       mining:
         miningHelm:
           name: Hornická přilba
@@ -1400,6 +1493,18 @@ singulars:
       smellySocks:
         name: Páchnoucí ponožky
         desc: Perfektní ponožky na osvobození elfa.
+      aerofibrilCape:
+        name: Aerofibrilový plášť
+        desc: Peříčkový plášť, vykládaný aerodynamickou nití, vám umožní jet opravdu
+          rychle.
+      pentafrostAmulet:
+        name: Pentafrost amulet
+        desc: Symbol vysoce postavených Vysvěcených, vyrobený z tvrdého ledu a vytesaný
+          do tvaru pěticípé hvězdy. Kde jsi to našel?
+      ringOfAsh:
+        name: Prsten z popela
+        desc: Prsten je vyroben ze stlačeného uhlí. I když je nezničitelný, na prstu,
+          na kterém se nosí, zanechává navždy černou stopu.
     achievements:
       conservationistHat:
         name: Památkářský klobouk
@@ -1508,6 +1613,14 @@ singulars:
       adventurersHat:
         name: Klobouk dobrodruha
         desc: Tento kožená klobouk vás ochrání před sluncem, větrem i deštěm.
+    combat:
+      swashbucklerSword:
+        name: Swashbuckler meč
+        desc: Zakřivený meč je perfektní pro bitvy s útokem na lodě. K jeho efektivnímu
+          boji je zapotřebí sečná technika.
+    agGuildSpecials:
+      bertssuperskis:
+        name: Bertovy super lyže
   materials:
     carpentry:
       birchPlank:
@@ -1969,6 +2082,7 @@ singulars:
         desc: Perlově bílá a dokonale neporušená. A krásný exemplář pro sběratele.
       pearls:
         name: Perly
+        desc: Sada doslova perleťově bílých šperků. Skvělý materiál na výrobu šperků.
       crosswordPuzzle:
         name: Stará křížovka
         desc: Slovní hra, devět písmen, začíná na C.
@@ -1976,8 +2090,12 @@ singulars:
         name: Vlasec
       unidentifiedRemains:
         name: Neidentifikované ostatky
+        desc: Cech dobrodruhů by ocenil, kdybyste jim mohl přinést tyto kosti, možná
+          by jim to mohlo pomoci vyřešit nevyřešený případ.
       adventurersPin:
         name: Smaltovaný špendlík dobrodruhů
+        desc: Odznak se symbolem cechu dobrodruhů. Je trochu rezavý, ale stále lesklý.
+          Cech dobrodruhů by ocenil, kdybyste jim ho vrátili.
     hunting:
       bones:
         desc: Více kusů kostí.
@@ -2042,6 +2160,18 @@ singulars:
         desc: Volavka jako šperk se ve světle jasně leskne. Jednou by se to hodilo
           jako amulet.
         name: Volavčí šperk
+      luckyRabbitFootTrinket:
+        name: Šťastná králíčí noha šperk
+        desc: Šťastný šperk ve tvaru králičí nohy se leskne jasnou září ve světle.
+          To by se jednoho dne hodilo jako amulet.
+      measuringSpoonsTrinket:
+        name: Odměrné lžíce šperk
+        desc: Odměrky jako drobnost jasně září ve světle. To by se jednoho dne hodilo
+          jako amulet.
+      compassTrinket:
+        name: Kompas šperk
+        desc: Ten kompasový drobeček se ve světle jasně leskne. Jednou by se to hodilo
+          jako amulet.
   collectibles:
     fromActivity:
       veryOldWine:
@@ -2050,6 +2180,10 @@ singulars:
           vidět. Možná je to kořist šíleného piráta.
       silverPocketWatch:
         name: Stříbrné kapesní hodinky
+        desc: Těmto hodinkám chyběly ručičky a ozubená kola, měly rozbitý skleněný
+          kryt nestandardní velikosti a navíc měli zčernale stříbrný řetízek i pouzdro.
+          Nebylo to snadné, ale opravili jste je tak, že teď vypadají jako nové a
+          dají se považovat za rodinné dědictví a vydrží několik generací.
       woodenCarvedBearFigurine:
         desc: Toto dílo o velikosti pěsti je pečlivě vyřezávané a zobrazuje vzdorovitého
           medvěda s otevřenou tlamou, který řve. Detaily v divákovi vyvolávají pocit
@@ -2057,14 +2191,45 @@ singulars:
         name: Dřevěná vyřezávaná figurka medvěda
       oldWarSword:
         name: Starý válečný meč
+        desc: Tento dlouhý meč je dost rezavý, ale přesto si zachovává některé rozeznatelné
+          detaily, jejichž původ se zdá být wallisovský. Možná to pochází z Války
+          o karmínový prapor?
       jarvonianCrosswordPuzzle:
         desc: 'Tyto křížovky jsou navrhovány, kopírovány a distribuovány mezi obyvatelstvo
           Jarvonie jednou za sezónu. Existuje velká soutěživost, protože první, kdo
           je vyřeší, obdrží finanční odměnu. 1. Horizontální: Hora, kde zmizela těžařská
           expedice (devět políček)'
         name: Jarvonská křížovka
+      ancientAnkh:
+        name: Starověký hieroglyf
+        desc: Tento artefakt pochází z jiné éry. Hyeroglif má tvar klíče (♀) ze ztracené
+          kultury, který historici přeložili jako „život“. Legendy hovoří o tomto
+          klíči, který otevírá dveře mezi životem a smrtí.
+      blueLotusButterfly:
+        name: Modrý lotosový motýl
+        desc: Tento motýl nemá na křídlech žádné vzory ani tvary, ale jeho modrá barva
+          je tak intenzivní, že je těžké od něj odtrhnout oči. Nádherný exemplář,
+          který se nevyskytuje často.
+      soupKitchenBadge:
+        name: Kuchyňský odznak
+        desc: Odznak, ačkoli malý a jednoduchý, vás identifikuje jako dobrovolníka
+          v polévkové kuchyni. Jeho nošení je zdrojem hrdosti a každá kuchyně si ho
+          dodává sama, takže si je všechny sežeňte, porazte všechny tělocvičny, myslím
+          tím pomoc ve všech kuchyních.
+      tinySwanIceSculpture:
+        name: Malá ledová socha labutě
+        desc: Tato drobná ledová socha připomíná krásnou labuť. Její křídla se třpytí
+          světlem, které odráží slunce. Toto umělecké dílo je pro vás důležité, protože
+          jste ho vytvořili pro někoho blízkého.
     visas:
       westernContinentBoatPass:
         name: Lodní karta západního kontinentu
         desc: Tato formální permanentka vám opravňuje k projíždění různých míst na
           lodích a člunech. Je označena malým lodním razítkem.
+      underwaterMapI:
+        name: Podvodní mapa
+        desc: Mapa se odhalí pouze pod vodou. Zobrazuje zátoky, jeskyně, vraky lodí
+          a další pozoruhodná místa v podvodní oblasti.
+  currencies:
+    adventurersGuildToken:
+      desc: Žeton, který lze směnit za zboží a služby v Cechu dobrodruhů.
