@@ -76,7 +76,7 @@ singulars:
     climbing:
       name: Horolezecké vybavení
       requirement: Vyžaduje vybavení <object id="climbingTool" />.
-      requirementLevel: Vyžaduje horolezecké nářadí, které má v požadavcích alespoň
+      requirementLevel: Vyžaduje horolezecké vybavení, které má v požadavcích alespoň
         <keywordRequirements />.
     frisbee:
       name: Létající talíř
@@ -110,6 +110,8 @@ singulars:
     ring:
       name: Prsten
       requirement: Vyžaduje vybavený <object id="item_ring" />.
+      requirementLevel: Vyžaduje prsten, který má ve svých požadavcích alespoň <keywordRequirements
+        />.
     underwater:
       requirement: Vyžaduje vybavení <object id="item_underwater" />.
       name: Pod vodou
@@ -396,6 +398,8 @@ singulars:
     products:
       sandwich:
         name: Recept na sendvič
+        requirements: Vyžaduje <object id="sandwich" /> vytvořený receptem <object
+          id="recipe_cooking" />.
   services:
     kitchen:
       requirementLevel: <PLACEHOLDER>

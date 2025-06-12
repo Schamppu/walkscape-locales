@@ -96,7 +96,7 @@ voorwerp geselecteerd, inUse: In gebruik, disableWhenChanging: Uitschakelen bij 
 van activiteit, enableWhenBack: Opnieuw inschakelen wanneer een activiteit start waar
 deze eerder gebruikt werd, selectedConsumable: Geselecteerd verbruiksartikel, consumables: Verbruiksartikelen,
 noConsumables: Geen verbruiksartikelen in je inventaris., noPotionConsumables: Geen
-<hl>drankjes</hl> in je inventaris., allItemsInUse: 'Al deze voorwerpen worden zijn
+<hl>elixers</hl> in je inventaris., allItemsInUse: 'Al deze voorwerpen worden zijn
 momenteel in gebruik, en kunnen niet weggegooid worden.', noConsumableSelected: Geen
 verbruiksartikel geselecteerd. Je kunt er hieronder een selecteren., checkBank: Bank
 openen, itemsInUse: Je hebt voorwerpen geselecteerd die al gebruikt worden. Je kunt
@@ -126,7 +126,7 @@ wanneer overbelast, options: Opties}, info: {noActivity: 'Momenteel geen activit
 geselecteerd. <hl>Kies er hieronder een</hl>, of swipe naar links om alle beschikbare
 activiteiten op deze locatie te zien.', savedSteps: Je hebt bewaarde stappen die verbruikt
 worden. Elke stap telt voor twee totdat alle bewaarde stappen op zijn., consumablesUsage: Je
-kunt <c>voedsel</c> en een <c>drankje</c> kiezen om te nuttigen tijdens activiteiten.}},
+kunt <c>voedsel</c> en een <c>elixer</c> kiezen om te nuttigen tijdens activiteiten.}},
 abilities: {phrases: {abilities: Abilities, useAbility: Gebruik ability, holdToCast: Ingedrukt
 houden om uit te voeren, holdToUse: Ingedrukt houden om te gebruiken, noAction: Geen
 actie, useConsumable: Gebruik verbruiksartikel}, info: {abilitiesInfo: Abilities zijn
@@ -190,30 +190,35 @@ exitToCharacterSelection: Naar personageselectie terugkeren, connectionInfoAndro
 ondersteuning voor Android gebruikers komt binnenkort. Op dit moment wordt alleen
 de telefoon als stappenbron ondersteund., stepSourceInfo: Stappenbron informatie,
 stepSourceInfoDesc: Klik op onderstaande knop voor meer informatie over de bronnen
-van de stappen en hun verschillen.}}, location: {phrases: {activities: Activiteiten,
-services: Voorzieningen, buildings: Gebouwen, noActivites: Geen activiteiten beschikbaar
-op deze locatie., factions: Facties, routes: Routes, tapToShowRoutes: Tik aan om routes
-weer te geven, jobBoard: Prikbord, jobs: Klusjes}}, worldMap: {phrases: {activities: Activiteiten,
-services: Voorzieningen, buildings: Gebouwen, pointsOfInterest: Bezienswaardigheden,
-information: Informatie, routeFromTo: '<location i="{fromID}"/> naar <location i="{toID}"/>',
-route: Route, currentLocation: Huidige locatie, afterExploring: 'Na het verkennen
-van de locatie, zul je de bezienswaardigheden van deze locatie kunnen zien.', routeRequirementsNotMet: 'Routes
-in je geselecteerde pad hebben vereisten waar niet aan wordt voldaan:', youHaveNotExplored: Je
-hebt deze locatie nog niet verkend. Je zult informatie over deze locatie zien nadat
-je er een keer bent geweest., noActivities: Er zijn geen activiteiten beschikbaar
-op deze locatie., youreHere: Je bent momenteel op deze locatie., changeRouteWarning: Wijzigen
-van je route zal je huidige reis annuleren en ga je terug naar je vorige locatie.
-Weet je het zeker?}}, stats: {phrases: {stats: Statistieken, totalSkillXp: Totale
-vaardigheids-XP, totalSteps: Totaal aantal stappen}, info: {stats: Een overzicht van
-statistieken over elke stap die je hebt genomen door de wereld van Arenum., chartWarning: {
-title: Onnauwkeurigheden in grafieken, description: 'Verschillende spelers hebben
-problemen gemeld met onnauwkeurige stappengrafieken, veroorzaakt door grote wijzigingen
-achter de schermen in een eerdere update. Als je problemen ondervindt waarbij de grafieken
-significant afwijkende waarden weergeven dan andere bronnen, is dit waarschijnlijk
-de reden. De spellogica zelf zou nog steeds moeten werken zoals voorheen en de grafiekproblemen
-zullen in toekomstige updates worden opgelost.'}}}, tutorial: {phrases: {noMoreMessages: Geen
-tutorial-berichten meer, youWillGain: Je ontvangt het volgende als je deze optie selecteert.}},
-leaderboards: {phrases: {show: Weergeven, everyone: Iedereen, friends: Vrienden, leaderboards: Klassementen,
+van de stappen en hun verschillen., connectionInfoIos: 'Als er geen wearables weergeven
+worden in de bovenstaande lijst, controleer dan of je de app toestemming hebt gegeven
+om de stappendata te mogen gebruiken van Apple Gezondheid onder: <c>Instellingen ➤
+Privacy & Beveiliging ➤ Gezondheid ➤ (onder Apps) WalkScape</c> en dat Apple Gezondheid
+stappen heeft geregistreerd op deze apparaten in de afgelopen 7 dagen.'}}, location: {
+phrases: {activities: Activiteiten, services: Voorzieningen, buildings: Gebouwen,
+noActivites: Geen activiteiten beschikbaar op deze locatie., factions: Facties, routes: Routes,
+tapToShowRoutes: Tik aan om routes weer te geven, jobBoard: Prikbord, jobs: Klusjes}},
+worldMap: {phrases: {activities: Activiteiten, services: Voorzieningen, buildings: Gebouwen,
+pointsOfInterest: Bezienswaardigheden, information: Informatie, routeFromTo: '<location
+i="{fromID}"/> naar <location i="{toID}"/>', route: Route, currentLocation: Huidige
+locatie, afterExploring: 'Na het verkennen van de locatie, zul je de bezienswaardigheden
+van deze locatie kunnen zien.', routeRequirementsNotMet: 'Routes in je geselecteerde
+pad hebben vereisten waar niet aan wordt voldaan:', youHaveNotExplored: Je hebt deze
+locatie nog niet verkend. Je zult informatie over deze locatie zien nadat je er een
+keer bent geweest., noActivities: Er zijn geen activiteiten beschikbaar op deze locatie.,
+youreHere: Je bent momenteel op deze locatie., changeRouteWarning: Wijzigen van je
+route zal je huidige reis annuleren en ga je terug naar je vorige locatie. Weet je
+het zeker?}}, stats: {phrases: {stats: Statistieken, totalSkillXp: Totale vaardigheids-XP,
+totalSteps: Totaal aantal stappen}, info: {stats: Een overzicht van statistieken over
+elke stap die je hebt genomen door de wereld van Arenum., chartWarning: {title: Onnauwkeurigheden
+in grafieken, description: 'Verschillende spelers hebben problemen gemeld met onnauwkeurige
+stappengrafieken, veroorzaakt door grote wijzigingen achter de schermen in een eerdere
+update. Als je problemen ondervindt waarbij de grafieken significant afwijkende waarden
+weergeven dan andere bronnen, is dit waarschijnlijk de reden. De spellogica zelf zou
+nog steeds moeten werken zoals voorheen en de grafiekproblemen zullen in toekomstige
+updates worden opgelost.'}}}, tutorial: {phrases: {noMoreMessages: Geen tutorial-berichten
+meer, youWillGain: Je ontvangt het volgende als je deze optie selecteert.}}, leaderboards: {
+phrases: {show: Weergeven, everyone: Iedereen, friends: Vrienden, leaderboards: Klassementen,
 first: Eerste, me: Ik, last: Laatste, loadingPage: Pagina laden..., totalSteps: Totaal
 aantal stappen, totalLevel: Totaalniveau, totalExperience: Totale ervaring, achievementPoints: Prestatiepunten}},
 mainMenu: {phrases: {chooseCharacter: 'Kies je personage, of maak een nieuwe aan.',
@@ -268,8 +273,8 @@ uitgeschakeld. De standaard stappenteller van de telefoon zal gebruikt worden., 
 appleWatch: Apple Watch, watch: Andere smartwatch}, deviceInfo: {watch: "WalkScape
 leest je stappen uit van <c>Apple Health</c> als ze gesynchroniseerd zijn vanuit je
 <icon i=\"Watch small\" /> <c>smartwatch</c>. Afhankelijk van de producent moet je
-mogelijk in een aparte app je stappen handmatig synchroniseren naar <c>Apple Health</c>.\n
-\n<bp /> <c i=2>Je moet mogelijk met behulp van andere applicaties je stappen synchroniseren
+mogelijk in een aparte app je stappen handmatig synchroniseren naar <c>Apple Health</c>.\n\
+\ \n<bp /> <c i=2>Je moet mogelijk met behulp van andere applicaties je stappen synchroniseren
 naar Apple Health </c> voordat ze verwerkt worden door WalkScape.\n\n<bp /> Het proces
 van synchroniseren van stappen naar <c>Apple Health</c> kan per producent verschillen.
 Mogelijk is er enige technische kennis nodig om dit op te zetten.\n\n<bp /> Je moet
@@ -288,10 +293,10 @@ omdat het periodiek je stappen naar Apple Health synchroniseert. WalkScape leest
 stappen uit van Apple Health als ze gesynchroniseerd zijn vanuit je <icon i=\"Apple
 watch small\" /> <c>Apple Watch</c> of een andere smartwatch.\n\n<bp /> <c i=2>Apple
 Watch synchroniseert periodiek je stappen naar Apple Health.</c> Je kan je stappen
-niet in realtime in het spel zien, en je stappen kunnen met een vertraging binnenkomen.\n
-\n<bp /> Je moet een extra permissie geven voor het lezen van gegevens uit Apple Health
-om je Apple Watch te kunnen verbinden.\n\n<bp /> Alleen stappen die door je Apple
-Watch geregistreerd zijn, worden verwerkt door het spel.\n"}}, wardrobe: {phrases: {
+niet in realtime in het spel zien, en je stappen kunnen met een vertraging binnenkomen.\n\
+\ \n<bp /> Je moet een extra permissie geven voor het lezen van gegevens uit Apple
+Health om je Apple Watch te kunnen verbinden.\n\n<bp /> Alleen stappen die door je
+Apple Watch geregistreerd zijn, worden verwerkt door het spel.\n"}}, wardrobe: {phrases: {
 noHeadwear: Je hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires.,
 noBackAccessories: Je hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}},
 rewards: {phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open
@@ -306,4 +311,22 @@ te bezoeken. Alle hulp wordt enorm gewaardeerd! ❤️, chooseALanguage: Kies ee
 uit de onderstaande lijst., percentExplanation: '% laat zien hoeveel vertaald is.',
 selectGrammaticalGender: Selecteer grammaticaal geslacht, grammaticalGenderExplanation: Het
 gekozen grammaticaal geslacht bepaalt hoe de UI teksten van het spel naar je refereren.,
-youCanChangeAnyTime: Je kunt op elk moment de taal veranderen in de <c>Spelinstellingen</c>.}}}}
+youCanChangeAnyTime: Je kunt op elk moment de taal veranderen in de <c>Spelinstellingen</c>.}},
+gearSets: {phrases: {gearSets: Uitrustingsets, optionsAndFilters: Opties & filters,
+copyCurrentlyEquippedGear: Kopieer de uitrusting die je nu draagt, importedGearSetDefaultName: Geïmporteerde
+uitrustingssets, newSetDefaultName: Mijn nieuwe uitrustingsset, noActivitiesSelected: Geen
+activiteiten geselecteerd, forActivities: 'Voor activiteiten: ', sortBy: 'Sorteren
+naar: ', toolSlot: Gereedschapsvak, default: Standaard, showAttributes: Attributen
+weergeven, tools: Gereedschappen, name: Naam, unequipGear: Uitrusting uit doen, unequipTools: Gereedschap
+wegleggen, noItemSelected: Geen items geselecteerd, gear: Uitrusting, level: 'Niv. '},
+errors: {duplicateItem: Deze uitrustingssets bevat dit item al., keywordError: 'Deze
+uitrustingssets bevat al een: <object id="{keyword}" />'}, info: {gearSetsDescription: Uitrustingssets
+helpen je om snel te kunnen wisselen tussen verschillende uitrustingen., gearSetManageDesc: 'Kies
+hieronder een uitrustingsset die je aan wilt trekken. Om sets aan te passen, te importeren
+of bewerken kan je op <c i=0>Beheren</c> drukken.', gearSetsListDesc: 'Hier kan je
+je uitrustingssets beheren. Als je een <c i=0>nieuwe uitrustingsset</c> wilt maken,
+druk dan op de knop hieronder. Je kan ook je <c i=1>huidige geactiveerde uitrustingsset
+kopiëren</c> wanneer je een nieuwe set gaat maken.', noGearSetsManage: Je hebt nog
+geen uitrustingssets gemaakt. Maak je eerste set door op <c i=0>Nieuwe set maken<c/>
+te drukken., noGearSetsList: Je hebt nog geen uitrustingssets. Kies <c i=0>Beheren</c>
+om een nieuwe set te creëren of importeren.}}}}
