@@ -313,7 +313,8 @@ singulars:
           name: Sakiewka na Monety
           desc: Mała sakiewka wypełniona monetami. Jest trochę ciężka, ale nie narzekasz.
         gdteChest:
-          desc: Bagno.
+          desc: Bagienna skrzynia, która wygląda, jakby została wydobyta z bagien
+            GDTE.
           name: Skrzynia GDTE
         adventureGuildChest:
           name: Skrzynia Gildii Podróżników
@@ -324,11 +325,15 @@ singulars:
             tak, jakby było pod wodą.
         jarvoniaChest:
           name: Skrzynia Jarvonii
-          desc: Zamarznięta skrzynia.
+          desc: Zamarznięta skrzynia znaleziona w Jarvonii, zimna w dotyku.
         syrenthiaChest:
           name: Skrzynia Syrenthii
           desc: Skrzynia głębokiego podwodnego świata musi zawierać mnóstwo wodnych
             skarbów.
+        rustyChest:
+          name: Zardzewiała Skrzynia
+          desc: Stara zardzewiała skrzynia znaleziona i przechowywana przez Herberta.
+            Czeka tylko, aby dać nowym poszukiwaczom przygód pomocny start.
       woodcutting:
         birdNest:
           name: Ptasie Gniazdo
@@ -1457,6 +1462,14 @@ singulars:
           desc: One naprawdę istnieją! Legendarne rękawice ze świecącymi opuszkami
             palców, przyciągające swoim urokiem wszelkiego rodzaju łowców.
           name: Rękawice Wędkarskie
+        rustyFishingRod:
+          name: Zardzewiała Wędka
+          desc: Stara i zniszczona wędka, zardzewiała z ledwie nienaruszoną żyłką.
+            Nadal można jej używać do łowienia ryb, ale może nawet nie złowić ości!
+        rustyFishingNet:
+          name: Zardzewiała Sieć Rybacka
+          desc: Mała sieć rybacka, zardzewiała i postrzępiona. Nadal można jej używać
+            do łowienia ryb, więc lepsza niż nic.
       foraging:
         halflingsFeetSlippers:
           name: Kapcie Niziołka
@@ -1544,6 +1557,7 @@ singulars:
         rustySickle:
           desc: Kiedyś wielki sierp, teraz zardzewiały. Nadal można go używać do zbieractwa,
             ale nie tak dobrze jak kiedyś.
+          name: Zardzewiały Sierp
       mining:
         miningHelm:
           name: Hełm Górniczy
@@ -1688,6 +1702,10 @@ singulars:
           name: Zakorzeniony Pierścień
           desc: Pierścień uformowany jest z magicznych korzeni, które przeplatają
             się ze sobą.
+        rustyHatchet:
+          name: Zardzewiała Siekiera
+          desc: Kiedyś świetna siekiera, teraz zardzewiała. Nadal można jej używać
+            do ścinania drewna, ale z pewnością minęły jej najlepsze dni.
       trinketry:
         prettyPliers:
           desc: Bestseller w Erdwise! Dziś w sprzedaży o 10% taniej w Fabryce Błyskotek.
@@ -2138,6 +2156,11 @@ singulars:
         name: Bagienny Kompas Setha
         desc: Kompas zawsze wskazuje środek bagna, co jest koniecznością dla każdego
           szanującego się poszukiwacza przygód.
+    supporter:
+      ringOfPandemonium:
+        desc: <i>"Mamy tendencję do przeceniania rzeczy, które możemy zmierzyć, i
+          niedoceniania tych, których nie możemy zmierzyć."</i>
+        name: Piekielny Pierścień
   materials:
     carpentry:
       birchPlank:
