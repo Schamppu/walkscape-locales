@@ -3,17 +3,23 @@ singulars:
     woodcuttingTrees:
       name: Dřevorubectví
       requirement: Vyžaduje aktivitu <object id="woodcuttingTrees" />.
-      requirementLevel: Vyžaduje činnost dřevorubectví, která má v požadavcích alespoň
-        <keywordRequirements />.
+      requirementLevel: Vyžaduje kácení stromů, které má alespoň <keywordRequirements
+        /> ve svých požadavcích.
     fishing:
       name: Rybolov
       requirement: Vyžaduje aktivitu <object id="activity_fishing" />.
+      requirementLevel: Vyžaduje rybaření, které má alespoň <keywordRequirements />
+        ve svých požadavcích.
     miningOres:
       requirement: Vyžaduje aktivitu <object id="activity_mining" />.
       name: Těžba rud
+      requirementLevel: Vyžaduje těžbu rud, která má ve svých požadavcích alespoň
+        <keywordRequirements /> .
     foragingPlants:
       requirement: Vyžaduje aktivitu <object id="activity_foraging" />.
       name: Sběr rostlin
+      requirementLevel: Vyžaduje aktivitu sběru rostlin, která má ve svých požadavcích
+        alespoň <keywordRequirements /> .
   consumables:
     alcohol:
       name: Alkohol
@@ -48,9 +54,13 @@ singulars:
     memosphere:
       name: Memosféra
       requirement: Vyžaduje <object id="memosphere" />.
+      requirementLevel: Vyžaduje memosféru, která má ve svých požadavcích alespoň
+        <keywordRequirements />.
     sandwich:
       name: Sendvič
       requirement: Vyžaduje <object id="sandwich" />.
+      requirementLevel: Vyžaduje sendvič, který má ve svých požadavcích alespoň <keywordRequirements
+        />.
   containers:
     chest:
       name: Truhla
@@ -81,8 +91,8 @@ singulars:
     frisbee:
       name: Létající talíř
       requirement: Vyžaduje vybavený <object id="frisbee" />.
-      requirementLevel: Vyžaduje létající talíř, které má v požadavcích alespoň <keywordRequirements
-        />.
+      requirementLevel: Vyžaduje frisbee, který má ve svých požadavcích alespoň <keywordRequirements
+        /> .
     lifeVest:
       name: Záchranná vesta
       requirement: Vyžaduje vybavení <object id="lifevest" />.
@@ -101,12 +111,18 @@ singulars:
     basket:
       name: Košík
       requirement: Vyžaduje vybavený <object id="basket" />.
+      requirementLevel: Vyžaduje košík, který má ve svých požadavcích alespoň <keywordRequirements
+        /> .
     arrows:
       requirement: Vyžaduje vybavení <object id="arrows" />.
       name: Šípy
+      requirementLevel: Vyžaduje šípy, které mají ve svých požadavcích alespoň <keywordRequirements
+        /> .
     socks:
       name: Ponožky
       requirement: Vyžaduje vybavení <object id="item_socks" />.
+      requirementLevel: Vyžaduje ponožky, které mají v požadavcích alespoň <keywordRequirements
+        /> .
     ring:
       name: Prsten
       requirement: Vyžaduje vybavený <object id="item_ring" />.
@@ -115,18 +131,28 @@ singulars:
     underwater:
       requirement: Vyžaduje vybavení <object id="item_underwater" />.
       name: Pod vodou
+      requirementLevel: Vyžaduje podvodní vybavení které má ve svých požadavcích alespoň
+        <keywordRequirements /> .
     weapon:
       name: Zbraň
       requirement: Vyžaduje vybavení <object id="weapon" />.
+      requirementLevel: Vyžaduje zbraň, která má alespoň <keywordRequirements /> ve
+        svých požadavcích.
     shield:
       name: Štít
       requirement: Vyžaduje vybavení <object id="shield" />.
+      requirementLevel: Vyžaduje štít, který má alespoň <keywordRequirements /> ve
+        svých požadavcích.
     amulet:
       name: Amulet
       requirement: Vyžaduje vybavený <object id="item_amulet" />.
+      requirementLevel: Vyžaduje amulet, který má alespoň <keywordRequirements />
+        ve svých požadavcích.
     bellows:
       name: Měchy
       requirement: Vyžaduje vybavené <object id="bellows" />.
+      requirementLevel: Vyžaduje měchy, které mají alespoň <keywordRequirements />
+        ve svých požadavcích.
   general:
     fuel:
       name: Palivo
@@ -136,8 +162,7 @@ singulars:
     lightSource:
       name: Zdroj světla
       requirement: Vyžaduje vybavený <object id="lightSource" />.
-      requirementLevel: Vyžaduje zdroj světla, který má v požadavcích alespoň <keywordRequirements
-        />.
+      requirementLevel: Vyžaduje, aby uživatel byl vybaven <keywordRequirements />.
   materials:
     bar:
       name: Cihla
@@ -177,30 +202,48 @@ singulars:
     misc:
       name: Různé
       requirement: Vyžaduje <object id="misc" />.
+      requirementLevel: Vyžaduje různé položky, které máji ve svých požadavcích alespoň
+        <keywordRequirements />.
     ingredient:
       name: Přísada
       ingredient: Vyžaduje <object id="ingredient" />.
+      requirementLevel: Vyžaduje přísadu, která má ve svých požadavcích alespoň <keywordRequirements
+        />.
     roughGem:
       requirement: Vyžaduje <object id="rough_gem" />.
       name: Hrubý drahokam
+      requirementLevel: Vyžaduje surový drahokam, který má ve svých požadavcích alespoň
+        <keywordRequirements />.
     processed:
       name: Zpracováno
       requirement: Vyžaduje <object id="processed" />.
+      requirementLevel: Vyžaduje zpracovaný materiál, který má ve svých požadavcích
+        alespoň <keywordRequirements />.
     offcut:
       requirement: Vyžaduje <object id="offcut" />.
       name: Odřezek
+      requirementLevel: Vyžaduje odřezek, který má ve svých požadavcích alespoň <keywordRequirements
+        />.
     nugget:
       name: Neget
       requirement: Vyžaduje <object id="nugget" />.
+      requirementLevel: Vyžaduje nuget, který má ve svých požadavcích alespoň <keywordRequirements
+        />.
     cutGem:
       name: Broušený drahokam
       requirement: Vyžaduje <object id="cut_gem" />.
+      requirementLevel: Vyžaduje broušený drahokam, který má ve svých požadavcích
+        alespoň <keywordRequirements />.
     mushroom:
       name: Houba
       requirement: Vyžaduje <object id="mushroom" />.
+      requirementLevel: Vyžaduje houbu, která má ve svých požadavcích alespoň <keywordRequirements
+        />.
     trinket:
       name: Šperk
       requirement: Vyžaduje <object id="trinket" />.
+      requirementLevel: Vyžaduje šperk, který má ve svých požadavcích alespoň <keywordRequirements
+        />.
   misc:
     trash:
       name: Odpadky
@@ -219,7 +262,7 @@ singulars:
     chisel:
       name: Dláto
       requirement: Vyžaduje vybavení <object id="chisel" />.
-      requirementLevel: Vyžaduje dláto, který má v požadavcích alespoň <keywordRequirements
+      requirementLevel: Vyžaduje dláto, kterř má ve svých požadavcích alespoň <keywordRequirements
         />.
     cookingKnife:
       name: Nůž na vaření
@@ -314,7 +357,7 @@ singulars:
     magnifyingLense:
       name: Lupa
       requirement: Vyžaduje vybavení <object id="magnifyingLense" />.
-      requirementLevel: Vyžaduje lupu, která má v požadavcích alespoň <keywordRequirements
+      requirementLevel: Vyžaduje lupu, která má ve svých požadavcích alespoň <keywordRequirements
         />.
     pickaxe:
       name: Krumpáč
@@ -354,42 +397,68 @@ singulars:
     fishingTool:
       name: Rybářský nástroj
       requirement: Vyžaduje vybavení <object id="fishingTool" />.
+      requirementLevel: Vyžaduje nástroj k rybolovu který má ve svých požadavcích
+        alespoň <keywordRequirements /> .
     agilityTool:
       requirement: Vyžaduje vybavení <object id="agilityTool" />.
       name: Nástroj hbitosti
+      requirementLevel: Vyžaduje nástroj pro hbitost, který má ve svých požadavcích
+        alespoň <keywordRequirements /> .
     miningTool:
       name: Těžební nástroj
       requirement: Vyžaduje vybavení <object id="miningTool" />.
+      requirementLevel: Vyžaduje těžební nástroj, který má ve svých požadavcích alespoň
+        <keywordRequirements /> .
     ruler:
       name: Pravítko
       requirement: Vyžaduje vybavení <object id="ruler" />.
+      requirementLevel: Vyžaduje pravítko, které má ve svých požadavcích alespoň <keywordRequirements
+        />.
     wrench:
       name: Klíč
       requirement: Vyžaduje vybavený <object id="wrench" />.
+      requirementLevel: Vyžaduje klíč, který má alespoň ve svých požadavcích <keywordRequirements
+        /> .
     logSplitter:
       requirement: Vyžaduje vybavený <object id="item_log_splitter" />.
       name: Štípač dřeva
+      requirementlevel: Vyžaduje štípačku dřeva, která má ve svých požadavcích alespoň
+        <keywordRequirements />.
     smithingTool:
       name: Kovářský nástroj
       requirement: Vyžaduje vybavený <object id="smithingTool" />.
+      requirementLevel: Vyžaduje kovářský nástroj, který má ve svých požadavcích alespoň
+        <keywordRequirements /> .
     trinketryTool:
       name: Nástroj na šperky
       requirement: Vyžaduje vybavený <object id="trinketryTool" />.
+      requirementLevel: Vyžaduje nástroj pro šperkařství, který má ve svých požadavcích
+        alespoň <keywordRequirements /> .
     woodcuttingTool:
       name: Dřevorubecký nástroj
       requirement: Vyžaduje vybavený <object id="woodcuttingTool" />.
+      requirementLevel: Vyžaduje nástroj na řezání dřeva, který má ve svých požadavcích
+        alespoň <keywordRequirements /> .
     skillBook:
       name: Kniha dovedností
       requirement: Vyžaduje vybavení <object id="skillBook" />.
+      requirementlevel: Vyžaduje knihu dovedností, která má ve svých požadavcích alespoň
+        <keywordRequirements />.
     huntingBow:
       name: Lovecký luk
       requirement: Vyžaduje vybavený <object id="huntingBow" />.
+      requirementLevel: Vyžaduje lovecký luk, který má ve svých požadavcích alespoň
+        <keywordRequirements />.
     huntingTrap:
       name: Lovecká past
       requirement: Vyžaduje vybavení <object id="huntingTrap" />.
+      requirementLevel: Vyžaduje loveckou past, která má ve svých požadavcích alespoň
+        <keywordRequirements />.
     sander:
       name: Bruska
       requirement: Vyžaduje vybavenou <object id="sander" />.
+      requirementLevel: Vyžaduje brusku, která má ve svých požadavcích alespoň <keywordRequirements
+        />.
   recipes:
     skills:
       cooking:
