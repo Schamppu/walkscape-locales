@@ -33,6 +33,7 @@ singulars:
   tools:
     skillBook:
       requirement: Необходимо экипировать <object id="skillBook" />.
+      name: Книга навыков
     sickle:
       name: Серп
       requirement: Необходим экипированный <object id="sickle" />.
@@ -71,22 +72,63 @@ singulars:
       requirement: Необходим экипированный <object id="magnetic" /> предмет.
     fishingCage:
       requirement: Необходима экипированная <object id="fishingCage" />.
+      name: Рыболовная ловушка
     craftingTool:
       requirement: Необходим экипированный <object id="craftingTool" />.
       name: Инструмент для изготовления
     fishingSpear:
       requirement: Необходимо экипированное <object id="fishingSpear" />.
+      name: Рыболовное копьё
     tool:
       requirement: Необходим экипированный <object id="tool" />.
+      name: Инструмент
     cookingTool:
       requirement: Необходим экипированный <object id="cookingTool" />.
+      name: Кухонный инструмент
     carpentryTool:
       requirement: Необходим экипированный <object id="carpentryTool" />.
+      name: Плотницкий инструмент
     fishingTool:
       requirement: Необходим экипированный предмет категории <object id="fishingTool"
         />.
+      name: Рыболовный инструмент
     fishingLure:
       requirement: Необходима экипированная <object id="fishingLure" />.
+      name: Рыболовная приманка
+    cookingKnife:
+      name: Кухонный нож
+    cuttingBoard:
+      name: Разделочная доска
+    cookingSpices:
+      name: Специи
+    saw:
+      name: Пила
+    foragingTool:
+      name: Инструмент для сбора
+    agilityTool:
+      name: Инструмент для ловкости
+    miningTool:
+      name: Горный инструмент
+    smithingTool:
+      name: Кузнечный инструмент
+    trinketryTool:
+      name: Ювелирный инструмент
+    woodcuttingTool:
+      name: Инструмент для рубки леса
+    wrench:
+      name: Гаечный ключ
+    logSplitter:
+      name: Колун
+    huntingTrap:
+      name: Охотничья ловушка
+    magnifyingLense:
+      name: Увеличительная линца
+    cookingPot:
+      name: Кастрюля
+    localMap:
+      name: Карта
+    huntingBow:
+      name: Охотничий лук
   gear:
     skillingGear:
       requirement: Необходимо экипировать <object id="skillingGear" />.
@@ -128,6 +170,13 @@ singulars:
       name: Мехи
     basket:
       requirement: Необходима экипированная <object id="basket" />.
+      name: Корзина
+    climbing:
+      name: Альпинистское снаряжение
+    underwater:
+      name: Подводное снаряжение
+    arrows:
+      name: Стрелы
   materials:
     logs:
       name: Бревно
@@ -136,6 +185,7 @@ singulars:
       name: Слиток
     roughGem:
       name: Необработанный самоцвет
+      requirement: Нужен <object id="rough_gem" />.
     fish:
       name: Рыба
       requirement: Требуется предмет <object id="fish" />.
@@ -145,10 +195,30 @@ singulars:
       name: Руда
     mushroom:
       name: Гриб
+      requirement: Нужен <object id="mushroom" />.
     trinket:
       name: Безделушка
     cutGem:
       name: Огранённый самоцвет
+      requirement: Нужен <object id="cut_gem" />.
+    plant:
+      name: Растение
+    nugget:
+      name: Самородок
+    plank:
+      name: Доска
+      requirement: Нужна <object id="plank" />.
+    gem:
+      name: Самоцвет
+      requirement: Нужен <object id="gem" />.
+    ingredient:
+      name: Ингредиент
+      ingredient: Нужен <object id="ingredient" />.
+    misc:
+      name: Разное
+    offcut:
+      name: Обрезки
+      requirement: Нужны <object id="offcut" />.
   consumables:
     cookedFish:
       name: Готовая рыба
@@ -162,10 +232,25 @@ singulars:
     memosphere:
       name: Мемосфера
       requirement: Нужна <object id="memosphere" />.
+    food:
+      name: Еда
+      requirement: Нужна <object id="food" />.
+    fruit:
+      name: Фрукт
+      requirement: Нужен <object id="fruit" />.
+    alcohol:
+      name: Алкоголь
+      requirement: Нужен <object id="alcohol" />.
+    sandwich:
+      name: Сэндвич
+      requirement: Нужен <object id="sandwich" />.
   containers:
     chest:
       name: Сундук
       requirement: Нужен <object id="chest" />.
+    skillingChest:
+      name: Сундук навыков
+      requirement: Нужен <object id="skillingChest" />.
   search:
     skills:
       agility:
@@ -211,6 +296,7 @@ singulars:
       tailoring:
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
+        name: Портняжное дело
       trinketry:
         name: Ювелирное дело
         requirement: <PLACEHOLDER>
@@ -218,6 +304,7 @@ singulars:
       traveling:
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
+        name: Путешествия
       global:
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
@@ -243,12 +330,15 @@ singulars:
     light:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      name: Лёгкий
     ultraLight:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      name: Сверхлёгкий
     heavy:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      name: Тяжёлый
   services:
     sawmill:
       name: Лесопилка
@@ -272,5 +362,32 @@ singulars:
       requirementLevel: <PLACEHOLDER>
     loom:
       name: Ткацкий станок
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+  general:
+    lightSource:
+      name: Источник света
+      requirement: Нужен <object id="lightSource" />.
+  misc:
+    trash:
+      name: Мусор
+      requirement: Нужен <object id="trash" />.
+  itemSets:
+    treasureHunter:
+      name: Комплект искателя сокровищ
+    divingGear:
+      name: Водолазное снаряжение
+      requirement: Нужно <object id="itemset_diving_gear" />.
+    advancedDivingGear:
+      name: Продвинутое водолазное снаряжение
+      requirement: Нужно <object id="itemset_diving_gear_advanced" />.
+    expertDivingGear:
+      name: Экспертное водолазное снаряжение
+      requirement: Нужно <object id="itemset_diving_gear_expert" />.
+    adventuringTools:
+      name: Комплект инструментов путешественника
+  locations:
+    underwater:
+      name: Под водой
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
