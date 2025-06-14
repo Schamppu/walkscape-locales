@@ -18,24 +18,36 @@ singulars:
     fishing:
       name: Рыбная ловля
       requirement: Необходима <object id="activity_fishing" />.
+      requirementLevel: Требуется активность по ловле рыбы, которая имеет хотя бы
+        <keywordRequirements /> в своих требованиях.
     miningOres:
       name: Добыча руды
+      requirement: Требует активность типа <object id="activity_mining" />.
+      requirementLevel: Требует активность по добыче руду, которая имеет хотя бы <keywordRequirements
+        /> в своих требованиях.
     foragingPlants:
       name: Сбор растений
+      requirement: Требует активность типа <object id="activity_foraging" />.
+      requirementLevel: Требует активность по сбору растений, которая имеет хотя бы
+        <keywordRequirements /> в своих требованиях.
   tools:
     skillBook:
       requirement: Необходимо экипировать <object id="skillBook" />.
     sickle:
       name: Серп
-      requirement: Необходимо взять <object id="sickle" />.
+      requirement: Необходим экипированный <object id="sickle" />.
     cookingPan:
       name: Сковорода
+      requirement: Необходима экипированная <object id="cookingPan" />.
     fishingRod:
       name: Удочка
+      requirement: Необходима экипированная <object id="fishingRod" />.
     fishingNet:
       name: Рыболовная сеть
+      requirement: Необходима экипированная <object id="fishingNet" />.
     pickaxe:
       name: Кирка
+      requirement: Необходима экипированная <object id="pickaxe" />.
     chisel:
       name: Стамеска
     screwdriver:
@@ -50,39 +62,72 @@ singulars:
       name: Наждачка
     woodcuttingHatchet:
       name: Топор
-      requirement: Нужен <object id="woodcuttingHatchet" />.
+      requirement: Необходим экипированный <object id="woodcuttingHatchet" />.
     goldPan:
-      requirement: Нужен <object id="goldPan" />.
+      requirement: Необходим экипированный <object id="goldPan" />.
       name: Старательский лоток
+    magnetic:
+      name: Магнитный
+      requirement: Необходим экипированный <object id="magnetic" /> предмет.
+    fishingCage:
+      requirement: Необходима экипированная <object id="fishingCage" />.
+    craftingTool:
+      requirement: Необходим экипированный <object id="craftingTool" />.
+      name: Инструмент для изготовления
+    fishingSpear:
+      requirement: Необходимо экипированное <object id="fishingSpear" />.
+    tool:
+      requirement: Необходим экипированный <object id="tool" />.
+    cookingTool:
+      requirement: Необходим экипированный <object id="cookingTool" />.
+    carpentryTool:
+      requirement: Необходим экипированный <object id="carpentryTool" />.
+    fishingTool:
+      requirement: Необходим экипированный предмет категории <object id="fishingTool"
+        />.
+    fishingLure:
+      requirement: Необходима экипированная <object id="fishingLure" />.
   gear:
     skillingGear:
       requirement: Необходимо экипировать <object id="skillingGear" />.
+      name: Тренировочная экипировка
+      requirementLevel: Требует тренировочную экипировку, которая имеет не менее <keywordRequirements
+        /> в своих требованиях.
     skis:
       requirement: Необходимо экипировать <object id="skis" />.
       name: Лыжи
+      requirementLevel: Требует лыжи, которые имеют хотя бы <keywordRequirements />
+        в своих требованиях.
     frisbee:
       name: Фрисби
+      requirementLevel: Требует фрисби, которое имеет хотя бы <keywordRequirements
+        /> в своих требованиях.
+      requirement: Необходима экипированная <object id="frisbee" />.
     lifeVest:
       name: Спасжилет
-      requirement: Необходимо надеть <object id="lifevest" />.
+      requirement: Необходим экипированный <object id="lifevest" />.
     bugCatchingNet:
       name: Сачок для бабочек
-      requirement: Необходимо взять <object id="bugCatchingNet" />.
+      requirement: Необходим экипированный <object id="bugCatchingNet" />.
     socks:
       name: Носки
       requirement: Необходимо надеть <object id="item_socks" />.
     shield:
       name: Щит
-      requirement: Необходимо взять <object id="shield" />.
+      requirement: Необходим экипированный <object id="shield" />.
     ring:
       name: Кольцо
-      requirement: Необходимо надеть <object id="item_ring" />.
+      requirement: Необходимо экипированное <object id="item_ring" />.
     weapon:
       name: Оружие
-      requirement: Необходимо взять в руки <object id="weapon" />.
+      requirement: Необходимо экипированное <object id="weapon" />.
     amulet:
       name: Амулет
-      requirement: Необходимо надеть <object id="item_amulet" />.
+      requirement: Необходим экипированный <object id="item_amulet" />.
+    bellows:
+      name: Мехи
+    basket:
+      requirement: Необходима экипированная <object id="basket" />.
   materials:
     logs:
       name: Бревно
@@ -91,6 +136,19 @@ singulars:
       name: Слиток
     roughGem:
       name: Необработанный самоцвет
+    fish:
+      name: Рыба
+      requirement: Требуется предмет <object id="fish" />.
+      requirementLevel: Требуется рыба, которая имеет хотя бы <keywordRequirements
+        /> в своих требованиях.
+    ore:
+      name: Руда
+    mushroom:
+      name: Гриб
+    trinket:
+      name: Безделушка
+    cutGem:
+      name: Огранённый самоцвет
   consumables:
     cookedFish:
       name: Готовая рыба
