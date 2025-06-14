@@ -384,8 +384,8 @@ singulars:
   character:
     info:
       skillBreakdown: Aquí está el desglose total de todas las habilidades que tu
-        personaje ha subido de nivel durante su aventura. Pulsa en cualquiera de las
-        habilidades para ver información detallada sobre ella y qué desbloquea.
+        personaje ha subido de nivel durante su aventura. Pulsa sobre cualquiera de
+        las habilidades para ver información detallada y qué desbloquea.
     phrases:
       skills: Habilidades
       stepsOfLastWeek: Pasos de los últimos 7 días
@@ -394,7 +394,7 @@ singulars:
       totalLevel: Nivel total
   permissions:
     phrases:
-      pedometerPermission: Permisos para la cuenta de pasos
+      pedometerPermission: Permiso del podómetro
       permissionExplanation: Para que el juego funcione, necesitamos que aceptes el
         permiso para leer el contador de pasos de tu dispositivo. Por favor, actívalo
         para continuar.
@@ -405,18 +405,24 @@ singulars:
         contador de pasos en tu dispositivo.
       connectAppleHealth: Conectar a Salud de Apple
       connect: Conectar
-      continueWillEnable: El botón de continuar será permitido después de que hayas
-        concedido los permisos necesarios.
+      continueWillEnable: El botón de continuar se activará después de conceder los
+        permisos superiores necesarios.
       connectAppleHealthExplanation: Necesitas conectarte a Salud de Apple para que
-        podamos sincronizar los pasos con tu reloj, leer los pasos y ver que dispositivos
-        has conectado. Si es tu primera vez usando WalkScape, el juego te pedirá permisos
-        para leer la aplicación de Salud de Apple.
+        podamos leer los pasos sincronizados con tu reloj y ver qué dispositivos has
+        conectado. Si es tu primera vez usando WalkScape, el juego te pedirá permisos
+        para leer los datos de Salud de Apple.
       noDeviceFound: Dispositivo no encontrado. Por favor, asegúrate de haber presionado
-        el botón <c>Conectar a Salud de Apple</c>de más arriba y concedido permisos
+        el botón <c>Conectar a Salud de Apple</c>superior y haber concedido permisos
         para leer los datos en la aplicación.
-      youCanChangeAnyTime: Puedes cambiar el contador de pasos desde <c>Configuración
+      youCanChangeAnyTime: Puedes cambiar la fuente del contador de pasos desde <c>Configuración
         del Juego</c> en cualquier momento.
-      comingSoonToAndroid: Próximamente para dispositivos Android
+      comingSoonToAndroid: Próximamente para Android
+      changeStepCountingSource: Cambiar la fuente del contador de pasos
+      stepCountingSource: Fuente del contador de pasos
+    deviceSource:
+      phone: Teléfono
+      appleWatch: Apple Watch
+      watch: Otro reloj
   rewards:
     phrases:
       alreadyClaimed: Ya reclamado
@@ -593,7 +599,7 @@ singulars:
   popupBubbles:
     phrases:
       overEncumbered: Tu inventario está lleno y estás sobrecargado.
-      arrivedToLocation: Llegado a <object id={location} />
+      arrivedToLocation: Llegaste a <object id={location} />
   shop:
     phrases:
       sold: Vendido
@@ -649,3 +655,7 @@ singulars:
         se va a referir hacia tu persona.
       youCanChangeAnyTime: Puedes cambiar el idioma desde<c>Ajustes del Juego</c>
         en cualquier momento.
+      helpToTranslate: WalkScape está <c>traducido por la comunidad</c>. Ayúdanos
+        a traducir el juego a más idioma y expandiendo las traducciones actuales visitando
+        <a href="https://wiki.walkscape.app/wiki/Localization">Guia de Traducción</a>.
+        !Agradecemos tu ayuda! ❤️
