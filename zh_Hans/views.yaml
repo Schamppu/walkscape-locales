@@ -11,6 +11,7 @@ singulars:
       notAffectingTraveling: （不影响移动效率）
       savedSteps: 积攒步数
       inventoryIsOverLimit: 背包满了！
+      stopWhenOverEncumbered: 超出负重时停止
   locales:
     phrases:
       language: 语言
@@ -25,8 +26,7 @@ singulars:
     phrases:
       youNeedToGivePermissions: 你需要授予以下权限才能进入游戏。请点击对应权限进行授权。
       pedometerPermissionExplanation: 我们需要这个权限来读取你设备的计步数据。
-      noDeviceFound: 未检测到设备。请确认你已点击上方的<c>连接至 Apple 健康</c>按钮，并已授予读取 Apple 
-        健康数据的权限。
+      noDeviceFound: 未检测到设备。请确认你已点击上方的<c>连接至 Apple 健康</c>按钮，并已授予读取 Apple 健康数据的权限。
       connectAppleHealth: 连接至 Apple 健康
       connect: 连接
       continueWillEnable: 授予上述必要权限后，“继续”按钮将会启用。
@@ -36,9 +36,8 @@ singulars:
       stepCountingSource: 步数数据来源
       pedometerPermission: 步数计数权限
       exactAlarmPermission: 提醒权限
-      connectAppleHealthExplanation: 你需要连接至 Apple 
-        健康，以便我们读取由你的手表同步的步数，并查看你已连接的设备。如果这是你第一次使用 WalkScape，系统将会请求你授权读取 Apple 
-        健康数据。
+      connectAppleHealthExplanation: 你需要连接至 Apple 健康，以便我们读取由你的手表同步的步数，并查看你已连接的设备。如果这是你第一次使用
+        WalkScape，系统将会请求你授权读取 Apple 健康数据。
     deviceSource:
       phone: 手机
       appleWatch: Apple Watch
@@ -72,8 +71,7 @@ singulars:
       alreadyClaimed: 已获取
   achievements:
     info:
-      viewDescription: 
-        解锁成就可获得<hl>成就点数</hl>。达到一定的成就点数后，你将解锁特殊奖励。部分成就在解锁时还会单独赠送额外奖励。
+      viewDescription: 解锁成就可获得<hl>成就点数</hl>。达到一定的成就点数后，你将解锁特殊奖励。部分成就在解锁时还会单独赠送额外奖励。
       noCollectibleItems: 你还没有收集到任何可收藏物品。
     phrases:
       notUnlocked: 未解锁成就
@@ -100,8 +98,7 @@ singulars:
   abilities:
     info:
       abilitiesInfo: 能力是你可以使用的特殊动作，能够在游戏中带来即时增益。能力使用后会进入冷却时间，你需要等待冷却结束才能再次使用。
-      youHaveNoAbilities: 
-        <hl>你当前没有任何能力</hl>。游戏中的某些装备可以赋予你能力，让你在游戏中获得即时增益，但这些能力有冷却时间。
+      youHaveNoAbilities: <hl>你当前没有任何能力</hl>。游戏中的某些装备可以赋予你能力，让你在游戏中获得即时增益，但这些能力有冷却时间。
     phrases:
       abilities: 能力
       useAbility: 使用能力
@@ -113,8 +110,7 @@ singulars:
     phrases:
       jobs: 工作
     info:
-      jobInfo: 
-        工作是<c>简单且可重复的任务</c>，你可以完成它们以获取奖励。你可以在城市等各地的<c>工作板</c>接受工作。你最多可以同时进行三个工作。
+      jobInfo: 工作是<c>简单且可重复的任务</c>，你可以完成它们以获取奖励。你可以在城市等各地的<c>工作板</c>接受工作。你最多可以同时进行三个工作。
   treasury:
     phrases:
       openChest: 开启
@@ -123,8 +119,7 @@ singulars:
     phrases:
       acceptJob: 接受工作
       abandonJob: 放弃工作
-      acceptedJobs: 当前已接受的工作 <chip><c i=0>{count}</c>/<c 
-        i=1>{maxCount}</c></chip>
+      acceptedJobs: 当前已接受的工作 <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
       rewards: 完成奖励
       openJournal: 打开日志
       itemsFromInventory: 背包中的物品
@@ -211,8 +206,8 @@ singulars:
         changeWarning:
           title: 更改数据来源？
           description: 请注意这可能会导致更改时段内的步数丢失。
-        requiresPermissionIos: 如果下方下拉菜单未显示任何外部设备，请确保你已在“设置 ➤ 隐私与安全性 ➤ 健康 ➤ 
-          （应用程序列表中）WalkScape”中授权应用访问 Apple 健康的步数数据，并且 Apple 健康在过去7天内已记录了这些设备的步数。
+        requiresPermissionIos: 如果下方下拉菜单未显示任何外部设备，请确保你已在“设置 ➤ 隐私与安全性 ➤ 健康 ➤ （应用程序列表中）WalkScape”中授权应用访问
+          Apple 健康的步数数据，并且 Apple 健康在过去7天内已记录了这些设备的步数。
       character:
         anonOnLeaderboard: 排行榜上匿名显示
         hideSteps: 隐藏步数
@@ -240,9 +235,8 @@ singulars:
       exitToCharacterSelection: 退出至角色选择界面
       stepSourceInfo: 步数来源信息
       connectionInfoAndroid: 在 Android 上对于智能手表的支持即将推出。目前，只支持手机作为计步来源。
-      connectionInfoIos: 如果您的可穿戴设备未显示在上述列表中，请确保您已在 <c>设置 ➤ 隐私与安全 ➤ 健康 
-        ➤（应用程序下）WalkScape</c> 中授予 WalkScape 使用 Apple 健康步数数据的权限，并且 Apple 
-        健康在过去7天内已记录了这些设备的步数。
+      connectionInfoIos: 如果您的可穿戴设备未显示在上述列表中，请确保您已在 <c>设置 ➤ 隐私与安全 ➤ 健康 ➤（应用程序下）WalkScape</c>
+        中授予 WalkScape 使用 Apple 健康步数数据的权限，并且 Apple 健康在过去7天内已记录了这些设备的步数。
       stepSourceInfoDesc: 点击下方按钮可查看更多关于步数来源及其区别的信息。
   gearSets:
     phrases:
