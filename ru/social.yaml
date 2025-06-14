@@ -46,7 +46,7 @@ singulars:
   createParty:
     input:
       partyName: Название команды
-      catchphraseHint: Девиз(Необязательно)
+      catchphraseHint: Девиз (необязательно)
       catchphrase: Девиз
     rules:
       mayContain: '<bp />Может содержать: {list}'
@@ -55,7 +55,16 @@ plurals:
   createParty:
     rules:
       minChar:
-        one: <bp />Хотя бы {} букв
+        one: <bp />Хотя бы {} символ
         other: <bp />Хотя бы {} символов
+        few: '-'
+        many: '-'
+        zero: '-'
+        two: '-'
       maxChar:
-        one: <bp />Максимально {} символов
+        one: <bp />Максимум {} символов
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Максимум {} символов
