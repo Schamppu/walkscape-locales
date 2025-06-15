@@ -116,9 +116,9 @@ singulars:
           id=\"beverage\" /> jako spotřební předměty, které mohou vašim dovednostem
           poskytnout nejrůznější bonusy.</li>\n"
         crafting: "<object id=\"crafting\" /> je řemeslná dovednost pro vytváření
-          užitečných nástrojů.\n\n<li><hl>Kde začít</hl>: S tvořením můžete začít
-          ihned s pomocí bezplatných materiálů <object id=\"processed\" /> od „Užitečného
-          Herberta“ v <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          užitečných nástrojů.\n\n<li><hl>Kde začít</hl>: S <c>tvořením</c> můžete
+          začít ihned s pomocí bezplatných materiálů <object id=\"processed\" /> od
+          \"Užitečného Herberta\" v <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
           \ /> k některým základním možnostem receptů <icon i=\"crafting\" /> pro
           výrobu.</li>\n\n<li><hl>Kde hledat</hl>: Ve většině městských lokalit se
           může nacházet služba <object id=\"service_workshop\" />, kterou budete muset
@@ -126,9 +126,97 @@ singulars:
           vyskytnout i několik míst, kde se můžete věnovat <c>řemeslným</c> aktivitám.</li>\n\
           \n<li><hl>Používá se pro</hl>: Vytvoření <object id=\"bar\" />, <object
           id=\"plank\" /> a <object id=\"processed\" /> předmětů dohromady do potenciálních
-          <object id=\"woodcuttingTool\" />, <objectid=\"miningTool\" />, <objectid=\"\
-          fishingTool\" /> nebo <object id=\"foragingTool\" /> možnosti pro zlepšení
+          <object id=\"woodcuttingTool\" />, <object id=\"miningTool\" />, <object
+          id=\"fishingTool\" /> nebo <object id=\"foragingTool\" /> možnosti pro zlepšení
           jejich odpovídajících dovedností.</li>\n"
+        foraging: "<object id=\"foraging\" /> je sběračská dovednost, která je nezbytná
+          pro nalezení <object id=\"plant\" />.\n\n<li><hl>Kde začít</hl>: Můžete
+          ihned začít <c>hledat potravu</c> v <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> pomocí <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
+          \ />.</li>\n\n<li><hl>Kde hledat</hl>: Většina přírodních lokalit (roviny,
+          lesy, kopce, hory, pláže) může být místem pro <c>sběr potravy</c>, stejně
+          jako některé městské oblasti a jeskyně.</li>\n\n<li><hl>Používá se k</hl>:
+          Sběr <object id=\"plant\" /> materiálů, z nichž některé jsou dokonce <object
+          id=\"ingredient\" />, které lze použít v jiných dovednostech, jako je <skill
+          skill=\"crafting\"/> a <skill skill=\"cooking\"/>.</li>\n"
+        hunting: "<object id=\"hunting\" /> je sběratelská dovednost, která je nezbytná
+          pro nalezení <object id=\"ingredient\" />.\n\n<li><hl>Kde začít</hl>: Můžete
+          ihned začít <c>lovit</c> v <object id=\"location\" /> s <object id=\"activity\"\
+          \ />.</li>\n\n<li><hl>Kde se nachází</hl>: Většina přírodních lokalit (roviny,
+          lesy, kopce, hory, pláže) může být místem pro <c>lovecké</c> aktivity, stejně
+          jako některé městské oblasti a jeskyně.</li>\n\n<li><hl>Používá se pro</hl>:
+          Shromažďování materiálů <object id=\"ingredient\" />, které lze použít v
+          jiných dovednostech, jako je <skill skill=\"crafting\"/> a <skill skill=\"\
+          cooking\"/>.</li>\n"
+        fishing: "<object id=\"fishing\" /> je sběratelská dovednost, která je nezbytná
+          pro lov <object id=\"fish\" />.\n\n<li><hl>Kde začít</hl>: Můžete začít
+          <c>rybařit</c> na <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
+          \ />, jakmile si pomocí <object id=\"crafting\" /> vytvoříte svou první
+          <object id=\"fishingNet\" />.</li>\n\n<li><hl>Kde hledat</hl>: Většina míst
+          v blízkosti vodních ploch nabízí možnost <c>rybaření</c>, jen si s sebou
+          vezměte vhodné <object id=\"fishing Tool\" />.</li>\n\n<li><hl>Použití k</hl>:
+          Lovení <object id=\"fish\" />, které pak můžete pomocí své dovednosti <object
+          id=\"cooking\" /> proměnit v <object id=\"cookedFish\" />, které pak můžete
+          použít jako spotřební materiál a získat tak dočasné bonusy k vašim dovednostem.</li>\n"
+        smithing: "<object id=\"smithing\" /> je řemeslná dovednost pro tavení <object
+          id=\"bar\" /> a kování kovů.\n\n<li><hl>Kde začìt</hl>: S <c>kovářstvím</c>
+          můžete začít v <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> pomocí <object id=\"745d4e6f-5c6a-45a3-a98d-fc88f63bbb25\" /> nebo
+          pomocí možností receptů pro kovářství <icon i=\"crafting\" />.</li>\n\n\
+          <li><hl>Kde hledat</hl>: Ve většině městských lokalit je možné nalézt <object
+          id=\"service_forge\" /> službu. Některá mohou dokonce nabízet <c>kovářské</c>
+          aktivity.</li>\n\n<li><hl>Používá se pro</hl>: Tavení <object id=\"ore\"\
+          \ /> a <object id=\"nugget\" /> do <object id=\"bar\" />, které jsou užitečné
+          pro <object id=\"crafting\" /> a <object id=\"trinketry\" />.</li>\n"
+        woodcutting: "<object id=\"woodcutting\" /> je sběratelská dovednost, která
+          je nezbytná pro získávání dřevěných prvků a <object id=\"woodcutting\" />.\n\
+          \n<li><hl>Kde začít</hl>: S <c>řezáním dřeva</c> můžete začít v <object
+          id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ />, jakmile si pomocí <object id=\"crafting\" /> vytvoříte svou první
+          <object id=\"woodcutting Hatchet\" />. </li>\n\n<li><hl>Kde hledat</hl>:
+          Ve většině lesních lokalit je možné pořádat nějaké aktivity <c>dřevořezby</c>,
+          jen si s sebou vezměte vhodný <object id=\"woodcutting tool\" />.</li>\n\
+          \n<li><hl>Používá se pro</hl>: Řezání <object id=\"logs\" /> materiálů,
+          k čemu využijete dovednost <object id=\"carpentry\" />. Vzácně při <object
+          id=\"woodcuttingTrees\" /> můžete dokonce najít <object id=\"item-bird nest-c459d244-4ef3-41c1-a911-01e18efaeec1\"\
+          \ />, které může obsahovat nějaké další užitečné předměty.</li>\n"
+        tailoring: "<object id=\"tailoring\" /> je řemeslná dovednost pro šití <object
+          id=\"processed\" /> předmětů a vytváření posilujících oděvů.\n\n<li><hl>Kde
+          začít</hl>: S krejčovstvím můžete začít, jakmile najdete vhodné <object
+          id=\"plant\" /> materiály z <object id=\"foraging\" /> pro základní recepty
+          na krejčovství <icon i=\"crafting\" />.</li>\n\n<li><hl>Kde je najít</hl>:
+          Na některých místech může být větší šance na nalezení služby <object id=\"\
+          service_loom\" />, kterou budete muset hledat, abyste si mohli vybrat recepty
+          na vyšší úroveň krejčovství. V těchto oblastech se může dokonce nacházet
+          i několik míst, která nabízejí <c>krejčovské</c> aktivity.</li>\n\n<li><hl>Používa
+          se k</hl>: Šití <object id=\"plant\" /> do <object id=\"processed\" />.
+          Jakmile je budete mít, můžete je zkombinovat s potřebným látkovým materiálem
+          a vytvořit si tak vybavení, které vám bude vyhovovat.</li>\n"
+        trinketry: "<object id=\"trinketry\" /> je řemeslná dovednost pro tvarování
+          <object id=\"gem\" /> a vytváření funkčních šperků.\n\n<li><hl>Kde začít</hl>:
+          S <c>klenotnictvím</c> můžete začít, jakmile najdete vhodné <object id=\"\
+          plant\" /> materiály ze <object id=\"foraging\" /> pro základní <icon i=\"\
+          crafting\" /> recepty na <c>šperky</c>.</li>\n\n<li><hl>Kde hledat</hl>:
+          V bohatších lokalitách může být větší šance najít službu <object id=\"service_trinketry_bench\"\
+          \ />, kterou budete muset hledat, abyste si mohli vybrat recepty na drobnosti
+          vyšší úrovně. V těchto oblastech se může dokonce nacházet i několik míst,
+          kde se konají <c>šperkařské</c> aktivity.</li>\n\n<li><hl>Používa se k</hl>:
+          Tvarování <object id=\"rough_gem\" /> do <object id=\"cut_gem\" />. Jakmile
+          tyto předměty, nebo i vzácný <object id=\"item_trinket\" />, získáte, můžete
+          je zkombinovat s potřebným materiálem <object id=\"bar\" /> a vytvořit tak
+          <object id=\"item_ring\" /> a <object id=\"item_amulet\" />, které zvýhodní
+          vaše dovednosti.</li>\n"
+        mining: "<object id=\"mining\" /> je sběračská dovednost, která je nezbytná
+          pro získávání <object id=\"ore\" /> a minerálů.\n\n<li><hl>Kde začít</hl>:
+          S <c>těžbou</c> můžete začít v <object id=\"location-pit_of_pittance-49a851b8-055-4857-9492-907958733b09\"\
+          \ />, jakmile si pomocí <object id=\"crafting\" /> vytvoříte svůj první
+          <object id=\"pickaxe\" />.</li>\n\n<li><hl>Kde hledat</hl>: Většinou v horských
+          oblastech se může vyskytovat těžba, jen si s sebou vezměte vhodný <object
+          id=\"miningTool\" />.</li>\n\n<li><hl>Používá se k</hl>: Těžba <object id=\"\
+          ore\" /> a <object id=\"nugget\" />, které pak můžete vytavit pomocí své
+          dovednosti <object id=\"smithing\" />. Vzácně se může stát, že najdete i
+          pár <object id=\"rough_gem\" />, které můžete tvarovat pomocí své dovednosti
+          <object id=\"trinketry\" />. </li>\n"
   phrases:
     home:
       content: Obsah
