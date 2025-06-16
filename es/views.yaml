@@ -34,23 +34,23 @@ maps:
         faceAccessorie: Accesorios faciales
         facepaint: Pintura facial
         hair: Peinado
-        headwear: Sombreros
+        headwear: Accesorios de cabeza
         none: Ninguno
         nose: Nariz
         outfit: Conjunto
-        'faceAccessory': Accesorios faciales
-        'backAccessory': Accesorios traseros
-        'eyeAccessory': Accesorios de ojo
+        'faceAccessory': Accesorios de cara
+        'backAccessory': Accesorios de espalda
+        'eyeAccessory': Accesorios de ojos
       raceTypes:
         human: Humano
         none: Ninguno
       expressions:
         'normal': Normal
-        'angry': Enojado
+        'angry': Enfadado
         'laughing': Riendo
         'sad': Triste
         'smile': Sonriendo
-        'smirk': Sonrisa
+        'smirk': Sonrisita
         'surprise': Sorpresa
         'veryAngry': Muy enfadado
   character:
@@ -60,29 +60,39 @@ maps:
       'monthly': Pasos mensuales
   settings:
     boolSettings:
-      'showRecipesMaterialsAreMet': Se cumplen los requisitos materiales
+      'showRecipesMaterialsAreMet': Se cumplen los requisitos de materiales
       'showRecipesRequirementsAreMet': Se cumplen los requisitos de nivel
       'showCompletedAchievements': Mostrar logros completados
       'showRecipesServicesAreMet': Se cumplen los requisitos de servicio
       'showStepSourceInActivityView': Ver la selección del origen de los pasos en
         la vista de Actividad
+      'leftHandedMode': Modo zurdo
+      'inventoryCollapsed': Condensar inventario
+      'alwaysStopWhenInventoryFull': Parar por defecto al sobrecargarse
+      'spriteOutlines': Renderizar contornos
+      'showFpsCounter': Mostrar contador de FPS
+      'shaderOutlineRendering': Renderizar contornos con sombreados
     visibilitySettings:
       'public': Público
       'friends': Solo amigos
       'private': Privado
     notificationImportance:
-      'high': Emite un sonido o vibra
-      'low': No hay sonido, no hay vibración y no aparece en la barra de estado.
-      'urgent': Emite un sonido o vibra y aparece como notificación emergente.
+      'high': Suena o vibra
+      'low': Sin sonido, sin vibración y sin aparecer en la barra de estado.
+      'urgent': Suena o vibra y aparece como notificación emergente.
     languages:
       'de': Alemán
-      'fi': Finés
+      'fi': Finlandés
       'pl': Polaco
       'es': Español (España)
       'en': Inglés
       'it': Italiano
-      'zh_Hans': Chino (simplificado)
+      'zh_Hans': Chino (Simplificado)
       'sv': Sueco
+      'fr': Francés
+      'tr': Turco
+      'pt': Portugués
+      'nl-NL': Holandés
     stepCountNotifications:
       'never': Nunca
       'always': Siempre
@@ -95,10 +105,16 @@ maps:
     categories:
       'accessibility': Accesibilidad
       'graphics': Gráficas
+      'gameplay': Juego
+      'account': Cuenta
+      'character': Personaje
     custom:
       'dataSource': Origen de datos de pasos
     enumSettings:
       'stepDataTime': Periodo
+      'leaderboardType': Tablas de clasificación
+      'language': Idioma
+      'leaderboardFilter': Mostrar
   shop:
     phrases:
       itemType:
@@ -112,6 +128,11 @@ maps:
         'crafted': Fabricado
         'container': Recipientes
         'loot': Botín
+  locales:
+    grammaticalGender:
+      'neutral': Neutro
+      'masculine': Masculino
+      'feminine': Femenino
 plurals:
   achievements:
     phrases:
@@ -557,7 +578,7 @@ singulars:
         hideSteps: Ocultar pasos
       gameplay:
         title: Jugabilidad
-        stopWhenOverEncumberedDefault: Parar por defecto en caso de sobrecarga
+        stopWhenOverEncumberedDefault: Parar por defecto al sobrecargarse
         showFpsCounter: Mostrar contador FPS
       accessibility:
         title: Accesibilidad
