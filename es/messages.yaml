@@ -3,12 +3,15 @@ plurals:
     deleteClass:
       title: ¿Estás seguro de que quieres eliminar?
       text:
-        one: Eliminar objetos no se puede deshacer. El objeto está referenciado en
-          otros objetos {} veces.
-        other: Eliminar objetos no se puede deshacer. El objeto está referenciado
-          en otros objetos {} veces.
-        two: Eliminar objetos no se puede deshacer. El objeto está referenciado en
-          otros objetos {} veces.
+        one: Eliminar artículos no se puede deshacer. El artículo está referenciado
+          en otros artículos {} vez.
+        other: Eliminar artículos no se puede deshacer. El artículo está referenciado
+          en otros artículos {} veces.
+        two: Eliminar artículos no se puede deshacer. El artículo está referenciado
+          en otros artículos {} veces.
+        zero: '-'
+        few: '-'
+        many: '-'
 singulars:
   messages:
     saveSuccesful:
@@ -82,47 +85,70 @@ singulars:
         al <c i="1">{to}</c>.
   errors:
     fatalError:
-      error: Sentimos el error. Recuerda que el juego está en fase Beta, y las copias
-        de seguridad del jugador se hacen diariamente.
+      error: Sentimos el error. Recuerda que el juego está en beta cerrada y las copias
+        de seguridad de todos los jugadores se hacen en la nube diariamente.
     serverError:
       noClosedBetaAccess:
-        title: Sin acceso a la beta cerrada
-        text: Tu acceso a <c i=0>WalkScape Closed Beta has expired</c>. Puedes recuperar
-          tu acceso solicitando nuevamente la Beta Cerrada y siendo aceptado en una
-          futura ronda, o de inmediato apoyando el juego en <c i=1>Patreon</c> o <c
-          i=1>Buy Me a Coffee</c>. Si decides apoyar el juego, vincula tu cuenta de
-          Patreon o Buy Me a Coffee en la <c i=1>WalkScape Portal Account page</c>
-          para recuperar el acceso al juego. También puedes <c i=1>apply for beta
-          access</c> desde la página de cuenta.
+        title: El acceso a la beta cerrada ha expirado
+        text: Tu acceso a la <c i=0>Beta Cerrada de WalkScape ha expirado</c>. Puedes
+          volver a conseguir acceso solicitando la Beta Cerrada y siendo aceptado,
+          o inmediátamente apoyando al juego en <c i=1>Patreon</c> o <c i=1>Buy Me
+          a Coffee</c>.\n\nSi decides apoyar el juego, por el enlace a tu Patreon
+          o Buy Me a Coffee en la <c i=1>página de la Cuenta de WalkScape Portal</c>
+          para volver a tener acceso al juego. También puedes <c i=1>solicitar acceso
+          a la beta</c> desde la Página de la Cuenta.
       newClientUpdate:
         title: Nueva actualización del juego disponible
-        text: Tu juego no está actualizado, y hay una nueva versión disponible. Por
+        text: Tu juego no está actualizado y hay una nueva versión disponible. Por
           favor, descarga la última versión para continuar jugando.
       noInternetConnection:
-        title: Sin conexión a internet
+        title: No se pudo conectar con el servidor de WalkScape
+        text: Ha fallado el intento de conexión con el servidor de WalkScape. Esto
+          puede significar que no tienes conexión a internet, que el servidor está
+          caído o que la conexión ha sido bloqueada por un firewall. Por favor, comprueba
+          tu conexión a internet e inténtalo de nuevo.
       serverOffline:
         title: El servidor de WalkScape está desconectado
+        text: El servidor del juego está actualmente desconectado. Esto puede deberse
+          a mantenimiento o a un problema con el servidor. Por favor, inténtalo más
+          tarde.
       serverMaintenance:
         title: El servidor de WalkScape está en mantenimiento
+        text: El servidor del juego está en mantenimiento. Por favor, inténtalo más
+          tarde.
       newUpdate:
         title: Nueva actualización
         text: El juego ha sido actualizado. Por favor, reinicia el juego para descargar
           la nueva actualización.
       unknownError:
         title: Error desconocido.
+        text: Error desconocido.
       invalidSession:
         text: Tu sesión no es válida. Por favor, vuelve a abrir el juego e inicia
           sesión de nuevo.
+        title: Sesión inválida
       bannedUser:
         title: Has sido baneado permanentemente de WalkScape
+        text: Has sido baneado permanentemente de WalkScape. Si crees que esto es
+          un error y quieres apelar la decisión, puedes contactarnos mandando un email
+          a <c i=1>contact@walkscape.app</c>.
       unauthorized:
-        text: Acceso denegado. Por favor, inicia sesión nuevamente.
-        title: No tienes permiso
+        text: No estás autorizado. Por favor, inicia sesión nuevamente.
+        title: No autorizado
       connectionError:
         title: Error de conexión
+        text: Ha habido un error al conectarse al servidor. Por favor, comprueba tu
+          conexión a internet e inténtalo más tarde.
+      failureToUpdateContent:
+        title: Fallo al actualizar contenido
+        text: El juego ha fallado al actualizar el contenido. Por favor, informa a
+          los desarrolladores en Discord dando detalles de tu error y tu dispositivo.
+          También puedes volver a abrir el juego para ver si el contenido se descarga
+          correctamente.
     characterValidation:
-      nameTooShort: El nombre de tu personaje ha de tener 3 letras o más.
-      nameContainsSpecialCharacters: El nombre del persona contiene caracteres especiales.
+      nameTooShort: El nombre del personaje debe tener una longitud mayor de tres
+        letras.
+      nameContainsSpecialCharacters: El nombre del personaje contiene caracteres especiales.
         Solo se permiten letras, números y espacios.
       nameContainsleadingTrailingSpaces: No se permiten espacios por delante o por
         detrás.
@@ -135,21 +161,19 @@ singulars:
         los requisitos para completarla.
     gameError:
       loadingPlayerFailed:
-        text: Datos del jugador inválidos. No se pudo cargar. Contacta a los desarrolladores
+        text: Datos del jugador inválidos. Fallo al cargar. Contacta con los desarrolladores
           por Discord o email.
         title: Error al cargar el jugador
       stepLoadingFailed:
-        title: Error al cargar los pasos
-        text: El cliente del juego no pudo cargar los pasos. Por favor, reporta este
-          problema a los desarrolladores en Discord, incluyendo detalles del error
-          y de tu dispositivo. También puedes intentar abrir el juego nuevamente para
-          ver si los pasos se cargan correctamente.
+        title: Fallo al cargar los pasos
+        text: El juego no pudo cargar los pasos. Por favor, repórtalo a los desarrolladores
+          en Discord incluyendo detalles de tu error y dispositivo. También puedes
+          intentar abrir el juego nuevamente para ver si los pasos se cargan correctamente.
       initializingGameFailed:
         title: Error al inicializar el juego
-        text: El cliente del juego no pudo inicializarse. Por favor, reporta este
-          problema a los desarrolladores en Discord, incluyendo detalles del error
-          y de tu dispositivo. También puedes intentar abrir el juego nuevamente para
-          ver si se carga correctamente.
+        text: El juego no pudo inicializarse. Por favor, reporta este problema a los
+          desarrolladores en Discord incluyendo detalles de tu error y tu dispositivo.
+          También puedes intentar abrir el juego nuevamente para ver si se carga correctamente.
   info:
     game:
       equipGearSetSomeFailed:
@@ -166,20 +190,28 @@ singulars:
           dañados o ser inválidos.
       importGearSetTooManyTools:
         title: El kit de equipo tiene demasiadas herramientas
-        text: El conjunto de equipo tenía más herramientas de las permitidas.
+        text: El kit de equipo tenía más herramientas de las permitidas.
       equipGearSetFailed:
         title: Fallo al equipar un kit de equipo
         text: Fallo al equipar el kit de equipo. Es probable que el kit de equipo
           que intentaste equipar sea inválido o esté dañado.
       withdrawZero:
-        text: No puedes retirar una cantidad igual o menor a cero.
-        title: No se pudo retirar
+        text: No puedes retirar cero o menos objetos.
+        title: Fallo al retirar
       changingActivityFailed:
-        title: No se pudo cambiar la actividad
+        title: Fallo al cambiar la actividad
         text: No se pudo cambiar la actividad. O bien ya la estás realizando o no
           está disponible.
       withdrawTooFew:
-        text: No tienes suficientes artículos para retirar.
+        text: No tienes suficientes objetos para retirar.
+        title: Fallo al retirar
+      withdrawDidNotExist:
+        title: Fallo al retirar
+        text: El objeto que has intentado retirar no existe. Reabrir el banco debería
+          solucionar el problema.
+      withdrawFailed:
+        text: Fallo al retirar. Por favor, inténtalo otra vez.
+        title: Fallo al retirar
   confirmations:
     changingStepSource:
       text: Cambiar tu origen de los pasos podría causar la pérdida de pasos no sincronizados.
