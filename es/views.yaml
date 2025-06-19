@@ -34,23 +34,23 @@ maps:
         faceAccessorie: Accesorios faciales
         facepaint: Pintura facial
         hair: Peinado
-        headwear: Sombreros
+        headwear: Accesorios de cabeza
         none: Ninguno
         nose: Nariz
         outfit: Conjunto
-        'faceAccessory': Accesorios faciales
-        'backAccessory': Accesorios traseros
-        'eyeAccessory': Accesorios de ojo
+        'faceAccessory': Accesorios de cara
+        'backAccessory': Accesorios de espalda
+        'eyeAccessory': Accesorios de ojos
       raceTypes:
         human: Humano
         none: Ninguno
       expressions:
         'normal': Normal
-        'angry': Enojado
+        'angry': Enfadado
         'laughing': Riendo
         'sad': Triste
         'smile': Sonriendo
-        'smirk': Sonrisa
+        'smirk': Sonrisita
         'surprise': Sorpresa
         'veryAngry': Muy enfadado
   character:
@@ -60,27 +60,39 @@ maps:
       'monthly': Pasos mensuales
   settings:
     boolSettings:
-      'showRecipesMaterialsAreMet': Se cumplen los requisitos materiales
+      'showRecipesMaterialsAreMet': Se cumplen los requisitos de materiales
       'showRecipesRequirementsAreMet': Se cumplen los requisitos de nivel
       'showCompletedAchievements': Mostrar logros completados
       'showRecipesServicesAreMet': Se cumplen los requisitos de servicio
+      'showStepSourceInActivityView': Ver la selección del origen de los pasos en
+        la vista de Actividad
+      'leftHandedMode': Modo zurdo
+      'inventoryCollapsed': Condensar inventario
+      'alwaysStopWhenInventoryFull': Parar por defecto al sobrecargarse
+      'spriteOutlines': Renderizar contornos
+      'showFpsCounter': Mostrar contador de FPS
+      'shaderOutlineRendering': Renderizar contornos con sombreados
     visibilitySettings:
       'public': Público
       'friends': Solo amigos
       'private': Privado
     notificationImportance:
-      'high': Emite un sonido o vibra
-      'low': No hay sonido, no hay vibración y no aparece en la barra de estado.
-      'urgent': Emite un sonido o vibra y aparece como notificación emergente.
+      'high': Suena o vibra
+      'low': Sin sonido, sin vibración y sin aparecer en la barra de estado.
+      'urgent': Suena o vibra y aparece como notificación emergente.
     languages:
       'de': Alemán
-      'fi': Finés
+      'fi': Finlandés
       'pl': Polaco
       'es': Español (España)
       'en': Inglés
       'it': Italiano
-      'zh_Hans': Chino (simplificado)
+      'zh_Hans': Chino (Simplificado)
       'sv': Sueco
+      'fr': Francés
+      'tr': Turco
+      'pt': Portugués
+      'nl-NL': Holandés
     stepCountNotifications:
       'never': Nunca
       'always': Siempre
@@ -90,59 +102,90 @@ maps:
     leaderboardFilter:
       'everyone': Todo el mundo
       'friends': Amigos
+    categories:
+      'accessibility': Accesibilidad
+      'graphics': Gráficas
+      'gameplay': Juego
+      'account': Cuenta
+      'character': Personaje
+    custom:
+      'dataSource': Origen de datos de pasos
+    enumSettings:
+      'stepDataTime': Periodo
+      'leaderboardType': Tablas de clasificación
+      'language': Idioma
+      'leaderboardFilter': Mostrar
+  shop:
+    phrases:
+      itemType:
+        'material': Materiales
+        'consumable': Consumibles
+        'collectible': Coleccionables
+        'cosmetic': Cosméticos
+        'special': Especial
+        'tool': Herramientas
+        'gear': Equipo
+        'crafted': Fabricado
+        'container': Recipientes
+        'loot': Botín
+  locales:
+    grammaticalGender:
+      'neutral': Neutro
+      'masculine': Masculino
+      'feminine': Femenino
 plurals:
   achievements:
     phrases:
       achievementPoint:
         few: '-'
-        many: '{} puntos de logro'
+        many: '-'
         one: '{} punto de logro'
         other: '{} puntos de logro'
-        two: '-'
+        two: '{} puntos de logro'
         zero: '-'
   activity:
     phrases:
       actionsRemaining:
         few: '-'
-        many: Acciones pendientes
+        many: '-'
         one: Acción pendiente
         other: Acciones pendientes
-        two: '-'
+        two: 'Acciones pendientes'
         zero: '-'
       actionsToLevelUp:
         few: '-'
-        many: Acciones para subir de nivel
+        many: '-'
         one: Acción para subir de nivel
         other: Acciones para subir de nivel
-        two: '-'
+        two: 'Acciones para subir de nivel'
         zero: '-'
       stepsRemainingInTotal:
         few: '-'
-        many: Pasos pendientes en total
+        many: '-'
         one: Paso pendiente en total
         other: Pasos pendientes en total
-        two: '-'
+        two: 'Pasos pendientes en total'
         zero: '-'
       stepsRequired:
         few: '-'
-        many: Pasos necesarios
+        many: '-'
         one: Paso necesario
         other: Pasos necesarios
-        two: '-'
+        two: 'Pasos requeridos'
         zero: '-'
       stepsToCraft:
         few: '-'
-        many: Pasos para fabricar
+        many: '-'
         one: Paso para fabricar
         other: Pasos para fabricar
-        two: '-'
+        two: 'Pasos para fabricar'
         zero: '-'
       stepsToLevelUp:
         few: '-'
-        many: Pasos para subir de nivel
+        many: '-'
         one: Paso para subir de nivel
         other: Pasos para subir de nivel
-        two: '-'
+        two: 'Pasos para subir de nivel'
         zero: '-'
       stepsUntilArrival:
         zero: '-'
@@ -151,33 +194,49 @@ plurals:
         other: Pasos hasta llegar
         two: Pasos hasta llegar
         few: '-'
+  inventory:
+    info:
+      consumableDuration:
+        other: La actividad <object id="{activity}" alwaysShow="true"/> requiere <c>{steps}</c>
+          pasos por acción. La cantidad elegida de consumibles potenciaría <c>{actions}
+          acciones</c>.
+        zero: La actividad <object id="{activity}" alwaysShow="true"/> requiere <c>{steps}</c>
+          pasos por acción. La cantidad elegida de consumibles potenciaría <c>{actions}
+          acciones</c>.
+        few: '-'
+        many: '-'
+        two: La actividad <object id="{activity}" alwaysShow="true"/> requiere <c>{steps}</c>
+          pasos por acción. La cantidad elegida de consumibles potenciaría <c>{actions}
+          acciones</c>.
+        one: La actividad <object id="{activity}" alwaysShow="true"/> requiere <c>{steps}</c>
+          pasos por acción. La cantidad elegida de consumibles potenciaría <c>{actions}
+          acción</c>.
 singulars:
   achievements:
     info:
-      viewDescription: Desbloquea logros para ganar <hl>Progreso de Recompensas</hl>.
-        Cuando se llena el Progreso de recompensas, ganas una recompensa para todos
-        tus personajes. Algunos logros también dan recompensas por desbloquearlos.
+      viewDescription: Desbloquea logros para ganar <hl>puntos de logro</hl>. A partir
+        de cierta cantidad de puntos de logro, ganas recompensas especiales. Algunos
+        logros también dan recompensas por desbloquearlos.
       specialItems: Objetos especiales, tales como <c>coleccionables</c>, <c>objetos
         de misión</c> y <c>artefactos</c> son recolectados durante tu aventura en
-        WalkScape. Puedes comprobarlos aquí. Los coleccionables te otorgan puntos
-        de logro.
-      collectibleItems: Los coleccionables son objetos que puedes obtener en el mundo
-        de WalkScape. Hay varios tipos de coleccionables que puedes intentar conseguir.
-        No ocupan espacio en el inventario y están siempre con tu personaje.
-      totalProgressUnlocks: Ganarás recompensas en proporción a tu progreso total
-        de los logros, y perderás el acceso a los objetos si se van añadiendo más
-        logros.
+        WalkScape. Puedes verlos aquí. Los coleccionables te dan puntos de logro.
+      collectibleItems: Los objetos coleccionables son artículos que puedes obtener
+        en el mundo de WalkScape. Hay varios tipos de coleccionables que puedes intentar
+        conseguir. No ocupan espacio en el inventario y están siempre con tu personaje.
+      totalProgressUnlocks: Conseguirás estas recompensas en base a tu progreso total
+        de los logros y perderás el acceso a los objetos si se añaden más puntos de
+        logro.
       checkPointUnlocks: Esos logros están disponibles a partir de cierto número de
-        puntos de logro. No perderás acceso a ellos incluso si más puntos de logro
-        son añadidos en un futuro.
-      noCollectibleItems: No has conseguido ningún coleccionable aún.
+        puntos de logro. No perderás acceso a ellos incluso si se añaden más puntos
+        de logro.
+      noCollectibleItems: Todavía no has conseguido ningún objeto coleccionable.
     phrases:
       notUnlocked: Logro bloqueado
-      rewardProgress: Progreso de recompensa
+      rewardProgress: Progreso de Recompensa
       unclaimedRewards: 'Recompensas sin reclamar: '
       showRewards: Mostrar recompensas
-      totalProgressUnlocks: Progreso total desbloqueado
-      checkPointUnlocks: Desbloqueos con progreso guardado
+      totalProgressUnlocks: Desbloqueos de progreso total
+      checkPointUnlocks: Desbloqueos de hito
   crafting:
     phrases:
       materials: Materiales
@@ -188,48 +247,47 @@ singulars:
       requiresOneOfTheFollowing: Requiere uno de los siguientes materiales.
       rewards: Recompensas
       noMaterials: No tienes materiales disponibles para fabricar en este momento.
-      noServiceRequirements: No hay servicios requeridos.
+      noServiceRequirements: No se requieren servicios.
       noMaterialsThatCouldBeUsed: No hay materiales que puedan usarse para fabricar
         en tu inventario.
       showingRecipiesThatUses: Mostrando recetas que usan
       requiresService: Requiere un servicio.
     errors:
-      notSameQuality: Los materiales han de ser todos finos o normales
-      noService: Requerimiento de servicio no satisfecho
-      skillRequirementsNotMet: Requerimiento de habilidad no satisfecho
-      noMaterials: Faltan materiales de transformación
+      notSameQuality: Todos los materiales han de ser de calidad o normales
+      noService: No se cumplen los requisitos de servicio
+      skillRequirementsNotMet: No se cumplen los requisitos de habilidad
+      noMaterials: Faltan materiales de fabricación
   inventory:
     info:
-      noItemEquipped: No hay ningún objeto equipado. \n\n Puedes equipar un objeto
-        seleccionando uno de la siguiente lista y pulsando "Equipar".
-      noItemSelected: No hay ningún objeto seleccionado. \n\n Selecciona un objeto
-        de la siguiente lista para compararlo con el objeto actual y equiparlo.
-      noItemsFound: No se han encontrado objetos en tu inventario que encajen en esta
-        ranura.
+      noItemEquipped: No hay objetos equipados. \n\n Puedes equipar un objeto seleccionando
+        uno de la lista inferior y pulsando "Equipar".
+      noItemSelected: No hay objetos seleccionados. \n\n Selecciona un objeto de la
+        lista inferior para compararlo con el objeto actual y equiparlo.
+      noItemsFound: No se han encontrado objetos en tu inventario que sirvan para
+        esta ranura.
     phrases:
-      treasury: Tesoro
+      treasury: Tesorería
       selectedStacks: <c>{stacks}</c> pilas seleccionadas
       requirementsNotMet: No se cumplen los requisitos.
       cantEquip: No se puede equipar.
       checkBank: Abrir banco
-      slotDoesntExist: Esta ranura ya no existe.
-      allItemsInUse: Todos estos objetos están actualmente en uso y no pueden dejarse
-        caer.
+      slotDoesntExist: Esta ranura de objeto ya no existe.
+      allItemsInUse: Todos estos objetos están actualmente en uso y no pueden soltar.
       noConsumables: No hay consumibles en tu inventario.
       noConsumableSelected: No se ha seleccionado ningún consumible. Puede seleccionar
         uno de los siguientes.
       equipToRingTwo: Equipar en la ranura de anillo 2
       noItemEquipped: Ningún objeto equipado
-      longPressTip: <c>Consejo:</c> La pulsación larga en una pila de objetos selecciona
+      longPressTip: <c>Consejo:</c> Mantener pulsada una pila de objetos selecciona
         todas las pilas similares.
       areYouSureToDrop: ¿Estás seguro de que quieres soltar los objetos? Los objetos
-        desaparecen para siempre cuando se sueltan.
+        desaparecerán para siempre al soltarlos.
       dropItems: ¿Soltar objetos?
       slots: Ranuras <c>{slots}</c>
       slotsCount: 'Ranuras:'
-      cantBeDropped: El objeto no se puede dejar caer.
+      cantBeDropped: El objeto no se puede soltar.
       attributes: Atributos
-      abilities: Capacidades
+      abilities: Talentos
       equipToRingOne: Equipar en la ranura de anillo 1
       emptySlot: Ranura vacía
       allSkills: Todas las habilidades
@@ -242,11 +300,11 @@ singulars:
       selectedConsumable: Consumible seleccionado
       consumables: Consumibles
       oneOrMoreCantBeDropped: No se pueden soltar uno o más objetos.
-      noFoodConsumables: No hay <hl>alimentos</hl> en tu inventario.
-      itemsInUse: Has seleccionado objetos que ya están en uso. No puedes soltar o
-        depositar objetos en uso.
+      noFoodConsumables: No hay <hl>comida</hl> en tu inventario.
+      itemsInUse: Has seleccionado objetos que están en uso. No puedes soltar o depositar
+        objetos en uso.
       enableWhenBack: Volver a activar al iniciar una actividad en la que se utilizó
-        anteriormente
+        previamente
       requires: Requiere
       equipToToolSlot: Equipar en la ranura de herramienta {id}
     options:
@@ -259,7 +317,7 @@ singulars:
     phrases:
       activities: Actividades
       services: Servicios
-      jobBoard: Tablón de trabajos
+      jobBoard: Tablón de empleo
       jobs: Trabajos
       noActivites: No hay actividades disponibles en este lugar.
       factions: Facciones
@@ -269,27 +327,27 @@ singulars:
   pfpCreation:
     buttons:
       choose: Elegir
-      hideHat: Ocultar el sombrero
+      hideHat: Ocultando accesorios de cabeza
       randomize: Aleatorizar
-      showHat: Mostrar sombreros
+      showHat: Mostrando accesorios de cabeza
       enableFaceAccessorie: Habilitar accesorio facial
       enableBackAccessorie: Habilitar accesorio trasero
-      enableFacepaint: Habilitar pintura facial
+      enableFacepaint: Activar pintura facial
       enableDynamicBackground: Activar fondo dinámico
-      enableFaceAccessory: Activar complementos faciales
-      enableBackAccessory: Activar complementos traseros
-      enableEyeAccessory: Activar complementos de ojo
+      enableFaceAccessory: Activar accesorios de cara
+      enableBackAccessory: Activar accesorios de espalda
+      enableEyeAccessory: Activar accesorios de ojos
     phrases:
       currentSelection: Selección actual
       homeRegion: Región de origen
       race: Raza
       selectedVariant: Variante {index} seleccionada
-      resetToDefault: Restablecer valores por defecto
+      resetToDefault: Restablecer valor por defecto
       colorOptions: Opciones de color
       mainOptions: Opciones principales
       extras: Extras
       dynamicBackground: El fondo dinámico cambia la imagen de fondo en función de
-        la ubicación del personaje.
+        la ubicación de tu personaje.
       defaultExpression: Expresión por defecto
       variants: Variantes
       noVariantSelected: Ninguna variante seleccionada
@@ -299,31 +357,31 @@ singulars:
   journal:
     info:
       jobInfo: Los trabajos son <c>tareas sencillas y repetibles</c> que puedes completar
-        para obtener recompensas. Puedes aceptar trabajos en los <c>tablones de trabajo</c>
-        en varias ubicaciones, como ciudades. Puedes tener hasta tres trabajos activos
+        para obtener recompensas. Puedes aceptar trabajos en los <c>tablones de empleo</c>
+        de varias ubicaciones, como ciudades. Puedes tener hasta tres trabajos activos
         a la vez.
     phrases:
       jobs: Trabajos
   jobs:
     phrases:
       acceptJob: Aceptar trabajo
-      itemsFromInventory: Objetos del Inventario
+      itemsFromInventory: Objetos del inventario
       abandonJob: Abandonar trabajo
-      youMustBeInLocation: Debe estar en la misma ubicación con <object id="{obj}"/>
+      youMustBeInLocation: Debes estar en la misma ubicación con <object id="{obj}"/>
         para entregar los objetos.
-      hasNoItemsInBank: No hay objetos elegibles en tu banco.
+      hasNoItemsInBank: No hay objetos aptos en tu banco.
       rewards: Recompensas por completar
-      noJobsAvailable: 'En este momento no hay trabajos disponibles en esta ubicación.
-        Nuevos trabajos estarán disponibles en:'
+      noJobsAvailable: 'Ahora mismo no hay trabajos disponibles en esta ubicación.
+        Habrá nuevos trabajos en:'
       acceptedJobs: Trabajos aceptados actualmente <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
       itemsFromBank: Objetos del banco
       hasNoBank: No hay banco en esta ubicación.
       giveItems: Entregar objetos
       give: Entregar
-      refreshIn: 'La tablón de trabajos se actualizará en:'
-      hasNoItemsInInventory: No hay objetos elegibles en tu inventario.
+      refreshIn: 'La tablón de empleo se actualizará en:'
+      hasNoItemsInInventory: No hay objetos aptos en tu inventario.
       openJournal: Abrir diario
-      youMustBeInLocationToCollect: Has de estar en la misma localización con <object
+      youMustBeInLocationToCollect: Debes estar en la misma ubicación con <object
         id="{obj}"/> para obtener las recompensas.
       collectRewards: Obtener recompensas
     dialogs:
@@ -335,21 +393,22 @@ singulars:
     phrases:
       email: E-mail / Nombre de usuario
       password: Contraseña
-      pleaseEnterCredentials: Introduce las credenciales de tu cuenta de WalkScape.
+      pleaseEnterCredentials: Por favor, introduce las credenciales de tu cuenta de
+        WalkScape.
       authenticating: Autentificando...
       pleaseWait: Por favor, espera...
       createCharacter: Crear un nuevo personaje
       logOut: Cerrar sesión
-      lostInternet: Tu dispositivo ha perdido la conexión a Internet. Esperando una
+      lostInternet: Tu dispositivo ha perdido la conexión a internet. Esperando una
         conexión...
       areYouSureYouWantToDelete: ¿Estás seguro de que quieres borrar <hl>{name}</hl>?
       deleteWord: BORRAR
-      downloadingContent: Descargando nuevos contenidos de juego
-      loadingGame: Cargando juego... ¡por favor espera!
+      downloadingContent: Descargando nuevo contenido del juego
+      loadingGame: Cargando juego... ¡por favor, espera!
       logIn: Iniciar sesión
-      noBetaAccess: No hay acceso a la beta.
-      googlePlay: Actualización de Google Play
-      accountPage: Página de la cuenta
+      noBetaAccess: Sin acceso a la beta.
+      googlePlay: Actualiza en Google Play
+      accountPage: Página de la Cuenta
       noInternet: Sin conexión a internet
       downloadingLocalisations: Descargando localizaciones actualizadas
       register: Registrarse
@@ -360,9 +419,26 @@ singulars:
       iAmSure: Estoy seguro
       ifYouAreSure: Si estás seguro, escribe <c>BORRAR</c> en el campo y pulsa continuar.
       areYouAbsolutelySure: ¿Estás completamente seguro? Después de este paso, perderás
-        permanentemente tu personaje.
+        permanentemente a tu personaje.
       welcomeToWalkscape: Bienvenido a WalkScape, <hl>forastero</hl>. Por favor, inicia
         sesión.
+      testFlight: Puedes descargar la última versión en <c>TestFlight</c>.
+    loadingStates:
+      localizationFiles: Cargando archivos de localización
+      validatingGame: Validando datos del juego desde el servidor
+      dataLoadingComplete: ¡Carga de datos completa!
+      loadingComplete: ¡Carga completa!
+      initializingProviders: Inicializando operador
+      loadingCharactersFromCloud: Cargando personajes desde la nube
+      readingLocalGameData: Leyendo datos del juego locales
+      initializingObjects: Inicializando objetos de juego
+      initializingDatabases: Inicializando bases de datos
+      readingCloudData: Leyendo nube de datos
+      checkingLocalizations: Comprobando localizaciones desde el servidor
+      cleaningUpData: Limpiando datos
+      startingGameLoad: Comenzando a cargar datos del juego
+      initializingPlayer: Inicializando datos de jugador
+      gameVersion: Obteniendo versión del juego
   activity:
     info:
       consumablesUsage: Puedes elegir una <c>comida</c> y una <c>poción</c> para usar
@@ -384,8 +460,8 @@ singulars:
   character:
     info:
       skillBreakdown: Aquí está el desglose total de todas las habilidades que tu
-        personaje ha subido de nivel durante su aventura. Pulsa en cualquiera de las
-        habilidades para ver información detallada sobre ella y qué desbloquea.
+        personaje ha subido de nivel durante su aventura. Pulsa sobre cualquiera de
+        las habilidades para ver información detallada y qué desbloquea.
     phrases:
       skills: Habilidades
       stepsOfLastWeek: Pasos de los últimos 7 días
@@ -394,61 +470,97 @@ singulars:
       totalLevel: Nivel total
   permissions:
     phrases:
-      pedometerPermission: Permisos para la cuenta de pasos
+      pedometerPermission: Permiso del podómetro
       permissionExplanation: Para que el juego funcione, necesitamos que aceptes el
         permiso para leer el contador de pasos de tu dispositivo. Por favor, actívalo
         para continuar.
       exactAlarmPermission: Permiso de alarma
       youNeedToGivePermissions: Necesitas conceder los siguientes permisos para acceder
         al juego. Pulsa en los permisos para concederlos.
-      pedometerPermissionExplanation: Necesitamos este permiso para poder usar el
-        contador de pasos en tu dispositivo.
+      pedometerPermissionExplanation: Necesitamos este permiso para poder usar la
+        información del contador de pasos de tu dispositivo.
       connectAppleHealth: Conectar a Salud de Apple
       connect: Conectar
-      continueWillEnable: El botón de continuar será permitido después de que hayas
-        concedido los permisos necesarios.
+      continueWillEnable: El botón de continuar se activará después de conceder los
+        permisos superiores necesarios.
       connectAppleHealthExplanation: Necesitas conectarte a Salud de Apple para que
-        podamos sincronizar los pasos con tu reloj, leer los pasos y ver que dispositivos
-        has conectado. Si es tu primera vez usando WalkScape, el juego te pedirá permisos
-        para leer la aplicación de Salud de Apple.
-      noDeviceFound: Dispositivo no encontrado. Por favor, asegúrate de haber presionado
-        el botón <c>Conectar a Salud de Apple</c>de más arriba y concedido permisos
-        para leer los datos en la aplicación.
-      youCanChangeAnyTime: Puedes cambiar el contador de pasos desde <c>Configuración
+        podamos leer los pasos sincronizados con tu reloj y ver qué dispositivos has
+        conectado. Si es tu primera vez usando WalkScape, el juego te pedirá permisos
+        para leer los datos de Salud de Apple.
+      noDeviceFound: No se encuentran dispositivos. Por favor, asegúrate de haber
+        presionado el botón <c>Conectar a Salud de Apple</c> superior y haber concedido
+        permisos para leer los datos en la aplicación.
+      youCanChangeAnyTime: Puedes cambiar el origen del contador de pasos desde <c>Configuración
         del Juego</c> en cualquier momento.
-      comingSoonToAndroid: Próximamente para dispositivos Android
+      comingSoonToAndroid: Próximamente para Android
+      changeStepCountingSource: Cambiar el origen del contador de pasos
+      stepCountingSource: Origen del contador de pasos
+    deviceSource:
+      phone: Teléfono
+      appleWatch: Apple Watch
+      watch: Otro reloj
+      featureDisabled: El cambio de origen ha sido deshabilitado remotamente por el
+        momento. Se usará por defecto el podómetro del teléfono.
+    deviceInfo:
+      phone: "<icon i=\"Phone small\" /> El <c>Teléfono</c> es el origen recomendado
+        por defecto para contar pasos en WalkScape. Para actividades deportivas intensas,
+        recomendamos usar <icon i=\"Watch small\" /> <c>un reloj</c> como el origen
+        para contar pasos. Para la mayoría de jugadores, el <icon i=\"Phone small\"\
+        \ /> <c>Teléfono</c> es la mejor opción.\n\n<bp /> <c i=1>Tus pasos se actualizan
+        en directo en el juego mientras caminas.</c>\n\n<bp /> Para que se cuenten
+        tus pasos, <c>debes llevar tu teléfono encima</c>. Esto puede ser difícil
+        si realizas un deporte de alta intensidad.\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> es diferente
+        a <icon i=\"Watch small\" /> <c>otros relojes</c> porque sincroniza tus pasos
+        con Salud de Apple periódicamente. WalkScape lee tus pasos desde Salud de
+        Apple que están sincronizados con tu <icon i=\"Apple watch small\" /> <c>Apple
+        Watch</c> o cualquier otro reloj.\n\n<bp /> <c i=2>Apple Watch sincroniza
+        tus pasos con Salud de Apple periódicamente.</c> No puedes ver tus pasos actualizados
+        en directo en el juego y puede que los veas con retraso.\n\n<bp /> Necesitas
+        conceder permisos extra para leer los datos desde Salud de Apple para conectar
+        tu reloj.\n\n<bp /> Solo los pasos de los que informa tu reloj son registrados
+        en el juego.\n"
+      watch: "WalkScape lee los pasos de <c>Salud de Apple</c> que están ahí sincronizados
+        con tu <icon i=\"Watch small\" /> <c>reloj</c>. Dependiendo del fabricante,
+        puede que tengas que sincronizar manualmente tus pasos mediante otra aplicación
+        a <c>Salud de Apple</c>.\n\n<bp /> <c i=2>Puede que necesites sincronizar
+        tus pasos a Apple Health manualmente mediante otras aplicaciones </c>para
+        que se cuenten tus pasos en WalkScape.\n\n<bp /> El proceso de sincronización
+        de los pasos a <c>Salud de Apple</c> depende del fabricante. Esto puede requerir
+        alguna configuración extra y conocimientos técnicos.\n\n<bp /> Necesitas conceder
+        permisos extra para leer los datos desde Salud de Apple para conectar tu reloj.\n\
+        \n<bp /> Solo los pasos recogidos por tu reloj serán registrados en el juego.\n"
   rewards:
     phrases:
       alreadyClaimed: Ya reclamado
   wardrobe:
     phrases:
-      noHeadwear: No tienes ningún casco.
-      noFaceAccessories: No tienes ningún accesorio facial.
+      noHeadwear: No tienes accesorios para la cabeza.
+      noFaceAccessories: No tienes accesorios para la cara.
       noBackAccessories: No tienes accesorios para la espalda.
-      noEyeAccessories: No tienes ningún accesorio ocular.
+      noEyeAccessories: No tienes accesorios para los ojos.
   abilities:
     phrases:
-      abilities: Capacidades
-      useAbility: Usar capacidad
+      abilities: Talentos
+      useAbility: Usar talento
       useConsumable: Usar consumible
       noAction: Sin acción
       holdToUse: Mantener pulsado para usar
       holdToCast: Mantener pulsado para lanzar
     info:
-      youHaveNoAbilities: <hl>No tienes capacidades</hl>. Cierto equipamiento del
-        juego puede otorgarte capacidades que puedes usar para obtener algún beneficio
-        instantáneo en el juego por un tiempo de enfriamiento.
-      abilitiesInfo: Las capacidades son acciones especiales que puedes usar para
-        ganar beneficios instantáneos en el juego. Las habilidades tienen un tiempo
-        de recuperación, el cual debes esperar antes de volver a utilizarlas.
+      youHaveNoAbilities: <hl>No tienes talentos</hl>. Cierto equipo del juego puede
+        otorgarte talentos que puedes usar para obtener algún beneficio instantáneo
+        en el juego durante un tiempo.
+      abilitiesInfo: Los talentos son acciones especiales que puedes usar para ganar
+        beneficios instantáneos en el juego. Los talentos tienen un enfriamiento que
+        hay que esperar antes de volver a utilizarlos.
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'No se cumplen los requisitos de uso:'
-      followingMustBeTrueToTick: 'Lo siguiente debe ser cierto para que el enfriamiento
-        se reduzca:'
-      cooldownRemaining: 'Tiempo de reutilización restante:'
-      cooldownReady: 'Tiempo de reutilización: Listo'
-      noCooldown: Sin tiempo de reutilización.
+      followingMustBeTrueToTick: 'Lo siguiente debe ser cierto para reducir el enfriamiento:'
+      cooldownRemaining: 'Enfriamiento restante:'
+      cooldownReady: 'Enfriamiento: Listo'
+      noCooldown: Sin enfriamiento.
   treasury:
     phrases:
       openChest: Abrir
@@ -466,44 +578,59 @@ singulars:
         hideSteps: Ocultar pasos
       gameplay:
         title: Jugabilidad
-        stopWhenOverEncumberedDefault: Parar por defecto en caso de sobrecarga
+        stopWhenOverEncumberedDefault: Parar por defecto al sobrecargarse
         showFpsCounter: Mostrar contador FPS
       accessibility:
         title: Accesibilidad
         leftHandedMode: Modo zurdo
       closedBeta:
-        title: Beta cerrada
+        title: Beta Cerrada
         clearStepsGraph: Limpiar el gráfico de pasos
-        useThisToClear: Utiliza esta opción si deseas restablecer el gráfico de pasos.
-          Es útil si has ganado pasos por errores y quieres restablecer el gráfico.
+        useThisToClear: Usa esto si deseas restablecer tu gráfico de pasos. Útil si
+          has obtenido pasos por bugs y quieres restablecer el gráfico.
       notifications:
         title: Notificaciones
         stepCountInterval: Intervalo de notificación
-        stepCountNotifications: Notificaciones de recuento de pasos
+        stepCountNotifications: Notificaciones de contaje de pasos
         notificationType: Tipo de notificación
       language:
         title: Idioma
       dataSource:
         changeWarning:
           title: ¿Cambiar origen de datos?
-          description: Por favor ten en cuenta que podría haber una pérdida de pasos
-            alrededor del momento del cambio.
-        title: Origen de datos
+          description: Por favor, ten en cuenta que esto podría causar una pérdida
+            de pasos alrededor del momento del cambio.
+        title: Origen de Datos
         thisPhone: Este teléfono
         otherSource: Otro origen
-        requiresPermissionIos: Si el menú desplegable de abajo no muestra ningún dispositivo
-          externo, asegúrate de haber dado permisos a la aplicación para usar datos
-          que provienen de Apple Health en Configuración > Privacidad y Seguridad
-          > Salud > (bajo Apps) Walkscape. Asegúrate también de que Apple Health ha
-          registrado pasos en esos dispositivos en los últimos 7 días.
+        requiresPermissionIos: Si el siguiente desplegable no muestra nigún dispositivo
+          externo, asegúrate de haber concedido permisos a la app para usar datos
+          de Salud de Apple en Configuración ➤ Privacidad & Seguridad ➤ Salud ➤ (en
+          Apps) WalkScape y que Salud de Apple haya registrado pasos en esos dispositivos
+          en los últimos 7 días.
         lastSync: 'Última sincronización: {timestamp}'
       graphics:
         title: Gráficos
         shaderOutlines: Renderizar contornos con sombreadores
         renderOutlines: Renderizar contornos
+      locales:
+        title: Idioma
+        chooseALanguageInfo: Pulsa el botón superior para abrir el menú de selección
+          del idioma.
+        changeLanguage: Cambia el idioma
     phrases:
       exitToCharacterSelection: Salir a la selección de personajes
-      settings: Ajustes
+      settings: Configuración
+      connectionInfoIos: Si tus dispositivos no aparecen en la lista superior, asegúrate
+        de haber concedido a WalkScape permisos para usar datos de Salud de Apple
+        en <c>Configuración ➤ Privacidad & Seguridad ➤ Salud ➤ (en Apps) WalkScape</c>
+        y que Salud de Apple haya registrado pasos en esos dispositivos en los últimos
+        7 días.
+      stepSourceInfoDesc: Pulsa el botón inferior para ver más información acerca
+        del origen de los pasos y sus diferencias.
+      stepSourceInfo: Información sobre origen de pasos
+      connectionInfoAndroid: Próximamente, soporte para relojes inteligentes Android.
+        Actualmente solo el teléfono es compatible como origen para contar pasos.
   leaderboards:
     phrases:
       first: Primero
@@ -521,11 +648,11 @@ singulars:
   gear:
     phrases:
       combatModifiers: Modificadores de combate
-      noCombatModifiers: Sin modificadores de combate por objetos equipados.
+      noCombatModifiers: Los objetos equipados no tienen modificadores de combate.
       skillModifiers: Modificadores de habilidad
       permanentModifiers: Modificadores permanentes
       noPermanentModifiers: Sin modificadores permanentes.
-      noSkillModifiers: No hay modificadores de habilidad de los objetos equipados.
+      noSkillModifiers: Los objetos equipados no tienen modificadores de habilidad.
   tools:
     phrases:
       emptyToolSlot: Ranura de herramienta vacía
@@ -558,30 +685,43 @@ singulars:
       pointsOfInterest: Puntos de interés
       youHaveNotExplored: Aún no has explorado este lugar. Verás información sobre
         esta ubicación después de haberla visitado una vez.
-      routeFromTo: <location i="{fromID}"/> a <location i="{toID}"/>
+      routeFromTo: De <location i="{fromID}"/> a <location i="{toID}"/>
       route: Ruta
       currentLocation: Ubicación actual
-      routeRequirementsNotMet: 'Rutas del la camino seleccionado tienen requisitos
-        que no se cumplen:'
+      routeRequirementsNotMet: 'Rutas del camino seleccionado tienen requisitos que
+        no se cumplen:'
       afterExploring: Después de explorar el lugar, podrás ver sus puntos de interés.
       youreHere: Actualmente te encuentras en esta ubicación.
-      noActivities: No hay actividades disponibles en este ubicación.
+      noActivities: No hay actividades disponibles en esta ubicación.
       information: Información
+      changeRouteWarning: Cambiar tu ruta cancelará tu viaje actual y te devolverá
+        a la ubicación anterior. ¿Estás seguro?
   stats:
     phrases:
       stats: Estadísticas
-      totalSkillXp: Experiencia total de habilidad
+      totalSkillXp: Experiencia de habilidad total
       totalSteps: Pasos totales
+      recordedFrom: Registrado de <c>{from}</c> a <c>{to}</c>.
+      lastUpdated: 'Última actualización a: <c>{updatedAt}</c>.'
+      highestStepsIn24Hours: Más pasos en 24h
     info:
       stats: Recopilación de estadísticas de cada paso que has dado por el mundo de
         Arenum.
+      chartWarning:
+        title: Imprecisiones en gráficas
+        description: Varios jugadores han informado que sus gráficas de pasos son
+          poco precisas, causado por cambios importantes de una actualización previa.
+          Si encuentras problemas donde las gráficas muestran lecturas significativamente
+          diferentes a otros orígenes, esta es probablemente la razón. La lógica interna
+          del juego sigue funcionando y el problema de las gráficas se abordará en
+          futuras actualizaciones.
   tutorial:
     phrases:
-      noMoreMessages: No mostrar los mensajes del tutorial
-      youWillGain: Si seleccionas esta opción, obtendrás los siguientes objetos.
+      noMoreMessages: No mostrar más mensajes del tutorial
+      youWillGain: Obtendrás el(los) siguiente(s) objeto(s) si seleccionas esta opción.
   social:
     phrases:
-      manageFriends: Gestión social
+      manageFriends: Administrar social
       pendingInvites: Invitaciones pendientes
       friends: Amigos
   bank:
@@ -593,26 +733,26 @@ singulars:
   popupBubbles:
     phrases:
       overEncumbered: Tu inventario está lleno y estás sobrecargado.
-      arrivedToLocation: Llegado a <object id={location} />
+      arrivedToLocation: Llegaste a <object id={location} />
   shop:
     phrases:
       sold: Vendido
       bought: Comprado
-      resetTrade: Reiniciar trueque
+      resetTrade: Reiniciar operación
       buying: Comprando
       selling: Vendiendo
       buyBack: Comprar de vuelta
   gearSets:
     phrases:
-      gearSets: Sets de equipo
+      gearSets: Kits de equipo
       copyCurrentlyEquippedGear: Copiar equipo actual
       forActivities: 'Para actividades: '
       noActivitiesSelected: Ninguna actividad seleccionada
       unequipGear: Quitar equipo
       unequipTools: Quitar herramientas
       noItemSelected: Ningún objeto seleccionado
-      newSetDefaultName: Mi nuevo set de equipo
-      importedGearSetDefaultName: Set de equipo importado
+      newSetDefaultName: Mi Nuevo Kit de Equipo
+      importedGearSetDefaultName: Kit de Equipo Importado
       tools: Herramientas
       optionsAndFilters: Opciones y filtros
       sortBy: 'Ordenar por: '
@@ -623,19 +763,19 @@ singulars:
       gear: Equipo
       name: Nombre
     errors:
-      keywordError: 'Set de equipo ya tiene: <object id="{keyword}" />'
-      duplicateItem: Objeto ya existe en el set de equipo
+      keywordError: 'El kit de equipo ya tiene: <object id="{keyword}" />'
+      duplicateItem: El objeto ya existe en el kit de equipo
     info:
-      gearSetsDescription: Los sets de equipo te permiten cambiar de equipo rápidamente.
-      gearSetManageDesc: Elige un set de equipo que quieras ponerte de la lista de
-        abajo. Para crear, importar o editar tus sets de equipo, pulsa <c i=0>Administrar</c>.
-      noGearSetsManage: No has creado ningún set de equipo todavía. Crea el primero
-        pulsando el botón <c i=0>Crear nuevo</c>.
-      gearSetsListDesc: Puedes administrar tus sets de equipo desde aquí. Si quieres
+      gearSetsDescription: Los kits de equipo te ayudan a cambiar de equipo rápidamente.
+      gearSetManageDesc: Elige un kit de equipo que quieras ponerte de la lista de
+        abajo. Para crear, importar o editar tus kits de equipo, puedes pulsa <c i=0>Administrar</c>.
+      noGearSetsManage: No has creado ningún kit de equipo todavía. Crea el primero
+        pulsando el botón <c i=0>Crear nuevo</c> de abajo.
+      gearSetsListDesc: Puedes administrar tus kits de equipo desde aquí. Si quieres
         <c i=0>crear uno nuevo</c>, pulsa el botón de abajo. También puedes <c i=1>copiar
-        tu equipo actual</c> al crear un nuevo set de equipo.
-      noGearSetsList: No tienes ningún set de equipo todavía. Elige <c i=0>Administrar</c>
-        para crear o importar sets de equipo nuevos.
+        tu equipo actual</c> al crear un nuevo kit de equipo.
+      noGearSetsList: No tienes ningún kit de equipo todavía. Elige <c i=0>Administrar</c>
+        para crear o importar kits de equipo nuevos.
       youDontHaveAnyItems: Sin objetos. Puede que no conozcas o no tengas ningún objeto
         de este tipo, o puede que tus filtros de búsqueda no hayan encontrado nada
         que coincida.
@@ -649,3 +789,7 @@ singulars:
         se va a referir hacia tu persona.
       youCanChangeAnyTime: Puedes cambiar el idioma desde<c>Ajustes del Juego</c>
         en cualquier momento.
+      helpToTranslate: WalkScape está <c>traducido por la comunidad</c>. Ayúdanos
+        a traducir el juego a más idioma y expandiendo las traducciones actuales visitando
+        <a href="https://wiki.walkscape.app/wiki/Localization">Guia de Traducción</a>.
+        !Agradecemos tu ayuda! ❤️

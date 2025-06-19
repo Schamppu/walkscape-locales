@@ -18,89 +18,408 @@ singulars:
     fishing:
       name: Рыбная ловля
       requirement: Необходима <object id="activity_fishing" />.
+      requirementLevel: Требуется активность по ловле рыбы, которая имеет хотя бы
+        <keywordRequirements /> в своих требованиях.
     miningOres:
       name: Добыча руды
+      requirement: Требует активность типа <object id="activity_mining" />.
+      requirementLevel: Требует активность по добыче руды, которая имеет хотя бы <keywordRequirements
+        /> в своих требованиях.
     foragingPlants:
       name: Сбор растений
+      requirement: Требует активность типа <object id="activity_foraging" />.
+      requirementLevel: Требует активность по сбору растений, которая имеет хотя бы
+        <keywordRequirements /> в своих требованиях.
   tools:
     skillBook:
-      requirement: Необходимо экипировать <object id="skillBook" />.
+      requirement: Требуется <object id="skillBook" />.
+      name: Книга навыков
+      requirementlevel: Требуется книга навыков с характеристиками <keywordRequirements
+        />.
     sickle:
       name: Серп
-      requirement: Необходимо взять <object id="sickle" />.
+      requirement: Требуется <object id="sickle" />.
+      requirementLevel: Требуется серп с характеристиками <keywordRequirements />.
     cookingPan:
       name: Сковорода
+      requirement: Требуется <object id="cookingPan" />.
+      requirementLevel: Требуется сковорода с характеристиками <keywordRequirements
+        />.
     fishingRod:
       name: Удочка
+      requirement: Требуется <object id="fishingRod" />.
+      requirementLevel: Требуется удочка с характеристиками <keywordRequirements />.
     fishingNet:
       name: Рыболовная сеть
+      requirement: Требуется <object id="fishingNet" />.
+      requirementLevel: Требуется рыболовная сеть с характеристиками <keywordRequirements
+        />.
     pickaxe:
       name: Кирка
+      requirement: Требуется <object id="pickaxe" />.
+      requirementLevel: Требуется кирка с характеристиками <keywordRequirements />.
     chisel:
       name: Стамеска
+      requirement: Требуется <object id="chisel" />.
+      requirementLevel: Требуется стамеска с характеристиками <keywordRequirements
+        />.
     screwdriver:
-      name: Отвертка
+      name: Отвёртка
+      requirement: Требуется <object id="screwdriver" />.
+      requirementLevel: Требуется отвёртка с характеристиками <keywordRequirements
+        />.
     smithingHammer:
       name: Кузнечный молот
+      requirement: Требуется <object id="smithingHammer" />.
+      requirementLevel: Требуется кузнечный молот с характеристиками <keywordRequirements
+        />.
     knife:
       name: Нож
+      requirement: Требуется <object id="knife" />.
+      requirementLevel: Требуется нож с характеристиками <keywordRequirements />.
     ruler:
       name: Линейка
+      requirement: Требуется <object id="ruler" />.
+      requirementLevel: Требуется линейка с характеристиками <keywordRequirements
+        />.
     sander:
       name: Наждачка
+      requirement: Требуется <object id="sander" />.
+      requirementLevel: Требуется наждачка с характеристиками <keywordRequirements
+        />.
     woodcuttingHatchet:
       name: Топор
+      requirement: Требуется <object id="woodcuttingHatchet" />.
+      requirementLevel: Требуется топор с характеристиками <keywordRequirements />.
+    goldPan:
+      requirement: Требуется <object id="goldPan" />.
+      name: Старательский лоток
+      requirementLevel: Требуется старательский лоток с характеристиками <keywordRequirements
+        />.
+    magnetic:
+      name: Магнитный
+      requirement: Требуется <object id="magnetic" /> предмет.
+      requirementLevel: Требуется магнит с характеристиками <keywordRequirements />.
+    fishingCage:
+      requirement: Требуется <object id="fishingCage" />.
+      name: Рыболовная ловушка
+      requirementLevel: Требуется рыболовная ловушка с характеристиками <keywordRequirements
+        />.
+    craftingTool:
+      requirement: Требуется <object id="craftingTool" />.
+      name: Инструмент для изготовления
+      requirementLevel: Требуется инструмент для изготовления с характеристиками <keywordRequirements
+        />.
+    fishingSpear:
+      requirement: Требуется <object id="fishingSpear" />.
+      name: Рыболовное копьё
+      requirementLevel: Требуется рыболовное копьё с характеристиками <keywordRequirements
+        />.
+    tool:
+      requirement: Требуется <object id="tool" />.
+      name: Инструмент
+      requirementLevel: Требуется инструмент с характеристиками <keywordRequirements
+        />.
+    cookingTool:
+      requirement: Требуется <object id="cookingTool" />.
+      name: Кухонный инструмент
+      requirementLevel: Требуется кухонный инструмент с характеристиками <keywordRequirements
+        />.
+    carpentryTool:
+      requirement: Требуется <object id="carpentryTool" />.
+      name: Плотницкий инструмент
+      requirementLevel: Требуется плотницкий инструмент с характеристиками <keywordRequirements
+        />.
+    fishingTool:
+      requirement: Требуется <object id="fishingTool" />.
+      name: Рыболовный инструмент
+      requirementLevel: Требуется рыболовный инструмент с характеристиками <keywordRequirements
+        />.
+    fishingLure:
+      requirement: Требуется <object id="fishingLure" />.
+      name: Рыболовная приманка
+      requirementLevel: Требуется рыболовная приманка с характеристиками <keywordRequirements
+        />.
+    cookingKnife:
+      name: Кухонный нож
+      requirement: Требуется <object id="cookingKnife" />.
+      requirementLevel: Требуется кухонный нож с характеристиками <keywordRequirements
+        />.
+    cuttingBoard:
+      name: Разделочная доска
+      requirement: Требуется <object id="cuttingBoard" />.
+      requirementLevel: Требуется разделочная доска с характеристиками <keywordRequirements
+        />.
+    cookingSpices:
+      name: Специи
+      requirement: Требуется <object id="cookingSpices" />.
+      requirementLevel: Требуются специи с характеристиками <keywordRequirements />.
+    saw:
+      name: Пила
+      requirement: Требуется <object id="saw" />.
+      requirementLevel: Требуется пила с характеристиками <keywordRequirements />.
+    foragingTool:
+      name: Инструмент для сбора
+      requirement: Требуется <object id="foragingTool" />.
+      requirementLevel: Требуется инструмент для сбора с характеристиками <keywordRequirements
+        />.
+    agilityTool:
+      name: Инструмент для ловкости
+      requirement: Требуется <object id="agilityTool" />.
+      requirementLevel: Требуется инструмент для ловкости с характеристиками <keywordRequirements
+        />.
+    miningTool:
+      name: Горный инструмент
+      requirement: Требуется <object id="miningTool" />.
+      requirementLevel: Требуется горный инструмент с характеристиками <keywordRequirements
+        />.
+    smithingTool:
+      name: Кузнечный инструмент
+      requirement: Требуется <object id="smithingTool" />.
+      requirementLevel: Требуется кузнечный инструмент с характеристиками <keywordRequirements
+        />.
+    trinketryTool:
+      name: Ювелирный инструмент
+      requirement: Требуется <object id="trinketryTool" />.
+      requirementLevel: Требуется ювелирный инструмент с характеристиками <keywordRequirements
+        />.
+    woodcuttingTool:
+      name: Инструмент для рубки леса
+      requirement: Требуется <object id="woodcuttingTool" />.
+      requirementLevel: Требуется инструмент для рубки леса с характеристиками <keywordRequirements
+        />.
+    wrench:
+      name: Гаечный ключ
+      requirement: Требуется <object id="wrench" />.
+      requirementLevel: Требуется гаечный ключ с характеристиками <keywordRequirements
+        />.
+    logSplitter:
+      name: Колун
+      requirement: Требуется <object id="item_log_splitter" />.
+      requirementlevel: Требуется колун с характеристиками <keywordRequirements />.
+    huntingTrap:
+      name: Охотничья ловушка
+      requirement: Требуется <object id="huntingTrap" />.
+      requirementLevel: Требуется охотничья ловушка с характеристиками <keywordRequirements
+        />.
+    magnifyingLense:
+      name: Увеличительная линза
+      requirement: Требуется <object id="magnifyingLense" />.
+      requirementLevel: Требуется увеличительная линца с характеристиками <keywordRequirements
+        />.
+    cookingPot:
+      name: Кастрюля
+      requirement: Требуется <object id="cookingPot" />.
+      requirementLevel: Требуется кастрюля с характеристиками <keywordRequirements
+        />.
+    localMap:
+      name: Карта
+      requirement: Требуется <object id="localMap" />.
+      requirementLevel: Требуется карта с характеристиками <keywordRequirements />.
+    huntingBow:
+      name: Охотничий лук
+      requirement: Требуется <object id="huntingBow" />.
+      requirementLevel: Требуется охотничий лук с характеристиками <keywordRequirements
+        />.
   gear:
     skillingGear:
-      requirement: Необходимо экипировать <object id="skillingGear" />.
+      requirement: Требуется <object id="skillingGear" />.
+      name: Тренировочная экипировка
+      requirementLevel: Требует тренировочную экипировку, которая имеет не менее <keywordRequirements
+        /> в своих требованиях.
     skis:
-      requirement: Необходимо экипировать <object id="skis" />.
+      requirement: Требуются <object id="skis" />.
       name: Лыжи
+      requirementLevel: Требует лыжи, которые имеют хотя бы <keywordRequirements />
+        в своих требованиях.
     frisbee:
       name: Фрисби
+      requirementLevel: Требует фрисби, которое имеет хотя бы <keywordRequirements
+        /> в своих требованиях.
+      requirement: Требуется <object id="frisbee" />.
     lifeVest:
       name: Спасжилет
-      requirement: Необходимо надеть <object id="lifevest" />.
+      requirement: Требуется <object id="lifevest" />.
+      requirementLevel: Требуется спасжилет с характеристиками <keywordRequirements
+        />.
     bugCatchingNet:
       name: Сачок для бабочек
-      requirement: Необходимо взять <object id="bugCatchingNet" />.
+      requirement: Требуется <object id="bugCatchingNet" />.
+      requirementLevel: Требуется сачок для бабочек с характеристиками <keywordRequirements
+        />.
     socks:
       name: Носки
       requirement: Необходимо надеть <object id="item_socks" />.
+      requirementLevel: Требуются носки с характеристиками <keywordRequirements />.
     shield:
       name: Щит
-      requirement: Необходимо взять <object id="shield" />.
+      requirement: Требуется <object id="shield" />.
+      requirementLevel: Требуется щит с характеристиками <keywordRequirements />.
     ring:
       name: Кольцо
-      requirement: Необходимо надеть <object id="item_ring" />.
+      requirement: Требуется <object id="item_ring" />.
+      requirementLevel: Требуется кольцо с характеристиками <keywordRequirements />.
     weapon:
       name: Оружие
-      requirement: Необходимо взять в руки <object id="weapon" />.
+      requirement: Требуется <object id="weapon" />.
+      requirementLevel: Требуется оружие с характеристиками <keywordRequirements />.
+    amulet:
+      name: Амулет
+      requirement: Требуется <object id="item_amulet" />.
+      requirementLevel: Требуется амулет с характеристиками <keywordRequirements />.
+    bellows:
+      name: Мехи
+      requirement: Требуется <object id="bellows" />.
+      requirementLevel: Требуются кузнечные мехи с характеристиками <keywordRequirements
+        />.
+    basket:
+      requirement: Требуется <object id="basket" />.
+      name: Корзина
+      requirementLevel: Требуется корзина с характеристиками <keywordRequirements
+        />.
+    climbing:
+      name: Альпинистское снаряжение
+      requirement: Требуется <object id="climbingTool" />.
+      requirementLevel: Требуется альп.снаряжение с характеристиками <keywordRequirements
+        />.
+    underwater:
+      name: Подводное снаряжение
+      requirement: Требуется <object id="item_underwater" />.
+      requirementLevel: Требуется подводное снаряжение с характеристиками <keywordRequirements
+        />.
+    arrows:
+      name: Стрелы
+      requirement: Требуются <object id="arrows" />.
+      requirementLevel: Требуются стрелы с характеристиками <keywordRequirements />.
   materials:
     logs:
       name: Бревно
-      requirement: Необходимо деревянное <object id="logs" />.
+      requirement: Требуется <object id="logs" />.
+      requirementLevel: Требуется бревно с характеристиками <keywordRequirements />.
     bar:
       name: Слиток
+      requirement: Требуется <object id="bar" />.
+      requirementLevel: Требуется слиток с характеристиками <keywordRequirements />.
     roughGem:
       name: Необработанный самоцвет
+      requirement: Нужен <object id="rough_gem" />.
+      requirementLevel: Требуется необработанный самоцвет с характеристиками <keywordRequirements
+        />.
+    fish:
+      name: Рыба
+      requirement: Требуется <object id="fish" />.
+      requirementLevel: Требуется рыба, которая имеет хотя бы <keywordRequirements
+        /> в своих требованиях.
+    ore:
+      name: Руда
+      requirement: Требуется <object id="ore" />.
+      requirementLevel: Требуется руда с характеристиками <keywordRequirements />.
+    mushroom:
+      name: Гриб
+      requirement: Требуется <object id="mushroom" />.
+      requirementLevel: Требуется гриб с характеристиками <keywordRequirements />.
+    trinket:
+      name: Безделушка
+      requirement: Требуется <object id="trinket" />.
+      requirementLevel: Требуется безделушка с характеристиками <keywordRequirements
+        />.
+    cutGem:
+      name: Огранённый самоцвет
+      requirement: Нужен <object id="cut_gem" />.
+      requirementLevel: Требуется огранённый самоцвет с характеристиками <keywordRequirements
+        />.
+    plant:
+      name: Растение
+      requirement: Требуется <object id="plant" />.
+      requirementLevel: Требуется растение с характеристиками <keywordRequirements
+        />.
+    nugget:
+      name: Самородок
+      requirement: Требуется <object id="nugget" />.
+      requirementLevel: Требуется самородок с характеристиками <keywordRequirements
+        />.
+    plank:
+      name: Доска
+      requirement: Требуется <object id="plank" />.
+      requirementLevel: Требуется доска с характеристиками <keywordRequirements />.
+    gem:
+      name: Самоцвет
+      requirement: Требуется <object id="gem" />.
+      requirementLevel: Требуется самоцвет с характеристиками <keywordRequirements
+        />.
+    ingredient:
+      name: Ингредиент
+      ingredient: Требуется <object id="ingredient" />.
+      requirementLevel: Требуется ингредиент с характеристиками <keywordRequirements
+        />.
+    misc:
+      name: Разное
+      requirement: Требуется предмет категории <object id="misc" />.
+      requirementLevel: Требуется предмет типа Разное с характеристиками <keywordRequirements
+        />.
+    offcut:
+      name: Обрезки
+      requirement: Требуются <object id="offcut" />.
+      requirementLevel: Требуются обрезки с характеристиками <keywordRequirements
+        />.
+    processed:
+      name: Обработанный
+      requirement: Требуется <object id="processed" /> материал.
+      requirementLevel: Требуется обработанный материал с характеристиками <keywordRequirements
+        />.
   consumables:
     cookedFish:
       name: Готовая рыба
-      requirement: Нужна <object id="cookedFish" />.
+      requirement: Требуется <object id="cookedFish" />.
+      requirementLevel: Требуется готовая рыба с характеристиками <keywordRequirements
+        />.
     beverage:
       name: Напиток
-      requirement: Нужен <object id="beverage" />.
+      requirement: Требуется <object id="beverage" />.
+      requirementLevel: Требуется напиток с характеристиками <keywordRequirements
+        />.
     water:
       name: Вода
-      requirement: Нужна <object id="water" />.
+      requirement: Требуется <object id="water" />.
+      requirementLevel: Требуется вода с характеристиками <keywordRequirements />.
     memosphere:
       name: Мемосфера
-      requirement: Нужна <object id="memosphere" />.
+      requirement: Требуется <object id="memosphere" />.
+      requirementLevel: Требуется мемосфера с характеристиками <keywordRequirements
+        />.
+    food:
+      name: Еда
+      requirement: Требуется <object id="food" />.
+      requirementLevel: Требуется еда с характеристиками <keywordRequirements />.
+    fruit:
+      name: Фрукт
+      requirement: Требуется <object id="fruit" />.
+      requirementLevel: Требуется фрукт с характеристиками <keywordRequirements />.
+    alcohol:
+      name: Алкоголь
+      requirement: Требуется <object id="alcohol" />.
+      requirementLevel: Требуется алкоголь с характеристиками <keywordRequirements
+        />.
+    sandwich:
+      name: Сэндвич
+      requirement: Требуется <object id="sandwich" />.
+      requirementLevel: Требуется сэндвич с характеристиками <keywordRequirements
+        />.
   containers:
     chest:
       name: Сундук
-      requirement: Нужен <object id="chest" />.
+      requirement: Требуется <object id="chest" />.
+      requirementLevel: Требуется сундук с характеристиками <keywordRequirements />.
+    skillingChest:
+      name: Сундук навыков
+      requirement: Требуется <object id="skillingChest" />.
+      requirementLevel: Требуется сундук навыков с характеристиками <keywordRequirements
+        />.
+    regionalChest:
+      name: Региональный сундук
+      requirement: Требуется <object id="regionalChest" />.
+      requirementLevel: Требуется региональный сундук с характеристиками <keywordRequirements
+        />.
   search:
     skills:
       agility:
@@ -146,6 +465,7 @@ singulars:
       tailoring:
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
+        name: Портняжное дело
       trinketry:
         name: Ювелирное дело
         requirement: <PLACEHOLDER>
@@ -153,9 +473,11 @@ singulars:
       traveling:
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
+        name: Путешествия
       global:
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
+        name: На все навыки
     items:
       consumables:
         food:
@@ -178,12 +500,15 @@ singulars:
     light:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      name: Лёгкий
     ultraLight:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      name: Сверхлёгкий
     heavy:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      name: Тяжёлый
   services:
     sawmill:
       name: Лесопилка
@@ -209,3 +534,71 @@ singulars:
       name: Ткацкий станок
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+  general:
+    lightSource:
+      name: Источник света
+      requirement: Требуется <object id="lightSource" />.
+      requirementLevel: Требуется источник света с характеристиками <keywordRequirements
+        />.
+  misc:
+    trash:
+      name: Мусор
+      requirement: Требуется <object id="trash" />.
+      requirementLevel: Требуется мусор с характеристиками <keywordRequirements />.
+    currency:
+      name: Деньги
+      requirement: Требуются <object id="currency" />.
+      requirementLevel: Требуется деньги с характеристиками <keywordRequirements />.
+  itemSets:
+    treasureHunter:
+      name: Комплект искателя сокровищ
+      requirementLevel: Требуется комплект искателя сокровищ с характеристиками <keywordRequirements
+        />.
+      requirement: Требуется комплект <object id="itemset_treasure_hunter" />.
+    divingGear:
+      name: Водолазное снаряжение
+      requirement: Нужно <object id="itemset_diving_gear" />.
+      requirementLevel: Требуется водолазное снаряжение с характеристиками <keywordRequirements
+        />.
+    advancedDivingGear:
+      name: Продвинутое водолазное снаряжение
+      requirement: Нужно <object id="itemset_diving_gear_advanced" />.
+      requirementLevel: Требуется продвинутое водолазное снаряжение с характеристиками
+        <keywordRequirements />.
+    expertDivingGear:
+      name: Экспертное водолазное снаряжение
+      requirement: Нужно <object id="itemset_diving_gear_expert" />.
+      requirementLevel: Требуется экспертное водолазное снаряжение с характеристиками
+        <keywordRequirements />.
+    adventuringTools:
+      name: Комплект инструментов путешественника
+      requirementLevel: Требуется комплект инструментов путешественника с характеристиками
+        <keywordRequirements />.
+      requirement: Требуется комплект <object id="itemset_adventuring_tools" />.
+    properGear:
+      name: Качественное снаряжение
+      requirement: Требуются элементы одежды из комплекта <object id="itemset_proper_gear"
+        />.
+      requirementLevel: Требуется одежда из комплекта «качественное снаряжение» с
+        характеристиками <keywordRequirements />.
+  locations:
+    underwater:
+      name: Под водой
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+  achievements:
+    percentage:
+      requirement: нет
+      requirementLevel: нет
+      name: Процент выполненных достижений
+    reward:
+      name: Награда за достижение
+      requirement: Требуется <object id="achievement_reward" />.
+      requirementLevel: Требуется награда за достижения с характеристиками <keywordRequirements
+        />.
+  faction:
+    reward:
+      requirement: Требуется <object id="faction_reward" />.
+      name: Награда фракции
+      requirementLevel: Требуется награда фракции с характеристиками <keywordRequirements
+        />.

@@ -2,56 +2,84 @@ singulars:
   materials:
     fish:
       name: Pescado
-      requirement: Requiere un pescado.
+      requirement: Requiere un <object id="fish" />.
       requirementLevel: Requiere un pescado que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     logs:
-      name: Troncos
-      requirement: Requiere un tronco de madera.
+      name: Tronco
+      requirement: Requiere un <object id="logs" /> de madera.
       requirementLevel: Requiere un tronco de madera que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     plant:
       name: Planta
-      requirement: Requiere una planta.
+      requirement: Requiere una <object id="plant" />.
       requirementLevel: Requiere una planta que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     bar:
       requirementLevel: Requiere un lingote que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Lingote
-      requirement: Requiere un lingote.
+      requirement: Requiere un <object id="bar" />.
     gem:
       requirementLevel: Requiere una gema que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Gema
-      requirement: Requiere una gema.
+      requirement: Requiere una <object id="gem" />.
     mushroom:
-      requirementLevel: Requiere un champiñón que tenga al menos <keywordRequirements
-        /> en sus requisitos.
-      name: Champiñón
-      requirement: Requiere un champiñón.
+      requirementLevel: Requiere un hongo que tenga al menos <keywordRequirements
+        /> de requisito.
+      name: Hongo
+      requirement: Requiere un <object id="mushroom" />.
     ore:
-      name: Mena
-      requirement: Requiere una mena.
-      requirementLevel: Requiere una mena que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+      name: Mineral
+      requirement: Requiere un <object id="ore" />.
+      requirementLevel: Requiere una mineral que tenga al menos <keywordRequirements
+        /> de requisito.
     plank:
       name: Tablón
-      requirement: Requiere un tablón.
+      requirement: Requiere un <object id="plank" />.
       requirementLevel: Requiere un tablón que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     roughGem:
       name: Gema en bruto
+      requirement: Requiere una <object id="rough_gem" />.
+      requirementLevel: Requiere una gema en bruto que tenga al menos <keywordRequirements
+        /> de requisito.
     cutGem:
-      name: ✅ Gema tallada
+      name: Gema tallada
+      requirement: Requiere una <object id="cut_gem" />.
+      requirementLevel: Requiere una gema tallada que tenga al menos <keywordRequirements
+        /> de requisito.
     misc:
-      name: Otros
+      name: Misceláneo
+      requirement: Requiere un objeto <object id="misc" />.
+      requirementLevel: Requiere un objeto misceláneo que tenga al menos <keywordRequirements
+        /> de requisito.
     processed:
       name: Procesado
+      requirementLevel: Requiere un material procesado que tenga al menos <keywordRequirements
+        /> de requisito.
+      requirement: Requiere un material <object id="processed" />.
     nugget:
       name: Pepita
+      requirement: Requiere una <object id="nugget" />.
+      requirementLevel: Requiere una pepita que tenga al menos <keywordRequirements
+        /> de requisito.
     ingredient:
       name: Ingrediente
+      requirementLevel: Requiere un ingrediente que tenga al menos <keywordRequirements
+        /> de requisito.
+      ingredient: Requiere un <object id="ingredient" />.
+    trinket:
+      requirement: Requiere una <object id="trinket" />.
+      requirementLevel: Requiere una joya que tenga al menos <keywordRequirements
+        /> de requisito.
+      name: Joya
+    offcut:
+      requirement: Requiere un <object id="offcut" />.
+      requirementLevel: Requiere un trozo que tenga al menos <keywordRequirements
+        /> de requisito.
+      name: Trozo
   tools:
     fishing:
       name: Pesca
@@ -60,299 +88,368 @@ singulars:
         al menos <keywordRequirements /> en sus requisitos.
     fishingCage:
       name: Jaula de pesca
-      requirement: Requiere una jaula de pesca.
+      requirement: Requiere llevar una <object id="fishingCage" />.
       requirementLevel: Requiere una jaula de pesca que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     fishingNet:
       name: Red de pesca
-      requirement: Requiere una red de pesca.
+      requirement: Requiere llevar una <object id="fishingNet" />.
       requirementLevel: Requiere una red de pesca que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     fishingRod:
       name: Caña de pescar
-      requirement: Requiere una caña de pescar.
+      requirement: Requiere llevar una <object id="fishingRod" />.
       requirementLevel: Requiere una caña de pescar que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     fishingSpear:
       name: Arpón de pesca
-      requirement: Requiere un arpón de pesca.
+      requirement: Requiere llevar un <object id="fishingSpear" />.
       requirementLevel: Requiere un arpón de pesca que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     tool:
       name: Herramienta
-      requirement: Requiere una herramienta.
+      requirement: Requiere llevar una <object id="tool" />.
       requirementLevel: Requiere una herramienta que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     woodcuttingHatchet:
       name: Hacha
-      requirement: Requiere un hacha para cortar madera.
-      requirementLevel: Requiere un hacha para cortar madera que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+      requirement: Requiere llevar un <object id="woodcuttingHatchet" />.
+      requirementLevel: Requiere un hacha para madera que tenga al menos <keywordRequirements
+        /> de requisito.
     sickle:
       requirementLevel: Requiere una hoz que tenga al menos <keywordRequirements />
-        en sus requisitos.
+        de requisito.
       name: Hoz
-      requirement: Requiere una hoz.
+      requirement: Requiere llevar una <object id="sickle" />.
     goldPan:
       name: Batea
-      requirement: Requiere una batea.
+      requirement: Requiere llevar una <object id="goldPan" />.
       requirementLevel: Requiere una batea que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     magnetic:
       name: Magnético
-      requirement: Requiere un objeto magnético.
+      requirement: Requiere llevar un objeto <object id="magnetic" />.
       requirementLevel: Requiere un objeto magnético que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     cookingPan:
       name: Sartén
-      requirement: Requiere una sartén.
+      requirement: Requiere llevar una <object id="cookingPan" />.
       requirementLevel: Requiere una sartén que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     craftingTool:
-      requirementLevel: Requiere una herramienta de artesanía que tenga al menos <keywordRequirements
-        /> en sus requisitos.
-      name: Herramienta de artesanía
-      requirement: Requiere una herramienta de artesanía.
+      requirementLevel: Requiere una herramienta de fabricación que tenga al menos
+        <keywordRequirements /> de requisito.
+      name: Herramienta de fabricación
+      requirement: Requiere llevar una <object id="craftingTool" />.
     saw:
-      requirement: Requiere una sierra.
+      requirement: Requiere llevar una <object id="saw" />.
       name: Sierra
       requirementLevel: Requiere una sierra que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     screwdriver:
       requirementLevel: Requiere un destornillador que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Destornillador
-      requirement: Requiere un destornillador.
+      requirement: Requiere llevar un <object id="screwdriver" />.
     cookingKnife:
       requirementLevel: Requiere un cuchillo de cocina que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Cuchillo de cocina
-      requirement: Requiere un cuchillo de cocina.
+      requirement: Requiere llevar un <object id="cookingKnife" />.
     foragingTool:
       requirementLevel: Requiere una herramienta de recolección que tenga al menos
-        <keywordRequirements /> en sus requisitos.
+        <keywordRequirements /> de requisito.
       name: Herramienta de recolección
-      requirement: Requiere una herramienta de recolección.
+      requirement: Requiere llevar una <object id="foragingTool" />.
     cuttingBoard:
       requirementLevel: Requiere una tabla de cortar que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Tabla de cortar
-      requirement: Requiere una tabla de cortar.
+      requirement: Requiere llevar una <object id="cuttingBoard" />.
     wrench:
       requirementLevel: Requiere una llave inglesa que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Llave inglesa
-      requirement: Requiere una llave inglesa.
+      requirement: Requiere llevar una <object id="wrench" />.
     ruler:
       requirementLevel: Requiere una regla que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Regla
-      requirement: Requiere una regla.
+      requirement: Requiere llevar una <object id="ruler" />.
     pickaxe:
       name: Pico
-      requirement: Requiere un pico.
+      requirement: Requiere llevar un <object id="pickaxe" />.
       requirementLevel: Requiere un pico que tenga al menos <keywordRequirements />
-        en sus requisitos.
+        de requisito.
     cookingTool:
       name: Utensilio de cocina
-      requirement: Requiere un utensilio de cocina.
+      requirement: Requiere llevar un <object id="cookingTool" />.
       requirementLevel: Requiere un utensilio de cocina que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     carpentryTool:
       name: Herramienta de carpintería
-      requirement: Requiere una herramienta de carpintería.
+      requirement: Requiere llevar una <object id="carpentryTool" />.
       requirementLevel: Requiere una herramienta de carpintería que tenga al menos
-        <keywordRequirements /> en sus requisitos.
+        <keywordRequirements /> de requisito.
     fishingLure:
-      name: Señuelo de pesca
-      requirement: Requiere un señuelo de pesca.
-      requirementLevel: Requiere un señuelo de pesca que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+      name: Cebo de pesca
+      requirement: Requiere llevar un <object id="fishingLure" />.
+      requirementLevel: Requiere un cebo de pesca que tenga al menos <keywordRequirements
+        /> de requisito.
     cookingPot:
-      name: Puchero
-      requirement: Requiere un puchero.
-      requirementLevel: Requiere un puchero que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+      name: Cazuela
+      requirement: Requiere llevar una <object id="cookingPot" />.
+      requirementLevel: Requiere una cazuela que tenga al menos <keywordRequirements
+        /> de requisito.
     cookingSpices:
       name: Especias
-      requirement: Requiere especias.
+      requirement: Requiere llevar <object id="cookingSpices" />.
       requirementLevel: Requiere especias que tengan al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     chisel:
       name: Cincel
       requirementLevel: Requiere un cincel que tenga al menos <keywordRequirements
-        /> en sus requisitos.
-      requirement: Requiere un cincel.
+        /> de requisito.
+      requirement: Requiere llevar un <object id="chisel" />.
     smithingHammer:
-      name: Martillo de herrería
-      requirement: Requiere un martillo de herrería.
-      requirementLevel: Requiere un martillo de herrería que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+      name: Martillo de herrero
+      requirement: Requiere llevar un <object id="smithingHammer" />.
+      requirementLevel: Requiere un martillo de herrero que tenga al menos <keywordRequirements
+        /> de requisito.
     localMap:
       name: Mapa local
-      requirement: Requiere un mapa local.
+      requirement: Requiere llevar un <object id="localMap" />.
       requirementLevel: Requiere un mapa local que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     knife:
       name: Cuchillo
-      requirement: Requiere un cuchillo.
+      requirement: Requiere llevar un <object id="knife" />.
       requirementLevel: Requiere un cuchillo que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     magnifyingLense:
       name: Lupa
-      requirement: Requiere una lupa.
+      requirement: Requiere llevar una <object id="magnifyingLense" />.
       requirementLevel: Requiere una lupa que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     fishingTool:
       name: Equipo de pesca
+      requirementLevel: Requiere una herramienta de pesca relacionada que tenga al
+        menos <keywordRequirements /> de requisito.
+      requirement: Requiere llevar un <object id="fishingTool" /> relacionado.
     huntingBow:
       name: Arco de caza
+      requirement: Requiere llevar un <object id="huntingBow" />.
+      requirementLevel: Requiere un arco de caza que tenga al menos <keywordRequirements
+        /> de requisito.
     huntingTrap:
       name: Trampa de caza
+      requirement: Requiere llevar una <object id="huntingTrap" />.
+      requirementLevel: Requiere una trampa de caza que tenga al menos <keywordRequirements
+        /> de requisito.
     skillBook:
       name: Libro de habilidades
+      requirement: Requiere llevar un <object id="skillBook" />.
+      requirementlevel: Requiere un libro de habilidades que tenga al menos <keywordRequirements
+        /> de requisito.
     sander:
       name: Lijadora
+      requirementLevel: Requiere una lijadora que tenga al menos <keywordRequirements
+        /> de requisito.
+      requirement: Requiere llevar una <object id="sander" />.
+    woodcuttingTool:
+      requirement: Requiere llevar una <object id="woodcuttingTool" />.
+      name: Herramienta de tala
+      requirementLevel: Requiere una herramienta de tala que tenga al menos <keywordRequirements
+        /> de requisito.
+    smithingTool:
+      requirementLevel: Requiere una herramienta de forja que tenga al menos <keywordRequirements
+        /> de requisito.
+      requirement: Requiere llevar una <object id="smithingTool" />.
+      name: Herramienta de forja
+    logSplitter:
+      requirement: Requiere llevar un <object id="item_log_splitter" />.
+      name: Cortador de troncos
+      requirementlevel: Requiere un cortador de troncos que tenga al menos <keywordRequirements
+        /> de requisito.
+    agilityTool:
+      requirement: Requiere llevar una <object id="agilityTool" />.
+      name: Herramienta de agilidad
+      requirementLevel: Requiere una herramienta de agilidad que tenga al menos <keywordRequirements
+        /> de requisito.
+    miningTool:
+      requirement: Requiere llevar una <object id="miningTool" />.
+      name: Herramienta de minería
+      requirementLevel: Requiere una herramienta de minería que tenga al menos <keywordRequirements
+        /> de requisito.
+    trinketryTool:
+      requirement: Requiere llevar una <object id="trinketryTool" />.
+      name: Herramienta de joyería
+      requirementLevel: Requiere una herramienta de joyería que tenga al menos <keywordRequirements
+        /> de requisito.
   recipes:
     products:
       sandwich:
-        name: Sándwich
+        name: Receta de sándwich
+        requirements: Requiere un <object id="sandwich" /> hecho con una <object id="recipe_cooking"
+          />.
     skills:
       cooking:
-        name: Cocina
+        name: Receta de cocina
+        requirement: Requiere una <object id="recipe_cooking" />.
   activities:
     woodcuttingTrees:
-      name: Tala de árboles
-      requirement: Requiere actividad de tala de árboles.
-      requirementLevel: Requiere actividad de tala de árboles con al menos <keywordRequirements
-        /> en sus requerimientos.
+      name: Talar árboles
+      requirement: Requiere una actividad de <object id="woodcuttingTrees" />.
+      requirementLevel: Requiere una actividad de talar árboles que tenga al menos
+        <keywordRequirements /> de requisito.
     fishing:
       name: Pesca
-      requirement: Requiere actividad de pesca.
-      requirementLevel: Requiere actividad de pesca que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+      requirement: Requiere una actividad de <object id="activity_fishing" />.
+      requirementLevel: Requiere una actividad de pesca que tenga al menos <keywordRequirements
+        /> de requisito.
     miningOres:
-      name: Extracción de menas
-      requirement: Requiere actividad de extracción de menas.
-      requirementLevel: Requiere actividad de extracción de menas con al menos <keywordRequirements
-        /> en sus requisitos.
+      name: Extracción de minerales
+      requirement: Requiere una actividad de <object id="activity_mining" />.
+      requirementLevel: Requiere una actividad de extracción de minerales que tenga
+        al menos <keywordRequirements /> de requisito.
     foragingPlants:
       name: Recolección de plantas
-      requirement: Requiere actividad de recolección de plantas.
-      requirementLevel: Requiere actividad recolección de plantas con al menos <keywordRequirements
-        /> en sus requisitos.
+      requirement: Requiere una actividad de <object id="activity_foraging" />.
+      requirementLevel: Requiere una actividad de recolección de plantas que tenga
+        al menos <keywordRequirements /> de requisito.
   gear:
     skillingGear:
-      requirement: Requiere equipo de habilidades.
-      requirementLevel: Requiere equipo de habilidades que tenga al menos <keywordRequirements
-        /> en sus requisitos.
-      name: Equipo para habilidades
+      requirement: Requiere llevar un <object id="skillingGear" />.
+      requirementLevel: Requiere equipo de entrenamiento que tenga al menos <keywordRequirements
+        /> de requisito.
+      name: Equipo de entrenamiento
     frisbee:
-      name: Frisbee
-      requirement: Requiere un frisbee.
-      requirementLevel: Requiere un frisbee que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+      name: Discogolf
+      requirement: Requiere llevar un <object id="frisbee" />.
+      requirementLevel: Requiere un disco que tenga al menos <keywordRequirements
+        /> de requisito.
     skis:
       name: Esquís
-      requirement: Requiere esquís.
-      requirementLevel: Requiere unos esquís que tengan al menos <keywordRequirements
-        /> en sus requisitos.
+      requirement: Requiere llevar unos <object id="skis" />.
+      requirementLevel: Requiere esquís que tengan al menos <keywordRequirements />
+        de requisito.
     lifeVest:
       name: Chaleco salvavidas
-      requirement: Requiere un chaleco salvavidas.
+      requirement: Requiere llevar un <object id="lifevest" />.
       requirementLevel: Requiere un chaleco salvavidas que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     climbing:
-      name: Escalada
-      requirement: Requiere equipo de escalada.
-      requirementLevel: Requiere equipo de escalada que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+      name: Equipo de escalada
+      requirement: Requiere llevar un <object id="climbingTool" />.
+      requirementLevel: Requiere un equipo de escalada que tenga al menos <keywordRequirements
+        /> de requisito.
     bugCatchingNet:
       name: Red cazabichos
-      requirement: Requiere una red cazabichos.
+      requirement: Requiere llevar una <object id="bugCatchingNet" />.
       requirementLevel: Requiere una red cazabichos que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     ring:
       name: Anillo
-      requirement: Requiere un anillo.
+      requirement: Requiere llevar un <object id="item_ring" />.
       requirementLevel: Requiere un anillo que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     socks:
       name: Calcetines
-      requirement: Requiere calcetines.
-      requirementLevel: Requiere calcetines que tengan al menos <keywordRequirements
-        /> en sus requisitos.
+      requirement: Requiere llevar unos <object id="item_socks" />.
+      requirementLevel: Requiere unos calcetines que tengan al menos <keywordRequirements
+        /> de requisito.
     bellows:
       name: Fuelle
+      requirement: Requiere llevar un <object id="bellows" />.
+      requirementLevel: Requiere un fuelle que tenga al menos <keywordRequirements
+        /> de requisito.
     basket:
       name: Cesta
+      requirement: Requiere llevar una <object id="basket" />.
+      requirementLevel: Requiere una cesta que tenga al menos <keywordRequirements
+        /> de requisito.
     weapon:
       name: Arma
+      requirement: Requiere llevar un <object id="weapon" />.
+      requirementLevel: Requiere un arma que tenga al menos <keywordRequirements />
+        de requisito.
     shield:
       name: Escudo
+      requirement: Requiere llevar un <object id="shield" />.
+      requirementLevel: Requiere un escudo que tenga al menos <keywordRequirements
+        /> de requisito.
     arrows:
       name: Flechas
+      requirement: Requiere llevar unas <object id="arrows" />.
+      requirementLevel: Requiere unas flechas que tengan al menos <keywordRequirements
+        /> de requisito.
     underwater:
-      name: Bajo el agua
+      name: Submarino
+      requirement: Requiere equipo <object id="item_underwater" />.
+      requirementLevel: Requiere equipo submarino que tenga al menos <keywordRequirements
+        /> de requisito.
     amulet:
       name: Amuleto
+      requirement: Requiere llevar un <object id="item_amulet" />.
+      requirementLevel: Requiere un amuleto que tenga al menos <keywordRequirements
+        /> de requisito.
   consumables:
     water:
-      requirementLevel: Requiere agua que tenga al menos <keywordRequirements /> en
-        sus requisitos.
+      requirementLevel: Requiere agua que tenga al menos <keywordRequirements /> de
+        requisito.
       name: Agua
-      requirement: Requiere agua.
+      requirement: Requiere <object id="water" />.
     fruit:
       requirementLevel: Requiere una fruta que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Fruta
-      requirement: Requiere una fruta.
+      requirement: Requiere una <object id="fruit" />.
     cookedFish:
       name: Pescado cocinado
-      requirement: Requiere un pescado cocinado.
+      requirement: Requiere un <object id="cookedFish" />.
       requirementLevel: Requiere un pescado cocinado que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     food:
       name: Comida
-      requirement: Requiere comida.
-      requirementLevel: Requiere comida que tenga al menos <keywordRequirements />
-        en sus requisitos.
+      requirement: Requiere una <object id="food" />.
+      requirementLevel: Requiere una comida que tenga al menos <keywordRequirements
+        /> de requisito.
     beverage:
       name: Bebida
       requirementLevel: Requiere una bebida que tenga al menos <keywordRequirements
-        /> en sus requisitos.
-      requirement: Requiere una bebida.
+        /> de requisito.
+      requirement: Requiere una <object id="beverage" />.
     alcohol:
       name: Alcohol
-      requirement: Requiere alcohol.
+      requirement: Requiere <object id="alcohol" />.
       requirementLevel: Requiere alcohol que tenga al menos <keywordRequirements />
-        en sus requisitos.
+        de requisito.
     memosphere:
       name: Memosfera
-      requirement: Requiere memosfera.
-      requirementLevel: Requiere memosfera que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+      requirement: Requiere una <object id="memosphere" />.
+      requirementLevel: Requiere una memosfera que tenga al menos <keywordRequirements
+        /> de requisito.
     sandwich:
       name: Sándwich
-      requirement: Es un sándwich, lo juro
-      requirementLevel: Requiere comida que tenga al menos <keywordRequirements />
-        en sus requisitos.
+      requirement: Requiere un <object id="sandwich" />.
+      requirementLevel: Requiere un sándwich que tenga al menos <keywordRequirements
+        /> de requisito.
   containers:
     skillingChest:
-      requirementLevel: Requiere un cofre de habilidad que tenga al menos <keywordRequirements
-        /> en sus requisitos.
-      name: Cofre de habilidad
-      requirement: Requiere un cofre de habilidad.
+      requirementLevel: Requiere un cofre de entrenamiento que tenga al menos <keywordRequirements
+        /> de requisito.
+      name: Cofre de entrenamiento
+      requirement: Requiere un <object id="skillingChest" />.
     chest:
       requirementLevel: Requiere un cofre que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Cofre
-      requirement: Requiere un cofre.
+      requirement: Requiere un <object id="chest" />.
     regionalChest:
       name: Cofre regional
-      requirement: Requiere un cofre regional.
+      requirement: Requiere un <object id="regionalChest" />.
       requirementLevel: Requiere un cofre regional que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
   general:
     fuel:
       requirementLevel: Requiere combustible que tenga al menos <keywordRequirements
@@ -360,15 +457,14 @@ singulars:
       name: Combustible
       requirement: Requiere combustible.
     lightSource:
-      requirementLevel: Requiere que el usuario tenga una <keywordRequirements />
-        equipada.
+      requirementLevel: Requiere que el usuario tenga <keywordRequirements /> equipado.
       name: Fuente de luz
-      requirement: Requiere una fuente de luz.
+      requirement: Requiere llevar una <object id="lightSource" />.
   search:
     skills:
       crafting:
         requirement: <PLACEHOLDER>
-        name: Artesanía
+        name: Fabricación
         requirementLevel: <PLACEHOLDER>
       smithing:
         requirement: <PLACEHOLDER>
@@ -412,6 +508,16 @@ singulars:
         requirementLevel: <PLACEHOLDER>
       hunting:
         name: Caza
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      tailoring:
+        name: Sastrería
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      trinketry:
+        name: Joyería
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
     items:
       consumables:
         food:
@@ -449,40 +555,57 @@ singulars:
       requirementLevel: <PLACEHOLDER>
     loom:
       name: Telar
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+    bench:
+      name: Banco de joyería
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
   itemSets:
     treasureHunter:
-      requirementLevel: <PLACEHOLDER>
+      requirementLevel: Requiere equipo de cazador de tesoros que tenga al menos <keywordRequirements
+        /> de requisito.
       name: Conjunto de buscador de tesoros
-      requirement: <PLACEHOLDER>
+      requirement: Requiere llevar partes del conjunto de <object id="itemset_treasure_hunter"
+        />.
     advancedDivingGear:
       requirementLevel: Requiere un equipo de buceo avanzado que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
       name: Equipo de buceo avanzado
-      requirement: Requiere un equipo de buceo avanzado.
+      requirement: Requiere <object id="itemset_diving_gear_advanced" />.
     adventuringTools:
       name: Conjunto de herramientas de aventura
-      requirement: <PLACEHOLDER>
-      requirementLevel: <PLACEHOLDER>
+      requirement: Requiere llevar partes del conjunto de <object id="itemset_adventuring_tools"
+        />.
+      requirementLevel: Requiere una herramienta de aventura que tenga al menos <keywordRequirements
+        /> de requisito.
     divingGear:
       name: Equipo de buceo
-      requirement: Requiere un equipo de buceo.
+      requirement: Requiere <object id="itemset_diving_gear" />.
       requirementLevel: Requiere un equipo de buceo que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     expertDivingGear:
       name: Equipo de buceo experto
-      requirement: Requiere un equipo de buceo experto.
+      requirement: Requiere <object id="itemset_diving_gear_expert" />.
       requirementLevel: Requiere un equipo de buceo experto que tenga al menos <keywordRequirements
-        /> en sus requisitos.
+        /> de requisito.
     properGear:
       name: Equipo adecuado
+      requirementLevel: Requiere llevar un equipo adecuado que tenga al menos <keywordRequirements
+        /> de requisito.
+      requirement: Requiere llevar piezas del conjunto de <object id="itemset_proper_gear"
+        />.
   misc:
     trash:
       name: Basura
-      requirement: Requiere basura.
+      requirement: Requiere <object id="trash" />.
       requirementLevel: Requiere basura que tenga al menos <keywordRequirements />
-        en sus requisitos.
+        de requisito.
     currency:
       name: Moneda
+      requirement: Requiere <object id="currency" />.
+      requirementLevel: Requiere moneda que tenga al menos <keywordRequirements />
+        de requisito.
   achievements:
     percentage:
       name: Porcentaje de logro
@@ -490,6 +613,9 @@ singulars:
       requirementLevel: ninguno
     reward:
       name: Recompensa de logro
+      requirementLevel: Requiere una recompensa de logro que tenga al menos <keywordRequirements
+        /> de requisito.
+      requirement: Requiere una <object id="achievement_reward" />.
   weight:
     light:
       requirement: <PLACEHOLDER>
@@ -511,3 +637,6 @@ singulars:
   faction:
     reward:
       name: Recompensa de facción
+      requirement: Requiere una <object id="faction_reward" />.
+      requirementLevel: Requiere una recompensa de facción que tenga al menos <keywordRequirements
+        /> de requisito.

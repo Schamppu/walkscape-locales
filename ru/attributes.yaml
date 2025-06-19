@@ -204,9 +204,11 @@ singulars:
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: На все навыки <stat s="doubleAction"/> в <supp k="realm"/>
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> для навыка <supp k="skill"/> в <supp k="realm"/>.
     stepsRequired:
       whenKeywordSetBonus:
         text: Глобально <stat s="stepsRequired"/> если надето хотя бы <supp k="quantity"/>
@@ -245,6 +247,7 @@ singulars:
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: На все навыки <stat s="stepsRequired"/> находясь в <supp k="realm"/>
     doubleRewards:
       whenAchievementPoints:
         text: Глобальные <stat s="doubleRewards"/> если есть <supp k="achievementPoints"/>
@@ -283,6 +286,7 @@ singulars:
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: На все навыки <stat s="doubleRewards"/> в <supp k="realm"/>
       whileMainSkillAndRealm:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
@@ -329,6 +333,7 @@ singulars:
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: На все навыки <stat s="bonusExperience"/> находясь в <supp k="realm"/>
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -413,6 +418,7 @@ singulars:
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: На все навыки <stat s="findCollectibles"> шанс найти коллекционный предмет</stat>
       whileMainSkillAndLocationKeyword:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
@@ -425,9 +431,13 @@ singulars:
       whenAchievementPoints:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: На все навыки <stat s="findCollectibles"> шанс найти коллекционный предмет</stat>
+          когда <supp k="achievementPoints"/>
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: На все навыки <stat s="findCollectibles"> шанс найти коллекционный предмет</stat>,
+          если надеты <supp k="keyword"/> <supp k="quantity"/>.
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -435,9 +445,11 @@ singulars:
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: На все навыки <stat s="findCollectibles"/> в локации <supp k="keyword"/>.
       whileSkillGroup:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> для любого навыка из группы <supp k="skillGroup"/>.
   custom:
     findFishingBait:
       desc: <PLACEHOLDER>
@@ -446,15 +458,20 @@ singulars:
     trashTable:
       name: <PLACEHOLDER>
       desc: <PLACEHOLDER>
+      text: Шанс найти <hl>1</hl> случайный мусор
     gainAdventurersGuildToken:
       name: <PLACEHOLDER>
       desc: <PLACEHOLDER>
+      text: Найти <hl>1</hl> жетон Гильдии авантюристов
     gainOneMoney:
       name: <PLACEHOLDER>
       desc: <PLACEHOLDER>
+      text: Найти <hl>1</hl> золотую монету
     gainZeroToTenMoney:
       name: <PLACEHOLDER>
       desc: <PLACEHOLDER>
+      text: Найти от <hl>1</hl> до <hl>10</hl> золотых монет
     rollGemPouchTable:
       name: <PLACEHOLDER>
       desc: <PLACEHOLDER>
+      text: Получить <hl>1</hl> самоцвет из мешочка

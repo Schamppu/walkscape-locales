@@ -50,7 +50,7 @@ singulars:
   commonWords:
     filters: Filtros
     level: Nivel
-    lvl: Niv.
+    lvl: Nvl.
     sorting: Ordenar
     unexplored: Inexplorado
     unkown: Desconocido
@@ -65,8 +65,8 @@ singulars:
     activity: Actividad
     character: Personaje
     collectibleItems: Objetos coleccionables
-    crafting: Fabricando
-    devTools: Herr. de desarrollo
+    crafting: Fabricación
+    devTools: Herr. de Desarrollador
     feed: Difusión
     gear: Equipo
     information: Información
@@ -78,20 +78,20 @@ singulars:
     market: Mercado
     options: Opciones
     profile: Perfil
-    settings: Ajustes
+    settings: Configuración
     specialItems: Objetos especiales
     tools: Herramientas
-    abilities: Habilidades
+    abilities: Talentos
     walkpedia: Walkpedia
     consumables: Consumibles
     social: Social
     friends: Amigos
     find: Encontrar
-    devLogger: Dev Logger
+    devLogger: Registro de Desarrollador
     party: Grupo
-    findParty: Encontrar grupo
+    findParty: Encontrar Grupo
     createParty: Crear grupo
-    currentSprint: Sprint
+    currentSprint: Esprintar
     selected: Seleccionado
     confirm: Confirmar
   responses:
@@ -116,12 +116,29 @@ singulars:
       "on": "On"
   phrases:
     requirementsNotMet: Requisitos no cumplidos
-    maxLevel: Máximo nivel
-    xpToLevelUp: XP para subir de nivel
-    xpRemaining: XP restante
+    maxLevel: Nivel máximo
+    xpToLevelUp: EXP para subir de nivel
+    xpRemaining: EXP restante
     progress: Progreso
+    designedByCultLeader: Diseñado por <c>Cult Leader</c>
+    designedByCultFollower: Diseñado por <c>Cult Follower</c>
   prompts:
     doNotShowAgain: No volver a mostrar
     areYouSure: ¿Estás completamente seguro?
   timeAbbr:
-    years: s
+    years: a
+    months: M
+    weeks: s
+    days: d
+    milliseconds: ms
+    microseconds: μs
+    hours: h
+    minutes: m
+    seconds: s
+maps:
+  gender:
+    suffixes:
+      '@@':
+        'feminine': ' '
+        'neutral': ' '
+        'masculine': ' '
