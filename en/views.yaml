@@ -17,6 +17,45 @@ singulars:
       inventoryIsOverLimit: Inventory is over limit!
       workEfficiencyPenalty: '<icon i="Work efficiency"/> Global work efficiency <c>-{penalty}%</c>'
       notAffectingTraveling: '(not affecting traveling efficiency)'
+  queue:
+    types:
+      traveling: Traveling
+      activity: Activity
+      crafting: Crafting
+    phrases:
+      queue: Queue
+      queuedActions: Queued actions
+      travelingTo: Traveling from <object id="{from}"/> to <object id="{to}"/>
+      untilInventoryFull: Doing until inventory is full
+      switchingToGearSet: Switching to gear set <c>{name}</c>
+      noGearSetFound: Chosen gear set not found, have you deleted it?
+      activityInLocation: <object id="{activity}"/> in <object id="{location}"/>
+    options:
+      switchGearSet:
+        text: Switch to gear set
+        desc: Switch to a selected gear set before starting this action.
+      depositUnlockedItems:
+        text: Deposit unlocked items
+        desc: Deposits all unlocked items from your inventory to the bank if one is available in any of the locations you go through.
+      withdrawGearSet:
+        text: Withdraw gear set
+        desc: Withdraws a gear set from the bank if one is available in any of the locations you go through.
+      removeFromQueue:
+        text: Remove from queue
+        desc: Removes this action and all following actions from queue.
+    suggestedOptions:
+      startActivity: Activity
+      startCrafting: Crafting
+      startTraveling: Travel
+    suggestions:
+      traveling:
+        onceYouArriveTo: Add action to queue in <object id="{location}"/>?
+      activity:
+        onceInventoryIsFull: Once your inventory is full, would you like to do something?
+        onceAllActionsAreCompleted: Once all actions are completed, would you like to do something?
+      crafting:
+        onceAllItemsAreCrafted: Once all items are crafted, would you like to do something?
+        onceCertainRarityIsCrafted: Once you've crafted a certain rarity or used all materials, would you like to do something?
   character:
     info:
       skillBreakdown: Here is the total breakdown of all of the skills your character has leveled up throughout your journey. Tap on any of the skills to see more detailed information about them and what they unlock.
@@ -481,6 +520,10 @@ singulars:
       manageFriends: Manage social
       pendingInvites: Pending invites
       friends: Friends
+  rumors:
+    phrases:
+      unlockedWalkpediaEntries: Unlocked Walkpedia entries
+      rumorsFromCharacter: Rumors from <c>{characterName}</c>
 plurals:
   inventory:
     info:
