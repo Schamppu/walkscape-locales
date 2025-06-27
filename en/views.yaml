@@ -17,15 +17,59 @@ singulars:
       inventoryIsOverLimit: Inventory is over limit!
       workEfficiencyPenalty: '<icon i="Work efficiency"/> Global work efficiency <c>-{penalty}%</c>'
       notAffectingTraveling: '(not affecting traveling efficiency)'
+  queue:
+    types:
+      traveling: Traveling
+      activity: Activity
+      crafting: Crafting
+    phrases:
+      queue: Queue
+      queuedActions: Queued actions
+      travelingTo: Traveling from <object id="{from}"/> to <object id="{to}"/>
+      untilInventoryFull: Doing until inventory is full
+      switchingToGearSet: Switching to gear set <c>{name}</c>
+      noGearSetFound: Chosen gear set not found, have you deleted it?
+      activityInLocation: <object id="{activity}"/> in <object id="{location}"/>
+    options:
+      switchGearSet:
+        text: Switch to gear set
+        desc: Switch to a selected gear set before starting this action.
+      depositUnlockedItems:
+        text: Deposit unlocked items
+        desc: Deposits all unlocked items from your inventory to the bank if one is available in any of the locations you go through.
+      withdrawGearSet:
+        text: Withdraw gear set
+        desc: Withdraws a gear set from the bank if one is available in any of the locations you go through.
+      removeFromQueue:
+        text: Remove from queue
+        desc: Removes this action and all following actions from queue.
+    suggestedOptions:
+      startActivity: Activity
+      startCrafting: Crafting
+      startTraveling: Travel
+    suggestions:
+      traveling:
+        onceYouArriveTo: Add action to queue in <object id="{location}"/>?
+      activity:
+        onceInventoryIsFull: Once your inventory is full, would you like to do something?
+        onceAllActionsAreCompleted: Once all actions are completed, would you like to do something?
+      crafting:
+        onceAllItemsAreCrafted: Once all items are crafted, would you like to do something?
+        onceCertainRarityIsCrafted: Once you've crafted a certain rarity or used all materials, would you like to do something?
   character:
     info:
       skillBreakdown: Here is the total breakdown of all of the skills your character has leveled up throughout your journey. Tap on any of the skills to see more detailed information about them and what they unlock.
+      eachLevelIncreasesStepBank: 'Each character level after level <c>{level}</c> increases the maximum amount of saved steps by <c>{amount}</c>.'
     phrases:
       skills: Skills
       stepsOfLastWeek: Steps of last 7 days
       checkOut: Here's my WalkScape character {name}. Check it out!\nhttps://walkscape.app
       checkOutSubject: Check out my progress in WalkScape!
       totalLevel: Total level
+      savePicture: Save picture
+      level: 'Character level: <c>{level}</c>'
+      stepsToNextLevel: 'Steps to next level <c>{steps}</c>'
+
   locales:
     phrases:
       language: Language
@@ -249,6 +293,8 @@ singulars:
       noSkillModifiers: No skill modifiers from equipped items.
       permanentModifiers: Permanent modifiers
       noPermanentModifiers: No permanent modifiers.
+      noItemEquipped: No item equipped
+      noItemSelected: No item selected
   tools:
     phrases:
       emptyToolSlot: Empty tool slot
@@ -318,6 +364,7 @@ singulars:
       stepSourceInfo: Step source information
       connectionInfoIos: If your wearables are not showing up in the list above, make sure you have granted WalkScape permission to use step data from Apple Health in <c>Settings ➤ Privacy & Security ➤ Health ➤ (under Apps) WalkScape</c> and that Apple Health has registered steps on those devices in the past 7 days.
       connectionInfoAndroid: Smart watch support for Android is coming soon. Currently, only the phone is supported as a step counting source.
+      gameVersion: Game version {version}
   gearSets:
     phrases:
       gearSets: Gear sets
@@ -359,6 +406,7 @@ singulars:
       tapToShowRoutes: Tap to show routes
       jobBoard: Job board
       jobs: Jobs
+      owner: Owner
   pfpCreation:
     buttons:
       randomize: Randomize
@@ -383,6 +431,7 @@ singulars:
       homeRegion: Home region
       race: Race
       selectedVariant: Variant {index} selected
+      variant: Variant {number}
   worldMap:
     phrases:
       activities: Activities
@@ -481,6 +530,13 @@ singulars:
       manageFriends: Manage social
       pendingInvites: Pending invites
       friends: Friends
+  rumors:
+    phrases:
+      unlockedWalkpediaEntries: Unlocked Walkpedia entries
+      rumorsFromCharacter: Rumors from <c>{characterName}</c>
+  whileAway:
+    phrases:
+      whileYouWereAway: While you were away...
 plurals:
   inventory:
     info:
@@ -500,6 +556,22 @@ plurals:
         few: '-'
         many: '-'
         other: '{} achievement points'
+  location:
+    phrases:
+      playersHere:
+        zero: '-'
+        one: '<c>{}</c> player here'
+        two: '<c>{}</c> players here'
+        few: '-'
+        many: '-'
+        other: '<c>{}</c> players here'
+      playersDoingActivity:
+        zero: '-'
+        one: '<c>{}</c> player doing activity'
+        two: '<c>{}</c> players doing activity'
+        few: '-'
+        many: '-'
+        other: '<c>{}</c> players doing activity'
   activity:
     phrases:
       stepsRequired:
@@ -551,6 +623,20 @@ plurals:
         few: '-'
         many: '-'
         other: Steps until arrival
+      steps:
+        zero: '-'
+        one: '{} step'
+        two: '{} steps'
+        few: '-'
+        many: '-'
+        other: '{} steps'
+      actions:
+        zero: '-'
+        one: '{} action'
+        two: '{} actions'
+        few: '-'
+        many: '-'
+        other: '{} actions'
 maps:
   shop:
     phrases:
@@ -670,6 +756,12 @@ maps:
         'smirk': Smirk
         'surprise': Surprise
         'veryAngry': Very angry
+  cooldown:
+    time:
+      'days': '{days}<d>'
+      'hours': '{hours}<h>'
+      'minutes': '{minutes}<m>'
+      'seconds': '{seconds}<s>'
   locales:
     grammaticalGender:
       'masculine': Masculine
