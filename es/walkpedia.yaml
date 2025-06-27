@@ -3,39 +3,40 @@ singulars:
     home:
       info:
         title: WalkPedia
-        description: WalkPedia es el diario de tu personaje, donde puedes ver el progreso
-          del conocimiento y las estadísticas, así como navegar por el juego con facilidad.
+        description: WalkPedia es el diario personal de tu personaje. Aquí puedes
+          ver el progreso de lo que aprende tu personaje, sus estadísticas y navegar
+          el juego con facilidad.
         tabText: Inicio
     itemList:
       info:
         title: Objetos
-        description: Los objetos pueden ser recolectados, usados o vendidos. Los puedes
-          encontrar en el mundo, comprar a vendedores o fabricar.
+        description: Los objetos pueden ser recolectados, usados o vendidos. Se pueden
+          encontrar en el mundo, comprar a vendedores o fabricar por los jugadores.
         tabText: Lista de objetos
     locationList:
       info:
-        title: Localizaciones
-        description: Las localizaciones son lugares en el mundo que puedes visitar.
-          Contienen actividades y servicios con los que interactuar.
-        tabText: Lista de localizaciones
+        title: Ubicaciones
+        description: Las ubicaciones son lugares en el mundo que puedes visitar. Contienen
+          actividades y servicios con los que interactuar.
+        tabText: Lista de ubicaciones
     skillList:
       info:
         title: Habilidades
         description: Las habilidades suben de nivel mientras completas actividades
           relacionadas a ellas. Desbloquean nuevo contenido y te hacen más eficiente.
-        tabText: Lista de Habillidades
+        tabText: Lista de Habilidades
     activityList:
       info:
         title: Actividades
-        description: Las actividades son tareas repetibles que se pueden completar
+        description: Las actividades son tareas repetitivas que se pueden completar
           en el juego caminando en la vida real. Son la forma principal para conseguir
           objetos y subir de nivel tus habilidades.
         tabText: Lista de actividades
     serviceList:
       info:
         title: Servicios
-        description: Los servicios te otorgan beneficios según la localización. Lo
-          más normal es que te permitan fabricar objetos.
+        description: Los servicios te otorgan beneficios según la ubicación. Lo más
+          normal es que te permitan fabricar objetos.
         tabText: Lista de servicios
     recipeList:
       info:
@@ -47,63 +48,225 @@ singulars:
       info:
         title: Personajes
         description: Los personajes son la gente que te puedes encontrar en el mundo.
-          Te dan misiones, venden objetos..
+          Pueden darte misiones, venderte objetos y más.
         tabText: Lista de personajes
     buildingList:
       info:
-        title: Edificaciones
-        description: Las edificaciones son estructuras que hay por el mundo con tiendas
-          y servicios (como por ejemplo, banco).
-        tabText: Lista de edificaciones
+        title: Edificios
+        description: Los edificios son estructuras que hay por el mundo con tiendas
+          y servicios, como por ejemplo un banco.
+        tabText: Lista de edificios
     shopList:
       info:
         title: Tiendas
         description: Las tiendas son lugares donde puedes comprar y vender objetos.
-          Normalmente se encuentran en edificaciones.
+          Normalmente se encuentran en edificios.
         tabText: Lista de tiendas
   contentPages:
     item:
       info:
         title: Objeto <object id="{obj}">
+    skill:
+      info:
+        xp: EXP
+        xpToNext: EXP para el siguiente nivel
+        xpTo99: EXP hasta nivel 99
+        stepsWalked: Pasos andados
+        ofTotalSteps: '% del total de pasos'
+        nextUnlock: Próximo desbloqueo
+        unlocks: Todos los desbloqueos
+        unlocksDesc: Mira qué contenido se desbloquea al subir de nivel en esta habilidad.
+        fromLevelToLevel: Del nivel <c>{from}</c> al nivel <c>{to}</c>
+        guide: Guía
+        level: Nivel
+        lastUnlock: Último desbloqueo
+      guides:
+        smithing: "<object id=\"smithing\" /> es una habilidad artesana para fundir
+          <object id=\"bar\" /> y forjar metales.\n\n<li><hl>Ubicación Inicial</hl>:
+          puedes emplear la <c>herrería</c> en <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> con <object id=\"745d4e6f-5c6a-45a3-a98d-fc88f63bbb25\" /> o con <icon
+          i=\"crafting\" /> recetas de herrería.</li>\n\n<li><hl>Dónde encontrarla</hl>:
+          la mayor parte de las localizaciones urbanas tienen probabilidades de tener
+          servicio de <object id=\"service_forge\" />. Algunas pueden hasta tener
+          actividades de <c>herrería</c>.</li>\n\n<li><hl>Se usa para</hl>: fundir
+          <object id=\"ore\" /> y <object id=\"nugget\" /> en <object id=\"bar\" />
+          que son útiles para <object id=\"crafting\" /> y <object id=\"trinketry\"\
+          \ />.</li>\n"
+        cooking: "<object id=\"cooking\" /> es una habilidad artesana para crear <object
+          id=\"food\" /> deliciosas y consumibles.\n\n<li><hl>Ubicación Inicial</hl>:
+          puedes comenzar <c>cocinando</c> en <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> a través de <object id=\"a34e2643-5c41-4d15-94de-8df53d3d4c19\" />
+          o con <object id=\"recipe_cooking\" />.</li>\n\n<li><hl>Dónde encontrarla</hl>:
+          la mayor parte de las localizaciones urbanas tienen probabilidades de tener
+          un servicio de <object id=\"service_kitchen\" />. Incluso puede que haya
+          otras cocinas por ahí buscando ayuda en actividades de <c>cocina</c>.</li>\n\
+          \n<li><hl>Se usa para</hl>: cocinar <object id=\"fish\" /> e <object id=\"\
+          ingredient\" /> en comida <object id=\"food\" /> y <object id=\"beverage\"\
+          \ /> consumibles que te pueden dar todo tipo de bonus de atributos para
+          tus habilidades.</li>\n"
+        carpentry: "<object id=\"carpentry\" /> es una habilidad artesana que trata
+          con elementos de carpintería <object id=\"plank\" />.\n\n<li><hl>Ubicación
+          Inicial</hl>: You can start <c>carpentry</c> in <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> through carpentry <icon i=\"crafting\" /> recipe options or head to
+          the <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
+          \ /> for some <object id=\"activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d\"\
+          \ />.</li>\n\n<li><hl>Dónde encontrarla</hl>: la mayor parte de las localizaciones
+          urbanas tienen probabilidades de tener un servicio de <object id=\"service_sawmill\"\
+          \ />. Algunas pueden incluso tener alguna actividad de <c>carpintería</c>.</li>\n\
+          \n<li><hl>Se usa para</hl>: cortar <object id=\"logs\" /> en <object id=\"\
+          plank\" /> que son útiles para <object id=\"crafting\" />.</li>\n"
+        agility: "<object id=\"agility\" /> es una habilidad de servicio esencial
+          para viajar.\n\n<li><hl>Ubicación Inicial</hl>: la <c>agilidad</c> se suele
+          entrenar a la vez que otras habilidades. Por ello la puedes entrenar desde
+          el principio en el <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> con <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
+          \ />. Más adelante verás que se usa cuando se selecciona una nueva ubicación
+          para viajar, pero no vas a encontrar una actividad específica hasta que
+          explores más y encuentres algo de equipamiento. No es mala idea pillar unos
+          <object id=\"skis\" /> o una <object id=\"climbingTool\" />.</li>\n\n<li><hl>Dónde
+          encontrarla</hl>: algunos campos, montañas e incluso pueblos pueden tener
+          alguna actividad de <c>agilidad</c> que te pueden sorprender.</li>\n\n<li><hl>Se
+          usa para</hl>: viajar, atajos y ocasionalmente encontrar materiales aleatorios.
+          Es vital para ir por rápido por Arenum y subirla de nivel te permitirá viajar
+          más rápido.</li>\n"
+        foraging: "<object id=\"foraging\" /> es una habilidad de recolección que
+          es esencial para encontrar <object id=\"plant\" />.\n\n<li><hl>Ubicación
+          Inicial</hl>: puedes comenzar a <c>recolectar</c> ahora mismo en el <object
+          id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> con <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
+          \ />.</li>\n\n<li><hl>Dónde encontrarla</hl>: la mayoría de ubicaciones
+          naturales (llanuras, bosques, colinas, montañas, playas) puede tener actividades
+          de <c>recolección</c> , así como algún área urbana y cueva.</li>\n\n<li><hl>Se
+          usa para</hl>: recolectar materiales como <object id=\"plant\" />, algunas
+          pueden ser <object id=\"ingredient\" />, que pueden usarse en otras habilidades,
+          como <skill skill=\"crafting\"/> y <skill skill=\"cooking\"/>.</li>\n"
+        fishing: "<object id=\"fishing\" /> es una habilidad de recolección que es
+          esencial para atrapar <object id=\"fish\" />.\n\n<li><hl>Ubicación Inicial</hl>:
+          puedes comenzar a <c>pescar</c> en la <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
+          \ /> una vez uses la <object id=\"crafting\" /> para crear tu primera <object
+          id=\"fishingNet\" />.</li>\n\n<li><hl>Dónde encontrarla</hl>: la mayor parte
+          de las localizaciones cerca de masas de agua tienen probabilidades de tener
+          actividades de <c>pesca</c>, asegúrate de traer tu propia <object id=\"\
+          fishingTool\" />.</li>\n\n<li><hl>Se usa para</hl>: atrapar <object id=\"\
+          fish\" /> para luego usar tu habilidad de <object id=\"cooking\" /> y transformarlo
+          en <object id=\"cookedFish\" /> para uso como consumibles que te pueden
+          dar todo tipo de bonus de atributos para tus habilidades.</li>\n"
+        woodcutting: "<object id=\"woodcutting\" /> es una habilidad de recolección
+          que es esencial para obtener objetos de madera y <object id=\"logs\" />.\n\
+          \n<li><hl>Ubicación Inicial</hl>: puedes empezar a <c>talar</c> en el <object
+          id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> una vez uses la <object id=\"crafting\" /> para crear tu primera <object
+          id=\"woodcuttingHatchet\" />.</li>\n\n<li><hl>Dónde encontrarla</hl>: la
+          mayoría de las ubicaciones boscosas tienen posibilidades de tener alguna
+          actividad de <c>tala</c> , pero asegúrate de llevar la <object id=\"woodcuttingTool\"\
+          \ /> apropiada.</li>\n\n<li><hl>Se usa para</hl>: obtener <object id=\"\
+          logs\" /> que luego puedes serrar con tu habilidad de <object id=\"carpentry\"\
+          \ />. Muy de vez en cuando <object id=\"woodcuttingTrees\" /> puedes incluso
+          encontrar un <object id=\"item-bird_nest-c459d244-4ef3-41c1-a911-01e18efaeec1\"\
+          \ /> que puede contener algún objeto útil adicional.</li>\n"
+        tailoring: "<object id=\"tailoring\" /> es una habilidad artesana para coser
+          objetos <object id=\"processed\" /> y crear ropajes que empoderan.\n\n<li><hl>Ubicación
+          inicial</hl>: puedes usar la <c>sastrería</c> cuando encuentres las <object
+          id=\"plant\" /> adecuadas al <object id=\"foraging\" /> para usar una <icon
+          i=\"crafting\" /> receta de sastrería básica.</li>\n\n<li><hl>Dónde encontrarla</hl>:
+          ciertas ubicaciones tienen más probabilidades de tener un servicio de <object
+          id=\"service_loom\" />, que necesitarás aventurarte a descubrir para que
+          te asista con recetas de alto nivel de sastrería. Puede incluso haber algún
+          lugar en esas zonas que tengan actividades de <c>sastrería</c>.</li>\n\n\
+          <li><hl>Se usa para</hl>: coser <object id=\"plant\" /> en <object id=\"\
+          processed\" />. Una vez los tengas, puedes combinarlos con el tejido necesario
+          para crear equipamiento que potencie tus habilidades.</li>\n"
+        crafting: "<object id=\"crafting\" /> es una habilidad artesana para crear
+          herramientas útiles.\n\n<li><hl>Ubicación Inicial</hl>: puedes empezar a
+          <c>fabricar</c> ya mismo con algunos materiales <object id=\"processed\"\
+          \ /> gratuitos de «Sergio el Servicial» en el <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> para algunas <icon i=\"crafting\" /> opciones de recetas</li> de fabricación
+          básicas.\n\n<li><hl>Dónde encontrarla</hl>: la mayor parte de las localizaciones
+          urbanas tienen probabilidades de tener un servicio de <object id=\"service_workshop\"\
+          \ /> , que necesitarás aventurarte a descubrir para que te asista al fabricar
+          recetas de alto nivel. Puede incluso haber por ahí algún lugar con actividades
+          de <c>fabricación</c>.</li>\n\n<li><hl>Se usa para</hl>: juntar <object
+          id=\"bar\" />, <object id=\"plank\" /> y objetos <object id=\"processed\"\
+          \ /> en potenciales opciones de <object id=\"woodcuttingTool\" />, <object
+          id=\"miningTool\" />, <object id=\"fishingTool\" /> o <object id=\"foragingTool\"\
+          \ /> para beneficiar su habilidad correspondiente.</li>\n"
+        trinketry: "<object id=\"trinketry\" /> es una habilidad artesana para tallar
+          <object id=\"gem\" /> y crear joyería funcional.\n\n<li><hl>Ubicación inicial</hl>:
+          puedes usar la <c>joyería</c> cuando encuentres las <object id=\"plant\"\
+          \ /> apropiadas al <object id=\"foraging\" /> para usar una <icon i=\"crafting\"\
+          \ /> receta de joyería básica.</li>\n\n<li><hl>Dónde encontrarla</hl>: las
+          ubicaciones más pudientes pueden tener más probabilidades de encontrar un
+          servicio de <object id=\"service_trinketry_bench\" />, que necesitarás aventurarte
+          a descubrir para que te asista con recetas de alto nivel de joyería. Puede
+          incluso haber algún lugar en esas zonas que tengan actividades de <c>joyería</c>.</li>\n\
+          \n<li><hl>Se usa para</hl>: tallar <object id=\"rough_gem\" /> en <object
+          id=\"cut_gem\" />. Una vez tengas estas o incluso una <object id=\"item_trinket\"\
+          \ /> rara se pueden combinar con el <object id=\"bar\" /> adecuado para
+          crear <object id=\"item_ring\" /> y <object id=\"item_amulet\" /> que beneficien
+          tus habilidades.</li>\n"
+        mining: "<object id=\"mining\" /> es una habilidad de recolección que es esencial
+          para obtener <object id=\"ore\" /> principalmente.\n\n<li><hl>Ubicación
+          Inicial</hl>: puedes comenzar con la <c>minería</c> en la <object id=\"\
+          location-pit_of_pittance-49a851b8-0a55-4857-9492-907958733b09\" /> una vez
+          uses la <object id=\"crafting\" /> para crear tu primer <object id=\"pickaxe\"\
+          \ />.</li>\n\n<li><hl>Dónde encontrarla</hl>: la mayoría de ubicaciones
+          montañosas tienen posibilidades de tener actividades de <c>minería</c> ,
+          pero asegúrate de llevar la <object id=\"miningTool\" /> apropiada.</li>\n\
+          \n<li><hl>Usada para</hl>: extraer <object id=\"ore\" /> y <object id=\"\
+          nugget\" /> que luego puedes fundir con tu habilidad de <object id=\"smithing\"\
+          \ />. Muy de vez en cuando puedes encontrar alguna <object id=\"rough_gem\"\
+          \ /> que puedes tallar con tu habilidad de <object id=\"trinketry\" />.</li>\n"
+        hunting: "<object id=\"hunting\" /> es una habilidad de recolección que es
+          esencial para encontrar <object id=\"ingredient\" />.\n\n<li><hl>Ubicación
+          inicial</hl>: puedes empezar a <c>cazar</c> ahora mismo en el <object id=\"\
+          location\" /> con <object id=\"activity\" />.</li>\n\n<li><hl>Dónde encontrarla</hl>:
+          la mayoría de ubicaciones naturales (llanuras, bosques, colinas, montañas,
+          playas) puede tener actividades de <c>caza</c> , así como algún área urbana
+          y cueva.</li>\n\n<li><hl>Se usa para</hl>: recolectar materiales de <object
+          id=\"ingredient\" /> que se pueden usar en otras habilidades, como <skill
+          skill=\"crafting\"/> y <skill skill=\"cooking\"/>.</li>\n"
   phrases:
     home:
-      leveling: Subidas de nivel
+      leveling: Nivel
       content: Contenido
       story: Historia
       combat: Combate
     item:
-      fromCrafting: De elaboración
-      craftingSources: Fuentes de elaboración
+      fromCrafting: De fabricación
+      craftingSources: Fuentes de fabricación
       inInventory: En inventario
-      inBank: En el banco
+      inBank: En banco
       fromActivites: De actividades
       fromChests: De cofres
-      dropped: Dejar caer
+      dropped: Soltados
       opened: Abierto
       sold: Vendido
       purchased: Comprado
       itemsGained: Objetos conseguidos
-      abilities: Habilidades
+      abilities: Talentos
       attributes: Atributos
-      notCrafted: (No elaborado)
+      notCrafted: (No fabricado)
       requirements: Requisitos
       activitySources: Fuentes de actividad
-      chestSources: Encontrado en cofres
+      chestSources: Fuentes de cofre
     activity:
       maxWorkEfficiency: Máxima eficiencia del trabajo
-      stepsWalked: Pasos Caminados
+      stepsWalked: Pasos caminados
       actionsCompleted: Acciones completadas
       stepsRequired: Pasos necesarios
-      xpGained: XP conseguida
-      level: LVL
+      xpGained: EXP conseguida
+      level: NVL
       each: cada uno
       stepsToLevelUp: 'Pasos para subir de nivel:'
       stepsTo99: 'Pasos para nivel 99:'
       itemsGained: Objetos conseguidos
-      availableLocations: Lugares disponibles
+      availableLocations: Ubicaciones disponibles
     location:
-      realm: Reinado
+      realm: Reino
       activities: Actividades
+    common:
+      unknown: Este contenido aún es desconocido para tu personaje. ¡Sigue explorando
+        para descubrir todos sus detalles!
 maps:
   phrases:
     item:
@@ -112,5 +275,28 @@ maps:
         "container": Recipientes
         "loot": Botín
         "consumable": Consumibles
-        "crafted": Elaborado
+        "crafted": Fabricado
         "collectible": Coleccionables
+plurals:
+  skillUnlocks:
+    recipeRequirementsMet:
+      many: '-'
+      other: <c>{}</c> requisitos de receta cumplidos
+      zero: '-'
+      one: <c>{}</c> requisito de receta cumplido
+      few: '-'
+      two: <c>{}</c> requisitos de receta cumplidos
+    activityRequirementsMet:
+      zero: '-'
+      one: <c>{}</c> requisito de actividad cumplido
+      two: <c>{}</c> requisitos de actividad cumplidos
+      few: '-'
+      many: '-'
+      other: <c>{}</c> requisitos de actividad cumplidos
+    itemRequirementsMet:
+      zero: '-'
+      one: <c>{}</c> requisito de objeto cumplido
+      two: <c>{}</c> requisitos de objeto cumplidos
+      few: '-'
+      many: '-'
+      other: <c>{}</c> requisitos de objeto cumplidos
