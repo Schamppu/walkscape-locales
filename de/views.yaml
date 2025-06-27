@@ -133,6 +133,9 @@ maps:
       'masculine': Männlich
       'neutral': Neutral
       'feminine': Weiblich
+  cooldown:
+    time:
+      'days': ''
 plurals:
   achievements:
     phrases:
@@ -194,6 +197,20 @@ plurals:
         few: '-'
         many: '-'
         other: Schritte bis zur Ankunft
+      steps:
+        zero: '-'
+        many: '-'
+        few: '-'
+        one: '{} Schritt'
+        two: '{} Schritte'
+        other: '{} Schritte'
+      actions:
+        zero: '-'
+        one: '{} Aktion'
+        few: '-'
+        many: '-'
+        two: '{} Aktionen'
+        other: '{} Aktionen'
   inventory:
     info:
       consumableDuration:
@@ -211,6 +228,22 @@ plurals:
           Schritte pro Aktion. Die gewählte Menge an Verbrauchsmaterialien würde <c>{actions}
           Aktionen</c> verstärken.
         few: '-'
+  location:
+    phrases:
+      playersHere:
+        other: <c>{}</c> Spieler hier
+        zero: '-'
+        one: <c>{}</c> Spieler hier
+        two: <c>{}</c> Spieler hier
+        few: '-'
+        many: '-'
+      playersDoingActivity:
+        zero: '-'
+        one: <c>{}</c> Spieler führen eine Aktivität aus
+        two: <c>{}</c> Spieler führen eine Aktivität aus
+        few: '-'
+        many: '-'
+        other: <c>{}</c> Spieler führen eine Aktivität aus
 singulars:
   achievements:
     info:
@@ -328,6 +361,7 @@ singulars:
       routes: Routen
       tapToShowRoutes: Tippen, um die Routen anzuzeigen
       jobs: Jobs
+      owner: Besitzer
   activity:
     info:
       consumablesUsage: Du kannst ein <c>Nahrungsmittel</c> und einen <c>Trank</c>
@@ -351,12 +385,17 @@ singulars:
         die dein Charakter durch Abenteuer, Fleiß und harte Arbeit gemeistert hat.
         Tippe auf eine beliebige Fähigkeit, um detaillierte Informationen und deren
         Freischaltungen zu sehen.
+      eachLevelIncreasesStepBank: Jedes Charakterlevel nach Level <c>{level}</c> erhöht
+        die maximale Anzahl gespeicherter Schritte um <c>{amount}</c>.
     phrases:
       skills: Fähigkeiten
       stepsOfLastWeek: Schritte der letzten 7 Tage
       checkOutSubject: Sieh dir meinen Fortschritt in WalkScape an!
       checkOut: Das ist mein WalkScape Charakter {name}. Sieh ihn dir an!\nhttps://walkscape.app
       totalLevel: Gesamtlevel
+      savePicture: Bild speichern
+      level: 'Charakter Level: <c>{level}</c>'
+      stepsToNextLevel: Schritte bis zum nächsten Level <c>{steps}</c>
   permissions:
     phrases:
       permissionExplanation: Damit das Spiel funktioniert, brauchen wir die Erlaubnis,
@@ -486,6 +525,7 @@ singulars:
         deren Unterschiede an, indem du den Button unten drückst.
       connectionInfoAndroid: Die Unterstützung für Smartwatches auf Android kommt
         bald. Derzeit wird nur das Telefon als Schrittzählerquelle unterstützt.
+      gameVersion: Spielversion {version}
   pfpCreation:
     buttons:
       randomize: Zufällig
@@ -513,6 +553,7 @@ singulars:
       currentSelection: Aktuelle Auswahl
       mainOptions: Haupteinstellungen
       race: Ethnie
+      variant: Variante {number}
   worldMap:
     phrases:
       activities: Aktivitäten
@@ -677,6 +718,8 @@ singulars:
       skillModifiers: Skillmodifikatoren
       permanentModifiers: Permanente Modifikatoren
       noPermanentModifiers: Keine permanenten Modifikatoren.
+      noItemEquipped: Kein Gegenstand ausgerüstet
+      noItemSelected: Kein Gegenstand ausgewählt
   tools:
     phrases:
       emptyToolSlot: Leerer Werkzeugplatz
@@ -812,6 +855,15 @@ singulars:
         text: Zum Ausrüstungsset wechseln
       depositUnlockedItems:
         text: Nicht gesperrte Gegenstände einlagern
+        desc: Lagert alle nicht gesperrten Gegenstände aus deinem Inventar in der
+          Bank ein, sofern an einem der durchlaufenen Orte eine verfügbar ist.
+      withdrawGearSet:
+        text: Ausrüstungsset entnehmen
+        desc: Entnimmt ein Ausrüstungsset aus der Bank, sofern an einem der durchlaufenen
+          Orte eine verfügbar ist.
+      removeFromQueue:
+        text: Aus der Warteschlange entfernen
+        desc: Entfernt diese Aktion und alle folgenden Aktionen aus der Warteschlange.
     phrases:
       switchingToGearSet: Zum Ausrüstungsset <c>{name}</c> wechseln
       queue: Warteschlange
@@ -825,3 +877,27 @@ singulars:
       traveling: Reisen
       activity: Aktivität
       crafting: Herstellen
+    suggestedOptions:
+      startTraveling: Reisen
+      startActivity: Aktivität
+      startCrafting: Herstellen
+    suggestions:
+      traveling:
+        onceYouArriveTo: Aktion zur Warteschlange in <object id="{location}"/> hinzufügen?
+      activity:
+        onceAllActionsAreCompleted: Möchtest du etwas unternehmen, sobald alle Aktionen
+          abgeschlossen sind?
+        onceInventoryIsFull: Möchtest du etwas unternehmen, sobald dein Inventar voll
+          ist?
+      crafting:
+        onceAllItemsAreCrafted: Möchtest du etwas unternehmen, sobald alle Gegenstände
+          hergestellt wurden?
+        onceCertainRarityIsCrafted: Möchtest du etwas unternehmen, sobald du eine
+          bestimmte Seltenheit hergestellt oder alle Materialien verbraucht hast?
+  rumors:
+    phrases:
+      unlockedWalkpediaEntries: Freigeschaltete Walkpedia-Einträge
+      rumorsFromCharacter: Gerüchte von <c>{characterName}</c>
+  whileAway:
+    phrases:
+      whileYouWereAway: Während du weg warst …
