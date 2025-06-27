@@ -7,6 +7,10 @@ singulars:
     inviteSent: Kutsu lähetetty
     inviteReceived: Olet saanut kutsun
     none: Yhteisöt
+    party:
+      admin: Ylläpitäjä
+      owner: Omistaja
+      member: Jäsen
   actions:
     buttonLabels:
       removeFriend: Poista kaveri
@@ -17,10 +21,14 @@ singulars:
         reject: Hylkää
         block: Estä
       sendInvite: Lähetä kaverikutsu
+      createParty: Luo seurue
+      leaveParty: Poistu seurueesta
+      leaveAndDestroyParty: Poistu seurueesta ja tuhoa se
     confirmTitle:
       unblock: Poista esto käyttäjältä
       inviteResponse:
         block: Estä käyttäjä
+      changeRole: Muuta oikeuksia
     confirmDescription:
       removeFriend: Oletko varma, että haluat lopettaa kaveruutenne?
       unblock: Oletko varma, että haluat poistaa eston tältä käyttäjältä?
@@ -28,6 +36,36 @@ singulars:
       inviteResponse:
         block: Oletko varma, että haluat estää tämän käyttäjän? Estetty käyttäjä ei
           voi enää lähettää sinulle kaverikutsuja.
+      changeRole: Haluatko varmasti antaa hahmolle <hl>{characterName}</hl> roolin
+        <hl>{partyRole}</hl>?
+      leaveParty: Haluatko varmasti poistua seurueesta?
+      leaveAndDestroyParty: Haluatko varmasti poistua seurueesta ja tuhota sen? Tätä
+        toimintoa ei voi peruuttaa.
   party:
     manage: Hallitse
     role: Roolii
+  createParty:
+    input:
+      partyName: Seurueen nimi
+      catchphrase: Tunnuslause
+      catchphraseHint: Tunnuslause (Valinnainen)
+    rules:
+      mayContain: '<bp />Saattaa sisältää: {list}'
+      noTrailingSpaces: <bp />Ei voi alkaa tai loppua välilyönnillä
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        one: <bp />Vähintään {} merkki
+        few: '-'
+        many: '-'
+        two: '-'
+        other: <bp />Vähintään {} merkkiä
+      maxChar:
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Enintään {} merkkiä
+        one: <bp />Enintään {} merkki
