@@ -82,10 +82,10 @@ maps:
       'public': Julkinen
       'friends': Vain kaverit
     boolSettings:
-      'showRecipesMaterialsAreMet': Materiaalivaatimukset eivät täyty
-      'showRecipesServicesAreMet': Palveluvaatimukset eivät täyty
+      'showRecipesMaterialsAreMet': Piilota, jos materiaaleja puuttuu
+      'showRecipesServicesAreMet': Piilota, jos et ole oikean palvelun luona
       'showCompletedAchievements': Näytä suoritetut saavutukset
-      'showRecipesRequirementsAreMet': Tasovaatimukset eivät täyty
+      'showRecipesRequirementsAreMet': Piilota, jos taitosi eivät vielä riitä
       'alwaysStopWhenInventoryFull': Keskeytä aktiviteetti oletuksena repun ylitäyttyessä
       'leftHandedMode': Vasenkätinen tila
       'inventoryCollapsed': Tiivistä reppunäkymä
@@ -509,7 +509,7 @@ singulars:
   trade:
     phrases:
       total: Yhteensä
-      trade: KAUPPAA
+      trade: TEE KAUPAT
       restockIn: 'Täydennys: '
       buying: Ostetaan {amount}
       selling: Myydään {amount}
