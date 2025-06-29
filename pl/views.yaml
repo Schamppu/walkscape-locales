@@ -193,6 +193,20 @@ plurals:
         few: '-'
         many: '-'
         other: Kroków do celu
+      steps:
+        two: '{} kroki'
+        zero: '-'
+        one: '{} krok'
+        few: '-'
+        many: '-'
+        other: '{} kroki'
+      actions:
+        zero: '-'
+        one: '{} akcja'
+        two: '{} akcje'
+        few: '-'
+        many: '-'
+        other: '{} akcje'
   inventory:
     info:
       consumableDuration:
@@ -210,6 +224,16 @@ plurals:
         two: Aktywność <object id="{activity}" alwaysShow="true"/> wymaga <c>{steps}</c>
           kroków na akcję. Wybrana ilość przedmiotów zużywalnych zadziała na <c>{actions}
           akcji</c>.
+  location:
+    phrases:
+      playersHere:
+        zero: '-'
+        few: '-'
+        many: '-'
+      playersDoingActivity:
+        zero: '-'
+        few: '-'
+        many: '-'
 singulars:
   achievements:
     info:
@@ -323,6 +347,7 @@ singulars:
       tapToShowRoutes: Tapnij, by pokazać drogi
       jobs: Prace
       jobBoard: Tablica pracy
+      owner: Właściciel
   activity:
     info:
       consumablesUsage: Możesz wybrać <c>jedzenie</c> oraz <c>miksturę</c>, by użyć
@@ -352,6 +377,7 @@ singulars:
       checkOut: To moja postać {name} w WalkScape. Sprawdź to!\nhttps://walkscape.app
       checkOutSubject: Sprawdź mój postęp w WalkScape!
       totalLevel: Całkowity poziom
+      savePicture: Zapisz zdjęcie
   permissions:
     phrases:
       pedometerPermission: Uprawnienia do liczenia kroków
@@ -543,6 +569,7 @@ singulars:
         urządzeniach w ciągu ostatnich 7 dni.
       connectionInfoAndroid: Wsparcie smart watchy na Android już wkrótce. Aktualnie
         tylko telefon jest wspierany jako źródło zliczania kroków.
+      gameVersion: Wersja gry {version}
   characterCreation:
     phrases:
       race: Rasa
@@ -569,6 +596,7 @@ singulars:
       mainOptions: Główne opcje
       extras: Dodatki
       variants: Warianty
+      variant: Wersja {number}
     buttons:
       randomize: Wylosuj
       showHat: Pokaż nakrycie głowy
@@ -700,6 +728,8 @@ singulars:
       noSkillModifiers: Brak modyfikatorów umiejętności z założonych przedmiotów.
       permanentModifiers: Trwałe modyfikatory
       noPermanentModifiers: Brak trwałych modyfikatorów.
+      noItemEquipped: Brak założonych przedmiotów
+      noItemSelected: Brak wybranych przedmiotów
   tools:
     phrases:
       emptyToolSlot: Pusty slot na narzędzie
@@ -796,6 +826,8 @@ singulars:
   queue:
     suggestedOptions:
       startActivity: Aktywność
+      startCrafting: Rzemiosło
+      startTraveling: Podróż
     types:
       traveling: Podróżowanie
       activity: Aktywność
@@ -813,3 +845,6 @@ singulars:
         text: Przełącz zestaw wyposażenia
         desc: Przed rozpoczęciem tej czynności należy przełączyć się na wybrany zestaw
           wyposażenia.
+  whileAway:
+    phrases:
+      whileYouWereAway: Kiedy ciebie nie było...
