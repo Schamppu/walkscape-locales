@@ -11,6 +11,9 @@ singulars:
     travelAndStartActivity:
       title: 'Travel first and then start activity?'
       text: 'You are not in the right location to start this activity. Do you want to travel to the correct location first and then start the activity?'
+    editCurrentRouteAndResetQueue:
+      title: 'Edit current route and reset queue?'
+      text: 'Do you want to edit your current traveling route to the selected location and remove all following actions you have in the queue?'
   popups:
     inactiveSteps:
       stepsWhileInactive: Steps gained while the game was inactive
@@ -130,6 +133,10 @@ singulars:
       newClientUpdate:
         title: New client update available
         text: Your game is outdated, and there is a new version of the game available. Please download the latest version of the game to continue playing.
+      tempBannedUser:
+        title: You've been temporarily banned from WalkScape
+        text: You've been temporarily banned from WalkScape until <c i=0>{bannedUntil}</c>.
+        noTimeFound: No end time found, please contact us by sending an email to <c i=1>contact@walkscape.app</c>.
       bannedUser:
         title: You've been permanently banned from WalkScape
         text: You've been permanently banned from WalkScape. If you believe this is a mistake and would like to appeal the decision, you can contact us by sending an email to <c i=1>contact@walkscape.app</c>.
