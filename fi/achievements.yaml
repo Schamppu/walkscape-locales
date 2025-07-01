@@ -32,17 +32,17 @@ singulars:
       name: Se on maraton, ei sprintti
     makeAManOutOfYou:
       desc: Sä oot niin salaperäinen kuin <hl>PUOLIKUU!</hl>
-      name: Mies ulos sinusta
+      name: Tehdään sinusta mies
     masterHasGivenDobbyASock:
       desc: Dobby on... vapaa
-      name: Mestari on antanut Dobbylle sukan
+      name: Isäntä on antanut Dobbylle sukan
     masterchef:
       desc: Nami! Sinusta tulee mainio kokki.
       name: Mestarikokki
     myPrecious:
       desc: Kirottu Reppuli! Se on poissa! Mitä sillä on taskuissaan? Arvaamme, arvaamme,
         kultaseni. Hän löysi sen, niin varmaan löysi.
-      name: Minun aarteeni
+      name: Minun Aarre! Oi Aarre!
     oneCannotSimplyWalkToMordor:
       desc: Oletko koskaan miettinyt, kuinka helppoa olisi kävellä Mordoriin? No,
         <hl> nyt tiedät</hl>.
@@ -52,7 +52,7 @@ singulars:
       name: Vain sinä voit estää metsäpalot
     rockAndStone:
       desc: Jos et rokkaa, et tule kotiin!
-      name: Kiveen ja Kallioon!
+      name: Kiveen ja kallioon!
     rockstar:
       desc: Hard rock halleluja!
       name: Rokkitähti
@@ -69,7 +69,7 @@ singulars:
     visitorOfTheFarLands:
       desc: Luku on palikoiden määrä, joka sinun piti kulkea, kunnes pääsit Minecraftin
         "Kaukomaille".
-      name: Kaukomaiden Vierailija
+      name: Kaukomaiden vierailija
     walkOfShame:
       desc: '*kling* Häpeä. *kling* Häpeä. *kling* Häpeä. *kling* Häpeä.'
       name: Häpeäkävely
@@ -89,7 +89,7 @@ singulars:
       desc: Aika pudottaa tai myydä ennen kuin murrat selkäsi.
     fullyPrepared:
       desc: Täydessä varustuksessa olet valmis valloittamaan maailman!
-      name: Valmis Kaikkeen
+      name: Valmis kaikkeen
     helanGor:
       desc: 'Kippis, cheers, salud, cin cin, prost, kanpai, ganbei!'
       name: Muistis Juo!
@@ -100,7 +100,7 @@ singulars:
       desc: Kerää nuo tiputtamasi roskat! Eiku, oota, ethän sä voi.
       name: Roskaaminen kielletty
     onlyTwoFingers:
-      name: Vain Kaksi Sormea?
+      name: Vain kaksi sormea?
       desc: On tunnettu tosiasia, että vain yksi sormi viidestä voi hyötyä sormusten
         maagisista ominaisuuksista.
     treasureHunter:
@@ -234,42 +234,56 @@ singulars:
     gain99Agility: Etene ketteryyden tasolle <numberProgress />.
     gainRingWhileFishing: Saa sormus kalastaessasi. <numberProgress />
     gainSocksFromActivity: Saa sukat aktiviteetista. <numberProgress />
-    have5DifferentGems: Varastossasi on <numberProgress /> erilaista helmeä.
-    levelUpAnySkill: Edistä mitä tahansa taitoa. <numberProgress />
-    makeSandwich: Tee <numberProgress /> voileipä.
-    mine10kOres: Kaiva <numberProgress /> mitä tahansa malmia.
-    mine1kGoldOres: Hanki <numberProgress /> kultamalmia.
-    walkSteps: Kävele <numberProgress /> askelta.
-    walkStepsWithoutGear: Kävele <numberProgress /> askelta ilman varusteita.
-    walkStepsInDay: Kävele <numberProgress /> askelta päivässä.
-    goToNoiselessPass: Mene paikkaan, jota kutsutaan Äänettömäksi Solaksi. <numberProgress
+    have5DifferentGems: Yksi <object id="cut_gem" /> ei riitä; kerää erilaisia <numberProgress
+      />.
+    levelUpAnySkill: Nosta tasoasi missä tahansa taidossa. <numberProgress />
+    makeSandwich: Tee <object id="sandwich" />.  <numberProgress />
+    mine10kOres: Harrasta ahkeraa <object id="ore" />n louhintaa. <numberProgress
       />
-    findMysteriousG: Löydä salaperäinen G. <numberProgress />
-    useALamp: Käytä XP lamppua. <numberProgress />
-    goToBarbantok: Mene Barbantokin kylään. <numberProgress />
-    characterLevel: Etene hahmon tasolle <numberProgress />.
-    haveCoins: Kerää <numberProgress /> kolikkoa.
-    haveAllSkillsLevel: Etene kaikissa taidoissa vähintään tasolle. <numberProgress
+    mine1kGoldOres: <object id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f"
+      alwaysShow="true" /> kiiltää ihanasti - kerää sitä aktiviteeteista. <numberProgress
       />
-    haveFoodStackQuantity: Kerää pankkiin samaa ruokaa <numberProgress /> kappaletta.
-    mineOres: Kaiva <numberProgress /> malmia.
-    haveBankStacks: Kerää pankkiin <numberProgress /> erilaista tavaraa.
-    exploreJarvonia: Tutki kaikki paikat Jarvoniassa. <numberProgress />
-    gainFineMaterial: Saa <numberProgress /> hieno materiaali.
-    dropItem: Tiputa <numberProgress /> esine.
-    dropItems: Tiputa <numberProgress /> esinettä.
+    walkSteps: Kerrytä askelia kävelemällä.  <numberProgress />
+    walkStepsWithoutGear: Kävele luomumatka ilman minkäänlaisia varusteita. <numberProgress
+      />
+    walkStepsInDay: Kerrytä reipas askelmäärä 24 tunnin aikana. <numberProgress />
+    goToNoiselessPass: <object id="location-noiseless_pass-e081df71-97eb-4708-90b0-f33e61b2a0c7"
+      alwaysShow="true" /> odottaa sinua. Matkusta sinne. <numberProgress />
+    findMysteriousG: Löydä salaperäinen "g". <numberProgress />
+    useALamp: Käytä kokemuspistelamppua. <numberProgress />
+    goToBarbantok: <numberProgress /><object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" /> kutsuu - käy kylässä. <numberProgress />
+    characterLevel: Etene hahmon tasolle <numberProgress />,
+    haveCoins: Kerää reipas <icon i="money small"/> kolikko-omaisuus. <numberProgress
+      />
+    haveAllSkillsLevel: Etene kaikissa taidoissa vähintään tasolle <numberProgress
+      />.
+    haveFoodStackQuantity: Kerää pankkiin varasto samaa <object id="food" />-ainetta.
+      <numberProgress />
+    mineOres: <object id="activity_mining" /> tuo vaurautta ja <object id="ore" />
+      taipuu moneksi. Louhi ahkerasti. <numberProgress />
+    haveBankStacks: Kerää pankkiin kaikenlaista erilaista tavaraa. <numberProgress
+      />
+    exploreJarvonia: '<object id="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db"
+      />-opas: tutustu kaikkiin paikkoihin alueella. <numberProgress />'
+    gainFineMaterial: Löydä oiva  materiaali. <numberProgress />
+    dropItem: Pudota esine. <numberProgress />
+    dropItems: Pudota joukko esineitä. <numberProgress />
     haveInventoryFilled: Ylitäytä reppusi. <numberProgress />
-    haveRingsEquipped: Käytä kahta sormusta. <numberProgress />
+    haveRingsEquipped: Pue <object id="item_ring" /> kumpaankin käteen. <numberProgress
+      />
     haveEverySlotFilled: Käytä esinettä jokaisessa varustepaikassa. <numberProgress
       />
-    gainItem: Saa esine <item id="{item}"/>. <numberProgress />
-    haveSickleEquipped: Varusta itsesi sirpillä. <numberProgress />
-    haveHammerEquipped: Varusta itsesi vasaralla. <numberProgress />
-    gainTreasureChest: Saa aarrearkkuja mistä tahansa aktiviteetista. <numberProgress
+    gainItem: Hanki <item id="{item}"/>. <numberProgress />
+    haveSickleEquipped: Ota käyttöön <object id="sickle" /> . <numberProgress />
+    haveHammerEquipped: Ota käyttöön <object id="smithingHammer" />. <numberProgress
       />
-    openTreasureChest: Avaa <numberProgress /> arkkua.
-    consumeBeer: Juo <numberProgress /> olut.
-    useMemosphere: Käytä <numberProgress /> muistopallo.
+    gainTreasureChest: Löydä <object id="chest" /> tehdessäsi mitä tahansa aktiviteettia.
+      <numberProgress />
+    openTreasureChest: Avaa <object id="chest" /> poikineen. <numberProgress />
+    consumeBeer: Juo <object id="item-beer-9a2b6380-7270-43e0-bd9a-67e8bcb9d925" alwaysShow="true"
+      />. <numberProgress />
+    useMemosphere: Käytä <object id="memosphere" />. <numberProgress />
     findIceSickle: Löydä <hl>todella harvinainen työkalu</hl> Jäätiköltä. <numberProgress
       />
     activityGlacier: Suorita <object id="activity-glacier_foraging-dfdd59cc-e38b-48fc-9a0e-439163abac12"
@@ -294,3 +308,46 @@ singulars:
       /> aktivitettia. <numberProgress />
     completeActivity: Suorita <item id="{item}" alwaysShow="true" /> aktiviteettia.
       <numberProgress />
+    sharkCook: Valmista <object id="item-cooked_shark-4eadab85-170e-42b5-a086-cb57cd9d9dc3"
+      alwaysShow="true" /> - siihen on erinomainen <object id="recipe_cooking" />.
+      <numberProgress />
+    gainTrinketFromActivity: Hanki <object id="item_trinket" /> aktiviteettia suorittamalla.
+      <numberProgress />
+    haveDifferentShields: Vaikka vain yksi <object id="shield" /> voi olla käytössä
+      kerrallaan, kerää reppuusi kokoelma erilaisia. <numberProgress />
+    lootFindEpic: Avaa <object id="chest" /> ja löydä sieltä eeppistä saalista. <numberProgress
+      />
+    equipHatchet: Ota <object id="item-basic_hatchet-dc4b21f3-e651-4103-9127-e7d3b74151fe"
+      /> käyttöön. <numberProgress />
+    gainFineStarPearl: Löydä oiva <object id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81"
+      alwaysShow="true" /> aktiviteettia suorittamalla. <numberProgress />
+    goToTrench: Syvenny kohteeseen <object id="location-darkdepths-385aa267-b46d-47b8-b124-aa3827c39fef"
+      alwaysShow="true" /> matkustamalla sinne. <numberProgress />
+    lootFindCommon: Avaa <object id="chest" /> ja löydä siitä jotain yleistä saalista.
+      <numberProgress />
+    lootFindUncommon: Avaa <object id="chest" /> ja löydä sieltä jotain epätavallista
+      saalista. <numberProgress />
+    lootFindRare: Avaa <object id="chest" /> ja löydä sieltä harvinaista saalista.
+      <numberProgress />
+    lootFindLegendary: Avaa <object id="chest" /> ja löydä sieltä legendaarista saalista.
+      <numberProgress />
+    equipNet: Ota <object id="item-small_fishing_net-05cb692d-840c-4c57-911c-1f65464aa800"
+      /> käyttöön. <numberProgress />
+    equipPickaxe: Ota <object id="item-basic_pickaxe-a00d8626-e415-481c-88ee-fdafbb4a45f0"
+      /> käyttöön. <numberProgress />
+    findCrossword: Löydä <object id="item-jarvonian_crossword_puzzle-01c3fefd-6d9e-4b4d-bb76-91981c663085"
+      />. <numberProgress />
+    gainFineTrash: Löydä "oiva" <object id="item-trash-40c14f4e-3ef2-435a-a5de-123843f824bf"
+      alwaysShow="true" /> aktiviteettia suorittamalla. <numberProgress />
+    prepKelpRoll: Valmista <object id="item-kelp_rolls-90004956-7275-4b13-9488-61cc320afd09"
+      /> <numberProgress />
+    prepSaltrum: Valmista <object id="item-saltrum-f2df867a-21a7-48db-b13b-efea9e46cb5d"
+      />. <numberProgress />
+    prepUnderwaterSalad: Valmista <object id="item-underwater_salad-ea06cde2-d58d-4a79-8b05-6f515d5b02da"
+      />. <numberProgress />
+    sharkFish: Pyydystä <object id="item-raw_shark-f543d44b-0cc7-4d5a-9cdc-50ce8d90cb86"
+      alwaysShow="true" /> aktiviteetista. <numberProgress />
+    explore: Tutki maailmaa ja paikanna <object id="2464445f-9855-4e22-867d-5a5de113f67d"
+      />. <numberProgress />
+    lights: Ota <object id="lightSource" /> käyttöön joka käteen yhtä aikaa. <numberProgress
+      />
