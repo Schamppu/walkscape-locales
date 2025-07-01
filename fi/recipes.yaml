@@ -25,7 +25,7 @@ singulars:
         activityDesc: Valmistat ahjossa sulatetusta pronssista kestävän louhintatyökalun.
       ironPickaxe:
         name: Valmista rautahakku
-        activityDesc: Sulaa rautaa raivokkaasti takomalla muodostat rautaisen hakkuun.
+        activityDesc: Sulaa rautaa raivokkaasti takomalla muodostat rautaisen hakun.
         desc: Tao raudasta vuoristojen syvempien luolien louhimiseen soveltuva työkalu.
       steelPickaxe:
         name: Valmista teräshakku
@@ -155,11 +155,17 @@ singulars:
   smithing:
     scrap:
       bronzeBarScrap:
-        name: Malmista pronssiharkko (roskasta)
+        name: Valmista pronssiharkko (roskasta)
+        desc: Sulata metalliromua ja vala siitä monikäyttöinen pronssiharkko.
+        activityDesc: Sulatat metalliromua taidokkaasti ja valat siitä pronssiharkon.
       copperBarScrap:
         name: Valmista kupariharkko (romusta)
+        activityDesc: Käyttämällä oikeanlaista tekniikkaa saat sulatettua metallinjäänteitä
+          kestäväksi kupariharkoksi.
       ironBarScrap:
         name: Valmista rautaharkko (romusta)
+        activityDesc: Sulatat taidokkaasti rautapitoisia metallinjäänteitä ja valat
+          niistä uuden ja monikäyttöisen rautaharkon.
       steelBarScrap:
         name: Valmista teräsharkko (romusta)
       tarsiliumBarScrap:
@@ -169,18 +175,31 @@ singulars:
     bars:
       copperBar:
         name: Valmista kupariharkko
+        activityDesc: Käyttämällä oikeanlaista tekniikkaa saat sulatettua kuparimalmia
+          kestäväksi kupariharkoksi.
       bronzeBar:
         name: Valmista pronssiharkko
       ironBar:
         name: Valmista rautaharkko
+        activityDesc: Sulatat taidokkaasti rautamalmia monikäyttöiseksi rautaharkoksi.
       steelBar:
         name: Valmista teräsharkko
       tarsiliumBar:
         name: Valmista tarsiliumharkko
       hydriliumBar:
-        name: Sulata hydriliumharkko
+        name: Valmista hydriliumharkko
       farganiteBar:
-        name: Sulata farganiittiharkko
+        name: Valmista farganiittiharkko
+      silverBar:
+        name: Valmista hopeaharkko
+        desc: Sulatat joukon hopeahippuja ja valat niistä hopeaharkon.
+        activityDesc: Kuumennat kourallisen hopeahippuja tulipesässä ja valat niistä
+          harkon.
+      goldBar:
+        name: Valmista kultaharkko
+        desc: Sulatat joukon kultahippuja ja valat niistä kultaharkon.
+        activityDesc: Sulatat joukon kultahippuja ahjon tulipesässä ja valat niistä
+          harkon.
     wooden:
       woodenShield:
         name: Valmista puinen kilpi
@@ -249,6 +268,8 @@ singulars:
         name: Valmista pajulankku (romu)
       oakPlankScrap:
         name: Valmista tammilankku (romu)
+        desc: Valmista tammilankku, jota arvostetaan erityisesti sen kestävyyden ja
+          kauneuden vuoksi.
       mangrovePlankShavings:
         name: Valmista mangrovelankku (lastut)
       maplePlankScrap:
@@ -306,6 +327,11 @@ singulars:
         name: Hauduta nokkosteetä
       chocolateMilk:
         name: Sekoita suklaamaitoa
+        desc: Suklaamaito on kermainen klassikkoherkku. Se on raikastava yhdistelmä
+          kylmää maitoa, suklaata ja makeutusta.
+        activityDesc: Kaadat kylmää maitoa lasiin, lisäät kaakaojauhetta ja makeutusta,
+          minkä jälkeen sekoitat juomaa reippaasti kunnes sen koostumus on tasainen
+          ja vaahtoaa pinnalta hieman.
       pickles:
         name: Pikkelöi kurkkuja
       troutSoup:
@@ -344,3 +370,42 @@ singulars:
         name: Valmista kasviskeitto
       friednoodles:
         name: Valmista paistetut nuudelit
+      milk:
+        activityDesc: Lypsät luovasti silkkiyrtin maitiaisnestettä ja kuumennat ja
+          jäähdytät nesteen nopeasti. Lopun kasvimassan heität pois turhana.
+        name: Valmista maitoa
+        desc: En oo koskaan juonu maitoa. Enkä juo. - Ja sen kyllä huomaa.
+  trinketry:
+    amulets:
+      jarvonianFlowerNecklace:
+        desc: Pujota kuunliljoja ja lumikelloja kaulaan puettavaksi koristeeksi.
+      amuletOfTheFinding:
+        name: Valmista kompassikoru
+      amuletOfTheEel:
+        name: Valmista ankeriasamuletti
+      amuletOfTheBat:
+        name: Valmista lepakkokoru
+      amuletOfTheHeron:
+        name: Valmista haikarakoru
+      amuletOfTheShrimp:
+        name: Valmista katkarapukaulakoru
+    gems:
+      shapeOpal:
+        activityDesc: Irrotat varovaisesti palasen arvokasta jalokivimateriaalia sitä
+          ympäröivästä värittömästä raakaopaalista. Tulen välähdykset irrotetussa
+          opaalinpalassa palkitsevat tarkan työstösi.
+        name: Muokkaa opaalia
+      shapeStarPearl:
+        name: Muokkaa tähtihelmeä
+      shapeWrentmarine:
+        name: Muokkaa Wrentmariinia
+      shapeTopaz:
+        name: Muokkaa topaasia
+      shapeJade:
+        name: Muokkaa jadea
+      shapeRuby:
+        name: Muokkaa rubiinia
+      shapeSunStone:
+        name: Muokkaa aurinkokiveä
+      shapeEthernite:
+        name: Muokkaa etermiittiä
