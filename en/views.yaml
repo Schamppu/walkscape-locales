@@ -18,9 +18,19 @@ singulars:
       workEfficiencyPenalty: '<icon i="Work efficiency"/> Global work efficiency <c>-{penalty}%</c>'
       notAffectingTraveling: '(not affecting traveling efficiency)'
       requirements: Requirements
+      rewards: Rewards
       levelActivity: 'Level <c>{level}</c> <object id="{skill}"/> activity'
       startActivity: 'Start activity'
       queueActivity: 'Queue activity'
+      travelAndStartActivity: 'Travel and start activity'
+      cantStartActivity: 'Cannot start activity'
+      requirementsNotMet: 'Requirements not met'
+      noActivitiesInLocation: 'There are no activities in <object id="{location}"/>.'
+      locationIsUnknown: 'Location is unknown. Once you have explored this location, you will be able to see activities here.'
+      activitiesInLocation: 'Available activities in <object id="{location}"/>'
+    rewards:
+      experience: '<bp /><c>{xp} </c><object id="{skill}"/> experience'
+      collectibles: '<bp /><icon i="Collectibles"/> <c>{count} collectibles</c> that can be found'
   queue:
     types:
       traveling: Traveling
@@ -34,6 +44,7 @@ singulars:
       switchingToGearSet: Switching to gear set <c>{name}</c>
       noGearSetFound: Chosen gear set not found, have you deleted it?
       activityInLocation: <object id="{activity}"/> in <object id="{location}"/>
+      noPathFound: No path found to the destination.
     options:
       switchGearSet:
         text: Switch to gear set
@@ -47,6 +58,9 @@ singulars:
       removeFromQueue:
         text: Remove from queue
         desc: Removes this action and all following actions from queue.
+      cancelGearSetSwitch:
+        text: Cancel gear set switch
+        desc: Cancels the chosen gear set switch for this action.
     suggestedOptions:
       startActivity: Activity
       startCrafting: Crafting
@@ -411,6 +425,8 @@ singulars:
       jobBoard: Job board
       jobs: Jobs
       owner: Owner
+      showingRoutesFrom: Travel destinations from <object id="{from}"/>.
+      noRoutesFromLocation: No travel destinations from <object id="{from}"/>.
   pfpCreation:
     buttons:
       randomize: Randomize
@@ -642,6 +658,13 @@ plurals:
         few: '-'
         many: '-'
         other: '{} actions'
+      stepsRequiredPerAction:
+        zero: '-'
+        one: '<icon i="Steps"/> <c>{} step</c> required per action'
+        two: '<icon i="Steps"/> <c>{} steps</c> required per action'
+        few: '-'
+        many: '-'
+        other: '<icon i="Steps"/> <c>{} steps</c> required per action'
 maps:
   shop:
     phrases:
