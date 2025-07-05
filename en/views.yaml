@@ -39,7 +39,7 @@ singulars:
     phrases:
       queue: Queue
       queuedActions: Queued actions
-      travelingTo: Traveling from <object id="{from}"/> to <object id="{to}"/>
+      travelingTo: <object id="{from}"/> to <object id="{to}"/>
       untilInventoryFull: Doing until inventory is full
       switchingToGearSet: Switching to gear set <c>{name}</c>
       noGearSetFound: Chosen gear set not found, have you deleted it?
@@ -558,6 +558,15 @@ singulars:
   whileAway:
     phrases:
       whileYouWereAway: While you were away...
+      switchedToGearSet: Switched to gear set <c>{name}</c>
+      gearSetDoesNotExist: The gear set no longer exists
+      consumablesUsed: Consumable used
+      actionsCompleted: Actions completed
+      none: None
+      fromProc: 'From <c>{proc}</c>'
+      fromSource: 'From <object id="{source}"/>'
+      startedNewActivity: Started activity <object id="{activity}"/> in <object id="{location}"/>
+      actionCancelled: Action cancelled
 plurals:
   inventory:
     info:
@@ -703,6 +712,10 @@ maps:
       'showFpsCounter': Show FPS counter
       'shaderOutlineRendering': Render outlines with shaders
       'showStepSourceInActivityView': Show step source selection in Activity view
+      'warningBeforeClaimingExperience': Show warning before claiming experience rewards
+      'showDailyTips': Show daily tips
+      'activityInformationOpen': Show more activity information
+      
     enumSettings:
       'language': Language
       'leaderboardFilter': Show
