@@ -133,6 +133,12 @@ maps:
       'neutral': Neutro
       'masculine': Masculino
       'feminine': Femenino
+  cooldown:
+    time:
+      'days': '{días}<d>'
+      'hours': '{horas}<h>'
+      'minutes': '{minutos}<m>'
+      'seconds': '{segundos}<s>'
 plurals:
   achievements:
     phrases:
@@ -194,6 +200,20 @@ plurals:
         other: Pasos hasta llegar
         two: Pasos hasta llegar
         few: '-'
+      steps:
+        zero: '-'
+        one: '{} paso'
+        two: '{} pasos'
+        few: '-'
+        many: '-'
+        other: '{} pasos'
+      actions:
+        two: '{} acciones'
+        zero: '-'
+        one: '{} acción'
+        few: '-'
+        many: '-'
+        other: '{} acciones'
   inventory:
     info:
       consumableDuration:
@@ -211,6 +231,22 @@ plurals:
         one: La actividad <object id="{activity}" alwaysShow="true"/> requiere <c>{steps}</c>
           pasos por acción. La cantidad elegida de consumibles potenciaría <c>{actions}
           acción</c>.
+  location:
+    phrases:
+      playersHere:
+        zero: '-'
+        one: Jugador <c>{}</c> aquí
+        two: Jugadores <c>{}</c> aquí
+        few: '-'
+        many: '-'
+        other: Jugadores <c>{}</c> aquí
+      playersDoingActivity:
+        few: '-'
+        one: Jugador<c>{}</c> haciendo actividad
+        other: Jugadores <c>{}</c> haciendo actividad
+        zero: '-'
+        many: '-'
+        two: Jugadores<c>{}</c> haciendo actividad
 singulars:
   achievements:
     info:
@@ -324,6 +360,7 @@ singulars:
       routes: Rutas
       tapToShowRoutes: Pulsa para mostrar rutas
       buildings: Edificios
+      owner: Dueño
   pfpCreation:
     buttons:
       choose: Elegir
@@ -351,6 +388,7 @@ singulars:
       defaultExpression: Expresión por defecto
       variants: Variantes
       noVariantSelected: Ninguna variante seleccionada
+      variant: Variante {número}
   faction:
     phrases:
       openFaction: Abrir facción
@@ -462,12 +500,17 @@ singulars:
       skillBreakdown: Aquí está el desglose total de todas las habilidades que tu
         personaje ha subido de nivel durante su aventura. Pulsa sobre cualquiera de
         las habilidades para ver información detallada y qué desbloquea.
+      eachLevelIncreasesStepBank: Cada nivel de personaje después del nivel <c>{nivel}</c>
+        incrementa la cantidad máxima de pasos guardados en <c>{amount}</c>.
     phrases:
       skills: Habilidades
       stepsOfLastWeek: Pasos de los últimos 7 días
       checkOut: Mira mi personaje {name} de WalkScape. Échale un vistazo en:\nhttps://walkscape.app
       checkOutSubject: ¡Mira mi progreso en WalkScape!
       totalLevel: Nivel total
+      savePicture: Guardar imagen
+      level: 'Nivel del personaje: <c>{nivel}</c>'
+      stepsToNextLevel: Pasos hasta el siguiente nivel <c>{pasos}</c>
   permissions:
     phrases:
       pedometerPermission: Permiso del podómetro
@@ -631,6 +674,7 @@ singulars:
       stepSourceInfo: Información sobre origen de pasos
       connectionInfoAndroid: Próximamente, soporte para relojes inteligentes Android.
         Actualmente solo el teléfono es compatible como origen para contar pasos.
+      gameVersion: Versión del juego {versión}
   leaderboards:
     phrases:
       first: Primero
@@ -653,6 +697,8 @@ singulars:
       permanentModifiers: Modificadores permanentes
       noPermanentModifiers: Sin modificadores permanentes.
       noSkillModifiers: Los objetos equipados no tienen modificadores de habilidad.
+      noItemEquipped: Ningún objeto equipado
+      noItemSelected: Ningún objeto seleccionado
   tools:
     phrases:
       emptyToolSlot: Ranura de herramienta vacía
@@ -793,3 +839,54 @@ singulars:
         a traducir el juego a más idioma y expandiendo las traducciones actuales visitando
         <a href="https://wiki.walkscape.app/wiki/Localization">Guia de Traducción</a>.
         !Agradecemos tu ayuda! ❤️
+  queue:
+    options:
+      withdrawGearSet:
+        desc: Retira un kit de equipamiento del banco en el banco si hay uno disponible
+          en alguna de las ubicaciones por las que pases.
+        text: Retirar kit de equipamiento
+      depositUnlockedItems:
+        desc: Deposita todos los objetos desbloqueados de tu inventario en el banco
+          si hay uno disponible en alguna de las ubicaciones por las que pases.
+        text: Depositar objetos desbloqueados
+      switchGearSet:
+        desc: Cambiar a kit de equipamiento seleccionado antes de empezar esta acción.
+        text: Cambiar a kit de equipamiento
+      removeFromQueue:
+        text: Eliminar de la cola
+        desc: Elimina esta acción y todas las siguientes de la cola.
+    suggestions:
+      crafting:
+        onceCertainRarityIsCrafted: Cuando hayas fabricado una rareza concreta o usado
+          todos los materiales, ¿quieres hacer algo?
+        onceAllItemsAreCrafted: Cuando se fabriquen todos los objetos, ¿quieres hacer
+          algo?
+      traveling:
+        onceYouArriveTo: Añadir acción a la cola en <object id="{location}"/>?
+      activity:
+        onceInventoryIsFull: Cuando tu inventario esté lleno, ¿quieres hacer algo?
+        onceAllActionsAreCompleted: Cuando se completen todas las acciones, ¿quieres
+          hacer algo?
+    types:
+      traveling: Viajando
+      activity: Actividad
+      crafting: Fabricando
+    phrases:
+      queue: Cola
+      queuedActions: Acciones en cola
+      travelingTo: Viajando de <object id="{from}"/> a <object id="{to}"/>
+      untilInventoryFull: Haciendo hasta llenar inventario
+      switchingToGearSet: Cambiando a kit de equipamiento <c>{name}</c>
+      noGearSetFound: Kit de equipamiento elegido no encontrado, ¿lo has eliminado?
+      activityInLocation: <object id="{activity}"/> en <object id="{location}"/>
+    suggestedOptions:
+      startActivity: Actividad
+      startCrafting: Fabricar
+      startTraveling: Viajar
+  rumors:
+    phrases:
+      unlockedWalkpediaEntries: Entradas de la WalkPedia desbloqueadas
+      rumorsFromCharacter: Rumores de <c>{characterName}</c>
+  whileAway:
+    phrases:
+      whileYouWereAway: Mientras no estabas...

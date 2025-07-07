@@ -57,6 +57,20 @@ singulars:
       name: Kayak
       requirement: Kayak kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> olan kayak gerekli.
+    arrows:
+      name: Ok
+    weapon:
+      name: Silah
+    ring:
+      name: Yüzük
+    amulet:
+      name: Kolye
+    underwater:
+      name: Su altı
+    shield:
+      name: Kalkan
+    socks:
+      name: Çorap
   general:
     fuel:
       name: Yakıt
@@ -95,6 +109,8 @@ singulars:
       name: Bitki
       requirement: Bitki gerekli.
       requirementLevel: En az <keywordRequirements /> olan bitki gerekli.
+    ingredient:
+      name: Yemek Malzemesi
   misc:
     trash:
       name: Çöp
@@ -187,15 +203,19 @@ singulars:
     pickaxe:
       requirement: Kazma gerekli.
       requirementLevel: En az <keywordRequirements /> olan kazma gerekli.
+      name: Kazma
     saw:
       requirement: Testere gerekli.
       requirementLevel: En az <keywordRequirements /> olan testere gerekli.
+      name: Testere
     screwdriver:
       requirement: Tornavida gerekli.
       requirementLevel: En az <keywordRequirements /> olan tornavida gerekli.
+      name: Tornavida
     sickle:
       requirement: Orak gerekli.
       requirementLevel: En az <keywordRequirements /> olan orak gerekli.
+      name: Orak
     smithingHammer:
       requirement: Demircilik çekici gerekli.
       requirementLevel: En az <keywordRequirements /> olan demircilik çekici gerekli.
@@ -207,6 +227,8 @@ singulars:
       name: Nacak
       requirement: Nacak gerekli.
       requirementLevel: En az <keywordRequirements /> olan nacak gerekli.
+    fishingTool:
+      name: Balıkçılık aleti
   search:
     items:
       consumables:
@@ -214,16 +236,20 @@ singulars:
           name: İksir
         memosphere:
           name: Bilyuvar
+        beverage:
+          name: İçecek
+        food:
+          name: Yiyecek
     skills:
       global:
         name: Genel
   recipes:
     skills:
       cooking:
-        name: Aşçılık
+        name: Yemek tarifi
     products:
       sandwich:
-        name: Sandviç
+        name: Sandviç tarifi
   activities:
     fishing:
       name: Balıkçılık
@@ -231,11 +257,37 @@ singulars:
       name: Maden çıkarma
     foragingPlants:
       name: Bitki toplama
+    woodcuttingTrees:
+      name: Ağaç kesimi
   itemSets:
     advancedDivingGear:
       name: Gelişmiş Dalış Teçhizatı
     expertDivingGear:
       name: Profesyonel Dalış Teçhizatı
+    properGear:
+      name: Münasip teçhizat
+    divingGear:
+      name: Dalış teçhizatı
   locations:
     underwater:
       name: Su Altı
+  weight:
+    ultraLight:
+      name: Ultra hafif
+    heavy:
+      name: Ağır
+    light:
+      name: Hafif
+  services:
+    sawmill:
+      name: Bıçkıhane
+    workshop:
+      name: Atölye
+    kitchen:
+      name: Mutfak
+    forge:
+      name: Demirhane
+    loom:
+      name: Terzihane
+    bench:
+      name: Takıcılık Tezgahı

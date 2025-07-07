@@ -26,7 +26,7 @@ singulars:
         name: Kelkkailu
       traveling:
         name: Matkustaminen
-        desc: Matkustaminen uuteen paikkaan
+        desc: Matkataan lähtöpaikasta <object id="{from}"/> kohteeseen <object id="{to}"/>.
       frisbeeGolfingBeginner:
         name: Kiekkogolf (aloittelija)
         desc: Aloittelijana kiekkogolfissa jokainen heitto on kuin uusi oivallus.
@@ -43,20 +43,20 @@ singulars:
           Suoritat monimutkaisia heittoja, hallitset kiekon kierteen ja tarkkuuden
           taidon ja valloitat haastavat radat vaikuttaviksi voitoiksi.
       crossCountrySkiingBeginner:
-        name: Maastohiihto (aloittelija)
+        name: Perinteinen vuorohiihto maastossa
         desc: Aloittelijan maastohiihtomatkalla jokainen liuku on ihmetystä täynnä.
           Lumiset ladut ovat leikkikenttäsi, jossa opit suksien rytmin ja nautit talvisen
           metsän seesteisestä kauneudesta.
       crossCountrySkiingIntermediate:
-        name: Maastohiihto (keskitaso)
-        desc: Keskitason maastohiihto tuo mukanaan seikkailunhalua. Hiihdät vaihtelevissa
-          maastoissa itsevarmuudella, jossa jokainen työntö eteenpäin on vahvempi
-          ja varmempi, kun tutkit laajoja, lumen peittämiä alueita.
+        name: Luisteluhiihto
+        desc: Aloittelutasoa hieman vaikeammassa luisteluhiihdossa on seikkailun tuntua.
+          Etenet vaihtelevissa maastoissa uudella varmuudella, jossa jokainen työntösi
+          eteenpäin on vahvempi ja varmempi tutkiessasi laajoja, lumen peittämiä alueita.
       crossCountrySkiingDifficult:
-        name: Maastohiihto (haastava)
-        desc: Haastavassa maastohiihdossa pyrit ylittämään kestävyyden ja taidon rajat.
-          Valloitat jyrkkiä rinteitä ja kestät ankarat olosuhteet, ja löydät riemua
-          matkasta kesyttämättömän talvimaiseman lävitse.
+        name: Haastava murtomaalaskettelu
+        desc: Haastavassa murtomaahiihdossa korkeuserojen kasvaessa pyrit ylittämään
+          kestävyyden ja taidon rajat. Valloitat jyrkkiä rinteitä ja kestät ankarat
+          olosuhteet, ja löydät riemua matkasta kesyttämättömän talvimaiseman lävitse.
       exploreArea:
         name: Tutki alue
     jarvonia:
@@ -238,8 +238,9 @@ singulars:
           jäätiköltä. Opit tuntemaan itsesi ehkä paremmin tässä täydellisessä yksinäisyydessä,
           mutta onkohan täällä oikeasti mitään löydettävää?
       caveForaging:
-        name: Poimi luolassa
-        desc: Täällä on säkkipimeää, joten on aina hyvä olla jokin valonlähde mukana.
+        name: Kevätluolassa poiminta
+        desc: Lepakot asuvat täällä keväisin. Luolassa on säkkipimeää, joten on aina
+          hyvä olla jokin valonlähde mukana.
       hornOfRespiteTreasureHunt:
         name: Aarteenetsintä
         desc: Seikkailijakilta on asettanut erilaisia haasteita, joiden tarkoituksena
@@ -270,13 +271,13 @@ singulars:
         desc: Jokaisella hakkusi lyönnillä kivestä paljastuu suonia täynnä hiiltä,
           joka on välttämätöntä maailman sepille, jotta he voivat luoda aseita ja
           haarniskoja kaupunkien suojaukseksi.
-        name: Louhi kivihiiltä
+        name: Kivihiilen louhinta
       mineCopperOre:
         desc: Ilma täyttyy hakkusi rytmikkäistä kolahduksista, kaivaessasi sinnikkäästi
           kuparimalmia.
         name: Louhi kuparimalmia
       mineFarganiteOre:
-        name: Louhi farganiittia
+        name: Farganiittimalmin louhinta
         desc: Hien ja kyynelten kanssa louhit hitaasti osan farganiitista välittämättä
           sen äärimmäisestä kovuudesta.
       mineIronOre:
@@ -304,18 +305,25 @@ singulars:
         name: Kullanhuuhdonta
       surfaceSaltMining:
         desc: Suolan louhinta kaivoksessa on kovaa työtä, koska kuivut hyvin nopeasti
-          jatkuvan kontaktin vuoksi suolan kanssa. Onneksi nämä haliitti (suolakivi)
-          kiteet ovat hyvin tuuletetulla pinnalla ja irtoavat helposti, kun niihin
-          osuu hakulla.
-        name: Pintasuolan louhinta
+          jatkuvan kontaktin vuoksi suolan kanssa. Onneksi nämä suolakiven haliittikiteet
+          ovat avolouhoksen seinämillä, joissa ilma kulkee hyvin, ja ne irtoavat helposti,
+          kun niitä kopauttaa hakulla.
+        name: Suolan avolouhinta
       spelunking:
         name: Luolien tutkinta
         desc: Ryömit maassa kuin lisko. Pahaenteiset ajatukset sumentavat mielesi
-          ja melkein halvaannuttavat sinut. Onnistut hetkeksi ajattelemaan jotakin
-          muuta ja jatkamaan syvemmälle
+          ja vievät liikkumiskykysi. Onnistut kuitenkin hetken ohjaamana ajatuksesi
+          toisaalle ja jatkamaan syvemmälle. Ennen pitkää uusi tutkimaton polku tulee
+          näkyviin ja täyttää sinut riemulla.
       stoneQuarrying:
         name: Kiven louhinta
         desc: Kivi ja kallio!
+      minePitCopperOre:
+        name: Kuparin avolouhinta
+      minePitTinOre:
+        name: Tinan avolouhinta
+        desc: Avolouhoksen kivipaaseista ja seinämisltä saattaa löytyä tinamalmin
+          pintasuonia, joiden irti louhiminen vaatii lujaa luonnetta ja pitkäjänteisyyttä.
     syrenthia:
       caveDiving:
         name: Luolasukellus
@@ -324,9 +332,9 @@ singulars:
           pumppaamaan ja adrenaliinin täyttämään suonesi.
       mineVolcanicRock:
         name: Louhi vulkaanista kiveä
-        desc: Hakkuusi heiluttaminen veden alla on haastavaa, mutta toisinaan hakkuun
-          iskeytyessä tulivuoriperäiseen kiveen siitä irtoaa tarpeeksi suuri pala,
-          jonka voit sitten tunkea reppuusi.
+        desc: Hakun heiluttaminen veden alla on haastavaa, mutta toisinaan sen iskeytyessä
+          tulivuoriperäiseen kiveen saat irti tarpeeksi suuren palan, jonka voit sitten
+          tunkea reppuusi.
       mineTarsiliumOre:
         name: Louhi tarsiliummalmia
         desc: Yllätykseksesi löydät veden alta tarsiliummalmeja, ja alat louhia niitä
@@ -355,7 +363,7 @@ singulars:
           jonka rönsyilevät oksat kurottelevat taivasta.
         name: Kaada tammia
       cutPineTrees:
-        desc: Mäntypuiden kaatamiseksi käsittelet kirvestäsi taitavasti ja määrätietoisesti.
+        desc: Käyttelet kirvestäsi määrätietoisesti kaataessasi mäntyjä.
         name: Kaada mäntyjä
       cutSpruceTrees:
         desc: Tartut kirveeseen tiukasti ja käytät voimiasi kaataaksesi korkeat kuuset.
@@ -390,7 +398,7 @@ singulars:
     global:
       cutBambooLogs:
         desc: Lyöt bambua kirveelläsi. Siitä kuuluu tyydyttävä rapiseva ääni.
-        name: Kaada bambuhalkoja
+        name: Kaada bambua
   carpentry:
     jarvonia:
       woodCarving:
@@ -434,7 +442,7 @@ singulars:
           romukasan asioista puuttuu olennaisia osia. Katselet ympäri verstasta etsien
           vastausta ongelmaasi. Kunnes yhtäkkiä saat oivalluksen, ja keksit mitä tehdä!
           On siis aika ryhtyä töihin.
-        name: Nikkaroi
+        name: Nikkarointi
       iceSculpting:
         name: Jään veistäminen
         desc: Taltalla, käsisahalla ja pienellä hakulla varustautuneena muutat jääkuution
@@ -460,3 +468,5 @@ singulars:
           Siirryt rypälepuristimen keskeltä kohti sen päitä, mikä helpottaa käymistä,
           sillä hedelmiin kohdistuva paine mahdollistaa, että ne pääsevät kosketukseen
           prosessista vastaavien hiivojen kanssa.
+  idle:
+    desc: Et tee mitään. Askeleesi tallennetaan Säästettyihin askeleisiin.

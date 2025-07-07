@@ -82,10 +82,10 @@ maps:
       'public': Julkinen
       'friends': Vain kaverit
     boolSettings:
-      'showRecipesMaterialsAreMet': Materiaalivaatimukset eivät täyty
-      'showRecipesServicesAreMet': Palveluvaatimukset eivät täyty
+      'showRecipesMaterialsAreMet': Piilota, jos materiaaleja puuttuu
+      'showRecipesServicesAreMet': Piilota, jos et ole oikean palvelun luona
       'showCompletedAchievements': Näytä suoritetut saavutukset
-      'showRecipesRequirementsAreMet': Tasovaatimukset eivät täyty
+      'showRecipesRequirementsAreMet': Piilota, jos taitosi eivät vielä riitä
       'alwaysStopWhenInventoryFull': Keskeytä aktiviteetti oletuksena repun ylitäyttyessä
       'leftHandedMode': Vasenkätinen tila
       'inventoryCollapsed': Tiivistä reppunäkymä
@@ -407,6 +407,7 @@ singulars:
       checkOut: Tässä on WalkScape-hahmoni {nimi}. Tsekkaa se!\nhttps://walkscape.app
       checkOutSubject: Katso edistymiseni WalkScapessa!
       totalLevel: Kokonaistaso
+      savePicture: Tallenna kuva
     info:
       skillBreakdown: Tässä on hahmosi matkan aikana saavutettujen taitojen kokonaisjakauma.
         Voit napauttaa mitä tahansa taidoista nähdäksesi niistä lisätietoja ja mitä
@@ -509,7 +510,7 @@ singulars:
   trade:
     phrases:
       total: Yhteensä
-      trade: KAUPPAA
+      trade: TEE KAUPAT
       restockIn: 'Täydennys: '
       buying: Ostetaan {amount}
       selling: Myydään {amount}
@@ -613,6 +614,8 @@ singulars:
       stats: Tilastot
       totalSkillXp: Taidon XP yhteensä
       totalSteps: Kokonaisaskelmäärä
+      recordedFrom: Kirjausväli <c>{from}</c> – <c>{to}</c>.
+      highestStepsIn24Hours: Suurin askelmäärä 24h aikana
     info:
       stats: Kokoelma tilastoja jokaisesta askeleesta, jonka olet ottanut Arenumissa.
       chartWarning:

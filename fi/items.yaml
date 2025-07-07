@@ -55,6 +55,8 @@ singulars:
         name: Merikrottinaamari
       ancientTrident:
         name: Muinainen atrain
+      essenceOfTheSwamp:
+        name: Suon ydinaromi
     visas:
       westernContinentBoatPass:
         name: Läntisen mantereen laivalupa
@@ -254,6 +256,10 @@ singulars:
           name: Jarvonian arkku
         gdteChest:
           name: TESK:n arkku
+        rustyChest:
+          name: Ruosteinen arkku
+          desc: Herbertin löytämä ja hilloama vanha, ruostunut arkku odottaa tilaisuuttaan
+            auttaa uusia seikkailijoita alkuun.
       carpentry:
         carpentryChest:
           name: Puutyöarkku
@@ -270,7 +276,7 @@ singulars:
           name: Kalastusarkku
       woodcutting:
         woodcuttingChest:
-          name: Puunhakkausarkku
+          name: Puunhakkuuarkku
         birdNest:
           name: Linnun pesä
       cooking:
@@ -499,7 +505,7 @@ singulars:
           desc: Musta kirves
           name: Tarsiliumkirves
         hydriliumLogSplitter:
-          name: Hydrilium tukinhalkoja
+          name: Hydrilium-tukinhalkoja
           desc: Hydriliumilla vahvistettu halkaisukone.
         hydriliumHatchet:
           name: Hydriliumkirves
@@ -533,6 +539,23 @@ singulars:
           name: Farganiitti nuolet
           desc: Siniset nuolenkärjet saavat ne näyttämään lähes maagisilta. Valmistetaan
             kuuluisasta farganiitti metallista.
+      trinketry:
+        goldStarPearlRing:
+          name: Kultainen tähtihelmisormus
+          desc: Kultasormus, johon on upottu hienostuneesti leikattu tähtihelmi. Se
+            lisää ripauksen hienostuneisuutta ja yläluokkaisuutta kantajansa asusteisiin.
+        flowerNecklace:
+          desc: Jarvonialaiset kukkakäädyt, joita koristavat kuunliljat ja lumikellot,
+            voi pukea kaulaansa koristamaan.
+          name: jarvonialaiset kukkakäädyt
+        silverStarPearlRing:
+          name: Hopeinen tähtihelmisormus
+          desc: Hopeasormus, johon on upotettu kiillotettu tähtihelmi. Kun valo osuu
+            jalokiveen, se hohtaa kauniin pehmeästi.
+        cutStarPearl:
+          name: Tähtihelmi
+          desc: Tähtihelmi on keskeisessä roolissa wallisialaisen taidemaalarin kuuluisassa
+            teoksessa "Tyttö ja tähtihelmikorvakoru".
   looted:
     equipmentSets:
       dimensional:
@@ -1092,9 +1115,9 @@ singulars:
           oivia asioita puoleensa.
         name: Imuamuletti
       conservationistHat:
-        name: Luonnonsuojelian hattu
+        name: Luonnonsuojelijan hattu
       conservationistShirt:
-        name: Luonnonsuojelian paita
+        name: Luonnonsuojelijan paita
       rockstarAmulet:
         desc: Kivi-tähden, siis rokkitähden, muotoinen amuletti.
         name: Kivi-tähti amuletti
@@ -1160,9 +1183,9 @@ singulars:
         name: Kävelysauvat
         desc: Näistä on paljon apua silloin kun kävelee epätasaisessa maastossa.
       conservationistShorts:
-        name: Luonnonsuojelian shortsit
+        name: Luonnonsuojelijan shortsit
       conservationistBoots:
-        name: Luonnonsuojelian saappaat
+        name: Luonnonsuojelijan saappaat
       cursedAwl:
         name: Kirottu naskali
     combat:
@@ -1172,22 +1195,38 @@ singulars:
     carpentry:
       birchPlank:
         name: Koivulankku
+        desc: Tämä sileä ja kalpea koivulankku ja sen puhtoisen vaalea puupinta huokuu
+          yksinkertaista tyylikkyyttä.
       maplePlank:
         name: Vaahteralankku
+        desc: Tämä vaahteralankku on pinnaltaan sileä ja vaalea, ja sen kauniin kutsuva,
+          luja luonne tuo ripauksen hienostuneisuutta mihin tahansa projektiin.
       oakPlank:
         name: Tammilankku
+        desc: Tammilankku on ajaton valinta mihin tahansa puutyöprojektiin. Sen rikas,
+          maanläheinen värisävy ja hyvin erottuvat syykuviot takaavat kestävän ytimen
+          lisäksi koristeellisen pinnan.
       pinePlank:
         name: Mäntylankku
+        desc: Tämän mäntylankun lämpimät maanläheiset sävyt ja luontaiset puunsyiden
+          kuviot säteilevät perinteistä maalasromantiikkaa.
       sprucePlank:
         name: Kuusilankku
+        desc: Tässä kuusilankussa on eläväinen syinen pinta, jossa ruumiillistuu siistin
+          klassinen tyylikkyys ripauksella pisteliäisyyttä.
       teakPlank:
         name: Tiikkilankku
+        desc: Tiikkilankku tunnetaan kestävyydestään ja kullanruskeasta väristään.
+          Se on erinomainen valinta pitkäikäisten ja kauniiden esineiden materiaaliksi.
       willowPlank:
         name: Pajulankku
         desc: Pajulankku tuo herkällä, vaalealla ilmeellään ja hienovaraisella syykuvioinnillaan
           puutöihisi ripauksen eteeristä kauneutta.
       mangrovePlank:
         name: Mangrovelankku
+        desc: Mangrovelankku on kestävää ja vettä hylkivää materiaalia, joka toimii
+          erinomaisesti ulkokäyttöön missä kaivataan vahvuutta yhdistettynä ainutlaatuiseen
+          trooppiseen viehkeyteen.
       woodFragment:
         name: Puupala
       woodScrap:
@@ -1201,6 +1240,11 @@ singulars:
           päällä kuin allakin.
       elmPlank:
         name: Jalavalankku
+        desc: Jalavan joustava rakenne sopii hyvin jousipyssyn materiaaliksi.
+      bambooPlank:
+        desc: Tämä bambulankku vaati työstöä, mutta joustavasta lähtömateriaalista
+          saatiin kaunispintainen lopputulos.
+        name: Bambulankku
     cooking:
       milk:
         desc: Suoraan lypsetty lehmästä, vuohesta tai jopa kamelista. Mahdollisesti
@@ -1334,6 +1378,10 @@ singulars:
       wildRice:
         name: Villiriisi
         desc: Villiheinä, joka tuottaa syötäviä jyviä.
+      milkweed:
+        name: silkkiyrtti
+        desc: Kukkiva kasvi joka tunnetaan vaaleasta maitiaisnesteestään. Perhoset
+          ja toukat rakastavat näitä kukkia!
     mining:
       coal:
         desc: Vaatimaton hiili on käytännöllinen elintärkeänä energialähteenä.
@@ -1372,9 +1420,9 @@ singulars:
           kääntää katseesi pois.
         name: Eterniitti
       starPearl:
-        desc: Tämä helmi on myös kuuluisan Wallisialaisen maalarin teoksessa "Tyttö
-          ja helmikorvakoru".
-        name: Tähtihelmi
+        desc: Raaka ja kiillottamaton helmi, jossa piilee lupaus erittäin hienostuneesta
+          jalokivestä.
+        name: Raaka tähtihelmi
       volcanicRock:
         desc: Tämä on jäänne muinaisesta tulivuoresta, joka on lymyillyt veden alla
           vuosituhansia.
@@ -1516,35 +1564,35 @@ singulars:
           333:n hienousrajaan.
     woodcutting:
       birchLogs:
-        desc: Sileät ja vaaleat koivuhalot huokuvat eleganttia yksinkertaisuutta.
-        name: Koivuhalot
+        desc: Sileät ja vaaleat koivupöllit huokuvat eleganttia yksinkertaisuutta.
+        name: Koivupöllit
       mapleLogs:
-        desc: Vaahterahaloissa on rikkaat ja houkuttelevat säikeet, jotka tuovat esiin
-          luonnon taiteellisuuden jokaisessa kappaleessa.
-        name: Vaahterahalot
+        desc: Vaahterapölleissä on rikkaat ja houkuttelevat syyt, jotka tuovat esiin
+          luonnon taiteellisen nerokkuuden joka vaaksalla.
+        name: Vaahterapöllit
       oakLogs:
-        desc: Tammihaloissa ovat luonteeltaan erityisiä, ja ne huokuvat jaloa läsnäoloa
-          ja kestävää arvokkuutta.
-        name: Tammihalot
+        desc: Tammipöllit ovat olemukseltaan erityisen arvokkaita, huokuen puumateriaalin
+          jaloutta ja ikiaikaista viehkeyttä.
+        name: Tammipöllit
       pineLogs:
-        desc: Vankoista mäntyhaloista huokuu miellyttävä pihkan tuoksu.
-        name: Mäntyhalot
+        desc: Vankoista mäntypölleistä huokuu miellyttävä pihkan tuoksu.
+        name: Mäntypöllit
       spruceLogs:
-        desc: Kuusihalossa on rikas ja lämmin sävy, joka korostaa niiden luonnollista
+        desc: Kuusipöllissä on rikas ja lämmin sävy, joka korostaa niiden luontaista
           kauneutta ja vetovoimaa.
-        name: Kuusihalot
+        name: Kuusipöllit
       teakLogs:
-        name: Tiikkihalot
-        desc: Erittäin kovaa ja raskasta, paksun kaarnan sisäosa on paljon muuta halkoa
-          vaaleampi.
+        name: Tiikkipöllit
+        desc: Puu on erittäin kovaa ja raskasta. Paksun kaarnan sisäpuoli on paljon
+          muuta tukkia vaaleampi.
       willowLogs:
-        name: Pajuhalot
-        desc: Nämä halot ovat melko kevyen painoisia, joten niitä on erittäin mukava
-          käsitellä ja työstää.
+        name: Raitapöllit
+        desc: Nämä pöllit ovat melko kevyitä, joten niitä on erittäin mukava käsitellä
+          ja työstää.
       mangroveLogs:
-        name: Mangrovehalot
-        desc: Nämä halot ovat edelleen kostean tuntuisia, mitä luultavimmin johtuen
-          äärimmäisen vetisestä ympäristöstään, missä ne ovat aikoinaan kasvaneet.
+        name: Mangrovepöllit
+        desc: Nämä pöllit ovat edelleen kostean tuntuisia, mitä luultavimmin johtuen
+          äärimmäisen vetisestä ympäristöstä, jossa ne ovat aikoinaan kasvaneet.
       sturdyBranch:
         name: Tukeva oksa
         desc: Huomattavasti tyypillistä oksaa paksumpi oksa.
@@ -1555,7 +1603,7 @@ singulars:
         name: Juuri
         desc: Hyödyllisiä kasvien juuria monenlaisiin tarkoituksiin.
       elmLogs:
-        name: Jalavahalot
+        name: Jalavapöllit
       heartwood:
         name: Sydänpuu
         desc: Tämä on puun sisin osa, ja tummempaa kuin pintapuu.
@@ -1640,8 +1688,9 @@ singulars:
         desc: Vahvaa syistä kudosta, joka yhdistää lihakset luihin.
     trinketry:
       compassTrinket:
-        desc: Kompassihely hohtaa kirkkaasti valossa. Tästä voisi tehdä amuletin jonain
-          päivänä.
+        desc: Kompassihely hohtaa kirkkaasti valossa. Tästä voisi tehdä kaulakorun
+          jonain päivänä.
+        name: Kompassihely
   currencies:
     adventurersGuildToken:
       name: Seikkailijakillan merkki

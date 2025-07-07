@@ -133,10 +133,15 @@ singulars:
       checkOut: Вот мой персонаж в Walkscape {name}. Зацени!\nhttps://walkscape.app
       checkOutSubject: Зацени мой прогресс в WalkScape!
       totalLevel: Суммарный уровень
+      savePicture: Сохранить изображение
+      level: 'Уровень персонажа: <c>{level}</c>'
+      stepsToNextLevel: Шагов до следующего уровня <c>{steps}</c>
     info:
       skillBreakdown: Тут представлен обзор всех навыков, которые ваш персонаж прокачал
         в течение вашего путешествия. Нажмите на любой из навыков, чтобы увидеть более
         подробную информацию о них и что они открывают.
+      eachLevelIncreasesStepBank: Каждый уровень персонажа после <c>{level}</c> увеличивает
+        максимальное количество сохраненных шагов на <c>{amount}</c>.
   locales:
     phrases:
       language: Язык
@@ -326,6 +331,8 @@ singulars:
       noSkillModifiers: Нет модификаторов навыков от экипированных предметов.
       permanentModifiers: Постоянные модификаторы
       noPermanentModifiers: Нет постоянных модификаторов.
+      noItemEquipped: Нет предметов
+      noItemSelected: Предмет не выбран
   tools:
     phrases:
       emptyToolSlot: Пустая ячейка инструмента
@@ -386,6 +393,7 @@ singulars:
         были зарегистрированы в Apple Здоровье в течение 7 последних дней.
       connectionInfoAndroid: Поддержка смарт часов для Android будет реализована скоро.
         В данный момент только телефон является поддерживаемым источников шагов.
+      gameVersion: Версия игры {version}
   gearSets:
     phrases:
       gearSets: Наборы экипировки
@@ -435,6 +443,7 @@ singulars:
       jobs: Работы
       noActivites: Нет доступных активностей в данной локации.
       tapToShowRoutes: Нажмите, чтобы увидеть маршруты
+      owner: Владелец
   pfpCreation:
     buttons:
       randomize: Выбрать случайно
@@ -460,6 +469,7 @@ singulars:
       dynamicBackground: Динамическое изменение заднего фона меняет картинку на заднем
         фоне в зависимости от локации персонажа.
       currentSelection: Сейчас выбрано
+      variant: Вариант {number}
   worldMap:
     phrases:
       activities: Активности
@@ -569,11 +579,64 @@ singulars:
       manageFriends: Социальные настройки
       pendingInvites: Ждущие ответа приглашения
       friends: Друзья
+  queue:
+    options:
+      switchGearSet:
+        text: Выбрать набор снаряжения
+        desc: Надеть выбранный набор снаряжения перед началом действия.
+      removeFromQueue:
+        desc: Удаляет это и все последующие действия из очереди.
+        text: Удалить из очереди
+      depositUnlockedItems:
+        desc: Складывать в банк все новые предметы из инвентаря в банк, если он доступен
+          в любом из посещаемых мест.
+        text: Складывать в банк новые предметы
+      withdrawGearSet:
+        text: Забрать надор снаряжения
+        desc: Забрать набор снаряжения из банка, если он доступен в любом из посещаемых
+          мест.
+    phrases:
+      switchingToGearSet: Выбрать снаряжение <c>{name}</c>
+      queuedActions: Действия в очереди
+      queue: Очередь
+      travelingTo: Путешествие из <object id="{from}"/> в <object id="{to}"/>
+      untilInventoryFull: Выполнять пока есть место
+      noGearSetFound: Выбранный набор снаряжения не найден. Возможно вы его удалили?
+      activityInLocation: <object id="{activity}"/> в <object id="{location}"/>
+    suggestedOptions:
+      startTraveling: Перемещение
+      startActivity: Активность
+      startCrafting: Изготовление
+    suggestions:
+      crafting:
+        onceAllItemsAreCrafted: Когда все предметы будут изготовлены, хотите сделать
+          что-то еще?
+        onceCertainRarityIsCrafted: Когда вы изготовите предмет определенной редкости
+          или израсходуете все материалы, хотите сделать что-то еще?
+      traveling:
+        onceYouArriveTo: Добавить в очередь действие в <object id="{location}"/>?
+      activity:
+        onceInventoryIsFull: Когда ваш инвентарь заполнится, хотите сделать что-то
+          еще?
+        onceAllActionsAreCompleted: Когда все действия завершены, хотите сделать что-то
+          еще?
+    types:
+      traveling: Путешествие
+      activity: Активность
+      crafting: Изготовление
+  rumors:
+    phrases:
+      unlockedWalkpediaEntries: Разблокированные записи Walkpedia
+      rumorsFromCharacter: Слухи от <c>{characterName}</c>
+  whileAway:
+    phrases:
+      whileYouWereAway: Пока вас не было...
 plurals:
   inventory:
     info:
       consumableDuration:
-        two: '-'
+        two: 'Активность <object id="{activity}" alwaysShow="true"/> требует <c>{steps}</c>
+          шага за действие. Выбранное количество расходников усилит <c>{actions} действий</c>.'
         few: Активность <object id="{activity}" alwaysShow="true"/> требует <c>{steps}</c>
           шага за действие. Выбранное количество расходников усилит <c>{actions} действий</c>.
         many: Активность <object id="{activity}" alwaysShow="true"/> требует <c>{steps}</c>
@@ -648,6 +711,36 @@ plurals:
         few: '-'
         many: Шагов до прибытия
         other: Шагов до прибытия
+      steps:
+        one: '{} шаг'
+        zero: '-'
+        two: '{} шага'
+        few: '{} шага'
+        many: '{} шагов'
+        other: '{} шагов'
+      actions:
+        zero: '-'
+        one: '{} действие'
+        two: '{} действия'
+        few: '{} действия'
+        many: '{} действий'
+        other: '{} действий'
+  location:
+    phrases:
+      playersHere:
+        one: <c>{}</c> игрок здесь
+        zero: <c>{}</c> игроков здесь
+        other: <c>{}</c> игроков здесь
+        two: <c>{}</c> игрока здесь
+        few: <c>{}</c> игрока здесь
+        many: <c>{}</c> игроков здесь
+      playersDoingActivity:
+        one: <c>{}</c> игрок выполняет активность
+        other: <c>{}</c> игроков выполняют активность
+        two: <c>{}</c> игрока выполняют активность
+        few: <c>{}</c> игрока выполняют активность
+        many: <c>{}</c> игроков выполняют активность
+        zero: <c>{}</c> игроков выполняют активность
 maps:
   shop:
     phrases:
@@ -773,3 +866,9 @@ maps:
       'masculine': Мужественный
       'feminine': Женственный
       'neutral': Нейтральный
+  cooldown:
+    time:
+      'days': '{days}<д>'
+      'minutes': '{minutes}<м>'
+      'hours': '{hours}<ч>'
+      'seconds': '{seconds}<с>'

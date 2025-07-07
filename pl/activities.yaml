@@ -89,7 +89,7 @@ singulars:
         name: Golf dyskowy (Ekspert)
       traveling:
         name: Podróżowanie
-        desc: Podróżowanie do nowej lokacji
+        desc: Podróż z <object id="{from}"/> do <object id="{to}"/>.
       exploreArea:
         desc: Tworzysz notatki na czystej kartce papieru podczas odkrywania okolicy.
           Będą one przydatne podczas przyszłych eksploracji.
@@ -346,7 +346,7 @@ singulars:
       mineCoal:
         desc: Każde uderzenie twego wiernego kilofa odkrywa żyły węgla, niezbędnego
           do zapewnienia kowalom paliwa do wykuwania broni i zbroi, które bronią królestwa.
-        name: Wydobywanie rudy węgla
+        name: Wydobywanie węgla
       mineCopperOre:
         desc: Rytmiczne brzęki kilofa uderzającego o skalistą powierzchnię wypełniają
           przestrzeń, gdy wytrwale wydobywasz rudę miedzi.
@@ -382,7 +382,7 @@ singulars:
       spelunking:
         desc: Czołgasz się mocno po ziemi jak płaz. Złowieszcze myśli zaćmiewają twój
           umysł, niemal paraliżując. Udaje ci się je na chwilę odepchnąć i iść dalej.
-          Wkrótce odkryje się nowa, niezbadana ścieżka, która napełni cię radością
+          Wkrótce odkryje się nowa, niezbadana ścieżka, która napełni cię radością.
         name: Speleologia
       surfaceSaltMining:
         name: Odkrywkowe wydobywanie soli
@@ -406,7 +406,7 @@ singulars:
         desc: Odważnie (albo głupio) nurkujesz w mroczne rozległe jaskinie. Ta aktywność
           jest jedną z najniebezpieczniejszych w Arenum. Z pewnością sprawia, że serce
           pompuje mocniej, a adrenalina wypełnia żyły.
-        name: Nurkowanie Jaskiniowe
+        name: Nurkowanie jaskiniowe
       mineVolcanicRock:
         name: Wydobywanie skały wulkanicznej
         desc: Machanie kilofem pod wodą to wyzwanie, ale przy okazji uderzenia w skałę
@@ -576,7 +576,7 @@ singulars:
           w okolicy. Polowanie na nie jest bezpieczne, ale z pewnością żmudne.
       invasiveSpeciesHunting:
         name: Polowanie na szkodniki
-        desc: Bagno jest pełne robakopodobnych stworzeń, które nie są rodzime dla
+        desc: Bagno jest pełne robako-podobnych stworzeń, które nie są rodzime dla
           tego siedliska. Należy uważnie szukać śladów ich obecności i eliminować
           wszystkie znalezione.
     global:
@@ -625,3 +625,9 @@ singulars:
         desc: Na rynku antyków w Porcie Czarnej Magii panuje duży ruch, a znalezienie
           kupców i sprzedawców na różne towary wymaga czasu. Od czasu do czasu można
           znaleźć korzystną transakcję z klejnotem lub rzadkim przedmiotem.
+  idle:
+    desc: Nie wykonujesz czynności. Twoje kroki są zapisywane.
+    name: Bezczynny
+  unknown:
+    name: Nieznany
+    desc: Wykonujesz czynność, ale gra nie może jej określić.

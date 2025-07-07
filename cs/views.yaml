@@ -124,6 +124,12 @@ maps:
       'masculine': Pánské
       'feminine': Ženské
       'neutral': Neutrální
+  cooldown:
+    time:
+      'days': '{days}<d>'
+      'hours': '{hours}<h>'
+      'minutes': '{minutes}<m>'
+      'seconds': '{seconds}<s>'
 plurals:
   achievements:
     phrases:
@@ -137,8 +143,8 @@ plurals:
   activity:
     phrases:
       actionsRemaining:
-        few: Zbývající akce
-        many: Zbývající akce
+        few: '-'
+        many: '-'
         one: Zbývající akce
         other: Zbývajících akcí
         two: '-'
@@ -151,8 +157,8 @@ plurals:
         two: '-'
         zero: '-'
       stepsRemainingInTotal:
-        few: Zbývající kroky celkem
-        many: Zbývajícího kroku celkem
+        few: '-'
+        many: '-'
         one: Zbývající krok celkem
         other: Zbývajících kroků celkem
         two: '-'
@@ -185,6 +191,20 @@ plurals:
         other: Kroků do příchodu
         two: '-'
         zero: '-'
+      actions:
+        few: '-'
+        one: '{} akce'
+        zero: '-'
+        two: '{} akcí'
+        many: '-'
+        other: '{} akcí'
+      steps:
+        one: '{} krok'
+        other: '{} kroky'
+        zero: '-'
+        two: '{} kroky'
+        few: '-'
+        many: '-'
   inventory:
     info:
       consumableDuration:
@@ -202,6 +222,22 @@ plurals:
         one: Aktivita <object id="{activity}" alwaysShow="true"/> vyžaduje <c>{steps}</c>
           kroků na akci. Zvolené množství spotřebních předmětů by vylepšilo <c> {actions}
           akcí</c>.
+  location:
+    phrases:
+      playersDoingActivity:
+        two: <c>{}</c> hráči provádějící aktivitu
+        few: '-'
+        many: '-'
+        other: <c>{}</c> hráči provádějící aktivitu
+        zero: '-'
+        one: <c>{}</c> hráč provádějící aktivitu
+      playersHere:
+        other: <c>{}</c> hráčů zde
+        zero: '-'
+        one: <c>{}</c> hráč zde
+        two: <c>{}</c> hráčů zde
+        few: '-'
+        many: '-'
 singulars:
   achievements:
     info:
@@ -313,6 +349,7 @@ singulars:
       buildings: Budovy
       jobBoard: Nástěnka misí
       jobs: Úkoly
+      owner: Majitel
   worldMap:
     phrases:
       youHaveNotExplored: Toto místo jsi ještě neprozkoumal. Informace o této lokalitě
@@ -403,6 +440,7 @@ singulars:
       connectionInfoAndroid: Podpora chytrých hodinek pro Android bude brzy k dispozici.
         V současné době je jako zdroj počítání kroků podporován pouze telefon.
       exitToCharacterSelection: Návrat k výběru postavy
+      gameVersion: Verze hry {version}
   gearSets:
     phrases:
       noActivitiesSelected: Nejsou vybrány žádné aktivity
@@ -464,6 +502,7 @@ singulars:
       mainOptions: Hlavní možnosti
       defaultExpression: Výchozí výraz
       colorOptions: Barevné možnosti
+      variant: Varianta {number}
   stats:
     info:
       chartWarning:
@@ -592,12 +631,17 @@ singulars:
       skillBreakdown: Zde je kompletní rozpis všech dovedností, které vaše postava
         během vaší cesty vylepšila. Klepnutím na kteroukoli z dovedností zobrazíte
         podrobnější informace o nich a o tom, co odemykají.
+      eachLevelIncreasesStepBank: Po každé úrovni postavy <c>{level}</c> se zvyšuje
+        maximální počet uložených kroků o <c>{amount} </c>.
     phrases:
       checkOutSubject: Podívejte se na můj pokrok ve WalkScape!
       skills: Dovednosti
       stepsOfLastWeek: Kroky za posledních 7 dní
       checkOut: Tady je moje postava z WalkScape {name}. Podívejte se!\nhttps://walkscape.app
       totalLevel: Celková úroveň
+      savePicture: Uložit obrázek
+      level: 'Úroveň postavy: <c>{level}</c>'
+      stepsToNextLevel: Kroky k další úrovni <c>{steps}</c>
   permissions:
     phrases:
       youCanChangeAnyTime: Zdroj počítání kroků můžete kdykoli změnit v <c>Nastavení
@@ -721,11 +765,11 @@ singulars:
   abilities:
     phrases:
       abilities: Schopnosti
-      useAbility: Použijte schopnost
+      useAbility: Použít schopnost
       noAction: Žádná akce
       holdToCast: 'Podržením odešlete'
       holdToUse: Podržte pro použití
-      useConsumable: Použít
+      useConsumable: Použít spotřební materiál
     info:
       abilitiesInfo: Schopnosti jsou speciální akce, které můžete použít k získání
         okamžitých výhod ve hře. Schopnosti mají dobu obnovení, na kterou musíte počkat,
@@ -756,3 +800,55 @@ singulars:
       permanentModifiers: Trvalé modifikátory
       noPermanentModifiers: Žádné trvalé modifikátory.
       noCombatModifiers: Žádné modifikátory boje z vybavených předmětů.
+      noItemEquipped: Žádná položka není vybavena
+      noItemSelected: Není vybrána žádná položka
+  queue:
+    phrases:
+      untilInventoryFull: Dělat, dokud se batoh nenaplní
+      travelingTo: Cestování z <object id="{from}"/> do <object id="{to}"/>
+      noGearSetFound: Vybraná sada výbavy nebyla nalezena, smazali jste ji?
+      queue: Fronta
+      queuedActions: Akce ve frontě
+      switchingToGearSet: Změnit výbavu na <c>{name}</c>
+      activityInLocation: <object id="{activity}"/> v <object id="{location}"/>
+    suggestedOptions:
+      startTraveling: Cestování
+      startActivity: Aktivita
+      startCrafting: Tvoření
+    suggestions:
+      traveling:
+        onceYouArriveTo: Přidat akci do fronty v <object id="{location}"/>?
+      crafting:
+        onceCertainRarityIsCrafted: Jakmile vyrobíte určitou vzácnost nebo spotřebujete
+          všechny materiály, chcete něco udělat?
+        onceAllItemsAreCrafted: Jakmile budou všechny předměty vyrobeny, chcete něco
+          udělat?
+      activity:
+        onceInventoryIsFull: Jakmile je váš batoh plný, chcete něco udělat?
+        onceAllActionsAreCompleted: Chcete něco udělat po dokončení všech akcí?
+    types:
+      traveling: Cestování
+      activity: Aktivita
+      crafting: Tvoření
+    options:
+      switchGearSet:
+        text: Změnit sadu výbavy
+        desc: Před zahájením této akce změňte na vybranou sadu výbavy.
+      depositUnlockedItems:
+        text: Vložit odemčené předměty
+        desc: Vloží všechny odemčené předměty z vašeho batohu do banky, pokud je nějaký
+          k dispozici v některé z lokací, kterými procházíte.
+      withdrawGearSet:
+        text: Vybrat sadu výbavy
+        desc: Vyberte sadu vybavení z banky pokud je k dispozici v některém z míst,
+          kterými procházíte.
+      removeFromQueue:
+        text: Odebrat z fronty
+        desc: Odstraní tuto akci a všechny následující akce z fronty.
+  rumors:
+    phrases:
+      unlockedWalkpediaEntries: Odemčené položky Walkpedie
+      rumorsFromCharacter: Fámy od <c>{characterName}</c>
+  whileAway:
+    phrases:
+      whileYouWereAway: Dokud jste byli pryč...
