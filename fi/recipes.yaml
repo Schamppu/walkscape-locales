@@ -120,12 +120,18 @@ singulars:
         desc: Valmista suurehko kalaverkko köydestä.
       basicFishingRod:
         name: Valmista simppeli onkivapa
+        desc: Valmista simppeli onkivapa yhdistämällä lankkuja ja siimaa.
+        activityDesc: Ohennat ja liität varovasti lankkujen osat sopivasti yhteen,
+          minkä jälkeen lisäät siiman ja toteat rakentaneesi simppelin onkivavan.
       pineFishingRod:
         name: Valmista mäntyonkivapa
       oakFishingRod:
         name: Valmista tammionkivapa
       willowFishingRod:
-        name: Valmista pajuonkivapa
+        name: Valmista onkivapa raidasta
+        desc: Valmista onkivapa raidasta yhdistämällä lankkuja ja siimaa.
+        activityDesc: Raitalankut ovat erittäin keveitä ja silti kestäviä. Tarkalla
+          sorminäppäryydellä lisätty siima viimeistelee uuden onkivapasi.
       advancedFishingRod:
         name: Valmista edistynyt onkivapa
         desc: Valmista edistynyt kalastusvapa lankuista ja ja siimasta.
@@ -133,15 +139,22 @@ singulars:
         name: Valmista hummerimerta
       fishingSpear:
         name: Valmista kalastuskeihäs
+        activityDesc: Valitset sopivanmittaisen puun keihään varreksi ja muovaat sen
+          käteen sopivaksi. Lisäät vielä teroitetun kärjen ja simppeli kalastuskeihäs
+          on valmis. Keihäs voisi olla vielä tehokkaampi lisäämällä siiman keihään
+          saamiseksi takaisin, ja vuolemalla teräviä väkäsiä varteen lähelle kärkeä.
       coralFishingSpear:
         name: Valmista korallinen kalastuskeihäs
       smallFishingNet:
         name: Puno simppeli kalaverkko
+        desc: Valmista simppeli kalaverkko muutamasta köydenpätkästä.
       elderhideFishingNet:
         name: Valmista ikitaljakalaverkko
     diving:
       kelpDivingMask:
         name: Valmista leväsukellusmaski
+        desc: Simppeli vedenalaisen näkemisen apuväline, jonka runko on valmistettu
+          kuivasta levästä kasvoille sopivaksi ja johon on lisätty läpinäkyvä osa.
       kelpDivingBody:
         name: Valmista leväsukelluspaita
       kelpDivingLegs:
@@ -246,10 +259,18 @@ singulars:
         desc: Vaihda teräsvahvistettujen saappaidesi kärjet tarsiliumvahvisteisiksi.
         activityDesc: Vaihdat teräsvahvistettujen saappaidesi kärkisuojat tarsiliumisiksi,
           jotta varpaasi ovat ensiluokkaisessa suojassa.
+      reinforcedBellows:
+        activityDesc: Ahjon palkeiden käyttökokemuksesi perusteella tiedät tasan tarkkaan,
+          mistä kohden vahvistaa palkeesi pitkäikäisemmiksi.
+        name: Valmista vahvistetut palkeet
+        desc: Parantele peruspalkeista vahvistetut palkeet.
   carpentry:
     planks:
       willowPlank:
-        name: Leikkaa pajulankku
+        name: Leikkaa raitalankku
+        activityDesc: Pajunsukuisesta raitapuusta on helppo viimeistellä lankku; sen
+          työstäminen on kuin voita leikkaisi.
+        desc: Valmista raitalankku, jota arvostetaan materiaalina keveytensä takia.
       mangrovePlank:
         name: Leikkaa mangrovelankku
       coralPlank:
@@ -290,7 +311,10 @@ singulars:
         activityDesc: Puuromun jämäpalojen yhdistely vie aikansa, mutta saat lopulta
           valmistettua virheettömän lankun.
       willowPlankScrap:
-        name: Valmista pajulankku (romu)
+        name: Valmista raitalankku (romu)
+        desc: Valmista raitalankku, jota arvostetaan materiaalina sen keveyden vuoksi.
+        activityDesc: Tästä puuromusta on varsin helppo yhdistellä lankku, aivan kuin
+          voita leikkaisi.
       oakPlankScrap:
         name: Valmista tammilankku (romu)
         desc: Valmista tammilankku, jota arvostetaan erityisesti sen kestävyyden ja
@@ -439,3 +463,23 @@ singulars:
         name: Muokkaa aurinkokiveä
       shapeEthernite:
         name: Muokkaa etermiittiä
+  tailoring:
+    clothing:
+      basicLeather:
+        activityDesc: Parkitset eläimen vuotaa yksinkertaiseksi nahkanpalaksi, opittuasi
+          muinaiset tammenkuoren ominaisuuksia hyödyntävät menetelmät tämän luonnonmateriaalin
+          vahvistamiseksi.
+        name: Valmista simppeli nahanpala
+        desc: Valmista yksinkertainen mutta kestävä nahanpala.
+      qualityLeather:
+        activityDesc: Työstä eläimen vuotaa, kunnes saat siitä ylivoimaisen laadukasta
+          nahkaa. Parkitse, venytä ja hiero siihen pehmentäviä aineita osana työvaiheita
+          jotka kukin vaativat tarkkuutta ja kärsivällisyyttä. Näytät taitosi ikiaikaisessa
+          nahan työstämisen prosessissa ja valmistat nahasta monipuolista ja kestävää
+          materiaalia.
+        desc: Valmista korkealaatuista nahkaa, joka sopii erinomaisesti kestävien
+          varusteiden ja haarniskan valmistukseen.
+        name: Valmista laadukas nahanpala
+      elderhideLeather:
+        desc: Valmista vahvaa ja kestävää nahkaa, joka on tehty harvinaisesta ja sitkeästä
+          vuodasta.

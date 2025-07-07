@@ -3,6 +3,9 @@ singulars:
     fromActivity:
       oldWarSword:
         name: Vanha sotamiekka
+        desc: Tämä pitkämiekka on ruosteinen, mutta siitä erottuu yhä tuntomerkkejä
+          joiden perusteella se vaikuttaa olevan Wallisiasta. Ehkä se on Verenpunaisen
+          viirin sodan ajoilta?
       silverPocketWatch:
         name: Hopeinen taskukello
       ancientAnkh:
@@ -263,9 +266,15 @@ singulars:
       carpentry:
         carpentryChest:
           name: Puutyöarkku
+          desc: Tämän kirstun pintakoristelun uskomaton yksityiskohtaisuus viittaa
+            siihen, että tämä puutyötarvikkeiden seasta löytämäsi arkun on tehnyt
+            todella taidokas puuseppä.
       agility:
         agilityChest:
           name: Ketteryysarkku
+          desc: Ruskea nahkasaapas joka on pudonnut lähistölle kun olit reippailemassa,
+            vaikka ketään ei näy lähistöllä. Tarkemmin tutkittaessa huomaat, että
+            saappaan sisälle on piilotettu jotakin.
       mining:
         miningChest:
           name: Louhinta-arkku
@@ -274,20 +283,37 @@ singulars:
       fishing:
         fishingChest:
           name: Kalastusarkku
+          desc: Kalojahan meressä riittää, mutta akvaarioissa on ne harvinaisimmat
+            ihmeet.
       woodcutting:
         woodcuttingChest:
           name: Puunhakkuuarkku
+          desc: Kaunis ja koristeellinen puinen arkku, jonka kanteen on liitetty erilaisten
+            puiden kuorta. Löysit sen kaatamasi puun juurten välistä.
         birdNest:
-          name: Linnun pesä
+          name: Linnunpesä
+          desc: Tämä linnunpesä putosi puusta jota olit kaatamassa. Sen omistaja ei
+            pesää enää löydä, joten voit saman tien kurkistaa mitä siellä on.
       cooking:
         cookingChest:
           name: Ruoanlaittoarkku
+          desc: Tämä suuri valurautainen kattila ilmestyi pannujesi ja astioidesi
+            keskelle sillä välin kun olit keskittynyt estämään ruokasi pohjaanpalamista.
       crafting:
         craftingChest:
           name: Käsityöarkku
+          desc: Sillä välin kun valmistelit käsitöitäsi, huomasit tämän ison punaisen
+            työkalulaatikon omien työkalujesi vieressä.
       smithing:
         smithingChest:
           name: Taonta-arkku
+          desc: Huomasit tämän painavan metallisen ja alasimen muotoisen astian ahjossa
+            sulattaessasi malmiasi. Kuka ihme olisi jättänyt sen noin vain sinne?
+      trinketry:
+        trinketryChest:
+          name: Korutyöarkku
+          desc: Rasia täynnä arvoesineitä, joka toivon mukaan ei ole naamioitunut
+            hirviö!
   crafted:
     equipmentSets:
       bronze:
@@ -451,7 +477,8 @@ singulars:
           desc: Viehe, joka näyttää vesipyörteeltä. Varsin tehokas kalojen pyytämiseen.
           name: Vuorovesiviehe
         willowFishingRod:
-          name: Pajuonkivapa
+          name: Onkivapa raidasta
+          desc: Pajunsukuisesta raidasta rakennettu onkivapa on kevyt ja pehmeäpintainen.
         lobsterPot:
           name: Hummerimerta
           desc: Nakkaa mereen, ja hummerit eksyvät sinne kuin itsestään.
@@ -556,6 +583,14 @@ singulars:
           name: Tähtihelmi
           desc: Tähtihelmi on keskeisessä roolissa wallisialaisen taidemaalarin kuuluisassa
             teoksessa "Tyttö ja tähtihelmikorvakoru".
+      tailoring:
+        basicLeather:
+          desc: Pala nahkaa, joka on valmis käytettäväksi hyötyesineiden valmistuksessa.
+          name: Simppeli nahanpala
+        elderhideLeather:
+          desc: Joustavaa materiaalia, joka on parkittu sen mätänemisen ehkäisemiseksi.
+        qualityLeather:
+          name: laadukas nahanpala
   looted:
     equipmentSets:
       dimensional:
@@ -796,6 +831,15 @@ singulars:
           name: Silmälappu
         pirateHat:
           name: Merirosvohattu
+        rustyFishingNet:
+          name: Rähjäinen kalaverkko
+          desc: Tämä pieni kalaverkko on rähjääntynyt ja purkaantuu liitoksistaan.
+            Sillä voi yhä kalastaa, joten on se tyhjää parempi.
+        rustyFishingRod:
+          name: Rähjäinen onkivapa
+          desc: Tämä vanha ja rähjäinen onkivapa on parhaat päivänsä nähnyt. Sen solmuisella
+            siimalla voi yhä kalastaa, mutta mahtaako sillä kovin kummoista saalista
+            tulla!
       foraging:
         halflingsFeetSlippers:
           name: Puolituisen tossut
@@ -843,6 +887,10 @@ singulars:
           name: Pieni säkki
         wildernessGuideBook:
           name: Erämaan ohjekirja
+        rustySickle:
+          desc: Aikoinaan tämä sirppi on ollut hieno, mutta nyt umpiruosteessa. Sitä
+            voi yhä käyttää keräilyyn, vaikkei yhtä hyvin kuin aikoinaan.
+          name: Rähjäinen sirppi
       mining:
         miningHelm:
           name: Louhintakypärä
@@ -877,6 +925,11 @@ singulars:
         iceAxe:
           name: Jääkirves
           desc: Jäädyttää sormesi kun siihen koskee. Käytä hanskoja!
+        rustyPickaxe:
+          name: Rähjäinen hakku
+          desc: Aikoinaan tämä hakku on ollut mainio, mutta nyt se on haurastunut
+            ja umpiruosteessa. Sillä voi yhä louhia, vaikkei hurjan hyvin sen nykytilan
+            huomioiden.
       smithing:
         smeltingGoggles:
           desc: Suoja silmillesi, jotta voit katsoa kirkkaasti loistavaa sulaa metallia.
@@ -936,6 +989,11 @@ singulars:
           name: Halkokori
         woodcuttingGuidebook:
           name: Puunhakkaajan ohjekirja
+        rustyHatchet:
+          desc: Tämä pikku kirves on aikoinaan ollut hieno työkalu, ja nyt umpiruosteessa
+            ja varrestaan jo hieman laho. Kyllä sillä vielä puunhakkuu onnistuu, mutta
+            on se selvästi parhaat päivänsä nähnyt.
+          name: Rähjäinen kirves
     versatile:
       backpack:
         desc: Lisää repputilaa, tarkoittaa siis että sinulla on lisää tilaa kantaa
@@ -1004,6 +1062,8 @@ singulars:
         name: Puolituisen hanskat
       trustyTent:
         name: Luotettava teltta
+        desc: Tämä vanha teltta on ollut monen omistajan käytössä. Se siirtyy aina
+          eteenpäin sille jotka tarvitsevat luotettavan suojan reissuillaan.
       oldSilverRing:
         name: Vanha hopeasormus
       oldGoldRing:
@@ -1057,10 +1117,14 @@ singulars:
         name: Edelläkulkijan viitta
       rustyDivingHelm:
         name: Ruosteinen sukelluskypärä
+        desc: Vaikka tämä sukelluskypärä on vanha ja rähjäinen, se tuntuu yhä soveltuvan
+          tehtäväänsä.
       rustyDivingBody:
         name: Ruosteinen sukelluspuku
+        desc: Tämä on sukellusasun yläosa, ja perin raskas yllä.
       rustyDivingLegs:
         name: Ruosteiset sukellushousut
+        desc: Tämä on rähjäisen sukellusasun alaosa, perin epämukava mutta yhä vesitiivis.
       kelpDivingMask:
         name: Leväsukellusnaamari
       kelpDivingBody:
@@ -1191,6 +1255,9 @@ singulars:
     combat:
       swashbucklerSword:
         name: Hurjapään miekka
+    supporter:
+      theKakesWalkingStick:
+        name: Keikari-Kaken kävelykeppi
   materials:
     carpentry:
       birchPlank:
@@ -1219,8 +1286,8 @@ singulars:
         desc: Tiikkilankku tunnetaan kestävyydestään ja kullanruskeasta väristään.
           Se on erinomainen valinta pitkäikäisten ja kauniiden esineiden materiaaliksi.
       willowPlank:
-        name: Pajulankku
-        desc: Pajulankku tuo herkällä, vaalealla ilmeellään ja hienovaraisella syykuvioinnillaan
+        name: Raitalankku
+        desc: Raitalankku tuo herkällä, vaalealla ilmeellään ja hienovaraisella syykuvioinnillaan
           puutöihisi ripauksen eteeristä kauneutta.
       mangrovePlank:
         name: Mangrovelankku
@@ -1552,6 +1619,7 @@ singulars:
         name: Metallilastu
       metalFragment:
         name: Metallipala
+        desc: Hyvälaatuisia metallinpalasia.
       hydriliumBar:
         name: Hydriliumharkko
         desc: Hydriliumharkko on kalpeanvihreä.

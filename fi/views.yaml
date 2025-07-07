@@ -173,7 +173,7 @@ plurals:
         one: Askel tason nousuun
         other: Askelta tason nousuun
         zero: '-'
-        two: Askeleita tason nousuun
+        two: Askelta tason nousuun
         few: '-'
         many: '-'
       stepsUntilArrival:
@@ -197,7 +197,7 @@ plurals:
       consumableDuration:
         one: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
           askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
-          <c>{actions} toimintoa</c>.
+          <c>{actions} toiminnon</c>.
         other: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
           askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
           <c>{actions} toimintoa</c>.
@@ -209,6 +209,19 @@ plurals:
           <c>{actions} toimintoa</c>.
         few: '-'
         many: '-'
+  location:
+    phrases:
+      playersHere:
+        two: <c>{}</c> pelaajaa alueella
+        one: <c>{}</c> pelaaja alueella
+        other: <c>{}</c> pelaajaa alueella
+      playersDoingActivity:
+        zero: '-'
+        one: <c>{}</c> pelaajaa tekee tätä
+        two: <c>{}</c> pelaajaa tekee tätä
+        few: '-'
+        many: '-'
+        other: <c>{}</c> pelaajaa tekee tätä
 singulars:
   achievements:
     info:
@@ -289,7 +302,7 @@ singulars:
       selectedConsumable: Valitut hyödykkeet
       consumables: Hyödykkeet
       noConsumableSelected: Hyödykettä ei ole valittu. Voit valita yhden alla olevista.
-      noConsumables: Ei hyödykkeitä repussasi.
+      noConsumables: Repussasi ei ole hyödykkeitä.
       cantBeDropped: Esinettä ei voi pudottaa.
       noFoodConsumables: Repussasi ei ole <hl>ruokaa</hl>.
       noPotionConsumables: Repussasi ei ole <hl>rohtoja</hl>.
@@ -394,6 +407,7 @@ singulars:
       inventoryIsOverLimit: Reppusi on ylikuormittunut!
       workEfficiencyPenalty: <icon i="Work efficiency"/> Yleinen työtehokkuus <c>-{penalty}%</c>
       notAffectingTraveling: (ei vaikuta matkustuksen työtehokkuuteen)
+      guideTip: Päivän pikkuvinkki
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
       savedSteps: Sinulla on käytössä säästettyjä askelia. Jokainen askeleesi lasketaan
@@ -770,3 +784,15 @@ singulars:
         varustesettisi painamalla alhaalta <c i=0>Luo uusi</c> painiketta.
       youDontHaveAnyItems: Ei esineitä. Sinulla ei joko ole tai hahmosi ei tiedä ainuttakaan
         tämän tyyppistä esinettä, tai suodattimesi ei palauttanut yhtäkään esinettä.
+  rumors:
+    phrases:
+      unlockedWalkpediaEntries: Walkpediaan lisätyt sivut
+      rumorsFromCharacter: 'Mehevimmät juorut: <c>{characterName}</c>'
+      backToRumors: Palaa juoruihin
+  whileAway:
+    phrases:
+      whileYouWereAway: Sillä välin kun olit toisaalla...
+      switchedToGearSet: Vaihdettiin varustesettiin <c>{name}</c>
+      gearSetDoesNotExist: Tämä varustesetti ei ole enää olemassa
+      consumablesUsed: Hyödyke käytetty
+      actionCancelled: Toiminto peruttu
