@@ -75,6 +75,10 @@ singulars:
       stopWhenOverEncumbered: Остановиться, когда перегружены
       workEfficiencyPenalty: <icon i="Work efficiency"/> Глобальная эффективность
         работы <c>-{penalty}%</c>
+      startActivity: Начать активность
+      cantStartActivity: Не могу начать активность
+      noActivitiesInLocation: Нет активностей в <object id="{location}"/>.
+      activitiesInLocation: Доступные активности в <object id="{location}"/>
     info:
       noActivity: Активность не выбрана. <hl>Выберите одну ниже</hl>, или свайпните
         влево, чтобы увидеть всё, доступное в данной локации.
@@ -82,6 +86,8 @@ singulars:
         во время активности.
       savedSteps: У вас есть сохранённые шаги, которые сейчас расходуются. Каждый
         шаг считается за два до тех пор пока сохранённые шаги не будут истрачены.
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> опыта
   abilities:
     info:
       abilitiesInfo: Способности — это особые действия, с помощью которых вы можете
@@ -599,7 +605,7 @@ singulars:
       switchingToGearSet: Выбрать снаряжение <c>{name}</c>
       queuedActions: Действия в очереди
       queue: Очередь
-      travelingTo: Путешествие из <object id="{from}"/> в <object id="{to}"/>
+      travelingTo: <object id="{from}"/> в <object id="{to}"/>
       untilInventoryFull: Выполнять пока есть место
       noGearSetFound: Выбранный набор снаряжения не найден. Возможно вы его удалили?
       activityInLocation: <object id="{activity}"/> в <object id="{location}"/>
@@ -868,7 +874,7 @@ maps:
       'neutral': Нейтральный
   cooldown:
     time:
-      'days': '{days}<д>'
-      'minutes': '{minutes}<м>'
-      'hours': '{hours}<ч>'
-      'seconds': '{seconds}<с>'
+      'days': '{days}<c>д</c>'
+      'minutes': '{minutes}<c>м</c>'
+      'hours': '{hours}<c>ч</c>'
+      'seconds': '{seconds}<c>с</c>'
