@@ -69,6 +69,9 @@ maps:
       'showRecipesMaterialsAreMet': Materiálové požadavky nejsou splněny
       'showCompletedAchievements': Zobrazit dokončené úspěchy
       'showStepSourceInActivityView': Zobrazit výběr zdroje kroku v Přehledu aktivity
+      'showDailyTips': Zobrazit denní tipy
+      'warningBeforeClaimingExperience': Zobrazit varování před uplatněním odměn za
+        zkušenosti
     custom:
       'dataSource': Zdroj kroků
     stepCountNotifications:
@@ -225,10 +228,10 @@ plurals:
   location:
     phrases:
       playersDoingActivity:
-        two: <c>{}</c> hráči provádějící aktivitu
+        two: <c>{}</c> hráčů provádějící aktivitu
         few: '-'
         many: '-'
-        other: <c>{}</c> hráči provádějící aktivitu
+        other: <c>{}</c> hráčů provádějící aktivitu
         zero: '-'
         one: <c>{}</c> hráč provádějící aktivitu
       playersHere:
@@ -607,6 +610,18 @@ singulars:
       workEfficiencyPenalty: <icon i="Work efficiency"/> Globální efektivita práce
         <c>-{penalty}%</c>
       guideTip: Tip dne
+      requirements: Požadavky
+      rewards: Odměny
+      levelActivity: Úroveň aktivity <c>{level}</c> <object id="{skill}"/>
+      startActivity: Zahájit aktivitu
+      queueActivity: Fronta aktivity
+      travelAndStartActivity: Cestování a zahájení aktivity
+      cantStartActivity: Aktivitu nelze spustit
+      requirementsNotMet: Požadavky nesplněny
+      noActivitiesInLocation: Nejsou zde žádné aktivity v <object id="{location}"/>.
+      locationIsUnknown: Místo je neznámé. Jakmile toto místo prozkoumáte, uvidíte
+        zde aktivity.
+      activitiesInLocation: Dostupné aktivity v <object id="{location}"/>
     info:
       savedSteps: Máte uložené kroky, které se právě vyčerpávají. Každý krok se počítá
         jako dva, dokud se všechny uložené kroky nevyčerpají.
@@ -615,6 +630,8 @@ singulars:
         k dispozici.
       consumablesUsage: Můžete si vybrat <c>jídlo</c> a <c>lektvar</c>, které budete
         používat při provádění aktivit.
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> zkušenosti
   wardrobe:
     phrases:
       noBackAccessories: Nevlastníte žádné doplňky na záda.
