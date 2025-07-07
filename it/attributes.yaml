@@ -6,37 +6,38 @@ singulars:
         name: '-'
       whileMainSkill:
         desc: '-'
-        text: |
+        text: |-
           <stat s="chestFind"/> mentre <supp k="skill"/>
       whileTraveling:
-        desc: Mentre viaggi verso la tua prossima meta, ti imbatti in un baule! Con attenzione, lo prendi e lo metti nello zaino.
+        desc: <PLACEHOLDER>
         name: Ritrovamenti fortunati
         text: <stat s="chestFind"/> mentre viaggi
     craftingOutcome:
       global:
-        desc: Le tue abilità ed esperienze nella lavorazione non ti hanno traviato, il lavoro che hai fatto regge bene.
+        desc: Le tue abilità ed esperienze nella lavorazione non ti hanno traviato,
+          il lavoro che hai fatto regge bene.
       whileMainSkill:
-        text: |
+        text: |-
           <stat s="craftingOutcome"/> mentre <supp k="skill"/>
     doubleAction:
       whileMainSkill:
-        text: |
+        text: |-
           <stat s="doubleAction"/> mentre <supp k="skill"/>
       whileTraveling:
-        text: |
+        text: |-
           <stat s="doubleAction"/> mentre viaggi
     doubleRewards:
       whileMainSkill:
-        text: |
+        text: |-
           <stat s="doubleRewards"/> mentre <supp k="skill"/>
     experience:
       whileMainSkill:
-        text: |
+        text: |-
           <stat s="bonusExperience"/> mentre <supp k="skill"/>
       whileTraveling:
-        text: |
+        text: |-
           <stat s="bonusExperience"/>mentre viaggi
     fineMaterialFind:
       whileMainSkill:
-        text: |
+        text: |-
           <stat s="fineMaterialFind"/> mentre <supp k="skill"/>
