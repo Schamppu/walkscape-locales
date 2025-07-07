@@ -76,6 +76,23 @@ singulars:
       importGearSetTooManyTools:
         title: Sada vybavení má příliš mnoho nástrojů
         text: Sada vybavení měla více nástrojů, než je povoleno.
+      buybackFailed:
+        title: Zpětný odkup selhal
+        text: Zpětný odkup selhal. Nemáte v inventáři požadované položky k dokončení
+          zpětného odkupu.
+      noPathFound:
+        title: Nenalezena žádná trasa
+        text: Nebyla nalezena žádná trasa k vybranému místu. Ujistěte se prosím, že
+          je možné se na vybrané místo dostat.
+      queueLimitReached:
+        title: Dosaženo limitu fronty
+        text: Nemůžete zařadit do fronty více než 3 akce najednou. Před zařazením
+          dalších akcí prosím dokončete nebo zrušte některé.
+      cannotQueueMoreThanOneActivity:
+        title: Nelze zařadit do fronty více aktivit
+        text: Můžete zařadit do fronty více cestovních akcí, ale vždy pouze jednu
+          aktivitu. Před zařazením další aktivity do fronty prosím dokončete nebo
+          zrušte aktuální aktivitu.
   errors:
     characterValidation:
       nameContainsSpecialCharacters: Název postavy obsahuje speciální znaky. Povoleny
@@ -154,6 +171,11 @@ singulars:
       serverMaintenance:
         title: WalkScape aktuálně provádí údržbu serveru
         text: WalkScape aktuálně provádí údržbu serveru. Zkuste to znovu později.
+      tempBannedUser:
+        title: Byli jste dočasně zablokováni z WalkScape
+        text: Byli jste dočasně zablokováni z WalkScape do <c i=0> {bannedUntil}</c>.
+        noTimeFound: Nebyl nalezen žádný čas ukončení, kontaktujte nás prosím zasláním
+          e-mailu na adresu contact@walkscape.app.
     activityCancelled:
       title: Aktivita zrušena
       stepsAreInfinite: Aktuální aktivita byla zrušena, protože již nesplňujete požadavky
@@ -173,6 +195,14 @@ singulars:
       text: Nejste na správném místě pro zahájení této aktivity. Chcete nejprve cestovat
         na správné místo a poté aktivitu zahájit?
       title: Nejdříve cestovat a pak začít s aktivitou?
+    editCurrentRouteAndResetQueue:
+      title: Upravit aktuální trasu a resetovat frontu?
+      text: Chcete upravit svou aktuální trasu do vybraného místa a odstranit všechny
+        následující akce, které máte ve frontě?
+    doYouWantToClaimExperience:
+      title: Jste si jisti, že chcete uplatnit odměnu za zkušenosti?
+      text: Máte zapnuté nastavení „zobrazit varování před uplatněním zkušeností“.
+        Jste si jisti, že chcete uplatnit odměnu v podobě zkušeností?
   popups:
     inactiveSteps:
       stepsWhileInactive: Kroky získané během neaktivní hry
