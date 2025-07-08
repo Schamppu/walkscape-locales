@@ -72,6 +72,7 @@ maps:
       'showDailyTips': Zobrazit denní tipy
       'warningBeforeClaimingExperience': Zobrazit varování před uplatněním odměn za
         zkušenosti
+      'activityInformationOpen': Zobrazit více informací o aktivitě
     custom:
       'dataSource': Zdroj kroků
     stepCountNotifications:
@@ -129,10 +130,10 @@ maps:
       'neutral': Neutrální
   cooldown:
     time:
-      'days': '{days}<d>'
-      'hours': '{hours}<h>'
-      'minutes': '{minutes}<m>'
-      'seconds': '{seconds}<s>'
+      'days': '{days}<c>d</c>'
+      'hours': '{hours}<c>h</c>'
+      'minutes': '{minutes}<c>m</c>'
+      'seconds': '{seconds}<c>s</c>'
 plurals:
   achievements:
     phrases:
@@ -208,6 +209,13 @@ plurals:
         two: '{} kroky'
         few: '-'
         many: '-'
+      stepsRequiredPerAction:
+        two: <icon i="Steps"/> <c>{} kroků</c> požadované na akci
+        few: '-'
+        many: '-'
+        other: <icon i="Steps"/> <c>{} kroků</c> požadované na akci
+        zero: '-'
+        one: <icon i="Steps"/> <c>{} krok</c> požadovaný na akci
   inventory:
     info:
       consumableDuration:
@@ -373,6 +381,8 @@ singulars:
         místa, která ji obklopuji.
       changeRouteWarning: Změna trasy zruší vaši aktuální cestu a vrátí vás na předchozí
         místo. Jsi si jistý?
+      youAreInspectingFromMap: <c>Prohledáváte mapu světa</c>. Pro interakci musíte
+        být v samotné lokaci a otevřít ji z hlavního zobrazení lokace.
   trade:
     phrases:
       buying: Koupit {amount}
@@ -632,6 +642,8 @@ singulars:
         používat při provádění aktivit.
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> zkušenosti
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} sběratelských předmětů</c>
+        které lze najít
   wardrobe:
     phrases:
       noBackAccessories: Nevlastníte žádné doplňky na záda.
@@ -644,6 +656,8 @@ singulars:
       noItemsBank: Žádné položky ve vaší bance.
       deposit: Vklad
       withdraw: Výběr
+      youAreNotAtABank: <c>Nejste na místě, kde je banka</c>. Banku můžete použít
+        pouze tehdy, když cestujete na místo, kde se banka nachází.
   character:
     info:
       skillBreakdown: Zde je kompletní rozpis všech dovedností, které vaše postava
@@ -823,12 +837,13 @@ singulars:
   queue:
     phrases:
       untilInventoryFull: Dělat, dokud se batoh nenaplní
-      travelingTo: Cestování z <object id="{from}"/> do <object id="{to}"/>
+      travelingTo: <object id="{from}"/> do <object id="{to}"/>
       noGearSetFound: Vybraná sada výbavy nebyla nalezena, smazali jste ji?
       queue: Fronta
       queuedActions: Akce ve frontě
       switchingToGearSet: Změnit výbavu na <c>{name}</c>
       activityInLocation: <object id="{activity}"/> v <object id="{location}"/>
+      noPathFound: Nenalezena žádná cesta k cíli.
     suggestedOptions:
       startTraveling: Cestování
       startActivity: Aktivita
@@ -863,11 +878,25 @@ singulars:
       removeFromQueue:
         text: Odebrat z fronty
         desc: Odstraní tuto akci a všechny následující akce z fronty.
+      cancelGearSetSwitch:
+        text: Zrušit výměnu sady vybavení
+        desc: Zrušit výměnu sady vybavení pro tuto akci.
   rumors:
     phrases:
       unlockedWalkpediaEntries: Odemčené položky Walkpedie
       rumorsFromCharacter: Fámy od <c>{characterName}</c>
+      backToRumors: Zpět k fámám
   whileAway:
     phrases:
       whileYouWereAway: Dokud jste byli pryč...
       consumablesUsed: Použitý spotřební materiál
+      none: Žádné
+      switchedToGearSet: Přepnuto na sadu výbavy <c>{name}</c>
+      gearSetDoesNotExist: Sada výbavy již neexistuje
+      actionsCompleted: Akce dokončeny
+      fromProc: Z <c>{proc}</c>
+      fromSource: Z <object id="{source}"/>
+      fromAttribute: Z atribut {atribute}
+      startedNewActivity: Zahájena aktivita <object id="{activity}"/> v <object id="{location}"/>
+      startedActivityNoLocation: Zahájena aktivita <object id="{activity}"/>
+      actionCancelled: Akce zrušena
