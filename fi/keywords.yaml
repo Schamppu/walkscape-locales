@@ -2,101 +2,101 @@ singulars:
   consumables:
     alcohol:
       name: Alkoholi
-      requirement: Vaatii alkoholia.
+      requirement: 'Edellytys: <object id="alcohol" />.'
       requirementLevel: Vaatii alkoholia, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     food:
       name: Ruoka
-      requirement: Vaatii ruokaa.
+      requirement: 'Edellytys: <object id="food" />.'
       requirementLevel: Vaatii ruokaa, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     water:
       name: Vesi
-      requirement: Vaatii vettä.
+      requirement: 'Edellytys: <object id="water" />.'
       requirementLevel: Vaatii vettä, jonka vaatimukset ovat vähintään <keywordRequirements
         />.
     sandwich:
-      requirement: Vaatii voileivän
+      requirement: 'Edellytys: <object id="sandwich" />.'
       name: Voileipä
-      requirementLevel: Vaatii ruokaa, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirementLevel: Vaatii voileivän, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     fruit:
       requirementLevel: Vaatii hedelmän, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Hedelmä
-      requirement: Vaatii hedelmän.
+      requirement: 'Edellytys: <object id="fruit" />.'
     memosphere:
       requirementLevel: Vaatii memosfäärin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
-      requirement: Vaatii muistosfäärin.
+      requirement: 'Edellytys: <object id="memosphere" />.'
       name: Muistosfääri
     cookedFish:
-      name: Kokattu kala
-      requirement: Vaatii kokatun kalan.
+      name: Kypsennetty kala
+      requirement: 'Edellytys: <object id="cookedFish" />.'
       requirementLevel: Vaatii kypsennettyä kalaa, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
     beverage:
       name: Juoma
-      requirement: Vaatii juoman.
+      requirement: 'Edellytys: <object id="beverage" />.'
       requirementLevel: Vaatii juoman, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
   gear:
     lifeVest:
       name: Pelastusliivi
-      requirement: Vaatii pelastusliivin.
+      requirement: 'Edellytys: <object id="lifevest" /> käytössä.'
       requirementLevel: Vaatii pelastusliivin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     skis:
       name: Sukset
-      requirement: Vaatii sukset.
+      requirement: 'Edellytys: <object id="skis" /> käytössä.'
       requirementLevel: Vaatii sukset, joiden vaatimuksissa on vähintään <keywordRequirements
         />.
     climbing:
       requirementLevel: Vaatii kiipeilyvälineen, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
-      requirement: Vaaii kiipeilyvarusteet.
+      requirement: 'Edellytys: <object id="climbingTool" /> käytössä.'
       name: Kiipeilyvarusteet
     skillingGear:
       name: Taitovarusteet
-      requirement: Edellyttää ammattitaitoa vaativia varusteita.
+      requirement: 'Edellytys: <object id="skillingGear" /> käytössä.'
       requirementLevel: Vaatii skilling gear, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     frisbee:
       name: Frisbee
-      requirement: Vaatii frisbeen.
+      requirement: 'Edellytys: <object id="frisbee" /> käytössä.'
       requirementLevel: Vaatii frisbeen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     bugCatchingNet:
       name: Ötökkäverkko
-      requirement: Vaatii ötökkäverkon.
+      requirement: Edellytys. <object id="bugCatchingNet" /> käytössä.
       requirementLevel: Vaaditaan hyönteisverkko, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
     ring:
       name: Sormus
-      requirement: Vaaditaan että sinulla on <object id="item_ring" /> käytössä.
+      requirement: 'Edellytys: <object id="item_ring" /> käytössä.'
       requirementLevel: Vaaditaan sormus, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     socks:
       name: Sukat
-      requirement: Vaatii sukat.
+      requirement: 'Edellytys: <object id="item_socks" /> käytössä.'
       requirementLevel: Vaatii sukat, joiden vaatimuksissa on vähintään <keywordRequirements
         />.
     bellows:
       requirementLevel: Vaatii palkeet joissa on vähintään <keywordRequirements />
-        edelletys.
+        niiden vaatimuksissa.
       name: Palkeet
-      requirement: Vaatii <object id="bellows" />.
+      requirement: 'Edellytys: <object id="bellows" /> käytössä.'
     basket:
       name: Kori
-      requirement: Vaatii <object id="basket" /> käyttöönotettuna.
+      requirement: 'Edellytys: <object id="basket" /> käytössä.'
       requirementLevel: Vaatii korin, jossa on vähintään <keywordRequirements /> vaatimuksena.
     amulet:
-      requirement: Vaaditaan että sinulla on <object id="item_amulet" /> käytössä.
+      requirement: 'Edellytys: <object id="item_amulet" /> käytössä.'
       requirementLevel: Vaaditaan amuletti, jonka vaatimuksissa on vähintään <keywordRequirements
         /> .
       name: Amuletti
     arrows:
-      requirement: Vaaditaan että sinulla on <object id="arrows" /> käytössä.
+      requirement: 'Edellytys: <object id="arrows" /> käytössä.'
       name: Nuolia
       requirementLevel: Vaaditaan nuolia, joiden vaatimuksissa on vähintään <keywordRequirements
         />.
@@ -104,12 +104,16 @@ singulars:
       name: Ase
       requirementLevel: Vaaditaan ase, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
-      requirement: Vaaditaan käytössä oleva <object id="weapon" />.
+      requirement: 'Edellytys: <object id="weapon" /> käytössä.'
     shield:
       name: Kilpi
-      requirement: Vaaditaan että sinulla on <object id="shield" /> käytössä.
+      requirement: 'Edellytys: <object id="shield" /> käytössä.'
       requirementLevel: Vaaditaan kilpi, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+    underwater:
+      requirement: 'Edellytys: <object id="item_underwater" /> varustettuna.'
+      requirementLevel: Vaatii vedenalaisvarusteet joissa on vähintään <keywordRequirements
+        /> vaatimuksissaan.
   general:
     fuel:
       name: Polttoaine
@@ -118,57 +122,94 @@ singulars:
         />.
     lightSource:
       name: Valonlähde
-      requirement: Vaatii valonlähteen.
-      requirementLevel: Edellyttää, että käyttäjällä on <keywordRequirements />.
+      requirement: 'Edellytys: <object id="lightSource" /> käytössä.'
+      requirementLevel: Edellyttää, että käyttäjällä on <keywordRequirements /> käytössä.
   materials:
     bar:
       name: Harkko
-      requirement: Vaatii harkon.
-      requirementLevel: Vaatii baarin, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirement: 'Edellytys: <object id="bar" />.'
+      requirementLevel: Vaatii harkon, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     fish:
       name: Kala
-      requirement: Vaatii kalan.
+      requirement: 'Edellytys: <object id="fish" />.'
       requirementLevel: Tarvitset kalan, jossa on ainakin <keywordRequirements />
         sen vaatimuksissa.
     gem:
       name: Jalokivi
-      requirement: Vaatii jalokiven.
+      requirement: 'Edellytys: <object id="gem" />.'
       requirementLevel: Vaatii jalokiven, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     logs:
       name: Tukit
-      requirement: Vaatii puisen tukin.
+      requirement: 'Edellytys: <object id="logs" /> puumateriaaliksi.'
       requirementLevel: Tarvitset puisen pöllin, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
     plant:
       name: Kasvi
-      requirement: Vaatii kasvin.
+      requirement: 'Edellytys: <object id="plant" />.'
       requirementLevel: Tarvitset kasvin, jossa on ainakin <keywordRequirements />
         sen vaatimuksissa.
     ore:
       name: Malmi
-      requirement: Vaatii malmin.
-      requirementLevel: Vaatii malmin, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirement: 'Edellytys: <object id="ore" />.'
+      requirementLevel: Vaatii malmia, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     plank:
       name: Lauta
-      requirement: Vaatii laudan.
+      requirement: 'Edellytys: <object id="plank" />.'
       requirementLevel: Vaatii lankun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     mushroom:
       name: Sieni
-      requirement: Vaatii sienen.
+      requirement: 'Edellytys: <object id="mushroom" />.'
       requirementLevel: Vaatii sienen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     misc:
       name: Sekal.
+      requirement: 'Edellytys: <object id="misc" /> esine.'
+      requirementLevel: Vaatii sekalaisen esineen, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+    nugget:
+      requirement: 'Edellytys: <object id="nugget" />.'
+      requirementLevel: Vaatii hipun, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    roughGem:
+      requirement: 'Edellytys: <object id="rough_gem" />.'
+      requirementLevel: Vaatii hiomattoman jalokiven, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+      name: Hiomaton jalokivi
+    cutGem:
+      requirement: 'Edellytys: <object id="cut_gem" />.'
+      name: Viimeistelty jalokivi
+      requirementLevel: Vaatii viimeistellyn jalokiven, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+    trinket:
+      name: Hely
+      requirement: 'Edellytys: <object id="trinket" />.'
+      requirementLevel: Vaatii helyn, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    ingredient:
+      ingredient: 'Edellytys: <object id="ingredient" />.'
+      requirementLevel: Vaatii ainesosan, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      name: Ainesosa
+    processed:
+      name: Prosessoitu
+      requirement: 'Edellytys: <object id="processed" /> materiaali.'
+      requirementLevel: Vaatii prosessoidun materiaalin, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+    offcut:
+      requirement: 'Edellytys: <object id="offcut" />.'
+      name: Jämäpala
+      requirementLevel: Vaatii jämäpalan, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
   tools:
     chisel:
       name: Taltta
-      requirement: Vaatii taltan.
-      requirementLevel: Tarvitset taltan, jossa on ainakin <keywordRequirements />
-        sen vaatimuksissa.
+      requirement: 'Edellytys: <object id="chisel" /> käytössä.'
+      requirementLevel: Vaatii taltan, jossa on ainakin <keywordRequirements /> sen
+        vaatimuksissa.
     fishing:
       name: Kalastus
       requirement: Vaatii kalastukseen liittyvän työkalun.
@@ -176,61 +217,61 @@ singulars:
         <keywordRequirements /> sen vaatimuksissa.
     fishingCage:
       name: Kalastushäkki
-      requirement: Vaatii kalastushäkin
-      requirementLevel: Tarvitset kalastus häkin, jossa on ainakin <keywordRequirements
+      requirement: 'Edellytys: <object id="fishingCage" /> käytössä.'
+      requirementLevel: Tarvitset kalastushäkin, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
     fishingNet:
       name: Kalastusverkko
-      requirement: Vaatii kalaverkon.
+      requirement: 'Edellytys: <object id="fishingNet" /> käytössä.'
       requirementLevel: Tarvitset kalastus verkon, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
     fishingRod:
       name: Onkivapa
-      requirement: Vaatii onkivavan.
+      requirement: 'Edellytys: <object id="fishingRod" /> käytössä.'
       requirementLevel: Tarvitset ongen, jossa on ainakin <keywordRequirements />
         sen vaatimuksissa.
     fishingSpear:
       name: Kalastuskeihäs
-      requirement: Vaatii kalastuskeihään.
-      requirementLevel: Tarvitset kalastus seipään, jossa on ainakin <keywordRequirements
+      requirement: 'Edellytys: <object id="fishingSpear" /> käytössä.'
+      requirementLevel: Tarvitset kalastusseipään, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
     localMap:
       name: Paikallinen kartta
-      requirement: Vaatii paikallisen kartan.
+      requirement: 'Edellytys: <object id="localMap" /> käytössä.'
       requirementLevel: Vaatii paikallisen kartan, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
     magnetic:
       name: Magneettinen
-      requirement: Vaatii magneettisen esineen.
+      requirement: 'Edellytys: <object id="magnetic" /> esine käytössä.'
       requirementLevel: Vaatii magneettisen esineen, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
     pickaxe:
       name: Hakku
-      requirement: Vaatii hakun.
-      requirementLevel: Vaatii kiikarin, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirement: 'Edellytys: <object id="pickaxe" /> käytössä.'
+      requirementLevel: Vaatii hakun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     saw:
       name: Saha
-      requirement: Vaatii sahan.
+      requirement: 'Edellytys: <object id="saw" /> käytössä.'
       requirementLevel: Vaatii sahan, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     screwdriver:
       name: Ruuvimeisseli
-      requirement: Vaatii ruuvimeisselin.
+      requirement: 'Edellytys: <object id="screwdriver" /> käytössä.'
       requirementLevel: Vaatii ruuvimeisselin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     tool:
       name: Työkalu
-      requirement: Vaatii työkalun.
+      requirement: 'Edellytys: <object id="tool" /> käytössä.'
       requirementLevel: Tarvitset työkalun, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
     woodcuttingHatchet:
       name: Kaatokirves
-      requirement: Vaatii puunhakkuukirveen
+      requirement: 'Edellytys: <object id="woodcuttingHatchet" /> käytössä.'
       requirementLevel: Tarvitset puutyö kirveen, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
     sickle:
-      requirement: Vaatii että sinulla on <object id="sickle" /> käytössä.
+      requirement: 'Edellytys: <object id="sickle" /> käytössä.'
       requirementLevel: Vaatii sirpin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Sirppi
@@ -238,14 +279,14 @@ singulars:
       requirementLevel: Vaatii paistinpannun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Paistinpannu
-      requirement: Vaatii paistinpannun.
+      requirement: 'Edellytys: <object id="cookingPan" /> käytössä.'
     fishingLure:
-      requirementLevel: Vaatii kalastusvieheen, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirementLevel: Vaatii uistimen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
-      requirement: Vaatii uistimen.
+      requirement: 'Edellytys: <object id="fishingLure" /> käytössä.'
       name: Uistin
     cookingSpices:
-      requirement: Maatii mausteita.
+      requirement: 'Edellytys: <object id="cookingSpices" /> käytössä.'
       name: Mausteet
       requirementLevel: Vaatii mausteita, joiden vaatimuksissa on vähintään <keywordRequirements
         />.
@@ -253,101 +294,146 @@ singulars:
       requirementLevel: Vaatii leikkuulaudan, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Leikkuulauta
-      requirement: Vaatii leikkuulaudan.
+      requirement: 'Edellytys: <object id="cuttingBoard" /> käytössä.'
     ruler:
       name: Mittanauha
-      requirement: Vaatii mittanauhan.
+      requirement: 'Edellytys: <object id="ruler" /> käytössä.'
       requirementLevel: Vaatii viivottimen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     goldPan:
       name: Kullanhuuhdontapannu
-      requirement: Vaatii kullanhuuhdontapannun.
+      requirement: 'Edellytys: <object id="goldPan" /> käytössä.'
       requirementLevel: Vaatii kultapannun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     cookingTool:
-      name: Keittiötyökalu
-      requirement: Vaatii keittiötyökalun.
-      requirementLevel: Vaatii keittotyökalun, jonka vaatimuksissa on vähintään <keywordRequirements
-        />.
+      name: Ruoanlaittoväline
+      requirement: 'Edellytys: <object id="cookingTool" /> käytössä.'
+      requirementLevel: Vaatii ruoanlaittovälineen, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
     carpentryTool:
       name: Puutyökalu
-      requirement: Vaatii puutyö työkalun.
-      requirementLevel: Vaatii puusepäntyökalun, jonka vaatimuksissa on vähintään
-        <keywordRequirements />.
+      requirement: 'Edellytys: <object id="carpentryTool" /> käytössä.'
+      requirementLevel: Vaatii puutyökalun, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
     craftingTool:
-      name: Käsityö työkalu
-      requirement: VAatii käsityö työkalun.
-      requirementLevel: Vaatii käsityökalun, jonka vaatimuksissa on vähintään <keywordRequirements
+      name: Käsityöväline
+      requirement: 'Edellytys: <object id="craftingTool" /> käytössä.'
+      requirementLevel: Vaatii käsityövälineen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     cookingKnife:
       name: Keittiöveitsi
-      requirement: Vaatii keittiöveitsen.
+      requirement: 'Edellytys: <object id="cookingKnife" /> käytössä.'
       requirementLevel: Vaatii keittoveitsen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     cookingPot:
-      name: Keittokattila
-      requirement: Vaatii keittokattilan.
-      requirementLevel: Vaatii keittoastian, jonka vaatimuksissa on vähintään <keywordRequirements
+      name: Kattila
+      requirement: 'Edellytys: <object id="cookingPot" /> käytössä.'
+      requirementLevel: Vaatii kattilan, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     foragingTool:
       name: Poimintatyökalu
-      requirement: Vaatii puetun <object id="foragingTool" />.
-      requirementLevel: Vaatii ruokintatyökalun, jonka vaatimuksissa on vähintään
+      requirement: 'Edellytys: <object id="foragingTool" /> käytössä.'
+      requirementLevel: Vaatii poimintatyökalun, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
     knife:
       name: Veitsi
-      requirement: Vaatii veitsen.
+      requirement: 'Edellytys: <object id="knife" /> käytössä.'
       requirementLevel: Vaatii veitsen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     wrench:
       name: Jakoavain
-      requirement: Vaatii jakoavaimen.
+      requirement: 'Edellytys: <object id="wrench" /> käytössä.'
       requirementLevel: Vaatii jakoavaimen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     smithingHammer:
-      requirementLevel: Vaatii seppävasaran, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirementLevel: Vaatii taontavasaran, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Taontavasara
-      requirement: Vaatii että <object id="smithingHammer" /> on käytössä.
+      requirement: 'Edellytys: <object id="smithingHammer" /> käytössä.'
     magnifyingLense:
       name: Suurennuslasi
-      requirement: Vaatii suurennuslasin.
+      requirement: 'Edellytys: <object id="magnifyingLense" /> käytössä.'
       requirementLevel: Vaatii suurennuslasin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     logSplitter:
-      requirement: Vaatii tukinhalkaisijan.
+      requirement: 'Edellytys: <object id="item_log_splitter" /> käytössä.'
       name: Tukinhalkaisija
       requirementlevel: Vaatii tukinhalkaisijan, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
+    sander:
+      name: Hiomakone
+      requirementLevel: Vaatii hiomakoneen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      requirement: 'Edellytys: <object id="sander" /> käytössä.'
+    fishingTool:
+      requirement: 'Edellytys: <object id="fishingTool" />.'
+      requirementLevel: Vaatii kalastusvälineen jossa on vähintään <keywordRequirements
+        /> sen vaatimuksissa.
+      name: Kalastusväline
+    miningTool:
+      requirementLevel: Vaatii kaivostyökalun jossa on vähintään <keywordRequirements
+        /> vaatimuksissaan.
+      name: Kaivostyökalu
+      requirement: 'Edellytys: <object id="miningTool" /> käytössä.'
+    smithingTool:
+      name: Pajatyökalu
+      requirement: 'Edellytys: <object id="smithingTool" /> käytössä.'
+      requirementLevel: Vaatii pajatyökalun jossa on vähintään <keywordRequirements
+        /> sen vaatimuksissa.
+    woodcuttingTool:
+      requirementLevel: Vaatii puunhakkuutyökalun, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
+      requirement: 'Edellytys: <object id="woodcuttingTool" /> käytössä.'
+    agilityTool:
+      name: Ketteryysväline
+      requirement: 'Edellytys: <object id="agilityTool" /> käytössä.'
+      requirementLevel: Vaatii ketteryystyökalun jossa on vähintään <keywordRequirements
+        /> vaatimuksissaan.
+    trinketryTool:
+      requirement: 'Edellytys: <object id="trinketryTool" /> käytössä.'
+      requirementLevel: Vaatii korutyökalun, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    skillBook:
+      requirement: 'Edellytys: <object id="skillBook" /> käytössä.'
+      requirementlevel: Vaatii taitokirjan, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    huntingBow:
+      requirement: 'Edellytys: <object id="huntingBow" /> käytössä.'
+      requirementLevel: Vaatii metsästysjousen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    huntingTrap:
+      requirement: 'Edellytys: <object id="huntingTrap" /> käytössä.'
+      requirementLevel: Vaatii metsästysansan, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
   recipes:
     products:
       sandwich:
         name: Voileivän resepti
-        requirements: Vaatii <object id="sandwich" /> joka valmistetaan <object id="recipe_cooking"
-          />.
+        requirements: 'Edellytys: <object id="sandwich" /> joka valmistetaan <object
+          id="recipe_cooking" />.'
     skills:
       cooking:
-        name: Ruoanlaitto resepti
-        requirement: Vaatii <object id="recipe_cooking" />.
+        name: Ruoanlaittoresepti
+        requirement: 'Edellytys: <object id="recipe_cooking" />.'
   activities:
     woodcuttingTrees:
-      requirement: Vaatii puunhakkuuaktiviteetin <object id="woodcuttingTrees" />.
+      requirement: 'Edellytys: <object id="woodcuttingTrees" />-aktiviteetti.'
       requirementLevel: Vaatii puunhakkuu (puut) -aktiviteetin jossa on vähintään
         <keywordRequirements /> sen vaatimuksissa.
       name: Puunhakkuu (puut)
     fishing:
       name: Kalastus
-      requirement: Vaatii kalastusaktiviteetin.
+      requirement: 'Edellytys: <object id="activity_fishing" />-aktiviteetti.'
       requirementLevel: Vaatii kalastusaktiviteetin jolla on vähintään <keywordRequirements
         /> sen vaatimuksissa.
     miningOres:
       name: Malmien louhinta
-      requirement: Vaatii malmien louhinta-aktiviteetin.
+      requirement: 'Edellytys: <object id="activity_mining" />-aktiviteetti.'
       requirementLevel: Vaatii malmien louhinta-aktiviteetin jolla on vähintään <keywordRequirements
         /> sen vaatimuksissa.
     foragingPlants:
       name: Kasvien poiminta
-      requirement: Vaatii ravintokasvien toimintaa.
+      requirement: 'Edellytys: <object id="activity_foraging" />-aktiviteetti.'
       requirementLevel: Vaatii ravintokasvien toimintaa, jonka vaatimuksiin kuuluu
         vähintään <keywordRequirements />.
   weight:
@@ -366,8 +452,13 @@ singulars:
   achievements:
     percentage:
       name: Saavutusprosentti
-      requirement: none
-      requirementLevel: none
+      requirement: ei mitään
+      requirementLevel: ei mitään
+    reward:
+      name: Saavutuksen palkinto
+      requirement: 'Edellytys: <object id="achievement_reward" />.'
+      requirementLevel: Vaatii saavutuksen palkinnon, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
   search:
     skills:
       smithing:
@@ -411,13 +502,21 @@ singulars:
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
       global:
-        name: Globaali
+        name: Pelinlaajuinen
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
       hunting:
         name: Metsästys
         requirement: <TULOSSA>
+        requirementLevel: <PLACEHOLDER>
+      tailoring:
+        name: Räätälintyö
         requirementLevel: <TULOSSA>
+        requirement: <PLACEHOLDER>
+      trinketry:
+        name: Korutyö
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
     items:
       consumables:
         food:
@@ -438,29 +537,38 @@ singulars:
           requirementLevel: <PLACEHOLDER>
   itemSets:
     divingGear:
-      requirementLevel: Vaatii sukellusvälineet joilla on vähintään <keywordRequirements
-        /> vaatimuksissa.
-      requirement: Vaatii sukellusvälineet.
+      requirementLevel: Vaatii sukellusvälineet, joiden vaatimuksissa on vähintään
+        <keywordRequirements />.
+      requirement: 'Edellytys: <object id="itemset_diving_gear" />.'
       name: Sukellusvälineet
     expertDivingGear:
-      requirementLevel: Vaatii asiantuntijasukellusvarusteet, joiden vaatimuksissa
+      requirementLevel: Vaatii asiantuntijatasoiset sukellusvarusteet, joiden vaatimuksissa
         on vähintään <keywordRequirements />.
       name: Ammattilaisen sukellusvälineet
-      requirement: Vaatii ammattilaiset sukellusvälineet.
+      requirement: 'Edellytys: <object id="itemset_diving_gear_expert" />.'
     treasureHunter:
       name: Aarteenetsijän setti
-      requirement: Vaaditaan että sinulla on käytössä osia <object id="itemset_treasure_hunter"
-        /> setistä.
-      requirementLevel: <PLACEHOLDER>
+      requirement: Vaatii, että sinulla on käytössä <object id="itemset_treasure_hunter"
+        />, tai ainakin osia siitä.
+      requirementLevel: Vaatii aarteenetsijän setin, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
     adventuringTools:
       name: Seikkailijan työkalusetti
-      requirement: <PLACEHOLDER>
-      requirementLevel: <PLACEHOLDER>
+      requirement: Vaatii, että käytössä on <object id="itemset_adventuring_tools"
+        />, tai ainakin osia siitä.
+      requirementLevel: Vaatii seikkailijan työkalun, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
     advancedDivingGear:
       name: Edistyneet sukellusvälineet
-      requirement: Vaadii edistyneet sukellusvälineet.
-      requirementLevel: Vaatii edistyneen sukellusvarustuksen, jonka vaatimukset ovat
+      requirement: 'Edellytys: <object id="itemset_diving_gear_advanced" />.'
+      requirementLevel: Vaatii edistyneet sukellusvälineet, joiden vaatimuksissa on
         vähintään <keywordRequirements />.
+    properGear:
+      name: Kunnolliset vetimet
+      requirement: Vaatii, että käytössä on <object id="itemset_proper_gear" />, tai
+        ainakin osia siitä.
+      requirementLevel: Vaatii kunnolliset vermeet, joiden vaatimuksissa on vähintään
+        <keywordRequirements />.
   services:
     kitchen:
       requirement: <PLACEHOLDER>
@@ -484,28 +592,39 @@ singulars:
       name: Kangaspuut
   containers:
     regionalChest:
-      requirementLevel: Vaatii alueellisen rintakehän, jonka vaatimuksissa on vähintään
-        <keywordRequirements />.
-      name: Paikallinen arkku
-      requirement: Vaatii paikallisen arkun.
+      requirementLevel: Vaatii alueen arkun, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      name: Alueen arkku
+      requirement: 'Edellytys: <object id="regionalChest" />.'
     chest:
       name: Arkku
-      requirement: Vaatii arkun.
-      requirementLevel: Vaatii rintakehän, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirement: 'Edellytys: <object id="chest" />.'
+      requirementLevel: Vaatii arkun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
     skillingChest:
       name: Taitoarkku
-      requirement: Vaatii taitoarkun.
-      requirementLevel: Vaatii kyvykkyyden, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirement: 'Edellytys: <object id="skillingChest" />.'
+      requirementLevel: Vaatii taitoarkun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
   misc:
     trash:
       name: Roska
-      requirement: Vaatii roskan.
-      requirementLevel: Vaatii roskia, jonka vaatimuksissa on vähintään <keywordRequirements
+      requirement: 'Edellytys: <object id="trash" />.'
+      requirementLevel: Vaatii roskan, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+    currency:
+      requirement: 'Edellytys: <object id="currency" />.'
+      requirementLevel: Vaatii maksuvälineen, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+      name: Maksuväline
   locations:
     underwater:
       name: Vedenalainen
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+  faction:
+    reward:
+      name: Ryhmittymän palkinto
+      requirement: 'Edellytys: <object id="faction_reward" />.'
+      requirementLevel: Vaatii ryhmittymän palkinnon, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.
