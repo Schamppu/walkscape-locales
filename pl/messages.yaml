@@ -143,6 +143,11 @@ singulars:
         title: Błąd połączenia
         text: Wystąpił błąd połączenia z serwerem. Sprawdź połączenie internetowe
           i spróbuj ponownie.
+      tempBannedUser:
+        noTimeFound: Nie znaleziono godziny zakończenia, skontaktuj się z nami, wysyłając
+          wiadomość e-mail na adres contact@walkscape.app.
+        title: Zostałeś tymczasowo zablokowany w WalkScape
+        text: Zostałeś tymczasowo zablokowany w WalkScape do <c i=0>{bannedUntil}</c>.
     fatalError:
       error: Wybacz nam ten błąd. Pamiętaj, że ta gra znajduje się w Zamkniętej Becie,
         a wszystkie postępy graczy są zapisywane codziennie w chmurze.
@@ -203,6 +208,23 @@ singulars:
       equipGearFailed:
         title: Nie udało się wyposażyć przedmiotu
         text: Przedmiot nie może być wyposażony. Spróbuj ponownie.
+      buybackFailed:
+        title: Odkupywanie nieudane
+        text: Odkupywanie nie powiodło się. Nie masz wymaganych przedmiotów w swoim
+          ekwipunku, aby ukończyć odkupywanie.
+      noPathFound:
+        text: Nie znaleziono trasy do wybranej lokacji. Upewnij się, że podróż do
+          wybranej lokacji jest możliwa.
+        title: Nie znaleziono trasy podróży
+      queueLimitReached:
+        title: Osiągnięto limit kolejki
+        text: Nie możesz ustawić w kolejce więcej niż 3 akcje na raz. Proszę ukończyć
+          lub anulować niektóre akcje przed ustawieniem w kolejce kolejnych.
+      cannotQueueMoreThanOneActivity:
+        title: Nie można dodać do kolejki więcej aktywności
+        text: Możesz dodać do kolejki wiele działań związanych z podróżą, ale tylko
+          jedną aktywność na raz. Zakończ lub anuluj bieżącą aktywność przed dodaniem
+          do kolejki kolejnej.
   confirmations:
     changingStepSource:
       title: Zmienić źródło kroków?
@@ -218,3 +240,11 @@ singulars:
       text: Nie jesteś we właściwej lokacji, aby rozpocząć tę aktywność. Czy chcesz
         najpierw udać się do właściwej lokacji, a następnie rozpocząć aktywność?
       title: Najpierw podróż, a potem rozpocząć aktywność?
+    editCurrentRouteAndResetQueue:
+      title: Edytować aktualną trasę i zresetować kolejkę?
+      text: Czy chcesz edytować obecną trasę podróży do wybranej lokacji i usunąć
+        wszystkie kolejne akcje z kolejki?
+    doYouWantToClaimExperience:
+      title: Czy na pewno chcesz odebrać nagrodę w postaci doświadczenia?
+      text: Masz włączone ustawienie „pokaż ostrzeżenie przed odebraniem doświadczenia”.
+        Czy na pewno chcesz odebrać nagrodę w postaci doświadczenia?
