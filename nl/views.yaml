@@ -52,7 +52,9 @@ alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie. De gekozen hoeveel
 verbruiksartikelen is goed voor een effect op <c>{actions} acties</c>.', other: 'Activiteit
 <object id="{activity}" alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie.
 De gekozen hoeveelheid verbruiksartikelen is goed voor een effect op <c>{actions}
-acties</c>.', few: '-'}}}}, 'singulars': {'achievements': {'info': {'pointsNeeded': '<iconText
+acties</c>.', few: '-'}}}, location: {phrases: {playersDoingActivity: {one: '<c>{}</c>
+speler doet deze activiteit', two: '<c>{}</c> spelers doen deze activiteit', other: '<c>{}</c>
+spelers doen deze activiteit'}}}}, 'singulars': {'achievements': {'info': {'pointsNeeded': '<iconText
 name="achievement_point" text="@views.plurals.achievements.phrases.achievementPoint"
 color="${color}"/> totdat de volgende beloning is vrijgespeeld.', collectibleItems: Verzamelobjecten
 zijn voorwerpen die je kunt vinden in de wereld van WalkScape. Er zijn verschillende
@@ -219,18 +221,19 @@ keer bent geweest., noActivities: Er zijn geen activiteiten beschikbaar op deze 
 youreHere: Je bent momenteel op deze locatie., changeRouteWarning: Wijzigen van je
 route zal je huidige reis annuleren en ga je terug naar je vorige locatie. Weet je
 het zeker?}}, stats: {phrases: {stats: Statistieken, totalSkillXp: Totale vaardigheids-XP,
-totalSteps: Totaal aantal stappen}, info: {stats: Een overzicht van statistieken over
-elke stap die je hebt genomen door de wereld van Arenum., chartWarning: {title: Onnauwkeurigheden
-in grafieken, description: 'Verschillende spelers hebben problemen gemeld met onnauwkeurige
-stappengrafieken, veroorzaakt door grote wijzigingen achter de schermen in een eerdere
-update. Als je problemen ondervindt waarbij de grafieken significant afwijkende waarden
-weergeven dan andere bronnen, is dit waarschijnlijk de reden. De spellogica zelf zou
-nog steeds moeten werken zoals voorheen en de grafiekproblemen zullen in toekomstige
-updates worden opgelost.'}}}, tutorial: {phrases: {noMoreMessages: Geen tutorial-berichten
-meer, youWillGain: Je ontvangt het volgende als je deze optie selecteert.}}, leaderboards: {
-phrases: {show: Weergeven, everyone: Iedereen, friends: Vrienden, leaderboards: Klassementen,
-first: Eerste, me: Ik, last: Laatste, loadingPage: Pagina laden..., totalSteps: Totaal
-aantal stappen, totalLevel: Totaalniveau, totalExperience: Totale ervaring, achievementPoints: Prestatiepunten}},
+totalSteps: Totaal aantal stappen, highestStepsIn24Hours: Meeste stappen in 24u},
+info: {stats: Een overzicht van statistieken over elke stap die je hebt genomen door
+de wereld van Arenum., chartWarning: {title: Onnauwkeurigheden in grafieken, description: 'Verschillende
+spelers hebben problemen gemeld met onnauwkeurige stappengrafieken, veroorzaakt door
+grote wijzigingen achter de schermen in een eerdere update. Als je problemen ondervindt
+waarbij de grafieken significant afwijkende waarden weergeven dan andere bronnen,
+is dit waarschijnlijk de reden. De spellogica zelf zou nog steeds moeten werken zoals
+voorheen en de grafiekproblemen zullen in toekomstige updates worden opgelost.'}}},
+tutorial: {phrases: {noMoreMessages: Geen tutorial-berichten meer, youWillGain: Je
+ontvangt het volgende als je deze optie selecteert.}}, leaderboards: {phrases: {show: Weergeven,
+everyone: Iedereen, friends: Vrienden, leaderboards: Klassementen, first: Eerste,
+me: Ik, last: Laatste, loadingPage: Pagina laden..., totalSteps: Totaal aantal stappen,
+totalLevel: Totaalniveau, totalExperience: Totale ervaring, achievementPoints: Prestatiepunten}},
 mainMenu: {phrases: {chooseCharacter: 'Kies je personage, of maak een nieuwe aan.',
 pleaseWait: Een ogenblik geduld..., noInternet: Geen internetverbinding, lostInternet: Je
 toestel heeft verbinding met het internet verloren. Wachten op een connectie..., dontDoIt: Niet
@@ -352,5 +355,9 @@ deze actie start.}, depositUnlockedItems: {text: Ontgrendelde voorwerpen storten
 desc: Stort alle ontgrendelde voorwerpen in je inventoris naar de bank als er een
 beschikbaar is in een van de locaties waar je doorheen komt.}, removeFromQueue: {
 text: Verwijderen uit wachtrij, desc: Verwijder deze actie en alle acties erna uit
-de wachtrij.}}, types: {traveling: Reizen, activity: Activiteit, crafting: Ambacht},
-suggestedOptions: {startActivity: Activiteit, startCrafting: Maken}}}}
+de wachtrij.}, cancelGearSetSwitch: {text: Wisselen van uitrustingsset annuleren,
+desc: Annuleert het wisselen van uitrustingsset voor deze actie.}}, types: {traveling: Reizen,
+activity: Activiteit, crafting: Ambacht}, suggestedOptions: {startActivity: Activiteit,
+startCrafting: Maken}}, whileAway: {phrases: {fromProc: 'Door <c>{proc}</c>', fromAttribute: 'Door
+attribuut {attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door
+<object id="{source}"/>'}}}}
