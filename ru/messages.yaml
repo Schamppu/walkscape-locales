@@ -69,6 +69,10 @@ singulars:
         text: Некорректные данные игрока. Загрузка не удалась. Пожалуйста, свяжитесь
           с разработчиками через Discord или email.
         title: Не удалось загрузить игрока
+      stepsNotLoadedDueToBan:
+        title: Шаги не загружены из-за блокировки
+        text: Ваши шаги не были загружены, так как вы заблокированы в WalkScape. С
+          этого момента ваши шаги будут учитываться нормально.
     characterValidation:
       nameTooShortWithSpacesRemoved: После удаления пробелов имя персонажа должно
         содержать более трёх букв.
@@ -142,6 +146,15 @@ singulars:
         title: Вы временно заблокированы в WalkScape
         noTimeFound: 'Время окончания блокировки не указано. Пожалуйста, свяжитесь
           с нами по email: contact@walkscape.app.'
+      userBannedPermanently:
+        text: Вы заблокированы в WalkScape навсегда. Если вы считаете, что это ошибка,
+          и хотите обжаловать решение, свяжитесь с нами по email {email}.
+        title: Вы заблокированы в WalkScape навсегда
+      userBannedTemporarily:
+        title: Вы временно заблокированы в WalkScape
+        text: Вы временно заблокированы в WalkScape до <c i=0>{bannedUntil}</c>.
+        noTimeFound: Время окончания блокировки не указано, пожалуйста, свяжитесь
+          с нами по email {email}
     activityCancelled:
       title: Активность отменена
       stepsAreInfinite: Текущая активность была отменена, так как Вы больше не соответствуете
