@@ -135,10 +135,10 @@ maps:
       'feminine': Femenino
   cooldown:
     time:
-      'days': '{días}<d>'
-      'hours': '{horas}<h>'
-      'minutes': '{minutos}<m>'
-      'seconds': '{segundos}<s>'
+      'days': '{days}<c>d</c>'
+      'hours': '{hours}<c>h</c>'
+      'minutes': '{minutes}<c>m</c>'
+      'seconds': '{seconds}<c>s</c>'
 plurals:
   achievements:
     phrases:
@@ -214,6 +214,13 @@ plurals:
         few: '-'
         many: '-'
         other: '{} acciones'
+      stepsRequiredPerAction:
+        zero: '-'
+        one: <icon i="Steps"/> <c>{} paso</c> requerido por acción
+        two: <icon i="Steps"/> <c>{} pasos</c> requeridos por acción
+        few: '-'
+        many: '-'
+        other: <icon i="Steps"/> <c>{} pasos</c> requeridos por acción
   inventory:
     info:
       consumableDuration:
@@ -364,9 +371,9 @@ singulars:
   pfpCreation:
     buttons:
       choose: Elegir
-      hideHat: Ocultando accesorios de cabeza
+      hideHat: Activar accesorios de cabeza
       randomize: Aleatorizar
-      showHat: Mostrando accesorios de cabeza
+      showHat: Activar accesorios de cabeza
       enableFaceAccessorie: Habilitar accesorio facial
       enableBackAccessorie: Habilitar accesorio trasero
       enableFacepaint: Activar pintura facial
@@ -495,12 +502,29 @@ singulars:
       notAffectingTraveling: (no afecta a la eficiencia al viajar)
       stopWhenOverEncumbered: Parar al sobrecargarse
       options: Opciones
+      locationIsUnknown: Ubicación desconocida. Una vez explores está ubicación, podrás
+        ver las actividades aquí.
+      levelActivity: Actividad de nivel <c>{level}</c> <object id="{skill}"/>
+      requirements: Requisitos
+      rewards: Recompensas
+      startActivity: Empezar actividad
+      queueActivity: Poner actividad en cola
+      travelAndStartActivity: Viajar y empezar actividad
+      cantStartActivity: No se puede empezar actividad
+      requirementsNotMet: No se cumplen los requisitos
+      noActivitiesInLocation: No hay actividades en <object id="{location}"/>.
+      activitiesInLocation: Actividades disponibles en <object id="{location}"/>
+      guideTip: Consejo del día
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> experiencia
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} coleccionables</c> que
+        se pueden encontrar
   character:
     info:
       skillBreakdown: Aquí está el desglose total de todas las habilidades que tu
         personaje ha subido de nivel durante su aventura. Pulsa sobre cualquiera de
         las habilidades para ver información detallada y qué desbloquea.
-      eachLevelIncreasesStepBank: Cada nivel de personaje después del nivel <c>{nivel}</c>
+      eachLevelIncreasesStepBank: Cada nivel de personaje después del nivel <c>{level}</c>
         incrementa la cantidad máxima de pasos guardados en <c>{amount}</c>.
     phrases:
       skills: Habilidades
@@ -509,8 +533,8 @@ singulars:
       checkOutSubject: ¡Mira mi progreso en WalkScape!
       totalLevel: Nivel total
       savePicture: Guardar imagen
-      level: 'Nivel del personaje: <c>{nivel}</c>'
-      stepsToNextLevel: Pasos hasta el siguiente nivel <c>{pasos}</c>
+      level: 'Nivel del personaje: <c>{level}</c>'
+      stepsToNextLevel: Pasos hasta el siguiente nivel <c>{steps}</c>
   permissions:
     phrases:
       pedometerPermission: Permiso del podómetro
@@ -646,7 +670,7 @@ singulars:
         title: Origen de Datos
         thisPhone: Este teléfono
         otherSource: Otro origen
-        requiresPermissionIos: Si el siguiente desplegable no muestra nigún dispositivo
+        requiresPermissionIos: Si el siguiente desplegable no muestra ningún dispositivo
           externo, asegúrate de haber concedido permisos a la app para usar datos
           de Salud de Apple en Configuración ➤ Privacidad & Seguridad ➤ Salud ➤ (en
           Apps) WalkScape y que Salud de Apple haya registrado pasos en esos dispositivos
@@ -776,6 +800,8 @@ singulars:
       noItemsBank: No hay objetos en tu banco.
       deposit: Depositar
       withdraw: Retirar
+      youAreNotAtABank: <c>No estás en una ubicación con banco</c>. Solo puedes usar
+        el banco una vez viajes a una ubicación que tenga banco.
   popupBubbles:
     phrases:
       overEncumbered: Tu inventario está lleno y estás sobrecargado.
@@ -855,6 +881,9 @@ singulars:
       removeFromQueue:
         text: Eliminar de la cola
         desc: Elimina esta acción y todas las siguientes de la cola.
+      cancelGearSetSwitch:
+        desc: Cancela el cambio de kit de equipo para esta acción.
+        text: Cancelar cambio de kit de equipo
     suggestions:
       crafting:
         onceCertainRarityIsCrafted: Cuando hayas fabricado una rareza concreta o usado
@@ -874,11 +903,12 @@ singulars:
     phrases:
       queue: Cola
       queuedActions: Acciones en cola
-      travelingTo: Viajando de <object id="{from}"/> a <object id="{to}"/>
+      travelingTo: De <object id="{from}"/> a <object id="{to}"/>
       untilInventoryFull: Haciendo hasta llenar inventario
       switchingToGearSet: Cambiando a kit de equipamiento <c>{name}</c>
       noGearSetFound: Kit de equipamiento elegido no encontrado, ¿lo has eliminado?
       activityInLocation: <object id="{activity}"/> en <object id="{location}"/>
+      noPathFound: No se ha encontrado un camino al destino.
     suggestedOptions:
       startActivity: Actividad
       startCrafting: Fabricar

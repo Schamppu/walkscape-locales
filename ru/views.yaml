@@ -75,6 +75,19 @@ singulars:
       stopWhenOverEncumbered: Остановиться, когда перегружены
       workEfficiencyPenalty: <icon i="Work efficiency"/> Глобальная эффективность
         работы <c>-{penalty}%</c>
+      startActivity: Начать активность
+      cantStartActivity: Не могу начать активность
+      noActivitiesInLocation: Нет активностей в <object id="{location}"/>.
+      activitiesInLocation: Доступные активности в <object id="{location}"/>
+      requirements: Требования
+      rewards: Награды
+      levelActivity: Активность <c>{level}</c> уровня <object id="{skill}"/>
+      queueActivity: Поставить активность в очередь
+      travelAndStartActivity: Перейти и начать активность
+      requirementsNotMet: Требования не выполнены
+      locationIsUnknown: Локация неизвестна. Когда вы исследуете это место, здесь
+        появятся активности.
+      guideTip: Совет дня
     info:
       noActivity: Активность не выбрана. <hl>Выберите одну ниже</hl>, или свайпните
         влево, чтобы увидеть всё, доступное в данной локации.
@@ -82,6 +95,10 @@ singulars:
         во время активности.
       savedSteps: У вас есть сохранённые шаги, которые сейчас расходуются. Каждый
         шаг считается за два до тех пор пока сохранённые шаги не будут истрачены.
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> опыта
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} коллекционных предметов</c>
+        можно найти
   abilities:
     info:
       abilitiesInfo: Способности — это особые действия, с помощью которых вы можете
@@ -305,6 +322,8 @@ singulars:
       deposit: Положить
       noItemsBank: У вас нет предметов в банке.
       noItemsInventory: У вас нет предметов в инвентаре.
+      youAreNotAtABank: <c>Вы не в локации с банком</c>. Использовать банк можно только
+        в локациях, где он есть.
   trade:
     phrases:
       trade: ПРИНЯТЬ
@@ -444,10 +463,12 @@ singulars:
       noActivites: Нет доступных активностей в данной локации.
       tapToShowRoutes: Нажмите, чтобы увидеть маршруты
       owner: Владелец
+      showingRoutesFrom: Варианты путешествий из <object id="{from}"/>.
+      noRoutesFromLocation: Нет направлений путешествий из <object id="{from}"/>.
   pfpCreation:
     buttons:
       randomize: Выбрать случайно
-      hideHat: Скрывать головной убор
+      hideHat: Показывать головной убор
       enableFacepaint: Включить раскраску лица
       enableDynamicBackground: Включить динамический задний фон
       choose: Выбрать
@@ -490,6 +511,8 @@ singulars:
         данной локации.
       changeRouteWarning: Смена маршрута отменит ваше текущее перемещение и вернёт
         вас в предыдущую локацию. Вы уверены?
+      youAreInspectingFromMap: Вы <c>просматриваете с карты мира</c>. Для взаимодействия
+        нужно находиться в самой локации.
   stats:
     phrases:
       stats: Характеристики
@@ -595,14 +618,18 @@ singulars:
         text: Забрать надор снаряжения
         desc: Забрать набор снаряжения из банка, если он доступен в любом из посещаемых
           мест.
+      cancelGearSetSwitch:
+        text: Отменить смену снаряжения
+        desc: Отменяет запланированную смену комплекта снаряжения для этого действия.
     phrases:
       switchingToGearSet: Выбрать снаряжение <c>{name}</c>
       queuedActions: Действия в очереди
       queue: Очередь
-      travelingTo: Путешествие из <object id="{from}"/> в <object id="{to}"/>
+      travelingTo: <object id="{from}"/> в <object id="{to}"/>
       untilInventoryFull: Выполнять пока есть место
       noGearSetFound: Выбранный набор снаряжения не найден. Возможно вы его удалили?
       activityInLocation: <object id="{activity}"/> в <object id="{location}"/>
+      noPathFound: Путь до цели не найден.
     suggestedOptions:
       startTraveling: Перемещение
       startActivity: Активность
@@ -628,9 +655,21 @@ singulars:
     phrases:
       unlockedWalkpediaEntries: Разблокированные записи Walkpedia
       rumorsFromCharacter: Слухи от <c>{characterName}</c>
+      backToRumors: Назад к слухам
   whileAway:
     phrases:
       whileYouWereAway: Пока вас не было...
+      gearSetDoesNotExist: Комплект снаряжения больше не существует
+      consumablesUsed: Расходник использован
+      actionsCompleted: Действия завершены
+      fromProc: От <c>{proc}</c>
+      fromSource: От <object id="{source}"/>
+      fromAttribute: От атрибута {attribute}
+      startedNewActivity: Начата активность <object id="{activity}"/> в <object id="{location}"/>
+      startedActivityNoLocation: Начата активность <object id="{activity}"/>
+      actionCancelled: Действие отменено
+      switchedToGearSet: Переключено на комплект снаряжения <c>{name}</c>
+      none: Нет
 plurals:
   inventory:
     info:
@@ -725,6 +764,13 @@ plurals:
         few: '{} действия'
         many: '{} действий'
         other: '{} действий'
+      stepsRequiredPerAction:
+        other: <icon i="Steps"/> <c>{} шагов</c> требуется на действие
+        zero: '-'
+        one: <icon i="Steps"/> <c>{} шаг</c> требуется на действие
+        two: <icon i="Steps"/> <c>{} шага</c> требуется на действие
+        few: <icon i="Steps"/> <c>{} шага</c> требуется на действие
+        many: <icon i="Steps"/> <c>{} шагов</c> требуется на действие
   location:
     phrases:
       playersHere:
@@ -780,6 +826,10 @@ maps:
       'showCompletedAchievements': Показать выполненные достижения
       'showStepSourceInActivityView': Показывать источник подсчета шагов на вкладке
         Активность
+      'showDailyTips': Показывать советы дня
+      'warningBeforeClaimingExperience': Показывать предупреждение перед получением
+        опыта
+      'activityInformationOpen': Показывать дополнительную информацию об активности
     enumSettings:
       'language': Язык
       'leaderboardFilter': Показать
@@ -868,7 +918,7 @@ maps:
       'neutral': Нейтральный
   cooldown:
     time:
-      'days': '{days}<д>'
-      'minutes': '{minutes}<м>'
-      'hours': '{hours}<ч>'
-      'seconds': '{seconds}<с>'
+      'days': '{days}<c>д</c>'
+      'minutes': '{minutes}<c>м</c>'
+      'hours': '{hours}<c>ч</c>'
+      'seconds': '{seconds}<c>с</c>'
