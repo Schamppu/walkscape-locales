@@ -120,6 +120,10 @@ singulars:
         text: Neplatná data hráče. Načítání se nezdařilo. Kontaktujte prosím vývojáře
           přes Discord nebo e-mailem.
         title: Načtení hráče se nezdařilo
+      stepsNotLoadedDueToBan:
+        text: Vaše kroky nebyly načteny protože vám byl zakázán přístup do WalkScape.
+          Od tohoto okamžiku se vaše kroky budou počítat normálně.
+        title: Kroky se nenačetly kvůli vašemu zablokování
     serverError:
       unknownError:
         text: Neznámá chyba.
@@ -176,6 +180,16 @@ singulars:
         text: Byli jste dočasně zablokováni z WalkScape do <c i=0> {bannedUntil}</c>.
         noTimeFound: Nebyl nalezen žádný čas ukončení, kontaktujte nás prosím zasláním
           e-mailu na adresu contact@walkscape.app.
+      userBannedTemporarily:
+        title: Byli jste dočasně zablokováni z WalkScape
+        text: Byli jste dočasně zablokováni z WalkScape do <c i=0>{bannedUntil}</c>.
+        noTimeFound: Nebyl nalezen žádný čas ukončení, kontaktujte nás prosím zasláním
+          e-mailu na adresu {email}
+      userBannedPermanently:
+        title: Byli jste trvale zablokováni z WalkScape
+        text: Byli jste trvale zablokováni z WalkScape. Pokud se domníváte, že se
+          jedná o chybu a chcete se proti rozhodnutí odvolat, můžete nás kontaktovat
+          zasláním e-mailu na adresu {email}.
     activityCancelled:
       title: Aktivita zrušena
       stepsAreInfinite: Aktuální aktivita byla zrušena, protože již nesplňujete požadavky
