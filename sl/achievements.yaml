@@ -49,7 +49,7 @@ singulars:
     oneCannotSimplyWalkToMordor:
       desc: 'Si že kdaj pomislil, kako enostavno bi bilo preprosto sprehoditi se v
         Mordor? No, <hl>zdaj veš </hl>.'
-      name: ''
+      name: 'Ne moreš kar vkorakati v Mordor'
     onlyYouCanPreventForestFires:
       desc: "Če posekaš vsa dravesa, je recimo... nič odstotkov možnosti?"
       name: 'Samo ti lahko preprečiš gozdne požare'
@@ -61,12 +61,13 @@ singulars:
       name: 'Rockovska zvezda'
     thatsXcomBaby:
       desc: 'Naključnost je lahko včasih precej nepoštena.'
-      name: ''
+      name: 'To je XCOM bejbi'
     touchTheGrass:
-      desc: ""
+      desc: "Sem te prisilil, da se dotakneš trave, kajne?"
       name: 'Dotakni se trave'
     underTheSea:
-      desc: ''
+      desc: 'Tu spodaj so vse ribe srečne\nKot da se valjajo v valovih\nRibe na kopnem
+        niso srečne\nŽalostne so, ker so v svoji posodi'
       name: 'Pod morsko gladino'
     visitorOfTheFarLands:
       desc: 'Število predstavlja količino kock, ki jih moraš prehoditi, da v Minecraftu
@@ -83,8 +84,9 @@ singulars:
       desc: 'Včasih tudi najmanjše stvari zapolnijo največ prostora v tvojem srcu.'
       name: 'Medvedek Pu'
     youShallNotPass:
-      desc: ''
-      name: ''
+      desc: 'Služim skrivnemu ognju in nosim Anorjev plamen. Temni ogenj ti ne bo
+        pomagal, Udunov plamen! Vrni se v senco! <hl>Ne boš prišel mimo!</hl>'
+      name: 'Ne boš prišel mimo!'
     fullyPrepared:
       desc: "Z vso opremo si pripravljen osvojiti svet!"
       name: 'Popolnoma pripravljen'
@@ -106,10 +108,10 @@ singulars:
         samo vsak peti prst.'
       name: 'Samo dva prsta?'
     oohShiny:
-      desc: ''
+      desc: 'Pravijo, da je možnost najdbe te fine stvari 1 proti 100.'
       name: 'Ooo, sveti se!'
     treasureHunter:
-      desc: ''
+      desc: 'Nič se bolj ne prileže kot zastonj skrinja z zakladom!'
       name: 'Lovec na zaklade'
     arcticExplorer:
       desc: 'Zdaj si lahko reče Jarvonec, to deželo poznaš kot svoj žep.'
@@ -135,8 +137,8 @@ singulars:
       desc: 'Včasih si najbolj poznan po tem, da si najslabši.'
       name: 'Ponos in zadovoljstvo'
     timeToParty:
-      desc: ''
-      name: ''
+      desc: 'Ta party klobuček bi lahko nahranil rodove.'
+      name: 'Čas za zabavo'
     iJustFeltLikeRunning:
       desc: "Če bi ti rekel, da lahko tečem kot veter, mi ne bi verjel. Od tistega
         dne naprej sem vedno tekel, kamor sem šel!"
@@ -173,7 +175,7 @@ singulars:
         ne pozabi, da je samorogov rog prepovedano zmleti v prah.'
       name: 'Okusi mavrico'
     fashionista:
-      desc: ''
+      desc: 'Včasih te lahko odlična obleka opomni na lepote življenja.'
       name: 'Modni poznavalec'
     humanFish:
       desc: 'Biti pol človek in pol riba je lahko zelo zabavno. Če so polovice pravilno
@@ -189,20 +191,23 @@ singulars:
       desc: 'Za zabavo nisi nikoli prestar!'
       name: 'Nahrani otroka v sebi'
     moreThanMeetsTheEye:
-      desc: ''
+      desc: 'Prišel si po diamante, našel pa si lopato. Erdwise torvarna drobnarij
+        skriva mnogo skrivnosti.'
       name: 'Več kot kaže na prvi pogled'
     aVeryFashionableCoast:
-      desc: ''
+      desc: 'Končno se počutiš kot eden izmed prebivalcev prestolnice mode Arenum
+        med Middlecrestom in Everhavnom.'
       name: 'Zelo modna obala'
     nice:
       desc: 'Uspelo ti je.'
       name: 'Vau.'
     theCircleOfLife:
-      desc: ''
+      desc: 'Čeprav si netopirje sprva neumorno raziskoval in preučeval njihov letni
+        življenjski ritem kot znanstvenik, jih na koncu vidiš kot prijatelje.'
       name: 'Življenjski krog'
     residualRelic:
-      desc: ''
-      name: ''
+      desc: 'Pravi predmetek na napačnem mestu lahko vse spremeni.'
+      name: 'Ostanek iz preteklosti'
     shieldWall:
       desc: 'Najboljši napad je... eh...'
       name: 'Ščitna formacija'
@@ -213,59 +218,104 @@ singulars:
       desc: 'Včasih moraš raziskati malo več, da lahko poiščeš nekaj dobrega.'
       name: 'Moramo globlje'
   requirements:
-    activityBasket: ''
-    activityButterfly: ''
-    activityGlacier: ''
-    activityIce: ''
-    activitySand: ''
-    activitySled: ''
-    activitySwimBeg: ''
-    activitySwimExp: ''
-    activitySwimInt: ''
-    activityTinkering: ''
-    catchCrabs: ''
-    chop5kTrees: ''
-    collect1kMushrooms: ''
-    completeActivity: ''
-    cook20DifferentRecipes: ''
-    craftHatchetOfHighestQuality: ''
-    craftPickaxeOfHighestQuality: ''
-    craftPerfectItem: ''
-    cookRecipes: ''
-    equipHatchet: ''
-    equipNet: ''
-    equipPickaxe: ''
-    findCrossword: ''
+    activityBasket: 'Izpolni opravke <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
+      /> aktivnosti. <numberProgress />'
+    activityButterfly: 'Izpolni opravke <object id="activity-butterfly_catching-ddef8fc5-a61e-4689-bacb-e49ee89f09c8"
+      /> aktivnosti. <numberProgress />'
+    activityGlacier: 'Izpolni opravke <object id="activity-glacier_foraging-dfdd59cc-e38b-48fc-9a0e-439163abac12"
+      /> aktivnosti. <numberProgress />'
+    activityIce: 'Izpolni opravke <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
+      /> aktivnosti. <numberProgress />'
+    activitySand: 'Izpolni opravke <object id="activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d"
+      /> aktivnosti. <numberProgress />'
+    activitySled: 'Izpolni opravke <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
+      /> aktivnosti. <numberProgress />'
+    activitySwimBeg: 'Izpolni opravke <object id="activity-swimming_(beginner)-1ccee641-01d9-4bcb-8dd7-9df9c61142f2"
+      /> aktivnosti. <numberProgress />'
+    activitySwimExp: 'Izpolni opravke <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
+      /> aktivnosti. <numberProgress />'
+    activitySwimInt: 'Izpolni opravke <object id="activity-swimming_(intermediate)-37f761f4-f6fd-49a5-8389-5816388e0cf9"
+      /> aktivnosti. <numberProgress />'
+    activityTinkering: 'Izpolni opravke <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
+      /> aktivnosti. <numberProgress />'
+    catchCrabs: 'Ujemi <object id="fish" /> med <object id="activity_fishing" /> <numberProgress
+      />'
+    chop5kTrees: 'Izpolni opravke <object id="woodcuttingTrees" /> <numberProgress
+      />'
+    collect1kMushrooms: 'Naberi <object id="mushroom" alwaysShow="true" /> z aktivnostjo
+      <object id="activity_foraging" />. <numberProgress />'
+    completeActivity: 'Izpolni opravke <item id="{item}" alwaysShow="true" /> aktivnosti.
+      <numberProgress />'
+    cook20DifferentRecipes: 'Opravi različne možnosti <object id="recipe_cooking"
+      />. <numberProgress />'
+    craftHatchetOfHighestQuality: 'Ustvari <object id="woodcuttingHatchet" /> najvišje
+      kvalitete. <numberProgress />'
+    craftPickaxeOfHighestQuality: 'Ustvari <object id="pickaxe" /> najvišje kvalitete.
+      <numberProgress />'
+    craftPerfectItem: 'Ustvari perfekten predmet. <numberProgress />'
+    cookRecipes: 'Opravi <object id="recipe_cooking" /> <numberProgress />'
+    equipHatchet: 'Opremi se z <object id="item-basic_hatchet-dc4b21f3-e651-4103-9127-e7d3b74151fe"
+      /> <numberProgress />'
+    equipNet: 'Opremi se z <object id="item-small_fishing_net-05cb692d-840c-4c57-911c-1f65464aa800"
+      /> <numberProgress />'
+    equipPickaxe: 'Opremi se z <object id="item-basic_pickaxe-a00d8626-e415-481c-88ee-fdafbb4a45f0"
+      /> <numberProgress />'
+    findCrossword: 'Poišči <object id="item-jarvonian_crossword_puzzle-01c3fefd-6d9e-4b4d-bb76-91981c663085"
+      /> <numberProgress />'
     findMysteriousG: 'Poišči skrivnostni *g*.<numberProgress />'
-    forageHoney: ''
-    gain99Agility: ''
-    gainFineStarPearl: ''
-    gainFineTrash: ''
-    gainRingWhileFishing: ''
-    gainSocksFromActivity: ''
-    gainTrinketFromActivity: ''
-    goToBarbantok: ''
-    goToNoiselessPass: ''
-    goToTrench: ''
-    have5DifferentGems: ''
-    haveDifferentShields: ''
-    levelUpAnySkill: ''
-    lights: ''
-    lootFindCommon: ''
-    lootFindUncommon: ''
-    lootFindRare: ''
-    lootFindEpic: ''
-    lootFindLegendary: ''
-    makeSandwich: ''
-    mine10kOres: ''
-    mine1kGoldOres: ''
-    prepKelpRoll: ''
-    prepSaltrum: ''
-    prepUnderwaterSalad: ''
-    sharkFish: ''
-    sharkCook: ''
+    forageHoney: 'Med aktivnostmi poišči <object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
+      alwaysShow="true" />. <numberProgress />'
+    gain99Agility: 'Dvigni raven svoje gibčnosti na <numberProgress />'
+    gainFineStarPearl: 'Pridobi "fin" <object id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81"
+      alwaysShow="true" /> med aktivnostmi. <numberProgress />'
+    gainFineTrash: 'Med aktivnostmi poišči "fin" <object id="item-trash-40c14f4e-3ef2-435a-a5de-123843f824bf"
+      alwaysShow="true" />. <numberProgress />'
+    gainRingWhileFishing: 'Pridobi poljuben <object id="item_ring" /> med <object
+      id="activity_fishing" /> <numberProgress />'
+    gainSocksFromActivity: 'Pridobi <object id="item_socks" /> kot nagrado za aktivnost.
+      <numberProgress />'
+    gainTrinketFromActivity: 'Pridobi poljuben <object id="item_trinket" /> kot nagrado
+      za aktivnost. <numberProgress />'
+    goToBarbantok: 'Pojvdi v vas <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" /> <numberProgress />'
+    goToNoiselessPass: 'Pojdi na lokacijo <object id="location-noiseless_pass-e081df71-97eb-4708-90b0-f33e61b2a0c7"
+      alwaysShow="true" /> <numberProgress />'
+    goToTrench: 'Pojdi na lokacijo <object id="location-darkdepths-385aa267-b46d-47b8-b124-aa3827c39fef"
+      alwaysShow="true" /> <numberProgress />'
+    have5DifferentGems: 'V nahrbtniku imej različne vrste <object id="cut_gem" />
+      hkrati. <numberProgress />'
+    haveDifferentShields: 'V nahrbtniku imej različne vrste <object id="shield" />
+      hkrati. <numberProgress />'
+    levelUpAnySkill: 'Dvigni raven poljubne veščine. <numberProgress />'
+    lights: 'Opremi se z več različnimi <object id="lightSource" /> hkrati. <numberProgress
+      />'
+    lootFindCommon: 'Iz <object id="chest" /> pridobi navadno nagrado. <numberProgress
+      />'
+    lootFindUncommon: 'Iz <object id="chest" /> pridobi nenavadno nagrado. <numberProgress
+      />'
+    lootFindRare: 'Iz <object id="chest" /> pridobi izredno nagrado. <numberProgress
+      />'
+    lootFindEpic: 'Iz <object id="chest" /> pridobi epsko nagrado. <numberProgress
+      />'
+    lootFindLegendary: 'Iz <object id="chest" /> pridobi legendarno nagrado. <numberProgress
+      />'
+    makeSandwich: 'Naredi <object id="sandwich" /> <numberProgress />'
+    mine10kOres: 'Nakoplji več <object id="ore" /> poljubne vrste. <numberProgress
+      />'
+    mine1kGoldOres: 'Med aktivnostmi pridobi <object id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f"
+      alwaysShow="true" />. <numberProgress />'
+    prepKelpRoll: 'Pripravi <object id="item-kelp_rolls-90004956-7275-4b13-9488-61cc320afd09"
+      /> <numberProgress />'
+    prepSaltrum: 'Pripravi <object id="item-saltrum-f2df867a-21a7-48db-b13b-efea9e46cb5d"
+      /> <numberProgress />'
+    prepUnderwaterSalad: 'Pripravi <object id="item-underwater_salad-ea06cde2-d58d-4a79-8b05-6f515d5b02da"
+      /> <numberProgress />'
+    sharkFish: 'Med aktivnostjo pridobi <object id="item-raw_shark-f543d44b-0cc7-4d5a-9cdc-50ce8d90cb86"
+      alwaysShow="true" />. <numberProgress />'
+    sharkCook: 'Med <object id="recipe_cooking" /> pridobi <object id="item-cooked_shark-4eadab85-170e-42b5-a086-cb57cd9d9dc3"
+      alwaysShow="true" />. <numberProgress />'
     useALamp: ''
-    walkSteps: ''
+    walkSteps: 'Prehodi skupno število korakov. <numberProgress />'
     walkStepsWithoutGear: ''
     walkStepsInDay: ''
     characterLevel: ''

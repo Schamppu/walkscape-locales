@@ -119,6 +119,23 @@ singulars:
       importGearSetTooManyTools:
         title: L'ensemble d'équipements comporte trop d'outils
         text: L'ensemble d'équipements comporte plus d'outils que la limite autorisée.
+      buybackFailed:
+        title: Échec du rachat
+        text: Échec du rachat. Vous n'avez pas les objets requis dans votre inventaire
+          pour effectuer le rachat.
+      noPathFound:
+        title: Pas d'itinéraire trouvé
+        text: Pas d'itinéraire trouvé vers la destination choisie. Veuillez-vous assurer
+          qu'il est possible de voyager vers la destination choisie.
+      queueLimitReached:
+        title: Limite de la queue atteinte
+        text: Vous ne pouvez pas mettre en queue plus de 3 actions à la fois. Veuillez
+          compléter ou annuler certaines actions avant d'en remettre en queue.
+      cannotQueueMoreThanOneActivity:
+        title: Impossible de mettre en queue plus d'activités
+        text: Vous pouvez mettre en queue plusieurs actions de voyage, mais une seule
+          activité à la fois. Veuillez compléter ou annuler l'activité en cours avant
+          d'en mettre en queue une autre.
   errors:
     characterValidation:
       nameTooShort: Le nom du personnage doit contenir au moins 3 caractères.
@@ -187,6 +204,11 @@ singulars:
         title: Erreur de connexion
         text: Une erreur s'est produite lors de la connexion au serveur. Merci de
           vérifier votre connexion internet, puis de réessayer.
+      tempBannedUser:
+        title: Vous avez été temporairement banni de WalkScape
+        text: Vous avez été temporairement banni de Walkscape jusqu'à <c i=0>{bannedUntil}</c>.
+        noTimeFound: Pas de date de fin trouvée, veuillez nous contacter par mail
+          à l'adresse contact@walkscape.app.
     gameError:
       stepLoadingFailed:
         text: Le client de jeu a échoué à charger les pas. Merci de signaler ceci
@@ -219,3 +241,19 @@ singulars:
       title: Changer la source de comptage de pas ?
       lastSyncText: Pas synchronisés à {time}.
       neverSyncedText: Les pas n'ont jamais été synchronisés.
+    editCurrentRouteAndResetQueue:
+      text: Voulez-vous modifier votre itinéraire actuel vers le lieu choisi et annuler
+        toutes les actions suivantes que vous avez en queue?
+      title: Modifier la route actuelle et annuler la queue ?
+    doYouWantToClaimExperience:
+      title: Êtes-vous sûr de vouloir réclamer le gain d'expérience ?
+      text: Vous avez l'option "m'avertir avant de réclamer un gain d'expérience"
+        activée. Êtes-vous sûrs de vouloir réclamer le gain d'expérience?
+    changeRoute:
+      title: Changer de route ?
+      text: Changer de route annulera votre voyage actuel et vous fera revenir au
+        lieu précédent. Êtes vous sûr ?
+    travelAndStartActivity:
+      title: Voyager d'abord puis commencer l'activité ?
+      text: Vous n'êtes pas au bon endroit pour commencer cette activité. Voulez-vous
+        d'abord voyager vers le bon lieu puis commencer l'activité ?
