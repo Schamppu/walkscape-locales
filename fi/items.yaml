@@ -179,6 +179,8 @@ singulars:
         name: Lohipiirakka
       tomato:
         name: Tomaatti
+      mudPie:
+        name: Mutakakku
     cookedFish:
       cookedCrayfish:
         name: Paistettu rapu
@@ -643,39 +645,65 @@ singulars:
       agility:
         exerciseHeadband:
           name: Hikipanta
+          desc: Tämä hikipanta muistuttaa sinua siitä, että vahvuus syntyy omistautumisesta,
+            ja sisäinen soturisi voi voittaa minkä tahansa haasteen, oli se sitten
+            miten mielikuvituksellinen tai vaativa tahansa.
         goldenFrisbee:
-          name: Kultainen frisbee
+          name: Kultainen liitokiekko
+          desc: Tämä kestävä liitokiekko on vain päällystetty kullalla, ja siksi kiillostaan
+            huolimatta kevyt. Sitä melkein odottaisi että sen perässä kulkisi sateenkaarivana,
+            mutta minkäs teet.
         medievalSneakers:
           name: Keskiaikaiset lenkkarit
         mountaineeringGuidebook:
           name: Vuorikiipeilyn ohjekirja
         simpleRope:
           name: Simppeli köysi
+          desc: Köydellä on monenlaisia käyttötarkoituksia esimerkiksi vuorikiipeillessä.
         mapOfJarvonia:
           name: Jarvonian kartta
+          desc: Tämä kartta näyttää pohjoisen mantereen alueet ja kaupungit.
         mapOfGDTE:
           name: TESRK:n kartta
           desc: Tämä kartta näyttää reitit ja maamerkit Trellin-Erdwisen suurruhtinaskunnassa.
         ironThermos:
           name: Rautainen termoskannu
+          desc: Termoskannun voi täyttää kahvilla, maidolla, viinillä, terävillä tai
+            millä tahansa nesteellä mikä mieleen juolahtaa, sekä niiden yhdistelmillä.
+            Tai sitten voit vain täyttää sen vedellä ja palata retkeltäsi turvallisesti.
         parkourGloves:
           name: Parkourhanskat
         flowyTrousers:
           name: Ilmavat housut
         simpleTorch:
           name: Simppeli soihtu
+          desc: Kun yhdistät puukepin, kangasta ja palavaa ainesta, saat mukana kulkevan
+            valonlähteen. Voiko tämän suoraviivaisempaa ollakaan?
         clayFrisbee:
-          name: Savinen frisbee
+          name: Savinen liitokiekko
+          desc: Tämä liitokiekko on melko painava ja hauras. Toivotaan ettei lähistöllä
+            ole savikiekkojen urheiluampujia!
         birchSkis:
           name: Koivusukset
+          desc: Aloittelijan suksipari. Sukset ovat hankalat hallita eivätkä järin
+            nopeat, mutta kyllä niillä pääsee lumista rinnettä alas nopeammin kuin
+            kävellen.
         oakSkis:
           name: Tammisukset
+          desc: Nämä sukset ovat raskaat, mikä antaa hyvän vauhdin mutta vaikeuttaa
+            ohjaamista. Onneksi järeät sukset kestänevät myös ehjänä jos törmäät johonkin!
         pineSkis:
           name: Mäntysukset
+          desc: Kestävät ja kevyet sukset, jotka on tehty juuri niistä puista, joihin
+            törmäämistä yrität näillä hiihtäessäsi välttää.
         walkingStick:
           name: Kävelykeppi
+          desc: Tukeva puinen keppi ja sen mukava metallinen kahvaosa tarjoavat mukavaa
+            lisätukea patikkaseikkailuillasi.
         runningShorts:
           name: Juoksushortsit
+          desc: Ne ovat mukavat ja helpot käyttää! Housujen kirkkaansininen väri tekee
+            sinut myös näkyvämmäksi.
         runningShirt:
           name: Juoksupaita
         waterBottle:
@@ -688,9 +716,13 @@ singulars:
           desc: Neljäpäinen koukku joka on liitetty osaksi heittoköyttä.
         featherCape:
           name: Sulkaviitta
+          desc: Tämä viitta on höyhenenkevyt, mikä johtunee siitä että se on sulista
+            tehty.
       carpentry:
         handsaw:
           name: Käsisaha
+          desc: Tässä sahassa ruumiillistuu käsityöläisen ja luonnon välinen harmonia,
+            josta syntyy kyky muovata puuta tarkasti ja kauniisti.
         protectiveGloves:
           name: Suojakäsineet
         toolbelt:
@@ -703,12 +735,14 @@ singulars:
           name: Jääleikkuri
         simpleSaw:
           name: Simppeli saha
+          desc: Tällä sahalla leikkaa riittävän kauan kunnes löydät paremman.
         protectiveGlasses:
           name: Suojalasit
         protectivePants:
           name: Suojahousut
         sharpChisel:
           name: Terävä taltta
+          desc: Tällä terävällä työkalulla veistetään puuta.
         dullChisel:
           name: Tylsä taltta
         preciseRuler:
@@ -861,6 +895,8 @@ singulars:
           desc: Tällä pystyy pyydystämään ötököitä.
         wildernessShirt:
           name: Erämaan paita
+          desc: Mukava vihreä paita, jossa tulee mukana punainen kaulahuivi ja vahva
+            tunne siitä, että olet yhtä luonnon kanssa.
         wildernessPants:
           name: Erämaan housut
         foragingShorts:
@@ -898,6 +934,8 @@ singulars:
           name: Lapiokirves
         minersShirt:
           name: Louhijan paita
+          desc: Tämä paita erottuu hyvin, ja auttaa etsijöitä löytämään sinut nopeammin
+            sitten kun vääjäämättä eksyt kaivosluoliin.
         simpleGoldPan:
           desc: Tällä huuhdontapannulla voi lyötää kultaa joista.
           name: Simppeli kullanhuuhdontapannu
@@ -907,21 +945,30 @@ singulars:
           name: Kullanhuuhdontapannu
         simpleMiningShovel:
           name: Simppeli louhijan lapio
+          desc: Voit käyttää tätä lapiota kivimurskeen siirtämiseksi ja maaston arvokkaiden
+            malmisuonten paljastamiseksi.
         simpleMagnet:
           name: Simppeli magneetti
+          desc: Voit kalastaa tällä, kunhan et odota saavasi saalista.
         steelToeBoots:
           name: Teräsvahvistetut saappaat
           desc: Mikäli pudotat jotakin varpaille, näiden pitäisi ainakin teoriassa
             suojata sinua.
         minersPants:
           name: Louhijan housut
+          desc: Näissä housuissa on pehmustetut polvet, jotta voit istua mukavammin
+            jaloillasi samalla kun kaivat esiin alapuolellasi olevia malmisuonia.
         handLantern:
           name: Käsilyhty
+          desc: Toivottavasti toit lisätulukset, koska jos tämä kynttilä sammuu juuri
+            kun olet syvällä luolissa, se on menoa se.
         minersBeard:
           name: Louhijan parta
           desc: Kenellä kaivostyöläisellä ei muka ole partaa?
         minersMagnet:
           name: Louhijan magneetti
+          desc: Tämä työväline on erinomaisen hyvänä apuna, kun etsit kivisten seinämien
+            sisään piiloutuneita arvometallin suonia.
         iceAxe:
           name: Jääkirves
           desc: Jäädyttää sormesi kun siihen koskee. Käytä hanskoja!
@@ -966,6 +1013,7 @@ singulars:
           name: Metsurin housut
         rootedRing:
           name: Juurtunut sormus
+          desc: Tämä sormus koostuu maagisista juurista, jotka kietoutuvat toisiinsa.
         heavyAxeHandle:
           name: Raskas kirveenvarsi
           desc: Vankka lisävarsi jonka voi liittää kirveeseen.
@@ -1150,9 +1198,12 @@ singulars:
       shellSnatcher:
         name: Kotilonnappaaja
       ringOfAsh:
-        name: Tuhkan sormus
+        name: Tuhkasormus
+        desc: Tämä sormus on valmistettu tiivistetystä hiilestä. Vaikka se on tuhoutumaton,
+          se jättää ikuisen mustan jäljen käyttäjänsä sormeen.
       glowstick:
-        name: Valotikku
+        name: Hohtotikku
+        desc: Voit saada tikun hohtamaan kirkkaanvihreää valoa ravistamalla sitä nopeasti.
     achievements:
       axeOfDestruction:
         desc: Tämän kirveen terä on muotoiltu kuin suu, joka voisi ahmia puuta.
@@ -1217,6 +1268,7 @@ singulars:
         desc: Kuusi värikästä jalokiveä muodostavat tämän rannekkeen.
       pathfinder:
         name: Reitinlöytäjä
+        desc: Kaulakorussa on pienoiskartta, joka ohjaa sinut lyhimmälle reitille.
       runningVisor:
         name: Juoksulippa
       pantsOfHaste:
@@ -1257,9 +1309,16 @@ singulars:
         name: Hurjapään miekka
     supporter:
       theKakesWalkingStick:
-        name: Keikari-Kaken kävelykeppi
+        name: Vaellusvietin kävelykeppi
         desc: <i>"Mennä sinun pitää. Yksikään vieras ei saa pysyä paikallaan ikuisesti.
           Rakkaus ratkeaa jos istut liian pitkään ystävän tulisijan äärellä."</i>
+      woodpucker:
+        desc: <i>"Valmistaudu hallitsemaan sekä kaukaloa että metsää legendaarisella
+          Pelikärki-jääkiekkomailalla. Tämä innovatiivinen maila on valmistettu räjähtävän
+          tehokkaaseen käyttöön kaukalossa ja sen ulkopuolella, ja siinä käytetään
+          kehityksen terävimmän kärjen TukkiTaklaus-teknologiaa, jonka avulla sitä
+          voi vapaa-ajallaan käyttää myös puiden kaatamiseen."</i>
+        name: Pelikärki
   materials:
     carpentry:
       birchPlank:
