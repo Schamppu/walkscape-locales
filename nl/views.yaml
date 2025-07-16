@@ -263,16 +263,18 @@ WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen van de laatste 7 dage
 checkOut: 'Hier is mijn WalkScape personage {name}. Moet je kijken!\nhttps://walkscape.app',
 totalLevel: Totaalniveau}, info: {skillBreakdown: Hier is het complete overzicht van
 alle vaardigheden die je personage beoefend heeft tijdens zijn/haar reis. Druk op
-een van de vaardigheden voor meer gedetailleerde informatie en wat ze ontgrendelen.}},
-permissions: {phrases: {pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om
-het spel te laten functioneren, hebben we toestemming nodig om de gegevens van de
-stappenteller op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan
-met het spel.', exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je
-moet toestemming geven voor de volgende permissies om verder te gaan met het spel.
-Druk op de permissie om toestemming te geven., noDeviceFound: Geen device gevonden.
-Controleer a.u.b. of je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt
-en toestemming hebt gegeven om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We
-hebben deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
+een van de vaardigheden voor meer gedetailleerde informatie en wat ze ontgrendelen.,
+eachLevelIncreasesStepBank: 'Elk personage-niveau na niveau <c>{level}</c> verhoogt
+het maximale aantal bewaarde stappen met <c>{amount}</c>.'}}, permissions: {phrases: {
+pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om het spel
+te laten functioneren, hebben we toestemming nodig om de gegevens van de stappenteller
+op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan met het spel.',
+exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je moet toestemming
+geven voor de volgende permissies om verder te gaan met het spel. Druk op de permissie
+om toestemming te geven., noDeviceFound: Geen device gevonden. Controleer a.u.b. of
+je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt en toestemming hebt gegeven
+om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We hebben
+deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
 connectAppleHealth: Verbinden met Apple Health, connect: Verbinden, connectAppleHealthExplanation: 'Je
 moet verbinding maken met Apple Health zodat we stappen kunnen inlezen die gesynchroniseerd
 zijn door je horloge, en om te zien met welke devices je bent verbonden. Als dit de
@@ -358,6 +360,11 @@ text: Verwijderen uit wachtrij, desc: Verwijder deze actie en alle acties erna u
 de wachtrij.}, cancelGearSetSwitch: {text: Wisselen van uitrustingsset annuleren,
 desc: Annuleert het wisselen van uitrustingsset voor deze actie.}}, types: {traveling: Reizen,
 activity: Activiteit, crafting: Ambacht}, suggestedOptions: {startActivity: Activiteit,
-startCrafting: Maken, startTraveling: Reizen}}, whileAway: {phrases: {fromProc: 'Door
-<c>{proc}</c>', fromAttribute: 'Door attribuut {attribute}', whileYouWereAway: Terwijl
-je weg was..., fromSource: 'Door <object id="{source}"/>'}}}}
+startCrafting: Maken, startTraveling: Reizen}, suggestions: {traveling: {onceYouArriveTo: 'Actie
+toevoegen aan wachtrij in <object id="{location}"/>?'}, crafting: {onceAllItemsAreCrafted: Wil
+je iets doen zodra all voorwerpen gemaakt zijn?, onceCertainRarityIsCrafted: Wil je
+iets doen zodra je iets hebt gemaakt van een specifieke zeldzaamheid of al het materiaal
+hebt gebruikt?}, activity: {onceInventoryIsFull: Wil je iets doen zodra je inventaris
+vol is?, onceAllActionsAreCompleted: Wil je iets doen zodra alle acties voltooid zijn?}}},
+whileAway: {phrases: {fromProc: 'Door <c>{proc}</c>', fromAttribute: 'Door attribuut
+{attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door <object id="{source}"/>'}}}}
