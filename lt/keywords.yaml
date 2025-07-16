@@ -33,7 +33,7 @@ singulars:
         <keywordRequirements />.
     fishingRod:
       name: Meškerė
-      requirement: Reikalinga meškerė.
+      requirement: Reikalinga <object id="fishingRod" />.
       requirementLevel: Reikalinga meškerė, kurios reikalavimuose yra bent <keywordRequirements
         />.
     fishingSpear:
@@ -43,7 +43,7 @@ singulars:
         <keywordRequirements />.
     tool:
       name: Įrankis
-      requirement: Reikalingas įrankis.
+      requirement: Reikalingas <object id="tool" />.
       requirementLevel: Reikalingas įrankis, kurio reikalavimuose yra bent <keywordRequirements
         />.
     woodcuttingHatchet:
@@ -51,3 +51,29 @@ singulars:
       requirement: Reikalingas medžio kirtimo kirvis.
       requirementLevel: Reikalingas medžio kirtimo kirvis, kurio reikalavimuose yra
         bent <keywordRequirements />.
+  recipes:
+    skills:
+      cooking:
+        name: Receptas
+        requirement: Reikalingas <object id="recipe_cooking" />.
+    products:
+      sandwich:
+        name: Sumuštinio receptas
+        requirements: Reikia kad <object id="sandwich" /> būtų pagamintas su <object
+          id="recipe_cooking" />.
+  gear:
+    frisbee:
+      requirementLevel: Reikalingas skraidantis diskas kurio reikalavimuose yra bent
+        <keywordRequirements />.
+      name: Skraidantis diskas
+      requirement: Reikalingas <object id="frisbee" />.
+    skis:
+      name: Slidės
+      requirement: Reikalingos <object id="skis" />.
+  activities:
+    fishing:
+      name: Žvejyba
+    miningOres:
+      name: Rūdžių kasyba
+    woodcuttingTrees:
+      name: Medžių kirtimas
