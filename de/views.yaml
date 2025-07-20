@@ -135,10 +135,10 @@ maps:
       'feminine': Weiblich
   cooldown:
     time:
-      'days': '{days}<d>'
-      'hours': '{hours}<h>'
-      'minutes': '{minutes}<m>'
-      'seconds': '{seconds}<s>'
+      'days': '{days}<c>d</c>'
+      'hours': '{hours}<c>h</c>'
+      'minutes': '{minutes}<c>m</c>'
+      'seconds': '{seconds}<c>s</c>'
 plurals:
   achievements:
     phrases:
@@ -365,6 +365,8 @@ singulars:
       tapToShowRoutes: Tippen, um die Routen anzuzeigen
       jobs: Jobs
       owner: Besitzer
+      showingRoutesFrom: Mögliche Reiseziele ab <object id="{from}"/>.
+      noRoutesFromLocation: Keine Reiseziele von <object id="{from}"/> verfügbar.
   activity:
     info:
       consumablesUsage: Du kannst ein <c>Nahrungsmittel</c> und einen <c>Trank</c>
@@ -382,6 +384,23 @@ singulars:
       options: Optionen
       workEfficiencyPenalty: <icon i="Work efficiency"/> Globale Arbeitseffizienz<c>-{penalty}%</c>
       notAffectingTraveling: (Beeinflusst nicht die Reiseeffizienz)
+      requirements: Voraussetzungen
+      rewards: Belohnungen
+      levelActivity: Level <c>{level}</c> <object id="{skill}"/> Aktivität
+      startActivity: Aktivität starten
+      queueActivity: Aktivität in Warteschlange einreihen
+      travelAndStartActivity: Reisen und Aktivität starten
+      cantStartActivity: Aktivität kann nicht gestartet werden
+      requirementsNotMet: Voraussetzungen nicht erfüllt
+      noActivitiesInLocation: Es gibt keine Aktivitäten in <object id="{location}"/>.
+      locationIsUnknown: Ort ist unbekannt. Sobald du diesen Ort erkundet hast, wirst
+        du die Aktivitäten hier sehen können.
+      activitiesInLocation: Verfügbare Aktivitäten in <object id="{location}"/>
+      guideTip: Tipp des Tages
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> Erfahrung
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} Sammelgegenstände</c>
+        verfügbar
   character:
     info:
       skillBreakdown: Hier findest du eine vollständige Übersicht aller Fähigkeiten,
@@ -472,6 +491,7 @@ singulars:
         title: Charakter
         anonOnLeaderboard: Auf Rangliste anonymisieren
         hideSteps: Schritte verstecken
+        exportData: Charakterdaten in die Zwischenablage exportieren
       closedBeta:
         clearStepsGraph: Schrittgraphen zurücksetzen
         useThisToClear: Nutze dies um deinen Schrittgraphen zurückzusetzen. Nützlich
@@ -532,7 +552,7 @@ singulars:
   pfpCreation:
     buttons:
       randomize: Zufällig
-      showHat: Kopfbedeckung anzeigen
+      showHat: Kopfbedeckung verwenden
       hideHat: Kopfbedeckung verstecken
       enableFaceAccessorie: Gesichtszubehör aktivieren
       enableBackAccessorie: Rückenzubehör verstecken
@@ -734,6 +754,8 @@ singulars:
       noItemsBank: Keine Items in deiner Bank.
       deposit: Einzahlen
       withdraw: Entnehmen
+      youAreNotAtABank: <c>Du befindest dich nicht an einem Ort mit einer Bank</c>.
+        Du kannst die Bank erst nutzen, wenn du zu einem Ort mit einer Bank reist.
   characterCreation:
     phrases:
       bodyType: Körpertyp
@@ -867,15 +889,19 @@ singulars:
       removeFromQueue:
         text: Aus der Warteschlange entfernen
         desc: Entfernt diese Aktion und alle folgenden Aktionen aus der Warteschlange.
+      cancelGearSetSwitch:
+        text: Ausrüstungswechsel abbrechen
+        desc: Bricht den gewählten Ausrüstungswechsel für diese Aktion ab.
     phrases:
       switchingToGearSet: Zum Ausrüstungsset <c>{name}</c> wechseln
       queue: Warteschlange
       queuedActions: Vorgemerkte Aktionen
-      travelingTo: Von <object id="{from}"/> nach <object id="{to}"/> reisen
+      travelingTo: Von <object id="{from}"/> nach <object id="{to}"/>
       untilInventoryFull: Ausführen, bis das Inventar voll ist
       noGearSetFound: Ausgewähltes Ausrüstungsset nicht gefunden, hast du es gelöscht
         ?
       activityInLocation: <object id="{activity}"/> in <object id="{location}"/>
+      noPathFound: Kein Weg zum Ziel gefunden.
     types:
       traveling: Reisen
       activity: Aktivität
