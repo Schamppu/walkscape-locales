@@ -65,6 +65,8 @@ singulars:
         name: Läntisen mantereen laivalupa
       jarvonianLetterOfPassage:
         name: Jarvonian läpikulkukirje
+        desc: Todiste siitä, että saat kulkea läpi Äänettömän Solan Jarvonian suunnalta
+          saapuessasi.
       underwaterMapI:
         name: Vedenalainen kartta
   consumables:
@@ -187,6 +189,8 @@ singulars:
     cookedFish:
       cookedCrayfish:
         name: Paistettu rapu
+        desc: Paistetut ravut ovat merellisten ruokien rakastajien herkku; niiden
+          liha on mureaa ja makeaa, ja siinä on häivähdys suolaisuutta.
       cookedJellyfish:
         name: Paistettu meduusa
       cookedStingray:
@@ -255,21 +259,29 @@ singulars:
         galeforgeChest:
           desc: Huhut kertovat tämän arkun olevan pyöristetty, jotta sitä voitaisiin
             pyörittä ympäri kaupunkia. Onpas kekseliästä!
-          name: Galeforgen arkku
+          name: Myrskyahjon arkku
         syrenthiaChest:
           name: Syrentian arkku
           desc: Tämä syvän vedenalaisen maailman arkun täytyy sisältää useita vedellisiä
             aarteita.
         coinPouch:
           name: Kolikkopussi
+          desc: Pieni pussukka, joka on täynnä kolikoita. Se on hieman painava, mutta
+            etpä ajatellut valittaa siitä.
         adventureGuildChest:
           name: Seikkailijakillan arkku
+          desc: Tässä jämerässä arkussa on Seikkailijakillan symboli.
         coralChest:
           name: Koralliarkku
+          desc: Tämä arkku koostuu monivärisistä koralleista. Se liikkuu aivan kuin
+            se olisi veden alla.
         jarvoniaChest:
           name: Jarvonian arkku
+          desc: Jäinen arkku Jarvoniasta; sitä on kylmä koskettaa.
         gdteChest:
           name: TESK:n arkku
+          desc: Turpeinen arkku, joka näyttää siltä että se olisi raahattu ylös TESK:n
+            suonsilmäkkeestä.
         rustyChest:
           name: Ruosteinen arkku
           desc: Herbertin löytämä ja hilloama vanha, ruostunut arkku odottaa tilaisuuttaan
@@ -600,17 +612,61 @@ singulars:
           desc: Tähtihelmi on keskeisessä roolissa wallisialaisen taidemaalarin kuuluisassa
             teoksessa "Tyttö ja tähtihelmikorvakoru".
         amuletOfTheRoot:
-          name: Pyöreän juuren kaulakoru
-          desc: Kiiltävä kaulakoru, joka kantaa pyöreän juuren voimaa.
+          name: Pyöreän juuren riipus
+          desc: Kiiltävä riipus, joka kantaa pyöreän juuren voimaa.
         amuletOfTheSharkTooth:
           name: Hainhammasriipus
-          desc: Hohtava riipus, jossa on hainhampaan taika.
+          desc: Hohtava riipus, joka kantaa on hainhampaan voimaa.
+        amuletOfTheLuckyRabbitFoot:
+          desc: Hohtava riipus, joka kantaa onnea tuovan jäniksenkäpälän voimaa.
+          name: Jäniksenkäpäläriipus
+        goldRing:
+          desc: Yksikertainen kultasormus, ajaton ja puhtaudessaan arvokas.
+          name: Kultasormus
+        amuletOfTheAnimalKingdom:
+          desc: Hohtava riipus, joka kantaa monen eläimen voimaa.
+          name: Eläinten valtakunnan riipus
+        amuletOfTheBeaver:
+          name: Majavariipus
+          desc: Hohtava riipus, joka kantaa majavan voimaa.
+        amuletOfTheEel:
+          name: Ankeriasriipus
+          desc: Hohtava riipus, joka kantaa ankeriaan voimaa.
+        amuletOfTheBat:
+          name: Lepakkoriipus
+          desc: Hohtava riipus, joka kantaa lepakon voimaa.
+        amuletOfTheHeron:
+          name: Haikarariipus
+          desc: Hohtava riipus, joka kantaa harmaahaikaran voimaa.
+        amuletOfTheShrimp:
+          name: Katkarapuriipus
+          desc: Hohtava riipus, joka kantaa katkaravun voimaa.
+        amuletOfTheCoolingIce:
+          name: Viilentävän jään riipus
+          desc: Riipus, joka kantaa jääpuikon voimaa.
+        amuletOfTheMeasuringSpoons:
+          name: Mittauslusikkariipus
+          desc: Hohtava riipus, joka kantaa mittalusikoiden voimaa.
+        cutOpal:
+          name: Opaali
+        cutTopaz:
+          name: Topaasi
+        cutJade:
+          name: Jade
+        cutRuby:
+          name: Rubiini
+        cutSunStone:
+          name: Aurinkokivi
+        silverRing:
+          name: Hopeasormus
+          desc: Yksinkertainen hopearengas, tyylikäs eikä mitenkään turhantärkeä.
       tailoring:
         basicLeather:
           desc: Pala nahkaa, joka on valmis käytettäväksi hyötyesineiden valmistuksessa.
           name: Simppeli nahanpala
         elderhideLeather:
           desc: Joustavaa materiaalia, joka on parkittu sen mätänemisen ehkäisemiseksi.
+          name: Ikitaljainen nahanpala
         qualityLeather:
           name: laadukas nahanpala
   looted:
@@ -661,6 +717,8 @@ singulars:
           name: Seikkailusormus
         adventurersAmulet:
           name: Seikkailuamuletti
+        adventuringSander:
+          name: Seikkailuhiekkapaperi
     skilling:
       agility:
         exerciseHeadband:
@@ -1125,8 +1183,16 @@ singulars:
         name: Erittäin pitkät saappaat
       properBoots:
         name: Kunnolliset kengät
+        desc: Tukevat ja mukavat saappaat, jotka on suunniteltu sekä tyyli että toiminnallisuus
+          mielessä pitäen. Vaikka kävelisit läpi Myrskyahjon läpi tai vaeltaisit Rid
+          Raddakin viidakoissa, nämä saappaat pitävät varpaasi suorassa.
       adoringFanStatue:
         name: Ihailevan fanin patsas
+        desc: "Patsas, joka esittää sinua ihailevaa fania. Se on hieman karmiva, mutta
+          myös oudolla tavalla imarteleva. Voit miltei kuulla sen sanovan:\n<i>\"\
+          Kyllä, suuri ja mahtava Mestari? Onko mitään, mitä tarvitsisitte? Voinko
+          kantaa asettanne? Kiillottaa saappaanne? Kaipaisitteko kenties jalkahierontaa?\"\
+          </i>"
       halflingGloves:
         name: Puolituisen hanskat
       trustyTent:
@@ -1168,22 +1234,39 @@ singulars:
         name: Herbertin paita
       herbertsHat:
         name: Herbertin hattu
+        desc: Ruskea villakankainen hattu, joka lämmittää korviasikin. Se ei ole niinkään
+          vanha, vaan klassista vuosikertaa.
       herbertsCape:
         name: Herbertin viitta
+        desc: Viitta on hieman pölyinen, mistä näkee että Herbert ei ole käyttänyt
+          sitä aikoihin. Kenties voisit antaa sille uuden elämän.
       simpleRing:
         name: Simppeli sormus
+        desc: Kiiltävä messingin värinen sormus. Siinä ei ole monimutkaisia yksityiskohtia
+          tai nättejä jalokivia, mutta se on tyylikäs yksinkertaisuudessaan.
       simpleAmulet:
         name: Simppeli amuletti
+        desc: Tässä messinginvärisessä kaulakorussa on samanvärinen riipus, jossa
+          on vaaleampia kuvioita, jotka eivät tunnu esittävän mitään erityistä.
       properShirt:
         name: Kunnollinen paita
+        desc: Siistin näköinen paita, ei kuitenkaan liian hienosteleva. Sopii mihin
+          tahansa rennon huolettomaan tilanteeseen.
       properPants:
         name: Kunnolliset housut
+        desc: Et varmastikaan haluaisi saada tahroja näille housuille, ovathan ne
+          perin kunnolliset!
       properHat:
         name: Kunnollinen hattu
+        desc: Kauniisti neulottu piponmallinen hattu, joka pitää pääsi sopivan viileänä
+          talvisilla seikkailuillasi.
       properCape:
         name: Kunnollinen viitta
+        desc: Tyylikäs viitta, joka lisää hieman aistikkuutta asuusi ja sopii täydellisesti
+          muodollisiin tilaisuuksiin - tai kun haluat tehdä muodikkaasti räväkän vaikutuksen.
       smellySocks:
         name: Haisevat sukat
+        desc: Nämä sukat olisivat täydelliset kotitontun vapauttamiseen.
       capeOfTheTrailblazer:
         name: Edelläkulkijan viitta
         desc: Tämä viitta symboloi tietä avaavan edelläkulkijan rohkeutta ja päättäväisyyttä,
@@ -1299,6 +1382,8 @@ singulars:
         desc: Kaulakorussa on pienoiskartta, joka ohjaa sinut lyhimmälle reitille.
       runningVisor:
         name: Juoksulippa
+        desc: Tämä punainen lippa suojaa silmiäsi auringolta, mutta jättää tilaa että
+          voit ilmavasti jäähtyä päälaelta.
       pantsOfHaste:
         name: Kiirehousut
         desc: Sairaan nopeet!
@@ -1633,7 +1718,7 @@ singulars:
       silverNugget:
         name: Hopeahippu
         desc: Hopea on erittäin arvostettu metalli, josta valmistetaan usein koruja,
-          kuten sormuksia, amuletteja ja korvakoruja.
+          kuten sormuksia, riipuksia ja korvakoruja.
       goldNugget:
         name: Kultahippu
         desc: Kulta on yksi arvokkaimmista metalleista, jota käytetään usein korumateriaalina.
@@ -1888,17 +1973,49 @@ singulars:
         desc: Vahvaa syistä kudosta, joka yhdistää lihakset luihin.
     trinketry:
       compassTrinket:
-        desc: Kompassihely hohtaa kirkkaasti valossa. Tästä voisi tehdä kaulakorun
+        desc: Kompassihely hohtaa kirkkaasti valossa. Tästä voisi tehdä riipuksen
           jonain päivänä.
         name: Kompassihely
       circularRootTrinket:
         name: Pyöreä juurihely
-        desc: Pyöreä juurihely kiiltää valossa kirkkaana. Tästä voisi tehdä kaulakorun
+        desc: Pyöreä juurihely kiiltää valossa kirkkaana. Tästä voisi tehdä riipuksen
           jonain päivänä.
       sharkToothTrinket:
         name: Hainhammashely
-        desc: Hainhammashely hohtaa kirkkaasti valossa. Tästä voisi tehdä kaulakorun
+        desc: Hainhammashely hohtaa kirkkaasti valossa. Tästä voisi tehdä riipuksen
           jonain päivänä.
+      coolingIceTrinket:
+        desc: Viilentävä jääpuikkohely hohtaa kirkkaana valossa. Tästä voisi tehdä
+          riipuksen jonain päivänä.
+        name: Viilentävä jääpuikkohely
+      eelTrinket:
+        desc: Ankeriashely hohtaa kirkkaana valossa. Tästä voisi tehdä riipuksen jonain
+          päivänä.
+        name: Ankeriashely
+      batTrinket:
+        name: Lepakkohely
+        desc: Lepakkohely kiiltää valossa kirkkaasti. Tästä voisi tehdä riipuksen
+          jonain päivänä.
+      heronTrinket:
+        name: Haikarahely
+        desc: Harmaahaikaran muotoinen hely hohtaa kirkkaana valossa. Tästä voisi
+          tehdä riipuksen jonain päivänä.
+      shrimpTrinket:
+        name: Katkarapuhely
+        desc: Katkarapuhely hohtaa kirkkaasti valossa. Tästä voisi tehdä riipuksen
+          jonain päivänä.
+      luckyRabbitFootTrinket:
+        name: Jäniksenkäpälähely
+        desc: Onnea tuova jäniksenkäpälähely hohtaa kirkkaasti valossa. Tästä voisi
+          tehdä riipuksen jonain päivänä.
+      measuringSpoonsTrinket:
+        name: Mittalusikkahely
+        desc: Mittalusikkahely hohtaa kirkkaana valossa. Tästä voisi tehdä riipuksen
+          jonain päivänä.
+      beaverTrinket:
+        name: Majavahely
+        desc: Majavahely kiiltää valossa kirkkaana. Tästä voisi tehdä riipuksen jonain
+          päivänä.
   currencies:
     adventurersGuildToken:
       name: Seikkailijakillan merkki
