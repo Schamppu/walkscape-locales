@@ -237,9 +237,9 @@ plurals:
 singulars:
   achievements:
     info:
-      viewDescription: Odblokuj osiągnięcia, aby zwiększyć <hl>Postęp Nagrody</hl>.
-        Gdy Postęp Nagrody jest wypełniony, otrzymasz nagrodę dla wszystkich swoich
-        postaci. Niektóre osiągnięcia mają też nagrody za ich odblokowanie.
+      viewDescription: Odblokuj osiągnięcia, aby zdobywać <hl>Punkty Osiągnięć</hl>.
+        Po zdobyciu określonej liczby punktów odblokowujesz specjalne nagrody. Niektóre
+        osiągnięcia same w sobie dają nagrody za ich zdobycie.
       specialItems: Specjalne przedmioty, takie jak <c>Znajdźki</c>, <c>Przedmioty
         do Zadań</c> i <c>Artefakty</c> są zbierane w trakcie twojej podróży przez
         WalkScape. Możesz sprawdzić je tutaj. Znajdźki dają ci progres w punktach
@@ -249,18 +249,18 @@ singulars:
         które możesz spróbować zebrać. Nie zajmują miejsca w ekwipunku i zawsze są
         na wyposażeniu twojej postaci.
       noCollectibleItems: Nie udało ci się odnaleźć jeszcze żadnych Znajdziek.
-      totalProgressUnlocks: Otrzymasz te nagrody na podstawie całkowitego postępu
-        w Osiągnięciach i utracisz dostęp do przedmiotów, jeżeli dostępnych będzie
-        więcej punktów osiągnięć.
-      checkPointUnlocks: Te osiągnięcia są dostępne w określonych miejscach kontrolnych
-        osiągnięć. Nie stracisz do nich dostępu, nawet jeśli dostępnych będzie więcej
+      totalProgressUnlocks: Otrzymasz te nagrody na podstawie swojego całkowitego
+        postępu w Osiągnięciach, ale stracisz do nich dostęp, jeśli pojawi się więcej
         punktów osiągnięć.
+      checkPointUnlocks: Te osiągnięcia są dostępne na określonych progach punktów
+        osiągnięć. Nie stracisz do nich dostępu, nawet jeśli pojawi się więcej punktów
+        osiągnięć.
     phrases:
       notUnlocked: Zablokowane osiągnięcie
       rewardProgress: Postęp Nagrody
       showRewards: Pokaż Nagrody
       totalProgressUnlocks: Całkowity postęp odblokowań
-      checkPointUnlocks: Sprawdzenie punktów odblokowań
+      checkPointUnlocks: Odblokowania progowe punktów
       unclaimedRewards: 'Nieodebrane nagrody: '
   crafting:
     phrases:
@@ -271,10 +271,10 @@ singulars:
       requiresMaterial: Wymaga materiału.
       requiresOneOfTheFollowing: Wymaga jednego z następujących materiałów.
       rewards: Nagrody
-      noMaterials: Nie posiadasz materiałów dostępnych do wytwarzania w tej chwili.
+      noMaterials: Obecnie nie masz materiałów dostępnych do wytwarzania.
       noServiceRequirements: Brak wymagań.
-      noMaterialsThatCouldBeUsed: W twoim ekwipunku nie ma materiałów, które można
-        wykorzystać do produkcji.
+      noMaterialsThatCouldBeUsed: Brak materiałów w twoim ekwipunku, które można wykorzystać
+        do produkcji.
       showingRecipiesThatUses: Pokaż przepisy zawierające
       requiresService: Wymaga usługi.
     errors:
@@ -288,23 +288,23 @@ singulars:
         wybierając go z poniższej listy i naciskając przycisk "Wyposaż".
       noItemSelected: Nie wybrano żadnego przedmiotu. \n\n Wybierz przedmiot z poniższej
         listy, aby porównać go z bieżącym przedmiotem i wyposażyć go.
-      noItemsFound: Nie znaleziono żadnych przedmiotów, które pasowałyby do tego slotu.
+      noItemsFound: Nie znaleziono w ekwipunku przedmiotów pasujących do tego slotu.
     phrases:
       treasury: Skarbiec
       longPressTip: <c>Porada:</c> Długie przytrzymanie na przedmiocie lub wielu przedmiotach
         zaznacza wszystkie podobne przedmioty.
       dropItems: Wyrzucić?
-      itemsInUse: Wśród zaznaczonych przedmiotów są takie, które są w użyciu. Nie
-        możesz ich wyrzucić lub umieścić w banku.
+      itemsInUse: Zaznaczyłeś przedmioty, które są w użyciu. Nie możesz ich wyrzucić
+        ani zdeponować w banku.
       slots: Slotów <c>{slots}</c>
       slotsCount: 'Slotów:'
       requirementsNotMet: Nie spełniono wymagań.
       cantEquip: Nie można założyć.
       checkBank: Otwórz bank
-      allItemsInUse: Wszystkie te przedmioty są aktualnie w użyciu i nie mogą być
-        upuszczone.
-      cantBeDropped: Przedmiot nie może zostać upuszczony.
-      oneOrMoreCantBeDropped: Jeden lub więcej przedmiotów nie może być upuszczony.
+      allItemsInUse: Wszystkie te przedmioty są aktualnie w użyciu i nie można ich
+        wyrzucić.
+      cantBeDropped: Przedmiot nie może zostać wyrzucony.
+      oneOrMoreCantBeDropped: Jeden lub więcej przedmiotów nie może zostać wyrzuconych.
       attributes: Atrybuty
       abilities: Zdolności
       requires: Wymaga
@@ -319,8 +319,8 @@ singulars:
       inUse: W użyciu
       slotDoesntExist: Ten slot na przedmioty już nie istnieje.
       equipToRingOne: Załóż na slot 1 pierścieni
-      areYouSureToDrop: Na pewno chcesz wyrzucić te przedmioty? Będą zniszczone na
-        zawsze, kiedy zostaną wyrzucone.
+      areYouSureToDrop: Na pewno chcesz wyrzucić te przedmioty? Po wyrzuceniu zostaną
+        one trwale usunięte.
       selectedStacks: Wybrano <c>{stacks}</c> stacków
       disableWhenChanging: Wyłącz przy zmianie aktywności
       enableWhenBack: Włącz przy rozpoczęciu poprzednio wykonywanej aktywności
@@ -328,7 +328,7 @@ singulars:
       consumables: Przedmioty Zużywalne
       noConsumableSelected: Brak wybranego przedmiotu zużywalnego. Możesz wybrać poniższy.
       noConsumables: Brak przedmiotów zużywalnych w ekwipunku.
-      noPotionConsumables: Brak <hl>mikstur</hl> w twoim plecaku.
+      noPotionConsumables: Brak <hl>mikstur</hl> w ekwipunku.
       noFoodConsumables: Brak <hl>żywności</hl> w ekwipunku.
     options:
       consenseInventory: Poukładaj ekwipunek
@@ -386,8 +386,10 @@ singulars:
   character:
     info:
       skillBreakdown: Tutaj znajduje się całkowite podsumowanie wszystkich twoich
-        umiejętności na tej postaci w trakcie swojej przygody. Kliknij w umiejętność,
+        umiejętności dla tej postaci w trakcie swojej przygody. Kliknij w umiejętność,
         aby zobaczyć bardziej szczegółowe informacje na jego temat i tego, co odblokowuje.
+      eachLevelIncreasesStepBank: Każdy poziom postaci powyżej poziomu <c>{level}</c>
+        zwiększa maksymalną liczbę zapisanych kroków o <c>{amount}</c>.
     phrases:
       skills: Umiejętności
       stepsOfLastWeek: Kroków w ciągu 7 dni
@@ -395,6 +397,8 @@ singulars:
       checkOutSubject: Sprawdź mój postęp w WalkScape!
       totalLevel: Całkowity poziom
       savePicture: Zapisz zdjęcie
+      level: 'Poziom postaci: <c>{level}</c>'
+      stepsToNextLevel: 'Kroki do następnego poziomu: <c>{steps}</c>'
   permissions:
     phrases:
       pedometerPermission: Uprawnienia do liczenia kroków
@@ -468,12 +472,12 @@ singulars:
       noEyeAccessories: Nie masz żadnych akcesoriów dla oczu.
   abilities:
     info:
-      youHaveNoAbilities: <hl>Nie masz żadnych umiejętności</hl>. Określony sprzęt
-        w grze może zapewnić ci umiejętności, których możesz użyć, aby uzyskać natychmiastowe
-        opcje w grze, w zamian za ich czas odnowienia.
-      abilitiesInfo: Umiejętności to specjalne akcje, których możesz użyć, aby zyskać
-        natychmiastowe korzyści w grze. Umiejętności mają czas odnowienia, który musi
-        minąć, by ponownie móc je użyć.
+      youHaveNoAbilities: <hl>Nie masz żadnych zdolności</hl>. Niektóre elementy ekwipunku
+        w grze mogą dać ci zdolności, które zapewniają natychmiastowe korzyści, ale
+        mają czas odnowienia.
+      abilitiesInfo: Zdolności to specjalne akcje, które zapewniają natychmiastowe
+        korzyści w grze. Każda zdolność ma czas odnowienia, który musisz odczekać
+        przed ponownym użyciem.
     phrases:
       abilities: Zdolności
       useAbility: Użyj Zdolności
@@ -484,14 +488,14 @@ singulars:
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Wymagania do użycia nie są spełnione:'
-      followingMustBeTrueToTick: 'Poniższe cechy muszą być spełnione, by czas odnowienia
-        spadał:'
+      followingMustBeTrueToTick: 'Następujące warunki muszą być spełnione, aby czas
+        odnowienia się skracał:'
       cooldownRemaining: 'Czas Odnowienia:'
       cooldownReady: 'Czas Odnowienia: Gotowe'
       noCooldown: Brak Czasu Odnowienia.
   treasury:
     phrases:
-      noItems: Nie masz żadnych skarbów do otwarcia. Możesz je otrzymać z najróżniejszych
+      noItems: Nie masz żadnych skarbów do otwarcia. Skrzynie możesz zdobyć z różnych
         aktywności.
       openChest: Otwórz
       openAll: Otwórz Wszystkie
@@ -538,8 +542,8 @@ singulars:
         showFpsCounter: Pokaż licznik FPS
       closedBeta:
         title: Zamknięta Beta
-        useThisToClear: Użyj tego, jeżeli chcesz zresetować wykres kroków. Przydatne,
-          kiedy kroki osiągnąłeś błędem lub, by mieć czysty wykres.
+        useThisToClear: Użyj tego, jeśli chcesz zresetować wykres kroków. Przydatne,
+          gdy zyskałeś kroki przez błąd i chcesz go wyczyścić.
         clearStepsGraph: Wyczyść wykres kroków
       account:
         visibility: Widoczność Profilu
@@ -548,6 +552,7 @@ singulars:
         title: Postać
         anonOnLeaderboard: Anonimizuj w Rankingu
         hideSteps: Ukryj Kroki
+        exportData: Eksportuj dane postaci do schowka
       language:
         title: Język
       dataSource:
@@ -571,17 +576,17 @@ singulars:
         renderOutlines: Renderowanie konturów
       locales:
         title: Język
-        chooseALanguageInfo: Naciśnij guzik, by otworzyć menu wyboru języka.
+        chooseALanguageInfo: Naciśnij przycisk, by otworzyć menu wyboru języka.
         changeLanguage: Zmień język
     phrases:
       settings: Ustawienia
       exitToCharacterSelection: Wyjście do wyboru postaci
       stepSourceInfoDesc: Zobacz więcej informacji o źródłach kroków oraz ich różnicach
-        używając guzika poniżej.
+        używając przycisku poniżej.
       stepSourceInfo: Informacje o źródłach kroków
       connectionInfoIos: Jeżeli twoje urządzenia nie pojawiają się na liście powyżej,
         upewnij się że nadano uprawnienia dla WalkScape do odczytu danych z Apple
-        Health w c>Ustawienia ➤ Prywatność & Bezpieczeństwo ➤ Zdrowie ➤ (pod Aplikacje)
+        Health w <c>Ustawienia ➤ Prywatność & Bezpieczeństwo ➤ Zdrowie ➤ (pod Aplikacje)
         WalkScape</c> oraz upewnij się, że Apple Health zarejestrowało kroki na tych
         urządzeniach w ciągu ostatnich 7 dni.
       connectionInfoAndroid: Wsparcie smart watchy na Android już wkrótce. Aktualnie
@@ -596,8 +601,8 @@ singulars:
       characterName: Nazwa postaci
       bodyType: Typ ciała
     info:
-      rememberSwipe: Pamiętaj, że możesz macnąć ekran i wrócić, by zmienić wybrane
-        opcje w dowolnym momencie tworzenia postaci.
+      rememberSwipe: Pamiętaj, że możesz w każdej chwili podczas tworzenia postaci
+        przesunąć ekran, aby zmienić wybrane opcje.
   pfpCreation:
     phrases:
       currentSelection: Aktualnie wybrane
@@ -740,9 +745,9 @@ singulars:
   gear:
     phrases:
       combatModifiers: Modyfikatory walki
-      noCombatModifiers: Brak modyfikatorów walki z założonych przedmiotów.
+      noCombatModifiers: Brak modyfikatorów walki z wyposażonych przedmiotów.
       skillModifiers: Modyfikatory umiejętności
-      noSkillModifiers: Brak modyfikatorów umiejętności z założonych przedmiotów.
+      noSkillModifiers: Brak modyfikatorów umiejętności z wyposażonych przedmiotów.
       permanentModifiers: Trwałe modyfikatory
       noPermanentModifiers: Brak trwałych modyfikatorów.
       noItemEquipped: Brak założonych przedmiotów
@@ -759,6 +764,8 @@ singulars:
       noItemsBank: Brak przedmiotów w banku.
       deposit: Zdeponuj
       withdraw: Wyjmij
+      youAreNotAtABank: <c>Nie znajdujesz się w miejscu z dostępnym bankiem.</c> Możesz
+        korzystać z banku tylko w lokalizacji, która go posiada.
   trade:
     phrases:
       trade: HANDLUJ
@@ -770,9 +777,9 @@ singulars:
     phrases:
       jobs: Prace
     info:
-      jobInfo: Zadania to <c>proste i powtarzalne zadania</c>, które możesz wykonać,
-        aby zdobyć zapłatę. Możesz akceptować zadania z <c>tablic ogłoszeń</c> w różnych
-        lokalizacjach, takich jak miasta. Możesz mieć aktywne trzy zadania w tym samym
+      jobInfo: Prace to <c>proste i powtarzalne zadania</c>, które możesz wykonać,
+        aby zdobyć zapłatę. Możesz akceptować prace z <c>tablic ogłoszeń</c> w różnych
+        lokalizacjach, takich jak miasta. Możesz mieć aktywne trzy prace w tym samym
         czasie.
   faction:
     phrases:
@@ -870,6 +877,24 @@ singulars:
           wyposażenia.
       removeFromQueue:
         text: Usuń z kolejki
+        desc: Usuwa tę akcję oraz wszystkie następne akcje z kolejki.
+      cancelGearSetSwitch:
+        text: Anuluj zmianę zestawu ekwipunku
+        desc: Anuluje wybraną zmianę zestawu ekwipunku dla tej akcji.
+      depositUnlockedItems:
+        text: Zdeponuj odblokowane przedmioty
+    suggestions:
+      crafting:
+        onceCertainRarityIsCrafted: Gdy wytworzysz przedmiot o określonej rzadkości
+          lub zużyjesz wszystkie materiały, czy chcesz coś zrobić?
+        onceAllItemsAreCrafted: Gdy wszystkie przedmioty zostaną wytworzone, czy chcesz
+          coś zrobić?
+      traveling:
+        onceYouArriveTo: Dodaj akcję do kolejki w <object id="{location}"/>?
+      activity:
+        onceInventoryIsFull: Gdy twój ekwipunek będzie pełny, czy chcesz coś zrobić?
+        onceAllActionsAreCompleted: Gdy wszystkie akcje zostaną zakończone, czy chcesz
+          coś zrobić?
   whileAway:
     phrases:
       whileYouWereAway: Kiedy ciebie nie było...
