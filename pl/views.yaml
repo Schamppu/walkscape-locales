@@ -136,6 +136,12 @@ maps:
       'masculine': Męska
       'feminine': Żeńska
       'neutral': Neutralna
+  cooldown:
+    time:
+      'days': '{days}<c>d</c>'
+      'hours': '{hours}<c>h</c>'
+      'minutes': '{minutes}<c>m</c>'
+      'seconds': '{seconds}<c>s</c>'
 plurals:
   achievements:
     phrases:
@@ -215,6 +221,9 @@ plurals:
         zero: '-'
         few: '-'
         many: '-'
+        two: <icon i="Steps"/> <c>{} steps</c> wymagane do akcji
+        other: <icon i="Steps"/> <c>{} steps</c> wymagane do akcji
+        one: <icon i="Steps"/> <c>{} step</c> wymagane do akcji
   inventory:
     info:
       consumableDuration:
@@ -637,8 +646,8 @@ singulars:
       variant: Wersja {number}
     buttons:
       randomize: Wylosuj
-      showHat: Pokaż nakrycie głowy
-      hideHat: Ukryj nakrycie głowy
+      showHat: Włącz nakrycie głowy
+      hideHat: Wyłącz nakrycie głowy
       enableFaceAccessorie: Włącz akcesoria twarzy
       enableBackAccessorie: Włącz akcesoria tyłu
       enableFacepaint: Włącz malowanie twarzy
@@ -901,6 +910,9 @@ singulars:
         desc: Anuluje wybraną zmianę zestawu wyposażenia dla tej akcji.
       depositUnlockedItems:
         text: Zdeponuj odblokowane przedmioty
+        desc: Zdeponuj wszystkie odblokowane przedmioty ze swojego ekwipunku w banku,
+          jeśli któryś z nich jest dostępny w dowolnej z odwiedzanych przez ciebie
+          lokacji.
     suggestions:
       crafting:
         onceCertainRarityIsCrafted: Gdy wytworzysz przedmiot o określonej rzadkości
@@ -916,7 +928,7 @@ singulars:
   whileAway:
     phrases:
       whileYouWereAway: Kiedy ciebie nie było...
-      switchedToGearSet: Przełączono na zestaw ekwipunku <c>{name}</c>
+      switchedToGearSet: Przełączono na zestaw wyposażenia <c>{name}</c>
       startedNewActivity: Rozpoczęto aktywność <object id="{activity}"/> w <object
         id="{location}"/>
       startedActivityNoLocation: Rozpoczęto aktywność <object id="{activity}"/>
