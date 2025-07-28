@@ -28,6 +28,9 @@ singulars:
           vücudunu sarıyor. Buradan düşme ihtimali ne de göz korkutucu.
       exploreBogBottom:
         name: Batakaltı keşfi
+        desc: Su altı haritanı takip ederek bataklığın bulanık dibindeki gizli yolları
+          keşfediyorsun. Yollar sonu gelmeyen dönemeçlerden oluşuyor olsa da seni
+          bir yere doğru götürüyor. Yüzmeye devam etmelisin.
     global:
       birdWatching:
         desc: Kuş gözlemi, kuşlar alemine açılan bir penceredir. Ağaçları, gökyüzünü
@@ -133,6 +136,15 @@ singulars:
           kadar.
       exploreUnderwaterCave:
         name: Su altı mağarası keşfi
+        desc: Su altı haritanı takip ederek su altı mağarasındaki yolları keşfediyorsun.
+          Yollar sonu gelmeyen dönemeçlerden oluşuyor olsa da seni bir yere doğru
+          götürüyor. Yüzmeye devam etmelisin.
+    bats:
+      springBatTracking:
+        name: Bahar yarasası takibi
+        desc: Yarasalar mağarayı terk edip kuzeydoğuya doğru uçuyor. Bahar yuvalarından
+          çıkan bu yarasaları takip ederek sıradaki yuvalarını bulmak için gece gündüz
+          koşuyorsun. Geri dönmen biraz zaman alacak gibi.
   fishing:
     jarvonia:
       lakeFishing:
@@ -377,7 +389,7 @@ singulars:
       horseshoeMaking:
         name: At nalı yapımı
         desc: Güçlü metalleri kullanarak, atların toynaklarını sert arazilerden koruyacak
-          bir nal yapıyorsun. Sabitlemekte çiviler kullanılıyor olsa da, çok kalın
+          bir nal yapıyorsun. Sabitlemekte çivi kullanılıyor olsa bile, çok kalın
           bir insan tırnağına benzeyen toynaklar bir şey hissetmediği için atların
           canı acımaz.
       flameStoking:
@@ -444,28 +456,28 @@ singulars:
           duygusu hissediyorsun.
       vegetableChopping:
         name: Sebze doğrama
-        desc: Ne yapacağına dair bir fikrin yokken aşçıbaşı tarafından azarlanmak
-          stresli bir ortamdır. Yine de ara sıra da olsa sebzeleri doğru şekilde doğrayabiliyorsun.
+        desc: Ne yapacağına dair hiçbir fikrin yokken aşçıbaşı tarafından azarlanıp
+          durmak ne stresli bir iş. Yine de arada bir sebzeleri doğru şekilde doğrayabiliyorsun.
     gdte:
       wineGrapeStomping:
         name: Şarap üzümü ezme
         desc: Çekirdekleri kırmamak için üzümlerin üzerine yalın ayak bir şekilde
           basıyorsun. Meyvenin ezilmesi, fermantasyon işleminden sorumlu olan mayayla
-          karışmasını kolaylaştırdığından ortasından başlayıp kenarlara doğru ilerleyerek
+          karışmasını kolaylaştırdığından en ortadan başlayıp kenarlara doğru ilerleyerek
           süreci hızlandırıyorsun.
   carpentry:
     jarvonia:
       shipRepairBeginner:
         desc: Zamanın yıprattığı küçük teknelerin tamirinde rol alıyorsun. Keresteler,
           çiviler, armalar, bağlantı parçaları ve halatlar emrine amade. Ustabaşının
-          emirlerini eksiksizce yerine getiriyorsun. Belki de bir gün, emirleri veren
-          sen olacaksın.
+          emirlerini eksiksizce yerine getiriyorsun. Belki de bir gün, bu emirleri
+          veren sen olacaksın.
         name: Brik tamiri
       woodCarving:
         name: Ahşap oyma
-        desc: 'Bıçak gibi keskin bir alet kullanarak ahşapa şekil vermek, kadim bir
+        desc: 'Bıçak gibi keskin aletler kullanarak ahşapa şekil vermek kadim bir
           zanaatkarlık yöntemidir. Hem sanatsal hem de dini pek çok eser çeşidi bulunur:
-          Ufak figürler ve oyuncaklardan, tören veya savaş maskelerine, kocaman mozaiklerden
+          Ufak figürler ve oyuncaklardan tören veya savaş maskelerine, kocaman mozaiklerden
           upuzun totem direklerine kadar.'
     gdte:
       shipRepairIntermediate:
@@ -476,7 +488,7 @@ singulars:
         name: Gemi gövdesi tamiri
       underwaterAqueductConstruction:
         name: Su altında su kemeri inşaatı
-        desc: Buçukluk Kamp Alanı'na giden doğal su hattını kazarak güçlendiriyorsun.
+        desc: Buçukluk Kampı'na giden doğal su hattını inşa edip güçlendiriyorsun.
   crafting:
     jarvonia:
       tinkering:
@@ -488,17 +500,18 @@ singulars:
         name: Buz heykeltıraşlığı
         desc: Elindeki keski, testere ve küçük bir kazmayla, sıradan bir buzu alıp
           işlevsel ya da sanatsal bambaşka bir şeye çeviriyorsun. Ancak bu eserlerin
-          ömürleri oda sıcaklığına bağlıdır, birkaç dakikadan sonsuzluğa kadar.
+          ömürleri oda sıcaklığına bağlıdır, birkaç dakikadan başlayıp sonsuzluğa
+          kadar gider.
       apprenticeForLoif:
         name: Loif'in yanında çıraklık
         desc: İhtiyar Loif Ulfrand'ın sıcak içecekler, yeni bilenmiş aletler ve saçının
           kesilmesi gibi pek çok şeye ihtiyacı var. Yine de ara sıra uyuyakaldığı
-          zaman aletlerini kullanarak birkaç tecrübe edinebilirsin.
+          zaman aletlerini kullanarak biraz tecrübe edinebilirsin.
     syrenthia:
       underwaterBasketWeaving:
         name: Su altında sepet örme
         desc: İnce mercan parçalarını ustalıkla örerek sepete çeviriyorsun. Hem yavaş
-          hem meşakkatli bir süreç olsa da, neticesi yüreğini gururla dolduruyor.
+          hem meşakkatli bir süreç olsa bile neticesi yüreğini gururla dolduruyor.
   misc:
     emergencySwimEscape:
       name: Acilen yüzerek kaçış
@@ -513,8 +526,8 @@ singulars:
   hunting:
     jarvonia:
       wolfHunting:
-        desc: Sık karşılaşılan orman avcıları olan kurtları ararken yerdeki kocaman
-          pati izlerini takip ediyorsun. Okun ve yayın bir tanesini indirmeye hazır.
+        desc: Sık karşılaşılan orman yırtıcıları olan kurtları ararken yerdeki kocaman
+          pati izlerini takip ediyorsun. Ok ve yayınla bir tanesini indirmeye hazırsın.
         name: Kurt avı
       rabbitTracking:
         name: Tavşan takibi
@@ -522,19 +535,18 @@ singulars:
           dikkat ederek bu hayvanları arıyorsun.
       bearHunting:
         name: Ayı avı
-        desc: Ağaçların üzerindeki büyük pençe izleri bu civardaki ayıları bulma işinde
-          doğru yolda olduğunu gösteriyor. Duyuların tamamen odaklanmışken vücudun
-          bir tanesini haklamaya hazır.
+        desc: Ağaçların üzerindeki büyük pençe izleri civardaki ayıları bulma işinde
+          doğru yolda olduğunu gösteriyor. Duyuların tamamen odaklanmış halde ve vücudun
+          ayılardan birini haklamaya hazır.
       deerHunting:
         name: Geyik avı
-        desc: Civar çevrede geyik bulunduğunun kesin kanıtı olan geyik gübrelerini
-          ormanda arıyorsun. Karşılaşınca bir tanesini vurmak için ok ve yay ile hazır
-          durumdasın.
+        desc: Bu bölgede geyik bulunduğunun kesin kanıtı olan geyik gübrelerini ormanda
+          arıyorsun. Karşılaşınca birini vurmak için ok ve yayınla hazır durumdasın.
     gdte:
       lizardHunting:
         name: Kertenkele avı
-        desc: Etrafta birçok kertenkele türünden birinin yaşadığını gösteren her türlü
-          ipucunu arıyorsun. Avlaması zor olmasa da uğraştırıcı bir iş.
+        desc: Buralarda birçok kertenkele türünden birinin yaşadığını gösteren her
+          türlü ipucunu arıyorsun. Avlaması zor olmasa da uğraştırıcı bir iş.
       halfmawHunt:
         name: Yarımçene avı
         desc: Oklarını ve yayını yanına alarak efsanevi Yarımçene'yi aramak için bataklıkta
@@ -542,13 +554,13 @@ singulars:
           senin başına gelmemesi dileğiyle av değil de avcı olabilmeyi umuyorsun.
       invasiveSpeciesHunting:
         name: İstilacı tür avı
-        desc: Çayıra bu ortamın yerli türü olmayan solucanımsı yaratıklar dadanmış.
+        desc: Çayıra bu habitatın yerli türü olmayan solucanımsı yaratıklar dadanmış.
           İzlerini dikkatlice takip edip bulabildiklerini ortadan kaldırıyorsun.
     syrenthia:
       driftNetHunting:
         name: Akıntı ağıyla av
-        desc: Sulara bırakmadan önce kocaman ağını çözerek açıyorsun. Deniz tanrıları
-          yüzüne gülerse yüzlerce balık ve başka su yaratığı yakalayabilirsin.
+        desc: Sulara bırakmadan önce kocaman ağını çözerek açıyorsun. Deniz yüzüne
+          gülerse yüzlerce balığı ve başka su yaratıklarını yakalayabilirsin.
     global:
       crabTracking:
         name: Yengeç takibi
@@ -562,19 +574,19 @@ singulars:
         name: Orta düzey kuş yakalama
       birdhouseTrappingBeginner:
         name: Amatör kuş yakalama
-        desc: İçinde kuşların girebildiği ancak geri çıkamadığı bir tuzak barındıran
+        desc: Kuşların içeri girebildiği ancak geri çıkamadığı bir tuzak barındıran
           kuş evlerini kuruyorsun.
       boxTrapping:
         name: Kutuyla tuzaklama
-        desc: Bir çubuk sayesinde ayakta duran ahşap bir kutunun altına yem bırakarak
-          basit bir tuzak kuruyorsun. Hayvanlar yemin peşine gelince çubuğa çarparak
+        desc: Bir çubuğun yardımıyla ayakta duran ahşap bir kutunun altına yem bırakarak
+          basit bir tuzak kuruyorsun. Yemin peşine gelen hayvanlar çubuğa çarparak
           kutunun üzerlerine kapanmasına neden oluyorlar.
   tailoring:
     jarvonia:
       sailRepairBeginner:
-        desc: Sağlam bir iğne ve iplik sayesinde gemi yelkenlerini kumaş parçalarıyla
-          yamayarak tamir ediyorsun. Yenisi gibi olmasalar bile bir süre daha idare
-          edebilecekleri kesin.
+        desc: Sağlam bir iğne ve iplik yardımıyla gemi yelkenlerini kumaş parçaları
+          kullanarak yamayıp tamir ediyorsun. Yeni gibi olmasalar bile bir süre daha
+          idare edebilecekleri kesin.
         name: Amatör yelken tamiri
     gdte:
       sailRepairIntermediate:
