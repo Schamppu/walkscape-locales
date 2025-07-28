@@ -145,6 +145,11 @@ singulars:
           los desarrolladores en Discord dando detalles de tu error y tu dispositivo.
           También puedes volver a abrir el juego para ver si el contenido se descarga
           correctamente.
+      userBannedTemporarily:
+        title: Se te ha bloqueado temporalmente de WalkScape
+        text: Se te ha bloqueado temporalmente de WalkScape hasta <c i=0>{bannedUntil}</c>.
+        noTimeFound: No se encontró tiempo final, por favor contáctanos mandando un
+          correo a {email}
     characterValidation:
       nameTooShort: El nombre del personaje debe tener una longitud mayor de tres
         letras.
@@ -174,6 +179,10 @@ singulars:
         text: El juego no pudo inicializarse. Por favor, reporta este problema a los
           desarrolladores en Discord incluyendo detalles de tu error y tu dispositivo.
           También puedes intentar abrir el juego nuevamente para ver si se carga correctamente.
+      stepsNotLoadedDueToBan:
+        title: Pasos no cargados debido a tu bloqueo
+        text: Tus pasos no se han cargado porque estabas bloqueado en WalkScape. De
+          ahora en adelante, tus pasos se contarán de manera normal.
   info:
     game:
       equipGearSetSomeFailed:
@@ -212,6 +221,22 @@ singulars:
       withdrawFailed:
         text: Fallo al retirar. Por favor, inténtalo otra vez.
         title: Fallo al retirar
+      noPathFound:
+        title: No se encuentra camino para viajar
+        text: No se encuentra camino para viajar a la ubicación seleccionada. Comprueba
+          que es posible viajar a la ubicación seleccionada.
+      queueLimitReached:
+        title: Límite de cola alcanzado
+        text: No puedes tener en cola más de 3 accionas a la vez. Por favor, completa
+          o cancela alguna acción antes de añadir más.
+      cannotQueueMoreThanOneActivity:
+        title: No se puede poner en cola más actividades
+        text: Puedes poner en cola múltiples acciones de viaje, pero solo una actividad.
+          Por favor, completa o cancela la actividad actual antes de añadir otra.
+      buybackFailed:
+        text: Error al recomprar. No tienes los objetos requeridos en tu inventario
+          para completar la recompra.
+        title: Error al recomprar
   confirmations:
     changingStepSource:
       text: Cambiar tu origen de los pasos podría causar la pérdida de pasos no sincronizados.
@@ -227,3 +252,11 @@ singulars:
       text: No estás en la ubicación adecuada para empezar está actividad. ¿Quieres
         viajar a la ubicación correcta primero y después empezar la actividad?
       title: ¿Viajar primero y después empezar actividad?
+    editCurrentRouteAndResetQueue:
+      text: ¿Quieres editar tu ruta de viaje actual a la ubicación seleccionada y
+        quitar todas las acciones posteriores que tienes en cola?
+      title: ¿Editar ruta actual y resetear cola?
+    doYouWantToClaimExperience:
+      title: ¿Seguro que quieres reclamar la recompensa de experiencia?
+      text: Tienes activado el ajuste "mostrar aviso antes de reclamar experiencia".
+        ¿Seguro que quieres reclamar la recompensa de experiencia?
