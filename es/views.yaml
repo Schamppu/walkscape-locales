@@ -368,6 +368,8 @@ singulars:
       tapToShowRoutes: Pulsa para mostrar rutas
       buildings: Edificios
       owner: Dueño
+      noRoutesFromLocation: No hay destinos de viaje desde <object id="{from}"/>.
+      showingRoutesFrom: Destinos de viaje desde <object id="{from}"/>.
   pfpCreation:
     buttons:
       choose: Elegir
@@ -643,6 +645,7 @@ singulars:
         title: Personaje
         anonOnLeaderboard: Anonimizar en la clasificación
         hideSteps: Ocultar pasos
+        exportData: Exportar datos del personaje al portapapeles
       gameplay:
         title: Jugabilidad
         stopWhenOverEncumberedDefault: Parar por defecto al sobrecargarse
@@ -766,6 +769,9 @@ singulars:
       information: Información
       changeRouteWarning: Cambiar tu ruta cancelará tu viaje actual y te devolverá
         a la ubicación anterior. ¿Estás seguro?
+      youAreInspectingFromMap: Estás <c>inspeccionando desde el mapa del mundo</c>.
+        Para interactuar, debes estar en la propia ubicación y abrir esto desde la
+        vista principal de la ubicación.
   stats:
     phrases:
       stats: Estadísticas
@@ -774,6 +780,7 @@ singulars:
       recordedFrom: Registrado de <c>{from}</c> a <c>{to}</c>.
       lastUpdated: 'Última actualización a: <c>{updatedAt}</c>.'
       highestStepsIn24Hours: Más pasos en 24h
+      reputation: Reputación
     info:
       stats: Recopilación de estadísticas de cada paso que has dado por el mundo de
         Arenum.
@@ -785,6 +792,8 @@ singulars:
           diferentes a otros orígenes, esta es probablemente la razón. La lógica interna
           del juego sigue funcionando y el problema de las gráficas se abordará en
           futuras actualizaciones.
+      reputation: La reputación es una medida de cómo de conocido eres en las diferentes
+        facciones de WalkScape.
   tutorial:
     phrases:
       noMoreMessages: No mostrar más mensajes del tutorial
@@ -917,6 +926,11 @@ singulars:
     phrases:
       unlockedWalkpediaEntries: Entradas de la WalkPedia desbloqueadas
       rumorsFromCharacter: Rumores de <c>{characterName}</c>
+      backToRumors: Volver a rumores
   whileAway:
     phrases:
       whileYouWereAway: Mientras no estabas...
+      switchedToGearSet: Cambiado a kit de equipo <c>{name}</c>
+      gearSetDoesNotExist: El kit de equipo ya no existe
+      consumablesUsed: Consumible usado
+      actionsCompleted: Acciones completadas
