@@ -96,6 +96,7 @@ maps:
         palkintona
       'showDailyTips': Näytä päivän pikkuvinkit
       'showStepSourceInActivityView': Näytä askelten lähteen valinta Toiminta-näkymässä
+      'activityInformationOpen': Näytä lisätietoa toiminnasta
     leaderboardFilter:
       'everyone': Kaikki
       'friends': Kaverit
@@ -135,6 +136,12 @@ maps:
       'masculine': Maskuliini
       'feminine': Feminiini
       'neutral': Neutraali
+  cooldown:
+    time:
+      'days': '{days}<c>pv</c>'
+      'hours': '{hours}<c>t</c>'
+      'minutes': '{minutes}<c>min</c>'
+      'seconds': '{seconds}<c>s</c>'
 plurals:
   activity:
     phrases:
@@ -367,7 +374,7 @@ singulars:
   pfpCreation:
     buttons:
       choose: Valitse
-      hideHat: Piilota päähine
+      hideHat: Näytä päähine
       randomize: Arvo
       showHat: Näytä päähine
       enableBackAccessorie: Ota käyttöön selkäasuste
@@ -504,7 +511,7 @@ singulars:
       changeStepCountingSource: Vaihta askelten mittauksen lähde
       stepCountingSource: Askelten mittauksen lähde
     deviceSource:
-      appleWatch: Apple Watch
+      appleWatch: Apple Watch -älykello
       featureDisabled: Askelten lähteiden vaihtaminen on toistaiseksi poistettu käytöstä.
         Puhelin askelmittaria on oletuksena käytössä.
       phone: Puhelin
