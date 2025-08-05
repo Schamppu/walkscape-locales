@@ -38,6 +38,8 @@ maps:
       'spriteOutlines': Konturen rendern
       'showStepSourceInActivityView': Schrittquellen-Auswahl in der Aktivitätsansicht
         einblenden
+      'warningBeforeClaimingExperience': Warnung anzeigen, bevor Erfahrungspunkte-Belohnungen
+        beansprucht werden
     visibilitySettings:
       'private': Privat
       'friends': Nur Freunde
@@ -216,6 +218,11 @@ plurals:
         other: '{} Aktionen'
       stepsRequiredPerAction:
         zero: '-'
+        one: <icon i="Steps"/> <c>{} Schritt</c> pro Aktion erforderlich
+        two: <icon i="Steps"/> <c>{} Schritte</c> pro Aktion erforderlich
+        few: '-'
+        many: '-'
+        other: <icon i="Steps"/> <c>{} Schritte</c> pro Aktion erforderlich
   inventory:
     info:
       consumableDuration:
