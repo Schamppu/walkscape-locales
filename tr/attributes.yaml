@@ -40,6 +40,11 @@ singulars:
         desc: <DEĞİŞKEN>
         text: Herhangi bir <supp k="skillGroup"/> becerisi için <stat s="chestFind"/>
           şansı.
+      whileMainSkillAndRealm:
+        name: <DEĞİŞKEN>
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="chestFind"/>
+          şansı.
+        desc: <DEĞİŞKEN>
     craftingOutcome:
       global:
         text: Genel <stat s="craftingOutcome"/> şansı
@@ -67,6 +72,11 @@ singulars:
         text: <supp k="realm"/> diyarında <stat s="craftingOutcome"/> şansı
         desc: <DEĞİŞKEN>
         name: <DEĞİŞKEN>
+      whileMainSkillAndRealm:
+        name: <DEĞİŞKEN>
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="craftingOutcome"/>
+          şansı.
+        desc: <DEĞİŞKEN>
     doubleAction:
       global:
         text: Genel <stat s="doubleAction"/> şansı
@@ -104,6 +114,14 @@ singulars:
         desc: <DEĞİŞKEN>
         text: Herhangi bir <supp k="skillGroup"/> becerisi için <stat s="doubleAction"/>
           şansı.
+      whileRealm:
+        name: <DEĞİŞKEN>
+        desc: <DEĞİŞKEN>
+        text: <supp k="realm"/> diyarında genel <stat s="doubleAction"/>
+      whileMainSkillAndRealm:
+        name: <DEĞİŞKEN>
+        desc: <DEĞİŞKEN>
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="doubleAction"/>.
     doubleRewards:
       global:
         text: Genel <stat s="doubleRewards"/> şansı
@@ -140,6 +158,14 @@ singulars:
         desc: <DEĞİŞKEN>
         text: Herhangi bir <supp k="skillGroup"/> becerisi için <stat s="doubleRewards"/>
           şansı.
+      whileMainSkillAndRealm:
+        name: <DEĞİŞKEN>
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="doubleRewards"/>.
+        desc: <DEĞİŞKEN>
+      whileRealm:
+        name: <DEĞİŞKEN>
+        desc: <DEĞİŞKEN>
+        text: <supp k="realm"/> diyarında genel <stat s="doubleRewards"/>
     experience:
       global:
         text: Genel <stat s="bonusExperience"/>
@@ -169,6 +195,14 @@ singulars:
         name: <DEĞİŞKEN>
         desc: <DEĞİŞKEN>
         text: Herhangi bir <supp k="skillGroup"/> becerisi için <stat s="bonusExperience"/>.
+      whileMainSkillAndRealm:
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="bonusExperience"/>.
+        name: <DEĞİŞKEN>
+        desc: <DEĞİŞKEN>
+      whileRealm:
+        name: <DEĞİŞKEN>
+        desc: <DEĞİŞKEN>
+        text: <supp k="realm"/> diyarında genel <stat s="bonusExperience"/>
     fineMaterialFind:
       global:
         text: Genel <stat s="fineMaterialFind"/> şansı
@@ -239,6 +273,10 @@ singulars:
         desc: <DEĞİŞKEN>
         text: Herhangi bir <supp k="skillGroup"/> becerisi için <stat s="noMaterialsConsumed"/>
           şansı.
+      whileMainSkillAndRealm:
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="noMaterialsConsumed"/>.
+        name: <DEĞİŞKEN>
+        desc: <DEĞİŞKEN>
     rollSpecialTable:
       whileMainSkill:
         text: <supp k="skill"/> için <stat s="rollSpecialTable"/>
@@ -278,6 +316,14 @@ singulars:
         name: <DEĞİŞKEN>
         desc: <DEĞİŞKEN>
         text: Herhangi bir <supp k="skillGroup"/> becerisi için <stat s="stepsRequired"/>.
+      whileMainSkillAndRealm:
+        name: <DEĞİŞKEN>
+        desc: <DEĞİŞKEN>
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="stepsRequired"/>.
+      whileRealm:
+        text: <supp k="realm"/> diyarında genel <stat s="stepsRequired"/>
+        name: <DEĞİŞKEN>
+        desc: <DEĞİŞKEN>
     workEfficiency:
       global:
         text: Genel <stat s="workEfficiency"/>
@@ -383,6 +429,10 @@ singulars:
         name: <DEĞİŞKEN>
         desc: <DEĞİŞKEN>
         text: Herhangi bir <supp k="skillGroup"/> becerisi için <stat s="findCollectibles"/>.
+      whileMainSkillAndRealm:
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat s="workEfficiency"/>.
+        name: <DEĞİŞKEN>
+        desc: <DEĞİŞKEN>
     findGems:
       whileMainSkillAndLocationKeyword:
         desc: <DEĞİŞKEN>
@@ -409,7 +459,7 @@ singulars:
       name: <DEĞİŞKEN>
       desc: <DEĞİŞKEN>
     gainZeroToTenMoney:
-      text: <hl>0</hl> ila <hl>10</hl> arası altın parçası bulma şansı
+      text: <hl>1</hl> ila <hl>10</hl> arası altın parçası bulma şansı
       name: <DEĞİŞKEN>
       desc: <DEĞİŞKEN>
     gainOneMoney:
@@ -420,3 +470,15 @@ singulars:
       name: <DEĞİŞKEN>
       desc: <DEĞİŞKEN>
       text: Cevher kesesinden <hl>1</hl> cevher edinme şansı
+    findFishingBait:
+      name: <DEĞİŞKEN>
+      desc: <DEĞİŞKEN>
+      text: <hl>1</hl> balık yemi bulma şansı
+    trashTable:
+      text: <hl>1</hl> rastgele atık bulma şansı
+      name: <DEĞİŞKEN>
+      desc: <DEĞİŞKEN>
+    findCrustacean:
+      name: <DEĞİŞKEN>
+      desc: <DEĞİŞKEN>
+      text: <hl>1</hl> kabuklu bulma şansı

@@ -66,7 +66,7 @@ maps:
       'shaderOutlineRendering': Zobrazit obrysy pomocí shaderů
       'spriteOutlines': Zobrazit obrysy
       'showRecipesServicesAreMet': Požadavky na vybavení jsou splněny
-      'showRecipesMaterialsAreMet': Materiálové požadavky nejsou splněny
+      'showRecipesMaterialsAreMet': Materiálové požadavky jsou splněny
       'showCompletedAchievements': Zobrazit dokončené úspěchy
       'showStepSourceInActivityView': Zobrazit výběr zdroje kroku v Přehledu aktivity
       'showDailyTips': Zobrazit denní tipy
@@ -258,8 +258,8 @@ singulars:
         nezávislé odměny za jejich splnění.
       noCollectibleItems: Zatím jste nenasbírali žádné sběratelské předměty.
       specialItems: Během vaší cesty ve WalkScape se sbírají speciální předměty, jako
-        například <c>sběratelské předměty</c>, <c>předměty z úkolů</c> a <c>artefakty</c>.Můžete
-        si je prohlédnout zde. Sběratelské předměty vám dávají body úspěchu.
+        například <c>sběratelské předměty</c>, <c>předměty z úkolů</c> a <c>artefakty</c>.
+        Můžete si je prohlédnout zde. Sběratelské předměty vám dávají body úspěchu.
       collectibleItems: Sběratelské předměty jsou věci, které můžete získat ze světa
         WalkScape. Existuje několik typů sběratelských předmětů, které můžete zkusit
         nasbírat. Nezabírají žádné místo v inventáři a jsou vždy s vaší postavou.
@@ -307,8 +307,8 @@ singulars:
       treasury: Pokladnice
       noItemSelected: Nebyla vybrána žádná položka
       inUse: Používá se
-      disableWhenChanging: Deaktivujte při změně aktivit
-      enableWhenBack: Znovu povolit při zahájení aktivity, která byla dříve použita
+      disableWhenChanging: Deaktivovat při změně aktivit
+      enableWhenBack: Znovu povolit při zahájení aktivity, která byla dříve prováděna
       requirementsNotMet: Požadavky nejsou splněny.
       cantEquip: Nelze nasadit.
       checkBank: Otevřít banku
@@ -358,7 +358,7 @@ singulars:
       routes: Trasy
       tapToShowRoutes: Klepnutím zobrazíte trasy
       buildings: Budovy
-      jobBoard: Nástěnka misí
+      jobBoard: Nástěnka úkolů
       jobs: Úkoly
       owner: Majitel
       noRoutesFromLocation: Žádné cestovní cíle z <object id="{from}"/>.
@@ -422,8 +422,9 @@ singulars:
         title: Postava
         anonOnLeaderboard: Zobrazit anonymně v žebříčcích
         hideSteps: Skrýt kroky
+        exportData: Exportovat data postavy do schránky
       gameplay:
-        stopWhenOverEncumberedDefault: Automaticky se zastaví, když je batoh plný
+        stopWhenOverEncumberedDefault: Automaticky zastavit, když je batoh plný
         title: Hra
       closedBeta:
         title: Uzavřená beta
@@ -528,16 +529,19 @@ singulars:
           jako dříve a problémy s grafy budou vyřešeny v budoucích aktualizacích.
         title: Nepřesnosti v grafech
       stats: Souhrn statistik o každém kroku, který jste podnikli světem Arenum.
+      reputation: Reputace je měřítkem toho, jak dobře jste známí v různých frakcích
+        WalkScape.
     phrases:
       stats: Statistiky
       totalSteps: Celkový počet kroků
       totalSkillXp: Celková dovednost XP
       highestStepsIn24Hours: Nejvíce kroků za 24 hodin
       lastUpdated: 'Naposledy aktualizováno: <c>{updatedAt}</c>.'
-      recordedFrom: Zaznamenáno od <c>{from}</c> do <c>{to}</c>.
+      recordedFrom: Od <c>{from}</c> do <c>{to}</c>.
+      reputation: Reputace
   tutorial:
     phrases:
-      noMoreMessages: Přestaňte zobrazovat návody
+      noMoreMessages: Přestat zobrazovat návody
       youWillGain: Získáte následující předmět(y) pokud zvolíte tuto možnost.
   leaderboards:
     phrases:
@@ -747,13 +751,13 @@ singulars:
   jobs:
     phrases:
       noJobsAvailable: 'Na tomto místě momentálně nejsou k dispozici žádné úkoly.
-        Nové úkoly budou k dispozici v:'
+        Nové úkoly budou k dispozici za:'
       acceptJob: Přijmout úkol
       refreshIn: 'Nástěnka úkolů bude aktualizována za:'
       rewards: Odměny za dokončení
       abandonJob: Opustit úkol
       acceptedJobs: Aktuálně přijaté úkoly <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
-      openJournal: Otevřete deník
+      openJournal: Otevřít deník
       itemsFromInventory: Předměty z batohu
       itemsFromBank: Předměty z banky
       hasNoBank: V tomto místě není žádná banka.
@@ -801,7 +805,7 @@ singulars:
       abilities: Schopnosti
       useAbility: Použít schopnost
       noAction: Žádná akce
-      holdToCast: 'Podržením odešlete'
+      holdToCast: 'Podržením použijete'
       holdToUse: Podržte pro použití
       useConsumable: Použít spotřební materiál
     info:
@@ -868,7 +872,7 @@ singulars:
     options:
       switchGearSet:
         text: Změnit sadu výbavy
-        desc: Před zahájením této akce změňte na vybranou sadu výbavy.
+        desc: Před zahájením této akce změnit na vybranou sadu výbavy.
       depositUnlockedItems:
         text: Vložit odemčené předměty
         desc: Vloží všechny odemčené předměty z vašeho batohu do banky, pokud je nějaký

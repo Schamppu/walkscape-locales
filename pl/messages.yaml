@@ -148,6 +148,16 @@ singulars:
           wiadomość e-mail na adres contact@walkscape.app.
         title: Zostałeś tymczasowo zablokowany w WalkScape
         text: Zostałeś tymczasowo zablokowany w WalkScape do <c i=0>{bannedUntil}</c>.
+      userBannedPermanently:
+        text: Zostałeś na stałe zablokowany w WalkScape. Jeśli uważasz, że to pomyłka
+          i chcesz odwołać się od tej decyzji, możesz się z nami skontaktować, wysyłając
+          wiadomość e-mail na adres {email}.
+        title: Zostałeś na stałe zablokowany w WalkScape
+      userBannedTemporarily:
+        title: Zostałeś tymczasowo zablokowany w WalkScape
+        text: Zostałeś tymczasowo zablokowany w WalkScape do <c i=0>{bannedUntil}</c>.
+        noTimeFound: Nie znaleziono godziny zakończenia, prosimy o kontakt poprzez
+          wysłanie wiadomości e-mail na adres {email}
     fatalError:
       error: Wybacz nam ten błąd. Pamiętaj, że ta gra znajduje się w Zamkniętej Becie,
         a wszystkie postępy graczy są zapisywane codziennie w chmurze.
@@ -170,6 +180,10 @@ singulars:
         text: Inicjowanie klienta gry nie powiodło się. Zgłoś to deweloperom na Discordzie,
           podając szczegóły błędu i urządzenia. Możesz również spróbować otworzyć
           grę ponownie, aby sprawdzić, czy gra załaduje się pomyślnie.
+      stepsNotLoadedDueToBan:
+        text: Twoje kroki nie zostały załadowane, ponieważ zostałeś zablokowany w
+          WalkScape. Od tego momentu Twoje kroki będą naliczane normalnie.
+        title: Kroki nie zostały załadowane z powodu Twojej blokady
   info:
     game:
       importGearSetFailed:

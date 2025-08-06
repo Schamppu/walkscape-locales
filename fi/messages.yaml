@@ -150,6 +150,17 @@ singulars:
         title: Yhteysvirhe
         text: Yhteysen muodostaminen pelin palvelimeen epäonnistui. Ole hyvä ja tarkista
           internet-yhteytesi ja yritä uudelleen.
+      userBannedTemporarily:
+        noTimeFound: 'Loppumisaikaa ei löytynyt, ota meihin yhteyttä sähköpostitse:
+          {email}'
+        title: WalkScapen pelaamisesi on väliaikaisesti estetty
+        text: 'WalkScapen pelaamisesi on väliaikaisesti estetty. Loppumisaika: <c
+          i=0>{bannedUntil}</c>.'
+      userBannedPermanently:
+        text: 'Sinut on pysyvästi karkotettu WalkScapesta ja pelaamisesi on estetty.
+          Jos uskot tämän tapahtuneen erehdyksessä ja haluat kyseenalaistaa päätöksen,
+          voit ottaa meihin yhteyttä sähköpostitse: {email}.'
+        title: Sinut on pysyvästi karkotettu WalkScapesta
     gameError:
       loadingPlayerFailed:
         title: Hahmon lataaminen epäonnistui
@@ -165,6 +176,10 @@ singulars:
         text: Askelten lataaminen epäonnistui. Ole hyvä ja ilmoita tästä ongelmasta
           pelin Discord-palvelimella kertoen virheestäsi ja mitä laitetta käytät pelaamiseen.
           Voit myös yrittää käynnistää pelin uudelleen.
+      stepsNotLoadedDueToBan:
+        title: Askelia ei ladattu, koska pelaamisesi on estetty
+        text: Askeliasi ei ladattu koska pelaamisesi WalkScapessa oli estetty. Tästä
+          eteenpäin askelesi lasketaan tavalliseen tapaan.
   confirmations:
     changingStepSource:
       title: Vaihda askeleiden lähde?
@@ -173,6 +188,22 @@ singulars:
         ennen kuin vaihdat askeleiden lähdettä.
       lastSyncText: Askeleet synkronoitu viimeksi {time}.
       neverSyncedText: Askeleita ei ole koskaan synkronoitu.
+    editCurrentRouteAndResetQueue:
+      title: Muokataanko nykyistä reittiä ja tyhjennetäänkö jono?
+      text: Haluatko muokata tämänhetkistä matkustusreittiäsi valittuun kohteeseen
+        ja poistaa kaikki sitä seuraavat aktiviteetit, jotka olet lisännyt jonoon?
+    doYouWantToClaimExperience:
+      title: Oletko varma, että haluat ottaa vastaan kokemuspalkinnon?
+      text: Sinulla on valittuna asetus "näytä varoitus ennen kokemuksen vastaanottamista".
+        Oletko varma, että haluat ottaa vastaan kokemuspalkinnon?
+    changeRoute:
+      title: Vaihdetaanko reittiä?
+      text: Jos vaihdat reittiä, peruutetaan nykyinen matkustamisesi ja sinut palautetaan
+        edelliseen kohteeseen. Oletko varma?
+    travelAndStartActivity:
+      title: Matkustetaanko kohteeseen ensin ja sitten aloitetaan aktiviteetti?
+      text: Et ole oikeassa kohteessa aloittaaksesi tämän aktiviteetin. Haluatko matkustaa
+        soveltuvaan kohteeseen ensin ja aloittaa aktiviteetin sitten?
   info:
     game:
       importGearSetFailed:
@@ -210,3 +241,20 @@ singulars:
       withdrawZero:
         title: Nosto epäonnistui
         text: Et voi nostaa nollaa tai negatiivista määrää esineitä.
+      buybackFailed:
+        text: Takaisinosto epäonnistui. Repussasi ei ole tarvittavia esineitä, jotta
+          takaisinoston voisi suorittaa loppuun.
+        title: Takaisinosto epäonnistui
+      noPathFound:
+        title: Matkalle ei löydetty reittiä
+        text: Valittuun kohteeseen ei löytynyt reittiä. Varmista että valitsemaasi
+          kohteeseen on mahdollista matkustaa.
+      cannotQueueMoreThanOneActivity:
+        text: Voit laittaa jonoon useita matkustustapahtumia, mutta vain yhden aktiviteetin
+          kerrallaan. Tee loppuun tai peruuta nykyinen aktiviteettisi, ennen kuin
+          lisäät jonoon uuden.
+        title: Jonoon ei voi lisätä aktiviteetteja
+      queueLimitReached:
+        title: Jonon raja tuli vastaan
+        text: Et voi laittaa jonoon enempää kuin 3 tehtävää kerralla. Tee loppuun
+          tai peruuta jokin toiminto ennen kuin lisäät jonoon uusia.

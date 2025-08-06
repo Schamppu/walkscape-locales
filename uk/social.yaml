@@ -1,0 +1,70 @@
+singulars:
+  status:
+    loadingInvites: Перевірка запрошень...
+  party:
+    manage: Керувати
+    role: Роль
+  relationship:
+    friends: Ви друзі
+    blocked: Ви заблокували цього користувача
+    inviteSent: Запрошення надіслано
+    inviteReceived: Ви отримали запрошення
+    none: Соціальне
+    party:
+      member: Учасник
+      admin: Адміністратор
+      owner: Власник
+  actions:
+    buttonLabels:
+      cancelInvite: Скасувати запрошення
+      removeFriend: Видалити друга
+      unblock: Розблокувати
+      sendInvite: Надіслати запрошення в друзі
+      createParty: Створити групу
+      leaveParty: Покинути групу
+      leaveAndDestroyParty: Покинути та знищити групу
+      inviteResponse:
+        accept: Прийняти
+        reject: Відхилити
+        block: Заблокувати
+    confirmTitle:
+      changeRole: Змінити дозвіл
+      unblock: Розблокувати користувача
+      inviteResponse:
+        block: Заблокувати користувача
+    confirmDescription:
+      changeRole: Ви впевнені, що хочете зробити <hl>{characterName}</hl> <hl>{partyRole}</hl>?
+      removeFriend: Ви впевнені, що хочете припинити дружбу?
+      unblock: Ви впевнені, що хочете розблокувати цього користувача?
+      cancelInvite: Ви впевнені, що хочете скасувати це запрошення в друзі?
+      inviteResponse:
+        block: Ви впевнені, що хочете заблокувати цього користувача? Заблоковані користувачі
+          більше не зможуть надсилати вам запрошення в друзі.
+      leaveParty: Ви впевнені, що хочете покинути групу?
+      leaveAndDestroyParty: Ви впевнені, що хочете покинути та знищити групу? Цю дію
+        неможливо скасувати.
+  createParty:
+    input:
+      partyName: Назва групи
+      catchphrase: Девіз
+      catchphraseHint: Девіз (необов'язково)
+    rules:
+      mayContain: '<bp />Може містити: {list}'
+      noTrailingSpaces: <bp />Не може починатися або закінчуватися пробілом
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        one: <bp />Принаймні {} символ
+        other: <bp />Принаймні {} символів
+      maxChar:
+        zero: '-'
+        two: '-'
+        many: '-'
+        one: <bp />Максимум {} символ
+        other: <bp />Максимум {} символів
+        few: '-'

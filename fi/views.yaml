@@ -92,6 +92,11 @@ maps:
       'spriteOutlines': Renderöi ääriviivat
       'showFpsCounter': Näytä FPS mittari
       'shaderOutlineRendering': Renderöi ääriviivat shadereilla
+      'warningBeforeClaimingExperience': Näytä varoitus ennen kokemuksen vastaanottamista
+        palkintona
+      'showDailyTips': Näytä päivän pikkuvinkit
+      'showStepSourceInActivityView': Näytä askelten lähteen valinta Toiminta-näkymässä
+      'activityInformationOpen': Näytä lisätietoa toiminnasta
     leaderboardFilter:
       'everyone': Kaikki
       'friends': Kaverit
@@ -131,6 +136,12 @@ maps:
       'masculine': Maskuliini
       'feminine': Feminiini
       'neutral': Neutraali
+  cooldown:
+    time:
+      'days': '{days}<c>pv</c>'
+      'hours': '{hours}<c>t</c>'
+      'minutes': '{minutes}<c>min</c>'
+      'seconds': '{seconds}<c>s</c>'
 plurals:
   activity:
     phrases:
@@ -183,15 +194,36 @@ plurals:
         many: '-'
         other: Askeleita saapumiseen
         two: Askeleita saapumiseen
+      steps:
+        few: '-'
+        many: '-'
+        zero: '-'
+        one: '{} askel'
+        two: '{} askelta'
+        other: '{} askelta'
+      actions:
+        zero: '-'
+        one: '{} toiminto'
+        two: '{} toimintoa'
+        many: '-'
+        few: '-'
+        other: '{} toimintoa'
+      stepsRequiredPerAction:
+        other: <icon i="Steps"/>{} <c>askelta</c> toimintoa kohti
+        zero: '-'
+        one: <icon i="Steps"/>{} <c>askel</c> toimintoa kohti
+        two: <icon i="Steps"/>{} <c>askelta</c> toimintoa kohti
+        few: '-'
+        many: '-'
   achievements:
     phrases:
       achievementPoint:
         zero: '-'
         one: '{} saavutuspiste'
-        two: '{} saavutuspisteet'
+        two: '{} saavutuspistettä'
         few: '-'
         many: '-'
-        other: '{} saavutuspisteet'
+        other: '{} saavutuspistettä'
   inventory:
     info:
       consumableDuration:
@@ -215,6 +247,9 @@ plurals:
         two: <c>{}</c> pelaajaa alueella
         one: <c>{}</c> pelaaja alueella
         other: <c>{}</c> pelaajaa alueella
+        zero: '-'
+        few: '-'
+        many: '-'
       playersDoingActivity:
         zero: '-'
         one: <c>{}</c> pelaajaa tekee tätä
@@ -289,7 +324,7 @@ singulars:
       oneOrMoreCantBeDropped: Yhtä tai useampaa esinettä ei voi pudottaa.
       attributes: Attribuutit
       abilities: Kyvyt
-      requires: Vaatii
+      requires: Edellytys
       equipToRingOne: Pue sormustilaan 1
       equipToRingTwo: Pue sormustilaan 2
       emptySlot: Tyhjä tila
@@ -333,10 +368,13 @@ singulars:
       jobBoard: Töiden ilmoitustaulu
       jobs: Työt
       factions: Ryhmittymät
+      showingRoutesFrom: Matkustusreitit paikasta <object id="{from}"/>.
+      noRoutesFromLocation: Matkakohteita paikasta <object id="{from}"/> ei löytynyt.
+      owner: Omistaja
   pfpCreation:
     buttons:
       choose: Valitse
-      hideHat: Piilota päähine
+      hideHat: Näytä päähine
       randomize: Arvo
       showHat: Näytä päähine
       enableBackAccessorie: Ota käyttöön selkäasuste
@@ -359,6 +397,7 @@ singulars:
       dynamicBackground: Dynaaminen tausta muuttaa taustakuvaa hahmosi sijainnin mukaan.
       defaultExpression: Perusilme
       colorOptions: Värivaihtoehdot
+      variant: Muunnelma {number}
   faction:
     phrases:
       openFaction: Avaa ryhmittymä
@@ -409,12 +448,27 @@ singulars:
       notAffectingTraveling: (ei vaikuta matkustuksen työtehokkuuteen)
       guideTip: Päivän pikkuvinkki
       activitiesInLocation: Saatavilla olevat aktiviteetit, <object id="{location}"/>
+      requirements: Edellytykset
+      rewards: Palkkiot
+      levelActivity: Tason <c>{level}</c> <object id="{skill}"/> aktiviteetti
+      startActivity: Aloita aktiviteetti
+      travelAndStartActivity: Matkusta ja aloita aktiviteetti
+      queueActivity: Lisää aktiviteetti jonoon
+      cantStartActivity: Aktiviteetin aloittaminen ei onnistu
+      requirementsNotMet: Vaatimuksia on täyttämättä
+      noActivitiesInLocation: Kohteessa <object id="{location}"/> ei ole aktiviteetteja.
+      locationIsUnknown: Sijainti on tuntematon. Kun olet käynyt tässä paikassa, voit
+        nähdä siellä saatavilla olevat aktiviteetit.
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
       savedSteps: Sinulla on käytössä säästettyjä askelia. Jokainen askeleesi lasketaan
         kahtena kunnes kaikki säästetyt askeleet ovat kulutettu.
       noActivity: Et ole valinnut mitään aktiviteettia. <hl>Valitse jokin alla olevista</hl>,
         tai pyyhkäise vasemmalle nähdäksesi kaiken mitä voit tehdä tässä paikassa.
+    rewards:
+      experience: <bp /><c>{kp} </c><object id="{skill}"/> kokemusta
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} keräilyesinettä</c>,
+        jotka on mahdollista löytää
   character:
     phrases:
       skills: Taidot
@@ -423,10 +477,14 @@ singulars:
       checkOutSubject: Katso edistymiseni WalkScapessa!
       totalLevel: Kokonaistaso
       savePicture: Tallenna kuva
+      stepsToNextLevel: 'Askelia seuraavalle tasolle: <c>{steps}</c>'
+      level: 'Hahmon taso: <c>{level}</c>'
     info:
       skillBreakdown: Tässä on hahmosi matkan aikana saavutettujen taitojen kokonaisjakauma.
         Voit napauttaa mitä tahansa taidoista nähdäksesi niistä lisätietoja ja mitä
         ne avaavat.
+      eachLevelIncreasesStepBank: Jokainen hahmon taso tason <c>{level}</c> jälkeen
+        lisää säästettyjen askelten maksimimäärää <c>{amount}</c> askeleen verran.
   permissions:
     phrases:
       pedometerPermission: Askelmittarin lupa
@@ -453,7 +511,7 @@ singulars:
       changeStepCountingSource: Vaihta askelten mittauksen lähde
       stepCountingSource: Askelten mittauksen lähde
     deviceSource:
-      appleWatch: Apple Watch
+      appleWatch: Apple Watch -älykello
       featureDisabled: Askelten lähteiden vaihtaminen on toistaiseksi poistettu käytöstä.
         Puhelin askelmittaria on oletuksena käytössä.
       phone: Puhelin
@@ -502,11 +560,11 @@ singulars:
   abilities:
     info:
       abilitiesInfo: Kyvyt ovat erikoistoimintoja, joilla voit saada välittömiä etuja
-        pelissä. Kyvyillä on jäähdytysaika, joka sinun on odotettava, ennen kuin voit
-        käyttää kykyä uudelleen.
+        pelissä. Kyvyillä on tietty palautumisaika, joka sinun on odotettava, ennen
+        kuin voit käyttää kykyä uudelleen.
       youHaveNoAbilities: <hl>Sinulla ei ole kykyjä</hl>. Tietyt pelissä olevat varusteet
         voivat antaa sinulle kykyjä, joita voit käyttää saadaksesi jonkin välittömän
-        hyödyn pelissä jäähdytysaikaa vastaan.
+        hyödyn pelissä, ja jotka tarvitsevat sen jälkeen tietyn palautumisajan.
     phrases:
       abilities: Kyvyt
       useAbility: Käytä kykyä
@@ -516,11 +574,11 @@ singulars:
       holdToUse: Pidä pohjassa käyttääksesi
   cooldowns:
     phrases:
-      followingMustBeTrueToTick: 'Seuraavien täytyy olla totta jotta jäähdytysaika
+      followingMustBeTrueToTick: 'Seuraavien täytyy olla totta jotta palautumisaika
         kuluu:'
-      cooldownRemaining: 'Jäljellä oleva jäähdytysaika:'
-      cooldownReady: 'Jäähdytysaika: Valmis'
-      noCooldown: Ei jäähdytysaikaa.
+      cooldownRemaining: 'Jäljellä oleva palautumisaika:'
+      cooldownReady: 'Palautumisaika: Valmis'
+      noCooldown: Ei vaadi palautumisaikaa.
       followingMustBeTrueToUse: 'Vaatimukset käyttämiseen eivät täyty:'
   trade:
     phrases:
@@ -537,6 +595,8 @@ singulars:
       permanentModifiers: Pysyvät attribuutit
       noPermanentModifiers: Ei pysyviä attribuutteja.
       noCombatModifiers: Ei taisteluattribuutteja puetuista esineistä.
+      noItemEquipped: Ei esinettä käytössä
+      noItemSelected: Ei esinettä valittuna
   characterCreation:
     phrases:
       race: Rotu
@@ -560,6 +620,7 @@ singulars:
         title: Hahmo
         anonOnLeaderboard: Anonymisoi tulostaulukossa
         hideSteps: Piilota askeleet
+        exportData: Vie hahmon tiedot leikepöydälle
       language:
         title: Kieli
       gameplay:
@@ -605,6 +666,7 @@ singulars:
       stepSourceInfo: Tietoja askelten lähteistä
       connectionInfoAndroid: Älykellotuki on tulossa pian Androidille. Toistaiseksi
         vain puhelinta tuetaan askelten mittauksen lähteenä.
+      gameVersion: Peliversio {version}
   worldMap:
     phrases:
       activities: Aktiviteetit
@@ -624,6 +686,9 @@ singulars:
         kun olet käynyt siellä kerran.
       changeRouteWarning: Reitin vaihtaminen peruuttaa nykyisen matkasi ja palauttaa
         sinut aikaisempaan paikkaan. Oletko varma?
+      youAreInspectingFromMap: <c>Tutkit tätä kohdetta maailmankartalta</c> käsin.
+        Jotta voit tehdä jotain täällä oikeasti, avaa kohde Sijainti-näkymästä ollessasi
+        siellä.
   stats:
     phrases:
       stats: Tilastot
@@ -631,6 +696,8 @@ singulars:
       totalSteps: Kokonaisaskelmäärä
       recordedFrom: Kirjausväli <c>{from}</c> – <c>{to}</c>.
       highestStepsIn24Hours: Suurin askelmäärä 24h aikana
+      lastUpdated: 'Viimeisin päivitys: <c>{updatedAt}</c>.'
+      reputation: Maine
     info:
       stats: Kokoelma tilastoja jokaisesta askeleesta, jonka olet ottanut Arenumissa.
       chartWarning:
@@ -640,6 +707,8 @@ singulars:
           Pelilogiikka toimii kuitenkin kuten pitääkin, ja kaavioon liittyvät ongelmat
           tullaan korjaamaan tulevissa päivityksissä.
         title: Kaavioissa on epämääräisyyksiä
+      reputation: Maine mittaa sitä, miten hyvin sinut tunnetaan eri ryhmittymissä
+        WalkScapessa.
   tutorial:
     phrases:
       noMoreMessages: Ei enempää ohjeistusviestejä
@@ -699,7 +768,7 @@ singulars:
       friends: Kaverit
   tools:
     phrases:
-      lockedToolSlot: Lukittu työkalutila kunnes <c> hahmon taso {level}</c>.
+      lockedToolSlot: Työkalutila lukittu kunnes <c>hahmon taso on {level}</c>.
       noToolEquipped: Ei työkalua puettuna tähän tilaan.
       emptyToolSlot: Tyhjä työkalutila
   bank:
@@ -708,6 +777,8 @@ singulars:
       noItemsInventory: Repussasi ei ole esineitä.
       deposit: Talleta
       withdraw: Nosta
+      youAreNotAtABank: <c>Et ole sijainnissa jossa on pankki</c>. Jotta voit käyttää
+        pankkia, matkusta ensin paikkaan jossa on pankin haarakonttori.
   leaderboards:
     phrases:
       show: Näytä
@@ -797,6 +868,60 @@ singulars:
       gearSetDoesNotExist: Tämä varustesetti ei ole enää olemassa
       consumablesUsed: Hyödyke käytetty
       actionCancelled: Toiminto peruttu
+      actionsCompleted: Toimintoja suoritettu
+      fromProc: Lähteestä <c>{proc}</c>
+      startedActivityNoLocation: Aloitettiin aktiviteetti <object id="{activity}"/>
+      none: Ei yhtään
+      fromSource: Lähteestä <object id="{source}"/>
+      fromAttribute: Ominaisuudesta {attribute}
+      startedNewActivity: Aloitettiin aktiviteetti <object id="{activity}"/> kohteessa
+        <object id="{location}"/>
   queue:
     phrases:
       queuedActions: Jonossa odottavat toiminnot
+      queue: Lisää jonoon
+      travelingTo: Paikasta <object id="{from}"/> paikkaan <object id="{to}"/>
+      untilInventoryFull: Jatketaan kunnes reppu täyttyy
+      switchingToGearSet: Vaihdetaan varustepakettiin <c>{name}</c>
+      noGearSetFound: Valittua varustepakettia ei löytynyt, oletko poistanut sen?
+      activityInLocation: <object id="{activity}"/> kohteessa <object id="{location}"/>
+      noPathFound: Kohteeseen ei löytynyt reittiä.
+    options:
+      depositUnlockedItems:
+        desc: Tallettaa kaikki lukitsemattomat esineet repustasi pankkiin, jos sellainen
+          on saatavilla jossakin kohteista, joiden läpi matkustat.
+        text: Talleta lukitsemattomat esineet pankkiin
+      cancelGearSetSwitch:
+        desc: Peruuttaa valittuun varustepakettiin vaihtamisen tätä toimintoa varten.
+        text: Peruuta varustepakettiin vaihtaminen
+      switchGearSet:
+        text: Vaihda varustepakettiin
+        desc: Vaihda valittuun varustepakettiin ennen kuin tämä toiminto alkaa.
+      withdrawGearSet:
+        text: Nosta varustepaketti pankista
+        desc: Nostaa varustepaketin pankista, jos sellainen on saatavilla jossakin
+          kohteista, joiden läpi matkustat.
+      removeFromQueue:
+        text: Poista jonosta
+        desc: Poistaa toiminnon ja kaikki sitä seuraavat toiminnot jonosta.
+    suggestions:
+      crafting:
+        onceCertainRarityIsCrafted: Kun saat tietyn harvinaisuusasteen esineen valmistettua
+          tai materiaalisi loppuvat, haluaisitko tehdä jotakin?
+        onceAllItemsAreCrafted: Kun kaikki esineet on valmistettu, haluaisitko tehdä
+          jotakin?
+      traveling:
+        onceYouArriveTo: Lisätäänkö toiminto jonoon toteutettavaksi kohteessa <object
+          id="{location}"/>?
+      activity:
+        onceInventoryIsFull: Kun reppusi täyttyy, haluaisitko tehdä jotakin?
+        onceAllActionsAreCompleted: Kun kaikki toiminnot on tehty, haluaisitko tehdä
+          jotakin?
+    types:
+      traveling: Matkustaminen
+      crafting: Valmistus
+      activity: Aktiviteetti
+    suggestedOptions:
+      startCrafting: Valmistus
+      startTraveling: Matkustus
+      startActivity: Aktiviteetti

@@ -189,8 +189,8 @@ dit als je je stappengrafiek wilt resetten. Handig voor als je stappen hebt verk
 door een bug en een reset in de grafiek wilt.}, notifications: {title: Notificaties,
 stepCountInterval: Notificatie-interval, stepCountNotifications: Stappenteller-notificaties,
 notificationType: Notificatietype}, language: {title: Taal}, locales: {chooseALanguageInfo: Druk
-op de knop hierboven om het taal selectie menu te openen., changeLanguage: Verander
-taal, title: Taal}, dataSource: {otherSource: Andere bron, lastSync: 'laatst bijgewerkt:
+op de knop hierboven om het taal selectie menu te openen., changeLanguage: Taal wijzigen,
+title: Taal}, dataSource: {otherSource: Andere bron, lastSync: 'laatst bijgewerkt:
 {timestamp}', thisPhone: Deze telefoon, title: Databron, changeWarning: {description: Let
 op dat dit kan leiden tot het verlies van geregistreerde stappen rond het moment van
 wijzigen., title: Databron wijzigen?}, requiresPermissionIos: 'Als het uitvouwmenu
@@ -261,9 +261,12 @@ loadingCharactersFromCloud: Personages uit de cloud aan het laden, dataLoadingCo
 laden afgerond!}}, character: {phrases: {checkOutSubject: Check mijn voortgang in
 WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen van de laatste 7 dagen,
 checkOut: 'Hier is mijn WalkScape personage {name}. Moet je kijken!\nhttps://walkscape.app',
-totalLevel: Totaalniveau}, info: {skillBreakdown: Hier is het complete overzicht van
-alle vaardigheden die je personage beoefend heeft tijdens zijn/haar reis. Druk op
-een van de vaardigheden voor meer gedetailleerde informatie en wat ze ontgrendelen.}},
+totalLevel: Totaalniveau, savePicture: Afbeelding opslaan, level: 'Personage-niveau:
+<c>{level}</c>', stepsToNextLevel: 'Stappen tot volgend niveau <c>{steps}</c>'}, info: {
+skillBreakdown: Hier is het complete overzicht van alle vaardigheden die je personage
+beoefend heeft tijdens zijn/haar reis. Druk op een van de vaardigheden voor meer gedetailleerde
+informatie en wat ze ontgrendelen., eachLevelIncreasesStepBank: 'Elk personage-niveau
+na niveau <c>{level}</c> verhoogt het maximale aantal bewaarde stappen met <c>{amount}</c>.'}},
 permissions: {phrases: {pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om
 het spel te laten functioneren, hebben we toestemming nodig om de gegevens van de
 stappenteller op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan
@@ -327,7 +330,7 @@ gekozen grammaticaal geslacht bepaalt hoe de UI teksten van het spel naar je ref
 youCanChangeAnyTime: Je kunt op elk moment de taal veranderen in de <c>Spelinstellingen</c>.}},
 gearSets: {phrases: {gearSets: Uitrustingsets, optionsAndFilters: Opties & filters,
 copyCurrentlyEquippedGear: Kopieer de uitrusting die je nu draagt, importedGearSetDefaultName: Geïmporteerde
-uitrustingssets, newSetDefaultName: Mijn nieuwe uitrustingsset, noActivitiesSelected: Geen
+uitrustingsset, newSetDefaultName: Mijn nieuwe uitrustingsset, noActivitiesSelected: Geen
 activiteiten geselecteerd, forActivities: 'Voor activiteiten: ', sortBy: 'Sorteren
 op: ', toolSlot: Gereedschapsvak, default: Standaard, showAttributes: Attributen weergeven,
 tools: Gereedschappen, name: Naam, unequipGear: Uitrusting uit doen, unequipTools: Gereedschap
@@ -342,8 +345,8 @@ druk dan op de knop hieronder. Je kan ook je <c i=1>huidige geactiveerde uitrust
 kopiëren</c> wanneer je een nieuwe set gaat maken.', noGearSetsManage: Je hebt nog
 geen uitrustingssets gemaakt. Maak je eerste set door op <c i=0>Nieuwe set maken<c/>
 te drukken., noGearSetsList: Je hebt nog geen uitrustingssets. Kies <c i=0>Beheren</c>
-om een nieuwe set te creëren of importeren.}}, queue: {phrases: {switchingToGearSet: 'Aan
-het wisselen naar uitrustingsset <c>{name}</c>', activityInLocation: '<object id="{activity}"/>
+om een nieuwe set te creëren of importeren.}}, queue: {phrases: {switchingToGearSet: 'Wisselen
+naar uitrustingsset <c>{name}</c>', activityInLocation: '<object id="{activity}"/>
 in <object id="{location}"/>', queue: Wachtrij, queuedActions: Acties in wachtrij,
 travelingTo: '<object id="{from}"/> naar <object id="{to}"/>', untilInventoryFull: Tot
 inventaris vol is, noGearSetFound: 'Gekozen uitrustingsset niet gevonden, heb je deze
@@ -358,6 +361,11 @@ text: Verwijderen uit wachtrij, desc: Verwijder deze actie en alle acties erna u
 de wachtrij.}, cancelGearSetSwitch: {text: Wisselen van uitrustingsset annuleren,
 desc: Annuleert het wisselen van uitrustingsset voor deze actie.}}, types: {traveling: Reizen,
 activity: Activiteit, crafting: Ambacht}, suggestedOptions: {startActivity: Activiteit,
-startCrafting: Maken}}, whileAway: {phrases: {fromProc: 'Door <c>{proc}</c>', fromAttribute: 'Door
-attribuut {attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door
-<object id="{source}"/>'}}}}
+startCrafting: Maken, startTraveling: Reizen}, suggestions: {traveling: {onceYouArriveTo: 'Actie
+toevoegen aan wachtrij in <object id="{location}"/>?'}, crafting: {onceAllItemsAreCrafted: Wil
+je iets doen zodra all voorwerpen gemaakt zijn?, onceCertainRarityIsCrafted: Wil je
+iets doen zodra je iets hebt gemaakt van een specifieke zeldzaamheid of al het materiaal
+hebt gebruikt?}, activity: {onceInventoryIsFull: Wil je iets doen zodra je inventaris
+vol is?, onceAllActionsAreCompleted: Wil je iets doen zodra alle acties voltooid zijn?}}},
+whileAway: {phrases: {fromProc: 'Door <c>{proc}</c>', fromAttribute: 'Door attribuut
+{attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door <object id="{source}"/>'}}}}

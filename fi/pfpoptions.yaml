@@ -223,7 +223,7 @@ singulars:
       name: Pingviinikumppani
     syrenthiaBanner:
       desc: Sininen ja vaaleankeltainen viiri muistuttaa Syrentian värejä.
-      name: Syrenthian viiri
+      name: Syrentian viiri
     birdCompanion:
       desc: Pieni lintu, joka seuraa sinua ympäriinsä.
       name: Lintukumppani
@@ -267,6 +267,17 @@ singulars:
     backShield:
       name: Kilpi
       desc: Suuri kilpi suojaa sinua uhilta.
+    frogCompanion:
+      name: Sammakkokaveri
+      desc: Tällä sammakolla ei ollut aina helppoa ennen kuin löysit sen; sitä käskettiin
+        aina kiiruhtaa, ja se joutui hyppäämään kyytiin vauhdissa.
+    halflingRebelsBanner:
+      name: Puolituiskapinallisten viiri
+      desc: Viirin kaksi vihreän sävyä täsmää puolituiskapinallisten käyttämiin väreihin.
+    iceMaul:
+      name: Jääleka
+      desc: Jäästä tehty suurikokoinen vasara, joka luo viileän tuulenvireen joka
+        heilautuksella.
   bodyTypes:
     a: A - Maskuliininen
     b: B - Feminiininen
@@ -536,8 +547,9 @@ singulars:
       desc: Näytät siltä kuin olisit valmiina valmistamaan upean illallinen!
       name: Kokin hattu
     copperHelmet:
-      desc: Kypärä tehty kuparista. Yksinkertaisen näköinen, mutta hyvin käytännöllinen.
-      name: Kupari kypärä
+      desc: Kypärä, joka on tehty kuparista. Yksinkertaisen näköinen, mutta hyvin
+        käytännöllinen.
+      name: Kuparikypärä
     crystalHelmet:
       desc: Kristalli kypärä, joka hehkaa purppuraa.
       name: Kristalli kypärä
@@ -559,16 +571,16 @@ singulars:
     farganiteHelmet:
       desc: Sininen kypärä joka on tehty harvinaisesta metallista. Suojaa päätäsikin
         hyvin.
-      name: Farganiitti kypärä
+      name: Farganiittikypärä
     farganiteLightHelmet:
       desc: Hyvin kevyt kypärä malli tehty kestävästä farganiitista.
       name: Kevyt farganiittikypärä
     ironHelmet:
       desc: Näyttää hyvin vartiamaiselta, eikös?
-      name: Rauta kypärä
+      name: Rautakypärä
     lightBronzeHelmet:
       desc: Näyttää hieman pipolta, mutta suojaa päätäsi myös hyvin.
-      name: Kevyt pronssikypärä
+      name: Pronssinen kevytkypärä
     lightCopperHelmet:
       name: Kevyt kuparikypärä
       desc: Käytännöllinen kypärä, joka on varsin kevytrakenteinen.
@@ -621,13 +633,13 @@ singulars:
     headwrap:
       desc: Monipuolinen päähine, joka suojaa, koristaa ja on näyte sen käyttäjän
         henkilökohtaisesta tyylistä. Wrentmarkilaiset käyttävät sitä usein.
-      name: Turbaani
+      name: Päähuivi
     aviatorHatWithGoggles:
       name: Lentäjänhattu ja suojalasit
       desc: Tyypillinen galeforgialaisten lentäjien käyttämä lentäjänhattu. Siihen
         on kiinnitetty suojalasit.
     tarsiliumLightHelmet:
-      name: Tarsilium kevytkypärä
+      name: Kevyt tarsiliuminen kypärä
       desc: Musta ja vaalea kypärä.
     pirateHat:
       name: Merirosvohattu
@@ -652,7 +664,7 @@ singulars:
       desc: Tämä yksinkertainen hattu on kuoretettu villalla, ja on varsin lämmin
         talvella.
     hatWithFeather:
-      name: Hattu höyhenellä
+      name: Sulkahattu
       desc: Hattuun on kiinnitetty sulka. Se tuo onnea.
     syrenthianCoralCrown:
       name: Syrenthialainen korallikruunu
@@ -675,8 +687,29 @@ singulars:
       desc: Hattu on kudottu bambusta ja suojaa suuren pyöreän muotonsa vuoksi hyvin
         auringolta.
     pumpkinHat:
-      name: Kurpitsa hattu
-      desc: Koristeellinen kurpitsa jonka voi laittaa päähän juhlatunnelman luomiseksi.
+      name: Kurpitsahattu
+      desc: Koristeellinen kurpitsa, jonka voi laittaa päähän juhlatunnelman luomiseksi.
+    expertDivingHelmet:
+      desc: Tämä ammattilaisen sukelluskypärä vaikuttaa olevan hydriliumista valmistettu.
+        Päihittää kalamaljan käyttämisen sukelluspäähineenä.
+      name: Ammattilaisen sukelluskypärä
+    sleepyHat:
+      name: Uninen hattu
+      desc: Tämä hattu soveltuu jatkuvassa torkahdusvalmiudessa elävän tyyliin, ja
+        tuntuu melkein siltä, että voisit se päässäsi nukkua pyörremyrskyn tai tulivuorenpurkauksen
+        läpi kuin tukki.
+    halflingRebelsBandana:
+      name: Puolituiskapinallisten otsanauha
+      desc: Yksinkertainen otsanauha, jota kapinalliset käyttävät pitääkseen hien
+        pois kasvoiltaan kamppailunsa aikana.
+    witchCatHat:
+      name: Noitakissan hattu
+      desc: Kissa hatussa. Noita kissoja nyt on kuulemma kaikenlaisissa hatuissa,
+        eikä heitä ollenkaan hatuta istua päässäsi.
+    coffeeHat:
+      name: Kahvihattu
+      desc: Jos kahvi on jatkuvasti mielessäsi, se voi nyt olla myös konkreettisesti
+        päässäsi. Nappaa espresso, sit ei oo stresso!
   noses:
     bigAndPointy:
       desc: Hieman isompi nenä, joka on myös terävä. Elähän satuta tällä ketään!
@@ -810,7 +843,7 @@ singulars:
       name: Aarteenmetsästäjän takki
     syrenthianConchArmor:
       desc: Suurikokoinen simpukka suojaa olkapäätäsi mahdollisilta iskuilta.
-      name: Syrenthialainen simpukkahaarniska
+      name: Syrentialainen simpukkahaarniska
     dragonLeatherArmor:
       name: Lohikäärmeennahkahaarniska
       desc: Haarniska on tehty muinaisesta lohikäärmeen nahasta, ja se pitää käyttäjänsä
@@ -833,7 +866,7 @@ singulars:
       name: Poolopaita juoksemiseen
       desc: Paita on tyylikäs ja mukava. Sopii täydellisesti maanosien läpi juoksemiseen.
     erdwissMerchantOutfit:
-      name: Erdwissiläisen kauppiaan vaate
+      name: Erdwissiläisen kauppiaan asu
       desc: Tämä punaisen ja keltaisen sävyinen vaate on mukava, ja siinä on piilotetut
         sisätaskut kultapiilojasi varten.
     jarvonianFurArmor:
@@ -854,6 +887,11 @@ singulars:
       name: Ninjapuku
       desc: Silkistä valmistettu väljä, mutta istuva asukokonaisuus. Peittää suurimman
         osan kasvoistasi.
+    halflingRebelsOutfit:
+      name: Puolituiskapinallisten vermeet
+      desc: Tämä asukokonaisuus on valmistettu sekalaisista materiaaleista, joita
+        on koottu suolta. Se tarjoaa perustasoista suojaa, ja hyvän maastoutumisvärtyksen
+        suoalueella.
   facepaints:
     stripeOverCheeks:
       desc: Raita, joka kulkee molempien poskien yli.

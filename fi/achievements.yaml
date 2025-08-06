@@ -42,7 +42,7 @@ singulars:
     myPrecious:
       desc: Kirottu Reppuli! Se on poissa! Mitä sillä on taskuissaan? Arvaamme, arvaamme,
         kultaseni. Hän löysi sen, niin varmaan löysi.
-      name: Minun Aarre! Oi Aarre!
+      name: Minun Aarre, Oi Aarre
     oneCannotSimplyWalkToMordor:
       desc: Oletko koskaan miettinyt, kuinka helppoa olisi kävellä Mordoriin? No,
         <hl> nyt tiedät</hl>.
@@ -64,7 +64,7 @@ singulars:
       name: Kosketa ruohoa
     underTheSea:
       desc: Ylhäällä tehdään töitäkin\nRaadetaan vaikka öitäkin\nLeikimme täällä,
-        hyvällä päällä, aalloissa siis
+        hyvällä päällä,\nAalloissa siis
       name: Aalloissa siis
     visitorOfTheFarLands:
       desc: Luku on palikoiden määrä, joka sinun piti kulkea, kunnes pääsit Minecraftin
@@ -76,7 +76,7 @@ singulars:
     whatATrip:
       desc: Joidenkin lajien syöminen saattaa viedä sinut hurjalle matkalle. Paras
         nauttia hyvässä seurassa.
-      name: Ristus mikä reissu!
+      name: Ristus mikä reissu
     winniePooh:
       desc: Joskus pienimmät asiat vievät eniten tilaa sydämessäsi.
       name: Nalle Puh
@@ -85,7 +85,7 @@ singulars:
         auta sinua, Udûnin liekki! Palaa Varjoihin. <hl>Tästä et pääse!</hl>
       name: Tästä et pääse!
     myBackHurts:
-      name: Selkään Sattuu
+      name: Selkään sattuu
       desc: Aika pudottaa tai myydä ennen kuin murrat selkäsi.
     fullyPrepared:
       desc: Täydessä varustuksessa olet valmis valloittamaan maailman!
@@ -118,7 +118,7 @@ singulars:
       name: Hamstraaja
     theRockstar:
       name: Rokkitähti
-      desc: Hard rock hallelujah!
+      desc: Hard rock -hallelujaa!
     doomsdayPrepper:
       name: Maailmanlopun Odottaja
       desc: Kun maailmanloppu koittaa, sinä ja sinun 1000 purkkia tomaattikeittoa
@@ -137,8 +137,8 @@ singulars:
       desc: Ette varmaan uskoisi, vaikka kertoisin, mutta pystyin juoksemaan kuin
         tuuli. Siitä päivästä lähtien, minne ikinä meninkin, minä juoksin!
     spaceCarsAndBirds:
-      name: Mitä kaikkea voisinkaan tehdä
-      desc: 'Win a fortune in a game, my life will never be the same...'
+      name: Mitä vain sillä saa
+      desc: 'Jos ruletissa onnistaa, pian syleilen mä maailmaa...'
     tutorialComplete:
       desc: Olet vihdoin valmis poistumaan lähtöalueelta, eikö niin?
       name: Oppitunti Ohi
@@ -174,8 +174,8 @@ singulars:
         pystypäin. Takaa vuorten huippujen etsin aina vaan!
     tasteTheRainbow:
       name: Maista sateenkaarta
-      desc: Huhujen mukaan sateenkaari maistuu yksisarvisen sarvipölyltä, mutta muista,
-        että yksisarvisen sarven jauhaminen pölyksi on laitonta.
+      desc: Huhujen mukaan sateenkaari maistuu yksisarvisen sarvijauheelta, mutta
+        muista, että yksisarvisen sarven jauhaminen jauheeksi on laitonta.
     fashionista:
       name: Muotitietoinen
       desc: Muotitietoinen. Nyt mä olen muotitietoinen. Minä olen muotitietoinen,
@@ -192,18 +192,23 @@ singulars:
       name: Tarvitset isomman keittiön
     feedYourInnerChild:
       name: Ruoki sisäistä lastasi
-      desc: <PLACEHOLDER>
+      desc: Koskaan ei ole liian vanha pitämään hauskaa!
     needToGoDeeper:
       name: Meidän täytyy mennä syvemmälle
       desc: Joskus sinun täytyy tutkia hieman pidemmälle kuin aiemmin löytääksesi
         jotain hyvää.
     theCircleOfLife:
       name: Elämän kiertokulku
+      desc: Vaikka ensin sinnikkäästi seurasit lepakoita niiden koko vuodenkierron
+        ajan ja tutkit niiden asumuksia kuin tieteilijä, loppujen lopuksi olet oppinut
+        pitämään niitä ystävinäsi.
     shieldWall:
       desc: Paras hyökkäys on... öö...
       name: Kilpimuuri
     moreThanMeetsTheEye:
       name: Enemmän kuin miltä näyttää
+      desc: Tulit hakemaan timantteja, mutta löysit lapion. Erdwisen korutyötehtaan
+        salaisuudet ovat monituiset.
     aVeryFashionableCoast:
       desc: Sinusta tuntuu että lopultakin sovit Keskiharjun ja Ikisataman välissä
         olevan muotipääkaupunki Arenumin asukkaiden joukkoon.
@@ -213,37 +218,49 @@ singulars:
       name: Vau.
     residualRelic:
       desc: Oikea hely väärässä paikassa voi muuttaa kaiken.
+      name: Jälkeen jäänyt muinaisjäänne
     lighthouse:
       desc: Muutu pimeydessä ohjaavaksi valoksi.
       name: Majakka
+    overprepared:
+      desc: Ehkei sinun tarvitse ylittää itseäsi täysin ihan joka tilanteessa.
+      name: Ylisuoriutuja
+    wetlandsExplorer:
+      desc: Näytit totisesti suolle mistä rupikonna pissii, kukas pelkää pimeää nyt?
+      name: Kosteikkojen koluaja
   requirements:
-    forageHoney: Kerää <numberProgress /> hunajakennoa.
+    forageHoney: Löydä <object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
+      alwaysShow="true" /> aktiviteeteista. <numberProgress />
     catchCrabs: Saa <object id="fish" /> tehdessäsi<object id="activity_fishing" />
       <numberProgress />
     chop5kTrees: Suorita <object id="woodcuttingTrees" /> toimintoja<numberProgress
       />
-    collect1kMushrooms: Kerää <object id="mushroom" alwaysShow="true" /> <object id="activity_foraging"
-      /> aktiviteeteistä. <numberProgress />
-    cook20DifferentRecipes: Kokkaa <numberProgress /> eri reseptiä.
+    collect1kMushrooms: Löydä muutama <object id="mushroom" alwaysShow="true" /> (<object
+      id="activity_foraging" />). <numberProgress />
+    cook20DifferentRecipes: Kokeile <object id="recipe_cooking" /> poikineen, kaikki
+      erilaisia. <numberProgress />
     craftHatchetOfHighestQuality: Valmista korkeimman laadun <object id="woodcuttingHatchet"
       />. <numberProgress />
     craftPickaxeOfHighestQuality: Valmista korkeimman laadun <object id="pickaxe"
       /> . <numberProgress />
     craftPerfectItem: Luo täydellinen esine. <numberProgress />
-    cookRecipes: Kokkaa reseptejä <numberProgress /> kertaa.
-    gain99Agility: Etene ketteryyden tasolle <numberProgress />.
-    gainRingWhileFishing: Saa sormus kalastaessasi. <numberProgress />
-    gainSocksFromActivity: Saa sukat aktiviteetista. <numberProgress />
-    have5DifferentGems: Yksi <object id="cut_gem" /> ei riitä; kerää erilaisia <numberProgress
-      />.
+    cookRecipes: Valmista <object id="recipe_cooking" /> poikineen. <numberProgress
+      />
+    gain99Agility: Etene ketteryyden tasolle <numberProgress />
+    gainRingWhileFishing: Löydä jonkinlainen <object id="item_ring" /> aktiviteetin
+      <object id="activity_fishing" /> aikana <numberProgress />
+    gainSocksFromActivity: Saa <object id="item_socks" /> aktiviteetista. <numberProgress
+      />
+    have5DifferentGems: Yksi <object id="cut_gem" /> ei riitä; kerää monta erilaista.
+      <numberProgress />
     levelUpAnySkill: Nosta tasoasi missä tahansa taidossa. <numberProgress />
-    makeSandwich: Tee <object id="sandwich" />.  <numberProgress />
+    makeSandwich: Tee <object id="sandwich" />. <numberProgress />
     mine10kOres: Harrasta ahkeraa <object id="ore" />n louhintaa. <numberProgress
       />
     mine1kGoldOres: <object id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f"
       alwaysShow="true" /> kiiltää ihanasti - kerää sitä aktiviteeteista. <numberProgress
       />
-    walkSteps: Kerrytä askelia kävelemällä.  <numberProgress />
+    walkSteps: Kerrytä askelia kävelemällä. <numberProgress />
     walkStepsWithoutGear: Kävele luomumatka ilman minkäänlaisia varusteita. <numberProgress
       />
     walkStepsInDay: Kerrytä reipas askelmäärä 24 tunnin aikana. <numberProgress />
@@ -251,13 +268,13 @@ singulars:
       alwaysShow="true" /> odottaa sinua. Matkusta sinne. <numberProgress />
     findMysteriousG: Löydä salaperäinen "g". <numberProgress />
     useALamp: Käytä kokemuspistelamppua. <numberProgress />
-    goToBarbantok: <numberProgress /><object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+    goToBarbantok: <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
       alwaysShow="true" /> kutsuu - käy kylässä. <numberProgress />
     characterLevel: Etene hahmon tasolle <numberProgress />,
     haveCoins: Kerää reipas <icon i="money small"/> kolikko-omaisuus. <numberProgress
       />
     haveAllSkillsLevel: Etene kaikissa taidoissa vähintään tasolle <numberProgress
-      />.
+      />
     haveFoodStackQuantity: Kerää pankkiin varasto samaa <object id="food" />-ainetta.
       <numberProgress />
     mineOres: <object id="activity_mining" /> tuo vaurautta ja <object id="ore" />
@@ -266,7 +283,7 @@ singulars:
       />
     exploreJarvonia: '<object id="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db"
       />-opas: tutustu kaikkiin paikkoihin alueella. <numberProgress />'
-    gainFineMaterial: Löydä oiva  materiaali. <numberProgress />
+    gainFineMaterial: Löydä oiva materiaali. <numberProgress />
     dropItem: Pudota esine. <numberProgress />
     dropItems: Pudota joukko esineitä. <numberProgress />
     haveInventoryFilled: Ylitäytä reppusi. <numberProgress />
@@ -290,22 +307,22 @@ singulars:
       /> aktiviteettia. <numberProgress />
     activityIce: Suorita <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
       /> aktiviteettia. <numberProgress />
-    activitySand: Suorita <object id="activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d"
-      /> aktiviteettia. <numberProgress />
-    activitySled: Suorita <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
-      /> aktivitettia. <numberProgress />
+    activitySand: 'Suorita seuraavia aktiviteetteja: <object id="activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d"
+      /> <numberProgress />'
+    activitySled: <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
+      /> <numberProgress />
     activitySwimBeg: Suorita <object id="activity-swimming_(beginner)-1ccee641-01d9-4bcb-8dd7-9df9c61142f2"
       /> aktiviteettia. <numberProgress />
     activitySwimExp: Suorita <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
       /> aktiviteettia. <numberProgress />
     activitySwimInt: Suorita <object id="activity-swimming_(intermediate)-37f761f4-f6fd-49a5-8389-5816388e0cf9"
-      /> aktivitettia. <numberProgress />
-    activityBasket: Suorita <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
       /> aktiviteettia. <numberProgress />
-    activityButterfly: Suorita <object id="activity-butterfly_catching-ddef8fc5-a61e-4689-bacb-e49ee89f09c8"
-      /> aktiviteettia. <numberProgress />
+    activityBasket: Suorita aktiviteettia <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
+      />. <numberProgress />
+    activityButterfly: <object id="activity-butterfly_catching-ddef8fc5-a61e-4689-bacb-e49ee89f09c8"
+      /> <numberProgress />
     activityTinkering: Suorita <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
-      /> aktivitettia. <numberProgress />
+      /> aktiviteettia. <numberProgress />
     completeActivity: Suorita <item id="{item}" alwaysShow="true" /> aktiviteettia.
       <numberProgress />
     sharkCook: Valmista <object id="item-cooked_shark-4eadab85-170e-42b5-a086-cb57cd9d9dc3"
@@ -349,5 +366,11 @@ singulars:
       alwaysShow="true" /> aktiviteetista. <numberProgress />
     explore: Tutki maailmaa ja paikanna <object id="2464445f-9855-4e22-867d-5a5de113f67d"
       />. <numberProgress />
-    lights: Ota <object id="lightSource" /> käyttöön joka käteen yhtä aikaa. <numberProgress
-      />
+    lights: Ole <object id="lightSource" /> jonka haluat maailmassa nähdä - käytä
+      siis useampaa erilaista. <numberProgress />
+    activityFountain: <object id="b6ac3245-e72a-4565-a6ea-21f20ea6ff32" /> tässä varustuksessa.
+      <numberProgress />
+    exploreGDTE: '<object id="faction-grand_duchy_of_trellin-erdwise-68ec9ed7-ae97-438b-a671-f72b14ef6679"
+      />-opas: Tutustu kaikkiin paikkoihin alueella <numberProgress />'
+    EquipDivingGear: Ota käyttöön keskenään erilaiset <object id="itemset_diving_gear"
+      /> <numberProgress />
