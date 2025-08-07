@@ -378,6 +378,8 @@ singulars:
           name: Ruosteinen arkku
           desc: Herbertin löytämä ja hilloama vanha, ruostunut arkku odottaa tilaisuuttaan
             auttaa uusia seikkailijoita alkuun.
+        trellinChest:
+          desc: Sammaleinen arkku, joka näkyy tulevan Trellinin alueelta.
       carpentry:
         carpentryChest:
           name: Puutyöarkku
@@ -607,6 +609,9 @@ singulars:
         lobsterPot:
           name: Hummerimerta
           desc: Nakkaa mereen, ja hummerit eksyvät sinne kuin itsestään.
+        elderhideFishingNet:
+          desc: Kalaverkko, joka on tehty kestävästä ikitaljasta.
+          name: Ikitaljainen kalaverkko
       mining:
         basicPickaxe:
           desc: Yksinkertainen hakku, vaatimaton kaivostyöläisen työkalu tehty periaatteessa
@@ -690,12 +695,47 @@ singulars:
           name: Mangrovekori
       hunting:
         farganiteArrows:
-          name: Farganiitti nuolet
+          name: Farganiittinuolet
           desc: Siniset nuolenkärjet saavat ne näyttämään lähes maagisilta. Valmistetaan
             kuuluisasta farganiitti metallista.
         birchBirdhouse:
           desc: Tyypillinen linnunpönttö, jonka aloittelijakin osaisi tehdä. Kyllä
             se silti on mukava koti jollekin pikkulinnulle pesimäaikaan.
+        simpleBowstring:
+          name: Simppeli jousen jänne
+          desc: Tärkeä osa jousen ja nuolen yhteispeliä, jolla saadaan aikaan tarvittava
+            jännite nuolen ampumisen.
+        mangroveBirdhouse:
+          desc: Mangrovepuusta ei yleensä valmisteta linnunpönttöjä, koska materiaali
+            on haastavaa. Toisaalta taitavan valmistajan käsissä mangrovepuusta syntyy
+            erinomainen pönttö.
+          name: Mangrovepuinen linnunpönttö
+        steelArrows:
+          desc: Näiden nuolten kiiltävät kärjet kertovat niiden terävyydestä. Et haluaisi
+            ottaa tällaisesta osumaa polveen.
+          name: Teräsnuolet
+        teakBirdhouse:
+          name: Tiikkinen linnunpönttö
+          desc: Kehittyneempi linnunpönttö, jonka valmistus vaatii taitoa. Se sopii
+            hyvin samanmielisille linnuille.
+        copperArrows:
+          name: Kuparinuolet
+          desc: Vain silkoista kepeistä tehdyt nuolet ovat näitä huonompia, mutta
+            pitäähän joka metsästäjän aloittaa jostakin.
+        bronzeArrows:
+          name: Pronssinuolet
+          desc: Pronssi ei ole erityisen hyvä materiaali kestävien aseiden valmistukseen,
+            mutta tällaisiin nuoliin se soveltuu varsin hyvin.
+        ironArrows:
+          name: Rautanuolet
+          desc: Perusnuolet monenlaiselle jousimiehelle taistelukentällä.
+        tarsiliumArrows:
+          name: Tarsiliumnuolet
+          desc: Näitä mustia nuolia suosivat kärttyisät metsänvartijat.
+        kelpDriftNet:
+          name: Merileväinen ajoverkko
+          desc: Vallan mahdottoman isokokoinen ajoverkko, joka on tehty vedenalaisesta
+            merilevästä.
       trinketry:
         goldStarPearlRing:
           name: Kultainen tähtihelmisormus
@@ -789,6 +829,41 @@ singulars:
           name: Ikitaljainen nahanpala
         qualityLeather:
           name: laadukas nahanpala
+        linenCloth:
+          name: Pellavakangas
+          desc: Peruspalttinainen kangaspala, josta useimmiten lähinnä aloittelevat
+            vaatturit tekevät vaatteita.
+        hideScraps:
+          desc: Jäännöspalasia pilalle mennyttä nahkaa, josta voisi koostaa käyttökelpoista
+            materiaalia.
+          name: Nahan jämäpalat
+        tattyChaps:
+          desc: Resuiset kankaiset puntit jalkojen ympärille - niissä on helppo liikkua,
+            mutta kangas saa ihosi kutiamaan.
+          name: Resuiset puntit
+        basicHide:
+          desc: Luonnonmateriaali, joka tunnetaan kestävyydestään ja ainutkertaisesta
+            tuntumastaan.
+          name: Simppeli talja
+        elderHideScraps:
+          desc: Jämäpaloja ikitaljaa, joista osaava tekijä voisi vielä työstää käyttökelpoista
+            materiaalia.
+          name: Ikitaljan jämäpaloja
+        elderHide:
+          name: Ikitalja
+          desc: Ylvään riistaeläimen talja.
+        tattyMitts:
+          name: Resuiset tumput
+          desc: Resuiset kankaiset hansikkaat, jotka on valmistanut toistaitoinen
+            tekijä.
+        tattyTunic:
+          name: Resuinen tunika
+          desc: Resuinen kankainen tunika, jota talonpojat ja muu köyhälistö pukee
+            ylleen.
+        grassknotMitts:
+          name: Ruohosolmuiset tumput
+          desc: Kankaiset hansikkaat, joihin on kudottu sekaan ruohosta tehtyjä nyörejä,
+            jotka tekevät käsineistä erikoiset.
   looted:
     equipmentSets:
       dimensional:
@@ -880,7 +955,7 @@ singulars:
         simpleTorch:
           name: Simppeli soihtu
           desc: Kun yhdistät puukepin, kangasta ja palavaa ainesta, saat mukana kulkevan
-            valonlähteen. Voiko tämän suoraviivaisempaa ollakaan?
+            valonlähteen. Ei tämän suoraviivaisempaa voi ollakaan.
         clayFrisbee:
           name: Savinen liitokiekko
           desc: Tämä liitokiekko on melko painava ja hauras. Toivotaan ettei lähistöllä
@@ -1480,7 +1555,7 @@ singulars:
           voi jemmata hienoja löytöjä.
       rockstarAmulet:
         desc: Tämän tähdenmuotoisen riipuksen avulla saat osasi joko julkkistähtisumusta
-          tai sumuisesta julkkistähteydestä. Kiviäkin kiinnostaa!
+          tai sumuisesta julkkistähteydestä - kiviäkin kiinnostaa.
         name: Tähtisumuriipus
       capeOfAchiever:
         name: Saavuttajan viitta
@@ -1832,7 +1907,7 @@ singulars:
         name: Tulivuoriperäinen kivi
       ruby:
         desc: Syvän purppuranpunainen mineraali nousee kiven sisältä, kauneudessaan
-          ja yksinkertaisuudessaan vangitseva.
+          ja yksinkertaisuudessaan vangitseva
         name: Hiomaton rubiini
       goldOre:
         name: Kultamalmi
@@ -2092,6 +2167,9 @@ singulars:
       kelpRope:
         name: Leväköysi
         desc: Pitkiä levänpalasia pujotettuna köydeksi.
+      elderhideRope:
+        name: Ikitaljainen köysi
+        desc: Kestävä köysi, joka on valmistettu ikitaljasta.
     hunting:
       darkfeather:
         desc: Tumma linnunsulka, luultavimmin varikselta, harakalta tai muulta tummalta
