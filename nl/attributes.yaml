@@ -13,7 +13,9 @@ terwijl in <supp k="realm"/>, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE A
 whileSkillGroup: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat
 s="chestFind"/> tijdens een <supp k="skillGroup"/> vaardigheid.}, whileLocationKeyword: {
 name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: Globale <stat
-s="chestFind"/> terwijl op <supp k="keyword"/> locatie.}}, "craftingOutcome": {"global": {
+s="chestFind"/> terwijl op <supp k="keyword"/> locatie.}, whileMainSkillAndRealm: {
+desc: <TIJDELIJKE AANDUIDING>, name: <TIJDELIJKE AANDUIDING>, text: <stat s="chestFind"/>
+terwijl <supp k="skill"/> in <supp k="realm"/>.}}, "craftingOutcome": {"global": {
 "desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "Globaal <stat s=\"craftingOutcome\"\
 />"}, "whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
 s=\"craftingOutcome\"/> tijdens <supp k=\"skill\"/>"}, whenKeywordSetBonus: {name: <PLACEHOLDER>,
@@ -24,7 +26,9 @@ bij het trainen van <supp k="skill"/> op <supp k="keyword"/> locatie.}, whileLoc
 desc: <TIJDELIJKE AANDUIDING>, name: <TIJDELIJKE AANDUIDING>, text: Globale <stat
 s="craftingOutcome"/> terwijl op <supp k="keyword"/> locatie.}, whileRealm: {name: <TIJDELIJKE
 AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="craftingOutcome"/> terwijl
-in <supp k="realm"/>}}, "doubleAction": {"global": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
+in <supp k="realm"/>}, whileMainSkillAndRealm: {desc: <TIJDELIJKE AANDUIDING>, name: <TIJDELIJKE
+AANDUIDING>, text: <stat s="craftingOutcome"/> terwijl <supp k="skill"/> in <supp
+k="realm"/>.}}, "doubleAction": {"global": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
 "text": "Globaal <stat s=\"doubleAction\"/>"}, "whileMainSkill": {"desc": "<PLACEHOLDER>",
 "name": "<PLACEHOLDER>", "text": "<stat s=\"doubleAction\"/> tijdens <supp k=\"skill\"\
 />"}, "whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
@@ -38,34 +42,56 @@ tijdens <supp k="skill"/> op <supp k="keyword"/> locatie.}, whileLocationKeyword
 name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: Globale <stat
 s="doubleAction"/> wanneer op <supp k="keyword"/> locatie.}, whileSkillGroup: {name: <TIJDELIJKE
 AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="doubleAction"/> tijdens
-een <supp k="skillGroup"/> vaardigheid.}}, "doubleRewards": {"global": {"desc": "<PLACEHOLDER>",
-"name": "<PLACEHOLDER>", "text": "Globaal <stat s=\"doubleRewards\"/>"}, "whileMainSkill": {
-"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"doubleRewards\"\
-/> tijdens <supp k=\"skill\"/>"}, whenAchievementPoints: {name: <TIJDELIJKE AANDUIDING>,
-desc: <TIJDELIJKE AANDUIDING>, text: Globale <stat s="doubleRewards"/> wanneer <supp
-k="achievementPoints"/>}, whileMainSkillAndLocationKeyword: {name: <TIJDELIJKE AANDUIDING>,
-desc: <TIJDELIJKE AANDUIDING>, text: <stat s="doubleRewards"/> tijdens <supp k="skill"/>
-op <supp k="keyword"/> locatie.}, whenKeywordSetBonus: {desc: <TIJDELIJKE AANDUIDING>,
-text: Globale <stat s="doubleRewards"/> bij het dragen van minstens <supp k="quantity"/>
-<supp k="keyword"/> voorwerpen., name: <TIJDELIJKE AANDUIDING>}, whileLocationKeyword: {
-desc: <TIJDELIJKE AANDUIDING>, name: <TIJDELIJKE AANDUIDING>, text: Globale <stat
-s="doubleRewards"/> wanneer op <supp k="keyword"/> locatie.}}, "experience": {"global": {
-"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "Globaal <stat s=\"bonusExperience\"\
-/>"}, "whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
-s=\"bonusExperience\"/> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {"desc": "<PLACEHOLDER>",
-"name": "<PLACEHOLDER>", "text": "<stat s=\"bonusExperience\"/> tijdens het reizen"}},
-"fineMaterialFind": {"global": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
-"text": "Globaal <stat s=\"fineMaterialFind\"/>"}, "whileMainSkill": {"desc": "<PLACEHOLDER>",
-"name": "<PLACEHOLDER>", "text": "<stat s=\"fineMaterialFind\"/> tijdens <supp k=\"\
-skill\"/>"}, whenAchievementPoints: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: Globale
-<stat s="fineMaterialFind"/> met <supp k="achievementPoints"/>}, whileRealm: {name: <PLACEHOLDER>,
-text: <stat s="fineMaterialFind"/> terwijl in <supp k="realm"/>, desc: <PLACEHOLDER>},
-whenKeywordSetBonus: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: Globale <stat
-s="fineMaterialFind"/> wanneer je minstens <supp k="quantity"/> <supp k="keyword"/>
-voorwerpen draagt.}, whileMainSkillAndLocationKeyword: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>,
-text: <stat s="fineMaterialFind"/> voor <supp k="skill"/> op <supp k="keyword"/> locatie.},
-whileMainSkillAndRealm: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: <stat s="fineMaterialFind"/>
-voor <supp k="skill"/> in <supp k="realm"/>.}, whileLocationKeyword: {name: <PLACEHOLDER>,
+een <supp k="skillGroup"/> vaardigheid.}, whileRealm: {name: <TIJDELIJKE AANDUIDING>,
+desc: <TIJDELIJKE AANDUIDING>}, whileMainSkillAndRealm: {name: <TIJDELIJKE AANDUIDING>,
+desc: <TIJDELIJKE AANDUIDING>, text: <stat s="doubleAction"/> terwijl <supp k="skill"/>
+in <supp k="realm"/>.}}, "doubleRewards": {"global": {"desc": "<TIJDELIJKE AANDUIDING>",
+"name": "<TIJDELIJKE AANDUIDING>", "text": "Globaal <stat s=\"doubleRewards\"/>"},
+"whileMainSkill": {"desc": "<TIJDELIJKE AANDUIDING>", "name": "<TIJDELIJKE AANDUIDING>",
+"text": "<stat s=\"doubleRewards\"/> tijdens <supp k=\"skill\"/>"}, whenAchievementPoints: {
+name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: Globale <stat
+s="doubleRewards"/> wanneer <supp k="achievementPoints"/>}, whileMainSkillAndLocationKeyword: {
+name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="doubleRewards"/>
+tijdens <supp k="skill"/> op <supp k="keyword"/> locatie.}, whenKeywordSetBonus: {
+desc: <TIJDELIJKE AANDUIDING>, text: Globale <stat s="doubleRewards"/> bij het dragen
+van minstens <supp k="quantity"/> <supp k="keyword"/> voorwerpen., name: <TIJDELIJKE
+AANDUIDING>}, whileLocationKeyword: {desc: <TIJDELIJKE AANDUIDING>, name: <TIJDELIJKE
+AANDUIDING>, text: Globale <stat s="doubleRewards"/> wanneer op <supp k="keyword"/>
+locatie.}, whileMainSkillAndRealm: {text: <stat s="doubleRewards"/> wanneer <supp
+k="skill"/> in <supp k="realm"/>., name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>}, whileRealm: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>,
+text: Globale <stat s="doubleRewards"/> wanneer in<supp k="realm"/>}, whileActivity: {
+name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: Globale <stat
+s="doubleRewards"/> tijdens <supp k="activityType"/>.}, whileSkillGroup: {name: <TIJDELIJKE
+AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="doubleRewards"/> tijdens
+<supp k="skillGroup"/> vaardigheid.}}, "experience": {"global": {"desc": "<PLACEHOLDER>",
+"name": "<PLACEHOLDER>", "text": "Globaal <stat s=\"bonusExperience\"/>"}, "whileMainSkill": {
+"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"bonusExperience\"\
+/> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
+"text": "<stat s=\"bonusExperience\"/> tijdens het reizen"}, whileRealm: {text: Globale
+<stat s="bonusExperience"/> wanneer in <supp k="realm"/>, name: <TIJDELIJKE AANDUIDING>,
+desc: <TIJDELIJKE AANDUIDING>}, whileSkillGroup: {text: <stat s="bonusExperience"/>
+tijdens <supp k="skillGroup"/> vaardigheid., name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>}, whileMainSkillAndRealm: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>, text: <stat s="bonusExperience"/> terwijl <supp k="skill"/> in <supp
+k="realm"/>.}, whileLocationKeyword: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>, text: Globale <stat s="bonusExperience"/> wanneer in <supp k="keyword"/>
+locatie.}, globalSkillXp: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>,
+text: Globale <stat s="bonusExperience"/> voor <supp k="skill"/>}, whileMainSkillAndLocationKeyword: {
+name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="bonusExperience"/>
+terwijl <supp k="skill"/> in <supp k="keyword"/> locatie.}}, "fineMaterialFind": {
+"global": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "Globaal <stat
+s=\"fineMaterialFind\"/>"}, "whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
+"text": "<stat s=\"fineMaterialFind\"/> tijdens <supp k=\"skill\"/>"}, whenAchievementPoints: {
+name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: Globale <stat s="fineMaterialFind"/>
+met <supp k="achievementPoints"/>}, whileRealm: {name: <PLACEHOLDER>, text: <stat
+s="fineMaterialFind"/> terwijl in <supp k="realm"/>, desc: <PLACEHOLDER>}, whenKeywordSetBonus: {
+name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: Globale <stat s="fineMaterialFind"/>
+wanneer je minstens <supp k="quantity"/> <supp k="keyword"/> voorwerpen draagt.},
+whileMainSkillAndLocationKeyword: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: <stat
+s="fineMaterialFind"/> voor <supp k="skill"/> op <supp k="keyword"/> locatie.}, whileMainSkillAndRealm: {
+name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: <stat s="fineMaterialFind"/> voor
+<supp k="skill"/> in <supp k="realm"/>.}, whileLocationKeyword: {name: <PLACEHOLDER>,
 desc: <PLACEHOLDER>, text: Globale <stat s="fineMaterialFind"/> voor op <supp k="keyword"/>
 locatie.}, whileSkillGroup: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>,
 text: <stat s="fineMaterialFind"/> tijdens een activiteit van een <supp k="skillGroup"/>
@@ -76,9 +102,10 @@ vaardigheid.}}, "inventorySpace": {"global": {"desc": "<PLACEHOLDER>", "name": "
 /> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
 "text": "<stat s=\"noMaterialsConsumed\"/> tijdens het reizen"}}, "rollSpecialTable": {
 "whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
-s=\"rollSpecialTable\"/> tijdens <supp k=\"skill\"/>"}}, "skillLevel": {"global": {
-"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"skillLevel\"\
-\ /> level"}, "whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
+s=\"rollSpecialTable\"/> tijdens <supp k=\"skill\"/>"}, global: {name: <TIJDELIJKE
+AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="rollSpecialTable"/>}},
+"skillLevel": {"global": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
+s=\"skillLevel\" /> level"}, "whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
 "text": "<stat s=\"skillLevel\"/> level tijdens<supp k=\"skill\"/>"}, "whileTraveling": {
 "desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"skillLevel\"\
 /> level tijdens het reizen"}}, "stepsRequired": {"global": {"desc": "<PLACEHOLDER>",
