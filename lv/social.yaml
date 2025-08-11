@@ -1,1 +1,70 @@
-{}
+singulars:
+  party:
+    manage: Pārvaldīt
+    role: Loma
+  relationship:
+    friends: Jūs esat draugi
+    blocked: Tu esi bloķējis šo lietotāju
+    inviteSent: Uzaicinājums nosūtīts
+    none: Sociālie
+    party:
+      member: Dalībnieks
+      admin: Administrators
+      owner: Īpašnieks
+    inviteReceived: Tu esi saņēmis uzaicinājumu
+  status:
+    loadingInvites: Tiek pārbaudīti uzaicinājumi...
+  actions:
+    buttonLabels:
+      removeFriend: Noņemt draugu
+      unblock: Atbloķēt
+      cancelInvite: Atcelt uzaicinājumu
+      sendInvite: Nosūti draugam uzaicinājumu
+      inviteResponse:
+        accept: Pieņemt
+        reject: Noraidīt
+        block: Bloķēt
+      createParty: Izveidojiet grupu
+      leaveParty: Pamest grupu
+      leaveAndDestroyParty: Pamest un iznīcināt grupu
+    confirmTitle:
+      changeRole: Mainīt atļauju
+      unblock: Atbloķēt lietotāju
+      inviteResponse:
+        block: Bloķēt lietotāju
+    confirmDescription:
+      removeFriend: Vai tiešām vēlies pārtraukt draudzēties?
+      unblock: Vai tiešām vēlies atbloķēt šo lietotāju?
+      leaveParty: Vai tiešām vēlaties pamest grupu?
+      leaveAndDestroyParty: Vai tiešām vēlies pamest un iznīcināt grupu? Šo darbību
+        nevar atsaukt.
+      cancelInvite: Vai tiešām vēlies atcelt šo draudzības uzaicinājumu?
+      inviteResponse:
+        block: Vai tiešām vēlies bloķēt šo lietotāju? Bloķētie lietotāji vairs nevarēs
+          tev sūtīt draudzības uzaicinājumus.
+      changeRole: Vai tiešām vēlies padarīt <hl>{characterName</hl> par <hl>{partyRole</hl>?
+  createParty:
+    input:
+      partyName: Grupas nosaukums
+      catchphrase: Atpazīstamības frāze
+      catchphraseHint: Atpazīstamības frāze (neobligāti)
+    rules:
+      mayContain: '<bp />Var saturēt: {list}'
+      noTrailingSpaces: <bp />Nevar sākties vai beigties ar atstarpi
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        one: <bp />Vismaz {} rakstzīme
+        two: '-'
+        few: '-'
+        other: <bp />Vismaz {} rakstzīmes
+        many: '-'
+      maxChar:
+        zero: '-'
+        one: <bp />Ne vairāk kā {} rakstzīme
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Ne vairāk kā {} rakstzīmes
