@@ -4,16 +4,22 @@ helm en waterdichte kleding. Het weer kon niet beter: zonneschijn, aangename tem
 en een licht briesje. Laten we genieten van een goede vaart!", "name": "Kajakken"},
 "rooftopJumpingIntermediate": {"desc": "Met katachtige sierlijkheid reis je door de
 stad en gebruik je elk architectonisch element als hulp: muren, daken, balkons, straatlantaarns.
-Ze buigen zich allemaal naar jouw wensen.", "name": "Daken springen (gemiddeld)"},
-"swimmingBeginner": {"desc": "Er is je verteld dat zwemmen een manier is om gezond
-te blijven, dus na een paar lessen voel jij je zeker om het zelf te proberen.", "name": "Oppervlaktezwemmen"},
+Ze buigen zich allemaal naar jouw wensen.", "name": "Huizen springen"}, "swimmingBeginner": {
+"desc": "Er is je verteld dat zwemmen een manier is om gezond te blijven, dus na een
+paar lessen voel jij je zeker om het zelf te proberen.", "name": "Oppervlaktezwemmen"},
 "swimmingIntermediate": {"desc": "Voordat je het water opgaat, controleer je de omstandigheden:
 windsterkte en -richting, aanwezigheid en grootte van rotsen, vissers, boten of gevaarlijke
 dieren. Je hebt zelfs met de lokale bevolking gepraat. Alles klopt. Je gaat zwemmen
-tussen de golven.", "name": "Zwemmen (gemiddeld)"}}, "global": {"crossCountrySkiingBeginner": {
-"desc": "Op je langlaufreis voor beginners is elke glijding vol verwondering. De besneeuwde
-sporen zijn je speeltuin, waar je het ritme van de ski's leert en de serene schoonheid
-van het winterse bos omarmt.", "name": "Klassiek skiën"}, "crossCountrySkiingDifficult": {
+tussen de golven.", "name": "Bodysurfen"}, treetopJumping: {desc: 'Hoog in de bomen
+voel je de adrenaline door je lichaam stromen terwijl je van tak naar tak springt,
+in de hoop dat ze niet breken. De val naar beneden ziet er angstaanjagend uit.', name: Boomtop
+springen}, exploreBogBottom: {desc: 'Je volgt je onderwaterkaart en verkent het verborgen
+pad in de troebele diepten op de bodem van het moeras. Ze lijken eindeloos te kronkelen
+en te draaien, maar ze leiden je ergens naartoe. Je moet gewoon blijven zwemmen.',
+name: Verken het lage moeras}}, "global": {"crossCountrySkiingBeginner": {"desc": "Op
+je langlaufreis voor beginners is elke glijding vol verwondering. De besneeuwde sporen
+zijn je speeltuin, waar je het ritme van de ski's leert en de serene schoonheid van
+het winterse bos omarmt.", "name": "Klassiek skiën"}, "crossCountrySkiingDifficult": {
 "desc": "Bij zwaar langlaufen verleg je de grenzen van je uithoudingsvermogen en vaardigheid.
 Je bedwingt steile hellingen en trotseert barre omstandigheden en vindt opwinding
 in de hartverscheurende tocht door het ongetemde winterlandschap.", "name": "Bergafwaarts
@@ -37,15 +43,15 @@ waardoor je betaald wordt voor je waakzame ogen.", name: Wachtdienst}, "sledding
 "desc": "Terwijl je de handvatten van de slee vastpakt en jezelf afzet, voel je de
 adrenaline door je aderen stromen. De wereld vervaagt om je heen en voor even ben
 je een winterse snelheidsduivel die de besneeuwde heuvel bedwingt.", name: Sleeën},
-traveling: {name: Reizen, desc: Aan het reizen naar een nieuwe locatie}, sandcastleBuilding: {
-name: Zandkasteel bouwen, desc: 'Het bouwen van zandkastelen op het strand is een
-makkelijke manier om je creativiteit te uiten. Je zanderige creaties blijven misschien
-niet lang staan, maar het is simpel genot op het moment van doen.'}, exploreArea: {
-name: Gebied verkennen, desc: Je maakt aantekeningen op een leeg vel papier terwijl
-je de omgeving verkent. Dit zal van pas komen bij toekomstige expedities.}, scientificTinkering: {
-name: Wetenschappelijk knutselen, desc: 'In de wereld van wetenschappelijk geknutsel,
-word je een vurige enthousiast, die ideeën tot tastbare experimenten omzet. Je omarmt
-de geest van verkenning met een open geest.'}, birdWatching: {name: Vogelspotten,
+traveling: {name: Reizen, desc: 'Reizen van <object id="{from}"/> naar <object id="{to}"/>.'},
+sandcastleBuilding: {name: Zandkasteel bouwen, desc: 'Het bouwen van zandkastelen
+op het strand is een makkelijke manier om je creativiteit te uiten. Je zanderige creaties
+blijven misschien niet lang staan, maar het is simpel genot op het moment van doen.'},
+exploreArea: {name: Gebied verkennen, desc: Je maakt aantekeningen op een leeg vel
+papier terwijl je de omgeving verkent. Dit zal van pas komen bij toekomstige expedities.},
+scientificTinkering: {name: Wetenschappelijk knutselen, desc: 'In de wereld van wetenschappelijk
+geknutsel, word je een vurige enthousiast, die ideeën tot tastbare experimenten omzet.
+Je omarmt de geest van verkenning met een open geest.'}, birdWatching: {name: Vogelspotten,
 desc: 'Vogelspotten is een kijkje in het vogelrijk. Je observeert geduldig terwijl
 je leert over de verschillende vogelsoorten die leven in de bomen, de lucht, en op
 het land, en je waardeert hun schoonheid en gedrag.'}}, "jarvonia": {"mountainClimbingBeginner": {
@@ -64,17 +70,32 @@ keer zal je voorzichtiger moeten zijn.", "name": "Hutspringen"}, blackEyePeakSea
 name: Zoekteam, desc: Help het avonturiersgilde met het lokaliseren en vinden van
 informatie over avonturiers die nooit zijn teruggekeerd.}, blackEyePeakRescueTeam: {
 name: Reddingsteam, desc: Gebruik informatie van de zoekteams om actief reddingsoperaties
-uit te voeren.}}}, "carpentry": {"gdte": {"shipRepairIntermediate": {"desc": "Je bent
-geen leerling-timmerman meer, dus je repareert nu grotere schepen zonder problemen.
-Je voorman vertrouwt je vaardigheden en gezond verstand. Je weet wanneer je effectief
-en efficiënt moet zijn. Je gereedschapskist is professioneel, net als jij.", "name": "Scheepsreparatie
-(gemiddeld)"}}, "jarvonia": {"shipRepairBeginner": {"desc": "Je neemt deel aan reparaties
+uit te voeren.}}, syrenthia: {swimmingExpert: {desc: 'Zwemmen door de verschillende
+paden en grotten van de uitgestrekte onderwaterstad Vastalume blijkt een uitdaging
+te zijn. Je moet de drukke zeedieren ontwijken, zowel bewuste als onbewuste.', name: Onderwater
+zwemmen}, exploreUnderwaterCave: {desc: 'Je volgt je onderwaterkaart en verkent de
+paden van de onderwatergrot. Ze lijken eindeloos te kronkelen en te draaien, maar
+ze leiden je ergens naartoe. Je moet gewoon blijven zwemmen.', name: Onderwatergrot
+verkennen}, merfolkDancing: {name: Meerwezen dansen, desc: 'Het uitvoeren van de zeemeerwezen-dans
+zoals de onderwaterbewoners dat doen, vereist veel vaardigheid. Met elke poging word
+je beter in het bewegen in harmonie met de andere dansers, totdat je een naadloze
+beweging bereikt, die lijkt op een school vissen in hun gesynchroniseerde bewegingen.'}},
+bats: {springBatTracking: {desc: De vleermuizen verlaten de grot en vliegen richting
+het noordoosten. De vleermuizen vanuit hun voorjaarsverblijfplaats volgend en dag
+en nacht rennend om hun volgende verblijfplaats te vinden. Je bent misschien een tijdje
+niet meer hier., name: Lente vleermuizen volgen}}}, "carpentry": {"gdte": {"shipRepairIntermediate": {
+"desc": "Je bent geen leerling-timmerman meer, dus je repareert nu grotere schepen
+zonder problemen. Je voorman vertrouwt je vaardigheden en gezond verstand. Je weet
+wanneer je effectief en efficiënt moet zijn. Je gereedschapskist is professioneel,
+net als jij.", "name": "Rompreparatie"}, underwaterAqueductConstruction: {name: Onderwateraquaducten
+bouwen, desc: Je bouwt en versterkt de natuurlijke waterleiding die naar de Halfling
+Camping loopt.}}, "jarvonia": {"shipRepairBeginner": {"desc": "Je neemt deel aan reparaties
 aan versleten kleine schepen. Timmerhout, spijkers, tuigage, beslag, fittingen, en
 touwen staan tot je beschikking. De voorman geeft jou de orders en je voert ze meesterlijk
-uit. Misschien ben jij op een dag wel degene die de orders geeft.", "name": "Scheepsreparatie
-(beginner)"}, "woodCarving": {"desc": "Hout bewerken met een scherp voorwerp, zoals
-een mes, is een eeuwenoude vorm van vakmanschap. Er is een grote verscheidenheid aan
-kunst en iconografie: van kleine beeldjes en speelgoed, tot ceremoniële of oorlogsmaskers,
+uit. Misschien ben jij op een dag wel degene die de orders geeft.", "name": "Scheepsreparatie"},
+"woodCarving": {"desc": "Hout bewerken met een scherp voorwerp, zoals een mes, is
+een eeuwenoude vorm van vakmanschap. Er is een grote verscheidenheid aan kunst en
+iconografie: van kleine beeldjes en speelgoed, tot ceremoniële of oorlogsmaskers,
 tot grote mozaïeken en torenhoge totempalen.", "name": "Houtsnijwerk"}}}, "cooking": {
 "gdte": {"wineGrapeStomping": {"desc": "Met blote voeten om de zaden niet te breken,
 stap je op de druiven. Je beweegt van het midden van de pers naar de uiteinden, waardoor
@@ -84,15 +105,23 @@ Stampen"}}, "jarvonia": {"soupKitchenVolunteering": {"desc": "Nog steeds in je g
 kleren trek je een schort aan en tijdens het opvolgen van de instructies van de kok
 begin je warme soep te serveren aan degenen die de hulp het hardst nodig hebben. Als
 iedereen zijn portie heeft gekregen, voel je een mix van trots, bescheidenheid en
-gemeenschapszin.", "name": "Vrijwilligerswerk in de soepkeuken"}}}, "crafting": {
-"jarvonia": {"iceSculpting": {"desc": "Gewapend met beitel, handzaag, en een klein
-pikhouweel verander je een ijsblokje in iets anders, iets functioneels of artistieks.
-Hoelang dit kunstwerk zal bestaan is afhankelijk van de omgevingstemperatuur. Misschien
-maar minuten, misschien wel eeuwig.", "name": "IJssculpteren"}, "tinkering": {"desc": "Je
-krabt aan je kin terwijl je nadenkt over hoe je deze rommel kunt repareren. Je bedenkt
-duizend manieren om het te doen, maar voor de meeste daarvan mis je onderdelen. Je
-kijkt de werkplaats rond, op zoek naar iets specifieks. Daar is het! Aan de slag.",
-"name": "Sleutelen"}}}, "fishing": {"gdte": {"magnetFishing": {"desc": "Met een sterke
+gemeenschapszin.", "name": "Vrijwilligerswerk in de soepkeuken"}, vegetableChopping: {
+desc: 'Het is een stressvolle omgeving waarin de chef tegen je schreeuwt en je geen
+idee hebt wat je moet doen, maar af en toe snijd je een groente op de juiste manier.',
+name: Groenten snijden}}}, "crafting": {"jarvonia": {"iceSculpting": {"desc": "Gewapend
+met beitel, handzaag, en een klein pikhouweel verander je een ijsblokje in iets anders,
+iets functioneels of artistieks. Hoelang dit kunstwerk zal bestaan is afhankelijk
+van de omgevingstemperatuur. Misschien maar minuten, misschien wel eeuwig.", "name": "IJssculpteren"},
+"tinkering": {"desc": "Je krabt aan je kin terwijl je nadenkt over hoe je deze rommel
+kunt repareren. Je bedenkt duizend manieren om het te doen, maar voor de meeste daarvan
+mis je onderdelen. Je kijkt de werkplaats rond, op zoek naar iets specifieks. Daar
+is het! Aan de slag.", "name": "Sleutelen"}, apprenticeForLoif: {name: Leerling voor
+Loif, desc: 'De oude man Loif Ulfrand heeft veel dingen nodig, waaronder warme dranken,
+geslepen gereedschap en een knipbeurt. Maar af en toe kun je wat ervaring opdoen door
+met zijn gereedschap te spelen wanneer hij in slaap valt.'}}, syrenthia: {underwaterBasketWeaving: {
+desc: 'Je vlecht de dunne stukjes koraal behendig tot een mand. Het proces is langzaam
+en vervelend, maar het eindresultaat vervult je hart met trots op je creatie.', name: Onderwater
+mandenvlechten}}}, "fishing": {"gdte": {"magnetFishing": {"desc": "Met een sterke
 magneet spullen uit het water vissen betaalt zelden de rekeningen, maar helpt een
 paar goede doelen: het is goed voor het milieu en het helpt bij het oplossen van misdaden.
 Houd rekening met de relevante regelgeving in het gebied en geniet ervan! Je kunt
@@ -100,18 +129,25 @@ van alles omhoog halen!", "name": "Magneetvissen"}, pondFishingNet: {name: Moera
 vissen (Net), desc: Je laat een vissersnet zakken in het troebele water. Het duurt
 niet lang voordat verschillende waterdieren erin vastzitten.}, bogFishingNet: {name: Moerasvissen
 (Net), desc: 'Je werpt het net uit over het moeras. Het water is troebel, maar je
-ziet nog wel de vissen erin rondzwemmen. Je wacht geduldig tot ze je net in zwemmen.'}},
-"jarvonia": {"lakeFishing": {"desc": "Met bevroren vingers bevestig je voorzichtig
-het aas en werpt het uit over het kalme oppervlak van het meer.", name: Meervissen},
-"pondFishing": {"desc": "In het midden van het winterlandschap is de rustige vijver
-met een serene schoonheid aan het glinsteren. Het stille water is uitnodigend en veelbelovend.",
-name: Vijver vissen}, "seaFishingNet": {"desc": "Langs de winterse kustlijn vind je
-een afgelegen plek en werp je jouw visnet uit in het kalme, kille water, genietend
-van de vredige eenzaamheid van het zeevissen.", "name": "Zeevissen (Net)"}, "seaFishingRod": {
-"desc": "Langs de winterse kustlijn zoek je een afgelegen plekje en gooi je jouw hengel
+ziet nog wel de vissen erin rondzwemmen. Je wacht geduldig tot ze je net in zwemmen.'},
+bogFishingSpear: {desc: 'Terwijl je onder water in het moeras bent, maak je jouw vis
+speer klaar, bereid om elke vis te raken die dichtbij genoeg komt. Het troebele water
+maakt het moeilijk om iets te zien, maar je bent vastbesloten om iets te vangen.',
+name: Moeras vissen (speer)}}, "jarvonia": {"lakeFishing": {"desc": "Met bevroren
+vingers bevestig je voorzichtig het aas en werpt het uit over het kalme oppervlak
+van het meer.", name: Meervissen}, "pondFishing": {"desc": "In het midden van het
+winterlandschap is de rustige vijver met een serene schoonheid aan het glinsteren.
+Het stille water is uitnodigend en veelbelovend.", name: Vijver vissen}, "seaFishingNet": {
+"desc": "Langs de winterse kustlijn vind je een afgelegen plek en werp je jouw visnet
 uit in het kalme, kille water, genietend van de vredige eenzaamheid van het zeevissen.",
-"name": "Zeevissen (Hengel)"}, seaFishingCage: {name: Zeevissen (Kooi), desc: Een
-voedingsrijke stroming brengt allerlei soorten schaaldieren naar het gebied.}}, syrenthia: {
+"name": "Zeevissen (Net)"}, "seaFishingRod": {"desc": "Langs de winterse kustlijn
+zoek je een afgelegen plekje en gooi je jouw hengel uit in het kalme, kille water,
+genietend van de vredige eenzaamheid van het zeevissen.", "name": "Zeevissen (Hengel)"},
+seaFishingCage: {name: Zeevissen (Kooi), desc: Een voedingsrijke stroming brengt allerlei
+soorten schaaldieren naar het gebied.}, cleaningTheHolyFountain: {name: De heilige
+fontein reinigen, desc: 'De tempelleiders vertrouwen je genoeg om te helpen bij het
+onderhoud van hun heilige fontein. Ze staan je toe om er met een net in te vissen
+om het water helder te houden, waardoor je hun respect verdient.'}}, syrenthia: {
 seaFishingSpear: {name: Zeevissen (Speer), desc: 'Terwijl je jouw speer stevig vasthoudt,
 zwem je rondjes rond het scheepswrak, aandachtig op zoek naar grote vissen die zo
 dichtbij durven te komen dat je toe kan slaan.'}, predatorHunting: {name: Roofdier
@@ -139,38 +175,40 @@ vergeten hoekjes, en pluis je de weggegooide prullaria door in de hoop om verbor
 schatten te ontaarden tussen de troep.'}, plainsForaging: {name: Verzamelen op de
 vlaktes, desc: 'Terwijl je door de gematigde vlaktes door trekt, bevind je jezelf
 op een reis vol ontdekkingen, kronkelend door een landschap waar de schatten van de
-natuur wachten onder de zachte zon en blauwe lucht.'}}, "global": {"dumpsterDiving": {
-"desc": "In de vele steegjes van de stad verken je de vergeten hoekjes en doorzoek
-je weggegooide spullen in de hoop verborgen schatten tussen de afdankertjes te vinden."},
-"litterLooting": {"desc": "Je kamt door de afgedankte spullen in de drukte van de
-stad, in de hoop om een verborgen schat te vinden tussen al het puin.", name: Afval
-graaien}}, "jarvonia": {"coastForaging": {"desc": "Terwijl je door de winterse kustlandschappen
-wandelt, word je één met de kou, op zoek naar voedsel en warmte tussen de besneeuwde
-rotsen en ijzige wateren.", name: Verzamelen aan de kust}, "glacierForaging": {"desc": "Je
-zoekt ver en breed door de lege gletsjer. Je leert veel over jezelf, maar is er hier
-ook iets te vinden?", "name": "Verzamelen op de gletsjer"}, "seashellSearching": {
-"desc": "Je zoekt zorgvuldig langs de kust naar waardevolle schelpen of parels.",
-"name": "Schelpen zoeken"}, caveForaging: {desc: 'Het is daarbinnen donker, het is
-beter om een licht mee te nemen.', name: Verzamelen in grot}, forestForaging: {desc: 'Je
-trekt door het winterwoud met een scherp oog, op zoek naar verborgen schatten onder
-het deken van sneeuw, genietend van de sensatie van het vinden van de eetbare bronnen
-uit de natuur.', name: Verzamelen in het bos}, cliffForaging: {desc: 'Aan de rand
-van de torenhoge klif verken je voorzichtig het ruwe terrein, op zoek naar wilde bergkruiden,
-weerbare paddestoelen, en andere eetbare schatten die floreren in deze ijle omgeving.',
-name: Verzamelen op de klif}, plainsForaging: {name: Verzamelen op de vlaktes, desc: 'Met
-elke voorzichtige stap over de vlakte, ervaar je de natuurlijke overvloed, door wilde
-bessen, zaden, en ontkiemde plantjes te verzamelen die in de grond onder je voeten
-gedijen.'}, hornOfRespiteTreasureHunt: {name: Schattenjacht, desc: De Avonturiersgilde
-heeft een uitdaging georganiseerd om speciale voorwerpen te vinden rond de Rusthorn.
-Hoelang duurt het voordat je ze allemaal vindt?}}, syrenthia: {seashellForaging: {
-desc: 'Op zoek naar waardevolle schelpen zwem je rond de zeebodem. De meeste liggen
-verborgen onder het zand, maar sommige klampen zich vast in de hoeken en gaten van
-onderwaterrotsen.', name: Schelpen verzamelen}, merfolkFarmForaging: {desc: Door je
-toegang tot de Gemeenschappelijke Zeeboerderij heb je de vrijheid om te gaan verzamelen
-in de eindeloze onderwaterakkers. Je vindt hier een groot aanbod van planten die wachten
-om geplukt te worden., name: Verzamelen op de meervolkboerderij}, kelpForaging: {
-name: Zeewier verzamelen, desc: 'Terwijl je omgeven bent door zeewier, inspecteer
-je nauwkeurig elk exemplaar voordat je alleen de allerbeste plukt.'}, wreckDiving: {
+natuur wachten onder de zachte zon en blauwe lucht.'}, summerCaveForaging: {name: Zomergrot
+verzamelen, desc: 'Vleermuizen maken hier in de zomer hun nest. Het is donker, neem
+maar beter een lamp mee.'}}, "global": {"dumpsterDiving": {"desc": "In de vele steegjes
+van de stad verken je de vergeten hoekjes en doorzoek je weggegooide spullen in de
+hoop verborgen schatten tussen de afdankertjes te vinden."}, "litterLooting": {"desc": "Je
+kamt door de afgedankte spullen in de drukte van de stad, in de hoop om een verborgen
+schat te vinden tussen al het puin.", name: Afval graaien}}, "jarvonia": {"coastForaging": {
+"desc": "Terwijl je door de winterse kustlandschappen wandelt, word je één met de
+kou, op zoek naar voedsel en warmte tussen de besneeuwde rotsen en ijzige wateren.",
+name: Verzamelen aan de kust}, "glacierForaging": {"desc": "Je zoekt ver en breed
+door de lege gletsjer. Je leert veel over jezelf, maar is er hier ook iets te vinden?",
+"name": "Verzamelen op de gletsjer"}, "seashellSearching": {"desc": "Je zoekt zorgvuldig
+langs de kust naar waardevolle schelpen of parels.", "name": "Schelpen zoeken"}, caveForaging: {
+desc: 'Vleermuizen nestelen zich hier in het voorjaar. Het is daarbinnen donker, het
+is beter om een licht mee te nemen.', name: Lentegrot verzamelen}, forestForaging: {
+desc: 'Je trekt door het winterwoud met een scherp oog, op zoek naar verborgen schatten
+onder het deken van sneeuw, genietend van de sensatie van het vinden van de eetbare
+bronnen uit de natuur.', name: Verzamelen in het bos}, cliffForaging: {desc: 'Aan
+de rand van de torenhoge klif verken je voorzichtig het ruwe terrein, op zoek naar
+wilde bergkruiden, weerbare paddestoelen, en andere eetbare schatten die floreren
+in deze ijle omgeving.', name: Verzamelen op de klif}, plainsForaging: {name: Verzamelen
+op de vlaktes, desc: 'Met elke voorzichtige stap over de vlakte, ervaar je de natuurlijke
+overvloed, door wilde bessen, zaden, en ontkiemde plantjes te verzamelen die in de
+grond onder je voeten gedijen.'}, hornOfRespiteTreasureHunt: {name: Schattenjacht,
+desc: De Avonturiersgilde heeft een uitdaging georganiseerd om speciale voorwerpen
+te vinden rond de Rusthorn. Hoelang duurt het voordat je ze allemaal vindt?}}, syrenthia: {
+seashellForaging: {desc: 'Op zoek naar waardevolle schelpen zwem je rond de zeebodem.
+De meeste liggen verborgen onder het zand, maar sommige klampen zich vast in de hoeken
+en gaten van onderwaterrotsen.', name: Schelpen verzamelen}, merfolkFarmForaging: {
+desc: Door je toegang tot de Gemeenschappelijke Zeeboerderij heb je de vrijheid om
+te gaan verzamelen in de eindeloze onderwaterakkers. Je vindt hier een groot aanbod
+van planten die wachten om geplukt te worden., name: Verzamelen op de meervolkboerderij},
+kelpForaging: {name: Zeewier verzamelen, desc: 'Terwijl je omgeven bent door zeewier,
+inspecteer je nauwkeurig elk exemplaar voordat je alleen de allerbeste plukt.'}, wreckDiving: {
 name: Wrakduiken, desc: 'Je duikt diep het scheepswrak van Kasbrants Graf in, in de
 hoop schatten te kunnen vinden.'}}}, "mining": {"global": {"mineCoal": {"desc": "Elke
 slag van je trouwe houweel legt aders steenkool bloot, essentieel als brandstof voor
@@ -222,28 +260,29 @@ je ervoor zorgt dat het gebied niet instort.', name: Onderwateraquaduct graven}}
 smeed je een hoefijzer dat de hoef van een paard beschermt op middelzwaar tot zwaar
 terrein. Hoewel er nagels worden gebruikt voor de bevestiging, heeft het paard er
 geen last van omdat de hoef niet gevoelig is, vergelijkbaar met een hele dikke menselijke
-vingernagel.", "name": "Hoefijzers maken"}}}, "woodcutting": {"jarvonia": {"cutMangroveTrees": {
-"desc": "Terwijl je oppast om niet over hun verstrikkende wortels te struikelen, werk
-je hard om wat boomstammen van deze fascinerend gevormde bomen te pakken te krijgen.",
-"name": "Mangrovebomen kappen"}, "cutTeakTrees": {"desc": "Zweet op je voorhoofd,
-blaren op je vingers, maar je bent vastberaden om een aantal boomstammen van dit duurzame
-en sterke hout te krijgen.", "name": "Teakbomen kappen"}, "cutWillowTrees": {"desc": "De
-brede stammen van deze wilgen blijken een uitdaging te zijn, maar met je behendige
-en krachtige zwaaien slaag je erin om ze een voor een omver te werpen.", "name": "Wilgenbomen
-kappen"}, "firewoodMaking": {"desc": "Met geduld, zweet, moeite en je trouwe bijl
-splijt je de boomstammen genadeloos. Kon je ze maar met je blote handen splijten,
-maar hier moet je op z'n minst een superheld voor zijn.", "name": "Brandhout Maken"},
-cutPineTrees: {name: Dennenbomen hakken, desc: Je zwaait vastberaden met je hakbijl
-naar de dennenboom om deze neer te halen.}, cutBirchTrees: {name: Berkenbomen hakken,
-desc: 'Met al je kracht zwaai je jouw hakbijl, vastberaden om de torenhoge berkenbomen
-om te kappen.'}, cutSpruceTrees: {name: Sparren hakken, desc: Je houdt je bijl stevig
-vast om met al je kracht de torenhoge sparren om te hakken.}, cutOakTrees: {name: Eikenbomen
-omhakken, desc: Standvastig hak je torenhoge eikenbomen waarvan de takken zich door
-de lucht banen als een omhelzing van de natuur.}, cutMapleTrees: {name: Esdoorns omhakken,
-desc: 'Door standvastig met je bijl te zwaaien, weet je de veerkrachtige esdoorns
-om te hakken, ondanks dat de sterke stammen aardig wat doorzettingsvermogen van je
-eisen.'}, branchTrimming: {desc: Het snoeien van de takken laag boven de grond verlaagt
-de kans op bosbranden in dit gebied., name: Snoeien}}, syrenthia: {coralCutting: {
+vingernagel.", "name": "Hoefijzers maken"}, flameStoking: {desc: 'Als Helga belt,
+stook je het vuur op. Een eenvoudig leven.', name: Vlammen aanwakkeren}}}, "woodcutting": {
+"jarvonia": {"cutMangroveTrees": {"desc": "Terwijl je oppast om niet over hun verstrikkende
+wortels te struikelen, werk je hard om wat boomstammen van deze fascinerend gevormde
+bomen te pakken te krijgen.", "name": "Mangrovebomen kappen"}, "cutTeakTrees": {"desc": "Zweet
+op je voorhoofd, blaren op je vingers, maar je bent vastberaden om een aantal boomstammen
+van dit duurzame en sterke hout te krijgen.", "name": "Teakbomen kappen"}, "cutWillowTrees": {
+"desc": "De brede stammen van deze wilgen blijken een uitdaging te zijn, maar met
+je behendige en krachtige zwaaien slaag je erin om ze een voor een omver te werpen.",
+"name": "Wilgenbomen kappen"}, "firewoodMaking": {"desc": "Met geduld, zweet, moeite
+en je trouwe bijl splijt je de boomstammen genadeloos. Kon je ze maar met je blote
+handen splijten, maar hier moet je op z'n minst een superheld voor zijn.", "name": "Brandhout
+Maken"}, cutPineTrees: {name: Dennenbomen hakken, desc: Je zwaait vastberaden met
+je hakbijl naar de dennenboom om deze neer te halen.}, cutBirchTrees: {name: Berkenbomen
+hakken, desc: 'Met al je kracht zwaai je jouw hakbijl, vastberaden om de torenhoge
+berkenbomen om te kappen.'}, cutSpruceTrees: {name: Sparren hakken, desc: Je houdt
+je bijl stevig vast om met al je kracht de torenhoge sparren om te hakken.}, cutOakTrees: {
+name: Eikenbomen omhakken, desc: Standvastig hak je torenhoge eikenbomen waarvan de
+takken zich door de lucht banen als een omhelzing van de natuur.}, cutMapleTrees: {
+name: Esdoorns omhakken, desc: 'Door standvastig met je bijl te zwaaien, weet je de
+veerkrachtige esdoorns om te hakken, ondanks dat de sterke stammen aardig wat doorzettingsvermogen
+van je eisen.'}, branchTrimming: {desc: Het snoeien van de takken laag boven de grond
+verlaagt de kans op bosbranden in dit gebied., name: Snoeien}}, syrenthia: {coralCutting: {
 name: Koraal stekken, desc: 'Koralen, sommmigen zo groot als kleine bomen, is overal
 rond je heen te vinden. Je zwaait je bijl tegen de stronken aan en hakt ze een voor
 een om. In tegenstelling tot bomen boven water vallen ze niet om, maar drijven ze
@@ -252,6 +291,65 @@ Het maakt een lekker knarsend geluid., name: Bamboe kappen}}}, hunting: {gdte: {
 desc: 'Met pijl en boog trek je door het moeras op zoek naar de legendarische Halfmuil.
 Hij heeft al vele jagers voor je overwonnen, maar je hoopt dat een dergelijk lot jou
 niet zal overkomen en dat jij het roofdier zult zijn en niet de prooi.', name: Halfmuil
-jacht}}}, idle: {name: Stilstaan, desc: Je bent niks aan het doen. Je stappen gaan
-naar je Bewaarde Stappen.}, unknown: {desc: 'Je bent iets aan het doen, maar het spel
-weet niet wat.', name: Onbekend}}}
+jacht}, invasiveSpeciesHunting: {name: Jacht op invasieve soorten, desc: Het moeras
+zit vol met wormachtige wezens die niet inheems zijn in deze habitat. Je zoekt zorgvuldig
+naar sporen van hen en elimineert alles wat je kunt vinden.}, lizardHunting: {name: Hagedissenjacht,
+desc: 'Je zoekt naar aanwijzingen voor de aanwezigheid van de vele hagedissoorten
+die in de omgeving leven. Het jagen op deze dieren is niet gevaarlijk, maar wel erg
+vervelend.'}}, jarvonia: {bearHunting: {name: Beerjacht, desc: Grote krassen van klauwen
+op bomen geven aan dat je op het juiste spoor bent om beren in de omgeving te vinden.
+Je zintuigen zijn scherp en je lichaam is klaar om er een op te jagen.}, deerHunting: {
+name: Hertenjacht, desc: 'Je zoekt in het bos naar herten-keutels, een duidelijk teken
+dat er herten in de omgeving te vinden zijn. Je pijl en boog liggen klaar om er een
+neer te schieten.'}, wolfHunting: {name: Wolfjacht, desc: 'Je volgt grote pootafdrukken
+in de grond op zoek naar de wijdverspreide bos jager, de wolf. Je pijl en boog staan
+klaar om er een af te schieten.'}, rabbitTracking: {name: Konijnen volgen, desc: 'Je
+let op de aangevreten planten, gebroken takjes en konijnenpoot-afdrukken in de grond
+terwijl je op zoek bent naar de beestjes.'}}, syrenthia: {driftNetHunting: {name: Drijfnetjacht,
+desc: 'Je ontwart het enorme net voordat je het in het water uitzet. Als de zeegoden
+je gunstig gezind zijn, kun je er honderden vissen en andere waterdieren mee vangen.'}},
+global: {crabTracking: {name: Krabben jacht, desc: 'Als je over het strand loopt,
+zoek je naar sporen van krabben in de buurt. Ze laten specifieke afdrukken achter
+in het zand, maar helaas worden die vaak weggespoeld door de getijden.'}, birdhouseTrappingBeginner: {
+name: Vogelhuisjes vallen zetten (Beginner), desc: 'Je hebt een vogelhuisje geplaatst
+dat is uitgerust met een val, waardoor de vogel het vogelhuisje wel kan binnenkomen,
+maar niet meer kan verlaten.'}, birdhouseTrappingIntermediate: {name: Vogelhuisjes
+vallen zetten (Gemiddeld), desc: Je legt aas in het vogelhuisje dat klaar is om te
+worden geplaatst voor het vangen van verschillende vogelsoorten. Daarna bevestig je
+het vogelhuisje aan een boom. Het zal zeker de gevleugelde wezens aantrekken.}, boxTrapping: {
+name: Kistvallen jacht, desc: 'Je zet een eenvoudig vangstmechanisme op met behulp
+van een aas dat onder een houten kistje wordt geplaatst, dat op een takje rust. Wanneer
+een dier achter het aas aangaat, beweegt het dier het takje, waardoor het in het kistje
+gevangen raakt.'}}}, idle: {name: Stilstaan, desc: Je bent niks aan het doen. Je stappen
+gaan naar je Bewaarde Stappen.}, unknown: {desc: 'Je bent iets aan het doen, maar
+het spel weet niet wat.', name: Onbekend}, tailoring: {jarvonia: {sailRepairBeginner: {
+desc: 'Met een stevige naald en draad naai je voorzichtig meerdere stukken stof aan
+elkaar om de zeilen van de boot te repareren. Ze zullen niet zo goed als nieuw zijn,
+maar gaan zeker nog een tijdje mee.', name: Zeilen repareren (Beginner)}}, gdte: {
+sailRepairIntermediate: {desc: 'Het grote zeil heeft een aantal zware stormen doorstaan
+en zit vol gaten. Je werkt snel en nauwkeurig om de gaten te dichten, waardoor het
+zeil er weer bijna als nieuw uitziet.', name: Zeilen repareren (gemiddeld)}}}, misc: {
+emergencySwimEscape: {desc: 'Je bent je duik uitrusting kwijtgeraakt en je luchtvoorraad
+raakt op. Je moet zo snel mogelijk naar de kust zwemmen, maar zonder in paniek te
+raken. Je weet dat als je te snel opstijgt, je decompressieziekte kunt krijgen.',
+name: Nood zwemvlucht}, gdte: {swampEmergencyDarkEscape: {name: Noodontsnapping in
+het donker (Moeras), desc: Je bent je lichtbron kwijtgeraakt en moet nu je weg uit
+de duisternis zien te vinden. Je moet voorzichtig zijn en gevaarlijke wezens vermijden
+die in de schaduwen op de loer liggen.}, swampEmergencySwimEscape: {desc: 'Je bent
+je duikuitrusting kwijtgeraakt en je luchtvoorraad raakt op. Je moet zo snel mogelijk
+naar de kust zwemmen, maar zonder in paniek te raken. Je weet dat als je te snel opstijgt,
+je decompressieziekte kunt krijgen.', name: Nood zwemvlucht (Moeras)}, ventureIntoTheBog: {
+name: Waag je in het moeras, desc: 'Je waagt je in de sombere mist buiten Grootviddig,
+op zoek naar de herkenningspunten die je hebt gezien toen je de vleermuizen volgde,
+om in het moeras te komen.'}, ventureIntoTheWoods: {desc: 'Je waagt je in de sombere
+mist buiten Salsfirth, waar een dicht netwerk van gebladerte je de weg naar het bos
+verspert.', name: Waag je het bos in}, ventureIntoTheHideout: {name: Waag je in de
+schuilplaats, desc: 'Je waagt je in de sombere mist buiten Zwartspreuk Haven, waar
+dikke wortels en zelfs bomen door het moeras je de weg naar de schuilplaats versperren.'},
+runForYourLife: {name: Ren voor je leven, desc: 'Je voelt je claustrofobisch terwijl
+de duisternis je omringt en je het gevoel hebt dat je in de gaten wordt gehouden.
+Je begint te rennen voor je leven, zonder enig gevoel voor richting.'}}}, trinketry: {
+gdte: {antiqueMarketAssessor: {name: Antiekmarkttaxateur, desc: De antiekmarkt in
+Zwartspreuk Haven is druk en het kost tijd om kopers en verkopers voor verschillende
+goederen te vinden. Af en toe vind je een winstgevende transactie met een edelsteen
+of een zeldzaam voorwerp.}}}}}

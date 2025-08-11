@@ -253,11 +253,11 @@ plurals:
         many: '-'
       playersDoingActivity:
         zero: '-'
-        one: <c>{}</c> Spieler führen eine Aktivität aus
-        two: <c>{}</c> Spieler führen eine Aktivität aus
+        one: <c>{}</c> Spieler führen diese Aktivität aus
+        two: <c>{}</c> Spieler führen diese Aktivität aus
         few: '-'
         many: '-'
-        other: <c>{}</c> Spieler führen eine Aktivität aus
+        other: <c>{}</c> Spieler führen diese Aktivität aus
 singulars:
   achievements:
     info:
@@ -853,28 +853,28 @@ singulars:
       unequipGear: Ausrüstung ablegen
       unequipTools: Werkzeuge ablegen
       noItemSelected: Kein Gegenstand ausgewählt
-      newSetDefaultName: Mein neues Ausrüstungs-Sets
-      importedGearSetDefaultName: Importiertes Ausrüstungs-Sets
+      newSetDefaultName: Mein neues Ausrüstungs-Set
+      importedGearSetDefaultName: Importiertes Ausrüstungs-Set
     info:
-      gearSetsDescription: Ausrüstungssets helfen dir, schnell zwischen verschiedenen
+      gearSetsDescription: Ausrüstungs-Sets helfen dir, schnell zwischen verschiedenen
         Ausrüstungen zu wechseln.
-      noGearSetsManage: Du hast noch keine Ausrüstungssets erstellt. Erstelle dein
+      noGearSetsManage: Du hast noch keine Ausrüstungs-Sets erstellt. Erstelle dein
         erstes, indem du auf den <c i=0>Neues erstellen</c> Button unten drückst.
-      noGearSetsList: Du hast noch keine Ausrüstungssets. Wähle <c i=0>Verwalten</c>,
-        um neue Ausrüstungssets zu erstellen oder zu importieren.
+      noGearSetsList: Du hast noch keine Ausrüstungs-Sets. Wähle <c i=0>Verwalten</c>,
+        um neue Ausrüstungs-Sets zu erstellen oder zu importieren.
       youDontHaveAnyItems: Keine Gegenstände. Entweder kennst du keine oder hast keine
         Gegenstände dieses Typs, oder deine Filter und die Suche haben keine passenden
         Ergebnisse geliefert.
-      gearSetManageDesc: Wähle von unten ein Ausrüstungsset aus, das du ausrüsten
-        möchtest. Um deine Ausrüstungssets zu erstellen, zu importieren oder zu bearbeiten,
+      gearSetManageDesc: Wähle von unten ein Ausrüstungs-Set aus, das du ausrüsten
+        möchtest. Um deine Ausrüstungs-Sets zu erstellen, zu importieren oder zu bearbeiten,
         kannst du auf <c i=0>Verwalten</c> drücken.
-      gearSetsListDesc: Hier kannst du deine Ausrüstungssets verwalten. Wenn du ein
+      gearSetsListDesc: Hier kannst du deine Ausrüstungs-Sets verwalten. Wenn du ein
         <c i=0>neues erstellen</c> möchtest, klicke auf den Button unten. Du kannst
         auch deine <c i=1>aktuell ausgestattete Ausrüstung kopieren</c>, wenn du ein
-        neues Ausrüstungsset erstellst.
+        neues Ausrüstungs-Set erstellst.
     errors:
-      keywordError: 'Ausrüstungs-Sets hat bereits: <object id="{keyword}" />'
-      duplicateItem: Der Gegenstand existiert bereits im Ausrüstungsset
+      keywordError: 'Ausrüstungs-Set hat bereits: <object id="{keyword}" />'
+      duplicateItem: Der Gegenstand existiert bereits im Ausrüstungs-Set
   locales:
     phrases:
       helpToTranslate: WalkScape wird von der <c>Community übersetzt</c>. Hilf uns
@@ -892,30 +892,30 @@ singulars:
   queue:
     options:
       switchGearSet:
-        desc: Zu einem ausgewählten Ausrüstungsset wechseln, bevor die Aktion gestartet
+        desc: Zu einem ausgewählten Ausrüstungs-Set wechseln, bevor die Aktion gestartet
           wird.
-        text: Zum Ausrüstungsset wechseln
+        text: Zum Ausrüstungs-Set wechseln
       depositUnlockedItems:
         text: Nicht gesperrte Gegenstände einlagern
         desc: Lagert alle nicht gesperrten Gegenstände aus deinem Inventar in der
           Bank ein, sofern an einem der durchlaufenen Orte eine verfügbar ist.
       withdrawGearSet:
-        text: Ausrüstungsset entnehmen
-        desc: Entnimmt ein Ausrüstungsset aus der Bank, sofern an einem der durchlaufenen
+        text: Ausrüstungs-Set entnehmen
+        desc: Entnimmt ein Ausrüstungs-Set aus der Bank, sofern an einem der durchlaufenen
           Orte eine verfügbar ist.
       removeFromQueue:
         text: Aus der Warteschlange entfernen
         desc: Entfernt diese Aktion und alle folgenden Aktionen aus der Warteschlange.
       cancelGearSetSwitch:
-        text: Ausrüstungswechsel abbrechen
-        desc: Bricht den gewählten Ausrüstungswechsel für diese Aktion ab.
+        text: Wechsel des Ausrüstungs-Set abbrechen
+        desc: Bricht den gewählten Wechsel des Ausrüstungs-Set für diese Aktion ab.
     phrases:
-      switchingToGearSet: Zum Ausrüstungsset <c>{name}</c> wechseln
+      switchingToGearSet: Zum Ausrüstungs-Set <c>{name}</c> wechseln
       queue: Warteschlange
       queuedActions: Vorgemerkte Aktionen
       travelingTo: Von <object id="{from}"/> nach <object id="{to}"/>
       untilInventoryFull: Ausführen, bis das Inventar voll ist
-      noGearSetFound: Ausgewähltes Ausrüstungsset nicht gefunden, hast du es gelöscht
+      noGearSetFound: Ausgewähltes Ausrüstungs-Set nicht gefunden, hast du es gelöscht
         ?
       activityInLocation: <object id="{activity}"/> in <object id="{location}"/>
       noPathFound: Kein Weg zum Ziel gefunden.
@@ -948,8 +948,8 @@ singulars:
   whileAway:
     phrases:
       whileYouWereAway: Während du weg warst …
-      switchedToGearSet: Zum Ausrüstungsset <c>{name}</c> gewechselt
-      gearSetDoesNotExist: Das Ausrüstungsset existiert nicht mehr
+      switchedToGearSet: Zum Ausrüstungs-Set <c>{name}</c> gewechselt
+      gearSetDoesNotExist: Das Ausrüstungs-Set existiert nicht mehr
       consumablesUsed: Verbrauchsgegenstand verwendet
       actionsCompleted: Aktionen abgeschlossen
       none: Keine

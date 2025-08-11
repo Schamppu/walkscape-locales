@@ -84,7 +84,7 @@ allemaal normaal zijn, noService: Voorzieningsvereisten niet voldaan, noMaterial
 om iets te maken ontbreken, skillRequirementsNotMet: Vaardigheidsvereisten niet voldaan}},
 'inventory': {'info': {'noItemEquipped': "Geen voorwerp aan het dragen. \\n\\n Je
 kunt een voorwerp dragen door er een te selecteren in de onderstaande lijst en op
-\"Dragen\" te drukken.", 'noItemSelected': "Geen voorwerp geselecteerd. \\n\\ n Selecteer
+\"Dragen\" te drukken.", 'noItemSelected': "Geen voorwerp geselecteerd. \\n\\n Selecteer
 hieronder een voorwerp om het te vergelijken met het huidige voorwerp en het te dragen.",
 noItemsFound: Geen voorwerpen in je inventaris gevonden die in dit vak passen.}, phrases: {
 areYouSureToDrop: Weet je zeker dat je voorwerpen weg wilt gooien? Deze voorwerpen
@@ -111,22 +111,23 @@ lang ingedrukt houden selecteerd alle soortgelijke stapels., dropItems: Voorwerp
 weggooien?, slots: 'Ruimte <c>{slots}</c>'}, options: {expandInventory: Inventaris
 uitklappen, showConsumables: Verbruiksartikelen weergeven, consenseInventory: Inventaris
 inklappen, showMaterials: Materialen weergeven, showGear: Uitrusting weergeven}},
-'pfpCreation': {'buttons': {'choose': 'Kiezen', 'hideHat': 'Hoofddeksels verbergen',
-'randomize': 'Willekeurig', 'showHat': 'Hoofddeksels tonen', enableBackAccessorie: Rugaccessoire
+'pfpCreation': {'buttons': {'choose': 'Kiezen', 'hideHat': 'Hoofddeksels activeren',
+'randomize': 'Willekeurig', 'showHat': 'Hoofddeksels activeren', enableBackAccessorie: Rugaccessoire
 inschakelen, enableFacepaint: Schmink inschakelen, enableDynamicBackground: Dynamische
-achtergrond inschakelen, enableFaceAccessorie: Gezichtsaccessoire inschakelen}, 'phrases': {
-'currentSelection': 'Huidige selectie', mainOptions: Basisopties, extras: Extra's,
-dynamicBackground: Dynamische achtergrond verandert je achtergrondafbeelding gebaseerd
-op de locatie van je personage., defaultExpression: Standaard uitdrukking, variants: Varianten,
-noVariantSelected: Geen variant geselecteerd, resetToDefault: Naar standaard terugzetten,
-colorOptions: Kleuropties, race: Ras, selectedVariant: 'Variant {index} geselecteerd',
-homeRegion: Thuisregio}}, activity: {phrases: {notAffectingTraveling: (geen invloed
-op reisefficiëntie), workEfficiencyPenalty: '<icon i="Work efficiency"/>Globale werkefficiëntie
-<c>-{penalty}%</c>', inventoryIsOverLimit: Inventaris is over het limiet!, noActivity: Geen
-activiteit, savedSteps: Bewaarde stappen, consumables: Verbruiksartikelen, stopWhenOverEncumbered: Stop
-wanneer overbelast, options: Opties, requirements: Vereisten, rewards: Beloningen,
-levelActivity: 'Level <c>{level}</c> <object id="{skill}"/> activiteit', startActivity: Activiteit
-starten, queueActivity: Activiteit in wachtrij zetten, travelAndStartActivity: Reis
+achtergrond inschakelen, enableFaceAccessorie: Gezichtsaccessoire inschakelen, enableFaceAccessory: Gezichtsaccessoire
+inschakelen, enableBackAccessory: Rugaccessoire inschakelen, enableEyeAccessory: Oogaccessoire
+inschakelen}, 'phrases': {'currentSelection': 'Huidige selectie', mainOptions: Basisopties,
+extras: Extra's, dynamicBackground: Dynamische achtergrond verandert je achtergrondafbeelding
+gebaseerd op de locatie van je personage., defaultExpression: Standaard uitdrukking,
+variants: Varianten, noVariantSelected: Geen variant geselecteerd, resetToDefault: Naar
+standaard terugzetten, colorOptions: Kleuropties, race: Ras, selectedVariant: 'Variant
+{index} geselecteerd', homeRegion: Thuisregio, variant: 'Variant {number}'}}, activity: {
+phrases: {notAffectingTraveling: (geen invloed op reisefficiëntie), workEfficiencyPenalty: '<icon
+i="Work efficiency"/>Globale werkefficiëntie <c>-{penalty}%</c>', inventoryIsOverLimit: Inventaris
+is over het limiet!, noActivity: Geen activiteit, savedSteps: Bewaarde stappen, consumables: Verbruiksartikelen,
+stopWhenOverEncumbered: Stop wanneer overbelast, options: Opties, requirements: Vereisten,
+rewards: Beloningen, levelActivity: 'Level <c>{level}</c> <object id="{skill}"/> activiteit',
+startActivity: Activiteit starten, queueActivity: Activiteit in wachtrij zetten, travelAndStartActivity: Reis
 en activiteit starten, cantStartActivity: Kan activiteit niet starten, requirementsNotMet: Vereisten
 niet voldaan, noActivitiesInLocation: 'Er zijn geen activiteiten in <object id="{location}"/>.',
 locationIsUnknown: 'Locatie is onbekend. Zodra je deze locatie verkend hebt, kun je
@@ -170,11 +171,14 @@ Je zal de voortgang en beloningen van dit klusje kwijtraken.}}}, gear: {phrases:
 skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen gevechtsmodificatoren
 door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators door gedragen
 voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
-modificatoren, combatModifiers: Gevechtsmodificatoren}}, tools: {phrases: {emptyToolSlot: Leeg
+modificatoren, combatModifiers: Gevechtsmodificatoren, noItemEquipped: Geen voorwerp
+uitgerust, noItemSelected: Geen voorwerp geselecteerd}}, tools: {phrases: {emptyToolSlot: Leeg
 gereedschapsvak, lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau
 {level}</c>.', noToolEquipped: Geen gereedschap gedragen in dit vak.}}, bank: {phrases: {
 noItemsInventory: Geen voorwerpen in je inventaris., noItemsBank: Geen voorwerpen
-in je bank., withdraw: Opnemen, deposit: Storten}}, trade: {phrases: {trade: ACCEPTEREN,
+in je bank., withdraw: Opnemen, deposit: Storten, youAreNotAtABank: <c>Je bevindt
+zich niet op een locatie waar een bank is</c>. Je kunt alleen gebruikmaken van de
+bank als je naar een locatie reist waar een bank is.}}, trade: {phrases: {trade: ACCEPTEREN,
 restockIn: 'Nieuwe voorraad over: ', buying: '{amount} kopen', selling: '{amount}
 verkopen', total: Totaal}}, characterCreation: {phrases: {bodyType: Lichaamstype,
 race: Ras, chooseABodyType: Kies een lichaamstype, bodyTypeA: A, characterName: Naam
@@ -182,12 +186,12 @@ personage, bodyTypeB: B}, info: {rememberSwipe: Vergeet niet dat je terug kunt s
 om gekozen opties te veranderen op elk moment tijdens het aanmaken van het personage.}},
 settings: {categories: {accessibility: {title: Toegankelijkheid, leftHandedMode: Linkshandigenmodus},
 account: {title: Account, visibility: Zichtbaarheid van profiel}, character: {title: Personage,
-anonOnLeaderboard: Anonimiseren op klassement, hideSteps: Stappen verbergen}, gameplay: {
-title: Gameplay, stopWhenOverEncumberedDefault: Standaard stoppen wanneer overbelast},
-closedBeta: {title: Gesloten Beta, clearStepsGraph: Stappengrafiek leegmaken, useThisToClear: Gebruik
-dit als je je stappengrafiek wilt resetten. Handig voor als je stappen hebt verkregen
-door een bug en een reset in de grafiek wilt.}, notifications: {title: Notificaties,
-stepCountInterval: Notificatie-interval, stepCountNotifications: Stappenteller-notificaties,
+anonOnLeaderboard: Anonimiseren op klassement, hideSteps: Stappen verbergen, exportData: Exporteer
+personage data naar het klembord}, gameplay: {title: Gameplay, stopWhenOverEncumberedDefault: Standaard
+stoppen wanneer overbelast}, closedBeta: {title: Gesloten Beta, clearStepsGraph: Stappengrafiek
+leegmaken, useThisToClear: Gebruik dit als je je stappengrafiek wilt resetten. Handig
+voor als je stappen hebt verkregen door een bug en een reset in de grafiek wilt.},
+notifications: {title: Notificaties, stepCountInterval: Notificatie-interval, stepCountNotifications: Stappenteller-notificaties,
 notificationType: Notificatietype}, language: {title: Taal}, locales: {chooseALanguageInfo: Druk
 op de knop hierboven om het taal selectie menu te openen., changeLanguage: Taal wijzigen,
 title: Taal}, dataSource: {otherSource: Andere bron, lastSync: 'laatst bijgewerkt:
@@ -206,31 +210,38 @@ van de stappen en hun verschillen., connectionInfoIos: 'Als er geen wearables we
 worden in de bovenstaande lijst, controleer dan of je de app toestemming hebt gegeven
 om de stappendata te mogen gebruiken van Apple Gezondheid onder: <c>Instellingen ➤
 Privacy & Beveiliging ➤ Gezondheid ➤ (onder Apps) WalkScape</c> en dat Apple Gezondheid
-stappen heeft geregistreerd op deze apparaten in de afgelopen 7 dagen.'}}, location: {
-phrases: {activities: Activiteiten, services: Voorzieningen, buildings: Gebouwen,
-noActivites: Geen activiteiten beschikbaar op deze locatie., factions: Facties, routes: Routes,
-tapToShowRoutes: Tik aan om routes weer te geven, jobBoard: Prikbord, jobs: Klusjes}},
-worldMap: {phrases: {activities: Activiteiten, services: Voorzieningen, buildings: Gebouwen,
-pointsOfInterest: Bezienswaardigheden, information: Informatie, routeFromTo: '<location
-i="{fromID}"/> naar <location i="{toID}"/>', route: Route, currentLocation: Huidige
-locatie, afterExploring: 'Na het verkennen van de locatie, zul je de bezienswaardigheden
-van deze locatie kunnen zien.', routeRequirementsNotMet: 'Routes in je geselecteerde
-pad hebben vereisten waar niet aan wordt voldaan:', youHaveNotExplored: Je hebt deze
-locatie nog niet verkend. Je zult informatie over deze locatie zien nadat je er een
-keer bent geweest., noActivities: Er zijn geen activiteiten beschikbaar op deze locatie.,
-youreHere: Je bent momenteel op deze locatie., changeRouteWarning: Wijzigen van je
-route zal je huidige reis annuleren en ga je terug naar je vorige locatie. Weet je
-het zeker?}}, stats: {phrases: {stats: Statistieken, totalSkillXp: Totale vaardigheids-XP,
-totalSteps: Totaal aantal stappen, highestStepsIn24Hours: Meeste stappen in 24u},
-info: {stats: Een overzicht van statistieken over elke stap die je hebt genomen door
-de wereld van Arenum., chartWarning: {title: Onnauwkeurigheden in grafieken, description: 'Verschillende
-spelers hebben problemen gemeld met onnauwkeurige stappengrafieken, veroorzaakt door
-grote wijzigingen achter de schermen in een eerdere update. Als je problemen ondervindt
-waarbij de grafieken significant afwijkende waarden weergeven dan andere bronnen,
-is dit waarschijnlijk de reden. De spellogica zelf zou nog steeds moeten werken zoals
-voorheen en de grafiekproblemen zullen in toekomstige updates worden opgelost.'}}},
-tutorial: {phrases: {noMoreMessages: Geen tutorial-berichten meer, youWillGain: Je
-ontvangt het volgende als je deze optie selecteert.}}, leaderboards: {phrases: {show: Weergeven,
+stappen heeft geregistreerd op deze apparaten in de afgelopen 7 dagen.', gameVersion: 'Spelversie
+{versie}'}}, location: {phrases: {activities: Activiteiten, services: Voorzieningen,
+buildings: Gebouwen, noActivites: Geen activiteiten beschikbaar op deze locatie.,
+factions: Facties, routes: Routes, tapToShowRoutes: Tik aan om routes weer te geven,
+jobBoard: Prikbord, jobs: Klusjes, owner: Eigenaar, showingRoutesFrom: 'Reisbestemming
+vanuit <object id="{from}"/>.', noRoutesFromLocation: 'Geen reisbestemmingen vanuit
+<object id="{from}"/>.'}}, worldMap: {phrases: {activities: Activiteiten, services: Voorzieningen,
+buildings: Gebouwen, pointsOfInterest: Bezienswaardigheden, information: Informatie,
+routeFromTo: '<location i="{fromID}"/> naar <location i="{toID}"/>', route: Route,
+currentLocation: Huidige locatie, afterExploring: 'Na het verkennen van de locatie,
+zul je de bezienswaardigheden van deze locatie kunnen zien.', routeRequirementsNotMet: 'Routes
+in je geselecteerde pad hebben vereisten waar niet aan wordt voldaan:', youHaveNotExplored: Je
+hebt deze locatie nog niet verkend. Je zult informatie over deze locatie zien nadat
+je er een keer bent geweest., noActivities: Er zijn geen activiteiten beschikbaar
+op deze locatie., youreHere: Je bent momenteel op deze locatie., changeRouteWarning: Wijzigen
+van je route zal je huidige reis annuleren en ga je terug naar je vorige locatie.
+Weet je het zeker?, youAreInspectingFromMap: 'U bent bezig met <c>het bekijken van
+de wereldkaart</c>. Om te gebruiken, moet u zich op de locatie zelf bevinden en dit
+vanuit het hoofdscherm openen.'}}, stats: {phrases: {stats: Statistieken, totalSkillXp: Totale
+vaardigheids-XP, totalSteps: Totaal aantal stappen, highestStepsIn24Hours: Meeste
+stappen in 24u, recordedFrom: 'Opgenomen van <c>{van}</c> tot <c>{tot}</c>.', lastUpdated: 'Laatst
+bijgewerkt op: <c>{GeupdatedOp}</c>.', reputation: Reputatie}, info: {stats: Een overzicht
+van statistieken over elke stap die je hebt genomen door de wereld van Arenum., chartWarning: {
+title: Onnauwkeurigheden in grafieken, description: 'Verschillende spelers hebben
+problemen gemeld met onnauwkeurige stappengrafieken, veroorzaakt door grote wijzigingen
+achter de schermen in een eerdere update. Als je problemen ondervindt waarbij de grafieken
+significant afwijkende waarden weergeven dan andere bronnen, is dit waarschijnlijk
+de reden. De spellogica zelf zou nog steeds moeten werken zoals voorheen en de grafiekproblemen
+zullen in toekomstige updates worden opgelost.'}, reputation: Reputatie is een maatstaf
+voor hoe bekend je bent in de verschillende facties van WalkScape.}}, tutorial: {
+phrases: {noMoreMessages: Geen tutorial-berichten meer, youWillGain: Je ontvangt het
+volgende als je deze optie selecteert.}}, leaderboards: {phrases: {show: Weergeven,
 everyone: Iedereen, friends: Vrienden, leaderboards: Klassementen, first: Eerste,
 me: Ik, last: Laatste, loadingPage: Pagina laden..., totalSteps: Totaal aantal stappen,
 totalLevel: Totaalniveau, totalExperience: Totale ervaring, achievementPoints: Prestatiepunten}},
@@ -249,33 +260,34 @@ laden... Een ogenblik geduld a.u.b.!, logIn: Inloggen, register: Registreren, we
 bij WalkScape, <hl>vreemdeling</hl>. Log a.u.b. in.', pleaseEnterCredentials: Voer
 a.u.b. je WalkScape accountgegevens in., email: E-mail / Gebruikersnaam, password: Wachtwoord,
 noBetaAccess: Geen beta-toegang., googlePlay: Update vanuit Google Play, accountPage: Account-pagina,
-support: Steun het spel}, loadingStates: {localizationFiles: Localisatiebestanden
-aan het laden, initializingDatabases: Databases aan het initialiseren, readingCloudData: Cloudgegevens
-aan het lezen, cleaningUpData: Gegevens aan het opruimen, initializingObjects: Spelobjecten
-aan het initialiseren, initializingProviders: Providers aan het initialiseren, loadingComplete: Laden
-afgerond!, readingLocalGameData: Lokale spelgegevens aan het lezen, initializingPlayer: Spelergegevens
-aan het initialiseren, startingGameLoad: Aan het beginnen met het ophalen van spelgegevens,
-validatingGame: Spelgegevens uit de server aan het valideren, gameVersion: Spelversie
-aan het ophalen, checkingLocalizations: Localisaties uit de server aan het controleren,
-loadingCharactersFromCloud: Personages uit de cloud aan het laden, dataLoadingComplete: Gegevens
-laden afgerond!}}, character: {phrases: {checkOutSubject: Check mijn voortgang in
-WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen van de laatste 7 dagen,
-checkOut: 'Hier is mijn WalkScape personage {name}. Moet je kijken!\nhttps://walkscape.app',
-totalLevel: Totaalniveau, savePicture: Afbeelding opslaan, level: 'Personage-niveau:
-<c>{level}</c>', stepsToNextLevel: 'Stappen tot volgend niveau <c>{steps}</c>'}, info: {
-skillBreakdown: Hier is het complete overzicht van alle vaardigheden die je personage
-beoefend heeft tijdens zijn/haar reis. Druk op een van de vaardigheden voor meer gedetailleerde
-informatie en wat ze ontgrendelen., eachLevelIncreasesStepBank: 'Elk personage-niveau
-na niveau <c>{level}</c> verhoogt het maximale aantal bewaarde stappen met <c>{amount}</c>.'}},
-permissions: {phrases: {pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om
-het spel te laten functioneren, hebben we toestemming nodig om de gegevens van de
-stappenteller op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan
-met het spel.', exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je
-moet toestemming geven voor de volgende permissies om verder te gaan met het spel.
-Druk op de permissie om toestemming te geven., noDeviceFound: Geen device gevonden.
-Controleer a.u.b. of je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt
-en toestemming hebt gegeven om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We
-hebben deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
+support: Steun het spel, testFlight: Je kunt de nieuwste versie downloaden via <c>TestFlight</c>.},
+loadingStates: {localizationFiles: Localisatiebestanden aan het laden, initializingDatabases: Databases
+aan het initialiseren, readingCloudData: Cloudgegevens aan het lezen, cleaningUpData: Gegevens
+aan het opruimen, initializingObjects: Spelobjecten aan het initialiseren, initializingProviders: Providers
+aan het initialiseren, loadingComplete: Laden afgerond!, readingLocalGameData: Lokale
+spelgegevens aan het lezen, initializingPlayer: Spelergegevens aan het initialiseren,
+startingGameLoad: Aan het beginnen met het ophalen van spelgegevens, validatingGame: Spelgegevens
+uit de server aan het valideren, gameVersion: Spelversie aan het ophalen, checkingLocalizations: Localisaties
+uit de server aan het controleren, loadingCharactersFromCloud: Personages uit de cloud
+aan het laden, dataLoadingComplete: Gegevens laden afgerond!}}, character: {phrases: {
+checkOutSubject: Check mijn voortgang in WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen
+van de laatste 7 dagen, checkOut: 'Hier is mijn WalkScape personage {name}. Moet je
+kijken!\nhttps://walkscape.app', totalLevel: Totaalniveau, savePicture: Afbeelding
+opslaan, level: 'Personage-niveau: <c>{level}</c>', stepsToNextLevel: 'Stappen tot
+volgend niveau <c>{steps}</c>'}, info: {skillBreakdown: Hier is het complete overzicht
+van alle vaardigheden die je personage beoefend heeft tijdens zijn/haar reis. Druk
+op een van de vaardigheden voor meer gedetailleerde informatie en wat ze ontgrendelen.,
+eachLevelIncreasesStepBank: 'Elk personage-niveau na niveau <c>{level}</c> verhoogt
+het maximale aantal bewaarde stappen met <c>{amount}</c>.'}}, permissions: {phrases: {
+pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om het spel
+te laten functioneren, hebben we toestemming nodig om de gegevens van de stappenteller
+op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan met het spel.',
+exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je moet toestemming
+geven voor de volgende permissies om verder te gaan met het spel. Druk op de permissie
+om toestemming te geven., noDeviceFound: Geen device gevonden. Controleer a.u.b. of
+je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt en toestemming hebt gegeven
+om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We hebben
+deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
 connectAppleHealth: Verbinden met Apple Health, connect: Verbinden, connectAppleHealthExplanation: 'Je
 moet verbinding maken met Apple Health zodat we stappen kunnen inlezen die gesynchroniseerd
 zijn door je horloge, en om te zien met welke devices je bent verbonden. Als dit de
@@ -335,17 +347,19 @@ activiteiten geselecteerd, forActivities: 'Voor activiteiten: ', sortBy: 'Sorter
 op: ', toolSlot: Gereedschapsvak, default: Standaard, showAttributes: Attributen weergeven,
 tools: Gereedschappen, name: Naam, unequipGear: Uitrusting uit doen, unequipTools: Gereedschap
 wegleggen, noItemSelected: Geen items geselecteerd, gear: Uitrusting, level: 'Niv. '},
-errors: {duplicateItem: Deze uitrustingssets bevat dit item al., keywordError: 'Deze
+errors: {duplicateItem: Deze uitrustingssets bevat dit item al, keywordError: 'Deze
 uitrustingssets bevat al een: <object id="{keyword}" />'}, info: {gearSetsDescription: Uitrustingssets
 helpen je om snel te kunnen wisselen tussen verschillende uitrustingen., gearSetManageDesc: 'Kies
 hieronder een uitrustingsset die je aan wilt trekken. Om sets aan te passen, te importeren
 of bewerken kan je op <c i=0>Beheren</c> drukken.', gearSetsListDesc: 'Hier kan je
-je uitrustingssets beheren. Als je een <c i=0>nieuwe uitrustingsset</c> wilt maken,
+jouw uitrustingssets beheren. Als je een <c i=0>nieuwe uitrustingsset</c> wilt maken,
 druk dan op de knop hieronder. Je kan ook je <c i=1>huidige geactiveerde uitrustingsset
 kopiëren</c> wanneer je een nieuwe set gaat maken.', noGearSetsManage: Je hebt nog
 geen uitrustingssets gemaakt. Maak je eerste set door op <c i=0>Nieuwe set maken<c/>
 te drukken., noGearSetsList: Je hebt nog geen uitrustingssets. Kies <c i=0>Beheren</c>
-om een nieuwe set te creëren of importeren.}}, queue: {phrases: {switchingToGearSet: 'Wisselen
+om een nieuwe set te creëren of importeren., youDontHaveAnyItems: 'Geen voorwerpen.
+Je kent geen voorwerpen van dit type of je hebt er geen, of je filters en zoekopdracht
+hebben geen resultaten opgeleverd die hieraan voldoen.'}}, queue: {phrases: {switchingToGearSet: 'Wisselen
 naar uitrustingsset <c>{name}</c>', activityInLocation: '<object id="{activity}"/>
 in <object id="{location}"/>', queue: Wachtrij, queuedActions: Acties in wachtrij,
 travelingTo: '<object id="{from}"/> naar <object id="{to}"/>', untilInventoryFull: Tot
@@ -368,4 +382,6 @@ iets doen zodra je iets hebt gemaakt van een specifieke zeldzaamheid of al het m
 hebt gebruikt?}, activity: {onceInventoryIsFull: Wil je iets doen zodra je inventaris
 vol is?, onceAllActionsAreCompleted: Wil je iets doen zodra alle acties voltooid zijn?}}},
 whileAway: {phrases: {fromProc: 'Door <c>{proc}</c>', fromAttribute: 'Door attribuut
-{attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door <object id="{source}"/>'}}}}
+{attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door <object id="{source}"/>'}},
+rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde Walkpedia-artikelen, rumorsFromCharacter: 'Geruchten
+van <c>{characterName}</c>'}}}}

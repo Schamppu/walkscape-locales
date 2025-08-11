@@ -46,6 +46,9 @@ singulars:
       hydriliumPickaxe:
         name: Valmista hydriliumhakku
         desc: Valmista erittäin vankkarakenteinen hakku hydriliumista.
+        activityDesc: Kuumennat hydriliumharkkoa ahjossa pehmentääksesi sitä, ja muovaat
+          siitä huolellisesti hakun terän. Liität terän koralliseen varteen, ja teroitat
+          sen kärjen, saaden lopputulokseksi tehokkaan louhimistyökalun.
       stoneSickle:
         desc: Valmista hyvin simppeli sirppi, jolla on mahdollista kerätä kasveja
           hieman tehokkaammin.
@@ -73,8 +76,14 @@ singulars:
           tunteen palolla sirppiä.
       copperHatchet:
         name: Valmista kuparikirves
+        desc: Valmista kuparikirves, joka on täydellinen tehokkaaseen puunhakkuuseen.
+        activityDesc: Muovaat kuparia tarkkasilmäisesti teräväksi puunhakkuutyökaluksi,
+          ja valmistat kuparikirveen.
       bronzeHatchet:
         name: Valmista pronssikirves
+        desc: Valmista kestävä pronssikirves raskaan sarjan puunhakkuuseen.
+        activityDesc: Muovaat pronssia pikkutarkasti kestäväksi puunhakkuuvälineeksi,
+          ja valmistat pronssikirveen.
       ironHatchet:
         name: Valmista rautakirves
         activityDesc: Vasaroit rautaa taidokkaasti luotettavaksi puunhakkuutyökaluksi
@@ -113,11 +122,11 @@ singulars:
         desc: Verkoltaan hienojakoinen ja kestävistä materiaaleista valmistettu työkalu,
           jolla voi pyydystää meduusoja.
       hydriliumLogSplitter:
-        name: Valmista hydriliuminen tukinhalkaisija
-        activityDesc: Jokaisella vasaranlyönnilllä valat hydriliumia tukinhalkaisijaan,
+        name: Valmista hydriliuminen halkaisukirves
+        activityDesc: Jokaisella vasaranlyönnilllä valat hydriliumia halkaisukirveeseen,
           muuttaen sen valtavan voimakkaaksi työkaluksi. Metallin hehkuessa tunnet
           maan energian virtaavan suonissasi.
-        desc: Vahvista työkalua hydriliumilla, jolloin se voi heilauttaa helposti
+        desc: Vahvista halkaisukirvestä hydriliumilla, jolloin se voi heilauttaa helposti
           poikki mahtavimmatkin tukit.
       hydriliumMinersMagnet:
         name: Valmista hydriliuminen louhijan magneetti
@@ -145,6 +154,11 @@ singulars:
         activityDesc: Yhdistät levän ja tulivuoriperäisen kiven, ja valmistat hydriliumia.
       kelpRope:
         name: Valmista merileväköyttä
+        desc: Kestävä ja joustava nyöri, joka on valmistettu kieputtamalla yhteen
+          kuivattuja leväsäikeitä.
+        activityDesc: Puhdistat merileväsäikeet läpikotaisesti, ja varmistat ettei
+          niihin jää epäpuhtauksia. Kieputat säikeet varoen yhteen, ja valmistat vahvaa
+          ja kestävää köyttä, joka sopii erityisesti moneen käyttöön rannikkoalueella.
       hardenedKelp:
         name: Koveta merilevää
         activityDesc: Puhdistat tuoreen levän tarkasti ja poistat epäpuhtaudet. Lasket
@@ -159,12 +173,20 @@ singulars:
           mikä.
       elderhideRope:
         name: Valmista ikitaljaköysi
+        activityDesc: Letität ikitaljaa vakain käsin ja keskittyneesti, ja saat uskomattoman
+          vahvaa ja kestävää köyttä.
+        desc: Puno köyttä sitkeästä ikitaljasta saadaksesi riittävän vahva nyöri sitomaan
+          kaikista kurittomimmatkin rellestäjät.
       trash:
         name: Hyötylajittele roskia
+        desc: Tutki roskia, ja muunna ne hyötykäyttöön.
+        activityDesc: Avoimin mielin tutkit roskaa, ja löydät sille uusiokäyttöä.
     fishing:
       largeFishingNet:
         name: Puno suuri kalaverkko
         desc: Valmista suurehko kalaverkko köydestä.
+        activityDesc: Punot yhteen monta monituista solmua, paljon enemmän kuin pienemmissä
+          verkoissa. Vihdoin saat valmistettua suuren kalaverkon.
       basicFishingRod:
         name: Valmista simppeli onkivapa
         desc: Valmista simppeli onkivapa yhdistämällä lankkuja ja siimaa.
@@ -172,8 +194,14 @@ singulars:
           minkä jälkeen lisäät siiman ja toteat rakentaneesi simppelin onkivavan.
       pineFishingRod:
         name: Valmista mäntyonkivapa
+        activityDesc: Mäntypuu on pehmeää, ja työstyy reippaasti. Kun olet kiinnittänyt
+          kalastussiiman varteen, uusi onkivapasi on käyttövalmis.
+        desc: Valmista mäntyonkivapa lankuista ja siimasta.
       oakFishingRod:
         name: Valmista tammionkivapa
+        activityDesc: Tammipuu on tiheää ja periksiantamatonta. Varren valmistaminen
+          vie jonkin aikaa, mutta kärsivällisyytesi palkitaan kestävällä onkivavalla.
+        desc: Valmista tamminen onkivapa lankuista ja siimasta.
       willowFishingRod:
         name: Valmista onkivapa raidasta
         desc: Valmista onkivapa raidasta yhdistämällä lankkuja ja siimaa.
@@ -182,21 +210,42 @@ singulars:
       advancedFishingRod:
         name: Valmista edistynyt onkivapa
         desc: Valmista edistynyt kalastusvapa lankuista ja siimasta.
+        activityDesc: Työstettyäsi useita puulajeja huomaat vielä aiempaa paremman
+          vavan muotoilemisen olevan helppoa. Siiman lisääminen käy innostuneen sutjakkaasti,
+          ja edistynyt onkivapa on valmis.
       lobsterPot:
         name: Valmista hummerimerta
+        desc: Valmista hummerimerta lankuista ja metallitangoista
+        activityDesc: Tämä on sinulle aivan uusi käsite, mutta koet olevasi riittävän
+          kokenut yrittääksesi aivan uudenlaista rakennelmaa.
       fishingSpear:
         name: Valmista kalastuskeihäs
         activityDesc: Valitset sopivanmittaisen puun keihään varreksi ja muovaat sen
           käteen sopivaksi. Lisäät vielä teroitetun kärjen ja simppeli kalastuskeihäs
           on valmis. Keihäs voisi olla vielä tehokkaampi lisäämällä siiman keihään
           saamiseksi takaisin, ja vuolemalla teräviä väkäsiä varteen lähelle kärkeä.
+        desc: Kalastuskeihäs on työkalu vedenalaiseen kalastukseen, ja se valmistetaan
+          tukevasta varresta, terävästä kärjestä, ja joskus lisäominaisuuksista kuten
+          väkäsiä tai palautusta helpottava siima.
       coralFishingSpear:
         name: Valmista korallinen kalastuskeihäs
+        desc: Jykevä ja kestävä ase, joka on valmistettu korallista ja puusta ja suunniteltu
+          vedenalaiseen metsästykseen.
+        activityDesc: Valitset vahvan korallipalan ja muokkaat siitä terävän kärjen.
+          Kiinnität korallikärjen tukevaan puuvarteen, ja valmistat hirmuisen kalastuskeihään,
+          joka kykenee lävistämään vedenalaisia saaliseläimiä kuin vettä vain.
       smallFishingNet:
         name: Puno simppeli kalaverkko
         desc: Valmista simppeli kalaverkko muutamasta köydenpätkästä.
+        activityDesc: Punot monta pientä solmua varovasti yhdeksi kokonaisuudeksi,
+          ja luot pienen kalaverkon.
       elderhideFishingNet:
         name: Valmista ikitaljakalaverkko
+        desc: Puno verkko ikitaljan sitkeästä vuodasta, ja valmistaudu pyydystämään
+          jopa kaikkein hankalimpia kalansaaliita.
+        activityDesc: Punot ikitaljaa verkoksi kärsivällisesti ja tarkasti, varmistellen
+          joka solmulla lupausta runsaasta saaliista. Verkon erikoisominaisuudet mahdollistavat
+          kaikista vikkelimpien ja varovaisimpienkin kalojen narraamisen.
     diving:
       kelpDivingMask:
         name: Valmista leväsukellusmaski
@@ -272,34 +321,62 @@ singulars:
     copper:
       copperSword:
         name: Valmista kuparinen miekka
+        desc: Valmista kuparinen miekka kupariharkosta.
+        activityDesc: Valmistat kuparisen miekan kupariharkosta.
       copperShield:
         name: Valmista kuparinen kilpi
+        activityDesc: Valmistat kuparisen kilven kupariharkoista.
+        desc: Valmista kuparinen kilpi kupariharkoista.
     bronze:
       bronzeSword:
         name: Valmista pronssinen miekka
+        desc: Valmista pronssinen miekka pronssiharkosta.
+        activityDesc: Valmistat pronssisen miekan pronssiharkosta.
       bronzeShield:
         name: Valmista pronssinen kilpi
+        desc: Valmista pronssinen kilpi pronssiharkoista.
+        activityDesc: Valmistat pronssisen kilven pronssiharkoista.
     steel:
       steelSword:
         name: Valmista teräksinen miekka
+        activityDesc: Valmistat teräsmiekan teräsharkosta.
+        desc: Valmista teräksinen miekka teräsharkosta.
       steelShield:
         name: Valmista teräksinen kilpi
+        activityDesc: Valmistat teräksisen kilven teräsharkoista.
+        desc: Valmista teräksinen kilpi teräsharkoista.
     tarsilium:
       tarsiliumSword:
         name: Valmista tarsiliuminen miekka
+        activityDesc: Valmistat tarsiliumisen miekan tarsiliumharkosta.
+        desc: Tee tarsiliuminen miekka tarsiliumharkosta.
       tarsiliumShield:
         name: Valmista tarsiliuminen kilpi
+        desc: Valmista tarsiliuminen kilpi tarsiliumharkoista.
+        activityDesc: Valmistat tarsiliumisen kilven tarsiliumharkoista.
     farganite:
       farganiteSword:
         name: Valmista farganiittinen miekka
+        desc: Valmista farganiittinen miekka farganiittiharkosta.
+        activityDesc: Valmistat farganiittisen miekan farganiittiharkosta.
       farganiteShield:
         name: Valmista farganiittinen kilpi
         activityDesc: Valmistat farganiittikilven farganiittiharkoista.
+        desc: Valmista farganiittinen kilpi farganiittiharkoista.
+      gemShield:
+        name: Valmista jalokivikilpi
+        desc: Valmista jalokivikilpi kulta- ja farganiittiharkoista, hiotuin koristejalokivin.
+        activityDesc: Valmistat jalokivikilven farganiittiharkoista, reunustat sen
+          kullalla, ja upotat siihen huolellisesti jalokiviä.
     iron:
       ironShield:
         name: Valmista rautainen kilpi
+        desc: Valmista rautainen kilpi rautaharkoista.
+        activityDesc: Valmistat rautaisen kilven rautaharkoista.
       ironSword:
         name: Valmista rautainen miekka
+        activityDesc: Valmistat rautaisen miekan rautaharkosta.
+        desc: Valmista rautainen miekka rautaharkosta.
     other:
       tarsiliumToeBoots:
         name: Valmista tarsiliumvahvikkeiset saappaat
@@ -570,20 +647,146 @@ singulars:
           ympäröivästä värittömästä raakaopaalista. Tulen välähdykset irrotetussa
           opaalinpalassa palkitsevat tarkan työstösi.
         name: Muokkaa opaalia
+        desc: Leikkaa tuliopaali kivestä.
       shapeStarPearl:
         name: Muokkaa tähtihelmeä
+        desc: Leikkaa tähtihelmi esiin, ja tuo sen hienojakoinen sisäinen rakenne
+          näkyväksi.
+        activityDesc: Suunnittelet leikkaussärmäsi tarkkaan muokatessasi tähtihelmen
+          varovaisesti täydellisen pyöreäksi.
       shapeWrentmarine:
         name: Muokkaa wrentmariinia
+        activityDesc: Leikkaat wrentmariinin klassiseen kyynelen muotoon, ja jalokivi
+          tuntuu juovan sitä ympäröivän veden kun muovaat sitä.
+        desc: Leikkaa wrentmariini esiin sen karkeasta isäntäkivestä.
       shapeTopaz:
         name: Muokkaa topaasia
+        activityDesc: Koet syvällistä rauhan tunnetta muokatessasi tätä topaasia;
+          jotkut sanovatkin että se on ensimmäisen jalokiven sukua.
+        desc: Leikkaa topaasi esiin raa'asta muodostaan.
       shapeJade:
         name: Muokkaa jadea
+        desc: Leikkaa pala jadea irti sitä ympäröivästä materiaalista.
+        activityDesc: Kaiverrat jadea varoen, ja tuot esiin sen syvän vihreät sävyt.
+          Kun kiillotat sen tasaista pintaa, koet rauhan ja tyyneyden kulkeutuvan
+          kuin aaltona ylitsesi.
       shapeRuby:
         name: Muokkaa rubiinia
+        desc: Hio raakarubiinista kiillotettu jalokivi.
+        activityDesc: Muokkaat rubiinia taiten, ja vahvistat sen syvänpunaista hohtoa
+          jokaisen valmistuvan särmän myötä.
       shapeSunStone:
         name: Muokkaa aurinkokiveä
+        activityDesc: Lohkot aurinkokiveä ympäröivää kivirakennetta pala kerrallaan,
+          etkä juurikaan joudu muovaamaan jalokiveä itseään.
+        desc: Leikkaa aurinkokivi irti sitä ympäröivästä kivestä.
       shapeEthernite:
         name: Muokkaa etermiittiä
+        desc: Leikkaa eterniitistä terävä ja vaarallinen jalokivi.
+        activityDesc: Muokkaat eterniittiä varoen, ja sen lasinkaltainen pinta heijastaa
+          levottomuutta herättävää hohdetta. Työpisteesi kerää tasaista tahtia teräviä
+          palasia karkeaa kiveä.
+    rings:
+      silverOpalRing:
+        activityDesc: Valmistelet hopean tarkasti, ennen kuin upotat opaalin siitä
+          muodostamaasi hopearenkaaseen; opaalin vaihtelevat värit heijastelevat valon
+          mukana kun säädät kiven upotusta.
+        name: Valmista hopeinen opaalisormus
+        desc: Upota tuliopaali hopeasormukseen.
+      silverJadeRing:
+        activityDesc: Painat jaden hopeiseen alustaansa, ja pyöräytät sen reunaa lukitaksesi
+          jalokiven tiukasti paikalleen, ja vahvistaaksesi suojaavaa voimaa, jota
+          jade tuo kantajalleen.
+        name: Valmista hopeinen jadesormus
+        desc: Upota kiillotettu pala jadea hopeasormukseen.
+      silverWrentmarineRing:
+        activityDesc: Asetat syvänsinisen wrentmariinin sen hopeisen alustan kiinnikkeiden
+          väliin; sen kiillotetut särmät hohtavat kuin valtameri kuunvalossa.
+        name: Valmista hopeinen wrentmariinisormus
+        desc: Upota leikattu wrentmariini hopeasormukseen.
+      silverEtherniteRing:
+        activityDesc: Sovitat teräväksi hiotun eterniitin hopeiseen kehykseensä, ja
+          huomaat vilkuilevasi lasimaisen jalokiven reunoja, särmältä särmälle, yhä
+          syvemmäs kiveen - ennen kuin värähdät, ravistat päätäsi ja hartioitasi,ja
+          teet työsi loppuun.
+        name: Valmista hopeinen eterniittisormus
+        desc: Upota harvinainen eterniittijalokivi hopeasormukseen.
+      goldTopazRing:
+        activityDesc: Sijoittelet kimmeltävän topaasin kultaiseen kehykseensä. On
+          vaikea päättää kumpi on valovoimaisempi, jalokivi vai kiiltävä kulta sen
+          ympärillä.
+        name: Valmista kultainen topaasisormus
+        desc: Upota kimalteleva topaasi kultasormukseen.
+      goldRubyRing:
+        activityDesc: Kiinnität rubiinin tiukasti kultaiseen häkkiinsä; jykevän sormuksen
+          kultainen paino vahvistaa sen vallan ja auktoriteetin symboliikkaa.
+        name: Valmista kultainen rubiinisormus
+        desc: Upota kuninkaallinen punainen rubiini kultasormukseen.
+      silverSunStoneRing:
+        name: Valmista hopeinen aurinkokivisormus
+        desc: Upota hohtava aurinkokivi hopeasormukseen.
+        activityDesc: Liität aurinkokiven hopearenkaaseen, ja sovitat varoen kiven
+          säteet paikalleen. Jalokiven tulenomaiset värisävyt hohtavat kirkkaassakin
+          valossa.
+      goldStarPearlRing:
+        desc: Upota valovoimainen tähtihelmi kultasormukseen.
+        name: Valmista kultainen tähtihelmisormus
+        activityDesc: Kiinnität tarkkaan kiillotetun tähtihelmen sen kultaiseen renkaaseen,
+          ja vahvistat sen pehmeää hohdetta kullan lämpimillä sävyillä.
+      goldWrentmarineRing:
+        name: Valmista kultainen wrentmariinisormus
+        desc: Upota leikattu wrentmariini kultasormukseen.
+        activityDesc: Upotat syvänsinisen wrentmariinin kultarenkaaseen, ja sovittelet
+          sen kulmaa varmistaaksesi kiven hohtavien värien täydellisen kimalluksen.
+      goldEtherniteRing:
+        desc: Upota harvinainen eterniittijalokivi kultasormukseen.
+        activityDesc: Sovitat eterniitin kultaiseen kehykseensä, ja kun sovitat sen
+          asentoa, kivi tuntuu uppoavan metalliin itsestään; se muodostaa saumattoman
+          siirtymän kiven ja metallin välillä, ja kutsuu sinua katsomaan tarkemmin
+          ja lähempää löytääksesi saumakohdan, jonka tiedät olevan siellä jossakin.
+        name: Valmista kultainen eterniittisormus
+      silverRing:
+        name: Valmista hopeasormus
+        desc: Valmista klassinen hopeasormus.
+        activityDesc: Venytät ja muovaat hopeaa jalostuneeksi sormukseksi, ja kiillotat
+          sen kirkkaaksi ja valoa heijastavaksi.
+      goldRing:
+        name: Valmista kultasormus
+        desc: Valmista yksinkertainen, mutta arvokas kultasormus.
+        activityDesc: Muovaat ja jalostat kultaa sormuksen muotoon, vasaroiden siitä
+          varoen sileän, hienostuneen kultasormuksen.
+      silverStarPearlRing:
+        name: Luo hopeinen tähtihelmisormus
+        desc: Upota hohtava tähtihelmi hopeasormukseen.
+        activityDesc: Asettelet tähtihelmen varoen sen hopeiselle alustalle. Helmen
+          pehmeä hohde antaa hienostuneen lisän kiillotettuun sormukseen.
+      silverTopazRing:
+        name: Valmista hopeinen topaasisormus
+        desc: Upota kimalteleva topaasi hopeasormukseen.
+        activityDesc: Kiinnität topaasin varovasti hopeiseen alustaansa; aurinkoinen
+          topaasin kiilto tasapainottuu mattapintaisempaa hopeaa vasten.
+      silverRubyRing:
+        name: Valmista hopeinen rubiinisormus
+        desc: Upota kuninkaallisen punainen rubiini hopeasormukseen.
+        activityDesc: Upotat hiotun rubiinin hopeiseen alustaansa, ja sovittelet sen
+          niin, että sen tahkot ovat juuri edustavimmassa kulmassa.
+      goldOpalRing:
+        name: Valmista kultainen opaalisormus
+        desc: Upota tuliopaali kultasormukseen.
+        activityDesc: Painat tuliopaalin valmiina odottavaan kehykseen kultasormuksessa,
+          ja sen sateenkaaren värit syvenevät ennestään, kun kiillotat sormusta lopuksi
+          saadaksesi sen nappaamaan valonsäteet juuri parahultaisesti.
+      goldJadeRing:
+        name: Valmista kultainen jadesormus
+        desc: Upota kiillotettu pala jadea kultasormukseen.
+        activityDesc: Kiinnität jaden valmistelemaasi kultaiseen kehykseen, ja sen
+          rikkaan vihreä väri tuntuu heijastavan kiven näkymättömiä syvyyksiä.
+      goldSunStoneRing:
+        name: Valmista kultainen aurinkokivisormus
+        desc: Upota hohtava aurinkokivi kultasormukseen.
+        activityDesc: Sovittelet aurinkokiven valmistelemaasi kaiverruskuvioon, jolla
+          saat ikuistettua sulasta kullasta valetun auringonlaskun metallin ja jalokiven
+          yhteenliittymään.
   tailoring:
     clothing:
       basicLeather:
