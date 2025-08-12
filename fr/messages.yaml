@@ -209,6 +209,13 @@ singulars:
         text: Vous avez été temporairement banni de Walkscape jusqu'à <c i=0>{bannedUntil}</c>.
         noTimeFound: Pas de date de fin trouvée, veuillez nous contacter par mail
           à l'adresse contact@walkscape.app.
+      userBannedTemporarily:
+        title: Vous avez été banni temporairement de WalkScape
+        text: Vous avez été banni temporairement de Walkscape jusqu'à <c i=0>{bannedUntil}</c>.
+        noTimeFound: Aucune heure de fin trouvée, veuillez nous contacter en envoyant
+          un e-mail à {email}
+      userBannedPermanently:
+        title: Vous avez été définitivement banni de WalkScape
     gameError:
       stepLoadingFailed:
         text: Le client de jeu a échoué à charger les pas. Merci de signaler ceci
@@ -226,6 +233,14 @@ singulars:
         title: Échec de chargement du joueur
         text: Données de joueur incorrectes. Échec du chargement. Merci de contacter
           les développeurs via Discord ou par mail.
+      stepLoadingInterruped:
+        title: Chargement des pas interrompu
+        text: Le jeu a été mis en arrière-plan ou interrompu pendant le chargement
+          des pas. Veuillez essayer d'ouvrir le jeu à nouveau pour charger les pas.
+      stepsNotLoadedDueToBan:
+        title: Pas non chargés du fait de votre bannissement
+        text: Vos pas n'ont pas été chargés car vous avez été banni de WalkScape.
+          À partir de maintenant, vos pas seront comptés normalement.
     fatalError:
       error: Nous sommes désolés pour cette erreur. N'oubliez pas que le jeu est en
         bêta fermée, et que les données des joueurs sont sauvegardées quotidiennement.
