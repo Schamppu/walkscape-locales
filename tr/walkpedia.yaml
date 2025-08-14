@@ -53,9 +53,104 @@ singulars:
     buildingList:
       info:
         title: Yapılar
+        description: Yapılar genellikle dükkanlar veya bankalar gibi hizmetleri içeren
+          binalardır.
+        tabText: Yapı listesi
+    shopList:
+      info:
+        title: Dükkanlar
+        tabText: Dükkan listesi
+        description: Dükkanlar eşya alıp satabileceğin yerlerdir. Genellikle yapıların
+          içinde bulunurlar.
   phrases:
     item:
       notCrafted: (Üretilmemiş)
       requirements: Gereksinimler
       abilities: Yetenekler
       attributes: Nitelikler
+      purchased: Satın alınan
+      itemsGained: Kazanılan eşyalar
+      inInventory: Envanterde
+      inBank: Bankada
+      fromChests: Sandıklardan
+      fromCrafting: Üretimden
+      dropped: Bulunan
+      opened: Açılan
+      sold: Satılan
+      activitySources: Faaliyet kaynaklı
+      chestSources: Sandık kaynaklı
+      craftingSources: Üretim kaynaklı
+      fromActivites: Faaliyetlerden
+    home:
+      story: Hikaye
+      content: İçerik
+      combat: Savaş
+      leveling: Seviyeler
+    activity:
+      stepsWalked: Atılan adım
+      actionsCompleted: Tamamlanan eylem
+      stepsRequired: Gereken adım
+      maxWorkEfficiency: Azami verim
+      xpGained: Kazanılan TP
+      level: SVY
+      stepsToLevelUp: 'Seviye atlamaya kalan adım:'
+      stepsTo99: '99 seviyeye kalan adım:'
+      itemsGained: Kazanılan eşyalar
+      availableLocations: Mevcut konumlar
+    location:
+      realm: Diyar
+      activities: Faaliyetler
+    common:
+      unknown: Bu içerik henüz karakterince bilinmiyor. Tam detayları görebilmek için
+        keşfetmeye devam et!
+      rumors: Duyulan söylentiler
+  contentPages:
+    item:
+      info:
+        title: Eşya <object id="{obj}">
+    skill:
+      info:
+        level: Seviye
+        xp: TP
+        xpToNext: Sonraki seviyeye kalan TP
+        xpTo99: 99 seviyeye kalan TP
+        stepsWalked: Atılan adım
+        ofTotalSteps: Toplam adımın yüzdesi
+        nextUnlock: Sıradaki açılacaklar
+        lastUnlock: Son açılanlar
+        unlocks: Bütün açılanlar
+        unlocksDesc: Bu beceriyi seviye atlatarak hangi içerikleri açtığını gör.
+        fromLevelToLevel: <c>{from}</c> seviyeden <c>{to}</c> seviyeye
+maps:
+  phrases:
+    item:
+      itemType:
+        "material": Malzemeler
+        "container": Kutular
+        "consumable": Tüketimlikler
+        "crafted": Ürün
+        "loot": Ganimet
+        "collectible": Koleksiyonluklar
+plurals:
+  skillUnlocks:
+    itemRequirementsMet:
+      zero: '-'
+      one: <c>{}</c> eşya gereksinimi karşılandı
+      other: <c>{}</c> eşya gereksinimi karşılandı
+      few: '-'
+      many: '-'
+      two: <c>{}</c> eşya gereksinimi karşılandı
+    recipeRequirementsMet:
+      zero: '-'
+      one: <c>{}</c> tarif gereksinimi karşılandı
+      many: '-'
+      other: <c>{}</c> tarif gereksinimi karşılandı
+      two: <c>{}</c> tarif gereksinimi karşılandı
+      few: '-'
+    activityRequirementsMet:
+      one: <c>{}</c> faaliyet gereksinimi karşılandı
+      few: '-'
+      many: '-'
+      zero: '-'
+      two: <c>{}</c> faaliyet gereksinimi karşılandı
+      other: <c>{}</c> faaliyet gereksinimi karşılandı
