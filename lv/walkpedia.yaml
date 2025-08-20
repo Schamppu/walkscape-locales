@@ -1,1 +1,150 @@
-{}
+singulars:
+  pages:
+    home:
+      info:
+        tabText: Sākums
+        title: WalkPedia
+        description: WalkPedia ir tava varoņa personīgais žurnāls. Šeit tu vari sekot
+          līdzi sava varoņa apgūtajām zināšanām, statistikai un ērti orientēties spēles
+          saturā.
+    itemList:
+      info:
+        title: Priekšmeti
+        tabText: Priekšmetu saraksts
+        description: Priekšmeti ir objekti, kurus var savākt, izmantot vai pārdot.
+          Tos var atrast pasaulē, iegādāties no pārdevējiem vai arī spēlētāji tos
+          var izgatavot paši.
+    locationList:
+      info:
+        title: Atrašanās vietas
+        tabText: Atrašanās vietu saraksts
+        description: Atrašanās vietas ir vietas pasaulē, kuras var apmeklēt. Tās nodrošina
+          pakalpojumus un aktivitātes, ar kurām tavs varonis var iesaistīties.
+    skillList:
+      info:
+        title: Prasmes
+        tabText: Prasmju saraksts
+        description: Prasmes tiek uzlabotas, veicot ar prasmi saistītas aktivitātes.
+          Tās atver jaunu saturu un padara jūs efektīvāku.
+    activityList:
+      info:
+        tabText: Aktivitāšu saraksts
+        title: Aktivitātes
+        description: Aktivitātes ir atkārtoti uzdevumi, ko var veikt reālajā dzīvē,
+          ejot pa pasauli. Tie ir galvenais veids, kā iegūt priekšmetus un uzlabot
+          savas prasmes.
+    serviceList:
+      info:
+        title: Pakalpojumi
+        tabText: Pakalpojumu saraksts
+        description: Pakalpojumi sniedz tev priekšrocības noteiktā vietā. Visbiežāk
+          tie ļauj tev nodarboties ar amatniecību.
+    recipeList:
+      info:
+        title: Receptes
+        tabText: Recepšu saraksts
+        description: Receptes ir veids, kā pašam izgatavot priekšmetus. Parasti tiem
+          ir nepieciešami materiāli un pakalpojumi.
+    characterList:
+      info:
+        title: Varoņi
+        tabText: Varoņu saraksts
+        description: Varoņi ir cilvēki, kurus tu vari satikt pasaulē. Viņi var tev
+          dot uzdevumus, pārdot priekšmetus un daudz ko citu.
+    buildingList:
+      info:
+        title: Celtnes
+        description: Ēkas ir pasaules struktūras, kas parasti nodrošina veikalus un
+          pakalpojumus, piemēram, banku pakalpojumus.
+        tabText: Ēku saraksts
+    shopList:
+      info:
+        tabText: Veikalu saraksts
+        title: Veikali
+        description: Veikali ir vietas, kur var pirkt un pārdot priekšmetus. Tie parasti
+          atrodas ēkās.
+  contentPages:
+    item:
+      info:
+        title: Priekšmets <object id="{obj}">
+    skill:
+      info:
+        level: Līmenis
+        xp: XP
+        xpToNext: XP līdz nākamajam līmenim
+        xpTo99: XP līdz 99. līmenim
+        stepsWalked: Noietie soļi
+        nextUnlock: Nākamā atbloķēšana
+        lastUnlock: Pēdējā atbloķēšana
+        guide: Ceļvedis
+        ofTotalSteps: '% no kopējā soļu skaita'
+        unlocks: Visas atbloķēšanas
+        unlocksDesc: Skaties, kāds saturs tiek atbloķēts, paaugstinot šīs prasmes
+          līmeni.
+        fromLevelToLevel: No līmeņa <c>{from</c> līdz līmenim <c>{to</c>
+  phrases:
+    home:
+      content: Saturs
+      story: Stāsts
+      combat: Kauja
+      leveling: Līmeņošana
+    activity:
+      actionsCompleted: Pabeigtās darbības
+      stepsRequired: Nepieciešami soļi
+      level: LVL
+      availableLocations: Pieejamās atrašanās vietas
+      stepsWalked: Noietie soļi
+      each: katrs
+      maxWorkEfficiency: Maksimāla darba efektivitāte
+      xpGained: XP ieguva
+      stepsTo99: 'Soļi līdz 99. līmenim:'
+      itemsGained: Iegūtie priekšmeti
+      stepsToLevelUp: 'Soļi, lai paaugstinātu līmeni:'
+    item:
+      abilities: Spējas
+      activitySources: Aktivitāšu avoti
+      attributes: Īpašības
+      notCrafted: (Nav Izgatavots)
+      inInventory: Inventārā
+      inBank: Bankā
+      fromActivites: No aktivitātēm
+      fromChests: No lādēm
+      fromCrafting: No amatniecības
+      dropped: Nomests
+      opened: Atvērts
+      sold: Pārdots
+      purchased: Iegādāts
+      itemsGained: Iegūtie priekšmeti
+      requirements: Prasības
+      chestSources: Lādes avots
+    location:
+      activities: Aktivitātes
+      realm: Valstība
+    common:
+      rumors: Zināmas baumas
+      unknown: Šis saturs tavam varonim joprojām nav zināms. Turpini izpētīt, lai
+        redzētu visu informāciju!
+plurals:
+  skillUnlocks:
+    itemRequirementsMet:
+      few: '-'
+      many: '-'
+      zero: '-'
+    recipeRequirementsMet:
+      zero: '-'
+      few: '-'
+      many: '-'
+    activityRequirementsMet:
+      few: '-'
+      many: '-'
+      zero: '-'
+maps:
+  phrases:
+    item:
+      itemType:
+        "material": Materiāli
+        "container": Konteineri
+        "loot": Laupīt
+        "consumable": Patērējamie priekšmeti
+        "crafted": Izgatavots
+        "collectible": kolekcionējamie priekšmeti

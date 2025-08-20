@@ -59,15 +59,20 @@ singulars:
     products:
       sandwich:
         name: Ricetta per tramezzino
+        requirements: Richiede che un <object id="sandwich" /> venga creato con <object
+          id="recipe_cooking" />.
   activities:
     fishing:
       name: Pesca
       requirementLevel: Richiede un'attività di pesca che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      requirement: Richiede un'attività <object id="activity_fishing" />.
     miningOres:
       name: Estrazione mineraria
+      requirement: Richiede un'attività <object id="activity_mining" />.
     woodcuttingTrees:
       name: Taglio degli alberi
+      requirement: Richiede un'attività <object id="woodcuttingTrees" />.
     foragingPlants:
       requirement: Richiede un'attività di <object id="activity_foraging" />.
       name: Raccolta di piante

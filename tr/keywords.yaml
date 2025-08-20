@@ -2,75 +2,117 @@ singulars:
   consumables:
     alcohol:
       name: Alkol
-      requirement: Alkol gerekli.
-      requirementLevel: En az <keywordRequirements /> olan alkol gerekli.
+      requirement: <object id="alcohol" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan alkol gerekli.
     beverage:
       name: İçecek
-      requirement: İçecek gerekli.
-      requirementLevel: En az <keywordRequirements /> olan içecek gerekli.
+      requirement: <object id="beverage" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan içecek gerekli.
     cookedFish:
       name: Pişmiş balık
-      requirement: Pişmiş balık gerekli.
-      requirementLevel: En az <keywordRequirements /> olan pişmiş balık gerekli.
+      requirement: <object id="cookedFish" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan pişmiş balık
+        gerekli.
     food:
       name: Yiyecek
-      requirement: Yiyecek gerekli.
-      requirementLevel: En az <keywordRequirements /> olan yiyecek gerekli.
+      requirement: <object id="food" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan yiyecek gerekli.
     fruit:
       name: Meyve
-      requirement: Meyve gerekli.
-      requirementLevel: En az <keywordRequirements /> olan meyve gerekli.
+      requirement: <object id="fruit" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan meyve gerekli.
     water:
       name: Su
-      requirement: Su gerekli.
-      requirementLevel: En az <keywordRequirements /> olan su gerekli.
+      requirement: <object id="water" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan su gerekli.
     memosphere:
       name: Bilyuvar
-      requirement: Bilyuvar gerekli.
+      requirement: <object id="memosphere" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan bilyuvar gerekli.
+    sandwich:
+      name: Sandviç
+      requirement: <object id="sandwich" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan sandviç gerekli.
   containers:
     chest:
       name: Sandık
-      requirement: Sandık gerekli.
-      requirementLevel: En az <keywordRequirements /> olan sandık gerekli.
+      requirement: <object id="chest" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan sandık gerekli.
     regionalChest:
-      name: Bölgesel sandık
-      requirement: Bölgesel sandık gerekli.
-      requirementLevel: En az <keywordRequirements /> olan bölgesel sandık gerekli.
+      name: Bölge sandığı
+      requirement: <object id="regionalChest" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan bölge sandığı
+        gerekli.
+    skillingChest:
+      requirement: <object id="skillingChest" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan beceri sandığı
+        gerekli.
+      name: Beceri sandığı
   gear:
     bugCatchingNet:
       name: Böcek yakalama ağı
-      requirement: Böcek yakalama ağı gerekli.
-      requirementLevel: En az <keywordRequirements /> olan böcek yakalama ağı gerekli.
+      requirement: <object id="bugCatchingNet" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan böcek yakalama
+        ağı gerekli.
     climbing:
-      name: Tırmanma aleti
-      requirement: Tırmanma aleti gerekli.
-      requirementLevel: En az <keywordRequirements /> olan tırmanma aleti gerekli.
+      name: Tırmanma teçhizatı
+      requirement: <object id="climbingTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan tırmanma teçhizatı
+        gerekli.
     frisbee:
       name: Uçandisk
-      requirement: Frizbi kuşanılması gerekli.
-      requirementLevel: En az <keywordRequirements /> olan uçandisk gerekli.
+      requirement: <object id="frisbee" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan uçandisk gerekli.
     lifeVest:
       name: Can yeleği
-      requirement: Can yeleği gerekli.
-      requirementLevel: En az <keywordRequirements /> olan can yeleği gerekli.
+      requirement: <object id="lifevest" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan can yeleği gerekli.
     skis:
       name: Kayak
-      requirement: Kayak kuşanılması gerekli.
-      requirementLevel: En az <keywordRequirements /> olan kayak gerekli.
+      requirement: <object id="skis" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan kayak gerekli.
     arrows:
       name: Ok
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan ok gerekli.
+      requirement: <object id="arrows" /> kuşanılması gerekli.
     weapon:
       name: Silah
+      requirement: <object id="weapon" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan silah gerekli.
     ring:
       name: Yüzük
+      requirement: <object id="item_ring" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan yüzük gerekli.
     amulet:
       name: Kolye
+      requirement: <object id="item_amulet" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan kolye gerekli.
     underwater:
       name: Su altı
+      requirement: <object id="item_underwater" /> ekipmanı kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan su altı ekipmanı
+        gerekli.
     shield:
       name: Kalkan
+      requirement: <object id="shield" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan kalkan gerekli.
     socks:
       name: Çorap
+      requirement: <object id="item_socks" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan çorap gerekli.
+    bellows:
+      name: Körük
+      requirement: <object id="bellows" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan körük gerekli.
+    skillingGear:
+      name: Beceri teçhizatı
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan beceri teçhizatı
+        gerekli.
+      requirement: <object id="skillingGear" /> kuşanılması gerekli.
+    basket:
+      requirement: <object id="basket" /> kuşanılması gerekli.
+      name: Sepet
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan sepet gerekli.
   general:
     fuel:
       name: Yakıt
@@ -78,216 +120,470 @@ singulars:
       requirementLevel: En az <keywordRequirements /> olan yakıt gerekli.
     lightSource:
       name: Işık kaynağı
-      requirement: Işık kaynağı gerekli.
-      requirementLevel: En az <keywordRequirements /> olan ışık kaynağı gerekli.
+      requirement: <object id="lightSource" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> kuşanılması gerekli.
   materials:
     bar:
       name: Külçe
-      requirement: Külçe gerekli.
-      requirementLevel: En az <keywordRequirements /> olan külçe gerekli.
+      requirement: <object id="bar" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan külçe gerekli.
     fish:
       name: Balık
-      requirement: Balık gerekli.
-      requirementLevel: En az <keywordRequirements /> olan balık gerekli.
+      requirement: <object id="fish" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan balık gerekli.
     gem:
       name: Cevher
-      requirement: Cevher gerekli.
-      requirementLevel: En az <keywordRequirements /> olan cevher gerekli.
+      requirement: <object id="gem" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan cevher gerekli.
     logs:
       name: Kütük
-      requirement: Kütük gerekli.
-      requirementLevel: En az <keywordRequirements /> olan kütük gerekli.
+      requirement: Tahta <object id="logs" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan tahta kütük gerekli.
     ore:
       name: Maden
-      requirement: Maden gerekli.
-      requirementLevel: En az <keywordRequirements /> olan maden gerekli.
+      requirement: <object id="ore" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan maden gerekli.
     plank:
       name: Kereste
-      requirement: Kereste gerekli.
-      requirementLevel: En az <keywordRequirements /> olan kereste gerekli.
+      requirement: <object id="plank" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan kereste gerekli.
     plant:
       name: Bitki
-      requirement: Bitki gerekli.
-      requirementLevel: En az <keywordRequirements /> olan bitki gerekli.
+      requirement: <object id="plant" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan bitki gerekli.
     ingredient:
-      name: Yemek Malzemesi
+      name: Yemek malzemesi
+      ingredient: <object id="ingredient" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan yemek malzemesi
+        gerekli.
+    nugget:
+      name: Parça
+      requirement: <object id="nugget" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan parça gerekli.
+    cutGem:
+      requirement: <object id="cut_gem" /> gerekli.
+      name: Kesilmiş cevher
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan kesilmiş cevher
+        gerekli.
+    trinket:
+      name: Süs
+      requirement: <object id="trinket" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan süs gerekli.
+    misc:
+      name: Çeşitli
+      requirement: <object id="misc" /> eşya gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan çeşitli eşya
+        gerekli.
+    processed:
+      name: İşlenmiş
+      requirement: <object id="processed" /> malzeme gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan işlenmiş malzeme
+        gerekli.
+    offcut:
+      name: Fazlalık
+      requirement: <object id="offcut" /> eşya gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan fazlalık eşya
+        gerekli.
+    roughGem:
+      name: Doğal cevher
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan doğal cevher
+        gerekli.
+      requirement: <object id="rough_gem" /> gerekli.
+    mushroom:
+      requirement: <object id="mushroom" /> gerekli.
+      name: Mantar
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan mantar gerekli.
   misc:
     trash:
       name: Çöp
-      requirement: Çöp gerekli.
-      requirementLevel: En az <keywordRequirements /> olan çöp gerekli.
+      requirement: <object id="trash" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan çöp gerekli.
+    currency:
+      name: Para
+      requirement: <object id="currency" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan para gerekli.
   tools:
     carpentryTool:
       name: Marangozluk aleti
-      requirement: Marangozluk aleti gerekli.
-      requirementLevel: En az <keywordRequirements /> olan marangozluk aleti gerekli.
+      requirement: <object id="carpentryTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan marangozluk aleti
+        gerekli.
     chisel:
       name: Keski
-      requirement: Keski gerekli.
-      requirementLevel: En az <keywordRequirements /> olan keski gerekli.
+      requirement: <object id="chisel" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan keski gerekli.
     cookingKnife:
       name: Mutfak bıçağı
-      requirement: Mutfak bıçağı gerekli.
-      requirementLevel: En az <keywordRequirements /> olan mutfak bıçağı gerekli.
+      requirement: <object id="cookingKnife" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan mutfak bıçağı
+        gerekli.
     cookingPan:
       name: Tava
-      requirement: Tava gerekli.
-      requirementLevel: En az <keywordRequirements /> olan tava gerekli.
+      requirement: <object id="cookingPan" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan tava gerekli.
     cookingPot:
       name: Tencere
-      requirement: Tencere gerekli.
-      requirementLevel: En az <keywordRequirements /> olan tencere gerekli.
+      requirement: <object id="cookingPot" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan tencere gerekli.
     cookingSpices:
       name: Baharat
-      requirement: Baharat gerekli.
-      requirementLevel: En az <keywordRequirements /> olan baharat gerekli.
+      requirement: <object id="cookingSpices" /> kuşanılması gerekir.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan baharat gerekli.
     cookingTool:
       name: Aşçılık aleti
-      requirement: Aşçılık aleti gerekli.
-      requirementLevel: En az <keywordRequirements /> olan aşçılık aleti gerekli.
+      requirement: <object id="cookingTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan aşçılık aleti
+        gerekli.
     craftingTool:
       name: Zanaatkarlık aleti
-      requirement: Zanaatkarlık aleti gerekli.
-      requirementLevel: En az <keywordRequirements /> olan zanaatkarlık aleti gerekli.
+      requirement: <object id="craftingTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan zanaatkarlık
+        aleti gerekli.
     cuttingBoard:
       name: Kesme tahtası
-      requirement: Kesme tahtası gerekli.
-      requirementLevel: En az <keywordRequirements /> olan kesme tahtası gerekli.
+      requirement: <object id="cuttingBoard" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan kesme tahtası
+        gerekli.
     fishing:
       name: Balıkçılık
       requirement: Balıkçılık aleti gerekli.
       requirementLevel: En az <keywordRequirements /> olan balıkçılık aleti gerekli.
     fishingCage:
       name: Balık kafesi
-      requirement: Balık kafesi gerekli.
-      requirementLevel: En az <keywordRequirements /> olan balık kafesi gerekli.
+      requirement: <object id="fishingCage" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan balık kafesi
+        gerekli.
     fishingLure:
-      name: Balık yemi
-      requirement: Balık yemi gerekli.
-      requirementLevel: En az <keywordRequirements /> olan balık yemi gerekli.
+      name: Zoka
+      requirement: <object id="fishingLure" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan zoka gerekli.
     fishingNet:
       name: Balık ağı
-      requirement: Balık ağı gerekli.
-      requirementLevel: En az <keywordRequirements /> olan balık ağı gerekli.
+      requirement: <object id="fishingNet" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan balık ağı gerekli.
     fishingRod:
       name: Olta
-      requirement: Olta gerekli.
-      requirementLevel: En az <keywordRequirements /> olan olta gerekli.
+      requirement: <object id="fishingRod" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan olta gerekli.
     fishingSpear:
       name: Balık mızrağı
-      requirement: Balık mızrağı gerekli.
-      requirementLevel: En az <keywordRequirements /> olan balık mızrağı gerekli.
+      requirement: <object id="fishingSpear" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan balık mızrağı
+        gerekli.
     foragingTool:
       name: Toplayıcılık aleti
-      requirement: Toplayıcılık aleti gerekli.
-      requirementLevel: En az <keywordRequirements /> olan toplayıcılık aleti gerekli.
+      requirement: <object id="foragingTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan toplayıcılık
+        aleti gerekli.
     goldPan:
       name: Altın eleği
-      requirement: Altın eleği gerekli.
-      requirementLevel: En az <keywordRequirements /> olan altın eleği gerekli.
+      requirement: <object id="goldPan" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan altın eleği gerekli.
     knife:
       name: Bıçak
-      requirement: Bıçak gerekli.
-      requirementLevel: En az <keywordRequirements /> olan bıçak gerekli.
+      requirement: <object id="knife" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan bıçak gerekli.
     localMap:
       name: Yöre haritası
-      requirement: Yöre haritası gerekli.
-      requirementLevel: En az <keywordRequirements /> olan yöre haritası gerekli.
+      requirement: <object id="localMap" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan yöre haritası
+        gerekli.
     magnetic:
       name: Manyetik
-      requirement: Manyetik eşya gerekli.
-      requirementLevel: En az <keywordRequirements /> olan manyetik eşya gerekli.
+      requirement: <object id="magnetic" /> eşya kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan manyetik eşya
+        gerekli.
     magnifyingLense:
-      requirement: Büyüteç gerekli.
-      requirementLevel: En az <keywordRequirements /> olan büyüteç gerekli.
+      requirement: <object id="magnifyingLense" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan büyüteç gerekli.
+      name: Büyüteç
     pickaxe:
-      requirement: Kazma gerekli.
-      requirementLevel: En az <keywordRequirements /> olan kazma gerekli.
+      requirement: <object id="pickaxe" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan kazma gerekli.
       name: Kazma
     saw:
-      requirement: Testere gerekli.
-      requirementLevel: En az <keywordRequirements /> olan testere gerekli.
+      requirement: <object id="saw" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan testere gerekli.
       name: Testere
     screwdriver:
-      requirement: Tornavida gerekli.
-      requirementLevel: En az <keywordRequirements /> olan tornavida gerekli.
+      requirement: <object id="screwdriver" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan tornavida gerekli.
       name: Tornavida
     sickle:
-      requirement: Orak gerekli.
-      requirementLevel: En az <keywordRequirements /> olan orak gerekli.
+      requirement: <object id="sickle" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan orak gerekli.
       name: Orak
     smithingHammer:
-      requirement: Demircilik çekici gerekli.
-      requirementLevel: En az <keywordRequirements /> olan demircilik çekici gerekli.
+      requirement: <object id="smithingHammer" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan demircilik çekici
+        gerekli.
+      name: Demircilik çekici
     tool:
       name: Alet
-      requirement: Alet gerekli.
-      requirementLevel: En az <keywordRequirements /> olan alet gerekli.
+      requirement: <object id="tool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan alet gerekli.
     woodcuttingHatchet:
       name: Nacak
-      requirement: Nacak gerekli.
-      requirementLevel: En az <keywordRequirements /> olan nacak gerekli.
+      requirement: <object id="woodcuttingHatchet" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan odunculuk nacağı
+        gerekli.
     fishingTool:
       name: Balıkçılık aleti
+      requirement: <object id="fishingTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan balıkçılık aleti
+        gerekli.
+    sander:
+      name: Zımpara
+      requirement: <object id="sander" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan zımpara gerekli.
+    logSplitter:
+      name: Odun yarıcı
+      requirement: <object id="item_log_splitter" /> kuşanılması gerekli.
+      requirementlevel: En az <keywordRequirements /> koşulu taşıyan odun yarıcı gerekli.
+    wrench:
+      name: Somun anahtarı
+      requirement: <object id="wrench" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan somun anahtarı
+        gerekli.
+    skillBook:
+      requirementlevel: En az <keywordRequirements /> koşulu taşıyan beceri kitabı
+        gerekli.
+      name: Beceri kitabı
+      requirement: <object id="skillBook" /> kuşanılması gerekli.
+    agilityTool:
+      name: Çeviklik aleti
+      requirement: <object id="agilityTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan çeviklik aleti
+        gerekli.
+    miningTool:
+      name: Madencilik aleti
+      requirement: <object id="miningTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan madencilik aleti
+        gerekli.
+    smithingTool:
+      name: Demircilik aleti
+      requirement: <object id="smithingTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan demircilik aleti
+        gerekli.
+    trinketryTool:
+      name: Takıcılık aleti
+      requirement: <object id="trinketryTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan takıcılık aleti
+        gerekli.
+    woodcuttingTool:
+      name: Odunculuk aleti
+      requirement: <object id="woodcuttingTool" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan odunculuk aleti
+        gerekli.
+    ruler:
+      requirement: <object id="ruler" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan cetvel gerekli.
+      name: Cetvel
+    huntingBow:
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan avcılık yayı
+        gerekli.
+      name: Avcılık yayı
+      requirement: <object id="huntingBow" /> kuşanılması gerekli.
+    huntingTrap:
+      name: Avcılık tuzağı
+      requirement: <object id="huntingTrap" /> kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan avcılık tuzağı
+        gerekli.
   search:
     items:
       consumables:
         potion:
           name: İksir
+          requirement: <DEĞİŞKEN>
+          requirementLevel: <DEĞİŞKEN>
         memosphere:
           name: Bilyuvar
+          requirement: <DEĞİŞKEN>
+          requirementLevel: <DEĞİŞKEN>
         beverage:
           name: İçecek
+          requirement: <DEĞİŞKEN>
+          requirementLevel: <DEĞİŞKEN>
         food:
           name: Yiyecek
+          requirement: <DEĞİŞKEN>
+          requirementLevel: <DEĞİŞKEN>
     skills:
       global:
         name: Genel
+        requirementLevel: <DEĞİŞKEN>
+        requirement: <DEĞİŞKEN>
+      cooking:
+        name: Aşçılık
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
+      agility:
+        requirementLevel: <DEĞİŞKEN>
+        name: Çeviklik
+        requirement: <DEĞİŞKEN>
+      carpentry:
+        name: Marangozluk
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
+      crafting:
+        name: Zanaatkarlık
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
+      fishing:
+        name: Balıkçılık
+        requirementLevel: <DEĞİŞKEN>
+        requirement: <DEĞİŞKEN>
+      foraging:
+        requirementLevel: <DEĞİŞKEN>
+        name: Toplayıcılık
+        requirement: <DEĞİŞKEN>
+      hunting:
+        name: Avcılık
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
+      mining:
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
+        name: Madencilik
+      smithing:
+        name: Demircilik
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
+      tailoring:
+        name: Terzilik
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
+      trinketry:
+        name: Takıcılık
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
+      traveling:
+        name: Seyahat
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
+      woodcutting:
+        name: Odunculuk
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
   recipes:
     skills:
       cooking:
         name: Yemek tarifi
+        requirement: <object id="recipe_cooking" /> gerekli.
     products:
       sandwich:
         name: Sandviç tarifi
+        requirements: <object id="recipe_cooking" /> olarak <object id="sandwich"
+          /> yapılması gerekli.
   activities:
     fishing:
       name: Balıkçılık
+      requirement: <object id="activity_fishing" /> faaliyeti gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan balıkçılık faaliyeti
+        gerekli.
     miningOres:
       name: Maden çıkarma
+      requirement: <object id="activity_mining" /> faaliyeti gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan maden çıkarma
+        faaliyeti gerekli.
     foragingPlants:
       name: Bitki toplama
+      requirement: <object id="activity_foraging" /> faaliyeti gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan bitki toplama
+        faaliyeti gerekli.
     woodcuttingTrees:
       name: Ağaç kesimi
+      requirement: <object id="woodcuttingTrees" /> faaliyeti gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan ağaç kesimi faaliyeti
+        gerekli.
   itemSets:
     advancedDivingGear:
-      name: Gelişmiş Dalış Teçhizatı
+      name: Gelişmiş dalış teçhizatı
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan gelişmiş dalış
+        teçhizatı gerekli.
+      requirement: <object id="itemset_diving_gear_advanced" /> gerekli.
     expertDivingGear:
-      name: Profesyonel Dalış Teçhizatı
+      name: Profesyonel dalış teçhizatı
+      requirement: <object id="itemset_diving_gear_expert" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan profesyonel dalış
+        tezhizatı gerekli.
     properGear:
       name: Münasip teçhizat
+      requirement: <object id="itemset_proper_gear" /> parçaları kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan münasip teçhizat
+        giyilmesi gerekli.
     divingGear:
       name: Dalış teçhizatı
+      requirement: <object id="itemset_diving_gear" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan dalış teçhizatı
+        gerekli.
+    adventuringTools:
+      name: Macera aleti seti
+      requirement: <object id="itemset_adventuring_tools" /> parçaları kuşanılması
+        gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan macera aleti
+        gerekli.
+    treasureHunter:
+      name: Hazine avcısı seti
+      requirement: <object id="itemset_treasure_hunter" /> parçalarının kuşanılması
+        gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan hazine avcısı
+        teçhizatı gerekli.
   locations:
     underwater:
-      name: Su Altı
+      name: Su altı
+      requirementLevel: <DEĞİŞKEN>
+      requirement: <DEĞİŞKEN>
   weight:
     ultraLight:
       name: Ultra hafif
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
     heavy:
       name: Ağır
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
     light:
       name: Hafif
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
   services:
     sawmill:
       name: Bıçkıhane
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
     workshop:
       name: Atölye
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
     kitchen:
       name: Mutfak
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
     forge:
       name: Demirhane
+      requirementLevel: <DEĞİŞKEN>
+      requirement: <DEĞİŞKEN>
     loom:
       name: Terzihane
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
     bench:
       name: Takıcılık Tezgahı
+      requirementLevel: <DEĞİŞKEN>
+      requirement: <DEĞİŞKEN>
+  achievements:
+    reward:
+      requirement: <object id="achievement_reward" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan başarım ödülü
+        gerekli.
+      name: Başarım ödülü
+    percentage:
+      name: Başarım yüzdesi
+      requirement: yok
+      requirementLevel: yok
+  faction:
+    reward:
+      name: Diyar ödülü
+      requirement: <object id="faction_reward" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan diyar ödülü gerekli.

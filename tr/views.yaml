@@ -70,6 +70,7 @@ maps:
       'showFpsCounter': FPS sayacını göster
       'shaderOutlineRendering': Çerçeve gölgelerini göster
       'alwaysStopWhenInventoryFull': Envanter dolup taşınca kendiliğinden dur
+      'showDailyTips': Günün ipucunu göster
     languages:
       'pt': Portekizce
       'de': Almanca
@@ -118,6 +119,12 @@ maps:
       'hourly': Saatlik adım
       'daily': Günlük adım
       'monthly': Aylık adım
+  cooldown:
+    time:
+      'hours': '{hours}<c>sa</c>'
+      'minutes': '{minutes}<c>dk</c>'
+      'seconds': '{seconds}<c>sn</c>'
+      'days': '{days}<c>g</c>'
 plurals:
   achievements:
     phrases:
@@ -193,6 +200,16 @@ plurals:
           adım gerektiriyor. Seçilmiş tüketimlik miktarı <c>{actions} eylemi</c> etkiler.
         two: <object id="{activity}" alwaysShow="true"/> faaliyeti eylem başına <c>{steps}</c>
           adım gerektiriyor. Seçilmiş tüketimlik miktarı <c>{actions} eylemi</c> etkiler.
+  location:
+    phrases:
+      playersHere:
+        one: <c>{}</c> oyuncu burada
+        two: <c>{}</c> oyuncu burada
+        other: <c>{}</c> oyuncu burada
+      playersDoingActivity:
+        two: <c>{}</c> oyuncu faaliyeti yapıyor
+        one: <c>{}</c> oyuncu faaliyeti yapıyor
+        other: <c>{}</c> oyuncu faaliyeti yapıyor
 singulars:
   achievements:
     info:
@@ -228,12 +245,17 @@ singulars:
       skillBreakdown: Karakterinin yolculuğu boyunca geliştirdiği bütün becerilerinin
         tablosu. Herhangi bir beceriye dokunarak daha detaylı bilgiye ulaşabilir ve
         neler açtığını görebilirsin.
+      eachLevelIncreasesStepBank: <c>{level}</c> seviyeden sonraki her seviye, azami
+        birikmiş adım miktarını <c>{amount}</c> adım yükseltir.
     phrases:
       checkOut: İşte WalkScape karakterim {name}. Bir göz at!\nhttps://walkscape.app
       checkOutSubject: WalkScape'teki ilerlememe bir göz at!
       skills: Beceriler
       stepsOfLastWeek: Son 7 günlük adım
       totalLevel: Toplam seviye
+      level: 'Karakter seviyesi: <c>{level}</c>'
+      stepsToNextLevel: 'Seviye atlamaya kalan adım: <c>{steps}</c>'
+      savePicture: Resmi kaydet
   characterCreation:
     info:
       rememberSwipe: Karakter oluşturma esnasında önceki seçimlerini değiştirmek için
@@ -352,6 +374,7 @@ singulars:
       routes: Rotalar
       tapToShowRoutes: Rotaları göstermek için dokun
       factions: Diyarlar
+      owner: Sahibi
   mainMenu:
     phrases:
       areYouAbsolutelySure: Kesinlikle emin misin? Bu adımdan sonra, karakterini kalıcı
@@ -406,6 +429,15 @@ singulars:
       permissionExplanation: Oyunun çalışması için, cihazının adım sayacı verilerini
         kullanma iznine ihtiyacımız var. Lütfen oyuna devam etmek için bu izni onayla.
       exactAlarmPermission: Bildirim izni
+      connectAppleHealth: Apple Health'e bağlan
+      connect: Bağlan
+      stepCountingSource: Adım kaynağı
+      changeStepCountingSource: Adım kaynağını değiştir
+      comingSoonToAndroid: Yakında Android'e gelecek
+    deviceSource:
+      watch: Başka bir saat
+      phone: Telefon
+      appleWatch: Apple Watch
   pfpCreation:
     buttons:
       choose: Seç
@@ -413,7 +445,7 @@ singulars:
       enableDynamicBackground: Dinamik arka plan olsun
       enableFaceAccessorie: Yüz aksesuarı olsun
       enableFacepaint: Yüz boyası olsun
-      hideHat: Başlığı gizle
+      hideHat: Başlığı göster
       randomize: Rastgele
       showHat: Başlığı göster
       enableFaceAccessory: Yüz aksesuarı olsun
@@ -444,10 +476,14 @@ singulars:
           karşılaşıyorsan büyük ihtimalle bundan kaynaklanıyordur. Oyunun mantığı
           hala eskisi gibi çalışıyor. Grafik sorunları ise ileriki güncellemelerde
           çözülecek.
+      reputation: İtibar, WalkScape'deki farklı diyarlarda ne kadar iyi tanındığının
+        ölçüsüdür.
     phrases:
       stats: İstatistik
       totalSkillXp: Toplam beceri tecrübesi
       totalSteps: Toplam adım
+      reputation: İtibar
+      highestStepsIn24Hours: 24 saat içindeki en çok adım
   tools:
     phrases:
       emptyToolSlot: Boş alet yuvası
@@ -526,6 +562,18 @@ singulars:
       workEfficiencyPenalty: <icon i="Work efficiency"/> Genel verim <c>-{penalty}%</c>
       notAffectingTraveling: (seyahat verimi etkilenmez)
       options: Seçenekler
+      rewards: Ödüller
+      startActivity: Faaliyete başla
+      queueActivity: Faaliyeti sıraya koy
+      requirementsNotMet: Gereksinimler karşılanmıyor
+      noActivitiesInLocation: <object id="{location}"/> konumunda faaliyet bulunmuyor.
+      activitiesInLocation: <object id="{location}"/> konumundaki mevcut faaliyetler
+      guideTip: Günün ipucu
+      requirements: Gereksinimler
+      cantStartActivity: Faaliyete başlanamıyor
+      travelAndStartActivity: Seyahat edip faaliyete başla
+      locationIsUnknown: Konum bilinmiyor. Ancak bu konumu keşfedersen buradaki faaliyetleri
+        görebilirsin.
     info:
       consumablesUsage: Faaliyetler esnasında kullanmak için birer <c>yiyecek</c>
         ve <c>iksir</c> seçebilirsin.
@@ -575,9 +623,13 @@ singulars:
         useThisToClear: Adım grafiğini sıfırlamak için bunu kullanabilirsin. Hatalar
           yüzünden yanlış adımlar kazanmış ve grafiği sıfırlamak istiyorsan işine
           yarar.
+      locales:
+        title: Dil
+        changeLanguage: Dili değiştir
     phrases:
       exitToCharacterSelection: Karakter menüsüne çık
       settings: Ayarlar
+      gameVersion: Oyun versiyonu {version}
   popupBubbles:
     phrases:
       overEncumbered: Envanterin dolup taştı.
@@ -674,3 +726,52 @@ singulars:
   rewards:
     phrases:
       alreadyClaimed: Zaten alınmış
+  queue:
+    types:
+      activity: Faaliyet
+      crafting: Üretim
+      traveling: Seyahat
+    phrases:
+      queue: Sıra
+      queuedActions: Sıralanan faaliyetler
+      noGearSetFound: Seçilmiş teçhizat seti bulunamadı, silmiş olabilir misin?
+      activityInLocation: <object id="{location}"/> konumunda <object id="{activity}"/>
+      noPathFound: Hedefe giden bir yol bulunamadı.
+    suggestedOptions:
+      startCrafting: Üretim
+      startTraveling: Seyahat
+      startActivity: Faaliyet
+    options:
+      depositUnlockedItems:
+        text: Açılan eşyaları yatır
+      removeFromQueue:
+        text: Sıradan çıkar
+      switchGearSet:
+        text: Teçhizat setini kuşan
+        desc: Bu eyleme başlamadan önce seçilmiş teçhizat setini kuşan.
+      withdrawGearSet:
+        desc: Geçtiğin konumlardan birinde banka bulunuyorsa bir teçhizat setini bankadan
+          çek.
+        text: Teçhizat setini çek
+    suggestions:
+      activity:
+        onceInventoryIsFull: Envanterin dolunca bir şey yapmak ister misin?
+        onceAllActionsAreCompleted: Bütün eylemler tamamlanınca bir şey yapmak ister
+          misin?
+      crafting:
+        onceAllItemsAreCrafted: Bütün eşyalar üretilince bir şey yapmak ister misin?
+  locales:
+    phrases:
+      language: Dil
+      chooseALanguage: Aşağıdaki listeden bir dil seç.
+      percentExplanation: '"%" ne kadarının tercüme edildiğini gösterir.'
+  whileAway:
+    phrases:
+      actionCancelled: Eylem iptal edildi
+      actionsCompleted: Eylemler tamamlandı
+      consumablesUsed: Tüketimlik kullanıldı
+      whileYouWereAway: Sen uzaktayken...
+      gearSetDoesNotExist: Bu teçhizat seti artık bulunmuyor
+      startedActivityNoLocation: <object id="{activity}"/> faaliyetine başlandı
+      startedNewActivity: <object id="{location}"/> konumunda <object id="{activity}"/>
+        faaliyetine başlandı

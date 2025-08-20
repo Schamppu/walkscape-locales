@@ -1,1 +1,156 @@
-{}
+singulars:
+  pages:
+    home:
+      info:
+        title: WalkPedi
+        tabText: Ana sayfa
+        description: WalkPedi karakterinin kişisel günlüğüdür. Karakterinin bilgisini,
+          ilerlemesini ve oyun içeriğini buradan kolaylıkla takip edebilirsin.
+    itemList:
+      info:
+        title: Eşyalar
+        description: Eşyalar toplanabilen, kullanılabilen veya satılabilen nesnelerdir.
+          Dünyanın farklı yerlerinde bulunabilir, satıcılardan alınabilir veya oyuncular
+          tarafından üretilebilirler.
+        tabText: Eşya listesi
+    locationList:
+      info:
+        title: Konumlar
+        tabText: Konum listesi
+        description: Konumlar dünya üzerinde ziyaret edebileceğin yerlerdir. Buralarda
+          karakterinin etkileşime geçebileceği hizmetler ve faaliyetler bulunur.
+    skillList:
+      info:
+        title: Beceriler
+        tabText: Beceri listesi
+        description: Beceriler kendileriyle alakalı faaliyetleri yaparken seviye atlarlar.
+          Yeni içeriklerin açılmasını sağlayıp seni daha verimli kılarlar.
+    activityList:
+      info:
+        title: Faaliyetler
+        tabText: Faaliyet listesi
+        description: Faaliyetler gerçek hayatta yürüyerek yapabileceğin tekrarlanabilir
+          aktivitelerdir. Eşyaları edinmenin ve becerilerini geliştirmenin esas yolu
+          faaliyetlerdir.
+    serviceList:
+      info:
+        title: Hizmetler
+        description: Hizmetler bulundukları konumlarda çeşitli faydalar sunar. En
+          çok da üretim yapma olanağı sağlarlar.
+        tabText: Hizmet listesi
+    recipeList:
+      info:
+        title: Tarifler
+        description: Tarifler kendi eşyalarını üretebilmenin yoludur. Genellikle malzemelerle
+          birlikte bir hizmet gereksinimi de bulunur.
+        tabText: Tarif listesi
+    characterList:
+      info:
+        title: Karakterler
+        tabText: Karakter listesi
+        description: Karakterler dünyada gezerken rastlayabileceğin kişilerdir. Görevler
+          verebilir, eşyalar satabilir veya daha pek çok şey yapabilirler.
+    buildingList:
+      info:
+        title: Yapılar
+        description: Yapılar genellikle dükkanlar veya bankalar gibi hizmetleri içeren
+          binalardır.
+        tabText: Yapı listesi
+    shopList:
+      info:
+        title: Dükkanlar
+        tabText: Dükkan listesi
+        description: Dükkanlar eşya alıp satabileceğin yerlerdir. Genellikle yapıların
+          içinde bulunurlar.
+  phrases:
+    item:
+      notCrafted: (Üretilmemiş)
+      requirements: Gereksinimler
+      abilities: Yetenekler
+      attributes: Nitelikler
+      purchased: Satın alınan
+      itemsGained: Kazanılan eşyalar
+      inInventory: Envanterde
+      inBank: Bankada
+      fromChests: Sandıklardan
+      fromCrafting: Üretimden
+      dropped: Bulunan
+      opened: Açılan
+      sold: Satılan
+      activitySources: Faaliyet kaynaklı
+      chestSources: Sandık kaynaklı
+      craftingSources: Üretim kaynaklı
+      fromActivites: Faaliyetlerden
+    home:
+      story: Hikaye
+      content: İçerik
+      combat: Savaş
+      leveling: Seviyeler
+    activity:
+      stepsWalked: Atılan adım
+      actionsCompleted: Tamamlanan eylem
+      stepsRequired: Gereken adım
+      maxWorkEfficiency: Azami verim
+      xpGained: Kazanılan TP
+      level: SVY
+      stepsToLevelUp: 'Seviye atlamaya kalan adım:'
+      stepsTo99: '99 seviyeye kalan adım:'
+      itemsGained: Kazanılan eşyalar
+      availableLocations: Mevcut konumlar
+    location:
+      realm: Diyar
+      activities: Faaliyetler
+    common:
+      unknown: Bu içerik henüz karakterince bilinmiyor. Tam detayları görebilmek için
+        keşfetmeye devam et!
+      rumors: Duyulan söylentiler
+  contentPages:
+    item:
+      info:
+        title: Eşya <object id="{obj}">
+    skill:
+      info:
+        level: Seviye
+        xp: TP
+        xpToNext: Sonraki seviyeye kalan TP
+        xpTo99: 99 seviyeye kalan TP
+        stepsWalked: Atılan adım
+        ofTotalSteps: Toplam adımın yüzdesi
+        nextUnlock: Sıradaki açılacaklar
+        lastUnlock: Son açılanlar
+        unlocks: Bütün açılanlar
+        unlocksDesc: Bu beceriyi seviye atlatarak hangi içerikleri açtığını gör.
+        fromLevelToLevel: <c>{from}</c> seviyeden <c>{to}</c> seviyeye
+maps:
+  phrases:
+    item:
+      itemType:
+        "material": Malzemeler
+        "container": Kutular
+        "consumable": Tüketimlikler
+        "crafted": Ürün
+        "loot": Ganimet
+        "collectible": Koleksiyonluklar
+plurals:
+  skillUnlocks:
+    itemRequirementsMet:
+      zero: '-'
+      one: <c>{}</c> eşya gereksinimi karşılandı
+      other: <c>{}</c> eşya gereksinimi karşılandı
+      few: '-'
+      many: '-'
+      two: <c>{}</c> eşya gereksinimi karşılandı
+    recipeRequirementsMet:
+      zero: '-'
+      one: <c>{}</c> tarif gereksinimi karşılandı
+      many: '-'
+      other: <c>{}</c> tarif gereksinimi karşılandı
+      two: <c>{}</c> tarif gereksinimi karşılandı
+      few: '-'
+    activityRequirementsMet:
+      one: <c>{}</c> faaliyet gereksinimi karşılandı
+      few: '-'
+      many: '-'
+      zero: '-'
+      two: <c>{}</c> faaliyet gereksinimi karşılandı
+      other: <c>{}</c> faaliyet gereksinimi karşılandı

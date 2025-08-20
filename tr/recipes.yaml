@@ -2,70 +2,536 @@ singulars:
   carpentry:
     planks:
       birchPlank:
-        name: Huş kerestesi kes
+        name: Huş kereste kesimi
       mangrovePlank:
-        name: Mangrov kerestesi kes
+        name: Mangrov kereste kesimi
       maplePlank:
-        name: Akçaağaç kerestesi kes
+        name: Akçaağaç kereste kesimi
       oakPlank:
-        name: Meşe kerestesi kes
+        name: Meşe kereste kesimi
       pinePlank:
-        name: Çam kerestesi kes
+        name: Çam kereste kesimi
       sprucePlank:
-        name: Ladin kerestesi kes
+        name: Ladin kereste kesimi
       teakPlank:
-        name: Tik kerestesi kes
+        name: Tik kereste kesimi
       willowPlank:
-        name: Söğüt kerestesi kes
+        name: Söğüt kereste kesimi
+      coralPlank:
+        name: Mercan kereste kesimi
+      bambooPlank:
+        name: Bambu kereste kesimi
+      elmPlank:
+        name: Karaağaç kereste kesimi
+    scrap:
+      mangrovePlankShavings:
+        name: Kırpıntıdan mangrov kereste yapımı
+      teakPlankScrap:
+        name: Kırpıntıdan tik kereste yapımı
+      sprucePlankScrap:
+        name: Kırpıntıdan ladin kereste yapımı
+      pinePlankScrap:
+        name: Kırpıntıdan çam kereste yapımı
+      willowPlankScrap:
+        name: Kırpıntıdan söğüt kereste yapımı
+      birchPlankScrap:
+        name: Kırpıntıdan huş kereste yapımı
+      maplePlankScrap:
+        name: Kırpıntıdan akçaağaç kereste yapımı
+      oakPlankScrap:
+        name: Kırpıntıdan meşe kereste yapımı
   crafting:
     tools:
       basicHatchet:
         activityDesc: Dikkatlice yonttuğun taşı çubuğa takarak ilkel bir nacak yapıyorsun.
         desc: Çubuk ve taş kullanarak, ağaç kesmek için basit bir alet yapabilirsin.
-        name: Basit nacak yap
+        name: Basit nacak yapımı
       basicPickaxe:
         activityDesc: Olabildiğince sivrilttiğin taşı sopaya takarak basit bir kazma
           yapıyorsun.
         desc: Sıradan bir sopa ve biraz taş kullanarak maden çıkartmak için basit
           bir alet yapabilirsin.
-        name: Basit kazma yap
+        name: Basit kazma yapımı
       bronzeHatchet:
         desc: Ağır odunculuk işleri için sağlam bir bronz nacak üret.
-        name: Bronz nacak üret
+        name: Bronz nacak yapımı
       stoneSickle:
         desc: Toprağın cömertliğini toplamaya başlamak için basit bir taş orak üret.
-        name: Taş orak üret
+        name: Basit orak yapımı
       tarsiliumHatchet:
         desc: Gece semasının karanlığına benzeyen bir nacak üret.
-        name: Tarsilyum nacak üret
+        name: Katrilyum nacak yapımı
       tarsiliumPickaxe:
         desc: Keşiflerini toprağın daha derinlerine taşımak için tarsilyum kazma üret.
-        name: Tarsilyum kazma üret
+        name: Katrilyum kazma yapımı
       hydriliumHatchet:
-        name: Hidrilyum nacak üret
+        name: Hidrilyum nacak yapımı
       hydriliumPickaxe:
-        name: Hidrilyum kazma üret
+        name: Hidrilyum kazma yapımı
       hydriliumSickle:
-        name: Hidrilyum orak üret
+        name: Hidrilyum orak yapımı
         desc: Mükemmel şekil verilen hidrilyum külçesinden yapılmış keskin ve dayanıklı
           bir toplama aleti.
+      copperSickle:
+        name: Bakır orak yapımı
+      ironSickle:
+        name: Demir orak yapımı
+      steelSickle:
+        name: Çelik orak yapımı
+      copperPickaxe:
+        name: Bakır kazma yapımı
+      bronzePickaxe:
+        name: Bronz kazma yapımı
+      ironPickaxe:
+        name: Demir kazma yapımı
+      copperHatchet:
+        name: Bakır nacak yapımı
+      ironHatchet:
+        name: Demir nacak yapımı
+      farganiteHatchet:
+        name: Farganit nacak yapımı
+      jellyfishingNet:
+        name: Denizanası ağı yapımı
+      hydriliumLogSplitter:
+        name: Hidrilyum odun yarıcı yapımı
+      steelPickaxe:
+        name: Çelik kazma yapımı
+      farganitePickaxe:
+        name: Farganit kazma yapımı
+      steelHatchet:
+        name: Çelik nacak yapımı
+      hydriliumMinersMagnet:
+        name: Hidrilyum mıknatıs yapımı
+      theKakesWalkingStick:
+        name: Seyyah bastonu yapımı
     misc:
       hydrilium:
         desc: Hidrilyum yapmak için su yosunuyla volkanik taşı birleştir.
+        name: Hidrilyum yapımı
+      bagofRocks:
+        name: Taş çantası yapımı
+      elderhideRope:
+        name: Bayrıpost halat yapımı
+      kelpRope:
+        name: Su yosunu halat yapımı
+      trash:
+        name: Çöp geri dönüşümü
+      hardenedKelp:
+        name: Su yosunu kurutma
+      rope:
+        name: Keten eğirme
+    fishing:
+      basicFishingRod:
+        name: Basit olta yapımı
+      oakFishingRod:
+        name: Meşe olta yapımı
+      lobsterPot:
+        name: Istakoz kafesi yapımı
+      smallFishingNet:
+        name: Basit balık ağı örme
+      largeFishingNet:
+        name: Büyük balık ağı örme
+      advancedFishingRod:
+        name: Gelişmiş olta yapımı
+      coralFishingSpear:
+        name: Mercan balık mızrağı yapımı
+      elderhideFishingNet:
+        name: Bayrıpost balık ağı yapımı
+      pineFishingRod:
+        name: Çam olta yapımı
+      willowFishingRod:
+        name: Söğüt olta yapımı
+      fishingSpear:
+        name: Balık mızrağı yapımı
+    diving:
+      kelpDivingMask:
+        name: Su yosunu dalış maskesi yapımı
   smithing:
     bars:
       bronzeBar:
-        name: Bronz külçesi dök
+        name: Bronz külçe dökümü
       copperBar:
-        name: Bakır külçesi dök
+        name: Bakır külçe dökümü
       farganiteBar:
         desc: Hazırdaki madenden bir farganit külçesi üret.
-        name: Farganit külçesi dök
+        name: Farganit külçe dökümü
       ironBar:
         desc: Demir madenini sağlam ve kullanışlı bir demir külçesine dönüştür.
-        name: Demir külçesi dök
+        name: Demir külçe dökümü
       steelBar:
-        name: Çelik külçesi dök
+        name: Çelik külçe dökümü
       tarsiliumBar:
-        desc: Hazırdaki madenden bir tarsilyum külçesi üret.
-        name: Tarsilyum külçesi dök
+        desc: Hazırdaki madenden bir katrilyum külçe üret.
+        name: Katrilyum külçe dökümü
+      hydriliumBar:
+        name: Hidrilyum külçe dökümü
+      silverBar:
+        name: Gümüş külçe dökümü
+      goldBar:
+        name: Altın külçe dökümü
+    scrap:
+      farganiteBarScrap:
+        name: Yongadan farganit külçe yapımı
+      copperBarScrap:
+        name: Kırpıntıdan bakır külçe yapımı
+      bronzeBarScrap:
+        name: Kırpıntıdan bronz külçe yapımı
+      ironBarScrap:
+        name: Kırpıntıdan demir külçe yapımı
+      steelBarScrap:
+        name: Kırpıntıdan çelik külçe yapımı
+      tarsiliumBarScrap:
+        name: Kırpıntıdan katrilyum külçe yapımı
+    iron:
+      ironSword:
+        name: Demir kılıç yapımı
+      ironShield:
+        name: Demir kalkan yapımı
+    wooden:
+      woodenSword:
+        name: Tahta kılıç yapımı
+      woodenShield:
+        name: Tahta kalkan yapımı
+    steel:
+      steelSword:
+        name: Çelik kılıç yapımı
+      steelShield:
+        name: Çelik kalkan yapımı
+    copper:
+      copperSword:
+        name: Bakır kılıç yapımı
+      copperShield:
+        name: Bakır kalkan yapımı
+    bronze:
+      bronzeShield:
+        name: Bronz kalkan yapımı
+      bronzeSword:
+        name: Bronz kılıç yapımı
+    tarsilium:
+      tarsiliumSword:
+        name: Katrilyum kılıç yapımı
+      tarsiliumShield:
+        name: Katrilyum kalkan yapımı
+    other:
+      tarsiliumToeBoots:
+        name: Katrilyum burunlu çizme yapımı
+      reinforcedBellows:
+        name: Destekli körük yapımı
+    farganite:
+      gemShield:
+        name: Cevher kalkan yapımı
+      farganiteShield:
+        name: Farganit kalkan yapımı
+      farganiteSword:
+        name: Farganit kılıç yapımı
+  categories:
+    gems:
+      name: Cevherler
+      desc: Çoğunlukla takıcılık için kullanılan değerli taşlar.
+    planks:
+      name: Keresteler
+      desc: Çoğunlukla zanaatkarlık için kullanılan tahta keresteler.
+    pickaxes:
+      name: Kazmalar
+      desc: Madencilik için kullanılan esas alet.
+    hatchets:
+      name: Nacaklar
+      desc: Odunculuk için kullanılan esas alet.
+    sickles:
+      name: Oraklar
+      desc: Toplayıcılık için kullanılan esas alet.
+    fishingNets:
+      name: Balık ağları
+      desc: Ağlı balıkçılık için kullanılan esas alet.
+    fishingSpears:
+      name: Balık mızrakları
+      desc: Mızraklı balıkçılık için kullanılan esas alet.
+    fishingCages:
+      name: Balık kafesleri
+      desc: Kafesli balıkçılık için kullanılan esas alet.
+    rings:
+      name: Yüzükler
+    necklaces:
+      name: Kolyeler
+    swords:
+      name: Kılıçlar
+    shields:
+      name: Kalkanlar
+    gear:
+      name: Teçhizat
+    misc:
+      name: Çeşitli
+      desc: Genellikle diğer eşyaları üretmek için kullanılan çeşitli eşyalar.
+    beverages:
+      name: İçecekler
+    pies:
+      name: Turtalar
+      desc: Genellikle içi dolgulu hamurla yapılan tüketimlik yiyecekler.
+    breadDishes:
+      name: Ekmekli yemekler
+      desc: Genellikle bir çeşit ekmekle yapılan tüketimlik yiyecekler. Gluten içerir.
+    bars:
+      name: Külçeler
+      desc: Çoğunlukla zanaatkarlık ve demircilik için kullanılan metal külçeler.
+    fishDishes:
+      name: Balıklı yemekler
+      desc: Genellikle balıkla yapılan tüketimlik yiyecekler.
+    tools:
+      name: Aletler
+    vegetableDishes:
+      name: Sebzeli yemekler
+      desc: Genellikle sebzeyle yapılan tüketimlik yiyecekler.
+    fishingRods:
+      name: Oltalar
+      desc: Oltalı balıkçılık için kullanılan esas alet.
+  cooking:
+    fish:
+      cookedSeabass:
+        name: Deniz levreği kızartma
+      cookedTrout:
+        name: Alabalık kızartma
+      cookedLobster:
+        name: Istakoz kızartma
+      cookedPerch:
+        name: İspendek kızartma
+      cookedCarp:
+        name: Sazan kızartma
+      cookedJellyfish:
+        name: Denizanası kızartma
+      cookedSquid:
+        name: Kalamar kızartma
+      cookedSwordfish:
+        name: Kılıç balığı kızartma
+      cookedLargemouthBass:
+        name: İri ağızlı levrek kızartma
+      cookedStingray:
+        name: Vatoz kızartma
+      cookedCrayfish:
+        name: Kerevit kızartma
+      cookedStreamEel:
+        name: Yılan balığı kızartma
+      cookedShrimp:
+        name: Karides kızartma
+      cookedMoray:
+        name: Müren kızartma
+      cookedShark:
+        name: Köpek balığı kızartma
+      cookedAnglerfish:
+        name: Fener balığı kızartma
+      cookedPike:
+        name: Turna balığı kızartma
+      cookedSalmon:
+        name: Somon kızartma
+    consumables:
+      saltrum:
+        name: Tuzromu mayalama
+      kelpRolls:
+        name: Su yosunu sarma yapımı
+      porridge:
+        name: Yulaf lapası yapımı
+      jarvonianPastry:
+        name: Jarvonya böreği yapımı
+      salmonPie:
+        name: Somon turtası pişirme
+      veggieSoup:
+        name: Sebze çorbası yapımı
+      mudPie:
+        name: Çamur turtası yapımı
+      cookedMeat:
+        name: Et pişirme
+      mushroomCurry:
+        name: Mantarlı köri yapımı
+      honeyChicken:
+        name: Ballı tavuk yapımı
+      dynamite:
+        name: Dinamit yapımı
+      pancakes:
+        name: Pankek yapımı
+      spicyPumpkinJuice:
+        name: Acılı kabak suyu yapımı
+      bugBait:
+        name: Böcek yem hazırlama
+      nettleTea:
+        name: Isırgan çayı demleme
+      fruitCake:
+        name: Meyveli kek yapımı
+      crabRolls:
+        name: Yengeç sarma yapımı
+      beer:
+        name: Bira mayalama
+      friednoodles:
+        name: Erişte kızartması yapımı
+      schnitzel:
+        name: Şnitzel yapımı
+      pickles:
+        name: Turşu yapımı
+      troutSoup:
+        name: Alabalık çorbası yapımı
+      underwaterSalad:
+        name: Su altı salatası yapımı
+      hamburger:
+        name: Hamburger yapımı
+      stuffedPotato:
+        name: Kumpir yapımı
+      beefStew:
+        name: Etli güveç yapımı
+      spicyPepper:
+        name: Acı biber yapımı
+      frozenBait:
+        name: Dondurulmuş yem hazırlama
+      milk:
+        name: Süt yapımı
+      roastedBellPepper:
+        name: Dolma biber kavurması yapımı
+      wine:
+        name: Şarap mayalama
+      spaghettiAndMeatballs:
+        name: Köfteli spagetti yapımı
+      friedFishSandwich:
+        name: Kızarmış balıklı sandviç yapımı
+      bread:
+        name: Ekmek pişirme
+      bagel:
+        name: Simit pişirme
+      jellySandwich:
+        name: Reçelli sandviç yapımı
+      chocolateMilk:
+        name: Çikolatalı süt yapımı
+      sweetCarrotPie:
+        name: Havuç turtası yapımı
+  hunting:
+    traps:
+      birdhouses:
+        mangroveBirdhouse:
+          name: Mangrov kuş evi yapımı
+        spruceBirdhouse:
+          name: Ladin kuş evi yapımı
+        mapleBirdhouse:
+          name: Akçaağaç kuş evi yapımı
+        teakBirdhouse:
+          name: Tik kuş evi yapımı
+        pineBirdhouse:
+          name: Çam kuş evi yapımı
+        birchBirdhouse:
+          name: Huş kuş evi yapımı
+      net:
+        kelpDriftNet:
+          name: Su yosunu akıntı ağı yapımı
+    arrows:
+      bronzeArrows:
+        name: Bronz ok yapımı
+      tarsiliumArrows:
+        name: Katrilyum ok yapımı
+      simpleBowstring:
+        name: Basit kiriş yapımı
+      copperArrows:
+        name: Bakır ok yapımı
+      ironArrows:
+        name: Demir ok yapımı
+      steelArrows:
+        name: Çelik ok yapımı
+      farganiteArrows:
+        name: Farganit ok yapımı
+    bows:
+      bambooHuntingBow:
+        name: Bambu avcı yayı yapımı
+      elmHuntingBow:
+        name: Karaağaç avcı yayı yapımı
+      mahoganyHuntingBow:
+        name: Maun avcı yayı yapımı
+      oakHuntingBow:
+        name: Meşe avcı yayı yapımı
+  tailoring:
+    clothing:
+      basicLeather:
+        name: Basit deri yapımı
+      qualityLeather:
+        name: Kaliteli deri yapımı
+      elderhideLeather:
+        name: Bayrıpost derisi yapımı
+      linen:
+        name: Keten kumaş yapımı
+  trinketry:
+    gems:
+      shapeJade:
+        name: Yeşim şekilllendirme
+      shapeSunStone:
+        name: Güneş taşı şekillendirme
+      shapeEthernite:
+        name: Semanit şekillendirme
+      shapeRuby:
+        name: Yakut şekillendirme
+      shapeStarPearl:
+        name: Yıldız inci şekillendirme
+      shapeTopaz:
+        name: Topaz şekillendirme
+      shapeWrentmarine:
+        name: Wrentmarin şekillendirme
+      shapeOpal:
+        name: Opal şekillendirme
+    rings:
+      silverOpalRing:
+        name: Gümüş opal yüzük yapımı
+      silverWrentmarineRing:
+        name: Gümüş wrentmarin yüzük yapımı
+      silverTopazRing:
+        name: Gümüş topaz yüzük yapımı
+      silverSunStoneRing:
+        name: Gümüş güneş taşı yüzük yapımı
+      goldWrentmarineRing:
+        name: Altın wrentmarin yüzük yapımı
+      goldSunStoneRing:
+        name: Altın güneş taşı yüzük yapımı
+      silverRubyRing:
+        name: Gümüş yakut yüzük yapımı
+      goldRing:
+        name: Altın yüzük yapımı
+      goldRubyRing:
+        name: Altın yakut yüzük yapımı
+      goldEtherniteRing:
+        name: Altın semanit yüzük yapımı
+      goldOpalRing:
+        name: Altın opal yüzük yapımı
+      goldStarPearlRing:
+        name: Altın yıldız inci yüzük yapımı
+      silverStarPearlRing:
+        name: Gümüş yıldız inci yüzük yapımı
+      silverJadeRing:
+        name: Gümüş yeşim yüzük yapımı
+      silverRing:
+        name: Gümüş yüzük yapımı
+      goldTopazRing:
+        name: Altın topaz yüzük yapımı
+      goldJadeRing:
+        name: Altın yeşim yüzük yapımı
+      silverEtherniteRing:
+        name: Gümüş semanit yüzük yapımı
+    amulets:
+      amuletOfTheBat:
+        name: Yarasa kolyesi yapımı
+      amuletOfTheCoolingIce:
+        name: Buz sarkıtı kolyesi yapımı
+      amuletOfTheBeaver:
+        name: Kunduz kolyesi yapımı
+      jarvonianFlowerNecklace:
+        name: Jarvonya çiçeği kolyesi yapımı
+      amuletOfTheSharkTooth:
+        name: Köpek balığı dişi kolyesi yapımı
+      amuletOfTheFinding:
+        name: Bulucu kolye yapımı
+      amuletOfTheHeron:
+        name: Balıkçıl kolyesi yapımı
+      amuletOfTheLuckyRabbitFoot:
+        name: Uğurlu tavşan ayağı kolyesi yapımı
+      amuletOfTheShrimp:
+        name: Karides kolyesi yapımı
+      amuletOfTheMeasuringSpoons:
+        name: Ölçü kaşığı kolyesi yapımı
+      amuletOfTheAnimalKingdom:
+        name: Hayvanlar alemi kolyesi yapımı
+      amuletOfTheEel:
+        name: Yılan balığı kolyesi yapımı
+  foraging:
+    other:
+      mangroveBasket:
+        name: Mangrov sepet yapımı
