@@ -139,10 +139,10 @@ maps:
       'feminine': Weiblich
   cooldown:
     time:
-      'days': '{days}<c>d</c>'
-      'hours': '{hours}<c>h</c>'
-      'minutes': '{minutes}<c>m</c>'
-      'seconds': '{seconds}<c>s</c>'
+      'days': ''
+      'hours': ''
+      'minutes': ''
+      'seconds': ''
 plurals:
   achievements:
     phrases:
@@ -819,6 +819,9 @@ singulars:
   faction:
     phrases:
       openFaction: Fraktion öffnen
+      unclaimedRewards: Nicht eingelöste Belohnungen {count}
+      repeatingReward: Wiederholbare Belohnung
+      nextRewardUnlocked: 'Nächste Belohnung freigeschaltet:'
   journal:
     phrases:
       jobs: Jobs
@@ -872,6 +875,9 @@ singulars:
         <c i=0>neues erstellen</c> möchtest, klicke auf den Button unten. Du kannst
         auch deine <c i=1>aktuell ausgestattete Ausrüstung kopieren</c>, wenn du ein
         neues Ausrüstungs-Set erstellst.
+      gearSetManageShortDesc: Um deine Ausrüstungs-Sets zu erstellen, zu importieren
+        oder zu bearbeiten, kannst du <c i=0>Verwalten</c> drücken.
+      noGearSets: Du hast noch keine Ausrüstungs-Sets erstellt.
     errors:
       keywordError: 'Ausrüstungs-Set hat bereits: <object id="{keyword}" />'
       duplicateItem: Der Gegenstand existiert bereits im Ausrüstungs-Set
