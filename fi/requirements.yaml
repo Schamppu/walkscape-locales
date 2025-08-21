@@ -38,7 +38,7 @@ singulars:
       alwaysShow="true" />-aktiviteettia <numberProgress current="{current}" max="{max}"
       /> kertaa.
     intermediateShipRepair: Suorita <object id="activity-ship_repair_(intermediate)-44f2f2e7-bef1-437f-ac35-bf64b97cc249"
-      alwaysShow="true" />-aktiviteettia <numberProgress current="{current}" max="{max}"
+      alwaysShow="true" /> -aktiviteettia <numberProgress current="{current}" max="{max}"
       /> kertaa.
     firewoodMaking: Toista <object id="activity-firewood_making-407263a4-4ee1-4383-a624-2a7ed70c4b10"
       alwaysShow="true" /> -aktiviteettia <numberProgress current="{current}" max="{max}"
@@ -65,13 +65,13 @@ singulars:
     jarvoniaReputation: Saavuta mainetta <numberProgress current="{current}" max="{max}"
       /> verran ryhmittymään <realm realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db"
       />.
-    halflingRebelsReputation: Kerää <numberProgress current="{current}" max="{max}"
+    halflingRebelsReputation: Saavuta <numberProgress current="{current}" max="{max}"
       /> mainetta ryhmittymässä <realm realm="faction-halfling_rebels-394eaff8-2749-4473-949c-80da531a415e"
       />.
   mainSkill:
     text: Kun suoritat taitoa <skill skill="{skill}"/>
   skillLevel:
-    text: Vähintään <skill skill="{skill}" level="{level}" vaadittu/>
+    text: Kehitä taitojasi tasolle <skill skill="{skill}" level="{level}"needed/>
   itemAnywhereWithYou:
     text: Esine <item id="{item}"/> on mukanasi.
   itemEquipped:
@@ -81,8 +81,8 @@ singulars:
   itemAnywhere:
     text: Omista esine <item id="{item}"/>.
   distinctItemsEquippedKeyword:
-    text: Pidä <numberProgress current="{current}" max="{max}" /> kappaletta esinettä
-      <object id="{obj}" /> puettuna.
+    text: Pidä <numberProgress current="{current}" max="{max}" /> erilaista kappaletta
+      esinetyyppiä <object id="{obj}" /> puettuna.
   totalSteps:
     text: Kävele yhteensä <numberProgress current="{current}" max="{max}" /> askelta.
   characterLevel:
@@ -92,19 +92,20 @@ singulars:
   overencumbered:
     text: Ylitä reppusi kantoraja.
   gear:
-    underwaterBasketweaving: Kävele <numberProgress current="{current}" max="{max}"
-      /> <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
-      alwaysShow="true" />-askelta kohteessa <object id="location-fertile_shallows-6561e4b5-fce3-4307-a641-86ca5aee36d6"
-      alwaysShow="true" />.
+    underwaterBasketweaving: <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> kertaa
+      kohteessa <object id="location-fertile_shallows-6561e4b5-fce3-4307-a641-86ca5aee36d6"
+      alwaysShow="true" />
     swimmingExpert: Toista <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> kertaa.
-    tinkering: Kävele <numberProgress current="{current}" max="{max}" /> <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
-      />-askelta kohteessa <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
-      alwaysShow="true" />.
-    iceSculpting: Kävele <numberProgress current="{current}" max="{max}" /> <object
-      id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab" alwaysShow="true"
-      />-askelta kohteessa <object id="location-frusenholm-5ddb0735-4582-4858-80a0-7489f1b043a2"
-      alwaysShow="true" />.
+    tinkering: <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
+      /> <numberProgress current="{current}" max="{max}" /> kertaa kohteessa <object
+      id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a" alwaysShow="true"
+      />
+    iceSculpting: "Suorita seuraavia aktiviteetteja:\n<object id=\"activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab\"\
+      \ alwaysShow=\"true\" /> <numberProgress current=\"{current}\" max=\"{max}\"\
+      \ /> kertaa kohteessa <object id=\"location-frusenholm-5ddb0735-4582-4858-80a0-7489f1b043a2\"\
+      \ alwaysShow=\"true\" />"
     beginnerSkydisc: Harjoittele aktiviteetilla <object id="activity-frisbee_golfing_(beginner)-0fb41f4d-f46b-4a6d-acdf-f2525654c714"
       alwaysShow="true" /> kohteessa <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> kertaa.
