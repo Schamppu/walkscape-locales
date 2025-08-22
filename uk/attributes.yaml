@@ -50,7 +50,7 @@ singulars:
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: ''
+        text: '<stat s="workEfficiency"/> під час <supp k="skill"/> в <supp k="realm"/>.'
     fineMaterialFind:
       global:
         text: Глобальне <stat s="fineMaterialFind"/>
@@ -144,6 +144,101 @@ singulars:
         text: <stat s="doubleAction"/> під час подорожі
       whileRealm:
         text: Глобальна <stat s="doubleAction"/> перебуваючи в <supp k="realm"/>
+      whileTravelingAndRealm:
+        text: <stat s="doubleAction"/> під час подорожі в <supp k="realm"/>
+      whenKeywordSetBonus:
+        text: Глобальна <stat s="doubleAction"/> якщо носити принаймні <supp k="quantity"/>
+          предметів <supp k="keyword"/>.
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="doubleAction"/> під час <supp k="skill"/> в локації <supp k="keyword"/>.
+      whileMainSkillAndRealm:
+        text: <stat s="doubleAction"/> під час <supp k="skill"/> в <supp k="realm"/>.
+      whileLocationKeyword:
+        text: Глобальна <stat s="doubleAction"/> перебуваючи в локації <supp k="keyword"/>.
+      whileSkillGroup:
+        text: <stat s="doubleAction"/> під час будь-якої навички <supp k="skillGroup"/>.
+    doubleRewards:
+      whileMainSkill:
+        text: <stat s="doubleRewards"/> під час <supp k="skill"/>
+      whenAchievementPoints:
+        text: Глобальні <stat s="doubleRewards"/> коли <supp k="achievementPoints"/>
+      whenKeywordSetBonus:
+        text: Глобальні <stat s="doubleRewards"/> якщо носити принаймні <supp k="quantity"/>
+          предметів <supp k="keyword"/>.
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="doubleRewards"/> під час <supp k="skill"/> в локації <supp
+          k="keyword"/>.
+      whileActivity:
+        text: Глобальні <stat s="doubleRewards"/> під час виконання <supp k="activityType"/>.
+      whileSkillGroup:
+        text: <stat s="doubleRewards"/> під час будь-якої навички <supp k="skillGroup"/>.
+      global:
+        text: Глобальні <stat s="doubleRewards"/>
+      whileRealm:
+        text: Глобальні <stat s="doubleRewards"/> перебуваючи в <supp k="realm"/>
+      whileMainSkillAndRealm:
+        text: <stat s="doubleRewards"/> під час <supp k="skill"/> в <supp k="realm"/>.
+      whileLocationKeyword:
+        text: Глобальні <stat s="doubleRewards"/> перебуваючи в локації <supp k="keyword"/>.
+    rollSpecialTable:
+      whileMainSkill:
+        text: <stat s="rollSpecialTable"/> під час <supp k="skill"/>
+      global:
+        text: <stat s="rollSpecialTable"/>
+    experience:
+      global:
+        text: Глобальний <stat s="bonusExperience"/>
+      globalSkillXp:
+        text: Глобальний <stat s="bonusExperience"/> до <supp k="skill"/>
+      whileMainSkill:
+        text: <stat s="bonusExperience"/> під час <supp k="skill"/>
+      whileTraveling:
+        text: <stat s="bonusExperience"/> під час подорожі
+      whileRealm:
+        text: Глобальний <stat s="bonusExperience"/> перебуваючи в <supp k="realm"/>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="bonusExperience"/> під час <supp k="skill"/> в локації <supp
+          k="keyword"/>.
+      whileMainSkillAndRealm:
+        text: <stat s="bonusExperience"/> під час <supp k="skill"/> в <supp k="realm"/>.
+      whileLocationKeyword:
+        text: Глобальний <stat s="bonusExperience"/> перебуваючи в локації <supp k="keyword"/>.
+      whileSkillGroup:
+        text: <stat s="bonusExperience"/> під час будь-якої навички <supp k="skillGroup"/>.
+    travelingDistance:
+      whileTraveling:
+        text: <stat s="travelingDistance"/>
+    stepsRequired:
+      whileMainSkill:
+        text: <stat s="stepsRequired"/> під час <supp k="skill"/>
+      whileTraveling:
+        text: <stat s="stepsRequired"/> під час подорожі
+      whenKeywordSetBonus:
+        text: Глобальні <stat s="stepsRequired"/> якщо носити принаймні <supp k="quantity"/>
+          предметів <supp k="keyword"/>.
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="stepsRequired"/> під час <supp k="skill"/> в локації <supp
+          k="keyword"/>.
+      whileMainSkillAndRealm:
+        text: <stat s="stepsRequired"/> під час <supp k="skill"/> в <supp k="realm"/>.
+      whileRealm:
+        text: Глобальні <stat s="stepsRequired"/> перебуваючи в <supp k="realm"/>
+      whileLocationKeyword:
+        text: Глобальні <stat s="stepsRequired"/> перебуваючи в локації <supp k="keyword"/>.
+      whileSkillGroup:
+        text: <stat s="stepsRequired"/> під час будь-якої навички <supp k="skillGroup"/>.
+      global:
+        text: Глобальні <stat s="stepsRequired"/>
+    noMaterialsConsumed:
+      global:
+        text: Глобальне <stat s="noMaterialsConsumed"/>
+      whileMainSkill:
+        text: <stat s="noMaterialsConsumed"/> під час <supp k="skill"/>
+      whileTraveling:
+        text: <stat s="noMaterialsConsumed"/> під час подорожі
+    inventorySpace:
+      global:
+        text: <stat s="inventorySpace"/>
   special:
     findCollectibles:
       whileMainSkillAndRealm:
