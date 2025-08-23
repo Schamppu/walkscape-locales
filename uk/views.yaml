@@ -16,6 +16,17 @@ singulars:
       cantStartActivity: Неможливо почати діяльність
       requirementsNotMet: Вимоги не виконані
       guideTip: Порада дня
+      locationIsUnknown: Місцезнаходження невідоме. Коли ви дослідите це місце, ви
+        зможете побачити діяльності тут.
+      consumables: Споживне
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Глобальна ефективність роботи
+        <c>-{penalty}%</c>
+      notAffectingTraveling: (не впливає на ефективність подорожей)
+      requirements: Вимоги
+      rewards: Нагороди
+      levelActivity: Діяльність <c>{level}</c> рівня <object id="{skill}"/>
+      noActivitiesInLocation: В <object id="{location}"/> немає діяльностей.
+      activitiesInLocation: Доступні діяльності в <object id="{location}"/>
     info:
       consumablesUsage: Ви можете обрати <c>їжу</c> та <c>зілля</c> для використання
         під час діяльності.
@@ -27,6 +38,18 @@ singulars:
     phrases:
       skills: Навички
       savePicture: Зберегти зображення
+      checkOut: Ось мій персонаж WalkScape {name}. Подивіться!\nhttps://walkscape.app
+      checkOutSubject: Подивіться на мій прогрес у WalkScape!
+      stepsToNextLevel: Кроків до наступного рівня <c>{steps}</c>
+      stepsOfLastWeek: Кроки за останні 7 днів
+      totalLevel: Загальний рівень
+      level: 'Рівень персонажа: <c>{level}</c>'
+    info:
+      skillBreakdown: Ось повна розбивка всіх навичок, які ваш персонаж підвищив п
+        rotex вашої подорожі. Натисніть на будь-яку навичку, щоб побачити детальнішу
+        інформацію про них і те, що вони розблоковують.
+      eachLevelIncreasesStepBank: Кожен рівень персонажа після <c>{level}</c> рівня
+        збільшує максимальну кількість збережених кроків на <c>{amount}</c>.
   rewards:
     phrases:
       alreadyClaimed: Вже отримано
@@ -42,6 +65,10 @@ singulars:
     phrases:
       deposit: Покласти
       withdraw: Взяти
+      noItemsInventory: У вашому інвентарі немає предметів.
+      youAreNotAtABank: <c>Ви не знаходитеся в місці, де є банк</c>. Ви можете використовувати
+        банк тільки після подорожі в місце, де є банк.
+      noItemsBank: У вашому банку немає предметів.
   mainMenu:
     phrases:
       authenticating: Автентифікація...
@@ -55,31 +82,163 @@ singulars:
       logIn: Увійти
       register: Зареєструватися
       password: Пароль
+      lostInternet: Ваш пристрій втратив інтернет-з'єднання. Очікування з'єднання...
+      areYouSureYouWantToDelete: Ви впевнені, що хочете видалити <hl>{name}</hl>?
+      dontDoIt: Не робіть цього, якщо ви не впевнені.
+      ifYouAreSure: Якщо ви впевнені, напишіть <c>DELETE</c> у полі і натисніть продовжити.
+      deleteWord: DELETE
+      deletingCharacter: Видалення вашого персонажа <hl>незворотне</hl>.
+      areYouAbsolutelySure: Ви абсолютно впевнені? Після цього кроку ви назавжди втратите
+        свого персонажа.
+      loadingGame: Завантаження гри... будь ласка, зачекайте!
+      welcomeToWalkscape: Ласкаво просимо до WalkScape, <hl>незнайомець</hl>. Будь
+        ласка, увійдіть.
+      pleaseEnterCredentials: Будь ласка, введіть облікові дані WalkScape.
+      accountPage: Сторінка облікового запису
+      testFlight: Ви можете завантажити останню версію з <c>TestFlight</c>.
+      chooseCharacter: Оберіть свого персонажа або створіть нового.
+      email: Ел. пошта / Користувач
+      noBetaAccess: Немає доступу до бети.
+      googlePlay: Оновити через Google Play
+      support: Підтримайте гру
     loadingStates:
       loadingComplete: Завантаження завершено!
       dataLoadingComplete: Завантаження даних завершено!
+      localizationFiles: Завантаження файлів локалізації
+      gameVersion: Отримання версії гри
+      initializingPlayer: Ініціалізація даних гравця
+      startingGameLoad: Початок завантаження ігрових даних
+      validatingGame: Перевірка ігрових даних з сервера
+      checkingLocalizations: Перевірка локалізацій з сервера
+      initializingProviders: Ініціалізація постачальників
+      readingLocalGameData: Читання локальних ігрових даних
+      initializingObjects: Ініціалізація ігрових об'єктів
+      initializingDatabases: Ініціалізація баз даних
+      readingCloudData: Читання хмарних даних
+      cleaningUpData: Очищення даних
+      loadingCharactersFromCloud: Завантаження персонажів з хмари
   queue:
     types:
       traveling: Подорож
+      crafting: Ремесло
+      activity: Діяльність
     phrases:
       queue: Черга
       queuedActions: Дії в черзі
+      travelingTo: <object id="{from}"/> до <object id="{to}"/>
+      untilInventoryFull: Виконувати, поки інвентар не заповниться
+      switchingToGearSet: Перемикання на набір спорядження <c>{name}</c>
+      noGearSetFound: Обраний набір спорядження не знайдено, ви його видалили?
+      activityInLocation: <object id="{activity}"/> в <object id="{location}"/>
+      noPathFound: Не знайдено шляху до пункту призначення.
+    options:
+      switchGearSet:
+        text: Перемкнути на набір спорядження
+        desc: Перемкнути на обраний набір спорядження перед початком цієї дії.
+      depositUnlockedItems:
+        text: Здати розблоковані предмети
+        desc: Здає всі розблоковані предмети з вашого інвентаря до банку, якщо він
+          доступний у будь-якому з місць, через які ви проходите.
+      withdrawGearSet:
+        text: Вяти набір спорядження
+        desc: Вибирає набір спорядження з банку, якщо він доступний у будь-якому з
+          місць, через які ви проходите.
+      removeFromQueue:
+        text: Видалити з черги
+        desc: Видаляє цю дію та всі наступні дії з черги.
+      cancelGearSetSwitch:
+        text: Скасувати перемикання спорядження
+        desc: Скасовує обране перемикання спорядження для цієї дії.
+    suggestedOptions:
+      startActivity: Діяльність
+      startCrafting: Ремесло
+      startTraveling: Подорож
+    suggestions:
+      traveling:
+        onceYouArriveTo: Додати дію до черги в <object id="{location}"/>?
+      activity:
+        onceInventoryIsFull: Коли ваш інвентар заповниться, чи бажаєте ви щось зробити?
+        onceAllActionsAreCompleted: Коли всі дії будуть виконані, чи бажаєте ви щось
+          зробити?
+      crafting:
+        onceCertainRarityIsCrafted: Коли ви виготуєте певну рідкість або використаєте
+          всі матеріали, чи бажаєте ви щось зробити?
+        onceAllItemsAreCrafted: Коли всі предмети будуть виготовлені, чи бажаєте ви
+          щось зробити?
   permissions:
     phrases:
       connectAppleHealth: Підключити до Apple Health
       connect: Підключити
+      youNeedToGivePermissions: Вам потрібно надати наступні дозволи, щоб продовжити
+        гру. Натисніть на дозволи, щоб надати їх.
+      pedometerPermission: Дозвіл лічильника кроків
+      pedometerPermissionExplanation: Нам потрібен цей дозвіл, щоб використовувати
+        дані лічильника кроків вашого пристрою.
+      noDeviceFound: Пристрій не знайдено. Переконайтеся, що ви натиснули кнопку <c>Підключити
+        до Apple Health</c> вище і надали дозвіл на читання даних Apple Health.
+      connectAppleHealthExplanation: Вам потрібно підключитися до Apple Health, щоб
+        ми могли читати кроки, синхронізовані вашим годинником, і бачити, які пристрої
+        ви підключили. Якщо ви вперше використовуєте WalkScape, вас попросять надати
+        дозвіл на читання даних з Apple Health.
+      exactAlarmPermission: Дозвіл будильника
+      continueWillEnable: Кнопка Продовжити буде активна після того, як ви надасте
+        необхідні дозволи вище.
+      comingSoonToAndroid: Невдовзі на Android
+      changeStepCountingSource: Змінити джерело підрахунку кроків
+      stepCountingSource: Джерело підрахунку кроків
+      youCanChangeAnyTime: Ви можете змінити джерело підрахунку кроків в <c>Налаштуваннях
+        гри</c> в будь-який момент.
     deviceSource:
       phone: Телефон
       appleWatch: Apple Watch
       watch: Інший годинник
+      featureDisabled: Зміна джерел введення була дистанційно вимкнена на деякий час.
+        Буде використовуватися стандартний педометр телефона.
   achievements:
     phrases:
       notUnlocked: Заблоковане досягнення
       rewardProgress: Прогрес нагород
       showRewards: Показати нагороди
+      totalProgressUnlocks: Відкриття загального прогресу
+      checkPointUnlocks: Відкриття контрольних точок
+      unclaimedRewards: 'Неотримані нагороди: '
+    info:
+      viewDescription: Відкривайте досягнення, щоб отримати <hl>очки досягнень</hl>.
+        При певній кількості очок досягнень ви відкриваєте спеціальні нагороди. Деякі
+        досягнення також дають нагороди самі по собі за їх відкриття.
+      specialItems: Спеціальні предмети, такі як <c>колекційні предмети</c>, <c>квестові
+        предмети</c> і <c>артефакти</c>, збираються під час вашої подорожі у WalkScape.
+        Ви можете перевірити їх тут. Колекційні предмети дають вам прогрес очок досягнень.
+      collectibleItems: Колекційні предмети - це речі, які ви можете отримати зі світу
+        WalkScape. Існує кілька типів колекційних предметів, які ви можете спробувати
+        зібрати. Вони не займають місця в інвентарі і завжди з вашим персонажем.
+      noCollectibleItems: У вас ще немає зібраних колекційних предметів.
+      totalProgressUnlocks: Ви отримаєте ці нагороди на основі вашого загального прогресу
+        в досягненнях, і ви втрачаєте доступ до предметів, якщо стає доступно більше
+        очок досягнень.
+      checkPointUnlocks: Ці досягнення доступні на певних контрольних точках очок
+        досягнень. Ви не втратите доступ до них, навіть якщо стане доступно більше
+        очок досягнень.
   crafting:
     phrases:
       recipes: Рецепти
+      materials: Матеріали
+      rewards: Нагороди
+      requirements: Вимоги
+      requirementsNotMet: Ви не відповідаєте вимогам.
+      requiresOneOfTheFollowing: Потребує один із наступних матеріалів.
+      requiresMaterial: Потребує матеріал.
+      noMaterials: У вас зараз немає матеріалів для ремісництва.
+      noServiceRequirements: Немає вимог до послуг.
+      noMaterialsThatCouldBeUsed: У вашому інвентарі немає матеріалів, які можна використати
+        для ремісництва.
+      showingRecipiesThatUses: Показую рецепти, які використовують
+      requiresService: Потребує послугу.
+    errors:
+      notSameQuality: Матеріали мають бути або всі високої якості, або всі звичайні
+      noService: Вимога до послуги не виконана
+      noMaterials: Бракує матеріалів для ремісництва
+      skillRequirementsNotMet: Вимоги до навичок не виконані
   abilities:
     phrases:
       useAbility: Використати здібність
@@ -87,16 +246,33 @@ singulars:
       noAction: Немає дії
       holdToCast: Утримувати для застосування
       holdToUse: Утримувати для використання
+      abilities: Здібності
+    info:
+      youHaveNoAbilities: <hl>У вас немає здібностей</hl>. Певне спорядження у грі
+        може надати вам здібності, які ви можете використати для отримання миттєвої
+        користі з перезарядкою.
+      abilitiesInfo: Здібності - це спеціальні дії, які ви можете використати для
+        отримання миттєвої користі. Здібності мають перезарядку, яку ви маєте очікати
+        перед повторним використанням.
   cooldowns:
     phrases:
       noCooldown: Немає перезарядки.
+      followingMustBeTrueToUse: 'Вимоги для використання не виконані:'
+      followingMustBeTrueToTick: 'Наступне має бути правдою, щоб перезарядка зменшилась:'
+      cooldownRemaining: 'Залишилося перезарядки:'
+      cooldownReady: 'Перезарядка: Готово'
   faction:
     phrases:
       openFaction: Відкрити фракцію
+      unclaimedRewards: Неотримані нагороди {count}
+      repeatingReward: Повторювана нагорода
+      nextRewardUnlocked: 'Наступна нагорода відкрита:'
   treasury:
     phrases:
       openChest: Відкрити
       openAll: Відкрити все
+      noItems: У вас немає скарбів для відкриття. Ви можете отримати скрині з різних
+        активностей.
   jobs:
     phrases:
       rewards: Нагороди за виконання
@@ -107,6 +283,22 @@ singulars:
       collectRewards: Зібрати нагороди
       giveItems: Віддати предмети
       give: Віддати
+      abandonJob: Покинути роботу
+      youMustBeInLocation: Ви маєте бути в тому ж місці, що і <object id="{obj}"/>,
+        щоб повернути предмети.
+      youMustBeInLocationToCollect: Ви маєте бути в тому ж місці, що і <object id="{obj}"/>,
+        щоб зібрати нагороди.
+      hasNoBank: У цьому місці немає банку.
+      hasNoItemsInInventory: У вашому інвентарі немає підходящих предметів.
+      hasNoItemsInBank: У вашому банку немає підходящих предметів.
+      noJobsAvailable: 'У цьому місці зараз немає доступних робіт. Нові роботи будуть
+        доступні через:'
+      refreshIn: 'Дошка роботи буде оновлена через:'
+    dialogs:
+      abandonJob:
+        title: Покинути роботу
+        text: Ви впевнені, що хочете покинути цю роботу? Ви втратите весь прогрес
+          і нагороди з цієї роботи.
   inventory:
     phrases:
       treasury: Скарбниця
@@ -119,26 +311,107 @@ singulars:
       allSkills: Всі навички
       duration: Тривалість
       inUse: Використовується
+      longPressTip: <c>Порада:</c> Тривале натискання на стос предметів обирає всі
+        подібні стоси.
+      areYouSureToDrop: Ви впевнені, що хочете викинути предмети? Предмети зникнуть
+        навсегви після викидання.
+      itemsInUse: Ви обрали предмети, які вже використовуються. Ви не можете викинути
+        або покласти в банк предмети, які використовуються.
+      slots: Слоти <c>{slots}</c>
+      slotsCount: 'Слоти:'
+      selectedStacks: Обрано <c>{stacks}</c> стосів
+      requirementsNotMet: Вимоги не виконані.
+      slotDoesntExist: Цей слот предмета більше не існує.
+      allItemsInUse: Усі ці предмети зараз використовуються і не можуть бути викинуті.
+      cantBeDropped: Предмет не може бути викинутий.
+      oneOrMoreCantBeDropped: Один або кілька предметів не можуть бути викинуті.
+      abilities: Здібності
+      equipToRingOne: Одягнути в слот кільця 1
+      equipToRingTwo: Одягнути в слот кільця 2
+      equipToToolSlot: Одягнути в слот інструменту {id}
+      noItemEquipped: Предмет не екіпіровано
+      noItemSelected: Предмет не обрано
+      disableWhenChanging: Вимкнути при зміні активності
+      enableWhenBack: Повторно вмикнути при початку активності, де раніше використовувався
+      selectedConsumable: Обраний витратний предмет
+      consumables: Витратні предмети
+      noConsumableSelected: Витратний предмет не обрано. Ви можете обрати один знизу.
+      noConsumables: У вашому інвентарі немає витратних предметів.
+      noFoodConsumables: У вашому інвентарі немає <hl>їжі</hl>.
+      noPotionConsumables: У вашому інвентарі немає <hl>зіль</hl>.
     options:
       expandInventory: Розширити інвентар
       showMaterials: Показати матеріали
       showGear: Показати спорядження
       showConsumables: Показати витратні предмети
+    info:
+      noItemEquipped: Предмет не екіпіровано. \n\n Ви можете екіпірувати предмет,
+        обравши його зі списку нижче і натиснувши "Екіпірувати".
+      noItemsFound: У вашому інвентарі не знайдено предметів, які підійшли б для цього
+        слота.
   trade:
     phrases:
       total: Всього
+      restockIn: 'Поповнення через: '
+      buying: Купівля {amount}
+      selling: Продаж {amount}
+      trade: ТОРГІВЛЯ
   characterCreation:
     phrases:
       bodyType: Тип тіла
       characterName: Ім'я персонажа
+      race: Раса
+      chooseABodyType: Оберіть тип тіла
+      bodyTypeA: A
+      bodyTypeB: B
+    info:
+      rememberSwipe: Пам'ятайте, що ви можете провести назад, щоб змінити обрані варіанти
+        в будь-який момент під час створення персонажа.
   settings:
     categories:
       notifications:
         title: Сповіщення
+        stepCountInterval: Інтервал сповіщень
+        stepCountNotifications: Сповіщення про кількість кроків
+        notificationType: Тип сповіщення
       locales:
         changeLanguage: Змінити мову
+        title: Мова
+        chooseALanguageInfo: Натисніть кнопку вище, щоб відкрити меню вибору мови.
+      dataSource:
+        title: Джерело даних
+        thisPhone: Цей телефон
+        otherSource: Інше джерело
+        lastSync: 'Остання синхронізація: {timestamp}'
+        changeWarning:
+          title: Змінити джерело даних?
+          description: Зверніть увагу, що це може призвести до втрати кроків приблизно
+            в час зміни.
+      account:
+        title: Обліковий запис
+        visibility: Видимість профіля
+      character:
+        title: Персонаж
+        anonOnLeaderboard: Анонімно в таблиці лідерів
+        hideSteps: Приховати кроки
+        exportData: Експортувати дані персонажа в буфер
+      gameplay:
+        title: Ігровий процес
+        stopWhenOverEncumberedDefault: Зупинятися при перевантаженні за замовчуванням
+      closedBeta:
+        title: Закрита бета
+        clearStepsGraph: Очистити графік кроків
+        useThisToClear: Використовуйте це, якщо хочете скинути графік кроків. Корисно,
+          якщо ви отримали кроки через помилки і хочете скинути графік.
     phrases:
       settings: Налаштування
+      exitToCharacterSelection: Вийти до вибору персонажа
+      stepSourceInfoDesc: Дивіться детальнішу інформацію про джерела кроків і їх відмінності,
+        натиснувши кнопку нижче.
+      stepSourceInfo: Інформація про джерело кроків
+      connectionInfoAndroid: Підтримка розумних годинників для Android невдовзі. Наразі
+        підтримується лише телефон як джерело підрахунку кроків.
+      gameVersion: Версія гри {version}
   gearSets:
     phrases:
       gearSets: Набори спорядження
@@ -146,15 +419,47 @@ singulars:
       toolSlot: Слот інструменту
       default: За замовчуванням
       showAttributes: Показати атрибути
+      forActivities: 'Для активностей: '
+      noActivitiesSelected: Не обрано активностей
+      sortBy: 'Сортувати за: '
+      level: 'Рів. '
+      gear: Спорядження
+      tools: Інструменти
+      name: Назва
+      unequipGear: Зняти спорядження
+      unequipTools: Зняти інструменти
+      noItemSelected: Предмет не обрано
+      newSetDefaultName: Мій новий набір спорядження
+      importedGearSetDefaultName: Імпортований набір спорядження
+    errors:
+      duplicateItem: Предмет вже існує в наборі спорядження
+    info:
+      noGearSets: Ви ще не створили жодного набору спорядження.
   location:
     phrases:
       factions: Фракції
       routes: Маршрути
       owner: Власник
+      activities: Активності
+      buildings: Будівлі
+      noActivites: У цьому місці немає доступних активностей.
+      tapToShowRoutes: Натисніть, щоб показати маршрути
+      jobBoard: Дошка об'яв
+      jobs: Робота
+      showingRoutesFrom: Місця призначення з <object id="{from}"/>.
+      noRoutesFromLocation: Немає місць призначення з <object id="{from}"/>.
+      services: Послуги
   pfpCreation:
     buttons:
       randomize: Випадково
       choose: Обрати
+      enableFaceAccessory: Увімкнути аксесуар для обличчя
+      enableBackAccessory: Увімкнути аксесуар на спину
+      enableEyeAccessory: Увімкнути аксесуар для очей
+      enableFacepaint: Увімкнути розмалювання обличчя
+      enableDynamicBackground: Увімкнути динамічний фон
+      showHat: Увімкнути головні убори
+      hideHat: Увімкнути головні убори
     phrases:
       mainOptions: Основні опції
       extras: Додатково
@@ -162,6 +467,10 @@ singulars:
       variants: Варіанти
       resetToDefault: Скинути до стандартного
       colorOptions: Опції кольору
+      dynamicBackground: Динамічний фон змінює зображення фону відповідно до місцезнаходження
+        вашого персонажа.
+      defaultExpression: Стандартний вираз
+      noVariantSelected: Варіант не обрано
   worldMap:
     phrases:
       pointsOfInterest: Цікаві місця
@@ -174,8 +483,309 @@ singulars:
       totalSkillXp: Всього досвіду навичок
       highestStepsIn24Hours: Найбільше кроків за 24 год
       reputation: Репутація
+      lastUpdated: 'Останнє оновлення: <c>{updatedAt}</c>.'
+      recordedFrom: Записано з <c>{from}</c> до <c>{to}</c>.
+    info:
+      stats: Збірка статистики з кожного кроку, який ви зробили у світі Аренуму.
+      reputation: Репутація - це міра того, наскільки ви відомі в різних фракціях
+        WalkScape.
+      chartWarning:
+        title: Недоліки в графіках
+        description: Декілька гравців повідомили про проблеми з неточністю графіків
+          кроків, спричинені великими змінами за лаштунками в попередньому оновленні.
+          Якщо ви стикаєтеся з проблемами, коли графіки показують значно відмінні
+          показники від інших джерел, це найімовірніша причина. Сама ігрова логіка
+          повинна працювати як раніше, а проблеми з графіками будуть вирішені в майбутніх
+          оновленнях.
   leaderboards:
     phrases:
       first: Перший
       me: Я
       last: Останній
+      show: Показати
+      everyone: Усі
+      friends: Друзі
+      leaderboards: Таблиці лідерів
+      loadingPage: Завантаження сторінки...
+      totalSteps: Всього кроків
+      totalLevel: Загальний рівень
+      totalExperience: Загальний досвід
+      achievementPoints: Очки досягнень
+  locales:
+    phrases:
+      language: Мова
+      helpToTranslate: WalkScape перекладається <c>спільнотою</c>. Допоможіть нам
+        перекласти гру на більше мов і розширити поточні переклади, відвідавши <a
+        href="https://wiki.walkscape.app/wiki/Localization">Посібник по перекладу</a>.
+        Допомога дуже вдячна! ❤️
+      chooseALanguage: Оберіть мову зі списку нижче.
+      percentExplanation: '% показує, скільки перекладено.'
+      selectGrammaticalGender: Оберіть граматичний рід
+      grammaticalGenderExplanation: Обраний граматичний рід впливає на те, як тексти
+        інтерфейсу гри звертаються до вас.
+      youCanChangeAnyTime: Ви можете змінити мову в <c>Налаштуваннях гри</c> в будь-який
+        момент.
+  wardrobe:
+    phrases:
+      noFaceAccessories: У вас немає аксесуарів для обличчя.
+      noBackAccessories: У вас немає аксесуарів на спину.
+      noEyeAccessories: У вас немає аксесуарів для очей.
+      noHeadwear: У вас немає головних уборів.
+  journal:
+    info:
+      jobInfo: Одання - це <c>прості і повторювані завдання</c>, які ви можете виконати
+        для отримання нагород. Ви можете приймати роботу з <c>дошок об’яв</c> у різних
+        місцях, наприклад, у містах. У вас може бути три активні роботи одночасно.
+    phrases:
+      jobs: Робота
+  gear:
+    phrases:
+      permanentModifiers: Постійні модифікатори
+      noItemSelected: Предмет не обрано
+      combatModifiers: Модифікатори бою
+      noCombatModifiers: Немає бойових модифікаторів від екіпірованих предметів.
+      skillModifiers: Модифікатори навичок
+      noSkillModifiers: Немає модифікаторів навичок від екіпірованих предметів.
+      noPermanentModifiers: Немає постійних модифікаторів.
+      noItemEquipped: Предмет не екіпіровано
+  tools:
+    phrases:
+      emptyToolSlot: Порожній слот інструменту
+      noToolEquipped: У цьому слоті не екіпіровано інструмент.
+      lockedToolSlot: Слот інструменту заблоковано до <c>рівня персонажа {level}</c>.
+  tutorial:
+    phrases:
+      noMoreMessages: Більше немає повідомлень навчання
+      youWillGain: Ви отримаєте наступний предмет(и), якщо оберете цю опцію.
+  social:
+    phrases:
+      manageFriends: Керування соціальними зв'язками
+      pendingInvites: Очікуючі запрошення
+      friends: Друзі
+  rumors:
+    phrases:
+      unlockedWalkpediaEntries: Відкриті записи Walkpedia
+      rumorsFromCharacter: Чутки від <c>{characterName}</c>
+      backToRumors: Повернутися до чуток
+  whileAway:
+    phrases:
+      whileYouWereAway: Поки вас не було...
+      switchedToGearSet: Перемкнуто на набір спорядження <c>{name}</c>
+      gearSetDoesNotExist: Набір спорядження більше не існує
+      consumablesUsed: Використано витратний предмет
+      actionsCompleted: Дії завершено
+      none: Немає
+      fromProc: Від <c>{proc}</c>
+      fromSource: Від <object id="{source}"/>
+      fromAttribute: Від атрибута {attribute}
+      startedNewActivity: Почато активність <object id="{activity}"/> у <object id="{location}"/>
+      startedActivityNoLocation: Почато активність <object id="{activity}"/>
+      actionCancelled: Дію скасовано
+plurals:
+  activity:
+    phrases:
+      stepsUntilArrival:
+        one: Крок до прибуття
+        two: Кроки до прибуття
+        other: Кроків до прибуття
+      steps:
+        other: '{} кроків'
+        one: '{} крок'
+        two: '{} кроки'
+      actions:
+        other: '{} дій'
+        one: '{} дія'
+        two: '{} дії'
+      stepsRequired:
+        one: Потрібно крок
+        two: Потрібно кроків
+        other: Потрібно кроків
+      stepsToLevelUp:
+        one: Крок до підвищення рівня
+        two: Кроки до підвищення рівня
+        other: Кроків до підвищення рівня
+      stepsToCraft:
+        one: Крок до виготовлення
+        two: Кроки до виготовлення
+        other: Кроків до виготовлення
+      stepsRemainingInTotal:
+        one: Крок залишився загалом
+        two: Кроки залишилися загалом
+        other: Кроків залишилося загалом
+      actionsToLevelUp:
+        one: Дія до підвищення рівня
+        two: Дії до підвищення рівня
+        other: Дій до підвищення рівня
+      actionsRemaining:
+        two: Дії залишилися
+        other: Дій залишилося
+        one: Дія залишилася
+      stepsRequiredPerAction:
+        one: <icon i="Steps"/> Потрібно <c>{} крок</c> на дію
+        two: <icon i="Steps"/> Потрібно <c>{} кроки</c> на дію
+        other: <icon i="Steps"/> Потрібно <c>{} кроків</c> на дію
+  inventory:
+    info:
+      consumableDuration:
+        zero: Активність <object id="{activity}" alwaysShow="true"/> потребує <c>{steps}</c>
+          кроків на дію. Обрана кількість витратних предметів покращила б <c>{actions}
+          дій</c>.
+        one: Активність <object id="{activity}" alwaysShow="true"/> потребує <c>{steps}</c>
+          кроків на дію. Обрана кількість витратних предметів покращила б <c>{actions}
+          дію</c>.
+        two: Активність <object id="{activity}" alwaysShow="true"/> потребує <c>{steps}</c>
+          кроків на дію. Обрана кількість витратних предметів покращила б <c>{actions}
+          дії</c>.
+        other: Активність <object id="{activity}" alwaysShow="true"/> потребує <c>{steps}</c>
+          кроків на дію. Обрана кількість витратних предметів покращила б <c>{actions}
+          дій</c>.
+  achievements:
+    phrases:
+      achievementPoint:
+        one: '{} очко досягнення'
+        two: '{} очки досягнень'
+        other: '{} очок досягнень'
+  location:
+    phrases:
+      playersHere:
+        one: <c>{}</c> гравець тут
+        two: <c>{}</c> гравці тут
+        other: <c>{}</c> гравців тут
+      playersDoingActivity:
+        one: <c>{}</c> гравець виконує активність
+        two: <c>{}</c> гравці виконують активність
+        other: <c>{}</c> гравців виконують активність
+maps:
+  characterCreation:
+    phrases:
+      optionTypes:
+        'backAccessory': Аксесуари на спину
+        'eyeAccessory': Аксессуари для очей
+        'none': Немає
+        'face': Обличчя
+        'body': Тіло
+        'nose': Ніс
+        'hair': Причіска
+        'outfit': Одяг
+        'eyes': Очі
+        'faceAccessory': Аксесуари для обличчя
+        'headwear': Головні убори
+        'facepaint': Розмалювання обличчя
+        'background': Фон
+      raceTypes:
+        'human': Людина
+        'none': Немає
+      bodyTypes:
+        'none': Немає
+        'masculine': A (Мужній)
+        'feminine': B (Жіночий)
+      expressions:
+        'laughing': Сміється
+        'sad': Сумний
+        'smile': Посмішка
+        'smirk': Підсмішка
+        'surprise': Здивування
+        'normal': Нормальний
+        'angry': Злий
+        'veryAngry': Очень злий
+  shop:
+    phrases:
+      itemType:
+        'material': Матеріали
+        'container': Контейнери
+        'loot': Здобич
+        'collectible': Колекціонні предмети
+        'cosmetic': Косметичні предмети
+        'special': Спеціальні
+        'tool': Інструменти
+        'gear': Спорядження
+        'consumable': Витратні предмети
+        'crafted': Виготовлено
+  character:
+    stepsTime:
+      'hourly': Кроки за годину
+      'daily': Щоденні кроки
+      'monthly': Місячні кроки
+  settings:
+    categories:
+      'accessibility': Доступність
+      'graphics': Графіка
+      'gameplay': Ігровий процес
+      'account': Обліковий запис
+      'character': Персонаж
+    boolSettings:
+      'leftHandedMode': Режим для лівшів
+      'inventoryCollapsed': Стиснутий інвентар
+      'alwaysStopWhenInventoryFull': Зупинятися при перевантаженні за замовчуванням
+      'showRecipesMaterialsAreMet': Вимоги до матеріалів виконано
+      'showRecipesRequirementsAreMet': Вимоги до рівня виконано
+      'showRecipesServicesAreMet': Вимоги до послуг виконано
+      'showCompletedAchievements': Показувати завершені досягнення
+      'spriteOutlines': Відображати контури
+      'showFpsCounter': Показувати Лічильник FPS
+      'shaderOutlineRendering': Відображати контури з шейдерами
+      'showStepSourceInActivityView': Показувати вибір джерела кроків у вигляді Активності
+      'warningBeforeClaimingExperience': Показувати попередження перед отриманням
+        нагород за досвід
+      'showDailyTips': Показувати щоденні поради
+      'activityInformationOpen': Показувати більше інформації про активність
+    enumSettings:
+      'language': Мова
+      'leaderboardFilter': Показати
+      'leaderboardType': Таблиці лідерів
+      'stepDataTime': Часовий період
+    custom:
+      'dataSource': Джерело даних кроків
+    stepCountNotifications:
+      'never': Ніколи
+      'always': Завжди
+      'everyHundred': Кожні сто
+      'everyThousand': Кожні тисяча
+      'everyTenThousand': Кожні десять тисяч
+    languages:
+      'fr': Французька
+      'sv': Шведська
+      'zh_Hans': Китайська (спрощена)
+      'en': Англійська
+      'de': Німецька
+      'fi': Фінська
+      'pl': Польська
+      'es': Іспанська
+      'it': Італійська
+      'nl-NL': Нідерландська
+      'pt': Португальська
+      'tr': Турецька
+    visibilitySettings:
+      'private': Приватний
+      'friends': Тільки друзі
+      'public': Публічний
+    notificationImportance:
+      'low': Без звуку, без вібрації і не відображається в рядку стану.
+      'high': Відтворює звук або вібрує
+      'urgent': Відтворює звук або вібрує і відображається як спливаюче сповіщення.
+    leaderboardFilter:
+      'everyone': Усі
+      'friends': Друзі
+  achievements:
+    phrases:
+      difficulty:
+        'easy': Легко
+        'normal': Нормально
+        'hard': Важко
+        'extreme': Крайньо важко
+      difficultyTitle:
+        'easy': Легкі досягнення
+        'normal': Нормальні досягнення
+        'hard': Важкі досягнення
+        'extreme': Крайньо важкі досягнення
+  cooldown:
+    time:
+      'days': '{days}<c>д</c>'
+      'hours': '{hours}<c>г</c>'
+      'minutes': '{minutes}<c>хв</c>'
+      'seconds': '{seconds}<c>с</c>'
+  locales:
+    grammaticalGender:
+      'masculine': Чоловічий
+      'feminine': Жіночий
+      'neutral': Нейтральний
