@@ -106,7 +106,45 @@ singulars:
         località.
       savedSteps: Hai accumulato passi che vengono impiegati. Ogni passo conta come
         due fino a che tutti i passi accumulati non saranno esauriti.
+    phrases:
+      consumables: Consumabili
+      noActivity: Nessuna attività
+      savedSteps: Passi accumulati
+      inventoryIsOverLimit: L'inventario è pieno!
+      notAffectingTraveling: (non ha effetto sull'efficienza di viaggio)
+      options: Opzioni
+      locationIsUnknown: La posizione è sconosciuta. Una volta esplorata questa posizione,
+        potrai vedere le attività che si svolgono qui.
+      requirements: Requisiti
+      rewards: Premi
+      startActivity: Inizia attività
+      queueActivity: Attività in coda
+      travelAndStartActivity: Viaggia e inizia attività
+      cantStartActivity: Impossibile avviare l'attività
+      requirementsNotMet: Requisiti non soddisfatti
+      noActivitiesInLocation: Non ci sono attività in <object id="{location}"/>.
+      activitiesInLocation: Attività disponibili in <object id="{location}"/>
+      guideTip: Consiglio del giorno
+    rewards:
+      collectibles: <icon i="Collectibles"/>{count} collezionabili </c> che possono
+        essere trovati
   popupBubbles:
     phrases:
       arrivedToLocation: Arrivato a <object id={location} />
       overEncumbered: Il tuo inventario è pieno e sei sovraccarico.
+  queue:
+    types:
+      crafting: Costruendo
+      traveling: Viaggiando
+      activity: Attività
+    phrases:
+      queuedActions: Azioni in coda
+      untilInventoryFull: Continuare fino a quando l'inventario è pieno
+      switchingToGearSet: Passando all'equipaggiamento <c>{name}</c>
+      noPathFound: Nessun percorso trovato per la destinazione.
+      queue: Coda
+      noGearSetFound: L'equipaggiamento selezionato non è stato trovato, lo hai eliminato?
+      activityInLocation: <object id="{activity}"/> in <object id="{location}"/>
+    options:
+      switchGearSet:
+        text: Passare al set di equipaggiamenti
