@@ -235,6 +235,7 @@ singulars:
       acceptJob: Accept job
       abandonJob: Abandon job
       acceptedJobs: Currently accepted jobs <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      currentlyAcceptedJobs: Currently accepted jobs
       openJournal: Open journal
       itemsFromInventory: Items from inventory
       itemsFromBank: Items from bank
@@ -249,7 +250,15 @@ singulars:
       noJobsAvailable: 'There are no jobs available at this location at the moment. New jobs will be available in:'
       refreshIn: 'The job board will be refreshed in:'
       jobAlreadyAccepted: You have accepted this job.
-      browseJobBoards: Browse job boards
+      browseJobBoards: Browse jobs
+      availableJobs: Available jobs
+      cannotWithdraw: Your current location <object id="{obj}"/> doesn't have a bank. Withdrawing items for jobs is disabled.
+      availableJobInfo: To accept or complete jobs, you must be at their location.
+      atLocation: Available at <object id="{obj}"/>
+      youAreAtLocation: You're at this job board's location.
+      travelToJobBoard: Travel to <object id="{obj}"/>
+      cannotAcceptMore: You cannot accept more jobs.
+      complete: Complete
     dialogs:
       abandonJob:
         title: Abandon job
