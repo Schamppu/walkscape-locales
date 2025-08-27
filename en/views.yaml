@@ -235,6 +235,7 @@ singulars:
       acceptJob: Accept job
       abandonJob: Abandon job
       acceptedJobs: Currently accepted jobs <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      currentlyAcceptedJobs: Currently accepted jobs
       openJournal: Open journal
       itemsFromInventory: Items from inventory
       itemsFromBank: Items from bank
@@ -248,6 +249,16 @@ singulars:
       give: Give
       noJobsAvailable: 'There are no jobs available at this location at the moment. New jobs will be available in:'
       refreshIn: 'The job board will be refreshed in:'
+      jobAlreadyAccepted: You have accepted this job.
+      browseJobBoards: Browse jobs
+      availableJobs: Available jobs
+      cannotWithdraw: Your current location <object id="{obj}"/> doesn't have a bank. Withdrawing items for jobs is disabled.
+      availableJobInfo: To accept or complete jobs, you must be at their location.
+      atLocation: Available at <object id="{obj}"/>
+      youAreAtLocation: You're at this job board's location.
+      travelToJobBoard: Travel to <object id="{obj}"/>
+      cannotAcceptMore: You cannot accept more jobs.
+      complete: Complete
     dialogs:
       abandonJob:
         title: Abandon job
@@ -541,21 +552,27 @@ singulars:
       accountPage: Account Page
       testFlight: You can download the latest version from <c>TestFlight</c>.
     loadingStates:
-      localizationFiles: Loading localization files
-      gameVersion: Getting game version
-      initializingPlayer: Initializing the player data
-      startingGameLoad: Starting to load the game data
-      validatingGame: Validating the game data from the server
-      checkingLocalizations: Checking localizations from the server
-      initializingProviders: Initializing providers
-      loadingComplete: Loading complete!
-      readingLocalGameData: Reading local game data
-      initializingObjects: Initializing game objects
-      initializingDatabases: Initializing databases
-      readingCloudData: Reading cloud data
-      cleaningUpData: Cleaning up data
-      dataLoadingComplete: Data loading complete!
-      loadingCharactersFromCloud: Loading characters from the cloud
+      startingToLoadGame: Starting to load game
+      startingProcesses: Starting game processes
+      loadingGameData: Loading game data
+      initializingGameData: Initializing game data
+      authenticating: Authenticating
+      loadingGuideState: Loading guide state
+      awaitingForRemoveConfig: Awaiting for remote config
+      processingStepHistory: Processing step history
+      loadingLocaleState: Loading locale state
+      loadingDevicePermissions: Loading device permissions
+      reportingErrorToSentry: Reporting error to Sentry
+      loadingPlayerData: Loading player data
+      settingUpStepManager: Setting up step manager
+      settingUpTutorialManager: Setting up tutorial manager
+      settingUpOnlineSettingsManager: Setting up online settings manager
+      settingUpCensusManager: Setting up census manager
+      settingUpPlayerMetadata: Setting up player metadata
+      updatingStepReadTime: Updating step read time
+      changingMainCharacter: Changing main character
+      loadingStepHistoryData: Loading step history data
+      loadingSteps: Loading steps
   social:
     phrases:
       manageFriends: Manage social
@@ -580,6 +597,14 @@ singulars:
       startedNewActivity: Started activity <object id="{activity}"/> in <object id="{location}"/>
       startedActivityNoLocation: Started activity <object id="{activity}"/>
       actionCancelled: Action cancelled
+  announcements:
+    phrases:
+      unread: Unread
+      new: New
+    info:
+      announcementInfo: Here you can find <c>announcements</c> written by the developers. DevBlogs, changelogs and system announcements are a great way to keep yourself updated on the development progress and server downtimes!
+      noAnnouncements: There are no announcements at the moment.
+      noMoreAnnouncements: You have reached the end of the announcements! No more announcements to show.
 plurals:
   inventory:
     info:
@@ -821,3 +846,9 @@ maps:
       'masculine': Masculine
       'feminine': Feminine
       'neutral': Neutral
+  announcements:
+    categories:
+      'devblog': DevBlog
+      'changelog': Changelog
+      'update': Update
+      'system': System
