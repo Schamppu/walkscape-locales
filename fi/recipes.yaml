@@ -129,14 +129,14 @@ singulars:
         desc: Vahvista halkaisukirvestä hydriliumilla, jolloin se voi heilauttaa helposti
           poikki mahtavimmatkin tukit.
       hydriliumMinersMagnet:
-        name: Valmista hydriliuminen louhijan magneetti
+        name: Valmista hydriliuminen magneetti
         desc: Paranna magneettityökalua, jotta se vetäisi puoleensa helposti piilossa
           olevat aarteet syvältä maan uumenista.
         activityDesc: Parannat magneettia keskittyneesti ja päättäväisesti hydriliumvalulla,
           toiveikkaana siitä että valmistuva työkalusi soisi sinulle pääsyn maanalaisten
           salaisuuksien äärelle.
       theKakesWalkingStick:
-        name: Valmista Kaken kävelykeppi
+        name: Valmista vaellusvietin kävelykeppi
         desc: Koristele kävelykeppi hopealla ja anna sille uusi muoto ja omaa persoonaa
           luotettuna matkakumppaninasi.
         activityDesc: Kyllästät kävelykepin hopealla ja luot prosessissa kokonaan
@@ -185,8 +185,8 @@ singulars:
       largeFishingNet:
         name: Puno suuri kalaverkko
         desc: Valmista suurehko kalaverkko köydestä.
-        activityDesc: Punot yhteen monta monituista solmua, paljon enemmän kuin pienemmissä
-          verkoissa. Vihdoin saat valmistettua suuren kalaverkon.
+        activityDesc: Punot köyden yhdeksi kokonaisuudeksi, luoden monimutkaisen suurten
+          solmujen muodostelman, ja valmistat lopulta suuren kalaverkon.
       basicFishingRod:
         name: Valmista simppeli onkivapa
         desc: Valmista simppeli onkivapa yhdistämällä lankkuja ja siimaa.
@@ -221,24 +221,23 @@ singulars:
       fishingSpear:
         name: Valmista kalastuskeihäs
         activityDesc: Valitset sopivanmittaisen puun keihään varreksi ja muovaat sen
-          käteen sopivaksi. Lisäät vielä teroitetun kärjen ja simppeli kalastuskeihäs
-          on valmis. Keihäs voisi olla vielä tehokkaampi lisäämällä siiman keihään
-          saamiseksi takaisin, ja vuolemalla teräviä väkäsiä varteen lähelle kärkeä.
-        desc: Kalastuskeihäs on työkalu vedenalaiseen kalastukseen, ja se valmistetaan
-          tukevasta varresta, terävästä kärjestä, ja joskus lisäominaisuuksista kuten
-          väkäsiä tai palautusta helpottava siima.
+          käteen sopivaksi. Lisäät vielä teroitetun metallikärjen ja simppeli kalastuskeihäs
+          on valmis.
+        desc: Kalastuskeihäs on työkalu vedenalaiseen kalastukseen. Se valmistetaan
+          tukevasta varresta ja terävästä kärjestä.
       coralFishingSpear:
         name: Valmista korallinen kalastuskeihäs
-        desc: Jykevä ja kestävä ase, joka on valmistettu korallista ja puusta ja suunniteltu
-          vedenalaiseen metsästykseen.
-        activityDesc: Valitset vahvan korallipalan ja muokkaat siitä terävän kärjen.
-          Kiinnität korallikärjen tukevaan puuvarteen, ja valmistat hirmuisen kalastuskeihään,
-          joka kykenee lävistämään vedenalaisia saaliseläimiä kuin vettä vain.
+        desc: Jykevä ja kestävä ase, joka on valmistettu korallista ja hydriliumista,
+          ja suunniteltu vedenalaiseen metsästykseen.
+        activityDesc: Valitset vahvan korallipalan ja muokkaat siitä keihään varren.
+          Kiinnität teroitettuja hydriliumkärkiä tukevaan varteen, ja valmistat hirmuisen
+          kalastuskeihään, joka kykenee lävistämään vedenalaisia saaliseläimiä kuin
+          vettä vain.
       smallFishingNet:
         name: Puno simppeli kalaverkko
         desc: Valmista simppeli kalaverkko muutamasta köydenpätkästä.
-        activityDesc: Punot monta pientä solmua varovasti yhdeksi kokonaisuudeksi,
-          ja luot pienen kalaverkon.
+        activityDesc: Punot käyden yhdeksi kokonaisuudeksi, solmit pieniä solmuja,
+          ja luot lopulta pienen kalaverkon.
       elderhideFishingNet:
         name: Valmista ikitaljakalaverkko
         desc: Puno verkko ikitaljan sitkeästä vuodasta, ja valmistaudu pyydystämään
@@ -251,6 +250,10 @@ singulars:
         name: Valmista leväsukellusmaski
         desc: Simppeli vedenalaisen näkemisen apuväline, jonka runko on valmistettu
           kuivasta levästä kasvoille sopivaksi ja johon on lisätty läpinäkyvä osa.
+        activityDesc: Valitset tarkkaan ja puhdistat suuren, litteän palan kuivattua
+          merilevää. Muokkaat levästä kasvoillesi sopivan, ja rakennat muotin läpinäkyvälle
+          ikkunalle maskin keskelle. Kun saat ikkunan paikalleen, viimeistelet maskista
+          mukavan ja vesitiiviin tiivistämällä sen saumat.
       kelpDivingBody:
         name: Valmista leväsukelluspaita
       kelpDivingLegs:
@@ -271,34 +274,65 @@ singulars:
         name: Valmista kupariharkko (romusta)
         activityDesc: Käyttämällä oikeanlaista tekniikkaa saat sulatettua metallinjäänteitä
           kestäväksi kupariharkoksi.
+        desc: Kuumenna ja muovaa metalliromusta kiinteä harkko, jolla on monenlaista
+          käyttöä.
       ironBarScrap:
         name: Valmista rautaharkko (romusta)
         activityDesc: Sulatat taidokkaasti rautapitoisia metallinjäänteitä ja valat
           niistä uuden ja monikäyttöisen rautaharkon.
+        desc: Muokkaa metalliromua kestäväksi ja hyödylliseksi rautaharkoksi.
       steelBarScrap:
         name: Valmista teräsharkko (romusta)
+        activityDesc: Valmistat kestävän teräsharkon muovaamalla metallijäänteitä
+          tarkalla kädellä.
+        desc: Tao vahva teräsharkko erilaisiin raskaansarjan käyttötarkoituksiin.
       tarsiliumBarScrap:
         name: Valmista tarsiliumharkko (romusta)
+        desc: Valmista tarsiliumharkko metalliromusta.
+        activityDesc: Sulatat metalliromua muotissa, joka tihkuu mustaksi, paksuksi
+          nesteeksi. Viilentyessään hitaasti se muodostaa täydellisen tarsiliumharkon.
       farganiteBarScrap:
         name: Valmista farganiittiharkko (lastuista)
+        desc: Valmista farganiittiharkko metallijäämistä.
+        activityDesc: Metallinjäänteet vastustavat kuumuutta alkuun, mutta päättäväisellä
+          ahjonkäytölläsi saat ne sulatettua ja muovattua pehmeänsiniseksi harkoksi.
     bars:
       copperBar:
         name: Valmista kupariharkko
         activityDesc: Käyttämällä oikeanlaista tekniikkaa saat sulatettua kuparimalmia
           kestäväksi kupariharkoksi.
+        desc: Kuumenna ja muovaa kuparia kiinteäksi harkoksi, josta on moneksi.
       bronzeBar:
         name: Valmista pronssiharkko
+        desc: Sulata ja yhdistä kuparia ja tinaa valmistaaksesi monikäyttöisen pronssiharkon.
+        activityDesc: Muovaat taidokkaasti kuparia ja tinaa yhdistääksesi kahden metallin
+          parhaat puolet monikäyttöiseksi pronssiharkoksi.
       ironBar:
         name: Valmista rautaharkko
         activityDesc: Sulatat taidokkaasti rautamalmia monikäyttöiseksi rautaharkoksi.
+        desc: Jalosta rautamalmia kiinteäksi ja monikäyttöiseksi rautaharkoksi.
       steelBar:
         name: Valmista teräsharkko
+        desc: Sulata ahjossa vahva teräsharkko, joka sopii monenlaisiin raskaansarjan
+          käyttötarkoituksiin.
+        activityDesc: Muovaat terästä tarkasti kestäväksi teräsharkoksi.
       tarsiliumBar:
         name: Valmista tarsiliumharkko
+        activityDesc: Tumma metalli sulaa muotissa, ja tihkuu mustaksi, paksuksi nesteeksi.
+          Viilentyessään hitaasti se muodostaa täydellisen tarsiliumharkon.
+        desc: Valmista tarsiliumharkko aiemmin kerätystä tarsiliummalmista.
       hydriliumBar:
         name: Valmista hydriliumharkko
+        desc: Valmistaa hydriliumharkon hydriliumista ja levästä
+        activityDesc: Kuumennat hydriliummalmia tehokkaassa ahjossa äärimmäisen kuumaksi,
+          ja saat sen sulatettua nesteeksi. Kaadat sulan metallin varovasti muottiin,
+          ja annat sen jäähtyä ja kiinteytyä arvokkaaksi hydriliumharkoksi.
       farganiteBar:
         name: Valmista farganiittiharkko
+        desc: Valmistaa farganiittiharkon aiemmin kootusta malmista.
+        activityDesc: Farganiittimalmi vastustaa kuumuutta aikansa, mutta päättäväisellä
+          ahjon käytöllä saat senkin lopulta sulamaan, ja muodostamaan pehmeän sinertävän
+          harkon.
       silverBar:
         name: Valmista hopeaharkko
         desc: Sulatat joukon hopeahippuja ja valat niistä hopeaharkon.
