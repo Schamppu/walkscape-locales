@@ -143,6 +143,12 @@ maps:
       'hours': ''
       'minutes': ''
       'seconds': ''
+  announcements:
+    categories:
+      'changelog': Changelog
+      'update': Update
+      'system': System
+      'devblog': DevBlog
 plurals:
   achievements:
     phrases:
@@ -701,6 +707,27 @@ singulars:
       initializingPlayer: Spielerdaten initialisiert
       validatingGame: Die Spieldaten vom Server werden validiert
       readingLocalGameData: Lokale Spieldaten werden gelesen
+      startingProcesses: Spielprozesse werden gestartet
+      loadingGameData: Spieldaten werden geladen
+      initializingGameData: Spieldaten werden initialisiert
+      authenticating: Authentifizierung läuft
+      loadingGuideState: Leitfadenstatus wird geladen
+      processingStepHistory: Schritthistorie wird verarbeitet
+      loadingLocaleState: Lokaler Status wird geladen
+      loadingDevicePermissions: Geräteberechtigungen werden geladen
+      reportingErrorToSentry: Fehler wird an Sentry gemeldet
+      loadingPlayerData: Spieldaten des Spielers werden geladen
+      settingUpTutorialManager: Tutorial-Manager wird eingerichtet
+      settingUpCensusManager: Zensus-Manager wird eingerichtet
+      settingUpPlayerMetadata: Spieler-Metadaten werden eingerichtet
+      updatingStepReadTime: Schrittlesezeit wird aktualisiert
+      changingMainCharacter: Hauptcharakter wird gewechselt
+      loadingSteps: Schritte werden geladen
+      startingToLoadGame: Spiel wird geladen
+      awaitingForRemoveConfig: Warten auf Remote-Konfiguration
+      settingUpStepManager: Schrittemanager wird eingerichtet
+      settingUpOnlineSettingsManager: Online-Einstellungsmanager wird eingerichtet
+      loadingStepHistoryData: Schritthistoriedaten werden geladen
   social:
     phrases:
       pendingInvites: Ausstehende Einladungen
@@ -807,6 +834,19 @@ singulars:
       refreshIn: 'Die Jobbörse wird aktualisiert in:'
       youMustBeInLocationToCollect: Du musst dich am gleichen Ort wie die <object
         id="{obj}"/> befinden, um Belohnungen entgegenzunehmen.
+      jobAlreadyAccepted: Du hast diesen Job angenommen.
+      browseJobBoards: Jobs durchsuchen
+      availableJobs: Verfügbare Jobs
+      availableJobInfo: Um Jobs anzunehmen oder abzuschließen, musst du dich an ihrem
+        Standort befinden.
+      atLocation: Verfügbar in <object id="{obj}"/>
+      youAreAtLocation: Du befindest dich am Standort dieser Jobbörse.
+      travelToJobBoard: Reise nach <object id="{obj}"/>
+      cannotAcceptMore: Du kannst keine weiteren Jobs annehmen.
+      complete: Abschließen
+      currentlyAcceptedJobs: Derzeit angenommene Jobs
+      cannotWithdraw: Dein aktueller Standort <object id="{obj}"/> verfügt nicht über
+        eine Bank. Das Abheben von Gegenständen für Jobs ist deaktiviert.
     dialogs:
       abandonJob:
         title: Job abbrechen
@@ -966,3 +1006,15 @@ singulars:
         gestartet
       startedActivityNoLocation: Aktivität <object id="{activity}"/> gestartet
       actionCancelled: Aktion abgebrochen
+  announcements:
+    phrases:
+      unread: Ungelesen
+      new: Neu
+    info:
+      noAnnouncements: Es gibt derzeit keine Ankündigungen.
+      noMoreAnnouncements: Du hast das Ende der Ankündigungen erreicht! Es gibt keine
+        weiteren Ankündigungen mehr.
+      announcementInfo: Hier findest du von den Entwicklern verfasste <c>Ankündigungen</c>.
+        DevBlogs, Changelogs und Systemmeldungen sind eine großartige Möglichkeit,
+        dich über den Entwicklungsfortschritt und Serverausfälle auf dem Laufenden
+        zu halten!
