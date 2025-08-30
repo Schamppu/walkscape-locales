@@ -475,6 +475,7 @@ singulars:
             auttaa uusia seikkailijoita alkuun.
         trellinChest:
           desc: Sammaleinen arkku, joka näkyy tulevan Trellinin alueelta.
+          name: Trellinin arkku
         erdwiseChest:
           name: Erdwisen arkku
           desc: Kiiltävä arkku, joka näyttää siltä että se tulisi Erdwisen yliampuvan
@@ -684,27 +685,36 @@ singulars:
     skilling:
       fishing:
         basicFishingPole:
-          desc: Tiedät sen sanonnan, huono päivä lammella, parempi päivä kuitenkin,
-            kuin hyvä päivä töissä.
-          name: Perus kalastusvapa
+          desc: 'Tiedät sanonnan: huonokin päivä lammella on parempi kuin hyvä päivä
+            töissä.'
+          name: Perusonkivapa
         fishingSpear:
           name: Kalastuskeihäs
+          desc: Tämä keihäs on metsästäjän ja hänen saaliinsa välisen pinnanalaisen
+            tanssin ruumiillistuma, ja tarjoaa suoran ja hurjan keinon varmistaa ravinnonsaannin
+            vesistöstä.
         largeFishingNet:
           name: Suuri kalaverkko
           desc: Suuri kalaverkko, rannikkoyhteisöjen luomus, on jatkuvasti vuorottelevien
             vuoksen ja luoteen ylle heitettyjen toiveiden ja unelmien ruumiillistuma.
         oakFishingRod:
           name: Tamminen kalastusvapa
+          desc: Tämä tammesta tehty onkivapa on taidokkaiden käsityöläisten mestariteos,
+            ja kantaa ikivanhojen puiden ikuista viisautta ytimessään.
         pineFishingRod:
           name: Mäntyinen onkivapa
+          desc: Tuoreelta tuoksuva onkivapa, joka kestää painavimmatkin kalat.
         smallFishingNet:
           desc: Yksikertainen verkko, Vaatimaton kalastajan työkalu tehty vain sitomalla
             pati pätkää köyttä yhteen.
           name: Pieni kalaverkko
         coralFishingSpear:
           name: Korallinen kalastuskeihäs
+          desc: Tämä kalastuskeihäs on tehty korallista ja hydriliumista. Siinä on
+            monta terävää kärkeä, jotta kalojen lävistäminen olisi helpompaa.
         advancedFishingRod:
           name: Edistynyt onkivapa
+          desc: Tämä onkivapa on tarkoitettu ammattimaisten kalastajien käyttöön.
         tidalLure:
           desc: Viehe, joka näyttää vesipyörteeltä. Varsin tehokas kalojen pyytämiseen.
           name: Vuorovesiviehe
@@ -725,28 +735,34 @@ singulars:
         bronzePickaxe:
           desc: Pronssinen hakku hehkuu vanhanaikaista tunnelmaa ja ylitsepääsemätöntä
             kestävyyttä.
-          name: Pronssinen hakku
+          name: Pronssihakku
         copperPickaxe:
           desc: Hauras ja heikko hakku kaivostyöhön, mutta kyllä se työnsä tekee.
           name: Kuparinen hakku
         farganitePickaxe:
           desc: Täydellinen heijastus taivaan sävyjä päivän mittaan, harvinainen hakku
             tosiaankin.
-          name: Farganiittinen hakku
+          name: Farganiittihakku
         ironPickaxe:
-          name: Rautainen hakku
+          name: Rautahakku
+          desc: Rautaharkun terä on painava, ja se palvelee tarkoistustaan uskollisena
+            kumppanina heille, jotka pyrkivät kesyttämään villin erämaan tai kohtaamaan
+            tuntemattoman.
         steelPickaxe:
-          name: Teräksinen hakku
+          name: Teräshakku
           desc: Teräksinen hakku hohtaa luojansa päättäväisyyden voimalla, valmiina
             toteuttamaan tämän käskyt.
         tarsiliumPickaxe:
           desc: Tämä tummasta metallista tehty hakku sopii erinomaisesti yksiin raskaan
             musiikin kanssa.
-          name: Tarsiliuminen hakku
+          name: Tarsiliumhakku
         hydriliumMagnet:
           name: Hydriliummagneetti
+          desc: Kaivostyöläisen magneetti, jota on vahvistettu hydriliumilla.
         hydriliumPickaxe:
           name: Hydriliumhakku
+          desc: Hakku, joka on tehty harvinaisesta vedenalaisesta materiaalista, jota
+            kutsutaan hydriliumiksi.
       woodcutting:
         basicHatchet:
           name: Kirves
@@ -1144,10 +1160,16 @@ singulars:
           name: Kokin esiliina
         chefsHat:
           name: Kokin hattu
+          desc: Tämä höpsö hattu tuntuu kanavoivan keittiön taikaa, inspiroiden kulinaristisia
+            ihmeitä jokaisella kauhan heilautuksella.
         meatCleaver:
           name: Lihaveitsi
+          desc: Sen tarkka teräksinen leikkuuterä voi pilkkoa lihanpaloja pienemmiksi
+            paloiksi. Mukaanlukien sormesi, jos et ole varovainen.
         chefsLegApron:
           name: Kokin lantioliina
+          desc: Esiliina jota pidetään jalan päällä; siinä on tasku, johon mahtuu
+            keittiötyökaluja.
         flippySpatula:
           desc: Ei mikä tahansa lasta, vaan heittolasta. Montako pyörähdystä saat
             yhdellä heitolla?
@@ -1172,28 +1194,46 @@ singulars:
           desc: Ei mikään Fiskarssin pinnoitettu pannu, mutta ajaa silti asiansa.
         eberhartCorkscrew:
           name: Eberhartin korkkiruuvi
+          desc: Tämä klassinen korkkiruuvi on paljon korkealaatuisempi kuin mitä olet
+            koskaan nähnyt. Kahva on erinomaisesti käteen sopiva ja valmistettu hienosta
+            puusta, kun taas ruuviosa on ruostumatonta terästä ja sen kaarteiden hionta
+            on ihan viimeisen päälle.
         florasSilverSpoon:
           name: Floran hopealusikka
+          desc: Erikoinen hopealusikka. Flora on varmaankin hukannut sen keittiössä
+            jokin päivä. Se on nyt sinun!
         ovenMittens:
           name: Pannulapaset
           desc: Mukavat ja lämpimät, mutta ei niin lämpimät kuin asiat mihin niillä
             koskee.
         sharpKnife:
           name: Terävä veitsi
+          desc: Siinä on perinteinen puinen kädensija ja sen terä vaikuttaa vastateroitetulta.
         dullKnife:
           name: Tylsä veitsi
+          desc: Mikään ei ole niin vaarallista kuin tylsä veitsi. Tai niin ainakin
+            sanotaan.
         cuttingBoard:
           name: Leikkuulauta
           desc: Lauta jonka päällä on siistimpää leikata lihaa, hedelmiä ja kasviksia.
         sturdyWhisk:
           name: Vahva vispilä
+          desc: Vispilän teräslangat on tiukasti kiinnitetty sen tukevaan kädensijaan;
+            voisit vatkata tuhansia munia tällä.
         northernSpices:
           name: Pohjoisen mausteet
+          desc: Näiden mausteiden vahva aromi saa vatsasi murisemaan niin äänekkäästi,
+            että se tietäisi minkä vain hiippailukeikan välitöntä loppua.
         recipeBook:
           name: Reseptikirja
+          desc: Tässä kirjassa on satoja reseptejä, jotka kattavat jokaisen kuviteltavissa
+            olevan ruokalajin jarvonialaisista ridraddakialaisiin.
         rottenEggplant:
           name: Mädäntynyt munakoisi (testiesine)
           desc: Vain testaajille, ja antaa rajoittamattoman voiman.
+        rottenWrentmarine:
+          desc: Vain testauskäyttöön. Mahdollistaa rajattoman repun koon.
+          name: Mätä wrentmariini (testiesine)
       crafting:
         candlehat:
           desc: Hattu johon on yhdistetty kynttilä, mitä muutakaan enää voisi toivoa?
@@ -1228,30 +1268,51 @@ singulars:
       fishing:
         fishermansHat:
           name: Kalastajan hattu
+          desc: Tämä hattu symboloi onkijan kärsivällisyyttä, ja hänen yhteyttään
+            luonnon ikuisesti liikkeessä oleviin virtoihin.
         fishermansTrousers:
           name: Kalastajan housut
+          desc: Nämä housut on valmistettu kestävästä, vedenpitävästä materiaalista,
+            ja suojaavat säältä samalla kun jättävät varaa ketterälle liikehdinnälle.
         wadingShoes:
           name: Kahluusaappaat
+          desc: Nämä kevyet kengät ovat hyvä valinta kalastusseikkailuille.
         coolSunglasses:
           name: Siistit aurinkolasit
+          desc: Hyvin tyylikkäät aurinkolasit, jotka tekevät rannalla kalastamisesta
+            auringonlaskun aikaan paljon miellyttävämpää.
         breezyShirt:
           name: Ilmava paita
+          desc: Tämä kevyt paita saa sinut erottumaan millä tahansa rannalla.
         fishingGuidebook:
           name: Kalastajan ohjekirja
+          desc: Tässä kirjassa on eri kalalajien kuvia, ja se luettelee joka lajille
+            sopivat syötit ja vieheet.
         rodOfMoss:
           name: Sammalsauva
+          desc: Tämä sormus on sammalen peittämä.
         squishyFlipFlops:
           name: Nitisevät varvastossut
+          desc: Pehmeä kangaskerros suojaa jalkojasi polttavalta hiekalta jopa Wrentmarkin
+            kuumimmilla rannoiila.
         frozenBait:
           name: Jäätynyt syötti
+          desc: Se on pienenpieni kala joka houkuttelee isompia kaloja. Tässä touhussa
+            on varmaankin piilossa jonkinlainen vertauskuva...
         bugBait:
           name: Ötökkäsyötti
+          desc: Tämä ötökkä muuttuu kalan päivälliseksi, ja kalasta tulee sinun päivällisesi.
+            Mutta kenen päivällinen sinusta tulee?
         shinySpinner:
           name: Kiiltävä kehrääjäviehe
+          desc: Silloin, kun tätä viehettä ei käytetä kalastuksessa, se käy hyvin
+            stressilelusta.
         eyePatch:
           name: Silmälappu
+          desc: Kuulemma kalastaminen on helpompaa, kun vain toinen silmä on auki.
         pirateHat:
           name: Merirosvohattu
+          desc: Maata näkyvissä!
         rustyFishingNet:
           name: Rähjäinen kalaverkko
           desc: Tämä pieni kalaverkko on rähjääntynyt ja purkaantuu liitoksistaan.
@@ -1261,15 +1322,38 @@ singulars:
           desc: Tämä vanha ja rähjäinen onkivapa on parhaat päivänsä nähnyt. Sen solmuisella
             siimalla voi yhä kalastaa, mutta mahtaako sillä kovin kummoista saalista
             tulla!
+        anglerGloves:
+          desc: Ne ovat sittenkin olemassa! Tarumaiset hanskat joissa on hohtavat
+            sormenpäät, jotka houkuttelevat lumoavalla hehkullaan kaikenlaisia saaliita.
+          name: Krottihanskat
+        babyPenguinIceLure:
+          desc: 'Pingviinivauva, joka on lupautunut auttamaan sinua kalastuksessa
+            elävänä vieheenä. Hänen tehtävänsä on selvä: paikantaa sinulle kaikista
+            mainioimmat kalansaaliit.'
+          name: Vauvapingviinijääkalastusviehe
+        iceNetRod:
+          name: Jäinen verkkovapa
+          desc: Onkivapa, jonka siimaan on punottu jäisen näköinen verkko, jonka voi
+            heittää kuin virvelillä. Pingviinien suunnittelema työväline on nerokas,
+            ja sen tarkoitus on maksimoida pyydetyn arvokalan määrä.
       foraging:
         halflingsFeetSlippers:
-          name: Puolituisen tossut
+          name: Puolituisenjalkatossut
+          desc: Nämä mukavat ja hurmaavat tossut on suunniteltu imitoimaan puolituisten
+            karvaisia jalkoja; niissä on pikkuruiset varpaat ja muita hupaisia yksityiskohtia.
         hatWithAFeather:
           name: Sulkahattu
+          desc: Hattu huokuu olemuksellaan seikkailun tunnelmaa ja kaukaisten maiden
+            kutsua. Se lupaa tarinoiden uskaliaista hurjasteluista seuraavan kantajaansa,
+            missä tämä kulkeekin.
         sharpMachete:
           name: Terävä viidakkoveitsi
+          desc: Se on terävä kuin partaveitsi, mikä saa tiheän kasvillisuuden läpi
+            tunkeutumisen sujumaan vaivattomasti kuin sunnuntaikävely puistossa.
         dullMachete:
           name: Tylsä viidakkoveitsi
+          desc: Tämä viidakkoveitsi ei ole enää hyvässä terässä; vaikuttaa siltä että
+            kokonaisia metsiä olisi jo raivattu sitä käyttäen.
         pointyShears:
           desc: Näillä on huomattavasti helpompi leikata puskia ja muita paksumpia
             kasveja.
@@ -1286,32 +1370,58 @@ singulars:
             tunne siitä, että olet yhtä luonnon kanssa.
         wildernessPants:
           name: Erämaan housut
+          desc: Vihreät housut, jotka on suunniteltu kestämään luonnon läheistä tutkimista
+            tarvittaessa myös kontaten.
         foragingShorts:
           name: Poimintashortsit
+          desc: Kestävät ja mukavat shortsit, täydelliset kasvien keräilyyn millaisessa
+            tahansa maastossa.
         foragingShirt:
           name: Poimintapaita
+          desc: Tämä paita pitää sinut viileänä kun keräilet antimia kuumissa ympäristöissä,
+            ja lämpimänä kylmillä alueilla.
         camouflageCape:
           name: Maastoviitta
+          desc: Tämä viitta tekee sinut käytännössä niin näkymättömäksi maastossa
+            että voisit saman tien nimetä sen näkymättömyysviitaksi - ja ei kun aarteenetsintäretkelle.
         waterproofBoots:
           name: Vedenpitävät saappaat
+          desc: Kanarialinnunkeltaiset haisaappaat pitämään sukkasi kuivana. Eipä
+            ole kyllä montaa asiaa joka tuntuu pahemmalta kuin märät sukat.
         nonWaterproofBoots:
           name: Ei-vedenpitävät kengät
+          desc: Vaikka nämä saappaat suojaavatkin hieman tuulelta ja epätasaiselta
+            maastolta keräillessä, ei ole mitään takeita siitä että ne pitäisivät
+            jalkasi kuivina.
         compassNecklace:
           name: Paikantamisen riipus
           desc: Toimiva kompassi nyörissä, jonka voit sitoa roikkumaan kaulastasi.
             Jos osaat käyttää sitä, pystyt aina löytämään tiesi kotiin.
         gardeningGloves:
           name: Puutarhahanskat
+          desc: Nypyläiset vedenpitävät hanskat, jotka sopivat täydlelisesti kaikkiin
+            puutarhaharrastuksiisi, kuten istuttamiseen, kasteluun, karsintaan ja
+            rikkaruohojen kitkemiseen.
         pickersGloves:
           name: Noukkijan hanskat
+          desc: Mukavat nahkahansikkaat, jotka suojaavat käsiäsi piikeiltä ja muilta
+            luonnon puolustusmekanismeilta, kun etsit kasvuston piilotettuja aarteita.
         longSpade:
           name: Pitkä lapio
+          desc: Kookas lapio, jossa on tukeva puinen varsi ja jonka terä on ruostumatonta
+            terästä. Voit varmastikin kaivaa tällä suuren kuopan.
         bigBasket:
           name: Iso kori
+          desc: Kauniisti pajunvitsoista punottu kori, johon kaikki poimimasi luonnon
+            antimet mahtuvat vaivatta.
         smallSack:
           name: Pieni säkki
+          desc: Pieni mukana kannettavan kokoinen juuttisäkki, johon mahtuu yksi esine
+            lisää.
         wildernessGuideBook:
           name: Erämaan ohjekirja
+          desc: Kirja on täynnä vihjeitä siitä, miten selviytyä erämaassa; sen sisältö
+            kattaa eläinlajit, kasvit, vedenlähteet ja paljon muuta.
         rustySickle:
           desc: Aikoinaan tämä sirppi on ollut hieno, mutta nyt umpiruosteessa. Sitä
             voi yhä käyttää keräilyyn, vaikkei yhtä hyvin kuin aikoinaan.
@@ -1319,8 +1429,13 @@ singulars:
       mining:
         miningHelm:
           name: Louhintakypärä
+          desc: Louhintakypärä, tuo majakka maan uumenissa, hohtaa tasaista valokeilaa
+            joka halkoo maanalaisen valtakunnan pimeyttä.
         shovelAxe:
           name: Lapiokirves
+          desc: Korvaamaton kumppani seikkailijoille, jotka haluavat kaivaa esiin
+            pinnanalaisia salaisuuksia ja puolustautua esiin nousevia mahdollisia
+            vaaroja vastaan.
         minersShirt:
           name: Louhijan paita
           desc: Tämä paita erottuu hyvin, ja auttaa etsijöitä löytämään sinut nopeammin
@@ -1379,6 +1494,8 @@ singulars:
             heilautukseesi.
         blacksmithsHandbook:
           name: Sepän ohjekirja
+          desc: Tässä kirjassa on kuvia erilaisista ahjoista, vasaroista ja palkeista.
+            Taonnan hienoudet selitetään hyvin yksityiskohtaisesti.
         coolingIceAmulet:
           name: Jäähdyttävä jääamuletti
           desc: Pitää sinut kylmänä.
@@ -1399,6 +1516,8 @@ singulars:
             kun seisoskelet kuuman ahjon edessä koko päivän.
         metalworkingGloves:
           name: Metallityöhanskat
+          desc: Nämä hanskat kädessäsi voit työntää kätesi palavaan ahjoon saamatta
+            edes vesikelloa. Käsivarsistasi ei tosin voi sanoa samaa.
       woodcutting:
         lumberjackShirt:
           desc: Kestävä ja yksinkertainen, samalla kilpi elementtejä vastaan ja metsurinkestävyyden
@@ -1406,6 +1525,8 @@ singulars:
           name: Metsurin paita
         lumberjackPants:
           name: Metsurin housut
+          desc: Jos olet tukkijätkä joka nukkuu koko yön ja työskentelee koko päivän,
+            nämä housut ovat perin OK.
         rootedRing:
           name: Juurtunut sormus
           desc: Tämä sormus koostuu maagisista juurista, jotka kietoutuvat toisiinsa.
@@ -1414,15 +1535,24 @@ singulars:
           desc: Vankka lisävarsi jonka voi liittää kirveeseen.
         lumberjackSandals:
           name: Metsurin sandaalit
+          desc: Nämä avoimet kengät saavat sinut tuntemaan olevasi paremmin kosketuksissa
+            luonnon kanssa, aivan kuin ympäristösi energia kulkeutuisi sydämeesi jalkojesi
+            kautta.
         lumberjackBoots:
           name: Metsurin kengät
+          desc: Metsurin saappaat, kesävyyden ja käytännöllisyyden yhteensulautuma,
+            ovat lumottuihin ja lumoamattomiin metsiin uskaltautuvien seikkailijoiden
+            vakioasuste.
         logSplitter:
           name: Halkaisukirves
           desc: Kirveen leveämpi terä helpottaa pöllien halkaisemista.
         lumberjackHat:
           name: Metsurin hattu
+          desc: Tämä hattu soveltuu puunkaatoseikkailuille.
         forestersPants:
           name: Metsänhoitajan housut
+          desc: Nämä vihreät housut on suunniteltu kestämään oksien ja risujen tekeviä
+            naamuja ja raapimista metsässä.
         forestersFlannelShirt:
           name: Metsänhoitajan flanellipaita
         forestersBoots:
@@ -1785,6 +1915,14 @@ singulars:
         name: Kirottu naskali
         desc: Kun tätä naskalia käyttää, siitä nousee sinisen ja violetin sävyistä
           savua.
+      treasureGrabber:
+        desc: Juuri ja juuri käden ulottumattomissa olevien arkkujen nappailu missä
+          vaan ja tekemättä mitään ei koskaan ole ollut näin helppoa.
+        name: Aarteennappaaja
+      finePearlRing:
+        name: Kaunis helmisormus
+        desc: Tällaisia helmiä käytetään yleensä korvakoruissa, mutta siitä tulee
+          myös mainio sormus.
     combat:
       swashbucklerSword:
         name: Hurjapään miekka
