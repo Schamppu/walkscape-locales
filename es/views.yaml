@@ -143,6 +143,12 @@ maps:
       'hours': '{hours}<c>h</c>'
       'minutes': '{minutes}<c>m</c>'
       'seconds': '{seconds}<c>s</c>'
+  announcements:
+    categories:
+      'devblog': DevBlog
+      'changelog': Changelog
+      'update': Actualización
+      'system': Sistema
 plurals:
   achievements:
     phrases:
@@ -405,6 +411,9 @@ singulars:
   faction:
     phrases:
       openFaction: Abrir facción
+      unclaimedRewards: Recompensas sin reclamar {count}
+      repeatingReward: Recompensa repetida
+      nextRewardUnlocked: 'Siguiente recompensa desbloqueada:'
   journal:
     info:
       jobInfo: Los trabajos son <c>tareas sencillas y repetibles</c> que puedes completar
@@ -435,6 +444,18 @@ singulars:
       youMustBeInLocationToCollect: Debes estar en la misma ubicación con <object
         id="{obj}"/> para obtener las recompensas.
       collectRewards: Obtener recompensas
+      currentlyAcceptedJobs: Trabajos aceptados actualmente
+      browseJobBoards: Ojear trabajos
+      availableJobs: Trabajos disponibles
+      availableJobInfo: Para aceptar o completar trabajos debes estar en su ubicación.
+      atLocation: Disponible en <object id="{obj}"/>
+      youAreAtLocation: Estás en la ubicación de este tablón de empleo.
+      travelToJobBoard: Viajar a <object id="{obj}"/>
+      complete: Completado
+      cannotAcceptMore: No puedes aceptar más trabajos.
+      jobAlreadyAccepted: Has aceptado este trabajo.
+      cannotWithdraw: Tu ubicación actual <object id="{obj}"/> no tiene banco. La
+        retirada de objetos está desactivada.
     dialogs:
       abandonJob:
         title: Abandonar trabajo
@@ -490,6 +511,27 @@ singulars:
       startingGameLoad: Comenzando a cargar datos del juego
       initializingPlayer: Inicializando datos de jugador
       gameVersion: Obteniendo versión del juego
+      startingProcesses: Comenzando procesos del juego
+      startingToLoadGame: Comenzando a cargar el juego
+      loadingGameData: Cargando datos del juego
+      authenticating: Autenticando
+      loadingGuideState: Cargando estado de la guía
+      awaitingForRemoveConfig: Esperando configuración remota
+      processingStepHistory: Procesando historial de pasos
+      loadingLocaleState: Cargando estado local
+      loadingDevicePermissions: Cargando permisos del dispositivo
+      reportingErrorToSentry: Informando del error a Sentry
+      settingUpStepManager: Configurando administrador de pasos
+      settingUpTutorialManager: Configurando administrador de tutorial
+      settingUpOnlineSettingsManager: Configurando administrador de ajustes online
+      settingUpCensusManager: Configurando administrador de censo
+      updatingStepReadTime: Actualizando tiempo de lectura de pasos
+      changingMainCharacter: Cambiando personaje principal
+      loadingStepHistoryData: Cargando datos del historial de pasos
+      loadingSteps: Cargando pasos
+      initializingGameData: Inicializando datos del juego
+      loadingPlayerData: Cargando datos del jugador
+      settingUpPlayerMetadata: Configurando metadatos del jugador
   activity:
     info:
       consumablesUsage: Puedes elegir una <c>comida</c> y una <c>poción</c> para usar
@@ -864,6 +906,9 @@ singulars:
       youDontHaveAnyItems: Sin objetos. Puede que no conozcas o no tengas ningún objeto
         de este tipo, o puede que tus filtros de búsqueda no hayan encontrado nada
         que coincida.
+      noGearSets: Todavía no has creado ningún kit de quipo.
+      gearSetManageShortDesc: Para crear, importar o editar tus kits de equipo, puedes
+        seleccionar <c i=0>Manage</c>.
   locales:
     phrases:
       language: Idioma
@@ -881,16 +926,16 @@ singulars:
   queue:
     options:
       withdrawGearSet:
-        desc: Retira un kit de equipamiento del banco en el banco si hay uno disponible
+        desc: Retira un kit de equipo del banco en el banco si hay uno disponible
           en alguna de las ubicaciones por las que pases.
-        text: Retirar kit de equipamiento
+        text: Retirar kit de equipo
       depositUnlockedItems:
         desc: Deposita todos los objetos desbloqueados de tu inventario en el banco
           si hay uno disponible en alguna de las ubicaciones por las que pases.
         text: Depositar objetos desbloqueados
       switchGearSet:
-        desc: Cambiar a kit de equipamiento seleccionado antes de empezar esta acción.
-        text: Cambiar a kit de equipamiento
+        desc: Cambiar a kit de equipo seleccionado antes de empezar esta acción.
+        text: Cambiar a kit de equipo
       removeFromQueue:
         text: Eliminar de la cola
         desc: Elimina esta acción y todas las siguientes de la cola.
@@ -918,8 +963,8 @@ singulars:
       queuedActions: Acciones en cola
       travelingTo: De <object id="{from}"/> a <object id="{to}"/>
       untilInventoryFull: Haciendo hasta llenar inventario
-      switchingToGearSet: Cambiando a kit de equipamiento <c>{name}</c>
-      noGearSetFound: Kit de equipamiento elegido no encontrado, ¿lo has eliminado?
+      switchingToGearSet: Cambiando a kit de equipo <c>{name}</c>
+      noGearSetFound: Kit de equipo elegido no encontrado, ¿lo has eliminado?
       activityInLocation: <object id="{activity}"/> en <object id="{location}"/>
       noPathFound: No se ha encontrado un camino al destino.
     suggestedOptions:
@@ -946,3 +991,14 @@ singulars:
         comenzada
       startedActivityNoLocation: Actividad <object id="{activity}"/> comenzada
       actionCancelled: Acción cancelada
+  announcements:
+    phrases:
+      new: Nuevo
+      unread: No leído
+    info:
+      noAnnouncements: No hay anuncios de momento.
+      noMoreAnnouncements: ¡Has llegado a final de los anuncios! No hay más anuncios
+        que mostrarte.
+      announcementInfo: Aquí puedes encontrar <c>anuncios</c> escritos por los desarrolladores.
+        ¡Los DevBlogs, changelogs y anuncios del sistema son una gran manera de mantenerte
+        actualizado sobre el estado del juego y los periodos de inactividad del servidor!
