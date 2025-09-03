@@ -138,6 +138,19 @@ singulars:
       hasNoItemsInInventory: Количество подходящих предметов в вашем инвентаре недостаточно.
       refreshIn: 'Доска объявлений будет обновлена через:'
       hasNoItemsInBank: Количество подходящих предметов в банке недостаточно.
+      currentlyAcceptedJobs: Текущие принятые задания
+      jobAlreadyAccepted: Вы уже приняли это задание.
+      browseJobBoards: Посмотреть доски заданий
+      availableJobInfo: Чтобы принять или завершить задания, вы должны находиться
+        в их локации.
+      atLocation: Доступно в <object id="{obj}"/>
+      youAreAtLocation: Вы находитесь у этой доски заданий.
+      travelToJobBoard: Отправиться в <object id="{obj}"/>
+      cannotAcceptMore: Вы не можете принять больше заданий.
+      complete: Завершить
+      availableJobs: Доступные задания
+      cannotWithdraw: Ваше текущее местоположение <object id="{obj}"/> не имеет банка.
+        Получение предметов для заданий невозможно.
     dialogs:
       abandonJob:
         title: Бросить работу
@@ -240,6 +253,8 @@ singulars:
   faction:
     phrases:
       openFaction: Открыть фракцию
+      unclaimedRewards: Неполученные награды {count}
+      nextRewardUnlocked: 'Следующая награда:'
   journal:
     phrases:
       jobs: Работы
@@ -452,6 +467,9 @@ singulars:
       gearSetsListDesc: Здесь вы можете управлять вашими наборами экипировки. Если
         вы хотите <c i=0>создать новый</c>, нажмите кнопку ниже. Вы можете также <c
         i=1>скопировать вашу текущую экипировку</c> при создании нового набора экипировки.
+      gearSetManageShortDesc: Чтобы создать, импортировать или редактировать наборы
+        снаряжения, нажмите <c i=0>Настроить</c>.
+      noGearSets: У вас пока нет созданных наборов снаряжений.
   location:
     phrases:
       activities: Активности
@@ -601,6 +619,25 @@ singulars:
       startingGameLoad: Начало загрузки игровых данных
       initializingDatabases: Инициализация баз данных
       initializingProviders: Инициализация провайдеров
+      loadingGameData: Загрузка игровых данных
+      initializingGameData: Инициализация игровых данных
+      authenticating: Аутентификация
+      processingStepHistory: Обработка истории шагов
+      loadingLocaleState: Загрузка языковых настроек
+      reportingErrorToSentry: Отчет об ошибке в Sentry
+      loadingPlayerData: Загрузка данных игрока
+      settingUpStepManager: Настройка менеджера шагов
+      settingUpTutorialManager: Настройка менеджера обучения
+      settingUpCensusManager: Настройка менеджера переписи
+      settingUpPlayerMetadata: Настройка метаданных игрока
+      updatingStepReadTime: Обновление времени чтения шагов
+      changingMainCharacter: Смена главного персонажа
+      loadingSteps: Загрузка шагов
+      loadingStepHistoryData: Загрузка данных истории шагов
+      startingProcesses: Запуск игровых процессов
+      startingToLoadGame: Начинается загрузка игры
+      loadingDevicePermissions: Загрузка разрешений устройства
+      settingUpOnlineSettingsManager: Настройка менеджера он-лайн настроек
   social:
     phrases:
       manageFriends: Социальные настройки
@@ -674,6 +711,14 @@ singulars:
       actionCancelled: Действие отменено
       switchedToGearSet: Переключено на комплект снаряжения <c>{name}</c>
       none: Нет
+  announcements:
+    phrases:
+      unread: Не прочитано
+      new: Новое
+    info:
+      noAnnouncements: На данный момент нет анонсов.
+      noMoreAnnouncements: Вы достигли конца списка анонсов! Больше нет анансов для
+        показа.
 plurals:
   inventory:
     info:
@@ -926,3 +971,9 @@ maps:
       'minutes': '{minutes}<c>м</c>'
       'hours': '{hours}<c>ч</c>'
       'seconds': '{seconds}<c>с</c>'
+  announcements:
+    categories:
+      'update': Обновление
+      'system': Система
+      'changelog': Список изменений
+      'devblog': DevBlog

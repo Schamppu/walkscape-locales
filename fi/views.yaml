@@ -142,6 +142,12 @@ maps:
       'hours': '{hours}<c>t</c>'
       'minutes': '{minutes}<c>min</c>'
       'seconds': '{seconds}<c>s</c>'
+  announcements:
+    categories:
+      'devblog': Kehitysblogi
+      'changelog': Muutosloki
+      'update': Päivitys
+      'system': Järjestelmä
 plurals:
   activity:
     phrases:
@@ -401,6 +407,9 @@ singulars:
   faction:
     phrases:
       openFaction: Avaa ryhmittymä
+      unclaimedRewards: Lunastamattomia palkintoja {count}
+      repeatingReward: Toistuva palkinto
+      nextRewardUnlocked: 'Seuraava palkinto avautuu:'
   journal:
     info:
       jobInfo: Työtehtävät ovat <c>yksinkertaisia ja toistettavia tehtäviä</c>, jotka
@@ -431,6 +440,19 @@ singulars:
       youMustBeInLocationToCollect: Sinun on oltava samassa paikassa <object id="{obj}"/>
         kanssa lunastaaksesi palkinnot.
       collectRewards: Lunasta palkinnot
+      browseJobBoards: Selaa työtehtäviä
+      availableJobs: Saatavilla olevat työtehtävät
+      availableJobInfo: Sinun tulee olla työtehtävätaulun kanssa samassa paikassa,
+        jotta voit vastaanottaa työtehtäviä tai lunastaa palkintoja niistä.
+      atLocation: Saatavilla kohteessa <object id="{obj}"/>
+      youAreAtLocation: Olet tämän työtaulun lähellä.
+      travelToJobBoard: Matkusta kohteeseen <object id="{obj}"/>
+      cannotAcceptMore: Et voi hyväksyä uusia työtehtäviä.
+      complete: Toimita
+      cannotWithdraw: Nykyinen sijaintisi <object id="{obj}"/> on pankiton, joten
+        esineiden nosto pankista työtehtäviin ei ole mahdollista.
+      currentlyAcceptedJobs: Tällä hetkellä vastaanotetut työt
+      jobAlreadyAccepted: Olet ottanut tämän työn vastaan.
     dialogs:
       abandonJob:
         title: Hylkää työtehtävä
@@ -466,7 +488,7 @@ singulars:
       noActivity: Et ole valinnut mitään aktiviteettia. <hl>Valitse jokin alla olevista</hl>,
         tai pyyhkäise vasemmalle nähdäksesi kaiken mitä voit tehdä tässä paikassa.
     rewards:
-      experience: <bp /><c>{kp} </c><object id="{skill}"/> kokemusta
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> kokemusta
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} keräilyesinettä</c>,
         jotka on mahdollista löytää
   character:
@@ -760,6 +782,27 @@ singulars:
       cleaningUpData: Siivotaan pelidataa
       dataLoadingComplete: Pelidatan lataus valmis!
       loadingCharactersFromCloud: Ladataan hahmoja pilvestä
+      startingToLoadGame: Aloitetaan pelin lataaminen
+      startingProcesses: Käynnistetään pelin osia
+      loadingGameData: Ladataan pelin tietueita
+      initializingGameData: Alustetaan pelin tietueita
+      authenticating: Kirjaudutaan sisään
+      loadingGuideState: Ladataan opaskirjan tilaa
+      awaitingForRemoveConfig: Odotetaan asetuksia palvelimelta
+      processingStepHistory: Käsitellään askelhistoriaa
+      loadingDevicePermissions: Ladataan laitteen oikeuksia
+      reportingErrorToSentry: Raportoidaan virhe Sentry-palvelulle
+      loadingPlayerData: Ladataan pelaajan tietueita
+      settingUpStepManager: Lämmitellään askelmittaria
+      settingUpTutorialManager: Herätellään opastuksen järjestäjää
+      settingUpCensusManager: Varustetaan väestönlaskijaa matkaan
+      settingUpPlayerMetadata: Metaillaan tietueita pelaajan tietueista
+      updatingStepReadTime: Päivitetään askelten viimeisintä tarkistusaikaleimaa
+      changingMainCharacter: Vaihdetaan päähahmoa
+      loadingStepHistoryData: Ladataan otettujen askelten historiatietoja
+      loadingSteps: Ladataan askelia
+      loadingLocaleState: Ladataan käännöksen tilaa
+      settingUpOnlineSettingsManager: Viritellään asetusten palvelimelle välittämistä
   social:
     phrases:
       manageFriends: Hallitse yhteisöjä
@@ -855,6 +898,9 @@ singulars:
         varustesettisi painamalla alhaalta <c i=0>Luo uusi</c> painiketta.
       youDontHaveAnyItems: Ei esineitä. Sinulla ei joko ole tai hahmosi ei tiedä ainuttakaan
         tämän tyyppistä esinettä, tai suodattimesi ei palauttanut yhtäkään esinettä.
+      noGearSets: Et ole luonut vielä yhtään varustesettiä.
+      gearSetManageShortDesc: Paina <c i=0>Hallinnoi</c>-nappia luodaksesi, muokataksesi
+        ja viedäksesi varustesettejäsi.
   rumors:
     phrases:
       unlockedWalkpediaEntries: Walkpediaan lisätyt sivut
@@ -881,8 +927,8 @@ singulars:
       queue: Lisää jonoon
       travelingTo: Paikasta <object id="{from}"/> paikkaan <object id="{to}"/>
       untilInventoryFull: Jatketaan kunnes reppu täyttyy
-      switchingToGearSet: Vaihdetaan varustepakettiin <c>{name}</c>
-      noGearSetFound: Valittua varustepakettia ei löytynyt, oletko poistanut sen?
+      switchingToGearSet: Vaihdetaan varustesettiin <c>{name}</c>
+      noGearSetFound: Valittua varustesettiä ei löytynyt, oletko poistanut sen?
       activityInLocation: <object id="{activity}"/> kohteessa <object id="{location}"/>
       noPathFound: Kohteeseen ei löytynyt reittiä.
     options:
@@ -891,15 +937,15 @@ singulars:
           on saatavilla jossakin kohteista, joiden läpi matkustat.
         text: Talleta lukitsemattomat esineet pankkiin
       cancelGearSetSwitch:
-        desc: Peruuttaa valittuun varustepakettiin vaihtamisen tätä toimintoa varten.
-        text: Peruuta varustepakettiin vaihtaminen
+        desc: Peruuttaa valittuun varustesettiin vaihtamisen tätä toimintoa varten.
+        text: Peruuta varustesettiin vaihtaminen
       switchGearSet:
-        text: Vaihda varustepakettiin
-        desc: Vaihda valittuun varustepakettiin ennen kuin tämä toiminto alkaa.
+        text: Vaihda varustesettiin
+        desc: Vaihda valittuun varustesettiin ennen kuin tämä toiminto alkaa.
       withdrawGearSet:
-        text: Nosta varustepaketti pankista
-        desc: Nostaa varustepaketin pankista, jos sellainen on saatavilla jossakin
-          kohteista, joiden läpi matkustat.
+        text: Nosta varustesetti pankista
+        desc: Nostaa varustesetin pankista, jos sellainen on saatavilla jossakin kohteista,
+          joiden läpi matkustat.
       removeFromQueue:
         text: Poista jonosta
         desc: Poistaa toiminnon ja kaikki sitä seuraavat toiminnot jonosta.
@@ -924,3 +970,14 @@ singulars:
       startCrafting: Valmistus
       startTraveling: Matkustus
       startActivity: Aktiviteetti
+  announcements:
+    phrases:
+      unread: Lukematta
+      new: Uusi
+    info:
+      noAnnouncements: Tällä hetkellä tiedotteita ei ole.
+      announcementInfo: Voit löytää täältä <c>tiedotteita</c> kehittäjiltä. Kehittäjäblogit,
+        muutoslokit ja järjestelmätiedotteet pitävät sinut ajan tasalla pelin kehityksen
+        etenemisestä sekä ajoista, jolloin palvelin ei ole saatavilla.
+      noMoreAnnouncements: Olet päässyt tiedotteiden loppuun! Ei muita näytettäviä
+        tiedotteita.

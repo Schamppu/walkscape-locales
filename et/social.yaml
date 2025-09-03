@@ -7,6 +7,10 @@ singulars:
     inviteSent: Kutse saadetud
     inviteReceived: Oled saanud kutse
     none: Suhtlus
+    party:
+      member: Liige
+      admin: Admin
+      owner: Omanik
   actions:
     buttonLabels:
       removeFriend: Eemalda Sõber
@@ -17,10 +21,14 @@ singulars:
         accept: Nõustu
         reject: Loobu
         block: Blokeeri
+      createParty: Loo grupp
+      leaveParty: Lahku grupist
+      leaveAndDestroyParty: Lahku ja kustuta grupp
     confirmTitle:
       unblock: Eemalda kasutajalt blokk
       inviteResponse:
         block: Blokeeri kasutaja
+      changeRole: Muuda lubasid
     confirmDescription:
       removeFriend: Kas sa oled kindel, et soovid sõpruse lõpetada?
       unblock: Kas sa oled kindel, et soovid sellelt kasutajalt bloki eemaldada?
@@ -28,3 +36,35 @@ singulars:
       inviteResponse:
         block: Kas sa oled kindel, et soovid blokeerida selle kasutaaja? Blokeeritud
           kasutajad ei saa saata sulle sõbrakutseid.
+      leaveParty: Oled kindel, et soovid lahkuda grupist?
+      leaveAndDestroyParty: Oled kindel, et soovid lahkuda ja kustutada grupi? See
+        ei ole tagasivõetav.
+      changeRole: Oled kindel, et soovid anda <hl>{characterName}</hl> roll <hl>{partyRole}</hl>?
+  party:
+    manage: Halda
+    role: Roll
+  createParty:
+    input:
+      partyName: Grupi nimi
+      catchphrase: Tunnuslause
+      catchphraseHint: Tunnuslause (Valikuline)
+    rules:
+      mayContain: '<bp />Võib sisaldada: {list}'
+      noTrailingSpaces: <bp />Ei tohi alata ega lõppeda tühikuga
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        one: <bp />Vähemalt üks {} märk
+        other: <bp />Vähemalt {} märki
+      maxChar:
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Maksimaalselt {} märki
+        one: <bp />Maksimaalselt {} märki

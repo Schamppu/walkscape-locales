@@ -134,6 +134,12 @@ maps:
       'hours': '{hours}<c>h</c>'
       'minutes': '{minutes}<c>m</c>'
       'seconds': '{seconds}<c>s</c>'
+  announcements:
+    categories:
+      'update': Aktualizace
+      'system': Systém
+      'devblog': DevBlog
+      'changelog': Seznam změn
 plurals:
   achievements:
     phrases:
@@ -577,6 +583,27 @@ singulars:
       dataLoadingComplete: Načítání dat dokončeno!
       localizationFiles: Načítání lokalizačních souborů
       validatingGame: Ověřování herních dat ze serveru
+      startingProcesses: Spouštění herních procesů
+      loadingGameData: Načítání herních dat
+      authenticating: Ověřování
+      awaitingForRemoveConfig: Čekání na vzdálenou konfiguraci
+      processingStepHistory: Zpracováni historie kroků
+      loadingLocaleState: Načítání stavu lokace
+      loadingGuideState: Stav načítání průvodce
+      reportingErrorToSentry: Hlášení chyby Sentry
+      loadingPlayerData: Načítání dat hráče
+      settingUpStepManager: Nastavení správce kroků
+      settingUpTutorialManager: Nastavení správce tutoriálů
+      settingUpOnlineSettingsManager: Nastavení správce online nastavení
+      updatingStepReadTime: Aktualizace času načtení kroku
+      changingMainCharacter: Změna hlavní postavy
+      loadingStepHistoryData: Načítání dat historie kroků
+      settingUpCensusManager: Nastavení manažera sčítání
+      startingToLoadGame: Začíná se načítat hra
+      initializingGameData: Inicializace herních dat
+      loadingDevicePermissions: Načítání oprávnění zařízení
+      loadingSteps: Načítání kroků
+      settingUpPlayerMetadata: Nastavení metadat hráče
     phrases:
       deleteWord: SMAZAT
       createCharacter: Vytvořit novou postavu
@@ -710,7 +737,7 @@ singulars:
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> <c>Telefon</c> je výchozí doporučený zdroj
         počítání kroků pro WalkScape. Pro intenzivní sportovní aktivity doporučujeme
-        použít <icon i=\"Watch small\" /> <c>hodinky</c> Pro většinu hráčů je nejlepší
+        použít <icon i=\"Watch small\" /> <c>hodinky</c>. Pro většinu hráčů je nejlepší
         volbou <icon i=\"Phone small\" /> <c>Telefon</c>.\n\n<bp /> <c i=1>Počet vašich
         kroků se během chůze aktualizuje přímo ve hře.</c>\n\n<bp /> Aby se vaše kroky
         počítaly, <c>musíte mít u sebe telefon</c>. To může být obtížné při intenzivnějším
@@ -773,6 +800,19 @@ singulars:
       give: Vložit
       youMustBeInLocationToCollect: Abyste si mohli vyzvednout odměny, musíte být
         na stejném místě jako <object id="{obj}"/>.
+      currentlyAcceptedJobs: Aktuálně přijaté úkoly
+      jobAlreadyAccepted: Přijali jste tento úkol.
+      browseJobBoards: Procházet úkoly
+      availableJobs: Dostupné úkoly
+      availableJobInfo: Abyste mohli přijmout nebo dokončit úkoly, musíte být na jejich
+        místě.
+      atLocation: K dispozici na <object id="{obj}"/>
+      travelToJobBoard: Cesta do <object id="{obj}"/>
+      cannotAcceptMore: Nemůžete přijmout více úkolů.
+      complete: Dokončeno
+      youAreAtLocation: Nacházíte se na místě této pracovní nástěnky.
+      cannotWithdraw: Vaše aktuální poloha <object id="{obj}"/> nemá banku. Výběr
+        položek pro úkoly je zakázán.
     dialogs:
       abandonJob:
         text: Jste si jistý/á, že chcete tuto úlohu opustit? Ztratíte veškerý postup
@@ -912,3 +952,13 @@ singulars:
       startedNewActivity: Zahájena aktivita <object id="{activity}"/> v <object id="{location}"/>
       startedActivityNoLocation: Zahájena aktivita <object id="{activity}"/>
       actionCancelled: Akce zrušena
+  announcements:
+    phrases:
+      new: Nové
+      unread: Nepřečtené
+    info:
+      noAnnouncements: Momentálně nejsou k dispozici žádná oznámení.
+      noMoreAnnouncements: Dosáhli jste konce oznámení! Žádná další oznámení k zobrazení.
+      announcementInfo: Zde najdete <c>oznámení</c> napsaná vývojáři. Vývojářské blogy,
+        protokoly změn a systémová oznámení jsou skvělým způsobem, jak se informovat
+        o postupu vývoje a výpadcích serveru!

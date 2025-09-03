@@ -7,8 +7,7 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkillAndRealm:
-        text: <stat s="workEfficiency"/> tegeledes oskusega <supp k="skill"/> asukohas
-          <supp k="realm"/>.
+        text: <stat s="workEfficiency"/> tehes <supp k="skill"/> asukohas <supp k="realm"/>.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       global:
@@ -18,11 +17,11 @@ singulars:
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Globaalne <stat s="workEfficiency"/> olles asukohas <supp k="realm"/>
+        text: Globaalne <stat s="workEfficiency"/> asukohas <supp k="realm"/>
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="workEfficiency"/> tehes <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -34,13 +33,12 @@ singulars:
       whileRealmAndMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> tegeledes oskusega <supp k="skill"/> asukohas
-          <supp k="realm"/>
+        text: <stat s="workEfficiency"/> tehes <supp k="skill"/> asukohas <supp k="realm"/>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="workEfficiency"/> tegeledes oskusega <supp k="skill"/> olles
-          <supp k="keyword"/> asukohas.
+        text: <stat s="workEfficiency"/> tehes <supp k="skill"/> olles <supp k="keyword"/>
+          asukohas.
       whileLocationKeyword:
         text: Globaalne <stat s="workEfficiency"/> olles <supp k="keyword"/> asukohas.
         name: <PLACEHOLDER>
@@ -49,10 +47,14 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaalne <stat s="workEfficiency"/> kui <supp k="historyData"/>.
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="workEfficiency"/> tehes <supp k="skillGroup"/> oskust.
     craftingOutcome:
       whileMainSkillAndLocationKeyword:
-        text: <stat s="craftingOutcome"/> tegeledes oskusega <supp k="skill"/> olles
-          <supp k="keyword"/> asukohas.
+        text: <stat s="craftingOutcome"/> tehes <supp k="skill"/> olles <supp k="keyword"/>
+          asukohas.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whenKeywordSetBonus:
@@ -67,15 +69,19 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="craftingOutcome"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="craftingOutcome"/> tehes <supp k="skill"/>
       whileRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="craftingOutcome"/> olles asukohas <supp k="realm"/>
+        text: <stat s="craftingOutcome"/> asukohas <supp k="realm"/>
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaalne <stat s="craftingOutcome"/> olles <supp k="keyword"/> asukohas.
+      whileMainSkillAndRealm:
+        text: <stat s="craftingOutcome"/> tehes <supp k="skill"/> asukohas <supp k="realm"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     chestFind:
       whileRealm:
         text: <stat s="chestFind"/> asukohas <supp k="realm"/>
@@ -88,7 +94,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="chestFind"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="chestFind"/> tehes <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -105,12 +111,20 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="chestFind"/> tegeledes oskusega<supp k="skill"/> olles <supp
-          k="keyword"/> asukohas.
+        text: <stat s="chestFind"/> tehes <supp k="skill"/> olles <supp k="keyword"/>
+          asukohas.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaalne <stat s="chestFind"/> olles <supp k="keyword"/> asukohas.
+      whileMainSkillAndRealm:
+        text: <stat s="chestFind"/> tehes <supp k="skill"/> asukohas <supp k="realm"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> tehes <supp k="skillGroup"/> oskust.
     doubleAction:
       whenKeywordSetBonus:
         text: Globaalne <stat s="doubleAction"/> kandes vähemalt <supp k="quantity"/>
@@ -128,7 +142,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="doubleAction"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="doubleAction"/> tehes <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -136,19 +150,31 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="doubleAction"/> tegeledes oskusega <supp k="skill"/> olles
-          <supp k="keyword"/> asukohas.
+        text: <stat s="doubleAction"/> tehes <supp k="skill"/> olles <supp k="keyword"/>
+          asukohas.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaalne <stat s="doubleAction"/> olles <supp k="keyword"/> asukohas.
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> tehes <supp k="skillGroup"/> oskust.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globaalne <stat s="doubleAction"/> asukohas <supp k="realm"/>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> tehes <supp k="skill"/> asukohas <supp k="realm"/>.
     doubleRewards:
       whileLocationKeyword:
         text: Globaalne <stat s="doubleRewards"/> olles <supp k="keyword"/> asukohas.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkill:
-        text: <stat s="doubleRewards"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="doubleRewards"/> tehes <supp k="skill"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whenKeywordSetBonus:
@@ -167,15 +193,27 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="doubleRewards"/> tegeledes oskusega <supp k="skill"/> olles
-          <supp k="keyword"/> asukohas.
+        text: <stat s="doubleRewards"/> tehes <supp k="skill"/> olles <supp k="keyword"/>
+          asukohas.
       whileActivity:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaalne <stat s="doubleRewards"/> tehes tegevust <supp k="activityType"/>.
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        text: <stat s="doubleRewards"/> tehes <supp k="skill"/> asukohas <supp k="realm"/>.
+        desc: <PLACEHOLDER>
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globaalne <stat s="doubleRewards"/> asukohas <supp k="realm"/>
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleRewards"/> tehes <supp k="skillGroup"/> oskust.
     fineMaterialFind:
       whileRealm:
-        text: <stat s="fineMaterialFind"/> olles asukohas <supp k="realm"/>
+        text: <stat s="fineMaterialFind"/> asukohas <supp k="realm"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       global:
@@ -185,7 +223,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="fineMaterialFind"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="fineMaterialFind"/> tehes <supp k="skill"/>
       whenAchievementPoints:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -198,25 +236,29 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="fineMaterialFind"/> tegeledes oskusega <supp k="skill"/> olles
-          <supp k="keyword"/> asukohas.
+        text: <stat s="fineMaterialFind"/> tehes <supp k="skill"/> olles <supp k="keyword"/>
+          asukohas.
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="fineMaterialFind"/> tegeledes oskusega <supp k="skill"/> asukohas
-          <supp k="realm"/>.
+        text: <stat s="fineMaterialFind"/> tehes <supp k="skill"/> asukohas <supp
+          k="realm"/>.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaalne <stat s="fineMaterialFind"/> olles <supp k="keyword"/> asukohas.
+      whileSkillGroup:
+        desc: <PLACEHOLDER>
+        text: <stat s="fineMaterialFind"/> tehes grupi <supp k="skillGroup"/> oskust.
+        name: <PLACEHOLDER>
     experience:
       whileMainSkill:
-        text: <stat s="bonusExperience"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="bonusExperience"/> tehes <supp k="skill"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
-        text: <stat s="bonusExperience"/> tegeledes oskusega <supp k="skill"/> olles
-          <supp k="keyword"/> asukohas.
+        text: <stat s="bonusExperience"/> tehes <supp k="skill"/> olles <supp k="keyword"/>
+          asukohas.
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       global:
@@ -234,10 +276,22 @@ singulars:
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: Globaalne <stat s="bonusExperience"/> olles <supp k="keyword"/> asukohaas.
+        text: Globaalne <stat s="bonusExperience"/> olles <supp k="keyword"/> asukohas.
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> tehes <supp k="skill"/> asukohas <supp k="realm"/>.
+      whileSkillGroup:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> tehes <supp k="skillGroup"/> oskust.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Globaalne <stat s="bonusExperience"/> asukohas <supp k="realm"/>
     stepsRequired:
       whileMainSkill:
-        text: <stat s="stepsRequired"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="stepsRequired"/> tehes <supp k="skill"/>
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
       whileTraveling:
@@ -256,17 +310,33 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="stepsRequired"/> tegeledes oskusega <supp k="skill"/> olles
-          <supp k="keyword"/> asukohas.
+        text: <stat s="stepsRequired"/> tehes <supp k="skill"/> olles <supp k="keyword"/>
+          asukohas.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaalne <stat s="stepsRequired"/> olles <supp k="keyword"/> asukohas.
+      whileRealm:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: Globaalne <stat s="stepsRequired"/> asukohas <supp k="realm"/>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> tehes <supp k="skill"/> asukohas <supp k="realm"/>.
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="stepsRequired"/> tehes <supp k="skillGroup"/> oskust.
     rollSpecialTable:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="rollSpecialTable"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="rollSpecialTable"/> tehes <supp k="skill"/>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="rollSpecialTable"/>
     travelingDistance:
       whileTraveling:
         name: <PLACEHOLDER>
@@ -285,7 +355,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="noMaterialsConsumed"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="noMaterialsConsumed"/> tehes <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -293,13 +363,22 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="noMaterialsConsumed"/> tegeledes oskusega <supp k="skill"/>
-          olles <supp k="keyword"/> asukohas.
+        text: <stat s="noMaterialsConsumed"/> tehes <supp k="skill"/> olles <supp
+          k="keyword"/> asukohas.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaalne <stat s="noMaterialsConsumed"/> olles <supp k="keyword"/>
           asukohas.
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> tehes <supp k="skill"/> asukohas <supp
+          k="realm"/>.
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="noMaterialsConsumed"/> tehes <supp k="skillGroup"/> oskust.
     skillLevel:
       global:
         name: <PLACEHOLDER>
@@ -308,7 +387,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="skillLevel"/> tase tegeledes oskusega <supp k="skill"/>
+        text: <stat s="skillLevel"/> tase tehes <supp k="skill"/>
       whileTraveling:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -318,24 +397,23 @@ singulars:
       whileMining:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findGems">tõenäosus leida kalliskive</stat> tegeledes oskusega
-          <supp k="skill"/>
+        text: <stat s="findGems">tõenäosus leida kalliskive</stat> tehes <supp k="skill"/>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findGems">tõenäosus leida kalliskive</stat> tegeledes oskusega
-          <supp k="skill"/> olles <supp k="keyword"/> asukohas.
+        text: <stat s="findGems">tõenäosus leida kalliskive</stat> tehes <supp k="skill"/>
+          olles <supp k="keyword"/> asukohas.
     findBirdNests:
       whileWoodcutting:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findBirdNests">tõenäosus leida linnupesi</stat> tegeledes oskusega
-          <supp k="skill"/>
+        text: <stat s="findBirdNests">tõenäosus leida linnupesi</stat> tehes <supp
+          k="skill"/>
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findBirdNests">tõenäosus leida linnupesi</stat> tegeledes oskusega
-          <supp k="skill"/> olles <supp k="keyword"/> asukohas.
+        text: <stat s="findBirdNests">tõenäosus leida linnupesi</stat> tehes <supp
+          k="skill"/> olles <supp k="keyword"/> asukohas.
     findCollectibles:
       global:
         name: <PLACEHOLDER>
@@ -344,7 +422,7 @@ singulars:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findCollectibles"/> tegeledes oskusega <supp k="skill"/>
+        text: <stat s="findCollectibles"/> tehes <supp k="skill"/>
       whenAchievementPoints:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
@@ -358,14 +436,58 @@ singulars:
       whileMainSkillAndLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findCollectibles"/> tegeledes oskusega <supp k="skill"/> olles
-          <supp k="keyword"/> asukohas.
+        text: <stat s="findCollectibles"/> tehes <supp k="skill"/> olles <supp k="keyword"/>
+          asukohas.
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaalne <stat s="findCollectibles"/> olles <supp k="keyword"/> asukohas.
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="findCollectibles"/> tehes <supp k="skillGroup"/> oskust.
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="workEfficiency"/> tehes <supp k="skill"/> asukohas <supp k="realm"/>.
   custom:
     gainAdventurersGuildToken:
       name: <PLACEHOLDER>
       desc: <PLACEHOLDER>
       text: Võimalus leida <hl>1</hl> Seiklejate Gildi märk
+    findCrustacean:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Võimalus leida <hl>1</hl> koorikloom
+    gainCoinPouch:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Võimalus leida <hl>1</hl> Münditasku
+    findTreasureChest:
+      desc: <PLACEHOLDER>
+      name: <PLACEHOLDER>
+      text: Võimalus leida <hl>1</hl> kirst
+    gainZeroToTenMoney:
+      text: Võimalus leida <hl>1</hl> kuni <hl>10</hl> kuldmünti
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+    gainOneMoney:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Võimalus leida <hl>1</hl> kuldmünt
+    rollGemPouchTable:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Võimalus leida <hl>1</hl> kalliskivi kalliskivikotist
+    trashTable:
+      text: Võimalus leida <hl>1</hl> suvaline tükk rämpsu
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+    findFishingBait:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Võimalus leida <hl>1</hl> kalasööt
+    gainSeashells:
+      name: <PLACEHOLDER>
+      desc: <PLACEHOLDER>
+      text: Võimalus leida <hl>1</hl> kuni <hl>10</hl> merikarpi
