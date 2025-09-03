@@ -429,11 +429,17 @@ singulars:
       permissionExplanation: Oyunun çalışması için, cihazının adım sayacı verilerini
         kullanma iznine ihtiyacımız var. Lütfen oyuna devam etmek için bu izni onayla.
       exactAlarmPermission: Bildirim izni
-      connectAppleHealth: Apple Health'e bağlan
+      connectAppleHealth: Apple Health'e Bağlan
       connect: Bağlan
       stepCountingSource: Adım kaynağı
       changeStepCountingSource: Adım kaynağını değiştir
       comingSoonToAndroid: Yakında Android'e gelecek
+      pedometerPermissionExplanation: Cihazınızın adım sayma verisini kullanabilmemiz
+        için bu izne ihtiyacımız var.
+      youNeedToGivePermissions: Oyuna devam edebilmek için gerekli izinleri vermelisin.
+        Üzerlerine dokunarak gerekli izinleri ver.
+      noDeviceFound: Cihaz bulunamadı. Lütfen yukarıdaki <c>Apple Health'e Bağlan</c>
+        tuşuna bastığına ve Apple Health verilerini okuma izni verdiğine emin ol.
     deviceSource:
       watch: Başka bir saat
       phone: Telefon
@@ -572,15 +578,19 @@ singulars:
       requirements: Gereksinimler
       cantStartActivity: Faaliyete başlanamıyor
       travelAndStartActivity: Seyahat edip faaliyete başla
-      locationIsUnknown: Konum bilinmiyor. Ancak bu konumu keşfedersen buradaki faaliyetleri
+      locationIsUnknown: Konum bilinmiyor. Bu konumu keşfedince buradaki faaliyetleri
         görebilirsin.
+      levelActivity: <c>{level}</c> seviye <object id="{skill}"/> faaliyeti
     info:
-      consumablesUsage: Faaliyetler esnasında kullanmak için birer <c>yiyecek</c>
-        ve <c>iksir</c> seçebilirsin.
+      consumablesUsage: Faaliyet yaparken kullanmak için birer <c>yiyecek</c> ve <c>iksir</c>
+        seçebilirsin.
       noActivity: Şu anda seçilmiş bir faaliyet bulunmuyor. <hl>Aşağıdakilerden birini
-        seçebilir</hl> veya sola kaydırarak bu konumdaki mevcut her şeyi görebilirsin.
-      savedSteps: Birikmiş adımların harcanıyor. Tamamı tükenene kadar her adımın
-        iki adım sayılır.
+        seçebilir</hl> veya sola kaydırarak bu konumda mevcut olan her şeyi görebilirsin.
+      savedSteps: Birikmiş adımların harcanıyor. Tamamı tükenene kadar attığın her
+        adım iki adım yerine geçer.
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> tecrübesi
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} koleksiyonluk</c> bulunabilir
   settings:
     categories:
       gameplay:
@@ -632,7 +642,7 @@ singulars:
       gameVersion: Oyun versiyonu {version}
   popupBubbles:
     phrases:
-      overEncumbered: Envanterin dolup taştı.
+      overEncumbered: Envanterin tamamen dolup taştı.
       arrivedToLocation: <object id={location} /> konumuna varıldı
   abilities:
     info:
@@ -733,26 +743,35 @@ singulars:
       traveling: Seyahat
     phrases:
       queue: Sıra
-      queuedActions: Sıralanan faaliyetler
+      queuedActions: Sıralanan eylemler
       noGearSetFound: Seçilmiş teçhizat seti bulunamadı, silmiş olabilir misin?
       activityInLocation: <object id="{location}"/> konumunda <object id="{activity}"/>
       noPathFound: Hedefe giden bir yol bulunamadı.
+      travelingTo: <object id="{from}"/> konumundan <object id="{to}"/> konumuna
+      untilInventoryFull: Envanter dolana kadar yapılıyor
+      switchingToGearSet: <c>{name}</c> teçhizat seti kuşanılıyor
     suggestedOptions:
       startCrafting: Üretim
       startTraveling: Seyahat
       startActivity: Faaliyet
     options:
       depositUnlockedItems:
-        text: Açılan eşyaları yatır
+        text: Edinilmiş eşyaları yatır
+        desc: Geçtiğin konumlardan birinde banka bulunuyorsa envanterindeki edinilmiş
+          eşyaları bankaya yatır.
       removeFromQueue:
         text: Sıradan çıkar
+        desc: Bu eylem ile takip eden bütün eylemleri sıradan çıkar.
       switchGearSet:
-        text: Teçhizat setini kuşan
+        text: Teçhizat seti kuşan
         desc: Bu eyleme başlamadan önce seçilmiş teçhizat setini kuşan.
       withdrawGearSet:
         desc: Geçtiğin konumlardan birinde banka bulunuyorsa bir teçhizat setini bankadan
           çek.
         text: Teçhizat setini çek
+      cancelGearSetSwitch:
+        text: Teçhizat seti kuşanmayı iptal et
+        desc: Bu eylem için seçilmiş teçhizat setini kuşanmayı iptal et.
     suggestions:
       activity:
         onceInventoryIsFull: Envanterin dolunca bir şey yapmak ister misin?
@@ -760,11 +779,20 @@ singulars:
           misin?
       crafting:
         onceAllItemsAreCrafted: Bütün eşyalar üretilince bir şey yapmak ister misin?
+        onceCertainRarityIsCrafted: Belli bir nadirlikteki eşyayı üretince ya da bütün
+          malzemeleri bitirince bir şey yapmak ister misin?
+      traveling:
+        onceYouArriveTo: <object id="{location}"/> konumunda sıraya eylem eklensin
+          mi?
   locales:
     phrases:
       language: Dil
       chooseALanguage: Aşağıdaki listeden bir dil seç.
       percentExplanation: '"%" ne kadarının tercüme edildiğini gösterir.'
+      grammaticalGenderExplanation: Seçilmiş cinsiyetin oyun arayüzünün sana nasıl
+        hitap edeceğini etkiler.
+      selectGrammaticalGender: Cinsiyetini seç
+      youCanChangeAnyTime: Oyun dilini ne zaman istersen<c>Oyun Ayarlarından</c> değiştirebilirsin.
   whileAway:
     phrases:
       actionCancelled: Eylem iptal edildi
