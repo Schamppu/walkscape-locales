@@ -34,6 +34,10 @@ singulars:
         або проведіть ліворуч, щоб побачити все доступне в цьому місці.
       savedSteps: У вас є збережені кроки, які витрачаються. Кожен крок рахується
         як два, поки всі збережені кроки не будуть вичерпані.
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> досвіду
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} колекційних предметів</c>
+        можна знайти
   character:
     phrases:
       skills: Навички
@@ -117,6 +121,42 @@ singulars:
       readingCloudData: Читання хмарних даних
       cleaningUpData: Очищення даних
       loadingCharactersFromCloud: Завантаження персонажів з хмари
+      spawningIsolate: Створення ізоляту...
+      startingSentry: Запуск Sentry...
+      initializingGameData: Ініціалізація ігрових даних
+      loadingGuideState: Завантаження стану гіда
+      awaitingForRemoveConfig: Очікування віддаленої конфігурації
+      processingStepHistory: Обробка історії кроків
+      loadingLocaleState: Завантаження стану локалізації
+      loadingDevicePermissions: Завантаження дозволів пристрою
+      loadingPlayerData: Завантаження даних гравця
+      settingUpStepManager: Налаштування менеджера кроків
+      settingUpTutorialManager: Налаштування менеджера навчання
+      settingUpOnlineSettingsManager: Налаштування менеджера онлайн-налаштувань
+      settingUpCensusManager: Налаштування менеджера перепису
+      settingUpPlayerMetadata: Налаштування метаданих гравця
+      updatingStepReadTime: Оновлення часу читання кроків
+      changingMainCharacter: Зміна головного персонажа
+      loadingStepHistoryData: Завантаження даних історії кроків
+      loadingSteps: Завантаження кроків
+      startingErrorManagerProcess: Запуск процесу менеджера помилок
+      startingEventManagerProcess: Запуск процесу менеджера подій
+      startingNetworkProcess: Запуск мережевого процесу
+      startingGameManagerProcess: Запуск процесу менеджера гри
+      startingPlayerManagerProcess: Запуск процесу менеджера гравця
+      startingAuthProcess: Запуск процесу автентифікації
+      startingTimeManagerProcess: Запуск процесу менеджера часу
+      startingNotificationManagerProcess: Запуск процесу менеджера сповіщень
+      loadingLocalStorage: Завантаження локального сховища...
+      startingSettingsManagerProcess: Запуск процесу менеджера налаштувань
+      startingToLoadGame: Початок завантаження гри
+      startingProcesses: Запуск ігрових процесів
+      loadingGameData: Завантаження ігрових даних
+      authenticating: Автентифікація
+      reportingErrorToSentry: Повідомлення про помилку до Sentry
+    isolates:
+      mainIsolate: Головний ізолят
+      workerIsolate: Робочий ізолят
   queue:
     types:
       traveling: Подорож
@@ -194,6 +234,35 @@ singulars:
       watch: Інший годинник
       featureDisabled: Зміна джерел введення була дистанційно вимкнена на деякий час.
         Буде використовуватися стандартний педометр телефона.
+    deviceInfo:
+      phone: "<icon i=\"Phone small\" /> <c>Телефон</c> є рекомендованим джерелом
+        підрахунку кроків для WalkScape за замовчуванням. Для інтенсивних спортивних
+        активностей ми рекомендуємо використовувати <icon i=\"Watch small\" /> <c>годинник</c>
+        як джерело підрахунку кроків. Для більшості гравців використання <icon i=\"\
+        Phone small\" /> <c>телефона</c> є найкращим варіантом.\n\n<bp /> <c i=1>Ваші
+        кроки оновлюються в реальному часі в грі під час ходьби.</c>\n\n<bp /> Щоб
+        ваші кроки зараховувалися, <c>ви повинні мати телефон при собі</c>. Це може
+        бути складно під час більш інтенсивних занять спортом.\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> відрізняється
+        від деяких <icon i=\"Watch small\" /> <c>інших годинників</c> тим, що синхронізує
+        ваші кроки з Apple Health періодично. WalkScape зчитує ваші кроки з Apple
+        Health, які синхронізуються з вашого <icon i=\"Apple watch small\" /> <c>Apple
+        Watch</c> або будь-якого іншого годинника.\n\n<bp /> <c i=2>Apple Watch синхронізує
+        ваші кроки з Apple Health періодично.</c> Ви не можете бачити оновлення кроків
+        в реальному часі в грі, і ваші кроки можуть надходити із затримкою.\n\n<bp
+        /> Вам потрібно надати додатковий дозвіл на читання даних з Apple Health для
+        підключення годинника.\n\n<bp /> Тільки кроки, які повідомляються вашим годинником,
+        записуються в грі.\n"
+      watch: "WalkScape зчитує ваші кроки з <c>Apple Health</c>, які синхронізуються
+        туди з вашого <icon i=\"Watch small\" /> <c>годинника</c>. Залежно від виробника,
+        вам може знадобитися вручну синхронізувати кроки з окремого додатка до <c>Apple
+        Health</c>.\n\n<bp /> <c i=2>Вам може знадобитися синхронізувати кроки з Apple
+        Health вручну через інші додатки</c> щоб будь-які кроки зараховувалися в WalkScape.\n\
+        \n<bp /> Процес синхронізації кроків з <c>Apple Health</c> залежить від виробника.
+        Це може вимагати додаткового налаштування та технічних знань.\n\n<bp /> Вам
+        потрібно надати додатковий дозвіл на читання даних з Apple Health для підключення
+        годинника.\n\n<bp /> Тільки кроки, які повідомляються вашим годинником, записуються
+        в грі.\n"
   achievements:
     phrases:
       notUnlocked: Заблоковане досягнення
@@ -294,6 +363,20 @@ singulars:
       noJobsAvailable: 'У цьому місці зараз немає доступних робіт. Нові роботи будуть
         доступні через:'
       refreshIn: 'Дошка роботи буде оновлена через:'
+      browseJobBoards: Переглянути завдання
+      availableJobs: Доступні завдання
+      availableJobInfo: Щоб прийняти або завершити завдання, ви повинні бути в їх
+        локації.
+      atLocation: Доступно в <object id="{obj}"/>
+      youAreAtLocation: Ви знаходитесь в локації цієї дошки завдань.
+      travelToJobBoard: Подорожувати до <object id="{obj}"/>
+      cannotAcceptMore: Ви не можете прийняти більше завдань.
+      complete: Завершити
+      currentlyAcceptedJobs: Поточно прийняті завдання
+      jobAlreadyAccepted: Ви прийняли це завдання.
+      cannotWithdraw: У вашій поточній локації <object id="{obj}"/> немає банку. Зняття
+        предметів для завдань вимкнено.
+      acceptedJobs: Поточно прийняті завдання <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
     dialogs:
       abandonJob:
         title: Покинути роботу
@@ -339,6 +422,7 @@ singulars:
       noConsumables: У вашому інвентарі немає витратних предметів.
       noFoodConsumables: У вашому інвентарі немає <hl>їжі</hl>.
       noPotionConsumables: У вашому інвентарі немає <hl>зіль</hl>.
+      durationInSteps: Активний протягом <c>{steps}</c> <icon i="Steps" /> кроків
     options:
       expandInventory: Розширити інвентар
       showMaterials: Показати матеріали
@@ -349,6 +433,8 @@ singulars:
         обравши його зі списку нижче і натиснувши "Екіпірувати".
       noItemsFound: У вашому інвентарі не знайдено предметів, які підійшли б для цього
         слота.
+      noItemSelected: Предмет не вибрано. \n\n Виберіть предмет зі списку нижче, щоб
+        порівняти його з поточним предметом і екіпірувати його.
   trade:
     phrases:
       total: Всього
@@ -387,6 +473,11 @@ singulars:
           title: Змінити джерело даних?
           description: Зверніть увагу, що це може призвести до втрати кроків приблизно
             в час зміни.
+        requiresPermissionIos: Якщо випадаючий список нижче не показує жодних зовнішніх
+          пристроїв, переконайтеся, що ви надали додатку дозвіл на використання даних
+          кроків з Apple Health в Налаштування ➤ Конфіденційність та безпека ➤ Здоров'я
+          ➤ (в розділі Додатки) WalkScape і що Apple Health зареєстрував кроки на
+          цих пристроях за останні 7 днів.
       account:
         title: Обліковий запис
         visibility: Видимість профіля
@@ -412,6 +503,11 @@ singulars:
       connectionInfoAndroid: Підтримка розумних годинників для Android невдовзі. Наразі
         підтримується лише телефон як джерело підрахунку кроків.
       gameVersion: Версія гри {version}
+      connectionInfoIos: Якщо ваші носимі пристрої не з'являються в списку вище, переконайтеся,
+        що ви надали WalkScape дозвіл на використання даних кроків з Apple Health
+        в <c>Налаштування ➤ Конфіденційність та безпека ➤ Здоров'я ➤ (в розділі Додатки)
+        WalkScape</c> і що Apple Health зареєстрував кроки на цих пристроях за останні
+        7 днів.
   gearSets:
     phrases:
       gearSets: Набори спорядження
@@ -431,10 +527,29 @@ singulars:
       noItemSelected: Предмет не обрано
       newSetDefaultName: Мій новий набір спорядження
       importedGearSetDefaultName: Імпортований набір спорядження
+      optionsAndFilters: Опції та фільтри
     errors:
       duplicateItem: Предмет вже існує в наборі спорядження
+      keywordError: 'Набір спорядження вже має: <object id="{keyword}" />'
     info:
       noGearSets: Ви ще не створили жодного набору спорядження.
+      gearSetsDescription: Набори спорядження допомагають швидко перемикатися між
+        різним спорядженням.
+      gearSetManageDesc: Виберіть набір спорядження, який ви хочете екіпірувати, зі
+        списку нижче. Щоб створити, імпортувати або редагувати ваші набори спорядження,
+        ви можете натиснути <c i=0>Керувати</c>.
+      gearSetManageShortDesc: Щоб створити, імпортувати або редагувати ваші набори
+        спорядження, ви можете натиснути <c i=0>Керувати</c>.
+      gearSetsListDesc: Ви можете керувати своїми наборами спорядження тут. Якщо ви
+        хочете <c i=0>створити новий</c>, натисніть кнопку нижче. Ви також можете
+        <c i=1>скопіювати ваше поточно екіпіроване спорядження</c> при створенні нового
+        набору спорядження.
+      noGearSetsManage: Ви ще не створили жодного набору спорядження. Створіть свій
+        перший, натиснувши кнопку <c i=0>Створити новий</c> нижче.
+      noGearSetsList: У вас ще немає наборів спорядження. Виберіть <c i=0>Керувати</c>
+        щоб створити або імпортувати нові набори спорядження.
+      youDontHaveAnyItems: Немає предметів. Ви або не знаєте, або не маєте предметів
+        цього типу, або ваші фільтри та пошук не повернули нічого підходящого.
   location:
     phrases:
       factions: Фракції
@@ -471,12 +586,30 @@ singulars:
         вашого персонажа.
       defaultExpression: Стандартний вираз
       noVariantSelected: Варіант не обрано
+      homeRegion: Домашній регіон
+      selectedVariant: Варіант {index} вибрано
+      variant: Варіант {number}
   worldMap:
     phrases:
       pointsOfInterest: Цікаві місця
       information: Інформація
       route: Маршрут
       currentLocation: Поточне місце
+      afterExploring: Після дослідження локації ви зможете побачити цікаві місця цієї
+        локації.
+      routeRequirementsNotMet: 'Маршрути у вашому вибраному шляху мають вимоги, які
+        не виконані:'
+      youHaveNotExplored: Ви ще не дослідили цю локацію. Ви побачите інформацію про
+        цю локацію після того, як відвідаєте її один раз.
+      routeFromTo: <location i="{fromID}"/> до <location i="{toID}"/>
+      youreHere: Ви зараз знаходитесь у цій локації.
+      noActivities: У цій локації немає доступних активностей.
+      buildings: Будівлі
+      activities: Активності
+      changeRouteWarning: Зміна вашого маршруту скасує вашу поточну подорож і поверне
+        вас до попередньої локації. Ви впевнені?
+      youAreInspectingFromMap: Ви <c>оглядаєте з карти світу</c>. Щоб взаємодіяти,
+        вам потрібно бути в самій локації і відкрити це з основного виду локації.
   stats:
     phrases:
       stats: Статистика
@@ -485,6 +618,7 @@ singulars:
       reputation: Репутація
       lastUpdated: 'Останнє оновлення: <c>{updatedAt}</c>.'
       recordedFrom: Записано з <c>{from}</c> до <c>{to}</c>.
+      totalSteps: Загальна кількість кроків
     info:
       stats: Збірка статистики з кожного кроку, який ви зробили у світі Аренуму.
       reputation: Репутація - це міра того, наскільки ви відомі в різних фракціях
@@ -581,6 +715,17 @@ singulars:
       startedNewActivity: Почато активність <object id="{activity}"/> у <object id="{location}"/>
       startedActivityNoLocation: Почато активність <object id="{activity}"/>
       actionCancelled: Дію скасовано
+  announcements:
+    phrases:
+      unread: Непрочитано
+      new: Нове
+    info:
+      announcementInfo: Тут ви можете знайти <c>оголошення</c> написані розробниками.
+        Блоги розробників, журнали змін та системні оголошення - це чудовий спосіб
+        залишатися в курсі прогресу розробки та простоїв сервера!
+      noMoreAnnouncements: Ви досягли кінця оголошень! Більше оголошень для показу
+        немає.
+      noAnnouncements: На даний момент немає оголошень.
 plurals:
   activity:
     phrases:
@@ -624,6 +769,7 @@ plurals:
         one: <icon i="Steps"/> Потрібно <c>{} крок</c> на дію
         two: <icon i="Steps"/> Потрібно <c>{} кроки</c> на дію
         other: <icon i="Steps"/> Потрібно <c>{} кроків</c> на дію
+        many: '-'
   inventory:
     info:
       consumableDuration:
@@ -789,3 +935,9 @@ maps:
       'masculine': Чоловічий
       'feminine': Жіночий
       'neutral': Нейтральний
+  announcements:
+    categories:
+      'devblog': Блог розробників
+      'changelog': Журнал змін
+      'update': Оновлення
+      'system': Система
