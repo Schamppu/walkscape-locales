@@ -170,46 +170,81 @@ singulars:
         desc: <PLACEHOLDER>
       whileMainSkill:
         text: <stat s="doubleAction"/> під час <supp k="skill"/>
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
       whileTraveling:
         text: <stat s="doubleAction"/> під час подорожі
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileRealm:
         text: Глобальна <stat s="doubleAction"/> перебуваючи в <supp k="realm"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileTravelingAndRealm:
         text: <stat s="doubleAction"/> під час подорожі в <supp k="realm"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whenKeywordSetBonus:
         text: Глобальна <stat s="doubleAction"/> якщо носити принаймні <supp k="quantity"/>
           предметів <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
         text: <stat s="doubleAction"/> під час <supp k="skill"/> в локації <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileMainSkillAndRealm:
         text: <stat s="doubleAction"/> під час <supp k="skill"/> в <supp k="realm"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileLocationKeyword:
         text: Глобальна <stat s="doubleAction"/> перебуваючи в локації <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileSkillGroup:
         text: <stat s="doubleAction"/> під час будь-якої навички <supp k="skillGroup"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     doubleRewards:
       whileMainSkill:
         text: <stat s="doubleRewards"/> під час <supp k="skill"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whenAchievementPoints:
         text: Глобальні <stat s="doubleRewards"/> коли <supp k="achievementPoints"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whenKeywordSetBonus:
         text: Глобальні <stat s="doubleRewards"/> якщо носити принаймні <supp k="quantity"/>
           предметів <supp k="keyword"/>.
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
       whileMainSkillAndLocationKeyword:
         text: <stat s="doubleRewards"/> під час <supp k="skill"/> в локації <supp
           k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileActivity:
         text: Глобальні <stat s="doubleRewards"/> під час виконання <supp k="activityType"/>.
+        name: <PLACEHOLDER>
       whileSkillGroup:
         text: <stat s="doubleRewards"/> під час будь-якої навички <supp k="skillGroup"/>.
       global:
         text: Глобальні <stat s="doubleRewards"/>
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
       whileRealm:
         text: Глобальні <stat s="doubleRewards"/> перебуваючи в <supp k="realm"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileMainSkillAndRealm:
         text: <stat s="doubleRewards"/> під час <supp k="skill"/> в <supp k="realm"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
       whileLocationKeyword:
         text: Глобальні <stat s="doubleRewards"/> перебуваючи в локації <supp k="keyword"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     rollSpecialTable:
       whileMainSkill:
         text: <stat s="rollSpecialTable"/> під час <supp k="skill"/>
@@ -266,10 +301,80 @@ singulars:
         text: <stat s="noMaterialsConsumed"/> під час <supp k="skill"/>
       whileTraveling:
         text: <stat s="noMaterialsConsumed"/> під час подорожі
+      whileMainSkillAndRealm:
+        text: <stat s="noMaterialsConsumed"/> під час <supp k="skill"/> у <supp k="realm"/>.
+      whileLocationKeyword:
+        text: Глобальний <stat s="noMaterialsConsumed"/> у <supp k="keyword"/> локації.
+      whileSkillGroup:
+        text: <stat s="noMaterialsConsumed"/> під час будь-якого навику <supp k="skillGroup"/>.
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="noMaterialsConsumed"/> під час <supp k="skill"/> у <supp k="keyword"/>
+          локації.
     inventorySpace:
       global:
         text: <stat s="inventorySpace"/>
+    skillLevel:
+      global:
+        text: <stat s="skillLevel"/> рівень
+      whileMainSkill:
+        text: <stat s="skillLevel"/> рівень під час <supp k="skill"/>
+      whileTraveling:
+        text: <stat s="skillLevel"/> рівень під час подорожі
   special:
     findCollectibles:
       whileMainSkillAndRealm:
         text: <stat s="workEfficiency"/> під час <supp k="skill"/> в <supp k="realm"/>.
+      global:
+        text: Глобальний <stat s="findCollectibles">шанс знайти колекційні предмети</stat>
+      whileMainSkill:
+        text: <stat s="findCollectibles"/> під час <supp k="skill"/>
+      whenAchievementPoints:
+        text: Глобальний <stat s="findCollectibles">шанс знайти колекційні предмети</stat>
+          коли <supp k="achievementPoints"/>
+      whenKeywordSetBonus:
+        text: Глобальний <stat s="findCollectibles">шанс знайти колекційні предмети</stat>
+          якщо носити принаймні <supp k="quantity"/> <supp k="keyword"/> предметів.
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="findCollectibles"/> під час <supp k="skill"/> у <supp k="keyword"/>
+          локації.
+      whileLocationKeyword:
+        text: Глобальний <stat s="findCollectibles"/> у <supp k="keyword"/> локації.
+      whileSkillGroup:
+        text: <stat s="findCollectibles"/> під час будь-якого навику <supp k="skillGroup"/>.
+    findGems:
+      whileMining:
+        text: <stat s="findGems">шанс знайти самоцвіти</stat> під час <supp k="skill"/>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="findGems">шанс знайти пташині гнізда</stat> під час <supp k="skill"/>
+          у <supp k="keyword"/> локації.
+    findBirdNests:
+      whileWoodcutting:
+        text: <stat s="findBirdNests">шанс знайти пташині гнізда</stat> під час <supp
+          k="skill"/>
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="findBirdNests">шанс знайти пташині гнізда</stat> під час <supp
+          k="skill"/> у <supp k="keyword"/> локації.
+  custom:
+    gainAdventurersGuildToken:
+      text: Шанс знайти <hl>1</hl> жетон Гільдії пригодників
+    findCrustacean:
+      text: Шанс знайти <hl>1</hl> ракоподібного
+    rollGemPouchTable:
+      text: Шанс отримати <hl>1</hl> самоцвіт з мішечка самоцвітів
+    gainOneMoney:
+      text: Шанс знайти <hl>1</hl> золоту монету
+    gainZeroToTenMoney:
+      text: Шанс знайти від <hl>1</hl> до <hl>10</hl> золотих монет
+    findFishingBait:
+      text: Шанс знайти <hl>1</hl> рибальську принаду
+    trashTable:
+      text: Шанс знайти <hl>1</hl> випадковий шматок сміття
+    findTreasureChest:
+      desc: <PLACEHOLDER>
+      text: Шанс знайти <hl>1</hl> скриню
+      name: <PLACEHOLDER>
+    gainCoinPouch:
+      text: Шанс знайти <hl>1</hl> мішечок монет
+    gainSeashells:
+      text: Шанс знайти від <hl>1</hl> до <hl>10</hl> морських мушель
+      desc: <PLACEHOLDER>
