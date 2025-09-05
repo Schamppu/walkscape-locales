@@ -59,21 +59,23 @@ singulars:
           olosuhteet, ja löydät riemua matkasta kesyttämättömän talvimaiseman lävitse.
       exploreArea:
         name: Tutki alue
+        desc: Teet muistiinpanoja paperinpalalle tutkiessasi ympäröivää aluetta. Tästä
+          on hyötyä jatkoseikkailujesi kannalta.
     jarvonia:
       rooftopJumpingBeginner:
-        name: Kattohyppely (aloittelija)
+        name: Kattohyppely
         desc: Kiipeät valaisemattomalle lyhtypylväälle ja tutkiskelet ympäristöä.
           Kuulet askelia lähistöllä, joten kiiruhdat viereiselle katolle pienellä
           hypyllä. Yksi laatta irtoaa ja putoaa maahan, mikä aiheuttaa kolahduksen.
           Seuraavalla kerralla sinun on oltava varovaisempi.
       mountainClimbingBeginner:
-        name: Vuorikiipeily (aloittelija)
+        name: Vuorikiipeily
         desc: Valmistaudut kiipeämiseen. Päivä on kaunis, aurinko paistaa ja tuulee
           vain heikosti. Silti, kun kiipeät hitaasti, sydämesi alkaa hakkaamaan ja
           olet menettää otteesi. Huh, kuinka pelottavaa! Lopulta saavut huipulle ja
           katsot ylpeänä maailmaa jalkojesi alla.
       mountainClimbingIntermediate:
-        name: Vuorikiipeily (keskitaso)
+        name: Haastava vuorikiipeily
         desc: Nyt on kunnollista. Tämä seinä on lähes pystysuora, eikä siellä ole
           helpon näköisiä tarttumakohtia. Kiipeät sitkeästi, tunnet lihastesi jännittyvän
           täysin tarvitsemaasi voimaa varten. Huipulla voit maistaa suussasi veren
@@ -93,11 +95,11 @@ singulars:
           virran vietäväksi Sää ei voisi olla parempi: aurinko paistaa, lämpötila
           on miellyttävä ja kevyt tuuli piristää. Nautit hyvästä melontasessiosta!'
       swimmingBeginner:
-        name: Uinti (aloittelija)
+        name: Rintauinti
         desc: Olet kuullut, että uinti on hyvä keino ylläpitää terveyttä, joten muutaman
           oppitunnin jälkeen uskallat kokeilla sitä itse.
       swimmingIntermediate:
-        name: Uinti (keskitaso)
+        name: Kehosurffaus
         desc: 'Ennen veteen menoa on tarkistettava olosuhteet: tuulen voimakkuus ja
           sen suunta, kivien esiintyminen ja niiden terävyys, kalastajien, veneiden
           tai vaarallisten eläinten läsnäolo. Kaikki on kunnossa. Lähdet uimaan aaltojen
@@ -107,7 +109,14 @@ singulars:
           mitä tahansa arkkitehtonista piirrettä: seiniä, kattoja, parvekkeita ja
           katuvaloja. Kaupunki muuttuu ympärilläsi kuin esteradaksi, ja kiidät sen
           katoilla taidokkaasti.'
-        name: Hyppele katoilla (keskitaso)
+        name: Hyppele talojen katoilla
+      treetopJumping:
+        desc: Olet korkealla puiden latvustossa, ja adrenaliini roihuaa rinnassasi
+          kun hypit oksalta toiselle ja toivot etteivät ne katkea. Pudotus vaikuttaa
+          hurjalta.
+        name: Puunlatvoissa loikkiminen
+      exploreBogBottom:
+        name: Tutki suon pohjaa
     syrenthia:
       merfolkDancing:
         desc: Merenväen tanssin esittäminen vedenalaisen kansan tapaan vaatii paljon
@@ -116,7 +125,7 @@ singulars:
           kalaparven synkronoitua liikehdintää.
         name: Merenväen tanssiaiset
       swimmingExpert:
-        name: Uinti (ammattilainen)
+        name: Laitesukellus
         desc: Vastalumen valtavan vedenalaisen kaupungin eri polkujen ja luolien läpi
           uiminen on haastavaa. Sinun on väisteltävä vilkkaita merieläimiä samalla
           kun nautiskelet vedessä liikkumisen vapauttavasta tunteesta.
@@ -137,6 +146,9 @@ singulars:
         name: Rämeessä kalastus (Verkko)
       bogFishingSpear:
         name: Rämeessä kalastus (Keihäs)
+        desc: Valmistaudut kalastuskeihääsi kanssa suon vesien alla nappaamaan minkä
+          tahansa kalan, joka tulee riittävän lähelle. Samea vesi vaikeuttaa näkemistä,
+          mutta olet päättänyt saada saalista.
     jarvonia:
       lakeFishing:
         desc: Nauttien raikkaasta talvi-ilmasta valitset huolellisesti syötin ja heität
@@ -161,6 +173,9 @@ singulars:
         name: Merikalastus (merta)
       cleaningTheHolyFountain:
         name: Pyhän suihkulähteen puhdistaminen
+        desc: Temppelin johtajat luottavat sinun apuusi pyhän suihkulähteensä ylläpidossa.
+          He sallivat sinun varmistaa veden kirkkaana pysymisen kalastamalla verkollasi
+          asiattomuudet pois lähteestä, ja kasvattaa siten heidän kunnioitustaan.
     syrenthia:
       seaFishingSpear:
         name: Merikalastus (keihäs)
@@ -205,6 +220,10 @@ singulars:
         desc: Kaupungin sokkeloisten kujien keskellä tutkit unohdettuja kulmia ja
           seulot poisheitettyjä tavaroita toivoen löytäväsi piilotettuja aarteita
           kaiken haisevan roskan kätköistä.
+      summerCaveForaging:
+        name: Kesäluolassa keräily
+        desc: Lepakot asustavat täällä kesäisin. Luolassa on pimeää, ja sinun on parasta
+          ottaa mukaan valonlähde.
     global:
       litterLooting:
         desc: Kulkiessasi tässä keskiaikaisen kaupungin hälinässä, selaat läpi poisheitetyt
@@ -412,14 +431,14 @@ singulars:
           ja korkeisiin toteemipylväisiin.'
         name: Puunveisto
       shipRepairBeginner:
-        name: Korjaa laivoja (aloittelija)
+        name: Laivojen takilakorjaus
         desc: Osallistut pienten alusten normaalista kulumisesta johtuviin korjauksiin.
           Käytössäsi on puutavaraa, nauloja, takiloita, varusteita ja köysiä. Työnjohtaja
           antaa käskyt, ja sinä toteutat ne parhaasi mukaan. Ehkä jonain päivänä sinä
           olet se, joka pääsee antamaan käskyjä muille.
     gdte:
       shipRepairIntermediate:
-        name: Korjaa laivoja (keskitaso)
+        name: Laivojen runkokorjaus
         desc: Et ole enää pelkkä oppipoika, joten osaat korjata suurempia aluksia
           ongelmitta. Työnjohtajasi luottaa taitoihisi ja harkintakykyysi. Työkalupakkisi
           on ammattimainen, aivan kuten sinäkin työssäsi.
@@ -504,6 +523,7 @@ singulars:
           prosessista vastaavien hiivojen kanssa.
   idle:
     desc: Et tee mitään. Askeleesi tallennetaan Säästettyihin askeleisiin.
+    name: Toimeton
   trinketry:
     gdte:
       antiqueMarketAssessor:
@@ -511,3 +531,6 @@ singulars:
           tavaroiden ostajien ja myyjien löytäminen vie aikansa. Löydät satunnaisesti
           kannattavia kauppoja jalokivistä tai harvinaisista esineistä.
         name: Antiikkimarkkinoiden arvioija
+  unknown:
+    name: Tuntematon
+    desc: Teet kylläkin jotain, mutta peli ei nyt ihan hahmota mitä se on.
