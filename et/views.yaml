@@ -1,1 +1,289 @@
-{}
+singulars:
+  queue:
+    types:
+      traveling: Rändamine
+      activity: Tegevus
+      crafting: Meisterdamine
+    phrases:
+      switchingToGearSet: Vaheta varustuskomplektile <c>{name}</c>
+      noGearSetFound: Valitud varustuse komplekti ei leitud, kas kustutasid selle?
+      untilInventoryFull: Tee kuni seljakott täis
+      activityInLocation: <object id="{activity}"/> asukohas <object id="{location}"/>
+      queue: Järjekord
+      queuedActions: Järjestatud tegevused
+      travelingTo: <object id="{from}"/> -> <object id="{to}"/>
+      noPathFound: Puudub tee sihtpunkti.
+    options:
+      switchGearSet:
+        text: Vahetu varustuskomplektile
+        desc: Vahetu valitud varustuskomplektile enne selle tegevuse alustamist.
+      depositUnlockedItems:
+        text: Hoiusta lukustamata esemed
+        desc: Hoiustab panka kõik lukustamata seljakotis lukustamata eseme juhul kui
+          mõnes külastatavas asukohas leidub pank.
+      withdrawGearSet:
+        text: Võta pangast varustuskomplekt
+        desc: Võtab pangast välja varustuskomplekti juhul kui mõnes külastatavas asukohas
+          leidub pank.
+      removeFromQueue:
+        text: Eemalda järjekorrast
+      cancelGearSetSwitch:
+        text: Tühista varustuskomplekti vahetus
+    suggestedOptions:
+      startActivity: Tegevus
+      startCrafting: Meisterdamine
+      startTraveling: Rända
+  activity:
+    phrases:
+      noActivity: Tegevus puudub
+      consumables: Tarbeesemed
+      savedSteps: Salvestatud sammud
+      stopWhenOverEncumbered: Peatu kui ülekoormatud
+      options: Valikud
+      inventoryIsOverLimit: Seljakott üle limiidi!
+      notAffectingTraveling: (ei mõjuta rändeefektiivsust)
+      workEfficiencyPenalty: <icon i="Work efficiency"/>Globaalne töö efektiivsus
+        <c>-{penalty}%</c>
+      locationIsUnknown: Asukoht on tundmatu. Kui oled avastanud selle asukoha, siis
+        saad vaadata siin olevaid tegevusi.
+      requirements: Tingimused
+      rewards: Tasud
+      levelActivity: Tase <c>{level}</c> <object id="{skill}"/> tegevus
+      startActivity: Alusta tegevust
+      queueActivity: Järjesta tegevus
+      travelAndStartActivity: Rända ja alusta tegevust
+      cantStartActivity: Ei saa alustada tegevust
+      requirementsNotMet: Tingimused pole täidetud
+      noActivitiesInLocation: Asukohas <object id="{location}"/> puuduvad tegevused.
+      activitiesInLocation: Saadaolevad tegevused asukohas <object id="{location}"/>
+      guideTip: Päeva nõuanne
+    info:
+      noActivity: Tegevust pole hetkel valitud. <hl>Võid valida all</hl> või libistada
+        vasakule, et näha kõike siin asukohas saada olevat.
+      savedSteps: Sul on salvestatud sammud, mida hetkel kulutad. Iga samm loeb kahena
+        kuni kõik salvestatud sammud on ära kasutatud.
+      consumablesUsage: Saad valida <c>toidu</c> ja <c>võlujoogi</c>, mida tegevuse
+        ajal kasutada.
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> kogemust
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} kogutavat eset</c> mida
+        võid leida
+  character:
+    phrases:
+      skills: Oskused
+      totalLevel: Kogutase
+      level: 'Karakteri tase: <c>{level}</c>'
+      savePicture: Salvesta pilt
+  inventory:
+    phrases:
+      abilities: Võimed
+      requires: Vajab
+      allSkills: Kõik oskused
+      duration: Kestvus
+      dropItems: Viska esemed maha?
+      requirementsNotMet: Tingimused pole täidetud.
+      cantEquip: Ei saa kasutada.
+      checkBank: Ava pank
+      slotDoesntExist: Seda esemekohta pole enam olemas.
+      attributes: Atribuudid
+      emptySlot: Tühi koht
+      inUse: Kasutusel
+      selectedConsumable: Valitud tarbeese
+      consumables: Tarbeesemed
+      treasury: Varalaekad
+    options:
+      showGear: Näita varustust
+      expandInventory: Laienda seljakott
+      showMaterials: Näita materjale
+      showConsumables: Näita tarbeesemeid
+  popupBubbles:
+    phrases:
+      arrivedToLocation: Saabusid asukohta <object id={location} />
+      overEncumbered: Su seljakott on täis ning oled ülekoormatud.
+  crafting:
+    phrases:
+      rewards: Tulud
+      materials: Materjalid
+      recipes: Retseptid
+      requirements: Tingimused
+  abilities:
+    phrases:
+      useAbility: Kasuta võimet
+      useConsumable: Kasuta tarbeeset
+      abilities: Võimed
+      holdToUse: Hoia et kasutada
+      noAction: Tegevus puudub
+      holdToCast: Hoia et kasutada
+  achievements:
+    phrases:
+      unclaimedRewards: 'Omandamata tasud: '
+  worldMap:
+    phrases:
+      activities: Tegevused
+      noActivities: Selles asukohas pole tegevusi saadaval.
+  leaderboards:
+    phrases:
+      totalLevel: Kogutase
+  gearSets:
+    phrases:
+      forActivities: 'Tegevuste jaoks: '
+      noActivitiesSelected: Pole tegevust valitud
+  stats:
+    phrases:
+      totalSkillXp: Kogu oskuskogemus
+      stats: Statistika
+      totalSteps: Samme kokku
+      highestStepsIn24Hours: Kõige rohkem samme 24h jooksul
+      reputation: Reputatsioon
+  journal:
+    phrases:
+      jobs: Tööd
+  treasury:
+    phrases:
+      openChest: Ava
+      openAll: Ava kõik
+  locales:
+    phrases:
+      language: Keel
+  permissions:
+    deviceSource:
+      phone: Telefon
+    phrases:
+      connect: Ühenda
+  jobs:
+    phrases:
+      currentlyAcceptedJobs: Käsilolevad tööd
+      jobAlreadyAccepted: Oled võtnud selle töö vastu.
+      browseJobBoards: Sirvi töid
+      availableJobs: Saadaolevad tööd
+      cannotAcceptMore: Sa ei saa võtta rohkem töid.
+      youAreAtLocation: Oled selle kuulutustetulba asukohas.
+      availableJobInfo: Et võtta või lõpetada töid, pead olema nende asukohas.
+      cannotWithdraw: Sinu asukohas <object id="{obj}"/> puudub pank. Tööde jaoks
+        esemete välja võtmine pole saadaval.
+      abandonJob: Loobu tööst
+      giveItems: Anna esemeid
+      acceptJob: Võta töö
+      openJournal: Ava märkmik
+      itemsFromInventory: Esemed seljakotist
+      itemsFromBank: Esemed pangast
+      collectRewards: Saa töötasu
+      hasNoBank: Siin asukohas puudub pank.
+      hasNoItemsInInventory: Seljakotis pole sobivaid esemeid.
+      hasNoItemsInBank: Pangas pole sobivaid esemeid.
+      give: Anna
+      noJobsAvailable: 'Siin asukohas pole hetkel saadaolevaid töid. Uued tööd on
+        saadaval:'
+      refreshIn: 'Kuulutustetulba täitmiseni:'
+      acceptedJobs: Käsilolevad tööd <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      rewards: Vaevatasud
+    dialogs:
+      abandonJob:
+        title: Loobu tööst
+  bank:
+    phrases:
+      withdraw: Võta välja
+  location:
+    phrases:
+      activities: Tegevused
+      noActivites: Siin asukohas pole tegevusi saadaval.
+      jobBoard: Kuulutustetulp
+      jobs: Tööd
+  rewards:
+    phrases:
+      alreadyClaimed: Juba omandatud
+  faction:
+    phrases:
+      openFaction: Ava kildkond
+      unclaimedRewards: Omandamata tasud {count}
+  shop:
+    phrases:
+      bought: Ostetud
+      buying: Ostmine
+      selling: Müümine
+      buyBack: Osta tagasi
+      sold: Müüdud
+      resetTrade: Lähtesta kaubavahetus
+maps:
+  achievements:
+    phrases:
+      difficultyTitle:
+        'easy': Kerged saavutused
+        'normal': Normaalsed saavutused
+        'hard': Rasked saavutused
+        'extreme': Ekstreemsed saavutused
+      difficulty:
+        'easy': Kerge
+        'normal': Normaalne
+        'hard': Raske
+        'extreme': Ekstreemne
+  characterCreation:
+    phrases:
+      optionTypes:
+        'outfit': Riietus
+        'body': Keha
+        'nose': Nina
+        'hair': Soeng
+        'eyes': Silmad
+        'faceAccessory': Näoaksessuaarid
+        'headwear': Peakatted
+        'facepaint': Näomaalingud
+        'none': Puudub
+        'face': Nägu
+        'backAccessory': Pangaaksessuaarid
+        'eyeAccessory': Silmaaksessuaarid
+        'background': Taust
+      raceTypes:
+        'human': Inimene
+        'none': Puudub
+      bodyTypes:
+        'none': Puudub
+      expressions:
+        'veryAngry': Väga vihane
+        'smirk': Muie
+        'surprise': Üllatus
+        'normal': Normaalne
+        'angry': Vihane
+        'laughing': Naerev
+        'sad': Kurb
+        'smile': Naeratus
+  cooldown:
+    time:
+      'minutes': '{minutes}<c>m</c>'
+      'days': '{days}<c>p</c>'
+      'hours': '{hours}<c>t</c>'
+      'seconds': '{seconds}<c>s</c>'
+  shop:
+    phrases:
+      itemType:
+        'collectible': Kogutavad Esemed
+  settings:
+    boolSettings:
+      'warningBeforeClaimingExperience': Näita hoiatust enne kogemustasude omandamist
+  announcements:
+    categories:
+      'system': Süsteem
+      'devblog': DevBlog
+      'changelog': Muudatuste logi
+      'update': Uuendus
+  locales:
+    grammaticalGender:
+      'neutral': Neutraalne
+plurals:
+  activity:
+    phrases:
+      stepsToCraft:
+        two: Sammu valmistamiseks
+        other: Sammu valmistamiseks
+        one: Samm valmistamiseks
+      stepsRemainingInTotal:
+        two: Sammu kokku
+        one: Samm kokku
+        other: Sammu kokku
+      actionsRemaining:
+        one: Tegu kokku
+        two: Tegu kokku
+        other: Tegu kokku
+        zero: '-'
+        few: '-'
+        many: '-'
