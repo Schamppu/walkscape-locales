@@ -3,8 +3,18 @@ singulars:
     pages:
       p0:
         title: Bir başlangıç becerisi seç
+        sections:
+          s0: "Pekala, <player/>! Buralarda yapabileceğin çok şey var. Sana başlangıç
+            için yapacak bir şey verebilirim. İlgini ne çekerdi?\n"
       p1:
         title: Başlangıç olarak
+        sections:
+          s0: "Kendine birkaç basit alet yapmak istersen elimde fazladan çubuk ve
+            taş da var. Kullanmak istersen alabilirsin.\n"
+          s1: "<box>Herbert'tan bedavaya taş ve çubuk almak için kulübesindeyken <hl>Eşya
+            satın al</hl> tuşunu kullanabilirsin. Diğer aletleri yapmak istiyorsan
+            bunlar çok işine yarar. Dükkanlar ve bankalarda <hl>+ tuşuna</hl> basılı
+            tutarak eşyanın tamamını seçebilirsin.</box>\n"
   welcomeMessage:
     pages:
       p0:
@@ -113,3 +123,22 @@ singulars:
             atölyeyi Kallaheim'ın doğusundaki Frusenholm'da bulabillirsin. Basit aletleri
             üretmek için atölye hizmetine gerek olmaz.</li>\n"
         title: Hizmetleri kullanma
+        imageTexts:
+          i0: "Bazı konumlarda üretim yapmak amacıyla kullanabileceğin hizmetler bulunur.\n"
+      p3:
+        title: Yardımsever Herbert'ın Kulübesini ziyaret etme
+        sections:
+          s0: "<box>İlk iş olarak Herbert'a bir uğramalısın. Kendisi Büyüsüz Orman'da
+            yaşar ve oyuna başlamana yardımcı olabilir.</box>\n"
+        imageTexts:
+          i0: "Büyüsüz Orman'dayken konum sayfasında ekranı aşağıya kaydırıp <hl>Git</hl>
+            tuşuna basarak Herbert'ı ziyaret et.\n"
+maps:
+  skills:
+    'woodcutting': "<c>Odunculuk</c> eşya üretimi için elzem bir beceridir: Çoğu alet
+      kereste gerektirir, bunlar da kütüklerden yapılırlar. Bu nedenle <c>odunculuk</c>
+      becerisi <skill skill=\"carpentry\"/> için önemlidir.\n\n<li><hl>Başlangıç konumu</hl>:
+      Burada, Büyüsüz Orman'da, <c>odunculuk</c> faaliyetine başlayabilirsin.</li>\n\
+      \n<li><hl>Nerede bulunur</hl>: <c>Odunculuk</c> faaliyetleri genellikle ormanlarda
+      bulunur.</li>\n\n<li><hl>Amacı</hl>: <skill skill=\"carpentry\"/> için lazım
+      olan kütükleri toplamak.</li>\n"
