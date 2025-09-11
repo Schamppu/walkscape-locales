@@ -71,6 +71,9 @@ maps:
       'shaderOutlineRendering': Çerçeve gölgelerini göster
       'alwaysStopWhenInventoryFull': Envanter dolup taşınca kendiliğinden dur
       'showDailyTips': Günün ipucunu göster
+      'showStepSourceInActivityView': Faaliyet ekranında adım kaynağını göster
+      'warningBeforeClaimingExperience': Tecrübe ödüllerini almadan önce uyar
+      'activityInformationOpen': Daha fazla faaliyet bilgisi göster
     languages:
       'pt': Portekizce
       'de': Almanca
@@ -125,6 +128,17 @@ maps:
       'minutes': '{minutes}<c>dk</c>'
       'seconds': '{seconds}<c>sn</c>'
       'days': '{days}<c>g</c>'
+  locales:
+    grammaticalGender:
+      'feminine': Kadınsı
+      'masculine': Erkeksi
+      'neutral': Yansız
+  announcements:
+    categories:
+      'changelog': Güncelleme Notları
+      'devblog': Geliştirici Günlükleri
+      'update': Güncelleme
+      'system': Sistem
 plurals:
   achievements:
     phrases:
@@ -200,6 +214,13 @@ plurals:
         few: '-'
         many: '-'
         other: '{} eylem'
+      stepsRequiredPerAction:
+        zero: '-'
+        one: Eylem başına <icon i="Steps"/> <c>{} adım</c> gerekli
+        two: Eylem başına <icon i="Steps"/> <c>{} adım</c> gerekli
+        few: '-'
+        many: '-'
+        other: Eylem başına <icon i="Steps"/> <c>{} adım</c> gerekli
   inventory:
     info:
       consumableDuration:
@@ -454,7 +475,7 @@ singulars:
       loadingLocaleState: Yerel durum yükleniyor
       loadingDevicePermissions: Yerel cihaz izinleri
       settingUpTutorialManager: Rehber yönetici kuruluyor
-      startingEventManagerProcess: Etkinlik yönetme süreci başlatılıyor
+      startingEventManagerProcess: Etkinlik yönetme işlemi başlatılıyor
       startingToLoadGame: Oyun yüklemesi başlatılıyor
       startingProcesses: Oyun işlemleri başlatılıyor
       loadingGameData: Oyun verisi yükleniyor
@@ -472,10 +493,20 @@ singulars:
       changingMainCharacter: Ana karakter değiştiriliyor
       loadingStepHistoryData: Adım geçmişi verisi yükleniyor
       loadingSteps: Adımlar yükleniyor
-      startingErrorManagerProcess: Hata yönetme süreci başlatılıyor
-      startingNetworkProcess: Ağ süreci başlatılıyor
+      startingErrorManagerProcess: Hata yönetme işlemi başlatılıyor
+      startingNetworkProcess: Ağ işlemi başlatılıyor
       loadingLocalStorage: Yerel depolama okunuyor...
       startingSentry: Sentry başlatılıyor...
+      startingGameManagerProcess: Oyun yönetme işlemi başlatılıyor
+      startingPlayerManagerProcess: Oyuncu yönetme işlemi başlatılıyor
+      startingAuthProcess: Doğrulama işlemi başlatılıyor
+      startingTimeManagerProcess: Zaman yönetme işlemi başlatılıyor
+      startingNotificationManagerProcess: Bildirim yönetme işlemi başlatılıyor
+      startingSettingsManagerProcess: Ayar yönetme işlemi başlatılıyor
+      spawningIsolate: Isolate açılıyor...
+    isolates:
+      mainIsolate: Ana Isolate
+      workerIsolate: Çalışan Isolate
   permissions:
     phrases:
       pedometerPermission: Adım sayacı izni
@@ -515,6 +546,16 @@ singulars:
         \n<bp /> <c i=1>Yürürken attığın adımlar anlık olarak oyuna yansır.</c>\n\n\
         <bp /> Adımlarının sayılması için <c>telefonun yanında bulunmalıdır</c>. Yoğun
         efor isteyen sporlar yaparken bu durum zor gelebilir.\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> adımlarını
+        Apple Health'e belirli aralıklarla eşlemesi açısından <icon i=\"Watch small\"\
+        \ /> <c>diğer saatlerden</c> farklılık gösterebilir. WalkScape adımlarını
+        <icon i=\"Apple watch small\" /> <c>Apple Watch</c> veya başka bir saatten
+        Apple Health'e eşlenen verilerden okur .\n\n<bp /> <c i=2>Apple Watch attığın
+        adımları Apple Health'e belirli aralıklarla eşler.</c> Attığın adımları oyunda
+        anlık olarak göremezsin ve bu adımlar oyuna gecikmeli olarak yansıyabilir.\n\
+        \n<bp /> Saatine bağlanıp Apple Health verilerini okuyabilmesi ekstra bir
+        izin vermen gereklidir.\n\n<bp /> Yalnızca saatin tarafından gönderilen adımlar
+        oyuna kaydedilir.\n"
   pfpCreation:
     buttons:
       choose: Seç
@@ -563,6 +604,7 @@ singulars:
       reputation: İtibar
       highestStepsIn24Hours: 24 saat içindeki en çok adım
       lastUpdated: 'Son güncelleme: <c>{updatedAt}</c>.'
+      recordedFrom: <c>{from}</c> ile <c>{to}</c> arası kaydedildi.
   tools:
     phrases:
       emptyToolSlot: Boş alet yuvası
@@ -734,6 +776,13 @@ singulars:
       stepSourceInfoDesc: Aşağıdaki düğmeye basarak adım kaynakları ve birbirlerinden
         farkları hakkında daha fazla bilgi edinebilirsin.
       stepSourceInfo: Adım kaynağı bilgisi
+      connectionInfoIos: Cihazların yukarıdaki listede görünmüyorsa, Apple Health
+        içinden <c>Ayarlar ➤ Gizlilik & Güvenlik ➤ Sağlık ➤ (Uygulamalar) WalkScape</c>
+        menüsüne giderek WalkScape'e adım verilerini kullanması için izin verdiğinden
+        ve Apple Health'in bu cihazlarda son 7 gün içinde adım kaydetmiş olduğundan
+        emin ol.
+      connectionInfoAndroid: Akıllı saat desteği Android'e yakında gelecek. Şimdilik
+        adım kaynağı olarak yalnızca telefon kullanılabilir.
   popupBubbles:
     phrases:
       overEncumbered: Envanterin tamamen dolup taştı.
@@ -893,6 +942,10 @@ singulars:
         hitap edeceğini etkiler.
       selectGrammaticalGender: Cinsiyetini seç
       youCanChangeAnyTime: Oyun dilini ne zaman istersen<c>Oyun Ayarlarından</c> değiştirebilirsin.
+      helpToTranslate: WalkScape is <c>community translated</c>. Help us translate
+        the game to more languages and to expand current translations by visiting
+        <a href="https://wiki.walkscape.app/wiki/Localization">Translation Guide</a>.
+        Help is much appreciated! ❤️
   whileAway:
     phrases:
       actionCancelled: Eylem iptal edildi
@@ -903,10 +956,23 @@ singulars:
       startedActivityNoLocation: <object id="{activity}"/> faaliyetine başlandı
       startedNewActivity: <object id="{location}"/> konumunda <object id="{activity}"/>
         faaliyetine başlandı
+      switchedToGearSet: <c>{name}</c> teçhizat seti kuşanıldı
+      fromProc: <c>{proc}</c> kaynaklı
+      fromSource: <object id="{source}"/> kaynaklı
+      fromAttribute: '{attribute} niteliğinden kaynaklı'
+      none: Hiçbir şey
   announcements:
     info:
       noMoreAnnouncements: Duyuruların sonuna ulaştın! Gösterecek başka duyuru kalmadı.
       noAnnouncements: Şu anda hiç duyuru bulunmuyor.
+      announcementInfo: Burada geliştiricilerin <c>duyurularını</c> bulabilirsin.
+        Geliştirici günlükleri, güncelleme notları ve sistem duyurularını takip ederek
+        oyunun ilerlemesini ve sunucuların kapalı olacağı zamanları takip edebilirsin!
     phrases:
       unread: Okunmamış
       new: Yeni
+  rumors:
+    phrases:
+      backToRumors: Söylentilere dön
+      unlockedWalkpediaEntries: Walkpedi kayıtları açıldı
+      rumorsFromCharacter: <c>{characterName}</c> kişisinden söylentiler
