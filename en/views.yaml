@@ -112,6 +112,7 @@ singulars:
       connectAppleHealthExplanation: You need to connect to Apple Health so that we can read steps synced by your watch, and to see which devices you have connected. If this is your first time using WalkScape, you will be asked for a permission to read data from Apple Health.
       connectHealthConnectExplanation: You need to connect to Google Connect so that we can read steps synced by your watch, and to see which devices you have connected. If this is your first time using WalkScape, you will be asked for a permission to read data from Google Connect.
       connectSamsungHealthExplanation: If you use Samsung wearables, you need to connect to Samsung Health in order to read steps synced by your watch. If this is your first time using WalkScape, you will be asked for a permission to read data from Samsung Health.
+      samsungHealthConnectedInfo: Samsung Health is connected! Both steps from your wearables connected to Samsung Health and steps from your phone will be read by the game.
       comingSoonToAndroid: Coming soon to Android
       exactAlarmPermission: Alarm permission
       continueWillEnable: Continue button will be enabled after you have granted the necessary permissions above.
@@ -122,7 +123,8 @@ singulars:
       phone: Phone
       appleWatch: Apple Watch
       watch: Other wearable
-      watchAndroid: Watch
+      watchAndroid: Health Connect
+      samsungHealth: Samsung Health
       featureDisabled: Changing input sources has been remotely disabled for the time being. The default phone pedometer will be used.
     deviceInfo:
       phone: >
@@ -172,6 +174,17 @@ singulars:
 
 
         <bp /> Only steps that are reported by your watch are recorded in the game.
+      samsungHealth:
+        WalkScape reads your steps from <c>Samsung Health</c>. Your steps from all of your Samsung Health compatible <icon i="Watch small" /> <c>wearables</c> and steps from your <icon i="Phone small" /> <c>phone</c> are synced to the game.
+
+
+        <bp /> <c i=2>You need to sync your steps to Samsung Health through your wearables</c> for any steps to be counted in WalkScape.
+
+
+        <bp /> You need to grant extra permissions to read data from <c>Samsung Health</c> to sync your steps to the game.
+
+
+        <bp /> Only steps that are reported by Samsung Health are recorded in the game.
   rewards:
     phrases:
       alreadyClaimed: Already claimed
