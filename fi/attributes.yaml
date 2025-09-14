@@ -37,9 +37,11 @@ singulars:
       whileSkillGroup:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
+        text: <stat s="chestFind"/> kun käytät taitoa ryhmästä <supp k="skillGroup"/>.
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
+        text: <stat s="chestFind"/> kun <supp k="skill"/> paikassa <supp k="realm"/>.
     workEfficiency:
       whileRealmAndTraveling:
         desc: <PLACEHOLDER>
@@ -128,6 +130,10 @@ singulars:
         name: <PLACEHOLDER>
         text: <stat s="fineMaterialFind"/> kun teet <supp k="skill"/> paikassa <supp
           k="realm"/>.
+      whileSkillGroup:
+        desc: <PLACEHOLDER>
+        name: <PLACEHOLDER>
+        text: <stat s="fineMaterialFind"/> kun käytät taitoa ryhmästä <supp k="skillGroup"/>.
     craftingOutcome:
       global:
         name: <PLACEHOLDER>
@@ -155,6 +161,10 @@ singulars:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
         text: Globaali <stat s="craftingOutcome"/> kun olet <supp k="keyword"/> sijainnissa.
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="craftingOutcome"/> kun <supp k="skill"/> paikassa <supp k="realm"/>.
     doubleAction:
       global:
         desc: <PLACEHOLDER>
@@ -185,6 +195,18 @@ singulars:
         desc: <PLACEHOLDER>
         name: <PLACEHOLDER>
         text: <stat s="doubleAction"/> kun matkustat ja olet paikassa <supp k="realm"/>
+      whileMainSkillAndRealm:
+        text: <stat s="doubleAction"/> kun <supp k="skill"/> paikassa <supp k="realm"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Kaikkeen <stat s="doubleAction"/> kun paikassa <supp k="realm"/>
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleAction"/> kun käytät taitoa ryhmästä <supp k="skillGroup"/>.
     doubleRewards:
       global:
         name: <PLACEHOLDER>
@@ -217,11 +239,27 @@ singulars:
         desc: <PLACEHOLDER>
         text: Globaali <stat s="doubleRewards"/> kun teet aktiviteettityyppiä <supp
           k="activityType"/>.
+      whileMainSkillAndRealm:
+        text: <stat s="doubleRewards"/> kun <supp k="skill"/> paikassa <supp k="realm"/>.
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="doubleRewards"/> kun käytät taitoa ryhmästä <supp k="skillGroup"/>.
+      whileRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: Kaikkeen <stat s="doubleRewards"/> kun paikassa <supp k="realm"/>
     rollSpecialTable:
       whileMainSkill:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="rollSpecialTable"/> kun teet <supp k="skill"/>
+      global:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="rollSpecialTable"/>
     experience:
       global:
         desc: <PLACEHOLDER>
@@ -248,6 +286,17 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: Globaali <stat s="bonusExperience"/> kun olet paikassa <supp k="keyword"/>.
+      whileRealm:
+        text: Kaikkeen <stat s="bonusExperience"/> kun paikassa <supp k="realm"/>
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+      whileMainSkillAndRealm:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
+        text: <stat s="bonusExperience"/> kun <supp k="skill"/> paikassa <supp k="realm"/>.
+      whileSkillGroup:
+        name: <PLACEHOLDER>
+        desc: <PLACEHOLDER>
     travelingDistance:
       whileTraveling:
         name: <PLACEHOLDER>
