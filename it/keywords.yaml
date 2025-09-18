@@ -2,19 +2,49 @@ singulars:
   materials:
     fish:
       name: Pesce
-      requirement: Richiede un pesce.
+      requirement: Richiede un<object id="fish" />.
       requirementLevel: Richiede un pesce che abbia almeno <keywordRequirements />
         nei suoi requisiti.
     logs:
-      name: Tronchi
-      requirement: Richiede un tronco d'albero.
+      name: Tronco
+      requirement: Richiede un<object id="logs" />.
       requirementLevel: Richiede un tronco che abbia almeno <keywordRequirements />
         nei suoi requisiti.
     plant:
       name: Pianta
-      requirement: Richiede una pianta.
+      requirement: Richiede una<object id="plant" />.
       requirementLevel: Richiede una pianta che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+    ore:
+      name: Minerale
+      requirement: Richiede un<object id="ore" />.
+    nugget:
+      requirement: Richiede una<object id="nugget" />.
+      name: Pepita
+    bar:
+      name: Lingotto
+      requirement: Richiede un<object id="bar" />.
+    plank:
+      name: Tavola
+      requirement: Richiede una<object id="plank" />.
+    gem:
+      name: Gemma
+      requirement: Richiede una<object id="gem" />.
+    roughGem:
+      name: Gemma grezza
+      requirement: Richiede una<object id="rough_gem" />.
+    cutGem:
+      name: Gemma tagliata
+      requirement: Richiede una<object id="cut_gem" />.
+    mushroom:
+      name: Fungo
+      requirement: Richiede un<object id="mushroom" />.
+    processed:
+      requirement: Richiede un materiale<object id="processed" />.
+      name: Processato
+    ingredient:
+      name: Ingrediente
+      ingredient: Richiede un<object id="ingredient" />.
   tools:
     fishing:
       name: Pesca
@@ -23,22 +53,22 @@ singulars:
         /> nei suoi requisiti.
     fishingCage:
       name: Nassa
-      requirement: Richiede una nassa.
+      requirement: Richiede una<object id="fishingCage" />.
       requirementLevel: Richiede una nassa che abbia almeno <keywordRequirements />
         nei suoi requisiti.
     fishingNet:
       name: Rete da pesca
-      requirement: Richiede una rete da pesca.
+      requirement: Richiede una<object id="fishingNet" />.
       requirementLevel: Richiede una rete da pesca che abbia almeno <keywordRequirements
         /> tra i suoi requisiti.
     fishingRod:
       name: Canna da pesca
-      requirement: Richiede una canna da pesca.
+      requirement: Richiede una<object id="fishingRod" />.
       requirementLevel: Richiede una canna da pesca che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
     fishingSpear:
       name: Fiocina da pesca
-      requirement: Richiede una fiocina da pesca.
+      requirement: Richiede una<object id="fishingSpear" />.
       requirementLevel: Richiede una fiocina da pesca che abbia almeno <keywordRequirements
         /> tra i suoi requisiti.
     tool:
@@ -48,9 +78,79 @@ singulars:
         /> nei suoi requisiti.
     woodcuttingHatchet:
       name: Accetta
-      requirement: Richiede un'accetta per abbattere alberi.
-      requirementLevel: Richiede un'accetta per abbattere alberi che abbia almeno
-        <keywordRequirements/> nei suoi requisiti.
+      requirement: Richiede un'<object id="woodcuttingHatchet" />.
+      requirementLevel: Richiede un'accetta che abbia almeno <keywordRequirements/>
+        nei suoi requisiti.
+    ruler:
+      name: Righello
+      requirement: Richiede un<object id="ruler" />.
+    magnetic:
+      name: Magnetico
+    cookingSpices:
+      name: Spezie
+      requirement: Richiede delle<object id="cookingSpices" />.
+    pickaxe:
+      requirement: Richiede un<object id="pickaxe" />.
+      name: Piccone
+    cuttingBoard:
+      requirement: Richiede un<object id="cuttingBoard" />.
+      name: Tagliere
+    localMap:
+      requirement: Richiede una<object id="localMap" />.
+      name: Mappa locale
+    knife:
+      requirement: Richiede un<object id="knife" />.
+      name: Coltello
+    magnifyingLense:
+      name: Lente d'ingrandimento
+      requirement: Richiede una<object id="magnifyingLense" />.
+    saw:
+      requirement: Richiede una<object id="saw" />.
+      name: Sega
+    cookingPan:
+      name: Padella da cucina
+    craftingTool:
+      requirement: Richiede uno<object id="craftingTool" />.
+      name: Strumento da artigianato
+    agilityTool:
+      requirement: Richiede uno<object id="agilityTool" />.
+      name: Strumento per l'agilità
+    huntingBow:
+      requirement: Richiede un<object id="huntingBow" />.
+      name: Arco da caccia
+    logSplitter:
+      requirement: Richiede uno<object id="item_log_splitter" />.
+      name: Spaccalegna
+    carpentryTool:
+      requirement: Richiede uno<object id="carpentryTool" />.
+      name: Strumento da carpenteria
+    fishingLure:
+      name: Esca
+      requirement: Richiede un'<object id="fishingLure" />.
+    fishingTool:
+      name: Strumento da pesca
+      requirement: Richiede uno<object id="fishingTool" /> correlato.
+    cookingTool:
+      name: Strumento da cucina
+      requirement: Richiede uno<object id="cookingTool" />.
+    cookingKnife:
+      name: Coltello da cucina
+      requirement: Richiede un<object id="cookingKnife" />.
+    screwdriver:
+      name: Cacciavite
+      requirement: Richiede un<object id="screwdriver" />.
+    foragingTool:
+      name: Strumento da raccolta
+      requirement: Richiede uno<object id="foragingTool" />.
+    miningTool:
+      name: Strumento da estrazione mineraria
+      requirement: Richiede uno<object id="miningTool" />.
+    woodcuttingTool:
+      name: Strumento per tagliare il legno
+      requirement: Richiede uno<object id="woodcuttingTool" />.
+    huntingTrap:
+      name: Trappola da caccia
+      requirement: Richiede una<object id="huntingTrap" />.
   recipes:
     skills:
       cooking:
@@ -106,3 +206,106 @@ singulars:
         /> nei suoi requisiti.
     skillingGear:
       requirement: Richiede equipaggiato <object id="skillingGear" />.
+    socks:
+      name: Calzini
+    weapon:
+      name: Arma
+    shield:
+      name: Scudo
+    arrows:
+      name: Frecce
+  containers:
+    chest:
+      name: Forziere
+      requirement: Richiede un<object id="chest" />.
+    regionalChest:
+      name: Forziere regionale
+      requirement: Richiede un<object id="regionalChest" />.
+  consumables:
+    cookedFish:
+      name: Pesce cotto
+      requirement: Richiede un<object id="cookedFish" />.
+    food:
+      requirement: Richiede del<object id="food" />.
+      name: Cibo
+    fruit:
+      name: Frutto
+      requirement: Richiede un<object id="fruit" />.
+    water:
+      name: Acqua
+      requirement: Richiede dell'<object id="water" />.
+    memosphere:
+      name: Memosfera
+      requirement: Richiede una<object id="memosphere" />.
+    sandwich:
+      name: Panino
+      requirement: Richiede un<object id="sandwich" />.
+  general:
+    lightSource:
+      name: Fonte luminosa
+      requirement: Richiede una<object id="lightSource" />.
+  misc:
+    trash:
+      name: Spazzatura
+      requirement: Richiede della<object id="trash" />.
+    currency:
+      name: Valuta
+  search:
+    skills:
+      agility:
+        name: Agilità
+      carpentry:
+        name: Carpenteria
+      cooking:
+        name: Cucina
+      crafting:
+        name: Creazione
+      foraging:
+        name: Raccolta
+      hunting:
+        name: Caccia
+      mining:
+        name: Estrazione mineraria
+      smithing:
+        name: Forgiatura
+      tailoring:
+        name: Sartoria
+      traveling:
+        name: Viaggio
+      fishing:
+        name: Pesca
+    items:
+      consumables:
+        food:
+          name: Cibo
+        beverage:
+          name: Bibita
+        potion:
+          name: Pozione
+        memosphere:
+          name: Memosfera
+  weight:
+    ultraLight:
+      name: Molto leggero
+    heavy:
+      name: Pesante
+    light:
+      name: Leggero
+  services:
+    sawmill:
+      name: Segheria
+    workshop:
+      name: Laboratorio
+    forge:
+      name: Forgia
+    kitchen:
+      name: Cucina
+    loom:
+      name: Telaio
+  itemSets:
+    divingGear:
+      name: Equipaggiamento da immersione
+      requirement: Richiede<object id="itemset_diving_gear" />.
+    advancedDivingGear:
+      name: Equipaggiamento da immersione avanzato
+      requirement: Richiede<object id="itemset_diving_gear_advanced" />.
