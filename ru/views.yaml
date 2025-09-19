@@ -24,12 +24,30 @@ singulars:
       comingSoonToAndroid: Скоро и на Android
       changeStepCountingSource: Поменять источник подсчёта шагов
       stepCountingSource: Источник подсчёта шагов
+      connectHealthConnect: Подключиться к Health Connect
+      connectSamsungHealth: Подключиться к Samsung Health
+      samsungHealthConnectedInfo: Samsung Health подключен! Игра будет читать как
+        шаги с ваших носимых устройств, подключенных к Samsung Health, так и шаги
+        с вашего телефона.
+      noDeviceFoundAndroid: Устройство не найдено. Убедитесь, что вы нажали кнопку
+        <c>Подключиться к Health Connect</c> выше и предоставили разрешение на чтение
+        данных Health Connect.
+      connectHealthConnectExplanation: Вам необходимо подключиться к Google Connect,
+        чтобы мы могли читать шаги, синхронизированные с ваших часов, и видеть, какие
+        устройства у вас подключены. Если вы впервые используете WalkScape, у вас
+        запросят разрешение на чтение данных из Google Connect.
+      connectSamsungHealthExplanation: Если вы используете носимые устройства Samsung,
+        вам необходимо подключиться к Samsung Health для чтения шагов с ваших часов.
+        Если вы впервые используете WalkScape, у вас запросят разрешение на чтение
+        данных из Samsung Health.
     deviceSource:
       featureDisabled: Смена источников ввода была удаленно отключена на некоторое
         время. Педометр телефона по умолчанию будет использован.
       phone: Телефон
       appleWatch: Apple Watch
-      watch: Другие часы
+      watch: Другие носимые устройства
+      watchAndroid: Health Connect
+      samsungHealth: Samsung Health
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> <c>Phone</c> — это источник подсчёта шагов
         по умолчанию для WalkScape. Для интенсивных занятий спортом, мы рекомендуем
@@ -427,9 +445,15 @@ singulars:
         о шагах из Apple Здоровье, перейдя в Настройки ➤ Конфиденциальность и безопасность
         ➤ Здоровье ➤ (под надписью 'Приложения') WalkScape и что шаги для данных устройств
         были зарегистрированы в Apple Здоровье в течение 7 последних дней.
-      connectionInfoAndroid: Поддержка смарт часов для Android будет реализована скоро.
-        В данный момент только телефон является поддерживаемым источников шагов.
+      connectionInfoAndroid: Если ваши носимые устройства не отображаются в списке
+        выше, убедитесь, что вы предоставили WalkScape разрешение на использование
+        данных о шагах из Health Connect в <c>Настройки ➤ Безопасность и конфиденциальность
+        ➤ Конфиденциальность ➤ Health Connect ➤ Разрешения приложений</c> и что Health
+        Connect регистрировал шаги для этих устройств за последние 7 дней.
       gameVersion: Версия игры {version}
+      comingSoonToAndroid: Поддержка смарт-часов для Android скоро появится. В настоящее
+        время только телефон поддерживается в качестве источника подсчета шагов.
+      updateAvailableSources: Обновить доступные источники
   gearSets:
     phrases:
       gearSets: Наборы экипировки
@@ -542,6 +566,7 @@ singulars:
       lastUpdated: 'Последнее обновление: <c>{updateAt}</c>.'
       recordedFrom: Выполнено с <c>{from}</c> до <c>{to}</c>.
       reputation: Репутация
+      statUpdatesWithDelay: Эта статистика обновляется с задержкой до <c>одного часа</c>.
     info:
       stats: Сбор статистики с каждого шага, который вы сделали через мир Аренума.
       chartWarning:
