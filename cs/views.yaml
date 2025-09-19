@@ -459,10 +459,16 @@ singulars:
         části Aplikace) WalkScape</c>) a že Apple Health zaregistroval kroky na těchto
         zařízeních za posledních 7 dní.
       stepSourceInfo: Informace o zdroji kroku
-      connectionInfoAndroid: Podpora chytrých hodinek pro Android bude brzy k dispozici.
-        V současné době je jako zdroj počítání kroků podporován pouze telefon.
+      connectionInfoAndroid: Pokud se vaše nositelná zařízení nezobrazují ve výše
+        uvedeném seznamu, ujistěte se, že jste aplikaci WalkScape udělili oprávnění
+        k používání dat o krocích ze služby Health Connect v <c>Nastavení ➤ Zabezpečení
+        a soukromí ➤ Soukromí ➤ Health Connect ➤ Oprávnění aplikace </c> a že Health
+        Connect zaregistroval kroky pro tato zařízení v posledních 7 dnech.
       exitToCharacterSelection: Návrat k výběru postavy
       gameVersion: Verze hry {version}
+      comingSoonToAndroid: Podpora chytrých hodinek pro Android bude brzy k dispozici.
+        V současné době je jako zdroj počítání kroků podporován pouze telefon.
+      updateAvailableSources: Aktualizovat dostupné zdroje
   gearSets:
     phrases:
       noActivitiesSelected: Nejsou vybrány žádné aktivity
@@ -548,6 +554,8 @@ singulars:
       lastUpdated: 'Naposledy aktualizováno: <c>{updatedAt}</c>.'
       recordedFrom: Od <c>{from}</c> do <c>{to}</c>.
       reputation: Reputace
+      statUpdatesWithDelay: Tato statistika se aktualizuje se zpožděním až <c>jedné
+        hodiny</c>.
   tutorial:
     phrases:
       noMoreMessages: Přestat zobrazovat návody
@@ -792,6 +800,24 @@ singulars:
         nastavení a technické znalosti.\n\n<bp /> Pro připojení hodinek je nutné udělit
         dodatečné oprávnění ke čtení dat z aplikace Apple Health.\n\n<bp /> Ve hře
         se zaznamenávají pouze kroky, které hlásí vaše hodinky...\n"
+      watchAndroid: "WalkScape čte vaše kroky z aplikace <c>Health Connect</c>. Abyste
+        mohli synchronizovat kroky z vašich <c>hodinek</c>, musíte si nainstalovat
+        aplikaci třetí strany, která synchronizuje vaše kroky s aplikací <c>Health
+        Connect</c>, například FitBit, Garmin Connect nebo Galaxy Health.\n\n<bp />
+        <c i=2>Aby se kroky počítaly ve WalkScape, musíte synchronizovat kroky s aplikací
+        Health Connect prostřednictvím jiných aplikací.</c>\n\n<bp /> Proces synchronizace
+        kroků s aplikací <c>Health Connect</c> závisí na výrobci. Může to vyžadovat
+        určité dodatečné nastavení a technické znalosti.\n\n<bp /> Pro připojení hodinek
+        je nutné udělit další oprávnění ke čtení dat z aplikace <c>Health Connect</c>.\n\
+        \n<bp /> Ve hře se zaznamenávají pouze kroky hlášené vašimi hodinkami."
+      samsungHealth: "WalkScape čte vaše kroky z aplikace <c>Samsung Health</c>. Kroky
+        ze všech vašich <icon i=\"Watch small\" /> <c>nositelných zařízení</c> kompatibilní
+        se Samsung Health a kroky z vašeho telefonu <icon i=\"Phone small\" /> jsou
+        synchronizovány s hrou.\n\n<bp /> <c i=2>Aby se kroky počítaly ve WalkScape,
+        je nutné synchronizovat kroky se Samsung Health prostřednictvím nositelných
+        zařízení</c>.\n\n<bp /> Abyste mohli synchronizovat kroky se hrou, je nutné
+        udělit další oprávnění ke čtení dat z aplikace <c>Samsung Health</c>.\n\n\
+        <bp /> Ve hře se zaznamenávají pouze kroky hlášené aplikací Samsung Health."
     deviceSource:
       phone: Telefon
       appleWatch: Apple Watch
