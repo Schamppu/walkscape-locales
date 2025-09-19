@@ -94,7 +94,7 @@ singulars:
       language: Language
       helpToTranslate: WalkScape is <c>community translated</c>. Help us translate the game to more languages and to expand current translations by visiting <a href="https://wiki.walkscape.app/wiki/Localization">Translation Guide</a>. Help is much appreciated! ❤️
       chooseALanguage: Choose a language from the list below.
-      percentExplanation: "% shows how much has been translated."
+      percentExplanation: '% shows how much has been translated.'
       selectGrammaticalGender: Select grammatical gender
       grammaticalGenderExplanation: Chosen grammatical gender affects how the game's UI texts refer to you.
       youCanChangeAnyTime: 'You can change the language from <c>Game Settings</c> at any point.'
@@ -104,19 +104,27 @@ singulars:
       pedometerPermission: Step counter permission
       pedometerPermissionExplanation: We need this permission to use the step counter data of your device.
       noDeviceFound: No device found. Please make sure you have pressed the <c>Connect to Apple Health</c> button above and granted permission to read Apple Health data.
+      noDeviceFoundAndroid: No device found. Please make sure you have pressed the <c>Connect to Health Connect</c> button above and granted permission to read Health Connect data.
       connectAppleHealth: Connect to Apple Health
+      connectHealthConnect: Connect to Health Connect
+      connectSamsungHealth: Connect to Samsung Health
       connect: Connect
       connectAppleHealthExplanation: You need to connect to Apple Health so that we can read steps synced by your watch, and to see which devices you have connected. If this is your first time using WalkScape, you will be asked for a permission to read data from Apple Health.
+      connectHealthConnectExplanation: You need to connect to Google Connect so that we can read steps synced by your watch, and to see which devices you have connected. If this is your first time using WalkScape, you will be asked for a permission to read data from Google Connect.
+      connectSamsungHealthExplanation: If you use Samsung wearables, you need to connect to Samsung Health in order to read steps synced by your watch. If this is your first time using WalkScape, you will be asked for a permission to read data from Samsung Health.
+      samsungHealthConnectedInfo: Samsung Health is connected! Both steps from your wearables connected to Samsung Health and steps from your phone will be read by the game.
+      comingSoonToAndroid: Coming soon to Android
       exactAlarmPermission: Alarm permission
       continueWillEnable: Continue button will be enabled after you have granted the necessary permissions above.
       youCanChangeAnyTime: 'You can change the step counting source from <c>Game Settings</c> at any point.'
-      comingSoonToAndroid: Coming soon to Android
       changeStepCountingSource: Change step counting source
       stepCountingSource: Step counting source
     deviceSource:
       phone: Phone
       appleWatch: Apple Watch
-      watch: Other watch
+      watch: Other wearable
+      watchAndroid: Health Connect
+      samsungHealth: Samsung Health
       featureDisabled: Changing input sources has been remotely disabled for the time being. The default phone pedometer will be used.
     deviceInfo:
       phone: >
@@ -152,6 +160,31 @@ singulars:
 
 
         <bp /> Only steps that are reported by your watch are recorded in the game.
+      watchAndroid:
+        WalkScape reads your steps from <c>Health Connect</c>. In order to sync steps from your <icon i="Watch small" /> <c>watch</c>, you need to install a third party application that syncs your steps to <c>Health Connect</c>, such as FitBit, Garmin Connect or Galaxy Health.
+
+
+        <bp /> <c i=2>You need to sync your steps to Health Connect through other applications</c> for any steps to be counted in WalkScape.
+
+
+        <bp /> Step syncing process to <c>Health Connect</c> depends on the manufacturer. This can require some extra setup and technical knowledge.
+
+
+        <bp /> You need to grant extra permissions to read data from <c>Health Connect</c> to connect your watch.
+
+
+        <bp /> Only steps that are reported by your watch are recorded in the game.
+      samsungHealth:
+        WalkScape reads your steps from <c>Samsung Health</c>. Your steps from all of your Samsung Health compatible <icon i="Watch small" /> <c>wearables</c> and steps from your <icon i="Phone small" /> <c>phone</c> are synced to the game.
+
+
+        <bp /> <c i=2>You need to sync your steps to Samsung Health through your wearables</c> for any steps to be counted in WalkScape.
+
+
+        <bp /> You need to grant extra permissions to read data from <c>Samsung Health</c> to sync your steps to the game.
+
+
+        <bp /> Only steps that are reported by Samsung Health are recorded in the game.
   rewards:
     phrases:
       alreadyClaimed: Already claimed
@@ -398,8 +431,10 @@ singulars:
       stepSourceInfoDesc: See more information about the step sources and their differences by pressing the button below.
       stepSourceInfo: Step source information
       connectionInfoIos: If your wearables are not showing up in the list above, make sure you have granted WalkScape permission to use step data from Apple Health in <c>Settings ➤ Privacy & Security ➤ Health ➤ (under Apps) WalkScape</c> and that Apple Health has registered steps on those devices in the past 7 days.
-      connectionInfoAndroid: Smart watch support for Android is coming soon. Currently, only the phone is supported as a step counting source.
+      connectionInfoAndroid: If your wearables are not showing up in the list above, make sure you have granted WalkScape permission to use step data from Health Connect in <c>Settings ➤ Security & Privacy ➤ Privacy ➤ Health Connect ➤ App permissions </c> and that Health Connect has registered steps for those devices in the past 7 days.
+      comingSoonToAndroid: Smart watch support for Android is coming soon. Currently, only the phone is supported as a step counting source.
       gameVersion: Game version {version}
+      updateAvailableSources: Update available sources
   gearSets:
     phrases:
       gearSets: Gear sets
@@ -494,6 +529,7 @@ singulars:
       totalSkillXp: Total skill XP
       totalSteps: Total steps
       highestStepsIn24Hours: Highest steps in 24h
+      statUpdatesWithDelay: This stat updates with a delay of up to <c>one hour</c>.
       recordedFrom: Recorded from <c>{from}</c> to <c>{to}</c>.
       lastUpdated: 'Last updated at: <c>{updatedAt}</c>.'
       reputation: Reputation
@@ -768,7 +804,7 @@ maps:
       'warningBeforeClaimingExperience': Show warning before claiming experience rewards
       'showDailyTips': Show daily tips
       'activityInformationOpen': Show more activity information
-      
+
     enumSettings:
       'language': Language
       'leaderboardFilter': Show

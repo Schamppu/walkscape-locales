@@ -68,7 +68,9 @@ singulars:
       text: Loot table contains row(s) that don't have an item associated with it.
     stepsNotCountedRealTime:
       title: Steps are not counted in real time
-      textIOS: While using other than <icon i="Phone small" /> <c>Phone</c> as your step source, steps are not counted in real time. Depending on your wearable, you might need to sync your steps manually from another application or open Apple Health to sync your steps to the game. This message will disappear after you've synced at least <c>5000</c> steps from your wearable. You can change to <icon i="Phone small" /> <c>Phone</c> as your step source from <c>Settings</c>.
+      textIOS: While using other than <icon i="Phone small" /> <c>Phone</c> as your step source, steps are not counted in real time. Depending on your wearable, you might need to sync your steps manually from another application or open <c>Apple Health</c> to sync your steps to the game. This message will disappear after you've synced at least <c>5000</c> steps from your wearable. You can change to <icon i="Phone small" /> <c>Phone</c> as your step source from <c>Settings</c>.
+      textAndroid: While using other than <icon i="Phone small" /> <c>Phone</c> as your step source, steps are not counted in real time. Depending on your wearable, you might need to sync your steps manually from <c>another application</c> to sync your steps to the game. This message will disappear after you've synced at least <c>5000</c> steps from your wearable. You can change to <icon i="Phone small" /> <c>Phone</c> as your step source from <c>Settings</c>.
+      textSamsungHealth: While using other than <icon i="Phone small" /> <c>Phone</c> as your step source, steps are not counted in real time. You might need to open <c>Samsung Health</c> to sync your steps to the game, and your steps might come with a delay. This message will disappear after you've synced at least <c>5000</c> steps from your wearable. You can change to <icon i="Phone small" /> <c>Phone</c> as your step source from <c>Settings</c>.
   info:
     game:
       equipGearSetSomeFailed:
@@ -141,6 +143,9 @@ singulars:
       stepLoadingInterruped:
         title: Step loading interrupted
         text: The game was backgrounded or interrupted while loading steps. Please try to open the game again to load the steps.
+      couldNotGetServerTime:
+        title: Could not get server time
+        text: The game client failed to get the server time. Please check your internet connection and try again.
     serverError:
       unauthorized:
         title: Unauthorized
@@ -156,7 +161,7 @@ singulars:
         text: Your game is outdated, and there is a new version of the game available. Please download the latest version of the game to continue playing.
       userBannedTemporarily:
         title: You've been temporarily banned from WalkScape
-        text: You've been temporarily banned from WalkScape until <c i=0>{bannedUntil}</c>.
+        text: You've been temporarily banned from WalkScape until <c i=0>{bannedUntil}</c>. If you would like to appeal the decision, you can contact us by sending an email to {email}.
         noTimeFound: No end time found, please contact us by sending an email to {email}
       userBannedPermanently:
         title: You've been permanently banned from WalkScape
