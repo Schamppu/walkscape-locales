@@ -59,21 +59,23 @@ singulars:
           olosuhteet, ja löydät riemua matkasta kesyttämättömän talvimaiseman lävitse.
       exploreArea:
         name: Tutki alue
+        desc: Teet muistiinpanoja paperinpalalle tutkiessasi ympäröivää aluetta. Tästä
+          on hyötyä jatkoseikkailujesi kannalta.
     jarvonia:
       rooftopJumpingBeginner:
-        name: Kattohyppely (aloittelija)
+        name: Kattohyppely
         desc: Kiipeät valaisemattomalle lyhtypylväälle ja tutkiskelet ympäristöä.
           Kuulet askelia lähistöllä, joten kiiruhdat viereiselle katolle pienellä
           hypyllä. Yksi laatta irtoaa ja putoaa maahan, mikä aiheuttaa kolahduksen.
           Seuraavalla kerralla sinun on oltava varovaisempi.
       mountainClimbingBeginner:
-        name: Vuorikiipeily (aloittelija)
+        name: Vuorikiipeily
         desc: Valmistaudut kiipeämiseen. Päivä on kaunis, aurinko paistaa ja tuulee
           vain heikosti. Silti, kun kiipeät hitaasti, sydämesi alkaa hakkaamaan ja
           olet menettää otteesi. Huh, kuinka pelottavaa! Lopulta saavut huipulle ja
           katsot ylpeänä maailmaa jalkojesi alla.
       mountainClimbingIntermediate:
-        name: Vuorikiipeily (keskitaso)
+        name: Haastava vuorikiipeily
         desc: Nyt on kunnollista. Tämä seinä on lähes pystysuora, eikä siellä ole
           helpon näköisiä tarttumakohtia. Kiipeät sitkeästi, tunnet lihastesi jännittyvän
           täysin tarvitsemaasi voimaa varten. Huipulla voit maistaa suussasi veren
@@ -93,11 +95,11 @@ singulars:
           virran vietäväksi Sää ei voisi olla parempi: aurinko paistaa, lämpötila
           on miellyttävä ja kevyt tuuli piristää. Nautit hyvästä melontasessiosta!'
       swimmingBeginner:
-        name: Uinti (aloittelija)
+        name: Rintauinti
         desc: Olet kuullut, että uinti on hyvä keino ylläpitää terveyttä, joten muutaman
           oppitunnin jälkeen uskallat kokeilla sitä itse.
       swimmingIntermediate:
-        name: Uinti (keskitaso)
+        name: Kehosurffaus
         desc: 'Ennen veteen menoa on tarkistettava olosuhteet: tuulen voimakkuus ja
           sen suunta, kivien esiintyminen ja niiden terävyys, kalastajien, veneiden
           tai vaarallisten eläinten läsnäolo. Kaikki on kunnossa. Lähdet uimaan aaltojen
@@ -107,7 +109,17 @@ singulars:
           mitä tahansa arkkitehtonista piirrettä: seiniä, kattoja, parvekkeita ja
           katuvaloja. Kaupunki muuttuu ympärilläsi kuin esteradaksi, ja kiidät sen
           katoilla taidokkaasti.'
-        name: Hyppele katoilla (keskitaso)
+        name: Hyppele talojen katoilla
+      treetopJumping:
+        desc: Olet korkealla puiden latvustossa, ja adrenaliini roihuaa rinnassasi
+          kun hypit oksalta toiselle ja toivot etteivät ne katkea. Pudotus vaikuttaa
+          hurjalta.
+        name: Puunlatvoissa loikkiminen
+      exploreBogBottom:
+        name: Tutki suon pohjaa
+        desc: Seuraat vedenalaista karttaasi ja seuraat kätkettyä polkua suonpohjan
+          sameissa syvyyksissä. Ahdas väylä poukkoilee ja kääntyilee loputtomiin,
+          mutta johtaa sinua jonnekin. Sinun pitää vain jatkaa uimista.
     syrenthia:
       merfolkDancing:
         desc: Merenväen tanssin esittäminen vedenalaisen kansan tapaan vaatii paljon
@@ -116,10 +128,21 @@ singulars:
           kalaparven synkronoitua liikehdintää.
         name: Merenväen tanssiaiset
       swimmingExpert:
-        name: Uinti (ammattilainen)
+        name: Laitesukellus
         desc: Vastalumen valtavan vedenalaisen kaupungin eri polkujen ja luolien läpi
           uiminen on haastavaa. Sinun on väisteltävä vilkkaita merieläimiä samalla
           kun nautiskelet vedessä liikkumisen vapauttavasta tunteesta.
+      exploreUnderwaterCave:
+        name: Tutki vedenalaista luolaa
+        desc: Seuraat vedenalaista karttaasi ja tutkit luolan haarautuvia polkuja.
+          Merkitty polku tuntuu kääntyilevän ja vääntyilevän loputtomiin, mutta johtaa
+          yhä vain eteenpäin. Sinun pitää vain jatkaa uimista.
+    bats:
+      springBatTracking:
+        desc: Lepakot lähtevät luolasta, ja lentävät koilliseen. Seuraat lepakoita
+          niiden kevätkauden kodista, ja juokset yötä päivää selvittääksesi, missä
+          niiden seuraava koti on. Et välttämättä palaa tänne hetkeen.
+        name: Kevätlepakoiden jäljitys
   fishing:
     gdte:
       magnetFishing:
@@ -137,6 +160,9 @@ singulars:
         name: Rämeessä kalastus (Verkko)
       bogFishingSpear:
         name: Rämeessä kalastus (Keihäs)
+        desc: Valmistaudut kalastuskeihääsi kanssa suon vesien alla nappaamaan minkä
+          tahansa kalan, joka tulee riittävän lähelle. Samea vesi vaikeuttaa näkemistä,
+          mutta olet päättänyt saada saalista.
     jarvonia:
       lakeFishing:
         desc: Nauttien raikkaasta talvi-ilmasta valitset huolellisesti syötin ja heität
@@ -161,6 +187,9 @@ singulars:
         name: Merikalastus (merta)
       cleaningTheHolyFountain:
         name: Pyhän suihkulähteen puhdistaminen
+        desc: Temppelin johtajat luottavat sinun apuusi pyhän suihkulähteensä ylläpidossa.
+          He sallivat sinun varmistaa veden kirkkaana pysymisen kalastamalla verkollasi
+          asiattomuudet pois lähteestä, ja kasvattaa siten heidän kunnioitustaan.
     syrenthia:
       seaFishingSpear:
         name: Merikalastus (keihäs)
@@ -205,6 +234,10 @@ singulars:
         desc: Kaupungin sokkeloisten kujien keskellä tutkit unohdettuja kulmia ja
           seulot poisheitettyjä tavaroita toivoen löytäväsi piilotettuja aarteita
           kaiken haisevan roskan kätköistä.
+      summerCaveForaging:
+        name: Kesäluolassa keräily
+        desc: Lepakot asustavat täällä kesäisin. Luolassa on pimeää, ja sinun on parasta
+          ottaa mukaan valonlähde.
     global:
       litterLooting:
         desc: Kulkiessasi tässä keskiaikaisen kaupungin hälinässä, selaat läpi poisheitetyt
@@ -412,14 +445,14 @@ singulars:
           ja korkeisiin toteemipylväisiin.'
         name: Puunveisto
       shipRepairBeginner:
-        name: Korjaa laivoja (aloittelija)
+        name: Laivojen takilakorjaus
         desc: Osallistut pienten alusten normaalista kulumisesta johtuviin korjauksiin.
           Käytössäsi on puutavaraa, nauloja, takiloita, varusteita ja köysiä. Työnjohtaja
           antaa käskyt, ja sinä toteutat ne parhaasi mukaan. Ehkä jonain päivänä sinä
           olet se, joka pääsee antamaan käskyjä muille.
     gdte:
       shipRepairIntermediate:
-        name: Korjaa laivoja (keskitaso)
+        name: Laivojen runkokorjaus
         desc: Et ole enää pelkkä oppipoika, joten osaat korjata suurempia aluksia
           ongelmitta. Työnjohtajasi luottaa taitoihisi ja harkintakykyysi. Työkalupakkisi
           on ammattimainen, aivan kuten sinäkin työssäsi.
@@ -448,7 +481,7 @@ singulars:
       name: Hätäpoistuminen uimalla
     gdte:
       ventureIntoTheHideout:
-        name: Piilopaikkaan rohkeneminen
+        name: Rohkene piilopaikkaan
         desc: Keräät rohkeutesi ja pusket Varjoloitsun sataman ulkopuolella vellovien
           synkeiden sumukerrosten sekaan, väistellen paksuja juuria ja jopa suolla
           kasvavia puita päästäksesi piilopaikkaan.
@@ -457,6 +490,25 @@ singulars:
           tunnet, että sinua tarkkaillaan. Alat juosta henkesi edestä, ilman minkäänlaista
           hajua suunnasta.
         name: Juokse henkesi edestä
+      swampEmergencyDarkEscape:
+        desc: Olet kadottanut valonlähteesi, ja sinun pitää löytää tiesi takaisin
+          pilkkopimeässä. Ole varovainen, ettet törmää matkalla ulos vaarallisiin
+          otuksiin, jotka saattavat vaania varjoissa.
+        name: Hätäpoistuminen pimeässä (Suo)
+      ventureIntoTheBog:
+        desc: Keräät rohkeutesi ja lähdet tutkimusretkelle synkeään usvaan Grandfiddichin
+          laitamilla; yrität löytää maamerkkejä joita voisit tunnistaa lepakoita seuratessasi,
+          päästäksesi suolle.
+        name: Rohkene rämeeseen
+      ventureIntoTheWoods:
+        desc: Keräät rohkeutesi ja tunkeudut synkeään usvaan Suolavuonon liepeillä;
+          tiheä kasvusto hidastaa pääsyäsi syvemmälle metsään.
+        name: Rohkene ryteikköön
+      swampEmergencySwimEscape:
+        name: Hätäpoistuminen uimalla (Suo)
+        desc: Olet kadottanut sukellusvälineesi ja sinulta loppuu ilma. Sinun pitää
+          uida rantaan niin nopeasti kuin vain voit, mutta joutumatta paniikkiin.
+          Tiedät, että jos nouset vedessä liian nopeasti, voit saada sukeltajantaudin.
   crafting:
     jarvonia:
       tinkering:
@@ -504,6 +556,7 @@ singulars:
           prosessista vastaavien hiivojen kanssa.
   idle:
     desc: Et tee mitään. Askeleesi tallennetaan Säästettyihin askeleisiin.
+    name: Toimeton
   trinketry:
     gdte:
       antiqueMarketAssessor:
@@ -511,3 +564,79 @@ singulars:
           tavaroiden ostajien ja myyjien löytäminen vie aikansa. Löydät satunnaisesti
           kannattavia kauppoja jalokivistä tai harvinaisista esineistä.
         name: Antiikkimarkkinoiden arvioija
+  unknown:
+    name: Tuntematon
+    desc: Teet kylläkin jotain, mutta peli ei nyt ihan hahmota mitä se on.
+  hunting:
+    jarvonia:
+      deerHunting:
+        name: Peuranmetsästys
+        desc: Etsit peuran jätöksiä metsästä, koska ne ovat varma merkki siitä että
+          sarvipäitä on liikkeellä lähialueella. Jousesi ja nuolesi ovat valmiina
+          riistan kaatamiseksi.
+      rabbitTracking:
+        name: Jäniksen jäljitys
+        desc: Kiinnität huomiota maisteltuihin kasveihin, nakerrettuihin pikkuoksiin
+          ja jäniksen jalanjälkiin maassa etsiessäsi pitkäkorvia.
+      wolfHunting:
+        name: Suden metsästys
+        desc: Seuraat suuria tassunjälkiä maassa etsiessäsi laajalle levinnyttä metsän
+          petoa, sutta. Nuolesi ja jousesi ovat valmiina hukan kaatoon.
+      bearHunting:
+        name: Karhunmetsästys
+        desc: Suuret kynnenjäljet puissa kertovat, että olet oikeilla jäljillä löytääksesi
+          lähialueen karhuja. Aistisi ovat keskittyneet, ja jokainen lihaksesi valmis
+          kaatamaan otson.
+    global:
+      boxTrapping:
+        name: Laatikkoansastus
+        desc: Asetat yksinkertaisen ansajärjestelmän, jossa syötti on alassuin käännetyn
+          puisen laatikon alla, ja laatikko on tuettu oksan varaan. Kun otus kävelee
+          syötin luo, se keppiin osuessaan vangitsee itsensä laatikon alle.
+      birdhouseTrappingIntermediate:
+        desc: Virität linnunpönttöön syötin, ja varmistat että se voi merran tapaan
+          päästää saaliin sisäänsä muttei ulos. Ripustat sen jälkeen ansan puuhun,
+          missä se varmastikin houkuttaa jonkin siivekkään luokseen.
+        name: Lintujen pönttömetsästys (keskitaso)
+      crabTracking:
+        name: Rapujen jäljestys
+        desc: Kävelet rannan poikki ja etsit viitteitä lähistöllä liikkuvista ravuista.
+          Saksikädet jättävät hyvin omalaatuisia jälkiä hiekkaan, mutta harmillista
+          kyllä vuorovesi usein huuhtoo ne pois.
+      birdhouseTrappingBeginner:
+        name: Lintujen pönttömetsästys (aloittelija)
+        desc: Virität linnunpöntön, jossa on ansajärjestelmä, joka päästää linnun
+          pöntön sisään muttei sieltä ulos.
+    gdte:
+      lizardHunting:
+        desc: Etsit merkkejä siitä, että jokin lähialueella elävistä monista liskolajeista
+          olisi liikkunut täällä. Näiden matelijoiden metsästäminen ei ole vaarallista,
+          mutta pitkää pinnaa se kylläkin vaatii.
+        name: Liskonmetsästys
+      halfmawHunt:
+        name: Puolikidan metsästys
+        desc: Kannat jousta ja nuolia kulkiessasi suon läpi, ja etsit tarujen Puolikitaa.
+          Se on päihittänyt monta metsästäjää sinua ennen, mutta toivot ettei tämä
+          kohtalo olisi omana osanasi, ja että olisit saaliin sijaan saalistaja.
+      invasiveSpeciesHunting:
+        name: Vieraslajien metsästys
+        desc: Suo kuhisee matomaisia otuksia, jotka eivät kuulu alueelle. Etsit tarkkaavaisesti
+          jälkiä niistä, ja otat hengiltä kaikki mitä löydät.
+    syrenthia:
+      driftNetHunting:
+        name: Ajoverkkometsästys
+        desc: Setvit ison verkon sotkut ja takertuneet roskat ennen kuin lasket sen
+          veteen. Voit saada kiinni kaloja ja muita vedeneläviä satapäin, jos merten
+          jumalat hymyilevät sinulle.
+  tailoring:
+    jarvonia:
+      sailRepairBeginner:
+        desc: Käytät järeää neulaa ja lankaa, ja ompelet huolellisesti useita kangaspaikkoja
+          paikalleen korjataksesi laivan purjeet. Ne eivät ole ihan uudenveroiset,
+          mutta varmastikin kestävät hyvän aikaa pidempään.
+        name: Purjeiden korjaus (aloittelija)
+    gdte:
+      sailRepairIntermediate:
+        name: Purjeen korjaus (keskitaso)
+        desc: Suuri purje on nähnyt kovia myrskyjä ja on reikiä täynnä. Työskentelet
+          nopeasti ja tarkasti ja paikkaat sen reiät, jolloin purje on melkein uudenveroinen.

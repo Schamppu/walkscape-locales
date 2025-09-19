@@ -12,8 +12,8 @@ singulars:
       desc: Jarvonya'da huysuzluğuyla tanınan nüfuz sahibi birisi.
       greetings:
         d0:
-          'p0': Ah, aynı tas aynı banka. Unutma ki, eğer <c>Donmuş Sermaye</c> ile
-            çalışmıyorsan, paranı muhtemelen başka bir yerde kaybediyorsundur.
+          'p0': Ah, aynı tas aynı banka. Unutma ki, <c>Donmuş Sermaye</c> ile çalışmıyorsan,
+            büyük ihtimalle başka bir yerde para kaybediyorsundur.
         d1:
           'p0': Bana <c>kimliğini</c>, <c>annenin kızlık soyadını</c> ve <c>çocukluğundaki
             evcil hayvanının adını</c> vermen gerekiyor. Neden diye sorma, protokol
@@ -22,11 +22,11 @@ singulars:
           'p0': Ücretlerimizin <c>iade edilemez</c> olduğunu sana bildirmeyi zaruri
             buluyorum. Ne kadar şikayet etsen de ödemen gerekecek.
         d3:
-          'p0': Hesap bakiyen kendi sorumluluğundadır. Bakiyeni aşarsan, <c>benden
-            anlayış bekleme</c>.
+          'p0': Hesap bakiyenin sorumluluğu sana aittir. Ola ki bakiyeni aşarsan,
+            <c>benden anlayış bekleme</c>.
         d4:
-          'p0': Acele et de <c>ne yatıracaksan yatır</c>. Ama sakın yine sadece <c>çam
-            kütük</c> ve <c>balık</c> olmasın. Şu kokudan artık bıkmış durumdayım.
+          'p0': Acele et de <c>ne yatıracaksan yatır</c>. Ama sakın ha yine yalnızca
+            <c>çam kütük</c> ve <c>balık</c> olmasın. Bıktım usandım şu kokudan.
       name: Peter Bankabedel
     runaNorrberga:
       desc: Runa, bütün müşterilere bir yandan içkilerinin tadını çıkarırken diğer
@@ -36,7 +36,7 @@ singulars:
         d0:
           'p0': Selam sana, yolcu! Soğuk çorağın ortasındaki cümbüş cenneti <c>Buzlu
             Kadeh Tavernası</c>'na rast geldin. Hey, fazla gevşemeden önce, <c>mırıldayan
-            bekçimize</c> merhaba de.
+            bekçimize</c> bir selam ver.
         d1:
           'p0': Seni görmek ne güzel, gezgin! <c>Buzlu Kadeh</c> herkese kucak açar.
             İster soluklanmak, ister eğlenmek, ister avaz avaz iyi vakit geçirmek
@@ -45,14 +45,14 @@ singulars:
           'p0': Hey, maceracı! <c>Buzlu Kadeh</c>'te içtenliği, yoldaşlığı ve Jarvonya'nın
             yılmaz ruhunu kutluyoruz. Bir tabure kap da <c>bu geceyi unutulmaz kılalım</c>!
         d3:
-          'p0': Merhaba, cesur kişi! <c>Buzlu Kadeh</c>'e girince, serin bir neşe
-            ile samimi ruhların bir arada bulunduğu bir yere geldin demektir. <c>Rahat
-            köşemize</c> seni bugün getiren nedir?
+          'p0': Merhaba, cesur ruh! <c>Buzlu Kadeh</c>'e girdin miydi serin bir neşenin
+            samimi yüreklerle buluştuğu bir yere geldin demektir. Bugün seni <c>rahat
+            köşemize</c> getiren nedir?
       name: Runa Norrberga
     oldinSkogsan:
-      desc: Karşındaki adam ormanları görmüş geçirmiş biri. Fiziği tıpkı devirdiği
-        ağaçlar gibi güçlü kuvvetli. Oldin'in, babasının daha o doğmadan önce dikmiş
-        olduğu ormanda yaşadığını söylerler.
+      desc: Karşındaki adam ormanları görmüş geçirmiş biri. Fiziği ise devirdiği ağaçlar
+        kadar güçlü kuvvetli. Oldin'in, babasının daha o doğmadan önce dikmiş olduğu
+        ormanda yaşadığı söylenir.
       name: Oldin Skogsan
       greetings:
         d0:
@@ -61,14 +61,32 @@ singulars:
             olabilirim, maceracı?
     maiaYalestrom:
       desc: Etrafta koşuşturan, enerjik ve hayat dolu bir genç hanım. Kıvrak yapısıyla
-        rafları ustalıkla dizip ortalığı bir çırpıda toparlar.
+        rafları ustalıkla dizip ortalığı bir çırpıda toparlıyor.
       name: Maia Yalestrom
+      greetings:
+        d0:
+          "p0": <c>Demirkazık Ticarethanesi</c>'ne hoş geldin. Adım Maia Yalestrom,
+            lütfen bir şeye ihtiyacın olursa beni haberdar et.
     balunnBrimstone:
-      desc: Yüzünde birkaç yara izi bulunan cücenin sakalı da hırpalanmış görünüyor.
-        Keyfi yerinde gibi dursa da bir badire atlattığı çok belli.
+      desc: Yüzünde birkaç yara izi bulunan cücenin sakalı da bayağı bir hırpalanmış.
+        Keyfi yerindeymiş gibi görünse de bir badire atlattığı çok belli.
       name: Balunn Sipertaş
+      greetings:
+        d0:
+          "p0": Dağlar seni korusun, maceracı. Ben Balunn Sipertaş, Kierg Sipertaş'ın
+            oğluyum. Burası Arenum'daki pek az spor mağazasından biridir. Özel bir
+            şey arıyorsan söylemen yeter.
     delaphinaArmand:
       name: Delaphina Armand
+      desc: Kısa boylu, ensiz, minyon bir hanım. Ruhu da kokusu da pek kuvvetli. Zira
+        bataklık suyunun dayanılmaz kokusu buradaki insanların kokusunu bile avcunun
+        içine alır. Örgü bir önlük takıp eteğinin ucunda süslü yosunlar duran bir
+        elbise giyer. Başının üzerinde ise güzel ve temiz bir silindir şapka bulunur.
+      greetings:
+        d0:
+          "p0": Sırılselamlar, ben Batakyanı Bankası'ndan Delaphina Armand. Banka
+            hesabından bir şey mi alman lazım? Yoksa hesabına bir şey mi koyacaksın!
+            Tahmin etmekte her gün daha iyiye gidiyorum.
     kultyTheAHolder:
       name: '"A" Tutucu Kulty'
     helpfulHerbert:
@@ -78,30 +96,91 @@ singulars:
       greetings:
         d0:
           "p0": Merhabalar! Adım Herbert, bana Yardımsever derler. Bütün hayatım odun
-            kesmekle geçti ve <c>ahşap sanatına</c> gönlünü kaptıranlara yardım etmeyi
-            severim. Sana nasıl yardımcı olabilirim?
+            kesmekle geçtiğinden <c>ahşap sanatına</c> gönlünü kaptıranlara yardım
+            etmeyi severim. Sana nasıl yardımcı olabilirim?
     hildurTheSharkbait:
       name: Balık Yemi Hildur
-      desc: Sağ dizinden aşağısı tahta bacak olan ve saçları grileşen yaşlı bir hanım.
+      desc: Sağ dizinden aşağısı tahta bir bacak olan, saçları grileşmiş yaşlı bir
+        hanım.
+      greetings:
+        d0:
+          "p0": Selam, tükkanuma hoş geldun. Bir ihtiyacun var ise Paluk Yemi Hildur
+            dirler baa. Yok istemez ise şu duvardaki <c>Bruce</c>'a ağzun açık bakabilirsun.
+            Yardumcu olacağundan değildur ha!
     gunnarKnuds:
       name: Gunnar Knuds
+      desc: Bir elinde not defteri diğerinde bir tüy tutan muhafız, büyük bir heyecanla
+        yazıları dikkatlice gözden geçiriyor. Çenesinde ve dudağının üzerinde kirli
+        sakal bulunan yüzünün geri kalanı ise miğferi tarafından gizleniyor.
+      greetings:
+        d0:
+          "p0": Memnun oldum, ben Jarvonya-GDTE sınırının koruyucuları olan 5. piyade
+            alayından Muhafız Gunnar. Geçmek istiyorsan, <c>geçiş iznin</c> olması
+            gerekir. Zaten iznin bulunuyorsa lütfen ibraz et de evrak işlerine başlayalım.
     heinnirUltemor:
       name: Heinnir Ultemor
       greetings:
         d0:
           "p0": Selam, merhaba ve mutlu günler! <c>Yosun Bürosu</c>'na hoş geldin.
             Ben buranın sahibi <c>Heinnir Ultemor</c>. Başımdaki dostumun adı ise
-            Squik. İçki veya konuşacak birisi istersen, kararını çabuk ver!
+            Squik. Bir içecek ya da konuşacak birisi istersen, kararını çabucak ver!
+      desc: Tezgahın arkasında eksantrik bir adam dikiliyor. Müşteriler ve diğer çalışanlarla
+        laflarken enerjisi dışına taşıyor. Başının üzerindeki kurbağa ise bu bitmek
+        bilmeyen gevezeliğe aldırış etmeden, tatlı ve mutlu bir boş vermişlik içinde
+        bir sağ gözünü bir sol gözünü yavaşça kırpıyor.
     mikkaMaier:
       name: Mikka Maier
+      desc: Etraftaki tek insan olduğu anlaşılan bir kadın burada birkaç hayvanla
+        ilgileniyor. Yavaşça konuştuğu hayvanlarla uzun uzadıya sohbet ediyor.
+      greetings:
+        d0:
+          "p0": <c>Pati Pati Pençe</c>'ye uğradığın için teşekkürler. Ben Mikka Maier.
+            Bu sevimli hayvanlar yakınlardaki bataklıktan kurtarıldılar. Selam verip
+            onları yakından tanımaya çekinme. Bir şey satın almak istersen ben buralarda
+            olacağım.
     alexaLeeroi:
       name: Alexa Leeroi
+      desc: Tezgahın ardında esmer tenli ve dalgalı saçlı sarışın bir kadın duruyor.
+        Mavi gözleri gelip geçenleri yavaşça takip ediyor. Anlaşılan soğuktan korunmak
+        için kahverengi giysilerini kat kat giyinmiş.
+      greetings:
+        d0:
+          "p0": Esenlikler, ben Alexa Leeroi. Ben Arenum denizlerinin en büyük balıklarını
+            satar. Kocaman balıklardır ki seni bütün yutar, beni yutmaz. Sen alacak
+            mı yoksa öyle bakacak mı?
     bastiDupont:
       name: Basti Dupont
+      desc: Pazar tezgahının başındaki adam terazisini ayarlıyor anlaşılan. Acayip
+        görünümlü bir fasulyeyi tartıp poşetledikten sonra müşterisine veriyor. Bulaşıcı
+        gülümsemesi ise nezaketle dolup taşmakta.
+      greetings:
+        d0:
+          "p0": Tezgahıma hoş geldin, en taze ekmek ve uzak diyarlardan gelen yiyecekler
+            bende bulunur. Herkes soruyor, "Basti Dupont, böyle şeyleri nereden buluyorsun?".
+            Ama bu soruyu cevaplamıyorum. Kıymetli mallarım kadar kıymetli bir sır
+            bu! Peki sana nasıl yardımcı olabilirim?
     bertLamberen:
       name: Bert Lamberen
+      greetings:
+        d0:
+          "p0": Hoş geldin maceracı kardeş! Hemen şurada eşyalarını bankaya gönderebilmen
+            için bir emanet kasam bulunuyor. Ancak maalesef bankandan sana eşya getirtmemin
+            bir yolu yok. Teçhizatın hazırsa birkaç arama kurtarma seferine katılmaya
+            çekinme. Bulduğun eşyalar için jeton veririm sana!
+      desc: Macera Loncası'nın Jarvonya temsilcisi olan Bert, yeni maceracıları karakolda
+        karşılar. Sıcak samimiyetinin yanı sıra görevlerine duyduğu sorumluluğun ciddiyetini
+        bir tık hissedebiliyorsun.
     warrickDarKoffman:
       name: Warrick Dar Koffman
+      desc: Zenginlik, mükemmellik, bu adamın üzerindeki her şey tam ayarında. Kıyafetlerine,
+        hatta saçına bile cevherler işlenmiş. Yeterince yakından bakarsan saçlarının
+        arasındaki altın zerrelerini de görebilirsin. Başını dimdik tutar, duruşu
+        ise her daim kusursuzdur.
+      greetings:
+        d0:
+          "p0": Talih yüzüne gülsün, maceracı. Umarım günün çok güzel geçiyordur ve
+            güzel geçmeye de devam eder. Gösterişli Bahri Servet Bankası'na hoş geldin.
+            Senin gibi iyi bir müşteriye bugün nasıl yardımcı olabilirim?
     quincieCartier:
       name: Quincie Cartier
   syrenthia:

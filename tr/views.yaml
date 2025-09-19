@@ -70,7 +70,10 @@ maps:
       'showFpsCounter': FPS sayacını göster
       'shaderOutlineRendering': Çerçeve gölgelerini göster
       'alwaysStopWhenInventoryFull': Envanter dolup taşınca kendiliğinden dur
-      'showDailyTips': Günün ipucunu göster
+      'showDailyTips': Günlük ipucunu göster
+      'showStepSourceInActivityView': Faaliyet ekranında adım kaynağını göster
+      'warningBeforeClaimingExperience': Tecrübe ödüllerini almadan önce uyar
+      'activityInformationOpen': Daha fazla faaliyet bilgisi göster
     languages:
       'pt': Portekizce
       'de': Almanca
@@ -125,6 +128,17 @@ maps:
       'minutes': '{minutes}<c>dk</c>'
       'seconds': '{seconds}<c>sn</c>'
       'days': '{days}<c>g</c>'
+  locales:
+    grammaticalGender:
+      'feminine': Kadınsı
+      'masculine': Erkeksi
+      'neutral': Yansız
+  announcements:
+    categories:
+      'changelog': Güncelleme Notları
+      'devblog': Geliştirici Günlükleri
+      'update': Güncelleme
+      'system': Sistem
 plurals:
   achievements:
     phrases:
@@ -186,6 +200,27 @@ plurals:
         other: Hedefe kalan adım
         two: 'Hedefe kalan adım'
         zero: '-'
+      steps:
+        one: '{} adım'
+        two: '{} adım'
+        few: '-'
+        other: '{} adım'
+        zero: '-'
+        many: '-'
+      actions:
+        zero: '-'
+        one: '{} eylem'
+        two: '{} eylem'
+        few: '-'
+        many: '-'
+        other: '{} eylem'
+      stepsRequiredPerAction:
+        zero: '-'
+        one: Eylem başına <icon i="Steps"/> <c>{} adım</c> gerekli
+        two: Eylem başına <icon i="Steps"/> <c>{} adım</c> gerekli
+        few: '-'
+        many: '-'
+        other: Eylem başına <icon i="Steps"/> <c>{} adım</c> gerekli
   inventory:
     info:
       consumableDuration:
@@ -206,10 +241,16 @@ plurals:
         one: <c>{}</c> oyuncu burada
         two: <c>{}</c> oyuncu burada
         other: <c>{}</c> oyuncu burada
+        many: '-'
+        zero: '-'
+        few: '-'
       playersDoingActivity:
         two: <c>{}</c> oyuncu faaliyeti yapıyor
         one: <c>{}</c> oyuncu faaliyeti yapıyor
         other: <c>{}</c> oyuncu faaliyeti yapıyor
+        zero: '-'
+        few: '-'
+        many: '-'
 singulars:
   achievements:
     info:
@@ -219,14 +260,14 @@ singulars:
       noCollectibleItems: Henüz koleksiyonluk bulmuş değilsin.
       specialItems: WalkScape'teki yolculuğun boyunca <c>koleksiyonluklar</c>, <c>görev
         eşyaları</c> ve <c>eserler</c> gibi özel eşyalar toplarsın. Onlara buradan
-        bakabilirsin. Koleksiyonluklar başarım puanı ilerlemesi de sağlar.
+        bakabilirsin. Koleksiyonluklar, başarım puanı ilerlemesi de sağlar.
       viewDescription: <hl>Başarım puanı</hl> kazanmak için başarımları tamamla. Belirli
-        başarım puanlarına ulaştığın zaman özel ödüller açarsın. Bazı başarımların
-        kendileri de tamamlanınca ödül verirler.
+        başarım puanlarına ulaştığın zaman özel ödüller kazanırsın. Bazı başarımların
+        kendileri de tamamlandıkları zaman ödül verirler.
       totalProgressUnlocks: Bu ödülleri başarımlarının toplam ilerlemesine göre kazanırsın.
-        Daha fazla başarım puanı eklenince eşyalara erişimini kaybedebilirsin.
-      checkPointUnlocks: Bu başarımları belirli başarım puanlarına erişince açarsın.
-        Daha fazla başarım puanı eklense bile bunlara erişimini kaybetmezsin.
+        Oyuna daha fazla başarım puanı eklendiği zaman bu eşyalara erişimini kaybedebilirsin.
+      checkPointUnlocks: Bu ödülleri belirli başarım puanlarına erişince kazanırsın.
+        Oyuna daha fazla başarım puanı eklense bile bunlara erişimini kaybetmezsin.
     phrases:
       notUnlocked: Kilitli başarım
       rewardProgress: Ödül İlerlemesi
@@ -240,6 +281,8 @@ singulars:
       noItemsInventory: Envanterinde eşya bulunmuyor.
       deposit: Yatır
       withdraw: Çek
+      youAreNotAtABank: <c>Banka bulunan bir konumda değilsin.</c> Yalnızca banka
+        bulunan bir konumdayken bankaları kullanabilirsin.
   character:
     info:
       skillBreakdown: Karakterinin yolculuğu boyunca geliştirdiği bütün becerilerinin
@@ -258,7 +301,7 @@ singulars:
       savePicture: Resmi kaydet
   characterCreation:
     info:
-      rememberSwipe: Karakter oluşturma esnasında önceki seçimlerini değiştirmek için
+      rememberSwipe: Karakter oluşturma sırasında önceki seçimlerini değiştirmek için
         geri dönebileceğini unutma.
     phrases:
       bodyType: Vücut tipi
@@ -270,7 +313,7 @@ singulars:
   crafting:
     phrases:
       materials: Malzemeler
-      noMaterials: Şu anda üretim yapmak için hiç malzemen bulunmuyor.
+      noMaterials: Şu anda üretim yapmak için hiçbir malzemen bulunmuyor.
       noMaterialsThatCouldBeUsed: Envanterindeki hiçbir malzeme üretim yapmak için
         kullanılamaz.
       noServiceRequirements: Hizmet gereksinimi bulunmuyor.
@@ -295,10 +338,12 @@ singulars:
       noSkillModifiers: Kuşanılmış eşyalardan alınan beceri niteliği bulunmuyor.
       permanentModifiers: Daimi nitelikler
       skillModifiers: Beceri nitelikleri
+      noItemSelected: Seçilmiş eşya bulunmuyor
+      noItemEquipped: Kuşanılmış eşya bulunmuyor
   inventory:
     info:
       noItemEquipped: Kuşanılmış eşya bulunmuyor. \n\n Aşağıdaki listeden bir eşya
-        seçip "Kuşan" düğmesine basarak kuşanabilirsin.
+        seçip "Kuşan" düğmesine dokunarak kuşanabilirsin.
       noItemSelected: Seçilmiş eşya bulunmuyor. \n\n Mevcut eşyanla karşılaştırıp
         kuşanmak için aşağıdaki listeden bir eşya seç.
       noItemsFound: Envanterinde bu yuvaya uygun bir eşya bulunmuyor.
@@ -309,19 +354,19 @@ singulars:
       showGear: Teçhizatı göster
       showMaterials: Malzemeleri göster
     phrases:
-      allItemsInUse: Bu eşyaların tümü şu anda kullanımda olduğundan bırakılamazlar.
+      allItemsInUse: Bu eşyaların tümü şu anda kullanımda olduğundan atılamazlar.
       allSkills: Bütün beceriler
-      areYouSureToDrop: Eşyaları bırakmak istediğine emin misin? Bırakılan eşyalar
-        ebediyen yok olur.
+      areYouSureToDrop: Eşyaları atmak istediğine emin misin? Atılan eşyalar ebediyen
+        yok olur.
       attributes: Nitelikler
       cantEquip: Kuşanılamaz.
       checkBank: Bankayı aç
-      dropItems: Eşyaları bırak?
+      dropItems: Eşyaları at?
       emptySlot: Boş yuva
       equipToRingOne: 1. yüzük yuvasına kuşan
       equipToRingTwo: 2. yüzük yuvasına kuşan
       equipToToolSlot: '{id}. alet yuvasına kuşan'
-      itemsInUse: Zaten kullanımda olan eşyaları seçtin. Kullanımdaki eşyaları bırakamaz
+      itemsInUse: Zaten kullanımda olan eşyaları seçtin. Kullanımdaki eşyaları atamaz
         veya bankaya koyamazsın.
       longPressTip: <c>İpucu:</c> Bir eşya yığınına basılı tutmak bütün benzer yığınları
         seçer.
@@ -342,8 +387,8 @@ singulars:
       noConsumableSelected: Seçilmiş tüketimlik bulunmuyor. Aşağıdakilerden birini
         seçebilirsin.
       selectedStacks: Seçilmiş <c>{stacks}</c> yığınlar
-      cantBeDropped: Eu eşya bırakılamaz.
-      oneOrMoreCantBeDropped: Bir veya daha fazla eşya bırakılamaz.
+      cantBeDropped: Eu eşya atılamaz.
+      oneOrMoreCantBeDropped: Bir veya daha fazla eşya atılamaz.
       duration: Müddet
       durationInSteps: <c>{steps}</c> <icon i="Steps" /> adım geçerli
       inUse: Kullanımda
@@ -375,11 +420,14 @@ singulars:
       tapToShowRoutes: Rotaları göstermek için dokun
       factions: Diyarlar
       owner: Sahibi
+      noRoutesFromLocation: <object id="{from}"/> konumundan seyahat edecek bir yer
+        bulunmuyor.
+      showingRoutesFrom: <object id="{from}"/> konumundan seyahat rotaları.
   mainMenu:
     phrases:
       areYouAbsolutelySure: Kesinlikle emin misin? Bu adımdan sonra, karakterini kalıcı
         olarak kaybedeceksin.
-      areYouSureYouWantToDelete: <hl>{name}</hl>'i silmek istediğinden emin misin?
+      areYouSureYouWantToDelete: <hl>{name}</hl>'i silmek istediğine emin misin?
       chooseCharacter: Karakterini seç veya yeni bir karakter oluştur.
       createCharacter: Yeni karakter oluştur
       deleteWord: SİL
@@ -396,7 +444,7 @@ singulars:
       noBetaAccess: Beta erişimi bulunmuyor.
       noInternet: İnternet bağlantısı bulunmuyor
       password: Parola
-      pleaseEnterCredentials: Lütfen WalkScape hesabı bilgilerini gir.
+      pleaseEnterCredentials: Lütfen WalkScape hesabının bilgilerini gir.
       pleaseWait: Lütfen bekle...
       register: Kaydol
       welcomeToWalkscape: WalkScape'e hoş geldin, <hl>yabancı</hl>. Lütfen giriş yap.
@@ -404,8 +452,8 @@ singulars:
       support: Oyuna destek ver
       accountPage: Hesap Sayfası
       authenticating: Doğrulanıyor...
-      ifYouAreSure: Eğer ki eminsen, aşağıdaki alana <c>SİL</c> yaz ve devam tuşuna
-        dokun.
+      ifYouAreSure: Eğer ki eminsen, aşağıdaki alana <c>SİL</c> yazdıktan sonra devam
+        tuşuna bas.
       testFlight: <c>TestFlight</c> üzerinden en son sürümü indirebilirsin.
     loadingStates:
       loadingCharactersFromCloud: Karakterler buluttan yükleniyor
@@ -423,40 +471,120 @@ singulars:
       localizationFiles: Yerelleştirme dosyaları yükleniyor
       startingGameLoad: Oyun verisi yüklemesi başlatılıyor
       cleaningUpData: Veriler temizleniyor
+      initializingGameData: Oyun verisi başlatılıyor
+      loadingLocaleState: Yerel durum yükleniyor
+      loadingDevicePermissions: Yerel cihaz izinleri
+      settingUpTutorialManager: Rehber yönetici kuruluyor
+      startingEventManagerProcess: Etkinlik yönetme işlemi başlatılıyor
+      startingToLoadGame: Oyun yüklemesi başlatılıyor
+      startingProcesses: Oyun işlemleri başlatılıyor
+      loadingGameData: Oyun verisi yükleniyor
+      authenticating: Doğrulanıyor
+      loadingGuideState: Kılavuz durum yükleniyor
+      awaitingForRemoveConfig: Uzaktan yapılandırma bekleniyor
+      processingStepHistory: Adım geçmişi işleniyor
+      reportingErrorToSentry: Hata Sentry'ye bildiriliyor
+      loadingPlayerData: Oyuncu verisi yükleniyor
+      settingUpStepManager: Adım yönetici kuruluyor
+      settingUpCensusManager: Sayım yönetici kuruluyor
+      settingUpOnlineSettingsManager: Çevrim içi ayar yönetici kuruluyor
+      settingUpPlayerMetadata: Oyuncu üstverisi kuruluyor
+      updatingStepReadTime: Adım okuma zamanı güncelleniyor
+      changingMainCharacter: Ana karakter değiştiriliyor
+      loadingStepHistoryData: Adım geçmişi verisi yükleniyor
+      loadingSteps: Adımlar yükleniyor
+      startingErrorManagerProcess: Hata yönetme işlemi başlatılıyor
+      startingNetworkProcess: Ağ işlemi başlatılıyor
+      loadingLocalStorage: Yerel depolama okunuyor...
+      startingSentry: Sentry başlatılıyor...
+      startingGameManagerProcess: Oyun yönetme işlemi başlatılıyor
+      startingPlayerManagerProcess: Oyuncu yönetme işlemi başlatılıyor
+      startingAuthProcess: Doğrulama işlemi başlatılıyor
+      startingTimeManagerProcess: Zaman yönetme işlemi başlatılıyor
+      startingNotificationManagerProcess: Bildirim yönetme işlemi başlatılıyor
+      startingSettingsManagerProcess: Ayar yönetme işlemi başlatılıyor
+      spawningIsolate: Isolate açılıyor...
+    isolates:
+      mainIsolate: Ana Isolate
+      workerIsolate: Çalışan Isolate
   permissions:
     phrases:
       pedometerPermission: Adım sayacı izni
       permissionExplanation: Oyunun çalışması için, cihazının adım sayacı verilerini
         kullanma iznine ihtiyacımız var. Lütfen oyuna devam etmek için bu izni onayla.
       exactAlarmPermission: Bildirim izni
-      connectAppleHealth: Apple Health'e bağlan
+      connectAppleHealth: Apple Health'e Bağlan
       connect: Bağlan
       stepCountingSource: Adım kaynağı
       changeStepCountingSource: Adım kaynağını değiştir
       comingSoonToAndroid: Yakında Android'e gelecek
+      pedometerPermissionExplanation: Cihazınızın adım sayma verisini kullanabilmemiz
+        için bu izne ihtiyacımız var.
+      youNeedToGivePermissions: Oyuna devam edebilmek için gerekli izinleri vermelisin.
+        Üzerlerine dokunarak gerekli izinleri ver.
+      noDeviceFound: Cihaz bulunamadı. Lütfen yukarıdaki <c>Apple Health'e Bağlan</c>
+        tuşuna bastığına ve Apple Health verilerini okuma izni verdiğine emin ol.
+      continueWillEnable: Devam etme tuşu yukarıdaki gerekli izinleri verdikten sonra
+        açılacak.
+      youCanChangeAnyTime: Adım kaynağını ne zaman istersen <c>Oyun Ayarlarından</c>
+        değiştirebilirsin.
+      connectAppleHealthExplanation: Saatinin kaydettiği adımları okuyabilmemiz ve
+        hangi cihazlara bağlı olduğunu görebilmemiz için Apple Health'e bağlanman
+        gerekiyor. WalkScape'i ilk kez kullanıyorsan, Apple Health verilerini okuyabilmemiz
+        için izin vermen istenecektir.
     deviceSource:
       watch: Başka bir saat
       phone: Telefon
       appleWatch: Apple Watch
+      featureDisabled: Kaynak değiştirmek şimdilik uzaktan devre dışı bırakıldı. Telefonun
+        varsayılan adımsayarı kullanılacak.
+    deviceInfo:
+      phone: "<icon i=\"Phone small\" /> <c>Telefon</c> WalkScape için önerilen varsayılan
+        adım kaynağıdır. Yoğun efor isteyen spor faaliyetleri için adım kaynağı olarak
+        <icon i=\"Watch small\" /> <c>akıllı saat</c> kullanılmasını öneririz. Çoğu
+        oyuncu için <icon i=\"Phone small\" /> <c>telefon</c> en iyi seçenektir.\n\
+        \n<bp /> <c i=1>Yürürken attığın adımlar anlık olarak oyuna yansır.</c>\n\n\
+        <bp /> Adımlarının sayılması için <c>telefonun yanında bulunmalıdır</c>. Yoğun
+        efor isteyen sporlar yaparken bu durum zor gelebilir.\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> adımlarını
+        Apple Health'e belirli aralıklarla eşlemesi açısından <icon i=\"Watch small\"\
+        \ /> <c>diğer saatlerden</c> farklılık gösterebilir. WalkScape adımlarını
+        <icon i=\"Apple watch small\" /> <c>Apple Watch</c> veya başka bir saatten
+        Apple Health'e eşlenen verilerden okur .\n\n<bp /> <c i=2>Apple Watch attığın
+        adımları Apple Health'e belirli aralıklarla eşler.</c> Attığın adımları oyunda
+        anlık olarak göremezsin ve bu adımlar oyuna gecikmeli olarak yansıyabilir.\n\
+        \n<bp /> Saatine bağlanıp Apple Health verilerinin okunabilmesi için ekstra
+        bir izin vermen gereklidir.\n\n<bp /> Yalnızca saatin tarafından gönderilen
+        adımlar oyuna kaydedilir.\n"
+      watch: "WalkScape attığın adımları <c>Apple Health</c>'e <icon i=\"Watch small\"\
+        \ /> <c>saatinden</c> eşlenen verilerden okur. Üreticiye bağlı olarak, attığın
+        adımları ayrı bir uygulama kullanarak manuel bir şekilde <c>Apple Health</c>'e
+        eşlemen gerekebilir.\n\n<bp /> Attığın adımların WalkScape'te sayılabilmesi
+        için <c i=2>adımlarını ayrı bir uygulama kullanarak manuel bir şekilde Apple
+        Health'e eşlemen gerekebilir.</c>\n\n<bp /> <c>Apple Health</c>'e adım eşleme
+        süreci üreticiye bağlı olarak değişebillir. Bu işlem ekstra hazırlık ve teknik
+        bilgi gerektirebilir.\n\n<bp /> Saatine bağlanıp Apple Health verilerinin
+        okunabilmesi için ekstra bir izin vermen gereklidir.\n\n<bp /> Yalnızca saatin
+        tarafından gönderilen adımlar oyuna kaydedilir.\n"
   pfpCreation:
     buttons:
       choose: Seç
       enableBackAccessorie: Sırt aksesuarı olsun
-      enableDynamicBackground: Dinamik arka plan olsun
+      enableDynamicBackground: Dinamik arka planı göster
       enableFaceAccessorie: Yüz aksesuarı olsun
-      enableFacepaint: Yüz boyası olsun
+      enableFacepaint: Yüz boyasını göster
       hideHat: Başlığı göster
       randomize: Rastgele
       showHat: Başlığı göster
-      enableFaceAccessory: Yüz aksesuarı olsun
-      enableBackAccessory: Sırt aksesuarı olsun
-      enableEyeAccessory: Göz aksesuarı olsun
+      enableFaceAccessory: Yüz aksesuarını göster
+      enableBackAccessory: Sırt aksesuarını göster
+      enableEyeAccessory: Göz aksesuarını göster
     phrases:
       colorOptions: Renk seçenekleri
       currentSelection: Mevcut seçim
       defaultExpression: Varsayılan ifade
-      dynamicBackground: Dinamik arka plan, karakterinin konumuna göre arka plan görüntünü
-        değiştirir.
+      dynamicBackground: Dinamik arka plan, karakterinin bulunduğu konuma göre arka
+        plan görüntünü değiştirir.
       extras: Ekstralar
       homeRegion: Memleket
       mainOptions: Ana seçenekler
@@ -465,6 +593,7 @@ singulars:
       resetToDefault: Varsayılana sıfırla
       selectedVariant: Çeşit {index} seçildi
       variants: Çeşitler
+      variant: Çeşit {number}
   stats:
     info:
       stats: Arenum dünyasında attığın her adımın toplam istatistiği.
@@ -484,6 +613,8 @@ singulars:
       totalSteps: Toplam adım
       reputation: İtibar
       highestStepsIn24Hours: 24 saat içindeki en çok adım
+      lastUpdated: 'Son güncelleme: <c>{updatedAt}</c>.'
+      recordedFrom: <c>{from}</c> ile <c>{to}</c> arası kaydedildi.
   tools:
     phrases:
       emptyToolSlot: Boş alet yuvası
@@ -503,28 +634,30 @@ singulars:
   worldMap:
     phrases:
       activities: Faaliyetler
-      afterExploring: Burayı keşfettikten sonra bu konumun önemli mekanlarını görebilirsin.
+      afterExploring: Bu konumu keşfettikten sonra buradaki önemli mekanları görebilirsin.
       buildings: Yapılar
       currentLocation: Mevcut konum
       information: Bilgi
       pointsOfInterest: Önemli mekanlar
       route: Rota
-      routeRequirementsNotMet: 'Seçtiğin yoldaki rotaların karşılanmayan gereksinimleri
-        var:'
+      routeRequirementsNotMet: 'Seçtiğin rotanın karşılanmayan gereksinimleri var:'
       services: Hizmetler
-      youHaveNotExplored: Bu konumu henüz keşfetmedin. Bir kere ziyaret edince konum
-        bilgilerini görebilirsin.
+      youHaveNotExplored: Bu konumu henüz keşfetmedin. Bir kez ziyaret ettikten sonra
+        konum bilgilerini görebilirsin.
       youreHere: Şu anda bu konumdasın.
       noActivities: Bu konumda herhangi bir faaliyet bulunmuyor.
-      changeRouteWarning: Rotanı değiştirirsen mevcut seyahatini iptal ederek önceki
-        konuma geri döneceksin. Emin misin?
+      changeRouteWarning: Rotanı değiştirirsen mevcut seyahatini iptal ederek bir
+        önceki konuma geri döneceksin. Emin misin?
       routeFromTo: <location i="{fromID}"/> konumundan <location i="{toID}"/> konumuna
+      youAreInspectingFromMap: Şu anda <c>dünya haritasına bakıyorsun</c>. Etkileşime
+        geçebilmen için bu konumun kendisinde bulunurken konum ekranını kullanman
+        gerekiyor.
   treasury:
     phrases:
       openAll: Tümünü aç
       openChest: Aç
-      noItems: Açılacak bir hazinen bulunmuyor. Sandıkları çeşitli faaliyetlerden
-        elde edebilirsin.
+      noItems: Açılacak bir hazinen bulunmuyor. Çeşitli faaliyetlerden sandıklar elde
+        edebilirsin.
   jobs:
     phrases:
       rewards: Tamamlama ödülleri
@@ -547,6 +680,19 @@ singulars:
       refreshIn: 'İş panosunun yenilenmesine kalan süre:'
       openJournal: Günlüğü aç
       give: Ver
+      currentlyAcceptedJobs: Elindeki işler
+      jobAlreadyAccepted: Bu işi kabul ettin.
+      browseJobBoards: İşlere bak
+      availableJobs: Mevcut işler
+      youAreAtLocation: Bu iş panosunun konumundasın.
+      travelToJobBoard: <object id="{obj}"/> konumuna seyahat et
+      cannotAcceptMore: Daha fazla iş kabul edemezsin.
+      complete: Tamamla
+      availableJobInfo: İşleri kabul etmek veya tamamlamak için onların konumunda
+        bulunmalısın.
+      atLocation: <object id="{obj}"/> konumunda mevcut
+      cannotWithdraw: Mevcut konumunda (<object id="{obj}"/>) banka bulunmuyor. İşler
+        için bankadan eşya çekilemez.
     dialogs:
       abandonJob:
         title: İşten vazgeç
@@ -568,19 +714,23 @@ singulars:
       requirementsNotMet: Gereksinimler karşılanmıyor
       noActivitiesInLocation: <object id="{location}"/> konumunda faaliyet bulunmuyor.
       activitiesInLocation: <object id="{location}"/> konumundaki mevcut faaliyetler
-      guideTip: Günün ipucu
+      guideTip: Günlük ipucu
       requirements: Gereksinimler
       cantStartActivity: Faaliyete başlanamıyor
       travelAndStartActivity: Seyahat edip faaliyete başla
-      locationIsUnknown: Konum bilinmiyor. Ancak bu konumu keşfedersen buradaki faaliyetleri
+      locationIsUnknown: Konum bilinmiyor. Bu konumu keşfedince buradaki faaliyetleri
         görebilirsin.
+      levelActivity: <c>{level}</c> seviye <object id="{skill}"/> faaliyeti
     info:
-      consumablesUsage: Faaliyetler esnasında kullanmak için birer <c>yiyecek</c>
-        ve <c>iksir</c> seçebilirsin.
+      consumablesUsage: Faaliyet yaparken kullanmak için birer <c>yiyecek</c> ve <c>iksir</c>
+        seçebilirsin.
       noActivity: Şu anda seçilmiş bir faaliyet bulunmuyor. <hl>Aşağıdakilerden birini
-        seçebilir</hl> veya sola kaydırarak bu konumdaki mevcut her şeyi görebilirsin.
-      savedSteps: Birikmiş adımların harcanıyor. Tamamı tükenene kadar her adımın
-        iki adım sayılır.
+        seçebilir</hl> veya sola kaydırarak bu konumda mevcut olan her şeyi görebilirsin.
+      savedSteps: Birikmiş adımların harcanıyor. Tamamı tükenene kadar attığın her
+        adım iki adım yerine geçer.
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> tecrübesi
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} koleksiyonluk</c> bulunabilir
   settings:
     categories:
       gameplay:
@@ -595,16 +745,17 @@ singulars:
       dataSource:
         title: Veri Kaynağı
         thisPhone: Bu telefon
-        otherSource: Diğer kaynak
+        otherSource: Başka kaynak
         changeWarning:
           title: Veri kaynağını değiştir?
           description: Lütfen bu işlemin değişim sırasında adım kaybına yol açabileceğine
             dikkat et.
-        lastSync: 'Son senkronize: {timestamp}'
-        requiresPermissionIos: Aşağıdaki listede cihazlar görünmüyorsa, Apple Sağlık
-          > Gizlilik & Güvenlik > Sağlık >(Uygulamalar) WalkScape menüsünden uygulamaya
-          adım verilerini kullanması için izin verdiğinden ve Apple Sağlık'ın bu cihazlarda
-          son 7 gün içinde adım kaydetmiş olduğundan emin ol.
+        lastSync: 'Son senkron: {timestamp}'
+        requiresPermissionIos: Aşağıdaki listede cihazlar görünmüyorsa, Apple Health
+          içinden Ayarlar ➤ Gizlilik & Güvenlik ➤ Sağlık ➤ (Uygulamalar) WalkScape
+          menüsüne giderek uygulamaya adım verilerini kullanması için izin verdiğinden
+          ve Apple Health'in bu cihazlarda son 7 gün içinde adım kaydetmiş olduğundan
+          emin ol.
       language:
         title: Dil
       account:
@@ -614,6 +765,7 @@ singulars:
         title: Karakter
         hideSteps: Adımları gizle
         anonOnLeaderboard: Liderlik tablosunda gizle
+        exportData: Karakter verisini panoya kopyala
       accessibility:
         leftHandedMode: Solak modu
         title: Erişilebilirlik
@@ -626,13 +778,24 @@ singulars:
       locales:
         title: Dil
         changeLanguage: Dili değiştir
+        chooseALanguageInfo: Yukarıdaki düğmeye dokunarak dil seçme menüsünü aç.
     phrases:
       exitToCharacterSelection: Karakter menüsüne çık
       settings: Ayarlar
       gameVersion: Oyun versiyonu {version}
+      stepSourceInfoDesc: Aşağıdaki düğmeye basarak adım kaynakları ve birbirlerinden
+        farkları hakkında daha fazla bilgi edinebilirsin.
+      stepSourceInfo: Adım kaynağı bilgisi
+      connectionInfoIos: Cihazların yukarıdaki listede görünmüyorsa, Apple Health
+        içinden <c>Ayarlar ➤ Gizlilik & Güvenlik ➤ Sağlık ➤ (Uygulamalar) WalkScape</c>
+        menüsüne giderek WalkScape'e adım verilerini kullanması için izin verdiğinden
+        ve Apple Health'in bu cihazlarda son 7 gün içinde adım kaydetmiş olduğundan
+        emin ol.
+      connectionInfoAndroid: Akıllı saat desteği Android'e yakında gelecek. Şimdilik
+        adım kaynağı olarak yalnızca telefon kullanılabilir.
   popupBubbles:
     phrases:
-      overEncumbered: Envanterin dolup taştı.
+      overEncumbered: Envanterin tamamen dolup taştı.
       arrivedToLocation: <object id={location} /> konumuna varıldı
   abilities:
     info:
@@ -640,7 +803,7 @@ singulars:
         bazı teçhizatlar bekleme süresi karşılığında hızlı avantajlar sunan özel yetenekler
         kullanmanı sağlayabilir.
       abilitiesInfo: Yetenekler, oyunda hızlı avantajlar elde etmeni sağlayan özel
-        eylemlerdir. Yetenekleri tekrar kullanmadan önce beklemen gereken bekleme
+        eylemlerdir. Yetenekleri tekrar kullanmadan önce beklenmesi gereken bekleme
         süreleri bulunur.
     phrases:
       holdToCast: Yapmak için basılı tut
@@ -652,6 +815,9 @@ singulars:
   faction:
     phrases:
       openFaction: Diyara bak
+      unclaimedRewards: Alınmamış {count} ödül
+      repeatingReward: Tekrarlı ödül
+      nextRewardUnlocked: 'Sıradaki ödül:'
   social:
     phrases:
       friends: Arkadaşlar
@@ -687,11 +853,14 @@ singulars:
       youDontHaveAnyItems: Eşya bulunmuyor. Ya bu türde bir eşyan bulunmuyordur ya
         da arama sonuçların uygun bir eşya bulamamıştır.
       gearSetManageDesc: Kuşanmak istediğin bir teçhizat setini aşağıdaki listeden
-        seç. Yenisi oluşturmak, içe veya dışa aktarmak için <c i=0>Yönet</c> tuşunu
+        seç. Yenisini oluşturmak, içe veya dışa aktarmak için <c i=0>Yönet</c> tuşunu
         kullanabilirsin.
       gearSetsListDesc: Teçhizat setlerini buradan yönetebilirsin. <c i=0>Yenisini
         oluşturmak için</c> aşağıdaki tuşu kullan. Yeni bir teçhizat seti oluştururken
         <c i=1>mevcut kuşanılmış teçhizatını</c> da kopyalayabilirsin.
+      gearSetManageShortDesc: Teçhizat setlerinin yenisini oluşturmak, setleri içe
+        veya dışa aktarmak için <c i=0>Yönet</c> tuşunu kullanabilirsin.
+      noGearSets: Henüz hiç teçhizat seti oluşturmadın.
     errors:
       keywordError: Teçhizat setinde zaten <object id="{keyword}" /> bulunuyor
       duplicateItem: Bu eşya teçhizat setinde zaten bulunuyor
@@ -706,7 +875,7 @@ singulars:
   cooldowns:
     phrases:
       cooldownReady: 'Bekleme süresi: Hazır'
-      followingMustBeTrueToUse: 'Kullanmak için gereksinimler karşılanmıyor:'
+      followingMustBeTrueToUse: 'Kullanma gereksinimleri karşılanmıyor:'
       followingMustBeTrueToTick: 'Bekleme süresinin azalması için:'
       cooldownRemaining: 'Kalan bekleme süresi:'
       noCooldown: Bekleme süresi yok.
@@ -733,26 +902,35 @@ singulars:
       traveling: Seyahat
     phrases:
       queue: Sıra
-      queuedActions: Sıralanan faaliyetler
+      queuedActions: Sıralanan eylemler
       noGearSetFound: Seçilmiş teçhizat seti bulunamadı, silmiş olabilir misin?
       activityInLocation: <object id="{location}"/> konumunda <object id="{activity}"/>
       noPathFound: Hedefe giden bir yol bulunamadı.
+      travelingTo: <object id="{from}"/> konumundan <object id="{to}"/> konumuna
+      untilInventoryFull: Envanter dolana kadar yapılıyor
+      switchingToGearSet: <c>{name}</c> teçhizat seti kuşanılıyor
     suggestedOptions:
       startCrafting: Üretim
       startTraveling: Seyahat
       startActivity: Faaliyet
     options:
       depositUnlockedItems:
-        text: Açılan eşyaları yatır
+        text: Edinilmiş eşyaları yatır
+        desc: Geçtiğin konumlardan birinde banka bulunuyorsa envanterindeki edinilmiş
+          eşyaları bankaya yatır.
       removeFromQueue:
         text: Sıradan çıkar
+        desc: Bu eylem ile takip eden bütün eylemleri sıradan çıkar.
       switchGearSet:
-        text: Teçhizat setini kuşan
+        text: Teçhizat seti kuşan
         desc: Bu eyleme başlamadan önce seçilmiş teçhizat setini kuşan.
       withdrawGearSet:
         desc: Geçtiğin konumlardan birinde banka bulunuyorsa bir teçhizat setini bankadan
           çek.
         text: Teçhizat setini çek
+      cancelGearSetSwitch:
+        text: Teçhizat seti kuşanmayı iptal et
+        desc: Bu eylem için seçilmiş teçhizat setini kuşanmayı iptal et.
     suggestions:
       activity:
         onceInventoryIsFull: Envanterin dolunca bir şey yapmak ister misin?
@@ -760,11 +938,24 @@ singulars:
           misin?
       crafting:
         onceAllItemsAreCrafted: Bütün eşyalar üretilince bir şey yapmak ister misin?
+        onceCertainRarityIsCrafted: Belli bir nadirlikteki eşyayı üretince ya da bütün
+          malzemeleri bitirince bir şey yapmak ister misin?
+      traveling:
+        onceYouArriveTo: <object id="{location}"/> konumunda sıraya eylem eklensin
+          mi?
   locales:
     phrases:
       language: Dil
       chooseALanguage: Aşağıdaki listeden bir dil seç.
       percentExplanation: '"%" ne kadarının tercüme edildiğini gösterir.'
+      grammaticalGenderExplanation: Seçilmiş cinsiyetin oyun arayüzünün sana nasıl
+        hitap edeceğini etkiler.
+      selectGrammaticalGender: Cinsiyetini seç
+      youCanChangeAnyTime: Oyun dilini ne zaman istersen<c>Oyun Ayarlarından</c> değiştirebilirsin.
+      helpToTranslate: WalkScape is <c>community translated</c>. Help us translate
+        the game to more languages and to expand current translations by visiting
+        <a href="https://wiki.walkscape.app/wiki/Localization">Translation Guide</a>.
+        Help is much appreciated! ❤️
   whileAway:
     phrases:
       actionCancelled: Eylem iptal edildi
@@ -775,3 +966,23 @@ singulars:
       startedActivityNoLocation: <object id="{activity}"/> faaliyetine başlandı
       startedNewActivity: <object id="{location}"/> konumunda <object id="{activity}"/>
         faaliyetine başlandı
+      switchedToGearSet: <c>{name}</c> teçhizat seti kuşanıldı
+      fromProc: <c>{proc}</c> kaynaklı
+      fromSource: <object id="{source}"/> kaynaklı
+      fromAttribute: '{attribute} niteliğinden kaynaklı'
+      none: Hiçbir şey
+  announcements:
+    info:
+      noMoreAnnouncements: Duyuruların sonuna ulaştın! Gösterecek başka duyuru kalmadı.
+      noAnnouncements: Şu anda hiç duyuru bulunmuyor.
+      announcementInfo: Burada geliştiricilerin <c>duyurularını</c> bulabilirsin.
+        Geliştirici günlükleri, güncelleme notları ve sistem duyurularını takip ederek
+        oyunun ilerlemesini ve sunucuların kapalı olacağı zamanları takip edebilirsin!
+    phrases:
+      unread: Okunmamış
+      new: Yeni
+  rumors:
+    phrases:
+      backToRumors: Söylentilere dön
+      unlockedWalkpediaEntries: Walkpedi kayıtları açıldı
+      rumorsFromCharacter: <c>{characterName}</c> kişisinden söylentiler

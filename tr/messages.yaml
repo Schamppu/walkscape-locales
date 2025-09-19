@@ -77,6 +77,16 @@ singulars:
           cihazının detaylarıyla birlikte Discord üzerinden geliştiricilere bildir.
           Oyunu yeniden başlatarak içerik başarıyla indirilecek mi diye bakmayı da
           deneyebilirsin.
+      userBannedTemporarily:
+        text: WalkScape'ten <c i=0>{bannedUntil}</c> tarihine kadar men edildin.
+        title: WalkScape'ten geçici olarak men edildin
+        noTimeFound: Bitiş zamanı bulunamadı, lütfen {email} adresine e-posta göndererek
+          bize ulaş.
+      userBannedPermanently:
+        title: WalkScape'ten kalıcı olarak men edildin
+        text: WalkScape'ten kalıcı olarak men edildin. Bunun bir hata olduğunu düşünüyor
+          ve itiraz etmek istiyorsan, {email} adresine bir e-posta göndererek bize
+          ulaşabilirsin.
     gameError:
       initializingGameFailed:
         text: Oyun uygulaması başlatılamadı. Lütfen bu durumu hatanın ve cihazının
@@ -92,6 +102,14 @@ singulars:
         text: Oyun uygulaması adımları yükleyemedi. Lütfen bu durumu hatanın ve cihazının
           detaylarıyla birlikte Discord üzerinden geliştiricilere bildir. Oyunu yeniden
           başlatarak adımlar başarıyla yüklenecek mi diye bakmayı da deneyebilirsin.
+      stepsNotLoadedDueToBan:
+        text: WalkScape'ten men edilmiş olduğun için adımların yüklenemedi. Şu andan
+          itibaren adımların normal bir şekilde sayılacak.
+        title: Men edilmiş olduğun için adımlar yüklenemedi
+      stepLoadingInterruped:
+        title: Adım yüklemesi yarıda kesildi
+        text: Adımlar yüklenirken oyun arka plana alındı veya işlem yarıda kesildi.
+          Lütfen adımlarını yüklemek için oyunu tekrar açmayı dene.
     activityCancelled:
       title: Faaliyet iptal edildi
       stepsAreInfinite: Gereksinimlerini artık karşılamadığın için mevcut faaliyet
@@ -117,6 +135,14 @@ singulars:
       title: Devam eden çalışma
       text: Bu özellik hala geliştirme aşamasında ve pek çok işlevi <hl>henüz mevcut
         değil</hl>. Yine de deneyebilir ve tamamlandığı zaman tekrar göz atabilirsin!
+    stepsNotCountedRealTime:
+      title: Adımlar gerçek zamanlı sayılmıyor
+      textIOS: Adım kaynağı olarak <icon i="Phone small" /> <c>Telefon</c>'dan başka
+        bir şey kullanırken, adımlar gerçek zamanlı olarak sayılmaz. Cihazına bağlı
+        olarak, adımlarını başka bir uygulama kullanarak veya Apple Health'i açarak
+        eşlemen gerekebilir. Bu mesaj en az <c>5000</c> adım eşlediğin zaman kaybolacak.
+        Adım kaynağını ne zaman istersen <c>Ayarlar</c>'dan <icon i="Phone small"
+        /> <c>Telefon</c>'una çevirebilirsin.
   popups:
     achievementUnlocked:
       achievementPoints: '{points} başarım puanı'
@@ -194,6 +220,43 @@ singulars:
       withdrawFailed:
         title: Çekme işlemi başarısız
         text: Çekme işlemi başarısız. Lütfen tekrar dene.
+      buybackFailed:
+        text: Geri satın alma başarısız oldu. Envanterinde geri satın almayı tamamlamak
+          için gerekli eşyalar bulunmuyor.
+        title: Geri satın alma başarısız oldu
+      cannotQueueMoreThanOneActivity:
+        text: Birden fazla seyahat eylemini sıraya koyabilirsin ancak aynı anda yalnızca
+          bir faaliyeti sıraya koyabilirsin. Lütfen başka bir faaliyeti sıraya koymadan
+          önce mevcut faaliyeti tamamla veya iptal et.
+        title: Daha fazla faaliyet sıraya konulamaz
+      noPathFound:
+        title: Seyahat rotası bulunamadı
+        text: Seçilmiş konuma seyahat rotası bulunamadı. Seçilmiş konuma seyahat etmeye
+          bir engel bulunmadığına emin ol.
+      queueLimitReached:
+        title: Sıra limitine ulaşıldı
+        text: Aynı anda 3 eylemden fazlasını sıraya koyamazsın. Lütfen yenilerini
+          sıraya koymadan önce sıradaki eylemleri tamamla veya iptal et.
   confirmations:
     changingStepSource:
       title: Adım kaynağını değiştir?
+      text: Henüz eşlenmeyen adımların, adım kaynağını değiştirirken kaybolabilir.
+        Adım kaynağını değiştirmeden önce adımlarını eşlediğinden emin ol.
+      lastSyncText: 'Son adım eşleme zamanı: {time}.'
+      neverSyncedText: Adımların hiç eşlenmemiş.
+    changeRoute:
+      text: Rotanı değiştirirsen mevcut seyahatini iptal ederek bir önceki konuma
+        geri döneceksin. Emin misin?
+      title: Rotayı değiştir?
+    travelAndStartActivity:
+      title: Seyahat ettikten sonra faaliyete başla?
+      text: Bu faaliyete başlamak için doğru konumda değilsin. Doğru konuma seyahat
+        edip faaliyete başlamak ister misin?
+    editCurrentRouteAndResetQueue:
+      title: Mevcut rotayı değiştirip sırayı sıfırla?
+      text: Mevcut seyahat rotanı seçilmiş konuma doğru değiştirip takip eden sıradaki
+        bütün eylemleri silmek istiyor musun?
+    doYouWantToClaimExperience:
+      title: Tecrübe ödülünü almak istediğine emin misin?
+      text: '"Tecrübe ödülü almadan önce uyar" ayarını açmışsın. Tecrübe ödülünü almak
+        istediğine emin misin?'

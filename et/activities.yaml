@@ -38,10 +38,10 @@ singulars:
           – selleks peaksid kindlasti superkangelane olema."
       branchTrimming:
         name: 'Okste kärpimine'
-        desc: 'Pinna lähedalt võsa eemaldamine hoiab ära selle kandi metsatulekahjud.'
+        desc: 'Pinna lähedalt võsa eemaldamine hoiab ära siin kandis metsatulekahjusid.'
     syrenthia:
       coralCutting:
-        name: 'Koralli lõikamine'
+        name: 'Koralli raiumine'
         desc: "Sind ümbritsevad korallid, mõned neist sama suured kui väiksed puud.
           Sa virutad oma kirvega vastu nende kände ja raiud neid ükshaaval maha. Erinevalt
           maapinnal olevatest puudest, ei kuku nad maha, vaid hoopis ulbivad üles."
@@ -67,249 +67,337 @@ singulars:
         name: 'Kaevanda sütt'
         desc: ""
       mineTarsiliumOre:
-        name: ''
+        name: 'Kaevanda tarsiiliumimaaki'
         desc: ''
       mineFarganiteOre:
-        name: ''
+        name: 'Kaevanda farganiidimaaki'
         desc: ''
       mineTarsiliumOreUnderwater:
-        name: ''
+        name: 'Kaevanda tarsiiliumimaaki (Veealune)'
         desc: ""
     jarvonia:
       goldPanning:
-        name: ''
+        name: 'Kulla sõelumine'
         desc: ''
       spelunking:
-        name: ''
+        name: 'Koopamatkamine'
         desc: ''
       surfaceSaltMining:
-        name: ''
+        name: 'Soola avakaevandamine'
         desc: ''
       stoneQuarrying:
-        name: ''
-        desc: ''
+        name: 'Kivi avakaevandamine'
+        desc: 'Kivi ja kalju!'
+      minePitTinOre:
+        name: Tina avakaevandamine
+      minePitCopperOre:
+        name: Vase avakaevandamine
     syrenthia:
       caveDiving:
-        name: ''
+        name: 'Koopas sukeldumine'
         desc: ''
       mineVolcanicRock:
-        name: ''
+        name: 'Kaevanda vulkaaniti'
         desc: ''
       mineTarsiliumOre:
-        name: ''
+        name: 'Kaevanda tarsiiliumimaaki'
         desc: ''
       fossilMining:
-        name: ''
+        name: 'Fossiilide kaevandamine'
         desc: ''
+    gdte:
+      underwaterAqueductDigging:
+        name: Veealuse akvedukti kaevandamine
   fishing:
     jarvonia:
       pondFishing:
-        name: ''
+        name: 'Tiigikalastus'
         desc: ''
       lakeFishing:
-        name: ''
+        name: 'Järvekalapüük'
         desc: ''
       seaFishingNet:
-        name: ''
+        name: 'Merekalapüük (Võrk)'
         desc: ''
       seaFishingRod:
-        name: ''
+        name: 'Merekalapüük (Ritv)'
         desc: ''
       seaFishingCage:
-        name: ''
+        name: 'Merekalapüük (Püünis)'
         desc: ''
+      cleaningTheHolyFountain:
+        name: Püha purskkaevu puhastamine
     gdte:
       magnetFishing:
-        name: ''
+        name: 'Magnetpüük'
         desc: ''
+      bogFishingSpear:
+        name: Sookalapüük (Oda)
+      bogFishingNet:
+        name: Sookalapüük (Võrk)
     syrenthia:
       seaFishingSpear:
-        name: ''
+        name: 'Merekalapüük (Oda)'
         desc: ''
       predatorHunting:
-        name: ''
+        name: 'Kiskjapüük (Oda)'
         desc: ''
   foraging:
     global:
       litterLooting:
-        name: ''
+        name: 'Prügikorjamine'
         desc: ''
     jarvonia:
       forestForaging:
-        name: ''
+        name: 'Metsakorilus'
         desc: ""
       cliffForaging:
-        name: ''
+        name: 'Kaljukorilus'
         desc: ''
       plainsForaging:
-        name: ''
+        name: 'Tasandikukorilus'
         desc: ''
       coastForaging:
-        name: ''
+        name: 'Rannakorilus'
         desc: ''
       seashellSearching:
-        name: ''
+        name: 'Merikarpide otsimine'
         desc: ''
       glacierForaging:
-        name: ''
+        name: 'Liustikukorilus'
         desc: ''
       caveForaging:
-        name: ''
+        name: 'Kevadine koopakorilus'
         desc: ""
       hornOfRespiteTreasureHunt:
-        name: ''
+        name: 'Aardejaht'
         desc: ""
     gdte:
       butterflyCatching:
-        name: ''
+        name: 'Liblikate püüdmine'
         desc: ''
       trellinDumpsterDiving:
-        name: ''
+        name: 'Trellini prügi sorimine'
         desc: ''
       erdwiseDumpsterDiving:
-        name: ''
+        name: 'Erdweissi prügi sorimine'
         desc: ''
       forestForaging:
-        name: ''
+        name: 'Metsakorilus'
         desc: ""
       plainsForaging:
-        name: ''
+        name: 'Tasandikukorilus'
         desc: ""
       swampForaging:
-        name: ''
+        name: 'Sookorilus'
         desc: ''
+      summerCaveForaging:
+        name: Suvine koopakorilus
     syrenthia:
       seashellForaging:
-        name: ''
+        name: 'Merikarpide korjamine'
         desc: ''
       merfolkFarmForaging:
-        name: ''
+        name: 'Näkifarmi korilus'
         desc: ""
       kelpForaging:
-        name: ''
+        name: 'Adru korilus'
         desc: ''
       wreckDiving:
-        name: ''
+        name: 'Vrakisukeldumine'
         desc: ""
   agility:
     global:
       traveling:
-        name: ''
-        desc: ''
+        name: 'Rändamine'
+        desc: 'Rändamine: <object id="{from}"/> -><object id="{to}"/>.'
       sledding:
-        name: ''
+        name: 'Kelgutamine'
         desc: ""
       guardDuty:
-        name: ''
+        name: 'Valveteenistus'
         desc: ""
       sandcastleBuilding:
-        name: ''
+        name: 'Liivalossi ehitamine'
         desc: ""
       scientificTinkering:
-        name: ''
+        name: 'Teaduslik nokitsemine'
         desc: ''
       birdWatching:
-        name: ''
+        name: 'Linnuvaatlus'
         desc: ''
       frisbeeGolfingBeginner:
-        name: ''
+        name: 'Jarvoonia taevakettarada'
         desc: ""
       frisbeeGolfingIntermediate:
-        name: ''
+        name: 'TESHi taevakettarada'
         desc: ""
       frisbeeGolfingDifficult:
-        name: ''
+        name: 'Taevakettagolf (Keeruline)'
         desc: ''
       crossCountrySkiingBeginner:
-        name: ''
+        name: 'Klassikaline suusatamine'
         desc: ''
       crossCountrySkiingIntermediate:
-        name: ''
+        name: 'Uisusuusatamine'
         desc: ''
       crossCountrySkiingDifficult:
-        name: ''
+        name: 'Mäest alla suusatamine'
         desc: ''
+      exploreArea:
+        name: Avasta ala
     jarvonia:
       mountainClimbingBeginner:
-        name: ''
+        name: 'Mägironimine'
         desc: ''
       mountainClimbingIntermediate:
-        name: ''
+        name: 'Ahelikul ukerdamine'
         desc: ''
       rooftopJumpingBeginner:
-        name: ''
+        name: 'Hüttidel hüppamine'
         desc: ""
       blackEyePeakSearchTeam:
-        name: ''
+        name: 'Otsingurühm'
         desc: ''
       blackEyePeakRescueTeam:
-        name: ''
+        name: 'Päästemeeskond'
         desc: ''
     gdte:
       kayaking:
-        name: ''
+        name: 'Süstasõit'
         desc: ""
       swimmingBeginner:
-        name: ''
+        name: 'Pinnal ujumine'
         desc: ""
       swimmingIntermediate:
-        name: ''
+        name: 'Kehasurfamine'
         desc: ""
       rooftopJumpingIntermediate:
-        name: ''
+        name: 'Majadel hüppamine'
         desc: ''
+      exploreBogBottom:
+        name: Avasta soopõhja
+      treetopJumping:
+        name: Puulatvadel hüppamine
     syrenthia:
       swimmingExpert:
-        name: ''
+        name: 'Veealune ujumine'
         desc: ''
       merfolkDancing:
-        name: ''
+        name: 'Näkkidega tantsimine'
         desc: ""
+      exploreUnderwaterCave:
+        name: Avasta veealust koobast
+    bats:
+      springBatTracking:
+        name: Kevadine nahkhiirejälitus
   cooking:
     jarvonia:
       soupKitchenVolunteering:
-        name: ''
+        name: 'Supiköögis vabatahtlikuna töötamine'
         desc: ''
+      vegetableChopping:
+        name: Köögiviljade lõikamine
     gdte:
       wineGrapeStomping:
-        name: ''
+        name: 'Veiniviinamarjade trampimine'
         desc: ''
   smithing:
     jarvonia:
       horseshoeMaking:
-        name: ''
+        name: 'Hobuseraudade tegemine'
         desc: ""
+      flameStoking:
+        name: Tule õhutamine
+        desc: Kui Helga tilistab kellukest, õhutad sina tuld. Elu on lihtne.
   carpentry:
     jarvonia:
       shipRepairBeginner:
-        name: ''
+        name: 'Prikkide parandus'
         desc: ''
       woodCarving:
-        name: ''
+        name: 'Puunikerdus'
         desc: ''
     gdte:
       shipRepairIntermediate:
-        name: ''
+        name: 'Kere parandus'
         desc: ''
+      underwaterAqueductConstruction:
+        name: Veealuse akvedukti ehitamine
   crafting:
     jarvonia:
       iceSculpting:
-        name: ''
+        name: 'Jääskulptuuride raiumine'
         desc: ''
       tinkering:
-        name: ''
+        name: 'Nokitsemine'
         desc: ""
+      apprenticeForLoif:
+        name: Õpipoisitöö Loifi juures
     syrenthia:
       underwaterBasketWeaving:
-        name: ''
+        name: 'Veealune korvipunumine'
         desc: ''
   misc:
     emergencySwimEscape:
-      name: ''
+      name: 'Hädapõgenemine ujudes'
       desc: ""
+    gdte:
+      ventureIntoTheWoods:
+        name: Metsa seiklemine
+      ventureIntoTheHideout:
+        name: Peidupaika seiklemine
+      swampEmergencySwimEscape:
+        name: Hädapõgenemine ujudes (Soo)
+      swampEmergencyDarkEscape:
+        name: Hädapõgenemine pimedas (Soo)
+      ventureIntoTheBog:
+        name: Sohu seiklemine
+      runForYourLife:
+        name: Jookse elu eest
   idle:
     name: Tegevusetu
-    desc: Sa ei tee midagi. Su sammud lähevad Salvestatud Sammudeks.
+    desc: Sa ei tee midagi. Su sammud muutuvad Salvestatud Sammudeks.
   unknown:
     name: Teadmatu
     desc: Sa teed midagi, aga mäng ei tea mis see on.
+  hunting:
+    gdte:
+      invasiveSpeciesHunting:
+        name: Sissetungivate võõrliikide jahtimine
+      lizardHunting:
+        name: Sisalikujaht
+      halfmawHunt:
+        name: Poollõuajaht
+    global:
+      birdhouseTrappingBeginner:
+        name: Linnumajadega püünisjaht (Algaja)
+      crabTracking:
+        name: Krabide jälitus
+      birdhouseTrappingIntermediate:
+        name: Linnumajadega püünisjaht (Keskastme)
+      boxTrapping:
+        name: Karbiga püünisjaht
+    jarvonia:
+      wolfHunting:
+        name: Hundijaht
+      bearHunting:
+        name: Karujaht
+      deerHunting:
+        name: Hirvejaht
+      rabbitTracking:
+        name: Jäneste jälitus
+    syrenthia:
+      driftNetHunting:
+        name: Triivvõrgujaht
+  tailoring:
+    gdte:
+      sailRepairIntermediate:
+        name: Purjeparandus (Keskastme)
+    jarvonia:
+      sailRepairBeginner:
+        name: Purjeparandus (Algaja)
+  trinketry:
+    gdte:
+      antiqueMarketAssessor:
+        name: Antiigituru hindaja
