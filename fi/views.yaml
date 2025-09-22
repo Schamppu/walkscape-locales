@@ -113,6 +113,21 @@ maps:
       'stepDataTime': Ajanjakso
     custom:
       'dataSource': Askelten lähde
+    leaderboardType:
+      'totalXp': <c>Kokemus</c> yhteensä
+      'totalLevel': Kokonais<c>taso</c>
+      'totalSteps': <c>Askeleet</c> yhteensä
+      'agility': <c>Ketteryys</c>
+      'carpentry': <c>Puutyöt</c>
+      'cooking': <c>Ruoanlaitto</c>
+      'crafting': <c>Käsityöt</c>
+      'fishing': <c>Kalastus</c>
+      'foraging': <c>Poiminta</c>
+      'mining': <c>Louhinta</c>
+      'smithing': <c>Taonta</c>
+      'trinketry': <c>Korutyöt</c>
+      'woodcutting': <c>Puunhakkuu</c>
+      'achievementPoints': <c>Saavutuspisteet</c>
   character:
     stepsTime:
       'hourly': Askeleet tunneittain
@@ -304,6 +319,7 @@ singulars:
         käsityöhön.
       showingRecipiesThatUses: Näytetään reseptit, joissa käytetään
       requiresService: Vaatii palvelun.
+      allSkills: Kaikki taidot
     errors:
       notSameQuality: Kaikkien materiaalien on oltava joko oivia tai normaaleja
       noService: Palveluvaatimus ei täyty
@@ -566,27 +582,27 @@ singulars:
         synkronointi voi tapahtua viiveellä.\n\n<bp /> Sinun on annettava käyttöoikeus
         tietojen lukemiseksi Apple Healthista.\n\n<bp /> Vain kellosi mittaamat askeleet
         näkyvät pelissä.\n"
-      watch: "WalkScape lukee<icon i=\"Watch small\" /> <c>kellosi</c> synkronoimat
-        askeleet <c>Apple Healthista</c>. Kellosi valmistajasta riippuen, on mahdollista
-        että sinun täytyy synkronoida askeleesi eri sovelluksesta <c>Apple Healthiin</c>.\n\
-        \ \n<bp /> <c i=2>On mahdollista, että sinun tulee synkronoida askeelesi Apple
-        Healthiin muista sovelluksista</c> jotta askeleesi rekisteöityvät WalkScapeen.\n\
-        \ \n<bp /> Askelten synkronointi <c>Apple Healthiin</c> riippuu kellosi valmistajasta.
-        Tämä voi vaatia teknistä osaamista.\n\n<bp /> Sinun on annettava käyttöoikeus
-        Apple Health -datan lukemiseksi.\n\n<bp /> Vain kellosi mittaamat askeleet
-        näkyvät pelissä.\n"
+      watch: "WalkScape lukee<icon i=\"Watch small\" /> <c>kellosi</c> mittaamat askeleet
+        <c>Apple Healthista</c>. Kellosi valmistajasta riippuen on mahdollista että
+        sinun täytyy tuoda askeleesi eri sovelluksesta <c>Apple Healthiin</c>.\n\n\
+        <bp /> <c i=2>On mahdollista, että sinun tulee tuoda askeelesi Apple Healthiin
+        muista sovelluksista</c> jotta askeleesi näkyvät WalkScapessa.\n\n<bp /> Askelten
+        tuonti <c>Apple Healthiin</c> riippuu kellosi valmistajasta. Tämä voi vaatia
+        jonkin verran lisäsäätöä ja teknistä osaamista.\n\n<bp /> Sinun on annettava
+        WalkScapelle oikeus lukea tietoja Apple Healthista.\n\n<bp /> Vain kellosi
+        mittaamat askeleet näkyvät pelissä.\n"
       phone: "<icon i=\"Phone small\" /> <c>Puhelin</c> on WalkScapen suositeltu askeltenmittauksen
         lähde. Vaativampiin urheilusuoritukseen suosittelemme käyttämään <icon i=\"\
         Watch small\" /> <c>kelloa</c> askelten mittauksen lähteenä. Suurimmalle osalle
         pelaajista <icon i=\"Phone small\" /> <c>puhelin</c> on paras vaihtoehto.\n\
-        \ \n<bp /> <c i=1>Askeleesi päivittyvät peliin reaaliajassa.</c>\n\n<bp />
-        Jotta askeleesi rekisteröityvät, <c>sinun on pidettävä puhelin mukanasi</c>.
-        Tämä voi olla vaikeaa vaativampia urheilusuorituksia tehdessä.\n"
+        \n<bp /> <c i=1>Askeleesi päivittyvät peliin reaaliajassa.</c>\n\n<bp /> Jotta
+        askeleesi rekisteröityvät, <c>sinun on pidettävä puhelin mukanasi</c>. Tämä
+        voi olla vaikeaa vaativampia urheilusuorituksia tehdessä.\n"
       samsungHealth: "WalkScape lukee askeleesi <c>Samsung Healthin</c> kautta. Askeleesi
         päätyvät peliin, tulivat ne sitten minkä tahansa Samsung Health -yhteensopivan
         <icon i=\"Watch small\" /><c>puettavan laitteesi</c> tai puhelimesi kautta.\n\
-        \ \n<bp /> <c i=2>Sinun pitää tuoda puettavien laitteidesi kirjaamat askeleet
-        Samsung Healthiin</c>, jotta askeleesi näkyvät WalkScapessa.\n \n<bp /> Sinun
+        \n<bp /> <c i=2>Sinun pitää tuoda puettavien laitteidesi kirjaamat askeleet
+        Samsung Healthiin</c>, jotta askeleesi näkyvät WalkScapessa.\n\n<bp /> Sinun
         on annettava lisäksi käyttöoikeus WalkScapelle, että se saa lukea tietoja
         <c>Samsung Healthiltä</c>, jotta saat laitteesi kytkettyä.\n\n<bp /> Vain
         Samsung Healthin raportoimat askeleet näkyvät pelissä."
@@ -594,13 +610,12 @@ singulars:
         askeleesi siirtyisivät <icon i=\"Watch small\" /><c>kellostasi</c> peliin,
         sinun tulee asentaa kolmannen osapuolen sovellus, joka tuo askeleesi <c>Health
         Connectiin</c>, kuten esimerkiksi FitBit, Garmin Connect tai Galaxy Health.\n\
-        \ \n<bp /> <c i=2>Sinun pitää tuoda askeleesi Health Connectin saataville
-        muiden sovellusten kautta</c>, jotta askeleesi näkyvät WalkScapessa.\n \n\
-        <bp /> Askelten tuonti <c>Health Connectiin</c> riippuu kellosi valmistajasta.
-        Tämä voi vaatia lisäsäätöä ja teknistä osaamista.\n\n<bp /> Sinun on annettava
-        lisäksi käyttöoikeus WalkScapelle, että se saa lukea tietoja <c>Health Connectistä</c>,
-        jotta saat kellosi kytkettyä.\n\n<bp /> Vain kellosi mittaamat askeleet näkyvät
-        pelissä."
+        \n<bp /> <c i=2>Sinun pitää tuoda askeleesi Health Connectin saataville muiden
+        sovellusten kautta</c>, jotta askeleesi näkyvät WalkScapessa.\n\n<bp /> Askelten
+        tuonti <c>Health Connectiin</c> riippuu kellosi valmistajasta. Tämä voi vaatia
+        lisäsäätöä ja teknistä osaamista.\n\n<bp /> Sinun on annettava lisäksi käyttöoikeus
+        WalkScapelle, että se saa lukea tietoja <c>Health Connectistä</c>, jotta saat
+        kellosi kytkettyä.\n\n<bp /> Vain kellosi mittaamat askeleet näkyvät pelissä."
   rewards:
     phrases:
       alreadyClaimed: Jo lunastettu
@@ -723,9 +738,15 @@ singulars:
       stepSourceInfoDesc: Näe enemmän tietoa eri askelten mittauksen lähteistä ja
         niiden välisistä eroista painamalla ylläolevaa painiketta.
       stepSourceInfo: Tietoja askelten lähteistä
-      connectionInfoAndroid: Älykellotuki on tulossa pian Androidille. Toistaiseksi
-        vain puhelinta tuetaan askelten mittauksen lähteenä.
+      connectionInfoAndroid: Jos puettavat laitteesi eivät näy yllä, varmista, että
+        olet antanut WalkScapelle luvan lukea tietoja Health Connectista - katso puhelimen
+        <c>Asetukset ➤ Tietoturva & Yksityisyys ➤ Yksityisyys ➤ Health Connect ➤ Sovellusten
+        oikeudet </c>, ja että Health Connect näkee laitteiden mittaamia askeleita
+        viimeisen 7 päivän ajalta.
       gameVersion: Peliversio {version}
+      comingSoonToAndroid: Älykellotuki Androidille on tulossa pian. Tällä hetkellä
+        vain puhelimen itse laskemat askeleet näkyvät pelissä.
+      updateAvailableSources: Päivitä saatavilla olevat lähteet
   worldMap:
     phrases:
       activities: Aktiviteetit
