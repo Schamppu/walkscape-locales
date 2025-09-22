@@ -38,12 +38,26 @@ singulars:
       textIOS: Während du eine andere Schrittquelle als dein <icon i="Phone small"
         /> <c>Telefon</c> verwendest, werden Schritte nicht in Echtzeit gezählt. Je
         nach deinem Wearable musst du deine Schritte möglicherweise manuell über eine
-        andere App synchronisieren oder Apple Health öffnen, um deine Schritte ins
-        Spiel zu übertragen. Diese Nachricht verschwindet, sobald du mindestens <c>5000</c>
-        Schritte von deinem Wearable synchronisiert hast. Du kannst deine Schrittquelle
-        jederzeit in den <c>Einstellungen</c> auf <icon i="Phone small" /> <c>Telefon</c>
-        ändern.
+        andere App synchronisieren oder <c>Apple Health</c> öffnen, um deine Schritte
+        ins Spiel zu übertragen. Diese Nachricht verschwindet, sobald du mindestens
+        <c>5000</c> Schritte von deinem Wearable synchronisiert hast. Du kannst deine
+        Schrittquelle jederzeit in den <c>Einstellungen</c> auf <icon i="Phone small"
+        /> <c>Telefon</c> ändern.
       title: Die Schrittzählung erfolgt nicht in Echtzeit
+      textAndroid: Wenn du eine andere Quelle als ein <icon i="Phone small" /> <c>Handy</c>
+        für deine Schritte nutzt, werden diese nicht in Echtzeit gezählt. Abhängig
+        von deinem Wearable musst du deine Schritte möglicherweise manuell über eine
+        <c>andere App</c> mit dem Spiel synchronisieren. Diese Nachricht verschwindet,
+        sobald du mindestens <c>5000</c> Schritte von deinem Wearable synchronisiert
+        hast. Du kannst in den <c>Einstellungen</c> auf <icon i="Phone small" /> <c>Handy</c>
+        als Schrittquelle wechseln.
+      textSamsungHealth: Wenn du eine andere Quelle als ein <icon i="Phone small"
+        /> <c>Handy</c> für deine Schritte nutzt, werden diese nicht in Echtzeit gezählt.
+        Du musst eventuell <c>Samsung Health</c> öffnen, um deine Schritte mit dem
+        Spiel zu synchronisieren, und es kann zu Verzögerungen kommen. Diese Nachricht
+        verschwindet, sobald du mindestens <c>5000</c> Schritte von deinem Wearable
+        synchronisiert hast. In den <c>Einstellungen</c> kannst du <icon i="Phone
+        small" /> <c>Handy</c> als Schrittquelle auswählen.
   popups:
     inactiveSteps:
       stepsWhileInactive: Schritte, während das Spiel inaktiv war
@@ -157,7 +171,9 @@ singulars:
           um zu sehen, ob der Inhalt erfolgreich heruntergeladen wird.
       userBannedTemporarily:
         title: Du wurdest vorübergehend von WalkScape gesperrt
-        text: Du wurdest vorübergehend von WalkScape gesperrt bis <c i=0>{bannedUntil}</c>.
+        text: Du wurdest vorübergehend von WalkScape bis {bannedUntil} gebannt. Wenn
+          du gegen diese Entscheidung Einspruch einlegen möchtest, kannst du uns eine
+          E-Mail an {email} senden.
         noTimeFound: Kein Endzeitpunkt gefunden. Bitte kontaktiere uns per E-Mail
           an {email}
       userBannedPermanently:
@@ -190,6 +206,10 @@ singulars:
         title: Laden der Schritte unterbrochen
         text: Das Spiel wurde beim Laden der Schritte in den Hintergrund verschoben
           oder unterbrochen. Bitte öffne das Spiel erneut, um die Schritte zu laden.
+      couldNotGetServerTime:
+        title: Konnte Serverzeit nicht abrufen
+        text: Der Spiele-Client konnte die Serverzeit nicht abrufen. Bitte überprüfe
+          deine Internetverbindung und versuche es erneut.
     activityCancelled:
       title: Aktivität abgebrochen
       stepsAreInfinite: Die aktuelle Aktivität wurde gestoppt, da du die Anforderungen

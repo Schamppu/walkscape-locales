@@ -78,7 +78,9 @@ singulars:
           Oyunu yeniden başlatarak içerik başarıyla indirilecek mi diye bakmayı da
           deneyebilirsin.
       userBannedTemporarily:
-        text: WalkScape'ten <c i=0>{bannedUntil}</c> tarihine kadar men edildin.
+        text: WalkScape'ten <c i=0>{bannedUntil}</c> tarihine kadar men edildin. Bu
+          karara itiraz etmek istersen, {email} adresine bir e-posta göndererek bize
+          ulaşabilirsin.
         title: WalkScape'ten geçici olarak men edildin
         noTimeFound: Bitiş zamanı bulunamadı, lütfen {email} adresine e-posta göndererek
           bize ulaş.
@@ -110,6 +112,10 @@ singulars:
         title: Adım yüklemesi yarıda kesildi
         text: Adımlar yüklenirken oyun arka plana alındı veya işlem yarıda kesildi.
           Lütfen adımlarını yüklemek için oyunu tekrar açmayı dene.
+      couldNotGetServerTime:
+        title: Sunucu zamanına ulaşılamadı
+        text: Oyun uygulaması sunucu zamanına ulaşamadı. Lütfen internet bağlantını
+          kontrol et ve tekrar dene.
     activityCancelled:
       title: Faaliyet iptal edildi
       stepsAreInfinite: Gereksinimlerini artık karşılamadığın için mevcut faaliyet
@@ -138,11 +144,23 @@ singulars:
     stepsNotCountedRealTime:
       title: Adımlar gerçek zamanlı sayılmıyor
       textIOS: Adım kaynağı olarak <icon i="Phone small" /> <c>Telefon</c>'dan başka
-        bir şey kullanırken, adımlar gerçek zamanlı olarak sayılmaz. Cihazına bağlı
-        olarak, adımlarını başka bir uygulama kullanarak veya Apple Health'i açarak
-        eşlemen gerekebilir. Bu mesaj en az <c>5000</c> adım eşlediğin zaman kaybolacak.
-        Adım kaynağını ne zaman istersen <c>Ayarlar</c>'dan <icon i="Phone small"
-        /> <c>Telefon</c>'una çevirebilirsin.
+        bir şey kullanırken, attığın adımlar gerçek zamanlı olarak sayılmaz. Cihazına
+        bağlı olarak, adımlarını başka bir uygulama kullanarak veya <c>Apple Health</c>'i
+        açarak eşlemen gerekebilir. Bu mesaj cihazından en az <c>5000</c> adım eşlediğin
+        zaman kaybolacak. Adım kaynağını ne zaman istersen <c>Ayarlar</c>'dan <icon
+        i="Phone small" /> <c>Telefon</c>'una çevirebilirsin.
+      textSamsungHealth: Adım kaynağı olarak <icon i="Phone small" /> <c>Telefon</c>'dan
+        başka bir şey kullanırken, attığın adımlar gerçek zamanlı olarak sayılmaz.
+        <c>Samsung Health</c>'i açarak adımlarını oyuna eşlemen gerekebilir, ve bu
+        adımlar gecikmeli olarak oyuna yansıyabilir. Bu mesaj cihazından en az <c>5000</c>
+        adım eşlediğin zaman kaybolacak. Adım kaynağını ne zaman istersen <c>Ayarlar</c>'dan
+        <icon i="Phone small" /> <c>Telefon</c>'una çevirebilirsin.
+      textAndroid: Adım kaynağı olarak <icon i="Phone small" /> <c>Telefon</c>'dan
+        başka bir şey kullanırken, attığın adımlar gerçek zamanlı olarak sayılmaz.
+        Cihazına bağlı olarak, adımlarını <c>başka bir uygulama</c> kullanarak oyuna
+        eşlemen gerekebilir. Bu mesaj cihazından en az <c>5000</c> adım eşlediğin
+        zaman kaybolacak. Adım kaynağını ne zaman istersen <c>Ayarlar</c>'dan <icon
+        i="Phone small" /> <c>Telefon</c>'una çevirebilirsin.
   popups:
     achievementUnlocked:
       achievementPoints: '{points} başarım puanı'

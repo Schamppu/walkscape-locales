@@ -22,13 +22,25 @@ singulars:
         předmět.
       title: Uložení se nezdařilo.
     stepsNotCountedRealTime:
-      textIOS: Při použití jiného zdroje než <icon i="Phone small" /> <c>Telefon</c>
-        jako zdroj kroků, kroky se nepočítají v reálném čase. V závislosti na vašem
+      textIOS: Pokud jako zdroj kroků používáte jiný než <icon i="Phone small" />
+        <c>Telefon</c>, kroky se nepočítají v reálném čase. V závislosti na vašem
         nositelném zařízení může být nutné synchronizovat kroky ručně z jiné aplikace
-        nebo otevřít Apple Health a synchronizovat kroky do hry. Tato zpráva zmizí
-        po synchronizaci alespoň <c>5000</c> kroků z nositelného zařízení. Na <icon
-        i="Phone small" /> <c>Telefon</c> jako zdroj kroků můžete změnit v <c>Nastavení</c>.
+        nebo otevřít <c>Apple Health</c> a synchronizovat kroky s hrou. Tato zpráva
+        zmizí po synchronizaci alespoň <c>5000</c> kroků z nositelného zařízení. Na
+        <icon i="Phone small" /> <c>Telefon</c> jako zdroj kroků můžete změnit v <c>Nastavení</c>.
       title: Kroky se nepočítají v reálném čase
+      textAndroid: Pokud používáte jiný zdroj kroků než <icon i="Phone small" /> <c>Telefon</c>,
+        kroky se nepočítají v reálném čase. V závislosti na vašem nositelném zařízení
+        může být nutné synchronizovat kroky ručně z <c>jiné aplikace</c>, abyste je
+        synchronizovali s hrou. Tato zpráva zmizí po synchronizaci alespoň <c>5000</c>
+        kroků z nositelného zařízení. Na <icon i="Phone small" /> <c>Telefon</c> jako
+        zdroj kroků můžete změnit v <c>Nastavení</c>.
+      textSamsungHealth: Pokud používáte jiný zdroj kroků než <icon i="Phone small"
+        /> <c>Telefon</c>, kroky se nepočítají v reálném čase. Pro synchronizaci kroků
+        s hrou může být nutné otevřít <c>Samsung Health</c> a kroky se mohou zobrazovat
+        se zpožděním. Tato zpráva zmizí po synchronizaci alespoň <c>5000</c> kroků
+        z nositelného zařízení. Na <icon i="Phone small" /> <c>Telefon</c> jako zdroj
+        kroků můžete změnit v <c>Nastavení</c>.
     comingSoon:
       title: Již brzy
       text: Tento obsah <hl>není k dispozici</hl> v aktuální verzi WalkScape.
@@ -128,6 +140,10 @@ singulars:
         title: Načítání kroků přerušeno
         text: Hra byla během načítání kroků na pozadí pozastavena. Zkuste hru znovu
           otevřít a načíst kroky.
+      couldNotGetServerTime:
+        title: Nelze získat čas serveru
+        text: Hernímu klientovi se nepodařilo získat čas serveru. Zkontrolujte prosím
+          připojení k internetu a zkuste to znovu.
     serverError:
       unknownError:
         text: Neznámá chyba.
@@ -186,7 +202,9 @@ singulars:
           e-mailu na adresu contact@walkscape.app.
       userBannedTemporarily:
         title: Byli jste dočasně zablokováni z WalkScape
-        text: Byli jste dočasně zablokováni z WalkScape do <c i=0>{bannedUntil}</c>.
+        text: Byl vám dočasně zakázán přístup do WalkScape do <c i=0> {bannedUntil}</c>.
+          Pokud se chcete proti rozhodnutí odvolat, můžete nás kontaktovat zasláním
+          e-mailu na adresu {email}.
         noTimeFound: Nebyl nalezen žádný čas ukončení, kontaktujte nás prosím zasláním
           e-mailu na adresu {email}
       userBannedPermanently:
