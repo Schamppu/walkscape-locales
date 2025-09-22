@@ -524,20 +524,38 @@ singulars:
       connect: Yhdistä
       connectAppleHealthExplanation: Sinun tulee yhdistää Apple Healthiin jotta voimme
         lukea älyrannekkeesi askeleet ja nähäksemme mitkä laitteet olet yhdistänyt
-        Apple Healthiin. Jos tämä on ensimmäinen kertasi kun pelaat WalkScapea, sinulta
-        tullaan pyytämään lupa Apple Health datan lukemiseksi.
+        Apple Healthiin. Jos pelaat WalkScapea ensimmäistä kertaa, sinulta tullaan
+        pyytämään lupa tietojen lukemiseksi Apple Healthista.
       continueWillEnable: Jatka-painiketta voi painaa sen jälkeen kun kaikki tarvitut
         käyttöoikeudet on myönnetty.
       youCanChangeAnyTime: Voit vaihtaa askelten lähdettä milloin vain <c>pelin Asetuksissa</c>.
       comingSoonToAndroid: Tulossa pian Androidille
       changeStepCountingSource: Vaihda askelten mittauksen lähde
       stepCountingSource: Askelten mittauksen lähde
+      connectHealthConnect: Yhdistä Health Connectiin
+      samsungHealthConnectedInfo: Samsung Health on nyt yhdistetty! Askeleesi näkyvät
+        nyt pelissä, tulivat ne sitten päälle puettavista laitteistasi, jotka on kytketty
+        Samsung Healthiin, tai puhelimestasi.
+      connectSamsungHealthExplanation: Jos käytät Samsungin älykelloa tai muita puettavia
+        laitteita, sinun tulee yhdistää Samsung Healthiin, jotta saat laitteiden mittaamat
+        askeleesi näkyviin pelissä. Jos pelaat WalkScapea ensimmäistä kertaa, sinulta
+        kysytään lupa lukea tietoja Samsung Healthissa.
+      noDeviceFoundAndroid: Laitetta ei löytynyt. Ole hyvä ja tarkista että olet painanut
+        <c>Yhdistä Health Connectiin</c> -nappia yllä ja antanut tälle sovellukselle
+        oikeudet lukea Health Connectin tietoja.
+      connectSamsungHealth: Yhdistä Samsung Healthiin
+      connectHealthConnectExplanation: Sinun tulee yhdistää Google Connectiin, jotta
+        voimme lukea kellosi mittaamat askeleesi, ja jotta yhdistämäsi laitteet näkyvät.
+        Jos pelaat WalkScapea ensimmäistä kertaa, sinulta pyydetään tässä yhteydessä
+        lupaa lukea tietoja Google Connectin kautta.
     deviceSource:
       appleWatch: Apple Watch
       featureDisabled: Askelten lähteiden vaihtaminen on toistaiseksi poistettu käytöstä.
         Puhelimen askelmittari on oletuksena käytössä.
       phone: Puhelin
-      watch: Muu kello
+      watch: Muu puettava laite
+      watchAndroid: Health Connect
+      samsungHealth: Samsung Health
     deviceInfo:
       appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> eroaa joistakin
         muista <icon i=\"Watch small\" /> <c>kelloista</c> siten, että se synkronoi
@@ -546,8 +564,8 @@ singulars:
         askeleesi.\n\n<bp /> <c i=2>Apple Watch synkronoi jaksoittain askeleesi Apple
         Healthiin.</c> Askeeleesi eivät päivity peliin reaaliajassa, ja askeleiden
         synkronointi voi tapahtua viiveellä.\n\n<bp /> Sinun on annettava käyttöoikeus
-        Apple Health -datan lukemiseksi.\n\n<bp /> Vain kellosi mittaamat askeleet
-        rekisteröityvät peliin.\n"
+        tietojen lukemiseksi Apple Healthista.\n\n<bp /> Vain kellosi mittaamat askeleet
+        näkyvät pelissä.\n"
       watch: "WalkScape lukee<icon i=\"Watch small\" /> <c>kellosi</c> synkronoimat
         askeleet <c>Apple Healthista</c>. Kellosi valmistajasta riippuen, on mahdollista
         että sinun täytyy synkronoida askeleesi eri sovelluksesta <c>Apple Healthiin</c>.\n\
@@ -556,14 +574,33 @@ singulars:
         \ \n<bp /> Askelten synkronointi <c>Apple Healthiin</c> riippuu kellosi valmistajasta.
         Tämä voi vaatia teknistä osaamista.\n\n<bp /> Sinun on annettava käyttöoikeus
         Apple Health -datan lukemiseksi.\n\n<bp /> Vain kellosi mittaamat askeleet
-        rekisteröityvät peliin.\n"
-      phone: "<icon i=\"Phone small\" /> <c>puhelin</c> on WalkScapen suositeltu askeltenmittauksen
+        näkyvät pelissä.\n"
+      phone: "<icon i=\"Phone small\" /> <c>Puhelin</c> on WalkScapen suositeltu askeltenmittauksen
         lähde. Vaativampiin urheilusuoritukseen suosittelemme käyttämään <icon i=\"\
         Watch small\" /> <c>kelloa</c> askelten mittauksen lähteenä. Suurimmalle osalle
         pelaajista <icon i=\"Phone small\" /> <c>puhelin</c> on paras vaihtoehto.\n\
         \ \n<bp /> <c i=1>Askeleesi päivittyvät peliin reaaliajassa.</c>\n\n<bp />
         Jotta askeleesi rekisteröityvät, <c>sinun on pidettävä puhelin mukanasi</c>.
         Tämä voi olla vaikeaa vaativampia urheilusuorituksia tehdessä.\n"
+      samsungHealth: "WalkScape lukee askeleesi <c>Samsung Healthin</c> kautta. Askeleesi
+        päätyvät peliin, tulivat ne sitten minkä tahansa Samsung Health -yhteensopivan
+        <icon i=\"Watch small\" /><c>puettavan laitteesi</c> tai puhelimesi kautta.\n\
+        \ \n<bp /> <c i=2>Sinun pitää tuoda puettavien laitteidesi kirjaamat askeleet
+        Samsung Healthiin</c>, jotta askeleesi näkyvät WalkScapessa.\n \n<bp /> Sinun
+        on annettava lisäksi käyttöoikeus WalkScapelle, että se saa lukea tietoja
+        <c>Samsung Healthiltä</c>, jotta saat laitteesi kytkettyä.\n\n<bp /> Vain
+        Samsung Healthin raportoimat askeleet näkyvät pelissä."
+      watchAndroid: "WalkScape lukee askeleesi <c>Health Connectin</c> kautta. Jotta
+        askeleesi siirtyisivät <icon i=\"Watch small\" /><c>kellostasi</c> peliin,
+        sinun tulee asentaa kolmannen osapuolen sovellus, joka tuo askeleesi <c>Health
+        Connectiin</c>, kuten esimerkiksi FitBit, Garmin Connect tai Galaxy Health.\n\
+        \ \n<bp /> <c i=2>Sinun pitää tuoda askeleesi Health Connectin saataville
+        muiden sovellusten kautta</c>, jotta askeleesi näkyvät WalkScapessa.\n \n\
+        <bp /> Askelten tuonti <c>Health Connectiin</c> riippuu kellosi valmistajasta.
+        Tämä voi vaatia lisäsäätöä ja teknistä osaamista.\n\n<bp /> Sinun on annettava
+        lisäksi käyttöoikeus WalkScapelle, että se saa lukea tietoja <c>Health Connectistä</c>,
+        jotta saat kellosi kytkettyä.\n\n<bp /> Vain kellosi mittaamat askeleet näkyvät
+        pelissä."
   rewards:
     phrases:
       alreadyClaimed: Jo lunastettu
