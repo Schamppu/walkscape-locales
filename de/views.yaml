@@ -462,12 +462,31 @@ singulars:
         ändern.
       comingSoonToAndroid: Demnächst für Android verfügbar
       changeStepCountingSource: Schrittzählerquelle ändern
+      noDeviceFoundAndroid: Kein Gerät gefunden. Bitte stelle sicher, dass du den
+        Button <c>Mit Health Connect verbinden</c> oben gedrückt und die Berechtigung
+        zum Lesen der Health-Connect-Daten erteilt hast.
+      connectHealthConnect: Mit Health Connect verbinden
+      connectSamsungHealth: Mit Samsung Health verbinden
+      connectHealthConnectExplanation: Du musst dich mit Google Connect verbinden,
+        damit wir die von deiner Uhr synchronisierten Schritte auslesen und sehen
+        können, welche Geräte du verbunden hast. Wenn du WalkScape zum ersten Mal
+        verwendest, wirst du um eine Berechtigung gebeten, um Daten von Google Connect
+        zu lesen.
+      connectSamsungHealthExplanation: Wenn du Samsung-Wearables benutzt, musst du
+        dich mit Samsung Health verbinden, damit wir die von deiner Uhr synchronisierten
+        Schritte auslesen können. Wenn du WalkScape zum ersten Mal verwendest, wirst
+        du um eine Berechtigung gebeten, um Daten von Samsung Health zu lesen.
+      samsungHealthConnectedInfo: Samsung Health ist verbunden! Sowohl die Schritte
+        deiner mit Samsung Health verbundenen Wearables als auch die Schritte deines
+        Handys werden vom Spiel erfasst.
     deviceSource:
       featureDisabled: Das Ändern der Eingabequellen wurde vorübergehend remote deaktiviert.
         Der standardmäßige Schrittzähler deines Telefons wird verwendet.
       phone: Telefon
       appleWatch: Apple Watch
-      watch: andere Uhr
+      watch: Anderes Wearable
+      watchAndroid: Health Connect
+      samsungHealth: Samsung Health
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> <c>Telefon</c> ist die standardmäßig empfohlene
         Schrittzählerquelle für WalkScape. Für intensive sportliche Aktivitäten empfehlen
@@ -499,6 +518,26 @@ singulars:
         erteilen, um Daten aus Apple Health zu lesen und deine Uhr zu verbinden.\n\
         \ \n<bp /> Im Spiel werden nur die Schritte gezählt, die von deiner Uhr gemeldet
         wurden.\n"
+      watchAndroid: "WalkScape liest deine Schritte aus <c>Health Connect</c> aus.
+        Um Schritte von deiner <icon i=\"Watch small\" /> <c>Uhr</c>, zu synchronisieren,
+        musst du eine Drittanbieter-App installieren, die deine Schritte an <c>Health
+        Connect</c> überträgt, wie z. B. FitBit, Garmin Connect oder Galaxy Health.\n\
+        \n<bp /> <c i=2>Du musst deine Schritte über andere Anwendungen mit Health
+        Connect synchronisieren</c> , damit sie in WalkScape gezählt werden.\n\n<bp
+        />Der Synchronisierungsprozess mit <c>Health Connect</c> hängt vom Hersteller
+        ab. Dies kann zusätzliche Einrichtung und technisches Wissen erfordern.\n\n\
+        <bp /> Du musst zusätzliche Berechtigungen erteilen, um Daten aus <c>Health
+        Connect</c> lesen zu können, damit deine Uhr verbunden wird.\n\n<bp /> Nur
+        Schritte, die von deiner Uhr gemeldet werden, werden im Spiel erfasst."
+      samsungHealth: "WalkScape liest deine Schritte aus <c>Samsung Health</c> aus.
+        Deine Schritte von allen mit Samsung Health kompatiblen <icon i=\"Watch small\"\
+        \ /> <c>Wearables</c> sowie die Schritte von deinem <icon i=\"Phone small\"\
+        \ /> <c>Handy</c> werden mit dem Spiel synchronisiert.\n\n<bp /> <c i=2>Du
+        musst deine Schritte über deine Wearables mit Samsung Health synchronisieren</c>,
+        damit sie in WalkScape gezählt werden.\n\n<bp /> Du musst zusätzliche Berechtigungen
+        erteilen, um Daten aus <c>Samsung Health</c> zu lesen und deine Schritte mit
+        dem Spiel zu synchronisieren.\n\n<bp /> Nur Schritte, die von Samsung Health
+        gemeldet werden, werden im Spiel erfasst."
   settings:
     categories:
       account:
@@ -563,9 +602,15 @@ singulars:
       stepSourceInfo: Informationen zu Schrittquellen
       stepSourceInfoDesc: Sieh dir mehr Informationen über die Schrittquellen und
         deren Unterschiede an, indem du den Button unten drückst.
-      connectionInfoAndroid: Die Unterstützung für Smartwatches auf Android kommt
-        bald. Derzeit wird nur das Telefon als Schrittzählerquelle unterstützt.
+      connectionInfoAndroid: Wenn deine Wearables nicht in der obigen Liste erscheinen,
+        stelle sicher, dass du WalkScape die Berechtigung erteilt hast, Schrittdaten
+        aus Health Connect zu verwenden, unter <c>Einstellungen ➤ Sicherheit & Datenschutz
+        ➤ Datenschutz ➤ Health Connect ➤ App-Berechtigungen </c>, und dass Health
+        Connect in den letzten 7 Tagen Schritte für diese Geräte erfasst hat.
       gameVersion: Spielversion {version}
+      comingSoonToAndroid: Unterstützung für Smartwatches auf Android kommt bald.
+        Momentan wird nur das Handy als Schrittquelle unterstützt.
+      updateAvailableSources: Verfügbare Quellen aktualisieren
   pfpCreation:
     buttons:
       randomize: Zufällig
@@ -626,6 +671,8 @@ singulars:
       lastUpdated: 'Zuletzt aktualisiert am: <c>{updatedAt}</c>.'
       recordedFrom: Aufgezeichnet von <c>{from}</c> bis <c>{to}</c>.
       reputation: Reputation
+      statUpdatesWithDelay: Dieser Wert wird mit einer Verzögerung von bis zu <c>einer
+        Stunde</c> aktualisiert.
     info:
       stats: Gesammelte Werte von jedem Schritt den du bei deiner Reise durch die
         Welt von Arenum gemacht hast.
