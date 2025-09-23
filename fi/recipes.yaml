@@ -433,24 +433,54 @@ singulars:
         desc: Valmista raitalankku, jota arvostetaan materiaalina keveytensä takia.
       mangrovePlank:
         name: Leikkaa mangrovelankku
+        activityDesc: Mangrovepuu on paksua ja tiheää. Se uhkaa tuhota työkalusi,
+          mutta päättäväisellä periksiantamattomuudella muodostat siitä lankun.
+        desc: Valmista mangrovelankku, jonka kova ja tiheä puu on hyödyllinen vaativissa
+          ympäristöissä.
       coralPlank:
         name: Leikkaa korallilankku
+        activityDesc: Käytät erikoistyökaluja korallin muokkaamiseen ja jalostamiseen
+          käyttökelpoiseksi lankuksi, ja varmistat sen vahvuuden ja kestävyyden rakennustyöhön.
+        desc: Kestävä rakennusmateriaali, joka on valmistettu korallin sitkeästä tukirangasta.
+          Se vaatii huolellista erottelua ja työstämistä.
       birchPlank:
         name: Leikkaa koivulankku
+        desc: Leikkaa huolellisesti koivusta hyödyllinen ja monikäyttöinen lankku.
+        activityDesc: Huolellisella työllä muovaat koivusta monipuolisen koivulankun.
       pinePlank:
         name: Leikkaa mäntylankku
         activityDesc: Leikkaat mäntypölleistä sopivankokoisia ja tukevia lankkuja.
+        desc: Muovaa mäntyä kestäväksi ja luotettavaksi lankuksi.
       sprucePlank:
         name: Leikkaa kuusilankku
         activityDesc: Muokkaat kuusesta taitavasti monikäyttöistä kuusilankkua.
+        desc: Valmista kuusilankku, joka tunnetaan vahvuudestaan ja monipuolisuudestaan.
       teakPlank:
         name: Leikkaa tiikkilankku
         activityDesc: Vahva puuaines vaatii työstöaikaa, mutta saat valmistettua virheettömän
           lankun.
+        desc: Valmista tiikkilankku, joka saa erityisarvostusta kestävyytensä ja vahvuutensa
+          johdosta.
       maplePlank:
         name: Leikkaa vaahteralankku
+        desc: Muokkaa vaahterapuuta tasaiseksi ja hienostuneeksi lankuksi.
+        activityDesc: Valmistat pikkutarkalla työstöllä vaahterasta sileäpintaisen
+          vaahteralankun.
       oakPlank:
         name: Leikkaa tammilankku
+        desc: Valmista tammilankku, jota arvostetaan sen kestävyyden ja kauneuden
+          tähden.
+        activityDesc: Huolellisesti työskennellen muovaat tammesta kauniin tammilankun.
+      elmPlank:
+        activityDesc: Työstö ei ole ihan yksinkertaista, mutta muovaat jalavapöllistä
+          hyödyllisen lankun tulevia käsitöitä varten.
+        name: Valmista jalavalankku
+        desc: Valmista erittäin taipuisa jalavalankku
+      bambooPlank:
+        desc: Valmista bambulankku, joka on taipuisa ja monipuolinen materiaali.
+        name: Valmista bambulankku
+        activityDesc: Työstäminen on hankalaa, mutta leikkaat ja kerrostat bambusäikeitä
+          kauniiksi lankuksi.
     scrap:
       birchPlankScrap:
         name: Valmista koivulankku (romu)
@@ -486,6 +516,10 @@ singulars:
           tammilankkuja.
       mangrovePlankShavings:
         name: Valmista mangrovelankku (lastut)
+        activityDesc: Puujäänteet ovat paksuja ja tiheitä. Ne uhkaavat tuhota työkalusi,
+          mutta päättäväisellä periksiantamattomuudella saat niistä muodostettua lankun.
+        desc: Valmista mangrovelankku, jonka kova ja tiheä puu soveltuu haastaviin
+          ympäristöihin.
       maplePlankScrap:
         name: Valmista vaahteralankku (romu)
         desc: Muodosta puuromusta tasainen ja hienostunut lankku jatkokäyttöön.
@@ -529,6 +563,9 @@ singulars:
         name: Paista hai
       cookedAnglerfish:
         name: Paista merikrotti
+      cookedLargemouthBass:
+        name: Paista isobassi
+        desc: Valmista tuoreesta saaliistasi rapea, kullanruskea herkku.
     consumables:
       kelpRolls:
         name: Valmista leväkääryle
@@ -602,6 +639,12 @@ singulars:
         name: Valmista mutakakku
         desc: Hauska ja sottainen herkku, jonka voi luoda kuka tahansa, jolla on vähänkin
           mielikuvitusta.
+      roastedBellPepper:
+        name: Valmista paahdettu paprika
+        desc: Täydellinen sekoitus lämpöä ja mausteita tuo esiin maut parhaimmillaan.
+        activityDesc: Viipaloit ja sen jälkeen varovasti paahdat paprikat parahultaisella
+          lämmöllä. Kun ne valmistuvat, kääntelet ja maustat niitä, kunnes ne kehittävät
+          sopivan hiiltyneen pinnan ja aromin.
   trinketry:
     amulets:
       jarvonianFlowerNecklace:
@@ -610,77 +653,83 @@ singulars:
         activityDesc: Punot kukat toisiinsa, ja muistelet lämmöllä lohdullisen yksinkertaista
           aikaa, jonka olet viettänyt Loihtimattomassa metsässä.
       amuletOfTheFinding:
-        name: Valmista kompassikoru
-        activityDesc: Yhdistät kompassihelyn hopeakultaiseen kaulakoruun, johon se
+        name: Valmista kompassiriipus
+        activityDesc: Yhdistät kompassihelyn hopeakultaiseen riipukseen, johon se
           sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa lupaavalta
           matkustamisesta kiinnostuneelle.
-        desc: Yhdistä kompassihely ketjuun kaulakoruksi
+        desc: Yhdistä kompassihely riipukseen
       amuletOfTheEel:
         name: Valmista ankeriasamuletti
-        activityDesc: Yhdistät ankeriashelyn hopeakultaiseen kaulakoruun, johon se
+        activityDesc: Yhdistät ankeriashelyn hopeakultaiseen riipukseen, johon se
           sopii erinomaisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa lupaavalta
           ketteryyden tavoittelijalle.
-        desc: Yhdistä ankeriashely ketjuun kaulakoruksi
+        desc: Yhdistä ankeriashely riipukseen
       amuletOfTheBat:
-        name: Valmista lepakkokoru
-        activityDesc: Sovitat lepakkohelyn hopeakultaiseen kaulakoruun, johon se sopiikin
+        name: Valmista lepakkoriipus
+        activityDesc: Sovitat lepakkohelyn hopeakultaiseen riipukseen, johon se sopiikin
           täydellisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa lupaavalta
           louhinnasta kiinnostuneelle.
-        desc: Yhdistä lepakkohely ketjuun kaulakoruksi
+        desc: Yhdistä lepakkohely riipukseen
       amuletOfTheHeron:
-        name: Valmista haikarakoru
-        desc: Yhdistä harmaahaikaran hely ketjuun kaulakoruksi
-        activityDesc: Yhdistät harmaahaikaran helyn hopeakultaiseen kaulakoruun, johon
+        name: Valmista haikarariipus
+        desc: Yhdistä harmaahaikaran hely riipukseen
+        activityDesc: Yhdistät harmaahaikaran helyn hopeakultaiseen riipukseen, johon
           se sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos näyttää lupaavalta
           kalastuksesta kiinnostuneelle.
       amuletOfTheShrimp:
-        name: Valmista katkarapukaulakoru
-        activityDesc: Yhdistät katkarapuhelyn hopeakultaiseen kaulakoruun, johon se
+        name: Valmista katkarapuriipus
+        activityDesc: Yhdistät katkarapuhelyn hopeakultaiseen riipukseen, johon se
           sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa lupaavalta
           poiminnasta kiinnostuneelle.
-        desc: Yhdistä katkarapuhely ketjuun kaulakoruksi
+        desc: Yhdistä katkarapuhely riipukseen
       amuletOfTheLuckyRabbitFoot:
-        desc: Yhdistä onnea tuova jäniksenkäpälä ketjuun kaulakoruksi
-        name: Valmista jäniksenkäpäläkaulakoru
-        activityDesc: Yhdistät onnea tuovan jäniksenkäpälähelyn hopeakultaiseen kaulakoruun,
+        desc: Yhdistä onnea tuova jäniksenkäpälä riipukseen
+        name: Valmista jäniksenkäpäläriipus
+        activityDesc: Yhdistät onnea tuovan jäniksenkäpälähelyn hopeakultaiseen riipukseen,
           johon se sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa
           lupaavalta korutöistä kiinnostuneelle.
       amuletOfTheRoot:
-        activityDesc: Yhdistät pyöreän juuren helyn hopeakultaiseen kaulakoruun, johon
+        activityDesc: Yhdistät pyöreän juuren helyn hopeakultaiseen riipukseen, johon
           se sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa
           lupaavalta puunhakkuusta kiinnostuneelle.
-        desc: Yhdistä pyöreän juuren hely ketjuun kaulakoruksi
-        name: Valmista juurikaulakoru
+        desc: Yhdistä pyöreän juuren hely riipukseen
+        name: Valmista juuririipus
       amuletOfTheAnimalKingdom:
         activityDesc: Jollakin ilveellä saat yhdistettyä kaikki eläinhelyt hopeakultaiseen
-          kaulakoruun, johon sovitat ne tarkkaan ja huolella. Valmistus vie aikaa,
+          riipukseen, johon sovitat ne tarkkaan ja huolella. Valmistus vie aikaa,
           mutta lopputulos vaikuttaa monipuolisen hyödylliseltä.
-        name: Valmista eläinkunnan kaulakoru
-        desc: Yhdistä useita eläinhelyjä ketjuun kaulakoruksi
+        name: Valmista eläinkunnan riipus
+        desc: Yhdistä useita eläinhelyjä ketjuun riipukseksi
       amuletOfTheMeasuringSpoons:
-        activityDesc: Yhdistät mittalusikkahelyn hopeakultaiseen kaulakoruun, johon
+        activityDesc: Yhdistät mittalusikkahelyn hopeakultaiseen riipukseen, johon
           se sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa
           lupaavalta ruoanlaitosta kiinnostuneelle.
-        name: Valmista mittalusikkakoru
-        desc: Yhdistä mittalusikkahely ketjuun kaulakoruksi
+        name: Valmista mittalusikkariipus
+        desc: Yhdistä mittalusikkahely riipukseen
       amuletOfTheSharkTooth:
-        activityDesc: Yhdistät hainhammashelyn hopeakultaiseen kaulakoruun, johon
-          se sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos näyttää lupaavalta
+        activityDesc: Yhdistät hainhammashelyn hopeakultaiseen riipukseen, johon se
+          sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos näyttää lupaavalta
           metsästyksestä kiinnostuneelle.
-        name: Valmista hainhammaskoru
-        desc: Yhdistä hainhammashely ketjuun kaulakoruksi
+        name: Valmista hainhammasriipus
+        desc: Yhdistä hainhammashely riipukseen
       amuletOfTheCoolingIce:
-        name: Valmista viilentävän jään kaulakoru
-        desc: Yhdistä viilentävä jääpuikkohely ketjuun kaulakoruksi
-        activityDesc: Yhdistät viilentävän jääpuikkohelyn hopeakultaiseen kaulakoruun,
+        name: Valmista viilentävä jääpuikkoriipus
+        desc: Yhdistä viilentävä jääpuikkohely riipukseen
+        activityDesc: Yhdistät viilentävän jääpuikkohelyn hopeakultaiseen riipukseen,
           johon se sopii täydelliessti. Valmistus vie aikaa, mutta lopputulos vaikuttaa
           lupaavalta taonnasta kiinnostuneelle.
       amuletOfTheBeaver:
-        name: Valmista majavakoru
-        desc: Yhdistä majavahely ketjuun kaulakoruksi
-        activityDesc: Yhdistät majavahelyn hopeakultaiseen kaulakoruun, johon se sopii
+        name: Valmista majavariipus
+        desc: Yhdistä majavahely riipukseen
+        activityDesc: Yhdistät majavahelyn hopeakultaiseen riipukseen, johon se sopii
           täydellisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa lupaavalta
           puutöistä kiinnostuneelle.
+      amuletOfThePinkPearl:
+        activityDesc: Sovitat vaaleanpunaisen helmihelyn helmiriipukseen, johon se
+          sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa lupaavalta
+          käsitöistä kiinnostuneelle.
+        name: Valmista vaaleanpunaisen helmen riipus
+        desc: Yhdistä vaaleanpunaisen helmen hely riipukseen
     gems:
       shapeOpal:
         activityDesc: Irrotat varovaisesti palasen arvokasta jalokivimateriaalia sitä
@@ -916,3 +965,14 @@ singulars:
     vegetableDishes:
       name: Kasvisruoat
       desc: Ruoat jotka tyypillisesti valmistetaan kasviksista.
+  hunting:
+    bows:
+      bambooHuntingBow:
+        name: Valmista bambuinen metsästysjousi
+  foraging:
+    other:
+      mangroveBasket:
+        name: Valmista mangrovekori
+        desc: Parantele koreista mangrovekori
+        activityDesc: Yhdistät ison korin ja halkokorin, jotta sitä voisi käyttää
+          molemmissa rooleissa.

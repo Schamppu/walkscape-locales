@@ -36,10 +36,22 @@ singulars:
       title: Askelia ei lasketa reaaliajassa
       textIOS: Kun käytät askeleiden lähteenä muuta kuin <icon i="Phone small" /><c>puhelinta</c>,
         askeleitasi ei lasketa reaaliajassa. Riippuen älyrannekkeestasi voit joutua
-        synkronoimaan askeleesi toisesta applikaatiosta tai avaamaan Apple Healthin.
+        synkronoimaan askeleesi toisesta applikaatiosta tai avaamaan <c>Apple Healthin</c>.
         Tämä ilmoitus katoaa kun olet synkronoinut vähintään <c>5000</c> askeleesta
         älyrannekkeestasi. Voit vaihtaa askeleiden lähteen <icon i="Phone small" /><c>puhelimeen</c>
         pelin <c>Asetuksista</c>.
+      textAndroid: Jos käytät muuta kuin <icon i="Phone small" /> <c>Puhelinta</c>
+        askelten lähteenä, askeleitasi ei lasketa reaaliajassa. Mittauslaitteestasi
+        riippuen voit joutua tuomaan askeleesi käsin <c>toisesta sovelluksesta</c>
+        saadaksesi ne näkyviin pelissä. Tämä viesti katoaa, kun olet saanut onnistuneesti
+        tuotua vähintään <c>5000</c> askelta laitteeltasi. Voit muuttaa <icon i="Phone
+        small" /><c>Puhelimen</c> askellähteeksesi <c>Asetuksista</c>.
+      textSamsungHealth: Jos käytät muuta kuin <icon i="Phone small" /> <c>Puhelinta</c>
+        askelten lähteenä, askeleitasi ei lasketa reaaliajassa. Voit joutua avaamaan
+        <c>Samsung Health</c> -sovelluksesi tuodaksesi askeleesi Walkscapen aataville,
+        ja askeleet voivat tallentua viiveellä. Tämä viesti katoaa, kun olet saanut
+        onnistuneesti tuotua vähintään <c>5000</c> askelta mittalaitteeltasi. Voit
+        muuttaa <icon i="Phone small" /><c>Puhelimen</c> askellähteeksesi <c>Asetuksista</c>.
   popups:
     achievementUnlocked:
       achievementUnlocked: '{achievement} saavutus avattu'
@@ -155,7 +167,8 @@ singulars:
           {email}'
         title: WalkScapen pelaamisesi on väliaikaisesti estetty
         text: 'WalkScapen pelaamisesi on väliaikaisesti estetty. Loppumisaika: <c
-          i=0>{bannedUntil}</c>.'
+          i=0>{bannedUntil}</c>. Jos haluat tehdä vetoomuksen päätöksen kumoamiseksi,
+          voit ottaa meihin yhteyttä lähettämällä sähköpostia osoitteeseen {email}.'
       userBannedPermanently:
         text: 'Sinut on pysyvästi karkotettu WalkScapesta ja pelaamisesi on estetty.
           Jos uskot tämän tapahtuneen erehdyksessä ja haluat kyseenalaistaa päätöksen,
@@ -184,6 +197,10 @@ singulars:
         title: Askelten lataaminen keskeytyi
         text: Peli keskeytettiin tai siirrettiin taustalle askelia ladattaessa. Ole
           hyvä ja yritä käynnistää peli uudelleen ladataksesi askeleet loppuun.
+      couldNotGetServerTime:
+        title: Palvelimen aikaa ei saatu haettua
+        text: Pelisovellus ei saanut noudettua palvelimen aikaa. Ole hyvä ja tarkista
+          internetyhteytesi toimivuus, ja yritä sitten uudelleen.
   confirmations:
     changingStepSource:
       title: Vaihda askeleiden lähde?
