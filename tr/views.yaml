@@ -117,6 +117,21 @@ maps:
       'low': Ses veya titreşim yok, durum çubuğunda da görünmez.
       'high': Ses veya titreşim çıkarır
       'urgent': Ses veya titreşim çıkarıp bildirim olarak görünür.
+    leaderboardType:
+      'carpentry': <c>Marangozluk</c> seviyesi
+      'totalXp': Toplam <c>tecrübe</c>
+      'agility': <c>Çeviklik</c> seviyesi
+      'crafting': <c>Zanaatkarlık</c> seviyesi
+      'fishing': <c>Balıkçılık</c> seviyesi
+      'foraging': <c>Toplayıcılık</c> seviyesi
+      'mining': <c>Madencilik</c> seviyesi
+      'smithing': <c>Demircilik</c> seviyesi
+      'trinketry': <c>Takıcılık</c> seviyesi
+      'woodcutting': <c>Odunculuk</c> seviyesi
+      'achievementPoints': <c>Başarım puanı</c>
+      'totalSteps': Toplam <c>adım</c>
+      'totalLevel': Toplam <c>seviye</c>
+      'cooking': <c>Aşçılık</c> seviyesi
   character:
     stepsTime:
       'hourly': Saatlik adım
@@ -275,6 +290,8 @@ singulars:
       showRewards: Ödülleri göster
       totalProgressUnlocks: Toplam ilerleme ödülleri
       checkPointUnlocks: İlerleme aşaması ödülleri
+      collectiblesCount: Koleksiyonluklar <icon i="Achievement Point"/> <c i=0>${count}</c>
+        <c i=1>/ {maxCount}</c>
   bank:
     phrases:
       noItemsBank: Bankanda eşya bulunmuyor.
@@ -325,6 +342,7 @@ singulars:
       rewards: Ödüller
       showingRecipiesThatUses: 'Bunu kullanan tarifler:'
       requiresService: Hizmet gerekli.
+      allSkills: Tüm beceriler
     errors:
       notSameQuality: Malzemelerin tamamı ya iyi ya normal olmalı
       noService: Hizmet gereksinimi karşılanmıyor
@@ -548,12 +566,18 @@ singulars:
       samsungHealthConnectedInfo: Samsung Health'e bağlanıldı! Hem Samsung Health'e
         bağlı giyilebilir cihazlarının hem de telefonunun kaydettiği adımlar oyun
         tarafından okunacak.
+      installHealthConnect: Health Connect'i Yükle
+      installHealthConnectExplanation: Giyilebilir cihazlarının adımlarını okuyabilmek
+        için Health Connect gerekli. Önce yukarıdaki tuşa basıp yüklemen, daha sonra
+        bağlaman gerekiyor.
     deviceSource:
-      watch: Başka bir saat
+      watch: Başka giyilebilir cihaz
       phone: Telefon
       appleWatch: Apple Watch
       featureDisabled: Kaynak değiştirmek şimdilik uzaktan devre dışı bırakıldı. Telefonun
         varsayılan adımsayarı kullanılacak.
+      samsungHealth: Samsung Health
+      watchAndroid: Health Connect
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> <c>Telefon</c> WalkScape için önerilen varsayılan
         adım kaynağıdır. Yoğun efor isteyen spor faaliyetleri için adım kaynağı olarak
@@ -631,6 +655,7 @@ singulars:
       highestStepsIn24Hours: 24 saat içindeki en çok adım
       lastUpdated: 'Son güncelleme: <c>{updatedAt}</c>.'
       recordedFrom: <c>{from}</c> ile <c>{to}</c> arası kaydedildi.
+      statUpdatesWithDelay: Bu bilgi <c>bir saate</c> kadar gecikmeli olarak yansıyabilir.
   tools:
     phrases:
       emptyToolSlot: Boş alet yuvası
@@ -807,8 +832,14 @@ singulars:
         menüsüne giderek WalkScape'e adım verilerini kullanması için izin verdiğinden
         ve Apple Health'in bu cihazlarda son 7 gün içinde adım kaydetmiş olduğundan
         emin ol.
-      connectionInfoAndroid: Akıllı saat desteği Android'e yakında gelecek. Şimdilik
+      connectionInfoAndroid: Cihazların yukarıdaki listede görünmüyorsa, Health Connect
+        içinden <c>Ayarlar ➤ Gizlilik & Güvenlik ➤ Gizlilik ➤ Health Connect ➤ Uygulama
+        İzinleri </c> menüsüne giderek WalkScape'e adım verilerini kullanması için
+        izin verdiğinden ve Health Connect'in bu cihazlarda son 7 gün içinde adım
+        kaydetmiş olduğundan emin ol.
+      comingSoonToAndroid: Akıllı saat desteği Android'e yakında gelecek. Şimdilik
         adım kaynağı olarak yalnızca telefon kullanılabilir.
+      updateAvailableSources: Mevcut kaynakları güncelle
   popupBubbles:
     phrases:
       overEncumbered: Envanterin tamamen dolup taştı.
@@ -839,6 +870,8 @@ singulars:
       friends: Arkadaşlar
       pendingInvites: Bekleyen davetler
       manageFriends: Sosyal ağını yönet
+      enterAtLeastChars: Aramak için en az 3 karakter yazın.
+      countResultsFound: '{count} sonuç bulundu'
   gearSets:
     phrases:
       name: İsim
