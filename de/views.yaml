@@ -85,6 +85,21 @@ maps:
       'stepDataTime': Zeitspanne
     custom:
       'dataSource': Datenquelle für Schritte
+    leaderboardType:
+      'totalLevel': Gesamt-<c>Level</c>
+      'totalXp': Gesamt-<c>Erfahrung</c>
+      'totalSteps': Gesamt-<c>Schritte</c>
+      'agility': <c>Beweglichkeit</c> Level
+      'carpentry': <c>Tischlerei</c> Level
+      'cooking': <c>Koch</c> Level
+      'crafting': <c>Handwerks</c> Level
+      'fishing': <c>Angel</c> Level
+      'foraging': <c>Sammel</c> Level
+      'mining': <c>Bergbau</c> Level
+      'smithing': <c>Schmiede</c> Level
+      'trinketry': <c>Kunsthandwerks</c> Level
+      'woodcutting': <c>Holzfällen</c> Level
+      'achievementPoints': <c>Errungenschaftspunkte</c>
   characterCreation:
     phrases:
       optionTypes:
@@ -292,6 +307,8 @@ singulars:
       totalProgressUnlocks: Gesamtfortschritts Freischaltungen
       checkPointUnlocks: Checkpoint Freischaltungen
       unclaimedRewards: 'Unbeanspruchte Belohnungen: '
+      collectiblesCount: Sammelgegenstände <icon i="Achievement Point"/> <c i=0>{count}</c>
+        <c i=1>/ {maxCount}</c>
   crafting:
     phrases:
       materials: Materialien
@@ -307,6 +324,7 @@ singulars:
         Herstellung genutzt werden.
       showingRecipiesThatUses: Diese Rezepte nutzen
       requiresService: Benötigt einen Service.
+      allSkills: Alle Fähigkeiten
     errors:
       noMaterials: Handwerksmaterialien fehlen
       skillRequirementsNotMet: Fähigkeitsanforderungen nicht erfüllt
@@ -479,6 +497,10 @@ singulars:
       samsungHealthConnectedInfo: Samsung Health ist verbunden! Sowohl die Schritte
         deiner mit Samsung Health verbundenen Wearables als auch die Schritte deines
         Handys werden vom Spiel erfasst.
+      installHealthConnect: Health Connect installieren
+      installHealthConnectExplanation: Health Connect ist erforderlich, um Schritte
+        von deinen Wearables auszulesen. Du musst es zuerst installieren, indem du
+        den Button oben drückst, und dich dann damit verbinden.
     deviceSource:
       featureDisabled: Das Ändern der Eingabequellen wurde vorübergehend remote deaktiviert.
         Der standardmäßige Schrittzähler deines Telefons wird verwendet.
@@ -795,6 +817,8 @@ singulars:
       pendingInvites: Ausstehende Einladungen
       friends: Freunde
       manageFriends: Soziales verwalten
+      enterAtLeastChars: Gib mindestens 3 Zeichen ein, um zu suchen.
+      countResultsFound: '{count} Ergebnisse gefunden'
   cooldowns:
     phrases:
       followingMustBeTrueToTick: 'Folgendes muss passieren damit der Cooldown sinkt:'
