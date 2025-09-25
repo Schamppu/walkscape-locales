@@ -623,12 +623,34 @@ singulars:
       comingSoonToAndroid: Próximamente para Android
       changeStepCountingSource: Cambiar el origen del contador de pasos
       stepCountingSource: Origen del contador de pasos
+      noDeviceFoundAndroid: No se ha encontrado dispositivo. Por favor, asegúrate
+        de haber pulsado el botón superior <c>Conectar a Health Connect</c> y haber
+        concedido permisos para leer datos de Health Connect.
+      connectHealthConnect: Conectar a Health Connect
+      installHealthConnect: Instalar Health Connect
+      connectSamsungHealth: Conectar a Samsung Health
+      connectSamsungHealthExplanation: Si usas dispositivos Samsung, necesitas conectarte
+        a Samsung Health para poder leer los pasos sincronizados por tu reloj. Si
+        es tu primera vez usando WalkScape, se te pedirá permiso para leer datos de
+        Samsung Health.
+      installHealthConnectExplanation: Health Connect es necesario para leer los pasos
+        de tus dispositivos. Primero debes instalarlo pulsando el botón de arriba
+        y luego conectarte a él.
+      connectHealthConnectExplanation: Necesitas conectarte a Google Connect para
+        que podamos leer los pasos sincronizados por tu reloj y ver qué dispositivos
+        tienes conectados. Si es tu primera vez usando WalkScape, se te pedirá permiso
+        para leer datos de Google Connect.
+      samsungHealthConnectedInfo: ¡Samsung Health está conectado! El juego leerá tanto
+        los pasos de tus dispositivos vinculados a Samsung Health como los pasos registrados
+        en tu teléfono.
     deviceSource:
       phone: Teléfono
       appleWatch: Apple Watch
-      watch: Otro reloj
+      watch: Otro dispositivo
       featureDisabled: El cambio de origen ha sido deshabilitado remotamente por el
         momento. Se usará por defecto el podómetro del teléfono.
+      watchAndroid: Health Connect
+      samsungHealth: Samsung Health
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> El <c>Teléfono</c> es el origen recomendado
         por defecto para contar pasos en WalkScape. Para actividades deportivas intensas,
@@ -658,6 +680,16 @@ singulars:
         alguna configuración extra y conocimientos técnicos.\n\n<bp /> Necesitas conceder
         permisos extra para leer los datos desde Salud de Apple para conectar tu reloj.\n\
         \n<bp /> Solo los pasos recogidos por tu reloj serán registrados en el juego.\n"
+      watchAndroid: "WalkScape lee tus pasos desde <c>Health Connect</c>. Para sincronizar
+        los pasos de tu <icon i=\"Watch small\" /> <c>reloj</c>, necesitas instalar
+        una aplicación de terceros que sincronice tus pasos con <c>Health Connect</c>,
+        como FitBit, Garmin Connect o Galaxy Health.\n\n<bp /> <c i=2>Necesitas sincronizar
+        tus pasos con Health Connect a través de otras aplicaciones</c> para que cualquier
+        paso se cuente en WalkScape.\n\n<bp /> El proceso de sincronización con <c>Health
+        Connect</c> depende del fabricante. Esto puede requerir configuración adicional
+        y conocimientos técnicos.\n\n<bp /> Debes conceder permisos adicionales para
+        leer datos de <c>Health Connect</c> y conectar tu reloj.\n\n<bp /> Solo se
+        registran en el juego los pasos que reporta tu reloj."
   rewards:
     phrases:
       alreadyClaimed: Ya reclamado
