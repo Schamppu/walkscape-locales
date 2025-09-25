@@ -38,10 +38,23 @@ singulars:
       textIOS: Mientras uses un origen de pasos distinto al <icon i="Phone small"
         /> <c>Teléfono</c>, los pasos no se contarán en tiempo real. Dependiendo de
         tu dispositivo, puede que necesites sincronizar los pasos manualmente desde
-        otra aplicación o abrir Salud de Apple para sincronizarlos con el juego. Este
-        mensaje desaparecerá una vez hayas sincronizado al menos <c>5000</c> pasos
-        desde tu dispositivo. Puedes cambiar el origen de pasos al <icon i="Phone
+        otra aplicación o abrir <c>Salud de Apple</c> para sincronizarlos con el juego.
+        Este mensaje desaparecerá una vez hayas sincronizado al menos <c>5000</c>
+        pasos desde tu dispositivo. Puedes cambiar el origen de pasos al <icon i="Phone
         small" /> <c>Teléfono</c> desde la <c>Configuración</c>.
+      textAndroid: Mientras uses un origen de pasos distinto al <icon i="Phone small"
+        /> <c>Teléfono</c>, los pasos no se contarán en tiempo real. Dependiendo de
+        tu dispositivo, puede que necesites sincronizar los pasos manualmente desde
+        <c>otra aplicación</c> para sincronizarlos con el juego. Este mensaje desaparecerá
+        una vez hayas sincronizado al menos <c>5000</c> pasos desde tu dispositivo.
+        Puedes cambiar el origen de pasos al <icon i="Phone small" /> <c>Teléfono</c>
+        desde la <c>Configuración</c>.
+      textSamsungHealth: Mientras uses un origen de pasos distinto al <icon i="Phone
+        small" /> <c>Teléfono</c>, los pasos no se contarán en tiempo real. Puede
+        que necesites abrir <c>Samsung Health</c> para sincronizar los pasos con el
+        juego y puede que se haga con retraso. Este mensaje desaparecerá una vez hayas
+        sincronizado al menos <c>5000</c> pasos desde tu dispositivo. Puedes cambiar
+        el origen de pasos al <icon i="Phone small" /> <c>Teléfono</c> desde la <c>Configuración</c>.
   popups:
     skillLevel:
       skillLevelUp: '{skillName} sube de nivel'
@@ -148,6 +161,8 @@ singulars:
       userBannedTemporarily:
         title: Se te ha bloqueado temporalmente de WalkScape
         text: Se te ha bloqueado temporalmente de WalkScape hasta <c i=0>{bannedUntil}</c>.
+          Si quieres apelar la decisión, nos puedes contactar mandando un email a
+          {email}.
         noTimeFound: No se encontró tiempo final, por favor contáctanos mandando un
           correo a {email}
       userBannedPermanently:
@@ -192,6 +207,10 @@ singulars:
         title: Carga de pasos interrumpida
         text: El juego se puso en segundo plano o se interrumpió al cargar los pasos.
           Por favor, intenta abrir el juego otra vez para cargar los pasos.
+      couldNotGetServerTime:
+        title: No se pudo obtener el tiempo del servidor
+        text: El cliente del juego no pudo obtener el tiempo del servidor. Por favor,
+          comprueba tu conexión e inténtalo otra vez.
   info:
     game:
       equipGearSetSomeFailed:
