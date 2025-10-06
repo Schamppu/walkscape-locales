@@ -35,8 +35,8 @@ singulars:
     serviceList:
       info:
         title: Palvelut
-        description: Palvelut tarjoavat erilaisia etuja pelimaailman paikoissa. Yleisin
-          hyödyllinen etu on, että ne sallivat hahmosi luoda esineitä.
+        description: Palvelut tarjoavat erilaisia etuja tietyillä alueilla. Yleisimmin
+          ne mahdollistavat erilaisten esineiden valmistamisen.
         tabText: Palvelulista
     recipeList:
       info:
@@ -81,85 +81,155 @@ singulars:
         unlocks: Kaikki avaukset
         unlocksDesc: Näe mitä sisältöä avautuu kehittämällä tätä taitoa.
       guides:
-        mining: "<object id=\"mining\" /> on keräilytaito joka on olennainen saadaksesi
-          <object id=\"ore\" /> ja muiden mineraalien keräämiseksi.\n\n<li><hl>Aloituspaikka</hl>:
-          Voit aloittaa <c>louhinnan</c> paikassa <object id=\"location-pit_of_pittance-49a851b8-0a55-4857-9492-907958733b09\"\
-          \ /> kun olet käyttänyt <object id=\"crafting\" /> taitoa tehdäksesi itsellesi
-          ensimmäisen <object id=\"pickaxe\" />.</li>\n\n<li><hl>Mistä löytää</hl>:
-          Vuoristopaikoissa ja luolissa on useimmiten <c>louhintaan</c> liittyviä
-          aktiviteetteja. Varmista kuitenkin että sinulla on <object id=\"miningTool\"\
-          \ /> mukanasi kun menet louhimaan.</li>\n\n<li><hl>Käyttötarkoitukset</hl>:
-          <object id=\"ore\" /> ja <object id=\"nugget\" />kerääminen louhimalla on
-          tarpeellista <object id=\"smithing\" /> taitoa varten. Toisinaan voit myös
-          löytää <object id=\"rough_gem\" /> jotka ovat hyödyllisiä <object id=\"\
-          trinketry\" /> taidon kehittämiseen.</li>\n"
-        agility: "<object id=\"agility\" /> on hyötytaito.\n\n<li><hl>Aloituspaikka</hl>:
-          <c>Ketteryyttä</c> kehitetään usein osana muita taitoja. Täten voit aloittaa
-          kehittämisen välittömästi <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
-          \ /> aktiviteetilla<object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
-          \ />. Taito on myöhemmin pelissä hyödyllinen kun siirryt muihin paikkoihin.
-          Hyödyllisiä esineitä alussa ovat <object id=\"skis\" /> tai <object id=\"\
-          climbingTool\" />.</li>\n\n<li><hl>Mistä löytää</hl>: Vainiot, vuoret ja
-          jotkin asutuskeskukset sisältävät <c>ketteryyteen</c> liittyviä aktiviteetteja.</li>\n\
-          \ \n<li><hl>Käyttötarkoitukset</hl>: Matkustaminen, oikotiet, ja satunnaisten
-          materiaalien löytäminen. Äärimmäisen tärkeä siirtyäksesi Arenumissa nopeammin,
-          sillä kehittäminen mahdollistaa nopeamman matkustamisen.</li>\n"
-        carpentry: "<object id=\"carpentry\" /> on puiden jalostamiseen liittyvä käsityötaito
-          ja jolla voi valmistaa <object id=\"plank\" />.\n\n<li><hl>Aloituspaikka</hl>:
+        mining: "<object id=\"mining\" /> on keräilytaito, jonka olennaisena tuotteena
+          on <object id=\"ore\" /> ja muut mineraalit.\n\n<li><hl>Aloituspaikka</hl>:
+          Voit aloittaa <c>louhinnan</c> etelässä; <object id=\"location-pit_of_pittance-49a851b8-0a55-4857-9492-907958733b09\"\
+          \ /> on hyvä kohde, mutta käytä ensin taitojasi ( <object id=\"crafting\"\
+          \ />) ja valmista itsellesi <object id=\"pickaxe\" />.</li>\n\n<li><hl>Mistä
+          löytää</hl>: Vuoristopaikoissa ja luolissa on useimmiten <c>louhintaan</c>
+          liittyviä aktiviteetteja. Varmista kuitenkin että sinulla on <object id=\"\
+          miningTool\" /> mukanasi kun lähdet louhimaan.</li>\n\n<li><hl>Käyttötarkoitus</hl>:
+          <object id=\"ore\" /> ja <object id=\"nugget\" /> ovat olennaisia syötteitä,
+          joita <object id=\"smithing\" /> jalostaa edelleen valmistusmateriaaleiksi.
+          Toisinaan vastaan voi tulla myös <object id=\"rough_gem\" />, jota puolestaan
+          <object id=\"trinketry\" /> hyödyntää ja muokkaa edelleen.</li>\n"
+        agility: "<object id=\"agility\" /> on hyötytaito, joka on ehdottoman tärkeä
+          matkustamiseen.\n\n<li><hl>Aloituspaikka</hl>: <c>Ketteryyttä</c> kehitetään
+          usein osana muita taitoja. Täten <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> sopii saman tien taidon kehittämiseen: <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
+          \ /> ja opit myös ketteryyttä. Taito on hyödyllinen myöhemmin pelissä, kun
+          siirryt paikasta toiseen, muttet löydä tähän taitoon keskittyviä aktiviteetteja
+          ennen kuin löydät hieman tarpeellisia varusteita. Hyödyllisiä esineitä alussa
+          ovat <object id=\"skis\" /> tai <object id=\"climbingTool\" />.</li>\n\n\
+          <li><hl>Mistä löytää</hl>: Vainiot, vuoret ja jotkin asutuskeskukset sisältävät
+          <c>ketteryyteen</c> liittyviä aktiviteetteja.</li>\n \n<li><hl>Käyttötarkoitus</hl>:
+          Matkustaminen, oikotiet, ja satunnaisten materiaalien löytäminen. Äärimmäisen
+          tärkeä siirtyäksesi Arenumissa nopeammin, ja taidon kehittäminen mahdollistaa
+          nopeamman matkustamisen.</li>\n"
+        carpentry: "<object id=\"carpentry\" /> on puiden jalostamiseen liittyvä käsityötaito,
+          jossa pääasiallinen tuotos on <object id=\"plank\" />.\n\n<li><hl>Aloituspaikka</hl>:
           Voit aloittaa <c>puutyöt</c> <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
-          \ /> tekemällä puutöihin liittyviä <icon i=\"crafting\" /> käsityöreseptejä
-          tai menemällä <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
-          \ /> ja valitsemalla aktiviteetiksesi <object id=\"activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d\"\
-          \ />.</li>\n\n<li><hl>Mistä löytää</hl>: Useimmista asutuskeskuksista löytyy
-          <object id=\"service_sawmill\" /> palvelu. Joistakin saattaa jopa löyty
-          <c>puutöihin</c> liittyviä aktiviteetteja.</li>\n\n<li><hl>Käyttötarkoitukset</hl>:
-          <object id=\"logs\" /> jalostaminen <object id=\"plank\" /> mitkä ovat erittäin
-          hyödyllistä <object id=\"crafting\" /> resepteissä.</li>\n"
-        cooking: "<object id=\"cooking\" /> on käsityötaito kulinaaristen <object
-          id=\"food\" /> herkkujen ja hyödykkeiden valmistukseen.\n\n<li><hl>Aloituspaikka</hl>:
-          Voit aloittaa <c>ruoanlaiton</c> <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
-          \ /> tekemällä <object id=\"a34e2643-5c41-4d15-94de-8df53d3d4c19\" /> tai
-          <object id=\"recipe_cooking\" /> reseptivaihtoehdoilla.</li>\n\n<li><hl>Mistä
-          löytää</hl>: Suuresta osasta asutuskeskuksia löytyy <object id=\"service_kitchen\"\
-          \ /> palvelu. Jossakin voi olla jopa keittiöitä jotka tarvitsevat apuaisi
-          <c>ruoanlaitto</c> aktiviteetteihin.</li>\n\n<li><hl>Käyttötarkoitukset</hl>:
-          <object id=\"fish\" /> ja <object id=\"ingredient\" /> valmistamiseen ja<object
-          id=\"food\" /> sekä <object id=\"beverage\" /> hyödykkeiden tekemiseksi.
-          Hyödykkeet antavat hahmollesi monenlaisia ominaisuuslisiä</li>\n"
-        crafting: "<object id=\"crafting\" /> on artesaanitaito jonka avulla voi luoda
-          monia hyödyllisiä työkaluja.\n\n<li><hl>Aloituspaikka</hl>: Voit aloittaa
-          <c>käsityöt</c> välittömästi ilmaisilla <object id=\"processed\" /> materiaaleilla
-          jotka saa \"Avuliaalta Herbertiltä\" paikassa <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
-          \ />. Materiaaleilla voit tehdä joitakin <icon i=\"crafting\" /> reseptivaihtoehtoja.</li>\n\
-          \ \n<li><hl>Mistä löytää</hl>: Suuresta osasta asutuskeskuksia löytyy <object
-          id=\"service_workshop\" /> palvelu, jota tarvitset jotta voit tehdä edistyneempiä
-          käsityöreseptejä. Joistakin paikoista voit löytää jopa joitakin <c>käsityö</c>
-          aktiviteetteja.</li>\n\n<li><hl>Käyttötarkoitukset</hl>: Tarvitset käsitöitä
-          yhdistääksesi <object id=\"bar\" />, <object id=\"plank\" />, ja <object
-          id=\"processed\" /> esineitä ja luomaan <object id=\"woodcuttingTool\" />,
-          <object id=\"miningTool\" />, <object id=\"fishingTool\" /> tai <object
-          id=\"foragingTool\" /> joista on paljon hyöty niihin liittyvissä taidoissa.</li>\n"
-        fishing: "<object id=\"fishing\" /> on olennainen keräilytaito pyytääksesi
-          <object id=\"fish\" />.\n\n<li><hl>Aloituspaikka</hl>: <c>Kalastuksen</c>
-          voi aloittaa <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
-          \ /> kun olet tehnyt <object id=\"crafting\" /> taidolla itsellesi <object
-          id=\"fishingNet\" />.</li>\n\n<li><hl>Mistä löytää</hl>: Useimmista veden
-          lähettyvillä olevista paikoista löytyy <c>kalastukseen</c> liittyviä aktiviteetta.
-          Varmista, että sinulla on kalastusaktiviteettiin vaadittava <object id=\"\
-          fishingTool\" />.</li>\n\n<li><hl>Käyttötarkoitukset</hl>: <object id=\"\
-          fish\" /> on olennaista pyytää jotta voit <object id=\"cooking\" /> taidolla
-          kokata niistä <object id=\"cookedFish\" />, joita puolestaan voi käyttää
-          saadaksesi hetkellisiä ominaisuuslisiä muihin taitoihisi.</li>\n"
-        foraging: "<object id=\"foraging\" /> on keräilytaito joka on olennainen saadaksesi
-          <object id=\"plant\" />.\n\n<li><hl>Aloituspaikka</hl>: Voit aloittaa <c>keräilyn</c>
-          välittömästi ollessasi <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
-          \ /> tekemällä aktiviteettia <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
-          \ />.</li>\n\n<li><hl>Mistä löytää</hl>: Useimmista luontopaikoista (kuten
-          tasangot, metsät, kukkulat, vuoret, rannat) löytyy <c>keräilyyn</c> liittyviä
-          aktiviteetteja. Jotkin asutuskeskukset ja luolat sisältävät myös keräilyaktiviteetteja.</li>\n\
-          \ \n<li><hl>Käyttötarkoitukset</hl>: <object id=\"plant\" /> materiaalien
-          keräämiseen, joista osa on <object id=\"ingredient\" /> esineitä, mitä voi
-          käyttää muissa taidoissa kuten <skill skill=\"crafting\"/> ja <skill skill=\"\
+          \ /> tekemällä puutöihin liittyviä <icon i=\"crafting\" /> käsityöreseptejä,
+          minkä lisäksi <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
+          \ /> tarjoaa taitoon liittyvän aktiviteettimahdollisuuden <object id=\"\
+          activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d\" />.</li>\n\
+          \n<li><hl>Mistä löytää</hl>: Useimpien asutuskeskusten palveluista löytyy
+          <object id=\"service_sawmill\" />. Joistakin saattaa jopa löytyä <c>puutöihin</c>
+          liittyviä aktiviteetteja.</li>\n\n<li><hl>Käyttötarkoitus</hl>: <object
+          id=\"logs\" /> jalostuu uuteen muotoon, ja tuotettu <object id=\"plank\"\
+          \ /> on onnen omiaan <object id=\"crafting\" />-resepteissä.</li>\n"
+        cooking: "<object id=\"cooking\" /> on käsityötaito, jonka päätuotteena on
+          <object id=\"food\" /> - erilaiset makuhermoja kutkuttavat herkut ja hyödykkeet.\n\
+          \n<li><hl>Aloituspaikka</hl>: <c>Ruoanlaiton</c> aloitukseen soveltuu <object
+          id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\" />, jossa
+          on tarjolla <object id=\"a34e2643-5c41-4d15-94de-8df53d3d4c19\" />; lisäksi
+          siellä on mahdollista kokeilla <object id=\"recipe_cooking\" /> jos toinenkin.</li>\n\
+          \n<li><hl>Mistä löytää</hl>: Suuresta osasta asutuskeskuksia löytyy <object
+          id=\"service_kitchen\" /> palveluna. Jossakin voi olla jopa keittiöitä jotka
+          tarvitsevat apuaisi <c>ruoanlaittoaktiviteettien</c> muodossa.</li>\n\n\
+          <li><hl>Käyttötarkoitus</hl>: <object id=\"fish\" /> ja <object id=\"ingredient\"\
+          \ /> valmistuvat, ja lopputuloksena saatava <object id=\"food\" /> ja <object
+          id=\"beverage\" /> ovat hyödykkeitä, jotka tehostavat monenlaisia hahmosi
+          ominaisuuksia.</li>\n"
+        crafting: "<object id=\"crafting\" /> on käsityötaito, jonka avulla voit luoda
+          hyödyllisiä työkaluja.\n\n<li><hl>Aloituspaikka</hl>: Voit aloittaa <c>käsityöt</c>
+          välittömästi, Avulias Herbert tarjoaa materiaaleja (<object id=\"processed\"\
+          \ />) heti kotinurkillaan ( <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ />). Materiaaleilla voit valmistaa joitakin <icon i=\"crafting\" /> reseptejä.</li>\n\
+          \ \n<li><hl>Mistä löytää</hl>: Suuresta osasta asutuskeskuksia löytyy palveluna
+          <object id=\"service_workshop\" />, jota tarvitset edistyneempien käsityöreseptien
+          valmistamiseen. Joistakin paikoista voit löytää jopa joitakin <c>käsityöaktiviteetteja</c>.</li>\n\
+          \n<li><hl>Käyttötarkoitus</hl>: Käsitöissä yhdistyy <object id=\"bar\" />,
+          <object id=\"plank\" />, ja muu <object id=\"processed\" /> materiaali yhteen,
+          ja sen lopputuloksena voi olla <object id=\"woodcuttingTool\" />, <object
+          id=\"miningTool\" />, <object id=\"fishingTool\" /> tai <object id=\"foragingTool\"\
+          \ />, joista on paljon iloa niihin liittyvissä taidoissa.</li>\n"
+        fishing: "<object id=\"fishing\" /> on olennainen keräilytaito, jonka tuotteena
+          on <object id=\"fish\" />.\n\n<li><hl>Aloituspaikka</hl>: <c>Kalastuksen</c>
+          voi aloittaa hieman länteen siirtymällä; <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
+          \ /> tarjoaa tähän aktiviteettia, mutta käytä ensin taitojasi (<object id=\"\
+          crafting\" />) ja valmista itsellesi <object id=\"fishingNet\" />, joka
+          on tässä olennainen työväline.</li>\n\n<li><hl>Mistä löytää</hl>: Useimmista
+          veden lähettyvillä olevista paikoista löytyy <c>kalastukseen</c> liittyviä
+          aktiviteetta. Varmista, että sinulla on aktiviteettiin soveltuva <object
+          id=\"fishingTool\" />.</li>\n\n<li><hl>Käyttötarkoitus</hl>: <object id=\"\
+          fish\" /> jalostuu edelleen toisen taidon ( <object id=\"cooking\" />) avulla
+          muotoon <object id=\"cookedFish\" />, jonka käyttämällä voit saada hetkellisiä
+          parannuksia muihin taitoihisi.</li>\n"
+        foraging: "<object id=\"foraging\" /> on keräilytaito, jonka olennaisin tuotos
+          on <object id=\"plant\" />.\n\n<li><hl>Aloituspaikka</hl>: Voit aloittaa
+          <c>keräilyn</c> välittömästi; <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> on täynnä kasveja, joita voit kerätä aktiviteetin <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
+          \ /> avulla.</li>\n\n<li><hl>Mistä löytää</hl>: Useimmista luontokohteista
+          (kuten tasangoilta, metsistä, kukkuloilta, vuorilta ja rannoilta) löytyy
+          <c>keräilyaktiviteetteja</c>. Jotkin asutuskeskukset ja luolat saattavat
+          myös mahdollistaa keräilyn.</li>\n \n<li><hl>Käyttötarkoitus</hl>: <object
+          id=\"plant\" /> jalostuu edelleen eri tarkoituksiin, jos se on <object id=\"\
+          ingredient\" />, sitä voi käyttää muiden taitojen resepteissä, mukaanlukien
+          <skill skill=\"crafting\"/> ja <skill skill=\"cooking\"/>.</li>\n"
+        smithing: "<object id=\"smithing\" /> on käsityötaito, jossa sulatetaan ensin
+          malmista <object id=\"bar\" /> ja mahdollisesti muovataan tästä monimutkaisemia
+          esineitä.\n\n<li><hl>Aloituspaikka</hl>: <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> on hyvä paikka <c>taonnan</c> harjoitteluun; siellä on saatavilla <object
+          id=\"745d4e6f-5c6a-45a3-a98d-fc88f63bbb25\" /> ja materiaaleja löydettyäsi
+          voit valmistaa <icon i=\"crafting\" /> resepteillä</li> uusia esineitä.\n\
+          \n<li><hl>Mistä löytää</hl>: Useimmissa kaupungeissa saattaa olla <object
+          id=\"service_forge\" /> palveluna, ja joissakin voi olla <c>taontaan</c>
+          liittyviä aktiviteetteja.</li>\n\n<li><hl>Käyttötarkoitus</hl>: <object
+          id=\"ore\" /> ja <object id=\"nugget\" /> muuntuvat hyötymuotoon (<object
+          id=\"bar\" />) jota voi edelleen käyttää erilaisissa jatkoresepteissä (<object
+          id=\"crafting\" /> ja <object id=\"trinketry\" />).</li>\n"
+        tailoring: "<object id=\"tailoring\" /> on käsityötaito, jossa valmistetaan
+          <object id=\"processed\" /> tuote ompelemalla, ja valmistetaan voimaannuttavia
+          pukineita.\n\n<li><hl>Aloituspaikka</hl>: Voit aloittaa <c>räätälintyön</c>
+          kun vastaasi tulee soveltuva <object id=\"plant\" />, jota voit käyttää
+          materiaaliksi - <object id=\"foraging\" /> auttaa tässä etsinnässä - saadaksesi
+          aikaan aloittelijan jatkojalostusreseptejä (<icon i=\"crafting\" />).</li>\n\
+          \n<li><hl>Mistä löytää</hl>: Joissakin paikoissa voi olla parempi todennäköisyys
+          löytää <object id=\"service_loom\" /> palveluna, ja joudut etsiytymään tällaiselle
+          alueelle löytääksesi tukea korkeamman tason räätälintyöresepteille. Tällaisilla
+          alueilla saattaa myös olla <c>räätälintyöhön</c> liittyviä aktiviteetteja.</li>\n\
+          \n<li><hl>Käyttötarkoitus</hl>: <object id=\"plant\" /> muuntuu materiaalina
+          muotoon<object id=\"processed\" />, jonka jälkeen materiaalit voidaan yhdistää
+          soveltuvien kangasmateriaalien kanssa uusien, taitojasi tehostavien varusteiden
+          valmistamiseksi.</li>\n"
+        woodcutting: "<object id=\"woodcutting\" /> on keräilytaito, onka avulla kerätään
+          puumateriaalia. Työn olennaisin tulos on <object id=\"logs\" />.\n\n<li><hl>Aloituspaikka</hl>:
+          <c>Puunhakkuun</c> lähin aloituspaikka on <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ />. Tarvitset ensin tähän työkalun; jos <object id=\"crafting\" /> sujuu,
+          voit katsoa syntyisikö ensimmäinen <object id=\"woodcuttingHatchet\" />
+          omin voimin.</li>\n\n<li><hl>Mistä löytää</hl>: Useimmissa metsissä on jonkinlainen
+          <c>puunhakkuuaktiviteetti</c> saatavilla, kunhan mukanasi on soveltuva <object
+          id=\"woodcuttingTool\" />.</li>\n\n<li><hl>Käyttötarkoitus</hl>: <object
+          id=\"logs\" />, jonka saat metsästä, jalostuu jatkomateriaaliksi kun <object
+          id=\"carpentry\" /> muuntaa sen lankuiksi. Ajoittain <object id=\"woodcuttingTrees\"\
+          \ /> voi myös palkita yllättävillä yllätyksillä, kun vastaan tupsahtaa <object
+          id=\"item-bird_nest-c459d244-4ef3-41c1-a911-01e18efaeec1\" />, jonka sisältä
+          voi tehdä muita hyödyllisiä löytöjä.</li>\n"
+        trinketry: "<object id=\"trinketry\" /> on käsityötaito, jossa <object id=\"\
+          gem\" /> on pääasiallisena materiaalina korujen valmistuksessa.\n\n<li><hl>Aloituspaikka</hl>:
+          Voit päästä alkuun <c>korutöiden</c> kanssa ennen kuin löydät jalokiviä.
+          Jos vastaasi tulee soveltuva <object id=\"plant\" /> jonkin <object id=\"\
+          foraging\" /> -aktiviteetin aikana, voit käyttää sitä <icon i=\"crafting\"\
+          \ />reseptivalikon</li> kautta korutöihin.\n\n<li><hl>Mistä löytää</hl>:
+          Rikkaammilla alueilla on todennäköisemmin saatavilla <object id=\"service_trinketry_bench\"\
+          \ /> palveluna, joka sinun pitää löytää vaikeampien korutyöreseptien valmistuksessa.
+          Saatat myös löytää samoilta alueilta paikan, jossa on <c>korutyöaktiviteetteja</c>.</li>\n\
+          \n<li><hl>Käyttötarkoitus</hl>: <object id=\"rough_gem\" /> lähtökohtanasi
+          ensimmäinen jalostuksen aste on <object id=\"cut_gem\" />. Kun saat kerättyä
+          näitä tai jotain kautta vastaan tulee harvinainen <object id=\"item_trinket\"\
+          \ /> tai pari, näistä voi valmistaa koruja; metalliksi tarvitaan soveltuvan
+          jalo <object id=\"bar\" /> ja tuotoksen muoto voi tällöin olla <object id=\"\
+          item_ring\" /> tai <object id=\"item_amulet\" />, joka tehostaa taitojasi.</li>\n"
+        hunting: "<object id=\"hunting\" /> on keräilytaito, jossa saaliista syntyy
+          <object id=\"ingredient\" />.\n\n<li><hl>Aloituspaikka</hl>: Voit aloittaa
+          <c>metsästyksen</c> saman tien, <object id=\"location\" /> tarjoaa tähän
+          liittyvän aktiviteetin <object id=\"activity\" />.</li>\n\n<li><hl>Mistä
+          löytää</hl>: Useimmat luontokohteet (tasangot, metsät, mäkiset tai vuoriset
+          alueet, rannat) voivat tukea <c>metsästysaktiviteetteja</c>, minkä lisäksi
+          näitä voi tulla vastaan myös asutusalueilla ja luolissa.</li>\n\n<li><hl>Käyttötarkoitusr</hl>:
+          Keräilystä saadaan <object id=\"ingredient\" />, joka soveltuu käytettäväksi
+          muissa taidoissa, kuten <skill skill=\"crafting\"/> tai <skill skill=\"\
           cooking\"/>.</li>\n"
   phrases:
     home:
