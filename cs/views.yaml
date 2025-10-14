@@ -163,7 +163,7 @@ plurals:
         many: '{} bodu úspěchu'
         one: '{} bod úspěchu'
         other: '{} bodů úspěchů'
-        two: '-'
+        two: '{} bodů úspěchu'
         zero: '-'
   activity:
     phrases:
@@ -172,49 +172,49 @@ plurals:
         many: '-'
         one: Zbývající akce
         other: Zbývajících akcí
-        two: '-'
+        two: 'Zbývajících akcí'
         zero: '-'
       actionsToLevelUp:
         few: Akce pro zvýšení úrovně
         many: Akce pro zvýšení úrovně
         one: Akce pro zvýšení úrovně
         other: Akcí pro zvýšení úrovně
-        two: '-'
+        two: 'Akcí pro zvýšení úrovně'
         zero: '-'
       stepsRemainingInTotal:
         few: '-'
         many: '-'
         one: Zbývající krok celkem
         other: Zbývajících kroků celkem
-        two: '-'
+        two: 'Celkem zbývajících kroků'
         zero: '-'
       stepsRequired:
         few: Potřebné kroky
         many: Potřebného kroku
         one: Potřebný krok
         other: Potřebných kroků
-        two: '-'
+        two: 'Požadované kroky'
         zero: '-'
       stepsToCraft:
         few: Kroky do vyrobení
         many: Kroku do vyrobení
         one: Krok do vyrobení
         other: Kroků do vyrobení
-        two: '-'
+        two: 'Kroky k výrobě'
         zero: '-'
       stepsToLevelUp:
         few: Kroky do zvýšení úrovně
         many: Kroku do zvýšení úrovně
         one: Krok do zvýšení úrovně
         other: Kroků do zvýšení úrovně
-        two: '-'
+        two: 'Kroky k postupu na vyšší úroveň'
         zero: '-'
       stepsUntilArrival:
         few: Kroky do příchodu
         many: Kroku do příchodu
         one: Krok do příchodu
         other: Kroků do příchodu
-        two: '-'
+        two: 'Kroky do příchodu'
         zero: '-'
       actions:
         few: '-'
@@ -237,6 +237,13 @@ plurals:
         other: <icon i="Steps"/> <c>{} kroků</c> požadované na akci
         zero: '-'
         one: <icon i="Steps"/> <c>{} krok</c> požadovaný na akci
+      workEfficiency:
+        zero: '-'
+        one: Efektivita práce
+        two: Efektivita práce
+        few: '-'
+        many: '-'
+        other: Efektivita práce
   inventory:
     info:
       consumableDuration:
@@ -296,7 +303,7 @@ singulars:
       unclaimedRewards: 'Nevyzvednuté odměny: '
       totalProgressUnlocks: Odměny za celkový pokrok
       checkPointUnlocks: Odměny za určitý počet bodů
-      collectiblesCount: Sběratelské předměty <icon i="Achievement Point"/> <c i=0>${count}</c>
+      collectiblesCount: Sběratelské předměty <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
   crafting:
     phrases:
@@ -642,6 +649,7 @@ singulars:
       startingSentry: Spouštění Sentry...
       startingTimeManagerProcess: Spouštění procesu správce času
       spawningIsolate: Tření izolátu...
+      startingOTAManagerProcess: Spuštění procesu správy aktiv
     phrases:
       deleteWord: SMAZAT
       createCharacter: Vytvořit novou postavu
@@ -1045,3 +1053,7 @@ singulars:
       announcementInfo: Zde najdete <c>oznámení</c> napsaná vývojáři. Vývojářské blogy,
         protokoly změn a systémová oznámení jsou skvělým způsobem, jak se informovat
         o postupu vývoje a výpadcích serveru!
+  download:
+    phrases:
+      downloadingAssets: Stahování dat...
+      downloadedFileCount: Staženo <c i=0>{current}</c> z <c i=1>{total}</c> souborů
