@@ -211,7 +211,7 @@ singulars:
       totalProgressUnlocks: Total progress unlocks
       checkPointUnlocks: Check point unlocks
       unclaimedRewards: 'Unclaimed rewards: '
-      collectiblesCount: Collectibles <icon i="Achievement Point"/> <c i=0>${count}</c> <c i=1>/ {maxCount}</c>
+      collectiblesCount: Collectibles <icon i="Achievement Point"/> <c i=0>{count}</c> <c i=1>/ {maxCount}</c>
   crafting:
     phrases:
       materials: Materials
@@ -547,6 +547,10 @@ singulars:
     phrases:
       noMoreMessages: No more tutorial messages
       youWillGain: You will gain the following item(s) if you select this option.
+  download:
+    phrases:
+      downloadingAssets: Downloading assets...
+      downloadedFileCount: Downloaded <c i=0>{current}</c> of <c i=1>{total}</c> files
   leaderboards:
     phrases:
       show: Show
@@ -621,6 +625,7 @@ singulars:
       startingAuthProcess: Starting auth process
       startingTimeManagerProcess: Starting time manager process
       startingNotificationManagerProcess: Starting notification manager process
+      startingOTAManagerProcess: Starting asset manager process
       spawningIsolate: Spawning isolate...
       loadingLocalStorage: Loading local storage...
       startingSettingsManagerProcess: Starting settings manager process
@@ -769,6 +774,13 @@ plurals:
         few: '-'
         many: '-'
         other: '<icon i="Steps"/> <c>{} steps</c> required per action'
+      workEfficiency:
+        zero: '-'
+        one: Work efficiency
+        two: Work efficiency
+        few: '-'
+        many: '-'
+        other: Work efficiency
 maps:
   shop:
     phrases:
