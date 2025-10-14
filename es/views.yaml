@@ -119,6 +119,21 @@ maps:
       'leaderboardType': Tablas de clasificación
       'language': Idioma
       'leaderboardFilter': Mostrar
+    leaderboardType:
+      'crafting': Nivel de <c>Fabricación</c>
+      'fishing': Nivel de <c>Pesca</c>
+      'foraging': Nivel de <c>Recolección</c>
+      'achievementPoints': <c>Puntos de logro</c>
+      'totalLevel': <c>Nivel</c> total
+      'totalXp': <c>Experiencia</c> total
+      'totalSteps': <c>Pasos</c> totales
+      'agility': Nivel de <c>Agilidad</c>
+      'carpentry': Nivel de <c>Carpintería</c>
+      'cooking': Nivel de <c>Cocina</c>
+      'mining': Nivel de <c>Minería</c>
+      'smithing': Nivel de <c>Herrería</c>
+      'trinketry': Nivel de <c>Joyería</c>
+      'woodcutting': Nivel de <c>Tala</c>
   shop:
     phrases:
       itemType:
@@ -290,6 +305,8 @@ singulars:
       showRewards: Mostrar recompensas
       totalProgressUnlocks: Desbloqueos de progreso total
       checkPointUnlocks: Desbloqueos de hito
+      collectiblesCount: Coleccionables <icon i="Achievement Point"/> <c i=0>${count}</c>
+        <c i=1>/ {maxCount}</c>
   crafting:
     phrases:
       materials: Materiales
@@ -305,6 +322,7 @@ singulars:
         en tu inventario.
       showingRecipiesThatUses: Mostrando recetas que usan
       requiresService: Requiere un servicio.
+      allSkills: Todas las habilidades
     errors:
       notSameQuality: Todos los materiales han de ser de calidad o normales
       noService: No se cumplen los requisitos de servicio
@@ -545,6 +563,10 @@ singulars:
       startingSettingsManagerProcess: Iniciando procedimiento de administrador de
         ajustes
       startingSentry: Iniciando Sentry...
+      spawningIsolate: Generando aislados...
+    isolates:
+      mainIsolate: Aislado Principal
+      workerIsolate: Aislado Obrero
   activity:
     info:
       consumablesUsage: Puedes elegir una <c>comida</c> y una <c>poción</c> para usar
@@ -623,12 +645,34 @@ singulars:
       comingSoonToAndroid: Próximamente para Android
       changeStepCountingSource: Cambiar el origen del contador de pasos
       stepCountingSource: Origen del contador de pasos
+      noDeviceFoundAndroid: No se ha encontrado dispositivo. Por favor, asegúrate
+        de haber pulsado el botón superior <c>Conectar a Health Connect</c> y haber
+        concedido permisos para leer datos de Health Connect.
+      connectHealthConnect: Conectar a Health Connect
+      installHealthConnect: Instalar Health Connect
+      connectSamsungHealth: Conectar a Samsung Health
+      connectSamsungHealthExplanation: Si usas dispositivos Samsung, necesitas conectarte
+        a Samsung Health para poder leer los pasos sincronizados por tu reloj. Si
+        es tu primera vez usando WalkScape, se te pedirá permiso para leer datos de
+        Samsung Health.
+      installHealthConnectExplanation: Health Connect es necesario para leer los pasos
+        de tus dispositivos. Primero debes instalarlo pulsando el botón de arriba
+        y luego conectarte a él.
+      connectHealthConnectExplanation: Necesitas conectarte a Google Connect para
+        que podamos leer los pasos sincronizados por tu reloj y ver qué dispositivos
+        tienes conectados. Si es tu primera vez usando WalkScape, se te pedirá permiso
+        para leer datos de Google Connect.
+      samsungHealthConnectedInfo: ¡Samsung Health está conectado! El juego leerá tanto
+        los pasos de tus dispositivos vinculados a Samsung Health como los pasos registrados
+        en tu teléfono.
     deviceSource:
       phone: Teléfono
       appleWatch: Apple Watch
-      watch: Otro reloj
+      watch: Otro dispositivo
       featureDisabled: El cambio de origen ha sido deshabilitado remotamente por el
         momento. Se usará por defecto el podómetro del teléfono.
+      watchAndroid: Health Connect
+      samsungHealth: Samsung Health
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> El <c>Teléfono</c> es el origen recomendado
         por defecto para contar pasos en WalkScape. Para actividades deportivas intensas,
@@ -658,6 +702,24 @@ singulars:
         alguna configuración extra y conocimientos técnicos.\n\n<bp /> Necesitas conceder
         permisos extra para leer los datos desde Salud de Apple para conectar tu reloj.\n\
         \n<bp /> Solo los pasos recogidos por tu reloj serán registrados en el juego.\n"
+      watchAndroid: "WalkScape lee tus pasos desde <c>Health Connect</c>. Para sincronizar
+        los pasos de tu <icon i=\"Watch small\" /> <c>reloj</c>, necesitas instalar
+        una aplicación de terceros que sincronice tus pasos con <c>Health Connect</c>,
+        como FitBit, Garmin Connect o Galaxy Health.\n\n<bp /> <c i=2>Necesitas sincronizar
+        tus pasos con Health Connect a través de otras aplicaciones</c> para que cualquier
+        paso se cuente en WalkScape.\n\n<bp /> El proceso de sincronización con <c>Health
+        Connect</c> depende del fabricante. Esto puede requerir configuración adicional
+        y conocimientos técnicos.\n\n<bp /> Debes conceder permisos adicionales para
+        leer datos de <c>Health Connect</c> y conectar tu reloj.\n\n<bp /> Solo se
+        registran en el juego los pasos que reporta tu reloj."
+      samsungHealth: "WalkScape lee tus pasos desde <c>Samsung Health</c>. Tus pasos
+        de todos tus <icon i=\"Watch small\" /> <c>dispositivos</c> compatibles con
+        Samsung Health y los pasos de tu <icon i=\"Phone small\" /> <c>teléfono</c>
+        se sincronizan con el juego.\n\n<bp /> <c i=2>Necesitas sincronizar tus pasos
+        con Samsung Health a través de tus dispositivos</c> para que WalkScape los
+        tenga en cuenta.\n\n<bp /> Debes conceder permisos adicionales para que el
+        juego pueda leer los datos de <c>Samsung Health</c> y sincronizar tus pasos.\n\
+        \n<bp /> Solo se registran en el juego los pasos que informa Samsung Health."
   rewards:
     phrases:
       alreadyClaimed: Ya reclamado
@@ -758,9 +820,16 @@ singulars:
       stepSourceInfoDesc: Pulsa el botón inferior para ver más información acerca
         del origen de los pasos y sus diferencias.
       stepSourceInfo: Información sobre origen de pasos
-      connectionInfoAndroid: Próximamente, soporte para relojes inteligentes Android.
-        Actualmente solo el teléfono es compatible como origen para contar pasos.
+      connectionInfoAndroid: Si tus dispositivos no aparecen en la lista anterior,
+        asegúrate de haber concedido a WalkScape el permiso para usar los datos de
+        pasos desde Health Connect en <c>Ajustes ➤ Seguridad y Privacidad ➤ Privacidad
+        ➤ Health Connect ➤ Permisos de aplicaciones</c> y de que Health Connect haya
+        registrado pasos de esos dispositivos en los últimos 7 días.
       gameVersion: Versión del juego {versión}
+      comingSoonToAndroid: El soporte para relojes inteligentes en Android llegará
+        pronto. Actualmente, solo el teléfono es compatible como fuente para contar
+        pasos.
+      updateAvailableSources: Actualiza fuentes disponibles
   leaderboards:
     phrases:
       first: Primero
@@ -840,6 +909,8 @@ singulars:
       lastUpdated: 'Última actualización a: <c>{updatedAt}</c>.'
       highestStepsIn24Hours: Más pasos en 24h
       reputation: Reputación
+      statUpdatesWithDelay: Esta estadística se actualiza con un retraso de hasta
+        <c>una hora</c>.
     info:
       stats: Recopilación de estadísticas de cada paso que has dado por el mundo de
         Arenum.
@@ -862,6 +933,8 @@ singulars:
       manageFriends: Administrar social
       pendingInvites: Invitaciones pendientes
       friends: Amigos
+      enterAtLeastChars: Introduce al menos 3 caracteres para buscar.
+      countResultsFound: '{count} resultados encontrados'
   bank:
     phrases:
       noItemsInventory: No hay objetos en tu inventario.
