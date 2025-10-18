@@ -236,6 +236,13 @@ plurals:
         two: <icon i="Steps"/>{} <c>askelta</c> toimintoa kohti
         few: '-'
         many: '-'
+      workEfficiency:
+        zero: '-'
+        one: Työtehokkuus
+        two: Työtehokkuus
+        few: '-'
+        many: '-'
+        other: Työtehokkuus
   achievements:
     phrases:
       achievementPoint:
@@ -304,7 +311,7 @@ singulars:
       totalProgressUnlocks: Kokonaisetenemisen palkinnot
       checkPointUnlocks: Etappien palkinnot
       unclaimedRewards: 'Lunastamattomat palkinnot: '
-      collectiblesCount: Keräilyesineitä <icon i="Achievement Point"/> <c i=0>{count}</c>
+      collectiblesCount: Keräilyesineet <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
   crafting:
     phrases:
@@ -880,6 +887,7 @@ singulars:
       loadingLocalStorage: Ladataan paikallinen tallennustila...
       startingSettingsManagerProcess: Käynnistetään asetustenhallinta
       startingSentry: Käynnistetään Vartiotorni...
+      startingOTAManagerProcess: Käynnistetään nättien asioiden hallinta
     isolates:
       mainIsolate: Pääeriö
       workerIsolate: Toimituseriö
@@ -1063,3 +1071,7 @@ singulars:
         etenemisestä sekä ajoista, jolloin palvelin ei ole saatavilla.
       noMoreAnnouncements: Olet päässyt tiedotteiden loppuun! Ei muita näytettäviä
         tiedotteita.
+  download:
+    phrases:
+      downloadingAssets: Ladataan nätteäj asioita...
+      downloadedFileCount: Ladattu <c i=0>{current}</c> / <c i=1>{total}</c> tiedostoa
