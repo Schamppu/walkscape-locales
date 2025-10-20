@@ -298,6 +298,8 @@ singulars:
       totalProgressUnlocks: Całkowity postęp odblokowań
       checkPointUnlocks: Odblokowania progowe punktów
       unclaimedRewards: 'Nieodebrane nagrody: '
+      collectiblesCount: Znajdźki <icon i="Achievement Point"/> <c i=0>{count}</c>
+        <c i=1>/ {maxCount}</c>
   crafting:
     phrases:
       materials: Materiały
@@ -465,13 +467,33 @@ singulars:
       comingSoonToAndroid: Wkrótce dostępne na Android
       changeStepCountingSource: Zmień źródło zliczania kroków
       stepCountingSource: Źródło zliczania kroków
+      installHealthConnect: Zainstaluj Health Connect
+      installHealthConnectExplanation: Aplikacja Health Connect jest wymagana do odczytywania
+        kroków z urządzeń noszonych. Najpierw musisz ją zainstalować, naciskając przycisk
+        powyżej, a następnie nawiązać połączenie.
+      noDeviceFoundAndroid: Nie znaleziono urządzenia. Upewnij się, że nacisnąłeś
+        przycisk <c>Połącz z Health Connect</c> powyżej i udzieliłeś zgody na odczyt
+        danych Health Connect.
+      connectSamsungHealthExplanation: Jeśli korzystasz z urządzeń Samsung, musisz
+        połączyć się z aplikacją Samsung Health, aby odczytać kroki zsynchronizowane
+        z zegarkiem. Jeśli korzystasz z aplikacji WalkScape po raz pierwszy, zostaniesz
+        poproszony o zgodę na odczyt danych z aplikacji Samsung Health.
+      samsungHealthConnectedInfo: Samsung Health jest połączony! Gra odczyta zarówno
+        kroki z urządzeń noszonych połączonych z Samsung Health, jak i kroki z telefonu.
+      connectHealthConnect: Połącz się z Health Connect
+      connectSamsungHealth: Połącz się z Samsung Health
+      connectHealthConnectExplanation: Musisz połączyć się z Google Connect, abyśmy
+        mogli odczytać kroki zsynchronizowane z Twoim zegarkiem i sprawdzić, które
+        urządzenia zostały połączone. Jeśli korzystasz z WalkScape po raz pierwszy,
+        zostaniesz poproszony o zgodę na odczyt danych z Google Connect.
     deviceSource:
       featureDisabled: Zmienianie źródła zliczania kroków zostało odgórnie tymczasowo
         wyłączone. Podstawowy system zliczania z telefonu zostanie zastosowany.
       appleWatch: Zegarek Apple
       phone: Telefon
-      watch: Inny zegarek
+      watch: Inne urządzenia do noszenia
       samsungHealth: Samsung Health
+      watchAndroid: Health Connect
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> <c>Telefon</c> jest podstawowym i rekomendowanym
         źródłem zliczania kroków w WalkScape. Do intensywnych sportów zalecamy użycie
@@ -501,6 +523,24 @@ singulars:
         \ \n<bp /> Musisz nadać dodatkowe uprawnienia do odczytu danych z Apple Health,
         by połączyć zegarek.\n\n<bp /> Tylko kroki zliczone poprzez twój zegarek są
         odczytywane w grze.\n"
+      samsungHealth: "WalkScape odczytuje Twoje kroki z <c>Samsung Health</c>. Twoje
+        kroki ze wszystkich urządzeń <icon i=\"Watch small\" /> <c>urządzeń noszonych</c>
+        zgodnych z Samsung Health oraz kroki z <icon i=\"Phone small\" /> <c>telefonu</c>
+        są synchronizowane z grą.\n\n<bp /> <c i=2>Aby kroki były liczone w WalkScape,
+        musisz zsynchronizować swoje kroki z Samsung Health za pośrednictwem urządzeń</c>.\n\
+        \n<bp />Aby zsynchronizować kroki z grą, musisz udzielić dodatkowych uprawnień
+        do odczytu danych z <c>Samsung Health</c>.\n\n<bp /> W grze rejestrowane są
+        tylko kroki raportowane przez Samsung Health."
+      watchAndroid: "WalkScape odczytuje Twoje kroki z <c>Health Connect</c>. Aby
+        zsynchronizować kroki z <icon i=\"Watch small\" /> <c>zegarka</c>, musisz
+        zainstalować aplikację innej firmy, która synchronizuje Twoje kroki z <c>Health
+        Connect</c>, taką jak FitBit, Garmin Connect lub Galaxy Health.\n\n<bp />
+        <c i=2>Aby kroki były liczone w WalkScape, musisz zsynchronizować swoje kroki
+        z Health Connect za pośrednictwem innych aplikacji</c>.\n\n<bp /> Proces synchronizacji
+        kroków z <c>Health Connect</c> zależy od producenta. Może to wymagać dodatkowej
+        konfiguracji i wiedzy technicznej.\n\n<bp /> Aby połączyć zegarek, musisz
+        udzielić dodatkowych uprawnień do odczytu danych z <c>Health Connect</c>.\n\
+        \n<bp /> W grze rejestrowane są tylko kroki rejestrowane przez zegarek."
   rewards:
     phrases:
       alreadyClaimed: Już odebrano
@@ -642,10 +682,16 @@ singulars:
         Health w <c>Ustawienia ➤ Prywatność & Bezpieczeństwo ➤ Zdrowie ➤ (pod Aplikacje)
         WalkScape</c> oraz upewnij się, że Apple Health zarejestrowało kroki na tych
         urządzeniach w ciągu ostatnich 7 dni.
-      connectionInfoAndroid: Wsparcie smart watchy na Android już wkrótce. Aktualnie
-        tylko telefon jest wspierany jako źródło zliczania kroków.
+      connectionInfoAndroid: Jeśli Twoje urządzenia noszone nie wyświetlają się na
+        liście powyżej, upewnij się, że udzieliłeś aplikacji WalkScape pozwolenia
+        na korzystanie z danych o krokach z Health Connect w <c>Ustawienia ➤ Bezpieczeństwo
+        i prywatność ➤ Prywatność ➤ Health Connect ➤ Uprawnienia aplikacji </c> oraz
+        że aplikacja Health Connect zarejestrowała kroki dla tych urządzeń w ciągu
+        ostatnich 7 dni.
       gameVersion: Wersja gry {version}
       updateAvailableSources: Zaktualizuj dostępne źródła
+      comingSoonToAndroid: Obsługa smartwatchy z systemem Android będzie wkrótce dostępna.
+        Obecnie tylko telefon obsługuje liczenie kroków.
   characterCreation:
     phrases:
       race: Rasa
