@@ -41,6 +41,20 @@ singulars:
         kroków z zegarka. Możesz zmienić na <icon i="Phone small" /> <c>Telefon</c>
         jako źródło kroków poprzez <c>Ustawienia</c>.
       title: Kroki nie są zliczane w czasie rzeczywistym
+      textAndroid: Podczas korzystania z innego urządzenia niż <icon i="Phone small"
+        /> <c>Telefon</c> jako źródła kroków, kroki nie są liczone w czasie rzeczywistym.
+        W zależności od noszonego urządzenia, może być konieczne ręczne zsynchronizowanie
+        kroków z <c>innej aplikacji</c>, aby zsynchronizować kroki z grą. Ten komunikat
+        zniknie po zsynchronizowaniu co najmniej <c>5000</c> kroków z urządzenia noszonego.
+        Możesz zmienić źródło kroków na <icon i="Phone small" /> <c>Telefon</c> w
+        <c>Ustawieniach</c>.
+      textSamsungHealth: Podczas korzystania z innego urządzenia niż <icon i="Phone
+        small" /> <c>Telefon</c> jako źródła kroków, kroki nie są liczone w czasie
+        rzeczywistym. Może być konieczne otwarcie aplikacji <c>Samsung Health</c>,
+        aby zsynchronizować kroki z grą, a kroki mogą być liczone z opóźnieniem. Ten
+        komunikat zniknie po zsynchronizowaniu co najmniej <c>5000</c> kroków z urządzenia
+        noszonego. Możesz zmienić źródło kroków na <icon i="Phone small" /> <c>Telefon</c>
+        w <c>Ustawieniach</c>.
   popups:
     skillLevel:
       newActivity: <chip><stext><c>Nowa aktywność</c></stext></chip> Odblokowano <c>{activityName}</c>.
@@ -156,6 +170,8 @@ singulars:
       userBannedTemporarily:
         title: Zostałeś tymczasowo zablokowany w WalkScape
         text: Zostałeś tymczasowo zablokowany w WalkScape do <c i=0>{bannedUntil}</c>.
+          Jeśli chcesz odwołać się od naszej decyzji, możesz się z nami skontaktować,
+          wysyłając wiadomość e-mail na adres {email}.
         noTimeFound: Nie znaleziono godziny zakończenia, prosimy o kontakt poprzez
           wysłanie wiadomości e-mail na adres {email}
     fatalError:
@@ -188,6 +204,10 @@ singulars:
         text: Gra była w tle lub została przerwana podczas ładowania kroków. Spróbuj
           ponownie uruchomić grę, aby załadować kroki.
         title: Ładowanie kroków zostało przerwane
+      couldNotGetServerTime:
+        title: Nie udało się uzyskać dostępu do serwera
+        text: Klient gry nie uzyskał dostępu do serwera. Sprawdź połączenie internetowe
+          i spróbuj ponownie.
   info:
     game:
       importGearSetFailed:
@@ -266,3 +286,6 @@ singulars:
       title: Czy na pewno chcesz odebrać nagrodę w postaci doświadczenia?
       text: Masz włączone ustawienie „pokaż ostrzeżenie przed odebraniem doświadczenia”.
         Czy na pewno chcesz odebrać nagrodę w postaci doświadczenia?
+    downloadLanguage:
+      title: Wybrać i pobrać język?
+      text: Zmiana języka gry wymaga pobrania dodatkowych danych. Czy chcesz kontynuować?
