@@ -84,6 +84,21 @@ maps:
       'stepDataTime': Ramy czasowe
     custom:
       'dataSource': Źródło danych kroków
+    leaderboardType:
+      'totalXp': Całkowite <c>doświadczenie</c>
+      'totalSteps': Całkowite <c>kroki</c>
+      'carpentry': <c>Stolarstwo</c> poziom
+      'crafting': <c>Rzemiosło</c> poziom
+      'achievementPoints': <c>Punkty Osiągnięć</c>
+      'trinketry': <c>Jubilerstwo</c> poziom
+      'woodcutting': <c>Drwalnictwo</c> poziom
+      'fishing': <c>Wędkarstwo</c> poziom
+      'foraging': <c>Zbieractwo</c> poziom
+      'mining': <c>Górnictwo</c> poziom
+      'agility': <c>Zwinność</c> poziom
+      'smithing': <c>Kowalstwo</c> poziom
+      'totalLevel': Całkowity <c>poziom</c>
+      'cooking': <c>Gotowanie</c> poziom
   characterCreation:
     phrases:
       optionTypes:
@@ -155,7 +170,7 @@ plurals:
         one: '{} punkt osiągnięć'
         other: '{} punktów osiągnięć'
         zero: '-'
-        two: '''{} Punkty Osiągnięć'''
+        two: '{} punkty osiągnięć'
         few: '-'
         many: '-'
   activity:
@@ -760,6 +775,8 @@ singulars:
       lastUpdated: 'Ostatnia aktualizacja: <c>{updatedAt}</c>.'
       recordedFrom: Zarejestrowano od <c>{from}</c> do <c>{to}</c>.
       reputation: Reputacja
+      statUpdatesWithDelay: Statystyka ta aktualizuje się z opóźnieniem do <c>jednej
+        godziny</c>.
     info:
       stats: Zbiór statystyk z każdego kroku, który wykonałeś w świecie Arenum.
       chartWarning:
@@ -854,11 +871,35 @@ singulars:
       loadingSteps: Ładowanie kroków
       updatingStepReadTime: Akualizowanie czasu wczytywania kroków
       startingAuthProcess: Rozpoczęcie procesu autoryzacji
+      settingUpTutorialManager: Konfigurowanie menedżera samouczka
+      settingUpPlayerMetadata: Konfigurowanie metadanych gracza
+      startingOTAManagerProcess: Rozpoczęcie procesu zarządzania aktywami
+      spawningIsolate: Generowanie wątków...
+      loadingLocalStorage: Ładowanie pamięci lokalnej...
+      startingSettingsManagerProcess: Uruchamianie procesu menedżera ustawień
+      startingSentry: Uruchamianie aplikacji Sentry...
+      loadingGuideState: Ładowanie stanu poradnika
+      startingTimeManagerProcess: Czas rozpoczęcia procesu zarządzania
+      startingNotificationManagerProcess: Uruchamianie procesu menedżera powiadomień
+      settingUpCensusManager: Konfigurowanie menedżera spisu graczy
+      reportingErrorToSentry: Zgłaszanie błędu do aplikacji Sentry
+      startingPlayerManagerProcess: Rozpoczęcie procesu zarządzania graczami
+      settingUpStepManager: Konfigurowanie menedżera kroków
+      settingUpOnlineSettingsManager: Konfigurowanie menedżera ustawień online
+      startingGameManagerProcess: Rozpoczęcie procesu zarządzania grą
+      startingErrorManagerProcess: Uruchamianie procesu menedżera błędów
+      startingEventManagerProcess: Rozpoczęcie procesu zarządzania wydarzeniami
+      startingNetworkProcess: Uruchamianie procesu sieciowego
+    isolates:
+      mainIsolate: Główny wątek
+      workerIsolate: Wątek roboczy
   social:
     phrases:
       manageFriends: Zarządzaj Znajomymi
       pendingInvites: Oczekujące zaproszenia
       friends: Znajomi
+      countResultsFound: Znaleziono wyników {count}
+      enterAtLeastChars: Aby wyszukać, wprowadź co najmniej 3 znaki.
   gear:
     phrases:
       combatModifiers: Modyfikatory walki
@@ -1053,3 +1094,4 @@ singulars:
   download:
     phrases:
       downloadingAssets: Pobieram zasoby...
+      downloadedFileCount: Pobrano plików <c i=0>{current}</c> z <c i=1>{total}</c>
