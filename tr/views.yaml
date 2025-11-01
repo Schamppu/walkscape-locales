@@ -242,6 +242,7 @@ plurals:
         few: '-'
         many: '-'
         other: Verim
+        zero: '-'
   inventory:
     info:
       consumableDuration:
@@ -528,6 +529,7 @@ singulars:
       startingNotificationManagerProcess: Bildirim yönetme işlemi başlatılıyor
       startingSettingsManagerProcess: Ayar yönetme işlemi başlatılıyor
       spawningIsolate: Isolate açılıyor...
+      startingOTAManagerProcess: Unsur yönetme süreci başlatılıyor
     isolates:
       mainIsolate: Ana Isolate
       workerIsolate: Çalışan Isolate
@@ -612,6 +614,24 @@ singulars:
         bilgi gerektirebilir.\n\n<bp /> Saatine bağlanıp Apple Health verilerinin
         okunabilmesi için ekstra bir izin vermen gereklidir.\n\n<bp /> Yalnızca saatin
         tarafından gönderilen adımlar oyuna kaydedilir.\n"
+      watchAndroid: "WalkScape attığın adımları <c>Health Connect</c> verilerinden
+        okur. Attığın adımları <icon i=\"Watch small\" /> <c>saatinden</c> <c>Health
+        Connect</c>'e eşlemek için FitBit, Garmin Connect veya Galaxy Health gibi
+        bir üçüncü taraf uygulaması yüklemen gereklidir.\n\n<bp /> Attığın adımların
+        WalkScape'te sayılabilmesi için <c i=2>adımlarını ayrı bir uygulama kullanarak
+        Health Connect'e eşlemen gereklidir.</c>\n\n<bp /> <c>Health Connect</c>'e
+        adım eşleme süreci üreticiye bağlı olarak değişebillir. Bu işlem ekstra hazırlık
+        ve teknik bilgi gerektirebilir.\n\n<bp /> Saatine bağlanıp Health Connect
+        verilerinin okunabilmesi için ekstra bir izin vermen gereklidir.\n\n<bp />
+        Yalnızca saatin tarafından gönderilen adımlar oyuna kaydedilir."
+      samsungHealth: "WalkScape attığın adımları <c>Samsung Health</c> verilerinden
+        okur. Samsung Health destekleyen bütün <icon i=\"Watch small\" /> <c>cihazlarından</c>
+        ve <icon i=\"Phone small\" /> <c>telefonundan</c> gelen adım verileri oyuna
+        eşlenir.\n\n<bp /> Attığın adımların WalkScape'te sayılabilmesi için <c i=2>cihazlarının
+        kaydettiği adımları Samsung Health'e eşlemen gereklidir.</c>\n\n<bp /> Saatine
+        bağlanıp <c>Samsung Health</c> verilerinin eşlenebilmesi için ekstra bir izin
+        vermen gereklidir.\n\n<bp /> Yalnızca Samsung Health tarafından gönderilen
+        adımlar oyuna kaydedilir."
   pfpCreation:
     buttons:
       choose: Seç
@@ -1041,3 +1061,8 @@ singulars:
       backToRumors: Söylentilere dön
       unlockedWalkpediaEntries: Walkpedi kayıtları açıldı
       rumorsFromCharacter: <c>{characterName}</c> kişisinden söylentiler
+  download:
+    phrases:
+      downloadingAssets: Unsurlar indiriliyor...
+      downloadedFileCount: Toplam <c i=1>{total}</c> dosyanın <c i=0>{current}</c>
+        kadarı indirildi
