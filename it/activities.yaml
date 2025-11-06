@@ -19,7 +19,7 @@ singulars:
       swimmingIntermediate:
         desc: 'Prima di entrare in acqua controlli le condizioni: portata del vento
           e direzione, presenza e grandezza di rocce, presenza di pescatori, barche
-          o animali pericolosi. Hai pure chiacchierato con dei locali!\nTutto è perfetto.
+          o animali pericolosi. Hai pure chiacchierato con dei locali. Tutto è perfetto.
           Ti fai una nuotata tra le onde.'
         name: Nuoto (Intermedio)
     global:
@@ -27,7 +27,7 @@ singulars:
         desc: Il birdwatching dona una prospettiva sul mondo dei volatili. Osservando
           con pazienza, impari a distinguere le diverse specie che si librano sugli
           alberi, nei cieli e fra le terre, riconoscendone la bellezza e il comportamento.
-        name: Birdwatching
+        name: Osservazione di uccelli
       crossCountrySkiingBeginner:
         desc: Nella tua avventura da principiante con lo sci di fondo ogni scivolata
           ti riempie di meraviglia. Le piste innevate sono il tuo parco giochi, in
@@ -49,7 +49,7 @@ singulars:
         desc: Da principiante del disc golf ogni lancio è unico. Impari a misurare
           il vento e aggirare agli alberi, godendoti la semplicità del gioco e l'anticipazione
           nel vedere il frisbee che vola verso il canestro.
-        name: Disc golf (Principiante)
+        name: Corso di skydisc a Jarvonia
       frisbeeGolfingDifficult:
         desc: Da giocatore esperto del disc golf, ogni percorso è come un campo di
           battaglia. Esegui tiri complessi, padroneggiando lanci precisi, rovesciati
@@ -137,6 +137,10 @@ singulars:
           più bisogno, e quando tutti hanno ricevuto la loro porzione provi un misto
           di orgoglio, modestia e senso di comunità.
         name: Volontariato in mensa
+      vegetableChopping:
+        desc: È un ambiente stressante, con lo chef che ti urla contro e tu che non
+          hai idea di cosa fare, ma ogni tanto riesci a tagliare una verdura nel modo
+          giusto.
   crafting:
     jarvonia:
       iceSculpting:
@@ -158,6 +162,10 @@ singulars:
           smarriti, e chissà... anche risolvere un caso irrisolto. Rispetta le norme
           locali, ma soprattutto divertiti. Potresti pescare di tutto!
         name: Pesca col magnete
+      bogFishingNet:
+        desc: Getti la rete nella palude. L'acqua è torbida, ma riesci comunque a
+          vedere i pesci che nuotano. Aspetti pazientemente che rimangano intrappolati
+          nella tua rete.
     jarvonia:
       lakeFishing:
         desc: Nella frizzante aria invernale, attacchi la tua esca con dita intorpidite
@@ -171,12 +179,20 @@ singulars:
         desc: Lungo il litorale invernale trovi un punto appartato e getti la rete
           nelle acque calme e gelide, godendoti la tranquilla solitudine della pesca
           in mare.
-        name: Pesca in mare (rete)
+        name: Pesca in mare (Rete)
       seaFishingRod:
         desc: Lungo il litorale invernale trovi un punto appartato e getti la lenza
           nelle acque calme e gelide, godendoti la tranquilla solitudine della pesca
           in mare.
-        name: Pesca in mare (canna da pesca)
+        name: Pesca in mare (Canna da pesca)
+      seaFishingCage:
+        desc: Una corrente ricca di sostanze nutritive porta nella zona ogni tipo
+          di crostaceo.
+      cleaningTheHolyFountain:
+        desc: I capi del tempio hanno abbastanza fiducia in te da affidarti la manutenzione
+          della loro fontana sacra. Ti permettono di pescare con una rete per mantenere
+          l'acqua pulita, guadagnandoti il loro rispetto.
+        name: Pulizia della fonte sacra
   foraging:
     gdte:
       butterflyCatching:
@@ -189,18 +205,18 @@ singulars:
         desc: Inoltrandoti nelle profondità della foresta, ti immergi nell'armonia
           del luogo, raccogliendo i doni della natura che prosperano sotto le dolci
           fronde.
-        name: 'Ricerca di materiali nella foresta '
+        name: 'Raccolta di materiali nella foresta'
       plainsForaging:
         desc: Vagando per le pianure temperate, ti ritroverai in un viaggio alla scoperta
           di un paesaggio dove i tesori della natura ti aspettano sotto un sole mite
           e un cielo cristallino.
-        name: 'Ricerca di materiali in pianura '
+        name: 'Raccolta di materiali in pianura'
       swampForaging:
         desc: Tra nebbia fine e contorti grovigli di radici, ti fai strada fra pozzanghere
           e fitta vegetazione alla ricerca di misteri nascosti sotto al muschio e
           dentro a barche abbandonate. Speri di trovare tesori dimenticati e cimeli
           di vite passate.
-        name: 'Ricerca di materiali nella palude '
+        name: 'Raccolta di materiali nella palude'
     global:
       litterLooting:
         desc: Nel trambusto della città, passi a setaccio i rifiuti della gente, sperando
@@ -221,7 +237,7 @@ singulars:
         desc: Immerso nella foresta invernale, ti avventuri con occhio attento alla
           ricerca di tesori nascosti sotto la spessa coltre di neve, assaporando il
           brivido di trovare le offerte commestibili della natura.
-        name: 'Ricerca di materiali nella foresta '
+        name: 'Raccolta di materiali nella foresta'
       glacierForaging:
         desc: Cerchi in lungo e in largo sul ghiacciaio desolato. Impari molto su
           te stesso, ma c'è davvero qualcosa da trovare quassù?
@@ -230,13 +246,9 @@ singulars:
         desc: Con ogni falcata ti immergi nell'abbondanza della pianura, raccogliendo
           bacche selvatiche, semi e teneri germogli che crescono rigogliosi dal terreno
           sotto i tuoi piedi.
-        name: 'Ricerca di materiali in pianura '
+        name: 'Raccolta di materiali in pianura'
       seashellSearching:
-        desc: La brezza tagliente che viene dalla costa non ti ferma nella tua ricerca
-          di conchiglie. Alcune sono ghiacciate, attaccate ad uno spesso strato di
-          sabbia. Altre sono state staccate dalle onde o dalla fauna selvatica. Aspettano
-          di essere rivendicate da qualche avventuriero, o dalla terra ancora una
-          volta.
+        desc: Cerchi attentamente lungo la costa eventuali conchiglie o perle di valore.
         name: Ricerca di conchiglie
   mining:
     global:
@@ -244,11 +256,11 @@ singulars:
         desc: Ogni colpo del tuo fidato piccone scopre la vena carbonifera, da cui
           estrai il combustibile grazie a cui i fabbri del regno possono forgiare
           armi e armature per la sua difesa.
-        name: 'Estrazione di carbone '
+        name: 'Estrazione di carbone'
       mineCopperOre:
         desc: Il tintinnio ritmico del piccone che colpisce la superficie rocciosa
           è l'unico rumore che senti mentre continui a scavare alla ricerca di rame.
-        name: 'Estrazione di rame '
+        name: 'Estrazione di rame'
       mineFarganiteOre:
         desc: Con fatica, sangue e lacrime, riesci lentamente ad estrarre del farganio
           grezzo nonostante la sua tremenda durezza.
@@ -256,7 +268,7 @@ singulars:
       mineIronOre:
         desc: Ciascuno dei tuo colpi rivela l'umile bellezza del ferro, un metallo
           affidabile e duraturo dai molteplici usi.
-        name: 'Estrazione di ferro '
+        name: 'Estrazione di ferro'
       mineTarsiliumOre:
         desc: Nella tua ricerca di tarsilio, ti spingi sempre più in profondità e
           le rimbombanti cavità della terra diventano la tua nuova realtà. Con la
@@ -266,7 +278,7 @@ singulars:
         desc: Il suono del tuo piccone riecheggia nel sito minerario mentre scavi
           instancabile, scoprendo vene nascoste di stagno che aspettavano di essere
           trovate.
-        name: 'Estrazione di stagno '
+        name: 'Estrazione di stagno'
       mineTarsiliumOreUnderwater:
         name: Estrai tarsilio (Subacqueo)
         desc: La luce sott'acqua è scarsa, ma non è diversa da quella di una grotta.
@@ -284,7 +296,7 @@ singulars:
         desc: Strisci per terra come una lucertola. Pensieri inquietanti affollano
           la tua mente fino quasi a paralizzarti, ma riesci a scacciarli per il momento
           e continui ad avanzare. Poco più avanti il cunicolo si apre davanti a te,
-          e questo ti riempie di gioia. L'esplorazione continua!
+          e questo ti riempie di gioia. L'esplorazitne continua.
         name: Speleologia
       surfaceSaltMining:
         desc: L'estrazione del sale in miniera è un lavoro duro, dato che disidrata
@@ -298,6 +310,36 @@ singulars:
           sembrano contenere rame, ma le rocce sono difficili da lavorare.
       minePitTinOre:
         name: Estrazione di stagno in superficie
+        desc: Una volta individuate le rocce affioranti in superficie che potrebbero
+          contenere minerale di stagno, occorrerà forza d'animo e perseveranza per
+          estrarle.
+      stoneQuarrying:
+        name: Estrazione di pietra
+        desc: Roccia e pietra!
+    gdte:
+      underwaterAqueductDigging:
+        name: Scavo di acquedotti sottomarini
+        desc: Prepara il terreno per i falegnami che verranno dopo di te. Rimuovi
+          i detriti che ostacolano il passaggio, assicurandoti che l'area non crolli.
+    syrenthia:
+      mineVolcanicRock:
+        name: Miniera di roccia vulcanica
+        desc: Maneggiare il piccone sott'acqua è difficile, ma ogni tanto, colpendo
+          la roccia vulcanica, si stacca un pezzo abbastanza grande da poter essere
+          infilato nello zaino.
+      caveDiving:
+        name: Immersioni in grotta
+        desc: Ti immergi coraggiosamente (o stupidamente) nelle buie e vaste grotte.
+          Questa attività è una delle più pericolose di tutta Arenum. Di sicuro ti
+          fa battere forte il cuore e riempire le vene di adrenalina.
+      mineTarsiliumOre:
+        desc: Sorpreso di trovare minerali di tarsilio sott'acqua, inizi a estrarli
+          senza troppe esitazioni.
+        name: Miniera di tarsilio
+      fossilMining:
+        desc: Attirato dalle meraviglie del passato, concentri la tua attenzione sulla
+          ricerca di fossili antichi.
+        name: Estrazione di fossili
   smithing:
     jarvonia:
       horseshoeMaking:
@@ -362,6 +404,7 @@ singulars:
   idle:
     desc: Non stai svolgendo alcuna attività. I tuoi passi vengono salvati in Passi
       Accumulati.
+    name: Inattivo
   unknown:
     name: Sconosciuto
     desc: Stai facendo qualcosa, ma il gioco non capisce cosa sia.
