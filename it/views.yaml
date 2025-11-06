@@ -44,15 +44,16 @@ plurals:
       actionsRemaining:
         one: Azioni rimanenti
         other: Azioni rimanenti
+        two: Azioni rimanenti
       actionsToLevelUp:
-        one: 'Azioni per salire di livello '
-        other: 'Azioni per salire di livello '
+        one: 'Azioni per salire di livello'
+        other: 'Azioni per salire di livello'
       stepsRemainingInTotal:
         one: Passi rimanenti
         other: Passi rimanenti
       stepsRequired:
-        one: Passi richiesti per completare un'azione
-        other: Passi richiesti per completare un'azione
+        one: Passi richiesti
+        other: Passi richiesti
       stepsToCraft:
         one: Passi per creare
         other: Passi per creare
@@ -62,6 +63,13 @@ plurals:
       stepsUntilArrival:
         two: Passi al traguardo
         one: Passi al traguardo
+  location:
+    phrases:
+      playersDoingActivity:
+        few: '-'
+        two: <c>{}</c> giocatori che svolgono l'attività
+        other: <c>{}</c> giocatori che svolgono l'attività
+        one: <c>{}</c> giocatofy che svolgono l'attività
 singulars:
   achievements:
     info:
@@ -88,7 +96,7 @@ singulars:
       noItemSelected: Nessun oggetto selezionato.\n\nSeleziona un oggetto dall'elenco
         sottostante per confrontarlo con l'oggetto attuale ed equipaggiarlo.
     phrases:
-      treasury: 'Tesoreria '
+      treasury: 'Tesoreria'
       allSkills: Tutte le abilità
   location:
     phrases:
@@ -96,7 +104,7 @@ singulars:
       services: Servizi
   pfpCreation:
     buttons:
-      choose: 'Scegli '
+      choose: 'Scegli'
       hideHat: Copricapo nascosto
       randomize: Randomizza
       showHat: Copricapo visibile
@@ -130,9 +138,14 @@ singulars:
       noActivitiesInLocation: Non ci sono attività in <object id="{location}"/>.
       activitiesInLocation: Attività disponibili in <object id="{location}"/>
       guideTip: Consiglio del giorno
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Efficienza lavorativa globale
+        <c>-{penalty}%</c>
+      stopWhenOverEncumbered: Fermo quando si è sovraccarichi
+      levelActivity: Livello <c>{level}</c> <object id="{skill}"/> di attività
     rewards:
-      collectibles: <icon i="Collectibles"/>{count} collezionabili </c> che possono
-        essere trovati
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} Collezionabili</c> che
+        possono essere trovati
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> esperienza
   popupBubbles:
     phrases:
       arrivedToLocation: Arrivato a <object id={location} />
@@ -145,19 +158,29 @@ singulars:
     phrases:
       queuedActions: Azioni in coda
       untilInventoryFull: Continuare fino a quando l'inventario è pieno
-      switchingToGearSet: Passando all'equipaggiamento <c>{name}</c>
+      switchingToGearSet: Passare all'equipaggiamento <c>{name}</c>
       noPathFound: Nessun percorso trovato per la destinazione.
       queue: Coda
       noGearSetFound: L'equipaggiamento selezionato non è stato trovato, lo hai eliminato?
       activityInLocation: <object id="{activity}"/> in <object id="{location}"/>
+      travelingTo: Da <object id="{from}"/> a <object id="{to}"/>
     options:
       switchGearSet:
         text: Passare al set di equipaggiamenti
+        desc: Prima di iniziare questa azione, selezionare il set di attrezzatura
+          desiderato.
+      depositUnlockedItems:
+        desc: Deposita tutti gli oggetti sbloccati dal tuo inventario nella banca,
+          se disponibile, in uno dei luoghi che attraversi.
+        text: Deposita gli oggetti sbloccati
   character:
     phrases:
       skills: Abilità
     info:
-      skillBreakdown: Ecco la ripartizione completa di tutte le abilità che il tuo
-        personaggio ha potenziato durante il tuo viaggio. Tocca una qualsiasi delle
-        abilità per visualizzare informazioni più dettagliate su di essa e su cosa
-        sblocca.
+      skillBreakdown: Ecco l'elenco completo di tutte le abilità che il tuo personaggio
+        ha potenziato durante il tuo viaggio. Tocca una qualsiasi delle abilità per
+        visualizzare informazioni più dettagliate su di essa e su cosa sblocca.
+  stats:
+    info:
+      reputation: La reputazione è una misura della tua notorietà nelle diverse fazioni
+        di WalkScape.
