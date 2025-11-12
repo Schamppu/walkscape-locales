@@ -32,3 +32,21 @@ singulars:
   activities:
     fishing:
       name: Kalastus
+    woodcuttingTrees:
+      requirement: Vajab <object id="woodcuttingTrees" /> tegevust.
+      name: Puude raiumine
+  services:
+    kitchen:
+      requirement: <PLACEHOLDER>
+      name: Köök
+      requirementLevel: <PLACEHOLDER>
+  recipes:
+    skills:
+      cooking:
+        name: Kokandusretsept
+        requirement: Vajab <object id="recipe_cooking" />.
+    products:
+      sandwich:
+        name: Võileivaretsept
+        requirements: Vajalik <object id="sandwich" /> valmistamine kasutades <object
+          id="recipe_cooking" />.
