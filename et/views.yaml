@@ -91,6 +91,10 @@ singulars:
       selectedConsumable: Valitud tarbeese
       consumables: Tarbeesemed
       treasury: Varalaekad
+      equipToToolSlot: Võta kasutusele kohale {id}
+      noItemSelected: Ese valimata
+      disableWhenChanging: Keela tegevust vahetades
+      noItemEquipped: Ese kasutusele võtmata
     options:
       showGear: Näita varustust
       expandInventory: Laienda seljakott
@@ -106,6 +110,10 @@ singulars:
       materials: Materjalid
       recipes: Retseptid
       requirements: Tingimused
+      requiresOneOfTheFollowing: Vajab ühte järgnevatest materjalidest.
+      requiresMaterial: Vajab materjali.
+      noServiceRequirements: Puudub nõutav teenus.
+      requirementsNotMet: Sa ei vasta nõuetele.
   abilities:
     phrases:
       useAbility: Kasuta võimet
@@ -117,17 +125,48 @@ singulars:
   achievements:
     phrases:
       unclaimedRewards: 'Omandamata tasud: '
+      notUnlocked: Lukustatud saavutus
+      rewardProgress: Autasu Kulg
+      showRewards: Näita autasusid
+      totalProgressUnlocks: Koguprogressi tasud
   worldMap:
     phrases:
       activities: Tegevused
       noActivities: Selles asukohas pole tegevusi saadaval.
+      pointsOfInterest: Huvipunktid
+      buildings: Ehitised
+      services: Teenused
+      currentLocation: Praegune asukoht
   leaderboards:
     phrases:
       totalLevel: Kogutase
+      first: Esimene
+      me: Mina
+      last: Viimane
+      leaderboards: Edetabelid
   gearSets:
     phrases:
       forActivities: 'Tegevuste jaoks: '
       noActivitiesSelected: Pole tegevust valitud
+      newSetDefaultName: Minu Uus Varustuskomplekt
+      default: Vaikimisi
+      toolSlot: Tööriista koht
+      optionsAndFilters: Valikud & filtrid
+      sortBy: 'Sorteeri: '
+      gear: Varustus
+      showAttributes: Näita atribuute
+      level: 'Tase '
+      unequipTools: Eemalda tööriistad
+      name: Nimi
+      importedGearSetDefaultName: Imporditud Varustuskomplekt
+      noItemSelected: Ese valimata
+      copyCurrentlyEquippedGear: Kopeeri hetkel kasutusel varustus
+      gearSets: Varustuskomplektid
+      unequipGear: Eemalda varustus
+      tools: Tööriistad
+    errors:
+      duplicateItem: Ese juba on varustuskomplektis
+      keywordError: Varustuskomplektis juba on <object id="{keyword}" />
   stats:
     phrases:
       totalSkillXp: Kogu oskuskogemus
@@ -177,18 +216,28 @@ singulars:
       refreshIn: 'Kuulutustetulba täitmiseni:'
       acceptedJobs: Käsilolevad tööd <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
       rewards: Vaevatasud
+      complete: Lõpeta
     dialogs:
       abandonJob:
         title: Loobu tööst
   bank:
     phrases:
       withdraw: Võta välja
+      noItemsInventory: Sinu seljakott on tühi.
+      deposit: Hoiusta
+      noItemsBank: Sinu pank on tühi.
   location:
     phrases:
       activities: Tegevused
       noActivites: Siin asukohas pole tegevusi saadaval.
       jobBoard: Kuulutustetulp
       jobs: Tööd
+      services: Teenused
+      routes: Marsruudid
+      owner: Omanik
+      tapToShowRoutes: Vajuta, et näha marsruute
+      factions: Kildkonnad
+      buildings: Ehitised
   rewards:
     phrases:
       alreadyClaimed: Juba omandatud
@@ -204,6 +253,85 @@ singulars:
       buyBack: Osta tagasi
       sold: Müüdud
       resetTrade: Lähtesta kaubavahetus
+  pfpCreation:
+    buttons:
+      showHat: Luba peakate
+      enableFacepaint: Luba näovärv
+      enableBackAccessory: Luba seljaaksessuaar
+      enableFaceAccessory: Luba näoaksessuaar
+      hideHat: Luba peakate
+      randomize: Randomiseeri
+      enableDynamicBackground: Luba dünaamiline taust
+      choose: Vali
+      enableEyeAccessory: Luba silmaaksessuaar
+    phrases:
+      currentSelection: Hetkevalik
+      defaultExpression: Vaikeilme
+      noVariantSelected: Variant valimata
+      variants: Variandid
+      colorOptions: Värvivalikud
+      homeRegion: Koduregioon
+      race: Rass
+      variant: Variant {number}
+      extras: Lisad
+      resetToDefault: Lähtesta vaikeväärtustele
+      selectedVariant: Variant {index} valitud
+      mainOptions: Põhilised valikud
+  characterCreation:
+    phrases:
+      bodyTypeB: B
+      bodyTypeA: A
+      chooseABodyType: Vali kehatüüp
+      race: Rass
+      bodyType: Kehatüüp
+      characterName: Karakteri nimi
+  settings:
+    categories:
+      dataSource:
+        title: Andmete Allikas
+        thisPhone: See telefon
+        otherSource: Muu allikas
+      gameplay:
+        title: Mängimine
+        stopWhenOverEncumberedDefault: Vaikimisi peatu kui ülekoormatud
+      character:
+        hideSteps: Peida sammud
+        title: Karakter
+        anonOnLeaderboard: Anonümiseeri edetabelil
+        exportData: Ekspordi karakteri andmed lõikelauale
+      account:
+        visibility: Profiili nähtavus
+        title: Konto
+      closedBeta:
+        clearStepsGraph: Tühjenda sammugraafik
+        title: Kinnine Beeta
+      locales:
+        changeLanguage: Muuda keelt
+        title: Keel
+      notifications:
+        stepCountNotifications: Sammulugemise märguanded
+        stepCountInterval: Märguande intervall
+        title: Märguanded
+        notificationType: Märguande tüüp
+    phrases:
+      exitToCharacterSelection: Välja karakteri valikusse
+      settings: Sätted
+  tools:
+    phrases:
+      emptyToolSlot: Tühi tööriistakoht
+  gear:
+    phrases:
+      noItemSelected: Ese valimata
+      noItemEquipped: Ese kasutusele võtmata
+  trade:
+    phrases:
+      total: Kõik
+  cooldowns:
+    phrases:
+      followingMustBeTrueToUse: 'Kasutustingimused pole täidetud:'
+  whileAway:
+    phrases:
+      actionsCompleted: Toiminguid tehtud
 maps:
   achievements:
     phrases:
@@ -281,9 +409,9 @@ plurals:
         one: Samm kokku
         other: Sammu kokku
       actionsRemaining:
-        one: Tegu kokku
-        two: Tegu kokku
-        other: Tegu kokku
+        one: Tegu järgi
+        two: Tegusid kokku
+        other: Tegusid järgi
         zero: '-'
         few: '-'
         many: '-'
