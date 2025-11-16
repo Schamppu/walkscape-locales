@@ -11,17 +11,27 @@ singulars:
         desc: 'Vaghi per la città con grazia felina, sfruttando tutti gli elementi
           architettonici a disposizione: muri, tetti, balconi, lampioni. Tutto si
           piega alla tua volontà.'
-        name: Salti tra i tetti (Intermedio)
+        name: Salto tra le case
       swimmingBeginner:
         desc: Ti è stato detto che nuotare è un buon modo per mantenersi in salute
           e quindi, dopo qualche lezione, ti senti abbastanza a tuo agio da provarci.
-        name: Nuoto (Principiante)
+        name: Nuoto di superficie
       swimmingIntermediate:
         desc: 'Prima di entrare in acqua controlli le condizioni: portata del vento
           e direzione, presenza e grandezza di rocce, presenza di pescatori, barche
           o animali pericolosi. Hai pure chiacchierato con dei locali. Tutto è perfetto.
           Ti fai una nuotata tra le onde.'
-        name: Nuoto (Intermedio)
+        name: Nuoto
+      exploreBogBottom:
+        name: Esplora il fondo della palude
+        desc: Segui la tua mappa subacquea ed esplori il sentiero nascosto nelle profondità
+          torbide sul fondo della palude. Sembrano snodarsi all'infinito, ma ti stanno
+          conducendo da qualche parte. Devi solo continuare a nuotare.
+      treetopJumping:
+        name: Salto tra le cime degli alberi
+        desc: Essendo in alto sugli alberi, l'adrenalina ti scorre nelle vene mentre
+          salti da un ramo all'altro, sperando che non si spezzino. La caduta sottostante
+          sembra spaventosa.
     global:
       birdWatching:
         desc: Il birdwatching dona una prospettiva sul mondo dei volatili. Osservando
@@ -33,34 +43,34 @@ singulars:
           ti riempie di meraviglia. Le piste innevate sono il tuo parco giochi, in
           cui puoi andare al ritmo degli sci godendoti appieno la serena bellezza
           dei boschi invernali.
-        name: Sci di fondo (Principiante)
+        name: Sci classico
       crossCountrySkiingDifficult:
         desc: Nel livello più difficile dello sci di fondo sfidi i tuoi limiti di
           resistenza ed abilità. Mentre conquisti le piste più scoscese e le condizioni
           più estreme, vivi un esilarante viaggio attraverso il selvaggio panorama
           invernale che ti lascerà senza fiato.
-        name: Sci di fondo (Difficile)
+        name: Sci alpino
       crossCountrySkiingIntermediate:
-        desc: Lo sci di fondo a livello intermedio porta con sé un senso di avventura.
-          Affronti diversi terreni con nuova risolutezza, ogni tuo passo diventa più
-          forte e sicuro mentre esplori le vaste distese innevate.
-        name: Sci di fondo (Intermedio)
+        desc: Lo sci di fondo regala un senso di avventura. Affronti terreni vari
+          con una sicurezza ritrovata, ogni passo è più forte e più sicuro, mentre
+          esplori le vaste distese innevate.
+        name: Sci di fondo
       frisbeeGolfingBeginner:
-        desc: Da principiante del disc golf ogni lancio è unico. Impari a misurare
-          il vento e aggirare agli alberi, godendoti la semplicità del gioco e l'anticipazione
-          nel vedere il frisbee che vola verso il canestro.
+        desc: Come principiante dello skydisc golf, ogni lancio è una nuova scoperta.
+          Si impara a valutare il vento e a navigare tra gli alberi, godendosi la
+          semplicità del gioco e la gioia di vedere il disco librarsi verso il cesto.
         name: Corso di skydisc a Jarvonia
       frisbeeGolfingDifficult:
-        desc: Da giocatore esperto del disc golf, ogni percorso è come un campo di
-          battaglia. Esegui tiri complessi, padroneggiando lanci precisi, rovesciati
-          e a parabola, trasformando scenari impegnativi in canestri trionfanti.
+        desc: Da giocatore esperto del disc golf avanzato, ogni percorso è come un
+          campo di battaglia. Esegui tiri complessi, padroneggiando lanci precisi,
+          rovesciati e a parabola, trasformando scenari impegnativi in canestri trionfanti.
         name: Disc golf (Difficile)
       frisbeeGolfingIntermediate:
-        desc: Cimentandoti nella difficoltà intermedia del disc golf sviluppi un acuto
-          senso di strategia. Ogni percorso ti presenta nuove sfide, mentre curvi
-          il disco attorno agli ostacoli con precisione, perfezionando la tua presa
-          ad ogni lancio.
-        name: Disc golf (Intermedio)
+        desc: Nel disc golf di livello intermedio, sviluppi un acuto senso della strategia.
+          Ogni percorso presenta una nuova sfida, mentre fai abilmente curvare il
+          tuo disco intorno agli ostacoli, affinando le tue abilità con ogni lancio
+          calcolato.
+        name: Corso di GDTE skydisc
       guardDuty:
         desc: Come guardia dell'Impero Vallisiano hai delle bollette da pagare, e
           questo è il modo in cui lo fai. Sorvegli il regno e ti assicuri di venire
@@ -81,26 +91,64 @@ singulars:
           ti dai una bella spinta. Il mondo si sfoca intorno a te e, per un momento,
           sei un campione olimpionico che conquista il pendio innevato.
         name: Avventure sulla slitta
+      traveling:
+        name: Viaggiare
+        desc: Viaggiare da <object id="{from}"/> a <object id="{to}"/>.
+      exploreArea:
+        name: Esplora la zona
+        desc: Prendi appunti su un foglio di carta bianco mentre esplori l'area circostante.
+          Questo ti sarà utile per future esplorazioni.
     jarvonia:
       mountainClimbingBeginner:
         desc: Ti prepari per la scalata. E' una giornata splendida, soleggiata e senza
           vento. Mentre arrampichi, ti scivola la presa da sotto un piede e il tuo
           cuore manca un battito. Che spavento! Quando infine raggiungi la cima, guardi
           il mondo dall'alto con fierezza.
-        name: Arrampicata (Principiante)
+        name: Arrampicata
       mountainClimbingIntermediate:
         desc: Ora si che si fa sul serio. La parete di roccia è quasi verticale e
           non ci sono percorsi facilmente tracciabili. Ti arrampichi comunque con
           tenacia, sentendo i muscoli che soffrono per darti la forza di cui hai bisogno.
           La cima sa di sangue e gloria. Esulti gridando con quel poco di aria che
           ti è rimasto.
-        name: Arrampicata (Intermedio)
+        name: Arrampicata in cresta
       rooftopJumpingBeginner:
         desc: Ti arrampichi su un lampione spento per scrutare i dintorni. Senti dei
           passi avvicinarsi, così ti affretti sul tetto adiacente con un piccolo salto.
           Una tegola si stacca e cade a terra fracassandosi. Dovrai fare più attenzione
           la prossima volta.
-        name: Salti tra i tetti (Principiante)
+        name: Salto tra i tetti
+      blackEyePeakSearchTeam:
+        desc: Aiuta la gilda degli avventurieri a individuare e trovare informazioni
+          sui permessi aperti che non sono stati restituiti.
+        name: Squadra di ricerca
+      blackEyePeakRescueTeam:
+        name: Squadra di soccorso
+        desc: Utilizzare le informazioni fornite dalle squadre di ricerca per recarsi
+          sul posto e svolgere attivamente le operazioni di soccorso.
+    syrenthia:
+      exploreUnderwaterCave:
+        name: Esplora la grotta sottomarina
+        desc: Segui la tua mappa subacquea ed esplori i percorsi della grotta sottomarina.
+          Sembrano snodarsi all'infinito, ma ti stanno conducendo da qualche parte.
+          Devi solo continuare a nuotare.
+      merfolkDancing:
+        desc: Eseguire la danza dei tritoni come fanno gli abitanti sottomarini richiede
+          molta abilità. Ad ogni tentativo, migliorerai nel muoverti all'unisono con
+          gli altri ballerini, fino a raggiungere un flusso continuo, simile al movimento
+          sincronizzato di un banco di pesci.
+        name: Ballo dei Tritoni
+      swimmingExpert:
+        name: Nuoto subacqueo
+        desc: Nuotare attraverso i vari percorsi e le grotte della vasta città sottomarina
+          di Vastalume si rivela impegnativo. Devi schivare le vivaci creature marine,
+          sia senzienti che non senzienti.
+    bats:
+      springBatTracking:
+        name: Monitoraggio dei pipistrelli in primavera
+        desc: I pipistrelli lasciano la grotta volando verso nord-est. Seguendo i
+          pipistrelli dalla loro dimora primaverile, correndo giorno e notte per trovare
+          dove sarà la loro prossima dimora. Potresti non tornare qui per un po'.
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -108,20 +156,30 @@ singulars:
           navi più grandi senza difficoltà. Il tuo caposquadra si fida delle tue abilità
           e del tuo giudizio. Sai quando essere efficace e quando essere efficiente.
           La tua cassetta degli attrezzi è professionale, esattamente come te.
-        name: Riparazione navale (Intermedio)
+        name: Riparazione dello scafo
+      underwaterAqueductConstruction:
+        name: Costruzione di acquedotti sottomarini
+        desc: Costruisci e rinforzi la conduttura idrica naturale che porta al campo
+          degli Halfling.
     jarvonia:
       shipRepairBeginner:
         desc: Prendi parte alle riparazioni dei danni da usura di piccole imbarcazioni.
           Travi, chiodi, sartiame, accessori e corde sono a tua disposizione. Il capo
           squadra dà gli ordini e tu li esegui in maniera impeccabile. Forse, un giorno
           sarai tu a darli.
-        name: Riparazione navale (Principiante)
+        name: Riparazione del brigantino
       woodCarving:
         desc: "Modellare il legno con un oggetto affilato, come un coltellino, è un'antica
           forma di artigianato. C'è una gran varietà d'arte e iconografia: da piccole
           figurine e giocattoli, a maschere di guerra o cerimoniali, a grandi mosaici
           e pali totemici."
         name: Intaglio del legno
+      iceSculpting:
+        name: Scultura su ghiaccio
+        desc: Armati di strumenti per modellare il ghiaccio e seghe, trasformate un
+          cubetto di ghiaccio in qualcos'altro, sia esso funzionale o artistico. La
+          fugacità di quest'opera d'arte è proporzionale alla temperatura ambiente,
+          con una durata che varia da pochi minuti a permanente.
   cooking:
     gdte:
       wineGrapeStomping:
@@ -141,6 +199,7 @@ singulars:
         desc: È un ambiente stressante, con lo chef che ti urla contro e tu che non
           hai idea di cosa fare, ma ogni tanto riesci a tagliare una verdura nel modo
           giusto.
+        name: Taglio delle verdure
   crafting:
     jarvonia:
       iceSculpting:
@@ -154,6 +213,17 @@ singulars:
           Frughi per tutta la bottega, cercando quel qualcosa che ti manca. Eccolo!
           Ora diamoci da fare.
         name: Darsi da fare
+      apprenticeForLoif:
+        name: Apprendista per Loif
+        desc: Il vecchio Loif Ulfrand ha bisogno di molte cose, tra cui bevande calde,
+          attrezzi affilati e un taglio di capelli. Ma ogni tanto, quando lui si addormenta,
+          puoi fare un po' di esperienza armeggiando con i suoi attrezzi.
+    syrenthia:
+      underwaterBasketWeaving:
+        name: Intreccio di cesti sott'acqua
+        desc: Intrecci abilmente i sottili pezzi di corallo in un cesto. Il processo
+          è lento e tedioso, ma il risultato finale riempie il tuo cuore di orgoglio
+          per la tua creazione.
   fishing:
     gdte:
       magnetFishing:
@@ -234,6 +304,20 @@ singulars:
           dentro a barche abbandonate. Speri di trovare tesori dimenticati e cimeli
           di vite passate.
         name: 'Raccolta di materiali nella palude'
+      summerCaveForaging:
+        desc: I pipistrelli vivono qui durante l'estate. È buio, meglio portare una
+          torcia.
+        name: Ricerca di cibo nelle grotte estive
+      trellinDumpsterDiving:
+        desc: Tra i vicoli labirintici della città, esplori gli angoli dimenticati,
+          setacciando oggetti scartati e cianfrusaglie nella speranza di scovare tesori
+          nascosti tra i rifiuti.
+        name: Rovistare nei cassonetti per Trellin
+      erdwiseDumpsterDiving:
+        name: Rovistare nei cassonetti per Erdwise
+        desc: Tra i vicoli labirintici della città, esplori gli angoli dimenticati,
+          setacciando oggetti scartati e cianfrusaglie nella speranza di scovare tesori
+          nascosti tra i rifiuti.
     global:
       litterLooting:
         desc: Nel trambusto della città, passi a setaccio i rifiuti della gente, sperando
@@ -267,6 +351,34 @@ singulars:
       seashellSearching:
         desc: Cerchi attentamente lungo la costa eventuali conchiglie o perle di valore.
         name: Ricerca di conchiglie
+      caveForaging:
+        name: Ricerca di cibo nelle grotte sorgive
+        desc: I pipistrelli fanno la loro tana qui in primavera. È buio, meglio portare
+          una torcia.
+      hornOfRespiteTreasureHunt:
+        name: Caccia al tesoro
+        desc: 'La Gilda degli Avventurieri ha lanciato una sfida: trovare alcuni oggetti
+          speciali sparsi per il Corno del Riposo. Quanto tempo ti ci vorrà per trovarli
+          tutti?'
+    syrenthia:
+      wreckDiving:
+        name: Immersioni sui relitti
+        desc: Ti immergi nelle profondità del relitto che è la tomba di Casbrant,
+          nella speranza di trovare un tesoro.
+      seashellForaging:
+        desc: Alla ricerca di conchiglie preziose, nuoti vicino al fondale marino.
+          La maggior parte giace nascosta sotto la sabbia, mentre altre si aggrappano
+          agli angoli e alle fessure delle rocce sottomarine.
+        name: Ricerca di conchiglie
+      merfolkFarmForaging:
+        name: Ricerca di cibo nella fattoria dei tritoni
+        desc: L'accesso alla tua fattoria marina comunale ti garantisce la libertà
+          di raccogliere cibo negli infiniti campi sottomarini. Qui troverai una vasta
+          gamma di piante che aspettano solo di essere raccolte.
+      kelpForaging:
+        name: Raccolta di alghe kelp
+        desc: Circondato da un'abbondanza di alghe che ondeggiano intorno a te, le
+          ispezioni meticolosamente una ad una prima di raccogliere con cura le migliori.
   mining:
     global:
       mineCoal:
@@ -365,6 +477,9 @@ singulars:
           chiodi, ma il cavallo non sente alcun dolore visto che lo zoccolo è sensibile
           come un'unghia molto spessa per un umano (la conoscevi la parola "ungulato"?).
         name: Fabbricazione di ferri di cavallo
+      flameStoking:
+        name: Alimentazione della fiamma
+        desc: Quando Helga suona il campanello, tu attizzi le fiamme. Una vita semplice.
   woodcutting:
     jarvonia:
       cutBirchTrees:
@@ -425,3 +540,123 @@ singulars:
   unknown:
     name: Sconosciuto
     desc: Stai facendo qualcosa, ma il gioco non capisce cosa sia.
+  hunting:
+    gdte:
+      invasiveSpeciesHunting:
+        desc: La palude è infestata da creature simili a vermi che non sono originarie
+          dell'habitat. Cerchi attentamente tracce della loro presenza ed elimini
+          tutte quelle che riesci a trovare.
+        name: Caccia alle specie invasive
+      halfmawHunt:
+        name: Caccia all'Halfmaw
+        desc: Armato di arco e frecce, ti muovi nella palude alla ricerca del leggendario
+          Halfmaw. Ha sconfitto molti cacciatori prima di te, ma speri che tale destino
+          non tocchi anche a te e che sarai tu il predatore, non la preda.
+      lizardHunting:
+        name: Caccia alle lucertole
+        desc: Cerchi indizi della presenza delle numerose specie di lucertole che
+          vivono nella zona circostante. Cacciarle non è pericoloso, ma sicuramente
+          noioso.
+    global:
+      birdhouseTrappingIntermediate:
+        name: Cattura con casette per uccelli (Intermedio)
+        desc: Metti l'esca nella casetta per uccelli pronta per essere utilizzata
+          per catturare varie specie di uccelli. Dopodiché, fissa la casetta a un
+          albero. Attirerà sicuramente gli uccelli.
+      boxTrapping:
+        name: Trappola a scatola
+        desc: Prepari un semplice sistema di cattura utilizzando un'esca posizionata
+          sotto una scatola di legno sostenuta da un ramoscello. Quando un animale
+          cerca di prendere l'esca, sposta il ramoscello e rimane intrappolato nella
+          scatola.
+      crabTracking:
+        desc: Camminando sulla spiaggia, cerchi tracce di granchi nelle vicinanze.
+          Lasciano impronte specifiche sulla sabbia, ma sfortunatamente queste vengono
+          spesso cancellate dalle maree.
+        name: Tracciamento dei granchi
+      birdhouseTrappingBeginner:
+        name: Cattura con casette per uccelli (Principianti)
+        desc: Hai installato una casetta per uccelli dotata di un sistema di trappola
+          che permette agli uccelli di entrare ma non di uscire.
+    jarvonia:
+      rabbitTracking:
+        name: Tracciamento dei conigli
+        desc: Mentre cerchi gli animali, presti attenzione alle piante rosicchiate,
+          ai ramoscelli spezzati e alle impronte dei conigli sul terreno.
+      wolfHunting:
+        name: Caccia al lupo
+        desc: Segui grandi impronte sul terreno alla ricerca del lupo, il cacciatore
+          della foresta. Il tuo arco e le tue frecce sono pronti a colpirne uno.
+      bearHunting:
+        name: Caccia all'orso
+        desc: I grandi graffi lasciati dagli artigli sugli alberi indicano che sei
+          sulla strada giusta per trovare gli orsi nella zona circostante. I tuoi
+          sensi sono concentrati e il tuo corpo è pronto a catturarne uno.
+      deerHunting:
+        name: Caccia al cervo
+        desc: Cerchi gli escrementi dei cervi nella foresta, un segno sicuro della
+          loro presenza nella zona circostante. Il tuo arco e le tue frecce sono pronti
+          per abbatterne uno.
+    syrenthia:
+      driftNetHunting:
+        name: Caccia con reti derivanti
+        desc: Districhi l'enorme rete prima di calarla in acqua. Se gli dei del mare
+          ti sorridono, potrai catturare centinaia di pesci e altre creature marine.
+  tailoring:
+    gdte:
+      sailRepairIntermediate:
+        desc: La grande vela ha affrontato alcune violente tempeste ed è piena di
+          buchi. Lavori rapidamente e con precisione per riparare i buchi, rendendola
+          quasi come nuova.
+        name: Riparazione delle vele (Intermedio)
+    jarvonia:
+      sailRepairBeginner:
+        name: Riparazione delle vele (Principiante)
+        desc: Usando un ago e un filo resistenti, cuci con cura diverse toppe di tessuto
+          per riparare le vele della barca. Non saranno come nuove, ma sicuramente
+          dureranno per un po'.
+  trinketry:
+    gdte:
+      antiqueMarketAssessor:
+        name: Perito del mercato dell'antiquariato
+        desc: Il mercato dell'antiquariato a Blackspell Port è frenetico e ci vuole
+          tempo per trovare acquirenti e venditori per i vari beni. Di tanto in tanto
+          capita di fare un affare redditizio con una gemma o un oggetto raro.
+  misc:
+    gdte:
+      swampEmergencySwimEscape:
+        name: Fuga di emergenza in acqua (Palude)
+        desc: Hai perso la tua attrezzatura da sub e stai finendo l'aria. Devi nuotare
+          verso la riva il più velocemente possibile, ma senza farti prendere dal
+          panico. Sai che se risali troppo rapidamente potresti soffrire di malattia
+          da decompressione.
+      swampEmergencyDarkEscape:
+        name: Fuga di emergenza al buio (Palude)
+        desc: Hai perso la tua fonte di luce e dovrai trovare la via d'uscita dal
+          luogo in cui ti trovi attraverso l'oscurità. Devi stare attento mentre ti
+          fai strada ed evitare qualsiasi creatura pericolosa che potrebbe nascondersi
+          nell'ombra.
+      ventureIntoTheWoods:
+        desc: Ti avventuri nella nebbia cupa fuori da Salsfirth, dove una fitta rete
+          di fogliame ti impedisce di entrare nel bosco.
+        name: Avventurarsi nel bosco
+      ventureIntoTheHideout:
+        name: Avventurarsi nel nascondiglio
+        desc: Ti avventuri nella nebbia cupa fuori da Blackspell Port, dove radici
+          spesse e persino alberi che attraversano le paludi ti bloccano la strada
+          verso il nascondiglio.
+      ventureIntoTheBog:
+        desc: Ti avventuri nella nebbia cupa fuori Granfiddich, cercando di trovare
+          i punti di riferimento che riconosci dopo aver seguito i pipistrelli, per
+          entrare nella palude.
+        name: Avventurarsi nella palude
+      runForYourLife:
+        name: Corri per salvarti la vita
+        desc: Ti senti claustrofobico mentre l'oscurità ti avvolge e hai la sensazione
+          di essere osservato. Inizi a correre per salvarti la vita, senza alcun senso
+          dell'orientamento.
+    emergencySwimEscape:
+      name: Fuga di emergenza in acqua
+      desc: Hai perso la tua attrezzatura da sub e stai finendo l'aria. Devi nuotare
+        verso la riva il più velocemente possibile, ma senza farti prendere dal panico.
+        Sai che se risali troppo rapidamente potresti soffrire di malattia da decompressione.
