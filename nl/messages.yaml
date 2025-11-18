@@ -96,54 +96,58 @@ het spel opnieuw en log opnieuw in., title: Ongeldige sessie}, connectionError: 
 title: Verbindingsfout, text: Er is een fout opgetreden bij het verbinding maken met
 de server. Controleer a.u.b. je internetverbinding en probeer het nogmaals.}, userBannedTemporarily: {
 noTimeFound: 'Er is geen eindtijd gevonden. Neem contact met ons op door een e-mail
-te sturen naar {email}', text: 'Je bent tijdelijk verbannen van WalkScape tot <c i=0>{bannedUntil}</c>.',
-title: Je bent tijdelijk verbannen van WalkScape}, userBannedPermanently: {text: 'Je
-bent permanent verbannen van WalkScape. Als je denkt dat dit een vergissing is en
-je wilt tegen deze beslissing in beroep gaan, kun je contact met ons opnemen door
-een e-mail te sturen naar {email}.', title: Je bent permanent verbannen van WalkScape}},
-gameError: {initializingGameFailed: {text: De client heeft niet kunnen initialiseren.
-Meld dit a.u.b. aan de ontwikkelaars op Discord met details van je foutmelding en
-toestel. Je kunt ook proberen het spel opnieuw te openen om te zien of het spel succesvol
-laadt., title: Spel initialiseren mislukt}, loadingPlayerFailed: {title: Speler laden
-mislukt, text: Ongeldige spelersgegevens. Laden mislukt. Neem a.u.b. contact op met
-de ontwikkelaars via Discord of e-mail.}, stepLoadingFailed: {title: Stappen laden
-mislukt, text: De client heeft de stappen niet kunnen laden. Meld dit au.b. bij de
-ontwikkelaars op Discord met de details van de error en het toestel. Je kunt ook proberen
-het spel opnieuw te openen om te zien of de stappen succesvol laden.}, stepLoadingInterruped: {
-title: Laden van stappen onderbroken, text: Het spel werd op de achtergrond gezet
-of onderbroken tijdens het laden van de stappen. Probeer het spel opnieuw te openen
-om de stappen te laden.}, stepsNotLoadedDueToBan: {title: Stappen niet geladen vanwege
-je ban, text: Je stappen zijn niet geladen omdat je bent uitgesloten van WalkScape.
-Vanaf nu worden je stappen weer normaal geteld.}}}, info: {game: {equipGearSetFailed: {
-text: Uitrustingsset dragen mislukt. De uitrustingsset die je probeerde te dragen
-is mogelijk ongeldig of corrupt., title: Uitrustingsset dragen mislukt}, withdrawTooFew: {
-text: Je hebt niet genoeg voorwerpen om op te nemen., title: Opnemen mislukt}, importGearSetFailed: {
-title: Uitrustingsset importeren mislukt, text: Fout opgetreden bij het importeren
-van uitrustingsset. Uitrustingssetgegevens zijn mogelijk corrupt of ongeldig.}, importGearSetTooManyTools: {
-title: Uitrustingsset heeft te veel gereedschappen, text: De uitrustingsset had meer
-gereedschappen dan toegestaan.}, changingActivityFailed: {title: Activiteit veranderen
-mislukt, text: Activiteit veranderen mislukt. Je bent al bezig met deze activiteit
-of het is niet beschikbaar.}, equipGearSetSomeFailed: {title: Dragen van voorwerpen
-in uitrustingsset mislukt, text: 'Sommige voorwerpen in de uitrustingsset kunnen niet
-worden gedragen. Mogelijk is de uitrustingsset ongeldig, of je voldoet niet aan de
-eisen om sommige voorwerpen te dragen.'}, equipGearFailed: {title: Voorwerp dragen
-mislukt, text: Voorwerp kan niet worden gedragen. Probeer het nogmaals.}, withdrawZero: {
-title: Opnemen mislukt, text: Je kunt niet nul of minder voorwerpen opnemen.}, withdrawDidNotExist: {
-title: Opnemen mislukt, text: Het voorwerp dat je probeerde op te nemen bestaat niet.
-Heropen de bank om dit op te lossen.}, withdrawFailed: {title: Opnemen mislukt, text: Opnemen
-mislukt. Probeer het nogmaals.}, buybackFailed: {title: Terugkopen mislukt, text: Terugkopen
-mislukt. Je hebt de benodigde voorwerpen voor het terugkopen niet in je inventaris.},
-queueLimitReached: {text: Je kunt niet meer dan 3 acties tegelijk in de wachtrij plaatsen.
-Voltooi of annuleer eerst enkele acties voordat je meer acties in de wachtrij plaatst.,
-title: Wachtrijlimiet bereikt}, cannotQueueMoreThanOneActivity: {text: 'U kunt meerdere
-reisacties in de wachtrij plaatsen, maar slechts één activiteit tegelijk. Voltooi
-of annuleer de huidige activiteit voordat u een andere in de wachtrij plaatst.', title: Er
-kunnen geen activiteiten meer in de wachtrij worden geplaatst}, noPathFound: {title: Geen
-route gevonden, text: Er is geen route gevonden naar de geselecteerde locatie. Controleer
-of het mogelijk is om naar de geselecteerde locatie te reizen.}}}, confirmations: {
-changingStepSource: {title: Stappenbron veranderen?, text: Het veranderen van de stappenbron
-kan leiden tot het verliezen van stappen die nog niet gesynchroniseerd zijn. Controleer
-of je stappen gesynchroniseerd zijn voordat je de bron verandert., lastSyncText: 'Stappen
+te sturen naar {email}', text: 'Je bent tijdelijk verbannen van WalkScape tot <c i=0>{bannedUntil}</c>.
+Als je tegen de beslissing in beroep wilt gaan, neem dan contact met ons op door ons
+een e-mail te sturen naar {email}.', title: Je bent tijdelijk verbannen van WalkScape},
+userBannedPermanently: {text: 'Je bent permanent verbannen van WalkScape. Als je denkt
+dat dit een vergissing is en je wilt tegen deze beslissing in beroep gaan, kun je
+contact met ons opnemen door een e-mail te sturen naar {email}.', title: Je bent permanent
+verbannen van WalkScape}}, gameError: {initializingGameFailed: {text: De client heeft
+niet kunnen initialiseren. Meld dit a.u.b. aan de ontwikkelaars op Discord met details
+van je foutmelding en toestel. Je kunt ook proberen het spel opnieuw te openen om
+te zien of het spel succesvol laadt., title: Spel initialiseren mislukt}, loadingPlayerFailed: {
+title: Speler laden mislukt, text: Ongeldige spelersgegevens. Laden mislukt. Neem
+a.u.b. contact op met de ontwikkelaars via Discord of e-mail.}, stepLoadingFailed: {
+title: Stappen laden mislukt, text: De client heeft de stappen niet kunnen laden.
+Meld dit au.b. bij de ontwikkelaars op Discord met de details van de error en het
+toestel. Je kunt ook proberen het spel opnieuw te openen om te zien of de stappen
+succesvol laden.}, stepLoadingInterruped: {title: Laden van stappen onderbroken, text: Het
+spel werd op de achtergrond gezet of onderbroken tijdens het laden van de stappen.
+Probeer het spel opnieuw te openen om de stappen te laden.}, stepsNotLoadedDueToBan: {
+title: Stappen niet geladen vanwege je ban, text: Je stappen zijn niet geladen omdat
+je bent uitgesloten van WalkScape. Vanaf nu worden je stappen weer normaal geteld.},
+couldNotGetServerTime: {title: Servertijd ophalen mislukt, text: De spelclient heeft
+de servertijd niet kunnen ophalen. Controleer je internetverbinding en probeer het
+nogmaals.}}}, info: {game: {equipGearSetFailed: {text: Uitrustingsset dragen mislukt.
+De uitrustingsset die je probeerde te dragen is mogelijk ongeldig of corrupt., title: Uitrustingsset
+dragen mislukt}, withdrawTooFew: {text: Je hebt niet genoeg voorwerpen om op te nemen.,
+title: Opnemen mislukt}, importGearSetFailed: {title: Uitrustingsset importeren mislukt,
+text: Fout opgetreden bij het importeren van uitrustingsset. Uitrustingssetgegevens
+zijn mogelijk corrupt of ongeldig.}, importGearSetTooManyTools: {title: Uitrustingsset
+heeft te veel gereedschappen, text: De uitrustingsset had meer gereedschappen dan
+toegestaan.}, changingActivityFailed: {title: Activiteit veranderen mislukt, text: Activiteit
+veranderen mislukt. Je bent al bezig met deze activiteit of het is niet beschikbaar.},
+equipGearSetSomeFailed: {title: Dragen van voorwerpen in uitrustingsset mislukt, text: 'Sommige
+voorwerpen in de uitrustingsset kunnen niet worden gedragen. Mogelijk is de uitrustingsset
+ongeldig, of je voldoet niet aan de eisen om sommige voorwerpen te dragen.'}, equipGearFailed: {
+title: Voorwerp dragen mislukt, text: Voorwerp kan niet worden gedragen. Probeer het
+nogmaals.}, withdrawZero: {title: Opnemen mislukt, text: Je kunt niet nul of minder
+voorwerpen opnemen.}, withdrawDidNotExist: {title: Opnemen mislukt, text: Het voorwerp
+dat je probeerde op te nemen bestaat niet. Heropen de bank om dit op te lossen.},
+withdrawFailed: {title: Opnemen mislukt, text: Opnemen mislukt. Probeer het nogmaals.},
+buybackFailed: {title: Terugkopen mislukt, text: Terugkopen mislukt. Je hebt de benodigde
+voorwerpen voor het terugkopen niet in je inventaris.}, queueLimitReached: {text: Je
+kunt niet meer dan 3 acties tegelijk in de wachtrij plaatsen. Voltooi of annuleer
+eerst enkele acties voordat je meer acties in de wachtrij plaatst., title: Wachtrijlimiet
+bereikt}, cannotQueueMoreThanOneActivity: {text: 'U kunt meerdere reisacties in de
+wachtrij plaatsen, maar slechts één activiteit tegelijk. Voltooi of annuleer de huidige
+activiteit voordat u een andere in de wachtrij plaatst.', title: Er kunnen geen activiteiten
+meer in de wachtrij worden geplaatst}, noPathFound: {title: Geen route gevonden, text: Er
+is geen route gevonden naar de geselecteerde locatie. Controleer of het mogelijk is
+om naar de geselecteerde locatie te reizen.}}}, confirmations: {changingStepSource: {
+title: Stappenbron veranderen?, text: Het veranderen van de stappenbron kan leiden
+tot het verliezen van stappen die nog niet gesynchroniseerd zijn. Controleer of je
+stappen gesynchroniseerd zijn voordat je de bron verandert., lastSyncText: 'Stappen
 voor het laatst gesynchroniseerd om {time}.', neverSyncedText: Stappen zijn nog nooit
 gesynchroniseerd.}, travelAndStartActivity: {text: Je bent niet op de juiste locatie
 om deze activiteit te starten. Wil je eerst naar de juist locatie reizen en dan de
