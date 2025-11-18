@@ -166,12 +166,12 @@ klusjes komen beschikbaar over:', refreshIn: 'Het prikbord wordt ververst over:'
 acceptedJobs: 'Huidig geaccepteerde klusjes <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>',
 hasNoItemsInBank: Er zijn geen geschikte voorwerpen in je bank., acceptJob: Klusje
 accepteren, youMustBeInLocationToCollect: 'Je moet op dezelfde locatie zijn als <object
-id="{obj}"/> om de beloning te ontvangen.', collectRewards: Beloning innen}, dialogs: {
-abandonJob: {title: Klusje opgeven, text: Weet je zeker dat je dit klusje wilt opgeven?
-Je zal de voortgang en beloningen van dit klusje kwijtraken.}}}, gear: {phrases: {
-skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen gevechtsmodificatoren
-door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators door gedragen
-voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
+id="{obj}"/> om de beloning te ontvangen.', collectRewards: Beloning innen, currentlyAcceptedJobs: Huidige
+geaccepteerde klusjes}, dialogs: {abandonJob: {title: Klusje opgeven, text: Weet je
+zeker dat je dit klusje wilt opgeven? Je zal de voortgang en beloningen van dit klusje
+kwijtraken.}}}, gear: {phrases: {skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen
+gevechtsmodificatoren door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators
+door gedragen voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
 modificatoren, combatModifiers: Gevechtsmodificatoren, noItemEquipped: Geen voorwerp
 uitgerust, noItemSelected: Geen voorwerp geselecteerd}}, tools: {phrases: {emptyToolSlot: Leeg
 gereedschapsvak, lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau
@@ -365,13 +365,14 @@ hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires., n
 hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}}, rewards: {
 phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open factie,
 repeatingReward: Herhalende beloning, unclaimedRewards: 'Niet geclaimde beloningen
-{count}'}}, shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien,
-buying: Kopen, selling: Verkopen, buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden,
-pendingInvites: Openstande uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {
-phrases: {arrivedToLocation: 'Gearriveerd in <object id={location} />', overEncumbered: Je
-inventaris is vol en je bent overbelast.}}, locales: {phrases: {language: Taal, helpToTranslate: WalkScape
-is <c>vertaald door de community</c>. Help ons met het vertalen van het spel naar
-meer talen en met het uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
+{count}', nextRewardUnlocked: 'Volgende beloning vrijgespeeld:'}}, shop: {phrases: {
+bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien, buying: Kopen, selling: Verkopen,
+buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden, pendingInvites: Openstande
+uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {phrases: {arrivedToLocation: 'Gearriveerd
+in <object id={location} />', overEncumbered: Je inventaris is vol en je bent overbelast.}},
+locales: {phrases: {language: Taal, helpToTranslate: WalkScape is <c>vertaald door
+de community</c>. Help ons met het vertalen van het spel naar meer talen en met het
+uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
 te bezoeken. Alle hulp wordt enorm gewaardeerd! ❤️, chooseALanguage: Kies een taal
 uit de onderstaande lijst., percentExplanation: '% laat zien hoeveel vertaald is.',
 selectGrammaticalGender: Selecteer grammaticaal geslacht, grammaticalGenderExplanation: Het
