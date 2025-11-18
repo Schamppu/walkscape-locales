@@ -79,35 +79,35 @@ requirements: Vereisten, requirementsNotMet: Je voldoet niet aan de vereisten., 
 voorzieningsvereisten., showingRecipiesThatUses: Recepten weergeven voor, requiresService: Vereist
 een voorziening., noMaterials: Je hebt momenteel geen materialen beschikbaar om iets
 te maken., noMaterialsThatCouldBeUsed: Geen materialen in je inventaris die gebruikt
-kunnen worden om iets te maken., materials: Materialen, rewards: Beloningen, recipes: Recepten},
-errors: {notSameQuality: Materialen moeten óf allemaal van hoge kwaliteit zijn óf
-allemaal normaal zijn, noService: Voorzieningsvereisten niet voldaan, noMaterials: Materialen
-om iets te maken ontbreken, skillRequirementsNotMet: Vaardigheidsvereisten niet voldaan}},
-'inventory': {'info': {'noItemEquipped': "Geen voorwerp aan het dragen. \\n\\n Je
-kunt een voorwerp dragen door er een te selecteren in de onderstaande lijst en op
-\"Dragen\" te drukken.", 'noItemSelected': "Geen voorwerp geselecteerd. \\n\\n Selecteer
-hieronder een voorwerp om het te vergelijken met het huidige voorwerp en het te dragen.",
-noItemsFound: Geen voorwerpen in je inventaris gevonden die in dit vak passen.}, phrases: {
-areYouSureToDrop: Weet je zeker dat je voorwerpen weg wilt gooien? Deze voorwerpen
-zullen voor altijd verloren gaan., slotsCount: 'Ruimte:', selectedStacks: '<c>{stacks}</c>
-stapels geselecteerd', requirementsNotMet: Vereisten niet voldaan., cantEquip: Kan
-niet gedragen worden., slotDoesntExist: Dit voorwerpvak bestaat niet meer., attributes: Attributen,
-abilities: Abilities, requires: Vereist, equipToRingOne: In ringvak 1 dragen, equipToRingTwo: In
-ringvak 2 dragen, equipToToolSlot: 'In gereedschapsvak {id} dragen', emptySlot: Leeg
-vak, allSkills: Alle vaardigheden, noItemEquipped: Geen voorwerp gedragen, noItemSelected: Geen
-voorwerp geselecteerd, inUse: In gebruik, disableWhenChanging: Uitschakelen bij wisselen
-van activiteit, enableWhenBack: Opnieuw inschakelen wanneer een activiteit start waar
-deze eerder gebruikt werd, selectedConsumable: Geselecteerd verbruiksartikel, consumables: Verbruiksartikelen,
-noConsumables: Geen verbruiksartikelen in je inventaris., noPotionConsumables: Geen
-<hl>elixers</hl> in je inventaris., allItemsInUse: 'Al deze voorwerpen worden zijn
-momenteel in gebruik, en kunnen niet weggegooid worden.', noConsumableSelected: Geen
-verbruiksartikel geselecteerd. Je kunt er hieronder een selecteren., checkBank: Bank
-openen, itemsInUse: Je hebt voorwerpen geselecteerd die al gebruikt worden. Je kunt
-voorwerpen in gebruik niet weggooien of bewaren in de bank., durationInSteps: 'Actief
-voor <c>{steps}</c> <icon i="Steps" /> stappen', cantBeDropped: Voorwerp kan niet
-weggegooid worden., oneOrMoreCantBeDropped: Een of meerdere voorwerpen kunnen niet
-weggegooid worden., duration: Duur, noFoodConsumables: Geen <hl>voedsel</hl> in je
-inventaris., treasury: Schatkamer, longPressTip: <c>Tip:</c> Een stapel voorwerpen
+kunnen worden om iets te maken., materials: Materialen, rewards: Beloningen, recipes: Recepten,
+allSkills: Alle vaardigheden}, errors: {notSameQuality: Materialen moeten óf allemaal
+van hoge kwaliteit zijn óf allemaal normaal zijn, noService: Voorzieningsvereisten
+niet voldaan, noMaterials: Materialen om iets te maken ontbreken, skillRequirementsNotMet: Vaardigheidsvereisten
+niet voldaan}}, 'inventory': {'info': {'noItemEquipped': "Geen voorwerp aan het dragen.
+\\n\\n Je kunt een voorwerp dragen door er een te selecteren in de onderstaande lijst
+en op \"Dragen\" te drukken.", 'noItemSelected': "Geen voorwerp geselecteerd. \\n\\
+n Selecteer hieronder een voorwerp om het te vergelijken met het huidige voorwerp
+en het te dragen.", noItemsFound: Geen voorwerpen in je inventaris gevonden die in
+dit vak passen.}, phrases: {areYouSureToDrop: Weet je zeker dat je voorwerpen weg
+wilt gooien? Deze voorwerpen zullen voor altijd verloren gaan., slotsCount: 'Ruimte:',
+selectedStacks: '<c>{stacks}</c> stapels geselecteerd', requirementsNotMet: Vereisten
+niet voldaan., cantEquip: Kan niet gedragen worden., slotDoesntExist: Dit voorwerpvak
+bestaat niet meer., attributes: Attributen, abilities: Abilities, requires: Vereist,
+equipToRingOne: In ringvak 1 dragen, equipToRingTwo: In ringvak 2 dragen, equipToToolSlot: 'In
+gereedschapsvak {id} dragen', emptySlot: Leeg vak, allSkills: Alle vaardigheden, noItemEquipped: Geen
+voorwerp gedragen, noItemSelected: Geen voorwerp geselecteerd, inUse: In gebruik,
+disableWhenChanging: Uitschakelen bij wisselen van activiteit, enableWhenBack: Opnieuw
+inschakelen wanneer een activiteit start waar deze eerder gebruikt werd, selectedConsumable: Geselecteerd
+verbruiksartikel, consumables: Verbruiksartikelen, noConsumables: Geen verbruiksartikelen
+in je inventaris., noPotionConsumables: Geen <hl>elixers</hl> in je inventaris., allItemsInUse: 'Al
+deze voorwerpen worden zijn momenteel in gebruik, en kunnen niet weggegooid worden.',
+noConsumableSelected: Geen verbruiksartikel geselecteerd. Je kunt er hieronder een
+selecteren., checkBank: Bank openen, itemsInUse: Je hebt voorwerpen geselecteerd die
+al gebruikt worden. Je kunt voorwerpen in gebruik niet weggooien of bewaren in de
+bank., durationInSteps: 'Actief voor <c>{steps}</c> <icon i="Steps" /> stappen', cantBeDropped: Voorwerp
+kan niet weggegooid worden., oneOrMoreCantBeDropped: Een of meerdere voorwerpen kunnen
+niet weggegooid worden., duration: Duur, noFoodConsumables: Geen <hl>voedsel</hl>
+in je inventaris., treasury: Schatkamer, longPressTip: <c>Tip:</c> Een stapel voorwerpen
 lang ingedrukt houden selecteerd alle soortgelijke stapels., dropItems: Voorwerpen
 weggooien?, slots: 'Ruimte <c>{slots}</c>'}, options: {expandInventory: Inventaris
 uitklappen, showConsumables: Verbruiksartikelen weergeven, consenseInventory: Inventaris
@@ -363,14 +363,15 @@ om je smartwatch te kunnen verbinden.\n\n<bp /> Alleen stappen die door Samsung 
 geregistreerd zijn, worden verwerkt door het spel."}}, wardrobe: {phrases: {noHeadwear: Je
 hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires., noBackAccessories: Je
 hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}}, rewards: {
-phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open factie}},
-shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien, buying: Kopen,
-selling: Verkopen, buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden, pendingInvites: Openstande
-uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {phrases: {arrivedToLocation: 'Gearriveerd
-in <object id={location} />', overEncumbered: Je inventaris is vol en je bent overbelast.}},
-locales: {phrases: {language: Taal, helpToTranslate: WalkScape is <c>vertaald door
-de community</c>. Help ons met het vertalen van het spel naar meer talen en met het
-uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
+phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open factie,
+repeatingReward: Herhalende beloning, unclaimedRewards: 'Niet geclaimde beloningen
+{count}'}}, shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien,
+buying: Kopen, selling: Verkopen, buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden,
+pendingInvites: Openstande uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {
+phrases: {arrivedToLocation: 'Gearriveerd in <object id={location} />', overEncumbered: Je
+inventaris is vol en je bent overbelast.}}, locales: {phrases: {language: Taal, helpToTranslate: WalkScape
+is <c>vertaald door de community</c>. Help ons met het vertalen van het spel naar
+meer talen en met het uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
 te bezoeken. Alle hulp wordt enorm gewaardeerd! ❤️, chooseALanguage: Kies een taal
 uit de onderstaande lijst., percentExplanation: '% laat zien hoeveel vertaald is.',
 selectGrammaticalGender: Selecteer grammaticaal geslacht, grammaticalGenderExplanation: Het
