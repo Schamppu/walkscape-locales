@@ -72,9 +72,10 @@ beschikbaar bij bepaalde prestatiepunt-checkpoints. Je behoudt toegang tot deze 
 als er meer prestatiepunten beschikbaar komen.}, phrases: {notUnlocked: Vergrendelde
 prestatie, rewardProgress: Beloningsvoortgang, showRewards: Beloningen bekijken, totalProgressUnlocks: Totale
 voortgang ontgredelingen, checkPointUnlocks: Checkpoint ontgrendelingen, unclaimedRewards: 'Niet-geclaimde
-beloningen: '}}, 'crafting': {'phrases': {'requiresMaterial': 'Vereist een materiaal.',
-'requiresOneOfTheFollowing': 'Vereist een van de volgende materialen.', requirements: Vereisten,
-requirementsNotMet: Je voldoet niet aan de vereisten., noServiceRequirements: Geen
+beloningen: ', collectiblesCount: 'Verzamelobjecten <icon i="Achievement Point"/>
+<c i=0>{count}</c> <c i=1>/ {maxCount}</c>'}}, 'crafting': {'phrases': {'requiresMaterial': 'Vereist
+een materiaal.', 'requiresOneOfTheFollowing': 'Vereist een van de volgende materialen.',
+requirements: Vereisten, requirementsNotMet: Je voldoet niet aan de vereisten., noServiceRequirements: Geen
 voorzieningsvereisten., showingRecipiesThatUses: Recepten weergeven voor, requiresService: Vereist
 een voorziening., noMaterials: Je hebt momenteel geen materialen beschikbaar om iets
 te maken., noMaterialsThatCouldBeUsed: Geen materialen in je inventaris die gebruikt
@@ -341,18 +342,35 @@ zijn vanuit je <icon i=\"Apple watch small\" /> <c>Apple Watch</c> of een andere
 Je kunt je stappen niet in realtime in het spel zien, en je stappen kunnen met een
 vertraging binnenkomen.\n \n<bp /> Je moet een extra permissie geven voor het lezen
 van gegevens uit Apple Health om je Apple Watch te kunnen verbinden.\n\n<bp /> Alleen
-stappen die door je Apple Watch geregistreerd zijn, worden verwerkt door het spel.\n"}},
-wardrobe: {phrases: {noHeadwear: Je hebt geen hoofddeksels., noFaceAccessories: Je
-hebt geen gezichtsaccessoires., noBackAccessories: Je hebt geen rugaccessoires., noEyeAccessories: Je
-hebt geen oogaccessoires.}}, rewards: {phrases: {alreadyClaimed: Al geclaimd}}, faction: {
-phrases: {openFaction: Open factie}}, shop: {phrases: {bought: Gekocht, sold: Verkocht,
-resetTrade: Ruil terugdraaien, buying: Kopen, selling: Verkopen, buyBack: Terugkopen}},
-social: {phrases: {friends: Vrienden, pendingInvites: Openstande uitnodigingen, manageFriends: Vrienden
-beheren}}, popupBubbles: {phrases: {arrivedToLocation: 'Gearriveerd in <object id={location}
-/>', overEncumbered: Je inventaris is vol en je bent overbelast.}}, locales: {phrases: {
-language: Taal, helpToTranslate: WalkScape is <c>vertaald door de community</c>. Help
-ons met het vertalen van het spel naar meer talen en met het uitbreiden van de huidige
-vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
+stappen die door je Apple Watch geregistreerd zijn, worden verwerkt door het spel.\n",
+watchAndroid: "WalkScape lees je stappen uit via <c>Health Connect</c>. Om stappen
+te synchroniseren van je <icon i=\"Watch small\" /> <c>smartwatch</c>. moet je een
+extra applicatie installeren die je stappen synchroniseert naar <c>Health Connect</c>,
+zoals Fitbit, Garmin Connect, of Galaxy Health.\n\n<bp /> <c i=2>Je moet je stappen
+synchroniseren naar Health Connect via andere applicaties </c> om de stappen te laten
+tellen in WalkScape.\n\n<bp /> Het proces om stappen te synchroniseren naar <c>Health
+Connect</c> verschilt per fabrikant. Mogelijk kost het opzetten hiervan wat extra
+moeite en is er enige technische kennis voor nodig.\n\n<bp /> Je moet een extra permissie
+geven voor het lezen van gegevens uit <c>Health Connect</c> om je smartwatch te kunnen
+verbinden.\n\n<bp /> Alleen stappen die door je smartwatch geregistreerd zijn, worden
+verwerkt door het spel.", samsungHealth: "WalkScape leest je stappen uit via <c>Samsung
+Health</c>. Je stappen van al je <icon i=\"Watch small\" /> <c>wearables</c> die met
+Samsung Health kunnen verbinden en stappen van je <icon i=\"Phone small\" /> <c>telefoon</c>
+worden gesynchroniseerd met het spel.\n\n<bp /> <c i=2>Je moet je stappen synchroniseren
+met Samsung Health via je wearables</c> voordat ze tellen in WalkScape.\n\n<bp />
+Je moet een extra permissie geven voor het lezen van gegevens uit <c>Samsung Health</c>
+om je smartwatch te kunnen verbinden.\n\n<bp /> Alleen stappen die door Samsung Health
+geregistreerd zijn, worden verwerkt door het spel."}}, wardrobe: {phrases: {noHeadwear: Je
+hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires., noBackAccessories: Je
+hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}}, rewards: {
+phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open factie}},
+shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien, buying: Kopen,
+selling: Verkopen, buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden, pendingInvites: Openstande
+uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {phrases: {arrivedToLocation: 'Gearriveerd
+in <object id={location} />', overEncumbered: Je inventaris is vol en je bent overbelast.}},
+locales: {phrases: {language: Taal, helpToTranslate: WalkScape is <c>vertaald door
+de community</c>. Help ons met het vertalen van het spel naar meer talen en met het
+uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
 te bezoeken. Alle hulp wordt enorm gewaardeerd! ❤️, chooseALanguage: Kies een taal
 uit de onderstaande lijst., percentExplanation: '% laat zien hoeveel vertaald is.',
 selectGrammaticalGender: Selecteer grammaticaal geslacht, grammaticalGenderExplanation: Het
