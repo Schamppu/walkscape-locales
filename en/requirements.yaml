@@ -15,6 +15,9 @@ singulars:
     text: Have item <item id="{item}"/> in your inventory.
   itemAnywhere:
     text: Have item <item id="{item}"/>.
+  itemQualityEquipped:
+    text: Have at least <numberProgress current="{current}" max="{max}" /> <itemQuality quality="{quality}" type="{type}"/> items equipped.
+    withoutType: Have at least <numberProgress current="{current}" max="{max}" /> <itemQuality quality="{quality}" type="crafted"/> or <itemQuality quality="{quality}" type="loot"/> items equipped.
   keywordEquipped:
     text: Have <object id="{obj}" /> equipped.
   keywordWithLevelEquipped:
