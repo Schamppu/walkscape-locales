@@ -374,6 +374,18 @@ singulars:
       notAffectingTraveling: (n'affecte pas l'efficacité des voyages)
       options: Options
       stopWhenOverEncumbered: S'arrêter quand surchargé
+      requirements: Prérequis
+      rewards: Récompenses
+      startActivity: Commencer l'activité
+      queueActivity: Mettre en file d'attente l'activité
+      travelAndStartActivity: Voyager et commencer l'activité
+      cantStartActivity: Impossible de commencer l'activité
+      requirementsNotMet: Prérequis non réunis
+      noActivitiesInLocation: Il n'y a pas d'activités dans <object id="{location}"/>.
+      locationIsUnknown: L'emplacement est inconnu. Une fois que vous aurez exploré
+        cet emplacement, vous pourrez voir les activités qui s'y déroulent.
+      activitiesInLocation: Activités disponibles dans <object id="{location}"/>
+      guideTip: Conseil du jour
     info:
       consumablesUsage: Vous pouvez choisir de la <c>nourriture</c> et une <c>potion</c>
         à consommer pendant vos activités.
@@ -382,6 +394,8 @@ singulars:
         disponibles ici.
       savedSteps: Vous utilisez vos pas en réserve. Chaque pas effectué compte double
         jusqu'à ce que vos pas en réserve soient épuisés.
+    rewards:
+      experience: <bp /><c>{xp} </c><object id="{skill}"/> expérience
   permissions:
     phrases:
       pedometerPermission: Permissions du compteur de pas
@@ -806,3 +820,15 @@ singulars:
     phrases:
       queue: File d'attente
       queuedActions: Actions suivantes
+      noPathFound: Aucun chemin trouvé vers la destination.
+      untilInventoryFull: Exécuter jusqu'à ce que l'inventaire soit plein
+      switchingToGearSet: Passer à l'ensemble d'équipements <c>{name}</c>
+      noGearSetFound: Ensemble d'équipements non trouvé, l'avez-vous supprimé ?
+      activityInLocation: <object id="{activity}"/> dans<object id="{location}"/>
+    options:
+      switchGearSet:
+        text: Passer à l'ensemble d'équipements
+        desc: Passer à un ensemble d'équipements sélectionné avant de commencer cette
+          action.
+      withdrawGearSet:
+        text: Retirer l'ensemble d'équipements
