@@ -386,6 +386,7 @@ singulars:
         cet emplacement, vous pourrez voir les activités qui s'y déroulent.
       activitiesInLocation: Activités disponibles dans <object id="{location}"/>
       guideTip: Conseil du jour
+      levelActivity: Niveau<c>{niveau}</c> <object id="{skill}"/> activité
     info:
       consumablesUsage: Vous pouvez choisir de la <c>nourriture</c> et une <c>potion</c>
         à consommer pendant vos activités.
@@ -396,6 +397,8 @@ singulars:
         jusqu'à ce que vos pas en réserve soient épuisés.
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> expérience
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} objets de collection</c>
+        trouvable
   permissions:
     phrases:
       pedometerPermission: Permissions du compteur de pas
@@ -825,6 +828,7 @@ singulars:
       switchingToGearSet: Passer à l'ensemble d'équipements <c>{name}</c>
       noGearSetFound: Ensemble d'équipements non trouvé, l'avez-vous supprimé ?
       activityInLocation: <object id="{activity}"/> dans<object id="{location}"/>
+      travelingTo: <object id="{from}"/> à <object id="{to}"/>
     options:
       switchGearSet:
         text: Passer à l'ensemble d'équipements
@@ -832,3 +836,17 @@ singulars:
           action.
       withdrawGearSet:
         text: Retirer l'ensemble d'équipements
+        desc: Récupère un ensemble d'équipements de ta banque si il y en une dans
+          n'importe quel lieux que tu traverses
+      cancelGearSetSwitch:
+        text: Annule le changement de l'ensemble d'équipements
+      depositUnlockedItems:
+        desc: Dépose tous les objets déverouillés de ton inventaire à ta banque si
+          il y en une dans n'importe quelle lieux que tu traverses
+      removeFromQueue:
+        text: Enlève de la file d'attente
+        desc: Enlève cette action et toutes celles d'après de la file d'attente
+    suggestedOptions:
+      startTraveling: Voyage
+      startActivity: Activité
+      startCrafting: Artisanat
