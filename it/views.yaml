@@ -106,7 +106,7 @@ singulars:
     buttons:
       choose: 'Scegli'
       hideHat: Copricapo nascosto
-      randomize: Randomizza
+      randomize: Casuale
       showHat: Copricapo visibile
     phrases:
       currentSelection: Selezione attuale
@@ -173,14 +173,90 @@ singulars:
         desc: Deposita tutti gli oggetti sbloccati dal tuo inventario nella banca,
           se disponibile, in uno dei luoghi che attraversi.
         text: Deposita gli oggetti sbloccati
+      withdrawGearSet:
+        text: Ritirare il set
+        desc: Ritira un set dalla banca se ne è disponibile uno in una delle località
+          che attraversi.
+      removeFromQueue:
+        text: Rimuovi dalla coda
+        desc: Rimuove questa azione e tutte le azioni successive dalla coda.
+      cancelGearSetSwitch:
+        text: Cancella il cambio di set
+        desc: Annulla il set selezionato per questa azione.
+    suggestedOptions:
+      startActivity: Attività
+      startCrafting: Creazione
+      startTraveling: Viaggio
+    suggestions:
+      traveling:
+        onceYouArriveTo: Aggiungi azione alla coda in <object id="{location}"/>?
+      activity:
+        onceInventoryIsFull: Una volta che il tuo inventario è pieno, ti va di fare
+          qualcosa?
+        onceAllActionsAreCompleted: Una volta completate tutte le azioni, desideri
+          fare qualcosa?
+      crafting:
+        onceAllItemsAreCrafted: Una volta realizzati tutti gli oggetti, desideri fare
+          qualcosa?
+        onceCertainRarityIsCrafted: Una volta creata una certa rarità o utilizzati
+          tutti i materiali, desideri fare qualcosa?
   character:
     phrases:
       skills: Abilità
+      checkOut: Ecco il mio personaggio {nome} in WalkScape . Dai un'occhiata!\nhttps://walkscape.app
+      stepsOfLastWeek: Passi degli ultimi 7 giorni
+      checkOutSubject: Guarda i miei progressi su WalkScape!
+      totalLevel: Livello totale
+      savePicture: Salva immagine
+      level: 'Livello del personaggio: <c>{level}</c>'
+      stepsToNextLevel: Passi per il livello successivo <c>{passaggi}</c>
     info:
       skillBreakdown: Ecco l'elenco completo di tutte le abilità che il tuo personaggio
         ha potenziato durante il tuo viaggio. Tocca una qualsiasi delle abilità per
         visualizzare informazioni più dettagliate su di essa e su cosa sblocca.
+      eachLevelIncreasesStepBank: Ogni livello personaggio dopo il livello <c>{livello}</c>
+        aumenta la quantità massima di passi salvati di <c>{quantità}</c>.
   stats:
     info:
       reputation: La reputazione è una misura della tua notorietà nelle diverse fazioni
         di WalkScape.
+  permissions:
+    phrases:
+      pedometerPermission: Autorizzazione per il contapassi
+      noDeviceFoundAndroid: Nessun dispositivo trovato. Assicurati di aver premuto
+        il pulsante <c>Connetti a Health Connect</c> in alto e di aver concesso l'autorizzazione
+        a leggere i dati di Health Connect.
+      connectAppleHealth: Connetti ad Apple Health
+      connectHealthConnect: Connettiti ad Health Connect
+      connectSamsungHealth: Connetti a Samsung Health
+      connect: Connetti
+      connectAppleHealthExplanation: È necessario connettersi ad Apple Health per
+        consentirci di leggere i passi sincronizzati dal tuo orologio e vedere quali
+        dispositivi hai collegato. Se è la prima volta che utilizzi WalkScape, ti
+        verrà richiesta l'autorizzazione a leggere i dati da Apple Health.
+      noDeviceFound: Nessun dispositivo trovato. Assicurati di aver premuto il pulsante
+        <c>Connetti ad Apple Health</c> sopra e di aver concesso l'autorizzazione
+        a leggere i dati di Apple Health.
+      installHealthConnect: Installa Health Connect
+      connectHealthConnectExplanation: È necessario connettersi a Google Connect per
+        consentirci di leggere i passi sincronizzati dall'orologio e vedere quali
+        dispositivi sono stati collegati. Se è la prima volta che utilizzi WalkScape,
+        ti verrà richiesta l'autorizzazione a leggere i dati da Google Connect.
+      pedometerPermissionExplanation: Abbiamo bisogno di questa autorizzazione per
+        utilizzare i dati del contapassi del tuo dispositivo.
+      youNeedToGivePermissions: Per poter procedere con il gioco è necessario concedere
+        le seguenti autorizzazioni. Tocca sulle autorizzazioni per concederle.
+  locales:
+    phrases:
+      chooseALanguage: Scegli una lingua dall'elenco sottostante.
+      percentExplanation: '% indica la percentuale tradotta.'
+      selectGrammaticalGender: Seleziona il genere grammaticale
+      grammaticalGenderExplanation: Il genere grammaticale scelto influisce sul modo
+        in cui i testi dell'interfaccia utente del gioco si riferiscono a te.
+      youCanChangeAnyTime: È possibile modificare la lingua in qualsiasi momento dalla
+        sezione <c>Impostazioni di gioco</c>.
+      helpToTranslate: WalkScape è <c>tradotto dalla community</c>. Aiutaci a tradurre
+        il gioco in altre lingue e ad ampliare le traduzioni attuali visitando la
+        <a href="https://wiki.walkscape.app/wiki/Localization">Guida alla traduzione</a>.
+        Il tuo aiuto è molto apprezzato! ❤️
+      language: Lingua
