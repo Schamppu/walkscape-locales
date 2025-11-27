@@ -127,17 +127,37 @@ singulars:
       locationIsUnknown: Локация неизвестна. Когда вы исследуете это место, здесь
         появятся активности.
       guideTip: Совет дня
+      savedStepsUsed: Использовано сохранённых шагов
+      workEfficiency: Эффективность работы
+      maxWorkEfficiency: Макс. эффективность работы
+      fromOverLevels: За превышение уровня <numberProgress current="{current}" max="{max}"
+        />
+      agilityBonus: Уровень ловкости <c>{level}</c>
+      fromGear: Экипировка
+      fromServices: Бонус оборудования
+      fromCollectibles: Коллекционные предметы
+      fromConsumables: Расходники
+      changeActivity: Сменить активность
+      abilities: Способности
+      baseEfficiency: Базовая эффективность
+      fromOverencumbered: Перегруз
     info:
       noActivity: Активность не выбрана. <hl>Выберите одну ниже</hl>, или свайпните
         влево, чтобы увидеть всё, доступное в данной локации.
       consumablesUsage: Вы можете выбрать <c>еду</c> и <c>зелье</c>, используемые
         во время активности.
-      savedSteps: У вас есть сохранённые шаги, которые сейчас расходуются. Каждый
-        шаг считается за два до тех пор пока сохранённые шаги не будут истрачены.
+      savedSteps: Когда активность не запущена, шаги не пропадают — они сохраняются
+        в запасе. Во время ходьбы без задачи этот запас пополняется. Но если вы снова
+        запустите активность, каждый пройденный вами шаг будет списывать дополнительно
+        один шаг из накопленного запаса. Получается, что вы зарабатываете шаги вдвое
+        быстрее.
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> опыта
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} коллекционных предметов</c>
         можно найти
+    options:
+      completeUntilActions: Выполнить определённое число действий
+      numberOfActions: Количество действий
   abilities:
     info:
       abilitiesInfo: Способности — это особые действия, с помощью которых вы можете
@@ -155,6 +175,8 @@ singulars:
       noAction: Нет действий
       holdToCast: Зажмите для применения
       holdToUse: Зажмите, чтобы использовать
+      alreadyHere: Вы уже в <object id="{location}"/>. Способность нельзя использовать
+        для перемещения сюда.
   jobs:
     phrases:
       acceptedJobs: Работы, принятые в данный момент <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
@@ -292,6 +314,11 @@ singulars:
       cooldownReady: 'Перезарядка: выполнена'
       noCooldown: Нет перезарядки.
       followingMustBeTrueToUse: 'Требования не выполнены:'
+      cooldown: Восстановление
+      source: Активатор
+      charges: Заряды
+      cooldownRequirements: Требования к восстановлению
+      requirements: Требования
   faction:
     phrases:
       openFaction: Открыть фракцию
@@ -369,6 +396,8 @@ singulars:
       noConsumables: Нет расходников в вашем инвентаре.
       noFoodConsumables: Нет <hl>еды</hl> в вашем инвентаре.
       noPotionConsumables: Нет <hl>зелий</hl> в вашем инвентаре.
+      depositAll: Все
+      hatchesInto: Вылупляется в
     options:
       expandInventory: Расширить инвентарь
       showMaterials: Показать материалы
@@ -498,6 +527,8 @@ singulars:
       tools: Инструменты
       noActivitiesSelected: Не выбрано активностей
       newSetDefaultName: Мой новый набор экипировки
+      showItems: Показать
+      reorderGearSets: Упорядочить наборы снаряжения
     errors:
       keywordError: 'Набор экипировки уже имеет: <object id="{keyword}" />'
       duplicateItem: Предмет уже есть в наборе экипировки
@@ -519,6 +550,8 @@ singulars:
       gearSetManageShortDesc: Чтобы создать, импортировать или редактировать наборы
         снаряжения, нажмите <c i=0>Настроить</c>.
       noGearSets: У вас пока нет созданных наборов снаряжений.
+      gearSetReorderDesc: Вы можете изменить порядок ваших наборов снаряжения, перетаскивая
+        их в списке.
   location:
     phrases:
       activities: Активности
@@ -533,6 +566,7 @@ singulars:
       owner: Владелец
       showingRoutesFrom: Варианты путешествий из <object id="{from}"/>.
       noRoutesFromLocation: Нет направлений путешествий из <object id="{from}"/>.
+      escape: Спасение
   pfpCreation:
     buttons:
       randomize: Выбрать случайно
@@ -653,6 +687,7 @@ singulars:
       ifYouAreSure: Если вы уверены, напишите <c>УДАЛИТЬ</c> в поле и нажмите 'Продолжить'.
       areYouAbsolutelySure: Вы точно уверены? После этого шага, вы необратимо потеряете
         вашего персонажа.
+      restart: Перезапуск
     loadingStates:
       localizationFiles: Загрузка файлов локализации
       gameVersion: Получение версии игры
@@ -741,6 +776,7 @@ singulars:
       noGearSetFound: Выбранный набор снаряжения не найден. Возможно вы его удалили?
       activityInLocation: <object id="{activity}"/> в <object id="{location}"/>
       noPathFound: Путь до цели не найден.
+      forXActions: 'Выполняется действий: <c>{count}</c>'
     suggestedOptions:
       startTraveling: Перемещение
       startActivity: Активность
@@ -946,6 +982,7 @@ maps:
       'gameplay': Игровой процесс
       'account': Учётная запись
       'character': Персонаж
+      'characterSpecific': Не получать опыт за перемещения
     boolSettings:
       'alwaysStopWhenInventoryFull': По умолчанию остановиться когда перегружены
       'showRecipesRequirementsAreMet': Требования по уровню не выполнены
@@ -963,6 +1000,7 @@ maps:
       'warningBeforeClaimingExperience': Показывать предупреждение перед получением
         опыта
       'activityInformationOpen': Показывать дополнительную информацию об активности
+      'toggleAgilityXp': Отключить получение опыта Ловкости от перемещений
     enumSettings:
       'language': Язык
       'leaderboardFilter': Показать
@@ -1078,3 +1116,13 @@ maps:
       'devblog': DevBlog
   skillTypes:
     'gathering': Добыча ресурсов
+    'combat': Бой
+    'utility': Вспомогательные
+    'artisan': Производство
+  abilities:
+    types:
+      'active': Активная
+      'passive': Пассивная
+      'consumable': Расходуемая
+      'activity': Активность
+      'emergency': Экстренная
