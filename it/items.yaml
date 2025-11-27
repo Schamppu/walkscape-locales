@@ -4,7 +4,7 @@ singulars:
       bagel:
         desc: Una pagnotta con un buco al centro. In realtà è solo una ciambella senza
           zucchero.
-        name: Bagel
+        name: Bagels
       beer:
         desc: La fermentazione potrebbe essere stata una scoperta più importante del
           fuoco.
@@ -59,7 +59,7 @@ singulars:
         name: Curry di funghi
       pancake:
         desc: Una base da farcire con ogni tipo di ingrediente.
-        name: Pancake
+        name: Pancakes
       pickles:
         desc: Il più acre fra gli spuntini.
         name: Sottaceti
@@ -76,7 +76,7 @@ singulars:
       tofu:
         desc: Ha una consistenza un po' spugnosa, ma contiene molte proteine, vitamine
           e minerali.
-        name: Tofu
+        name: Formaggio Tofu
       veggieSoup:
         desc: Una ciotola di zuppa di verdure. Un piatto umile ma soddisfacente, apprezzato
           da molti in Arenum.
@@ -97,6 +97,10 @@ singulars:
           desc: Secondo alcune voci, questo baule sarebbe arrotondato così da poterlo
             far rotolare in giro per la città. Ingegnoso!
           name: Forziere di Forgiatempesta
+        rustyChest:
+          desc: Una vecchia cassa arrugginita trovata e conservata da Herbert. Aspetta
+            solo di aiutare i nuovi avventurieri a iniziare la loro avventura.
+          name: Cassa arrugginita
   crafted:
     equipmentSets:
       bronze:
@@ -148,19 +152,23 @@ singulars:
           name: Calzari di rame
       farganite:
         chest:
-          desc: '-'
+          desc: 'Una fortezza impenetrabile sul tuo petto, il tuo nemico può vedere
+            se stesso sulla sua superficie blu riflettente.'
           name: Corazza di farganio
         gloves:
-          desc: '-'
+          desc: 'Un meraviglioso paio di guanti che sembrano riflettere il colore
+            attuale del cielo.'
           name: Guanti di farganio
         heavyHelmet:
-          desc: '-'
+          desc: 'Un marchio dei guerrieri più abili del Continente Occidentale.'
           name: Elmo di farganio pesante
         legs:
-          desc: '-'
+          desc: 'Un perfetto equilibrio tra difesa e peso, garantiscono a chi li indossa
+            un''elevata mobilità e un''ottima difesa.'
           name: Schinieri di farganio
         lightHelmet:
-          desc: '-'
+          desc: 'Un enigmatico capolavoro di arte orafa, che avvolge il tuo viso in
+            un blu scintillante.'
           name: Elmo di farganio leggero
         shoes:
           desc: 'Almeno sono più leggeri di quelli neri!'
@@ -192,10 +200,13 @@ singulars:
           name: Calzari di ferro
       steel:
         chest:
-          desc: '-'
+          desc: 'Un potente baluardo per il torso e una testimonianza dello spirito
+            indomito di guerrieri e cavalieri.'
           name: Corazza d'acciaio
         gloves:
-          desc: '-'
+          desc: 'Realizzati con cura meticolosa, offrono sia resistenza che destrezza,
+            consentendo a chi li indossa di maneggiare armi e strumenti con abilità
+            magistrale.'
           name: Guanti d'acciaio
         heavyHelmet:
           desc: 'Il riflesso del resto della tua armatura e le piccole fessure rendono
@@ -214,19 +225,22 @@ singulars:
           name: Calzari d'acciaio
       tarsilium:
         chest:
-          desc: '-'
+          desc: 'Un corpo nero, scelta popolare tra i cavalieri oscuri del regno.'
           name: Corazza di tarsilio
         gloves:
-          desc: '-'
+          desc: 'Un paio di guanti neri che consentono movimenti fluidi del palmo
+            e delle dita.'
           name: Guanti di tarsilio
         heavyHelmet:
-          desc: '-'
+          desc: 'Un casco nero e pesante offre una buona protezione contro i colpi
+            al tuo organo preferito, il cervello.'
           name: Elmo di tarsilio pesante
         legs:
-          desc: '-'
+          desc: 'Un set di gambe piatte nere, perfette per i cavalieri gotici.'
           name: Schinieri di tarsilio
         lightHelmet:
-          desc: '-'
+          desc: 'Un casco nero che non solo offre una buona protezione alla testa,
+            ma è anche utile per muoversi senza essere visti al buio.'
           name: Elmo di tarsilio leggero
         shoes:
           desc: 'Un paio di scarpe nere. Almeno sono più leggere di quelle d''acciaio!'
@@ -317,26 +331,33 @@ singulars:
     equipmentSets:
       dimensional:
         chest:
-          desc: '-'
+          desc: 'Il colletto e i polsini di questa camicia sono ricoperti di polvere
+            di stelle, mentre onde di vuoto lambiscono lentamente il resto della camicia.'
           name: Maglietta dimensionale
         feet:
-          desc: '-'
+          desc: 'La polvere di stelle sulle scarpe le fa brillare ad ogni passo.'
           name: Scarpe dimensionali
         head:
-          desc: '-'
+          desc: 'Le costellazioni punteggiano il bordo di questo cappello, scintillando
+            delicatamente durante il giorno e vorticosamente nel vuoto che si muove
+            di notte.'
           name: Cappello dimensionale
         legs:
-          desc: '-'
+          desc: 'Stardust e paillettes sembrano tenere insieme questi pantaloni alla
+            moda con facilità.'
           name: Pantaloni dimensionali
       enchanted:
         chest:
-          desc: '-'
+          desc: 'Ogni volta che alzi il colletto, sembri un po'' più cool. Soprattutto
+            con il primo bottone allacciato.'
           name: Camicia incantata
         feet:
-          desc: '-'
+          desc: 'Cliccando due volte sui tacchi non si torna a casa, ma il suono che
+            producono quando si cammina è davvero fantastico.'
           name: Scarpe incantate
         head:
-          desc: '-'
+          desc: 'Questo cappello può contenere fino a dieci galloni. Di cosa? Nessuno
+            lo ha ancora capito.'
           name: 'Cappello incantato'
         legs:
           desc: 'Questi pantaloni calzano sempre alla perfezione e hanno anche le
@@ -345,78 +366,106 @@ singulars:
     skilling:
       agility:
         exerciseHeadband:
-          desc: '-'
+          desc: 'Questa fascia per capelli ci ricorda che la forza nasce dalla dedizione
+            e che il guerriero che è in noi può superare qualsiasi sfida, non importa
+            quanto fantastica o impegnativa possa essere.'
           name: Fascia sportiva
         medievalSneakers:
-          desc: '-'
+          desc: 'Ad ogni passo, offrono a chi le indossa un viaggio silenzioso e agile
+            attraverso regni antichi e contemporanei, colmando il divario tra le epoche.'
           name: Scarpe da ginnastica medievali
+        clayFrisbee:
+          name: Disco ghiacciato di argilla
+        goldenFrisbee:
+          name: Disco ghicchiato d'oro
       carpentry:
         handsaw:
-          desc: '-'
+          desc: 'Questa sega incarna l''armonia tra artigiano e natura, garantendo
+            la possibilità di modellare il legno con precisione ed eleganza.'
           name: Sega a mano
         protectiveGloves:
-          desc: '-'
+          desc: 'È meglio quando la possibilità di farsi tagliare le dita con una
+            sega è ridotta allo 0%.'
           name: Guanti protettivi
         toolbelt:
-          desc: '-'
+          desc: 'Un accessorio multifunzionale che racchiude una vasta gamma di strumenti
+            per la lavorazione del legno'
           name: Cintura porta attrezzi
         woodworkingGlasses:
-          desc: '-'
+          desc: 'Quando indossati, questi occhiali rivelano i motivi intricati e le
+            storie racchiuse in ogni tavola.'
           name: Occhiali per falegnameria
       cooking:
         chefsApron:
-          desc: '-'
+          desc: 'Con questo grembiule, ogni pasto diventa un capolavoro e ogni piatto
+            un''opera d''arte.'
           name: Grembiule da cuoco
         chefsHat:
-          desc: '-'
+          desc: 'Questo cappello stravagante sembra canalizzare la magia della cucina,
+            ispirando meraviglie culinarie ad ogni movimento della spatola.'
           name: Cappello da cuoco
         meatCleaver:
-          desc: '-'
+          desc: 'La sua affilata lama in acciaio può tagliare pezzi di carne in pezzi
+            più piccoli. Come le tue dita, se non stai attento.'
           name: Mannaia da macellaio
       crafting:
         candlehat:
           desc: 'È un cappello con una candela attaccata. Cos''altro si può desiderare?'
           name: Candelmo
         craftingGuidebook:
-          desc: '-'
+          desc: 'Il manuale di artigianato, un tomo di creatività senza limiti, è
+            un archivio di conoscenze tramandate da generazioni di artigiani e inventori.'
           name: Manuale dell'artigiano
         grippyGloves:
-          desc: '-'
+          desc: 'Questi guanti offrono una presa salda su qualsiasi superficie e,
+            secondo quanto si dice, aiutano a non far cadere mai viti o piccoli componenti.'
           name: Guanti antiscivolo
         magnifyingLens:
-          desc: '-'
+          desc: 'Uno strumento utilizzato dai maestri artigiani che cercano di svelare
+            i segreti di macchinari complessi e studiare il mondo a livello microscopico.'
           name: Lente d'ingrandimento
       fishing:
         fishermansHat:
-          desc: '-'
+          desc: 'Questo cappello è un simbolo della pazienza dei pescatori e del loro
+            legame con le correnti sempre fluenti della natura.'
           name: Cappello da pescatore
         fishermansTrousers:
-          desc: '-'
+          desc: 'Realizzati in materiale resistente e impermeabile, offrono protezione
+            dagli agenti atmosferici consentendo al contempo movimenti agili.'
           name: Pantaloni da pescatore
       foraging:
         halflingsFeetSlippers:
-          desc: '-'
+          desc: 'Queste pantofole comode e affascinanti sono progettate per imitare
+            i piedi pelosi degli halfling, completi di piccole dita e dettagli stravaganti.'
           name: Pantofole di mezzuomo
         hatWithAFeather:
-          desc: '-'
+          desc: 'La sua presenza evoca lo spirito di avventura e il fascino di terre
+            lontane, promettendo che ovunque venga indossato, seguiranno sicuramente
+            storie di audaci avventure.'
           name: Cappello con piuma
       mining:
         miningHelm:
-          desc: '-'
+          desc: 'Il casco da minatore, un faro nelle profondità della terra, emana
+            una luce costante che squarcia l''oscurità dei regni sotterranei.'
           name: Casco da minatore
         shovelAxe:
-          desc: '-'
+          desc: 'Un compagno indispensabile per gli avventurieri che cercano di portare
+            alla luce segreti sepolti sotto la superficie e difendersi dai pericoli
+            che potrebbero presentarsi.'
           name: Pala-ascia
       smithing:
         smeltingGoggles:
-          desc: '-'
+          desc: 'Uno scudo per gli occhi per poter guardare il bagliore accecante
+            del metallo fuso.'
           name: Occhiali da fabbro
         smithsApron:
-          desc: '-'
+          desc: 'Copertura protettiva della fucina, il grembiule è un intreccio di
+            resistenza e maestria artigianale.'
           name: Grembiule da fabbro
       woodcutting:
         lumberjackShirt:
-          desc: '-'
+          desc: 'Robusto e a quadri, è sia uno scudo contro gli elementi atmosferici
+            sia una testimonianza della resilienza del boscaiolo.'
           name: Camicia da boscaiolo
         lumberjackBoots:
           name: Stivali del boscaiolo
@@ -430,43 +479,55 @@ singulars:
             i piedi.
     versatile:
       backpack:
-        desc: '-'
+        desc: 'Uno zaino in pelle di alta qualità con tasche aggiuntive e molto spazio
+          per riporre oggetti.'
         name: Zaino
       bugCatchingNet:
         desc: 'È utile per catturare molti tipi di insetti, o anche... meduse?'
         name: Retino per insetti
       comfySlippers:
-        desc: '-'
+        desc: 'Ogni passo fatto con queste pantofole è come camminare sulle nuvole.'
         name: Pantofole comode
       fishingLure:
-        desc: '-'
+        desc: 'Realizzato a mano da abili artigiani, brilla di colori e motivi che
+          danzano come scaglie iridescenti alla luce del sole.'
         name: Esca da pesca
       hatOfWisdom:
-        desc: '-'
+        desc: 'Quando viene indossato, questo cappello conferisce a chi lo indossa
+          una maggiore comprensione del mondo.'
         name: Copricapo della saggezza
       mosquitoNethat:
-        desc: '-'
+        desc: 'Questo cappello permette a chi lo indossa di viaggiare in tutta tranquillità
+          anche nelle regioni più infestate dagli insetti, concentrandosi sulle meraviglie
+          della natura selvaggia.'
         name: Cappello con rete anti-zanzare
       protectiveEarmuffs:
-        desc: '-'
+        desc: 'Questi paraorecchie sono un simbolo di buon senso e della capacità
+          di mantenere la calma anche nel caos più totale.'
         name: Paraorecchie protettivi
       recipeBook:
-        desc: '-'
+        desc: 'Questo libro è un compagno culinario per aspiranti cuochi, che offre
+          le chiavi per svelare i sapori del mondo e creare piatti a dir poco incantevoli.'
         name: Ricettario
       snowshoes:
-        desc: '-'
+        desc: 'Le racchette da neve assicurano che anche nelle bufere più violente
+          chi le indossa possa viaggiare senza ostacoli ed esplorare le gelide meraviglie
+          del mondo.'
         name: Ciaspole
       utilityPants:
-        desc: '-'
+        desc: 'Pantaloni verdi con innumerevoli tasche, un capo indispensabile per
+          un avventuriero completo.'
         name: Pantaloni cargo
       warmBeanie:
-        desc: '-'
+        desc: 'Tessuto con fili resistenti al gelo, avvolge la testa di chi lo indossa
+          come un abbraccio confortante davanti al fuoco del camino.'
         name: Berretto caldo
       warmJacket:
-        desc: '-'
+        desc: 'Una giacca molto calda per il freddo intenso.'
         name: Giubbotto imbottito
       waterproofPants:
-        desc: '-'
+        desc: 'Garantiscono che chi li indossa rimanga asciutto e comodo anche sotto
+          la pioggia più torrenziale o quando si attraversa una palude insidiosa.'
         name: Pantaloni impermeabili
   materials:
     carpentry:
@@ -751,6 +812,14 @@ singulars:
       volcanicAsh:
         name: Cenere vulcanica
         desc: Questa cenere è il residuo di un'antica e violenta eruzione vulcanica.
+      goldOre:
+        name: Minerali auriferi
+        desc: Un pezzo di minerale aurifero. Molto apprezzato e prezioso praticamente
+          ovunque. Brilla di potenziale.
+      silverOre:
+        name: Minerali di argento
+        desc: Un pezzo di minerale d'argento. Non prezioso come l'oro, ma brillante
+          di una lucentezza tutta sua.
     rawFish:
       rawCarp:
         desc: Il sapore blando della carpa si presta bene alla preparazione di diversi
@@ -926,6 +995,15 @@ singulars:
         name: Canne di Bamboo
         desc: Il bamboo è flessibile ma resistente, il che lo rende adatto a molteplici
           utilizzi.
+      yewLogs:
+        desc: Il legno di tasso è denso e resistente, rendendolo ideale per la realizzazione
+          di oggetti durevoli.
+        name: Tronchi di tasso
+      ectoLogs:
+        desc: Questi tronchi sono impregnati e permeati di ectoplasma, che conferisce
+          loro un aspetto spettrale e proprietà uniche. Per lavorarli è necessaria
+          una segheria maledetta.
+        name: Tronchi di ectoplasma
     crafting:
       rope:
         desc: Un kit di sopravvivenza non è completo senza una corda. È essenziale
@@ -939,8 +1017,8 @@ singulars:
         name: Corda d'alghe
         desc: Lunghi pezzi di alghe legati a formare una corda.
       elderhideRope:
-        name: Corda di corteccia
-        desc: Una corda robusta realizzata in dura corteccia.
+        name: Corda di pelle di daino
+        desc: Una corda robusta realizzata in pelle di daino.
     hunting:
       animalMeat:
         desc: Un pezzo di carne fresca, pronto per essere cucinato, essiccato o salato.
