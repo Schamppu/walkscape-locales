@@ -55,8 +55,8 @@ singulars:
     text: Mějte všechny dovednosti alespoň na úrovni <numberProgress current="{current}"
       max="{max}" />.
   levelUpSkills:
-    text: Zvyšte úroveň svých dovedností <numberProgress current="{current}" max="{max}"
-      /> krát.
+    text: Mějte <numberProgress current="{current}" max="{max}" /> celkovou úroveň
+      dovedností.
   haveBankStacks:
     text: Mějte ve své bance <numberProgress current="{current}" max="{max}" /> hromádek
       položek.
@@ -114,3 +114,16 @@ singulars:
       />.
     trellinMap: Vlastněte <object id="item-map_of_gdte-b28951b2-2cac-4e53-b6f1-bc2030590433"
       />.
+  itemQualityEquipped:
+    withoutType: Mějte vybaveno alespoň <numberProgress current="{current}" max="{max}"
+      /> <itemQuality quality="{quality}" type="crafted"/> nebo <itemQuality quality="{quality}"
+      type="loot"/> předmětů.
+    text: Mějte vybaveno alespoň <numberProgress current="{current}" max="{max}" />
+      <itemQuality quality="{quality}" type="{type}"/> předmětů.
+  keywordEquipped:
+    text: Mějte vybaveno <object id="{obj}" />.
+  keywordWithLevelEquipped:
+    text: Mějte <object id="{obj}" /> vybavení, které vyžaduje alespoň <skill skill="{skill}"/>
+      úroveň <numberProgress current="{current}" max="{max}" />.
+  mainSkillType:
+    text: Při provádění dovedností <skillType type="{type}"/>.
