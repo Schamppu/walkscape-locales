@@ -141,6 +141,12 @@ singulars:
         desc: Sledujete svou podvodní mapu a prozkoumáváte stezky podvodní jeskyně.
           Zdá se, že se nekonečně klikatí a stáčí, ale někam vás vede. Musíte prostě
           plavat dál.
+    wallisia:
+      shorelineScramble:
+        name: Lezení na pobřeží
+        desc: Obcházíte hřebeny úzkého pobřeží a proplétáte se mezi blízkými troskami
+          a skalními útvary v oblasti. Ztratit rovnováhu v této oblasti by způsobilo
+          pořádný šplouchnutí ve vodě pod vámi.
   fishing:
     jarvonia:
       lakeFishing:
@@ -153,12 +159,12 @@ singulars:
         name: Rybolov na rybníku
       seaFishingNet:
         name: Mořský rybolov (síťí)
-        desc: Na zimním pobřeží najdete odlehlé místo a nahodíte síť do klidných,
-          chladných vod a užíváte si poklidného a samotářského mořského rybolovu.
+        desc: Podél pobřeží najdete odlehlé místo a nahodíte síť do klidné vody a
+          budete si užívat klidné samoty mořského rybolovu.
       seaFishingRod:
         name: Mořský rybolov (prutem)
-        desc: Podél zimního pobřeží najdete odlehlé místo a nahodíte prut do klidné,
-          chladné vody, kde si užíváte klidné samoty mořského rybolovu.
+        desc: Podél pobřeží najdete odlehlé místo a nahodíte prut do klidné vody,
+          užívajíc si poklidné samoty mořského rybolovu.
       seaFishingCage:
         name: Mořský rybolov (klecový)
         desc: Proud bohatý na živiny přináší do oblasti nejrůznější korýše.
@@ -192,6 +198,21 @@ singulars:
         desc: Inspirováni rybařením, budete se prořezávat hlubokou vodou, s intenzivním
           vědomím svého okolí a každou buňkou svého těla připravenou zaútočit na bestie
           dříve, než ony zaútočí na vás.
+    wallisia:
+      floodedRiverFishingRod:
+        name: Rybaření na rozvodněné řece (prutem)
+        desc: Nahodíte rybářský prut do rozvodněné řeky v naději, že chytíte nějaké
+          unikátní ryby, které se přizpůsobily novému prostředí.
+      isthmusSeaFishingNet:
+        name: Rybolov na šíji (síťí)
+        desc: V pobřežních vodách šíje nahazujete síť s cílem chytit různé tvory,
+          kteří v této oblasti prosperují.
+      ectoFishing:
+        name: Rybaření ektoplazmy
+        desc: Voda zde září v podivných a tajemných odstínech, které vyzařují strašidelnou
+          energii. Přemýšlíte, co ryby tady jedí a jestli vůbec používáte správné
+          nástroje k jejich chytání. Vaše mysl se zatoulá k pokusu o jejich pozdější
+          uvaření, abyste zjistili, zda jsou vůbec jedlé.
   foraging:
     gdte:
       forestForaging:
@@ -284,6 +305,20 @@ singulars:
           nekonečných podvodních zemědělských polích. Najdete zde širokou škálu rostlin,
           které čekají na sklizeň.
         name: Sběr podvodních farem
+    wallisia:
+      floodedFieldScavenging:
+        name: Úklid zaplaveného pole
+        desc: Brodíte se mokrými poli a hledáte životaschopné rostliny a materiály,
+          kterým se podařilo přežít a dokonce se jim dařit v tomto vlhkém prostředí.
+      dragonflyCatching:
+        name: Chytání vážek
+        desc: Používáte síť k pronásledování a chytání vážek, které rychle poletují
+          sem a tam po celé oblasti.
+      graveyardForaging:
+        name: Sbírání potravy na hřbitově
+        desc: Procházíte se hřbitovem a hledáte jedinečné věci, které se uvolnily
+          z povodní v oblasti a nejsou na svém místě. Není to vykrádání hrobu, pokud
+          to ještě není v hrobě, že?
   mining:
     global:
       mineCoal:
@@ -368,6 +403,37 @@ singulars:
         desc: Vykopejte cestu pro tesaře, kteří přijdou za vámi. Odstraňte sutiny
           v cestě a zároveň dbejte na to, aby se plocha nezřítila.
         name: Vytvoření podvodního akvaduktu
+    wallisia:
+      mineEctoRocks:
+        name: Těžba ektoplazmatické horniny
+        desc: Výchozy velkých skal, které jako by září tajemnou, přízračnou energií
+          okolní oblasti. Švihnete po nich krumpáčem v naději, že si s sebou vezmete
+          jeho kousky k opracování.
+    wrentmark:
+      mineSilverOre:
+        name: Těžba stříbrné rudy
+        desc: Koutkem oka zahlédnete stříbrné kameny a začnete sledovat žílu stříbrné
+          rudy uvnitř.
+      mineGoldOre:
+        name: Těžba zlaté rudy
+        desc: Všimnete si záblesků zlata mezi skalami a okamžitě se pustíte do těžení
+          v naději, že najdete rudnou žílu.
+      mineAdamantOre:
+        name: Těžba adamantové rudy
+        desc: Najdete tuhé diamantové skály před sebou a vytáhnete své nejlepší vybavení,
+          abyste se pokusili z horniny odstranit rudu.
+      minePetrifiumOre:
+        name: Těžba petrifium rudy
+        desc: Zhodnotíte fialové horniny tvrdé zkameněliny před sebou a naplánujete
+          si cestu, jak z nich co nejlépe vytěžit rudy, aniž byste se při tom zranili.
+      mineCrystalShards:
+        name: Těžba krystalových střepů
+        desc: Těžba tak velkých a krásných krystalů se zdá být ostudou, ale potenciální
+          střepy, na které se roztříští, stále udržují krásu originálu.
+      mineGemRocksLow:
+        name: Těžba drahokamů (nízká)
+        desc: Kámen, který se zdá být opatřen několika stopami drahokamů, vás zaujme.
+          Při těžbě v něm možná pár najdete.
   woodcutting:
     jarvonia:
       cutBirchTrees:
@@ -421,6 +487,15 @@ singulars:
       cutBambooLogs:
         name: Pokácet bambus
         desc: Udeříš sekerkou do bambusu. Vydá to uspokojivý křupavý zvuk.
+      cutYewTrees:
+        name: Pokácet tisy
+        desc: Tisy jsou robustní a vyžadují mnohem větší úsilí, než je lze pokácet.
+          Časem se je ale podaří rozřezat na klády.
+      cutEctoTrees:
+        name: Pokácet ektoplazmatické stromy
+        desc: Stromy zde vypadají, jako by byly vytrženy z jiné říše. Jejich strašidelný
+          vzhled a přízračná energie, kterou vyzařují, je děsí ještě předtím, než
+          se je pokusíte pokácet. Jste dychtiví zpracovat klády, které přinesou.
   smithing:
     jarvonia:
       flameStoking:
@@ -477,6 +552,12 @@ singulars:
       underwaterAqueductConstruction:
         desc: Postavíte a zpevníte přírodní vodovodní potrubí vedoucí k kempu Půlčíků.
         name: Stavba podvodního akvaduktu
+    wallisia:
+      townReconstruction:
+        name: Rekonstrukce města
+        desc: Pomáháte obyvatelům města s jejich údržbou a rekonstrukcí, abyste jim
+          zajistili řádné bydlení. Vyžaduje to hodně práce a otestuje vaše tesařské
+          znalosti, ale zdá se, že to město neustále zlepšuje.
   crafting:
     jarvonia:
       apprenticeForLoif:
