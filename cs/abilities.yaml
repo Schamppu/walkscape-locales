@@ -1,23 +1,124 @@
 singulars:
   memospheres:
     foraging:
-      completed: Cítíte zářící kouli a máte rychlou vizi lesa plného bobulí a hub.
-        Máte pocit, že byste je mohli najít snáze.
+      completed: Cítíte zářící kouli a máte rychlou vizi lesa plného lesních plodů
+        a hub. Máte pocit, že byste je mohli najít snáze.
+      name: 'Memosféra: Sběru'
+      desc: Uděluje zkušenosti <skill skill="foraging"/>.
     woodcutting:
       completed: Položíte ruku na kouli a zažijete život stromu od stromku po kládu.
         Utřete si slzu z oka a máte pocit, že byste mohli stromy kácet efektivněji.
+      name: 'Memosféra: Dřevorubectví'
+      desc: Uděluje zkušenosti <skill skill="woodcutting"/>.
     trinketry:
       completed: Položíte ruku na kouli a začnete vidět kaleidoskop drahokamů vznášejících
         se přímo nad vámi. Vidíte vzory a roviny, o kterých jste nikdy předtím neuvažovali.
+      name: 'Memosféra: Klenotnictví'
+      desc: Uděluje zkušenosti <skill skill="trinketry"/>.
     cooking:
       completed: Dotknete se koule, která má uvnitř hrnec, a málem si popálíte prsty.
         Máte pocit, jako byste se o vaření naučili něco nového.
+      name: 'Memosféra: Vaření'
+      desc: Uděluje zkušenosti<skill skill="cooking"/>.
     mining:
       completed: Dotknete se zářící koule a začnete slyšet zvuk krumpáčů narážejících
         do kamenů. Máte pocit, že byste mohli těžit efektivněji.
+      name: 'Memosféra: Těžby'
+      desc: Uděluje zkušenosti <skill skill="mining"/>.
     smithing:
-      completed: Dotknete se koule a začnete se cítit jako železná cihla vytloukaná
+      completed: Dotknete se koule a začnete se cítit jako železná cihla zakovaná
         do meče. Trochu to bolí, ale máte pocit, že teď umíte lépe kovat.
+      name: 'Memosféra: Kovářství'
+      desc: Uděluje zlušenosti <skill skill="smithing"/>.
     agility:
       completed: Dotknete se zářící koule a uvědomíte si, že jste v lepší formě než
         dříve.
+      name: 'Memosféra: Hbitosti'
+      desc: Uděluje zkušenosti <skill skill="agility"/>.
+    carpentry:
+      name: 'Memosféra: Tesařství'
+      desc: Uděluje zkušenosti <skill skill="carpentry"/>.
+      completed: Nakouknete do koule a začnete přemýšlet, jak vyrobit lepší nábytek
+        a efektivněji řezat prkna.
+    crafting:
+      desc: Uděluje zkušenosti <skill skill="crafting"/>.
+      completed: Dotknete se zářící koule a najednou máte pocit, že byste mohli věci
+        vyrábět lépe.
+      name: 'Memosféra: Výroby'
+    fishing:
+      name: 'Memosféra: Rybaření'
+      desc: Uděluje zkušenosti <skill skill="fishing"/>.
+      completed: Položíte ruku na kouli a máte pocit, jako by vaše hlava byla akvárium.
+        Teď rybám rozumíte lépe.
+  takeMeHome:
+    name: Vezmi mě domů
+    desc: Teleportuje vás do <object id="location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654"
+      />.
+    completed: Třete <item id="item-ring_of_homesickness-dfd0d52b-c064-4860-ae77-2f9c0cab7382"
+      /> a najednou si uvědomíte, že jste v <location i="location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654"
+      />.
+  downGoesTheTrees:
+    name: Stromy padají
+    desc: Okamžitě dokončit {count} <skill skill="woodcutting"/> akcí.
+    completed: Švihnete <item id="item-axe_of_destruction-a493952f-18b1-442b-be16-0385a014c01c"
+      /> a stromy před vámi spadnou jediným úderem. Máte pocit, jako byste touto sekerou
+      mohli pokácet celý les.
+  rockAndRoll:
+    name: Rock And Roll
+    desc: Vytvořte 5 náhodných <hl>surových drahokamů</hl>.
+    completed: Dotknete se amuletu ve tvaru hvězdy a ten vám v dlani <hl>vytvoří několik
+      drahokamů</hl>.
+  needToGoFast:
+    name: Musím jít rychle
+    completed: Párkrát skočíte na místě a najednou vás <item id="item-shoes_of_escape-bd6be47c-373b-4557-ba9f-35fb62e7d390"
+      /> téměř nekontrolovatelně zrychlí. Máte pocit, že byste mohli běžet věčně,
+      dokud vaše šílená rychlost neopadne.
+    desc: Okamžitě dokončit {count} akcí <hl>Cestování</hl>.
+  mermaidsNeedMe:
+    desc: Teleportuje vás do <object id="location-vastalume-cf2f38ec-88d4-4129-a164-4deb5f0955d5"
+      />.
+    completed: Třete <item id="item-algae_ring-751c337a-cb19-4243-abae-ba6468446ab8"
+      /> a najednou si uvědomíte, že jste v <object id="location-vastalume-cf2f38ec-88d4-4129-a164-4deb5f0955d5"
+      />.
+    name: Mořské panny mě potřebují
+  activities:
+    emergencySwimSyrenthia:
+      name: Nouzový únik plaváním!
+      desc: Plavete do <object id="location-port_skildar-2b12283e-6309-45af-8332-fb470267f510"
+        />.
+    springBatTracking:
+      name: Jarní Sledování Netopýrů
+      desc: Sledujete netopýry do <object id="location-bog_top-cc54735e-42e0-4d32-9f26-de0e5e63979b"
+        />.
+    emergencySwampEscape:
+      name: Nouzový Útěk Z Bažin!
+      desc: Uniknete do <object id="location-old_arena_ruins-0f86b9e3-d5b9-4255-b541-b4db5fa93af2"
+        />.
+    exploreUnderwaterCave:
+      name: Prozkoumat Podvodní Jeskyni
+      desc: Prozkoumáte podvodní jeskyni k <object id="location-bog_bottom-1532ca82-3608-4a2f-8e54-fc3d8f449f9c"
+        />.
+    emergencySwampSwimEscape:
+      name: Nouzový únik z plaváním!
+      desc: Plavete do <object id="location-old_arena_ruins-0f86b9e3-d5b9-4255-b541-b4db5fa93af2"
+        />.
+    exploreBogBottom:
+      name: Prozkoumejte dno bažiny
+      desc: Prozkoumáte dno bažiny v <object id="location-underwater_cave-bf790ee1-9f85-44a2-ab5f-8f15c4e3ba85"
+        />.
+    ventureIntoTheBog:
+      name: Vydejte se do bažiny
+      desc: Vydáte se do bažiny v <object id="location-bog_top-cc54735e-42e0-4d32-9f26-de0e5e63979b"
+        />.
+    runForYourLifeSwamp:
+      name: Běž pro svůj život!
+      desc: Utíkáte do <object id="location-old_arena_ruins-0f86b9e3-d5b9-4255-b541-b4db5fa93af2"
+        />.
+    ventureIntoTheWitchesWoods:
+      name: Vydejte se do lesa
+      desc: Vydáte se do lesa <object id="location-witches_woods-ef7e2f92-46ba-48e2-8f82-a9887fcec517"
+        />.
+    ventureIntoTheHalfmawHideout:
+      name: Vydejte se do úkrytu
+      desc: Vydáte se do úkrytu <object id="location-halfmaw_hideout-4326bafb-9918-12ea-grsd-d39a394b686a"
+        />.
