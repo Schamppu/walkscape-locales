@@ -84,6 +84,21 @@ maps:
       'stepDataTime': Ramy czasowe
     custom:
       'dataSource': Źródło danych kroków
+    leaderboardType:
+      'totalXp': Całkowite <c>doświadczenie</c>
+      'totalSteps': Całkowite <c>kroki</c>
+      'carpentry': <c>Stolarstwo</c> poziom
+      'crafting': <c>Rzemiosło</c> poziom
+      'achievementPoints': <c>Punkty Osiągnięć</c>
+      'trinketry': <c>Jubilerstwo</c> poziom
+      'woodcutting': <c>Drwalnictwo</c> poziom
+      'fishing': <c>Wędkarstwo</c> poziom
+      'foraging': <c>Zbieractwo</c> poziom
+      'mining': <c>Górnictwo</c> poziom
+      'agility': <c>Zwinność</c> poziom
+      'smithing': <c>Kowalstwo</c> poziom
+      'totalLevel': Całkowity <c>poziom</c>
+      'cooking': <c>Gotowanie</c> poziom
   characterCreation:
     phrases:
       optionTypes:
@@ -155,7 +170,7 @@ plurals:
         one: '{} punkt osiągnięć'
         other: '{} punktów osiągnięć'
         zero: '-'
-        two: '''{} Punkty Osiągnięć'''
+        two: '{} punkty osiągnięć'
         few: '-'
         many: '-'
   activity:
@@ -230,6 +245,13 @@ plurals:
         two: <icon i="Steps"/> <c>{} steps</c> wymagane do akcji
         other: <icon i="Steps"/> <c>{} steps</c> wymagane do akcji
         one: <icon i="Steps"/> <c>{} step</c> wymagane do akcji
+      workEfficiency:
+        zero: '-'
+        one: Wydajność pracy
+        two: Wydajność pracy
+        other: Wydajność pracy
+        few: '-'
+        many: '-'
   inventory:
     info:
       consumableDuration:
@@ -291,6 +313,8 @@ singulars:
       totalProgressUnlocks: Całkowity postęp odblokowań
       checkPointUnlocks: Odblokowania progowe punktów
       unclaimedRewards: 'Nieodebrane nagrody: '
+      collectiblesCount: Znajdźki <icon i="Achievement Point"/> <c i=0>{count}</c>
+        <c i=1>/ {maxCount}</c>
   crafting:
     phrases:
       materials: Materiały
@@ -306,6 +330,7 @@ singulars:
         do produkcji.
       showingRecipiesThatUses: Pokaż przepisy zawierające
       requiresService: Wymaga usługi.
+      allSkills: Wszystkie umiejętności
     errors:
       noService: Wymóg usług nie jest spełniony
       notSameQuality: Wszystkie materiały muszą być albo świetne lub normalne
@@ -391,7 +416,7 @@ singulars:
       consumables: Przedmioty Zużywalne
       savedSteps: Zapisane kroki
       stopWhenOverEncumbered: Przerwij przy przeciążeniu
-      notAffectingTraveling: (nie wpływa na wydajność podróżowania)
+      notAffectingTraveling: (Nie wpływa na wydajność podróżowania)
       workEfficiencyPenalty: <icon i="Work efficiency"/> Globalna wydajność pracy
         <c>-{penalty}%</c>
       noActivity: Brak Aktywności
@@ -457,12 +482,33 @@ singulars:
       comingSoonToAndroid: Wkrótce dostępne na Android
       changeStepCountingSource: Zmień źródło zliczania kroków
       stepCountingSource: Źródło zliczania kroków
+      installHealthConnect: Zainstaluj Health Connect
+      installHealthConnectExplanation: Aplikacja Health Connect jest wymagana do odczytywania
+        kroków z urządzeń noszonych. Najpierw musisz ją zainstalować, naciskając przycisk
+        powyżej, a następnie nawiązać połączenie.
+      noDeviceFoundAndroid: Nie znaleziono urządzenia. Upewnij się, że nacisnąłeś
+        przycisk <c>Połącz z Health Connect</c> powyżej i udzieliłeś zgody na odczyt
+        danych Health Connect.
+      connectSamsungHealthExplanation: Jeśli korzystasz z urządzeń Samsung, musisz
+        połączyć się z aplikacją Samsung Health, aby odczytać kroki zsynchronizowane
+        z zegarkiem. Jeśli korzystasz z aplikacji WalkScape po raz pierwszy, zostaniesz
+        poproszony o zgodę na odczyt danych z aplikacji Samsung Health.
+      samsungHealthConnectedInfo: Samsung Health jest połączony! Gra odczyta zarówno
+        kroki z urządzeń noszonych połączonych z Samsung Health, jak i kroki z telefonu.
+      connectHealthConnect: Połącz się z Health Connect
+      connectSamsungHealth: Połącz się z Samsung Health
+      connectHealthConnectExplanation: Musisz połączyć się z Google Connect, abyśmy
+        mogli odczytać kroki zsynchronizowane z Twoim zegarkiem i sprawdzić, które
+        urządzenia zostały połączone. Jeśli korzystasz z WalkScape po raz pierwszy,
+        zostaniesz poproszony o zgodę na odczyt danych z Google Connect.
     deviceSource:
       featureDisabled: Zmienianie źródła zliczania kroków zostało odgórnie tymczasowo
         wyłączone. Podstawowy system zliczania z telefonu zostanie zastosowany.
       appleWatch: Zegarek Apple
       phone: Telefon
-      watch: Inny zegarek
+      watch: Inne urządzenia do noszenia
+      samsungHealth: Samsung Health
+      watchAndroid: Health Connect
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> <c>Telefon</c> jest podstawowym i rekomendowanym
         źródłem zliczania kroków w WalkScape. Do intensywnych sportów zalecamy użycie
@@ -492,6 +538,24 @@ singulars:
         \ \n<bp /> Musisz nadać dodatkowe uprawnienia do odczytu danych z Apple Health,
         by połączyć zegarek.\n\n<bp /> Tylko kroki zliczone poprzez twój zegarek są
         odczytywane w grze.\n"
+      samsungHealth: "WalkScape odczytuje Twoje kroki z <c>Samsung Health</c>. Twoje
+        kroki ze wszystkich urządzeń <icon i=\"Watch small\" /> <c>urządzeń noszonych</c>
+        zgodnych z Samsung Health oraz kroki z <icon i=\"Phone small\" /> <c>telefonu</c>
+        są synchronizowane z grą.\n\n<bp /> <c i=2>Aby kroki były liczone w WalkScape,
+        musisz zsynchronizować swoje kroki z Samsung Health za pośrednictwem urządzeń</c>.\n\
+        \n<bp />Aby zsynchronizować kroki z grą, musisz udzielić dodatkowych uprawnień
+        do odczytu danych z <c>Samsung Health</c>.\n\n<bp /> W grze rejestrowane są
+        tylko kroki raportowane przez Samsung Health."
+      watchAndroid: "WalkScape odczytuje Twoje kroki z <c>Health Connect</c>. Aby
+        zsynchronizować kroki z <icon i=\"Watch small\" /> <c>zegarka</c>, musisz
+        zainstalować aplikację innej firmy, która synchronizuje Twoje kroki z <c>Health
+        Connect</c>, taką jak FitBit, Garmin Connect lub Galaxy Health.\n\n<bp />
+        <c i=2>Aby kroki były liczone w WalkScape, musisz zsynchronizować swoje kroki
+        z Health Connect za pośrednictwem innych aplikacji</c>.\n\n<bp /> Proces synchronizacji
+        kroków z <c>Health Connect</c> zależy od producenta. Może to wymagać dodatkowej
+        konfiguracji i wiedzy technicznej.\n\n<bp /> Aby połączyć zegarek, musisz
+        udzielić dodatkowych uprawnień do odczytu danych z <c>Health Connect</c>.\n\
+        \n<bp /> W grze rejestrowane są tylko kroki rejestrowane przez zegarek."
   rewards:
     phrases:
       alreadyClaimed: Już odebrano
@@ -633,9 +697,16 @@ singulars:
         Health w <c>Ustawienia ➤ Prywatność & Bezpieczeństwo ➤ Zdrowie ➤ (pod Aplikacje)
         WalkScape</c> oraz upewnij się, że Apple Health zarejestrowało kroki na tych
         urządzeniach w ciągu ostatnich 7 dni.
-      connectionInfoAndroid: Wsparcie smart watchy na Android już wkrótce. Aktualnie
-        tylko telefon jest wspierany jako źródło zliczania kroków.
+      connectionInfoAndroid: Jeśli Twoje urządzenia noszone nie wyświetlają się na
+        liście powyżej, upewnij się, że udzieliłeś aplikacji WalkScape pozwolenia
+        na korzystanie z danych o krokach z Health Connect w <c>Ustawienia ➤ Bezpieczeństwo
+        i prywatność ➤ Prywatność ➤ Health Connect ➤ Uprawnienia aplikacji </c> oraz
+        że aplikacja Health Connect zarejestrowała kroki dla tych urządzeń w ciągu
+        ostatnich 7 dni.
       gameVersion: Wersja gry {version}
+      updateAvailableSources: Zaktualizuj dostępne źródła
+      comingSoonToAndroid: Obsługa smartwatchy z systemem Android będzie wkrótce dostępna.
+        Obecnie tylko telefon obsługuje liczenie kroków.
   characterCreation:
     phrases:
       race: Rasa
@@ -704,6 +775,8 @@ singulars:
       lastUpdated: 'Ostatnia aktualizacja: <c>{updatedAt}</c>.'
       recordedFrom: Zarejestrowano od <c>{from}</c> do <c>{to}</c>.
       reputation: Reputacja
+      statUpdatesWithDelay: Statystyka ta aktualizuje się z opóźnieniem do <c>jednej
+        godziny</c>.
     info:
       stats: Zbiór statystyk z każdego kroku, który wykonałeś w świecie Arenum.
       chartWarning:
@@ -797,11 +870,36 @@ singulars:
       loadingStepHistoryData: Ładowanie historii kroków
       loadingSteps: Ładowanie kroków
       updatingStepReadTime: Akualizowanie czasu wczytywania kroków
+      startingAuthProcess: Rozpoczęcie procesu autoryzacji
+      settingUpTutorialManager: Konfigurowanie menedżera samouczka
+      settingUpPlayerMetadata: Konfigurowanie metadanych gracza
+      startingOTAManagerProcess: Rozpoczęcie procesu zarządzania aktywami
+      spawningIsolate: Generowanie wątków...
+      loadingLocalStorage: Ładowanie pamięci lokalnej...
+      startingSettingsManagerProcess: Uruchamianie procesu menedżera ustawień
+      startingSentry: Uruchamianie aplikacji Sentry...
+      loadingGuideState: Ładowanie stanu poradnika
+      startingTimeManagerProcess: Czas rozpoczęcia procesu zarządzania
+      startingNotificationManagerProcess: Uruchamianie procesu menedżera powiadomień
+      settingUpCensusManager: Konfigurowanie menedżera spisu graczy
+      reportingErrorToSentry: Zgłaszanie błędu do aplikacji Sentry
+      startingPlayerManagerProcess: Rozpoczęcie procesu zarządzania graczami
+      settingUpStepManager: Konfigurowanie menedżera kroków
+      settingUpOnlineSettingsManager: Konfigurowanie menedżera ustawień online
+      startingGameManagerProcess: Rozpoczęcie procesu zarządzania grą
+      startingErrorManagerProcess: Uruchamianie procesu menedżera błędów
+      startingEventManagerProcess: Rozpoczęcie procesu zarządzania wydarzeniami
+      startingNetworkProcess: Uruchamianie procesu sieciowego
+    isolates:
+      mainIsolate: Główny wątek
+      workerIsolate: Wątek roboczy
   social:
     phrases:
       manageFriends: Zarządzaj Znajomymi
       pendingInvites: Oczekujące zaproszenia
       friends: Znajomi
+      countResultsFound: Znaleziono wyników {count}
+      enterAtLeastChars: Aby wyszukać, wprowadź co najmniej 3 znaki.
   gear:
     phrases:
       combatModifiers: Modyfikatory walki
@@ -993,3 +1091,7 @@ singulars:
         Blogi programistów, rejestry zmian i ogłoszenia systemowe to świetny sposób
         na bycie na bieżąco z postępami w rozwoju i przestojami serwera!
       noMoreAnnouncements: Dotarłeś do końca ogłoszeń! Nie ma więcej ogłoszeń do wyświetlenia.
+  download:
+    phrases:
+      downloadingAssets: Pobieram zasoby...
+      downloadedFileCount: Pobrano plików <c i=0>{current}</c> z <c i=1>{total}</c>

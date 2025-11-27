@@ -212,10 +212,15 @@ singulars:
       userBannedTemporarily:
         title: Vous avez été banni temporairement de WalkScape
         text: Vous avez été banni temporairement de Walkscape jusqu'à <c i=0>{bannedUntil}</c>.
+          Si vous souhaitez faire appel de cette décision, vous pouvez nous contacter
+          en envoyant un e-mail à {email}.
         noTimeFound: Aucune heure de fin trouvée, veuillez nous contacter en envoyant
           un e-mail à {email}
       userBannedPermanently:
         title: Vous avez été définitivement banni de WalkScape
+        text: Vous avez été banni définitivement de WalkScape. Si vous pensez qu'il
+          s'agit d'une erreur et souhaitez faire appel de cette décision, vous pouvez
+          nous contacter en envoyant un e-mail à {email}.
     gameError:
       stepLoadingFailed:
         text: Le client de jeu a échoué à charger les pas. Merci de signaler ceci
@@ -241,6 +246,10 @@ singulars:
         title: Pas non chargés du fait de votre bannissement
         text: Vos pas n'ont pas été chargés car vous avez été banni de WalkScape.
           À partir de maintenant, vos pas seront comptés normalement.
+      couldNotGetServerTime:
+        title: Impossible de récupérer l'heure du serveur
+        text: Le client du jeu n'a pas réussi à récupérer l'heure du serveur. Veuillez
+          vérifier votre connexion Internet et réessayer.
     fatalError:
       error: Nous sommes désolés pour cette erreur. N'oubliez pas que le jeu est en
         bêta fermée, et que les données des joueurs sont sauvegardées quotidiennement.
@@ -272,3 +281,7 @@ singulars:
       title: Voyager d'abord puis commencer l'activité ?
       text: Vous n'êtes pas au bon endroit pour commencer cette activité. Voulez-vous
         d'abord voyager vers le bon lieu puis commencer l'activité ?
+    downloadLanguage:
+      title: Sélectionner et télécharger une langue ?
+      text: Pour changer la langue du jeu, vous devez télécharger des données supplémentaires.
+        Voulez-vous continuer ?

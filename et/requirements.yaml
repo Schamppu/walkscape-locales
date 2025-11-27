@@ -1,21 +1,21 @@
 singulars:
   mainSkill:
-    text: Tehes <skill skill="{skill}"/>
+    text: Oskuses <skill skill="{skill}"/>.
   skillLevel:
-    text: Vähemalt <skill skill="{skill}" level="{level}" needed/>
+    text: Vähemalt <skill skill="{skill}" level="{level}" needed/>.
   traveling:
-    text: Rännates
+    text: Rännates.
   itemAnywhereWithYou:
     text: Vajalik <item id="{item}"/>.
   itemEquipped:
-    text: Kasutusel vajalik <item id="{item}"/>.
+    text: Vajalik kasutusel <item id="{item}"/>.
   itemInInventory:
     text: Kaasas vajalik <item id="{item}"/>.
   itemAnywhere:
     text: Vajalik <item id="{item}"/>.
   distinctItemsEquippedKeyword:
-    text: Kasutusel <numberProgress current="{current}" max="{max}" /> <object id="{obj}"
-      />.
+    text: Vajalik kasutusel <numberProgress current="{current}" max="{max}" /> eri
+      <object id="{obj}" />.
   totalSteps:
     text: Kokku kõnnitud <numberProgress current="{current}" max="{max}" /> sammu.
   characterLevel:
@@ -32,7 +32,8 @@ singulars:
     text: Oma <icon i="money small"/> <numberProgress current="{current}" max="{max}"
       /> kulda.
   minimumSkillLevel:
-    text: Kõik tasemed vähemalt <numberProgress current="{current}" max="{max}" />.
+    text: Kõik tasemed vähemalt tasemel <numberProgress current="{current}" max="{max}"
+      />.
   levelUpSkills:
     text: Suurenda oma oskuste taset <numberProgress current="{current}" max="{max}"
       /> korda.
@@ -72,12 +73,46 @@ singulars:
       id="activity-cross-country_skiing_(beginner)-fc421940-d63a-402f-aa50-26cc2efea4d3"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> korda.
   factionReputations:
-    jarvoniaReputation: <numberProgress current="{current}" max="{max}" /> <realm
-      realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db" /> kildkonna reputatsioon.
-    syrenthiaReputation: <numberProgress current="{current}" max="{max}" /> <realm
-      realm="faction-syrenthia-6e9359fa-597b-4448-9df5-cc3fff9a5108" /> kildkonna
-      reputatsioon.
-    trellinReputation: <numberProgress current="{current}" max="{max}" /> <realm realm="faction-trellin-239a0ad8-3812-4f2a-9c11-1c312490249b"
-      /> kildkonna reputatsioon.
-    erdwiseReputation: <numberProgress current="{current}" max="{max}" /> <realm realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb"
-      /> kildkonna reputatsioon.
+    jarvoniaReputation: Oma <numberProgress current="{current}" max="{max}" /> reputatsiooni
+      kildkonnas <realm realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db"
+      />.
+    syrenthiaReputation: Oma <numberProgress current="{current}" max="{max}" /> reputatsiooni
+      kildkonnas <realm realm="faction-syrenthia-6e9359fa-597b-4448-9df5-cc3fff9a5108"
+      />.
+    trellinReputation: Oma <numberProgress current="{current}" max="{max}" /> reputatsiooni
+      kildkonnas <realm realm="faction-trellin-239a0ad8-3812-4f2a-9c11-1c312490249b"
+      />.
+    erdwiseReputation: Oma <numberProgress current="{current}" max="{max}" /> reputatsiooni
+      kildkonnas <realm realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb"
+      />.
+    halflingRebelsReputation: Oma <numberProgress current="{current}" max="{max}"
+      /> reputatsiooni kildkonnas <realm realm="faction-halfling_rebels-394eaff8-2749-4473-949c-80da531a415e"
+      />.
+  maps:
+    jarvoniaMap: Oma eset <object id="item-map_of_jarvonia-86ba96b3-a845-4f5c-a054-04ec5146fb25"
+      />.
+    syrenthiaMap: Oma <object id="65979ee2-f98a-41c3-9f12-8858000017a3" />i.
+    halflingMap: Oma <object id="f1a9e370-fd69-4a49-92c0-c83475a896ab" />i.
+    erdwiseMap: Oma <object id="fa277527-585b-4a1d-bc73-a25fe1195017" />i.
+    trellinMap: Oma <object id="item-map_of_gdte-b28951b2-2cac-4e53-b6f1-bc2030590433"
+      />i.
+  exploreRealm:
+    text: Avasta <object id="{obj}" alwaysShow="true" /> üleni. <numberProgress current="{current}"
+      max="{max}" />.
+  gear:
+    underwaterBasketweaving: Ole lõpetanud <object id="location-fertile_shallows-6561e4b5-fce3-4307-a641-86ca5aee36d6"
+      alwaysShow="true" />is tegevust <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> korda
+    beginnerSkydisc: Ole lõpetanud <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" />is tegevust <object id="activity-frisbee_golfing_(beginner)-0fb41f4d-f46b-4a6d-acdf-f2525654c714"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> korda.
+    sledding: Tehes tegevust <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
+      />.
+    tinkering: Ole <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" />is lõpetanud tegevust <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
+      /> <numberProgress current="{current}" max="{max}" /> korda
+    swimmingExpert: Ole lõpetanud tegevust <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> korda.
+    iceSculpting: Ole lõpetanud <object id="location-frusenholm-5ddb0735-4582-4858-80a0-7489f1b043a2"
+      alwaysShow="true" />is tegevust <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> korda

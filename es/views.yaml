@@ -246,6 +246,13 @@ plurals:
         few: '-'
         many: '-'
         other: <icon i="Steps"/> <c>{} pasos</c> requeridos por acción
+      workEfficiency:
+        zero: '-'
+        one: Eficiencia de trabajo
+        two: Eficiencia de trabajo
+        few: '-'
+        many: '-'
+        other: Eficiencia de trabajo
   inventory:
     info:
       consumableDuration:
@@ -305,7 +312,7 @@ singulars:
       showRewards: Mostrar recompensas
       totalProgressUnlocks: Desbloqueos de progreso total
       checkPointUnlocks: Desbloqueos de hito
-      collectiblesCount: Coleccionables <icon i="Achievement Point"/> <c i=0>${count}</c>
+      collectiblesCount: Coleccionables <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
   crafting:
     phrases:
@@ -550,20 +557,19 @@ singulars:
       initializingGameData: Inicializando datos del juego
       loadingPlayerData: Cargando datos del jugador
       settingUpPlayerMetadata: Configurando metadatos del jugador
-      startingErrorManagerProcess: Iniciando procedimiento de administrador de errores
-      startingEventManagerProcess: Iniciando procedimiento de administrador de evento
-      startingNotificationManagerProcess: Iniciando procedimiento de administrador
-        de notificaciones
-      startingNetworkProcess: Iniciando procedimiento de red
-      startingGameManagerProcess: Iniciando procedimiento de administrador de juego
-      startingPlayerManagerProcess: Iniciando procedimiento de administrador de jugador
-      startingAuthProcess: Iniciando procedimiento de autenticación
-      startingTimeManagerProcess: Iniciando procedimiento de administrador de tiempo
+      startingErrorManagerProcess: Iniciando proceso de administrador de errores
+      startingEventManagerProcess: Iniciando proceso de administrador de evento
+      startingNotificationManagerProcess: Iniciando proceso de administrador de notificaciones
+      startingNetworkProcess: Iniciando proceso de red
+      startingGameManagerProcess: Iniciando proceso de administrador de juego
+      startingPlayerManagerProcess: Iniciando proceso de administrador de jugador
+      startingAuthProcess: Iniciando proceso de autenticación
+      startingTimeManagerProcess: Iniciando proceso de administrador de tiempo
       loadingLocalStorage: Cargando almacenamiento local...
-      startingSettingsManagerProcess: Iniciando procedimiento de administrador de
-        ajustes
+      startingSettingsManagerProcess: Iniciando proceso de administrador de ajustes
       startingSentry: Iniciando Sentry...
       spawningIsolate: Generando aislados...
+      startingOTAManagerProcess: Iniciando proceso de administrador de recursos
     isolates:
       mainIsolate: Aislado Principal
       workerIsolate: Aislado Obrero
@@ -1006,9 +1012,9 @@ singulars:
       youCanChangeAnyTime: Puedes cambiar el idioma desde<c>Ajustes del Juego</c>
         en cualquier momento.
       helpToTranslate: WalkScape está <c>traducido por la comunidad</c>. Ayúdanos
-        a traducir el juego a más idioma y expandiendo las traducciones actuales visitando
-        <a href="https://wiki.walkscape.app/wiki/Localization">Guia de Traducción</a>.
-        !Agradecemos tu ayuda! ❤️
+        a traducir el juego a más idiomas y a expandir las traducciones actuales visitando
+        <a href="https://wiki.walkscape.app/wiki/Localization">Guía de Traducción</a>.
+        ¡Agradecemos tu ayuda! ❤️
   queue:
     options:
       withdrawGearSet:
@@ -1088,3 +1094,8 @@ singulars:
       announcementInfo: Aquí puedes encontrar <c>anuncios</c> escritos por los desarrolladores.
         ¡Los DevBlogs, changelogs y anuncios del sistema son una gran manera de mantenerte
         actualizado sobre el estado del juego y los periodos de inactividad del servidor!
+  download:
+    phrases:
+      downloadingAssets: Descargando recursos...
+      downloadedFileCount: Descargados <c i=0>{current}</c> de <c i=1>{total}</c>
+        archivos

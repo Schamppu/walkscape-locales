@@ -1,22 +1,28 @@
 maps:
   buildingActions:
-    buy: 'Compra oggetti '
-    deposit: 'Deposita '
+    buy: 'Compra oggetti'
+    deposit: 'Deposita'
     guidance: Aiuto
     rumors: Voci
-    sell: 'Vendi oggetti '
-    talk: 'Parla '
-    withdraw: 'Ritira '
+    sell: 'Vendi oggetti'
+    talk: 'Parla'
+    withdraw: 'Ritira'
+    'buySpecial': Acquisto speciale
+    'barber': Barbiere
   buildingTypes:
     animalShelter: Rifugio per animali
-    bank: 'Banca '
+    bank: 'Banca'
     castle: Castello
     fishingStore: Negozio di pesca
-    generalStore: 'Negozio '
+    generalStore: 'Negozio'
     house: Casa
     marketStall: Bancarella del mercato
     tavern: Taverna
     temple: Tempio
+    'clothingShop': Negozio di abbigliamento
+    'outpost': Avamposto
+    'barber': Barbiere
+    'activityShop': Negozio di attività
 singulars:
   buildings:
     gdte:
@@ -25,7 +31,7 @@ singulars:
           di molteplici colori. Un cartello appeso alla parete spiega che molti di
           questi animali sono stati salvati dalla palude dopo essere stati abbandonati
           o essersi persi.
-        name: Paws are Us
+        name: Le zampe siamo noi
       bilgemontCastle:
         desc: Il grande castello è sfarzoso e pressocchè impeccabile. Nessuna crepa
           nella pietra nè segni di incendi passati. I sovrani che vi risiedono sono
@@ -34,11 +40,11 @@ singulars:
           nessuno.
         name: Castello di Bilgemont
       bogsideBankOfProsperity:
-        desc: Il pavimento della banca è coperto di muschio umidiccio, che fa "ciaf
-          ciaf" come ci cammini sopra. Diverse rane sembrano nascondersi tra le travi,
-          tenendo a bada le zanzare. Uno degli impiegati ti fa un cenno col capo per
-          salutarti, e pare esserci una rana sulla sua testa, che sta pigramente cercando
-          di mangiare una grossa falena che svolazza lì intorno.
+        desc: Il pavimento della banca è ricoperto da un tappeto color muschio che
+          scricchiola sotto i piedi. Diverse rane sembrano nascondersi nelle travi,
+          tenendo lontane le zanzare. Uno degli impiegati saluta con un leggero cenno
+          del capo. Di tanto in tanto, una rana sembra spuntare da sotto il cappello
+          dell'impiegato, solo per azzannare una grossa falena che svolazza nei paraggi.
         name: Banca del Benessere di Bogside
       bureauOfMoss:
         desc: "I muri della taverna traboccano di muschio e il locale è decorato a
@@ -48,9 +54,9 @@ singulars:
           bizzarro, che suona come una chitarra piena d'acqua."
         name: Ufficio del Muschio
       fishMarketStall:
-        desc: Una donna sorridente sembra gestire la bancarella, dove pesci interi
-          e sfilettati straripano dalle vasche di ghiaccio. Guardandoti intorno vedi
-          bidoni pieni di pescato vario, e anche qualche secchio di esche.
+        desc: Una donna sembra gestire il banco del pesce, mentre una quantità abbondante
+          di pesci grandi e tagli di pesce riposano sul ghiaccio. Sembra che ci siano
+          anche cesti pieni di altri pesci interi e persino alcuni secchielli di esche.
         name: Bancarella del Pesce
       foodMarketStall:
         desc: Un profumo delizioso di pane e dolci appena sfornati riempie l'aria
@@ -59,12 +65,12 @@ singulars:
         name: Bancarella del Cibo
       maritimeFortuneBank:
         desc: Rifiniture d'oro, pavimenti in marmo, e perfino un maestoso lampadario
-          fatto d'oro e gemme, i cui colori risplendono  nella luce delle candele.
+          fatto d'oro e gemme, i cui colori risplendono nella luce delle candele.
           Persino i campanelli per chiamare il personale sono fatti d'oro.
         name: Banca della Fortuna Marittima
       mossyMerchantsBreezeMart:
         desc: "Il Negozio Arieggiato del Mercante Muschiato tiene molte finestre aperte,
-          ed il vento che soffia dolcemente porta con sè i suoni della città al di
+          ed il vento che soffia dolcemente porta con se i suoni della città al di
           fuori. Gli scaffali all'interno sono pieni di oggetti unici ed interessanti."
         name: Negozio Arieggiato del Mercante Muschiato
       toolMarketStall:
@@ -73,13 +79,54 @@ singulars:
           mentre altri attrezzi penzolano da alcune corde sopra la testa del mercante,
           e altri ancora sono raccolti in alcuni cesti.
         name: Bancarella degli Attrezzi
+      witchsHut:
+        name: Capanna della strega
+        desc: La capanna è ricavata da un grande albero e l'interno è pieno di varie
+          erbe e pozioni. Al centro ribolle un calderone e accanto ad esso è seduta
+          una rana piuttosto grande che cattura le mosche incuriosite. La strega sembra
+          essere impegnata a leggere e, di tanto in tanto, a mescolare il contenuto
+          del calderone.
+      goldnGrailEverhaven:
+        name: Oro&Graal di Everhaven
+        desc: La famosa catena di taverne di Everhaven, che serve i suoi famosi piatti
+          e bevande in calici dorati. Questo, per qualche motivo, ha un odore di formaggio
+          più forte rispetto agli altri.
+      halfmawOutpost:
+        name: Gilda degli avventurieri Swampost
+        desc: La filiale della Gilda degli Avventurieri che cerca di tenere a bada
+          gli Halfmaw. Le differenze principali rispetto all'altra filiale sono il
+          nome specifico, un layout leggermente ridisegnato con un grande forziere
+          bancario e il fatto che è molto più verde e fatiscente rispetto a quella
+          di Jarvonia. E poi, beh, c'è la palude.
+      bogAndBlade:
+        name: Palude & Lama
+        desc: Il Palude & Lama offre tagli di capelli professionali a Salsfirth. I
+          barbieri in stivali da pesca offrono un servizio di alta qualità con un
+          tocco di umorismo. Rilassati su comode poltrone e goditi una tazza di tè
+          mentre ti prendono cura dei tuoi capelli.
+      quagmireCouture:
+        desc: Alta Moda Quagmire è una boutique di moda a Salsfirth specializzata
+          in abbigliamento ispirato alle paludi. Scopri una collezione di capi eleganti
+          perfetti per ogni occasione.
+        name: Alta moda Quagmire
+      goldnGrailBilgemont:
+        name: Oro&Graal di Bilgemont
+        desc: La famosa catena di taverne del porto di Bilgemont, che serve i suoi
+          famosi piatti e bevande in calici dorati. Questa emana il profumo dell'aria
+          salmastra circostante, nonostante i costosi profumi con cui i clienti si
+          sono mascherati.
+      goldnGrailBlackspell:
+        name: Oro&Graal di Blackspell
+        desc: La famosa catena di taverne del Porto di Blackspell, che serve i suoi
+          famosi piatti e bevande in calici dorati. Questo ha quell'odore sgradevole,
+          che puzza, puzzolente?
     jarvonia:
       bigloo:
         desc: "Bigloo, un igloo sorprendentemente spazioso, ospita un'eclettica collezione
           di artefatti gelati e un'accoglienza calorosa, il tutto curato da un affascinante
           mercante pinguino noto per il suo farfallino e per la simpatica camminata
           dondolante."
-        name: Bigloo
+        name: Grande Loo
       fortofPermafrost:
         desc: Davanti a te si innalza il gigantesco forte, situato nel passaggio fra
           Jarvonia e il Gran Ducato di Trellin-Erdwise. Esso è noto perchè richiede
@@ -87,13 +134,31 @@ singulars:
           Jarvonia.
         name: Forte del Permafrost
       northstarMercantile:
-        name: Northstar Mercantile
+        name: Mercantile Northstar
+        desc: Il Northstar Mercantile prospera nella sua attuale sede, dove spesso
+          si vedono molte persone arrivare e partire. Il focolare sulla parete in
+          fondo crepita dolcemente e la merce in vendita è disposta ordinatamente
+          sugli scaffali.
       templeOfAzurazera:
         name: Tempio di Azurazera
+        desc: Il grande tempio è pieno di incensieri fumanti e del mormorio di parole
+          sacre, molti si avvicinano all'enorme pietra blu scintillante e sembrano
+          pregare. La grande pietra sembra raggiungere il pavimento da molto più in
+          alto, minacciando di perforare il cielo stesso. Nonostante ciò, la superficie
+          è completamente liscia e vibra di potere.
       jarvoJoy:
         name: JarvoGioia
+        desc: Un nano robusto e corpulento sembra stare in piedi dietro al bancone
+          su uno sgabello. Il suo viso presenta diverse cicatrici appena rimarginate
+          e anche la barba sembra piuttosto bruciacchiata. Intorno a lui c'è un assortimento
+          di sci, dischi da skydiving e molti altri tipi di attrezzature sportive.
       frosthookEmporium:
         name: Emporio di Frosthook
+        desc: Una piratessa esperta ti saluta con un piccolo cenno del capo. La sua
+          gamba di legno batte sul pavimento mentre scivola dietro il bancone. Una
+          miriade di attrezzi da pesca riempie le pareti e gli scaffali. Sorprendentemente,
+          su una delle pareti è appesa una gigantesca testa di squalo, con sotto una
+          targhetta che recita “Bruce”.
       frozenCapital:
         name: Banca Congelata della Capitale
         desc: Una banca rinomata e influente a Jarvonia. La Banca Congelata custodisce
@@ -106,10 +171,10 @@ singulars:
           ceppo, o strettamente legati insieme con lo spago.
       polarPruning:
         name: Potatura Polare
-        desc: Polar Pruning è un accogliente barbiere situato nel cuore di Azurazera.
-          Entrate e lasciatevi coccolare da un esperto barbiere che scolpisce e sistema
-          i vostri capelli con precisione. Le pareti sono addobbate con decorazioni
-          e l'aria è permeata dal rinfrescante profumo di pino.
+        desc: Potatura Polare è un accogliente negozio di barbiere situato nel cuore
+          di Azurazera. Entra e lasciati modellare e curare i capelli con precisione
+          da un barbiere esperto. Le pareti sono decorate con oggetti ornamentali
+          e l'aria è pervasa dal profumo rinfrescante del pino.
       tundraTrends:
         name: Tendenze della Tundra
         desc: Tendenze della Tundra offre le ultime novità in fatto di moda invernale
@@ -128,3 +193,69 @@ singulars:
           striscione con la scritta "WalkScape" è appeso al muro, anche se il suo
           significato rimane poco chiaro. L'interno sembra essere un ufficio, con
           una lavagna Kanban, una scrivania in piedi e un nuovissimo walkpad di Galeforge.
+      icyGoblet:
+        desc: Alla taverna Icy Goblet, le leggende si fondono con la realtà mentre
+          le bevande ghiacciate scorrono a fiumi e l'aria si riempie delle risate
+          degli avventurieri che condividono le loro gelide imprese.
+        name: Il Globo Ghiacciato
+      tutorialCabin:
+        name: La capanna dell'utile Herbert
+        desc: Un modesto cottage sorge all'interno della Foresta Incantata, circondato
+          da diversi ceppi d'albero e da un uomo seduto a un tavolo all'aperto con
+          due sedie. Sembra che stia esaminando una scacchiera sul tavolo.
+      frostyFinds:
+        desc: Vende tutti i tipi di articoli generici di cui un viaggiatore potrebbe
+          aver bisogno durante le sue avventure.
+        name: Reperti Ghiacciati di Kallaheim
+      azurazeraBank:
+        desc: Una banca dall'aspetto molto pulito che in qualche modo rimane libera
+          dalla neve esterna. Si potrebbe giurare di guardare attraverso lenti blu,
+          dato che anche le torce qui bruciano di blu. Solo coloro che sono molto
+          rispettati dai Jarvoniani possono entrare in uno spazio del genere.
+        name: Deposito Freddo dell'Impegno
+    syrenthia:
+      vastalumeSpecializedStore:
+        name: Sottocorrente
+        desc: "All'ingresso è appeso uno stendardo di Syrenthia che indica che solo
+          le persone di fiducia dei Syrenthiani possono accedere al locale. All'interno
+          c'è un po' di tutto: un'area lounge, attrezzi appesi alle pareti e persino
+          un bonsai subacqueo."
+      vastalumeTavern:
+        name: Perla del Mare
+        desc: L'intero pavimento è ricoperto di sabbia. Dietro al bancone, c'è un
+          polipo arancione che prepara drink e riempie bicchieri. In un angolo della
+          stanza si trova la perla più grande che tu abbia mai visto.
+      vastalumeGeneralStore:
+        desc: Un'ancora arrugginita giace sulla sabbia. Il piccolo negozio ha pochi
+          scaffali e barili di merci. Dalle crepe e dai buchi nelle pareti salgono
+          delle bolle. Ti sembra di riconoscere le montagne raffigurate nel dipinto
+          appeso alla parete.
+        name: Ancora Affondata
+      vastalumeClothingShop:
+        desc: Molti Syrenthiani preferiscono abiti realizzati con conchiglie, quindi
+          questo posto è piuttosto vuoto. Nel negozio si trovano pochi tessuti e abiti.
+          La maggior parte dei visitatori è qui per acquistare il famoso abito da
+          ballo delle sirene.
+        name: Moda Fan-tastic
+      casbrantsSunkenShip:
+        desc: L'intero albero maestro della nave si è spezzato. Il relitto è pieno
+          di buchi e assi rotte da cui salgono numerose piccole bolle d'aria. Sembra
+          quasi che ci sia un'altra presenza qui, che osserva e aspetta.
+        name: Nave affondata di Casbrant
+      vastalumeBank:
+        name: Banca dell'onda di Thalassa
+        desc: Un grosso serpente giallo brillante striscia sul fondo sabbioso. Nelle
+          pareti rocciose sott'acqua c'è una porta circolare con un enorme buco della
+          serratura che conduce a una cassaforte.
+      vastalumeBarber:
+        name: Barbiere segui il flusso
+        desc: Questo barbiere molto affollato dispone di diverse postazioni per il
+          taglio dei capelli. Il flusso costante di clienti che entrano ed escono
+          suggerisce che si tratti di un luogo molto popolare per tagliarsi i capelli
+          a Vastalume.
+      throneOfTheNeverdrown:
+        desc: Un polpo attento fa la guardia all'ingresso. Un tappeto blu reale conduce
+          al trono, adornato da diversi tentacoli in movimento. L'intera sala del
+          trono emana un'atmosfera inquietante e sembra che persino l'innocuo granchio
+          ti stia osservando.
+        name: Trono dei Non-Annegati

@@ -32,7 +32,7 @@ maps:
         sad: Surullinen
         smile: Hymy
         smirk: Virne
-        surprise: Yllätys
+        surprise: Yllättynyt
         'veryAngry': Erittäin vihainen
       optionTypes:
         backAccessorie: Selän asusteet
@@ -195,9 +195,9 @@ plurals:
         few: '-'
         many: '-'
       stepsToCraft:
-        one: Askel valmistukseen
-        other: Askelta valmistukseen
-        two: Askeleita valmistukseen
+        one: Askel valmistumiseen
+        other: Askelta valmistumiseen
+        two: Askelta valmistumiseen
         few: '-'
         many: '-'
         zero: '-'
@@ -236,6 +236,13 @@ plurals:
         two: <icon i="Steps"/>{} <c>askelta</c> toimintoa kohti
         few: '-'
         many: '-'
+      workEfficiency:
+        zero: '-'
+        one: Työtehokkuus
+        two: Työtehokkuus
+        few: '-'
+        many: '-'
+        other: Työtehokkuus
   achievements:
     phrases:
       achievementPoint:
@@ -284,9 +291,9 @@ singulars:
       viewDescription: Avaa saavutuksia ansaitaksesi <hl>saavutuspisteitä</hl>. Kun
         saavutuspistepalkki täyttyy, voit lunastaa näkymästä palkintoja. Jotkut saavutukset
         antavat myös palkintoja niiden avaamisesta.
-      collectibleItems: Keräilyesineet ovat asioita, joita voit saada WalkScapen maailmasta.
-        Keräilyesineitä on useita erilaisia, joita voit yrittää löytää. Ne eivät vie
-        repputilaa ja ovat aina hahmosi mukana.
+      collectibleItems: Keräilyesineet ovat asioita, joita voit löytää WalkScapen
+        maailmasta eri tavoilla ja tilanteissa. Keräilyesineitä on useita erilaisia.
+        Ne eivät vie repputilaa ja ovat aina hahmosi mukana.
       noCollectibleItems: Sinulla ei ole vielä keräilyesineitä.
       checkPointUnlocks: Nämä saavutukset ovat lunastettavissa tietyissä saavutuspisteiden
         määrän etapeissa. Et menetä näitä saavutuksia, vaikka saavutuspisteitä tulisi
@@ -294,17 +301,17 @@ singulars:
       totalProgressUnlocks: Saat nämä palkinnot sen mukaan, kuinka paljon saavutuksia
         olet saavuttanut, ja menetät pääsyn esineisiin, jos saavutuspisteitä tulee
         lisää ja jäät vaaditun määrän alle.
-      specialItems: Erikoisesineitä, kuten <c>keräilyesineitä</c>, <c>tehtäväesineitä</c>
-        ja <c>artifakteja</c>, kerätään koko matkasi aikana WalkScapessa. Voit tarkistaa
-        ne täältä. Keräilyesineet antavat sinulle edistystä saavutuspisteisiin.
+      specialItems: Voit löytää erikoisesineitä, kuten <c>keräilyesineitä</c>, <c>tehtäväesineitä</c>
+        ja <c>artefakteja</c>, tehdessäsi matkaa WalkScapessa. Voit ihailla löytöjäsi
+        täällä. Keräilyesineet tuottavat sinulle lisäksi saavutuspisteitä.
     phrases:
       notUnlocked: Lukittu saavutus
-      rewardProgress: Palkitsemispisteiden eteneminen
+      rewardProgress: Saavutuspisteiden palkintopalkin tola
       showRewards: Näytä palkinnot
       totalProgressUnlocks: Kokonaisetenemisen palkinnot
       checkPointUnlocks: Etappien palkinnot
       unclaimedRewards: 'Lunastamattomat palkinnot: '
-      collectiblesCount: Keräilyesineitä <icon i="Achievement Point"/> <c i=0>{count}</c>
+      collectiblesCount: Keräilyesineet <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
   crafting:
     phrases:
@@ -797,7 +804,7 @@ singulars:
       reputation: Maine mittaa sitä, miten hyvin sinut tunnetaan WalkScapen eri ryhmittymissä.
   tutorial:
     phrases:
-      noMoreMessages: Ei enempää ohjeistusviestejä
+      noMoreMessages: Piilota ohjeistusviestit jatkossa
       youWillGain: Saat seuraavat esineet mikäli valitset tämän vaihtoehdon.
   mainMenu:
     phrases:
@@ -880,6 +887,7 @@ singulars:
       loadingLocalStorage: Ladataan paikallinen tallennustila...
       startingSettingsManagerProcess: Käynnistetään asetustenhallinta
       startingSentry: Käynnistetään Vartiotorni...
+      startingOTAManagerProcess: Käynnistetään nättien asioiden hallinta
     isolates:
       mainIsolate: Pääeriö
       workerIsolate: Toimituseriö
@@ -1063,3 +1071,7 @@ singulars:
         etenemisestä sekä ajoista, jolloin palvelin ei ole saatavilla.
       noMoreAnnouncements: Olet päässyt tiedotteiden loppuun! Ei muita näytettäviä
         tiedotteita.
+  download:
+    phrases:
+      downloadingAssets: Ladataan nätteäj asioita...
+      downloadedFileCount: Ladattu <c i=0>{current}</c> / <c i=1>{total}</c> tiedostoa

@@ -72,41 +72,42 @@ beschikbaar bij bepaalde prestatiepunt-checkpoints. Je behoudt toegang tot deze 
 als er meer prestatiepunten beschikbaar komen.}, phrases: {notUnlocked: Vergrendelde
 prestatie, rewardProgress: Beloningsvoortgang, showRewards: Beloningen bekijken, totalProgressUnlocks: Totale
 voortgang ontgredelingen, checkPointUnlocks: Checkpoint ontgrendelingen, unclaimedRewards: 'Niet-geclaimde
-beloningen: '}}, 'crafting': {'phrases': {'requiresMaterial': 'Vereist een materiaal.',
-'requiresOneOfTheFollowing': 'Vereist een van de volgende materialen.', requirements: Vereisten,
-requirementsNotMet: Je voldoet niet aan de vereisten., noServiceRequirements: Geen
+beloningen: ', collectiblesCount: 'Verzamelobjecten <icon i="Achievement Point"/>
+<c i=0>{count}</c> <c i=1>/ {maxCount}</c>'}}, 'crafting': {'phrases': {'requiresMaterial': 'Vereist
+een materiaal.', 'requiresOneOfTheFollowing': 'Vereist een van de volgende materialen.',
+requirements: Vereisten, requirementsNotMet: Je voldoet niet aan de vereisten., noServiceRequirements: Geen
 voorzieningsvereisten., showingRecipiesThatUses: Recepten weergeven voor, requiresService: Vereist
 een voorziening., noMaterials: Je hebt momenteel geen materialen beschikbaar om iets
 te maken., noMaterialsThatCouldBeUsed: Geen materialen in je inventaris die gebruikt
-kunnen worden om iets te maken., materials: Materialen, rewards: Beloningen, recipes: Recepten},
-errors: {notSameQuality: Materialen moeten óf allemaal van hoge kwaliteit zijn óf
-allemaal normaal zijn, noService: Voorzieningsvereisten niet voldaan, noMaterials: Materialen
-om iets te maken ontbreken, skillRequirementsNotMet: Vaardigheidsvereisten niet voldaan}},
-'inventory': {'info': {'noItemEquipped': "Geen voorwerp aan het dragen. \\n\\n Je
-kunt een voorwerp dragen door er een te selecteren in de onderstaande lijst en op
-\"Dragen\" te drukken.", 'noItemSelected': "Geen voorwerp geselecteerd. \\n\\n Selecteer
-hieronder een voorwerp om het te vergelijken met het huidige voorwerp en het te dragen.",
-noItemsFound: Geen voorwerpen in je inventaris gevonden die in dit vak passen.}, phrases: {
-areYouSureToDrop: Weet je zeker dat je voorwerpen weg wilt gooien? Deze voorwerpen
-zullen voor altijd verloren gaan., slotsCount: 'Ruimte:', selectedStacks: '<c>{stacks}</c>
-stapels geselecteerd', requirementsNotMet: Vereisten niet voldaan., cantEquip: Kan
-niet gedragen worden., slotDoesntExist: Dit voorwerpvak bestaat niet meer., attributes: Attributen,
-abilities: Abilities, requires: Vereist, equipToRingOne: In ringvak 1 dragen, equipToRingTwo: In
-ringvak 2 dragen, equipToToolSlot: 'In gereedschapsvak {id} dragen', emptySlot: Leeg
-vak, allSkills: Alle vaardigheden, noItemEquipped: Geen voorwerp gedragen, noItemSelected: Geen
-voorwerp geselecteerd, inUse: In gebruik, disableWhenChanging: Uitschakelen bij wisselen
-van activiteit, enableWhenBack: Opnieuw inschakelen wanneer een activiteit start waar
-deze eerder gebruikt werd, selectedConsumable: Geselecteerd verbruiksartikel, consumables: Verbruiksartikelen,
-noConsumables: Geen verbruiksartikelen in je inventaris., noPotionConsumables: Geen
-<hl>elixers</hl> in je inventaris., allItemsInUse: 'Al deze voorwerpen worden zijn
-momenteel in gebruik, en kunnen niet weggegooid worden.', noConsumableSelected: Geen
-verbruiksartikel geselecteerd. Je kunt er hieronder een selecteren., checkBank: Bank
-openen, itemsInUse: Je hebt voorwerpen geselecteerd die al gebruikt worden. Je kunt
-voorwerpen in gebruik niet weggooien of bewaren in de bank., durationInSteps: 'Actief
-voor <c>{steps}</c> <icon i="Steps" /> stappen', cantBeDropped: Voorwerp kan niet
-weggegooid worden., oneOrMoreCantBeDropped: Een of meerdere voorwerpen kunnen niet
-weggegooid worden., duration: Duur, noFoodConsumables: Geen <hl>voedsel</hl> in je
-inventaris., treasury: Schatkamer, longPressTip: <c>Tip:</c> Een stapel voorwerpen
+kunnen worden om iets te maken., materials: Materialen, rewards: Beloningen, recipes: Recepten,
+allSkills: Alle vaardigheden}, errors: {notSameQuality: Materialen moeten óf allemaal
+van hoge kwaliteit zijn óf allemaal normaal zijn, noService: Voorzieningsvereisten
+niet voldaan, noMaterials: Materialen om iets te maken ontbreken, skillRequirementsNotMet: Vaardigheidsvereisten
+niet voldaan}}, 'inventory': {'info': {'noItemEquipped': "Geen voorwerp aan het dragen.
+\\n\\n Je kunt een voorwerp dragen door er een te selecteren in de onderstaande lijst
+en op \"Dragen\" te drukken.", 'noItemSelected': "Geen voorwerp geselecteerd. \\n\\
+n Selecteer hieronder een voorwerp om het te vergelijken met het huidige voorwerp
+en het te dragen.", noItemsFound: Geen voorwerpen in je inventaris gevonden die in
+dit vak passen.}, phrases: {areYouSureToDrop: Weet je zeker dat je voorwerpen weg
+wilt gooien? Deze voorwerpen zullen voor altijd verloren gaan., slotsCount: 'Ruimte:',
+selectedStacks: '<c>{stacks}</c> stapels geselecteerd', requirementsNotMet: Vereisten
+niet voldaan., cantEquip: Kan niet gedragen worden., slotDoesntExist: Dit voorwerpvak
+bestaat niet meer., attributes: Attributen, abilities: Abilities, requires: Vereist,
+equipToRingOne: In ringvak 1 dragen, equipToRingTwo: In ringvak 2 dragen, equipToToolSlot: 'In
+gereedschapsvak {id} dragen', emptySlot: Leeg vak, allSkills: Alle vaardigheden, noItemEquipped: Geen
+voorwerp gedragen, noItemSelected: Geen voorwerp geselecteerd, inUse: In gebruik,
+disableWhenChanging: Uitschakelen bij wisselen van activiteit, enableWhenBack: Opnieuw
+inschakelen wanneer een activiteit start waar deze eerder gebruikt werd, selectedConsumable: Geselecteerd
+verbruiksartikel, consumables: Verbruiksartikelen, noConsumables: Geen verbruiksartikelen
+in je inventaris., noPotionConsumables: Geen <hl>elixers</hl> in je inventaris., allItemsInUse: 'Al
+deze voorwerpen worden zijn momenteel in gebruik, en kunnen niet weggegooid worden.',
+noConsumableSelected: Geen verbruiksartikel geselecteerd. Je kunt er hieronder een
+selecteren., checkBank: Bank openen, itemsInUse: Je hebt voorwerpen geselecteerd die
+al gebruikt worden. Je kunt voorwerpen in gebruik niet weggooien of bewaren in de
+bank., durationInSteps: 'Actief voor <c>{steps}</c> <icon i="Steps" /> stappen', cantBeDropped: Voorwerp
+kan niet weggegooid worden., oneOrMoreCantBeDropped: Een of meerdere voorwerpen kunnen
+niet weggegooid worden., duration: Duur, noFoodConsumables: Geen <hl>voedsel</hl>
+in je inventaris., treasury: Schatkamer, longPressTip: <c>Tip:</c> Een stapel voorwerpen
 lang ingedrukt houden selecteerd alle soortgelijke stapels., dropItems: Voorwerpen
 weggooien?, slots: 'Ruimte <c>{slots}</c>'}, options: {expandInventory: Inventaris
 uitklappen, showConsumables: Verbruiksartikelen weergeven, consenseInventory: Inventaris
@@ -165,12 +166,12 @@ klusjes komen beschikbaar over:', refreshIn: 'Het prikbord wordt ververst over:'
 acceptedJobs: 'Huidig geaccepteerde klusjes <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>',
 hasNoItemsInBank: Er zijn geen geschikte voorwerpen in je bank., acceptJob: Klusje
 accepteren, youMustBeInLocationToCollect: 'Je moet op dezelfde locatie zijn als <object
-id="{obj}"/> om de beloning te ontvangen.', collectRewards: Beloning innen}, dialogs: {
-abandonJob: {title: Klusje opgeven, text: Weet je zeker dat je dit klusje wilt opgeven?
-Je zal de voortgang en beloningen van dit klusje kwijtraken.}}}, gear: {phrases: {
-skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen gevechtsmodificatoren
-door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators door gedragen
-voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
+id="{obj}"/> om de beloning te ontvangen.', collectRewards: Beloning innen, currentlyAcceptedJobs: Huidige
+geaccepteerde klusjes}, dialogs: {abandonJob: {title: Klusje opgeven, text: Weet je
+zeker dat je dit klusje wilt opgeven? Je zal de voortgang en beloningen van dit klusje
+kwijtraken.}}}, gear: {phrases: {skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen
+gevechtsmodificatoren door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators
+door gedragen voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
 modificatoren, combatModifiers: Gevechtsmodificatoren, noItemEquipped: Geen voorwerp
 uitgerust, noItemSelected: Geen voorwerp geselecteerd}}, tools: {phrases: {emptyToolSlot: Leeg
 gereedschapsvak, lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau
@@ -295,46 +296,83 @@ eerste keer is dat je WalkScape gebruikt, zal er toestemming gevraagd worden om 
 uit Apple Health te kunnen lezen.', continueWillEnable: Doorgaan-knop wordt ingeschakeld
 nadat je hierboven de benodigde toestemmingen hebt gegeven., youCanChangeAnyTime: Je
 kunt op elk moment de stappentellerbron wijzigen in de <c>Spelinstellingen</c>., comingSoonToAndroid: Komt
-binnenkort naar Android, changeStepCountingSource: Stappentellerbron wijzigen, stepCountingSource: Stappentellerbron},
-deviceSource: {featureDisabled: Het veranderen van invoerbron is momenteel tijdelijk
-uitgeschakeld. De standaard stappenteller van de telefoon zal gebruikt worden., phone: Telefoon,
-appleWatch: Apple Watch, watch: Andere smartwatch}, deviceInfo: {watch: "WalkScape
-leest je stappen uit van <c>Apple Health</c> als ze gesynchroniseerd zijn vanuit je
-<icon i=\"Watch small\" /> <c>smartwatch</c>. Afhankelijk van de producent moet je
-mogelijk in een aparte app je stappen handmatig synchroniseren naar <c>Apple Health</c>.\n\
-\ \n<bp /> <c i=2>Je moet mogelijk met behulp van andere applicaties je stappen synchroniseren
-naar Apple Health </c> voordat ze verwerkt worden door WalkScape.\n\n<bp /> Het proces
-van synchroniseren van stappen naar <c>Apple Health</c> kan per producent verschillen.
-Mogelijk is er enige technische kennis nodig om dit op te zetten.\n\n<bp /> Je moet
-een extra permissie geven voor het lezen van gegevens uit Apple Health om je smartwatch
-te kunnen verbinden.\n\n<bp /> Alleen stappen die door je smartwatch geregistreerd
-zijn, worden verwerkt door het spel.\n", phone: "<icon i=\"Phone small\" /> <c>Telefoon</c>
-is de standaard aanbevolen stappentellerbron voor WalkScape. Voor intensieve sportactiviteiten
-raden we aan om <icon i=\"Watch small\" /> <c>een smartwatch</c> als stappentellerbron
-te gebruiken. Voor de meeste spelers zal <icon i=\"Phone small\" /> <c>Telefoon</c>
-de beste optie zijn.\n\n<bp /> <c i=1>Je stappen worden door het spel in realtime
-verwerkt terwijl je aan het lopen bent.</c>\n\n<bp /> Om ervoor te zorgen dat je stappen
-geteld worden <c>moet je je telefoon bij je dragen</c>. Dit is wellicht lastiger bij
-het doen van intensieve sporten.\n", appleWatch: "<icon i=\"Apple watch small\" />
-<c>Apple Watch</c> werkt anders dan <icon i=\"Watch small\" /> <c>andere smartwatches</c>,
-omdat het periodiek je stappen naar Apple Health synchroniseert. WalkScape leest de
-stappen uit van Apple Health als ze gesynchroniseerd zijn vanuit je <icon i=\"Apple
-watch small\" /> <c>Apple Watch</c> of een andere smartwatch.\n\n<bp /> <c i=2>Apple
-Watch synchroniseert periodiek je stappen naar Apple Health.</c> Je kan je stappen
-niet in realtime in het spel zien, en je stappen kunnen met een vertraging binnenkomen.\n\
-\ \n<bp /> Je moet een extra permissie geven voor het lezen van gegevens uit Apple
-Health om je Apple Watch te kunnen verbinden.\n\n<bp /> Alleen stappen die door je
-Apple Watch geregistreerd zijn, worden verwerkt door het spel.\n"}}, wardrobe: {phrases: {
-noHeadwear: Je hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires.,
-noBackAccessories: Je hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}},
-rewards: {phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open
-factie}}, shop: {phrases: {bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien,
-buying: Kopen, selling: Verkopen, buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden,
-pendingInvites: Openstande uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {
-phrases: {arrivedToLocation: 'Gearriveerd in <object id={location} />', overEncumbered: Je
-inventaris is vol en je bent overbelast.}}, locales: {phrases: {language: Taal, helpToTranslate: WalkScape
-is <c>vertaald door de community</c>. Help ons met het vertalen van het spel naar
-meer talen en met het uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
+binnenkort naar Android, changeStepCountingSource: Stappentellerbron wijzigen, stepCountingSource: Stappentellerbron,
+noDeviceFoundAndroid: Geen apparaat gevonden. Druk hierboven op de <c>Met Health Connect
+verbinden</c> knop en controleer of er toestemming is gegeven om Health Connect gegevens
+te laden., connectHealthConnect: Met Health Connect verbinden, connectSamsungHealth: Met
+Samsung Health verbinden, installHealthConnect: Health Connect installeren, connectHealthConnectExplanation: 'Je
+moet verbinding maken met Google Connect zodat we de stappen kunnen uitlezen die gesynchroniseerd
+zijn door je horloge, en om te zien met welke apparaten je verbinding hebt gemaakt.
+Als dit de eerste keer is dat je WalkScape gebruikt, word je gevraagd om toestemming
+te geven om gegevens uit Google Connect te kunnen uitlezen.', connectSamsungHealthExplanation: 'Als
+je Samsung wearables gebruikt, moet je verbinding maken met Samsung Health om stappen
+uit te lezen die gesynchroniseerd zijn door je horloge. Als dit de eerste keer is
+dat je WalkScape gebruikt, word je gevraagd om toestemming te geven om gegevens uit
+Samsung Health te kunnen uitlezen.', installHealthConnectExplanation: 'Health Connect
+is nodig om stappen van je wearables uit te lezen. Deze moet je eerst installeren
+door op de bovenstaande knop te drukken, en dan moet je er verbinding mee maken.',
+samsungHealthConnectedInfo: Samsung Health is verbonden! Zowel stappen van je wearables
+die zijn verbonden met Samsung Health als stappen die door je telefoon gemeten worden
+zullen worden uitgelezen door het spel.}, deviceSource: {featureDisabled: Het veranderen
+van invoerbron is momenteel tijdelijk uitgeschakeld. De standaard stappenteller van
+de telefoon zal gebruikt worden., phone: Telefoon, appleWatch: Apple Watch, watch: Andere
+wearable, watchAndroid: Health Connect, samsungHealth: Samsung Health}, deviceInfo: {
+watch: "WalkScape leest je stappen uit van <c>Apple Health</c> als ze gesynchroniseerd
+zijn vanuit je <icon i=\"Watch small\" /> <c>smartwatch</c>. Afhankelijk van de producent
+moet je mogelijk in een aparte app je stappen handmatig synchroniseren naar <c>Apple
+Health</c>.\n \n<bp /> <c i=2>Je moet mogelijk met behulp van andere applicaties je
+stappen synchroniseren naar Apple Health </c> voordat ze verwerkt worden door WalkScape.\n\
+\n<bp /> Het proces van synchroniseren van stappen naar <c>Apple Health</c> kan per
+producent verschillen. Mogelijk is er enige technische kennis nodig om dit op te zetten.\n\
+\n<bp /> Je moet een extra permissie geven voor het lezen van gegevens uit Apple Health
+om je smartwatch te kunnen verbinden.\n\n<bp /> Alleen stappen die door je smartwatch
+geregistreerd zijn, worden verwerkt door het spel.\n", phone: "<icon i=\"Phone small\"\
+\ /> <c>Telefoon</c> is de standaard aanbevolen stappentellerbron voor WalkScape.
+Voor intensieve sportactiviteiten raden we aan om <icon i=\"Watch small\" /> <c>een
+smartwatch</c> als stappentellerbron te gebruiken. Voor de meeste spelers zal <icon
+i=\"Phone small\" /> <c>Telefoon</c> de beste optie zijn.\n\n<bp /> <c i=1>Je stappen
+worden door het spel in realtime verwerkt terwijl je aan het lopen bent.</c>\n\n<bp
+/> Om ervoor te zorgen dat je stappen geteld worden <c>moet je je telefoon bij je
+dragen</c>. Dit is wellicht lastiger bij het doen van intensieve sporten.\n", appleWatch: "<icon
+i=\"Apple watch small\" /> <c>Apple Watch</c> werkt anders dan <icon i=\"Watch small\"\
+\ /> <c>andere smartwatches</c>, omdat het periodiek je stappen naar Apple Health
+synchroniseert. WalkScape leest de stappen uit van Apple Health als ze gesynchroniseerd
+zijn vanuit je <icon i=\"Apple watch small\" /> <c>Apple Watch</c> of een andere smartwatch.\n\
+\n<bp /> <c i=2>Apple Watch synchroniseert periodiek je stappen naar Apple Health.</c>
+Je kunt je stappen niet in realtime in het spel zien, en je stappen kunnen met een
+vertraging binnenkomen.\n \n<bp /> Je moet een extra permissie geven voor het lezen
+van gegevens uit Apple Health om je Apple Watch te kunnen verbinden.\n\n<bp /> Alleen
+stappen die door je Apple Watch geregistreerd zijn, worden verwerkt door het spel.\n",
+watchAndroid: "WalkScape lees je stappen uit via <c>Health Connect</c>. Om stappen
+te synchroniseren van je <icon i=\"Watch small\" /> <c>smartwatch</c>. moet je een
+extra applicatie installeren die je stappen synchroniseert naar <c>Health Connect</c>,
+zoals Fitbit, Garmin Connect, of Galaxy Health.\n\n<bp /> <c i=2>Je moet je stappen
+synchroniseren naar Health Connect via andere applicaties </c> om de stappen te laten
+tellen in WalkScape.\n\n<bp /> Het proces om stappen te synchroniseren naar <c>Health
+Connect</c> verschilt per fabrikant. Mogelijk kost het opzetten hiervan wat extra
+moeite en is er enige technische kennis voor nodig.\n\n<bp /> Je moet een extra permissie
+geven voor het lezen van gegevens uit <c>Health Connect</c> om je smartwatch te kunnen
+verbinden.\n\n<bp /> Alleen stappen die door je smartwatch geregistreerd zijn, worden
+verwerkt door het spel.", samsungHealth: "WalkScape leest je stappen uit via <c>Samsung
+Health</c>. Je stappen van al je <icon i=\"Watch small\" /> <c>wearables</c> die met
+Samsung Health kunnen verbinden en stappen van je <icon i=\"Phone small\" /> <c>telefoon</c>
+worden gesynchroniseerd met het spel.\n\n<bp /> <c i=2>Je moet je stappen synchroniseren
+met Samsung Health via je wearables</c> voordat ze tellen in WalkScape.\n\n<bp />
+Je moet een extra permissie geven voor het lezen van gegevens uit <c>Samsung Health</c>
+om je smartwatch te kunnen verbinden.\n\n<bp /> Alleen stappen die door Samsung Health
+geregistreerd zijn, worden verwerkt door het spel."}}, wardrobe: {phrases: {noHeadwear: Je
+hebt geen hoofddeksels., noFaceAccessories: Je hebt geen gezichtsaccessoires., noBackAccessories: Je
+hebt geen rugaccessoires., noEyeAccessories: Je hebt geen oogaccessoires.}}, rewards: {
+phrases: {alreadyClaimed: Al geclaimd}}, faction: {phrases: {openFaction: Open factie,
+repeatingReward: Herhalende beloning, unclaimedRewards: 'Niet geclaimde beloningen
+{count}', nextRewardUnlocked: 'Volgende beloning vrijgespeeld:'}}, shop: {phrases: {
+bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien, buying: Kopen, selling: Verkopen,
+buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden, pendingInvites: Openstande
+uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {phrases: {arrivedToLocation: 'Gearriveerd
+in <object id={location} />', overEncumbered: Je inventaris is vol en je bent overbelast.}},
+locales: {phrases: {language: Taal, helpToTranslate: WalkScape is <c>vertaald door
+de community</c>. Help ons met het vertalen van het spel naar meer talen en met het
+uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
 te bezoeken. Alle hulp wordt enorm gewaardeerd! ❤️, chooseALanguage: Kies een taal
 uit de onderstaande lijst., percentExplanation: '% laat zien hoeveel vertaald is.',
 selectGrammaticalGender: Selecteer grammaticaal geslacht, grammaticalGenderExplanation: Het
