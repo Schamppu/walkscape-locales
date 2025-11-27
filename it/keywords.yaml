@@ -631,6 +631,8 @@ singulars:
     advancedDivingGear:
       name: Equipaggiamento da immersione avanzato
       requirement: Richiede<object id="itemset_diving_gear_advanced" />.
+      requirementLevel: Richiede attrezzatura subacquea avanzata che abbia almeno
+        <keywordRequirements /> nei suoi requisiti.
     adventuringTools:
       name: Set di strumenti per l'avventura
       requirement: Richiede pezzi equipaggiati del set <object id="itemset_adventuring_tools"
@@ -643,16 +645,30 @@ singulars:
       name: Set cacciatore di tesori
       requirement: Richiede pezzi equipaggiati del set <object id="itemset_treasure_hunter"
         />.
+    expertDivingGear:
+      name: Attrezzatura subacquea professionale
+      requirement: Richiede <object id="itemset_diving_gear_expert" />.
+      requirementLevel: Richiede attrezzatura subacquea professionale che abbia almeno
+        <keywordRequirements /> nei suoi requisiti.
+    properGear:
+      name: Attrezzatura adeguata
+      requirement: Richiede pezzi consumati del set <object id="itemset_proper_gear"
+        />.
+      requirementLevel: Richiede l'uso di equipaggiamento adeguato che soddisfi almeno
+        i requisiti <keywordRequirements />.
   locations:
     underwater:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      name: Sott'acqua
     desert:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      name: Deserto
     regional:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      name: Regionale
   achievements:
     percentage:
       requirement: nessuno
