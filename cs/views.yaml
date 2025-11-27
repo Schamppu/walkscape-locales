@@ -74,6 +74,7 @@ maps:
       'warningBeforeClaimingExperience': Zobrazit varování před uplatněním odměn za
         zkušenosti
       'activityInformationOpen': Zobrazit více informací o aktivitě
+      'toggleAgilityXp': Zakázat získávání zkušeností za hbitost z Cestování
     custom:
       'dataSource': Zdroj kroků
     stepCountNotifications:
@@ -167,6 +168,7 @@ maps:
       'activity': Aktivita
       'passive': Pasivní
       'consumable': Spotřební materiál
+      'emergency': Nouze
 plurals:
   achievements:
     phrases:
@@ -354,7 +356,7 @@ singulars:
       enableWhenBack: Znovu povolit při zahájení aktivity, která byla dříve prováděna
       requirementsNotMet: Požadavky nejsou splněny.
       cantEquip: Nelze nasadit.
-      checkBank: Otevřít banku
+      checkBank: Banka
       emptySlot: Prázdný slot
       allSkills: Všechny dovednosti
       noItemEquipped: Žádná výbava
@@ -615,7 +617,7 @@ singulars:
       last: Poslední
       loadingPage: Načítání stránky...
       totalSteps: Celkový počet kroků
-      totalLevel: Celková úroveň
+      totalLevel: Celková úroveň dovedností
       totalExperience: Celková zkušenost
       achievementPoints: Body úspěchu
   mainMenu:
@@ -724,8 +726,7 @@ singulars:
       savedSteps: Uložené kroky
       inventoryIsOverLimit: Váš batoh je přeplňěný!
       consumables: Spotřební předměty
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Globální efektivita práce
-        <c>-{penalty}%</c>
+      workEfficiencyPenalty: Základní efektivita práce <c>-{penalty}%</c>
       guideTip: Tip dne
       requirements: Požadavky
       rewards: Odměny
@@ -755,8 +756,9 @@ singulars:
       baseEfficiency: Základní účinnost
       fromOverencumbered: Přetížený
     info:
-      savedSteps: Máte uložené kroky, které se právě vyčerpávají. Každý krok se počítá
-        jako dva, dokud se všechny uložené kroky nevyčerpají.
+      savedSteps: Uložené kroky zabraňují plýtvání kroků a shromažďují se chůzí, když
+        není aktivní žádná aktivita. Vyčerpávají se zdvojnásobením kroků, které podniknete,
+        když je aktivita opět aktivní.
       noActivity: Momentálně není vybrána žádná aktivita. <hl>Vyberte jednu z možností
         níže</hl> nebo přejetím prstem doleva zobrazíte vše, co je na tomto místě
         k dispozici.
@@ -795,7 +797,7 @@ singulars:
       skills: Dovednosti
       stepsOfLastWeek: Kroky za posledních 7 dní
       checkOut: Tady je moje postava z WalkScape {name}. Podívejte se!\nhttps://walkscape.app
-      totalLevel: Celková úroveň
+      totalLevel: Celková úroveň dovedností
       savePicture: Uložit obrázek
       level: 'Úroveň postavy: <c>{level}</c>'
       stepsToNextLevel: Kroky k další úrovni <c>{steps}</c>
