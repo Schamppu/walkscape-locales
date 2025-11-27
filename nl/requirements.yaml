@@ -36,8 +36,8 @@ singulars:
     text: Heb minstens niveau <numberProgress current="{current}" max="{max}" /> in
       elke vaardigheid.
   levelUpSkills:
-    text: Ga <numberProgress current="{current}" max="{max}" /> keer een niveau omhoog
-      in je vaardigheden.
+    text: Heb een totaalniveau van <numberProgress current="{current}" max="{max}"
+      />.
   overencumbered:
     text: Heb meer in je inventaris dan het limiet (overbelast).
   haveItemStack:
@@ -127,3 +127,16 @@ singulars:
       />.
     erdwiseMap: Bezit een <object id="fa277527-585b-4a1d-bc73-a25fe1195017" />.
     halflingMap: Bezit een <object id="f1a9e370-fd69-4a49-92c0-c83475a896ab" />.
+  mainSkillType:
+    text: Tijdens het doen van <skillType type="{type}"/> vaardigheden.
+  itemQualityEquipped:
+    text: Draag minstens <numberProgress current="{current}" max="{max}" /><itemQuality
+      quality="{quality}" type="{type}"/> voorwerpen.
+    withoutType: Draag minstens <numberProgress current="{current}" max="{max}" /><itemQuality
+      quality="{quality}" type="crafted"/> of <itemQuality quality="{quality}" type="loot"/>
+      voorwerpen.
+  keywordEquipped:
+    text: Draag <object id="{obj}" />.
+  keywordWithLevelEquipped:
+    text: Draag <object id="{obj}" /> die minstens <skill skill="{skill}"/> niveau
+      <numberProgress current="{current}" max="{max}" /> vereist.
