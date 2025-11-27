@@ -170,15 +170,24 @@ singulars:
     miningOres:
       name: Estrazione mineraria
       requirement: Richiede un'attività <object id="activity_mining" />.
+      requirementLevel: Richiede un'attività di estrazione mineraria che abbia almeno
+        <keywordRequirements /> nei suoi requisiti.
     woodcuttingTrees:
       name: Taglio degli alberi
       requirement: Richiede un'attività <object id="woodcuttingTrees" />.
+      requirementLevel: Richiede un'attività di taglio degli alberi che abbia almeno
+        <keywordRequirements /> nei suoi requisiti.
     foragingPlants:
       requirement: Richiede un'attività di <object id="activity_foraging" />.
       name: Raccolta di piante
+      requirementLevel: Richiede un'attività di raccolta di piante che abbia almeno
+        <keywordRequirements /> nei suoi requisiti.
   gear:
     climbing:
       name: Attrezzatura da arrampicata
+      requirementLevel: Richiede attrezzatura da arrampicata che abbia almeno <keywordRequirements
+        /> nei suoi requisiti.
+      requirement: Richiede <object id="climbingTool" /> equipaggiato.
     amulet:
       name: Amuleto
       requirement: Richiede un <object id="item_amulet" /> equipaggiato.
@@ -196,9 +205,14 @@ singulars:
       requirement: Richiede un <object id="item_ring" /> equipaggiato.
     frisbee:
       requirement: Richiede un <object id="frisbee" /> equipaggiato.
+      name: Skydisc
+      requirementLevel: Richiede un disco ghiacciato che abbia almeno <keywordRequirements
+        /> nei suoi requisiti.
     skis:
       name: Sci
       requirement: Richiede <object id="skis" /> equipaggiati.
+      requirementLevel: Richiede sci che abbiano almeno <keywordRequirements /> nei
+        loro requisiti.
     lifeVest:
       requirement: Richiede un <object id="lifevest" /> equipaggiato.
       name: Giubbotto di salvataggio
@@ -206,6 +220,9 @@ singulars:
         /> nei suoi requisiti.
     skillingGear:
       requirement: Richiede equipaggiato <object id="skillingGear" />.
+      name: Attrezzatura per l'addestramento
+      requirementLevel: Richiede equipaggiamento di abilità che abbia almeno <keywordRequirements
+        /> nei suoi requisiti.
     socks:
       name: Calzini
     weapon:
@@ -214,6 +231,16 @@ singulars:
       name: Scudo
     arrows:
       name: Frecce
+    bellows:
+      name: Soffietto
+      requirement: Richiede l'equipaggiamento <object id="bellows" />.
+      requirementLevel: Richiede soffietti che abbiano almeno <keywordRequirements
+        /> nei loro requisiti.
+    bugCatchingNet:
+      name: Rete per catturare insetti
+      requirementLevel: Richiede una rete per catturare insetti che abbia almeno <keywordRequirements
+        /> nei suoi requisiti.
+      requirement: Richiede un <object id="bugCatchingNet" /> equipaggiato.
   containers:
     chest:
       name: Forziere
@@ -254,8 +281,12 @@ singulars:
     skills:
       agility:
         name: Agilità
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
       carpentry:
         name: Carpenteria
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
       cooking:
         name: Cucina
       crafting:

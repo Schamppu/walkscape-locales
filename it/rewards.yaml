@@ -1,19 +1,44 @@
 singulars:
   factionReputation:
     title: Reputazione con la fazione
+    text: <c>+{amount} reputazione fazione</c> a <realm realm="{realm}" />
   customRewards:
     cleaningTheHolyFountain:
       text: Questo è un requisito necessario per svolgere l'attività Pulizia della
         fonte sacra.
+      title: Pulizia della fonte sacra Requisiti
     halflingSawmill:
       title: Segheria Avanzata
+      text: Sblocca l'accesso al mulino “Saw-in-half” nel Halfling Campgrounds.
     adventurersGuild:
       text: Sblocca l'accesso all'avamposto della Gilda degli Avventurieri nel Corno
         della Tregua.
+      title: Gilda degli avventurieri
     bigloo:
       title: Negozio del Bigloo
+      text: Sblocca l'accesso al negozio Bigloo sul Ghiacciaio delle Onde Invernali.
+    merfolkFarmForage:
+      title: Requisiti per il foraggiamento nella fattoria dei tritoni
+      text: Questo è un requisito necessario per svolgere l'attività di raccolta nella
+        fattoria dei tritoni.
+    undercurrent:
+      title: Negozio Sottocorrente
+      text: Sblocca l'accesso al negozio Sottocorrente in Vastalume.
+    azurazeraBank:
+      title: Banca del Freddo deposito dell'Impegno
+      text: Sblocca accesso alla Banca del Freddo deposito dell'Impegno in Azurazera.
+    neverdrown:
+      title: Trono dei Non-Annegati
+      text: Sblocca l'accesso al Trono dei Non-Annegati a Vastalume.
+    halflingSawmillStats:
+      title: Incremento dell'attributo del mulino Saw-in-half
+      text: Il mulino Saw-in-half adesso fornisce ulteriori bonus.
+    partialSwampost:
+      text: Questo è un requisito per accedere alla Swampost della Gilda degli Avventurieri.
+      title: Requisito parziale Swampost
   skillXp:
     text: <c>+{amount}</c> esperienza in <skill skill="{skill}" />
+    title: Esperienza Abilità
 maps:
   rewardTypes:
     "lootTable": Bottino casuale
@@ -21,3 +46,4 @@ maps:
     "skillXp": Esperienza abilità
     "pfpOption": Cosmetico
     "achievementPoint": Punti obiettivo
+    "none": Nessuno

@@ -19,10 +19,14 @@ singulars:
         reject: Rifiuta
         block: Blocca
       removeFriend: Rimuovi amicizia
+      createParty: Creare gruppo
+      leaveParty: Lasciare gruppo
+      leaveAndDestroyParty: Lasciare e cancellare gruppo
     confirmTitle:
       unblock: Sblocca utente
       inviteResponse:
         block: Blocca utente
+      changeRole: Cambiare permessi
     confirmDescription:
       removeFriend: Confermi di voler rimuovere l'amicizia?
       inviteResponse:
@@ -30,8 +34,37 @@ singulars:
           più inviarti richieste d'amicizia.
       unblock: Confermi di voler sbloccare l'utente?
       cancelInvite: Confermi di voler cancellare questa richiesta d'amicizia?
+      changeRole: Sei sicuro di voler rendere <hl>{characterName}</hl> un <hl>{partyRole}</hl>?
+      leaveParty: Sei sicuro di voler lasciare il gruppo?
+      leaveAndDestroyParty: Sei sicuro di voler abbandonare e cancellare il gruppo?
+        Questa azione non è revocabile.
   status:
     loadingInvites: Controllando le richieste...
   party:
     manage: Gestione
     role: Ruolo
+  createParty:
+    input:
+      partyName: Nome del gruppo
+      catchphrase: Slogan
+      catchphraseHint: Slogan (opzionale)
+    rules:
+      mayContain: '<bp />Può contenere: {list}'
+      noTrailingSpaces: <bp />Non può iniziare o terminare con uno spazio
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Almeno {} caratteri
+        one: <bp />Almeno {} carattere
+      maxChar:
+        zero: '-'
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Al massimo {} caratteri
+        one: <bp />Al massimo {} carattere

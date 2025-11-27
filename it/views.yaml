@@ -76,9 +76,30 @@ singulars:
       viewDescription: Ottieni trofei per guadagnare <hl>Punti Ricompensa</hl>. Quando
         la barra Punti Ricompensa è piena, ottieni qualcosa di speciale per tutti
         i tuoi personaggi! Alcuni trofei danno anche delle ricompense extra.
+      specialItems: Oggetti speciali, come <c>oggetti da collezione</c>, <c>oggetti
+        di missione</c> e <c>manufatti</c>, vengono raccolti durante il tuo viaggio
+        in WalkScape. Puoi controllarli qui. Gli oggetti da collezione ti fanno guadagnare
+        punti progresso.
+      noCollectibleItems: Non hai ancora raccolto alcun oggetto collezionabile.
+      totalProgressUnlocks: Otterrai questi premi in base ai tuoi progressi totali
+        negli obiettivi e perderai l'accesso agli oggetti se saranno disponibili più
+        punti obiettivo.
+      checkPointUnlocks: Questi obiettivi sono disponibili in determinati punti di
+        controllo dei punti obiettivo. Non perderai l'accesso a questi anche se saranno
+        disponibili più punti obiettivo.
+      collectibleItems: Gli oggetti collezionabili sono oggetti che puoi ottenere
+        nel mondo di WalkScape. Esistono diversi tipi di oggetti collezionabili che
+        puoi provare a raccogliere. Non occupano spazio nell'inventario e rimangono
+        sempre con il tuo personaggio.
     phrases:
       notUnlocked: Trofeo bloccato
       rewardProgress: Punti Ricompensa
+      showRewards: Mostra ricompense
+      unclaimedRewards: 'Premi non reclamati: '
+      collectiblesCount: Collezionabili <icon i="Punti obiettivo"/> <c i=0>{count}</c>
+        <c i=1>/ {maxCount}</c>
+      checkPointUnlocks: Sblocco dei checkpoint
+      totalProgressUnlocks: Progressi totali sbloccati
   crafting:
     phrases:
       materials: Materiali
@@ -89,6 +110,16 @@ singulars:
       requiresOneOfTheFollowing: Richiede uno dei seguenti materiali.
       rewards: Ricompense
       allSkills: Tutte le abilità
+      requiresService: Richiede un servizio.
+      noMaterials: Al momento non hai materiali disponibili per la creazione.
+      noMaterialsThatCouldBeUsed: Nessun materiale utilizzabile per la creazione nell'inventario.
+      showingRecipiesThatUses: Mostra ricette che utilizzano
+      noServiceRequirements: Nessun requisito di servizio.
+    errors:
+      notSameQuality: I materiali devono essere tutti di qualità eccellente o normale
+      noService: Requisiti di servizio non soddisfatti
+      noMaterials: Mancano i materiali per la creazione
+      skillRequirementsNotMet: I requisiti di competenza non sono soddisfatti
   inventory:
     info:
       noItemEquipped: Nessun oggetto equipaggiato.\n\nÈ possibile equipaggiare un
@@ -98,10 +129,12 @@ singulars:
     phrases:
       treasury: 'Tesoreria'
       allSkills: Tutte le abilità
+      attributes: Attributi
   location:
     phrases:
       activities: Attività
       services: Servizi
+      noActivites: Nessuna attività disponibile in questa località.
   pfpCreation:
     buttons:
       choose: 'Scegli'
@@ -117,8 +150,9 @@ singulars:
       noActivity: Nessuna attività attualmente selezionata. <hl>Scegline una sotto</hl>,
         oppure scorri a sinistra per vedere tutto ciò che è disponibile in questa
         località.
-      savedSteps: Hai accumulato passi che vengono impiegati. Ogni passo conta come
-        due fino a che tutti i Passi Accumulati non saranno esauriti.
+      savedSteps: I passi salvati impediscono che i passi vengano sprecati e vengono
+        accumulati camminando quando non è attiva alcuna attività. Vengono esauriti
+        raddoppiando i passi effettuati quando si riprende un'attività.
     phrases:
       consumables: Consumabili
       noActivity: Nessuna attività
@@ -138,14 +172,29 @@ singulars:
       noActivitiesInLocation: Non ci sono attività in <object id="{location}"/>.
       activitiesInLocation: Attività disponibili in <object id="{location}"/>
       guideTip: Consiglio del giorno
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Efficienza lavorativa globale
-        <c>-{penalty}%</c>
+      workEfficiencyPenalty: Efficienza lavorativa globale <c>-{penalty}%</c>
       stopWhenOverEncumbered: Fermo quando si è sovraccarichi
       levelActivity: Livello <c>{level}</c> <object id="{skill}"/> di attività
+      savedStepsUsed: Passi salvati utilizzati
+      inputs: Ingressi
+      workEfficiency: Efficienza lavorativa
+      maxWorkEfficiency: Efficienza lavorativa massima
+      fromOverLevels: Livello eccessivo <numberProgress current="{current}" max="{max}"
+        />
+      agilityBonus: Livello di Agilità <c>{livello}</c>
+      fromGear: Attrezzatura equipaggiata
+      fromCollectibles: Collezionabili
+      fromConsumables: Consumabili
+      changeActivity: Cambia attività
+      abilities: Abilità
+      fromServices: Bonus servizio
     rewards:
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} Collezionabili</c> che
         possono essere trovati
       experience: <bp /><c>{xp} </c><object id="{skill}"/> esperienza
+    options:
+      completeUntilActions: Completa per una serie di azioni
+      numberOfActions: Numero di azioni
   popupBubbles:
     phrases:
       arrivedToLocation: Arrivato a <object id={location} />
@@ -164,6 +213,8 @@ singulars:
       noGearSetFound: L'equipaggiamento selezionato non è stato trovato, lo hai eliminato?
       activityInLocation: <object id="{activity}"/> in <object id="{location}"/>
       travelingTo: Da <object id="{from}"/> a <object id="{to}"/>
+      inputNotMet: Requisiti di input non soddisfatti
+      forXActions: Eseguire <c>{count}</c> azioni
     options:
       switchGearSet:
         text: Passare al set di equipaggiamenti
@@ -202,11 +253,11 @@ singulars:
           tutti i materiali, desideri fare qualcosa?
   character:
     phrases:
-      skills: Abilità
+      skills: Competenze
       checkOut: Ecco il mio personaggio {nome} in WalkScape . Dai un'occhiata!\nhttps://walkscape.app
       stepsOfLastWeek: Passi degli ultimi 7 giorni
       checkOutSubject: Guarda i miei progressi su WalkScape!
-      totalLevel: Livello totale
+      totalLevel: Livello totale dell'abilità
       savePicture: Salva immagine
       level: 'Livello del personaggio: <c>{level}</c>'
       stepsToNextLevel: Passi per il livello successivo <c>{passaggi}</c>
@@ -246,6 +297,84 @@ singulars:
         utilizzare i dati del contapassi del tuo dispositivo.
       youNeedToGivePermissions: Per poter procedere con il gioco è necessario concedere
         le seguenti autorizzazioni. Tocca sulle autorizzazioni per concederle.
+      comingSoonToAndroid: Prossimamente su Android
+      exactAlarmPermission: Autorizzazione allarme
+      connectSamsungHealthExplanation: Se utilizzi dispositivi indossabili Samsung,
+        devi collegarti a Samsung Health per poter leggere i passi sincronizzati dal
+        tuo orologio. Se è la prima volta che utilizzi WalkScape, ti verrà richiesta
+        l'autorizzazione a leggere i dati da Samsung Health.
+      installHealthConnectExplanation: Health Connect è necessario per leggere i passi
+        dai tuoi dispositivi indossabili. Devi prima installarlo premendo il pulsante
+        sopra, quindi collegarti ad esso.
+      samsungHealthConnectedInfo: Samsung Health è connesso! Il gioco leggerà sia
+        i passi registrati dai tuoi dispositivi indossabili connessi a Samsung Health
+        sia quelli registrati dal tuo telefono.
+      continueWillEnable: Il pulsante Continua sarà abilitato dopo aver concesso le
+        autorizzazioni necessarie sopra indicate.
+      youCanChangeAnyTime: È possibile modificare la fonte di conteggio dei passi
+        da <c>Impostazioni di gioco</c> in qualsiasi momento.
+      changeStepCountingSource: Cambia fonte di conteggio dei passi
+      stepCountingSource: Fonte di conteggio dei passi
+    deviceSource:
+      samsungHealth: Samsung Health
+      featureDisabled: La modifica delle fonti di input è stata disabilitata da remoto
+        per il momento. Verrà utilizzato il contapassi predefinito del telefono.
+      phone: Telefono
+      appleWatch: Apple Watch
+      watch: Altri dispositivi indossabili
+      watchAndroid: Health Connect
+    deviceInfo:
+      watch: "WalkScape legge i tuoi passi da <c>Apple Health</c>, dove vengono sincronizzati
+        dal tuo <icon i=\"Watch small\" /> <c>orologio</c>. A seconda del produttore,
+        potrebbe essere necessario sincronizzare manualmente i tuoi passi da un'app
+        separata a <c>Apple Health</c>.\n\n<bp /> <c i=2>Potrebbe essere necessario
+        sincronizzare manualmente i tuoi passi con Apple Health tramite altre applicazioni</c>
+        affinché vengano conteggiati in WalkScape.\n\n<bp /> Il processo di sincronizzazione
+        dei passi con <c>Apple Health</c> dipende dal produttore. Ciò può richiedere
+        alcune impostazioni aggiuntive e conoscenze tecniche.\n\n<bp /> È necessario
+        concedere un'autorizzazione aggiuntiva per leggere i dati da Apple Health
+        per collegare l'orologio.\n\n<bp /> Solo i passi segnalati dall'orologio vengono
+        registrati nel gioco.\n"
+      watchAndroid: "WalkScape legge i tuoi passi da <c>Health Connect</c>. Per sincronizzare
+        i passi dal tuo <icon i=\"Watch small\" /> <c>orologio</c>, devi installare
+        un'applicazione di terze parti che sincronizzi i tuoi passi con <c>Health
+        Connect</c>, come FitBit, Garmin Connect o Galaxy Health.\n\n<bp /> <c i=2>È
+        necessario sincronizzare i passi con Health Connect tramite altre applicazioni</c>
+        affinché i passi vengano conteggiati in WalkScape.\n\n<bp /> Il processo di
+        sincronizzazione dei passi con <c>Health Connect</c> dipende dal produttore.
+        Ciò può richiedere alcune impostazioni aggiuntive e conoscenze tecniche.\n\
+        \n<bp /> È necessario concedere autorizzazioni aggiuntive per leggere i dati
+        da <c>Health Connect</c> per collegare l'orologio.\n\n<bp /> Solo i passi
+        riportati dall'orologio vengono registrati nel gioco."
+      samsungHealth: "WalkScape legge i tuoi passi da <c>Samsung Health</c>. I tuoi
+        passi da tutti i tuoi <icon i=\"Watch small\" /> <c>dispositivi indossabili</c>
+        compatibili con Samsung Health e i passi dal tuo <icon i=\"Phone small\" />
+        <c>telefono</c> vengono sincronizzati con il gioco.\n\n<bp /> <c i=2>È necessario
+        sincronizzare i passi con Samsung Health tramite i dispositivi indossabili</c>
+        affinché vengano conteggiati in WalkScape.\n\n<bp /> È necessario concedere
+        autorizzazioni aggiuntive per leggere i dati da <c>Samsung Health</c> e sincronizzare
+        i passi con il gioco.\n\n<bp /> Solo i passi segnalati da Samsung Health vengono
+        registrati nel gioco."
+      phone: "<icon i=\"Phone small\" /> <c>Il telefono</c> è la fonte di conteggio
+        dei passi predefinita consigliata per WalkScape. Per attività sportive intense,
+        consigliamo di utilizzare <icon i=\"Watch small\" /> <c>un orologio</c> come
+        fonte di conteggio dei passi. Per la maggior parte dei giocatori, l'utilizzo
+        del <icon i=\"Phone small\" /> <c>telefono</c> è l'opzione migliore.\n\n<bp
+        /> <c i=1>I tuoi passi vengono aggiornati in tempo reale nel gioco mentre
+        cammini.</c>\n\n<bp /> Affinché i tuoi passi vengano conteggiati, <c>devi
+        avere il telefono con te</c>. Questo potrebbe essere difficile durante la
+        pratica di sport più intensi.\n"
+      appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> si differenzia
+        da alcuni <icon i=\"Watch small\" /> <c>altri orologi</c> in quanto sincronizza
+        periodicamente i tuoi passi con Apple Health. WalkScape legge i tuoi passi
+        da Apple Health che vengono sincronizzati dal tuo <icon i=\"Apple watch small\"\
+        \ /> <c>Apple Watch</c> o da qualsiasi altro orologio.\n\n<bp /> <c i=2>Apple
+        Watch sincronizza periodicamente i tuoi passi con Apple Health.</c> Non è
+        possibile vedere l'aggiornamento in tempo reale dei passi nel gioco e i passi
+        potrebbero essere visualizzati con un certo ritardo.\n\n<bp /> È necessario
+        concedere un'autorizzazione aggiuntiva per leggere i dati da Apple Health
+        per collegare l'orologio.\n\n<bp /> Nel gioco vengono registrati solo i passi
+        segnalati dall'orologio.\n"
   locales:
     phrases:
       chooseALanguage: Scegli una lingua dall'elenco sottostante.
@@ -264,3 +393,57 @@ singulars:
     phrases:
       startedNewActivity: Iniziata <object id="{activity}"/> in <object id="{location}"/>
       startedActivityNoLocation: Iniziata <object id="{activity}"/>
+  faction:
+    phrases:
+      openFaction: Apri fazione
+  abilities:
+    phrases:
+      holdToUse: Tieni premuto per usare
+      abilities: Abilità
+      useAbility: Usa abilità
+      useConsumable: Usa consumabile
+      alreadyHere: Ti trovi già in <object id="{location}"/>. Non è possibile utilizzare
+        l'abilità per viaggiare qui.
+      noAction: Nessuna azione
+      holdToCast: Tieni premuto per lanciare
+    info:
+      youHaveNoAbilities: <hl>Non hai abilità</hl>. Alcuni equipaggiamenti nel gioco
+        possono conferirti abilità che puoi usare per ottenere benefici immediati
+        nel gioco dopo un tempo di ricarica.
+      abilitiesInfo: Le abilità sono azioni speciali che puoi usare per ottenere benefici
+        immediati nel gioco. Le abilità hanno un tempo di ricarica che devi attendere
+        prima di poterle usare nuovamente.
+  wardrobe:
+    phrases:
+      noHeadwear: Non possiedi alcun copricapo.
+      noFaceAccessories: Non possiedi alcun accessorio per il viso.
+      noBackAccessories: Non possiedi alcun accessorio per la schiena.
+      noEyeAccessories: Non possiedi alcun accessorio per gli occhi.
+  gearSets:
+    phrases:
+      showAttributes: Mostra attributi
+      noActivitiesSelected: Nessuna attività selezionata
+  rewards:
+    phrases:
+      alreadyClaimed: Già rivendicato
+  cooldowns:
+    phrases:
+      followingMustBeTrueToTick: 'Affinché il tempo di ricarica diminuisca, devono
+        verificarsi le seguenti condizioni:'
+      followingMustBeTrueToUse: "I requisiti per l'utilizzo non sono soddisfatti:"
+  journal:
+    info:
+      jobInfo: I lavori sono <c>attività semplici e ripetibili</c> che puoi completare
+        per ottenere ricompense. Puoi accettare lavori dalle <c>bacheche dei lavori</c>
+        in varie località, come le città. Puoi avere tre lavori attivi contemporaneamente.
+  jobs:
+    phrases:
+      acceptedJobs: Lavori attualmente accettati <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      rewards: Ricompense per il completamento
+      youMustBeInLocationToCollect: Per ricevere i premi devi trovarti in <object
+        id="{obj}"/>.
+      currentlyAcceptedJobs: Lavori attualmente accettati
+      browseJobBoards: Cerca lavori
+  mainMenu:
+    loadingStates:
+      awaitingForRemoveConfig: In attesa di configurazione remota

@@ -149,6 +149,12 @@ singulars:
         desc: I pipistrelli lasciano la grotta volando verso nord-est. Seguendo i
           pipistrelli dalla loro dimora primaverile, correndo giorno e notte per trovare
           dove sarà la loro prossima dimora. Potresti non tornare qui per un po'.
+    wallisia:
+      shorelineScramble:
+        name: Arrampicata sulla costa
+        desc: Ti muovi lungo le creste della stretta costa e ti infili tra i relitti
+          e le formazioni rocciose della zona. Se perdessi l'equilibrio qui, finirai
+          con un bel tonfo nelle acque sottostanti.
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -180,6 +186,13 @@ singulars:
           cubetto di ghiaccio in qualcos'altro, sia esso funzionale o artistico. La
           fugacità di quest'opera d'arte è proporzionale alla temperatura ambiente,
           con una durata che varia da pochi minuti a permanente.
+    wallisia:
+      townReconstruction:
+        name: Ricostruzione della città
+        desc: Aiuti gli abitanti del paese nei loro progetti di manutenzione e ricostruzione
+          per garantire loro un alloggio adeguato. È un lavoro impegnativo che mette
+          alla prova le tue conoscenze di falegnameria, ma sembra migliorare costantemente
+          la situazione del paese.
   cooking:
     gdte:
       wineGrapeStomping:
@@ -252,14 +265,12 @@ singulars:
           le sue acque placide invitanti e promettenti.
         name: Pesca nello stagno
       seaFishingNet:
-        desc: Lungo il litorale invernale trovi un punto appartato e getti la rete
-          nelle acque calme e gelide, godendoti la tranquilla solitudine della pesca
-          in mare.
+        desc: Lungo la costa, trovi un posto appartato e getti la rete nelle acque
+          calme, godendoti la tranquilla solitudine della pesca in mare.
         name: Pesca in mare (Rete)
       seaFishingRod:
-        desc: Lungo il litorale invernale trovi un punto appartato e getti la lenza
-          nelle acque calme e gelide, godendoti la tranquilla solitudine della pesca
-          in mare.
+        desc: Lungo la costa, trovi un posto appartato e lanci la canna da pesca nelle
+          acque calme, godendoti la tranquilla solitudine della pesca in mare.
         name: Pesca in mare (Canna da pesca)
       seaFishingCage:
         desc: Una corrente ricca di sostanze nutritive porta nella zona ogni tipo
@@ -280,6 +291,21 @@ singulars:
         name: Pesca in mare (Lancia)
         desc: Con la lancia ben salda in mano, nuoti intorno al relitto, sempre vigile
           nel caso qualche grosso pesce osi avvicinarsi a distanza di tiro.
+    wallisia:
+      floodedRiverFishingRod:
+        name: Pesca in fiumi in piena (Canna)
+        desc: Lanci la tua canna da pesca nelle acque alluvionate del fiume, sperando
+          di catturare qualche pesce unico che si è adattato al nuovo ambiente.
+      isthmusSeaFishingNet:
+        name: Pesca in mare nell'istmo (rete)
+        desc: Nelle acque costiere dell'istmo, getti la tua rete con l'obiettivo di
+          catturare una varietà di creature che prosperano in questa zona.
+      ectoFishing:
+        name: Pesca dell'ectoplasma
+        desc: L'acqua qui brilla di tonalità strane e inquietanti che irradiano un'energia
+          spettrale. Ti chiedi cosa mangino i pesci qui e se stai usando gli strumenti
+          giusti per catturarli. La tua mente vaga al pensiero di provare a cucinarli
+          più tardi per vedere se sono commestibili.
   foraging:
     gdte:
       butterflyCatching:
@@ -379,6 +405,21 @@ singulars:
         name: Raccolta di alghe kelp
         desc: Circondato da un'abbondanza di alghe che ondeggiano intorno a te, le
           ispezioni meticolosamente una ad una prima di raccogliere con cura le migliori.
+    wallisia:
+      floodedFieldScavenging:
+        desc: Attraversi i campi bagnati alla ricerca di piante e materiali vitali
+          che sono riusciti a sopravvivere e persino a prosperare in questo ambiente
+          umido.
+        name: Pulizia dei campi allagati
+      dragonflyCatching:
+        name: Caccia alle libellule
+        desc: Usi la tua rete per inseguire e catturare le libellule che sfrecciano
+          rapidamente avanti e indietro in tutta l'area.
+      graveyardForaging:
+        desc: Cammini nel cimitero e cerchi oggetti particolari fuori posto che sono
+          stati portati via dalle inondazioni nella zona. Non è profanazione di tombe
+          se non sono più nella tomba, giusto?
+        name: Cercare nel cimitero
   mining:
     global:
       mineCoal:
@@ -469,6 +510,38 @@ singulars:
         desc: Attirato dalle meraviglie del passato, concentri la tua attenzione sulla
           ricerca di fossili antichi.
         name: Estrazione di fossili
+    wrentmark:
+      mineSilverOre:
+        name: Miniera di argento
+        desc: Con la coda dell'occhio, intravedi delle rocce argentate e ti metti
+          al lavoro per seguire il filone di minerale d'argento al loro interno.
+      mineGoldOre:
+        name: Estrazione di oro
+        desc: Notate dei bagliori dorati tra le rocce e vi mettete subito a scavare
+          nella speranza di trovare il filone principale.
+      mineAdamantOre:
+        name: Miniera di minerale adamantio
+        desc: Trovando davanti a te delle rocce dure e resistenti, tiri fuori la tua
+          attrezzatura migliore nel tentativo di estrarre il minerale dalla roccia.
+      minePetrifiumOre:
+        name: Miniera di minerale di petrifium
+        desc: Valuti le rocce viola di petrifium duro davanti a te e pianifichi il
+          percorso migliore per estrarre i minerali senza ferirti durante il processo.
+      mineCrystalShards:
+        name: Frammenti di cristallo minerale
+        desc: È un vero peccato tentare di estrarre minerali da rocce cristalline
+          così grandi e belle, ma i frammenti che ne derivano conservano comunque
+          la bellezza dell'originale.
+      mineGemRocksLow:
+        name: Estrazione di gemme (bassa)
+        desc: Una roccia che sembra contenere alcune tracce di gemme attira la tua
+          attenzione. Scavandola, forse ne troverai alcune.
+    wallisia:
+      mineEctoRocks:
+        desc: Affioramenti di grandi rocce che sembrano brillare dell'energia inquietante
+          e spettrale dell'area circostante. Le colpisci con il piccone nella speranza
+          di portarne via alcuni pezzi per lavorarli.
+        name: Estrarre rocce ectoplasmatiche
   smithing:
     jarvonia:
       horseshoeMaking:
@@ -533,6 +606,17 @@ singulars:
         desc: Colpisci il bambù con la tua ascia. Si sente uno scricchiolio molto
           soddisfacente.
         name: Taglia bamboo
+      cutEctoTrees:
+        name: Taglia gli alberi di ectoplasma
+        desc: "Gli alberi qui sembrano provenire da un altro mondo: il loro aspetto
+          inquietante e l'energia spettrale che emanano li rendono intimidatori anche
+          prima di provare ad abbatterli. Sei ansioso di lavorare i tronchi che ti
+          porteranno."
+      cutYewTrees:
+        name: Tagliare gli alberi di tasso
+        desc: Gli alberi di tasso sono robusti e richiedono uno sforzo maggiore prima
+          di poter essere abbattuti. Tuttavia, con il tempo, riesci ad abbatterli
+          e a tagliarli in tronchi.
   idle:
     desc: Non stai svolgendo alcuna attività. I tuoi passi vengono salvati in Passi
       Accumulati.
