@@ -16,7 +16,8 @@ singulars:
     text: Saavuta jokaisessa taidossa vähintään taso <numberProgress current="{current}"
       max="{max}" />.
   levelUpSkills:
-    text: Nosta taitotasojasi <numberProgress current="{current}" max="{max}" /> kertaa.
+    text: Taitojen kokonaistason on oltava <numberProgress current="{current}" max="{max}"
+      />.
   haveItemStack:
     text: Omista <object id="{obj}" alwaysShow="true" /> esineelle pino, jossa on
       esineitä vähintään <numberProgress current="{current}" max="{max}" />.
@@ -122,3 +123,16 @@ singulars:
     jarvoniaMap: Hanki <object id="item-map_of_jarvonia-86ba96b3-a845-4f5c-a054-04ec5146fb25"
       />.
     erdwiseMap: Hanki <object id="fa277527-585b-4a1d-bc73-a25fe1195017" />.
+  mainSkillType:
+    text: Kun käytät taitotyyppiä <skillType type="{type}"/>.
+  itemQualityEquipped:
+    text: Ylläsi on oltava vähintään <numberProgress current="{current}" max="{max}"
+      /> esinettä, joiden laatu on <itemQuality quality="{quality}" type="{type}"/>.
+    withoutType: Ylläsi on oltava vähintään <numberProgress current="{current}" max="{max}"
+      /> esinettä, joiden laatu on <itemQuality quality="{quality}" type="crafted"/>,
+      tai <itemQuality quality="{quality}" type="loot"/>.
+  keywordEquipped:
+    text: <object id="{obj}" /> on oltava käytössä.
+  keywordWithLevelEquipped:
+    text: Ylläsi on oltava <object id="{obj}" /> joka vaatii vähintään <skill skill="{skill}"/>tason
+      <numberProgress current="{current}" max="{max}" />.
