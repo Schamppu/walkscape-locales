@@ -57,6 +57,7 @@ maps:
       'account': Účet
       'character': Postava
       'accessibility': Dostupnost
+      'characterSpecific': Specifický pro postavu
     boolSettings:
       'showFpsCounter': Zobrazit FPS
       'leftHandedMode': Režim pro levou ruku
@@ -155,6 +156,17 @@ maps:
       'system': Systém
       'devblog': DevBlog
       'changelog': Seznam změn
+  skillTypes:
+    'combat': Boj
+    'utility': Užitečnost
+    'artisan': Řemesla
+    'gathering': Sběr
+  abilities:
+    types:
+      'active': Aktivní
+      'activity': Aktivita
+      'passive': Pasivní
+      'consumable': Spotřební materiál
 plurals:
   achievements:
     phrases:
@@ -375,6 +387,8 @@ singulars:
       noConsumables: Ve vašem batohu nejsou žádné spotřební materiály.
       noConsumableSelected: Není vybrán žádný spotřební materiál. Můžete si vybrat
         jeden z níže uvedených.
+      depositAll: Vše
+      hatchesInto: Líhne se do
     options:
       expandInventory: Rozšiřte batoh
       showGear: Zobrazit výbavu
@@ -394,6 +408,7 @@ singulars:
       owner: Majitel
       noRoutesFromLocation: Žádné cestovní cíle z <object id="{from}"/>.
       showingRoutesFrom: Cestovní cíle z <object id="{from}"/>.
+      escape: Únik
   worldMap:
     phrases:
       youHaveNotExplored: Toto místo jsi ještě neprozkoumal. Informace o této lokalitě
@@ -514,6 +529,8 @@ singulars:
       unequipGear: Sundat výbavu
       unequipTools: Odložit nářadí
       importedGearSetDefaultName: Vložit sadu vybavení
+      reorderGearSets: Uspořádat sady vybavení
+      showItems: Zobrazit položky
     errors:
       keywordError: 'Sada výbavy již obsahuje: <object id="{keyword}" />'
       duplicateItem: Předmět je již v sadě výbavy
@@ -533,6 +550,8 @@ singulars:
       gearSetManageShortDesc: Chcete-li vytvořit, importovat nebo upravit sady vybavení,
         stiskněte <c i=0>Spravovat</c>.
       noGearSets: Zatím jste nevytvořili žádné sady výstroje.
+      gearSetReorderDesc: Pořadí sad vybavení můžete změnit jejich přetažením v seznamu
+        níže.
   pfpCreation:
     buttons:
       enableFaceAccessory: Povolit doplněk obličeje
@@ -681,6 +700,7 @@ singulars:
       logIn: Přihlásit se
       register: Zaregistrujte se
       welcomeToWalkscape: Vítejte ve WalkScape, <hl>cizinče</hl>. Přihlaste se prosím.
+      restart: Restartovat
     isolates:
       workerIsolate: Izolace pracovníka
       mainIsolate: Hlavní izolát
@@ -719,6 +739,21 @@ singulars:
       locationIsUnknown: Místo je neznámé. Jakmile toto místo prozkoumáte, uvidíte
         zde aktivity.
       activitiesInLocation: Dostupné aktivity v <object id="{location}"/>
+      savedStepsUsed: Použité uložené kroky
+      inputs: Vstupy
+      workEfficiency: Efektivita práce
+      maxWorkEfficiency: Maximální ektivita práce
+      fromOverLevels: Za překročení úrovně <numberProgress current="{current}" max="{max}"
+        />
+      agilityBonus: Úroveň hbitosti <c>{level}</c>
+      fromGear: Vybavená výbava
+      fromServices: Bonus za službu
+      fromCollectibles: Sběratelské předměty
+      fromConsumables: Spotřební materiál
+      changeActivity: Změnit aktivitu
+      abilities: Schopnosti
+      baseEfficiency: Základní účinnost
+      fromOverencumbered: Přetížený
     info:
       savedSteps: Máte uložené kroky, které se právě vyčerpávají. Každý krok se počítá
         jako dva, dokud se všechny uložené kroky nevyčerpají.
@@ -731,6 +766,9 @@ singulars:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> zkušenosti
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} sběratelských předmětů</c>
         které lze najít
+    options:
+      completeUntilActions: Dokončit pro určitý počet akcí
+      numberOfActions: Počet akcí
   wardrobe:
     phrases:
       noBackAccessories: Nevlastníte žádné doplňky na záda.
@@ -942,6 +980,8 @@ singulars:
       holdToCast: 'Podržením použijete'
       holdToUse: Podržte pro použití
       useConsumable: Použít spotřební materiál
+      alreadyHere: Již jste v <object id="{location}"/>. Schopnost nelze použít k
+        cestování sem.
     info:
       abilitiesInfo: Schopnosti jsou speciální akce, které můžete použít k získání
         okamžitých výhod ve hře. Schopnosti mají dobu obnovení, na kterou musíte počkat,
@@ -956,6 +996,11 @@ singulars:
       cooldownReady: 'Čas obnoveni: Připraveno'
       noCooldown: Žádný čas obnovení.
       followingMustBeTrueToTick: 'Pro zkrácení doby čekání musí být splněny tyto podmínky:'
+      cooldown: Doba obnovení
+      source: Zdroj
+      requirements: Požadavky
+      cooldownRequirements: Požadavky na obnovení
+      charges: Nabití
   faction:
     phrases:
       openFaction: Otevřít frakci
@@ -987,6 +1032,8 @@ singulars:
       switchingToGearSet: Změnit výbavu na <c>{name}</c>
       activityInLocation: <object id="{activity}"/> v <object id="{location}"/>
       noPathFound: Nenalezena žádná cesta k cíli.
+      forXActions: Provádíte <c>{count}</c> akcí
+      inputNotMet: Vstupní požadavky nesplněny
     suggestedOptions:
       startTraveling: Cestování
       startActivity: Aktivita
