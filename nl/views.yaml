@@ -124,7 +124,7 @@ variants: Varianten, noVariantSelected: Geen variant geselecteerd, resetToDefaul
 standaard terugzetten, colorOptions: Kleuropties, race: Ras, selectedVariant: 'Variant
 {index} geselecteerd', homeRegion: Thuisregio, variant: 'Variant {number}'}}, activity: {
 phrases: {notAffectingTraveling: (geen invloed op reisefficiëntie), workEfficiencyPenalty: '<icon
-i="Work efficiency"/>Globale werkefficiëntie <c>-{penalty}%</c>', inventoryIsOverLimit: Inventaris
+i="Work efficiency"/>Basiswerkefficiëntie <c>-{penalty}%</c>', inventoryIsOverLimit: Inventaris
 is over het limiet!, noActivity: Geen activiteit, savedSteps: Bewaarde stappen, consumables: Verbruiksartikelen,
 stopWhenOverEncumbered: Stop wanneer overbelast, options: Opties, requirements: Vereisten,
 rewards: Beloningen, levelActivity: 'Level <c>{level}</c> <object id="{skill}"/> activiteit',
@@ -133,23 +133,25 @@ en activiteit starten, cantStartActivity: Kan activiteit niet starten, requireme
 niet voldaan, noActivitiesInLocation: 'Er zijn geen activiteiten in <object id="{location}"/>.',
 locationIsUnknown: 'Locatie is onbekend. Zodra je deze locatie verkend hebt, kun je
 de activiteiten hier zien.', activitiesInLocation: 'Beschikbare activiteiten in <object
-id="{location}"/>', guideTip: Tip van de dag}, info: {noActivity: 'Momenteel geen
-activiteit geselecteerd. <hl>Kies er hieronder een</hl>, of swipe naar links om alle
-beschikbare activiteiten op deze locatie te zien.', savedSteps: Je hebt bewaarde stappen
-die verbruikt worden. Elke stap telt voor twee totdat alle bewaarde stappen op zijn.,
-consumablesUsage: Je kunt <c>voedsel</c> en een <c>elixer</c> kiezen om te nuttigen
-tijdens activiteiten.}, rewards: {experience: '<bp /><c>{xp} </c><object id="{skill}"/>
-ervaring', collectibles: '<bp /><icon i="Collectibles"/><c>{count} verzamelobjecten</c>
-te vinden'}}, abilities: {phrases: {abilities: Abilities, useAbility: Gebruik ability,
-holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt houden om te gebruiken,
-noAction: Geen actie, useConsumable: Gebruik verbruiksartikel}, info: {abilitiesInfo: Abilities
-zijn speciale acties die je direct een voordeel in het spel geven. Abilities hebben
-een cooldown waar je op moet wachten voordat je de ability opnieuw kunt gebruiken.,
-youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>. Bepaalde uitrusting in het spel
-geven je abilities die je kunt gebruiken om direct een voordeel te verkrijgen, met
-een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten om te
-gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet voldaan
-worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
+id="{location}"/>', guideTip: Tip van de dag, savedStepsUsed: Bewaarde stappen gebruikt,
+inputs: Invoer}, info: {noActivity: 'Momenteel geen activiteit geselecteerd. <hl>Kies
+er hieronder een</hl>, of swipe naar links om alle beschikbare activiteiten op deze
+locatie te zien.', savedSteps: Bewaarde stappen voorkopen dat je stappen verspilt
+en worden aangevuld door te lopen zonder een activiteit actief te hebben. Ze worden
+gebruikt door stappen die je zet te verdubbelen wanneer je weer een activiteit actief
+hebt., consumablesUsage: Je kunt <c>voedsel</c> en een <c>elixer</c> kiezen om te
+nuttigen tijdens activiteiten.}, rewards: {experience: '<bp /><c>{xp} </c><object
+id="{skill}"/> ervaring', collectibles: '<bp /><icon i="Collectibles"/><c>{count}
+verzamelobjecten</c> te vinden'}}, abilities: {phrases: {abilities: Abilities, useAbility: Gebruik
+ability, holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt houden
+om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel}, info: {
+abilitiesInfo: Abilities zijn speciale acties die je direct een voordeel in het spel
+geven. Abilities hebben een cooldown waar je op moet wachten voordat je de ability
+opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>. Bepaalde
+uitrusting in het spel geven je abilities die je kunt gebruiken om direct een voordeel
+te verkrijgen, met een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten
+om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet
+voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
 cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown.}}, journal: {phrases: {
 jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare taken</c>
 die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren vanaf <c>prikborden</c>
