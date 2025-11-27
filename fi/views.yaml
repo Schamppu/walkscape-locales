@@ -97,6 +97,7 @@ maps:
       'showDailyTips': Näytä päivän pikkuvinkit
       'showStepSourceInActivityView': Näytä askelten lähteen valinta Toiminta-näkymässä
       'activityInformationOpen': Näytä lisätietoa toiminnasta
+      'toggleAgilityXp': Estä ketteryyskokemus matkustamisesta
     leaderboardFilter:
       'everyone': Kaikki
       'friends': Kaverit
@@ -106,6 +107,7 @@ maps:
       'gameplay': Pelattavuus
       'account': Tili
       'character': Hahmo
+      'characterSpecific': Hahmokohtainen
     enumSettings:
       'language': Kieli
       'leaderboardFilter': Näytä
@@ -163,6 +165,18 @@ maps:
       'changelog': Muutosloki
       'update': Päivitys
       'system': Järjestelmä
+  skillTypes:
+    'artisan': Käden taidot
+    'combat': Taistelu
+    'utility': Yleiset
+    'gathering': Keräily
+  abilities:
+    types:
+      'active': Aktiivinen
+      'passive': Passiivinen
+      'consumable': Hyödyke
+      'activity': Toiminta
+      'emergency': Hätätilanne
 plurals:
   activity:
     phrases:
@@ -380,8 +394,10 @@ singulars:
       itemsInUse: Olet valinnut esineitä, jotka ovat jo käytössä. Käytössä olevia
         esineitä ei voi pudottaa tai laittaa pankkiin.
       requirementsNotMet: Vaatimukset eivät täyty.
-      checkBank: Avaa pankki
+      checkBank: Pankki
       slotDoesntExist: Tätä esinetilaa ei ole enää olemassa.
+      depositAll: Kaikki
+      hatchesInto: Kuoriutuessaan
     options:
       showConsumables: Näytä hyödykkeet
       consenseInventory: Tiivistä reppunäkymä
@@ -402,6 +418,7 @@ singulars:
       showingRoutesFrom: Matkustusreitit paikasta <object id="{from}"/>.
       noRoutesFromLocation: Matkakohteita paikasta <object id="{from}"/> ei löytynyt.
       owner: Omistaja
+      escape: Pakene
   pfpCreation:
     buttons:
       choose: Valitse
@@ -491,7 +508,7 @@ singulars:
       stopWhenOverEncumbered: Lopeta repun ylitäyttyessä
       options: Vaihtoehdot
       inventoryIsOverLimit: Reppusi on ylikuormittunut!
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Yleinen työtehokkuus <c>-{penalty}%</c>
+      workEfficiencyPenalty: Yleinen työtehokkuus <c>-{penalty}%</c>
       notAffectingTraveling: (ei vaikuta matkustuksen työtehokkuuteen)
       guideTip: Päivän pikkuvinkki
       activitiesInLocation: Saatavilla olevat aktiviteetit, <object id="{location}"/>
@@ -506,16 +523,34 @@ singulars:
       noActivitiesInLocation: Kohteessa <object id="{location}"/> ei ole aktiviteetteja.
       locationIsUnknown: Sijainti on tuntematon. Kun olet käynyt tässä paikassa, voit
         nähdä siellä saatavilla olevat aktiviteetit.
+      savedStepsUsed: Säästettyjä askeleita käytetty
+      inputs: Syötteet
+      workEfficiency: Työtehokkuus
+      maxWorkEfficiency: Maksimityötehokkuus
+      fromOverLevels: Taidot ylittävät vaatimustason <numberProgress current="{current}"
+        max="{max}" />
+      agilityBonus: Ketteryystaso <c>{level}</c>
+      fromServices: Bonus paikallisista palveluista
+      fromCollectibles: Keräilyesineistä
+      fromConsumables: Hyödykkeistä
+      abilities: Kyvyt
+      fromGear: Käytössä olevat varusteet
+      changeActivity: Muuta toimintaa
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
-      savedSteps: Sinulla on käytössä säästettyjä askelia. Jokainen askeleesi lasketaan
-        kahtena kunnes kaikki säästetyt askeleet ovat kulutettu.
+      savedSteps: Jos keräät askelia kun sinulla ei ole mitään tehtävää käynnissä,
+        askeleesi eivät mene hukkaan vaan ne säästetään. Kun hahmosi tekee taas jotain,
+        kaikki askeleesi lasketaan kaksinkertaisina kunnes säästetyt askeleet on kulutettu
+        loppuun.
       noActivity: Et ole valinnut mitään aktiviteettia. <hl>Valitse jokin alla olevista</hl>,
         tai pyyhkäise vasemmalle nähdäksesi kaiken mitä voit tehdä tässä paikassa.
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> kokemusta
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} keräilyesinettä</c>,
         jotka on mahdollista löytää
+    options:
+      completeUntilActions: Toista tietty määrä kertoja
+      numberOfActions: Toimintojen määrä
   character:
     phrases:
       skills: Taidot
@@ -659,6 +694,8 @@ singulars:
       noAction: Ei toimenpidettä
       holdToCast: Pidä pohjassa loihtiaksesi
       holdToUse: Pidä pohjassa käyttääksesi
+      alreadyHere: Nykysijaintisi on jo <object id="{location}"/>. Et voi käyttää
+        kykyä tänne matkustamiseen.
   cooldowns:
     phrases:
       followingMustBeTrueToTick: 'Seuraavien täytyy olla totta jotta palautumisaika
@@ -667,6 +704,11 @@ singulars:
       cooldownReady: 'Palautumisaika: Valmis'
       noCooldown: Ei vaadi palautumisaikaa.
       followingMustBeTrueToUse: 'Vaatimukset käyttämiseen eivät täyty:'
+      cooldown: Palautumisaika
+      source: Lähde
+      charges: Latauksia
+      requirements: Vaatimukset
+      cooldownRequirements: Palautumisajan vaatimukset
   trade:
     phrases:
       total: Yhteensä
@@ -838,6 +880,7 @@ singulars:
         sisään.
       pleaseEnterCredentials: Syötä WalkScape-tilisi tunnukset.
       testFlight: Voit ladata uusimman version <c>TestFlightista</c>.
+      restart: Käynnistä uudelleen
     loadingStates:
       localizationFiles: Ladataan kielitiedostoja
       gameVersion: Haetaan pelin versiota
@@ -923,7 +966,7 @@ singulars:
       last: Häntä
       loadingPage: Ladataan sivua...
       totalSteps: Kokonaisaskelmäärä
-      totalLevel: Kokonaistaso
+      totalLevel: Taitojen kokonaistaso
       totalExperience: Kokemus yhteensä
   shop:
     phrases:
@@ -969,8 +1012,10 @@ singulars:
       unequipGear: Riisu varusteet
       unequipTools: Riisu työkalut
       noItemSelected: Ei esinettä valittuna
-      newSetDefaultName: Minun Uusi Varustesettini
-      importedGearSetDefaultName: Tuotu Varustesetti
+      newSetDefaultName: Minun uusi varustesettini
+      importedGearSetDefaultName: Tuotu varustesetti
+      reorderGearSets: Järjestä varustesetit uudelleen
+      showItems: Näytä osat
     errors:
       keywordError: 'Varustesetissä on jo: <object id="{keyword}" />'
       duplicateItem: Esine on jo varustesetissä
@@ -991,6 +1036,8 @@ singulars:
       noGearSets: Et ole luonut vielä yhtään varustesettiä.
       gearSetManageShortDesc: Paina <c i=0>Hallinnoi</c>-nappia luodaksesi, muokataksesi
         ja viedäksesi varustesettejäsi.
+      gearSetReorderDesc: Voit uudelleenjärjestää varustesettisi raahaamalla ja pudottamalla
+        niitä allaolevalla listalla.
   rumors:
     phrases:
       unlockedWalkpediaEntries: Walkpediaan lisätyt sivut
@@ -1021,6 +1068,8 @@ singulars:
       noGearSetFound: Valittua varustesettiä ei löytynyt, oletko poistanut sen?
       activityInLocation: <object id="{activity}"/> kohteessa <object id="{location}"/>
       noPathFound: Kohteeseen ei löytynyt reittiä.
+      forXActions: Toistetaan <c>{count}</c> kertaa
+      inputNotMet: Syötevaatimukset eivät täyty
     options:
       depositUnlockedItems:
         desc: Tallettaa kaikki lukitsemattomat esineet repustasi pankkiin, jos sellainen
