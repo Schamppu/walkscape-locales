@@ -15,7 +15,7 @@ maps:
     "0": Repun ylitäyttyminen hidastaa aktiviteettejasi, muttei vaikuta matkustamiseen.
     "1": Perustodennäköisyys löytää <hl>oiva</hl> materiaali on <hl>1/100</hl>, ja
       voit parantaa sitä paremmilla varusteilla ja työkaluilla.
-    "17": <hl>Käsityön tulos</hl> auttaa parantamaan todennäköisyyttä, että valmistat
+    "17": <hl>Käsityön laatu</hl> auttaa parantamaan todennäköisyyttä, että valmistat
       korkealaatuisemman esineen, ja kokonaisjakauman näkee <hl>valmistusnäkymän</hl>
       <hl>Reseptit</hl>-välilehdeltä.
     "6": Pienoiskartan painallus näytön oikeassa yläkulmassa avaa täysikokoisen kartan,
@@ -41,4 +41,15 @@ maps:
     "16": Löysitkö jotain, mikä on rikki, tai onko sinulla muita ehdotuksia? Kerro
       meille <c c="purple">Discordissa</c>! Raporttisi auttavat parantamaan peliä!
     "19": Jos taitosi ylittää <hl>reseptin</hl> pääasiallisen taidon minimivaatimuksen
-      <hl>valmistusnäkymässä</hl>, <hl>käsityön tuloksesi</hl> paranee.
+      <hl>valmistusnäkymässä</hl>, <hl>käsityösi laatu</hl> paranee.
+  skillTypes:
+    "gathering": Keräilytaitoihin kuuluu <skill skill="foraging"/>, <skill skill="fishing"/>,
+      <skill skill="mining"/> ja <skill skill="woodcutting"/>.
+    "artisan": Käden taitoihin kuuluvat <skill skill="cooking"/>, <skill skill="crafting"/>,
+      <skill skill="carpentry"/>, <skill skill="smithing"/> ja <skill skill="tinkering"/>.
+    "utility": Yleistaitoihin kuuluu <skill skill="agility"/>.
+singulars:
+  info:
+    inventoryFull: Reppusi on täynnä! Jos reppusi kantokyky ylittyy, kaikki toiminnot
+      matkustamista lukuunottamatta hidastuvat. Voit joko mennä pankkiin säilömään
+      esineitäsi, tai pudottaa niitä repustasi tehdäksesi tilaa.
