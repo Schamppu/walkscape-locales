@@ -3,24 +3,111 @@ singulars:
     foraging:
       completed: Ты чувствуешь светящийся шар и на миг начинаешь видеть лес полный
         ягод и грибов. Ты чувствуешь что их поиск будет лёгок.
+      desc: Даёт опыт к навыку <skill skill="foraging"/>.
     smithing:
       completed: Ты дотрагиваешься до шара и слышишь отклики молота, бьющего по тебе
         ,как по металлу. Голова немного побаливает, но ты понимаешь кузнечное дело
         лучше.
+      desc: Даёт опыт к навыку <skill skill="smithing"/>.
     trinketry:
       completed: Ты кладёшь руку на шар и начинаешь видеть калейдоскоп из драгоценных
         камней, плывущий прямо над тобой. Теперь ты можешь видеть узоры и плоскости,
         которые прежде не рассматривал.
+      desc: Даёт опыт к навыку <skill skill="trinketry"/>.
     woodcutting:
       completed: Ты кладёшь свою руку на шар и картины жизни дерева, от ростка до
         бревна, заполняют твой разум. Ты смахиваешь слезу и ощущаешь, что рубка деревьев
         будет даваться тебе легче, чем раньше.
+      desc: Даёт опыт к навыку <skill skill="woodcutting"/>.
     cooking:
       completed: Ты дотрагиваешься до шара с кастрюлей внутри и он почти обжигает
         твои пальцы. Ты чувствуешь что узнал что-то новое в готовке.
+      desc: Даёт опыт к навыку <skill skill="cooking"/>.
+      name: 'Мемосфера: Кулинария'
     mining:
       completed: Ты дотрагиваешься до сверкающего шара и начинаешь слышать звуки раскопок.
         Ты думаешь что сможешь копать эффективнее.
+      desc: Даёт опыт к навыку <skill skill="mining"/>.
     agility:
       completed: Ты дотрагиваешься до светящегося шара и понимаешь что твоя форма
         слегка улучшилась.
+      desc: Даёт опыт к навыку <skill skill="agility"/>.
+      name: 'Мемосфера: Ловкость'
+    carpentry:
+      desc: Даёт опыт к навыку <skill skill="carpentry"/>.
+      name: 'Мемосфера: Плотничество'
+      completed: 'Ты дотрагиваешься до сферы и предаёшься размышлениям: как воплотить
+        в дереве совершенство формы и научиться распиливать доски с точностью мастера.'
+    fishing:
+      desc: Даёт опыт к навыку <skill skill="fishing"/>.
+    crafting:
+      name: 'Мемосфера: Изготовление'
+      desc: Даёт опыт к навыку <skill skill="crafting"/>.
+  takeMeHome:
+    name: Верни меня домой
+    completed: Ты трешь <item id="item-ring_of_homesickness-dfd0d52b-c064-4860-ae77-2f9c0cab7382"
+      /> и внезапно обнаруживаешь себя в <location i="location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654"
+      />.
+    desc: Телепортирует вас в <object id="location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654"
+      />.
+  downGoesTheTrees:
+    desc: Выполняет {count} действий <skill skill="woodcutting"/> мгновенно.
+    name: Валите их всех
+    completed: Ты размахиваешь <item id="item-axe_of_destruction-a493952f-18b1-442b-be16-0385a014c01c"
+      /> и деревья перед вами падают с одного удара. Вам кажется, что этим топором
+      вы могли бы вырубить целый лес.
+  rockAndRoll:
+    desc: Создает 5 случайных <hl>самоцветов</hl>.
+    name: Камни с неба
+    completed: Ты прикасаешься к амулету в форме звезды — и в твоей ладони <hl>возникают
+      несколько драгоценных камней</hl>.
+  needToGoFast:
+    desc: Выполняет {count} <hl>перемещений</hl> в одно мгновение.
+    completed: Подпрыгнув несколько раз, ты активируешь <item id="item-shoes_of_escape-bd6be47c-373b-4557-ba9f-35fb62e7d390"
+      /> — и становишься невероятно быстрым. Кажется, ты сможешь бежать бесконечно,
+      пока не спадёт эффект.
+    name: Семимильными шагами
+  mermaidsNeedMe:
+    desc: Телепортирует вас в <object id="location-vastalume-cf2f38ec-88d4-4129-a164-4deb5f0955d5"
+      />.
+    completed: Ты трешь <item id="item-algae_ring-751c337a-cb19-4243-abae-ba6468446ab8"
+      /> и внезапно обнаруживаешь себя в <object id="location-vastalume-cf2f38ec-88d4-4129-a164-4deb5f0955d5"
+      />.
+    name: Я водяной, я водяной
+  activities:
+    emergencySwimSyrenthia:
+      name: Экстренное спасение из воды!
+      desc: Вы выплываете в <object id="location-port_skildar-2b12283e-6309-45af-8332-fb470267f510"
+        />.
+    springBatTracking:
+      name: Отслеживание летучих мышей
+      desc: Вы идете за летучими мышами в <object id="location-bog_top-cc54735e-42e0-4d32-9f26-de0e5e63979b"
+        />.
+    emergencySwampEscape:
+      name: Экстренное спасение из воды!
+      desc: Вы сбегаете в <object id="location-old_arena_ruins-0f86b9e3-d5b9-4255-b541-b4db5fa93af2"
+        />.
+    exploreUnderwaterCave:
+      name: Исследование подводной пещеры
+    emergencySwampSwimEscape:
+      name: Экстренное спасение из воды!
+      desc: Вы выплываете в <object id="location-old_arena_ruins-0f86b9e3-d5b9-4255-b541-b4db5fa93af2"
+        />.
+    exploreBogBottom:
+      name: Исследование болотного дна
+    runForYourLifeSwamp:
+      name: Спасение жизни!
+      desc: Вы сбегаете в <object id="location-old_arena_ruins-0f86b9e3-d5b9-4255-b541-b4db5fa93af2"
+        />.
+    ventureIntoTheWitchesWoods:
+      name: Посещение леса
+      desc: Вы отправляетесь в лес <object id="location-witches_woods-ef7e2f92-46ba-48e2-8f82-a9887fcec517"
+        />.
+    ventureIntoTheHalfmawHideout:
+      name: Посещение убежища
+      desc: Вы посещаете убежище <object id="location-halfmaw_hideout-4326bafb-9918-12ea-grsd-d39a394b686a"
+        />.
+    ventureIntoTheBog:
+      name: Посещение болота
+      desc: Вы отправляетесь в <object id="location-bog_top-cc54735e-42e0-4d32-9f26-de0e5e63979b"
+        />.
