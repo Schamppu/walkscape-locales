@@ -33,6 +33,8 @@ maps:
       raceTypes:
         human: Umano
         none: Nessuno
+  skillTypes:
+    'artisan': Artigiano
 plurals:
   achievements:
     phrases:
@@ -172,7 +174,7 @@ singulars:
       noActivitiesInLocation: Non ci sono attività in <object id="{location}"/>.
       activitiesInLocation: Attività disponibili in <object id="{location}"/>
       guideTip: Consiglio del giorno
-      workEfficiencyPenalty: Efficienza lavorativa globale <c>-{penalty}%</c>
+      workEfficiencyPenalty: Efficienza lavorativa di base <c>-{penalty}%</c>
       stopWhenOverEncumbered: Fermo quando si è sovraccarichi
       levelActivity: Livello <c>{level}</c> <object id="{skill}"/> di attività
       savedStepsUsed: Passi salvati utilizzati
@@ -316,13 +318,13 @@ singulars:
       changeStepCountingSource: Cambia fonte di conteggio dei passi
       stepCountingSource: Fonte di conteggio dei passi
     deviceSource:
-      samsungHealth: Samsung Health
+      samsungHealth: Samsung health
       featureDisabled: La modifica delle fonti di input è stata disabilitata da remoto
         per il momento. Verrà utilizzato il contapassi predefinito del telefono.
       phone: Telefono
-      appleWatch: Apple Watch
+      appleWatch: Apple watch
       watch: Altri dispositivi indossabili
-      watchAndroid: Health Connect
+      watchAndroid: Health connect
     deviceInfo:
       watch: "WalkScape legge i tuoi passi da <c>Apple Health</c>, dove vengono sincronizzati
         dal tuo <icon i=\"Watch small\" /> <c>orologio</c>. A seconda del produttore,
