@@ -148,16 +148,16 @@ hebt., consumablesUsage: Je kunt <c>voedsel</c> en een <c>elixer</c> kiezen om t
 nuttigen tijdens activiteiten.}, rewards: {experience: '<bp /><c>{xp} </c><object
 id="{skill}"/> ervaring', collectibles: '<bp /><icon i="Collectibles"/><c>{count}
 verzamelobjecten</c> te vinden'}, options: {completeUntilActions: Voltooi specifiek
-aantal acties}}, abilities: {phrases: {abilities: Abilities, useAbility: Gebruik ability,
-holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt houden om te gebruiken,
-noAction: Geen actie, useConsumable: Gebruik verbruiksartikel}, info: {abilitiesInfo: Abilities
-zijn speciale acties die je direct een voordeel in het spel geven. Abilities hebben
-een cooldown waar je op moet wachten voordat je de ability opnieuw kunt gebruiken.,
-youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>. Bepaalde uitrusting in het spel
-geven je abilities die je kunt gebruiken om direct een voordeel te verkrijgen, met
-een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten om te
-gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet voldaan
-worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
+aantal acties, numberOfActions: Aantal acties}}, abilities: {phrases: {abilities: Abilities,
+useAbility: Gebruik ability, holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt
+houden om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel},
+info: {abilitiesInfo: Abilities zijn speciale acties die je direct een voordeel in
+het spel geven. Abilities hebben een cooldown waar je op moet wachten voordat je de
+ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>.
+Bepaalde uitrusting in het spel geven je abilities die je kunt gebruiken om direct
+een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten
+om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet
+voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
 cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown.}}, journal: {phrases: {
 jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare taken</c>
 die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren vanaf <c>prikborden</c>
@@ -410,17 +410,18 @@ naar uitrustingsset <c>{name}</c>', activityInLocation: '<object id="{activity}"
 in <object id="{location}"/>', queue: Wachtrij, queuedActions: Acties in wachtrij,
 travelingTo: '<object id="{from}"/> naar <object id="{to}"/>', untilInventoryFull: Tot
 inventaris vol is, noGearSetFound: 'Gekozen uitrustingsset niet gevonden, heb je deze
-verwijderd?', noPathFound: Geen pad naar de bestemming gevonden.}, options: {withdrawGearSet: {
-text: Uitrustingsset opnemen, desc: Haalt een uitrustingsset uit de bank als er een
-beschikbaar is op een van de locaties waar je doorheen komt.}, switchGearSet: {text: Wisselen
-naar uitrustingsset, desc: Wisselen naar een geselecteerde uitrustingsset voordat
-deze actie start.}, depositUnlockedItems: {text: Ontgrendelde voorwerpen storten,
-desc: Stort alle ontgrendelde voorwerpen in je inventoris naar de bank als er een
-beschikbaar is in een van de locaties waar je doorheen komt.}, removeFromQueue: {
-text: Verwijderen uit wachtrij, desc: Verwijder deze actie en alle acties erna uit
-de wachtrij.}, cancelGearSetSwitch: {text: Wisselen van uitrustingsset annuleren,
-desc: Annuleert het wisselen van uitrustingsset voor deze actie.}}, types: {traveling: Reizen,
-activity: Activiteit, crafting: Ambacht}, suggestedOptions: {startActivity: Activiteit,
+verwijderd?', noPathFound: Geen pad naar de bestemming gevonden., forXActions: 'Voor
+<c>{count}</c> acties aan het doen', inputNotMet: Invoervereisten niet voldaan}, options: {
+withdrawGearSet: {text: Uitrustingsset opnemen, desc: Haalt een uitrustingsset uit
+de bank als er een beschikbaar is op een van de locaties waar je doorheen komt.},
+switchGearSet: {text: Wisselen naar uitrustingsset, desc: Wisselen naar een geselecteerde
+uitrustingsset voordat deze actie start.}, depositUnlockedItems: {text: Ontgrendelde
+voorwerpen storten, desc: Stort alle ontgrendelde voorwerpen in je inventoris naar
+de bank als er een beschikbaar is in een van de locaties waar je doorheen komt.},
+removeFromQueue: {text: Verwijderen uit wachtrij, desc: Verwijder deze actie en alle
+acties erna uit de wachtrij.}, cancelGearSetSwitch: {text: Wisselen van uitrustingsset
+annuleren, desc: Annuleert het wisselen van uitrustingsset voor deze actie.}}, types: {
+traveling: Reizen, activity: Activiteit, crafting: Ambacht}, suggestedOptions: {startActivity: Activiteit,
 startCrafting: Maken, startTraveling: Reizen}, suggestions: {traveling: {onceYouArriveTo: 'Actie
 toevoegen aan wachtrij in <object id="{location}"/>?'}, crafting: {onceAllItemsAreCrafted: Wil
 je iets doen zodra all voorwerpen gemaakt zijn?, onceCertainRarityIsCrafted: Wil je
