@@ -53,8 +53,8 @@ singulars:
     text: У вас есть <icon i="money small"/> <numberProgress current="{current}" max="{max}"
       /> монет.
   levelUpSkills:
-    text: Повысьте уровень своих навыков <numberProgress current="{current}" max="{max}"
-      /> раз.
+    text: Требуется суммарный уровень навыков <numberProgress current="{current}"
+      max="{max}" />.
   overencumbered:
     text: Инвентарь переполнен.
   exploreRealm:
@@ -117,3 +117,14 @@ singulars:
       />.
   mainSkillType:
     text: Выполняя <skillType type="{type}"/>.
+  itemQualityEquipped:
+    text: Иметь в снаряжении <numberProgress current="{current}" max="{max}" /><itemQuality
+      quality="{quality}" type="{type}"/>.
+    withoutType: Иметь в снаряжении <numberProgress current="{current}" max="{max}"
+      /><itemQuality quality="{quality}" type="crafted"/> или <itemQuality quality="{quality}"
+      type="loot"/>.
+  keywordEquipped:
+    text: Требуется <object id="{obj}" />.
+  keywordWithLevelEquipped:
+    text: Чтобы использовать <object id="{obj}" />, необходим навык <skill skill="{skill}"/>
+      уровня <numberProgress current="{current}" max="{max}" />.

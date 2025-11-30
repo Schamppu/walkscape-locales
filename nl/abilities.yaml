@@ -34,12 +34,12 @@ singulars:
       name: 'Herinnerondo: Koken'
       desc: Geeft <skill skill="cooking"/> ervaring.
       completed: Je raakt de bol waar een pan in zit aan en brandt bijna je vingers.
-        Je voelt alsof je iets nieuws hebt geleerd over koken.
+        Het voelt alsof je iets nieuws hebt geleerd over koken.
     carpentry:
       name: 'Herinnerondo: Timmerwerk'
       desc: Geeft <skill skill="carpentry"/> ervaring.
-      completed: Je port in de bol en begint te peinzen over hoe je beter meubels
-        kunt maken en planken efficiënter kunt zagen.
+      completed: Je prikt met je vinger in de bol en begint te peinzen over hoe je
+        beter meubels kunt maken en planken efficiënter kunt zagen.
     crafting:
       name: 'Herinnerondo: Handenarbeid'
       desc: Geeft <skill skill="crafting"/> ervaring.
@@ -47,9 +47,81 @@ singulars:
     fishing:
       name: 'Herinnerondo: Vissen'
       desc: Geeft <skill skill="fishing"/> ervaring.
+      completed: Je legt je hand op de bol en opeens voelt je hoofd alsof het een
+        vissenkom is. Je begrijpt vissen nu beter.
+    foraging:
+      name: 'Herinnerondo: Foerageren'
+      desc: Geeft <skill skill="foraging"/> ervaring.
+      completed: Je raakt de gloeiende bol aan en hebt opeens een visioen van een
+        bos vol bessen en paddenstoelen. Het voelt alsof je die nu makkelijker zou
+        kunnen vinden.
+    mining:
+      name: 'Herinnerondo: Delven'
+      desc: Geeft <skill skill="mining"/> ervaring.
+      completed: Je raakt de gloeiende bol aan en hoort opeens pikhouwelen tegen gesteente
+        tikken. Het voelt alsof je efficiënter zou kunnen delven.
+    woodcutting:
+      completed: Je legt je hand op de bol en ervaart het leven van een boom, van
+        klein sprietje tot een blok hout. Je veegt een traan uit je oog en het voelt
+        alsof je efficiënter bomen zou kunnen kappen.
+      name: 'Herinnerondo: Houthakken'
+      desc: Geeft <skill skill="woodcutting"/> ervaring.
+    smithing:
+      name: 'Herinnerondo: Smeden'
+      desc: Geeft <skill skill="smithing"/> ervaring.
+      completed: Je prikt met je vinger in de bol en voelt je opeens als een ijzerstaaf
+        die tot een zwaard wordt gehamerd. Het doet een beetje pijn, maar het voelt
+        alsof je nu beter zou kunnen smeden.
+    trinketry:
+      completed: Je legt je hand op de bol en ziet opeens een kaleidoscoop aan edelstenen
+        vlak boven je zweven. Je ziet patronen en methodes die je nog nooit eerder
+        bedacht hebt.
+      name: 'Herinnerondo: Sierraderij'
+      desc: Geeft <skill skill="trinketry"/> ervaring.
   downGoesTheTrees:
     name: De Bomen Gaan Neer
     desc: Voltooit direct {count} <skill skill="woodcutting"/> acties.
     completed: Je zwaait met de <item id="item-axe_of_destruction-a493952f-18b1-442b-be16-0385a014c01c"
       /> en alle bomen die voor je staan vallen tegelijk om. Het voelt alsof je met
       deze bijl een heel bos om zou kunnen hakken.
+  activities:
+    emergencySwimSyrenthia:
+      name: Zwemmend Vluchten!
+      desc: Je zwemt naar <object id="location-port_skildar-2b12283e-6309-45af-8332-fb470267f510"
+        />.
+    springBatTracking:
+      name: Lentevleermuizen Achtervolgen
+      desc: Je volgt de vleermuizen naar <object id="location-bog_top-cc54735e-42e0-4d32-9f26-de0e5e63979b"
+        />.
+    emergencySwampEscape:
+      name: Drassend Vluchten!
+      desc: Je vlucht naar <object id="location-old_arena_ruins-0f86b9e3-d5b9-4255-b541-b4db5fa93af2"
+        />.
+    exploreUnderwaterCave:
+      name: Onderwatergrot Verkennen
+      desc: Je verkent de onderwatergrot en komt uit in <object id="location-bog_bottom-1532ca82-3608-4a2f-8e54-fc3d8f449f9c"
+        />.
+    emergencySwampSwimEscape:
+      name: Zwemmend Vluchten!
+      desc: Je zwemt naar <object id="location-old_arena_ruins-0f86b9e3-d5b9-4255-b541-b4db5fa93af2"
+        />.
+    exploreBogBottom:
+      name: Verken De Moerasbodem
+      desc: Je verkent de moerasbodem en komt terecht in <object id="location-underwater_cave-bf790ee1-9f85-44a2-ab5f-8f15c4e3ba85"
+        />.
+    ventureIntoTheBog:
+      name: Waag Je Het Moeras In
+      desc: Je waagt je het moeras in naar het <object id="location-bog_top-cc54735e-42e0-4d32-9f26-de0e5e63979b"
+        />.
+    runForYourLifeSwamp:
+      name: Ren Voor Je Leven!
+      desc: Je vlucht naar <object id="location-old_arena_ruins-0f86b9e3-d5b9-4255-b541-b4db5fa93af2"
+        />.
+    ventureIntoTheWitchesWoods:
+      name: Waag Je Het Bos In
+      desc: Je waagt je het <object id="location-witches_woods-ef7e2f92-46ba-48e2-8f82-a9887fcec517"
+        /> in.
+    ventureIntoTheHalfmawHideout:
+      name: Waag Je De Schuilplaats In
+      desc: Je waagt je de <object id="location-halfmaw_hideout-4326bafb-9918-12ea-grsd-d39a394b686a"
+        /> in.

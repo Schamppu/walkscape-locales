@@ -136,46 +136,50 @@ de activiteiten hier zien.', activitiesInLocation: 'Beschikbare activiteiten in 
 id="{location}"/>', guideTip: Tip van de dag, savedStepsUsed: Bewaarde stappen gebruikt,
 inputs: Invoer, workEfficiency: Werkefficiëntie, maxWorkEfficiency: Maximale werkefficiëntie,
 fromOverLevels: 'Een hoger level zijn <numberProgress current="{current}" max="{max}"
-/>'}, info: {noActivity: 'Momenteel geen activiteit geselecteerd. <hl>Kies er hieronder
-een</hl>, of swipe naar links om alle beschikbare activiteiten op deze locatie te
-zien.', savedSteps: Bewaarde stappen voorkopen dat je stappen verspilt en worden aangevuld
-door te lopen zonder een activiteit actief te hebben. Ze worden gebruikt door stappen
-die je zet te verdubbelen wanneer je weer een activiteit actief hebt., consumablesUsage: Je
-kunt <c>voedsel</c> en een <c>elixer</c> kiezen om te nuttigen tijdens activiteiten.},
-rewards: {experience: '<bp /><c>{xp} </c><object id="{skill}"/> ervaring', collectibles: '<bp
-/><icon i="Collectibles"/><c>{count} verzamelobjecten</c> te vinden'}}, abilities: {
-phrases: {abilities: Abilities, useAbility: Gebruik ability, holdToCast: Ingedrukt
-houden om uit te voeren, holdToUse: Ingedrukt houden om te gebruiken, noAction: Geen
-actie, useConsumable: Gebruik verbruiksartikel}, info: {abilitiesInfo: Abilities zijn
-speciale acties die je direct een voordeel in het spel geven. Abilities hebben een
-cooldown waar je op moet wachten voordat je de ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je
-hebt geen abilities</hl>. Bepaalde uitrusting in het spel geven je abilities die je
-kunt gebruiken om direct een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {
-phrases: {followingMustBeTrueToUse: 'Vereisten om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan
-het volgende moet voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown
-resterend:', cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown.}}, journal: {
-phrases: {jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare
-taken</c> die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren
-vanaf <c>prikborden</c> op verschillende locaties, zoals steden. Je kunt maximaal
-drie actieve klusjes hebben.'}}, treasury: {phrases: {noItems: Je hebt geen schatten
-om te openen. Je kunt schatkisten vinden bij verschillende activiteiten., openChest: Openen,
-openAll: Alles openen}}, jobs: {phrases: {rewards: Voltooiingsbeloningen, abandonJob: Klusje
-opgeven, openJournal: Dagboek openen, itemsFromInventory: Voorwerpen uit inventaris,
-itemsFromBank: Voorwerpen uit bank, youMustBeInLocation: 'Je moet op dezelfde locatie
-zijn als <object id="{obj}"/> om voorwerpen in te leveren.', hasNoBank: Er is geen
-bank op deze locatie., hasNoItemsInInventory: Er zijn geen geschikte voorwerpen in
-je inventaris., giveItems: Voorwerpen geven, give: Geven, noJobsAvailable: 'Er zijn
-momenteel geen klusjes beschikbaar op deze locatie. Nieuwe klusjes komen beschikbaar
-over:', refreshIn: 'Het prikbord wordt ververst over:', acceptedJobs: 'Huidig geaccepteerde
-klusjes <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>', hasNoItemsInBank: Er
-zijn geen geschikte voorwerpen in je bank., acceptJob: Klusje accepteren, youMustBeInLocationToCollect: 'Je
-moet op dezelfde locatie zijn als <object id="{obj}"/> om de beloning te ontvangen.',
-collectRewards: Beloning innen, currentlyAcceptedJobs: Huidige geaccepteerde klusjes},
-dialogs: {abandonJob: {title: Klusje opgeven, text: Weet je zeker dat je dit klusje
-wilt opgeven? Je zal de voortgang en beloningen van dit klusje kwijtraken.}}}, gear: {
-phrases: {skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen gevechtsmodificatoren
-door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators door gedragen
-voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
+/>', agilityBonus: 'Behendigheidsniveau <c>{level}</c>', fromGear: Huidige uitrusting,
+fromServices: Voorzieningsbonus, fromCollectibles: Verzamelobjecten, fromConsumables: Verbruiksartikelen,
+changeActivity: Activiteit wijzigen, abilities: Abilities, fromOverencumbered: Overbelast,
+baseEfficiency: Basisefficiëntie}, info: {noActivity: 'Momenteel geen activiteit geselecteerd.
+<hl>Kies er hieronder een</hl>, of swipe naar links om alle beschikbare activiteiten
+op deze locatie te zien.', savedSteps: Bewaarde stappen voorkopen dat je stappen verspilt
+en worden aangevuld door te lopen zonder een activiteit actief te hebben. Ze worden
+gebruikt door stappen die je zet te verdubbelen wanneer je weer een activiteit actief
+hebt., consumablesUsage: Je kunt <c>voedsel</c> en een <c>elixer</c> kiezen om te
+nuttigen tijdens activiteiten.}, rewards: {experience: '<bp /><c>{xp} </c><object
+id="{skill}"/> ervaring', collectibles: '<bp /><icon i="Collectibles"/><c>{count}
+verzamelobjecten</c> te vinden'}, options: {completeUntilActions: Voltooi specifiek
+aantal acties, numberOfActions: Aantal acties}}, abilities: {phrases: {abilities: Abilities,
+useAbility: Gebruik ability, holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt
+houden om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel},
+info: {abilitiesInfo: Abilities zijn speciale acties die je direct een voordeel in
+het spel geven. Abilities hebben een cooldown waar je op moet wachten voordat je de
+ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>.
+Bepaalde uitrusting in het spel geven je abilities die je kunt gebruiken om direct
+een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten
+om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet
+voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
+cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown.}}, journal: {phrases: {
+jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare taken</c>
+die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren vanaf <c>prikborden</c>
+op verschillende locaties, zoals steden. Je kunt maximaal drie actieve klusjes hebben.'}},
+treasury: {phrases: {noItems: Je hebt geen schatten om te openen. Je kunt schatkisten
+vinden bij verschillende activiteiten., openChest: Openen, openAll: Alles openen}},
+jobs: {phrases: {rewards: Voltooiingsbeloningen, abandonJob: Klusje opgeven, openJournal: Dagboek
+openen, itemsFromInventory: Voorwerpen uit inventaris, itemsFromBank: Voorwerpen uit
+bank, youMustBeInLocation: 'Je moet op dezelfde locatie zijn als <object id="{obj}"/>
+om voorwerpen in te leveren.', hasNoBank: Er is geen bank op deze locatie., hasNoItemsInInventory: Er
+zijn geen geschikte voorwerpen in je inventaris., giveItems: Voorwerpen geven, give: Geven,
+noJobsAvailable: 'Er zijn momenteel geen klusjes beschikbaar op deze locatie. Nieuwe
+klusjes komen beschikbaar over:', refreshIn: 'Het prikbord wordt ververst over:',
+acceptedJobs: 'Huidig geaccepteerde klusjes <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>',
+hasNoItemsInBank: Er zijn geen geschikte voorwerpen in je bank., acceptJob: Klusje
+accepteren, youMustBeInLocationToCollect: 'Je moet op dezelfde locatie zijn als <object
+id="{obj}"/> om de beloning te ontvangen.', collectRewards: Beloning innen, currentlyAcceptedJobs: Huidige
+geaccepteerde klusjes}, dialogs: {abandonJob: {title: Klusje opgeven, text: Weet je
+zeker dat je dit klusje wilt opgeven? Je zal de voortgang en beloningen van dit klusje
+kwijtraken.}}}, gear: {phrases: {skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen
+gevechtsmodificatoren door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators
+door gedragen voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
 modificatoren, combatModifiers: Gevechtsmodificatoren, noItemEquipped: Geen voorwerp
 uitgerust, noItemSelected: Geen voorwerp geselecteerd}}, tools: {phrases: {emptyToolSlot: Leeg
 gereedschapsvak, lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau
@@ -406,17 +410,18 @@ naar uitrustingsset <c>{name}</c>', activityInLocation: '<object id="{activity}"
 in <object id="{location}"/>', queue: Wachtrij, queuedActions: Acties in wachtrij,
 travelingTo: '<object id="{from}"/> naar <object id="{to}"/>', untilInventoryFull: Tot
 inventaris vol is, noGearSetFound: 'Gekozen uitrustingsset niet gevonden, heb je deze
-verwijderd?', noPathFound: Geen pad naar de bestemming gevonden.}, options: {withdrawGearSet: {
-text: Uitrustingsset opnemen, desc: Haalt een uitrustingsset uit de bank als er een
-beschikbaar is op een van de locaties waar je doorheen komt.}, switchGearSet: {text: Wisselen
-naar uitrustingsset, desc: Wisselen naar een geselecteerde uitrustingsset voordat
-deze actie start.}, depositUnlockedItems: {text: Ontgrendelde voorwerpen storten,
-desc: Stort alle ontgrendelde voorwerpen in je inventoris naar de bank als er een
-beschikbaar is in een van de locaties waar je doorheen komt.}, removeFromQueue: {
-text: Verwijderen uit wachtrij, desc: Verwijder deze actie en alle acties erna uit
-de wachtrij.}, cancelGearSetSwitch: {text: Wisselen van uitrustingsset annuleren,
-desc: Annuleert het wisselen van uitrustingsset voor deze actie.}}, types: {traveling: Reizen,
-activity: Activiteit, crafting: Ambacht}, suggestedOptions: {startActivity: Activiteit,
+verwijderd?', noPathFound: Geen pad naar de bestemming gevonden., forXActions: 'Voor
+<c>{count}</c> acties aan het doen', inputNotMet: Invoervereisten niet voldaan}, options: {
+withdrawGearSet: {text: Uitrustingsset opnemen, desc: Haalt een uitrustingsset uit
+de bank als er een beschikbaar is op een van de locaties waar je doorheen komt.},
+switchGearSet: {text: Wisselen naar uitrustingsset, desc: Wisselen naar een geselecteerde
+uitrustingsset voordat deze actie start.}, depositUnlockedItems: {text: Ontgrendelde
+voorwerpen storten, desc: Stort alle ontgrendelde voorwerpen in je inventoris naar
+de bank als er een beschikbaar is in een van de locaties waar je doorheen komt.},
+removeFromQueue: {text: Verwijderen uit wachtrij, desc: Verwijder deze actie en alle
+acties erna uit de wachtrij.}, cancelGearSetSwitch: {text: Wisselen van uitrustingsset
+annuleren, desc: Annuleert het wisselen van uitrustingsset voor deze actie.}}, types: {
+traveling: Reizen, activity: Activiteit, crafting: Ambacht}, suggestedOptions: {startActivity: Activiteit,
 startCrafting: Maken, startTraveling: Reizen}, suggestions: {traveling: {onceYouArriveTo: 'Actie
 toevoegen aan wachtrij in <object id="{location}"/>?'}, crafting: {onceAllItemsAreCrafted: Wil
 je iets doen zodra all voorwerpen gemaakt zijn?, onceCertainRarityIsCrafted: Wil je
