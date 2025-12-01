@@ -13,7 +13,7 @@ singulars:
       desc: Hvis du brukte et tomt ølglass på tønnene før Gunnarsgrunn-oppdateringen,
         ville du blitt angrepet av en barbar. Dersom du drepte barbaren, ville du
         fått påfyll på ølglasset om du igjen brukte det på tønnene.
-      name: |
+      name: |-
         Barbarisk landsby
     goldDigger:
       desc: Når jeg sa du ikke kunne kjøpe min kjærlighet, mente jeg at det ikke er
@@ -38,7 +38,7 @@ singulars:
       desc: Noldus er... fri
       name: Mester har gitt Noldus en Sokk
     masterchef:
-      desc: Nam! Det ser ut som om du kan bli en god kokk!
+      desc: Nam! Det ser ut som om du kan bli en god kokk.
       name: Mesterkokk
     myPrecious:
       desc: Forbann Baggins! Den er borte! Hva har den i lommene sine? Å vi gjetter,
@@ -53,10 +53,10 @@ singulars:
         sjanse?
       name: Bare du kan forhindre skogbrann
     rockAndStone:
-      desc: Hvis du ikke Berg og Stein, kommer du ei heim.
+      desc: Hvis du ikke Berg og Stein, kommer du ei heim!
       name: Berg og Stein!
     rockstar:
-      desc: Hard rock hallelujah!
+      desc: ''
       name: Rockestjerne
     thatsXcomBaby:
       desc: RNG kan noen ganger være veldig frustrende.
@@ -66,14 +66,14 @@ singulars:
       name: Ta på gresset
     underTheSea:
       desc: Her svinser vi rundt og svanser\ni virvlende karusell\nmen kanskje du
-        heller danser\nmed tørrfisk og røkt makrell.
+        heller danser\nmed tørrfisk og røkt makrell
       name: Her må du bli
     visitorOfTheFarLands:
       desc: Tallet er antallet blokker man må reise for å komme til "Far Lands" i
         Minecraft.
       name: Besøkende av Far Lands
     walkOfShame:
-      desc: \*kling\* Skam. \*kling\* Skam. \*kling\* Skam. \*kling\* Skam
+      desc: \*kling\* Skam. \*kling\* Skam. \*kling\* Skam. \*kling\* Skam.
       name: skammens rusletur
     whatATrip:
       desc: Å spise disse kan ta deg på en vill reise. Nytes best i godt selskap.
@@ -84,10 +84,10 @@ singulars:
     youShallNotPass:
       desc: 'Jeg er en tjener av den Hemmelige Ilden, utøver av Anors flamme. Den
         mørke ilden vil ikke hjelpe deg, Uduns flamme! Gå tilbake til skyggen. <hl>You
-        Shall Not Pass!</hl> '
-      name: You Shall Not Pass
+        Shall Not Pass!</hl>'
+      name: You Shall Not Pass!
     areYouSickleOfItYet:
-      name: Ljå meg her, og ljå meg der
+      name: Ljå meg her, og ljå meg der?
       desc: Din tur over den tomme isbreen har gjort deg til en venn av pingvinene.
         Én ser ivrig opp på deg i håp om at du skal plukke den opp og sette den på
         skulderen.
@@ -142,9 +142,7 @@ singulars:
       desc: Nei, dra meg baklengs inn i fuglekassa! Her går det unna!
     spaceCarsAndBirds:
       name: Space, Cars and Birds
-      desc: I never give up. I'd have to be dead or completely incapacitated. And
-        when I say never, I mean I'm never gonna give you up, never gonna let you
-        down" - Melon Usk
+      desc: Vinn en formue i et spill, livet mitt vil aldri bli det samme...
     tutorialComplete:
       desc: Du er endelig klar for å forlate startsona, sant?
       name: Introduksjon fullført
@@ -158,7 +156,7 @@ singulars:
         bry seg når mer enn 95% av havet er uutforsket.
     underseaChef:
       name: Underhavskokken
-      desc: Kan man overkoke egg under vann?
+      desc: I det miste kan man ikke overkoke egg under vann.
     anotherMansTreasure:
       name: En manns søppel er en annen manns skatt
       desc: Bare en ordentlig takstmann kan skille vanlig søppel fra verdifullt søppel.
@@ -195,44 +193,56 @@ singulars:
     feedYourInnerChild:
       name: Mat ditt indre barn
   requirements:
-    have5DifferentGems: Ha <numberProgress /> unike edelstener i beholdningen din.
-    craftPickaxeOfHighestQuality: Lag en hakke av høyeste kvalitet. <numberProgress
+    have5DifferentGems: Ha ulike typer av <object id="cut_gem" /> i beholdningen din
+      samtidig. <numberProgress />
+    craftPickaxeOfHighestQuality: Lag en <object id="pickaxe" /> av høyeste kvalitet.
+      <numberProgress />
+    gainRingWhileFishing: Få hvilken som helst <object id="item_ring" /> mens <object
+      id="activity_fishing" /> <numberProgress />
+    walkStepsWithoutGear: Gå et totalt antall skritt uten å bruke noe utstyr <numberProgress
       />
-    gainRingWhileFishing: Få en ring mens du fisker.<numberProgress />
-    walkStepsWithoutGear: Gå <numberProgress /> skritt uten å ha på deg utstyr.
-    catchCrabs: Fang<numberProgress /> fisk mens du fisker.
-    chop5kTrees: Hogg ned <numberProgress /> trær.
-    collect1kMushrooms: Plukk<numberProgress /> sopp.
-    cook20DifferentRecipes: Bruk<numberProgress />ulike oppskrifter.
-    craftHatchetOfHighestQuality: Lag en øks av den høyeste kvalitet. <numberProgress
+    catchCrabs: Fang<object id="fish" /> mens du <object id="activity_fishing" />
+      <numberProgress />
+    chop5kTrees: Gjennomfør handlinger av<object id="woodcuttingTrees" /> <numberProgress
       />
+    collect1kMushrooms: Samle <object id="mushroom" alwaysShow="true" /> fra <object
+      id="activity_foraging" /> aktiviteter. <numberProgress />
+    cook20DifferentRecipes: Fullfør ulike <object id="recipe_cooking" /> valg. <numberProgress
+      />
+    craftHatchetOfHighestQuality: Lag en <object id="woodcuttingHatchet" /> av høyeste
+      kvalitet. <numberProgress />
     craftPerfectItem: Lag en perfekt gjenstand. <numberProgress />
-    cookRecipes: Bruk oppskriftene <numberProgress /> ganger.
+    cookRecipes: Fullfør en <object id="recipe_cooking" /> <numberProgress />
     findMysteriousG: Finn den mystiske G-en. <numberProgress />
-    forageHoney: Finn<numberProgress /> bikuber.
-    gain99Agility: Oppnå nivå <numberProgress /> i smidighet.
-    gainSocksFromActivity: Få sokker som resultat av en aktivitet.<numberProgress
-      />
+    forageHoney: Finn <object id="item-honey-c8f6d8b2-8c1f-48ab-8b08-7ee40ba1c489"
+      alwaysShow="true" /> fra aktiviteter. <numberProgress />
+    gain99Agility: Øk nivået ditt i smidighet<numberProgress />
+    gainSocksFromActivity: Få <object id="item_socks" /> som en dropp fra en aktivitet.
+      <numberProgress />
     goToBarbantok: Gå til landsbyen Barbantok. <numberProgress />
     goToNoiselessPass: Gå til den lydløse passasjen.<numberProgress />
     levelUpAnySkill: Oppnå nytt nivå i hvilken som helst egenskap. <numberProgress
       />
-    makeSandwich: Lag <numberProgress /> smørbrød.
-    mine10kOres: Utvinn <numberProgress /> malmtyper av hvilket som helst slag.
-    mine1kGoldOres: Oppnå <numberProgress /> gullmalm fra aktiviteter.
+    makeSandwich: Lag en <object id="sandwich" /> <numberProgress />
+    mine10kOres: Utivnn flere <object id="ore" /> av hvilken som helst type. <numberProgress
+      />
+    mine1kGoldOres: Oppnå <object id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f"
+      alwaysShow="true" /> fra aktiviteter. <numberProgress />
     useALamp: Bruk en XP lampe. <numberProgress />
-    walkSteps: Gå <numberProgress /> skritt.
-    walkStepsInDay: Gå <numberProgress /> skritt på én dag.
-    characterLevel: Oppnå <numberProgress /> karakternivå.
-    haveCoins: Ha <numberProgress /> mynter.
+    walkSteps: Gå et totalt antall skritt. <numberProgress />
+    walkStepsInDay: Gå et totalt antall skritt innen 24 timer. <numberProgress />
+    characterLevel: Ha en karakter med nivå <numberProgress />
+    haveCoins: Ha et totalt antall <icon i="money small"/> mynter. <numberProgress
+      />
     haveAllSkillsLevel: Oppnå alle egenskaper til minst nivå. <numberProgress />
-    haveFoodStackQuantity: Ha hvilken som helst samling av mat samlet opp til <numberProgress
-      /> .
-    mineOres: Hugg <numberProgress /> malm.
-    haveBankStacks: Ha <numberProgress /> bunker i banken.
+    haveFoodStackQuantity: Ha en hvilken som helst<object id="food" /> stabel med
+      antall <numberProgress />
+    mineOres: Utvinn <object id="ore" /> fra <object id="activity_mining" /> aktiviteter.
+      <numberProgress />
+    haveBankStacks: Ha ulike stabler med gjenstander i banken. <numberProgress />
     exploreJarvonia: Utforsk alle stedene i Jarvonia. <numberProgress />
-    gainFineMaterial: Skaff <numberProgress /> flott materiale.
-    dropItem: Slipp <numberProgress /> gjenstand(er).
+    gainFineMaterial: Få en "Flott" gjenstand fra en aktivitet. <numberProgress />
+    dropItem: Slipp en gjenstand. <numberProgress />
     haveInventoryFilled: Oppnå å bli overbelastet. <numberProgress />
     haveRingsEquipped: Ha på deg to ringer. <numberProgress />
     haveEverySlotFilled: Ha en gjenstand alle utstyrsholderne. <numberProgress />
@@ -240,4 +250,5 @@ singulars:
     gainTreasureChest: Skaff deg en skattekiste fra hvilken som helst aktivitet. <numberProgress
       />
     openTreasureChest: Åpne <numberProgress /> skattekister.
-    consumeBeer: Drikk <numberProgress /> øl.
+    consumeBeer: Drikk en <object id="item-beer-9a2b6380-7270-43e0-bd9a-67e8bcb9d925"
+      alwaysShow="true" /> <numberProgress />

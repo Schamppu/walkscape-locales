@@ -16,15 +16,19 @@ maps:
       '4': Legendarisk
       '5': Eterisk
     consumableTypes:
-      "food": ''
-      "potion": ''
+      "food": 'Mat'
+      "potion": 'Eliksir'
   realmDescriptions:
     braemercia: Braemercia
     ethereal: Eterisk
     ewerethien: Ewerethien
     painfulislands: Smerteøyene
     ridraddak: Rid Raddak
-    'jarvonia': ''
+    'jarvonia': '\t\t Jarvonia, <c>et land av is og mørke</c>, hersket over av et
+      mektig og religiøst brorskap, er et uavhengig rike med hardføre mennesker samlet
+      av sin ustoppelige<c>tro</c> og <c>brennende vilje</c> til å overleve.\n\n\t\t
+      Til tross for harde vintre og isolasjon finner de styrke og beskyttelse gjennom
+      sin religion, med<c>hjerter brenner klart mot kulden</c>.'
     'gdte': ''
     'wallisia': ''
     'galeforge': ''
@@ -74,10 +78,11 @@ singulars:
       ring: Ring
       secondary: Sekundær
       woodcutting: Trehoggingsverktøy
-      back: ''
-      tools: ''
+      back: 'Rygg'
+      tools: 'Verktøy'
     itemTags:
       fine: Fint
+      normal: Normal
     itemTypes:
       consumable: Forbruksvare
       container: Beholder
@@ -86,7 +91,7 @@ singulars:
       material: Materiale
       other: Annet
       quest: Oppdrag
-      collectible: ''
+      collectible: 'Samleobjekt'
   placeholder:
     placeholder: Plassholder
   requirements:
@@ -94,18 +99,21 @@ singulars:
       level: Krever <skill skill skill="{skill}" level="{level}"" isRequirement="true"/>
         nivå.
   intro:
-    welcome: ''
-    whereAreYouFrom: ''
+    welcome: 'Velkommen til Arenum, fremmed. Det ser ut til at du har dukket opp rett
+      utenfor <hl>Kallaheim</hl>, en storby i nord.'
+    whereAreYouFrom: 'Kan jeg stille deg et spørsmål... Hvem er du?'
   commonPhrases:
-    noActivity: ''
-    allSkills: ''
-    lookingForInternet: ''
+    noActivity: 'Ingen aktivitet.'
+    allSkills: 'Alle egenskaper'
+    lookingForInternet: 'Kobler til WalkScape server...'
+    loadingSteps: Laster steg...
+    connectingToServer: Kobler til server...
 plurals:
   items:
     money:
       zero: ''
-      one: ''
-      two: ''
+      one: 'mynt'
+      two: 'mynter'
       few: ''
       many: ''
-      other: ''
+      other: 'mynter'
