@@ -79,8 +79,8 @@ singulars:
     text: Bütün becerilerini <numberProgress current="{current}" max="{max}" /> seviyeye
       ulaştır.
   levelUpSkills:
-    text: Becerilerini <numberProgress current="{current}" max="{max}" /> kere seviye
-      atlat.
+    text: Toplam <numberProgress current="{current}" max="{max}" /> beceri seviyesine
+      ulaş.
   exploreRealm:
     text: <object id="{obj}" alwaysShow="true" /> diyarını tamamen keşfet. <numberProgress
       current="{current}" max="{max}" />.
@@ -123,3 +123,16 @@ singulars:
       /> gerekli.
     erdwiseMap: <object id="fa277527-585b-4a1d-bc73-a25fe1195017" /> gerekli.
     halflingMap: <object id="f1a9e370-fd69-4a49-92c0-c83475a896ab" /> gerekli.
+  mainSkillType:
+    text: <skillType type="{type}"/> faaliyetleri yaparken.
+  itemQualityEquipped:
+    text: En az <numberProgress current="{current}" max="{max}" /> tane <itemQuality
+      quality="{quality}" type="{type}"/> eşya kuşan.
+    withoutType: En az <numberProgress current="{current}" max="{max}" /> tane <itemQuality
+      quality="{quality}" type="crafted"/> veya <itemQuality quality="{quality}" type="loot"/>
+      eşya kuşan.
+  keywordEquipped:
+    text: <object id="{obj}" /> kuşan.
+  keywordWithLevelEquipped:
+    text: En az <numberProgress current="{current}" max="{max}" /> seviye <skill skill="{skill}"/>
+      gerektiren <object id="{obj}" /> kuşan.
