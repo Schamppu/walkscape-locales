@@ -21,7 +21,7 @@ singulars:
       name: Gold Digger
     hellsKitchen:
       desc: Det er nok hvitløk her inne til å drepe alle vampyrene i Europa.
-      name: Hell's Kitchen
+      name: Helvete's kjøkken
     ifItIsBrokenFixIt:
       desc: Det er vanskelig å være den eneste utvikleren.
       name: Hvis det er ødelagt, fiks det
@@ -85,14 +85,14 @@ singulars:
       desc: 'Jeg er en tjener av den Hemmelige Ilden, utøver av Anors flamme. Den
         mørke ilden vil ikke hjelpe deg, Uduns flamme! Gå tilbake til skyggen. <hl>You
         Shall Not Pass!</hl>'
-      name: You Shall Not Pass!
+      name: Du Skal Ikke Passere!
     areYouSickleOfItYet:
       name: Ljå meg her, og ljå meg der?
       desc: Din tur over den tomme isbreen har gjort deg til en venn av pingvinene.
         Én ser ivrig opp på deg i håp om at du skal plukke den opp og sette den på
         skulderen.
     fullyPrepared:
-      name: Godt forberedt!
+      name: Godt forberedt
       desc: Med full utrustning er du forberedt på å møte verden!
     myBackHurts:
       desc: På tide å gi slipp på noen av tingene dine før du ødelegger ryggen.
@@ -106,7 +106,7 @@ singulars:
         egenskaper på ringer.
     oohShiny:
       name: Ooh, så glinsende!
-      desc: Og det sies at man bare har en 1 av 200 sjanse å finne noe så fint.
+      desc: Det sies at man bare har en 1 av 200 sjanse å finne noe så Flott.
     treasureHunter:
       desc: Ingenting er så deilig som en gratis skattekiste!
       name: Skattejeger
@@ -115,13 +115,13 @@ singulars:
       desc: Nå kan du kalle deg en stolt Jarvonitt. Du er lommekjent.
     comrade:
       desc: Du har en hammer og ljå? Vi har en hammer og ljå!
-      name: Comrade
+      name: Kamerat
     hoarder:
       desc: Uendelig lagringsplass er drømmen til alle samlere. Alle bankene er sammenkoblet,
         så kos deg!
       name: Samler
     theRockstar:
-      desc: Hard rock hallelujah!
+      desc: ''
       name: Rockestjerna
     doomsdayPrepper:
       name: Dommedagsprepper
@@ -138,10 +138,10 @@ singulars:
       desc: Denne partyhatten kunne matet generasjoner.
       name: Tid for fest
     iJustFeltLikeRunning:
-      name: Løper løpsk!
+      name: Jeg fikk bare lyst til å løpe
       desc: Nei, dra meg baklengs inn i fuglekassa! Her går det unna!
     spaceCarsAndBirds:
-      name: Space, Cars and Birds
+      name: Tenk på alle tingene jeg kunne gjort
       desc: Vinn en formue i et spill, livet mitt vil aldri bli det samme...
     tutorialComplete:
       desc: Du er endelig klar for å forlate startsona, sant?
@@ -168,7 +168,7 @@ singulars:
       desc: Det ryktes at regnbuen smaker som støv fra enhjørningshorn, men husk at
         det er ulovlig å male et enhjørningshorn til støv.
     fashionista:
-      name: Fashionista
+      name: ''
       desc: En flott kjole kan minne deg på hva som er vakkert i livet.
     humanFish:
       name: Menneskelig fisk
@@ -180,9 +180,11 @@ singulars:
       name: Ikke-akademiske valgfag
     helanGor:
       desc: Skål, cheers, kippis, salud, cin cin, prost, kanpai, ganbei!
+      name: Drammen går!
     iSmellDeadMiners:
       desc: Denne historien er skrevet om i "Of mines and monsters" historien. Les
         mer på WalkScape wikien!
+      name: Jeg kan lukte døde gruvearbeidere
     oohShinier:
       desc: Det sjeldneste i verden, nest etter evnen til å skille mellom riktig og
         galt, er en fin, skinnende stjerneperle.
@@ -192,6 +194,39 @@ singulars:
       name: Du kommer til å trenge et større kjøkken
     feedYourInnerChild:
       name: Mat ditt indre barn
+      desc: Man blir aldri for gammel til å ha det morro!
+    shieldWall:
+      desc: Det beste angrepet er... eh...
+      name: Vegg av skjold
+    residualRelic:
+      name: Gjenværende oldtidsgjenstand
+      desc: Riktig smykke på feil sted kan utgjøre hele forskjellen.
+    overprepared:
+      desc: Kanskje du ikke trenger å gå fullt inn i hver situasjon.
+      name: Overforberedt
+    wetlandsExplorer:
+      desc: Vi viste myra hvem som er sjefen, hvem er redd for mørket nå?
+      name: Våtlandsutforsker
+    moreThanMeetsTheEye:
+      desc: Du ble lovet diamanter, men fant en spade. Mysteriene i Erdwise Trinketry-fabrikken
+        er mange.
+      name: Mer en det som møter øyet
+    aVeryFashionableCoast:
+      name: En veldig stilig kyst
+      desc: Du føler endelig at du passer inn blandt innbyggerne i motehovedstaden
+        Arenum, mellom Middlecrest og Everhaven.
+    nice:
+      desc: Du klarte det.
+    lighthouse:
+      desc: Bli et lederlys i mørket.
+      name: Fyrtårn
+    needToGoDeeper:
+      desc: Noen ganger må du utforske litt lenger enn før for å finne noe bra.
+      name: Vi må grave dypere
+    theCircleOfLife:
+      name: Livets sirkel
+      desc: Etter å ha fulgt flaggermusene gjennom årets syklus og undersøkt hjemmene
+        deres som en forsker, betrakter du dem nå som venner.
   requirements:
     have5DifferentGems: Ha ulike typer av <object id="cut_gem" /> i beholdningen din
       samtidig. <numberProgress />
@@ -219,8 +254,10 @@ singulars:
     gain99Agility: Øk nivået ditt i smidighet<numberProgress />
     gainSocksFromActivity: Få <object id="item_socks" /> som en dropp fra en aktivitet.
       <numberProgress />
-    goToBarbantok: Gå til landsbyen Barbantok. <numberProgress />
-    goToNoiselessPass: Gå til den lydløse passasjen.<numberProgress />
+    goToBarbantok: Gå til landsbyen <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+      alwaysShow="true" /> <numberProgress />
+    goToNoiselessPass: Gå til stedet som kalles <object id="location-noiseless_pass-e081df71-97eb-4708-90b0-f33e61b2a0c7"
+      alwaysShow="true" /> <numberProgress />
     levelUpAnySkill: Oppnå nytt nivå i hvilken som helst egenskap. <numberProgress
       />
     makeSandwich: Lag en <object id="sandwich" /> <numberProgress />
@@ -240,15 +277,64 @@ singulars:
     mineOres: Utvinn <object id="ore" /> fra <object id="activity_mining" /> aktiviteter.
       <numberProgress />
     haveBankStacks: Ha ulike stabler med gjenstander i banken. <numberProgress />
-    exploreJarvonia: Utforsk alle stedene i Jarvonia. <numberProgress />
+    exploreJarvonia: Utforskt alle steder i <object id="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db"
+      /> <numberProgress />
     gainFineMaterial: Få en "Flott" gjenstand fra en aktivitet. <numberProgress />
     dropItem: Slipp en gjenstand. <numberProgress />
     haveInventoryFilled: Oppnå å bli overbelastet. <numberProgress />
-    haveRingsEquipped: Ha på deg to ringer. <numberProgress />
-    haveEverySlotFilled: Ha en gjenstand alle utstyrsholderne. <numberProgress />
-    haveHammerEquipped: Hold en hammer. <numberProgress />
-    gainTreasureChest: Skaff deg en skattekiste fra hvilken som helst aktivitet. <numberProgress
+    haveRingsEquipped: Ha begge <object id="item_ring" /> plassene utstyrt. <numberProgress
       />
-    openTreasureChest: Åpne <numberProgress /> skattekister.
+    haveEverySlotFilled: Ha en gjenstand alle utstyrsholderne. <numberProgress />
+    haveHammerEquipped: Ha en<object id="smithingHammer" /> utstyrt. <numberProgress
+      />
+    gainTreasureChest: Få en <object id="chest" /> fra en hvilken som helst aktivitet.
+      <numberProgress />
+    openTreasureChest: Gjennomfør <object id="chest" /> åpninger. <numberProgress
+      />
     consumeBeer: Drikk en <object id="item-beer-9a2b6380-7270-43e0-bd9a-67e8bcb9d925"
       alwaysShow="true" /> <numberProgress />
+    activitySwimInt: Gjennomfør <object id="activity-swimming_(intermediate)-37f761f4-f6fd-49a5-8389-5816388e0cf9"
+      /> aktiviteter. <numberProgress />
+    completeActivity: Fullfør handlinger i <item id="{item}" alwaysShow="true" />
+      aktiviteter. <numberProgress />
+    lootFindCommon: Få normalt utbytte fra en <object id="chest" /> <numberProgress
+      />
+    dropItems: Slipp flere gjenstander. <numberProgress />
+    equipHatchet: Utstyr deg med <object id="item-basic_hatchet-dc4b21f3-e651-4103-9127-e7d3b74151fe"
+      /> <numberProgress />
+    goToTrench: Gå til stedet som kalles <object id="location-darkdepths-385aa267-b46d-47b8-b124-aa3827c39fef"
+      alwaysShow="true" /> <numberProgress />
+    activityFountain: Mens du utfører <object id="b6ac3245-e72a-4565-a6ea-21f20ea6ff32"
+      /> aktiviteter. <numberProgress />
+    equipNet: Utstyr deg med <object id="item-small_fishing_net-05cb692d-840c-4c57-911c-1f65464aa800"
+      /> <numberProgress />
+    findCrossword: Finn et <object id="item-jarvonian_crossword_puzzle-01c3fefd-6d9e-4b4d-bb76-91981c663085"
+      /> <numberProgress />
+    explore: Utforsk for å finne <object id="2464445f-9855-4e22-867d-5a5de113f67d"
+      /> <numberProgress />
+    exploreGDTE: Utforsk alle lokasjoner i <object id="faction-grand_duchy_of_trellin-erdwise-68ec9ed7-ae97-438b-a671-f72b14ef6679"
+      /> <numberProgress />
+    activitySled: Gjennomfør <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
+      /> aktiviteter. <numberProgress />
+    activitySwimBeg: Gjennomfør <object id="activity-swimming_(beginner)-1ccee641-01d9-4bcb-8dd7-9df9c61142f2"
+      /> aktivteter. <numberProgress />
+    activityGlacier: Gjennomfør <object id="activity-glacier_foraging-dfdd59cc-e38b-48fc-9a0e-439163abac12"
+      /> aktiviteter. <numberProgress />
+    activityIce: Gjennomfør <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
+      /> aktiviteter. <numberProgress />
+    activitySwimExp: Gjennomfør <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
+      /> aktiviteter. <numberProgress />
+    activityBasket: Gjennomfør <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
+      /> aktiviteter. <numberProgress />
+    findIceSickle: Finn et <hl>veldig sjeldent redskap</hl> i isbreen. <numberProgress
+      />
+    activityTinkering: Gjennomfør <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
+      /> aktiviteter. <numberProgress />
+    activityButterfly: Gjennomfør <object id="activity-butterfly_catching-ddef8fc5-a61e-4689-bacb-e49ee89f09c8"
+      /> aktiviteter. <numberProgress />
+    activitySand: Gjennomfør <object id="activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d"
+      /> aktiviteter. <numberProgress />
+    equipPickaxe: Utstyr deg med <object id="item-basic_pickaxe-a00d8626-e415-481c-88ee-fdafbb4a45f0"
+      /> <numberProgress />
+    gainFineStarPearl: Finn en "Flott" <object id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81"
+      alwaysShow="true" /> fra en aktivitet. <numberProgress />
