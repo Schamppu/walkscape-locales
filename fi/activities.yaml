@@ -174,14 +174,12 @@ singulars:
         name: Lampikalastus
       seaFishingNet:
         name: Merikalastus verkolla
-        desc: Talvista rantaviivaa pitkin kulkiessasi löydät syrjäisen paikan ja heität
-          verkkosi rauhallisiin, koleisiin vesiin nauttien merikalastuksen rauhallisesta
-          yksinäisyydestä.
+        desc: Rantaviivaa pitkin kulkiessasi löydät syrjäisen paikan ja heität verkkosi
+          rauhallisiin vesiin, nauttien merikalastuksen rauhallisesta yksinäisyydestä.
       seaFishingRod:
         name: Merikalastus onkivavalla
-        desc: Talvista rantaviivaa pitkin kulkiessasi löydät syrjäisen paikan ja heität
-          vavan rauhallisiin, koleisiin vesiin nauttien merikalastuksen rauhallisesta
-          yksinäisyydestä.
+        desc: Rantaviivaa pitkin kulkiessasi löydät syrjäisen paikan ja heität kohosi
+          rauhallisiin vesiin, nauttien merikalastuksen rauhallisesta yksinäisyydestä.
       seaFishingCage:
         desc: Ravinteikas virta tuo alueelle kaikenlaisia äyriäisiä.
         name: Merikalastus merralla
@@ -197,10 +195,19 @@ singulars:
         desc: Keihäs tukevasti kädessäsi uiskentelet kierroksia hylyn ympärillä ja
           seurailet valppaana suuria kaloja, mikäli ne uskaltaisivat lähestyä iskuetäisyydelle.
       predatorHunting:
-        name: Petojen metsästys (keihäs)
+        name: Petojen metsästys keihäällä
         desc: Kalanpyynnin innoittamana viiletät syvän veden halki ja olet äärimmäisen
           tietoinen ympäristöstäsi. Jokainen solusi on valmiina iskemään petoihin
           ennen kuin ne ehtivät iskeä sinuun.
+    wallisia:
+      floodedRiverFishingRod:
+        name: Tulvivassa joessa kalastus onkivavalla
+        desc: Heität kohosi tulvivan joen vesiin, ja toivot narraavasi jonkinlaisen
+          ainutkertaisen saaliskalan, joka olisi sopeutunut uuteen ympäristöönsä.
+      isthmusSeaFishingNet:
+        name: Merikalastus kannakselta verkolla
+        desc: Heität verkkosi veteen kannaksen rannasta, ja koetat saada napattua
+          joitakin alueella viihtyvistä eliöistä.
   foraging:
     gdte:
       forestForaging:
@@ -386,6 +393,39 @@ singulars:
         desc: Kaiva reitti puusepille, jotka tulevat perässäsi. Siivoa jätteet pois
           tieltä, varmistaen samalla ettei alue romahda.
         name: Vedenalaisen akveduktin kaivaminen
+    wallisia:
+      mineEctoRocks:
+        desc: Suuret paljastuneet kivialueet vaikuttavat hohtavan karmivalla, kummitusmaisella
+          tavalla kuten ympäristökin. Heilautat hakkuasi kiveä kohti, toiveikkaana
+          että saisit irti kiveä jonka voisit viedä mukanasi jalostettavaksi.
+        name: Ektoplasmakivien louhinta
+    wrentmark:
+      mineSilverOre:
+        name: Louhi hopeamalmia
+        desc: Silmäkulmastasi näet välkähdyksen hopeista kiveä, ja ryykäät hakkusi
+          kanssa paljastamaan kiveen piiloutunutta hopeasuonta.
+      mineGoldOre:
+        name: Louhi kultamalmia
+        desc: Huomaat kultaisia välkähdyksiä kivien lomassa ja ryykäät oitis louhimaan
+          sitä, toivoen paljastavasi varsinaisen emosuonen.
+      mineAdamantOre:
+        name: Louhi adamanttimalmia
+        desc: Löydät kovaa adamanttikiveä, ja tuot paikalle parhaat varusteesi, jotta
+          sinulla voisi olla mahdollisuus irrottaa löytämääsi malmia kivestä.
+      minePetrifiumOre:
+        name: Louhi petrifiummalmia
+        desc: Arvioit violetteja, kovaa petrifiumia sisältäviä kiviä edessäsi, ja
+          pohdit väylää, jolla pääsisit parhaiten irrottamaan malmin niistä satuttamatta
+          itseäsi samalla.
+      mineCrystalShards:
+        name: Louhi kristallisiruja
+        desc: Näin suuria ja kauniita kristallikiviä on niin sääli yrittää louhia,
+          mutta sirut joita niistä murtuu irti ovat yhä varsin kauniita verrattuna
+          alkuperäiseen.
+      mineGemRocksLow:
+        name: Louhi jalokiviä kalliosta (vähäisiä)
+        desc: Kivi, jossa on satunnaisia jalokivijuonteita pistää silmääsi. Voisit
+          ehkä löytää joitakin louhiessasi sen läpi.
   woodcutting:
     jarvonia:
       cutBirchTrees:
@@ -437,6 +477,16 @@ singulars:
       cutBambooLogs:
         desc: Lyöt bambua kirveelläsi. Siitä kuuluu tyydyttävä rapiseva ääni.
         name: Kaada bambua
+      cutYewTrees:
+        name: Kaada marjakuusia
+        desc: Marjakuuset ovat järeitä, ja vaativat melkoista ähellystä ennen kuin
+          ne saa kaadettua. Ajan myötä saat ne kaatumaan ja pätkittyä pölleiksi.
+      cutEctoTrees:
+        name: Kaada ektoplasmapuita
+        desc: Tämän alueen puut näyttävät siltä kuin ne olisi revitty toisesta maailmasta;
+          niiden karmiva ulkonäkö ja niistä huokuva aavemainen tuntuma saa ne vaikuttamaan
+          pelottavilta jo ennen kuin yrität kaataa niitä. Olet kärkäs käsittelemään
+          niistä saatavat pöllit.
   carpentry:
     jarvonia:
       woodCarving:
