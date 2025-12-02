@@ -1,6 +1,22 @@
 singulars:
   info:
     inventoryFull: Your inventory is full! For all activities, except traveling, being overencumbered will slow down your actions. You can either go to the bank to store items, or drop some items from your inventory to make space.
+    lockFavoriteItem: "<icon i=\"Favorited\"/> <c i=0>Favorite</c>: You can't drop or sell this item. You can still use it for crafting, jobs, and other actions.\n\n<icon i=\"Locked\"/> <c i=1>Lock</c>: You can't sell, drop, or deposit this item while it is locked. You can still use it for crafting, jobs, and other actions.\n\nLocking or favoriting and item is applied to all similar items in your inventory and bank. You can unlock or unfavorite items from your inventory or bank as well."
+    bankUsage: "Long pressing deposit or withdraw buttons deposits or withdraws up to <c i=0>1000</c> items at a time. You can use the bank search to quickly find items. You can search by <c i=0>name, keywords, skills or slots</c>.\n\n<c i=0>Your bank has unlimited space!</c>\n\nYou can also use the <icon i=\"Favorited\"/> <c i=1>Favorite</c> toggle to only show your favorited items."
+    inventoryUsage: > 
+      A long press on an item stack will <c i=0>open multi-selection mode</c>, allowing your to select multiple stacks at once to drop or deposit.
+      
+
+      The <c i=0>Options</c> button at the bottom allows you to change how the item stacks are displayed.
+      
+
+      <bp /><icon i="Deposit" /> <hl>All</hl>: Deposits all items in your intentory to the bank, if one is available at your location.
+
+
+      <bp /><icon i="Bank small" /> <hl>Bank</hl>: Opens your bank and allows you to to do deposits or withdrawals if those are available at your location.
+
+
+      <bp /><icon i="Sort" /> <hl>Sort</hl>: Sorts your inventory.
 maps:
   tips:
     "0": Being overencumbered only slows down your activities, but doesn't affect travel.
