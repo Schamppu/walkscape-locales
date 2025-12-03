@@ -74,6 +74,7 @@ maps:
       'showStepSourceInActivityView': Faaliyet ekranında adım kaynağını göster
       'warningBeforeClaimingExperience': Tecrübe ödüllerini almadan önce uyar
       'activityInformationOpen': Daha fazla faaliyet bilgisi göster
+      'toggleAgilityXp': Seyahat ederken Çeviklik TP'si kazanmayı devre dışı bırak
     languages:
       'pt': Portekizce
       'de': Almanca
@@ -106,6 +107,7 @@ maps:
       'gameplay': Oynanış
       'account': Hesap
       'character': Karakter
+      'characterSpecific': Karaktere özgü
     enumSettings:
       'language': Dil
       'leaderboardFilter': Göster
@@ -154,6 +156,18 @@ maps:
       'devblog': Geliştirici Günlükleri
       'update': Güncelleme
       'system': Sistem
+  skillTypes:
+    'gathering': Malzemeci
+    'artisan': Üretici
+    'combat': Savaşçı
+    'utility': Yardımcı
+  abilities:
+    types:
+      'active': Aktif
+      'passive': Pasif
+      'consumable': Tüketimlik
+      'activity': Faaliyet
+      'emergency': Acil durum
 plurals:
   achievements:
     phrases:
@@ -319,7 +333,7 @@ singulars:
       checkOutSubject: WalkScape'teki ilerlememe bir göz at!
       skills: Beceriler
       stepsOfLastWeek: Son 7 günlük adım
-      totalLevel: Toplam seviye
+      totalLevel: Toplam beceri seviyesi
       level: 'Karakter seviyesi: <c>{level}</c>'
       stepsToNextLevel: 'Seviye atlamaya kalan adım: <c>{steps}</c>'
       savePicture: Resmi kaydet
@@ -385,7 +399,7 @@ singulars:
         yok olur.
       attributes: Nitelikler
       cantEquip: Kuşanılamaz.
-      checkBank: Bankayı aç
+      checkBank: Banka
       dropItems: Eşyaları at?
       emptySlot: Boş yuva
       equipToRingOne: 1. yüzük yuvasına kuşan
@@ -419,6 +433,7 @@ singulars:
       inUse: Kullanımda
       disableWhenChanging: Faaliyet değiştirince kullanmayı bırak
       enableWhenBack: Önceki faaliyete başlayınca yeniden kullan
+      depositAll: Tümü
   leaderboards:
     phrases:
       first: İlk
@@ -427,7 +442,7 @@ singulars:
       loadingPage: Sayfa yükleniyor...
       me: Ben
       totalExperience: Toplam tecrübe
-      totalLevel: Toplam seviye
+      totalLevel: Toplam beceri seviyesi
       totalSteps: Toplam adım
       show: Göster
       everyone: Herkes
@@ -480,6 +495,7 @@ singulars:
       ifYouAreSure: Eğer ki eminsen, aşağıdaki alana <c>SİL</c> yazdıktan sonra devam
         tuşuna bas.
       testFlight: <c>TestFlight</c> üzerinden en son sürümü indirebilirsin.
+      restart: Yeniden başlat
     loadingStates:
       loadingCharactersFromCloud: Karakterler buluttan yükleniyor
       gameVersion: Oyun versiyonu alınıyor
@@ -772,7 +788,7 @@ singulars:
       consumables: Tüketimlikler
       noActivity: Faaliyet yok
       inventoryIsOverLimit: Envanter limitine ulaştın!
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Genel verim <c>-{penalty}%</c>
+      workEfficiencyPenalty: Esas verim <c>-{penalty}%</c>
       notAffectingTraveling: (seyahat verimi etkilenmez)
       options: Seçenekler
       rewards: Ödüller
@@ -789,16 +805,34 @@ singulars:
         görebilirsin.
       levelActivity: <c>{level}</c> seviye <object id="{skill}"/> faaliyeti
       savedStepsUsed: Kullanılan birikmiş adım
+      inputs: Girdiler
+      workEfficiency: Verim
+      maxWorkEfficiency: Azami verim
+      fromOverLevels: Fazla seviye bonusu <numberProgress current="{current}" max="{max}"
+        />
+      agilityBonus: Çeviklik seviyesi <c>{level}</c>
+      fromGear: Kuşanılan teçhizat
+      fromServices: Hizmet bonusu
+      fromCollectibles: Koleksiyonluklar
+      fromConsumables: Tüketimlikler
+      changeActivity: Faaliyeti değiştir
+      abilities: Yetenekler
+      baseEfficiency: Esas verim
+      fromOverencumbered: Envanter dolup taşmış
     info:
       consumablesUsage: Faaliyet yaparken kullanmak için birer <c>yiyecek</c> ve <c>iksir</c>
         seçebilirsin.
       noActivity: Şu anda seçilmiş bir faaliyet bulunmuyor. <hl>Aşağıdakilerden birini
         seçebilir</hl> veya sola kaydırarak bu konumda mevcut olan her şeyi görebilirsin.
-      savedSteps: Birikmiş adımların harcanıyor. Tamamı tükenene kadar attığın her
-        adım iki adım yerine geçer.
+      savedSteps: Attığın adımların ziyan olmamasını sağlayan birikmiş adımlar, aktif
+        bir faaliyette bulunmadığın zamanlar kaydedilirler. Yeniden bir faaliyete
+        başladığında ise adımlarını ikiye katlayarak harcanırlar.
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> tecrübesi
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} koleksiyonluk</c> bulunabilir
+    options:
+      completeUntilActions: Belirli sayıda eylem tamamla
+      numberOfActions: Eylem sayısı
   settings:
     categories:
       gameplay:
@@ -886,6 +920,7 @@ singulars:
       useConsumable: Tüketimliği kullan
       noAction: Eylem yok
       holdToUse: Kullanmak için basılı tut
+      alreadyHere: Zaten <object id="{location}"/> konumundasın. Bu yetenek kullanılamaz.
   faction:
     phrases:
       openFaction: Diyara bak
@@ -919,6 +954,9 @@ singulars:
       noItemSelected: Seçilmiş eşya bulunmuyor
       newSetDefaultName: Yeni Teçhizat Setim
       importedGearSetDefaultName: İçe Aktarılan Teçhizat Seti
+      hideItems: Eşyaları gizle
+      reorderGearSets: Teçhizat setlerini yeniden sırala
+      showItems: Eşyaları göster
     info:
       gearSetsDescription: Teçhizat setleri, teçhizatını çabucak değiştirmene yardım
         eder.
@@ -937,6 +975,8 @@ singulars:
       gearSetManageShortDesc: Teçhizat setlerinin yenisini oluşturmak, setleri içe
         veya dışa aktarmak için <c i=0>Yönet</c> tuşunu kullanabilirsin.
       noGearSets: Henüz hiç teçhizat seti oluşturmadın.
+      gearSetReorderDesc: Teçhizat setlerini aşağıdaki listede tutup sürükleyerek
+        yeniden sıralayabilirsin.
     errors:
       keywordError: Teçhizat setinde zaten <object id="{keyword}" /> bulunuyor
       duplicateItem: Bu eşya teçhizat setinde zaten bulunuyor
@@ -955,6 +995,11 @@ singulars:
       followingMustBeTrueToTick: 'Bekleme süresinin azalması için:'
       cooldownRemaining: 'Kalan bekleme süresi:'
       noCooldown: Bekleme süresi yok.
+      cooldown: Bekleme süresi
+      source: Kaynak
+      requirements: Gereksinimler
+      cooldownRequirements: Bekleme süresi gereksinimleri
+      charges: Yük
   wardrobe:
     phrases:
       noHeadwear: Herhangi bir başlığın bulunmuyor.
@@ -985,6 +1030,8 @@ singulars:
       travelingTo: <object id="{from}"/> konumundan <object id="{to}"/> konumuna
       untilInventoryFull: Envanter dolana kadar yapılıyor
       switchingToGearSet: <c>{name}</c> teçhizat seti kuşanılıyor
+      forXActions: <c>{count}</c> eylem yapılıyor
+      inputNotMet: Girdi gereksinimleri karşılanmıyor
     suggestedOptions:
       startCrafting: Üretim
       startTraveling: Seyahat
