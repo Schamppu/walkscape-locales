@@ -300,6 +300,10 @@ singulars:
           desc: 'Il piccone di metallo scuro si abbina molto bene alla musica heavy
             metal.'
           name: Piccone di tarsilio
+        adamantPickaxe:
+          name: Piccone di adamantio
+          desc: Questo piccone di colore verde minaccia i minerali inferiori che lo
+            circondano. Sembra arrabbiato per essere solo un piccone.
       woodcutting:
         basicHatchet:
           desc: L'accetta, umile strumento dei boscaioli. Difficilmente più di un
@@ -327,6 +331,19 @@ singulars:
         tarsiliumHatchet:
           desc: ''
           name: Accetta di tarsilio
+        adamantHatchet:
+          name: Ascia di adamantio
+          desc: "Un'ascia di metallo verde adamantio: forse non è un colore molto
+            creativo, ma è ottima per tagliare la legna."
+      foraging:
+        adamantSickle:
+          desc: La falce di adamantio brilla con una tonalità verdastra, garantendo
+            sia durata che affilatura per un raccolto efficiente.
+          name: Falce di adamantio
+      miscellaneous:
+        bagOfRocks:
+          name: Sacco di pietre
+          desc: È difficile trascinarlo in giro, perché lo stai facendo di nuovo?
   looted:
     equipmentSets:
       dimensional:
@@ -821,11 +838,11 @@ singulars:
         desc: Un pezzo di minerale d'argento. Non prezioso come l'oro, ma brillante
           di una lucentezza tutta sua.
       crystalShards:
-        desc: Frammenti di cristallo che contengono una flebile energia.  Magari è
+        desc: Frammenti di cristallo che contengono una flebile energia. Magari è
           il desidero di essere trasformati in qualcosa di migliore.
         name: Cristallo frantumato
       adamantOre:
-        name: Minerale di adamante
+        name: Minerale di adamantio
         desc: Una roccia verde un po' più pesante e resistente rispetto alle altre
           maneggiate fino ad ora. Può essere fusa per diventare ancora più forte.
       petrifiumOre:
@@ -834,9 +851,14 @@ singulars:
           Emana una grande forza pur non essendo nella sua forma finale.
       crystallizedFlame:
         name: Fiamme cristallizzate
-        desc: Un grosso pezzo di cristallo che sembra contenere  l'essenza stessa
-          del fuoco. Si possono vedere delle fiamme danzare sulla superficie e si
-          può sentire il calore che sprigiona anche senza che sia davvero in fiamme.
+        desc: Un grosso pezzo di cristallo che sembra contenere l'essenza stessa del
+          fuoco. Si possono vedere delle fiamme danzare sulla superficie e si può
+          sentire il calore che sprigiona anche senza che sia davvero in fiamme.
+      ectoRock:
+        name: Roccia di ectoplasma
+        desc: Questo grande pezzo di roccia è impregnato di ectoplasma e irradia un'aura
+          spettrale che trasmette una strana sensazione. Per lavorarlo avrai bisogno
+          di una fucina maledetta.
     rawFish:
       rawCarp:
         desc: Il sapore blando della carpa si presta bene alla preparazione di diversi
@@ -914,6 +936,10 @@ singulars:
         name: Persico trota crudo
         desc: Questo pesce verde è conosciuto per la sua bocca sproporzionata che
           usa per ingurgitare le cose.
+      ectoFish:
+        desc: Questi vari pesci sono infusi di ectoplasma e hanno un aspetto spettrale.
+          Per cucinarli avrai bisogno di una cucina maledetta.
+        name: Pesce ectoplasma
     smithing:
       bronzeBar:
         desc: 'Il lingotto di bronzo, reliquia delle fucine naniche, emana un fascino
@@ -959,6 +985,14 @@ singulars:
       metalFragment:
         desc: Alcuni scarti di metallo di alta qualità.
         name: Frammento di metallo
+      petrifiumBar:
+        desc: Una barra di violite. Sembra quasi che si possa schiacciare, ma è riluttante
+          a perdere la sua forma.
+        name: Barra di violite
+      adamantBar:
+        name: Barra di adamantio
+        desc: Una barra resistente di metallo verde. Ora chiede di essere rimodellata
+          per continuare a crescere in forza.
     woodcutting:
       birchLogs:
         desc: Lisci e pallidi, i tronchi di betulla emanano un'elegante semplicità.
@@ -1081,13 +1115,82 @@ singulars:
         name: Ciondolo gambero
         desc: Il ciondolo a forma di gambero brilla alla luce. Potrebbe tornare utile
           come amuleto un giorno.
+      sharkToothTrinket:
+        name: Ciondolo a forma di dente di squalo
+        desc: Il ciondolo a forma di dente di squalo brilla alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+      measuringSpoonsTrinket:
+        desc: Il ciondolo a forma di cucchiaio dosatore brilla alla luce. Un giorno
+          potrebbe tornare utile come amuleto.
+        name: Cucchiaini dosatori portagioie
+      beaverTrinket:
+        name: Ciondolo a forma di castoro
+        desc: Il ciondolo a forma di castoro brilla alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+      luckyRabbitFootTrinket:
+        name: Ciondolo a forma di zampa di coniglio portafortuna
+        desc: Il ciondolo a forma di zampa di coniglio portafortuna brilla alla luce.
+          Un giorno potrebbe tornare utile come amuleto.
+      compassTrinket:
+        desc: Il ciondolo a forma di bussola brilla alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+        name: Ciondolo bussola
+      circularRootTrinket:
+        desc: Il ciondolo circolare con la radice brilla alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+        name: Ciondolo con radice circolare
+      pinkPearlTrinket:
+        name: Ciondolo con perla rosa
+        desc: Il ciondolo di perla rosa brilla luminoso alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+      coolingIceTrinket:
+        name: Ciondolo ghiacciolo refrigerante
+        desc: Il ciondolo a forma di ghiacciolo brilla luminoso alla luce. Un giorno
+          potrebbe tornare utile come amuleto.
     misc:
       glacierMap:
         desc: La mappa assomiglia alla parte settentrionale di Jarvonia. Segnato con
           una linea rossa si vede un sentiero che porta a quello che sembra essere
           un ghiacciaio con un igloo.
+        name: Misteriosa mappa del nord
       trash:
         name: Spazzatura
+        desc: Una collezione di oggetti inutili e senza valore. Perché mai l'hai preso?
       crosswordPuzzle:
         name: Vecchio cruciverba
         desc: Gioco di parole, nove lettere, inizia con la C.
+      clam:
+        desc: Bianco perlaceo e perfettamente intatto. Un bellissimo esemplare per
+          un collezionista.
+        name: Conchiglia
+      fishingLine:
+        name: Lenza da pesca
+        desc: Recuperare questo dalla natura potrebbe aver appena salvato la vita
+          di un animale.
+      unidentifiedRemains:
+        desc: La Gilda degli Avventurieri ti sarebbe grata se restituissi loro questo
+          mucchio di ossa, potrebbe aiutarli a risolvere una questione in sospeso.
+        name: Resti non identificati
+      adventurersPin:
+        desc: Una spilla con il simbolo della Gilda degli Avventurieri. È un po' arrugginita,
+          ma ancora lucida. La Gilda degli Avventurieri ti sarebbe grata se la restituissi.
+        name: Spilla degli avventurieri
+      pearls:
+        desc: Una serie di denti bianchi come perle. Ottimo materiale per realizzare
+          gioielli.
+        name: Perle
+      fishbone:
+        name: Lischia
+        desc: Sebbene sia piuttosto raccapricciante e piuttosto maleodorante, sembra
+          piuttosto interessante.
+      seashell:
+        name: Conchiglia marina
+        desc: Probabilmente venduto da qualcuno su una spiaggia.
+      nameTag:
+        name: Targhetta identificativa
+        desc: Una targhetta con inciso il nome di un avventuriero scomparso da tempo.
+          La Gilda degli Avventurieri potrebbe essere interessata a questo oggetto.
+      invasiveSpeciesTag:
+        name: Targhetta specie invasive
+        desc: Una targhetta metallica con l'immagine della bocca di una creatura simile
+          a un verme.
