@@ -48,12 +48,35 @@ maps:
   skillTypes:
     "gathering": Le abilità di raccolta includono <skill skill="foraging"/>, <skill
       skill="fishing"/>, <skill skill="mining"/> e <skill skill="woodcutting"/>.
-    "artisan": Le abilità artigianali comprendono <skill skill="cooking"/>, <skill
-      skill="crafting"/>, <skill skill="carpentry"/>, <skill skill="smithing"/> e
-      <skill skill="tinkering"/>.
+    "artisan": Le abilità artigianali includono<skill skill="cooking"/>, <skill skill="crafting"/>,
+      <skill skill="carpentry"/>, <skill skill="smithing"/> e <skill skill="tinkering"/>.
     "utility": Le abilità di utilità includono <skill skill="agility"/>.
 singulars:
   info:
     inventoryFull: Il tuo inventario è pieno! Per tutte le attività, eccetto il viaggio,
       essere sovraccarichi rallenterà le tue azioni. Puoi andare in banca per depositare
       gli oggetti, oppure eliminare alcuni oggetti dal tuo inventario per fare spazio.
+    bankUsage: "Premendo a lungo i pulsanti di deposito o prelievo è possibile depositare
+      o prelevare fino a <c i=0>1000</c> oggetti alla volta. È possibile utilizzare
+      la ricerca nella banca per trovare rapidamente gli oggetti. È possibile effettuare
+      la ricerca per <c i=0>nome, parole chiave, abilità o slot</c>.\n\n<c i=0>La
+      tua banca ha spazio illimitato!</c>\n\nPuoi anche utilizzare il pulsante <icon
+      i=\"Favorited\"/> <c i=1>Preferiti</c> per visualizzare solo i tuoi oggetti
+      preferiti."
+    lockFavoriteItem: "<icon i=\"Favorited\"/> <c i=0>Preferito</c>: non puoi scartare
+      o vendere questo oggetto. Puoi comunque utilizzarlo per la creazione, i lavori
+      e altre azioni.\n\n<icon i=\"Locked\"/> <c i=1>Bloccato</c>: non puoi vendere,
+      scartare o depositare questo oggetto mentre è bloccato. Puoi comunque utilizzarlo
+      per la creazione, i lavori e altre azioni.\n\nIl blocco o l'aggiunta ai preferiti
+      di un oggetto viene applicato a tutti gli oggetti simili presenti nel tuo inventario
+      e nella tua banca. Puoi sbloccare o rimuovere dagli oggetti preferiti gli oggetti
+      presenti nel tuo inventario o nella tua banca."
+    inventoryUsage: "Una pressione prolungata su una pila di oggetti <c i=0>aprirà
+      la modalità di selezione multipla</c>, consentendoti di selezionare più pile
+      contemporaneamente per rilasciarle o depositarle.\n\nIl pulsante <c i=0>Opzioni</c>
+      nella parte inferiore ti consente di modificare la modalità di visualizzazione
+      delle pile di oggetti.\n\n<bp /><icon i=\"Deposit\" /> <hl>Tutto</hl>: deposita
+      tutti gli oggetti nel tuo inventario in banca, se disponibile nella tua posizione.\n\
+      \n<bp /><icon i=\"Bank small\" /> <hl>Banca</hl>: apre la tua banca e ti consente
+      di effettuare depositi o prelievi, se disponibili nella tua posizione.\n\n<bp
+      /><icon i=\"Ordina\" /> <hl>Ordina</hl>: ordina il tuo inventario.\n"
