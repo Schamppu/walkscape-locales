@@ -170,6 +170,10 @@ singulars:
           un error y quieres apelar la decisión, puedes contactar con nosotros enviando
           un email a {email}.
         title: Has sido bloqueado permanentemente en WalkScape
+      failureToValidateClient:
+        text: El cliente del juego no pudo validar el cliente. Esto se debe probablemente
+          a un error de red. Por favor, reinicia el juego e inténtalo de nuevo.
+        title: Fallo al validar el cliente
     characterValidation:
       nameTooShort: El nombre del personaje debe tener una longitud mayor de tres
         letras.
@@ -211,6 +215,16 @@ singulars:
         title: No se pudo obtener el tiempo del servidor
         text: El cliente del juego no pudo obtener el tiempo del servidor. Por favor,
           comprueba tu conexión e inténtalo otra vez.
+      gameAssetUpdateFailed:
+        title: Fallo en la actualización de los recursos del juego
+        text: El cliente del juego no pudo actualizar los recursos del juego. Por
+          favor, intenta reabrir el juego para ver si los recursos se descargan exitosamente,
+          y si eso no funciona, reinstalar el juego podría ayudar.
+      gameAssetsUpdated:
+        title: Recursos del juego actualizados
+        text: Ha habido una actualización de los recursos del juego, los cuales ya
+          han sido descargados. Tendrás que reiniciar el juego para aplicar estos
+          cambios.
   info:
     game:
       equipGearSetSomeFailed:
@@ -291,3 +305,17 @@ singulars:
     downloadLanguage:
       title: ¿Seleccionar y descargar idioma?
       text: Cambiar el idioma requiere descargar datos adicionales. ¿Quieres continuar?
+    droppingHighValueItems:
+      title: ¿Soltar objetos de alto valor?
+      text: Estás a punto de <c>soltar objetos valiosos de los que podrías arrepentirte</c>!
+        ¿Seguro que quieres soltar estos objetos?
+    sellHighValueItems:
+      title: ¿Vender objetos de alto valor?
+      text: ¡Estás a punto de <c>vender objetos de gran valor de los que podrías arrepentirte</c>!
+        ¿Estás seguro de que quieres vender estos objetos?
+    toggleAgilityXp:
+      title: ¿Desactivar la obtención de EXP de agilidad al viajar?
+      text: ¿Seguro que quieres desactivar la obtención de experiencia de agilidad
+        al viajar? Puedes volver a activarla más tarde desde la configuración. Esta
+        configuración está pensada para quienes desean crear personajes especializados
+        que no obtengan experiencia de agilidad.
