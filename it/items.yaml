@@ -272,6 +272,29 @@ singulars:
           desc: 'Una rete semplice, un umile strumento di un semplice pescatore. Poco
             più che alcuni pezzi di corda legati insieme.'
           name: Rete da pesca piccola
+        lobsterPot:
+          name: Nacella per aragoste
+          desc: Mettilo in mare e lì ci sarà un'aragosta.
+        advancedFishingRod:
+          name: Canna da pesca avanzata
+          desc: La canna avanzata è destinata all'uso da parte di pescatori professionisti.
+        willowFishingRod:
+          desc: La canna da pesca realizzata in salice è leggera e morbida al tatto.
+          name: Canna da pesca in salice
+        coralFishingSpear:
+          name: Lancia da pesca per coralli
+          desc: Questa lancia da pesca è realizzata con coralli e idrilium. Ha diverse
+            punte affilate per facilitare la cattura dei pesci.
+        tidalLure:
+          name: Esca di marea
+          desc: L'esca sembra un vortice. Molto efficace nell'attirare i pesci.
+        bectoFishingRod:
+          desc: Ossa assemblate in modo certosino su vertebre e tenute insieme dalla
+            forza dell'ectoplasma così da creare un nuovo potere nel modo di pescare.
+          name: Canna da pesca spettrale
+        elderhideFishingNet:
+          name: Rete da pesca di Elderhide
+          desc: Una rete da pesca creata con il durevole materiale Elderhide
       mining:
         basicPickaxe:
           desc: Il piccone, umile strumento dei minatori. Difficilmente più di un
@@ -300,6 +323,25 @@ singulars:
           desc: 'Il piccone di metallo scuro si abbina molto bene alla musica heavy
             metal.'
           name: Piccone di tarsilio
+        adamantPickaxe:
+          name: Piccone di adamantio
+          desc: Questo piccone di colore verde minaccia i minerali inferiori che lo
+            circondano. Sembra arrabbiato per essere solo un piccone.
+        hydriliumPickaxe:
+          name: Piccone di idrilium
+          desc: Un piccone realizzato con un raro materiale sottomarino chiamato idrilium.
+        bectoPickaxe:
+          desc: Un pezzo di osso resistente potenziato con ectoplasma per assumere
+            la forma di un piccone. Dovrebbe rimuovere un pezzo considerevole di roccia
+            ad ogni colpo.
+          name: Piccone spettrale
+        hydriliumMagnet:
+          name: Magnete di idrilium
+          desc: Un magnete da minatore infuso con idrilium.
+        petrifiumHatchet:
+          name: Piccone di violite
+          desc: Questo piccone di violite ha raggiunto uno stato che solo altri strumenti
+            possono sognare. Ti permette di spaccare le rocce con precisione distruttiva.
       woodcutting:
         basicHatchet:
           desc: L'accetta, umile strumento dei boscaioli. Difficilmente più di un
@@ -325,8 +367,67 @@ singulars:
             pronta a eseguire i suoi ordini.'
           name: Accetta d'acciaio
         tarsiliumHatchet:
-          desc: ''
+          desc: 'La testa dell''ascia in metallo scuro non riflette molto la luce,
+            ma taglia molto bene il legno.'
           name: Accetta di tarsilio
+        adamantHatchet:
+          name: Ascia di adamantio
+          desc: "Un'ascia di metallo verde adamantio: forse non è un colore molto
+            creativo, ma è ottima per tagliare la legna."
+        hydriliumHatchet:
+          desc: Un'ascia realizzata con un raro materiale sottomarino chiamato idrilium.
+          name: Ascia di idrilium
+        bectoHatchet:
+          desc: Un ammasso di ossa a cui l'ectoplasma ha conferito il potere di assumere
+            la forma di un'ascia. Non sembra, dato che è trasparente, ma la sua lama
+            è piuttosto affilata.
+          name: Ascia spettrale
+        hydriliumLogSplitter:
+          name: Spaccalegna di idrilium
+          desc: Uno spaccalegna rinforzato con idrilium.
+        petrifiumHatchet:
+          name: Accetta di violite
+          desc: Questa ascia di violite sembra molto pericolosa, vista la sua affilatura.
+            Meglio stare attenti a non inciampare mentre la si trasporta.
+      foraging:
+        adamantSickle:
+          desc: La falce di adamantio brilla con una tonalità verdastra, garantendo
+            sia durata che affilatura per un raccolto efficiente.
+          name: Falce di adamantio
+        stoneSickle:
+          name: Falce di base
+          desc: Uno strumento fondamentale per raccogliere i frutti della natura.
+            Il suo bordo grezzo non è molto efficiente.
+        mangroveBasket:
+          desc: Il cesto di mangrovia è stato realizzato con due cesti diversi, ma
+            le assi di mangrovia nascondono perfettamente le giunture.
+          name: Cesto di mangrovia
+        copperSickle:
+          name: Falce di rame
+          desc: Offre una discreta efficienza nel taglio di piante di base.
+        ironSickle:
+          name: Falce di ferro
+          desc: Robusto e affidabile, taglia con facilità anche i gambi più resistenti.
+        steelSickle:
+          name: Falce in acciaio
+          desc: Robusto e resistente, offre prestazioni affidabili per un foraggiamento
+            esteso.
+        hydriliumSickle:
+          name: Falce di idrilium
+          desc: Una falce realizzata con un raro materiale sottomarino chiamato idrilium.
+        bectoSickle:
+          name: Falce spettrale
+          desc: Un osso rinforzato con il potere dell'ectoplasma per assumere la forma
+            di una falce. Sembra fragile, ma taglia le piante con tale facilità che
+            sembrerebbe che siano state trovate già così.
+        petrifiumSickle:
+          name: Falce di violite
+          desc: La falce di violite vanta un metallo viola molto resistente. È sorprendentemente
+            leggera nonostante la sua robustezza.
+      miscellaneous:
+        bagOfRocks:
+          name: Sacco di pietre
+          desc: È difficile trascinarlo in giro, perché lo stai facendo di nuovo?
   looted:
     equipmentSets:
       dimensional:
@@ -821,11 +922,11 @@ singulars:
         desc: Un pezzo di minerale d'argento. Non prezioso come l'oro, ma brillante
           di una lucentezza tutta sua.
       crystalShards:
-        desc: Frammenti di cristallo che contengono una flebile energia.  Magari è
+        desc: Frammenti di cristallo che contengono una flebile energia. Magari è
           il desidero di essere trasformati in qualcosa di migliore.
         name: Cristallo frantumato
       adamantOre:
-        name: Minerale di adamante
+        name: Minerale di adamantio
         desc: Una roccia verde un po' più pesante e resistente rispetto alle altre
           maneggiate fino ad ora. Può essere fusa per diventare ancora più forte.
       petrifiumOre:
@@ -834,9 +935,14 @@ singulars:
           Emana una grande forza pur non essendo nella sua forma finale.
       crystallizedFlame:
         name: Fiamme cristallizzate
-        desc: Un grosso pezzo di cristallo che sembra contenere  l'essenza stessa
-          del fuoco. Si possono vedere delle fiamme danzare sulla superficie e si
-          può sentire il calore che sprigiona anche senza che sia davvero in fiamme.
+        desc: Un grosso pezzo di cristallo che sembra contenere l'essenza stessa del
+          fuoco. Si possono vedere delle fiamme danzare sulla superficie e si può
+          sentire il calore che sprigiona anche senza che sia davvero in fiamme.
+      ectoRock:
+        name: Roccia di ectoplasma
+        desc: Questo grande pezzo di roccia è impregnato di ectoplasma e irradia un'aura
+          spettrale che trasmette una strana sensazione. Per lavorarlo avrai bisogno
+          di una fucina maledetta.
     rawFish:
       rawCarp:
         desc: Il sapore blando della carpa si presta bene alla preparazione di diversi
@@ -914,6 +1020,10 @@ singulars:
         name: Persico trota crudo
         desc: Questo pesce verde è conosciuto per la sua bocca sproporzionata che
           usa per ingurgitare le cose.
+      ectoFish:
+        desc: Questi vari pesci sono infusi di ectoplasma e hanno un aspetto spettrale.
+          Per cucinarli avrai bisogno di una cucina maledetta.
+        name: Pesce ectoplasma
     smithing:
       bronzeBar:
         desc: 'Il lingotto di bronzo, reliquia delle fucine naniche, emana un fascino
@@ -959,6 +1069,14 @@ singulars:
       metalFragment:
         desc: Alcuni scarti di metallo di alta qualità.
         name: Frammento di metallo
+      petrifiumBar:
+        desc: Una barra di violite. Sembra quasi che si possa schiacciare, ma è riluttante
+          a perdere la sua forma.
+        name: Barra di violite
+      adamantBar:
+        name: Barra di adamantio
+        desc: Una barra resistente di metallo verde. Ora chiede di essere rimodellata
+          per continuare a crescere in forza.
     woodcutting:
       birchLogs:
         desc: Lisci e pallidi, i tronchi di betulla emanano un'elegante semplicità.
@@ -1081,13 +1199,82 @@ singulars:
         name: Ciondolo gambero
         desc: Il ciondolo a forma di gambero brilla alla luce. Potrebbe tornare utile
           come amuleto un giorno.
+      sharkToothTrinket:
+        name: Ciondolo a forma di dente di squalo
+        desc: Il ciondolo a forma di dente di squalo brilla alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+      measuringSpoonsTrinket:
+        desc: Il ciondolo a forma di cucchiaio dosatore brilla alla luce. Un giorno
+          potrebbe tornare utile come amuleto.
+        name: Cucchiaini dosatori portagioie
+      beaverTrinket:
+        name: Ciondolo a forma di castoro
+        desc: Il ciondolo a forma di castoro brilla alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+      luckyRabbitFootTrinket:
+        name: Ciondolo a forma di zampa di coniglio portafortuna
+        desc: Il ciondolo a forma di zampa di coniglio portafortuna brilla alla luce.
+          Un giorno potrebbe tornare utile come amuleto.
+      compassTrinket:
+        desc: Il ciondolo a forma di bussola brilla alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+        name: Ciondolo bussola
+      circularRootTrinket:
+        desc: Il ciondolo circolare con la radice brilla alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+        name: Ciondolo con radice circolare
+      pinkPearlTrinket:
+        name: Ciondolo con perla rosa
+        desc: Il ciondolo di perla rosa brilla luminoso alla luce. Un giorno potrebbe
+          tornare utile come amuleto.
+      coolingIceTrinket:
+        name: Ciondolo ghiacciolo refrigerante
+        desc: Il ciondolo a forma di ghiacciolo brilla luminoso alla luce. Un giorno
+          potrebbe tornare utile come amuleto.
     misc:
       glacierMap:
         desc: La mappa assomiglia alla parte settentrionale di Jarvonia. Segnato con
           una linea rossa si vede un sentiero che porta a quello che sembra essere
           un ghiacciaio con un igloo.
+        name: Misteriosa mappa del nord
       trash:
         name: Spazzatura
+        desc: Una collezione di oggetti inutili e senza valore. Perché mai l'hai preso?
       crosswordPuzzle:
         name: Vecchio cruciverba
         desc: Gioco di parole, nove lettere, inizia con la C.
+      clam:
+        desc: Bianco perlaceo e perfettamente intatto. Un bellissimo esemplare per
+          un collezionista.
+        name: Conchiglia
+      fishingLine:
+        name: Lenza da pesca
+        desc: Recuperare questo dalla natura potrebbe aver appena salvato la vita
+          di un animale.
+      unidentifiedRemains:
+        desc: La Gilda degli Avventurieri ti sarebbe grata se restituissi loro questo
+          mucchio di ossa, potrebbe aiutarli a risolvere una questione in sospeso.
+        name: Resti non identificati
+      adventurersPin:
+        desc: Una spilla con il simbolo della Gilda degli Avventurieri. È un po' arrugginita,
+          ma ancora lucida. La Gilda degli Avventurieri ti sarebbe grata se la restituissi.
+        name: Spilla degli avventurieri
+      pearls:
+        desc: Una serie di denti bianchi come perle. Ottimo materiale per realizzare
+          gioielli.
+        name: Perle
+      fishbone:
+        name: Lischia
+        desc: Sebbene sia piuttosto raccapricciante e piuttosto maleodorante, sembra
+          piuttosto interessante.
+      seashell:
+        name: Conchiglia marina
+        desc: Probabilmente venduto da qualcuno su una spiaggia.
+      nameTag:
+        name: Targhetta identificativa
+        desc: Una targhetta con inciso il nome di un avventuriero scomparso da tempo.
+          La Gilda degli Avventurieri potrebbe essere interessata a questo oggetto.
+      invasiveSpeciesTag:
+        name: Targhetta specie invasive
+        desc: Una targhetta metallica con l'immagine della bocca di una creatura simile
+          a un verme.

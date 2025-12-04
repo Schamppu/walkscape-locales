@@ -3,6 +3,7 @@ singulars:
     rockStarAmulet:
       completed: You touch the star-shaped amulet and <hl>it creates a few gems</hl>
         in your palm.
+      text: Creates 5 random <hl>rough gems</hl>.
     algaeRing:
       completed: You rub the <item id="_source" /> and all of the sudden realize that
         you're in <location i="_location" />.
@@ -11,12 +12,60 @@ singulars:
       text: Teleport to <location i="_location" />
       completed: You rub the <item id="_source" /> and all of the sudden realize that
         you're in <location i="_location" />.
+    shoesOfEscape:
+      text: Completes _count <hl>Traveling</hl> actions instantly.
+      completed: You jump a few times in place, and suddenly the <item id="_source"
+        /> make you almost uncontrollably fast. You feel like you could run forever,
+        or at least until your insane speed wears off.
+    axeOfDestruction:
+      text: Completes _count <skill skill="woodcutting"/> actions instantly.
+      completed: You swing the <item id="_source" /> and the trees in front of you
+        fall down in a single hit. You feel like you could cut down a whole forest
+        with this axe.
   memospheres:
     woodcutting:
       completed: You put your hand on the orb and experience a tree's life from sapling
         to log. You wipe a tear from your eye and feel like you could cut trees more
         efficiently.
+      text: Grants <skill skill="woodcutting"/> experience.
     smithing:
       completed: You poke into the orb and start feeling like a bar of iron being
         hammered into a sword. It hurts a bit, but you feel like you could smith better
         now.
+      text: Grants <skill skill="smithing"/> experience.
+    agility:
+      text: Grants <skill skill="agility"/> experience.
+      completed: You touch the glowing orb and realize that you're in better shape
+        than before.
+    cooking:
+      completed: You touch the orb that has a cooking pot inside and it almost burns
+        your fingers. You feel like you've learned something new about cooking.
+      text: Grants <skill skill="cooking"/> experience.
+    fishing:
+      completed: You put your hand on the orb and feel like your head is a fish bowl.
+        You understand fish better now.
+      text: Grants <skill skill="fishing"/> experience.
+    carpentry:
+      text: Grants <skill skill="carpentry"/> experience.
+      completed: You poke into the orb and start ruminating on how to make better
+        furniture and cut planks more efficiently.
+    crafting:
+      text: Grants <skill skill="crafting"/> experience.
+      completed: You touch the glowing orb and suddenly feel like you might be able
+        to craft things better.
+    foraging:
+      text: Grants <skill skill="foraging"/> experience.
+      completed: You feel the glowing orb and have a quick vision of a forest full
+        of berries and mushrooms. You feel like you could find them more easily.
+    mining:
+      text: Grants <skill skill="mining"/> experience.
+      completed: You touch the glowing orb and start hearing the sound of pickaxes
+        hitting rocks. You feel like you could mine more efficiently.
+    trinketry:
+      text: Grants <skill skill="trinketry"/> experience.
+      completed: You put your hand on the orb and start seeing a kaleidoscope of gems
+        floating just above you. You can see patterns and planes you've never considered
+        before.
+  sliderTexts:
+    grantExperience:
+      text: Grants {experience} <skill skill="{skill}"/> experience.
