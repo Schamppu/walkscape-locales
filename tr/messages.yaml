@@ -89,6 +89,10 @@ singulars:
         text: WalkScape'ten kalıcı olarak men edildin. Bunun bir hata olduğunu düşünüyor
           ve itiraz etmek istiyorsan, {email} adresine bir e-posta göndererek bize
           ulaşabilirsin.
+      failureToValidateClient:
+        title: Uygulama doğrulaması başarısız oldu
+        text: Oyun uygulaması büyük ihtimalle bir ağ sorunu nedeniyle kendini doğrulayamadı.
+          Lütfen oyunu yeniden açarak tekrar dene.
     gameError:
       initializingGameFailed:
         text: Oyun uygulaması başlatılamadı. Lütfen bu durumu hatanın ve cihazının
@@ -116,6 +120,15 @@ singulars:
         title: Sunucu zamanına ulaşılamadı
         text: Oyun uygulaması sunucu zamanına ulaşamadı. Lütfen internet bağlantını
           kontrol et ve tekrar dene.
+      gameAssetsUpdated:
+        title: Oyun dosyaları güncellendi
+        text: Oyun dosyalarına gelen bir güncelleme indirildi. Değişiklikleri uygulamak
+          için oyunu yeniden başlatmalısın.
+      gameAssetUpdateFailed:
+        title: Oyun dosyası yüklemesi başarısız oldu
+        text: Oyun uygulaması dosyaları yüklemeyi başaramadı. Lütfen oyunu yeniden
+          açarak dosyaları indirmeyi tekrar dene. Bu yöntem işe yaramazsa uygulamayı
+          silip yeniden kurmak yardımcı olabilir.
     activityCancelled:
       title: Faaliyet iptal edildi
       stepsAreInfinite: Gereksinimlerini artık karşılamadığın için mevcut faaliyet
@@ -292,3 +305,7 @@ singulars:
       title: Değerli eşyalar atılsın mı?
       text: <c>Attığın için pişman olabileceğin değerli eşyaları</c> atmak üzeresin!
         Bu eşyaları atmak istediğine emin misin?
+    sellHighValueItems:
+      title: Değerli eşyalar satılsın mı?
+      text: <c>Sattığın için pişman olabileceğin değerli eşyaları</c> satmak üzeresin!
+        Bu eşyaları satmak istediğine emin misin?
