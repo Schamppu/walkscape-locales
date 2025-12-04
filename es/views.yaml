@@ -579,15 +579,15 @@ singulars:
         mientras haces actividades.
       noActivity: Ninguna actividad seleccionada. <hl>Selecciona una aquí debajo</hl>,
         o desliza hacia la izquierda para ver todo lo disponible en esta localización.
-      savedSteps: Tienes pasos guardados que están siendo usados. Cada paso cuenta
-        como dos hasta que no queden pasos guardados.
+      savedSteps: Los pasos guardados evitan que los pasos se desperdicien y se acumulan
+        al caminar cuando no hay ninguna actividad activa. Se agotan duplicando los
+        pasos que das cuando vuelves a tener una actividad activa.
     phrases:
       consumables: Consumibles
       noActivity: Sin actividad
       savedSteps: Pasos guardados
       inventoryIsOverLimit: ¡Inventario por encima del límite!
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Eficiencia de trabajo global
-        <c>-{penalty}%</c>
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Eficiencia de trabajo base<c>-{penalty}%</c>
       notAffectingTraveling: (no afecta a la eficiencia al viajar)
       stopWhenOverEncumbered: Parar al sobrecargarse
       options: Opciones
@@ -604,6 +604,10 @@ singulars:
       noActivitiesInLocation: No hay actividades en <object id="{location}"/>.
       activitiesInLocation: Actividades disponibles en <object id="{location}"/>
       guideTip: Consejo del día
+      savedStepsUsed: Pasos guardados usados
+      inputs: Entradas
+      workEfficiency: Eficiencia de trabajo
+      maxWorkEfficiency: Máxima eficiencia de trabajo
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> experiencia
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} coleccionables</c> que
