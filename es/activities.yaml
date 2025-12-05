@@ -148,6 +148,12 @@ singulars:
           murciélagos desde su casa en primavera, corriendo día y noche para encontrar
           dónde está su siguiente hogar. Puede que tardes en volver.
         name: Rastrear murciélagos en primavera
+    wallisia:
+      shorelineScramble:
+        desc: Recorres la estrecha costa y se corre entre los restos de naufragios
+          y las formaciones rocosas de la zona. Perder el equilibrio en esta zona
+          provocaría un gran chapoteo en las aguas.
+        name: Lucha en la costa
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -179,6 +185,13 @@ singulars:
           bloque de hielo en otra cosa, ya sea funcional o artística. La fugacidad
           de esta obra de arte es proporcional a la temperatura ambiente y su duración
           varía desde minutos hasta ser permanente.
+    wallisia:
+      townReconstruction:
+        name: Reconstrucción de la ciudad
+        desc: Ayudas a los habitantes del pueblo con sus proyectos de mantenimiento
+          y reconstrucción para que tengan una vivienda adecuada. Requiere mucho trabajo
+          y pones a prueba tus conocimientos de carpintería, pero parece que el pueblo
+          mejora constantemente.
   cooking:
     gdte:
       wineGrapeStomping:
@@ -251,9 +264,9 @@ singulars:
           serena belleza. Sus calmadas aguas son tentadoras y prometedoras.
         name: Pescar en estanque
       seaFishingNet:
-        desc: A lo largo de la costa invernal, buscas un lugar apartado y lanzas la
-          red en las tranquilas y frías aguas, disfrutando de la apacible soledad
-          de la pesca en el mar.
+        desc: A lo largo de la costa, buscas un lugar apartado y lanzas la red en
+          las tranquilas aguas, disfrutando de la apacible soledad de la pesca en
+          el mar.
         name: Pescar en mar (Red)
       seaFishingRod:
         desc: A lo largo de la costa invernal, buscas un lugar apartado y lanzas el
@@ -278,6 +291,21 @@ singulars:
           de lo que te rodea. Cada fibra de tu ser está preparada para atacar a cualquier
           depredador antes de que éste pueda atacarte a ti.
         name: Cazar depredadores (Arpón)
+    wallisia:
+      floodedRiverFishingRod:
+        desc: Lanzas tu caña de pescar a las aguas inundadas del río, con la esperanza
+          de atrapar algunos peces únicos que se han adaptado a su nuevo entorno.
+        name: Pescar en ríos inundados (caña)
+      ectoFishing:
+        desc: El agua aquí brilla con tonos extraños y espeluznantes que irradian
+          una energía fantasmal. Te preguntas qué comen los peces y si estás usando
+          la herramienta adecuada para pescarlos. Tu mente divaga pensando en intentar
+          cocinarlos más tarde para ver si son comestibles.
+        name: Pesca de ectoplasma
+      isthmusSeaFishingNet:
+        desc: En las aguas costeras del istmo, lanzas tu red con el objetivo de capturar
+          una variedad de criaturas que prosperan en esta zona.
+        name: Pesca marítima en el Istmo (Red)
   foraging:
     gdte:
       butterflyCatching:
@@ -373,6 +401,20 @@ singulars:
         name: Bucear en naufragio
         desc: Buceas dentro del pecio que es la tumba de Casbrant, esperando encontrar
           tesoros.
+    wallisia:
+      floodedFieldScavenging:
+        name: Recolección de residuos en campos inundados
+        desc: Caminas por los campos húmedos en busca de plantas y materiales viables
+          que hayan logrado sobrevivir e incluso prosperar en este ambiente húmedo.
+      dragonflyCatching:
+        name: Captura de libélulas
+        desc: Utilizas tu red para perseguir y atrapar libélulas que se lanzan de
+          un lado a otro rápidamente por toda el área.
+      graveyardForaging:
+        name: Recolectar en el cementerio
+        desc: Recorres el cementerio buscando objetos únicos y fuera de lugar que
+          se desprendieron de las inundaciones de la zona. No es un robo grave si
+          no sigue en la tumba, ¿verdad?
   mining:
     global:
       mineCoal:
@@ -458,6 +500,38 @@ singulars:
         name: Cavar acueducto submarino
         desc: Abre paso para los carpinteros que vienen detrás de ti, retirando los
           escombros y asegurándote de que la zona no se derrumbe.
+    wrentmark:
+      minePetrifiumOre:
+        desc: Evalúas las rocas violetas de petrifio duro frente a ti y trazas tu
+          camino para extraer mejor los minerales de ellas sin lastimarte en el proceso.
+        name: Extraer petrifio
+      mineCrystalShards:
+        desc: Parece una lástima intentar extraer cristales de rocas tan grandes y
+          hermosas, pero los fragmentos potenciales en que se rompen aún conservan
+          la belleza del original.
+        name: Extraer fragmentos de cristal
+      mineSilverOre:
+        name: Extraer plata
+        desc: Con el rabillo del ojo, ves unas rocas plateadas y te pones a trabajar
+          para rastrear la veta de mineral de plata que hay en su interior.
+      mineGoldOre:
+        name: Extraer oro
+        desc: Notas destellos de oro entre las rocas y comienzas inmediatamente a
+          extraerlo con la esperanza de encontrar la veta madre.
+      mineAdamantOre:
+        name: Extraer adamantio
+        desc: Al encontrar las duras rocas de adamantio frente a ti, sacas tu mejor
+          equipo para intentar extraer el mineral de la roca.
+      mineGemRocksLow:
+        name: Extraer gemas (baja)
+        desc: Te llama la atención una roca que parece contener algunos rastros de
+          gemas. Al picar en ella, quizás encuentres algunas.
+    wallisia:
+      mineEctoRocks:
+        name: Extraer rocas de ectoplasma
+        desc: Afloramientos de grandes rocas que parecen brillar con la energía fantasmal
+          y misteriosa del entorno. Blandes tu pico con la esperanza de llevarte fragmentos
+          para refinarlos.
   smithing:
     jarvonia:
       horseshoeMaking:
@@ -521,11 +595,14 @@ singulars:
         desc: Golpeas el bambú con el hacha. Produce un crujido agradable.
         name: Talar bambú
       cutYewTrees:
-        name: Cortar Tejos
+        name: Talar Tejos
         desc: Los tejos son robustos y requieren mucho más esfuerzo para ser talados.
           Sin embargo, con el tiempo, logras derribarlos para segmentarlos en troncos.
       cutEctoTrees:
-        name: Cortar árboles de ectoplasma
+        name: Talar árboles de ectoplasma
+        desc: Los árboles aquí parecen de otro mundo; su aspecto inquietante y la
+          energía fantasmal que emanan los hacen intimidantes incluso antes de intentar
+          talarlos. Estás ansioso por procesar los troncos que traerán.
   misc:
     emergencySwimEscape:
       name: Natación de escape de emergencia
