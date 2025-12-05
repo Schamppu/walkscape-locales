@@ -123,3 +123,12 @@ singulars:
     text: W trakcie wykonywania <skillType type="{type}"/>.
   keywordEquipped:
     text: Miej wyposażony <object id="{obj}" /> .
+  itemQualityEquipped:
+    withoutType: Miej co najmniej <numberProgress current="{current}" max="{max}"
+      /> <itemQuality quality="{quality}" type="crafted"/> lub <itemQuality quality="{quality}"
+      type="loot"/> wyposażone przedmioty.
+    text: Miej co najmniej <numberProgress current="{current}" max="{max}" /> <itemQuality
+      quality="{quality}" type="{type}"/> wyposażone przedmioty.
+  keywordWithLevelEquipped:
+    text: Miej wyposażony <object id="{obj}" /> który ma co najmniej poziom <skill
+      skill="{skill}"/> <numberProgress current="{current}" max="{max}" />.
