@@ -76,7 +76,7 @@ maps:
         de experiencia
       'showDailyTips': Mostrar consejos diarios
       'activityInformationOpen': Mostrar más información de actividad
-      'toggleAgilityXp': Deshabilitar la obtención de EXP de agilidad al viajar
+      'toggleAgilityXp': No obtener EXP de agilidad al Viajar
     visibilitySettings:
       'public': Público
       'friends': Solo amigos
@@ -113,7 +113,7 @@ maps:
       'gameplay': Juego
       'account': Cuenta
       'character': Personaje
-      'characterSpecific': Personaje específico
+      'characterSpecific': Específico del personaje
     custom:
       'dataSource': Origen de datos de pasos
     enumSettings:
@@ -168,8 +168,8 @@ maps:
       'system': Sistema
   skillTypes:
     'combat': Combate
-    'artisan': Artesano
-    'gathering': Recolección
+    'artisan': Artesanía
+    'gathering': Recogida
     'utility': Utilidad
   abilities:
     types:
@@ -400,6 +400,7 @@ singulars:
       requires: Requiere
       equipToToolSlot: Equipar en la ranura de herramienta {id}
       depositAll: Todo
+      hatchesInto: Se convierte en
     options:
       consenseInventory: Condensar inventario
       expandInventory: Expandir inventario
@@ -604,7 +605,7 @@ singulars:
       noActivity: Sin actividad
       savedSteps: Pasos guardados
       inventoryIsOverLimit: ¡Inventario por encima del límite!
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Eficiencia de trabajo base<c>-{penalty}%</c>
+      workEfficiencyPenalty: Eficiencia de trabajo base <c>-{penalty}%</c>
       notAffectingTraveling: (no afecta a la eficiencia al viajar)
       stopWhenOverEncumbered: Parar al sobrecargarse
       options: Opciones
@@ -624,9 +625,9 @@ singulars:
       savedStepsUsed: Pasos guardados usados
       inputs: Entradas
       workEfficiency: Eficiencia de trabajo
-      maxWorkEfficiency: Máxima eficiencia de trabajo
+      maxWorkEfficiency: Eficiencia de trabajo máxima
       agilityBonus: Nivel de Agilidad <c>{level}</c>
-      fromGear: Equipo equipado
+      fromGear: Equipo actual
       fromServices: Bono de servicio
       fromCollectibles: Coleccionables
       fromConsumables: Consumibles
@@ -641,8 +642,8 @@ singulars:
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} coleccionables</c> que
         se pueden encontrar
     options:
-      completeUntilActions: Completar para una serie de acciones
-      numberOfActions: Número de acciones
+      completeUntilActions: Completar una cantidad de acciones
+      numberOfActions: Cantidad de acciones
   character:
     info:
       skillBreakdown: Aquí está el desglose total de todas las habilidades que tu
@@ -779,7 +780,7 @@ singulars:
       holdToUse: Mantener pulsado para usar
       holdToCast: Mantener pulsado para lanzar
       alreadyHere: Ya te encuentras en <object id="{location}"/>. No se puede usar
-        la habilidad para viajar aquí.
+        el talento para viajar aquí.
     info:
       youHaveNoAbilities: <hl>No tienes talentos</hl>. Cierto equipo del juego puede
         otorgarte talentos que puedes usar para obtener algún beneficio instantáneo
@@ -795,9 +796,10 @@ singulars:
       cooldownReady: 'Enfriamiento: Listo'
       noCooldown: Sin enfriamiento.
       cooldown: Enfriamiento
-      source: Procedencia
-      requirements: Requerimientos
-      cooldownRequirements: Requerimientos de enfriamiento
+      source: Fuente
+      requirements: Requisitos
+      cooldownRequirements: Requisitos de enfriamiento
+      charges: Cargas
   treasury:
     phrases:
       openChest: Abrir
@@ -1105,7 +1107,7 @@ singulars:
       noGearSetFound: Kit de equipo elegido no encontrado, ¿lo has eliminado?
       activityInLocation: <object id="{activity}"/> en <object id="{location}"/>
       noPathFound: No se ha encontrado un camino al destino.
-      forXActions: Realizando <c>{count}</c> acciones
+      forXActions: Realizar durante <c>{count}</c> acciones
       inputNotMet: Requisitos de entrada no cumplidos
     suggestedOptions:
       startActivity: Actividad
