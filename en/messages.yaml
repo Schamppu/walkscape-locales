@@ -217,6 +217,17 @@ singulars:
       failureToValidateClient:
         title: Failed to validate client
         text: The game client failed to validate the client. This is likely due to network error. Please restart the game and try again.
+  validators:
+    textField:
+      maxTextLength: Maximum length is {max} characters.
+      minTextLength: Minimum length is {min} characters.
+      noConsecutiveSpaces: Consecutive spaces are not allowed.
+      noLeadingTrailingSpaces: Leading or trailing spaces are not allowed.
+      containsSpecialCharacters: Contains special characters that are not allowed.
+      emojisNotAllowed: Emojis are not allowed.
+      numbersNotAllowed: Numbers are not allowed.
+      specialCharactersAreNotAllowed: Special characters are not allowed.
+      spacesNotAllowed: Spaces are not allowed.
 plurals:
   dialogs:
     deleteClass:
