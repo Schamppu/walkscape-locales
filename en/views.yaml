@@ -66,6 +66,8 @@ singulars:
       noPathFound: No path found to the destination.
       forXActions: 'Doing for <c>{count}</c> actions'
       inputNotMet: 'Input requirements not met'
+      petNotFound: 'Chosen pet not found, have you retired it?'
+      summoningPet: 'Summoning pet <playerPet id="{pet}" />'
     options:
       switchGearSet:
         text: Switch to gear set
@@ -82,6 +84,12 @@ singulars:
       cancelGearSetSwitch:
         text: Cancel gear set switch
         desc: Cancels the chosen gear set switch for this action.
+      summonPet:
+        text: Summon pet
+        desc: Summons your pet before starting this action.
+      cancelSummonPet:
+        text: Cancel summoning pet
+        desc: Cancels the pet summoning for this action.
     suggestedOptions:
       startActivity: Activity
       startCrafting: Crafting
@@ -693,6 +701,8 @@ singulars:
       startedNewActivity: Started activity <object id="{activity}"/> in <object id="{location}"/>
       startedActivityNoLocation: Started activity <object id="{activity}"/>
       actionCancelled: Action cancelled
+      switchedToPet: Summoned <playerPet id="{pet}"/>
+      petDoesNotExist: The pet no longer exists, could not summon.
   announcements:
     phrases:
       unread: Unread
