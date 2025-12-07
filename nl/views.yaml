@@ -150,15 +150,17 @@ id="{skill}"/> ervaring', collectibles: '<bp /><icon i="Collectibles"/><c>{count
 verzamelobjecten</c> te vinden'}, options: {completeUntilActions: Voltooi specifiek
 aantal acties, numberOfActions: Aantal acties}}, abilities: {phrases: {abilities: Abilities,
 useAbility: Gebruik ability, holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt
-houden om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel},
-info: {abilitiesInfo: Abilities zijn speciale acties die je direct een voordeel in
-het spel geven. Abilities hebben een cooldown waar je op moet wachten voordat je de
-ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>.
-Bepaalde uitrusting in het spel geven je abilities die je kunt gebruiken om direct
-een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten
-om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet
-voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
-cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown., charges: Ladingen}},
+houden om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel,
+alreadyHere: 'Je bent al in <object id="{location}"/>. Ability kan niet gebruikt worden
+om hierheen te reizen.'}, info: {abilitiesInfo: Abilities zijn speciale acties die
+je direct een voordeel in het spel geven. Abilities hebben een cooldown waar je op
+moet wachten voordat je de ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je
+hebt geen abilities</hl>. Bepaalde uitrusting in het spel geven je abilities die je
+kunt gebruiken om direct een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {
+phrases: {followingMustBeTrueToUse: 'Vereisten om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan
+het volgende moet voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown
+resterend:', cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown., charges: Ladingen,
+source: Bron, cooldownRequirements: Cooldown vereisten, cooldown: Cooldown, requirements: Vereisten}},
 journal: {phrases: {jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare
 taken</c> die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren
 vanaf <c>prikborden</c> op verschillende locaties, zoals steden. Je kunt maximaal
@@ -178,11 +180,16 @@ moet op dezelfde locatie zijn als <object id="{obj}"/> om de beloning te ontvang
 collectRewards: Beloning innen, currentlyAcceptedJobs: Huidige geaccepteerde klusjes,
 browseJobBoards: Klusjes bekijken, travelToJobBoard: 'Reis naar <object id="{obj}"/>',
 cannotAcceptMore: Je kunt niet meer klusjes accepteren., complete: Voltooid, availableJobs: Beschikbare
-klusjes}, dialogs: {abandonJob: {title: Klusje opgeven, text: Weet je zeker dat je
-dit klusje wilt opgeven? Je zal de voortgang en beloningen van dit klusje kwijtraken.}}},
-gear: {phrases: {skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen
-gevechtsmodificatoren door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators
-door gedragen voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
+klusjes, availableJobInfo: 'Om klusjes te accepteren of te voltooien, moet je op de
+locatie van het klusje zijn.', youAreAtLocation: Je bent op de locatie van dit prikbord.,
+atLocation: 'Beschikbaar in <object id="{obj}"/>', jobAlreadyAccepted: Je hebt dit
+klusje geaccepteerd., cannotWithdraw: 'Je huidige locatie <object id="{obj}"/> heeft
+geen bank. Het opnemen van voorwerpen voor klusjes is niet mogelijk.'}, dialogs: {
+abandonJob: {title: Klusje opgeven, text: Weet je zeker dat je dit klusje wilt opgeven?
+Je zal de voortgang en beloningen van dit klusje kwijtraken.}}}, gear: {phrases: {
+skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen gevechtsmodificatoren
+door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators door gedragen
+voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
 modificatoren, combatModifiers: Gevechtsmodificatoren, noItemEquipped: Geen voorwerp
 uitgerust, noItemSelected: Geen voorwerp geselecteerd}}, tools: {phrases: {emptyToolSlot: Leeg
 gereedschapsvak, lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau
