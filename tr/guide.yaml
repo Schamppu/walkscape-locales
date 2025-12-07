@@ -39,9 +39,36 @@ maps:
     "18": Bir <hl>faaliyetin</hl> esas beceri gereksinimini aşan beceri seviyeleri
       20 seviyeye kadar her seviye için yaptığın faaliyete ekstra +%1,25 <hl>Verim</hl>
       verir.
+  skillTypes:
+    "gathering": 'Malzemeci beceriler: <skill skill="foraging"/>, <skill skill="fishing"/>,
+      <skill skill="mining"/>, <skill skill="woodcutting"/>.'
+    "utility": 'Yardımcı beceriler: <skill skill="agility"/>.'
+    "artisan": 'Üretici beceriler: <skill skill="cooking"/>, <skill skill="crafting"/>,
+      <skill skill="carpentry"/>, <skill skill="smithing"/>, <skill skill="tinkering"/>.'
 singulars:
   info:
     inventoryFull: Envanterin tamamen doldu! Envanterinin dolup taşmış olması, seyahat
       etme dışındaki faaliyetlerde eylemlerini yavaşlatır. Fazla eşyalarını saklamak
       için bir bankaya gidebilir ya da yer açmak için birkaç eşyayı envanterinden
       atabilirsin.
+    lockFavoriteItem: "<icon i=\"Favorited\"/> <c i=0>Favorilere ekle</c>: Bu eşyayı
+      atamaz veya satamazsın. Hala eşya üretmek, işleri tamamlamak veya diğer eylemler
+      için kullanabilirsin.\n\n<icon i=\"Locked\"/> <c i=1>Kilitle</c>: Bu eşyayı
+      kilitliyken atamaz, satamaz veya bankaya yatıramazsın. Hala eşya üretmek, işleri
+      tamamlamak veya diğer eylemler için kullanabilirsin.\n\nBir eşyayı kilitlemek
+      veya favorilere eklemek envanterin veya bankandaki bütün benzer eşyaları etkiler.
+      Aynı şekilde envanterin veya bankandaki eşyaları favorilerden çıkarıp kilitlerini
+      açabilirsin."
+    bankUsage: "\"Yatır\" veya \"çek\" tuşlarına basılı tutarak 1000 adete kadar eşyayı
+      tek seferde aktarabilirsin. Arama çubuğunu kullanarak eşyaları daha çabuk bulabilir,
+      <c i=0>eşya adı, anahtar kelime, beceri adı veya eşya yuvasını</c> aratabilirsin.\n\
+      \n<c i=0>Banka alanı sınırsızdır!</c>\n\nAyrıca <icon i=\"Favorited\"/> <c i=1>Favoriler</c>
+      tuşunu kullanarak yalnızca favori eşyalarına da bakabilirsin."
+    inventoryUsage: "Bir eşya yığınına basılı tutmak <c i=0>çoklu seçim modunu açar</c>.
+      Bu şekilde atmak veya yatırmak için birden fazla eşya yığınını seçebilirsin.\n\
+      \nAşağıdaki <c i=0>Seçenekler</c> tuşuyla eşya yığınlarının görünümünü değiştirebilirsin.\n\
+      \n<bp /><icon i=\"Deposit\" /> <hl>Tümü</hl>: Bulunduğun konumda bir banka varsa
+      envanterindeki eşyaların tümünü bankaya yatırır.\n\n<bp /><icon i=\"Bank small\"\
+      \ /> <hl>Banka</hl>: Bankanı açar ve bulunduğun konumda bir banka varsa eşya
+      yatırıp çekebilmeni sağlar.\n\n<bp /><icon i=\"Sort\" /> <hl>Sırala</hl>: Envanterindeki
+      eşyaları sıralar.\n"
