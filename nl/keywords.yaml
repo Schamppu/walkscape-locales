@@ -63,12 +63,24 @@ singulars:
     nugget:
       requirement: Vereist een <object id="nugget" />.
       name: Klompje
+      requirementLevel: Vereist een klompje met minstens <keywordRequirements /> in
+        zijn vereisten.
     processed:
       requirement: Vereist een <object id="processed" /> materiaal.
       name: Bewerkt
     offcut:
       name: Restant
       requirement: Vereist een <object id="offcut" />.
+    roughGem:
+      name: Ruwe edelsteen
+      requirement: Vereist een <object id="rough_gem" />.
+      requirementLevel: Vereist een ruwe edelsteen met minstens <keywordRequirements
+        /> in zijn vereisten.
+    cutGem:
+      name: Geslepen edelsteen
+      requirement: Vereist een <object id="cut_gem" />.
+      requirementLevel: Vereist een geslepen edelsteen met minstens <keywordRequirements
+        /> in zijn vereisten.
   tools:
     ruler:
       requirement: Vereist het dragen van een <object id="ruler" />.
@@ -274,6 +286,8 @@ singulars:
     huntingTrap:
       name: Jachtval
       requirement: Vereist het dragen van een <object id="huntingTrap" />.
+      requirementLevel: Vereist een jagersval met minstens <keywordRequirements />
+        in zijn vereisten.
   recipes:
     skills:
       cooking:
