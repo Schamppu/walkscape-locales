@@ -4,6 +4,7 @@ singulars:
       completed: Dotykasz świecącej kuli i zdajesz sobie sprawę, że jesteś w lepszej
         formie niż wcześniej.
       desc: Daje doświadczenie w <skill skill="agility"/>.
+      name: 'Memosfera: Zwinność'
     smithing:
       completed: Uderzasz w kulę i zaczynasz czuć się jak sztaba żelaza przebijana
         młotem w miecz. Trochę boli, ale czujesz, że teraz będziesz lepszym kowalem.
@@ -21,6 +22,7 @@ singulars:
       completed: Dotykasz kuli, w której znajduje się garnek, i prawie parzysz swoje
         palce. Masz wrażenie, że nauczyłeś się czegoś nowego o gotowaniu.
       desc: Daje doświadczenie w <skill skill="cooking"/>.
+      name: 'Memosfera: Gotowanie'
     foraging:
       completed: Czujesz świecącą kulę i masz szybką wizję lasu pełnego jagód i grzybów.
         Masz wrażenie, że możesz je znaleźć dużo łatwiej.
@@ -44,8 +46,35 @@ singulars:
     desc: Tworzy 5 losowych <hl>szorstkich klejnotów</hl>.
     completed: Dotykasz amuletu w kształcie gwiazdy i <hl>tworzy on kilka klejnotów</hl>
       w twojej dłoni.
+    name: Rock And Roll
   activities:
     springBatTracking:
       name: Wiosenne Śledzenie Nietoperzy
     exploreUnderwaterCave:
       name: Eksploracja Podwodnej Jaskini
+  takeMeHome:
+    completed: Pocierasz <item id="item-ring_of_homesickness-dfd0d52b-c064-4860-ae77-2f9c0cab7382"
+      /> i nagle zdajesz sobie sprawę, że jesteś w <location i="location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654"
+      />.
+    name: Powrót Do Domu
+    desc: Teleportuje cię do <object id="location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654"
+      />.
+  needToGoFast:
+    completed: Podskakujesz kilka razy w miejscu i nagle <item id="item-shoes_of_escape-bd6be47c-373b-4557-ba9f-35fb62e7d390"
+      /> sprawia, że stajesz się niemal niekontrolowanie szybki. Czujesz, że mógłbyś
+      biec w nieskończoność, dopóki twoja szalona prędkość nie ustanie.
+    name: Potrzeba Iść Szybko
+    desc: Wykonaj natychmiast akcję {count} <hl>Podróżowanie</hl>.
+  downGoesTheTrees:
+    name: Upadek Drzew
+    completed: Wymachujesz <item id="item-axe_of_destruction-a493952f-18b1-442b-be16-0385a014c01c"
+      />, a drzewa przed tobą padają jednym uderzeniem. Czujesz się, jakbyś mógł wyciąć
+      cały las tą siekierą.
+    desc: Wykonaj natychmiast akcję {count} <skill skill="woodcutting"/> .
+  mermaidsNeedMe:
+    name: Syreny Mnie Potrzebują
+    desc: Teleportuje Cię do <object id="location-vastalume-cf2f38ec-88d4-4129-a164-4deb5f0955d5"
+      />.
+    completed: Pocierasz <item id="item-algae_ring-751c337a-cb19-4243-abae-ba6468446ab8"
+      /> i nagle zdajesz sobie sprawę, że znajdujesz się w <object id="location-vastalume-cf2f38ec-88d4-4129-a164-4deb5f0955d5"
+      />.
