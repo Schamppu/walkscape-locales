@@ -113,35 +113,35 @@ s=\"skillLevel\" /> level"}, "whileMainSkill": {"desc": "<PLACEHOLDER>", "name":
 "desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"stepsRequired\"\
 /> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
 "text": "<stat s=\"stepsRequired\"/> tijdens het reizen"}, whenKeywordSetBonus: {
-name: <TIJDELIJKE AANDUIDING>}, whileMainSkillAndLocationKeyword: {text: <stat s="stepsRequired"/>
-terwijl <supp k="skill"/> in <supp k="keyword"/> locatie.}, whileMainSkillAndRealm: {
-text: <stat s="stepsRequired"/> terwijl <supp k="skill"/> in <supp k="realm"/>.}},
-"travelingDistance": {"whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
-"text": "<stat s=\"travelingDistance\"/>"}}, "workEfficiency": {"global": {"desc": "<PLACEHOLDER>",
-"name": "<PLACEHOLDER>", "text": "Globaal <stat s=\"workEfficiency\"/>"}, "whileMainSkill": {
+name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, whileMainSkillAndLocationKeyword: {
+text: <stat s="stepsRequired"/> terwijl <supp k="skill"/> in <supp k="keyword"/> locatie.},
+whileMainSkillAndRealm: {text: <stat s="stepsRequired"/> terwijl <supp k="skill"/>
+in <supp k="realm"/>.}}, "travelingDistance": {"whileTraveling": {"desc": "<PLACEHOLDER>",
+"name": "<PLACEHOLDER>", "text": "<stat s=\"travelingDistance\"/>"}}, "workEfficiency": {
+"global": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "Globaal <stat
+s=\"workEfficiency\"/>"}, "whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
+"text": "<stat s=\"workEfficiency\"/> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {
 "desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"workEfficiency\"\
-/> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
-"text": "<stat s=\"workEfficiency\"/> tijdens het reizen"}, whileRealm: {name: <PLACEHOLDER>,
-text: Globale <stat s="workEfficiency"/> wanneer in <supp k="realm"/>, desc: <PLACEHOLDER>},
-whileRealmAndTraveling: {desc: <PLACEHOLDER>, name: <PLACEHOLDER>, text: <stat s="workEfficiency"/>
-tijdens het reizen in <supp k="realm"/>}, whileRealmAndMainSkill: {name: <PLACEHOLDER>,
-desc: <PLACEHOLDER>, text: <stat s="workEfficiency"/> voor <supp k="skill"/> in <supp
-k="realm"/>}, whenKeywordSetBonus: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: Globale
-<stat s="workEfficiency"/> bij het dragen van minstens <supp k="quantity"/> <supp
-k="keyword"/> voorwerpen.}, whileMainSkillAndLocationKeyword: {name: <PLACEHOLDER>,
-desc: <PLACEHOLDER>, text: <stat s="workEfficiency"/> voor <supp k="skill"/> op <supp
-k="keyword"/> locatie.}, whileMainSkillAndRealm: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>,
-text: <stat s="workEfficiency"/> voor <supp k="skill"/> in <supp k="realm"/>.}, whileLocationKeyword: {
+/> tijdens het reizen"}, whileRealm: {name: <PLACEHOLDER>, text: Globale <stat s="workEfficiency"/>
+wanneer in <supp k="realm"/>, desc: <PLACEHOLDER>}, whileRealmAndTraveling: {desc: <PLACEHOLDER>,
+name: <PLACEHOLDER>, text: <stat s="workEfficiency"/> tijdens het reizen in <supp
+k="realm"/>}, whileRealmAndMainSkill: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: <stat
+s="workEfficiency"/> voor <supp k="skill"/> in <supp k="realm"/>}, whenKeywordSetBonus: {
 name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: Globale <stat s="workEfficiency"/>
-wanneer op een <supp k="keyword"/> locatie.}, whileHistoryData: {name: <PLACEHOLDER>,
-desc: <PLACEHOLDER>, text: Globale <stat s="workEfficiency"/> voor <supp k="historyData"/>.},
-whileSkillGroup: {text: <stat s="workEfficiency"/> tijdens een <supp k="skillGroup"/>
-vaardigheid., name: <PLACEHOLDER>, desc: <PLACEHOLDER>}}}, "special": {"findBirdNests": {
-"whileWoodcutting": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
-s=\"findBirdNests\">kans om vogelnesten te vinden</stat> while <supp k=\"skill\"/>"}},
-"findGems": {"whileMining": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
-s=\"findGems\">kans om edelstenen te vinden</stat> tijdens <supp k=\"skill\"/>"}}},
-custom: {gainAdventurersGuildToken: {text: Kans om <hl>1</hl> Avonturiersgildemunt
+bij het dragen van minstens <supp k="quantity"/> <supp k="keyword"/> voorwerpen.},
+whileMainSkillAndLocationKeyword: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: <stat
+s="workEfficiency"/> voor <supp k="skill"/> op <supp k="keyword"/> locatie.}, whileMainSkillAndRealm: {
+name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: <stat s="workEfficiency"/> voor <supp
+k="skill"/> in <supp k="realm"/>.}, whileLocationKeyword: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>,
+text: Globale <stat s="workEfficiency"/> wanneer op een <supp k="keyword"/> locatie.},
+whileHistoryData: {name: <PLACEHOLDER>, desc: <PLACEHOLDER>, text: Globale <stat s="workEfficiency"/>
+voor <supp k="historyData"/>.}, whileSkillGroup: {text: <stat s="workEfficiency"/>
+tijdens een <supp k="skillGroup"/> vaardigheid., name: <PLACEHOLDER>, desc: <PLACEHOLDER>}}},
+"special": {"findBirdNests": {"whileWoodcutting": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
+"text": "<stat s=\"findBirdNests\">kans om vogelnesten te vinden</stat> while <supp
+k=\"skill\"/>"}}, "findGems": {"whileMining": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
+"text": "<stat s=\"findGems\">kans om edelstenen te vinden</stat> tijdens <supp k=\"\
+skill\"/>"}}}, custom: {gainAdventurersGuildToken: {text: Kans om <hl>1</hl> Avonturiersgildemunt
 te vinden}, trashTable: {text: Kans om <hl>1</hl> willekeurig stuk afval te vinden},
 findCrustacean: {text: Kans om <hl>1</hl> kreeftachtige te vinden}, gainOneMoney: {
 text: Kans om <hl>1</hl> munt te vinden}, gainZeroToTenMoney: {text: Kans om <hl>1</hl>
