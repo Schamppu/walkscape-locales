@@ -168,6 +168,10 @@ maps:
     'utility': Użyteczne
     'artisan': Rzemieślnicze
     'gathering': Zbierackie
+  abilities:
+    types:
+      'active': Aktywny
+      'passive': Pasywny
 plurals:
   achievements:
     phrases:
@@ -440,6 +444,9 @@ singulars:
         zobaczyć tutaj aktywności.
       activitiesInLocation: Dostępne aktywności w <object id="{location}"/>
       guideTip: Porada dnia
+      workEfficiency: Wydajność pracy
+      maxWorkEfficiency: Maksymalna wydajność pracy
+      fromCollectibles: Znajdźki
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> doświadczenia
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} znajdźki</c>, które
@@ -456,7 +463,7 @@ singulars:
       stepsOfLastWeek: Kroków w ciągu 7 dni
       checkOut: To moja postać {name} w WalkScape. Sprawdź to!\nhttps://walkscape.app
       checkOutSubject: Sprawdź mój postęp w WalkScape!
-      totalLevel: Całkowity poziom
+      totalLevel: Całkowity poziom umiejętności
       savePicture: Zapisz zdjęcie
       level: 'Poziom postaci: <c>{level}</c>'
       stepsToNextLevel: 'Kroki do następnego poziomu: <c>{steps}</c>'
@@ -593,6 +600,8 @@ singulars:
       cooldownRemaining: 'Czas Odnowienia:'
       cooldownReady: 'Czas Odnowienia: Gotowe'
       noCooldown: Brak Czasu Odnowienia.
+      cooldown: Czas Odnowienia
+      source: Źródło
   treasury:
     phrases:
       noItems: Nie masz żadnych skarbów do otwarcia. Skrzynie możesz zdobyć z różnych
@@ -809,7 +818,7 @@ singulars:
       last: Ostatni
       loadingPage: Wczytywanie strony...
       totalSteps: Całkowicie kroków
-      totalLevel: Całkowity poziom
+      totalLevel: Całkowity poziom umiejętności
       totalExperience: Całkowite XP
       achievementPoints: Punkty osiągnięć
   mainMenu:
@@ -997,6 +1006,8 @@ singulars:
       noItemSelected: Brak wybranych przedmiotów
       newSetDefaultName: Mój nowy zestaw wyposażenia
       importedGearSetDefaultName: Zaimportowany zestaw wyposażenia
+      hideItems: Ukryj przedmioty
+      showItems: Pokaż przedmioty
   popupBubbles:
     phrases:
       overEncumbered: Twój ekwipunek jest pełny i jesteś przeciążony.
