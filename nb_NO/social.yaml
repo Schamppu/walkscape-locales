@@ -1,1 +1,70 @@
-{}
+singulars:
+  relationship:
+    party:
+      member: Medlem
+      admin: Admin
+      owner: Eier
+    friends: Dere er venner
+    blocked: Du har blokkert denne brukeren
+    inviteSent: Invitasjon sendt
+    inviteReceived: Du har mottatt en invitasjon
+    none: Sosial
+  actions:
+    confirmTitle:
+      inviteResponse:
+        block: Blokker bruker
+      changeRole: Endre tilgang
+      unblock: Opphev blokkering av bruker
+    confirmDescription:
+      inviteResponse:
+        block: Er du sikker på at du vil blokkere denne brukeren? Blokkerte brukere
+          kan ikke lengre sende deg venneforespørsler.
+      unblock: Er du sikker på at du vil oppheve blokkeringen av denne brukeren?
+      changeRole: Er du sikker på at du vil gi<hl>{characterName}</hl> en <hl>{partyRole}</hl>?
+      removeFriend: Er du sikker på at du vil stoppe å være venner?
+      cancelInvite: Er du sikker på at du vil trekke denne venneforespørselen?
+      leaveParty: Er du sikker på at du vil forlate gruppen?
+      leaveAndDestroyParty: Er du sikker på at du vil forlate og stenge gruppen? Denne
+        handlingen er ikke mulig å reversere.
+    buttonLabels:
+      unblock: Opphev blokkering
+      removeFriend: Fjern Venn
+      cancelInvite: Trekk invitasjon
+      createParty: Lag Gruppe
+      leaveParty: Forlat gruppe
+      leaveAndDestroyParty: Forlat og steng gruppe
+      inviteResponse:
+        accept: Godta
+        reject: Avvise
+        block: Blokker
+      sendInvite: Send venneforespørsel
+  status:
+    loadingInvites: Sjekker etter invitasjoner...
+  party:
+    manage: Administrer
+    role: Rolle
+  createParty:
+    input:
+      partyName: Gruppenavn
+      catchphrase: Slagord
+      catchphraseHint: Slagord (Valgfritt)
+    rules:
+      mayContain: '<bp />Kan inneholde: {list}'
+      noTrailingSpaces: <bp />Kan ikke starte eller slutte med mellomrom
+plurals:
+  createParty:
+    rules:
+      minChar:
+        zero: '-'
+        one: <bp />I hvert fall {} karakter
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />I hvert fall {} karakterer
+      maxChar:
+        zero: '-'
+        one: <bp />Maks {} karakterer
+        two: '-'
+        few: '-'
+        many: '-'
+        other: <bp />Maks {} karakterer
