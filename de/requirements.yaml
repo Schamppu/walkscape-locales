@@ -35,8 +35,8 @@ singulars:
     text: Habe alle Skills mindestens auf Level <numberProgress current="{current}"
       max="{max}" />.
   levelUpSkills:
-    text: Level deine Skills <numberProgress current="{current}" max="{max}" /> mal
-      auf.
+    text: Habe ein Fähigkeitslevel von <numberProgress current="{current}" max="{max}"
+      />.
   overencumbered:
     text: Sei über dem Inventarlimit (überladen).
   exploreRegion:
@@ -122,3 +122,16 @@ singulars:
       />.
     erdwiseMap: Besitze eine <object id="fa277527-585b-4a1d-bc73-a25fe1195017" />.
     halflingMap: Besitze eine <object id="f1a9e370-fd69-4a49-92c0-c83475a896ab" />.
+  itemQualityEquipped:
+    withoutType: Habe mindestens <numberProgress current="{current}" max="{max}" /><itemQuality
+      quality="{quality}" type="crafted"/> oder <itemQuality quality="{quality}" type="loot"/>
+      Gegenstände ausgerüstet.
+    text: Habe mindestens <numberProgress current="{current}" max="{max}" /> <itemQuality
+      quality="{quality}" type="{type}"/>-Gegenstände ausgerüstet.
+  keywordEquipped:
+    text: Habe <object id="{obj}" /> ausgerüstet.
+  mainSkillType:
+    text: Während der Ausführung von <skillType type="{type}"/> Fähigkeiten.
+  keywordWithLevelEquipped:
+    text: Habe <object id="{obj}" /> ausgerüstet, das mindestens <skill skill="{skill}"/>-Stufe
+      <numberProgress current="{current}" max="{max}" /> erfordert.
