@@ -42,6 +42,7 @@ maps:
         beansprucht werden
       'showDailyTips': Tägliche Tipps anzeigen
       'activityInformationOpen': Mehr Informationen zur Aktivität anzeigen
+      'toggleAgilityXp': Agilitäts-XP-Gewinn durch Reisen deaktivieren
     visibilitySettings:
       'private': Privat
       'friends': Nur Freunde
@@ -78,6 +79,7 @@ maps:
       'gameplay': Gameplay
       'account': Benutzerkonto
       'character': Charakter
+      'characterSpecific': Charakterspezifisch
     enumSettings:
       'language': Sprache
       'leaderboardFilter': Zeige
@@ -168,6 +170,14 @@ maps:
     'artisan': Handwerk
     'gathering': Sammeln
     'utility': Allgemein
+    'combat': Kampf
+  abilities:
+    types:
+      'passive': Passiv
+      'active': Aktiv
+      'consumable': Verbrauchsgegenstand
+      'activity': Aktivität
+      'emergency': Notfall
 plurals:
   achievements:
     phrases:
@@ -415,6 +425,7 @@ singulars:
       owner: Besitzer
       showingRoutesFrom: Mögliche Reiseziele ab <object id="{from}"/>.
       noRoutesFromLocation: Keine Reiseziele von <object id="{from}"/> verfügbar.
+      escape: Flüchte
   activity:
     info:
       consumablesUsage: Du kannst ein <c>Nahrungsmittel</c> und einen <c>Trank</c>
@@ -754,7 +765,7 @@ singulars:
       me: Ich
       last: Letzter
       totalSteps: Gesamte Schritte
-      totalLevel: Gesamtes Level
+      totalLevel: Gesamtes Fähigkeitslevel
       achievementPoints: Errungenschaftspunkte
       loadingPage: Lade Seite...
       totalExperience: Gesamte Erfahrung
@@ -792,6 +803,7 @@ singulars:
       support: Unterstützen das Spiel
       testFlight: Du kannst die neueste Version von <c>TestFlight</c> herunterladen.
       accountPage: Benutzeraccount-Seite
+      restart: Neustart
     loadingStates:
       initializingProviders: Anbieter werden initialisiert
       localizationFiles: Laden der Lokalisierungsdateien
