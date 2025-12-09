@@ -15,9 +15,60 @@ maps:
       å være sikker!
     "13": Oppbevaringsplass i banken er ubegrenset. Hvis du er bekymret angående bruken
       av noe, sett det i banken!
+    "12": Pass på å <hl>utstyre</hl> gjenstandene dine for å få effektene deres; de
+      fleste fungerer ikke bare fra beholdningen.
+    "18": Ferdighetsnivåer som overstiger en <hl>aktivitetens</hl> hovedferdighetskrav
+      gir +1,25 % ekstra <hl>arbeidseffektivitet</hl> for det du gjør, opptil 20 nivåer.
+    "10": <hl>Hamburgermenyen</hl> nederst til høyre (eller nederst til venstre i
+      venstrehåndsmodus) har din <hl>WalkPedia</hl> som hjelper deg med å følge med
+      på total fremgang.
+    "11": Vær oppmerksom på detaljene for en prestasjon – noen teller kun mot opplåsingen
+      hvis gjenstanden kommer direkte fra en aktivitet.
+    "19": Ferdighetsnivåer som overstiger en <hl>oppskrifts</hl> hovedferdighetskrav
+      i <hl>håndverksgrensesnittet</hl> gir ekstra <hl>kvalitetsresultat</hl>.
+    "8": Samleobjekter du finner gir 1 ekstra <hl>prestasjonspoeng</hl> per gjenstand!
+    "15": Sjekk ut vår <c c="green">Portal</c>, <c c="red">Reddit</c>, og <c c="purple">Discord</c>
+      for kunngjøringer, oppdateringer og bloginnlegg fra utviklerne.
+    "16": Fant du noe som ikke fungerer, eller har du et forslag? Rapporter det til
+      oss på <c c="purple">Discord</c>! Rapportene dine hjelper oss med å forbedre
+      spillet!
+    "17": <hl>Kvalitetsresultat</hl> vil øke sjansene for å få gjenstander av bedre
+      kvalitet, som vises nederst i <hl>oppskriftene</hl> i <hl>håndverksgrensesnittet</hl>.
+    "7": Du kan finne <hl>prestasjoner</hl> og <hl>samleobjekter</hl> ved å trykke
+      på karakteren din øverst til venstre.
+    "9": Mange NPCs kan fortelle deg <h1>rykter</h1> for å hjelpe deg finne ting i
+      spillet.
+  skillTypes:
+    "gathering": Innsamlingsferdigheter inkluderer <skill skill="foraging"/>, <skill
+      skill="fishing"/>, <skill skill="mining"/> og <skill skill="woodcutting"/>.
+    "artisan": Håndverksferdigheter inkluderer <skill skill="cooking"/>, <skill skill="crafting"/>,
+      <skill skill="carpentry"/>, <skill skill="smithing"/> og <skill skill="tinkering"/>.
+    "utility": Hjelpeferdigheter inkluderer <skill skill="agility"/>.
 singulars:
   info:
     inventoryFull: Beholdningen din er full! For alle aktiviteter, utenom reising,
       vil overbelastning gjøre handlingene dine tregere. Du kan enten gå til banken
       for å legge fra deg gjenstander, eller slippe noen fra beholdningen for å lage
       plass.
+    bankUsage: "Et langt trykk Sett inn eller Ta ut setter inn eller tar ut opp til<c
+      i=0>1000</c>gjenstander av gangen. Du kan bruke banksøk for å raskt finne gjenstander.
+      Du kan søke etter<c i=0>navn, keywords, egenskaper eller plasseringer</c>.\n\
+      \n<c i=0>Banken din har ubegrenset plass!</c>\n\nDu kan også bruke <icon i=\"\
+      Favorited\"/> <c i=1>Favorite</c> bryteren for å kun vise gjenstander du har
+      merket som favoritt."
+    lockFavoriteItem: "<icon i=\"Favorited\"/> <c i=0>Favorite</c>:Du kan ikke slippe
+      eller selge denne gjenstanden. Du kan fortsatt bruke den til håndtverk, jobber
+      og andre gjøremål.\n\n<icon i=\"Locked\"/> <c i=1>Lock</c>: Du kan ikke selge,
+      slippe eller sette denne gjenstanden i banken, mens den er låst. Du kan fortsatt
+      bruke den til håndtverk, jobber og andre gjøremål.\n\nÅ låse eller merke et
+      objekt som favoritt gjelder for alle tilsvarende objekter i både beholdningen
+      og banken din. Du kan også låse opp eller fjerne favorittmerket fra objekter
+      i beholdningen eller banken."
+    inventoryUsage: "Et langt trykk på en gjenstandsstack vil <c i=0>åpne flervalgsmodus</c>,
+      som lar deg velge flere stakker samtidig for å slippe eller sette inn.\n\n<c
+      i=0>Alternativer</c>-knappen nederst lar deg endre hvordan gjenstandsstakkene
+      vises.\n\n<bp /><icon i=\"Deposit\" /> <hl>Alt</hl>: Setter alle gjenstander
+      i beholdningen inn i banken, hvis en bank er tilgjengelig på stedet.\n\n<bp
+      /><icon i=\"Bank small\" /> <hl>Bank</hl>: Åpner banken din og lar deg sette
+      inn eller ta ut gjenstander, hvis det er tilgjengelig på stedet.\n\n<bp /><icon
+      i=\"Sort\" /> <hl>Sorter</hl>: Sorterer beholdningen din.\n"
