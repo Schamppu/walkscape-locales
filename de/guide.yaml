@@ -34,14 +34,20 @@ maps:
     "15": Schau dir unser <c c="green">Portal</c>, <c c="red">Reddit</c> und unseren
       <c c="purple">Discord</c> an, um Ankündigungen, Updates und Entwicklungs-Blogs
       zu erhalten.
-    "17": <hl>Bastelergebnis</hl> hilft dabei, die Chancen auf höherwertige Gegenstände
+    "17": <hl>Qualitätsergebnis</hl> hilft dabei, die Chancen auf höherwertige Gegenstände
       zu erhöhen, die unten bei den <hl>Rezepten</hl> in der <hl>Herstellungsoberfläche</hl>
       angezeigt werden.
     "18": Fähigkeitsstufen, die die Hauptanforderung einer <hl>Aktivität</hl> übersteigen,
       geben +1,25 % zusätzliche <hl>Arbeitseffizienz</hl> für das, was du tust – bis
       zu 20 Stufen.
     "19": Fähigkeitsstufen, die die Hauptanforderung eines <hl>Rezepts</hl> in der
-      <hl>Herstellungsoberfläche</hl> übersteigen, verbessern das <hl>Bastelergebnis</hl>.
+      <hl>Herstellungsoberfläche</hl> übersteigen, verbessern das <hl>Qualitätsergebnis</hl>.
+  skillTypes:
+    "gathering": Sammelfertigkeiten umfassen <skill skill="foraging"/>,<skill skill="fishing"/>,<skill
+      skill="mining"/> und <skill skill="woodcutting"/>.
+    "artisan": Handwerksfertigkeiten umfassen <skill skill="cooking"/>, <skill skill="crafting"/>,
+      <skill skill="carpentry"/>, <skill skill="smithing"/> und <skill skill="tinkering"/>.
+    "utility": Hilfsfertigkeiten umfassen <skill skill="agility"/>.
 singulars:
   info:
     lockFavoriteItem: "<icon i=\"Favorited\"/> <c i=0>Favorite</c>: Du kannst diesen
@@ -64,3 +70,12 @@ singulars:
       unbegrenzten Platz!</c>\n\nDu kannst außerdem den <icon i=\"Favorited\"/> <c
       i=1>Favorisieren</c> Schalter nutzen, um nur deine favorisierten Gegenstände
       anzeigen zu lassen."
+    inventoryUsage: "Ein langer Druck auf einen Gegenstands-Stapel <c i=0>öffnet den
+      Mehrfachauswahl-Modus</c>, sodass du mehrere Stapel gleichzeitig auswählen kannst,
+      um sie fallen zu lassen oder einzulagern.\n\nDie Schaltfläche <c i=0>Optionen</c>
+      unten ermöglicht es dir, die Darstellung der Gegenstandsstapel anzupassen.\n\
+      \n<bp /><icon i=\"Deposit\" /> <hl>Alles</hl>: Lagert alle Gegenstände in deinem
+      Inventar in die Bank ein, sofern an deinem aktuellen Ort eine Bank verfügbar
+      ist.\n\n<bp /><icon i=\"Bank small\" /> <hl>Bank</hl>: Öffnet deine Bank und
+      erlaubt dir Ein- oder Auszahlungen, sofern diese an deinem aktuellen Ort möglich
+      sind.\n\n<bp /><icon i=\"Sort\" /> <hl>Sortieren</hl>: Sortiert dein Inventar.\n"
