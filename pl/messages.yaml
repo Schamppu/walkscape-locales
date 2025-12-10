@@ -174,6 +174,10 @@ singulars:
           wysyłając wiadomość e-mail na adres {email}.
         noTimeFound: Nie znaleziono godziny zakończenia, prosimy o kontakt poprzez
           wysłanie wiadomości e-mail na adres {email}
+      failureToValidateClient:
+        title: Nie udało się zweryfikować klienta gry
+        text: Klient gry nie mógł zweryfikować konta. Prawdopodobnie jest to spowodowane
+          błędem sieci. Uruchom grę ponownie i spróbuj jeszcze raz.
     fatalError:
       error: Wybacz nam ten błąd. Pamiętaj, że ta gra znajduje się w Zamkniętej Becie,
         a wszystkie postępy graczy są zapisywane codziennie w chmurze.
@@ -208,6 +212,15 @@ singulars:
         title: Nie udało się uzyskać dostępu do serwera
         text: Klient gry nie uzyskał dostępu do serwera. Sprawdź połączenie internetowe
           i spróbuj ponownie.
+      gameAssetUpdateFailed:
+        text: Klient gry nie zaktualizował zasobów gry. Spróbuj ponownie uruchomić
+          grę, aby sprawdzić, czy zasoby zostaną pobrane pomyślnie. Jeśli to nie pomoże,
+          ponowna instalacja gry może pomóc.
+        title: Nieudane zaktualizowanie zasobów gry
+      gameAssetsUpdated:
+        title: Zaktualizowano zasoby gry
+        text: Dokonano aktualizacji zasobów gry, które zostały pobrane. Aby zastosować
+          te zmiany, należy ponownie uruchomić grę.
   info:
     game:
       importGearSetFailed:
@@ -295,3 +308,11 @@ singulars:
         Możesz je później ponownie włączyć w ustawieniach. To ustawienie jest przeznaczone
         dla osób, które chcą tworzyć wyspecjalizowane postacie, które nie zdobywają
         doświadczenia z umiejętności zwinność.
+    droppingHighValueItems:
+      text: Za chwilę <c>upuścisz wysokiej wartości przedmioty, których możesz żałować</c>!
+        Czy na pewno chcesz je upuścić?
+      title: Upuścić wysokiej wartości przedmioty?
+    sellHighValueItems:
+      title: Sprzedać wysokiej wartości przedmioty?
+      text: Zamierzasz <c>sprzedać wysokiej wartości przedmioty, których możesz żałować</c>!
+        Czy na pewno chcesz je sprzedać?
