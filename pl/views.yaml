@@ -41,6 +41,7 @@ maps:
         za doświadczenie
       'activityInformationOpen': Pokaż więcej informacji o aktywności
       'showDailyTips': Pokaż codzienne wskazówki
+      'toggleAgilityXp': Wyłącz zdobywanie doświadczenia pod podróżowania
     stepCountNotifications:
       'never': Nigdy
       'always': Zawsze
@@ -77,6 +78,7 @@ maps:
       'account': Konto
       'character': Postać
       'accessibility': Dostępność
+      'characterSpecific': Specyfikacja postaci
     enumSettings:
       'language': Język
       'leaderboardFilter': Pokaż
@@ -172,6 +174,9 @@ maps:
     types:
       'active': Aktywny
       'passive': Pasywny
+      'consumable': Zużywalne
+      'activity': Aktywność
+      'emergency': Awaryjny
 plurals:
   achievements:
     phrases:
@@ -394,6 +399,7 @@ singulars:
       noPotionConsumables: Brak <hl>mikstur</hl> w ekwipunku.
       noFoodConsumables: Brak <hl>żywności</hl> w ekwipunku.
       depositAll: Wszystko
+      hatchesInto: Wypakuj w
     options:
       consenseInventory: Poukładaj ekwipunek
       expandInventory: Rozwiń ekwipunek
@@ -414,12 +420,13 @@ singulars:
       owner: Właściciel
       noRoutesFromLocation: Brak celów podróży z <object id="{from}"/>.
       showingRoutesFrom: Cele podróży z <object id="{from}"/>.
+      escape: Ucieczka
   activity:
     info:
       consumablesUsage: Możesz wybrać <c>jedzenie</c> oraz <c>miksturę</c>, by użyć
         w trakcie aktywności.
-      savedSteps: Masz zaoszczędzone kroki, które są teraz zużywane. Każdy krok liczy
-        się podwójnie, aż do wyczerpania wszystkich zapisanych kroków.
+      savedSteps: Zapisane kroki kumulują się podczas chodzenia bez aktywności. Są
+        one wyczerpywane przez podwojenie liczby kroków, gdy aktywność zostanie rozpoczęta.
       noActivity: Brak wybranej aktywności. <hl>Wybierz jedną poniżej</hl> lub przesuń
         w lewo, aby zobaczyć wszystkie dostępne opcje w tej lokacji.
     phrases:
@@ -447,10 +454,22 @@ singulars:
       workEfficiency: Wydajność pracy
       maxWorkEfficiency: Maksymalna wydajność pracy
       fromCollectibles: Znajdźki
+      savedStepsUsed: Użyto zapisanych kroków
+      inputs: Wejścia
+      agilityBonus: Poziom Zwinności <c>{level}</c>
+      fromGear: Założone wyposażenie
+      fromConsumables: Przedmioty Zużywalne
+      changeActivity: Zmień aktywność
+      abilities: Zdolności
+      baseEfficiency: Podstawowa wydajność
+      fromOverencumbered: Przeciążony
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> doświadczenia
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} znajdźki</c>, które
         można znaleźć
+    options:
+      completeUntilActions: Wykonano liczbę akcji
+      numberOfActions: Liczba akcji
   character:
     info:
       skillBreakdown: Tutaj znajduje się całkowite podsumowanie wszystkich twoich
@@ -592,6 +611,8 @@ singulars:
       noAction: Brak Akcji
       holdToCast: Przytrzymaj, by rzucić
       holdToUse: Trzymaj, by użyć
+      alreadyHere: Znajdujesz się w <object id="{location}"/>. Nie można użyć tej
+        umiejętności, aby się tu przemieszczać.
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Wymagania do użycia nie są spełnione:'
@@ -602,6 +623,9 @@ singulars:
       noCooldown: Brak Czasu Odnowienia.
       cooldown: Czas Odnowienia
       source: Źródło
+      charges: Ładunki
+      requirements: Wymagania
+      cooldownRequirements: Wymagania czasu odnowienia
   treasury:
     phrases:
       noItems: Nie masz żadnych skarbów do otwarcia. Skrzynie możesz zdobyć z różnych
@@ -854,6 +878,7 @@ singulars:
       support: Wsparcie dla gry
       accountPage: Strona konta
       testFlight: Możesz pobrać najnowszą wersję ze strony <c>TestFlight</c>.
+      restart: Restartuj
     loadingStates:
       localizationFiles: Ładowanie plików lokalizacyjnych
       loadingComplete: Ładowanie zakończone!
@@ -987,6 +1012,8 @@ singulars:
         tego typu, albo Twoje filtry i wyszukiwanie nie zwróciły niczego, co by pasowało.
       gearSetManageShortDesc: Stwórz, importuj lub edytuj zestawy wyposażenia.
       noGearSets: Nie masz jeszcze stworzonych zestawów wyposażenia.
+      gearSetReorderDesc: Możesz zmienić kolejność zestawów wyposażenia, przeciągając
+        je i upuszczając na liście poniżej.
     phrases:
       copyCurrentlyEquippedGear: Kopiowanie aktualnie posiadanego wyposażenia
       unequipTools: Zdejmij narzędzia
@@ -1008,6 +1035,7 @@ singulars:
       importedGearSetDefaultName: Zaimportowany zestaw wyposażenia
       hideItems: Ukryj przedmioty
       showItems: Pokaż przedmioty
+      reorderGearSets: Przeorganizuj zestaw wyposażenia
   popupBubbles:
     phrases:
       overEncumbered: Twój ekwipunek jest pełny i jesteś przeciążony.
@@ -1045,6 +1073,8 @@ singulars:
         usunąć?
       switchingToGearSet: Przełączanie na zestaw wyposażenia <c>{name}</c>
       noPathFound: Nie znaleziono trasy do miejsca docelowego.
+      forXActions: Wykonano akcji <c>{count}</c>
+      inputNotMet: Wymagania wejścia nie spełnione
     options:
       withdrawGearSet:
         desc: Wyjmij zestaw wyposażenia z banku, jeśli jest on dostępny w dowolnej
