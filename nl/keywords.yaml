@@ -443,20 +443,34 @@ singulars:
     regionalChest:
       name: Regionale schatkist
       requirement: Vereist een <object id="regionalChest" />.
+      requirementLevel: Vereist een regionale schatkist met minstens <keywordRequirements
+        /> in zijn vereisten.
     skillingChest:
       requirement: Vereist een <object id="skillingChest" />.
       name: Vaardigheidsschatkist
+      requirementLevel: Vereist een vaardighedenschatkist met minstens <keywordRequirements
+        /> in zijn vereisten.
   general:
     lightSource:
       requirement: Vereist uitgerust te zijn met een <object id="lightSource" />.
       name: Lichtbron
+      requirementLevel: Vereist het dragen van een <keywordRequirements />.
   misc:
     trash:
       name: Afval
       requirement: Vereist <object id="trash" />.
+      requirementLevel: Vereist afval met minstens <keywordRequirements /> in zijn
+        vereisten.
     currency:
       name: Betaalmiddel
       requirement: Vereist een <object id="currency" />.
+      requirementLevel: Vereist valuta met minstens <keywordRequirements /> in zijn
+        vereisten.
+    spectral:
+      name: Spookachtig
+      requirementLevel: Vereist iets spookachtigs met minstens <keywordRequirements
+        /> in zijn vereisten.
+      requirement: Vereist iets wat <object id="spectral" /> is.
   achievements:
     percentage:
       name: Prestatiepercentage
@@ -465,6 +479,8 @@ singulars:
     reward:
       name: Prestatiebeloning
       requirement: Vereist een <object id="achievement_reward" />.
+      requirementLevel: Vereist een prestatiebeloning met minstens <keywordRequirements
+        /> in zijn vereisten.
   search:
     items:
       consumables:
@@ -473,6 +489,12 @@ singulars:
     skills:
       agility:
         name: Behendigheid
+  faction:
+    reward:
+      requirement: Vereist een <object id="faction_reward" />.
+      name: Factiebeloning
+      requirementLevel: Vereist een factiebeloning met minstens <keywordRequirements
+        /> in zijn vereisten.
 consumables:
   cookedFish:
     name: Gekookte vis
