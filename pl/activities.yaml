@@ -143,6 +143,12 @@ singulars:
         desc: Nietoperze opuszczają jaskinię, lecąc w kierunku północno-wschodnim.
           Podążaj za nietoperzami z ich wiosennego domu, biegając dzień i noc, aby
           znaleźć ich następny dom. Możesz tu nie wrócić przez jakiś czas.
+    wallisia:
+      shorelineScramble:
+        name: Wędrowanie wzdłuż brzegu
+        desc: Krążysz wokół grzbietów wąskiej linii brzegowej i śmigasz między pobliskimi
+          wrakami i formacjami skalnymi. Zapomnienie o joggingu w tym miejscu wywołałoby
+          niezły plusk w wodzie poniżej.
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -174,6 +180,13 @@ singulars:
           w coś innego, funkcjonalnego lub artystycznego. Szybkość tego dzieła sztuki
           jest proporcjonalna do temperatury otoczenia, a jego trwałość waha się od
           kilku minut do nieskończoności.
+    wallisia:
+      townReconstruction:
+        name: Odbudowa miasta
+        desc: Pomagasz mieszkańcom miasta w pracach konserwacyjnych i odbudowie, aby
+          zapewnić im odpowiednie warunki do zamieszkania. Wymaga to dużo pracy i
+          rozwija Twoją wiedzę stolarską, ale wydaje się, że systematycznie poprawia
+          stan miasta.
   crafting:
     jarvonia:
       iceSculpting:
@@ -215,7 +228,7 @@ singulars:
         desc: Zarzucasz sieć w bagno. Woda jest mętna, ale dalej możesz sobaczyć w
           niej pływające ryby. Czekasz cierpliwie, by złapały się w twoją sieć.
       bogFishingSpear:
-        name: Łowienie w bagnie (włócznią)
+        name: Łowienie na bagnie (włócznią)
         desc: Będąc pod wodami bagna, przygotowujesz rybacką włócznię, by zaatakować
           każdą rybę, która tylko się zbliży. Mętna woda czyni to trudnym, ale masz
           determinację, by coś złowić.
@@ -232,14 +245,13 @@ singulars:
         name: Łowienie w morzu (klatka)
         desc: Silny prąd wodny przynosi w te regiony całą gamę skorupiaków.
       seaFishingRod:
-        desc: Wzdłuż zimowego brzegu znajdziesz odosobnioną lokację i zarzucisz wędkę
-          w spokojne, chłodne wody, ciesząc się spokojną samotnością wędkowania morskiego.
+        desc: Wzdłuż brzegu znajdziesz odosobnioną lokację i zarzucisz wędkę w spokojne
+          wody, ciesząc się spokojną samotnością wędkowania morskiego.
         name: Łowienie w morzu (wędką)
       seaFishingNet:
         name: Łowienie w morzu (siecią)
-        desc: Wzdłuż zimowego brzegu znajdujesz odosobnioną lokację i zarzucasz sieć
-          w spokojne, chłodne wody, rozkoszując się spokojną samotnością łowienia
-          ryb.
+        desc: Wzdłuż brzegu znajdujesz odosobnioną lokację i zarzucasz sieć w spokojne
+          wody, rozkoszując się spokojną samotnością łowienia ryb.
       cleaningTheHolyFountain:
         desc: Kapłani świątyni ufają ci na tyle, że przyjmują pomoc w utrzymaniu ich
           świętego źródła. Pozwalają ci łowić ryby w siecią, aby utrzymać wodę w czystości,
@@ -255,6 +267,21 @@ singulars:
         desc: Kierując się chęcią polowania, mając wielką świadomość swojego otoczenia
           płyniesz przez głębiny. Każdy twój mięsień jest przygotowany, by zaatakować
           jakiegokolwiek drapieżnika, który może cię dopaść.
+    wallisia:
+      floodedRiverFishingRod:
+        desc: Zarzucasz wędkę do wody w rzece, mając nadzieję, że złowisz jakieś wyjątkowe
+          ryby, które przystosowały się do nowego środowiska.
+        name: Wędkowanie w rzece (wędką)
+      ectoFishing:
+        desc: Woda tutaj lśni dziwnymi i upiornymi barwami, emanując upiorną energią.
+          Zastanawiasz się, co jedzą tutejsze ryby i czy w ogóle używasz odpowiedniego
+          narzędzia, żeby je złowić. Myśli wędrują ku próbie późniejszego ugotowania
+          ich, żeby sprawdzić, czy w ogóle nadają się do jedzenia.
+        name: Łowienie ektoplazmy
+      isthmusSeaFishingNet:
+        name: Łowienie w przesmyku (siecią)
+        desc: W przybrzeżnych wodach przesmyku zarzucasz sieci, mając nadzieję na
+          złowienie różnych stworzeń, które żyją w tym rejonie.
   foraging:
     gdte:
       butterflyCatching:
@@ -352,6 +379,20 @@ singulars:
         name: Zbieractwo wodorostów
         desc: Wokół ciebie pływa mnóstwo wodorostów, więc dokładnie sprawdzasz każdy
           z nich, zanim starannie wybierzesz ten najlepszy.
+    wallisia:
+      floodedFieldScavenging:
+        desc: Przemierzasz podmokłe pola w poszukiwaniu roślin i materiałów, które
+          przetrwały, a nawet rozwijały się w tym wilgotnym środowisku.
+        name: Przesiewanie zalanych pól
+      dragonflyCatching:
+        name: Łapanie ważek
+        desc: Za pomocą siatki ścigasz i łapiesz ważki, które szybko przemieszczają
+          się tam i z powrotem po całym obszarze.
+      graveyardForaging:
+        name: Zbieractwo na cmentarzu
+        desc: Przemierzasz cmentarz i szukasz wyjątkowych przedmiotów, które wypadły
+          z jego miejsca po powodzi w okolicy. To nie jest poważny rabunek, jeśli
+          przedmiot nie leży jeszcze w grobie, prawda?
   mining:
     global:
       mineCoal:
@@ -438,15 +479,35 @@ singulars:
     wallisia:
       mineEctoRocks:
         name: Wydobywanie ektoplazmowej skały
+        desc: Odkrywki wielkich skał, które zdają się świecić niesamowitą, upiorną
+          energią otaczającej je okolicy. Machasz w nie kilofem, mając nadzieję, że
+          zabierzesz ze sobą kawałki do rafinacji.
     wrentmark:
       mineSilverOre:
         name: Wydobywanie rudy srebra
+        desc: Kątem oka dostrzegasz srebrne skały i zaczynasz szukać żyły rudy srebra.
       mineGoldOre:
         name: Wydobywanie rudy złota
+        desc: Zauważasz przebłyski złota pomiędzy skałami i natychmiast zaczynasz
+          wydobywać rudę w nadziei na znalezienie drogocennego kruszcu.
       mineAdamantOre:
         name: Wydobywanie rudy adamantu
+        desc: Widząc przed sobą twarde, apokaliptyczne skały, wyciągasz swój najlepszy
+          sprzęt, aby spróbować wydobyć rudę ze skały.
       minePetrifiumOre:
         name: Wydobywanie rudy petrifu
+        desc: Oceniasz znajdujące się przed tobą fioletowe skały twardego petrifu
+          i planujesz najlepsze rozwiązanie, aby wydobyć z nich rudę, nie wyrządzając
+          sobie przy tym krzywdy.
+      mineCrystalShards:
+        desc: Wydobycie z tak dużych i pięknych kryształowych skał wydaje się wielkim
+          wyczynem, ale potencjalne odłamki, na które mogą się rozbić, nadal zachowują
+          piękno oryginału.
+        name: Wydobywanie kawałków kryształów
+      mineGemRocksLow:
+        name: Wydobywanie skalnego kryształu (Niskie)
+        desc: Skała, która wydaje się zawierać ślady klejnotów, zwraca twoją uwagę.
+          Przekopując się przez nią, może znajdziesz kilka.
   smithing:
     jarvonia:
       horseshoeMaking:
