@@ -144,11 +144,58 @@ singulars:
         oggetto selezionandone uno dall'elenco sottostante e premendo "Equipaggia".
       noItemSelected: Nessun oggetto selezionato.\n\nSeleziona un oggetto dall'elenco
         sottostante per confrontarlo con l'oggetto attuale ed equipaggiarlo.
+      noItemsFound: Nessun oggetto trovato nel tuo inventario che possa rientrare
+        in questo slot.
     phrases:
       treasury: 'Tesoreria'
       allSkills: Tutte le abilità
       attributes: Attributi
       requires: Necessita
+      selectedStacks: Selezionati <c>{stacks}</c> stack
+      selectedConsumable: Consumabile selezionato
+      consumables: Materiali di consumo
+      noFoodConsumables: Nessun <hl>cibo</hl> nel tuo inventario.
+      noConsumables: Nessun materiale di consumo nel tuo inventario.
+      enableWhenBack: Riattivare quando si avvia un'attività in cui è stato precedentemente
+        utilizzato
+      oneOrMoreCantBeDropped: Non è possibile eliminare uno o più oggetti.
+      noConsumableSelected: Nessun materiale di consumo selezionato. Puoi selezionarne
+        uno qui sotto.
+      cantEquip: Non è possibile equipaggiare.
+      durationInSteps: Attivo per <c>{steps}</c> <icon i="Steps" /> passi
+      dropItems: Vuoi far cadere gli oggetti?
+      areYouSureToDrop: Vuoi davvero lasciare cadere gli oggetti? Una volta lasciati,
+        gli oggetti spariranno per sempre.
+      itemsInUse: Hai selezionato oggetti che sono già in uso. Non puoi abbandonare
+        o depositare oggetti in uso.
+      slots: Slot <c>{slot}</c>
+      abilities: Abilità
+      longPressTip: <c>Suggerimento:</c> tenendo premuto a lungo su una pila di oggetti
+        vengono selezionate tutte le pile simili.
+      slotsCount: 'Slot:'
+      requirementsNotMet: I requisiti non sono soddisfatti.
+      checkBank: Banca
+      slotDoesntExist: Questo slot oggetto non esiste più.
+      allItemsInUse: Tutti questi oggetti sono attualmente in uso e non possono essere
+        abbandonati.
+      cantBeDropped: L'oggetto non può essere eliminato.
+      equipToRingOne: Equipaggia su slot per anello 1
+      equipToRingTwo: Equipaggia su slot per anello 2
+      equipToToolSlot: Equipaggia nello slot utensile {id}
+      emptySlot: Slot vuoto
+      noItemEquipped: Nessun oggetto equipaggiato
+      noItemSelected: Nessun elemento selezionato
+      duration: Durata
+      inUse: In uso
+      disableWhenChanging: Disattiva quando si cambia attività
+      noPotionConsumables: Nessuna <hl>pozione</hl> nel tuo inventario.
+      depositAll: Tutto
+      hatchesInto: Si schiude in
+    options:
+      expandInventory: Espandi l'inventario
+      showMaterials: Mostra materiali
+      showGear: Mostra attrezzatura
+      showConsumables: Mostra materiali di consumo
   location:
     phrases:
       activities: Attività
@@ -418,6 +465,9 @@ singulars:
   faction:
     phrases:
       openFaction: Apri fazione
+      nextRewardUnlocked: 'Prossima ricompensa sbloccata:'
+      unclaimedRewards: Ricompense non reclamate {count}
+      repeatingReward: Ricompensa ricorrente
   abilities:
     phrases:
       holdToUse: Tieni premuto per usare
@@ -453,11 +503,21 @@ singulars:
       followingMustBeTrueToTick: 'Affinché il tempo di ricarica diminuisca, devono
         verificarsi le seguenti condizioni:'
       followingMustBeTrueToUse: "I requisiti per l'utilizzo non sono soddisfatti:"
+      cooldown: Tempo di recupero
+      source: Fonte
+      cooldownRequirements: Requisiti di raffreddamento
+      cooldownRemaining: 'Tempo di recupero rimanente:'
+      noCooldown: Nessun tempo di recupero.
+      cooldownReady: 'Tempo di recupero: pronto'
+      charges: Cariche
+      requirements: Requisiti
   journal:
     info:
       jobInfo: I lavori sono <c>attività semplici e ripetibili</c> che puoi completare
         per ottenere ricompense. Puoi accettare lavori dalle <c>bacheche dei lavori</c>
         in varie località, come le città. Puoi avere tre lavori attivi contemporaneamente.
+    phrases:
+      jobs: Lavori
   jobs:
     phrases:
       acceptedJobs: Lavori attualmente accettati <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
@@ -466,6 +526,38 @@ singulars:
         id="{obj}"/>.
       currentlyAcceptedJobs: Lavori attualmente accettati
       browseJobBoards: Cerca lavori
+      cannotAcceptMore: Non puoi accettare altri lavori.
+      complete: Completare
+      cannotWithdraw: La tua posizione attuale <object id="{obj}"/> non ha una banca.
+        Il prelievo di oggetti per i lavori è disabilitato.
+      acceptJob: Accetta lavoro
+      abandonJob: Abbandona il lavoro
+      openJournal: Apri il diario
+      itemsFromInventory: Articoli dall'inventario
+      itemsFromBank: Articoli dalla banca
+      hasNoItemsInBank: Non ci sono articoli idonei nella tua banca.
+      collectRewards: Raccogli ricompense
+      giveItems: Consegna oggetti
+      hasNoBank: In questa località non è presente alcuna banca.
+      hasNoItemsInInventory: Non ci sono articoli idonei nel tuo inventario.
+      give: Consegna
+      refreshIn: 'La bacheca dei lavori verrà aggiornata tra:'
+      travelToJobBoard: Viaggia verso <object id="{obj}"/>
+      noJobsAvailable: 'Al momento non ci sono posizioni aperte in questa sede. Nuove
+        posizioni aperte saranno disponibili in:'
+      availableJobs: Lavori disponibili
+      youMustBeInLocation: Per restituire gli articoli devi trovarti nella stessa
+        posizione di <object id="{obj}"/>.
+      jobAlreadyAccepted: Hai accettato questo lavoro.
+      availableJobInfo: Per accettare o completare gli incarichi, è necessario essere
+        presenti presso la loro sede.
+      atLocation: Disponibile a <object id="{obj}"/>
+      youAreAtLocation: Ti trovi nella posizione di questa bacheca di lavoro.
+    dialogs:
+      abandonJob:
+        title: Abbandona il lavoro
+        text: Vuoi davvero abbandonare questo lavoro? Perderai tutti i progressi e
+          le ricompense derivanti da questo lavoro.
   mainMenu:
     loadingStates:
       awaitingForRemoveConfig: In attesa di configurazione remota
@@ -480,3 +572,46 @@ singulars:
           i dati relativi ai passi da Apple Health in Impostazioni ➤ Privacy e sicurezza
           ➤ Salute ➤ (sotto App) WalkScape e che Apple Health abbia registrato i passi
           su tali dispositivi negli ultimi 7 giorni.
+  bank:
+    phrases:
+      noItemsBank: Nessun elemento nel tuo conto bancario.
+      youAreNotAtABank: <c>Non ti trovi in un luogo in cui è presente una banca</c>.
+        Puoi utilizzare la banca solo dopo esserti recato in un luogo in cui è presente
+        una banca.
+      noItemsInventory: Nessun oggetto nel tuo inventario.
+      deposit: Depositare
+      withdraw: Ritirare
+  shop:
+    phrases:
+      sold: Venduto
+      resetTrade: Ripristina lo scambio
+      selling: Vendita
+      buying: Acquisto
+      bought: Comprato
+      buyBack: Riacquistare
+  trade:
+    phrases:
+      restockIn: 'Riassortimento in: '
+      trade: COMMERCIO
+      buying: Acquisto di {amount}
+  gear:
+    phrases:
+      permanentModifiers: Modificatori permanenti
+      combatModifiers: Modificatori di combattimento
+      noCombatModifiers: Nessun modificatore di combattimento derivante dagli oggetti
+        equipaggiati.
+      noSkillModifiers: Nessun modificatore di abilità derivante dagli oggetti equipaggiati.
+      skillModifiers: Modificatori di abilità
+      noPermanentModifiers: Nessun modificatore permanente.
+      noItemEquipped: Nessun oggetto equipaggiato
+      noItemSelected: Nessun elemento selezionato
+  tools:
+    phrases:
+      lockedToolSlot: Slot strumento bloccato fino al <c>livello del personaggio {level}</c>.
+      emptyToolSlot: Slot utensile vuoto
+      noToolEquipped: Nessuno strumento è equipaggiato per questo slot.
+  treasury:
+    phrases:
+      openChest: Aprire
+      noItems: Non ci sono tesori da aprire. Puoi ottenere forzieri da varie attività.
+      openAll: Apri tutto
