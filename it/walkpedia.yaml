@@ -222,7 +222,7 @@ singulars:
           conferiscono potere.\n\n<li><hl>Luogo di inizio</hl>: puoi iniziare a <c>cucire</c>
           quando trovi alcuni materiali adeguati <object id=\"plant\" /> da <object
           id=\"foraging\" /> per alcune ricette di base di sartoria <icon i=\"crafting\"\
-          \ />.\n\n<li><hl>Dove trovarlo</hl>: Alcune località potrebbero offrire
+          \ />.</li>\n\n<li><hl>Dove trovarlo</hl>: Alcune località potrebbero offrire
           maggiori possibilità di trovare un servizio <object id=\"service_loom\"\
           \ />, che dovrai cercare per ottenere ricette di sartoria di livello superiore.
           In quelle zone potrebbero esserci anche alcuni luoghi in cui si svolgono
@@ -235,6 +235,7 @@ singulars:
       content: Contenuto
       story: Storia
       combat: Combattimento
+      leveling: Livellamento
     activity:
       stepsWalked: Passi effettuati
       actionsCompleted: Azioni completate
@@ -244,6 +245,9 @@ singulars:
       each: ogni
       stepsToLevelUp: 'Passi per il prossimo livello:'
       stepsTo99: 'Passi per livello 99:'
+      itemsGained: Oggetti ottenuti
+      xpGained: XP guadagnati
+      maxWorkEfficiency: Massima efficienza lavorativa
     item:
       inInventory: In inventario
       inBank: In banca
@@ -253,9 +257,22 @@ singulars:
       fromChests: Da ceste
       abilities: Abilità
       attributes: Attributi
+      sold: Venduto
+      dropped: Rilasciati
+      purchased: Acquistato
+      itemsGained: Oggetti ottenuti
+      notCrafted: (Non realizzato)
+      activitySources: Fonti di attività
+      requirements: Requisiti
+      chestSources: Fonti di bauli
+      craftingSources: Fonti artigianali
     common:
       unknown: Questo contenuto è ancora sconosciuto al tuo personaggio. Continua
         ad esplorare per scoprirne tutti i dettagli!
+      rumors: Voci note
+    location:
+      realm: Regno
+      activities: Attività
 maps:
   phrases:
     item:
@@ -264,7 +281,28 @@ maps:
         "material": Materiali
         "loot": Bottino
         "consumable": Consumabili
+        "crafted": Realizzato
+        "container": Contenitori
 plurals:
   skillUnlocks:
     itemRequirementsMet:
       zero: '-'
+      one: <c>{}</c> requisito dell'articolo soddisfatto
+      two: <c>{}</c> requisiti dell'articolo soddisfatti
+      few: '-'
+      other: <c>{}</c> requisiti dell'articolo soddisfatti
+      many: '-'
+    recipeRequirementsMet:
+      zero: '-'
+      many: '-'
+      other: <c>{}</c> requisiti della ricetta soddisfatti
+      one: <c>{}</c> requisito della ricetta soddisfatto
+      two: <c>{}</c> requisiti della ricetta soddisfatti
+      few: '-'
+    activityRequirementsMet:
+      few: '-'
+      one: <c>{}</c> requisito di attività soddisfatto
+      two: Requisiti di attività <c>{}</c> soddisfatti
+      zero: '-'
+      other: Requisiti di attività <c>{}</c> soddisfatti
+      many: '-'
