@@ -35,6 +35,7 @@ maps:
         none: Nessuno
   skillTypes:
     'artisan': Artigiano
+    'gathering': Raccolta
 plurals:
   achievements:
     phrases:
@@ -72,6 +73,21 @@ plurals:
         two: <c>{}</c> giocatori che svolgono l'attività
         other: <c>{}</c> giocatori che svolgono l'attività
         one: <c>{}</c> giocatofy che svolgono l'attività
+  inventory:
+    info:
+      consumableDuration:
+        other: L'attività <object id="{activity}" alwaysShow="true"/> richiede <c>{steps}</c>
+          passaggi per azione. La quantità scelta di materiali di consumo potenzierebbe
+          <c>{actions} azioni</c>.
+        zero: L'attività <object id="{activity}" alwaysShow="true"/> richiede <c>{steps}</c>
+          passaggi per azione. La quantità scelta di materiali di consumo potenzierebbe
+          <c>{actions} azioni</c>.
+        one: L'attività <object id="{activity}" alwaysShow="true"/> richiede <c>{steps}</c>
+          passaggi per azione. La quantità scelta di materiali di consumo potenzierebbe
+          <c>{actions} azione</c>.
+        two: L'attività <object id="{activity}" alwaysShow="true"/> richiede <c>{steps}</c>
+          passaggi per azione. La quantità scelta di materiali di consumo potenzierebbe
+          <c>{actions} azioni</c>.
 singulars:
   achievements:
     info:
@@ -132,6 +148,7 @@ singulars:
       treasury: 'Tesoreria'
       allSkills: Tutte le abilità
       attributes: Attributi
+      requires: Necessita
   location:
     phrases:
       activities: Attività
@@ -455,3 +472,11 @@ singulars:
     phrases:
       pleaseWait: Attendere prego...
       loadingGame: Caricamento del gioco in corso... attendere prego!
+  settings:
+    categories:
+      dataSource:
+        requiresPermissionIos: Se il menu a tendina sottostante non mostra alcun dispositivo
+          esterno, assicurati di aver concesso all'app l'autorizzazione a utilizzare
+          i dati relativi ai passi da Apple Health in Impostazioni ➤ Privacy e sicurezza
+          ➤ Salute ➤ (sotto App) WalkScape e che Apple Health abbia registrato i passi
+          su tali dispositivi negli ultimi 7 giorni.
