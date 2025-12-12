@@ -31,8 +31,8 @@ singulars:
     text: Tener <icon i="money small"/> <numberProgress current="{current}" max="{max}"
       /> monedas.
   levelUpSkills:
-    text: Sube de nivel tus habilidades <numberProgress current="{current}" max="{max}"
-      /> veces.
+    text: Tener un nivel de habilidad total de <numberProgress current="{current}"
+      max="{max}" />.
   overencumbered:
     text: Tener tu inventario por encima del límite (sobrecarga).
   minimumSkillLevel:
@@ -121,3 +121,16 @@ singulars:
     jarvoniaMap: Tener un <object id="item-map_of_jarvonia-86ba96b3-a845-4f5c-a054-04ec5146fb25"
       />.
     halflingMap: Tener un <object id="f1a9e370-fd69-4a49-92c0-c83475a896ab" />.
+  keywordEquipped:
+    text: Tener <object id="{obj}" /> equipado.
+  keywordWithLevelEquipped:
+    text: Tener equipado <object id="{obj}" /> que requiera al menos un nivel de <skill
+      skill="{skill}"/> <numberProgress current="{current}" max="{max}" />.
+  mainSkillType:
+    text: Mientras se realizan habilidades de <skillType type="{type}"/>.
+  itemQualityEquipped:
+    text: Ten al menos <numberProgress current="{current}" max="{max}" /> <itemQuality
+      quality="{quality}" type="{type}"/> objetos equipados.
+    withoutType: Ten al menos <numberProgress current="{current}" max="{max}" /> <itemQuality
+      quality="{quality}" type="crafted"/> o <itemQuality quality="{quality}" type="loot"/>
+      objetos equipados.

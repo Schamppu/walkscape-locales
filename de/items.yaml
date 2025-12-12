@@ -186,6 +186,20 @@ singulars:
       roastedBellPepper:
         name: Geröstete Paprika
         desc: Geröstete und gewürzte Paprika, voller rauchigem Geschmack.
+      fireballWine:
+        name: Feuerballwein
+        desc: Ein hellorangefarbener Wein mit einer Spur von Würze und wohliger Wärme.
+          Durch zusätzliche Fermentation und den Einsatz wertvoller Zutaten ist er
+          deutlich kräftiger geworden.
+      moonshine:
+        name: schwarzgebrannter Schnaps
+        desc: Ein Krug mit starkem Alkohol, der einen geisterhaften Schimmer hat.
+          Schon der Geruch wirkt unirdisch und droht, dich ins Taumeln zu bringen.
+      fortifiedWine:
+        name: Likörwein
+        desc: Verdunkelter Wein mit einem tiefen, erdigen Aroma. Durch zusätzliche
+          Zutaten und eine verlängerte Fermentation ist er kräftiger als gewöhnlicher
+          Wein.
     memosphere:
       smithingMemosphere:
         desc: Innerhalb der Glaskugel erscheint eine Szene, in der du mit geschickten
@@ -670,6 +684,15 @@ singulars:
         elderhideFishingNet:
           desc: Ein Fischernetz gefertigt aus strapazierfähigem Holunderleder.
           name: Fischernetz aus Holunderleder
+        bectoFishingRod:
+          name: Spektrale Angelrute
+          desc: Aus Knochen kunstvoll zu einer Wirbelsäule zusammengesetzt und durch
+            die Kraft von Ektoplasma zusammengehalten, wirft diese gespenstische Angelrute
+            eine geisterhafte Schnur aus, die deiner Fischerei neue Macht verleiht.
+        bectoFishingCagespear:
+          desc: Ein langer Knochenabschnitt, der in eine vielseitige, von Ektoplasma
+            verstärkte Klauenspitze ausläuft – ideal zum Speer- und Käfigfischen.
+          name: Spektraler Fischkäfig-Speer
       mining:
         basicPickaxe:
           desc: Die gemeine Spitzhacke, ein bescheidenes Werkzeug einfacher Bergmänner.
@@ -704,6 +727,21 @@ singulars:
         hydriliumMagnet:
           name: Hydrilium Magnet
           desc: Ein mit Hydrilium versetzter Magnet eines Minenarbeiters.
+        adamantPickaxe:
+          name: Adamantitspitzhacke
+          desc: Diese grün gefärbte Spitzhacke scheint die minderwertigen Erze um
+            sich herum einzuschüchtern. Für eine einfache Spitzhacke fühlt sie sich
+            erstaunlich wütend an.
+        bectoPickaxe:
+          name: Spektralspitzhacke
+          desc: Ein kräftiges Stück Knochen, durch Ektoplasma gestärkt und in die
+            Form einer Spitzhacke gezwungen. Mit jedem Schlag sollte sich ein beachtliches
+            Stück Fels lösen.
+        petrifiumHatchet:
+          name: Violitspitzhacke
+          desc: Diese Spitzhacke aus violettem Metall hat einen Zustand erreicht,
+            von dem andere Werkzeuge nur träumen können. Damit spaltest du Felsen
+            mit geradezu zerstörerischer Präzision.
       woodcutting:
         basicHatchet:
           desc: Das einfache Beil, ein bescheidenes Werkzeug einfacher Holzfäller.
@@ -738,6 +776,19 @@ singulars:
         hydriliumLogSplitter:
           name: Hydrilium Spaltaxt
           desc: Eine mit Hydrilium verstärkte Spaltaxt.
+        bectoHatchet:
+          desc: Ein Bündel Knochen, durchtränkt von Ektoplasma und in die Form einer
+            Axt gebunden. Trotz seiner transparenten Erscheinung ist die Klinge erstaunlich
+            scharf.
+          name: Spektralaxt
+        petrifiumHatchet:
+          desc: Diese violette Axt sieht mit ihrer scharfen Klinge geradezu gewaltig
+            aus. Pass lieber auf, dass du nicht stolperst, während du sie trägst.
+          name: Violitaxt
+        adamantHatchet:
+          name: Adamantitaxt
+          desc: Eine Axt aus grünem Adamantit-Metall – farblich vielleicht keine Offenbarung,
+            aber beim Holzfällen absolut erstklassig.
       miscellaneous:
         bagOfRocks:
           name: Tasche mit Steinen
@@ -764,6 +815,19 @@ singulars:
           name: Mangrovenkorb
           desc: Aus zwei Körben vereint, doch mit Mangrovenplanken kunstvoll versteckt
             – dieser Korb wirkt wie aus einem Guss.
+        bectoSickle:
+          name: Spektralsichel
+          desc: Ein mit der Macht des Ektoplasmas verstärkter Knochen, geformt zu
+            einer Sichel. Sie wirkt zerbrechlich, gleitet jedoch so mühelos durch
+            Pflanzen, als wären sie bereits für dich vorgeschnitten.
+        adamantSickle:
+          name: Adamantitsichel
+          desc: Die Adamantitsichel schimmert in einem grünlichen Ton und verspricht
+            sowohl Langlebigkeit als auch Schärfe für besonders effizientes Sammeln.
+        petrifiumSickle:
+          name: Violitsichel
+          desc: Die Violitsichel präsentiert ihr kräftiges violettes Metall. Für ihre
+            Robustheit fühlt sie sich überraschend leicht an.
       hunting:
         mapleBirdhouse:
           desc: Wie ein leiser Ruf trägt der sanfte Ahornholzduft durch den Wind und
@@ -2934,6 +2998,31 @@ singulars:
         name: Goldnugget
         desc: Gold zählt zu den kostbarsten Metallen und findet oft Verwendung in
           der Schmuckherstellung.
+      adamantOre:
+        name: Adamantiterz
+        desc: Ein grüner Felsbrocken, der sich schwerer und robuster anfühlt als alles,
+          was du zuvor in den Händen hattest. Er scheint geradezu danach zu verlangen,
+          eingeschmolzen zu werden, um noch stärker zu werden.
+      crystalShards:
+        desc: Splitter aus Kristall, in denen eine schwache, vibrierende Energie zu
+          schlummern scheint. Vielleicht wünschen sie sich, zu etwas Größerem geformt
+          zu werden.
+        name: Kristallsplitter
+      crystallizedFlame:
+        desc: Ein großer Kristallbrocken, der offenbar das Wesen des Feuers selbst
+          in sich trägt. Über seine Oberfläche scheinen Flammen zu tanzen, und er
+          fühlt sich glühend heiß an, ohne tatsächlich zu brennen.
+        name: Kristallisierte Flamme
+      petrifiumOre:
+        name: Violiterz
+        desc: Ein violetter Mineralbrocken, bei dem man kaum glauben mag, dass er
+          echt ist. Er strahlt eine eigene Stärke aus – und das, obwohl er noch lange
+          nicht seine endgültige Form erreicht hat.
+      ectoRock:
+        name: Ektoplasmagestein
+        desc: Dieser große Felsbrocken ist von Ektoplasma durchdrungen und strahlt
+          eine geisterhafte Aura aus, die ein seltsames Gefühl hinterlässt. Du wirst
+          eine verfluchte Schmiede benötigen, um ihn zu verarbeiten.
     rawFish:
       rawCarp:
         desc: Der milde Geschmack des Karpfens eignet sich gut für verschiedene kulinarische
@@ -3013,6 +3102,11 @@ singulars:
       rawSeaBass:
         name: Roher Seebarsch
         desc: Der Seebarsch glänzt mit silbernen Schuppen.
+      ectoFish:
+        name: Ektoplasmafisch
+        desc: Diese unterschiedlichen Fische sind vom Ektoplasma durchzogen und wirken,
+          als gehörten sie nicht ganz in diese Welt. Um sie zu kochen, brauchst du
+          eine verfluchte Küche.
     smithing:
       bronzeBar:
         desc: Der Bronzebarren, ein Relikt aus den Schmieden der Zwerge, strahlt rustikalen
@@ -3057,6 +3151,15 @@ singulars:
         name: Goldbarren
         desc: Ob aus Nuggets oder Erz gefertigt, dieser Goldbarren entspricht mit
           einer Feinheit von 333 den Standards der Kunsthandwerk-Fabrik.
+      adamantBar:
+        name: Adamantitbarren
+        desc: Ein widerstandsfähiger Barren aus grünem Metall, der förmlich danach
+          ruft, erneut geschmiedet zu werden, damit seine Kraft weiter wachsen kann.
+      petrifiumBar:
+        name: Violitbarren
+        desc: Ein violett schimmernder Metallbarren, der den Eindruck erweckt, man
+          könne ihn einfach zerquetschen – trotzdem hält er unbeirrt an seiner Form
+          fest.
     woodcutting:
       birchLogs:
         desc: Die glatten und hellen Birkenstämme strahlen eine elegante Schlichtheit
@@ -3111,6 +3214,15 @@ singulars:
         name: Bambusstämme
         desc: Flexibel und doch stabil – Bambus eignet sich hervorragend für verschiedenste
           Anwendungen.
+      yewLogs:
+        name: Eibenstämme
+        desc: Dieses Eibenholz ist dicht und widerstandsfähig und eignet sich hervorragend
+          zur Herstellung langlebiger Gegenstände.
+      ectoLogs:
+        desc: Diese Stämme sind von Ektoplasma durchdrungen, was ihnen ein geisterhaftes
+          Aussehen und einzigartige Eigenschaften verleiht. Zur Weiterverarbeitung
+          brauchst du eine verfluchte Sägemühle.
+        name: Ektoplasmastämme
     misc:
       glacierMap:
         desc: Diese Karte stellt den Nördlichen Teil von Jarvonien dar. Markiert mit
@@ -3432,8 +3544,36 @@ singulars:
         desc: Ein kunstvoll gefertigtes Stück, das dir von den Jarvoniern aus dem
           Tempel von Azurazera überreicht wurde. Es scheint eine Ausstrahlung auf
           Steine zu haben.
+      hauntedTeddyBear:
+        name: Verfluchter Teddybär
+        desc: Ein ausgestopfter Teddybär, der dich ständig zu beobachten scheint.
+          Seit du ihn besitzt, findest du ihn immer wieder an Stellen, an die du ihn
+          ganz sicher nicht gelegt hast. Schlafen wird jetzt wohl deutlich schwieriger,
+          oder?
+      shinyBrokenSkydisk:
+        name: Glänzende zerbrochene Frisbee
+        desc: 'Eine Frisbee, deren Oberfläche alles in regenbogenfarbenem Glanz zurückwirft.
+          Das einzige Problem: Sie ist kleiner als üblich und hat ein rundes Loch
+          in der Mitte.'
+      charterOfTheDrowned:
+        name: Charta der Ertrunkenen
+        desc: Ein Verzeichnis derjenigen aus dem Ort, die zu den nun geisterhaften
+          Bewohnern von Wraithwater geworden sind. Es gewährt Durchgang durch die
+          geisterhafte Barriere südlich der Stadt. Wer es bei sich trägt, muss die
+          Geister dort auf irgendeine Weise besänftigt haben, um es zu erhalten.
   currencies:
     adventurersGuildToken:
       desc: Ein Token, der in der Abenteurergilde für Waren und Dienstleistungen eingelöst
         werden kann.
       name: Token der Abenteurergilde
+    ectoplasm:
+      name: Ektoplasma
+      desc: Ein veredeltes Stück geisterhafter Energie, das glitschig aussieht und
+        sich ebenso anfühlt. Geister schätzen es in genau dieser Form, und selbst
+        darüber hinaus hat es noch einige weitere Verwendungszwecke.
+  eggs:
+    camelEgg:
+      desc: Das Ei, das von einem Kamel zurückgelassen wurde – zumindest erkennt man
+        das angeblich an dem kleinen Höcker darauf. So identifiziert man sie doch
+        … oder?
+      name: Kamelei

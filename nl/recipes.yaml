@@ -27,7 +27,7 @@ te kunnen delven., activityDesc: 'Door voorzichtig het koper tot een stevig delf
 te vormen, maak je een koperen pikhouweel.'}, bronzePickaxe: {name: Een bronzen pikhouweel
 maken, desc: 'Maak een stevige bronzen pikhouwel, perfect voor het zware delven van
 grondstoffen.', activityDesc: 'Vakkundig smelt je het brons om tot een robuust gereedschap
-om grondstoffen mee te delven, je maakt ambachtelijk een bronzen pikhouweel.'}, ironPickaxe: {
+om grondstoffen mee te delven, en maak je een bronzen pikhouweel.'}, ironPickaxe: {
 name: Een ijzeren pikhouweel maken, desc: Smeed een betrouwbaar pikhouweel om te gebruiken
 op je avonturen in diepe mijnen., activityDesc: Je maakt een ijzeren pikhouweel door
 vakkundig ijzererts tot het delfgereedschap om te smelten.}, steelPickaxe: {name: Een
@@ -56,12 +56,12 @@ een betrouwebare ijzeren hakbijl om nauwkeurig hout mee te hakken., activityDesc
 kundig bewerk je ijzer tot een betrouwbaar houthakkersgereedschap, en maak je een
 ijzeren hakbijl.'}, steelHatchet: {desc: Maak een krachtige stalen hakbijl om snel
 hout te hakken., name: Een stalen hakbijl maken, activityDesc: 'Door voorzichtig staal
-om te vormen tot een scherp houthakkersgereedschap, maak je een ambachtelijke stalen
-hakbijl.'}, tarsiliumHatchet: {name: Een teerzilium hakbijl maken, desc: Maak een
-hakbijl die de duisternis van de lucht in de nacht imiteert., activityDesc: 'Het metaal
-wordt gevormd in het vuur van de oven, geslagen en geslepen om met gemak bomen om
-te hakken.'}, farganiteHatchet: {name: Een verganieten hakbijl maken, desc: Een hakbijl
-maken die sterker is dan de onbreekbare kracht van zelfs de sterkste bomen., activityDesc: 'Zweet
+om te vormen tot een scherp houthakkersgereedschap, maak je een stalen hakbijl.'},
+tarsiliumHatchet: {name: Een teerzilium hakbijl maken, desc: Maak een hakbijl die
+de duisternis van de lucht in de nacht imiteert., activityDesc: 'Het metaal wordt
+gevormd in het vuur van de oven, geslagen en geslepen om met gemak bomen om te hakken.'},
+farganiteHatchet: {name: Een verganieten hakbijl maken, desc: Een hakbijl maken die
+sterker is dan de onbreekbare kracht van zelfs de sterkste bomen., activityDesc: 'Zweet
 en kracht vormen dit metaal tot een hakbijl, een waar symbool van je doorzettingsvermogen
 om een meester houthakker te worden.'}, hydriliumHatchet: {desc: 'Veelzijdig gereedschap
 gemaakt van een hydrilium staaf, ontworpen om hout te kappen en vormen.', name: Maak
@@ -195,34 +195,106 @@ bronzeBar: {activityDesc: 'Door koper en tin tot een veelzijdige metalen staaf t
 smelten, maak je een bronzen staaf.', name: Een bronzen staaf smelten, desc: Smelt
 en combineer koper en tin om een veelzijdige bronzen staaf te maken.}, steelBar: {
 name: Stalen staaf smelten, desc: Smeed een sterke stalen staaf voor verschillende
-industriële toepassingen.}}, wooden: {woodenSword: {name: Een houten zwaard maken,
-desc: Een houten zwaard maken van een plank., activityDesc: Je maakt een houten zwaard
-van een plank.}, woodenShield: {name: Een houten schild maken, desc: Een houten schild
-maken van planken., activityDesc: Je maakt een houten schild van planken.}}, copper: {
-copperSword: {name: Een koperen zwaard maken, desc: Een koperen zwaard maken van een
-koperen staaf., activityDesc: Je maakt een koperen zwaard van een koperen staaf.},
-copperShield: {name: Een koperen schild maken, desc: Een koperen schild maken van
-koper staven., activityDesc: Je maakt een koperen schild van koperen staven.}}, bronze: {
-bronzeSword: {name: Een bronzen zwaard maken, desc: Een bronzen zwaard maken van een
-bronzen staaf., activityDesc: Je maakt een bronzen zwaard van een bronzen staaf.},
-bronzeShield: {name: Een bronzen schild maken, desc: Een bronzen schild maken van
-bronzen staven., activityDesc: Je maakt een bronzen schild van bronzen staven.}},
-steel: {steelSword: {name: Een stalen zwaard maken}}, scrap: {copperBarScrap: {name: Een
-koperen staaf maken (Schroot), desc: Verhit en vorm schrootmetaal tot een veelzijdige
-sterke staaf., activityDesc: Met de juiste technieken smelt je metaalresten om tot
-een duurzame koperen staaf.}, bronzeBarScrap: {name: Een bronzen staaf maken (Schroot),
-desc: Smelt metaalschroot om een veelzijdige bronzen staaf te maken., activityDesc: 'Door
-kundig metaalschroot tot een veelzijdige metalen staaf om te smelten, maak je een
-bronzen staaf.'}, ironBarScrap: {name: Een ijzeren staaf maken (Schroot), desc: Maak
-een stevige en handige ijzeren staaf van metaalschroot., activityDesc: 'Door vakkundig
-metaalschroot om te smelten tot een veelzijdige metalen staaf, maak je een ijzeren
-staaf.'}, steelBarScrap: {name: Een stalen staaf maken (Schroot), desc: Maak een sterke
-stalen staaf voor verschillende toepassingen die stevig materiaal vereisen., activityDesc: 'Door
-met precisie metaalschroot tot een bestendige metalen staaf te vormen, maak je een
-stalen staaf.'}, tarsiliumBarScrap: {activityDesc: 'Het metaalschroot smelt in de
-mal, waardoor het een troebele dikke vloeistof wordt. Langzaam koelt het af tot een
-perfecte teerziliumstaaf.', name: Een teerzilium staaf maken (Schroot), desc: Een
-teerzilium staaf maken van metaalschroot.}, farganiteBarScrap: {activityDesc: 'Het
-schaafsel weerstaat de hitte, maar door je toewijding naar de oven smelten ze toch
-en vormen ze een zachte blauwe staaf.', name: Een verganieten staaf maken (Schaafsel),
-desc: Een verganieten staaf maken van metaalschaafsel.}}}}}
+industriële toepassingen., activityDesc: 'Door nauwkeurig staal te vormen tot een
+sterke metalen staaf, vervaardig je een stalen staaf.'}, tarsiliumBar: {activityDesc: 'Het
+zwarte metaal smelt in de mal, waar het verandert in een troebele, dikke vloeistof.
+Langzaam koelt het af tot een teerziliumstaaf.', name: Een teerziliumstaaf smelten,
+desc: Een teerziliumstaaf maken van eerder verzameld erts.}, farganiteBar: {name: Een
+verganietstaaf smelten, desc: Een verganietstaaf maken van eerder verzameld erts.,
+activityDesc: 'Het verganieterts weerstaat de hitte, maar door je toewijding aan de
+oven smelt het toch, en vormt het een lichtblauwe staaf.'}, hydriliumBar: {name: Een
+hydriliumstaaf smelten, desc: Een hydriliumstaaf maken van hydrilium en zeewier, activityDesc: 'Je
+verhit de hydriliumerts in een krachtige oven tot extreem hoge temperaturen, waardoor
+het smelt tot het vloeibaar is. Je giet het gesmolten metaal voorzichtig in een mal
+en laat het afkoelen en stollen, waarna je een waardevolle hydriliumstaaf hebt gemaakt.'}},
+wooden: {woodenSword: {name: Een houten zwaard maken, desc: Een houten zwaard maken
+van een plank., activityDesc: Je maakt een houten zwaard van een plank.}, woodenShield: {
+name: Een houten schild maken, desc: Een houten schild maken van planken., activityDesc: Je
+maakt een houten schild van planken.}}, copper: {copperSword: {name: Een koperen zwaard
+maken, desc: Een koperen zwaard maken van een koperen staaf., activityDesc: Je maakt
+een koperen zwaard van een koperen staaf.}, copperShield: {name: Een koperen schild
+maken, desc: Een koperen schild maken van koper staven., activityDesc: Je maakt een
+koperen schild van koperen staven.}}, bronze: {bronzeSword: {name: Een bronzen zwaard
+maken, desc: Een bronzen zwaard maken van een bronzen staaf., activityDesc: Je maakt
+een bronzen zwaard van een bronzen staaf.}, bronzeShield: {name: Een bronzen schild
+maken, desc: Een bronzen schild maken van bronzen staven., activityDesc: Je maakt
+een bronzen schild van bronzen staven.}}, steel: {steelSword: {name: Een stalen zwaard
+maken, activityDesc: Je maakt een stalen zwaard van een stalen staaf, desc: Een stalen
+zwaard maken van een stalen staaf.}, steelShield: {activityDesc: Je maakt een stalen
+schild van stalen staven., name: Maak een stalen schild, desc: Maak een stalen schild
+van stalen staven.}}, scrap: {copperBarScrap: {name: Een koperen staaf maken (Schroot),
+desc: Verhit en vorm schrootmetaal tot een veelzijdige sterke staaf., activityDesc: Met
+de juiste technieken smelt je metaalresten om tot een duurzame koperen staaf.}, bronzeBarScrap: {
+name: Een bronzen staaf maken (Schroot), desc: Smelt metaalschroot om een veelzijdige
+bronzen staaf te maken., activityDesc: 'Door kundig metaalschroot tot een veelzijdige
+metalen staaf om te smelten, maak je een bronzen staaf.'}, ironBarScrap: {name: Een
+ijzeren staaf maken (Schroot), desc: Maak een stevige en handige ijzeren staaf van
+metaalschroot., activityDesc: 'Door vakkundig metaalschroot om te smelten tot een
+veelzijdige metalen staaf, maak je een ijzeren staaf.'}, steelBarScrap: {name: Een
+stalen staaf maken (Schroot), desc: Maak een sterke stalen staaf voor verschillende
+toepassingen die stevig materiaal vereisen., activityDesc: 'Door met precisie metaalschroot
+tot een bestendige metalen staaf te vormen, maak je een stalen staaf.'}, tarsiliumBarScrap: {
+activityDesc: 'Het metaalschroot smelt in de mal, waardoor het een troebele dikke
+vloeistof wordt. Langzaam koelt het af tot een perfecte teerziliumstaaf.', name: Een
+teerzilium staaf maken (Schroot), desc: Een teerzilium staaf maken van metaalschroot.},
+farganiteBarScrap: {activityDesc: 'Het schaafsel weerstaat de hitte, maar door je
+toewijding naar de oven smelten ze toch en vormen ze een zachte blauwe staaf.', name: Een
+verganieten staaf maken (Schaafsel), desc: Een verganieten staaf maken van metaalschaafsel.}},
+tarsilium: {tarsiliumSword: {name: Een teerzilium zwaard maken, desc: Een teerzilium
+zwaard maken van een teerziliumstaaf., activityDesc: Je maakt een teerzilium zwaard
+van een teerziliumstaaf.}, tarsiliumShield: {name: Een teerzilium schild maken, desc: Een
+teerzilium schild maken van teerzilium staven., activityDesc: Je maakt een teerzilium
+schild van teerzilium staven.}}, farganite: {farganiteSword: {name: Een verganieten
+zwaard maken, desc: Een verganieten zwaard maken van een verganieten staaf., activityDesc: Je
+maakt een verganieten zwaard van een verganieten staaf.}, farganiteShield: {name: Een
+verganieten schild maken, desc: Een verganieten schild maken van verganieten staven.,
+activityDesc: Je maakt een verganieten schild van verganieten staven.}, gemShield: {
+name: Een edelsteenschild maken, desc: 'Een edelsteenschild maken van goud en verganietstaven,
+gedecoreerd met geslepen edelstenen.', activityDesc: 'Je maakt een edelsteenschild
+van verganietstaven, met gouden rand, en zorgvuldig gedecoreerd met edelstenen.'}},
+other: {tarsiliumToeBoots: {name: Laarzen met teerzilium neuzen maken, desc: Vervang
+de stalen neuzen met teerzilium neuzen., activityDesc: Je gaat aan de slag om het
+staal van de neuzen te vervangen met teerzilium.}, reinforcedBellows: {desc: Smidsebalg
+versterken, name: Versterkte balg maken, activityDesc: 'Nu je zoveel ervaring hebt
+met de smidsebalg, weet je precies op welke punten je het moet versterken.'}}}, cooking: {
+consumables: {pickles: {name: Maak augurken}}}, carpentry: {scrap: {birchPlankScrap: {
+desc: Houtsnippers voorzichtig transformeren tot een handige en veelzijdige plank.,
+name: Een berkenhouten plank maken (Houtresten), activityDesc: 'Heel nauwkeurig vorm
+je houtsnippers samen tot een veelzijdige plank, en maak je een berkenhouten plank.'},
+pinePlankScrap: {name: Een dennenhouten plank maken (Houtresten), desc: Houtsnippers
+omvormen tot een stevige en betrouwbare plank., activityDesc: 'Vakkundig vorm je houtresten
+tot een stevige plank, en maak je een dennenhouten plank.'}, sprucePlankScrap: {activityDesc: 'Als
+een expert maak je een veelzijdige plank van wat houtresten, waardoor je een sparrenhouten
+plank maakt.', desc: 'Een sparrenhouten plank maken, bekend om zijn kracht en veelzijdigheid.',
+name: Een sparrenhouten plank maken (Houtresten)}, maplePlankScrap: {name: Een esdoornhouten
+plank maken (Houtresten), desc: Een gladde en elegante plank maken van houtresten.,
+activityDesc: 'Door zorgvuldig houtresten samen te voegen tot een gladde plank, maak
+je een esdoornhouten plank.'}, oakPlankScrap: {name: Een eikenhouten plank maken (Houtresten),
+desc: 'Een eikenhouten plank maken, populair door zijn stevigheid en prachtige uitstraling.',
+activityDesc: 'Zorgvuldig voeg je de houtresten samen tot een prachtige plank, en
+maak je een eikenhouten plank.'}, willowPlankScrap: {name: Een wilgenhouten plank
+maken (Houtresten), desc: 'Maak een wilgenhouten plank, een populaire keuze omdat
+het zo weinig weegt.', activityDesc: 'De houtresten voeg je eenvoudig samen tot een
+plank, alsof ze van boter zouden zijn gemaakt.'}, mangrovePlankShavings: {desc: Maak
+een mangrovenhouten plank. Dit harde en dichte hout is geschikt voor ruwe omgevingen.,
+name: Een mangrovenhouten plank maken (Houtresten), activityDesc: 'Het zijn dikke
+en dichte houtresten. Je gereedschap gaat er bijna door kapot, maar je houdt vol en
+vormt er een plank mee.'}, teakPlankScrap: {name: Een teakhouten plank maken (Houtresten),
+desc: 'Maak een teakhouten plank, waardevol door zijn bestendigheid en kracht.', activityDesc: 'Het
+duurt even voordat de houtresten allemaal verwerkt zijn, maar de plank wordt perfect
+afgerond.'}}, planks: {birchPlank: {name: Een berkenhouten plank zagen, desc: Zorgvuldig
+berkenhout tot een handige en veelzijdige plank zagen., activityDesc: 'Met veel precisie
+maak je een veelzijdige plank van berkenhout, waardoor je een berkenhouten plank maakt.'},
+oakPlank: {name: Een eikenhouten plank zagen}, pinePlank: {desc: Maak een stevige
+betrouwbare plank van dennenhout., name: Een dennenhouten plank zagen, activityDesc: 'Kundig
+vorm je dennenhout tot een stevige plank, en maak je een dennenhouten plank.'}, elmPlank: {
+activityDesc: 'Het is niet makkelijk, maar je vormt het iepenhout tot een handige
+plank voor toekomstige producten.', name: Een iepenhouten plank zagen, desc: Een zeer
+buigzame iepenhouten plank maken}, sprucePlank: {activityDesc: 'Kundig maak je een
+veelzijdige plank van het sparrenhout, waardoor je een sparrenhouten plank maakt.',
+name: Een sparrenhouten plank zagen, desc: 'Een sparrenhouten plank maken, bekend
+om zijn kracht en veelzijdigheid.'}, maplePlank: {name: Een esdoornhouten plank zagen,
+desc: Vorm een gladde en elegante plank van esdoornhout., activityDesc: 'Nauwkeurig
+maak je een gladde plank van esdoornhout, en maak je een esdoornhouten plank.'}}},
+foraging: {other: {mangroveBasket: {activityDesc: Een houtblokken korf en een grote
+korf gecombineerd waardoor je ze voor beide vaardigheden kunt gebruiken.}}}}}

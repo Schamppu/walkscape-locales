@@ -173,6 +173,18 @@ singulars:
       roastedBellPepper:
         name: Pieczona Papryka
         desc: Przydymiona i przyprawiona papryka, pełna dymnego aromatu.
+      fortifiedWine:
+        name: Wzmocnione Wino
+        desc: Ciemniejsze wino o głębokim, ziemistym smaku. Jest mocniejsze niż zwykłe
+          wino dzięki dodatkowym składnikom i fermentacji, jaką przeszło.
+      fireballWine:
+        name: Ogniste Wino
+        desc: Jaśniejsze, pomarańczowe wino z nutą przypraw i ciepła. Nabrało mocy
+          dzięki jeszcze dłuższej fermentacji i dodatku cennych składników.
+      moonshine:
+        desc: Słoik mocnego alkoholu, który ma nieco upiorny blask. Sam zapach jest
+          nieziemski i grozi odurzeniem.
+        name: Księżycówka
     memosphere:
       carpentryMemosphere:
         name: Memosfera Stolarstwa
@@ -637,6 +649,14 @@ singulars:
         elderhideFishingNet:
           name: Sieć Rybacka z Czarnej Skóry
           desc: Sieć rybacka wykonana z wytrzymałej czarnej skóry.
+        bectoFishingRod:
+          desc: Kości ostrożnie złożono z powrotem w kręgi i połączono siłą ektoplazmy,
+            aby stworzyć widmową żyłkę, która daje nową moc w wędkarstwie.
+          name: Widmowa Wędka
+        bectoFishingCagespear:
+          desc: Długi odcinek kości zakończony wszechstronnym ektoplazmatycznym pazurem,
+            idealnym zarówno do połowów z użyciem włóczni, jak i w klatkach.
+          name: Widmowa Włócznia
       mining:
         basicPickaxe:
           name: Podstawowy Kilof
@@ -668,6 +688,18 @@ singulars:
         hydriliumMagnet:
           desc: Magnes górniczy nasycony hydrilem.
           name: Hydrilowy Magnes
+        petrifiumHatchet:
+          name: Wiolitowy Kilof
+          desc: Ten kilof z fioletowego metalu osiągnął stan, o jakim marzyły tylko
+            inne narzędzia. Pozwala rozbijać skały z niszczycielską precyzją.
+        bectoPickaxe:
+          name: Widmowy Kilof
+          desc: Mocny kawałek kości wzmocniony ektoplazmą, który przybiera formę kilofa.
+            Powinien rozłupywać spory kawałek skały przy każdym uderzeniu.
+        adamantPickaxe:
+          name: Adamantowy Kilof
+          desc: Ten zielony kilof zagraża otaczającym go podatniejszym minerałom.
+            Jest wściekły, jak na zwykły kilof.
       woodcutting:
         basicHatchet:
           name: Podstawowa Siekiera
@@ -700,6 +732,18 @@ singulars:
         hydriliumLogSplitter:
           name: Drzewna Hydrilowa Łuparka
           desc: Łuparka do drewna wzmocniona hydrilem.
+        petrifiumHatchet:
+          name: Wiolitowa Siekiera
+          desc: Ten fioletowy topór wygląda bardzo groźnie, biorąc pod uwagę jego
+            ostrość. Lepiej uważać, żeby się nim nie potknąć podczas noszenia.
+        bectoHatchet:
+          name: Widmowa Siekiera
+          desc: Stos kości zasilony ektoplazmą, który przybiera kształt siekiery.
+            Nie wygląda na to, bo jest przezroczysty, ale jej ostrze jest dość ostre.
+        adamantHatchet:
+          name: Adamantowa Siekiera
+          desc: Topór z zielonego, adamantowego metalu, może nie jest to kreatywny
+            kolor, ale doskonale sprawdzi się w drwalnictwie.
       miscellaneous:
         bagOfRocks:
           name: Torba Kamieni
@@ -726,6 +770,19 @@ singulars:
           name: Kosz Namorzynowy
           desc: Kosz namorzynowy został zbudowany z dwóch różnych koszy, ale deski
             namorzynowe bezbłędnie ukrywają szwy.
+        bectoSickle:
+          name: Widmowy Sierp
+          desc: Kość została wzmocniona mocą ektoplazmy, przybierająca kształt sierpa.
+            Wygląda krucho, ale przecina rośliny z taką łatwością, że można by pomyśleć,
+            że właśnie tak je znalazłeś.
+        adamantSickle:
+          name: Adamantowy Sierp
+          desc: Niezniszczalny sierp ma zielonkawy odcień, co obiecuje trwałość i
+            ostrość, co przekłada się na efektywne zbieractwo.
+        petrifiumSickle:
+          name: Wiolitowy Sierp
+          desc: Sierp wiolitowy charakteryzuje się mocnym, fioletowym metalem. Jest
+            zaskakująco lekki, biorąc pod uwagę jego wytrzymałość.
       tailoring:
         apprenticeBreeches:
           desc: Bryczesy są wygodne przez długie godziny noszenia i mają poręczne
@@ -2793,6 +2850,29 @@ singulars:
         name: Samorodek Złota
         desc: Złoto jest jednym z najcenniejszych metali, często wykorzystywanym w
           jubilerstwie.
+      adamantOre:
+        name: Ruda Adamantu
+        desc: Zielony kamień, który wydaje się nieco cięższy i twardszy niż te, z
+          którymi miałeś do czynienia wcześniej. Aż prosi się o przetopienie, by stał
+          się jeszcze mocniejszy.
+      ectoRock:
+        desc: Ten duży kawałek skały jest przesiąknięty ektoplazmą, emanującą upiorną
+          aurą i dziwnym zapachem. Do jego przetworzenia potrzebna będzie przeklęta
+          kuźnia.
+        name: Ektoplazmowa Skała
+      crystalShards:
+        desc: Odłamki kryształu, które niosą w sobie słabą energię. Być może pragnienie
+          przemiany w coś więcej.
+        name: Kawałki Kryształu
+      petrifiumOre:
+        name: Ruda Wiolitu
+        desc: Fioletowa masa mineralna, w którą aż trudno uwierzyć, że jest prawdziwa.
+          Emanuje z niej siła, a nie osiągnęła jeszcze swojej ostatecznej formy.
+      crystallizedFlame:
+        name: Krystaliczny Płomień
+        desc: Duży kawałek kryształu, który wydaje się zawierać esencję samego ognia.
+          Widać płomienie tańczące na jego powierzchni i wydaje się gorący, choć tak
+          naprawdę się nie pali.
     rawFish:
       rawCarp:
         desc: Łagodny smak karpia bardzo dobrze komponuje się z różnymi potrawami.
@@ -2868,6 +2948,10 @@ singulars:
       rawSeaBass:
         name: Surowy Labraks
         desc: Labraks lśni srebrnymi łuskami.
+      ectoFish:
+        desc: Te różne ryby są nasycone ektoplazmą i mają charakterystyczny, upiorny
+          wygląd. Do ich przyrządzenia potrzebna będzie przeklęta kuchnia.
+        name: Ektoplazmowa Ryba
     smithing:
       bronzeBar:
         name: Sztabka Brązu
@@ -2911,6 +2995,14 @@ singulars:
         name: Sztabka Złota
         desc: Niezależnie od tego, czy użyto samorodków, czy rudy, sztabka złota osiąga
           margines próby 333 dyktowany przez jubilerów.
+      adamantBar:
+        name: Sztabka Adamantu
+        desc: Wytrzymała sztabka zielonego metalu. Teraz prosi się o zmianę kształtu,
+          aby nadal rosła w siłę.
+      petrifiumBar:
+        name: Sztabka Wiolitu
+        desc: Fioletowy metalowa sztabka. Wydaje się, że można ją zgnieść, ale nie
+          ulega odkształceniu.
     woodcutting:
       birchLogs:
         desc: Gładkie i jasne, brzozowe kłody emanują elegancką prostotą.
@@ -2963,6 +3055,15 @@ singulars:
         name: Bambusowe Kłody
         desc: Bambus jest giętki, a jednocześnie wytrzymały, co sprawia, że znajduje
           szerokie zastosowanie.
+      yewLogs:
+        desc: Drewno cisowe jest gęste i wytrzymałe, dzięki czemu doskonale nadaje
+          się do wyrobu trwałych przedmiotów.
+        name: Cisowe Kłody
+      ectoLogs:
+        desc: Te kłody są nasączone i przesiąknięte ektoplazmą, co nadaje im upiorny
+          wygląd i wyjątkowe właściwości. Do ich przetworzenia potrzebny będzie przeklęty
+          tartak.
+        name: Ektoplazmowe Kłody
     crafting:
       rope:
         name: Sznurek
@@ -3248,6 +3349,22 @@ singulars:
         name: Łza Płaczącej Wierzby
         desc: Twarda mieszanka żywicy z wierzby płaczącej. Na swój sposób smutna i
           piękna.
+      shinyBrokenSkydisk:
+        desc: Niebiański dysk,który odbija wszystko z powrotem, tworząc tęczę na swojej
+          powierzchni. Jedynym problemem jest jego mniejszy rozmiar i okrągły otwór
+          w środku.
+        name: Niebiański Dysk
+      charterOfTheDrowned:
+        desc: Dziennik mieszkańców miasta, którzy stali się teraz upiornymi mieszkańcami
+          Morskiego Widma. Umożliwia on przejście przez upiorną barierę otaczającą
+          południową część miasta. Ci, którzy go noszą, musieli w jakiś sposób udobruchać
+          duchy, aby go zdobyć.
+        name: Karta Utopionych
+      hauntedTeddyBear:
+        name: Opętany Pluszowy Miś
+        desc: Pluszowy miś, który zawsze sprawia wrażenie, jakby cię obserwował. Wygląda
+          na to, że ląduje w miejscach, których nie pamiętasz, odkąd go znalazłeś.
+          Spanie będzie teraz o wiele trudniejsze, prawda?
     visas:
       jarvonianLetterOfPassage:
         name: Jarvoński List Przewozowy
@@ -3269,3 +3386,12 @@ singulars:
     adventurersGuildToken:
       name: Żeton Gildii Poszukiwaczy Przygód
       desc: Żeton, który można wymienić na towary i usługi w Gildii Poszukiwaczy Przygód.
+    ectoplasm:
+      name: Ektoplazma
+      desc: Wyrafinowany kawałek energii duchowej, który w dotyku wygląda i wydaje
+        się śliski. Duchy cenią go w tej formie, a mimo to ma on jeszcze inne zastosowania.
+  eggs:
+    camelEgg:
+      name: Wielbłądzie Jajko
+      desc: Jajko zostawione przez wielbłąda można poznać po garbie. Po tym się poznaje,
+        prawda?

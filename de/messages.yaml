@@ -181,6 +181,10 @@ singulars:
           dass dies ein Fehler ist und du gegen die Entscheidung Einspruch einlegen
           möchtest, kannst du uns per E-Mail kontaktieren {email}.
         title: Du wurdest dauerhaft von WalkScape ausgeschlossen
+      failureToValidateClient:
+        title: Überprüfung des Clients fehlgeschlagen
+        text: Der Spiel-Client konnte nicht validiert werden. Dies liegt wahrscheinlich
+          an einem Netzwerkfehler. Bitte starte das Spiel neu und versuche es erneut.
     gameError:
       loadingPlayerFailed:
         title: Spieler konnte nicht geladen werden
@@ -210,6 +214,16 @@ singulars:
         title: Konnte Serverzeit nicht abrufen
         text: Der Spiele-Client konnte die Serverzeit nicht abrufen. Bitte überprüfe
           deine Internetverbindung und versuche es erneut.
+      gameAssetsUpdated:
+        text: Es gab ein Update der Spieldaten, das bereits heruntergeladen wurde.
+          Du musst das Spiel neu starten, damit die Änderungen wirksam werden.
+        title: Spieldaten aktualisiert
+      gameAssetUpdateFailed:
+        title: Aktualisierung der Spieldaten fehlgeschlagen
+        text: Der Spiel-Client konnte die Spieldaten nicht aktualisieren. Bitte versuche,
+          das Spiel neu zu öffnen, um zu prüfen, ob die Daten erfolgreich heruntergeladen
+          werden. Falls das nicht funktioniert, kann eine Neuinstallation des Spiels
+          helfen.
     activityCancelled:
       title: Aktivität abgebrochen
       stepsAreInfinite: Die aktuelle Aktivität wurde gestoppt, da du die Anforderungen
@@ -299,3 +313,19 @@ singulars:
       title: Sprache auswählen und herunterladen?
       text: Das Ändern der Spielsprache erfordert das Herunterladen zusätzlicher Daten.
         Möchtest du fortfahren?
+    sellHighValueItems:
+      title: Hochwertige Gegenstände verkaufen?
+      text: Du bist dabei, <c>hochwertige Gegenstände zu verkaufen, was du später
+        bereuen könntest</c>! Bist du sicher, dass du diese Gegenstände verkaufen
+        möchtest?
+    droppingHighValueItems:
+      title: Hochwertige Gegenstände wegwerfen?
+      text: Du bist dabei, <c>hochwertige Gegenstände wegzuwerfen, was du später bereuen
+        könntest</c>! Bist du sicher, dass du diese Gegenstände wirklich fallen lassen
+        möchtest?
+    toggleAgilityXp:
+      title: Agilitäts-XP-Gewinn durch Reisen deaktivieren?
+      text: Bist du sicher, dass du das Sammeln von Agilitäts-XP durch Reisen deaktivieren
+        möchtest? Du kannst diese Funktion später in den Einstellungen wieder aktivieren.
+        Diese Einstellung richtet sich an Spieler, die spezialisierte Charaktere erstellen
+        wollen, die keine Agilitäts-XP erhalten.

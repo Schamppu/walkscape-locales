@@ -102,33 +102,34 @@ verbruiksartikel, consumables: Verbruiksartikelen, noConsumables: Geen verbruiks
 in je inventaris., noPotionConsumables: Geen <hl>elixers</hl> in je inventaris., allItemsInUse: 'Al
 deze voorwerpen worden zijn momenteel in gebruik, en kunnen niet weggegooid worden.',
 noConsumableSelected: Geen verbruiksartikel geselecteerd. Je kunt er hieronder een
-selecteren., checkBank: Bank openen, itemsInUse: Je hebt voorwerpen geselecteerd die
-al gebruikt worden. Je kunt voorwerpen in gebruik niet weggooien of bewaren in de
-bank., durationInSteps: 'Actief voor <c>{steps}</c> <icon i="Steps" /> stappen', cantBeDropped: Voorwerp
-kan niet weggegooid worden., oneOrMoreCantBeDropped: Een of meerdere voorwerpen kunnen
-niet weggegooid worden., duration: Duur, noFoodConsumables: Geen <hl>voedsel</hl>
-in je inventaris., treasury: Schatkamer, longPressTip: <c>Tip:</c> Een stapel voorwerpen
+selecteren., checkBank: Bank, itemsInUse: Je hebt voorwerpen geselecteerd die al gebruikt
+worden. Je kunt voorwerpen in gebruik niet weggooien of bewaren in de bank., durationInSteps: 'Actief
+voor <c>{steps}</c> <icon i="Steps" /> stappen', cantBeDropped: Voorwerp kan niet
+weggegooid worden., oneOrMoreCantBeDropped: Een of meerdere voorwerpen kunnen niet
+weggegooid worden., duration: Duur, noFoodConsumables: Geen <hl>voedsel</hl> in je
+inventaris., treasury: Schatkamer, longPressTip: <c>Tip:</c> Een stapel voorwerpen
 lang ingedrukt houden selecteerd alle soortgelijke stapels., dropItems: Voorwerpen
-weggooien?, slots: 'Ruimte <c>{slots}</c>'}, options: {expandInventory: Inventaris
-uitklappen, showConsumables: Verbruiksartikelen weergeven, consenseInventory: Inventaris
-inklappen, showMaterials: Materialen weergeven, showGear: Uitrusting weergeven}},
-'pfpCreation': {'buttons': {'choose': 'Kiezen', 'hideHat': 'Hoofddeksels activeren',
-'randomize': 'Willekeurig', 'showHat': 'Hoofddeksels activeren', enableBackAccessorie: Rugaccessoire
-inschakelen, enableFacepaint: Schmink inschakelen, enableDynamicBackground: Dynamische
-achtergrond inschakelen, enableFaceAccessorie: Gezichtsaccessoire inschakelen, enableFaceAccessory: Gezichtsaccessoire
-inschakelen, enableBackAccessory: Rugaccessoire inschakelen, enableEyeAccessory: Oogaccessoire
-inschakelen}, 'phrases': {'currentSelection': 'Huidige selectie', mainOptions: Basisopties,
-extras: Extra's, dynamicBackground: Dynamische achtergrond verandert je achtergrondafbeelding
-gebaseerd op de locatie van je personage., defaultExpression: Standaard uitdrukking,
-variants: Varianten, noVariantSelected: Geen variant geselecteerd, resetToDefault: Naar
-standaard terugzetten, colorOptions: Kleuropties, race: Ras, selectedVariant: 'Variant
-{index} geselecteerd', homeRegion: Thuisregio, variant: 'Variant {number}'}}, activity: {
-phrases: {notAffectingTraveling: (geen invloed op reisefficiëntie), workEfficiencyPenalty: '<icon
-i="Work efficiency"/>Basiswerkefficiëntie <c>-{penalty}%</c>', inventoryIsOverLimit: Inventaris
-is over het limiet!, noActivity: Geen activiteit, savedSteps: Bewaarde stappen, consumables: Verbruiksartikelen,
-stopWhenOverEncumbered: Stop wanneer overbelast, options: Opties, requirements: Vereisten,
-rewards: Beloningen, levelActivity: 'Level <c>{level}</c> <object id="{skill}"/> activiteit',
-startActivity: Activiteit starten, queueActivity: Activiteit in wachtrij zetten, travelAndStartActivity: Reis
+weggooien?, slots: 'Ruimte <c>{slots}</c>', depositAll: Alles, hatchesInto: Bevat},
+options: {expandInventory: Inventaris uitklappen, showConsumables: Verbruiksartikelen
+weergeven, consenseInventory: Inventaris inklappen, showMaterials: Materialen weergeven,
+showGear: Uitrusting weergeven}}, 'pfpCreation': {'buttons': {'choose': 'Kiezen',
+'hideHat': 'Hoofddeksels activeren', 'randomize': 'Willekeurig', 'showHat': 'Hoofddeksels
+activeren', enableBackAccessorie: Rugaccessoire inschakelen, enableFacepaint: Schmink
+inschakelen, enableDynamicBackground: Dynamische achtergrond inschakelen, enableFaceAccessorie: Gezichtsaccessoire
+inschakelen, enableFaceAccessory: Gezichtsaccessoire inschakelen, enableBackAccessory: Rugaccessoire
+inschakelen, enableEyeAccessory: Oogaccessoire inschakelen}, 'phrases': {'currentSelection': 'Huidige
+selectie', mainOptions: Basisopties, extras: Extra's, dynamicBackground: Dynamische
+achtergrond verandert je achtergrondafbeelding gebaseerd op de locatie van je personage.,
+defaultExpression: Standaard uitdrukking, variants: Varianten, noVariantSelected: Geen
+variant geselecteerd, resetToDefault: Naar standaard terugzetten, colorOptions: Kleuropties,
+race: Ras, selectedVariant: 'Variant {index} geselecteerd', homeRegion: Thuisregio,
+variant: 'Variant {number}'}}, activity: {phrases: {notAffectingTraveling: (geen invloed
+op reisefficiëntie), workEfficiencyPenalty: '<icon i="Work efficiency"/>Basiswerkefficiëntie
+<c>-{penalty}%</c>', inventoryIsOverLimit: Inventaris is over het limiet!, noActivity: Geen
+activiteit, savedSteps: Bewaarde stappen, consumables: Verbruiksartikelen, stopWhenOverEncumbered: Stop
+wanneer overbelast, options: Opties, requirements: Vereisten, rewards: Beloningen,
+levelActivity: 'Level <c>{level}</c> <object id="{skill}"/> activiteit', startActivity: Activiteit
+starten, queueActivity: Activiteit in wachtrij zetten, travelAndStartActivity: Reis
 en activiteit starten, cantStartActivity: Kan activiteit niet starten, requirementsNotMet: Vereisten
 niet voldaan, noActivitiesInLocation: 'Er zijn geen activiteiten in <object id="{location}"/>.',
 locationIsUnknown: 'Locatie is onbekend. Zodra je deze locatie verkend hebt, kun je
@@ -150,36 +151,46 @@ id="{skill}"/> ervaring', collectibles: '<bp /><icon i="Collectibles"/><c>{count
 verzamelobjecten</c> te vinden'}, options: {completeUntilActions: Voltooi specifiek
 aantal acties, numberOfActions: Aantal acties}}, abilities: {phrases: {abilities: Abilities,
 useAbility: Gebruik ability, holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt
-houden om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel},
-info: {abilitiesInfo: Abilities zijn speciale acties die je direct een voordeel in
-het spel geven. Abilities hebben een cooldown waar je op moet wachten voordat je de
-ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>.
-Bepaalde uitrusting in het spel geven je abilities die je kunt gebruiken om direct
-een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten
-om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet
-voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
-cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown.}}, journal: {phrases: {
-jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare taken</c>
-die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren vanaf <c>prikborden</c>
-op verschillende locaties, zoals steden. Je kunt maximaal drie actieve klusjes hebben.'}},
-treasury: {phrases: {noItems: Je hebt geen schatten om te openen. Je kunt schatkisten
-vinden bij verschillende activiteiten., openChest: Openen, openAll: Alles openen}},
-jobs: {phrases: {rewards: Voltooiingsbeloningen, abandonJob: Klusje opgeven, openJournal: Dagboek
-openen, itemsFromInventory: Voorwerpen uit inventaris, itemsFromBank: Voorwerpen uit
-bank, youMustBeInLocation: 'Je moet op dezelfde locatie zijn als <object id="{obj}"/>
-om voorwerpen in te leveren.', hasNoBank: Er is geen bank op deze locatie., hasNoItemsInInventory: Er
-zijn geen geschikte voorwerpen in je inventaris., giveItems: Voorwerpen geven, give: Geven,
-noJobsAvailable: 'Er zijn momenteel geen klusjes beschikbaar op deze locatie. Nieuwe
-klusjes komen beschikbaar over:', refreshIn: 'Het prikbord wordt ververst over:',
-acceptedJobs: 'Huidig geaccepteerde klusjes <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>',
-hasNoItemsInBank: Er zijn geen geschikte voorwerpen in je bank., acceptJob: Klusje
-accepteren, youMustBeInLocationToCollect: 'Je moet op dezelfde locatie zijn als <object
-id="{obj}"/> om de beloning te ontvangen.', collectRewards: Beloning innen, currentlyAcceptedJobs: Huidige
-geaccepteerde klusjes}, dialogs: {abandonJob: {title: Klusje opgeven, text: Weet je
-zeker dat je dit klusje wilt opgeven? Je zal de voortgang en beloningen van dit klusje
-kwijtraken.}}}, gear: {phrases: {skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen
-gevechtsmodificatoren door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators
-door gedragen voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
+houden om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel,
+alreadyHere: 'Je bent al in <object id="{location}"/>. Ability kan niet gebruikt worden
+om hierheen te reizen.'}, info: {abilitiesInfo: Abilities zijn speciale acties die
+je direct een voordeel in het spel geven. Abilities hebben een cooldown waar je op
+moet wachten voordat je de ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je
+hebt geen abilities</hl>. Bepaalde uitrusting in het spel geven je abilities die je
+kunt gebruiken om direct een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {
+phrases: {followingMustBeTrueToUse: 'Vereisten om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan
+het volgende moet voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown
+resterend:', cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown., charges: Ladingen,
+source: Bron, cooldownRequirements: Cooldown vereisten, cooldown: Cooldown, requirements: Vereisten}},
+journal: {phrases: {jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare
+taken</c> die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren
+vanaf <c>prikborden</c> op verschillende locaties, zoals steden. Je kunt maximaal
+drie actieve klusjes hebben.'}}, treasury: {phrases: {noItems: Je hebt geen schatten
+om te openen. Je kunt schatkisten vinden bij verschillende activiteiten., openChest: Openen,
+openAll: Alles openen}}, jobs: {phrases: {rewards: Voltooiingsbeloningen, abandonJob: Klusje
+opgeven, openJournal: Dagboek openen, itemsFromInventory: Voorwerpen uit inventaris,
+itemsFromBank: Voorwerpen uit bank, youMustBeInLocation: 'Je moet op dezelfde locatie
+zijn als <object id="{obj}"/> om voorwerpen in te leveren.', hasNoBank: Er is geen
+bank op deze locatie., hasNoItemsInInventory: Er zijn geen geschikte voorwerpen in
+je inventaris., giveItems: Voorwerpen geven, give: Geven, noJobsAvailable: 'Er zijn
+momenteel geen klusjes beschikbaar op deze locatie. Nieuwe klusjes komen beschikbaar
+over:', refreshIn: 'Het prikbord wordt ververst over:', acceptedJobs: 'Huidig geaccepteerde
+klusjes <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>', hasNoItemsInBank: Er
+zijn geen geschikte voorwerpen in je bank., acceptJob: Klusje accepteren, youMustBeInLocationToCollect: 'Je
+moet op dezelfde locatie zijn als <object id="{obj}"/> om de beloning te ontvangen.',
+collectRewards: Beloning innen, currentlyAcceptedJobs: Huidige geaccepteerde klusjes,
+browseJobBoards: Klusjes bekijken, travelToJobBoard: 'Reis naar <object id="{obj}"/>',
+cannotAcceptMore: Je kunt niet meer klusjes accepteren., complete: Voltooid, availableJobs: Beschikbare
+klusjes, availableJobInfo: 'Om klusjes te accepteren of te voltooien, moet je op de
+locatie van het klusje zijn.', youAreAtLocation: Je bent op de locatie van dit prikbord.,
+atLocation: 'Beschikbaar in <object id="{obj}"/>', jobAlreadyAccepted: Je hebt dit
+klusje geaccepteerd., cannotWithdraw: 'Je huidige locatie <object id="{obj}"/> heeft
+geen bank. Het opnemen van voorwerpen voor klusjes is niet mogelijk.'}, dialogs: {
+abandonJob: {title: Klusje opgeven, text: Weet je zeker dat je dit klusje wilt opgeven?
+Je zal de voortgang en beloningen van dit klusje kwijtraken.}}}, gear: {phrases: {
+skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen gevechtsmodificatoren
+door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators door gedragen
+voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
 modificatoren, combatModifiers: Gevechtsmodificatoren, noItemEquipped: Geen voorwerp
 uitgerust, noItemSelected: Geen voorwerp geselecteerd}}, tools: {phrases: {emptyToolSlot: Leeg
 gereedschapsvak, lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau
@@ -220,16 +231,18 @@ worden in de bovenstaande lijst, controleer dan of je de app toestemming hebt ge
 om de stappendata te mogen gebruiken van Apple Gezondheid onder: <c>Instellingen ➤
 Privacy & Beveiliging ➤ Gezondheid ➤ (onder Apps) WalkScape</c> en dat Apple Gezondheid
 stappen heeft geregistreerd op deze apparaten in de afgelopen 7 dagen.', gameVersion: 'Spelversie
-{versie}'}}, location: {phrases: {activities: Activiteiten, services: Voorzieningen,
+{versie}', comingSoonToAndroid: Smartwatch ondersteuning voor Android zal binnenkort
+beschikbaar zijn. Momenteel worden alleen telefoons ondersteund als bron voor het
+tellen van stappen.}}, location: {phrases: {activities: Activiteiten, services: Voorzieningen,
 buildings: Gebouwen, noActivites: Geen activiteiten beschikbaar op deze locatie.,
 factions: Facties, routes: Routes, tapToShowRoutes: Tik aan om routes weer te geven,
 jobBoard: Prikbord, jobs: Klusjes, owner: Eigenaar, showingRoutesFrom: 'Reisbestemming
 vanuit <object id="{from}"/>.', noRoutesFromLocation: 'Geen reisbestemmingen vanuit
-<object id="{from}"/>.'}}, worldMap: {phrases: {activities: Activiteiten, services: Voorzieningen,
-buildings: Gebouwen, pointsOfInterest: Bezienswaardigheden, information: Informatie,
-routeFromTo: '<location i="{fromID}"/> naar <location i="{toID}"/>', route: Route,
-currentLocation: Huidige locatie, afterExploring: 'Na het verkennen van de locatie,
-zul je de bezienswaardigheden van deze locatie kunnen zien.', routeRequirementsNotMet: 'Routes
+<object id="{from}"/>.', escape: Vlucht}}, worldMap: {phrases: {activities: Activiteiten,
+services: Voorzieningen, buildings: Gebouwen, pointsOfInterest: Bezienswaardigheden,
+information: Informatie, routeFromTo: '<location i="{fromID}"/> naar <location i="{toID}"/>',
+route: Route, currentLocation: Huidige locatie, afterExploring: 'Na het verkennen
+van de locatie, zul je de bezienswaardigheden van deze locatie kunnen zien.', routeRequirementsNotMet: 'Routes
 in je geselecteerde pad hebben vereisten waar niet aan wordt voldaan:', youHaveNotExplored: Je
 hebt deze locatie nog niet verkend. Je zult informatie over deze locatie zien nadat
 je er een keer bent geweest., noActivities: Er zijn geen activiteiten beschikbaar
@@ -239,21 +252,22 @@ Weet je het zeker?, youAreInspectingFromMap: 'U bent bezig met <c>het bekijken v
 de wereldkaart</c>. Om te gebruiken, moet u zich op de locatie zelf bevinden en dit
 vanuit het hoofdscherm openen.'}}, stats: {phrases: {stats: Statistieken, totalSkillXp: Totale
 vaardigheids-XP, totalSteps: Totaal aantal stappen, highestStepsIn24Hours: Meeste
-stappen in 24u, recordedFrom: 'Opgenomen van <c>{van}</c> tot <c>{tot}</c>.', lastUpdated: 'Laatst
-bijgewerkt op: <c>{GeupdatedOp}</c>.', reputation: Reputatie}, info: {stats: Een overzicht
-van statistieken over elke stap die je hebt genomen door de wereld van Arenum., chartWarning: {
-title: Onnauwkeurigheden in grafieken, description: 'Verschillende spelers hebben
-problemen gemeld met onnauwkeurige stappengrafieken, veroorzaakt door grote wijzigingen
-achter de schermen in een eerdere update. Als je problemen ondervindt waarbij de grafieken
-significant afwijkende waarden weergeven dan andere bronnen, is dit waarschijnlijk
-de reden. De spellogica zelf zou nog steeds moeten werken zoals voorheen en de grafiekproblemen
-zullen in toekomstige updates worden opgelost.'}, reputation: Reputatie is een maatstaf
-voor hoe bekend je bent in de verschillende facties van WalkScape.}}, tutorial: {
-phrases: {noMoreMessages: Geen tutorial-berichten meer, youWillGain: Je ontvangt het
-volgende als je deze optie selecteert.}}, leaderboards: {phrases: {show: Weergeven,
-everyone: Iedereen, friends: Vrienden, leaderboards: Klassementen, first: Eerste,
-me: Ik, last: Laatste, loadingPage: Pagina laden..., totalSteps: Totaal aantal stappen,
-totalLevel: Totaalniveau, totalExperience: Totale ervaring, achievementPoints: Prestatiepunten}},
+stappen in 24u, recordedFrom: 'Opgenomen van <c>{from}</c> tot <c>{to}</c>.', lastUpdated: 'Laatst
+bijgewerkt op: <c>{updatedAt}</c>.', reputation: Reputatie, statUpdatesWithDelay: Deze
+waarde wordt bijgewerkt met een maximale vertraging van <c>1 uur</c>.}, info: {stats: Een
+overzicht van statistieken over elke stap die je hebt genomen door de wereld van Arenum.,
+chartWarning: {title: Onnauwkeurigheden in grafieken, description: 'Verschillende
+spelers hebben problemen gemeld met onnauwkeurige stappengrafieken, veroorzaakt door
+grote wijzigingen achter de schermen in een eerdere update. Als je problemen ondervindt
+waarbij de grafieken significant afwijkende waarden weergeven dan andere bronnen,
+is dit waarschijnlijk de reden. De spellogica zelf zou nog steeds moeten werken zoals
+voorheen en de grafiekproblemen zullen in toekomstige updates worden opgelost.'},
+reputation: Reputatie is een maatstaf voor hoe bekend je bent in de verschillende
+facties van WalkScape.}}, tutorial: {phrases: {noMoreMessages: Geen tutorial-berichten
+meer, youWillGain: Je ontvangt het volgende als je deze optie selecteert.}}, leaderboards: {
+phrases: {show: Weergeven, everyone: Iedereen, friends: Vrienden, leaderboards: Klassementen,
+first: Eerste, me: Ik, last: Laatste, loadingPage: Pagina laden..., totalSteps: Totaal
+aantal stappen, totalLevel: Totaalniveau, totalExperience: Totale ervaring, achievementPoints: Prestatiepunten}},
 mainMenu: {phrases: {chooseCharacter: 'Kies je personage, of maak een nieuwe aan.',
 pleaseWait: Een ogenblik geduld..., noInternet: Geen internetverbinding, lostInternet: Je
 toestel heeft verbinding met het internet verloren. Wachten op een connectie..., dontDoIt: Niet
@@ -269,21 +283,23 @@ laden... Een ogenblik geduld a.u.b.!, logIn: Inloggen, register: Registreren, we
 bij WalkScape, <hl>vreemdeling</hl>. Log a.u.b. in.', pleaseEnterCredentials: Voer
 a.u.b. je WalkScape accountgegevens in., email: E-mail / Gebruikersnaam, password: Wachtwoord,
 noBetaAccess: Geen beta-toegang., googlePlay: Update vanuit Google Play, accountPage: Account-pagina,
-support: Steun het spel, testFlight: Je kunt de nieuwste versie downloaden via <c>TestFlight</c>.},
-loadingStates: {localizationFiles: Localisatiebestanden aan het laden, initializingDatabases: Databases
-aan het initialiseren, readingCloudData: Cloudgegevens aan het lezen, cleaningUpData: Gegevens
-aan het opruimen, initializingObjects: Spelobjecten aan het initialiseren, initializingProviders: Providers
-aan het initialiseren, loadingComplete: Laden afgerond!, readingLocalGameData: Lokale
-spelgegevens aan het lezen, initializingPlayer: Spelergegevens aan het initialiseren,
-startingGameLoad: Aan het beginnen met het ophalen van spelgegevens, validatingGame: Spelgegevens
-uit de server aan het valideren, gameVersion: Spelversie aan het ophalen, checkingLocalizations: Localisaties
-uit de server aan het controleren, loadingCharactersFromCloud: Personages uit de cloud
-aan het laden, dataLoadingComplete: Gegevens laden afgerond!}}, character: {phrases: {
-checkOutSubject: Check mijn voortgang in WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen
-van de laatste 7 dagen, checkOut: 'Hier is mijn WalkScape personage {name}. Moet je
-kijken!\nhttps://walkscape.app', totalLevel: Totaalniveau, savePicture: Afbeelding
-opslaan, level: 'Personage-niveau: <c>{level}</c>', stepsToNextLevel: 'Stappen tot
-volgend niveau <c>{steps}</c>'}, info: {skillBreakdown: Hier is het complete overzicht
+support: Steun het spel, testFlight: Je kunt de nieuwste versie downloaden via <c>TestFlight</c>.,
+restart: Herstart}, loadingStates: {localizationFiles: Localisatiebestanden aan het
+laden, initializingDatabases: Databases aan het initialiseren, readingCloudData: Cloudgegevens
+aan het lezen, cleaningUpData: Gegevens aan het opruimen, initializingObjects: Spelobjecten
+aan het initialiseren, initializingProviders: Providers aan het initialiseren, loadingComplete: Laden
+afgerond!, readingLocalGameData: Lokale spelgegevens aan het lezen, initializingPlayer: Spelergegevens
+aan het initialiseren, startingGameLoad: Aan het beginnen met het ophalen van spelgegevens,
+validatingGame: Spelgegevens uit de server aan het valideren, gameVersion: Spelversie
+aan het ophalen, checkingLocalizations: Localisaties uit de server aan het controleren,
+loadingCharactersFromCloud: Personages uit de cloud aan het laden, dataLoadingComplete: Gegevens
+laden afgerond!, authenticating: Authenticeren, awaitingForRemoveConfig: Wachten op
+externe configuratie, loadingDevicePermissions: Apparaat machtigingen laden}}, character: {
+phrases: {checkOutSubject: Check mijn voortgang in WalkScape!, skills: Vaardigheden,
+stepsOfLastWeek: Stappen van de laatste 7 dagen, checkOut: 'Hier is mijn WalkScape
+personage {name}. Moet je kijken!\nhttps://walkscape.app', totalLevel: Totaalniveau,
+savePicture: Afbeelding opslaan, level: 'Personage-niveau: <c>{level}</c>', stepsToNextLevel: 'Stappen
+tot volgend niveau <c>{steps}</c>'}, info: {skillBreakdown: Hier is het complete overzicht
 van alle vaardigheden die je personage beoefend heeft tijdens zijn/haar reis. Druk
 op een van de vaardigheden voor meer gedetailleerde informatie en wat ze ontgrendelen.,
 eachLevelIncreasesStepBank: 'Elk personage-niveau na niveau <c>{level}</c> verhoogt
@@ -392,10 +408,11 @@ uitrustingsset, newSetDefaultName: Mijn nieuwe uitrustingsset, noActivitiesSelec
 activiteiten geselecteerd, forActivities: 'Voor activiteiten: ', sortBy: 'Sorteren
 op: ', toolSlot: Gereedschapsvak, default: Standaard, showAttributes: Attributen weergeven,
 tools: Gereedschappen, name: Naam, unequipGear: Uitrusting uit doen, unequipTools: Gereedschap
-wegleggen, noItemSelected: Geen items geselecteerd, gear: Uitrusting, level: 'Niv. '},
-errors: {duplicateItem: Deze uitrustingssets bevat dit item al, keywordError: 'Deze
-uitrustingssets bevat al een: <object id="{keyword}" />'}, info: {gearSetsDescription: Uitrustingssets
-helpen je om snel te kunnen wisselen tussen verschillende uitrustingen., gearSetManageDesc: 'Kies
+wegleggen, noItemSelected: Geen items geselecteerd, gear: Uitrusting, level: 'Niv. ',
+hideItems: Verberg voorwerpen, showItems: Toon voorwerpen}, errors: {duplicateItem: Deze
+uitrustingssets bevat dit item al, keywordError: 'Deze uitrustingssets bevat al een:
+<object id="{keyword}" />'}, info: {gearSetsDescription: Uitrustingssets helpen je
+om snel te kunnen wisselen tussen verschillende uitrustingen., gearSetManageDesc: 'Kies
 hieronder een uitrustingsset die je aan wilt trekken. Om sets aan te passen, te importeren
 of bewerken kan je op <c i=0>Beheren</c> drukken.', gearSetsListDesc: 'Hier kan je
 jouw uitrustingssets beheren. Als je een <c i=0>nieuwe uitrustingsset</c> wilt maken,
@@ -405,10 +422,11 @@ geen uitrustingssets gemaakt. Maak je eerste set door op <c i=0>Nieuwe set maken
 te drukken., noGearSetsList: Je hebt nog geen uitrustingssets. Kies <c i=0>Beheren</c>
 om een nieuwe set te creëren of importeren., youDontHaveAnyItems: 'Geen voorwerpen.
 Je kent geen voorwerpen van dit type of je hebt er geen, of je filters en zoekopdracht
-hebben geen resultaten opgeleverd die hieraan voldoen.'}}, queue: {phrases: {switchingToGearSet: 'Wisselen
-naar uitrustingsset <c>{name}</c>', activityInLocation: '<object id="{activity}"/>
-in <object id="{location}"/>', queue: Wachtrij, queuedActions: Acties in wachtrij,
-travelingTo: '<object id="{from}"/> naar <object id="{to}"/>', untilInventoryFull: Tot
+hebben geen resultaten opgeleverd die hieraan voldoen.', gearSetReorderDesc: Je kunt
+je uitrustingssets herschikken door ze in de onderstaande lijst te verslepen.}}, queue: {
+phrases: {switchingToGearSet: 'Wisselen naar uitrustingsset <c>{name}</c>', activityInLocation: '<object
+id="{activity}"/> in <object id="{location}"/>', queue: Wachtrij, queuedActions: Acties
+in wachtrij, travelingTo: '<object id="{from}"/> naar <object id="{to}"/>', untilInventoryFull: Tot
 inventaris vol is, noGearSetFound: 'Gekozen uitrustingsset niet gevonden, heb je deze
 verwijderd?', noPathFound: Geen pad naar de bestemming gevonden., forXActions: 'Voor
 <c>{count}</c> acties aan het doen', inputNotMet: Invoervereisten niet voldaan}, options: {
@@ -421,14 +439,16 @@ de bank als er een beschikbaar is in een van de locaties waar je doorheen komt.}
 removeFromQueue: {text: Verwijderen uit wachtrij, desc: Verwijder deze actie en alle
 acties erna uit de wachtrij.}, cancelGearSetSwitch: {text: Wisselen van uitrustingsset
 annuleren, desc: Annuleert het wisselen van uitrustingsset voor deze actie.}}, types: {
-traveling: Reizen, activity: Activiteit, crafting: Ambacht}, suggestedOptions: {startActivity: Activiteit,
-startCrafting: Maken, startTraveling: Reizen}, suggestions: {traveling: {onceYouArriveTo: 'Actie
-toevoegen aan wachtrij in <object id="{location}"/>?'}, crafting: {onceAllItemsAreCrafted: Wil
-je iets doen zodra all voorwerpen gemaakt zijn?, onceCertainRarityIsCrafted: Wil je
-iets doen zodra je iets hebt gemaakt van een specifieke zeldzaamheid of al het materiaal
-hebt gebruikt?}, activity: {onceInventoryIsFull: Wil je iets doen zodra je inventaris
-vol is?, onceAllActionsAreCompleted: Wil je iets doen zodra alle acties voltooid zijn?}}},
-whileAway: {phrases: {fromProc: 'Door <c>{proc}</c>', fromAttribute: 'Door attribuut
-{attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door <object id="{source}"/>'}},
-rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde Walkpedia-artikelen, rumorsFromCharacter: 'Geruchten
-van <c>{characterName}</c>'}}}}
+traveling: Reizen, activity: Activiteit, crafting: Handenarbeid}, suggestedOptions: {
+startActivity: Activiteit, startCrafting: Maken, startTraveling: Reizen}, suggestions: {
+traveling: {onceYouArriveTo: 'Actie toevoegen aan wachtrij in <object id="{location}"/>?'},
+crafting: {onceAllItemsAreCrafted: Wil je iets doen zodra all voorwerpen gemaakt zijn?,
+onceCertainRarityIsCrafted: Wil je iets doen zodra je iets hebt gemaakt van een specifieke
+zeldzaamheid of al het materiaal hebt gebruikt?}, activity: {onceInventoryIsFull: Wil
+je iets doen zodra je inventaris vol is?, onceAllActionsAreCompleted: Wil je iets
+doen zodra alle acties voltooid zijn?}}}, whileAway: {phrases: {fromProc: 'Door <c>{proc}</c>',
+fromAttribute: 'Door attribuut {attribute}', whileYouWereAway: Terwijl je weg was...,
+fromSource: 'Door <object id="{source}"/>'}}, rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde
+Walkpedia-artikelen, rumorsFromCharacter: 'Geruchten van <c>{characterName}</c>'}},
+download: {phrases: {downloadedFileCount: '<c i=0>{current}</c> van <c i=1>{total}</c>
+bestanden gedownload'}}}}

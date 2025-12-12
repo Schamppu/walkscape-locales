@@ -63,12 +63,43 @@ singulars:
     nugget:
       requirement: Vereist een <object id="nugget" />.
       name: Klompje
+      requirementLevel: Vereist een klompje met minstens <keywordRequirements /> in
+        zijn vereisten.
     processed:
       requirement: Vereist een <object id="processed" /> materiaal.
       name: Bewerkt
+      requirementLevel: Vereist een verwerkt materiaal met minstens <keywordRequirements
+        /> in zijn vereisten.
     offcut:
       name: Restant
       requirement: Vereist een <object id="offcut" />.
+      requirementLevel: Vereist een overblijfsel met minstens <keywordRequirements
+        /> in zijn vereisten.
+    roughGem:
+      name: Ruwe edelsteen
+      requirement: Vereist een <object id="rough_gem" />.
+      requirementLevel: Vereist een ruwe edelsteen met minstens <keywordRequirements
+        /> in zijn vereisten.
+    cutGem:
+      name: Geslepen edelsteen
+      requirement: Vereist een <object id="cut_gem" />.
+      requirementLevel: Vereist een geslepen edelsteen met minstens <keywordRequirements
+        /> in zijn vereisten.
+    trinket:
+      name: Snuisterij
+      requirement: Vereist een <object id="trinket" />.
+      requirementLevel: Vereist een snuisterij met minstens <keywordRequirements />
+        in zijn vereisten.
+    ingredient:
+      name: Ingrediënt
+      ingredient: Vereist een <object id="ingredient" />.
+      requirementLevel: Vereist een ingrediënt dat tenminste <keywordRequirements
+        /> in zijn vereisten heeft.
+    misc:
+      name: Diversen.
+      requirementLevel: Vereist een overig voorwerp met minstens <keywordRequirements
+        /> in zijn vereisten.
+      requirement: Vereist een <object id="misc" /> voorwerp.
   tools:
     ruler:
       requirement: Vereist het dragen van een <object id="ruler" />.
@@ -161,9 +192,9 @@ singulars:
       requirementLevel: Vereist kookgereedschap welke op z'n minst <keywordRequirements
         /> vereist.
     craftingTool:
-      name: Ambachtsgereedschap
+      name: Handenarbeidsgereedschap
       requirement: Vereist het dragen van een <object id="craftingTool" />.
-      requirementLevel: Vereist ambachtsgereedschap met minstens <keywordRequirements
+      requirementLevel: Vereist handenarbeidsgereedschap met minstens <keywordRequirements
         /> in zijn vereisten.
     fishingLure:
       name: Lokaas
@@ -274,6 +305,8 @@ singulars:
     huntingTrap:
       name: Jachtval
       requirement: Vereist het dragen van een <object id="huntingTrap" />.
+      requirementLevel: Vereist een jagersval met minstens <keywordRequirements />
+        in zijn vereisten.
   recipes:
     skills:
       cooking:
@@ -369,45 +402,75 @@ singulars:
     food:
       name: Voedsel
       requirement: Vereist <object id="food" />.
+      requirementLevel: Vereist voedsel met minstens <keywordRequirements /> in zijn
+        vereisten.
     sandwich:
       requirement: Vereist een <object id="sandwich" />.
       name: Boterham
+      requirementLevel: Vereist een boterham met minstens <keywordRequirements />
+        in zijn vereisten.
     fruit:
       name: Vrucht
       requirement: Vereist een <object id="fruit" />.
+      requirementLevel: Vereist fruit met minstens <keywordRequirements /> in zijn
+        vereisten.
     beverage:
       name: Drankje
       requirement: Vereist een <object id="beverage" />.
+      requirementLevel: Vereist drinken met minstens <keywordRequirements /> in zijn
+        vereisten.
     alcohol:
       requirement: Vereist <object id="alcohol" />.
       name: Alcohol
+      requirementLevel: Vereist alcohol met minstens <keywordRequirements /> in zijn
+        vereisten.
     water:
       name: Water
       requirement: Vereist <object id="water" />.
+      requirementLevel: Vereist water met minstens <keywordRequirements /> in zijn
+        vereisten.
     memosphere:
       requirement: Vereist een <object id="memosphere" />.
       name: Memosfeer
+      requirementLevel: Vereist een herinnerondo met minstens <keywordRequirements
+        /> in zijn vereisten.
   containers:
     chest:
       requirement: Vereist een <object id="chest" />.
       name: Schatkist
+      requirementLevel: Vereist een schatkist met minstens <keywordRequirements />
+        in zijn vereisten.
     regionalChest:
       name: Regionale schatkist
       requirement: Vereist een <object id="regionalChest" />.
+      requirementLevel: Vereist een regionale schatkist met minstens <keywordRequirements
+        /> in zijn vereisten.
     skillingChest:
       requirement: Vereist een <object id="skillingChest" />.
       name: Vaardigheidsschatkist
+      requirementLevel: Vereist een vaardighedenschatkist met minstens <keywordRequirements
+        /> in zijn vereisten.
   general:
     lightSource:
       requirement: Vereist uitgerust te zijn met een <object id="lightSource" />.
       name: Lichtbron
+      requirementLevel: Vereist het dragen van een <keywordRequirements />.
   misc:
     trash:
       name: Afval
       requirement: Vereist <object id="trash" />.
+      requirementLevel: Vereist afval met minstens <keywordRequirements /> in zijn
+        vereisten.
     currency:
       name: Betaalmiddel
       requirement: Vereist een <object id="currency" />.
+      requirementLevel: Vereist valuta met minstens <keywordRequirements /> in zijn
+        vereisten.
+    spectral:
+      name: Spookachtig
+      requirementLevel: Vereist iets spookachtigs met minstens <keywordRequirements
+        /> in zijn vereisten.
+      requirement: Vereist iets wat <object id="spectral" /> is.
   achievements:
     percentage:
       name: Prestatiepercentage
@@ -416,6 +479,8 @@ singulars:
     reward:
       name: Prestatiebeloning
       requirement: Vereist een <object id="achievement_reward" />.
+      requirementLevel: Vereist een prestatiebeloning met minstens <keywordRequirements
+        /> in zijn vereisten.
   search:
     items:
       consumables:
@@ -424,6 +489,12 @@ singulars:
     skills:
       agility:
         name: Behendigheid
+  faction:
+    reward:
+      requirement: Vereist een <object id="faction_reward" />.
+      name: Factiebeloning
+      requirementLevel: Vereist een factiebeloning met minstens <keywordRequirements
+        /> in zijn vereisten.
 consumables:
   cookedFish:
     name: Gekookte vis

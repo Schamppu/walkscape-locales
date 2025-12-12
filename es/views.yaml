@@ -76,6 +76,7 @@ maps:
         de experiencia
       'showDailyTips': Mostrar consejos diarios
       'activityInformationOpen': Mostrar más información de actividad
+      'toggleAgilityXp': No obtener EXP de agilidad al Viajar
     visibilitySettings:
       'public': Público
       'friends': Solo amigos
@@ -112,6 +113,7 @@ maps:
       'gameplay': Juego
       'account': Cuenta
       'character': Personaje
+      'characterSpecific': Específico del personaje
     custom:
       'dataSource': Origen de datos de pasos
     enumSettings:
@@ -164,6 +166,18 @@ maps:
       'changelog': Changelog
       'update': Actualización
       'system': Sistema
+  skillTypes:
+    'combat': Combate
+    'artisan': Artesanía
+    'gathering': Recogida
+    'utility': Utilidad
+  abilities:
+    types:
+      'active': Activo
+      'passive': Pasivo
+      'consumable': Consumible
+      'activity': Actividad
+      'emergency': Emergencia
 plurals:
   achievements:
     phrases:
@@ -348,7 +362,7 @@ singulars:
       selectedStacks: <c>{stacks}</c> pilas seleccionadas
       requirementsNotMet: No se cumplen los requisitos.
       cantEquip: No se puede equipar.
-      checkBank: Abrir banco
+      checkBank: Banco
       slotDoesntExist: Esta ranura de objeto ya no existe.
       allItemsInUse: Todos estos objetos están actualmente en uso y no pueden soltar.
       noConsumables: No hay consumibles en tu inventario.
@@ -385,6 +399,8 @@ singulars:
         previamente
       requires: Requiere
       equipToToolSlot: Equipar en la ranura de herramienta {id}
+      depositAll: Todo
+      hatchesInto: Se convierte en
     options:
       consenseInventory: Condensar inventario
       expandInventory: Expandir inventario
@@ -405,6 +421,7 @@ singulars:
       owner: Dueño
       noRoutesFromLocation: No hay destinos de viaje desde <object id="{from}"/>.
       showingRoutesFrom: Destinos de viaje desde <object id="{from}"/>.
+      escape: Escapar
   pfpCreation:
     buttons:
       choose: Elegir
@@ -520,6 +537,7 @@ singulars:
       welcomeToWalkscape: Bienvenido a WalkScape, <hl>forastero</hl>. Por favor, inicia
         sesión.
       testFlight: Puedes descargar la última versión en <c>TestFlight</c>.
+      restart: Reiniciar
     loadingStates:
       localizationFiles: Cargando archivos de localización
       validatingGame: Validando datos del juego desde el servidor
@@ -579,15 +597,15 @@ singulars:
         mientras haces actividades.
       noActivity: Ninguna actividad seleccionada. <hl>Selecciona una aquí debajo</hl>,
         o desliza hacia la izquierda para ver todo lo disponible en esta localización.
-      savedSteps: Tienes pasos guardados que están siendo usados. Cada paso cuenta
-        como dos hasta que no queden pasos guardados.
+      savedSteps: Los pasos guardados evitan que los pasos se desperdicien y se acumulan
+        al caminar cuando no hay ninguna actividad activa. Se agotan duplicando los
+        pasos que das cuando vuelves a tener una actividad activa.
     phrases:
       consumables: Consumibles
       noActivity: Sin actividad
       savedSteps: Pasos guardados
       inventoryIsOverLimit: ¡Inventario por encima del límite!
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Eficiencia de trabajo global
-        <c>-{penalty}%</c>
+      workEfficiencyPenalty: Eficiencia de trabajo base <c>-{penalty}%</c>
       notAffectingTraveling: (no afecta a la eficiencia al viajar)
       stopWhenOverEncumbered: Parar al sobrecargarse
       options: Opciones
@@ -604,10 +622,28 @@ singulars:
       noActivitiesInLocation: No hay actividades en <object id="{location}"/>.
       activitiesInLocation: Actividades disponibles en <object id="{location}"/>
       guideTip: Consejo del día
+      savedStepsUsed: Pasos guardados usados
+      inputs: Entradas
+      workEfficiency: Eficiencia de trabajo
+      maxWorkEfficiency: Eficiencia de trabajo máxima
+      agilityBonus: Nivel de Agilidad <c>{level}</c>
+      fromGear: Equipo actual
+      fromServices: Bono de servicio
+      fromCollectibles: Coleccionables
+      fromConsumables: Consumibles
+      fromOverLevels: Estar sobrenivelado <numberProgress current="{current}" max="{max}"
+        />
+      changeActivity: Cambiar actividad
+      abilities: Talentos
+      baseEfficiency: Eficiencia base
+      fromOverencumbered: Sobrecargado
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> experiencia
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} coleccionables</c> que
         se pueden encontrar
+    options:
+      completeUntilActions: Completar una cantidad de acciones
+      numberOfActions: Cantidad de acciones
   character:
     info:
       skillBreakdown: Aquí está el desglose total de todas las habilidades que tu
@@ -620,7 +656,7 @@ singulars:
       stepsOfLastWeek: Pasos de los últimos 7 días
       checkOut: Mira mi personaje {name} de WalkScape. Échale un vistazo en:\nhttps://walkscape.app
       checkOutSubject: ¡Mira mi progreso en WalkScape!
-      totalLevel: Nivel total
+      totalLevel: Nivel de habilidad total
       savePicture: Guardar imagen
       level: 'Nivel del personaje: <c>{level}</c>'
       stepsToNextLevel: Pasos hasta el siguiente nivel <c>{steps}</c>
@@ -743,6 +779,8 @@ singulars:
       noAction: Sin acción
       holdToUse: Mantener pulsado para usar
       holdToCast: Mantener pulsado para lanzar
+      alreadyHere: Ya te encuentras en <object id="{location}"/>. No se puede usar
+        el talento para viajar aquí.
     info:
       youHaveNoAbilities: <hl>No tienes talentos</hl>. Cierto equipo del juego puede
         otorgarte talentos que puedes usar para obtener algún beneficio instantáneo
@@ -757,6 +795,11 @@ singulars:
       cooldownRemaining: 'Enfriamiento restante:'
       cooldownReady: 'Enfriamiento: Listo'
       noCooldown: Sin enfriamiento.
+      cooldown: Enfriamiento
+      source: Fuente
+      requirements: Requisitos
+      cooldownRequirements: Requisitos de enfriamiento
+      charges: Cargas
   treasury:
     phrases:
       openChest: Abrir
@@ -846,7 +889,7 @@ singulars:
       everyone: Todo el mundo
       friends: Amigos
       totalSteps: Pasos totales
-      totalLevel: Nivel total
+      totalLevel: Nivel de habilidad total
       loadingPage: Cargando página...
       last: Último
       achievementPoints: Puntos de logro
@@ -981,6 +1024,9 @@ singulars:
       showAttributes: Mostrar atributos
       gear: Equipo
       name: Nombre
+      reorderGearSets: Reordenar kits de equipo
+      showItems: Mostrar objetos
+      hideItems: Ocultar objetos
     errors:
       keywordError: 'El kit de equipo ya tiene: <object id="{keyword}" />'
       duplicateItem: El objeto ya existe en el kit de equipo
@@ -1001,6 +1047,8 @@ singulars:
       noGearSets: Todavía no has creado ningún kit de quipo.
       gearSetManageShortDesc: Para crear, importar o editar tus kits de equipo, puedes
         seleccionar <c i=0>Manage</c>.
+      gearSetReorderDesc: Puedes reordenar tus kits de equipo arrastrándolos y soltándolos
+        en la lista a continuación.
   locales:
     phrases:
       language: Idioma
@@ -1049,7 +1097,7 @@ singulars:
     types:
       traveling: Viajando
       activity: Actividad
-      crafting: Fabricando
+      crafting: Fabricación
     phrases:
       queue: Cola
       queuedActions: Acciones en cola
@@ -1059,9 +1107,11 @@ singulars:
       noGearSetFound: Kit de equipo elegido no encontrado, ¿lo has eliminado?
       activityInLocation: <object id="{activity}"/> en <object id="{location}"/>
       noPathFound: No se ha encontrado un camino al destino.
+      forXActions: Realizar durante <c>{count}</c> acciones
+      inputNotMet: Requisitos de entrada no cumplidos
     suggestedOptions:
       startActivity: Actividad
-      startCrafting: Fabricar
+      startCrafting: Fabricación
       startTraveling: Viajar
   rumors:
     phrases:

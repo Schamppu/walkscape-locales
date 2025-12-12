@@ -102,34 +102,42 @@ een e-mail te sturen naar {email}.', title: Je bent tijdelijk verbannen van Walk
 userBannedPermanently: {text: 'Je bent permanent verbannen van WalkScape. Als je denkt
 dat dit een vergissing is en je wilt tegen deze beslissing in beroep gaan, kun je
 contact met ons opnemen door een e-mail te sturen naar {email}.', title: Je bent permanent
-verbannen van WalkScape}}, gameError: {initializingGameFailed: {text: De client heeft
-niet kunnen initialiseren. Meld dit a.u.b. aan de ontwikkelaars op Discord met details
-van je foutmelding en toestel. Je kunt ook proberen het spel opnieuw te openen om
-te zien of het spel succesvol laadt., title: Spel initialiseren mislukt}, loadingPlayerFailed: {
-title: Speler laden mislukt, text: Ongeldige spelersgegevens. Laden mislukt. Neem
-a.u.b. contact op met de ontwikkelaars via Discord of e-mail.}, stepLoadingFailed: {
-title: Stappen laden mislukt, text: De client heeft de stappen niet kunnen laden.
-Meld dit au.b. bij de ontwikkelaars op Discord met de details van de error en het
-toestel. Je kunt ook proberen het spel opnieuw te openen om te zien of de stappen
-succesvol laden.}, stepLoadingInterruped: {title: Laden van stappen onderbroken, text: Het
-spel werd op de achtergrond gezet of onderbroken tijdens het laden van de stappen.
-Probeer het spel opnieuw te openen om de stappen te laden.}, stepsNotLoadedDueToBan: {
-title: Stappen niet geladen vanwege je ban, text: Je stappen zijn niet geladen omdat
-je bent uitgesloten van WalkScape. Vanaf nu worden je stappen weer normaal geteld.},
-couldNotGetServerTime: {title: Servertijd ophalen mislukt, text: De spelclient heeft
-de servertijd niet kunnen ophalen. Controleer je internetverbinding en probeer het
-nogmaals.}}}, info: {game: {equipGearSetFailed: {text: Uitrustingsset dragen mislukt.
-De uitrustingsset die je probeerde te dragen is mogelijk ongeldig of corrupt., title: Uitrustingsset
-dragen mislukt}, withdrawTooFew: {text: Je hebt niet genoeg voorwerpen om op te nemen.,
-title: Opnemen mislukt}, importGearSetFailed: {title: Uitrustingsset importeren mislukt,
-text: Fout opgetreden bij het importeren van uitrustingsset. Uitrustingssetgegevens
-zijn mogelijk corrupt of ongeldig.}, importGearSetTooManyTools: {title: Uitrustingsset
-heeft te veel gereedschappen, text: De uitrustingsset had meer gereedschappen dan
-toegestaan.}, changingActivityFailed: {title: Activiteit veranderen mislukt, text: Activiteit
-veranderen mislukt. Je bent al bezig met deze activiteit of het is niet beschikbaar.},
-equipGearSetSomeFailed: {title: Dragen van voorwerpen in uitrustingsset mislukt, text: 'Sommige
-voorwerpen in de uitrustingsset kunnen niet worden gedragen. Mogelijk is de uitrustingsset
-ongeldig, of je voldoet niet aan de eisen om sommige voorwerpen te dragen.'}, equipGearFailed: {
+verbannen van WalkScape}, failureToValidateClient: {title: Valideren van client mislukt,
+text: Het valideren van de client door de spelclient is mislukt. Dit komt waarschijnlijk
+door een netwerkfout. Herstart het spel en probeer opnieuw.}}, gameError: {initializingGameFailed: {
+text: De client heeft niet kunnen initialiseren. Meld dit a.u.b. aan de ontwikkelaars
+op Discord met details van je foutmelding en toestel. Je kunt ook proberen het spel
+opnieuw te openen om te zien of het spel succesvol laadt., title: Spel initialiseren
+mislukt}, loadingPlayerFailed: {title: Speler laden mislukt, text: Ongeldige spelersgegevens.
+Laden mislukt. Neem a.u.b. contact op met de ontwikkelaars via Discord of e-mail.},
+stepLoadingFailed: {title: Stappen laden mislukt, text: De client heeft de stappen
+niet kunnen laden. Meld dit au.b. bij de ontwikkelaars op Discord met de details van
+de error en het toestel. Je kunt ook proberen het spel opnieuw te openen om te zien
+of de stappen succesvol laden.}, stepLoadingInterruped: {title: Laden van stappen
+onderbroken, text: Het spel werd op de achtergrond gezet of onderbroken tijdens het
+laden van de stappen. Probeer het spel opnieuw te openen om de stappen te laden.},
+stepsNotLoadedDueToBan: {title: Stappen niet geladen vanwege je ban, text: Je stappen
+zijn niet geladen omdat je bent uitgesloten van WalkScape. Vanaf nu worden je stappen
+weer normaal geteld.}, couldNotGetServerTime: {title: Servertijd ophalen mislukt,
+text: De spelclient heeft de servertijd niet kunnen ophalen. Controleer je internetverbinding
+en probeer het nogmaals.}, gameAssetsUpdated: {text: De spelgegevens zijn bijgewerkt
+met nieuwe gedownloade gegevens. Je moet het spel opnieuw opstarten om deze wijzigingen
+toe te passen., title: Spelgegevens bijgewerkt}, gameAssetUpdateFailed: {title: Spelgegevens
+bijwerken mislukt, text: 'Het bijwerken van de spelgegevens is mislukt. Probeer het
+spel opnieuw te openen om te kijken of de gegevens dan correct gedownload worden.
+Als dat niet werkt, probeer dan het spel opnieuw te installeren.'}}}, info: {game: {
+equipGearSetFailed: {text: Uitrustingsset dragen mislukt. De uitrustingsset die je
+probeerde te dragen is mogelijk ongeldig of corrupt., title: Uitrustingsset dragen
+mislukt}, withdrawTooFew: {text: Je hebt niet genoeg voorwerpen om op te nemen., title: Opnemen
+mislukt}, importGearSetFailed: {title: Uitrustingsset importeren mislukt, text: Fout
+opgetreden bij het importeren van uitrustingsset. Uitrustingssetgegevens zijn mogelijk
+corrupt of ongeldig.}, importGearSetTooManyTools: {title: Uitrustingsset heeft te
+veel gereedschappen, text: De uitrustingsset had meer gereedschappen dan toegestaan.},
+changingActivityFailed: {title: Activiteit veranderen mislukt, text: Activiteit veranderen
+mislukt. Je bent al bezig met deze activiteit of het is niet beschikbaar.}, equipGearSetSomeFailed: {
+title: Dragen van voorwerpen in uitrustingsset mislukt, text: 'Sommige voorwerpen
+in de uitrustingsset kunnen niet worden gedragen. Mogelijk is de uitrustingsset ongeldig,
+of je voldoet niet aan de eisen om sommige voorwerpen te dragen.'}, equipGearFailed: {
 title: Voorwerp dragen mislukt, text: Voorwerp kan niet worden gedragen. Probeer het
 nogmaals.}, withdrawZero: {title: Opnemen mislukt, text: Je kunt niet nul of minder
 voorwerpen opnemen.}, withdrawDidNotExist: {title: Opnemen mislukt, text: Het voorwerp
@@ -164,4 +172,10 @@ extra gegevens gedownload worden. Wil je doorgaan?}, toggleAgilityXp: {text: Wee
 je zeker dat je het ontvangen van behendigheids-ervaring door reizen wilt uitschakelen?
 Je kunt het later opnieuw inschakelen in de instellingen. Deze instelling is bestemd
 voor spelers die gespecialiseerde personages willen maken die geen behendigheids-ervaring
-ontvangen., title: Behendigheids-XP ontvangen door Reizen uitschakelen?}}}}
+ontvangen., title: Behendigheids-XP ontvangen door Reizen uitschakelen?}, droppingHighValueItems: {
+title: Waardevolle voorwerpen weggooien?, text: Je staat op het punt om <c>voorwerpen
+met een hoge waarde weg te gooien waar je mogelijk spijt van krijgt</c>! Weet je zeker
+dat je deze voorwerpen weg wilt gooien?}, sellHighValueItems: {title: Waardevolle
+voorwerpen verkopen?, text: Je staat op het punt om <c>voorwerpen met hoge waarde
+te verkopen waar je mogelijk spijt van krijgt</c>! Weet je zeker dat je deze voorwerpen
+wilt verkopen?}}}}

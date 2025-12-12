@@ -100,21 +100,40 @@ vaardigheid.}}, "inventorySpace": {"global": {"desc": "<PLACEHOLDER>", "name": "
 "name": "<PLACEHOLDER>", "text": "Globaal <stat s=\"noMaterialsConsumed\"/>"}, "whileMainSkill": {
 "desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"noMaterialsConsumed\"\
 /> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
-"text": "<stat s=\"noMaterialsConsumed\"/> tijdens het reizen"}}, "rollSpecialTable": {
-"whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
-s=\"rollSpecialTable\"/> tijdens <supp k=\"skill\"/>"}, global: {name: <TIJDELIJKE
-AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="rollSpecialTable"/>}},
-"skillLevel": {"global": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
-s=\"skillLevel\" /> level"}, "whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
-"text": "<stat s=\"skillLevel\"/> level tijdens<supp k=\"skill\"/>"}, "whileTraveling": {
+"text": "<stat s=\"noMaterialsConsumed\"/> tijdens het reizen"}, whileMainSkillAndLocationKeyword: {
+name: <TIJDELIJKE AANDUIDING>, text: <stat s="noMaterialsConsumed"/> voor <supp k="skill"/>
+op <supp k="keyword"/> locatie., desc: <TIJDELIJKE AANDUIDING>}, whileMainSkillAndRealm: {
+name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="noMaterialsConsumed"/>
+voor <supp k="skill"/> in <supp k="realm"/>.}, whileLocationKeyword: {name: <TIJDELIJKE
+AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: Globaal <stat s="noMaterialsConsumed"/>
+wanneer op <supp k="keyword"/> locatie.}, whileSkillGroup: {name: <TIJDELIJKE AANDUIDING>,
+desc: <TIJDELIJKE AANDUIDING>, text: <stat s="noMaterialsConsumed"/> voor <supp k="skillGroup"/>
+vaardigheden.}}, "rollSpecialTable": {"whileMainSkill": {"desc": "<PLACEHOLDER>",
+"name": "<PLACEHOLDER>", "text": "<stat s=\"rollSpecialTable\"/> tijdens <supp k=\"\
+skill\"/>"}, global: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>,
+text: <stat s="rollSpecialTable"/>}}, "skillLevel": {"global": {"desc": "<PLACEHOLDER>",
+"name": "<PLACEHOLDER>", "text": "<stat s=\"skillLevel\" /> level"}, "whileMainSkill": {
 "desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"skillLevel\"\
-/> level tijdens het reizen"}}, "stepsRequired": {"global": {"desc": "<PLACEHOLDER>",
-"name": "<PLACEHOLDER>", "text": "Globaal <stat s=\"stepsRequired\"/>"}, "whileMainSkill": {
+/> level tijdens<supp k=\"skill\"/>"}, "whileTraveling": {"desc": "<PLACEHOLDER>",
+"name": "<PLACEHOLDER>", "text": "<stat s=\"skillLevel\"/> level tijdens het reizen"}},
+"stepsRequired": {"global": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "Globaal
+<stat s=\"stepsRequired\"/>"}, "whileMainSkill": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
+"text": "<stat s=\"stepsRequired\"/> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {
 "desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"stepsRequired\"\
-/> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
-"text": "<stat s=\"stepsRequired\"/> tijdens het reizen"}}, "travelingDistance": {
-"whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
-s=\"travelingDistance\"/>"}}, "workEfficiency": {"global": {"desc": "<PLACEHOLDER>",
+/> tijdens het reizen"}, whenKeywordSetBonus: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>, text: Globaal <stat s="stepsRequired"/> bij het dragen van minstens <supp
+k="quantity"/> <supp k="keyword"/> voorwerpen.}, whileMainSkillAndLocationKeyword: {
+text: <stat s="stepsRequired"/> terwijl <supp k="skill"/> in <supp k="keyword"/> locatie.,
+name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, whileMainSkillAndRealm: {
+text: <stat s="stepsRequired"/> terwijl <supp k="skill"/> in <supp k="realm"/>., name: <TIJDELIJKE
+AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, whileLocationKeyword: {desc: <TIJDELIJKE
+AANDUIDING>, text: Globaal <stat s="stepsRequired"/> wanneer op <supp k="keyword"/>
+locatie., name: <TIJDELIJKE AANDUIDING>}, whileRealm: {name: <TIJDELIJKE AANDUIDING>,
+desc: <TIJDELIJKE AANDUIDING>, text: Globaal <stat s="stepsRequired"/> wanneer in
+<supp k="realm"/>}, whileSkillGroup: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>, text: <stat s="stepsRequired"/> voor <supp k="skillGroup"/> vaardigheden.}},
+"travelingDistance": {"whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
+"text": "<stat s=\"travelingDistance\"/>"}}, "workEfficiency": {"global": {"desc": "<PLACEHOLDER>",
 "name": "<PLACEHOLDER>", "text": "Globaal <stat s=\"workEfficiency\"/>"}, "whileMainSkill": {
 "desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat s=\"workEfficiency\"\
 /> tijdens <supp k=\"skill\"/>"}, "whileTraveling": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>",
@@ -135,12 +154,17 @@ desc: <PLACEHOLDER>, text: Globale <stat s="workEfficiency"/> voor <supp k="hist
 whileSkillGroup: {text: <stat s="workEfficiency"/> tijdens een <supp k="skillGroup"/>
 vaardigheid., name: <PLACEHOLDER>, desc: <PLACEHOLDER>}}}, "special": {"findBirdNests": {
 "whileWoodcutting": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
-s=\"findBirdNests\">kans om vogelnesten te vinden</stat> while <supp k=\"skill\"/>"}},
-"findGems": {"whileMining": {"desc": "<PLACEHOLDER>", "name": "<PLACEHOLDER>", "text": "<stat
-s=\"findGems\">kans om edelstenen te vinden</stat> tijdens <supp k=\"skill\"/>"}}},
-custom: {gainAdventurersGuildToken: {text: Kans om <hl>1</hl> Avonturiersgildemunt
-te vinden}, trashTable: {text: Kans om <hl>1</hl> willekeurig stuk afval te vinden},
-findCrustacean: {text: Kans om <hl>1</hl> kreeftachtige te vinden}, gainOneMoney: {
-text: Kans om <hl>1</hl> munt te vinden}, gainZeroToTenMoney: {text: Kans om <hl>1</hl>
-tot <hl>10</hl> munten te vinden}, findFishingBait: {text: Kans om <hl>1</hl> visaas
-te vinden}}}}
+s=\"findBirdNests\">kans om vogelnesten te vinden</stat> while <supp k=\"skill\"/>"},
+whileMainSkillAndLocationKeyword: {text: <stat s="findBirdNests"> kans om vogelnesten
+te vinden</stat> voor <supp k="skill"/> op <supp k="keyword"/> locatie., name: <TIJDELIJKE
+AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}}, "findGems": {"whileMining": {"desc": "<PLACEHOLDER>",
+"name": "<PLACEHOLDER>", "text": "<stat s=\"findGems\">kans om edelstenen te vinden</stat>
+tijdens <supp k=\"skill\"/>"}, whileMainSkillAndLocationKeyword: {name: <TIJDELIJKE
+AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="findGems"> kans om edelstenen
+te vinden</stat> voor <supp k="skill"/> op <supp k="keyword"/> locatie.}}, findCollectibles: {
+global: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}}}, custom: {
+gainAdventurersGuildToken: {text: Kans om <hl>1</hl> Avonturiersgildemunt te vinden},
+trashTable: {text: Kans om <hl>1</hl> willekeurig stuk afval te vinden}, findCrustacean: {
+text: Kans om <hl>1</hl> kreeftachtige te vinden}, gainOneMoney: {text: Kans om <hl>1</hl>
+munt te vinden}, gainZeroToTenMoney: {text: Kans om <hl>1</hl> tot <hl>10</hl> munten
+te vinden}, findFishingBait: {text: Kans om <hl>1</hl> visaas te vinden}}}}

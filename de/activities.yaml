@@ -151,6 +151,12 @@ singulars:
           wo sie als Nächstes ihr Zuhause finden. Es könnte eine Weile dauern, bis
           du hierher zurückkehrst.
         name: Fledermaustracking im Frühling
+    wallisia:
+      shorelineScramble:
+        name: Uferstreifzug
+        desc: Du balancierst über die Kanten der schmalen Uferlinie und huschst zwischen
+          den verstreuten Wrackteilen und Felsformationen der Umgebung umher. Ein
+          falscher Schritt würde hier unten für einen ziemlich lauten Platscher sorgen.
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -182,6 +188,13 @@ singulars:
           Eisblock in etwas Neues – sei es funktional oder künstlerisch. Die Vergänglichkeit
           dieses Kunstwerks hängt direkt von der Umgebungstemperatur ab und reicht
           von wenigen Minuten bis hin zur Dauerhaftigkeit.
+    wallisia:
+      townReconstruction:
+        desc: Du unterstützt die Stadtbewohner bei ihren Reparatur- und Wiederaufbauarbeiten,
+          damit alle ein ordentliches Dach über dem Kopf haben. Die Arbeit ist herausfordernd
+          und verlangt dir einiges an Zimmermannskunst ab, doch du kannst zusehen,
+          wie die Stadt Schritt für Schritt wieder Gestalt annimmt.
+        name: Stadtrekonstruktion
   cooking:
     gdte:
       wineGrapeStomping:
@@ -259,14 +272,14 @@ singulars:
           sein stilles Wasser ist einladend und vielversprechend.
         name: Angeln im Teich
       seaFishingNet:
-        desc: Entlang der winterlichen Küste findest du einen abgelegenen Platz und
-          wirfst dein Netz in das ruhige, kühle Wasser, um die friedliche Einsamkeit
-          des Meeresangelns zu genießen.
+        desc: Entlang der Küste findest du einen abgelegenen Platz und wirfst dein
+          Netz in das ruhige Wasser, um die friedliche Einsamkeit des Meeresangelns
+          zu genießen.
         name: Meeresfischerei (Netz)
       seaFishingRod:
-        desc: Entlang der winterlichen Küste findest du einen abgelegenen Platz und
-          wirfst deine Leine in das ruhige, kühle Wasser, um die friedliche Einsamkeit
-          des Meeresangelns zu genießen.
+        desc: Entlang der Küste findest du einen abgelegenen Platz und wirfst deine
+          Leine in das ruhige Wasser, um die friedliche Einsamkeit des Meeresangelns
+          zu genießen.
         name: Angeln im Meer (Angelrute)
       seaFishingCage:
         name: Meeresfischerei (Käfig)
@@ -288,6 +301,23 @@ singulars:
           dir deiner Umgebung sehr bewusst bist. Jede Faser deines Geistes ist darauf
           vorbereitet, jedes Raubtier anzugreifen, bevor es dich angreifen kann.
         name: Raubtierjagd (Speer)
+    wallisia:
+      floodedRiverFishingRod:
+        name: Angeln im überfluteten Fluss (Rute)
+        desc: Du wirfst deine Angelrute in die überfluteten Flussgewässer und hoffst,
+          ein paar einzigartige Fische zu fangen, die sich an ihre neue Umgebung angepasst
+          haben.
+      isthmusSeaFishingNet:
+        name: Angeln im Isthmus-Meer (Netz)
+        desc: In den Küstengewässern des Isthmus wirfst du dein Netz aus und hoffst,
+          eine Vielzahl von Kreaturen zu fangen, die in diesem Gebiet gedeihen.
+      ectoFishing:
+        name: Ektoplasma-Fischerei
+        desc: Das Wasser hier schimmert in seltsamen, unheimlichen Farbtönen, die
+          von einer geisterhaften Energie durchdrungen sind. Du fragst dich, wovon
+          sich die Fische hier wohl ernähren und ob du überhaupt das richtige Werkzeug
+          benutzt, um sie zu fangen. Dein Gedanke schweift ab zu der späteren Frage,
+          ob man sie überhaupt kochen und essen kann.
   foraging:
     gdte:
       butterflyCatching:
@@ -389,6 +419,22 @@ singulars:
         name: Wrack tauchen
         desc: Du tauchst tief in das Schiffswrack, welches Casbrant's Grab genannt
           wird, in der Hoffnung Schätze zu finden.
+    wallisia:
+      floodedFieldScavenging:
+        name: Plündern überfluteter Felder
+        desc: Du watest durch die durchnässten Felder und suchst nach Pflanzen und
+          Materialien, die es geschafft haben, in dieser feuchten Umgebung zu überleben
+          – oder sogar zu gedeihen.
+      dragonflyCatching:
+        name: Libellenfangen
+        desc: Mit deinem Netz jagst du Libellen hinterher, die blitzschnell hin und
+          her schwirren.
+      graveyardForaging:
+        name: Sammeln am Friedhof
+        desc: Du streifst über den Friedhof und hältst nach ungewöhnlichen Dingen
+          Ausschau, die durch die Überschwemmungen aus ihrem ursprünglichen Platz
+          gespült wurden. Ist doch kein Grabräubern, wenn es nicht mehr im Grab liegt,
+          oder?
   mining:
     global:
       mineCoal:
@@ -483,6 +529,34 @@ singulars:
         desc: Ausläufer großer Felsformationen, die im unheimlichen, geisterhaften
           Schimmer der Umgebung leuchten. Du schwingst deine Spitzhacke dagegen, in
           der Hoffnung, Teile davon für die Weiterverarbeitung mitnehmen zu können.
+    wrentmark:
+      mineSilverOre:
+        name: Silbererz abbauen
+        desc: Aus dem Augenwinkel erspähst du silbrig schimmernde Felsen und machst
+          dich daran, der Ader von Silbererz darin zu folgen.
+      mineGoldOre:
+        name: Golderz abbauen
+        desc: Du entdeckst goldene Schimmer in den Felsen und beginnst sofort mit
+          dem Abbau, in der Hoffnung, auf den ganz großen Fund zu stoßen.
+      mineAdamantOre:
+        name: Adamantiterz abbauen
+        desc: Vor dir ragen die zähen Adamantit-Felsen auf, und du holst dein bestes
+          Werkzeug hervor, um das Erz aus dem Gestein zu brechen.
+      minePetrifiumOre:
+        name: Petrifiumerz abbauen
+        desc: Du begutachtest die violetten, harten Petrifium-Felsen vor dir und überlegst
+          dir genau, wie du das Erz am besten aus ihnen herausholen kannst, ohne dich
+          dabei zu verletzen.
+      mineCrystalShards:
+        name: Kristallsplitter abbauen
+        desc: Solch große und wunderschöne Kristallformationen zu bearbeiten, fühlt
+          sich fast wie ein Frevel an, doch die möglichen Splitter, in die sie zerbrechen,
+          bewahren dennoch die Schönheit des Originals.
+      mineGemRocksLow:
+        name: Edelsteinfelsen abbauen (minderwertig)
+        desc: Ein Fels, der deutliche Spuren von eingelagerten Edelsteinen zeigt,
+          sticht dir ins Auge. Du setzt deine Spitzhacke an und beginnst zu graben
+          – vielleicht findest du ein paar funkelnde Schätze.
   woodcutting:
     jarvonia:
       cutBirchTrees:

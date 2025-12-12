@@ -42,6 +42,7 @@ maps:
         beansprucht werden
       'showDailyTips': Tägliche Tipps anzeigen
       'activityInformationOpen': Mehr Informationen zur Aktivität anzeigen
+      'toggleAgilityXp': Agilitäts-XP-Gewinn durch Reisen deaktivieren
     visibilitySettings:
       'private': Privat
       'friends': Nur Freunde
@@ -78,6 +79,7 @@ maps:
       'gameplay': Gameplay
       'account': Benutzerkonto
       'character': Charakter
+      'characterSpecific': Charakterspezifisch
     enumSettings:
       'language': Sprache
       'leaderboardFilter': Zeige
@@ -164,6 +166,18 @@ maps:
       'update': Update
       'system': System
       'devblog': DevBlog
+  skillTypes:
+    'artisan': Handwerk
+    'gathering': Sammeln
+    'utility': Allgemein
+    'combat': Kampf
+  abilities:
+    types:
+      'passive': Passiv
+      'active': Aktiv
+      'consumable': Verbrauchsgegenstand
+      'activity': Aktivität
+      'emergency': Notfall
 plurals:
   achievements:
     phrases:
@@ -389,6 +403,8 @@ singulars:
         dies vorher verwendet wurde
       noFoodConsumables: Kein <hl>Essen</hl> in deinem Inventar.
       noPotionConsumables: Keine <hl>Tränke</hl> in deinem Inventar.
+      hatchesInto: Schlüpft zu
+      depositAll: Alle
     options:
       consenseInventory: Inventar verkleinern
       expandInventory: Inventar erweitern
@@ -409,12 +425,15 @@ singulars:
       owner: Besitzer
       showingRoutesFrom: Mögliche Reiseziele ab <object id="{from}"/>.
       noRoutesFromLocation: Keine Reiseziele von <object id="{from}"/> verfügbar.
+      escape: Flüchte
   activity:
     info:
       consumablesUsage: Du kannst ein <c>Nahrungsmittel</c> und einen <c>Trank</c>
         auswählen, die du bei deinen Aktivitäten verwenden kannst.
-      savedSteps: Du hast gespeicherte Schritte, die nun verbraucht werden. Jeder
-        Schritt zählt als zwei, bis alle gespeicherten Schritte aufgebraucht sind.
+      savedSteps: Gespeicherte Schritte sorgen dafür, dass keine Schritte verschwendet
+        werden. Sie werden gesammelt, solange keine Aktivität aktiv ist, und später
+        verbraucht, indem sie deine aktuell zurückgelegten Schritte verdoppeln, sobald
+        du wieder eine Aktivität aktiv hast.
       noActivity: Derzeit ist keine Aktivität ausgewählt. <hl>Wähle eine unten aus</hl>,
         oder wische nach links, um alle verfügbaren Optionen an diesem Ort zu sehen.
     phrases:
@@ -424,7 +443,7 @@ singulars:
       savedSteps: Gespeicherte Schritte
       stopWhenOverEncumbered: Beenden, wenn überladen
       options: Optionen
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Globale Arbeitseffizienz<c>-{penalty}%</c>
+      workEfficiencyPenalty: <icon i="Work efficiency"/> Basis Arbeitseffizienz<c>-{penalty}%</c>
       notAffectingTraveling: (Beeinflusst nicht die Reiseeffizienz)
       requirements: Voraussetzungen
       rewards: Belohnungen
@@ -439,10 +458,27 @@ singulars:
         du die Aktivitäten hier sehen können.
       activitiesInLocation: Verfügbare Aktivitäten in <object id="{location}"/>
       guideTip: Tipp des Tages
+      savedStepsUsed: Verwendete gespeicherte Schritte
+      inputs: Eingaben
+      workEfficiency: Arbeitseffizienz
+      maxWorkEfficiency: Maximale Arbeitseffizienz
+      fromOverLevels: Überlevelt <numberProgress current="{current}" max="{max}" />
+      agilityBonus: Beweglichkeits-Level <c>{level}</c>
+      fromGear: Angelegte Ausrüstung
+      fromServices: Servicebonus
+      fromCollectibles: Sammelgegenstände
+      fromConsumables: Verbrauchsgegenstände
+      changeActivity: Aktivität wechseln
+      abilities: Fähigkeiten
+      baseEfficiency: Grundeffizienz
+      fromOverencumbered: Überladen
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> Erfahrung
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} Sammelgegenstände</c>
         verfügbar
+    options:
+      completeUntilActions: Für eine Anzahl von Aktionen abschließen
+      numberOfActions: Anzahl der Aktionen
   character:
     info:
       skillBreakdown: Hier findest du eine vollständige Übersicht aller Fähigkeiten,
@@ -456,7 +492,7 @@ singulars:
       stepsOfLastWeek: Schritte der letzten 7 Tage
       checkOutSubject: Sieh dir meinen Fortschritt in WalkScape an!
       checkOut: Das ist mein WalkScape Charakter {name}. Sieh ihn dir an!\nhttps://walkscape.app
-      totalLevel: Gesamtlevel
+      totalLevel: Gesamtes Fähigkeitslevel
       savePicture: Bild speichern
       level: 'Charakter Level: <c>{level}</c>'
       stepsToNextLevel: Schritte bis zum nächsten Level <c>{steps}</c>
@@ -729,7 +765,7 @@ singulars:
       me: Ich
       last: Letzter
       totalSteps: Gesamte Schritte
-      totalLevel: Gesamtes Level
+      totalLevel: Gesamtes Fähigkeitslevel
       achievementPoints: Errungenschaftspunkte
       loadingPage: Lade Seite...
       totalExperience: Gesamte Erfahrung
@@ -767,6 +803,7 @@ singulars:
       support: Unterstützen das Spiel
       testFlight: Du kannst die neueste Version von <c>TestFlight</c> herunterladen.
       accountPage: Benutzeraccount-Seite
+      restart: Neustart
     loadingStates:
       initializingProviders: Anbieter werden initialisiert
       localizationFiles: Laden der Lokalisierungsdateien
@@ -834,6 +871,11 @@ singulars:
       cooldownRemaining: 'Verbleibender Cooldown:'
       cooldownReady: 'Cooldown: Bereit'
       noCooldown: Kein Cooldown.
+      source: Quelle
+      cooldown: Cooldown
+      cooldownRequirements: Cooldown Voraussetzungen
+      charges: Aufladungen
+      requirements: Voraussetzungen
   abilities:
     info:
       youHaveNoAbilities: <hl>Du hast keine Fähigkeiten</hl>. Bestimmte Ausrüstung
@@ -849,6 +891,8 @@ singulars:
       noAction: Keine Aktion
       holdToUse: Halten zum nutzen
       holdToCast: Halten zum nutzen
+      alreadyHere: Du bist bereits in <object id="{location}"/>. Diese Fähigkeit kann
+        nicht genutzt werden, um hierher zu reisen.
   trade:
     phrases:
       trade: TAUSCHEN
@@ -992,6 +1036,9 @@ singulars:
       noItemSelected: Kein Gegenstand ausgewählt
       newSetDefaultName: Mein neues Ausrüstungs-Set
       importedGearSetDefaultName: Importiertes Ausrüstungs-Set
+      reorderGearSets: Ausrüstungs-Sets neu anordnen
+      showItems: Gegenstände einblenden
+      hideItems: Gegenstände ausblenden
     info:
       gearSetsDescription: Ausrüstungs-Sets helfen dir, schnell zwischen verschiedenen
         Ausrüstungen zu wechseln.
@@ -1012,6 +1059,8 @@ singulars:
       gearSetManageShortDesc: Um deine Ausrüstungs-Sets zu erstellen, zu importieren
         oder zu bearbeiten, kannst du <c i=0>Verwalten</c> drücken.
       noGearSets: Du hast noch keine Ausrüstungs-Sets erstellt.
+      gearSetReorderDesc: Du kannst deine Ausrüstungssets neu anordnen, indem du sie
+        in der Liste unten per Drag & Drop verschiebst.
     errors:
       keywordError: 'Ausrüstungs-Set hat bereits: <object id="{keyword}" />'
       duplicateItem: Der Gegenstand existiert bereits im Ausrüstungs-Set
@@ -1059,6 +1108,8 @@ singulars:
         ?
       activityInLocation: <object id="{activity}"/> in <object id="{location}"/>
       noPathFound: Kein Weg zum Ziel gefunden.
+      forXActions: Wird für <c>{count}</c> Aktionen ausgeführt
+      inputNotMet: Eingabebedingungen nicht erfüllt
     types:
       traveling: Reisen
       activity: Aktivität
