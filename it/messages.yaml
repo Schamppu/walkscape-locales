@@ -7,6 +7,10 @@ plurals:
         other: L'eliminazione degli oggetti è permanente. L'oggetto è citato in altri
           oggetti {n} volte.
         zero: '-'
+        many: '-'
+        two: L'eliminazione degli oggetti non è reversibile. L'oggetto è referenziato
+          in altri oggetti {} volte.
+        few: '-'
       title: Sei sicuro di voler eliminare?
 singulars:
   messages:
@@ -17,6 +21,43 @@ singulars:
       text: La tabella dei bottini contiene una o più righe senza alcun oggetto associato
         ad esse.
       title: Salvataggio non riuscito.
+    comingSoon:
+      title: Prossimamente
+      text: Questo contenuto <hl>non è disponibile</hl> nella versione attuale di
+        WalkScape.
+    stepsNotCountedRealTime:
+      textSamsungHealth: Quando si utilizza una fonte di passi diversa da <icon i="Phone
+        small" /> <c>Telefono</c>, i passi non vengono conteggiati in tempo reale.
+        Potrebbe essere necessario aprire <c>Samsung Health</c> per sincronizzare
+        i passi con il gioco, e i passi potrebbero essere visualizzati con un ritardo.
+        Questo messaggio scomparirà dopo aver sincronizzato almeno <c>5000</c> passi
+        dal dispositivo indossabile. Puoi passare a <icon i="Phone small" /> <c>Phone</c>
+        come fonte dei tuoi passi da <c>Impostazioni</c>.
+      title: I passi non vengono conteggiati in tempo reale
+      textIOS: Se utilizzi una fonte diversa da <icon i="Phone small" /> <c>Telefono</c>
+        come fonte dei tuoi passi, questi non verranno conteggiati in tempo reale.
+        A seconda del tuo dispositivo indossabile, potrebbe essere necessario sincronizzare
+        manualmente i tuoi passi da un'altra applicazione o aprire <c>Apple Health</c>
+        per sincronizzare i tuoi passi con il gioco. Questo messaggio scomparirà dopo
+        aver sincronizzato almeno <c>5000</c> passi dal tuo dispositivo indossabile.
+        È possibile passare a <icon i="Phone small" /> <c>Phone</c> come fonte dei
+        passi da <c>Impostazioni</c>.
+      textAndroid: Se utilizzi una fonte diversa da <icon i="Phone small" /> <c>Telefono</c>
+        come fonte dei tuoi passi, questi non verranno conteggiati in tempo reale.
+        A seconda del tuo dispositivo indossabile, potrebbe essere necessario sincronizzare
+        manualmente i tuoi passi da <c>un'altra applicazione</c> per sincronizzarli
+        con il gioco. Questo messaggio scomparirà dopo aver sincronizzato almeno <c>5000</c>
+        passi dal tuo dispositivo indossabile. È possibile passare a <icon i="Phone
+        small" /> <c>Phone</c> come fonte dei passi da <c>Impostazioni</c>.
+    disabled:
+      title: Disabilitato
+      text: Questa funzione è stata <hl>temporaneamente disabilitata</hl>. Per ulteriori
+        informazioni, consulta Portal, Reddit o Discord.
+    workInProgress:
+      title: Lavori in corso
+      text: Questa funzione è ancora in fase di sviluppo e molte delle sue funzionalità
+        <hl>non sono ancora disponibili</hl>. Puoi già provarla e tornare più tardi
+        quando sarà completamente implementata!
   confirmations:
     changingStepSource:
       lastSyncText: Ultima sincronizzazione dei passi alle {ora}.
@@ -62,15 +103,219 @@ singulars:
   popups:
     idleSteps:
       whileYouWereAway: Mentre eri via ...
+      skillLeveledUp: <skill skill="{skill}" /> è salito di livello da <c i="0">{da}</c>
+        a <c i="1">{a}</c>.
+      characterLeveledUpFrom: Il personaggio è salito di livello da <c i="0">{da}</c>
+        a <c i="1">{a}</c>.
+      gainedItem: Ottenuto <c>+{importo}</c> <item id="{item}" />
+      craftedItem: Realizzato <c>+{quantità}</c> <item id="{item}" />
+      characterGained: Personaggio ha guadagnato <c>+{quantità}</c> esperienza />
+      arrivedAt: Arrivato a <location /> <c>{location}</c>.
+      gainedMoney: Guadagnato <c i="0">+{importo}</c> <c i="1">monete</c>
+      stepsWhileAway: Passi guadagnati mentre il gioco era chiuso
+      nothingHappened: Non è successo nulla di particolare.
+      gainedExperience: <skill skill="{skill}" /> ha guadagnato <c>+{exp}</c> esperienza.
     inactiveSteps:
       stepsWhileInactive: Passi guadagnati mentre il gioco era inattivo
+    skillLevel:
+      newItem: <chip><stext><c>Oggetto sbloccato</c></stext></chip> <item id="{item}"/>
+        può essere equipaggiato.
+      newActivity: <chip><stext><c>Nuova attività</c></stext></chip> <c>{nomeAttività}</c>
+        sbloccata.
+      unlocks: Sblocchi
+      noNewUnlocks: Nessun nuovo sblocco per questo livello.
+      skillLevelUp: '{skillName} sale di livello'
+      newDrop: <chip><stext><c i="0">Nuovo oggetto ottenibile</c></stext></chip> <c
+        i="1">{itemName}</c> ora può essere ottenuto da <c>{activityName}</c>.
+      newRecipe: <chip><stext><c i="0">Nuova ricetta</c></stext></chip> <c i="1">{recipeName}</c>
+        sbloccata.
+      newRoute: <chip><stext><c i="0">Nuovo itinerario di viaggio</c></stext></chip>
+        <c i="1"><location id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c>
+        sbloccato..
+    achievementUnlocked:
+      achievementUnlocked: '{achievement} risultato sbloccato'
+      requirements: Requisiti
+      achievementPoints: '{points} punti conseguiti'
+      rewards: Ricompense
+    characterLevelUp:
+      characterLevelUp: Aumento di livello del personaggio
+      unlocks: Sbloccare
+      noNewUnlocks: Nessun nuovo sblocco per questo livello.
   errors:
     gameError:
       stepLoadingInterruped:
         text: Il gioco è stato messo in background o interrotto durante il caricamento
           dei passaggi. Prova ad aprire nuovamente il gioco per caricare i passaggi.
+        title: Caricamento dei gradini interrotto
+      stepsNotLoadedDueToBan:
+        text: I tuoi passi non sono stati caricati perché sei stato bannato da WalkScape.
+          Da questo momento in poi, i tuoi passi verranno conteggiati normalmente.
+        title: Passaggi non caricati a causa del tuo ban
+      couldNotGetServerTime:
+        title: Impossibile ottenere l'ora del server
+        text: Il client di gioco non è riuscito a ottenere l'ora del server. Controlla
+          la tua connessione Internet e riprova.
+      gameAssetsUpdated:
+        title: Risorse di gioco aggiornate
+        text: È stato effettuato un aggiornamento delle risorse del gioco, che sono
+          state scaricate. Per applicare queste modifiche è necessario riavviare il
+          gioco.
+      gameAssetUpdateFailed:
+        title: Aggiornamento delle risorse di gioco non riuscito
+        text: Il client di gioco non è riuscito ad aggiornare le risorse di gioco.
+          Prova a riaprire il gioco per vedere se le risorse vengono scaricate correttamente.
+          Se questo non funziona, potrebbe essere utile reinstallare il gioco.
+      initializingGameFailed:
+        text: Il client di gioco non è riuscito a inizializzarsi. Segnalalo agli sviluppatori
+          su Discord fornendo i dettagli dell'errore e del dispositivo. Puoi anche
+          provare a riaprire il gioco per vedere se si carica correttamente.
+        title: Impossibile inizializzare il gioco
+      loadingPlayerFailed:
+        title: Impossibile caricare il lettore
+        text: Dati giocatore non validi. Caricamento non riuscito. Contatta gli sviluppatori
+          tramite Discord o e-mail.
+      stepLoadingFailed:
+        title: Impossibile caricare i passaggi
+        text: Il client di gioco non è riuscito a caricare i passaggi. Segnalalo agli
+          sviluppatori su Discord fornendo i dettagli dell'errore e del dispositivo.
+          Puoi anche provare a riaprire il gioco per vedere se i passaggi vengono
+          caricati correttamente.
     serverError:
       failureToValidateClient:
         title: Impossibile convalidare il client
         text: Il client di gioco non è riuscito a convalidare il client. Probabilmente
           si tratta di un errore di rete. Riavvia il gioco e riprova.
+      newClientUpdate:
+        title: Nuovo aggiornamento cliente disponibile
+        text: Il tuo gioco è obsoleto ed è disponibile una nuova versione. Scarica
+          l'ultima versione del gioco per continuare a giocare.
+      noClosedBetaAccess:
+        title: Accesso alla beta chiusa scaduto
+        text: Il tuo accesso alla <c i=0>beta chiusa di WalkScape è scaduto</c>. Puoi
+          riottenere l'accesso candidandoti alla Closed Beta e venendo accettato in
+          una fase futura, oppure immediatamente sostenendo il gioco su <c i=1>Patreon</c>
+          o <c i=1>Buy Me a Coffee</c>.\n\nSe decidi di sostenere il gioco, collega
+          il tuo Patreon o Buy Me a Coffee alla <c i=1>pagina dell'account WalkScape
+          Portal</c> per riottenere l'accesso al gioco. Puoi anche <c i=1>richiedere
+          l'accesso alla beta</c> dalla pagina Account.
+      userBannedTemporarily:
+        text: Sei stato temporaneamente bannato da WalkScape fino al <c i=0>{bannedUntil}</c>.
+          Se desideri presentare ricorso contro questa decisione, puoi contattarci
+          inviando un'e-mail all'indirizzo {email}.
+        noTimeFound: Non è stato trovato alcun orario di fine, contattaci inviando
+          un'e-mail a {email}
+        title: Sei stato temporaneamente bannato da WalkScape
+      unauthorized:
+        text: Non sei autorizzato. Effettua nuovamente il login.
+        title: Non autorizzato
+      invalidSession:
+        title: Sessione non valida
+        text: La tua sessione non è valida. Riapri il gioco ed effettua nuovamente
+          l'accesso.
+      noInternetConnection:
+        title: Impossibile connettersi al server WalkScape
+        text: Impossibile stabilire una connessione al server WalkScape. Ciò potrebbe
+          significare che non disponi di una connessione Internet, che il server è
+          inattivo o che la connessione è stata bloccata da un firewall. Controlla
+          la tua connessione Internet e riprova.
+      serverOffline:
+        title: Il server WalkScape è offline
+        text: Il server di gioco è attualmente offline. Ciò potrebbe essere dovuto
+          a lavori di manutenzione o a un problema con il server di gioco. Riprova
+          più tardi.
+      serverMaintenance:
+        title: Il server WalkScape è in manutenzione
+        text: Il server di gioco è attualmente in manutenzione. Riprova più tardi.
+      connectionError:
+        title: Errore di connessione
+        text: Si è verificato un errore durante la connessione al server. Controlla
+          la tua connessione Internet e riprova.
+      failureToUpdateContent:
+        title: Impossibile aggiornare il contenuto
+        text: Il client di gioco non è riuscito ad aggiornare il contenuto. Segnalalo
+          agli sviluppatori su Discord fornendo i dettagli dell'errore e del dispositivo.
+          Puoi anche provare a riaprire il gioco per vedere se il contenuto viene
+          scaricato correttamente.
+      userBannedPermanently:
+        title: Sei stato bandito definitivamente da WalkScape
+        text: Sei stato bandito definitivamente da WalkScape. Se ritieni che si tratti
+          di un errore e desideri presentare ricorso contro questa decisione, puoi
+          contattarci inviando un'e-mail all'indirizzo {email}.
+      unknownError:
+        text: Errore sconosciuto.
+        title: Errore sconosciuto.
+      newUpdate:
+        title: Nuovo aggiornamento
+        text: Il gioco è stato aggiornato. Riavvia il gioco per scaricare il nuovo
+          aggiornamento.
+    fatalError:
+      error: Ci scusiamo per l'errore. Ricorda che il gioco è in versione beta chiusa
+        e che tutti i salvataggi dei giocatori vengono salvati quotidianamente sul
+        cloud.
+    activityCancelled:
+      title: Attività annullata
+      stepsAreInfinite: L'attività corrente è stata annullata perché non soddisfi
+        più i requisiti necessari per completarla.
+    characterValidation:
+      nameContainsSpecialCharacters: Il nome del personaggio contiene caratteri speciali.
+        Sono ammessi solo lettere, numeri e spazi.
+      nameTooShortWithSpacesRemoved: Una volta rimossi gli spazi, il nome del personaggio
+        deve essere composto da più di tre lettere.
+      nameContainsleadingTrailingSpaces: Non sono ammessi spazi iniziali o finali.
+      nameContaintsConsecutiveSpaces: Non sono ammessi spazi consecutivi.
+      nameTooShort: Il nome del personaggio deve essere composto da almeno 3 lettere.
+  info:
+    game:
+      importGearSetFailed:
+        title: Impossibile importare il set di ingranaggi
+        text: Errore durante l'importazione del set di ingranaggi. I dati del set
+          di ingranaggi potrebbero essere danneggiati o non validi.
+      changingActivityFailed:
+        title: Impossibile modificare l'attività
+        text: Impossibile modificare l'attività. O la stai già svolgendo oppure non
+          è disponibile.
+      importGearSetTooManyTools:
+        text: Il set di attrezzi conteneva più strumenti di quelli consentiti.
+        title: Il set di attrezzi ha troppi strumenti
+      buybackFailed:
+        title: Riacquisto non riuscito
+        text: Il riacquisto non è andato a buon fine. Non hai gli oggetti necessari
+          nel tuo inventario per completare il riacquisto.
+      withdrawZero:
+        text: Non è possibile prelevare zero o meno articoli.
+        title: Ritiro non riuscito
+      noPathFound:
+        text: Non è stato trovato alcun percorso per raggiungere la destinazione selezionata.
+          Assicurati che sia possibile raggiungere la destinazione selezionata.
+        title: Nessun percorso di viaggio trovato
+      cannotQueueMoreThanOneActivity:
+        title: Impossibile aggiungere altre attività alla coda
+        text: È possibile mettere in coda più azioni di viaggio, ma solo un'attività
+          alla volta. Completare o annullare l'attività corrente prima di metterne
+          in coda un'altra.
+      queueLimitReached:
+        title: Limite della coda raggiunto
+        text: Non è possibile mettere in coda più di 3 azioni alla volta. Completa
+          o annulla alcune azioni prima di metterne in coda altre.
+      equipGearSetSomeFailed:
+        text: Alcuni oggetti del set di equipaggiamento non possono essere equipaggiati.
+          Il set di equipaggiamento potrebbe non essere valido oppure non soddisfi
+          i requisiti per equipaggiare alcuni oggetti.
+        title: Impossibile equipaggiare gli oggetti nel set di equipaggiamento
+      equipGearSetFailed:
+        title: Impossibile equipaggiare un set di equipaggiamento
+        text: Impossibile equipaggiare il set di equipaggiamento. Il set di equipaggiamento
+          che hai cercato di equipaggiare potrebbe non essere valido o essere danneggiato.
+      withdrawFailed:
+        title: Ritiro non riuscito
+        text: Ritiro non riuscito. Riprova.
+      withdrawTooFew:
+        text: Non hai abbastanza articoli per effettuare il prelievo.
+        title: Ritiro non riuscito
+      withdrawDidNotExist:
+        title: Ritiro non riuscito
+        text: L'elemento che hai cercato di prelevare non esiste. La riapertura della
+          banca dovrebbe risolvere il problema.
+      equipGearFailed:
+        text: Impossibile equipaggiare l'oggetto. Riprova.
+        title: Impossibile equipaggiare l'oggetto
