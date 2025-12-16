@@ -17,6 +17,9 @@ maps:
     consumableTypes:
       'food': Essen
       'potion': Trank
+    currencyTypes:
+      'guildToken': Gildentoken
+      'chestChip': Truhenchips
   raceDescriptions:
     human: \t\t In den ausgedehnten und verzauberten Weiten von <c>Arenum</c> haben
       Menschen ihren Anspruch auf <c>den Westlichen Kontinent</c> erhoben. Diese gewaltigen
@@ -109,9 +112,11 @@ singulars:
       woodcutting: Holzfällerwerkzeug
       back: 'Rücken'
       tools: 'Werkzeuge'
+      toolNumber: Werkzeug {number}
     itemTags:
       fine: Edel
       normal: Normal
+      rareEgg: Selten
     itemTypes:
       consumable: Verbrauchsgegenstand
       container: Behälter
@@ -121,6 +126,8 @@ singulars:
       other: Sonstige
       quest: Quest
       collectible: 'Sammelgegenstand'
+      petEgg: Haustier-Ei
+      currency: Währung
   placeholder:
     placeholder: Platzhalter
   requirements:
