@@ -168,6 +168,11 @@ maps:
       'consumable': Tüketimlik
       'activity': Faaliyet
       'emergency': Acil durum
+  pets:
+    stages:
+      "egg": Yumurta
+      "juvenile": Yavru
+      "adult": Erişkin
 plurals:
   achievements:
     phrases:
@@ -1034,6 +1039,8 @@ singulars:
       switchingToGearSet: <c>{name}</c> teçhizat seti kuşanılıyor
       forXActions: <c>{count}</c> eylem yapılıyor
       inputNotMet: Girdi gereksinimleri karşılanmıyor
+      petNotFound: Seçilmiş evcil hayvan bulunamadı, vedalaşmış olabilir misiniz?
+      summoningPet: Evcil hayvanın <playerPet id="{pet}" /> çağrılıyor
     suggestedOptions:
       startCrafting: Üretim
       startTraveling: Seyahat
@@ -1056,6 +1063,12 @@ singulars:
       cancelGearSetSwitch:
         text: Teçhizat seti kuşanmayı iptal et
         desc: Bu eylem için seçilmiş teçhizat setini kuşanmayı iptal et.
+      summonPet:
+        desc: Bu eyleme başlamadan önce evcil hayvan çağır.
+        text: Evcil hayvan çağır
+      cancelSummonPet:
+        desc: Bu eylem için evcil hayvan çağırmaktan vazgeç.
+        text: Evcil hayvan çağırmaktan vazgeç
     suggestions:
       activity:
         onceInventoryIsFull: Envanterin dolunca bir şey yapmak ister misin?
@@ -1096,6 +1109,8 @@ singulars:
       fromSource: <object id="{source}"/> kaynaklı
       fromAttribute: '{attribute} niteliğinden kaynaklı'
       none: Hiçbir şey
+      switchedToPet: <playerPet id="{pet}"/> çağırıldı
+      petDoesNotExist: Bu evcil hayvan artık mevcut değil, çağrılamıyor.
   announcements:
     info:
       noMoreAnnouncements: Duyuruların sonuna ulaştın! Gösterecek başka duyuru kalmadı.
@@ -1116,3 +1131,32 @@ singulars:
       downloadingAssets: Dosyalar indiriliyor...
       downloadedFileCount: Toplam <c i=1>{total}</c> dosyanın <c i=0>{current}</c>
         kadarı indirildi
+  pets:
+    phrases:
+      currentLevelProgress: Mevcut seviye ilerlemesi
+      level: Svy. <c>{level}</c>
+      requirementsToGainXPNotMet: <c>{name}</c> TP kazanamaz
+      chooseEgg: Yumurtayı seç
+      noPetSummoned: Şu anda çağrılmış bir evcil hayvan bulunmuyor. Peşinden gelerek
+        nitelikler ve yetenekler sağlaması için <c>bir evcil hayvan çağırabilirsin</c>!
+      pets: Evcil hayvanlar
+      claimPet: Evcil hayvanı sahiplen
+      petEggs: Evcil hayvan yumurtaları
+      summonedPet: Çağrılmış evcil hayvan
+      summonPet: Evcil hayvanı çağır
+      changePet: Evcil hayvanı değiştir
+      abilities: Yetenekler
+      attributes: Nitelikler
+      maxLevel: Azami seviye
+      pet: Evcil hayvan
+      egg: Yumurta
+      noEggSelected: Seçilmiş yumurta bulunmuyor
+      noPetSelected: Seçilmiş evcil hayvan bulunmuyor
+      retire: Vedalaş
+      destroy: Yok et
+      totalXp: Toplam TP
+      currentXp: Mevcut TP
+      xpToNextLevel: Sonraki seviyeye kalan TP
+      xpToMaxLevel: Azami seviyeye kalan TP
+      maxLevelProgress: Azami seviye ilerlemesi
+      nextLevel: Sonraki seviyeye
