@@ -122,6 +122,10 @@ singulars:
       name: Işık kaynağı
       requirement: <object id="lightSource" /> kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> kuşanılması gerekli.
+    heatResist:
+      name: Isıya dayanıklı
+      requirement: <object id="heatResist" /> bir şey gerekli.
+      requirementLevel: <keywordRequirements /> bir şey kuşanılması gerekli.
   materials:
     bar:
       name: Külçe
@@ -207,6 +211,11 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan ruhani bir şey
         gerekli.
       requirement: <object id="spectral" /> bir şey gerekli.
+    cursed:
+      name: Lanetli
+      requirement: <object id="cursed" /> bir şey gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan lanetli bir şey
+        gerekli.
   tools:
     carpentryTool:
       name: Marangozluk aleti
@@ -637,3 +646,13 @@ singulars:
       name: Diyar ödülü
       requirement: <object id="faction_reward" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan diyar ödülü gerekli.
+  eggs:
+    egg:
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan yumurta gerekli.
+      name: Yumurta
+      requirement: <object id="egg" /> gerekli.
+    petEgg:
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan evcil hayvan
+        yumurtası gerekli.
+      name: Evcil hayvan yumurtası
+      requirement: <object id="pet_egg" /> gerekli.
