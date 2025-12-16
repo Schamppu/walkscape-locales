@@ -105,6 +105,10 @@ singulars:
         text: Můžete zařadit do fronty více cestovních akcí, ale vždy pouze jednu
           aktivitu. Před zařazením další aktivity do fronty prosím dokončete nebo
           zrušte aktuální aktivitu.
+      mmNotAtSameLocation:
+        title: Nelze obchodovat s Tajemným Obchodníkem
+        text: Nemůžete obchodovat s Tajemným Obchodníkem právě teď. Ujistěte se, že
+          jste na správném místě.
   errors:
     characterValidation:
       nameContainsSpecialCharacters: Název postavy obsahuje speciální znaky. Povoleny
@@ -269,6 +273,19 @@ singulars:
       text: Chystáte se <c>vyhodit hodnotné předměty, kterých byste mohli litovat</c>!
         Jste si jisti, že chcete vyhodit tyto předměty?
       title: Vyhodit předměty s vysokou hodnotou?
+    claimPet:
+      title: Vyzvednout mazlíčka?
+      text: Chystáte se vyzvednout si mazlíčka. Jakmile bude mazlíček vyzvednut, bude
+        vázán na vás a nebude možné jej vyměnit. Jste si jisti, že chcete tohoto mazlíčka
+        vyzvednout?
+    retirePet:
+      title: Vyřadit mazlíčka?
+      text: Chystáte se vyřadit svého mazlíčka. Vyřazením mazlíčka ho trvale odstraníte.
+        Jste si jisti, že chcete tohoto mazlíčka vyřadit?
+    destroyEgg:
+      title: Zničit vejce?
+      text: Chystáte se zničit vejce. Zničením vejce ho odstraníte trvale. Jste si
+        jisti, že chcete toto vejce zničit?
   popups:
     inactiveSteps:
       stepsWhileInactive: Kroky získané během neaktivní hry
@@ -308,3 +325,15 @@ singulars:
       noNewUnlocks: Nic k odemčeni na této úrovni.
       newItem: <chip><stext><c>Předmět odemčen</c></stext></chip> <item id="{item}"/>
         nyní lze nasadit.
+  validators:
+    textField:
+      specialCharactersNotAllowed: Speciální znaky nejsou povoleny.
+      maxTextLength: Maximální délka je {max} znaků.
+      minTextLength: Minimální délka je {min} znaků.
+      noConsecutiveSpaces: Po sobě jdoucí mezery nejsou povoleny.
+      noLeadingTrailingSpaces: Úvodní ani koncové mezery nejsou povoleny.
+      containsSpecialCharacters: Obsahuje speciální znaky, které nejsou povoleny.
+      emojisNotAllowed: Emoji nejsou povoleny.
+      numbersNotAllowed: Čísla nejsou povolena.
+      spacesNotAllowed: Mezery nejsou povoleny.
+      swearWordsNotAllowed: Nevhodné výrazy nejsou povoleny.
