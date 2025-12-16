@@ -34,7 +34,7 @@ maps:
         human: Umano
         none: Nessuno
   skillTypes:
-    'artisan': Artigiano
+    'artisan': Artigianato
     'gathering': Raccolta
 plurals:
   achievements:
@@ -65,7 +65,8 @@ plurals:
         other: Passi per salire di livello
       stepsUntilArrival:
         two: Passi al traguardo
-        one: Passi al traguardo
+        one: Passo al traguardo
+        other: Passi al traguardo
   location:
     phrases:
       playersDoingActivity:
@@ -73,6 +74,12 @@ plurals:
         two: <c>{}</c> giocatori che svolgono l'attività
         other: <c>{}</c> giocatori che svolgono l'attività
         one: <c>{}</c> giocatofy che svolgono l'attività
+      playersHere:
+        other: <c>{}</c> giocatori presenti
+        few: '-'
+        two: <c>{}</c> giocatori presenti
+        one: <c>{}</c> giocatore presente
+        many: '-'
   inventory:
     info:
       consumableDuration:
@@ -326,20 +333,23 @@ singulars:
       checkOut: Ecco il mio personaggio {nome} in WalkScape . Dai un'occhiata!\nhttps://walkscape.app
       stepsOfLastWeek: Passi degli ultimi 7 giorni
       checkOutSubject: Guarda i miei progressi su WalkScape!
-      totalLevel: Livello totale dell'abilità
+      totalLevel: Livello totale delle abilità
       savePicture: Salva immagine
       level: 'Livello del personaggio: <c>{level}</c>'
-      stepsToNextLevel: Passi per il livello successivo <c>{passaggi}</c>
+      stepsToNextLevel: Passi per il livello successivo <c>{steps}</c>
     info:
       skillBreakdown: Ecco l'elenco completo di tutte le abilità che il tuo personaggio
         ha potenziato durante il tuo viaggio. Tocca una qualsiasi delle abilità per
         visualizzare informazioni più dettagliate su di essa e su cosa sblocca.
-      eachLevelIncreasesStepBank: Ogni livello personaggio dopo il livello <c>{livello}</c>
-        aumenta la quantità massima di passi salvati di <c>{quantità}</c>.
+      eachLevelIncreasesStepBank: Ogni livello personaggio dopo il livello <c>{level}</c>
+        aumenta la quantità massima di passi salvati di <c>{amount}</c>.
   stats:
     info:
       reputation: La reputazione è una misura della tua notorietà nelle diverse fazioni
         di WalkScape.
+    phrases:
+      recordedFrom: Registrato da <c>{from}</c> a <c>{to}</c>.
+      stats: Statistiche
   permissions:
     phrases:
       pedometerPermission: Autorizzazione per il contapassi
