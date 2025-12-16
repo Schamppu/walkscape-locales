@@ -742,6 +742,11 @@ singulars:
           desc: Diese Spitzhacke aus violettem Metall hat einen Zustand erreicht,
             von dem andere Werkzeuge nur träumen können. Damit spaltest du Felsen
             mit geradezu zerstörerischer Präzision.
+        violitePickaxe:
+          name: Violitspitzhacke
+          desc: Diese violette Metallspitzhacke hat einen Zustand erreicht, von dem
+            andere Werkzeuge nur träumen können. Mit ihr zerschlägst du Felsen mit
+            zerstörerischer Präzision.
       woodcutting:
         basicHatchet:
           desc: Das einfache Beil, ein bescheidenes Werkzeug einfacher Holzfäller.
@@ -789,6 +794,10 @@ singulars:
           name: Adamantitaxt
           desc: Eine Axt aus grünem Adamantit-Metall – farblich vielleicht keine Offenbarung,
             aber beim Holzfällen absolut erstklassig.
+        violiteHatchet:
+          name: Violitaxt
+          desc: Diese violette Axt sieht mit ihrer Schärfe äußerst gefährlich aus.
+            Am besten stolperst du nicht, während du sie trägst.
       miscellaneous:
         bagOfRocks:
           name: Tasche mit Steinen
@@ -828,6 +837,10 @@ singulars:
           name: Violitsichel
           desc: Die Violitsichel präsentiert ihr kräftiges violettes Metall. Für ihre
             Robustheit fühlt sie sich überraschend leicht an.
+        violiteSickle:
+          name: Violitsichel
+          desc: Diese Violitsichel rühmt sich ihres kräftigen violetten Metalls. Ihre
+            Rundungen scheinen bei jedem Schnitt fast ein freudiges Lächeln zu formen.
       hunting:
         mapleBirdhouse:
           desc: Wie ein leiser Ruf trägt der sanfte Ahornholzduft durch den Wind und
@@ -1047,11 +1060,35 @@ singulars:
           name: Verstärkter Blasebalg
           desc: Du warst es leid, dass deine Blasebälge ständig kaputtgingen – aber
             wie sich herausstellte, brauchten sie einfach nur etwas Verstärkung!
+        bectoHammer:
+          name: Spektralhammer
+          desc: Der robuste Knochenstiel fühlt sich leicht an, selbst mit dem dicken
+            Ektoplasma-Kopf am Ende, der sich weich und schwammig anfühlt, solange
+            er nicht herumgeschwungen und als Schmiedewerkzeug verwendet wird.
+        bronzeHammer:
+          name: Bronzehammer
+          desc: Ein leichter Hammer mit einem Bronzekopf, mit dem sich sowohl schmieden
+            als auch nageln lässt.
+        tarsiliumHammer:
+          name: Tarsiliumhammer
+          desc: Der dunkle Metallkopf des Hammers reflektiert kaum Licht.
       carpentry:
         reinforcedBellows:
           name: Verstärkte Blasebalg
           desc: Du warst es leid, dass dein Blasebalg ständig kaputtging – doch wie
             sich herausstellte, brauchte er nur etwas Verstärkung!
+        bectoSaw:
+          desc: Die geisterhaften Ektoplasma-Zähne dieser Säge wirken weniger bedrohlich
+            als die anderer Sägen – selbst bei Fehlern scheint sie dir nie wehzutun.
+            Dennoch frisst sie sich mühelos durch Holz.
+          name: Spektralsäge
+        bronzeSaw:
+          name: Bronzesäge
+          desc: Du hast einmal eine Säge gesehen und dachtest, sie würde in Bronze
+            besser aussehen.
+        tarsiliumSaw:
+          name: Tarsiliumsäge
+          desc: Die dunklen, obsidianartigen Zähne dieser Säge sind bereit, zuzubeißen!
       trinketry:
         silverOpalRing:
           name: Opal-Ring aus Silber
@@ -1209,6 +1246,44 @@ singulars:
         amuletOfThePinkPearl:
           name: Amulett der Rosa Perle
           desc: Ein glänzendes Amulett mit der Kraft einer rosa Perle.
+        bectoChisel:
+          name: Spektralmeißel
+          desc: Die geisterhafte Ektoplasma-Spitze dieses Werkzeugs wirkt instabil,
+            ist aber dennoch eine enorme Hilfe bei der präzisen Arbeit, die es im
+            Umgang mit Edelsteinen und anderem leisten muss.
+        bronzeChisel:
+          name: Bronzemeißel
+          desc: Das bronzene Brot-und-Butter-Modell der Meißelindustrie.
+        topazTippedChisel:
+          name: Topasbesetzter Meißel
+          desc: Die äußerste Kante dieses Meißels besteht aus Topas und macht ihn
+            dadurch äußerst scharf.
+      cooking:
+        bectoPan:
+          desc: Experten sind sich nicht sicher, ob das Kochen auf einer Ektoplasma-Oberfläche
+            irgendwelche Nebenwirkungen hat, aber es sorgt auf jeden Fall für eine
+            schöne Kruste – also ist es das vermutlich wert.
+          name: Spektralpfanne
+        bronzePan:
+          name: Bronzepfanne
+          desc: Durch den warmen Bronzeton sieht das Essen in dieser Pfanne immer
+            besser aus.
+        jadeTippedSteelPan:
+          name: Jadebesetzte Stahlpfanne
+          desc: Die Griffspitze dieser Stahlpfanne ist mit einem Edelstein aus Jade
+            besetzt.
+      crafting:
+        hydriliumWrench:
+          desc: Das Unterwassermaterial eignet sich überraschend gut als Werkstattschraubenschlüssel.
+          name: Hydriliumschraubenschlüssel
+        bectoWrench:
+          name: Spektralschraubenschlüssel
+          desc: Die Ektoplasma-Backen dieses Schraubenschlüssels scheinen immer perfekten
+            Halt auf allem zu haben, worauf du sie ansetzt. Irgendwie unheimlich.
+        bronzeWrench:
+          name: Bronzeschraubenschlüssel
+          desc: Der universelle Schraubenschlüssel in Größe zehn, aus Bronze gefertigt.
+            Es ist genau der, der immer fehlt.
   looted:
     equipmentSets:
       dimensional:
@@ -2760,6 +2835,14 @@ singulars:
         desc: Mit etwas Aufwand ließ sich die biegsame Planke zu einem stabilen Bauteil
           formen.
         name: Bambusbrett
+      mahoganyPlank:
+        desc: Eine hochwertiges Brett, das sich für die unterschiedlichsten, besonders
+          langlebigen Konstruktionen eignet.
+        name: Mahagonibrett
+      yewPlank:
+        name: Eibenbrett
+        desc: Ein Brett, dass sich leicht für die unterschiedlichsten Zwecke verarbeiten
+          lässt und dabei dennoch robust bleibt.
     cooking:
       milk:
         desc: Direkt von der Kuh, einer Ziege oder einem Kamel. Oder aus ein paar
@@ -2847,8 +2930,8 @@ singulars:
           ihre bunten Blüten bilden.
         name: Distel
       widowsKiss:
-        desc: Die rosafarbene Zwiebel lädt dazu ein, näherzukommen. Aber es ist besser,
-          Abstand zu halten.
+        desc: Ein unheimliches Gefühl morbider Furcht umgibt dich, je näher du dieser
+          Blume kommst – vielleicht ist es besser, Abstand zu halten.
         name: Kuss der Witwe
       woodenStick:
         desc: Ein spitzes Stück Holz. Vielleicht kannst du damit etwas herstellen,
@@ -2909,6 +2992,21 @@ singulars:
       wildRice:
         name: Wildreis
         desc: Wildwachsendes Gras, das essbare Körner trägt.
+      waterLotus:
+        desc: Eine Lotusblume, die an die Wasseroberfläche treibt – meist in Gesellschaft
+          von Seerosenblättern.
+        name: Hochwasserlotus
+      loverose:
+        desc: Soll jene, die starke Gefühle füreinander hegen, einander näherbringen.
+        name: Liebesrose
+      cattail:
+        name: Rohrkolben
+        desc: Eine langstielige Pflanze mit einem Büschel am Ende. Das ist die Blüte
+          , oder? Würde ich wahrscheinlich nicht essen.
+      ironweed:
+        name: Eisenkraut
+        desc: Eine starke und widerstandsfähige Pflanze, deren Eigenschaften sie in
+          vielen Anwendungsbereichen äußerst nützlich machen.
     mining:
       coal:
         desc: Bescheiden und unaufdringlich – die Kohle steht für ihre Praktikabilität
@@ -3004,10 +3102,10 @@ singulars:
           was du zuvor in den Händen hattest. Er scheint geradezu danach zu verlangen,
           eingeschmolzen zu werden, um noch stärker zu werden.
       crystalShards:
-        desc: Splitter aus Kristall, in denen eine schwache, vibrierende Energie zu
+        desc: Stücke aus Kristall, in denen eine schwache, vibrierende Energie zu
           schlummern scheint. Vielleicht wünschen sie sich, zu etwas Größerem geformt
           zu werden.
-        name: Kristallsplitter
+        name: Kristallkohle
       crystallizedFlame:
         desc: Ein großer Kristallbrocken, der offenbar das Wesen des Feuers selbst
           in sich trägt. Über seine Oberfläche scheinen Flammen zu tanzen, und er
@@ -3023,6 +3121,11 @@ singulars:
         desc: Dieser große Felsbrocken ist von Ektoplasma durchdrungen und strahlt
           eine geisterhafte Aura aus, die ein seltsames Gefühl hinterlässt. Du wirst
           eine verfluchte Schmiede benötigen, um ihn zu verarbeiten.
+      violiteOre:
+        desc: Eine violette Mineralmasse, bei der man kaum glauben kann, dass sie
+          wirklich existiert. Sie strahlt eine enorme Stärke aus – und das ist noch
+          nicht einmal ihre endgültige Form.
+        name: Violiterz
     rawFish:
       rawCarp:
         desc: Der milde Geschmack des Karpfens eignet sich gut für verschiedene kulinarische
@@ -3160,6 +3263,10 @@ singulars:
         desc: Ein violett schimmernder Metallbarren, der den Eindruck erweckt, man
           könne ihn einfach zerquetschen – trotzdem hält er unbeirrt an seiner Form
           fest.
+      violiteBar:
+        name: Violitbarren
+        desc: Eine violetter Metallbarren. Irgendwie fühlt er sich an, als könntest
+          du ihn zusammendrücken, doch er weigert sich hartnäckig, seine Form aufzugeben.
     woodcutting:
       birchLogs:
         desc: Die glatten und hellen Birkenstämme strahlen eine elegante Schlichtheit
@@ -3223,6 +3330,10 @@ singulars:
           Aussehen und einzigartige Eigenschaften verleiht. Zur Weiterverarbeitung
           brauchst du eine verfluchte Sägemühle.
         name: Ektoplasmastämme
+      mahoganyLogs:
+        desc: Stämme von einem stabilen Baum. Sollten sich gut für mächtige Handwerksarbeiten
+          und Bauprojekte eignen.
+        name: Mahagonistämme
     misc:
       glacierMap:
         desc: Diese Karte stellt den Nördlichen Teil von Jarvonien dar. Markiert mit
@@ -3282,6 +3393,10 @@ singulars:
       elderhideRope:
         name: Seil aus altem Leder
         desc: Ein robustes Seil aus altem Leder.
+      ironweedTwine:
+        name: Seil aus Eisenkraut
+        desc: 'Ein dickes und äußerst widerstandsfähiges Bündel Schnur, hergestellt
+          aus der Pflanze, nach der es benannt ist: Eisenkraut.'
     hunting:
       animalMeat:
         desc: Frisches Fleisch, das darauf wartet, gekocht, getrocknet oder gesalzen
