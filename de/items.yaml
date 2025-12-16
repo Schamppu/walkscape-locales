@@ -200,6 +200,11 @@ singulars:
         desc: Verdunkelter Wein mit einem tiefen, erdigen Aroma. Durch zusätzliche
           Zutaten und eine verlängerte Fermentation ist er kräftiger als gewöhnlicher
           Wein.
+      tastyBreakfast:
+        desc: Ein Frühstück mit allem Drum und Dran. So eine deftige Mahlzeit ist
+          ein großartiger Start in den Tag – selbst dann, wenn es eigentlich schon
+          längst nicht mehr Tagesanfang ist.
+        name: Leckeres Frühstück
     memosphere:
       smithingMemosphere:
         desc: Innerhalb der Glaskugel erscheint eine Szene, in der du mit geschickten
@@ -326,12 +331,21 @@ singulars:
         name: Gekochter Großmaulbarsch
         desc: Der großmaulige Fisch hat einen einzigartigen, unklaren Geschmack, der
           besonders bei den Bewohnern des Sumpfes beliebt ist.
+    misc:
+      driedFruit:
+        name: Getrocknete Früchte
+        desc: Eine Mischung verschiedener Früchte, die getrocknet wurden, damit sie
+          nicht verderben. Sie schmecken immer noch richtig gut!
+      nutMix:
+        name: Nussmix
+        desc: Verschiedene Nüsse in einer Mischung, die dir einen guten Proteinschub
+          mit insgesamt leckerem Geschmack liefern. Allergien vorbehalten.
   containers:
     skilling:
       foraging:
         foragingChest:
           desc: Ein entzückendes Sortiment an Ausrüstung und Waren rund ums Sammeln.
-          name: Truhe mit Naturschätzen
+          name: Sammeln-Truhe
         sunkenChest:
           name: Versunkene Truhe
           desc: Vom Grund des Ozeans bis ans Ufer – diese Truhe birgt die Geheimnisse
@@ -345,7 +359,7 @@ singulars:
           name: Truhe der Abenteurergilde
           desc: Auf dieser massiven Truhe prangt das Emblem der Abenteurergilde.
         syrenthiaChest:
-          name: Truhe von Syrenthia
+          name: Truhe von Syrenthien
           desc: Eine Truhe aus den dunklen Tiefen des Meeres – wer weiß, welche verborgenen
             Reichtümer sie enthält?
         coinPouch:
@@ -411,7 +425,7 @@ singulars:
             Besitzer wird es wohl nicht mehr finden, also wirf doch einen Blick hinein.
       fishing:
         fishingChest:
-          name: Angler-Truhe
+          name: Angel-Truhe
           desc: Das Meer ist voller Fische, aber die seltensten Wunder bleiben den
             Aquarien vorbehalten.
       cooking:
@@ -1258,6 +1272,10 @@ singulars:
           name: Topasbesetzter Meißel
           desc: Die äußerste Kante dieses Meißels besteht aus Topas und macht ihn
             dadurch äußerst scharf.
+        wraithwaterFlowerNecklace:
+          name: Wraithwater Blumenhalskette
+          desc: Ein Arrangement düster wirkender Blumen. Wenn du es trägst, spürst
+            du eine leichte Verbindung zu den Toten.
       cooking:
         bectoPan:
           desc: Experten sind sich nicht sicher, ob das Kochen auf einer Ektoplasma-Oberfläche
@@ -1490,6 +1508,11 @@ singulars:
           name: Barfußschuhe
           desc: Schuhe mit einzelnen Kammern für jeden deiner Zehen. Die Definition
             von Funktion vor Form.
+        featherBoots:
+          name: Federstiefel
+          desc: 'Ein weitverbreiteter Irrglaube: Diese Stiefel verleihen nicht die
+            Fähigkeit zu fliegen, aber das hält die Leute nicht davon ab, es zu versuchen.
+            Zusammen mit einem Federumhang sehen sie allerdings äußerst modisch aus.'
       carpentry:
         handsaw:
           desc: Diese Säge verkörpert die Harmonie zwischen Handwerker und Natur und
@@ -1641,6 +1664,10 @@ singulars:
         rottenWrentmarine:
           name: Verdorbener Wrentmarine (Testgegenstand)
           desc: Nur für Tester. Gewährt unbegrenztes Inventar.
+        spiceRackpack:
+          name: Gewürzrucksack
+          desc: Eine weitverbreitete wrentmarkische Erfindung – ein Rucksack, in dem
+            du Reihen von Gewürzpäckchen verstauen kannst.
       crafting:
         candlehat:
           desc: Es ist ein Hut mit einer angebrachten Kerze. Was kann man sich mehr
@@ -1729,7 +1756,7 @@ singulars:
           desc: Die weiche Stoffschicht ist wie ein Schild zwischen deinen Füßen und
             dem glühenden Sand, selbst an den heißesten Stränden von Wrentmark.
         bugBait:
-          name: Käfer Köder
+          name: Käferköder
           desc: Der Käfer wird das Abendessen eines Fisches sein. Aber wessen Abendessen
             wirst du sein?
         coolSunglasses:
@@ -1780,6 +1807,15 @@ singulars:
         catchBucket:
           name: Fangeimer
           desc: Ein praktischer Eimer, gedacht für das Sammeln frisch gefangener Fische.
+        fishingStringer:
+          desc: Ein dünnes Seil mit einer langen, stabilen Nadel am Ende, mit der
+            gefangene Fische durchstochen werden. Auf dieser Leine kannst du Dutzende
+            um Dutzende von Fischen aufreihen.
+          name: Fischleine
+        fishnetShirt:
+          name: Netzhemd
+          desc: Das Netzshirt sieht auf deinem nackten Oberkörper spektakulär aus.
+            Du siehst aus wie ein hübscher kleiner Fisch, der im Netz gefangen wurde.
       foraging:
         halflingsFeetSlippers:
           desc: Diese gemütlichen und reizvollen Pantoffeln winzigen Zehen und skurillen
@@ -1876,6 +1912,11 @@ singulars:
           name: Rostige Sichel
           desc: Eine einst großartige Sichel, inzwischen verrostet. Sie kann immer
             noch zum Sammeln verwendet werden, aber nicht mehr so gut wie früher.
+        dragonflyCatchingNet:
+          name: Libellenfangnetz
+          desc: Dieses robuste Netz an einem Stiel ist größer als jene, die zum Fangen
+            kleinerer Insekten verwendet werden. Es ist so geformt, dass sich die
+            schnellen, schönen Libellen leichter einfangen lassen.
       mining:
         miningHelm:
           desc: Dieser Bergbaumhelm, ein Fanal in den Tiefen der Erde, stahlt ein
@@ -2526,6 +2567,10 @@ singulars:
         name: Seths Sumpfkompass
         desc: Der Kompass zeigt immer auf das Zentrum des Sumpfes – ein unverzichtbares
           Werkzeug für jeden abenteuerlustigen Entdecker mit Selbstachtung.
+      ghostTrapPack:
+        name: Geisterfallenrucksack
+        desc: Der sperrige Rucksack ist mit einem Schlauch ausgestattet, der zum Einfangen
+          von Geisterpartikeln verwendet wird.
     supporter:
       ringOfPandemonium:
         name: Pandämonischer Ring
@@ -3676,6 +3721,19 @@ singulars:
           Bewohnern von Wraithwater geworden sind. Es gewährt Durchgang durch die
           geisterhafte Barriere südlich der Stadt. Wer es bei sich trägt, muss die
           Geister dort auf irgendeine Weise besänftigt haben, um es zu erhalten.
+      dragonfly:
+        desc: Eine seltene Libelle, die in den Wiesen vorkommt. Sie glänzt mit einer
+          brillanten Färbung, die zu ihrer hohen Geschwindigkeit und ihrer geheimnisvollen
+          Aura passt. Wahrscheinlich im Teenageralter, was Libellenjahre angeht.
+        name: Brillant-Smaragdlibelle
+      jarOfDirt:
+        name: Glas mit Erde
+        desc: Scheint eine merkwürdige Sache zu sein, die man aufbewahrt. Du hast
+          ein Glas mit Erde?
+      roseQuartz:
+        name: Rosenquarz
+        desc: Ein Kristallbrocken, der mit einem zusätzlichen rosa Schimmer glänzt.
+          Es fühlt sich an, als würde er die ihn umgebenden Edelsteine stärken.
   currencies:
     adventurersGuildToken:
       desc: Ein Token, der in der Abenteurergilde für Waren und Dienstleistungen eingelöst
@@ -3686,9 +3744,122 @@ singulars:
       desc: Ein veredeltes Stück geisterhafter Energie, das glitschig aussieht und
         sich ebenso anfühlt. Geister schätzen es in genau dieser Form, und selbst
         darüber hinaus hat es noch einige weitere Verwendungszwecke.
+    chips:
+      skill:
+        t1:
+          smithing:
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Schmiedetruhen
+              eingetauscht werden kann.
+            name: Schmiedechip
+          woodcutting:
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Holzfällertruhen
+              eingetauscht werden kann.
+            name: Holzfällerchip
+          hunting:
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Jagdtruhen
+              eingetauscht werden kann.
+            name: Jagdchip
+          carpentry:
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Schreinertruhen
+              eingetauscht werden kann.
+            name: Tischlereichip
+          fishing:
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Angeltruhen
+              eingetauscht werden kann.
+            name: Angelchip
+          agility:
+            name: Agilitätschip
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Agilitätstruhen
+              eingetauscht werden kann.
+          cooking:
+            name: Kochchip
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Kochtruhen
+              eingetauscht werden kann.
+          crafting:
+            name: Handwerkschip
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Handwerkstruhen
+              eingetauscht werden kann.
+          foraging:
+            name: Sammelchip
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Sammeltruhen
+              eingetauscht werden kann.
+          mining:
+            name: Bergbauchip
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Bergbautruhen
+              eingetauscht werden kann.
+          trinketry:
+            name: Kunsthandwerkschip
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Kunsthandwerkstruhen
+              eingetauscht werden kann.
+          tailoring:
+            name: Schneidereichip
+            desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Schneidereitruhen
+              eingetauscht werden kann.
+      misc:
+        adventureGuild:
+          desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Truhen der
+            Abenteurergilde eingetauscht werden kann.
+          name: Abenteuergildechip
+      region:
+        jarvonia:
+          name: Jarvonienchip
+          desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Truhen von
+            Jarvonien eingetauscht werden kann.
+        syrenthia:
+          name: Syrenthienchip
+          desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Truhen von
+            Syrenthien eingetauscht werden kann.
+        trellin:
+          name: Trellinchip
+          desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Truhen von
+            Trellin eingetauscht werden kann.
+        erdwise:
+          name: Erdweischip
+          desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Truhen von
+            Erdweis eingetauscht werden kann.
+        halflingRebels:
+          name: Halbling-Rebellenchip
+          desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Truhen der
+            Halbling-Rebellen eingetauscht werden kann.
+        wallisia:
+          name: Wallisienchip
+          desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Truhen von
+            Wallisien eingetauscht werden kann.
+        wrentmark:
+          name: Wrentmarkchip
+          desc: Ein wertvoller Chip, der beim mysteriösen Händler gegen Truhen von
+            Wrentmark eingetauscht werden kann.
   eggs:
     camelEgg:
       desc: Das Ei, das von einem Kamel zurückgelassen wurde – zumindest erkennt man
         das angeblich an dem kleinen Höcker darauf. So identifiziert man sie doch
         … oder?
       name: Kamelei
+    gooseEgg:
+      desc: Das Ei einer Gans. Bist du sicher, dass du das haben solltest? Willst
+        du etwa ihren Zorn heraufbeschwören?
+      name: Gänseei
+    tortoiseEgg:
+      desc: Ein Schildkrötenei. Es hat eine besonders harte Schale. Scheint so, als
+        würde es niemals ohne eine sein.
+      name: Schildkrötenei
+    chickenEgg:
+      name: Hühnerei
+      desc: Ein fruchtbares Hühnerei. Verwechsele es nicht mit deinem Frühstück –
+        beeil dich und lass es schlüpfen!
+    geckoEgg:
+      name: Geckoei
+      desc: Dieses Ei stammt von einem Gecko. Es sieht schon ein wenig grün aus –
+        du solltest es wohl bald ausbrüten!
+    snakeEgg:
+      name: Schlangenei
+      desc: Ein Ei von einer Schlange. Sie sind vielleicht kaltblütig, aber dieses
+        hier solltest du warm halten!
+    tigerEgg:
+      name: Tigerei
+      desc: Das Ei eines Tigers. Man könnte meinen, es hätte auch Streifen, aber dafür
+        musst du es erst ausbrüten.
+    dolphinEgg:
+      name: Delphinei
+      desc: Das Ei eines Delfins. Seine wasserartige Färbung tarnt es gut unter der
+        Oberfläche. Es ist ein Wunder, dass die Eltern es überhaupt wiederfinden.
