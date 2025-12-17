@@ -151,6 +151,8 @@ maps:
         'material': Materialien
         "currency": Währungen
         "egg": Haustier-Eier
+        "quest": Quest-Gegenstände
+        "artifact": Artefakte
   locales:
     grammaticalGender:
       'masculine': Männlich
@@ -180,6 +182,16 @@ maps:
       'consumable': Verbrauchsgegenstand
       'activity': Aktivität
       'emergency': Notfall
+  mysteriousMerchant:
+    chestTypes:
+      "regional": Fraktions-Truhen
+      "skilling": Fähigkeiten-Truhe
+      "guild": Gilden-Truhen
+  pets:
+    stages:
+      "egg": Ei
+      "juvenile": Jugendlicher
+      "adult": Erwachsener
 plurals:
   achievements:
     phrases:
@@ -474,10 +486,12 @@ singulars:
       abilities: Fähigkeiten
       baseEfficiency: Grundeffizienz
       fromOverencumbered: Überladen
+      fromPets: Haustiere
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> Erfahrung
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} Sammelgegenstände</c>
         verfügbar
+      reputation: <bp /><object id="{faction}" /> Reputation <c>+{amount}</c>
     options:
       completeUntilActions: Für eine Anzahl von Aktionen abschließen
       numberOfActions: Anzahl der Aktionen
@@ -927,6 +941,15 @@ singulars:
       noPermanentModifiers: Keine permanenten Modifikatoren.
       noItemEquipped: Kein Gegenstand ausgerüstet
       noItemSelected: Kein Gegenstand ausgewählt
+      gearSlots: Ausrüstungsslots
+      toolSlots: Werkzeugslots
+    info:
+      toolInfo: Rüste Werkzeuge aus, um die Attribute deines Charakters zu verbessern.
+        Zu Beginn hast du drei Werkzeugslots zur Verfügung. Weitere Werkzeugslots
+        schaltest du frei, indem du dein <c>Charakterlevel erhöhst</c>.
+      gearInfo: Lege Ausrüstung an, um die Attribute deines Charakters zu verbessern.
+        Du kannst unten auf jeden Ausrüstungsslot tippen und sehen, welche Gegenstände
+        aus deinem Inventar du dort ausrüsten kannst.
   tools:
     phrases:
       emptyToolSlot: Leerer Werkzeugplatz
@@ -1100,6 +1123,12 @@ singulars:
       cancelGearSetSwitch:
         text: Wechsel des Ausrüstungs-Set abbrechen
         desc: Bricht den gewählten Wechsel des Ausrüstungs-Set für diese Aktion ab.
+      summonPet:
+        text: Haustier beschwören
+        desc: Beschwört dein Haustier, bevor diese Aktion gestartet wird.
+      cancelSummonPet:
+        desc: Bricht die Haustierbeschwörung für diese Aktion ab.
+        text: Beschwörung des Haustiers abbrechen
     phrases:
       switchingToGearSet: Zum Ausrüstungs-Set <c>{name}</c> wechseln
       queue: Warteschlange
@@ -1112,6 +1141,9 @@ singulars:
       noPathFound: Kein Weg zum Ziel gefunden.
       forXActions: Wird für <c>{count}</c> Aktionen ausgeführt
       inputNotMet: Eingabebedingungen nicht erfüllt
+      petNotFound: Ausgewähltes Haustier nicht gefunden – hast du es in Ruhestand
+        geschickt?
+      summoningPet: Haustier <playerPet id="{pet}" /> wird beschworen
     types:
       traveling: Reisen
       activity: Aktivität
@@ -1153,6 +1185,9 @@ singulars:
         gestartet
       startedActivityNoLocation: Aktivität <object id="{activity}"/> gestartet
       actionCancelled: Aktion abgebrochen
+      petDoesNotExist: Das Haustier existiert nicht mehr, konnte nicht beschworen
+        werden.
+      switchedToPet: <playerPet id="{pet}"/> beschworen
   announcements:
     phrases:
       unread: Ungelesen
@@ -1162,7 +1197,7 @@ singulars:
       noMoreAnnouncements: Du hast das Ende der Ankündigungen erreicht! Es gibt keine
         weiteren Ankündigungen mehr.
       announcementInfo: Hier findest du von den Entwicklern verfasste <c>Ankündigungen</c>.
-        DevBlogs, Changelogs und Systemmeldungen sind eine großartige Möglichkeit,
+        Entwickler-Blogs, Changelogs und Systemmeldungen sind eine großartige Möglichkeit,
         dich über den Entwicklungsfortschritt und Serverausfälle auf dem Laufenden
         zu halten!
   download:
@@ -1181,3 +1216,93 @@ singulars:
   pets:
     phrases:
       petEggs: Haustier-Eier
+      noPetSummoned: Derzeit ist kein Haustier beschworen. <c>Beschwöre ein Haustier</c>,
+        damit es dir folgt und dir seine Attribute und Fähigkeiten gewährt!
+      maxLevel: Max. Level
+      isAdvancing: <c>{name}</c> wächst!
+      requirementsToGainXPNeeded: 'Folgendes muss erfüllt sein, damit <c>{name}</c>
+        XP erhält:'
+      maxLevelProgress: Max. Levelfortschritt
+      noPets: Du hast keine Haustiere. Du kannst Haustiere erhalten, indem du Haustier-Eier
+        findest und sie ausbrütest.
+      noPetSelected: Kein Haustier ausgewählt
+      pets: Haustiere
+      hatching: Schlüpfend
+      claimPet: Haustier beanspruchen
+      chooseEgg: Ei wählen
+      noEggIsHatching: Derzeit wird kein Haustier-Ei ausgebrütet. Wähle ein Haustier-Ei
+        aus, um mit dem <c>Ausbrüten</c> zu beginnen!
+      currentlyHatching: Wird derzeit ausgebrütet
+      summonedPet: Beschworenes Haustier
+      level: Lvl. <c>{level}</c>
+      canHatch: Kann schlüpfen
+      canEvolve: Kann wachsen
+      summonPet: Haustier beschwören
+      changePet: Haustier wechseln
+      abilities: Fähigkeiten
+      unlocked: Freigeschaltet
+      unlockedAt: Freigeschalten am
+      evolve: Wachsen
+      hatch: Ausbrüten
+      attributes: Attribute
+      dismissPet: Haustier wegschicken
+      requirementsToGainXPNotMet: <c>{name}</c> kann keine XP erhalten
+      requirementsToHatchNotMet: <c>{name}</c> kann nicht schlüpfen
+      requirementsToHatchNeeded: 'Folgendes muss erfüllt sein, damit <c>{name}</c>
+        schlüpfen kann:'
+      pet: Haustier
+      egg: Ei
+      noEggSelected: Kein Ei ausgewählt
+      openPets: Haustiere öffnen
+      openHatching: Schlupf öffnen
+      retire: In Ruhestand schicken
+      destroy: Zerstören
+      totalXp: Gesamte XP
+      currentXp: aktuelle XP
+      xpToNextLevel: XP bis zum nächsten Level
+      currentLevelProgress: Aktueller Level-Fortschritt
+      xpToMaxLevel: XP bis zum Maximallevel
+      claimedAt: Beansprucht am
+      hatchedAt: Ausgebrütet am
+      ownedFor: Im Besitz seit
+      nextLevel: Nächstes Level
+      xpToHatch: XP zum Ausbrüten
+      hatchingProgress: Schlüpf-Fortschritt
+      isHatching: <c>{name}</c> schlüpft !
+      hasHatched: <c>{name}</c> ist geschlüpft und ist nun <petStage id="{stage}"/>!
+      hasEvolved: <c>{name}</c> ist gewachsen und ist nun <petStage id="{stage}"/>!
+      noEggs: Du hast keine beanspruchten Haustier-Eier.
+      noEggsFound: Keine Eier gefunden, die deiner Suche entsprechen.
+      noPetsFound: Keine Haustiere gefunden, die deiner Suche entsprechen.
+  mysteriousMerchant:
+    dialogue:
+      greeting: Schön, dich zu sehen, <player />! Ich habe einige <c>seltene Gegenstände</c>
+        und <c>Dienste</c>, an denen du vielleicht interessiert bist. Ich habe deine
+        Abenteuer in ganz Arenum beobachtet und muss sagen, du hast wirklich ein Talent
+        für Erkundung. Wie wäre es, wenn wir einen <c>kleinen Handel</c> machen?
+      chestChosen: Ah, du möchtest also Gegenstände aus der <object id="{chest}"/>
+        eintauschen. Ausgezeichnete Wahl! Sag mir nun, ob du Gegenstände aus deiner
+        <c>Bank</c> oder deinem <c>Inventar</c> eintauschen möchtest – oder ob du
+        etwas mit deinen <c>Truhenchips</c> kaufen willst!
+      tradeChestItems: Ich kann deine <c>Beute aus Truhen</c> gegen einige <c>Truhenchips</c>
+        eintauschen. Und für ein paar Chips kann ich dir die Gegenstände geben, die
+        du vielleicht aus diesen Truhen haben wolltest. Natürlich zu einem <c>vernünftigen
+        Kurs</c>!
+      chooseChest: Eine weise Wahl! Aus welcher Truhe möchtest du <c>Gegenstände eintauschen</c>?
+    phrases:
+      buyWithChips: Mit Chips kaufen
+      totalSellingPrice: Gesamtbetrag für den Verkauf von <c>{amount}</c> Gegenständen
+      tradeChestItems: Truhengegenstände handeln
+      trade: Handeln
+      tradeChestChosen: Truhengegenstände handeln
+      tradingChestItem: Handle Truhengegenstände
+      sellFromInventory: Aus dem Inventar verkaufen
+      sellFromBank: Aus der Bank verkaufen
+      ownedCurrency: Besessene Währung
+      sellingPrice: '{rarity} Verkaufspreis'
+      buyingPrice: '{rarity} Kaufpreis'
+      totalBuyingPrice: Gesamtbetrag für den Kauf von <c>{amount}</c> Gegenständen
+      sell: Verkaufen
+      buy: Kaufen
+      buyItems: Gegenstände kaufen
+      sellItems: Gegenstände verkaufen
