@@ -384,6 +384,15 @@ singulars:
       skillModifiers: Beceri nitelikleri
       noItemSelected: Seçilmiş eşya bulunmuyor
       noItemEquipped: Kuşanılmış eşya bulunmuyor
+      gearSlots: Teçhizat yuvaları
+      toolSlots: Alet yuvaları
+    info:
+      toolInfo: Aletler kuşanarak karakterinin niteliklerini geliştir. Yeni başladığında
+        üç adet alet yuvası mevcuttur. <c>Karakterinin seviyesini yükselterek</c>
+        daha fazla alet yuvası açabilirsin.
+      gearInfo: Teçhizat kuşanarak karakterinin niteliklerini geliştir. Aşağıdaki
+        teçhizat yuvalarından herhangi birine dokunarak o yuvaya envanterindeki hangi
+        eşyaları kuşanabileceğini görebilirsin.
   inventory:
     info:
       noItemEquipped: Kuşanılmış eşya bulunmuyor. \n\n Aşağıdaki listeden bir eşya
@@ -826,6 +835,7 @@ singulars:
       abilities: Yetenekler
       baseEfficiency: Esas verim
       fromOverencumbered: Envanter dolup taşmış
+      fromPets: Evcil hayvanlar
     info:
       consumablesUsage: Faaliyet yaparken kullanmak için birer <c>yiyecek</c> ve <c>iksir</c>
         seçebilirsin.
@@ -837,6 +847,7 @@ singulars:
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> tecrübesi
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} koleksiyonluk</c> bulunabilir
+      reputation: <bp /><object id="{faction}" /> itibarı <c>+{amount}</c>
     options:
       completeUntilActions: Belirli sayıda eylem tamamla
       numberOfActions: Eylem sayısı
@@ -1160,3 +1171,10 @@ singulars:
       xpToMaxLevel: Azami seviyeye kalan TP
       maxLevelProgress: Azami seviye ilerlemesi
       nextLevel: Sonraki seviyeye
+  currencies:
+    phrases:
+      currencies: Paralar
+      goldCoins: Altın akçe
+    info:
+      noCurrencies: Şu anda başka paran bulunmuyor. <c>Loncalardan</c>, <c>Esrarengiz
+        Tüccar'dan</c> veya diğer <c>özel kaynaklardan</c> farklı paralar kazanabilirsin.
