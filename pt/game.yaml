@@ -3,46 +3,53 @@ singulars:
     placeholder: 'Placeholder'
   items:
     gearTypes:
-      agility: 'Utensílio de agilidade'
-      back: 'Voltar'
+      agility: 'Item de agilidade'
+      back: 'Costas'
       cape: 'Capa'
-      chest: 'Baú'
+      chest: 'Tronco'
       cooking: 'Utensílio de cozinha'
-      feet: 'Pé'
-      fishing: 'Utensílio de pesca'
-      foraging: 'Utensílio de forrageamento'
+      feet: 'Pés'
+      fishing: 'Ferramenta de pesca'
+      foraging: 'Ferramenta de recoleção'
       head: 'Cabeça'
       legs: 'Pernas'
-      mining: 'Utensílio de mineração'
+      mining: 'Ferramenta de mineração'
       neck: 'Pescoço'
       hands: 'Mãos'
-      ring: 'Anél'
+      ring: 'Anel'
       primary: 'Primário'
       secondary: 'Secundário'
-      woodcutting: 'Utensílio de corte de madeira'
+      woodcutting: 'Ferramenta de corte'
       tools: 'Ferramentas'
+      toolNumber: Ferramenta{number}
     itemTypes:
       material: 'Material'
-      crafted: 'Feito'
-      loot: 'Saque'
+      crafted: 'Produzido'
+      loot: 'Espólio'
       consumable: 'Consumível'
-      container: 'Contêiner'
+      container: 'Recipiente'
       quest: 'Missão'
       collectible: 'Colecionável'
       other: 'Outro'
+      petEgg: Ovo de mascote
+      currency: Moeda
     itemTags:
-      fine: 'Ótimo'
+      fine: 'Refinado'
+      rareEgg: Raro
+      normal: Comum
   requirements:
     skills:
-      level: 'Necessita  de nível <skill skill="{skill}" level="{level}"" isRequirement="true"/>.'
+      level: 'Necessita de nível <skill skill="{skill}" level="{level}"" isRequirement="true"/>.'
   intro:
-    welcome: 'Bem-vindo a Arenum, estranho. Parece que você apareceu logo na saída
-      de <hl>Kallaheim</hl>, uma grande cidade no norte.'
-    whereAreYouFrom: 'Posso perguntar de onde você é?'
+    welcome: 'Bem-vindo a Arenum, forasteiro. Parece que surgiste nos arredores de
+      <hl>Kallaheim</hl>, uma grande cidade no norte.'
+    whereAreYouFrom: 'Desculpa a pergunta mas, quem és tu?'
   commonPhrases:
     noActivity: 'Sem atividade.'
     allSkills: 'Todas as habilidades'
-    lookingForInternet: 'Procurando por internet...'
+    lookingForInternet: 'A ligar ao servidor de WalkScape...'
+    loadingSteps: A carregar os teus passos...
+    connectingToServer: A conectar ao servidor...
 maps:
   realms:
     "painfulislands": 'Ilhas das Dores'
@@ -58,14 +65,14 @@ maps:
   realmDescriptions:
     "ewerethien": 'Ewerethien'
     "jarvonia": '\t\t Jarvonia, <c>uma terra de gelo e escuridão</c>, governada por
-      uma poderosa irmandade religiosa, é um reino independente de pessoas resistentes,
-      unidas por sua <c>fé</c> inabalável e <c>determinação feroz</c> para sobreviver.\n\n\t\t
-      Apesar dos invernos rigorosos e do isolamento, eles encontram força e proteção
-      por meio de sua religião, seus <c>corações queiman intensamente contra o frio</c>.'
+      uma poderosa irmandade religiosa, é um reino independente de gente resistente,
+      unida pela sua <c>fé</c> inabalável e <c>determinação feroz</c> em sobreviver.\n\n\t\t
+      Apesar dos invernos rigorosos e do isolamento, encontram força e proteção na
+      sua religião, com os seus <c>corações a arder intensamente contra o frio</c>.'
     "gdte": '\t\t O Grão-Ducado de Trellin-Erdwise, dividido <c>ao enfrentar uma crise
-      atual</c>, é uma terra de diversidade de <c>belezas</c> naturais e <c>desafios</c>.\n\n\t\t
-      Os pântanos de Trellin e os portos costeiros em Erdwise são fontes de beleza
-      e perigo. O povo do Grão-Ducado é definido por seu <c>orgulho e ganância</c>.'
+      atual</c>, é uma terra de grande <c>beleza</c> natural e <c>desafios</c>.\n\n\t\t
+      Os pântanos de Trellin e os portos costeiros em Erdwise são fontes tanto de
+      beleza como perigo. O povo do Grão-Ducado é definido pelo seu <c>orgulho e ganância</c>.'
     "wallisia": '\t\t Wallisia, uma terra de abundância e poder. <c>A Imperatriz</c>,
       descendente de um grande guerreiro, comanda um exército que <c>conquistou o
       continente</c>, deixando apenas Jarvonia intocada.\n\n\t\t As pastagens verdes
@@ -93,7 +100,7 @@ maps:
     "ethereal": 'Etéreo'
   items:
     consumableTypes:
-      "food": 'Alimento'
+      "food": 'Comida'
       "potion": 'Poção'
     qualities:
       "0": 'Normal'
@@ -109,6 +116,9 @@ maps:
       "3": 'Épico'
       "4": 'Lendário'
       "5": 'Etéreo'
+    currencyTypes:
+      'chestChip': Fichas de baú
+      'guildToken': Emblemas de Guilda
   realmMottos:
     "jarvonia": 'Através do frio, nossos corações queimam intensamente'
     "gdte": 'Preso pelas marés e pelos juncos'
