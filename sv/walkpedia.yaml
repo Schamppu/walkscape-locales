@@ -1,1 +1,289 @@
-{}
+singulars:
+  contentPages:
+    skill:
+      info:
+        unlocksDesc: Se vad som låses upp genom att höja nivån i denna egenskap.
+        level: Nivå
+        xp: XP
+        xpToNext: XP till nästa nivå
+        xpTo99: XP till nivå 99
+        stepsWalked: Gångna steg
+        ofTotalSteps: '% av totalt antal steg'
+        nextUnlock: Nästa upplåsning
+        lastUnlock: Senaste upplåsning
+        unlocks: Alla upplåsningar
+        fromLevelToLevel: Från nivå <c>{from}</c> till nivå <c>{to}</c>
+        guide: Guide
+      guides:
+        cooking: "<object id=\"cooking\" /> är en hantverksförmåga för att skapa kulinariska
+          <object id=\"food\" />-rätter och förbrukningsvaror.\n<li><hl>Startplats</hl>:
+          Du kan börja med <c>matlagning</c> i <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> genom <object id=\"a34e2643-5c41-4d15-94de-8df53d3d4c19\" /> eller
+          med <object id=\"recipe_cooking\" /> alternativ.</li>\n<li><hl>Var man hittar</hl>:
+          De flesta urbana platser har en chans att ha en <object id=\"service_kitchen\"\
+          \ />-tjänst. Det kan till och med finnas fler kök där ute som söker hjälp
+          med <c>matlagning</c>aktiviteter.</li>\n<li><hl>Används till</hl>: Laga
+          <object id=\"fish\" /> och <object id=\"ingredient\" /> till <object id=\"\
+          food\" /> och <object id=\"beverage\" /> som kan ge olika attributbonusar
+          till dina färdigheter.</li>\n"
+        crafting: "<object id=\"crafting\" /> är en hantverksförmåga för att skapa
+          användbara verktyg.\n<li><hl>Startplats</hl>: Du kan börja med <c>tillverkning</c>
+          direkt med gratis <object id=\"processed\" />-material från \"Hjälpsamme
+          Herbert\" i <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> mot några grundläggande <icon i=\"crafting\" /> receptalternativ för
+          tillverkning.</li>\n\n<li><hl>Var man hittar</hl>: De flesta urbana platser
+          har en chans att ha en <object id=\"service_workshop\" />-tjänst, som du
+          behöver ge dig ut för att hitta för att hjälpa dig med högre nivås tillverkningsrecept.
+          Det kan till och med finnas några platser där ute för <c>tillverkning</c>aktiviteter.</li>\n\
+          \n<li><hl>Används till</hl>: Tillverka <object id=\"bar\" />, <object id=\"\
+          plank\" /> och <object id=\"processed\" /> tillsammans till potentiella
+          <object id=\"woodcuttingTool\" />, <object id=\"miningTool\" />, <object
+          id=\"fishingTool\" /> eller <object id=\"foragingTool\" /> för att gynna
+          deras motsvarande färdigheter.</li>\n"
+        fishing: "<object id=\"fishing\" /> är en insamlingsfärdighet som är nödvändig
+          för att fånga <object id=\"fish\" />.\n\n<li><hl>Startplats</hl>: Du kan
+          börja med <c>fiske</c> vid <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
+          \ /> när du använder <object id=\"crafting\" /> för att skapa ditt första
+          <object id=\"fishingNet\" />.</li>\n\n<li><hl>Var man hittar</hl>: De flesta
+          platser nära vattendrag kan ha en chans att ha <c>fiske</c>aktiviteter,
+          se bara till att ta med passande <object id=\"fishingTool\" />.</li>\n\n\
+          <li><hl>Används till</hl>: Fånga <object id=\"fish\" /> som du sedan kan
+          använda din <object id=\"cooking\" />-färdighet på för att förvandla till
+          <object id=\"cookedFish\" /> som förbrukningsvaror, för att få tillfälliga
+          attributbonusar till dina färdigheter.</li>\n"
+        foraging: "<object id=\"foraging\" /> är en insamlingsfärdighet som är nödvändig
+          för att hitta <object id=\"plant\" />.\n\n<li><hl>Startplats</hl>: Du kan
+          börja med <c>samlande</c> direkt i <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> med <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
+          \ />.</li>\n\n<li><hl>Var man hittar</hl>: De flesta naturområden (slätter,
+          skogar, kullar, berg, stränder) kan innehålla <c>samlande</c>aktiviteter,
+          samt vissa urbana områden och grottor.</li>\n\n<li><hl>Används till</hl>:
+          Samla <object id=\"plant\" />-material, varav vissa till och med är <object
+          id=\"ingredient\" />, som kan användas i andra färdigheter, som <skill skill=\"\
+          crafting\"/> och <skill skill=\"cooking\"/>.</li>\n"
+        mining: "<object id=\"mining\" /> är en insamlingsfärdighet som är nödvändig
+          för att utvinna <object id=\"ore\" /> och mineraler.\n\n<li><hl>Startplats</hl>:
+          Du kan börja med <c>gruvdrift</c> vid <object id=\"location-pit_of_pittance-49a851b8-0a55-4857-9492-907958733b09\"\
+          \ /> när du använder <object id=\"crafting\" /> för att skapa din första
+          <object id=\"pickaxe\" />.</li>\n\n<li><hl>Var man hittar</hl>: Mestadels
+          bergsområden kan ha en chans att ha <c>brytnings</c>aktiviteter, se bara
+          till att ta med passande <object id=\"miningTool\" />.</li>\n\n<li><hl>Används
+          till</hl>: Bryta <object id=\"ore\" /> och <object id=\"nugget\" /> som
+          du sedan kan smälta med din <object id=\"smithing\" />-färdighet. Sällan
+          kan du till och med hitta några <object id=\"rough_gem\" /> som du kan forma
+          med din <object id=\"trinketry\" />-färdighet.</li>\n"
+        smithing: "<object id=\"smithing\" /> är en hantverksförmåga för att smälta
+          <object id=\"bar\" /> och smida metaller.\n\n<li><hl>Startplats</hl>: Du
+          kan börja med <c>smide</c> i <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> genom <object id=\"745d4e6f-5c6a-45a3-a98d-fc88f63bbb25\" /> eller
+          med <icon i=\"crafting\" /> receptalternativ för smide.</li>\n\n<li><hl>Var
+          man hittar</hl>: De flesta urbana platser har en chans att ha en <object
+          id=\"service_forge\" />-tjänst. Några kan även ha <c>smide</c>aktiviteter.</li>\n\
+          \n<li><hl>Används till</hl>: Smälta <object id=\"ore\" /> och <object id=\"\
+          nugget\" /> till <object id=\"bar\" /> som är användbara för <object id=\"\
+          crafting\" /> och <object id=\"trinketry\" />.</li>\n"
+        trinketry: "<object id=\"trinketry\" /> är en hantverksförmåga för att forma
+          <object id=\"gem\" /> och skapa funktionella smycken.\n\n<li><hl>Startplats</hl>:
+          Du kan börja med <c>smyckeskonst</c> när du hittar lämpligt <object id=\"\
+          plant\" />-material från <object id=\"foraging\" /> mot några grundläggande
+          <icon i=\"crafting\" /> receptalternativ för smyckeskonst.</li>\n\n<li><hl>Var
+          man hittar</hl>: Rikare områden kan ha bättre chanser att hitta en <object
+          id=\"service_trinketry_bench\" />-tjänst, som du behöver ge dig ut för att
+          hitta för att hjälpa dig med högre nivås smyckeskonstrecept. Det kan till
+          och med finnas några platser i dessa områden som har <c>smyckeskonst</c>aktiviteter.</li>\n\
+          \n<li><hl>Används till</hl>: Forma <object id=\"rough_gem\" /> till <object
+          id=\"cut_gem\" />. När du har dessa eller till och med en sällsynt <object
+          id=\"item_trinket\" /> kan de kombineras med nödvändigt <object id=\"bar\"\
+          \ />-material för att skapa <object id=\"item_ring\" /> och <object id=\"\
+          item_amulet\" /> för att gynna dina färdigheter.</li>\n"
+        woodcutting: "<object id=\"woodcutting\" /> är en insamlingsfärdighet som
+          är nödvändig för att få träelement och <object id=\"logs\" />.\n\n<li><hl>Startplats</hl>:
+          Du kan börja med <c>trädfällning</c> vid <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> när du använder <object id=\"crafting\" /> för att skapa din första
+          <object id=\"woodcuttingHatchet\" />.</li>\n\n<li><hl>Var man hittar</hl>:
+          De flesta skogsområden kan ha en chans att ha <c>trädfällnings</c>aktiviteter,
+          se bara till att ta med passande <object id=\"woodcuttingTool\" />.</li>\n\
+          \n<li><hl>Används till</hl>: Hugga <object id=\"logs\" />-material som du
+          sedan kan såga med din <object id=\"carpentry\" />-färdighet. Sällan när
+          du hugger <object id=\"woodcuttingTrees\" /> kan du till och med hitta ett
+          <object id=\"item-bird_nest-c459d244-4ef3-41c1-a911-01e18efaeec1\" /> som
+          kan innehålla några ytterligare hjälpsamma föremål.</li>\n"
+        hunting: "<object id=\"hunting\" /> är en insamlingsfärdighet som är nödvändig
+          för att hitta <object id=\"ingredient\" />.\n\n<li><hl>Startplats</hl>:
+          Du kan börja med <c>jakt</c> direkt i <object id=\"location\" /> med <object
+          id=\"activity\" />.</li>\n\n<li><hl>Var man hittar</hl>: De flesta naturområden
+          (slätter, skogar, kullar, berg, stränder) kan innehålla <c>jakt</c>aktiviteter,
+          samt vissa urbana områden och grottor.</li>\n\n<li><hl>Används till</hl>:
+          Samla <object id=\"ingredient\" />-material som kan användas i andra färdigheter,
+          som <skill skill=\"crafting\"/> och <skill skill=\"cooking\"/>.</li>\n"
+        tailoring: "<object id=\"tailoring\" /> är en hantverksförmåga för att sy
+          <object id=\"processed\" /> och skapa kraftfulla klädesplagg.\n\n<li><hl>Startplats</hl>:
+          Du kan börja med <c>skrädderi</c> när du hittar lämpligt <object id=\"plant\"\
+          \ />-material från <object id=\"foraging\" /> mot några grundläggande <icon
+          i=\"crafting\" /> receptalternativ för skrädderi.</li>\n\n<li><hl>Var man
+          hittar</hl>: Vissa områden kan ha bättre chanser att hitta en <object id=\"\
+          service_loom\" />-tjänst, som du behöver ge dig ut för att hitta för att
+          hjälpa dig med högre nivås skrädderireceptrecept. Det kan till och med finnas
+          några platser i dessa områden som har <c>skrädderi</c>aktiviteter.</li>\n\
+          \n<li><hl>Används till</hl>: Sy <object id=\"plant\" /> till <object id=\"\
+          processed\" />. När du har dessa kan de kombineras med nödvändigt tyg för
+          att skapa utrustning som gynnar dina färdigheter.</li>\n"
+        agility: "<object id=\"agility\" /> är en egenskap som är nödvändig för transport.\n\
+          \n<li><hl>Startplats</hl>: <c>Smidighet</c> tränas ofta tillsammans med
+          andra aktiviteter. Du kan träna det direkt i <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
+          \ /> with <object id=\"activity-dobby_is..._free-7a57ddaf-4970-4f88-bcb2-09d4a7fca50f\"\
+          \ />. Senare kommer du att märka att den används när du väljer en ny plats
+          att resa till, men du hittar ingen specifik aktivitet förrän du utforskar
+          mer och hittar lite utrustning. Det kanske inte skadar att skaffa några
+          <object id=\"skis\" /> eller <object id=\"climbingTool\" />.</li>\n\n<li><hl>Var
+          hittas</hl>: På fält, i bergen, och till och med städer kan erbjuda <c>smidighets</c>aktiviteter
+          som kan förvåna dig.</li>\n\n<li><hl>Används för</hl>: Transport, genvägar
+          och hitta lite slumpmässiga saker . Det är nödvändigt för att ta sig runt\
+          \  Arenum på ett snabbt sätt,  då det kommer gå fortare ju mer du höjer
+          nivån på smidigheten.</li>\n"
+        carpentry: "<object id=\"carpentry\" /> är en hantverksförmåga för träarbete
+          och <object id=\"plank\" />.\n\n<li><hl>Startplats</hl>: Du kan börja med
+          <c>snickeri</c> i <object id=\"location-kallaheim-094c9ec8-fdd2-4471-bacc-fabb71e6d654\"\
+          \ /> genom <icon i=\"crafting\" /> receptalternativ för snickeri eller bege
+          dig till <object id=\"location-beach_of_woes-f579ee16-e016-4c73-bf54-81947ff034ee\"\
+          \ /> för lite <object id=\"activity-sandcastle_building-3273bc4a-f394-423f-96f9-3fcc93d1f44d\"\
+          \ />.</li>\n\n<li><hl>Var man hittar</hl>: De flesta urbana platser har
+          en chans att ha en <object id=\"service_sawmill\" />-tjänst. Några kan även
+          ha <c>snickeri</c>aktiviteter.</li>\n\n<li><hl>Används till</hl>: Såga <object
+          id=\"logs\" /> till <object id=\"plank\" /> som är användbara för <object
+          id=\"crafting\" />.</li>\n"
+    item:
+      info:
+        title: Föremål <object id="{obj}">
+  phrases:
+    item:
+      fromActivites: Från aktiviteter
+      inInventory: Inuti inventariumet
+      inBank: På banken
+      fromChests: Från kistor
+      fromCrafting: Från tillverkning
+      dropped: Tappade
+      opened: Öppnade
+      sold: Såld
+      purchased: Införskaffad
+      itemsGained: Förvärvade föremål
+      abilities: Förmågor
+      attributes: Attribut
+      notCrafted: (Ej tillverkad)
+      requirements: Krav
+      activitySources: Aktivitetskällor
+      chestSources: Kistkällor
+      craftingSources: Hantverkskällor
+    home:
+      leveling: Progression
+      content: Innehåll
+      story: Berättelse
+      combat: Kamp
+    activity:
+      stepsWalked: Gångna steg
+      actionsCompleted: Genomförda aktiviteter
+      stepsRequired: Steg som krävs
+      maxWorkEfficiency: Maximal arbetseffektivitet
+      xpGained: XP införskaffad
+      level: Nivå
+      each: var
+      stepsToLevelUp: 'Steg för att gå upp nivå:'
+      stepsTo99: 'Steg till nivå 99:'
+      itemsGained: Förvärvade föremål
+      availableLocations: Tillgängliga platser
+    location:
+      realm: Rike
+      activities: Aktiviteter
+    common:
+      unknown: Det här innehållet är fortfarande okänt för din karaktär. Fortsätt
+        upptäcka för att lära dig mer om det!
+      rumors: Kända rykten
+  pages:
+    home:
+      info:
+        title: WalkPedia
+        tabText: Hem
+        description: WalkPedia är din karaktärs personliga dagbok. Här kan du följa
+          din karaktärs kunskap, statistik och få hjälp att navigera dig runt i spelet.
+    itemList:
+      info:
+        title: Föremål
+        description: Föremål är saker som kan samla damm, förbrukas eller säljas.
+          De kan hittas lite varstans i världen, i affärer eller tillverkade av andra
+          spelare.
+        tabText: Föremålslista
+    locationList:
+      info:
+        title: Platser
+        description: Platser är ställen i världen som kan besökas. De erbjuder olika
+          tjänster och aktiviteter för din karaktär.
+        tabText: Platslista
+    skillList:
+      info:
+        title: Egenskaper
+        description: Egenskaper går upp i nivå när du gör aktiviteter relaterade till
+          egenskapen. De låser upp nytt innehåll i spelet och gör dig mer effektiv.
+        tabText: Egenskaplista
+    activityList:
+      info:
+        title: Aktiviteter
+        description: Aktiviteter är repeterbara uppgifter som utförs i världen genom
+          att promenera i verkliga livet. De är det primära sättet att få föremål
+          och höja din nivå i en egenskap.
+        tabText: Aktivitetslista
+    serviceList:
+      info:
+        title: Tjänster
+        description: Tjänster ger dig fördelar på en plats. Vanligast så möjliggör
+          dig att utföra hantverk.
+        tabText: Tjänstlista
+    recipeList:
+      info:
+        title: Recept
+        description: Recept behövs för att tillverka föremål. De kräver vanligen både
+          material och en viss typ av tjänst.
+        tabText: Receptlista
+    characterList:
+      info:
+        title: Karaktärer
+        description: Karaktärer är de människor du kan träffa på i världen. De kan
+          ge dig uppdrag, sälja saker till dig med mera.
+        tabText: Karaktärslista
+    buildingList:
+      info:
+        title: Byggnader
+        description: Byggnader är strukturer i världen som gemensamt erbjuder dig
+          med affärer eller tjänster som exempelvis en bank.
+        tabText: Byggnadslista
+    shopList:
+      info:
+        title: Affärer
+        description: Affärer är ställen där du kan köpa och sälja av saker. De hittas
+          vanligast i byggnader.
+        tabText: Affärlista
+maps:
+  phrases:
+    item:
+      itemType:
+        "consumable": Förbrukningsvaror
+        "material": Material
+        "container": Behållare
+        "loot": Byte
+        "crafted": Tillverkad
+        "collectible": Samlarobjekt
+        "egg": Ägg från husdjur
+        "currency": Valutor
+plurals:
+  skillUnlocks:
+    itemRequirementsMet:
+      one: <c>{}</c> föremålets krav uppnått
+      two: <c>{}</c> föremålets krav uppnådda
+      other: <c>{}</c> föremålets krav uppnådda
+    recipeRequirementsMet:
+      one: <c>{}</c> receptets krav uppnådda
+      two: <c>{}</c> receptets krav uppnådda
+      other: <c>{}</c> receptets krav uppnådda
+    activityRequirementsMet:
+      one: <c>{}</c> aktivitetens krav uppnådda
+      two: <c>{}</c> aktivitetens krav uppnådda
+      other: <c>{}</c> aktivitetens krav uppnådda
