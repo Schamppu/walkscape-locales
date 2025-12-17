@@ -756,6 +756,7 @@ singulars:
       abilities: Schopnosti
       baseEfficiency: Základní účinnost
       fromOverencumbered: Přetížený
+      fromPets: Mazlíčci
     info:
       savedSteps: Uložené kroky zabraňují plýtvání kroků a shromažďují se chůzí, když
         není aktivní žádná aktivita. Vyčerpávají se zdvojnásobením kroků, které podniknete,
@@ -769,6 +770,7 @@ singulars:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> zkušenosti
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} sběratelských předmětů</c>
         které lze najít
+      reputation: <bp /><object id="{faction}" /> reputace <c>+{amount}</c>
     options:
       completeUntilActions: Dokončit pro určitý počet akcí
       numberOfActions: Počet akcí
@@ -1025,6 +1027,15 @@ singulars:
       noCombatModifiers: Žádné modifikátory boje z vybavených předmětů.
       noItemEquipped: Žádná položka není vybavena
       noItemSelected: Není vybrána žádná položka
+      gearSlots: Sloty vybavení
+      toolSlots: Sloty nástroje
+    info:
+      gearInfo: Vybavte se vybavením pro vylepšení vlastností své postavy. Můžete
+        klepnout na libovolný slot pro vybavení níže a zobrazit, jaké předměty můžete
+        do tohoto slotu z batohu umístit.
+      toolInfo: Vybavte se nástroji pro vylepšení vlastností své postavy. Na začátku
+        máte k dispozici tři sloty pro nástroje. Další sloty pro nástroje odemknete
+        <c>zvyšováním úrovně své postavy</c>.
   queue:
     phrases:
       untilInventoryFull: Dělat, dokud se batoh nenaplní
@@ -1037,6 +1048,8 @@ singulars:
       noPathFound: Nenalezena žádná cesta k cíli.
       forXActions: Provádíte <c>{count}</c> akcí
       inputNotMet: Vstupní požadavky nesplněny
+      petNotFound: Vybraný mazlíček nebyl nalezen, vyřadili jste ho?
+      summoningPet: Přivolání mazlíčka <playerPet id="{pet}" />
     suggestedOptions:
       startTraveling: Cestování
       startActivity: Aktivita
@@ -1074,6 +1087,12 @@ singulars:
       cancelGearSetSwitch:
         text: Zrušit výměnu sady vybavení
         desc: Zrušit výměnu sady vybavení pro tuto akci.
+      summonPet:
+        text: Přivolat mazlíčka
+        desc: Přivolá vašeho mazlíčka před zahájením této akce.
+      cancelSummonPet:
+        text: Zrušit přivolání mazlíčka
+        desc: Zruší přivolání mazlíčka pro tuto akci.
   rumors:
     phrases:
       unlockedWalkpediaEntries: Odemčené položky Walkpedie
@@ -1107,3 +1126,12 @@ singulars:
     phrases:
       downloadingAssets: Stahování dat...
       downloadedFileCount: Staženo <c i=0>{current}</c> z <c i=1>{total}</c> souborů
+  currencies:
+    phrases:
+      currencies: Měny
+      goldCoins: Zlaté mince
+    info:
+      noCurrencies: Momentálně nemáte žádné měny. Můžete je získat z <c>cechů</c>,
+        <c>Tajemného obchodníka</c> a z dalších <c>speciálních zdrojů</c>.
+      thereAreNoPaidCurrencies: Herní měny <c>nebudou nikdy</c> k zakoupení <c>za
+        skutečné peníze</c>.
