@@ -140,6 +140,10 @@ maps:
         'special': Speciální
         'tool': Nástroje
         'container': Truhly
+        "egg": Vejce mazlíčka
+        "currency": Měny
+        "quest": Předměty úkolu
+        "artifact": Artefakty
   locales:
     grammaticalGender:
       'masculine': Pánské
@@ -169,6 +173,14 @@ maps:
       'passive': Pasivní
       'consumable': Spotřební materiál
       'emergency': Nouze
+  pets:
+    stages:
+      "egg": Vejce
+      "adult": Dospělý
+  mysteriousMerchant:
+    chestTypes:
+      "regional": Truhly frakcí
+      "guild": Cechové truhly
 plurals:
   achievements:
     phrases:
@@ -1112,6 +1124,8 @@ singulars:
       startedNewActivity: Zahájena aktivita <object id="{activity}"/> v <object id="{location}"/>
       startedActivityNoLocation: Zahájena aktivita <object id="{activity}"/>
       actionCancelled: Akce zrušena
+      switchedToPet: Přivolán <playerPet id="{pet}"/>
+      petDoesNotExist: Mazlíček již neexistuje, nelze ho přivolat.
   announcements:
     phrases:
       new: Nové
@@ -1135,3 +1149,83 @@ singulars:
         <c>Tajemného obchodníka</c> a z dalších <c>speciálních zdrojů</c>.
       thereAreNoPaidCurrencies: Herní měny <c>nebudou nikdy</c> k zakoupení <c>za
         skutečné peníze</c>.
+  pets:
+    phrases:
+      currentLevelProgress: Aktuální postup úrovně
+      pets: Mazlíčci
+      requirementsToHatchNotMet: <c>{name}</c> se nemůže líhnout
+      openHatching: Otevřít líhnutí
+      claimPet: Vyzvednout mazlíčka
+      noEggIsHatching: Žádné vajíčko se momentálně nelíhne. Vyberte vajíčko pro zahájení
+        <c>líhnutí</c>!
+      unlocked: Odemčené
+      xpToMaxLevel: XP na maximální úroveň
+      hasHatched: <c>{name}</c> se vylíhlo a nyní je <petStage id="{stage}"/>!
+      noPetsFound: Nebyla nalezena žádní mazlíčci odpovídající vašemu vyhledávání.
+      hatching: Líhnutí
+      petEggs: Vejce mazlíčka
+      chooseEgg: Vybrat vejce
+      noPetSummoned: Momentálně není přivolán žádný mazlíček. <c>Přivolejte mazlíčka</c>,
+        aby vás sledoval a udělil vám své atributy a schopnosti!
+      currentlyHatching: Právě se líhne
+      summonedPet: Přivolaný mazlíček
+      level: Úroveň. <c>{level}</c>
+      canHatch: Může se líhnout
+      canEvolve: Může růst
+      summonPet: Přivolat mazlíčka
+      changePet: Změnit mazlíčka
+      dismissPet: Propustit mazlíčka
+      abilities: Schopnosti
+      unlockedAt: Odemčené v
+      evolve: Růst
+      attributes: Atributy
+      maxLevel: Maximální úroveň
+      requirementsToGainXPNotMet: <c>{name}</c> nemůže získat XP
+      requirementsToGainXPNeeded: 'Aby <c>{name}</c> získal XP, musí být splněno následující:'
+      requirementsToHatchNeeded: 'Pro vylíhnutí <c>{name}</c> musí být splněno následující:'
+      pet: Mazlíček
+      egg: Vejce
+      noEggSelected: Není vybráno žádné vejce
+      noPetSelected: Není vybrán žádný mazlíček
+      openPets: Otevřít mazlíčky
+      destroy: Zničit
+      totalXp: Celkové XP
+      currentXp: Aktuální XP
+      xpToNextLevel: XP na další úroveň
+      maxLevelProgress: Maximální postup úrovně
+      hatchedAt: Vylíhnuto v
+      nextLevel: Další úroveň
+      xpToHatch: XP k vylíhnutí
+      hatchingProgress: Postup líhnutí
+      isHatching: <c>{name}</c> se líhne!
+      isAdvancing: <c>{name}</c> roste!
+      hasEvolved: <c>{name}</c> vyrostl a nyní je <petStage id="{stage}"/>!
+      noPets: Nemáte žádné mazlíčky. Můžete je získat nalezením vajíček a jejich vylíhnutím.
+      noEggsFound: Nenalezena žádná vejce odpovídající vašemu vyhledávání.
+  mysteriousMerchant:
+    dialogue:
+      greeting: Rád tě vidím, <player />! Mám pár <c>vzácných předmětů</c> a <c>služeb</c>,
+        které by tě mohly zajímat. Viděl jsem tvé dobrodružství napříč Arénem a musím
+        říct, že máš docela talent na průzkum. Co kdybychom udělali <c>malou výměnu</c>?
+      chestChosen: Aha, takže chcete vyměnit předměty z <object id="{chest}"/>. Výborná
+        volba! Dejte mi teď vědět, jestli chcete vyměnit nějaké předměty ze své <c>banky</c>
+        nebo <c>batohu</c>. Nebo jestli byste si chtěli něco koupit za své <c>žetony
+        truhel</c>!
+      tradeChestItems: Mohu vyměnit vaši <c>kořist z truhel</c> za nějaké <c>žetony
+        truhel</c>. A za nějaké žetony s vámi mohu vyměnit předměty, které jste si
+        z těchto truhel možná přáli získat. Za <c>rozumnou cenu</c>, samozřejmě!
+      chooseChest: Moudrá volba! Z které truhly byste chtěli <c>obchodovat s předměty</c>?
+    phrases:
+      trade: Vyměnit
+      sellFromInventory: Prodat z batohu
+      sellFromBank: Prodat z banky
+      buyWithChips: Koupit za žetony
+      ownedCurrency: Vlastněná měna
+      sellingPrice: '{rarity} prodejní cena'
+      buyingPrice: '{rarity} nákupní cena'
+      totalSellingPrice: Celkem za prodej <c>{amount}</c> x položek
+      totalBuyingPrice: Celkem za nákup <c>{amount}</c> x položek
+      sell: Prodat
+      buy: Koupit
+      buyItems: Koupit položky
+      sellItems: Prodat položky
