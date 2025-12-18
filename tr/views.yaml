@@ -58,6 +58,10 @@ maps:
         'special': Özel
         'tool': Aletler
         'cosmetic': Kozmetikler
+        "egg": Evcil hayvan yumurtaları
+        "quest": Görev eşyaları
+        "artifact": Eserler
+        "currency": Paralar
   settings:
     boolSettings:
       'showRecipesServicesAreMet': Hizmet gereksinimleri karşılanıyor
@@ -173,6 +177,11 @@ maps:
       "egg": Yumurta
       "juvenile": Yavru
       "adult": Erişkin
+  mysteriousMerchant:
+    chestTypes:
+      "skilling": Beceri sandıkları
+      "regional": Bölge sandıkları
+      "guild": Lonca sandıkları
 plurals:
   achievements:
     phrases:
@@ -1193,6 +1202,14 @@ singulars:
       hasEvolved: <c>{name}</c> büyüdü ve artık bir <petStage id="{stage}"/>!
       noPets: Hiçbir evcil hayvanın bulunmuyor. Evcil hayvan yumurtaları bulup onları
         çatlatarak evcil hayvan edinebilirsin.
+      claimedAt: 'Sahiplenme tarihi:'
+      hatchedAt: 'Doğum yeri:'
+      xpToHatch: Çatlamaya kalan TP
+      hatchingProgress: Kuluçka ilerlemesi
+      ownedFor: 'Sahiplik zamanı:'
+      noEggs: Sahiplendiğin evcil hayvan yumurtası bulunmuyor.
+      noEggsFound: Aramanla eşleşen yumurta bulunamadı.
+      noPetsFound: Aramanla eşleşen evcil hayvan bulunamadı.
   currencies:
     phrases:
       currencies: Paralar
@@ -1212,3 +1229,26 @@ singulars:
         <c>sandık markası</c> verebilirim. Bu birkaç marka karşılığında da o sandıklarda
         bulmayı ümit etmiş olduğun eşyaları takas edebilirim. <c>Makul bir oranla</c>,
         tabii ki de!
+      chooseChest: Akıllıca bir seçim! <c>Hangi sandığın</c> eşyalarını takas etmek
+        istersin?
+      chestChosen: Demek <object id="{chest}"/> eşyalarını takas etmek istiyorsun.
+        Mükemmel seçim! Şimdi söyle bakalım, <c>bankandaki</c> eşyaları mı yoksa <c>envanterindeki</c>
+        eşyaları mı takas etmek istersin. Yoksa <c>sandık markalarınla</c> bir şeyler
+        mi almayı düşünüyorsun?
+    phrases:
+      totalSellingPrice: <c>{amount}</c> eşyanın toplam satım bedeli
+      tradeChestItems: Sandık eşyalarını takas et
+      trade: Takas
+      tradeChestChosen: Sandık eşyalarını takas et
+      tradingChestItem: Sandık eşyası takası yapılıyor
+      sellFromInventory: Envanterden sat
+      sellFromBank: Bankadan sat
+      buyWithChips: Markayla satın al
+      ownedCurrency: Mevcut para
+      sellingPrice: '{rarity} satış ücreti'
+      buyingPrice: '{rarity} alış ücreti'
+      totalBuyingPrice: <c>{amount}</c> eşyanın toplam alım bedeli
+      sell: Sat
+      buy: Al
+      buyItems: Eşya satın al
+      sellItems: Eşya sat
