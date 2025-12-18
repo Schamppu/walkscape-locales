@@ -35,8 +35,8 @@ singulars:
     text: Habe alle Skills mindestens auf Level <numberProgress current="{current}"
       max="{max}" />.
   levelUpSkills:
-    text: Habe ein Fähigkeitslevel von <numberProgress current="{current}" max="{max}"
-      />.
+    text: Steigere deine Fertigkeiten <numberProgress current="{current}" max="{max}"
+      /> Mal.
   overencumbered:
     text: Sei über dem Inventarlimit (überladen).
   exploreRegion:
@@ -73,6 +73,11 @@ singulars:
       id="activity-cross-country_skiing_(intermediate)-42788047-6cc3-4711-88be-999e9504fc2a"
       alwaysShow="true" /> Aktivität <numberProgress current="{current}" max="{max}"
       /> mal.
+    wreckDiving: Schließe die <object id="activity-wreck_diving-12e980cd-058a-42c4-8358-ba7afe1c319c"
+      alwaysShow="true" /> Aktivität <numberProgress current="{current}" max="{max}"
+      /> Male ab.
+    wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true"
+      />.
   factionReputations:
     jarvoniaReputation: Besitze <numberProgress current="{current}" max="{max}" />
       <realm realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db" /> Fraktionsruf.
@@ -135,3 +140,29 @@ singulars:
   keywordWithLevelEquipped:
     text: Habe <object id="{obj}" /> ausgerüstet, das mindestens <skill skill="{skill}"/>-Stufe
       <numberProgress current="{current}" max="{max}" /> erfordert.
+  totalSkillLevel:
+    text: Besitze eine Gesamtlevel von <numberProgress current="{current}" max="{max}"
+      />.
+  petWithKeyword:
+    textDistinct: Besitze einzigartige <object id="{obj}" />-Haustiere. <numberProgress
+      current="{current}" max="{max}" />.
+    text: Besitze <object id="{obj}" />-Haustiere. <numberProgress current="{current}"
+      max="{max}" />.
+  itemsGained:
+    text: Erlange <object id="{obj}" />. <numberProgress current="{current}" max="{max}"
+      />.
+  abilityAvailable:
+    text: Während die Fähigkeit <object id="{obj}" /> verfügbar ist.
+  hasPet:
+    text: Besitze ein <object id="{obj}" /> Haustier.
+  petAmount:
+    text: Besitze <numberProgress current="{current}" max="{max}" /> Haustiere.
+  petTotalLevels:
+    text: Besitze insgesamt <numberProgress current="{current}" max="{max}" /> Haustierlevel
+      über alle Haustiere hinweg.
+  petHighestLevel:
+    text: Besitze ein Haustier mit mindestens Level <numberProgress current="{current}"
+      max="{max}" />.
+  itemsWithKeywordCrafted:
+    text: Habe <object id="{obj}" />-Gegenstände hergestellt. <numberProgress current="{current}"
+      max="{max}" />.

@@ -163,6 +163,10 @@ singulars:
       name: Zdroj světla
       requirement: Vyžaduje vybavený <object id="lightSource" />.
       requirementLevel: Vyžaduje, aby uživatel byl vybaven <keywordRequirements />.
+    heatResist:
+      requirement: Vyžaduje něco <object id="heatResist" />.
+      name: Odolné vůči teplu
+      requirementLevel: Vyžaduje, aby uživatel měl něco <keywordRequirements /> vybaveno.
   materials:
     bar:
       name: Cihla
@@ -260,6 +264,11 @@ singulars:
       name: Spektrální
       requirementLevel: Vyžaduje něco spektrálního, co má alespoň <keywordRequirements
         /> ve svých požadavcích.
+    cursed:
+      requirementLevel: Vyžaduje něco prokletého, co má alespoň <keywordRequirements
+        /> ve svých požadavcích.
+      name: Prokletý
+      requirement: Vyžaduje něco<object id="cursed" />.
   tools:
     carpentryTool:
       name: Tesařský nástroj
@@ -690,3 +699,14 @@ singulars:
       requirementLevel: <PLACEHOLDER>
       requirement: <PLACEHOLDER>
       name: Poušť
+  eggs:
+    egg:
+      name: Vejce
+      requirementLevel: Vyžaduje vejce, které má v požadavcích alespoň <keywordRequirements
+        />.
+      requirement: Vyžaduje <object id="egg" />.
+    petEgg:
+      name: Vejce mazlíčka
+      requirement: Vyžaduje <object id="pet_egg" />.
+      requirementLevel: Vyžaduje vejce mazlíčka, které má alespoň <keywordRequirements
+        /> ve svých požadavcích.

@@ -285,6 +285,10 @@ singulars:
         text: Du kannst mehrere Reiseaktionen in die Warteschlange stellen, aber nur
           eine Aktivität. Bitte schließe die aktuelle Aktivität ab oder storniere
           sie, bevor du eine weitere hinzufügst.
+      mmNotAtSameLocation:
+        title: Kann nicht mit dem mysteriösen Händler handeln
+        text: Du kannst im Moment nicht mit dem mysteriösen Händler handeln. Stelle
+          sicher, dass du dich am richtigen Ort befindest.
   confirmations:
     changingStepSource:
       text: Das Ändern deiner Schrittquelle kann dazu führen, dass nicht synchronisierte
@@ -329,3 +333,30 @@ singulars:
         möchtest? Du kannst diese Funktion später in den Einstellungen wieder aktivieren.
         Diese Einstellung richtet sich an Spieler, die spezialisierte Charaktere erstellen
         wollen, die keine Agilitäts-XP erhalten.
+    claimPet:
+      title: Haustier beanspruchen?
+      text: Du bist dabei, ein Haustier zu beanspruchen. Sobald das Haustier beansprucht
+        wurde, wird es an deinen Charakter gebunden und kann nicht gehandelt werden.
+        Bist du sicher, dass du dieses Haustier beanspruchen möchtest?
+    retirePet:
+      title: Haustier in Ruhestand schicken?
+      text: Du bist dabei, dein Haustier in Ruhestand zu schicken. Wenn du ein Haustier
+        in Ruhestand schickst, wird es dauerhaft von dir entfernt. Bist du sicher,
+        dass du dieses Haustier in Ruhestand schicken möchtest?
+    destroyEgg:
+      title: Ei zerstören?
+      text: Du bist dabei, ein Ei zu zerstören. Wenn du ein Ei zerstörst, wird es
+        dauerhaft von dir entfernt. Bist du sicher, dass du dieses Ei zerstören möchtest?
+  validators:
+    textField:
+      swearWordsNotAllowed: Unangemessene Sprache ist nicht erlaubt.
+      maxTextLength: Maximallänge ist {max} Zeichen.
+      minTextLength: Minimallänge ist {max} Zeichen.
+      noConsecutiveSpaces: Aufeinanderfolgende Leerzeichen sind nicht erlaubt.
+      noLeadingTrailingSpaces: Führende oder abschließende Leerzeichen sind nicht
+        erlaubt.
+      containsSpecialCharacters: Enthält nicht erlaubte Sonderzeichen.
+      emojisNotAllowed: Emojis sind nicht erlaubt.
+      numbersNotAllowed: Zahlen sind nicht erlaubt.
+      specialCharactersNotAllowed: Sonderzeichen sind nicht erlaubt.
+      spacesNotAllowed: Leerzeichen sind nicht erlaubt.

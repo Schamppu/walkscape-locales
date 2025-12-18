@@ -3,46 +3,53 @@ singulars:
     placeholder: 'Placeholder'
   items:
     gearTypes:
-      agility: 'Utensílio de agilidade'
-      back: 'Voltar'
+      agility: 'Item de agilidade'
+      back: 'Costas'
       cape: 'Capa'
-      chest: 'Baú'
+      chest: 'Tronco'
       cooking: 'Utensílio de cozinha'
-      feet: 'Pé'
-      fishing: 'Utensílio de pesca'
-      foraging: 'Utensílio de forrageamento'
+      feet: 'Pés'
+      fishing: 'Ferramenta de pesca'
+      foraging: 'Ferramenta de recoleção'
       head: 'Cabeça'
       legs: 'Pernas'
-      mining: 'Utensílio de mineração'
+      mining: 'Ferramenta de mineração'
       neck: 'Pescoço'
       hands: 'Mãos'
-      ring: 'Anél'
+      ring: 'Anel'
       primary: 'Primário'
       secondary: 'Secundário'
-      woodcutting: 'Utensílio de corte de madeira'
+      woodcutting: 'Ferramenta de corte'
       tools: 'Ferramentas'
+      toolNumber: Ferramenta{number}
     itemTypes:
       material: 'Material'
-      crafted: 'Feito'
-      loot: 'Saque'
+      crafted: 'Produzido'
+      loot: 'Espólio'
       consumable: 'Consumível'
-      container: 'Contêiner'
+      container: 'Recipiente'
       quest: 'Missão'
       collectible: 'Colecionável'
       other: 'Outro'
+      petEgg: Ovo de mascote
+      currency: Moeda
     itemTags:
-      fine: 'Ótimo'
+      fine: 'Refinado'
+      rareEgg: Raro
+      normal: Comum
   requirements:
     skills:
-      level: 'Necessita  de nível <skill skill="{skill}" level="{level}"" isRequirement="true"/>.'
+      level: 'Necessita de nível <skill skill="{skill}" level="{level}"" isRequirement="true"/>.'
   intro:
-    welcome: 'Bem-vindo a Arenum, estranho. Parece que você apareceu logo na saída
-      de <hl>Kallaheim</hl>, uma grande cidade no norte.'
-    whereAreYouFrom: 'Posso perguntar de onde você é?'
+    welcome: 'Bem-vindo a Arenum, forasteiro. Parece que surgiste nos arredores de
+      <hl>Kallaheim</hl>, uma grande cidade no norte.'
+    whereAreYouFrom: 'Desculpa a pergunta mas, quem és tu?'
   commonPhrases:
     noActivity: 'Sem atividade.'
     allSkills: 'Todas as habilidades'
-    lookingForInternet: 'Procurando por internet...'
+    lookingForInternet: 'A ligar ao servidor de WalkScape...'
+    loadingSteps: A carregar os teus passos...
+    connectingToServer: A conectar ao servidor...
 maps:
   realms:
     "painfulislands": 'Ilhas das Dores'
@@ -58,42 +65,41 @@ maps:
   realmDescriptions:
     "ewerethien": 'Ewerethien'
     "jarvonia": '\t\t Jarvonia, <c>uma terra de gelo e escuridão</c>, governada por
-      uma poderosa irmandade religiosa, é um reino independente de pessoas resistentes,
-      unidas por sua <c>fé</c> inabalável e <c>determinação feroz</c> para sobreviver.\n\n\t\t
-      Apesar dos invernos rigorosos e do isolamento, eles encontram força e proteção
-      por meio de sua religião, seus <c>corações queiman intensamente contra o frio</c>.'
+      uma poderosa irmandade religiosa, é um reino independente de gente resistente,
+      unida pela sua <c>fé</c> inabalável e <c>determinação feroz</c> em sobreviver.\n\n\t\t
+      Apesar dos invernos rigorosos e do isolamento, encontram força e proteção na
+      sua religião, com os seus <c>corações a arder intensamente contra o frio</c>.'
     "gdte": '\t\t O Grão-Ducado de Trellin-Erdwise, dividido <c>ao enfrentar uma crise
-      atual</c>, é uma terra de diversidade de <c>belezas</c> naturais e <c>desafios</c>.\n\n\t\t
-      Os pântanos de Trellin e os portos costeiros em Erdwise são fontes de beleza
-      e perigo. O povo do Grão-Ducado é definido por seu <c>orgulho e ganância</c>.'
+      atual</c>, é uma terra de grande <c>beleza</c> natural e <c>desafios</c>.\n\n\t\t
+      Os pântanos de Trellin e os portos costeiros em Erdwise são fontes tanto de
+      beleza como perigo. O povo do Grão-Ducado é definido pelo seu <c>orgulho e ganância</c>.'
     "wallisia": '\t\t Wallisia, uma terra de abundância e poder. <c>A Imperatriz</c>,
       descendente de um grande guerreiro, comanda um exército que <c>conquistou o
-      continente</c>, deixando apenas Jarvonia intocada.\n\n\t\t As pastagens verdes
-      são <c>o coração de todo o continente</c>, fornecendo colheitas abundantes,
-      bem como recursos que abastecem as capacidades industriais e militares <c>do
-      império</c>. O império ostenta a maior população do continente, e o povo tem
-      <c>orgulho de sua força e poder</c>.'
+      continente</c>, deixando apenas Jarvonia intocada.\n\n\t\t As pradarias verdes
+      são <c>o coração de todo o continente</c>, fornecendo colheitas abundantes e
+      recursos que alimentam as capacidades industriais e militares <c>do império</c>.
+      O império orgulha-se de ter a maior população do continente, e o povo tem <c>orgulho
+      da sua força e poder</c>.'
     "galeforge": '\t\t Galeforge é uma cidade de <c>inovação e progresso</c>, conquistada
       pelo poderoso Império de Wallisia. Aninhada entre Wallisia e <c>o arquipélago</c>,
       é um lugar onde a tecnologia e a indústria florescem.\n\n\t\t O povo de Galeforge
-      é <c>ambicioso e motivado</c>, constantemente ultrapassando os limites do que
-      é possível. A cidade é uma metrópole movimentada, <c>onde as fábricas fervilham
-      de atividade</c> e as ruas são repletas de comerciantes que vendem as últimas
-      inovações.'
+      é <c>ambicioso e empenhado</c>, testando constantemente os limites do possível.
+      A cidade é uma metrópole movimentada, <c>onde as fábricas ecoam de atividade</c>
+      e as ruas são repletas de mercadores que vendem as últimas inovações.'
     "wrentmark": '\t\t Wrentmark é <c>um reino forjado pelo fogo</c>, onde o sol escaldante
-      bate nas <c>areias do deserto</c>. O povo de Wrentmark é um <c>grupo orgulhoso
-      e resistente</c>, que prosperou neste ambiente hostil por eras.\n\n\t\t Wrentmark
-      é uma terra de riquezas incalculáveis, onde <c>gemas e minerais preciosos</c>
-      são extraídos da terra e comercializados por toda a terra. O povo de Wrentmark
-      é <c>comerciantes experientes</c>, suas habilidades aprimoradas por séculos
-      de comércio.'
+      bate nas <c>areias do deserto</c>. O povo de Wrentmark é <c>orgulhoso e resistente</c>,
+      tendo prosperado neste ambiente hostil ao longo de eras.\n\n\t\t Wrentmark é
+      uma terra de riquezas incalculáveis, onde <c>gemas e minerais preciosos</c>
+      são extraídos da terra e comercializados por todo o mundo. Os habitantes de
+      Wrentmark são <c>mestres do comércio</c>, com perícia moldada por séculos de
+      mercancia.'
     "braemercia": 'Braemercia'
     "ridraddak": 'Rid Raddak'
     "painfulislands": 'Ilhas da Dor'
     "ethereal": 'Etéreo'
   items:
     consumableTypes:
-      "food": 'Alimento'
+      "food": 'Comida'
       "potion": 'Poção'
     qualities:
       "0": 'Normal'
@@ -109,27 +115,29 @@ maps:
       "3": 'Épico'
       "4": 'Lendário'
       "5": 'Etéreo'
+    currencyTypes:
+      'chestChip': Fichas de baú
+      'guildToken': Emblemas de Guilda
   realmMottos:
-    "jarvonia": 'Através do frio, nossos corações queimam intensamente'
-    "gdte": 'Preso pelas marés e pelos juncos'
-    "wallisia": 'Onde as plantações crescem, nós também crescemos'
-    "galeforge": 'Forje o futuro e não tema nada'
-    "wrentmark": 'Nosso ouro brilha mais forte que o sol'
+    "jarvonia": 'Pelo frio, os nossos corações ardem com fulgor'
+    "gdte": 'Unidos pelas marés e pelo caniço'
+    "wallisia": 'Onde a colheita cresce, nós prosperamos'
+    "galeforge": 'Molda o futuro e não tenhas medo de nada'
+    "wrentmark": 'O nosso ouro brilha mais que o próprio sol'
     "ewerethien": 'Ewerethien'
     "braemercia": 'Braemercia'
     "ridraddak": 'Rid Raddak'
     "painfulislands": 'Ilhas da Dor'
     "ethereal": 'Etéreo'
   raceDescriptions:
-    "human": '\t\t Na vasta e encantada extensão de <c>Arenum</c>, os humanos reivindicaram
-      seu domínio dentro do <c>Continente Ocidental</c>. Essas terras formidáveis,
-      cobertas por <c>selvas selvagens</c> e <c>paisagens majestosas</c>, tornaram-se
-      o coração da civilização humana.\n\n\t\t No entanto, abaixo da superfície de
-      beleza e prosperidade, <c>uma corrente tempestuosa flui</c>. O Continente Ocidental
-      testemunhou uma saga implacável de <c>lutas</c> e <c>conflitos</c>, enquanto
-      os humanos se envolveram em batalhas perpétuas por domínio e poder. \n\n\t\t
-      Rivalidades e feudos, antigos e novos, <c>lançaram sombras sobre o Continente
-      Ocidental</c>.'
+    "human": '\t\t Na vasta e encantada extensão de <c>Arenum</c>, os humanos estabeleceram
+      o seu domínio no <c>Continente Ocidental</c>. Essas terras formidáveis, envoltas
+      em <c>natureza selvagens</c> e <c>paisagens majestosas</c>, tornaram-se o berço
+      da civilização humana.\n\n\t\t Contudo, sob a superfície de beleza e prosperidade,
+      <c> flui uma corrente tempestuosa</c>. O Continente Ocidental testemunhou uma
+      saga implacável de <c>discórdia</c> e <c>conflito</c>, com os humanos envolvidos
+      em batalhas perpétuas pelo domínio e pelo poder. \n\n\t\t Rivalidades e feudos,
+      tanto antigos como novos, <c>lançaram sombras sobre o Continente Ocidental</c>.'
 plurals:
   items:
     money:
