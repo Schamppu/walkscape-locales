@@ -37,6 +37,7 @@ maps:
   skillTypes:
     'artisan': Artigianato
     'gathering': Raccolta
+    "utility": Utilità
   character:
     stepsTime:
       "daily": Passi giornalieri
@@ -260,7 +261,7 @@ singulars:
       maxWorkEfficiency: Efficienza lavorativa massima
       fromOverLevels: Livello eccessivo <numberProgress current="{current}" max="{max}"
         />
-      agilityBonus: Livello di Agilità <c>{livello}</c>
+      agilityBonus: Livello di Agilità <c>{level}</c>
       fromGear: Attrezzatura equipaggiata
       fromCollectibles: Collezionabili
       fromConsumables: Consumabili
@@ -269,10 +270,12 @@ singulars:
       fromServices: Bonus servizio
       baseEfficiency: Efficienza base
       fromOverencumbered: Sovraccarico
+      fromPets: Animali domestici
     rewards:
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} Collezionabili</c> che
         possono essere trovati
       experience: <bp /><c>{xp} </c><object id="{skill}"/> esperienza
+      reputation: <bp /><object id="{faction}" /> reputazione <c>+{amount}</c>
     options:
       completeUntilActions: Completa per una serie di azioni
       numberOfActions: Numero di azioni
@@ -296,6 +299,8 @@ singulars:
       travelingTo: Da <object id="{from}"/> a <object id="{to}"/>
       inputNotMet: Requisiti di input non soddisfatti
       forXActions: Eseguire <c>{count}</c> azioni
+      petNotFound: Animale domestico selezionato non trovato, l'hai ritirato?
+      summoningPet: Evoca animale domestico <playerPet id="{pet}" />
     options:
       switchGearSet:
         text: Passare al set di equipaggiamenti
@@ -315,6 +320,12 @@ singulars:
       cancelGearSetSwitch:
         text: Cancella il cambio di set
         desc: Annulla il set selezionato per questa azione.
+      summonPet:
+        text: Evoca animale domestico
+        desc: Evoca il tuo animale domestico prima di iniziare questa azione.
+      cancelSummonPet:
+        text: Annulla evocazione animale domestico
+        desc: Annulla l'evocazione del famiglio per questa azione.
     suggestedOptions:
       startActivity: Attività
       startCrafting: Creazione
@@ -610,6 +621,8 @@ singulars:
       restockIn: 'Riassortimento in: '
       trade: COMMERCIO
       buying: Acquisto di {amount}
+      selling: Vendita {amount}
+      total: Totale
   gear:
     phrases:
       permanentModifiers: Modificatori permanenti
@@ -621,6 +634,16 @@ singulars:
       noPermanentModifiers: Nessun modificatore permanente.
       noItemEquipped: Nessun oggetto equipaggiato
       noItemSelected: Nessun elemento selezionato
+      toolSlots: Slot per utensili
+      gearSlots: Slot per equipaggiamento
+    info:
+      gearInfo: Equipaggia l'equipaggiamento per migliorare le caratteristiche del
+        tuo personaggio. Puoi toccare uno qualsiasi degli slot dell'equipaggiamento
+        qui sotto e vedere quali oggetti puoi equipaggiare in quello slot dal tuo
+        inventario.
+      toolInfo: Equipaggia gli strumenti per migliorare le caratteristiche del tuo
+        personaggio. All'inizio hai a disposizione tre slot per gli strumenti. Puoi
+        sbloccare altri slot <c>facendo salire di livello il tuo personaggio</c>.
   tools:
     phrases:
       lockedToolSlot: Slot strumento bloccato fino al <c>livello del personaggio {level}</c>.
@@ -631,3 +654,23 @@ singulars:
       openChest: Aprire
       noItems: Non ci sono tesori da aprire. Puoi ottenere forzieri da varie attività.
       openAll: Apri tutto
+  currencies:
+    info:
+      noCurrencies: Al momento non hai valute. Puoi guadagnare valute dalle <c>gilde</c>,
+        dal <c>Mercante Misterioso</c> e da altre <c>fonti speciali</c>.
+      thereAreNoPaidCurrencies: Le valute di gioco <c>non potranno mai</c> essere
+        acquistate <c>con denaro reale</c>.
+    phrases:
+      currencies: Valute
+      goldCoins: Monete d'oro
+  characterCreation:
+    info:
+      rememberSwipe: Ricorda che puoi tornare indietro per modificare le opzioni scelte
+        in qualsiasi momento durante la creazione del personaggio.
+    phrases:
+      bodyTypeA: A
+      bodyType: Tipo di corporatura
+      race: Razza
+      chooseABodyType: Scegli un tipo di corporatura
+      bodyTypeB: B
+      characterName: Nome del personaggio
