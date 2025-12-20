@@ -100,6 +100,20 @@ singulars:
         è pensata per chi desidera creare personaggi specializzati che non acquisiscono
         esperienza di agilità.
       title: Disabilitare il guadagno di XP agilità dal viaggio?
+    destroyEgg:
+      text: Stai per distruggere un uovo. Distruggendo un uovo, lo eliminerai definitivamente.
+        Sei sicuro di voler distruggere questo uovo?
+      title: Distruggere l'uovo?
+    claimPet:
+      title: Richiedere un animale domestico?
+      text: Stai per richiedere un animale domestico. Una volta richiesto, l'animale
+        domestico sarà legato a te e non potrà essere scambiato. Sei sicuro di voler
+        richiedere questo animale domestico?
+    retirePet:
+      title: Eliminare un animale domestico?
+      text: Stai per eliminare il tuo animale domestico. Ritirare un animale domestico
+        lo rimuoverà definitivamente dalla tua collezione. Sei sicuro di voler ritirare
+        questo animale domestico?
   popups:
     idleSteps:
       whileYouWereAway: Mentre eri via ...
@@ -319,3 +333,19 @@ singulars:
       equipGearFailed:
         text: Impossibile equipaggiare l'oggetto. Riprova.
         title: Impossibile equipaggiare l'oggetto
+      mmNotAtSameLocation:
+        text: Al momento non è possibile commerciare con il Mercante Misterioso. Assicurati
+          di trovarti nel luogo giusto.
+        title: Impossibile commerciare con il Mercante Misterioso
+  validators:
+    textField:
+      maxTextLength: La lunghezza massima è di {max} caratteri.
+      minTextLength: La lunghezza minima è di {min} caratteri.
+      noConsecutiveSpaces: Non sono ammessi spazi consecutivi.
+      noLeadingTrailingSpaces: Non sono ammessi spazi iniziali o finali.
+      containsSpecialCharacters: Contiene caratteri speciali non consentiti.
+      emojisNotAllowed: Gli emoji non sono consentiti.
+      numbersNotAllowed: I numeri non sono ammessi.
+      specialCharactersNotAllowed: Non sono ammessi caratteri speciali.
+      spacesNotAllowed: Non sono ammessi spazi.
+      swearWordsNotAllowed: Non è consentito l'uso di un linguaggio inappropriato.
