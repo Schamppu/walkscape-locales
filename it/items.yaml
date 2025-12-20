@@ -283,7 +283,7 @@ singulars:
           name: Canna da pesca in salice
         coralFishingSpear:
           name: Lancia da pesca per coralli
-          desc: Questa lancia da pesca è realizzata con coralli e idrilium. Ha diverse
+          desc: Questa lancia da pesca è realizzata con coralli e idrillio. Ha diverse
             punte affilate per facilitare la cattura dei pesci.
         tidalLure:
           name: Esca di marea
@@ -293,8 +293,8 @@ singulars:
             forza dell'ectoplasma così da creare un nuovo potere nel modo di pescare.
           name: Canna da pesca spettrale
         elderhideFishingNet:
-          name: Rete da pesca di pelle di antica
-          desc: Una rete da pesca creata con durevole pelle antica
+          name: Rete da pesca di pelle antica
+          desc: Una rete da pesca creata con durevole pelle antica.
         bectoFishingCagespear:
           name: Lancia da pesca spettrale
           desc: Una lunga sezione di osso dotata di una versatile punta artigliata
@@ -332,17 +332,21 @@ singulars:
           desc: Questo piccone di colore verde minaccia i minerali inferiori che lo
             circondano. Sembra arrabbiato per essere solo un piccone.
         hydriliumPickaxe:
-          name: Piccone di idrilium
-          desc: Un piccone realizzato con un raro materiale sottomarino chiamato idrilium.
+          name: Piccone di idrillio
+          desc: Un piccone realizzato con un raro materiale sottomarino chiamato idrillio.
         bectoPickaxe:
           desc: Un pezzo di osso resistente potenziato con ectoplasma per assumere
             la forma di un piccone. Dovrebbe rimuovere un pezzo considerevole di roccia
             ad ogni colpo.
           name: Piccone spettrale
         hydriliumMagnet:
-          name: Magnete di idrilium
-          desc: Un magnete da minatore infuso con idrilium.
+          name: Magnete di idrillio
+          desc: Un magnete da minatore infuso con idrillio.
         petrifiumHatchet:
+          name: Piccone di violite
+          desc: Questo piccone di violite ha raggiunto uno stato che solo altri strumenti
+            possono sognare. Ti permette di spaccare le rocce con precisione distruttiva.
+        violitePickaxe:
           name: Piccone di violite
           desc: Questo piccone di violite ha raggiunto uno stato che solo altri strumenti
             possono sognare. Ti permette di spaccare le rocce con precisione distruttiva.
@@ -379,20 +383,24 @@ singulars:
           desc: "Un'ascia di metallo verde adamantio: forse non è un colore molto
             creativo, ma è ottima per tagliare la legna."
         hydriliumHatchet:
-          desc: Un'ascia realizzata con un raro materiale sottomarino chiamato idrilium.
-          name: Ascia di idrilium
+          desc: Un'ascia realizzata con un raro materiale sottomarino chiamato idrillio.
+          name: Ascia di idrillio
         bectoHatchet:
           desc: Un ammasso di ossa a cui l'ectoplasma ha conferito il potere di assumere
-            la forma di un'ascia. Non sembra, dato che è trasparente, ma la sua lama
-            è piuttosto affilata.
+            la forma di un'ascia. Non sembra, dato che è piuttosto trasparente, ma
+            la sua lama è piuttosto affilata.
           name: Ascia spettrale
         hydriliumLogSplitter:
-          name: Spaccalegna di idrilium
-          desc: Uno spaccalegna rinforzato con idrilium.
+          name: Spaccalegna di idrillio
+          desc: Uno spaccalegna rinforzato con idrillio.
         petrifiumHatchet:
           name: Accetta di violite
           desc: Questa ascia di violite sembra molto pericolosa, vista la sua affilatura.
             Meglio stare attenti a non inciampare mentre la si trasporta.
+        violiteHatchet:
+          desc: Questa ascia di violite sembra molto pericolosa, vista la sua affilatura.
+            Meglio stare attenti a non inciampare mentre la si trasporta.
+          name: Ascia di violite
       foraging:
         adamantSickle:
           desc: La falce di adamantio brilla con una tonalità verdastra, garantendo
@@ -417,8 +425,8 @@ singulars:
           desc: Robusto e resistente, offre prestazioni affidabili per un foraggiamento
             esteso.
         hydriliumSickle:
-          name: Falce di idrilium
-          desc: Una falce realizzata con un raro materiale sottomarino chiamato idrilium.
+          name: Falce di idrillio
+          desc: Una falce realizzata con un raro materiale sottomarino chiamato idrillio.
         bectoSickle:
           name: Falce spettrale
           desc: Un osso rinforzato con il potere dell'ectoplasma per assumere la forma
@@ -428,6 +436,10 @@ singulars:
           name: Falce di violite
           desc: La falce di violite vanta un metallo viola molto resistente. È sorprendentemente
             leggera nonostante la sua robustezza.
+        violiteSickle:
+          desc: Questa falce di violite sfoggia il suo robusto metallo viola. Le sue
+            curve sembrano quasi formare sorrisi di gioia ad ogni taglio che effettua.
+          name: Falce di violite
       miscellaneous:
         bagOfRocks:
           name: Sacco di pietre
@@ -528,6 +540,86 @@ singulars:
         elderHide:
           name: Pelle antica
           desc: Strica di pelle di una bestia maestosa.
+        elderhideLeather:
+          name: Cuoio di pelle antica
+          desc: Materiale flessibile che è stato conciato per prevenirne il deterioramento.
+        apprenticeHandwear:
+          name: Guanti dell'apprendista
+          desc: Un guanto molto apprezzato dagli apprendisti artigiani di vari mestieri.
+        apprenticeBreeches:
+          name: Calzoni dell'apprendista
+          desc: I pantaloni sono comodi da indossare per lunghe ore e hanno comode
+            tasche per riporre tanti piccoli oggetti.
+        linenCloth:
+          desc: Un pezzo di tessuto semplice, solitamente utilizzato dai sarti alle
+            prime armi per confezionare abiti.
+          name: Tessuto di lino
+        grassknotMitts:
+          desc: Guanti in tessuto con fili d'erba intrecciati, che li rendono speciali.
+          name: Guanti Grassknot
+        tattyChaps:
+          desc: Gambali di stoffa lacera, comodi da indossare, ma il tessuto provoca
+            prurito alla pelle.
+          name: Gambali logori
+        grassknotChaps:
+          name: Gambali di Grassknot
+          desc: Gambali di lino intrecciati con erba, progettati per essere indossati
+            sopra i leggings.
+        grassknotTunic:
+          name: Tunica di Grassknot
+          desc: Una tunica migliorata con l'aggiunta di erba, una scelta insolita
+            ma sorprendentemente efficace.
+        apprenticeVest:
+          name: Gilet dell'apprendista
+          desc: Il gilet semplice lascia le braccia libere per svolgere lavori artigianali
+            che richiedono precisione.
+        tattyMitts:
+          name: Guanti logori
+          desc: Guanti di stoffa laceri, realizzati da qualcuno con abilità discutibili.
+        tattyTunic:
+          name: Tunica logora
+          desc: Tunica di stoffa lacera, spesso indossata dai contadini e da altre
+            persone povere.
+      carpentry:
+        bectoSaw:
+          name: Sega spettrale
+          desc: I raccapriccianti denti ectoplasmatici di questa sega sembrano meno
+            minacciosi rispetto ad altre seghe e, anche se commetti degli errori,
+            non sembrano mai ferirti. Eppure taglia il legno con facilità.
+        bronzeSaw:
+          name: Sega in bronzo
+          desc: Una volta hai visto una sega e hai pensato che sarebbe stata più bella
+            in bronzo.
+        tarsiliumSaw:
+          name: Sega di tarsilio
+          desc: I denti scuri simili all'ossidiana della sega sono pronti a mordere!
+      crafting:
+        bectoWrench:
+          desc: Le ganasce ectoplasmiche di questa chiave sembrano sempre avere una
+            presa perfetta su qualsiasi cosa vi venga applicata. Un po' inquietante.
+          name: Chiave inglese spettrale
+        bronzeWrench:
+          name: Chiave inglese di bronzo
+          desc: La chiave universale misura dieci, realizzata in bronzo. È quella
+            che manca sempre.
+        hydriliumWrench:
+          desc: Il materiale subacqueo è sorprendentemente ottimo per realizzare chiavi
+            inglesi artigianali.
+          name: Chiave inglese di idrillio
+      cooking:
+        bectoPan:
+          name: Padella spettrale
+          desc: Gli esperti non sono sicuri che cucinare su una superficie ectoplasmatica
+            abbia effetti collaterali, ma sicuramente crea una bella doratura, quindi
+            probabilmente ne vale la pena.
+        bronzePan:
+          name: Padella di bronzo
+          desc: Grazie al caldo tono bronzo, il cibo ha sempre un aspetto migliore
+            in questa padella.
+        jadeTippedSteelPan:
+          name: Padella in acciaio con bordo in giada
+          desc: Il manico di questa padella in acciaio è impreziosito da una gemma
+            di giada incastonata.
   looted:
     equipmentSets:
       dimensional:
@@ -731,8 +823,8 @@ singulars:
           la pioggia più torrenziale o quando si attraversa una palude insidiosa.'
         name: Pantaloni impermeabili
       rustyDivingHelm:
-        desc: Sebbene vecchio e arrugginito, questo elmo da sub sembra adatto alle
-          immersioni.
+        desc: 'Sebbene vecchio e arrugginito: questo elmo da sub sembra adatto alle
+          immersioni.'
   materials:
     carpentry:
       birchPlank:
@@ -790,6 +882,14 @@ singulars:
       elmPlank:
         name: Tavola di olmo
         desc: Una tavola di olmo, utile per la realizzazione di archi da tiro.
+      yewPlank:
+        name: Assi di tasso
+        desc: Una tavola che vanta la sua facilità di essere lavorata in vari scenari
+          pur rimanendo resistente.
+      mahoganyPlank:
+        name: Assi di mogano
+        desc: Una tavola di alta qualità che può essere utilizzata in tutti i tipi
+          di costruzioni durevoli.
     cooking:
       milk:
         desc: 'Direttamente dalla mucca, dalla capra o dal cammello. O spremuto da
@@ -876,8 +976,8 @@ singulars:
           ai suoi coloratissimi fiori.
         name: Cardo
       widowsKiss:
-        desc: 'Un pulsante bulbo rosa invita ad avvicinarsi, ma è meglio mantenere
-          le distanze.'
+        desc: 'C''è una sensazione inquietante di morbosa paura che ti circonda mentre
+          ti avvicini a questo fiore, forse è meglio mantenere le distanze.'
         name: Bacio della vedova
       woodenStick:
         desc: Un pezzo di legno appuntito. Forse puoi crearci qualcosa per aiutarti
@@ -938,6 +1038,21 @@ singulars:
       wildRice:
         name: Riso selvatico
         desc: Erba selvatica che produce un cereale sottile e scuro.
+      waterLotus:
+        desc: Un fiore di loto che galleggia sulla superficie dell'acqua. Solitamente
+          accompagnato da ninfee.
+        name: Loto d'acqua alta
+      ironweed:
+        desc: Una pianta forte e resistente, le cui proprietà la rendono molto utile
+          in diverse applicazioni.
+        name: Fildiferro
+      cattail:
+        name: Code di Gatto
+        desc: Una pianta dal fusto lungo con un grappolo all'estremità. Un gatto,
+          giusto? Probabilmente non è commestibile.
+      loverose:
+        name: Rosa canina
+        desc: Si dice che avvicini coloro che provano sentimenti forti l'uno per l'altro.
     mining:
       coal:
         desc: Modesto e senza pretese, il carbone è sempre sinonimo di energia.
@@ -1025,9 +1140,9 @@ singulars:
         desc: Un pezzo di minerale d'argento. Non prezioso come l'oro, ma brillante
           di una lucentezza tutta sua.
       crystalShards:
-        desc: Frammenti di cristallo che contengono una flebile energia. Magari è
-          il desidero di essere trasformati in qualcosa di migliore.
-        name: Cristallo frantumato
+        desc: Pezzi di cristallo che racchiudono al loro interno energie deboli. Forse
+          il desiderio di trasformarsi in qualcosa di più.
+        name: Cristallo di carbone
       adamantOre:
         name: Minerale di adamantio
         desc: Una roccia verde un po' più pesante e resistente rispetto alle altre
@@ -1046,6 +1161,10 @@ singulars:
         desc: Questo grande pezzo di roccia è impregnato di ectoplasma e irradia un'aura
           spettrale che trasmette una strana sensazione. Per lavorarlo avrai bisogno
           di una fucina maledetta.
+      violiteOre:
+        name: Violite
+        desc: Una massa minerale viola che sembra quasi impossibile credere sia reale.
+          Emana una grande forza e non è nemmeno nella sua forma definitiva.
     rawFish:
       rawCarp:
         desc: Il sapore blando della carpa si presta bene alla preparazione di diversi
@@ -1138,7 +1257,7 @@ singulars:
           la sua resistenza metallica e la sua versatilità in varie applicazioni.'
         name: Lingotto di rame
       farganiteBar:
-        desc: 'Una barra blu brillante.'
+        desc: 'Un lingotto blu brillante.'
         name: Lingotto di farganio
       ironBar:
         desc: 'Il lingotto di ferro è una testimonianza della forza del nucleo terrestre,
@@ -1161,8 +1280,8 @@ singulars:
           il 92,5% di purezza.
         name: Lingotto d'argento
       hydriliumBar:
-        desc: La barra di idrilio ha un colore verde chiaro.
-        name: Lingotto di idrilio
+        desc: Il lingotto di idrillio ha un colore verde chiaro.
+        name: Lingotto di idrilium
       metalScrap:
         desc: Alcuni scarti di metallo di bassa qualità.
         name: Rottami metallici
@@ -1177,9 +1296,13 @@ singulars:
           a perdere la sua forma.
         name: Barra di violite
       adamantBar:
-        name: Barra di adamantio
-        desc: Una barra resistente di metallo verde. Ora chiede di essere rimodellata
+        name: Lingotto di adamantio
+        desc: Un resistente lingotto di metallo verde. Ora chiede di essere rimodellata
           per continuare a crescere in forza.
+      violiteBar:
+        desc: Una lingotto di violite. Sembra quasi che si possa schiacciare, ma è
+          riluttante a perdere la sua forma.
+        name: Lingotto di violite
     woodcutting:
       birchLogs:
         desc: Lisci e pallidi, i tronchi di betulla emanano un'elegante semplicità.
@@ -1242,13 +1365,17 @@ singulars:
           loro un aspetto spettrale e proprietà uniche. Per lavorarli è necessaria
           una segheria maledetta.
         name: Tronchi di ectoplasma
+      mahoganyLogs:
+        name: Tronchi di mogano
+        desc: Tronchi provenienti da un albero stabile. Dovrebbero essere utili per
+          realizzare oggetti artigianali e costruzioni potenti.
     crafting:
       rope:
         desc: Un kit di sopravvivenza non è completo senza una corda. È essenziale
           per la realizzazione di alcuni attrezzi di base.
         name: Corda
       hydrilium:
-        name: Idrilio
+        name: Idrillio
         desc: Questo strano materiale viene prodotto combinando roccia vulcanica e
           alghe nel laboratorio delle maree.
       kelpRope:
@@ -1257,6 +1384,10 @@ singulars:
       elderhideRope:
         name: Corda di pelle antica
         desc: Una corda robusta realizzata in pelle antica.
+      ironweedTwine:
+        name: Spago di ferro
+        desc: Un fascio spesso e resistente di spago ricavato dalla pianta da cui
+          prende il nome, il fildiferro.
     hunting:
       animalMeat:
         desc: Un pezzo di carne fresca, pronto per essere cucinato, essiccato o salato.
