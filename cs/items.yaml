@@ -183,6 +183,10 @@ singulars:
         name: Fireball víno
         desc: Jasnější oranžové víno s nádechem koření a tepla. Díky ještě větší fermentaci
           a s využitím cenných ingrediencí se stalo silnějším.
+      tastyBreakfast:
+        name: Chutná snídaně
+        desc: Snídaně se vším všudy. Takové vydatné jídlo bude skvělým způsobem, jak
+          začít den, i když to už není skutečný začátek dne.
     cookedFish:
       cookedPike:
         desc: Grilovaná nebo na pánvi opečená, vařená štika nabízí lahodnou křehkost
@@ -687,7 +691,7 @@ singulars:
           desc: Tento zelený krumpáč ohrožuje méněcenné minerály kolem sebe. Na obyčejný
             krumpáč vypadá až příliš hrozivě.
         violitePickaxe:
-          name: Violite krumpáč
+          name: Fiolitový krumpáč
           desc: Tento fialový kovový krumpáč dosáhl stavu, o kterém by jiné nástroje
             mohly jen snít. Umožňuje vám rozbíjet kameny s destruktivní přesností.
       woodcutting:
@@ -725,7 +729,7 @@ singulars:
           desc: Štípačka na dřevo vyztužená hydriliem.
         bectoHatchet:
           desc: Shluk kostí s ektoplazmou, který má podobu sekery. Nevypadá to tak,
-            protože je průhledná, ale jeho čepel je docela ostrá.
+            protože je poněkud průhledný, ale jeho čepel je docela ostrá.
           name: Spektrální sekera
         petrifiumHatchet:
           desc: Tato fialová sekera vypadá velmi násilně, protože je tak ostrá. Dávejte
@@ -736,7 +740,7 @@ singulars:
           desc: Sekerka ze zeleného adamantového kovu, nemusí mít kreativní barvu,
             ale bude se hodit k vynikajícímu řezbářství.
         violiteHatchet:
-          name: Violite sekera
+          name: Fiolitová sekera
           desc: Tato fialová sekera vypadá velmi násilně, protože je tak ostrá. Dávejte
             si pozor, abyste při jejím nošení nezakopli.
       foraging:
@@ -774,8 +778,8 @@ singulars:
           desc: Fialový srp se pyšní svým silným fialovým kovem. Na dotek je překvapivě
             lehký.
         violiteSickle:
-          name: Violite srp
-          desc: Tento fialový srp se pyšní svým silným fialovým kovem. Jeho křivky
+          name: Fiolitový srp
+          desc: Tento fiolitový srp se pyšní svým silným fialovým kovem. Jeho křivky
             se s každým řezem téměř zdají být úsměvy radosti.
       hunting:
         pineBirdhouse:
@@ -1121,7 +1125,15 @@ singulars:
             způsobem skvěle pomáhá při přesné práci, která je s ním spojena, ať už
             při manipulaci s drahokamy nebo jinde.
         bronzeChisel:
-          name: ''
+          name: 'Bronzové dláto'
+          desc: Bronz a máslo z dlátářského průmyslu.
+        topazTippedChisel:
+          name: Dláto s topazovou špičkou
+          desc: Samotná hrana dláta je vyrobena z topazu, díky čemuž je velmi ostré.
+        wraithwaterFlowerNecklace:
+          name: Náhrdelník s květinou Wraithwater
+          desc: Aranžmá z ponuře vypadajících květin. Jeho nošení ve vás vyvolává
+            mírné spojení s mrtvými.
       miscellaneous:
         bagOfRocks:
           name: Pytel kamenů
@@ -1374,6 +1386,11 @@ singulars:
         toeShoes:
           desc: Boty s oddělenými prostory pro každý prst. Definice funkce nad formou.
           name: Prstové boty
+        featherBoots:
+          desc: Obvyklá mylná představa, že tyto boty neposkytují schopnost létat,
+            ale to lidem nebrání v pokusech. Vypadají velmi módně v kombinaci s péřovým
+            pláštěm.
+          name: Péřové boty
       carpentry:
         handsaw:
           name: Ruční pila
@@ -1518,6 +1535,10 @@ singulars:
         measuringSpoonsNecklace:
           name: Náhrdelník s odměrkou
           desc: Tři odměrky máte vždy k dispozici. Není vhodné do myčky nádobí.
+        spiceRackpack:
+          name: Batoh s kořením
+          desc: Rozšířený vynález wrentmarkeenů vynález - batoh, kde si můžete uvařit
+            řadu balíčků s kořením.
       crafting:
         candlehat:
           name: Svícčapka
@@ -1650,6 +1671,14 @@ singulars:
           desc: Lze zapíchnout do země a použít k podepření rybářského prutu pro udržení
             jeho polohy ve vodě. Užitečné, když vám dochází trpělivost.
           name: Odolná opěrka rybářského prutu
+        fishnetShirt:
+          desc: Síťka vypadá na tvém holém trupu úžasně. Vypadáš jako jedna hezká
+            rybička chycená v síti.
+          name: Síťovaná košile
+        fishingStringer:
+          name: Rybářský vlasec
+          desc: Tenké lano s dlouhou pevnou jehlou na konci, které se používá k propíchnutí
+            ulovených ryb. Na toto lano můžete naskládat desítky a desítky ryb.
       foraging:
         halflingsFeetSlippers:
           name: Půlčíkové prstové pantofle
@@ -1736,6 +1765,10 @@ singulars:
           name: Rukavice na sběr
           desc: Pohodlné kožené rukavice, které chrání vaše ruce před trny a dalšími
             přirozenými obrannými systémy při hledání pokladů skrytých v listí.
+        dragonflyCatchingNet:
+          name: Síť na chytání vážek
+          desc: Tato pevná síť na tyčce je větší než ty, které se používají k chytání
+            menšího hmyzu. Je tvarována pro snazší chytání rychlých a krásných vážek.
       mining:
         miningHelm:
           name: Hornická přilba
@@ -2084,7 +2117,7 @@ singulars:
           vodu.
       rustyDivingHelm:
         name: Rezavá potápěčská helma
-        desc: Ačkoli je stará a rezavá, tato potápěčská helma vypadá vhodně pro potápění.
+        desc: Ačkoli je stará a rezavá, tato potápěčská helma vypadá vhodně k potápění.
       merfolkDress:
         name: Námořnické šaty
         desc: Šaty velmi těsně obepínají vaše tělo, svírající nohy k sobě téměř v
@@ -2340,6 +2373,10 @@ singulars:
         name: Sethov bažinový kompas
         desc: Kompas vždy ukazuje do středu bažiny, což je nutnost pro každého sebeúctyhodného
           dobrodruha.
+      ghostTrapPack:
+        name: Balíček pasti na duchy
+        desc: Objemný batoh je dodáván s trubicí, která slouží k zachycení částic
+          duchů.
     supporter:
       ringOfPandemonium:
         name: Pekelný prsten
@@ -2713,8 +2750,8 @@ singulars:
           barevných květů.
       widowsKiss:
         name: Polibek vdovy
-        desc: Růžová žárovka vás vybízí k přiblížení, ale nejlepší je udržovat si
-          odstup.
+        desc: Jak se k této květině přibližujete, obklopuje vás strašidelný pocit
+          morbidní hrůzy, možná je nejlepší udržet si odstup.
       woodenStick:
         name: Dřevěná hůl
         desc: Špičatý kus dřeva. Možná bys z něj mohl/a vytvořit něco, co ti pomůže
@@ -2778,7 +2815,7 @@ singulars:
         desc: Kvetoucí rostlina známá pro svou mléčnou mízu. Motýli a housenky ji
           milují!
       cattail:
-        name: ''
+        name: 'Náletová tráva'
         desc: Dlouhostonková rostlina se svazkem na konci. Je hněda, že? To se asi
           nejí.
       waterLotus:
@@ -2787,6 +2824,7 @@ singulars:
       ironweed:
         desc: Silná a odolná rostlina, jejíž vlastnosti ji činí velmi užitečnou v
           několika aplikacích.
+        name: Nepoddajný plevel
       loverose:
         desc: Říká se, že sbližuje ty, kteří k sobě chovají silné city.
         name: Laskavá růže
@@ -2874,9 +2912,9 @@ singulars:
           kterými jste se dříve setkali. Prosí o roztavení, aby byl ještě pevnější.
         name: Adamantová ruda
       crystalShards:
-        desc: Střepy krystalu, které v sobě nesou slabou energii. Možná touží být
-          proměněny v něco víc.
-        name: Krystalové střepy
+        desc: Kousky krystalu, které nesou nějakou slabou energie v sobě. Možná touha
+          být proměněna v něco víc.
+        name: Krystalové uhlí
       silverOre:
         name: Stříbrná ruda
         desc: Kus stříbrné rudy. Není tak cenná jako zlato, ale třpytí se svým vlastním
@@ -2898,7 +2936,7 @@ singulars:
       violiteOre:
         desc: Fialová minerální hmota, u které je téměř těžké uvěřit, že je skutečná.
           Vyzařuje z ní síla a přitom ani není ve své konečné podobě.
-        name: Violite ruda
+        name: Fiolitová ruda
     rawFish:
       rawCarp:
         desc: Jemná chuť kaprů se dobře hodí k různým kulinářským úpravám. Tyto ryby
@@ -3029,7 +3067,7 @@ singulars:
         desc: Fialová kovová cihla. Nějak se zdá, jako byste ji mohli zmáčknout, ale
           zdráhá se vzdát svého tvaru.
       violiteBar:
-        name: Violite cihla
+        name: Fiolitová cihla
         desc: Fialová kovová cihla. Nějak se zdá, jako byste ji mohli zmáčknout, ale
           zdráhá se vzdát svého tvaru.
     woodcutting:
@@ -3174,6 +3212,9 @@ singulars:
       elderhideRope:
         name: Provázek z bezové kůže
         desc: Pevný kus provázku vyrobený z bezové kůže.
+      ironweedTwine:
+        name: Nepoddajný motouz
+        desc: Silný a odolný svazek provázku vyrobený z nepoddajného motouzu.
     tailoring:
       aerodynamicThread:
         desc: Vzácná příze, známá svou lehkostí a zároveň velmi pevnou vlastností.
@@ -3431,72 +3472,87 @@ singulars:
       skill:
         t1:
           cooking:
-            desc: Cenný žeton, který lze vyměnit za truhly vaření od Tajemného obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty z truhly na vaření od
+              Tajemného obchodníka.
             name: Žeton Vaření
           foraging:
-            desc: Cenný žeton, který lze vyměnit za truhly sběru od Tajemného obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty z truhly sběru od Tajemného
+              obchodníka.
             name: Žeton sběru
           hunting:
             name: Žeton lovce
-            desc: Cenný žeton, který lze vyměnit za lovecké truhly od Tajemného obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty z lovecké truhly od Tajemného
+              obchodníka.
           agility:
             name: Žeton Hbitosti
-            desc: Cenný žeton, který lze vyměnit za truhly hbitosti od Tajemného obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty z truhly hbitosti od
+              Tajemného obchodníka.
           carpentry:
             name: Žeton Tesařství
-            desc: Cenný žeton, který lze vyměnit za tesařské truhly od Tajemného obchodníka.
+            desc: Cenný žeton, který lze vyměnit za tesařské předměty z truhly od
+              Tajemného obchodníka.
           crafting:
             name: Žeton tvorby
-            desc: Cenný žeton, který lze vyměnit za truhly výroby od Tajemného obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty výroby z truhly od Tajemného
+              obchodníka.
           fishing:
             name: Žeton rybaření
-            desc: Cenný žeton, který lze vyměnit za rybářské truhly od Tajemného obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty z rybářské truhly od
+              Tajemného obchodníka.
           mining:
             name: Žeton těžby
-            desc: Cenný žeton, který lze vyměnit za těžební truhly od Tajemného obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty z těžební truhly od Tajemného
+              obchodníka.
           smithing:
-            desc: Cenný žeton, který lze vyměnit za kovářské truhly od Tajemného obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty z kovářské truhly od
+              Tajemného obchodníka.
             name: Žeton kovářství
           woodcutting:
             name: Žeton dřevorubectví
-            desc: Cenný žeton, který lze vyměnit za truhly dřevorubectví od Tajemného
-              obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty z truhly pro dřevorubectví
+              od Tajemného obchodníka.
           trinketry:
             name: Žeton klenotnictví
-            desc: Cenný žeton, který lze vyměnit za truhly klenotnictví od Tajemného
-              obchodníka.
+            desc: Cenný žeton, který lze vyměnit za předměty z truhly s klenotnictvím
+              od Tajemného obchodníka.
           tailoring:
             name: Žeton krejčovství
-            desc: Cenný žeton, který lze vyměnit za krejčovské truhly od Tajemného
-              obchodníka.
+            desc: Cenný žeton, který lze vyměnit za krejčovské předměty z truhly od
+              Tajemného obchodníka.
       region:
         jarvonia:
           name: Žeton Jarvonie
-          desc: Cenný žeton, který lze vyměnit za truhly Jarvonie od Tajemného obchodníka.
+          desc: Cenný žeton, který lze vyměnit za truhly s předměty Jarvonie od Tajemného
+            obchodníka.
         syrenthia:
           name: Žeton Syrenthie
-          desc: Cenný žeton, který lze vyměnit za truhly Syrenthie od Tajemného obchodníka.
+          desc: Cenný žeton, který lze vyměnit za truhly s předměty Syrentie od Tajemného
+            obchodníka.
         trellin:
           name: Žeton Trellin
-          desc: Cenný žeton, který lze vyměnit za truhly Trellin od Tajemného obchodníka.
+          desc: Cenný žeton, který lze vyměnit za truhly s předměty Trellin od Tajemného
+            obchodníka.
         erdwise:
           name: Žeton Erdwise
-          desc: Cenný žeton, který lze vyměnit za truhly Erdwise od Tajemného obchodníka.
+          desc: Cenný žeton, který lze vyměnit za truhly s předměty Erdwise od Tajemného
+            obchodníka.
         halflingRebels:
           name: Žeton Půlčich rebelů
-          desc: Cenný žeton, který lze vyměnit za truhly Půlčích Rebelů od Tajemného
-            obchodníka.
+          desc: Cenný žeton, který lze vyměnit za truhly předmětů Půlčích rebelů od
+            Tajemného obchodníka.
         wallisia:
           name: Žeton Wallisie
-          desc: Cenný žeton, který lze vyměnit za truhly Wallisie od Tajemného obchodníka.
+          desc: Cenný žeton, který lze vyměnit za truhly s předměty z Wallisie od
+            Tajemného obchodníka.
         wrentmark:
           name: Žeton Wrentmark
-          desc: Cenný žeton, který lze vyměnit za truhly Wrentmarku od Tajemného obchodníka.
+          desc: Cenný žeton, který lze vyměnit za truhly s předměty Wrentmark od Tajemného
+            obchodníka.
       misc:
         adventureGuild:
           name: Žeton cechu dobrodruhů
-          desc: Cenný žeton, který lze vyměnit za truhly cechu dobrodruhů od Tajemného
-            obchodníka.
+          desc: Cenný žeton, který lze vyměnit za předměty z dobrodružné cechovní
+            truhly od Tajemného obchodníka.
   eggs:
     camelEgg:
       name: Velbloudí vejce
@@ -3528,3 +3584,7 @@ singulars:
       name: Delfíní vejce
       desc: Vejce delfína. Vodní barva ho dobře skrývá pod vodou. Je zázrak, že ho
         rodiče vůbec někdy dokážou najít.
+    reindeerEgg:
+      name: Sobí vejce
+      desc: Sobí vejce. Mělo by se více zahřívat, i když kožešinová srst pomáhá udržet
+        ho o něco teplejší.
