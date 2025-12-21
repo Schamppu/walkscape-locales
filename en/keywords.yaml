@@ -4,10 +4,14 @@ singulars:
       cooking:
         name: Cooking recipe
         requirement: Requires a <object id="recipe_cooking" />.
+      smithing:
+        smelting:
+          name: Smelting
+          requirement: Requires materials that can be used be used in smelting for <object id="smithing" />.
     products:
       sandwich:
         name: Sandwich recipe
-        requirements: Requires a <object id="sandwich" /> be made by a <object id="recipe_cooking" />.
+        requirement: Requires a <object id="sandwich" /> be made by a <object id="recipe_cooking" />.
   activities:
     woodcuttingTrees:
       name: Woodcutting trees
