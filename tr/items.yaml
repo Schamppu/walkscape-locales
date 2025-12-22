@@ -157,12 +157,20 @@ singulars:
         name: Lanetli peluş ayı
       shinyBrokenSkydisk:
         name: Parlak kırık uçandisk
+        desc: Etrafındaki her şeyin görüntüsünü yüzeyindeki gökkuşağına yansıtan bir
+          uçandisk. Tek sıkıntısı küçücük ebatı ve ortasından geçen yuvarlak deliği.
       charterOfTheDrowned:
         name: Boğulmuşlar ruhsatı
       roseQuartz:
         name: Gül kuvars
+        desc: Pespembe bir renkte parlayan iri bir kristal parçası. Etrafındaki diğer
+          cevherleri güçlendiriyor anlaşılan.
       dragonfly:
         name: Parlak zümrüt yusufçuk
+      jarOfDirt:
+        desc: Yanında taşımak için acayip bir şey. Bir kavanoz toprak, bir kavanoz
+          toprak.
+        name: Toprak kavanozu
     visas:
       jarvonianLetterOfPassage:
         desc: Jarvonya tarafından gelirken Sükunet Geçidi'nden geçebileceğinin ispatı.
@@ -1313,24 +1321,41 @@ singulars:
       carpentry:
         bectoSaw:
           name: Ruhani testere
+          desc: Bu testerenin dışplazma dişleri diğer testere dişleri gibi olmadığından
+            kazara bile olsa bir yerini kesip yaralayamaz. Ancak tahtayı kolaylıkla
+            keser geçer.
         bronzeSaw:
           name: Bronz testere
+          desc: Bir gün bir testereyi eline aldın ve bronz olsaydı nasıl olurdu diye
+            düşündün.
         tarsiliumSaw:
           name: Katrilyum testere
+          desc: Obsidiyen gibi kapkara dişleri ısırmaya her daim hazır!
       cooking:
         jadeTippedSteelPan:
           name: Yeşim uçlu çelik tava
+          desc: Bu çelik tavanın sapının ucuna bir yeşim cevheri işlenmiştir.
         bectoPan:
           name: Ruhani tava
+          desc: Uzmanlar dışplazmada yemek yapmanın yan etkileri var mıdır emin değiller,
+            ama öyle bir kızartıyor ki, buna kesinlikle değer!
         bronzePan:
           name: Bronz tava
+          desc: Güzeller güzeli bronz rengi sayesinde her yemek bu tavadayken göze
+            hitap eder.
       crafting:
         bectoWrench:
           name: Ruhani somun anahtarı
+          desc: Bu somun anahtarının dışplazma ağzı, tutuşturulan her türlü malzemeyi
+            bırakmayacak şekilde sıkıca kavrar. Biraz endişe verici.
         bronzeWrench:
           name: Bronz somun anahtarı
+          desc: Bronzdan yapılmış onluk bir somun anahtarı. Her zaman bu eksiktir
+            zaten.
         hydriliumWrench:
           name: Hidrilyum somun anahtarı
+          desc: Su altı malzemelerinden zanaatkarlar için ilginç şekilde müthiş bir
+            somun anahtarı yapılır.
   looted:
     equipmentSets:
       dimensional:
@@ -2500,6 +2525,8 @@ singulars:
         desc: Bu süper kayak süper kar üzerinde süper hızla kayar.
       ghostTrapPack:
         name: Hayalet tuzağı çantası
+        desc: Bu hantal sırt çantasının hayalet partiküllerini çekip yakalamak için
+          bir hortumu bulunur.
     supporter:
       ringOfPandemonium:
         name: Hengame yüzüğü
@@ -2782,8 +2809,11 @@ singulars:
           dönüşmüş.
       yewPlank:
         name: Porsuk ağacı kereste
+        desc: Sağlamlığından ödün vermeden şekilden şekile girebilmekle övünen bir
+          kereste.
       mahoganyPlank:
         name: Maun kereste
+        desc: Her türlü inşaat işinde kullanılabilen yüksek kaliteli bir kereste.
     cooking:
       milk:
         desc: İneğin, keçinin veya devenin kendisinden. Yoksa bademden mi çıkarılmış?
@@ -2818,6 +2848,7 @@ singulars:
         desc: Bayrıposttan yapılma sağlam bir sicim parçası.
       ironweedTwine:
         name: Demirotu sicim
+        desc: Adını yapıldığı bitki olan demirotundan alan kalın ve sağlam sicim bağı.
     foraging:
       acidSapling:
         desc: Taş çatlasa kısa bir çubuk kadar uzayan bu koyu sarı renkli fidan, temas
@@ -2889,8 +2920,8 @@ singulars:
           bir bitki.
         name: Deve dikeni
       widowsKiss:
-        desc: Pembe çiçeği insanı yanına yaklaşmaya davet ediyor olsa da en iyisi
-          aradaki mesafeyi korumak.
+        desc: Bu çiçeğe yaklaştıkça etrafını tehlikeli bir dehşet hissinin sardığını
+          hissediyorsun. Fazla yaklaşmamak en iyisi.
         name: Dul busesi
       woodenStick:
         desc: Sivri bir tahta parçası. Belki bununla hayatta kalmana yardım edecek
@@ -2948,12 +2979,19 @@ singulars:
           için çok aranılan bir malzemeye dönüştürülebilir.
       cattail:
         name: Hasır otu
+        desc: Ucunda öbeği bulunan uzun saplı bir bitki. Biraz mısıra benziyor olsa
+          da sakın yemeye kalkışma.
       waterLotus:
         name: Yüzey nilüferi
+        desc: Su yüzeyinde yüzüp duran bir nilüfer çiçeği. Genellikle sudaki nilüfer
+          yapraklarının yanında bulunur.
       ironweed:
         name: Demirotu
+        desc: Pek çok farklı kullanım alanı olan dayanıklı bir bitki.
       loverose:
         name: Aşkgülü
+        desc: Başka birine karşı kuvvetli duygular besleyen kişileri bir araya getirdiği
+          söylenir.
     mining:
       coal:
         desc: Gösterişten uzak dursa da kömür, hayati bir enerji kaynağı olarak ne
@@ -3037,16 +3075,26 @@ singulars:
           gözüne çarpıyor.
       ectoRock:
         name: Dışplazma taşı
+        desc: Hayaletimsi bir hava taşıyan bu acayip hisli büyük taş parçasının içine
+          dışplazma işlemiş. Bunu işlemek için lanetli bir demirhaneye ihtiyacın olacak.
       adamantOre:
         name: Sertaş madeni
+        desc: Daha önce eline aldığın diğer taşlardan daha ağır ve sert gelen yeşil
+          bir taş. Daha da kuvvetlenmek için onu erit diye yalvarıyor.
       crystalShards:
         name: Kristal kömür
+        desc: Cılız bir enerji taşıyan kristal parçalar. Belki de daha büyük bir şeye
+          dönüşmek istiyorlardır.
       crystallizedFlame:
-        name: Kristal alev
+        name: Kristalize alev
+        desc: İçinde ateşin özünü taşıyan kocaman bir kristal. Aslında yanmadığı halde
+          ateş gibi sıcak olan yüzeyinde dans eden alevler görülebiliyor.
       petrifiumOre:
         name: Lilayit madeni
       violiteOre:
         name: Lilayit madeni
+        desc: Gerçek olamayacak kadar katı bir eflatun rengi mineral kütlesi. İçine
+          sığmayan kuvveti çevresine taşar. Üstelik bu en iyi hali bile değil.
     misc:
       clam:
         desc: İnci kadar beyaz ve sapasağlam. Koleksiyoncular için güzel bir örnek.
@@ -3167,6 +3215,8 @@ singulars:
         desc: Deniz levreğinin gümüş pulları ışıl ışıl parıldar.
       ectoFish:
         name: Dışplazma balığı
+        desc: İçlerine dışplazma işlemiş olan bu balık çeşitleri canlıdan ziyade hayalete
+          benziyor. Bunları pişirmek için lanetli bir mutfağa ihtiyacın olacak.
     smithing:
       bronzeBar:
         desc: Cüce demirhanelerinin bir yadigarı olan bronz külçe, hünerli eller tarafından
@@ -3212,10 +3262,14 @@ singulars:
           külçe Takı Fabrikası standartlarına göre 333 ayar kabul edilir.
       adamantBar:
         name: Sertaş külçe
+        desc: Sert bir yeşil metal külçe. Şimdi de daha da güçlenmek için şekil ver
+          diye yalvarıyor.
       petrifiumBar:
         name: Lilayit külçe
       violiteBar:
         name: Lilayit külçe
+        desc: Eflatun rengi metal külçe. Görüntüsüne aldanırsan yumuşak bir şeye benziyor.
+          Ancak şekil vermesi hiç kolay olmayacak.
     woodcutting:
       birchLogs:
         desc: Pürüzsüz ve renksiz huş kütük, şık bir sadelik örneğidir.
@@ -3272,8 +3326,12 @@ singulars:
           için ideal bir seçenek olmasını sağlar.
       ectoLogs:
         name: Dışplazma kütük
+        desc: Bu kütüklerin içinden dışplazma sızdığı için hayaletimsi bir görüntüleri
+          ve sıra dışı özellikleri vardır. Bunları işleyebilmek için lanetli bir bıçkıhaneye
+          ihtiyacın olacak.
       mahoganyLogs:
         name: Maun kütük
+        desc: Sağlam bir ağacın sağlam kütüğü. Dayanıklı eşyalar ve yapılar çıkarabilirsin.
     hunting:
       bones:
         name: Kemik
@@ -3352,6 +3410,8 @@ singulars:
       desc: Macera Loncası'ndan eşya veya hizmet almak için kullanabileceğin bir jeton.
     ectoplasm:
       name: Dışplazma
+      desc: Yapışkan bir dokusu olan arıtılmış hayalet enerjisi parçası. Hayaletler
+        için çok kıymetlidir, ayrıca pek çok farklı şekilde de kullanılır.
     chips:
       skill:
         t1:
@@ -3444,19 +3504,32 @@ singulars:
         yumurta. Sırf hörgücü sayesinde anlıyorsun, değil mi?
     tortoiseEgg:
       name: Tosbağa yumurtası
+      desc: Bir tosbağa yumurtası. Normalden daha sert bir kabuğu var. Zaten hiç kabuksuz
+        kalmayacak.
     snakeEgg:
       name: Yılan yumurtası
+      desc: Bir yılan yumurtası. Soğukkanlı olsalar da bunu sıcak tutmalısın!
     chickenEgg:
       name: Tavuk yumurtası
       desc: Döllenmiş tavuk yumurtası. Sakın ha kahvaltınla karıştırma, hemen kuluçkaya
         yetiştir!
     gooseEgg:
       name: Kaz yumurtası
+      desc: Bir kazın yumurtası. Bunu tutmak istediğine emin misin? Kazların gazabını
+        üzerine çekmeye mi çalışıyorsun?
     geckoEgg:
       name: Keler yumurtası
       desc: Bir keler yumurtası. Rengi biraz yeşile dönmüş, bir an evvel çatlatsan
         iyi edersin!
     tigerEgg:
       name: Kaplan yumurtası
+      desc: Bir kaplan yumurtası. İnsan üzerinde çizgiler olur sanıyor. Ama o çizgileri
+        görmek için yumurtayı çatlatman gerekecek.
     dolphinEgg:
       name: Yunus yumurtası
+      desc: Bir yunus yumurtası. Mavimsi rengiyle su altında öyle bir kamufle olur
+        ki anne babasının bunu bulabilmesi mucize olurdu.
+    reindeerEgg:
+      name: Ren geyiği yumurtası
+      desc: Bir ren geyiğinin yumurtası. Kürkü zaten sıcak tutuyor olsa da biraz daha
+        ısıtmanın faydası olabilir.

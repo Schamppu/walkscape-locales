@@ -21,6 +21,7 @@ singulars:
       woodcutting: Puuraiumise tööriist
       legs: Jalad
       tools: 'Tööriistad'
+      toolNumber: Tööriist {number}
     itemTypes:
       material: Materjal
       crafted: Valmistatud
@@ -30,8 +31,12 @@ singulars:
       quest: Missioon
       collectible: Kogutav ese
       other: Muu
+      petEgg: Lemmikloomamuna
+      currency: Valuuta
     itemTags:
       fine: Kvaliteetne
+      normal: Normaalne
+      rareEgg: Haruldane
   requirements:
     skills:
       level: Vajalik <skill skill="{skill}" level="{level}"" isRequirement="true"/>
@@ -65,6 +70,9 @@ maps:
       "3": Erakordne
       "4": Legendaarne
       "5": Taevalik
+    currencyTypes:
+      'chestChip': Kirstužetoonid
+      'guildToken': Gildimärgid
   realms:
     "jarvonia": Jarvoonia
     "gdte": Trellin-Erdweissi Suurhertsogkond

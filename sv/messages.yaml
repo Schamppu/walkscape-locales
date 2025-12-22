@@ -6,6 +6,8 @@ plurals:
           objekt {n} gång.
         other: Radering av objekt går inte att ångra. Objektet refereras till i andra
           objekt {n} gånger.
+        two: Radering av objekt går inte att ångra. Objektet refereras till i andra
+          objekt {n} gånger.
       title: Är du säker att du vill radera?
 singulars:
   messages:
@@ -31,6 +33,13 @@ singulars:
         minst <c>5000</c> steg från din bärbara enhet. Du kan byta till <icon i="Phone
         small" /> <c>Telefon</c> som din stegkälla från <c>Inställningar</c>.
       title: Steg är inte räknade i realtid
+      textIOS: Om du använder något annat än en <icon i="Phone small" /> <c>Telefon</c>
+        som din stegkälla, så kommer stegen inte att räknas i srealtid. Beroende på
+        vilken manick du använder så kan du behöva synka stegen manuellt från en annan
+        app eller öppna <c>Apple Health</c> för att synka dina steg. Detta meddelandet
+        kommer att synka efter du har synkat minst <c>5000</c> steg från din manick.
+        Du kan ändra till <icon i="Phone small" /> <c>Telefon</c> som din stegkälla
+        från <c>Inställningar</c>.
     comingSoon:
       title: Kommer snart
       text: Detta innehåller <hl>är inte tillgängligt</hl> i denna versionen av WalkScape.
@@ -145,7 +154,7 @@ singulars:
       cannotQueueMoreThanOneActivity:
         text: Du kan köa upp flera reseaktiviteter, men kan en åt gången. Gör klart
           först, eller avbryt för att köa upp en ny.
-        title: Kan inte inte köa upp fler aktiviteter
+        title: Kan inte köa upp fler aktiviteter
       withdrawDidNotExist:
         title: Uttag misslyckades
         text: Föremålet du försökte ta ut finns inte. Att öppna banken igen borde
@@ -243,3 +252,81 @@ singulars:
     activityCancelled:
       title: Aktivitet avbruten
       stepsAreInfinite: Aktiviteten avbröts eftersom du inte längre uppfyller kraven.
+    serverError:
+      unauthorized:
+        text: Du är inte tillåtet. Försök logga in igen.
+        title: Otillåten
+      invalidSession:
+        title: Problem med sessionen
+        text: Det är problem med din inloggningssession. Pröva starta om spelet och
+          logga in i igen.
+      noClosedBetaAccess:
+        title: Stängd betatillgång har löpt ut
+        text: Din tillgång till <c i=0>WalkScape stängd beta har löpt ut</c>. Du kan
+          återfå tillgången genom att ansöka till den stängda betan och bli inbjuden
+          i en framtida våg, eller genom att stötta spelet på<c i=1>Patreon</c> or
+          <c i=1>Buy Me a Coffee</c>.\n\nOm du vill stötta spelet, länka din Patreon
+          eller Buy Me a Coffee på <c i=1>WalkScape Portal Account-sidan</c> för att
+          återfå tillgång till spelet. Du kan också <c i=1>ansöka om betatillgång</c>
+          på sidan Account Page.
+      failureToValidateClient:
+        title: Misslyckades att validera klienten
+        text: Spelklienten misslyckades att validera klienten. Detta är troligen ett
+          nätverksfel. Pröva starta om spelet och försök igen.
+      serverMaintenance:
+        title: WalkScape underhålls för tillfället
+        text: Spelservern är tillfälligt under underhåll. Försök igen senare.
+      unknownError:
+        text: Okänt fel.
+        title: Okänt fel.
+      userBannedTemporarily:
+        noTimeFound: Inget sluttid hittad, vänligen kontakta oss genom ett mail till
+          {email}
+        text: Du har blivit temporärt bannad från WalkScape till <c i=0>{bannedUntil}</c>.
+          Om du önskar överklaga beslutet kan du skicka ett mail till {email}.
+        title: Du har blivit temporärt bannad från WalkScape
+      userBannedPermanently:
+        text: Du har blivit permanent bannad från WalkScape. Om du tror detta är ett
+          misstag och vill överklaga beslutet, kan du kontakta oss genom att skicka
+          ett mail till {email}.
+        title: Du har blivit permanent bannad från WalkScape
+      newClientUpdate:
+        title: Ny uppdatering av klienten tillgänlig
+        text: Du har en gammal version av spelet och det finns en ny version att ladda
+          ned. Vänligen ladda ner den nya versionen för att fortsätta spela.
+      serverOffline:
+        title: WalkScape är offline
+        text: Spelservern är för tillfället offline. Detta kan bero på underhåll eller
+          ett problem med servern. Vänligen försök igen senare.
+      newUpdate:
+        title: Ny uppdatering
+        text: Spelet har blivit uppdaterat. Vänligen starta om spelet för att ladda
+          ner den nya uppdateringen.
+      noInternetConnection:
+        title: Kunde inte ansluta till WalkScape
+        text: Kunde inte etablera en anslutning till WalkScape. Detta kan bero på
+          att du inte har en internetanslutning, servern ligger nere eller att anslutningen
+          blev blockerad av en brandvägg. Kontrollera din internetanslutning och försök
+          igen.
+      connectionError:
+        title: Anslutningsproblem
+        text: Det var problem med att ansluta till servern. Kontrollera din internetanslutning
+          och försök igen.
+      failureToUpdateContent:
+        title: Misslyckades att uppdatera innehållet
+        text: Spelklienten misslyckades med att uppdatera innehållet. Vänligen rapportera
+          detta till utvecklarna på Discord med detaljer om ditt problem och vilken
+          utrustning du använder. Du kan också pröva att starta om spelet och se om
+          det nya innehållet automatiskt laddas ner.
+  validators:
+    textField:
+      maxTextLength: Maxlängd är {max} tecken.
+      minTextLength: Minimumlängd är {min} tecken.
+      noConsecutiveSpaces: Flera mellanslag i följd är inte tillåtet.
+      noLeadingTrailingSpaces: Namnet får inte börja eller sluta med mellanslag.
+      containsSpecialCharacters: Innehåller specialtecken som inte är tillåtna.
+      emojisNotAllowed: Emojis är inte tillåtna.
+      numbersNotAllowed: Nummer är inte tillåtna.
+      specialCharactersNotAllowed: Specialtecken är inte tillåtna.
+      spacesNotAllowed: Mellanslag är inte tillåtna.
+      swearWordsNotAllowed: Olämpligt språk är inte tillåtet.

@@ -700,6 +700,10 @@ singulars:
           name: Adamantowy Kilof
           desc: Ten zielony kilof zagraża otaczającym go podatniejszym minerałom.
             Jest wściekły, jak na zwykły kilof.
+        violitePickaxe:
+          name: Wiolitowy Kilof
+          desc: Ten kilof z fioletowego metalu osiągnął stan, o jakim marzyły tylko
+            inne narzędzia. Pozwala rozbijać skały z niszczycielską precyzją.
       woodcutting:
         basicHatchet:
           name: Podstawowa Siekiera
@@ -739,11 +743,16 @@ singulars:
         bectoHatchet:
           name: Widmowa Siekiera
           desc: Stos kości zasilony ektoplazmą, który przybiera kształt siekiery.
-            Nie wygląda na to, bo jest przezroczysty, ale jej ostrze jest dość ostre.
+            Nie wygląda na to, bo jest nieco przezroczysty, ale jej ostrze jest dość
+            ostre.
         adamantHatchet:
           name: Adamantowa Siekiera
           desc: Topór z zielonego, adamantowego metalu, może nie jest to kreatywny
             kolor, ale doskonale sprawdzi się w drwalnictwie.
+        violiteHatchet:
+          name: Wiolitowa Siekiera
+          desc: Ta wiolitowa siekiera wygląda bardzo groźnie, biorąc pod uwagę jej
+            ostrość. Lepiej uważać, żeby się przez nią nie potknąć podczas noszenia.
       miscellaneous:
         bagOfRocks:
           name: Torba Kamieni
@@ -783,6 +792,10 @@ singulars:
           name: Wiolitowy Sierp
           desc: Sierp wiolitowy charakteryzuje się mocnym, fioletowym metalem. Jest
             zaskakująco lekki, biorąc pod uwagę jego wytrzymałość.
+        violiteSickle:
+          desc: Ten wiolitowy sierp szczyci się swoim mocnym, fioletowym metalem.
+            Jego krzywizny zdają się tworzyć uśmiechy radości przy każdym cięciu.
+          name: Wiolitowy Sierp
       tailoring:
         apprenticeBreeches:
           desc: Bryczesy są wygodne przez długie godziny noszenia i mają poręczne
@@ -1122,6 +1135,14 @@ singulars:
         amuletOfThePinkPearl:
           name: Amulet z Różowych Pereł
           desc: Lśniący amulet o mocy różowej perły.
+        bectoChisel:
+          name: Widmowe Dłuto
+          desc: Widmowa, ektoplazmatyczna końcówka tego przedmiotu wygląda niestabilnie,
+            ale mimo to okazuje się niezwykle pomocna w precyzyjnych pracach, których
+            wymaga obróbka kamieni szlachetnych i nie tylko.
+        bronzeChisel:
+          name: Dłuto z Brązu
+          desc: Brąz i drewno przemysłu dłutniczego.
       smithing:
         reinforcedBellows:
           name: Wzmocnione Miechy
@@ -1131,6 +1152,52 @@ singulars:
           name: Nosko-Tarsilowe Buty
           desc: Nigdy nie myślałeś, że możesz uzyskać lepszą ochronę niż buty ze stalowymi
             noskami, ale oto jesteśmy.
+        bectoHammer:
+          desc: Wytrzymała, kościana rękojeść wydaje się lekka, nawet z grubą, ektoplazmatyczną
+            głowicą na jej końcu, która sprawia wrażenie miękkiej, gdy jest obracana
+            i używana jako narzędzie kowalskie.
+          name: Widmowy Młot
+        bronzeHammer:
+          name: Młot z Brązu
+          desc: Lekki młot z obuchem z brązu, przeznaczony do kucia i wbijania gwoździ.
+        tarsiliumHammer:
+          name: Tarsilowy Młot
+          desc: Ciemna metalowa głowica młotka prawie nie odbija światła.
+      crafting:
+        bronzeWrench:
+          desc: Uniwersalny klucz nasadowy, rozmiar dziesięć, wykonany z brązu. To
+            ten, którego zawsze brakuje.
+          name: Klucz z Brązu
+        bectoWrench:
+          name: Widmowy Klucz
+          desc: Ektoplazmatyczne szczęki tego klucza zawsze zdają się idealnie chwytać
+            wszystko, do czego je przyłożysz. Trochę przerażające.
+        hydriliumWrench:
+          name: Hydrilowy Klucz
+          desc: Materiał podwodny zaskakująco dobrze nadaje się do wyrobu kluczy rzemieślniczych.
+      carpentry:
+        bectoSaw:
+          name: Widmowa Piła
+          desc: Okropne, ektoplazmatyczne zęby tej piły wydają się mniej groźne niż
+            w pozostałych piłach, nawet jeśli popełnisz błąd, nigdy nie robią krzywdy.
+            Mimo to z łatwością przecinają drewno.
+        bronzeSaw:
+          name: Piła z Brązu
+          desc: Kiedyś widziałeś piłę i pomyślałeś, że będzie lepiej gdy wykonasz
+            ją z brązu.
+        tarsiliumSaw:
+          name: Tarsilowa Piła
+          desc: Ciemne, obsydianowe zęby piły są gotowe do ugryzienia!
+      cooking:
+        bectoPan:
+          name: Widmowa Patelnia
+          desc: Eksperci nie są pewni, czy gotowanie na powierzchni ektoplazmatycznej
+            ma jakieś skutki uboczne, ale na pewno powstaje wtedy przyjemny, przypieczony
+            sos, więc prawdopodobnie warto.
+        bronzePan:
+          name: Patelnia z Brązu
+          desc: Ze względu na ciepły odcień, jedzenie zawsze prezentuje się lepiej
+            na tej patelni.
   looted:
     equipmentSets:
       dimensional:
@@ -2709,8 +2776,8 @@ singulars:
         name: Ostropest
       widowsKiss:
         name: Pocałunek wdowy
-        desc: Różowy pąk zachęca, by podejść bliżej, lecz lepiej zachować ostrożność
-          i trzymać się z daleka.
+        desc: Zbliżając się do tego kwiatu, ogarnia cię dziwne uczucie makabrycznego
+          strachu. Najlepiej będzie zachować dystans.
       woodenStick:
         name: Drewniany Kij
         desc: Ostry kawałek drewna. Może uda ci się z niego coś stworzyć, co pomoże
@@ -3030,6 +3097,10 @@ singulars:
         name: Sztabka Wiolitu
         desc: Fioletowy metalowa sztabka. Wydaje się, że można ją zgnieść, ale nie
           ulega odkształceniu.
+      violiteBar:
+        desc: Fioletowa metalowa sztabka. Wydaje się, że można ją zgnieść, ale nie
+          chce się odkształcić.
+        name: Sztabka Wiolitu
     woodcutting:
       birchLogs:
         desc: Gładkie i jasne, brzozowe kłody emanują elegancką prostotą.
@@ -3110,6 +3181,9 @@ singulars:
       elderhideRope:
         name: Sznurek z Czarnej Skóry
         desc: Wytrzymały sznurek wykonany ze skóry.
+      ironweedTwine:
+        desc: Gruby i wytrzymały kłąb sznurka wykonany z rośliny, o nazwie wernonia.
+        name: Wernoński Sznurek
     misc:
       trash:
         name: Śmieci

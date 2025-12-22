@@ -53,8 +53,8 @@ singulars:
     text: Avere ogni abilità almeno al livello <numberProgress current="{current}"
       max="{max}" />.
   levelUpSkills:
-    text: Hai un livello di abilità totale pari a <numberProgress current="{current}"
-      max="{max}" />.
+    text: Migliora le tue abilità <numberProgress current="{current}" max="{max}"
+      /> volte.
   overencumbered:
     text: Il tuo inventario supera il limite (sovraccarico).
   haveItemStack:
@@ -85,6 +85,10 @@ singulars:
       id="activity-cross-country_skiing_(beginner)-fc421940-d63a-402f-aa50-26cc2efea4d3"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
     woodCarving: Completa l'attività <object id="activity-wood_carving-af675674-c972-4e2e-80fe-1501b972e353"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
+    wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true"
+      />.
+    wreckDiving: Completa l'attività <object id="activity-wreck_diving-12e980cd-058a-42c4-8358-ba7afe1c319c"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
   gear:
     swimmingExpert: Completata l'attività <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
@@ -132,3 +136,31 @@ singulars:
       />.
   locationHasKeywords:
     text: Mentre ci si trova in <object id="{obj}" />.
+  serviceKeywords:
+    text: Richiede <serviceTier tier="{tier}" /> {objects} servizio o superiore.
+  petTotalLevels:
+    text: Ottieni un totale di <numberProgress current="{current}" max="{max}" />
+      livelli per tutti i tuoi animali domestici.
+  petHighestLevel:
+    text: Avere un animale domestico con almeno il livello <numberProgress current="{current}"
+      max="{max}" />.
+  itemsWithKeywordCrafted:
+    text: Hai creato <object id="{obj}" /> oggetti. <numberProgress current="{current}"
+      max="{max}" />.
+  itemsGained:
+    text: Guadagno <object id="{obj}" />. <numberProgress current="{current}" max="{max}"
+      />.
+  abilityAvailable:
+    text: Avendo a disposizione la funzionalità <object id="{obj}" />.
+  petWithKeyword:
+    text: Avere <object id="{obj}" /> animali domestici. <numberProgress current="{current}"
+      max="{max}" />.
+    textDistinct: Possiedi animali domestici unici <object id="{obj}" />. <numberProgress
+      current="{current}" max="{max}" />.
+  hasPet:
+    text: Avere un animale domestico <object id="{obj}" />.
+  petAmount:
+    text: Hai <numberProgress current="{current}" max="{max}" /> animali domestici.
+  totalSkillLevel:
+    text: Hai un livello di abilità totale pari a <numberProgress current="{current}"
+      max="{max}" />.

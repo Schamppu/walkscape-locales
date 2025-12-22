@@ -120,10 +120,10 @@ singulars:
       />.
   itemQualityEquipped:
     withoutType: Mějte vybaveno alespoň <numberProgress current="{current}" max="{max}"
-      /> <itemQuality quality="{quality}" type="crafted"/> nebo <itemQuality quality="{quality}"
-      type="loot"/> předmětů.
+      /> předmětů <itemQuality quality="{quality}" type="crafted"/> nebo <itemQuality
+      quality="{quality}" type="loot"/>.
     text: Mějte vybaveno alespoň <numberProgress current="{current}" max="{max}" />
-      <itemQuality quality="{quality}" type="{type}"/> předmětů.
+      předmětů <itemQuality quality="{quality}" type="{type}"/>.
   keywordEquipped:
     text: Mějte vybaveno <object id="{obj}" />.
   keywordWithLevelEquipped:
@@ -157,3 +157,5 @@ singulars:
   itemsGained:
     text: Získejte <object id="{obj}" />. <numberProgress current="{current}" max="{max}"
       />.
+  serviceKeywords:
+    text: Vyžaduje <serviceTier tier="{tier}" /> {objects} službu nebo lepší.
