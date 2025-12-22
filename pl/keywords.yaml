@@ -296,10 +296,17 @@ singulars:
       cooking:
         name: Przepis Kucharski
         requirement: Wymaga <object id="recipe_cooking" />.
+      smithing:
+        smelting:
+          requirement: Wymaga materiałów, które można wykorzystać do wytopu w procesie
+            <object id="smithing" />.
+          name: Wytapianie
     products:
       sandwich:
         name: Przepis na Kanapkę
         requirements: Wymaga <object id="sandwich" /> wytworzone <object id="recipe_cooking"
+          />.
+        requirement: Wymaga <object id="sandwich" /> z <object id="recipe_cooking"
           />.
   activities:
     woodcuttingTrees:
