@@ -43,11 +43,43 @@ maps:
     "14": Si hay mantenimiento, no te preocupes, normalmente tus pasos seguirán contando
       durante el tiempo de inactividad. ¡Consulta los anuncios en <c c="purple">Discord</c>
       para asegurarte!
+    "20": Al equipar un kit de equipo mientras estás en un banco, todos los objetos
+      se retirarán automáticamente del banco.
   skillTypes:
     "gathering": Las habilidades de recogida incluyen <skill skill="foraging"/>, <skill
       skill="fishing"/>, <skill skill="mining"/> y <skill skill="woodcutting"/>.
+    "artisan": Las habilidades de artesanía incluyen <skill skill="cooking"/>, <skill
+      skill="crafting"/>, <skill skill="carpentry"/>, <skill skill="smithing"/> y
+      <skill skill="tinkering"/>.
+    "utility": Las habilidades de utilidad incluyen <skill skill="agility"/>.
 singulars:
   info:
     inventoryFull: ¡Tu inventario está lleno! En todas las actividades, excepto para
       viajar, la sobrecarga ralentizará tus acciones. Puedes ir al banco a guardar
       objetos o soltar algunos objetos de tu inventario para liberar espacio.
+    lockFavoriteItem: "<icon i=\"Favorited\"/> <c i=0>Favorito</c>: No puedes vender
+      ni soltar este objeto. Aun así, puedes usarlo para fabricar, trabajos y otras
+      acciones.\n\n<icon i=\"Locked\"/> <c i=1>Bloqueado</c>: No puedes vender, soltar
+      ni depositar este objeto mientras esté bloqueado. Aun así, puedes usarlo para
+      fabricar, trabajos y otras acciones.\n\nAl bloquear o marcar como favorito un
+      objeto, el cambio se aplica a todos los objetos iguales en tu inventario y banco.
+      También puedes desbloquear o quitar de favoritos los objetos desde tu inventario
+      o banco."
+    claimPet: Una vez que reclames a tu mascota, se añadirá a tus mascotas y podrás
+      incubarla y invocarla en cualquier momento. No puedes intercambiar mascotas
+      reclamadas, ya que quedan <c>ligadas a tu personaje</c>.
+    bankUsage: "Mantener presionados los botones de depositar o retirar permite mover
+      hasta <c i=0>1000</c> objetos a la vez. Puedes usar la búsqueda del banco para
+      encontrar objetos rápidamente. Puedes buscar por <c i=0>nombre, palabras clave,
+      habilidades o ranuras</c>.\n\n<c i=0>¡Tu banco tiene espacio ilimitado!</c>\n\
+      \nTambién puedes usar el interruptor <icon i=\"Favorited\"/> <c i=1>Favoritos</c>
+      para mostrar solo tus objetos marcados como favoritos."
+    inventoryUsage: "Una pulsación prolongada sobre una pila de objetos <c i=0>abrirá
+      el modo de selección múltiple</c>, lo que te permite seleccionar varias pilas
+      a la vez para soltarlas o depositarlas.\n\nEl botón <c i=0>Opciones</c> en la
+      parte inferior te permite cambiar cómo se muestran las pilas de objetos.\n\n\
+      <bp /><icon i=\"Deposit\" /> <hl>Todo</hl>: Deposita todos los objetos de tu
+      inventario en el banco, si hay uno disponible en tu ubicación.\n\n<bp /><icon
+      i=\"Bank small\" /> <hl>Banco</hl>: Abre tu banco y te permite realizar depósitos
+      o retiros si están disponibles en tu ubicación.\n\n<bp /><icon i=\"Sort\" />
+      <hl>Ordenar</hl>: Ordena tu inventario.\n"
