@@ -52,14 +52,16 @@ singulars:
     text: Have <numberProgress current="{current}" max="{max}" /> stacks of items in your bank.
   activityType:
     singleKeyword: While doing <object id="{obj}" /> activity.
+  recipeType:
+    text: While doing <object id="{obj}" /> recipes.
   service:
     text: Needs <serviceTier tier="{tier}" /> <object id="{obj}" /> service or better.
   serviceKeywords:
     text: Needs <serviceTier tier="{tier}" /> {objects} service or better.
   currentService:
-    text: Needs <serviceTier tier="{tier}" /> <object id="{obj}" /> service or better. Requirements not met for <object id="{currentObj}" icon="false" />.
+    text: Needs <serviceTier tier="{tier}" /> <object id="{obj}" /> service or better. You cannot use <object id="{currentObj}" icon="false" />.
   currentServiceKeywords:
-    text: Needs <serviceTier tier="{tier}" /> {objects} service or better. Requirements not met for <object id="{currentObj}" icon="false" />.
+    text: Needs <serviceTier tier="{tier}" /> {objects} service or better. You cannot use <object id="{currentObj}" icon="false" />.
   realm:
     text: While in the <realm realm="{realm}" /> area.
   locationHasKeywords:
@@ -92,6 +94,7 @@ singulars:
     wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true" />.
     notUnderwater: Not in an <object id="location_underwater" /> location.
     notAgility: Not doing <skill skill="agility"/>.
+    smeltRecipe: While doing <object id="recipe_smelting" /> recipes.
   gear:
     swimmingExpert: Have completed the <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87" alwaysShow="true" /> activity <numberProgress current="{current}" max="{max}" /> times.
     tinkering: Have completed the <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e" /> activity <numberProgress current="{current}" max="{max}" /> times in <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a" alwaysShow="true" />
