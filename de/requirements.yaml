@@ -78,6 +78,9 @@ singulars:
       /> Male ab.
     wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true"
       />.
+    notUnderwater: Nicht an einem <object id="location_underwater" />-Ort.
+    notAgility: Nicht mit <skill skill="agility"/> beschäftigt.
+    smeltRecipe: Bei der Zubereitung von <object id="recipe_smelting" />-Rezepten.
   factionReputations:
     jarvoniaReputation: Besitze <numberProgress current="{current}" max="{max}" />
       <realm realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db" /> Fraktionsruf.
@@ -168,3 +171,11 @@ singulars:
       max="{max}" />.
   serviceKeywords:
     text: Benötigt <serviceTier tier="{tier}" /> {objects} Service oder besser.
+  currentService:
+    text: Benötigt <serviceTier tier="{tier}" /><object id="{obj}" />-Service oder
+      besser. Du kannst <object id="{currentObj}" icon="false" /> nicht verwenden.
+  currentServiceKeywords:
+    text: Benötigt <serviceTier tier="{tier}" /> {objects}-Service oder besser. Du
+      kannst <object id="{currentObj}" icon="false" /> nicht verwenden.
+  recipeType:
+    text: Bei der Zubereitung von <object id="{obj}" />-Rezepten.
