@@ -393,11 +393,18 @@ singulars:
       cooking:
         name: Kochrezept
         requirement: Benötigt ein <object id="recipe_cooking" />.
+      smithing:
+        smelting:
+          name: Schmelzen
+          requirement: Erfordert Materialien, die beim Schmelzen für <object id="smithing"
+            /> verwendet werden können.
     products:
       sandwich:
         name: Sandwich-Rezept
         requirements: Erfordert, dass ein <object id="sandwich" /> über ein <object
           id="recipe_cooking" /> hergestellt wird.
+        requirement: Erfordert, dass ein <object id="sandwich" /> durch ein <object
+          id="recipe_cooking" /> hergestellt wurde.
   consumables:
     cookedFish:
       name: Gekochter Fisch
@@ -489,7 +496,7 @@ singulars:
       requirementLevel: Erfordert, dass der Benutzer etwas mit <keywordRequirements
         /> ausgerüstet hat.
       name: Hitzebeständig
-      requirement: Erfordert etwas <object id="heatResist" />.
+      requirement: Erfordert etwas <object id="heat_resistant" />.
   search:
     skills:
       agility:
