@@ -124,6 +124,12 @@ singulars:
         shoes:
           desc: De är åtminstone lättare än järnparet!
           name: Bronsskor
+        shield:
+          name: Bronssköld
+          desc: En sköld.
+        sword:
+          name: Bronssvärd
+          desc: Ett svärd.
       copper:
         chest:
           desc: Kräver en betydligt stor mängd koppar, men skyddar de viktigaste delarna
@@ -147,6 +153,12 @@ singulars:
         shoes:
           desc: Några tunga stövlar som ger lite skydd.
           name: Kopparskor
+        sword:
+          name: Kopparsvärd
+          desc: Ett lätt svärd.
+        shield:
+          name: Kopparsköld
+          desc: En lätt sköld.
       farganite:
         chest:
           desc: En ogenomtränglig fästning på ditt bröst, din fiende kan se sig själv
@@ -194,6 +206,8 @@ singulars:
           desc: Dina fötter har aldrig känts tyngre. Men du är ganska säker på att
             de skulle kunna rullas över av en tung vagn och vara oskadda.
           name: Järnskor
+        sword:
+          name: Järnsvärd
       steel:
         chest:
           desc: En mäktig fästning för överkroppen och ett bevis på krigarnas och
@@ -238,6 +252,13 @@ singulars:
         shoes:
           desc: Ett par svarta skor. De är i alla fall lättare än stålskorna!
           name: Tarsiliumskor
+      basic:
+        woodenSword:
+          name: Träsvärd
+          desc: Du hoppas att den här enkla pinnen kan försvara dig.
+        woodenShield:
+          name: Träsköld
+          desc: Du hoppas att den här enkla skölden kan försvara dig.
     skilling:
       fishing:
         basicFishingPole:
@@ -279,6 +300,17 @@ singulars:
         tidalLure:
           name: Tidvattenbete
           desc: Betet ser ut som en virvel. Mycket effektivt för att locka fisk.
+        elderhideFishingNet:
+          name: Fiskenät av äldrehud
+          desc: Ett fiskenät gjort av den slitstarka äldrehuden.
+        bectoFishingRod:
+          name: Spektralt fiskespö
+          desc: Ben som varsamt satts ihop till en ryggkota och hålls samman av ektoplasmens
+            kraft, för att frammana en spöklik lina som ger fisket ny styrka.
+        bectoFishingCagespear:
+          name: Spektralt burspjut
+          desc: En lång bendel som avslutas i en mångsidig, klolik spets av ektoplasm,
+            idealisk för både spjutfiske och burfiske.
       mining:
         basicPickaxe:
           desc: Den enkla hackan, ett ödmjukt verktyg för en gruvarbetare. Knappast
@@ -439,6 +471,374 @@ singulars:
         jadeTippedSteelPan:
           name: Jadebesatt stålstekpanna
           desc: Handtagets ände på den här stålstekpannan är infattad med en jädesten.
+      tailoring:
+        hideScraps:
+          name: Hudspill
+          desc: Bitar av förstörd hud som skulle kunna sättas ihop till användbart
+            material.
+        journeymanBreeches:
+          desc: Byxor gjorda av skickliga skräddare för duktiga smeder, snickare och
+            andra hantverkare.
+          name: Gesällbyxor
+        rootweaveTunic:
+          desc: En tunika som förbättrats genom att väva in rötter i tyget, så att
+            du ser ut som en lövfri buske.
+          name: Rotvävstunika
+        elderhideMitts:
+          desc: Dessa vantar är sydda av den sagoomspunna äldrehuden och drar till
+            sig andra samlares blickar när du går förbi.
+          name: Äldrehudsvantar
+        linenCloth:
+          desc: Ett enkelt tygstycke, som vanligtvis används av nybörjarskräddare
+            för att sy kläder.
+          name: Linnetyg
+        basicHide:
+          desc: Ett naturligt material känt för sin hållbarhet och unika textur.
+          name: Grundläggande hud
+        basicLeather:
+          name: Grundläggande läder
+          desc: En bit läder som är redo att bearbetas till något mer användbart.
+        qualityLeather:
+          name: Kvalitetsläder
+        elderHideScraps:
+          name: Äldrehudsspill
+          desc: Bitar av förstörd äldrehud som en expert kan sätta ihop till användbart
+            material.
+        elderHide:
+          name: Äldrehud
+          desc: Huden från ett majestätiskt best.
+        elderhideLeather:
+          name: Äldrehudsläder
+          desc: Ett flexibelt material som har garvats för att förhindra förruttnelse.
+        tattyMitts:
+          name: Slitna vantar
+          desc: Slitna tygvantar, tillverkade av någon med tvivelaktig skicklighet.
+        tattyChaps:
+          name: Slitna benlappar
+          desc: Slitna benlappar av tyg, lätta att röra sig i, men tyget får huden
+            att klia.
+        tattyTunic:
+          name: Sliten tunika
+          desc: Sliten tunika av tyg, ofta buren av bönder och annat fattigt folk.
+        grassknotMitts:
+          name: Gräsknutna vantar
+          desc: Tygvantar med invävda gräsnören som gör dem speciella.
+        apprenticeHandwear:
+          name: Lärlingshandskar
+          desc: Ett populärt val av handskar för lärlingshantverkare inom olika yrken.
+        grassknotChaps:
+          name: Gräsknutna benlappar
+          desc: Benlappar av linne invävda med gräs, avsedda att bäras utanpå leggings.
+        apprenticeBreeches:
+          name: Lärlingsbyxor
+          desc: Byxorna är bekväma att bära i långa pass och har praktiska fickor
+            för många småsaker.
+        grassknotTunic:
+          name: Gräsknutna tunika
+          desc: En tunika som förbättrats genom att lägga till gräs, ett oväntat val
+            men förvånansvärt effektivt.
+        apprenticeVest:
+          name: Lärlingsväst
+          desc: Den enkla västen lämnar armarna fria för noggrant hantverksarbete.
+        spikescaleMitts:
+          name: Taggskalsvantar
+          desc: Vantarna har förbättrats med läder och taggiga fjäll, vilket ger bra
+            skydd under insamling.
+        shadowquillMitts:
+          name: Skuggfjädervantar
+          desc: Dessa mörkfjädrade vantar är idealiska för smygande samlare.
+        spikescaleChaps:
+          name: Taggskalsbenlappar
+          desc: De taggiga benlapparna ger bra skydd mot rivsår och väder när du samlar
+            utomhus.
+        shadowquillChaps:
+          name: Skuggfjäderbenlappar
+          desc: De fjädrade benlapparna får det att se ut som om dina ben har vingar.
+            Tyvärr kan du inte flyga med dem.
+        spikescaleTunic:
+          name: Taggskalsunika
+          desc: En tunika som förbättrats med taggiga fjäll och ser hotfull ut.
+        shadowquillTunic:
+          name: Skuggfjädertunika
+          desc: Tunikans mörka fjädrar får dig att se ut som en fågelmänniska.
+        rootweaveMitts:
+          name: Rotvävsvantar
+          desc: Dessa vantar, förstärkta med rötter, är förvånansvärt bekväma och
+            ger samtidigt skydd åt fingrarna.
+        journeymanHandwear:
+          name: Gesällhandskar
+          desc: Välgjorda handskar som hjälper till vid olika hantverksjobb.
+        aerofibrilMitts:
+          name: Aerofibrilvantar
+          desc: Vantarna har förstärkts med aerodynamisk tråd som får händerna att
+            röra sig snabbare än vanligt.
+        rootweaveChaps:
+          name: Rotvävsbenlappar
+          desc: Benlappar förstärkta med rötter som skyddar benen ute i vildmarken.
+        aerofibrilChaps:
+          name: Aerofibrilbenlappar
+          desc: Benlapparna känns väldigt lätta att bära, nästan som om du inte hade
+            några byxor alls. Se till att du har det!
+        journeymanVest:
+          name: Gesällväst
+          desc: Västen har många innerfickor för verktyg och andra nyttiga saker för
+            hantverk och andra aktiviteter.
+        aerofibrilTunic:
+          name: Aerofibriltunika
+          desc: Den aerodynamiska tråden får tunikan att glöda svagt när vinden blåser
+            mot den.
+        elderhideBreeches:
+          name: Äldrehudsbyxor
+          desc: Byxor av äldrehud som ger utmärkt skydd mot väder och vind.
+        elderhideTunic:
+          name: Äldrehudstunika
+          desc: Äldrehudstunikan bärs av samlare som ger sig ut för att hämta resurser
+            på krävande platser.
+      smithing:
+        reinforcedBellows:
+          desc: Du var trött på att din bälg ständigt föll isär, men det visade sig
+            att den bara behövde lite förstärkning!
+          name: Förstärkt bälg
+        tarsiliumToeBoots:
+          name: Tarsiliumtåade stövlar
+          desc: Du trodde aldrig att du kunde få bättre skydd än stålhättestövlar,
+            men här är vi.
+        bectoHammer:
+          name: Spektral hammare
+          desc: Det stadiga benskaftet känns lätt trots det tjocka ektoplasmhuvudet
+            i änden, som känns mjukt och svampigt när det inte svingas och används
+            som smidesverktyg.
+        bronzeHammer:
+          name: Bronshammare
+          desc: En lätt hammare med ett bronshuvud för smide och spikning.
+        tarsiliumHammer:
+          name: Tarsiliumhammare
+          desc: Hammarens mörka metallhuvud reflekterar knappt något ljus.
+      hunting:
+        mangroveBirdhouse:
+          name: Mangrovefågelholk
+          desc: Mangrove används inte ofta till fågelholkar eftersom träet är svårt
+            att arbeta med. Men om den görs av en skicklig hantverkare blir det en
+            bra fågelholk.
+        steelArrows:
+          desc: De blanka spetsarna på dessa pilar vittnar om hur vassa de är. Du
+            vill inte bli stucken av en sådan.
+          name: Stålpilar
+        simpleBowstring:
+          desc: En avgörande komponent i båge och pil som ger den spänning som krävs
+            för att avfyra en pil.
+          name: Enkel bågsträng
+        ironArrows:
+          name: Järnpilar
+          desc: Standardpilarna i många militära distansenheter.
+        elmHuntingBow:
+          name: Almjaktbåge
+          desc: En jaktbåge gjord av böjligt men slitstarkt almträ.
+        pineBirdhouse:
+          name: Tallfågelholk
+          desc: En fågelholk gjord av tall, vars bruna ton gör den till ett tilltalande
+            hem för olika fåglar.
+        oakHuntingBow:
+          name: Ekjaktbåge
+          desc: En jaktbåge gjord av ek, ett populärt val bland jägare.
+        bambooHuntingBow:
+          name: Bambujaktbåge
+          desc: En jaktbåge gjord av bambu, vanligt i områden där bambu finns lättillgängligt.
+            Den är väldigt lätt och ger ett precist vapen.
+        mahoganyHuntingBow:
+          name: Mahognyjaktbåge
+          desc: Denna välgjorda jaktbåge är ett bra vapen för en skicklig jägare.
+        birchBirdhouse:
+          name: Björkfågelholk
+          desc: En typisk fågelholk som även en amatör skulle kunna göra. Ändå blir
+            den ett trevligt hem för småfåglar under häckningsperioden.
+        spruceBirdhouse:
+          name: Granfågelholk
+          desc: En välgjord fågelholk av gran, vars form passar bra för fåglar att
+            bygga bo i.
+        mapleBirdhouse:
+          name: Lönnfågelholk
+          desc: En fågelholk av lönn har en tydlig doft som lockar fåglar i olika
+            storlekar.
+        teakBirdhouse:
+          name: Teakfågelholk
+          desc: En mer avancerad fågelholk som kräver skicklighet att göra. Den blir
+            ett bra hem för fåglar av samma slag.
+        copperArrows:
+          name: Kopparpilar
+          desc: Endast pilar gjorda av pinnar är sämre än dessa, men varje jägare
+            måste börja någonstans.
+        bronzeArrows:
+          name: Bronspilar
+          desc: Brons är inte ett idealiskt material för vapen som måste hålla länge,
+            men för pilar som dessa fungerar det riktigt bra.
+        tarsiliumArrows:
+          name: Tarsiliumpilar
+          desc: Svarta pilar, omtyckta av de mörka, rebelliska skogsrangers.
+        farganiteArrows:
+          name: Farganitpilar
+          desc: De blå pilspetsarna får dem att se nästan magiska ut. De är tillverkade
+            av den berömda metallen farganit.
+        kelpDriftNet:
+          name: Tångdrivnät
+          desc: Ett nästan oändligt stort drivnät gjort av undervattenstång.
+      trinketry:
+        goldRing:
+          name: Guldring
+          desc: En enkel guldring, tidlös och värdefull i sin renhet.
+        bectoChisel:
+          desc: Den spöklika spetsen av ektoplasm ser instabil ut, men är ändå ett
+            utmärkt hjälpmedel för det precisa arbete som krävs vid ädelstensarbete
+            och annat.
+          name: Topasspetsad mejsel
+        silverOpalRing:
+          desc: Denna anspråkslösa silverring glittrar i rätt ljus med skiftande iriserande
+            blänk.
+          name: Silverring med opal
+        goldWrentmarineRing:
+          desc: Guldet runt den slipade wrentmarin-ädelstenen gnistrar i ljuset som
+            en skatt sänkt i dolda djup.
+          name: Guldring med wrentmarin
+        amuletOfTheMeasuringSpoons:
+          desc: En skinande amulett med kraften hos en måttsked.
+          name: Måttskedsamulett
+        cutSunStone:
+          desc: Den kommer inte från solen, men med glöden från sina blanka, eldfärgade
+            nyanser skulle man kunna tro det.
+          name: Solsten
+        goldRubyRing:
+          desc: En tung guldring med en kunglig rubin; en svag aura av auktoritet
+            tycks föregå bäraren.
+          name: Guldring med rubin
+        amuletOfTheLuckyRabbitFoot:
+          desc: En skinande amulett med kraften hos en lyckokaninens fot.
+          name: Amulett med lyckokaninens fot
+        cutWrentmarine:
+          desc: När du rör den ser det ut som om vatten flyter från ena sidan till
+            den andra över ytan på denna oceanhavsblå sten.
+          name: Wrentmarin
+        goldEtherniteRing:
+          desc: En guldring som håller en eternit-ädelsten från en annan värld. Du
+            märker hur människors blickar dras till ditt finger när du bär den.
+          name: Guldring med eternit
+        silverWrentmarineRing:
+          desc: Skimret i det polerade silvret kompletterar den slipade blå ädelstenen
+            som är infattad i ringen.
+          name: Silverring med wrentmarine
+        silverTopazRing:
+          desc: Den glimmande topasen och det polerade silvret ser ut som om en sol
+            och en måne är lindade runt ditt finger.
+          name: Silverring med topas
+        silverEtherniteRing:
+          desc: En silverring infattad med en skarpslipad eternit. Dess hypnotiska
+            skimmer är både lockande och oroande.
+          name: Silverring med eternit
+        amuletOfTheBeaver:
+          desc: En skinande amulett med kraften hos en bäver.
+          name: Bäveramulett
+        cutOpal:
+          desc: Vackra iriserande färger skimrar på ytan när den hålls i solljus.
+          name: Opal
+        silverJadeRing:
+          desc: En silverring prydd med en polerad jadeskiva, som sägs ge skydd och
+            tur.
+          name: Silverring med jade
+        silverStarPearlRing:
+          name: Silverring med pärlstjärna
+          desc: En silverring infattad med en polerad pärlstjärna; när ljuset träffar
+            den visar den sin mjuka skönhet.
+        silverRubyRing:
+          name: Silverring med rubin
+          desc: En vanlig syn på mindre adelns fingrar; silvret och det djupröda är
+            ett kännetecken för dem som hungrar efter makt.
+        silverSunStoneRing:
+          name: Silverring med solsten
+          desc: En silverring med en mindre solsten; den glöder strålande, särskilt
+            i dagsljus.
+        goldOpalRing:
+          name: Guldring med opal
+          desc: En guldring håller den infällda, eldfärgade opalen tryggt på plats
+            och bjuder in den som kan uppskatta dess djupare lyster att titta närmare.
+        goldStarPearlRing:
+          name: Guldring med pärlstjärna
+          desc: En guldring med en fint slipad pärlstjärna som ger bäraren en touch
+            av elegans och klass.
+        goldTopazRing:
+          name: Guldring med topas
+          desc: En guldring infattad med en solkysst topas – den är nästan för ljus
+            för att titta på.
+        goldJadeRing:
+          name: Guldring med jade
+          desc: En formad jadesten tronar atop denna intrikata guldring; må den ge
+            dig tur och hälsa.
+        goldSunStoneRing:
+          name: Guldring med solsten
+          desc: Den större solstenen tycks fylla guldet med solens ljus och glöder
+            till och med på de mörkaste platser.
+        amuletOfTheEel:
+          name: Ålamulett
+          desc: En skinande amulett med kraften hos en ål.
+        amuletOfTheBat:
+          name: Fladdermusamulett
+          desc: En skinande amulett med kraften hos en fladdermus.
+        amuletOfTheHeron:
+          name: Hägeramulett
+          desc: En skinande amulett med kraften hos en häger.
+        amuletOfTheShrimp:
+          name: Räkamulett
+          desc: En skinande amulett med kraften hos en räka.
+        amuletOfTheCoolingIce:
+          name: Svalkande is-amulett
+          desc: En skinande amulett med kraften hos en istapp.
+        amuletOfTheRoot:
+          name: Cirkulär rot-amulett
+          desc: En skinande amulett med kraften hos en cirkulär rot.
+        amuletOfTheSharkTooth:
+          name: Hajtandsamulett
+          desc: En skinande amulett med kraften hos en hajtand.
+        amuletOfTheAnimalKingdom:
+          name: Djurrikets amulett
+          desc: En skinande amulett med kraften hos många djur.
+        amuletOfThePinkPearl:
+          name: Rosa pärlamulett
+          desc: En skinande amulett med kraften hos en rosa pärla.
+        flowerNecklace:
+          name: Jarvoniskt blomsterhalsband
+          desc: En jarvonisk blomsterkrans att bära runt halsen, prydd med måndaisyer
+            och snödroppar.
+        cutStarPearl:
+          name: Pärlstjärna
+          desc: Förekommer i den berömda målningen ”Flicka med ett pärlstjärneörhänge”
+            av en wallisisk målare.
+        cutTopaz:
+          name: Topas
+          desc: En glänsande ädelsten med färger som påminner om solen. Det kan till
+            och med göra ont i ögonen om du stirrar för länge.
+        cutJade:
+          name: Jade
+          desc: Den klara gröna färgen gör den perfekt för smycken, och enligt rykten
+            ska den mota bort onda andar när den bärs.
+        cutRuby:
+          name: Rubin
+          desc: Denna röda ädelsten är mycket populär bland adeln. Den röda färgen
+            symboliserar makt och passion.
+        cutEthernite:
+          name: Eternit
+          desc: En värdefull, glasaktig lila ädelsten. Du känner en kuslig rysning
+            när du ser på den, men det är ändå svårt att slita blicken från den.
+        silverRing:
+          name: Silverring
+          desc: En enkel silverring, elegant och anspråkslös.
+        bronzeChisel:
+          name: Bronsmejsel
+          desc: Mejselbranschens brons och smör.
+        topazTippedChisel:
+          name: Topasspetsad mejsel
+          desc: Själva yttersta eggen är gjord av topas, vilket gör den mycket vass.
+        wraithwaterFlowerNecklace:
+          name: Wraithwater-blomsterhalsband
+          desc: En samling dystert utseende blommor. Att bära den får dig att känna
+            en svag koppling till de döda.
   looted:
     equipmentSets:
       dimensional:
