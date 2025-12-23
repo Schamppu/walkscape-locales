@@ -245,7 +245,7 @@ singulars:
         basicHatchet:
           name: Enkel øks
         bronzeHatchet:
-          desc: Bra for nybegynnere for å starte å Hugge trær
+          desc: Bra for nybegynnere for å starte å Hugge trær.
           name: Bronseøks
         copperHatchet:
           name: Kobberøks
@@ -258,6 +258,45 @@ singulars:
         tarsiliumHatchet:
           desc: En sort øks.
           name: Tarsiliumøks
+      carpentry:
+        bronzeSaw:
+          name: Bronse sag
+        tarsiliumSaw:
+          name: Tjæralitt sag
+        bectoSaw:
+          name: Spektral sag
+      cooking:
+        jadeTippedSteelPan:
+          name: Jadebesatt stålpanne
+        bectoPan:
+          name: Spektral stekepanne
+        bronzePan:
+          name: Bronse stekepanne
+      miscellaneous:
+        bagOfRocks:
+          name: Sekk med steiner
+      crafting:
+        bectoWrench:
+          name: Spektral skiftenøkkel
+        bronzeWrench:
+          name: Bronse skiftenøkkel
+        hydriliumWrench:
+          name: Hydrilisk skiftenøkkel
+      foraging:
+        stoneSickle:
+          name: Enkel ljå
+        copperSickle:
+          name: Kobberljå
+        ironSickle:
+          name: Jernljå
+        steelSickle:
+          name: Stålljå
+        hydriliumSickle:
+          name: Hydriliumljå
+        bectoSickle:
+          name: Spektralljå
+        violiteSickle:
+          name: Violittljå
   looted:
     equipmentSets:
       dimensional:
@@ -372,11 +411,37 @@ singulars:
         name: Planke av furu
       sprucePlank:
         name: Planke av gran
+      teakPlank:
+        name: Planke av teak
+      willowPlank:
+        name: Planke av pil
+      mangrovePlank:
+        name: Planke av mangrove
+      woodScrap:
+        name: Trespon
+      woodShaving:
+        name: Treflis
+      coralPlank:
+        name: Planke av korall
+      elmPlank:
+        name: Planke av elm
+      bambooPlank:
+        name: Planke av bambus
+      yewPlank:
+        name: Planke av barlind
+      mahoganyPlank:
+        name: Planke av mahogany
     cooking:
       milk:
         name: Melk
       salt:
         name: Salt
+      honey:
+        name: Bikake
+      carrot:
+        name: Gulrot
+      mushroom:
+        name: Sopp
     foraging:
       acidSapling:
         name: Sur frøplante
@@ -397,6 +462,7 @@ singulars:
       nettle:
         name: |-
           Brennesle
+        desc: En lang og tynn plante med hjerteformede blander som stikker.
       nightgem:
         name: Nattperle
       rotbud:
@@ -419,6 +485,50 @@ singulars:
         name: Enke's kyss
       woodenStick:
         name: Pinne
+      berries:
+        name: Bær
+      seaSpinach:
+        name: Sjøspinat
+      underwaterLotus:
+        name: Undervannslotus
+      kelp:
+        name: Tare
+      wildRice:
+        desc: En type vilt gress som produserer spiselige korn.
+        name: Villris
+      wheat:
+        desc: Kornslaget som har vært ansvarlig for veksten til de fleste sivilisasjoner.
+        name: Hvete
+      milkweed:
+        name: Villgom
+      hardenedKelp:
+        name: Herdet tare
+      sweetKelp:
+        name: Søt tare
+      seaCabbage:
+        name: Sjøsalat
+      waterLotus:
+        name: Høyvannslotus
+      saltyHops:
+        name: Salt humle
+        desc: Salt humle gir salt malt.
+      cucumber:
+        name: Agurk
+        desc: Hvor mye koster dette der du bor?
+      grass:
+        name: Gress
+        desc: Et frodig stykke grønt gress.
+      pepper:
+        name: Pepper
+        desc: Små, runde, ukvernet pepperkorn.
+      mud:
+        name: Gjørme
+      cattail:
+        name: Tjønnrør
+      ironweed:
+        name: Jernurt
+      loverose:
+        name: Elskerose
     mining:
       coal:
         name: Kull
@@ -459,6 +569,39 @@ singulars:
         name: Sølvklump
         desc: Sølv er et høyt verdsatt metall, ofte brukt når man lager smykker som
           ringer, amuletter og øredobber.
+      opal:
+        name: Rå opal
+      jade:
+        name: Rå jade
+      ethernite:
+        name: Rå eternitt
+      topaz:
+        name: Rå topas
+      volcanicAsh:
+        name: Vulkansk aske
+      crystalShards:
+        name: Krystallkull
+      adamantOre:
+        name: Adamantmalm
+      goldOre:
+        name: Gullmalm
+      sunStone:
+        name: Rå solstein
+      largeStone:
+        name: Stor stein
+        desc: En større stein enn normalt.
+      ruby:
+        name: Rå rubin
+      volcanicRock:
+        name: Vulkansk stein
+      violiteOre:
+        name: Violitemalm
+      crystallizedFlame:
+        name: Krystalisert flamme
+      ectoRock:
+        name: Ecotplasma stein
+      silverOre:
+        name: Sølvmalm
     rawFish:
       rawCarp:
         name: Rå karpe
@@ -474,6 +617,8 @@ singulars:
         name: Rå abbor
       rawPike:
         name: Rå gjedde
+        desc: Med dens flakete og møre kjøtt, er rå gjedde et godt alternativ for
+          matlaging.
       rawSalmon:
         name: Rå laks
       rawSeabass:
@@ -486,6 +631,27 @@ singulars:
         name: Rå elekstrisk ål
       rawTrout:
         name: Rå ørret
+      rawSeaBass:
+        desc: Havabboren skinner med sølvskjell.
+        name: Rå havabbor
+      rawStingray:
+        name: Rå piggrokke
+        desc: En pannekakelignende fisk som bruker hele kroppen på å gli igjennom
+          vannet.
+      rawSwordfish:
+        desc: Denne sølve fisken er lang og fra nesen stikker det ut en sverdlignende
+          utstikker som den bruker for lamgjøre sine offre.
+        name: Rå sverdfisk
+      rawShark:
+        name: Rå hai
+      rawAnglerfish:
+        name: Rå anglerfisk
+      rawLargemouthBass:
+        name: Rå stormunnet abbor
+      rawCrab:
+        name: Rå krabbe
+      ectoFish:
+        name: Ektoplasma fisk
     smithing:
       bronzeBar:
         name: Bronsebarre
@@ -499,6 +665,18 @@ singulars:
         name: Stålbarre
       tarsiliumBar:
         name: Tarsiliumbarre
+      silverBar:
+        name: Sølvbarr
+      metalScrap:
+        name: Metallskrot
+      goldBar:
+        name: Gullbarr
+      hydriliumBar:
+        name: Hydriliumbarre
+      adamantBar:
+        name: Adamantbarre
+      violiteBar:
+        name: Violitbarre
     woodcutting:
       birchLogs:
         name: Bjørketømmer
@@ -561,3 +739,68 @@ singulars:
         desc: Disse stokkene er gjennomtrukket av og siprer ektoplasma, noe som gir
           dem et spøkelsesaktig utseende og unike egenskaper. Du vil trenge et forbannet
           sagbruk for å bearbeide dem.
+    tailoring:
+      aerodynamicThread:
+        name: Aerodynamisk tråd
+    trinketry:
+      heronTrinket:
+        name: Hegreamulett
+      compassTrinket:
+        name: Kompassamulett
+      pinkPearlTrinket:
+        name: Rosa perleamulett
+      shrimpTrinket:
+        name: Rekeamulett
+      measuringSpoonsTrinket:
+        name: Måleskjeamulett
+      batTrinket:
+        name: Flaggermusamulett
+      eelTrinket:
+        name: Ålamulett
+      luckyRabbitFootTrinket:
+        name: Heldig harefotamulett
+      coolingIceTrinket:
+        name: Istappsamulett
+      circularRootTrinket:
+        name: Rund rotamulett
+      sharkToothTrinket:
+        name: Haitannamulett
+      beaverTrinket:
+        name: Beveramulett
+    misc:
+      fishbone:
+        name: Fiskebein
+      seashell:
+        name: Skjell
+      clam:
+        name: Muslingskjell
+      trash:
+        name: Søppel
+      glacierMap:
+        name: Mystisk nordlig kart
+      crosswordPuzzle:
+        name: Gammelt kryssord
+      fishingLine:
+        name: Fiskeline
+      unidentifiedRemains:
+        name: Uidentifiserbare levninger
+      nameTag:
+        name: Navneskilt
+      pearls:
+        name: Perler
+    crafting:
+      hydrilium:
+        name: Hydrilium
+    hunting:
+      bones:
+        name: Bein
+      sinew:
+        name: Sene
+      animalMeat:
+        name: Dyrekjøtt
+      feather:
+        name: Fjær
+      darkfeather:
+        name: Mørk fjær
+      animalFur:
+        name: Dyrepels
