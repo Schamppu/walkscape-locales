@@ -29,6 +29,9 @@ singulars:
       /> kere tamamla.
     wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true"
       />.
+    notUnderwater: <object id="location_underwater" /> konumunda değilken.
+    notAgility: <skill skill="agility"/> yapmıyorken.
+    smeltRecipe: <object id="recipe_smelting" /> tarifi uygularken.
   mainSkill:
     text: <skill skill="{skill}"/> yaparken.
   itemAnywhereWithYou:
@@ -169,3 +172,11 @@ singulars:
       />
   serviceKeywords:
     text: <serviceTier tier="{tier}" /> {objects} veya daha yüksek hizmet gerekli.
+  currentService:
+    text: En az <serviceTier tier="{tier}" /> veya daha yüksek <object id="{obj}"
+      /> hizmeti gerekli. <object id="{currentObj}" icon="false" /> kullanamazsın.
+  currentServiceKeywords:
+    text: En az <serviceTier tier="{tier}" /> veya daha yüksek {objects} hizmeti gerekli.
+      <object id="{currentObj}" icon="false" /> kullanamazsın.
+  recipeType:
+    text: <object id="{obj}" /> tarifi uygularken.
