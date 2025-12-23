@@ -164,7 +164,7 @@ singulars:
       requirement: Vyžaduje vybavený <object id="lightSource" />.
       requirementLevel: Vyžaduje, aby uživatel byl vybaven <keywordRequirements />.
     heatResist:
-      requirement: Vyžaduje něco <object id="heatResist" />.
+      requirement: Vyžaduje něco <object id="heat_resistant" />.
       name: Odolné vůči teplu
       requirementLevel: Vyžaduje, aby uživatel měl něco <keywordRequirements /> vybaveno.
   materials:
@@ -480,10 +480,17 @@ singulars:
       cooking:
         name: Recept na vaření
         requirement: Vyžaduje <object id="recipe_cooking" />.
+      smithing:
+        smelting:
+          name: Tavení
+          requirement: Vyžaduje materiály, které lze použít při tavení pro <object
+            id="smithing" />.
     products:
       sandwich:
         name: Recept na sendvič
         requirements: Vyžaduje <object id="sandwich" /> vytvořený receptem <object
+          id="recipe_cooking" />.
+        requirement: Vyžaduje aby byl <object id="sandwich" /> připraven pomocí <object
           id="recipe_cooking" />.
   services:
     kitchen:
