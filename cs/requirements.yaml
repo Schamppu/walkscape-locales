@@ -41,6 +41,9 @@ singulars:
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> krát.
     wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true"
       />.
+    notUnderwater: Nelze v místě <object id="location_underwater" />.
+    notAgility: Nedělám <skill skill="agility"/>.
+    smeltRecipe: Při provádění receptů <object id="recipe_smelting" />.
   itemAnywhereWithYou:
     text: Mějte s sebou položku <item id="{item}"/>.
   itemEquipped:
@@ -158,4 +161,12 @@ singulars:
     text: Získejte <object id="{obj}" />. <numberProgress current="{current}" max="{max}"
       />.
   serviceKeywords:
-    text: Vyžaduje <serviceTier tier="{tier}" /> {objects} službu nebo lepší.
+    text: Vyžaduje službu <serviceTier tier="{tier}" /> {objects} nebo lepší.
+  currentService:
+    text: Vyžaduje službu <serviceTier tier="{tier}" /> <object id="{obj}" /> nebo
+      lepší. Nelze použít <object id="{currentObj}" icon="false" />.
+  currentServiceKeywords:
+    text: Vyžaduje službu <serviceTier tier="{tier}" /> {objects} nebo lepší. Nelze
+      použít <object id="{currentObj}" icon="false" />.
+  recipeType:
+    text: Při přípravě receptů <object id="{obj}" />".
