@@ -124,7 +124,7 @@ singulars:
       requirementLevel: En az <keywordRequirements /> kuşanılması gerekli.
     heatResist:
       name: Isıya dayanıklı
-      requirement: <object id="heatResist" /> bir şey gerekli.
+      requirement: <object id="heat_resistant" /> bir şey gerekli.
       requirementLevel: <keywordRequirements /> bir şey kuşanılması gerekli.
   materials:
     bar:
@@ -521,11 +521,18 @@ singulars:
       cooking:
         name: Yemek tarifi
         requirement: <object id="recipe_cooking" /> gerekli.
+      smithing:
+        smelting:
+          name: Döküm
+          requirement: <object id="smithing" /> için döküm yapmakta kullanılabilecek
+            malzemeler gerekli.
     products:
       sandwich:
         name: Sandviç tarifi
         requirements: <object id="recipe_cooking" /> olarak <object id="sandwich"
           /> yapılması gerekli.
+        requirement: <object id="recipe_cooking" /> ile yapılan bir <object id="sandwich"
+          /> gerekli.
   activities:
     fishing:
       name: Balıkçılık
