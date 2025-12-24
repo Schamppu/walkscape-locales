@@ -31,8 +31,8 @@ singulars:
     text: Tener <icon i="money small"/> <numberProgress current="{current}" max="{max}"
       /> monedas.
   levelUpSkills:
-    text: Tener un nivel de habilidad total de <numberProgress current="{current}"
-      max="{max}" />.
+    text: Aumenta tu habilidad <numberProgress current="{current}" max="{max}" />
+      veces.
   overencumbered:
     text: Tener tu inventario por encima del límite (sobrecarga).
   minimumSkillLevel:
@@ -134,3 +134,33 @@ singulars:
     withoutType: Ten al menos <numberProgress current="{current}" max="{max}" /> <itemQuality
       quality="{quality}" type="crafted"/> o <itemQuality quality="{quality}" type="loot"/>
       objetos equipados.
+  serviceKeywords:
+    text: Necesita un servicio <serviceTier tier="{tier}" /> o superior.
+  currentService:
+    text: Necesita un servicio <serviceTier tier="{tier}" /> <object id="{obj}" />
+      o superior. No puedes usar <object id="{currentObj}" icon="false" />.
+  currentServiceKeywords:
+    text: Necesita un servicio <serviceTier tier="{tier}" /> {objects} o superior.
+      No puedes usar <object id="{currentObj}" icon="false" />.
+  recipeType:
+    text: Al realizar recetas de <object id="{obj}" />.
+  totalSkillLevel:
+    text: Ten un nivel de habilidad total de <numberProgress current="{current}" max="{max}"
+      />.
+  abilityAvailable:
+    text: Habilidad no disponible mientras usas <object id="{obj}" />.
+  petWithKeyword:
+    text: Tener la mascota <object id="{obj}" />. <numberProgress current="{current}"
+      max="{max}" />.
+    textDistinct: Tener la mascota única <object id="{obj}" />. <numberProgress current="{current}"
+      max="{max}" />.
+  hasPet:
+    text: Tener una mascota <object id="{obj}" />.
+  petAmount:
+    text: Tener <numberProgress current="{current}" max="{max}" /> mascotas.
+  petTotalLevels:
+    text: Tener un total de <numberProgress current="{current}" max="{max}" />niveles
+      de mascotas entre todas tus mascotas.
+  petHighestLevel:
+    text: Tener una mascota de al menos nivel <numberProgress current="{current}"
+      max="{max}" />.
