@@ -149,6 +149,10 @@ maps:
         'crafted': Fabricado
         'container': Recipientes
         'loot': Botín
+        "egg": Huevos de mascota
+        "currency": Monedas
+        "quest": Objetos de búsquedas
+        "artifact": Artefactos
   locales:
     grammaticalGender:
       'neutral': Neutro
@@ -169,8 +173,8 @@ maps:
   skillTypes:
     'combat': Combate
     'artisan': Artesanía
-    'gathering': Recogida
-    'utility': Utilidad
+    'gathering': Recolección
+    'utility': Útiles
   abilities:
     types:
       'active': Activo
@@ -178,6 +182,16 @@ maps:
       'consumable': Consumible
       'activity': Actividad
       'emergency': Emergencia
+  mysteriousMerchant:
+    chestTypes:
+      "skilling": Cofres de habilidad
+      "regional": Cofres de facción
+      "guild": Cofres de gremio
+  pets:
+    stages:
+      "egg": Huevo
+      "juvenile": Joven
+      "adult": Adulto
 plurals:
   achievements:
     phrases:
@@ -637,10 +651,12 @@ singulars:
       abilities: Talentos
       baseEfficiency: Eficiencia base
       fromOverencumbered: Sobrecargado
+      fromPets: Mascotas
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> experiencia
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} coleccionables</c> que
         se pueden encontrar
+      reputation: <bp />Reputación de <object id="{faction}" /> <c>+{amount}</c>
     options:
       completeUntilActions: Completar una cantidad de acciones
       numberOfActions: Cantidad de acciones
@@ -903,6 +919,15 @@ singulars:
       noSkillModifiers: Los objetos equipados no tienen modificadores de habilidad.
       noItemEquipped: Ningún objeto equipado
       noItemSelected: Ningún objeto seleccionado
+      gearSlots: Huecos de equipo
+      toolSlots: Huecos de herramienta
+    info:
+      gearInfo: Añade equipo para mejorar los atributos de personaje. Puedes pulsar
+        en cualquiera de los huecos de equipo para ver qué objetos de tu inventario
+        incluir allí.
+      toolInfo: Añade herramientas para mejorar los atributos de tu personaje. De
+        inicio tienes tres huecos disponibles, e irás habilitando más <c>conforme
+        subas el nivel de tu personaje</c>.
   tools:
     phrases:
       emptyToolSlot: Ranura de herramienta vacía
@@ -1082,6 +1107,12 @@ singulars:
       cancelGearSetSwitch:
         desc: Cancela el cambio de kit de equipo para esta acción.
         text: Cancelar cambio de kit de equipo
+      summonPet:
+        desc: Invoca a tu mascota antes de iniciar esta acción.
+        text: Invocar mascota
+      cancelSummonPet:
+        text: Dejar de invocar mascota
+        desc: Cancela la invocación de tu mascota para esta acción.
     suggestions:
       crafting:
         onceCertainRarityIsCrafted: Cuando hayas fabricado una rareza concreta o usado
@@ -1109,6 +1140,8 @@ singulars:
       noPathFound: No se ha encontrado un camino al destino.
       forXActions: Realizar durante <c>{count}</c> acciones
       inputNotMet: Requisitos de entrada no cumplidos
+      petNotFound: No encuentro la mascota elegida. ¿La has jubilado?
+      summoningPet: Invocando mascota <playerPet id="{pet}" />
     suggestedOptions:
       startActivity: Actividad
       startCrafting: Fabricación
@@ -1133,6 +1166,8 @@ singulars:
         comenzada
       startedActivityNoLocation: Actividad <object id="{activity}"/> comenzada
       actionCancelled: Acción cancelada
+      switchedToPet: <playerPet id="{pet}"/> invocado
+      petDoesNotExist: 'La mascota ya no existe: no se puede invocar.'
   announcements:
     phrases:
       new: Nuevo
@@ -1149,3 +1184,104 @@ singulars:
       downloadingAssets: Descargando recursos...
       downloadedFileCount: Descargados <c i=0>{current}</c> de <c i=1>{total}</c>
         archivos
+  pets:
+    phrases:
+      noEggIsHatching: Ahora mismo no hay huevos en incubación. ¡Elige un huevo de
+        mascota para empezar a <c>incubarlo</c>!
+      noPetSummoned: No hay ninguna mascota invocada ahora. ¡<c>Invoca una mascota</c>
+        para que te siga y te otorgue sus atributos y habilidades!
+      requirementsToGainXPNotMet: <c>{name}</c> no puede ganar EXP
+      openHatching: Abrir incubaciones
+      requirementsToHatchNotMet: <c>{name}</c> no puede incubarse
+      isAdvancing: ¡<c>{name}</c> está creciendo!
+      hatchedAt: Incubado en
+      noPets: No tienes mascotas. Puedes obtener alguna encontrando huevos e incubándolos.
+      pets: Mascotas
+      hatching: Incubación de huevos
+      claimPet: Adquirir mascota
+      petEggs: Huevos de mascota
+      chooseEgg: Elige un huevo
+      currentlyHatching: Actualmente incubando
+      summonedPet: Mascota invocada
+      level: Nvl. <c>{leve}</c>
+      canHatch: Puede incubarse
+      canEvolve: Puede crecer
+      summonPet: Invocar mascota
+      changePet: Cambiar mascota
+      dismissPet: Descartar mascot
+      abilities: Habilidades
+      unlocked: Desbloqueado
+      unlockedAt: Desbloqueado a
+      evolve: Crecer
+      hatch: Incubar
+      attributes: Atributos
+      maxLevel: Nivel máximo
+      requirementsToGainXPNeeded: 'Se debe cumplir lo siguiente para que <c>{name}</c>
+        gane EXP:'
+      requirementsToHatchNeeded: 'Se debe cumplir lo siguiente para que <c>{name}</c>
+        se incube:'
+      pet: Mascota
+      egg: Huevo
+      noEggSelected: Sin huevo seleccionado
+      noPetSelected: Sin mascota seleccionada
+      openPets: Abrir mascotas
+      retire: Descartar
+      destroy: Destruir
+      totalXp: EXP total
+      currentXp: EXP actual
+      xpToNextLevel: EXP al próximo nivel
+      currentLevelProgress: Progreso del nivel actual
+      xpToMaxLevel: EXP al nivel máximo
+      maxLevelProgress: Progreso de nivel máximo
+      claimedAt: Adquirido en
+      ownedFor: Conmigo desde
+      nextLevel: Próximo nivel
+      xpToHatch: EXP para incubar
+      hatchingProgress: Progreso de incubación
+      isHatching: ¡<c>{name}</c> está eclosionando!
+      hasHatched: ¡<c>{name}</c> ha eclosionado y ahora es <petStage id="{stage}"/>!
+      hasEvolved: ¡<c>{name}</c> ha crecido y ahora <petStage id="{stage}"/>!
+      noEggs: No tienes huevos de mascota.
+      noPetsFound: No encontré mascotas que coincidan con tu búsqueda.
+      noEggsFound: No encontré huevos que coincidan con tu búsqueda.
+  mysteriousMerchant:
+    dialogue:
+      chestChosen: Vale, o sea que quieres intercambiar los objetos de este <object
+        id="{chest}"/>. ¡Una elección excelente! Ahora, hazme saber si quieres intercambiar
+        objetos de tu <c>banco</c> o <c>inventario</c>. ¡O si quieres comprar algo
+        con tus <c>piezas de cofre</c>!
+      greeting: ¡Encantado de verte, <player />! Tengo algunos <c>objetos raros</c>
+        y <c>servicios</c> que te pueden interesar. He visto tus aventuras a lo largo
+        de Arenum y debo decir que se te da bastante bien explorar. ¿Qué te parece
+        si hacemos un <c>pequeño trato</c>?
+      tradeChestItems: Puedo intercambiar el <c>contenido de tus cofres</c> por algunas
+        <c>piezas de cofre</c>. Y por algunas de esas piezas puedo entregarte los
+        objetos que te habría gustado recibir de los cofres. ¡Por un <c>precio razonable</c>,
+        claro!
+      chooseChest: ¡Sabia elección! ¿Qué cofre te gustaría <c>intercambiar por piezas</c>?
+    phrases:
+      sellItems: Vender objetos
+      ownedCurrency: Monedas disponibles
+      tradingChestItem: Intercambiando objetos del cofre
+      tradeChestItems: Intercambiar objetos de cofre
+      trade: Intercambiar
+      tradeChestChosen: Intercambiar objetos de este cofre
+      sellFromBank: Vender desde el banco
+      sellFromInventory: Vender desde el inventario
+      buyWithChips: Comprar con piezas de cofre
+      sellingPrice: Precio de venta {rarity}
+      buyingPrice: Precio de compra {rarity}
+      totalSellingPrice: Total por vender <c>{amount}</c> * objetos
+      totalBuyingPrice: Total por comprar <c>{amount}</c> * objetos
+      buyItems: Comprar objetos
+      buy: Compras
+      sell: Ventas
+  currencies:
+    phrases:
+      currencies: Tipos de moneda
+      goldCoins: Monedas de oro
+    info:
+      noCurrencies: Por el momento no dispones de monedas. Puedes ganarlas de los
+        <c>gremios</c>, <c>Mercaderes misteriosos</c> y de otras <c>fuentes especiales</c>.
+      thereAreNoPaidCurrencies: La moneda de dentro-del-juego <c>nunca</c> se podrán
+        comprar <c>con dinero real</c>.
