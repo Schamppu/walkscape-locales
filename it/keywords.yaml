@@ -291,10 +291,17 @@ singulars:
       cooking:
         name: Ricetta di cucina
         requirement: Richiede un <object id="recipe_cooking" />.
+      smithing:
+        smelting:
+          name: Fusione
+          requirement: Richiede materiali che possono essere utilizzati nella fusione
+            per <object id="smithing" />.
     products:
       sandwich:
         name: Ricetta per tramezzino
         requirements: Richiede che un <object id="sandwich" /> venga creato con <object
+          id="recipe_cooking" />.
+        requirement: Richiede che un <object id="sandwich" /> sia creato da un <object
           id="recipe_cooking" />.
   activities:
     fishing:
@@ -456,7 +463,7 @@ singulars:
       requirement: Richiede una<object id="lightSource" />.
       requirementLevel: Richiede che l'utente abbia un <keywordRequirements /> equipaggiato.
     heatResist:
-      requirement: Richiede qualcosa <object id="heatResist" />.
+      requirement: Richiede qualcosa <object id="heat_resistant" />.
       name: Resistente al calore
       requirementLevel: Richiede che l'utente abbia qualcosa di equipaggiato <keywordRequirements
         />.
