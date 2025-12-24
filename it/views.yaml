@@ -215,14 +215,40 @@ singulars:
       noActivites: Nessuna attività disponibile in questa località.
       owner: Proprietario
       jobs: Lavori
+      routes: Percorsi
+      jobBoard: Bacheca dei lavori
+      escape: Fuga
+      tapToShowRoutes: Tocca per visualizzare i percorsi
+      showingRoutesFrom: Destinazioni di viaggio da <object id="{from}"/>.
+      noRoutesFromLocation: Nessuna destinazione di viaggio da <object id="{from}"/>.
+      buildings: Edifici
+      factions: Fazioni
   pfpCreation:
     buttons:
       choose: 'Scegli'
       hideHat: Copricapo nascosto
       randomize: Casuale
       showHat: Copricapo visibile
+      enableFaceAccessory: Abilita accessorio viso
+      enableFacepaint: Abilita pittura facciale
+      enableBackAccessory: Abilita accessorio schiena
+      enableEyeAccessory: Abilita accessorio per gli occhi
+      enableDynamicBackground: Abilita sfondo dinamico
     phrases:
       currentSelection: Selezione attuale
+      variant: Variante {number}
+      race: Razza
+      extras: Extra
+      mainOptions: Opzioni principali
+      dynamicBackground: Lo sfondo dinamico cambia l'immagine di sfondo in base alla
+        posizione del tuo personaggio.
+      defaultExpression: Espressione predefinita
+      variants: Varianti
+      noVariantSelected: Nessuna variante selezionata
+      resetToDefault: Ripristina impostazioni predefinite
+      colorOptions: Opzioni colore
+      homeRegion: Regione di origine
+      selectedVariant: Variante {index} selezionata
   activity:
     info:
       consumablesUsage: Puoi scegliere un <c>cibo</c> e una <c>pozione</c> da usare
@@ -363,9 +389,27 @@ singulars:
     info:
       reputation: La reputazione è una misura della tua notorietà nelle diverse fazioni
         di WalkScape.
+      stats: Raccolta di statistiche relative a ogni passo che hai compiuto nel mondo
+        di Arenum.
+      chartWarning:
+        description: Diversi giocatori hanno segnalato problemi di inaccuratezza nei
+          grafici dei passi, causati da importanti modifiche dietro le quinte apportate
+          in un precedente aggiornamento. Se riscontri problemi con i grafici che
+          mostrano valori significativamente diversi rispetto ad altre fonti, questa
+          è la causa più probabile. La logica del gioco dovrebbe comunque funzionare
+          come prima e i problemi relativi ai grafici saranno risolti nei prossimi
+          aggiornamenti.
+        title: Inesattezze nei grafici
     phrases:
       recordedFrom: Registrato da <c>{from}</c> a <c>{to}</c>.
       stats: Statistiche
+      lastUpdated: 'Ultimo aggiornamento: <c>{updatedAt}</c>.'
+      totalSkillXp: XP abilità totale
+      totalSteps: Passi totali
+      highestStepsIn24Hours: Passi più numerosi in 24 ore
+      statUpdatesWithDelay: Questa statistica viene aggiornata con un ritardo massimo
+        di <c>un'ora</c>.
+      reputation: Reputazione
   permissions:
     phrases:
       pedometerPermission: Autorizzazione per il contapassi
@@ -560,6 +604,12 @@ singulars:
         tuo primo set premendo il pulsante <c i=0>Crea nuovo</c> qui sotto.
       gearSetReorderDesc: Puoi riordinare i tuoi set di equipaggiamenti trascinandoli
         nell'elenco sottostante.
+      noGearSets: Non hai ancora creato alcun set di equipaggiamento.
+      noGearSetsList: Non hai ancora alcun set di equipaggiamento. Seleziona <c i=0>Gestisci</c>
+        per creare o importare nuovi set di ingranaggi.
+      youDontHaveAnyItems: Nessun elemento. O non conosci o non possiedi elementi
+        di questo tipo, oppure i tuoi filtri e la tua ricerca non hanno restituito
+        alcun risultato corrispondente.
   rewards:
     phrases:
       alreadyClaimed: Già rivendicato
@@ -626,9 +676,55 @@ singulars:
   mainMenu:
     loadingStates:
       awaitingForRemoveConfig: In attesa di configurazione remota
+      startingToLoadGame: Avvio del caricamento del gioco
+      processingStepHistory: Calcolo dello storico dei passi
+      loadingGuideState: Stato della guida di caricamento
+      loadingPlayerData: Caricamento dei dati del giocatore
+      settingUpStepManager: Configurazione del gestore dei passaggi
+      settingUpTutorialManager: Configurazione del gestore dei tutorial
+      settingUpOnlineSettingsManager: Configurazione del gestore delle impostazioni
+        online
+      authenticating: Autenticazione
+      settingUpCensusManager: Configurazione del gestore del censimento
+      startingProcesses: Avvio dei processi di gioco
+      loadingGameData: Caricamento dei dati di gioco
+      initializingGameData: Inizializzazione dei dati di gioco
+      loadingLocaleState: Caricamento dello stato locale
+      loadingDevicePermissions: Caricamento delle autorizzazioni del dispositivo
+      reportingErrorToSentry: Segnalazione di errori a Sentry
     phrases:
       pleaseWait: Attendere prego...
       loadingGame: Caricamento del gioco in corso... attendere prego!
+      noBetaAccess: Nessun accesso alla versione beta.
+      iAmSure: Ne sono sicuro
+      support: Sostieni il gioco
+      authenticating: Autenticazione in corso...
+      chooseCharacter: Scegli il tuo personaggio o creane uno nuovo.
+      createCharacter: Crea un nuovo personaggio
+      noInternet: Nessuna connessione Internet
+      lostInternet: Il tuo dispositivo ha perso la connessione a Internet. In attesa
+        di una connessione...
+      downloadingLocalisations: Scaricare le localizzazioni aggiornate
+      accountPage: Pagina dell'account
+      testFlight: È possibile scaricare l'ultima versione da <c>TestFlight</c>.
+      areYouAbsolutelySure: Sei assolutamente sicuro? Dopo questo passaggio, perderai
+        definitivamente il tuo personaggio.
+      logOut: Disconnetti
+      areYouSureYouWantToDelete: Sei sicuro di voler eliminare <hl>{name}</hl>?
+      dontDoIt: Non farlo se non sei sicuro.
+      ifYouAreSure: Se sei sicuro, scrivi <c>CANCELLA</c> nel campo e premi continua.
+      deleteWord: CANCELLA
+      deletingCharacter: L'eliminazione del tuo personaggio è <hl>irreversibile</hl>.
+      downloadingContent: Scaricare nuovi contenuti di gioco
+      logIn: Accedi
+      register: Registrati
+      welcomeToWalkscape: Benvenuto su WalkScape, <hl>sconosciuto</hl>. Effettua il
+        login.
+      pleaseEnterCredentials: Inserisci le credenziali del tuo account WalkScape.
+      email: E-mail / Nome utente
+      password: Password
+      googlePlay: Aggiornamento da Google Play
+      restart: Riavvia
   settings:
     categories:
       dataSource:
@@ -769,3 +865,49 @@ singulars:
       chooseABodyType: Scegli un tipo di corporatura
       bodyTypeB: B
       characterName: Nome del personaggio
+  worldMap:
+    phrases:
+      services: Servizi
+      youreHere: Ti trovi attualmente in questa posizione.
+      route: Percorso
+      activities: Attività
+      buildings: Edifici
+      routeFromTo: <location i="{fromID}"/> a <location i="{toID}"/>
+      changeRouteWarning: Modificando il percorso, il viaggio corrente verrà annullato
+        e tornerai alla posizione precedente. Sei sicuro?
+      youAreInspectingFromMap: Stai <c>esplorando dalla mappa del mondo</c>. Per interagire,
+        devi trovarti nella posizione stessa e aprire questa dalla vista principale
+        della posizione.
+      pointsOfInterest: Punti di interesse
+      afterExploring: Dopo aver esplorato la località, potrai vedere i punti di interesse
+        di questa località.
+      information: Informazioni
+      routeRequirementsNotMet: 'I percorsi nel percorso selezionato presentano requisiti
+        che non sono soddisfatti:'
+      youHaveNotExplored: Non hai ancora esplorato questa località. Potrai visualizzare
+        le informazioni relative a questa località dopo averla visitata almeno una
+        volta.
+      currentLocation: Posizione attuale
+      noActivities: Non ci sono attività disponibili in questa località.
+  download:
+    phrases:
+      downloadingAssets: Scaricamento delle risorse in corso...
+      downloadedFileCount: Scaricati <c i=0>{current}</c> di <c i=1>{total}</c> file
+  leaderboards:
+    phrases:
+      friends: Amici
+      leaderboards: Classifiche
+      first: Primo
+      show: Mostra
+      everyone: Tutti
+      totalExperience: Esperienza totale
+      totalSteps: Passi totali
+      totalLevel: Livello di abilità totale
+      achievementPoints: Punti conseguiti
+      last: Ultimo
+      me: Io
+      loadingPage: Caricamento della pagina...
+  tutorial:
+    phrases:
+      noMoreMessages: Messaggi tutorial terminati
+      youWillGain: Selezionando questa opzione otterrai i seguenti articoli.
