@@ -125,6 +125,11 @@ singulars:
       name: Valonlähde
       requirement: 'Edellytys: <object id="lightSource" /> käytössä.'
       requirementLevel: Edellyttää, että käyttäjällä on <keywordRequirements /> käytössä.
+    heatResist:
+      name: Kuumansieto
+      requirement: 'Edellytys: jokin, jolla on <object id="heat_resistant" />.'
+      requirementLevel: 'Edellytys: Käyttäjällä on oltava yllään jotain, jolla on
+        <keywordRequirements />.'
   materials:
     bar:
       name: Harkko
@@ -418,10 +423,17 @@ singulars:
         name: Voileivän resepti
         requirements: 'Edellytys: <object id="sandwich" /> joka valmistetaan <object
           id="recipe_cooking" />.'
+        requirement: 'Edellytys: valmis <object id="sandwich" /> jonka valmistusohjeena
+          toimii <object id="recipe_cooking" />.'
     skills:
       cooking:
         name: Ruoanlaittoresepti
         requirement: 'Edellytys: <object id="recipe_cooking" />.'
+      smithing:
+        smelting:
+          requirement: Edellyttää ainesosia joita voidaan sulattaa (<object id="smithing"
+            />).
+          name: Sulatus
   activities:
     woodcuttingTrees:
       requirement: 'Edellytys: <object id="woodcuttingTrees" />-aktiviteetti.'
@@ -670,6 +682,11 @@ singulars:
       requirement: Vaatii jotakin, joka on <object id="spectral" />.
       requirementLevel: Vaatii jotakin aavemaista, jossa on vähintään <keywordRequirements
         /> vaatimuksissaan.
+    cursed:
+      name: Kirottu
+      requirement: Vaatii jotakin, joka on <object id="cursed" />.
+      requirementLevel: 'Edellytys: Jotakin kirottua, jonka vaatimuksissa on vähintään
+        <keywordRequirements />.'
   locations:
     underwater:
       name: Vedenalainen
@@ -689,3 +706,14 @@ singulars:
       requirement: 'Edellytys: <object id="faction_reward" />.'
       requirementLevel: Vaatii ryhmittymän palkinnon, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
+  eggs:
+    petEgg:
+      requirement: 'Edellytys: <object id="pet_egg" />.'
+      name: Lemmikkimuna
+      requirementLevel: Vaatii lemmikkimunan, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
+    egg:
+      name: Muna
+      requirement: 'Edellytys: <object id="egg" />.'
+      requirementLevel: 'Edellytys: Muna, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.'
