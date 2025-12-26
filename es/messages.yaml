@@ -62,7 +62,7 @@ singulars:
         desbloqueada.
       newItem: <chip><stext><c>Objeto desbloqueado </c></stext></chip> <item id="{item}"/>
         puede equiparse.
-      newRecipe: <chip><stext><c i="0">Nueva receta </c></stext></chip><c i="1">{recipeName}</c>
+      newRecipe: <chip><stext><c i="0">Nueva receta</c></stext></chip> <c i="1">{recipeName}</c>
         desbloqueada.
       newDrop: <chip><stext><c i="0">Nuevo objeto </c></stext></chip><c i="1">{itemName}</c>
         ahora puede obtenerse con <c>{activityName}</c>.
@@ -279,6 +279,10 @@ singulars:
         text: Error al recomprar. No tienes los objetos requeridos en tu inventario
           para completar la recompra.
         title: Error al recomprar
+      mmNotAtSameLocation:
+        title: No has podido comerciar con el Mercader Misterioso
+        text: Ahora mismo no puedes comerciar con el Mercader Misterioso. Asegúrate
+          de que estás en el lugar correcto.
   confirmations:
     changingStepSource:
       text: Cambiar tu origen de los pasos podría causar la pérdida de pasos no sincronizados.
@@ -319,3 +323,27 @@ singulars:
         al viajar? Puedes volver a activarla más tarde desde la configuración. Esta
         configuración está pensada para quienes desean crear personajes especializados
         que no obtengan experiencia de agilidad.
+    claimPet:
+      title: ¿Aceptas la mascota?
+      text: Estás a punto de confirmar esta mascota. Si lo haces, se quedará unida
+        a tí y no podrás comerciarla. ¿Seguro que quieres confirmarla?
+    retirePet:
+      title: ¿Jubilar la mascota?
+      text: Estás en proceso de jubilar a tu mascota. Si lo haces, no podrás volver
+        a utilizarla. ¿Seguro que quieres jubilarla?
+    destroyEgg:
+      title: ¿Rompes el huevo?
+      text: Estás a punto de romper este huevo. De hacerlo, no podrás volver a usarlo.
+        ¿Seguro que quieres romperlo?
+  validators:
+    textField:
+      minTextLength: La longitud mínima es de {min} caracteres.
+      noConsecutiveSpaces: No están permitidos dos espacios consecutivos.
+      noLeadingTrailingSpaces: Los espacios al principio o al final no están permitidos.
+      emojisNotAllowed: No se permite usar emojis.
+      numbersNotAllowed: No se permite usar números.
+      specialCharactersNotAllowed: No se permite usar caracteres especiales.
+      spacesNotAllowed: No se permite usar espacios.
+      swearWordsNotAllowed: No toleramos el lenguaje inapropiado.
+      maxTextLength: La longitud máxima es de {max} caracteres.
+      containsSpecialCharacters: Contiene caracteres especiales que no están permitidos.
