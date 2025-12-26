@@ -538,6 +538,7 @@ singulars:
       changeActivity: Muuta toimintaa
       baseEfficiency: Lähtökohtainen tehokkuus
       fromOverencumbered: Ylikuormittunut
+      fromPets: Lemmikit
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
       savedSteps: Jos keräät askelia kun sinulla ei ole mitään tehtävää käynnissä,
@@ -550,6 +551,7 @@ singulars:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> kokemusta
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} keräilyesinettä</c>,
         jotka on mahdollista löytää
+      reputation: <bp /><object id="{faction}" /> mainetta <c>+{amount}</c>
     options:
       completeUntilActions: Toista tietty määrä kertoja
       numberOfActions: Toimintojen määrä
@@ -728,6 +730,8 @@ singulars:
       noCombatModifiers: Ei taisteluattribuutteja puetuista esineistä.
       noItemEquipped: Ei esinettä käytössä
       noItemSelected: Ei esinettä valittuna
+      toolSlots: Työkalupaikat
+      gearSlots: Varustepaikat
   characterCreation:
     phrases:
       race: Rotu
@@ -1061,6 +1065,8 @@ singulars:
       fromAttribute: Ominaisuudesta {attribute}
       startedNewActivity: Aloitettiin aktiviteetti <object id="{activity}"/> kohteessa
         <object id="{location}"/>
+      switchedToPet: Kutsuttu <playerPet id="{pet}"/>
+      petDoesNotExist: Tätä lemmikkiä ei ole enää olemassa, kutsu epäonnistui.
   queue:
     phrases:
       queuedActions: Jonossa odottavat toiminnot
@@ -1073,6 +1079,8 @@ singulars:
       noPathFound: Kohteeseen ei löytynyt reittiä.
       forXActions: Toistetaan <c>{count}</c> kertaa
       inputNotMet: Syötevaatimukset eivät täyty
+      petNotFound: Valittua lemmikkiä ei löytynyt, oletko eläköinyt sen?
+      summoningPet: Kutsutaan lemmikki <playerPet id="{pet}" />
     options:
       depositUnlockedItems:
         desc: Tallettaa kaikki lukitsemattomat esineet repustasi pankkiin, jos sellainen
@@ -1091,6 +1099,12 @@ singulars:
       removeFromQueue:
         text: Poista jonosta
         desc: Poistaa toiminnon ja kaikki sitä seuraavat toiminnot jonosta.
+      cancelSummonPet:
+        desc: Peruuttaa lemmikin kutsumisen tehtävää varten.
+        text: Peruuta lemmikin kutsuminen
+      summonPet:
+        text: Kutsu lemmikki
+        desc: Kutsuu lemmikkisi ennen toiminnon aloittamista.
     suggestions:
       crafting:
         onceCertainRarityIsCrafted: Kun saat tietyn harvinaisuusasteen esineen valmistettua
@@ -1127,3 +1141,84 @@ singulars:
     phrases:
       downloadingAssets: Ladataan aineistoja...
       downloadedFileCount: Ladattu <c i=0>{current}</c> / <c i=1>{total}</c> tiedostoa
+  pets:
+    phrases:
+      abilities: Kyvyt
+      maxLevelProgress: Edistyminen maksimitasolle
+      hatchingProgress: Hautomisen edistyminen
+      requirementsToGainXPNotMet: <c>{name}</c> ei voi kerryttää kokemusta
+      hasHatched: <c>{name}</c> on kuoriutunut ja on nyt <petStage id="{stage}"/>!
+      pets: Lemmikit
+      noPetSelected: Yhtään lemmikkiä ei ole valittuna
+      noPetsFound: Hakua vastaavia lemmikkejä ei löytynyt.
+      hatching: Haudotaan
+      noEggIsHatching: Tällä hetkellä et haudo yhtään lemmikkimunaa. Valitse lemmikkimuna
+        aloittaaksesi <c>hautomisen</c>!
+      claimPet: Adoptoi lemmikki
+      petEggs: Lemmikkimunat
+      chooseEgg: Valitse muna
+      noPetSummoned: Yhtään lemmikkiä ei tällä hetkellä ole kutsuttu. <c>Kutsu lemmikki</c>
+        seuraamaan sinua retkilläsi ja auttamaan sinua kyvyillä ja ominaisuuksillaan!
+      currentlyHatching: Tällä hetkellä haudotaan
+      summonedPet: Kutsuttu lemmikki
+      level: Taso <c>{level}</c>
+      canHatch: Voi kuoriutua
+      canEvolve: Voi kasvaa
+      summonPet: Kutsu lemmikki
+      changePet: Vaihda lemmikki
+      dismissPet: Lähetä lemmikki kotiin
+      unlocked: Kehitetty
+      unlockedAt: Kehittyy tasolla
+      evolve: Kasva
+      hatch: Kuoriudu
+      attributes: Ominaisuudet
+      maxLevel: Korkein taso
+      requirementsToHatchNotMet: <c>{name}</c> ei voi kuoriutua
+      requirementsToGainXPNeeded: 'Jotta <c>{name}</c> voisi saada kokemusta, seuraavat
+        edellytykset vaaditaan:'
+      requirementsToHatchNeeded: 'Jotta <c>{name}</c> voi kuoriutua, seuraavat edellytykset
+        vaaditaan:'
+      pet: Lemmikki
+      egg: Muna
+      noEggSelected: Yhtään munaa ei ole valittuna
+      openPets: Avaa lemmikkinäkymä
+      openHatching: Avaa hautomisnäkymä
+      retire: Siirrä eläkkeelle
+      destroy: Tuhoa
+      totalXp: Kokonaiskokemus
+      currentXp: Tämänhetkinen kokemus
+      xpToNextLevel: Seuraavalle tasolle
+      currentLevelProgress: Tason edistyminen
+      xpToMaxLevel: Kokemus maksimitasolle
+      claimedAt: Adoptoitu
+      hatchedAt: Kuoriutui
+      ownedFor: Ollut omasi
+      nextLevel: Seuraava taso
+      xpToHatch: Kokemus kuoriutumiseen
+      isHatching: <c>{name}</c> kuoriutuu!
+      isAdvancing: <c>{name}</c> kasvaa!
+      hasEvolved: <c>{name}</c> on kasvanut ja on nyt <petStage id="{stage}"/>!
+      noEggs: Sinulla ei ole adoptoituja lemmikkimunia.
+      noPets: Sinulla ei ole lemmikkejä. Voit saada lemmikin löytämällä lemmikkimunan
+        ja hautomalla sen lemmikiksi.
+      noEggsFound: Hakua vastaavia munia ei löytynyt.
+  mysteriousMerchant:
+    phrases:
+      sellingPrice: Tason {rarity} myyntihinta
+      tradeChestItems: Käy kauppaa arkkusaaliilla
+      trade: Tee kaupat
+      tradeChestChosen: Käy kauppaa arkkusaaliilla
+      tradingChestItem: Tehdään kaupat esineellä
+      sellFromInventory: Myy repusta
+      sellFromBank: Myy pankista
+      buyWithChips: Osta pelimerkeillä
+      ownedCurrency: Omistettu valuutta
+      buyingPrice: Tason {rarity} ostohinta
+      sell: Myy
+      buy: Osta
+      buyItems: Osta esineitä
+      sellItems: Myy esineitä
+  currencies:
+    phrases:
+      currencies: Valuutat
+      goldCoins: Kultakolikot
