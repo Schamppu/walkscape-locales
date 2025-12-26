@@ -256,6 +256,20 @@ singulars:
       title: Myydäänkö arvotavaraa?
       text: Aiot <c>myydä arvoesineitä, mikä voi kaduttaa jälkeenpäin</c>! Oletko
         varma, että haluat myydä nämä?
+    retirePet:
+      title: Eläköidäänkö lemmikki?
+      text: Olet aikeissa siirtää lemmikkisi viettämään eläkepäiviä maaseudulle. Jos
+        eläköit lemmikin, se poistuu käytöstäsi pysyvästi. Oletko varma, että haluat
+        eläköidä tämän lemmikin?
+    destroyEgg:
+      title: Tuhotaanko muna?
+      text: Olet aikeissa tuhota munan. Munan tuhoaminen poistaa sen käytöstäsi pysyvästi.
+        Oletko varma, että haluat tuhota tämän munan?
+    claimPet:
+      title: Adoptoitko lemmikin?
+      text: Olet aikeissa adoptoida lemmikin. Kun olet adoptoinut lemmikin, se on
+        sidottu omistukseesi, eikä sillä voi käydä kauppaa. Oletko varma, että haluat
+        adoptoida tämän lemmikin?
   info:
     game:
       importGearSetFailed:
@@ -310,3 +324,19 @@ singulars:
         title: Jonon raja tuli vastaan
         text: Et voi laittaa jonoon enempää kuin 3 tehtävää kerralla. Tee loppuun
           tai peruuta jokin toiminto ennen kuin lisäät jonoon uusia.
+      mmNotAtSameLocation:
+        title: Kummallisen kauppiaan kanssa kaupankäynti ei onnistu
+        text: Et voi käydä kauppaa Kummallisen kauppiaan kanssa juuri nyt. Varmista,
+          että olet oikeassa paikassa.
+  validators:
+    textField:
+      containsSpecialCharacters: Tekstissä on erikoismerkkejä, joita ei sallita.
+      maxTextLength: Suurin sallittu pituus on {max} merkkiä.
+      minTextLength: Pienin sallittu pituus on {min} merkkiä.
+      noConsecutiveSpaces: Peräkkäisiä välilyöntejä ei sallita.
+      noLeadingTrailingSpaces: Välilyöntejä ei sallita alussa tai lopussa.
+      emojisNotAllowed: Emojeja ei sallita.
+      numbersNotAllowed: Numeroita ei sallita.
+      specialCharactersNotAllowed: Erikoismerkkejä ei sallita.
+      spacesNotAllowed: Välilyöntejä ei sallita.
+      swearWordsNotAllowed: Asiatonta kielenkäyttöä ei sallita.
