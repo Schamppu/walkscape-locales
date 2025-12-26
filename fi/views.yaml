@@ -148,6 +148,10 @@ maps:
         "special": Erikoiset
         "tool": Työkalut
         "gear": Varusteet
+        "egg": Lemmikkimunat
+        "quest": Tehtäväesineet
+        "currency": Valuutat
+        "artifact": Artefaktit
   locales:
     grammaticalGender:
       'masculine': Maskuliini
@@ -177,6 +181,16 @@ maps:
       'consumable': Hyödyke
       'activity': Toiminta
       'emergency': Hätätilanne
+  pets:
+    stages:
+      "juvenile": Nuori
+      "egg": Muna
+      "adult": Aikuinen
+  mysteriousMerchant:
+    chestTypes:
+      "skilling": Taitoarkut
+      "regional": Ryhmittymäarkut
+      "guild": Kilta-arkut
 plurals:
   activity:
     phrases:
@@ -732,6 +746,13 @@ singulars:
       noItemSelected: Ei esinettä valittuna
       toolSlots: Työkalupaikat
       gearSlots: Varustepaikat
+    info:
+      gearInfo: Ota käyttöön varusteita, ja parannat hahmosi ominaisuuksia. Kun napautat
+        mitä tahansa varustepaikkaa alla, näet mitä repussasi olevia varusteita voit
+        käyttää siinä paikassa.
+      toolInfo: Käytä työkaluja parantaaksesi hahmosi ominaisuuksia. Aluksi sinulla
+        on yhteensä kolme työkalupaikkaa käytettävissäsi. Voit avata lisää työkalupaikkoja
+        <c>nostamalla hahmosi tasoa</c>.
   characterCreation:
     phrases:
       race: Rotu
@@ -1218,7 +1239,28 @@ singulars:
       buy: Osta
       buyItems: Osta esineitä
       sellItems: Myy esineitä
+      totalSellingPrice: Loppusumma <c>{amount}</c> esineen myynnistä
+      totalBuyingPrice: Loppusumma <c>{amount}</c> esineen ostamisesta
+    dialogue:
+      greeting: Mukava tavata, <player />! Minulla on <c>harvinaisia esineitä</c>
+        ja <c>palveluja</c>, joista saattaisit olla kiinnostunut. Olen nähnyt sinun
+        seikkailevan Arenumin eri kolkissa, ja pitää sanoa, olet kyllä melkoinen tutkimusretkeilijä.
+        Mitäpä jos kävisimme <c>hieman kauppaa</c>?
+      tradeChestItems: Voin vaihtaa <c>arkuista saamaasi saalista</c> <c>arkkupelimerkeiksi</c>.
+        Joitakin pelimerkkejä vastaan, voin vaihtaa sinulle esineitä joita olet halunnut
+        saada kyseisistä arkuista. <c>Käypään hintaan</c> tietenkin!
+      chooseChest: Viisas valinta! Mistä arkusta haluaisit <c>vaihtaa esineitä</c>?
+      chestChosen: Ahaa, haluat vaihtaa esineitä, joita <object id="{chest}"/> voi
+        tuottaa? Erinomainen valinta! Kerro seuraavaksi, haluatko vaihtaa esineitä
+        <c>pankista</c> vai <c>repustasi</c>. Tai jos haluat kenties ostaa jotain
+        olemassaolevilla <c>arkkupelimerkeilläsi</c>!
   currencies:
     phrases:
       currencies: Valuutat
       goldCoins: Kultakolikot
+    info:
+      noCurrencies: Sinulla ei tällä hetkellä ole valuuttaa. Voit saada erilaisia
+        vaihdon välineitä <c>killoista</c>, <c>Kummalliselta kauppiaalta</c>, ja muista
+        <c>erikoisista lähteistä</c>.
+      thereAreNoPaidCurrencies: Pelinsisäisiä valuuttoja <c>ei koskaan</c> voi ostaa
+        <c>pelin ulkopuolisella rahalla</c>.
