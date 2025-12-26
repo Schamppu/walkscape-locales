@@ -16,7 +16,7 @@ singulars:
     text: Saavuta jokaisessa taidossa vähintään taso <numberProgress current="{current}"
       max="{max}" />.
   levelUpSkills:
-    text: Taitojen kokonaistason on oltava <numberProgress current="{current}" max="{max}"
+    text: Nosta taitojen kokonaistasoksi <numberProgress current="{current}" max="{max}"
       />.
   haveItemStack:
     text: Omista <object id="{obj}" alwaysShow="true" /> esineelle pino, jossa on
@@ -53,6 +53,13 @@ singulars:
     searchTeam: Suorita Mustasilmähuipun <object id="activity-black_eye_peak_search_team-d1ad835f-0898-4fc7-8f0a-4b0626d95306"
       alwaysShow="true" /> -aktiviteetti kohteessa <object id="location-horn_of_respite-1661d247-11f1-49eb-b927-6e59c8fd7774"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> kertaa.
+    wreckDiving: Toista aktiviteettia <object id="activity-wreck_diving-12e980cd-058a-42c4-8358-ba7afe1c319c"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> kertaa.
+    wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true"
+      />.
+    notUnderwater: Sijainti ei ole <object id="location_underwater" />.
+    notAgility: Kun et käytä taitoa <skill skill="agility"/>.
+    smeltRecipe: Kun <object id="recipe_smelting" /> käynnissä.
   factionReputations:
     syrenthiaReputation: Saavuta mainetaso <numberProgress current="{current}" max="{max}"
       /> ryhmittymässä <realm realm="faction-syrenthia-6e9359fa-597b-4448-9df5-cc3fff9a5108"
@@ -136,3 +143,39 @@ singulars:
   keywordWithLevelEquipped:
     text: Ylläsi on oltava <object id="{obj}" /> joka vaatii vähintään <skill skill="{skill}"/>tason
       <numberProgress current="{current}" max="{max}" />.
+  serviceKeywords:
+    text: Vaatii palvelun tasoa <serviceTier tier="{tier}" /> {objects} tai paremman.
+  itemsGained:
+    text: Löydä <object id="{obj}" />. <numberProgress current="{current}" max="{max}"
+      />.
+  currentService:
+    text: 'Tarvitsee palvelun tasoa <serviceTier tier="{tier}" /><object id="{obj}"
+      /> tai paremman. Et voi käyttää: <object id="{currentObj}" icon="false" />.'
+  currentServiceKeywords:
+    text: 'Tarvitsee palvelutason <serviceTier tier="{tier}" /> {objects} tai paremman.
+      Et voi käyttää: <object id="{currentObj}" icon="false" />.'
+  recipeType:
+    text: Kun valmistat reseptityyppiä <object id="{obj}" />.
+  petAmount:
+    text: Omista <numberProgress current="{current}" max="{max}" /> lemmikkiä.
+  totalSkillLevel:
+    text: Nosta taitosi kokonaistasolle <numberProgress current="{current}" max="{max}"
+      />.
+  abilityAvailable:
+    text: Kun kyky <object id="{obj}" /> on saatavilla.
+  petWithKeyword:
+    text: Omista <object id="{obj}" /> lemmikkiä. <numberProgress current="{current}"
+      max="{max}" />.
+    textDistinct: Omista <object id="{obj}" /> erilaista lemmikkiä. <numberProgress
+      current="{current}" max="{max}" />.
+  hasPet:
+    text: Adoptoi <object id="{obj}" />.
+  petTotalLevels:
+    text: Kasvata lemmikkisi kaikista yhteenlasketulle tasolle <numberProgress current="{current}"
+      max="{max}" />.
+  petHighestLevel:
+    text: Kasvata lemmikki ainakin tasolle <numberProgress current="{current}" max="{max}"
+      />.
+  itemsWithKeywordCrafted:
+    text: Valmista <object id="{obj}" /> esinettä. <numberProgress current="{current}"
+      max="{max}" />.
