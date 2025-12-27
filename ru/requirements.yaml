@@ -63,7 +63,7 @@ singulars:
   haveBankStacks:
     text: У вас <numberProgress current="{current}" max="{max}" /> стаков в банке.
   activityType:
-    singleKeyword: Во время выполнения активности <object id="{obj}" />.
+    singleKeyword: Выполняя активность <object id="{obj}" />.
   realm:
     text: Находясь в <realm realm="{realm}" />.
   locationHasKeywords:
@@ -88,6 +88,9 @@ singulars:
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> раз.
     wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true"
       />.
+    notAgility: Не выполняя <skill skill="agility"/>.
+    smeltRecipe: Выполняя рецепт <object id="recipe_smelting" />.
+    notUnderwater: Не находясь <object id="location_underwater" />.
   skillLevel:
     text: Требуется уровень навыка <skill skill="{skill}" level="{level}"/>.
   achievementPoints:
@@ -141,3 +144,30 @@ singulars:
   itemsGained:
     text: Получить <object id="{obj}" />. <numberProgress current="{current}" max="{max}"
       />.
+  serviceKeywords:
+    text: Требуется <serviceTier tier="{tier}" /> {objects} или лучше.
+  currentService:
+    text: Требуется <serviceTier tier="{tier}" /><object id="{obj}" /> или лучше.
+      Вы не можете использовать <object id="{currentObj}" icon="false" />.
+  currentServiceKeywords:
+    text: Требуется <serviceTier tier="{tier}" /> {objects} или лучше. Вы не можете
+      использовать <object id="{currentObj}" icon="false" />.
+  recipeType:
+    text: Выполняя рецепт <object id="{obj}" />.
+  petWithKeyword:
+    text: Требуется питомец <object id="{obj}" />. <numberProgress current="{current}"
+      max="{max}" />.
+    textDistinct: Требуются различные питомцы <object id="{obj}" />. <numberProgress
+      current="{current}" max="{max}" />.
+  petAmount:
+    text: Требуется питомцев <numberProgress current="{current}" max="{max}" />.
+  petTotalLevels:
+    text: Требуется общий уровень по всем питомцам <numberProgress current="{current}"
+      max="{max}" />.
+  petHighestLevel:
+    text: Требуется питомец с минимальным уровнем <numberProgress current="{current}"
+      max="{max}" />.
+  abilityAvailable:
+    text: Пока способность <object id="{obj}" /> активна.
+  hasPet:
+    text: Требуется питомец <object id="{obj}" />.
