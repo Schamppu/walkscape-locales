@@ -4,11 +4,18 @@ singulars:
       cooking:
         name: Кулинарный рецепт
         requirement: Требуется <object id="recipe_cooking" />.
+      smithing:
+        smelting:
+          requirement: Требует материалы для плавки, выполняя <object id="smithing"
+            />.
+          name: Плавка
     products:
       sandwich:
         requirements: Требуется, чтобы <object id="sandwich" /> был приготовлен <object
           id="recipe_cooking" />.
         name: Рецепт сэндвича
+        requirement: Требуется <object id="sandwich" />, изготовленный используя <object
+          id="recipe_cooking" />.
   activities:
     woodcuttingTrees:
       requirementLevel: Необходимо вырубить деревья, соответствующие требованиям <keywordRequirements
@@ -577,6 +584,10 @@ singulars:
       requirement: Требуется <object id="lightSource" />.
       requirementLevel: Требуется источник света с характеристиками <keywordRequirements
         />.
+    heatResist:
+      name: Теплостойкий
+      requirement: Требуется <object id="heat_resistant" /> предмет.
+      requirementLevel: Требуется что-то с характеристиками <keywordRequirements />.
   misc:
     trash:
       name: Мусор
@@ -591,6 +602,11 @@ singulars:
       requirement: Требуется <object id="spectral" /> предмет.
       requirementLevel: Требуется призрачный предмет с характеристиками <keywordRequirements
         />.
+    cursed:
+      requirementLevel: Требуется проклятый предмет с характеристиками <keywordRequirements
+        />.
+      name: Проклятый
+      requirement: Требуется <object id="cursed" /> предмет.
   itemSets:
     treasureHunter:
       name: Комплект искателя сокровищ
@@ -656,5 +672,9 @@ singulars:
     egg:
       name: Яйцо
       requirement: Требуется <object id="egg" />.
+      requirementLevel: Требуется яйцо с характеристиками <keywordRequirements />.
     petEgg:
       requirement: Требуется <object id="pet_egg" />.
+      requirementLevel: Требуется яйцо питомца с характеристиками <keywordRequirements
+        />.
+      name: Яйцо питомца
