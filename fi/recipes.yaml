@@ -533,13 +533,24 @@ singulars:
       silverBar:
         name: Valmista hopeaharkko
         desc: Sulatat joukon hopeahippuja ja valat niistä hopeaharkon.
-        activityDesc: Kuumennat kourallisen hopeahippuja tulipesässä ja valat niistä
-          harkon.
+        activityDesc: Kuumennat melkoisen satsin hopeahippuja tulipesässä ja valat
+          niistä harkon.
       goldBar:
         name: Valmista kultaharkko
         desc: Sulatat joukon kultahippuja ja valat niistä kultaharkon.
-        activityDesc: Sulatat joukon kultahippuja ahjon tulipesässä ja valat niistä
-          harkon.
+        activityDesc: Sulatat melkoisen joukon kultahippuja ahjon tulipesässä ja valat
+          niistä harkon.
+      adamantBar:
+        name: Valmista adamanttiharkko
+        desc: Valaa adamanttiharkon keräämästäsi malmista.
+        activityDesc: Paiskaat malmisi vihaisesti muottiin sulatettavaksi adamanttiharkoksi.
+          Et ole varma, miksi olet niin vihainen, mutta se jotenkin tuntuu oikealta
+          mielentilalta tähän.
+      violiteBar:
+        name: Valmista violiittiharkko
+        desc: Valaa violiittimalmista violiittiharkon.
+        activityDesc: Katselet kun sinipunainen violiittimalmi kuplii raivokkaasti
+          ja sulaa lopulta juoksevaksi metalliksi ahjon tulipesässä ja muovautuu harkoksi.
     wooden:
       woodenShield:
         name: Valmista puinen kilpi
@@ -619,6 +630,13 @@ singulars:
           mistä kohden vahvistaa palkeesi pitkäikäisemmiksi.
         name: Valmista vahvistetut palkeet
         desc: Parantele peruspalkeista vahvistetut palkeet
+    misc:
+      ectoplasm:
+        name: Vala ektoplasmaa
+        desc: Sulata ektoplasma irti kivestä ja työstä se jalostetummaksi kiinteäksi
+          muodokseen.
+        activityDesc: Sulatat ektoplasmakiveä, ja vapautat siitä ektoplasmaenergiaa
+          joita työstämisesi jalostaa.
   carpentry:
     planks:
       willowPlank:
@@ -676,6 +694,20 @@ singulars:
         name: Valmista bambulankku
         activityDesc: Työstäminen on hankalaa, mutta leikkaat ja kerrostat bambusäikeitä
           kauniiksi lankuksi.
+      yewPlank:
+        name: Leikkaa marjakuusilankku
+        desc: Valmista marjakuusilankku, joka pysyy vahvana ja tiheänä vaikka yhtä
+          aikaa jokseenkin joustavana.
+        activityDesc: Puun leikkaaminen kestää jonkin aikaa, koska se on tiiviimpää
+          kuin useimmat puulajit, joita olet aiemmin työstänyt. Marjakuusi on varsin
+          vahvaa. Se lopulta alistuu tahtoosi ja muovautuu lankuksi.
+      mahoganyPlank:
+        name: Leikkaa mahonkilankku
+        desc: Valmista mahonkilankku, kestävää kovapuuta jonka väritys on erinomainen
+          ja käytettävyys sitäkin parempi.
+        activityDesc: Leikkaat lähestulkoon käteesi ja jalkaasi useammankin kerran
+          yrittäessäsi sahata pöllit siisteiksi mahonkilankuiksi. Kun ne vihdoin valmistuvat,
+          ne ovat valmiita mihin vain mitä seuraavaksi niiden varalle keksit.
     scrap:
       birchPlankScrap:
         name: Valmista koivulankku (romu)
@@ -720,6 +752,13 @@ singulars:
         desc: Muodosta puuromusta tasainen ja hienostunut lankku jatkokäyttöön.
         activityDesc: Muodostat tarkan yhdistelyn tuloksena tasaisen vaahteralankun
           puuromusta.
+    misc:
+      ectoplasm:
+        activityDesc: Halkaiset ektoplasmaa sisältävät pöllit, ja vapautat niiden
+          aavemaisen energian, jota työstät ja jalostat uuteen muotoon.
+        name: Leikkaa ektoplasmaksi
+        desc: Halkaise pöllit vapauttaaksesi niissä piilevä ektoplasma, ja työstä
+          se jalostuneempaan kiinteään muotoonsa.
   cooking:
     fish:
       cookedShrimp:
@@ -1025,6 +1064,27 @@ singulars:
         activityDesc: Viipaloit ja sen jälkeen varovasti paahdat paprikat parahultaisella
           lämmöllä. Kun ne valmistuvat, kääntelet ja maustat niitä, kunnes ne kehittävät
           sopivan hiiltyneen pinnan ja aromin.
+      moonshine:
+        name: Tislaa kuutamokonjakkia
+        desc: Tämä vahva kotitekoinen viina, joka tunnetaan myös korpikuusen kyyneleinä,
+          luodaan tislaamalla yhdistetyt ainesosat.
+        activityDesc: Sekoitat ektoplasman olueen, ja tislaat seoksen nostaaksesi
+          tuotoksen suhteellista alkoholipitoisuutta. Lopputuotos on perin jämäkkä
+          juoma.
+      fortifiedWine:
+        desc: Tätä viiniä on paranneltu mätänupukan maanläheisillä mauilla ja kestävyydellä.
+        activityDesc: Murskaat mätänupukan terälehtiä, kunnes sen voi sekoittaa viiniin,
+          jonka väri tummuu selvästi. Annat maun ja mätänupukan voiman hetken asettua
+          parantamaan viiniä, vaikka olet varma että jotkut väittäisivät alkuperäisen
+          maistuvan paremmalta.
+        name: Pane terästettyä viiniä
+      fireballWine:
+        name: Pane tulipalloviiniä
+        desc: Tätä vahvistettua viiniä on parannettu edelleen mausteella, joka tasaa
+          alkoholin polttelua kiteytyneen liekin avulla.
+        activityDesc: Jauhat kiteytyneen liekin hienoksi jauheeksi, joka muistuttaa
+          nyt kipinöitä. Kaadat ne terästettyyn viiniin ja sekoittelet seosta, jolloin
+          viinin väri muuttuu kirkkaamman sävyiseksi.
   trinketry:
     amulets:
       jarvonianFlowerNecklace:
@@ -1110,6 +1170,11 @@ singulars:
           käsitöistä kiinnostuneelle.
         name: Valmista vaaleanpunaisen helmen riipus
         desc: Yhdistä vaaleanpunaisen helmen hely riipukseen.
+      wraithwaterFlowerNecklace:
+        name: Valmista Kalmankosteikon kukkakäädyt
+        desc: Yhdistä leskensuudelman kukka ja luita valmistaaksesi aavemaiset kukkakäädyt.
+        activityDesc: Asettelet luut kauniisti ja sidot ne yhteen leskensuudelman
+          kukkien kanssa, minkä tuloksena on selkäpiitä karmiva kaulakoru.
     gems:
       shapeOpal:
         activityDesc: Irrotat varovaisesti palasen arvokasta jalokivimateriaalia sitä
