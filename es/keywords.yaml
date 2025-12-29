@@ -51,7 +51,7 @@ singulars:
       requirementLevel: Requiere una gema tallada que tenga al menos <keywordRequirements
         /> de requisito.
     misc:
-      name: Misceláneo
+      name: Variado
       requirement: Requiere un objeto <object id="misc" />.
       requirementLevel: Requiere un objeto misceláneo que tenga al menos <keywordRequirements
         /> de requisito.
@@ -292,10 +292,17 @@ singulars:
         name: Receta de sándwich
         requirements: Requiere un <object id="sandwich" /> hecho con una <object id="recipe_cooking"
           />.
+        requirement: Precisa un <object id="sandwich" /> hecho con <object id="recipe_cooking"
+          />.
     skills:
       cooking:
         name: Receta de cocina
         requirement: Requiere una <object id="recipe_cooking" />.
+      smithing:
+        smelting:
+          name: Fundición
+          requirement: Precisa materiales que se usen en fundición para <object id="smithing"
+            />.
   activities:
     woodcuttingTrees:
       name: Talar árboles
@@ -461,6 +468,11 @@ singulars:
         equipada.
       name: Fuente de luz
       requirement: Requiere llevar una <object id="lightSource" />.
+    heatResist:
+      requirementLevel: Precisa que el usuario haya equipado algo <keywordRequirements
+        />.
+      name: Resistente al fuego
+      requirement: Precisa algo <object id="heat_resistant" />.
   search:
     skills:
       crafting:
@@ -649,6 +661,11 @@ singulars:
       requirement: Requiere algo <object id="spectral" />.
       requirementLevel: Requiere algo espectral que tenga al menos <keywordRequirements
         /> de requisito.
+    cursed:
+      name: Maldito
+      requirement: Precisa algo <object id="cursed" />.
+      requirementLevel: Precisa algo maldito que contenga al menos <keywordRequirements
+        /> en sus requisitos.
   achievements:
     percentage:
       name: Porcentaje de logro
@@ -691,3 +708,14 @@ singulars:
       requirement: Requiere una <object id="faction_reward" />.
       requirementLevel: Requiere una recompensa de facción que tenga al menos <keywordRequirements
         /> de requisito.
+  eggs:
+    egg:
+      name: Huevo
+      requirement: Precisa un <object id="egg" />.
+      requirementLevel: Precisa un huevo que al menos tenga <keywordRequirements />
+        entre sus requisitos.
+    petEgg:
+      name: Huevo de mascota
+      requirement: Precisa un <object id="pet_egg" />.
+      requirementLevel: Precisa un huevo que al menos tenga <keywordRequirements />
+        en sus requerimientos.
