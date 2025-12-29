@@ -185,6 +185,11 @@ singulars:
         desc: Słoik mocnego alkoholu, który ma nieco upiorny blask. Sam zapach jest
           nieziemski i grozi odurzeniem.
         name: Księżycówka
+      tastyBreakfast:
+        desc: Śniadanie z wszystkimi dodatkami. Tak obfity posiłek będzie świetnym
+          sposobem na rozpoczęcie dnia, nawet jeśli nie jest to już jego prawdziwy
+          początek.
+        name: Smaczne Śniadanie
     memosphere:
       carpentryMemosphere:
         name: Memosfera Stolarstwa
@@ -307,6 +312,15 @@ singulars:
         desc: Ta ryba o dużych ustach ma pyszny, mętny smak, lubiany głównie przez
           mieszkańców bagien.
         name: Gotowany Bass
+    misc:
+      driedFruit:
+        desc: Mieszanka różnych owoców, które zostały wysuszone, aby zapobiec ich
+          zepsuciu. Nadal smakują całkiem dobrze!
+        name: Suszone Owoce
+      nutMix:
+        name: Mieszanka Orzechów
+        desc: Mieszanka różnych orzechów, która zapewnia solidną dawkę białka i przyjemny
+          smak. Alergie atakują.
   containers:
     skilling:
       foraging:
@@ -1147,6 +1161,10 @@ singulars:
           name: Widmowy Naszyjnik
           desc: Kompozycja z ponurych kwiatów. Noszenie jej pozwala poczuć lekką więź
             ze zmarłymi.
+        topazTippedChisel:
+          name: Stalowo-Topazowa Patelnia
+          desc: Sama krawędź dłuta wykonana jest z topazu, dzięki czemu jest bardzo
+            ostra.
       smithing:
         reinforcedBellows:
           name: Wzmocnione Miechy
@@ -1202,6 +1220,9 @@ singulars:
           name: Patelnia z Brązu
           desc: Ze względu na ciepły odcień, jedzenie zawsze prezentuje się lepiej
             na tej patelni.
+        jadeTippedSteelPan:
+          desc: Końcówka uchwytu tej stalowej patelni jest ozdobiona kamieniem jadeitowym.
+          name: Stalowo-Jadeitowa Patelnia
   looted:
     equipmentSets:
       dimensional:
@@ -1357,7 +1378,7 @@ singulars:
           desc: Dzięki tej wytrzymałej linie możesz wspinać się nawet na najwyższe
             góry.
         featherCape:
-          name: Pierzana Peleryna
+          name: Pierzasta Peleryna
           desc: Ta peleryna jest lekka jak pióra, ponieważ jest z nich wykonana.
         ironThermos:
           name: Żelazny Termos
@@ -1399,6 +1420,11 @@ singulars:
           desc: Buty z osobnymi przestrzeniami na każdy palec. Definicja funkcjonalności
             ponad formą.
           name: Kciukobuty
+        featherBoots:
+          desc: Powszechnie błędnie uważa się, że te buty nie dają możliwości latania,
+            ale to nie powstrzymuje ludzi przed próbami. Wyglądają bardzo modnie w
+            połączeniu z peleryną z piór.
+          name: Pierzaste Buty
       carpentry:
         handsaw:
           name: Piła Ręczna
@@ -1684,6 +1710,14 @@ singulars:
           desc: Można go wbić w ziemię i używać do podtrzymywania wędki, aby utrzymać
             ją w wodzie. Przydatny, gdy cierpliwość się kończy.
           name: Stojak Wędkarski
+        fishnetShirt:
+          name: Siatkowa Koszulka
+          desc: Siatka rybacka wygląda spektakularnie na twoim nagim torsie. Wyglądasz
+            jak jedna śliczna rybka złapana w sieć.
+        fishingStringer:
+          desc: Cienka linka z długą, mocną igłą na końcu, służąca do przekłuwania
+            złowionych ryb. Na tej lince można ułożyć dziesiątki ryb.
+          name: Linka Wędkarska
       foraging:
         halflingsFeetSlippers:
           name: Kapcie Niziołka
@@ -1772,6 +1806,10 @@ singulars:
           desc: Kiedyś wielki sierp, teraz zardzewiały. Nadal można go używać do zbieractwa,
             ale nie tak dobrze jak kiedyś.
           name: Zardzewiały Sierp
+        dragonflyCatchingNet:
+          name: Siatka na Ważki
+          desc: Ta solidna siatka na kiju jest większa niż te używane do łapania mniejszych
+            owadów. Jej kształt ułatwia łapanie szybkich i pięknych ważek.
       mining:
         miningHelm:
           name: Hełm Górniczy
@@ -3482,6 +3520,17 @@ singulars:
         desc: Pluszowy miś, który zawsze sprawia wrażenie, jakby cię obserwował. Wygląda
           na to, że ląduje w miejscach, których nie pamiętasz, odkąd go znalazłeś.
           Spanie będzie teraz o wiele trudniejsze, prawda?
+      dragonfly:
+        name: Lśniąca Szmaragdowa Ważka
+        desc: Rzadka ważka spotykana na łąkach. Jej jaskrawe ubarwienie współgra z
+          jej szybkością i tajemniczą aurą. Prawdopodobnie to nastolatek w wieku ważkowym.
+      jarOfDirt:
+        name: Słoik Brudu
+        desc: Wydaje się, że to dziwna rzecz do trzymania. Posiadasz słoik z brudem?
+      roseQuartz:
+        name: Różowy Kwarc
+        desc: Kawałek kryształu, który lśni intensywnym różowym odcieniem. Wygląda,
+          jakby wzmacniał otaczające go klejnoty.
     visas:
       jarvonianLetterOfPassage:
         name: Jarvoński List Przewozowy
@@ -3507,6 +3556,17 @@ singulars:
       name: Ektoplazma
       desc: Wyrafinowany kawałek energii duchowej, który w dotyku wygląda i wydaje
         się śliski. Duchy cenią go w tej formie, a mimo to ma on jeszcze inne zastosowania.
+    chips:
+      skill:
+        t1:
+          agility:
+            desc: Cenne monety, które można wymienić na przedmioty ze skrzyń zwinności
+              u Tajemniczego Kupca.
+            name: Monety Zwinności
+          carpentry:
+            desc: Cenne monety, które można wymienić na przedmioty ze skrzyń stolarstwa
+              u Tajemniczego Kupca.
+            name: Monety Stolarstwa
   eggs:
     camelEgg:
       name: Wielbłądzie Jajo
