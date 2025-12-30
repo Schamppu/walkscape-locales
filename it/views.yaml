@@ -533,6 +533,17 @@ singulars:
       startedNewActivity: Iniziata <object id="{activity}"/> in <object id="{location}"/>
       startedActivityNoLocation: Iniziata <object id="{activity}"/>
       whileYouWereAway: Mentre eri via ...
+      switchedToGearSet: Passato al set di equipaggiamento <c>{name}</c>
+      fromProc: Da <c>{proc}</c>
+      switchedToPet: Evocato <playerPet id="{pet}"/>
+      gearSetDoesNotExist: Il set di equipaggiamento non esiste più
+      consumablesUsed: Consumabile utilizzato
+      actionsCompleted: Azioni completate
+      none: Nessuno
+      fromSource: Da <object id="{source}"/>
+      fromAttribute: Dall'attributo {attribute}
+      actionCancelled: Azione annullata
+      petDoesNotExist: L'animale domestico non esiste più, non è possibile evocarlo.
   faction:
     phrases:
       openFaction: Apri fazione
@@ -692,6 +703,25 @@ singulars:
       loadingLocaleState: Caricamento dello stato locale
       loadingDevicePermissions: Caricamento delle autorizzazioni del dispositivo
       reportingErrorToSentry: Segnalazione di errori a Sentry
+      startingEventManagerProcess: Avvio del processo di gestione degli eventi
+      startingPlayerManagerProcess: Avvio del processo di gestione dei giocatori
+      loadingLocalStorage: Caricamento memoria locale in corso...
+      loadingSteps: Caricamento dei passi
+      settingUpPlayerMetadata: Impostazione dei metadati del giocatore
+      updatingStepReadTime: Aggiornamento del tempo di lettura dei passi
+      changingMainCharacter: Cambiamento del personaggio principale
+      loadingStepHistoryData: Caricamento dei dati relativi alla cronologia delle
+        fasi
+      startingErrorManagerProcess: Avvio del processo di gestione degli errori
+      startingNetworkProcess: Avvio del processo di rete
+      startingGameManagerProcess: Avvio del processo di gestione del gioco
+      startingAuthProcess: Avvio del processo di autenticazione
+      startingTimeManagerProcess: Avvio del processo di gestione dell'ora di inizio
+      startingNotificationManagerProcess: Avvio del processo di gestione delle notifiche
+      startingOTAManagerProcess: Avvio del processo di gestione patrimoniale
+      spawningIsolate: Isolamento della riproduzione...
+      startingSettingsManagerProcess: Avvio del processo di gestione delle impostazioni
+      startingSentry: Avvio di Sentry...
     phrases:
       pleaseWait: Attendere prego...
       loadingGame: Caricamento del gioco in corso... attendere prego!
@@ -725,6 +755,9 @@ singulars:
       password: Password
       googlePlay: Aggiornamento da Google Play
       restart: Riavvia
+    isolates:
+      mainIsolate: Isolate principale
+      workerIsolate: Worker Isolate
   settings:
     categories:
       dataSource:
@@ -911,3 +944,108 @@ singulars:
     phrases:
       noMoreMessages: Messaggi tutorial terminati
       youWillGain: Selezionando questa opzione otterrai i seguenti articoli.
+  social:
+    phrases:
+      manageFriends: Gestione social
+      countResultsFound: '{count} risultati trovati'
+      enterAtLeastChars: Inserisci almeno 3 caratteri per effettuare la ricerca.
+      pendingInvites: Inviti in sospeso
+      friends: Amici
+  pets:
+    phrases:
+      noPetSummoned: Al momento non è stato evocato alcun animale domestico. <c>Evoca
+        un animale domestico</c> affinché ti segua ovunque e ti conferisca i suoi
+        attributi e le sue abilità!
+      hatch: Schiudersi
+      requirementsToGainXPNeeded: 'Per ottenere XP, <c>{name}</c> deve soddisfare
+        i seguenti requisiti:'
+      currentXp: XP correnti
+      noPets: Non hai animali domestici. Puoi ottenerli trovando uova di animali domestici
+        e facendole schiudere.
+      ownedFor: Di proprietà da
+      isAdvancing: <c>{name}</c> sta crescendo!
+      pets: Animali domestici
+      hatching: Cova
+      claimPet: Reclama animale domestico
+      petEggs: Uova di animali domestici
+      chooseEgg: Scegli l'uovo
+      noEggIsHatching: Al momento non ci sono uova di animali domestici in fase di
+        schiusa. Seleziona un uovo di animale domestico per iniziare a <c>schiuderlo</c>!
+      currentlyHatching: Attualmente in fase di schiusa
+      summonedPet: Animale domestico evocato
+      level: Liv. <c>{level}</c>
+      canHatch: Può schiudersi
+      canEvolve: Può crescere
+      summonPet: Evoca animale domestico
+      changePet: Cambia animale domestico
+      dismissPet: Elimina animale domestico
+      abilities: Abilità
+      unlocked: Sbloccato
+      unlockedAt: Sbloccato a
+      evolve: Crescere
+      attributes: Attributi
+      maxLevel: Livello massimo
+      requirementsToGainXPNotMet: <c>{name}</c> non può guadagnare XP
+      requirementsToHatchNotMet: <c>{name}</c> non può schiudersi
+      requirementsToHatchNeeded: 'Affinché <c>{name}</c> possa schiudersi, devono
+        essere soddisfatte le seguenti condizioni:'
+      pet: Animale domestico
+      egg: Uovo
+      noEggSelected: Nessun uovo selezionato
+      noPetSelected: Nessun animale domestico selezionato
+      openPets: Animali domestici aperti
+      openHatching: Schiusura aperta
+      retire: Eliminare
+      destroy: Distruggere
+      totalXp: XP totali
+      xpToNextLevel: XP al prossimo livello
+      currentLevelProgress: Livello attuale di avanzamento
+      xpToMaxLevel: XP al livello massimo
+      maxLevelProgress: Progresso livello massimo
+      claimedAt: Rivendicato su
+      hatchedAt: Schiuso a
+      nextLevel: Prossimo livello
+      xpToHatch: XP per schiudersi
+      hatchingProgress: Progresso della schiusa
+      isHatching: <c>{name}</c> sta per schiudersi!
+      hasHatched: <c>{name}</c> è nato ed è ora <petStage id="{stage}"/>!
+      hasEvolved: <c>{name}</c> è cresciuto ed è ora <petStage id="{stage}"/>!
+      noEggs: Non hai uova di animali domestici reclamate.
+      noEggsFound: Non sono state trovate uova corrispondenti alla tua ricerca.
+      noPetsFound: Non sono stati trovati animali domestici corrispondenti alla tua
+        ricerca.
+  announcements:
+    info:
+      announcementInfo: Qui puoi trovare gli <c>annunci</c> scritti dagli sviluppatori.
+        I DevBlog, i changelog e gli annunci di sistema sono un ottimo modo per tenerti
+        aggiornato sui progressi dello sviluppo e sui tempi di inattività del server!
+      noAnnouncements: Al momento non ci sono annunci.
+      noMoreAnnouncements: Hai raggiunto la fine degli annunci! Non ci sono più annunci
+        da mostrare.
+    phrases:
+      unread: Non letto
+      new: Nuovo
+  mysteriousMerchant:
+    dialogue:
+      chestChosen: Ah, quindi vuoi scambiare oggetti dal <object id="{chest}"/>. Ottima
+        scelta! Ora, fammi sapere se desideri scambiare oggetti dalla tua <c>banca</c>
+        o dal tuo <c>inventario</c>. Oppure se desideri acquistare qualcosa con i
+        tuoi <c>gettoni del forziere</c>!
+      greeting: Piacere di vederti,<player />! Ho alcuni <c>oggetti rari</c> e <c>servizi</c>
+        che potrebbero interessarti. Ho seguito le tue avventure ad Arenum e devo
+        dire che hai un vero talento per l'esplorazione. Che ne dici di fare un <c>piccolo
+        scambio</c>?
+      tradeChestItems: Posso scambiare il tuo <c>bottino dai forzieri</c> con alcuni
+        <c>gettoni forzieri</c>. E con alcuni gettoni, posso scambiarti gli oggetti
+        che avresti desiderato ottenere da quei forzieri. A un <c>prezzo ragionevole</c>,
+        ovviamente!
+      chooseChest: Ottima scelta! Da quale baule desideri <c>scambiare gli oggetti</c>?
+    phrases:
+      tradeChestItems: Scambia oggetti del forziere
+      trade: Commercio
+      tradeChestChosen: Scambia oggetti dal baule
+  rumors:
+    phrases:
+      unlockedWalkpediaEntries: Voci Walkpedia sbloccate
+      rumorsFromCharacter: Voci da <c>{characterName}</c>
+      backToRumors: Torna alle voci
