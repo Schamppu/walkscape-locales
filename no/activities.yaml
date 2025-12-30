@@ -2,90 +2,352 @@ singulars:
   agility:
     global:
       birdWatching:
-        desc: Fugletitting er et vindu til fugleriket. Du observerer tålmodig, lærer om de forskjellige artene som pryder trærne, himmelen, og landene, mens du setter pris på deres skjønnhet og oppførsel.
+        desc: Fugletitting er et vindu til fugleriket. Du observerer tålmodig, lærer
+          om de forskjellige artene som pryder trærne, himmelen, og landene, mens
+          du setter pris på deres skjønnhet og oppførsel.
         name: Fugletitting
       guardDuty:
-        desc: Som vakt i det wallisiske riket har du regninger å betale, og dette er hvordan du gjør det. Du våker over riket, og sikrer at du får betalt for dine våkne øyne.
+        desc: Som vakt i det wallisiske riket har du regninger å betale, og dette
+          er hvordan du gjør det. Du våker over riket, og sikrer at du får betalt
+          for dine våkne øyne.
         name: Vakttjeneste
       sandcastleBuilding:
-        desc: Å bygge sandslott på stranden handler om avslappet kreativitet. Sandaktige kreasjoner varer kanskje ikke lenge, men det er en enkel nytelse i øyeblikket.
+        desc: Å bygge sandslott på stranden handler om avslappet kreativitet. Sandaktige
+          kreasjoner varer kanskje ikke lenge, men det er en enkel nytelse i øyeblikket.
         name: Sandslottsbygning
       scientificTinkering:
-        desc: Innenfor vitenskapelig fikling blir du en ivrig entusiast som støper ideer til konkrete eksperimenter. Du omfavner oppdagelsens ånd med et åpent sinn.
+        desc: Innenfor vitenskapelig fikling blir du en ivrig entusiast som støper
+          ideer til konkrete eksperimenter. Du omfavner oppdagelsens ånd med et åpent
+          sinn.
         name: Vitenskapelig Fikling
       sledding:
-        desc: Mens du griper sledens håndtak og setter utfor, kjenner du adrenalinet strømme gjennom blodårene. Verden blir uskarp rundt deg, og i et lite øyeblikk er du en fartsgærning som erobrer den snødekte bakken.
+        desc: Mens du griper sledens håndtak og setter utfor, kjenner du adrenalinet
+          strømme gjennom blodårene. Verden blir uskarp rundt deg, og i et lite øyeblikk
+          er du en fartsgærning som erobrer den snødekte bakken.
         name: Sledekjøring
   fishing:
     jarvonia:
       lakeFishing:
-        desc: Du fester forsiktig agnet med frostige fingre og kaster det ut på den rolige overflaten av innsjøen.
+        desc: Du fester forsiktig agnet med frostige fingre og kaster det ut på den
+          rolige overflaten av innsjøen.
         name: Ferskvannsfisking
       pondFishing:
-        desc: Midt i vinterlandskapet glinser den rolige dammen av rolig skjønnhet. Det stille vannet er innbydende og lovende.
+        desc: Midt i vinterlandskapet glinser den rolige dammen av rolig skjønnhet.
+          Det stille vannet er innbydende og lovende.
         name: Damfiske
+      cleaningTheHolyFountain:
+        desc: Tempellederne stoler nok på deg til at du får hjelpe til med å ta vare
+          på den hellige fontenen. De lar deg fiske i den med et garn for å holde
+          vannet klart, og du vinner deres respekt.
+        name: Rengjøre den hellige fontenen
+      seaFishingNet:
+        desc: Langs strandkanten finner du et avsidesliggende sted og kaster garnet
+          ut i det rolige vannet, mens du nyter den fredelige ensomheten ved sjøfiske.
+        name: Sjøfiske (Garn)
+      seaFishingRod:
+        name: Sjøfiske (Stang)
+        desc: Langs strandkanten finner du et avsidesliggende sted og kaster stangen
+          ut i det rolige vannet, mens du nyter den fredelige ensomheten ved sjøfiske.
+      seaFishingCage:
+        name: Sjøfiske (Teine)
+        desc: En næringsrik strøm fører alle slags krepsdyr til området.
+    gdte:
+      bogFishingSpear:
+        desc: Mens du er under vannet i myra, gjør du klar fiskespydet ditt, klar
+          til å treffe enhver fisk som kommer nær nok. Det uklare vannet gjør det
+          vanskelig å se, men du er bestemt på å få noe på kroken.
+        name: Myrfiske (Spyd)
+      magnetFishing:
+        desc: 'Å trekke ting opp av vann med en sterk magnet betaler sjelden regningene,
+          men det hjelper et par gode formål: det renser miljøet og bidrar til å løse
+          forbrytelser. Vær oppmerksom på reglene rundt det, og ha det gøy! Du kan
+          trekke opp hva som helst!'
+        name: Magnetfisking
+      bogFishingNet:
+        name: Myrfiske (Garn)
+        desc: Du kaster garnet ut i myra. Vannet er uklart, men du kan fortsatt se
+          fiskene svømme rundt. Du venter tålmodig på at de skal bli fanget i garnet
+          ditt.
+    syrenthia:
+      seaFishingSpear:
+        desc: Med spydet fast i hånden svømmer du sirkler rundt skipsvraket, alltid
+          på vakt etter store fisk som våger å komme innen rekkevidde.
+        name: Sjøfiske (Spyd)
+      predatorHunting:
+        desc: Drevet av jakten skjærer du gjennom det dype vannet, hyperbevisst på
+          omgivelsene dine. Hvert fiber i kroppen din er klar til å angripe et rovdyr
+          før den kan angripe deg.
+        name: Rovdyrjakt (Spyd)
+    wallisia:
+      floodedRiverFishingRod:
+        name: Fiske i oversvømt elv (Stang)
+        desc: Du kaster fiskestangen ut i de oversvømte elvevannene, i håp om å få
+          napp på noen unike fisk som har tilpasset seg sitt nye miljø.
+      ectoFishing:
+        name: Ektoplasmafiske
+        desc: Vannet her gløder i merkelige og uhyggelige farger som stråler med en
+          spøkelsesaktig energi. Du lurer på hva fisken her spiser, og om du i det
+          hele tatt bruker riktig utstyr for å fange dem. Tankene dine vandrer til
+          forsøket på å tilberede dem senere, for å finne ut om de i det hele tatt
+          er spiselige.
   foraging:
     gdte:
       forestForaging:
-        desc: Mens du vandrer gjennom skogens rolige omfavnelse, vil du fordype deg i skogens harmoni, og samle naturens gaver som trives under det milde løvtaket.
+        desc: Mens du vandrer gjennom skogens rolige omfavnelse, vil du fordype deg
+          i skogens harmoni, og samle naturens gaver som trives under det milde løvtaket.
         name: Sanking i skogen
       plainsForaging:
-        desc: Mens du snirkler deg gjennom de tempererte slettene, vil du finne deg selv på en oppdagelsesreise som vever seg gjennom et landskap der naturens skatter venter under den milde solen og den asurblå himmelen.
+        desc: Mens du snirkler deg gjennom de tempererte slettene, vil du finne deg
+          selv på en oppdagelsesreise som vever seg gjennom et landskap der naturens
+          skatter venter under den milde solen og den asurblå himmelen.
         name: Sanking på sletten
       swampForaging:
-        desc: I den tynne tåka og mystiske floker av trerøtter, tråkker du gjennom pytter og tykk vegetasjon for å se etter mysterier gjemt i sengen av mose og etterlatte båter. Du håper på å finne glemte minner og relikvier av andre sine en gang fruktfulle liv.
+        desc: I den tynne tåka og mystiske floker av trerøtter, tråkker du gjennom
+          pytter og tykk vegetasjon for å se etter mysterier gjemt i sengen av mose
+          og etterlatte båter. Du håper på å finne glemte minner og relikvier av andre
+          sine en gang fruktfulle liv.
         name: Sanking i sumpen
+      butterflyCatching:
+        name: Sommerfuglfangst
+        desc: Å fange sommerfugler krever tålmodighet og et godt nett. Selv om det
+          er gøy å jage dem, er det mest effektive å fange dem når de sitter stille.
+          Å beundre dem og slippe dem fri etterpå bevarer deres rolle i den skjøre
+          naturlige balansen.
+      trellinDumpsterDiving:
+        desc: Midt i byens labyrintiske smug utforsker du de glemte krokene, og gjennomsøker
+          kasserte småting i håp om å avdekke skjulte skatter blant det som er kastet.
+        name: Trellin dumpster diving
+      erdwiseDumpsterDiving:
+        name: Erdwise dumpster diving
+        desc: Midt i byens labyrintiske smug utforsker du de glemte krokene, og gjennomsøker
+          kasserte småting i håp om å finne skjulte skatter blant det som er kastet.
+      summerCaveForaging:
+        name: Sommerhulesanking
     global:
       litterLooting:
-        desc: Blant kjas og mas i middelalderbyen, går du gjennom forkastede småting, i håp om å snuble over en skjult perle blant det vanlige rusk.
+        desc: Blant kjas og mas i middelalderbyen, går du gjennom forkastede småting,
+          i håp om å snuble over en skjult perle blant det vanlige rusk.
         name: Søppelplyndring
     jarvonia:
       cliffForaging:
-        desc: Plassert på kanten av den ruvende klippen utforsker du forsiktig det ulendte terrenget, på jakt etter ville fjellurter, spenstige sopp og andre spiselige skatter som trives i dette høye miljøet.
+        desc: Plassert på kanten av den ruvende klippen utforsker du forsiktig det
+          ulendte terrenget, på jakt etter ville fjellurter, spenstige sopp og andre
+          spiselige skatter som trives i dette høye miljøet.
         name: Sanking i klippekaner
       coastForaging:
-        desc: Når du vandrer gjennom de vinterlige kystlandskapene, blir du ett med kulden, på leting etter føde og varme blant de snødekte steinene og isfylte dammene.
+        desc: Når du vandrer gjennom de vinterlige kystlandskapene, blir du ett med
+          kulden, på leting etter føde og varme blant de snødekte steinene og isfylte
+          dammene.
         name: Sanking langs kysten
       forestForaging:
-        desc: Midt i vinterskogen legger du ut på eventyr med et skarpt blikk på jakt etter skjulte skatter under snøteppet, og omfavner spenningen ved å oppdage naturens spiselige gaver.
+        desc: Midt i vinterskogen legger du ut på eventyr med et skarpt blikk på jakt
+          etter skjulte skatter under snøteppet, og omfavner spenningen ved å oppdage
+          naturens spiselige gaver.
         name: Sanking i skogen
       plainsForaging:
-        desc: Med hvert forsiktige skritt over slettene fordyper du deg i den naturlige overfloden, og samler ville bær, frø og ømme skudd som trives i jorden under føttene dine.
+        desc: Med hvert forsiktige skritt over slettene fordyper du deg i den naturlige
+          overfloden, og samler ville bær, frø og ømme skudd som trives i jorden under
+          føttene dine.
         name: Sanking på sletten
+      seashellSearching:
+        name: Skjellsanking
+        desc: Du leter forsiktig langs kysten etter verdifulle skjell eller perler.
+      hornOfRespiteTreasureHunt:
+        desc: Eventyrslauget har satt en utfordring om å finne noen spesielle gjenstander
+          rundt Hviletinden. Hvor lang tid vil det ta deg å finne dem alle?
+        name: Skattejakt
+      caveForaging:
+        desc: Flaggermusene kaller dette hjemme på vårparten. Det er mørk, jeg burde
+          ta med en lyskilde.
+        name: Vårgrottesanking
+      glacierForaging:
+        name: Isbresanking
+        desc: Du leter vidt og bredt gjennom den tomme isbreen. Du lærer mye om deg
+          selv, men er det noe å finne her?
   mining:
     global:
       mineCoal:
-        desc: Hvert slag av din trofaste hakke avdekker kullårene, som er avgjørende for å gi drivstoff til rikets smeder for å smi våpen og rustninger som forsvarer riket.
+        desc: Hvert slag av din trofaste hakke avdekker kullårene, som er avgjørende
+          for å gi drivstoff til rikets smeder for å smi våpen og rustninger som forsvarer
+          riket.
         name: Gruv etter kull
       mineCopperOre:
-        desc: De rytmiske klirringene fra hakken din som treffer den steinete overflaten fyller luften mens du vedvarende leter etter kobbermalm.
+        desc: De rytmiske klirringene fra hakken din som treffer den steinete overflaten
+          fyller luften mens du vedvarende leter etter kobbermalm.
         name: Gruv etter kobbermalm
       mineFarganiteOre:
-        desc: Med svette og tårer trekker du sakte ut noe av farganitten til tross for dens enorme hardhet.
+        desc: Med svette og tårer trekker du sakte ut noe av farganitten til tross
+          for dens enorme hardhet.
         name: Gruv etter farganittmalm
       mineIronOre:
-        desc: Hvert av svingene dine avslører den ydmyke skjønnheten til jernmalm, en pålitelig vare med en lang rekke praktiske bruksområder.
+        desc: Hvert av svingene dine avslører den ydmyke skjønnheten til jernmalm,
+          en pålitelig vare med en lang rekke praktiske bruksområder.
         name: Gruv etter jernmalm
       mineTarsiliumOre:
-        desc: I ditt forsøk på å finne tarsilium malm blir jordens dype, ekkofylte kamre ditt lærret, og oppdagelsen av ny malm føles som å grave frem et stykke historie.
+        desc: I ditt forsøk på å finne tarsilium malm blir jordens dype, ekkofylte
+          kamre ditt lærret, og oppdagelsen av ny malm føles som å grave frem et stykke
+          historie.
         name: Gruv etter tarsiliummalm
       mineTinOre:
-        desc: Lyden av hakken din klinger gjennom gruven mens du utrettelig hakker i vei, og avdekker gjemte årer av tin som venter på å bli oppdaget.
+        desc: Lyden av hakken din klinger gjennom gruven mens du utrettelig hakker
+          i vei, og avdekker gjemte årer av tin som venter på å bli oppdaget.
         name: Gruv etter tinnmalm
+      mineTarsiliumOreUnderwater:
+        desc: Det er dårlig sikt under vannet, men det er ikke så ulikt en hule. Med
+          tjæralitt, er det alltid vanskelig å se svart malm i mørke omgivelser.
+        name: Utvinn tjæralittmalm (Under vann)
+    gdte:
+      underwaterAqueductDigging:
+        name: Undervannsakveduktgraving
+        desc: Grav vei for snekkerne som følger etter deg. Fjern rusk og stein på
+          veien, samtidig som du sørger for at området ikke kollapser.
+    jarvonia:
+      surfaceSaltMining:
+        desc: Å utvinne salt i en gruve er hardt arbeid fordi du blir dehydrert veldig
+          raskt på grunn av den konstante kontakten med saltet. Heldigvis for deg
+          ligger disse halittkrystallene (saltstein) på den godt ventilerte overflaten
+          og løsner lett når du treffer dem med en hakke.
+        name: Overflate saltutvinning
+      goldPanning:
+        name: Gullvasking
+        desc: Dette er en enkel gullutvinningsmetode som utnytter sedimentære avsetninger
+          i elver. Først senkes pannen ned i bunnsand. Deretter, ved å riste den for
+          hånd, løsnes grusen til bare sanden og mulige gullklumper blir igjen.
+      spelunking:
+        name: Huleutforskning
+        desc: Du kryper på den harde bakken som en øgle. Uhyggelige tanker tåkefyrer
+          sinnet ditt og gjør deg nesten lammet. Du klarer å skyve dem til side for
+          et øyeblikk og fortsetter. Snart åpner en ny, uutforsket sti seg, og fyller
+          deg med glede.
+      minePitTinOre:
+        name: Overflate tinnutvinning
+        desc: Du finner bergskjæringer på overflaten som potensielt inneholder tinnmalm.
+          Du trenge både utholdenhet og tålmodighet for å bryte dem ut.
+      minePitCopperOre:
+        name: Overflate kobberutvinning
+        desc: Fortsatt på overflaten, utvinner du malm fra overflateformasjoner som
+          kan gi inntrykket av at det inneholder kobbermalm. Steinene er seige og
+          vil ikke gi opp malmen lett.
+      stoneQuarrying:
+        name: Steinhugging
+        desc: Stein og berg!
+    syrenthia:
+      caveDiving:
+        desc: Du dykker modig (eller dumdristig) ned i de mørke, vide hulene. Denne
+          aktiviteten er en av de farligste i hele Arenum. Hjertet ditt banker godt,
+          og adrenalinet fyller årene dine.
+        name: Huledykking
+      mineVolcanicRock:
+        name: Utvinn vulkansk stein
+        desc: Å svinge hakken under vann er utfordrende, men av og til, når du treffer
+          den vulkanske steinen, løsner et stort nok stykke som du deretter putter
+          i sekken din.
+      fossilMining:
+        name: Grave etter fossiler
+        desc: Lokket av fortidens underverker retter du oppmerksomheten mot å finne
+          gamle fossiler.
+      mineTarsiliumOre:
+        name: Utvinn tjæralittmalm
+        desc: Overrasket over å finne tjæralittmalm under vann, begynner du å utvinne
+          dem uten mye nøling.
+    wallisia:
+      mineEctoRocks:
+        desc: Bergskjæringer av store steiner som ser ut til å gløde med den uhyggelige,
+          spøkelsesaktige energien i området rundt. Du svinger hakken mot dem i håp
+          om å ta med deg biter for videre bearbeiding.
+        name: Utvinne ektoplasmastein
+    wrentmark:
+      mineSilverOre:
+        desc: Ut av øyekroken får du øye på sølvsteiner og setter i gang med å følge
+          åren av sølvmalm inne i dem.
+        name: Utvinne sølvmalm
+      mineGoldOre:
+        desc: Du oppdager glimt av gull mellom steinene og startet umiddelbart å utvinne
+          det i håp om å finne hovedåren.
+        name: Utvinne gullmalm
+      mineVioliteOre:
+        name: Utvinn violittmalm
+        desc: Du vurderer de fiolette steinene av hard violitt foran deg og planlegger
+          veien videre for å få ut malm fra dem uten å skade deg selv i prosessen.
+      mineGemRocksLow:
+        desc: En stein som ser ut til å ha noen spor av edelstener, fanger oppmerksomheten
+          din. Hvis du bryter i den, kan det hende du finner noen.
+        name: Utvinn juvelsteiner (lav)
+      mineAdamantOre:
+        name: Utvinn adamantmalm
+        desc: Når du finner de harde adamantsteinene foran deg, tar du frem ditt beste
+          utstyr i forsøk på å få malmen ut av steinen.
+      mineCrystalShards:
+        name: Utvinn krystallkull
+        desc: Så store og vakre steiner. Det virker nesten synd å forsøke å bryte
+          malm ut av dem, men de potensielle bitene de smuldrer opp til, har for mye
+          nytte til å bli liggende urørt.
   woodcutting:
     jarvonia:
       cutBirchTrees:
         desc: Du svinger øksen din med all din makt, bestemt på å felle de høye bjørkene.
         name: Hogg bjørketre
       cutMapleTrees:
-        desc: Med jevne sving med øksen jobber du for å få ned de stødige lønnetrærne, deres solide stammer krever utholdenhet for å overvinne.
+        desc: Med jevne sving med øksen jobber du for å få ned de stødige lønnetrærne,
+          deres solide stammer krever utholdenhet for å overvinne.
         name: Hogg lønnetre
       cutOakTrees:
-        desc: Standhaftig hugger du løs på de høye eiketrærne, og deres viltvoksende grener strekker seg ut som naturens omfavnelse.
+        desc: Standhaftig hugger du løs på de høye eiketrærne, og deres viltvoksende
+          grener strekker seg ut som naturens omfavnelse.
         name: Hogg eiketre
       cutPineTrees:
         desc: Du svinger øksen med besluttsomhet for å få ned furutrærne.
         name: Hogg furutre
       cutSpruceTrees:
-        desc: Mens du holder godt fast i øksen din, kanaliserer du kreftene dine til å slå ned de høye grantrærne.
+        desc: Mens du holder godt fast i øksen din, kanaliserer du kreftene dine til
+          å slå ned de høye grantrærne.
         name: Hogg grantre
+      cutMangroveTrees:
+        desc: Mens du er forsiktig for ikke å snuble i de snirklete røttene deres,
+          arbeider du hardt for å få tak i noen tømmerstokker fra disse fascinerende
+          formede trærne.
+        name: Hogg mangrovetrær
+      cutTeakTrees:
+        name: Hogg teaktrær
+        desc: Svett i pannen, blemmer på fingrene, men du er fast bestemt på å få
+          med deg noen tømmerstokker av dette robuste og sterke treet.
+      cutWillowTrees:
+        desc: De brede stammene til piletrærne viser seg å være en utfordring, men
+          med dine erfarne og kraftige hogg feller du dem èn etter èn.
+        name: Hogg willowtrær
+      firewoodMaking:
+        name: Lage brensel
+        desc: Med tålmodighet, svette, innsats og din betrodde håndøks, deler du tømmerstokkene
+          nådeløst. Hvis du bare kunne delt dem med hendene. Du må være en superhelt
+          for å få til det, for å si det sånn.
+      branchTrimming:
+        name: Beskjæring av grener
+        desc: Å rydde vekk alle grenene på bakken hjelper til med å unngå skogbran
+          i dettte området.
+    syrenthia:
+      coralCutting:
+        desc: Koraller, noen så store som små trær, omgir deg. Du svinger håndøksen
+          mot stilkene deres og hogger dem ned én etter én. I motsetning til trær
+          på land, treffer de ikke bakken, men flyter i stedet oppover.
+        name: Korallkutting
+    global:
+      cutBambooLogs:
+        desc: Du treffer bambusen med håndøksen din. Det lager en tilfredsstillende
+          knaselyd.
+        name: Hogg bambus
+      cutYewTrees:
+        name: Hogg idegrantrær
+        desc: Idegrantrærne er solide og tåler mye mer innsats før de kan felles.
+          Men med tid klarer du å få dem ned og dele dem opp til tømmerstokker.
+      cutEctoTrees:
+        name: Hogg ektoplasmatrær
+        desc: Trærne her ser ut som om de er revet fra en annen verden; det uhyggelige
+          utseendet og den spøkelsesaktige energien de utstråler gjør dem skremmende
+          selv før du prøver å felle dem. Du er ivrig etter å bearbeide tømmerstokkene
+          de vil gi.
+  idle:
+    desc: Du gjør ingenting. Skrittene dine blir samlet opp i Sparte skritt.
+    name: Inaktiv
+  unknown:
+    name: Ukjent
+    desc: Du gjør noe, men spillet vet ikke hva det er.
