@@ -7,11 +7,18 @@ maps:
         '2': Difficile
         '3': Estremo
         "hard": Difficile
+        "normal": Normale
+        "extreme": Estremo
+        "easy": Facile
       difficultyTitle:
         '0': Trofei facili
         '1': Trofei normali
         '2': Trofei difficili
         '3': Trofei estremi
+        "normal": Obiettivi normali
+        "easy": Obiettivi facili
+        "extreme": Obiettivi estremi
+        "hard": Obiettivi difficili
   characterCreation:
     phrases:
       bodyTypes:
@@ -31,60 +38,266 @@ maps:
         none: Nessuno
         nose: Naso
         outfit: Abbigliamento
+        "eyeAccessory": Accessori per gli occhi
+        "faceAccessory": Accessori per il viso
+        "backAccessory": Accessori per la schiena
       raceTypes:
         human: Umano
         none: Nessuno
+      expressions:
+        "smirk": Furbetto
+        "veryAngry": Molto arrabbiato
+        "smile": Sorridente
+        "angry": Arrabbiato
+        "normal": Normale
+        "sad": Triste
+        "laughing": Felice
+        "surprise": Sorpreso
   skillTypes:
     'artisan': Artigianato
     'gathering': Raccolta
     "utility": Utilità
+    "combat": Combattimento
   character:
     stepsTime:
       "daily": Passi giornalieri
+      "hourly": Passi orari
+      "monthly": Passi mensili
+  shop:
+    phrases:
+      itemType:
+        "special": Speciale
+        "container": Contenitori
+        "tool": Strumenti
+        "cosmetic": Cosmetici
+        "collectible": Collezionabili
+        "gear": Equipaggiamento
+        "crafted": Creato
+        "material": Materiali
+        "loot": Bottino
+        "consumable": Materiali di consumo
+        "egg": Uova di animali domestici
+        "currency": Valute
+        "quest": Oggetti di missione
+        "artifact": Artefatti
+  settings:
+    languages:
+      "es": Spagnolo
+      "nl-NL": Olandese
+      "pt": Portoghese
+      "fr": Francese
+      "tr": Turco
+      "pl": Polacco
+      "zh_Hans": Cinese (semplificato)
+      "sv": Svedese
+      "en": Inglese
+      "de": Tedesco
+      "fi": Finlandese
+      "it": Italiano
+    categories:
+      "graphics": Grafici
+      "gameplay": Giocabilità
+      "accessibility": Accessibilità
+      "account": Account
+      "character": Personaggio
+      "characterSpecific": Specifico del personaggio
+    enumSettings:
+      "leaderboardFilter": Mostra
+      "language": Lingua
+      "stepDataTime": Periodo
+      "leaderboardType": Classifiche
+    notificationImportance:
+      "high": Emette un suono o vibra
+      "low": Nessun suono, nessuna vibrazione e non compare nella barra di stato.
+      "urgent": Emette un suono o vibra e appare come una notifica.
+    boolSettings:
+      "showRecipesMaterialsAreMet": I requisiti relativi ai materiali sono soddisfatti
+      "showFpsCounter": Mostra contatore FPS
+      "activityInformationOpen": Mostra ulteriori informazioni sull'attività
+      "leftHandedMode": Modalità per mancini
+      "shaderOutlineRendering": Renderizza i contorni con gli shader
+      "showStepSourceInActivityView": Mostra la selezione dell'origine del passaggio
+        nella vista Attività
+      "showRecipesServicesAreMet": I requisiti di servizio sono soddisfatti
+      "showCompletedAchievements": Mostra risultati completati
+      "inventoryCollapsed": Comprimi l'inventario
+      "alwaysStopWhenInventoryFull": Interrompere quando sovraccarico per impostazione
+        predefinita
+      "showRecipesRequirementsAreMet": I requisiti di livello sono soddisfatti
+      "spriteOutlines": Renderizza contorni
+      "warningBeforeClaimingExperience": Mostra avviso prima di richiedere i premi
+        esperienza
+      "showDailyTips": Mostra consigli quotidiani
+      "toggleAgilityXp": Disabilita il guadagno di XP Agilità derivante dal Viaggio
+    leaderboardFilter:
+      "everyone": Tutti
+      "friends": Amici
+    leaderboardType:
+      "foraging": Livello di <c>Raccolta</c>
+      "carpentry": Livello di <c>Carpenteria</c>
+      "smithing": Livello di <c>Fabbro</c>
+      "totalXp": <c>Esperienza</c> totale
+      "totalLevel": <c>Livello</c> totale
+      "totalSteps": <c>Passi</c> totali
+      "agility": Livello di <c>Agilità</c>
+      "cooking": Livello di <c>Cucina</c>
+      "crafting": Livello di <c>Creazione</c>
+      "fishing": Livello di <c>Pesca</c>
+      "mining": Livello di <c>Minare</c>
+      "trinketry": Livello di <c>Gioielleria</c>
+      "woodcutting": Livello di <c>Taglio del legno</c>
+      "achievementPoints": <c>Punti conseguiti</c>
+    stepCountNotifications:
+      "everyHundred": Ogni cento
+      "never": Mai
+      "everyTenThousand": Ogni diecimila
+      "always": Sempre
+      "everyThousand": Ogni mille
+    custom:
+      "dataSource": Fonte dei passi
+    visibilitySettings:
+      "private": Privato
+      "friends": Solo amici
+      "public": Pubblico
+  cooldown:
+    time:
+      "seconds": '{seconds}<c>s</c>'
+      "hours": '{hours}<c>o</c>'
+      "days": '{days}<c>g</c>'
+      "minutes": '{minutes}<c>m</c>'
+  mysteriousMerchant:
+    chestTypes:
+      "regional": Casse delle fazioni
+      "skilling": Casse di abilità
+      "guild": Casse della gilda
+  announcements:
+    categories:
+      "changelog": Registro delle modifiche
+      "devblog": Dev Blog
+      "update": Aggiornamento
+      "system": Sistema
+  locales:
+    grammaticalGender:
+      "masculine": Maschile
+      "feminine": Femminile
+      "neutral": Neutro
+  abilities:
+    types:
+      "active": Attivo
+      "passive": Passivo
+      "consumable": Consumabile
+      "activity": Attività
+      "emergency": Emergenza
+  pets:
+    stages:
+      "egg": Uovo
+      "adult": Adulto
+      "juvenile": Giovane
 plurals:
   achievements:
     phrases:
       achievementPoint:
         one: '{} punto trofeo'
         other: '{} punti trofeo'
+        zero: '-'
+        few: '-'
+        two: '{} punti conseguiti'
+        many: '-'
   activity:
     phrases:
       actionsRemaining:
         one: Azioni rimanenti
         other: Azioni rimanenti
         two: Azioni rimanenti
+        many: '-'
+        zero: '-'
+        few: '-'
       actionsToLevelUp:
         one: 'Azioni per salire di livello'
         other: 'Azioni per salire di livello'
+        zero: '-'
+        two: Azioni per aumentare di livello
+        few: '-'
+        many: '-'
       stepsRemainingInTotal:
         one: Passi rimanenti
         other: Passi rimanenti
+        zero: '-'
+        two: Passi rimanenti in totale
+        few: '-'
+        many: '-'
       stepsRequired:
         one: Passi richiesti
         other: Passi richiesti
+        zero: '-'
+        two: Passi necessari
+        few: '-'
+        many: '-'
       stepsToCraft:
         one: Passi per creare
         other: Passi per creare
+        few: '-'
+        many: '-'
+        zero: '-'
+        two: Passi per creare
       stepsToLevelUp:
         one: Passi per salire di livello
         other: Passi per salire di livello
+        zero: '-'
+        two: Passi per aumentare di livello
+        few: '-'
+        many: '-'
       stepsUntilArrival:
         two: Passi al traguardo
         one: Passo al traguardo
         other: Passi al traguardo
+        many: '-'
+        zero: '-'
+        few: '-'
+      steps:
+        many: '-'
+        other: '{} passi'
+        zero: '-'
+        one: '{} passo'
+        two: '{} passi'
+        few: '-'
+      stepsRequiredPerAction:
+        one: <icon i="Steps"/> <c>{} passo </c> richiesto per ogni azione
+        few: '-'
+        zero: '-'
+        two: <icon i="Steps"/> <c>{} passi </c> richiesto per ogni azione
+        many: '-'
+        other: <icon i="Steps"/> <c>{} passi </c> necessari per ogni azione
+      actions:
+        two: '{} azioni'
+        zero: '-'
+        one: '{} azione'
+        few: '-'
+        many: '-'
+        other: '{} azioni'
+      workEfficiency:
+        zero: '-'
+        one: Efficienza lavorativa
+        two: Efficienza lavorativa
+        few: '-'
+        many: '-'
+        other: Efficienza lavorativa
   location:
     phrases:
       playersDoingActivity:
         few: '-'
-        two: <c>{}</c> giocatori che svolgono l'attività
-        other: <c>{}</c> giocatori che svolgono l'attività
+        two: <c>{}</c> giocatori svolgono l'attività
+        other: <c>{}</c> giocatori svolgono l'attività
         one: <c>{}</c> giocatofy che svolgono l'attività
+        many: '-'
+        zero: '-'
       playersHere:
         other: <c>{}</c> giocatori presenti
         few: '-'
         two: <c>{}</c> giocatori presenti
         one: <c>{}</c> giocatore presente
         many: '-'
+        zero: '-'
   inventory:
     info:
       consumableDuration:
@@ -100,6 +313,8 @@ plurals:
         two: L'attività <object id="{activity}" alwaysShow="true"/> richiede <c>{steps}</c>
           passaggi per azione. La quantità scelta di materiali di consumo potenzierebbe
           <c>{actions} azioni</c>.
+        few: '-'
+        many: '-'
 singulars:
   achievements:
     info:
@@ -757,7 +972,7 @@ singulars:
       restart: Riavvia
     isolates:
       mainIsolate: Isolate principale
-      workerIsolate: Worker Isolate
+      workerIsolate: Lavoratore Isolato
   settings:
     categories:
       dataSource:
@@ -797,7 +1012,7 @@ singulars:
         title: Personaggio
         anonOnLeaderboard: Anonimizza nella classifica
         hideSteps: Nascondi passi
-        exportData: Esporta dati caratteri negli appunti
+        exportData: Esporta dati del personaggio negli appunti
       gameplay:
         title: Giocabilità
         stopWhenOverEncumberedDefault: Interrompere quando sovraccarico per impostazione
@@ -1044,6 +1259,19 @@ singulars:
       tradeChestItems: Scambia oggetti del forziere
       trade: Commercio
       tradeChestChosen: Scambia oggetti dal baule
+      tradingChestItem: Commercia oggetto forziere
+      sellFromInventory: Vendi dall'inventario
+      sellFromBank: Vendere dalla banca
+      buyWithChips: Acquista con i gettoni
+      ownedCurrency: Valuta posseduta
+      sellingPrice: '{rarity} prezzo di vendita'
+      buyingPrice: '{rarity} prezzo di acquisto'
+      totalSellingPrice: Totale per la vendita di <c>{amount}</c> x articoli
+      totalBuyingPrice: Totale per l'acquisto di <c>{amount}</c> x articoli
+      sell: Vendere
+      buy: Comprare
+      buyItems: Comprare articoli
+      sellItems: Vendere articoli
   rumors:
     phrases:
       unlockedWalkpediaEntries: Voci Walkpedia sbloccate
