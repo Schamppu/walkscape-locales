@@ -133,6 +133,12 @@ singulars:
         shoes:
           desc: 'Almeno sono più leggeri di quelli in ferro!'
           name: Calzari di bronzo
+        shield:
+          name: Uno scudo di bronzo
+          desc: Uno scudo.
+        sword:
+          desc: Una spada.
+          name: Spada di bronzo
       copper:
         chest:
           desc: 'Richiede una quantità significativa di rame, ma protegge le parti
@@ -156,6 +162,12 @@ singulars:
         shoes:
           desc: 'Alcuni stivali pesanti che offrono una protezione minima.'
           name: Calzari di rame
+        shield:
+          name: Scudo in rame
+          desc: Uno scudo leggero.
+        sword:
+          name: Spada di rame
+          desc: Una spada leggera.
       farganite:
         chest:
           desc: 'Una fortezza impenetrabile sul tuo petto, il tuo nemico può vedere
@@ -179,6 +191,16 @@ singulars:
         shoes:
           desc: 'Almeno sono più leggeri di quelli neri!'
           name: Calzari di farganio
+        shield:
+          desc: Scudo di colore blu che sorprendentemente non è così pesante.
+          name: Scudo di farganite
+        sword:
+          name: Spada di farganite
+          desc: Una spada blu simile al ghiaccio realizzata con barre di farganite.
+        gemShield:
+          name: Scudo di gemme
+          desc: Uno scudo incredibilmente leggero, intarsiato con gemme abbaglianti
+            che emanano una luce brillante.
       iron:
         chest:
           desc: 'Funge da baluardo inflessibile contro il pericolo, proteggendo il
@@ -204,6 +226,13 @@ singulars:
           desc: 'I tuoi piedi non sono mai stati così pesanti. Ma sei abbastanza sicuro
             che potrebbero essere investiti da un carro pesante e sopravvivere indenni.'
           name: Calzari di ferro
+        sword:
+          name: Spada di ferro
+          desc: Una spada di ferro, un elemento fondamentale di molte truppe militari.
+        shield:
+          name: Scudo di ferro
+          desc: Uno scudo di ferro pesante da sollevare, ma non vorresti usare uno
+            scudo leggero per resistere ai colpi dei tuoi nemici.
       steel:
         chest:
           desc: 'Un potente baluardo per il torso e una testimonianza dello spirito
@@ -229,6 +258,13 @@ singulars:
         shoes:
           desc: 'Almeno sono più leggeri di quelli in ferro!'
           name: Calzari d'acciaio
+        sword:
+          name: Spada d'acciaio
+          desc: Una spada d'acciaio lucida e affilata abbastanza da tagliare il pane.
+        shield:
+          desc: Uno scudo in acciaio lucido che ti salverà in battaglia, ma che farà
+            anche bella mostra di sé nella sala operativa.
+          name: Scudo d'acciaio
       tarsilium:
         chest:
           desc: 'Un corpo nero, scelta popolare tra i cavalieri oscuri del regno.'
@@ -251,6 +287,20 @@ singulars:
         shoes:
           desc: 'Un paio di scarpe nere. Almeno sono più leggere di quelle d''acciaio!'
           name: Calzari di tarsilio
+        shield:
+          desc: Uno scudo nero realizzato in tarsilium è un'ottima scelta per difendersi
+            da colpi e pugni.
+          name: Scudo di tarsilium
+        sword:
+          name: Spada di tarsilium
+          desc: Una spada nera che non arrugginisce mai.
+      basic:
+        woodenShield:
+          desc: Speri che questo semplice scudo possa difenderti.
+          name: Scudo di legno
+        woodenSword:
+          name: Spada di legno
+          desc: Speri che questo semplice bastone possa difenderti.
     skilling:
       fishing:
         basicFishingPole:
@@ -870,6 +920,17 @@ singulars:
         goldRing:
           desc: Un semplice anello d'oro, intramontabile e prezioso nella sua purezza.
           name: Anello d'oro
+        topazTippedChisel:
+          desc: Il bordo dello scalpello è realizzato in topazio, che lo rende molto
+            affilato.
+          name: Scalpello con punta in topazio
+        bronzeChisel:
+          name: Scalpello in bronzo
+          desc: Il bronzo e il burro dell'industria degli scalpelli.
+        wraithwaterFlowerNecklace:
+          name: Collana con fiori di Spettracqua
+          desc: Una composizione di fiori dall'aspetto cupo. Indossarla ti fa sentire
+            un leggero legame con i defunti.
   looted:
     equipmentSets:
       dimensional:
@@ -1075,6 +1136,126 @@ singulars:
       rustyDivingHelm:
         desc: 'Sebbene vecchio e arrugginito: questo elmo da sub sembra adatto alle
           immersioni.'
+    achievements:
+      ringOfHomesickness:
+        desc: Questo anello ti ricorda che non c'è posto come casa tua.
+        name: Anello della Nostalgia di Casa
+      shoesOfEscape:
+        name: Scarpe della fuga
+        desc: Queste scarpe ti permettono di andare molto veloce di tanto in tanto.
+      pathfinder:
+        name: Esploratore
+        desc: Alla collana è attaccata una mappa in miniatura che mostra il percorso
+          più breve.
+      capeOfHalfAchiever:
+        desc: Questo magnifico mantello blu rappresenta qualcuno pieno di determinazione
+          nel raggiungere la grandezza.
+        name: Capo del Mezzo Raggiunto
+      bootsOfSpeed:
+        desc: Grazie a queste scarpe i tuoi piedi saranno più leggeri e il tuo passo
+          più veloce.
+        name: Stivali da velocità
+      absorbingAmulet:
+        desc: Questo amuleto, realizzato in metallo antico, è noto per attrarre oggetti
+          di pregio.
+        name: Amuleto assorbente
+      gemBracelet:
+        desc: Sei gemme colorate formano un braccialetto.
+        name: Bracciale con gemme
+      omniTool:
+        desc: Questo strumento, che può essere fissato all'avambraccio, è progettato
+          per assistere l'utente in varie attività su suo comando.
+        name: Omni-strumento
+      capeOfAchiever:
+        name: Capo dei Realizzatori
+        desc: Il mantello color rosa suscita l'interesse di chiunque lo veda. Il proprietario
+          del mantello ha realizzato ciò che altri possono solo sognare.
+      adventurersBoots:
+        desc: Questi robusti stivali sono realizzati per resistere a un uso intensivo
+          e a condizioni climatiche avverse.
+        name: Stivali da avventuriero
+      amuletOfLightness:
+        desc: Questo amuleto irradia una luce brillante e ti riempie di speranza anche
+          nei luoghi più bui.
+        name: Amuleto della luminosità
+      adventurersPants:
+        name: Pantaloni da avventuriero
+        desc: Questi pantaloni in pelle resistente sono dotati di varie cinghie, sia
+          per motivi pratici che estetici.
+      runningVisor:
+        desc: Questa visiera rossa protegge gli occhi dal sole, consentendo comunque
+          alla testa di rinfrescarsi attraverso la parte superiore.
+        name: Visiera da corsa
+      axeOfDestruction:
+        desc: La lama di questa ascia ha la forma di una bocca pronta a divorare il
+          legno.
+        name: Ascia della distruzione
+      shinyRing:
+        desc: Non è l'anello più elegante, ma è sicuramente brillante.
+        name: Anello brillante
+      trashGrabber:
+        desc: Il design di questo strumento allungato rende facile raccogliere i rifiuti
+          senza doversi chinare.
+        name: Pinza per rifiuti
+      trekkingPoles:
+        desc: Questi bastoncini aiutano a mantenere l'equilibrio e ad attraversare
+          terreni accidentati.
+        name: Bastoncini da trekking
+      treasureHunterJacket:
+        desc: Sembra essere una classica giacca di pelle che non passa mai di moda.
+        name: Giacca da cacciatore di tesori
+      travelersKit:
+        name: Kit da viaggio
+        desc: Questa valigia è piena di tutto l'essenziale per qualsiasi destinazione
+          di viaggio.
+      adventurersHat:
+        name: Cappello da avventuriero
+        desc: Questo cappello a secchiello in pelle ti proteggerà dal sole, dal vento
+          e dalla pioggia.
+      adventurersShirt:
+        name: Camicia dell'avventuriero
+        desc: Questa camicia in pelle è di colore marrone chiaro e ha diverse tasche
+          per riporre oggetti.
+      adventurersGloves:
+        name: Guanti da avventuriero
+        desc: Questi guanti in pelle hanno un cinturino regolabile per una vestibilità
+          perfetta.
+      adventurersCape:
+        name: Cappa dell'avventuriero
+        desc: Questo resistente mantello in pelle proteggerà chi lo indossa dalle
+          intemperie. È dotato di cinturini per una facile regolazione.
+      otherSock:
+        name: Altro calzino
+        desc: L'altro calzino che non hai dato a Dobby.
+      tinyBackpack:
+        name: Zainetto piccolo
+        desc: È uno zaino di dimensioni normali se sei un bambino.
+      rustySpyglass:
+        name: Cannocchiale arrugginito
+        desc: Uno strumento ben utilizzato, come questo cannocchiale arrugginito,
+          ha un certo fascino.
+      pantsOfHaste:
+        name: Pantaloni della fretta
+        desc: Devo andare veloce!
+      treasureHunterHat:
+        name: Cappello da cacciatore di tesori
+        desc: Sebbene non sia chiaro se si tratti di un cappello da cowboy o di un
+          fedora, sicuramente trasmette quella caratteristica atmosfera alla “Indy”.
+      treasureHunterPants:
+        name: Pantaloni da cacciatore di tesori
+        desc: Questi pantaloni aderenti in pelle mettono in risalto i muscoli delle
+          gambe.
+      jugglingBalls:
+        name: Palle da giocoleria
+        desc: Tre palline multicolori riempite di grani sono l'oggetto ideale per
+          fare giocoleria.
+      greedyPiggyBank:
+        name: Salvadanaio avido
+        desc: Ogni volta che ci si lascia cadere dentro una moneta, questo salvadanaio
+          dorato emette un forte cigolio.
+      conservationistHat:
+        desc: Questo cappello blu offre una buona protezione dagli elementi.
+        name: Cappello della conservazione
   materials:
     carpentry:
       birchPlank:
