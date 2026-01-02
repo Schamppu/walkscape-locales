@@ -1,1 +1,33 @@
-{}
+singulars:
+  activities:
+    woodcuttingTrees:
+      name: Árvores para corte de madeira
+      requirementLevel: Requer uma atividade de corte de madeira que tenha pelo menos
+        <keywordRequirements /> nos seus requisitos.
+      requirement: Requer uma atividade <object id="woodcuttingTrees" />.
+    fishing:
+      name: Pesca
+      requirement: Requer uma atividade <object id="activity_fishing" />.
+      requirementLevel: Requer uma atividade de pesca que tenha pelo menos <keywordRequirements
+        /> nos seus requisitos.
+    miningOres:
+      name: Mineração de minérios
+      requirement: Requer uma atividade <object id="activity_mining" />.
+  recipes:
+    skills:
+      cooking:
+        requirement: Requer um <object id="recipe_cooking" />.
+        name: Receita de culinária
+      smithing:
+        smelting:
+          name: Fundição
+          requirement: Requer materiais que possam ser utilizados na fundição para
+            <object id="smithing" />.
+    products:
+      sandwich:
+        name: Receita de sanduíche
+        requirement: Requer que um <object id="sandwich" /> seja feito por um <object
+          id="recipe_cooking" />.
+  locations:
+    regional:
+      requirementLevel: <PLACEHOLDER>
