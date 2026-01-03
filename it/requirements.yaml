@@ -66,7 +66,7 @@ singulars:
   activityType:
     singleKeyword: Durante l'esecuzione dell'attività <object id="{obj}" />.
   service:
-    text: Necessario <serviceTier tier="{tier}" /> <object id="{obj}" /> o superiore.
+    text: Necessario <serviceTier tier="{tier}" /><object id="{obj}" /> o superiore.
   realm:
     text: Mentre ci si trova nell'area <realm realm="{realm}" />.
   uniques:
@@ -140,7 +140,7 @@ singulars:
   locationHasKeywords:
     text: Mentre ci si trova in <object id="{obj}" />.
   serviceKeywords:
-    text: Richiede <serviceTier tier="{tier}" /> {objects} servizio o superiore.
+    text: Richiede {objects} <serviceTier tier="{tier}" />servizio o superiore.
   petTotalLevels:
     text: Ottieni un totale di <numberProgress current="{current}" max="{max}" />
       livelli per tutti i tuoi animali domestici.
@@ -168,9 +168,8 @@ singulars:
     text: Hai un livello di abilità totale pari a <numberProgress current="{current}"
       max="{max}" />.
   currentService:
-    text: Richiede <serviceTier tier="{tier}" /> <object id="{obj}" /> servizio o
-      superiore. Non è possibile utilizzare <object id="{currentObj}" icon="false"
-      />.
+    text: Richiede <serviceTier tier="{tier}" /> <object id="{obj}" /> o superiore.
+      Non è possibile utilizzare <object id="{currentObj}" icon="false" />.
   currentServiceKeywords:
     text: Richiede il servizio <serviceTier tier="{tier}" /> {objects} o superiore.
       Non è possibile utilizzare <object id="{currentObj}" icon="false" />.
