@@ -152,10 +152,12 @@ wachtrij plaatsen, maar slechts één activiteit tegelijk. Voltooi of annuleer d
 activiteit voordat u een andere in de wachtrij plaatst.', title: Er kunnen geen activiteiten
 meer in de wachtrij worden geplaatst}, noPathFound: {title: Geen route gevonden, text: Er
 is geen route gevonden naar de geselecteerde locatie. Controleer of het mogelijk is
-om naar de geselecteerde locatie te reizen.}}}, confirmations: {changingStepSource: {
-title: Stappenbron veranderen?, text: Het veranderen van de stappenbron kan leiden
-tot het verliezen van stappen die nog niet gesynchroniseerd zijn. Controleer of je
-stappen gesynchroniseerd zijn voordat je de bron verandert., lastSyncText: 'Stappen
+om naar de geselecteerde locatie te reizen.}, mmNotAtSameLocation: {title: Handelen
+met Heimelijke Handelaar niet mogelijk, text: Je kunt op dit moment niet handelen
+met de Heimelijke Handelaar. Zorg ervoor dat je op de juiste locatie bent.}}}, confirmations: {
+changingStepSource: {title: Stappenbron veranderen?, text: Het veranderen van de stappenbron
+kan leiden tot het verliezen van stappen die nog niet gesynchroniseerd zijn. Controleer
+of je stappen gesynchroniseerd zijn voordat je de bron verandert., lastSyncText: 'Stappen
 voor het laatst gesynchroniseerd om {time}.', neverSyncedText: Stappen zijn nog nooit
 gesynchroniseerd.}, travelAndStartActivity: {text: Je bent niet op de juiste locatie
 om deze activiteit te starten. Wil je eerst naar de juist locatie reizen en dan de
@@ -185,4 +187,12 @@ claimen?}, retirePet: {title: Beestje pensioneren?, text: Je staat op het punt o
 je beestje te pensioneren. Een beestje met pensioen laten gaan zal het permanent bij
 je weghalen. Weet je zeker dat je dit beestje wilt pensioneren?}, destroyEgg: {title: Ei
 vernietigen?, text: 'Je staat op het punt om een ei te vernietigen. Door een ei te
-vernietigen, raak je het permanent kwijt. Weet je zeker dat je dit ei wilt vernietigen?'}}}}
+vernietigen, raak je het permanent kwijt. Weet je zeker dat je dit ei wilt vernietigen?'}},
+validators: {textField: {maxTextLength: 'De maximale lengte is {max} tekens.', minTextLength: 'De
+minimale lengte is {min} tekens.', noConsecutiveSpaces: Opeenvolgende spaties zijn
+niet toegestaan., noLeadingTrailingSpaces: Spaties aan de voor- of achterkant zijn
+niet toegestaan., containsSpecialCharacters: Bevat speciale tekens die niet zijn toegestaan.,
+emojisNotAllowed: Emoji's zijn niet toegestaan., numbersNotAllowed: Cijfers zijn niet
+toegestaan., spacesNotAllowed: Spaties zijn niet toegestaan., swearWordsNotAllowed: Ongepast
+taalgebruik is niet toegestaan., specialCharactersNotAllowed: Speciale tekens zijn
+niet toegestaan.}}}}
