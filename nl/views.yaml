@@ -12,42 +12,51 @@ raceTypes: {'none': Geen, 'human': Mens}, bodyTypes: {'masculine': A (Mannelijk)
 'laughing': Lachend, 'veryAngry': Kwaad}}}, shop: {phrases: {itemType: {"gear": Uitrusting,
 "special": Speciaal, "tool": Gereedschappen, "collectible": Verzamelobjecten, "crafted": Creaties,
 "cosmetic": Uitstraling, "consumable": Verbruiksartikelen, "material": Materialen,
-"container": Voorwerpbewaarsels, "loot": Buit}}}, settings: {languages: {'en': Engels,
-'de': Duits, 'fi': Fins, 'pl': Pools, 'es': Spaans, 'it': Italiaans, 'nl-NL': Nederlands,
-'tr': Turks, 'fr': Frans, 'sv': Zweeds, 'pt': Portugees, 'zh_Hans': Chinees (Vereenvoudigd)},
-visibilitySettings: {'private': Privé, 'friends': Alleen vrienden, 'public': Openbaar},
-notificationImportance: {'low': 'Geen geluid, geen vibrarie, en wordt niet getoond
-in de statusbalk.', 'urgent': Maakt geluid of vibreert en wordt getoond als een heads-up
-notificatie., 'high': Maakt geluid of vibreert}, leaderboardFilter: {'friends': Vrienden,
-'everyone': Iedereen}, stepCountNotifications: {'everyTenThousand': Elke tienduizend,
-'never': Nooit, 'always': Altijd, 'everyHundred': Elke honderd, 'everyThousand': Elke
+"container": Voorwerpbewaarsels, "loot": Buit, "artifact": Artefacten}}}, settings: {
+languages: {'en': Engels, 'de': Duits, 'fi': Fins, 'pl': Pools, 'es': Spaans, 'it': Italiaans,
+'nl-NL': Nederlands, 'tr': Turks, 'fr': Frans, 'sv': Zweeds, 'pt': Portugees, 'zh_Hans': Chinees
+(Vereenvoudigd)}, visibilitySettings: {'private': Privé, 'friends': Alleen vrienden,
+'public': Openbaar}, notificationImportance: {'low': 'Geen geluid, geen vibrarie,
+en wordt niet getoond in de statusbalk.', 'urgent': Maakt geluid of vibreert en wordt
+getoond als een heads-up notificatie., 'high': Maakt geluid of vibreert}, leaderboardFilter: {
+'friends': Vrienden, 'everyone': Iedereen}, stepCountNotifications: {'everyTenThousand': Elke
+tienduizend, 'never': Nooit, 'always': Altijd, 'everyHundred': Elke honderd, 'everyThousand': Elke
 duizend}, boolSettings: {'showRecipesMaterialsAreMet': Materiaalvereisten voldaan,
 'showRecipesRequirementsAreMet': Vaardigheidsvereisten voldaan, 'showRecipesServicesAreMet': Voorzieningsvereisten
-voldaan, 'showCompletedAchievements': Afgeronde prestaties weergeven}}, achievements: {
-phrases: {difficulty: {'easy': Makkelijk, 'hard': Moeilijk, 'normal': Gemiddeld, 'extreme': Extreem},
-difficultyTitle: {'hard': Moeilijke prestaties, 'normal': Gemiddelde prestaties, 'easy': Makkelijke
+voldaan, 'showCompletedAchievements': Afgeronde prestaties weergeven}, leaderboardType: {
+"totalSteps": Totaal aantal <c>stappen</c>, "fishing": <c>Vissen</c> level, "agility": <c>Behendigheid</c>
+level, "carpentry": <c>Timmerwerk</c> level, "cooking": <c>Koken</c> level, "crafting": <c>Vervaardigen</c>
+level, "foraging": <c>Foerageren</c> level, "mining": <c>Delven</c> level, "smithing": <c>Smeden</c>
+level, "trinketry": <c>Sierraderij</c> level, "woodcutting": <c>Houthakken</c> level,
+"achievementPoints": <c>Prestatiepunten</c>}}, achievements: {phrases: {difficulty: {
+'easy': Makkelijk, 'hard': Moeilijk, 'normal': Gemiddeld, 'extreme': Extreem}, difficultyTitle: {
+'hard': Moeilijke prestaties, 'normal': Gemiddelde prestaties, 'easy': Makkelijke
 prestaties, 'extreme': Extreme prestaties}}}, character: {stepsTime: {'hourly': Stappen
-per uur, 'daily': Stappen per dag, 'monthly': Stappen per maand}}}, 'plurals': {'achievements': {
-'phrases': {'achievementPoint': {'few': '-', 'many': '-', 'one': '{} prestatiepunt',
-'other': '{} prestatiepunten', 'two': '{} prestatiepunten', 'zero': '-'}}}, 'activity': {
-'phrases': {'actionsRemaining': {'few': '-', 'many': '-', 'one': 'Resterende actie',
-'other': 'Resterende acties', 'two': 'Resterende acties', 'zero': '-'}, 'actionsToLevelUp': {
-'few': '-', 'many': '-', 'one': 'Actie tot volgende niveau', 'other': 'Acties tot
-volgende niveau', 'two': 'Acties tot volgende niveau', 'zero': '-'}, 'stepsRemainingInTotal': {
-'few': '-', 'many': '-', 'one': 'Stap nodig in totaal', 'other': 'Stappen nodig in
-totaal', 'two': 'Stappen resterend in totaal', 'zero': '-'}, 'stepsRequired': {'few': '-',
-'many': '-', 'one': 'Stap nodig', 'other': 'Stappen nodig', 'two': 'Stappen nodig',
-'zero': '-'}, 'stepsToCraft': {'few': '-', 'many': '-', 'one': 'Stap om te maken',
-'other': 'Stappen om te maken', 'two': 'Stappen om te maken', 'zero': '-'}, 'stepsToLevelUp': {
-'few': '-', 'many': '-', 'one': 'Stap tot volgende niveau', 'other': 'Stappen tot
-volgende niveau', 'two': 'Stappen tot volgende niveau', 'zero': '-'}, stepsUntilArrival: {
-other: Stappen tot aankomst, few: '-', many: '-', two: Stappen tot aankomst, zero: '-',
-one: Stap tot aankomst}}}, inventory: {info: {consumableDuration: {many: '-', two: 'Activiteit
-<object id="{activity}" alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie.
-De gekozen hoeveelheid verbruiksartikelen is goed voor een effect op <c>{actions}
-acties</c>.', one: 'Activiteit <object id="{activity}" alwaysShow="true"/> vereist
-<c>{steps}</c> stappen per actie. De gekozen hoeveelheid verbruiksartikelen is goed
-voor een effect op <c>{actions} actie</c>.', zero: 'Activiteit <object id="{activity}"
+per uur, 'daily': Stappen per dag, 'monthly': Stappen per maand}}, announcements: {
+categories: {"changelog": Changelog}}}, 'plurals': {'achievements': {'phrases': {
+'achievementPoint': {'few': '-', 'many': '-', 'one': '{} prestatiepunt', 'other': '{}
+prestatiepunten', 'two': '{} prestatiepunten', 'zero': '-'}}}, 'activity': {'phrases': {
+'actionsRemaining': {'few': '-', 'many': '-', 'one': 'Resterende actie', 'other': 'Resterende
+acties', 'two': 'Resterende acties', 'zero': '-'}, 'actionsToLevelUp': {'few': '-',
+'many': '-', 'one': 'Actie tot volgende niveau', 'other': 'Acties tot volgende niveau',
+'two': 'Acties tot volgende niveau', 'zero': '-'}, 'stepsRemainingInTotal': {'few': '-',
+'many': '-', 'one': 'Stap nodig in totaal', 'other': 'Stappen nodig in totaal', 'two': 'Stappen
+resterend in totaal', 'zero': '-'}, 'stepsRequired': {'few': '-', 'many': '-', 'one': 'Stap
+nodig', 'other': 'Stappen nodig', 'two': 'Stappen nodig', 'zero': '-'}, 'stepsToCraft': {
+'few': '-', 'many': '-', 'one': 'Stap om te maken', 'other': 'Stappen om te maken',
+'two': 'Stappen om te maken', 'zero': '-'}, 'stepsToLevelUp': {'few': '-', 'many': '-',
+'one': 'Stap tot volgende niveau', 'other': 'Stappen tot volgende niveau', 'two': 'Stappen
+tot volgende niveau', 'zero': '-'}, stepsUntilArrival: {other: Stappen tot aankomst,
+few: '-', many: '-', two: Stappen tot aankomst, zero: '-', one: Stap tot aankomst},
+stepsRequiredPerAction: {one: '<icon i="Steps"/> <c>{} stap</c> benodigd per actie',
+two: '<icon i="Steps"/> <c>{} stappen</c> benodigd per actie', other: '<icon i="Steps"/>
+<c>{} stappen</c> benodigd per actie'}, workEfficiency: {one: Werkefficiëntie, two: Werkefficiëntie,
+few: '-', many: '-', other: Werkefficiëntie}}}, inventory: {info: {consumableDuration: {
+many: '-', two: 'Activiteit <object id="{activity}" alwaysShow="true"/> vereist <c>{steps}</c>
+stappen per actie. De gekozen hoeveelheid verbruiksartikelen is goed voor een effect
+op <c>{actions} acties</c>.', one: 'Activiteit <object id="{activity}" alwaysShow="true"/>
+vereist <c>{steps}</c> stappen per actie. De gekozen hoeveelheid verbruiksartikelen
+is goed voor een effect op <c>{actions} actie</c>.', zero: 'Activiteit <object id="{activity}"
 alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie. De gekozen hoeveelheid
 verbruiksartikelen is goed voor een effect op <c>{actions} acties</c>.', other: 'Activiteit
 <object id="{activity}" alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie.
@@ -193,20 +202,26 @@ skillModifiers: Vaardigheidsmodificatoren, noCombatModifiers: Geen gevechtsmodif
 door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators door gedragen
 voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
 modificatoren, combatModifiers: Gevechtsmodificatoren, noItemEquipped: Geen voorwerp
-uitgerust, noItemSelected: Geen voorwerp geselecteerd}}, tools: {phrases: {emptyToolSlot: Leeg
-gereedschapsvak, lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau
-{level}</c>.', noToolEquipped: Geen gereedschap gedragen in dit vak.}}, bank: {phrases: {
-noItemsInventory: Geen voorwerpen in je inventaris., noItemsBank: Geen voorwerpen
-in je bank., withdraw: Opnemen, deposit: Storten, youAreNotAtABank: <c>Je bevindt
-je niet op een locatie waar een bank is</c>. Je kunt alleen gebruikmaken van de bank
-als je naar een locatie reist waar een bank is.}}, trade: {phrases: {trade: ACCEPTEREN,
-restockIn: 'Nieuwe voorraad over: ', buying: '{amount} kopen', selling: '{amount}
-verkopen', total: Totaal}}, characterCreation: {phrases: {bodyType: Lichaamstype,
-race: Ras, chooseABodyType: Kies een lichaamstype, bodyTypeA: A, characterName: Naam
-personage, bodyTypeB: B}, info: {rememberSwipe: Vergeet niet dat je terug kunt swipen
-om gekozen opties te veranderen op elk moment tijdens het aanmaken van het personage.}},
-settings: {categories: {accessibility: {title: Toegankelijkheid, leftHandedMode: Linkshandigenmodus},
-account: {title: Account, visibility: Zichtbaarheid van profiel}, character: {title: Personage,
+uitgerust, noItemSelected: Geen voorwerp geselecteerd, gearSlots: uitrustingsvakken,
+toolSlots: Gereedschapsvakken}, info: {gearInfo: Rust je personage uit met uitrusting
+om zijn of haar eigenschappen te verbeteren. Je kunt op elk uitrustingsvak hieronder
+tikken om te zien welke items uit je inventaris je in dat vak kunt plaatsen., toolInfo: Rust
+je personage uit met gereedschap om je eigenschappen te verbeteren. In het begin heb
+je drie gereedschapsslots beschikbaar. Je ontgrendelt meer gereedschapsslots <c>door
+je personage te levelen</c>.}}, tools: {phrases: {emptyToolSlot: Leeg gereedschapsvak,
+lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau {level}</c>.',
+noToolEquipped: Geen gereedschap gedragen in dit vak.}}, bank: {phrases: {noItemsInventory: Geen
+voorwerpen in je inventaris., noItemsBank: Geen voorwerpen in je bank., withdraw: Opnemen,
+deposit: Storten, youAreNotAtABank: <c>Je bevindt je niet op een locatie waar een
+bank is</c>. Je kunt alleen gebruikmaken van de bank als je naar een locatie reist
+waar een bank is.}}, trade: {phrases: {trade: ACCEPTEREN, restockIn: 'Nieuwe voorraad
+over: ', buying: '{amount} kopen', selling: '{amount} verkopen', total: Totaal}},
+characterCreation: {phrases: {bodyType: Lichaamstype, race: Ras, chooseABodyType: Kies
+een lichaamstype, bodyTypeA: A, characterName: Naam personage, bodyTypeB: B}, info: {
+rememberSwipe: Vergeet niet dat je terug kunt swipen om gekozen opties te veranderen
+op elk moment tijdens het aanmaken van het personage.}}, settings: {categories: {
+accessibility: {title: Toegankelijkheid, leftHandedMode: Linkshandigenmodus}, account: {
+title: Account, visibility: Zichtbaarheid van profiel}, character: {title: Personage,
 anonOnLeaderboard: Anonimiseren op klassement, hideSteps: Stappen verbergen, exportData: Exporteer
 personage data naar het klembord}, gameplay: {title: Gameplay, stopWhenOverEncumberedDefault: Standaard
 stoppen wanneer overbelast}, closedBeta: {title: Gesloten Beta, clearStepsGraph: Stappengrafiek
@@ -295,25 +310,27 @@ validatingGame: Spelgegevens uit de server aan het valideren, gameVersion: Spelv
 aan het ophalen, checkingLocalizations: Localisaties uit de server aan het controleren,
 loadingCharactersFromCloud: Personages uit de cloud aan het laden, dataLoadingComplete: Gegevens
 laden afgerond!, authenticating: Authenticeren, awaitingForRemoveConfig: Wachten op
-externe configuratie, loadingDevicePermissions: Apparaat machtigingen laden}}, character: {
-phrases: {checkOutSubject: Check mijn voortgang in WalkScape!, skills: Vaardigheden,
-stepsOfLastWeek: Stappen van de laatste 7 dagen, checkOut: 'Hier is mijn WalkScape
-personage {name}. Moet je kijken!\nhttps://walkscape.app', totalLevel: Totaalniveau,
-savePicture: Afbeelding opslaan, level: 'Personage-niveau: <c>{level}</c>', stepsToNextLevel: 'Stappen
-tot volgend niveau <c>{steps}</c>'}, info: {skillBreakdown: Hier is het complete overzicht
-van alle vaardigheden die je personage beoefend heeft tijdens zijn/haar reis. Druk
-op een van de vaardigheden voor meer gedetailleerde informatie en wat ze ontgrendelen.,
-eachLevelIncreasesStepBank: 'Elk personage-niveau na niveau <c>{level}</c> verhoogt
-het maximale aantal bewaarde stappen met <c>{amount}</c>.'}}, permissions: {phrases: {
-pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om het spel
-te laten functioneren, hebben we toestemming nodig om de gegevens van de stappenteller
-op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan met het spel.',
-exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je moet toestemming
-geven voor de volgende permissies om verder te gaan met het spel. Druk op de permissie
-om toestemming te geven., noDeviceFound: Geen device gevonden. Controleer a.u.b. of
-je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt en toestemming hebt gegeven
-om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We hebben
-deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
+externe configuratie, loadingDevicePermissions: Apparaat machtigingen laden, processingStepHistory: Stap
+geschiedenis verwerken, startingAuthProcess: Authenticatieproces starten, startingNotificationManagerProcess: Notificatiebeheerder
+proces starten, startingTimeManagerProcess: Tijdsbeheer proces starten, loadingSteps: Stappen
+laden, loadingPlayerData: Speler data laden}}, character: {phrases: {checkOutSubject: Check
+mijn voortgang in WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen van de
+laatste 7 dagen, checkOut: 'Hier is mijn WalkScape personage {name}. Moet je kijken!\nhttps://walkscape.app',
+totalLevel: Totaalniveau, savePicture: Afbeelding opslaan, level: 'Personage-niveau:
+<c>{level}</c>', stepsToNextLevel: 'Stappen tot volgend niveau <c>{steps}</c>'}, info: {
+skillBreakdown: Hier is het complete overzicht van alle vaardigheden die je personage
+beoefend heeft tijdens zijn/haar reis. Druk op een van de vaardigheden voor meer gedetailleerde
+informatie en wat ze ontgrendelen., eachLevelIncreasesStepBank: 'Elk personage-niveau
+na niveau <c>{level}</c> verhoogt het maximale aantal bewaarde stappen met <c>{amount}</c>.'}},
+permissions: {phrases: {pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om
+het spel te laten functioneren, hebben we toestemming nodig om de gegevens van de
+stappenteller op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan
+met het spel.', exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je
+moet toestemming geven voor de volgende permissies om verder te gaan met het spel.
+Druk op de permissie om toestemming te geven., noDeviceFound: Geen device gevonden.
+Controleer a.u.b. of je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt
+en toestemming hebt gegeven om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We
+hebben deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
 connectAppleHealth: Verbinden met Apple Health, connect: Verbinden, connectAppleHealthExplanation: 'Je
 moet verbinding maken met Apple Health zodat we stappen kunnen inlezen die gesynchroniseerd
 zijn door je horloge, en om te zien met welke devices je bent verbonden. Als dit de
@@ -393,11 +410,12 @@ repeatingReward: Herhalende beloning, unclaimedRewards: 'Niet geclaimde beloning
 {count}', nextRewardUnlocked: 'Volgende beloning vrijgespeeld:'}}, shop: {phrases: {
 bought: Gekocht, sold: Verkocht, resetTrade: Ruil terugdraaien, buying: Kopen, selling: Verkopen,
 buyBack: Terugkopen}}, social: {phrases: {friends: Vrienden, pendingInvites: Openstande
-uitnodigingen, manageFriends: Vrienden beheren}}, popupBubbles: {phrases: {arrivedToLocation: 'Gearriveerd
-in <object id={location} />', overEncumbered: Je inventaris is vol en je bent overbelast.}},
-locales: {phrases: {language: Taal, helpToTranslate: WalkScape is <c>vertaald door
-de community</c>. Help ons met het vertalen van het spel naar meer talen en met het
-uitbreiden van de huidige vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
+uitnodigingen, manageFriends: Vrienden beheren, countResultsFound: '{count} resultaten
+gevonden'}}, popupBubbles: {phrases: {arrivedToLocation: 'Gearriveerd in <object id={location}
+/>', overEncumbered: Je inventaris is vol en je bent overbelast.}}, locales: {phrases: {
+language: Taal, helpToTranslate: WalkScape is <c>vertaald door de community</c>. Help
+ons met het vertalen van het spel naar meer talen en met het uitbreiden van de huidige
+vertalingen door de <a href="https://wiki.walkscape.app/wiki/Localization">Vertalingshandleiding</a>
 te bezoeken. Alle hulp wordt enorm gewaardeerd! ❤️, chooseALanguage: Kies een taal
 uit de onderstaande lijst., percentExplanation: '% laat zien hoeveel vertaald is.',
 selectGrammaticalGender: Selecteer grammaticaal geslacht, grammaticalGenderExplanation: Het
@@ -452,9 +470,22 @@ iets doen zodra je iets hebt gemaakt van een specifieke zeldzaamheid of al het m
 hebt gebruikt?}, activity: {onceInventoryIsFull: Wil je iets doen zodra je inventaris
 vol is?, onceAllActionsAreCompleted: Wil je iets doen zodra alle acties voltooid zijn?}}},
 whileAway: {phrases: {fromProc: 'Door <c>{proc}</c>', fromAttribute: 'Door attribuut
-{attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door <object id="{source}"/>'}},
-rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde Walkpedia-artikelen, rumorsFromCharacter: 'Geruchten
-van <c>{characterName}</c>'}}, download: {phrases: {downloadedFileCount: '<c i=0>{current}</c>
-van <c i=1>{total}</c> bestanden gedownload'}}, pets: {phrases: {chooseEgg: Kies een
-ei, currentLevelProgress: Huidige level voortgang, abilities: Abilities, xpToMaxLevel: XP
-benodigd tot hoogste level, claimedAt: Geclaimd op}}}}
+{attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door <object id="{source}"/>',
+startedActivityNoLocation: 'Activiteit gestart <object id="{activity}"/>', actionCancelled: Actie
+geannuleerd, startedNewActivity: 'Activiteit gestart <object id="{activity}"/> in
+<object id="{location}"/>', switchedToGearSet: 'Uitrustingsset wisselen naar <c>{name}</c>',
+actionsCompleted: Acties voltooid, none: Geen, gearSetDoesNotExist: Deze uitrustingsset
+bestaat niet meer}}, rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde Walkpedia-artikelen,
+rumorsFromCharacter: 'Geruchten van <c>{characterName}</c>', backToRumors: Terug naar
+geruchten}}, download: {phrases: {downloadedFileCount: '<c i=0>{current}</c> van <c
+i=1>{total}</c> bestanden gedownload'}}, pets: {phrases: {chooseEgg: Kies een ei,
+currentLevelProgress: Huidige level voortgang, abilities: Abilities, xpToMaxLevel: XP
+benodigd tot hoogste level, claimedAt: Geclaimd op, requirementsToGainXPNotMet: '<c>{name}</c>
+kan geen XP verdienen', attributes: Eigenschappen, maxLevel: Max level, summonPet: Roep
+beestje op, changePet: Beestje veranderen, dismissPet: Beestje wegsturen, pet: Beestje,
+egg: Ei, noEggSelected: Geen ei geselecteerd, noPetSelected: Geen beestje geselecteerd,
+openPets: Beestjes openen, destroy: Vernietig, currentXp: Huidige XP}}, currencies: {
+info: {noCurrencies: "Je hebt momenteel geen valuta's. Je kunt valuta's verdienen
+bij <c>gilden</c>, <c>Heimelijke Handelaar</c> en andere <c>speciale bronnen</c>.",
+thereAreNoPaidCurrencies: Valuta's in het spel zullen <c>nooit</c> te koop zijn <c>met
+echt geld</c>.}, phrases: {goldCoins: Gouden munten, currencies: Valuta's}}}}
