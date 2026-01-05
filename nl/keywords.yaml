@@ -333,8 +333,8 @@ singulars:
     skillingGear:
       name: Vaardigheidsuitrusting
       requirement: Vereist het dragen van <object id="skillingGear" />.
-      requirementLevel: Vereist vaardigheidsuitrusting die minstens <keywordRequirements
-        /> in zijn vereisten heeft.
+      requirementLevel: Vereist vaardigheidsuitrusting met minstens <keywordRequirements
+        /> in zijn vereisten.
     skis:
       name: Ski's
       requirement: Vereist het dragen van <object id="skis" />.
@@ -493,6 +493,42 @@ singulars:
       consumables:
         beverage:
           name: Drankje
+          requirement: <TIJDELIJKE AANDUIDING>
+          requirementLevel: <TIJDELIJKE AANDUIDING>
+        memosphere:
+          requirement: <TIJDELIJKE AANDUIDING>
+          requirementLevel: <TIJDELIJKE AANDUIDING>
+        food:
+          requirement: <TIJDELIJKE AANDUIDING>
+          requirementLevel: <TIJDELIJKE AANDUIDING>
+          name: Voedsel
+        potion:
+          requirementLevel: <TIJDELIJKE AANDUIDING>
+          requirement: <TIJDELIJKE AANDUIDING>
+      regional:
+        halfling:
+          requirement: <TIJDELIJKE AANDUIDING>
+          requirementLevel: <TIJDELIJKE AANDUIDING>
+        swamp:
+          name: Moeras
+          requirement: <TIJDELIJKE AANDUIDING>
+          requirementLevel: <TIJDELIJKE AANDUIDING>
+        erdwise:
+          requirement: <TIJDELIJKE AANDUIDING>
+          requirementLevel: <TIJDELIJKE AANDUIDING>
+        wrentmark:
+          name: Rentmark
+        gdte:
+          requirementLevel: <TIJDELIJKE AANDUIDING>
+          requirement: <TIJDELIJKE AANDUIDING>
+        trellin:
+          name: Trellin
+        syrenthia:
+          requirement: <TIJDELIJKE AANDUIDING>
+          requirementLevel: <TIJDELIJKE AANDUIDING>
+        jarvonia:
+          requirement: <TIJDELIJKE AANDUIDING>
+          requirementLevel: <TIJDELIJKE AANDUIDING>
     skills:
       agility:
         name: Behendigheid
@@ -505,12 +541,38 @@ singulars:
       cooking:
         requirement: <TIJDELIJKE AANDUIDING>
         name: Koken
+      tailoring:
+        name: Kleermakerij
+      fishing:
+        name: Vissen
+      mining:
+        name: Delven
+      smithing:
+        name: Smeden
+      foraging:
+        name: Foerageren
   faction:
     reward:
       requirement: Vereist een <object id="faction_reward" />.
       name: Factiebeloning
       requirementLevel: Vereist een factiebeloning met minstens <keywordRequirements
         /> in zijn vereisten.
+  locations:
+    underwater:
+      name: Onder water
+    desert:
+      name: Woestijn
+  itemSets:
+    divingGear:
+      requirement: Vereist  <object id="itemset_diving_gear" />.
+      name: Duikuitrusting
+      requirementLevel: Vereist duikuitrusting welke ten minste  <keywordRequirements
+        /> in zijn vereisten heeft.
+  services:
+    bench:
+      name: Sierradenbank
+    sawmill:
+      name: Zagerij
 consumables:
   cookedFish:
     name: Gekookte vis
