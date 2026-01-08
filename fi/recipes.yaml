@@ -1030,6 +1030,12 @@ singulars:
           tulisuutta. Täydellinen vilppaille päiville.
       schnitzel:
         name: Valmista leike
+        desc: Kevyesti nuijittu liha peitetään leivänmuruihin ja paistetaan pannulla
+          täydellisen kullanruskeaksi. Annos on klassinen, ja siitä on loputtomasti
+          muunnelmia.
+        activityDesc: Nuijit lihanpalan tasaisen ohueksi, ja peität sen sitten jauhoon,
+          muniin ja leivänmuruihin. Paistat leikkeen varoen kuumassa öljyssä, kunnes
+          se on rapea ja kullanruskea.
       salmonPie:
         name: Leivo lohipiirakka
         desc: Täyteläinen ja lohduttava ruoka, jossa on herkullisesti lohkeavaa lohta
@@ -1039,12 +1045,35 @@ singulars:
           ja kypsennät uunissa, kunnes pinta on kullanruskea ja kupliva.
       beer:
         name: Pane olutta
+        activityDesc: Murskaat mallastuksessa liotetut ja lyhyesti idätetyt viljanjyvät,
+          ja uutat niistä sokereita kuumassa vedessä. Odotat prosessin taikaa kärsivällisesti,
+          ja herkullisen kotikaljan valmistumista.
+        desc: Tämä monimutkainen prosessi vaatii mallastettua viljaa, ja siinä syntyy
+          aromikas juoma.
       wine:
         name: Valmista viiniä
+        desc: Monimutkainen juoma, joka syntyy hedelmien käymisestä, jolloin niiden
+          makea mehu muuttuu alkoholipitoiseksi juomaksi, jolla on omalaatuinen maku
+          ja tuoksu.
+        activityDesc: Murskaat hedelmät irrottaaksesi niiden mehun, ja siirrät sen
+          käymisastiaan. Valvot seoksen lämpötilaa tarkkaavaisesti, ja suojaat sitä
+          asiattomilta kasvustoilta. Kärsivällisyytesi palkitaan, kun luontainen käymisprosessi
+          muuttaa hedelmäisen mehun viiniksi.
       veggieSoup:
         name: Valmista kasviskeitto
+        desc: Tukeva ja terveellinen sekoitus erilaisia vihanneksia haudutettuna maukkaassa
+          liemessä. Keittoon voi lisätä lempiaineksensa yksilöllisen herkun valmistamiseksi.
+        activityDesc: Pilkot sekalaisia vihanneksia pataan, ja kuullotat niitä hieman
+          ennen kuin lisäät liemen ja mausteet. Annat keiton hautua kunnes kasvikset
+          kypsyvät mureiksi ja maut sekoittuvat sopivasti.
       friednoodles:
         name: Valmista paistetut nuudelit
+        desc: Nopea ja maukas ruoka, jossa yhdistyvät wokkipannulla pikaisesti kuumennetut
+          nuudelit lempikasvistesi, proteiininlähteen ja suolaisen kastikkeen kanssa.
+        activityDesc: Keität nuudelit pakkauksen ohjeen mukaan, ja kuumennat ne nopeasti
+          pannulla valkosipulin, inkiväärin ja lempikasvistesi kanssa. Lisäät maukkaan
+          kastikkeen ja sekoitat ainekset keskenään kunnes kastike on levinnyt ja
+          herkullinen ja tyydyttävä ateria on valmis.
       milk:
         activityDesc: Lypsät luovasti silkkiyrtin maitiaisnestettä ja kuumennat ja
           jäähdytät nesteen nopeasti. Lopun kasvimassan heität pois turhana.
@@ -1077,9 +1106,9 @@ singulars:
           jonka väri tummuu selvästi. Annat maun ja mätänupukan voiman hetken asettua
           parantamaan viiniä, vaikka olet varma että jotkut väittäisivät alkuperäisen
           maistuvan paremmalta.
-        name: Pane terästettyä viiniä
+        name: Valmista terästettyä viiniä
       fireballWine:
-        name: Pane tulipalloviiniä
+        name: Valmista tulipalloviiniä
         desc: Tätä vahvistettua viiniä on parannettu edelleen mausteella, joka tasaa
           alkoholin polttelua kiteytyneen liekin avulla.
         activityDesc: Jauhat kiteytyneen liekin hienoksi jauheeksi, joka muistuttaa
@@ -1092,6 +1121,28 @@ singulars:
           kastikkeeseen ja maustat tuoreilla yrteillä. Paahdat sämpylät, voitelet
           ne runsaskätisesti ja läjäät rapuseosta niiden päälle. Yksinkertainen ja
           tyydyttävä herkku.
+      spaghettiAndMeatballs:
+        activityDesc: Ruskistat jauhelihaa ja sekoitat sen leivänmuruihin, kananmuniin
+          ja mausteisiin. Valmistat taikinasta lihapullia, ja kuumennat ne maukkaassa
+          tomaattikastikkeessa kypsiksi. Tällä välin keität spagetin kiehuvassa vedessä.
+          Lopuksi pastasta, kastikkeesta ja lihapullista koostuva lohdullinen kokonaisuus
+          on valmis tarjoiltavaksi.
+        name: Valmista spagettia ja lihapullia
+        desc: Lohturuokaklassikko, täydellinen tilanteeseen kuin tlianteeseen.
+      cookedMeat:
+        name: Kypsennä lihaa
+        desc: Klassinen kypsennystekniikka synnyttää täydellisen pihvin.
+        activityDesc: Maustat pihvin suolalla ja pippurilla, ja varmistat tottunein
+          käsin mausteiden tasaisen leviämisen. Valurautapannu tirisee kun lisäät
+          siihen nokareen voita ja öljyä. Pihvi tirisee ja höyryää, ja paistuu molemmilta
+          puolilta täydellisen kypsäksi.
+    misc:
+      ectoplasm:
+        name: Keitä ektoplasmaksi
+        desc: Keitä kalat vapauttaaksesi niistä ektoplasman ja jalostaaksesi sen kiinteään
+          muotoonsa.
+        activityDesc: Keität ektoplasmakalat, jolloin niihin sitoutunut ektoplasmaenergia
+          vapautuu, ja saat sen työstettyä ja jalostettua uuteen muotoon.
   trinketry:
     amulets:
       jarvonianFlowerNecklace:
@@ -1453,6 +1504,97 @@ singulars:
         desc: Valmista sulava ja voimakas metsästysjousi tummasta ja tiiviistä mahongista.
         activityDesc: Huolella ja tarkasti työstäen muunnat mahongin kauniiksi ja
           tappavaksi metsästysjouseksi.
+    arrows:
+      farganiteArrows:
+        name: Valmista farganiittinuolia
+        desc: Valmista ammuksia, joiden kärjet ovat farganiittia.
+        activityDesc: Muovaat farganiittia, ja sen taivaansininen hohde valaisee työtäsi.
+          Metallin luonteessa tuntuu kylmän kosketus, kun muokkaat siitä nuolenkärkiä.
+          Kukin nuoli on hienovaraista voimaa säteilevä ase, huolellisesti sulitettu
+          ja valmis lentoon.
+      simpleBowstring:
+        name: Valmista simppeli jousen jänne
+        desc: Valmista simppeli naru jousesi voimanlähteeksi.
+        activityDesc: Valitset vahvat kuidut vakain käsin, ja aloitat pikkutarkan
+          prosessin, jossa pyörität ne yhteen. Jokainen säie löytää tarkan paikkansa,
+          ja lisää narun vahvuutta ja kestävyyttä.
+      steelArrows:
+        activityDesc: Muovaat harjaantunein käsin kuumennetun teräksen kuolettaviksi
+          nuolenkärjiksi. Tulen hohde valaisee keskittyneitä kasvojasi, kun kiinnität
+          sulitetut varret.
+        name: Valmista teräsnuolia
+        desc: Valmista ylivoimaisia ammuksia, joiden terät ovat terästä, joka voi
+          lävistää kovimmatkin kohteet.
+      tarsiliumArrows:
+        name: Valmista tarsiliumnuolia
+        activityDesc: Muovaat tumman tarsiliummetallin nuolenkärjiksi, ja sen läpitunkematon
+          mustuus lupaa hiljaisen ja nopean lopun niiden kohteelle. Sulat, jotka ovat
+          vahvassa ristiriidassa metallin kovuuden kanssa, viimeistelevät huolellisesti
+          kiinnitettynä nämä tappavat aseet.
+        desc: Valmista uhkaavia ammuksia, joiden kärjet ovat mustaa tarsiliumia.
+      bronzeArrows:
+        activityDesc: Muovaat pronssin vakaalla kädellä nuolenkärjiksi, joiden terävät
+          reunat kimaltavat tulen loimussa. Kiinnität ne varoen varsiinsa, ja luot
+          aseita, joilla on sekä voimaa että tarkkuutta.
+        name: Valmista pronssinuolia
+        desc: Valmista kestäviä nuolia, joiden kärjet ovat pronssia.
+      ironArrows:
+        activityDesc: Kuumennat raudan tulessa, ja muovaat sitä nuolenkärjiksi vakain
+          käsin. Kun se jäähtyy, kiinnität sulitetut varret, ja luot yksinkertaisia
+          mutta tehokkaita aseita.
+        name: Valmista rautanuolia
+        desc: Valmista kestäviä ammuksia, joiden kärjet ovat rautaa.
+      copperArrows:
+        name: Valmista kuparinuolia
+        desc: Valmista virtaviivaisia nuolia, joiden kärjet ovat kuparia.
+        activityDesc: Muovaat kuparin keskittyneen päättäväisesti nuolenkärjiksi,
+          joiden terävät reunat välkähtelevät tulen hohteessa.
+    traps:
+      birdhouses:
+        pineBirdhouse:
+          activityDesc: Muovaat mäntyä vakaalla kädellä mukavaksi linnunpöntöksi.
+            Työstäessäsi kuvittelet jo linnut jotka voivat tehdä siihen pesänsä, ja
+            kuinka ne löytävät sen seinistä rauhaisan suojan.
+          name: Valmista mäntyinen linnunpönttö
+          desc: Valmista maanläheinen linnunpönttö kestävästä ja lämpimästä mäntypuusta.
+        spruceBirdhouse:
+          name: Valmista kuusinen linnunpönttö
+          desc: Valmista kestävä linnunpönttö vahvasta ja hyväntuoksuisesta kuusesta.
+          activityDesc: Muovaat huolella kuusta kestäväksi linnunpöntöksi. Puun luontainen
+            säänkestävyys takaa suojaisan ja pitkäikäisen kodin siivekkäille ystäville.
+        mangroveBirdhouse:
+          name: Valmista mangrovesta linnunpönttö
+          activityDesc: Keskityt erityisesti yksityiskohtiin muokatessasi mangrovea
+            ikimuistoiseksi linnunpöntöksi. Sen luontainen kosteudenkesto ja pikkuisten
+            puutuholaisten vastustuskyky varmistavat turvallisen ja kestävän kodin
+            siivekkäille ystäville.
+          desc: Valmista ainutkertainen linnunpönttö vahvasta ja kestävästä mangrovesta.
+        birchBirdhouse:
+          name: Valmista koivuinen linnunpönttö
+          desc: Valmista mukava linnunpönttö vaaleasta ja kestävästä koivusta.
+          activityDesc: Muovaat lempeällä otteella koivupuusta linnunpöntön turvapaikaksi
+            siivekkäille ystäville. Kun pönttö valmistuu, kuvittelet ilman täyttyvän
+            pian iloisesta sirkutuksesta.
+        mapleBirdhouse:
+          name: Valmista vaahterainen linnunpönttö
+          desc: Valmista klassinen linnunpönttö vahvasta ja kauniista vaahterasta.
+          activityDesc: Valitset varoen palan vaahteraa, ja muovaat siitä klassisen
+            linnunpöntön. Puun luontainen kauneus ja kestävyys tarjoaa siivekkäille
+            ystäville pitkäikäisen kodin.
+        teakBirdhouse:
+          name: Valmista tiikkinen linnunpönttö
+          desc: Valmista tyylikäs linnunpönttö kestävästä ja tiiviistä tiikkipuusta.
+          activityDesc: Muokkaat tiikkiä pikkutarkasti linnunpöntöksi. Puun luontainen
+            kauneus ja säänkestävät ominaisuudet varmistavat siivekkäille ystäville
+            pitkäkestoisen kodin.
+      net:
+        kelpDriftNet:
+          name: Valmista levästä ajoverkko
+          desc: Valmista sitkeästä levästä kestävä verkko, joka soveltuu erinomaisesti
+            meren aarteiden pyytämiseen.
+          activityDesc: Solmit levästä vahvan ja kestävän verkon kärsivällisin sormin.
+            Jokainen solmu vahvistaa odotustasi runsaasta saaliista, ja kuvittelet
+            jo sen kudelman elämää sykkivän meren antimien kokoajana.
   foraging:
     other:
       mangroveBasket:
