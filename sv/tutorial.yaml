@@ -69,3 +69,101 @@ singulars:
     pages:
       p0:
         title: Välja aktiviteter
+        sections:
+          s0: "Att välja aktiviteter som din karaktär ska utföra är det viktigaste
+            sättet att göra framsteg i spelet. Aktiviteter belönar dig med föremål
+            och erfarenhet när du slutför <hl>moment</hl>.\n\nDu hittar aktiviteterna
+            under platsbilden. På mindre skärmar kan du behöva skrolla lite för att
+            se listan med aktiviteter. Aktivitetslistan visar knappar för olika färdigheter
+            som har möjliga aktiviteter på platsen. Siffran under knappen visar hur
+            många alternativ som finns.\n"
+        imageTexts:
+          i0: "Att öppna och starta aktiviteter kan göras i platsvyn och även i aktivitetsvyn
+            om du inte har någon aktuell aktivitet vald.\n"
+      p1:
+        title: Besöka byggnader
+        imageTexts:
+          i0: "Vissa platser har byggnader som du kan besöka.\n"
+        sections:
+          s0: "En annan viktig sak du kan göra på vissa platser är att besöka byggnader.
+            Alla platser har inte byggnader.\n\nDe viktigaste byggnaderna är definitivt
+            affärer och banker. Du kan använda NPC-affärer för att köpa och sälja
+            dina föremål. Banker är användbara när du vill lagra föremål för senare
+            bruk. Du kan snabbt sätta in föremål från ditt inventarium om din plats
+            har en bank genom att långtrycka på ett föremål och välja alternativet
+            nere till höger.\n\n<box>När du är i Magilösa skogen, startplatsen, bör
+            du <hl>Besöka Hjälpsamma Herberts hydda</hl>. Han kommer att ge dig några
+            föremål så att du kan komma igång.</box>\n"
+      p2:
+        title: Använda tjänster
+        imageTexts:
+          i0: "Vissa platser har tjänster som du kan använda för tillverkningsändamål.\n"
+        sections:
+          s0: "Vissa platser – särskilt städer och samhällen – har också tjänster.
+            Du behöver tjänster för att kunna tillverka vissa föremål. Här är de tjänster
+            du oftast behöver tidigt i spelet:\n\n<li><hl>Smedjor</hl>. Smedjor behövs
+            när du vill smida, till exempel smälta tackor eller skapa rustningar.
+            Du hittar närmaste smedja i Kallaheim.</li>\n\n<li><hl>Sågverk</hl>. Sågverk
+            behövs när du vill göra snickeri, till exempel skapa plankor av stockar.
+            Du hittar närmaste sågverk i Kallaheim.</li>\n\n<li><hl>Kök</hl>. Kök
+            behövs när du vill laga mat, till exempel skapa förbrukningsvaror som
+            ger tillfälliga bonusar. Du hittar närmaste kök i Kallaheim.</li>\n\n\
+            <li><hl>Verkstäder</hl>. Verkstäder behövs när du vill hantverka/tillverka,
+            till exempel skapa verktyg som hackor och fiskespön. Du hittar närmaste
+            verkstad i Frusenholm, öster om Kallaheim. Grundläggande verktyg har inga
+            servicekrav.</li>\n"
+      p3:
+        title: Besöka Hjälpsamma Herberts hydda
+        sections:
+          s0: "<box>Som första sak bör du besöka Herbert. Han finns i Magilösa skogen
+            och hjälper dig att komma igång i spelet.</box>\n"
+        imageTexts:
+          i0: "Besök Hjälpsamma Herberts hydda genom att först svepa åt höger till
+            <hl>Plats</hl>-vyn, sedan skrolla ner från Magilösa skogen och trycka
+            på <hl>Besök</hl>.\n"
+  tutorialCabin:
+    pages:
+      p1:
+        title: Kom igång
+        sections:
+          s0: "Jag har också samlat ihop några pinnar och stenar här om du vill göra
+            några grundläggande verktyg själv. Ta en titt om du vill göra fler verktyg.\n"
+          s1: "<box>Du kan få gratis stenar och pinnar från Herbert genom att trycka
+            på knappen <hl>Köpa föremål</hl> när du besöker hans hydda. Om du vill
+            bygga andra verktyg är detta ett användbart alternativ. Du kan långtrycka
+            på <hl>+-knappen</hl> för att välja alla när du är i affärer eller banker.</box>\n"
+      p0:
+        title: Välj en startfärdighet
+        sections:
+          s0: "Nå, <player/>! Det finns mycket du kan göra här omkring. Jag kan ge
+            dig något för att komma igång. Vad skulle du vara intresserad av?\n"
+maps:
+  skills:
+    'foraging': "<c>Sakletande</c> är en viktig färdighet för att hitta växter: växter
+      används i många färdigheter. Det gör <c>sakletning</c> användbart för mycket,
+      som <skill skill=\"crafting\"/> och <skill skill=\"cooking\"/>.\n\n<li><hl>Startplats</hl>:
+      Du kan börja med <c>födosök</c> här i Magilösa skogen.</li>\n\n<li><hl>Var du
+      hittar</hl>: Alla naturplatser (slätter, skogar, kullar, berg, stränder) kan
+      innehålla <c>födosök</c>-aktiviteter.</li>\n\n<li><hl>Används för</hl>: Att
+      få växter, som är användbara för många färdigheter.</li>\n"
+    'mining': "<c>Gruvbrytning</c> är en viktig färdighet för att skapa saker av metall:
+      rustningar, vapen och verktyg kräver metaller, som kan fås genom att bryta malm.
+      <c>Gruvbrytning</c> är viktig för <skill skill=\"smithing\"/>.\n\n<li><hl>Startplats</hl>:
+      Du kan börja med <c>gruvbrytning</c> i Pit of Pittance, söder om Magilösa skogen.</li>\n\
+      \n<li><hl>Var du hittar</hl>: Berg- och kulleplatser innehåller vanligtvis <c>gruvbrytnings</c>-aktiviteter.</li>\n\
+      \n<li><hl>Används för</hl>: Att få malm, som är användbar för <skill skill=\"\
+      smithing\"/>.</li>\n"
+    'woodcutting': "<c>Trähuggning</c> är en viktig färdighet för att bygga saker:
+      många verktyg kräver plankor, som bara kan göras av stockar. <c>Trähuggning</c>
+      är viktig för <skill skill=\"carpentry\"/>.\n\n<li><hl>Startplats</hl>: Du kan
+      börja med <c>trähuggning</c> här i Magilösa skogen.</li>\n\n<li><hl>Var du hittar</hl>:
+      Skogsplatser innehåller vanligtvis <c>trähuggning</c>-aktiviteter.</li>\n\n\
+      <li><hl>Används för</hl>: Att få stockar, som är användbara för <skill skill=\"\
+      carpentry\"/>.</li>\n"
+    'fishing': "<c>Fiske</c> är en viktig färdighet för att fånga rå fisk: fisk kan
+      tillagas, och även vissa mer komplexa matrecept använder fisk. <c>Fiske</c>
+      är viktigt för <skill skill=\"cooking\"/>.\n\n<li><hl>Startplats</hl>: Du kan
+      börja <c>fiska</c> i Eländiga stranden, väster om Magilösa skogen.</li>\n\n\
+      <li><hl>Var du hittar</hl>: Vattenplatser (stränder, kuster, sjöar, floder)
+      innehåller vanligtvis <c>fiske</c>-aktiviteter.</li>\n\n<li><hl>Används för</hl>:
+      Att få fisk, som är användbar för <skill skill=\"cooking\"/>.</li>\n"
