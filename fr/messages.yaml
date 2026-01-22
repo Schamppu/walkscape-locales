@@ -51,8 +51,8 @@ singulars:
     inactiveSteps:
       stepsWhileInactive: Pas gagnés lorsque le jeu était inactif
     skillLevel:
-      newItem: <chip><stext><c>Nouvel objet déverrouillé</c></stext></chip> Vous pouvez
-        équiper <item id="{item}"/>.
+      newItem: <chip><stext><c>Objet débloqué </c></stext></chip> <item id="{item}"/>
+        peut être équipé.
       newRecipe: <chip><stext><c i="0">Nouvelle recette déverrouillée</c></stext></chip>
         Vous pouvez préparer <c i="1">{recipeName}</c>.
       newDrop: <chip><stext><c i="0">Nouveau butin</c></stext></chip> Vous pouvez
@@ -62,8 +62,8 @@ singulars:
       skillLevelUp: '{skillName} monte de niveau'
       unlocks: Nouveautés
       noNewUnlocks: Aucune nouveauté pour ce niveau.
-      newActivity: <chip><stext><c>Nouvelle activité déverrouillée</c></stext></chip>
-        <c>{activityName}</c> est disponible.
+      newActivity: <chip><stext><c>Nouvelle activité </c></stext></chip> <c>{activityName}</c>
+        disponible.
     idleSteps:
       gainedExperience: <skill skill="{skill}" /> a gagné <c>+{exp}</c> d'expérience.
       skillLeveledUp: Le niveau de <skill skill="{skill}" /> a augmenté de <c i="0">{from}</c>
@@ -267,12 +267,12 @@ singulars:
       neverSyncedText: Les pas n'ont jamais été synchronisés.
     editCurrentRouteAndResetQueue:
       text: Voulez-vous modifier votre itinéraire actuel vers le lieu choisi et annuler
-        toutes les actions suivantes que vous avez en queue ?
-      title: Modifier la route actuelle et annuler la queue ?
+        toutes les actions suivantes dans votre file d'attente ?
+      title: Modifier la route actuelle et remettre à zéro la file d'attente ?
     doYouWantToClaimExperience:
       title: Êtes-vous sûr de vouloir réclamer le gain d'expérience ?
-      text: Vous avez l'option "M'avertir avant de réclamer un gain d'expérience"
-        activée. Êtes-vous sûrs de vouloir réclamer le gain d'expérience ?
+      text: L'option "M'avertir avant de réclamer un gain d'expérience" est activée.
+        Êtes-vous sûrs de vouloir réclamer le gain d'expérience ?
     changeRoute:
       title: Changer de route ?
       text: Changer de route annulera votre voyage actuel et vous fera revenir au
@@ -288,6 +288,12 @@ singulars:
     sellHighValueItems:
       title: Vendre des objets de grande valeur ?
       text: Vous êtes sur le point de <c>vendre des objets de grande valeur que vous
-        pourriez regretter</c> ! Êtes-vous sûr de vouloir revendre ces objets ?
+        pourriez regretter</c> ! Êtes-vous sûr de vouloir vendre ces objets ?
     droppingHighValueItems:
       title: Jeter des objets de grande valeur ?
+    claimPet:
+      title: Réclamer le familier ?
+    retirePet:
+      title: Mettre le familier à la retraite ?
+    destroyEgg:
+      title: Détruire l'œuf ?
