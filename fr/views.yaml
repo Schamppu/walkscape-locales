@@ -216,21 +216,20 @@ singulars:
   achievements:
     info:
       viewDescription: Déverrouillez des succès pour obtenir des <hl>points de succès</hl>.
-        Quand vous atteignez certains paliers de points, vous débloquez des récompenses
-        spéciales. Certains succès vous récompensent directement lorsque vous les
-        déverrouillez.
+        Après un certain nombre de points de succès, vous débloquez des récompenses
+        spéciales. Certains succès vous récompensent également lorsque vous les déverrouillez.
       specialItems: Les objets spéciaux tels que <c>les objets de collection</c>,
         <c>les objets de quête</c> et <c>les artéfacts</c> s'obtiennent tout au long
         de votre voyage dans WalkScape. Vous pouvez les consulter ici. Les objets
         de collection vous octroient des points de succès.
-      collectibleItems: Les objets de collection sont des items que tu peux obtenir
-        n'importe où dans le monde de WalkScape. Il existe plusieurs types d'objets
-        de collection que tu peux essayer de rassembler. Ils ne prennent aucune place
-        dans ton inventaire et sont toujours sur ton personnage.
-      noCollectibleItems: Tu n'as encore rassemblé aucun objet de collection.
-      totalProgressUnlocks: Tu gagneras ces récompenses en fonction de ta progression
-        totale dans les succès, mais tu perdras cependant accès à ces objets si plus
-        de points de réussite deviennent disponibles dans le futur.
+      collectibleItems: Les objets de collection sont des objets que vous pouvez obtenir
+        dans le monde de WalkScape. Il existe plusieurs types d'objets de collection
+        que vous pouvez essayer de rassembler. Ils ne prennent aucune place dans l'inventaire
+        et sont toujours avec votre personnage.
+      noCollectibleItems: Vous n'avez pas encore rassemblé d'objets de collection.
+      totalProgressUnlocks: Vous gagnerez ces récompenses en fonction de votre progression
+        totale dans les succès, mais vous perdrez accès à ces objets si plus de points
+        de succès deviennent disponibles dans le futur.
       checkPointUnlocks: Ces succès sont disponibles après avoir atteint certains
         paliers de points de réussite. Tu ne perdras pas accès à ces succès même si
         plus de points de réussite deviennent disponibles dans le futur.
@@ -248,16 +247,18 @@ singulars:
       requirements: Prérequis
       requirementsNotMet: Vous ne remplissez pas les prérequis.
       requiresMaterial: Nécessite un matériau.
-      requiresOneOfTheFollowing: Nécessite l'un des matériaux suivants.
+      requiresOneOfTheFollowing: "Nécessite l'un des matériaux suivants :"
       rewards: Récompenses
-      noMaterials: Tu n'as aucun matériau disponible pour fabriquer cela en ce moment.
+      noMaterials: Vous n'avez aucun matériau disponible pour fabriquer cela en ce
+        moment.
       noMaterialsThatCouldBeUsed: Aucun matériau de fabrication dans votre inventaire.
       noServiceRequirements: Aucune condition d'utilisation.
       showingRecipiesThatUses: Montre les recettes qui utilisent
       requiresService: Requiert une installation.
+      allSkills: Toutes les compétences
     errors:
       notSameQuality: Les matériaux doivent être tous raffinés ou tous normaux
-      noService: Les conditions d'utilisation ne sont pas remplies
+      noService: Conditions d'utilisation non remplies
       noMaterials: Des matériaux de fabrication sont manquants
       skillRequirementsNotMet: Les conditions de compétence ne sont pas remplies
   inventory:
@@ -355,50 +356,74 @@ singulars:
   character:
     phrases:
       skills: Compétences
-      stepsOfLastWeek: Nombre de pas effectués au cours des 7 derniers jours
+      stepsOfLastWeek: Pas effectués les 7 derniers jours
       checkOutSubject: Jette un coup d'oeil à mon progrès sur WalkScape !
       checkOut: Voici mon personnage WalkScape {name}. Jettes-y un oeil!\nhttps://walkscape.app
       totalLevel: Niveau total
+      stepsToNextLevel: "Pas jusqu'au niveau suivant : <c>{steps}</c>"
+      savePicture: Sauver l'image
+      level: 'Personnage niveau : <c>{level}</c>'
     info:
       skillBreakdown: "Voici la liste complète de toutes les compétences que votre
-        personnage a développées au fil de votre aventure. \n\nAppuyez sur une compétence
-        pour afficher plus d'informations et ce qu'elle débloque."
+        personnage a développées au fil de votre aventure. Appuyez sur une compétence
+        pour obtenir plus d'informations sur ce qu'elle débloque."
+      eachLevelIncreasesStepBank: Chaque niveau de personnage après le niveau <c>{level}</c>
+        augmente la capacité maximale de pas en réserve de <c>{amount}</c>.
   activity:
     phrases:
       consumables: Consommables
       savedSteps: Pas en Réserve
       noActivity: Aucune activité
       inventoryIsOverLimit: L'inventaire dépasse la limite !
-      workEfficiencyPenalty: <icon i="Work efficiency"/> Efficacité de travail globale
-        <c>-{penalty}%</c>
+      workEfficiencyPenalty: Efficacité de travail de base <c>-{penalty}%</c>
       notAffectingTraveling: (n'affecte pas l'efficacité des voyages)
       options: Options
       stopWhenOverEncumbered: S'arrêter quand surchargé
       requirements: Prérequis
       rewards: Récompenses
       startActivity: Commencer l'activité
-      queueActivity: Mettre en file d'attente l'activité
+      queueActivity: Ajouter l'activité à la file
       travelAndStartActivity: Voyager et commencer l'activité
       cantStartActivity: Impossible de commencer l'activité
-      requirementsNotMet: Prérequis non réunis
-      noActivitiesInLocation: Il n'y a pas d'activités dans <object id="{location}"/>.
-      locationIsUnknown: L'emplacement est inconnu. Une fois que vous aurez exploré
-        cet emplacement, vous pourrez voir les activités qui s'y déroulent.
-      activitiesInLocation: Activités disponibles dans <object id="{location}"/>
+      requirementsNotMet: Prérequis non remplis
+      noActivitiesInLocation: Il n'y a pas d'activités à <object id="{location}"/>.
+      locationIsUnknown: Cet endroit est inconnu. Une fois que vous l'aurez exploré,
+        vous pourrez voir les activités qui s'y déroulent.
+      activitiesInLocation: Activités disponibles à <object id="{location}"/>
       guideTip: Conseil du jour
-      levelActivity: Niveau<c>{niveau}</c> <object id="{skill}"/> activité
+      levelActivity: Activité niveau <c>{level}</c> <object id="{skill}"/>
+      fromPets: Familiers
+      baseEfficiency: Efficacité de base
+      savedStepsUsed: Pas en réserve utilisés
+      inputs: Données
+      workEfficiency: Efficacité du travail
+      maxWorkEfficiency: Efficacité de travail maximale
+      fromOverLevels: Votre niveau est trop élevé <numberProgress current="{current}"
+        max="{max}" />
+      agilityBonus: Agilité niveau <c>{level}</c>
+      fromGear: Matériel équipé
+      fromServices: Service bonus
+      fromCollectibles: Objets à collectionner
+      fromConsumables: Consommables
+      abilities: Compétences
+      changeActivity: Changer d'activité
+      fromOverencumbered: Surchargé
     info:
       consumablesUsage: Vous pouvez choisir de la <c>nourriture</c> et une <c>potion</c>
         à consommer pendant vos activités.
       noActivity: Aucune activité actuellement sélectionnée. <hl>Choississez-en une
         ci-dessous</hl>, ou faites défiler vers la gauche pour voir toutes celles
         disponibles ici.
-      savedSteps: Vous utilisez vos pas en réserve. Chaque pas effectué compte double
-        jusqu'à ce que vos pas en réserve soient épuisés.
+      savedSteps: Les pas en réserve s'accumulent pour ne pas gaspiller de pas lorsque
+        vous marchez alors qu'aucune activité n'est sélectionnée. Chaque pas effectué
+        compte double jusqu'à ce que vos pas en réserve soient épuisés.
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> expérience
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} objets de collection</c>
-        trouvable
+        pouvant être trouvés
+      reputation: <bp /><object id="{faction}" /> réputation <c>+{amount}</c>
+    options:
+      numberOfActions: Nombre d'actions
   permissions:
     phrases:
       pedometerPermission: Permissions du compteur de pas
@@ -411,7 +436,7 @@ singulars:
         au jeu. Appuyez sur les permissions pour les donner.
       comingSoonToAndroid: Bientôt pour Android
       youCanChangeAnyTime: Vous pouvez changer la source de comptage depuis <c>paramètres
-        de Jeu</c> n'importe quand.
+        de Jeu</c> à tout moment.
       changeStepCountingSource: Changer la source de comptage de pas
       pedometerPermissionExplanation: Nous avons besoins de la permission d'utiliser
         les données du compteur de pas de votre appareil.
@@ -422,16 +447,28 @@ singulars:
         des données d'Apple Santé.
       connectAppleHealthExplanation: Vous devez connecter Apple Santé afin que nous
         puissions lire les pas synchronisés depuis votre montre et voir quels appareils
-        vous avez connecté. Si c'est votre première utilisation de WalkScape, il vous
-        sera demandé la permission de lire les données depuis Apple Santé.
+        vous avez connecté. S'il s'agit de votre première utilisation de WalkScape,
+        vous devrez autoriser la permission de lire les données depuis Apple Santé.
       continueWillEnable: Le bouton pour continuer sera activé une fois que vous aurez
         accordé les permissions nécessaires ci-dessus.
+      noDeviceFoundAndroid: Aucun appareil trouvé. Assurez vous d'avoir appuyé sur
+        le bouton <c>Se connecter à Health Connect</c> ci-dessus et d'avoir autorisé
+        la lecture des données de Health Connect.
+      installHealthConnect: Installer Health Connect
+      connectHealthConnect: Se connecter à Health Connect
+      connectSamsungHealth: Se connecter à Samsung Health
+      connectHealthConnectExplanation: Vous devez connecter Google Connect afin que
+        nous puissions lire les pas synchronisés depuis votre montre et voir quels
+        appareils vous avez connecté. S'il s'agit de votre première utilisation de
+        WalkScape, vous devrez autoriser la permission de lire les données depuis
+        Google Connect.
     deviceSource:
       featureDisabled: La possibilité de changer la source du comptage a été désactivée
         à distance pour le moment. Le podomètre du téléphone sera utilisé par défaut.
       phone: Téléphone
       appleWatch: Apple Watch
-      watch: Autre montre
+      watch: Autres montres et appareils
+      watchAndroid: Health Connect
     deviceInfo:
       phone: "<icon i=\"Phone small\" /><c>Téléphone</c> est la source de comptage
         de pas recommandée par défaut pour WalkScape. Pour les activités intensives,
@@ -483,6 +520,8 @@ singulars:
       noAction: Aucune action
       holdToCast: Maintenir pour utiliser
       holdToUse: Maintenir pour utiliser
+      alreadyHere: Vous êtes déjà à <object id="{location}"/>. La capacité ne peut
+        pas être utilisée pour voyager à cet endroit.
   mainMenu:
     phrases:
       pleaseWait: Veuillez patienter...
@@ -542,7 +581,7 @@ singulars:
     phrases:
       openAll: Tout ouvrir
       noItems: Vous n'avez aucun coffre à ouvrir. Vous pouvez obtenir des coffres
-        depuis différentes activités.
+        en effectuant diverses activités.
       openChest: Ouvrir
   popupBubbles:
     phrases:
@@ -570,7 +609,7 @@ singulars:
       refreshIn: 'Le tableau de missions sera actualisé dans :'
       itemsFromBank: Objets à la banque
       itemsFromInventory: Objets dans l'inventaire
-      hasNoBank: Il n'y a pas de banque dans ce lieu.
+      hasNoBank: Il n'y a pas de banque ici.
       hasNoItemsInInventory: Il n'y a pas d'objet approprié dans votre inventaire.
       hasNoItemsInBank: Il n'y a pas d'objet approprié dans votre banque.
       giveItems: Livrer les objets
@@ -579,8 +618,21 @@ singulars:
       youMustBeInLocation: Vous devez être au même endroit que <object id="{obj}"/>
         pour livrer les objets.
       youMustBeInLocationToCollect: Vous devez être au même endroit que <object id="{obj}"/>
-        pour réclamer la récompense.
-      collectRewards: Réclamer la récompense
+        pour réclamer les récompenses.
+      collectRewards: Réclamer les récompenses
+      jobAlreadyAccepted: Vous avez accepté cette mission.
+      youAreAtLocation: Vous êtes au même endroit que ce tableau de mission.
+      travelToJobBoard: Voyager à <object id="{obj}"/>
+      cannotWithdraw: Aucune banque ne se trouve dans votre lieu actuel <object id="{obj}"/>.
+        Il est impossible de récupérer des objets de mission.
+      complete: Compléter
+      availableJobInfo: <object id="{obj}"/>Pour accepter ou compléter une mission,
+        vous devez vous trouver au même endroit.
+      currentlyAcceptedJobs: Missions actives
+      browseJobBoards: Parcourir les missions
+      availableJobs: Missions disponibles
+      atLocation: Disponible à <object id="{obj}"/>
+      cannotAcceptMore: Vous ne pouvez pas accepter plus de missions.
   cooldowns:
     phrases:
       cooldownRemaining: 'Temps de recharge restant :'
@@ -590,6 +642,9 @@ singulars:
       noCooldown: Aucun temps de recharge.
       followingMustBeTrueToUse: "Les conditions d'utilisation ne sont pas remplies
         :"
+      cooldown: Temps de recharge
+      requirements: Prérequis
+      cooldownRequirements: Temps de recharge requis
   journal:
     phrases:
       jobs: Missions
@@ -601,6 +656,9 @@ singulars:
   faction:
     phrases:
       openFaction: Ouvrir la faction
+      unclaimedRewards: Récompenses non réclamées {count}
+      repeatingReward: Récompense répétable
+      nextRewardUnlocked: 'Prochaine récompense déverrouillée :'
   characterCreation:
     phrases:
       bodyType: Type de corps
@@ -803,8 +861,8 @@ singulars:
       manageFriends: Gérer les relations
   locales:
     phrases:
-      grammaticalGenderExplanation: Le genre grammatical choisi affecte la façon dont
-        les textes du jeu font référence à vous.
+      grammaticalGenderExplanation: <c></c>Le genre grammatical choisi affecte la
+        façon dont les textes du jeu s'adressent à vous.
       helpToTranslate: WalkScape est <c>traduit par la communauté</c>. Aidez-nous
         à traduire le jeu dans plus de langues et à étendre les traductions existantes
         en consultant le <a href="https://wiki.walkscape.app/wiki/Localization">Guide
@@ -812,8 +870,8 @@ singulars:
       chooseALanguage: Choisissez une langue depuis la liste ci-dessous.
       percentExplanation: '% montre la proportion de contenu traduit.'
       language: Langue
-      youCanChangeAnyTime: Vous pouvez changer de langue depuis <c>Paramètres de Jeu</c>
-        n'importe quand.
+      youCanChangeAnyTime: Vous pouvez changer de langue depuis les <c>Paramètres
+        de Jeu</c> n'importe quand.
       selectGrammaticalGender: Sélectionnez un genre grammatical
   queue:
     types:
@@ -829,24 +887,50 @@ singulars:
       noGearSetFound: Ensemble d'équipements non trouvé, l'avez-vous supprimé ?
       activityInLocation: <object id="{activity}"/> dans<object id="{location}"/>
       travelingTo: <object id="{from}"/> à <object id="{to}"/>
+      forXActions: Faire pour <c>{count}</c> actions
+      petNotFound: Familier choisi non trouvé, l'avez-vous mis à la retraite ?
+      inputNotMet: Données requises non obtenues
+      summoningPet: Invoquer le familier <playerPet id="{pet}" />
     options:
       switchGearSet:
         text: Passer à l'ensemble d'équipements
-        desc: Passer à un ensemble d'équipements sélectionné avant de commencer cette
+        desc: Passer à un ensemble d'équipement sélectionné avant de commencer cette
           action.
       withdrawGearSet:
         text: Retirer l'ensemble d'équipements
-        desc: Récupère un ensemble d'équipements de ta banque si il y en une dans
-          n'importe quel lieux que tu traverses
+        desc: Récupère un ensemble d'équipement de la banque s'il y en une dans le
+          lieu que vous visitez.
       cancelGearSetSwitch:
-        text: Annule le changement de l'ensemble d'équipements
+        text: Annuler le changement de l'ensemble d'équipement
+        desc: Annule le changement d'équipement choisi pour cette action.
       depositUnlockedItems:
-        desc: Dépose tous les objets déverouillés de ton inventaire à ta banque si
-          il y en une dans n'importe quelle lieux que tu traverses
+        desc: Dépose tous les objets non verrouillés de votre inventaire dans la banque
+          s'il y en une dans le lieu que vous visitez.
+        text: Déposer les objets non verrouillés
       removeFromQueue:
-        text: Enlève de la file d'attente
-        desc: Enlève cette action et toutes celles d'après de la file d'attente
+        text: Enlever de la file d'attente
+        desc: Supprime cette action et toutes les suivantes de la file d'attente.
+      summonPet:
+        text: Invoquer un familier
+        desc: Invoque votre familier avant de commencer cette action.
+      cancelSummonPet:
+        text: Annuler l'invocation de familier
+        desc: Annule l'invocation de familier pour cette action.
     suggestedOptions:
       startTraveling: Voyage
       startActivity: Activité
       startCrafting: Artisanat
+    suggestions:
+      crafting:
+        onceAllItemsAreCrafted: Une fois tous les objets fabriqués, souhaitez-vous
+          faire autre chose ?
+        onceCertainRarityIsCrafted: Une fois le niveau de rareté atteint, ou tous
+          les matériaux utilisés, souhaitez-vous faire autre chose ?
+      traveling:
+        onceYouArriveTo: Ajouter une action à la file d'attente à <object id="{location}"/>
+          ?
+      activity:
+        onceInventoryIsFull: Une fois votre inventaire plein, souhaitez-vous faire
+          autre chose ?
+        onceAllActionsAreCompleted: Une fois toutes les actions complétées, souhaitez-vous
+          faire autre chose ?
