@@ -13,6 +13,13 @@ singulars:
     miningOres:
       name: Mineração de minérios
       requirement: Requer uma atividade <object id="activity_mining" />.
+      requirementLevel: Requer uma atividade de mineração de minério que tenha pelo
+        menos <keywordRequirements /> nos seus requisitos.
+    foragingPlants:
+      name: Recolha de plantas
+      requirement: Requer uma atividade <object id="activity_foraging" />.
+      requirementLevel: Requer uma atividade de recolha de plantas que tenha pelo
+        menos <keywordRequirements /> nos seus requisitos.
   recipes:
     skills:
       cooking:
@@ -31,3 +38,21 @@ singulars:
   locations:
     regional:
       requirementLevel: <PLACEHOLDER>
+  gear:
+    skillingGear:
+      name: Equipamento de treino
+      requirement: Requer o item <object id="skillingGear" /> equipado.
+      requirementLevel: Requer equipamento de habilidade que tenha pelo menos <keywordRequirements
+        /> nos seus requisitos.
+    frisbee:
+      name: Frisbee
+      requirement: Requer um <object id="frisbee" /> equipado.
+      requirementLevel: Requer um frisbee que tenha pelo menos <keywordRequirements
+        /> nos seus requisitos.
+    skis:
+      name: Esquis
+      requirement: Requer a utilização de <object id="skis" />.
+      requirementLevel: Requer esquis que tenham pelo menos <keywordRequirements />
+        nos seus requisitos.
+    bellows:
+      name: Fole

@@ -109,7 +109,7 @@ maps:
       'friends': Amigos
     categories:
       'accessibility': Accesibilidad
-      'graphics': Gráficas
+      'graphics': Gráficos
       'gameplay': Juego
       'account': Cuenta
       'character': Personaje
@@ -150,8 +150,8 @@ maps:
         'container': Recipientes
         'loot': Botín
         "egg": Huevos de mascota
-        "currency": Monedas
-        "quest": Objetos de búsquedas
+        "currency": Divisas
+        "quest": Objetos de misión
         "artifact": Artefactos
   locales:
     grammaticalGender:
@@ -173,8 +173,8 @@ maps:
   skillTypes:
     'combat': Combate
     'artisan': Artesanía
-    'gathering': Recolección
-    'utility': Útiles
+    'gathering': Recogida
+    'utility': Utilidad
   abilities:
     types:
       'active': Activo
@@ -619,7 +619,7 @@ singulars:
       noActivity: Sin actividad
       savedSteps: Pasos guardados
       inventoryIsOverLimit: ¡Inventario por encima del límite!
-      workEfficiencyPenalty: Eficiencia de trabajo base <c>-{penalty}%</c>
+      workEfficiencyPenalty: Eficiencia de trabajo base <c>-{penalización}%</c>
       notAffectingTraveling: (no afecta a la eficiencia al viajar)
       stopWhenOverEncumbered: Parar al sobrecargarse
       options: Opciones
@@ -642,7 +642,7 @@ singulars:
       maxWorkEfficiency: Eficiencia de trabajo máxima
       agilityBonus: Nivel de Agilidad <c>{level}</c>
       fromGear: Equipo actual
-      fromServices: Bono de servicio
+      fromServices: Bonus de servicio
       fromCollectibles: Coleccionables
       fromConsumables: Consumibles
       fromOverLevels: Estar sobrenivelado <numberProgress current="{current}" max="{max}"
@@ -873,7 +873,7 @@ singulars:
         title: Idioma
         chooseALanguageInfo: Pulsa el botón superior para abrir el menú de selección
           del idioma.
-        changeLanguage: Cambia el idioma
+        changeLanguage: Cambiar el idioma
     phrases:
       exitToCharacterSelection: Salir a la selección de personajes
       settings: Configuración
@@ -890,7 +890,7 @@ singulars:
         pasos desde Health Connect en <c>Ajustes ➤ Seguridad y Privacidad ➤ Privacidad
         ➤ Health Connect ➤ Permisos de aplicaciones</c> y de que Health Connect haya
         registrado pasos de esos dispositivos en los últimos 7 días.
-      gameVersion: Versión del juego {versión}
+      gameVersion: Versión del juego {version}
       comingSoonToAndroid: El soporte para relojes inteligentes en Android llegará
         pronto. Actualmente, solo el teléfono es compatible como fuente para contar
         pasos.
@@ -919,14 +919,14 @@ singulars:
       noSkillModifiers: Los objetos equipados no tienen modificadores de habilidad.
       noItemEquipped: Ningún objeto equipado
       noItemSelected: Ningún objeto seleccionado
-      gearSlots: Huecos de equipo
-      toolSlots: Huecos de herramienta
+      gearSlots: Ranuras de equipo
+      toolSlots: Ranuras de herramienta
     info:
       gearInfo: Añade equipo para mejorar los atributos de personaje. Puedes pulsar
-        en cualquiera de los huecos de equipo para ver qué objetos de tu inventario
+        en cualquiera de las ranuras de equipo para ver qué objetos de tu inventario
         incluir allí.
       toolInfo: Añade herramientas para mejorar los atributos de tu personaje. De
-        inicio tienes tres huecos disponibles, e irás habilitando más <c>conforme
+        inicio tienes tres ranuras disponibles, e irás habilitando más <c>conforme
         subas el nivel de tu personaje</c>.
   tools:
     phrases:
@@ -1078,11 +1078,11 @@ singulars:
     phrases:
       language: Idioma
       chooseALanguage: Elige un idioma de la lista inferior.
-      percentExplanation: '% muestra que cantidad ha sido traducida.'
+      percentExplanation: '% muestra qué cantidad ha sido traducida.'
       selectGrammaticalGender: Selecciona el género gramatical
       grammaticalGenderExplanation: Elegir el género gramatical afecta a como el juego
         se va a referir hacia tu persona.
-      youCanChangeAnyTime: Puedes cambiar el idioma desde<c>Ajustes del Juego</c>
+      youCanChangeAnyTime: Puedes cambiar el idioma desde <c>Ajustes del Juego</c>
         en cualquier momento.
       helpToTranslate: WalkScape está <c>traducido por la comunidad</c>. Ayúdanos
         a traducir el juego a más idiomas y a expandir las traducciones actuales visitando
@@ -1111,7 +1111,7 @@ singulars:
         desc: Invoca a tu mascota antes de iniciar esta acción.
         text: Invocar mascota
       cancelSummonPet:
-        text: Dejar de invocar mascota
+        text: Cancelar invocación de mascota
         desc: Cancela la invocación de tu mascota para esta acción.
     suggestions:
       crafting:
@@ -1140,7 +1140,7 @@ singulars:
       noPathFound: No se ha encontrado un camino al destino.
       forXActions: Realizar durante <c>{count}</c> acciones
       inputNotMet: Requisitos de entrada no cumplidos
-      petNotFound: No encuentro la mascota elegida. ¿La has jubilado?
+      petNotFound: No encuentro la mascota elegida. ¿La has retirado?
       summoningPet: Invocando mascota <playerPet id="{pet}" />
     suggestedOptions:
       startActivity: Actividad
@@ -1167,7 +1167,7 @@ singulars:
       startedActivityNoLocation: Actividad <object id="{activity}"/> comenzada
       actionCancelled: Acción cancelada
       switchedToPet: <playerPet id="{pet}"/> invocado
-      petDoesNotExist: 'La mascota ya no existe: no se puede invocar.'
+      petDoesNotExist: 'La mascota ya no existe, no se pudo invocar.'
   announcements:
     phrases:
       new: Nuevo
@@ -1189,27 +1189,27 @@ singulars:
       noEggIsHatching: Ahora mismo no hay huevos en incubación. ¡Elige un huevo de
         mascota para empezar a <c>incubarlo</c>!
       noPetSummoned: No hay ninguna mascota invocada ahora. ¡<c>Invoca una mascota</c>
-        para que te siga y te otorgue sus atributos y habilidades!
+        para que te siga y te otorgue sus atributos y talentos!
       requirementsToGainXPNotMet: <c>{name}</c> no puede ganar EXP
       openHatching: Abrir incubaciones
       requirementsToHatchNotMet: <c>{name}</c> no puede incubarse
       isAdvancing: ¡<c>{name}</c> está creciendo!
-      hatchedAt: Incubado en
+      hatchedAt: Incubado el
       noPets: No tienes mascotas. Puedes obtener alguna encontrando huevos e incubándolos.
       pets: Mascotas
-      hatching: Incubación de huevos
-      claimPet: Adquirir mascota
+      hatching: Incubando
+      claimPet: Reclamar mascota
       petEggs: Huevos de mascota
       chooseEgg: Elige un huevo
       currentlyHatching: Actualmente incubando
       summonedPet: Mascota invocada
-      level: Nvl. <c>{leve}</c>
+      level: Nvl. <c>{level}</c>
       canHatch: Puede incubarse
       canEvolve: Puede crecer
       summonPet: Invocar mascota
       changePet: Cambiar mascota
-      dismissPet: Descartar mascot
-      abilities: Habilidades
+      dismissPet: Descartar mascota
+      abilities: Talentos
       unlocked: Desbloqueado
       unlockedAt: Desbloqueado a
       evolve: Crecer
@@ -1225,7 +1225,7 @@ singulars:
       noEggSelected: Sin huevo seleccionado
       noPetSelected: Sin mascota seleccionada
       openPets: Abrir mascotas
-      retire: Descartar
+      retire: Retirar
       destroy: Destruir
       totalXp: EXP total
       currentXp: EXP actual
@@ -1233,55 +1233,56 @@ singulars:
       currentLevelProgress: Progreso del nivel actual
       xpToMaxLevel: EXP al nivel máximo
       maxLevelProgress: Progreso de nivel máximo
-      claimedAt: Adquirido en
-      ownedFor: Conmigo desde
+      claimedAt: Adquirido el
+      ownedFor: Dueño durante
       nextLevel: Próximo nivel
-      xpToHatch: EXP para incubar
+      xpToHatch: EXP para eclosionar
       hatchingProgress: Progreso de incubación
       isHatching: ¡<c>{name}</c> está eclosionando!
       hasHatched: ¡<c>{name}</c> ha eclosionado y ahora es <petStage id="{stage}"/>!
       hasEvolved: ¡<c>{name}</c> ha crecido y ahora <petStage id="{stage}"/>!
       noEggs: No tienes huevos de mascota.
-      noPetsFound: No encontré mascotas que coincidan con tu búsqueda.
-      noEggsFound: No encontré huevos que coincidan con tu búsqueda.
+      noPetsFound: No se han encontrado mascotas que coincidan con tu búsqueda.
+      noEggsFound: No se han encontrado huevos que coincidan con tu búsqueda.
   mysteriousMerchant:
     dialogue:
-      chestChosen: Vale, o sea que quieres intercambiar los objetos de este <object
-        id="{chest}"/>. ¡Una elección excelente! Ahora, hazme saber si quieres intercambiar
-        objetos de tu <c>banco</c> o <c>inventario</c>. ¡O si quieres comprar algo
-        con tus <c>piezas de cofre</c>!
+      chestChosen: Vale, o sea que quieres intercambiar objetos de este <object id="{chest}"/>.
+        ¡Una elección excelente! Ahora, hazme saber si quieres intercambiar objetos
+        de tu <c>banco</c> o <c>inventario</c>. ¡O si quieres comprar algo con tus
+        <c>fichas de cofre</c>!
       greeting: ¡Encantado de verte, <player />! Tengo algunos <c>objetos raros</c>
         y <c>servicios</c> que te pueden interesar. He visto tus aventuras a lo largo
         de Arenum y debo decir que se te da bastante bien explorar. ¿Qué te parece
         si hacemos un <c>pequeño trato</c>?
       tradeChestItems: Puedo intercambiar el <c>contenido de tus cofres</c> por algunas
-        <c>piezas de cofre</c>. Y por algunas de esas piezas puedo entregarte los
-        objetos que te habría gustado recibir de los cofres. ¡Por un <c>precio razonable</c>,
+        <c>fichas de cofre</c>. Y por algunas fichas puedo entregarte los objetos
+        que te habría gustado recibir de los cofres. ¡Por un <c>precio razonable</c>,
         claro!
-      chooseChest: ¡Sabia elección! ¿Qué cofre te gustaría <c>intercambiar por piezas</c>?
+      chooseChest: ¡Sabia elección! ¿De qué cofre te gustaría <c>intercambiar objetos</c>?
     phrases:
       sellItems: Vender objetos
-      ownedCurrency: Monedas disponibles
+      ownedCurrency: Divisas disponibles
       tradingChestItem: Intercambiando objetos del cofre
-      tradeChestItems: Intercambiar objetos de cofre
+      tradeChestItems: Intercambiar objetos del cofre
       trade: Intercambiar
-      tradeChestChosen: Intercambiar objetos de este cofre
+      tradeChestChosen: Intercambiar objetos del cofre
       sellFromBank: Vender desde el banco
       sellFromInventory: Vender desde el inventario
-      buyWithChips: Comprar con piezas de cofre
-      sellingPrice: Precio de venta {rarity}
-      buyingPrice: Precio de compra {rarity}
-      totalSellingPrice: Total por vender <c>{amount}</c> * objetos
-      totalBuyingPrice: Total por comprar <c>{amount}</c> * objetos
+      buyWithChips: Comprar con fichas
+      sellingPrice: Precio de venta para {rarity}
+      buyingPrice: Precio de compra para {rarity}
+      totalSellingPrice: Total por vender <c>{amount}</c> objetos
+      totalBuyingPrice: Total por comprar <c>{amount}</c> objetos
       buyItems: Comprar objetos
-      buy: Compras
-      sell: Ventas
+      buy: Comprar
+      sell: Vender
   currencies:
     phrases:
-      currencies: Tipos de moneda
+      currencies: Divisas
       goldCoins: Monedas de oro
     info:
-      noCurrencies: Por el momento no dispones de monedas. Puedes ganarlas de los
-        <c>gremios</c>, <c>Mercaderes misteriosos</c> y de otras <c>fuentes especiales</c>.
-      thereAreNoPaidCurrencies: La moneda de dentro-del-juego <c>nunca</c> se podrán
-        comprar <c>con dinero real</c>.
+      noCurrencies: Por el momento no dispones de divisas. Puedes conseguirlas en
+        los <c>gremios</c>, en el <c>Mercader misterioso</c> y en otras <c>fuentes
+        especiales</c>.
+      thereAreNoPaidCurrencies: Las divisas que se usan en el juego <c>jamás</c> se
+        podrán comprar <c>con dinero real</c>.
