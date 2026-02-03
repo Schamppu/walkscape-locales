@@ -197,7 +197,7 @@ singulars:
       requirementLevel: Vereist vervaardigingsgereedschap met minstens <keywordRequirements
         /> in zijn vereisten.
     fishingLure:
-      name: Lokaas
+      name: Kunstaas
       requirement: Vereist het dragen van een <object id="fishingLure" />.
       requirementLevel: Vereist lokaas welke op z'n minst <keywordRequirements />
         vereist.
@@ -462,6 +462,11 @@ singulars:
       requirement: Vereist uitgerust te zijn met een <object id="lightSource" />.
       name: Lichtbron
       requirementLevel: Vereist het dragen van een <keywordRequirements />.
+    heatResist:
+      name: Hittebestendig
+      requirement: Vereist iets dat <object id="heat_resistant" /> is.
+      requirementLevel: Vereist dat de gebruiker iets draagt met <keywordRequirements
+        />.
   misc:
     trash:
       name: Afval
@@ -478,6 +483,11 @@ singulars:
       requirementLevel: Vereist iets spookachtigs met minstens <keywordRequirements
         /> in zijn vereisten.
       requirement: Vereist iets wat <object id="spectral" /> is.
+    cursed:
+      requirement: Vereist iets dat <object id="cursed" /> is.
+      requirementLevel: Vereist iets vervloekt met minstens <keywordRequirements />
+        in zijn vereisten.
+      name: Vervloekt
   achievements:
     percentage:
       name: Prestatiepercentage
@@ -505,6 +515,7 @@ singulars:
         potion:
           requirementLevel: <TIJDELIJKE AANDUIDING>
           requirement: <TIJDELIJKE AANDUIDING>
+          name: Elixer
       regional:
         halfling:
           requirement: <TIJDELIJKE AANDUIDING>
@@ -541,16 +552,50 @@ singulars:
       cooking:
         requirement: <TIJDELIJKE AANDUIDING>
         name: Koken
+        requirementLevel: <TIJDELIJKE AANDUIDING>
       tailoring:
         name: Kleermakerij
+        requirementLevel: <TIJDELIJKE AANDUIDING>
+        requirement: <TIJDELIJKE AANDUIDING>
       fishing:
         name: Vissen
+        requirement: <TIJDELIJKE AANDUIDING>
+        requirementLevel: <TIJDELIJKE AANDUIDING>
       mining:
         name: Delven
+        requirement: <TIJDELIJKE AANDUIDING>
+        requirementLevel: <TIJDELIJKE AANDUIDING>
       smithing:
         name: Smeden
+        requirementLevel: <TIJDELIJKE AANDUIDING>
+        requirement: <TIJDELIJKE AANDUIDING>
       foraging:
         name: Foerageren
+        requirement: <TIJDELIJKE AANDUIDING>
+        requirementLevel: <TIJDELIJKE AANDUIDING>
+      crafting:
+        requirementLevel: <TIJDELIJKE AANDUIDING>
+        requirement: <TIJDELIJKE AANDUIDING>
+      traveling:
+        requirement: <TIJDELIJKE AANDUIDING>
+        name: Reizen
+        requirementLevel: <TIJDELIJKE AANDUIDING>
+      woodcutting:
+        requirement: <TIJDELIJKE AANDUIDING>
+        requirementLevel: <TIJDELIJKE AANDUIDING>
+        name: Houthakken
+      trinketry:
+        name: Sierraderij
+        requirement: <TIJDELIJKE AANDUIDING>
+        requirementLevel: <TIJDELIJKE AANDUIDING>
+      global:
+        name: Globaal
+        requirement: <TIJDELIJKE AANDUIDING>
+        requirementLevel: <TIJDELIJKE AANDUIDING>
+      hunting:
+        name: Jagen
+        requirement: <TIJDELIJKE AANDUIDING>
+        requirementLevel: <TIJDELIJKE AANDUIDING>
   faction:
     reward:
       requirement: Vereist een <object id="faction_reward" />.
@@ -562,17 +607,48 @@ singulars:
       name: Onder water
     desert:
       name: Woestijn
+      requirement: <TIJDELIJKE AANDUIDING>
+      requirementLevel: <TIJDELIJKE AANDUIDING>
+    regional:
+      name: Regionaal
+      requirement: <TIJDELIJKE AANDUIDING>
+      requirementLevel: <TIJDELIJKE AANDUIDING>
   itemSets:
     divingGear:
       requirement: Vereist  <object id="itemset_diving_gear" />.
       name: Duikuitrusting
       requirementLevel: Vereist duikuitrusting welke ten minste  <keywordRequirements
         /> in zijn vereisten heeft.
+    expertDivingGear:
+      requirement: Vereist <object id="itemset_diving_gear_expert" />.
+      requirementLevel: Vereist professionele duikuitrusting met minstens <keywordRequirements
+        /> in zijn vereisten.
+      name: Professionele duikuitrusting
+    adventuringTools:
+      name: Avontuurgereedschap set
+      requirement: Vereist het dragen van onderdelen van de set <object id="itemset_adventuring_tools"
+        />.
+    advancedDivingGear:
+      name: Geavanceerde duikuitrusting
+      requirement: Vereist <object id="itemset_diving_gear_advanced" />.
+      requirementLevel: Vereist geavanceerde duikuitrusting met minstens <keywordRequirements
+        /> in zijn vereisten.
   services:
     bench:
       name: Sierradenbank
     sawmill:
       name: Zagerij
+  eggs:
+    egg:
+      name: Ei
+      requirement: Vereist een <object id="egg" />.
+      requirementLevel: Vereist een ei met minstens <keywordRequirements /> in zijn
+        vereisten.
+    petEgg:
+      name: Beestje-ei
+      requirement: Vereist een <object id="pet_egg" />.
+      requirementLevel: Vereist een ei van een beestje met minstens <keywordRequirements
+        /> in zijn vereisten.
 consumables:
   cookedFish:
     name: Gekookte vis
