@@ -276,6 +276,10 @@ singulars:
         text: Możesz dodać do kolejki wiele działań związanych z podróżą, ale tylko
           jedną aktywność na raz. Zakończ lub anuluj bieżącą aktywność przed dodaniem
           do kolejki kolejnej.
+      mmNotAtSameLocation:
+        title: Nie można handlować z Tajemniczym Kupcem
+        text: Nie możesz teraz handlować z Tajemniczym Kupcem. Upewnij się, że jesteś
+          we właściwym miejscu.
   confirmations:
     changingStepSource:
       title: Zmienić źródło kroków?
@@ -323,3 +327,23 @@ singulars:
       title: Odebrać pupila?
     retirePet:
       title: Wyrzucić pupila?
+      text: Zamierzasz wycofać swojego zwierzaka ze służby. Wycofanie zwierzaka ze
+        służby oznacza jego trwałe usunięcie. Czy na pewno chcesz wycofać tego zwierzaka
+        ze służby?
+    destroyEgg:
+      title: Zniszczyć jajo?
+      text: Zamierzasz zniszczyć jajo. Zniszczenie jaja pozbawi cię go na zawsze.
+        Czy na pewno chcesz zniszczyć to jajo?
+  validators:
+    textField:
+      maxTextLength: Maksymalna długość wynosi {max} znaków.
+      minTextLength: Minimalna długość wynosi {min} znaków.
+      noConsecutiveSpaces: Następujące po sobie spacje są niedozwolone.
+      noLeadingTrailingSpaces: Nie dopuszcza się stosowania spacji na początku ani
+        na końcu.
+      containsSpecialCharacters: Zawiera niedozwolone znaki specjalne.
+      emojisNotAllowed: Emoji są niedozwolone.
+      numbersNotAllowed: Podawanie liczb jest niedozwolone.
+      specialCharactersNotAllowed: Znaki specjalne są niedozwolone.
+      spacesNotAllowed: Spacje są niedozwolone.
+      swearWordsNotAllowed: Niewłaściwy język jest niedozwolony.

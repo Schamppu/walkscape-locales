@@ -168,27 +168,33 @@ name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: <stat s="fin
 voor <supp k="skill"/>}, whenAchievementPoints: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
 AANDUIDING>, text: Globaal <stat s="findCollectibles">kans om verzamelobjecten te
 vinden</stat> bij <supp k="achievementPoints"/>}, whileLocationKeyword: {name: <TIJDELIJKE
-AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, whenKeywordSetBonus: {name: <TIJDELIJKE
-AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, whileMainSkillAndLocationKeyword: {name: <TIJDELIJKE
-AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, whileMainSkillAndRealm: {name: <TIJDELIJKE
-AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, whileSkillGroup: {name: <TIJDELIJKE AANDUIDING>,
-desc: <TIJDELIJKE AANDUIDING>}}}, custom: {gainAdventurersGuildToken: {text: Kans
-om <hl>1</hl> Avonturiersgildemunt te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
-AANDUIDING>}, trashTable: {text: Kans om <hl>1</hl> willekeurig stuk afval te vinden,
-desc: <TIJDELIJKE AANDUIDING>, name: <TIJDELIJKE AANDUIDING>}, findCrustacean: {text: Kans
-om <hl>1</hl> kreeftachtige te vinden, desc: <TIJDELIJKE AANDUIDING>, name: <TIJDELIJKE
-AANDUIDING>}, gainOneMoney: {text: Kans om <hl>1</hl> munt te vinden, name: <TIJDELIJKE
-AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, gainZeroToTenMoney: {text: Kans om <hl>1</hl>
-tot <hl>10</hl> munten te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
-AANDUIDING>}, findFishingBait: {text: Kans om <hl>1</hl> visaas te vinden, name: <TIJDELIJKE
-AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, findTreasureChest: {text: Kans om <hl>1</hl>
-willekeurige vaardigheidsschatkist te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
-AANDUIDING>}, findGoldNugget: {text: Kans om <hl>1</hl> goudklompje te vinden, name: <TIJDELIJKE
-AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, findBirdNest: {text: Kans om <hl>1</hl>
-vogelnest te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>},
-rollGemPouchTable: {text: Kans om <hl>1</hl> willekeurige Edelsteen te vinden, name: <TIJDELIJKE
-AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, gainCoinPouch: {name: <TIJDELIJKE AANDUIDING>,
-text: Kans om <hl>1</hl> muntzakje te vinden, desc: <TIJDELIJKE AANDUIDING>}, gainSeashells: {
-name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: Kans om <hl>1</hl>
-tot <hl>10</hl> zeeschelpen te vinden}, findEcto: {text: Kans om <hl>1</hl> ectoplasma
-te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}}}}
+AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: Globaal <stat s="findCollectibles"/>
+zolang je in <supp k="keyword"/> bent.}, whenKeywordSetBonus: {name: <TIJDELIJKE AANDUIDING>,
+desc: <TIJDELIJKE AANDUIDING>, text: Globaal <stat s="findCollectibles"> kans om verzamelobjecten
+te vinden</stat> wanneer je minstens <supp k="quantity"/> <supp k="keyword"/> draagt.},
+whileMainSkillAndLocationKeyword: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>, text: <stat s="findCollectibles"/> met <supp k="skill"/> op <supp k="keyword"/>
+locatie.}, whileMainSkillAndRealm: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>, text: <stat s="workEfficiency"/> tijdens het <supp k="skill"/> in <supp
+k="realm"/>.}, whileSkillGroup: {name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>, text: <stat s="findCollectibles"/> tijdens een <supp k="skillGroup"/>
+vaardigheid.}}}, custom: {gainAdventurersGuildToken: {text: Kans om <hl>1</hl> Avonturiersgildemunt
+te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, trashTable: {
+text: Kans om <hl>1</hl> willekeurig stuk afval te vinden, desc: <TIJDELIJKE AANDUIDING>,
+name: <TIJDELIJKE AANDUIDING>}, findCrustacean: {text: Kans om <hl>1</hl> kreeftachtige
+te vinden, desc: <TIJDELIJKE AANDUIDING>, name: <TIJDELIJKE AANDUIDING>}, gainOneMoney: {
+text: Kans om <hl>1</hl> munt te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>}, gainZeroToTenMoney: {text: Kans om <hl>1</hl> tot <hl>10</hl> munten
+te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, findFishingBait: {
+text: Kans om <hl>1</hl> visaas te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>}, findTreasureChest: {text: Kans om <hl>1</hl> willekeurige vaardigheidsschatkist
+te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, findGoldNugget: {
+text: Kans om <hl>1</hl> goudklompje te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>}, findBirdNest: {text: Kans om <hl>1</hl> vogelnest te vinden, name: <TIJDELIJKE
+AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}, rollGemPouchTable: {text: Kans om <hl>1</hl>
+willekeurige Edelsteen te vinden, name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE
+AANDUIDING>}, gainCoinPouch: {name: <TIJDELIJKE AANDUIDING>, text: Kans om <hl>1</hl>
+muntzakje te vinden, desc: <TIJDELIJKE AANDUIDING>}, gainSeashells: {name: <TIJDELIJKE
+AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>, text: Kans om <hl>1</hl> tot <hl>10</hl>
+zeeschelpen te vinden}, findEcto: {text: Kans om <hl>1</hl> ectoplasma te vinden,
+name: <TIJDELIJKE AANDUIDING>, desc: <TIJDELIJKE AANDUIDING>}}}}
