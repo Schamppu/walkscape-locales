@@ -44,8 +44,9 @@ mix van verschillende soorten fruit die gedroogd zijn om bederf tegen te gaan. Z
 smaken nog steeds heel lekker!}, nutMix: {name: Noten mix}}}, "containers": {"skilling": {
 "foraging": {"foragingChest": {"desc": "Een handig assortiment van gereedschap en
 voorwerpen die met foerageren te maken hebben.", name: Foerageerschatkist}, sunkenChest: {
-name: Gezonken schatkist}}, "regional": {"galeforgeChest": {"desc": "Het gerucht gaat
-dat deze kist rond is zodat deze door de stad gerold kan worden. Wat ingenieus!"},
+name: Gezonken schatkist, desc: Vanuit de diepten van de zee heeft deze kist zijn
+weg naar de kust gevonden.}}, "regional": {"galeforgeChest": {"desc": "Het gerucht
+gaat dat deze kist rond is zodat deze door de stad gerold kan worden. Wat ingenieus!"},
 rustyChest: {desc: Een oude roestige kist. Gevonden en bewaard door Herbert.Klaar
 om nieuwe avonturiers een behulpzame start te geven., name: Roestige schatkist}, coinPouch: {
 desc: 'Een klein zakje gevuld met munten. Het is een beetje zwaar, maar natuurlijk
@@ -259,65 +260,67 @@ Sommigen zeggen dat hij tot op deze dag aan het vallen is."}, "head": {"desc": "
 stippelen de rand van deze hoed uit. Overdag fonkelen ze zachtjes en 's nachts bewegen
 ze als wervelingen van leegte."}}, "enchanted": {"chest": {"desc": "Elke keer dat
 je de kraag omhoog doet, zie je er een beetje cooler uit. Vooral met de bovenste knoop
-vast."}, "feet": {"desc": "Twee keer op de hakken klikken zorgt er niet echt voor
-dat je naar huis gaat, maar het klinkt wel cool als je erin loopt."}, "head": {"desc": "Deze
-hoed kan wel 10 liter dragen. Waarvan? Dat heeft nog niemand ontdekt."}, "legs": {
-"desc": "Deze broek past altijd perfect en heeft zelfs zakken!"}}}, "skilling": {
-"agility": {"exerciseHeadband": {"desc": "Deze hoofdband herinnert je er aan dat kracht
-uit toewijding voortkomt en dat je innerlijke strijder elke uitdaging kan overwinnen,
-hoe fantasierijk of veeleisend dan ook."}, "medievalSneakers": {"desc": "Met elke
-stap bieden ze de drager een stille en behendige reis door zowel oude als huidige
+vast.", name: Betoverd shirt}, "feet": {"desc": "Twee keer op de hakken klikken zorgt
+er niet echt voor dat je naar huis gaat, maar het klinkt wel cool als je erin loopt."},
+"head": {"desc": "Deze hoed kan wel 10 liter dragen. Waarvan? Dat heeft nog niemand
+ontdekt."}, "legs": {"desc": "Deze broek past altijd perfect en heeft zelfs zakken!"}}},
+"skilling": {"agility": {"exerciseHeadband": {"desc": "Deze hoofdband herinnert je
+er aan dat kracht uit toewijding voortkomt en dat je innerlijke strijder elke uitdaging
+kan overwinnen, hoe fantasierijk of veeleisend dan ook."}, "medievalSneakers": {"desc": "Met
+elke stap bieden ze de drager een stille en behendige reis door zowel oude als huidige
 rijken, waarbij de kloof tussen tijdperken wordt overbrugd."}, birchSkis: {name: Berkenhouten
 ski's, desc: "Een paar ski's voor beginners. Moeilijk te controleren en niet erg snel,
-maar je gaat ermee wel sneller van een besneeuwde helling af dan te voet."}}, "carpentry": {
-"handsaw": {"desc": "Deze zaag belichaamt de harmonie tussen vakman en natuur, en
-verzekert de vaardigheid om hout met precisie en elegantie vorm te geven."}, "protectiveGloves": {
-"desc": "Het is beter als de kans om je vingers er af te zagen verkleind worden naar
-0%."}, "toolbelt": {"desc": "Een veelzijdig accessoire dat een partij aan houtbewerkingsinstrumenten
-draagt."}, "woodworkingGlasses": {"desc": "Als deze bril gedragen wordt, worden de
-ingewikkelde patronen en verhalen die in elk bord zitten onthuld."}, simpleRuler: {
-name: Dunne liniaal}}, "cooking": {"chefsApron": {"desc": "Met dit schort wordt elke
-maaltijd een meesterwerk en elk gerecht een kunstwerk.", name: Kok's schort}, "chefsHat": {
-"desc": "Deze grillige hoed lijkt de magie van de keuken brengen en geeft inspiratie
-om met elke beweging van de spatel culinaire wonderen te produceren.", name: Kok's
-hoed}, "meatCleaver": {"desc": "Zijn scherpe stalen lemmet kan stukken vlees in kleinere
-stukjes hakken. Zoals je vingers, als je niet oppast."}, recipeBook: {name: Receptenboek},
-simplePan: {name: Simpele pan}, northernSpices: {name: Noordelijke specerijen}, florasSilverSpoon: {
-name: Flora's zilveren lepel}, ovenMittens: {name: Ovenwanten}, sharpKnife: {name: Scherp
-mes}, dullKnife: {name: Bot mes}, cuttingBoard: {name: Snijplank}}, "crafting": {
-"candlehat": {"desc": "Het is een hoed met een kaars eraan vast. Wat wil een mens
-nog meer?", name: Kaarsenhoed}, "craftingGuidebook": {"desc": "Een boek vol grenzeloze
-creativiteit en een schat van kennis die generaties lang is doorgegeven door ambachtslieden
-en klussers."}, "grippyGloves": {"desc": "Ze bieden een stevige grip op de wereld
-en er gaan geruchten rond dat ze je helpen om nooit een schroef of andere kleine onderdelen
-te laten vallen."}, "magnifyingLens": {"desc": "Een gereedschap voor meestervervaardigers
-die pogen de geheimen van complexe machines te ontrafelen en de wereld willen bestuderen
-op microscopisch niveau.", "name": "Vergrootglas"}}, "fishing": {"fishermansHat": {
-"desc": "Symbool van het geduld van een visser en hun connectie met de eeuwige stromingen
-van de natuur."}, "fishermansTrousers": {"desc": "Gemaakt van veerkrachtig, waterdicht
-materiaal, waardoor ze bescherming bieden tegen de elementen terwijl je er toch soepel
-in kunt bewegen."}, rustyFishingNet: {name: Roestig visnet, desc: Een klein visnet.
-Verroest en versleten. Het kan nog steeds worden gebruikt om te vissen en beter dan
-niets.}, rustyFishingRod: {name: Roestige vishengel, desc: 'Een oud, versleten vishengel.
-Verroest en met nauwelijk een intacte lijn. Je kunt er nog steeds mee vissen, maar
-misschien krijg je niet eens beet!'}, squishyFlipFlops: {name: Zachte teenslippers,
-desc: The soft layer of fabric acts as a shield between your feet and the burning
-sand on even the hottest beaches of Rentmark.}, sturdyFishingRodRest: {desc: 'Kan
-in de grond worden gestoken en worden gebruikt om een vishengel rechtop te houden,
-zodat deze op zijn plaats blijft in het water. Handig voor als je geduld opraakt.',
-name: Robuuste vishengelhouder}, iceNetRod: {name: IJsnethengel, desc: Een vishengel
-met een ijzig ogend net dat in de lijn is verweven om uit te werpen. Een ingenieus
-ontwerp van de pinguïns om de hoeveelheid kwaliteitsvis die ze vangen te maximaliseren.}},
-"foraging": {"halflingsFeetSlippers": {"desc": "Speels gemaakte slippers die op grote
-harige halvelingsvoeten lijken, inclusief kleine tenen en grillige details."}, "hatWithAFeather": {
-"desc": "Zijn aanwezigheid roept de geest van avontuur en de allure van verre landen
-op en belooft dat waar het ook gedragen wordt, verhalen over gedurfde escapades zeker
-zullen volgen.", name: Hoed met een veer}, smallSack: {name: Kleine zak}, foragingShorts: {
-name: Korte verzamelbroek}, waterproofBoots: {name: Waterdichte laarzen}, blueIceSickle: {
-name: Blauwe ijssikkel}, simpleBugCatchingNet: {name: Simpel insectenvangnet, desc: 'Stelt
-niet veel voor, maar vangt wel insecten.'}, foragingShirt: {name: Verzamelshirt},
-camouflageCape: {name: Camouflage mantel}, sharpMachete: {name: Scherp kapmes}, dullMachete: {
-name: Bot kapmes}, nonWaterproofBoots: {name: Niet-waterdichte schoenen}, compassNecklace: {
+maar je gaat ermee wel sneller van een besneeuwde helling af dan te voet."}, grapplingHook: {
+name: Grijphaak}}, "carpentry": {"handsaw": {"desc": "Deze zaag belichaamt de harmonie
+tussen vakman en natuur, en verzekert de vaardigheid om hout met precisie en elegantie
+vorm te geven."}, "protectiveGloves": {"desc": "Het is beter als de kans om je vingers
+er af te zagen verkleind worden naar 0%."}, "toolbelt": {"desc": "Een veelzijdig accessoire
+dat een partij aan houtbewerkingsinstrumenten draagt."}, "woodworkingGlasses": {"desc": "Als
+deze bril gedragen wordt, worden de ingewikkelde patronen en verhalen die in elk bord
+zitten onthuld."}, simpleRuler: {name: Dunne liniaal}}, "cooking": {"chefsApron": {
+"desc": "Met dit schort wordt elke maaltijd een meesterwerk en elk gerecht een kunstwerk.",
+name: Kok's schort}, "chefsHat": {"desc": "Deze grillige hoed lijkt de magie van de
+keuken brengen en geeft inspiratie om met elke beweging van de spatel culinaire wonderen
+te produceren.", name: Kok's hoed}, "meatCleaver": {"desc": "Zijn scherpe stalen lemmet
+kan stukken vlees in kleinere stukjes hakken. Zoals je vingers, als je niet oppast."},
+recipeBook: {name: Receptenboek}, simplePan: {name: Simpele pan}, northernSpices: {
+name: Noordelijke specerijen}, florasSilverSpoon: {name: Flora's zilveren lepel},
+ovenMittens: {name: Ovenwanten}, sharpKnife: {name: Scherp mes}, dullKnife: {name: Bot
+mes}, cuttingBoard: {name: Snijplank}}, "crafting": {"candlehat": {"desc": "Het is
+een hoed met een kaars eraan vast. Wat wil een mens nog meer?", name: Kaarsenhoed},
+"craftingGuidebook": {"desc": "Een boek vol grenzeloze creativiteit en een schat van
+kennis die generaties lang is doorgegeven door ambachtslieden en klussers."}, "grippyGloves": {
+"desc": "Ze bieden een stevige grip op de wereld en er gaan geruchten rond dat ze
+je helpen om nooit een schroef of andere kleine onderdelen te laten vallen."}, "magnifyingLens": {
+"desc": "Een gereedschap voor meestervervaardigers die pogen de geheimen van complexe
+machines te ontrafelen en de wereld willen bestuderen op microscopisch niveau.", "name": "Vergrootglas"}},
+"fishing": {"fishermansHat": {"desc": "Symbool van het geduld van een visser en hun
+connectie met de eeuwige stromingen van de natuur."}, "fishermansTrousers": {"desc": "Gemaakt
+van veerkrachtig, waterdicht materiaal, waardoor ze bescherming bieden tegen de elementen
+terwijl je er toch soepel in kunt bewegen."}, rustyFishingNet: {name: Roestig visnet,
+desc: Een klein visnet. Verroest en versleten. Het kan nog steeds worden gebruikt
+om te vissen en beter dan niets.}, rustyFishingRod: {name: Roestige vishengel, desc: 'Een
+oud, versleten vishengel. Verroest en met nauwelijk een intacte lijn. Je kunt er nog
+steeds mee vissen, maar misschien krijg je niet eens beet!'}, squishyFlipFlops: {
+name: Zachte teenslippers, desc: The soft layer of fabric acts as a shield between
+your feet and the burning sand on even the hottest beaches of Rentmark.}, sturdyFishingRodRest: {
+desc: 'Kan in de grond worden gestoken en worden gebruikt om een vishengel rechtop
+te houden, zodat deze op zijn plaats blijft in het water. Handig voor als je geduld
+opraakt.', name: Robuuste vishengelhouder}, iceNetRod: {name: IJsnethengel, desc: Een
+vishengel met een ijzig ogend net dat in de lijn is verweven om uit te werpen. Een
+ingenieus ontwerp van de pinguïns om de hoeveelheid kwaliteitsvis die ze vangen te
+maximaliseren.}, catchBucket: {name: Vangemmer, desc: Een redelijk grote emmer die
+wordt gebruikt om de vangst in te bewaren.}}, "foraging": {"halflingsFeetSlippers": {
+"desc": "Speels gemaakte slippers die op grote harige halvelingsvoeten lijken, inclusief
+kleine tenen en grillige details."}, "hatWithAFeather": {"desc": "Zijn aanwezigheid
+roept de geest van avontuur en de allure van verre landen op en belooft dat waar het
+ook gedragen wordt, verhalen over gedurfde escapades zeker zullen volgen.", name: Hoed
+met een veer}, smallSack: {name: Kleine zak}, foragingShorts: {name: Korte verzamelbroek},
+waterproofBoots: {name: Waterdichte laarzen}, blueIceSickle: {name: Blauwe ijssikkel},
+simpleBugCatchingNet: {name: Simpel insectenvangnet, desc: 'Stelt niet veel voor,
+maar vangt wel insecten.'}, foragingShirt: {name: Verzamelshirt}, camouflageCape: {
+name: Camouflage mantel}, sharpMachete: {name: Scherp kapmes}, dullMachete: {name: Bot
+kapmes}, nonWaterproofBoots: {name: Niet-waterdichte schoenen}, compassNecklace: {
 name: Kompas ketting}, longSpade: {name: Lange schep}, rustySickle: {name: Roestige
 sikkel}}, "mining": {"miningHelm": {"desc": "Een baken in de diepten van de aarde.
 Straalt een constante gloed uit die de duisternis van ondergrondse gebieden doorboort.",
@@ -378,52 +381,54 @@ sharkToothNecklace: {name: Haaien tand ketting}, shrimpRing: {name: Garnaal ring
 herbertsCape: {name: Herberts cape}, simpleRing: {name: Simpele ring}, simpleAmulet: {
 name: Simpele amulet}, rustyDivingHelm: {name: Roestige duikershelm}, rustyDivingLegs: {
 name: Roestige duikersbroek, desc: Het onderstuk van een roestig duikerspak. Het is
-best oncomfortabel maar lekt tenminste niet!}}, achievements: {pathfinder: {name: Wegzoeker,
-desc: Aan de ketting zit een kleine kaart vast die altijd de kortste route aangeeft.},
-ringOfHomesickness: {name: Heimweering, desc: Deze ring herinnert je eraan dat het
-klokje nergens tikt zoals het thuis tikt.}, rustySpyglass: {name: Roestige verrekijker,
-desc: 'Een goed gebruikt stuk gereedschap heeft een bepaalde charme, zo ook deze roestige
-verrekijker.'}, pantsOfHaste: {name: Haastige broek, desc: Lekker hardgaan!}, omniTool: {
-name: Multitool, desc: 'Dit handige stuk gereedschap wat je aan je arm bevestigd,
-is ontworpen om te assisteren met allerlei taken.'}, jugglingBalls: {name: Jongleerballen,
-desc: Deze drie gekleurde ballen gevuld met graan zijn ideal om mee te jongleren.},
-runningVisor: {desc: Deze rode zonneklep beschermd je ogen tegen de zon terwijl je
-hoofd nog steeds goed koel blijft., name: Hardloperszonneklep}, trashGrabber: {name: Afval
-grijper, desc: Het ontwerp van dit verlengde stuk gereedschap maakt het makkelijk
-om afval op te rapen zonder te bukken.}, treasureHunterHat: {name: Schatzoekershoed,
-desc: "Hoewel het onduidelijk is of het een cowboy hoed is of een fedora, deze hoed
-heeft zeker een kenmerkende 'Indy' sfeer."}, treasureHunterPants: {name: Schatzoekersbroek,
-desc: Deze vorm omvattende leren broek accentueert je been spieren.}, treasureHunterJacket: {
-name: Schatzoekersjas, desc: Dit lijkt een klassieke leren jas te zijn die nooit uit
-de mode zal raken.}, bootsOfSpeed: {name: Snelle schoenen}, travelersKit: {name: Reizigers
-koffer, desc: Deze koffer zit vol met onmisbare voorwerpen voor elke reis bestemming.},
-absorbingAmulet: {name: Absorberend amulet, desc: 'Dit amulet, gemaakt van oeroud
-metaal, trekt materialen van hoge kwaliteit aan.'}, greedyPiggyBank: {name: Gretig
-spaarvarken, desc: 'Telkens als je er een munt in stopt, gaat dit gouden spaarvarken
-luid knorren.'}, trekkingPoles: {name: Wandelstokken, desc: Deze wandelstokken helpen
-met balanceren tijdens het reizen door ruige terreinen.}, conservationistHat: {name: Natuurbeschermershoed,
-desc: Deze blauwe hoed biedt goede bescherming tegen de elementen.}, conservationistShirt: {
-name: Natuurbeschermersshirt, desc: Dit shirt biedt comfort en extra zakken om interresante
-vindingen in te stoppen.}, conservationistShorts: {name: Korte natuurbeschermersbroek,
-desc: Deze broek biedt veel bewegingsvrijheid en extra grote zakken voor gereedschap.},
-conservationistBoots: {name: Natuurbeschermerslaarzen, desc: Deze blauwe laarzen zijn
-stevig en comfortabel.}, axeOfDestruction: {name: Bijl van verwoesting}, adventurersShirt: {
-name: Avonturiers shirt}, adventurersPants: {name: Avonturiers broek}, adventurersBoots: {
-name: Avonturiers laarzen}, adventurersGloves: {name: Avonturiers handschoenen}, shoesOfEscape: {
-desc: Met deze schoenen kun je van tijd tot tijd even heel snel gaan., name: Ontsnappings
-schoenen}, shinyRing: {name: Glanzende Ring}, otherSock: {name: Andere sok, desc: De
-andere sok die je niet aan Dobby hebt gegeven.}, tinyBackpack: {name: Kleine rugzak,
-desc: Het is een normaal formaat rugzak als je een kind bent.}, gemBracelet: {name: Edelsteen
-armband}}, agGuildSpecials: {superskis: {name: Super-ski's, desc: Deze ski's zijn
-het snelst als je ze op super-sneeuw gebruikt.}}, regional: {jarvonia: {knittedMittens: {
-name: Gebreide wanten, desc: Deze wanten zijn gebreid van verschillende soorten wol
-in prachtige witte en blauwe patronen.}, handWarmingPack: {name: Handwarmers, desc: Een
-klein pakje dat warm wordt. Kan zelfs worden hergebruikt!}, perfectSnowballs: {name: Perfecte
-sneeuwballen, desc: 'Geen gewone, maar perfect ronde sneeuwballen, klaar om naar iemand
-gegooid te worden.'}}}, supporter: {stickyFingerShorts: {name: Langevinger shorts,
-desc: <i>“Je zult nooit weten wat Riku in deze zakken heeft gestopt!”</i>}}}, "materials": {
-"carpentry": {"birchPlank": {"desc": "De gladde en bleke berkenhouten plank is een
-toonbeeld van eenvoud en elegantie door zijn zuivere en lichte houtuiterlijk.", name: Berkenhouten
+best oncomfortabel maar lekt tenminste niet!}, rustyDivingBody: {desc: Het bovenstuk
+van een oud duikerspak. Het is zwaar om te dragen., name: Roestige duikersromp}},
+achievements: {pathfinder: {name: Wegzoeker, desc: Aan de ketting zit een kleine kaart
+vast die altijd de kortste route aangeeft.}, ringOfHomesickness: {name: Heimweering,
+desc: Deze ring herinnert je eraan dat het klokje nergens tikt zoals het thuis tikt.},
+rustySpyglass: {name: Roestige verrekijker, desc: 'Een goed gebruikt stuk gereedschap
+heeft een bepaalde charme, zo ook deze roestige verrekijker.'}, pantsOfHaste: {name: Haastige
+broek, desc: Lekker hardgaan!}, omniTool: {name: Multitool, desc: 'Dit handige stuk
+gereedschap wat je aan je arm bevestigd, is ontworpen om te assisteren met allerlei
+taken.'}, jugglingBalls: {name: Jongleerballen, desc: Deze drie gekleurde ballen gevuld
+met graan zijn ideal om mee te jongleren.}, runningVisor: {desc: Deze rode zonneklep
+beschermd je ogen tegen de zon terwijl je hoofd nog steeds goed koel blijft., name: Hardloperszonneklep},
+trashGrabber: {name: Afval grijper, desc: Het ontwerp van dit verlengde stuk gereedschap
+maakt het makkelijk om afval op te rapen zonder te bukken.}, treasureHunterHat: {
+name: Schatzoekershoed, desc: "Hoewel het onduidelijk is of het een cowboy hoed is
+of een fedora, deze hoed heeft zeker een kenmerkende 'Indy' sfeer."}, treasureHunterPants: {
+name: Schatzoekersbroek, desc: Deze vorm omvattende leren broek accentueert je been
+spieren.}, treasureHunterJacket: {name: Schatzoekersjas, desc: Dit lijkt een klassieke
+leren jas te zijn die nooit uit de mode zal raken.}, bootsOfSpeed: {name: Snelle schoenen},
+travelersKit: {name: Reizigers koffer, desc: Deze koffer zit vol met onmisbare voorwerpen
+voor elke reis bestemming.}, absorbingAmulet: {name: Absorberend amulet, desc: 'Dit
+amulet, gemaakt van oeroud metaal, trekt materialen van hoge kwaliteit aan.'}, greedyPiggyBank: {
+name: Gretig spaarvarken, desc: 'Telkens als je er een munt in stopt, gaat dit gouden
+spaarvarken luid knorren.'}, trekkingPoles: {name: Wandelstokken, desc: Deze wandelstokken
+helpen met balanceren tijdens het reizen door ruige terreinen.}, conservationistHat: {
+name: Natuurbeschermershoed, desc: Deze blauwe hoed biedt goede bescherming tegen
+de elementen.}, conservationistShirt: {name: Natuurbeschermersshirt, desc: Dit shirt
+biedt comfort en extra zakken om interresante vindingen in te stoppen.}, conservationistShorts: {
+name: Korte natuurbeschermersbroek, desc: Deze broek biedt veel bewegingsvrijheid
+en extra grote zakken voor gereedschap.}, conservationistBoots: {name: Natuurbeschermerslaarzen,
+desc: Deze blauwe laarzen zijn stevig en comfortabel.}, axeOfDestruction: {name: Bijl
+van verwoesting}, adventurersShirt: {name: Avonturiers shirt}, adventurersPants: {
+name: Avonturiers broek}, adventurersBoots: {name: Avonturiers laarzen}, adventurersGloves: {
+name: Avonturiers handschoenen}, shoesOfEscape: {desc: Met deze schoenen kun je van
+tijd tot tijd even heel snel gaan., name: Ontsnappings schoenen}, shinyRing: {name: Glanzende
+Ring}, otherSock: {name: Andere sok, desc: De andere sok die je niet aan Dobby hebt
+gegeven.}, tinyBackpack: {name: Kleine rugzak, desc: Het is een normaal formaat rugzak
+als je een kind bent.}, gemBracelet: {name: Edelsteen armband}}, agGuildSpecials: {
+superskis: {name: Super-ski's, desc: Deze ski's zijn het snelst als je ze op super-sneeuw
+gebruikt.}}, regional: {jarvonia: {knittedMittens: {name: Gebreide wanten, desc: Deze
+wanten zijn gebreid van verschillende soorten wol in prachtige witte en blauwe patronen.},
+handWarmingPack: {name: Handwarmers, desc: Een klein pakje dat warm wordt. Kan zelfs
+worden hergebruikt!}, perfectSnowballs: {name: Perfecte sneeuwballen, desc: 'Geen
+gewone, maar perfect ronde sneeuwballen, klaar om naar iemand gegooid te worden.'}}},
+supporter: {stickyFingerShorts: {name: Langevinger shorts, desc: <i>“Je zult nooit
+weten wat Riku in deze zakken heeft gestopt!”</i>}}}, "materials": {"carpentry": {
+"birchPlank": {"desc": "De gladde en bleke berkenhouten plank is een toonbeeld van
+eenvoud en elegantie door zijn zuivere en lichte houtuiterlijk.", name: Berkenhouten
 plank}, "maplePlank": {"desc": "De esthetische en uitnodigende esdoornhouten plank
 heeft een glad en lichtgekleurd oppervlak wat een vleugje verfijning toevoegt aan
 elk project.", name: Esdoornhouten plank}, "oakPlank": {"desc": "Een tijdloze keuze
