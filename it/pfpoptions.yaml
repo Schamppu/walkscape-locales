@@ -181,6 +181,7 @@ maps:
       facepaint: Colore della pittura facciale
       hair: Colore dei capelli
       skin: Colore della pelle
+      'facialHair': Colore dei peli del viso
     skin:
       dark: Scuro
       light: Chiaro
@@ -197,6 +198,7 @@ singulars:
       name: Ascia nanica
     hatchet:
       name: Accetta
+      desc: Per dimostrare la tua determinazione nel macinare il taglio del legno.
     iceStaff:
       desc: Un bastone magico che sembra possa congelare alcune persone.
       name: Bastone del ghiaccio
@@ -206,6 +208,93 @@ singulars:
       name: Bastone
     twoHandedSword:
       name: Spada a due mani
+      desc: Una spada a due mani dall'aspetto epico!
+    backShield:
+      name: Scudo
+      desc: Un grande scudo per proteggersi dalle minacce.
+    stickAndABottle:
+      name: Bastone e bottiglia
+      desc: C'è una bottiglia appesa con dentro una specie di liquido.
+    oneHandedSword:
+      name: Spada a una mano
+      desc: Una spada a una mano per fare sul serio.
+    pickaxe:
+      desc: Il piccone che hai sulla schiena può rompere qualsiasi roccia e pietra.
+      name: Piccone
+    lightshine:
+      desc: Una piccola sfera che brilla leggermente dalla parte superiore della tua
+        spalla.
+      name: Sfera luminosa
+    largeIcicle:
+      name: Grande ghiacciolo
+      desc: Il grande ghiacciolo sulla tua schiena stupirà anche i fashionisti che
+        hanno visto di tutto.
+    rodOfMoss:
+      name: Bastone di muschio
+      desc: Un pezzo di muschio raro è attaccato all'estremità della corda.
+    birdCompanion:
+      name: Compagno uccello
+      desc: Un uccellino che ti segue ovunque.
+    floatingOrb:
+      name: Sfera fluttuante
+      desc: Una sfera fluttuante che ti fa sentire un vero vincitore.
+    penguinCompanion:
+      name: Compagno pinguino
+      desc: Un piccolo pinguino è seduto sulla tua spalla. Di tanto in tanto emette
+        un verso che suona così:\n\n<i>“Malik! Malik!”</i>
+    merfolkFishWings:
+      name: Ali di pesce delle sirene
+      desc: Le ali sintetiche sulla tua schiena assomigliano a quelle dei pesci volanti.
+    jarvonianBanner:
+      name: Stendardo jarvoniano
+      desc: Il banner con le due tonalità di blu ricorda i colori della Jarvonia.
+    trellinBanner:
+      name: Stendardo di Trellin
+      desc: Il verde e il viola ricordano i colori di Trellin.
+    erdwiseBanner:
+      name: Stendardo di Erdwise
+      desc: Il rosso e il giallo ricordano i colori di Erdwise.
+    syrenthiaBanner:
+      name: Stendardo di Syrenthia
+      desc: Lo stendardo blu e giallo pallido ricorda i colori di Syrenthia.
+    halflingRebelsBanner:
+      name: Stendardo dei Ribelli Halfling
+      desc: Lo stendardo con le due tonalità di verde ricorda i colori dei ribelli
+        halfling.
+    iceHockeyStick:
+      name: Bastone da hockey su ghiaccio
+      desc: Il tuo bastone da hockey su ghiaccio preferito che si aggancia alla schiena.
+    tinyShark:
+      name: Piccolo squalo
+      desc: È stranamente simile allo squalo appeso alla parete del Emportio di Frosthook.
+        Deve trattarsi di uno dei bisnonni squali di Bruce.
+    dragonCompanion:
+      name: Compagno drago
+      desc: Un piccolo drago amichevole è seduto sulla tua spalla ed è pronto a giocare.
+    batCompanion:
+      name: Compagno pipistrello
+      desc: Un pipistrello amichevole che vola proprio accanto a te. Non preoccuparti,
+        non morde!
+    loongDragon:
+      name: Piccolo drago Loong
+      desc: Un amico snello, sinuoso e serpentino con possenti corna sulla testa ancora
+        in fase di crescita.
+    huskyPup:
+      name: Cucciolo di husky
+      desc: Un piccolo cucciolo di husky, sempre fedele, ma non ancora pronto per
+        trainare una slitta.
+    iceMaul:
+      name: Mazza di ghiaccio
+      desc: Un grande martello di ghiaccio che può portare una fresca brezza ad ogni
+        colpo.
+    frogCompanion:
+      name: Compagno rana
+      desc: Una rana che non aveva vita facile prima che tu la trovassi, a cui veniva
+        sempre detto di sbrigarsi, doveva saltellare di corsa.
+    wombat:
+      name: Wombat non combattente
+      desc: Di natura pacifista, non ama la violenza e preferisce nascondersi sulla
+        tua spalla, lontano dai pericoli.
   bodyTypes:
     a: A - Maschile
     b: B - Femminile
@@ -231,10 +320,31 @@ singulars:
     goldenPiercings:
       desc: Due piercing dorati, uno all'orecchio e uno al sopracciglio.
       name: Due piercing dorati
+    carrot:
+      desc: Quando devi interpretare un pupazzo di neve, prendi una carota!
+      name: Carota
+    hearingAid:
+      name: Apparecchio acustico
+      desc: Progettato in Galeforge.
+    pearlEarring:
+      name: Orecchini con perle raffinate
+      desc: Con questo elegante orecchino sembri quasi un quadro.
   facepaints:
     manyStripes:
       desc: Striscie multiple che coprono quasi completamente l'intera faccia!
       name: Molte striscie
+    stripeOverCheeks:
+      desc: Una striscia che attraversa entrambe le guance.
+      name: Striscia sulle guance
+    ringAroundEye:
+      desc: Un anello che circonda uno dei tuoi occhi.
+      name: Cerchio intorno agli occhi
+    stipeOverEye:
+      name: Striscia sopra l'occhio
+      desc: Una striscia che attraversa l'occhio.
+    stripeOverBothEyes:
+      name: Striscia su entrambi gli occhi
+      desc: Una striscia che copre entrambi gli occhi.
   faces:
     agedFace:
       desc: Un volto che mostra più anni.
@@ -448,27 +558,224 @@ singulars:
         mentre il resto dei capelli scende lungo e libero.
     twoPonytailHair:
       name: Due code di cavallo
+      desc: Un'acconciatura giocosa con una coda di cavallo su ciascun lato della
+        testa.
+    crest:
+      name: Cresta
+      desc: Un'acconciatura raccolta che ricorda una cresta.
+    berserker:
+      name: Berserker
+      desc: Un'acconciatura di coloro che sono stati traditi dagli altri su un percorso
+        di vendetta e resilienza.
+    ohayo:
+      name: Ohayo
+      desc: Un'acconciatura da letto per chi sta per avere una buona giornata.
+    sideBangsWithBow:
+      name: Frangia laterale con fiocco
+      desc: Capelli acconciati con la frangia divisa ai lati e un fiocco.
   headwear:
     chefsHat:
       name: Cappello da cuoco
+      desc: Sembra che tu sia pronto per preparare una cena fantastica!
     partyHat:
       name: Cappello da festa
+      desc: Da quanto tempo stai in piedi davanti alla banca?
     plagueDoctorMask:
       desc: Mi sento male solo guardandola, fa paura!
       name: Maschera da medico della peste
     swampHat:
       name: Cappello da Palude
+      desc: Per gli esploratori delle Grandi Paludi.
     topHat:
       desc: Wall Street è da quella parte, signore.
       name: Cappello a cilindro
     topHatWithGoggles:
       name: Cappello a cilindro con occhialoni
+      desc: Se vuoi innovare come un Galeforgiano, ti servono sia il cappello a cilindro
+        che gli occhiali protettivi.
     turban:
       desc: Molto pratico da indossare nel deserto.
       name: Turbante
     warmBeanie:
       desc: Protegge molto bene dal freddo. E ha un aspetto fresco.
       name: Berretto caldo
+    trellinBushHat:
+      desc: Il cappello è fatto di foglie, con un ramoscello da cui spuntano dei grappoli
+        d'uva.
+      name: Cappello da safari di Trellin
+    halflingRebelsBandana:
+      desc: Una semplice bandana utilizzata dai ribelli per impedire al sudore di
+        colare sul viso mentre combattono la loro battaglia.
+      name: Bandana dei Ribelli Halfling
+    bambooHat:
+      desc: Il cappello è intrecciato con fili di bambù e protegge molto bene dal
+        sole grazie alla sua ampia forma rotonda.
+      name: Cappello di bambù
+    sleepyHat:
+      desc: Un cappello per chi è sempre pronto per un pisolino. Ti fa quasi sentire
+        come se potessi dormire tranquillamente anche durante un tifone o un'eruzione
+        vulcanica.
+      name: Cappellino da sonno
+    oldWizardHat:
+      desc: Un vecchio cappello da mago che proviene da una lunga stirpe di maghi.
+        Maghi alla moda.
+      name: Cappello da vecchio mago
+    tarsiliumHelmet:
+      name: Elmo di tarsilio
+      desc: Nero e molto robusto.
+    cap:
+      desc: È un vero classico.
+      name: Cappuccio
+    pirateHat:
+      name: Cappello da pirata
+      desc: Ma perché il rum è finito?
+    royalGuardHelmet:
+      desc: Per coloro che proteggono il confine wallisiano.
+      name: Elmo della Guardia Reale
+    coffeeHat:
+      name: Cappello da caffè
+      desc: Perché quando il tuo amore per il caffè è sempre nei tuoi pensieri, ora
+        può essere anche sulla tua testa. Niente stress, solo espresso!
+    vikingHelm:
+      name: Elmo vichingo
+      desc: Un elmo vichingo stoico con grandi corna che spuntano dai lati.
+    copperHelmet:
+      name: Elmo di rame
+      desc: Un elmo realizzato in rame. Dall'aspetto semplice, ma molto funzionale.
+    diamondHelmet:
+      name: Casco di diamante
+      desc: Beh, questo sembra molto costoso. Potrebbe persino accecare i tuoi nemici.
+    bronzeHelmet:
+      name: Elmo in bronzo
+      desc: Un casco bello ma dall'aspetto semplice.
+    ironHelmet:
+      name: Elmo di ferro
+      desc: Sembra proprio una guardia, vero?
+    steelHelmet:
+      name: Elmetto d'acciaio
+      desc: Protegge la testa.
+    farganiteHelmet:
+      name: Elmo di farganite
+      desc: Un elmetto blu, realizzato con un metallo raro. Protegge molto bene la
+        testa.
+    crystalHelmet:
+      name: Elmo di cristallo
+      desc: Un elmo di cristallo, che brilla di colore viola.
+    lightCopperHelmet:
+      name: Elmo leggero in rame
+      desc: Casco utilitario, dal design leggero.
+    lightDiamondHelmet:
+      desc: Un casco dall'aspetto molto robusto e costoso.
+      name: Casco leggero con diamanti
+    lightBronzeHelmet:
+      name: Elmo in bronzo chiaro
+      desc: Assomiglia un po' a un berretto, ma protegge molto bene la testa.
+    lightIronHelmet:
+      name: Elmetto leggero in ferro
+      desc: Casco molto simile a un elmetto da guardia. E in una confezione leggera!
+    steelLightHelmet:
+      name: Casco leggero in acciaio
+      desc: Protegge la testa con eccellenza.
+    tarsiliumLightHelmet:
+      name: Elmo leggero in tarsilio
+      desc: Un casco nero e leggero.
+    farganiteLightHelmet:
+      name: Casco leggero in farganite
+      desc: Un casco dal design molto leggero realizzato in robusta farganite.
+    crystalLightHelmet:
+      name: Casco leggero di cristallo
+      desc: Casco dal design leggero che brilla di colore viola. Ha un aspetto epico.
+    enchantedHat:
+      name: Cappello incantato
+      desc: Beh, non è un cappello davvero fantastico, perfetto per un vero cowboy!
+    dragonLeatherHelmet:
+      name: Elmo in pelle di drago
+      desc: È rosso. Ed è costoso.
+    desertHat:
+      name: Cappello da deserto
+      desc: Questo è ottimo quando il sole ti brucia il collo.
+    arcticHat:
+      name: Cappello artico
+      desc: Per un vero compagno.
+    royalHelmet:
+      name: Elmo reale
+      desc: Con l'aspetto di un vero membro della famiglia reale di Wallis.
+    christmasHat:
+      name: Cappello natalizio
+      desc: Ratiritiralla, mistäs tuli halla. È una canzone natalizia finlandese.
+    bowlerHat:
+      name: Cappello a bombetta
+      desc: La scelta preferita dagli uomini d'affari.
+    wizardHat:
+      name: Cappello da mago
+      desc: Sempre alla moda tra i maghi.
+    chaplinHat:
+      name: Cappello di Chaplin
+      desc: Il cappello più divertente.
+    headwrap:
+      name: Foulard
+      desc: Un copricapo versatile che protegge, abbellisce e riflette lo stile personale
+        di chi lo indossa. Spesso indossato dai Wrentmarkiani.
+    warmWoolenHat:
+      name: Cappello di lana caldo
+      desc: Questo semplice cappello è rivestito in lana per garantire calore durante
+        l'inverno.
+    hatWithFeather:
+      name: Cappello con piuma
+      desc: Il cappello leggero ha una piuma attaccata. Porta fortuna.
+    treasureHunterHat:
+      name: Cappello da cacciatore di tesori
+      desc: Nessuno sa dire se sia un cappello fedora o un cappello da cowboy. Qualunque
+        cosa sia, ti fa sembrare figo come Indy.
+    syrenthianCoralCrown:
+      name: Corona di corallo di Syrenthia
+      desc: Questa corona di corallo ricorda una corona d'alloro.
+    erdwissMerchantsHat:
+      name: Cappello da mercante di Erdwiss
+      desc: Il cappello dall'aspetto stravagante ha un emblema con una moneta d'oro
+        ricamato nella parte superiore.
+    jarvonianBearHelmet:
+      name: Casco da orso
+      desc: Il cappuccio in acciaio è ricoperto dalla testa di un possente orso.
+    gemmedCirclet:
+      name: Diadema con gemme
+      decs: Una gemma color verde acqua brilla al centro di un cerchio di platino.
+    aviatorHatWithGoggles:
+      name: Cappello da aviatore con occhiali protettivi
+      desc: Tipico cappello da aviatore indossato dai piloti Galeforgiani. È dotato
+        di occhiali protettivi.
+    pieHat:
+      name: Cappello a forma di torta
+      desc: Questo cappello a forma di torta finta attira sempre l'attenzione alle
+        feste!
+    pumpkinHat:
+      name: Cappello a forma di zucca
+      desc: Una zucca decorativa che puoi mettere sulla testa per creare un'atmosfera
+        festosa.
+    witchCatHat:
+      desc: Un gatto con un cappello. Quale gatto? Ma il gatto con il cappello da
+        strega nel cappello, ovviamente. In cima alla tua testa ... siederà?
+      name: Cappello da stregatto
+    expertDivingHelmet:
+      name: Casco da subacqueo professionale
+      desc: Un casco da subacqueo professionale, sembra fatto di idrillio. Molto meglio
+        che indossare una boccia per pesci sott'acqua.
+    desertDealerHat:
+      name: Cappello da commerciante del deserto
+      desc: Un cappello per una persona abituata al deserto e pronta a venderti qualsiasi
+        cosa, persino un cappello.
+    ruffledWizardHat:
+      name: Cappello da mago con volant
+      desc: Un cappello da mago. Ce ne sono molti simili, ma questo è mio. Lo si capisce
+        perché ci sono ancora i miei capelli dentro.
+    antlerHood:
+      name: Cappuccio con corna
+      desc: Dalla parte superiore di questo cappuccio spuntano delle corna. Ti fa
+        sentire maestoso, ma ti fa anche venire voglia di cracker.
+    maidCap:
+      name: Cappellino da cameriera
+      desc: Un pezzo di stoffa indossato sulla testa di una domestica, sempre pronta
+        a servire e riordinare.
   noses:
     bigAndPointy:
       desc: Naso un po' grande che è anche appuntito. Non fare del male a nessuno
@@ -673,3 +980,26 @@ singulars:
       name: Abito da cameriera
       desc: Va bene, non rendere la situazione imbarazzante. Sei qui solo per pulire,
         servire e apparire elegante mentre lo fai.
+  eyeAccessories:
+    thickGlasses:
+      desc: Con questi, puoi quasi vedere il futuro.
+      name: Occhiali spessi
+    sunGlasses:
+      desc: Tutte le persone cool indossano occhiali da sole. Anche al chiuso.
+      name: Occhiali da sole
+    smokyEyes:
+      name: Occhi fumosi
+      desc: Vuoi apparire cool e magari un po' spaventoso? Allora questo è sicuramente
+        quello che fa per te.
+    squareGlasses:
+      desc: Sono più simili a semplici montature, ma stanno bene sul tuo viso a prescindere.
+      name: Occhiali quadrati
+    tintedGlasses:
+      name: Occhiali colorati
+      desc: Un paio di occhiali con una montatura colorata.
+    goldenEyeGlasses:
+      name: Occhiali dorati
+      desc: La montatura di questi occhiali sembra molto costosa.
+    roundGlasses:
+      name: Occhiali rotondi
+      desc: Per un look classico, da inventore.
