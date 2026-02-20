@@ -36,10 +36,12 @@ singulars:
       requirementLevel: "Requires skilling gear that has at least <keywordRequirements /> in its requirements."
     frisbee:
       name: Skydisc
+      desc: This item counts as a skydisc, which is required for certain activities that involve using a skydisc.
       requirement: Requires an equipped <object id="frisbee" />.
       requirementLevel: "Requires a skydisc that has at least <keywordRequirements /> in its requirements."
     skis:
       name: Skis
+      desc: This item counts as skis, which unlocks a lot of special routes in Jarvonia. Also some activities require skis.
       requirement: Requires equipped <object id="skis" />.
       requirementLevel: "Requires skis that have at least <keywordRequirements /> in their requirements."
     bellows:
@@ -52,14 +54,17 @@ singulars:
       requirementLevel: "Requires a basket that has at least <keywordRequirements /> in its requirements."
     lifeVest:
       name: Life vest
+      desc: This item counts as a life vest, which is required for certain activities that involve being in water.
       requirement: Requires an equipped <object id="lifevest" />.
       requirementLevel: "Requires a life vest that has at least <keywordRequirements /> in its requirements."
     climbing:
       name: Climbing gear
+      desc: This item is considered climbing gear, which is required for certain activities that involve climbing.
       requirement: Requires equipped <object id="climbingTool" />.
       requirementLevel: "Requires climbing gear that has at least <keywordRequirements /> in its requirements."
     bugCatchingNet:
       name: Bug catching net
+      desc: This item counts as a bug catching net, which is required for certain activities that involve catching bugs.
       requirement: Requires an equipped <object id="bugCatchingNet" />.
       requirementLevel: "Requires a bug catching net that has at least <keywordRequirements /> in its requirements."
     ring:
@@ -363,18 +368,22 @@ singulars:
       requirementLevel: "Requires a beverage that has at least <keywordRequirements /> in its requirements."
     alcohol:
       name: Alcohol
+      desc: This item counts as alcohol. Don't drink and drive!
       requirement: Requires <object id="alcohol" />.
       requirementLevel: "Requires alcohol that has at least <keywordRequirements /> in its requirements."
     water:
       name: Water
+      desc: This item counts as water.
       requirement: Requires <object id="water" />.
       requirementLevel: "Requires water that has at least <keywordRequirements /> in its requirements."
     memosphere:
       name: Memosphere
+      desc: This item grants you experience in a skill when consumed.
       requirement: Requires a <object id="memosphere" />.
       requirementLevel: "Requires a memosphere that has at least <keywordRequirements /> in its requirements."
     sandwich:
       name: Sandwich
+      desc: This item counts as a sandwich, which is a requirement for certain achievements.
       requirement: Requires a <object id="sandwich" />.
       requirementLevel: "Requires a sandwich that that has at least <keywordRequirements /> in its requirements."
   containers:
@@ -397,15 +406,18 @@ singulars:
       requirementLevel: "Requires an egg that has at least <keywordRequirements /> in its requirements."
     petEgg:
       name: Pet egg
+      desc: This item can be claimed and hatched into a pet.
       requirement: Requires an <object id="pet_egg" />.
       requirementLevel: "Requires a pet egg that has at least <keywordRequirements /> in its requirements."
   general:
     lightSource:
       name: Light source
+      desc: This item counts as a light source, allowing you to see in dark areas.
       requirement: Requires an equipped <object id="lightSource" />.
       requirementLevel: "Requires the user to have a <keywordRequirements /> equipped."
     heatResist:
       name: Heat resistant
+      desc: This item provides heat resistance, allowing you to survive in hot areas.
       requirement: Requires something <object id="heat_resistant" />.
       requirementLevel: "Requires the user to have something <keywordRequirements /> equipped."
   misc:
@@ -432,11 +444,13 @@ singulars:
       requirementLevel: none
     reward:
       name: Achievement reward
+      desc: Gained as a reward from an achievement.
       requirement: Requires an <object id="achievement_reward" />.
       requirementLevel: "Requires an achievement reward that has at least <keywordRequirements /> in its requirements."
   faction:
     reward:
       name: Faction reward
+      desc: Gained as a reward from a faction.
       requirement: Requires a <object id="faction_reward" />.
       requirementLevel: "Requires a faction reward that has at least <keywordRequirements /> in its requirements."
   search:
@@ -567,14 +581,17 @@ singulars:
   weight:
     light:
       name: Light
+      desc: This item counts as light weight, which means its maximum stack size is 999.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
     ultraLight:
       name: Ultra light
+      desc: This item counts as ultra light weight, which means its maximum stack size is 9999.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
     heavy:
       name: Heavy
+      desc: This item counts as heavy weight, which means its maximum stack size is 1.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
   services:
@@ -605,26 +622,32 @@ singulars:
   itemSets:
     treasureHunter:
       name: Treasure hunter set
+      desc: This item counts towards treasure hunter set.
       requirement: Requires equipped pieces of the <object id="itemset_treasure_hunter" /> set.
       requirementLevel: "Requires treasure hunter gear that has at least <keywordRequirements /> in its requirements."
     adventuringTools:
       name: Adventuring tool set
+      desc: This item counts towards adventuring tool set.
       requirement: Requires equipped pieces of the <object id="itemset_adventuring_tools" /> set.
       requirementLevel: "Requires an adventuring tool that has at least <keywordRequirements /> in its requirements."
     divingGear:
       name: Diving gear
+      desc: This item counts towards diving gear. You need diving gear to go underwater.
       requirement: Requires <object id="itemset_diving_gear" />.
       requirementLevel: "Requires diving gear that has at least <keywordRequirements /> in its requirements."
     advancedDivingGear:
       name: Advanced diving gear
+      desc: This item counts towards advanced diving gear. You need advanced diving gear to go underwater in more dangerous areas.
       requirement: Requires <object id="itemset_diving_gear_advanced" />.
       requirementLevel: "Requires advanced diving gear that has at least <keywordRequirements /> in its requirements."
     expertDivingGear:
       name: Expert diving gear
+      desc: This item counts towards expert diving gear. You need expert diving gear to go underwater in the most dangerous areas.
       requirement: Requires <object id="itemset_diving_gear_expert" />.
       requirementLevel: "Requires expert diving gear that has at least <keywordRequirements /> in its requirements."
     properGear:
       name: Proper gear
+      desc: This item counts towards proper gear set.
       requirement: Requires worn pieces of the <object id="itemset_proper_gear" /> set.
       requirementLevel: "Requires proper gear worn that has at least <keywordRequirements /> in its requirements."
   locations:
