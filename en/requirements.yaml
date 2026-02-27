@@ -86,6 +86,12 @@ singulars:
   skillTypeLevel:
     text: Have <skillType type="{type}"/> <numberProgress current="{current}" max="{max}" /> total level.
     textRelative: Have {percent}% towards maximum <skillType type="{type}"/> level <numberProgress current="{current}" max="{max}" />.
+  craftingType:
+    text: While crafting <object id="{obj}" /> <numberProgress current="{current}" max="{max}" />.
+    textSkill: While crafting with skill <skill skill="{skill}" /> <numberProgress current="{current}" max="{max}" />.
+  workEfficiencyAt:
+    text: While having work efficiency at least <numberProgress current="{current}" max="{max}" />%.
+    textMaximum: While having maximum work efficiency <numberProgress current="{current}" max="{max}" />.
   uniques:
     beginnerCrossCountry: Complete the <object id="activity-cross-country_skiing_(beginner)-fc421940-d63a-402f-aa50-26cc2efea4d3" alwaysShow="true" /> activity <numberProgress current="{current}" max="{max}" /> times.
     intermediateCrossCountry: Complete the <object id="activity-cross-country_skiing_(intermediate)-42788047-6cc3-4711-88be-999e9504fc2a" alwaysShow="true" /> activity <numberProgress current="{current}" max="{max}" /> times.
