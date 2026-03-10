@@ -287,6 +287,8 @@ singulars:
       holdToUse: Hold to use
       alreadyHere: You are already in <object id="{location}"/>. Ability cannot be used to travel here.
   cooldowns:
+    info:
+      inputCooldownInfo: 'This ability is charged by using items. One full charge requires <icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>.'
     phrases:
       followingMustBeTrueToUse: "Requirements to use are not met:"
       followingMustBeTrueToTick: "Following must be true for the cooldown to decrease:"
@@ -298,6 +300,8 @@ singulars:
       charges: "Charges"
       requirements: "Requirements"
       cooldownRequirements: "Cooldown requirements"
+    inputs:
+      item: '<bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip> gained from <object id="{item}" />'
   faction:
     phrases:
       openFaction: Open faction
