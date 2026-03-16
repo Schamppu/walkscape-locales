@@ -146,7 +146,9 @@ maps:
       "mining": Livello di <c>Minare</c>
       "trinketry": Livello di <c>Oreficeria</c>
       "woodcutting": Livello di <c>Taglio del legno</c>
-      "achievementPoints": <c>Punti conseguiti</c>
+      "achievementPoints": <c>Punti Obiettivo</c>
+      "hunting": Livello di <c>Caccia</c>
+      "tailoring": Livello di <c>Sartoria</c>
     stepCountNotifications:
       "everyHundred": Ogni cento
       "never": Mai
@@ -197,11 +199,11 @@ plurals:
   achievements:
     phrases:
       achievementPoint:
-        one: '{} punto trofeo'
-        other: '{} punti trofeo'
+        one: '{} punto obiettivo'
+        other: '{} punti obiettivo'
         zero: '-'
         few: '-'
-        two: '{} punti conseguiti'
+        two: '{} punti obbiettivo'
         many: '-'
   activity:
     phrases:
@@ -315,12 +317,21 @@ plurals:
           <c>{actions} azioni</c>.
         few: '-'
         many: '-'
+  gearSets:
+    phrases:
+      selected:
+        zero: '-'
+        one: <hl>{}</hl> selezionato
+        two: <hl>{}</hl> selezionato
+        few: '-'
+        many: '-'
+        other: <hl>{}</hl> selezionato
 singulars:
   achievements:
     info:
-      viewDescription: Ottieni trofei per guadagnare <hl>Punti Ricompensa</hl>. Quando
-        la barra Punti Ricompensa è piena, ottieni qualcosa di speciale per tutti
-        i tuoi personaggi! Alcuni trofei danno anche delle ricompense extra.
+      viewDescription: Sblocca obiettivi per guadagnare <hl>Punti Obiettivo</hl>.
+        Quando la barra Punti Obiettivo è piena, ottieni qualcosa di speciale per
+        tutti i tuoi personaggi! Alcuni obiettivi danno anche delle ricompense extra.
       specialItems: Oggetti speciali, come <c>oggetti da collezione</c>, <c>oggetti
         di missione</c> e <c>manufatti</c>, vengono raccolti durante il tuo viaggio
         in WalkScape. Puoi controllarli qui. Gli oggetti da collezione ti fanno guadagnare
@@ -337,11 +348,11 @@ singulars:
         puoi provare a raccogliere. Non occupano spazio nell'inventario e rimangono
         sempre con il tuo personaggio.
     phrases:
-      notUnlocked: Trofeo bloccato
+      notUnlocked: Obiettivo bloccato
       rewardProgress: Punti Ricompensa
       showRewards: Mostra ricompense
       unclaimedRewards: 'Premi non reclamati: '
-      collectiblesCount: Collezionabili <icon i="Punti obiettivo"/> <c i=0>{count}</c>
+      collectiblesCount: Collezionabili <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
       checkPointUnlocks: Sblocco dei checkpoint
       totalProgressUnlocks: Progressi totali sbloccati
@@ -418,6 +429,7 @@ singulars:
       noPotionConsumables: Nessuna <hl>pozione</hl> nel tuo inventario.
       depositAll: Tutto
       hatchesInto: Si schiude in
+      inputAttributes: Attributi di ingresso
     options:
       expandInventory: Espandi l'inventario
       showMaterials: Mostra materiali
@@ -512,6 +524,24 @@ singulars:
       baseEfficiency: Efficienza base
       fromOverencumbered: Sovraccarico
       fromPets: Animali domestici
+      fromFineInputs: Ingressi raffinati
+      fromEffects: Effetti attivi
+      availableInput: (<c>{quantity}x</c> disponibili)
+      requiresInput: Occorrono <hl>{quantity}x</hl> <object id="{keyword}"/>
+      requiresInputWithLevel: 'Requisiti: <hl>{quantity}x</hl> <object id="{skill}"
+        /> livello <c>{level}</c> <object id="{keyword}"/>'
+      fineInputBenefit: Vantaggi derivanti dall'uso di <c>ingressi raffinati</c>
+      requirementsNotMetForInput: <object id="{item}"/> I requisiti non sono soddisfatti
+      inputAttributes: Vantaggi derivanti dall'uso di <object id="{item}"/>
+      allAttributes: Mostra tutti gli attributi
+      activeEffects: Effetti attivi
+      requiresInputWithLevelOptional: (Facoltativo) Utilizza <hl>{quantity}x</hl>
+        <object id="{skill}" /> livello <c>{level}</c> <object id="{keyword}"/>
+      noInputOptions: Nel tuo inventario non c'è nessun <object id="{keyword}"/> da
+        utilizzare come ingresso
+      inputsNotMet: Requisiti di ingresso non soddisfatti
+      fromInputAttributes: Attributi di ingresso
+      requiresInputOptional: (Facoltativo) Utilizza <hl>{quantity}x</hl> <object id="{keyword}"/>
     rewards:
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} Collezionabili</c> che
         possono essere trovati
@@ -759,6 +789,7 @@ singulars:
       fromAttribute: Dall'attributo {attribute}
       actionCancelled: Azione annullata
       petDoesNotExist: L'animale domestico non esiste più, non è possibile evocarlo.
+      inputsUsed: Dati utilizzati
   faction:
     phrases:
       openFaction: Apri fazione
@@ -775,6 +806,7 @@ singulars:
         l'abilità per viaggiare qui.
       noAction: Nessuna azione
       holdToCast: Tieni premuto per lanciare
+      lastsFor: "La durata dell'effetto è di:"
     info:
       youHaveNoAbilities: <hl>Non hai abilità</hl>. Alcuni equipaggiamenti nel gioco
         possono conferirti abilità che puoi usare per ottenere benefici immediati
@@ -811,6 +843,8 @@ singulars:
       importedGearSetDefaultName: Set di equipaggiamento importato
       reorderGearSets: Riordina set di equipaggiamento
       showItems: Mostra oggetti
+      forRecipes: 'Per ricette: '
+      noRecipesSelected: Nessuna ricetta selezionata
     errors:
       duplicateItem: L'articolo esiste già nel set di equipaggiamento
       keywordError: 'Il set di equipaggiamento ha già : <object id="{keyword}" />'
@@ -852,6 +886,18 @@ singulars:
       cooldownReady: 'Tempo di recupero: pronto'
       charges: Cariche
       requirements: Requisiti
+      noInputsAvailable: Non hai alcun <object id="{item}"/> disponibile da utilizzare
+        per questo tempo di ricarica.
+      inputCharges: 'Cariche:'
+      inputNextCharge: 'Prossima carica:'
+      inputAtMax: Max.
+      cooldownCharged: Hai attivato l'abilità <object id="{ability}"/> su <c>{target}</c>!
+    info:
+      inputCooldownInfo: Questa abilità si ricarica utilizzando gli oggetti. Per una
+        ricarica completa sono necessari <icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>.
+    inputs:
+      item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
+        ottenuto da <object id="{item}" />
   journal:
     info:
       jobInfo: I lavori sono <c>attività semplici e ripetibili</c> che puoi completare
@@ -1075,6 +1121,8 @@ singulars:
       noItemSelected: Nessun elemento selezionato
       toolSlots: Slot per utensili
       gearSlots: Slot per equipaggiamento
+      comparedItem: (Oggetto a confronto)
+      selectedItem: (Oggetto selezionato)
     info:
       gearInfo: Equipaggia l'equipaggiamento per migliorare le caratteristiche del
         tuo personaggio. Puoi toccare uno qualsiasi degli slot dell'equipaggiamento
@@ -1151,7 +1199,7 @@ singulars:
       totalExperience: Esperienza totale
       totalSteps: Passi totali
       totalLevel: Livello di abilità totale
-      achievementPoints: Punti conseguiti
+      achievementPoints: Punti Obiettivo
       last: Ultimo
       me: Io
       loadingPage: Caricamento della pagina...
@@ -1215,7 +1263,7 @@ singulars:
       totalXp: XP totali
       xpToNextLevel: XP al prossimo livello
       currentLevelProgress: Livello attuale di avanzamento
-      xpToMaxLevel: XP al livello massimo
+      xpToMaxLevel: XP fino al livello massimo
       maxLevelProgress: Progresso livello massimo
       claimedAt: Rivendicato su
       hatchedAt: Schiuso a
@@ -1229,6 +1277,8 @@ singulars:
       noEggsFound: Non sono state trovate uova corrispondenti alla tua ricerca.
       noPetsFound: Non sono stati trovati animali domestici corrispondenti alla tua
         ricerca.
+      actionsToNextLevel: Azioni al prossimo livello
+      actionsToHatch: Azioni per la schiusa
   announcements:
     info:
       announcementInfo: Qui puoi trovare gli <c>annunci</c> scritti dagli sviluppatori.
@@ -1277,3 +1327,15 @@ singulars:
       unlockedWalkpediaEntries: Voci Walkpedia sbloccate
       rumorsFromCharacter: Voci da <c>{characterName}</c>
       backToRumors: Torna alle voci
+  attributeListing:
+    phrases:
+      allAttributes: Tutti gli attributi
+      overlevelingWithNumber: Il livello di competenza è <c>+{livello}</c> superiore
+        al requisito.
+      overlevelingFromAgility: Dal livello <c>{level}</c> di <object id="agility"
+        />.
+      noAttributes: Nessun attributo attivo.
+      noAttributesTip: Non hai attributi attivi provenienti da equipaggiamento, strumenti
+        o altre fonti, oppure i tuoi filtri non hanno restituito alcun attributo corrispondente.
+    options:
+      showInactiveAttributes: Mostra gli attributi inattivi
