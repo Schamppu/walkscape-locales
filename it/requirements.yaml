@@ -35,8 +35,8 @@ singulars:
     text: Dotati di <object id="{obj}" /> che richiede almeno <skill skill="{skill}"/>
       livello <numberProgress current="{current}" max="{max}" />.
   distinctItemsEquippedKeyword:
-    text: Richiede <numberProgress current="{current}" max="{max}" /> unico <object
-      id="{obj}" /> equipaggiato.
+    text: Richiede <numberProgress current="{current}" max="{max}" /> <object id="{obj}"
+      /> equipaggiato.
   characterLevel:
     text: Avere livello personaggio <numberProgress current="{current}" max="{max}"
       />.
@@ -92,6 +92,7 @@ singulars:
     notUnderwater: Non in una posizione <object id="location_underwater" />.
     notAgility: Non eseguendo <skill skill="agility"/>.
     smeltRecipe: Mentre si eseguono le ricette <object id="recipe_smelting" />.
+    arrowsInInventory: È necessario avere <object id="arrows" /> nel proprio inventario.
   gear:
     swimmingExpert: Completata l'attività <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
@@ -174,3 +175,24 @@ singulars:
       Non è possibile utilizzare <object id="{currentObj}" icon="false" />.
   recipeType:
     text: Mentre si eseguono le ricette <object id="{obj}" />.
+  distinctKeywordItemInInventory:
+    text: Richiede <numberProgress current="{current}" max="{max}" /> <object id="{obj}"
+      /> nel tuo inventario.
+  skillTypeLevel:
+    text: Ha un livello totale di <skillType type="{type}"/> <numberProgress current="{current}"
+      max="{max}" />.
+    textRelative: Hai raggiunto il {percent}% del livello massimo di <skillType type="{type}"/>
+      <numberProgress current="{current}" max="{max}" />.
+  craftingType:
+    text: Durante la creazione di <object id="{obj}" /> <numberProgress current="{current}"
+      max="{max}" />.
+    textSkill: Durante la creazione con l'abilità <skill skill="{skill}" /> <numberProgress
+      current="{current}" max="{max}" />.
+  workEfficiencyAt:
+    text: Mantenendo un'efficienza lavorativa di almeno <numberProgress current="{current}"
+      max="{max}" />%.
+    textMaximum: Mantenendo la massima efficienza lavorativa <numberProgress current="{current}"
+      max="{max}" />.
+  petsHatched:
+    text: Hai qualche <object id="pet_egg" /> <numberProgress current="{current}"
+      max="{max}" />.
