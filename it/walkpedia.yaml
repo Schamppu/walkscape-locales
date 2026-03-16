@@ -64,6 +64,26 @@ singulars:
         description: I negozi sono luoghi in cui è possibile acquistare e vendere
           oggetti. Di solito si trovano all'interno degli edifici.
         tabText: Lista dei negozi
+    keywordList:
+      info:
+        title: Parole chiave
+        description: Le parole chiave vengono utilizzate per molti articoli, luoghi,
+          servizi e attività. Da qui puoi verificare facilmente, ad esempio, quali
+          articoli sono considerati fonti di luce.
+        tabText: Elenco delle parole chiave
+      phrases:
+        referencedByLocations: Luoghi con questa parola chiave
+        relatedToGear: Parole chiave dell'attrezzatura
+        relatedToTools: Parole chiave degli strumenti
+        relatedToMaterials: Parole chiave dei materiali
+        relatedToConsumables: Parole chiave dei consumabili
+        relatedToLocations: Parole chiave dei luoghi
+        relatedToServices: Parole chiave dei servizi
+        referencedByGear: Equipaggiamento con questa parola chiave
+        referencedByTools: Strumenti con questa parola chiave
+        referencedByMaterials: Materiali con questa parola chiave
+        referencedByConsumables: Consumabili con questa parola chiave
+        referencedByServices: Servizi con questa parola chiave
   contentPages:
     item:
       info:
@@ -83,6 +103,7 @@ singulars:
           abilità.
         fromLevelToLevel: Dal livello <c>{from}</c> al livello <c>{to}</c>
         guide: Guida
+        statistics: Statistiche
       guides:
         carpentry: "<object id=\"carpentry\" /> è un'abilità artigianale che permette
           di lavorare il legno e <object id=\"plank\" />.\n\n<li><hl>Posizione iniziale</hl>:
@@ -208,15 +229,15 @@ singulars:
           mentre <object id=\"woodcuttingTrees\" /> potresti persino trovare un <object
           id=\"item-bird_nest-c459d244-4ef3-41c1-a911-01e18efaeec1\" /> che può contenere
           alcuni oggetti utili aggiuntivi.</li>\n"
-        hunting: "<object id=\"hunting\" /> è un'abilità di raccolta essenziale per
-          trovare <object id=\"ingredient\" />.\n\n<li><hl>Posizione iniziale</hl>:
-          puoi iniziare subito a <c>cacciare</c> nella <object id=\"location\" />
-          con <object id=\"activity\" />.</li>\n\n<li><hl>Dove trovarla</hl>: la maggior
-          parte dei luoghi naturali (pianure, foreste, colline, montagne, spiagge)
-          può ospitare attività di <c>caccia</c>, così come alcune aree urbane e grotte.</li>\n\
-          \n<li><hl>Utilizzata per</hl>: Raccogliere materiali <object id=\"ingredient\"\
-          \ />, che possono essere utilizzati in altre abilità, come <skill skill=\"\
-          crafting\"/> e <skill skill=\"cooking\"/>.</li>\n"
+        hunting: "<object id=\"hunting\" /> è un'abilità di raccolta fondamentale
+          per trovare pelli.\n\n<li><hl>Luogo di partenza</hl>: Puoi iniziare subito
+          a <c>cacciare</c> nelle pianure o nei campi con <object id=\"2250915a-2619-488a-94af-c4008054d7b\"\
+          \ />.</li>\n\n<li><hl>Dove trovarla</hl>: La maggior parte dei luoghi naturali
+          (pianure, foreste, colline, montagne, spiagge) può ospitare attività di
+          <c>caccia</c>, così come alcune aree urbane.</li>\n\n<li><hl>Utilizzato
+          per</hl>: Raccogliere materiali che possono essere utilizzati in altre abilità,
+          come <skill skill=\"tailoring\"/>, <skill skill=\"crafting\"/> e <skill
+          skill=\"cooking\"/>.</li>\n"
         tailoring: "<object id=\"tailoring\" /> è un'abilità artigianale che consente
           di cucire <object id=\"processed\" /> oggetti e creare paramenti sacri che
           conferiscono potere.\n\n<li><hl>Luogo di inizio</hl>: puoi iniziare a <c>cucire</c>
@@ -227,7 +248,7 @@ singulars:
           \ />, che dovrai cercare per ottenere ricette di sartoria di livello superiore.
           In quelle zone potrebbero esserci anche alcuni luoghi in cui si svolgono
           attività di <c>sartoria</c>.</li>\n\n<li><hl>Utilizzato per</hl>: Cucire
-          <object id=\"plant\" /> in <object id=\"processed\" />. Una volta ottenuti,
+          <object id=\"plant\" /> in <object id=\"fabric\" />. Una volta ottenuti,
           possono essere combinati con il tessuto necessario per creare opzioni di
           equipaggiamento a vantaggio delle tue abilità.</li>\n"
   phrases:
@@ -273,6 +294,8 @@ singulars:
     location:
       realm: Regno
       activities: Attività
+    keyword:
+      requiresThisKeyword: Contenuti che richiedono questa parola chiave
 maps:
   phrases:
     item:
@@ -285,6 +308,14 @@ maps:
         "container": Contenitori
         "egg": Uova di animali domestici
         "currency": Valute
+  dataTypes:
+    "item": Oggetto
+    "activity": Attività
+    "location": Luogo
+    "service": Servizio
+    "recipe": Ricetta
+    "route": Itinerario di viaggio
+    "achievement": Obiettivo
 plurals:
   skillUnlocks:
     itemRequirementsMet:
