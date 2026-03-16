@@ -1,8 +1,9 @@
 maps:
   tips:
-    "14": Se è in corso una manutenzione, non preoccuparti, di solito i tuoi passi
-      continueranno a essere conteggiati anche durante il periodo di inattività. Controlla
-      gli annunci su <c c="purple">Discord</c> per esserne sicuro!
+    "14": 'Se sono in corso lavori di manutenzione, non preoccuparti: di solito i
+      tuoi passi continuano a essere conteggiati anche durante il periodo di inattività.
+      Controlla gli annunci su <a href="https://discord.gg/Kk6VecJFEk" c="lightPurple">Discord</c>
+      per esserne sicuro!'
     "18": I livelli di abilità che superano il requisito di <hl>abilità</hl> principale
       di un'attività conferiscono un bonus del +1,25% all'<hl>efficienza lavorativa</hl>
       per ciò che stai facendo, fino a un massimo di 20 livelli.
@@ -50,12 +51,12 @@ maps:
     "20": Equipaggiare un set di equipaggiamento mentre ci si trova in banca preleverà
       automaticamente tutti gli oggetti dalla banca.
   skillTypes:
-    "gathering": Le abilità di raccolta includono <skill skill="raccolta"/>, <skill
-      skill="pesca"/>, <skill skill="caccia"/>, <skill skill="estrazione mineraria"/>
-      e <skill skill="taglio della legna"/>.
+    "gathering": Le abilità di raccolta includono <skill skill="foraging"/>,<skill
+      skill="fishing"/>,<skill skill="hunting"/>,<skill skill="mining"/> e <skill
+      skill="woodcutting"/>.
     "artisan": Le abilità di manifattura comprendono <skill skill="cooking"/>, <skill
-      skill="crafting"/>, <skill skill="carpentry"/>, <skill skill="smithing"/> e
-      <skill skill="tinkering"/>.
+      skill="crafting"/>, <skill skill="carpentry"/>, <skill skill="smithing"/>,<skill
+      skill="tailoring"/> e <skill skill="trinketry"/>.
     "utility": Le abilità funzionali includono <skill skill="agility"/>.
 singulars:
   info:
@@ -90,3 +91,20 @@ singulars:
       alla tua collezione e potrai farlo nascere e invocarlo in qualsiasi momento.
       Non è possibile scambiare gli animali domestici reclamati, poiché diventano
       <c>legati al tuo personaggio</c>.
+    attributeTypes: "<bp /><icon i=\"Gear alt\"/>  <c i=0>Equipaggiamento indossato</c>:
+      attributi dell'equipaggiamento attualmente indossato.\n\n<bp /><icon i=\"Tools
+      alt\"/>  <c i=1>Strumenti equipaggiati</c>: attributi degli strumenti attualmente
+      equipaggiati.\n\n<bp /><icon i=\"Collectible\"/>  <c i=2>Oggetti da collezione</c>:
+      attributi permanenti degli oggetti da collezione.\n\n<bp /><icon i=\"Dev services\"\
+      />  <c i=3>Servizi</c>: attributi dei servizi nella tua posizione attuale.\n\
+      \n<bp /><icon i=\"Animali domestici\"/>  <c i=4>Animali domestici</c>: attributi
+      dal tuo animale domestico evocato.\n\n<bp /><icon i=\"Materiale pregiato\"/>\
+      \  <c i=5>Bonus input materiale pregiato</c>: bonus derivante dall'uso di materiali
+      pregiati.\n\n<bp /><icon i=\"Materiali\"/>  <c i=6>Input materiali</c>: attributi
+      dai materiali di input selezionati per un'attività.\n\n<bp /><icon i=\"Consumabili\"\
+      />  <c i=7>Consumabili</c>: attributi derivanti dai tuoi consumabili che vengono
+      consumati.\n\n<bp /><icon i=\"Salita di livello\"/>  <c i=8>Livello abilità</c>:
+      attributi derivanti dal tuo livello di abilità (ad es. superare il requisito
+      di livello di abilità).\n\n<bp /><icon i=\"Abilities\"/>  <c i=9>Abilità</c>:
+      attributi delle tue abilità.\n\n<bp /><icon i=\"Player effect\"/>  <c i=10>Effetti
+      attivi</c>: attributi degli effetti attualmente attivi.\n"
