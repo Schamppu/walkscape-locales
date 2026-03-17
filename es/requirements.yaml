@@ -15,7 +15,7 @@ singulars:
     text: Tener el objeto <item id="{item}"/>.
   distinctItemsEquippedKeyword:
     text: Se requiere <numberProgress current="{current}" max="{max}" /> <object id="{obj}"
-      /> únicos equipados.
+      /> equipados.
   totalSteps:
     text: Tener <numberProgress current="{current}" max="{max}" /> pasos caminados
       en total.
@@ -82,6 +82,7 @@ singulars:
     smeltRecipe: Mientras haces recetas de <object id="recipe_smelting" />.
     wreckDiving: Completar la actividad <object id="activity-wreck_diving-12e980cd-058a-42c4-8358-ba7afe1c319c"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> veces.
+    arrowsInInventory: Requiere <object id="arrows" /> en tu inventario.
   gear:
     tinkering: Haber completado la actividad <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
       /> <numberProgress current="{current}" max="{max}" /> veces en <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
@@ -177,3 +178,24 @@ singulars:
   itemsGained:
     text: Obtener <object id="{obj}" />. <numberProgress current="{current}" max="{max}"
       />.
+  distinctKeywordItemInInventory:
+    text: Se requiere <numberProgress current="{current}" max="{max}" /> <object id="{obj}"
+      /> en tu inventario.
+  skillTypeLevel:
+    text: Tener un nivel total en <skillType type="{type}"/> de <numberProgress current="{current}"
+      max="{max}" />.
+    textRelative: Tener {percent}% del nivel máximo <numberProgress current="{current}"
+      max="{max}" /> en <skillType type="{type}"/>.
+  craftingType:
+    text: Mientras fabricas <object id="{obj}" /> <numberProgress current="{current}"
+      max="{max}" />.
+    textSkill: Mientras fabricas con la habilidad <skill skill="{skill}" /> <numberProgress
+      current="{current}" max="{max}" />.
+  workEfficiencyAt:
+    text: Mientras tienes una eficiencia de trabajo de al menos <numberProgress current="{current}"
+      max="{max}" />%.
+    textMaximum: Mientras tienes una eficiencia de trabajo máxima de <numberProgress
+      current="{current}" max="{max}" />.
+  petsHatched:
+    text: Tener cualquier <object id="pet_egg" /> <numberProgress current="{current}"
+      max="{max}" />.

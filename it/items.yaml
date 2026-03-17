@@ -194,6 +194,22 @@ singulars:
         desc: Una colazione con tutti i contorni. Un pasto così sostanzioso sarà un
           ottimo modo per iniziare la giornata, anche se non è più l'inizio effettivo
           della giornata.
+      spicyMoray:
+        name: Murena piccante
+        desc: Dolce e leggermente piccante allo stesso tempo. La combinazione di sapori
+          è davvero unica, il che lo rende un piatto molto apprezzato dalla gente
+          del posto.
+      baconWeave:
+        desc: Diverse strisce di pancetta intrecciate tra loro. Con una quantità sufficiente
+          si potrebbe realizzare un vestito, ma bisognerebbe smettere di mangiarle.
+        name: Pancetta intrecciata
+      jelliedStreamEel:
+        name: Anguilla di fiume in gelatina
+        desc: È molto traballante. Se lo fissi troppo a lungo, potrebbe ipnotizzarti.
+      jerky:
+        name: Carne essiccata
+        desc: Una grossa fetta di carne stagionata ed essiccata. È un'ottima fonte
+          di proteine durante un lungo viaggio e non si deteriora facilmente.
     cookedFish:
       cookedTrout:
         name: Trota cotta
@@ -318,6 +334,14 @@ singulars:
         name: Memosfera dell'Oreficeria
         desc: All'interno della sfera di vetro, si vede il ricordo della lucidatura
           di una gemma scintillante.
+      tailoringMemosphere:
+        name: Memosfera della Sartoria
+        desc: All'interno della sfera di vetro si intravede un ricordo di tessuti
+          intrecciati e tagliati.
+      huntingMemosphere:
+        name: Memosfera della Caccia
+        desc: All'interno della sfera di vetro, si intravede il ricordo dell'inseguimento
+          di una creatura.
     misc:
       nutMix:
         desc: Un mix di frutta secca che fornisce un ottimo apporto proteico e un
@@ -395,9 +419,8 @@ singulars:
           name: Forziere del taglio del legno
         birdNest:
           name: Nido d'uccello
-          desc: Questo nido è caduto da un albero che stavi tagliando. Il suo proprietario
-            non sarà più in grado di ritrovarlo, quindi potresti anche controllare
-            cosa c'è dentro.
+          desc: Un nido costruito da un uccello. Il suo proprietario non riuscirà
+            più a trovarlo, quindi tanto vale dare un'occhiata a cosa c'è dentro.
       trinketry:
         trinketryChest:
           desc: Una scatola piena di oggetti di valore, spero per il tuo bene che
@@ -436,6 +459,17 @@ singulars:
           desc: Hai trovato questa pesante scatola di metallo a forma di incudine
             nella fornace ardente mentre fondevi i tuoi minerali. Chi l'avrebbe lasciata
             lì?
+      tailoring:
+        tailoringChest:
+          desc: 'Questo fuso gigante è chiuso da un lucchetto: magari riesci a scassarlo
+            e a vedere se dentro ci sono degli oggetti utili per il sarto!'
+          name: Forziere della Sartoria
+      hunting:
+        huntingChest:
+          name: Forziere della Caccia
+          desc: Questo forziere cornuto è apparso dopo la tua ultima battuta di caccia.
+            Forse si tratta anche di una creatura di qualche tipo, colpita dalla tua
+            abilità e desiderosa di condividere il proprio bottino.
   crafted:
     equipmentSets:
       bronze:
@@ -840,8 +874,8 @@ singulars:
         bambooHuntingBow:
           name: Arco da caccia in bambù
           desc: Un arco da caccia realizzato in bambù, molto diffuso nelle zone in
-            cui il bambù è facilmente reperibile. È molto leggero e costituisce un'arma
-            precisa.
+            cui il bambù è facilmente reperibile. È molto leggero e costituisce uno
+            strumento di caccia preciso.
         birchBirdhouse:
           name: Casetta per uccelli in betulla
           desc: Una tipica casetta per uccelli che anche un dilettante potrebbe costruire.
@@ -868,8 +902,8 @@ singulars:
           desc: Componente fondamentale dell'arco e delle frecce, fornisce la tensione
             necessaria per scoccare una freccia.
         mahoganyHuntingBow:
-          desc: Questo arco da caccia ben realizzato è un'ottima arma per un cacciatore
-            esperto.
+          desc: Questo arco da caccia di ottima fattura è uno strumento ideale per
+            un cacciatore esperto.
           name: Arco da caccia in mogano
         mapleBirdhouse:
           desc: Una casetta per uccelli in legno d'acero ha un odore caratteristico
@@ -902,6 +936,34 @@ singulars:
           name: Rete fissa in alghe
           desc: Una rete da pesca a strascico quasi infinita realizzata con alghe
             sottomarine.
+        boxtrap:
+          desc: Una trappola a scatola di facile montaggio che può essere posizionata
+            senza difficoltà per catturare piccoli animali prima che si rompa.
+          name: Trappola a scatola
+        strongBowstring:
+          name: Corda d'arco resistente
+          desc: Una corda molto più resistente che può essere utilizzata per costruire
+            archi molto più robusti.
+        quaintQuiver:
+          desc: Una piccola fondina in pelle per tenere al sicuro le tue frecce da
+            caccia. Niente di più semplice.
+          name: Faretra pittoresca
+        rustyHuntingBow:
+          name: Arco da caccia arrugginito
+          desc: Un arco in metallo che un tempo era magnifico, ora completamente arrugginito.
+            Si può ancora usare per la caccia, ma non è più efficace come una volta.
+        birchHuntingBow:
+          name: Arco da caccia in betulla
+          desc: Un arco da caccia realizzato in legno di betulla, semplice ma resistente.
+        spectralHuntingBow:
+          name: Arco da caccia spettrale
+          desc: Qualche osso assemblato a formare un arco da caccia, con una corda
+            fatta di ectoplasma che fa volare le frecce ovunque tu miri.
+        bolsteredQuiver:
+          name: Faretra rinforzata
+          desc: Una faretra di dimensioni adeguate e abbastanza robusta, perfetta
+            per trasportare le frecce da caccia o qualsiasi altra cosa vi si possa
+            infilare dentro.
       tailoring:
         basicHide:
           name: Strisce di pelle base
@@ -940,8 +1002,8 @@ singulars:
             prime armi per confezionare abiti.
           name: Tessuto di lino
         grassknotMitts:
-          desc: Guanti in tessuto con fili d'erba intrecciati, che li rendono speciali.
-          name: Guanti Grassknot
+          desc: Manopole in tessuto con fili d'erba intrecciati, che li rendono speciali.
+          name: Manopole NodiErba
         tattyChaps:
           desc: Gambali di stoffa lacera, comodi da indossare, ma il tessuto provoca
             prurito alla pelle.
@@ -966,16 +1028,16 @@ singulars:
           desc: Tunica di stoffa lacera, spesso indossata dai contadini e da altre
             persone povere.
         rootweaveMitts:
-          name: Guanti con trama a radice
-          desc: Questi guanti, rinforzati dall'aggiunta di radici, sono sorprendentemente
-            comodi e offrono una maggiore protezione per le dita.
+          name: Manopole con trama a radice
+          desc: Queste manopole , rinforzate dall'aggiunta di radici, sono sorprendentemente
+            comode e offrono una maggiore protezione per le dita.
         journeymanHandwear:
           name: Guanti del viaggiatore
           desc: Guanti ben realizzati, utili per vari lavori artigianali.
         spikescaleMitts:
-          name: Guanti chiodati
-          desc: I guanti sono stati migliorati con l'aggiunta di pelle e scaglie appuntite,
-            che garantiscono una buona protezione durante la raccolta.
+          name: Manopole chiodate
+          desc: Le manopole sono state migliorate con l'aggiunta di pelle e scaglie
+            appuntite, che garantiscono una buona protezione durante la raccolta.
         shadowquillMitts:
           name: Guanti piuma ombra
           desc: Questi guanti scuri con piume sono ideali per i raccoglitori furtivi.
@@ -1005,16 +1067,17 @@ singulars:
             nella natura selvaggia.
         journeymanBreeches:
           name: Pantaloni del viaggiatore
-          desc: Pantaloni realizzati da abili sarti per fabbri, falegnami e altri
-            artigiani esperti.
+          desc: Pantaloni realizzati da sarti esperti per fabbri, falegnami e altri
+            artigiani qualificati..
         elderhideBreeches:
           desc: Questi pantaloni, realizzati con pelle antica, conferiscono una protezione
             eccellente verso tutti gli elementi.
           name: Pantaloni in pelle antica
         elderhideMitts:
-          desc: Questi guanti sono stati creati utilizzando la leggendaria pelle antica,
-            attirando gli sguardi degli altri collezionisti quando passi loro accanto.
-          name: Guanti in pelle antica
+          desc: Queste manopole sono state create utilizzando la leggendaria pelle
+            antica, attirando gli sguardi degli altri collezionisti quando passi loro
+            accanto.
+          name: Manopole in pelle antica
         elderhideTunic:
           name: Tunica di pelle antica
           desc: La tunica creata con pelle antica è indossata dai collezionisti che
@@ -1035,6 +1098,85 @@ singulars:
           name: Tunica in aerofibra
           desc: Il tessuto aerodinamico fa brillare leggermente la tunica quando il
             vento soffia su di essa.
+        goldenSewingNeedle:
+          desc: Un ago splendido realizzato in oro, capace di trasformare una sessione
+            di cucito in uno spettacolo per gli spettatori.
+          name: Ago da cucito dorato
+        tattySkirt:
+          desc: Un telo logoro con cui coprirsi, comodo per muoversi, ma il tessuto
+            provoca prurito alla pelle.
+          name: Gonna logora
+        aerofibrilShorts:
+          desc: Questi pantaloncini sono leggerissimi da indossare, quasi come se
+            non avessi nulla addosso. Assicurati di averli indosso!
+          name: Pantaloncini in aerofibra
+        shadowquillShorts:
+          desc: Questi pantaloncini con le piume danno l'impressione che le tue cosce
+            abbiano le ali, ma purtroppo non puoi volare con questi.
+          name: Pantaloncini di Penne d'Ombra
+        tattyGarb:
+          desc: Un telo logoro che copre il busto, spesso indossato dai contadini
+            e da altre persone povere.
+          name: Abiti logori
+        spectralTunic:
+          desc: Questa tunica garantisce un'ampia libertà di movimento grazie all'eccellente
+            trama in ectoplasma realizzata sul busto.
+          name: Tunica spettrale
+        tattyHandwraps:
+          desc: Fasce di stoffa logore, realizzate da qualcuno dall’abilità discutibile.
+          name: Bende logore per le mani
+        silverSewingNeedle:
+          name: Ago da cucito in argento
+          desc: Un ago da cucito arricchito con argento per mettere in risalto la
+            tua abilità sartoriale.
+        spectralSewingNeedle:
+          name: Ago da cucito spettrale
+          desc: Un ago fatto di osso che lascia dietro di sé una scia di ectoplasma,
+            cuce insieme i materiali come se fossero anime che si uniscono in corpi.
+        toughLinenCloth:
+          name: Tessuto di lino resistente
+          desc: Un pezzo di tessuto realizzato con materiali resistenti.
+        shadowquillBracers:
+          name: Bracciali con penne d'ombra
+          desc: Questi bracciali con piume scure sono perfetti per la loro utilità
+            nell'azione furtiva.
+        shadowquillPlastron:
+          name: Plastron in Penne d'Ombra
+          desc: Con tutte queste piume scure, sembri proprio un uccello.
+        aerofibrilBracers:
+          desc: I bracciali sono stati potenziati con un filo aerodinamico che consente
+            alle mani di muoversi più velocemente del solito.
+          name: Bracciali di aerofibra
+        aerofibrilPlastron:
+          name: Plastron in aerofibra
+          desc: Il filo aerodinamico fa brillare leggermente il plastron quando il
+            vento lo sfiora.
+        spectralChaps:
+          name: Chap spettrali
+          desc: Pantaloni che trasudano energie ectoplasmatiche per garantire una
+            libertà di movimento ancora maggiore.
+        spectralHandwear:
+          name: Guanti spettrali
+          desc: La trama in ectoplasma di questi guanti protegge le dita mentre ti
+            dedichi ai tuoi lavori artigianali.
+        spectralMitts:
+          name: Manopole spettrali
+          desc: Un paio di manopole intrecciate con ossa ed ectoplasma per consentire
+            movimenti rapidi e agili.
+        spectralVest:
+          desc: Questo gilet ti offre una protezione adeguata durante le tue attività
+            artigianali senza limitarti troppo nei movimenti, grazie alla robusta
+            imbottitura in schiuma che ne riveste la parte centrale.
+          name: Gilet spettrale
+        elderhideChaps:
+          name: Gambali in pelle antica
+          desc: I pantaloni realizzati in pelle antica offrono un'eccellente protezione
+            dalle intemperie.
+        spectralBreeches:
+          name: Pantaloni spettrali
+          desc: La cintura in osso di questi pantaloni tiene gli attrezzi saldamente
+            al loro posto grazie alle energie ectoplasmatiche intessute al loro interno,
+            per la tua comodità.
       carpentry:
         bectoSaw:
           name: Sega spettrale
@@ -1048,6 +1190,14 @@ singulars:
         tarsiliumSaw:
           name: Sega di tarsilio
           desc: I denti scuri simili all'ossidiana della sega sono pronti a mordere!
+        bambooToolbox:
+          desc: Una robusta cassetta degli attrezzi per la falegnameria, che rende
+            molto più facile trasportarli.
+          name: Cassetta degli attrezzi in bambù
+        pineToolbox:
+          desc: Una pratica cassetta degli attrezzi in pino per trasportare gli attrezzi
+            da falegname.
+          name: Cassetta degli attrezzi in pino
       crafting:
         bectoWrench:
           desc: Le ganasce ectoplasmiche di questa chiave sembrano sempre avere una
@@ -1260,6 +1410,39 @@ singulars:
           name: Collana con fiori di Spettracqua
           desc: Una composizione di fiori dall'aspetto cupo. Indossarla ti fa sentire
             un leggero legame con i defunti.
+        amuletOfTheSpider:
+          name: Amuleto del ragno
+          desc: Un amuleto scintillante che racchiude il potere di un ragno.
+      upgraded:
+        ironChefsHat:
+          desc: Questo cappello è più resistente e pesante di prima, ma ora puoi cucinare
+            piatti a tema di livello superiore.
+          name: Cappello da chef in ferro
+        brightCamoFacePaint:
+          desc: I colori per il trucco facciale sono stati migliorati per garantire
+            una maggiore durata e adattarsi a una gamma ancora più ampia di contesti.
+            Spero proprio che siano stati testati sugli animali.
+          name: Pittura facciale mimetica dai colori vivaci
+        tintedWoodworkingGlasses:
+          name: Occhiali colorati per il taglio del legno
+          desc: Ti sei rovinato gli occhiali da falegname... oh, aspetta, no, sono
+            belli. Non importa, questi sono fantastici.
+        extraCraftyPants:
+          name: Pantaloni super creativi
+          desc: Forse ti hanno messo i bastoni tra le ruote, ma era tutto previsto.
+            Adesso sono molto più scaltri.
+        goldenCuttingMat:
+          name: Tappetino da taglio dorato
+          desc: Il tappetino da taglio è stato migliorato non solo per avere un aspetto
+            più gradevole, ma anche per resistere ancora meglio agli errori di taglio.
+        gemTippedPliers:
+          name: Pinze con punta in gemma
+          desc: Le pinze sono state rinnovate con l'aggiunta di topazio e acquamarina
+            per migliorarne la presa e la funzionalità sui materiali lavorati.
+        comfyFishingChair:
+          name: Comoda sedia da pesca
+          desc: Ti sei procurato una sedia davvero comoda per pescare. Basta che non
+            ti addormenti mentre aspetti il prossimo abboccato.
   looted:
     equipmentSets:
       dimensional:
@@ -1339,6 +1522,14 @@ singulars:
         adventurersRing:
           name: Anello dell'Avventuriero
           desc: Un anello con lo stemma della Gilda degli Avventurieri.
+        adventuringSewingNeedle:
+          desc: Un ago da cucito con lo stemma della Gilda degli Avventurieri. Perfetto
+            per riparare i vestiti quando si è in viaggio.
+          name: Ago da cucito avventuroso
+        adventuringHuntingBow:
+          desc: Un arco da caccia con lo stemma della Gilda degli Avventurieri. Ti
+            aiuterà a cacciare nelle terre selvagge.
+          name: Arco da caccia dell'Avventuriero
     skilling:
       agility:
         exerciseHeadband:
@@ -1567,7 +1758,7 @@ singulars:
           name: Semplice padella
           desc: Questa padella non è antiaderente, ma ti tirerà fuori dai guai.
         ovenMittens:
-          name: Guanti da forno
+          name: Manopole da forno
           desc: Belli e caldi, ma non quanto le cose per cui ti serviranno.
         dullKnife:
           name: Coltello non affilato
@@ -1622,6 +1813,10 @@ singulars:
           name: Confezione di spezie
           desc: "Un'invenzione molto diffusa a Wrentmarkeen: uno zaino in cui è possibile
             riporre file di confezioni di spezie."
+        rottenEctoplasm:
+          name: Ectoplasma marcio (elemento di prova)
+          desc: Solo per i tester. Offre spazio illimitato nell'inventario come oggetto
+            collezionabile.
       crafting:
         candlehat:
           desc: 'È un cappello con una candela attaccata. Cos''altro si può desiderare?'
@@ -1789,9 +1984,10 @@ singulars:
           desc: Una comoda maglietta verde abbinata a un fazzoletto rosso da collo
             che ti fa sentire in sintonia con la natura.
         camouflageCape:
-          name: Cappa mimetica
-          desc: Potresti anche chiamarlo mantello dell'invisibilità, dato che ti rende
-            praticamente invisibile mentre vaghi alla ricerca di tesori.
+          name: Cappa di foglie
+          desc: Un mantello fatto interamente di foglie per aiutarti a immergerti
+            completamente nella raccolta. Probabilmente è un pericolo d'incendio,
+            ma puoi lasciarlo lì.
         foragingShirt:
           desc: Ti mantiene fresco quando cerchi cibo in ambienti caldi, ma caldo
             in ambienti freddi.
@@ -1975,7 +2171,7 @@ singulars:
           desc: Indossando questi guanti, puoi mettere le mani in una fornace ardente
             senza procurarti vesciche. Lo stesso non si può dire per le braccia, però.
         jarvonianPoker:
-          name: Poker di Jarvonia
+          name: Appendino di Jarvonia
           desc: Non è un gioco di carte, puoi tenere i vestiti addosso.
         fireResistantCloak:
           name: Mantello resistente al fuoco
@@ -2070,6 +2266,112 @@ singulars:
           name: Il monocolo di Dar Witt
           desc: Un cimelio di famiglia di Dar Witt, una delle famiglie più influenti
             del Porto di Nericanto.
+      tailoring:
+        simpleSewingNeedle:
+          name: Semplice ago da cucito
+          desc: Un ago davvero semplice, perfetto per i lavori di cucito di base.
+        precisionPins:
+          desc: Spille affilate in grado di impedire anche ai materiali più resistenti
+            di spostarsi mentre li modifichi.
+          name: Spilli di precisione
+        safetyScissors:
+          desc: Forbici non troppo affilate, per evitare che chi sta ancora imparando
+            a usarle correttamente si tagli.
+          name: Forbici di sicurezza
+        clingyMeasuringTape:
+          desc: Questo metro a nastro sembra aderire perfettamente a qualsiasi superficie
+            su cui lo si appoggi. È perfetto per prendere le misure, anche su se stessi.
+          name: Metro a nastro adesivo
+        silverScissors:
+          desc: Un paio di forbici affilate in argento in grado di tagliare con facilità
+            tessuti e altri materiali.
+          name: Forbici d'argento
+        pincushionBeret:
+          desc: Un berretto perfetto per tenere a posto le spille in eccesso senza
+            che ti diano fastidio sulla testa. La sua forma gli permette anche di
+            fungere da discreto paracadute.
+          name: Berretto a cuscinetto
+        markingChalk:
+          name: Gesso per segnare
+          desc: Gesso da disegno a scomparsa per tessuti. Ti consentirà di tracciare
+            linee precise senza rovinare il tessuto.
+        practicePins:
+          name: Spilli per esercitarsi
+          desc: Alcuni spilli che fissano facilmente i tessuti e che, al contrario,
+            rischiano meno di pungerti.
+        needlecase:
+          name: Astuccio per aghi che non si esaurisce mai
+          desc: Non importa quanti aghi da cucito ci metti in questo astuccio, sembra
+            che ci sia sempre spazio per altri.
+        fabricCuttingMat:
+          name: Tappetino da taglio in tessuto resistente
+          desc: Un tappetino in grado di resistere a tutti i colpi mancati e alle
+            palline che gli cadono sopra mentre ti alleni.
+        sewingGuidebook:
+          name: Guida al cucito
+          desc: Un libro dedicato a tutto ciò che riguarda il cucito e la sartoria.
+            Contiene anche alcuni esempi di tecniche di cucitura eseguite a regola
+            d'arte.
+        tailorsMoccasins:
+          name: Mocassini da sarto
+          desc: Calzature resistenti in pelle che proteggono i piedi dal formicolio.
+            Potrebbero persino impedire che si intorpidiscano.
+        keenEyeLenses:
+          name: Lenti per una visione nitida
+          desc: Si dice che questi occhiali aiutino a riconoscere le piante utilizzate
+            nella sartoria – o almeno ti facciano sembrare uno che le conosceva già
+            prima che diventassero di moda.
+      hunting:
+        trappersCape:
+          desc: Un mantello pesante che ti aiuta a nascondere leggermente la tua presenza
+            alle creature della zona, permettendo loro di cadere più facilmente nelle
+            tue trappole.
+          name: Cappa da cacciatore
+        scentMaskingSpray:
+          desc: Un liquido in flacone che può essere spruzzato e aiuta a mascherare
+            il proprio odore. Non chiediamo di cosa si tratti.
+          name: Spray per mascherare gli odori
+        huntingTripPack:
+          desc: Uno zaino piuttosto capiente, con tanto spazio per una battuta di
+            caccia. Dovrebbe contenere tutto quello che riesci a ricavare dalla tua
+            preda.
+          name: Zaino da caccia
+        flashyFieldKnife:
+          desc: Un ottimo coltello da campo che sembra dare ottimi risultati in qualsiasi
+            attività tu gli affidi durante le tue battute di caccia.
+          name: Coltello da campo appariscente
+        camoPants:
+          desc: Pantaloni mimetici che aiutano a nascondere le gambe tra il fogliame
+            e altri elementi dell'ambiente circostante. Non confonderli con l'abbigliamento
+            formale.
+          name: Pantaloni mimetici
+        skinnyFieldKnife:
+          name: Coltello da campo sottile
+          desc: Un coltello sottile che potrebbe servire per spellare e pulire la
+            selvaggina appena cacciata.
+        camoFacePaint:
+          name: Trucco mimetico per il viso
+          desc: Vernici mimetiche che dovrebbero risultare meno irritanti se applicate
+            sul viso. È inevitabile che finiscano negli occhi, dato che è difficile
+            vederci bene.
+        camoBoots:
+          name: Stivali mimetici
+          desc: Stivali mimetici che, una volta indossati, aiutano i piedi a mimetizzarsi
+            con l'ambiente circostante. Purtroppo, quando non li indossi, sembra che
+            tu sia destinato a perderne uno.
+        huntingBestiary:
+          name: Bestiario della caccia
+          desc: Un imponente volume dedicato a bestie, animaletti e creature strane
+            di ogni genere. Pagine di inestimabile valore riempiono il libro con illustrazioni,
+            descrizioni, abitudini e habitat.
+        camoShirt:
+          name: Camicia mimetica
+          desc: Una camicia mimetica che riesce a mimetizzarti bene praticamente in
+            qualsiasi ambiente. In qualche modo funziona bene anche sulla neve.
+        duckDecoy:
+          name: Esca per anatre
+          desc: Un'anatra finta che serve a distrarre la preda dalla tua presenza.
+            Probabilmente non vogliono semplicemente sembrare scortesi.
     versatile:
       backpack:
         desc: 'Uno zaino in pelle di alta qualità con tasche aggiuntive e molto spazio
@@ -2347,6 +2649,10 @@ singulars:
       ringOfHeron:
         name: Anello dell'Airone
         desc: Questo anello con sigillo è inciso con un airone in posizione di caccia.
+      rabbitEars:
+        name: Orecchie da coniglio
+        desc: Quando indossi questi, sembra che gli animali ti guardino in modo un
+          po’ diverso. Ti fanno sentire un po’ più agile. E anche più carino.
     achievements:
       ringOfHomesickness:
         desc: Questo anello ti ricorda che non c'è posto come casa tua.
@@ -2492,6 +2798,10 @@ singulars:
         name: Afferratore di tesori
         desc: Non è mai stato così facile raccogliere forzieri leggermente fuori portata
           da qualsiasi luogo mentre si fa qualsiasi cosa.
+      ghostTrapPack:
+        name: Pacchetto trappole per fantasmi
+        desc: Lo zaino ingombrante è dotato di un tubo che serve a catturare le particelle
+          fantasma.
     agGuildSpecials:
       ghostTrapPack:
         desc: Il grosso zaino è provvisto di un tubo che viene utilizzato per catturare
@@ -2553,6 +2863,16 @@ singulars:
         name: Giocattolo cigolante alieno
         desc: <i>"Il giocattolo preferito di un cucciolo di nome Emery. Quando lo
           tiene in mano, ti segue ovunque e ti aiuta a cercare il tesoro."</i>
+      weightedVest:
+        desc: '<i>"Mentre muovi i primi passi con il giubbotto addosso, un pensiero
+          ti attraversa la mente: il tuo corpo ora ha lo stesso peso della tua anima
+          indurita."</i>'
+        name: Giubbotto zavorrato
+      petalFinder:
+        name: Ricerca di petali
+        desc: "<i>La voce di Jas sussurra attraverso l'anello: “Rallenta e goditi
+          la passeggiata e il mondo che ti circonda. Alcune cose che vale la pena
+          scoprire arrivano quando non cammini da solo.”</i>"
     regional:
       jarvonia:
         frostTouchedGauntlets:
@@ -2564,8 +2884,8 @@ singulars:
           desc: Una piccola confezione che, una volta ruotata, si riscalda. Può anche
             essere riutilizzata!
         knittedMittens:
-          name: Guanti lavorati a maglia
-          desc: Questi guanti sono lavorati a maglia con diversi tipi di lana, creando
+          name: Manopole lavorate a maglia
+          desc: Questi manopole sono lavorate a maglia con diversi tipi di lana, creando
             splendidi motivi bianchi e blu.
         perfectSnowballs:
           name: Palle di neve perfette
@@ -3151,8 +3471,8 @@ singulars:
           file. Ne avrete visto la testa appesa al muro dell'Emporio di Frosthook.
         name: Squalo crudo
       rawCrab:
-        desc: Crostaceo molto diffuso, dal corpo corto e rotondo, con due occhi scuri
-          e piccoli e grandi artigli che usa per pizzicare. Ahia!
+        desc: Diffuso crostaceo dal corpo corto e arrotondato, con due occhietti scuri
+          e lucidi e grandi chele carnose, che usa per pizzicare. Ahi!
         name: Granchio crudo
       rawStingray:
         name: Trigone crudo
@@ -3318,7 +3638,7 @@ singulars:
           prende il nome, l'erbadiferro .
     hunting:
       animalMeat:
-        desc: Un pezzo di carne fresca, pronto per essere cucinato, essiccato o salato.
+        desc: Mangiare carne è un omicidio.
         name: Carne animale
       bones:
         name: Ossa
@@ -3340,6 +3660,15 @@ singulars:
         desc: Questo pezzo di pelliccia animale è morbido e caldo al tatto. Può essere
           trasformato in un capo di abbigliamento.
         name: Pelliccia animale
+      ectoScraps:
+        name: Resti di ectoplasma
+        desc: Questi brandelli sono come frammenti di ectoplasma, da cui si sprigiona
+          un'energia spettrale. Per intrecciarli avrai bisogno di un telaio maledetto.
+      unicornHorn:
+        name: Corno di unicorno
+        desc: Un corno affilato e appuntito. Potrebbe avere proprietà curative, oppure
+          servire semplicemente per scavare un pozzo. Magari potresti fissarlo a un
+          cavallo.
     tailoring:
       aerodynamicThread:
         name: Filo aerodinamico
@@ -3393,6 +3722,10 @@ singulars:
         name: Ciondolo ghiacciolo refrigerante
         desc: Il ciondolo a forma di ghiacciolo brilla luminoso alla luce. Un giorno
           potrebbe tornare utile come amuleto.
+      spiderTrinket:
+        name: Ciondolo a forma di ragno
+        desc: Il ciondolo a forma di ragno brilla alla luce. Un giorno potrebbe tornare
+          utile come amuleto.
     misc:
       glacierMap:
         desc: La mappa assomiglia alla parte settentrionale di Jarvonia. Segnato con
@@ -3440,6 +3773,20 @@ singulars:
         name: Targhetta specie invasive
         desc: Una targhetta metallica con l'immagine della bocca di una creatura simile
           a un verme.
+      rottenItem:
+        desc: Questo oggetto un tempo aveva una funzione, ma è stato rimosso dal gioco.
+          Ora è solo un oggetto marcio.
+        name: Articolo avariato
+      halfmawTeeth:
+        desc: Sono stati lasciati lì dei denti caduti, probabilmente sostituiti da
+          altri più robusti. La sede della Gilda degli Avventurieri di Swampost potrebbe
+          essere interessata a questi.
+        name: Denti di Halfmaw
+      halfmawScales:
+        name: Scaglie di Halfmaw
+        desc: Scaglie di rettile antiche e intatte, mutate da una creatura piuttosto
+          grande. La sede della Gilda degli Avventurieri di Swampost potrebbe essere
+          interessata a queste.
   collectibles:
     fromActivity:
       petrifiedBranch:
@@ -3631,6 +3978,14 @@ singulars:
         name: Quarzo rosa
         desc: Un pezzo di cristallo che brilla con una tonalità rosa più intensa.
           Sembra che dia potere alle gemme che lo circondano.
+      halfmawVenom:
+        name: Veleno di Halfmaw
+        desc: Una piccola fiala di veleno pericoloso proveniente dall'Halfmaw. Probabilmente
+          ha un buon sapore, ma con un retrogusto piuttosto amaro.
+      swampmanArticle:
+        name: Articolo sull'UomoPalude
+        desc: Una strana testimonianza secondo cui un uomo della palude sarebbe stato
+          visto lottare con gli alligatori nella palude e scagliarli contro gli halfling.
     visas:
       jarvonianLetterOfPassage:
         desc: Prova che è possibile attraversare il Passo Silenzioso provenendo da
@@ -3781,3 +4136,7 @@ singulars:
       name: Uovo di delfino
       desc: L'uovo di un delfino. Il colore acquatico lo nasconde bene sott'acqua.
         È incredibile che i genitori riescano a ritrovarli.
+    mummyEgg:
+      name: Uovo di mummia
+      desc: L'uovo di una mummia. Anche se è avvolto nelle bende, dovresti comunque
+        cercare di tenerlo al caldo. Chissà dove sarà la mamma?

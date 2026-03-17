@@ -32,6 +32,7 @@ singulars:
     notUnderwater: <object id="location_underwater" /> konumunda değilken.
     notAgility: <skill skill="agility"/> yapmıyorken.
     smeltRecipe: <object id="recipe_smelting" /> tarifi uygularken.
+    arrowsInInventory: Envanterinde <object id="arrows" /> bulundur.
   mainSkill:
     text: <skill skill="{skill}"/> yaparken.
   itemAnywhereWithYou:
@@ -180,3 +181,23 @@ singulars:
       <object id="{currentObj}" icon="false" /> kullanamazsın.
   recipeType:
     text: <object id="{obj}" /> tarifi uygularken.
+  craftingType:
+    text: <object id="{obj}" /> üretirken. <numberProgress current="{current}" max="{max}"
+      />
+    textSkill: <skill skill="{skill}" /> becerisiyle üretirken. <numberProgress current="{current}"
+      max="{max}" />
+  workEfficiencyAt:
+    text: En az %<numberProgress current="{current}" max="{max}" /> verime sahipken.
+    textMaximum: Azami verime sahipken. <numberProgress current="{current}" max="{max}"
+      />
+  petsHatched:
+    text: Herhangi bir <object id="pet_egg" />na sahipken. <numberProgress current="{current}"
+      max="{max}" />
+  skillTypeLevel:
+    text: Toplam <numberProgress current="{current}" max="{max}" /> <skillType type="{type}"/>
+      seviyesine ulaş.
+    textRelative: Azami <skillType type="{type}"/> seviyesinin %{percent} kadarına
+      ulaş. <numberProgress current="{current}" max="{max}" />
+  distinctKeywordItemInInventory:
+    text: Envanterinde <numberProgress current="{current}" max="{max}" /> adet <object
+      id="{obj}" /> bulundur.

@@ -437,7 +437,7 @@ singulars:
           per l'esplorazione subacquea.
       kelpDivingLegs:
         activityDesc: Trasformate le alghe in fibre morbide, poi le filate per ottenere
-          un filato. Utilizzando tecniche di lavorazione a maglia o tessitura, create
+          un filato. Utilizzando tecniche di lavorazione a maglia e tessitura, create
           pantaloni che garantiscono calore, galleggiabilità e libertà di movimento
           per le avventure subacquee.
         desc: Pantaloni caldi, flessibili e galleggianti realizzati con fibre di alghe
@@ -464,7 +464,7 @@ singulars:
         desc: Un indumento flessibile e galleggiante realizzato con fibre di alghe
           marine, progettato per facilitare l'esplorazione subacquea.
         activityDesc: Trasformi le alghe in fibre morbide, filandole con cura per
-          ottenere un filato. Utilizzando tecniche di lavorazione a maglia o tessitura,
+          ottenere un filato. Utilizzando tecniche di lavorazione a maglia e tessitura,
           crei un indumento simile a una maglia che offre calore e galleggiabilità
           nelle fredde profondità marine.
       hydriliumDivingHelm:
@@ -852,6 +852,21 @@ singulars:
           raffinato.
         activityDesc: Tagli i tronchi di ectoplasma, liberando le loro energie ectoplasmatiche
           che poi lavori e raffini.
+    tools:
+      pineToolbox:
+        name: Costruire una cassetta degli attrezzi in pino
+        desc: Metti a frutto le tue abilità di falegname per realizzare una cassetta
+          degli attrezzi in pino.
+        activityDesc: Rimodella le assi di pino in modo che si incastrino tra loro
+          formando una scatola per gli attrezzi. In questo modo il carico risulterà
+          un po' più leggero.
+      bambooToolbox:
+        desc: Metti a frutto le tue abilità di falegname per realizzare una cassetta
+          degli attrezzi in bambù.
+        activityDesc: Leviga e modella con cura le assi di bambù per ricomporle in
+          una splendida scatola. Questa cassetta degli attrezzi avrà una capienza
+          notevole. Non ti prenderemo in giro.
+        name: Costruire una cassetta degli attrezzi in bambù
   hunting:
     bows:
       elmHuntingBow:
@@ -865,10 +880,9 @@ singulars:
       oakHuntingBow:
         desc: Costruisci un robusto arco da caccia con il durame di una quercia.
         name: Costruisci un arco da caccia in quercia
-        activityDesc: Scegliete un pezzo di quercia resistente e lo modellate con
-          cura fino a trasformarlo in un arco da caccia. Ad ogni colpo, l'arco si
-          avvicina alla sua forma definitiva, uno strumento che vi sarà molto utile
-          durante la caccia.
+        activityDesc: "Scegli alcuni pezzi di quercia robusta e li modifichi con cura
+          fino a trasformarli in un arco da caccia. Ad ogni colpo, l'arco si avvicina
+          al completamento: uno strumento che ti sarà di grande aiuto durante la caccia."
       bambooHuntingBow:
         activityDesc: Con mano ferma, modifichi il bambù fino a dargli la forma di
           un arco elegante, la cui flessibilità promette un tiro fluido e preciso.
@@ -881,6 +895,18 @@ singulars:
           e pregiato del mogano.
         activityDesc: Con estrema precisione, modifichi il mogano fino a trasformarlo
           in un arco da caccia bello e letale.
+      birchHuntingBow:
+        name: Costruire un arco da caccia in betulla
+        desc: Costruisci un arco da caccia di base utilizzando il legno semplice di
+          una betulla.
+        activityDesc: Scegli con cura alcuni pezzi di legno di betulla e, con mano
+          ferma, li modifichi fino a formare un arco. Lo incordi poi con una corda
+          per creare un semplice strumento da caccia.
+      spectralHuntingBow:
+        desc: Crea un arco da caccia spettrale usando ossa ed ectoplasma.
+        name: Crea un arco da caccia spettrale
+        activityDesc: Una volta che sei riuscito a trasformarlo in un vero e proprio
+          filamento, usi alcune ossa per assemblare un arco e lo tendi con l'ectoplasma.
     traps:
       birdhouses:
         birchBirdhouse:
@@ -937,6 +963,13 @@ singulars:
           activityDesc: Con mani pazienti, trasformiamo le alghe in una rete resistente
             e flessibile. Ogni nodo promette una pesca abbondante, mentre immagini
             la vivace vita marina che presto riempirà le sue maglie.
+      boxtraps:
+        boxtrap:
+          name: Costruisci una trappola a scatola
+          desc: Costruisci una trappola a scatola pensata per catturare piccole prede
+            prima di smontarla.
+          activityDesc: Costruisci in fretta una trappola a forma di scatola abbastanza
+            robusta da catturare piccoli animali prima che si rompa.
     arrows:
       bronzeArrows:
         name: Costruire frecce di bronzo
@@ -982,6 +1015,11 @@ singulars:
         activityDesc: Con mani ferme, selezioni fibre resistenti e inizi il meticoloso
           processo di intrecciarle insieme. Ogni filo, accuratamente allineato, contribuisce
           alla resistenza e all'elasticità della corda.
+      strongBowstring:
+        name: Realizza una corda d'arco resistente
+        desc: Realizza una corda resistente per potenziare un arco robusto.
+        activityDesc: Intrecci fibre resistenti al vento, creando una corda resistente
+          e robusta.
   cooking:
     fish:
       cookedTrout:
@@ -1399,6 +1437,18 @@ singulars:
           e zenzero. Quindi, rosolate il pollo in padella fino a quando non sarà dorato
           e cotto. La glassa, una miscela di miele, salsa di soia e aglio, viene fatta
           sobbollire fino a quando non si addensa e poi versata sul pollo.
+      spicyMoray:
+        desc: Un'incredibile anguilla commestibile, in versione piccante.
+        name: Prepara una murena piccante
+        activityDesc: Rimuovi la testa all'anguilla e la tagli nel senso della lunghezza.
+          Dopodiché la condisci con pepe tritato e la cuoci alla griglia a fuoco vivo.
+      jelliedStreamEel:
+        name: Preparare l'anguilla in gelatina
+        desc: Un'anguilla di fiume sinuosa, tremolante e gelatinosa.
+        activityDesc: 'Si tagliano le anguille di fiume e si fanno bollire in un brodo
+          di ossa speziato. Una volta cotte, si lasciano raffreddare: in questo modo
+          il brodo di ossa si solidifica attorno alle anguille, dando vita a un piatto
+          davvero splendido.'
     misc:
       ectoplasm:
         name: Cucinare in ectoplasma
@@ -1431,16 +1481,16 @@ singulars:
       linen:
         name: Realizza un panno di lino
         desc: Intreccia fili sottili per ottenere un tessuto morbido e resistente.
-        activityDesc: Filate le fibre di lino in fili sottili, quindi intrecciateli
+        activityDesc: Filate le fibre fino a ottenere fili sottili, poi intrecciateli
           con cura per ottenere un tessuto di lino morbido e resistente. Ogni fase
-          richiede pazienza e precisione, poiché si tratta di trasformare materie
-          prime in un tessuto versatile.
+          richiede pazienza e precisione, mentre trasformate le materie prime in un
+          tessuto versatile.
       rootweaveMitts:
         activityDesc: Intrecci con cura strisce di fibre vegetali resistenti, modellandole
-          in un paio di guanti resistenti. L'intricato intreccio offre calore e protezione
-          dagli agenti atmosferici.
-        name: Realizza guanti con intreccio a radice
-        desc: Realizza un paio di guanti robusti e caldi con le radici.
+          in un paio di manopole resistenti. L'intricato intreccio offre calore e
+          protezione dagli agenti atmosferici.
+        name: Realizza manopole con intreccio a radice
+        desc: Realizza un paio di manopole robuste e calde con le radici.
       shadowquillTunic:
         activityDesc: Cuci con cura piume scure come l'inchiostro e morbido tessuto
           vellutato, modellandoli in una tunica affascinante. Le piume aggiungono
@@ -1479,10 +1529,10 @@ singulars:
         desc: Realizza un giubbotto protettivo per aspiranti artigiani.
         name: Realizza un gilet da apprendista
       spikescaleMitts:
-        desc: Realizza un paio di guanti protettivi ed eleganti.
-        name: Realizza guanti con punte metalliche
+        desc: Realizza un paio di manopole protettive ed eleganti.
+        name: Realizza manopole con punte metalliche
         activityDesc: Cuci con cura pezzi di pelle resistente e squamosa, modellandoli
-          in un paio di guanti resistenti. Le squame offrono un'eccellente protezione
+          in un paio di manopole resistenti. Le squame offrono un'eccellente protezione
           contro graffi e ferite lievi, mentre il motivo unico aggiunge un tocco di
           stile al tuo abbigliamento.
       shadowquillMitts:
@@ -1552,10 +1602,9 @@ singulars:
       elderhideMitts:
         activityDesc: Prendi la pelle preparata e inizi il meticoloso processo di
           modellatura e cucitura. Ogni punto ti avvicina al completamento di un paio
-          di guanti caldi e resistenti.
-        desc: Crea un paio di robusti guanti in pelle antica, realizzati con pelle
-          resistente.
-        name: Realizza guanti in pelle antica
+          di manopole calde e resistenti.
+        desc: Crea un paio di robuste manopole in pelle antica.
+        name: Realizza manopole in pelle antica
       rootweaveChaps:
         activityDesc: Intrecci con cura strisce di fibre vegetali resistenti, modellandole
           in un paio di robusti gambali. Questi coprigambe dai colori terrosi offrono
@@ -1606,6 +1655,109 @@ singulars:
         activityDesc: Stendi la pelle e inizi il meticoloso processo di taglio e modellatura
           dei pezzi. Ogni taglio è preciso, per garantire una vestibilità perfetta.
           Con mani ferme, cuci insieme i pezzi, creando un capo resistente e protettivo.
+      toughLinen:
+        desc: Intreccia fibre robuste per ottenere un tessuto solido e resistente.
+        name: Realizza un tessuto di lino resistente
+        activityDesc: Filare fibre resistenti per ottenere fili robusti, che vengono
+          poi trasformati in teli di lino resistente. Si tratta di un processo che
+          trasforma materiali così resistenti in un tessuto robusto, che tuttavia
+          mantiene una buona tenuta.
+      tattyHandwraps:
+        name: Realizza delle fasce per le mani
+        desc: Realizza un paio di fasce per le mani semplici.
+        activityDesc: Hai realizzato un paio di semplici fasce per le mani utilizzando
+          un tessuto ruvido. Pur essendo piuttosto grezze, queste fasce svolgeranno
+          la loro funzione di base.
+      tattySkirt:
+        name: Realizza una gonna a strappi
+        desc: Realizza una gonna semplice.
+        activityDesc: Cuci insieme alcuni pezzi di stoffa per creare una gonna resistente.
+          Anche se dall'aspetto grezzo, questa gonna ti proteggerà dalle intemperie.
+      tattyGarb:
+        name: Crea un abito logoro
+        desc: Crea un abito semplice e logoro.
+        activityDesc: Cuci insieme dei ritagli di stoffa per creare un indumento pratico
+          da indossare sul busto. Anche se un po’ grezzo, ti garantirà il necessario.
+      shadowquillBracers:
+        name: Realizza i bracciali con Penne d'Ombra
+        desc: Crea un paio di bracciali eleganti e misteriosi.
+        activityDesc: Cuci con cura insieme pezzi di tessuto morbido e vellutato,
+          modellandoli fino a formare un paio di eleganti bracciali. La tonalità scura
+          e profonda e il delicato luccichio del tessuto conferiscono a questi bracciali
+          un'aria misteriosa e affascinante.
+      shadowquillShorts:
+        name: Realizza dei pantaloncini con Penne d'Ombra
+        desc: Realizza un paio di calze eleganti e discrete.
+        activityDesc: Cuci con cura insieme pezzi di tessuto morbido e vellutato,
+          modellandoli fino a ottenere un paio di eleganti pantaloncini. La tonalità
+          scura e profonda e il delicato luccichio del tessuto conferiscono a questi
+          pantaloncini un'aria misteriosa e affascinante.
+      shadowquillPlastron:
+        name: Realizza un plastron con Penne d'Ombra
+        desc: Realizza un plastron leggero e arioso, perfetto per chi cerca stile
+          e comodità.
+        activityDesc: Con cura, unisci piume scure come l'inchiostro e un tessuto
+          morbido e vellutato, dando loro forma per creare un plastron dal fascino
+          inquietante. Le piume aggiungono un tocco di eleganza gotica, mentre il
+          tessuto offre calore e comfort.
+      aerofibrilBracers:
+        name: Realizza dei bracciali in aerofibra
+        desc: Realizza un paio di bracciali leggeri e isolanti.
+        activityDesc: Intrecciando con cura le sottili fibre di aerofibra, un materiale
+          leggero e isolante, questi bracciali garantiscono un calore eccezionale
+          senza appesantire.
+      aerofibrilShorts:
+        name: Realizza pantaloncini in aerofibra
+        desc: Realizza un paio di coprigambe leggeri e isolanti.
+        activityDesc: Sono realizzati intrecciando con cura sottili fibre di aerofibra,
+          un materiale leggero e isolante. Questi pantaloncini offrono un calore eccezionale
+          senza appesantire, rendendoli perfetti per chi cerca comfort e protezione.
+      aerofibrilPlastron:
+        name: Realizzare un plastron in aerofibra
+        desc: Realizza un plastron leggero.
+        activityDesc: Le delicata aerofibra viene intrecciata per creare un plastron
+          leggero e isolante. Questo capo leggero offre calore senza appesantire,
+          perfetto per chi cerca comfort e stile.
+      spectralHandwear:
+        name: Realizza guanti spettrali
+        desc: Crea dei guanti spettrali e raccapriccianti.
+        activityDesc: Prendi alcune ossa e le intrecci con dell’ectoplasma, modellandole
+          per proteggerti, pur mantenendo la libertà di movimento delle dita per svolgere
+          lavori artigianali.
+      spectralBreeches:
+        name: Realizzare calzone spettrali
+        desc: Crea un paio di calzoni spettrali.
+        activityDesc: Intrecci un po' di ectoplasma e vi inserisci alcune ossa per
+          dargli sostegno, creando così un capo di abbigliamento artigianale e dinamico
+          per le gambe.
+      spectralVest:
+        name: Realizza un gilet spettrale
+        activityDesc: Si parte da alcune ossa come base attorno alle quali intrecciare
+          l'ectoplasma, creando un gilet adatto agli artigiani.
+        desc: Crea un gilet spettrale con ossa ed ectoplasma.
+    tools:
+      silverSewingNeedle:
+        name: Realizza un ago da cucito d'argento
+        activityDesc: Con grande cura, riesci ad aggiungere dell'argento all'ago da
+          cucito per migliorarlo e farlo brillare.
+        desc: Realizza un ago da cucito d'argento lucido ed elegante.
+      goldenSewingNeedle:
+        name: Realizza un ago da cucito dorato
+        desc: Realizza un ago da cucito dorato, splendido e maestoso.
+        activityDesc: Con la dovuta cura, è possibile applicare dell'oro all'ago da
+          cucito per rinforzarlo e renderlo brillante.
+      spectralSewingNeedle:
+        name: Crea un ago da cucito spettrale
+        desc: Crea un ago da cucito spettrale, al tempo stesso raccapricciante e aggraziato.
+        activityDesc: Comprimete le ossa fino a ottenere una lamella perfetta da usare
+          come ago da cucito e intrecciate l'ectoplasma per ricavarne il filo.
+    misc:
+      ectoplasm:
+        name: Trasformare in ectoplasma
+        activityDesc: Intrecci i frammenti di ectoplasma, unendo le loro energie ectoplasmatiche
+          che hai lavorato e perfezionato.
+        desc: Unire i frammenti di ectoplasma, trasformandoli in una forma materiale
+          raffinata.
   trinketry:
     gems:
       shapeRuby:
@@ -1844,6 +1996,12 @@ singulars:
           collana di fiori.
         activityDesc: Disponi le ossa e le unisci con i fiori del bacio della vedova
           per formare una collana macabra.
+      amuletOfTheSpider:
+        name: Crea un amuleto a forma di ragno
+        desc: Crea un ciondolo a forma di ragno.
+        activityDesc: "Inserisci il ciondolo a forma di ragno nell'amuleto d'oro e
+          d'argento: si incastra alla perfezione. Ci vuole un po' di tempo, ma il
+          risultato sembra utile per la sartoria."
   foraging:
     other:
       mangroveBasket:
@@ -1851,3 +2009,44 @@ singulars:
         desc: Trasformare i cesti in cesti di mangrovia
         activityDesc: Combini il cesto per la legna e il cesto grande, potenziandolo
           per poterlo usare in entrambe le abilità.
+  upgrades:
+    tintedWoodworkingGlasses:
+      desc: Migliora gli occhiali da falegnameria, rendendone le lenti più scure.
+      name: Occhiali da lavoro colorati per la lavorazione del legno
+      activityDesc: Per prima cosa smonta gli occhiali da taglio del legno, conservando
+        la montatura. Poi sciogli il vetro, mescolandolo con materiali scuri e aggiungendo
+        una piccola quantità di tarsilio per scurire ulteriormente il composto. Il
+        risultato è un paio di occhiali da sole dal look alla moda e professionale.
+    extraCraftyPants:
+      name: Crea dei pantaloni davvero originali
+      desc: Migliora i pantaloni artigianali con alcuni strumenti.
+      activityDesc: Combina miracolosamente i pantaloni da artigiano con il bastone
+        scivolante e la chiave inglese di base per creare un paio di pantaloni da
+        artigiano ancora più ingegnosi.
+    ironChefsHat:
+      name: Realizza un cappello da chef in ferro
+      desc: Ravviva il tuo cappello da cuoco con dello spago erbadiferro.
+      activityDesc: Con lo spago di erba ferrosa dai al cappello da cuoco una nuova
+        forma più alta, rendendolo più resistente e pesante.
+    goldenCuttingMat:
+      name: Crea un tappetino da taglio dorato
+      desc: Ravviva un tappetino da taglio in tessuto resistente con un tocco dorato.
+      activityDesc: Rivesti il tappetino da taglio con strati d’oro per dargli una
+        splendida lucentezza che non vedrai l’ora di rovinare accidentalmente in seguito.
+    brightCamoFacePaint:
+      name: Crea un trucco facciale mimetico dai colori vivaci
+      desc: Ravviva il trucco mimetico con dei fiori dai colori vivaci.
+      activityDesc: Macina i petali di ogni fiore e mescolali ai tuoi colori mimetici
+        per il viso per conferire loro tonalità più vivaci.
+    gemTippedPliers:
+      name: Crea delle pinze con punte in pietra preziosa
+      desc: Abbellisci delle graziose pinze con alcune pietre preziose.
+      activityDesc: Rimuovi la vecchia testa della pinza e rimodelli le gemme per
+        sostituirle e renderla più resistente di prima.
+    comfyFishingChair:
+      name: Realizza una comoda sedia da pesca
+      desc: Trasforma un robusto poggia-canna in qualcosa di speciale con alcune assi
+        e della pelle.
+      activityDesc: Si riesce a tendere la pelle lungo le assi rimodellate fino a
+        formare una comoda seduta portatile, trasformando il poggia-canna in una delle
+        gambe.

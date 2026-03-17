@@ -5,81 +5,123 @@ singulars:
       requirement: Richiede un<object id="fish" />.
       requirementLevel: Richiede un pesce che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Può essere utilizzato in diverse <object id="cooking" /> ricette. Ingrediente
+        di base ottenuto tramite <object id="fishing" />.
     logs:
       name: Tronco
       requirement: Richiede un<object id="logs" />.
       requirementLevel: Richiede un tronco che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Può essere trasformato in un <object id="plank" />. Ingrediente base ottenuto
+        da <object id="woodcutting" />.
     plant:
       name: Pianta
       requirement: Richiede una<object id="plant" />.
       requirementLevel: Richiede una pianta che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Può essere utilizzato in varie ricette <skillType type="artisan" />. Ingrediente
+        base ottenuto tramite <object id="foraging" />.
     ore:
       name: Minerale
       requirement: Richiede un<object id="ore" />.
       requirementLevel: Richiede un minerale che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Può essere trasformato in un <object id="bar" />. Ingrediente base ottenuto
+        da <object id="mining" />.
     nugget:
       requirement: Richiede una<object id="nugget" />.
       name: Pepita
       requirementLevel: Richiede una pepita che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Può essere trasformato in un <object id="bar" />. Ingrediente base ottenuto
+        da <object id="mining" />.
     bar:
       name: Lingotto
       requirement: Richiede un<object id="bar" />.
       requirementLevel: Richiede un lingotto che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Può essere utilizzato in varie ricette <object id="smithing" /> e <skillType
+        type="crafting" />. Ottenuto dalla lavorazione di <object id="ore" />.
     plank:
       name: Tavola
       requirement: Richiede una<object id="plank" />.
       requirementLevel: Richiede una tavola che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Può essere utilizzato in diverse ricette <object id="crafting" />. Ottenuto
+        dalla lavorazione di <object id="logs" />.
     gem:
       name: Gemma
       requirement: Richiede una<object id="gem" />.
       requirementLevel: Richiede una gemma che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Può essere utilizzato in diverse ricette <object id="trinketry" />.
     roughGem:
       name: Gemma grezza
       requirement: Richiede una<object id="rough_gem" />.
       requirementLevel: Richiede una gemma grezza che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Può essere trasformato in un <object id="cut_get" />. Ingrediente base
+        ottenuto da <object id="mining" />.
     cutGem:
       name: Gemma tagliata
       requirement: Richiede una<object id="cut_gem" />.
       requirementLevel: Richiede una gemma tagliata che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Può essere utilizzato in diverse ricette <object id="trinketry" />. Si
+        ottiene dalla lavorazione di una <object id="rough_gem" />.
     mushroom:
       name: Fungo
       requirement: Richiede un<object id="mushroom" />.
       requirementLevel: Richiede un fungo che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Ti porteranno in un mondo tutto nuovo! I funghi vengono utilizzati in
+        diverse <object id="cooking" /> ricette.
     processed:
       requirement: Richiede un materiale<object id="processed" />.
       name: Processato
       requirementLevel: Richiede un materiale lavorato che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Un materiale ottenuto dalla lavorazione di una materia prima, come una
+        barra o una tavola.
     ingredient:
       name: Ingrediente
       ingredient: Richiede un<object id="ingredient" />.
       requirementLevel: Richiede un ingrediente che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Utilizzati come ingredienti nelle ricette.
     trinket:
       name: Gioiello
       requirement: Requires an <object id="trinket" />.
       requirementLevel: Richiede un gioiello che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: I ciondoli vengono utilizzati in varie <object id="trinketry" /> ricette.
     misc:
       requirement: Richiede un elemento <object id="misc" />.
       requirementLevel: Richiede un oggetto vario che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
       name: Varie.
+      desc: Un ingrediente versatile che può essere utilizzato in diverse ricette.
     offcut:
       name: Ritagli
       requirement: Richiede un <object id="offcut" />.
       requirementLevel: Richiede un ritaglio che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno scarto è un pezzo di materiale avanzato che può essere trasformato
+        in nuovi materiali.
+    crustacean:
+      requirementLevel: Richiede un crostaceo che abbia almeno <keywordRequirements
+        /> tra i propri requisiti.
+      name: Crostaceo
+      desc: Un mollusco che può essere utilizzato in diverse <object id="cooking"
+        /> ricette.
+      requirement: È necessario un <object id="crustacean" />.
+    fabric:
+      name: Tessuto
+      desc: Un pezzo di tessuto che viene solitamente utilizzato nelle <object id="tailoring"
+        /> ricette.
+      requirement: È necessario <object id="fabric" />.
+      requirementLevel: Richiede un tessuto che soddisfi almeno i requisiti specificati
+        in <keywordRequirements />.
   tools:
     fishing:
       name: Pesca
@@ -91,21 +133,29 @@ singulars:
       requirement: Richiede una<object id="fishingCage" />.
       requirementLevel: Richiede una nassa che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Per la pesca in gabbia sono necessarie delle gabbie. Devono essere attrezzate
+        per la cattura dei pesci.
     fishingNet:
       name: Rete da pesca
       requirement: Richiede una<object id="fishingNet" />.
       requirementLevel: Richiede una rete da pesca che abbia almeno <keywordRequirements
         /> tra i suoi requisiti.
+      desc: Per la pesca con le reti sono necessarie delle reti. È necessario disporre
+        dell'attrezzatura necessaria per catturare i pesci.
     fishingRod:
       name: Canna da pesca
       requirement: Richiede una<object id="fishingRod" />.
       requirementLevel: Richiede una canna da pesca che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Per la pesca con la canna da pesca sono necessarie delle canne da pesca.
+        È necessario essere attrezzati per catturare i pesci.
     fishingSpear:
       name: Fiocina da pesca
       requirement: Richiede una<object id="fishingSpear" />.
       requirementLevel: Richiede una fiocina da pesca che abbia almeno <keywordRequirements
         /> tra i suoi requisiti.
+      desc: Per la pesca subacquea sono necessarie le fiocine. È necessario equipaggiarsene
+        per catturare i pesci.
     tool:
       name: Strumento
       requirement: Richiede un <object id="tool" /> equipaggiato.
@@ -116,176 +166,274 @@ singulars:
       requirement: Richiede un'<object id="woodcuttingHatchet" />.
       requirementLevel: Richiede un'accetta che abbia almeno <keywordRequirements/>
         nei suoi requisiti.
+      desc: Le asce sono necessarie per tagliare la legna. È necessario averne una
+        per abbattere gli alberi.
     ruler:
       name: Righello
       requirement: Richiede un<object id="ruler" />.
       requirementLevel: Richiede un righello che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno strumento di misurazione utilizzato per effettuare misurazioni precise.
+        Utile per <object id="carpentry" />.
     magnetic:
       name: Magnetico
       requirement: Richiede un oggetto <object id="magnetic" /> equipaggiato.
       requirementLevel: Richiede un oggetto magnetico che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Molto interessante. Alcune attività richiedono oggetti dotati di proprietà
+        magnetiche.
     cookingSpices:
       name: Spezie
       requirement: Richiede delle<object id="cookingSpices" />.
       requirementLevel: Richiede spezie che abbiano almeno <keywordRequirements />
         nei propri requisiti.
+      desc: Un tempo era molto costoso. Oggi è utile in cucina.
     pickaxe:
       requirement: Richiede un<object id="pickaxe" />.
       name: Piccone
       requirementLevel: Richiede un piccone che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: I picconi sono necessari per l'estrazione mineraria. Devono essere equipaggiati
+        per estrarre minerali e gemme.
     cuttingBoard:
       requirement: Richiede un<object id="cuttingBoard" />.
       name: Tagliere
       requirementLevel: Richiede un tagliere che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Si usa come piano di lavoro per tagliare gli ingredienti.
     localMap:
       requirement: Richiede una<object id="localMap" />.
       name: Mappa locale
       requirementLevel: Richiede una mappa locale che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Fornisce informazioni su una specifica area del mondo, garantendo dei
+        bonus in quell'area.
     knife:
       requirement: Richiede un<object id="knife" />.
       name: Coltello
       requirementLevel: Richiede un coltello che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: È affilato, quindi fai attenzione alle dita! Utile per tagliare oggetti
+        e, quindi, per <object id="cooking" />.
     magnifyingLense:
       name: Lente d'ingrandimento
       requirement: Richiede una<object id="magnifyingLense" />.
       requirementLevel: Richiede una lente di ingrandimento che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Le lenti di ingrandimento sono utili per alcune abilità <skillType type="artisan"/>.
     saw:
       requirement: Richiede una<object id="saw" />.
       name: Sega
       requirementLevel: Richiede una sega che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Le seghe vengono utilizzate principalmente nella <object id="carpentry"
+        /> e garantiscono dei bonus a tale abilità.
     cookingPan:
       name: Padella da cucina
       requirement: Richiede un <object id="cookingPan" /> equipaggiato.
       requirementLevel: Richiede una padella che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Ottimo per mescolare il cibo! Le pentole conferiscono bonus all'abilità
+        <object id="cooking" />.
     craftingTool:
       requirement: Richiede uno<object id="craftingTool" />.
       name: Strumento da artigianato
       requirementLevel: Richiede uno strumento di creazione che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Gli attrezzi manuali comprendono chiavi inglesi e cacciaviti.
     agilityTool:
       requirement: Richiede uno<object id="agilityTool" />.
       name: Strumento per l'agilità
       requirementLevel: Richiede uno strumento di agilità che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno strumento utilizzato per le attività di agilità.
     huntingBow:
       requirement: Richiede un<object id="huntingBow" />.
       name: Arco da caccia
       requirementLevel: Richiede un arco da caccia che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Un arco utilizzato per <object id="hunting" /> la caccia agli animali
+        (e ad altre cose che potrebbero infastidirti).
     logSplitter:
       requirement: Richiede uno<object id="item_log_splitter" />.
       name: Spaccalegna
       requirementlevel: Richiede uno spaccalegna che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno strumento che può essere utilizzato per <object id="woodcutting" />
+        oltre alle asce.
     carpentryTool:
       requirement: Richiede uno<object id="carpentryTool" />.
       name: Strumento da falegnameria
       requirementLevel: Richiede uno strumento da falegnameria che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Gli attrezzi da falegnameria comprendono seghe e scalpelli.
     fishingLure:
       name: Esca
       requirement: Richiede un'<object id="fishingLure" />.
       requirementLevel: Richiede un'esca da pesca che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Puoi usare un'esca artificiale per attirare i pesci più facilmente.
     fishingTool:
       name: Strumento da pesca
       requirement: Richiede uno<object id="fishingTool" /> correlato.
       requirementLevel: Richiede uno strumento correlato alla pesca che abbia almeno
         <keywordRequirements /> nei suoi requisiti.
+      desc: Gli attrezzi da pesca comprendono canne da pesca, fiocine, reti e gabbie.
     cookingTool:
       name: Strumento da cucina
       requirement: Richiede uno<object id="cookingTool" />.
       requirementLevel: Richiede uno strumento di cottura che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Gli utensili da cucina comprendono pentole, coltelli e taglieri.
     cookingKnife:
       name: Coltello da cucina
       requirement: Richiede un<object id="cookingKnife" />.
       requirementLevel: Richiede un coltello da cucina che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: I coltelli da cucina servono a tagliare gli ingredienti per cucinare.
     screwdriver:
       name: Cacciavite
       requirement: Richiede un<object id="screwdriver" />.
       requirementLevel: Richiede un cacciavite che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: I cacciaviti vengono utilizzati in <object id="crafting" /> e forniscono
+        bonus per quell'abilità.
     foragingTool:
       name: Strumento da raccolta
       requirement: Richiede uno<object id="foragingTool" />.
       requirementLevel: Richiede uno strumento di raccolta che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno strumento utilizzato per la raccolta di cibo.
     miningTool:
       name: Strumento da estrazione mineraria
       requirement: Richiede uno<object id="miningTool" />.
       requirementLevel: Richiede uno strumento minerario che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno strumento utilizzato nelle attività minerarie.
     woodcuttingTool:
       name: Strumento per tagliare il legno
       requirement: Richiede uno<object id="woodcuttingTool" />.
       requirementLevel: Richiede uno strumento per tagliare la legna che abbia almeno
         <keywordRequirements /> nei suoi requisiti.
+      desc: Uno strumento utilizzato per la taglio del legno.
     huntingTrap:
       name: Trappola da caccia
       requirement: Richiede una<object id="huntingTrap" />.
       requirementLevel: Richiede una trappola da caccia che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Una trappola utilizzata per la <object id="hunting" /> caccia.
     sickle:
       name: Falce
       requirement: Richiede una <object id="sickle" /> equipaggiata.
       requirementLevel: Richiede una falce che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Uno strumento di raccolta utilizzato in <object id="foraging" />.
     goldPan:
       name: Padella per l'oro
       requirement: Richiede una <object id="goldPan" /> equipaggiato.
       requirementLevel: Richiede una padella per l'oro che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Setacci resistenti utilizzati per separare i metalli preziosi dai sedimenti
+        presenti nell'acqua.
     sander:
       name: Levigatrice
       requirement: Richiede una <object id="sander" /> equipaggiata.
       requirementLevel: Richiede una levigatrice che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno strumento utilizzato per levigare le superfici. Utile per <object
+        id="trinketry" />.
     chisel:
       requirementLevel: Richiede uno scalpello che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
       name: Scalpello
       requirement: Richiede un <object id="chisel" /> equipaggiato.
+      desc: Gli scalpelli vengono utilizzati nei settori <object id="carpentry" />
+        e <object id="trinketry" /> e garantiscono dei bonus a queste abilità.
     trinketryTool:
       name: Strumento per oreficeria
       requirement: Richiede un <object id="trinketryTool" /> equipaggiato.
       requirementLevel: Richiede uno strumento per oreficeria che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno strumento utilizzato per le attività di bigiotteria.
     cookingPot:
       name: Pentola
       requirement: Richiede una <object id="cookingPot" /> equipaggiata.
       requirementLevel: Richiede una pentola che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Strumenti utili per <object id="cooking" />. Noto anche per la sua abilità
+        nel riconoscere i bollitori.
     smithingHammer:
       name: Martello da fabbro
       requirement: Richiede un <object id="smithingHammer" /> equipaggiato.
       requirementLevel: Richiede un martello da fabbro che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Un martello pesante utilizzato per modellare il metallo. Utile per <object
+        id="smithing" />.
     smithingTool:
       name: Strumento da fabbro
       requirement: Richiede un <object id="smithingTool" /> equipaggiato.
       requirementLevel: Richiede uno strumento da fabbro che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno strumento utilizzato nelle attività di fabbro.
     wrench:
       name: Chiave inglese
       requirement: Richiede una <object id="wrench" /> equipaggiata.
       requirementLevel: Richiede una chiave inglese che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Uno strumento utilizzato per stringere o allentare bulloni e dadi. Utile
+        per <object id="crafting" />.
     skillBook:
       name: Libro delle abilità
       requirement: Richiede un <object id="skillBook" /> equipaggiato.
       requirementlevel: Richiede un libro di abilità che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Conferisce sia un bonus che una penalità a una determinata abilità.
+    pliers:
+      requirementLevel: Richiede pinze che abbiano almeno <keywordRequirements />
+        tra i requisiti.
+      requirement: È necessario equipaggiare <object id="pliers" />.
+      name: Pinze
+      desc: Le pinze servono per afferrare e piegare con precisione. Utili per <object
+        id="trinketry" />.
+    toolbox:
+      name: Cassetta degli attrezzi
+      desc: Le cassette degli attrezzi servono a tenere in ordine i vari attrezzi.
+        Utili per le competenze <skillType type="artisan" />.
+      requirement: Richiede una <object id="toolbox" /> equipaggiata
+      requirementLevel: Richiede una cassetta degli attrezzi che includa almeno <keywordRequirements
+        /> tra i propri requisiti.
+    birdhouse:
+      desc: Le casette per uccelli potrebbero essere aggiunte al gioco in un secondo
+        momento.
+      requirementLevel: Richiede una casetta per uccelli che abbia almeno <keywordRequirements
+        /> tra i propri requisiti.
+      name: Casetta per uccelli
+      requirement: È necessario un elemento <object id="birdhouse" />.
+    pins:
+      desc: Le spille vengono utilizzate per la <object id="tailoring" />.
+      name: Spille
+      requirement: È necessario che sia equipaggiato <object id="pins" />.
+      requirementLevel: Richiede che le spille abbiano almeno <keywordRequirements
+        /> tra i propri requisiti.
+    scissors:
+      desc: Le forbici servono per tagliare. Utili per <object id="tailoring" />.
+      name: Forbici
+      requirement: È necessario equipaggiare <object id="scissors" />.
+      requirementLevel: Richiede forbici che abbiano almeno <keywordRequirements />
+        tra i requisiti.
+    cuttingMat:
+      requirementLevel: Richiede un tappetino da taglio che abbia almeno <keywordRequirements
+        /> tra i propri requisiti.
+      name: Tappetino da taglio
+      desc: I tappetini da taglio sono utili per <object id="tailoring" />.
+      requirement: È necessario che sia equipaggiato <object id="cuttingMat" />.
+    needle:
+      name: Ago
+      desc: Uno strumento utilizzato per cucire. Utile per <object id="tailoring"
+        />.
+      requirement: È necessario disporre di un <object id="needle" />.
+      requirementLevel: Richiede un ago che abbia almeno <keywordRequirements /> tra
+        i propri requisiti.
   recipes:
     skills:
       cooking:
@@ -330,36 +478,48 @@ singulars:
       requirementLevel: Richiede attrezzatura da arrampicata che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
       requirement: Richiede <object id="climbingTool" /> equipaggiato.
+      desc: L'attrezzatura da arrampicata consente di raggiungere scorciatoie nelle
+        zone montuose ed è indispensabile per determinate attività di arrampicata.
     amulet:
       name: Amuleto
       requirement: Richiede un <object id="item_amulet" /> equipaggiato.
       requirementLevel: Richiede un amuleto che abbia almeno un <keywordRequirements
         /> nei suoi requisiti.
+      desc: Gli amuleti si indossano al collo.
     basket:
       name: Cestino
       requirement: Richiede un <object id="basket" /> equipaggiato.
       requirementLevel: Richiede un cestino che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: I cestini sono oggetti che ti consentono di trasportare più oggetti nel
+        tuo inventario.
     ring:
       name: Anello
       requirementLevel: Richiede un anello che abbia almeno un <keywordRequirements
         /> nei suoi requisiti.
       requirement: Richiede un <object id="item_ring" /> equipaggiato.
+      desc: Si infila al dito.
     frisbee:
       requirement: Richiede un <object id="frisbee" /> equipaggiato.
       name: Disco Ghiacciato
       requirementLevel: Richiede un disco ghiacciato che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Gli skydisc vengono utilizzati per alcune attività sportive, come lo skydisc
+        golf.
     skis:
       name: Sci
       requirement: Richiede <object id="skis" /> equipaggiati.
       requirementLevel: Richiede sci che abbiano almeno <keywordRequirements /> nei
         loro requisiti.
+      desc: Gli sci ti permettono di spostarti nelle zone innevate e di sbloccare
+        scorciatoie a Jarvonia. Sono inoltre indispensabili per alcune attività invernali.
     lifeVest:
       requirement: Richiede un <object id="lifevest" /> equipaggiato.
       name: Giubbotto di salvataggio
       requirementLevel: Richiede un giubbotto di salvataggio che abbia almeno un <keywordRequirements
         /> nei suoi requisiti.
+      desc: Ti tengono a galla in acqua! A bordo di un'imbarcazione è obbligatorio
+        indossare il giubbotto di salvataggio (per evitare di annegare).
     skillingGear:
       requirement: Richiede equipaggiato <object id="skillingGear" />.
       name: Attrezzatura per l'addestramento
@@ -370,124 +530,159 @@ singulars:
       requirement: Richiede un <object id="item_socks" /> equipaggiato.
       requirementLevel: Richiede calzini che abbiano almeno <keywordRequirements />
         nei loro requisiti.
+      desc: Sono disponibili in tanti colori e fantasie. Trovare calzini spaiati può
+        aiutarti a sbloccare un obiettivo.
     weapon:
       name: Arma
       requirement: Richiede un <object id="weapon" /> equipaggiato.
       requirementLevel: Richiede un'arma che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Ottimo in attacco, e quindi anche in difesa.
     shield:
       name: Scudo
       requirement: Richiede un <object id="shield" /> equipaggiato.
       requirementLevel: Richiede uno scudo che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Ottimo per una superficie ampia da dipingere e per resistere agli urti.
     arrows:
       name: Frecce
       requirement: Richiede l'equipaggiamento <object id="arrows" />.
       requirementLevel: Richiede frecce che abbiano almeno <keywordRequirements />
         nei loro requisiti.
+      desc: L'uso dell'arco richiede frecce come munizioni durante la caccia o il
+        combattimento.
     bellows:
       name: Soffietto
       requirement: Richiede l'equipaggiamento <object id="bellows" />.
       requirementLevel: Richiede soffietti che abbiano almeno <keywordRequirements
         /> nei loro requisiti.
+      desc: I mantici consentono di alimentare il fuoco con ossigeno, facendo divampare
+        le fiamme!
     bugCatchingNet:
       name: Rete per catturare insetti
       requirementLevel: Richiede una rete per catturare insetti che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
       requirement: Richiede un <object id="bugCatchingNet" /> equipaggiato.
+      desc: Puoi catturare gli insetti con un retino!
     underwater:
       name: Sott'acqua
       requirement: Richiede l'equipaggiamento <object id="item_underwater" />.
       requirementLevel: Richiede attrezzatura subacquea che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Gli oggetti subacquei offrono dei vantaggi mentre sei sott'acqua.
   containers:
     chest:
       name: Forziere
       requirement: Richiede un<object id="chest" />.
       requirementLevel: Richiede un forziere che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: I forzieri contengono tesori. Aprili e scopri cosa c'è dentro!
     regionalChest:
       name: Forziere regionale
       requirement: Richiede un<object id="regionalChest" />.
       requirementLevel: Richiede un forziere regionale che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: I forzieri regionali contengono tesori provenienti da una determinata
+        regione.
     skillingChest:
       name: Cassa delle abilità
       requirement: Richiede un <object id="skillingChest" />.
       requirementLevel: Richiede un forziere di abilità che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: I forzieri delle abilità contengono tesori legati a una specifica abilità.
   consumables:
     cookedFish:
       name: Pesce cotto
       requirement: Richiede un<object id="cookedFish" />.
       requirementLevel: Richiede un pesce cotto che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Cotto da <object id="fish" />. Può essere consumato per ottenere bonus
+        temporanei.
     food:
       requirement: Richiede del<object id="food" />.
       name: Cibo
       requirementLevel: Richiede un alimento che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Il cibo può essere consumato per ottenere bonus temporanei.
     fruit:
       name: Frutto
       requirement: Richiede un<object id="fruit" />.
       requirementLevel: Richiede un frutto che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: I frutti possono essere consumati per ottenere bonus temporanei.
     water:
       name: Acqua
       requirement: Richiede dell'<object id="water" />.
       requirementLevel: Richiede acqua che abbia almeno <keywordRequirements /> nei
         suoi requisiti.
+      desc: Un bisogno fondamentale per la vita.
     memosphere:
       name: Memosfera
       requirement: Richiede una<object id="memosphere" />.
       requirementLevel: Richiede una memosfera che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Ti aiutano a ricordare arti perdute da tempo. Le Memosfere possono essere
+        consumate per ottenere esperienza immediata.
     sandwich:
       name: Panino
       requirement: Richiede un<object id="sandwich" />.
       requirementLevel: Richiede un sandwich che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Tutto ciò che si trova tra due fette di pane è un panino! Può essere consumato
+        per ottenere bonus temporanei ed è necessario per sbloccare determinati obiettivi.
     beverage:
       name: Bevanda
       requirement: Richiede una <object id="beverage" />.
       requirementLevel: Richiede una bevanda che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Le bevande possono essere consumate per ottenere bonus temporanei.
     alcohol:
       name: Alcol
       requirement: Richiede <object id="alcohol" />.
       requirementLevel: Richiede alcol che abbia almeno <keywordRequirements /> nei
         suoi requisiti.
+      desc: Le bevande alcoliche possono essere consumate per ottenere bonus temporanei,
+        ma attenzione a non esagerare!
   general:
     lightSource:
       name: Fonte luminosa
       requirement: Richiede una<object id="lightSource" />.
       requirementLevel: Richiede che l'utente abbia un <keywordRequirements /> equipaggiato.
+      desc: Illumina le zone poco illuminate. Indispensabile per determinate attività
+        e luoghi.
     heatResist:
       requirement: Richiede qualcosa <object id="heat_resistant" />.
       name: Resistente al calore
       requirementLevel: Richiede che l'utente abbia qualcosa di equipaggiato <keywordRequirements
         />.
+      desc: Ti mantiene fresco nelle zone calde. Indispensabile per determinate attività
+        e in determinati luoghi.
   misc:
     trash:
       name: Spazzatura
       requirement: Richiede della<object id="trash" />.
       requirementLevel: Richiede che i rifiuti abbiano almeno <keywordRequirements
         /> nei propri requisiti.
+      desc: Potrebbe essere un tesoro per qualcun altro.
     currency:
       name: Valuta
       requirementLevel: Richiede una valuta che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
       requirement: Richiede <object id="currency" />.
+      desc: Può essere utilizzato per acquistare articoli nei negozi.
     spectral:
       name: Spettrale
       requirement: Richiede qualcosa <object id="spectral" />.
       requirementLevel: Richiede qualcosa di spettrale che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Gli oggetti spettrali sono dotati delle proprietà spettrali di <object
+        id="c7a75c46-f140-4116-b0b6-f74e5d763ef5" />.
     cursed:
       requirementLevel: Richiede qualcosa di maledetto che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
       name: Maledetto
       requirement: Richiede qualcosa <object id="cursed" />.
+      desc: Un servizio difettoso comporta alcuni effetti negativi.
   search:
     skills:
       agility:
@@ -544,6 +739,18 @@ singulars:
         requirementLevel: <PLACEHOLDER>
       woodcutting:
         name: Taglio del legno
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      gathering:
+        name: Raccolta risorse
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      artisan:
+        name: Manifattura
+        requirement: <PLACEHOLDER>
+        requirementLevel: <PLACEHOLDER>
+      utility:
+        name: Utilità
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
     items:
@@ -606,14 +813,20 @@ singulars:
       name: Molto leggero
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: È considerato ultraleggero, il che significa che la sua dimensione massima
+        di stack è 9999.
     heavy:
       name: Pesante
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: È considerato un oggetto pesante, il che significa che il numero massimo
+        di oggetti di questo tipo che si possono impilare è 1.
     light:
       name: Leggero
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: È considerato un oggetto leggero, il che significa che il numero massimo
+        di pezzi che si possono accumulare è 999.
   services:
     sawmill:
       name: Segheria
@@ -645,34 +858,44 @@ singulars:
       requirement: Richiede<object id="itemset_diving_gear" />.
       requirementLevel: Richiede attrezzatura subacquea che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Fa parte dell'attrezzatura subacquea. Per immergersi è necessaria l'attrezzatura
+        subacquea.
     advancedDivingGear:
       name: Equipaggiamento da immersione avanzato
       requirement: Richiede<object id="itemset_diving_gear_advanced" />.
       requirementLevel: Richiede attrezzatura subacquea avanzata che abbia almeno
         <keywordRequirements /> nei suoi requisiti.
+      desc: Rientra nell'attrezzatura subacquea avanzata. Per immergersi in zone più
+        pericolose è necessaria l'attrezzatura subacquea avanzata.
     adventuringTools:
       name: Set di strumenti per l'avventura
       requirement: Richiede pezzi equipaggiati del set <object id="itemset_adventuring_tools"
         />.
       requirementLevel: Richiede uno strumento dell'avventuriero che abbia almeno
         <keywordRequirements /> nei suoi requisiti.
+      desc: Conta ai fini del set di strumenti da avventura.
     treasureHunter:
       requirementLevel: Richiede un equipaggiamento da cacciatore di tesori che abbia
         almeno <keywordRequirements /> nei suoi requisiti.
       name: Set cacciatore di tesori
       requirement: Richiede pezzi equipaggiati del set <object id="itemset_treasure_hunter"
         />.
+      desc: Conta ai fini del completamento del set del cacciatore di tesori.
     expertDivingGear:
       name: Attrezzatura subacquea professionale
       requirement: Richiede <object id="itemset_diving_gear_expert" />.
       requirementLevel: Richiede attrezzatura subacquea professionale che abbia almeno
         <keywordRequirements /> nei suoi requisiti.
+      desc: È indispensabile disporre di attrezzatura subacquea professionale. Per
+        immergersi nelle zone più pericolose è necessario disporre di attrezzatura
+        subacquea professionale.
     properGear:
       name: Attrezzatura adeguata
       requirement: Richiede pezzi consumati del set <object id="itemset_proper_gear"
         />.
       requirementLevel: Richiede l'uso di equipaggiamento adeguato che soddisfi almeno
         i requisiti <keywordRequirements />.
+      desc: Conta ai fini del set di equipaggiamento adeguato.
   locations:
     underwater:
       requirement: <PLACEHOLDER>
@@ -690,26 +913,32 @@ singulars:
     percentage:
       requirement: nessuno
       requirementLevel: nessuno
-      name: Percentuale di raggiungimento
+      name: Percentuale di Obiettivo
+      desc: Si ottiene come ricompensa per aver raggiunto una determinata percentuale
+        dei punti massimo ottenibili.
     reward:
       requirementLevel: Richiede una ricompensa per un risultato che abbia almeno
         <keywordRequirements /> nei suoi requisiti.
       name: Ricompensa per il risultato raggiunto
       requirement: Richiede un <object id="achievement_reward" />.
+      desc: Ottenuto come ricompensa per un obiettivo raggiunto.
   faction:
     reward:
       name: Ricompensa di fazione
       requirement: Richiede un <object id="faction_reward" />.
       requirementLevel: Richiede una ricompensa di fazione che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Ottenuto come ricompensa da una fazione.
   eggs:
     egg:
       name: Uovo
       requirement: Richiede un <object id="egg" />.
       requirementLevel: Richiede un uovo che abbia almeno <keywordRequirements />
         nei suoi requisiti.
+      desc: Se lo lasci troppo a lungo nell'inventario, emana un odore davvero sgradevole.
     petEgg:
       name: Uovo di animale domestico
       requirement: Richiede un <object id="pet_egg" />.
       requirementLevel: Richiede un uovo di animale domestico che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
+      desc: Puoi richiederlo per ottenere un animale domestico!
