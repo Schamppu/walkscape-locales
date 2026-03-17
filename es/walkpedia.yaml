@@ -62,6 +62,26 @@ singulars:
         description: Las tiendas son lugares donde puedes comprar y vender objetos.
           Normalmente se encuentran en edificios.
         tabText: Lista de tiendas
+    keywordList:
+      info:
+        title: Palabras clave
+        description: Las palabras clave se utilizan en muchos objetos, ubicaciones,
+          servicios y actividades. Puedes consultar fácilmente desde aquí, por ejemplo,
+          qué objetos cuentan como fuentes de luz.
+        tabText: Lista de palabras clave
+      phrases:
+        referencedByConsumables: Consumibles con esta palabra clave
+        relatedToTools: Palabras clave de herramientas
+        relatedToConsumables: Palabras clave de consumibles
+        relatedToLocations: Palabras clave de ubicaciones
+        relatedToGear: Palabras clave de equipos
+        relatedToMaterials: Palabras clave de materiales
+        relatedToServices: Palabras clave de servicios
+        referencedByGear: Equipo con esta palabra clave
+        referencedByTools: Herramientas con esta palabra clave
+        referencedByMaterials: Materiales con esta palabra clave
+        referencedByLocations: Ubicaciones con esta palabra clave
+        referencedByServices: Servicios con esta palabra clave
   contentPages:
     item:
       info:
@@ -80,6 +100,7 @@ singulars:
         guide: Guía
         level: Nivel
         lastUnlock: Último desbloqueo
+        statistics: Estadísticas
       guides:
         smithing: "<object id=\"smithing\" /> es una habilidad artesana para fundir
           <object id=\"bar\" /> y forjar metales.\n\n<li><hl>Ubicación Inicial</hl>:
@@ -173,7 +194,7 @@ singulars:
           te asista con recetas de alto nivel de sastrería. Puede incluso haber algún
           lugar en esas zonas que tengan actividades de <c>sastrería</c>.</li>\n\n\
           <li><hl>Se usa para</hl>: coser <object id=\"plant\" /> en <object id=\"\
-          processed\" />. Una vez los tengas, puedes combinarlos con el tejido necesario
+          fabric\" />. Una vez los tengas, puedes combinarlos con el tejido necesario
           para crear equipamiento que potencie tus habilidades.</li>\n"
         crafting: "<object id=\"crafting\" /> es una habilidad artesana para crear
           herramientas útiles.\n\n<li><hl>Ubicación Inicial</hl>: puedes empezar a
@@ -216,14 +237,14 @@ singulars:
           \ />. Muy de vez en cuando puedes encontrar alguna <object id=\"rough_gem\"\
           \ /> que puedes tallar con tu habilidad de <object id=\"trinketry\" />.</li>\n"
         hunting: "<object id=\"hunting\" /> es una habilidad de recogida que es esencial
-          para encontrar <object id=\"ingredient\" />.\n\n<li><hl>Ubicación inicial</hl>:
-          puedes empezar a <c>cazar</c> ahora mismo en el <object id=\"location\"\
-          \ /> con <object id=\"activity\" />.</li>\n\n<li><hl>Dónde encontrarla</hl>:
-          la mayoría de ubicaciones naturales (llanuras, bosques, colinas, montañas,
-          playas) puede tener actividades de <c>caza</c> , así como algún área urbana
-          y cueva.</li>\n\n<li><hl>Se usa para</hl>: recolectar materiales de <object
-          id=\"ingredient\" /> que se pueden usar en otras habilidades, como <skill
-          skill=\"crafting\"/> y <skill skill=\"cooking\"/>.</li>\n"
+          para encontrar pieles.\n\n<li><hl>Ubicación inicial</hl>: puedes empezar
+          a <c>cazar</c> ahora mismo en campos y llanuras con <object id=\"2250915a-2619-488a-94af-c4008054d7b2\"\
+          \ />.</li>\n\n<li><hl>Dónde encontrarla</hl>: la mayoría de ubicaciones
+          naturales (llanuras, bosques, colinas, montañas, playas) puede tener actividades
+          de <c>caza</c>, así como algún área urbana.</li>\n\n<li><hl>Se usa para</hl>:
+          recoger materiales que se pueden usar en otras habilidades, como <skill
+          skill=\"tailoring\"/>, <skill skill=\"crafting\"/> y <skill skill=\"cooking\"\
+          />.</li>\n"
   phrases:
     home:
       leveling: Nivel
@@ -267,6 +288,8 @@ singulars:
       unknown: Este contenido aún es desconocido para tu personaje. ¡Sigue explorando
         para descubrir todos sus detalles!
       rumors: Rumores conocidos
+    keyword:
+      requiresThisKeyword: Contenido que requiere esta palabra clave
 maps:
   phrases:
     item:
@@ -279,6 +302,14 @@ maps:
         "collectible": Coleccionables
         "egg": Huevos de mascota
         "currency": Divisas
+  dataTypes:
+    "activity": Actividad
+    "location": Ubicación
+    "service": Servicio
+    "recipe": Receta
+    "route": Ruta de viaje
+    "achievement": Logro
+    "item": Objeto
 plurals:
   skillUnlocks:
     recipeRequirementsMet:
