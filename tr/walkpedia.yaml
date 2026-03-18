@@ -76,6 +76,12 @@ singulars:
         relatedToConsumables: Tüketimlik etiketleri
         relatedToLocations: Konum etiketleri
         relatedToServices: Hizmet etiketleri
+        referencedByGear: Bu etiketi taşıyan teçhizatlar
+        referencedByTools: Bu etiketi taşıyan aletler
+        referencedByMaterials: Bu etiketi taşıyan malzemeler
+        referencedByConsumables: Bu etiketi taşıyan tüketimlikler
+        referencedByLocations: Bu etiketi taşıyan konumlar
+        referencedByServices: Bu etiketi taşıyan hizmetler
   phrases:
     item:
       notCrafted: (Üretilmemiş)
@@ -119,6 +125,8 @@ singulars:
       unknown: Bu içerik henüz karakterince bilinmiyor. Tam detayları görebilmek için
         keşfetmeye devam et!
       rumors: Duyulan söylentiler
+    keyword:
+      requiresThisKeyword: Bu etiketi gerektiren içerik
   contentPages:
     item:
       info:
@@ -137,6 +145,7 @@ singulars:
         unlocksDesc: Bu beceriyi seviye atlatarak hangi içerikleri açtığını gör.
         fromLevelToLevel: <c>{from}</c> seviyeden <c>{to}</c> seviyeye
         guide: Rehber
+        statistics: İstatistik
       guides:
         agility: "<object id=\"agility\" /> seyahat etmek için gerekli olan bir yardımcı
           beceridir.\n\n<li><hl>Başlangıç konumu</hl>: <c>Çeviklik</c> genellikle
@@ -259,17 +268,17 @@ singulars:
           bulunur</hl>: Yüksek seviyeli terzilik tarifleri için gereken <object id=\"\
           service_loom\" /> hizmetinin bazı konumlarda bulunma ihtimali daha yüksektir.
           Aynı konumlarda çeşitli <c>terzilik</c> faaliyetlerine de rastlayabilirsin.</li>\n\
-          \n<li><hl>Amacı</hl>: <object id=\"plant\" /> dikerek <object id=\"processed\"\
-          \ /> yapmak. Bunları elde ettikten sonra gerekli kumaşlarla birleştirerek
+          \n<li><hl>Amacı</hl>: <object id=\"plant\" /> dikerek <object id=\"fabric\"\
+          \ /> yapmak. Bunları elde ettikten sonra gerekli diğer kumaşlarla birleştirerek
           becerilerini geliştirecek teçhizat seçenekleri üretilebilir.</li>\n"
-        hunting: "<object id=\"hunting\" /> <object id=\"ingredient\" /> bulmak için
-          gereken bir malzemeci beceridir.\n\n<li><hl>Başlangıç konumu</hl>: <c>Avcılık</c>
-          yapmaya <object id=\"activity\" /> ile hemen <object id=\"location\" />
-          konumunda başlayabilirsin.</li>\n\n<li><hl>Nerede bulunur</hl>: Bazı yerleşim
-          yerleri ve mağaralar ile çoğu doğal konumda (ovalar, ormanlar, tepeler,
-          dağlar, kumsallar) <c>avcılık</c> faaliyeti bulunur.</li>\n\n<li><hl>Amacı</hl>:
-          <skill skill=\"crafting\"/> veya <skill skill=\"cooking\"/> gibi diğer becerilerde
-          kullanmak için <object id=\"ingredient\" /> malzemeler toplamak.</li>\n"
+        hunting: "<object id=\"hunting\" />, post bulmak için gereken bir malzemeci
+          beceridir.\n\n<li><hl>Başlangıç konumu</hl>: <c>Avcılık</c> yapmaya ovalar
+          veya düzlüklerde ile <object id=\"2250915a-2619-488a-94af-c4008054d7b2\"\
+          \ /> ile başlayabilirsin.</li>\n\n<li><hl>Nerede bulunur</hl>: Bazı yerleşim
+          yerleri ile birlikte çoğu doğal konumda (ovalar, ormanlar, tepeler, dağlar,
+          kumsallar) <c>avcılık</c> faaliyeti bulunur.</li>\n\n<li><hl>Amacı</hl>:
+          <skill skill=\"tailoring\"/>, <skill skill=\"crafting\"/> veya <skill skill=\"\
+          cooking\"/> gibi diğer becerilerde kullanmak için malzeme toplamak.</li>\n"
 maps:
   phrases:
     item:
@@ -282,6 +291,14 @@ maps:
         "collectible": Koleksiyonluklar
         "egg": Evcil hayvan yumurtaları
         "currency": Paralar
+  dataTypes:
+    "item": Eşya
+    "activity": Faaliyet
+    "location": Konum
+    "service": Hizmet
+    "recipe": Tarif
+    "route": Seyahat rotası
+    "achievement": Başarım
 plurals:
   skillUnlocks:
     itemRequirementsMet:
