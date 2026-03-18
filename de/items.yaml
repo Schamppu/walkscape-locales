@@ -896,8 +896,8 @@ singulars:
             sehr beliebt.
         mahoganyHuntingBow:
           name: Jagdbogen aus Mahagoniholz
-          desc: Mit präziser Handwerkskunst gefertigt, bietet dieser Jagdbogen eine
-            exzellente Waffe für erfahrene Jäger.
+          desc: Mit präziser Handwerkskunst gefertigt, bietet dieser Jagdbogen ein
+            exzellentes Werkzeug für erfahrene Jäger.
         pineBirdhouse:
           name: Vogelhäuschen aus Kiefer
           desc: Gefertigt aus Kiefernholz, fügt sich dieses Vogelhaus mit seinem natürlichen
@@ -928,6 +928,21 @@ singulars:
           name: Treibnetz aus Seetang
           desc: Ein gewaltiges Treibnetz aus Seetang, das sich unaufhörlich im Wasser
             ausbreitet.
+        rustyHuntingBow:
+          desc: Ein einst großartiger Metallbogen, nun von Rost überzogen. Er kann
+            noch immer für die Jagd verwendet werden, aber nicht mehr so gut wie früher.
+          name: Rostiger Jagdbogen
+        boxtrap:
+          name: Kastenfalle
+          desc: Eine schnell zusammengestellte Kastenfalle, die sich leicht aufstellen
+            lässt, um kleinere Tiere zu fangen, bevor sie anschließend auseinanderfällt.
+        birchHuntingBow:
+          desc: Ein Jagdbogen aus einfachem, aber gut brauchbarem Birkenholz.
+          name: Jagdbogen aus Birke
+        strongBowstring:
+          name: Starke Bogensehne
+          desc: Eine deutlich stärkere Sehne, die zum Herstellen deutlich stärkerer
+            Bögen verwendet werden kann.
       tailoring:
         grassknotMitts:
           desc: Fäustlinge aus Stoff, durchwoben mit Gräsern, die sie zu etwas Besonderem
@@ -1103,6 +1118,13 @@ singulars:
         tarsiliumSaw:
           name: Tarsiliumsäge
           desc: Die dunklen, obsidianartigen Zähne dieser Säge sind bereit, zuzubeißen!
+        pineToolbox:
+          desc: Ein praktischer Werkzeugkasten aus Kiefernholz zum Transport von Tischlerwerkzeugen.
+          name: Werkzeugkasten aus Kiefer
+        bambooToolbox:
+          name: Werkzeugkasten aus Bambus
+          desc: Ein robuster Werkzeugkasten für Tischlerwerkzeuge, der ihren Transport
+            deutlich erleichtert.
       trinketry:
         silverOpalRing:
           name: Opal-Ring aus Silber
@@ -1302,6 +1324,36 @@ singulars:
           name: Bronzeschraubenschlüssel
           desc: Der universelle Schraubenschlüssel in Größe zehn, aus Bronze gefertigt.
             Es ist genau der, der immer fehlt.
+      upgraded:
+        gemTippedPliers:
+          desc: Die Zange wurde mit etwas Topas und Wrentmarine überarbeitet, um ihren
+            Griff und ihre Funktionalität bei deinen bearbeiteten Materialien zu verbessern.
+          name: Edelsteinbesetzte Zange
+        ironChefsHat:
+          desc: Dieser Hut ist stärker und schwerer als zuvor, aber jetzt kannst du
+            thematisch passendes Essen auf einem höheren Niveau zubereiten.
+          name: Hut des eisernen Kochs
+        goldenCuttingMat:
+          desc: Die Schneidematte wurde verbessert, sodass sie nicht nur besser aussieht,
+            sondern auch deine Schneiderfehler noch besser aushält.
+          name: Vergoldete Schneidematte
+        tintedWoodworkingGlasses:
+          name: Getönte Schutzbrille für Holzarbeiten
+          desc: Du hast es geschafft, deine Holzarbeiterbrille zu ruinieren … oh warte,
+            nein, das sieht gut aus. Vergiss es, die hier ist cool.
+        extraCraftyPants:
+          name: Besonders handwerkliche Hose
+          desc: Vielleicht wurde ein Schraubenschlüssel in diese Hose geworfen, aber
+            das war alles Teil des Plans. Jetzt ist sie deutlich handwerklicher.
+        brightCamoFacePaint:
+          name: Helle Tarnschminke
+          desc: Die Farben der Gesichtsbemalung wurden verbessert, damit sie länger
+            halten und in noch vielfältigeren Umgebungen funktionieren. Hoffentlich
+            wurde sie an Tieren getestet.
+        comfyFishingChair:
+          name: Bequemer Angelstuhl
+          desc: Du hast dir einen ziemlich bequemen Sitz fürs Angeln besorgt. Pass
+            nur auf, dass du nicht einnickst, während du auf den nächsten Biss wartest.
   looted:
     equipmentSets:
       dimensional:
@@ -3423,6 +3475,18 @@ singulars:
       invasiveSpeciesTag:
         name: Kennzeichnung invasiver Arten
         desc: Ein gravierter Metalltag mit der Darstellung eines wurmartigen Schlundes.
+      rottenItem:
+        desc: Dieser Gegenstand stand einst für etwas, wurde inzwischen jedoch aus
+          dem Spiel entfernt. Jetzt ist er nur noch ein verdorbener Gegenstand.
+        name: Verdorbener Gegenstand
+      halfmawScales:
+        desc: Intakte, alte Reptilienschuppen, die von einem ziemlich großen Wesen
+          abgestreift wurden. Der Sumpfposten der Abenteurergilde wäre an ihnen interessiert.
+        name: Halbmaulschuppen
+      halfmawTeeth:
+        name: Halbmaulzähne
+        desc: Zurückgelassene, abgestoßene Zähne, die vermutlich durch stärkere ersetzt
+          wurden. Der Sumpfposten der Abenteurergilde wäre an ihnen interessiert.
     crafting:
       rope:
         name: Seil
@@ -3444,8 +3508,7 @@ singulars:
           aus der Pflanze, nach der es benannt ist: Eisenkraut.'
     hunting:
       animalMeat:
-        desc: Frisches Fleisch, das darauf wartet, gekocht, getrocknet oder gesalzen
-          zu werden.
+        desc: Fleisch ist Mord.
         name: Tierisches Fleisch
       darkfeather:
         desc: Eine dunkle Vogelfeder, wahrscheinlich von einer Krähe, einem Raben
@@ -3469,6 +3532,16 @@ singulars:
         name: Tierfell
         desc: Das Tierfell ist angenehm weich und würde, zu Kleidung verarbeitet,
           sicherlich große Wärme spenden.
+      ectoScraps:
+        desc: Diese Reste sind wie Fragmente aus Ektoplasma und strahlen geisterhafte
+          Energie aus. Du wirst einen verfluchten Webstuhl brauchen, um sie miteinander
+          zu verweben.
+        name: Ektoplasmareste
+      unicornHorn:
+        name: Horn eines Einhorns
+        desc: Ein scharfes, spitzes Horn. Vielleicht besitzt es heilende Eigenschaften
+          – oder es ist einfach nur dafür da, in einen Brunnen geworfen zu werden.
+          Vielleicht kannst du es auch einem Pferd anbringen.
     tailoring:
       aerodynamicThread:
         name: Aerodynamischer Faden
@@ -3523,6 +3596,10 @@ singulars:
         desc: Das rosa Perlen-Schmuckstück glänzt hell im Licht. Wer weiß, vielleicht
           wird es irgendwann in ein Amulett eingefasst.
         name: Rosa Perlen-Schmuckstück
+      spiderTrinket:
+        desc: Das Spinnenschmuckstück glänzt hell im Licht. Eines Tages könnte es
+          sich gut für ein Amulett eignen.
+        name: Spinnenschmuckstück
   collectibles:
     visas:
       jarvonianLetterOfPassage:
