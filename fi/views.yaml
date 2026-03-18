@@ -553,6 +553,24 @@ singulars:
       baseEfficiency: Lähtökohtainen tehokkuus
       fromOverencumbered: Ylikuormittunut
       fromPets: Lemmikit
+      fromInputAttributes: Syöteominaisuudet
+      fromFineInputs: Oiva syöte
+      fromEffects: Aktiiviset vaikutukset
+      availableInput: (<c>{quantity}x</c> saatavilla)
+      requiresInputOptional: (Vapaavalintainen) Käyttää <hl>{quantity}x</hl> <object
+        id="{keyword}"/>
+      requiresInputWithLevel: Vaatii <hl>{quantity}x</hl> <object id="{skill}" />
+        tason <c>{level}</c> <object id="{keyword}"/>
+      requirementsNotMetForInput: '<object id="{item}"/>: vaatimukset eivät täyty'
+      fineInputBenefit: On eduksi, jos käytössä on <c>oivia syötteitä</c>
+      allAttributes: Näytä kaikki ominaisuudet
+      activeEffects: Aktiiviset vaikutukset
+      inputAttributes: On eduksi, jos käytössä on <object id="{item}"/>
+      requiresInput: Tarvitaan <hl>{quantity}x</hl> <object id="{keyword}"/>
+      inputsNotMet: Syötevaatimukset eivät täyty
+      requiresInputWithLevelOptional: (Vapaavalintainen) Käyttää <hl>{quantity}x</hl>
+        <object id="{skill}" /> tason <c>{level}</c> <object id="{keyword}"/>
+      noInputOptions: 'Repussasi ei ole tarvittavaa syötettä: <object id="{keyword}"/>'
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
       savedSteps: Jos keräät askelia kun sinulla ei ole mitään tehtävää käynnissä,
@@ -714,6 +732,9 @@ singulars:
       holdToUse: Pidä pohjassa käyttääksesi
       alreadyHere: Nykysijaintisi on jo <object id="{location}"/>. Et voi käyttää
         kykyä tänne matkustamiseen.
+      cannotUseMore: Et voi käyttää tätä kykyä. Kyvyn vaikutus saattaa olla sinulla
+        jo aktiivisena, ja kertautuisi kestämään liian pitkään.
+      lastsFor: 'Vaikutuksen kesto:'
   cooldowns:
     phrases:
       followingMustBeTrueToTick: 'Seuraavien täytyy olla totta jotta palautumisaika
