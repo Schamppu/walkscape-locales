@@ -1,8 +1,9 @@
 maps:
   tips:
-    "14": Se è in corso una manutenzione, non preoccuparti, di solito i tuoi passi
-      continueranno a essere conteggiati anche durante il periodo di inattività. Controlla
-      gli annunci su <c c="purple">Discord</c> per esserne sicuro!
+    "14": 'Se sono in corso lavori di manutenzione, non preoccuparti: di solito i
+      tuoi passi continuano a essere conteggiati anche durante il periodo di inattività.
+      Controlla gli annunci su <a href="https://discord.gg/Kk6VecJFEk" c="lightPurple">Discord</c>
+      per esserne sicuro!'
     "18": I livelli di abilità che superano il requisito di <hl>abilità</hl> principale
       di un'attività conferiscono un bonus del +1,25% all'<hl>efficienza lavorativa</hl>
       per ciò che stai facendo, fino a un massimo di 20 livelli.
@@ -24,7 +25,7 @@ maps:
       toccando il tuo personaggio in alto a sinistra.
     "8": Gli oggetti collezionabili che trovi ti danno 1 <hl>punto risultato</hl>
       extra per ogni oggetto!
-    "9": Molti PNG possono raccontarti <h1>dicerie</h1> che ti aiutano a trovare oggetti
+    "9": Molti PNG possono raccontarti <hl>voci</hl> che ti aiutano a trovare oggetti
       nel gioco.
     "10": Il <hl>menu hamburger</hl> in basso a destra (o in basso a sinistra nella
       modalità per mancini) contiene la tua <hl>WalkPedia</hl> che ti aiuta a tenere
@@ -35,10 +36,12 @@ maps:
       la maggior parte non funziona solo dall'inventario.
     "13": Lo spazio in banca è illimitato, se sei indeciso sull'utilizzo di qualcosa,
       mettilo in banca!
-    "15": Visita il nostro <c c="green">Portal</c>, <c c="red">Reddit</c> e <c c="purple">Discord</c>
-      per annunci, aggiornamenti e blog sullo sviluppo.
-    "16": Hai trovato qualcosa che non funziona o hai un suggerimento? Segnalacelo
-      su <c c="purple">Discord</c>! Le tue segnalazioni aiutano a migliorare il gioco!
+    "15": Dai un'occhiata al nostro <a href="https://portal.walkscape.app" c="lightGreen">portale</c>,
+      <a href="https://www.reddit.com/r/walkscape" c="lightRed">Reddit</c> e <a href="https://discord.gg/Kk6VecJFEk"
+      c="lightPurple">Discord</c> per annunci, aggiornamenti e blog di sviluppo.
+    "16": Hai trovato un bug o hai un suggerimento? Segnalacelo su <a href="https://discord.gg/Kk6VecJFEk"
+      c="lightPurple">Discord</c>! Le tue segnalazioni ci aiutano a migliorare il
+      gioco!
     "17": <hl>Risultato di qualità</hl> contribuirà ad aumentare le possibilità di
       ottenere oggetti di qualità superiore visualizzati nella parte inferiore delle
       <hl>ricette</hl> nell'<hl>interfaccia di creazione</hl>.
@@ -48,11 +51,12 @@ maps:
     "20": Equipaggiare un set di equipaggiamento mentre ci si trova in banca preleverà
       automaticamente tutti gli oggetti dalla banca.
   skillTypes:
-    "gathering": Le abilità di raccolta risorse includono <skill skill="foraging"/>,
-      <skill skill="fishing"/>, <skill skill="mining"/> e <skill skill="woodcutting"/>.
+    "gathering": Le abilità di raccolta includono <skill skill="foraging"/>,<skill
+      skill="fishing"/>,<skill skill="hunting"/>,<skill skill="mining"/> e <skill
+      skill="woodcutting"/>.
     "artisan": Le abilità di manifattura comprendono <skill skill="cooking"/>, <skill
-      skill="crafting"/>, <skill skill="carpentry"/>, <skill skill="smithing"/> e
-      <skill skill="tinkering"/>.
+      skill="crafting"/>, <skill skill="carpentry"/>, <skill skill="smithing"/>,<skill
+      skill="tailoring"/> e <skill skill="trinketry"/>.
     "utility": Le abilità funzionali includono <skill skill="agility"/>.
 singulars:
   info:
@@ -87,3 +91,20 @@ singulars:
       alla tua collezione e potrai farlo nascere e invocarlo in qualsiasi momento.
       Non è possibile scambiare gli animali domestici reclamati, poiché diventano
       <c>legati al tuo personaggio</c>.
+    attributeTypes: "<bp /><icon i=\"Gear alt\"/>  <c i=0>Equipaggiamento indossato</c>:
+      attributi dell'equipaggiamento attualmente indossato.\n\n<bp /><icon i=\"Tools
+      alt\"/>  <c i=1>Strumenti equipaggiati</c>: attributi degli strumenti attualmente
+      equipaggiati.\n\n<bp /><icon i=\"Collectible\"/>  <c i=2>Oggetti da collezione</c>:
+      attributi permanenti degli oggetti da collezione.\n\n<bp /><icon i=\"Dev services\"\
+      />  <c i=3>Servizi</c>: attributi dei servizi nella tua posizione attuale.\n\
+      \n<bp /><icon i=\"Animali domestici\"/>  <c i=4>Animali domestici</c>: attributi
+      dal tuo animale domestico evocato.\n\n<bp /><icon i=\"Materiale pregiato\"/>\
+      \  <c i=5>Bonus input materiale pregiato</c>: bonus derivante dall'uso di materiali
+      pregiati.\n\n<bp /><icon i=\"Materiali\"/>  <c i=6>Input materiali</c>: attributi
+      dai materiali di input selezionati per un'attività.\n\n<bp /><icon i=\"Consumabili\"\
+      />  <c i=7>Consumabili</c>: attributi derivanti dai tuoi consumabili che vengono
+      consumati.\n\n<bp /><icon i=\"Salita di livello\"/>  <c i=8>Livello abilità</c>:
+      attributi derivanti dal tuo livello di abilità (ad es. superare il requisito
+      di livello di abilità).\n\n<bp /><icon i=\"Abilities\"/>  <c i=9>Abilità</c>:
+      attributi delle tue abilità.\n\n<bp /><icon i=\"Player effect\"/>  <c i=10>Effetti
+      attivi</c>: attributi degli effetti attualmente attivi.\n"

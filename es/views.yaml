@@ -136,6 +136,8 @@ maps:
       'smithing': Nivel de <c>Herrería</c>
       'trinketry': Nivel de <c>Joyería</c>
       'woodcutting': Nivel de <c>Tala</c>
+      "hunting": Nivel de <c>Caza</c>
+      "tailoring": Nivel de <c>Sastrería</c>
   shop:
     phrases:
       itemType:
@@ -314,6 +316,15 @@ plurals:
         zero: '-'
         many: '-'
         two: Jugadores<c>{}</c> haciendo actividad
+  gearSets:
+    phrases:
+      selected:
+        two: <hl>{}</hl> seleccionado
+        zero: '-'
+        one: <hl>{}</hl> seleccionado
+        few: '-'
+        many: '-'
+        other: <hl>{}</hl> seleccionado
 singulars:
   achievements:
     info:
@@ -415,6 +426,7 @@ singulars:
       equipToToolSlot: Equipar en la ranura de herramienta {id}
       depositAll: Todo
       hatchesInto: Se convierte en
+      inputAttributes: Atributos de ingrediente
     options:
       consenseInventory: Condensar inventario
       expandInventory: Expandir inventario
@@ -637,7 +649,7 @@ singulars:
       activitiesInLocation: Actividades disponibles en <object id="{location}"/>
       guideTip: Consejo del día
       savedStepsUsed: Pasos guardados usados
-      inputs: Entradas
+      inputs: Ingredientes
       workEfficiency: Eficiencia de trabajo
       maxWorkEfficiency: Eficiencia de trabajo máxima
       agilityBonus: Nivel de Agilidad <c>{level}</c>
@@ -652,6 +664,24 @@ singulars:
       baseEfficiency: Eficiencia base
       fromOverencumbered: Sobrecargado
       fromPets: Mascotas
+      inputsNotMet: Requisitos de ingredientes no cumplidos
+      fromInputAttributes: Atributos de ingrediente
+      fromFineInputs: Ingredientes de calidad
+      fromEffects: Efectos activos
+      requiresInput: Necesita <hl>{quantity}x</hl> <object id="{keyword}"/>
+      requiresInputOptional: (Opcional) Usa <hl>{quantity}x</hl> <object id="{keyword}"/>
+      requiresInputWithLevelOptional: (Opcional) Usa <hl>{quantity}x</hl> <object
+        id="{skill}" /> nivel<c>{level}</c> <object id="{keyword}"/>
+      noInputOptions: No tienes ningún <object id="{keyword}"/> en tu inventario para
+        usar como ingrediente
+      requirementsNotMetForInput: Requisitos de <object id="{item}"/> no cumplidos
+      allAttributes: Mostrar todos los atributos
+      activeEffects: Efectos activos
+      fineInputBenefit: Beneficios de usar <c>ingredientesde calidad</c>
+      availableInput: (<c>{quantity}x</c> disponible)
+      inputAttributes: Beneficios de usar <object id="{item}"/>
+      requiresInputWithLevel: Necesita <hl>{quantity}x</hl> <object id="{skill}" />
+        nivel <c>{level}</c> <object id="{keyword}"/>
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> experiencia
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} coleccionables</c> que
@@ -797,6 +827,7 @@ singulars:
       holdToCast: Mantener pulsado para lanzar
       alreadyHere: Ya te encuentras en <object id="{location}"/>. No se puede usar
         el talento para viajar aquí.
+      lastsFor: 'El efecto dura:'
     info:
       youHaveNoAbilities: <hl>No tienes talentos</hl>. Cierto equipo del juego puede
         otorgarte talentos que puedes usar para obtener algún beneficio instantáneo
@@ -816,6 +847,18 @@ singulars:
       requirements: Requisitos
       cooldownRequirements: Requisitos de enfriamiento
       charges: Cargas
+      noInputsAvailable: No tiene ningún <object id="{item}"/> disponible para usar
+        en este enfriamiento.
+      inputCharges: 'Cargas:'
+      inputAtMax: Máx.
+      cooldownCharged: ¡Has cargado el talento <object id="{ability}"/> para <c>{target}</c>!
+      inputNextCharge: 'Siguiente carga:'
+    info:
+      inputCooldownInfo: Este talento se carga usando objetos. Una carga completa
+        requiere <icon i="input" size="16" vp="3.0" /> <hl>{amount}</hl>.
+    inputs:
+      item: <bp /><chip><icon i="input" size="16" vp="3.0" /> <hl>{amount}</hl> </chip>
+        ganado de <object id="{item}" />
   treasury:
     phrases:
       openChest: Abrir
@@ -921,6 +964,8 @@ singulars:
       noItemSelected: Ningún objeto seleccionado
       gearSlots: Ranuras de equipo
       toolSlots: Ranuras de herramienta
+      selectedItem: (Objeto seleccionado)
+      comparedItem: (Objeto comparado)
     info:
       gearInfo: Añade equipo para mejorar los atributos de personaje. Puedes pulsar
         en cualquiera de las ranuras de equipo para ver qué objetos de tu inventario
@@ -1052,6 +1097,8 @@ singulars:
       reorderGearSets: Reordenar kits de equipo
       showItems: Mostrar objetos
       hideItems: Ocultar objetos
+      forRecipes: 'Para recetas: '
+      noRecipesSelected: No hay recetas seleccionadas
     errors:
       keywordError: 'El kit de equipo ya tiene: <object id="{keyword}" />'
       duplicateItem: El objeto ya existe en el kit de equipo
@@ -1139,7 +1186,7 @@ singulars:
       activityInLocation: <object id="{activity}"/> en <object id="{location}"/>
       noPathFound: No se ha encontrado un camino al destino.
       forXActions: Realizar durante <c>{count}</c> acciones
-      inputNotMet: Requisitos de entrada no cumplidos
+      inputNotMet: Requisitos de ingrediente no cumplidos
       petNotFound: No encuentro la mascota elegida. ¿La has retirado?
       summoningPet: Invocando mascota <playerPet id="{pet}" />
     suggestedOptions:
@@ -1168,6 +1215,7 @@ singulars:
       actionCancelled: Acción cancelada
       switchedToPet: <playerPet id="{pet}"/> invocado
       petDoesNotExist: 'La mascota ya no existe, no se pudo invocar.'
+      inputsUsed: Ingredientes usados
   announcements:
     phrases:
       new: Nuevo
@@ -1231,7 +1279,7 @@ singulars:
       currentXp: EXP actual
       xpToNextLevel: EXP al próximo nivel
       currentLevelProgress: Progreso del nivel actual
-      xpToMaxLevel: EXP al nivel máximo
+      xpToMaxLevel: EXP hasta nivel máximo
       maxLevelProgress: Progreso de nivel máximo
       claimedAt: Adquirido el
       ownedFor: Dueño durante
@@ -1244,6 +1292,8 @@ singulars:
       noEggs: No tienes huevos de mascota.
       noPetsFound: No se han encontrado mascotas que coincidan con tu búsqueda.
       noEggsFound: No se han encontrado huevos que coincidan con tu búsqueda.
+      actionsToHatch: Acciones para eclosionar
+      actionsToNextLevel: Acciones para el siguiente nivel
   mysteriousMerchant:
     dialogue:
       chestChosen: Vale, o sea que quieres intercambiar objetos de este <object id="{chest}"/>.
@@ -1286,3 +1336,13 @@ singulars:
         especiales</c>.
       thereAreNoPaidCurrencies: Las divisas que se usan en el juego <c>jamás</c> se
         podrán comprar <c>con dinero real</c>.
+  attributeListing:
+    phrases:
+      allAttributes: Todos los atributos
+      noAttributes: Sin atributos activos.
+      noAttributesTip: No tienes ningún atributo activo de equipo, herramientas u
+        otras fuentes, o tus filtros no devolvieron ningún atributo que encaje.
+      overlevelingWithNumber: El nivel de habilidad es <c>+{level}</c> sobre lo requerido.
+      overlevelingFromAgility: De <object id="agility" /> nivel <c>{level}</c>.
+    options:
+      showInactiveAttributes: Muestra atributos inactivos

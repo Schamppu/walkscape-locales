@@ -18,8 +18,8 @@ singulars:
           id="recipe_cooking" />.
   activities:
     woodcuttingTrees:
-      requirementLevel: Необходимо вырубить деревья, соответствующие требованиям <keywordRequirements
-        />.
+      requirementLevel: Требуется активность по рубке деревьев, которая имеет хотя
+        бы <keywordRequirements /> в своих требованиях.
       name: Рубка деревьев
       requirement: Требуется активность <object id="woodcuttingTrees" />.
     fishing:
@@ -43,85 +43,118 @@ singulars:
       name: Книга навыков
       requirementlevel: Требуется книга навыков с характеристиками <keywordRequirements
         />.
+      desc: Дает как бонус, так и штраф к определенному навыку.
     sickle:
       name: Серп
       requirement: Требуется <object id="sickle" />.
       requirementLevel: Требуется серп с характеристиками <keywordRequirements />.
+      desc: Инструмент для сбора ресурсов, используемый в навыке <object id="foraging"
+        />.
     cookingPan:
       name: Сковорода
       requirement: Требуется <object id="cookingPan" />.
       requirementLevel: Требуется сковорода с характеристиками <keywordRequirements
         />.
+      desc: Очень полезен для приготовления еды! Сковороды дают бонусы к навыку <object
+        id="cooking" />.
     fishingRod:
       name: Удочка
       requirement: Требуется <object id="fishingRod" />.
       requirementLevel: Требуется удочка с характеристиками <keywordRequirements />.
+      desc: Удочки необходимы для рыбалки на удочку. Должны быть экипированы, чтобы
+        ловить рыбу.
     fishingNet:
       name: Рыболовная сеть
       requirement: Требуется <object id="fishingNet" />.
       requirementLevel: Требуется рыболовная сеть с характеристиками <keywordRequirements
         />.
+      desc: Рыболовные сети необходимы для ловли сетью. Должны быть экипированы, чтобы
+        ловить рыбу.
     pickaxe:
       name: Кирка
       requirement: Требуется <object id="pickaxe" />.
       requirementLevel: Требуется кирка с характеристиками <keywordRequirements />.
+      desc: Кирки необходимы для добычи полезных ископаемых. Должны быть экипированы,
+        чтобы добывать руду и самоцветы.
     chisel:
       name: Стамеска
       requirement: Требуется <object id="chisel" />.
       requirementLevel: Требуется стамеска с характеристиками <keywordRequirements
         />.
+      desc: Стамески используются в <object id="carpentry" /> и <object id="trinketry"
+        /> и дают бонусы к этим навыкам.
     screwdriver:
       name: Отвёртка
       requirement: Требуется <object id="screwdriver" />.
       requirementLevel: Требуется отвёртка с характеристиками <keywordRequirements
         />.
+      desc: Отвертки используются в <object id="crafting" /> и дают бонусы к этому
+        навыку.
     smithingHammer:
       name: Кузнечный молот
       requirement: Требуется <object id="smithingHammer" />.
       requirementLevel: Требуется кузнечный молот с характеристиками <keywordRequirements
         />.
+      desc: Тяжелый молот, используемый для ковки металла. Полезен для <object id="smithing"
+        />.
     knife:
       name: Нож
       requirement: Требуется <object id="knife" />.
       requirementLevel: Требуется нож с характеристиками <keywordRequirements />.
+      desc: Острый, так что берегите пальцы! Полезен для резки вещей, а значит, и
+        для <object id="cooking" />.
     ruler:
       name: Линейка
       requirement: Требуется <object id="ruler" />.
       requirementLevel: Требуется линейка с характеристиками <keywordRequirements
         />.
+      desc: Измерительный инструмент, используемый для точных измерений. Полезен для
+        <object id="carpentry" />.
     sander:
       name: Наждачка
       requirement: Требуется <object id="sander" />.
       requirementLevel: Требуется наждачка с характеристиками <keywordRequirements
         />.
+      desc: Инструмент, используемый для шлифовки поверхностей. Полезен для <object
+        id="trinketry" />.
     woodcuttingHatchet:
       name: Топор
       requirement: Требуется <object id="woodcuttingHatchet" />.
       requirementLevel: Требуется топор с характеристиками <keywordRequirements />.
+      desc: Топоры необходимы для рубки древесины. Должен быть экипирован, чтобы рубить
+        деревья.
     goldPan:
       requirement: Требуется <object id="goldPan" />.
       name: Старательский лоток
       requirementLevel: Требуется старательский лоток с характеристиками <keywordRequirements
         />.
+      desc: Прочные сита, используемые для отделения ценных металлов от осадка в воде.
     magnetic:
       name: Магнитный
       requirement: Требуется <object id="magnetic" /> предмет.
       requirementLevel: Требуется магнит с характеристиками <keywordRequirements />.
+      desc: Очень притягательный. Некоторые активности требуют предметов с магнитными
+        свойствами.
     fishingCage:
       requirement: Требуется <object id="fishingCage" />.
       name: Рыболовная ловушка
       requirementLevel: Требуется рыболовная ловушка с характеристиками <keywordRequirements
         />.
+      desc: Рыболовные ловушки необходимы для ловли садком. Должны быть экипированы,
+        чтобы ловить рыбу.
     craftingTool:
       requirement: Требуется <object id="craftingTool" />.
       name: Инструмент для изготовления
       requirementLevel: Требуется инструмент для изготовления с характеристиками <keywordRequirements
         />.
+      desc: Инструменты для изготовления включают гаечные ключи и отвертки.
     fishingSpear:
       requirement: Требуется <object id="fishingSpear" />.
       name: Рыболовное копьё
       requirementLevel: Требуется рыболовное копьё с характеристиками <keywordRequirements
         />.
+      desc: Гарпуны необходимы для подводной охоты. Должны быть экипированы, чтобы
+        ловить рыбу.
     tool:
       requirement: Требуется <object id="tool" />.
       name: Инструмент
@@ -132,101 +165,174 @@ singulars:
       name: Кухонный инструмент
       requirementLevel: Требуется кухонный инструмент с характеристиками <keywordRequirements
         />.
+      desc: Кулинарные инструменты включают сковороды, ножи и разделочные доски.
     carpentryTool:
       requirement: Требуется <object id="carpentryTool" />.
       name: Плотницкий инструмент
       requirementLevel: Требуется плотницкий инструмент с характеристиками <keywordRequirements
         />.
+      desc: Плотницкие инструменты включают пилы и стамески.
     fishingTool:
       requirement: Требуется <object id="fishingTool" />.
       name: Рыболовный инструмент
       requirementLevel: Требуется рыболовный инструмент с характеристиками <keywordRequirements
         />.
+      desc: Рыболовные инструменты включают удочки, копья (гарпуны), сети и ловушки
+        (садки).
     fishingLure:
       requirement: Требуется <object id="fishingLure" />.
       name: Рыболовная приманка
       requirementLevel: Требуется рыболовная приманка с характеристиками <keywordRequirements
         />.
+      desc: Вы можете использовать рыболовную приманку как средство для более легкого
+        привлечения рыбы.
     cookingKnife:
       name: Кухонный нож
       requirement: Требуется <object id="cookingKnife" />.
       requirementLevel: Требуется кухонный нож с характеристиками <keywordRequirements
         />.
+      desc: Кулинарные ножи используются для нарезки ингредиентов для готовки.
     cuttingBoard:
       name: Разделочная доска
       requirement: Требуется <object id="cuttingBoard" />.
       requirementLevel: Требуется разделочная доска с характеристиками <keywordRequirements
         />.
+      desc: Используется как поверхность для нарезки ингредиентов.
     cookingSpices:
       name: Специи
       requirement: Требуется <object id="cookingSpices" />.
       requirementLevel: Требуются специи с характеристиками <keywordRequirements />.
+      desc: Когда-то были очень дорогими. В наши дни полезны для кулинарных целей.
     saw:
       name: Пила
       requirement: Требуется <object id="saw" />.
       requirementLevel: Требуется пила с характеристиками <keywordRequirements />.
+      desc: Пилы используются в основном в <object id="carpentry" /> и дают бонусы
+        к этому навыку.
     foragingTool:
       name: Инструмент для сбора
       requirement: Требуется <object id="foragingTool" />.
       requirementLevel: Требуется инструмент для сбора с характеристиками <keywordRequirements
         />.
+      desc: Инструмент, используемый для сбора ресурсов.
     agilityTool:
       name: Инструмент для ловкости
       requirement: Требуется <object id="agilityTool" />.
       requirementLevel: Требуется инструмент для ловкости с характеристиками <keywordRequirements
         />.
+      desc: Инструмент, используемый для активностей, связанных с ловкостью.
     miningTool:
       name: Горный инструмент
       requirement: Требуется <object id="miningTool" />.
       requirementLevel: Требуется горный инструмент с характеристиками <keywordRequirements
         />.
+      desc: Инструмент, используемый для добычи полезных ископаемых.
     smithingTool:
       name: Кузнечный инструмент
       requirement: Требуется <object id="smithingTool" />.
       requirementLevel: Требуется кузнечный инструмент с характеристиками <keywordRequirements
         />.
+      desc: Инструмент, используемый для кузнечного дела.
     trinketryTool:
       name: Ювелирный инструмент
       requirement: Требуется <object id="trinketryTool" />.
       requirementLevel: Требуется ювелирный инструмент с характеристиками <keywordRequirements
         />.
+      desc: Инструмент, используемый для ювелирного дела.
     woodcuttingTool:
       name: Инструмент для рубки леса
       requirement: Требуется <object id="woodcuttingTool" />.
       requirementLevel: Требуется инструмент для рубки леса с характеристиками <keywordRequirements
         />.
+      desc: Инструмент, используемый для рубки леса.
     wrench:
       name: Гаечный ключ
       requirement: Требуется <object id="wrench" />.
       requirementLevel: Требуется гаечный ключ с характеристиками <keywordRequirements
         />.
+      desc: Инструмент, используемый для затягивания или ослабления болтов и гаек.
+        Полезен для <object id="crafting" />.
     logSplitter:
       name: Колун
       requirement: Требуется <object id="item_log_splitter" />.
       requirementlevel: Требуется колун с характеристиками <keywordRequirements />.
+      desc: Инструмент, который можно использовать для <object id="woodcutting" />
+        в дополнение к топорам.
     huntingTrap:
       name: Охотничья ловушка
       requirement: Требуется <object id="huntingTrap" />.
       requirementLevel: Требуется охотничья ловушка с характеристиками <keywordRequirements
         />.
+      desc: Ловушка, используемая для <object id="hunting" /> на животных.
     magnifyingLense:
       name: Увеличительная линза
       requirement: Требуется <object id="magnifyingLense" />.
       requirementLevel: Требуется увеличительная линца с характеристиками <keywordRequirements
         />.
+      desc: Увеличительные линзы полезны для некоторых навыков типа <skillType type="artisan"/>.
     cookingPot:
       name: Кастрюля
       requirement: Требуется <object id="cookingPot" />.
       requirementLevel: Требуется кастрюля с характеристиками <keywordRequirements
         />.
+      desc: Полезные инструменты для <object id="cooking" />. Также известны тем,
+        что похожи на чайники.
     localMap:
       name: Карта
       requirement: Требуется <object id="localMap" />.
       requirementLevel: Требуется карта с характеристиками <keywordRequirements />.
+      desc: Предоставляет информацию о конкретной области мира, давая бонусы в этой
+        части света.
     huntingBow:
       name: Охотничий лук
       requirement: Требуется <object id="huntingBow" />.
       requirementLevel: Требуется охотничий лук с характеристиками <keywordRequirements
+        />.
+      desc: Лук, используемый для <object id="hunting" /> на животных (и других вещей,
+        которые могут вас раздражать).
+    birdhouse:
+      requirement: Требуется <object id="birdhouse" />.
+      name: Скворечник
+      desc: Возможно, скворечники появятся в игре позже.
+      requirementLevel: Требуется скворечник, имеющий как минимум <keywordRequirements
+        /> в своих требованиях.
+    toolbox:
+      desc: Ящики для инструментов используются для хранения ваших различных инструментов.
+        Полезны для навыков типа <skillType type="artisan" />.
+      requirementLevel: Требуется ящик для инструментов с характеристиками <keywordRequirements
+        />.
+      requirement: Требуется <object id="toolbox" />
+      name: Ящик для инструментов
+    scissors:
+      desc: Ножницы используются для кройки. Полезны для <object id="tailoring" />.
+      name: Ножницы
+      requirement: Требуются <object id="scissors" />.
+      requirementLevel: Требуются ножницы с характеристиками <keywordRequirements
+        />.
+    cuttingMat:
+      requirement: Требуется <object id="cuttingMat" />.
+      name: Раскройный коврик
+      desc: Раскройные коврики полезны для <object id="tailoring" />.
+      requirementLevel: Требуется раскройный коврик с характеристиками <keywordRequirements
+        />.
+    needle:
+      requirementLevel: Требуется игла с характеристиками <keywordRequirements />.
+      name: Игла
+      desc: Инструмент, используемый для шитья. Полезен для <object id="tailoring"
+        />.
+      requirement: Требуется <object id="needle" />.
+    pliers:
+      desc: Плоскогубцы используются для точного захвата и сгибания. Полезны для <object
+        id="trinketry" />.
+      name: Плоскогубцы
+      requirement: Требуются <object id="pliers" />.
+      requirementLevel: Требуются плоскогубцы с характеристиками <keywordRequirements
+        />.
+    pins:
+      name: Булавки
+      desc: Булавки используются для <object id="tailoring" />.
+      requirement: Требуются <object id="pins" />.
+      requirementLevel: Требуются булавки с характеристиками <keywordRequirements
         />.
   gear:
     skillingGear:
@@ -239,70 +345,92 @@ singulars:
       name: Лыжи
       requirementLevel: Требует лыжи, которые имеют хотя бы <keywordRequirements />
         в своих требованиях.
+      desc: Лыжи позволяют путешествовать по заснеженным местностям и открывают короткие
+        пути в Джарвонии. Они также необходимы для некоторых зимних активностей.
     frisbee:
       name: Фрисби
       requirementLevel: Требует фрисби, которое имеет хотя бы <keywordRequirements
         /> в своих требованиях.
       requirement: Требуется <object id="frisbee" />.
+      desc: Фрисби используется для игры во, сюрприз, фрисби.
     lifeVest:
       name: Спасжилет
       requirement: Требуется <object id="lifevest" />.
       requirementLevel: Требуется спасжилет с характеристиками <keywordRequirements
         />.
+      desc: Удерживает вас на плаву в воде! Спасательные жилеты обязательны на лодке
+        (чтобы вы не утонули).
     bugCatchingNet:
       name: Сачок для бабочек
       requirement: Требуется <object id="bugCatchingNet" />.
       requirementLevel: Требуется сачок для бабочек с характеристиками <keywordRequirements
         />.
+      desc: Сачком можно ловить жуков!
     socks:
       name: Носки
       requirement: Необходимо надеть <object id="item_socks" />.
       requirementLevel: Требуются носки с характеристиками <keywordRequirements />.
+      desc: Бывают разных цветов и узоров. Поиск случайных носков может помочь вам
+        получить достижение.
     shield:
       name: Щит
       requirement: Требуется <object id="shield" />.
       requirementLevel: Требуется щит с характеристиками <keywordRequirements />.
+      desc: Отлично подходят для рисования как большой холст, так и для принятия удара.
     ring:
       name: Кольцо
       requirement: Требуется <object id="item_ring" />.
       requirementLevel: Требуется кольцо с характеристиками <keywordRequirements />.
+      desc: Надевается на палец.
     weapon:
       name: Оружие
       requirement: Требуется <object id="weapon" />.
       requirementLevel: Требуется оружие с характеристиками <keywordRequirements />.
+      desc: Отлично подходят для нападения, а значит, и для защиты.
     amulet:
       name: Амулет
       requirement: Требуется <object id="item_amulet" />.
       requirementLevel: Требуется амулет с характеристиками <keywordRequirements />.
+      desc: Амулеты носятся на шее.
     bellows:
       name: Мехи
       requirement: Требуется <object id="bellows" />.
       requirementLevel: Требуются кузнечные мехи с характеристиками <keywordRequirements
         />.
+      desc: Меха позволяют поддувать огонь кислородом, заставляя пламя разгораться
+        сильнее!
     basket:
       requirement: Требуется <object id="basket" />.
       name: Корзина
       requirementLevel: Требуется корзина с характеристиками <keywordRequirements
         />.
+      desc: Корзины позволяют носить больше предметов в инвентаре.
     climbing:
       name: Альпинистское снаряжение
       requirement: Требуется <object id="climbingTool" />.
       requirementLevel: Требуется альп.снаряжение с характеристиками <keywordRequirements
         />.
+      desc: Снаряжение для лазания открывает короткие пути в горных районах и требуется
+        для некоторых видов деятельности, связанных с лазанием.
     underwater:
       name: Подводное снаряжение
       requirement: Требуется <object id="item_underwater" />.
       requirementLevel: Требуется подводное снаряжение с характеристиками <keywordRequirements
         />.
+      desc: Подводные предметы дают преимущества, пока вы находитесь под водой.
     arrows:
       name: Стрелы
       requirement: Требуются <object id="arrows" />.
       requirementLevel: Требуются стрелы с характеристиками <keywordRequirements />.
+      desc: При использовании луков во время охоты или боя требуются стрелы в качестве
+        боеприпасов.
   materials:
     logs:
       name: Бревно
       requirement: Требуется <object id="logs" />.
       requirementLevel: Требуется бревно с характеристиками <keywordRequirements />.
+      desc: Может быть переработан в <object id="plank" />. Базовый материал, получаемый
+        при <object id="woodcutting" />.
     bar:
       name: Слиток
       requirement: Требуется <object id="bar" />.
@@ -317,6 +445,8 @@ singulars:
       requirement: Требуется <object id="fish" />.
       requirementLevel: Требуется рыба, которая имеет хотя бы <keywordRequirements
         /> в своих требованиях.
+      desc: Может использоваться в различных рецептах <object id="cooking" />. Базовый
+        ингредиент, получаемый из <object id="fishing" />.
     ore:
       name: Руда
       requirement: Требуется <object id="ore" />.
@@ -340,6 +470,8 @@ singulars:
       requirement: Требуется <object id="plant" />.
       requirementLevel: Требуется растение с характеристиками <keywordRequirements
         />.
+      desc: Может использоваться в различных рецептах типа <skillType type="artisan"
+        />. Базовый материал, получаемый от <object id="foraging" />.
     nugget:
       name: Самородок
       requirement: Требуется <object id="nugget" />.
@@ -629,7 +761,7 @@ singulars:
       requirementLevel: Требуется экспертное водолазное снаряжение с характеристиками
         <keywordRequirements />.
     adventuringTools:
-      name: Комплект инструментов путешественника
+      name: Комплект инструментов авантюриста
       requirementLevel: Требуется комплект инструментов путешественника с характеристиками
         <keywordRequirements />.
       requirement: Требуется комплект <object id="itemset_adventuring_tools" />.

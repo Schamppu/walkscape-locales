@@ -58,14 +58,24 @@ singulars:
       name: 'Memosfera: Herrería'
       desc: Otorga experiencia en <skill skill="smithing"/>.
       completed: Tocas el orbe y empiezas a sentirte como un lingote de hierro convirtiéndose
-        a golpes en una espada. Duele un poco, pero notas que ahora podrás forjar
-        mejor.
+        a golpes en una espada. Duele un poco, pero te da la sensación de que ahora
+        podrás forjar mejor.
     trinketry:
       name: 'Memosfera: Joyería'
       desc: Otorga experiencia en <skill skill="trinketry"/>.
       completed: Colocas la mano sobre el orbe y empiezas a ver un caleidoscopio de
         gemas flotando justo encima de ti. Puedes ver patrones y planos que nunca
         antes habías considerado.
+    tailoring:
+      completed: Pones tu mano sobre el orbe y notas un cosquilleo. Sientes que puedes
+        percibir algunos de los tejidos específicos de tu ropa.
+      name: 'Memosfera: Sastrería'
+      desc: Otorga experiencia en <skill skill="tailoring"/>.
+    hunting:
+      name: 'Memosfera: Caza'
+      desc: Otorga experiencia en <skill skill="hunting"/>.
+      completed: Pones tu mano sobre el orbe y tus sentidos se ven abrumados. Sientes
+        de repente que puedes detectar y distinguir a todas las criaturas que te rodean.
   activities:
     emergencySwimSyrenthia:
       desc: Nadas hasta <object id="location-port_skildar-2b12283e-6309-45af-8332-fb470267f510"
@@ -160,3 +170,16 @@ singulars:
     completed: Tu <h1>Tortuga</h1> coge unos cuantos de tus materiales de fundición
       y se mete en su caparazón cerca del horno. Sientes una ola repentina de calor
       y la ves volver con el botín resultante.
+  theHuntIsOn:
+    completed: Tu <hl>Tigre</hl> se agazapa y salta delante de ti; debe haber captado
+      el rastro de alguna presa, ¡mejor que lo sigas mientras te ayuda a cazar!
+    name: Empieza La Caza
+    desc: Otorga buffs temporales hacia <skill skill="hunting"/>.
+  cleverClimber:
+    name: Escalador Espabilado
+    desc: Cuenta como una <object id="climbingTool" />.
+  thatsAWrap:
+    name: ¿Te lo envuelvo para regalo?
+    desc: Da algo de <hl>tela de lino</hl>.
+    completed: Tu <hl>Momia</hl> toma algunas de sus telas de lino sobrantes que se
+      habían desparramado por su cuerpo y te los entrega como regalo.

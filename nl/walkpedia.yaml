@@ -65,6 +65,24 @@ singulars:
         description: Winkels zijn plekken waar je voorwerpen kunt kopen en verkopen.
           Ze zijn doorgaans te vinden in gebouwen.
         tabText: Winkellijst
+    keywordList:
+      phrases:
+        referencedByServices: Voorzieningen met dit trefwoord
+        relatedToGear: Uitrusting trefwoorden
+        relatedToMaterials: Materiaal trefwoorden
+        relatedToConsumables: Verbruiksartikel trefwoorden
+        relatedToLocations: Locatie trefwoorden
+        relatedToServices: Voorziening trefwoorden
+        referencedByConsumables: Verbruiksartikelen met dit trefwoord
+        referencedByLocations: Locaties met dit trefwoord
+        referencedByMaterials: Materialen met dit trefwoord
+        referencedByGear: Uitrustingen met dit trefwoord
+      info:
+        description: Trefwoorden worden gebruikt voor tal van artikelen, locaties,
+          voorzieningen en activiteiten. Je kunt hier bijvoorbeeld eenvoudig nagaan
+          welke artikelen als lichtbronnen worden aangemerkt.
+        title: Trefwoorden
+        tabText: Trefwoordenlijst
   contentPages:
     item:
       info:
@@ -229,6 +247,7 @@ singulars:
         unlocksDesc: Bekijk wat je vrij kan spelen door beter te worden in deze vaardigheid.
         fromLevelToLevel: Van niveau <c>{from}</c> tot niveau <c>{to}</c>
         guide: Gids
+        statistics: Statistieken
   phrases:
     home:
       story: Verhaal
@@ -272,6 +291,8 @@ singulars:
       unknown: Deze onderdelen zijn nog onbekend voor jouw personage. Blijf verkennen
         om alle details te kunnen zien!
       rumors: Bekende geruchten
+    keyword:
+      requiresThisKeyword: Inhoud waarvoor dit trefwoord nodig is
 maps:
   phrases:
     item:
@@ -284,6 +305,14 @@ maps:
         "collectible": Verzamelobjecten
         "egg": Eieren van beestjes
         "currency": Valuta's
+  dataTypes:
+    "item": Voorwerp
+    "achievement": Prestatie
+    "activity": Activiteit
+    "location": Locatie
+    "service": Voorziening
+    "recipe": Recept
+    "route": Reisroute
 plurals:
   skillUnlocks:
     itemRequirementsMet:

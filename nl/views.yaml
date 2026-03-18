@@ -164,41 +164,54 @@ fromOverLevels: 'Een hoger niveau zijn <numberProgress current="{current}" max="
 />', agilityBonus: 'Behendigheidsniveau <c>{level}</c>', fromGear: Huidige uitrusting,
 fromServices: Voorzieningsbonus, fromCollectibles: Verzamelobjecten, fromConsumables: Verbruiksartikelen,
 changeActivity: Activiteit wijzigen, abilities: Abilities, fromOverencumbered: Overbelast,
-baseEfficiency: Basisefficiëntie, fromPets: Beestjes}, info: {noActivity: 'Momenteel
-geen activiteit geselecteerd. <hl>Kies er hieronder een</hl>, of swipe naar links
-om alle beschikbare activiteiten op deze locatie te zien.', savedSteps: Bewaarde stappen
-voorkomen dat je stappen verspilt en ze worden aangevuld door te lopen zonder een
-activiteit actief te hebben. Ze worden gebruikt door stappen die je zet te verdubbelen
-wanneer je weer een activiteit actief hebt., consumablesUsage: Je kunt <c>voedsel</c>
-en een <c>elixer</c> kiezen om te nuttigen tijdens activiteiten.}, rewards: {experience: '<bp
-/><c>{xp} </c>ervaring in <object id="{skill}"/>', collectibles: '<bp /><icon i="Collectibles"/><c>{count}
+baseEfficiency: Basisefficiëntie, fromPets: Beestjes, inputsNotMet: Invoervereisten
+niet voldaan, fromInputAttributes: Voer eigenschappen in, fromFineInputs: Hoge kwaliteit
+invoer, fromEffects: Actieve effecten, availableInput: '(<c>{quantity}x</c> beschikbaar)',
+requiresInput: '<hl>{quantity}x</hl> <object id="{keyword}"/> benodigd', requiresInputWithLevel: '<hl>{quantity}x</hl>
+<object id="{skill}" /> niveau<c>{level}</c> <object id="{keyword}"/> benodigd', noInputOptions: 'Je
+hebt geen <object id="{keyword}"/> in je inventaris om als invoer te gebruiken', activeEffects: Actieve
+effecten, requiresInputOptional: '(Optioneel) Gebruikt <hl>{quantity}x</hl> <object
+id="{keyword}"/>', fineInputBenefit: Voordelen van het gebruik van <c>hoge kwaliteit
+grondstoffen</c>, requiresInputWithLevelOptional: '(Optioneel) <hl>{quantity}x</hl>
+<object id="{skill}" /> niveau <c>{level}</c> <object id="{keyword}"/> benodigd',
+requirementsNotMetForInput: 'Vereisten voor <object id="{item}"/> niet voldaan', allAttributes: Toon
+alle eigenschappen}, info: {noActivity: 'Momenteel geen activiteit geselecteerd. <hl>Kies
+er hieronder een</hl>, of swipe naar links om alle beschikbare activiteiten op deze
+locatie te zien.', savedSteps: Bewaarde stappen voorkomen dat je stappen verspilt
+en ze worden aangevuld door te lopen zonder een activiteit actief te hebben. Ze worden
+gebruikt door stappen die je zet te verdubbelen wanneer je weer een activiteit actief
+hebt., consumablesUsage: Je kunt <c>voedsel</c> en een <c>elixer</c> kiezen om te
+nuttigen tijdens activiteiten.}, rewards: {experience: '<bp /><c>{xp} </c>ervaring
+in <object id="{skill}"/>', collectibles: '<bp /><icon i="Collectibles"/><c>{count}
 verzamelobjecten</c> te vinden', reputation: '<bp /><object id="{faction}" /> reputatie
 <c>+{amount}</c>'}, options: {completeUntilActions: Specifiek aantal keer uitvoeren,
 numberOfActions: Aantal acties}}, abilities: {phrases: {abilities: Abilities, useAbility: Gebruik
 ability, holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt houden
 om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel, alreadyHere: 'Je
 bent al in <object id="{location}"/>. Ability kan niet gebruikt worden om hierheen
-te reizen.'}, info: {abilitiesInfo: Abilities zijn speciale acties die je direct een
-voordeel in het spel geven. Abilities hebben een cooldown waar je op moet wachten
-voordat je de ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je hebt geen
-abilities</hl>. Bepaalde uitrusting in het spel geven je abilities die je kunt gebruiken
-om direct een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {phrases: {
-followingMustBeTrueToUse: 'Vereisten om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan
-het volgende moet voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown
-resterend:', cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown., charges: Ladingen,
-source: Bron, cooldownRequirements: Cooldown vereisten, cooldown: Cooldown, requirements: Vereisten}},
-journal: {phrases: {jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn <c>simpele en herhaalbare
-taken</c> die je kunt uitvoeren om beloningen te krijgen. Je kunt klusjes accepteren
-vanaf <c>prikborden</c> op verschillende locaties, zoals steden. Je kunt maximaal
-drie actieve klusjes hebben.'}}, treasury: {phrases: {noItems: Je hebt geen schatten
-om te openen. Je kunt schatkisten vinden bij verschillende activiteiten., openChest: Openen,
-openAll: Alles openen}}, jobs: {phrases: {rewards: Voltooiingsbeloningen, abandonJob: Klusje
-opgeven, openJournal: Dagboek openen, itemsFromInventory: Voorwerpen uit inventaris,
-itemsFromBank: Voorwerpen uit bank, youMustBeInLocation: 'Je moet op dezelfde locatie
-zijn als <object id="{obj}"/> om voorwerpen in te leveren.', hasNoBank: Er is geen
-bank op deze locatie., hasNoItemsInInventory: Er zijn geen geschikte voorwerpen in
-je inventaris., giveItems: Voorwerpen geven, give: Geven, noJobsAvailable: 'Er zijn
-momenteel geen klusjes beschikbaar op deze locatie. Nieuwe klusjes komen beschikbaar
+te reizen.', cannotUseMore: Je kunt deze ability niet gebruiken. Mogelijk heb je deze
+ability al actief en zou de maximale duur daardoor worden overschreden.}, info: {
+abilitiesInfo: Abilities zijn speciale acties die je direct een voordeel in het spel
+geven. Abilities hebben een cooldown waar je op moet wachten voordat je de ability
+opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>. Bepaalde
+uitrusting in het spel geven je abilities die je kunt gebruiken om direct een voordeel
+te verkrijgen, met een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten
+om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet
+voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
+cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown., charges: Ladingen,
+source: Bron, cooldownRequirements: Cooldown vereisten, cooldown: Cooldown, requirements: Vereisten,
+inputAtMax: Max.}}, journal: {phrases: {jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn
+<c>simpele en herhaalbare taken</c> die je kunt uitvoeren om beloningen te krijgen.
+Je kunt klusjes accepteren vanaf <c>prikborden</c> op verschillende locaties, zoals
+steden. Je kunt maximaal drie actieve klusjes hebben.'}}, treasury: {phrases: {noItems: Je
+hebt geen schatten om te openen. Je kunt schatkisten vinden bij verschillende activiteiten.,
+openChest: Openen, openAll: Alles openen}}, jobs: {phrases: {rewards: Voltooiingsbeloningen,
+abandonJob: Klusje opgeven, openJournal: Dagboek openen, itemsFromInventory: Voorwerpen
+uit inventaris, itemsFromBank: Voorwerpen uit bank, youMustBeInLocation: 'Je moet
+op dezelfde locatie zijn als <object id="{obj}"/> om voorwerpen in te leveren.', hasNoBank: Er
+is geen bank op deze locatie., hasNoItemsInInventory: Er zijn geen geschikte voorwerpen
+in je inventaris., giveItems: Voorwerpen geven, give: Geven, noJobsAvailable: 'Er
+zijn momenteel geen klusjes beschikbaar op deze locatie. Nieuwe klusjes komen beschikbaar
 over:', refreshIn: 'Het prikbord wordt ververst over:', acceptedJobs: 'Huidig geaccepteerde
 klusjes <chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>', hasNoItemsInBank: Er
 zijn geen geschikte voorwerpen in je bank., acceptJob: Klusje accepteren, youMustBeInLocationToCollect: 'Je
@@ -218,10 +231,11 @@ door gedragen voorwerpen., noSkillModifiers: Geen vaardigheidsmodificators door 
 voorwerpen., noPermanentModifiers: Geen permanente modificatoren., permanentModifiers: Permanente
 modificatoren, combatModifiers: Gevechtsmodificatoren, noItemEquipped: Geen voorwerp
 uitgerust, noItemSelected: Geen voorwerp geselecteerd, gearSlots: uitrustingsvakken,
-toolSlots: Gereedschapsvakken}, info: {gearInfo: Rust je personage uit met uitrusting
-om zijn of haar eigenschappen te verbeteren. Je kunt op elk uitrustingsvak hieronder
-tikken om te zien welke items uit je inventaris je in dat vak kunt plaatsen., toolInfo: Rust
-je personage uit met gereedschap om je eigenschappen te verbeteren. In het begin heb
+toolSlots: Gereedschapsvakken, selectedItem: (Geselecteerde voorwerp), comparedItem: (Vergeleken
+voorwerp)}, info: {gearInfo: Rust je personage uit met uitrusting om zijn of haar
+eigenschappen te verbeteren. Je kunt op elk uitrustingsvak hieronder tikken om te
+zien welke items uit je inventaris je in dat vak kunt plaatsen., toolInfo: Rust je
+personage uit met gereedschap om je eigenschappen te verbeteren. In het begin heb
 je drie gereedschapsslots beschikbaar. Je ontgrendelt meer gereedschapsslots <c>door
 je personage te levelen</c>.}}, tools: {phrases: {emptyToolSlot: Leeg gereedschapsvak,
 lockedToolSlot: 'Vergrendeld gereedschapsvak tot <c>personage-niveau {level}</c>.',
@@ -338,8 +352,11 @@ geschiedenis gegevens laden, startingPlayerManagerProcess: Personage beheerproce
 starten, startingToLoadGame: Het spel wordt geladen, startingProcesses: Spelprocessen
 worden gestart, startingNetworkProcess: Netwerk proces starten, startingEventManagerProcess: Evenementenbeheer
 proces starten, loadingLocalStorage: Lokale opslag wordt geladen..., startingSentry: Sentry
-wordt gestart...}}, character: {phrases: {checkOutSubject: Check mijn voortgang in
-WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen van de laatste 7 dagen,
+wordt gestart..., settingUpPlayerMetadata: Aanmaken speler metadata, updatingStepReadTime: Bijwerken
+gelezen tijd van stappen, startingErrorManagerProcess: Foutbeheer proces starten,
+settingUpStepManager: Stappenmanager wordt ingesteld, reportingErrorToSentry: Foutmelding
+wordt naar Sentry gestuurd}}, character: {phrases: {checkOutSubject: Check mijn voortgang
+in WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen van de laatste 7 dagen,
 checkOut: 'Hier is mijn WalkScape personage {name}. Moet je kijken!\nhttps://walkscape.app',
 totalLevel: Totaalniveau, savePicture: Afbeelding opslaan, level: 'Personage-niveau:
 <c>{level}</c>', stepsToNextLevel: 'Stappen tot volgend niveau <c>{steps}</c>'}, info: {
@@ -454,26 +471,26 @@ op: ', toolSlot: Gereedschapsvak, default: Standaard, showAttributes: Attributen
 tools: Gereedschappen, name: Naam, unequipGear: Uitrusting uit doen, unequipTools: Gereedschap
 wegleggen, noItemSelected: Geen items geselecteerd, gear: Uitrusting, level: 'Niv. ',
 hideItems: Verberg voorwerpen, showItems: Toon voorwerpen, reorderGearSets: Herschik
-uitrustingssets}, errors: {duplicateItem: Deze uitrustingssets bevat dit item al,
-keywordError: 'Deze uitrustingssets bevat al een: <object id="{keyword}" />'}, info: {
-gearSetsDescription: Uitrustingssets helpen je om snel te kunnen wisselen tussen verschillende
-uitrustingen., gearSetManageDesc: 'Kies hieronder een uitrustingsset die je aan wilt
-trekken. Om sets aan te passen, te importeren of bewerken kan je op <c i=0>Beheren</c>
-drukken.', gearSetsListDesc: 'Hier kan je jouw uitrustingssets beheren. Als je een
-<c i=0>nieuwe uitrustingsset</c> wilt maken, druk dan op de knop hieronder. Je kan
-ook je <c i=1>huidige geactiveerde uitrustingsset kopiëren</c> wanneer je een nieuwe
-set gaat maken.', noGearSetsManage: Je hebt nog geen uitrustingssets gemaakt. Maak
-je eerste set door op <c i=0>Nieuwe set maken<c/> te drukken., noGearSetsList: Je
-hebt nog geen uitrustingssets. Kies <c i=0>Beheren</c> om een nieuwe set te creëren
-of importeren., youDontHaveAnyItems: 'Geen voorwerpen. Je kent geen voorwerpen van
-dit type of je hebt er geen, of je filters en zoekopdracht hebben geen resultaten
-opgeleverd die hieraan voldoen.', gearSetReorderDesc: Je kunt je uitrustingssets herschikken
-door ze in de onderstaande lijst te verslepen., noGearSets: Je hebt nog geen uitrustingen
-aangemaakt., gearSetManageShortDesc: 'Om uitrustingssets te maken, importeren of bewerken,
-druk je op <c i=0>Beheren</c>.'}}, queue: {phrases: {switchingToGearSet: 'Wisselen
-naar uitrustingsset <c>{name}</c>', activityInLocation: '<object id="{activity}"/>
-in <object id="{location}"/>', queue: Wachtrij, queuedActions: Acties in wachtrij,
-travelingTo: '<object id="{from}"/> naar <object id="{to}"/>', untilInventoryFull: Tot
+uitrustingssets, noRecipesSelected: Geen recepten geselecteerd, forRecipes: 'Voor
+recepten: '}, errors: {duplicateItem: Deze uitrustingssets bevat dit item al, keywordError: 'Deze
+uitrustingssets bevat al een: <object id="{keyword}" />'}, info: {gearSetsDescription: Uitrustingssets
+helpen je om snel te kunnen wisselen tussen verschillende uitrustingen., gearSetManageDesc: 'Kies
+hieronder een uitrustingsset die je aan wilt trekken. Om sets aan te passen, te importeren
+of bewerken kan je op <c i=0>Beheren</c> drukken.', gearSetsListDesc: 'Hier kan je
+jouw uitrustingssets beheren. Als je een <c i=0>nieuwe uitrustingsset</c> wilt maken,
+druk dan op de knop hieronder. Je kan ook je <c i=1>huidige geactiveerde uitrustingsset
+kopiëren</c> wanneer je een nieuwe set gaat maken.', noGearSetsManage: Je hebt nog
+geen uitrustingssets gemaakt. Maak je eerste set door op <c i=0>Nieuwe set maken<c/>
+te drukken., noGearSetsList: Je hebt nog geen uitrustingssets. Kies <c i=0>Beheren</c>
+om een nieuwe set te creëren of importeren., youDontHaveAnyItems: 'Geen voorwerpen.
+Je kent geen voorwerpen van dit type of je hebt er geen, of je filters en zoekopdracht
+hebben geen resultaten opgeleverd die hieraan voldoen.', gearSetReorderDesc: Je kunt
+je uitrustingssets herschikken door ze in de onderstaande lijst te verslepen., noGearSets: Je
+hebt nog geen uitrustingen aangemaakt., gearSetManageShortDesc: 'Om uitrustingssets
+te maken, importeren of bewerken, druk je op <c i=0>Beheren</c>.'}}, queue: {phrases: {
+switchingToGearSet: 'Wisselen naar uitrustingsset <c>{name}</c>', activityInLocation: '<object
+id="{activity}"/> in <object id="{location}"/>', queue: Wachtrij, queuedActions: Acties
+in wachtrij, travelingTo: '<object id="{from}"/> naar <object id="{to}"/>', untilInventoryFull: Tot
 inventaris vol is, noGearSetFound: 'Gekozen uitrustingsset niet gevonden, heb je deze
 verwijderd?', noPathFound: Geen pad naar de bestemming gevonden., forXActions: 'Voor
 <c>{count}</c> acties aan het doen', inputNotMet: Invoervereisten niet voldaan, petNotFound: 'Gekozen
@@ -528,18 +545,24 @@ hatchedAt: Uitgebroed op, noPets: Je hebt geen beestjes. Je kunt beestjes krijge
 door eieren te vinden en ze uit te broeden., petEggs: Eieren van beestjes, ownedFor: In
 bezit sinds, xpToHatch: XP nodig tot uitgebroed, hatchingProgress: Voortgang uitbroeden,
 isHatching: '<c>{name}</c> komt uit!', noEggsFound: Geen eieren gevonden die aan de
-zoekopdracht voldoen.}}, currencies: {info: {noCurrencies: "Je hebt momenteel geen
-valuta's. Je kunt valuta's verdienen bij <c>gilden</c>, <c>Heimelijke Handelaar</c>
-en andere <c>speciale bronnen</c>.", thereAreNoPaidCurrencies: Valuta's in het spel
-zullen <c>nooit</c> te koop zijn <c>met echt geld</c>.}, phrases: {goldCoins: Gouden
-munten, currencies: Valuta's}}, mysteriousMerchant: {phrases: {buyWithChips: Koop
-met fiches, ownedCurrency: Valuta's in bezit, buyItems: Koop voorwerpen, sellItems: Verkoop
-voorwerpen, trade: Handelen, sellingPrice: '{rarity} verkoopprijs', buyingPrice: '{rarity}
-koopprijs', sell: Verkopen, buy: Kopen, tradeChestItems: Voorwerpen vanuit schatkist
-verhandelen, sellFromInventory: Verkopen vanuit inventaris, sellFromBank: Verkopen
-vanuit de bank}, dialogue: {chooseChest: Een wijs besluit! Vanuit welke schatkist
-wil je <c>voorwerpen verhandelen</c>?, chestChosen: 'Aha, dus jij wilt voorwerpen
-uit de <object id="{chest}"/>. Uitstekende keuze! Vertel, wil je voorwerpen uit je
-<c>bank</c> of <c>inventaris</c> verhandelen, of wil je iets kopen met je <c>schatkistfiches</c>?'}},
-announcements: {info: {noAnnouncements: Er zijn op dit moment geen aankondigingen.},
-phrases: {unread: Ongelezen, new: Nieuw}}}}
+zoekopdracht voldoen., requirementsToHatchNotMet: '<c>{name}</c> kan geen ei uitbroeden'}},
+currencies: {info: {noCurrencies: "Je hebt momenteel geen valuta's. Je kunt valuta's
+verdienen bij <c>gilden</c>, <c>Heimelijke Handelaar</c> en andere <c>speciale bronnen</c>.",
+thereAreNoPaidCurrencies: Valuta's in het spel zullen <c>nooit</c> te koop zijn <c>met
+echt geld</c>.}, phrases: {goldCoins: Gouden munten, currencies: Valuta's}}, mysteriousMerchant: {
+phrases: {buyWithChips: Koop met fiches, ownedCurrency: Valuta's in bezit, buyItems: Koop
+voorwerpen, sellItems: Verkoop voorwerpen, trade: Handelen, sellingPrice: '{rarity}
+verkoopprijs', buyingPrice: '{rarity} koopprijs', sell: Verkopen, buy: Kopen, tradeChestItems: Voorwerpen
+vanuit schatkist verhandelen, sellFromInventory: Verkopen vanuit inventaris, sellFromBank: Verkopen
+vanuit de bank, totalSellingPrice: 'Totaal voor de verkoop van <c>{amount}</c> voorwerpen',
+totalBuyingPrice: 'Totaal voor de aankoop van <c>{amount}</c> voorwerpen'}, dialogue: {
+chooseChest: Een wijs besluit! Vanuit welke schatkist wil je <c>voorwerpen verhandelen</c>?,
+chestChosen: 'Aha, dus jij wilt voorwerpen uit de <object id="{chest}"/>. Uitstekende
+keuze! Vertel, wil je voorwerpen uit je <c>bank</c> of <c>inventaris</c> verhandelen,
+of wil je iets kopen met je <c>schatkistfiches</c>?'}}, announcements: {info: {noAnnouncements: Er
+zijn op dit moment geen aankondigingen.}, phrases: {unread: Ongelezen, new: Nieuw}},
+attributeListing: {phrases: {overlevelingWithNumber: 'Het vaardigheidsniveau ligt
+<c>+{level}</c> boven de vereiste.', noAttributes: Geen active eigenschappen., noAttributesTip: 'Je
+hebt geen actieve eigenschappen van uitrusting, gereedschap of andere bronnen, of
+je filters hebben geen geschikte eigenschappen opgeleverd.', allAttributes: Alle eigenschappen},
+options: {showInactiveAttributes: Toon inactieve eigenschappen}}}}

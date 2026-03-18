@@ -138,6 +138,8 @@ maps:
       'totalSteps': Toplam <c>adım</c>
       'totalLevel': Toplam <c>seviye</c>
       'cooking': <c>Aşçılık</c> seviyesi
+      "hunting": <c>Avcılık</c> seviyesi
+      "tailoring": <c>Terzilik</c> seviyesi
   character:
     stepsTime:
       'hourly': Saatlik adım
@@ -301,6 +303,15 @@ plurals:
         zero: '-'
         few: '-'
         many: '-'
+  gearSets:
+    phrases:
+      selected:
+        one: <hl>{}</hl> seçili
+        zero: '-'
+        two: <hl>{}</hl> seçili
+        few: '-'
+        many: '-'
+        other: <hl>{}</hl> seçili
 singulars:
   achievements:
     info:
@@ -395,6 +406,8 @@ singulars:
       noItemEquipped: Kuşanılmış eşya bulunmuyor
       gearSlots: Teçhizat yuvaları
       toolSlots: Alet yuvaları
+      comparedItem: (Kıyaslanan eşya)
+      selectedItem: (Seçili eşya)
     info:
       toolInfo: Aletler kuşanarak karakterinin niteliklerini geliştir. Yeni başladığında
         üç adet alet yuvası mevcuttur. <c>Karakterinin seviyesini yükselterek</c>
@@ -458,6 +471,7 @@ singulars:
       enableWhenBack: Önceki faaliyete başlayınca yeniden kullan
       depositAll: Tümü
       hatchesInto: 'İçinden çıkan:'
+      inputAttributes: Girdi nitelikleri
   leaderboards:
     phrases:
       first: İlk
@@ -845,6 +859,25 @@ singulars:
       baseEfficiency: Esas verim
       fromOverencumbered: Envanter dolup taşmış
       fromPets: Evcil hayvanlar
+      requiresInput: <hl>{quantity}x</hl> <object id="{keyword}"/> gerekli
+      requiresInputWithLevelOptional: (Seçmeli) <hl>{quantity}x</hl> <object id="{skill}"
+        /> seviye <c>{level}</c> <object id="{keyword}"/> kullanılır
+      inputsNotMet: Girdi gereksinimleri karşılanmıyor
+      fromInputAttributes: Girdi nitelikleri
+      fromFineInputs: İyi girdiler
+      fromEffects: Aktif etkiler
+      availableInput: (<c>{quantity}x</c> mevcut)
+      requiresInputOptional: (Seçmeli) <hl>{quantity}x</hl> <object id="{keyword}"/>
+        kullanılır
+      requiresInputWithLevel: <hl>{quantity}x</hl> <object id="{skill}" /> seviye
+        <c>{level}</c> <object id="{keyword}"/> gerekli
+      noInputOptions: Girdi olarak kullanmak için envanterinde hiç <object id="{keyword}"/>
+        bulunmuyor
+      fineInputBenefit: <c>İyi girdi</c> kullanmanın faydaları
+      requirementsNotMetForInput: <object id="{item}"/> gereksinimleri karşılanmıyor
+      inputAttributes: <object id="{item}"/> kullanmanın faydaları
+      allAttributes: Bütün nitelikleri göster
+      activeEffects: Aktif etkiler
     info:
       consumablesUsage: Faaliyet yaparken kullanmak için birer <c>yiyecek</c> ve <c>iksir</c>
         seçebilirsin.
@@ -948,6 +981,7 @@ singulars:
       noAction: Eylem yok
       holdToUse: Kullanmak için basılı tut
       alreadyHere: Zaten <object id="{location}"/> konumundasın. Bu yetenek kullanılamaz.
+      lastsFor: 'Etkilerin süresi:'
   faction:
     phrases:
       openFaction: Diyara bak
@@ -984,6 +1018,8 @@ singulars:
       hideItems: Eşyaları gizle
       reorderGearSets: Teçhizat setlerini yeniden sırala
       showItems: Eşyaları göster
+      noRecipesSelected: Seçili tarif bulunmuyor
+      forRecipes: 'Tarifler için: '
     info:
       gearSetsDescription: Teçhizat setleri, teçhizatını çabucak değiştirmene yardım
         eder.
@@ -1027,6 +1063,19 @@ singulars:
       requirements: Gereksinimler
       cooldownRequirements: Bekleme süresi gereksinimleri
       charges: Yük
+      noInputsAvailable: Bu bekleme süresi için kullanabileceğin bir <object id="{item}"/>
+        bulunmuyor.
+      inputCharges: 'Yükler:'
+      inputNextCharge: 'Sonraki yük:'
+      inputAtMax: Azami
+      cooldownCharged: <c>{target}</c> için <object id="{ability}"/> yeteneğin artık
+        hazır!
+    inputs:
+      item: <object id="{item}" /> eşyasından <bp /><chip><icon i="input" size="16"
+        vp="3.0" />  <hl>{amount}</hl> </chip> kazanıldı
+    info:
+      inputCooldownInfo: Bu yetenek eşya kullanarak yüklenir. Bir tam yük için <icon
+        i="input" size="16" vp="3.0" />  <hl>{amount}</hl> gerekli.
   wardrobe:
     phrases:
       noHeadwear: Herhangi bir başlığın bulunmuyor.
@@ -1131,6 +1180,7 @@ singulars:
       none: Hiçbir şey
       switchedToPet: <playerPet id="{pet}"/> çağırıldı
       petDoesNotExist: Bu evcil hayvan artık mevcut değil, çağrılamıyor.
+      inputsUsed: Kullanılan girdiler
   announcements:
     info:
       noMoreAnnouncements: Duyuruların sonuna ulaştın! Gösterecek başka duyuru kalmadı.
@@ -1210,6 +1260,8 @@ singulars:
       noEggs: Sahiplendiğin evcil hayvan yumurtası bulunmuyor.
       noEggsFound: Aramanla eşleşen yumurta bulunamadı.
       noPetsFound: Aramanla eşleşen evcil hayvan bulunamadı.
+      actionsToNextLevel: Sonraki seviyeye kalan eylem
+      actionsToHatch: Yumurtadan çıkmaya kalan eylem
   currencies:
     phrases:
       currencies: Paralar
@@ -1252,3 +1304,14 @@ singulars:
       buy: Al
       buyItems: Eşya satın al
       sellItems: Eşya sat
+  attributeListing:
+    phrases:
+      allAttributes: Bütün nitelikler
+      noAttributesTip: Teçhizatlar, aletler veya diğer kaynaklardan kazandığın herhangi
+        bir nitelik bulunmuyor ya da arama sonuçların herhangi bir uygun nitelik bulamadı.
+      noAttributes: Aktif nitelik bulunmuyor.
+      overlevelingWithNumber: Beceri seviyen gereksinimden <c>+{level}</c> seviye
+        fazla.
+      overlevelingFromAgility: <object id="agility" /> seviyesi <c>{level}</c> seviyeden.
+    options:
+      showInactiveAttributes: Aktif olmayan nitelikleri göster

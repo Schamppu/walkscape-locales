@@ -415,7 +415,7 @@ singulars:
         desc: Pantalones calientes, flexibles y que flotan fabricados con fibras de
           alga para exploración submarina.
         activityDesc: Procesas algas para obtener suaves fibras que trenzas en hilo.
-          Usando técnicas de punto o tejido creas unos pantalones que dan calor, flotabilidad
+          Usando técnicas de punto y cosido creas unos pantalones que dan calor, flotabilidad
           y libertad de movimiento en las aventuras submarinas.
       kelpDivingMask:
         desc: Una ayuda a la visión subacuática básica fabricada con algas secas,
@@ -446,7 +446,7 @@ singulars:
         desc: Una prenda flexible que flota fabricada con fibras de alga, diseñada
           para ayudar en la exploración submarina.
         activityDesc: Procesas algas para obtener suves fibras que trenzas en hilo.
-          Usando técnicas de punto o tejido creas una prenda tipo camisa que da calor
+          Usando técnicas de punto y cosido creas una prenda tipo camisa que da calor
           y flotabilidad en las profundidades frías y acuosas.
       hydriliumDivingBody:
         name: Fabrica un torso de submarinismo de hidrilio
@@ -459,30 +459,30 @@ singulars:
   smithing:
     scrap:
       copperBarScrap:
-        name: Crea un lingote de cobre (Chatarra)
-        desc: Calienta y da forma a la chatarra en un lingote sólido para varios usos.
-        activityDesc: Con las técnicas adecuadas, fundes chatarra en lingotes de cobre
-          duraderos.
+        name: Crea un lingote de cobre (Restos)
+        desc: Calienta y da forma a los restos en un lingote sólido para varios usos.
+        activityDesc: Con las técnicas adecuadas, fundes los restos en lingotes de
+          cobre duraderos.
       bronzeBarScrap:
-        name: Crea un lingote de bronce (Chatarra)
-        desc: Funde chatarra para crear un versátil lingote de bronce.
-        activityDesc: Fundiendo hábilmente chatarra en un lingote metálico versátil,
-          fabricas un lingote de bronce.
+        name: Crea un lingote de bronce (Restos)
+        desc: Funde restos de metal para crear un versátil lingote de bronce.
+        activityDesc: Fundiendo hábilmente restos de metal en un lingote metálico
+          versátil, fabricas un lingote de bronce.
       ironBarScrap:
-        name: Crea un lingote de hierro (Chatarra)
-        desc: Transforma chatarra en un lingote de hierro sólido y útil.
-        activityDesc: Fundiendo con destreza chatarra en un lingote metálico versátil,
-          fabricas un lingote de hierro.
+        name: Crea un lingote de hierro (Restos)
+        desc: Transforma restos de metal en un lingote de hierro sólido y útil.
+        activityDesc: Fundiendo con destreza restos de metal en un lingote metálico
+          versátil, fabricas un lingote de hierro.
       steelBarScrap:
-        name: Crea un lingote de acero (Chatarra)
+        name: Crea un lingote de acero (Restos)
         desc: Forja un fuerte lingote de acero para diversas aplicaciones intensivas.
-        activityDesc: Dando forma de manera precisa a chatarra en un lingote metálico
-          duradero, fabricas un lingote de acero.
+        activityDesc: Dando forma de manera precisa restos de metal en un lingote
+          metálico duradero, fabricas un lingote de acero.
       tarsiliumBarScrap:
-        name: Crea un lingote de alquitranio (Chatarra)
-        desc: Crea un lingote de alquitranio con chatarra.
-        activityDesc: La chatarra se funde en el molde, formando un líquido denso
-          y turbio. Se enfría lentamente para forma un lingote de alquitranio.
+        name: Crea un lingote de alquitranio (Restos)
+        desc: Crea un lingote de alquitranio con restos de metal.
+        activityDesc: Los restos de metal se funden en el molde, formando un líquido
+          denso y turbio. Se enfría lentamente para forma un lingote de alquitranio.
       farganiteBarScrap:
         activityDesc: Las virutas resisten el fuego, pero gracias a tu dedicación
           al horno se funden y forman un suave lingote azul.
@@ -653,8 +653,8 @@ singulars:
       oakPlankScrap:
         name: Crea un tablón de roble (Restos)
         desc: Crea un tablón de roble, apreciado por su durabilidad y belleza.
-        activityDesc: Con cuidado, das forma de hermoso tablón a los restos, fabricando
-          un tablón de roble.
+        activityDesc: Con cuidado, das forma de hermoso tablón a los restos de madera,
+          fabricando un tablón de roble.
       teakPlankScrap:
         name: Crea un tablón de teca (Restos)
         desc: Crea un tablón de teca, apreciado por su durabilidad y fuerza.
@@ -755,6 +755,20 @@ singulars:
         name: Cortar en ectoplasma
         desc: Rompe los troncos por su ectoplasma y conviértelo en su forma de material
           refinado.
+    tools:
+      pineToolbox:
+        name: Crea una caja de herramientas de pino
+        desc: Usa tus habilidades de carpintería para crear una caja de herramientas
+          de pino.
+        activityDesc: Das forma a tus tablones de pino para que encajen y formen una
+          caja de herramientas. Hará que la carga sea más ligera.
+      bambooToolbox:
+        name: Crea una caja de herramientas de bambú
+        desc: Usa tus habilidades de carpintería para crear una caja de herramientas
+          de bambú.
+        activityDesc: Lijas y das forma con cuidado a tus tablones de bambú para que
+          encajen y formen una sublime forma de caja. Esta caja de herramientas aguantará
+          mucho. No te estoy embambucando.
   hunting:
     bows:
       elmHuntingBow:
@@ -767,9 +781,10 @@ singulars:
       oakHuntingBow:
         name: Fabrica un arco de caza de roble
         desc: Fabrica un robusto arco de caza con el duramen de un roble.
-        activityDesc: Seleccionas una pieza fuerte de roble y con cuidado le das forma
-          de arca de caza. Con cada golpe de tu herramienta, acercas al arco más próximo
-          a su culminación, una herramienta que te servirá bien en la caza.
+        activityDesc: Seleccionas algunas piezas fuertes de roble y con cuidado les
+          das forma de arca de caza. Con cada golpe de tu herramienta, acercas al
+          arco más próximo a su culminación, una herramienta que te servirá bien en
+          la caza.
       bambooHuntingBow:
         name: Fabrica un arca de caza de bambú
         desc: Fabrica un ligero y ágil arca de caza con resiliente bambú.
@@ -781,49 +796,60 @@ singulars:
           de caoba.
         activityDesc: Con cuidadosa precaución, das a la caoba forma de un arco de
           caza hermoso y mortal.
+      birchHuntingBow:
+        name: Fabrica un arco de caza de abedul
+        desc: Fabrica un arco de caza básico con la humilde madera del abedul.
+        activityDesc: Seleccionas con cuidado algunas piezas de abedul y les das forma
+          de arca de caza con mano firme. Luego le montas una cuerda para crear una
+          herramienta de caza básica.
+      spectralHuntingBow:
+        name: Fabrica un arco de caza espectral
+        desc: Fabrica un arco de caza fantasmal con hueso y ectoplasma.
+        activityDesc: Usas huesos para montar el arco y ectoplasma para crear la cuerda
+          que ajustas en el arco.
     traps:
       birdhouses:
         birchBirdhouse:
-          name: Fabrica una casa de pájaros de abedul
-          desc: Construye una cómoda casa de pájaros de ligera y duradera madera de
-            abedul.
-          activityDesc: Con un suave toque, das forma de casa de pájaros a la madera
+          name: Fabrica una casa para pájaros de abedul
+          desc: Construye una cómoda casa para pájaros de ligera y duradera madera
+            de abedul.
+          activityDesc: Con un suave toque, das forma de casa para pájaros a la madera
             de abedul, fabricando un lugar seguro para amigos plumíferos. Al acabar,
             imaginas el alegre piar que pronto llenará el aire.
         pineBirdhouse:
-          name: Fabrica una casa de pájaros de pino
-          activityDesc: Con mano firme, das forma de acogedora casa de pájaros a la
-            madera de pino. Mientras trabajas, imaginas a los pájaros que pronto la
-            llamarán casa, encontrando consuelo y seguridad tras sus paredes.
-          desc: Construye un casa de pájaros rústica con madera de pino caliente y
-            robusta.
+          name: Fabrica una casa para pájaros de pino
+          activityDesc: Con mano firme, das forma de acogedora casa para pájaros a
+            la madera de pino. Mientras trabajas, imaginas a los pájaros que pronto
+            la llamarán casa, encontrando consuelo y seguridad tras sus paredes.
+          desc: Construye un casa para pájaros rústica con madera de pino caliente
+            y robusta.
         spruceBirdhouse:
-          name: Fabrica una casa de pájaros de abeto
-          desc: Construye una casa de pájaros duradera con fuerte y aromática madera
+          name: Fabrica una casa para pájaros de abeto
+          desc: Construye una casa para pájaros duradera con fuerte y aromática madera
             de abeto.
-          activityDesc: Con mucho cuidado, das forma de casa de pájaros robusta a
-            la madera de abeto. La resistencia natural de la madera a los elementos
+          activityDesc: Con mucho cuidado, das forma de casa para pájaros robusta
+            a la madera de abeto. La resistencia natural de la madera a los elementos
             dará un hogar seguro y duradero a los amigos plumíferos.
         mapleBirdhouse:
-          name: Fabrica una casa de pájaros de arce
-          desc: Construye una casa de pájaros clásica con hermosa y fuerte madera
+          name: Fabrica una casa para pájaros de arce
+          desc: Construye una casa para pájaros clásica con hermosa y fuerte madera
             de arce.
           activityDesc: Seleccionas cuidadosamente una pieza de madera de arce, dándole
-            forma de casa de pájaros clásica. La belleza y durabilidad natural de
+            forma de casa para pájaros clásica. La belleza y durabilidad natural de
             la madera dará un hogar duradero a los amigos plumíferos.
         teakBirdhouse:
-          name: Fabrica una casa de pájaros de teca
-          desc: Construye una elegante casa de pájaros con rica y duradera madera
+          name: Fabrica una casa para pájaros de teca
+          desc: Construye una elegante casa para pájaros con rica y duradera madera
             de teca.
-          activityDesc: Con extremo cuidado, das forma de refinada casa de pájaros
+          activityDesc: Con extremo cuidado, das forma de refinada casa para pájaros
             a la madera de teca. La belleza y la resistencia natural a las inclemencia
             del tiempo de la madera asegurará un hogar duradero a los amigos plumíferos.
         mangroveBirdhouse:
-          name: Fabrica una casa de pájaros de mangle
-          desc: Construye una casa de pájaros única con madera de mangle fuerte y
-            resiliente.
+          name: Fabrica una casa para pájaros de mangle
+          desc: Construye una casa para pájaros única con madera de mangle fuerte
+            y resiliente.
           activityDesc: Con cuidados atención al detalle, das forma de distintiva
-            casa de pájaros a la madera de mangle. Su resistencia natural a la humedad
+            casa para pájaros a la madera de mangle. Su resistencia natural a la humedad
             y las pestes dará un hogar seguro y duradero a los plumíferos amigos.
       net:
         kelpDriftNet:
@@ -833,6 +859,13 @@ singulars:
           activityDesc: Con manos pacientes, tejes las algas en una red fuerte y flexible.
             Cada nudo asegura la promesa de una captura abundante, mientras imaginas
             la vibrante vida marina que pronto llenará sus mallas.
+      boxtraps:
+        boxtrap:
+          name: Fabrica una caja-trampa
+          activityDesc: Montas rápidamente una caja-trampa que aguante lo suficiente
+            para atrapar pequeñas criaturas antes de romperse.
+          desc: Construyes una caja-trampa diseñada para atrapar una presa pequeña
+            antes de romperse.
     arrows:
       copperArrows:
         name: Fabrica flechas de cobre
@@ -878,6 +911,11 @@ singulars:
           proceso meticuloso de retorcerlas entre sí. Cada hebra, alineada cuidadosamente,
           añade a la cuerda fuerza y resiliencia.
         name: Fabrica una cuerda de arco sencilla
+      strongBowstring:
+        name: Fabrica una cuerda de arco fuerte
+        desc: Fabrica una cuerda de arco fuerte para darle poder a un arco duro.
+        activityDesc: Retuerces fibras resistentes entre ellas para crear una cuerda
+          potente y duradera.
   cooking:
     fish:
       cookedShrimp:
@@ -1287,6 +1325,17 @@ singulars:
           de ingredientes.
         activityDesc: Mezclas el ectoplasma con la cerveza y precedes a destilarlo.
           El resultado es una bebida espirituosa extra fuerte.
+      spicyMoray:
+        name: Cocina morena especiada
+        desc: Una increíble morena comestible hecha con especias.
+        activityDesc: Quitas la cabeza de la morena y cortas por la espina. Después
+          la sazonas con pimienta molida y la pones cocinas en la parrilla.
+      jelliedStreamEel:
+        name: Cocina anguila de río gelatinizada
+        desc: Anguila de río con su gelatina.
+        activityDesc: Troceas las anguilas de río y las cueces en caldo de hueso especiado.
+          Después de hervir, lo dejas enfriar, lo que gelatiniza el caldo a su alrededor
+          dejando un plato precioso.
     misc:
       ectoplasm:
         name: Cocina en ectoplasma
@@ -1336,10 +1385,10 @@ singulars:
       linen:
         name: Crea tela de lino
         desc: Teje finos hilos para crear una tela suave y resistente.
-        activityDesc: Hila las fibras de lino para convertirlas en hilos finos y teje
-          con cuidado estos hilos en una tela de lino suave y resistente. Cada paso
-          requiere paciencia y precisión, mientras transformas las materias primas
-          en un textil versátil.
+        activityDesc: Hila las fibras para convertirlas en hilos finos y teje con
+          cuidado estos hilos en una tela de lino suave y resistente. Cada paso requiere
+          paciencia y precisión, mientras transformas las materias primas en un textil
+          versátil.
       tattyMitts:
         name: Crea guantes harapientos
         desc: Fabrica un par de guantes simples y calentitos.
@@ -1470,8 +1519,7 @@ singulars:
           buscan tanto comodidad como estilo.
       elderhideMitts:
         name: Crea guantes de elderhide
-        desc: Crea un par de guantes de robustos Guantes de Elderhide, fabricados
-          de la dura piel.
+        desc: Crea un par de guantes robustos de elderhide.
         activityDesc: Tomas la piel preparada y comienzas el meticuloso proceso de
           dar forma y coser. Cada puntada te acerca más a completar un par de guantes
           cálidos y resistentes.
@@ -1488,6 +1536,103 @@ singulars:
         activityDesc: Extiendes el cuero y comienzas el cuidadoso proceso de cortar
           y dar forma a las piezas. Cada corte es preciso, asegurando un ajuste perfecto.
           Con manos firmes, coses las piezas, creando una prenda resistente y protectora.
+      toughLinen:
+        name: Fabrica tela de lino fuerte
+        desc: Teje fuertes fibras para crear telas fuertes y resistentes.
+        activityDesc: Hila fibras resistentes para convertirlas en hilos fuertes,
+          que luego se transforman en tela de lino duro. Es un proceso para convertir
+          materiales resistentes en un tejido sólido, pero se mantienen bien unidos.
+      shadowquillShorts:
+        desc: Fabrica un par de pantalones elegantes y traviesos.
+        name: Crea pantalones cortos de plumasombra
+        activityDesc: Coses con cuidado pedazos de tela suave y aterciopelada dando
+          forma a unos elegantes pantalones cortos. La tonalidad oscura y el sutil
+          brillo de la tela le dan a estos pantalones una calidad misteriosa y seductora.
+      tattyHandwraps:
+        name: Teje unos guantes harapientos
+        desc: Fabrica un par de guantes simples y harapientos.
+        activityDesc: Creas un par de guantes sencillos con tela áspera. Aunque son
+          muy toscos aportan una funcionalidad básica.
+      tattySkirt:
+        name: Teje una falda harapienta
+        desc: Fabrica una falda simple y harapienta.
+        activityDesc: Coses trapos para crear una falda irregular. Aunque es muy tosca,
+          esta falda aporta protección contra los elementos.
+      tattyGarb:
+        name: Teje una camisa harapienta
+        desc: Fabrica una camisa simple y harapienta.
+        activityDesc: Coses restos de trapos para crear una camisa funcional para
+          tu torso. Aunque es muy tosca, aporta lo básico.
+      shadowquillBracers:
+        name: Crea brazales de plumasombra
+        desc: Fabrica un par de brazales elegantes y misteriosos.
+        activityDesc: Coses con cuidado pedazos de tela suave y aterciopelada dando
+          forma a unos elegantes brazales. La tonalidad oscura y el sutil brillo de
+          la tela le dan a estos brazales una calidad misteriosa y seductora.
+      shadowquillPlastron:
+        name: Crea un plastrón de plumasombra
+        desc: Fabrica un plastrón ligero y liviano, perfecto para los que buscan estilo
+          y confort.
+        activityDesc: Coses con cuidado plumas oscuras y pedazos de tela suave y aterciopelada
+          dando forma a un plastrón inolvidable. Las plumas añaden un toque de elegancia
+          gótica mientras que la tela aporta calor y confort.
+      aerofibrilBracers:
+        name: Crea brazales de aerofibra
+        desc: Fabrica un par de brazales ligeros y aislantes.
+        activityDesc: Tejes con cuidado fibras de calidad de aerofibra, un material
+          ligero y aislante. Estos brazales aportan un calor excepcional sin abultar.
+      spectralBreeches:
+        activityDesc: Tejes ectoplasma que entrelazas con huesos para darle sujeción,
+          creando unos dinámicos pantalones artesanales.
+        name: Crea pantalones espectrales
+        desc: Fabrica unos fantasmales pantalones espectrales.
+      spectralHandwear:
+        activityDesc: Coges unos pocos huesos y los coses en ectoplasma que moldeas
+          para protección, dejando libre movimiento alrededor de los dedos para tareas
+          de artesanía.
+        name: Crea guantes espectrales
+        desc: Fabrica unos fantasmales guantes espectrales.
+      aerofibrilPlastron:
+        activityDesc: Entrelazas delicadas aerofibras formando un plastrón ligero
+          y aislante. Esta prenda liviana ofrece calor sin añadir peso, perfecto para
+          los que buscan confort y estilo.
+        name: Crea un plastrón de aerofibra
+        desc: Fabrica un plastrón ligero.
+      aerofibrilShorts:
+        name: Crea pantalones cortos de aerofibra
+        desc: Fabrica un par de pantalones ligeros y aislantes.
+        activityDesc: Tejes con cuidado fibras de calidad de aerofibra, un material
+          ligero y aislante. Estos pantalones cortos aportan un calor excepcional
+          sin abultar, lo que les hace perfectos para aquellos que buscan confort
+          y protección.
+      spectralVest:
+        name: Crea un chaleco espectral
+        desc: Fabrica un chaleco espectral con huesos y ectoplasma.
+        activityDesc: Comienzas con unos huesos como base para tejer ectoplasma alrededor,
+          creando un amable chaleco artesanal.
+    tools:
+      silverSewingNeedle:
+        activityDesc: Con mucho esmero, te las arreglas para añadir plata a la aguja
+          de coser para mejorarla y hacerla brillar.
+        name: Fabrica una aguja de coser de plata
+        desc: Fabrica una aguja de coser de plata elegante y brillante.
+      goldenSewingNeedle:
+        name: Fabrica una aguja de coser de oro
+        desc: Fabrica un aguja de coser de oro radiante y majestuosa.
+        activityDesc: Con diligente atención eres capaz de añadir oro a la aguja de
+          coser para fortalecerla y hacerla radiante.
+      spectralSewingNeedle:
+        name: Fabrica una aguja de coser espectral
+        desc: Fabrica una aguja de coser espectral grácil y fantasmal.
+        activityDesc: Compactas huesos hasta conseguir la forma perfecta de aguja
+          de coser y retuerces ectoplasma para hacer de hilo.
+    misc:
+      ectoplasm:
+        activityDesc: Tejes restos de ectoplasma, combinando sus energías ectoplásmicas
+          que trabajas y refinas.
+        name: Tejer en ectoplasma
+        desc: Cose restos de ectoplasma, transformándolos en una forma de material
+          refinado.
   foraging:
     other:
       mangroveBasket:
@@ -1727,6 +1872,12 @@ singulars:
         desc: Coloca besos de viuda junto con huesos para formar un collar de flores.
         activityDesc: Colocas los huesos y los coses junto con los besos de viuda
           para firma un collar macabro.
+      amuletOfTheSpider:
+        name: Crea un amuleto de araña
+        desc: Coloca una figurita de araña en un amuleto.
+        activityDesc: Encajas la figurita de araña en el amuleto de oro y plata, logrando
+          un ajuste perfecto. Lleva tiempo, pero el resultado parece útil para la
+          sastrería.
   categories:
     gems:
       desc: Piedras preciosas, usadas principalmente en joyería.
@@ -1795,3 +1946,42 @@ singulars:
     vegetableDishes:
       name: Platos vegetales
       desc: Consumibles comestibles hechos normalmente con vegetales.
+  upgrades:
+    extraCraftyPants:
+      activityDesc: Combinas los pantalones de fabricación con una regla de cálculo
+        y una llave fija para crear un par de pantalones de extra fabricación.
+      name: Fabrica pantalones de extra fabricación
+      desc: Mejora los pantalones de fabricación añadiendo herramientas.
+    comfyFishingChair:
+      desc: Mejora la silla con tablones y algo de cuero.
+      activityDesc: Te las ingenias para estirar el cuero sobre los tablones a los
+        que has dado forma creando una cómoda silla portátil, transformando el soporte
+        de la caña en una de las patas.
+      name: Fabrica un silla de pescar cómoda
+    tintedWoodworkingGlasses:
+      activityDesc: Primero desmontas los cristales, dejando el marco. Luego fundes
+        el cristal, lo mezclas con materiales oscuros y una pequeña cantidad de alquitranio
+        para oscurecer aun más la mezcla. El resultado es un par de gafas que son
+        a su vez chulas y profesionales.
+      name: Fabrica gafas de carpintero tintadas
+      desc: Mejora tus gafas de carpintero oscureciendo los cristales.
+    ironChefsHat:
+      desc: Mejora el gorro de cocinero con cordel de ferrohierba.
+      name: Fabrica un gorro de cocinero de hierro
+      activityDesc: Refuerzas el gorro de cocinero y lo haces más alto con la ferrohierba
+        para hacerlo más fuerte y pesado.
+    goldenCuttingMat:
+      activityDesc: Cubres el tapete de corte con capas de oro para darle un brillo
+        precioso que no puedes esperar a estropear más tarde.
+      name: Fabrica un tapete de corte dorado
+      desc: Mejora un resistente tapete de corte para telas con un poco de oro.
+    brightCamoFacePaint:
+      activityDesc: Mueles los pétalos de cada flor y los mezclas con la pintura de
+        camuflaje para conseguir colores más brillantes.
+      name: Fabrica pintura de camuflaje brillante
+      desc: Mejora la pintura de camuflaje con flores brillantes.
+    gemTippedPliers:
+      name: Fabricar alicates con gemas en las puntas
+      desc: Mejora los alicates con unas gemas.
+      activityDesc: Le quitas la vieja cabeza a tus alicates y das forma a las gemas
+        para reemplazarla y hacerlos más fuertes que antes.
