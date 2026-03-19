@@ -215,11 +215,14 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan ruhani bir şey
         gerekli.
       requirement: <object id="spectral" /> bir şey gerekli.
+      desc: Ruhani eşyalara <object id="c7a75c46-f140-4116-b0b6-f74e5d763ef5" />nın
+        hayaletsi özellikleri işlemiştir.
     cursed:
       name: Lanetli
       requirement: <object id="cursed" /> bir şey gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan lanetli bir şey
         gerekli.
+      desc: Negatif etkileri olan lanetli bir hizmet.
   tools:
     carpentryTool:
       name: Marangozluk aleti
@@ -529,10 +532,16 @@ singulars:
         requirementLevel: <DEĞİŞKEN>
       utility:
         name: Yardımcı
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
       artisan:
         name: Üretici
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
       gathering:
         name: Malzemeci
+        requirement: <DEĞİŞKEN>
+        requirementLevel: <DEĞİŞKEN>
   recipes:
     skills:
       cooking:
@@ -619,17 +628,20 @@ singulars:
       requirementLevel: <DEĞİŞKEN>
   weight:
     ultraLight:
-      name: Ultra hafif
+      name: Aşırı hafif
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+      desc: Aşırı hafif sayıldığından azami yığın boyutu 9999'dur.
     heavy:
       name: Ağır
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+      desc: Ağır sayıldığından azami yığın boyutu 1'dir.
     light:
       name: Hafif
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+      desc: Hafif sayıldığından azami yığın boyutu 999'dur.
   services:
     sawmill:
       name: Bıçkıhane
@@ -661,15 +673,18 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan başarım ödülü
         gerekli.
       name: Başarım ödülü
+      desc: Başarım ödülü olarak kazanılır.
     percentage:
       name: Başarım yüzdesi
       requirement: yok
       requirementLevel: yok
+      desc: Azami başarım puanının belirli bir yüzdesine erişme ödülü olarak kazanılır.
   faction:
     reward:
       name: Diyar ödülü
       requirement: <object id="faction_reward" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan diyar ödülü gerekli.
+      desc: Diyar ödülü olarak kazanılır.
   eggs:
     egg:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan yumurta gerekli.
