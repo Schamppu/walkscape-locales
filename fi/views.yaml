@@ -412,6 +412,7 @@ singulars:
       slotDoesntExist: Tätä esinetilaa ei ole enää olemassa.
       depositAll: Kaikki
       hatchesInto: Kuoriutuessaan
+      inputAttributes: Syötteiden ominaisuudet
     options:
       showConsumables: Näytä hyödykkeet
       consenseInventory: Tiivistä reppunäkymä
@@ -553,7 +554,7 @@ singulars:
       baseEfficiency: Lähtökohtainen tehokkuus
       fromOverencumbered: Ylikuormittunut
       fromPets: Lemmikit
-      fromInputAttributes: Syöteominaisuudet
+      fromInputAttributes: Syötteiden ominaisuudet
       fromFineInputs: Oiva syöte
       fromEffects: Aktiiviset vaikutukset
       availableInput: (<c>{quantity}x</c> saatavilla)
@@ -570,7 +571,7 @@ singulars:
       inputsNotMet: Syötevaatimukset eivät täyty
       requiresInputWithLevelOptional: (Vapaavalintainen) Käyttää <hl>{quantity}x</hl>
         <object id="{skill}" /> tason <c>{level}</c> <object id="{keyword}"/>
-      noInputOptions: 'Repussasi ei ole tarvittavaa syötettä: <object id="{keyword}"/>'
+      noInputOptions: 'Repussasi ei ole tarvittavaa syötettä (<object id="{keyword}"/>)'
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
       savedSteps: Jos keräät askelia kun sinulla ei ole mitään tehtävää käynnissä,
@@ -580,7 +581,7 @@ singulars:
       noActivity: Et ole valinnut mitään aktiviteettia. <hl>Valitse jokin alla olevista</hl>,
         tai pyyhkäise vasemmalle nähdäksesi kaiken mitä voit tehdä tässä paikassa.
     rewards:
-      experience: <bp /><c>{xp} </c><object id="{skill}"/> kokemusta
+      experience: <bp /><c>{xp} </c><object id="{skill}"/>kokemusta
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} keräilyesinettä</c>,
         jotka on mahdollista löytää
       reputation: <bp /><object id="{faction}" /> mainetta <c>+{amount}</c>
@@ -1065,6 +1066,8 @@ singulars:
       reorderGearSets: Järjestä varustesetit uudelleen
       showItems: Näytä osat
       hideItems: Piilota esineet
+      noRecipesSelected: Reseptejä ei ole valittu
+      forRecipes: 'Resepteille: '
     errors:
       keywordError: 'Varustesetissä on jo: <object id="{keyword}" />'
       duplicateItem: Esine on jo varustesetissä
