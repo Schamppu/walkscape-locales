@@ -79,7 +79,7 @@ singulars:
   mainSkill:
     text: Kun suoritat taitoa <skill skill="{skill}"/>.
   skillLevel:
-    text: Kehitä taitosi tasolle <skill skill="{skill}" level="{level}"needed/>.
+    text: Kehitä taitosi tasolle <skill skill="{skill}" level="{level}" needed/>.
   itemAnywhereWithYou:
     text: Esine <item id="{item}"/> on mukanasi.
   itemEquipped:
@@ -179,3 +179,11 @@ singulars:
   itemsWithKeywordCrafted:
     text: Valmista <object id="{obj}" /> esinettä. <numberProgress current="{current}"
       max="{max}" />.
+  workEfficiencyAt:
+    text: Kun työtehokkuutesi on vähintään <numberProgress current="{current}" max="{max}"
+      />%.
+    textMaximum: Kun työtehokkuutesi on maksimissaan <numberProgress current="{current}"
+      max="{max}" />.
+  craftingType:
+    textSkill: Kun valmistat esineitä käyttäen <skill skill="{skill}" />taitoa <numberProgress
+      current="{current}" max="{max}" />.
