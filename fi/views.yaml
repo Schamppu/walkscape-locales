@@ -130,6 +130,8 @@ maps:
       'trinketry': <c>Korutyö</c>
       'woodcutting': <c>Puunhakkuu</c>
       'achievementPoints': <c>Saavutuspisteet</c>
+      "tailoring": <c>Vaatturointi</c>taso
+      "hunting": <c>Metsästys</c>taso
   character:
     stepsTime:
       'hourly': Askeleet tunneittain
@@ -313,6 +315,15 @@ plurals:
         few: '-'
         many: '-'
         other: <c>{}</c> pelaajaa tekee tätä
+  gearSets:
+    phrases:
+      selected:
+        zero: '-'
+        one: <hl>{}</hl> valittu
+        two: <hl>{}</hl> valittu
+        few: '-'
+        many: '-'
+        other: <hl>{}</hl> valittu
 singulars:
   achievements:
     info:
@@ -749,6 +760,18 @@ singulars:
       charges: Latauksia
       requirements: Vaatimukset
       cooldownRequirements: Palautumisajan vaatimukset
+      inputCharges: 'Latauksia:'
+      inputNextCharge: 'Seuraava lataus:'
+      inputAtMax: Täysi
+      cooldownCharged: <object id="{ability}"/> on ladattu tavoitetasoon <c>{target}</c>!
+      noInputsAvailable: <object id="{item}"/> tarvitaan tälle palautumisajalle, ja
+        sinulla ei ole yhtään käytettävissäsi.
+    inputs:
+      item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
+        saatu syöttämällä <object id="{item}" />
+    info:
+      inputCooldownInfo: Tämä kyky viritetään tavaroilla repustasi. <icon i="input"
+        size="16" vp="3.0" />  <hl>{amount}</hl> tuottaa yhden täyden latauksen.
   trade:
     phrases:
       total: Yhteensä
@@ -768,6 +791,8 @@ singulars:
       noItemSelected: Ei esinettä valittuna
       toolSlots: Työkalupaikat
       gearSlots: Varustepaikat
+      selectedItem: (Valittu esine)
+      comparedItem: (Verrattu esine)
     info:
       gearInfo: Ota käyttöön varusteita, ja parannat hahmosi ominaisuuksia. Kun napautat
         mitä tahansa varustepaikkaa alla, näet mitä repussasi olevia varusteita voit
@@ -1112,6 +1137,7 @@ singulars:
         <object id="{location}"/>
       switchedToPet: Kutsuttu <playerPet id="{pet}"/>
       petDoesNotExist: Tätä lemmikkiä ei ole enää olemassa, kutsu epäonnistui.
+      inputsUsed: Käytetyt syötteet
   queue:
     phrases:
       queuedActions: Jonossa odottavat toiminnot
@@ -1247,6 +1273,8 @@ singulars:
       noPets: Sinulla ei ole lemmikkejä. Voit saada lemmikin löytämällä lemmikkimunan
         ja hautomalla sen lemmikiksi.
       noEggsFound: Hakua vastaavia munia ei löytynyt.
+      actionsToNextLevel: Toimintoja seuraavalle tasolle
+      actionsToHatch: Toimintoja kuoriutumiseen
   mysteriousMerchant:
     phrases:
       sellingPrice: Tason {rarity} myyntihinta
@@ -1288,3 +1316,13 @@ singulars:
         <c>erikoisista lähteistä</c>.
       thereAreNoPaidCurrencies: Pelinsisäisiä valuuttoja <c>ei koskaan</c> voi ostaa
         <c>pelin ulkopuolisella rahalla</c>.
+  attributeListing:
+    phrases:
+      allAttributes: Kaikki ominaisuudet
+      overlevelingFromAgility: <object id="agility" />tasosta <c>{level}</c>.
+      overlevelingWithNumber: Taidon taso on <c>+{level}</c> yli vaaditun.
+      noAttributes: Ei aktiivisia ominaisuuksia.
+      noAttributesTip: Sinulla ei ole aktiivisia ominaisuuksia varusteista, työkaluista
+        tai muista lähteistä, tai valitsemasi suodattimet eivät osu sopiviin tuloksiin.
+    options:
+      showInactiveAttributes: Näytä ominaisuudet, jotka eivät ole aktiivisia
