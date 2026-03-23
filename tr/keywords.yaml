@@ -4,23 +4,29 @@ singulars:
       name: Alkol
       requirement: <object id="alcohol" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan alkol gerekli.
+      desc: Alkollü içecekler geçici avantajlar için tüketilebilir. Ancak sakın dozunu
+        kaçırmayasın!
     beverage:
       name: İçecek
       requirement: <object id="beverage" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan içecek gerekli.
+      desc: İçecekler geçici avantajlar için tüketilebilir.
     cookedFish:
       name: Pişmiş balık
       requirement: <object id="cookedFish" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan pişmiş balık
         gerekli.
+      desc: <object id="fish" />la pişirilir. Geçici avantajlar için tüketilebilir.
     food:
       name: Yiyecek
       requirement: <object id="food" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan yiyecek gerekli.
+      desc: Yiyecekler geçici avantajlar için tüketilebilir.
     fruit:
       name: Meyve
       requirement: <object id="fruit" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan meyve gerekli.
+      desc: Meyveler geçici avantajlar için tüketilebilir.
     water:
       name: Su
       requirement: <object id="water" /> gerekli.
@@ -147,10 +153,12 @@ singulars:
       name: Işık kaynağı
       requirement: <object id="lightSource" /> kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> kuşanılması gerekli.
+      desc: Loş yerleri aydınlatır. Bazı faaliyetler ve konumlar için gereklidir.
     heatResist:
       name: Isıya dayanıklı
       requirement: <object id="heat_resistant" /> bir şey gerekli.
       requirementLevel: <keywordRequirements /> bir şey kuşanılması gerekli.
+      desc: Sıcak yerlerde serin tutar. Bazı faaliyetler ve konumlar için gereklidir.
   materials:
     bar:
       name: Külçe
@@ -185,6 +193,7 @@ singulars:
       ingredient: <object id="ingredient" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan yemek malzemesi
         gerekli.
+      desc: Çeşitli tariflerde kullanılır.
     nugget:
       name: Parça
       requirement: <object id="nugget" /> gerekli.
@@ -198,21 +207,26 @@ singulars:
       name: Süs
       requirement: <object id="trinket" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan süs gerekli.
+      desc: Süsler çeşitli <object id="trinketry" /> tariflerinde kullanılır.
     misc:
       name: Çeşitli
       requirement: <object id="misc" /> eşya gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan çeşitli eşya
         gerekli.
+      desc: Farklı tariflerde kullanılabilen çeşitli malzemeler.
     processed:
       name: İşlenmiş
       requirement: <object id="processed" /> malzeme gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan işlenmiş malzeme
         gerekli.
+      desc: Ham maddenin işlenmesiyle elde edilen, külçe veya kereste gibi işlenmiş
+        bir malzeme.
     offcut:
       name: Fazlalık
       requirement: <object id="offcut" /> eşya gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan fazlalık eşya
         gerekli.
+      desc: İşlenerek yeni malzemelere dönüştürülebilen bir malzeme fazlası.
     roughGem:
       name: Doğal cevher
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan doğal cevher
@@ -224,17 +238,26 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan mantar gerekli.
     crustacean:
       name: Kabuklu
+      desc: Kabuklular çeşitli <object id="cooking" /> tariflerinde kullanılır.
+      requirement: <object id="crustacean" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan kabuklu gerekli.
     fabric:
       name: Kumaş
+      requirement: <object id="fabric" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan kumaş gerekli.
+      desc: Genellikle <object id="tailoring" /> tarifleri için kullanılan bir kat
+        kumaş.
   misc:
     trash:
       name: Çöp
       requirement: <object id="trash" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan çöp gerekli.
+      desc: Başkası için hazine değerinde olabilir.
     currency:
       name: Para
       requirement: <object id="currency" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan para gerekli.
+      desc: Dükkanlardan bir şeyler almak için kullanılır.
     spectral:
       name: Ruhani
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan ruhani bir şey
@@ -696,33 +719,41 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan gelişmiş dalış
         teçhizatı gerekli.
       requirement: <object id="itemset_diving_gear_advanced" /> gerekli.
+      desc: Gelişmiş dalış teçhizatı parçası. Daha tehlikeli yerlerde su altına inmek
+        için gelişmiş dalış teçhizatı gereklidir.
     expertDivingGear:
       name: Profesyonel dalış teçhizatı
       requirement: <object id="itemset_diving_gear_expert" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan profesyonel dalış
         tezhizatı gerekli.
+      desc: Profesyonel dalış teçhizatı parçası. En tehlikeli yerlerde su altına inmek
+        için profesyonel dalış teçhizatı gereklidir.
     properGear:
       name: Münasip teçhizat
       requirement: <object id="itemset_proper_gear" /> parçaları kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan münasip teçhizat
         giyilmesi gerekli.
+      desc: Münasip teçhizat seti parçası.
     divingGear:
       name: Dalış teçhizatı
       requirement: <object id="itemset_diving_gear" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan dalış teçhizatı
         gerekli.
+      desc: Dalış teçhizatı parçası. Su altına inmek için dalış teçhizatı gereklidir.
     adventuringTools:
       name: Macera aleti seti
       requirement: <object id="itemset_adventuring_tools" /> parçaları kuşanılması
         gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan macera aleti
         gerekli.
+      desc: Macera aleti seti parçası.
     treasureHunter:
       name: Hazine avcısı seti
       requirement: <object id="itemset_treasure_hunter" /> parçalarının kuşanılması
         gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan hazine avcısı
         teçhizatı gerekli.
+      desc: Hazine avcısı seti parçası.
   locations:
     underwater:
       name: Su altı
@@ -800,6 +831,7 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan yumurta gerekli.
       name: Yumurta
       requirement: <object id="egg" /> gerekli.
+      desc: Envanterinde uzun süre kalırsa çok kötü kokmaya başlar.
     petEgg:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan evcil hayvan
         yumurtası gerekli.
