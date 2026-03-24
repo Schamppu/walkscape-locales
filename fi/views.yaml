@@ -130,6 +130,8 @@ maps:
       'trinketry': <c>Korutyö</c>
       'woodcutting': <c>Puunhakkuu</c>
       'achievementPoints': <c>Saavutuspisteet</c>
+      "tailoring": <c>Vaatturointi</c>taso
+      "hunting": <c>Metsästys</c>taso
   character:
     stepsTime:
       'hourly': Askeleet tunneittain
@@ -313,6 +315,15 @@ plurals:
         few: '-'
         many: '-'
         other: <c>{}</c> pelaajaa tekee tätä
+  gearSets:
+    phrases:
+      selected:
+        zero: '-'
+        one: <hl>{}</hl> valittu
+        two: <hl>{}</hl> valittu
+        few: '-'
+        many: '-'
+        other: <hl>{}</hl> valittu
 singulars:
   achievements:
     info:
@@ -412,6 +423,7 @@ singulars:
       slotDoesntExist: Tätä esinetilaa ei ole enää olemassa.
       depositAll: Kaikki
       hatchesInto: Kuoriutuessaan
+      inputAttributes: Syötteiden ominaisuudet
     options:
       showConsumables: Näytä hyödykkeet
       consenseInventory: Tiivistä reppunäkymä
@@ -553,6 +565,24 @@ singulars:
       baseEfficiency: Lähtökohtainen tehokkuus
       fromOverencumbered: Ylikuormittunut
       fromPets: Lemmikit
+      fromInputAttributes: Syötteiden ominaisuudet
+      fromFineInputs: Oiva syöte
+      fromEffects: Aktiiviset vaikutukset
+      availableInput: (<c>{quantity}x</c> saatavilla)
+      requiresInputOptional: (Vapaavalintainen) Käyttää <hl>{quantity}x</hl> <object
+        id="{keyword}"/>
+      requiresInputWithLevel: Vaatii <hl>{quantity}x</hl> <object id="{skill}" />
+        tason <c>{level}</c> <object id="{keyword}"/>
+      requirementsNotMetForInput: '<object id="{item}"/>: vaatimukset eivät täyty'
+      fineInputBenefit: Hyödyt <c>oivista syötteistä</c>
+      allAttributes: Näytä kaikki ominaisuudet
+      activeEffects: Aktiiviset vaikutukset
+      inputAttributes: Hyödyt syötteistä <object id="{item}"/>
+      requiresInput: Tarvitaan <hl>{quantity}x</hl> <object id="{keyword}"/>
+      inputsNotMet: Syötevaatimukset eivät täyty
+      requiresInputWithLevelOptional: (Vapaavalintainen) Käyttää <hl>{quantity}x</hl>
+        <object id="{skill}" /> tason <c>{level}</c> <object id="{keyword}"/>
+      noInputOptions: 'Repussasi ei ole tarvittavaa syötettä (<object id="{keyword}"/>)'
     info:
       consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
       savedSteps: Jos keräät askelia kun sinulla ei ole mitään tehtävää käynnissä,
@@ -562,7 +592,7 @@ singulars:
       noActivity: Et ole valinnut mitään aktiviteettia. <hl>Valitse jokin alla olevista</hl>,
         tai pyyhkäise vasemmalle nähdäksesi kaiken mitä voit tehdä tässä paikassa.
     rewards:
-      experience: <bp /><c>{xp} </c><object id="{skill}"/> kokemusta
+      experience: <bp /><c>{xp} </c><object id="{skill}"/>kokemusta
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} keräilyesinettä</c>,
         jotka on mahdollista löytää
       reputation: <bp /><object id="{faction}" /> mainetta <c>+{amount}</c>
@@ -714,6 +744,9 @@ singulars:
       holdToUse: Pidä pohjassa käyttääksesi
       alreadyHere: Nykysijaintisi on jo <object id="{location}"/>. Et voi käyttää
         kykyä tänne matkustamiseen.
+      cannotUseMore: Et voi käyttää tätä kykyä. Kyvyn vaikutus saattaa olla sinulla
+        jo aktiivisena, ja kertautuisi kestämään liian pitkään.
+      lastsFor: 'Vaikutuksen kesto:'
   cooldowns:
     phrases:
       followingMustBeTrueToTick: 'Seuraavien täytyy olla totta jotta palautumisaika
@@ -727,6 +760,18 @@ singulars:
       charges: Latauksia
       requirements: Vaatimukset
       cooldownRequirements: Palautumisajan vaatimukset
+      inputCharges: 'Latauksia:'
+      inputNextCharge: 'Seuraava lataus:'
+      inputAtMax: Täysi
+      cooldownCharged: <object id="{ability}"/> on ladattu tavoitetasoon <c>{target}</c>!
+      noInputsAvailable: <object id="{item}"/> tarvitaan tälle palautumisajalle, ja
+        sinulla ei ole yhtään käytettävissäsi.
+    inputs:
+      item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
+        saatu syöttämällä <object id="{item}" />
+    info:
+      inputCooldownInfo: Tämä kyky viritetään tavaroilla repustasi. <icon i="input"
+        size="16" vp="3.0" />  <hl>{amount}</hl> tuottaa yhden täyden latauksen.
   trade:
     phrases:
       total: Yhteensä
@@ -746,6 +791,8 @@ singulars:
       noItemSelected: Ei esinettä valittuna
       toolSlots: Työkalupaikat
       gearSlots: Varustepaikat
+      selectedItem: (Valittu esine)
+      comparedItem: (Verrattu esine)
     info:
       gearInfo: Ota käyttöön varusteita, ja parannat hahmosi ominaisuuksia. Kun napautat
         mitä tahansa varustepaikkaa alla, näet mitä repussasi olevia varusteita voit
@@ -1044,6 +1091,8 @@ singulars:
       reorderGearSets: Järjestä varustesetit uudelleen
       showItems: Näytä osat
       hideItems: Piilota esineet
+      noRecipesSelected: Reseptejä ei ole valittu
+      forRecipes: 'Resepteille: '
     errors:
       keywordError: 'Varustesetissä on jo: <object id="{keyword}" />'
       duplicateItem: Esine on jo varustesetissä
@@ -1088,6 +1137,7 @@ singulars:
         <object id="{location}"/>
       switchedToPet: Kutsuttu <playerPet id="{pet}"/>
       petDoesNotExist: Tätä lemmikkiä ei ole enää olemassa, kutsu epäonnistui.
+      inputsUsed: Käytetyt syötteet
   queue:
     phrases:
       queuedActions: Jonossa odottavat toiminnot
@@ -1223,6 +1273,8 @@ singulars:
       noPets: Sinulla ei ole lemmikkejä. Voit saada lemmikin löytämällä lemmikkimunan
         ja hautomalla sen lemmikiksi.
       noEggsFound: Hakua vastaavia munia ei löytynyt.
+      actionsToNextLevel: Toimintoja seuraavalle tasolle
+      actionsToHatch: Toimintoja kuoriutumiseen
   mysteriousMerchant:
     phrases:
       sellingPrice: Tason {rarity} myyntihinta
@@ -1264,3 +1316,13 @@ singulars:
         <c>erikoisista lähteistä</c>.
       thereAreNoPaidCurrencies: Pelinsisäisiä valuuttoja <c>ei koskaan</c> voi ostaa
         <c>pelin ulkopuolisella rahalla</c>.
+  attributeListing:
+    phrases:
+      allAttributes: Kaikki ominaisuudet
+      overlevelingFromAgility: <object id="agility" />tasosta <c>{level}</c>.
+      overlevelingWithNumber: Taidon taso on <c>+{level}</c> yli vaaditun.
+      noAttributes: Ei aktiivisia ominaisuuksia.
+      noAttributesTip: Sinulla ei ole aktiivisia ominaisuuksia varusteista, työkaluista
+        tai muista lähteistä, tai valitsemasi suodattimet eivät osu sopiviin tuloksiin.
+    options:
+      showInactiveAttributes: Näytä ominaisuudet, jotka eivät ole aktiivisia

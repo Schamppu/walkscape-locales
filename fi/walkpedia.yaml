@@ -62,6 +62,26 @@ singulars:
         description: Kaupat ovat paikkoja joissa voit myydä tai ostaa esineitä. Ne
           löytyvät yleensä rakennuksista.
         tabText: Kauppalista
+    keywordList:
+      phrases:
+        relatedToTools: Työkaluavainsanat
+        referencedByConsumables: Hyödykkeitä tällä avainsanalla
+        relatedToGear: Varusteavainsanat
+        referencedByGear: Varusteita tällä avainsanalla
+        referencedByTools: Työkaluja tällä avainsanalla
+        referencedByMaterials: Ainesosia tällä avainsanalla
+        referencedByLocations: Sijainteja tällä avainsanalla
+        referencedByServices: Palveluita tällä avainsanalla
+        relatedToServices: Palveluavainsanat
+        relatedToMaterials: Ainesosa-avainsanat
+        relatedToConsumables: Hyödykeavainsanat
+        relatedToLocations: Sijaintiavainsanat
+      info:
+        title: Avainsanat
+        tabText: Avainsanojen luettelo
+        description: Avainsanoja käytetään erilaisista esineistä, sijainneista, palveluista
+          ja aktiviteeteista. Voit tarkistaa täältä helposti esimerkiksi mitkä esineet
+          ovat valonlähteitä.
   contentPages:
     item:
       info:
@@ -80,6 +100,7 @@ singulars:
         guide: Opas
         unlocks: Kaikki avaukset
         unlocksDesc: Näe mitä sisältöä avautuu kehittämällä tätä taitoa.
+        statistics: Tilastot
       guides:
         mining: "<object id=\"mining\" /> on keräilytaito, jonka olennaisena tuotteena
           on <object id=\"ore\" /> ja muut mineraalit.\n\n<li><hl>Aloituspaikka</hl>:
@@ -189,10 +210,10 @@ singulars:
           löytää <object id=\"service_loom\" /> palveluna, ja joudut etsiytymään tällaiselle
           alueelle löytääksesi tukea korkeamman tason räätälintyöresepteille. Tällaisilla
           alueilla saattaa myös olla <c>räätälintyöhön</c> liittyviä aktiviteetteja.</li>\n\
-          \n<li><hl>Käyttötarkoitus</hl>: <object id=\"plant\" /> muuntuu materiaalina
-          muotoon<object id=\"processed\" />, jonka jälkeen materiaalit voidaan yhdistää
-          soveltuvien kangasmateriaalien kanssa uusien, taitojasi tehostavien varusteiden
-          valmistamiseksi.</li>\n"
+          \n<li><hl>Käyttötarkoitus</hl>: <object id=\"plant\" />kuidut muuntuvat
+          työstettäessä uuteen muotoon, jonka jälkeen syntyneet <object id=\"fabric\"\
+          \ />materiaalit voidaan yhdistää soveltuvien muiden materiaalien kanssa
+          uusien, taitojasi tehostavien varusteiden valmistamiseksi.</li>\n"
         woodcutting: "<object id=\"woodcutting\" /> on keräilytaito, onka avulla kerätään
           puumateriaalia. Työn olennaisin tulos on <object id=\"logs\" />.\n\n<li><hl>Aloituspaikka</hl>:
           <c>Puunhakkuun</c> lähin aloituspaikka on <object id=\"location-disenchanted_forest-bbaede29-74fb-4536-9c08-0693ffb0267d\"\
@@ -221,16 +242,16 @@ singulars:
           \ /> tai pari, näistä voi valmistaa koruja; metalliksi tarvitaan soveltuvan
           jalo <object id=\"bar\" /> ja tuotoksen muoto voi tällöin olla <object id=\"\
           item_ring\" /> tai <object id=\"item_amulet\" />, joka tehostaa taitojasi.</li>\n"
-        hunting: "<object id=\"hunting\" /> on keräilytaito, jossa saaliista syntyy
-          <object id=\"ingredient\" />.\n\n<li><hl>Aloituspaikka</hl>: Voit aloittaa
-          <c>metsästyksen</c> saman tien, <object id=\"location\" /> tarjoaa tähän
-          liittyvän aktiviteetin <object id=\"activity\" />.</li>\n\n<li><hl>Mistä
-          löytää</hl>: Useimmat luontokohteet (tasangot, metsät, mäkiset tai vuoriset
-          alueet, rannat) voivat tukea <c>metsästysaktiviteetteja</c>, minkä lisäksi
-          näitä voi tulla vastaan myös asutusalueilla ja luolissa.</li>\n\n<li><hl>Käyttötarkoitusr</hl>:
-          Keräilystä saadaan <object id=\"ingredient\" />, joka soveltuu käytettäväksi
-          muissa taidoissa, kuten <skill skill=\"crafting\"/> tai <skill skill=\"\
-          cooking\"/>.</li>\n"
+        hunting: "<object id=\"hunting\" /> on keräilytaito, jota tarvitaan erityisesti
+          taljojen ja nahkojen hankintaan.\n\n<li><hl>Aloituspaikka</hl>: Voit aloittaa
+          <c>metsästyksen</c> saman tien tasangoilla tai pelloilla, joissa on <object
+          id=\"2250915a-2619-488a-94af-c4008054d7b2\" />.</li>\n\n<li><hl>Mistä löytää</hl>:
+          Useimmat luontokohteet (tasangot, metsät, mäkiset tai vuoriset alueet, rannat)
+          voivat tukea <c>metsästysaktiviteetteja</c>, minkä lisäksi näitä voi tulla
+          vastaan myös joillakin asutusalueilla.</li>\n\n<li><hl>Käyttötarkoitusr</hl>:
+          Taidolla saadaan materiaaleja, jotka soveltuvat käytettäväksi muissa taidoissa,
+          kuten <skill skill=\"tailoring\"/>, <skill skill=\"crafting\"/> tai <skill
+          skill=\"cooking\"/>.</li>\n"
   phrases:
     home:
       content: Sisältö
@@ -274,6 +295,8 @@ singulars:
       unknown: Tämä sisältö on vielä tuntematonta hahmollesi. Jatka tutkimista nähdäksesi
         sen täydet lisätiedot!
       rumors: Kuullut huhut
+    keyword:
+      requiresThisKeyword: Sisältö, joka vaatii tämän avainsanan
 maps:
   phrases:
     item:
@@ -286,6 +309,14 @@ maps:
         "collectible": Keräilyesineet
         "egg": Lemmikkimunat
         "currency": Valuutat
+  dataTypes:
+    "item": Esine
+    "activity": Aktiviteetti
+    "location": Sijainti
+    "service": Palvelu
+    "recipe": Resepti
+    "route": Matkustusreitti
+    "achievement": Saavutus
 plurals:
   skillUnlocks:
     itemRequirementsMet:

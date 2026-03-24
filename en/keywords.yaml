@@ -344,6 +344,11 @@ singulars:
       desc: A net used for <object id="hunting" /> animals.
       requirement: Requires an equipped <object id="huntingNet" />.
       requirementLevel: "Requires a hunting net that has at least <keywordRequirements /> in its requirements."
+    fishingRodRest:
+      name: Fishing rod rest
+      desc: Fishing rod rest makes fishing more relaxed experience. Useful for <object id="fishing" />.
+      requirment: Requires equipped <object id="fishingRodRest" />.
+      requirementLevel: "Requires a fishing rod rest that has at least <keywordRequirements /> in its requirements."
   materials:
     logs:
       name: Log
@@ -696,26 +701,32 @@ singulars:
   services:
     sawmill:
       name: Sawmill
+      desc: A service for processing <object id="logs" /> into <object id="plank" />, along with other <skill skill="carpentry"/> related creations.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
     workshop:
       name: Workshop
+      desc: A service for turning materials into <object id="tool" /> and useful items, along with other <skill skill="crafting"/> related creations.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
     forge:
       name: Forge
+      desc: A service for processing <object id="ore" /> into <object id="bar" />, along with other <skill skill="smithing"/> related creations.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
     kitchen:
       name: Kitchen
+      desc: A service for transforming <object id="ingredient" /> into <object id="food" /> or <object id="beverage" />, along with other <skill skill="cooking"/> related creations.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
     bench:
       name: Trinketry Bench
+      desc: A service for shaping <object id="gem" /> and creating <object id="item_ring" /> or <object id="item_amulet" /> jewelry, along with other <skill skill="trinketry"/> related creations.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
     loom:
       name: Loom
+      desc: A service for processing <object id="plant" /> fibers and hides into <object id="fabric" /> and leather, along with other <skill skill="tailoring"/> related creations.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
   itemSets:

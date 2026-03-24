@@ -759,6 +759,18 @@ singulars:
         name: Leikkaa ektoplasmaksi
         desc: Halkaise pöllit vapauttaaksesi niissä piilevä ektoplasma, ja työstä
           se jalostuneempaan kiinteään muotoonsa.
+    tools:
+      pineToolbox:
+        activityDesc: Muovaat mäntylankkujasi niin, että ne sopivat yhteen laatikkomuotoon
+          työkaluja varten. Tämä helpottaa kuormitustasi.
+        name: Veistä mäntyinen työkalulaatikko
+        desc: Käytä puutyötaitojasi valmistaaksesi mäntyisen työkalulaatikon.
+      bambooToolbox:
+        name: Veistä bambuinen työkalulaatikko
+        desc: Käytä puutyötaitojasi valmistaaksesi bambuisen työkalulaatikon.
+        activityDesc: Varoen hiot ja muovaat bambulankkuja niin, että ne sopivat yhteen
+          mainioon laatikon muotoon. Tähän laatikkoon mahtuu hyvin tavaraa. Ei mitään
+          bambuuattavaa.
   cooking:
     fish:
       cookedShrimp:
@@ -1170,6 +1182,17 @@ singulars:
           ja selleriä. Kaadat päälle sopivan rasvaisen liemen ja haudutat muhennosta,
           kunnes liha on kypsää ja kasvikset pehmenneet. Maustat muhennoksen yrteillä
           ja mausteilla, ja lämmin, maukas ateria on valmis.
+      spicyMoray:
+        name: Valmista mausteista mureenaa
+        desc: Aivan uskomaton syötävä ankerias, mausteisena.
+        activityDesc: Poistat ankeriaan pään ja leikkaat sen pituussuunnassa auki.
+          Maustat lihan murskatulla pippurilla ja grillaat sen kuumalla tulella.
+      jelliedStreamEel:
+        name: Valmista hyytelöityä jokiankeriasta
+        desc: Tytisevä, tutiseva ja hyytelöity jokiankerias.
+        activityDesc: Pilkot jokiankeriaita ja keität ne maustetussa luuliemessä.
+          Kiehumisen jälkeen annat niiden jäähtyä, jolloin luuliemi niiden ympärillä
+          hyytelöityy ja viimeistelee näyttävän ruoka-annoksen.
     misc:
       ectoplasm:
         name: Keitä ektoplasmaksi
@@ -1267,6 +1290,12 @@ singulars:
         desc: Yhdistä leskensuudelman kukka ja luita valmistaaksesi aavemaiset kukkakäädyt.
         activityDesc: Asettelet luut kauniisti ja sidot ne yhteen leskensuudelman
           kukkien kanssa, minkä tuloksena on selkäpiitä karmiva kaulakoru.
+      amuletOfTheSpider:
+        desc: Yhdistä hämähäkkihelu riipukseen.
+        activityDesc: Sovitat hämähäkkihelun hopeakultaiseen riipukseen, johon se
+          sopii täydellisesti. Valmistus vie aikaa, mutta lopputulos vaikuttaa lupaavalta
+          vaatturoinnista kiinnostuneelle.
+        name: Valmista hämähäkkiriipus
     gems:
       shapeOpal:
         activityDesc: Irrotat varovaisesti palasen arvokasta jalokivimateriaalia sitä
@@ -1422,8 +1451,8 @@ singulars:
         name: Valmista simppeli nahanpala
         desc: Valmista yksinkertainen mutta kestävä nahanpala.
       qualityLeather:
-        activityDesc: Työstä eläimen vuotaa, kunnes saat siitä ylivoimaisen laadukasta
-          nahkaa. Parkitse, venytä ja hiero siihen pehmentäviä aineita osana työvaiheita
+        activityDesc: Työstät eläimen vuotaa, kunnes saat siitä ylivoimaisen laadukasta
+          nahkaa. Parkitset, venytät ja hierot siihen pehmentäviä aineita osana työvaiheita
           jotka kukin vaativat tarkkuutta ja kärsivällisyyttä. Näytät taitosi ikiaikaisessa
           nahan työstämisen prosessissa ja valmistat nahasta monipuolista ja kestävää
           materiaalia.
@@ -1440,7 +1469,7 @@ singulars:
           materiaaliksi.
       elderhideMitts:
         name: Valmista ikitaljaiset tumput
-        desc: Valmista pari kestäviä ikitaljaisia tumppuja, sitkeästä nahkasta ommellen.
+        desc: Valmista pari kestäviä ikitaljaisia tumppuja.
         activityDesc: Otat valmistellun ikitaljan ja aloitat pikkutarkan työstön,
           jossa muovaat ja neulaat taljaa kokoon. Jokaisella pistolla pääset lähemmäs
           valmiita lämpimiä ja kestäviä tumppuja.
@@ -1574,10 +1603,10 @@ singulars:
           sävy ja hienovarainen hohde antaa näille käsineille mystisen ja viehättävän
           loppusilauksen.
       linen:
-        name: Valmista pellavakangasta
+        name: Valmista kangasta
         desc: Kudo ohuet langat pehmeäksi ja kestäväksi kankaaksi.
-        activityDesc: Kehrää pellavakuidut hienoksi langaksi, ja kudo niistä huolellisesti
-          pehmeä ja kestävä pellavakangas. Jokainen valmistusaskel vaatii kärsivällisyyttä
+        activityDesc: Kehräät kuidut hienoksi langaksi, ja kudot niistä huolellisesti
+          pehmeän ja kestävän kankaan. Jokainen valmistusaskel vaatii kärsivällisyyttä
           ja tarkkuutta, kun muokkaat materiaaleja monipuoliseksi punokseksi.
       rootweaveChaps:
         desc: Valmista pari kestäviä ja suojaavia jalan peitteitä.
@@ -1617,6 +1646,105 @@ singulars:
           sekä suojaa että mukavuutta.
         name: Valmista ilmakuitunaamiset puntit
         desc: Valmista pari kevyitä ja lämpöä eristäviä jalan peitteitä.
+      toughLinen:
+        name: Valmista kestävää kangasta
+        desc: Puno sitkeitä kuituja yhteen vahvaksi ja kestäväksi kankaaksi.
+        activityDesc: Kudot sitkeitä kuituja yhteen vahvoiksi langoiksi, joista tulee
+          kestävää kangasta. Vastustelevien materiaalien muokkaaminen tiukaksi poppanaksi
+          vaatii työtä, mutta punokset pysyvät yhdessä mukavasti.
+      tattyHandwraps:
+        name: Valmista repaleiset käsikääreet
+        desc: Valmista pari yksinkertaisia repaleisia käsikääreitä.
+        activityDesc: Kudot parin yksinkertaisia käsikääreitä karkeasta kankaasta.
+          Ne toimittavat perusvirkaansa vaikka näyttävätkin viimeistelemättömiltä.
+      tattySkirt:
+        name: Valmista repaleinen hame
+        desc: Valmista yksinkertainen, repaleinen hame.
+        activityDesc: Ompelet yhteen kankaanpaloja ja valmistat repaleisen hameen.
+          Vaikka se näyttää viimeistelemättömältä, hame tarjoaa silti suojaa säältä.
+      tattyGarb:
+        name: Valmita repaleinen asu
+        desc: Valmista yksinkertainen, repaleinen asu.
+        activityDesc: Ompelet yhteen kankaan jämäpaloja ja valmistat toiminnallisen
+          keskikehoa peittävän asun. Vaikka se on karkearakenteinen, se täyttää perustarpeet.
+      shadowquillShorts:
+        name: Valmista varjosulan polvihousut
+        desc: Valmista pari tyylikkäitä ja salamyhkäisiä jalkojen peitteitä.
+        activityDesc: Ompelet huolellisesti yhteen pehmeän, samettisen kankaan paloja,
+          ja muovaat niistä tyylikkäät puolipitkät housut. Kankaan tumma, musteenkaltainen
+          sävy ja hienoinen hohde antaa vaatteelle arvoituksellisuutta ja lumoavuutta.
+      shadowquillPlastron:
+        name: Valmista varjosulan suojaliivi
+        desc: Valmista kevyt ja ilmava suojaliivi, joka sopii täydellisesti seikkailijoille,
+          jotka tavoittelevat yhtä aikaa tyylikkyyttä ja mukavuutta.
+        activityDesc: Ompelet huolellisesti yhteen pehmeän, samettisen kankaan paloja
+          tummien ja yönpimeiden sulkien kanssa, ja muovaat niistä ikuisesti mieleenpainuvan
+          suojaliivin. Sulista asu saa goottityylistä hienostuneisuutta, kun taas
+          kangas on lämmin ja mukava.
+      aerofibrilBracers:
+        name: Valmista ilmakuitunaamiset rannesuojat
+        desc: Valmista pari kevyitä ja eristäviä rannesuojia.
+        activityDesc: Punot varovasti yhteen ohuita ilmakuitusäikeitä keveäksi ja
+          hyvin lämpöä eristäväksi pariksi rannesuojia. Näistä saa poikkeuksellisen
+          lämpökerroksen lisäämättä vaatetukseen hidastavaa painolastia.
+      aerofibrilShorts:
+        name: Valmista ilmakuitunaamiset polvihousut
+        activityDesc: Punot huolellisesti yhteen ohuita ilmakuidun säikeitä, ja valmistat
+          kevyet ja lämpöä hyvin eristävät polvihousut. Nämä puolipitkät housut lämmittävät
+          poikkeuksellisen hyvin lisäämättä asuun painoa ja liikkeen rajoittamista,
+          joten ne sopivat täydellisesti mukavuuden- ja suojauksenhaluisille.
+        desc: Valmista kevyet ja lämmöneristävät jalkapukimet.
+      aerofibrilPlastron:
+        name: Valmista ilmakuitunaaminen suojaliivi
+        desc: Valmista kevyt suojaliivi.
+        activityDesc: Punot huolellisesti yhteen hentoja ilmakuidun säikeitä kevyeksi
+          ja lämpöä hyvin eristäväksi suojaliiviksi. Tämä ilmava vaate pitää lämpimänä
+          muttei painosta, joten se sopii täydellisesti sekä mukavuudenhaluisille
+          että tyylitietoisille.
+      spectralHandwear:
+        desc: Valmista kammottavan aavemaiset käsineet.
+        activityDesc: Yhdistät muutaman luun ektoplasmaan, josta muovaat suojakuoren,
+          samalla kun jätät tilaa sormillesi liikkua haastavissakin luovissa töissä.
+        name: Valmista aavemaiset käsineet
+      spectralBreeches:
+        name: Valmista aavemaiset polvihousut
+        desc: Valmista kammottavat aavemaiset polvihousut.
+        activityDesc: Yhdistät muutaman luun tueksi ektoplasmaan, josta muovaat suojakuoren,
+          ja saat yhdistelmällä aikaan luovan työn liikkuvuudentarpeisiin sopivat
+          housunlahkeet.
+      spectralVest:
+        name: Valmista aavemainen liivi
+        desc: Valmista aavemainen liivi luista ja ektoplasmasta.
+        activityDesc: Valmistat luista pohjan ja punot ektoplasmaa niiden ympärille,
+          ja saat aikaan luovaan toimintaan hyvin soveltuvan liivin.
+      shadowquillBracers:
+        name: Valmista varjosulan rannesuojat
+        desc: Valmista pari tyylikkäitä ja arvoituksellisia rannesuojia.
+        activityDesc: Ompelet huolellisesti yhteen pehmeän, samettisen kankaan palasia,
+          ja muotoilet niistä parin hienostuneita rannesuojia. Kankaan tumma, musteenkaltainen
+          sävy ja hienoinen hohde saa suojat vaikuttamaan arvoituksellisilta ja lumoavilta.
+    tools:
+      silverSewingNeedle:
+        name: Valmista hopeinen ompeluneula
+        activityDesc: Huolellisesti työstäen onnistut lisäämään säikeen hopeaa ompeluneulaan
+          parantaaksesi sitä ja antaaksesi sille hienon kiillon.
+        desc: Valmista kiiltävä ja sutjakka hopeinen ompeluneula.
+      goldenSewingNeedle:
+        name: Valmista kultainen ompeluneula
+        desc: Valmista loisteikas ja kuninkaallinen kultainen ompeluneula.
+        activityDesc: Tarkalla työstöllä onnistut lisäämään kultaa ompeluneulaan vahvistaaksesi
+          sitä, ja kohottaaksesi sen loisteliaan hohdokkaaksi.
+      spectralSewingNeedle:
+        name: Valmista aavemainen ompeluneula
+        desc: Valmista kammottava mutta tyylikäs aavemainen ompeluneula.
+        activityDesc: Tiivistät luista täydellisen palasen toimimaan ompeluneulana,
+          ja pyörität ektoplasmaa langaksi sen läpi.
+    misc:
+      ectoplasm:
+        name: Kudo ektoplasmaksi
+        desc: Puno yhteen ektoplasman säikeitä, ja työstä niistä jalostetumpaa materiaalia.
+        activityDesc: Punot yhteen ektoplasman säikeitä, yhdistäen niiden aavemaiset
+          energiat, joita työstät ja jalostat.
   categories:
     misc:
       name: Sekal.
@@ -1702,14 +1830,25 @@ singulars:
       oakHuntingBow:
         desc: Valmista kestävä metsästysjousi tammen sydänpuusta.
         name: Valmista tamminen metsästysjousi
-        activityDesc: Valitset vahvan palan tammea ja huolellisesti työstät siitä
-          metsästysjousen. Jokaisella vedolla jousi lähestyy valmistumista työkaluksi
-          joka palvelee sinua hyvin metsällä.
+        activityDesc: Valikoit vahvaa tammea varren materiaaliksi ja työstät siitä
+          huolellisesti metsästysjousen. Jokaisella vedolla jousi lähestyy valmistumista
+          työkaluksi joka palvelee sinua hyvin metsällä.
       mahoganyHuntingBow:
         name: Valmista mahonkinen metsästysjousi
         desc: Valmista sulava ja voimakas metsästysjousi tummasta ja tiiviistä mahongista.
         activityDesc: Huolella ja tarkasti työstäen muunnat mahongin kauniiksi ja
           tappavaksi metsästysjouseksi.
+      birchHuntingBow:
+        name: Valmista koivuinen metsästysjousi
+        activityDesc: Valikoit tarkkaan muutaman ohuen koivurungon pätkän, ja muovaat
+          niistä jousen vakain käsin. Virität siihen lopuksi jänteen, jolloin syntyy
+          yksinkertainen metsästystyökalu.
+        desc: Valmista perustason metsästysjousi yksinkertaisesta koivupuusta.
+      spectralHuntingBow:
+        name: Valmista aavemainen metsästysjousi
+        desc: Valmista aavemainen metsästysjousi luusta ja ektoplasmasta.
+        activityDesc: Käytät luita jousen varreksi, ja vedät siihen jänteen ektoplasmasta,
+          jonka olet muovannut soveltuvaan säiemäiseen muotoon.
     arrows:
       farganiteArrows:
         name: Valmista farganiittinuolia
@@ -1741,7 +1880,7 @@ singulars:
       bronzeArrows:
         activityDesc: Muovaat pronssin vakaalla kädellä nuolenkärjiksi, joiden terävät
           reunat kimaltavat tulen loimussa. Kiinnität ne varoen varsiinsa, ja luot
-          aseita, joilla on sekä voimaa että tarkkuutta.
+          aseita, joissa on sekä voimaa että tarkkuutta.
         name: Valmista pronssinuolia
         desc: Valmista kestäviä nuolia, joiden kärjet ovat pronssia.
       ironArrows:
@@ -1755,6 +1894,11 @@ singulars:
         desc: Valmista virtaviivaisia nuolia, joiden kärjet ovat kuparia.
         activityDesc: Muovaat kuparin keskittyneen päättäväisesti nuolenkärjiksi,
           joiden terävät reunat välkähtelevät tulen hohteessa.
+      strongBowstring:
+        name: Valmista vahva jousen jänne
+        desc: Valmista vahva jänne, jolla voit jännittää jäykänkin jousen.
+        activityDesc: Punot kestäviä kuituja yhteen, ja valmistat pitkäikäisen ja
+          voimakkaan jänteen.
     traps:
       birdhouses:
         pineBirdhouse:
@@ -1801,6 +1945,13 @@ singulars:
           activityDesc: Solmit levästä vahvan ja kestävän verkon kärsivällisin sormin.
             Jokainen solmu vahvistaa odotustasi runsaasta saaliista, ja kuvittelet
             jo sen kudelman elämää sykkivän meren antimien kokoajana.
+      boxtraps:
+        boxtrap:
+          name: Valmista loukku
+          desc: Valmista laatikon muotoinen kertakäyttöinen loukku, joka on tarkoitettu
+            pienriistan pyydystykseen.
+          activityDesc: Kokoat loukun nopeasti, ja varmistat että sen pitäisi kestää
+            pikkueläimen vangitseminen, vaikka sen tukiosa rikkoutuukin ansan lauetessa.
   foraging:
     other:
       mangroveBasket:
@@ -1808,3 +1959,42 @@ singulars:
         desc: Parantele koreista mangrovekori
         activityDesc: Yhdistät ison korin ja halkokorin, jotta sitä voisi käyttää
           molemmissa rooleissa.
+  upgrades:
+    tintedWoodworkingGlasses:
+      name: Valmista sävytetyt puutyölasit
+      desc: Parantele puutyölaseja tummentamalla niitä.
+      activityDesc: Purat ensin puutyölasit, ja otat kehykset erilleen. Sulatat sitten
+        lasin, sekoitat siihen tummia materiaaleja ja hieman tarsiliumia, joka tummentaa
+        seosta edelleen. Tuloksena on sävytetyt lasit, jotka ovat yhtä aikaa tyylikkäät
+        ja ammattimaiset.
+    extraCraftyPants:
+      name: Valmista erityisen kalustetut housut
+      desc: Parantele käsityöhousuja työkaluilla.
+      activityDesc: Yhdistät käsityöhousut ihmeellisesti mittatikun ja perusjakoavaimen
+        kanssa, ja valmistat erittäin kalustetut housut.
+    ironChefsHat:
+      name: Valmista rautainen kokinhattu
+      desc: Parantele kokinhattua karhiaislangalla, jota myös rautaheinäksi on kutsuttu.
+      activityDesc: Vahvistat kokinhattua korkeammaksi, vahvemmaksi ja painavammaksi
+        karhiaisnarulla.
+    goldenCuttingMat:
+      name: Valmista kultainen leikkuualusta
+      desc: Parantele kestävää kankaista leikkuualustaa lisäämällä siihen kultaa.
+      activityDesc: Pinnoitat leikkausalustan kultakerroksilla, joilla annat sille
+        kauniin kiiltävän pinnan, jonka vahingossa pilaamista et malta odottaa.
+    brightCamoFacePaint:
+      name: Valmista värikäs kasvonaamiomaali
+      desc: Parantele kasvonaamiomaalia kirkkailla väreillä.
+      activityDesc: Jauhat kukkien terälehdet jauheeksi, jonka sekoitat kasvonaamiomaaleihisi,
+        jotta saat niihin uusia kirkkaampia värejä.
+    gemTippedPliers:
+      name: Valmista jalokivikärkiset pihdit
+      desc: Parantele nättejä pihtejä jalokivillä.
+      activityDesc: Poistat vanhan pään pihdeistä ja muovaat jalokivistä sille korvikkeen,
+        joka on aiempaa vahvempi.
+    comfyFishingChair:
+      name: Valmista mukava kalastustuoli
+      desc: Päivitä kestävä ongenvavan pidike lankuilla ja nahalla uuteen mukavuusluokkaan.
+      activityDesc: Onnistut venyttämään nahan ja uudelleenmuokatut lankut miellyttäväksi
+        mukana kulkevaksi istuimeksi, jolloin onkivavan lepuutukseen sopinut väline
+        lepuuttaakin nyt myös jalkoja.

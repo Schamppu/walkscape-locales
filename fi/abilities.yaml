@@ -65,6 +65,17 @@ singulars:
       desc: Antaa <skill skill="crafting"/>kokemusta.
       completed: Kosketat hohtavaa palloa, ja äkilisesti sinusta tuntuu siltä, että
         osaisit väkertää asioita taidokkaammin.
+    tailoring:
+      name: 'Muistosfääri: Vaatturointi'
+      desc: Antaa <skill skill="tailoring"/>kokemusta.
+      completed: Lasket kätesi pallolle ja tunnet kuin neulat virtaisivat sen lävitse.
+        Koet huomaavasi tarkemmin vaatteidesi punosten eroja.
+    hunting:
+      name: 'Muistosfääri: Metsästys'
+      desc: Antaa <skill skill="hunting"/>kokemusta.
+      completed: Lasket kätesi pallolle ja tunnet aistiesi yli huuhtoutuvan ärsykkeiden
+        vyöryn. Tunnet voivasi yhtäkkiä havainnoida ja erottaa kaikki pienet eliöt
+        ympärilläsi.
   activities:
     emergencySwimSyrenthia:
       desc: Uit hätäisesti jonnekin kunnes päädyt pinnalle ja huomaat, että lähistöllä
@@ -132,18 +143,18 @@ singulars:
   peckingOrder:
     name: Nokkimisjärjestys
     desc: Suorittaa {count} <skill skill="foraging"/>-tyypin toimintoa välittömästi.
-    completed: Katsot kun <h1>kanasi</h1> syöksyy sokaisevalla nopeudella poimimaan
+    completed: Katsot kun <hl>kanasi</hl> syöksyy sokaisevalla nopeudella poimimaan
       mielenkiintoisia asioita ympäröivältä alueelta, ja tuo osan saaliistaan sinulle.
   torpedoAway:
     name: Sukkana sisään
     desc: Suorittaa {count} <hl>Vedenalainen matkustaminen</hl> -toimintoa välittömästi.
-    completed: <h1>Delfiinisi</h1> syöksähtää eteesi matkallanne seuraavaan vedenalaiseen
+    completed: <hl>Delfiinisi</hl> syöksähtää eteesi matkallanne seuraavaan vedenalaiseen
       kohteeseesi. Sen pyrstöllään luoma imuvirta vetää sinut mukaansa, ja saa sinut
       siirtymään perille vaivattomasti ja silmänräpäyksessä.
   presentRain:
     name: Lahjasade
     desc: Antaa 5 satunnaista <hl>lahjaa</hl>, jotka sisältävät esineitä.
-    completed: <h1>Porosi</h1> katsoo taivaalle, ja ravistaa sarviaan. Joukko lahjoja
+    completed: <hl>Porosi</hl> katsoo taivaalle, ja ravistaa sarviaan. Joukko lahjoja
       tuntuu satavan taivaalta, ja laskeutuu jalkoihisi. Porosi töytäistessä sinua
       turvallaan avaat lahjat ja löydät niistä joukon esineitä!
   rockAndRoll:
@@ -158,8 +169,22 @@ singulars:
       /> muuttavat sinut lähes hallitsemattoman nopeaksi. Tuntuu hetken siltä, kuin
       voisit juosta ikuisesti, mutta lopulta käsittämätön nopeutesi palautuu normaaliksi.
   shellForge:
-    completed: <h1>Kilpikonnasi</h1> ottaa läjän sulattamista kaipaavia materiaalejasi,
+    completed: <hl>Kilpikonnasi</hl> ottaa läjän sulattamista kaipaavia materiaalejasi,
       ja vetäytyy kuoreensa niiden kanssa ahjon lähellä. Tunnet äkillisen kuumuuden
       lehahtavan sinua kohti, ja huomaat kilpikonnan palanneen työnsä hedelmien kanssa.
     name: Kuoriahjo
     desc: Suorittaa {count} <object id="recipe_smelting"/>-toimintoa välittömästi.
+  thatsAWrap:
+    name: Puhtaat valkeat lakanat
+    desc: Tarjoaa sinulle <hl>lakanakankaita</hl>.
+    completed: <hl>Muumiosi</hl> nykäisee irti muutaman ylimääräisen kehoaan kiertävän
+      kääreen, ja tarjoaa ne sinulle lahjana.
+  theHuntIsOn:
+    name: Tiikerinä metsästän
+    desc: Vahvistaa <skill skill="hunting"/>kykyjäsi.
+    completed: <hl>Tiikerisi</hl> laskeutuu vaanivaan asentoon ja hilpaisee edellesi;
+      se seuraa varmaankin jonkin saaliin jälkiä, ja sinun kannattaa pysytellä sen
+      perässä kun se auttaa sinua metsästämään!
+  cleverClimber:
+    name: Kliffa kiipeilykaveri
+    desc: Vaikuttaa kuin <object id="climbingTool" /> olisi käytössäsi.

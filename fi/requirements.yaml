@@ -60,6 +60,7 @@ singulars:
     notUnderwater: Sijainti ei ole <object id="location_underwater" />.
     notAgility: Kun et käytä taitoa <skill skill="agility"/>.
     smeltRecipe: Kun <object id="recipe_smelting" /> käynnissä.
+    arrowsInInventory: Repussa oltava tarvittavat <object id="arrows" />.
   factionReputations:
     syrenthiaReputation: Saavuta mainetaso <numberProgress current="{current}" max="{max}"
       /> ryhmittymässä <realm realm="faction-syrenthia-6e9359fa-597b-4448-9df5-cc3fff9a5108"
@@ -79,7 +80,7 @@ singulars:
   mainSkill:
     text: Kun suoritat taitoa <skill skill="{skill}"/>.
   skillLevel:
-    text: Kehitä taitosi tasolle <skill skill="{skill}" level="{level}"needed/>.
+    text: Kehitä taitosi tasolle <skill skill="{skill}" level="{level}" needed/>.
   itemAnywhereWithYou:
     text: Esine <item id="{item}"/> on mukanasi.
   itemEquipped:
@@ -89,14 +90,14 @@ singulars:
   itemAnywhere:
     text: Omista <item id="{item}"/>.
   distinctItemsEquippedKeyword:
-    text: Pidä <numberProgress current="{current}" max="{max}" /> erilaista kappaletta
-      esinetyyppiä <object id="{obj}" /> puettuna.
+    text: Pidä <numberProgress current="{current}" max="{max}" /> kappaletta esinetyyppiä
+      <object id="{obj}" /> puettuna.
   totalSteps:
     text: Kävele yhteensä <numberProgress current="{current}" max="{max}" /> askelta.
   characterLevel:
     text: Saavuta hahmon taso <numberProgress current="{current}" max="{max}" />.
   unlocked:
-    text: Olen avannut lukituksen <object id="{obj}" alwaysShow="true" />.
+    text: Avaa <object id="{obj}" alwaysShow="true" />.
   overencumbered:
     text: Ylitä reppusi kantoraja.
   gear:
@@ -179,3 +180,24 @@ singulars:
   itemsWithKeywordCrafted:
     text: Valmista <object id="{obj}" /> esinettä. <numberProgress current="{current}"
       max="{max}" />.
+  workEfficiencyAt:
+    text: Kun työtehokkuutesi on vähintään <numberProgress current="{current}" max="{max}"
+      />%.
+    textMaximum: Kun työtehokkuutesi on maksimissaan <numberProgress current="{current}"
+      max="{max}" />.
+  craftingType:
+    textSkill: Kun valmistat esineitä käyttäen <skill skill="{skill}" />taitoa <numberProgress
+      current="{current}" max="{max}" />.
+    text: Kun valmistat <object id="{obj}" /> <numberProgress current="{current}"
+      max="{max}" />.
+  distinctKeywordItemInInventory:
+    text: Repussasi on oltava <numberProgress current="{current}" max="{max}" /> vaadittua
+      esinettä (<object id="{obj}" />).
+  skillTypeLevel:
+    text: <skillType type="{type}"/>taitojen yhteenlasketun tason oltava yhteensä
+      <numberProgress current="{current}" max="{max}" />.
+    textRelative: <skillType type="{type}"/>taitojen yhteenlasketun tason oltava {percent}%
+      maksimista <numberProgress current="{current}" max="{max}" />.
+  petsHatched:
+    text: Vaaditaan <object id="pet_egg" /> <numberProgress current="{current}" max="{max}"
+      />.
