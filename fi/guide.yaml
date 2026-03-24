@@ -3,7 +3,7 @@ maps:
     "3": Ominaisuudet joissa on prosenttimerkki <hl>%</hl> kertautuvat - esimerkiksi
       +10% oivien materiaalien löytämiseen tarkoittaa 1.1/100.
     "8": Löytämäsi keräilyesineet tuovat sinulle kukin 1 ylimääräisen <hl>saavutuspisteen</hl>!
-    "9": Monet ei-pelaajahahmot voivat kertoa sinulle kuulemiaan <h1>huhuja</h1>,
+    "9": Monet ei-pelaajahahmot voivat kertoa sinulle kuulemiaan <hl>huhuja</hl>,
       jotka auttavat löytämään asioita pelissä.
     "12": Varmista, että olet <hl>pukenut</hl> esineet, joiden vaikutukset haluat
       käyttöön, koska suurin osa ei auta sinua repussasi kykkiessään.
@@ -30,25 +30,38 @@ maps:
       kuitenkin korkeintaan 20 tason verran.
     "4": Kun painat esinettä pitkään, siirryt tilaan, jossa voit valita monta esinettä
       kerralla.
-    "5": <hl>Valmistusnäkymä</hl> aukeaa näytön alalaidalla olevasta vihreätaustaisesta
-      napista, jossa on tongit.
+    "5": <hl>Valmistusnäkymä</hl> aukeaa näytön alalaidalla olevasta napista, jossa
+      on tongit.
     "7": Saat näkyviin <hl>saavutuksesi</hl> ja löytämäsi <hl>keräilyesineet</hl>
       painamalla hahmosi kuvaa näytön vasemmassa yläkulmassa.
     "14": Jos peli tarvitsee ylläpitotauon, älä huoli, askeleesi lasketaan yleensä
-      myös huoltokatkon aikana. Voit varmistaa asian <c c="purple">Discordin</c> ilmoituksista.
-    "15": Tiedotteet, päivitykset ja kehittäjäblogit näet <c c="green">pelin omilta
-      sivuilta</c>, <c c="red">Redditistä</c>, ja <c c="purple">Discordista</c>.
+      myös huoltokatkon aikana. Voit varmistaa asian <a href="https://discord.gg/Kk6VecJFEk"
+      c="lightPurple">Discordin</c> ilmoituksista.
+    "15": Tiedotteet, päivitykset ja kehittäjäblogit näet <a href="https://portal.walkscape.app"
+      c="lightGreen">pelin omilta sivuilta</c>, <a href="https://www.reddit.com/r/walkscape"
+      c="lightRed">Redditistä</c>, ja <a href="https://discord.gg/Kk6VecJFEk" c="lightPurple">Discordista</c>.
     "16": Löysitkö jotain, mikä on rikki, tai onko sinulla muita ehdotuksia? Kerro
-      meille <c c="purple">Discordissa</c>! Raporttisi auttavat parantamaan peliä!
+      meille <a href="https://discord.gg/Kk6VecJFEk" c="lightPurple">Discordissa</c>!
+      Raporttisi auttavat parantamaan peliä!
     "19": <hl>Käsityön laatu</hl> paranee, jos taitosi ylittää <hl>reseptin</hl> vaatiman
       ensisijaisen taidon minimirajan; näet rajan <hl>valmistusnäkymässä</hl>.
     "20": Jos puet päällesi varustesetin ollessasi sijainnissa, jossa on pankki, nostat
       automaattisesti kaikki settiin tarvittavat ja repustasi puuttuvat esineet pankista.
+    "24": Syötteitä vaativat metsästysaktiviteetit antavat <hl>tuplapalkkiot</hl>
+      mahdollisten tuottojensa valikoimasta!
+    "21": Syötteitä vaativat metsästystoiminnot saavat <hl>bonuksia</hl> käyttämällä
+      <hl>oivia</hl> syötteitä! Tarkista ominaisuuslistasta, miten niistä hyödyt!
+    "22": Haluatko selvittää jonkin tietyn asian? Vilkaise pelin <a href="https://wiki.walkscape.app"
+      c="yellow">wikiä</c> - spoilerivaroitus!
+    "23": Nautitko pelistä? Sen mahdollistavat kaikki tukijamme <a href="https://www.patreon.com/WalkScape"
+      c="yellow">Patreonin</c> ja <a href="https://buymeacoffee.com/walkscape" c="yellow">Buy
+      Me A Coffee</c> -palvelun kautta!
   skillTypes:
     "gathering": Keräilytaitoihin kuuluvat <skill skill="foraging"/>, <skill skill="fishing"/>,
-      <skill skill="mining"/> ja <skill skill="woodcutting"/>.
+      <skill skill="hunting"/>, <skill skill="mining"/> ja <skill skill="woodcutting"/>.
     "artisan": Luoviin taitoihin kuuluvat <skill skill="cooking"/>, <skill skill="crafting"/>,
-      <skill skill="carpentry"/>, <skill skill="smithing"/> ja <skill skill="tinkering"/>.
+      <skill skill="carpentry"/>, <skill skill="smithing"/>, <skill skill="tailoring"/>
+      ja <skill skill="tinkering"/>.
     "utility": Muihin taitoihin kuuluu <skill skill="agility"/>.
 singulars:
   info:
@@ -81,3 +94,19 @@ singulars:
     claimPet: Kun adoptoit lemmikkisi, se lisätään lemmikkinäkymääsi ja voit hautoa
       munan, jonka kuoriutumisen jälkeen voit kutsua lemmikin luoksesi milloin vain.
       Et voi käydä kauppaa adoptoiduilla lemmikeillä, koska ne <c>sidotaan hahmoosi</c>.
+    attributeTypes: "<bp /><icon i=\"Gear alt\"/>  <c i=0>Käytetyt varusteet</c>:
+      ominaisuudet tällä hetkellä ylläsi olevista varusteista.\n\n<bp /><icon i=\"\
+      Tools alt\"/>  <c i=1>Käytetyt työkalut</c>: ominaisuudet käyttämistäsi työkaluista.\n\
+      \n<bp /><icon i=\"Collectible\"/>  <c i=2>Keräilyesineet</c>: pysyvät ominaisuudet
+      keräilyesineistä.\n\n<bp /><icon i=\"Dev services\"/>  <c i=3>Palvelut</c>:
+      ominaisuudet tämänhetkisen sijaintisi palveluista.\n\n<bp /><icon i=\"Pets\"\
+      />  <c i=4>Lemmikit</c>: ominaisuudet läsnäolevasta lemmikistäsi.\n\n<bp /><icon
+      i=\"Fine material\"/>  <c i=5>Oivan syötteen etu</c>: hyöty oivien syötemateriaalien
+      käytöstä.\n\n<bp /><icon i=\"Material\"/>  <c i=6>Syötteen vaikutus</c>: ominaisuudet
+      toimintaan valitsemistasi syötteistä.\n\n<bp /><icon i=\"Consumables\"/>  <c
+      i=7>Hyödykkeet</c>: ominaisuudet hyödykkeistä, joita tällä hetkellä kulutat
+      toiminnassa.\n\n<bp /><icon i=\"Level up\"/>  <c i=8>Taitotaso</c>: ominaisuudet
+      nykyisestä taidon tasostasi (esim. vaadittavan taitotason ylittymisen hyöty).\n\
+      \n<bp /><icon i=\"Abilities\"/>  <c i=9>Kyvyt</c>: ominaisuudet kyvyistäsi.\n\
+      \n<bp /><icon i=\"Player effect\"/>  <c i=10>Aktiiviset vaikutukset</c>: ominaisuudet
+      tällä hetkellä aktiivisena olevista vaikutuksistas.\n"
