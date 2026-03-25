@@ -9,10 +9,9 @@ singulars:
     tinkering: Выполнить <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
       /> <numberProgress current="{current}" max="{max}" /> раз в <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
       alwaysShow="true" />
-    swimmingExpert: Активность <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
-      alwaysShow="true" /> выполнена <numberProgress current="{current}" max="{max}"
-      /> раз.
-    beginnerSkydisc: Завершить <object id="activity-frisbee_golfing_(beginner)-0fb41f4d-f46b-4a6d-acdf-f2525654c714"
+    swimmingExpert: Выполнить <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> раз.
+    beginnerSkydisc: Выполнить <object id="activity-frisbee_golfing_(beginner)-0fb41f4d-f46b-4a6d-acdf-f2525654c714"
       alwaysShow="true" /> в <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
       alwaysShow="true" /><numberProgress current="{current}" max="{max}" /> раз.
     underwaterBasketweaving: Выполнить <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
@@ -25,6 +24,10 @@ singulars:
       />
     sledding: Выполняя <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
       />.
+    intermediateSkydisc: Выполнить <object 
+      id="activity-frisbee_golfing_(intermediate)-ecbf8887-6555-4d43-b044-e8e05eac556c"
+      alwaysShow="true" /> в <object id="location-bilgemont_port-3487fbca-62e3-4a6c-8f91-ceacdc6ea382"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> раз.
   itemInInventory:
     text: <item id="{item}"/> должен быть в инвентаре.
   haveItemStack:
@@ -181,3 +184,5 @@ singulars:
   skillTypeLevel:
     textRelative: Иметь {percent}% прогресса до макс. уровня <skillType type="{type}"/>
       <numberProgress current="{current}" max="{max}" />.
+    text: Иметь суммарный уровень <skillType type="{type}"/> <numberProgress current="{current}"
+      max="{max}" />.
