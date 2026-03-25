@@ -143,6 +143,11 @@ singulars:
       fromOverencumbered: Перегруз
       inputs: Ресурсы
       fromPets: Питомцы
+      allAttributes: Показать все характеристики
+      fromEffects: Активные эффекты
+      availableInput: (доступно <c>{quantity}</c> шт)
+      requiresInput: 'Нужно: <object id="{keyword}"/> <hl>{quantity}</hl> шт'
+      activeEffects: Активные эффекты
     info:
       noActivity: Активность не выбрана. <hl>Выберите одну ниже</hl>, или свайпните
         влево, чтобы увидеть всё, доступное в данной локации.
@@ -377,7 +382,7 @@ singulars:
       slotDoesntExist: Этой ячейки инвентаря больше не существует.
       cantBeDropped: Предмет не может быть выброшен.
       oneOrMoreCantBeDropped: Один или более предметов не могут быть выброшены.
-      attributes: Атрибуты
+      attributes: Характеристики
       abilities: Способности
       requires: Требуется
       equipToRingOne: Экипировать в ячейку 1 для кольца
@@ -535,7 +540,7 @@ singulars:
       toolSlot: Ячейка инструмента
       default: По умолчанию
       level: 'Ур. '
-      showAttributes: Показать атрибуты
+      showAttributes: Показать характеристики
       gear: Экипировка
       name: Имя
       unequipGear: Снять экипировку
@@ -839,7 +844,7 @@ singulars:
       actionsCompleted: Действия завершены
       fromProc: От <c>{proc}</c>
       fromSource: От <object id="{source}"/>
-      fromAttribute: От атрибута {attribute}
+      fromAttribute: От свойства {attribute}
       startedNewActivity: Начата активность <object id="{activity}"/> в <object id="{location}"/>
       startedActivityNoLocation: Начата активность <object id="{activity}"/>
       actionCancelled: Действие отменено
@@ -886,7 +891,7 @@ singulars:
       noPetsFound: Не найдено питомцев по вашему запросу.
       petEggs: Яйца
       noPetSummoned: В данный момент питомец не призван. <c>Призовите питомца</c>,
-        чтобы он следовал за вами и делился с вами своими атрибутами и способностями!
+        чтобы он следовал за вами и делился с вами своими характеристиками и способностями!
       summonedPet: Призванный питомец
       canHatch: Можно вылупить
       canEvolve: Может вырасти
@@ -898,7 +903,7 @@ singulars:
       unlockedAt: Разблокируется на
       evolve: Подрасти
       hatch: Вылупить
-      attributes: Атрибуты
+      attributes: Характеристики
       maxLevel: Макс. уровень
       requirementsToGainXPNeeded: 'Для получения опыта для <c>{name}</c> нужно выполнить
         следующее:'
@@ -965,7 +970,11 @@ singulars:
       sellItems: Продать предметы
   attributeListing:
     phrases:
-      allAttributes: Все атрибуты
+      allAttributes: Все характеристики
+      overlevelingWithNumber: Ур. навыка на <c>+{level}</c> больше требуемого.
+      overlevelingFromAgility: От <object id="agility" /> <c>{level}</c> ур.
+    options:
+      showInactiveAttributes: Показывать неактивные
 plurals:
   inventory:
     info:
@@ -1037,7 +1046,7 @@ plurals:
         two: 'Действия осталось'
         few: '-'
         many: Действий осталось
-        other: Действия осталось
+        other: Действий осталось
         one: Действие осталось
       stepsUntilArrival:
         zero: Шагов до прибытия
