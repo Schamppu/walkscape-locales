@@ -440,6 +440,14 @@ singulars:
         /> nei suoi requisiti.
       name: Rete da caccia
       requirement: Richiede una <object id="huntingNet" /> equipaggiata.
+    fishingRodRest:
+      requirementLevel: Richiede un supporto per canna da pesca che abbia almeno <keywordRequirements
+        /> tra i propri requisiti.
+      name: Supporto per canna da pesca
+      desc: Il supporto per canna da pesca rende l'esperienza di pesca più rilassante.
+        Utile per <object id="fishing" />.
+      requirment: È necessario che sia presente l'elemento <object id="fishingRodRest"
+        />.
   recipes:
     skills:
       cooking:
@@ -510,8 +518,8 @@ singulars:
       name: Disco Ghiacciato
       requirementLevel: Richiede un disco ghiacciato che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
-      desc: Gli skydisc vengono utilizzati per alcune attività sportive, come lo skydisc
-        golf.
+      desc: I dischi ghiacciati vengono utilizzati per alcune attività sportive, come
+        il golf con i dischi ghiacciati.
     skis:
       name: Sci
       requirement: Richiede <object id="skis" /> equipaggiati.
@@ -838,26 +846,41 @@ singulars:
       name: Segheria
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servizio per trasformare <object id="logs" /> in <object id="plank"
+        />, insieme ad altre creazioni legate alla <skill skill="carpentry"/>.
     workshop:
       name: Laboratorio
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servizio che permette di trasformare i materiali in <object id="tool"
+        /> e oggetti utili, oltre ad altre creazioni legate all'<skill skill="crafting"/>.
     forge:
       name: Forgia
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servizio per trasformare <object id="ore" /> in <object id="bar" />,
+        oltre ad altre creazioni legate alla <skill skill="smithing"/>.
     kitchen:
       name: Cucina
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servizio che consente di trasformare <object id="ingredient" /> in
+        <object id="food" /> o <object id="beverage" />, oltre ad altre creazioni
+        relative a <skill skill="cooking"/>.
     loom:
       name: Telaio
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servizio per la lavorazione di <object id="plant" /> fibre e pelli
+        in <object id="fabric" /> tessuti e pelle, oltre ad altre creazioni legate
+        alla <skill skill="tailoring"/>.
     bench:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Banco da Oreficeria
+      desc: Un servizio per modellare <object id="gem" /> e creare gioielli come <object
+        id="item_ring" /> o <object id="item_amulet" />, oltre ad altre creazioni
+        legate alla <skill skill="trinketry"/>.
   itemSets:
     divingGear:
       name: Equipaggiamento da immersione
