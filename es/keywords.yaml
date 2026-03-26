@@ -438,6 +438,13 @@ singulars:
       requirementLevel: Requiere una red de caza que tenga al menos <keywordRequirements
         /> de requisito.
       requirement: Requiere llevar una <object id="huntingNet" />.
+    fishingRodRest:
+      desc: El soporte de caña de pescar hace de la pesca una experiencia más relajada.
+        Útil para la <object id="fishing" />.
+      name: Soporte de caña de pescar
+      requirment: Requiere llevar un <object id="fishingRodRest" />.
+      requirementLevel: Requiere un soporte de caña de pescar que tenga al menos <keywordRequirements
+        /> de requisito.
   recipes:
     products:
       sandwich:
@@ -794,26 +801,38 @@ singulars:
       requirementLevel: <PLACEHOLDER>
       name: Taller
       requirement: <PLACEHOLDER>
+      desc: Un servicio para transformar materiales en <object id="tool" /> y objetos
+        útiles, junto con otras creaciones de <skill skill="crafting"/>.
     sawmill:
       name: Aserradero
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servicio para transformar <object id="logs" /> en <object id="plank"
+        />, junto con otras creaciones de <skill skill="carpentry"/>.
     forge:
       name: Fragua
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servicio para transformar <object id="ore" /> en <object id="bar" />,
+        junto con otras creaciones de <skill skill="smithing"/>.
     kitchen:
       name: Cocina
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servicio para transformar <object id="ingredient" /> en <object id="food"
+        /> o <object id="beverage" />, junto con otras creaciones de <skill skill="cooking"/>.
     loom:
       name: Telar
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servicio para transformar <object id="plant" /> en fibras y pieles
+        en <object id="fabric" /> y cuero, junto con otras creaciones de <skill skill="tailoring"/>.
     bench:
       name: Banco de Joyería
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un servicio para dar forma a <object id="gem" /> y crear <object id="item_ring"
+        /> o <object id="item_amulet" />, junto con otras creaciones de <skill skill="trinketry"/>.
   itemSets:
     treasureHunter:
       requirementLevel: Requiere equipo de cazador de tesoros que tenga al menos <keywordRequirements
