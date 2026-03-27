@@ -27,14 +27,20 @@ duizend}, boolSettings: {'showRecipesMaterialsAreMet': Materiaalvereisten voldaa
 'showRecipesRequirementsAreMet': Vaardigheidsvereisten voldaan, 'showRecipesServicesAreMet': Voorzieningsvereisten
 voldaan, 'showCompletedAchievements': Afgeronde prestaties weergeven, "activityInformationOpen": Laat
 maar activiteit informatie zien, "showFpsCounter": Toon FPS teller, "leftHandedMode": Linkshandige
-modus, "showDailyTips": Toon dagelijkse tips}, leaderboardType: {"totalSteps": Totaal
-aantal <c>stappen</c>, "fishing": <c>Vissen</c> level, "agility": <c>Behendigheid</c>
-level, "carpentry": <c>Timmerwerk</c> level, "cooking": <c>Koken</c> level, "crafting": <c>Vervaardigen</c>
+modus, "showDailyTips": Toon dagelijkse tips, "alwaysStopWhenInventoryFull": Standaard
+stoppen wanneer overbelast, "spriteOutlines": Contouren weergeven, "shaderOutlineRendering": Contouren
+weergeven met schaduwen, "warningBeforeClaimingExperience": Toon een waarschuwing
+voordat er beloningen voor XP worden opgeëist, "toggleAgilityXp": Uitschakelen van
+het verkrijgen van behendigheid XP door reizen, "showStepSourceInActivityView": Toon
+stappen bron in de activiteitenweergave}, leaderboardType: {"totalSteps": Totaal aantal
+<c>stappen</c>, "fishing": <c>Vissen</c> level, "agility": <c>Behendigheid</c> level,
+"carpentry": <c>Timmerwerk</c> level, "cooking": <c>Koken</c> level, "crafting": <c>Vervaardigen</c>
 level, "foraging": <c>Foerageren</c> level, "mining": <c>Delven</c> level, "smithing": <c>Smeden</c>
 level, "trinketry": <c>Sierraderij</c> level, "woodcutting": <c>Houthakken</c> level,
 "achievementPoints": <c>Prestatiepunten</c>, "totalLevel": Totaal<c>niveau</c>, "totalXp": Totale
 <c>XP</c>}, categories: {"character": Personage, "accessibility": Toegankelijkheid,
-"account": Account}, enumSettings: {"language": Taal, "leaderboardType": Klassementen,
+"account": Account, "graphics": Grafisch, "characterSpecific": personage specifiek,
+"gameplay": Spelervaring}, enumSettings: {"language": Taal, "leaderboardType": Klassementen,
 "leaderboardFilter": Toon}}, achievements: {phrases: {difficulty: {'easy': Makkelijk,
 'hard': Moeilijk, 'normal': Gemiddeld, 'extreme': Extreem}, difficultyTitle: {'hard': Moeilijke
 prestaties, 'normal': Gemiddelde prestaties, 'easy': Makkelijke prestaties, 'extreme': Extreme
@@ -44,16 +50,20 @@ per dag, 'monthly': Stappen per maand}}, announcements: {categories: {"changelog
 "days": '{days}<c>d</c>', "hours": '{hours}<c>u</c>', "minutes": '{minutes}<c>min</c>',
 "seconds": '{seconds}<c>s</c>'}}, locales: {grammaticalGender: {"masculine": Mannelijk,
 "feminine": Vrouwelijk, "neutral": Neutraal}}, skillTypes: {"gathering": Verzamelen,
-"artisan": Ambacht}}, 'plurals': {'achievements': {'phrases': {'achievementPoint': {
-'few': '-', 'many': '-', 'one': '{} prestatiepunt', 'other': '{} prestatiepunten',
-'two': '{} prestatiepunten', 'zero': '-'}}}, 'activity': {'phrases': {'actionsRemaining': {
-'few': '-', 'many': '-', 'one': 'Resterende actie', 'other': 'Resterende acties',
-'two': 'Resterende acties', 'zero': '-'}, 'actionsToLevelUp': {'few': '-', 'many': '-',
-'one': 'Actie tot volgende niveau', 'other': 'Acties tot volgende niveau', 'two': 'Acties
-tot volgende niveau', 'zero': '-'}, 'stepsRemainingInTotal': {'few': '-', 'many': '-',
-'one': 'Stap nodig in totaal', 'other': 'Stappen nodig in totaal', 'two': 'Stappen
-resterend in totaal', 'zero': '-'}, 'stepsRequired': {'few': '-', 'many': '-', 'one': 'Stap
-nodig', 'other': 'Stappen nodig', 'two': 'Stappen nodig', 'zero': '-'}, 'stepsToCraft': {
+"artisan": Ambacht}, abilities: {types: {"consumable": Verbruiksartikel, "activity": Activiteit,
+"emergency": Noodsituatie, "active": Actief, "passive": Passief}}, pets: {stages: {
+"adult": Volwassen, "egg": Ei, "juvenile": Onvolwassen}}, mysteriousMerchant: {chestTypes: {
+"skilling": Vaardigheidsschatkisten, "regional": Factieschatkisten, "guild": Gilde
+schatkisten}}}, 'plurals': {'achievements': {'phrases': {'achievementPoint': {'few': '-',
+'many': '-', 'one': '{} prestatiepunt', 'other': '{} prestatiepunten', 'two': '{}
+prestatiepunten', 'zero': '-'}}}, 'activity': {'phrases': {'actionsRemaining': {'few': '-',
+'many': '-', 'one': 'Resterende actie', 'other': 'Resterende acties', 'two': 'Resterende
+acties', 'zero': '-'}, 'actionsToLevelUp': {'few': '-', 'many': '-', 'one': 'Actie
+tot volgende niveau', 'other': 'Acties tot volgende niveau', 'two': 'Acties tot volgende
+niveau', 'zero': '-'}, 'stepsRemainingInTotal': {'few': '-', 'many': '-', 'one': 'Stap
+nodig in totaal', 'other': 'Stappen nodig in totaal', 'two': 'Stappen resterend in
+totaal', 'zero': '-'}, 'stepsRequired': {'few': '-', 'many': '-', 'one': 'Stap nodig',
+'other': 'Stappen nodig', 'two': 'Stappen nodig', 'zero': '-'}, 'stepsToCraft': {
 'few': '-', 'many': '-', 'one': 'Stap om te maken', 'other': 'Stappen om te maken',
 'two': 'Stappen om te maken', 'zero': '-'}, 'stepsToLevelUp': {'few': '-', 'many': '-',
 'one': 'Stap tot volgende niveau', 'other': 'Stappen tot volgende niveau', 'two': 'Stappen
@@ -78,7 +88,9 @@ voor een effect op <c>{actions} acties</c>.', few: '-'}}}, location: {phrases: {
 one: '<c>{}</c> speler doet deze activiteit', two: '<c>{}</c> spelers doen deze activiteit',
 other: '<c>{}</c> spelers doen deze activiteit', zero: '-'}, playersHere: {two: '<c>{}</c>
 spelers hier', zero: '-', one: '<c>{}</c> speler hier', other: '<c>{}</c> spelers
-hier'}}}}, 'singulars': {'achievements': {'info': {'pointsNeeded': '<iconText name="achievement_point"
+hier', few: '-'}}}, gearSets: {phrases: {selected: {zero: '-', one: '<hl>{}</hl> geselecteerd',
+few: '-', two: '<hl>{}</hl> geselecteerd', many: '-', other: '<hl>{}</hl> geselecteerd'}}}},
+'singulars': {'achievements': {'info': {'pointsNeeded': '<iconText name="achievement_point"
 text="@views.plurals.achievements.phrases.achievementPoint" color="${color}"/> totdat
 de volgende beloning is vrijgespeeld.', collectibleItems: Verzamelobjecten zijn voorwerpen
 die je kunt vinden in de wereld van WalkScape. Er zijn verschillende soorten verzamelobjecten
@@ -190,15 +202,15 @@ ability, holdToCast: Ingedrukt houden om uit te voeren, holdToUse: Ingedrukt hou
 om te gebruiken, noAction: Geen actie, useConsumable: Gebruik verbruiksartikel, alreadyHere: 'Je
 bent al in <object id="{location}"/>. Ability kan niet gebruikt worden om hierheen
 te reizen.', cannotUseMore: Je kunt deze ability niet gebruiken. Mogelijk heb je deze
-ability al actief en zou de maximale duur daardoor worden overschreden.}, info: {
-abilitiesInfo: Abilities zijn speciale acties die je direct een voordeel in het spel
-geven. Abilities hebben een cooldown waar je op moet wachten voordat je de ability
-opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je hebt geen abilities</hl>. Bepaalde
-uitrusting in het spel geven je abilities die je kunt gebruiken om direct een voordeel
-te verkrijgen, met een cooldown.'}}, cooldowns: {phrases: {followingMustBeTrueToUse: 'Vereisten
-om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan het volgende moet
-voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown resterend:',
-cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown., charges: Ladingen,
+ability al actief en zou de maximale duur daardoor worden overschreden., lastsFor: 'De
+werking houdt aan gedurende:'}, info: {abilitiesInfo: Abilities zijn speciale acties
+die je direct een voordeel in het spel geven. Abilities hebben een cooldown waar je
+op moet wachten voordat je de ability opnieuw kunt gebruiken., youHaveNoAbilities: '<hl>Je
+hebt geen abilities</hl>. Bepaalde uitrusting in het spel geven je abilities die je
+kunt gebruiken om direct een voordeel te verkrijgen, met een cooldown.'}}, cooldowns: {
+phrases: {followingMustBeTrueToUse: 'Vereisten om te gebruiken niet voldaan:', followingMustBeTrueToTick: 'Aan
+het volgende moet voldaan worden om de cooldown af te laten nemen:', cooldownRemaining: 'Cooldown
+resterend:', cooldownReady: 'Cooldown: Gereed', noCooldown: Geen cooldown., charges: Ladingen,
 source: Bron, cooldownRequirements: Cooldown vereisten, cooldown: Cooldown, requirements: Vereisten,
 inputAtMax: Max.}}, journal: {phrases: {jobs: Klusjes}, info: {jobInfo: 'Klusjes zijn
 <c>simpele en herhaalbare taken</c> die je kunt uitvoeren om beloningen te krijgen.
