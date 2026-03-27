@@ -266,7 +266,7 @@ singulars:
       requirementLevel: "Requires a local map that has at least <keywordRequirements /> in its requirements."
     knife:
       name: Knife
-      desc: Sharp, so be mindful of your fingers! Useful for cutting things, and thus for <object id="cooking" />.
+      desc: Sharp, so be mindful of your fingers! Useful for cutting things, and thus has many applications.
       requirement: Requires an equipped <object id="knife" />.
       requirementLevel: "Requires a knife that has at least <keywordRequirements /> in its requirements."
     wrench:
@@ -422,7 +422,7 @@ singulars:
       requirementLevel: "Requires a miscellaneous item that has at least <keywordRequirements /> in its requirements."
     processed:
       name: Processed
-      desc: A material that has been processed from a raw material, such as a bar or plank.
+      desc: A material that has been processed from a raw material, such as a <object id="bar" />, <object id="plank" />, <object id="fabric" />, or <object id="leather" />.
       requirement: Requires a <object id="processed" /> material.
       requirementLevel: "Requires a processed material that has at least <keywordRequirements /> in its requirements."
     offcut:
@@ -440,6 +440,21 @@ singulars:
       desc: A sheet of fabric that will typically be used in <object id="tailoring" /> recipes.
       requirement: Requires <object id="fabric" />.
       requirementLevel: "Requires fabric that has at least <keywordRequirements /> in its requirements."
+    fibrousPlant:
+      name: Fibrous plant
+      desc: Can be used in <object id="tailoring" /> recipes to make <object id="fabric" />. Can typically be found from <object id="foraging" />.
+      requirement: Requires a <object id="fibrousPlant" />.
+      requirementLevel: "Requires a fibrous plant that has at least <keywordRequirements /> in its requirements."
+    hide:
+      name: Hide
+      desc: A piece of animal hide that can be used in <object id="tailoring" /> recipes to make <object id="leather" />. Can be obtained from <object id="hunting" />.
+      requirement: Requires <object id="hide" />.
+      requirementLevel: "Requires hide that has at least <keywordRequirements /> in its requirements."
+    leather:
+      name: Leather
+      desc: A piece of leather that will typically be used in <object id="tailoring" /> recipes.
+      requirement: Requires <object id="leather" />.
+      requirementLevel: "Requires leather that has at least <keywordRequirements /> in its requirements."
   consumables:
     cookedFish:
       name: Cooked fish
@@ -726,7 +741,7 @@ singulars:
       requirementLevel: "<PLACEHOLDER>"
     loom:
       name: Loom
-      desc: A service for processing <object id="plant" /> fibers and hides into <object id="fabric" /> and leather, along with other <skill skill="tailoring"/> related creations.
+      desc: A service for processing <object id="fiberousPlant" /> and <object id="hide" /> into <object id="fabric" /> and <object id="leather" />, along with other <skill skill="tailoring"/> related creations.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
   itemSets:
