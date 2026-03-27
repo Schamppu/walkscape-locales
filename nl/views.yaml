@@ -72,21 +72,22 @@ few: '-', many: '-', two: Stappen tot aankomst, zero: '-', one: Stap tot aankoms
 stepsRequiredPerAction: {one: '<icon i="Steps"/> <c>{} stap</c> benodigd per actie',
 two: '<icon i="Steps"/> <c>{} stappen</c> benodigd per actie', other: '<icon i="Steps"/>
 <c>{} stappen</c> benodigd per actie', few: '-', many: '-', zero: '-'}, workEfficiency: {
-one: Werkefficiëntie, two: Werkefficiëntie, few: '-', many: '-', other: Werkefficiëntie},
-actions: {few: '-', many: '-', two: '{} acties', one: '{} actie', other: '{} acties'},
-steps: {one: '{} stap', two: '{} stappen', other: '{} stappen'}}}, inventory: {info: {
-consumableDuration: {many: '-', two: 'Activiteit <object id="{activity}" alwaysShow="true"/>
+one: Werkefficiëntie, two: Werkefficiëntie, few: '-', many: '-', other: Werkefficiëntie,
+zero: '-'}, actions: {few: '-', many: '-', two: '{} acties', one: '{} actie', other: '{}
+acties', zero: '-'}, steps: {one: '{} stap', two: '{} stappen', other: '{} stappen',
+zero: '-', few: '-', many: '-'}}}, inventory: {info: {consumableDuration: {many: '-',
+two: 'Activiteit <object id="{activity}" alwaysShow="true"/> vereist <c>{steps}</c>
+stappen per actie. De gekozen hoeveelheid verbruiksartikelen is goed voor een effect
+op <c>{actions} acties</c>.', one: 'Activiteit <object id="{activity}" alwaysShow="true"/>
 vereist <c>{steps}</c> stappen per actie. De gekozen hoeveelheid verbruiksartikelen
-is goed voor een effect op <c>{actions} acties</c>.', one: 'Activiteit <object id="{activity}"
+is goed voor een effect op <c>{actions} actie</c>.', zero: 'Activiteit <object id="{activity}"
 alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie. De gekozen hoeveelheid
-verbruiksartikelen is goed voor een effect op <c>{actions} actie</c>.', zero: 'Activiteit
+verbruiksartikelen is goed voor een effect op <c>{actions} acties</c>.', other: 'Activiteit
 <object id="{activity}" alwaysShow="true"/> vereist <c>{steps}</c> stappen per actie.
 De gekozen hoeveelheid verbruiksartikelen is goed voor een effect op <c>{actions}
-acties</c>.', other: 'Activiteit <object id="{activity}" alwaysShow="true"/> vereist
-<c>{steps}</c> stappen per actie. De gekozen hoeveelheid verbruiksartikelen is goed
-voor een effect op <c>{actions} acties</c>.', few: '-'}}}, location: {phrases: {playersDoingActivity: {
-one: '<c>{}</c> speler doet deze activiteit', two: '<c>{}</c> spelers doen deze activiteit',
-other: '<c>{}</c> spelers doen deze activiteit', zero: '-'}, playersHere: {two: '<c>{}</c>
+acties</c>.', few: '-'}}}, location: {phrases: {playersDoingActivity: {one: '<c>{}</c>
+speler doet deze activiteit', two: '<c>{}</c> spelers doen deze activiteit', other: '<c>{}</c>
+spelers doen deze activiteit', zero: '-', many: '-'}, playersHere: {two: '<c>{}</c>
 spelers hier', zero: '-', one: '<c>{}</c> speler hier', other: '<c>{}</c> spelers
 hier', few: '-'}}}, gearSets: {phrases: {selected: {zero: '-', one: '<hl>{}</hl> geselecteerd',
 few: '-', two: '<hl>{}</hl> geselecteerd', many: '-', other: '<hl>{}</hl> geselecteerd'}}}},
@@ -535,8 +536,8 @@ geannuleerd, startedNewActivity: 'Activiteit gestart <object id="{activity}"/> i
 <object id="{location}"/>', switchedToGearSet: 'Uitrustingsset wisselen naar <c>{name}</c>',
 actionsCompleted: Acties voltooid, none: Geen, gearSetDoesNotExist: Deze uitrustingsset
 bestaat niet meer, consumablesUsed: Verbruiksartikel gebruikt, switchedToPet: '<playerPet
-id="{pet}"/> opgeroepen', petDoesNotExist: 'Het beestje bestaat niet meer, kon niet
-worden opgeroepen'}}, rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde Walkpedia-artikelen,
+id="{pet}"/> opgeroepen', petDoesNotExist: 'Het beestje bestaat niet meer en kon niet
+worden opgeroepen.'}}, rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde Walkpedia-artikelen,
 rumorsFromCharacter: 'Geruchten van <c>{characterName}</c>', backToRumors: Terug naar
 geruchten}}, download: {phrases: {downloadedFileCount: '<c i=0>{current}</c> van <c
 i=1>{total}</c> bestanden gedownload', downloadingAssets: Assets worden gedownload...}},
@@ -560,10 +561,10 @@ hebt geen beestjes. Je kunt beestjes krijgen door eieren te vinden en ze uit te 
 petEggs: Eieren van beestjes, ownedFor: In bezit sinds, xpToHatch: XP nodig tot uitgebroed,
 hatchingProgress: Voortgang uitbroeden, isHatching: '<c>{name}</c> komt uit!', noEggsFound: Geen
 eieren gevonden die aan de zoekopdracht voldoen., requirementsToHatchNotMet: '<c>{name}</c>
-kan geen ei uitbroeden'}}, currencies: {info: {noCurrencies: "Je hebt momenteel geen
-valuta's. Je kunt valuta's verdienen bij <c>gilden</c>, <c>Heimelijke Handelaar</c>
-en andere <c>speciale bronnen</c>.", thereAreNoPaidCurrencies: Valuta's in het spel
-zullen <c>nooit</c> te koop zijn <c>met echt geld</c>.}, phrases: {goldCoins: Gouden
+kan geen ei uitbroeden', unlockedAt: Ontgrendeld om}}, currencies: {info: {noCurrencies: "Je
+hebt momenteel geen valuta's. Je kunt valuta's verdienen bij <c>gilden</c>, <c>Heimelijke
+Handelaar</c> en andere <c>speciale bronnen</c>.", thereAreNoPaidCurrencies: Valuta's
+in het spel zullen <c>nooit</c> te koop zijn <c>met echt geld</c>.}, phrases: {goldCoins: Gouden
 munten, currencies: Valuta's}}, mysteriousMerchant: {phrases: {buyWithChips: Koop
 met fiches, ownedCurrency: Valuta's in bezit, buyItems: Koop voorwerpen, sellItems: Verkoop
 voorwerpen, trade: Handelen, sellingPrice: '{rarity} verkoopprijs', buyingPrice: '{rarity}
