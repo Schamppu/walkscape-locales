@@ -32,15 +32,15 @@ stoppen wanneer overbelast, "spriteOutlines": Contouren weergeven, "shaderOutlin
 weergeven met schaduwen, "warningBeforeClaimingExperience": Toon een waarschuwing
 voordat er beloningen voor XP worden opgeëist, "toggleAgilityXp": Uitschakelen van
 het verkrijgen van behendigheid XP door reizen, "showStepSourceInActivityView": Toon
-stappen bron in de activiteitenweergave}, leaderboardType: {"totalSteps": Totaal aantal
-<c>stappen</c>, "fishing": <c>Vissen</c> level, "agility": <c>Behendigheid</c> level,
-"carpentry": <c>Timmerwerk</c> level, "cooking": <c>Koken</c> level, "crafting": <c>Vervaardigen</c>
-level, "foraging": <c>Foerageren</c> level, "mining": <c>Delven</c> level, "smithing": <c>Smeden</c>
-level, "trinketry": <c>Sierraderij</c> level, "woodcutting": <c>Houthakken</c> level,
-"achievementPoints": <c>Prestatiepunten</c>, "totalLevel": Totaal<c>niveau</c>, "totalXp": Totale
-<c>XP</c>}, categories: {"character": Personage, "accessibility": Toegankelijkheid,
-"account": Account, "graphics": Grafisch, "characterSpecific": personage specifiek,
-"gameplay": Spelervaring}, enumSettings: {"language": Taal, "leaderboardType": Klassementen,
+stappen bron in de activiteitenweergave, "inventoryCollapsed": Compacte weergave},
+leaderboardType: {"totalSteps": Totaal aantal <c>stappen</c>, "fishing": <c>Vissen</c>
+level, "agility": <c>Behendigheid</c> level, "carpentry": <c>Timmerwerk</c> level,
+"cooking": <c>Koken</c> level, "crafting": <c>Vervaardigen</c> level, "foraging": <c>Foerageren</c>
+level, "mining": <c>Delven</c> level, "smithing": <c>Smeden</c> level, "trinketry": <c>Sierraderij</c>
+level, "woodcutting": <c>Houthakken</c> level, "achievementPoints": <c>Prestatiepunten</c>,
+"totalLevel": Totaal<c>niveau</c>, "totalXp": Totale <c>XP</c>}, categories: {"character": Personage,
+"accessibility": Toegankelijkheid, "account": Account, "graphics": Grafisch, "characterSpecific": personage
+specifiek, "gameplay": Spelervaring}, enumSettings: {"language": Taal, "leaderboardType": Klassementen,
 "leaderboardFilter": Toon}}, achievements: {phrases: {difficulty: {'easy': Makkelijk,
 'hard': Moeilijk, 'normal': Gemiddeld, 'extreme': Extreem}, difficultyTitle: {'hard': Moeilijke
 prestaties, 'normal': Gemiddelde prestaties, 'easy': Makkelijke prestaties, 'extreme': Extreme
@@ -535,39 +535,40 @@ geannuleerd, startedNewActivity: 'Activiteit gestart <object id="{activity}"/> i
 <object id="{location}"/>', switchedToGearSet: 'Uitrustingsset wisselen naar <c>{name}</c>',
 actionsCompleted: Acties voltooid, none: Geen, gearSetDoesNotExist: Deze uitrustingsset
 bestaat niet meer, consumablesUsed: Verbruiksartikel gebruikt, switchedToPet: '<playerPet
-id="{pet}"/> opgeroepen'}}, rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde
-Walkpedia-artikelen, rumorsFromCharacter: 'Geruchten van <c>{characterName}</c>',
-backToRumors: Terug naar geruchten}}, download: {phrases: {downloadedFileCount: '<c
-i=0>{current}</c> van <c i=1>{total}</c> bestanden gedownload', downloadingAssets: Assets
-worden gedownload...}}, pets: {phrases: {chooseEgg: Kies een ei, currentLevelProgress: Huidige
-level voortgang, abilities: Abilities, xpToMaxLevel: XP benodigd tot hoogste level,
-claimedAt: Geclaimd op, requirementsToGainXPNotMet: '<c>{name}</c> kan geen XP verdienen',
-attributes: Eigenschappen, maxLevel: Max level, summonPet: Roep beestje op, changePet: Beestje
-veranderen, dismissPet: Beestje wegsturen, pet: Beestje, egg: Ei, noEggSelected: Geen
-ei geselecteerd, noPetSelected: Geen beestje geselecteerd, openPets: Beestjes openen,
-destroy: Vernietig, currentXp: Huidige XP, hatching: Broederij, currentlyHatching: Momenteel
-aan het uitbroeden, summonedPet: Opgeroepen beestje, noPetSummoned: Geen beestje is
-op dit moment opgeroepen. <c>Roep een beestje op</c> welke je zal volgen en die je
-zijn eigenschappen en vaardigheden zal geven!, pets: Beestjes, noEggIsHatching: Geen
-beestje-ei wordt momenteel uitgebroed. Selecteer een beestje-ei om te beginnen met
-<c>uitbroeden</c>!, totalXp: Totale XP, canHatch: Kan worden uitgebroed, hasHatched: '<c>{name}</c>
-is uitgebroed en is nu <petStage id="{stage}"/>!', claimPet: Beestje claimen, unlocked: Ontgrendeld,
-evolve: Groeien, level: 'Niv. <c>{level}</c>', canEvolve: Kan groeien, hatch: Uitbroeden,
-xpToNextLevel: XP voor volgende niveau, nextLevel: Volgende niveau, isAdvancing: '<c>{name}</c>
-is aan het groeien!', hasEvolved: '<c>{name}</c> is gegroeid en is nu <petStage id="{stage}"/>!',
-hatchedAt: Uitgebroed op, noPets: Je hebt geen beestjes. Je kunt beestjes krijgen
-door eieren te vinden en ze uit te broeden., petEggs: Eieren van beestjes, ownedFor: In
-bezit sinds, xpToHatch: XP nodig tot uitgebroed, hatchingProgress: Voortgang uitbroeden,
-isHatching: '<c>{name}</c> komt uit!', noEggsFound: Geen eieren gevonden die aan de
-zoekopdracht voldoen., requirementsToHatchNotMet: '<c>{name}</c> kan geen ei uitbroeden'}},
-currencies: {info: {noCurrencies: "Je hebt momenteel geen valuta's. Je kunt valuta's
-verdienen bij <c>gilden</c>, <c>Heimelijke Handelaar</c> en andere <c>speciale bronnen</c>.",
-thereAreNoPaidCurrencies: Valuta's in het spel zullen <c>nooit</c> te koop zijn <c>met
-echt geld</c>.}, phrases: {goldCoins: Gouden munten, currencies: Valuta's}}, mysteriousMerchant: {
-phrases: {buyWithChips: Koop met fiches, ownedCurrency: Valuta's in bezit, buyItems: Koop
-voorwerpen, sellItems: Verkoop voorwerpen, trade: Handelen, sellingPrice: '{rarity}
-verkoopprijs', buyingPrice: '{rarity} koopprijs', sell: Verkopen, buy: Kopen, tradeChestItems: Voorwerpen
-vanuit schatkist verhandelen, sellFromInventory: Verkopen vanuit inventaris, sellFromBank: Verkopen
+id="{pet}"/> opgeroepen', petDoesNotExist: 'Het beestje bestaat niet meer, kon niet
+worden opgeroepen'}}, rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde Walkpedia-artikelen,
+rumorsFromCharacter: 'Geruchten van <c>{characterName}</c>', backToRumors: Terug naar
+geruchten}}, download: {phrases: {downloadedFileCount: '<c i=0>{current}</c> van <c
+i=1>{total}</c> bestanden gedownload', downloadingAssets: Assets worden gedownload...}},
+pets: {phrases: {chooseEgg: Kies een ei, currentLevelProgress: Huidige level voortgang,
+abilities: Abilities, xpToMaxLevel: XP benodigd tot hoogste level, claimedAt: Geclaimd
+op, requirementsToGainXPNotMet: '<c>{name}</c> kan geen XP verdienen', attributes: Eigenschappen,
+maxLevel: Max level, summonPet: Roep beestje op, changePet: Beestje veranderen, dismissPet: Beestje
+wegsturen, pet: Beestje, egg: Ei, noEggSelected: Geen ei geselecteerd, noPetSelected: Geen
+beestje geselecteerd, openPets: Beestjes openen, destroy: Vernietig, currentXp: Huidige
+XP, hatching: Broederij, currentlyHatching: Momenteel aan het uitbroeden, summonedPet: Opgeroepen
+beestje, noPetSummoned: Geen beestje is op dit moment opgeroepen. <c>Roep een beestje
+op</c> welke je zal volgen en die je zijn eigenschappen en vaardigheden zal geven!,
+pets: Beestjes, noEggIsHatching: Geen beestje-ei wordt momenteel uitgebroed. Selecteer
+een beestje-ei om te beginnen met <c>uitbroeden</c>!, totalXp: Totale XP, canHatch: Kan
+worden uitgebroed, hasHatched: '<c>{name}</c> is uitgebroed en is nu <petStage id="{stage}"/>!',
+claimPet: Beestje claimen, unlocked: Ontgrendeld, evolve: Groeien, level: 'Niv. <c>{level}</c>',
+canEvolve: Kan groeien, hatch: Uitbroeden, xpToNextLevel: XP voor volgende niveau,
+nextLevel: Volgende niveau, isAdvancing: '<c>{name}</c> is aan het groeien!', hasEvolved: '<c>{name}</c>
+is gegroeid en is nu <petStage id="{stage}"/>!', hatchedAt: Uitgebroed op, noPets: Je
+hebt geen beestjes. Je kunt beestjes krijgen door eieren te vinden en ze uit te broeden.,
+petEggs: Eieren van beestjes, ownedFor: In bezit sinds, xpToHatch: XP nodig tot uitgebroed,
+hatchingProgress: Voortgang uitbroeden, isHatching: '<c>{name}</c> komt uit!', noEggsFound: Geen
+eieren gevonden die aan de zoekopdracht voldoen., requirementsToHatchNotMet: '<c>{name}</c>
+kan geen ei uitbroeden'}}, currencies: {info: {noCurrencies: "Je hebt momenteel geen
+valuta's. Je kunt valuta's verdienen bij <c>gilden</c>, <c>Heimelijke Handelaar</c>
+en andere <c>speciale bronnen</c>.", thereAreNoPaidCurrencies: Valuta's in het spel
+zullen <c>nooit</c> te koop zijn <c>met echt geld</c>.}, phrases: {goldCoins: Gouden
+munten, currencies: Valuta's}}, mysteriousMerchant: {phrases: {buyWithChips: Koop
+met fiches, ownedCurrency: Valuta's in bezit, buyItems: Koop voorwerpen, sellItems: Verkoop
+voorwerpen, trade: Handelen, sellingPrice: '{rarity} verkoopprijs', buyingPrice: '{rarity}
+koopprijs', sell: Verkopen, buy: Kopen, tradeChestItems: Voorwerpen vanuit schatkist
+verhandelen, sellFromInventory: Verkopen vanuit inventaris, sellFromBank: Verkopen
 vanuit de bank, totalSellingPrice: 'Totaal voor de verkoop van <c>{amount}</c> voorwerpen',
 totalBuyingPrice: 'Totaal voor de aankoop van <c>{amount}</c> voorwerpen'}, dialogue: {
 chooseChest: Een wijs besluit! Vanuit welke schatkist wil je <c>voorwerpen verhandelen</c>?,
