@@ -148,6 +148,19 @@ singulars:
       availableInput: (доступно <c>{quantity}</c> шт)
       requiresInput: 'Нужно: <object id="{keyword}"/> <hl>{quantity}</hl> шт'
       activeEffects: Активные эффекты
+      requiresInputWithLevelOptional: (необязательно) расходует <object id="{keyword}"/>
+        <hl>{quantity}</hl> 1 шт. с хар-ми <object id="{skill}" /> <c>{level}</c>
+        ур
+      requiresInputWithLevel: 'Нужно: <object id="{keyword}"/> <hl>{quantity}</hl>
+        шт. с характеристиками <object id="{skill}" /> <c>{level}</c> ур'
+      inputsNotMet: Требования для ресурсов не выполнены
+      requirementsNotMetForInput: Требования для <object id="{item}"/> не выполнены
+      inputAttributes: Выгода от использования <object id="{item}"/>
+      noInputOptions: У вас нет <object id="{keyword}"/> в инвентаре, чтобы использовать
+        в качестве ресурсов
+      fineInputBenefit: Выгода от использования <c>качественных ресурсов</c>
+      requiresInputOptional: (необязательно) расходует <object id="{keyword}"/> <hl>{quantity}</hl>
+        1 шт
     info:
       noActivity: Активность не выбрана. <hl>Выберите одну ниже</hl>, или свайпните
         влево, чтобы увидеть всё, доступное в данной локации.
@@ -330,6 +343,7 @@ singulars:
       cooldownRequirements: Требования к восстановлению
       requirements: Требования
       inputAtMax: Макс.
+      cooldownCharged: Вы перезарядили способность <object id="{ability}"/> для <c>{target}</c>!
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />   <hl>{amount}</hl>
         </chip> получено из <object id="{item}" />
@@ -456,6 +470,8 @@ singulars:
       noItemSelected: Предмет не выбран
       gearSlots: Слоты для экипировки
       toolSlots: Слоты для инструментов
+      selectedItem: (Выбрано)
+      comparedItem: (Сравниваемый)
     info:
       toolInfo: Используйте инструменты, чтобы улучшить характеристики персонажа.
         В начале вам доступно три слота для инструментов. Дополнительные слоты открываются
@@ -554,6 +570,10 @@ singulars:
       showItems: Показать
       reorderGearSets: Упорядочить наборы снаряжения
       hideItems: Скрыть
+      noRecipesSelected: Не выбрано рецептов
+      forSkill: 'Для навыков: '
+      noSkillSelected: Не выбрано навыков
+      forRecipes: 'Для рецептов: '
     errors:
       keywordError: 'Набор экипировки уже имеет: <object id="{keyword}" />'
       duplicateItem: Предмет уже есть в наборе экипировки
@@ -853,6 +873,7 @@ singulars:
       none: Нет
       switchedToPet: Призван <playerPet id="{pet}"/>
       petDoesNotExist: Питомец больше не существует, не удалось призвать.
+      inputsUsed: Ресурсы использованы
   announcements:
     phrases:
       unread: Не прочитано
