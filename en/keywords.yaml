@@ -85,8 +85,8 @@ singulars:
       requirement: Requires a equipped <object id="item_socks" />.
       requirementLevel: "Requires socks that have at least <keywordRequirements /> in their requirements."
     underwater:
-      name: Underwater
-      desc: Underwater items provide benefits while you're under the waves.
+      name: Aquatic
+      desc: Aquatic items provide benefits while you're <object id="location_underwater" />.
       requirement: Requires <object id="item_underwater" /> equipment.
       requirementLevel: "Requires underwater equipment that has at least <keywordRequirements /> in its requirements."
     weapon:
@@ -377,7 +377,7 @@ singulars:
       requirementLevel: "Requires a nugget that has at least <keywordRequirements /> in its requirements."
     bar:
       name: Bar
-      desc: Can be used in various <object id="smithing" /> and <skillType type="crafting" /> recipes. Processed from <object id="ore" />.
+      desc: Can be used in various <object id="smithing" /> and <skillType type="artisan" /> recipes. Processed from <object id="ore" />.
       requirement: Requires a <object id="bar" />.
       requirementLevel: "Requires a bar that has at least <keywordRequirements /> in its requirements."
     plank:
@@ -392,7 +392,7 @@ singulars:
       requirementLevel: "Requires a gem that has at least <keywordRequirements /> in its requirements."
     roughGem:
       name: Rough gem
-      desc: Can be processed into a <object id="cut_get" />. Basic ingredient gained from <object id="mining" />.
+      desc: Can be processed into a <object id="cut_gem" />. Basic ingredient gained from <object id="mining" />.
       requirement: Requires a <object id="rough_gem" />.
       requirementLevel: "Requires a rough gem that has at least <keywordRequirements /> in its requirements."
     cutGem:
@@ -778,13 +778,21 @@ singulars:
   locations:
     underwater:
       name: Underwater
+      desc: A place that resides under the water. It will require some <object id="itemset_diving_gear" />!
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
     desert:
       name: Desert
+      desc: A place that resides in a aridly hot and sandy environment. It will require the ability to <object id="navigateDesert" />!
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
     regional:
       name: Regional
+      desc: This is directly related to a specific region or faction.
+      requirement: "<PLACEHOLDER>"
+      requirementLevel: "<PLACEHOLDER>"
+    ghostly:
+      name: Ghostly
+      desc: A place that has a connection with spirits. It will make certain <object id="spectral" /> items stronger.
       requirement: "<PLACEHOLDER>"
       requirementLevel: "<PLACEHOLDER>"
