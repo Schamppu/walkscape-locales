@@ -102,7 +102,7 @@ singulars:
       requirement: Требуется <object id="knife" />.
       requirementLevel: Требуется нож с характеристиками <keywordRequirements />.
       desc: Острый, так что берегите пальцы! Полезен для резки вещей, а значит, и
-        для <object id="cooking" />.
+        для многих других применений.
     ruler:
       name: Линейка
       requirement: Требуется <object id="ruler" />.
@@ -539,7 +539,9 @@ singulars:
       requirement: Требуется <object id="processed" /> материал.
       requirementLevel: Требуется обработанный материал с характеристиками <keywordRequirements
         />.
-      desc: Материал, который был переработан из сырья, например, слиток или доска.
+      desc: Материал, который был переработан из сырья, например, <object id="bar"
+        />, <object id="plank" />, <object id="fabric" /> или <object id="leather"
+        />.
     crustacean:
       requirement: Требуется <object id="crustacean" />.
       name: Ракообразное
@@ -554,6 +556,27 @@ singulars:
         />.
       requirementLevel: Требуется ткань, имеющая как минимум <keywordRequirements
         /> в своих требованиях.
+    fibrousPlant:
+      name: Растение с волокнами
+      requirement: Требуется <object id="fibrousPlant" />.
+      requirementLevel: Требуется растение с волокнами, имеющее как минимум <keywordRequirements
+        /> в своих требованиях.
+      desc: Может использоваться в рецептах <object id="tailoring" />, чтобы создать
+        <object id="fabric" />. Обычно добывается при <object id="foraging" />.
+    hide:
+      requirement: Требуется <object id="hide" />.
+      requirementLevel: Требуется шкура, имеющая как минимум <keywordRequirements
+        /> в своих требованиях.
+      name: Шкура
+      desc: Кусок шкуры животного, который может быть использован в рецептах <object
+        id="tailoring" />, чтобы сделать <object id="leather" />. Добывается из активностей
+        типа <object id="hunting" />.
+    leather:
+      desc: Лоскут кожи, который может использоваться для <object id="tailoring" />.
+      requirementLevel: Требуется кожа, имеющая как минимум <keywordRequirements />
+        в своих требованиях.
+      name: Кожа
+      requirement: Требуется <object id="leather" />.
   consumables:
     cookedFish:
       name: Готовая рыба
@@ -800,9 +823,9 @@ singulars:
       name: Ткацкий станок
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
-      desc: Оборудование для переработки волокон из <object id="plant" /> и шкур в
-        <object id="fabric" /> и кожу, а также для других активностей, связанных с
-        навыком <skill skill="tailoring"/>.
+      desc: Оборудование для переработки волокон из <object id="fiberousPlant" />
+        и <object id="hide" /> в <object id="fabric" /> и <object id="leather" />,
+        а также для других активностей, связанных с навыком <skill skill="tailoring"/>.
   general:
     lightSource:
       name: Источник света
