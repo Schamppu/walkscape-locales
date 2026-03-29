@@ -18,25 +18,25 @@ singulars:
           id="recipe_cooking" />.
   activities:
     woodcuttingTrees:
-      requirementLevel: Требуется активность по рубке деревьев, которая имеет хотя
-        бы <keywordRequirements /> в своих требованиях.
+      requirementLevel: Требуется активность по рубке деревьев с характеристиками
+        <keywordRequirements />.
       name: Рубка деревьев
       requirement: Требуется активность <object id="woodcuttingTrees" />.
     fishing:
       name: Рыбная ловля
-      requirement: Необходима <object id="activity_fishing" />.
-      requirementLevel: Требуется активность по ловле рыбы, которая имеет хотя бы
-        <keywordRequirements /> в своих требованиях.
+      requirement: Требуется активность типа <object id="activity_fishing" />.
+      requirementLevel: Требуется активность по ловле рыбы с характеристиками <keywordRequirements
+        />.
     miningOres:
       name: Добыча руды
-      requirement: Требует активность типа <object id="activity_mining" />.
-      requirementLevel: Требует активность по добыче руды, которая имеет хотя бы <keywordRequirements
-        /> в своих требованиях.
+      requirement: Требуется активность типа <object id="activity_mining" />.
+      requirementLevel: Требуется активность по добыче руды с характеристиками <keywordRequirements
+        />.
     foragingPlants:
       name: Сбор растений
-      requirement: Требует активность типа <object id="activity_foraging" />.
-      requirementLevel: Требует активность по сбору растений, которая имеет хотя бы
-        <keywordRequirements /> в своих требованиях.
+      requirement: Требуется активность типа <object id="activity_foraging" />.
+      requirementLevel: Требуется активность по сбору растений с характеристиками
+        <keywordRequirements />.
   tools:
     skillBook:
       requirement: Требуется <object id="skillBook" />.
@@ -200,7 +200,7 @@ singulars:
       desc: Используется как поверхность для нарезки ингредиентов.
     cookingSpices:
       name: Специи
-      requirement: Требуется <object id="cookingSpices" />.
+      requirement: Требуются <object id="cookingSpices" />.
       requirementLevel: Требуются специи с характеристиками <keywordRequirements />.
       desc: Когда-то были очень дорогими. В наши дни полезны для кулинарных целей.
     saw:
@@ -294,8 +294,8 @@ singulars:
       requirement: Требуется <object id="birdhouse" />.
       name: Скворечник
       desc: Возможно, скворечники появятся в игре позже.
-      requirementLevel: Требуется скворечник, имеющий как минимум <keywordRequirements
-        /> в своих требованиях.
+      requirementLevel: Требуется скворечник с характеристиками <keywordRequirements
+        />.
     toolbox:
       desc: Ящики для инструментов используются для хранения ваших различных инструментов.
         Полезны для навыков типа <skillType type="artisan" />.
@@ -338,15 +338,15 @@ singulars:
       name: Подставка для удочки
       desc: Подставка для удочки делает рыбалку более расслабляющей. Полезна для <object
         id="fishing" />.
-      requirementLevel: Требуется подставка для удочки, имеющая как минимум <keywordRequirements
-        /> в своих требованиях.
+      requirementLevel: Требуется подставка для удочки с характеристиками <keywordRequirements
+        />.
       requirment: Требуется <object id="fishingRodRest" />.
     huntingNet:
       name: Охотничья сеть
       desc: Сеть используется для <object id="hunting" /> на животных.
       requirement: Требуется экипировать <object id="huntingNet" />.
-      requirementLevel: Требуется охотничья сеть, имеющая как минимум <keywordRequirements
-        /> в своих требованиях.
+      requirementLevel: Требуется охотничья сеть с характеристиками <keywordRequirements
+        />.
   gear:
     skillingGear:
       requirement: Требуется <object id="skillingGear" />.
@@ -356,14 +356,12 @@ singulars:
     skis:
       requirement: Требуются <object id="skis" />.
       name: Лыжи
-      requirementLevel: Требует лыжи, которые имеют хотя бы <keywordRequirements />
-        в своих требованиях.
+      requirementLevel: Требуются лыжи с характеристиками <keywordRequirements />.
       desc: Лыжи позволяют путешествовать по заснеженным местностям и открывают короткие
         пути в Джарвонии. Они также необходимы для некоторых зимних активностей.
     frisbee:
       name: Фрисби
-      requirementLevel: Требует фрисби, которое имеет хотя бы <keywordRequirements
-        /> в своих требованиях.
+      requirementLevel: Требуется фрисби с характеристиками <keywordRequirements />.
       requirement: Требуется <object id="frisbee" />.
       desc: Фрисби используется для игры во, сюрприз, фрисби.
     lifeVest:
@@ -407,7 +405,7 @@ singulars:
       desc: Амулеты носятся на шее.
     bellows:
       name: Мехи
-      requirement: Требуется <object id="bellows" />.
+      requirement: Требуются <object id="bellows" />.
       requirementLevel: Требуются кузнечные мехи с характеристиками <keywordRequirements
         />.
       desc: Меха позволяют поддувать огонь кислородом, заставляя пламя разгораться
@@ -426,11 +424,12 @@ singulars:
       desc: Снаряжение для лазания открывает короткие пути в горных районах и требуется
         для некоторых видов деятельности, связанных с лазанием.
     underwater:
-      name: Подводное снаряжение
+      name: Подводное
       requirement: Требуется <object id="item_underwater" />.
       requirementLevel: Требуется подводное снаряжение с характеристиками <keywordRequirements
         />.
-      desc: Подводные предметы дают преимущества, пока вы находитесь под водой.
+      desc: Подводные предметы дают преимущества, пока вы находитесь <object id="location_underwater"
+        />.
     arrows:
       name: Стрелы
       requirement: Требуются <object id="arrows" />.
@@ -449,19 +448,18 @@ singulars:
       requirement: Требуется <object id="bar" />.
       requirementLevel: Требуется слиток с характеристиками <keywordRequirements />.
       desc: Может использоваться в различных рецептах <object id="smithing" /> и <skillType
-        type="crafting" />. Получается из <object id="ore" />.
+        type="artisan" />. Получается из <object id="ore" />.
     roughGem:
       name: Необработанный самоцвет
       requirement: Нужен <object id="rough_gem" />.
       requirementLevel: Требуется необработанный самоцвет с характеристиками <keywordRequirements
         />.
-      desc: Может быть обработан в <object id="cut_get" />. Базовый ингредиент, получаемый
+      desc: Может быть обработан в <object id="cut_gem" />. Базовый ингредиент, получаемый
         при <object id="mining" />.
     fish:
       name: Рыба
       requirement: Требуется <object id="fish" />.
-      requirementLevel: Требуется рыба, которая имеет хотя бы <keywordRequirements
-        /> в своих требованиях.
+      requirementLevel: Требуется рыба с характеристиками <keywordRequirements />.
       desc: Может использоваться в различных рецептах <object id="cooking" />. Базовый
         ингредиент, получаемый из <object id="fishing" />.
     ore:
@@ -547,34 +545,31 @@ singulars:
       name: Ракообразное
       desc: Моллюск, который можно использовать в различных рецептах <object id="cooking"
         />.
-      requirementLevel: Требуется ракообразное, имеющее как минимум <keywordRequirements
-        /> в своих требованиях.
+      requirementLevel: Требуется ракообразное с характеристиками <keywordRequirements
+        />.
     fabric:
       requirement: Требуется <object id="fabric" />.
       name: Ткань
       desc: Лоскут ткани, который обычно используется в рецептах <object id="tailoring"
         />.
-      requirementLevel: Требуется ткань, имеющая как минимум <keywordRequirements
-        /> в своих требованиях.
+      requirementLevel: Требуется ткань с характеристиками <keywordRequirements />.
     fibrousPlant:
       name: Растение с волокнами
       requirement: Требуется <object id="fibrousPlant" />.
-      requirementLevel: Требуется растение с волокнами, имеющее как минимум <keywordRequirements
-        /> в своих требованиях.
+      requirementLevel: Требуется растение с волокнами с характеристиками <keywordRequirements
+        />.
       desc: Может использоваться в рецептах <object id="tailoring" />, чтобы создать
         <object id="fabric" />. Обычно добывается при <object id="foraging" />.
     hide:
       requirement: Требуется <object id="hide" />.
-      requirementLevel: Требуется шкура, имеющая как минимум <keywordRequirements
-        /> в своих требованиях.
+      requirementLevel: Требуется шкура с характеристиками <keywordRequirements />.
       name: Шкура
       desc: Кусок шкуры животного, который может быть использован в рецептах <object
         id="tailoring" />, чтобы сделать <object id="leather" />. Добывается из активностей
         типа <object id="hunting" />.
     leather:
       desc: Лоскут кожи, который может использоваться для <object id="tailoring" />.
-      requirementLevel: Требуется кожа, имеющая как минимум <keywordRequirements />
-        в своих требованиях.
+      requirementLevel: Требуется кожа с характеристиками <keywordRequirements />.
       name: Кожа
       requirement: Требуется <object id="leather" />.
   consumables:
@@ -909,14 +904,25 @@ singulars:
       name: Под водой
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Место, расположенное под водой. Для посещения потребуется <object id="itemset_diving_gear"
+        />!
     regional:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Региональный
+      desc: Это напрямую связано с определённым регионом или фракцией.
     desert:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Пустыня
+      desc: Место, расположенное в засушливой и жаркой песчаной местности. Для посещения
+        потребуется способность <object id="navigateDesert" />!
+    ghostly:
+      requirement: <PLACEHOLDER>
+      name: Призрачное
+      requirementLevel: <PLACEHOLDER>
+      desc: Место, связанное с духами. Оно усиливает любой <object id="spectral" />
+        предмет.
   achievements:
     percentage:
       requirement: нет
