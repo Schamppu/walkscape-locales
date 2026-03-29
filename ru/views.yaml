@@ -199,6 +199,8 @@ singulars:
       alreadyHere: Вы уже в <object id="{location}"/>. Способность нельзя использовать
         для перемещения сюда.
       lastsFor: 'Эффект длится:'
+      cannotUseMore: Вы не можете использовать эту способность. Возможно, вы уже находитесь
+        под её действием, и повторное применение превысит максимальную длительность.
   jobs:
     phrases:
       acceptedJobs: Задания, принятые в данный момент <chip><c i=0>{count}</c>/<c
@@ -344,9 +346,16 @@ singulars:
       requirements: Требования
       inputAtMax: Макс.
       cooldownCharged: Вы перезарядили способность <object id="{ability}"/> для <c>{target}</c>!
+      inputCharges: 'Заряды:'
+      inputNextCharge: 'След. заряд:'
+      noInputsAvailable: У вас нет предмета <object id="{item}"/>, чтобы использовать
+        для перезарядки.
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />   <hl>{amount}</hl>
         </chip> получено из <object id="{item}" />
+    info:
+      inputCooldownInfo: Эта способность перезаряжается с помощью предметов. Для одного
+        полного заряда требуется <icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>.
   faction:
     phrases:
       openFaction: Открыть фракцию
