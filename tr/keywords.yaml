@@ -113,11 +113,12 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan kolye gerekli.
       desc: Kolyeler boyna takılır.
     underwater:
-      name: Su altı
+      name: Sucul
       requirement: <object id="item_underwater" /> ekipmanı kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan su altı ekipmanı
         gerekli.
-      desc: Su altı eşyaları dalgaların altındayken fayda sağlarlar.
+      desc: Sucul eşyalar <object id="location_underwater" /> konumlarında avantajlar
+        sağlar.
     shield:
       name: Kalkan
       requirement: <object id="shield" /> kuşanılması gerekli.
@@ -219,8 +220,9 @@ singulars:
       requirement: <object id="processed" /> malzeme gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan işlenmiş malzeme
         gerekli.
-      desc: Ham maddenin işlenmesiyle elde edilen, külçe veya kereste gibi işlenmiş
-        bir malzeme.
+      desc: Ham maddenin işlenmesiyle elde edilen, <object id="bar" />, <object id="plank"
+        />, <object id="fabric" />, veya <object id="leather" /> gibi işlenmiş bir
+        malzeme.
     offcut:
       name: Fazlalık
       requirement: <object id="offcut" /> eşya gerekli.
@@ -247,6 +249,15 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan kumaş gerekli.
       desc: Genellikle <object id="tailoring" /> tarifleri için kullanılan bir kat
         kumaş.
+    fibrousPlant:
+      name: Lifli bitki
+      requirement: <object id="fibrousPlant" /> gerekli.
+    hide:
+      name: Post
+      requirement: <object id="hide" /> gerekli.
+    leather:
+      name: Deri
+      requirement: <object id="leather" /> gerekli.
   misc:
     trash:
       name: Çöp
@@ -377,7 +388,7 @@ singulars:
       requirement: <object id="knife" /> kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan bıçak gerekli.
       desc: Öyle keskin ki aman parmaklarına dikkat et! Bir şeyleri kesme konusunda
-        iyi olduğu için <object id="cooking" /> yaparken işe yarar.
+        bayağı iyi olduğu için pek çok alanda işine yarar.
     localMap:
       name: Yöre haritası
       requirement: <object id="localMap" /> kuşanılması gerekli.
@@ -529,8 +540,10 @@ singulars:
       requirement: <object id="scissors" /> kuşanılması gerekli.
     toolbox:
       name: Alet kutusu
+      requirement: <object id="toolbox" /> kuşanılması gerekli.
     pliers:
       name: Pense
+      requirement: <object id="pliers" /> kuşanılması gerekli.
     needle:
       requirement: <object id="needle" /> kuşanılması gerekli.
       name: Dikiş iğnesi
@@ -550,6 +563,12 @@ singulars:
       requirement: <object id="cuttingMat" /> kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan kesim matı kuşanılması
         gerekli.
+    huntingNet:
+      name: Avcı ağı
+      requirement: <object id="huntingNet" /> kuşanılması gerekli.
+    fishingRodRest:
+      name: Olta tutacağı
+      requirment: <object id="fishingRodRest" /> kuşanılması gerekli.
   search:
     items:
       consumables:
@@ -767,6 +786,10 @@ singulars:
       name: Çöl
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+    ghostly:
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
+      name: Hayaletli
   weight:
     ultraLight:
       name: Aşırı hafif
