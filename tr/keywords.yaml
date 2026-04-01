@@ -36,6 +36,8 @@ singulars:
       name: Bilyuvar
       requirement: <object id="memosphere" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan bilyuvar gerekli.
+      desc: Unutulmaya yüz tutmuş sanatları hatırlamana yardımcı olur. Bilyuvarlar
+        çabucak tecrübe kazanmak için kullanılabilir.
     sandwich:
       name: Sandviç
       requirement: <object id="sandwich" /> gerekli.
@@ -113,11 +115,12 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan kolye gerekli.
       desc: Kolyeler boyna takılır.
     underwater:
-      name: Su altı
+      name: Sucul
       requirement: <object id="item_underwater" /> ekipmanı kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan su altı ekipmanı
         gerekli.
-      desc: Su altı eşyaları dalgaların altındayken fayda sağlarlar.
+      desc: Sucul eşyalar <object id="location_underwater" /> konumlarında avantajlar
+        sağlar.
     shield:
       name: Kalkan
       requirement: <object id="shield" /> kuşanılması gerekli.
@@ -219,8 +222,9 @@ singulars:
       requirement: <object id="processed" /> malzeme gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan işlenmiş malzeme
         gerekli.
-      desc: Ham maddenin işlenmesiyle elde edilen, külçe veya kereste gibi işlenmiş
-        bir malzeme.
+      desc: Ham maddenin işlenmesiyle elde edilen, <object id="bar" />, <object id="plank"
+        />, <object id="fabric" />, veya <object id="leather" /> gibi işlenmiş bir
+        malzeme.
     offcut:
       name: Fazlalık
       requirement: <object id="offcut" /> eşya gerekli.
@@ -247,6 +251,24 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan kumaş gerekli.
       desc: Genellikle <object id="tailoring" /> tarifleri için kullanılan bir kat
         kumaş.
+    fibrousPlant:
+      name: Lifli bitki
+      requirement: <object id="fibrousPlant" /> gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan bir lifli bitki
+        gerekli.
+    hide:
+      name: Post
+      requirement: <object id="hide" /> gerekli.
+      desc: <object id="tailoring" /> tarifleriyle <object id="leather" /> yapmak
+        için kullanılabilen bir hayvan postu parçası. <object id="hunting" /> yaparak
+        elde edilebilir.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan post gerekli.
+    leather:
+      name: Deri
+      requirement: <object id="leather" /> gerekli.
+      desc: Genellikle <object id="tailoring" /> tariflerinde kullanılabilen bir deri
+        parçası.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan deri gerekli.
   misc:
     trash:
       name: Çöp
@@ -377,7 +399,7 @@ singulars:
       requirement: <object id="knife" /> kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan bıçak gerekli.
       desc: Öyle keskin ki aman parmaklarına dikkat et! Bir şeyleri kesme konusunda
-        iyi olduğu için <object id="cooking" /> yaparken işe yarar.
+        bayağı iyi olduğu için pek çok alanda işine yarar.
     localMap:
       name: Yöre haritası
       requirement: <object id="localMap" /> kuşanılması gerekli.
@@ -529,8 +551,13 @@ singulars:
       requirement: <object id="scissors" /> kuşanılması gerekli.
     toolbox:
       name: Alet kutusu
+      requirement: <object id="toolbox" /> kuşanılması gerekli.
     pliers:
       name: Pense
+      requirement: <object id="pliers" /> kuşanılması gerekli.
+      desc: Penseler hassasça kavrayıp bükme işlerinde kullanılır. <object id="trinketry"
+        /> yaparken kullanışlıdır.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan pense gerekli.
     needle:
       requirement: <object id="needle" /> kuşanılması gerekli.
       name: Dikiş iğnesi
@@ -550,6 +577,12 @@ singulars:
       requirement: <object id="cuttingMat" /> kuşanılması gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan kesim matı kuşanılması
         gerekli.
+    huntingNet:
+      name: Avcı ağı
+      requirement: <object id="huntingNet" /> kuşanılması gerekli.
+    fishingRodRest:
+      name: Olta tutacağı
+      requirment: <object id="fishingRodRest" /> kuşanılması gerekli.
   search:
     items:
       consumables:
@@ -759,14 +792,24 @@ singulars:
       name: Su altı
       requirementLevel: <DEĞİŞKEN>
       requirement: <DEĞİŞKEN>
+      desc: Su altında bulunan bir mekan. <object id="itemset_diving_gear" /> gerektirir!
     regional:
       name: Bölgesel
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+      desc: Doğrudan belirli bir bölge veya diyarla alakalıdır.
     desert:
       name: Çöl
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+      desc: Fazlasıyla sıcak ve kumlu bir çevrede bulunan bir mekan. <object id="navigateDesert"
+        /> yeteneği gerektirir!
+    ghostly:
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
+      name: Hayaletli
+      desc: Ruhlarla bağlantısı olan bir mekan. Bazı <object id="spectral" /> eşyaları
+        kuvvetlendirir.
   weight:
     ultraLight:
       name: Aşırı hafif
@@ -788,26 +831,40 @@ singulars:
       name: Bıçkıhane
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+      desc: <object id="logs" />leri işleyerek <object id="plank" /> ve diğer <skill
+        skill="carpentry"/> eserlerini elde etmek için bir hizmet.
     workshop:
       name: Atölye
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+      desc: Malzemeleri <object id="tool" />lere, başka kullanışlı eşyalara ve diğer
+        <skill skill="crafting"/> eserlerine dönüştürmek için bir hizmet.
     kitchen:
       name: Mutfak
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+      desc: <object id="ingredient" />ni <object id="food" />, <object id="beverage"
+        /> ve diğer <skill skill="cooking"/> eserlerine dönüştürmek için bir hizmet.
     forge:
       name: Demirhane
       requirementLevel: <DEĞİŞKEN>
       requirement: <DEĞİŞKEN>
+      desc: <object id="ore" />leri işleyerek <object id="bar" /> ve diğer <skill
+        skill="smithing"/> eserlerini elde etmek için bir hizmet.
     loom:
       name: Terzihane
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
+      desc: <object id="fiberousPlant" /> ve <object id="hide" />ları işleyerek <object
+        id="fabric" />, <object id="leather" /> ve diğer <skill skill="tailoring"/>
+        eserlerini elde etmek için bir hizmet.
     bench:
       name: Takıcılık Tezgahı
       requirementLevel: <DEĞİŞKEN>
       requirement: <DEĞİŞKEN>
+      desc: <object id="gem" />lere şekil vermek ve <object id="item_ring" />, <object
+        id="item_amulet" /> veya diğer <skill skill="trinketry"/> eserlerini elde
+        etmek için bir hizmet.
   achievements:
     reward:
       requirement: <object id="achievement_reward" /> gerekli.
@@ -837,3 +894,4 @@ singulars:
         yumurtası gerekli.
       name: Evcil hayvan yumurtası
       requirement: <object id="pet_egg" /> gerekli.
+      desc: Evcil hayvan sahiplenmek için edinebilirsin!
