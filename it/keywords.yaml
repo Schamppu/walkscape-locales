@@ -41,7 +41,7 @@ singulars:
       requirementLevel: Richiede un lingotto che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
       desc: Può essere utilizzato in varie ricette <object id="smithing" /> e <skillType
-        type="crafting" />. Ottenuto dalla lavorazione di <object id="ore" />.
+        type="artisan" />. Ottenuto dalla lavorazione di <object id="ore" />.
     plank:
       name: Tavola
       requirement: Richiede una<object id="plank" />.
@@ -60,7 +60,7 @@ singulars:
       requirement: Richiede una<object id="rough_gem" />.
       requirementLevel: Richiede una gemma grezza che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
-      desc: Può essere trasformato in un <object id="cut_get" />. Ingrediente base
+      desc: Può essere trasformato in un <object id="cut_gem" />. Ingrediente base
         ottenuto da <object id="mining" />.
     cutGem:
       name: Gemma tagliata
@@ -81,8 +81,9 @@ singulars:
       name: Processato
       requirementLevel: Richiede un materiale lavorato che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
-      desc: Un materiale ottenuto dalla lavorazione di una materia prima, come una
-        barra o una tavola.
+      desc: Un materiale ottenuto dalla lavorazione di una materia prima, come ad
+        esempio un <object id="bar" />, un <object id="plank" />, un <object id="fabric"
+        /> o un <object id="leather" />.
     ingredient:
       name: Ingrediente
       ingredient: Richiede un<object id="ingredient" />.
@@ -121,6 +122,29 @@ singulars:
         /> ricette.
       requirement: È necessario <object id="fabric" />.
       requirementLevel: Richiede un tessuto che soddisfi almeno i requisiti specificati
+        in <keywordRequirements />.
+    fibrousPlant:
+      name: Pianta fibrosa
+      requirement: È necessario un <object id="fibrousPlant" />.
+      requirementLevel: Richiede una pianta fibrosa che abbia almeno <keywordRequirements
+        /> tra i propri requisiti.
+      desc: Può essere utilizzato nelle ricette <object id="tailoring" /> per realizzare
+        <object id="fabric" />. Si trova solitamente durante la <object id="foraging"
+        />.
+    hide:
+      name: Pelle
+      requirement: È necessario <object id="hide" />.
+      desc: Un pezzo di pelle animale che può essere utilizzato nelle ricette di <object
+        id="sartoria" /> per realizzare <object id="pelle" />. Si ottiene tramite
+        <object id="caccia" />.
+      requirementLevel: Richiede un hide che contenga almeno <keywordRequirements
+        /> tra i propri requisiti.
+    leather:
+      name: Cuoio
+      desc: Un pezzo di cuoio che viene solitamente utilizzato nelle ricette di <object
+        id="tailoring" />.
+      requirement: È necessario <object id="leather" />.
+      requirementLevel: Richiede cuoio che soddisfi almeno i requisiti specificati
         in <keywordRequirements />.
   tools:
     fishing:
@@ -213,8 +237,8 @@ singulars:
       name: Coltello
       requirementLevel: Richiede un coltello che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
-      desc: È affilato, quindi fai attenzione alle dita! Utile per tagliare oggetti
-        e, quindi, per <object id="cooking" />.
+      desc: È affilato, quindi fate attenzione alle dita! È utile per tagliare oggetti
+        e ha quindi molti impieghi.
     magnifyingLense:
       name: Lente d'ingrandimento
       requirement: Richiede una<object id="magnifyingLense" />.
@@ -444,7 +468,7 @@ singulars:
       requirementLevel: Richiede un supporto per canna da pesca che abbia almeno <keywordRequirements
         /> tra i propri requisiti.
       name: Supporto per canna da pesca
-      desc: Il supporto per canna da pesca rende l'esperienza di pesca più rilassante.
+      desc: Un supporto per canna da pesca rende la pesca un'esperienza più rilassante.
         Utile per <object id="fishing" />.
       requirment: È necessario che sia presente l'elemento <object id="fishingRodRest"
         />.
@@ -579,11 +603,12 @@ singulars:
       requirement: Richiede un <object id="bugCatchingNet" /> equipaggiato.
       desc: Puoi catturare gli insetti con un retino!
     underwater:
-      name: Sott'acqua
+      name: Acquatico
       requirement: Richiede l'equipaggiamento <object id="item_underwater" />.
       requirementLevel: Richiede attrezzatura subacquea che abbia almeno <keywordRequirements
         /> nei suoi requisiti.
-      desc: Gli oggetti subacquei offrono dei vantaggi mentre sei sott'acqua.
+      desc: Gli oggetti acquatici offrono dei vantaggi mentre ti trovi <object id="location_underwater"
+        />.
   containers:
     chest:
       name: Forziere
@@ -871,9 +896,9 @@ singulars:
       name: Telaio
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
-      desc: Un servizio per la lavorazione di <object id="plant" /> fibre e pelli
-        in <object id="fabric" /> tessuti e pelle, oltre ad altre creazioni legate
-        alla <skill skill="tailoring"/>.
+      desc: Un servizio per la trasformazione di <object id="fiberousPlant" /> e <object
+        id="hide" /> in <object id="fabric" /> e <object id="leather" />, oltre ad
+        altre creazioni legate alla <skill skill="tailoring"/>.
     bench:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
@@ -930,14 +955,25 @@ singulars:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Sott'acqua
+      desc: Un luogo che si trova sott'acqua. Ci vorrà un po' di <object id="itemset_diving_gear"
+        />!
     desert:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Deserto
+      desc: Un luogo caratterizzato da un clima torrido e arido e da un terreno sabbioso.
+        Sarà necessaria la capacità di <object id="navigateDesert" />!
     regional:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Regionale
+      desc: Questo è direttamente collegato a una regione o a una fazione specifica.
+    ghostly:
+      name: Fantasmoso
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+      desc: Un luogo legato agli spiriti. Rende più potenti alcuni oggetti <object
+        id="spectral" />.
   achievements:
     percentage:
       requirement: nessuno
