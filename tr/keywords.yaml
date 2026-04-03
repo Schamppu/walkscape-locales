@@ -167,31 +167,43 @@ singulars:
       name: Külçe
       requirement: <object id="bar" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan külçe gerekli.
+      desc: Çeşitli <object id="smithing" /> ve <skillType type="artisan" /> beceri
+        tariflerinde kullanılır. <object id="ore" /> işleyerek elde edilir.
     fish:
       name: Balık
       requirement: <object id="fish" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan balık gerekli.
+      desc: Çeşitli <object id="cooking" /> tariflerinde kullanılır. <object id="fishing"
+        />tan kazanılan basit malzemedir.
     gem:
       name: Cevher
       requirement: <object id="gem" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan cevher gerekli.
-      desc: Çeşitli <object id="trinketry" /> tariflerinde kullanılabilir.
+      desc: Çeşitli <object id="trinketry" /> tariflerinde kullanılır.
     logs:
       name: Kütük
       requirement: Tahta <object id="logs" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan tahta kütük gerekli.
+      desc: İşlenerek <object id="plank" /> yapılabilir. <object id="woodcutting"
+        />tan kazanılan basit malzemedir.
     ore:
       name: Maden
       requirement: <object id="ore" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan maden gerekli.
+      desc: İşlenerek <object id="bar" /> yapılabilir. <object id="mining" />ten kazanılan
+        basit malzemedir.
     plank:
       name: Kereste
       requirement: <object id="plank" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan kereste gerekli.
+      desc: Çeşitli <object id="crafting" /> tariflerinde kullanılır. <object id="logs"
+        /> işleyerek elde edilir.
     plant:
       name: Bitki
       requirement: <object id="plant" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan bitki gerekli.
+      desc: Çeşitli <skillType type="artisan" /> beceri tariflerinde kullanılır. <object
+        id="foraging" />tan kazanılan basit malzemedir.
     ingredient:
       name: Yemek malzemesi
       ingredient: <object id="ingredient" /> gerekli.
@@ -202,11 +214,15 @@ singulars:
       name: Parça
       requirement: <object id="nugget" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan parça gerekli.
+      desc: İşlenerek <object id="bar" /> yapılabilir. <object id="mining" />ten kazanılan
+        basit malzemedir.
     cutGem:
       requirement: <object id="cut_gem" /> gerekli.
       name: Kesilmiş cevher
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan kesilmiş cevher
         gerekli.
+      desc: Çeşitli <object id="trinketry" /> tariflerinde kullanılır. <object id="rough_gem"
+        /> işleyerek elde edilir.
     trinket:
       name: Süs
       requirement: <object id="trinket" /> gerekli.
@@ -237,10 +253,14 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan doğal cevher
         gerekli.
       requirement: <object id="rough_gem" /> gerekli.
+      desc: İşlenerek <object id="cut_gem" /> yapılabilir. <object id="mining" />ten
+        kazanılan basit malzemedir.
     mushroom:
       requirement: <object id="mushroom" /> gerekli.
       name: Mantar
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan mantar gerekli.
+      desc: Bambaşka bir dünyanın kapılarını açabilir! Mantarlar çeşitli <object id="cooking"
+        /> tariflerinde kullanılırlar.
     crustacean:
       name: Kabuklu
       desc: Kabuklular çeşitli <object id="cooking" /> tariflerinde kullanılır.
@@ -257,6 +277,8 @@ singulars:
       requirement: <object id="fibrousPlant" /> gerekli.
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan bir lifli bitki
         gerekli.
+      desc: Çeşitli <object id="tailoring" /> tarifleriyle <object id="fabric" />
+        yapmak için kullanılır. Genellikle <object id="foraging" />tan bulunur.
     hide:
       name: Post
       requirement: <object id="hide" /> gerekli.
@@ -553,6 +575,9 @@ singulars:
     toolbox:
       name: Alet kutusu
       requirement: <object id="toolbox" /> kuşanılması gerekli.
+      desc: Alet kutuları çeşitli aletleri düzende tutmak için kullanılır. <skillType
+        type="artisan" /> beceriler için kullanışlıdır.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan alet kutusu gerekli.
     pliers:
       name: Pense
       requirement: <object id="pliers" /> kuşanılması gerekli.
@@ -581,9 +606,16 @@ singulars:
     huntingNet:
       name: Avcı ağı
       requirement: <object id="huntingNet" /> kuşanılması gerekli.
+      desc: <object id="hunting" /> yaparken hayvanlar için kullanılan bir ağ.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan bir avcı ağı
+        gerekli.
     fishingRodRest:
       name: Olta tutacağı
       requirment: <object id="fishingRodRest" /> kuşanılması gerekli.
+      desc: Olta tutacağı, balıkçılığı daha rahat bir deneyim haline getirir. <object
+        id="fishing" /> yaparken kullanışlıdır.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan olta tutacağı
+        gerekli.
   search:
     items:
       consumables:
