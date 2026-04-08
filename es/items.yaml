@@ -187,6 +187,14 @@ singulars:
         desc: Un oso de peluche que siempre parece que te vigila. Termina apareciendo
           en lugares donde no recuerdas haberlo puesto desde que lo encontraste. Va
           a ser un poco más difícil dormir ahora, ¿no?
+      halfmawVenom:
+        name: Veneno de Mediofauces
+        desc: Un pequeño frasco con veneno peligroso de Mediofauces. Probablemente
+          de buen sabor, pero con un regusto más duro.
+      swampmanArticle:
+        name: Artículo de hombre del pantano
+        desc: Un extraño informe sobre un hombre del pantano que fue visto luchando
+          con los caimanes en el pantano y lanzándolos a los medianos.
     visas:
       jarvonianLetterOfPassage:
         desc: Prueba de que se puede atravesar el Paso Silencioso cuando se viene
@@ -477,6 +485,22 @@ singulars:
         name: Desayuno sabroso
         desc: Un desayuno con todos los extras. Una comida tan abundante será un gran
           modo de comenzar el día, incluso cuando ya no sea el inicio del día.
+      spicyMoray:
+        name: Morena picante
+        desc: Dulce y ligeramente picante al mismo tiempo. La combinación de sabores
+          es realmente única, lo que la convierte en una comida popular entre los
+          locales.
+      jerky:
+        desc: Una gran tira de carne curada y seca. Es una buena fuente de proteínas
+          para un viaje largo que no se estropea fácilmente.
+        name: Cecina
+      jelliedStreamEel:
+        name: Anguila de río gelatinizada
+        desc: Se tambalea mucho. Podría hipnotizarte si la miras demasiado tiempo.
+      baconWeave:
+        name: Bacon entrelazado
+        desc: Varias tiras de bacon entrelazadas. Con suficientes podrías hacer un
+          vestido, pero tendrías que dejar de comerlas.
     memosphere:
       agilityMemosphere:
         name: Memosfera de agilidad
@@ -516,6 +540,12 @@ singulars:
       trinketryMemosphere:
         name: Memosfera de joyería
         desc: Dentro del orbe de vidrio observas el recuerdo de pulir una gema brillante.
+      huntingMemosphere:
+        desc: Dentro del orbe de cristal ves un recuerdo de rastrear una criatura.
+        name: Memosfera de caza
+      tailoringMemosphere:
+        name: Memosfera de sastrería
+        desc: Dentro del orbe de cristal ves un recuerdo de costura y de tela cortada.
     misc:
       nutMix:
         name: Frutos secos variados
@@ -548,7 +578,7 @@ singulars:
           name: Bolsa de monedas
           desc: Una pequeña bolsa llena de monedas. Pesa un poco, pero no te quejas.
         adventureGuildChest:
-          name: Cofre de gremio de aventura
+          name: Cofre de Gremio de Aventura
           desc: Este robusto cofre tiene el símbolo del Gremio de Aventureros.
         coralChest:
           name: Cofre de coral
@@ -631,6 +661,17 @@ singulars:
           name: Cofre de joyería
           desc: Una caja llena de objetos de valor, ¡espero por tu bien que no sea
             un monstruo disfrazado!
+      tailoring:
+        tailoringChest:
+          desc: Este gigantesco huso tiene un candado, ¡quizás puedas abrirlo y ver
+            si contiene algunos objetos de sastrería útiles!
+          name: Cofre de sastrería
+      hunting:
+        huntingChest:
+          name: Cofre de caza
+          desc: Este cofre con cuernos apareció tras tu última caza. Quizás también
+            sea algún tipo de criatura, impresionada por tu habilidad y compartiendo
+            su botín.
   crafted:
     equipmentSets:
       bronze:
@@ -1162,6 +1203,9 @@ singulars:
           name: Collar de flores de Aguaparición
           desc: Un bouquet de flores melancólicas. Cuando lo llevas puesto te hace
             sentir una leve conexión con los muertos.
+        amuletOfTheSpider:
+          name: Amuleto de araña
+          desc: Un brillante amuleto con el poder de una araña.
       hunting:
         tarsiliumArrows:
           name: Flechas de alquitranio
@@ -1304,7 +1348,7 @@ singulars:
           desc: Restos de elderhide estropeados que podrían juntarse para hacer algo
             con ellos.
         elderHide:
-          name: Elderhide
+          name: Piel de elderhide
           desc: La piel de una bestia majestuosa.
         elderhideLeather:
           name: Cuero de elderhide
@@ -1477,6 +1521,18 @@ singulars:
             trama de ectoplasma tejida en el torso.
         spectralHandwear:
           name: Guantes espectrales
+          desc: El entramado de ectoplasma de estos guantes mantiene tus dedos protegidos
+            mientras trabajas en obras artesanales.
+        spectralBreeches:
+          name: Pantalones espectrales
+          desc: El cinturón óseo de estos pantalones mantiene las herramientas firmemente
+            en su sitio gracias a las energías de ectoplasma entretejidas para tu
+            comodidad.
+        spectralVest:
+          name: Chaleco espectral
+          desc: Este chaleco te aporta suficiente protección en tus estaciones de
+            trabajo artesanal sin entorpecerte demasiado gracias a su resistente revestimiento
+            óseo central.
       carpentry:
         bectoSaw:
           name: Sierra espectral
@@ -1492,7 +1548,7 @@ singulars:
           desc: ¡Los dientes negros como de obsidiana de esta sierra están listos
             para morder!
         bambooToolbox:
-          desc: Una caja de herramientas resistente para herramientas de carpintería,
+          desc: Una caja de herramientas resistente para herramientas de artesanía,
             hace que transportarlas sea mucho más fácil.
           name: Caja de herramientas de bambú
         pineToolbox:
@@ -1593,46 +1649,54 @@ singulars:
       adventurersTools:
         adventurersRing:
           desc: Un anillo con el escudo del Gremio de Aventureros.
-          name: Anillo de aventura
+          name: Anillo de aventurero
         adventurersAmulet:
           desc: Un amuleto con el símbolo del Gremio de Aventureros.
-          name: Amuleto de aventura
+          name: Amuleto de aventurero
         adventuringWrench:
           desc: Una llave adornada con la insignia del Gremio de Aventureros. Útil
             para hacer reparaciones y ajustes sobre el terreno.
-          name: Llave del aventurero
+          name: Llave fija de aventurero
         adventuringHatchet:
           name: Hacha de aventurero
           desc: Un hacha con la insignia del Gremio de Aventureros. Tiene una hoja
             afilada y un mango resistente.
         adventuringPickaxe:
-          name: Pico de aventura
+          name: Pico de aventurero
           desc: Un pico con un mango robusto que tiene el símbolo del Gremio de Aventureros.
             Es perfecta para romper rocas y extraer minerales.
         adventuringFishingPole:
-          name: Caña de pescar de aventura
+          name: Caña de pescar de aventurero
           desc: Una caña de pescar con la insignia del Gremio de Aventureros. Es ideal
             para pescar en la naturaleza.
         adventuringSickle:
-          name: Hoz de aventura
+          name: Hoz de aventurero
           desc: Una hoz con la insignia del Gremio de Aventureros grabada en la hoja.
             Sirve para cosechar hierbas y otras plantas.
         adventuringHammer:
-          name: Martillo de aventura
+          name: Martillo de aventurero
           desc: Un martillo con la insignia del Gremio de Aventureros grabada en la
             base del mango. Puedes usarlo para herrería.
         adventuringFryingPan:
-          name: Sartén de aventura
+          name: Sartén de aventurero
           desc: Una sartén con la insignia del Gremio de Aventureros en el mango.
             Ideal para cocinar en una hoguera.
         adventuringSaw:
-          name: Sierra de aventura
+          name: Sierra de aventurero
           desc: Una sierra con la insignia del Gremio de Aventureros. La elección
             del aventurero para cortar madera.
         adventuringSander:
-          name: Lijadora de aventura
+          name: Lijadora de aventurero
           desc: Una lijadora con la insignia del Gremio de Aventureros. Puede usarse
             para suavizar superficies rugosas.
+        adventuringSewingNeedle:
+          desc: Una aguja de coser con la insignia del Gremio de Aventureros. Ideal
+            para reparar ropa en marcha.
+          name: Aguja de coser de aventurero
+        adventuringHuntingBow:
+          name: Arco de caza de aventurero
+          desc: Un arco de caza con la insignia del Gremio de Aventureros. Te puede
+            ayudar a cazar en tierra salvaje.
     skilling:
       agility:
         birchSkis:
@@ -1912,6 +1976,9 @@ singulars:
           name: Mochila de especias
           desc: Un invento muy extendido de Wrentmark - una mochila donde puedes almacenar
             hileras de especias.
+        rottenEctoplasm:
+          name: Ectoplasma podrido
+          desc: Otorga inventario ilimitado como coleccionable.
       crafting:
         candlehat:
           desc: Es un sombrero con una vela unida. ¿Qué más se puede desear?
@@ -2056,6 +2123,11 @@ singulars:
           desc: Una cuerda fina con una aguja larga y fuerte en un extremo, que se
             usa para atravesar las capturas. Puedes enganchar docenas y docenas de
             peces con esta cuerda.
+        tripleRodRest:
+          name: Soporte de caña triple
+          desc: Aunque este soporte para cañas permite sostener tres cañas de pescar,
+            por alguna razón no puedes manejar más de una a la vez. Al menos es bonito
+            de ver, te recuerda a unas astas.
       foraging:
         halflingsFeetSlippers:
           desc: El diseño de estas cómodas zapatillas hace que se asemejen a los pies
@@ -2359,6 +2431,108 @@ singulars:
           name: Monóculo de Dar Witt
           desc: Una reliquia de los Dar Witt, de las pocas familias con influencia
             en Puerto Hechizoscuro.
+      tailoring:
+        silverScissors:
+          desc: Unas afiladas tijeras de plata que pueden cortar telas y materiales
+            con gran facilidad.
+          name: Tijeras de plata
+        safetyScissors:
+          desc: Tijeras que no están demasiado afiladas para evitar que la gente se
+            corte mientras aún aprende a usarlas correctamente.
+          name: Tijeras de seguridad
+        simpleSewingNeedle:
+          name: Aguja de coser simple
+          desc: Una aguja realmente simple que se puede usar para costura básica.
+        clingyMeasuringTape:
+          desc: Esta cinta de medir parece adherirse a cualquier superficie sobre
+            la que la coloques. Funcionará de maravilla para tomar medidas, incluso
+            en ti mismo.
+          name: Cinta de medir ceñida
+        sewingGuidebook:
+          desc: Un libro sobre todo lo relacionado con la costura y la sastrería.
+            Incluso incluye algunas muestras de técnicas de costura realizadas correctamente.
+          name: Guía de costura
+        pincushionBeret:
+          desc: Una boina que funciona muy bien para sujetar el exceso de alfileres
+            sin golpearte la cabeza. Su forma hace que sea buena para el discogolf.
+          name: Boina alfiletero
+        markingChalk:
+          name: Tiza para marcar
+          desc: Tiza para marcar que se borra para usar con telas. Te permitirá hacer
+            líneas precisas sin estropear el material.
+        practicePins:
+          name: Alfileres de aprendizaje
+          desc: Alfileres que pueden sujetar fácilmente las telas en su sitio y que
+            es menos probable que te pinchen.
+        needlecase:
+          name: Estuche de agujas sin fondo
+          desc: No importa cuántas agujas de coser guardes en este estuche, siempre
+            parece haber espacio para más.
+        fabricCuttingMat:
+          name: Tapete de corte de telas resistente
+          desc: Un tapete que puede soportar todos los cortes fallidos y los alfileres
+            que caen sobre ella mientras trabajas.
+        precisionPins:
+          name: Alfileres de precisión
+          desc: Alfileres afilados que pueden evitar que incluso los materiales más
+            resistentes se muevan mientras les das forma.
+        tailorsMoccasins:
+          name: Mocasines de sastre
+          desc: Calzado resistente hecho de cuero que protegerá tus pies de alfileres
+            y agujas. Incluso podría evitar que se te queden entumecidos.
+        keenEyeLenses:
+          desc: Se dice que estas lentes ayudan a las personas a identificar plantas
+            usadas en sastrería, o que al menos las conocías antes de que estuvieran
+            de moda.
+          name: Gafas del buen ojo
+      hunting:
+        trappersCape:
+          desc: Una capa gruesa que ayuda a ocultar ligeramente tu presencia ante
+            las criaturas de la zona facilitando que caigan en tus trampas.
+          name: Capa de trampero
+        camoPants:
+          desc: Pantalones de camuflaje que ayudan a ocultar tus piernas entre la
+            vegetación y otros elementos del entorno. No los confundas con ropa formal.
+          name: Pantalones de camuflaje
+        camoBoots:
+          desc: Botas de camuflaje que, al usarlas, ayudan a que tus pies se fundan
+            con el entorno. Desafortunadamente, cuando no las llevas puestas, parece
+            que siempre pierdes una de ellas.
+          name: Botas de camuflaje
+        huntingTripPack:
+          desc: Una mochila bastante grande con mucho espacio para una expedición
+            de caza. Debería caber todo lo que logres sacar de tu presa.
+          name: Mochila de caza
+        skinnyFieldKnife:
+          name: Cuchillo de campo fino
+          desc: Un cuchillo delgado que se puede usar para despellejar y limpiar una
+            caza reciente.
+        camoFacePaint:
+          name: Pintura de camuflaje
+          desc: Pinturas de camuflaje que deberían ser menos irritantes al usarlas
+            en el rostro. Es probable que te entre en los ojos, ya que es difícil
+            de ver.
+        scentMaskingSpray:
+          name: Spray antiolor
+          desc: Un líquido embotellado que se rocía y ayuda a enmascarar tu olor.
+            No quieres saber qué es el líquido.
+        flashyFieldKnife:
+          name: Cuchillo de campo ostentoso
+          desc: Un excelente cuchillo de campo que parece rendir bien en cualquier
+            tarea que le encomiendes durante tus salidas de caza.
+        huntingBestiary:
+          name: Bestiario de caza
+          desc: Un gran tomo de bestias, criaturas y seres extraños de todo tipo.
+            Páginas invaluables llenan el libro con ilustraciones, descripciones,
+            hábitos y hábitats.
+        camoShirt:
+          name: Camisa de camuflaje
+          desc: Una camisa de camuflaje que consigue ocultarte bien en casi cualquier
+            entorno. Funciona bien incluso en la nieve.
+        duckDecoy:
+          name: Señuelo de pato
+          desc: Un pato falso que ayuda a distraer a tu presa de tu presencia. Igual
+            es que no quieren ser groseros.
     versatile:
       backpack:
         desc: Una mochila de cuero de primera calidad con bolsillos adicionales y
@@ -2636,6 +2810,10 @@ singulars:
         name: Trineo veloz
         desc: Un trineo rápido y eficiente para hacer las tareas en zonas nevadas
           o heladas. Muy útil también para deslizarse.
+      rabbitEars:
+        name: Orejas de conejo
+        desc: Los animales parecen mirarte de manera un poco diferente cuando llevas
+          esto puesto. Te hace sentir un poco más ágil. También más adorable.
     achievements:
       capeOfAchiever:
         desc: La capa de color rosa despierta interés en cualquiera que la presencia.
@@ -2777,6 +2955,10 @@ singulars:
         name: Agarratesoros
         desc: Nunca ha sido tan fácil recoger cofres ligeramente fuera de alcance
           desde cualquier lugar mientras haces cualquier cosa.
+      ghostTrapPack:
+        name: Mochila cazafantasmas
+        desc: La voluminosa mochila viene con un tubo que se utiliza para capturar
+          partículas fantasmales.
     combat:
       swashbucklerSword:
         desc: La espada curva es perfecta para ballestas de asalto navales. Requiere
@@ -2835,6 +3017,19 @@ singulars:
       stickyFingerShorts:
         name: Pantalones cortos de dedo pegajoso
         desc: <i>"¡Nunca sabes lo que Riku mete en estos bolsillos!"</i>
+      petalFinder:
+        desc: '<i>La voz de Jas susurra a través del anillo: «Ve despacio y disfruta
+          del paseo y del mundo que te rodea. Algunas de las cosas que vale la pena
+          encontrar llegan cuando no caminas solo.»</i>'
+        name: Encuentrapétalos
+      weightedVest:
+        name: Chaleco lastrado
+        desc: '<i>«Al dar tus primeros pasos con el chaleco, un pensamiento cruza
+          tu mente: tu cuerpo ahora carga el mismo peso que tu alma endurecida.»</i>'
+      redSkydisc:
+        name: Disco rojo
+        desc: <i>«Este disco rojo es el favorito de un perro llamado Pixel. Aunque
+          está descolorido y gastado, todavía vuela bien.»</i>
     agGuildSpecials:
       bertssuperskis:
         name: Superesquís de Sergio
@@ -3866,3 +4061,7 @@ singulars:
       name: Huevo de delfín
       desc: El huevo de un delfín. Su color acuoso lo esconde bien bajo el agua. Me
         preguntó cómo podrán encontrarlo de nuevo sus padres.
+    mummyEgg:
+      name: Huevo de momia
+      desc: Un huevo de momia. Puede estar envuelto en vendas, pero aun así deberías
+        intentar mantenerlo caliente. ¿Dónde estará la madre?
