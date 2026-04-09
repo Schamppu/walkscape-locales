@@ -152,6 +152,18 @@ singulars:
         desc: Les chauve-souris partent de la grotte en volant vers le nord-est. Vous
           les suivez depuis leur habitat de printemps, courant jour et nuit pour trouver
           leur prochain habitat. Vous risquez de ne pas revenir ici avant un moment.
+    wallisia:
+      ghostTag:
+        name: Tag fantôme
+        desc: Vous courez après les fantômes agités de Wraithwater, dans une partie
+          de tag. Chaque fois que vous vous approchez, ils en profitent pour traverser
+          un obstacle en se dématérialisant. On dirait que vous resterez toujours
+          la «tag» face à ces adversaires.
+      shorelineScramble:
+        name: Escalade du littoral
+        desc: Vous contournez en oblique les crêtes étroites du littoral et vous faufilez
+          parmi les épaves et les formations rocheuses du coin. Perdre votre équilibre
+          par ici occasionnerait un sacré plouf dans les eaux en contrebas.
   carpentry:
     gdte:
       shipRepairIntermediate:
@@ -183,6 +195,13 @@ singulars:
           glaçon en quelque chose d'autre, fonctionnel ou artistique. La fugacité
           de cette œuvre d'art est proportionnelle à la température ambiante, sa durée
           pouvant varier de quelques minutes à l'éternité.
+    wallisia:
+      townReconstruction:
+        name: Reconstruction de la ville
+        desc: Vous aidez les habitants du village dans leurs travaux d’entretien et
+          de reconstruction pour que tout le monde dispose d’un logement décent. Cela
+          demande beaucoup d’efforts et met à l’épreuve vos connaissances en menuiserie,
+          mais cela semble améliorer la ville progressivement.
   cooking:
     gdte:
       wineGrapeStomping:
@@ -262,14 +281,13 @@ singulars:
           sereine. Ses eaux calmes sont accueillantes et promettantes.
         name: Pêche en étang
       seaFishingNet:
-        desc: Le long du littoral hivernal, vous trouvez un endroit isolé et vous
-          jetez votre filet dans les eaux calmes et froides, profitant de la solitude
-          paisible de la pêche en mer.
+        desc: Le long du littoral, vous trouvez un endroit isolé et vous jetez votre
+          filet dans les eaux calmes, profitant de la solitude paisible de la pêche
+          en mer.
         name: Pêche en mer (Filet)
       seaFishingRod:
-        desc: Le long du littoral hivernal, vous trouvez un endroit isolé et lancez
-          votre ligne dans les eaux calmes et froides, profitant de la solitude paisible
-          de la pêche en mer.
+        desc: Le long du littoral, vous trouvez un endroit isolé et lancez votre ligne
+          dans les eaux calmes, profitant de la solitude paisible de la pêche en mer.
         name: Pêche en mer (Canne)
       seaFishingCage:
         name: Pêche en mer (Cage)
@@ -286,10 +304,27 @@ singulars:
         desc: Saisissant fermement la lance, tu nages autour de l'épave, toujours
           vigilant à l'égard de tout gros poisson qui ose s'approcher trop près.
       predatorHunting:
-        name: Chasse aux prédateurs (Lance)
+        name: Prêche au prédateur (Lance)
         desc: Animé par l'envie de chasser, tu fends les eaux profondes, attentif
           à chaque detail de l'environnement. Chaque muscle de ton être est prête
           à frapper n’importe quel prédateur avant qu’il ne le fasse.
+    wallisia:
+      floodedRiverFishingRod:
+        name: Pêche en rivière inondée (Canne)
+        desc: Vous jetez votre canne à pêche dans les eaux de la rivière inondée,
+          espérant attraper quelques poissons particuliers qui se sont adaptés à leur
+          nouvel environnement.
+      isthmusSeaFishingNet:
+        name: Pêche en détroit maritime (Filet)
+        desc: Dans les eaux côtières du détroit, vous lancez votre filet, dans l’espoir
+          d’attraper une variété de créatures qui prospèrent dans cette zone.
+      ectoFishing:
+        name: Pêche à l'éctoplasme
+        desc: L’eau ici brille de teintes étranges et inquiétantes, imprégnée d’une
+          énergie fantomatique. Vous vous demandez ce que mangent les poissons qui
+          y vivent et si vous utilisez bien l’outil adéquat pour les capturer. Vos
+          pensées vagabondent ensuite vers l’idée de les cuisiner plus tard, pour
+          voir s’ils sont même comestibles.
   foraging:
     gdte:
       butterflyCatching:
@@ -392,6 +427,21 @@ singulars:
         name: Collecte de varechs
         desc: Avec tout ce varech en abondance autour de vous, vous inspectez méticuleusement
           chacun d’eux avant de cueillir soigneusement les plus beaux.
+    wallisia:
+      floodedFieldScavenging:
+        name: Fouille dans un champ inondé
+        desc: Vous pataugez dans les champs détrempés à la recherche de plantes et
+          de matériaux encore viables, qui ont réussi à survivre, voire à prospérer
+          dans cet environnement humide.
+      dragonflyCatching:
+        name: Chasse à la libellule
+        desc: Vous utilisez votre filet pour poursuivre et attraper des libellules
+          qui se faufilent d’un côté à l’autre à toute vitesse dans la zone.
+      graveyardForaging:
+        name: Collecte dans le cimetière
+        desc: Vous arpentez le cimetière et cherchez des objets inhabituels qui ont
+          été délogés par les inondations dans la zone. Ce n’est pas du pillage de
+          tombe si ce n’est déjà plus dans la tombe, n’est‑ce pas ?
   mining:
     global:
       mineCoal:
@@ -482,6 +532,39 @@ singulars:
         name: Création d'un aqueduc sous-marin
         desc: Creusez une voie pour les charpentiers qui vous suivent. Retirez les
           débris dans le passage, et assurez-vous que la zone ne s'effondre pas.
+    wallisia:
+      mineEctoRocks:
+        name: Miner des roches d'ectoplasme
+        desc: Des affleurements de grosses roches qui semblent luire de l’énergie
+          sinistre et fantomatique de la région environnante. Tu brandis ta pioche
+          contre elles, espérant en détacher des fragments à raffiner.
+    wrentmark:
+      mineSilverOre:
+        name: Miner du minerai d'argent
+        desc: Du coin de l’œil, tu aperçois des roches argentées et te mets à l’ouvrage
+          pour suivre la veine de minerai d’argent qu’elles recèlent.
+      mineGoldOre:
+        name: Miner du minerai d'or
+        desc: Tu remarques des éclats d’or parmi les roches et te lances aussitôt
+          à l’extraction, espérant dénicher la veine mère.
+      mineAdamantOre:
+        name: Miner du minerai d'adamantite
+        desc: Trouvent devant toi les dures roches d'adamantite, tu sors ton meilleur
+          équipement pour en extraire le précieux minerai.
+      mineCrystalShards:
+        name: Miner du charbon cristallin
+        desc: De si grosses et magnifiques roches. Il semble sacrilège de tenter de
+          les miner, mais les gros morceaux en lesquelles elles se brisent recèlent
+          trop d'utilité pour les laisser intactes.
+      mineGemRocksLow:
+        name: Miner des roches à gemmes (faible)
+        desc: Un rocher qui semble renfermer quelques traces de gemmes attire votre
+          attention. En le minant, peut‑être en trouverez‑vous quelques‑unes.
+      mineVioliteOre:
+        name: Miner du minerai de violite
+        desc: Tu regardes attentivement les rochers aux reflets pourpres de violite
+          dure devant toi et tu suis ton chemin pour extraire au mieux les minerais
+          sans te faire mal.
   smithing:
     jarvonia:
       horseshoeMaking:
@@ -521,7 +604,7 @@ singulars:
         name: Abattre des épicéas
       cutTeakTrees:
         desc: Vous avez de la sueur sur le front, des ampoules sur les doigts, mais
-          vous êtes déterminé à obtenir des billes de ce bois durable et solide.
+          vous êtes déterminé à obtenir des bûches de ce bois durable et solide.
         name: Abattre des tecks
       cutWillowTrees:
         desc: Les larges troncs de ces saules représentent un véritable défi, mais
@@ -549,6 +632,17 @@ singulars:
         name: Couper du bambou
         desc: Vous frappez le bambou avec votre hachette. Un craquement satisfaisant
           retentit.
+      cutYewTrees:
+        name: Couper des ifs
+        desc: Les ifs sont robustes et demandent bien plus d’efforts avant de pouvoir
+          être abattus. Pourtant, avec le temps, vous parvenez à les faire tomber
+          pour les débiter en bûches.
+      cutEctoTrees:
+        desc: Les arbres d’ici semblent arrachés à un autre royaume ; leur apparence
+          sinistre et l’énergie fantomatique qu’ils dégagent les rendent intimidants
+          avant même d’en entreprendre l’abattage. Vous avez hâte de débiter les bûches
+          qu’ils vous offriront.
+        name: Couper des arbres ectoplasmes
   misc:
     emergencySwimEscape:
       desc: Vous avez perdu votre équipement de plongée et vous manquez d'air. Vous
@@ -567,9 +661,9 @@ singulars:
           Vous devez nager vers la côte le plus vite possible, mais sans paniquer.
           Vous savez que si vous remontez trop vite, vous risquez de subir un accident
           de décompression.
-        name: Fuite à la nage (marais)
+        name: Échappée d'urgence à la nage (marais)
       swampEmergencyDarkEscape:
-        name: Fuite à la nage dans le noir (marais)
+        name: Échappée d'urgence dans le noir (marais)
         desc: Vous avez perdu votre source de lumière et vous devez trouver votre
           chemin vers la sortie dans le noir. Vous devez rester prudent pour trouver
           la sortie et éviter les créatures dangereuses qui rôdent peut-être dans
@@ -588,6 +682,18 @@ singulars:
         desc: Vous vous aventurez au sein des brumes lugubres à l'extérieur du Port
           Sombresort, des racines épaisses et des arbres vous bloquant l'accès à la
           cache.
+    wrentmark:
+      emergencyDesertEscape:
+        desc: Vous avez perdu votre chameau et allez bientôt succomber aux éléments
+          du désert. Vous devrez vous éloigner de cet environnement hostile comme
+          vous le pourrez.
+        name: Échappée d'urgence dans le désert
+    wallisia:
+      repairwraithwaterBankRebuild:
+        desc: En utilisant un peu d’ectoplasme avec vos compétences en menuiserie,
+          vous réparez les éléments essentiels de la rive pour la rendre à nouveau
+          utilisable.
+        name: Réparer la banque
   hunting:
     jarvonia:
       rabbitTracking:
@@ -609,6 +715,15 @@ singulars:
         desc: Les grandes griffures sur les arbres indiquent que vous êtes sur la
           bonne voie pour trouver des ours dans les environs. Vos sens sont aiguisés,
           et votre corps est prêt à en abattre un.
+      birdFeeding:
+        desc: Vous utilisez quelques plantes que vous avez sur vous pour attirer les
+          oiseaux locaux, les amenant assez près pour les observer avant qu’ils ne
+          les prennent et ne laissent derrière eux un désordre de plumes.
+        name: Nourrir les oiseaux
+      squirrelHunting:
+        desc: Vous les avez toujours vus, mais maintenant ils essaient de se cacher
+          de vous. Les écureuils sont votre proie et vos flèches sauront les abattre.
+        name: Chasse à l'écureuil
     gdte:
       halfmawHunt:
         desc: Emportant arc et flèches, vous vous déplacez à travers le marais à la
@@ -626,6 +741,21 @@ singulars:
         desc: Le marais est infesté de créatures ressemblant à des vers, qui n'appartiennent
           pas à cet écosystème. Vous cherchez soigneusement des signes de leur présence
           et éliminez celles que vous trouvez.
+      birdWatching:
+        desc: Vous observez attentivement les oiseaux de la région et notez leurs
+          apparences, leurs cris, leurs foyers ainsi que leurs habitudes. Lorsqu’ils
+          s’envolent, vous voyez parfois qu’ils lâchent des objets intéressants.
+        name: Observation des oiseaux
+      alligatorHunting:
+        name: Chasse à l'alligator
+        desc: Vous traversez le marais, arc et flèches en main. Prêt à transformer
+          les alligators en vos nouveaux accessoires et à récolter au passage quelques
+          cicatrices qui en jettent.
+      halfmawTracking:
+        name: Pistage de Gueule-Cassée
+        desc: Vous partez traquer les traces de Gueule-Cassée dans le marais pour
+          ensuite rapporter son emplacement. Cela pourrait aider la guilde à préparer
+          une véritable chasse contre lui plus tard.
     global:
       crabTracking:
         desc: En marchant sur la plage, vous cherchez des indices de la présence de
@@ -633,9 +763,9 @@ singulars:
           mais malheureusement, celles-ci sont souvent effacées par la marée.
         name: Pistage de crabe
       boxTrapping:
-        desc: Vous installez un piège simple en plaçant un appât sous une caisse en
-          bois soutenue par une brindille. Lorsque la créature s'approche de l'appât,
-          elle déplace la brindille, se piégeant à l'intérieur.
+        desc: Vous installez un système de piège simple avec une boîte. Lorsqu’une
+          petite créature passe dessous, celle‑ci s’abat sur elle et la coince à l’intérieur
+          de la boîte.
         name: Pose de caisse-piège
       birdhouseTrappingIntermediate:
         desc: Vous placez un appât dans le nichoir qui prêt à être installé pour piéger
@@ -652,19 +782,31 @@ singulars:
           des poissons et d'autres créatures aquatiques par centaines, si les dieux
           de la mer vous sourient.
         name: Capture au filet dérivant
+    wallisia:
+      ectoSlimeHunting:
+        desc: Vous voyez parfois les traînées d’ectoplasme laissées par les slimes
+          se regrouper pour former des limons agaçants. Avec votre arc de chasse et
+          quelques flèches, vous pouvez contribuer à les déstabiliser.
+        name: Chasse au slime éctoplasme
+      unicornHunting:
+        name: Chasse à la licorne
+        desc: Vous sentez leurs regards posés sur vous, d’un calme menaçant, leurs
+          cornes dressées et prêtes à fondre sur vous. Vous les écraseriez volontiers
+          sous un rocher s’il vous était possible, mais votre arc de chasse et vos
+          flèches devront suffire.
   tailoring:
     jarvonia:
       sailRepairBeginner:
         desc: Avec une aiguille solide et du fil, vous cousez plusieurs morceaux de
           tissu pour réparer les voiles du bateau. Elles ne seront pas comme neuves,
           mais elles tiendront sûrement un moment.
-        name: Réparation de voile (Débutant)
+        name: Petite réparation de voile
     gdte:
       sailRepairIntermediate:
         desc: La grande voile, après de violentes tempêtes, est criblée de trous.
           Vous travaillez rapidement et avec précision pour les refermer, la rendant
           presque comme neuve.
-        name: Réparation de voile (Intermédiaire)
+        name: Grande réparation de voile
   trinketry:
     gdte:
       antiqueMarketAssessor:
