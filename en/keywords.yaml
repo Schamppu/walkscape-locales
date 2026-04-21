@@ -495,7 +495,7 @@ singulars:
       name: Sandwich
       desc: Everything that is between two slices of bread is a sandwich! Can be consumed for temporary bonuses, and is required for certain achievements.
       requirement: Requires a <object id="sandwich" />.
-      requirementLevel: "Requires a sandwich that that has at least <keywordRequirements /> in its requirements."
+      requirementLevel: "Requires a sandwich that has at least <keywordRequirements /> in its requirements."
   containers:
     chest:
       name: Chest
@@ -528,12 +528,12 @@ singulars:
       name: Light source
       desc: Illuminates dimly lit areas. Required for certain activities and locations.
       requirement: Requires an equipped <object id="lightSource" />.
-      requirementLevel: "Requires the user to have a <keywordRequirements /> equipped."
+      requirementLevel: "Requires a light source that has at least <keywordRequirements /> in its requirements."
     heatResist:
       name: Heat resistant
       desc: Keeps you cool in hot areas. Required for certain activities and locations.
       requirement: Requires something <object id="heat_resistant" />.
-      requirementLevel: "Requires the user to have something <keywordRequirements /> equipped."
+      requirementLevel: "Requires something heat resistant with at least <keywordRequirements /> in its requirements."
   misc:
     trash:
       name: Trash
@@ -555,6 +555,11 @@ singulars:
       desc: A cursed service has some negative effects.
       requirement: Requires something <object id="cursed" />.
       requirementLevel: "Requires something cursed that has at least <keywordRequirements /> in its requirements."
+    upgradeable:
+      name: Upgradeable
+      desc: A piece of equipment that can be used for an upgrade! Maybe you should consider keeping it to make improvements later?
+      requirement: Requires something <object id="upgradeable" />.
+      requirementLevel: "Requires something upgradeable that has at least <keywordRequirements /> in its requirements."
   achievements:
     percentage:
       name: Achievement percentage

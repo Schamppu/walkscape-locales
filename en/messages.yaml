@@ -63,15 +63,15 @@ singulars:
       newDrop: <chip><stext><c i="0">New drop</c></stext></chip> <c i="1">{itemName}</c> can now be obtained from <c>{activityName}</c>.
       newRoute: <chip><stext><c i="0">New traveling route</c></stext></chip> <c i="1"><location id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c> unlocked.
     idleSteps:
-      stepsWhileAway: Steps gained while the game was closed
+      stepsWhileAway: Steps gained while the game was closed.
       whileYouWereAway: While you were away...
       nothingHappened: Nothing remarkable happened.
       gainedExperience: <skill skill="{skill}" /> gained <c>+{exp}</c> experience.
       skillLeveledUp: <skill skill="{skill}" /> leveled up from <c i="0">{from}</c> to <c i="1">{to}</c>.
-      gainedItem: Gained <c>+{amount}</c> <item id="{item}" />
-      craftedItem: Crafted <c>+{amount}</c> <item id="{item}" />
-      gainedMoney: Gained <c i="0">+{amount}</c> <c i="1">coins</c>
-      characterGained: Character gained <c>+{amount}</c> experience />
+      gainedItem: Gained <c>+{amount}</c> <item id="{item}" />.
+      craftedItem: Crafted <c>+{amount}</c> <item id="{item}" />.
+      gainedMoney: Gained <c i="0">+{amount}</c> <c i="1">coins</c>.
+      characterGained: Character gained <c>+{amount}</c> experience.
       arrivedAt: Arrived at <location /> <c>{location}</c>.
       characterLeveledUpFrom: Character leveled up from <c i="0">{from}</c> to <c i="1">{to}</c>.
   messages:
@@ -142,9 +142,6 @@ singulars:
       mmNotAtSameLocation:
         title: Cannot trade with Mysterious Merchant
         text: You cannot trade with the Mysterious Merchant right now. Make sure you are in the right location.
-      cannotTravelCurrentPath:
-        title: Cannot travel on current path
-        text: Can no longer travel on the current route. You likely changed equipment and don't meet the requirements any longer.
   errors:
     characterValidation:
       nameContainsleadingTrailingSpaces: Leading or trailing spaces are not allowed.
