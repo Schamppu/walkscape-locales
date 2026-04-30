@@ -1282,6 +1282,7 @@ singulars:
             jonkinlaisen hienoisen yhteyden kuolleisiin.
         amuletOfTheSpider:
           name: Hämähäkkiriipus
+          desc: Riipus, joka kantaa hämähäkin voimaa.
       tailoring:
         basicLeather:
           desc: Pala nahkaa, joka on valmis käytettäväksi hyötyesineiden valmistuksessa.
@@ -1422,14 +1423,22 @@ singulars:
           desc: Pala kangasta, joka on kudottu kestävistä materiaaleista.
         tattyHandwraps:
           name: Repaleiset käsikääreet
+          desc: Resuiset käsien kääreet, jotka on väkertänyt joku toistaitoinen.
         tattySkirt:
           name: Repaleinen hame
+          desc: Resuinen kangaskääre peittämään kehoasi; se päällä on helppo liikkua,
+            mutta kangas saa ihosi kutisemaan.
         tattyGarb:
           name: Repaleinen asu
+          desc: Resuiset kangaskääreet keskikeholle, joita voisi pitää maaseudun tai
+            kylien köyhä väki.
         elderhideChaps:
           name: Ikitaljaiset puntit
+          desc: Nämä ikitaljaiset puntit suojaavat sinua säältä erinomaisesti.
         spectralBreeches:
           name: Aavemaiset polvihousut
+          desc: Näiden polvihousujen luinen vyö pitää työkalut näppärästi paikoillaan
+            yhdessä housuihin punottujen ektoplasmaenergioiden kanssa.
         silverSewingNeedle:
           name: Hopeinen ompeluneula
           desc: Ompeluneula, jota on paranneltu hopealla vaatturointitaitojesi esittelemiseksi.
@@ -1443,26 +1452,48 @@ singulars:
             materiaaleja kuin ne olisivat sieluja kiinnitettäväksi ruumiisiin.
         shadowquillBracers:
           name: Varjosulan rannesuojat
+          desc: Nämä tummat sulitetut rannesuojat ovat erinomaiset hiipparointia vaativissa
+            toimissa.
         shadowquillShorts:
           name: Varjosulan polvihousut
+          desc: Nämä sulitetut polvihousut saavat jalkasi näyttämään siivekkäiltä,
+            mutta ikävä kyllä et voi lentää niiden avulla.
         shadowquillPlastron:
           name: Varjosulan suojaliivi
+          desc: Tässä vaatteessa on niin paljon tummia sulkia, että näytät vallan
+            linnulta.
         aerofibrilBracers:
           name: Ilmakuitunaamiset rannesuojat
+          desc: Nämä rannesuojat on vahvistettu ilmanvastusta vähentävällä langalla,
+            joka saa kätesi liikkumaan tavallista sutjakammin.
         aerofibrilShorts:
           name: Ilmakuitunaamiset polvihousut
+          desc: Nämä polvihousut tuntuvat kovin kevyiltä jalassa, ihan kuin sinulla
+            ei olisi housuja lainkaan. Parasta tarkistaa että on!
         aerofibrilPlastron:
           name: Ilmakuitunaaminen suojaliivi
+          desc: Ilmanvastusta pienentävä lanka saa suojaliivin hohtamaan kevyesti,
+            kun tuuli puhaltaa sitä vasten.
         spectralMitts:
           name: Aavemaiset tumput
+          desc: Nämä tumput on punottu kokoon luilla ja ektoplasmalla, ja helpottavat
+            liukasta liikkumista.
         spectralChaps:
           name: Aavemaiset puntit
+          desc: Nämä puntit uhkuvat ektoplasmaista energiaa, ja mahdollistavat vielä
+            entistäkin vapaamman liikkuvuuden.
         spectralTunic:
           name: Aavemainen tunika
+          desc: Tämä paita sallii erityisen reippaan liikkuvuuden, koska sen erinomainen
+            ektoplasmapunos vahvistaa kaikkia kehon liikkeitä.
         spectralHandwear:
           name: Aavemaiset käsineet
+          desc: Näiden käsineiden ektoplasmapunos suojaa sormiasi, kun toteutat luovuuttasi
+            käden töissä.
         spectralVest:
           name: Aavemainen liivi
+          desc: Tämä liivi ja sen jämäkkä keskialueelle punottu luuvahvistus suojaavat
+            sinua luovissa käden töissä, haittaamatta kuitenkaan liikkumistasi.
       smithing:
         tarsiliumToeBoots:
           desc: Et koskaan tullut ajatelleeksi, että voisit saada parempaa suojaa
@@ -1500,11 +1531,11 @@ singulars:
             puremaan!
         pineToolbox:
           name: Mäntyinen työkalulaatikko
-          desc: Näppärä männystä tehty työkalulaatikko puutyökalujen mukana kantamiseen.
+          desc: Näppärä männystä tehty työkalulaatikko käsityökalujen mukana kantamiseen.
         bambooToolbox:
           name: Bambuinen työkalulaatikko
-          desc: Vahva työkalulaatikko puutyökaluille; helpottaa kaluston mukana kanniskelua
-            melkoisesti.
+          desc: Vahva työkalulaatikko helpottaa luovan työskentelyn kaluston mukana
+            kanniskelua melkoisesti.
       cooking:
         bectoPan:
           name: Aavemainen paistinpannu
@@ -2071,6 +2102,11 @@ singulars:
           name: Saalisköytin
           desc: Ohut köysi, jonka päässä on pitkä, kestävä neula kiinni saatujen kalojen
             lävistämiseksi. Tusinoittain kaloja mahtuu tämän narun niputtamaksi.
+        tripleRodRest:
+          name: Kolmihaarainen onkivavan pidike
+          desc: Vaikka tähän onkivavan pidikkeeseen mahtuu kolme vapaa, jostain syystä
+            et pysty käsittelemään useampaa kuin yhtä kerralla. No, ainakin sitä on
+            mukava katsella, ja se muistuttaa hauskasti sarvia.
       foraging:
         halflingsFeetSlippers:
           name: Puolituisenjalkatossut
@@ -2380,24 +2416,41 @@ singulars:
           name: Räätälin mokkasiinit
         sewingGuidebook:
           name: Ompelun opaskirja
+          desc: Tämä kirja kertoo kaikesta, mikä liittyy ompeluun ja vaatturin työhön.
+            Siinä on jopa esimerkkejä taidokkaista kirjailutekniikoista.
         safetyScissors:
           name: Turvasakset
           desc: Sakset, jotka eivät ole turhan terävät, jotta ihmiset jotka vielä
             opettelevat niiden kunnollista käyttöä eivät satuttaisi niillä itseään.
         markingChalk:
           name: Merkintäliitu
+          desc: Kankaalta pois kuluva merkintäliitu. Tämä sallii tarkkojen linjojen
+            merkitsemisen vaatteeseen ilman, että materiaali kärsii siitä pysyvästi.
         practicePins:
           name: Nuppineulat
+          desc: Neuloja, jotka pitävät kankaita helposti paikallaan eivätkä ole liian
+            todennäköisesti pistämässä kankaan sijaan sormeesi.
         clingyMeasuringTape:
           name: Tarttuva mittanauha
+          desc: Tämä mittanauha tuntuu tarttuvan miellyttävästi mihin tahansa pintaan
+            millä sitä käytät. Se toimii mainiosti mittojen ottamisessa, myös itseäsi
+            vasten.
         needlecase:
           name: Pohjaton neularasia
+          desc: Vaikuttaa siltä, että tähän rasiaan mahtuu aina lisää neuloja, vaikka
+            työntäisit sinne kuinka monta.
         fabricCuttingMat:
           name: Kestävä kankainen leikkuualusta
+          desc: Leikkuualusta, joka kestää kaikki hutileikkaukset ja yleisen neulakaaoksen
+            työskennellessäsi.
         silverScissors:
           name: Hopeiset sakset
+          desc: Terävät hopeasakset, jotka leikkaavat vaivattomasti kangasta ja muuta
+            materiaalia.
         precisionPins:
           name: Tarkkuusneulat
+          desc: Teräviä neuloja, jotka voivat pitää itsepäisimmänkin materiaalin tiukasti
+            paikallaan työstäessäsi sitä.
         pincushionBeret:
           name: Neulatyynybaskeri
         keenEyeLenses:
