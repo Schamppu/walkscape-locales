@@ -189,8 +189,12 @@ singulars:
           jalokiviä ympärillään.
       halfmawVenom:
         name: Puolikidan myrkky
+        desc: Pieni pullo vaarallista Puolikidan myrkkyä. Se saattaa maistua hyvältä,
+          mutta jälkimaku on ankara.
       swampmanArticle:
         name: Suomiesartikkeli
+        desc: Outo raportti, jossa kerrotaan näköhavainnoista suomiehestä painimassa
+          suon alligaattoreiden kanssa, ja paiskomassa niitä kohti paikallisia puolituisia.
     visas:
       westernContinentBoatPass:
         name: Läntisen mantereen laivalupa
@@ -406,6 +410,19 @@ singulars:
           tapa aloittaa päiväsi, vaikka päivä ei olisikaan varsinaisesti enää aluillaan.
       spicyMoray:
         name: Mausteinen mureena
+        desc: Makeaa, ja samalla hieman mausteista. Tämä makuyhdistelmä on todella
+          ainutkertainen, mikä tekeekin tästä suositun aterian paikallisten keskuudessa.
+      baconWeave:
+        desc: Useita pekonisiivuja punottuna yhteen. Voisit tehdä mekon näistä, jos
+          niitä olisi riittävästi varsinkin jatkuvan maistelusi jäljiltä.
+        name: Pekonipunos
+      jelliedStreamEel:
+        name: Hyytelöity jokiankerias
+        desc: Hyvin hytkyvä. Saattaa hypnotisoida sinut, jos tuijotat sitä liian kauan.
+      jerky:
+        name: Kuivaliha
+        desc: Pitkä siivu säilöttyä kuivalihaa. Pilaantumaton liha soveltuu hyvin
+          säilyväksi proteiininlähteeksi pitkille matkoille.
     cookedFish:
       cookedCrayfish:
         name: Paistettu rapu
@@ -525,6 +542,12 @@ singulars:
       trinketryMemosphere:
         name: Korutyön muistosfääri
         desc: Näet lasipallon sisällä muiston hohtavan jalokiven kiillottamisesta.
+      tailoringMemosphere:
+        name: Vaatturoinnin muistosfääri
+        desc: Näet lasipallon sisällä muiston punomisesta ja kankaan leikkaamisesta.
+      huntingMemosphere:
+        name: Metsästyksen muistosfääri
+        desc: Näet lasipallon sisällä muiston eläimen jäljittämisestä.
     misc:
       nutMix:
         desc: Sekalaisia pähkinöitä sekoituksena, joka tarjoaa tiiviin yhdistelmän
@@ -618,8 +641,8 @@ singulars:
             puiden kuorta. Löysit sen kaatamasi puun juurten välistä.
         birdNest:
           name: Linnunpesä
-          desc: Tämä linnunpesä putosi puusta jota olit kaatamassa. Sen omistaja ei
-            pesää enää löydä, joten voit saman tien kurkistaa mitä siellä on.
+          desc: Tämän pesän on rakentanut lintu. Sen omistaja ei pesää enää löydä,
+            joten voit saman tien kurkistaa mitä siellä on.
       cooking:
         cookingChest:
           name: Ruoanlaittoarkku
@@ -643,9 +666,14 @@ singulars:
       hunting:
         huntingChest:
           name: Metsästysarkku
+          desc: Tämä sarvekas arkku ilmestyi viimeisimmällä metsästysretkelläsi. Ehkä
+            sekin on jonkinlainen eliö, joka on vaikuttunut taidoistasi ja halukas
+            jakamaan osan saaliistaan.
       tailoring:
         tailoringChest:
           name: Vaatturointiarkku
+          desc: Tässä valtavassa värttinässä on lukko; ehkä voit murtaa sen auki ja
+            katsoa, jos se kätkisi sisäänsä hyödyllisiä vaatturointitarvikkeita!
   crafted:
     equipmentSets:
       bronze:
@@ -1672,8 +1700,12 @@ singulars:
             turhan rouheiden pintojen tasoittamiseen.
         adventuringSewingNeedle:
           name: Seikkailijan ompeluneula
+          desc: Ompeluneula, jossa on Seikkailijoiden killan merkki. Se soveltuu mainiosti
+            vaatteiden korjaamiseen reissussa.
         adventuringHuntingBow:
           name: Seikkailijan metsästysjousi
+          desc: Metsästysjousi, jossa on Seikkailijoiden killan merkki. Se auttaa
+            sinua metsästämään villissä erämaassa.
     skilling:
       agility:
         exerciseHeadband:
@@ -2414,6 +2446,8 @@ singulars:
           desc: Hyvin perustason neula, jota voidaan käyttää yksinkertaiseen ompeluun.
         tailorsMoccasins:
           name: Räätälin mokkasiinit
+          desc: Tämä nahasta valmistettu kestävä jalkine suojaa jalkojasi neulasten
+            pistelyltä ja muurahaisten juoksulta. Ehkä myös puutumistuntemuksilta.
         sewingGuidebook:
           name: Ompelun opaskirja
           desc: Tämä kirja kertoo kaikesta, mikä liittyy ompeluun ja vaatturin työhön.
@@ -2453,31 +2487,63 @@ singulars:
             paikallaan työstäessäsi sitä.
         pincushionBeret:
           name: Neulatyynybaskeri
+          desc: Tämä baretti pitää ylimääräiset neulasi järjestyksessä ilman ikävää
+            pistelyä päänahassa. Se soveltuu muotonsa puolesta myös käytettäväksi
+            kohtalaisena liitokiekkona.
         keenEyeLenses:
           name: Tarkkasilmäisen linssit
+          desc: Nämä linssit auttavat kuuleman mukaan käyttäjäänsä löytämään kankaanvalmistukseen
+            sopivia kasveja - tai ainakin ne saavat sinut näyttämään siltä, että huomasit
+            ne ennen kuin ne olivat muodissa.
       hunting:
         skinnyFieldKnife:
           name: Kapea kenttäveitsi
+          desc: Ohut veitsi, jota voi käyttää tuoreen saaliin nylkemiseen ja puhdistukseen.
         trappersCape:
           name: Ansastajan viitta
+          desc: Paksu viitta, joka hieman häivyttää läsnäoloasi alueen eliöiltä, jolloin
+            ne saattavat päätyä ansaasi hieman helpommin.
         camoFacePaint:
           name: Kasvonaamiomaali
+          desc: Naamioitumiseeen soveltuvat maalit, joiden ei pitäisi ärsyttää kasvojen
+            ihoa kovin pahasti. Koska maalia on vaikea nähdä, töhnäät sitä kumminkin
+            silmiisi.
         scentMaskingSpray:
           name: Tuoksunhäivytyssuihke
+          desc: Pullotettua nestettä, jota voi sumuttaa ilmaan vaimentamaan ominaistuoksuasi.
+            Emme kysele turhaan yksityiskohtia nesteen koostumuksesta.
         camoBoots:
           name: Maastokuvioiset saappaat
+          desc: Naamioitumiseen soveltuvat saappaat, jotka helpottavat jalkojesi häivyttämistä
+            ympäristöön. Ikävä kyllä aina kun saappaat eivät ole jalassa, ne on todella
+            helppo hukata.
         flashyFieldKnife:
           name: Koreileva kenttäveitsi
+          desc: Mainio kenttäveitsi, joka tuntuu soveltuvan erinomaisesti kaikkiin
+            tarpeisiin metsästysretkilläsi.
         huntingBestiary:
           name: Metsästäjän riistakirja
+          desc: Tukeva yleisteos pedoista, elikoista ja kaikenkarvaisista oudoista
+            eliöistä. Kirja on täynnä korvaamattoman arvokkaita sivuja täynnä kuvituksia,
+            kuvauksia, tapoja ja elinypäristöjä.
         camoPants:
           name: Maastokuvioiset housut
+          desc: Naamioitumiseen soveltuvat housut, jotka auttavat piilottamaan jalkasi
+            kasvillisuuden ja muiden ympäristön piirteiden sekaan. Älä sekoita näitä
+            muodollisiin vaatteisiin.
         camoShirt:
           name: Maastokuvioinen paita
+          desc: Naamioitumiseen soveltuva paita, joka auttaa sinua piiloutumaan melkein
+            mihin tahansa ympäristöön. Jollakin ilveellä se toimii mainiosti jopa
+            lumessa.
         duckDecoy:
           name: Houkutusankka
+          desc: Tekoankka, joka hämää saalistasi unohtamaan läsnäolosi. Tosin ehkä
+            ne lähinnä eivät halua olla epäkohteliaita.
         huntingTripPack:
           name: Metsästysretkireppu
+          desc: Melko kookas reppu, jossa on paljon tilaa metsästysretken romppeille.
+            Sinne pitäisi mahtua kaikki, mitä saat saaliistasi irrotettua.
     versatile:
       backpack:
         desc: Ensiluokkainen nahkainen reppu, jossa on lisätaskuja ja paljon säilytystilaa.
@@ -2752,6 +2818,9 @@ singulars:
         name: Ilmakuitunaaminen viitta
       rabbitEars:
         name: Pupunkorvat
+        desc: Eläimet tuntuvat katsovan sinua hieman eri tavalla, kun pidät näitä
+          päässäsi. Korvat saavat sinut tuntemaan itsesi ketterämmäksi. Ja tietysti
+          söpömmäksi.
     achievements:
       axeOfDestruction:
         desc: Tämän kirveen terä on muotoiltu kuin suu, joka voisi ahmia puuta.
@@ -2947,8 +3016,17 @@ singulars:
         name: Tahmanäppien shortsit
       petalFinder:
         name: Terälehdenlöytäjä
+        desc: '<i>Sormuksesta kuiskaa Jasin ääni: "Hidasta, ja nauti kävelystä ja
+          maailmasta ympärilläsi. Jotkin löytämisen arvoiset asiat tulevat luoksesi,
+          kun et kävele yksin."</i>'
       weightedVest:
         name: Painoliivi
+        desc: <i>"Kun otat ensimmäiset askeleet liivi ylläsi, ajatus nousee mieleesi
+          — kehosi kantaa nyt samaa painoa kuin karaistunut sielusi."</i>
+      redSkydisc:
+        desc: <i>"Tämä punainen liitokiekko on Pixel-nimisen koiran lempilelu. Vaikka
+          se on kulunut ja haalistunut, sen lennon kaari on yhä selkeä."</i>
+        name: Punainen liitokiekko
     agGuildSpecials:
       bertssuperskis:
         name: Bertin supersukset
@@ -3983,3 +4061,5 @@ singulars:
         veden alla. On ihme että kukaan yleensäkään löytää näitä uudelleen.
     mummyEgg:
       name: Muumion muna
+      desc: Muumion muna. Sen ympärillä on kääreitä, mutta sinun on parasta pitää
+        sitä silti lämpimänä. Onkohan se tullut muumiolaaksosta?
