@@ -46,16 +46,22 @@ singulars:
       requirement: 'Edellytys: <object id="lifevest" /> käytössä.'
       requirementLevel: Vaatii pelastusliivin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Pelastusliivi pitää sinut veden pinnalla! Ne pitää olla yllä veneessä
+        (ettet hukkuisi).
     skis:
       name: Sukset
       requirement: 'Edellytys: <object id="skis" /> käytössä.'
       requirementLevel: Vaatii sukset, joiden vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Sukset mahdollistavat lumisilla alueilla matkustamisen, ja avaavat oikoteitä
+        Jarvoniassa. Niitä tarvitaan myös tiettyihin talvisiin harrastuksiin.
     climbing:
       requirementLevel: Vaatii kiipeilyvälineen, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
       requirement: 'Edellytys: <object id="climbingTool" /> käytössä.'
       name: Kiipeilyvarusteet
+      desc: Kiipeilyvälineet avaavat oikopolkuja vuoristoalueilla, ja niitä tarvitaan
+        tiettyihin kiipeilytoimintoihin.
     skillingGear:
       name: Taitovarusteet
       requirement: 'Edellytys: <object id="skillingGear" /> käytössä.'
@@ -66,55 +72,68 @@ singulars:
       requirement: 'Edellytys: <object id="frisbee" /> käytössä.'
       requirementLevel: Vaatii liitokiekon, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Liitokiekkoja käytetään tietyissä urheilusuorituksissa, kuten liitokiekkogolfissa.
     bugCatchingNet:
       name: Ötökkäverkko
       requirement: 'Edellytys: <object id="bugCatchingNet" /> käytössä.'
       requirementLevel: Vaaditaan hyönteisverkko, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
+      desc: Voit saada ötököitä kiinni ötökkäverkolla!
     ring:
       name: Sormus
       requirement: 'Edellytys: <object id="item_ring" /> käytössä.'
       requirementLevel: Vaaditaan sormus, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Sopii sormeen.
     socks:
       name: Sukat
       requirement: 'Edellytys: <object id="item_socks" /> käytössä.'
       requirementLevel: Vaatii sukat, joiden vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Sukille on erilaisia värejä ja kuvioita. Satunnaisten sukkien löytäminen
+        voi avata saavutuksen.
     bellows:
       requirementLevel: Vaatii palkeet joissa on vähintään <keywordRequirements />
         niiden vaatimuksissa.
       name: Palkeet
       requirement: 'Edellytys: <object id="bellows" /> käytössä.'
+      desc: Palkeilla voi ruokkia tulelle happea, jolloin lieskat palavat kirkkaammin!
     basket:
       name: Kori
       requirement: 'Edellytys: <object id="basket" /> käytössä.'
       requirementLevel: Vaatii korin, jossa on vähintään <keywordRequirements /> vaatimuksena.
+      desc: Korit ovat työkaluja, joilla voit kantaa enemmän esineitä mukanasi.
     amulet:
       requirement: 'Edellytys: <object id="item_amulet" /> käytössä.'
       requirementLevel: Vaaditaan amuletti, jonka vaatimuksissa on vähintään <keywordRequirements
         /> .
       name: Amuletti
+      desc: Riipukset puetaan kaulaan.
     arrows:
       requirement: 'Edellytys: <object id="arrows" /> käytössä.'
       name: Nuolet
       requirementLevel: Vaaditaan nuolia, joiden vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Jousen käyttö vaatii nuolia metsästyksessä tai taistelukäytössä ammuksiksi.
     weapon:
       name: Ase
       requirementLevel: Vaaditaan ase, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       requirement: 'Edellytys: <object id="weapon" /> käytössä.'
+      desc: Hyvä hyökkäykseen ja siten myös puolustautumiseen.
     shield:
       name: Kilpi
       requirement: 'Edellytys: <object id="shield" /> käytössä.'
       requirementLevel: Vaaditaan kilpi, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Erinomainen paitsi laajan maalauspinnan kannalta, mutta myös iskun vastaanottamiseen.
     underwater:
       requirement: 'Edellytys: <object id="item_underwater" /> varustettuna.'
       requirementLevel: Vaatii vedenalaisvarusteet joissa on vähintään <keywordRequirements
         /> vaatimuksissaan.
-      name: Vedenalainen
+      name: Uimaväline
+      desc: Vedessä toimiista helpottavat esineet auttavat, kun tilanteesi on <object
+        id="location_underwater" />.
   general:
     fuel:
       name: Polttoaine
@@ -223,6 +242,8 @@ singulars:
       requirement: 'Edellytys: <object id="chisel" /> käytössä.'
       requirementLevel: Vaatii taltan, jossa on ainakin <keywordRequirements /> sen
         vaatimuksissa.
+      desc: Talttojen avulla <object id="carpentry" /> ja <object id="trinketry" />
+        sujuu sutjakkaammin ja jälki näyttää paremmalta.
     fishing:
       name: Kalastus
       requirement: Vaatii kalastukseen liittyvän työkalun.
@@ -233,46 +254,62 @@ singulars:
       requirement: 'Edellytys: <object id="fishingCage" /> käytössä.'
       requirementLevel: Tarvitset merran, jossa on ainakin <keywordRequirements />
         sen vaatimuksissa.
+      desc: Mertoja tarvitaan mertakalastukseen. Niiden tulee olla käytössä kalojen
+        nappaamiseksi.
     fishingNet:
       name: Kalastusverkko
       requirement: 'Edellytys: <object id="fishingNet" /> käytössä.'
       requirementLevel: Tarvitset kalastus verkon, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
+      desc: Kalaverkkoja tarvitaan verkkokalastukseen. Niiden tulee olla käytössä
+        kalojen nappaamiseksi.
     fishingRod:
       name: Onkivapa
       requirement: 'Edellytys: <object id="fishingRod" /> käytössä.'
       requirementLevel: Tarvitset ongen, jossa on ainakin <keywordRequirements />
         sen vaatimuksissa.
+      desc: Onkivapoja tarvitaan ongella kalastamiseen. Vavan tulee olla käytössä
+        kalan nappaamiseksi.
     fishingSpear:
       name: Kalastuskeihäs
       requirement: 'Edellytys: <object id="fishingSpear" /> käytössä.'
       requirementLevel: Tarvitset kalastusseipään, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
+      desc: Kalastuskeihäitä tarvitaan keihäskalastukseen. Niiden tulee olla käytössä
+        kalojen nappaamiseksi.
     localMap:
       name: Paikallinen kartta
       requirement: 'Edellytys: <object id="localMap" /> käytössä.'
       requirementLevel: Vaatii paikallisen kartan, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
+      desc: Antaa tietoa tietystä maailman alueesta, ja helpottaa toimimista kyseisellä
+        alueella.
     magnetic:
       name: Magneettinen
       requirement: 'Edellytys: <object id="magnetic" /> esine käytössä.'
       requirementLevel: Vaatii magneettisen esineen, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
+      desc: Erittäin puoleensavetävä. Jotkin aktiviteetit vaativat esineitä, joilla
+        on magneettisia ominaisuuksia.
     pickaxe:
       name: Hakku
       requirement: 'Edellytys: <object id="pickaxe" /> käytössä.'
       requirementLevel: Vaatii hakun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Hakku tarvitaan louhimiseen. Sen tulee olla käytössä malmia ja jalokiviä
+        louhiessa.
     saw:
       name: Saha
       requirement: 'Edellytys: <object id="saw" /> käytössä.'
       requirementLevel: Vaatii sahan, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Sahan avulla <object id="carpentry" /> tehostuu ja jälki paranee.
     screwdriver:
       name: Ruuvimeisseli
       requirement: 'Edellytys: <object id="screwdriver" /> käytössä.'
       requirementLevel: Vaatii ruuvimeisselin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Ruuvimeisselin avulla <object id="crafting" /> sujuu paremmin ja tehokkaammin.
     tool:
       name: Työkalu
       requirement: 'Edellytys: <object id="tool" /> käytössä.'
@@ -283,16 +320,21 @@ singulars:
       requirement: 'Edellytys: <object id="woodcuttingHatchet" /> käytössä.'
       requirementLevel: Tarvitset puutyö kirveen, jossa on ainakin <keywordRequirements
         /> sen vaatimuksissa.
+      desc: Kirves vaaditaan puun hakkaamiseen. Sen pitää olla käytössä, kun puita
+        kaadetaan.
     sickle:
       requirement: 'Edellytys: <object id="sickle" /> käytössä.'
       requirementLevel: Vaatii sirpin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Sirppi
+      desc: Työkalu, jolla <object id="foraging" /> sujuu sutjakkaammin.
     cookingPan:
       requirementLevel: Vaatii paistinpannun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Paistinpannu
       requirement: 'Edellytys: <object id="cookingPan" /> käytössä.'
+      desc: Hyödyllinen ruokaa sekoittaessa ja paistaessa! Paistinpannilla <object
+        id="cooking" /> sujuu tehokkaammin.
     fishingLure:
       requirementLevel: Vaatii uistimen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
@@ -304,76 +346,99 @@ singulars:
       name: Mauste
       requirementLevel: Vaatii mausteita, joiden vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Mausteet olivat aikoinaan kovin kalliita. Nykyään niitä käytetään laajemminkin
+        ruoanlaitossa.
     cuttingBoard:
       requirementLevel: Vaatii leikkuulaudan, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Leikkuulauta
       requirement: 'Edellytys: <object id="cuttingBoard" /> käytössä.'
+      desc: Leikkuulautaa käytetään pintana, jota vasten aineksia voi leikata.
     ruler:
       name: Mittanauha
       requirement: 'Edellytys: <object id="ruler" /> käytössä.'
       requirementLevel: Vaatii viivottimen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: 'Mittalaite, jolla saa tarkkoja mittauksia. <object id="carpentry" />
+        hyötyy tällaisesta erityisesti: mittaa kahdesti, sahaa vain kerran.'
     goldPan:
       name: Kullanhuuhdontapannu
       requirement: 'Edellytys: <object id="goldPan" /> käytössä.'
       requirementLevel: Vaatii kultapannun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Kestäviä seulontavälineitä, joilla erotellaan arvometalleja veden maa-ainekerroksista.
     cookingTool:
       name: Ruoanlaittoväline
       requirement: 'Edellytys: <object id="cookingTool" /> käytössä.'
       requirementLevel: Vaatii ruoanlaittovälineen, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
+      desc: Ruoanlaittovälineisiin kuuluvat paistinpannut, veitset ja leikkuulaudat.
     carpentryTool:
       name: Puutyökalu
       requirement: 'Edellytys: <object id="carpentryTool" /> käytössä.'
       requirementLevel: Vaatii puutyökalun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Puutyökaluihin kuuluu sahoja ja talttoja.
     craftingTool:
       name: Käsityöväline
       requirement: 'Edellytys: <object id="craftingTool" /> käytössä.'
       requirementLevel: Vaatii käsityövälineen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Käsityövälineisiin kuuluu jakoavaimia ja ruuvimeisseleitä.
     cookingKnife:
       name: Keittiöveitsi
       requirement: 'Edellytys: <object id="cookingKnife" /> käytössä.'
       requirementLevel: Vaatii keittoveitsen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Keittiöveitsillä leikataan ruoanlaittoaineksia.
     cookingPot:
       name: Kattila
       requirement: 'Edellytys: <object id="cookingPot" /> käytössä.'
       requirementLevel: Vaatii kattilan, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: <object id="cooking" /> kaipaa joskus kattilaa, vaikka padat sitä ajoittain
+        soimaisivatkin.
     foragingTool:
       name: Poimintatyökalu
       requirement: 'Edellytys: <object id="foragingTool" /> käytössä.'
       requirementLevel: Vaatii poimintatyökalun, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
+      desc: Tällaisia työkaluja käytetään luonnon antimien poiminnassa.
     knife:
       name: Veitsi
       requirement: 'Edellytys: <object id="knife" /> käytössä.'
       requirementLevel: Vaatii veitsen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Terävä, joten varo sormiasi! Käytetään asioiden leikkaamiseen, mitä tarvitaankin
+        melko usein.
     wrench:
       name: Jakoavain
       requirement: 'Edellytys: <object id="wrench" /> käytössä.'
       requirementLevel: Vaatii jakoavaimen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Työkalu, jolla kiristetään ja löystetään ruuveja ja muttereita. <object
+        id="crafting" /> sujuu tällaisilla työkaluilla paremmin.
     smithingHammer:
       requirementLevel: Vaatii taontavasaran, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Taontavasara
       requirement: 'Edellytys: <object id="smithingHammer" /> käytössä.'
+      desc: Painavapäinen vasara auttaa takomaan metallia tiettyyn muotoon. <object
+        id="smithing" /> kaipaa usein tällaista työkalua.
     magnifyingLense:
       name: Suurennuslasi
       requirement: 'Edellytys: <object id="magnifyingLense" /> käytössä.'
       requirementLevel: Vaatii suurennuslasin, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Suurentavia linssejä voi tarvita tilanteissa joissa <skillType type="artisan"/>
+        on suuri ja sen kohde kovin pieni.
     logSplitter:
       requirement: 'Edellytys: <object id="item_log_splitter" /> käytössä.'
       name: Halkaisukirves
       requirementlevel: Vaatii halkaisukirveen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
+      desc: Työkalu, jonka avulla <object id="woodcutting" /> etenee sutjakkaammin
+        - varsinaisen kaatokirveen ohella.
     sander:
       name: Hiomakone
       requirementLevel: Vaatii hiomakoneen, jonka vaatimuksissa on vähintään <keywordRequirements
@@ -384,36 +449,43 @@ singulars:
       requirementLevel: Vaatii kalastusvälineen jossa on vähintään <keywordRequirements
         /> sen vaatimuksissa.
       name: Kalastusväline
+      desc: Kalastustyövälineisiin kuuluvat onkivavat, keihäät, verkot ja merrat.
     miningTool:
       requirementLevel: Vaatii kaivostyökalun jossa on vähintään <keywordRequirements
         /> vaatimuksissaan.
       name: Kaivostyökalu
       requirement: 'Edellytys: <object id="miningTool" /> käytössä.'
+      desc: Työkalu, jota käytetään louhinnassa.
     smithingTool:
       name: Pajatyökalu
       requirement: 'Edellytys: <object id="smithingTool" /> käytössä.'
       requirementLevel: Vaatii pajatyökalun jossa on vähintään <keywordRequirements
         /> sen vaatimuksissa.
+      desc: Työkalu, jota käytetään taonnassa.
     woodcuttingTool:
       requirementLevel: Vaatii puunhakkuutyökalun, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
       requirement: 'Edellytys: <object id="woodcuttingTool" /> käytössä.'
       name: Puunhakkuutyökalu
+      desc: Työkalu, jota käytetään puunhakkuussa.
     agilityTool:
       name: Ketteryysväline
       requirement: 'Edellytys: <object id="agilityTool" /> käytössä.'
       requirementLevel: Vaatii ketteryystyökalun jossa on vähintään <keywordRequirements
         /> vaatimuksissaan.
+      desc: Väline, joka helpottaa ketteryyttä vaativaa toimintaa.
     trinketryTool:
       requirement: 'Edellytys: <object id="trinketryTool" /> käytössä.'
       requirementLevel: Vaatii korutyökalun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Korutyökalu
+      desc: Työkalu, jota käytetään korutöissä.
     skillBook:
       requirement: 'Edellytys: <object id="skillBook" /> käytössä.'
       requirementlevel: Vaatii taitokirjan, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       name: Taitokirja
+      desc: Sekä parantaa jonkin taidon käyttöä että hieman haittaa sitä.
     huntingBow:
       requirement: 'Edellytys: <object id="huntingBow" /> käytössä.'
       requirementLevel: Vaatii metsästysjousen, jonka vaatimuksissa on vähintään <keywordRequirements
