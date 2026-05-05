@@ -426,7 +426,7 @@ singulars:
       equipToToolSlot: Equipar en la ranura de herramienta {id}
       depositAll: Todo
       hatchesInto: Se convierte en
-      inputAttributes: Atributos de ingrediente
+      inputAttributes: Atributos de base
     options:
       consenseInventory: Condensar inventario
       expandInventory: Expandir inventario
@@ -649,7 +649,7 @@ singulars:
       activitiesInLocation: Actividades disponibles en <object id="{location}"/>
       guideTip: Consejo del día
       savedStepsUsed: Pasos guardados usados
-      inputs: Ingredientes
+      inputs: Bases
       workEfficiency: Eficiencia de trabajo
       maxWorkEfficiency: Eficiencia de trabajo máxima
       agilityBonus: Nivel de Agilidad <c>{level}</c>
@@ -664,20 +664,20 @@ singulars:
       baseEfficiency: Eficiencia base
       fromOverencumbered: Sobrecargado
       fromPets: Mascotas
-      inputsNotMet: Requisitos de ingredientes no cumplidos
-      fromInputAttributes: Atributos de ingrediente
-      fromFineInputs: Ingredientes de calidad
+      inputsNotMet: Requisitos de bases no cumplidos
+      fromInputAttributes: Atributos de base
+      fromFineInputs: Bases de calidad
       fromEffects: Efectos activos
       requiresInput: Necesita <hl>{quantity}x</hl> <object id="{keyword}"/>
       requiresInputOptional: (Opcional) Usa <hl>{quantity}x</hl> <object id="{keyword}"/>
       requiresInputWithLevelOptional: (Opcional) Usa <hl>{quantity}x</hl> <object
         id="{skill}" /> nivel<c>{level}</c> <object id="{keyword}"/>
       noInputOptions: No tienes ningún <object id="{keyword}"/> en tu inventario para
-        usar como ingrediente
+        usar como base
       requirementsNotMetForInput: Requisitos de <object id="{item}"/> no cumplidos
       allAttributes: Mostrar todos los atributos
       activeEffects: Efectos activos
-      fineInputBenefit: Beneficios de usar <c>ingredientesde calidad</c>
+      fineInputBenefit: Beneficios de usar <c>bases de calidad</c>
       availableInput: (<c>{quantity}x</c> disponible)
       inputAttributes: Beneficios de usar <object id="{item}"/>
       requiresInputWithLevel: Necesita <hl>{quantity}x</hl> <object id="{skill}" />
@@ -1101,6 +1101,8 @@ singulars:
       hideItems: Ocultar objetos
       forRecipes: 'Para recetas: '
       noRecipesSelected: No hay recetas seleccionadas
+      forSkill: 'Para habilidad: '
+      noSkillSelected: Sin habilidad seleccionada
     errors:
       keywordError: 'El kit de equipo ya tiene: <object id="{keyword}" />'
       duplicateItem: El objeto ya existe en el kit de equipo
@@ -1188,7 +1190,7 @@ singulars:
       activityInLocation: <object id="{activity}"/> en <object id="{location}"/>
       noPathFound: No se ha encontrado un camino al destino.
       forXActions: Realizar durante <c>{count}</c> acciones
-      inputNotMet: Requisitos de ingrediente no cumplidos
+      inputNotMet: Requisitos de base no cumplidos
       petNotFound: No encuentro la mascota elegida. ¿La has retirado?
       summoningPet: Invocando mascota <playerPet id="{pet}" />
     suggestedOptions:
@@ -1217,7 +1219,7 @@ singulars:
       actionCancelled: Acción cancelada
       switchedToPet: <playerPet id="{pet}"/> invocado
       petDoesNotExist: 'La mascota ya no existe, no se pudo invocar.'
-      inputsUsed: Ingredientes usados
+      inputsUsed: Bases usadas
   announcements:
     phrases:
       new: Nuevo

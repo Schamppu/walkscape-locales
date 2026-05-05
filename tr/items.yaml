@@ -182,8 +182,12 @@ singulars:
         name: Toprak kavanozu
       halfmawVenom:
         name: Yarımçene zehri
+        desc: Yarımçene'nin tehlikeli zehriyle dolu bir şişecik. Kendi tadı muhtemelen
+          güzel olsa da ağızda bıraktığı tat bayağı fena bir şey.
       swampmanArticle:
         name: Batakadam makalesi
+        desc: Batakadamın birinin bataklıktaki timsahlarla güreşip onları buçukluklara
+          fırlattığını anlatan acayip bir haber.
     visas:
       jarvonianLetterOfPassage:
         desc: Jarvonya tarafından gelirken Sükunet Geçidi'nden geçebileceğinin ispatı.
@@ -526,8 +530,10 @@ singulars:
           görüyorsun.
       tailoringMemosphere:
         name: Terzilik bilyuvarı
+        desc: Cam kürenin içinde, kumaşların kesilip dikilmesine dair bir anı görüyorsun.
       huntingMemosphere:
         name: Avcılık bilyuvarı
+        desc: Cam kürenin içinde, bir yaratığın izinin sürülmesine dair bir anı görüyorsun.
     misc:
       driedFruit:
         name: Kuru meyve
@@ -641,9 +647,13 @@ singulars:
       tailoring:
         tailoringChest:
           name: Terzilik sandığı
+          desc: Bu kocaman iğnin üzerinde bir kilit bulunuyor. Belki de kilidi kırıp
+            açarak içinde işine yarayacak terzilik aletleri olup olmadığına bir bakabilirsin!
       hunting:
         huntingChest:
           name: Avcılık sandığı
+          desc: Bu boynuzlu sandığa en son avının ardından rastladın. Belki de becerilerinden
+            etkilenip ganimetini paylaşmak isteyen bir çeşit yaratıktır kendisi de.
   crafted:
     equipmentSets:
       bronze:
@@ -1128,7 +1138,7 @@ singulars:
           name: Basit post
           desc: Eşsiz dokusu ve dayanıklılığıyla bilinen doğal bir malzeme.
         linenCloth:
-          name: Keten kumaş
+          name: Dokuma kumaş
           desc: Genellikle acemi terzilerin kıyafet dikmek için kullandığı basit kumaş
             parçası.
         tattyMitts:
@@ -1164,7 +1174,7 @@ singulars:
             tercihi.
         grassknotChaps:
           name: Çimörgüsü tozluk
-          desc: Pantolonun üzerine giymek için üretilmiş, çim dokumalı keten tozluk.
+          desc: Pantolonun üzerine giymek için üretilmiş, çim dokumalı tozluk.
         apprenticeBreeches:
           name: Çırak pantolonu
           desc: Uzun saatler boyunca giymesi çok rahat olan bu pantolonun küçük eşyalar
@@ -1242,7 +1252,8 @@ singulars:
         spectralHandwear:
           name: Ruhani eldiven
         toughLinenCloth:
-          name: Sağlam keten kumaş
+          name: Sağlam dokuma kumaş
+          desc: Dayanıklı malzemelerden yapılmış bir kumaş parçası.
         tattyHandwraps:
           name: Pejmürde el sargısı
         tattySkirt:
@@ -1497,6 +1508,8 @@ singulars:
       upgraded:
         tintedWoodworkingGlasses:
           name: Renkli camlı marangoz gözlüğü
+          desc: Marangöz gözlüğün mahvolmuş... Ah, güzelmiş aslında. Boş versene,
+            bayağı havalı olmuş.
         extraCraftyPants:
           name: Ekstra becerikli pantolon
         ironChefsHat:
@@ -2323,14 +2336,24 @@ singulars:
           name: Sıska arazi bıçağı
         trappersCape:
           name: Tuzakçı pelerini
+          desc: Saklanmana biraz yardımcı olarak etraftaki yaratıkları tuzaklarına
+            daha kolay düşürmeni sağlayan kalın bir pelerin.
         camoFacePaint:
           name: Kamuflaj yüz boyası
+          desc: Yüze sürüldüğünde normalden daha az rahatsızlık veren kamuflaj boyası.
+            Eninde sonunda gözüne kaçarak görmeni zorlaştıracaktır.
         scentMaskingSpray:
           name: Koku bastırma spreyi
+          desc: Üzerine sıkarak kendi kokunu bastırmanı sağlayan bir sıvı. Bu sıvının
+            ne olduğunu ise kesinlikle sormuyoruz.
         camoBoots:
           name: Kamuflaj botu
+          desc: Kamuflaj botlarını giyince ayakların çevreye daha kolay uyum sağlar.
+            Ne yazık ki ayağında olmadıkları zaman tekini kaybetmen de kolay oluyor.
         flashyFieldKnife:
           name: Göz alıcı arazi bıçağı
+          desc: Av gezilerin sırasında verdiğin her türlü görevi başarıyla yerine
+            getiren büyük bir arazi bıçağı.
         camoPants:
           name: Kamuflaj pantolonu
         camoShirt:
@@ -3372,10 +3395,16 @@ singulars:
           ilgisini çekebilir.
       rottenItem:
         name: Çürümüş eşya
+        desc: Bu eşya eskiden başka bir şeymiş ancak oyundan kaldırılmış. Artık sadece
+          çürümüş bir eşyadan ibaret.
       halfmawTeeth:
         name: Yarımçene dişi
+        desc: Bunlar döküldükten sonra muhtemelen yerine daha sağlamları çıkmıştır.
+          Macera Loncası Batakolu'nun ilgisini çekebilir.
       halfmawScales:
         name: Yarımçene pulu
+        desc: Büyükçe bir yaratığın geride bıraktığı eski sürüngen pulları. Macera
+          Loncası Batakolu'nun ilgisini çekebilir.
     rawFish:
       rawCarp:
         desc: Sazanın hafif aroması, çeşit çeşit yemek tarifine kolayca uyum sağlar.
@@ -3599,8 +3628,12 @@ singulars:
           tutar.
       ectoScraps:
         name: Dışplazma kırpıntısı
+        desc: Bu kırpıntılar, içlerinden hayalet enerjisi çıkan dışplazma parçalarıdır.
+          Bir araya getirebilmen için lanetli bir terzihaneye ihtiyacın olacak.
       unicornHorn:
         name: Tekboynuz boynuzu
+        desc: Sipsivri bir boynuz. İyileştirici güçleri olabilir. Veya bir dilek kuyusuna
+          atabilirsin. Hatta bir atın başına takarsın belki de.
     tailoring:
       aerodynamicThread:
         name: Aerodinamik iplik
@@ -3651,6 +3684,7 @@ singulars:
           kullanılabilir.
       spiderTrinket:
         name: Süs örümcek
+        desc: Süs örümcek gün ışığında parıldar. Günün birinde kolye yapımında kullanılabilir.
   currencies:
     adventurersGuildToken:
       name: Macera Loncası jetonu
@@ -3782,3 +3816,5 @@ singulars:
         ısıtmanın faydası olabilir.
     mummyEgg:
       name: Mumya yumurtası
+      desc: Bir mumyanın yumurtası. Bandajlarla sarılı olsa bile bunu sıcak tutmaya
+        çalışmalısın. Acaba annesi nerededir?

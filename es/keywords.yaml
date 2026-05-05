@@ -27,7 +27,7 @@ singulars:
       name: Lingote
       requirement: Requiere un <object id="bar" />.
       desc: Puede usarse en varias recetas de <object id="smithing" /> y <skillType
-        type="crafting" />. Se obtiene a partir de <object id="ore" />.
+        type="artisan" />. Se obtiene a partir de <object id="ore" />.
     gem:
       requirementLevel: Requiere una gema que tenga al menos <keywordRequirements
         /> de requisito.
@@ -60,7 +60,7 @@ singulars:
       requirement: Requiere una <object id="rough_gem" />.
       requirementLevel: Requiere una gema en bruto que tenga al menos <keywordRequirements
         /> de requisito.
-      desc: Se puede convertir en <object id="cut_get" />. Ingrediente básico obtenido
+      desc: Se puede convertir en <object id="cut_gem" />. Ingrediente básico obtenido
         de la <object id="mining" />.
     cutGem:
       name: Gema tallada
@@ -81,7 +81,8 @@ singulars:
         /> de requisito.
       requirement: Requiere un material <object id="processed" />.
       desc: Un material que ha sido procesado a partir de una materia prima, como
-        un lingote o un tablón.
+        <object id="bar" />, <object id="plank" />, <object id="fabric" /> o <object
+        id="leather" />.
     nugget:
       name: Pepita
       requirement: Requiere una <object id="nugget" />.
@@ -122,6 +123,28 @@ singulars:
       requirement: Requiere una <object id="fabric" />.
       requirementLevel: Requiere una tela que tenga al menos <keywordRequirements
         /> de requisito.
+    fibrousPlant:
+      name: Planta fibrosa
+      desc: Pueden usarse en recetas de <object id="tailoring" /> para fabricar <object
+        id="fabric" />. Normalmente se consiguen con <object id="foraging" />.
+      requirement: Requiere una <object id="fibrousPlant" />.
+      requirementLevel: Requiere una planta fibrosa que tenga al menos <keywordRequirements
+        /> de requisito.
+    hide:
+      name: Piel
+      requirement: Requiere <object id="hide" />.
+      requirementLevel: Requiere piel que tenga la menos <keywordRequirements /> de
+        requisito.
+      desc: Un pedazo de piel de animal que puede usarse en recetas de <object id="tailoring"
+        /> para fabricar <object id="leather" />. Puede obtenerse de la <object id="hunting"
+        />.
+    leather:
+      name: Cuero
+      desc: Un pedazo de cuero que habitualmente se usa en recetas de <object id="tailoring"
+        />.
+      requirement: Requiere <object id="leather" />.
+      requirementLevel: Requiere cuaro que tenga al menos <keywordRequirements />
+        de requisito.
   tools:
     fishing:
       name: Pesca
@@ -311,7 +334,7 @@ singulars:
       requirementLevel: Requiere un cuchillo que tenga al menos <keywordRequirements
         /> de requisito.
       desc: Afilado, ¡cuidado con tus dedos! Útil para cortar cosas y, por tanto,
-        para <object id="cooking" />.
+        tiene muchos usos.
     magnifyingLense:
       name: Lupa
       requirement: Requiere llevar una <object id="magnifyingLense" />.
@@ -567,12 +590,12 @@ singulars:
         /> de requisito.
       desc: Usar arcos requiere flechas como munición cuando cazas o luchas.
     underwater:
-      name: Submarino
+      name: Acuático
       requirement: Requiere equipo <object id="item_underwater" />.
       requirementLevel: Requiere equipo submarino que tenga al menos <keywordRequirements
         /> de requisito.
-      desc: Los objetos submarinos proporcionan beneficios mientras estás bajo las
-        olas.
+      desc: Los objetos acuáticos proporcionan beneficios mientras estás <object id="location_underwater"
+        />.
     amulet:
       name: Amuleto
       requirement: Requiere llevar un <object id="item_amulet" />.
@@ -825,8 +848,9 @@ singulars:
       name: Telar
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
-      desc: Un servicio para transformar <object id="plant" /> en fibras y pieles
-        en <object id="fabric" /> y cuero, junto con otras creaciones de <skill skill="tailoring"/>.
+      desc: Un servicio para transformar <object id="fiberousPlant" /> y <object id="hide"
+        /> en <object id="fabric" /> y <object id="leather" />, junto con otras creaciones
+        de <skill skill="tailoring"/>.
     bench:
       name: Banco de Joyería
       requirement: <PLACEHOLDER>
@@ -849,12 +873,12 @@ singulars:
       desc: Cuenta para el equipo de buceo avanzado. Necesitas equipo de buceo avanzado
         para ir bajo el agua en zonas más peligrosas.
     adventuringTools:
-      name: Conjunto de herramientas de aventura
+      name: Conjunto de herramientas de aventurero
       requirement: Requiere llevar partes del <object id="itemset_adventuring_tools"
         />.
-      requirementLevel: Requiere una herramienta de aventura que tenga al menos <keywordRequirements
-        /> de requisito.
-      desc: Cuenta para el conjunto de herramientas de aventura.
+      requirementLevel: Requiere una herramienta de aventurero que tenga al menos
+        <keywordRequirements /> de requisito.
+      desc: Cuenta para el conjunto de herramientas de aventurero.
     divingGear:
       name: Equipo de buceo
       requirement: Requiere <object id="itemset_diving_gear" />.
@@ -936,14 +960,25 @@ singulars:
       name: Submarino
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un lugar que se encuentra bajo el agua. ¡Va a requerir <object id="itemset_diving_gear"
+        />!
     regional:
       requirement: <PLACEHOLDER>
       name: Regional
       requirementLevel: <PLACEHOLDER>
+      desc: Esto está directamente relacionado con una región o facción específica.
     desert:
       name: Desierto
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Un lugar que se encuentra en un entorno sofocante, árido y arenoso. ¡Va
+        a requerir <object id="navigateDesert" />!
+    ghostly:
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
+      name: Fantasmal
+      desc: Un lugar conectado con los espíritus. Hará cualquier objeto <object id="spectral"
+        /> más fuerte.
   faction:
     reward:
       name: Recompensa de facción

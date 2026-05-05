@@ -146,12 +146,11 @@ singulars:
       allAttributes: Показать все характеристики
       fromEffects: Активные эффекты
       availableInput: (доступно <c>{quantity}</c> шт)
-      requiresInput: 'Нужно: <object id="{keyword}"/> <hl>{quantity}</hl> шт'
+      requiresInput: 'Расходует <object id="{keyword}"/> <hl>{quantity}</hl> шт'
       activeEffects: Активные эффекты
       requiresInputWithLevelOptional: (необязательно) расходует <object id="{keyword}"/>
-        <hl>{quantity}</hl> 1 шт. с хар-ми <object id="{skill}" /> <c>{level}</c>
-        ур
-      requiresInputWithLevel: 'Нужно: <object id="{keyword}"/> <hl>{quantity}</hl>
+        <hl>{quantity}</hl> шт. с хар-ми <object id="{skill}" /> <c>{level}</c> ур
+      requiresInputWithLevel: 'Расходует <object id="{keyword}"/> <hl>{quantity}</hl>
         шт. с характеристиками <object id="{skill}" /> <c>{level}</c> ур'
       inputsNotMet: Требования для ресурсов не выполнены
       requirementsNotMetForInput: Требования для <object id="{item}"/> не выполнены
@@ -160,7 +159,9 @@ singulars:
         в качестве ресурсов
       fineInputBenefit: Выгода от использования <c>качественных ресурсов</c>
       requiresInputOptional: (необязательно) расходует <object id="{keyword}"/> <hl>{quantity}</hl>
-        1 шт
+        шт
+      fromInputAttributes: Бонус от ресурсов
+      fromFineInputs: Бонус от качественных ресурсов
     info:
       noActivity: Активность не выбрана. <hl>Выберите одну ниже</hl>, или свайпните
         влево, чтобы увидеть всё, доступное в данной локации.
@@ -318,7 +319,7 @@ singulars:
       requiresOneOfTheFollowing: Требуется один из следующих материалов.
       requiresMaterial: Требуется материал.
       showingRecipiesThatUses: Показаны рецепты, использующие предмет
-      requiresService: Необходима услуга.
+      requiresService: Требуется оборудование.
       noServiceRequirements: Оборудование не требуется.
       requirements: Требования
       noMaterials: У вас нет материалов, из которых можно что-либо изготовить, в данный
@@ -387,7 +388,7 @@ singulars:
   inventory:
     info:
       noItemEquipped: Предмет не экипирован. \n\n Вы можете экипировать предмет, выбрав
-        один из списка ниже и нажав "Экипировать".
+        один из списка ниже и нажав «Экипировать».
       noItemSelected: Предмет не выбран. \n\n Выберите предмет из списка ниже для
         того, чтобы сравнить его с текущим предметом и экипировать его.
       noItemsFound: Не найдено предметов в вашем инвентаре, которые подошли бы в данную
@@ -408,7 +409,7 @@ singulars:
       oneOrMoreCantBeDropped: Один или более предметов не могут быть выброшены.
       attributes: Характеристики
       abilities: Способности
-      requires: Требуется
+      requires: Требования
       equipToRingOne: Экипировать в ячейку 1 для кольца
       equipToToolSlot: Экипировать в ячейку для инструмента {id}
       emptySlot: Пустая ячейка
@@ -436,6 +437,7 @@ singulars:
       noPotionConsumables: Нет <hl>зелий</hl> в вашем инвентаре.
       depositAll: Все
       hatchesInto: Вылупляется в
+      inputAttributes: Характеристики
     options:
       expandInventory: Расширить инвентарь
       showMaterials: Показать материалы
@@ -1005,6 +1007,9 @@ singulars:
       allAttributes: Все характеристики
       overlevelingWithNumber: Ур. навыка на <c>+{level}</c> больше требуемого.
       overlevelingFromAgility: От <object id="agility" /> <c>{level}</c> ур.
+      noAttributesTip: Экипировка, инструменты и другие источники не дают бонусов,
+        соответствующих текущим фильтрам.
+      noAttributes: Нет активных бонусов к характеристикам.
     options:
       showInactiveAttributes: Показывать неактивные
 plurals:
