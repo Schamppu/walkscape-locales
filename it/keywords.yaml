@@ -686,14 +686,15 @@ singulars:
     lightSource:
       name: Fonte luminosa
       requirement: Richiede una<object id="lightSource" />.
-      requirementLevel: Richiede che l'utente abbia un <keywordRequirements /> equipaggiato.
+      requirementLevel: Richiede una sorgente luminosa che soddisfi almeno i requisiti
+        specificati in <keywordRequirements />.
       desc: Illumina le zone poco illuminate. Indispensabile per determinate attività
         e luoghi.
     heatResist:
       requirement: Richiede qualcosa <object id="heat_resistant" />.
       name: Resistente al calore
-      requirementLevel: Richiede che l'utente abbia qualcosa di equipaggiato <keywordRequirements
-        />.
+      requirementLevel: Richiede un materiale resistente al calore che soddisfi almeno
+        i requisiti specificati in <keywordRequirements />.
       desc: Ti mantiene fresco nelle zone calde. Indispensabile per determinate attività
         e in determinati luoghi.
   misc:
@@ -722,6 +723,13 @@ singulars:
       name: Maledetto
       requirement: Richiede qualcosa <object id="cursed" />.
       desc: Un servizio difettoso comporta alcuni effetti negativi.
+    upgradeable:
+      name: Aggiornabile
+      desc: Un oggetto che può essere utilizzato per un potenziamento! Forse dovresti
+        pensare di tenerlo da parte per effettuare dei miglioramenti in futuro?
+      requirement: È necessario un elemento <object id="upgradeable" />.
+      requirementLevel: Richiede un componente aggiornabile che includa almeno <keywordRequirements
+        /> tra i propri requisiti.
   search:
     skills:
       agility:
