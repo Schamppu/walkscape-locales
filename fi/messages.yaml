@@ -76,14 +76,14 @@ singulars:
       gainedExperience: <skill skill="{skill}" /> sai <c>+{exp}</c> kokemuspistettä.
       skillLeveledUp: <skill skill="{skill}" /> taidon nousi tasosta <c i="0">{from}</c>
         tasoon <c i="1">{to}</c>.
-      gainedItem: Sait <c>+{amount}</c> <item id="{item}" />
-      craftedItem: Valmistit <c>+{amount}</c> <item id="{item}" />
-      gainedMoney: Sait <c i="0">+{amount}</c> <c i="1">kolikkoa</c>
-      characterGained: Hahmosi sai <c>+{amount}</c> kokemuspistettä />
+      gainedItem: Sait <c>+{amount}</c> <item id="{item}" />.
+      craftedItem: Valmistit <c>+{amount}</c> <item id="{item}" />.
+      gainedMoney: Sait <c i="0">+{amount}</c> <c i="1">kolikkoa</c>.
+      characterGained: Hahmosi sai <c>+{amount}</c> kokemuspistettä />.
       arrivedAt: Saavuit paikkaan <location /> <c>{location}</c>.
       characterLeveledUpFrom: Hahmosi taso nousi tasosta <c i="0">{from}</c> tasoon
         <c i="1">{to}</c>.
-      stepsWhileAway: Saadut askeleet pelin ollessa suljettuna
+      stepsWhileAway: Saadut askeleet pelin ollessa suljettuna.
       whileYouWereAway: Kun olit poissa...
       nothingHappened: Mitään merkittävää ei tapahtunut.
     inactiveSteps:
@@ -208,7 +208,8 @@ singulars:
       gameAssetUpdateFailed:
         text: Pelisovellus ei saanut ladattua aineistoa palvelimelta. Ole hyvä ja
           yritä käynnistää peli uudelleen ja tarkista, latautuvatko aineistot uudella
-          yrittämällä; jos sekään ei toimi, pelin asentaminen uudelleen saattaa auttaa.
+          yrittämällä, Tarkista Discordista, onko ongelmasta annettu jo tiedote, jos
+          pelin uudelleenkäynnistyskään ei auta.
         title: Pelin aineiston päivitys epäonnistui
       gameAssetsUpdated:
         text: Pelin aineistoon, esimerkiksi kuviin ja käännöksiin, on ladattu päivitys.
