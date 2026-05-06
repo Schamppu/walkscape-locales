@@ -819,9 +819,9 @@ singulars:
       name: Ткацкий станок
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
-      desc: Оборудование для переработки волокон из <object id="fiberousPlant" />
-        и <object id="hide" /> в <object id="fabric" /> и <object id="leather" />,
-        а также для других активностей, связанных с навыком <skill skill="tailoring"/>.
+      desc: Оборудование для переработки волокон из <object id="fibrousPlant" /> и
+        <object id="hide" /> в <object id="fabric" /> и <object id="leather" />, а
+        также для других активностей, связанных с навыком <skill skill="tailoring"/>.
   general:
     lightSource:
       name: Источник света
@@ -860,6 +860,13 @@ singulars:
       name: Проклятый
       requirement: Требуется <object id="cursed" /> предмет.
       desc: Проклятое оборудование дает негативные эффекты.
+    upgradeable:
+      name: Улучшаемый
+      desc: Предметы, которые можно улучшить! Может быть, стоит оставить их себе,
+        чтобы потом модернизировать?
+      requirement: Требуется <object id="upgradeable" /> предмет.
+      requirementLevel: Требуется улучшаемый предмет с характеристиками <keywordRequirements
+        />.
   itemSets:
     treasureHunter:
       name: Комплект искателя сокровищ
