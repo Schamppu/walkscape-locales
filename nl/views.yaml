@@ -164,7 +164,7 @@ variant: 'Variant {number}'}}, activity: {phrases: {notAffectingTraveling: (geen
 op reisefficiëntie), workEfficiencyPenalty: '<icon i="Work efficiency"/>Basiswerkefficiëntie
 <c>-{penalty}%</c>', inventoryIsOverLimit: Inventaris is over het limiet!, noActivity: Geen
 activiteit, savedSteps: Bewaarde stappen, consumables: Verbruiksartikelen, stopWhenOverEncumbered: Stop
-wanneer overbelast, options: Opties, requirements: Vereisten, rewards: Beloningen,
+wanneer inventaris vol is, options: Opties, requirements: Vereisten, rewards: Beloningen,
 levelActivity: 'Niveau <c>{level}</c> <object id="{skill}"/> activiteit', startActivity: Activiteit
 starten, queueActivity: Activiteit in wachtrij zetten, travelAndStartActivity: Reis
 en activiteit starten, cantStartActivity: Kan activiteit niet starten, requirementsNotMet: Vereisten
@@ -173,8 +173,8 @@ locationIsUnknown: 'Locatie is onbekend. Zodra je deze locatie verkend hebt, kun
 de activiteiten hier zien.', activitiesInLocation: 'Beschikbare activiteiten in <object
 id="{location}"/>', guideTip: Tip van de dag, savedStepsUsed: Bewaarde stappen gebruikt,
 inputs: Invoer, workEfficiency: Werkefficiëntie, maxWorkEfficiency: Maximale werkefficiëntie,
-fromOverLevels: 'Een hoger niveau zijn <numberProgress current="{current}" max="{max}"
-/>', agilityBonus: 'Behendigheidsniveau <c>{level}</c>', fromGear: Huidige uitrusting,
+fromOverLevels: 'Boven niveau <numberProgress current="{current}" max="{max}" /> zijn',
+agilityBonus: 'Behendigheidsniveau <c>{level}</c>', fromGear: Huidige uitrusting,
 fromServices: Voorzieningsbonus, fromCollectibles: Verzamelobjecten, fromConsumables: Verbruiksartikelen,
 changeActivity: Activiteit wijzigen, abilities: Abilities, fromOverencumbered: Overbelast,
 baseEfficiency: Basisefficiëntie, fromPets: Beestjes, inputsNotMet: Invoervereisten
@@ -564,15 +564,15 @@ hebt geen beestjes. Je kunt beestjes krijgen door eieren te vinden en ze uit te 
 petEggs: Eieren van beestjes, ownedFor: In bezit sinds, xpToHatch: XP nodig tot uitgebroed,
 hatchingProgress: Voortgang uitbroeden, isHatching: '<c>{name}</c> komt uit!', noEggsFound: Geen
 eieren gevonden die aan de zoekopdracht voldoen., requirementsToHatchNotMet: '<c>{name}</c>
-kan geen ei uitbroeden', unlockedAt: Ontgrendeld om}}, currencies: {info: {noCurrencies: "Je
-hebt momenteel geen valuta's. Je kunt valuta's verdienen bij <c>gilden</c>, <c>Heimelijke
-Handelaar</c> en andere <c>speciale bronnen</c>.", thereAreNoPaidCurrencies: Valuta's
-in het spel zullen <c>nooit</c> te koop zijn <c>met echt geld</c>.}, phrases: {goldCoins: Gouden
-munten, currencies: Valuta's}}, mysteriousMerchant: {phrases: {buyWithChips: Koop
-met fiches, ownedCurrency: Valuta's in bezit, buyItems: Koop voorwerpen, sellItems: Verkoop
-voorwerpen, trade: Handelen, sellingPrice: '{rarity} verkoopprijs', buyingPrice: '{rarity}
-koopprijs', sell: Verkopen, buy: Kopen, tradeChestItems: Voorwerpen vanuit schatkist
-verhandelen, sellFromInventory: Verkopen vanuit inventaris, sellFromBank: Verkopen
+kan geen ei uitbroeden', unlockedAt: Ontgrendeld om, retire: Terugtrekken}}, currencies: {
+info: {noCurrencies: "Je hebt momenteel geen valuta's. Je kunt valuta's verdienen
+bij <c>gilden</c>, <c>Heimelijke Handelaar</c> en andere <c>speciale bronnen</c>.",
+thereAreNoPaidCurrencies: Valuta's in het spel zullen <c>nooit</c> te koop zijn <c>met
+echt geld</c>.}, phrases: {goldCoins: Gouden munten, currencies: Valuta's}}, mysteriousMerchant: {
+phrases: {buyWithChips: Koop met fiches, ownedCurrency: Valuta's in bezit, buyItems: Koop
+voorwerpen, sellItems: Verkoop voorwerpen, trade: Handelen, sellingPrice: '{rarity}
+verkoopprijs', buyingPrice: '{rarity} koopprijs', sell: Verkopen, buy: Kopen, tradeChestItems: Voorwerpen
+vanuit schatkist verhandelen, sellFromInventory: Verkopen vanuit inventaris, sellFromBank: Verkopen
 vanuit de bank, totalSellingPrice: 'Totaal voor de verkoop van <c>{amount}</c> voorwerpen',
 totalBuyingPrice: 'Totaal voor de aankoop van <c>{amount}</c> voorwerpen'}, dialogue: {
 chooseChest: Een wijs besluit! Vanuit welke schatkist wil je <c>voorwerpen verhandelen</c>?,
