@@ -266,7 +266,7 @@ accessibility: {title: Toegankelijkheid, leftHandedMode: Linkshandigenmodus}, ac
 title: Account, visibility: Zichtbaarheid van profiel}, character: {title: Personage,
 anonOnLeaderboard: Anonimiseren op klassement, hideSteps: Stappen verbergen, exportData: Exporteer
 personage data naar het klembord}, gameplay: {title: Gameplay, stopWhenOverEncumberedDefault: Standaard
-stoppen wanneer overbelast}, closedBeta: {title: Gesloten Beta, clearStepsGraph: Stappengrafiek
+stoppen wanneer inventaris vol is}, closedBeta: {title: Gesloten Beta, clearStepsGraph: Stappengrafiek
 leegmaken, useThisToClear: Gebruik dit als je je stappengrafiek wilt resetten. Handig
 voor als je stappen hebt verkregen door een bug en een reset in de grafiek wilt.},
 notifications: {title: Notificaties, stepCountInterval: Notificatie-interval, stepCountNotifications: Stappenteller-notificaties,
@@ -370,24 +370,27 @@ gelezen tijd van stappen, startingErrorManagerProcess: Foutbeheer proces starten
 settingUpStepManager: Stappen beheer wordt aangemaakt, reportingErrorToSentry: Foutmelding
 wordt naar Sentry gestuurd, settingUpTutorialManager: Beginnerstraining beheer wordt
 aangemaakt, settingUpOnlineSettingsManager: Online instellingen beheer wordt aangemaakt,
-settingUpCensusManager: Census beheer wordt aangemaakt}}, character: {phrases: {checkOutSubject: Check
-mijn voortgang in WalkScape!, skills: Vaardigheden, stepsOfLastWeek: Stappen van de
-laatste 7 dagen, checkOut: 'Hier is mijn WalkScape personage {name}. Moet je kijken!\nhttps://walkscape.app',
-totalLevel: Totaalniveau, savePicture: Afbeelding opslaan, level: 'Personage-niveau:
-<c>{level}</c>', stepsToNextLevel: 'Stappen tot volgend niveau <c>{steps}</c>'}, info: {
-skillBreakdown: Hier is het complete overzicht van alle vaardigheden die je personage
-beoefend heeft tijdens zijn/haar reis. Druk op een van de vaardigheden voor meer gedetailleerde
-informatie en wat ze ontgrendelen., eachLevelIncreasesStepBank: 'Elk personage-niveau
-na niveau <c>{level}</c> verhoogt het maximale aantal bewaarde stappen met <c>{amount}</c>.'}},
-permissions: {phrases: {pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om
-het spel te laten functioneren, hebben we toestemming nodig om de gegevens van de
-stappenteller op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan
-met het spel.', exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je
-moet toestemming geven voor de volgende permissies om verder te gaan met het spel.
-Druk op de permissie om toestemming te geven., noDeviceFound: Geen device gevonden.
-Controleer a.u.b. of je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt
-en toestemming hebt gegeven om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We
-hebben deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
+settingUpCensusManager: Census beheer wordt aangemaakt, startingGameManagerProcess: Spelmanager
+proces wordt gestart, startingSettingsManagerProcess: Instellingenmanager proces wordt
+gestart, startingOTAManagerProcess: Assetmanager proces wordt gestart}}, character: {
+phrases: {checkOutSubject: Check mijn voortgang in WalkScape!, skills: Vaardigheden,
+stepsOfLastWeek: Stappen van de laatste 7 dagen, checkOut: 'Hier is mijn WalkScape
+personage {name}. Moet je kijken!\nhttps://walkscape.app', totalLevel: Totaalniveau,
+savePicture: Afbeelding opslaan, level: 'Personage-niveau: <c>{level}</c>', stepsToNextLevel: 'Stappen
+tot volgend niveau <c>{steps}</c>'}, info: {skillBreakdown: Hier is het complete overzicht
+van alle vaardigheden die je personage beoefend heeft tijdens zijn/haar reis. Druk
+op een van de vaardigheden voor meer gedetailleerde informatie en wat ze ontgrendelen.,
+eachLevelIncreasesStepBank: 'Elk personage-niveau na niveau <c>{level}</c> verhoogt
+het maximale aantal bewaarde stappen met <c>{amount}</c>.'}}, permissions: {phrases: {
+pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om het spel
+te laten functioneren, hebben we toestemming nodig om de gegevens van de stappenteller
+op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan met het spel.',
+exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je moet toestemming
+geven voor de volgende permissies om verder te gaan met het spel. Druk op de permissie
+om toestemming te geven., noDeviceFound: Geen device gevonden. Controleer a.u.b. of
+je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt en toestemming hebt gegeven
+om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We hebben
+deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
 connectAppleHealth: Verbinden met Apple Health, connect: Verbinden, connectAppleHealthExplanation: 'Je
 moet verbinding maken met Apple Health zodat we stappen kunnen inlezen die gesynchroniseerd
 zijn door je horloge, en om te zien met welke devices je bent verbonden. Als dit de
@@ -576,9 +579,13 @@ chooseChest: Een wijs besluit! Vanuit welke schatkist wil je <c>voorwerpen verha
 chestChosen: 'Aha, dus jij wilt voorwerpen uit de <object id="{chest}"/>. Uitstekende
 keuze! Vertel, wil je voorwerpen uit je <c>bank</c> of <c>inventaris</c> verhandelen,
 of wil je iets kopen met je <c>schatkistfiches</c>?'}}, announcements: {info: {noAnnouncements: Er
-zijn op dit moment geen aankondigingen.}, phrases: {unread: Ongelezen, new: Nieuw}},
-attributeListing: {phrases: {overlevelingWithNumber: 'Het vaardigheidsniveau ligt
-<c>+{level}</c> boven de vereiste.', noAttributes: Geen active eigenschappen., noAttributesTip: 'Je
-hebt geen actieve eigenschappen van uitrusting, gereedschap of andere bronnen, of
-je filters hebben geen geschikte eigenschappen opgeleverd.', allAttributes: Alle eigenschappen},
-options: {showInactiveAttributes: Toon inactieve eigenschappen}}}}
+zijn op dit moment geen aankondigingen., announcementInfo: 'Hier vind je <c>aankondigingen</c>
+van de ontwikkelaars. DevBlogs, changelogs en systeemaankondigingen zijn een goede
+manier om jezelf op de hoogte te houden van het ontwikkelingsproces en server downtimes!',
+noMoreAnnouncements: Je bent aan het einde van de aankondigingen! Er zijn geen verdere
+aankondigingen.}, phrases: {unread: Ongelezen, new: Nieuw}}, attributeListing: {phrases: {
+overlevelingWithNumber: 'Het vaardigheidsniveau ligt <c>+{level}</c> boven de vereiste.',
+noAttributes: Geen active eigenschappen., noAttributesTip: 'Je hebt geen actieve eigenschappen
+van uitrusting, gereedschap of andere bronnen, of je filters hebben geen geschikte
+eigenschappen opgeleverd.', allAttributes: Alle eigenschappen}, options: {showInactiveAttributes: Toon
+inactieve eigenschappen}}}}
