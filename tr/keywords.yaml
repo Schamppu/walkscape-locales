@@ -161,7 +161,8 @@ singulars:
     heatResist:
       name: Isıya dayanıklı
       requirement: <object id="heat_resistant" /> bir şey gerekli.
-      requirementLevel: <keywordRequirements /> bir şey kuşanılması gerekli.
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan ısıya dayanıklı
+        bir şey gerekli.
       desc: Sıcak yerlerde serin tutar. Bazı faaliyetler ve konumlar için gereklidir.
   materials:
     bar:
@@ -317,6 +318,13 @@ singulars:
       requirementLevel: En az <keywordRequirements /> koşulu taşıyan lanetli bir şey
         gerekli.
       desc: Negatif etkileri olan lanetli bir hizmet.
+    upgradeable:
+      requirementLevel: En az <keywordRequirements /> koşulu taşıyan geliştirilebilir
+        bir şey gerekli.
+      name: Geliştirilebilir
+      desc: Geliştirilebilir bir ekipman parçası! Daha sonra kullanmak için bunu elinde
+        tutmaya ne dersin?
+      requirement: <object id="upgradeable" /> bir şey gerekli.
   tools:
     carpentryTool:
       name: Marangozluk aleti
@@ -889,7 +897,7 @@ singulars:
       name: Terzihane
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
-      desc: <object id="fiberousPlant" /> ve <object id="hide" />ları işleyerek <object
+      desc: <object id="fibrousPlant" /> ve <object id="hide" />ları işleyerek <object
         id="fabric" />, <object id="leather" /> ve diğer <skill skill="tailoring"/>
         eserlerini elde etmek için bir hizmet.
     bench:
