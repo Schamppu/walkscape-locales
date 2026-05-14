@@ -182,6 +182,11 @@ maps:
       "skilling": Skrzynie umiejętności
       "guild": Skrzynie gildijne
       "regional": Skrzynie frakcyjne
+  pets:
+    stages:
+      "juvenile": Podrostek
+      "adult": Dorosły
+      "egg": Jajo
 plurals:
   achievements:
     phrases:
@@ -474,6 +479,7 @@ singulars:
       fromServices: Bonus
       fromPets: Pupile
       allAttributes: Pokaż wszystkie atrybuty
+      fromEffects: Aktywne efekty
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> doświadczenia
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} znajdźki</c>, które
@@ -1139,6 +1145,7 @@ singulars:
       fromProc: Z <c>{proc}</c>
       fromSource: Z <object id="{source}"/>
       fromAttribute: Z atrybutu {attribute}
+      switchedToPet: Przywołano <playerPet id="{pet}"/>
   rumors:
     phrases:
       unlockedWalkpediaEntries: Odblokowane wpisy w Walkpedii
@@ -1161,3 +1168,12 @@ singulars:
   currencies:
     phrases:
       goldCoins: Złote monety
+  pets:
+    phrases:
+      noPetSummoned: Żaden pupil nie jest aktualnie przywołany. <c>Przywołaj pupila</c>,
+        by podążał za tobą i dawał różne atrybuty oraz zdolności!
+      hasHatched: <c>{name}</c> wykluł się oraz posiada teraz poziom <petStage id="{stage}"/>!
+      claimedAt: Przypisane
+      hatchedAt: Wyklute
+      summonedPet: Przywołany pupil
+      noEggs: Nie posiadasz żadnych odebranych jaj pupili.
