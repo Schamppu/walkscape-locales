@@ -89,18 +89,20 @@ maps:
     leaderboardType:
       'totalXp': Całkowite <c>doświadczenie</c>
       'totalSteps': Całkowite <c>kroki</c>
-      'carpentry': <c>Stolarstwo</c> poziom
-      'crafting': <c>Rzemiosło</c> poziom
+      'carpentry': Poziom <c>Stolarstwa</c>
+      'crafting': Poziom <c>Rzemiosła</c>
       'achievementPoints': <c>Punkty Osiągnięć</c>
-      'trinketry': <c>Jubilerstwo</c> poziom
-      'woodcutting': <c>Drwalnictwo</c> poziom
-      'fishing': <c>Wędkarstwo</c> poziom
-      'foraging': <c>Zbieractwo</c> poziom
-      'mining': <c>Górnictwo</c> poziom
-      'agility': <c>Zwinność</c> poziom
-      'smithing': <c>Kowalstwo</c> poziom
+      'trinketry': Poziom <c>Jubilerstwa</c>
+      'woodcutting': Poziom <c>Drwalnictwa</c>
+      'fishing': Poziom <c>Wędkarstwa</c>
+      'foraging': Poziom <c>Zbieractwa</c>
+      'mining': Poziom <c>Górnictwa</c>
+      'agility': Poziom <c>Zwinności</c>
+      'smithing': Poziom <c>Kowalstwa</c>
       'totalLevel': Całkowity <c>poziom</c>
-      'cooking': <c>Gotowanie</c> poziom
+      'cooking': Poziom <c>Gotowania</c>
+      "tailoring": Poziom <c>Krawiectwa</c>
+      "hunting": Poziom <c>Myślistwa</c>
   characterCreation:
     phrases:
       optionTypes:
@@ -148,6 +150,10 @@ maps:
         "crafted": Wytworzony
         "cosmetic": Kosmetyki
         "special": Specjalne
+        "artifact": Artefakty
+        "quest": Przedmioty zadań
+        "egg": Jaja pupili
+        "currency": Waluty
   locales:
     grammaticalGender:
       'masculine': Męska
@@ -309,6 +315,15 @@ plurals:
         two: <c>{}</c> graczy wykonujących aktywność
         other: <c>{}</c> graczy wykonujących aktywność
         one: <c>{}</c> gracz wykonuje aktywność
+  gearSets:
+    phrases:
+      selected:
+        two: <hl>{}</hl> selected
+        one: <hl>{}</hl> wybrane
+        few: '-'
+        many: '-'
+        zero: '-'
+        other: <hl>{}</hl> wybrane
 singulars:
   achievements:
     info:
@@ -1292,6 +1307,9 @@ singulars:
       noEggsFound: Nie znaleziono jajek, które spełniają twoje wyszukiwanie.
       noPetsFound: Nie znaleziono pupili, które spełniają twoje wyszukiwanie.
       petEggs: Jajka pupili
+      noEggIsHatching: Żadne jajo pupila nie jest aktualnie wykluwane. Wybierz jajo
+        pupila i zacznij je <c>wykluwać</c>!
+      currentlyHatching: Aktualnie wykluwane
   mysteriousMerchant:
     dialogue:
       chooseChest: Mądry wybór! Z jakiej skrzyni pragniesz <c>wymienić przedmioty</c>?
@@ -1329,3 +1347,6 @@ singulars:
       noAttributesTip: Nie masz żadnych aktywnych atrybutów z wyposażenia, narzędzi
         lub innych źródeł albo twoje filtry nie pokazują żadnych, które pasują.
       overlevelingWithNumber: Poziom umiejętności <c>+{level}</c> ponad wymagania.
+      overlevelingFromAgility: Z <object id="agility" /> poziom <c>{level}</c>.
+    options:
+      showInactiveAttributes: Pokaż nieaktywne atrybuty
