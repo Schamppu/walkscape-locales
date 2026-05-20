@@ -70,6 +70,9 @@ singulars:
       requirement: Wymaga <object id="processed" /> materiał.
       requirementLevel: Wymaga przetworzonego materiału który ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Materiał, który został przetworzony z podstawowego surowca, taki jak <object
+        id="bar" />, <object id="plank" />, <object id="fabric" /> lub <object id="leather"
+        />.
     offcut:
       name: Odcięty
       requirement: Wymaga <object id="offcut" />.
@@ -89,6 +92,8 @@ singulars:
       requirementLevel: Wymaga tkaniny, która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
       requirement: Wymaga <object id="fabric" />.
+      desc: Arkusz tkaniny typowo używany w recepturach <object id="tailoring" />.
+      name: Tkanina
     fibrousPlant:
       desc: Może być użyty w recepturach <object id="tailoring" />, by wytworzyć <object
         id="fabric" />. Może być najczęściej znaleziony poprzez <object id="foraging"
@@ -703,6 +708,9 @@ singulars:
       name: Krosno
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Usługa pozwalająca przetwarzać <object id="fibrousPlant" /> oraz <object
+        id="hide" /> w <object id="fabric" /> i <object id="leather" />, związana
+        również z innymi wytworami <skill skill="tailoring"/>.
   itemSets:
     treasureHunter:
       name: Zestaw Poszukiwacza Skarbów
