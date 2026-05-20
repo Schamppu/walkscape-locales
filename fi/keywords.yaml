@@ -155,13 +155,14 @@ singulars:
     lightSource:
       name: Valonlähde
       requirement: 'Edellytys: <object id="lightSource" /> käytössä.'
-      requirementLevel: Edellyttää, että käyttäjällä on <keywordRequirements /> käytössä.
+      requirementLevel: Edellyttää, että käytössä on valonlähde, jonka vaatimuksissa
+        on vähintään <keywordRequirements />.
       desc: Valaisee hämäriä paikkoja. Vaaditaan tiettyihin paikkoihin ja aktiviteetteihin.
     heatResist:
       name: Kuumansieto
       requirement: 'Edellytys: jokin, jolla on <object id="heat_resistant" />.'
-      requirementLevel: 'Edellytys: Käyttäjällä on oltava yllään jotain, jolla on
-        <keywordRequirements />.'
+      requirementLevel: 'Edellytys: Ylläsi on oltava jotain kuumuudelta suojaavaa,
+        jonka vaatimuksissa on vähintään <keywordRequirements />.'
       desc: Pitää sinut viileänä kuumilla alueilla. Vaaditaan tiettyihin toimintoihin
         ja tietyissä paikoissa.
   materials:
@@ -909,7 +910,7 @@ singulars:
       name: Kangaspuut
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
-      desc: Palvelu, jossa <object id="fiberousPlant" /> ja <object id="hide" /> jatkojalostuvat,
+      desc: Palvelu, jossa <object id="fibrousPlant" /> ja <object id="hide" /> jatkojalostuvat,
         ja syntyy <object id="fabric" /> tai <object id="leather" />, ja mikä muu
         <skill skill="tailoring"/> nyt saattaa tulla mieleen.
   containers:
@@ -957,6 +958,13 @@ singulars:
       requirementLevel: 'Edellytys: Jotakin kirottua, jonka vaatimuksissa on vähintään
         <keywordRequirements />.'
       desc: Kirotulla palvelulla on myös negatiivisia vaikutuksia.
+    upgradeable:
+      name: Paranneltavissa
+      desc: Varuste, jota voidaan parannella! Ehkä sinun kannattaa säilyttää tämä
+        jälkeenpäin parantelun yrittämistä varten?
+      requirement: Vaatii jotain, joka on <object id="upgradeable" />.
+      requirementLevel: Vaatii jotain paranneltavissa olevaa, jonka vaatimuksissa
+        on vähintään <keywordRequirements />.
   locations:
     underwater:
       name: Vedenalainen

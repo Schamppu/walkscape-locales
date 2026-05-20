@@ -425,6 +425,17 @@ singulars:
         trinketryChest:
           name: Skrzynia Jubilera
           desc: Pudełko pełne kosztowności, mam nadzieję, że to nie potwór w przebraniu!
+      tailoring:
+        tailoringChest:
+          desc: Ta wielka włóczka ma na sobie kłódkę, możliwe że dasz radę go złamać
+            i sprawdzić, czy ma trochę użytecznych przedmiotów krawiectwa!
+          name: Skrzynia Krawca
+      hunting:
+        huntingChest:
+          name: Skrzynia Myśliwego
+          desc: Ta rogata skrzynia pojawiła się po twoich ostatnich łowach. Może to
+            też jakieś zwierzę, które jest pod wrażeniem twych umiejętności i podzieli
+            się łupem.
   crafted:
     equipmentSets:
       bronze:
@@ -938,6 +949,20 @@ singulars:
         qualityLeather:
           name: Wysokiej Jakości Skóra
           desc: <PLACEHOLDER>
+        spectralHandwear:
+          name: Widmowe Rękawice
+        spectralVest:
+          name: Widmowa Kamizelka
+        spectralTunic:
+          name: Widmowa Tunika
+        spectralChaps:
+          name: Widmowe Chapsy
+        spectralBreeches:
+          name: Widmowe Bryczesy
+        spectralSewingNeedle:
+          name: Widmowa Igła Krawiecka
+        spectralMitts:
+          name: Widmowe Rękawiczki
       hunting:
         mangroveBirdhouse:
           desc: Namorzyny nie są często wykorzystywane do produkcji domków dla ptaków,
@@ -956,7 +981,8 @@ singulars:
           name: Prosta Cięciwa
         bambooHuntingBow:
           desc: Łuk myśliwski wykonany z bambusa, rozpowszechniony na obszarach, gdzie
-            bambus jest łatwo dostępny. Jest bardzo lekki i stanowi precyzyjną broń.
+            bambus jest łatwo dostępny. Jest bardzo lekki i stanowi precyzyjne narzędzie
+            myśliwskie.
           name: Bambusowy Łuk Myśliwski
         steelArrows:
           desc: Błyszczące końcówki tych strzał wskazują na ich ostrość. Nie chciałbyś
@@ -971,7 +997,7 @@ singulars:
           desc: Łuk myśliwski wykonany z drewna dębowego, popularny wśród myśliwych.
         mahoganyHuntingBow:
           name: Mahoniowy Łuk Myśliwski
-          desc: Ten dobrze wykonany łuk myśliwski to dobra broń dla doświadczonego
+          desc: Ten dobrze wykonany łuk myśliwski to dobre narzędzie dla doświadczonego
             myśliwego.
         birchBirdhouse:
           name: Brzozowy Ptasi Domek
@@ -1006,6 +1032,17 @@ singulars:
         kelpDriftNet:
           name: Wodorostowa Sieć Dryfująca
           desc: Niemal nieskończenie duża sieć wykonana z podwodnych wodorostów.
+        spectralHuntingBow:
+          desc: Kilka kości połączonych ze sobą w łuk myśliwski, którego cięciwa to
+            nić ektoplazmy, która rzuca strzały tam, gdzie wycelujesz.
+          name: Widmowy Łuk Myśliwski
+        rustyHuntingBow:
+          name: Zardzewiały Łuk Myśliwski
+          desc: Kiedyś świetny metalowy łuk, teraz zardzewiały. Nadal nadaje się do
+            polowań, ale nie tak dobrze jak kiedyś.
+        birchHuntingBow:
+          name: Brzozowy Łuk Myśliwski
+          desc: Łuk myśliwski wykonany z prostego, ale użytecznego drewna brzozowego.
       trinketry:
         cutEthernite:
           name: Ethernite
@@ -1210,6 +1247,14 @@ singulars:
         tarsiliumSaw:
           name: Tarsilowa Piła
           desc: Ciemne, obsydianowe zęby piły są gotowe do ugryzienia!
+        bambooToolbox:
+          desc: Solidna skrzynka na narzędzia rzemieślnicze, dzięki której ich przenoszenie
+            stanie się o wiele łatwiejsze.
+          name: Bambusowa Skrzynka Narzędziowa
+        pineToolbox:
+          desc: Poręczna skrzynka narzędziowa do noszenia narzędzi rzemieślniczych,
+            wykonana z drewna sosnowego.
+          name: Sosnowa Skrzynka Narzędziowa
       cooking:
         bectoPan:
           name: Widmowa Patelnia
@@ -1223,6 +1268,18 @@ singulars:
         jadeTippedSteelPan:
           desc: Końcówka uchwytu tej stalowej patelni jest ozdobiona kamieniem jadeitowym.
           name: Jadeitowa Patelnia
+      upgraded:
+        tintedWoodworkingGlasses:
+          desc: Udało ci się zniszczyć okulary do obróbki drewna... och, czekaj, nie,
+            to jest fajne. Nieważne, te są odlotowe.
+          name: Okulary do Obróbki Drewna
+        extraCraftyPants:
+          desc: Być może miałeś wrzucony klucz w te spodnie, ale wszystko poszło zgodnie
+            z planem. Teraz są o wiele bardziej pomysłowe.
+        ironChefsHat:
+          name: Żelazna Czapka Szefa
+          desc: Ten kapelusz jest mocniejszy i cięższy niż poprzednio, ale teraz możesz
+            przygotowywać tematyczne potrawy na wyższym poziomie.
   looted:
     equipmentSets:
       dimensional:
@@ -1436,7 +1493,7 @@ singulars:
         toolbelt:
           name: Pas narzędziowy
           desc: Wielofunkcyjne akcesorium, które pomieści szereg narzędzi do obróbki
-            drewna
+            drewna.
         woodworkingGlasses:
           name: Okulary Stolarza
           desc: Po założeniu okulary te ujawniają skomplikowane wzory i historie zawarte
@@ -2494,6 +2551,10 @@ singulars:
         name: Figurka Obcego
         desc: <i>"Ulubiona piszcząca zabawka szczeniaka o imieniu Emery. Trzymając
           ją w ramionach, będzie podążał za tobą i pomagał ci szukać skarbów."</i>
+      redSkydisc:
+        desc: <i>"Ten czerwony dysk to ulubiony dysk psa o imieniu Pixel. Trochę wypłowiały
+          i zużyty, ale wciąż dobrze lata."</i>
+        name: Czerwony Dysk
     regional:
       jarvonia:
         handWarmingPack:
@@ -3277,6 +3338,19 @@ singulars:
       invasiveSpeciesTag:
         desc: Metalowa przywieszka z wizerunkiem paszczy robakopodobnego stworzenia.
         name: Znak Gatunków Inwazyjnych
+      rottenItem:
+        desc: Ten przedmiot kiedyś coś symbolizował, ale został usunięty z gry. Teraz
+          jest po prostu zgniłym przedmiotem.
+        name: Zgniły Przedmiot
+      halfmawTeeth:
+        desc: Pozostawione zęby, które prawdopodobnie zostały zastąpione mocniejszymi.
+          Gildia Poszukiwaczy Przygód w Posterunku Bagiennym z pewnością byłaby nimi
+          zainteresowana.
+        name: Zęby Półpaszczy
+      halfmawScales:
+        name: Łuski Półpaszczy
+        desc: Nienaruszone, stare łuski gadów, zrzucone przez dość duże stworzenie.
+          Gildia Poszukiwaczy Przygód w Posterunku Bagiennym byłaby nimi zainteresowana.
     hunting:
       sinew:
         desc: Twarda, włóknista tkanka łącząca mięśnie z kośćmi.
@@ -3518,10 +3592,10 @@ singulars:
         desc: Twarda mieszanka żywicy z wierzby płaczącej. Na swój sposób smutna i
           piękna.
       shinyBrokenSkydisk:
-        desc: Niebiański dysk,który odbija wszystko z powrotem, tworząc tęczę na swojej
-          powierzchni. Jedynym problemem jest jego mniejszy rozmiar i okrągły otwór
-          w środku.
-        name: Niebiański Dysk
+        desc: Niebiański dysk, który odbija wszystko z powrotem, tworząc tęczę na
+          swojej powierzchni. Jedynym problemem jest jego mniejszy rozmiar i okrągły
+          otwór w środku.
+        name: Połamany Świecący Dysk
       charterOfTheDrowned:
         desc: Dziennik mieszkańców miasta, którzy stali się teraz upiornymi mieszkańcami
           Morskiego Widma. Umożliwia on przejście przez upiorną barierę otaczającą
@@ -3690,3 +3764,7 @@ singulars:
       name: Jajo Delfina
       desc: Jajo delfina. Wodny kolor dobrze je ukrywa pod wodą. To cud, że rodzice
         w ogóle je odnajdują.
+    mummyEgg:
+      name: Jajo mumii
+      desc: Jajko mumii. Może być owinięte bandażami, ale wciąż powinieneś zadbać,
+        by było w cieple. Zastanawiasz się gdzie jest matka?

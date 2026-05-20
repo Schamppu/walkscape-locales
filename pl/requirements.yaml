@@ -1,7 +1,7 @@
 singulars:
   levelUpSkills:
-    text: Miej całkowity poziom umiejętności <numberProgress current="{current}" max="{max}"
-      /> .
+    text: Zwiększ swoje umiejętności <numberProgress current="{current}" max="{max}"
+      /> razy.
   skillLevel:
     text: Wymaga co najmniej <skill skill="{skill}" level="{level}" needed/>.
   itemAnywhere:
@@ -62,6 +62,14 @@ singulars:
     beginnerCrossCountry: Ukończ aktywność <object 
       id="activity-cross-country_skiing_(beginner)-fc421940-d63a-402f-aa50-26cc2efea4d3"
       alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> razy.
+    wreckDiving: Ukończ aktywność <object id="activity-wreck_diving-12e980cd-058a-42c4-8358-ba7afe1c319c"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> razy.
+    arrowsInInventory: Wymaga <object id="arrows" /> w twoim ekwipunku.
+    wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true"
+      />
+    notAgility: Nie wykonując <skill skill="agility"/>.
+    notUnderwater: Nie będąc w lokacji <object id="location_underwater" />.
+    smeltRecipe: W trakcie wykonywania receptur <object id="recipe_smelting" />.
   factionReputations:
     jarvoniaReputation: Posiadaj <numberProgress current="{current}" max="{max}" />
       reputacji we frakcji <realm realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db"
@@ -108,6 +116,10 @@ singulars:
       /> razy
     sledding: W trakcie wykonywania <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
       />.
+    intermediateSkydisc: Ukończ aktywność <object 
+      id="activity-frisbee_golfing_(intermediate)-ecbf8887-6555-4d43-b044-e8e05eac556c"
+      alwaysShow="true" /> w <object id="location-bilgemont_port-3487fbca-62e3-4a6c-8f91-ceacdc6ea382"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> razy.
   exploreRealm:
     text: Zbadaj całkowicie <object id="{obj}" alwaysShow="true" /> . <numberProgress
       current="{current}" max="{max}" />.
@@ -132,3 +144,60 @@ singulars:
   keywordWithLevelEquipped:
     text: Miej wyposażony <object id="{obj}" /> który ma co najmniej poziom <skill
       skill="{skill}"/> <numberProgress current="{current}" max="{max}" />.
+  recipeType:
+    text: W trakcie wykonywania receptur <object id="{obj}" />.
+  distinctKeywordItemInInventory:
+    text: Wymaga <numberProgress current="{current}" max="{max}" /> <object id="{obj}"
+      /> w twoim ekwipunku.
+  totalSkillLevel:
+    text: Posiadaj <numberProgress current="{current}" max="{max}" /> jako całkowity
+      poziom umiejętności.
+  serviceKeywords:
+    text: Wymaga usługi <serviceTier tier="{tier}" /> {objects} lub lepszej.
+  abilityAvailable:
+    text: W trakcie posiadania dostępnej zdolności <object id="{obj}" />.
+  petWithKeyword:
+    text: Posiadaj <object id="{obj}" /> pupili. <numberProgress current="{current}"
+      max="{max}" />.
+    textDistinct: Posiadaj unikalnego pupila <object id="{obj}" />. <numberProgress
+      current="{current}" max="{max}" />.
+  petAmount:
+    text: Posiadaj <numberProgress current="{current}" max="{max}" /> pupilów.
+  petTotalLevels:
+    text: Posiadaj łącznie <numberProgress current="{current}" max="{max}" /> poziomów
+      pupili na wszystkich posiadanych.
+  petHighestLevel:
+    text: Posiadaj pupila z przynajmniej <numberProgress current="{current}" max="{max}"
+      /> poziomem.
+  hasPet:
+    text: Posiadaj pupila <object id="{obj}" />.
+  itemsWithKeywordCrafted:
+    text: Posiadaj wytworzone <object id="{obj}" />. <numberProgress current="{current}"
+      max="{max}" />.
+  itemsGained:
+    text: Zdobądź <object id="{obj}" />. <numberProgress current="{current}" max="{max}"
+      />.
+  skillTypeLevel:
+    text: Posiadaj całkowity poziom <skillType type="{type}"/> <numberProgress current="{current}"
+      max="{max}" />.
+    textRelative: Posiadaj {percent}% w stronę maksymalnego poziomu <skillType type="{type}"/>
+      <numberProgress current="{current}" max="{max}" />.
+  craftingType:
+    text: W trakcie wytarzania <object id="{obj}" /> <numberProgress current="{current}"
+      max="{max}" />.
+    textSkill: W trakcie wytwarzania umiejętnością <skill skill="{skill}" /> <numberProgress
+      current="{current}" max="{max}" />.
+  workEfficiencyAt:
+    text: W trakcie posiadania wydajności pracy przynajmniej <numberProgress current="{current}"
+      max="{max}" />%.
+    textMaximum: Posiadając maksymalną wydajność pracy <numberProgress current="{current}"
+      max="{max}" />.
+  petsHatched:
+    text: Posiadaj jakiekolwiek <object id="pet_egg" /> <numberProgress current="{current}"
+      max="{max}" />.
+  currentService:
+    text: Wymaga usługi <serviceTier tier="{tier}" /> <object id="{obj}" /> lub lepszej.
+      Nie możesz używać <object id="{currentObj}" icon="false" />.
+  currentServiceKeywords:
+    text: Wymaga usługi <serviceTier tier="{tier}" /> {objects} lub lepszej. Nie możesz
+      używać <object id="{currentObj}" icon="false" />.

@@ -85,6 +85,14 @@ singulars:
       requirement: Wymaga <object id="nugget" />.
       requirementLevel: Wymaga samorodka, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+    fabric:
+      requirementLevel: Wymaga tkaniny, która ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+      requirement: Wymaga <object id="fabric" />.
+    fibrousPlant:
+      desc: Może być użyty w recepturach <object id="tailoring" />, by wytworzyć <object
+        id="fabric" />. Może być najczęściej znaleziony poprzez <object id="foraging"
+        />.
   tools:
     fishing:
       name: Wędkarstwo
@@ -121,6 +129,7 @@ singulars:
       requirement: Wymaga wyposażenia <object id="sickle" />.
       requirementLevel: Wymaga sierpa który, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Narzędzie zbierackie używane w <object id="foraging" />.
     goldPan:
       name: Złota Misa
       requirement: Wymaga wyposażenia <object id="goldPan" />.
@@ -335,31 +344,41 @@ singulars:
       requirement: Wymaga wyposażenia <object id="lifevest" />.
       requirementLevel: Wymaga kamizelki ratunkowej która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Utrzymuje cię na powierzchni wody! Kamizelki ratunkowe są wymagane na
+        łodziach (czyli nie utoniesz).
     climbing:
       name: Ekwipunek Wspinaczkowy
       requirement: Wymaga wyposażenia <object id="climbingTool" />.
       requirementLevel: Wymaga ekwipunku wspinaczkowego, który posiada przynajmniej
         <keywordRequirements /> w swoich wymaganiach.
+      desc: Zestaw wspinaczkowy odblokowuje skróty w górzystych regionach oraz jest
+        wymagany do niektórych aktywności wspinaczkowych.
     bugCatchingNet:
       name: Siatka na Owady
       requirement: Wymaga wyposażenia <object id="bugCatchingNet" />.
       requirementLevel: Wymaga siatki na owady która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Możesz łapać robale za pomocą siatki na robale!
     ring:
       name: Pierścień
       requirement: Wymaga wyposażenia <object id="item_ring" />.
       requirementLevel: Wymaga pierścienia który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Wchodzi na palec.
     socks:
       name: Skarpety
       requirement: Wymaga wyposażenia <object id="item_socks" />.
       requirementLevel: Wymaga skarpet które, mają co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Bywają w różnych kolorach i wzorach. Znajdowanie rozrzuconych skarpet
+        pozwoli ci na odblokowanie osiągnięcia.
     skis:
       requirementLevel: Wymaga nart które, mają co najmniej <keywordRequirements />
         w swoich wymaganiach.
       name: Narty
       requirement: Wymaga wyposażenia <object id="skis" />.
+      desc: Narty pozwalają ci na podróż przez śnieżne rejony oraz odblokowanie skrótów
+        w Jarvonii. Są też wymagane do niektórych zimowych aktywności.
     skillingGear:
       name: Sprzęt do Umiejętności
       requirement: Wymaga wyposażenia <object id="skillingGear" />.
@@ -370,41 +389,51 @@ singulars:
       requirement: Wymaga wyposażenia <object id="frisbee" />.
       requirementLevel: Wymaga dysku do golfa który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Dyski są wymagane do niektórych atletycznych, takich jak golf dyskowy.
     bellows:
       name: Miechy
       requirement: Wymaga wyposażenia <object id="bellows" />.
       requirementLevel: Wymaga miechów które, mają co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Miechy pozwolą ci na rozniecanie ognia powietrzem, sprawiając że płomienie
+        będą większe!
     basket:
       name: Kosz
       requirement: Wymaga wyposażenia <object id="basket" />.
       requirementLevel: Wymaga kosza który, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Koszyki to narzędzia, które pozwolą ci nosić więcej przedmiotów w ekwipunku.
     amulet:
       name: Amulet
       requirement: Wymaga wyposażenia <object id="item_amulet" />.
       requirementLevel: Wymaga amuletu który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Amulety zakłada się na szyję.
     underwater:
       name: Podwodny
       requirement: Wymaga sprzętu <object id="item_underwater" />.
       requirementLevel: Wymaga sprzętu podwodnego, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Podwodne przedmioty dają ci benefity, gdy jesteś w <object id="location_underwater"
+        />.
     weapon:
       name: Broń
       requirement: Wymaga wyposażenia <object id="weapon" />.
       requirementLevel: Wymaga broni, która ma co najmniej <keywordRequirements />
         w wymaganiach.
+      desc: Doskonałe do ataku, czyli obrony też.
     shield:
       name: Tarcza
       requirement: Wymaga wyposażenia <object id="shield" />.
       requirementLevel: Wymaga tarczy, która ma co najmniej <keywordRequirements />
         w wymaganiach.
+      desc: Doskonałe jako powierzchnia do malowania oraz przeciw dostawaniu z piąchy.
     arrows:
       name: Strzały
       requirement: Wymaga wyposażenia <object id="arrows" />.
       requirementLevel: Wymaga strzał, które mają co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Używanie łuków wymaga strzał jako amunicji w tracie polowania lub walki.
   consumables:
     cookedFish:
       name: Usmażona ryba
@@ -452,16 +481,19 @@ singulars:
       requirement: Wymaga <object id="chest" />.
       requirementLevel: Wymaga skrzyni która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Skrzynie zawierają skarby. Otwórz i sprawdź!
     regionalChest:
       name: Regionalna skrzynka
       requirement: Wymaga <object id="regionalChest" />.
       requirementLevel: Wymaga regionalnej skrzynki która ma przynajmniej<keywordRequirements
         /> w swoich wymaganiach.
+      desc: Skrzynie regionalne zawierają skarby związane z danym regionem.
     skillingChest:
       name: Skrzynia Umiejętności
       requirement: Wymaga <object id="skillingChest" />.
       requirementLevel: Wymaga skrzyni umiejętności, która ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Skrzynie umiejętności zawierają skarby związane z daną umiejętnością.
   general:
     fuel:
       name: Paliwo

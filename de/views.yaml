@@ -377,8 +377,8 @@ singulars:
       treasury: Schätze
       longPressTip: <c>Tipp:</c> Lange auf einen Stapel Gegenstände zu drücken wählt
         alle ähnlichen Stapel aus.
-      itemsInUse: Du hast Gegenstände ausgewählt, die bereits verwendet werden. Du
-        kannst keine verwendeten Gegenstände ablegen oder in die Bank legen.
+      itemsInUse: Ein paar ausgewählte Gegenstände sind in Verwendung. Diese können
+        nicht ab- oder in die Bank gelegt werden.
       noItemEquipped: Kein Gegenstand ausgerüstet
       noConsumableSelected: Keine Verbrauchsgegenstände gewählt. Du kannst sie unten
         auswählen.
@@ -435,7 +435,7 @@ singulars:
       jobBoard: Jobbörse
       routes: Routen
       tapToShowRoutes: Tippen, um Routen anzuzeigen
-      jobs: Jobs
+      jobs: Aufträge
       owner: Besitzer
       showingRoutesFrom: Mögliche Reiseziele ab <object id="{from}"/>.
       noRoutesFromLocation: Keine Reiseziele von <object id="{from}"/> verfügbar.
@@ -487,6 +487,15 @@ singulars:
       baseEfficiency: Grundeffizienz
       fromOverencumbered: Überladen
       fromPets: Haustiere
+      availableInput: (<c>{quantity}x</c> verfügbar)
+      requiresInputOptional: (Optional) Nutzt <hl>{quantity}x</hl> <object id="{keyword}"/>
+      requiresInputWithLevel: Benötigt <hl>{quantity}x</hl> <object id="{skill}" />
+        Level <c>{level}</c> <object id="{keyword}"/>
+      requirementsNotMetForInput: Voraussetzungen für <object id="{item}"/> nicht
+        erfüllt
+      requiresInput: Benötigt <hl>{quantity}x</hl> <object id="{keyword}"/>
+      requiresInputWithLevelOptional: (Optional) Nutzt <hl>{quantity}x</hl> <object
+        id="{skill}" /> Level <c>{level}</c> <object id="{keyword}"/>
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> Erfahrung
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} Sammelgegenstände</c>
@@ -743,6 +752,14 @@ singulars:
       youAreInspectingFromMap: Du <c>inspizierst gerade von der Weltkarte</c> aus.
         Um zu interagieren, musst du dich direkt an dem Ort befinden und dies aus
         der Hauptansicht des Standorts öffnen.
+    options:
+      regions: Regionen anzeigen
+      friends: Freunde anzeigen
+      labels: Label anzeigen
+      locations: Orte anzeigen
+      routes: Routen anzeigen
+      playerCharacter: Deinen Charakter anzeigen
+      hideAll: Alles verstecken
   stats:
     phrases:
       totalSkillXp: Gesamte Skill Erfahrung
@@ -751,7 +768,7 @@ singulars:
       highestStepsIn24Hours: Meisten Schritte in 24h
       lastUpdated: 'Zuletzt aktualisiert am: <c>{updatedAt}</c>.'
       recordedFrom: Aufgezeichnet von <c>{from}</c> bis <c>{to}</c>.
-      reputation: Reputation
+      reputation: Ruf
       statUpdatesWithDelay: Dieser Wert wird mit einer Verzögerung von bis zu <c>einer
         Stunde</c> aktualisiert.
     info:
@@ -1027,7 +1044,7 @@ singulars:
       nextRewardUnlocked: 'Nächste Belohnung freigeschaltet:'
   journal:
     phrases:
-      jobs: Jobs
+      jobs: Aufträge
     info:
       jobInfo: Jobs sind <c>einfache und wiederholbare Aufgaben</c>, die du erledigen
         kannst, um Belohnungen zu erhalten. Du kannst Jobs von <c>Jobbörsen</c> an

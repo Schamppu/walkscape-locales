@@ -61,6 +61,28 @@ singulars:
         tabText: Lista Budynków
         description: Budynki to konstrukcje w grze, które zazwyczaj dają ci dostęp
           do sklepów lub usług, na przykład banku.
+    keywordList:
+      phrases:
+        relatedToContainers: Słowa kluczowe pojemników
+        referencedByServices: Usługi z tym słowem kluczowym
+        referencedByContainers: Pojemniki z tym słowem kluczowym
+        relatedToGear: Słowa kluczowe wyposażenia
+        relatedToTools: Słowa kluczowe narzędzi
+        relatedToMaterials: Słowa kluczowe materiałów
+        relatedToConsumables: Słowa kluczowe przedmiotów używalnych
+        relatedToLocations: Słowa kluczowe lokacji
+        relatedToServices: Słowa kluczowe usług
+        referencedByGear: Wyposażenie z tym słowem kluczowym
+        referencedByTools: Narzędzia z tym słowem kluczowym
+        referencedByMaterials: Materiały z tym słowem kluczowym
+        referencedByConsumables: Zużywalne z tym przedmiotem kluczowym
+        referencedByLocations: Lokacje z tym słowem kluczowym
+      info:
+        title: Słowa kluczowe
+        description: Słowa kluczowe są używane przy wielu przedmiotach, lokacjach,
+          usługach i aktywnościach. Możesz je szybko sprawdzić w tym miejscu, przykładowo
+          szukając przedmiotów, które liczą się jako źródło światła.
+        tabText: Lista słów kluczowych
   contentPages:
     item:
       info:
@@ -80,6 +102,7 @@ singulars:
           tej umiejętności.
         fromLevelToLevel: Od poziomu <c>{from}</c> do poziomu <c>{to}</c>
         guide: Przewodnik
+        statistics: Statystyki
       guides:
         cooking: "<object id=\"cooking\" /> to rzemieślnicza umiejętność tworzenia
           kulinarnych <object id=\"food\" /> przysmaków i przedmiotów zużywalnych.\n\
@@ -266,6 +289,8 @@ singulars:
       unknown: Ta zawartość jest wciąż nieznana dla twojej postaci. Kontynuuj odkrywanie,
         aby poznać wszystkie szczegóły!
       rumors: Znane plotki
+    keyword:
+      requiresThisKeyword: Treść, która wymaga tego słowa klucza
 maps:
   phrases:
     item:
@@ -278,6 +303,14 @@ maps:
         "collectible": Znajdźki
         "egg": Jaja Pupila
         "currency": Waluty
+  dataTypes:
+    "item": Przedmiot
+    "activity": Aktywność
+    "location": Lokacja
+    "service": Usługa
+    "recipe": Receptura
+    "route": Trasa podróży
+    "achievement": Osiągnięcie
 plurals:
   skillUnlocks:
     itemRequirementsMet:
