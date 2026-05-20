@@ -177,6 +177,16 @@ maps:
       'consumable': Zużywalne
       'activity': Aktywność
       'emergency': Awaryjny
+  mysteriousMerchant:
+    chestTypes:
+      "skilling": Skrzynie umiejętności
+      "guild": Skrzynie gildijne
+      "regional": Skrzynie frakcyjne
+  pets:
+    stages:
+      "juvenile": Podrostek
+      "adult": Dorosły
+      "egg": Jajo
 plurals:
   achievements:
     phrases:
@@ -400,6 +410,7 @@ singulars:
       noFoodConsumables: Brak <hl>żywności</hl> w ekwipunku.
       depositAll: Wszystko
       hatchesInto: Wypakuj w
+      inputAttributes: Wkład atrybutów
     options:
       consenseInventory: Poukładaj ekwipunek
       expandInventory: Rozwiń ekwipunek
@@ -455,7 +466,7 @@ singulars:
       maxWorkEfficiency: Maksymalna wydajność pracy
       fromCollectibles: Znajdźki
       savedStepsUsed: Użyto zapisanych kroków
-      inputs: Wejścia
+      inputs: Wkłady
       agilityBonus: Poziom Zwinności <c>{level}</c>
       fromGear: Założone wyposażenie
       fromConsumables: Przedmioty Zużywalne
@@ -467,10 +478,29 @@ singulars:
         />
       fromServices: Bonus
       fromPets: Pupile
+      allAttributes: Pokaż wszystkie atrybuty
+      fromEffects: Aktywne efekty
+      availableInput: (<c>{quantity}x</c> dostępne)
+      requiresInput: Wymaga <hl>{quantity}x</hl> <object id="{keyword}"/>
+      requiresInputOptional: (Opcjonalne) Używa <hl>{quantity}x</hl> <object id="{keyword}"/>
+      requiresInputWithLevel: Wymaga <hl>{quantity}x</hl> <object id="{skill}" />
+        poziomu <c>{level}</c> <object id="{keyword}"/>
+      requiresInputWithLevelOptional: (Opcjonalne) Używa <hl>{quantity}x</hl> <object
+        id="{skill}" /> poziomu <c>{level}</c> <object id="{keyword}"/>
+      noInputOptions: Nie posiadasz <object id="{keyword}"/> w swoim ekwipunku, by
+        użyć to jako wkład
+      fineInputBenefit: Benefity z używania <c>świetnych wkładów</c>
+      requirementsNotMetForInput: <object id="{item}"/> wymagania nie są spełnione
+      inputAttributes: Benefity z używania <object id="{item}"/>
+      activeEffects: Aktywne efekty
+      inputsNotMet: Wymagania wkładów nie są spełnione
+      fromInputAttributes: Atrybuty wkładów
+      fromFineInputs: Świetne wkłady
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/> doświadczenia
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} znajdźki</c>, które
         można znaleźć
+      reputation: <bp /><object id="{faction}" /> reputacja <c>+{amount}</c>
     options:
       completeUntilActions: Wykonano liczbę akcji
       numberOfActions: Liczba akcji
@@ -617,6 +647,9 @@ singulars:
       holdToUse: Trzymaj, by użyć
       alreadyHere: Znajdujesz się w <object id="{location}"/>. Nie można użyć tej
         umiejętności, aby się tu przemieszczać.
+      cannotUseMore: Nie możesz użyć tej zdolności. Możesz już być pod wpływem tej
+        zdolności i wyczerpano jej maksymalny czas trwania.
+      lastsFor: 'Efekt utrzymuje się:'
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Wymagania do użycia nie są spełnione:'
@@ -630,6 +663,18 @@ singulars:
       charges: Ładunki
       requirements: Wymagania
       cooldownRequirements: Wymagania czasu odnowienia
+      noInputsAvailable: Nie posiadasz dostępnych <object id="{item}"/>, by użyć do
+        odnowienia.
+      inputCharges: 'Ładunki:'
+      inputNextCharge: 'Następny ładunek:'
+      inputAtMax: Maks.
+      cooldownCharged: Naładowałeś zdolność <object id="{ability}"/> dla <c>{target}</c>!
+    inputs:
+      item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
+        otrzymane z <object id="{item}" />
+    info:
+      inputCooldownInfo: Ta zdolność ładowana jest poprzez używanie przedmiotów. Jeden
+        pełen ładunek wymaga <icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>.
   treasury:
     phrases:
       noItems: Nie masz żadnych skarbów do otwarcia. Skrzynie możesz zdobyć z różnych
@@ -808,6 +853,14 @@ singulars:
         do poprzedniej lokalizacji. Jesteś pewien?
       youAreInspectingFromMap: Aktualnie <c>oglądasz z mapy świata</c>. Aby wejść
         w interakcję, musisz być w danej lokacji i otworzyć ją z widoku głównego miejsca.
+    options:
+      hideAll: Ukryj wszystko
+      regions: Pokaż regiony
+      friends: Pokaż znajomych
+      labels: Pokaż opisy
+      locations: Pokaż lokacje
+      routes: Pokaż trasy
+      playerCharacter: Pokaż twoją postać
   stats:
     phrases:
       stats: Statystyki
@@ -846,7 +899,7 @@ singulars:
       last: Ostatni
       loadingPage: Wczytywanie strony...
       totalSteps: Całkowicie kroków
-      totalLevel: Całkowity poziom umiejętności
+      totalLevel: Łączny poziom umiejętności
       totalExperience: Całkowite XP
       achievementPoints: Punkty osiągnięć
   mainMenu:
@@ -953,6 +1006,16 @@ singulars:
       noPermanentModifiers: Brak trwałych modyfikatorów.
       noItemEquipped: Brak założonych przedmiotów
       noItemSelected: Brak wybranych przedmiotów
+      gearSlots: Sloty wyposażenia
+      toolSlots: Sloty narzędzi
+      comparedItem: (Porównany przedmiot)
+      selectedItem: (Wybrany przedmiot)
+    info:
+      gearInfo: Załóż wyposażenie, by ulepszyć atrybuty postaci. Możesz tapnąć jakikolwiek
+        slot ekwipunku poniżej i zobaczyć, jakie przedmioty można umieścić w tym slocie
+        z twojego wyposażenia.
+      toolInfo: Załóż narzędzia, by ulepszyć atrybuty postaci. Na początku masz trzy
+        sloty na narzędzia do dyspozycji. Odblokujesz więcej <c>awansując swoją postać</c>.
   tools:
     phrases:
       emptyToolSlot: Pusty slot na narzędzie
@@ -1040,6 +1103,10 @@ singulars:
       hideItems: Ukryj przedmioty
       showItems: Pokaż przedmioty
       reorderGearSets: Przeorganizuj zestaw wyposażenia
+      forRecipes: 'Do receptur: '
+      forSkill: 'Do umiejętności: '
+      noRecipesSelected: Nie wybrano receptur
+      noSkillSelected: Nie wybrano umiejętności
   popupBubbles:
     phrases:
       overEncumbered: Twój ekwipunek jest pełny i jesteś przeciążony.
@@ -1078,7 +1145,9 @@ singulars:
       switchingToGearSet: Przełączanie na zestaw wyposażenia <c>{name}</c>
       noPathFound: Nie znaleziono trasy do miejsca docelowego.
       forXActions: Wykonano akcji <c>{count}</c>
-      inputNotMet: Wymagania wejścia nie spełnione
+      inputNotMet: Wymagania wkładów nie spełnione
+      petNotFound: Nie znaleziono wybranego pupila, został wysłany na emeryturę?
+      summoningPet: Przyzywanie pupila <playerPet id="{pet}" />
     options:
       withdrawGearSet:
         desc: Wyjmij zestaw wyposażenia z banku, jeśli jest on dostępny w dowolnej
@@ -1099,6 +1168,12 @@ singulars:
         desc: Zdeponuj wszystkie odblokowane przedmioty ze swojego ekwipunku w banku,
           jeśli któryś z nich jest dostępny w dowolnej z odwiedzanych przez ciebie
           lokacji.
+      summonPet:
+        text: Przyzwij pupila
+        desc: Przywołuje twojego pupila przed wykonaniem tej akcji.
+      cancelSummonPet:
+        text: Anuluj przywoływanie pupila
+        desc: Anuluje przywoływanie pupila na tę akcję.
     suggestions:
       crafting:
         onceCertainRarityIsCrafted: Gdy wytworzysz przedmiot o określonej rzadkości
@@ -1126,6 +1201,9 @@ singulars:
       fromProc: Z <c>{proc}</c>
       fromSource: Z <object id="{source}"/>
       fromAttribute: Z atrybutu {attribute}
+      switchedToPet: Przywołano <playerPet id="{pet}"/>
+      petDoesNotExist: Ten pupil nie istnieje, nie można go przywołać.
+      inputsUsed: Użyty wkład
   rumors:
     phrases:
       unlockedWalkpediaEntries: Odblokowane wpisy w Walkpedii
@@ -1145,3 +1223,109 @@ singulars:
     phrases:
       downloadingAssets: Pobieram zasoby...
       downloadedFileCount: Pobrano plików <c i=0>{current}</c> z <c i=1>{total}</c>
+  currencies:
+    phrases:
+      goldCoins: Złote monety
+      currencies: Waluty
+    info:
+      noCurrencies: Nie masz żadnych walut w tym momencie. Możesz zdobyć waluty z
+        <c>gildii</c>, <c>Tajemniczego Handlarza</c> oraz innych <c>specjalnych źródeł</c>.
+      thereAreNoPaidCurrencies: Waluty w grze <c>nigdy nie będą</c> dostępne do zakupu
+        <c>za pomocą realnych pieniędzy</c>.
+  pets:
+    phrases:
+      noPetSummoned: Żaden pupil nie jest aktualnie przywołany. <c>Przywołaj pupila</c>,
+        by podążał za tobą i dawał różne atrybuty oraz zdolności!
+      hasHatched: <c>{name}</c> wykluł się oraz posiada teraz poziom <petStage id="{stage}"/>!
+      claimedAt: Przypisany
+      hatchedAt: Wykluty
+      summonedPet: Przywołany pupil
+      noEggs: Nie posiadasz żadnych odebranych jaj pupili.
+      unlockedAt: Odblokowane na
+      unlocked: Odblokowane
+      maxLevel: Maksymalny poziom
+      pet: Pupil
+      dismissPet: Odwołaj pupila
+      level: Poz. <c>{level}</c>
+      summonPet: Przyzwij pupila
+      changePet: Zmień pupila
+      evolve: Rośnij
+      attributes: Atrybuty
+      requirementsToGainXPNotMet: <c>{name}</c> nie może zdobywać XP
+      requirementsToHatchNotMet: <c>{name}</c> nie może się wykluć
+      requirementsToHatchNeeded: 'Poniższe musi być spełnione, by <c>{name}</c> się
+        wykluł:'
+      requirementsToGainXPNeeded: 'Poniższe musi być spełnione, by <c>{name}</c> zdobywał
+        XP:'
+      currentLevelProgress: Progres aktualnego poziomu
+      maxLevelProgress: Progres maksymalnego poziomu
+      xpToMaxLevel: XP do maksymalnego poziomu
+      ownedFor: Posiadany przez
+      nextLevel: Następny poziom
+      xpToHatch: XP do wyklucia
+      canHatch: Można wykluć
+      canEvolve: Może rosnąć
+      egg: Jajko
+      noEggSelected: Brak wybranego jajka
+      retire: Emerytura
+      destroy: Zniszcz
+      totalXp: Całkowite XP
+      pets: Pupile
+      hatching: Wykluwa się
+      claimPet: Przypisz pupila
+      chooseEgg: Wybierz jajko
+      abilities: Zdolności
+      hatch: Wykluj
+      noPetSelected: Brak wybranego pupila
+      openPets: Otwórz pupile
+      openHatching: Otwórz wykluwane
+      currentXp: Aktualne XP
+      xpToNextLevel: XP na następny poziom
+      actionsToNextLevel: Akcji do następnego poziomu
+      actionsToHatch: Akcji do wyklucia
+      hatchingProgress: Progres wykluwania
+      isHatching: <c>{name}</c> wykluwa się!
+      isAdvancing: <c>{name}</c> rośnie!
+      hasEvolved: <c>{name}</c> podrósł i teraz jest <petStage id="{stage}"/>!
+      noPets: Nie posiadasz pupili. Możesz zdobyć je znajdując jaja pupili i wykluwając
+        je.
+      noEggsFound: Nie znaleziono jajek, które spełniają twoje wyszukiwanie.
+      noPetsFound: Nie znaleziono pupili, które spełniają twoje wyszukiwanie.
+      petEggs: Jajka pupili
+  mysteriousMerchant:
+    dialogue:
+      chooseChest: Mądry wybór! Z jakiej skrzyni pragniesz <c>wymienić przedmioty</c>?
+      chestChosen: Ah, więc chcesz wymienić przedmioty z <object id="{chest}"/>. Doskonały
+        wybór! Daj mi znać jeżeli chcesz wymienić jakieś przedmioty z twojego <c>banku</c>
+        lub <c>ekwipunku</c>. Albo jeżeli wolisz coś kupić za swoje <c>resztki skrzyń</c>!
+      greeting: Miło cię widzieć, <player />! Mam trochę <c>rzadkich przedmiotów</c>
+        oraz <c>usług</c>, które mogą cię interesować. Widziałem twoje podróże poprzez
+        Arenum i muszę powiedzieć, że masz nieco zacinki do eksploracji. Co powiesz
+        na to byśmy zrobili <c>małą wymianę</c>?
+      tradeChestItems: Mogę ci sprzedać nieco <c>przedmiotów ze skrzyń</c> w zamian
+        za trochę <c>resztek skrzyń</c>. Mogę ci sprzedać przedmioty, które pragniesz
+        właśnie z tych skrzyń. W ramach <c>odpowiedniego przelicznika</c>, oczywiście!
+    phrases:
+      tradeChestItems: Wymień przedmioty ze skrzyń
+      tradeChestChosen: Wymień przedmioty ze skrzyń
+      sellFromInventory: Sprzedaj z ekwipunku
+      sellingPrice: '{rarity} cena sprzedaży'
+      buyingPrice: '{rarity} cena kupna'
+      totalBuyingPrice: Całość za zakup <c>{amount}</c> x przedmiotów
+      sell: Sprzedaj
+      buy: Kup
+      buyItems: Kup przedmioty
+      sellItems: Sprzedaj przedmioty
+      trade: Wymiana
+      tradingChestItem: Wymiana przedmiotów ze skrzyń
+      sellFromBank: Sprzedaj z banku
+      buyWithChips: Kup z resztek
+      ownedCurrency: Posiadana waluta
+      totalSellingPrice: Całość za sprzedaż <c>{amount}</c> x przedmiotów
+  attributeListing:
+    phrases:
+      allAttributes: Wszystkie atrybuty
+      noAttributes: Brak aktywnych atrybutów.
+      noAttributesTip: Nie masz żadnych aktywnych atrybutów z wyposażenia, narzędzi
+        lub innych źródeł albo twoje filtry nie pokazują żadnych, które pasują.
+      overlevelingWithNumber: Poziom umiejętności <c>+{level}</c> ponad wymagania.

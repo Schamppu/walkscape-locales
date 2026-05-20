@@ -19,14 +19,14 @@ vrijgespeeld.', newItem: '<chip><stext><c>Voorwerp vrijgespeeld</c></stext></chi
 <item id="{item}"/> kan gedragen worden.', newDrop: '<chip><stext><c i="0">Nieuwe
 beloning</c></stext></chip> <c i="1">{itemName}</c> kan nu gevonden worden met <c>{activityName}</c>.'},
 idleSteps: {whileYouWereAway: Terwijl je weg was..., nothingHappened: Er is niks interessants
-gebeurd., stepsWhileAway: Stappen gezet terwijl het spel gesloten was, gainedExperience: '<skill
+gebeurd., stepsWhileAway: Stappen gezet terwijl het spel gesloten was., gainedExperience: '<skill
 skill="{skill}" /> heeft <c>+{exp}</c> XP gekregen.', skillLeveledUp: 'Niveau <skill
 skill="{skill}" /> omhoog gegaan van <c i="0">{from}</c> naar <c i="1">{to}</c>.',
-gainedItem: '<c>+{amount}</c> <item id="{item}" /> gekregen', gainedMoney: '<c i="0">+{amount}</c>
-<c i="1">munten</c> gekregen', characterGained: 'Personage heeft <c>+{amount}</c>
-XP gekregen />', characterLeveledUpFrom: 'Personage is van niveau <c i="0">{from}</c>
+gainedItem: '<c>+{amount}</c> <item id="{item}" /> gekregen.', gainedMoney: '<c i="0">+{amount}</c>
+<c i="1">munten</c> gekregen.', characterGained: 'Personage heeft <c>+{amount}</c>
+XP gekregen.', characterLeveledUpFrom: 'Personage is van niveau <c i="0">{from}</c>
 naar <c i="1">{to}</c> gegaan.', craftedItem: '<c>+{amount}</c> <item id="{item}"
-/> gemaakt', arrivedAt: 'Gearriveerd in <location /> <c>{location}</c>.'}}, messages: {
+/> gemaakt.', arrivedAt: 'Gearriveerd in <location /> <c>{location}</c>.'}}, messages: {
 workInProgress: {title: Nog niet af, text: Deze functie is nog in ontwikkeling en
 veel van zijn functionaliteiten <hl>zijn nog niet beschikbaar</hl>. Je kunt het al
 uitproberen en later terugkomen wanneer het volledig geïmplementeerd is!}, comingSoon: {
@@ -123,21 +123,21 @@ text: De spelclient heeft de servertijd niet kunnen ophalen. Controleer je inter
 en probeer het nogmaals.}, gameAssetsUpdated: {text: De spelgegevens zijn bijgewerkt
 met nieuwe gedownloade gegevens. Je moet het spel opnieuw opstarten om deze wijzigingen
 toe te passen., title: Spelgegevens bijgewerkt}, gameAssetUpdateFailed: {title: Spelgegevens
-bijwerken mislukt, text: 'Het bijwerken van de spelgegevens is mislukt. Probeer het
-spel opnieuw te openen om te kijken of de gegevens dan correct gedownload worden.
-Als dat niet werkt, probeer dan het spel opnieuw te installeren.'}}}, info: {game: {
-equipGearSetFailed: {text: Uitrustingsset dragen mislukt. De uitrustingsset die je
-probeerde te dragen is mogelijk ongeldig of corrupt., title: Uitrustingsset dragen
-mislukt}, withdrawTooFew: {text: Je hebt niet genoeg voorwerpen om op te nemen., title: Opnemen
-mislukt}, importGearSetFailed: {title: Uitrustingsset importeren mislukt, text: Fout
-opgetreden bij het importeren van uitrustingsset. Uitrustingssetgegevens zijn mogelijk
-corrupt of ongeldig.}, importGearSetTooManyTools: {title: Uitrustingsset heeft te
-veel gereedschappen, text: De uitrustingsset had meer gereedschappen dan toegestaan.},
-changingActivityFailed: {title: Activiteit veranderen mislukt, text: Activiteit veranderen
-mislukt. Je bent al bezig met deze activiteit of het is niet beschikbaar.}, equipGearSetSomeFailed: {
-title: Dragen van voorwerpen in uitrustingsset mislukt, text: 'Sommige voorwerpen
-in de uitrustingsset kunnen niet worden gedragen. Mogelijk is de uitrustingsset ongeldig,
-of je voldoet niet aan de eisen om sommige voorwerpen te dragen.'}, equipGearFailed: {
+bijwerken mislukt, text: 'De gameclient kon de game-assets niet bijwerken. Probeer
+het spel opnieuw te starten om te zien of de bestanden nu wel worden gedownload. Kijk
+op Discord of er mededelingen over dit probleem zijn als het opnieuw starten van het
+spel niet helpt.'}}}, info: {game: {equipGearSetFailed: {text: Uitrustingsset dragen
+mislukt. De uitrustingsset die je probeerde te dragen is mogelijk ongeldig of corrupt.,
+title: Uitrustingsset dragen mislukt}, withdrawTooFew: {text: Je hebt niet genoeg
+voorwerpen om op te nemen., title: Opnemen mislukt}, importGearSetFailed: {title: Uitrustingsset
+importeren mislukt, text: Fout opgetreden bij het importeren van uitrustingsset. Uitrustingssetgegevens
+zijn mogelijk corrupt of ongeldig.}, importGearSetTooManyTools: {title: Uitrustingsset
+heeft te veel gereedschappen, text: De uitrustingsset had meer gereedschappen dan
+toegestaan.}, changingActivityFailed: {title: Activiteit veranderen mislukt, text: Activiteit
+veranderen mislukt. Je bent al bezig met deze activiteit of het is niet beschikbaar.},
+equipGearSetSomeFailed: {title: Dragen van voorwerpen in uitrustingsset mislukt, text: 'Sommige
+voorwerpen in de uitrustingsset kunnen niet worden gedragen. Mogelijk is de uitrustingsset
+ongeldig, of je voldoet niet aan de eisen om sommige voorwerpen te dragen.'}, equipGearFailed: {
 title: Voorwerp dragen mislukt, text: Voorwerp kan niet worden gedragen. Probeer het
 nogmaals.}, withdrawZero: {title: Opnemen mislukt, text: Je kunt niet nul of minder
 voorwerpen opnemen.}, withdrawDidNotExist: {title: Opnemen mislukt, text: Het voorwerp
