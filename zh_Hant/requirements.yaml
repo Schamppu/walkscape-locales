@@ -1,1 +1,23 @@
-{}
+singulars:
+  mainSkillType:
+    text: 當進行<skillType type="{type}"/>技能。
+  traveling:
+    text: 當旅行時。
+  itemAnywhereWithYou:
+    text: 摧帶物品<item id="{item}"/>。
+  itemEquipped:
+    text: 裝備物品<item id="{item}"/>。
+  itemInInventory:
+    text: 攜帶物品<item id="{item}"/>於背包內。
+  itemAnywhere:
+    text: 擁有物品<item id="{item}"/>。
+  itemQualityEquipped:
+    text: 裝備至少<numberProgress current="{current}" max="{max}" /><itemQuality quality="{quality}"
+      type="{type}"/>。
+    withoutType: 裝備至少<numberProgress current="{current}" max="{max}" /><itemQuality
+      quality="{quality}" type="crafted"/>或<itemQuality quality="{quality}" type="loot"/><itemQuality
+      quality="{quality}" type="loot"/>。
+  mainSkill:
+    text: 當進行<skill skill="{skill}"/>。
+  keywordEquipped:
+    text: 裝備着<object id="{obj}" />。
