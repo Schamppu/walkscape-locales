@@ -3,3 +3,15 @@ singulars:
     workEfficiency:
       global:
         text: 通用<stat s="workEfficiency"/>
+      whileRealm:
+        text: 當位於<supp k="realm"/>時通用<stat s="workEfficiency"/>
+      whileTraveling:
+        text: 當旅行時<stat s="workEfficiency"/>
+      whileRealmAndTraveling:
+        text: 當於行於<supp k="realm"/>時<stat s="workEfficiency"/>
+      whileMainSkill:
+        text: 當<supp k="skill"/>時<stat s="workEfficiency"/>
+      whileMainSkillAndLocationKeyword:
+        text: 當<supp k="skill"/>於<supp k="keyword"/>地點時<stat s="workEfficiency"/>
+      whenKeywordSetBonus:
+        text: 如果穿戴至少<supp k="quantity"/><supp k="keyword"/>物品時，通用<stat s="workEfficiency"/>
