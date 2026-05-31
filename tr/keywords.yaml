@@ -681,6 +681,14 @@ singulars:
           name: Wrentmark
           requirement: <DEĞİŞKEN>
           requirementLevel: <DEĞİŞKEN>
+        desert:
+          name: Çöl
+          requirement: <DEĞİŞKEN>
+          requirementLevel: <DEĞİŞKEN>
+        snowy:
+          name: Karlı
+          requirement: <DEĞİŞKEN>
+          requirementLevel: <DEĞİŞKEN>
     skills:
       global:
         name: Genel
@@ -852,12 +860,18 @@ singulars:
       name: Hayaletli
       desc: Ruhlarla bağlantısı olan bir mekan. Bazı <object id="spectral" /> eşyaları
         kuvvetlendirir.
+    snowy:
+      name: Karlı
+      desc: Soğuk bir bölgede bulunan karla kaplı bir yer. <object id="skis" /> kullanmak
+        böyle yerlerde genellikle iyi iş görür!
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
   weight:
     ultraLight:
       name: Aşırı hafif
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
-      desc: Aşırı hafif sayıldığından azami yığın boyutu 9999'dur.
+      desc: Aşırı hafif sayıldığından azami yığın boyutu 10000'dir.
     heavy:
       name: Ağır
       requirement: <DEĞİŞKEN>
@@ -867,7 +881,12 @@ singulars:
       name: Hafif
       requirement: <DEĞİŞKEN>
       requirementLevel: <DEĞİŞKEN>
-      desc: Hafif sayıldığından azami yığın boyutu 999'dur.
+      desc: Hafif sayıldığından azami yığın boyutu 1000'dir.
+    medium:
+      name: Orta
+      desc: Orta ağırlıkta sayıldığından azami yığın boyutu 100'dür.
+      requirement: <DEĞİŞKEN>
+      requirementLevel: <DEĞİŞKEN>
   services:
     sawmill:
       name: Bıçkıhane
