@@ -681,17 +681,23 @@ singulars:
       name: Erittäin kevyt
       requirement: <PLACEHOLDER>
       desc: Lasketaan erittäin kevyeksi, jolloin sen pino voi kasvaa suurimmillaan
-        kokoon 9999.
+        kokoon 10000.
     light:
       name: Kevyt
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
-      desc: Lasketaan kevyeksi, jolloin sen pino voi kasvaa 999 esineen kokoon.
+      desc: Lasketaan kevyeksi, jolloin sen pino voi kasvaa 1000 esineen kokoon.
     heavy:
       name: Raskas
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       desc: Lasketaan painavaksi, jolloin sen pinon maksimikoko on vain 1.
+    medium:
+      name: Keskikokoinen
+      desc: Lasketaan keskikokoiseksi, jolloin sen pino voi kasvaa suurimmillaan kokoon
+        100.
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
   achievements:
     percentage:
       name: Saavutusprosentti
@@ -828,6 +834,14 @@ singulars:
           requirementLevel: <PLACEHOLDER>
         wrentmark:
           name: Wrentmark
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+        desert:
+          name: Aavikko
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+        snowy:
+          name: Luminen
           requirement: <PLACEHOLDER>
           requirementLevel: <PLACEHOLDER>
   itemSets:
@@ -989,6 +1003,12 @@ singulars:
       desc: Paikka, joka on yhteydessä henkiin. Jokin <object id="spectral" /> esine
         voi vahvistua tällä alueella.
       name: Aavemainen
+    snowy:
+      name: Luminen
+      desc: Alue, joka sijaitsee kylmemmässä ilmanalassa, missä on runsaasti lunta.
+        <object id="skis" /> vauhdittavat yleensä näillä alueilla toimimista!
+      requirementLevel: <PLACEHOLDER>
+      requirement: <PLACEHOLDER>
   faction:
     reward:
       name: Ryhmittymän palkinto
