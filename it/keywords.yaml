@@ -855,13 +855,21 @@ singulars:
           requirement: <PLACEHOLDER>
           requirementLevel: <PLACEHOLDER>
           name: GDTE
+        desert:
+          name: Deserto
+          requirementLevel: <PLACEHOLDER>
+          requirement: <PLACEHOLDER>
+        snowy:
+          name: Innevato
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
   weight:
     ultraLight:
       name: Molto leggero
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       desc: È considerato ultraleggero, il che significa che la sua dimensione massima
-        di stack è 9999.
+        di stack è 10000.
     heavy:
       name: Pesante
       requirement: <PLACEHOLDER>
@@ -873,7 +881,13 @@ singulars:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       desc: È considerato un oggetto leggero, il che significa che il numero massimo
-        di pezzi che si possono accumulare è 999.
+        di pezzi che si possono accumulare è 1000.
+    medium:
+      name: Medio
+      desc: È considerato di peso medio, il che significa che il numero massimo di
+        oggetti impilabili è 100.
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
   services:
     sawmill:
       name: Segheria
@@ -982,6 +996,12 @@ singulars:
       requirementLevel: <PLACEHOLDER>
       desc: Un luogo legato agli spiriti. Rende più potenti alcuni oggetti <object
         id="spectral" />.
+    snowy:
+      name: Innevato
+      desc: Un luogo caratterizzato da un clima più freddo e da abbondanti nevicate.
+        <object id="skis" /> è solitamente molto utile in queste zone!
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
   achievements:
     percentage:
       requirement: nessuno
