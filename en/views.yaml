@@ -776,6 +776,22 @@ singulars:
       switchedToPet: Summoned <playerPet id="{pet}"/>
       petDoesNotExist: The pet no longer exists, could not summon.
       inputsUsed: Inputs used
+  activityHistory:
+    phrases:
+      title: Activity history
+      previousResults: Previous activity results
+      currentActivity: Activity results
+      noHistory: No previous activity results yet.
+      tapForDetails: Tap to view details
+      startedAt: "Started {time}"
+      endedAt: "Ended {time}"
+      runningFor: "Running for {duration}"
+      lasted: "Lasted {duration}"
+    types:
+      activity: Activity
+      traveling: Traveling
+      crafting: Crafting
+      idle: Idle
   announcements:
     phrases:
       unread: Unread
@@ -1166,6 +1182,7 @@ maps:
         "veryAngry": Very angry
   cooldown:
     time:
+      "weeks": "{weeks}<c>w</c>"
       "days": "{days}<c>d</c>"
       "hours": "{hours}<c>h</c>"
       "minutes": "{minutes}<c>m</c>"
