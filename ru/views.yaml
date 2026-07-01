@@ -177,6 +177,8 @@ singulars:
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} коллекционных предметов</c>
         можно найти
       reputation: <bp />Репутация фракции <object id="{faction}" /> <c>+{amount}</c>
+      lore: <bp /><icon i="Lore item"/> <c>{count} сюжетных предметов</c>, которые
+        можно найти
     options:
       completeUntilActions: Выполнить определённое число действий
       numberOfActions: Количество действий
@@ -301,6 +303,10 @@ singulars:
         предметы</c> и <c>артефакты</c> собираются в течение вашего путешествия в
         WalkScape. Здесь вы можете их увидеть. Коллекционные предметы повышают ваши
         очки достижений.
+      loreItems: Сюжетные предметы — это книги, письма и другие письменные материалы,
+        которые вы можете найти. Они не занимают места в инвентаре, и вы можете прочитать
+        их в любое время.
+      noLoreItems: У вас нет сюжетных предметов.
     phrases:
       notUnlocked: Неполученное достижение
       rewardProgress: Количество полученных наград
@@ -310,6 +316,7 @@ singulars:
       unclaimedRewards: 'Не взятые награды: '
       collectiblesCount: Коллекционные предметы <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
+      loreItemsCount: Сюжетные предметы
   crafting:
     phrases:
       materials: Материалы
@@ -852,6 +859,7 @@ singulars:
       inputNotMet: Нет нужных ресурсов
       petNotFound: Выбранный питомец не найден, вы его избавились от него?
       summoningPet: Призываю питомца <playerPet id="{pet}" />
+      unknownError: Неизвестная ошибка.
     suggestedOptions:
       startTraveling: Перемещение
       startActivity: Активность
