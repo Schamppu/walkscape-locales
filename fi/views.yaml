@@ -89,9 +89,9 @@ maps:
       'alwaysStopWhenInventoryFull': Keskeytä aktiviteetti oletuksena repun ylitäyttyessä
       'leftHandedMode': Vasenkätinen tila
       'inventoryCollapsed': Tiivistä reppunäkymä
-      'spriteOutlines': Renderöi ääriviivat
-      'showFpsCounter': Näytä FPS mittari
-      'shaderOutlineRendering': Renderöi ääriviivat shadereilla
+      'spriteOutlines': Piirrä ääriviivat
+      'showFpsCounter': Näytä FPS-mittari
+      'shaderOutlineRendering': Piirrä ääriviivat varjostimin
       'warningBeforeClaimingExperience': Näytä varoitus ennen kokemuksen vastaanottamista
         palkintona
       'showDailyTips': Näytä päivän pikkuvinkit
@@ -424,6 +424,7 @@ singulars:
       depositAll: Kaikki
       hatchesInto: Kuoriutuessaan
       inputAttributes: Syötteiden ominaisuudet
+      mail: Posti
     options:
       showConsumables: Näytä hyödykkeet
       consenseInventory: Tiivistä reppunäkymä
@@ -1337,3 +1338,14 @@ singulars:
         tai muista lähteistä, tai valitsemasi suodattimet eivät osu sopiviin tuloksiin.
     options:
       showInactiveAttributes: Näytä ominaisuudet, jotka eivät ole aktiivisia
+  mailbox:
+    phrases:
+      mailbox: Postilaatikko
+      noMessages: Postilaatikossasi ei ole viestejä.
+      noSubject: (Viestillä ei ole otsikkoa)
+      noMessage: (Viestissä ei ole tekstiä)
+      alreadyClaimed: Vastaanotettu
+      notAtMailbox: Et ole postilaatikon luona
+    info:
+      notAtMailbox: Et tällä hetkellä ole paikassa, jossa olisi postilaatikko. Voit
+        vastaanottaa postia vain postilaatikon luona. Kaikissa pankeissa on postilaatikko.
