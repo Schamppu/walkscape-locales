@@ -151,6 +151,7 @@ maps:
       'minutes': '{minutes}<c>dk</c>'
       'seconds': '{seconds}<c>sn</c>'
       'days': '{days}<c>g</c>'
+      "weeks": '{weeks}<c>h</c>'
   locales:
     grammaticalGender:
       'feminine': Kadınsı
@@ -318,7 +319,7 @@ singulars:
       collectibleItems: WalkScape dünyasından toplayabileceğin koleksiyonlukların
         birkaç farklı çeşidi vardır. Bu eşyalar envanterinde yer kaplamazlar ve her
         daim karakterinin yanında bulunurlar.
-      noCollectibleItems: Henüz koleksiyonluk bulmuş değilsin.
+      noCollectibleItems: Koleksiyonluk eşyan bulunmuyor.
       specialItems: WalkScape'teki yolculuğun boyunca <c>koleksiyonluklar</c>, <c>görev
         eşyaları</c> ve <c>eserler</c> gibi özel eşyalar toplarsın. Onlara buradan
         bakabilirsin. Koleksiyonluklar, başarım puanı ilerlemesi de sağlar.
@@ -362,6 +363,7 @@ singulars:
       level: 'Karakter seviyesi: <c>{level}</c>'
       stepsToNextLevel: 'Seviye atlamaya kalan adım: <c>{steps}</c>'
       savePicture: Resmi kaydet
+      savePictureDialogTitle: Karakter Resmini Kaydet
   characterCreation:
     info:
       rememberSwipe: Karakter oluşturma sırasında önceki seçimlerini değiştirmek için
@@ -1124,6 +1126,7 @@ singulars:
       inputNotMet: Gereç gereksinimleri karşılanmıyor
       petNotFound: Seçilmiş evcil hayvan bulunamadı, vedalaşmış olabilir misiniz?
       summoningPet: Evcil hayvanın <playerPet id="{pet}" /> çağrılıyor
+      unknownError: Bilinmeyen hata.
     suggestedOptions:
       startCrafting: Üretim
       startTraveling: Seyahat
@@ -1196,6 +1199,7 @@ singulars:
       petDoesNotExist: Bu evcil hayvan artık mevcut değil, çağrılamıyor.
       inputsUsed: Kullanılan gereçler
       switchedToImportedGearSet: İçe aktarılan teçhizat setine geçildi
+      stepsWhileYouWereAway: Sen uzaktayken atılan adım
   announcements:
     info:
       noMoreAnnouncements: Duyuruların sonuna ulaştın! Gösterecek başka duyuru kalmadı.
@@ -1319,6 +1323,11 @@ singulars:
       buy: Al
       buyItems: Eşya satın al
       sellItems: Eşya sat
+      noChestSelected: Seçilmiş sandık bulunmuyor.
+      purchaseForTokens: Jetonla satın al
+    info:
+      favoritedItem: Bu eşyayı <icon i="Favorited"/><c>favorilere eklemişsin</c>.\nSatmak
+        istediğine emin misin?
   attributeListing:
     phrases:
       allAttributes: Bütün nitelikler
@@ -1342,3 +1351,37 @@ singulars:
       notAtMailbox: Şu anda posta kutusu bulunan bir konumda değilsin. Postalarını
         yalnızca posta kutusu bulunan konumlarda teslim alabilirsin. Bütün bankalarda
         posta kutusu bulunur.
+    messages:
+      birthday1:
+        subject: 1. doğum günün kutlu olsun!
+        text: İlk yıl dönümün kutlu olsun! İşte seni hatırlatacak ufak bir şey!
+      birthday2:
+        subject: 2. doğum günün kutlu olsun!
+        text: İkinci yılında da doğum günün kutlu olsun! İşte seni hatırlatacak ufak
+          bir şey!
+  activityHistory:
+    phrases:
+      startedAt: 'Başlama zamanı: {time}'
+      title: Faaliyet geçmişi
+      previousResults: Önceki faaliyet sonuçları
+      currentActivity: Faaliyet sonuçları
+      noHistory: Henüz eski bir faaliyet sonucu yok.
+      tapForDetails: Detaylar için dokun
+      endedAt: 'Bitiş zamanı: {time}'
+      runningFor: '{duration} sürecek'
+      lasted: '{duration} sürdü'
+      new: Yeni
+      markAsRead: Okundu işaretle
+    types:
+      activity: Faaliyet
+      traveling: Seyahat
+      crafting: Üretim
+      idle: Boşta
+  party:
+    phrases:
+      members: Ekip üyeleri
+      askToJoin: Katılmak iste
+      cancelJoinRequest: Katılma talebini iptal et
+      playersWantToJoin: Ekibine katılmak isteyen oyuncular
+      pullDownToRefresh: Yenilemek için aşağı çek
+      timeRemaining: 'Kalan süre: {time}'
