@@ -98,6 +98,13 @@ singulars:
       desc: Może być użyty w recepturach <object id="tailoring" />, by wytworzyć <object
         id="fabric" />. Może być najczęściej znaleziony poprzez <object id="foraging"
         />.
+    crustacean:
+      name: Skorupiak
+      desc: Skorupiak, który może być użyte w wielu recepturach <object id="cooking"
+        />.
+      requirement: Wymaga <object id="crustacean" />.
+      requirementLevel: Wymaga skorupiaka, który ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
   tools:
     fishing:
       name: Wędkarstwo
@@ -394,6 +401,29 @@ singulars:
       name: Szczypce
       desc: Szczypce wykorzystywane są w precyzyjnych chwytach i wyginaniu. Przydatne
         w <object id="trinketry" />.
+      requirement: Wymaga założonych <object id="pliers" />.
+      requirementLevel: Wymaga szczypiec, które mają przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    fishingRodRest:
+      desc: Stojak na wędkę sprawia, że łowienie jest bardziej relaksującym doświadczeniem.
+        Przydatne w <object id="fishing" />.
+      requirment: Wymaga założenia <object id="fishingRodRest" />.
+      name: Stojak na wędkę
+      requirementLevel: Wymaga stojaka na wędkę, który ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    huntingNet:
+      name: Siatka łowiecka
+      desc: Siatka używana do <object id="hunting" />.
+      requirement: Wymaga założonej <object id="huntingNet" />.
+      requirementLevel: Wymaga siatki łowieckiej, która ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    toolbox:
+      name: Skrzynka Narzędziowa
+      desc: Skrzynki narzędziowe przydają się, by mieć wiele narzędzi pod ręką. Przydatne
+        w umiejętnościach <skillType type="artisan" />.
+      requirement: Wymaga założonej <object id="toolbox" />
+      requirementLevel: Wymaga skrzynki narzędziowej, która ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
   recipes:
     skills:
       cooking:
@@ -813,6 +843,7 @@ singulars:
         />.
       requirementLevel: Wymaga wyposażenia poszukiwacza skarbów, które ma co najmniej
         <keywordRequirements /> w wymaganiach.
+      desc: Liczy się do zestawu łowcy skarbów.
     adventuringTools:
       name: Zestaw Narzędzi dla Poszukiwaczy Przygód
       requirement: Wymaga wyposażenia z zestawu <object id="itemset_adventuring_tools"
