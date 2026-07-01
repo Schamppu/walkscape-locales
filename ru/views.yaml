@@ -255,6 +255,7 @@ singulars:
       savePicture: Сохранить изображение
       level: 'Уровень персонажа: <c>{level}</c>'
       stepsToNextLevel: Шагов до следующего уровня <c>{steps}</c>
+      savePictureDialogTitle: Сохранить аватар
     info:
       skillBreakdown: Тут представлен обзор всех навыков, которые ваш персонаж прокачал
         в течение вашего путешествия. Нажмите на любой из навыков, чтобы увидеть более
@@ -1023,6 +1024,11 @@ singulars:
       buy: Купить
       buyItems: Купить предметы
       sellItems: Продать предметы
+      noChestSelected: Сундук не выбран.
+      purchaseForTokens: Купить за жетоны
+    info:
+      favoritedItem: Вы добавили этот предмет в <icon i="Favorited"/> <c>избранное</c>.\nВы
+        уверены, что хотите продать его?
   attributeListing:
     phrases:
       allAttributes: Все характеристики
@@ -1044,6 +1050,13 @@ singulars:
     info:
       notAtMailbox: Сейчас вы не находитесь в локации с почтовым ящиком. Забрать почту
         можно только в локации, где он есть. Почтовые ящики есть во всех банках.
+    messages:
+      birthday1:
+        text: С днём рождения в вашу первую годовщину! Вот небольшой подарок на память!
+        subject: С первым днём рождения!
+      birthday2:
+        subject: Со вторым днём рождения!
+        text: С днём рождения в вашу вторую годовщину! Вот небольшой подарок на память!
   party:
     phrases:
       members: Участники группы
@@ -1227,6 +1240,7 @@ maps:
         "currency": Валюты
         "artifact": Артефакты
         "quest": Квестовые предметы
+        "lore": Сюжетные предметы
   character:
     stepsTime:
       'hourly': Шагов за час
@@ -1367,6 +1381,7 @@ maps:
       'minutes': '{minutes}<c>м</c>'
       'hours': '{hours}<c>ч</c>'
       'seconds': '{seconds}<c>с</c>'
+      "weeks": '{weeks}<c>нед.</c>'
   announcements:
     categories:
       'update': Обновление
