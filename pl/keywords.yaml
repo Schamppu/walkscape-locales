@@ -315,6 +315,7 @@ singulars:
       name: Pułapka Myśliwska
       requirementLevel: Wymaga pułapki myśliwskiej która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Pułapka używana do <object id="hunting" />.
     fishingTool:
       name: Narzędzie Wędkarskie
       requirement: Wymaga wyposażenia <object id="fishingTool" />.
@@ -350,10 +351,38 @@ singulars:
       requirement: Wymaga wyposażenia <object id="huntingBow" />.
       requirementLevel: Wymaga łuku myśliwskiego który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Łuk używany do <object id="hunting" /> (oraz innych rzeczy, które mogą
+        cię irytować).
     sander:
       requirement: Wymagana założonej <object id="sander" />.
       name: Szlifierka
       requirementLevel: Wymaga szlifierki, która posiada przynajmniej /<keywordRequirements
+        /> w swoich wymaganiach.
+      desc: Narzędzie użyteczne w polerowaniu powierzchni. Przydatne w <object id="trinketry"
+        />.
+    birdhouse:
+      name: Dom dla Ptaków
+      desc: Domki dla Ptakó mogą znaleźć swoją drogę do gry nieco później.
+      requirement: Wymaga <object id="birdhouse" />.
+      requirementLevel: Wymaga Domku dla Ptaków, który ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    needle:
+      name: Igła
+      desc: Narzędzie używane do szycia. Przydatne w <object id="tailoring" />.
+      requirement: Wymaga wyekwipowanej <object id="needle" />.
+      requirementLevel: Wymaga igły, która ma przynajmniej <keywordRequirements />
+        w swoich wymaganiach.
+    pins:
+      name: Guziki
+      desc: Guziki są używane w <object id="tailoring" />.
+      requirement: Wymaga wyposażonych <object id="pins" />.
+      requirementLevel: Wymaga guzików, które mają przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    scissors:
+      name: Nożyczki
+      desc: Nożyczki są używane do cięcia. Przydają się w <object id="tailoring" />.
+      requirement: Wymaga wyposażenia <object id="scissors" />.
+      requirementLevel: Wymaga nożyczek, które mają przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
   recipes:
     skills:
@@ -746,14 +775,20 @@ singulars:
       name: Kuźnia
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Usługa pozwalająca przetworzyć <object id="ore" /> w <object id="bar"
+        />, przydatna w innych kreacjach z <skill skill="smithing"/>.
     kitchen:
       name: Kuchnia
       requirementLevel: <PLACEHOLDER>
       requirement: <PLACEHOLDER>
+      desc: Usługa pozwalająca przetwarzać <object id="ingredient" /> w <object id="food"
+        /> lub <object id="beverage" />, również związana z <skill skill="cooking"/>.
     bench:
       name: Pracownia Jubilerska
       requirementLevel: <PLACEHOLDER>
       requirement: <PLACEHOLDER>
+      desc: Usługa pozwalająca oszlifować <object id="gem" /> i stworzyć <object id="item_ring"
+        /> lub <object id="item_amulet" />, związana z pracą w <skill skill="trinketry"/>.
     loom:
       name: Krosno
       requirement: <PLACEHOLDER>
@@ -800,14 +835,27 @@ singulars:
       name: Podwodny
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Miejsce, które znajduje się pod wodą. Będzie wymagać <object id="itemset_diving_gear"
+        />!
     regional:
       name: Regionalny
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: To jest bezpośrednio powiązane z konkretnym regionem lub frakcją.
     desert:
       name: Pustynia
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Miejsce to znajduje się w bardzo suchym i piaszczystym otoczeniu. Będzie
+        wymagać zdolności <object id="navigateDesert" />!
+    ghostly:
+      name: Duchowy
+      desc: Miejsce, które ma połączenie z duchami. Sprawi, że niektóre przedmioty
+        <object id="spectral" /> będą silniejsze.
+    snowy:
+      name: Śnieżny
+      desc: Miejsce, które znajduje się w zimnym otoczeniu, z masą śniegu. <object
+        id="skis" /> sprawią się dobrze w tym regionie!
   faction:
     reward:
       name: Nagroda Frakcji
