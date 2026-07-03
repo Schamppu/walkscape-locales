@@ -330,19 +330,24 @@ singulars:
       viewDescription: Avaa saavutuksia ansaitaksesi <hl>saavutuspisteitä</hl>. Kun
         saavutuspistepalkki täyttyy, voit lunastaa näkymästä palkintoja. Jotkut saavutukset
         antavat myös palkintoja niiden avaamisesta.
-      collectibleItems: Keräilyesineet ovat asioita, joita voit löytää WalkScapen
-        maailmasta eri tavoilla ja tilanteissa. Keräilyesineitä on useita erilaisia.
-        Ne eivät vie repputilaa ja ovat aina hahmosi mukana.
-      noCollectibleItems: Sinulla ei ole vielä keräilyesineitä.
+      collectibleItems: Keräilyesineet ovat harvinaisia esineitä, joita voit löytää
+        pelissä, erityisesti aktiviteeteista. <c i=0>Jokaisesta keräilyesineestä saat</c>
+        <c i=1>yhden</c> <icon i="Achievement Point"/> <c i=1>saavutuspisteen</c>.
+        Keräilyesineet eivät vie repputilaa ja ovat aina hahmosi mukana.
+      noCollectibleItems: Sinulla ei ole keräilyesineitä.
       checkPointUnlocks: Nämä saavutukset ovat lunastettavissa tietyissä saavutuspisteiden
         määrän etapeissa. Et menetä näitä saavutuksia, vaikka saavutuspisteitä tulisi
         lisää.
       totalProgressUnlocks: Saat nämä palkinnot sen mukaan, kuinka paljon saavutuksia
         olet saavuttanut, ja menetät pääsyn esineisiin, jos saavutuspisteitä tulee
         lisää ja jäät vaaditun määrän alle.
-      specialItems: Voit löytää erikoisesineitä, kuten <c>keräilyesineitä</c>, <c>tehtäväesineitä</c>
-        ja <c>artefakteja</c>, tehdessäsi matkaa WalkScapessa. Voit ihailla löytöjäsi
-        täällä. Keräilyesineet tuottavat sinulle lisäksi saavutuspisteitä.
+      specialItems: Erikoisesineet, kuten <icon i="Collectible"/> <c>keräilyesineet</c>
+        ja <icon i="Lore Item"/> <c>tarinaesineet</c> kertyvät tehdessäsi matkaa WalkScapessa.
+        Voit ihailla löytöjäsi täällä. Keräilyesineet tuottavat sinulle lisäksi saavutuspisteitä.
+      loreItems: Tarinaesineisiin kuuluu esimerkiksi kirjoja, kirjeitä ja muuta kirjallista
+        aineistoa, jonka voit löytää. Ne eivät vie tilaa repussasi, ja voit lukea
+        niitä milloin vain.
+      noLoreItems: Sinulla ei ole tarinaesineitä.
     phrases:
       notUnlocked: Lukittu saavutus
       rewardProgress: Saavutuspisteiden palkintopalkin tola
@@ -352,6 +357,8 @@ singulars:
       unclaimedRewards: 'Lunastamattomat palkinnot: '
       collectiblesCount: Keräilyesineet <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
+      collectibles: Keräilyesineet
+      loreItemsCount: Tarinaesineet
   crafting:
     phrases:
       materials: Materiaalit
@@ -597,6 +604,7 @@ singulars:
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} keräilyesinettä</c>,
         jotka on mahdollista löytää
       reputation: <bp /><object id="{faction}" /> mainetta <c>+{amount}</c>
+      lore: <bp /><icon i="Lore item"/> <c>{count} tarinaesinettä</c> löydettävissä
     options:
       completeUntilActions: Toista tietty määrä kertoja
       numberOfActions: Toimintojen määrä
@@ -610,6 +618,7 @@ singulars:
       savePicture: Tallenna kuva
       stepsToNextLevel: 'Askelia seuraavalle tasolle: <c>{steps}</c>'
       level: 'Hahmon taso: <c>{level}</c>'
+      savePictureDialogTitle: Tallenna hahmon kuva
     info:
       skillBreakdown: Tässä on hahmosi matkan aikana saavutettujen taitojen kokonaisjakauma.
         Voit napauttaa mitä tahansa taidoista nähdäksesi niistä lisätietoja ja mitä
@@ -1151,6 +1160,7 @@ singulars:
       petDoesNotExist: Tätä lemmikkiä ei ole enää olemassa, kutsu epäonnistui.
       inputsUsed: Käytetyt syötteet
       switchedToImportedGearSet: Vaihdettiin tuotuun varustesettiin
+      stepsWhileYouWereAway: Poissaollessasi kertyneet askeleet
   queue:
     phrases:
       queuedActions: Jonossa odottavat toiminnot
@@ -1165,6 +1175,7 @@ singulars:
       inputNotMet: Syötevaatimukset eivät täyty
       petNotFound: Valittua lemmikkiä ei löytynyt, oletko eläköinyt sen?
       summoningPet: Kutsutaan lemmikki <playerPet id="{pet}" />
+      unknownError: Tuntematon virhe.
     options:
       depositUnlockedItems:
         desc: Tallettaa kaikki lukitsemattomat esineet repustasi pankkiin, jos sellainen
@@ -1349,3 +1360,28 @@ singulars:
     info:
       notAtMailbox: Et tällä hetkellä ole paikassa, jossa olisi postilaatikko. Voit
         vastaanottaa postia vain postilaatikon luona. Kaikissa pankeissa on postilaatikko.
+  party:
+    phrases:
+      askToJoin: Pyydä liittymään
+      cancelJoinRequest: Peruuta liittymispyyntö
+      playersWantToJoin: Pelaajat odottavat seurueeseesi liittymistä
+      pullDownToRefresh: Vedä alaspäin päivittääksesi näkymän
+      timeRemaining: 'Aikaa jäljellä: {time}'
+      members: Seurueen jäsenet
+  activityHistory:
+    phrases:
+      title: Toimintohistoria
+      previousResults: Aiempien aktiviteettien tulokset
+      currentActivity: Aktiviteetin tulokset
+      noHistory: Aiempien aktiviteettien tuloksia ei vielä ole.
+      tapForDetails: Napauta nähdäksesi lisää
+      startedAt: 'Aloitusaika: {time}'
+      endedAt: 'Loppumisaika: {time}'
+      runningFor: 'Kesto: {duration}'
+      lasted: 'Kesti: {duration}'
+      new: Uusi
+      markAsRead: Merkitse luetuksi
+      currentActivityInfo: 'Näytä <c>tämänhetkisen aktiviteettisi</c> tulokset sen
+        edistyessä: askeleet, joita olet ottanut, kerätty kokemus, ja tähän mennessä
+        löytyneet esineet. Se valmistuu ja siirtyy aiempien tulosten listaan, kun
+        aktiviteetti päättyy.'
