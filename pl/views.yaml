@@ -345,6 +345,10 @@ singulars:
       checkPointUnlocks: Te osiągnięcia są dostępne na określonych progach punktów
         osiągnięć. Nie stracisz do nich dostępu, nawet jeśli pojawi się więcej punktów
         osiągnięć.
+      loreItems: Przedmioty fabularne to przedmioty, na przykład książki, listy oraz
+        inne zapisane materiały, które możesz znaleźć. Nie zabierają miejsca w ekwipunku
+        i możesz je przeczytać kiedy chcesz.
+      noLoreItems: Nie posiadasz przedmiotów fabularnych.
     phrases:
       notUnlocked: Zablokowane osiągnięcie
       rewardProgress: Postęp nagrody
@@ -354,6 +358,8 @@ singulars:
       unclaimedRewards: 'Nieodebrane nagrody: '
       collectiblesCount: Znajdźki <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
+      collectibles: Znajdźki
+      loreItemsCount: Przedmioty Fabularne
   crafting:
     phrases:
       materials: Materiały
@@ -516,6 +522,7 @@ singulars:
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} znajdźki</c>, które
         można znaleźć
       reputation: <bp /><object id="{faction}" /> reputacja <c>+{amount}</c>
+      lore: Można odnaleźć <bp /><icon i="Lore item"/> <c>{count} Przedmiotów Fabularnych</c>
     options:
       completeUntilActions: Wykonano liczbę akcji
       numberOfActions: Liczba akcji
@@ -535,6 +542,7 @@ singulars:
       savePicture: Zapisz zdjęcie
       level: 'Poziom postaci: <c>{level}</c>'
       stepsToNextLevel: 'Kroki do następnego poziomu: <c>{steps}</c>'
+      savePictureDialogTitle: Zapisz Zdjecie Postaci
   permissions:
     phrases:
       pedometerPermission: Uprawnienia do liczenia kroków
@@ -1125,8 +1133,8 @@ singulars:
       noStatSelected: Nie wybrano statystyk
   popupBubbles:
     phrases:
-      overEncumbered: Twój ekwipunek jest pełny i jesteś przeciążony.
-      arrivedToLocation: Dotarłeś do <object id={location} />
+      overEncumbered: Twój ekwipunek jest pełny i powoduje przeciążenie.
+      arrivedToLocation: Docierasz do <object id={location} />
   locales:
     phrases:
       language: Język
@@ -1164,6 +1172,7 @@ singulars:
       inputNotMet: Wymagania wkładów nie spełnione
       petNotFound: Nie znaleziono wybranego pupila, został wysłany na emeryturę?
       summoningPet: Przyzywanie pupila <playerPet id="{pet}" />
+      unknownError: Nieznany błąd.
     options:
       withdrawGearSet:
         desc: Wyjmij zestaw wyposażenia z banku, jeśli jest on dostępny w dowolnej
@@ -1221,6 +1230,7 @@ singulars:
       petDoesNotExist: Ten pupil nie istnieje, nie można go przywołać.
       inputsUsed: Użyty wkład
       switchedToImportedGearSet: Przełączono na zaimportowany zestaw wyposażenia
+      stepsWhileYouWereAway: Kroków, kiedy cię nie było
   rumors:
     phrases:
       unlockedWalkpediaEntries: Odblokowane wpisy w Walkpedii
@@ -1235,7 +1245,7 @@ singulars:
       announcementInfo: Tutaj znajdziesz <c>ogłoszenia</c> opisane przez twórców gry.
         Blogi programistów, rejestry zmian i ogłoszenia systemowe to świetny sposób
         na bycie na bieżąco z postępami w rozwoju i przestojami serwera!
-      noMoreAnnouncements: Dotarłeś do końca ogłoszeń! Nie ma więcej ogłoszeń do wyświetlenia.
+      noMoreAnnouncements: Dotarto do końca ogłoszeń! Nie ma więcej ogłoszeń do wyświetlenia.
   download:
     phrases:
       downloadingAssets: Pobieram zasoby...
@@ -1352,3 +1362,35 @@ singulars:
       overlevelingFromAgility: Z <object id="agility" /> poziom <c>{level}</c>.
     options:
       showInactiveAttributes: Pokaż nieaktywne atrybuty
+  party:
+    phrases:
+      askToJoin: Zapytaj o dołączenie
+      cancelJoinRequest: Anuluj prośbę dołączenia
+      playersWantToJoin: Gracze chcą dołączyć do twojej drużyny
+      pullDownToRefresh: Przytrzymaj w dół, by odświeżyć
+      timeRemaining: 'Wymagany czas: {time}'
+      members: Członkowie drużyny
+  activityHistory:
+    phrases:
+      title: Historia aktywności
+      previousResults: Wyniki poprzedniej aktywności
+      currentActivity: Wyniki aktywności
+      noHistory: Brak wyników poprzedniej aktywności.
+      tapForDetails: Dotknij, by wyświetlić detale
+      startedAt: Rozpoczęto {time}
+      endedAt: Zakończono {time}
+      runningFor: Działa przez {duration}
+      new: Nowe
+      markAsRead: Oznacz jako przeczytane
+      previousResultsInfo: Historia twoich <c>ostatnio ukończonych aktywności</c>.
+        Dotknij na wynik, by zobaczyć pełną rozpiskę, co udało ci się osiągnąć. Wyniki
+        oznaczone jako <c>Nowe</c> nie były otwierane.
+      lasted: Działało przez {duration}
+      currentActivityInfo: 'Pokazuje wynik twojej <c>aktualnej aktywności</c> w trakcie
+        wykonywania: wykonane kroki, zdobyte XP oraz przedmioty do tej pory. Gdy zakończy
+        się przejdzie do poprzednich wyników, gdy ukończysz aktywność.'
+    types:
+      activity: Aktywność
+      traveling: Podróżowanie
+      crafting: Rzemiosło
+      idle: Bezczynność

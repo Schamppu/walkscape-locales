@@ -179,6 +179,7 @@ singulars:
         /> w swoich wymaganiach.
       name: Przyprawy
       requirement: Wymaga wyposażenia <object id="cookingSpices" />.
+      desc: Dawniej były bardzo drogie. Dziś używa się je w gotowaniu.
     fishingCage:
       name: Klatka do Łowienia
       requirement: Wymaga wyposażenia <object id="fishingCage" />.
@@ -191,16 +192,20 @@ singulars:
       requirement: Wymaga wyposażenia <object id="pickaxe" />.
       requirementLevel: Wymaga Kilofa, który ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Kilofy są wymagane do górnictwa. Muszą być założone, by móc wydobywać
+        złoża i klejnoty.
     cookingTool:
       name: Narzędzie do Gotowania
       requirement: Wymaga wyposażenia <object id="cookingTool" />.
       requirementLevel: Wymaga Narzędzia do Gotowania, które ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzia do gotowania zawierają patelnie, noże oraz deski do krojenia.
     carpentryTool:
       name: Narzędzie Stolarstwa
       requirement: Wymaga wyposażenia <object id="carpentryTool" />.
       requirementLevel: Wymaga narzędzia stolarskiego, które ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzia stolarskie zawierają piły i dłuta.
     magnifyingLense:
       name: Szkło powiększające
       requirement: Wymaga wyposażenia <object id="magnifyingLense" />.
@@ -212,11 +217,14 @@ singulars:
         /> w swoich wymaganiach.
       requirement: Wymaga wyposażenia <object id="ruler" />.
       name: linijka
+      desc: Narzędzie miernicze używane do precyzyjnych pomiarów. Przydatne w <object
+        id="carpentry" />.
     fishingLure:
       name: Przynęta Wędkarska
       requirement: Wymaga wyposażenia <object id="fishingLure" />.
       requirementLevel: Wymaga przynęty wędkarskiej, która ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Możesz użyć przynęty na ryby, by złapać je łatwiej.
     cookingKnife:
       name: Nóż Kuchenny
       requirement: Wymaga wyposażenia <object id="cookingKnife" />.
@@ -228,101 +236,164 @@ singulars:
       requirement: Wymaga wyposażenia <object id="craftingTool" />.
       requirementLevel: Wymaga narzędzia rzemieślniczego, która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzia rzemieślnicze zawierają klucze i śrubokręty.
     chisel:
       name: Dłuto
       requirement: Wymaga wyposażenia <object id="chisel" />.
       requirementLevel: Wymaga dłuta które, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Dłuta używane są w <object id="carpentry" /> oraz <object id="trinketry"
+        /> i dają bonusy w tych umiejętnościach.
     saw:
       name: Piła
       requirement: Wymaga wyposażenia <object id="saw" />.
       requirementLevel: Wymaga piły która, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Piły używane są głownie w <object id="carpentry" /> i dają bonusy w tej
+        umiejętności.
     screwdriver:
       name: Śrubokręt
       requirement: Wymaga wyposażenia <object id="screwdriver" />.
       requirementLevel: Wymaga śrubokręta który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Śrubokręty są używane w <object id="crafting" /> i dają bonusy w tej umiejętności.
     smithingHammer:
       name: Młot kowalski
       requirement: Wymaga wyposażenia <object id="smithingHammer" />.
       requirementLevel: Wymaga młota kowalskiego który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Ciężki młot używany do kształtowania stali w formy. Przydatny w <object
+        id="smithing" />.
     foragingTool:
       name: Narzędzie do zbierania
       requirement: Wymaga wyposażenia <object id="foragingTool" />.
       requirementLevel: Wymaga narzędzia do zbierania które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzie używane w aktywnościach zbieractwa.
     localMap:
       name: Lokalna mapa
       requirement: Wymaga wyposażenia <object id="localMap" />.
       requirementLevel: Wymaga lokalnej mapy która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Dostarcza informacji o konkretnym obszarze świata, dając bonusy w tej
+        części.
     knife:
       name: Nóż
       requirement: Wymaga wyposażenia <object id="knife" />.
       requirementLevel: Wymaga noża który, ma co najmniej<keywordRequirements /> w
         swoich wymaganiach.
+      desc: Ostry, więc uważaj na swoje palce! Przydatny do przecinania rzeczy, dzięki
+        temu ma wiele zastosowań.
     wrench:
       name: Klucz
       requirement: Wymaga wyposażenia <object id="wrench" />.
       requirementLevel: Wymaga klucza który ma przynajmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Narzędzie przydatne przy skręcaniu lub odkręcaniu śrub i nakrętek. Przydaje
+        się w <object id="crafting" />.
     logSplitter:
       name: Drzewna Łuparka
       requirement: Wymaga wyposażenia <object id="item_log_splitter" />.
       requirementlevel: Wymaga łuparki do drewna, która ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzie, które może być użyte w <object id="woodcutting" />, jako dodatek
+        do toporów.
     trinketryTool:
       requirement: Wymaga wyposażenia <object id="trinketryTool" />.
       name: Narzędzie Jubilerstwa
       requirementLevel: Wymaga narzędzia jubilerstwa które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzie używane w aktywnościach jubilerstwa.
     agilityTool:
       requirement: Wymaga wyposażenia <object id="agilityTool" />.
       name: Narzędzie Zwinności
       requirementLevel: Wymaga narzędzia zwinności, które ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzie używane w aktywnościach zręczności.
     huntingTrap:
       requirement: Wymaga wyposażenia <object id="huntingTrap" />.
       name: Pułapka Myśliwska
       requirementLevel: Wymaga pułapki myśliwskiej która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Pułapka używana do <object id="hunting" />.
     fishingTool:
       name: Narzędzie Wędkarskie
       requirement: Wymaga wyposażenia <object id="fishingTool" />.
       requirementLevel: Wymaga narzędzia związanego z wędkarstwem które, ma co najmniej
         <keywordRequirements /> w swoich wymaganiach.
+      desc: Narzędzia rybackie mogą wliczać się do wędek, oszczepów, siatek i skrzynek.
     skillBook:
       name: Księga Umiejętności
       requirement: Wymaga wyposażenia <object id="skillBook" />.
       requirementlevel: Wymaga narzędzia zwinności które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Dostarcza zarówno bonus, jak i karę do odpowiedniej umiejętności.
     miningTool:
       name: Narzędzie Górnicze
       requirement: Wymaga wyposażenia <object id="miningTool" />.
       requirementLevel: Wymaga narzędzia górnictwa które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzie używane w aktywnościach górnictwa.
     smithingTool:
       name: Narzędzie Kowalstwa
       requirement: Wymaga wyposażenia <object id="smithingTool" />.
       requirementLevel: Wymaga narzędzia kowalstwa które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzie używane w aktywnościach kowalstwa.
     woodcuttingTool:
       name: Narzędzie drwalnictwa
       requirement: Wymaga wyposażenia <object id="woodcuttingTool" />.
       requirementLevel: Wymaga narzędzia drwalnictwa które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzie używane w aktywnościach drwalnictwa.
     huntingBow:
       name: Łuk Myśliwski
       requirement: Wymaga wyposażenia <object id="huntingBow" />.
       requirementLevel: Wymaga łuku myśliwskiego który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Łuk używany do <object id="hunting" /> (oraz innych rzeczy, które mogą
+        cię irytować).
     sander:
       requirement: Wymagana założonej <object id="sander" />.
       name: Szlifierka
       requirementLevel: Wymaga szlifierki, która posiada przynajmniej /<keywordRequirements
         /> w swoich wymaganiach.
+      desc: Narzędzie użyteczne w polerowaniu powierzchni. Przydatne w <object id="trinketry"
+        />.
+    birdhouse:
+      name: Dom dla Ptaków
+      desc: Domki dla Ptakó mogą znaleźć swoją drogę do gry nieco później.
+      requirement: Wymaga <object id="birdhouse" />.
+      requirementLevel: Wymaga Domku dla Ptaków, który ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    needle:
+      name: Igła
+      desc: Narzędzie używane do szycia. Przydatne w <object id="tailoring" />.
+      requirement: Wymaga wyekwipowanej <object id="needle" />.
+      requirementLevel: Wymaga igły, która ma przynajmniej <keywordRequirements />
+        w swoich wymaganiach.
+    pins:
+      name: Guziki
+      desc: Guziki są używane w <object id="tailoring" />.
+      requirement: Wymaga wyposażonych <object id="pins" />.
+      requirementLevel: Wymaga guzików, które mają przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    scissors:
+      name: Nożyczki
+      desc: Nożyczki są używane do cięcia. Przydają się w <object id="tailoring" />.
+      requirement: Wymaga wyposażenia <object id="scissors" />.
+      requirementLevel: Wymaga nożyczek, które mają przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    cuttingMat:
+      name: Mata do krojenia
+      desc: Maty do krojenia są przydatne w <object id="tailoring" />.
+      requirement: Wymaga założonej <object id="cuttingMat" />.
+      requirementLevel: Wymaga maty do krojenia, która ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    pliers:
+      name: Szczypce
+      desc: Szczypce wykorzystywane są w precyzyjnych chwytach i wyginaniu. Przydatne
+        w <object id="trinketry" />.
   recipes:
     skills:
       cooking:
@@ -714,14 +785,20 @@ singulars:
       name: Kuźnia
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Usługa pozwalająca przetworzyć <object id="ore" /> w <object id="bar"
+        />, przydatna w innych kreacjach z <skill skill="smithing"/>.
     kitchen:
       name: Kuchnia
       requirementLevel: <PLACEHOLDER>
       requirement: <PLACEHOLDER>
+      desc: Usługa pozwalająca przetwarzać <object id="ingredient" /> w <object id="food"
+        /> lub <object id="beverage" />, również związana z <skill skill="cooking"/>.
     bench:
       name: Pracownia Jubilerska
       requirementLevel: <PLACEHOLDER>
       requirement: <PLACEHOLDER>
+      desc: Usługa pozwalająca oszlifować <object id="gem" /> i stworzyć <object id="item_ring"
+        /> lub <object id="item_amulet" />, związana z pracą w <skill skill="trinketry"/>.
     loom:
       name: Krosno
       requirement: <PLACEHOLDER>
@@ -768,14 +845,27 @@ singulars:
       name: Podwodny
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Miejsce, które znajduje się pod wodą. Będzie wymagać <object id="itemset_diving_gear"
+        />!
     regional:
       name: Regionalny
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: To jest bezpośrednio powiązane z konkretnym regionem lub frakcją.
     desert:
       name: Pustynia
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Miejsce to znajduje się w bardzo suchym i piaszczystym otoczeniu. Będzie
+        wymagać zdolności <object id="navigateDesert" />!
+    ghostly:
+      name: Duchowy
+      desc: Miejsce, które ma połączenie z duchami. Sprawi, że niektóre przedmioty
+        <object id="spectral" /> będą silniejsze.
+    snowy:
+      name: Śnieżny
+      desc: Miejsce, które znajduje się w zimnym otoczeniu, z masą śniegu. <object
+        id="skis" /> sprawią się dobrze w tym regionie!
   faction:
     reward:
       name: Nagroda Frakcji
