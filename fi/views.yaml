@@ -154,6 +154,7 @@ maps:
         "quest": Tehtäväesineet
         "currency": Valuutat
         "artifact": Artefaktit
+        "lore": Tarinaesineet
   locales:
     grammaticalGender:
       'masculine': Maskuliini
@@ -165,6 +166,7 @@ maps:
       'hours': '{hours}<c>t</c>'
       'minutes': '{minutes}<c>min</c>'
       'seconds': '{seconds}<c>s</c>'
+      "weeks": '{weeks}<c>vko</c>'
   announcements:
     categories:
       'devblog': Kehitysblogi
@@ -1316,6 +1318,8 @@ singulars:
       sellItems: Myy esineitä
       totalSellingPrice: Loppusumma <c>{amount}</c> esineen myynnistä
       totalBuyingPrice: Loppusumma <c>{amount}</c> esineen ostamisesta
+      noChestSelected: Yhtään arkkua ei ole valittuna.
+      purchaseForTokens: Osta merkeillä
     dialogue:
       greeting: Mukava tavata, <player />! Minulla on <c>harvinaisia esineitä</c>
         ja <c>palveluja</c>, joista saattaisit olla kiinnostunut. Olen nähnyt sinun
@@ -1329,6 +1333,9 @@ singulars:
         tuottaa? Erinomainen valinta! Kerro seuraavaksi, haluatko vaihtaa esineitä
         <c>pankista</c> vai <c>repustasi</c>. Tai jos haluat kenties ostaa jotain
         olemassaolevilla <c>arkkulanteillasi</c>!
+    info:
+      favoritedItem: Olet merkinnyt tämän esineen <icon i="Favorited"/><c>suosikiksesi</c>.
+        Oletko varma, että haluat myydä sen?
   currencies:
     phrases:
       currencies: Valuutat
@@ -1360,6 +1367,19 @@ singulars:
     info:
       notAtMailbox: Et tällä hetkellä ole paikassa, jossa olisi postilaatikko. Voit
         vastaanottaa postia vain postilaatikon luona. Kaikissa pankeissa on postilaatikko.
+    messages:
+      birthday2:
+        subject: Hyvää toista syntymäpäivää!
+        text: Taas on kulunut vuosi! Tässä on hieman jotain, jonka avulla voit juhlia
+          toista syntymäpäivääsi!\n\n- Herbert
+      birthday3:
+        subject: Hyvää kolmatta syntymäpäivää!
+        text: Katsohan, kuka täyttää jo kolme vuotta! Älä sorru pimeyteen, tässä on
+          jotain sinulle, ettet anna periksi vallitseville voimille.\n\n -Herbert
+      birthday1:
+        subject: Hyvää ensimmäistä syntymäpäivää!
+        text: Hyvää syntymäpäivää! Tässä on hieman jotain, mikä auttaa sinua juhlistamaan
+          sitä!\n\n- Herbert
   party:
     phrases:
       askToJoin: Pyydä liittymään
@@ -1385,3 +1405,11 @@ singulars:
         edistyessä: askeleet, joita olet ottanut, kerätty kokemus, ja tähän mennessä
         löytyneet esineet. Se valmistuu ja siirtyy aiempien tulosten listaan, kun
         aktiviteetti päättyy.'
+      previousResultsInfo: Aiempien <c>viimeaikaisten valmiiden aktiviteettiesi</c>
+        historia. Napauta tuloksia nähdäksesi tarkempi listaus siitä, mitä sait. Merkinnät,
+        joissa lukee <c>Uusi</c>, ovat vielä aiemmin avaamattomia.
+    types:
+      activity: Aktiviteetti
+      traveling: Matkustaminen
+      crafting: Käsityöt
+      idle: Toimeton
