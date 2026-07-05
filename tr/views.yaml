@@ -317,9 +317,10 @@ plurals:
 singulars:
   achievements:
     info:
-      collectibleItems: WalkScape dünyasından toplayabileceğin koleksiyonlukların
-        birkaç farklı çeşidi vardır. Bu eşyalar envanterinde yer kaplamazlar ve her
-        daim karakterinin yanında bulunurlar.
+      collectibleItems: Koleksiyonluk eşyalar genellikle oyundaki faaliyetlerden elde
+        edebileceğin nadir ganimetlerdir. <c i=0>Her koleksiyonluk sana</c> <c i=1>bir</c>
+        <icon i="Achievement Point"/> <c i=1>Başarım Puanı</c> verir. Koleksiyonluklar
+        envanterinde yer kaplamazlar ve her zaman karakterinin yanında bulunurlar.
       noCollectibleItems: Koleksiyonluk eşyan bulunmuyor.
       specialItems: WalkScape'teki yolculuğun boyunca <icon i="Collectible"/><c>koleksiyonluklar</c>
         ve <icon i="Lore Item"/><c>anlatı eşyaları</c> gibi özel eşyalara rastlayabilir,
@@ -333,6 +334,9 @@ singulars:
       checkPointUnlocks: Bu ödülleri belirli başarım puanlarına erişince kazanırsın.
         Oyuna daha fazla başarım puanı eklense bile bunlara erişimini kaybetmezsin.
       noLoreItems: Anlatı eşyan bulunmuyor.
+      loreItems: Anlatı eşyaları bulabileceğin kitaplar, mektuplar veya diğer yazılı
+        materyaller gibi eşyalardır. Envanterinde yer kaplamazlar ve onları her zaman
+        okuyabilirsin.
     phrases:
       notUnlocked: Kilitli başarım
       rewardProgress: Ödül İlerlemesi
@@ -343,6 +347,7 @@ singulars:
       collectiblesCount: Koleksiyonluklar <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
       loreItemsCount: Anlatı eşyaları
+      collectibles: Koleksiyonluklar
   bank:
     phrases:
       noItemsBank: Bankanda eşya bulunmuyor.
@@ -1377,6 +1382,9 @@ singulars:
       lasted: '{duration} sürdü'
       new: Yeni
       markAsRead: Okundu işaretle
+      currentActivityInfo: 'İlerlemekte olan <c>mevcut faaliyetinin</c> sonuçlarını
+        gösterir: Atılan adımlar, kazanılan TP ve şimdiye kadar bulunan eşyalar. Faaliyet
+        sona erince tamamlanarak önceki sonuçlar kısmına geçiş yapar.'
     types:
       activity: Faaliyet
       traveling: Seyahat
