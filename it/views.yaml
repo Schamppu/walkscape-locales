@@ -332,21 +332,26 @@ singulars:
       viewDescription: Sblocca obiettivi per guadagnare <hl>Punti Obiettivo</hl>.
         Quando la barra Punti Obiettivo è piena, ottieni qualcosa di speciale per
         tutti i tuoi personaggi! Alcuni obiettivi danno anche delle ricompense extra.
-      specialItems: Oggetti speciali, come <c>oggetti da collezione</c>, <c>oggetti
-        di missione</c> e <c>manufatti</c>, vengono raccolti durante il tuo viaggio
-        in WalkScape. Puoi controllarli qui. Gli oggetti da collezione ti fanno guadagnare
-        punti progresso.
-      noCollectibleItems: Non hai ancora raccolto alcun oggetto collezionabile.
+      specialItems: Gli oggetti speciali, come <icon i="Collectible"/> <c>oggetti
+        da collezione</c> e <icon i="Lore Item"/> <c>oggetti della tradizione</c>,
+        vengono raccolti durante il tuo viaggio in WalkScape. Puoi visualizzarli qui.
+        Gli oggetti da collezione ti consentono di accumulare punti per gli obiettivi.
+      noCollectibleItems: Non hai oggetti da collezione.
       totalProgressUnlocks: Otterrai questi premi in base ai tuoi progressi totali
         negli obiettivi e perderai l'accesso agli oggetti se saranno disponibili più
         punti obiettivo.
       checkPointUnlocks: Questi obiettivi sono disponibili in determinati punti di
         controllo dei punti obiettivo. Non perderai l'accesso a questi anche se saranno
         disponibili più punti obiettivo.
-      collectibleItems: Gli oggetti collezionabili sono oggetti che puoi ottenere
-        nel mondo di WalkScape. Esistono diversi tipi di oggetti collezionabili che
-        puoi provare a raccogliere. Non occupano spazio nell'inventario e rimangono
+      collectibleItems: Gli oggetti da collezione sono oggetti rari che puoi ottenere
+        nel gioco principalmente attraverso le attività. <c i=0>Ogni oggetto da collezione
+        ti garantisce</c> <c i=1>un</c> <icon i="Punto obiettivo"/> <c i=1>punto obiettivo</c>.
+        Gli oggetti da collezione non occupano spazio nell'inventario e rimangono
         sempre con il tuo personaggio.
+      loreItems: Gli oggetti di storia sono oggetti come libri, lettere e altri materiali
+        scritti che puoi trovare. Non occupano spazio nell'inventario e puoi leggerli
+        in qualsiasi momento.
+      noLoreItems: Non possiedi oggetti della storia.
     phrases:
       notUnlocked: Obiettivo bloccato
       rewardProgress: Punti Ricompensa
@@ -356,6 +361,8 @@ singulars:
         <c i=1>/ {maxCount}</c>
       checkPointUnlocks: Sblocco dei checkpoint
       totalProgressUnlocks: Progressi totali sbloccati
+      collectibles: Collezionabili
+      loreItemsCount: Oggetti della storia
   crafting:
     phrases:
       materials: Materiali
@@ -430,6 +437,7 @@ singulars:
       depositAll: Tutto
       hatchesInto: Si schiude in
       inputAttributes: Attributi di ingresso
+      mail: Posta
     options:
       expandInventory: Espandi l'inventario
       showMaterials: Mostra materiali
@@ -547,6 +555,8 @@ singulars:
         possono essere trovati
       experience: <bp /><c>{xp} </c><object id="{skill}"/> esperienza
       reputation: <bp /><object id="{faction}" /> reputazione <c>+{amount}</c>
+      lore: <bp /><icon i="Lore item"/> <c>{count} oggetti della storia </c> che si
+        possono trovare
     options:
       completeUntilActions: Completa per una serie di azioni
       numberOfActions: Numero di azioni
@@ -572,6 +582,7 @@ singulars:
       forXActions: Eseguire <c>{count}</c> azioni
       petNotFound: Animale domestico selezionato non trovato, l'hai ritirato?
       summoningPet: Evoca animale domestico <playerPet id="{pet}" />
+      unknownError: Errore sconosciuto.
     options:
       switchGearSet:
         text: Passare al set di equipaggiamenti
@@ -624,6 +635,7 @@ singulars:
       savePicture: Salva immagine
       level: 'Livello del personaggio: <c>{level}</c>'
       stepsToNextLevel: Passi per il livello successivo <c>{steps}</c>
+      savePictureDialogTitle: Salva immagine del personaggio
     info:
       skillBreakdown: Ecco l'elenco completo di tutte le abilità che il tuo personaggio
         ha potenziato durante il tuo viaggio. Tocca una qualsiasi delle abilità per
@@ -791,6 +803,7 @@ singulars:
       petDoesNotExist: L'animale domestico non esiste più, non è possibile evocarlo.
       inputsUsed: Dati utilizzati
       switchedToImportedGearSet: Passato ad un set di equipaggiamento importato
+      stepsWhileYouWereAway: Cosa è successo mentre eri via
   faction:
     phrases:
       openFaction: Apri fazione
@@ -1353,3 +1366,14 @@ singulars:
         o altre fonti, oppure i tuoi filtri non hanno restituito alcun attributo corrispondente.
     options:
       showInactiveAttributes: Mostra gli attributi inattivi
+  party:
+    phrases:
+      members: I membri del gruppo
+      askToJoin: Chiedi di unirti al gruppo
+      cancelJoinRequest: Annulla richiesta di adesione
+      playersWantToJoin: Ci sono giocatori che vogliono unirsi al tuo gruppo
+      pullDownToRefresh: Scorri verso il basso per aggiornare
+      timeRemaining: 'Tempo rimanente: {time}'
+  activityHistory:
+    phrases:
+      title: Cronologia delle attività
