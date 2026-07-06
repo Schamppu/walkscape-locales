@@ -80,6 +80,7 @@ maps:
         "currency": Valute
         "quest": Oggetti di missione
         "artifact": Artefatti
+        "lore": Oggetti della storia
   settings:
     languages:
       "es": Spagnolo
@@ -1349,6 +1350,11 @@ singulars:
       buy: Comprare
       buyItems: Comprare articoli
       sellItems: Vendere articoli
+      noChestSelected: Nessun forziere selezionato.
+      purchaseForTokens: Acquista con i token
+    info:
+      favoritedItem: Hai aggiunto questo articolo ai <icon i="Favorited"/> <c>preferiti</c>.\nSei
+        sicuro di volerlo vendere?
   rumors:
     phrases:
       unlockedWalkpediaEntries: Voci Walkpedia sbloccate
@@ -1377,3 +1383,50 @@ singulars:
   activityHistory:
     phrases:
       title: Cronologia delle attività
+      previousResults: Risultati delle attività precedenti
+      currentActivity: Risultati delle attività
+      noHistory: Non sono ancora disponibili risultati relativi ad attività precedenti.
+      tapForDetails: Tocca per visualizzare i dettagli
+      startedAt: Iniziato alle {time}
+      endedAt: Terminato alle {time}
+      runningFor: In esecuzione da {duration}
+      lasted: È durato {duration}
+      new: Nuovo
+      markAsRead: Segna come letto
+      currentActivityInfo: "Mostra i risultati della tua <c>attività corrente</c>
+        man mano che procede: i passi compiuti, l'XP guadagnata e gli oggetti trovati
+        finora. Al termine dell'attività, la visualizzazione termina e passa ai risultati
+        precedenti."
+      previousResultsInfo: Una cronologia delle tue <c>attività completate di recente</c>.
+        Tocca un risultato qualsiasi per visualizzare il riepilogo completo dei risultati
+        ottenuti. I record contrassegnati con <c>Nuovo</c> non sono ancora stati aperti.
+    types:
+      activity: Attività
+      traveling: Viaggiare
+      crafting: Artigianato
+      idle: Inattivo
+  mailbox:
+    phrases:
+      mailbox: Casella di posta
+      noMessages: Nessun messaggio nella tua casella di posta.
+      alreadyClaimed: Già richiesto
+      noSubject: (Senza oggetto)
+      noMessage: (Nessun messaggio)
+      notAtMailbox: Non presso una cassetta postale
+    messages:
+      birthday1:
+        subject: Buon primo compleanno!
+        text: Buon compleanno! Ecco un piccolo pensierino per aiutarti a festeggiare!\n\n-
+          Herbert
+      birthday2:
+        subject: Buon secondo compleanno!
+        text: È passato un altro anno! Ecco un piccolo pensierino per festeggiare
+          il tuo secondo compleanno!\n\n- Herbert
+      birthday3:
+        subject: Buon terzo compleanno!
+        text: Beh, guarda chi compie tre anni! Non lasciarti sopraffare dall'oscurità,
+          ecco qualcosa per te, così non cederai alle forze del male.\n\n- Herbert
+    info:
+      notAtMailbox: Al momento non ti trovi in un luogo dotato di cassetta postale.
+        Puoi ritirare la tua posta solo quando ti trovi in un luogo dotato di cassetta
+        postale. Tutte le banche dispongono di una cassetta postale.
