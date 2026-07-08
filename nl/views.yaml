@@ -99,18 +99,18 @@ die je kunt verzamelen. Ze nemen geen inventarisplaats in beslag en je hebt ze a
 bij je., specialItems: 'Tijdens je reis in WalkScape verzamel je speciale voorwerpen,
 zoals <icon i="Collectible"/> <c>verzamelobjecten</c> en <icon i="Lore Item"/> <c>lore-items</c>.
 Je kunt ze hier bekijken. Verzamelobjecten leveren je voortgangspunten op.', noCollectibleItems: Je
-hebt nog geen verzamelobjecten gevonden., viewDescription: Ontgredel prestaties om
-<hl>prestatiepunten</hl> te verdienen. Bij bepaalde hoeveelheden prestatiepunten speel
-je speciale beloningen vrij. Sommige prestaties geven zelf ook beloningen voor het
-ontgredelen ervan., totalProgressUnlocks: 'Je krijgt deze beloningspunten gebaseerd
-op je totale voortgang met prestaties, en je verliest toegang tot de voorwerpen wanneer
-meer prestatiepunten beschikbaar komen.', checkPointUnlocks: Deze prestaties zijn
-beschikbaar bij bepaalde prestatiepunt-checkpoints. Je behoudt toegang tot deze zelfs
-als er meer prestatiepunten beschikbaar komen.}, phrases: {notUnlocked: Vergrendelde
-prestatie, rewardProgress: Beloningsvoortgang, showRewards: Beloningen bekijken, totalProgressUnlocks: Totale
-voortgang ontgredelingen, checkPointUnlocks: Checkpoint ontgrendelingen, unclaimedRewards: 'Niet-geclaimde
-beloningen: ', collectiblesCount: 'Verzamelobjecten <icon i="Achievement Point"/>
-<c i=0>{count}</c> <c i=1>/ {maxCount}</c>'}}, 'crafting': {'phrases': {'requiresMaterial': 'Vereist
+hebt geen verzamelobjecten gevonden., viewDescription: Ontgredel prestaties om <hl>prestatiepunten</hl>
+te verdienen. Bij bepaalde hoeveelheden prestatiepunten speel je speciale beloningen
+vrij. Sommige prestaties geven zelf ook beloningen voor het ontgredelen ervan., totalProgressUnlocks: 'Je
+krijgt deze beloningspunten gebaseerd op je totale voortgang met prestaties, en je
+verliest toegang tot de voorwerpen wanneer meer prestatiepunten beschikbaar komen.',
+checkPointUnlocks: Deze prestaties zijn beschikbaar bij bepaalde prestatiepunt-checkpoints.
+Je behoudt toegang tot deze zelfs als er meer prestatiepunten beschikbaar komen.},
+phrases: {notUnlocked: Vergrendelde prestatie, rewardProgress: Beloningsvoortgang,
+showRewards: Beloningen bekijken, totalProgressUnlocks: Totale voortgang ontgredelingen,
+checkPointUnlocks: Checkpoint ontgrendelingen, unclaimedRewards: 'Niet-geclaimde beloningen: ',
+collectiblesCount: 'Verzamelobjecten <icon i="Achievement Point"/> <c i=0>{count}</c>
+<c i=1>/ {maxCount}</c>'}}, 'crafting': {'phrases': {'requiresMaterial': 'Vereist
 een materiaal.', 'requiresOneOfTheFollowing': 'Vereist een van de volgende materialen.',
 requirements: Vereisten, requirementsNotMet: Je voldoet niet aan de vereisten., noServiceRequirements: Geen
 voorzieningsvereisten., showingRecipiesThatUses: Recepten weergeven voor, requiresService: Vereist
@@ -384,27 +384,28 @@ phrases: {checkOutSubject: Check mijn voortgang in WalkScape!, skills: Vaardighe
 stepsOfLastWeek: Stappen van de laatste 7 dagen, checkOut: 'Hier is mijn WalkScape
 personage {name}. Moet je kijken!\nhttps://walkscape.app', totalLevel: Totaalniveau,
 savePicture: Afbeelding opslaan, level: 'Personage-niveau: <c>{level}</c>', stepsToNextLevel: 'Stappen
-tot volgend niveau <c>{steps}</c>'}, info: {skillBreakdown: Hier is het complete overzicht
-van alle vaardigheden die je personage beoefend heeft tijdens zijn/haar reis. Druk
-op een van de vaardigheden voor meer gedetailleerde informatie en wat ze ontgrendelen.,
-eachLevelIncreasesStepBank: 'Elk personage-niveau na niveau <c>{level}</c> verhoogt
-het maximale aantal bewaarde stappen met <c>{amount}</c>.'}}, permissions: {phrases: {
-pedometerPermission: Stappenteller toestemming, permissionExplanation: 'Om het spel
-te laten functioneren, hebben we toestemming nodig om de gegevens van de stappenteller
-op je toestel te gebruiken. Geef a.u.b. toestemming om verder te gaan met het spel.',
-exactAlarmPermission: Alarm toestemming, youNeedToGivePermissions: Je moet toestemming
-geven voor de volgende permissies om verder te gaan met het spel. Druk op de permissie
-om toestemming te geven., noDeviceFound: Geen device gevonden. Controleer a.u.b. of
-je op de <c>Verbinden met Apple Health</c> knop hebt gedrukt en toestemming hebt gegeven
-om Apple Health gegevens te kunnen lezen., pedometerPermissionExplanation: We hebben
-deze permissie nodig om de stappentellergegevens van je toestel te kunnen gebruiken.,
-connectAppleHealth: Verbinden met Apple Health, connect: Verbinden, connectAppleHealthExplanation: 'Je
-moet verbinding maken met Apple Health zodat we stappen kunnen inlezen die gesynchroniseerd
-zijn door je horloge, en om te zien met welke devices je bent verbonden. Als dit de
-eerste keer is dat je WalkScape gebruikt, zal er toestemming gevraagd worden om gegevens
-uit Apple Health te kunnen lezen.', continueWillEnable: Doorgaan-knop wordt ingeschakeld
-nadat je hierboven de benodigde toestemmingen hebt gegeven., youCanChangeAnyTime: Je
-kunt op elk moment de stappentellerbron wijzigen in de <c>Spelinstellingen</c>., comingSoonToAndroid: Komt
+tot volgend niveau <c>{steps}</c>', savePictureDialogTitle: Personage afbeelding opslaan},
+info: {skillBreakdown: Hier is het complete overzicht van alle vaardigheden die je
+personage beoefend heeft tijdens zijn/haar reis. Druk op een van de vaardigheden voor
+meer gedetailleerde informatie en wat ze ontgrendelen., eachLevelIncreasesStepBank: 'Elk
+personage-niveau na niveau <c>{level}</c> verhoogt het maximale aantal bewaarde stappen
+met <c>{amount}</c>.'}}, permissions: {phrases: {pedometerPermission: Stappenteller
+toestemming, permissionExplanation: 'Om het spel te laten functioneren, hebben we
+toestemming nodig om de gegevens van de stappenteller op je toestel te gebruiken.
+Geef a.u.b. toestemming om verder te gaan met het spel.', exactAlarmPermission: Alarm
+toestemming, youNeedToGivePermissions: Je moet toestemming geven voor de volgende
+permissies om verder te gaan met het spel. Druk op de permissie om toestemming te
+geven., noDeviceFound: Geen device gevonden. Controleer a.u.b. of je op de <c>Verbinden
+met Apple Health</c> knop hebt gedrukt en toestemming hebt gegeven om Apple Health
+gegevens te kunnen lezen., pedometerPermissionExplanation: We hebben deze permissie
+nodig om de stappentellergegevens van je toestel te kunnen gebruiken., connectAppleHealth: Verbinden
+met Apple Health, connect: Verbinden, connectAppleHealthExplanation: 'Je moet verbinding
+maken met Apple Health zodat we stappen kunnen inlezen die gesynchroniseerd zijn door
+je horloge, en om te zien met welke devices je bent verbonden. Als dit de eerste keer
+is dat je WalkScape gebruikt, zal er toestemming gevraagd worden om gegevens uit Apple
+Health te kunnen lezen.', continueWillEnable: Doorgaan-knop wordt ingeschakeld nadat
+je hierboven de benodigde toestemmingen hebt gegeven., youCanChangeAnyTime: Je kunt
+op elk moment de stappentellerbron wijzigen in de <c>Spelinstellingen</c>., comingSoonToAndroid: Komt
 binnenkort naar Android, changeStepCountingSource: Stappentellerbron wijzigen, stepCountingSource: Stappentellerbron,
 noDeviceFoundAndroid: Geen apparaat gevonden. Druk hierboven op de <c>Met Health Connect
 verbinden</c> knop en controleer of er toestemming is gegeven om Health Connect gegevens
@@ -521,32 +522,32 @@ inventaris vol is, noGearSetFound: 'Gekozen uitrustingsset niet gevonden, heb je
 verwijderd?', noPathFound: Geen pad naar de bestemming gevonden., forXActions: 'Voor
 <c>{count}</c> acties aan het doen', inputNotMet: Invoervereisten niet voldaan, petNotFound: 'Gekozen
 beestje niet gevonden, heb je deze gepensioneerd?', summoningPet: 'Beestje <playerPet
-id="{pet}" /> oproepen'}, options: {withdrawGearSet: {text: Uitrustingsset opnemen,
-desc: Haalt een uitrustingsset uit de bank als er een beschikbaar is op een van de
-locaties waar je doorheen komt.}, switchGearSet: {text: Wisselen naar uitrustingsset,
-desc: Wisselen naar een geselecteerde uitrustingsset voordat deze actie start.}, depositUnlockedItems: {
-text: Ontgrendelde voorwerpen storten, desc: Stort alle ontgrendelde voorwerpen in
-je inventoris naar de bank als er een beschikbaar is in een van de locaties waar je
-doorheen komt.}, removeFromQueue: {text: Verwijderen uit wachtrij, desc: Verwijder
-deze actie en alle acties erna uit de wachtrij.}, cancelGearSetSwitch: {text: Wisselen
-van uitrustingsset annuleren, desc: Annuleert het wisselen van uitrustingsset voor
-deze actie.}, summonPet: {desc: Roept je beestje op voordat je met deze actie begint.,
-text: Beestje oproepen}, cancelSummonPet: {text: Beestje oproepen annuleren, desc: Annuleert
-het oproepen van een beestje voor deze actie.}}, types: {traveling: Reizen, activity: Activiteit,
-crafting: Vervaardigen}, suggestedOptions: {startActivity: Activiteit, startCrafting: Maken,
-startTraveling: Reizen}, suggestions: {traveling: {onceYouArriveTo: 'Actie toevoegen
-aan wachtrij in <object id="{location}"/>?'}, crafting: {onceAllItemsAreCrafted: Wil
-je iets doen zodra all voorwerpen gemaakt zijn?, onceCertainRarityIsCrafted: Wil je
-iets doen zodra je iets hebt gemaakt van een specifieke zeldzaamheid of al het materiaal
-hebt gebruikt?}, activity: {onceInventoryIsFull: Wil je iets doen zodra je inventaris
-vol is?, onceAllActionsAreCompleted: Wil je iets doen zodra alle acties voltooid zijn?}}},
-whileAway: {phrases: {fromProc: 'Door <c>{proc}</c>', fromAttribute: 'Door attribuut
-{attribute}', whileYouWereAway: Terwijl je weg was..., fromSource: 'Door <object id="{source}"/>',
-startedActivityNoLocation: 'Activiteit gestart <object id="{activity}"/>', actionCancelled: Actie
-geannuleerd, startedNewActivity: 'Activiteit gestart <object id="{activity}"/> in
-<object id="{location}"/>', switchedToGearSet: 'Uitrustingsset wisselen naar <c>{name}</c>',
-actionsCompleted: Acties voltooid, none: Geen, gearSetDoesNotExist: Deze uitrustingsset
-bestaat niet meer, consumablesUsed: Verbruiksartikel gebruikt, switchedToPet: '<playerPet
+id="{pet}" /> oproepen', unknownError: Onbekende fout.}, options: {withdrawGearSet: {
+text: Uitrustingsset opnemen, desc: Haalt een uitrustingsset uit de bank als er een
+beschikbaar is op een van de locaties waar je doorheen komt.}, switchGearSet: {text: Wisselen
+naar uitrustingsset, desc: Wisselen naar een geselecteerde uitrustingsset voordat
+deze actie start.}, depositUnlockedItems: {text: Ontgrendelde voorwerpen storten,
+desc: Stort alle ontgrendelde voorwerpen in je inventoris naar de bank als er een
+beschikbaar is in een van de locaties waar je doorheen komt.}, removeFromQueue: {
+text: Verwijderen uit wachtrij, desc: Verwijder deze actie en alle acties erna uit
+de wachtrij.}, cancelGearSetSwitch: {text: Wisselen van uitrustingsset annuleren,
+desc: Annuleert het wisselen van uitrustingsset voor deze actie.}, summonPet: {desc: Roept
+je beestje op voordat je met deze actie begint., text: Beestje oproepen}, cancelSummonPet: {
+text: Beestje oproepen annuleren, desc: Annuleert het oproepen van een beestje voor
+deze actie.}}, types: {traveling: Reizen, activity: Activiteit, crafting: Vervaardigen},
+suggestedOptions: {startActivity: Activiteit, startCrafting: Maken, startTraveling: Reizen},
+suggestions: {traveling: {onceYouArriveTo: 'Actie toevoegen aan wachtrij in <object
+id="{location}"/>?'}, crafting: {onceAllItemsAreCrafted: Wil je iets doen zodra all
+voorwerpen gemaakt zijn?, onceCertainRarityIsCrafted: Wil je iets doen zodra je iets
+hebt gemaakt van een specifieke zeldzaamheid of al het materiaal hebt gebruikt?},
+activity: {onceInventoryIsFull: Wil je iets doen zodra je inventaris vol is?, onceAllActionsAreCompleted: Wil
+je iets doen zodra alle acties voltooid zijn?}}}, whileAway: {phrases: {fromProc: 'Door
+<c>{proc}</c>', fromAttribute: 'Door attribuut {attribute}', whileYouWereAway: Terwijl
+je weg was..., fromSource: 'Door <object id="{source}"/>', startedActivityNoLocation: 'Activiteit
+gestart <object id="{activity}"/>', actionCancelled: Actie geannuleerd, startedNewActivity: 'Activiteit
+gestart <object id="{activity}"/> in <object id="{location}"/>', switchedToGearSet: 'Uitrustingsset
+wisselen naar <c>{name}</c>', actionsCompleted: Acties voltooid, none: Geen, gearSetDoesNotExist: Deze
+uitrustingsset bestaat niet meer, consumablesUsed: Verbruiksartikel gebruikt, switchedToPet: '<playerPet
 id="{pet}"/> opgeroepen', petDoesNotExist: 'Het beestje bestaat niet meer en kon niet
 worden opgeroepen.'}}, rumors: {phrases: {unlockedWalkpediaEntries: Ontgrendelde Walkpedia-artikelen,
 rumorsFromCharacter: 'Geruchten van <c>{characterName}</c>', backToRumors: Terug naar
