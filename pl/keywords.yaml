@@ -80,10 +80,11 @@ singulars:
         /> w swoich wymaganiach.
       desc: Używane jako składniki w recepturach.
     misc:
-      name: Różnorodny.
+      name: Różności.
       requirement: Wymaga przedmiotu <object id="misc" />.
       requirementLevel: Wymaga różnorodnych przedmiotów które mają przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Różnorodne materiały, które mogą być wykorzystane w wielu recepturach.
     processed:
       name: Przetworzony
       requirement: Wymaga <object id="processed" /> materiał.
@@ -97,6 +98,8 @@ singulars:
       requirement: Wymaga <object id="offcut" />.
       requirementLevel: Wymaga odcięcia które ma co przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Resztki, czyli pozostałości materiałów, które mogą być przetworzone w
+        nowe.
     cutGem:
       name: Kawałek Klejnotu
       requirement: Wymaga <object id="cut_gem" />.
@@ -121,12 +124,24 @@ singulars:
       desc: Może być użyty w recepturach <object id="tailoring" />, by wytworzyć <object
         id="fabric" />. Może być najczęściej znaleziony poprzez <object id="foraging"
         />.
+      name: Włóknista Roślina
+      requirement: Wymaga <object id="fibrousPlant" />.
+      requirementLevel: Wymaga włóknistej rośliny, która posiada przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
     crustacean:
       name: Skorupiak
       desc: Skorupiak, który może być użyte w wielu recepturach <object id="cooking"
         />.
       requirement: Wymaga <object id="crustacean" />.
       requirementLevel: Wymaga skorupiaka, który ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    hide:
+      name: Skóra
+      desc: Część skóry zwierzęcej, która może być użyta do receptur <object id="tailoring"
+        />, by wytworzyć <object id="leather" />. Może być otrzymana z <object id="hunting"
+        />.
+      requirement: Wymaga <object id="hide" />.
+      requirementLevel: Wymaga skóry, która posiada przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
   tools:
     fishing:
