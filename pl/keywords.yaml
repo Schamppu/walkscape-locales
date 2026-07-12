@@ -33,6 +33,8 @@ singulars:
       requirement: Wymaga <object id="plank" />.
       requirementLevel: Wymaga deski która ma przynajmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Może być użyta w wielu recepturach <object id="crafting" />. Przetwarzana
+        z <object id="logs" />.
     mushroom:
       name: Grzyb
       requirement: Wymaga <object id="mushroom" />.
@@ -43,16 +45,21 @@ singulars:
       requirementLevel: Wymaga klejnotu, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
       name: Klejnot
+      desc: Może być użyty w wielu recepturach <object id="trinketry" />.
     bar:
       name: Sztabka
       requirement: Wymaga <object id="bar" />.
       requirementLevel: Wymaga sztabki która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Może być użyta w wielu recepturach <object id="smithing" /> i <skillType
+        type="artisan" />. Przetwarzana z <object id="ore" />.
     roughGem:
       name: Szorstki Klejnot
       requirement: Wymaga <object id="rough_gem" />.
       requirementLevel: Wymaga szorstkiego klejnotu który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Może być przetworzony w <object id="cut_gem" />. Podstawowy składnik otrzymywany
+        z <object id="mining" />.
     trinket:
       name: Błyskotka
       requirement: Wymaga <object id="trinket" />.
@@ -91,11 +98,15 @@ singulars:
       requirement: Wymaga <object id="cut_gem" />.
       requirementLevel: Wymaga rozciętego klejnotu który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Może być użyty w różnych recepturach <object id="trinketry" />. Przetwarzany
+        z <object id="rough_gem" />.
     nugget:
       name: Samorodek
       requirement: Wymaga <object id="nugget" />.
       requirementLevel: Wymaga samorodka, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Może być przetworzona w <object id="bar" />. Podstawowy składnik otrzymywany
+        z <object id="mining" />.
     fabric:
       requirementLevel: Wymaga tkaniny, która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
