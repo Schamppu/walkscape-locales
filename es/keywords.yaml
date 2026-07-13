@@ -819,6 +819,14 @@ singulars:
           name: Wrentmark
           requirement: <PLACEHOLDER>
           requirementLevel: <PLACEHOLDER>
+        desert:
+          name: Desierto
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+        snowy:
+          name: Nevado
+          requirementLevel: <PLACEHOLDER>
+          requirement: <PLACEHOLDER>
   services:
     workshop:
       requirementLevel: <PLACEHOLDER>
@@ -848,7 +856,7 @@ singulars:
       name: Telar
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
-      desc: Un servicio para transformar <object id="fiberousPlant" /> y <object id="hide"
+      desc: Un servicio para transformar <object id="fibrousPlant" /> y <object id="hide"
         /> en <object id="fabric" /> y <object id="leather" />, junto con otras creaciones
         de <skill skill="tailoring"/>.
     bench:
@@ -923,7 +931,7 @@ singulars:
     cursed:
       name: Maldito
       requirement: Requiere algo <object id="cursed" />.
-      requirementLevel: Requiere algo maldito que contenga al menos <keywordRequirements
+      requirementLevel: Requiere algo maldito que tenga al menos <keywordRequirements
         /> de requisito.
       desc: Un servicio maldito tiene algunos efectos negativos.
     upgradeable:
@@ -931,6 +939,8 @@ singulars:
       desc: ¡Un elemento del equipo que puede usarse para una mejora! ¿Por qué no
         consideras quedártelo para realizarla más adelante?
       requirement: Requiere algo <object id="upgradeable" />.
+      requirementLevel: Requiere algo mejorable que tenga al menos <keywordRequirements
+        /> de requisito.
   achievements:
     percentage:
       name: Porcentaje de logro
@@ -960,6 +970,11 @@ singulars:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       desc: Cuenta como peso pesado, por lo que solo se puede apilar 1.
+    medium:
+      name: Medio
+      desc: Cuenta como peso medio, por lo que se pueden apilar hasta 100.
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
   locations:
     underwater:
       name: Submarino
@@ -984,6 +999,12 @@ singulars:
       name: Fantasmal
       desc: Un lugar conectado con los espíritus. Hará cualquier objeto <object id="spectral"
         /> más fuerte.
+    snowy:
+      name: Nevado
+      desc: Un lugar que reside en un ambiente frío con mucha nieve. ¡Los <object
+        id="skis" /> suelen ser muy útiles en estas zonas!
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
   faction:
     reward:
       name: Recompensa de facción
