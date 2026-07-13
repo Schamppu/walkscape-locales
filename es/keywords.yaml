@@ -682,14 +682,14 @@ singulars:
       name: Combustible
       requirement: Requiere combustible.
     lightSource:
-      requirementLevel: Requiere que el usuario tenga una <keywordRequirements />
-        equipada.
+      requirementLevel: Requiere una fuente de luz que al menos tenga <keywordRequirements
+        /> de requisito.
       name: Fuente de luz
       requirement: Requiere llevar una <object id="lightSource" />.
       desc: Ilumina áreas con poca luz. Requerida para algunas actividades y ubicaciones.
     heatResist:
-      requirementLevel: Requiere que el usuario tenga equipado algo <keywordRequirements
-        />.
+      requirementLevel: Requiere algo resistente al fuego que al menos tenga <keywordRequirements
+        /> de requisito.
       name: Resistente al calor
       requirement: Requiere algo <object id="heat_resistant" />.
       desc: Te mantiene fresco en áreas cálidas. Requerido para ciertas actividades
@@ -926,6 +926,11 @@ singulars:
       requirementLevel: Requiere algo maldito que contenga al menos <keywordRequirements
         /> de requisito.
       desc: Un servicio maldito tiene algunos efectos negativos.
+    upgradeable:
+      name: Mejorable
+      desc: ¡Un elemento del equipo que puede usarse para una mejora! ¿Por qué no
+        consideras quedártelo para realizarla más adelante?
+      requirement: Requiere algo <object id="upgradeable" />.
   achievements:
     percentage:
       name: Porcentaje de logro
