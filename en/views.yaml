@@ -466,6 +466,7 @@ singulars:
     layout:
       reorder: Reorder
       edit: Edit
+      reassign: Re-sort items
       viewList: List view
       viewGrid: Grid view
       settings: Settings
@@ -511,6 +512,37 @@ singulars:
       noItemsYet: No items yet
       emptyTab: This tab is empty
       emptyBank: Your bank is empty
+      editCategory: Edit category
+      editTab: Edit tab
+      deleteTab: Delete tab
+      options: Options
+      filters:
+        title: Filters
+        empty: No filters yet
+        add: Add filter
+        cancel: Cancel
+        noMatches: No matches
+        search: "Search {kind}"
+        kindItemType: Item type
+        kindGearType: Gear type
+        kindKeyword: Keyword
+        kindSkill: Skill
+        kindGlobal: Any skill item
+        labelItemType: "Item type: {value}"
+        labelGearType: "Gear type: {value}"
+        labelKeyword: "Keyword: {value}"
+        labelSkill: "Skill: {value}"
+        labelGlobal: Any skill item
+      discardChangesTitle: Discard changes?
+      discardChangesBody: You have unsaved changes to your bank layout. Leaving now will discard them.
+      deleteCategoryTitle: Delete category?
+      deleteCategoryBody: The items in this category will be moved to Uncategorized.
+      deleteTabTitle: Delete tab?
+      deleteTabBody: This tab will be removed from your bank.
+      cannotDeleteTabTitle: Can't delete tab
+      cannotDeleteTabBody: Only empty tabs can be deleted. Move or remove its items first.
+      cannotDeleteLastTabBody: You must keep at least one tab.
+      cannotDeletePrimaryTabBody: This is the default tab where unsorted items go. It can't be deleted.
   trade:
     phrases:
       trade: TRADE
@@ -753,6 +785,7 @@ singulars:
       startingProcesses: Starting game processes
       loadingGameData: Loading game data
       initializingGameData: Initializing game data
+      precomputing: Precomputing game data
       authenticating: Authenticating
       loadingGuideState: Loading guide state
       awaitingForRemoveConfig: Awaiting for remote config
