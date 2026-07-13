@@ -345,6 +345,10 @@ singulars:
         puntos de logro. No perderás acceso a ellos incluso si se añaden más puntos
         de logro.
       noCollectibleItems: No tienes ningún objeto coleccionable.
+      loreItems: Los objetos de lore pueden ser libros, cartas y otros manuscritos
+        que puedes encontrar. No ocupan sitio en el inventario y se pueden leer en
+        cualquier momento.
+      noLoreItems: No tienes ningún objeto de lore.
     phrases:
       notUnlocked: Logro bloqueado
       rewardProgress: Progreso de Recompensa
@@ -354,6 +358,8 @@ singulars:
       checkPointUnlocks: Desbloqueos de hito
       collectiblesCount: Coleccionables <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
+      collectibles: Coleccionables
+      loreItemsCount: Objetos de lore
   crafting:
     phrases:
       materials: Materiales
@@ -428,6 +434,7 @@ singulars:
       depositAll: Todo
       hatchesInto: Se convierte en
       inputAttributes: Atributos de base
+      mail: Correo
     options:
       consenseInventory: Condensar inventario
       expandInventory: Expandir inventario
@@ -623,7 +630,7 @@ singulars:
       consumablesUsage: Puedes elegir una <c>comida</c> y una <c>poción</c> para usar
         mientras haces actividades.
       noActivity: Ninguna actividad seleccionada. <hl>Selecciona una aquí debajo</hl>,
-        o desliza hacia la izquierda para ver todo lo disponible en esta localización.
+        o desliza hacia la izquierda para ver todo lo disponible en esta ubicación.
       savedSteps: Los pasos guardados evitan que los pasos se desperdicien y se acumulan
         al caminar cuando no hay ninguna actividad activa. Se agotan duplicando los
         pasos que das cuando vuelves a tener una actividad activa.
@@ -688,6 +695,8 @@ singulars:
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} coleccionables</c> que
         se pueden encontrar
       reputation: <bp />Reputación de <object id="{faction}" /> <c>+{amount}</c>
+      lore: <bp /><icon i="Lore item"/> <c>{count} objetos de lore</c> que pueden
+        ser encontrados
     options:
       completeUntilActions: Completar una cantidad de acciones
       numberOfActions: Cantidad de acciones
@@ -707,6 +716,7 @@ singulars:
       savePicture: Guardar imagen
       level: 'Nivel del personaje: <c>{level}</c>'
       stepsToNextLevel: Pasos hasta el siguiente nivel <c>{steps}</c>
+      savePictureDialogTitle: Guardar Imagen de Personaje
   permissions:
     phrases:
       pedometerPermission: Permiso del podómetro
@@ -1022,6 +1032,14 @@ singulars:
       youAreInspectingFromMap: Estás <c>inspeccionando desde el mapa del mundo</c>.
         Para interactuar, debes estar en la propia ubicación y abrir esto desde la
         vista principal de la ubicación.
+    options:
+      locations: Mostrar ubicaciones
+      routes: Mostrar rutas
+      playerCharacter: Mostrar tu personaje
+      friends: Mostrar amigos
+      hideAll: Ocultar todo
+      regions: Mostrar regiones
+      labels: Mostrar etiquetas
   stats:
     phrases:
       stats: Estadísticas
@@ -1195,6 +1213,7 @@ singulars:
       inputNotMet: Requisitos de base no cumplidos
       petNotFound: No encuentro la mascota elegida. ¿La has retirado?
       summoningPet: Invocando mascota <playerPet id="{pet}" />
+      unknownError: Error desconocido.
     suggestedOptions:
       startActivity: Actividad
       startCrafting: Fabricación
@@ -1222,6 +1241,8 @@ singulars:
       switchedToPet: <playerPet id="{pet}"/> invocado
       petDoesNotExist: 'La mascota ya no existe, no se pudo invocar.'
       inputsUsed: Bases usadas
+      switchedToImportedGearSet: Cambiar a kit de equipo importado
+      stepsWhileYouWereAway: Pasos mientras no estabas
   announcements:
     phrases:
       new: Nuevo
@@ -1352,3 +1373,27 @@ singulars:
       overlevelingFromAgility: De <object id="agility" /> nivel <c>{level}</c>.
     options:
       showInactiveAttributes: Muestra atributos inactivos
+  party:
+    phrases:
+      askToJoin: Pedir unirse
+      members: Miembros del grupo
+      cancelJoinRequest: Cancelar petición de unirse
+      playersWantToJoin: Jugadores quieren unirse a tu grupo
+      pullDownToRefresh: Arrastrar hacia abajo para refrescar
+      timeRemaining: 'Tiempo restante: {time}'
+  activityHistory:
+    phrases:
+      title: Historial de actividad
+      previousResults: Resultados previos de actividad
+      currentActivity: Resultados de actividad
+      noHistory: Todavía no hay resultados previos de actividad.
+      startedAt: Comenzado {time}
+      endedAt: Terminado {time}
+      runningFor: Ejecutándose durante {duration}
+      lasted: Duró {duration}
+      new: Nuevo
+      markAsRead: Marcar como leído
+      currentActivityInfo: 'Muestra los resultados de tu <c>actividad actual</c> mientras
+        progresa: los pasos dados, EXP ganada y objetos encontrados hasta el momento.
+        Se va a resultados previos cuando la actividad termina.'
+      tapForDetails: Toca para ver detalles
