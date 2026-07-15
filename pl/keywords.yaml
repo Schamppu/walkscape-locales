@@ -846,20 +846,29 @@ singulars:
           requirement: <PLACEHOLDER>
           requirementLevel: <PLACEHOLDER>
         desert:
-          name: Pustynia
+          name: Pustynny
+        snowy:
+          name: Śnieżny
   weight:
     light:
       name: Lekki
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Liczy się jako lekka waga, co oznacza że maksymalny stack wynosi 1000.
     heavy:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Ciężki
+      desc: Liczy się jako ciężka waga, co oznacza że maksymalny stack wynosi 1.
     ultraLight:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Ultra lekki
+      desc: Liczy się jako ultra lekka waga, co oznacza że maksymalny stack wynosi
+        10000.
+    medium:
+      name: Średni
+      desc: Liczy się jako średnia waga, co oznacza że maksymalny stack wynosi 100.
   services:
     sawmill:
       name: Tartak
