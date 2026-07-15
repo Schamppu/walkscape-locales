@@ -712,11 +712,14 @@ singulars:
       name: Procent osiągnięć
       requirement: brak
       requirementLevel: brak
+      desc: Otrzymywane jako nagroda za osiągnięcie konkretnego procentu maksymalnych
+        punktów osiągnięć.
     reward:
       name: Nagroda za osiągnięcia
       requirement: Wymaga <object id="achievement_reward" />.
       requirementLevel: Wymaga nagrody za osiągnięcie która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Otrzymywane jako nagroda za osiągnięcia.
   search:
     skills:
       agility:
@@ -842,6 +845,8 @@ singulars:
           name: Wrentmark
           requirement: <PLACEHOLDER>
           requirementLevel: <PLACEHOLDER>
+        desert:
+          name: Pustynia
   weight:
     light:
       name: Lekki
@@ -956,6 +961,7 @@ singulars:
       requirement: Wymaga <object id="faction_reward" />.
       requirementLevel: Wymaga nagrody frakcji która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Otrzymywane jako nagroda z frakcji.
   eggs:
     egg:
       name: Jajo
