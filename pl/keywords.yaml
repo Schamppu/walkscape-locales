@@ -678,35 +678,47 @@ singulars:
       name: Źródło światła
       requirement: Wymaga wyposażenia <object id="lightSource" />.
       requirementLevel: Wymaga od użytkownika posiadania <keywordRequirements />.
+      desc: Oświetla ledwie widoczne obszary. Wymagane w niektórych lokacjach i aktywnościach.
     heatResist:
       requirement: Wymaga czegoś <object id="heat_resistant" />.
       name: Odporność na ciepło
       requirementLevel: Wymaga od użytkownika posiadania czegoś <keywordRequirements
         />.
+      desc: Zapewnia chłód w gorących obszarach. Wymagane w niektórych aktywnościach
+        i lokacjach.
   misc:
     trash:
       name: Śmieci
       requirement: Wymaga <object id="trash" />.
       requirementLevel: Wymaga śmieci które mają co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Dla kogoś innego może to być skarbem.
     currency:
       name: Waluta
       requirement: Wymaga <object id="currency" />.
       requirementLevel: Wymaga waluty która, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Może być użyte, by zakupić rzeczy ze sklepów.
     spectral:
       name: Widmowy
       requirement: Wymaga przedmiotu <object id="spectral" />.
       requirementLevel: Wymaga przedmiotu widmowego który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Widmowe przedmioty są zaklęte duchowymi możliwościami pochodzącymi z <object
+        id="c7a75c46-f140-4116-b0b6-f74e5d763ef5" />.
     cursed:
       name: Przeklęty
       requirement: Wymaga czegoś <object id="cursed" />.
       requirementLevel: Wymaga czegoś przeklętego, które ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Przeklęte usługi mają nieco negatywnych efektów.
     upgradeable:
       requirementLevel: Wymaga czegoś ulepszalnego, co ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      name: Ulepszalne
+      desc: Część wyposażenia, która może służyć do ulepszania! Może warto zachować
+        to na później, by wykonać ulepszenia później?
+      requirement: Wymaga czegoś, co jest <object id="upgradeable" />.
   achievements:
     percentage:
       name: Procent osiągnięć
@@ -763,7 +775,7 @@ singulars:
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
       global:
-        name: Globalny
+        name: Globalnie
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
       trinketry:
@@ -874,10 +886,14 @@ singulars:
       name: Tartak
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Usługa pozwalająca przetworzyć <object id="logs" /> w <object id="plank"
+        />, również pozwalająca na inne czynności z <skill skill="carpentry"/>.
     workshop:
       name: Warsztat
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Usługa pozwalająca zmienić materiały w <object id="tool" /> i użyteczne
+        przedmioty, przydatna również w <skill skill="crafting"/>.
     forge:
       name: Kuźnia
       requirement: <PLACEHOLDER>
@@ -917,16 +933,21 @@ singulars:
         />.
       requirementLevel: Wymaga narzędzia poszukiwacza przygód, które ma co najmniej
         <keywordRequirements /> w swoich wymaganiach.
+      desc: Liczy się jako podróżniczy zestaw narzędzi.
     divingGear:
       requirement: Wymaga <object id="itemset_diving_gear" />.
       name: Sprzęt Nurka
       requirementLevel: Wymaga sprzętu do nurkowania, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Liczy się jako zestaw do nurkowania. Musisz posiadać taki zestaw, by zejść
+        w głębiny.
     advancedDivingGear:
       name: Zaawansowany Sprzęt Nurka
       requirement: Wymaga <object id="itemset_diving_gear_advanced" />.
       requirementLevel: Wymaga zaawansowanego sprzętu do nurkowania, który ma co najmniej
         <keywordRequirements /> w swoich wymaganiach.
+      desc: Liczy się jako zaawansowany zestaw nurkowy. Potrzebujesz zaawansowanego
+        zestawu, by wejść w głębsze i niebezpieczniejsze regiony.
     expertDivingGear:
       name: Ekspercki Sprzęt Nurka
       requirement: Wymaga <object id="itemset_diving_gear_expert" />.
@@ -979,8 +1000,10 @@ singulars:
       requirementLevel: Wymaga jaja które, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
       requirement: Wymaga <object id="egg" />.
+      desc: Niezbyt ładnie pachnie, gdy zostawisz za długo w plecaku.
     petEgg:
       name: Jajo Pupila
       requirement: Wymaga <object id="pet_egg" />.
       requirementLevel: Wymaga jaja pupila które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Możesz przypisać je, by otrzymać pupila!
