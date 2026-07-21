@@ -136,13 +136,20 @@ singulars:
       requirementLevel: Wymaga skorupiaka, który ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
     hide:
-      name: Skóra
+      name: Surowa Skóra
       desc: Część skóry zwierzęcej, która może być użyta do receptur <object id="tailoring"
         />, by wytworzyć <object id="leather" />. Może być otrzymana z <object id="hunting"
         />.
       requirement: Wymaga <object id="hide" />.
       requirementLevel: Wymaga skóry, która posiada przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+    leather:
+      name: Skóra
+      desc: Kawałek skóry, który zazwyczaj będzie wykorzystywany w przepisach <object
+        id="tailoring" />.
+      requirement: Wymaga <object id="leather" />.
+      requirementLevel: Wymaga skóry która, ma co najmniej <keywordRequirements />
+        w swoich wymaganiach.
   tools:
     fishing:
       name: Wędkarstwo
@@ -677,13 +684,14 @@ singulars:
     lightSource:
       name: Źródło światła
       requirement: Wymaga wyposażenia <object id="lightSource" />.
-      requirementLevel: Wymaga od użytkownika posiadania <keywordRequirements />.
+      requirementLevel: Wymaga źródła światła które, ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
       desc: Oświetla ledwie widoczne obszary. Wymagane w niektórych lokacjach i aktywnościach.
     heatResist:
       requirement: Wymaga czegoś <object id="heat_resistant" />.
       name: Odporność na ciepło
-      requirementLevel: Wymaga od użytkownika posiadania czegoś <keywordRequirements
-        />.
+      requirementLevel: Wymaga przedmiotu odpornego na wysoka temperaturę, który ma
+        przynajmniej <keywordRequirements /> w swoich wymaganiach.
       desc: Zapewnia chłód w gorących obszarach. Wymagane w niektórych aktywnościach
         i lokacjach.
   misc:
@@ -859,8 +867,12 @@ singulars:
           requirementLevel: <PLACEHOLDER>
         desert:
           name: Pustynny
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
         snowy:
           name: Śnieżny
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
   weight:
     light:
       name: Lekki
@@ -881,6 +893,8 @@ singulars:
     medium:
       name: Średni
       desc: Liczy się jako średnia waga, co oznacza że maksymalny stack wynosi 100.
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
   services:
     sawmill:
       name: Tartak
@@ -983,10 +997,14 @@ singulars:
       name: Duchowy
       desc: Miejsce, które ma połączenie z duchami. Sprawi, że niektóre przedmioty
         <object id="spectral" /> będą silniejsze.
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
     snowy:
       name: Śnieżny
       desc: Miejsce, które znajduje się w zimnym otoczeniu, z masą śniegu. <object
         id="skis" /> sprawią się dobrze w tym regionie!
+      requirementLevel: <PLACEHOLDER>
+      requirement: <PLACEHOLDER>
   faction:
     reward:
       name: Nagroda Frakcji
