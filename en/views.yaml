@@ -556,6 +556,11 @@ singulars:
       filterEnable: Enable filters
       filterAttributesTitle: Attributes
       filterSkillsTitle: Skills
+      inventoryFilterTitle: Filter inventory
+      inventoryFilterTypesTitle: Item types
+      inventoryFilterVisibilityTitle: Visibility
+      inventoryFilterShowFavorited: Show favorited
+      inventoryFilterShowLocked: Show locked
       filterNoResults: No results that fit your filters
       searchNoResults: The search returned no results
       reorderBlockedSearch: Clear the search to rearrange items
@@ -576,13 +581,24 @@ singulars:
         bonusExperience: Bonus experience
       expandSidebar: Show tabs
       collapseSidebar: Hide tabs
+      viewInventory: View inventory
+      viewBank: Back to bank
+      inventoryTitle: Inventory
+      inventoryEmpty: Your inventory is empty
       withdraw: Withdraw
       withdrawAvailable: "{count} in bank"
       withdrawStaged: "{count} staged"
       applyWithdrawals: "Complete"
       applyNotAtBank: You must be at a bank to withdraw
+      applyNotAtBankDeposit: You must be at a bank to deposit
       withdrawNotAtBank: You cannot withdraw items while not at a bank
       withdrawComplete: Items withdrawn to your inventory
+      depositComplete: Items deposited to your bank
+      applyComplete: Bank transactions applied
+      deposit: Deposit
+      depositAvailable: "{count} in inventory"
+      depositStaged: "{count} staged"
+      depositNotAtBank: You cannot deposit items while not at a bank
       editBlockedPending: Withdraw your staged items before editing
       processing: Processing…
       savingLayout: Saving the bank layouts, please wait…
@@ -615,9 +631,11 @@ singulars:
       deleteLayoutBody: "{name} will be permanently deleted."
       layoutDeleted: Layout deleted
       blankTabName: Items
-      inspect: Review staged withdrawals
-      inspectTitle: Staged withdrawals
-      inspectEmpty: No items staged for withdrawal
+      inspect: Review staged transactions
+      inspectTitle: Staged transactions
+      inspectEmpty: No items staged
+      inspectWithdrawing: Withdrawing
+      inspectDepositing: Depositing
       inspectSummary: "{stacks} stacks · {items} items"
       inspectInventory: "Inventory: {used}/{max} slots"
       increase: "Add {count}"
