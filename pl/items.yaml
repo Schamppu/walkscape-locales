@@ -582,8 +582,8 @@ singulars:
             umiejętnościami.
         heavyHelmet:
           name: Ciężki Stalowy Hełm
-          desc: Odblask od reszty zbroi i małe szczeliny sprawiają, że dość trudno
-            jest dostrzec otoczenie, ale czujesz się bezpiecznie.
+          desc: Przez wąskie szczeliny dość trudno dostrzec otoczenie, ale czujesz
+            się bezpiecznie.
         legs:
           name: Stalowe Bigwanty
           desc: Lśnią obietnicą ochrony bohaterów, gdy stawiają czoła niebezpieczeństwom
@@ -961,6 +961,8 @@ singulars:
           desc: <PLACEHOLDER>
         spectralHandwear:
           name: Widmowe Rękawice
+          desc: Ektoplazmatyczny splot tych rękawic chroni palce podczas pracy nad
+            rzemieślniczymi dziełami.
         spectralVest:
           name: Widmowa Kamizelka
           desc: Kamizelka ta zapewnia odpowiednią ochronę podczas pracy przy stanowiskach
@@ -968,8 +970,12 @@ singulars:
             wzmacniającemu usztywnieniu biegnącemu wzdłuż korpusu.
         spectralTunic:
           name: Widmowa Tunika
+          desc: Ta tunika zapewnia dużą swobodę ruchów dzięki doskonałemu splotowi
+            ektoplazmatycznemu wkomponowanemu w część tułowiową.
         spectralChaps:
           name: Widmowe Chapsy
+          desc: Nogawice nasycone energią ektoplazmy, zapewniające jeszcze większą
+            swobodę ruchów.
         spectralBreeches:
           name: Widmowe Bryczesy
           desc: Pas tych spodni pewnie utrzymuje narzędzia na miejscu dzięki wplecionej
@@ -980,6 +986,8 @@ singulars:
             szyciem materiały, jak duszę do ciała.
         spectralMitts:
           name: Widmowe Rękawiczki
+          desc: Rękawice splecione z kości i ektoplazmy, umożliwiające wykonywanie
+            szybkich ruchów.
         toughLinenCloth:
           desc: Kawałek tkaniny wykonany z bardziej surowych materiałów.
           name: Wytrzymała Lniana Tkanina
@@ -1007,6 +1015,29 @@ singulars:
           name: Chapsy z Czarnej Skóry
           desc: Chapsy wykonane ze czarnej skóry zapewniają doskonałą ochronę przed
             niekorzystnymi warunkami atmosferycznymi.
+        aerofibrilBracers:
+          desc: Karwasze zostały wzbogacone o aerodynamiczne nici, dzięki którym dłonie
+            poruszają się szybciej niż zwykle.
+          name: Aerofibrylowe Karwasze
+        shadowquillBracers:
+          name: Karwasze Cienia
+          desc: Te karwasze zdobione ciemnymi piórami doskonale sprawdzają się w działaniach
+            wymagających skrytości.
+        shadowquillShorts:
+          name: Nagolennice Cienia
+          desc: Dzięki zdobieniom z piór szorty sprawiają wrażenie, jakby Twoje uda
+            miały skrzydła – niestety, nie da się w nich latać.
+        shadowquillPlastron:
+          name: Napierśnik Cienia
+          desc: Przez te wszystkie ciemne pióra wyglądasz jak ptak.
+        aerofibrilShorts:
+          name: Aerofibrylowe Spodnie
+          desc: Te szorty są niezwykle lekkie – ma się wrażenie, jakby w ogóle nie
+            miało się na sobie spodni. Upewnij się jednak, że je masz!
+        aerofibrilPlastron:
+          desc: Aerodynamiczna nić sprawia, że plastron lekko świeci, gdy wieje na
+            niego wiatr.
+          name: Aerofibrylowy Plastron
       hunting:
         mangroveBirdhouse:
           desc: Namorzyny nie są często wykorzystywane do produkcji domków dla ptaków,
@@ -1262,6 +1293,9 @@ singulars:
           name: Topazowe Dłuto
           desc: Sama krawędź dłuta wykonana jest z topazu, dzięki czemu jest bardzo
             ostra.
+        amuletOfTheSpider:
+          name: Amulet z Pająkiem
+          desc: Lśniący amulet o mocy pająka.
       smithing:
         reinforcedBellows:
           name: Wzmocnione Miechy
@@ -1706,12 +1740,16 @@ singulars:
           desc: Przyjemne i ciepłe, ale nie tak ciepłe, jak rzeczy, do których będziesz
             ich potrzebować.
         rottenWrentmarine:
-          name: Zepsuty Wrentmarine (Testowy))
+          name: Zepsuty Wrentmarine (przedmiot testowy)
           desc: Tylko dla testerów. Zapewnia nieograniczone zasoby.
         spiceRackpack:
           desc: Popularny wynalazek z Wrentmark, plecak w którym można trzymać pojemniki
             z przyprawami.
           name: Plecak na Przyprawy
+        rottenEctoplasm:
+          name: Zgniła Ektoplazma (przedmiot testowy)
+          desc: Tylko dla testerów. Zapewnia nieograniczone miejsce w ekwipunku jako
+            przedmiot kolekcjonerski.
       crafting:
         candlehat:
           name: Czapkoświeczka
@@ -1854,6 +1892,10 @@ singulars:
           desc: Cienka linka z długą, mocną igłą na końcu, służąca do przekłuwania
             złowionych ryb. Na tej lince można ułożyć dziesiątki ryb.
           name: Linka Wędkarska
+        tripleRodRest:
+          desc: Choć ten stojak mieści trzy wędki, z jakiegoś powodu nie da się obsługiwać
+            więcej niż jednej naraz. Przynajmniej ładnie wygląda – przypomina poroże.
+          name: Trójnik Wędkarski
       foraging:
         halflingsFeetSlippers:
           name: Kapcie Niziołka
@@ -1904,9 +1946,9 @@ singulars:
           desc: Utrzymuje chłód podczas zbierania w gorącym otoczeniu, ale ogrzewa
             w zimnym otoczeniu.
         camouflageCape:
-          name: Peleryna Kamuflażu
-          desc: Równie dobrze możesz nazwać to peleryną-niewidką, ponieważ sprawia,
-            że jesteś praktycznie niewidzialny podczas wędrówki w poszukiwaniu skarbów.
+          name: Liściasta Peleryna
+          desc: Peleryna wykonana w całości z liści, która pomoże ci wczuć się w klimat
+            zbieractwa. Pewnie stanowi zagrożenie pożarowe, ale możesz ją zostawić.
         dullMachete:
           name: Tępa Maczeta
           desc: Ostrze nie jest w dobrym stanie, jakby całe lasy zostały już nim wykarczowane.
@@ -2140,7 +2182,25 @@ singulars:
           desc: Źródło do nauki jubilerstwa i zdobnictwa .
         darWittsMonocle:
           name: Monokl Dar Wittów
-          desc: Pamiątka po Dar Wittach, wpływowej rodzinie w porcie czarnej magii.
+          desc: Pamiątka po Dar Wittach, wpływowej rodzinie w Porcie Czarnej Magii.
+      tailoring:
+        safetyScissors:
+          desc: Nożyczki, które nie są zbyt ostre, aby zapobiec skaleczeniom podczas
+            nauki ich prawidłowego używania.
+          name: Bezpieczne Nożyczki
+        simpleSewingNeedle:
+          name: Zwykła Igła
+          desc: Bardzo prosta igła, której można używać do podstawowych prac krawieckich.
+        markingChalk:
+          name: Kreda Krawiecka
+          desc: Znikająca kreda krawiecka do tkanin. Pozwala na wyznaczanie precyzyjnych
+            linii bez uszkadzania materiału.
+        practicePins:
+          name: Szpilki Krawieckie
+          desc: Szpilki, które łatwo utrzymują materiał na miejscu i przy których
+            istnieje mniejsze ryzyko przypadkowego ukłucia się.
+        clingyMeasuringTape:
+          name: Taśma Krawiecka
     versatile:
       backpack:
         name: Plecak
@@ -2547,7 +2607,8 @@ singulars:
         desc: Te niebieskie, wygodne buty są również wytrzymałe.
       cursedAwl:
         name: Przeklęte Szydło
-        desc: Po użyciu szydło emituje dym w odcieniach niebieskiego i fioletu.
+        desc: Gdy masz to na sobie, to szydło wydziela dym w odcieniach błękitu i
+          fioletu.
       treasureGrabber:
         desc: Nigdy nie było prościej podnosić skrzyń, które są poza zasięgiem gdziekolwiek,
           podczas wykonywania czegokolwiek.
@@ -2568,6 +2629,14 @@ singulars:
         name: Pierścień Kolekcji
         desc: Pierścień, który staje się lepszy, gdy tylko powiększasz swoją kolekcję
           znajdźkami. Za ilość!
+      adventurersGuildBuckler:
+        name: Puklerz Gildii Poszukiwaczy Przygód
+        desc: Solidna, okrągła tarcza z Gildii Poszukiwaczy Przygód, która zdaje się
+          rezonować w obecności przedmiotów z nią powiązanych.
+      ghostTrapPack:
+        name: Pułapka na Duchy
+        desc: Do masywnego plecaka dołączona jest rura służąca do chwytania cząstek
+          widmowych.
     combat:
       swashbucklerSword:
         name: Miecz Awanturnika
