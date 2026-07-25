@@ -4,7 +4,7 @@ singulars:
   traveling:
     text: 當旅行時。
   itemAnywhereWithYou:
-    text: 摧帶物品<item id="{item}"/>。
+    text: 攜帶物品<item id="{item}"/>。
   itemEquipped:
     text: 裝備物品<item id="{item}"/>。
   itemInInventory:
@@ -20,3 +20,56 @@ singulars:
     text: 當進行<skill skill="{skill}"/>。
   keywordEquipped:
     text: 裝備着<object id="{obj}" />。
+  distinctItemsEquippedKeyword:
+    text: 需要裝備<numberProgress current="{current}" max="{max}" /><object id="{obj}"
+      />。
+  distinctKeywordItemInInventory:
+    text: 背包需要擁有<numberProgress current="{current}" max="{max}" /><object id="{obj}"
+      />。
+  totalSteps:
+    text: 需要步行<numberProgress current="{current}" max="{max}" />步。
+  characterLevel:
+    text: 角色等級需達<numberProgress current="{current}" max="{max}" />級。
+  unlocked:
+    text: 需已解鎖<object id="{obj}" alwaysShow="true" />。
+  achievementPoints:
+    text: 需要有<icon i="achievement point"/><numberProgress current="{current}" max="{max}"
+      />成就點數。
+  haveCoins:
+    text: 需持有<icon i="money small"/><numberProgress current="{current}" max="{max}"
+      />金幣。
+  minimumSkillLevel:
+    text: 每種技能需至少<numberProgress current="{current}" max="{max}" />級。
+  levelUpSkills:
+    text: 提升技能<numberProgress current="{current}" max="{max}" />次。
+  activityType:
+    singleKeyword: 當進行<object id="{obj}" />時。
+  recipeType:
+    text: 當進行<object id="{obj}" />食譜。
+  service:
+    text: 需要<serviceTier tier="{tier}" /><object id="{obj}" />或更好的服務。
+  currentService:
+    text: 需要<serviceTier tier="{tier}" /><object id="{obj}" />或更好的服務。你未能使用<object
+      id="{currentObj}" icon="false" />。
+  realm:
+    text: 在<realm realm="{realm}" />地區時。
+  locationHasKeywords:
+    text: 在<object id="{obj}" />地方時。
+  petWithKeyword:
+    text: 擁有<object id="{obj}" />寵物。<numberProgress current="{current}" max="{max}"
+      />。
+  hasPet:
+    text: 擁有一隻寵物<object id="{obj}" />。
+  petAmount:
+    text: 擁有<numberProgress current="{current}" max="{max}" />寵物。
+  petHighestLevel:
+    text: 需擁有一隻最少<numberProgress current="{current}" max="{max}" />級的寵物。
+  itemsGained:
+    text: 獲得<object id="{obj}" />。<numberProgress current="{current}" max="{max}"
+      />。
+  petsHatched:
+    text: 擁有任何<object id="pet_egg" /><numberProgress current="{current}" max="{max}"
+      />。
+  achievementPointsPercent:
+    text: 擁有<icon i="achievement point"/><numberProgress current="{current}" max="{max}"
+      />成就點數（總數的{percentage}%）。
