@@ -516,22 +516,15 @@ singulars:
       withdraw: Withdraw
       youAreNotAtABank: <c>You are not at a location that has a bank</c>. You can only use the bank once you travel to a location that has a bank.
     multiSelect:
-      toggle: Select multiple
       selectedCount: "{count} selected"
-      selectAll: Select all
-      clear: Clear selection
       withdrawSelected: Withdraw
       depositSelected: Deposit
       moveHint: In multi-select mode you can tap to select multiple different items at once. You can drag to organize them in edit-mode or press the context menu on category headers to move them into a different category.
       moveSelectedHere: "Move {count} here"
     layout:
       reorder: Reorder
-      edit: Edit
-      create: Create layout
-      reassign: Re-sort items
-      viewList: List view
-      viewGrid: Grid view
-      settings: Settings
+      tabMostRecent: Most Recent
+      tabFavorites: Favourites
       settingsTitle: Bank settings
       settingsEmpty: More settings coming soon.
       settingsDisplayTitle: Display
@@ -541,6 +534,8 @@ singulars:
       settingShowTabQuantity: Show tab item counts
       settingShowCategoryQuantity: Show category item counts
       settingShowGradients: Show item gradients
+      settingShowMostRecentTab: Show Most Recent tab
+      settingShowFavoritesTab: Show Favourites tab
       settingGridColumns: Grid columns
       settingSwapTapActions: Swap tap and long press
       settingCondensedList: Condensed list view
@@ -549,9 +544,6 @@ singulars:
       settingShowPlaceholders: Show placeholders in edit mode
       settingConfirmBeforeApply: Review before completing
       settingsResetView: Reset view
-      collapseAll: Collapse all
-      expandAll: Expand all
-      sort: Sort
       sortTitle: Sort items
       sortAscending: Ascending
       sortDescending: Descending
@@ -563,7 +555,6 @@ singulars:
         coinValue: Coin value
         mostRecent: Most recent
       sortModesTitle: Order by
-      filter: Filter
       filterTitle: Filter items
       filterEnable: Enable filters
       filterGlobalTitle: General
@@ -595,14 +586,8 @@ singulars:
         findBirdNests: Bird nest find
         doubleRewards: Double rewards
         bonusExperience: Bonus experience
-      expandSidebar: Show tabs
-      collapseSidebar: Hide tabs
-      viewInventory: View inventory
-      viewBank: Back to bank
       inventoryTitle: Inventory
       inventoryEmpty: Your inventory is empty
-      depositAll: Deposit all
-      withdraw: Withdraw
       withdrawAvailable: "{count} in bank"
       withdrawLimit: "You can withdraw max {count} at once"
       withdrawStaged: "{count} staged"
@@ -614,7 +599,6 @@ singulars:
       depositComplete: Items deposited to your bank
       depositedAll: Deposited all items
       applyComplete: Bank transactions applied
-      deposit: Deposit
       depositAvailable: "{count} in inventory"
       depositStaged: "{count} staged"
       depositNotAtBank: You cannot deposit items while not at a bank
