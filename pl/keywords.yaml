@@ -9,7 +9,7 @@ singulars:
         składnik otrzymywany z <object id="fishing" />.
     logs:
       name: Kłoda
-      requirement: Wymaga drewniane <object id="logs" />.
+      requirement: Wymaga drewnianych <object id="logs" />.
       requirementLevel: Wymaga drewnianej kłody, która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
       desc: Mogą być przetworzone w <object id="plank" />. Podstawowy składnik otrzymywany
@@ -33,31 +33,41 @@ singulars:
       requirement: Wymaga <object id="plank" />.
       requirementLevel: Wymaga deski która ma przynajmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Może być użyta w wielu recepturach <object id="crafting" />. Przetwarzana
+        z <object id="logs" />.
     mushroom:
       name: Grzyb
       requirement: Wymaga <object id="mushroom" />.
       requirementLevel: Wymaga grzyba który ma przynajmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Może cię zabrać do całkiem nowego świata! Grzyby są używane do różnych
+        receptur <object id="cooking" />.
     gem:
       requirement: Wymaga <object id="gem" />.
       requirementLevel: Wymaga klejnotu, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
       name: Klejnot
+      desc: Może być użyty w wielu recepturach <object id="trinketry" />.
     bar:
       name: Sztabka
       requirement: Wymaga <object id="bar" />.
       requirementLevel: Wymaga sztabki która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Może być użyta w wielu recepturach <object id="smithing" /> i <skillType
+        type="artisan" />. Przetwarzana z <object id="ore" />.
     roughGem:
       name: Szorstki Klejnot
       requirement: Wymaga <object id="rough_gem" />.
       requirementLevel: Wymaga szorstkiego klejnotu który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Może być przetworzony w <object id="cut_gem" />. Podstawowy składnik otrzymywany
+        z <object id="mining" />.
     trinket:
       name: Błyskotka
       requirement: Wymaga <object id="trinket" />.
       requirementLevel: Wymaga błyskotki która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Błyskotki są używane w wielu recepturach <object id="trinketry" />.
     food:
       name: Jedzenie
       requirement: Wymaga jedzenia.
@@ -68,11 +78,13 @@ singulars:
       ingredient: Wymaga <object id="ingredient" />.
       requirementLevel: Wymaga składnika który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Używane jako składniki w recepturach.
     misc:
-      name: Różnorodny.
+      name: Różności
       requirement: Wymaga przedmiotu <object id="misc" />.
       requirementLevel: Wymaga różnorodnych przedmiotów które mają przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Różnorodne materiały, które mogą być wykorzystane w wielu recepturach.
     processed:
       name: Przetworzony
       requirement: Wymaga <object id="processed" /> materiał.
@@ -86,16 +98,22 @@ singulars:
       requirement: Wymaga <object id="offcut" />.
       requirementLevel: Wymaga odcięcia które ma co przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Resztki, czyli pozostałości materiałów, które mogą być przetworzone w
+        nowe.
     cutGem:
       name: Kawałek Klejnotu
       requirement: Wymaga <object id="cut_gem" />.
       requirementLevel: Wymaga rozciętego klejnotu który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Może być użyty w różnych recepturach <object id="trinketry" />. Przetwarzany
+        z <object id="rough_gem" />.
     nugget:
       name: Samorodek
       requirement: Wymaga <object id="nugget" />.
       requirementLevel: Wymaga samorodka, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Może być przetworzona w <object id="bar" />. Podstawowy składnik otrzymywany
+        z <object id="mining" />.
     fabric:
       requirementLevel: Wymaga tkaniny, która ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
@@ -106,6 +124,10 @@ singulars:
       desc: Może być użyty w recepturach <object id="tailoring" />, by wytworzyć <object
         id="fabric" />. Może być najczęściej znaleziony poprzez <object id="foraging"
         />.
+      name: Włóknista Roślina
+      requirement: Wymaga <object id="fibrousPlant" />.
+      requirementLevel: Wymaga włóknistej rośliny, która posiada przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
     crustacean:
       name: Skorupiak
       desc: Skorupiak, który może być użyte w wielu recepturach <object id="cooking"
@@ -113,6 +135,21 @@ singulars:
       requirement: Wymaga <object id="crustacean" />.
       requirementLevel: Wymaga skorupiaka, który ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+    hide:
+      name: Surowa Skóra
+      desc: Część skóry zwierzęcej, która może być użyta do receptur <object id="tailoring"
+        />, by wytworzyć <object id="leather" />. Może być otrzymana z <object id="hunting"
+        />.
+      requirement: Wymaga <object id="hide" />.
+      requirementLevel: Wymaga skóry, która posiada przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+    leather:
+      name: Skóra
+      desc: Kawałek skóry, który zazwyczaj będzie wykorzystywany w przepisach <object
+        id="tailoring" />.
+      requirement: Wymaga <object id="leather" />.
+      requirementLevel: Wymaga skóry która, ma co najmniej <keywordRequirements />
+        w swoich wymaganiach.
   tools:
     fishing:
       name: Wędkarstwo
@@ -384,7 +421,7 @@ singulars:
     needle:
       name: Igła
       desc: Narzędzie używane do szycia. Przydatne w <object id="tailoring" />.
-      requirement: Wymaga wyekwipowanej <object id="needle" />.
+      requirement: Wymaga wyposażenia <object id="needle" />.
       requirementLevel: Wymaga igły, która ma przynajmniej <keywordRequirements />
         w swoich wymaganiach.
     pins:
@@ -420,7 +457,7 @@ singulars:
       requirementLevel: Wymaga stojaka na wędkę, który ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
     huntingNet:
-      name: Siatka łowiecka
+      name: Siatka Łowiecka
       desc: Siatka używana do <object id="hunting" />.
       requirement: Wymaga założonej <object id="huntingNet" />.
       requirementLevel: Wymaga siatki łowieckiej, która ma przynajmniej <keywordRequirements
@@ -542,7 +579,7 @@ singulars:
         /> w swoich wymaganiach.
       desc: Amulety zakłada się na szyję.
     underwater:
-      name: Podwodny
+      name: Wodny
       requirement: Wymaga sprzętu <object id="item_underwater" />.
       requirementLevel: Wymaga sprzętu podwodnego, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
@@ -572,41 +609,53 @@ singulars:
       requirement: Wymaga <object id="cookedFish" />.
       requirementLevel: Wymaga usmażonej ryby która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Ugotowana z surowej <object id="fish" />. Może być zjedzona dla tymczasowych
+        bonusów.
     food:
       name: Żywność
       requirement: Wymaga <object id="food" />.
       requirementLevel: Wymaga jedzenia które, ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Jedzenie może być zjedzone dla tymczasowych bonusów.
     fruit:
       name: Owoc
       requirement: Wymaga <object id="fruit" />.
       requirementLevel: Wymaga owocu, który ma przynajmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Owoce mogą być zjedzone dla tymczasowych bonusów.
     beverage:
       requirement: Wymaga <object id="beverage" />.
       name: Napój
       requirementLevel: Wymaga napoju, który ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Napoje mogą być wypite dla tymczasowych bonusów.
     alcohol:
       name: Alkohol
       requirement: Wymaga <object id="alcohol" />.
       requirementLevel: Wymaga alkoholu który ma przynajmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Napoje alkoholowe mogą być wypite dla tymczasowych bonusów, ale pamiętaj,
+        by nie przepić!
     water:
       name: Woda
       requirement: Wymaga <object id="water" />.
       requirementLevel: Wymaga wody która ma przynajmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Podstawowy wymóg do życia.
     sandwich:
       name: Kanapka
       requirement: Wymaga <object id="sandwich" />.
       requirementLevel: Wymaga kanapki, która ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Wszystko, co znajduje się pomiędzy dwiema kromkami jest kanapką! Może
+        być zjedzone dla tymczasowych bonusów i jest wymagane do niektórych osiągnięć.
     memosphere:
       name: Memosfera
       requirement: Wymaga <object id="memosphere" />.
       requirementLevel: Wymaga memosfery która ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Pozwala ci zapamiętać dawno zapomniane sztuki. Memosfery mogą być użyte,
+        by od razu zdobyć doświadczenie.
   containers:
     chest:
       name: Skrzynia
@@ -635,43 +684,62 @@ singulars:
     lightSource:
       name: Źródło światła
       requirement: Wymaga wyposażenia <object id="lightSource" />.
-      requirementLevel: Wymaga od użytkownika posiadania <keywordRequirements />.
+      requirementLevel: Wymaga źródła światła które, ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+      desc: Oświetla ledwie widoczne obszary. Wymagane w niektórych lokacjach i aktywnościach.
     heatResist:
       requirement: Wymaga czegoś <object id="heat_resistant" />.
       name: Odporność na ciepło
-      requirementLevel: Wymaga od użytkownika posiadania czegoś <keywordRequirements
-        />.
+      requirementLevel: Wymaga przedmiotu odpornego na wysoka temperaturę, który ma
+        przynajmniej <keywordRequirements /> w swoich wymaganiach.
+      desc: Zapewnia chłód w gorących obszarach. Wymagane w niektórych aktywnościach
+        i lokacjach.
   misc:
     trash:
       name: Śmieci
       requirement: Wymaga <object id="trash" />.
       requirementLevel: Wymaga śmieci które mają co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Dla kogoś innego może to być skarbem.
     currency:
       name: Waluta
       requirement: Wymaga <object id="currency" />.
       requirementLevel: Wymaga waluty która, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
+      desc: Może być użyte, by zakupić rzeczy ze sklepów.
     spectral:
       name: Widmowy
       requirement: Wymaga przedmiotu <object id="spectral" />.
       requirementLevel: Wymaga przedmiotu widmowego który, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Widmowe przedmioty są zaklęte duchowymi możliwościami pochodzącymi z <object
+        id="c7a75c46-f140-4116-b0b6-f74e5d763ef5" />.
     cursed:
       name: Przeklęty
       requirement: Wymaga czegoś <object id="cursed" />.
       requirementLevel: Wymaga czegoś przeklętego, które ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Przeklęte usługi mają nieco negatywnych efektów.
+    upgradeable:
+      requirementLevel: Wymaga czegoś ulepszalnego, co ma przynajmniej <keywordRequirements
+        /> w swoich wymaganiach.
+      name: Ulepszalne
+      desc: Część wyposażenia, która może służyć do ulepszania! Może warto zachować
+        to na później, by wykonać ulepszenia później?
+      requirement: Wymaga czegoś, co jest <object id="upgradeable" />.
   achievements:
     percentage:
       name: Procent osiągnięć
       requirement: brak
       requirementLevel: brak
+      desc: Otrzymywane jako nagroda za osiągnięcie konkretnego procentu maksymalnych
+        punktów osiągnięć.
     reward:
       name: Nagroda za osiągnięcia
       requirement: Wymaga <object id="achievement_reward" />.
       requirementLevel: Wymaga nagrody za osiągnięcie która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Otrzymywane jako nagroda za osiągnięcia.
   search:
     skills:
       agility:
@@ -715,7 +783,7 @@ singulars:
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
       global:
-        name: Globalny
+        name: Globalnie
         requirement: <PLACEHOLDER>
         requirementLevel: <PLACEHOLDER>
       trinketry:
@@ -797,28 +865,49 @@ singulars:
           name: Wrentmark
           requirement: <PLACEHOLDER>
           requirementLevel: <PLACEHOLDER>
+        desert:
+          name: Pustynny
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
+        snowy:
+          name: Śnieżny
+          requirement: <PLACEHOLDER>
+          requirementLevel: <PLACEHOLDER>
   weight:
     light:
       name: Lekki
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Liczy się jako lekka waga, co oznacza że maksymalny stack wynosi 1000.
     heavy:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Ciężki
+      desc: Liczy się jako ciężka waga, co oznacza że maksymalny stack wynosi 1.
     ultraLight:
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
       name: Ultra lekki
+      desc: Liczy się jako ultra lekka waga, co oznacza że maksymalny stack wynosi
+        10000.
+    medium:
+      name: Średni
+      desc: Liczy się jako średnia waga, co oznacza że maksymalny stack wynosi 100.
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
   services:
     sawmill:
       name: Tartak
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Usługa pozwalająca przetworzyć <object id="logs" /> w <object id="plank"
+        />, również pozwalająca na inne czynności z <skill skill="carpentry"/>.
     workshop:
       name: Warsztat
       requirement: <PLACEHOLDER>
       requirementLevel: <PLACEHOLDER>
+      desc: Usługa pozwalająca zmienić materiały w <object id="tool" /> i użyteczne
+        przedmioty, przydatna również w <skill skill="crafting"/>.
     forge:
       name: Kuźnia
       requirement: <PLACEHOLDER>
@@ -858,27 +947,35 @@ singulars:
         />.
       requirementLevel: Wymaga narzędzia poszukiwacza przygód, które ma co najmniej
         <keywordRequirements /> w swoich wymaganiach.
+      desc: Liczy się jako podróżniczy zestaw narzędzi.
     divingGear:
       requirement: Wymaga <object id="itemset_diving_gear" />.
       name: Sprzęt Nurka
       requirementLevel: Wymaga sprzętu do nurkowania, który ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Liczy się jako zestaw do nurkowania. Musisz posiadać taki zestaw, by zejść
+        w głębiny.
     advancedDivingGear:
       name: Zaawansowany Sprzęt Nurka
       requirement: Wymaga <object id="itemset_diving_gear_advanced" />.
       requirementLevel: Wymaga zaawansowanego sprzętu do nurkowania, który ma co najmniej
         <keywordRequirements /> w swoich wymaganiach.
+      desc: Liczy się jako zaawansowany zestaw nurkowy. Potrzebujesz zaawansowanego
+        zestawu, by wejść w głębsze i niebezpieczniejsze regiony.
     expertDivingGear:
       name: Ekspercki Sprzęt Nurka
       requirement: Wymaga <object id="itemset_diving_gear_expert" />.
       requirementLevel: Wymaga eksperckiego sprzętu do nurkowania, który ma co najmniej
         <keywordRequirements /> w swoich wymaganiach.
+      desc: Liczy się jako eksperckie wyposażenie nurkowe. Potrzebujesz go, by zejść
+        pod wodę w najniebezpieczniejsze obszary.
     properGear:
       name: Odpowiednie Wyposażenie
       requirement: Wymaga zużytych elementów zestawu <object id="itemset_proper_gear"
         />.
       requirementLevel: Wymaga odpowiedniego wyposażenia które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Zalicza się do właściwego zestawu wyposażenia.
   locations:
     underwater:
       name: Podwodny
@@ -901,24 +998,31 @@ singulars:
       name: Duchowy
       desc: Miejsce, które ma połączenie z duchami. Sprawi, że niektóre przedmioty
         <object id="spectral" /> będą silniejsze.
+      requirement: <PLACEHOLDER>
+      requirementLevel: <PLACEHOLDER>
     snowy:
       name: Śnieżny
       desc: Miejsce, które znajduje się w zimnym otoczeniu, z masą śniegu. <object
         id="skis" /> sprawią się dobrze w tym regionie!
+      requirementLevel: <PLACEHOLDER>
+      requirement: <PLACEHOLDER>
   faction:
     reward:
       name: Nagroda Frakcji
       requirement: Wymaga <object id="faction_reward" />.
       requirementLevel: Wymaga nagrody frakcji która, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Otrzymywane jako nagroda z frakcji.
   eggs:
     egg:
       name: Jajo
       requirementLevel: Wymaga jaja które, ma co najmniej <keywordRequirements />
         w swoich wymaganiach.
       requirement: Wymaga <object id="egg" />.
+      desc: Niezbyt ładnie pachnie, gdy zostawisz za długo w plecaku.
     petEgg:
       name: Jajo Pupila
       requirement: Wymaga <object id="pet_egg" />.
       requirementLevel: Wymaga jaja pupila które, ma co najmniej <keywordRequirements
         /> w swoich wymaganiach.
+      desc: Możesz przypisać je, by otrzymać pupila!

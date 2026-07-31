@@ -66,9 +66,8 @@ singulars:
         desbloqueada.
       newDrop: <chip><stext><c i="0">Nuevo objeto </c></stext></chip><c i="1">{itemName}</c>
         ahora puede obtenerse con <c>{activityName}</c>.
-      newRoute: '<chip><stext><c i="0">Nueva ruta de viaje </c></stext></chip> <c
-        i="1"><location id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c>
-        desbloqueada.'
+      newRoute: '<chip><stext><c i="0">Nueva ruta de viaje</c></stext></chip> <c i="1"><location
+        id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c> desbloqueada.'
       unlocks: Desbloqueos
       noNewUnlocks: No hay nuevos desbloqueos para este nivel.
     inactiveSteps:
@@ -83,13 +82,13 @@ singulars:
       unlocks: Desbloqueos
       noNewUnlocks: No hay desbloqueos nuevos para este nivel.
     idleSteps:
-      stepsWhileAway: Pasos ganados mientras el juego estaba cerrado
+      stepsWhileAway: Pasos ganados mientras el juego estaba cerrado.
       whileYouWereAway: Mientras no estabas...
       gainedExperience: <skill skill="{skill}" /> ha ganado <c>+{exp}</c> de experiencia.
-      gainedItem: Has obtenido <c>+{amount}</c> <item id="{item}" />
-      craftedItem: Has fabricado <c>+{amount}</c> <item id="{item}" />
-      gainedMoney: Has obtenido <c i="0">+{amount}</c> <c i="1">monedas</c>
-      characterGained: El personaje ha obtenido <c>+{amount}</c> de experiencia />
+      gainedItem: Has obtenido <c>+{amount}</c> <item id="{item}" />.
+      craftedItem: Has fabricado <c>+{amount}</c> <item id="{item}" />.
+      gainedMoney: Has obtenido <c i="0">+{amount}</c> <c i="1">monedas</c>.
+      characterGained: El personaje ha obtenido <c>+{amount}</c> de experiencia />.
       arrivedAt: Has llegado a <location /> <c>{location}</c>.
       nothingHappened: No ha sucedido nada especial.
       skillLeveledUp: <skill skill="{skill}" /> ha subido del nivel <c i="0">{from}</c>
@@ -174,6 +173,11 @@ singulars:
         text: El cliente del juego no pudo validar el cliente. Esto se debe probablemente
           a un error de red. Por favor, reinicia el juego e inténtalo de nuevo.
         title: Fallo al validar el cliente
+      saveDesync:
+        title: Datos De Guardado No Sincronizados
+        text: Los datos del personaje actual no están sincronizados con el servidor.
+          Reinicia el juego para reemplazar tu guardado local con la última versión
+          del servidor.
     characterValidation:
       nameTooShort: El nombre del personaje debe tener una longitud mayor de tres
         letras.
@@ -322,7 +326,7 @@ singulars:
       text: ¡Estás a punto de <c>vender objetos de gran valor de los que podrías arrepentirte</c>!
         ¿Estás seguro de que quieres vender estos objetos?
     toggleAgilityXp:
-      title: ¿Desactivar la obtención de EXP de agilidad al viajar?
+      title: ¿Desactivar la obtención de EXP de agilidad al Viajar?
       text: ¿Seguro que quieres desactivar la obtención de experiencia de agilidad
         al viajar? Puedes volver a activarla más tarde desde la configuración. Esta
         configuración está pensada para quienes desean crear personajes especializados

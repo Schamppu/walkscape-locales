@@ -332,15 +332,15 @@ singulars:
       viewDescription: Odblokuj osiągnięcia, aby zdobywać <hl>Punkty Osiągnięć</hl>.
         Po zdobyciu określonej liczby punktów odblokowujesz specjalne nagrody. Niektóre
         osiągnięcia same w sobie dają nagrody za ich zdobycie.
-      specialItems: Specjalne przedmioty, takie jak <c>Znajdźki</c>, <c>Przedmioty
-        do Zadań</c> i <c>Artefakty</c> są zbierane w trakcie twojej podróży przez
-        WalkScape. Możesz sprawdzić je tutaj. Znajdźki dają ci progres w punktach
+      specialItems: Specjalne przedmioty, takie jak <icon i="Collectible"/> <c>Znajdźki</c>
+        i <icon i="Lore Item"/> <c>Artefakty</c> są zbierane w trakcie twojej podróży
+        przez WalkScape. Możesz sprawdzić je tutaj. Znajdźki dają ci progres w punktach
         osiągnięć.
-      collectibleItems: Przedmioty kolekcjonerskie (Znajdźki) to rzeczy, które możesz
-        zdobyć ze świata WalkScape. Istnieje kilka rodzajów przedmiotów kolekcjonerskich,
-        które możesz spróbować zebrać. Nie zajmują miejsca w ekwipunku i zawsze są
-        na wyposażeniu twojej postaci.
-      noCollectibleItems: Nie udało ci się odnaleźć jeszcze żadnych Znajdziek.
+      collectibleItems: Przedmioty kolekcjonerskie (Znajdźki), można zdobyć w grze
+        głównie poprzez udział w różnych aktywnościach. <c i=0>Każdy przedmiot kolekcjonerski
+        zapewnia</c> <c i=1>jeden</c> <icon i="Achievement Point"/> <c i=1>punkt osiągnięć</c>.
+        Przedmioty te nie zajmują miejsca w ekwipunku i zawsze towarzyszą Twojej postaci.
+      noCollectibleItems: Nie posiadasz żadnych Znajdziek.
       totalProgressUnlocks: Otrzymasz te nagrody na podstawie swojego całkowitego
         postępu w Osiągnięciach, ale stracisz do nich dostęp, jeśli pojawi się więcej
         punktów osiągnięć.
@@ -405,7 +405,7 @@ singulars:
       allItemsInUse: Wszystkie te przedmioty są aktualnie w użyciu i nie można ich
         wyrzucić.
       cantBeDropped: Przedmiot nie może zostać wyrzucony.
-      oneOrMoreCantBeDropped: Jeden lub więcej przedmiotów nie może zostać wyrzuconych.
+      oneOrMoreCantBeDropped: Nie można wyrzucić jednego lub więcej przedmiotów.
       attributes: Atrybuty
       abilities: Zdolności
       requires: Wymaga
@@ -475,7 +475,7 @@ singulars:
       options: Opcje
       requirements: Wymagania
       rewards: Nagrody
-      levelActivity: Poziom aktywności<c>{level}</c> <object id="{skill}"/>
+      levelActivity: Poziom aktywności <c>{level}</c> <object id="{skill}"/>
       startActivity: Rozpocznij aktywność
       queueActivity: Kolejka aktywności
       travelAndStartActivity: Podróżuj i rozpocznij aktywność
@@ -498,7 +498,7 @@ singulars:
       abilities: Zdolności
       baseEfficiency: Podstawowa wydajność
       fromOverencumbered: Przeciążony
-      fromOverLevels: Przekrocz poziom <numberProgress current="{current}" max="{max}"
+      fromOverLevels: Przekroczenie poziomu <numberProgress current="{current}" max="{max}"
         />
       fromServices: Bonus
       fromPets: Pupile
@@ -514,14 +514,14 @@ singulars:
       noInputOptions: Nie posiadasz <object id="{keyword}"/> w swoim ekwipunku, by
         użyć to jako wkład
       fineInputBenefit: Benefity z używania <c>świetnych wkładów</c>
-      requirementsNotMetForInput: <object id="{item}"/> wymagania nie są spełnione
+      requirementsNotMetForInput: <object id="{item}"/> wymóg nie jest spełniony
       inputAttributes: Benefity z używania <object id="{item}"/>
       activeEffects: Aktywne efekty
       inputsNotMet: Wymagania wkładów nie są spełnione
       fromInputAttributes: Atrybuty wkładów
       fromFineInputs: Świetne wkłady
     rewards:
-      experience: <bp /><c>{xp} </c><object id="{skill}"/> doświadczenia
+      experience: <bp /><c>{xp} </c>doświadczenia w <object id="{skill}"/>
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} znajdźki</c>, które
         można znaleźć
       reputation: <bp /><object id="{faction}" /> reputacja <c>+{amount}</c>
@@ -694,7 +694,7 @@ singulars:
       inputCharges: 'Ładunki:'
       inputNextCharge: 'Następny ładunek:'
       inputAtMax: Maks.
-      cooldownCharged: Naładowałeś zdolność <object id="{ability}"/> dla <c>{target}</c>!
+      cooldownCharged: Naładowano zdolność <object id="{ability}"/> dla <c>{target}</c>!
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
         otrzymane z <object id="{item}" />
@@ -1301,7 +1301,7 @@ singulars:
       destroy: Zniszcz
       totalXp: Całkowite XP
       pets: Pupile
-      hatching: Wykluwa się
+      hatching: Wykluwanie
       claimPet: Przypisz pupila
       chooseEgg: Wybierz jajko
       abilities: Zdolności

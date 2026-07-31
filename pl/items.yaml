@@ -127,7 +127,7 @@ singulars:
       kelpRolls:
         desc: Słynny syrentyjski przysmak, bułeczki z wodorostów są wytwarzane z wodorostów,
           które są starannie zwijane w odpowiedni kształt.
-        name: Bułka z Wodorostów
+        name: Sajgonki z Wodorostów
       mudPie:
         name: Ciasto Błotne
         desc: Prosty, ziemisty przysmak, stworzony z błota i wyobraźni.
@@ -190,6 +190,21 @@ singulars:
           sposobem na rozpoczęcie dnia, nawet jeśli nie jest to już jego prawdziwy
           początek.
         name: Smaczne Śniadanie
+      jerky:
+        desc: Duży kawał przygotowanego, wysuszonego mięsa. Daje dobre źródło protein
+          na długi wypad i nie zgnije szybko.
+        name: Szarpane Mięso
+      spicyMoray:
+        desc: Jednocześnie słodkie i lekko pikantne. To połączenie smaków jest naprawdę
+          wyjątkowe, dzięki czemu danie to cieszy się dużą popularnością wśród miejscowych.
+        name: Pikantna Murena
+      jelliedStreamEel:
+        name: Węgorz w Galarecie
+        desc: Może cię zahipnotyzować, jeśli będziesz się w niego zbyt długo wpatrywać.
+      baconWeave:
+        desc: Kilka splecionych ze sobą plastrów bekonu. Gdyby mieć ich wystarczająco
+          dużo, można by z nich uszyć sukienkę, ale trzeba by przestać je zjadać.
+        name: Spleciony Bekon
     memosphere:
       carpentryMemosphere:
         name: Memosfera Stolarstwa
@@ -230,6 +245,12 @@ singulars:
       trinketryMemosphere:
         name: Memosfera Jubilerstwa
         desc: Wewnątrz szklanej kuli widać wspomnienie polerowania połyskującego klejnotu.
+      tailoringMemosphere:
+        desc: W środku tej szklanej kuli widzisz wspomnienie szycia i cięcia tkanin.
+        name: Memosfera krawiectwa
+      huntingMemosphere:
+        name: Memosfera łowiectwa
+        desc: W środku tej szklanej kuli widzisz wspomnienia śledzenia jakiegoś stworzenia.
     cookedFish:
       cookedPerch:
         name: Gotowany Okoń
@@ -375,9 +396,8 @@ singulars:
       woodcutting:
         birdNest:
           name: Ptasie Gniazdo
-          desc: To gniazdo wypadło z drzewa, które ścinałeś. Jego właściciel nie będzie
-            już w stanie go znaleźć, więc równie dobrze możesz sprawdzić, co się w
-            nim znajduje.
+          desc: Gniazdo uwite przez ptaka. Jego właściciel już go nie odnajdzie, więc
+            równie dobrze możesz sprawdzić, co jest w środku.
         woodcuttingChest:
           name: Skrzynia Drwala
           desc: Piękna ozdobna drewniana skrzynia, ozdobiona różnymi rodzajami kory
@@ -572,8 +592,8 @@ singulars:
             umiejętnościami.
         heavyHelmet:
           name: Ciężki Stalowy Hełm
-          desc: Odblask od reszty zbroi i małe szczeliny sprawiają, że dość trudno
-            jest dostrzec otoczenie, ale czujesz się bezpiecznie.
+          desc: Przez wąskie szczeliny dość trudno dostrzec otoczenie, ale czujesz
+            się bezpiecznie.
         legs:
           name: Stalowe Bigwanty
           desc: Lśnią obietnicą ochrony bohaterów, gdy stawiają czoła niebezpieczeństwom
@@ -840,7 +860,7 @@ singulars:
           name: Skrawki Czarnej Skóry
         elderHide:
           desc: Skóra majestatycznej bestii.
-          name: Czarna Skóra
+          name: Surowa Czarna Skóra
         aerofibrilMitts:
           desc: Rękawice zostały wzbogacone o aerodynamiczną nić, która sprawia, że
             dłonie poruszają się szybciej niż zwykle.
@@ -951,26 +971,83 @@ singulars:
           desc: <PLACEHOLDER>
         spectralHandwear:
           name: Widmowe Rękawice
+          desc: Ektoplazmatyczny splot tych rękawic chroni palce podczas pracy nad
+            rzemieślniczymi dziełami.
         spectralVest:
           name: Widmowa Kamizelka
+          desc: Kamizelka ta zapewnia odpowiednią ochronę podczas pracy przy stanowiskach
+            rzemieślniczych, a jednocześnie nie krępuje zbytnio ruchów dzięki solidnemu,
+            wzmacniającemu usztywnieniu biegnącemu wzdłuż korpusu.
         spectralTunic:
           name: Widmowa Tunika
+          desc: Ta tunika zapewnia dużą swobodę ruchów dzięki doskonałemu splotowi
+            ektoplazmatycznemu wkomponowanemu w część tułowiową.
         spectralChaps:
           name: Widmowe Chapsy
+          desc: Nogawice nasycone energią ektoplazmy, zapewniające jeszcze większą
+            swobodę ruchów.
         spectralBreeches:
           name: Widmowe Bryczesy
+          desc: Pas tych spodni pewnie utrzymuje narzędzia na miejscu dzięki wplecionej
+            w niego – dla Twojej wygody – energii ektoplazmatycznej.
         spectralSewingNeedle:
           name: Widmowa Igła Krawiecka
+          desc: Igła wykonana z kości, przez której oczko przechodzi ektoplazma, łączy
+            szyciem materiały, jak duszę do ciała.
         spectralMitts:
           name: Widmowe Rękawiczki
+          desc: Rękawice splecione z kości i ektoplazmy, umożliwiające wykonywanie
+            szybkich ruchów.
         toughLinenCloth:
           desc: Kawałek tkaniny wykonany z bardziej surowych materiałów.
+          name: Wytrzymała Lniana Tkanina
         tattySkirt:
           desc: Rozdarte płótno pozwalające się okryć, łatwo się w niej poruszać,
             ale tkanina sprawia, że twoja skóra swędzi.
+          name: Podarta Spódnica
         tattyGarb:
           desc: Rozdarte płótno noszone wokół korpusu, głównie noszone przez wieśniaków
             i innych biedaków.
+          name: Podarta Szata
+        silverSewingNeedle:
+          desc: Igła do szycia, która została ulepszona srebrem, by ukazać twoje umiejętności
+            krawieckie.
+          name: Srebrna Igła
+        goldenSewingNeedle:
+          name: Złota Igła
+          desc: Zdobiona igła zrobiona ze złota, która zamienia sesję szycia w spektakl
+            dla gapiów.
+        tattyHandwraps:
+          name: Podarte Owijki
+          desc: Owijki na dłonie z postrzępionego materiału, wykonane przez kogoś
+            o wątpliwych umiejętnościach.
+        elderhideChaps:
+          name: Chapsy z Czarnej Skóry
+          desc: Chapsy wykonane ze czarnej skóry zapewniają doskonałą ochronę przed
+            niekorzystnymi warunkami atmosferycznymi.
+        aerofibrilBracers:
+          desc: Karwasze zostały wzbogacone o aerodynamiczne nici, dzięki którym dłonie
+            poruszają się szybciej niż zwykle.
+          name: Aerofibrylowe Karwasze
+        shadowquillBracers:
+          name: Karwasze Cienia
+          desc: Te karwasze zdobione ciemnymi piórami doskonale sprawdzają się w działaniach
+            wymagających skrytości.
+        shadowquillShorts:
+          name: Nagolennice Cienia
+          desc: Dzięki zdobieniom z piór szorty sprawiają wrażenie, jakby Twoje uda
+            miały skrzydła – niestety, nie da się w nich latać.
+        shadowquillPlastron:
+          name: Napierśnik Cienia
+          desc: Przez te wszystkie ciemne pióra wyglądasz jak ptak.
+        aerofibrilShorts:
+          name: Aerofibrylowe Spodnie
+          desc: Te szorty są niezwykle lekkie – ma się wrażenie, jakby w ogóle nie
+            miało się na sobie spodni. Upewnij się jednak, że je masz!
+        aerofibrilPlastron:
+          desc: Aerodynamiczna nić sprawia, że plastron lekko świeci, gdy wieje na
+            niego wiatr.
+          name: Aerofibrylowy Plastron
       hunting:
         mangroveBirdhouse:
           desc: Namorzyny nie są często wykorzystywane do produkcji domków dla ptaków,
@@ -1051,6 +1128,22 @@ singulars:
         birchHuntingBow:
           name: Brzozowy Łuk Myśliwski
           desc: Łuk myśliwski wykonany z prostego, ale użytecznego drewna brzozowego.
+        boxtrap:
+          desc: Szybko zmontowana pułapka skrzynkowa, którą można łatwo rozłożyć i
+            złapać małe stworzenia, nim sama rozpadnie się chwilę później.
+          name: Pułapka Skrzynkowa
+        strongBowstring:
+          name: Silna cięciwa
+          desc: Znacznie silniejsza cięciwa, która może być naciągnięta na znacznie
+            silniejsze łuki.
+        quaintQuiver:
+          desc: Niewielki skórzany kołczan, który przechowa Twoje strzały myśliwskie.
+            Całkiem proste rozwiązanie.
+          name: Urokliwy Kołczan
+        bolsteredQuiver:
+          name: Wzmocniony Kołczan
+          desc: Solidny kołczan o słusznej wadze, idealny do noszenia strzał myśliwskich
+            lub czegokolwiek innego, co się do niego wrzuci.
       trinketry:
         cutEthernite:
           name: Ethernite
@@ -1210,6 +1303,9 @@ singulars:
           name: Topazowe Dłuto
           desc: Sama krawędź dłuta wykonana jest z topazu, dzięki czemu jest bardzo
             ostra.
+        amuletOfTheSpider:
+          name: Amulet z Pająkiem
+          desc: Lśniący amulet o mocy pająka.
       smithing:
         reinforcedBellows:
           name: Wzmocnione Miechy
@@ -1311,14 +1407,14 @@ singulars:
     equipmentSets:
       dimensional:
         chest:
-          name: Wielowymiarowa koszulka
-          desc: Kołnierzyk i mankiety tej koszuli są pokryte gwiezdnym pyłem, a fale
-            pustki powoli spływają na resztę koszuli.
+          name: Wielowymiarowa Koszulka
+          desc: Górna część i mankiety tej koszuli pokryte są gwiezdnym pyłem, a fale
+            pustki powoli przetaczają się przez resztę materiału.
         feet:
-          name: Wielowymiarowe buty
-          desc: Gwiezdny pył na butach sprawia, że rozświetlają się one z każdym krokiem.
+          name: Wielowymiarowe Buty
+          desc: Gwiezdny pył na butach sprawia, że migoczą one przy każdym kroku.
         head:
-          name: Wielowymiarowa czapka
+          name: Wielowymiarowa Czapka
           desc: Na brzegu kapelusza widnieją konstelacje, które w dzień delikatnie
             iskrzą, a w nocy poruszają się niczym wiry pustki.
         legs:
@@ -1330,11 +1426,11 @@ singulars:
           desc: Za każdym razem, gdy podnosisz kołnierzyk, wyglądasz trochę fajniej.
             Zwłaszcza z zapiętym górnym guzikiem.
         feet:
-          name: Zaczarowane buty
+          name: Zaczarowane Buty
           desc: Dwukrotne kliknięcie obcasami tak naprawdę nie odsyła Cię do domu,
             ale chodzenie w nich brzmi naprawdę fajnie.
         head:
-          name: Zaczarowany kapelusz
+          name: Zaczarowany Kapelusz
           desc: Ten kapelusz może pomieścić dziesięć galonów. Czego? Nikt jeszcze
             tego nie rozgryzł.
         legs:
@@ -1383,6 +1479,14 @@ singulars:
           name: Szlifierka Poszukiwacza Przygód
           desc: Szlifierka z insygniami Gildii Poszukiwaczy Przygód. Może być używana
             do wygładzania szorstkich powierzchni.
+        adventuringHuntingBow:
+          desc: Łuk myśliwski z emblematem Gildii Poszukiwaczy Przygód. Pomoże ci
+            w polowaniu na dzikich terenach.
+          name: Zaawansowany Łuk Myśliwski
+        adventuringSewingNeedle:
+          name: Zaawansowana Igła
+          desc: Igła krawiecka z emblematem Gildii Poszukiwaczy Przygód. Idealna do
+            naprawy odzieży w podróży.
     skilling:
       agility:
         exerciseHeadband:
@@ -1654,12 +1758,16 @@ singulars:
           desc: Przyjemne i ciepłe, ale nie tak ciepłe, jak rzeczy, do których będziesz
             ich potrzebować.
         rottenWrentmarine:
-          name: Zepsuty Wrentmarine (Testowy))
+          name: Zepsuty Wrentmarine (przedmiot testowy)
           desc: Tylko dla testerów. Zapewnia nieograniczone zasoby.
         spiceRackpack:
           desc: Popularny wynalazek z Wrentmark, plecak w którym można trzymać pojemniki
             z przyprawami.
           name: Plecak na Przyprawy
+        rottenEctoplasm:
+          name: Zgniła Ektoplazma (przedmiot testowy)
+          desc: Tylko dla testerów. Zapewnia nieograniczone miejsce w ekwipunku jako
+            przedmiot kolekcjonerski.
       crafting:
         candlehat:
           name: Czapkoświeczka
@@ -1802,6 +1910,10 @@ singulars:
           desc: Cienka linka z długą, mocną igłą na końcu, służąca do przekłuwania
             złowionych ryb. Na tej lince można ułożyć dziesiątki ryb.
           name: Linka Wędkarska
+        tripleRodRest:
+          desc: Choć ten stojak mieści trzy wędki, z jakiegoś powodu nie da się obsługiwać
+            więcej niż jednej naraz. Przynajmniej ładnie wygląda – przypomina poroże.
+          name: Trójnik Wędkarski
       foraging:
         halflingsFeetSlippers:
           name: Kapcie Niziołka
@@ -1852,9 +1964,9 @@ singulars:
           desc: Utrzymuje chłód podczas zbierania w gorącym otoczeniu, ale ogrzewa
             w zimnym otoczeniu.
         camouflageCape:
-          name: Peleryna Kamuflażu
-          desc: Równie dobrze możesz nazwać to peleryną-niewidką, ponieważ sprawia,
-            że jesteś praktycznie niewidzialny podczas wędrówki w poszukiwaniu skarbów.
+          name: Liściasta Peleryna
+          desc: Peleryna wykonana w całości z liści, która pomoże ci wczuć się w klimat
+            zbieractwa. Pewnie stanowi zagrożenie pożarowe, ale możesz ją zostawić.
         dullMachete:
           name: Tępa Maczeta
           desc: Ostrze nie jest w dobrym stanie, jakby całe lasy zostały już nim wykarczowane.
@@ -2088,7 +2200,109 @@ singulars:
           desc: Źródło do nauki jubilerstwa i zdobnictwa .
         darWittsMonocle:
           name: Monokl Dar Wittów
-          desc: Pamiątka po Dar Wittach, wpływowej rodzinie w porcie czarnej magii.
+          desc: Pamiątka po Dar Wittach, wpływowej rodzinie w Porcie Czarnej Magii.
+      tailoring:
+        safetyScissors:
+          desc: Nożyczki, które nie są zbyt ostre, aby zapobiec skaleczeniom podczas
+            nauki ich prawidłowego używania.
+          name: Bezpieczne Nożyczki
+        simpleSewingNeedle:
+          name: Zwykła Igła
+          desc: Bardzo prosta igła, której można używać do podstawowych prac krawieckich.
+        markingChalk:
+          name: Kreda Krawiecka
+          desc: Znikająca kreda krawiecka do tkanin. Pozwala na wyznaczanie precyzyjnych
+            linii bez uszkadzania materiału.
+        practicePins:
+          name: Szpilki Krawieckie
+          desc: Szpilki, które łatwo utrzymują materiał na miejscu i przy których
+            istnieje mniejsze ryzyko przypadkowego ukłucia się.
+        clingyMeasuringTape:
+          name: Taśma Krawiecka
+          desc: Ta taśma miernicza zdaje się trzymać każdej powierzchni, do której
+            ją przyłożysz. Świetnie sprawdzi się przy dokonywaniu pomiarów – nawet
+            gdy mierzysz samego siebie.
+        needlecase:
+          desc: Niezależnie od tego, ile igieł do szycia przechowujesz w tym etui,
+            zawsze wydaje się, że jest w nim miejsce na kolejne.
+          name: Przybornik Krawiecki
+        fabricCuttingMat:
+          name: Mata Krawiecka
+          desc: Mata, która wytrzyma wszelkie nietrafione cięcia i szpilki spadające
+            na nią podczas Twojej pracy.
+        pincushionBeret:
+          desc: Beret, który świetnie sprawdza się do przechowywania nadmiarowych
+            szpilek, nie uderzając przy tym w głowę. Jego kształt pozwala również
+            wykorzystać go jako całkiem niezły dysk do rzucania.
+          name: Beret Krawiecki
+        keenEyeLenses:
+          desc: Mówi się, że soczewki te pomagają dostrzec rośliny wykorzystywane
+            w krawiectwie – albo przynajmniej sprawiają, że wyglądasz tak, jakbyś
+            zauważył je, zanim stały się modne.
+          name: Bystre Soczewki
+        silverScissors:
+          name: Srebrne Nożyczki
+          desc: Ostre, srebrne nożyczki, które z łatwością tną różnego rodzaju tkaniny
+            i materiały.
+        precisionPins:
+          name: Precyzyjne Szpilki
+          desc: Ostre szpilki, które zapobiegają przesuwaniu się nawet najbardziej
+            opornych materiałów podczas nadawania im nowego kształtu.
+        sewingGuidebook:
+          desc: Książka poświęcona wszelkim aspektom szycia i krawiectwa. Zawiera
+            nawet próbki prawidłowo wykonanych technik ściegowych.
+          name: Przewodnik Krawiectwa
+        tailorsMoccasins:
+          name: Krawieckie Mokasyny
+          desc: Wytrzymałe obuwie ze skóry, które ochroni Twoje stopy przed kłuciem
+            i uczuciem „mrowienia”. Może nawet zapobiec ich drętwieniu.
+      hunting:
+        scentMaskingSpray:
+          desc: Płyn w butelce, który można rozpylić, by pomóc zamaskować swój zapach.
+            Nie pytamy, co to za płyn.
+          name: Spray Maskujący
+        camoShirt:
+          desc: Koszula maskująca, która skutecznie maskuje w niemal każdym otoczeniu.
+            Zaskakująco dobrze sprawdza się nawet na śniegu.
+          name: Koszula Myśliwego
+        huntingTripPack:
+          desc: Dość duży plecak z mnóstwem miejsca, idealny na wyprawę łowiecką.
+            Pomieści wszystko, co uda ci się pozyskać z upolowanej zwierzyny.
+          name: Zestaw Myśliwego
+        camoFacePaint:
+          name: Farba Maskująca
+          desc: Farby maskujące, które powinny być mniej drażniące przy nakładaniu
+            na twarz. Trudno je dostrzec, więc niemal na pewno dostaną się do oczu.
+        camoPants:
+          name: Spodnie Myśliwego
+          desc: Spodnie moro, które pomagają ukryć nogi wśród roślinności i innych
+            elementów otoczenia. Nie myl ich z odzieżą wizytową.
+        flashyFieldKnife:
+          desc: Świetny nóż terenowy, który sprawdza się w każdym zadaniu, jakie przed
+            nim postawisz podczas wypraw łowieckich.
+          name: Nóż Trapera
+        huntingBestiary:
+          name: Przewodnik Myślistwa
+          desc: Wspaniały tom poświęcony bestiom, stworzeniom i wszelkiego rodzaju
+            dziwnym istotom. Księgę wypełniają bezcenne strony zawierające ilustracje,
+            opisy oraz informacje o zwyczajach i siedliskach tych stworzeń.
+        skinnyFieldKnife:
+          name: Nóż Terenowy
+          desc: Smukły nóż, którego można użyć do oprawiania i sprawiania świeżo upolowanej
+            zwierzyny.
+        trappersCape:
+          name: Peleryna Trapera
+          desc: Gruba peleryna, która nieco maskuje twoją obecność przed okolicznymi
+            stworzeniami, sprawiając, że łatwiej dają się one złapać w twoje pułapki.
+        camoBoots:
+          name: Buty Trapera
+          desc: Buty w kamuflażu, które po założeniu pomagają stopom wtopić się w
+            otoczenie. Niestety, gdy nie masz ich na sobie, niemal na pewno zgubisz
+            jeden z nich.
+        duckDecoy:
+          name: Kaczy Wabik
+          desc: Sztuczna kaczka, która pomaga odwrócić uwagę zwierzyny od twojej obecności.
+            Pewnie po prostu nie chcą wyjść na nieuprzejme.
     versatile:
       backpack:
         name: Plecak
@@ -2302,8 +2516,8 @@ singulars:
           łatwo się w niej poruszać.
       finGloves:
         name: Płetwowe Rękawiczki
-        desc: Rękawiczki te mają po bokach płetwy przypominające rybie, które ułatwiają
-          pływanie w wodzie.
+        desc: Rękawice te nadają dłoniom kształt przypominający płetwy, co ułatwia
+          pływanie.
       flippers:
         name: Płetwy
         desc: Te płetwy sprawiają, że pływanie pod wodą jest szybkie i przyjemne.
@@ -2362,6 +2576,10 @@ singulars:
         desc: Szybkie i wydajne sanki do wykonywania zadań na zaśnieżonych lub oblodzonych
           obszarach. Bardzo przydatne do jazdy na sankach.
         name: Chyże Sanki
+      rabbitEars:
+        desc: Zwierzęta zdają się patrzeć na ciebie nieco inaczej, gdy masz to na
+          sobie. Sprawiają, że czujesz się nieco bardziej zwinny. I bardziej uroczy.
+        name: Królicze Uszy
     achievements:
       ringOfHomesickness:
         name: Pierścień Nostalgii
@@ -2495,7 +2713,8 @@ singulars:
         desc: Te niebieskie, wygodne buty są również wytrzymałe.
       cursedAwl:
         name: Przeklęte Szydło
-        desc: Po użyciu szydło emituje dym w odcieniach niebieskiego i fioletu.
+        desc: Gdy masz to na sobie, to szydło wydziela dym w odcieniach błękitu i
+          fioletu.
       treasureGrabber:
         desc: Nigdy nie było prościej podnosić skrzyń, które są poza zasięgiem gdziekolwiek,
           podczas wykonywania czegokolwiek.
@@ -2516,6 +2735,14 @@ singulars:
         name: Pierścień Kolekcji
         desc: Pierścień, który staje się lepszy, gdy tylko powiększasz swoją kolekcję
           znajdźkami. Za ilość!
+      adventurersGuildBuckler:
+        name: Puklerz Gildii Poszukiwaczy Przygód
+        desc: Solidna, okrągła tarcza z Gildii Poszukiwaczy Przygód, która zdaje się
+          rezonować w obecności przedmiotów z nią powiązanych.
+      ghostTrapPack:
+        name: Pułapka na Duchy
+        desc: Do masywnego plecaka dołączona jest rura służąca do chwytania cząstek
+          widmowych.
     combat:
       swashbucklerSword:
         name: Miecz Awanturnika
@@ -2598,6 +2825,21 @@ singulars:
         desc: <i>"Ten czerwony dysk to ulubiony dysk psa o imieniu Pixel. Trochę wypłowiały
           i zużyty, ale wciąż dobrze lata."</i>
         name: Czerwony Dysk
+      petalFinder:
+        desc: '<i>Głos Jas szepcze z pierścienia: „Zwolnij i czerp radość ze spaceru
+          oraz otaczającego cię świata. Pewne rzeczy, które warto odnaleźć, pojawiają
+          się wtedy, gdy nie idziesz samotnie”.</i>'
+        name: Poszukiwacz Roślin
+      weightedVest:
+        desc: '<i>"Gdy stawiasz pierwsze kroki w tej kamizelce, przez myśl przelatuje
+          ci refleksja: twoje ciało dźwiga teraz ten sam ciężar, co twoja zahartowana
+          dusza."</i>'
+        name: Kamizelka Balastowa
+      pocketOrange:
+        desc: <i>„Niewielki ciężarek, gdy trzeba coś przytrzymać. Przekąska, gdy czujesz
+          lekki głód. Ilekroć wyciągasz pomarańczę z kieszeni, jest ona dla Ciebie
+          gotowa”.</i>
+        name: Kieszonkowa Pomarańcza
     regional:
       jarvonia:
         handWarmingPack:
@@ -3034,8 +3276,8 @@ singulars:
         name: Ruda Cyny
       silverOre:
         name: Ruda Srebra
-        desc: Srebro jest cennym metalem, często wykorzystywanym do tworzenia biżuterii,
-          takiej jak pierścienie amulety albo kolczyki.
+        desc: Bryła rudy srebra. Nie jest może tak cenna jak złoto, ale lśni własnym,
+          wyjątkowym blaskiem.
       wrentmarine:
         name: Szorstki Wrentmarine
         desc: Patrząc na tę szorstką skałę, można dostrzec błękitny błysk wewnątrz,
@@ -3347,7 +3589,7 @@ singulars:
         name: Rybie Ości
         desc: Chociaż to trochę makabryczne i dość śmierdzące, wygląda całkiem nieźle.
       seashell:
-        name: Skorupa Morska
+        name: Muszla
         desc: Prawdopodobnie sprzedana przez kogoś na plaży.
       clam:
         name: Skorupa Małża
@@ -3661,6 +3903,14 @@ singulars:
         name: Różowy Kwarc
         desc: Kawałek kryształu, który lśni intensywnym różowym odcieniem. Wygląda,
           jakby wzmacniał otaczające go klejnoty.
+      halfmawVenom:
+        name: Jad Półpaszczy
+        desc: Mała fiolka niebezpiecznego jadu pochodzącego z Półpaszczy. Pewnie dobrze
+          smakuje, ale z ostrym finałem.
+      swampmanArticle:
+        name: Artykuł magnoludzia
+        desc: Dziwny raport bagnoludzia, który był widziany jak łapie aligatory w
+          bagnie i rzuca nimi w niziołków.
     visas:
       jarvonianLetterOfPassage:
         name: Jarvoński List Przewozowy
@@ -3811,7 +4061,16 @@ singulars:
       name: Jajo mumii
       desc: Jajko mumii. Może być owinięte bandażami, ale wciąż powinieneś zadbać,
         by było w cieple. Zastanawiasz się gdzie jest matka?
+    pixieEgg:
+      name: Jajo Piksie
+      desc: Jajo piksie. Absolutnie nim nie wstrząsaj i nie rzucaj po okolicy! Zwykle
+        nie trzeba o tym przypominać, ale gdy coś takiego się zdarza to problemy mają
+        wszyscy wokół.
   lore:
     birthday:
       thirdBirthdayLetter:
         name: Trzeci list urodzinowy
+      firstBirthdayLetter:
+        name: Pierwszy list urodzinowy
+      secondBirthdayLetter:
+        name: Drugi list urodzinowy

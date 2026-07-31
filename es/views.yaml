@@ -155,6 +155,7 @@ maps:
         "currency": Divisas
         "quest": Objetos de misión
         "artifact": Artefactos
+        "lore": Objetos de lore
   locales:
     grammaticalGender:
       'neutral': Neutro
@@ -166,6 +167,7 @@ maps:
       'hours': '{hours}<c>h</c>'
       'minutes': '{minutes}<c>m</c>'
       'seconds': '{seconds}<c>s</c>'
+      "weeks": '{weeks}<c>sem</c>'
   announcements:
     categories:
       'devblog': DevBlog
@@ -331,19 +333,24 @@ singulars:
       viewDescription: Desbloquea logros para ganar <hl>puntos de logro</hl>. A partir
         de cierta cantidad de puntos de logro, ganas recompensas especiales. Algunos
         logros también dan recompensas por desbloquearlos.
-      specialItems: Objetos especiales, tales como <c>coleccionables</c>, <c>objetos
-        de misión</c> y <c>artefactos</c> son recolectados durante tu aventura en
-        WalkScape. Puedes verlos aquí. Los coleccionables te dan puntos de logro.
-      collectibleItems: Los objetos coleccionables son artículos que puedes obtener
-        en el mundo de WalkScape. Hay varios tipos de coleccionables que puedes intentar
-        conseguir. No ocupan espacio en el inventario y están siempre con tu personaje.
+      specialItems: Objetos especiales, tales como <icon i="Collectible"/> <c>coleccionables</c>
+        y <icon i="Lore Item"/> <c>objetos de lore</c> se coleccionan durante tu aventura
+        en WalkScape. Puedes verlos aquí. Los coleccionables te dan puntos de logro.
+      collectibleItems: Los objetos coleccionables son artículos raros que puedes
+        obtener en el juego principalmente a través de actividades. <c i=0>Cada coleccionable
+        te otorga</c> <c i=1>un</c> <icon i="Achievement Point"/> <c i=1>Punto de
+        Logro</c>. No ocupan espacio en el inventario y están siempre con tu personaje.
       totalProgressUnlocks: Conseguirás estas recompensas en base a tu progreso total
         de los logros y perderás el acceso a los objetos si se añaden más puntos de
         logro.
       checkPointUnlocks: Esos logros están disponibles a partir de cierto número de
         puntos de logro. No perderás acceso a ellos incluso si se añaden más puntos
         de logro.
-      noCollectibleItems: Todavía no has conseguido ningún objeto coleccionable.
+      noCollectibleItems: No tienes ningún objeto coleccionable.
+      loreItems: Los objetos de lore pueden ser libros, cartas y otros manuscritos
+        que puedes encontrar. No ocupan sitio en el inventario y se pueden leer en
+        cualquier momento.
+      noLoreItems: No tienes ningún objeto de lore.
     phrases:
       notUnlocked: Logro bloqueado
       rewardProgress: Progreso de Recompensa
@@ -353,6 +360,8 @@ singulars:
       checkPointUnlocks: Desbloqueos de hito
       collectiblesCount: Coleccionables <icon i="Achievement Point"/> <c i=0>{count}</c>
         <c i=1>/ {maxCount}</c>
+      collectibles: Coleccionables
+      loreItemsCount: Objetos de lore
   crafting:
     phrases:
       materials: Materiales
@@ -427,6 +436,7 @@ singulars:
       depositAll: Todo
       hatchesInto: Se convierte en
       inputAttributes: Atributos de base
+      mail: Correo
     options:
       consenseInventory: Condensar inventario
       expandInventory: Expandir inventario
@@ -622,7 +632,7 @@ singulars:
       consumablesUsage: Puedes elegir una <c>comida</c> y una <c>poción</c> para usar
         mientras haces actividades.
       noActivity: Ninguna actividad seleccionada. <hl>Selecciona una aquí debajo</hl>,
-        o desliza hacia la izquierda para ver todo lo disponible en esta localización.
+        o desliza hacia la izquierda para ver todo lo disponible en esta ubicación.
       savedSteps: Los pasos guardados evitan que los pasos se desperdicien y se acumulan
         al caminar cuando no hay ninguna actividad activa. Se agotan duplicando los
         pasos que das cuando vuelves a tener una actividad activa.
@@ -687,6 +697,8 @@ singulars:
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} coleccionables</c> que
         se pueden encontrar
       reputation: <bp />Reputación de <object id="{faction}" /> <c>+{amount}</c>
+      lore: <bp /><icon i="Lore item"/> <c>{count} objetos de lore</c> que pueden
+        ser encontrados
     options:
       completeUntilActions: Completar una cantidad de acciones
       numberOfActions: Cantidad de acciones
@@ -706,6 +718,7 @@ singulars:
       savePicture: Guardar imagen
       level: 'Nivel del personaje: <c>{level}</c>'
       stepsToNextLevel: Pasos hasta el siguiente nivel <c>{steps}</c>
+      savePictureDialogTitle: Guardar Imagen de Personaje
   permissions:
     phrases:
       pedometerPermission: Permiso del podómetro
@@ -1021,6 +1034,14 @@ singulars:
       youAreInspectingFromMap: Estás <c>inspeccionando desde el mapa del mundo</c>.
         Para interactuar, debes estar en la propia ubicación y abrir esto desde la
         vista principal de la ubicación.
+    options:
+      locations: Mostrar ubicaciones
+      routes: Mostrar rutas
+      playerCharacter: Mostrar tu personaje
+      friends: Mostrar amigos
+      hideAll: Ocultar todo
+      regions: Mostrar regiones
+      labels: Mostrar etiquetas
   stats:
     phrases:
       stats: Estadísticas
@@ -1194,6 +1215,7 @@ singulars:
       inputNotMet: Requisitos de base no cumplidos
       petNotFound: No encuentro la mascota elegida. ¿La has retirado?
       summoningPet: Invocando mascota <playerPet id="{pet}" />
+      unknownError: Error desconocido.
     suggestedOptions:
       startActivity: Actividad
       startCrafting: Fabricación
@@ -1221,6 +1243,8 @@ singulars:
       switchedToPet: <playerPet id="{pet}"/> invocado
       petDoesNotExist: 'La mascota ya no existe, no se pudo invocar.'
       inputsUsed: Bases usadas
+      switchedToImportedGearSet: Cambiar a kit de equipo importado
+      stepsWhileYouWereAway: Pasos mientras no estabas
   announcements:
     phrases:
       new: Nuevo
@@ -1331,6 +1355,11 @@ singulars:
       buyItems: Comprar objetos
       buy: Comprar
       sell: Vender
+      noChestSelected: No se ha seleccionado ningún cofre.
+      purchaseForTokens: Comprar por fichas
+    info:
+      favoritedItem: Has marcado este objeto como <icon i="Favorited"/> <c>favorito</c>.
+        \n¿Seguro que quieres venderlo?
   currencies:
     phrases:
       currencies: Divisas
@@ -1351,3 +1380,60 @@ singulars:
       overlevelingFromAgility: De <object id="agility" /> nivel <c>{level}</c>.
     options:
       showInactiveAttributes: Muestra atributos inactivos
+  party:
+    phrases:
+      askToJoin: Pedir unirse
+      members: Miembros del grupo
+      cancelJoinRequest: Cancelar petición de unirse
+      playersWantToJoin: Jugadores quieren unirse a tu grupo
+      pullDownToRefresh: Arrastrar hacia abajo para refrescar
+      timeRemaining: 'Tiempo restante: {time}'
+  activityHistory:
+    phrases:
+      title: Historial de actividad
+      previousResults: Resultados previos de actividad
+      currentActivity: Resultados de actividad
+      noHistory: Todavía no hay resultados previos de actividad.
+      startedAt: Comenzado {time}
+      endedAt: Terminado {time}
+      runningFor: Ejecutándose durante {duration}
+      lasted: Duró {duration}
+      new: Nuevo
+      markAsRead: Marcar como leído
+      currentActivityInfo: 'Muestra los resultados de tu <c>actividad actual</c> mientras
+        progresa: los pasos dados, EXP ganada y objetos encontrados hasta el momento.
+        Se va a resultados previos cuando la actividad termina.'
+      tapForDetails: Toca para ver detalles
+      previousResultsInfo: Un historial de tus <c>actividades terminadas recientes</c>.
+        Toca cualquier resultado para ver el desglose de lo obtenido. Los registros
+        marcados como <c>Nuevo</c> todavía no se han abierto.
+    types:
+      activity: Actividad
+      traveling: Viajes
+      crafting: Fabricación
+      idle: Ocioso
+  mailbox:
+    info:
+      notAtMailbox: Actualmente no estás en una ubicación con buzón. Solo puedes reclamar
+        tu correo cuando estás en una ubicación que tiene buzón. Todos los bancos
+        tienen buzón.
+    phrases:
+      mailbox: Buzón
+      noMessages: No hay mensajes en tu buzón.
+      noSubject: (Sin asunto)
+      alreadyClaimed: Ya ha sido reclamado
+      notAtMailbox: No estás en un buzón
+      noMessage: (Sin mensaje)
+    messages:
+      birthday1:
+        subject: ¡Feliz primer cumpleaños!
+        text: ¡Feliz cumpleaños! ¡Aquí tienes un detallito para ayudarte a celebrar!\n\n-
+          Sergio
+      birthday2:
+        subject: ¡Feliz segundo cumpleaños!
+        text: ¡Ha pasado otro año! ¡Aquí tienes un detallito para ayudarte a celebrar
+          tu segundo cumpleaños!\n\n- Sergio
+      birthday3:
+        subject: ¡Feliz tercer cumpleaños!
+        text: ¡Vaya, mira quien cumple tres! No sucumbas a la oscuridad, aquí tienes
+          algo para evitar que te rindas a sus poderes.\n\n- Sergio
