@@ -1012,6 +1012,7 @@ singulars:
       startingErrorManagerProcess: Uruchamianie procesu menedżera błędów
       startingEventManagerProcess: Rozpoczęcie procesu zarządzania wydarzeniami
       startingNetworkProcess: Uruchamianie procesu sieciowego
+      precomputing: Wstępne obliczanie danych gry
     isolates:
       mainIsolate: Główny wątek
       workerIsolate: Wątek roboczy
@@ -1280,6 +1281,26 @@ singulars:
         spowoduje odrzucenie zmian.
       exitWithdrawBody: Masz trwające przedmioty w trakcie wyjmowania, które nie zostały
         jeszcze wyjęte. Zrezygnowanie teraz sprawi, że wrócą one do twojego banku.
+      createFromBlankHint: Jedna pusta zakładka do własnoręcznej organizacji
+      createFromImport: Import ze schowka
+      createFromImportHint: Wklej układ, który eksportujesz lub otrzymujesz
+      importFailed: Brak poprawnego układu znalezionego w schowku.
+      rename: Zmiana nazwy
+      export: Esportuj
+      layoutExported: Układ skopiowany do schowka
+      deleteLayoutTitle: Usunąć układ?
+      deleteLayoutBody: '{name} zostanie całkowicie skasowany.'
+      layoutDeleted: Układ skasowany
+      deleteCategoryTitle: Usunąć kategorię?
+      deleteCategoryBody: Przedmioty z tej kategorii zostaną przeniesione do Bez Kategorii.
+      deleteTabTitle: Usunąć zakładkę?
+      deleteTabBody: Ta zakładka zostanie usunięta z twojego banku.
+      cannotDeleteTabTitle: Nie można usunąć zakładki
+      cannotDeleteTabBody: Tylko puste zakładki mogą być usunięte. Najpierw przenieś
+        lub usuń przedmioty.
+      cannotDeleteLastTabBody: Musisz zachować przynajmniej jedną zakładkę.
+      cannotDeletePrimaryTabBody: To podstawowa zakładka na nieposortowane przedmioty.
+        Nie może być usunięta.
   trade:
     phrases:
       trade: HANDLUJ
@@ -1477,6 +1498,7 @@ singulars:
     phrases:
       downloadingAssets: Pobieram zasoby...
       downloadedFileCount: Pobrano plików <c i=0>{current}</c> z <c i=1>{total}</c>
+      finalizingAssets: Kończenie, proszę czekać...
   currencies:
     phrases:
       goldCoins: Złote monety
