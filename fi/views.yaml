@@ -1025,6 +1025,7 @@ singulars:
       startingSettingsManagerProcess: Käynnistetään asetustenhallinta
       startingSentry: Käynnistetään Vartiotorni...
       startingOTAManagerProcess: Käynnistetään nättien asioiden hallinta
+      precomputing: Esilasketaan pelin tietueita
     isolates:
       mainIsolate: Pääeriö
       workerIsolate: Toimituseriö
@@ -1103,7 +1104,7 @@ singulars:
     multiSelect:
       moveHint: Monivalintatilassa voit valita useita erilaisia esineitä yhtä aikaa
         napauttamalla. Voit raahata niitä järjestääksesi ne muokkaustilassa, tai painaa
-        kontekstivalikkoa kategorian otsikkopalkissa siirtääksesi ne eri kategoriaan.
+        kontekstivalikkoa luokan otsikkopalkissa siirtääksesi ne eri luokkaan.
       selectedCount: '{count} valittu'
       withdrawSelected: Nosta
       depositSelected: Talleta
@@ -1121,7 +1122,7 @@ singulars:
       settingShowTypeIcons: Näytä esineiden tyyppien kuvakkeet
       settingShowFavorites: Näytä suosikkimerkit
       settingShowTabQuantity: Näytä välilehden esineiden määrät
-      settingShowCategoryQuantity: Näytä kategorian esineiden määrät
+      settingShowCategoryQuantity: Näytä luokan esineiden määrät
       settingShowGradients: Näytä esineiden liukuvärit
       settingShowMostRecentTab: Näytä Viimeisimmät-välilehti
       settingShowFavoritesTab: Näytä Suosikit-välilehti
@@ -1168,9 +1169,8 @@ singulars:
         järjestääksesi esineitä
       applyWithdrawals: Valmis
       withdrawNotAtBank: Et voi nostaa esineitä, kun et ole pankin lähellä
-      narrowedDragHint: Voit raahata esineitä muihin kategorioihin ja välilehtiin.
-        Tyhjennä haku, suodattimet ja järjestäminen jos haluat siirrellä esineitä
-        ryhmittelyn sisäisesti.
+      narrowedDragHint: Voit raahata esineitä muihin luokkiin ja välilehtiin. Tyhjennä
+        haku, suodattimet ja järjestäminen jos haluat siirrellä esineitä luokan sisällä.
       changesSaved: Muutoksesi on tallennettu
       itemsReassigned: Esineet järjestettiin uudelleen suodattimiesi mukaan
       filterAttributeNames:
@@ -1238,6 +1238,75 @@ singulars:
       inspectInventory: 'Reppu: {used}/{max} paikkaa'
       increase: Lisää {count}
       decrease: Poista {count}
+      filters:
+        add: Lisää suodatin
+        title: Suodattimet
+        empty: Ei suodattimia (vielä)
+        cancel: Peruuta
+        noMatches: Suodattimeen ei jäänyt mitään
+        search: Etsi {kind}
+        kindGlobal: Pelinlaajuinen
+        kindRegional: Alueellinen
+        kindItemType: Esineen tyyppi
+        kindGearType: Varustetyyppi
+        kindKeyword: Avainsana
+        kindSkill: Taito
+        labelItemType: 'Esinetyyppi: {value}'
+        labelGearType: 'Varustetyyppi: {value}'
+        labelKeyword: 'Avainsana: {value}'
+        labelSkill: 'Taito: {value}'
+        labelRegional: Alueellinen
+        labelGlobal: Pelinlaajuinen
+      picker:
+        showIfEmptyDesc: Pidä tämä luokka näkyvänä silloinkin, kun siellä ei ole esineitä.
+        shapeRoundedRect: Pyöristetty
+        showIfEmptyLabel: Näytä tyhjänäkin
+        preview: Esikatselu
+        confirm: Vahvista
+        valueNone: Ei mitään
+        rowName: Nimi
+        rowIcon: Kuvake
+        rowColour: Väri
+        rowBackground: Tausta
+        rowFilters: Suodattimet
+        nameLabel: Nimi
+        searchIcons: Etsi kuvakkeista
+        sectionNameTitle: Muokkaa nimeä
+        sectionIconTitle: Valitse kuvake
+        sectionColourTitle: Valitse väri
+        sectionBackgroundTitle: Valitse tausta
+        sectionFiltersTitle: Suodattimet
+        shapeNone: Ei mitään
+        shapeCircle: Ympyrä
+        shapeSquare: Neliö
+      addTab: Lisää välilehti
+      newTab: Uusi välilehti
+      uncategorized: Luokittelematon
+      addCategory: Lisää luokka
+      newCategory: Uusi luokka
+      noItemsYet: Ei esineitä (vielä)
+      emptyTab: Täällä ei ole vielä esineitä. Näet ne jahka olet tallettanut jotakin.
+      emptyBank: Pankkisi on tyhjä
+      editTab: Muokkaa välilehteä
+      deleteTab: Poista välilehti
+      options: Valinnat
+      editCategory: Muokkaa luokkaa
+      discardChangesTitle: Hylkää muutokset?
+      discardChangesBody: Sinulla on tallentamattomia muutoksia pankkisi ulkoasuun.
+        Jos poistut nyt, muutokset peruuntuvat.
+      exitWithdrawTitle: Poistu nostamatta?
+      exitWithdrawBody: Sinulla on esineitä jonossa nostettavaksi, mutta niitä ei
+        ole vielä nostettu. Jos poistut nyt, ne palaavat pankkiisi.
+      deleteCategoryTitle: Poista luokka?
+      deleteTabTitle: Poista välilehti?
+      deleteTabBody: Tämä välilehti poistetaan pankistasi.
+      deleteCategoryBody: Esineet tässä luokassa siirretään luokittelemattomiin.
+      cannotDeleteTabTitle: Välilehteä ei voi poistaa
+      cannotDeleteTabBody: Vain tyhjät välilehdet voidaan poistaa. Siirrä tai poista
+        sen esineet ensin toisaalle.
+      cannotDeleteLastTabBody: Sinun on pakko säilyttää ainakin yksi välilehti.
+      cannotDeletePrimaryTabBody: Tämä on oletusvälilehti, jonne luokittelemattomat
+        esineet menevät. Sitä ei voi poistaa.
   leaderboards:
     phrases:
       show: Näytä
@@ -1428,6 +1497,7 @@ singulars:
     phrases:
       downloadingAssets: Ladataan aineistoja...
       downloadedFileCount: Ladattu <c i=0>{current}</c> / <c i=1>{total}</c> tiedostoa
+      finalizingAssets: Viimeistellään, odota hetki...
   pets:
     phrases:
       abilities: Kyvyt
