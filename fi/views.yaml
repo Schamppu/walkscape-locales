@@ -1025,6 +1025,7 @@ singulars:
       startingSettingsManagerProcess: Käynnistetään asetustenhallinta
       startingSentry: Käynnistetään Vartiotorni...
       startingOTAManagerProcess: Käynnistetään nättien asioiden hallinta
+      precomputing: Esilasketaan pelin tietueita
     isolates:
       mainIsolate: Pääeriö
       workerIsolate: Toimituseriö
@@ -1048,6 +1049,264 @@ singulars:
       withdraw: Nosta
       youAreNotAtABank: <c>Et ole sijainnissa jossa on pankki</c>. Jotta voit käyttää
         pankkia, matkusta ensin paikkaan jossa on pankin haarakonttori.
+    defaultLayout:
+      tabs:
+        materials: Materiaalit
+        gear: Varusteet
+        tools: Työkalut
+        consumables: Hyödykkeet
+        misc: Sekal.
+      categories:
+        ingredients: Ainesosat
+        arrows: Nuolet
+        bars: Harkot
+        rawFish: Raaka kala
+        gems: Jalokivet
+        huntingProducts: Metsästyssaaliit
+        logs: Pöllit
+        ores: Malmit
+        planks: Lankut
+        plants: Kasvit
+        processed: Jalostetut
+        trinkets: Helyt
+        materialsMisc: Sekal.
+        gearCape: Viitta
+        gearHead: Pää
+        gearBack: Selkä
+        gearHands: Kädet
+        gearSecondary: Tukikäsi
+        toolsGlobal: Pelinlaajuinen
+        gearChest: Ylävartalo
+        gearNeck: Kaula
+        gearPrimary: Pääkäsi
+        gearLegs: Alaruumis
+        gearRings: Sormukset
+        gearFeet: Jalkineet
+        toolsAgility: Ketteryys
+        toolsCarpentry: Puutyö
+        toolsCooking: Ruoanlaitto
+        toolsCrafting: Käsityöt
+        toolsFishing: Kalastus
+        toolsForaging: Poiminta
+        toolsHunting: Metsästys
+        toolsMining: Louhinta
+        toolsSmithing: Taonta
+        toolsTailoring: Vaatturointi
+        toolsTrinketry: Korutyö
+        toolsWoodcutting: Puunhakkuu
+        toolsTraveling: Matkustus
+        toolsRegional: Alueellinen
+        cookedFish: Keitetty kala
+        fishingBaits: Syötit
+        foods: Ruoat
+        drinks: Juomat
+        petEggs: Lemmikkimunat
+    multiSelect:
+      moveHint: Monivalintatilassa voit valita useita erilaisia esineitä yhtä aikaa
+        napauttamalla. Voit raahata niitä järjestääksesi ne muokkaustilassa, tai painaa
+        kontekstivalikkoa luokan otsikkopalkissa siirtääksesi ne eri luokkaan.
+      selectedCount: '{count} valittu'
+      withdrawSelected: Nosta
+      depositSelected: Talleta
+      moveSelectedHere: Siirrä {count} tänne
+      selectAll: Valitse kaikki
+      deselectAll: Poista kaikki valinnat
+    layout:
+      reorder: Uudelleenjärjestä
+      tabMostRecent: Viimeisimmät
+      tabFavorites: Suosikit
+      settingsTitle: Pankin asetukset
+      settingsEmpty: Lisää asetuksia tulee pian.
+      settingsDisplayTitle: Näyttö
+      settingsBehaviorTitle: Käytös
+      settingShowTypeIcons: Näytä esineiden tyyppien kuvakkeet
+      settingShowFavorites: Näytä suosikkimerkit
+      settingShowTabQuantity: Näytä välilehden esineiden määrät
+      settingShowCategoryQuantity: Näytä luokan esineiden määrät
+      settingShowGradients: Näytä esineiden liukuvärit
+      settingShowMostRecentTab: Näytä Viimeisimmät-välilehti
+      settingShowFavoritesTab: Näytä Suosikit-välilehti
+      sortModes:
+        quantity: Määrä
+        defaultOrder: Oletus
+        alphabetical: Aakkosjärjestys
+        rarity: Harvinaisuus
+        coinValue: Arvo kultakolikoina
+        mostRecent: Viimeisimmät
+      settingCondensedList: Tiivistetty luettelonäkymä
+      settingGridColumns: Ruudukon sarakkeet
+      settingSwapTapActions: Vaihda napsautus ja pitkä painallus päikseen
+      settingAlwaysStartCollapsed: Aloita aina tiivistettynä
+      settingAnimateCollapse: Animoi tiivistäminen
+      settingShowPlaceholders: Näytä paikanpitäjät muokkaustilassa
+      settingConfirmBeforeApply: Esikatsele ennen muuttamista
+      settingsResetView: Peruuta näkymän muutos
+      sortTitle: Järjestä esineet
+      sortAscending: Nouseva järjestys
+      sortDescending: Laskeva järjestys
+      sortModesTitle: Järjestä
+      filterTitle: Suodata esineitä
+      filterEnable: Käytä suodattimia
+      filterGlobalTitle: Yleiset
+      filterAttributesTitle: Ominaisuudet
+      filterSkillsTitle: Taidot
+      filterTypesTitle: Esinetyypit
+      filterQualityTitle: Laatu
+      inventoryFilterTitle: Suodata reppu
+      inventoryFilterTypesTitle: Esinetyypit
+      inventoryFilterVisibilityTitle: Näkyvyys
+      inventoryFilterShowFavorited: Näytä suosikit
+      inventoryFilterShowLocked: Näytä lukitut
+      filterNoResults: Suodattimiisi ei jäänyt yhtään tuloksia
+      searchNoResults: Haku ei löytänyt mitään näytettävää
+      reorderBlockedSearch: Tyhjennä hakukenttä uudelleenjärjestääksesi esineitä
+      reorderBlockedFilter: Poista suodattimet käytöstä uudelleenjärjestääksesi esineitä
+      reorderBlockedBoth: Tyhjennä hakukenttä ja poista suodattimet käytöstä järjestääksesi
+        esineitä
+      reorderBlockedSort: Poista automaattinen järjestäminen järjestääksesi esineet
+        haluamallasi tavalla
+      reorderBlockedActive: Tyhjennä hakukenttä, suodattimet ja automaattijärjestäminen
+        järjestääksesi esineitä
+      applyWithdrawals: Valmis
+      withdrawNotAtBank: Et voi nostaa esineitä, kun et ole pankin lähellä
+      narrowedDragHint: Voit raahata esineitä muihin luokkiin ja välilehtiin. Tyhjennä
+        haku, suodattimet ja järjestäminen jos haluat siirrellä esineitä luokan sisällä.
+      changesSaved: Muutoksesi on tallennettu
+      itemsReassigned: Esineet järjestettiin uudelleen suodattimiesi mukaan
+      filterAttributeNames:
+        workEfficiency: Työtehokkuus
+        fineMaterialFind: Oivien materiaalien löytäminen
+        chestFind: Arkkujen löytäminen
+        findCollectibles: Keräilyesineiden löytäminen
+        findGems: Jalokivien löytäminen
+        findBirdNests: Linnunpesien löytäminen
+        doubleRewards: Tuplapalkkiot
+        bonusExperience: Bonuskokemus
+      inventoryTitle: Reppu
+      inventoryEmpty: Reppusi on tyhjä
+      withdrawAvailable: '{count} pankissa'
+      withdrawLimit: Voit nostaa korkeintaan {count} kerrallaan
+      withdrawStaged: '{count} asetettu jonoon'
+      applyNotAtBank: Sinun pitää olla pankissa nostaaksesi esineitä
+      applyNotAtBankDeposit: Sinun pitää olla pankissa tallettaaksesi esineitä
+      withdrawComplete: Esineet, jotka nostettiin reppuusi
+      depositComplete: Esineet, jotka talletettiin pakkiisi
+      depositedAll: Talletettiin kaikki esineet
+      processing: "Käsitellään ja tallennetaan tulos pilveen\n\nOdota hetki..."
+      slotsFull: Ulkoasuvaihtoehtoja on jo maksimimäärä. Poista yksi tehdäksesi tilaa
+        uusille.
+      layoutCreated: Ulkoasu luotu
+      createFromBlankHint: Yksi tyhjä välilehti kaiken järjestämiseen itse
+      deleteLayoutBody: '{name} poistetaan pysyvästi.'
+      applyComplete: Pankkitoiminnot pantu täytäntöön
+      depositAvailable: '{count} repussa'
+      depositStaged: '{count} jonossa'
+      depositNotAtBank: Et voi tallettaa esineitä, kun et ole pankin lähellä
+      editBlockedPending: Nosta jonoon asetetut esineesi ennen muokkaamista
+      savingLayout: "Tallennetaan pankin ulkoasu pilveen\n\nOdota hetki..."
+      slotName: Ulkoasu {index}
+      switchLayout: Muokkaa ulkoasua
+      chooseLayout: Valitse ulkoasu
+      renameLayout: Nimeä ulkoasu uudelleen
+      renameLayoutTitle: Nimeä ulkoasu
+      activeLayout: Aktiivinen
+      switchBlockedEditing: Tallenna muokkaukset ennen ulkoasun vaihtamista
+      layoutsTitle: Ulkoasut
+      defaultName: Oletus
+      defaultHint: Oletusjärjestys pankillesi, joka on aina saatavilla.
+      emptySlot: Tyhjä ulkoasu numero {index}/{total}
+      createLayoutTitle: Uusi ulkoasu
+      createFromTitle: Aloita uusi ulkoasu...
+      createFromDefault: Oletusulkoasusta
+      createFromDefaultHint: Kopio oletusasettelusta
+      createFromBlank: Tyhjä ulkoasu
+      createFromImport: Tuo leikepöydältä
+      createFromImportHint: Liitä ulkoasu, jonka veit tai sait toisaalta
+      importFailed: Leikepöydältä ei löytynyt oikeanlaista ulkoasua.
+      rename: Nimeä uudelleen
+      export: Vie
+      layoutExported: Ulkoasu kopioitu leikepöydälle
+      deleteLayoutTitle: Poista ulkoasu?
+      layoutDeleted: Ulkoasu poistettu
+      blankTabName: Esineet
+      inspect: Tarkastele jonossa olevia operaatioita
+      inspectTitle: Jonossa oleva pankkioperaatio
+      inspectEmpty: Esineitä ei ole jonossa
+      inspectWithdrawing: Nostaa
+      inspectDepositing: Tallettaa
+      inspectSummary: '{stacks} pinoa - {items} esinettä'
+      inspectInventory: 'Reppu: {used}/{max} paikkaa'
+      increase: Lisää {count}
+      decrease: Poista {count}
+      filters:
+        add: Lisää suodatin
+        title: Suodattimet
+        empty: Ei suodattimia (vielä)
+        cancel: Peruuta
+        noMatches: Suodattimeen ei jäänyt mitään
+        search: Etsi {kind}
+        kindGlobal: Pelinlaajuinen
+        kindRegional: Alueellinen
+        kindItemType: Esineen tyyppi
+        kindGearType: Varustetyyppi
+        kindKeyword: Avainsana
+        kindSkill: Taito
+        labelItemType: 'Esinetyyppi: {value}'
+        labelGearType: 'Varustetyyppi: {value}'
+        labelKeyword: 'Avainsana: {value}'
+        labelSkill: 'Taito: {value}'
+        labelRegional: Alueellinen
+        labelGlobal: Pelinlaajuinen
+      picker:
+        showIfEmptyDesc: Pidä tämä luokka näkyvänä silloinkin, kun siellä ei ole esineitä.
+        shapeRoundedRect: Pyöristetty
+        showIfEmptyLabel: Näytä tyhjänäkin
+        preview: Esikatselu
+        confirm: Vahvista
+        valueNone: Ei mitään
+        rowName: Nimi
+        rowIcon: Kuvake
+        rowColour: Väri
+        rowBackground: Tausta
+        rowFilters: Suodattimet
+        nameLabel: Nimi
+        searchIcons: Etsi kuvakkeista
+        sectionNameTitle: Muokkaa nimeä
+        sectionIconTitle: Valitse kuvake
+        sectionColourTitle: Valitse väri
+        sectionBackgroundTitle: Valitse tausta
+        sectionFiltersTitle: Suodattimet
+        shapeNone: Ei mitään
+        shapeCircle: Ympyrä
+        shapeSquare: Neliö
+      addTab: Lisää välilehti
+      newTab: Uusi välilehti
+      uncategorized: Luokittelematon
+      addCategory: Lisää luokka
+      newCategory: Uusi luokka
+      noItemsYet: Ei esineitä (vielä)
+      emptyTab: Täällä ei ole vielä esineitä. Näet ne jahka olet tallettanut jotakin.
+      emptyBank: Pankkisi on tyhjä
+      editTab: Muokkaa välilehteä
+      deleteTab: Poista välilehti
+      options: Valinnat
+      editCategory: Muokkaa luokkaa
+      discardChangesTitle: Hylkää muutokset?
+      discardChangesBody: Sinulla on tallentamattomia muutoksia pankkisi ulkoasuun.
+        Jos poistut nyt, muutokset peruuntuvat.
+      exitWithdrawTitle: Poistu nostamatta?
+      exitWithdrawBody: Sinulla on esineitä jonossa nostettavaksi, mutta niitä ei
+        ole vielä nostettu. Jos poistut nyt, ne palaavat pankkiisi.
+      deleteCategoryTitle: Poista luokka?
+      deleteTabTitle: Poista välilehti?
+      deleteTabBody: Tämä välilehti poistetaan pankistasi.
+      deleteCategoryBody: Esineet tässä luokassa siirretään luokittelemattomiin.
+      cannotDeleteTabTitle: Välilehteä ei voi poistaa
+      cannotDeleteTabBody: Vain tyhjät välilehdet voidaan poistaa. Siirrä tai poista
+        sen esineet ensin toisaalle.
+      cannotDeleteLastTabBody: Sinun on pakko säilyttää ainakin yksi välilehti.
+      cannotDeletePrimaryTabBody: Tämä on oletusvälilehti, jonne luokittelemattomat
+        esineet menevät. Sitä ei voi poistaa.
   leaderboards:
     phrases:
       show: Näytä
@@ -1238,6 +1497,7 @@ singulars:
     phrases:
       downloadingAssets: Ladataan aineistoja...
       downloadedFileCount: Ladattu <c i=0>{current}</c> / <c i=1>{total}</c> tiedostoa
+      finalizingAssets: Viimeistellään, odota hetki...
   pets:
     phrases:
       abilities: Kyvyt

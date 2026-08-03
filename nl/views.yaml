@@ -38,22 +38,23 @@ level, "agility": <c>Behendigheid</c> level, "carpentry": <c>Timmerwerk</c> leve
 "cooking": <c>Koken</c> level, "crafting": <c>Vervaardigen</c> level, "foraging": <c>Foerageren</c>
 level, "mining": <c>Delven</c> level, "smithing": <c>Smeden</c> level, "trinketry": <c>Sierraderij</c>
 level, "woodcutting": <c>Houthakken</c> level, "achievementPoints": <c>Prestatiepunten</c>,
-"totalLevel": Totaal<c>niveau</c>, "totalXp": Totale <c>XP</c>}, categories: {"character": Personage,
-"accessibility": Toegankelijkheid, "account": Account, "graphics": Grafisch, "characterSpecific": personage
-specifiek, "gameplay": Spelervaring}, enumSettings: {"language": Taal, "leaderboardType": Klassementen,
-"leaderboardFilter": Toon}}, achievements: {phrases: {difficulty: {'easy': Makkelijk,
-'hard': Moeilijk, 'normal': Gemiddeld, 'extreme': Extreem}, difficultyTitle: {'hard': Moeilijke
-prestaties, 'normal': Gemiddelde prestaties, 'easy': Makkelijke prestaties, 'extreme': Extreme
-prestaties}}}, character: {stepsTime: {'hourly': Stappen per uur, 'daily': Stappen
-per dag, 'monthly': Stappen per maand}}, announcements: {categories: {"changelog": Changelog,
-"system": Systeem, "devblog": Ontwikkelaarsblog, "update": Update}}, cooldown: {time: {
-"days": '{days}<c>d</c>', "hours": '{hours}<c>u</c>', "minutes": '{minutes}<c>min</c>',
-"seconds": '{seconds}<c>s</c>'}}, locales: {grammaticalGender: {"masculine": Mannelijk,
+"totalLevel": Totaal<c>niveau</c>, "totalXp": Totale <c>XP</c>, "hunting": <c>Jagen</c>
+level}, categories: {"character": Personage, "accessibility": Toegankelijkheid, "account": Account,
+"graphics": Grafisch, "characterSpecific": personage specifiek, "gameplay": Spelervaring},
+enumSettings: {"language": Taal, "leaderboardType": Klassementen, "leaderboardFilter": Toon}},
+achievements: {phrases: {difficulty: {'easy': Makkelijk, 'hard': Moeilijk, 'normal': Gemiddeld,
+'extreme': Extreem}, difficultyTitle: {'hard': Moeilijke prestaties, 'normal': Gemiddelde
+prestaties, 'easy': Makkelijke prestaties, 'extreme': Extreme prestaties}}}, character: {
+stepsTime: {'hourly': Stappen per uur, 'daily': Stappen per dag, 'monthly': Stappen
+per maand}}, announcements: {categories: {"changelog": Changelog, "system": Systeem,
+"devblog": Ontwikkelaarsblog, "update": Update}}, cooldown: {time: {"days": '{days}<c>d</c>',
+"hours": '{hours}<c>u</c>', "minutes": '{minutes}<c>min</c>', "seconds": '{seconds}<c>s</c>',
+"weeks": '{weeks}<c>w</c>'}}, locales: {grammaticalGender: {"masculine": Mannelijk,
 "feminine": Vrouwelijk, "neutral": Neutraal}}, skillTypes: {"gathering": Verzamelen,
-"artisan": Ambacht}, abilities: {types: {"consumable": Verbruiksartikel, "activity": Activiteit,
-"emergency": Noodsituatie, "active": Actief, "passive": Passief}}, pets: {stages: {
-"adult": Volwassen, "egg": Ei, "juvenile": Onvolwassen}}, mysteriousMerchant: {chestTypes: {
-"skilling": Vaardigheidsschatkisten, "regional": Factieschatkisten, "guild": Gilde
+"artisan": Ambacht, "combat": Gevechten}, abilities: {types: {"consumable": Verbruiksartikel,
+"activity": Activiteit, "emergency": Noodsituatie, "active": Actief, "passive": Passief}},
+pets: {stages: {"adult": Volwassen, "egg": Ei, "juvenile": Onvolwassen}}, mysteriousMerchant: {
+chestTypes: {"skilling": Vaardigheidsschatkisten, "regional": Factieschatkisten, "guild": Gilde
 schatkisten}}}, 'plurals': {'achievements': {'phrases': {'achievementPoint': {'few': '-',
 'many': '-', 'one': '{} prestatiepunt', 'other': '{} prestatiepunten', 'two': '{}
 prestatiepunten', 'zero': '-'}}}, 'activity': {'phrases': {'actionsRemaining': {'few': '-',
@@ -93,24 +94,25 @@ hier', few: '-'}}}, gearSets: {phrases: {selected: {zero: '-', one: '<hl>{}</hl>
 few: '-', two: '<hl>{}</hl> geselecteerd', many: '-', other: '<hl>{}</hl> geselecteerd'}}}},
 'singulars': {'achievements': {'info': {'pointsNeeded': '<iconText name="achievement_point"
 text="@views.plurals.achievements.phrases.achievementPoint" color="${color}"/> totdat
-de volgende beloning is vrijgespeeld.', collectibleItems: Verzamelobjecten zijn voorwerpen
-die je kunt vinden in de wereld van WalkScape. Er zijn verschillende soorten verzamelobjecten
-die je kunt verzamelen. Ze nemen geen inventarisplaats in beslag en je hebt ze altijd
-bij je., specialItems: 'Tijdens je reis in WalkScape verzamel je speciale voorwerpen,
-zoals <icon i="Collectible"/> <c>verzamelobjecten</c> en <icon i="Lore Item"/> <c>lore-items</c>.
-Je kunt ze hier bekijken. Verzamelobjecten leveren je voortgangspunten op.', noCollectibleItems: Je
-hebt geen verzamelobjecten gevonden., viewDescription: Ontgredel prestaties om <hl>prestatiepunten</hl>
-te verdienen. Bij bepaalde hoeveelheden prestatiepunten speel je speciale beloningen
-vrij. Sommige prestaties geven zelf ook beloningen voor het ontgredelen ervan., totalProgressUnlocks: 'Je
-krijgt deze beloningspunten gebaseerd op je totale voortgang met prestaties, en je
-verliest toegang tot de voorwerpen wanneer meer prestatiepunten beschikbaar komen.',
-checkPointUnlocks: Deze prestaties zijn beschikbaar bij bepaalde prestatiepunt-checkpoints.
-Je behoudt toegang tot deze zelfs als er meer prestatiepunten beschikbaar komen.},
-phrases: {notUnlocked: Vergrendelde prestatie, rewardProgress: Beloningsvoortgang,
-showRewards: Beloningen bekijken, totalProgressUnlocks: Totale voortgang ontgredelingen,
-checkPointUnlocks: Checkpoint ontgrendelingen, unclaimedRewards: 'Niet-geclaimde beloningen: ',
-collectiblesCount: 'Verzamelobjecten <icon i="Achievement Point"/> <c i=0>{count}</c>
-<c i=1>/ {maxCount}</c>'}}, 'crafting': {'phrases': {'requiresMaterial': 'Vereist
+de volgende beloning is vrijgespeeld.', collectibleItems: Verzamelobjecten zijn zeldzame
+items die je in het spel voornamelijk via activiteiten kunt verkrijgen. <c i=0>Elk
+verzamelobject levert je</c> <c i=1>één</c> <icon i="Achievement Point"/> <c i=1>prestatiepunt</c>
+op. Verzamelobjecten nemen geen ruimte in je inventaris in en je personage heeft ze
+altijd bij zich., specialItems: 'Tijdens je reis in WalkScape verzamel je speciale
+voorwerpen, zoals <icon i="Collectible"/> <c>verzamelobjecten</c> en <icon i="Lore
+Item"/> <c>lore-items</c>. Je kunt ze hier bekijken. Verzamelobjecten leveren je voortgangspunten
+op.', noCollectibleItems: Je hebt geen verzamelobjecten gevonden., viewDescription: Ontgredel
+prestaties om <hl>prestatiepunten</hl> te verdienen. Bij bepaalde hoeveelheden prestatiepunten
+speel je speciale beloningen vrij. Sommige prestaties geven zelf ook beloningen voor
+het ontgredelen ervan., totalProgressUnlocks: 'Je krijgt deze beloningspunten gebaseerd
+op je totale voortgang met prestaties, en je verliest toegang tot de voorwerpen wanneer
+meer prestatiepunten beschikbaar komen.', checkPointUnlocks: Deze prestaties zijn
+beschikbaar bij bepaalde prestatiepunt-checkpoints. Je behoudt toegang tot deze zelfs
+als er meer prestatiepunten beschikbaar komen.}, phrases: {notUnlocked: Vergrendelde
+prestatie, rewardProgress: Beloningsvoortgang, showRewards: Beloningen bekijken, totalProgressUnlocks: Totale
+voortgang ontgredelingen, checkPointUnlocks: Checkpoint ontgrendelingen, unclaimedRewards: 'Niet-geclaimde
+beloningen: ', collectiblesCount: 'Verzamelobjecten <icon i="Achievement Point"/>
+<c i=0>{count}</c> <c i=1>/ {maxCount}</c>'}}, 'crafting': {'phrases': {'requiresMaterial': 'Vereist
 een materiaal.', 'requiresOneOfTheFollowing': 'Vereist een van de volgende materialen.',
 requirements: Vereisten, requirementsNotMet: Je voldoet niet aan de vereisten., noServiceRequirements: Geen
 voorzieningsvereisten., showingRecipiesThatUses: Recepten weergeven voor, requiresService: Vereist

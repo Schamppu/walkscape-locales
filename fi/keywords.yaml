@@ -52,6 +52,12 @@ singulars:
       requirementLevel: Vaatii juoman, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       desc: Juomia voi juoda, mistä saa toimintoihin väliaikaisia etuja.
+    fishingBait:
+      name: Syötti
+      desc: Syötti, jota käytetään kalastuksessa kalojen houkutteluun pyydystettäväksi.
+      requirement: 'Edellytys: <object id="fishing_bait" />.'
+      requirementLevel: Vaatii syötin, jonka vaatimuksissa on vähintään <keywordRequirements
+        />.
   gear:
     lifeVest:
       name: Pelastusliivi
@@ -262,7 +268,7 @@ singulars:
       name: Ainesosa
       desc: Käytetään materiaalina jonkinlaisessa reseptissä.
     processed:
-      name: Prosessoitu
+      name: Jalostettu
       requirement: 'Edellytys: <object id="processed" /> materiaali.'
       requirementLevel: Vaatii prosessoidun materiaalin, jonka vaatimuksissa on vähintään
         <keywordRequirements />.
@@ -430,7 +436,7 @@ singulars:
       requirement: 'Edellytys: <object id="cuttingBoard" /> käytössä.'
       desc: Leikkuulautaa käytetään pintana, jota vasten aineksia voi leikata.
     ruler:
-      name: Mittanauha
+      name: Mitta
       requirement: 'Edellytys: <object id="ruler" /> käytössä.'
       requirementLevel: Vaatii viivottimen, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
@@ -515,8 +521,8 @@ singulars:
       desc: Työkalu, jonka avulla <object id="woodcutting" /> etenee sutjakkaammin
         - varsinaisen kaatokirveen ohella.
     sander:
-      name: Hiomakone
-      requirementLevel: Vaatii hiomakoneen, jonka vaatimuksissa on vähintään <keywordRequirements
+      name: Hiontatyökalu
+      requirementLevel: Vaatii hiontatyökalun, jonka vaatimuksissa on vähintään <keywordRequirements
         />.
       requirement: 'Edellytys: <object id="sander" /> käytössä.'
       desc: Työkalu, jolla tasoitetaan pintoja. <object id="trinketry" /> käy tämän

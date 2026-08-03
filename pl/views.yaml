@@ -912,7 +912,7 @@ singulars:
         WalkScape.
   tutorial:
     phrases:
-      noMoreMessages: Nie ma więcej wiadomości samouczka
+      noMoreMessages: Nie pokazuj wiadomości samouczka
       youWillGain: Otrzymasz poniższy przedmiot(y) po wybraniu tej opcji.
   leaderboards:
     phrases:
@@ -1012,6 +1012,7 @@ singulars:
       startingErrorManagerProcess: Uruchamianie procesu menedżera błędów
       startingEventManagerProcess: Rozpoczęcie procesu zarządzania wydarzeniami
       startingNetworkProcess: Uruchamianie procesu sieciowego
+      precomputing: Wstępne obliczanie danych gry
     isolates:
       mainIsolate: Główny wątek
       workerIsolate: Wątek roboczy
@@ -1056,6 +1057,262 @@ singulars:
       withdraw: Wyjmij
       youAreNotAtABank: <c>Nie znajdujesz się w lokacji z dostępnym bankiem.</c> Możesz
         korzystać z banku tylko w lokacji, która go posiada.
+    defaultLayout:
+      categories:
+        ingredients: Składniki
+        gearCape: Płaszcze
+        gearBack: Plecy
+        arrows: Strzały
+        bars: Sztaby
+        rawFish: Surowe Ryby
+        gems: Klejnoty
+        huntingProducts: Produkty Łowieckie
+        logs: Kłody
+        ores: Rudy
+        planks: Deski
+        plants: Rośliny
+        processed: Przetworzone
+        trinkets: Błyskotki
+        materialsMisc: Różne
+        gearHead: Głowa
+        gearHands: Dłonie
+        gearChest: Klatka Piersiowa
+        gearNeck: Szyja
+        gearPrimary: Główny
+        gearLegs: Nogi
+        gearSecondary: Poboczny
+        gearRings: Pierścienie
+        gearFeet: Stopy
+        toolsAgility: Zręczność
+        toolsCarpentry: Stolarstwo
+        toolsCooking: Gotowanie
+        toolsCrafting: Rzemiosło
+        toolsFishing: Rybactwo
+        toolsForaging: Zbieractwo
+        toolsHunting: Łowiectwo
+        toolsMining: Górnictwo
+        toolsSmithing: Kowalstwo
+        toolsTailoring: Krawiectwo
+        toolsTrinketry: Jubilerstwo
+        toolsWoodcutting: Drwalnictwo
+        toolsGlobal: Globalne
+        toolsTraveling: Podróżowanie
+        toolsRegional: Regionalne
+        cookedFish: Ugotowane Ryby
+        fishingBaits: Przynęty na Ryby
+        foods: Jedzenie
+        drinks: Napoje
+        petEggs: Jajka Pupili
+      tabs:
+        materials: Materiały
+        tools: Narzędzia
+        gear: Wyposażenie
+        consumables: Zużywalne
+        misc: Różności
+    multiSelect:
+      selectedCount: '{count} wybrano'
+      moveHint: W trybie multi-wyboru możesz dotknąć i zaznaczyć wiele różnych przedmiotów
+        na raz. Możesz je przerzucać w trybie edycji lub przycisnąć na nagłówku menu
+        kategorii, by przerzucić je do innej kategorii.
+      withdrawSelected: Wyjmij
+      depositSelected: Zdeponuj
+      moveSelectedHere: Przemieść {count} tutaj
+      selectAll: Zaznacz wszystkie
+      deselectAll: Odznacz wszystkie
+    layout:
+      sortModesTitle: Układaj względem
+      filterTypesTitle: Rodzaje przedmiotów
+      settingAlwaysStartCollapsed: Zawsze zaczynaj w zwiniętym widoku
+      sortModes:
+        rarity: Względem rzadkości
+        defaultOrder: Podstawowo
+        alphabetical: Alfabetycznie
+        quantity: Jakościowo
+        coinValue: Wartość w monetach
+        mostRecent: Ostatnie
+      reorder: Organizuj
+      tabMostRecent: Ostatnie
+      tabFavorites: Ulubione
+      settingsTitle: Ustawienia banku
+      settingsEmpty: Więcej ustawień pojawi się wkrótce.
+      settingsDisplayTitle: Wygląd
+      settingsBehaviorTitle: Zachowanie
+      settingShowTypeIcons: Pokaż ikony typów przedmiotów
+      settingShowFavorites: Pokaż oznaczenie ulubionych
+      settingShowTabQuantity: Pokaż ilość przedmiotów w zakładce
+      settingShowCategoryQuantity: Pokaż ilość przedmiotów w kategorii
+      settingShowGradients: Pokaż gradienty przedmiotów
+      settingShowMostRecentTab: Pokaż zakładkę Ostatnie
+      settingShowFavoritesTab: Pokaż zakładkę Ulubione
+      settingGridColumns: Kolumn w siatce
+      settingSwapTapActions: Zamień ze sobą przyciśnięcie i długie wciśnięcie
+      settingCondensedList: Zagęszczony widok listy
+      settingAnimateCollapse: Animuj zwijanie
+      settingShowPlaceholders: Pokazuj miejsca tymczasowe w trybie edycji
+      settingConfirmBeforeApply: Sprawdzanie przed skompletowaniem
+      settingsResetView: Zresetuj widok
+      sortTitle: Sortuj przedmioty
+      sortAscending: Rosnąco
+      sortDescending: Malejąco
+      filterTitle: Filtruj przedmioty
+      filterEnable: Włącz filtry
+      filterGlobalTitle: Ogólne
+      filterAttributesTitle: Atrybuty
+      filterSkillsTitle: Umiejętności
+      filterQualityTitle: Jakość
+      inventoryFilterTitle: Filtrowanie wyposażenia
+      inventoryFilterTypesTitle: Rodzaje przedmiotów
+      inventoryFilterVisibilityTitle: Widoczność
+      inventoryFilterShowFavorited: Pokaż ulubione
+      searchNoResults: Wyszukiwanie nie dało żadnych wyników
+      filterAttributeNames:
+        fineMaterialFind: Znajdowanie świetnych materiałów
+        findBirdNests: Znajdowanie ptasich gniazd
+        bonusExperience: Dodatkowe doświadczenie
+        workEfficiency: Wydajność pracy
+        chestFind: Znajdowanie skrzyń
+        findCollectibles: Znajdowanie znajdziek
+        findGems: Znajdowanie klejnotów
+        doubleRewards: Podwójna nagroda
+      reorderBlockedSearch: Wyczyść wyszukanie, by poukładać przedmioty
+      reorderBlockedBoth: Wyczyść filtry i wyszukiwanie, by poukładać przedmioty
+      inventoryEmpty: Twój ekwipunek jest pusty
+      reorderBlockedSort: Wyczyść sortowanie, by poukładać przedmioty
+      narrowedDragHint: Możesz przerzucić przedmioty do innych kategorii i zakładek.
+        Wyczyść wyszukiwanie, filtry i sortowanie, by zmienić ich kolejność w wybranym
+        miejscu.
+      applyNotAtBankDeposit: Musisz być w banku, by deponować przedmioty
+      reorderBlockedFilter: Wyczyść filtry, by poukładać przedmioty
+      reorderBlockedActive: Wyczyść wyszukiwanie, filtry i sortowanie, by poukładać
+        przedmioty
+      changesSaved: Twoje zmiany zostały zapisane
+      itemsReassigned: Przedmioty poukładano według twoich filtrów
+      inventoryTitle: Ekwipunek
+      withdrawAvailable: '{count} w banku'
+      withdrawLimit: Możesz wyjąć maksymalnie {count} na raz
+      withdrawStaged: '{count} trwające'
+      applyWithdrawals: Zakończ
+      applyNotAtBank: Musisz być w banku, by wyjmować przedmioty
+      withdrawNotAtBank: Nie możesz wyjmować przedmiotów nie będąc w banku
+      withdrawComplete: Przedmioty wyjęte do twojego ekwipunku
+      depositComplete: Przedmioty deponowane do twojego banku
+      inventoryFilterShowLocked: Pokaż zablokowane
+      filterNoResults: Brak wyników, które spełniają twoje filtry
+      depositedAll: Deponuj wszystkie przedmioty
+      applyComplete: Przeprowadzono transakcje bankowe
+      depositAvailable: '{count} w ekwipunku'
+      depositStaged: '{count} trwające'
+      depositNotAtBank: Nie możesz deponować przedmiotów nie będąc w banku
+      editBlockedPending: Wyjmij trwające przedmioty przed edycją
+      processing: "Przetwarzanie i zapisywanie do chmury\n\nProszę czekać..."
+      slotName: Układ {index}
+      activeLayout: Aktywny
+      savingLayout: "Zapisywanie układu banku do chmury\n\nProszę czekać..."
+      defaultHint: Podstawowy układ banku, który jest zawsze dostępny.
+      switchLayout: Zmień układ
+      chooseLayout: Wybierz układ
+      renameLayout: Zmień nazwę układu
+      renameLayoutTitle: Nazwij układ
+      switchBlockedEditing: Ukończ edytowanie przed zmienianiem układów
+      layoutsTitle: Układy
+      defaultName: Podstawowy
+      emptySlot: Pusty slot układu {index}/{total}
+      createFromDefaultHint: Kopia podstawowego układu
+      createFromDefault: Układ postawowy
+      slotsFull: Wszystkie sloty układów są pełne. Usuń jeden, by zrobić miejsce.
+      createLayoutTitle: Nowy układ
+      layoutCreated: Układ utworzony
+      createFromTitle: Zacznij nowy układ od...
+      createFromBlank: Pusty układ
+      newCategory: Nowa kategoria
+      addTab: Dodaj zakładkę
+      newTab: Nowa zakładka
+      noItemsYet: Brak przedmiotów
+      emptyTab: Nie ma tu na razie żadnych przedmiotów. Zobaczysz je, gdy jakieś zdeponujesz.
+      emptyBank: Twój bank jest pusty
+      editCategory: Edytuj kategorię
+      editTab: Edytuj zakładkę
+      deleteTab: Usuń zakładkę
+      options: Opcje
+      filters:
+        title: Filtry
+        empty: Brak filtrów
+        add: Dodaj filtr
+        cancel: Anuluj
+        noMatches: Brak zgodnych wyników
+        search: Szukaj {kind}
+        kindItemType: Rodzaj przedmiotu
+        kindGearType: Rodzaj wyposażenia
+        kindKeyword: Słowo-klucz
+        kindSkill: Umiejętność
+        kindGlobal: Globalne
+        kindRegional: Regionalne
+        labelItemType: 'Typ przedmiotu: {value}'
+        labelGearType: 'Typ wyposażenia: {value}'
+        labelKeyword: 'Słowo-klucz: {value}'
+        labelSkill: 'Umiejętność: {value}'
+        labelGlobal: Globalne
+        labelRegional: Regionalne
+      picker:
+        sectionFiltersTitle: Filtry
+        preview: Podgląd
+        confirm: Potwierdź
+        valueNone: Brak
+        rowName: Nazwa
+        rowIcon: Ikona
+        rowColour: Kolor
+        rowBackground: Tło
+        rowFilters: Filtry
+        nameLabel: Nazwa
+        searchIcons: Wyszukaj ikony
+        sectionNameTitle: Edytuj nazwę
+        sectionIconTitle: Wybierz ikonę
+        sectionColourTitle: Wybierz kolor
+        sectionBackgroundTitle: Wybierz tło
+        shapeNone: Brak
+        shapeCircle: Okrąg
+        shapeRoundedRect: Zaokrąglone
+        shapeSquare: Kwadrat
+        showIfEmptyLabel: Pokaż gdy puste
+        showIfEmptyDesc: Zachowaj widoczną kategorię nawet, gdy nie posiada przedmiotów.
+      exitWithdrawTitle: Wyjść bez wyjmowania?
+      discardChangesTitle: Odrzucić zmiany?
+      discardChangesBody: Masz niezapisane zmiany w układzie banku. Wyjście teraz
+        spowoduje odrzucenie zmian.
+      exitWithdrawBody: Masz trwające przedmioty w trakcie wyjmowania, które nie zostały
+        jeszcze wyjęte. Zrezygnowanie teraz sprawi, że wrócą one do twojego banku.
+      createFromBlankHint: Jedna pusta zakładka do własnoręcznej organizacji
+      createFromImport: Import ze schowka
+      createFromImportHint: Wklej układ, który eksportujesz lub otrzymujesz
+      importFailed: Brak poprawnego układu znalezionego w schowku.
+      rename: Zmiana nazwy
+      export: Esportuj
+      layoutExported: Układ skopiowany do schowka
+      deleteLayoutTitle: Usunąć układ?
+      deleteLayoutBody: '{name} zostanie całkowicie skasowany.'
+      layoutDeleted: Układ skasowany
+      deleteCategoryTitle: Usunąć kategorię?
+      deleteCategoryBody: Przedmioty z tej kategorii zostaną przeniesione do Bez Kategorii.
+      deleteTabTitle: Usunąć zakładkę?
+      deleteTabBody: Ta zakładka zostanie usunięta z twojego banku.
+      cannotDeleteTabTitle: Nie można usunąć zakładki
+      cannotDeleteTabBody: Tylko puste zakładki mogą być usunięte. Najpierw przenieś
+        lub usuń przedmioty.
+      cannotDeleteLastTabBody: Musisz zachować przynajmniej jedną zakładkę.
+      cannotDeletePrimaryTabBody: To podstawowa zakładka na nieposortowane przedmioty.
+        Nie może być usunięta.
+      blankTabName: Przedmioty
+      increase: Dodaj {count}
+      inspect: Przejrzyj trwające transakcje
+      inspectTitle: Trwające transakcje
+      inspectEmpty: Brak trwających przedmiotów
+      inspectWithdrawing: Wyjmowanie
+      inspectSummary: '{stacks} stacków · {items} przedmiotów'
+      inspectInventory: 'Ekwipunek: {used}/{max} slotów'
+      inspectDepositing: Depozycja
+      decrease: Usuń {count}
+      uncategorized: Bez kategorii
+      addCategory: Dodaj kategorię
   trade:
     phrases:
       trade: HANDLUJ
@@ -1253,6 +1510,7 @@ singulars:
     phrases:
       downloadingAssets: Pobieram zasoby...
       downloadedFileCount: Pobrano plików <c i=0>{current}</c> z <c i=1>{total}</c>
+      finalizingAssets: Kończenie, proszę czekać...
   currencies:
     phrases:
       goldCoins: Złote monety
