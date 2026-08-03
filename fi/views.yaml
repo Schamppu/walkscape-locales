@@ -778,9 +778,13 @@ singulars:
       cooldownCharged: <object id="{ability}"/> on ladattu tavoitetasoon <c>{target}</c>!
       noInputsAvailable: <object id="{item}"/> tarvitaan tälle palautumisajalle, ja
         sinulla ei ole yhtään käytettävissäsi.
+      notEnoughCoins: Sinulla ei ole riittävästi kolikoita käytettäväksi tähän palautumiseen.
+      coins: Kolikot
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
         saadaan käyttämällä 1 <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
+        </chip> saatu <hl>{coins}</hl> kolikosta
     info:
       inputCooldownInfo: Tämä kyky viritetään tavaroilla repustasi. <icon i="input"
         size="16" vp="3.0" />  <hl>{amount}</hl> tuottaa yhden täyden latauksen.
@@ -1101,6 +1105,7 @@ singulars:
         foods: Ruoat
         drinks: Juomat
         petEggs: Lemmikkimunat
+        curiosity: Kuriositeetti
     multiSelect:
       moveHint: Monivalintatilassa voit valita useita erilaisia esineitä yhtä aikaa
         napauttamalla. Voit raahata niitä järjestääksesi ne muokkaustilassa, tai painaa
