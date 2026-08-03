@@ -361,9 +361,13 @@ singulars:
       inputNextCharge: 'След. заряд:'
       noInputsAvailable: У вас нет предмета <object id="{item}"/>, чтобы использовать
         для перезарядки.
+      coins: Монеты
+      notEnoughCoins: У вас недостаточно монет для оплаты этого восстановления.
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />   <hl>{amount}</hl>
         </chip> даёт <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
+        </chip> получено из <hl>{coins}</hl> монет
     info:
       inputCooldownInfo: Эта способность перезаряжается с помощью предметов. Для одного
         полного заряда требуется <icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>.
@@ -508,6 +512,7 @@ singulars:
         gearChest: Грудь
         toolsTraveling: Перемещение
         fishingBaits: Наживка
+        curiosity: Диковинка
       tabs:
         tools: Инструменты
         consumables: Расходники
@@ -658,6 +663,11 @@ singulars:
       inventoryFilterTypesTitle: Типы предметов
       settingGridColumns: Кол-во колонок
       filterGlobalTitle: Общие
+      settingShowGradients: Показывать градиенты предметов
+      settingConfirmBeforeApply: Просмотр перед завершением
+      settingShowPlaceholders: Показывать заглушки в режиме правки
+      settingLockUnfilteredCategories: Блокировать предметы в категориях без фильтров
+      settingsConfirmationsTitle: Подтверждения
   trade:
     phrases:
       trade: ПРИНЯТЬ
@@ -1331,6 +1341,19 @@ singulars:
       nextTierLabel: След.
       totalWealth: Общее состояние
       inventoryWealth: Инвентарь и экипировка
+      maxTier: Достигнут высший ранг!
+      wealthComposition: Состав состояния
+      itemTypes: Типы предметов в наличии
+      collection: Коллекция
+      collectionProgress: '{owned} из {total} предметов'
+      gearRarity: Снаряжение и инструменты по редкости
+      statistics: Статистика
+      mostValuable: Самый ценный предмет
+      itemsOwned: Всего предметов
+      uniqueItems: Уникальных предметов
+      coinsEarnedSelling: Заработано монет с продаж
+      coinsSpentBuying: Потрачено монет на покупки
+      incomeFromSelling: Доход от продаж
 plurals:
   inventory:
     info:
