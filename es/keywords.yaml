@@ -145,6 +145,13 @@ singulars:
       requirement: Requiere <object id="leather" />.
       requirementLevel: Requiere cuaro que tenga al menos <keywordRequirements />
         de requisito.
+    huntingProduct:
+      name: Producto de caza
+      requirement: Requiere <object id="huntingProduct" />.
+      requirementLevel: Requiere un producto de caza que tenga al menos <keywordRequirements
+        /> de requisito.
+      desc: El resultado de una cacería. Se puede usar en una multitud de recetas
+        de <skillType type="artisan" /> diferentes.
   tools:
     fishing:
       name: Pesca
@@ -289,9 +296,9 @@ singulars:
         <keywordRequirements /> de requisito.
       desc: Las herramientas de carpintería incluyen sierras y cinceles.
     fishingLure:
-      name: Cebo de pesca
+      name: Señuelo de pesca
       requirement: Requiere llevar un <object id="fishingLure" />.
-      requirementLevel: Requiere un cebo de pesca que tenga al menos <keywordRequirements
+      requirementLevel: Requiere un señuelo de pesca que tenga al menos <keywordRequirements
         /> de requisito.
       desc: Puedes usar cebos de pesca para atraer a los peces más fácilmente.
     cookingPot:
@@ -655,6 +662,12 @@ singulars:
         /> de requisito.
       desc: ¡Todo lo que está entre dos rebanadas de pan es un sándwich! Se puede
         consumir para obtener un bonus temporal y se requiere para ciertos logros.
+    fishingBait:
+      requirementLevel: Requiere un cebo de pesca que tenga al menos <keywordRequirements
+        /> de requisito.
+      name: Cebo de pesca
+      desc: Cebo usado para atraer y atrapar peces al pescar.
+      requirement: Requiere un <object id="fishing_bait" />.
   containers:
     skillingChest:
       requirementLevel: Requiere un cofre de habilidad que tenga al menos <keywordRequirements
@@ -940,6 +953,13 @@ singulars:
         consideras quedártelo para realizarla más adelante?
       requirement: Requiere algo <object id="upgradeable" />.
       requirementLevel: Requiere algo mejorable que tenga al menos <keywordRequirements
+        /> de requisito.
+    curiosity:
+      name: Curiosidad
+      requirement: Requiere alguna <object id="curiosity" />.
+      desc: Curiosidades como estas son consideradas valiosas por el Gremio de Aventureros
+        local. Puede que por esto te den fichas del Gremio de Aventureros.
+      requirementLevel: Requiere alguna curiosidad que tenga al menos <keywordRequirements
         /> de requisito.
   achievements:
     percentage:

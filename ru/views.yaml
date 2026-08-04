@@ -361,9 +361,13 @@ singulars:
       inputNextCharge: 'След. заряд:'
       noInputsAvailable: У вас нет предмета <object id="{item}"/>, чтобы использовать
         для перезарядки.
+      coins: Монеты
+      notEnoughCoins: У вас недостаточно монет для оплаты этого восстановления.
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />   <hl>{amount}</hl>
         </chip> даёт <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
+        </chip> получено из <hl>{coins}</hl> монет
     info:
       inputCooldownInfo: Эта способность перезаряжается с помощью предметов. Для одного
         полного заряда требуется <icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>.
@@ -508,6 +512,7 @@ singulars:
         gearChest: Грудь
         toolsTraveling: Перемещение
         fishingBaits: Наживка
+        curiosity: Диковинка
       tabs:
         tools: Инструменты
         consumables: Расходники
@@ -551,6 +556,7 @@ singulars:
         rarity: По редкости
         coinValue: По цене
         mostRecent: По дате получения
+        levelRequirement: Требуемый уровень
       sortModesTitle: Сортировать по
       filterTitle: Фильтр предметов
       filterEnable: Включить фильтры
@@ -580,6 +586,14 @@ singulars:
         findBirdNests: Поиск птичьих гнёзд
         doubleRewards: Двойные награды
         bonusExperience: Бонусный опыт
+        qualityOutcome: Качество изготовления
+        doubleAction: Двойное действие
+        bonusMoney: Бонусные монеты
+        travelingDistance: Дальность перемещения
+        stepsRequired: Требуется шагов
+        inventorySpace: Место в инвентаре
+        skillLevel: Уровень навыка
+        noMaterialsConsumed: Без расхода материалов
       inventoryTitle: Инвентарь
       inventoryEmpty: Ваш инвентарь пуст
       withdrawAvailable: '{count} в банке'
@@ -613,6 +627,11 @@ singulars:
         cancel: Отмена
         noMatches: Нет совпадений
         labelSkill: 'Навык: {value}'
+        kindItemType: Тип предмета
+        kindGlobal: Для всех навыков
+        kindRegional: Региональный
+        labelGlobal: Для всех навыков
+        labelRegional: Региональный
       noItemsYet: Пока нет предметов
       emptyTab: Здесь пока нет предметов. Они появятся, когда вы что-нибудь положите
         в банк.
@@ -638,6 +657,12 @@ singulars:
         shapeNone: Нет
         shapeCircle: Круг
         showIfEmptyLabel: Показывать, даже если пусто
+        sectionBackgroundTitle: Выбрать фон
+        shapeRoundedRect: Скруглённый
+        searchIcons: Поиск иконки
+        sectionColourTitle: Выбрать цвет
+        lockItemsDesc: Оставлять предметы этой категории на месте при автосортировке.
+        sectionIconTitle: Выбрать иконку
       deleteCategoryBody: Предметы из этой категории будут перемещены в «Без категории».
       cannotDeleteTabBody: Можно удалить только пустые вкладки. Сначала переместите
         или удалите её предметы.
@@ -658,6 +683,44 @@ singulars:
       inventoryFilterTypesTitle: Типы предметов
       settingGridColumns: Кол-во колонок
       filterGlobalTitle: Общие
+      settingShowGradients: Показывать градиенты предметов
+      settingConfirmBeforeApply: Просмотр перед завершением
+      settingShowPlaceholders: Показывать заглушки в режиме правки
+      settingLockUnfilteredCategories: Блокировать предметы в категориях без фильтров
+      settingsConfirmationsTitle: Подтверждения
+      settingsResetView: Сбросить вид
+      settingAlwaysSaveTransactions: Автоподтверждение транзакций при выходе
+      clearAllFilters: Сбросить все фильтры
+      filterHighestQuality: Только наивысшее качество
+      filterRareEgg: Редкое яйцо
+      filterMiscTitle: Разное
+      filterTraveling: Перемещение
+      createFromImport: Импорт из буфера
+      rename: Переименовать
+      export: Экспортировать
+      deleteLayoutBody: '{name} будет окончательно удалён.'
+      blankTabName: Предметы
+      inspectSummary: '{stacks} стаков · {items} предметов'
+      inspectInventory: 'Инвентарь: {used}/{max} слотов'
+      increase: Добавить {count}
+      decrease: Удалить {count}
+      exitWithdrawTitle: Выйти без снятия из банка?
+      exitWithdrawBody: У вас есть предметы, ожидающие снятия, но ещё не забранные
+        из банка. При выходе они вернутся в банк.
+      inspectWithdrawing: Снятие
+      inspectDepositing: Внесение
+      leaveTransactionsTitle: Выйти из банка?
+      exitEditTitle: Завершить редактирование?
+      actionLeaveAndSave: Выйти и сохранить
+      actionLeaveWithoutSaving: Выйти
+      leaveEditsTitle: Выйти из редактирования?
+      actionLeaveAndTransfer: Выйти и перенести
+      actionLeaveWithoutTransferring: Выйти
+      actionDiscardChanges: Отменить изменения
+      actionSaveChanges: Сохранить изменения
+      actionKeepEditing: Продолжить редактирование
+      rememberLeaveAndSave: Всегда сохранять без запроса
+      rememberLeaveAndTransfer: Всегда переносить в/из банка без запроса
   trade:
     phrases:
       trade: ПРИНЯТЬ
@@ -1291,9 +1354,59 @@ singulars:
       new: New
     types:
       activity: Активность
-      traveling: Путешествие
+      traveling: Перемещение
       crafting: Изготовление
       idle: Бездействие
+  creditRating:
+    tiers:
+      nearlyBankrupt: На грани банкротства
+      f: F
+      d: D
+      c: C
+      b: B
+      a: A
+      aa: AA
+      aaa: AAA
+      s: S
+      ss: SS
+      sss: SSS
+      sssPlus: SSS+
+    flavors:
+      nearlyBankrupt: Банк всерьёз за вас беспокоится.
+      f: Едва сводите концы с концами.
+      d: Сводите концы с концами.
+      c: Умеренный достаток.
+      b: Живете довольно неплохо.
+      a: Уважаемое состояние.
+      aa: Серьёзное богатство.
+      aaa: Купаетесь в деньгах.
+      s: Титан торговли.
+      ss: Нелепо богаты.
+      sss: Богатство без меры.
+      sssPlus: Олигарх.
+  bankStatistics:
+    phrases:
+      title: Банковская статистика
+      bankWealth: Состояние в банке
+      coins: Монеты
+      creditRating: Кредитный рейтинг
+      nextTier: 'След.: {tier}'
+      nextTierLabel: След.
+      totalWealth: Общее состояние
+      inventoryWealth: Инвентарь и экипировка
+      maxTier: Достигнут высший ранг!
+      wealthComposition: Состав состояния
+      itemTypes: Типы предметов в наличии
+      collection: Коллекция
+      collectionProgress: '{owned} из {total} предметов'
+      gearRarity: Снаряжение и инструменты по редкости
+      statistics: Статистика
+      mostValuable: Самый ценный предмет
+      itemsOwned: Всего предметов
+      uniqueItems: Уникальных предметов
+      coinsEarnedSelling: Заработано монет с продаж
+      coinsSpentBuying: Потрачено монет на покупки
+      incomeFromSelling: Доход от продаж
 plurals:
   inventory:
     info:

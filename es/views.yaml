@@ -868,12 +868,16 @@ singulars:
       inputAtMax: Máx.
       cooldownCharged: ¡Has cargado el talento <object id="{ability}"/> para <c>{target}</c>!
       inputNextCharge: 'Siguiente carga:'
+      coins: Monedas
+      notEnoughCoins: No tienes monedas suficientes para usar en este enfriamiento.
     info:
       inputCooldownInfo: Este talento se carga usando objetos. Una carga completa
         requiere <icon i="input" size="16" vp="3.0" /> <hl>{amount}</hl>.
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" /> <hl>{amount}</hl> </chip>
         ganado de <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
+        </chip> ganado por <hl>{coins}</hl> monedas
   treasury:
     phrases:
       openChest: Abrir
@@ -1085,6 +1089,200 @@ singulars:
       withdraw: Retirar
       youAreNotAtABank: <c>No estás en una ubicación con banco</c>. Solo puedes usar
         el banco una vez viajes a una ubicación que tenga banco.
+    defaultLayout:
+      tabs:
+        materials: Materiales
+        gear: Equipo
+        tools: Herramientas
+        consumables: Consumibles
+        misc: Misceláneo
+      categories:
+        gems: Gemas
+        huntingProducts: Productos de Caza
+        rawFish: Pescado Crudo
+        logs: Troncos
+        ores: Minerales
+        planks: Tablones
+        plants: Plantas
+        trinkets: Figuritas
+        curiosity: Curiosidad
+        processed: Procesado
+        materialsMisc: Misceláneo
+        gearCape: Capa
+        gearHead: Cabeza
+        gearBack: Espalda
+        gearHands: Manos
+        gearChest: Pecho
+        gearNeck: Cuello
+        gearPrimary: Principal
+        gearLegs: Piernas
+        gearSecondary: Secundario
+        gearRings: Anillos
+        gearFeet: Pies
+        toolsAgility: Agilidad
+        toolsCarpentry: Carpintería
+        toolsCooking: Cocina
+        toolsCrafting: Fabricación
+        toolsFishing: Pesca
+        toolsForaging: Recolección
+        toolsHunting: Caza
+        toolsMining: Minería
+        toolsSmithing: Herrería
+        toolsTailoring: Sastrería
+        toolsTrinketry: Joyería
+        toolsGlobal: Global
+        ingredients: Ingredientes
+        toolsWoodcutting: Tala
+        arrows: Flechas
+        bars: Lingotes
+        toolsRegional: Regional
+        cookedFish: Pescado Cocinado
+        foods: Comidas
+        drinks: Bebidas
+        petEggs: Huevos de Mascota
+        fishingBaits: Cebos de Pesca
+        toolsTraveling: Viaje
+    multiSelect:
+      selectedCount: '{count} seleccionados'
+      depositSelected: Depositar
+      withdrawSelected: Retirar
+      moveHint: En modo multi-selección puedes tocar para seleccionar objetos diferentes
+        a la vez. Puedes arrastrar para organizarlos en modo edición o presionar el
+        menú contextual de los encabezados de la categoría para moverlos a otra categoría
+        diferente.
+      moveSelectedHere: Mover {count} aquí
+      selectAll: Seleccionar todo
+      deselectAll: Deseleccionar todo
+    layout:
+      reorder: Reordenar
+      tabMostRecent: Más Reciente
+      tabFavorites: Favoritos
+      settingsBehaviorTitle: Comportamiento
+      settingsEmpty: Próximamente más ajustes.
+      settingsTitle: Ajustes del banco
+      settingsDisplayTitle: Visualización
+      settingShowTypeIcons: Muestra iconos de tipo de objeto
+      settingShowFavoritesTab: Muestra pestaña de Favoritos
+      settingShowFavorites: Muestra marcadores de favorito
+      settingShowTabQuantity: Muestra contadores de objeto en pestaña
+      settingShowCategoryQuantity: Muestra contadores de objeto en categoría
+      settingShowGradients: Muestra gradientes de objeto
+      settingShowMostRecentTab: Muestra pestaña de Más Reciente
+      settingGridColumns: Columnas de cuadrícula
+      settingSwapTapActions: Cambia toque y toque largo
+      settingAnimateCollapse: Contraer animado
+      settingCondensedList: Vista de lista condensada
+      settingAlwaysStartCollapsed: Comenzar siempre contraído
+      settingShowPlaceholders: Mostrar marcadores de posición en modo edición
+      settingConfirmBeforeApply: Revisar antes de completar
+      settingLockUnfilteredCategories: Bloquea objetos en categorías sin filtros
+      settingsConfirmationsTitle: Confirmaciones
+      settingAlwaysSaveTransactions: Auto-confirmar transacciones al salir
+      settingAlwaysSaveEdits: Auto-guardar cambios de diseño al salir
+      sortModes:
+        rarity: Rareza
+        defaultOrder: Por defecto
+        alphabetical: Alfabético
+        quantity: Cantidad
+        levelRequirement: Requerimiento de nivel
+        coinValue: Valor en monedas
+        mostRecent: Más reciente
+      settingsResetView: Restaurar vista
+      sortTitle: Ordenar objetos
+      sortAscending: Ascendente
+      sortDescending: Descendente
+      sortModesTitle: Ordenar por
+      filterTitle: Filtrar objetos
+      filterEnable: Activar filtros
+      clearAllFilters: Limpiar todos los filtros
+      filterGlobalTitle: General
+      filterAttributesTitle: Atributos
+      filterSkillsTitle: Habilidades
+      filterTypesTitle: Tipos de objeto
+      filterQualityTitle: Calidad
+      filterMiscTitle: Misceláneo
+      filterHighestQuality: Solo calidad más alta
+      filterRareEgg: Huevo raro
+      filterTraveling: Viaje
+      inventoryFilterTitle: Filtrar inventario
+      inventoryFilterTypesTitle: Tipos de objeto
+      inventoryFilterVisibilityTitle: Visibilidad
+      inventoryFilterShowFavorited: Mostrar favoritos
+      inventoryFilterShowLocked: Mostrar bloqueados
+      searchNoResults: La búsqueda no ha encontrado nada
+      reorderBlockedSearch: Limpia la búsqueda para reordenar los objetos
+      reorderBlockedFilter: Limpia los filtros para reordenar los objetos
+      filterAttributeNames:
+        travelingDistance: Distancia de viaje
+        workEfficiency: Eficiencia de trabajo
+        fineMaterialFind: Hallar material de calidad
+        qualityOutcome: Calidad del resultado
+        doubleRewards: Doble recompensa
+        bonusExperience: Bonus de experiencia
+        chestFind: Hallar cofres
+        findCollectibles: Hallar coleccionables
+        findGems: Hallar gemas
+        findBirdNests: Hallar nido de pájaros
+        doubleAction: Doble acción
+        bonusMoney: Bonus de monedas
+        extraLootRolls: Tiradas adicionales de botín
+        rollSpecialTable: Tiradas de mesa especial
+        stepsRequired: Pasos requeridos
+        inventorySpace: Espacio de inventario
+        randomEncounters: Encuentros aleatorios
+        fineMaterialOutcome: Resultado de material de calidad
+        skillLevel: Nivel de habilidad
+        noMaterialsConsumed: Sin consumo de materiales
+        doubleItem: Doble objeto
+      reorderBlockedActive: Limpia la búsqueda, los filtros y la clasificación para
+        reordenar los objetos
+      narrowedDragHint: Puedes arrastrar objetos a otras categorías y pestañas. Limpia
+        la búsqueda, los filtros y la clasificación para reordenar dentro de ellas.
+      reorderBlockedBoth: Limpia la búsqueda y los filtros para reordenar los objetos
+      reorderBlockedSort: Limpia la clasificación para reordenar los objetos
+      filterNoResults: No hay resultados con tus filtros
+      changesSaved: Tus cambios se han guardado
+      itemsReassigned: Los objetos se han reordenado según tus filtros
+      inventoryEmpty: Tu inventario está vacío
+      withdrawAvailable: '{count} en banco'
+      inventoryTitle: Inventario
+      withdrawStaged: '{count} dispuesto'
+      applyWithdrawals: Completo
+      applyNotAtBank: Debes estar en un banco para retirar
+      withdrawNotAtBank: No puedes retirar objetos si no estás en un banco
+      applyNotAtBankDeposit: Debes estar en un banco para depositar
+      withdrawLimit: Puedes retirar como máximo {count} a la vez
+      depositComplete: Objetos depositados en tu banco
+      applyComplete: Transacciones bancarias aplicadas
+      depositAvailable: '{count} en inventario'
+      depositStaged: '{count} dispuesto'
+      editBlockedPending: Retira tus objetos dispuestos antes de editar
+      processing: "Procesando y guardando en la nube\n\nPor favor, espera..."
+      savingLayout: "Guardando el diseño del banco a la nube\n\nPor favor, espera..."
+      withdrawComplete: Objetos retirados a tu inventario
+      depositedAll: Todos los objetos depositados
+      depositNotAtBank: No puedes depositar objetos si no estás en un banco
+      slotName: Diseño {index}
+      switchLayout: Cambiar diseño
+      chooseLayout: Elige un diseño
+      renameLayout: Renombrar diseño
+      activeLayout: Activo
+      switchBlockedEditing: Termina de editar antes de cambiar de diseño
+      layoutsTitle: Diseños
+      defaultName: Por defecto
+      defaultHint: El diseño por defecto del banco que siempre está disponible.
+      emptySlot: Ranura de diseño vacía {index}/{total}
+      slotsFull: Todas las ranuras de diseño están llenas. Elimina una para hacer
+        sitio.
+      createLayoutTitle: Nuevo diseño
+      layoutCreated: Diseño creado
+      renameLayoutTitle: Renombrar diseño
+      createFromTitle: Empezar un nuevo diseño desde...
+      createFromDefault: Diseño por defecto
+      createFromDefaultHint: Una copia de la organización original
+      createFromBlank: Diseño en blanco
+      createFromBlankHint: Una pestaña en blanco para que te organices
+      createFromImport: Importar de portapapeles
   popupBubbles:
     phrases:
       overEncumbered: Tu inventario está lleno y estás sobrecargado.
@@ -1199,7 +1397,7 @@ singulars:
         onceAllActionsAreCompleted: Cuando se completen todas las acciones, ¿quieres
           hacer algo?
     types:
-      traveling: Viajando
+      traveling: Viaje
       activity: Actividad
       crafting: Fabricación
     phrases:
@@ -1409,7 +1607,7 @@ singulars:
         marcados como <c>Nuevo</c> todavía no se han abierto.
     types:
       activity: Actividad
-      traveling: Viajes
+      traveling: Viaje
       crafting: Fabricación
       idle: Ocioso
   mailbox:
@@ -1437,3 +1635,53 @@ singulars:
         subject: ¡Feliz tercer cumpleaños!
         text: ¡Vaya, mira quien cumple tres! No sucumbas a la oscuridad, aquí tienes
           algo para evitar que te rindas a sus poderes.\n\n- Sergio
+  creditRating:
+    tiers:
+      nearlyBankrupt: Casi en Bancarrota
+      f: F
+      d: D
+      c: C
+      b: B
+      a: A
+      aa: AA
+      aaa: AAA
+      s: S
+      ss: SS
+      sss: SSS
+      sssPlus: SSS+
+    flavors:
+      nearlyBankrupt: El banco está genuinamente preocupado por ti.
+      f: Apenas puedes encender la luz.
+      d: Llegas a fin de mes.
+      c: Modestamente cómodo.
+      b: No lo estás haciendo nada mal.
+      a: Una fortuna respetable.
+      aa: Rico de verdad.
+      aaa: Nadando en monedas.
+      s: Un titán del comercio.
+      ss: Absurdamente rico.
+      sss: Riqueza más allá de cualquier medida.
+      sssPlus: El banco ahora responde ante ti.
+  bankStatistics:
+    phrases:
+      title: Estadísticas del Banco
+      totalWealth: Riqueza total
+      inventoryWealth: Inventario y equipado
+      coins: Monedas
+      creditRating: Calificación de crédito
+      nextTier: 'Siguiente: {tier}'
+      nextTierLabel: Siguiente
+      maxTier: ¡Nivel más alto alcanzado!
+      wealthComposition: Composición de la riqueza
+      itemTypes: Tipos de objeto obtenidos
+      gearRarity: Equipo y herramientas por rareza
+      statistics: Estadísticas
+      mostValuable: Objeto más valioso
+      bankWealth: Riqueza del banco
+      collection: Colección
+      collectionProgress: '{owned} de {total} objetos obtenidos'
+      uniqueItems: Objetos únicos obtenidos
+      coinsEarnedSelling: Monedas ganadas vendiendo
+      coinsSpentBuying: Monedas gastadas comprando
+      incomeFromSelling: Beneficio de venta
+      itemsOwned: Total de objetos obtenidos

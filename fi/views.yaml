@@ -778,9 +778,13 @@ singulars:
       cooldownCharged: <object id="{ability}"/> on ladattu tavoitetasoon <c>{target}</c>!
       noInputsAvailable: <object id="{item}"/> tarvitaan tälle palautumisajalle, ja
         sinulla ei ole yhtään käytettävissäsi.
+      notEnoughCoins: Sinulla ei ole riittävästi kolikoita käytettäväksi tähän palautumiseen.
+      coins: Kolikot
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
         saadaan käyttämällä 1 <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
+        </chip> saatu <hl>{coins}</hl> kolikosta
     info:
       inputCooldownInfo: Tämä kyky viritetään tavaroilla repustasi. <icon i="input"
         size="16" vp="3.0" />  <hl>{amount}</hl> tuottaa yhden täyden latauksen.
@@ -1101,6 +1105,7 @@ singulars:
         foods: Ruoat
         drinks: Juomat
         petEggs: Lemmikkimunat
+        curiosity: Kuriositeetti
     multiSelect:
       moveHint: Monivalintatilassa voit valita useita erilaisia esineitä yhtä aikaa
         napauttamalla. Voit raahata niitä järjestääksesi ne muokkaustilassa, tai painaa
@@ -1133,6 +1138,7 @@ singulars:
         rarity: Harvinaisuus
         coinValue: Arvo kultakolikoina
         mostRecent: Viimeisimmät
+        levelRequirement: Tasovaatimus
       settingCondensedList: Tiivistetty luettelonäkymä
       settingGridColumns: Ruudukon sarakkeet
       settingSwapTapActions: Vaihda napsautus ja pitkä painallus päikseen
@@ -1182,6 +1188,19 @@ singulars:
         findBirdNests: Linnunpesien löytäminen
         doubleRewards: Tuplapalkkiot
         bonusExperience: Bonuskokemus
+        qualityOutcome: Käsityön laatu
+        doubleAction: Tuplatoiminnot
+        bonusMoney: Bonuskolikot
+        extraLootRolls: Lisäheittoja saalista
+        rollSpecialTable: Erikoistaulukon heittoja
+        stepsRequired: Askelia vaadittu
+        inventorySpace: Repun koko
+        randomEncounters: Satunnaisia kohtaamisia
+        fineMaterialOutcome: Oivan materiaalin mahdollisuus
+        skillLevel: Taitotaso
+        noMaterialsConsumed: Materiaaleja ei kuluteta
+        doubleItem: Tuplaesine
+        travelingDistance: Matkustusetäisyys
       inventoryTitle: Reppu
       inventoryEmpty: Reppusi on tyhjä
       withdrawAvailable: '{count} pankissa'
@@ -1279,6 +1298,9 @@ singulars:
         shapeNone: Ei mitään
         shapeCircle: Ympyrä
         shapeSquare: Neliö
+        lockItemsLabel: Lukitse esineet
+        lockItemsDesc: Pidä tämän luokan esineet paikallaan myös automaattisen järjestelyn
+          aikana.
       addTab: Lisää välilehti
       newTab: Uusi välilehti
       uncategorized: Luokittelematon
@@ -1307,6 +1329,31 @@ singulars:
       cannotDeleteLastTabBody: Sinun on pakko säilyttää ainakin yksi välilehti.
       cannotDeletePrimaryTabBody: Tämä on oletusvälilehti, jonne luokittelemattomat
         esineet menevät. Sitä ei voi poistaa.
+      settingsConfirmationsTitle: Vahvistukset
+      settingLockUnfilteredCategories: Lukitse esineet suodattamattomissa luokissa
+      settingAlwaysSaveTransactions: Vahvista transaktiot poistuessa automaattisesti
+      settingAlwaysSaveEdits: Tallenna ulkoasumuutokset automaattisesti poistuessa
+      clearAllFilters: Tyhjennä kaikki suodattimet
+      filterRareEgg: Harvinainen muna
+      filterMiscTitle: Sekalaiset
+      filterTraveling: Matkustus
+      leaveTransactionsTitle: Poistu pankista?
+      leaveTransactionsBody: Sinulla on esineitä valmisteltuna siirtoa varten, mutta
+        siirto ei ole vielä valmis.
+      leaveEditsTitle: Hylkää muokkaukset?
+      leaveEditsBody: Sinulla on tallentamattomia muutoksia pankkisi ulkoasuun.
+      exitEditTitle: Lopeta muokkaaminen?
+      exitEditBody: Sinulla on tallentamattomia muutoksia pankkisi ulkoasuun.
+      actionLeaveAndSave: Poistu ja tallenna
+      actionLeaveWithoutSaving: Poistu
+      actionLeaveAndTransfer: Poistu ja siirrä
+      actionLeaveWithoutTransferring: Poistu
+      actionDiscardChanges: Hylkää muutokset
+      actionSaveChanges: Tallenna muutokset
+      actionKeepEditing: Jatka muokkaamista
+      rememberLeaveAndSave: Tallenna aina kysymättä erikseen
+      rememberLeaveAndTransfer: Siirrä aina kysymättä erikseen
+      filterHighestQuality: Vain korkein laatutaso
   leaderboards:
     phrases:
       show: Näytä
@@ -1673,3 +1720,53 @@ singulars:
       traveling: Matkustaminen
       crafting: Käsityöt
       idle: Toimeton
+  creditRating:
+    tiers:
+      f: F
+      d: D
+      c: C
+      b: B
+      a: A
+      aa: AA
+      aaa: AAA
+      s: S
+      ss: SS
+      sss: SSS
+      sssPlus: SSS+
+      nearlyBankrupt: Konkurssin rajoilla
+    flavors:
+      d: Tarkan markan talous.
+      ss: Nalle-setä on nyt hyvin, hyvin kateellinen.
+      nearlyBankrupt: Pankin henkilökunta seuraa menoasi huolestuneena.
+      f: Saat juuri ja juuri pidettyä valot päällä.
+      c: Menojen jälkeen jää jo vähän sukanvarteen pahan päivän varalle.
+      b: Naapurin Virtasilla ei kyllä varmasti mene näin hyvin.
+      aa: Lehdistön verotustietokatsaus mainitsee sinut nimeltä.
+      aaa: Rikas kuin Kroisos.
+      s: Talousmoguli.
+      sss: Rahaa niin ettei p****lle taivu.
+      a: Pankin sijoitusneuvoja yrittää varata sinulta ajan.
+      sssPlus: Olet virallisesti rahavuoresi oma vuorineuvos.
+  bankStatistics:
+    phrases:
+      title: Pankin tilastopalvelu
+      totalWealth: Omaisuutesi yhteensä
+      bankWealth: Omaisuutesi pankissa
+      inventoryWealth: Repussasi ja ylläsi
+      coins: Kolikot
+      creditRating: Luottoluokitus
+      nextTier: 'Seuraava taso: {tier}'
+      nextTierLabel: Seuraava
+      maxTier: Olet saavuttanut korkeimman tason!
+      wealthComposition: Omaisuutesi osa-alueet
+      itemTypes: Omistetut esinetyypit
+      collection: Kokoelma
+      collectionProgress: '{owned} / {total} esinettä omistuksessasi'
+      gearRarity: Varusteet ja työkalut harvinaisuusluokittain
+      statistics: Tilastot
+      mostValuable: Arvokkain esine
+      itemsOwned: Esineitä omistuksessasi yhteensä
+      uniqueItems: 'Erilaisia esineitä omistuksessasi:'
+      coinsEarnedSelling: Kolikoita tienattu myynnillä
+      incomeFromSelling: Tulot myynnistä yhteensä
+      coinsSpentBuying: Kolikoita kulunut ostamalla
