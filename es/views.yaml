@@ -876,6 +876,8 @@ singulars:
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" /> <hl>{amount}</hl> </chip>
         ganado de <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
+        </chip> ganado por <hl>{coins}</hl> monedas
   treasury:
     phrases:
       openChest: Abrir
@@ -1087,6 +1089,9 @@ singulars:
       withdraw: Retirar
       youAreNotAtABank: <c>No estás en una ubicación con banco</c>. Solo puedes usar
         el banco una vez viajes a una ubicación que tenga banco.
+    defaultLayout:
+      tabs:
+        materials: Materiales
   popupBubbles:
     phrases:
       overEncumbered: Tu inventario está lleno y estás sobrecargado.
