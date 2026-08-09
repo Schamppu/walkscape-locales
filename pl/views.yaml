@@ -695,9 +695,14 @@ singulars:
       inputNextCharge: 'Następny ładunek:'
       inputAtMax: Maks.
       cooldownCharged: Naładowano zdolność <object id="{ability}"/> dla <c>{target}</c>!
+      notEnoughCoins: Nie masz wystarczającej ilości monet, by użyć je do tego czasu
+        odnowienia.
+      coins: Monet
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
         otrzymane z <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" /> · · <hl>{amount}</hl>
+        </chip> otrzymane z <hl>{coins}</hl> monet
     info:
       inputCooldownInfo: Ta zdolność ładowana jest poprzez używanie przedmiotów. Jeden
         pełen ładunek wymaga <icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>.
@@ -1103,6 +1108,7 @@ singulars:
         foods: Jedzenie
         drinks: Napoje
         petEggs: Jajka Pupili
+        curiosity: Ciekawostka
       tabs:
         materials: Materiały
         tools: Narzędzia
@@ -1130,6 +1136,7 @@ singulars:
         quantity: Jakościowo
         coinValue: Wartość w monetach
         mostRecent: Ostatnie
+        levelRequirement: Wymagania poziomu
       reorder: Organizuj
       tabMostRecent: Ostatnie
       tabFavorites: Ulubione
@@ -1174,6 +1181,9 @@ singulars:
         findCollectibles: Znajdowanie znajdziek
         findGems: Znajdowanie klejnotów
         doubleRewards: Podwójna nagroda
+        qualityOutcome: Wynik jakości
+        doubleAction: Podwójna akcja
+        bonusMoney: Bonusowe monety
       reorderBlockedSearch: Wyczyść wyszukanie, by poukładać przedmioty
       reorderBlockedBoth: Wyczyść filtry i wyszukiwanie, by poukładać przedmioty
       inventoryEmpty: Twój ekwipunek jest pusty
@@ -1313,6 +1323,14 @@ singulars:
       decrease: Usuń {count}
       uncategorized: Bez kategorii
       addCategory: Dodaj kategorię
+      filterHighestQuality: Tylko najwyższej jakości
+      settingsConfirmationsTitle: Potwierdzenia
+      settingAlwaysSaveTransactions: Automatyczne potwierdzenie transakcji przy wychodzeniu
+      settingAlwaysSaveEdits: Automatyczne zapisywanie zmian układu przy wychodzeniu
+      clearAllFilters: Wyczyść wszystkie filtry
+      filterRareEgg: Rzadkie jajko
+      filterMiscTitle: Różności
+      filterTraveling: Podróżowanie
   trade:
     phrases:
       trade: HANDLUJ
@@ -1709,6 +1727,8 @@ singulars:
       aaa: Turlając się w monetach.
       s: Tytan handlu.
       ss: Absolutna bogatość.
+      sss: Bogactwo poza miarą.
+      sssPlus: Bank udziela ci teraz odpowiedzi.
   bankStatistics:
     phrases:
       itemsOwned: Łącznie posiadanych przedmiotów
@@ -1716,3 +1736,19 @@ singulars:
       coinsEarnedSelling: Monety ze sprzedaży
       coinsSpentBuying: Monety wydane na zakupy
       incomeFromSelling: Zysk ze sprzedaży
+      title: Statystyki Bankowe
+      totalWealth: Całkowite bogactwo
+      bankWealth: Bogactwo bankowe
+      inventoryWealth: Ekwipunek & wyposażone
+      coins: Monety
+      creditRating: Rating kredytowy
+      nextTier: 'Następny: {tier}'
+      nextTierLabel: Następny
+      maxTier: Osiągnięto najwyższy ranking!
+      wealthComposition: Kompozycja majątku
+      itemTypes: Typy posiadanych przedmiotów
+      collection: Kolekcja
+      collectionProgress: '{owned} posiadanych przedmiotów z {total} całkowicie'
+      gearRarity: Wyposażenie & narzędzia, względem jakości
+      statistics: Statystyki
+      mostValuable: Najcenniejszy przedmiot
