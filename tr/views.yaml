@@ -564,6 +564,10 @@ singulars:
         kindRegional: Bölgesel
         labelGlobal: Genel
         noMatches: Eşleşme bulunamadı
+        labelItemType: 'Eşya türü: {value}'
+        labelGearType: 'Teçhizat türü: {value}'
+        labelKeyword: 'Etiket: {value}'
+        labelSkill: 'Beceri: {value}'
       picker:
         preview: Ön izleme
         rowIcon: İkon
@@ -578,6 +582,10 @@ singulars:
         sectionColourTitle: Renk seç
         sectionBackgroundTitle: Arka plan seç
         sectionFiltersTitle: Filtreler
+        showIfEmptyLabel: Boşken göster
+        showIfEmptyDesc: Bu kategoriyi içinde eşya bulunmasa bile göster.
+        lockItemsLabel: Eşyaları kilitle
+        lockItemsDesc: Bu kategorideki eşyalar otomatik düzenleme sırasında yer değiştirmesin.
       emptyBank: Bankan bomboş
       options: Seçenekler
       editCategory: Kategoriyi düzenle
@@ -592,6 +600,28 @@ singulars:
       actionKeepEditing: Düzenlemeye devam et
       newTab: Yeni sekme
       addTab: Sekme ekle
+      discardChangesTitle: Değişiklikler silinsin mi?
+      discardChangesBody: Banka düzeninde kaydedilmemiş değişiklikler bulunuyor. Şimdi
+        ayrılmak bu değişiklikleri silecektir.
+      deleteTabTitle: Sekme silinsin mi?
+      deleteTabBody: Bu sekme banka düzeninden kaldırılacak.
+      cannotDeleteTabTitle: Sekme silinemiyor
+      cannotDeleteTabBody: Yalnızca boş sekmeler silinebilir. Önce içindeki eşyaları
+        taşı veya kaldır.
+      cannotDeletePrimaryTabBody: Burası ayrılmamış eşyaların konulduğu varsayılan
+        sekmedir. Bu sekmeyi silemezsin.
+      deleteCategoryBody: Bu kategorideki eşyalar kategorisizlere taşınacak.
+      actionLeaveAndSave: Kaydet ve çık
+      leaveEditsTitle: Düzenlemeden çıkılsın mı?
+      leaveEditsBody: Banka düzeninde kaydedilmemiş değişiklikler bulunuyor.
+      exitEditTitle: Düzenleme bitirilsin mi?
+      exitEditBody: Banka düzeninde kaydedilmemiş değişiklikler bulunuyor.
+      actionLeaveWithoutSaving: Çık
+      actionLeaveAndTransfer: Aktar ve çık
+      actionLeaveWithoutTransferring: Çık
+      rememberLeaveAndSave: Her zaman sormadan kaydet
+      rememberLeaveAndTransfer: Her zaman sormadan aktar
+      deleteCategoryTitle: Kategori silinsin mi?
   character:
     info:
       skillBreakdown: Karakterinin yolculuğu boyunca geliştirdiği bütün becerilerinin
@@ -833,6 +863,7 @@ singulars:
       startingSettingsManagerProcess: Ayar yönetme işlemi başlatılıyor
       spawningIsolate: Isolate açılıyor...
       startingOTAManagerProcess: Dosya yönetme süreci başlatılıyor
+      precomputing: Oyun verisi hesaplanıyor
     isolates:
       mainIsolate: Ana Isolate
       workerIsolate: Çalışan Isolate
@@ -1333,9 +1364,12 @@ singulars:
       cooldownCharged: <c>{target}</c> için <object id="{ability}"/> yeteneğin artık
         hazır!
       coins: Akçe
+      notEnoughCoins: Bu bekleme süresi için kullanabileceğin yeterli akçen bulunmuyor.
     inputs:
       item: <object id="{item}" /> eşyasından <bp /><chip><icon i="input" size="16"
         vp="3.0" />  <hl>{amount}</hl> </chip> kazanıldı
+      coins: <hl>{coins}</hl> akçeden <bp /><chip><icon i="input" size="16" vp="3.0"
+        />  <hl>{amount}</hl> </chip> marka kazanıldı
     info:
       inputCooldownInfo: Bu yetenek eşya kullanarak yüklenir. Bir tam yük için <icon
         i="input" size="16" vp="3.0" />  <hl>{amount}</hl> gerekli.
@@ -1467,6 +1501,7 @@ singulars:
       downloadingAssets: Dosyalar indiriliyor...
       downloadedFileCount: Toplam <c i=1>{total}</c> dosyanın <c i=0>{current}</c>
         kadarı indirildi
+      finalizingAssets: Tamamlanıyor, lütfen bekle...
   pets:
     phrases:
       currentLevelProgress: Mevcut seviye ilerlemesi
