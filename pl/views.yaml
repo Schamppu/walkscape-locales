@@ -695,9 +695,14 @@ singulars:
       inputNextCharge: 'Następny ładunek:'
       inputAtMax: Maks.
       cooldownCharged: Naładowano zdolność <object id="{ability}"/> dla <c>{target}</c>!
+      notEnoughCoins: Nie masz wystarczającej ilości monet, by użyć je do tego czasu
+        odnowienia.
+      coins: Monet
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
         otrzymane z <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" /> · · <hl>{amount}</hl>
+        </chip> otrzymane z <hl>{coins}</hl> monet
     info:
       inputCooldownInfo: Ta zdolność ładowana jest poprzez używanie przedmiotów. Jeden
         pełen ładunek wymaga <icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>.
@@ -1103,6 +1108,7 @@ singulars:
         foods: Jedzenie
         drinks: Napoje
         petEggs: Jajka Pupili
+        curiosity: Ciekawostka
       tabs:
         materials: Materiały
         tools: Narzędzia
@@ -1130,6 +1136,7 @@ singulars:
         quantity: Jakościowo
         coinValue: Wartość w monetach
         mostRecent: Ostatnie
+        levelRequirement: Wymagania poziomu
       reorder: Organizuj
       tabMostRecent: Ostatnie
       tabFavorites: Ulubione
@@ -1174,6 +1181,19 @@ singulars:
         findCollectibles: Znajdowanie znajdziek
         findGems: Znajdowanie klejnotów
         doubleRewards: Podwójna nagroda
+        qualityOutcome: Wynik jakości
+        doubleAction: Podwójna akcja
+        bonusMoney: Bonusowe monety
+        travelingDistance: Odległość podróży
+        stepsRequired: Wymagane kroki
+        inventorySpace: Wielkość ekwipunku
+        randomEncounters: Losowe wydarzenia
+        fineMaterialOutcome: Uzysk świetnych materiałów
+        skillLevel: Poziom umiejętności
+        doubleItem: Podwójny przedmiot
+        rollSpecialTable: Specjalna tabela rzutów
+        noMaterialsConsumed: Brak zużycia materiałów
+        extraLootRolls: Dodatkowe przelosowania łupów
       reorderBlockedSearch: Wyczyść wyszukanie, by poukładać przedmioty
       reorderBlockedBoth: Wyczyść filtry i wyszukiwanie, by poukładać przedmioty
       inventoryEmpty: Twój ekwipunek jest pusty
@@ -1275,6 +1295,9 @@ singulars:
         shapeSquare: Kwadrat
         showIfEmptyLabel: Pokaż gdy puste
         showIfEmptyDesc: Zachowaj widoczną kategorię nawet, gdy nie posiada przedmiotów.
+        lockItemsLabel: Zablokuj przedmioty
+        lockItemsDesc: Zachowaj pozycję przedmiotów z tej kategorii podczas automatycznego
+          porządkowania.
       exitWithdrawTitle: Wyjść bez wyjmowania?
       discardChangesTitle: Odrzucić zmiany?
       discardChangesBody: Masz niezapisane zmiany w układzie banku. Wyjście teraz
@@ -1313,6 +1336,31 @@ singulars:
       decrease: Usuń {count}
       uncategorized: Bez kategorii
       addCategory: Dodaj kategorię
+      filterHighestQuality: Tylko najwyższej jakości
+      settingsConfirmationsTitle: Potwierdzenia
+      settingAlwaysSaveTransactions: Automatyczne potwierdzenie transakcji przy wychodzeniu
+      settingAlwaysSaveEdits: Automatyczne zapisywanie zmian układu przy wychodzeniu
+      clearAllFilters: Wyczyść wszystkie filtry
+      filterRareEgg: Rzadkie jajko
+      filterMiscTitle: Różności
+      filterTraveling: Podróżowanie
+      leaveTransactionsTitle: Wyjść z banku?
+      leaveEditsTitle: Wyjść z edytowania?
+      exitEditTitle: Zakończyć edytowanie?
+      exitEditBody: Masz niezapisane zmiany w układzie banku.
+      actionLeaveAndSave: Zapisz i wyjdź
+      actionLeaveWithoutSaving: Wyjdź
+      actionLeaveAndTransfer: Przenieś i wyjdź
+      actionLeaveWithoutTransferring: Wyjdź
+      actionDiscardChanges: Odrzuć zmiany
+      actionSaveChanges: Zapisz zmiany
+      rememberLeaveAndSave: Zawsze zapisuj bez pytania
+      rememberLeaveAndTransfer: Zawsze przenieś bez pytania
+      leaveEditsBody: Masz niezapisane zmiany w układzie banku.
+      settingLockUnfilteredCategories: Zablokuj elementy w kategoriach bez filtrów
+      leaveTransactionsBody: Masz przygotowane do przeniesienia przedmioty, których
+        przenoszenie nie zostało jeszcze zakończone.
+      actionKeepEditing: Kontynuuj edytowanie
   trade:
     phrases:
       trade: HANDLUJ
@@ -1684,3 +1732,53 @@ singulars:
         subject: Szczęśliwych trzecich urodzin!
         text: Oho, patrzcie kto ma trzecie! Nie poddawaj się ciemności. Oto coś dla
           ciebie, co pomoże ci nie poddać się jej mocy.\n\n- Herbert
+  creditRating:
+    tiers:
+      aaa: AAA
+      nearlyBankrupt: Niemal Bankrut
+      f: F
+      d: D
+      c: C
+      b: B
+      a: A
+      aa: AA
+      s: S
+      ss: SS
+      sss: SSS
+      sssPlus: SSS+
+    flavors:
+      d: Da się związać koniec z końcem.
+      c: Skromnie znośnie.
+      nearlyBankrupt: Bank autentycznie martwi się o ciebie.
+      f: Ledwie starcza na oświetlenie.
+      b: Radzisz sobie całkiem nieźle.
+      a: Zacna fortuna.
+      aa: Poważne bogactwo.
+      aaa: Turlając się w monetach.
+      s: Tytan handlu.
+      ss: Absolutna bogatość.
+      sss: Bogactwo poza miarą.
+      sssPlus: Bank udziela ci teraz odpowiedzi.
+  bankStatistics:
+    phrases:
+      itemsOwned: Łącznie posiadanych przedmiotów
+      uniqueItems: Posiadanych unikalnych przedmiotów
+      coinsEarnedSelling: Monety ze sprzedaży
+      coinsSpentBuying: Monety wydane na zakupy
+      incomeFromSelling: Zysk ze sprzedaży
+      title: Statystyki Bankowe
+      totalWealth: Całkowite bogactwo
+      bankWealth: Bogactwo bankowe
+      inventoryWealth: Ekwipunek & wyposażone
+      coins: Monety
+      creditRating: Rating kredytowy
+      nextTier: 'Następny: {tier}'
+      nextTierLabel: Następny
+      maxTier: Osiągnięto najwyższy ranking!
+      wealthComposition: Kompozycja majątku
+      itemTypes: Typy posiadanych przedmiotów
+      collection: Kolekcja
+      collectionProgress: '{owned} posiadanych przedmiotów z {total} całkowicie'
+      gearRarity: Wyposażenie & narzędzia, względem jakości
+      statistics: Statystyki
+      mostValuable: Najcenniejszy przedmiot
