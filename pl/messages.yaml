@@ -179,7 +179,8 @@ singulars:
         text: Klient gry nie mógł zweryfikować konta. Prawdopodobnie jest to spowodowane
           błędem sieci. Uruchom grę ponownie i spróbuj jeszcze raz.
       saveDesync:
-        text: Dane aktualnie wybranej postaci są niezsynchronizowane z serwerem. Zrestartuj
+        text: Dane aktualnie wybranej postaci(from <c i=0>{clientLastUpdate}</c>)
+          są nie zsynchronizowane z serwerem (<c i=0>{serverLastUpdate}</c>) . Zrestartuj
           grę, by nadpisać swój lokalny zapis z danymi z serwera.
         title: Zapisz Niezsynchronizowane Dane
       alreadyLoggedIn:
