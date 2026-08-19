@@ -432,21 +432,21 @@ singulars:
         findCollectibles: Koleksiyonluk bulma
         findGems: Cevher bulma
         findBirdNests: Kuş yuvası bulma
-        doubleRewards: Çifte ödül şansı
+        doubleRewards: Çifte ödül
         bonusExperience: Bonus tecrübe
         qualityOutcome: Ürün kalitesi
-        doubleAction: Çifte eylem şansı
+        doubleAction: Çifte eylem
         stepsRequired: Adım gereksinimi
         bonusMoney: Bonus akçe
-        extraLootRolls: Ekstra ganimet şansı
-        rollSpecialTable: Özel ganimet şansı
+        extraLootRolls: Ekstra ganimet
+        rollSpecialTable: Özel ganimet
         travelingDistance: Seyahat mesafesi
         inventorySpace: Envanter alanı
         randomEncounters: Rastgele karşılaşma
-        fineMaterialOutcome: İyi malzeme bulma şansı
+        fineMaterialOutcome: İyi malzeme bulma
         skillLevel: Beceri seviyesi
-        noMaterialsConsumed: Malzeme artırma şansı
-        doubleItem: Çifte eşya şansı
+        noMaterialsConsumed: Malzeme artırma
+        doubleItem: Çifte eşya
       settingsDisplayTitle: 'Görünüm'
       settingShowTypeIcons: Eşya türü ikonlarını göster
       applyWithdrawals: Tamamla
@@ -474,7 +474,7 @@ singulars:
       sortDescending: Azalan
       sortModesTitle: Sıralama yöntemi
       filterTitle: Eşyaları filtrele
-      clearAllFilters: Bütün filtreleri kaldır
+      clearAllFilters: Bütün filtreleri kapat
       filterGlobalTitle: Genel
       filterTypesTitle: Eşya türleri
       filterQualityTitle: Kalite
@@ -568,6 +568,8 @@ singulars:
         labelGearType: 'Teçhizat türü: {value}'
         labelKeyword: 'Etiket: {value}'
         labelSkill: 'Beceri: {value}'
+        empty: Henüz hiç filtre yok
+        search: '{kind} ara'
       picker:
         preview: Ön izleme
         rowIcon: İkon
@@ -586,6 +588,9 @@ singulars:
         showIfEmptyDesc: Bu kategoriyi içinde eşya bulunmasa bile göster.
         lockItemsLabel: Eşyaları kilitle
         lockItemsDesc: Bu kategorideki eşyalar otomatik düzenleme sırasında yer değiştirmesin.
+        searchIcons: İkon ara
+        shapeNone: Yok
+        valueNone: Yok
       emptyBank: Bankan bomboş
       options: Seçenekler
       editCategory: Kategoriyi düzenle
@@ -628,6 +633,25 @@ singulars:
       noItemsYet: Henüz eşya bulunmuyor
       inspectInventory: 'Envanter: {used}/{max} eşya yuvası'
       leaveTransactionsTitle: Bankadan çıkılsın mı?
+      narrowedDragHint: Eşyaları tutup sürükleyerek başka kategorilere veya sekmelere
+        taşıyabilirsin. Kendi içlerinde yeniden sıralayabilmek için aramanı, filtreleri
+        ve sıralamayı kapatmalısın.
+      inspect: İşleme alınanları gözden geçir
+      exitWithdrawTitle: Eşyalar çekilmeden çıkılsın mı?
+      applyComplete: Banka işlemleri uygulandı
+      depositAvailable: Envanterde {count} adet
+      depositStaged: İşleme alınan {count} adet
+      inspectTitle: İşleme alınanlar
+      inspectEmpty: İşleme alınan eşya bulunmuyor
+      inspectWithdrawing: Bankadan çekilenler
+      inspectDepositing: Bankaya yatırılanlar
+      inspectSummary: '{stacks} yığın · {items} eşya'
+      increase: '{count} adet ekle'
+      decrease: '{count} adet çıkar'
+      exitWithdrawBody: Bankadan çekilmek için işleme alınan ancak henüz çekilmeyen
+        eşyaların var. Şimdi çıkarsan bu eşyalar bankaya geri dönecektir.
+      leaveTransactionsBody: Transfer için işleme alınan ancak henüz işlemi tamamlanmayan
+        eşyaların var.
   character:
     info:
       skillBreakdown: Karakterinin yolculuğu boyunca geliştirdiği bütün becerilerinin
