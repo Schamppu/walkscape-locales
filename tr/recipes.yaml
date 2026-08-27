@@ -23,6 +23,7 @@ singulars:
         name: Bambu kereste kesimi
       elmPlank:
         name: Karaağaç kereste kesimi
+        desc: Son derece esnek bir karaağaç kereste üret.
       yewPlank:
         name: Porsuk ağacı kereste kesimi
       mahoganyPlank:
@@ -42,6 +43,7 @@ singulars:
         name: Kırpıntıdan huş kereste yapımı
       maplePlankScrap:
         name: Kırpıntıdan akçaağaç kereste yapımı
+        desc: Kırpıntılara şekil vererek pürüzsüz ve zarif bir keresteye çevir.
       oakPlankScrap:
         name: Kırpıntıdan meşe kereste yapımı
     misc:
@@ -514,8 +516,10 @@ singulars:
         name: Altın külçe dökümü
       violiteBar:
         name: Lilayit külçe dökümü
+        desc: Madeni eriterek bir lilayit külçe dök.
       adamantBar:
         name: Sertaş külçe dökümü
+        desc: Topladığın madenden bir sertaş külçe dök.
     scrap:
       farganiteBarScrap:
         name: Yongadan farganit külçe yapımı
@@ -524,55 +528,88 @@ singulars:
         name: Kırpıntıdan bakır külçe yapımı
       bronzeBarScrap:
         name: Kırpıntıdan bronz külçe yapımı
+        desc: Metal kırpıntılarını eriterek çok işlevli bir bronz külçeye çevir.
       ironBarScrap:
         name: Kırpıntıdan demir külçe yapımı
       steelBarScrap:
         name: Kırpıntıdan çelik külçe yapımı
+        desc: Çeşitli ağır iş gerektiren alanlarda kullanılması için sağlam bir çelik
+          külçe dök.
       tarsiliumBarScrap:
         name: Kırpıntıdan katrilyum külçe yapımı
         desc: Metal kırpıntılarından katrilyum külçe yap.
     iron:
       ironSword:
         name: Demir kılıç yapımı
+        activityDesc: Demir külçeden demir bir kılıç yapıyorsun.
+        desc: Demir külçeden demir bir kılıç yap.
       ironShield:
         name: Demir kalkan yapımı
+        desc: Demir külçelerden demir bir kalkan yap.
+        activityDesc: Demir külçelerden demir bir kalkan yapıyorsun.
     wooden:
       woodenSword:
         name: Tahta kılıç yapımı
+        desc: Keresteden tahta bir kılıç yap.
+        activityDesc: Keresteden tahta bir kılıç yapıyorsun.
       woodenShield:
         name: Tahta kalkan yapımı
+        desc: Kerestelerden tahta bir kalkan yap.
+        activityDesc: Kerestelerden tahta bir kalkan yapıyorsun.
     steel:
       steelSword:
         name: Çelik kılıç yapımı
+        desc: Çelik külçeden çelik bir kılıç yap.
+        activityDesc: Çelik külçeden çelik bir kılıç yapıyorsun.
       steelShield:
         name: Çelik kalkan yapımı
+        desc: Çelik külçelerden çelik bir kalkan yap.
+        activityDesc: Çelik külçelerden çelik bir kalkan yapıyorsun.
     copper:
       copperSword:
         name: Bakır kılıç yapımı
+        desc: Bakır külçeden bakır bir kılıç yap.
+        activityDesc: Bakır külçeden bakır bir kılıç yapıyorsun.
       copperShield:
         name: Bakır kalkan yapımı
+        desc: Bakır külçelerden bakır bir kalkan yap.
+        activityDesc: Bakır külçelerden bakır bir kalkan yapıyorsun.
     bronze:
       bronzeShield:
         name: Bronz kalkan yapımı
+        desc: Bronz külçelerden bronz bir kalkan yap.
+        activityDesc: Bronz külçelerden bronz bir kalkan yapıyorsun.
       bronzeSword:
         name: Bronz kılıç yapımı
+        desc: Bronz külçeden bronz bir kılıç yap.
+        activityDesc: Bronz külçeden bronz bir kılıç yapıyorsun.
     tarsilium:
       tarsiliumSword:
         name: Katrilyum kılıç yapımı
+        desc: Katrilyum külçeden katrilyum bir kılıç yap.
+        activityDesc: Katrilyum külçeden katrilyum bir kılıç yapıyorsun.
       tarsiliumShield:
         name: Katrilyum kalkan yapımı
+        activityDesc: Katrilyum külçelerden katrilyum bir kalkan yapıyorsun.
+        desc: Katrilyum külçelerden katrilyum bir kalkan yap.
     other:
       tarsiliumToeBoots:
         name: Katrilyum burunlu bot yapımı
+        desc: Çelik burunlu botu geliştirip katrilyum burunlu bota çevir.
       reinforcedBellows:
         name: Destekli körük yapımı
+        desc: Demirhane körüğünü geliştirip destekli körük yap.
     farganite:
       gemShield:
         name: Cevher kalkan yapımı
       farganiteShield:
         name: Farganit kalkan yapımı
+        desc: Farganit külçelerden farganit bir kalkan yap.
+        activityDesc: Farganit külçelerden farganit bir kalkan yapıyorsun.
       farganiteSword:
         name: Farganit kılıç yapımı
+        desc: Farganit külçeden farganit bir kılıç yap.
+        activityDesc: Farganit külçeden farganit bir kılıç yapıyorsun.
     misc:
       ectoplasm:
         name: Dışplazma dökümü
@@ -778,8 +815,10 @@ singulars:
         name: Ateş şarabı mayalama
       spicyMoray:
         name: Acılı müren yapımı
+        desc: Muhteşem bir müren yemeği. Acı katılmış.
       jelliedStreamEel:
         name: Yılan balığı peltesi yapımı
+        desc: Oynak mı oynak yılan balığı peltesi.
     misc:
       ectoplasm:
         name: Dışplazma pişirme
@@ -807,19 +846,25 @@ singulars:
     arrows:
       bronzeArrows:
         name: Bronz ok yapımı
+        desc: Bronz uçlu sağlam oklar üret.
       tarsiliumArrows:
         name: Katrilyum ok yapımı
+        desc: Kara katrilyum uçlu meşum oklar üret.
       simpleBowstring:
         name: Basit kiriş yapımı
+        desc: Yayına güç katacak basit bir kiriş üret.
       copperArrows:
         name: Bakır ok yapımı
+        desc: Bakır uçlu ince oklar üret.
       ironArrows:
         name: Demir ok yapımı
+        desc: Demir uçlu sağlam oklar üret.
       steelArrows:
         name: Çelik ok yapımı
+        desc: Çelik uçlu kaliteli oklar üret.
       farganiteArrows:
         name: Farganit ok yapımı
-        desc: Farganit uçlu ok üret.
+        desc: Farganit uçlu oklar üret.
       strongBowstring:
         name: Sağlam kiriş yapımı
     bows:
@@ -907,7 +952,7 @@ singulars:
         desc: Bir çift dayanıklı ve kullanışlı eldiven üret.
       elderhideMitts:
         name: Bayrıpost eldiven yapımı
-        desc: Sert postu kullanarak bir çift kuvvetli bayrıpost eldiven üret.
+        desc: Bir çift kuvvetli bayrıpost eldiven üret.
       elderhideTunic:
         name: Bayrıpost tunik yapımı
         desc: Meşhur bayrıposttan dayanıklı bir tunik üret.
@@ -934,6 +979,7 @@ singulars:
         desc: Giymek için sağlam bir süveter üret.
       tattyHandwraps:
         name: Pejmürde el sargısı yapımı
+        desc: Basit bir çift pejmürde el sargısı üret.
       tattySkirt:
         name: Pejmürde etek yapımı
         desc: Basit bir pejmürde etek üret.
@@ -944,12 +990,14 @@ singulars:
         desc: Basit bir pejmürde kisve üret.
       shadowquillBracers:
         name: Gölgetüylü bileklik yapımı
+        desc: Şık ve gizemli bir çift bileklik üret.
       shadowquillShorts:
         name: Gölgetüylü şort yapımı
       shadowquillPlastron:
         name: Gölgetüylü plastron yapımı
       aerofibrilBracers:
         name: Aerogüpür bileklik yapımı
+        desc: Hafif ve havadar bir çift bileklik üret.
       aerofibrilShorts:
         name: Aerogüpür şort yapımı
       aerofibrilPlastron:
@@ -960,15 +1008,20 @@ singulars:
         desc: Hayaletli bir ruhani eldiven üret.
       spectralBreeches:
         name: Ruhani tozluk yapımı
+        desc: Hayaletli bir ruhani pantolon üret.
       spectralVest:
         name: Ruhani süveter yapımı
+        desc: Kemik ve dışplazma kullanarak ruhani bir süveter üret.
     tools:
       silverSewingNeedle:
         name: Gümüş dikiş iğnesi yapımı
+        desc: Parlak ve zarif bir gümüş dikiş iğnesi üret.
       goldenSewingNeedle:
         name: Altın dikiş iğnesi yapımı
+        desc: Işıltılı ve görkemli bir altın dikiş iğnesi üret.
       spectralSewingNeedle:
         name: Ruhani dikiş iğnesi yapımı
+        desc: Hayaletli ve latif bir ruhani dikiş iğnesi üret.
     misc:
       ectoplasm:
         name: Dışplazma örme
