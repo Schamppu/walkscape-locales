@@ -228,13 +228,7 @@ singulars:
         text: The game client failed to validate the client. This is likely due to network error. Please restart the game and try again.
       saveDesync:
         title: Save Data Out of Sync
-        text: The current character data is out of sync with the server. Restart the game to replace your local save with the latest server data.
-      alreadyLoggedIn:
-        title: New Device Detected
-        text: |
-          This device is not set as your primary step source.
-          Restart WalkScape and sign in again to set it as your primary step source.
-          Doing so will discard any unsynced (offline) progress from your previous device.
+        text: The current character data (from <c i=0>{clientLastUpdate}</c>) is out of sync with the server (<c i=0>{serverLastUpdate}</c>). Restart the game to replace your local save with the latest server data.
   validators:
     textField:
       maxTextLength: Maximum length is {max} characters.

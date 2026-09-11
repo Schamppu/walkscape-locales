@@ -1,1 +1,23 @@
-{}
+singulars:
+  mainSkill:
+    text: <skill skill="{skill}"/> 활동시
+  mainSkillType:
+    text: <skillType type="{type}"/>류의 활동시
+  skillLevel:
+    text: 필요레벨 <skill skill="{skill}" level="{level}" needed/>.
+  itemEquipped:
+    text: <item id="{item}"/> 아이템을 장착.
+  itemAnywhereWithYou:
+    text: <item id="{item}"/> 아이템을 소지.
+  itemQualityEquipped:
+    withoutType: 최소 <numberProgress current="{current}" max="{max}" /><itemQuality
+      quality="{quality}" type="crafted"/>, 혹은 <itemQuality quality="{quality}" type="loot"/>
+      아이템 장비.
+    text: 최소 <numberProgress current="{current}" max="{max}" /><itemQuality quality="{quality}"
+      type="{type}"/> 아이템을 장비.
+  itemInInventory:
+    text: 인벤토리에 <item id="{item}"/> 아이템 소지.
+  itemAnywhere:
+    text: <item id="{item}"/> 소유.
+  keywordEquipped:
+    text: <object id="{obj}" /> 장비.

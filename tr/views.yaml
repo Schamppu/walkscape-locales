@@ -408,18 +408,226 @@ singulars:
         petEggs: Evcil Hayvan Yumurtası
         cookedFish: Pişmiş Balık
         fishingBaits: Balık Yemi
+        curiosity: Bulgu
     multiSelect:
       selectedCount: '{count} seçili'
       withdrawSelected: Çek
       depositSelected: Yatır
       selectAll: Tümünü seç
       deselectAll: Tüm seçimleri kaldır
+      moveHint: Çoklu seçim modunda dokunarak birden fazla eşyayı aynı anda seçebilirsin.
+        Onları düzenleme modunda tutup sürükleyerek düzenleyebilir veya kategori başlıklarındaki
+        içerik menülerini seçerek farklı bir kategoriye taşıyabilirsin.
+      moveSelectedHere: '{count} eşyayı buraya taşı'
     layout:
       reorder: Yeniden sırala
-      tabMostRecent: En Yeni
+      tabMostRecent: En Yeniler
       tabFavorites: Favoriler
       settingsEmpty: Daha fazla ayar pek yakında.
       settingsTitle: Banka ayarları
+      filterAttributeNames:
+        fineMaterialFind: İyi malzeme bulma
+        workEfficiency: Verim
+        chestFind: Sandık bulma
+        findCollectibles: Koleksiyonluk bulma
+        findGems: Cevher bulma
+        findBirdNests: Kuş yuvası bulma
+        doubleRewards: Çifte ödül şansı
+        bonusExperience: Bonus tecrübe
+        qualityOutcome: Ürün kalitesi
+        doubleAction: Çifte eylem şansı
+        stepsRequired: Adım gereksinimi
+        bonusMoney: Bonus akçe
+        extraLootRolls: Ekstra ganimet şansı
+        rollSpecialTable: Özel ganimet şansı
+        travelingDistance: Seyahat mesafesi
+        inventorySpace: Envanter alanı
+        randomEncounters: Rastgele karşılaşma
+        fineMaterialOutcome: İyi malzeme bulma şansı
+        skillLevel: Beceri seviyesi
+        noMaterialsConsumed: Malzeme artırma şansı
+        doubleItem: Çifte eşya şansı
+      settingsDisplayTitle: 'Görünüm'
+      settingShowTypeIcons: Eşya türü ikonlarını göster
+      applyWithdrawals: Tamamla
+      applyNotAtBank: Bankadan eşya çekmek için bir bankada olmalısın
+      applyNotAtBankDeposit: Bankaya eşya yatırmak için bir bankada olmalısın
+      withdrawNotAtBank: Bankada değilken bankadan eşya çekemezsin
+      withdrawComplete: Envanterine aktarılan eşyalar
+      depositComplete: Bankana aktarılan eşyalar
+      sortModes:
+        rarity: Nadirlik
+        quantity: Miktar
+        defaultOrder: Varsayılan
+        alphabetical: Alfabetik
+        coinValue: Akçe değeri
+        levelRequirement: Seviye gereksinimi
+        mostRecent: En yeniler
+      filterAttributesTitle: Nitelikler
+      filterSkillsTitle: Beceriler
+      itemsReassigned: Eşyalar filtrelerine göre yeniden sıralandı
+      sortTitle: Eşyaları sırala
+      filterEnable: Filtreleri etkinleştir
+      inventoryFilterVisibilityTitle: Görünürlük
+      processing: "İşlem buluta kaydediliyor\n\nLütfen bekle..."
+      sortAscending: Artan
+      sortDescending: Azalan
+      sortModesTitle: Sıralama yöntemi
+      filterTitle: Eşyaları filtrele
+      clearAllFilters: Bütün filtreleri kaldır
+      filterGlobalTitle: Genel
+      filterTypesTitle: Eşya türleri
+      filterQualityTitle: Kalite
+      filterHighestQuality: Yalnızca en yüksek kalite
+      filterRareEgg: Nadir yumurta
+      filterMiscTitle: Çeşitli
+      filterTraveling: Seyahat
+      inventoryFilterTitle: Envanteri filtrele
+      inventoryFilterTypesTitle: Eşya türleri
+      inventoryFilterShowFavorited: Favorileri göster
+      inventoryFilterShowLocked: Kilitlileri göster
+      filterNoResults: Filtrelerine uygun sonuç bulunamadı
+      searchNoResults: Aramana uygun sonuç bulunamadı
+      changesSaved: Değişikliklerin kaydedildi
+      inventoryTitle: Envanter
+      inventoryEmpty: Envanterin boş
+      depositedAll: Bütün eşyalar bankaya yatırıldı
+      depositNotAtBank: Bankada değilken bankaya eşya yatıramazsın
+      savingLayout: "Banka düzeni buluta kaydediliyor\n\nLütfen bekle..."
+      settingsBehaviorTitle: Hareket
+      settingShowFavorites: Favori işaretini göster
+      settingShowCategoryQuantity: Kategorilerdeki eşya sayısını göster
+      settingSwapTapActions: Dokunma ile basılı tutmayı değiştir
+      settingShowPlaceholders: Düzenleme modunda değişkenleri göster
+      settingConfirmBeforeApply: Tamamlamadan önce gözden geçir
+      settingsResetView: Görünümü sıfırla
+      settingGridColumns: Izgara sütunu
+      settingCondensedList: Sıkışık liste görünümü
+      settingAlwaysStartCollapsed: Hep daraltılmış listeyle başla
+      settingAnimateCollapse: Daraltma animasyonunu oynat
+      settingLockUnfilteredCategories: Filtresiz kategorilerdeki eşyaları kilitle
+      settingsConfirmationsTitle: Onaylar
+      settingAlwaysSaveTransactions: Bankadan çıkarken işlemleri otomatik onayla
+      settingAlwaysSaveEdits: Bankadan çıkarken düzen değişikliklerini otomatik onayla
+      reorderBlockedSearch: Eşyaları düzenleyebilmek için aramanı kapatmalısın
+      reorderBlockedFilter: Eşyaları düzenleyebilmek için filtreleri kapatmalısın
+      reorderBlockedBoth: Eşyaları düzenleyebilmek için aramanı ve filtreleri kapatmalısın
+      reorderBlockedSort: Eşyaları düzenleyebilmek için sıralamayı kapatmalısın
+      reorderBlockedActive: Eşyaları düzenleyebilmek için aramanı, filtreleri ve sıralamayı
+        kapatmalısın
+      withdrawLimit: Tek seferde {count} adetlik çekim yapabilirsin
+      withdrawStaged: '{count} adedi işleme alındı'
+      renameLayoutTitle: Düzeni yeniden adlandır
+      activeLayout: Geçerli
+      switchBlockedEditing: Düzen değiştirmeden önce düzenlemeyi tamamla
+      layoutsTitle: Düzenler
+      defaultName: Varsayılan
+      defaultHint: Daima mevcut olan varsayılan banka düzeni.
+      emptySlot: Boş düzen yuvası {index}/{total}
+      layoutCreated: Düzen oluşturuldu
+      createLayoutTitle: Yeni düzen
+      withdrawAvailable: Bankada {count} adet
+      editBlockedPending: Düzenleme yapmadan önce işleme alınan eşyaları bankadan
+        çek
+      slotName: Düzen {index}
+      switchLayout: Düzeni değiştir
+      chooseLayout: Bir düzen seç
+      renameLayout: Düzeni yeniden adlandır
+      slotsFull: Bütün düzen yuvaların dolu. Yer açmak için birini silmelisin.
+      createFromImportHint: Dışa aktardığın veya edindiğin bir düzeni yapıştır
+      importFailed: Panoya kopyalanan geçerli bir düzene rastlanılmadı.
+      createFromImport: Kopyalanan öğeyi içe aktar
+      export: Dışa aktar
+      layoutExported: Düzen panoya kopyalandı
+      deleteLayoutBody: '{name} kalıcı olarak silinecek.'
+      blankTabName: Eşyalar
+      layoutDeleted: Düzen silindi
+      uncategorized: Kategorisiz
+      addCategory: Kategori ekle
+      createFromTitle: 'Yeni düzen şablonu:'
+      createFromDefault: Varsayılan düzen
+      createFromDefaultHint: Varsayılan düzenin bir kopyası
+      createFromBlank: Boş düzen
+      rename: Yeniden adlandır
+      deleteLayoutTitle: Düzen silinsin mi?
+      newCategory: Yeni kategori
+      filters:
+        labelRegional: Bölgesel
+        title: Filtreler
+        add: Filtre ekle
+        cancel: İptal
+        kindItemType: Eşya türü
+        kindGearType: Teçhizat türü
+        kindKeyword: Etiket
+        kindSkill: Beceri
+        kindGlobal: Genel
+        kindRegional: Bölgesel
+        labelGlobal: Genel
+        noMatches: Eşleşme bulunamadı
+        labelItemType: 'Eşya türü: {value}'
+        labelGearType: 'Teçhizat türü: {value}'
+        labelKeyword: 'Etiket: {value}'
+        labelSkill: 'Beceri: {value}'
+      picker:
+        preview: Ön izleme
+        rowIcon: İkon
+        rowFilters: Filtreler
+        nameLabel: İsim
+        rowBackground: Arka plan
+        confirm: Onayla
+        rowName: İsim
+        rowColour: Renk
+        sectionNameTitle: İsmi düzenle
+        sectionIconTitle: İkon seç
+        sectionColourTitle: Renk seç
+        sectionBackgroundTitle: Arka plan seç
+        sectionFiltersTitle: Filtreler
+        showIfEmptyLabel: Boşken göster
+        showIfEmptyDesc: Bu kategoriyi içinde eşya bulunmasa bile göster.
+        lockItemsLabel: Eşyaları kilitle
+        lockItemsDesc: Bu kategorideki eşyalar otomatik düzenleme sırasında yer değiştirmesin.
+      emptyBank: Bankan bomboş
+      options: Seçenekler
+      editCategory: Kategoriyi düzenle
+      editTab: Sekmeyi düzenle
+      deleteTab: Sekmeyi sil
+      cannotDeleteLastTabBody: En az bir sekme bulundurmak zorundasın.
+      settingShowTabQuantity: Sekmelerdeki eşya sayısını göster
+      settingShowMostRecentTab: En Yeniler sekmesini göster
+      settingShowFavoritesTab: Favoriler sekmesini göster
+      actionDiscardChanges: Değişiklikleri sil
+      actionSaveChanges: Değişiklikleri kaydet
+      actionKeepEditing: Düzenlemeye devam et
+      newTab: Yeni sekme
+      addTab: Sekme ekle
+      discardChangesTitle: Değişiklikler silinsin mi?
+      discardChangesBody: Banka düzeninde kaydedilmemiş değişiklikler bulunuyor. Şimdi
+        çıkarsan bu değişiklikler silinecektir.
+      deleteTabTitle: Sekme silinsin mi?
+      deleteTabBody: Bu sekme banka düzeninden kaldırılacak.
+      cannotDeleteTabTitle: Sekme silinemiyor
+      cannotDeleteTabBody: Yalnızca boş sekmeler silinebilir. Önce içindeki eşyaları
+        taşı veya kaldır.
+      cannotDeletePrimaryTabBody: Burası birbirinden ayrılmamış eşyaların konulduğu
+        varsayılan sekmedir. Bu sekmeyi silemezsin.
+      deleteCategoryBody: Bu kategorideki eşyalar kategorisizlere taşınacak.
+      actionLeaveAndSave: Kaydet ve çık
+      leaveEditsTitle: Düzenlemeden çıkılsın mı?
+      leaveEditsBody: Banka düzeninde kaydedilmemiş değişiklikler bulunuyor.
+      exitEditTitle: Düzenleme bitirilsin mi?
+      exitEditBody: Banka düzeninde kaydedilmemiş değişiklikler bulunuyor.
+      actionLeaveWithoutSaving: Çık
+      actionLeaveAndTransfer: Aktar ve çık
+      actionLeaveWithoutTransferring: Çık
+      rememberLeaveAndSave: Her zaman sormadan kaydet
+      rememberLeaveAndTransfer: Her zaman sormadan aktar
+      deleteCategoryTitle: Kategori silinsin mi?
+      createFromBlankHint: İstediğin gibi düzenleyebileceğin boş bir sekme
+      emptyTab: Burada henüz eşya bulunmuyor. Bir şeyler yatırdıktan sonra onları
+        burada görebilirsin.
+      noItemsYet: Henüz eşya bulunmuyor
+      inspectInventory: 'Envanter: {used}/{max} eşya yuvası'
+      leaveTransactionsTitle: Bankadan çıkılsın mı?
   character:
     info:
       skillBreakdown: Karakterinin yolculuğu boyunca geliştirdiği bütün becerilerinin
@@ -661,6 +869,7 @@ singulars:
       startingSettingsManagerProcess: Ayar yönetme işlemi başlatılıyor
       spawningIsolate: Isolate açılıyor...
       startingOTAManagerProcess: Dosya yönetme süreci başlatılıyor
+      precomputing: Oyun verisi hesaplanıyor
     isolates:
       mainIsolate: Ana Isolate
       workerIsolate: Çalışan Isolate
@@ -1160,9 +1369,13 @@ singulars:
       inputAtMax: Azami
       cooldownCharged: <c>{target}</c> için <object id="{ability}"/> yeteneğin artık
         hazır!
+      coins: Akçe
+      notEnoughCoins: Bu bekleme süresi için kullanabileceğin yeterli akçen bulunmuyor.
     inputs:
       item: <object id="{item}" /> eşyasından <bp /><chip><icon i="input" size="16"
         vp="3.0" />  <hl>{amount}</hl> </chip> kazanıldı
+      coins: <hl>{coins}</hl> akçeden <bp /><chip><icon i="input" size="16" vp="3.0"
+        />  <hl>{amount}</hl> </chip> marka kazanıldı
     info:
       inputCooldownInfo: Bu yetenek eşya kullanarak yüklenir. Bir tam yük için <icon
         i="input" size="16" vp="3.0" />  <hl>{amount}</hl> gerekli.
@@ -1294,6 +1507,7 @@ singulars:
       downloadingAssets: Dosyalar indiriliyor...
       downloadedFileCount: Toplam <c i=1>{total}</c> dosyanın <c i=0>{current}</c>
         kadarı indirildi
+      finalizingAssets: Tamamlanıyor, lütfen bekle...
   pets:
     phrases:
       currentLevelProgress: Mevcut seviye ilerlemesi
@@ -1469,3 +1683,53 @@ singulars:
       playersWantToJoin: Ekibine katılmak isteyen oyuncular
       pullDownToRefresh: Yenilemek için aşağı çek
       timeRemaining: 'Kalan süre: {time}'
+  creditRating:
+    flavors:
+      nearlyBankrupt: Bankamız senin için hakikaten endişeleniyor.
+      f: Faturaları zar zor ödüyorsun.
+      d: Kıt kanaat geçiniyorsun.
+      c: Yuvarlanıp gidiyorsun.
+      b: Durumun gayet iyi.
+      sssPlus: Bankamız tamamen emrine amadedir.
+      a: Servetine şapka çıkarılır.
+      aa: Basbayağı zenginsin.
+      aaa: Akçe içinde yüzüyorsun.
+      s: Ticaret devisin.
+      sss: Servetinin haddi hesabı yok.
+      ss: Şaşılacak derecede zenginsin.
+    tiers:
+      sss: SSS
+      nearlyBankrupt: Adeta İflas
+      f: F
+      d: D
+      c: C
+      b: B
+      a: A
+      aa: AA
+      aaa: AAA
+      s: S
+      ss: SS
+      sssPlus: SSS+
+  bankStatistics:
+    phrases:
+      bankWealth: Bankadaki servet
+      coinsEarnedSelling: Satışlardan kazanılan akçe
+      title: Banka İstatistiği
+      totalWealth: Toplam servet
+      inventoryWealth: Envanterdekiler ve kuşanılanlar
+      coins: Akçeler
+      creditRating: Kredi notu
+      nextTier: 'Sıradaki: {tier}'
+      nextTierLabel: Sıradaki
+      maxTier: Ulaşılan en yüksek kademe!
+      wealthComposition: Servetin dağılımı
+      itemTypes: Sahip olunan eşya türleri
+      collection: Koleksiyon
+      gearRarity: Nadirliklerine göre teçhizat ve aletler
+      statistics: İstatistik
+      mostValuable: En değerli eşya
+      itemsOwned: Sahip olunan toplam eşya
+      uniqueItems: Sahip olunan farklı eşya
+      coinsSpentBuying: Alımlara harcanan akçe
+      incomeFromSelling: Satışlardan elde edilen gelir
+      collectionProgress: '{total} eşyanın {owned} tanesi elinde bulunuyor'
