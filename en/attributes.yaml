@@ -230,6 +230,24 @@ singulars:
         text: '{from} you find turns into {xp} {skill} experience'
       toTables:
         text: '{from} you find turns into a special find'
+    # NOTE: {items} and {services} expand to COMPLETE <object/> tags, because a
+    # rule can name several targets and one tag cannot hold a list. Do NOT wrap
+    # them in a tag here — that nests a tag inside another's attribute value and
+    # StyledText renders the leftovers as literal text. (The opposite convention
+    # to countsAsKeyword, whose {keyword} is a bare id.)
+    doubleItem:
+      global:
+        text: 'Chance to find double {items}'
+      whileMainSkill:
+        text: 'Chance to find double {items} while <supp k="skill"/>'
+    dropAsFine:
+      global:
+        text: '{items} you find can be fine'
+      whileMainSkill:
+        text: '{items} you find can be fine while <supp k="skill"/>'
+    countsAsService:
+      global:
+        text: 'Counts as {services} anywhere'
   custom:
     gainAdventurersGuildToken:
       text: |-
