@@ -221,6 +221,15 @@ singulars:
         text: 'Global <stat s="findCollectibles"/> while in <supp k="keyword"/> location.'
       whileSkillGroup:
         text: '<stat s="findCollectibles"/> while any <supp k="skillGroup"/> skill.'
+    swapItem:
+      global:
+        text: '{from} you find turns into {to}'
+      whileMainSkill:
+        text: '{from} turns into {to} while <supp k="skill"/>'
+      toExperience:
+        text: '{from} you find turns into {xp} {skill} experience'
+      toTables:
+        text: '{from} you find turns into a special find'
   custom:
     gainAdventurersGuildToken:
       text: |-
