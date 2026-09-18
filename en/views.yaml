@@ -114,6 +114,8 @@ singulars:
       collectibles: '<bp /><icon i="Collectibles"/> <c>{count} collectibles</c> that can be found'
       reputation: '<bp /><object id="{faction}" /> reputation <c>+{amount}</c>'
       lore: '<bp /><icon i="Lore item"/> <c>{count} lore items</c> that can be found'
+      cosmetics: '<bp /><icon i="Wardrobe action"/> <c>{count} cosmetics</c> that can be found'
+      petEggs: '<bp /><icon i="Pet egg"/> <c>{count} pet eggs</c> with a new pet'
     options:
       completeUntilActions: Complete for a number of actions
       numberOfActions: Number of actions
@@ -498,6 +500,7 @@ singulars:
       noItemsFound: No items found from your inventory that would fit this slot.
     phrases:
       claimBlueprint: Claim blueprint
+      claimCosmeticDrop: Claim cosmetic
       treasury: Treasury
       longPressTip: <c>Tip:</c> Long pressing on an item stack selects all similar stacks.
       dropItems: Drop items?
@@ -1484,6 +1487,7 @@ maps:
         "artifact": Artifacts
         "lore": Lore items
         "blueprint": Blueprints
+        "cosmeticDrop": Cosmetic drops
   character:
     stepsTime:
       "hourly": Hourly steps
