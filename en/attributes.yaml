@@ -228,6 +228,10 @@ singulars:
         text: '{from} turns into {to} while <supp k="skill"/>'
       toExperience:
         text: '{from} you find turns into {xp} {skill} experience'
+      # Scaled by each item effort, so no single xp number can appear in the
+      # text. The per-item amounts are shown by the (?) button on the row.
+      toExperienceFromEffort:
+        text: '{from} you find turns into {skill} experience based on how much effort it is worth'
       toTables:
         text: '{from} you find turns into a special find'
     # NOTE: {items} and {services} expand to COMPLETE <object/> tags, because a
