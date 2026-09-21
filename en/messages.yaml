@@ -233,8 +233,10 @@ singulars:
         title: Failed to validate client
         text: The game client failed to validate the client. This is likely due to network error. Please restart the game and try again.
       saveDesync:
-        title: Save Data Out of Sync - {reason}
-        text: The current character data (from <c i=0>{clientLastUpdate}</c>) is out of sync with the server (<c i=0>{serverLastUpdate}</c>). Restart the game to replace your local save with the latest server data.
+        title: Save Data Out of Sync
+        text: |
+            The current character data (from <c i=0>{clientLastUpdate}</c>) is out of sync with the server (<c i=0>{serverLastUpdate}</c>). Restart the game to replace your local save with the latest server data.
+            Source: {reason}
   validators:
     textField:
       maxTextLength: Maximum length is {max} characters.
