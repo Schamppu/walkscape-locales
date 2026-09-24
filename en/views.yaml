@@ -1337,9 +1337,8 @@ singulars:
         text: Well, look who's turning three! Don't succumb to the darkness, here's something for you so you don't give into the powers that be.\n\n- Herbert
       tradeCompleted:
         subject: Trade with {characterName} Completed
-        text: Your trade negotiations with <c><bold>{characterName}</bold></c> have come to a successful conclusion! You gave them {offer}, and in return received
-        textNothingReceived: Your trade negotiations with <c><bold>{characterName}</bold></c> have come to a successful conclusion! You gave them {offer}, and received nothing in return.
-        textNothingGiven: Your trade negotiations with <c><bold>{characterName}</bold></c> have come to a successful conclusion! You gave them nothing, and in return received
+        text: Your trade negotiations with <c><bold>{characterName}</bold></c> have come to a successful conclusion! <action id="receipt">View receipt</action>\n\nIn return for your offer, you received
+        textNothingReceived: Your trade negotiations with <c><bold>{characterName}</bold></c> have come to a successful conclusion! <action id="receipt">View receipt</action>\n\nYou received nothing in return.
       tradeRejected:
         subject: Trade with {characterName} Rejected
         text: Your trade negotiations with <c><bold>{characterName}</bold></c> have been rejected and your offer has been refunded.
