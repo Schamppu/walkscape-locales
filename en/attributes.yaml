@@ -234,6 +234,11 @@ singulars:
         text: '{from} you find turns into {skill} experience'
       toTables:
         text: '{from} you find turns into a special find'
+    # Appended to a swap's text when it could meet a fine material: a swap
+    # never consumes fine materials (or rare eggs), only plain ones.
+    swapItemNotes:
+      nonFine:
+        text: '(only non-<itemTag tag="fine"/> materials)'
     # NOTE: {items} and {services} expand to COMPLETE <object/> tags, because a
     # rule can name several targets and one tag cannot hold a list. Do NOT wrap
     # them in a tag here — that nests a tag inside another's attribute value and
