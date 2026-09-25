@@ -14,63 +14,63 @@ singulars:
       The <c i=0>Options</c> button at the bottom allows you to change how the item stacks are displayed.
 
 
-      <bp /><icon i="Deposit" /> <hl>All</hl>: Deposits all items in your inventory to the bank, if one is available at your location.
+      <bp/><icon i="Deposit"/> <hl>All</hl>: Deposits all items in your inventory to the bank, if one is available at your location.
 
 
-      <bp /><icon i="Bank small" /> <hl>Bank</hl>: Opens your bank and allows you to do deposits or withdrawals if those are available at your location.
+      <bp/><icon i="Bank small"/> <hl>Bank</hl>: Opens your bank and allows you to do deposits or withdrawals if those are available at your location.
 
 
-      <bp /><icon i="Sort" /> <hl>Sort</hl>: Sorts your inventory.
+      <bp/><icon i="Sort"/> <hl>Sort</hl>: Sorts your inventory.
     worldMapIcons: |-
-      <mapService path="assets/icons/mini_chips/map_service_bank.png" shape="square" tier="basic" /> <hl>Bank</hl>: Deposit and withdraw items.
+      <image id="bank"/> <hl>Bank</hl>: Deposit and withdraw items.
 
-      <mapService path="assets/icons/mini_chips/map_service_deposit.png" shape="square" tier="basic" /> <hl>Deposit box</hl>: Deposit items only.
+      <image id="deposit"/> <hl>Deposit box</hl>: Deposit items only.
 
-      <mapService path="assets/icons/mini_chips/map_service_store.png" shape="square" tier="basic" /> <hl>Store</hl>: Buy and Sell stuff!
+      <image id="store"/> <hl>Store</hl>: Buy and Sell stuff!
 
-      <mapService path="assets/icons/mini_chips/map_service_mysteriousmerchant.png" shape="square" tier="basic" /> <hl>Mysterious Merchant</hl>: A fine purveyor of exotic goods.
+      <image id="mysteriousMerchant"/> <hl>Mysterious Merchant</hl>: A fine purveyor of exotic goods.
 
-      <mapService path="assets/icons/mini_chips/map_service_barber.png" shape="square" tier="basic" /> <hl>Barber</hl> and <mapService path="assets/icons/mini_chips/map_service_wardrobe.png" shape="square" tier="basic" /> <hl>Wardrobe</hl>: Change your looks.
+      <image id="barber"/> <hl>Barber</hl> and <image id="wardrobe"/> <hl>Wardrobe</hl>: Change your looks.
 
-      <mapService path="assets/icons/mini_chips/map_service_forge.png" shape="circle" tier="basic" /><mapService path="assets/icons/mini_chips/map_service_kitchen.png" shape="circle" tier="basic" /><mapService path="assets/icons/mini_chips/map_service_workshop.png" shape="circle" tier="basic" /><mapService path="assets/icons/mini_chips/map_service_sawmill.png" shape="circle" tier="basic" /><mapService path="assets/icons/mini_chips/map_service_loom.png" shape="circle" tier="basic" /><mapService path="assets/icons/mini_chips/map_service_trinketry.png" shape="circle" tier="basic" /> <hl>Crafting stations</hl>: craft smithing, cooking, crafting, carpentry, tailoring and trinketry recipes.
+      <image id="forge"/> <image id="kitchen"/><image id="workshop"/> <image id="sawmill"/><image id="loom"/> <image id="trinketry"/> <hl>Crafting stations</hl>: Craft smithing, cooking, crafting, carpentry, tailoring and trinketry recipes.
 
-      The colour of an icon's border shows the service's tier: <mapService path="assets/icons/mini_chips/map_service_forge.png" shape="circle" tier="basic" /> <serviceTier tier="basic" /> or <mapService path="assets/icons/mini_chips/map_service_forge.png" shape="circle" tier="advanced" /> <serviceTier tier="advanced" />.
+      The colour of an icon's border shows the service's tier: <image id="forge"/> <serviceTier tier="basic"/> or <image id="forgeAdvanced"/> <serviceTier tier="advanced"/>.
 
-      <icon path="assets/icons/location_badges/unexplored_badge.png" size="16" hp="2" /> <hl>Unexplored</hl>: you haven't visited this location yet.
+      <icon path="assets/icons/location_badges/unexplored_badge.png" size="16"/> <hl>Unexplored</hl>: you haven't visited this location yet.
 
-      <icon path="assets/icons/location_badges/rumor_badge.png" size="16" hp="2" /> <hl>Rumoured</hl>: you've only heard rumours about this location.
+      <icon path="assets/icons/location_badges/rumor_badge.png" size="16"/> <hl>Rumoured</hl>: You've heard rumours of this location.
     attributeTypes: >
-      <bp /><icon i="Gear alt"/>  <c i=0>Equipped gear</c>: attributes from currently equipped gear.
+      <bp/><icon i="Gear alt"/>  <c i=0>Equipped gear</c>: attributes from currently equipped gear.
 
 
-      <bp /><icon i="Tools alt"/>  <c i=1>Equipped tools</c>: attributes from currently equipped tools.
+      <bp/><icon i="Tools alt"/>  <c i=1>Equipped tools</c>: attributes from currently equipped tools.
 
 
-      <bp /><icon i="Collectible"/>  <c i=2>Collectibles</c>: permanent attributes from collectibles.
+      <bp/><icon i="Collectible"/>  <c i=2>Collectibles</c>: permanent attributes from collectibles.
 
 
-      <bp /><icon i="Dev services"/>  <c i=3>Services</c>: attributes from services in your current location.
+      <bp/><icon i="Dev services"/>  <c i=3>Services</c>: attributes from services in your current location.
 
 
-      <bp /><icon i="Pets"/>  <c i=4>Pets</c>: attributes from your summoned pet.
+      <bp/><icon i="Pets"/>  <c i=4>Pets</c>: attributes from your summoned pet.
 
 
-      <bp /><icon i="Fine material"/>  <c i=5>Fine input bonus</c>: bonus from using fine materials.
+      <bp/><icon i="Fine material"/>  <c i=5>Fine input bonus</c>: bonus from using fine materials.
 
 
-      <bp /><icon i="Material"/>  <c i=6>Material input</c>: attributes from your selected input materials for an activity.
+      <bp/><icon i="Material"/>  <c i=6>Material input</c>: attributes from your selected input materials for an activity.
 
 
-      <bp /><icon i="Consumables"/>  <c i=7>Consumables</c>: attributes from your consumables that are being consumed.
+      <bp/><icon i="Consumables"/>  <c i=7>Consumables</c>: attributes from your consumables that are being consumed.
 
 
-      <bp /><icon i="Level up"/>  <c i=8>Skill level</c>: attributes from your skill level (eg. being over the skill level requirement).
+      <bp/><icon i="Level up"/>  <c i=8>Skill level</c>: attributes from your skill level (eg. being over the skill level requirement).
 
 
-      <bp /><icon i="Abilities"/>  <c i=9>Abilities</c>: attributes from your abilities.
+      <bp/><icon i="Abilities"/>  <c i=9>Abilities</c>: attributes from your abilities.
 
 
-      <bp /><icon i="Player effect"/>  <c i=10>Active effects</c>: attributes from currently active effects.
+      <bp/><icon i="Player effect"/>  <c i=10>Active effects</c>: attributes from currently active effects.
     mailbox: You can claim items you receive from events, trading with other players and so forth from your mailbox.
     trading: >
       View all active trades and their status.
