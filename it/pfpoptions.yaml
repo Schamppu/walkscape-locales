@@ -10,7 +10,7 @@ maps:
       brown: Castano chiaro
       brownish: Marrone-grigio
       dark: Grigio scuro
-      darkBrown: Castano
+      darkBrown: Castano scurissimo
       darkBrownish: Marrone-grigio scuro
       darkGinger: Castano rossiccio
       darkGreen: Verde scuro
@@ -18,7 +18,7 @@ maps:
       darkPurple: Viola scuro
       darkRed: Rosso violetto
       darkerBlue: Blu scuro
-      darkestBrown: Castano scuro
+      darkestBrown: Castano scurissimo
       darkestBrownish: Marrone-grigio scurissimo
       darkestGreen: Verde scurissimo
       darkestMagenta: Malva scurissimo
@@ -26,9 +26,9 @@ maps:
       ginger: Rosso mogano
       gray: Grigio
       green: Verde
-      lightBlue: Ciano
+      lightBlue: Azzurro
       lightBlueish: Blu-grigio chiaro
-      lightBrown: Biondo
+      lightBrown: Castano chiaro
       lightBrownish: Marrone-grigio chiaro
       lightGinger: Ramato
       lightGray: Grigio chiaro
@@ -57,7 +57,7 @@ maps:
       darkMagenta: Malva più scuro
       darkPurple: Viola scuro
       darkRed: Rosso scuro
-      darkerBrown: Marrone
+      darkerBrown: Castano scurissimo
       ginger: Arancione
       gray: Grigio
       green: Verde
@@ -78,7 +78,7 @@ maps:
       brown: Marrone chiaro
       brownish: Marrone-grigio
       darkBlueish: Blu-grigio più scuro
-      darkBrown: Marrone
+      darkBrown: Castano scuro
       darkBrownish: Marrone-grigio scuro
       darkGreen: Verde scuro
       darkGrey: Grigio scuro
@@ -88,9 +88,9 @@ maps:
       ginger: Arancione
       green: Verde
       grey: Grigio
-      lightBlue: Ciano
+      lightBlue: Azzurro
       lightBlueish: Blu-grigio chiaro
-      lightBrown: Giallo
+      lightBrown: Castano chiaro
       lightBrownish: Marrone-grigio chiaro
       lightGinger: Arancione chiaro
       lightGreen: Verde brillante
@@ -112,7 +112,7 @@ maps:
       brownish: Marrone-grigio
       dark: Grigio scuro
       darkBlue: Blu scuro
-      darkBrown: Castano
+      darkBrown: Castano scuro
       darkBrownish: Marrone-grigio scuro
       darkGinger: Rosso mogano
       darkGreen: Verde scuro
@@ -123,7 +123,7 @@ maps:
       ginger: Ramato
       gray: Grigio
       green: Verde
-      lightBlue: Ciano
+      lightBlue: Azzurro
       lightBlueish: Blu-grigio chiarissimo
       lightBrownish: Biondo cenere
       lightGinger: Arancione chiaro
@@ -135,28 +135,28 @@ maps:
       purple: Viola
       red: Rosso
     hair:
-      black: Nero
-      blue: Ciano
+      black: Nerissimo
+      blue: Blu
       blueish: Blu-grigio
       blueishDark: Blu-grigio scuro
       blueishDarker: Blu-grigio più scuro
       blueishDarkest: Blu-grigio scurissimo
       brown: Biondo
       brownish: Biondo cenere
-      dark: Grigio
-      darkBrown: Castano chiaro
+      dark: Nero
+      darkBrown: Castano scuro
       darkBrownish: Marrone-grigio
       darkGinger: Rosso mogano
-      darkGreen: Verde
+      darkGreen: Verde scuro
       darkMagenta: 'Malva'
       darkPurple: Viola scuro
       darkRed: 'Rosso scuro'
-      darker: Grigio fumo
-      darkerBlue: Blu
+      darker: Nero scuro
+      darkerBlue: Blu scuro
       darkestBlue: Blu molto scuro
       darkestBrown: Castano
       darkestBrownish: Marrone-grigio scuro
-      darkestGreen: Verde scuro
+      darkestGreen: Verde scurissimo
       darkestMagenta: Malva più scuro
       darkestRed: Rosso molto scuro
       ginger: Ramato
@@ -164,7 +164,7 @@ maps:
       green: Verde brillante
       lightBlue: Azzurro chiaro
       lightBlueish: Blu-grigio chiaro
-      lightBrown: Biondo chiaro
+      lightBrown: Castano chiaro
       lightBrownish: Biondo cenere chiaro
       lightGinger: Arancione chiaro
       lightGray: Bianco
@@ -303,6 +303,25 @@ singulars:
       name: Spaccatura dimensionale
       desc: Dietro di te si è aperta una frattura nel tempo e nello spazio che conduce
         a un’altra dimensione. Forse, se la ignori e non la guardi, scomparirà.
+    syrenthiaFishCompanion:
+      desc: Un simpatico pesciolino proveniente da Syrenthia ha deciso di unirsi a
+        te nel tuo viaggio. Anche sopra le onde, un po’ di quella speciale acqua di
+        Syrenthia gli permette di nuotare al tuo fianco senza alcun problema.
+      name: Pesce da compagnia di Syrenthia
+    trellinBranchStaff:
+      name: Bastone ramificato di Trellin
+      desc: A volte l’unica cosa di cui hai bisogno quando viaggi è un buon bastone.
+        Questo farà sicuramente al caso tuo, e anche di più.
+    halflingBagStick:
+      name: Borsa da halfling su un bastone
+      desc: Una borsa che ti hanno dato gli halfling e che puoi usare per trasportare
+        le tue cose. Il bastone serve solo a renderla ancora più facile da portare
+        con te.
+    sandyGourd:
+      name: Zucca sabbiosa
+      desc: Uno strano contenitore simile a una zucca che si indossa sulla schiena
+        e che può essere usato per trasportare qualsiasi cosa si riesca a metterci
+        dentro. A quanto pare, al precedente proprietario piaceva molto la sabbia.
   bodyTypes:
     a: A - Maschile
     b: B - Femminile
@@ -415,6 +434,10 @@ singulars:
     spikeBeard:
       name: Barba a punta
       desc: Il viso ha una barba tagliata a forma di punte.
+    chadFace:
+      name: Volto distinto con la barba
+      desc: Il volto di una persona davvero illustre. È caratterizzato da una folta
+        barba.
   hairstyles:
     assymetrical:
       desc: Un taglio asimmetrico.
@@ -808,6 +831,9 @@ singulars:
       desc: Aromi agrumati e fruttati si diffondono nell'aria intorno a te. Con questo
         accessorio addosso sei una vera e propria fonte di aria fresca e gli altri
         non vedono l'ora di sentire il tuo profumo.
+    crocHunterHat:
+      name: Cappello da cacciatore di coccodrilli
+      desc: Caspita! Quello non è un coltello.
   noses:
     bigAndPointy:
       desc: Naso un po' grande che è anche appuntito. Non fare del male a nessuno
@@ -1028,6 +1054,16 @@ singulars:
       desc: Una maglietta che garantisce un'ottima traspirabilità e che, nonostante
         tutto, ha tantissime tasche. Tutti i papà ne saranno gelosi.
       name: Maglietta dell'Ambientalista
+    highCollarJacket:
+      name: Giacca con collo alto
+      desc: Una giacca con un collo alto e rialzato. È utile per evitare che la sabbia
+        ti finisca in faccia mentre vaghi nel deserto. Inoltre impedisce agli insetti
+        di entrarti in bocca.
+    crocHunterVest:
+      name: Gilet da cacciatore di coccodrilli
+      desc: Guarda che meraviglia! Un gilet scelto da un comitato di cacciatori di
+        coccodrilli come divisa ufficiale. Forse dovresti andare a caccia di coccodrilli,
+        così non penseranno che sei un impostore.
   eyeAccessories:
     thickGlasses:
       desc: Con questi, puoi quasi vedere il futuro.
@@ -1051,3 +1087,8 @@ singulars:
     roundGlasses:
       name: Occhiali rotondi
       desc: Per un look classico, da inventore.
+    erdwiseCoinShades:
+      desc: Ti hanno detto di “mettere i soldi dove metti la bocca”, ma avrebbe avuto
+        un sapore sgradevole, così hai optato invece per degli occhiali da sole alla
+        moda.
+      name: Paralumi per monete di Erdwise

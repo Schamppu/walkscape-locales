@@ -913,12 +913,16 @@ singulars:
       inputNextCharge: 'Prossima carica:'
       inputAtMax: Max.
       cooldownCharged: Hai attivato l'abilità <object id="{ability}"/> su <c>{target}</c>!
+      notEnoughCoins: Non hai abbastanza monete per utilizzare questo tempo di ricarica.
+      coins: Monete
     info:
       inputCooldownInfo: Questa abilità si ricarica utilizzando gli oggetti. Per una
         ricarica completa sono necessari <icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>.
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
         ottenuto da <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
+        </chip> ottenuto da <hl>{coins}</hl> monete
   journal:
     info:
       jobInfo: I lavori sono <c>attività semplici e ripetibili</c> che puoi completare
@@ -1114,6 +1118,44 @@ singulars:
       noItemsInventory: Nessun oggetto nel tuo inventario.
       deposit: Depositare
       withdraw: Ritirare
+    defaultLayout:
+      tabs:
+        materials: Materiali
+        gear: Equipaggiamento
+        tools: Strumenti
+        consumables: Consumabili
+        misc: Vario
+      categories:
+        arrows: Freccie
+        bars: Barre
+        rawFish: Pesce crudo
+        gems: Gemme
+        huntingProducts: Articoli per la caccia
+        logs: Tronchi
+        ingredients: Ingredienti
+        ores: Minerali
+        planks: Assi
+        plants: Piante
+        processed: Elaborato
+        trinkets: Ciondoli
+        curiosity: Curiosità
+        materialsMisc: Varie
+        gearCape: Capo
+        gearHead: Testa
+        gearBack: Schiena
+        gearHands: Mani
+        gearChest: Petto
+        gearNeck: Collo
+        gearPrimary: Primaria
+        gearLegs: Gambe
+        gearSecondary: Secondaria
+        gearRings: Anelli
+        gearFeet: Piedi
+        toolsAgility: Agilità
+        toolsCarpentry: Falegnameria
+        toolsCooking: Cucina
+        toolsCrafting: Artigianato
+        toolsFishing: Pesca
   shop:
     phrases:
       sold: Venduto
@@ -1451,3 +1493,33 @@ singulars:
       d: Fare quadrare i conti.
       c: Discretamente confortevole.
       b: Te la cavi piuttosto bene.
+      a: Una fortuna di tutto rispetto.
+      aa: Davvero ricchissimo.
+      aaa: Pieno di monete.
+      s: Un gigante del commercio.
+      ss: Assurdamente ricco.
+      sss: Una ricchezza inestimabile.
+      sssPlus: Ora è la banca a doverti delle spiegazioni.
+  bankStatistics:
+    phrases:
+      title: Statistiche bancarie
+      totalWealth: Patrimonio totale
+      bankWealth: Patrimonio bancario
+      inventoryWealth: Inventario e dotazione
+      coins: Monete
+      creditRating: Rating creditizio
+      nextTier: 'Successivo: {tier}'
+      nextTierLabel: Prossimo
+      collectionProgress: '{owned} su {total} articoli posseduti'
+      gearRarity: Equipaggiamento e strumenti per rarità
+      maxTier: Raggiunto il livello più alto!
+      wealthComposition: Composizione del patrimonio
+      itemTypes: Tipi di articoli in possesso
+      collection: Collezione
+      statistics: Statistiche
+      mostValuable: L'oggetto di maggior valore
+      itemsOwned: Totale articoli posseduti
+      uniqueItems: Oggetti unici in mio possesso
+      coinsEarnedSelling: Monete guadagnate con la vendita
+      coinsSpentBuying: Monete spese per acquisti
+      incomeFromSelling: Ricavi da vendite
