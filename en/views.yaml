@@ -114,6 +114,8 @@ singulars:
       collectibles: '<bp /><icon i="Collectibles"/> <c>{count} collectibles</c> that can be found'
       reputation: '<bp /><object id="{faction}" /> reputation <c>+{amount}</c>'
       lore: '<bp /><icon i="Lore item"/> <c>{count} lore items</c> that can be found'
+      cosmetics: '<bp /><icon i="Wardrobe action"/> <c>{count} cosmetics</c> that can be found'
+      petEggs: '<bp /><icon i="Pet egg"/> <c>{count} pet eggs</c> with a new pet'
     options:
       completeUntilActions: Complete for a number of actions
       numberOfActions: Number of actions
@@ -315,6 +317,7 @@ singulars:
       loreItemsCount: Lore items
   crafting:
     phrases:
+      specialRecipes: Special recipes
       materials: Materials
       rewards: Rewards
       recipes: Recipes
@@ -333,6 +336,7 @@ singulars:
       noService: "Service requirement is not met"
       noMaterials: "Crafting materials are missing"
       skillRequirementsNotMet: "Skill requirements are not met"
+      recipeNotUnlocked: "This recipe is not unlocked"
   abilities:
     info:
       youHaveNoAbilities: <hl>You have no abilities</hl>. Certain gear in the game can grant you abilities that you can use to gain some instant benefit in the game for a cooldown.
@@ -407,6 +411,7 @@ singulars:
       give: Give
       noJobsAvailable: "There are no jobs available at this location at the moment. New jobs will be available in:"
       refreshIn: "The job board will be refreshed in:"
+      refreshesIn: "Refreshes in:"
       jobAlreadyAccepted: You have accepted this job.
       browseJobBoards: Browse jobs
       availableJobs: Available jobs
@@ -417,6 +422,65 @@ singulars:
       travelToJobBoard: Travel to <object id="{obj}"/>
       cannotAcceptMore: You cannot accept more jobs.
       complete: Complete
+      accepted: Accepted
+      acceptedJobsHere: <c>{count}</c> to hand in here
+      readyToHandIn: Ready to hand in
+      travelToHandIn: Hand in on location
+      stateTravel: Travel
+      rewardsLabel: Rewards
+      needMore: "Need {count} more"
+      readyToGive: Ready to hand over
+      readyFromBank: "Ready · {count} from your bank"
+      handInAt: "Hand in at {location}"
+      rewardsLabelCount: "Rewards ({count})"
+      rewardLineItem: "{count} × {name}"
+      rewardLineReputation: "{amount} {name} reputation"
+      rewardLineCoins: "{amount} coins"
+      rewardLineXp: "{amount} {name} experience"
+      rewardLineOther: "{name}"
+      notVisited: Not visited yet
+      fromBank: from bank
+      staged: Staged
+      unstage: Undo
+      clearStaged: Clear
+      confirmBatch: Confirm
+      toAccept: to accept
+      toHandIn: to hand in
+      toAbandon: to abandon
+      nothingActionableHere: "Nothing to do from here right now. You can accept jobs from any board you've visited, but you must be at the board to hand one in."
+      noAcceptedJobs: You have no jobs in progress.
+      filterActionable: Available here
+      filterAccepted: In progress
+      filterAll: All jobs
+      deliver: Deliver
+      difficulty:
+        "easy": Easy
+        "mediocre": Mediocre
+        "hard": Hard
+        "extreme": Extreme
+      filterHere: Here
+      filterCanFulfil: Can fulfil
+      filterInProgress: In progress
+      filters: Filters
+      clearFilters: Clear all filters
+      noJobsMatchFilters: "No jobs match your filters. Try clearing some of them."
+      sort: Sort
+      sortByBoard: By job board
+      sortByProgress: Closest to done
+      sortHardest: Hardest first
+      sortEasiest: Easiest first
+      rewardsTitle: Rewards
+      difficultyTitle: Difficulty
+      boardTitle: Job board
+      moreRewards: +<c>{count}</c> more
+      orInstead: or
+      alternativeOption: "{count} × {quality}"
+    maps:
+      rewardKinds:
+        "item": Items
+        "factionReputation": Reputation
+        "coins": Coins
+        "skillExperience": Experience
     dialogs:
       abandonJob:
         title: Abandon job
@@ -435,6 +499,8 @@ singulars:
       noItemSelected: No item selected. \n\n Select an item from the list below in order to compare it to current item and equip it.
       noItemsFound: No items found from your inventory that would fit this slot.
     phrases:
+      claimBlueprint: Claim blueprint
+      claimCosmeticDrop: Claim cosmetic
       treasury: Treasury
       longPressTip: <c>Tip:</c> Long pressing on an item stack selects all similar stacks.
       dropItems: Drop items?
@@ -665,6 +731,8 @@ singulars:
         skillLevel: Skill level
         noMaterialsConsumed: No materials consumed
         doubleItem: Double item
+        dropAsFine: Fine find
+        swapItem: Item swap
       inventoryTitle: Inventory
       inventoryEmpty: Your inventory is empty
       withdrawAvailable: "{count} in bank"
@@ -966,13 +1034,15 @@ singulars:
       changeRouteWarning: Changing your route will cancel your current travel and return you to the previous location. Are you sure?
       youAreInspectingFromMap: You are <c>inspecting from the world map</c>. To interact, you need to be in the location itself and open this from the main location view.
     options:
-      hideAll: Hide all
-      regions: Show regions
-      friends: Show friends
-      labels: Show labels
-      locations: Show locations
-      routes: Show routes
-      playerCharacter: Show your character
+      hideAll: Hide All
+      regions: Show Regions
+      friends: Show Friends
+      labels: Show Labels
+      locations: Show Locations
+      routes: Show Routes
+      playerCharacter: Show your Character
+      serviceIcons: Show Service Icons
+      cosmeticServiceIcons: Show Cosmetic Services
   stats:
     phrases:
       stats: Stats
@@ -1089,6 +1159,7 @@ singulars:
       friends: Friends
       enterAtLeastChars: Enter at least 3 characters to search.
       countResultsFound: "{count} results found"
+      anonymousWalker: Anonymous Walker
   party:
     phrases:
       members: Party members
@@ -1115,6 +1186,7 @@ singulars:
       fromProc: "From <c>{proc}</c>"
       fromSource: 'From <object id="{source}"/>'
       fromAttribute: "From attribute {attribute}"
+      swapConverted: Converted
       startedNewActivity: Started activity <object id="{activity}"/> in <object id="{location}"/>
       startedActivityNoLocation: Started activity <object id="{activity}"/>
       actionCancelled: Action cancelled
@@ -1241,6 +1313,7 @@ singulars:
       noAttributesTip: You don't have any active attributes from gear, tools or other sources, or your filters didn't return any attributes that fit.
       overlevelingWithNumber: 'Skill level is <c>+{level}</c> over requirement.'
       overlevelingFromAgility: 'From <object id="agility" /> level <c>{level}</c>.'
+      andMoreItems: "<bp />and <c>{count}</c> more"
     options:
       showInactiveAttributes: Show inactive attributes
   mailbox:
@@ -1263,6 +1336,20 @@ singulars:
       birthday3:
         subject: Happy third birthday!
         text: Well, look who's turning three! Don't succumb to the darkness, here's something for you so you don't give into the powers that be.\n\n- Herbert
+      tradeCompleted:
+        subject: Trade with {characterName} Completed
+        text: Your trade negotiations with <c><bold>{characterName}</bold></c> have come to a successful conclusion! <action id="receipt">View receipt</action>\n\nIn return for your offer, you received
+        textNothingReceived: Your trade negotiations with <c><bold>{characterName}</bold></c> have come to a successful conclusion! <action id="receipt">View receipt</action>\n\nYou received nothing in return.
+      tradeRejected:
+        subject: Trade with {characterName} Rejected
+        text: Your trade negotiations with <c><bold>{characterName}</bold></c> have been rejected and your offer has been refunded.
+  ironfoot:
+    phrases:
+      relinquishWarning: 'Your character is currently an <c>Ironfoot</c>. To trade with other players, you need to relinquish your <c>Ironfoot</c> status. This process is irreversible.'
+      selfIronfoot: 'Your character is an <c><bold>Ironfoot</bold></c>'
+      cannotTradeWith: '<c><bold>Ironfoot</bold></c> characters cannot be invited to trade.'
+    buttons:
+      relinquish: Relinquish Ironfoot
 plurals:
   inventory:
     info:
@@ -1405,6 +1492,8 @@ maps:
         "quest": Quest items
         "artifact": Artifacts
         "lore": Lore items
+        "blueprint": Blueprints
+        "cosmeticDrop": Cosmetic drops
   character:
     stepsTime:
       "hourly": Hourly steps

@@ -26,6 +26,12 @@ singulars:
     claimPet:
       title: Claim pet?
       text: 'You are about to claim a pet. Once the pet has been claimed, it will be bound to you and cannot be traded. Are you sure you want to claim this pet?'
+    claimCosmeticDrop:
+      title: Claim cosmetic?
+      text: 'You are about to claim this cosmetic drop. It will be consumed, and the cosmetic it contains will be permanently unlocked for you. Are you sure you want to claim it?'
+    claimBlueprint:
+      title: Claim blueprint?
+      text: 'You are about to claim this blueprint. It will be consumed, and the recipes it teaches will be permanently unlocked for you. Are you sure you want to claim it?'
     retirePet:
       title: Retire pet?
       text: 'You are about to retire your pet. Retiring a pet will remove it from you permanently. Are you sure you want to retire this pet?'
@@ -228,7 +234,9 @@ singulars:
         text: The game client failed to validate the client. This is likely due to network error. Please restart the game and try again.
       saveDesync:
         title: Save Data Out of Sync
-        text: The current character data (from <c i=0>{clientLastUpdate}</c>) is out of sync with the server (<c i=0>{serverLastUpdate}</c>). Restart the game to replace your local save with the latest server data.
+        text: |
+            The current character data (from <c i=0>{clientLastUpdate}</c>) is out of sync with the server (<c i=0>{serverLastUpdate}</c>). Restart the game to replace your local save with the latest server data.
+            Source: {reason}
   validators:
     textField:
       maxTextLength: Maximum length is {max} characters.
