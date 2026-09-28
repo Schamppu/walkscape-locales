@@ -179,9 +179,9 @@ singulars:
         text: Klient gry nie mógł zweryfikować konta. Prawdopodobnie jest to spowodowane
           błędem sieci. Uruchom grę ponownie i spróbuj jeszcze raz.
       saveDesync:
-        text: Dane aktualnie wybranej postaci(from <c i=0>{clientLastUpdate}</c>)
+        text: "Dane aktualnie wybranej postaci(from <c i=0>{clientLastUpdate}</c>)
           są nie zsynchronizowane z serwerem (<c i=0>{serverLastUpdate}</c>) . Zrestartuj
-          grę, by nadpisać swój lokalny zapis z danymi z serwera.
+          grę, by nadpisać swój lokalny zapis z danymi z serwera.\nŹródło: {reason}\n"
         title: Zapisz Niezsynchronizowane Dane
       alreadyLoggedIn:
         title: Nowe Urządzenie Wykryte
@@ -354,6 +354,15 @@ singulars:
       title: Aktywny efekt zwierzaka zostanie usunięty
       text: 'Czy na pewno chcesz zmienić swojego pupila? Twój pupil ma następujący
         aktywny efekt, który zostanie usunięty po zmianie:'
+    claimCosmeticDrop:
+      title: Odebrać przedmioty kosmetyczne ?
+      text: Masz zamiar odebrać ten przedmiot kosmetyczny. Zostanie on zużyty, a zawarty
+        w nim element kosmetyczny zostanie trwale odblokowany na Twoim koncie. Czy
+        na pewno chcesz go odebrać?
+    claimBlueprint:
+      text: Masz zamiar odebrać ten schemat. Zostanie on zużyty, a przepisy, których
+        uczy, zostaną dla Ciebie trwale odblokowane. Czy na pewno chcesz go odebrać?
+      title: Odebrać schemat ?
   validators:
     textField:
       maxTextLength: Maksymalna długość wynosi {max} znaków.
