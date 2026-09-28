@@ -146,6 +146,13 @@ singulars:
       requirement: È necessario <object id="leather" />.
       requirementLevel: Richiede cuoio che soddisfi almeno i requisiti specificati
         in <keywordRequirements />.
+    huntingProduct:
+      name: Prodotti per la caccia
+      desc: Il risultato di una battuta di caccia riuscita. Potrebbe essere utilizzato
+        in una moltitudine di diverse <skillType type="artisan" /> ricette.
+      requirement: Richiede <object id="huntingProduct" />.
+      requirementLevel: Richiede un prodotto di caccia che presenti almeno <keywordRequirements
+        /> tra i propri requisiti.
   tools:
     fishing:
       name: Pesca
@@ -682,6 +689,12 @@ singulars:
         suoi requisiti.
       desc: Le bevande alcoliche possono essere consumate per ottenere bonus temporanei,
         ma attenzione a non esagerare!
+    fishingBait:
+      desc: Esca utilizzata per attirare e catturare i pesci durante la pesca.
+      requirementLevel: Richiede un'esca da pesca che abbia almeno <keywordRequirements
+        /> tra i propri requisiti.
+      requirement: Richiede un <object id="fishing_bait" />.
+      name: Esca da pesca
   general:
     lightSource:
       name: Fonte luminosa
@@ -729,6 +742,14 @@ singulars:
         pensare di tenerlo da parte per effettuare dei miglioramenti in futuro?
       requirement: È necessario un elemento <object id="upgradeable" />.
       requirementLevel: Richiede un componente aggiornabile che includa almeno <keywordRequirements
+        /> tra i propri requisiti.
+    curiosity:
+      name: Curiosità
+      desc: Curiosità come questa sono considerate preziose dalla Gilda degli Avventurieri
+        locale. Potrebbero darti alcuni gettoni della Gilda degli Avventurieri in
+        cambio.
+      requirement: Richiede qualcosa <object id="curiosity" />.
+      requirementLevel: Richiede una curiosità che includa almeno <keywordRequirements
         /> tra i propri requisiti.
   search:
     skills:
