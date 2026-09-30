@@ -95,9 +95,9 @@ singulars:
           Lütfen oyunu yeniden açarak tekrar dene.
       saveDesync:
         title: Kayıtlı Veriler Eşleşmiyor
-        text: Mevcut karakter verisi (from <c i=0>{clientLastUpdate}</c>) sunucudaki
+        text: "Mevcut karakter verisi (from <c i=0>{clientLastUpdate}</c>) sunucudaki
           veri (<c i=0>{serverLastUpdate}</c>) ile eşleşmiyor. Yerel kayıtları en
-          son sunucu verisiyle değiştirmek için oyunu yeniden başlat.
+          son sunucu verisiyle değiştirmek için oyunu yeniden başlat.\nKaynak: {reason}\n"
       alreadyLoggedIn:
         title: Yeni Cihaz Algılandı
         text: "Bu cihaz, ana adım kaynağın olarak ayarlanmış değil.\nWalkScape'i yeniden
@@ -345,6 +345,14 @@ singulars:
       title: Evcil hayvanın aktif etkisi kaybolacak
       text: 'Evcil hayvanını değiştirmek istediğine emin misin? Değiştirirsen evcil
         hayvanının şu aktif etkisini kaybedeceksin:'
+    claimCosmeticDrop:
+      title: Kozmetik ödül alınsın mı?
+      text: Bu kozmetik ödülü kullanmak üzeresin. Kullanınca harcanarak içeriği senin
+        için kalıcı olarak açılır. Almak istediğine emin misin?
+    claimBlueprint:
+      title: Şablon alınsın mı?
+      text: Bu şablonu kullanmak üzeresin. Kullanınca harcanarak içeriğindeki tarifler
+        senin için kalıcı olarak açılır. Almak istediğine emin misin?
   validators:
     textField:
       maxTextLength: Maksimum {max} karakter.
