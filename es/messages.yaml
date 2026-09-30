@@ -175,9 +175,10 @@ singulars:
         title: Fallo al validar el cliente
       saveDesync:
         title: Datos De Guardado No Sincronizados
-        text: Los datos del personaje actual no están sincronizados con el servidor.
-          Reinicia el juego para reemplazar tu guardado local con la última versión
-          del servidor.
+        text: "Los datos actuales del personaje (de <c i=0>{clientLastUpdate}</c>)
+          no están sincronizados con el servidor (<c i=0>{serverLastUpdate}</c>).
+          Reinicia el juego para reemplazar tu partida local con los datos más recientes
+          del servidor.\nOrigen: {reason}\n"
       alreadyLoggedIn:
         title: Nuevo Dispositivo Detectado
         text: "Este dispositivo no es tu fuente primaria de pasos.\nReinicia WalkScape
@@ -353,6 +354,15 @@ singulars:
       title: El efecto activo de la mascota será eliminado
       text: '¿Seguro que quieres cambiar de mascota? Tu mascota tiene el siguiente
         efecto activo que será eliminado si cambias de mascota:'
+    claimCosmeticDrop:
+      title: ¿Reclamar cosmético?
+      text: Estás a punto de reclamar este objeto cosmético. Se consumirá y el cosmético
+        que contiene se desbloqueará permanentemente para ti. ¿Estás seguro de que
+        quieres reclamarlo?
+    claimBlueprint:
+      title: ¿Reclamar plano?
+      text: Estás a punto de reclamar este plano. Se consumirá y las recetas que contiene
+        se desbloquearán permanentemente para ti. ¿Estás seguro de que quieres reclamarlo?
   validators:
     textField:
       minTextLength: La longitud mínima es de {min} caracteres.
