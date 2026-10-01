@@ -451,6 +451,35 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="findCollectibles"/> kun käytät taitoa ryhmästä <supp k="skillGroup"/>.
+    swapItem:
+      global:
+        text: Löytämäsi {from} muuttuu ja siitä tulee {to}
+      whileMainSkill:
+        text: Löytämäsi {from} muuttuu ja siitä tulee {to} kun <supp k="skill"/> on
+          käytössä
+      toExperience:
+        text: Löytämäsi {from} muuntuu ja saat sen sijaan {xp} pistettä {skill}kokemusta
+      toExperienceFromEffort:
+        text: Löytämäsi {from} muuttuu ja saat {skill}kokemusta
+      toTables:
+        text: Löytämäsi {from} muuttuu erityislöydöksi
+    dropAsFine:
+      whileMainSkill:
+        text: Löytämäsi {items} saattaa olla oiva, kun <supp k="skill"/> on käytössä
+      global:
+        text: Löytämäsi {items} saattaa olla oiva
+    swapItemNotes:
+      nonFine:
+        text: Jos materiaali on <itemTag tag="fine"/>, se ei muutu.
+    doubleItem:
+      global:
+        text: Todennäköisyys löytää kaksinkertainen {items}
+      whileMainSkill:
+        text: Todennäköisyys löytää kaksinkertainen {items} kun <supp k="skill"/>
+          on käytössä
+    countsAsService:
+      global:
+        text: Käyttäytyy kuin käytössäsi olisi {services} kaikkialla
   custom:
     gainAdventurersGuildToken:
       desc: <PLACEHOLDER>
