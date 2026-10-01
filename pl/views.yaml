@@ -155,6 +155,7 @@ maps:
         "egg": Jaja pupili
         "currency": Waluty
         "lore": Przedmiot Fabularny
+        "blueprint": Schematy
   locales:
     grammaticalGender:
       'masculine': Męska
@@ -378,11 +379,13 @@ singulars:
       showingRecipiesThatUses: Pokaż przepisy zawierające
       requiresService: Wymaga usługi.
       allSkills: Wszystkie umiejętności
+      specialRecipes: Specjalne przepisy
     errors:
       noService: Wymóg usług nie jest spełniony
       notSameQuality: Wszystkie materiały muszą być albo świetne lub normalne
       skillRequirementsNotMet: Wymagania umiejętności nie są spełnione
       noMaterials: Brakuje materiałów do wytwarzania
+      recipeNotUnlocked: Ten przepis nie jest odblokowany
   inventory:
     info:
       noItemEquipped: Nie wyposażono żadnego przedmiotu. \n\n Przedmiot można wyposażyć,
@@ -435,6 +438,7 @@ singulars:
       hatchesInto: Wypakuj w
       inputAttributes: Wkład atrybutów
       mail: Poczta
+      claimBlueprint: Przyjmij schemat
     options:
       consenseInventory: Poukładaj ekwipunek
       expandInventory: Rozwiń ekwipunek
@@ -448,7 +452,7 @@ singulars:
       factions: Frakcje
       noActivites: Brak aktywności dostępnych w tej lokacji.
       buildings: Budynki
-      routes: Drogi
+      routes: Trasy
       tapToShowRoutes: Dotknij, aby pokazać trasy
       jobs: Zlecenia
       jobBoard: Tablica zleceń
@@ -748,11 +752,61 @@ singulars:
       cannotWithdraw: Twoja obecna lokacja <object id="{obj}"/> nie posiada banku.
         Wyjmowanie przedmiotów do zleceń jest niemożliwe.
       accepted: Zaakceptowany
+      filterActionable: Dostępne tutaj
+      refreshesIn: 'Odśwież za:'
+      rewardLineXp: '{amount} {name} doświadczenie'
+      filterAccepted: W toku
+      rewardsTitle: Nagrody
+      difficultyTitle: Trudność
+      boardTitle: Tablica zleceń
+      moreRewards: +<c>{count}</c> więcej
+      orInstead: lub
+      sortEasiest: Najpierw najłatwiejsze
+      deliver: Dostarcz
+      difficulty:
+        "easy": Łatwe
+        "hard": Trudne
+        "mediocre": Średnie
+        "extreme": Ekstremalne
+      filterHere: Tutaj
+      filterCanFulfil: Możesz wykonać
+      filterInProgress: W toku
+      filters: Filtry
+      clearFilters: Wyczyść wszystkie filtry
+      noJobsMatchFilters: Żadne zlecenia nie odpowiadają Twoim filtrom. Spróbuj usunąć
+        niektóre z nich.
+      sort: Sortuj
+      sortByBoard: Przez tablicę zleceń
+      sortByProgress: Bliskie ukończenia
+      sortHardest: Najpierw najtrudniejsze
+      filterAll: Wszystkie prace
+      readyToHandIn: Gotowy do oddania
+      travelToHandIn: Przekaż w lokacji
+      stateTravel: Podróż
+      rewardsLabel: Nagrody
+      readyToGive: Gotowe do przekazania
+      handInAt: Przekaż w {location}
+      rewardsLabelCount: Nagrody({count})
+      rewardLineCoins: '{amount} monety'
+      notVisited: Jeszcze nie odwiedzono
+      fromBank: z banku
+      staged: Wystawiony
+      unstage: Cofnij
+      clearStaged: Wyczyść
+      confirmBatch: Potwierdź
+      toAccept: akceptuj
+      noAcceptedJobs: Nie masz żadnych zadań w toku.
     dialogs:
       abandonJob:
         title: Porzuć zlecenie
         text: Na pewno chcesz porzucić to zlecenie? Stracisz cały postęp oraz nagrody
           z tego zlecenia.
+    maps:
+      rewardKinds:
+        "item": Przedmioty
+        "factionReputation": Reputacja
+        "coins": Monety
+        "skillExperience": Doświadczenie
   settings:
     categories:
       notifications:
@@ -887,13 +941,15 @@ singulars:
       youAreInspectingFromMap: Aktualnie <c>oglądasz z mapy świata</c>. Aby wejść
         w interakcję, musisz być w danej lokacji i otworzyć ją z widoku głównego miejsca.
     options:
-      hideAll: Ukryj wszystko
-      regions: Pokaż regiony
-      friends: Pokaż znajomych
-      labels: Pokaż opisy
-      locations: Pokaż lokacje
-      routes: Pokaż trasy
-      playerCharacter: Pokaż twoją postać
+      hideAll: Ukryj Wszystko
+      regions: Pokaż Regiony
+      friends: Pokaż Znajomych
+      labels: Pokaż Opisy
+      locations: Pokaż Lokacje
+      routes: Pokaż Trasy
+      playerCharacter: Pokaż Twoją Postać
+      serviceIcons: Pokaż Ikony Usług
+      cosmeticServiceIcons: Pokaż Usługi Kosmetyczne
   stats:
     phrases:
       stats: Statystyki
@@ -1030,6 +1086,7 @@ singulars:
       friends: Znajomi
       countResultsFound: Znaleziono wyników {count}
       enterAtLeastChars: Aby wyszukać, wprowadź co najmniej 3 znaki.
+      anonymousWalker: Anonimowy Wędrowiec
   gear:
     phrases:
       combatModifiers: Modyfikatory walki
@@ -1196,6 +1253,8 @@ singulars:
         rollSpecialTable: Specjalna tabela rzutów
         noMaterialsConsumed: Brak zużycia materiałów
         extraLootRolls: Dodatkowe przelosowania łupów
+        dropAsFine: Znajdź świetne
+        swapItem: Wymiana przedmiotów
       reorderBlockedSearch: Wyczyść wyszukanie, by poukładać przedmioty
       reorderBlockedBoth: Wyczyść filtry i wyszukiwanie, by poukładać przedmioty
       inventoryEmpty: Twój ekwipunek jest pusty
@@ -1676,6 +1735,7 @@ singulars:
         lub innych źródeł albo twoje filtry nie pokazują żadnych, które pasują.
       overlevelingWithNumber: Poziom umiejętności <c>+{level}</c> ponad wymagania.
       overlevelingFromAgility: Z <object id="agility" /> poziom <c>{level}</c>.
+      andMoreItems: <bp />i <c>{count}</c> więcej
     options:
       showInactiveAttributes: Pokaż nieaktywne atrybuty
   party:
@@ -1734,6 +1794,10 @@ singulars:
         subject: Szczęśliwych trzecich urodzin!
         text: Oho, patrzcie kto ma trzecie! Nie poddawaj się ciemności. Oto coś dla
           ciebie, co pomoże ci nie poddać się jej mocy.\n\n- Herbert
+      tradeCompleted:
+        subject: Wymiana z {characterName} zakończona
+      tradeRejected:
+        subject: Wymania z {characterName} przerwana
   creditRating:
     tiers:
       aaa: AAA
@@ -1784,3 +1848,10 @@ singulars:
       gearRarity: Wyposażenie & narzędzia, względem jakości
       statistics: Statystyki
       mostValuable: Najcenniejszy przedmiot
+  ironfoot:
+    phrases:
+      cannotTradeWith: Postać<c><bold>Żelaznostopy</bold></c> nie może zostać zaproszona
+        do handlu.
+      selfIronfoot: Twoja postać to <c><bold>Żelaznostopy</bold></c>
+    buttons:
+      relinquish: Zrzeknij się Żelaznej Stopy
