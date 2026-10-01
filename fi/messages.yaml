@@ -180,10 +180,10 @@ singulars:
           Ole hyvä ja käynnistä peli yrittääksesi uudelleen.
       saveDesync:
         title: Tallennetut tiedot eivät täsmää palvelimen tietoihin
-        text: Tämänhetkiset tiedot hahmostasi (viimeisin päivitys <c i=0>{clientLastUpdate}</c>)
+        text: "Tämänhetkiset tiedot hahmostasi (viimeisin päivitys <c i=0>{clientLastUpdate}</c>)
           eivät täsmää palvelimen tietoihin (viimeisin päivitys <c i=0>{serverLastUpdate}</c>).
           Käynnistä peli uudelleen korvataksesi paikallisesti tallennetut tiedot uusimmilla
-          tiedoilla palvelimelta.
+          tiedoilla palvelimelta. \nLähde: {reason}\n"
       alreadyLoggedIn:
         title: Uusi laite havaittu
         text: "Tämä laite ei ole valittuna pääasialliseksi askeltesi lähteeksi.\n\
@@ -287,6 +287,16 @@ singulars:
       title: Lemmikin positiivinen vaikutus poistetaan
       text: 'Oletko varma, että haluat vaihtaa lemmikkiä? Lemmikilläsi on aktiivisena
         seuraava vaikutus, joka poistetaan, jos vaihdat lemmikkiä:'
+    claimCosmeticDrop:
+      text: Olet avaamassa tämän kosmeettisen saaliin. Se katoaa, ja sen sisältämä
+        kosmeettinen muokkausmahdollisuus on saatavillasi sen jälkeen pysyvästi. Oletko
+        varma, että haluat avata sen käyttöösi?
+      title: Avaatko kosmeettisen saaliin?
+    claimBlueprint:
+      title: Avaatko piirustukset?
+      text: Olet avaamassa tämän piirustuksen. Piirustukset sisältävä käärö katoaa,
+        ja sen sisältämät reseptit jäävät pysyvästi käyttöösi. Oletko varma, että
+        haluat avata sen?
   info:
     game:
       importGearSetFailed:
