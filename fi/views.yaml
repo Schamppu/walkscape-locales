@@ -377,11 +377,13 @@ singulars:
       showingRecipiesThatUses: Näytetään reseptit, joissa käytetään
       requiresService: Vaatii palvelun.
       allSkills: Kaikki taidot
+      specialRecipes: Erikoisreseptejä
     errors:
       notSameQuality: Kaikkien materiaalien on oltava joko oivia tai normaaleja
       noService: Palveluvaatimus ei täyty
       noMaterials: Käsityömateriaaleja puuttuu
       skillRequirementsNotMet: Taitovaatimukset eivät täyty
+      recipeNotUnlocked: Tätä reseptiä ei ole vielä löydetty
   inventory:
     info:
       noItemEquipped: Ei esinettä puettuna. \n\n Voit pukea esineen valitsemalla jonkin
@@ -434,6 +436,8 @@ singulars:
       hatchesInto: Kuoriutuessaan
       inputAttributes: Syötteiden ominaisuudet
       mail: Posti
+      claimBlueprint: Avaa piirrokset
+      claimCosmeticDrop: Avaa kosmeettinen saalis
     options:
       showConsumables: Näytä hyödykkeet
       consenseInventory: Tiivistä reppunäkymä
@@ -531,11 +535,74 @@ singulars:
         esineiden nosto pankista työtehtäviin ei ole mahdollista.
       currentlyAcceptedJobs: Tällä hetkellä vastaanotetut työt
       jobAlreadyAccepted: Olet ottanut tämän työn vastaan.
+      accepted: Hyväksytty
+      boardTitle: Työtehtävätaulu
+      refreshesIn: 'Päivitykseen:'
+      readyToGive: Valmis esineiden luovuttamiseen
+      filterAccepted: Työn alla
+      filterActionable: Saatavilla täällä
+      acceptedJobsHere: <c>{count}</c> luovutettavaksi tänne
+      readyToHandIn: Valmis luovuttamaan esineet
+      travelToHandIn: Luovuta esineet paikan päällä
+      rewardsLabel: Palkinnot
+      stateTravel: Matka
+      needMore: Tarvitaan {count} lisää
+      readyFromBank: Valmis · {count} nostetaan pankista
+      handInAt: Luovutussijainti {location}
+      rewardsLabelCount: Palkkio ({count})
+      rewardLineItem: '{count} × {name}'
+      rewardLineReputation: '{amount} {name}-mainetta'
+      rewardLineCoins: '{amount} kolikkoa'
+      rewardLineXp: '{amount} {name}kokemusta'
+      rewardLineOther: '{name}'
+      notVisited: Ei vielä käyty
+      fromBank: pankista
+      staged: Jonossa
+      unstage: Peruuta
+      clearStaged: Tyhjennä
+      confirmBatch: Vahvista
+      toAccept: hyväksyäksesi
+      toHandIn: toimittaaksesi esineet
+      toAbandon: hylätäksesi
+      nothingActionableHere: Täältä käsin et voi tehdä mitään juuri nyt. Voit hyväksyä
+        töitä miltä tahansa taululta jonka luona olet käynyt, mutta joudut palaamaan
+        sen luo luovuttaaksesi esineet työnantajalle.
+      noAcceptedJobs: Sinulla ei ole keskeneräisiä töitä.
+      filterAll: Kaikki työt
+      deliver: Luovuta esineet
+      difficulty:
+        "easy": Helppo
+        "mediocre": Keskivaikea
+        "hard": Vaikea
+        "extreme": Äärimmäinen
+      filterHere: Täällä
+      filterCanFulfil: Voi täyttää
+      filterInProgress: Käynnissä
+      filters: Suodattimet
+      clearFilters: Tyhjennä suodattimet
+      noJobsMatchFilters: Suodattimiisi ei sovi yhtään työtehtäviä. Koeta poistaa
+        niistä joitakin.
+      sort: Järjestä
+      sortByBoard: Työtehtävätaulun mukaan
+      sortByProgress: Lähimpänä valmista
+      sortHardest: Vaikein ensin
+      sortEasiest: Helpoin ensin
+      rewardsTitle: Palkkiot
+      difficultyTitle: Vaikeus
+      moreRewards: +<c>{count}</c> lisää
+      orInstead: tai
+      alternativeOption: '{count} × {quality}'
     dialogs:
       abandonJob:
         title: Hylkää työtehtävä
         text: Oletko varma, että haluat luopua tästä työtehtävästä? Menetät kaiken
           edistymisen ja palkinnot tästä työtehtävästä.
+    maps:
+      rewardKinds:
+        "item": Esineet
+        "factionReputation": Maine
+        "coins": Kolikot
+        "skillExperience": Kokemus
   activity:
     phrases:
       consumables: Hyödykkeet
@@ -607,6 +674,10 @@ singulars:
         jotka on mahdollista löytää
       reputation: <bp /><object id="{faction}" /> mainetta <c>+{amount}</c>
       lore: <bp /><icon i="Lore item"/> <c>{count} tarinaesinettä</c> löydettävissä
+      petEggs: <bp /><icon i="Pet egg"/> <c>{count} lemmikkimunia</c> joita sinulla
+        ei vielä ole
+      cosmetics: <bp /><icon i="Wardrobe action"/> <c>{count} kosmeettisia</c> saaliita
+        löydettävissä
     options:
       completeUntilActions: Toista tietty määrä kertoja
       numberOfActions: Toimintojen määrä
@@ -924,6 +995,8 @@ singulars:
       locations: Näytä sijainnit
       routes: Näytä reitit
       playerCharacter: Näytä hahmosi
+      serviceIcons: Näytä palvelukuvakkeet
+      cosmeticServiceIcons: Näytä kosmeettiset palvelut
   stats:
     phrases:
       stats: Tilastot
@@ -1205,6 +1278,8 @@ singulars:
         noMaterialsConsumed: Materiaaleja ei kuluteta
         doubleItem: Tuplaesine
         travelingDistance: Matkustusetäisyys
+        dropAsFine: Oivien esineiden löytäminen
+        swapItem: Esineiden vaihto
       inventoryTitle: Reppu
       inventoryEmpty: Reppusi on tyhjä
       withdrawAvailable: '{count} pankissa'
