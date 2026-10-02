@@ -155,6 +155,8 @@ maps:
         "currency": Valuutat
         "artifact": Artefaktit
         "lore": Tarinaesineet
+        "blueprint": Piirustukset
+        "cosmeticDrop": Kosmeettiset saaliit
   locales:
     grammaticalGender:
       'masculine': Maskuliini
@@ -1115,6 +1117,7 @@ singulars:
       friends: Kaverit
       countResultsFound: '{count} tulosta löytyi'
       enterAtLeastChars: Kirjoita vähintään 3 merkkiä etsiäksesi.
+      anonymousWalker: Nimetön kävelijä
   tools:
     phrases:
       lockedToolSlot: Työkalutila lukittu kunnes <c>hahmon taso on {level}</c>.
@@ -1548,6 +1551,7 @@ singulars:
       inputsUsed: Käytetyt syötteet
       switchedToImportedGearSet: Vaihdettiin tuotuun varustesettiin
       stepsWhileYouWereAway: Poissaollessasi kertyneet askeleet
+      swapConverted: Muunnettu
   queue:
     phrases:
       queuedActions: Jonossa odottavat toiminnot
@@ -1740,6 +1744,7 @@ singulars:
       noAttributes: Ei aktiivisia ominaisuuksia.
       noAttributesTip: Sinulla ei ole aktiivisia ominaisuuksia varusteista, työkaluista
         tai muista lähteistä, tai valitsemasi suodattimet eivät osu sopiviin tuloksiin.
+      andMoreItems: <bp />ja <c>{count}</c> lisää
     options:
       showInactiveAttributes: Näytä ominaisuudet, jotka eivät ole aktiivisia
   mailbox:
@@ -1766,6 +1771,19 @@ singulars:
         subject: Hyvää ensimmäistä syntymäpäivää!
         text: Hyvää syntymäpäivää! Tässä on hieman jotain, mikä auttaa sinua juhlistamaan
           sitä!\n\n- Herbert
+      tradeCompleted:
+        subject: Vaihtokauppa pelaajan {characterName} kanssa on valmis
+        text: Vaihtokauppaneuvottelusi pelaajan <c><bold>{characterName}</bold></c>
+          kanssa ovat valmistuneet onnistuneesti! <action id="receipt">Katso kuittia</action>\n\nTarjoamistasi
+          esineistä vastaanotit seuraavaa
+        textNothingReceived: Vaihtokauppaneuvottelusi pelaajan <c><bold>{characterName}</bold></c>
+          kanssa ovat valmistuneet onnistuneesti! <action id="receipt">Katso kuittia</action>\n\nEt
+          saanut mitään vaihdossa.
+      tradeRejected:
+        subject: Vaihtokauppa pelaajan {characterName} kanssa hylättiin
+        text: Vaihtokauppaneuvottelusi pelaajan <c><bold>{characterName}</bold></c>
+          kanssa ovat päättyneet tuloksettomina; tarjoamasi esineet on palautettu
+          sinulle.
   party:
     phrases:
       askToJoin: Pyydä liittymään
@@ -1849,3 +1867,12 @@ singulars:
       coinsEarnedSelling: Kolikoita tienattu myynnillä
       incomeFromSelling: Tulot myynnistä yhteensä
       coinsSpentBuying: Kolikoita kulunut ostamalla
+  ironfoot:
+    phrases:
+      relinquishWarning: Hahmosi on tällä hetkellä <c>Rautajalka</c>. Jos teet vaihtokauppaa
+        muiden pelaajien kanssa, <c>Rautajalka</c>-statuksesi poistuu. Tätä muutosta
+        ei voi perua.
+      selfIronfoot: Hahmosi on <c><bold>Rautajalka</bold></c>
+      cannotTradeWith: <c><bold>Rautajalka</bold></c>-hahmoja ei voi kutsua vaihtokauppaan.
+    buttons:
+      relinquish: Luovu Rautajalka-statuksesta
