@@ -3,9 +3,9 @@ plurals:
     deleteClass:
       text:
         one: L'eliminazione degli oggetti è permanente. L'oggetto è citato in altri
-          oggetti {n} volta.
+          oggetti {} volta.
         other: L'eliminazione degli oggetti è permanente. L'oggetto è citato in altri
-          oggetti {n} volte.
+          oggetti {} volte.
         zero: '-'
         many: '-'
         two: L'eliminazione degli oggetti non è reversibile. L'oggetto è referenziato
@@ -60,7 +60,7 @@ singulars:
         quando sarà completamente implementata!
   confirmations:
     changingStepSource:
-      lastSyncText: Ultima sincronizzazione dei passi alle {ora}.
+      lastSyncText: Ultima sincronizzazione dei passi alle {time}.
       neverSyncedText: I passi non sono mai stati sincronizzati.
       title: Cambiare la fonte dei passi?
       text: La modifica della fonte dei passi può comportare la perdita dei passi
@@ -118,13 +118,21 @@ singulars:
       title: L'effetto dell'animale domestico verrà tolto
       text: 'Sei sicuro di voler cambiare il tuo animale domestico? Il tuo animale
         domestico ha il seguente effetto attivo, che verrà rimosso se lo cambi:'
+    claimCosmeticDrop:
+      text: Stai per riscattare questo cosmetico da bottino. Verrà consumato e il
+        cosmetico che contiene sarà sbloccato in modo permanente. Vuoi davvero riscattarlo?
+      title: Riscattare il cosmetico?
+    claimBlueprint:
+      title: Riscattare il progetto?
+      text: Stai per riscattare questo progetto. Verrà consumato e le ricette che
+        insegna saranno sbloccate in modo permanente. Vuoi davvero riscattarlo?
   popups:
     idleSteps:
       whileYouWereAway: Mentre eri via ...
-      skillLeveledUp: <skill skill="{skill}" /> è salito di livello da <c i="0">{da}</c>
-        a <c i="1">{a}</c>.
-      characterLeveledUpFrom: Il personaggio è salito di livello da <c i="0">{da}</c>
-        a <c i="1">{a}</c>.
+      skillLeveledUp: <skill skill="{skill}" /> è salito di livello da <c i="0">{from}</c>
+        a <c i="1">{to}</c>.
+      characterLeveledUpFrom: Il personaggio è salito di livello da <c i="0">{from}</c>
+        a <c i="1">{to}</c>.
       gainedItem: Ottenuto <c>+{amount}</c> <item id="{item}" />.
       craftedItem: Realizzato <c>+{amount}</c> <item id="{item}" />.
       characterGained: Personaggio ha guadagnato <c>+{amount}</c> esperienza.
@@ -138,7 +146,7 @@ singulars:
     skillLevel:
       newItem: <chip><stext><c>Oggetto sbloccato</c></stext></chip> <item id="{item}"/>
         può essere equipaggiato.
-      newActivity: <chip><stext><c>Nuova attività</c></stext></chip> <c>{nomeAttività}</c>
+      newActivity: <chip><stext><c>Nuova attività</c></stext></chip> <c>{activityName}</c>
         sbloccata.
       unlocks: Sblocchi
       noNewUnlocks: Nessun nuovo sblocco per questo livello.
@@ -153,7 +161,7 @@ singulars:
     achievementUnlocked:
       achievementUnlocked: '{achievement} risultato sbloccato'
       requirements: Requisiti
-      achievementPoints: '{points} punti conseguiti'
+      achievementPoints: '{points} punti obiettivo'
       rewards: Ricompense
     characterLevelUp:
       characterLevelUp: Aumento di livello del personaggio
@@ -209,8 +217,8 @@ singulars:
         text: Il tuo gioco è obsoleto ed è disponibile una nuova versione. Scarica
           l'ultima versione del gioco per continuare a giocare.
       noClosedBetaAccess:
-        title: Accesso alla beta chiusa scaduto
-        text: Il tuo accesso alla <c i=0>beta chiusa di WalkScape è scaduto</c>. Puoi
+        title: Accesso alla Closed Beta scaduto
+        text: Il tuo accesso alla <c i=0>Closed Beta di WalkScape è scaduto</c>. Puoi
           riottenere l'accesso candidandoti alla Closed Beta e venendo accettato in
           una fase futura, oppure immediatamente sostenendo il gioco su <c i=1>Patreon</c>
           o <c i=1>Buy Me a Coffee</c>.\n\nSe decidi di sostenere il gioco, collega
@@ -269,10 +277,10 @@ singulars:
           aggiornamento.
       saveDesync:
         title: Dati di salvataggio non sincronizzati
-        text: I dati attuali del personaggio (da <c i=0>{clientLastUpdate}</c>) non
+        text: "I dati attuali del personaggio (da <c i=0>{clientLastUpdate}</c>) non
           sono sincronizzati con il server (<c i=0>{serverLastUpdate}</c>). Riavvia
           il gioco per sostituire il salvataggio locale con i dati più recenti del
-          server.
+          server.\nOrigine: {reason}\n"
       alreadyLoggedIn:
         title: Rilevato un nuovo dispositivo
         text: "Questo dispositivo non è impostato come fonte principale dei passi.\n\
@@ -280,9 +288,8 @@ singulars:
           principale dei passi.\nIn questo modo verranno eliminati tutti i progressi
           non sincronizzati (offline) registrati dal dispositivo precedente.\n"
     fatalError:
-      error: Ci scusiamo per l'errore. Ricorda che il gioco è in versione beta chiusa
-        e che tutti i salvataggi dei giocatori vengono salvati quotidianamente sul
-        cloud.
+      error: Ci scusiamo per l'errore. Ricorda che il gioco è in Closed Beta e che
+        tutti i salvataggi dei giocatori vengono salvati quotidianamente sul cloud.
     activityCancelled:
       title: Attività annullata
       stepsAreInfinite: L'attività corrente è stata annullata perché non soddisfi
@@ -322,8 +329,8 @@ singulars:
       cannotQueueMoreThanOneActivity:
         title: Impossibile aggiungere altre attività alla coda
         text: È possibile mettere in coda più azioni di viaggio, ma solo un'attività
-          alla volta. Completare o annullare l'attività corrente prima di metterne
-          in coda un'altra.
+          alla volta. Completa o annulla l'attività corrente prima di metterne in
+          coda un'altra.
       queueLimitReached:
         title: Limite della coda raggiunto
         text: Non è possibile mettere in coda più di 3 azioni alla volta. Completa
