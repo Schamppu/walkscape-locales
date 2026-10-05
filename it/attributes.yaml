@@ -492,7 +492,7 @@ singulars:
       global:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findCollectibles">chance globale di trovare collezzionabili</stat>
+        text: <stat s="findCollectibles">chance di trovare collezionabili</stat> globale
       whileMainSkill:
         name: <PLACEHOLDER>
         text: <stat s="findCollectibles"/> mentre <supp k="skill"/>
@@ -501,16 +501,16 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="findCollectibles">chance globale di trovare collezionabili</stat>
-          quando<supp k="achievementPoints"/>
+          quando <supp k="achievementPoints"/>
       whenKeywordSetBonus:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="findCollectibles">chance globale di trovare collezionabili</stat>
-          se indossato almeno <supp k="quantity"/> <supp k="keyword"/> oggetti.
+          se indossi almeno <supp k="quantity"/> oggetti <supp k="keyword"/>.
       whileMainSkillAndLocationKeyword:
         desc: <PLACEHOLDER>
-        text: <stat s="findCollectibles"/> mentre <supp k="skill"/> in <supp k="keyword"/>
-          .
+        text: <stat s="findCollectibles"/> mentre <supp k="skill"/> in un luogo <supp
+          k="keyword"/>.
         name: <PLACEHOLDER>
       whileMainSkillAndRealm:
         name: <PLACEHOLDER>
@@ -519,9 +519,35 @@ singulars:
       whileLocationKeyword:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findCollectibles"/> globale mentre in <supp k="keyword"/> .
+        text: <stat s="findCollectibles"/> globale mentre sei in un luogo <supp k="keyword"/>.
       whileSkillGroup:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
-        text: <stat s="findCollectibles"/> durante qualsiasi <supp k="skillGroup"/>
-          abilità.
+        text: <stat s="findCollectibles"/> durante qualsiasi abilità <supp k="skillGroup"/>.
+    countsAsService:
+      global:
+        text: Conta come {services} ovunque
+    swapItem:
+      toTables:
+        text: '{from} che trovi si trasforma in un ritrovamento speciale'
+      global:
+        text: '{from} che trovi si trasforma in {to}'
+      whileMainSkill:
+        text: '{from} si trasforma in {to} mentre <supp k="skill"/>'
+      toExperience:
+        text: '{from} che trovi si trasforma in {xp} di esperienza in {skill}'
+      toExperienceFromEffort:
+        text: '{from} che trovi si trasforma in esperienza in {skill}'
+    dropAsFine:
+      whileMainSkill:
+        text: '{items} che trovi possono essere pregiati mentre <supp k="skill"/>'
+      global:
+        text: '{items} che trovi possono essere pregiati'
+    swapItemNotes:
+      nonFine:
+        text: Vengono convertiti solo i materiali non <itemTag tag="fine"/>.
+    doubleItem:
+      global:
+        text: Chance di trovare il doppio di {items}
+      whileMainSkill:
+        text: Chance di trovare il doppio di {items} mentre <supp k="skill"/>
