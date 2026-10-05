@@ -81,6 +81,8 @@ maps:
         "quest": Oggetti di missione
         "artifact": Artefatti
         "lore": Oggetti della storia
+        "blueprint": Progetti
+        "cosmeticDrop": Cosmetici da bottino
   settings:
     languages:
       "es": Spagnolo
@@ -205,7 +207,7 @@ plurals:
         other: '{} punti obiettivo'
         zero: '-'
         few: '-'
-        two: '{} punti obbiettivo'
+        two: '{} punti obiettivo'
         many: '-'
   activity:
     phrases:
@@ -231,7 +233,7 @@ plurals:
         few: '-'
         many: '-'
       stepsRequired:
-        one: Passi richiesti
+        one: Passo richiesto
         other: Passi richiesti
         zero: '-'
         two: Passi necessari
@@ -334,22 +336,22 @@ singulars:
       viewDescription: Sblocca obiettivi per guadagnare <hl>Punti Obiettivo</hl>.
         Quando la barra Punti Obiettivo è piena, ottieni qualcosa di speciale per
         tutti i tuoi personaggi! Alcuni obiettivi danno anche delle ricompense extra.
-      specialItems: Gli oggetti speciali, come <icon i="Collectible"/> <c>oggetti
-        da collezione</c> e <icon i="Lore Item"/> <c>oggetti della tradizione</c>,
-        vengono raccolti durante il tuo viaggio in WalkScape. Puoi visualizzarli qui.
-        Gli oggetti da collezione ti consentono di accumulare punti per gli obiettivi.
-      noCollectibleItems: Non hai oggetti da collezione.
+      specialItems: Gli oggetti speciali, come <icon i="Collectible"/> <c>collezionabili</c>
+        e <icon i="Lore Item"/> <c>oggetti della storia</c>, vengono raccolti durante
+        il tuo viaggio in WalkScape. Puoi visualizzarli qui. I collezionabili ti consentono
+        di accumulare punti obiettivo.
+      noCollectibleItems: Non hai oggetti collezionabili.
       totalProgressUnlocks: Otterrai questi premi in base ai tuoi progressi totali
         negli obiettivi e perderai l'accesso agli oggetti se saranno disponibili più
         punti obiettivo.
       checkPointUnlocks: Questi obiettivi sono disponibili in determinati punti di
         controllo dei punti obiettivo. Non perderai l'accesso a questi anche se saranno
         disponibili più punti obiettivo.
-      collectibleItems: Gli oggetti da collezione sono oggetti rari che puoi ottenere
-        nel gioco principalmente attraverso le attività. <c i=0>Ogni oggetto da collezione
-        ti garantisce</c> <c i=1>un</c> <icon i="Punto obiettivo"/> <c i=1>punto obiettivo</c>.
-        Gli oggetti da collezione non occupano spazio nell'inventario e rimangono
-        sempre con il tuo personaggio.
+      collectibleItems: I collezionabili sono oggetti rari che puoi ottenere nel gioco
+        principalmente attraverso le attività. <c i=0>Ogni collezionabile ti garantisce</c>
+        <c i=1>un</c> <icon i="Achievement Point"/> <c i=1>punto obiettivo</c>. I
+        collezionabili non occupano spazio nell'inventario e rimangono sempre con
+        il tuo personaggio.
       loreItems: Gli oggetti di storia sono oggetti come libri, lettere e altri materiali
         scritti che puoi trovare. Non occupano spazio nell'inventario e puoi leggerli
         in qualsiasi momento.
@@ -380,11 +382,13 @@ singulars:
       noMaterialsThatCouldBeUsed: Nessun materiale utilizzabile per la creazione nell'inventario.
       showingRecipiesThatUses: Mostra ricette che utilizzano
       noServiceRequirements: Nessun requisito di servizio.
+      specialRecipes: Ricette speciali
     errors:
       notSameQuality: I materiali devono essere tutti di qualità eccellente o normale
       noService: Requisiti di servizio non soddisfatti
       noMaterials: Mancano i materiali per la creazione
       skillRequirementsNotMet: I requisiti di competenza non sono soddisfatti
+      recipeNotUnlocked: Questa ricetta non è sbloccata
   inventory:
     info:
       noItemEquipped: Nessun oggetto equipaggiato.\n\nÈ possibile equipaggiare un
@@ -415,7 +419,7 @@ singulars:
         gli oggetti spariranno per sempre.
       itemsInUse: Hai selezionato oggetti che sono già in uso. Non puoi abbandonare
         o depositare oggetti in uso.
-      slots: Slot <c>{slot}</c>
+      slots: Slot <c>{slots}</c>
       abilities: Abilità
       longPressTip: <c>Suggerimento:</c> tenendo premuto a lungo su una pila di oggetti
         vengono selezionate tutte le pile simili.
@@ -440,6 +444,8 @@ singulars:
       hatchesInto: Si schiude in
       inputAttributes: Attributi di ingresso
       mail: Posta
+      claimCosmeticDrop: Riscatta cosmetico
+      claimBlueprint: Riscatta progetto
     options:
       expandInventory: Espandi l'inventario
       showMaterials: Mostra materiali
@@ -453,7 +459,7 @@ singulars:
       owner: Proprietario
       jobs: Lavori
       routes: Percorsi
-      jobBoard: Bacheca dei lavori
+      jobBoard: Bacheca degli incarichi
       escape: Fuga
       tapToShowRoutes: Tocca per visualizzare i percorsi
       showingRoutesFrom: Destinazioni di viaggio da <object id="{from}"/>.
@@ -534,13 +540,13 @@ singulars:
       baseEfficiency: Efficienza base
       fromOverencumbered: Sovraccarico
       fromPets: Animali domestici
-      fromFineInputs: Ingressi raffinati
+      fromFineInputs: Ingressi pregiati
       fromEffects: Effetti attivi
       availableInput: (<c>{quantity}x</c> disponibili)
       requiresInput: Occorrono <hl>{quantity}x</hl> <object id="{keyword}"/>
       requiresInputWithLevel: 'Requisiti: <hl>{quantity}x</hl> <object id="{skill}"
         /> livello <c>{level}</c> <object id="{keyword}"/>'
-      fineInputBenefit: Vantaggi derivanti dall'uso di <c>ingressi raffinati</c>
+      fineInputBenefit: Vantaggi derivanti dall'uso di <c>ingressi pregiati</c>
       requirementsNotMetForInput: <object id="{item}"/> I requisiti non sono soddisfatti
       inputAttributes: Vantaggi derivanti dall'uso di <object id="{item}"/>
       allAttributes: Mostra tutti gli attributi
@@ -559,6 +565,10 @@ singulars:
       reputation: <bp /><object id="{faction}" /> reputazione <c>+{amount}</c>
       lore: <bp /><icon i="Lore item"/> <c>{count} oggetti della storia </c> che si
         possono trovare
+      petEggs: <bp /><icon i="Pet egg"/> <c>{count} uova di animali domestici</c>
+        con un nuovo animale domestico
+      cosmetics: <bp /><icon i="Wardrobe action"/> <c>{count} cosmetici</c> che possono
+        essere trovati
     options:
       completeUntilActions: Completa per una serie di azioni
       numberOfActions: Numero di azioni
@@ -629,8 +639,8 @@ singulars:
           tutti i materiali, desideri fare qualcosa?
   character:
     phrases:
-      skills: Competenze
-      checkOut: Ecco il mio personaggio {nome} in WalkScape . Dai un'occhiata!\nhttps://walkscape.app
+      skills: Abilità
+      checkOut: Ecco il mio personaggio {name} in WalkScape. Dai un'occhiata!\nhttps://walkscape.app
       stepsOfLastWeek: Passi degli ultimi 7 giorni
       checkOutSubject: Guarda i miei progressi su WalkScape!
       totalLevel: Livello totale delle abilità
@@ -806,6 +816,7 @@ singulars:
       inputsUsed: Dati utilizzati
       switchedToImportedGearSet: Passato ad un set di equipaggiamento importato
       stepsWhileYouWereAway: Cosa è successo mentre eri via
+      swapConverted: Convertito
   faction:
     phrases:
       openFaction: Apri fazione
@@ -851,7 +862,7 @@ singulars:
       forActivities: 'Per attività: '
       optionsAndFilters: Opzioni e filtri
       toolSlot: Slot strumento
-      default: Default
+      default: Predefinito
       level: 'Liv. '
       tools: Strumenti
       name: Nome
@@ -876,9 +887,9 @@ singulars:
         attualmente equipaggiato</c>.
       gearSetsDescription: I set di equipaggiamento consentono di passare rapidamente
         da un equipaggiamento all'altro.
-      gearSetManageDesc: Scegliete di seguito il set di equipaggiamento che desiderate
-        equipaggiare. Per creare, importare o modificare i vostri set di equipaggiamento,
-        potete premere <c i=0>Gestisci</c>.
+      gearSetManageDesc: Scegli di seguito il set di equipaggiamento che desideri
+        equipaggiare. Per creare, importare o modificare i tuoi set di equipaggiamento,
+        puoi premere <c i=0>Gestisci</c>.
       gearSetManageShortDesc: Per creare, importare o modificare i tuoi set di equipaggiamenti,
         puoi premere <c i=0>Gestisci</c>.
       noGearSetsManage: Non hai ancora creato alcun set di equipaggiamento. Crea il
@@ -925,9 +936,10 @@ singulars:
         </chip> ottenuto da <hl>{coins}</hl> monete
   journal:
     info:
-      jobInfo: I lavori sono <c>attività semplici e ripetibili</c> che puoi completare
-        per ottenere ricompense. Puoi accettare lavori dalle <c>bacheche dei lavori</c>
-        in varie località, come le città. Puoi avere tre lavori attivi contemporaneamente.
+      jobInfo: Gli incarichi sono <c>attività semplici e ripetibili</c> che puoi completare
+        per ottenere ricompense. Puoi accettare incarichi dalle <c>bacheche degli
+        incarichi</c> in varie località, come le città. Puoi avere tre incarichi attivi
+        contemporaneamente.
     phrases:
       jobs: Lavori
   jobs:
@@ -937,47 +949,110 @@ singulars:
       youMustBeInLocationToCollect: Per ricevere i premi devi trovarti in <object
         id="{obj}"/>.
       currentlyAcceptedJobs: Lavori attualmente accettati
-      browseJobBoards: Cerca lavori
-      cannotAcceptMore: Non puoi accettare altri lavori.
-      complete: Completare
+      browseJobBoards: Cerca incarichi
+      cannotAcceptMore: Non puoi accettare altri incarichi.
+      complete: Completa
       cannotWithdraw: La tua posizione attuale <object id="{obj}"/> non ha una banca.
-        Il prelievo di oggetti per i lavori è disabilitato.
-      acceptJob: Accetta lavoro
-      abandonJob: Abbandona il lavoro
+        Il prelievo di oggetti per gli incarichi è disabilitato.
+      acceptJob: Accetta incarico
+      abandonJob: Abbandona l'incarico
       openJournal: Apri il diario
       itemsFromInventory: Articoli dall'inventario
       itemsFromBank: Articoli dalla banca
-      hasNoItemsInBank: Non ci sono articoli idonei nella tua banca.
+      hasNoItemsInBank: Non ci sono oggetti idonei nella tua banca.
       collectRewards: Raccogli ricompense
       giveItems: Consegna oggetti
       hasNoBank: In questa località non è presente alcuna banca.
-      hasNoItemsInInventory: Non ci sono articoli idonei nel tuo inventario.
+      hasNoItemsInInventory: Non ci sono oggetti idonei nel tuo inventario.
       give: Consegna
-      refreshIn: 'La bacheca dei lavori verrà aggiornata tra:'
+      refreshIn: 'La bacheca degli incarichi verrà aggiornata tra:'
       travelToJobBoard: Viaggia verso <object id="{obj}"/>
-      noJobsAvailable: 'Al momento non ci sono posizioni aperte in questa sede. Nuove
-        posizioni aperte saranno disponibili in:'
+      noJobsAvailable: 'Al momento non ci sono incarichi disponibili qui. Nuovi incarichi
+        saranno disponibili tra:'
       availableJobs: Lavori disponibili
-      youMustBeInLocation: Per restituire gli articoli devi trovarti nella stessa
-        posizione di <object id="{obj}"/>.
-      jobAlreadyAccepted: Hai accettato questo lavoro.
-      availableJobInfo: Per accettare o completare gli incarichi, è necessario essere
-        presenti presso la loro sede.
+      youMustBeInLocation: Per restituire gli oggetti devi trovarti nello stesso luogo
+        di <object id="{obj}"/>.
+      jobAlreadyAccepted: Hai accettato questo incarico.
+      availableJobInfo: Per accettare o completare gli incarichi, devi trovarti sul
+        posto.
       atLocation: Disponibile a <object id="{obj}"/>
-      youAreAtLocation: Ti trovi nella posizione di questa bacheca di lavoro.
+      youAreAtLocation: Ti trovi nel luogo di questa bacheca degli incarichi.
+      noAcceptedJobs: Non hai incarichi in corso.
+      filterAccepted: In corso
+      filterAll: Tutti gli incarichi
+      deliver: Consegna
+      difficulty:
+        "easy": Facile
+        "mediocre": Media
+        "hard": Difficile
+        "extreme": Estrema
+      filterHere: Qui
+      filterCanFulfil: Completabili
+      filterInProgress: In corso
+      filters: Filtri
+      clearFilters: Rimuovi tutti i filtri
+      sort: Ordina
+      sortByBoard: Per bacheca
+      sortByProgress: Più vicini al completamento
+      sortHardest: Prima i più difficili
+      sortEasiest: Prima i più facili
+      rewardsTitle: Ricompense
+      difficultyTitle: Difficoltà
+      boardTitle: Bacheca degli incarichi
+      moreRewards: +<c>{count}</c> altri
+      orInstead: oppure
+      rewardsLabel: Ricompense
+      accepted: Accettato
+      handInAt: Consegna a {location}
+      rewardLineReputation: '{amount} di reputazione con {name}'
+      nothingActionableHere: Al momento non c'è niente da fare qui. Puoi accettare
+        incarichi da qualsiasi bacheca che hai visitato, ma per consegnarne uno devi
+        trovarti presso la bacheca.
+      noJobsMatchFilters: Nessun incarico corrisponde ai filtri. Prova a rimuoverne
+        qualcuno.
+      rewardLineCoins: '{amount} monete'
+      travelToHandIn: Consegna sul posto
+      filterActionable: Disponibili qui
+      readyToGive: Pronto da consegnare
+      toAbandon: da abbandonare
+      rewardLineXp: '{amount} di esperienza in {name}'
+      alternativeOption: '{count} × {quality}'
+      refreshesIn: 'Si aggiorna tra:'
+      acceptedJobsHere: <c>{count}</c> da consegnare qui
+      readyToHandIn: Pronto per la consegna
+      stateTravel: Viaggia
+      needMore: Ne servono altri {count}
+      readyFromBank: Pronto · {count} dalla tua banca
+      rewardsLabelCount: Ricompense ({count})
+      rewardLineItem: '{count} × {name}'
+      rewardLineOther: '{name}'
+      notVisited: Non ancora visitato
+      fromBank: dalla banca
+      staged: In attesa
+      unstage: Annulla
+      clearStaged: Svuota
+      confirmBatch: Conferma
+      toAccept: da accettare
+      toHandIn: da consegnare
     dialogs:
       abandonJob:
-        title: Abbandona il lavoro
-        text: Vuoi davvero abbandonare questo lavoro? Perderai tutti i progressi e
-          le ricompense derivanti da questo lavoro.
+        title: Abbandona l'incarico
+        text: Vuoi davvero abbandonare questo incarico? Perderai tutti i progressi
+          e le ricompense di questo incarico.
+    maps:
+      rewardKinds:
+        "item": Oggetti
+        "factionReputation": Reputazione
+        "coins": Monete
+        "skillExperience": Esperienza
   mainMenu:
     loadingStates:
       awaitingForRemoveConfig: In attesa di configurazione remota
       startingToLoadGame: Avvio del caricamento del gioco
       processingStepHistory: Calcolo dello storico dei passi
-      loadingGuideState: Stato della guida di caricamento
+      loadingGuideState: Caricamento dello stato della guida
       loadingPlayerData: Caricamento dei dati del giocatore
-      settingUpStepManager: Configurazione del gestore dei passaggi
+      settingUpStepManager: Configurazione del gestore dei passi
       settingUpTutorialManager: Configurazione del gestore dei tutorial
       settingUpOnlineSettingsManager: Configurazione del gestore delle impostazioni
         online
@@ -986,7 +1061,7 @@ singulars:
       startingProcesses: Avvio dei processi di gioco
       loadingGameData: Caricamento dei dati di gioco
       initializingGameData: Inizializzazione dei dati di gioco
-      loadingLocaleState: Caricamento dello stato locale
+      loadingLocaleState: Caricamento delle impostazioni della lingua
       loadingDevicePermissions: Caricamento delle autorizzazioni del dispositivo
       reportingErrorToSentry: Segnalazione di errori a Sentry
       startingEventManagerProcess: Avvio del processo di gestione degli eventi
@@ -996,18 +1071,18 @@ singulars:
       settingUpPlayerMetadata: Impostazione dei metadati del giocatore
       updatingStepReadTime: Aggiornamento del tempo di lettura dei passi
       changingMainCharacter: Cambiamento del personaggio principale
-      loadingStepHistoryData: Caricamento dei dati relativi alla cronologia delle
-        fasi
+      loadingStepHistoryData: Caricamento dei dati della cronologia dei passi
       startingErrorManagerProcess: Avvio del processo di gestione degli errori
       startingNetworkProcess: Avvio del processo di rete
       startingGameManagerProcess: Avvio del processo di gestione del gioco
       startingAuthProcess: Avvio del processo di autenticazione
-      startingTimeManagerProcess: Avvio del processo di gestione dell'ora di inizio
+      startingTimeManagerProcess: Avvio del processo di gestione del tempo
       startingNotificationManagerProcess: Avvio del processo di gestione delle notifiche
-      startingOTAManagerProcess: Avvio del processo di gestione patrimoniale
-      spawningIsolate: Isolamento della riproduzione...
+      startingOTAManagerProcess: Avvio del processo di gestione delle risorse
+      spawningIsolate: Avvio di un processo...
       startingSettingsManagerProcess: Avvio del processo di gestione delle impostazioni
       startingSentry: Avvio di Sentry...
+      precomputing: Pre-elaborazione dei dati di gioco
     phrases:
       pleaseWait: Attendere prego...
       loadingGame: Caricamento del gioco in corso... attendere prego!
@@ -1042,8 +1117,8 @@ singulars:
       googlePlay: Aggiornamento da Google Play
       restart: Riavvia
     isolates:
-      mainIsolate: Isolate principale
-      workerIsolate: Lavoratore Isolato
+      mainIsolate: Processo principale
+      workerIsolate: Processo in background
   settings:
     categories:
       dataSource:
@@ -1109,6 +1184,7 @@ singulars:
         Attualmente, solo il telefono è supportato come fonte di conteggio dei passi.
       gameVersion: Versione del gioco {version}
       updateAvailableSources: Aggiorna sorgenti disponibili
+      lastCloudSave: 'Ultimo salvataggio sul server: {lastSave}'
   bank:
     phrases:
       noItemsBank: Nessun elemento nel tuo conto bancario.
@@ -1116,8 +1192,8 @@ singulars:
         Puoi utilizzare la banca solo dopo esserti recato in un luogo in cui è presente
         una banca.
       noItemsInventory: Nessun oggetto nel tuo inventario.
-      deposit: Depositare
-      withdraw: Ritirare
+      deposit: Deposita
+      withdraw: Preleva
     defaultLayout:
       tabs:
         materials: Materiali
@@ -1126,7 +1202,7 @@ singulars:
         consumables: Consumabili
         misc: Vario
       categories:
-        arrows: Freccie
+        arrows: Frecce
         bars: Barre
         rawFish: Pesce crudo
         gems: Gemme
@@ -1140,7 +1216,7 @@ singulars:
         trinkets: Ciondoli
         curiosity: Curiosità
         materialsMisc: Varie
-        gearCape: Capo
+        gearCape: Mantello
         gearHead: Testa
         gearBack: Schiena
         gearHands: Mani
@@ -1156,6 +1232,272 @@ singulars:
         toolsCooking: Cucina
         toolsCrafting: Artigianato
         toolsFishing: Pesca
+        toolsSmithing: Forgiatura
+        toolsForaging: Raccolta
+        toolsHunting: Caccia
+        toolsMining: Estrazione
+        toolsTailoring: Sartoria
+        toolsTrinketry: Oreficeria
+        toolsWoodcutting: Taglio del legno
+        toolsGlobal: Globale
+        toolsTraveling: Viaggio
+        toolsRegional: Regionale
+        cookedFish: Pesce cotto
+        fishingBaits: Esche da pesca
+        foods: Cibi
+        drinks: Bevande
+        petEggs: Uova di animali domestici
+    multiSelect:
+      moveHint: In modalità selezione multipla puoi toccare per selezionare più oggetti
+        diversi contemporaneamente. Puoi trascinarli per organizzarli in modalità
+        modifica, oppure usare il menu contestuale sulle intestazioni delle categorie
+        per spostarli in un'altra categoria.
+      selectedCount: '{count} selezionati'
+      withdrawSelected: Preleva
+      depositSelected: Deposita
+      moveSelectedHere: Sposta {count} qui
+      selectAll: Seleziona tutto
+      deselectAll: Deseleziona tutto
+    layout:
+      searchNoResults: La ricerca non ha prodotto risultati
+      reorderBlockedSort: Rimuovi l'ordinamento per riordinare gli oggetti
+      applyComplete: Operazioni bancarie completate
+      settingCondensedList: Vista elenco compatta
+      reorderBlockedSearch: Cancella la ricerca per riordinare gli oggetti
+      reorderBlockedActive: Cancella ricerca, filtri e ordinamento per riordinare
+        gli oggetti
+      sortModes:
+        coinValue: Valore in monete
+        alphabetical: Alfabetico
+        rarity: Rarità
+        levelRequirement: Livello richiesto
+        mostRecent: Più recenti
+        defaultOrder: Predefinito
+        quantity: Quantità
+      discardChangesTitle: Annullare le modifiche?
+      settingLockUnfilteredCategories: Blocca gli oggetti nelle categorie senza filtri
+      settingConfirmBeforeApply: Rivedi prima di completare
+      inventoryFilterTitle: Filtra inventario
+      reorderBlockedFilter: Rimuovi i filtri per riordinare gli oggetti
+      filterAttributeNames:
+        fineMaterialFind: Ritrovamento di materiali pregiati
+        findCollectibles: Ritrovamento di collezionabili
+        doubleAction: Doppia azione
+        randomEncounters: Incontri casuali
+        workEfficiency: Efficienza lavorativa
+        chestFind: Ritrovamento di forzieri
+        findGems: Ritrovamento di gemme
+        findBirdNests: Ritrovamento di nidi d'uccello
+        doubleRewards: Ricompense doppie
+        bonusExperience: Esperienza bonus
+        qualityOutcome: Risultato creazione
+        bonusMoney: Monete bonus
+        extraLootRolls: Tiri extra per bottino
+        rollSpecialTable: Tiri su tabella speciale
+        travelingDistance: Distanza di viaggio
+        stepsRequired: Passi richiesti
+        inventorySpace: Spazio dell'inventario
+        fineMaterialOutcome: Risultato materiali pregiati
+        skillLevel: Livello abilità
+        noMaterialsConsumed: Nessun materiale consumato
+        doubleItem: Oggetto doppio
+        dropAsFine: Ritrovamento pregiato
+        swapItem: Conversione oggetto
+      picker:
+        lockItemsDesc: Mantieni al loro posto gli oggetti di questa categoria durante
+          l'organizzazione automatica.
+        rowBackground: Sfondo
+        rowIcon: Icona
+        rowColour: Colore
+        rowFilters: Filtri
+        nameLabel: Nome
+        searchIcons: Cerca icone
+        preview: Anteprima
+        confirm: Conferma
+        valueNone: Nessuno
+        rowName: Nome
+        sectionNameTitle: Modifica nome
+        sectionIconTitle: Scegli icona
+        sectionColourTitle: Scegli colore
+        sectionBackgroundTitle: Scegli sfondo
+        sectionFiltersTitle: Filtri
+        shapeNone: Nessuna
+        shapeCircle: Cerchio
+        shapeRoundedRect: Arrotondato
+        shapeSquare: Quadrato
+        showIfEmptyLabel: Mostra anche se vuota
+        showIfEmptyDesc: Mantieni visibile questa categoria anche quando non contiene
+          oggetti.
+        lockItemsLabel: Blocca oggetti
+      cannotDeleteLastTabBody: Devi mantenere almeno una scheda.
+      reorderBlockedBoth: Cancella la ricerca e rimuovi i filtri per riordinare gli
+        oggetti
+      depositedAll: Tutti gli oggetti sono stati depositati
+      createFromBlankHint: Una scheda vuota da organizzare a tuo piacimento
+      deleteLayoutBody: '{name} verrà eliminato definitivamente.'
+      settingShowPlaceholders: Mostra segnaposto in modalità modifica
+      settingAlwaysSaveTransactions: Conferma automaticamente le operazioni all'uscita
+      processing: "Elaborazione e salvataggio sul cloud\n\nAttendere..."
+      cannotDeletePrimaryTabBody: Questa è la scheda predefinita in cui finiscono
+        gli oggetti non ordinati. Non può essere eliminata.
+      settingsConfirmationsTitle: Conferme
+      filterTraveling: Viaggio
+      filterTitle: Filtra oggetti
+      sortModesTitle: Ordina per
+      filterAttributesTitle: Attributi
+      filterEnable: Attiva filtri
+      filterSkillsTitle: Abilità
+      clearAllFilters: Rimuovi tutti i filtri
+      filterGlobalTitle: Generale
+      filterTypesTitle: Tipi di oggetto
+      filterQualityTitle: Qualità
+      filterHighestQuality: Solo qualità più alta
+      filterRareEgg: Uovo raro
+      filterMiscTitle: Varie
+      narrowedDragHint: Puoi trascinare gli oggetti in altre categorie e schede. Cancella
+        ricerca, filtri e ordinamento per riordinarli all'interno di una stessa categoria.
+      changesSaved: Le modifiche sono state salvate
+      inventoryTitle: Inventario
+      inventoryEmpty: Il tuo inventario è vuoto
+      withdrawStaged: '{count} in attesa'
+      applyWithdrawals: Completa
+      applyNotAtBank: Devi essere in una banca per prelevare
+      applyNotAtBankDeposit: Devi essere in una banca per depositare
+      withdrawAvailable: '{count} in banca'
+      withdrawLimit: Puoi prelevarne al massimo {count} alla volta
+      withdrawNotAtBank: Non puoi prelevare oggetti se non sei in una banca
+      inspectEmpty: Nessun oggetto in attesa
+      inspectWithdrawing: In prelievo
+      inspectDepositing: In deposito
+      addCategory: Aggiungi categoria
+      newCategory: Nuova categoria
+      addTab: Aggiungi scheda
+      newTab: Nuova scheda
+      noItemsYet: Ancora nessun oggetto
+      emptyTab: Qui non ci sono ancora oggetti. Li vedrai qui dopo aver depositato
+        qualcosa.
+      emptyBank: La tua banca è vuota
+      filters:
+        add: Aggiungi filtro
+        cancel: Annulla
+        noMatches: Nessuna corrispondenza
+        search: Cerca {kind}
+        kindItemType: Tipo di oggetto
+        kindKeyword: Parola chiave
+        labelSkill: 'Abilità: {value}'
+        kindSkill: Abilità
+        labelGlobal: Globale
+        kindGlobal: Globale
+        kindRegional: Regionale
+        labelItemType: 'Tipo di oggetto: {value}'
+        labelGearType: 'Tipo di equipaggiamento: {value}'
+        labelRegional: Regionale
+        labelKeyword: 'Parola chiave: {value}'
+        kindGearType: Tipo di equipaggiamento
+        title: Filtri
+        empty: Ancora nessun filtro
+      actionLeaveAndSave: Esci e salva
+      actionLeaveWithoutSaving: Esci
+      actionLeaveAndTransfer: Esci e trasferisci
+      actionLeaveWithoutTransferring: Esci
+      rename: Rinomina
+      export: Esporta
+      layoutExported: Layout copiato negli appunti
+      inspectSummary: '{stacks} pile · {items} oggetti'
+      inspectInventory: 'Inventario: {used}/{max} slot'
+      increase: Aggiungi {count}
+      decrease: Rimuovi {count}
+      uncategorized: Senza categoria
+      itemsReassigned: Gli oggetti sono stati riordinati in base ai filtri
+      withdrawComplete: Oggetti prelevati nel tuo inventario
+      depositComplete: Oggetti depositati nella tua banca
+      depositAvailable: "{count} nell'inventario"
+      depositStaged: '{count} in attesa'
+      depositNotAtBank: Non puoi depositare oggetti se non sei in una banca
+      editBlockedPending: Preleva gli oggetti in attesa prima di modificare
+      savingLayout: "Salvataggio del layout della banca sul cloud\n\nAttendere..."
+      slotName: Layout {index}
+      switchLayout: Cambia layout
+      chooseLayout: Scegli un layout
+      renameLayout: Rinomina layout
+      renameLayoutTitle: Rinomina layout
+      activeLayout: Attivo
+      switchBlockedEditing: Termina la modifica prima di cambiare layout
+      layoutsTitle: Layout
+      defaultName: Predefinito
+      defaultHint: Layout predefinito della banca, sempre disponibile.
+      emptySlot: Slot layout vuoto {index}/{total}
+      slotsFull: Tutti gli slot dei layout sono occupati. Eliminane uno per fare spazio.
+      createLayoutTitle: Nuovo layout
+      layoutCreated: Layout creato
+      createFromTitle: Crea un nuovo layout da...
+      createFromDefault: Layout predefinito
+      createFromDefaultHint: Una copia della disposizione predefinita
+      createFromBlank: Layout vuoto
+      createFromImport: Importa dagli appunti
+      createFromImportHint: Incolla un layout che hai esportato o ricevuto
+      importFailed: Nessun layout valido trovato negli appunti.
+      deleteLayoutTitle: Eliminare il layout?
+      layoutDeleted: Layout eliminato
+      blankTabName: Oggetti
+      inspect: Rivedi le operazioni in attesa
+      inspectTitle: Operazioni in attesa
+      editCategory: Modifica categoria
+      editTab: Modifica scheda
+      deleteTab: Elimina scheda
+      options: Opzioni
+      discardChangesBody: Hai modifiche non salvate al layout della banca. Se esci
+        ora, andranno perse.
+      exitWithdrawTitle: Uscire senza prelevare?
+      exitWithdrawBody: Hai oggetti in attesa di prelievo che non sono ancora stati
+        prelevati. Se esci ora, torneranno nella tua banca.
+      leaveTransactionsTitle: Lasciare la banca?
+      leaveTransactionsBody: Hai oggetti in attesa di trasferimento non ancora completati.
+      leaveEditsTitle: Uscire dalla modifica?
+      leaveEditsBody: Hai modifiche non salvate al layout della banca.
+      exitEditTitle: Terminare la modifica?
+      exitEditBody: Hai modifiche non salvate al layout della banca.
+      actionDiscardChanges: Annulla modifiche
+      actionSaveChanges: Salva modifiche
+      deleteCategoryTitle: Eliminare la categoria?
+      deleteCategoryBody: Gli oggetti di questa categoria verranno spostati in Senza
+        categoria.
+      deleteTabTitle: Eliminare la scheda?
+      deleteTabBody: Questa scheda verrà rimossa dalla tua banca.
+      cannotDeleteTabTitle: Impossibile eliminare la scheda
+      actionKeepEditing: Continua a modificare
+      rememberLeaveAndSave: Salva sempre senza chiedere
+      rememberLeaveAndTransfer: Trasferisci sempre senza chiedere
+      cannotDeleteTabBody: Si possono eliminare solo le schede vuote. Prima sposta
+        o rimuovi i suoi oggetti.
+      settingsResetView: Ripristina visualizzazione
+      sortTitle: Ordina oggetti
+      sortAscending: Crescente
+      sortDescending: Decrescente
+      settingAlwaysSaveEdits: Salva automaticamente le modifiche al layout all'uscita
+      inventoryFilterTypesTitle: Tipi di oggetto
+      inventoryFilterVisibilityTitle: Visibilità
+      inventoryFilterShowFavorited: Mostra preferiti
+      inventoryFilterShowLocked: Mostra bloccati
+      filterNoResults: Nessun risultato corrisponde ai filtri
+      reorder: Riordina
+      tabMostRecent: Più recenti
+      tabFavorites: Preferiti
+      settingsTitle: Impostazioni banca
+      settingsEmpty: Altre impostazioni in arrivo.
+      settingsDisplayTitle: Visualizzazione
+      settingsBehaviorTitle: Comportamento
+      settingShowTypeIcons: Mostra icone del tipo di oggetto
+      settingShowFavorites: Mostra indicatori dei preferiti
+      settingShowTabQuantity: Mostra il numero di oggetti nelle schede
+      settingShowCategoryQuantity: Mostra il numero di oggetti nelle categorie
+      settingShowGradients: Mostra sfumature degli oggetti
+      settingShowMostRecentTab: Mostra la scheda Più recenti
+      settingShowFavoritesTab: Mostra la scheda Preferiti
+      settingGridColumns: Colonne della griglia
+      settingSwapTapActions: Inverti tocco e pressione prolungata
+      settingAlwaysStartCollapsed: Mostra sempre compresso all'avvio
+      settingAnimateCollapse: Anima la compressione
   shop:
     phrases:
       sold: Venduto
@@ -1256,10 +1598,13 @@ singulars:
       hideAll: Nascondi tutto
       routes: Mostra percorsi
       playerCharacter: Mostra il tuo personaggio
+      serviceIcons: Mostra icone dei servizi
+      cosmeticServiceIcons: Mostra servizi estetici
   download:
     phrases:
       downloadingAssets: Scaricamento delle risorse in corso...
       downloadedFileCount: Scaricati <c i=0>{current}</c> di <c i=1>{total}</c> file
+      finalizingAssets: Completamento in corso, attendere...
   leaderboards:
     phrases:
       friends: Amici
@@ -1285,6 +1630,7 @@ singulars:
       enterAtLeastChars: Inserisci almeno 3 caratteri per effettuare la ricerca.
       pendingInvites: Inviti in sospeso
       friends: Amici
+      anonymousWalker: Camminatore anonimo
   pets:
     phrases:
       noPetSummoned: Al momento non è stato evocato alcun animale domestico. <c>Evoca
@@ -1406,13 +1752,14 @@ singulars:
   attributeListing:
     phrases:
       allAttributes: Tutti gli attributi
-      overlevelingWithNumber: Il livello di competenza è <c>+{livello}</c> superiore
+      overlevelingWithNumber: Il livello di competenza è <c>+{level}</c> superiore
         al requisito.
       overlevelingFromAgility: Dal livello <c>{level}</c> di <object id="agility"
         />.
       noAttributes: Nessun attributo attivo.
       noAttributesTip: Non hai attributi attivi provenienti da equipaggiamento, strumenti
         o altre fonti, oppure i tuoi filtri non hanno restituito alcun attributo corrispondente.
+      andMoreItems: <bp />e altri <c>{count}</c>
     options:
       showInactiveAttributes: Mostra gli attributi inattivi
   party:
@@ -1445,7 +1792,7 @@ singulars:
         ottenuti. I record contrassegnati con <c>Nuovo</c> non sono ancora stati aperti.
     types:
       activity: Attività
-      traveling: Viaggiare
+      traveling: Viaggio
       crafting: Artigianato
       idle: Inattivo
   mailbox:
@@ -1469,6 +1816,18 @@ singulars:
         subject: Buon terzo compleanno!
         text: Beh, guarda chi compie tre anni! Non lasciarti sopraffare dall'oscurità,
           ecco qualcosa per te, così non cederai alle forze del male.\n\n- Herbert
+      tradeRejected:
+        text: Le trattative di scambio con <c><bold>{characterName}</bold></c> sono
+          state rifiutate e la tua offerta ti è stata rimborsata.
+        subject: Scambio con {characterName} rifiutato
+      tradeCompleted:
+        text: Le trattative di scambio con <c><bold>{characterName}</bold></c> si
+          sono concluse con successo! <action id="receipt">Visualizza ricevuta</action>\n\nIn
+          cambio della tua offerta hai ricevuto
+        subject: Scambio con {characterName} completato
+        textNothingReceived: Le trattative di scambio con <c><bold>{characterName}</bold></c>
+          si sono concluse con successo! <action id="receipt">Visualizza ricevuta</action>\n\nNon
+          hai ricevuto nulla in cambio.
     info:
       notAtMailbox: Al momento non ti trovi in un luogo dotato di cassetta postale.
         Puoi ritirare la tua posta solo quando ti trovi in un luogo dotato di cassetta
@@ -1523,3 +1882,13 @@ singulars:
       coinsEarnedSelling: Monete guadagnate con la vendita
       coinsSpentBuying: Monete spese per acquisti
       incomeFromSelling: Ricavi da vendite
+  ironfoot:
+    phrases:
+      relinquishWarning: Il tuo personaggio è attualmente un <c>Ironfoot</c>. Per
+        fare scambi con altri giocatori, devi rinunciare allo status di <c>Ironfoot</c>.
+        L'operazione è irreversibile.
+      selfIronfoot: Il tuo personaggio è un <c><bold>Ironfoot</bold></c>
+      cannotTradeWith: I personaggi <c><bold>Ironfoot</bold></c> non possono essere
+        invitati a uno scambio.
+    buttons:
+      relinquish: Rinuncia a Ironfoot
