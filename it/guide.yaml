@@ -23,7 +23,7 @@ maps:
       le opzioni di viaggio.
     "7": Puoi trovare i <hl>traguardi</hl> e gli <hl>oggetti collezionabili</hl> ottenuti
       toccando il tuo personaggio in alto a sinistra.
-    "8": Gli oggetti collezionabili che trovi ti danno 1 <hl>punto risultato</hl>
+    "8": Gli oggetti collezionabili che trovi ti danno 1 <hl>punto obiettivo</hl>
       extra per ogni oggetto!
     "9": Molti PNG possono raccontarti <hl>voci</hl> che ti aiutano a trovare oggetti
       nel gioco.
@@ -58,8 +58,8 @@ maps:
       su <a href="https://www.patreon.com/WalkScape" c="yellow">Patreon</a> e <a href="https://buymeacoffee.com/walkscape"
       c="yellow">Buy Me A Coffee</a>!
     "21": Le attività di caccia che richiedono risorse ottengono <hl>bonus</hl> utilizzando
-      le versioni <hl>RAFFINATE</hl> di tali risorse! Controlla l'interfaccia per
-      scoprire quali vantaggi offrono!
+      le versioni <hl>PREGIATE</hl> di tali risorse! Controlla l'interfaccia per scoprire
+      quali vantaggi offrono!
   skillTypes:
     "gathering": Le abilità di raccolta includono <skill skill="foraging"/>,<skill
       skill="fishing"/>,<skill skill="hunting"/>,<skill skill="mining"/> e <skill
@@ -78,25 +78,25 @@ singulars:
       la ricerca nella banca per trovare rapidamente gli oggetti. È possibile effettuare
       la ricerca per <c i=0>nome, parole chiave, abilità o slot</c>.\n\n<c i=0>La
       tua banca ha spazio illimitato!</c>\n\nPuoi anche utilizzare il pulsante <icon
-      i=\"Favourite\"/> <c i=1>Preferiti</c> per visualizzare solo i tuoi oggetti
+      i=\"Favorited\"/> <c i=1>Preferiti</c> per visualizzare solo i tuoi oggetti
       preferiti."
     lockFavoriteItem: "<icon i=\"Favorited\"/> <c i=0>Preferito</c>: Non puoi abbandonare
-      né vendere questo oggetto. Puoi comunque utilizzarlo per la creazione, i lavori
+      né vendere questo oggetto. Puoi comunque utilizzarlo per la creazione, gli incarichi
       e altre azioni.\n\n<icon i=\"Locked\"/> <c i=1>Blocco</c>: non puoi vendere,
       abbandonare o depositare questo oggetto finché è bloccato. Puoi comunque utilizzarlo
-      per la creazione di oggetti, i lavori e altre azioni.\n\nIl blocco o l'aggiunta
+      per la creazione di oggetti, gli incarichi e altre azioni.\n\nIl blocco o l'aggiunta
       ai preferiti di un oggetto si applica a tutti gli oggetti simili presenti nel
       tuo inventario e nella banca. Puoi sbloccare o rimuovere dagli oggetti preferiti
       anche quelli presenti nel tuo inventario o nella banca."
     inventoryUsage: "Una pressione prolungata su una pila di oggetti <c i=0>aprirà
       la modalità di selezione multipla</c>, consentendoti di selezionare più pile
-      contemporaneamente per rilasciarle o depositarle.\n\nIl pulsante <c i=0>Opzioni</c>
+      contemporaneamente per abbandonarle o depositarle.\n\nIl pulsante <c i=0>Opzioni</c>
       nella parte inferiore ti consente di modificare la modalità di visualizzazione
       delle pile di oggetti.\n\n<bp /><icon i=\"Deposit\" /> <hl>Tutto</hl>: deposita
       tutti gli oggetti nel tuo inventario in banca, se disponibile nella tua posizione.\n\
       \n<bp /><icon i=\"Bank small\" /> <hl>Banca</hl>: apre la tua banca e ti consente
       di effettuare depositi o prelievi, se disponibili nella tua posizione.\n\n<bp
-      /><icon i=\"Ordina\" /> <hl>Ordina</hl>: ordina il tuo inventario.\n"
+      /><icon i=\"Sort\" /> <hl>Ordina</hl>: ordina il tuo inventario.\n"
     claimPet: Una volta reclamato il tuo animale domestico, questo verrà aggiunto
       alla tua collezione e potrai farlo nascere e invocarlo in qualsiasi momento.
       Non è possibile scambiare gli animali domestici reclamati, poiché diventano
@@ -104,19 +104,57 @@ singulars:
     attributeTypes: "<bp /><icon i=\"Gear alt\"/>  <c i=0>Equipaggiamento indossato</c>:
       attributi dell'equipaggiamento attualmente indossato.\n\n<bp /><icon i=\"Tools
       alt\"/>  <c i=1>Strumenti equipaggiati</c>: attributi degli strumenti attualmente
-      equipaggiati.\n\n<bp /><icon i=\"Collectible\"/>  <c i=2>Oggetti da collezione</c>:
-      attributi permanenti degli oggetti da collezione.\n\n<bp /><icon i=\"Dev services\"\
-      />  <c i=3>Servizi</c>: attributi dei servizi nella tua posizione attuale.\n\
-      \n<bp /><icon i=\"Animali domestici\"/>  <c i=4>Animali domestici</c>: attributi
-      dal tuo animale domestico evocato.\n\n<bp /><icon i=\"Materiale pregiato\"/>\
-      \  <c i=5>Bonus input materiale pregiato</c>: bonus derivante dall'uso di materiali
-      pregiati.\n\n<bp /><icon i=\"Materiali\"/>  <c i=6>Input materiali</c>: attributi
-      dai materiali di input selezionati per un'attività.\n\n<bp /><icon i=\"Consumabili\"\
-      />  <c i=7>Consumabili</c>: attributi derivanti dai tuoi consumabili che vengono
-      consumati.\n\n<bp /><icon i=\"Salita di livello\"/>  <c i=8>Livello abilità</c>:
-      attributi derivanti dal tuo livello di abilità (ad es. superare il requisito
-      di livello di abilità).\n\n<bp /><icon i=\"Abilities\"/>  <c i=9>Abilità</c>:
-      attributi delle tue abilità.\n\n<bp /><icon i=\"Player effect\"/>  <c i=10>Effetti
-      attivi</c>: attributi degli effetti attualmente attivi.\n"
+      equipaggiati.\n\n<bp /><icon i=\"Collectible\"/>  <c i=2>Collezionabili</c>:
+      attributi permanenti dei collezionabili.\n\n<bp /><icon i=\"Dev services\"/>\
+      \  <c i=3>Servizi</c>: attributi dei servizi nella tua posizione attuale.\n\n\
+      <bp /><icon i=\"Pets\"/>  <c i=4>Animali domestici</c>: attributi dal tuo animale
+      domestico evocato.\n\n<bp /><icon i=\"Fine material\"/>  <c i=5>Bonus input
+      materiale pregiato</c>: bonus derivante dall'uso di materiali pregiati.\n\n\
+      <bp /><icon i=\"Material\"/>  <c i=6>Input materiali</c>: attributi dai materiali
+      di input selezionati per un'attività.\n\n<bp /><icon i=\"Consumables\"/>  <c
+      i=7>Consumabili</c>: attributi derivanti dai tuoi consumabili che vengono consumati.\n\
+      \n<bp /><icon i=\"Level up\"/>  <c i=8>Livello abilità</c>: attributi derivanti
+      dal tuo livello di abilità (ad es. superare il requisito di livello di abilità).\n\
+      \n<bp /><icon i=\"Abilities\"/>  <c i=9>Abilità</c>: attributi delle tue abilità.\n\
+      \n<bp /><icon i=\"Player effect\"/>  <c i=10>Effetti attivi</c>: attributi degli
+      effetti attualmente attivi.\n"
     mailbox: Puoi ritirare dalla tua casella di posta gli oggetti che ricevi dagli
       eventi, dagli scambi con altri giocatori e così via.
+    claimCosmeticDrop: Riscattare un cosmetico da bottino <c>lo consuma</c> e sblocca
+      in modo permanente il cosmetico per il tuo personaggio, così potrai indossarlo
+      dal guardaroba. L'operazione non può essere annullata e un cosmetico già sbloccato
+      non verrà più trovato.
+    claimBlueprint: Riscattare un progetto <c>lo consuma</c> e sblocca in modo permanente
+      le ricette che insegna. Puoi possedere una sola copia di ciascun progetto e
+      il riscatto non può essere annullato.
+    swapXpFromEffort: 'Questo attributo converte gli oggetti in esperienza. Ecco cosa
+      ottieni dai diversi oggetti:'
+    swapToItemSources: 'Questo attributo converte questi oggetti quando li trovi:'
+    swapToXpSources: 'Questo attributo converte questi oggetti in esperienza quando
+      li trovi:'
+    swapToTablesSources: 'Questo attributo converte questi oggetti in un ritrovamento
+      speciale quando li trovi:'
+    worldMapIcons: "<image id=\"bank\"/> <hl>Banca</hl>: deposita e preleva oggetti.\n\
+      \n<image id=\"deposit\"/> <hl>Cassetta di deposito</hl>: permette solo di depositare
+      oggetti.\n\n<image id=\"store\"/> <hl>Negozio</hl>: compra e vendi di tutto!\n\
+      \n<image id=\"mysteriousMerchant\"/> <hl>Mercante Misterioso</hl>: un raffinato
+      fornitore di merci esotiche.\n\n<image id=\"barber\"/> <hl>Barbiere</hl> e <image
+      id=\"wardrobe\"/> <hl>Guardaroba</hl>: cambia il tuo aspetto.\n\n<image id=\"\
+      forge\"/> <image id=\"kitchen\"/><image id=\"workshop\"/> <image id=\"sawmill\"\
+      /><image id=\"loom\"/> <image id=\"trinketry\"/> <hl>Stazioni di creazione</hl>:
+      crea ricette di forgiatura, cucina, artigianato, falegnameria, sartoria e oreficeria.\n\
+      \nIl colore del bordo di un'icona indica il livello del servizio: <image id=\"\
+      forge\"/> <serviceTier tier=\"basic\"/> o <image id=\"forgeAdvanced\"/> <serviceTier
+      tier=\"advanced\"/>.\n\n<icon path=\"assets/icons/location_badges/unexplored_badge.png\"\
+      \ size=\"16\"/> <hl>Inesplorato</hl>: non hai ancora visitato questo luogo.\n\
+      \n<icon path=\"assets/icons/location_badges/rumor_badge.png\" size=\"16\"/>
+      <hl>Voci</hl>: hai sentito delle voci su questo luogo."
+    trading: "Visualizza tutti gli scambi attivi e il loro stato.\n<bp/> Puoi fare
+      scambi da qualsiasi luogo. Gli oggetti aggiunti a uno scambio vengono prelevati
+      dalla tua <icon i=\"Bank small\"/> banca e, se li rimuovi dallo scambio, vi
+      ritornano. Gli scambi si avviano selezionando un personaggio nelle classifiche
+      o nei menu social.\n<bp/> Uno scambio è completato quando entrambi i partecipanti
+      hanno <icon i=\"Accept\"/> accettato le offerte sul tavolo. Qualsiasi modifica
+      dell'altra parte richiede che tu accetti di nuovo. Gli oggetti di uno scambio
+      completato vengono inviati alla tua casella di posta.\n<bp/> Puoi avere un solo
+      scambio attivo alla volta con ciascun giocatore.\n"
