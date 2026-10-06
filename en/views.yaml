@@ -383,7 +383,7 @@ singulars:
       nextRewardUnlocked: "Next reward unlocked:"
   journal:
     info:
-      jobInfo: Jobs are <c>simple and repeatable tasks</c> that you can complete to gain rewards. You can accept jobs from <c>job boards</c> in various locations, like cities. You can have three active jobs at a time.
+      jobInfo: Jobs are <c>simple and repeatable tasks</c> that you can complete to gain rewards. You can accept jobs from <c>job boards</c> in various locations, like cities. You can have {count} active jobs at a time.
     phrases:
       jobs: Jobs
   treasury:
@@ -444,6 +444,8 @@ singulars:
       unstage: Undo
       clearStaged: Clear
       confirmBatch: Confirm
+      chooseHandIn: Choose which items to hand in
+      confirmAndClose: Confirm & close
       toAccept: to accept
       toHandIn: to hand in
       toAbandon: to abandon
@@ -459,7 +461,7 @@ singulars:
         "hard": Hard
         "extreme": Extreme
       filterHere: Here
-      filterCanFulfil: Can fulfil
+      filterCanFulfil: Have the items
       filterInProgress: In progress
       filters: Filters
       clearFilters: Clear all filters
@@ -474,6 +476,7 @@ singulars:
       boardTitle: Job board
       moreRewards: +<c>{count}</c> more
       orInstead: or
+      aJob: A job
       alternativeOption: "{count} × {quality}"
     maps:
       rewardKinds:
@@ -481,10 +484,25 @@ singulars:
         "factionReputation": Reputation
         "coins": Coins
         "skillExperience": Experience
+    rejections:
+      unknownJob: "{job} is no longer on the board, so it was taken back."
+      alreadyAccepted: "{job} is already accepted."
+      alreadyTaken: "{job} has already been done this week."
+      notAccepted: "{job} is no longer accepted, so it was taken back."
+      noFreeSlots: "No free job slot for {job}. Hand in or abandon a job first."
+      notEnoughItems: "Not enough items left to hand in {job}."
+      locationNotVisited: "Visit the job board before taking {job}."
+      notAtLocation: "{job} can only be handed in at its job board."
+      goalBroken: "{job} asks for an item that no longer exists."
+      counterNotMet: "{job} is not finished yet."
+      notApplied: "{job} could not be changed. Try again."
     dialogs:
       abandonJob:
         title: Abandon job
         text: Are you sure you want to abandon this job? You will lose all progress and rewards from this job.
+      leaveUnconfirmed:
+        title: Unconfirmed changes
+        text: Your job changes are not confirmed yet. Confirm them before closing, or discard them?
   shop:
     phrases:
       bought: Bought
