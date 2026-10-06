@@ -86,16 +86,18 @@ maps:
       'showRecipesServicesAreMet': Piilota, jos et ole oikean palvelun luona
       'showCompletedAchievements': Näytä suoritetut saavutukset
       'showRecipesRequirementsAreMet': Piilota, jos taitosi eivät vielä riitä
-      'alwaysStopWhenInventoryFull': Keskeytä aktiviteetti oletuksena repun ylitäyttyessä
+      'alwaysStopWhenInventoryFull': Keskeytä aktiviteetti oletuksena repun 
+        ylitäyttyessä
       'leftHandedMode': Vasenkätinen tila
       'inventoryCollapsed': Tiivistä reppunäkymä
       'spriteOutlines': Piirrä ääriviivat
       'showFpsCounter': Näytä FPS-mittari
       'shaderOutlineRendering': Piirrä ääriviivat varjostimin
-      'warningBeforeClaimingExperience': Näytä varoitus ennen kokemuksen vastaanottamista
-        palkintona
+      'warningBeforeClaimingExperience': Näytä varoitus ennen kokemuksen 
+        vastaanottamista palkintona
       'showDailyTips': Näytä päivän pikkuvinkit
-      'showStepSourceInActivityView': Näytä askelten lähteen valinta Toiminta-näkymässä
+      'showStepSourceInActivityView': Näytä askelten lähteen valinta 
+        Toiminta-näkymässä
       'activityInformationOpen': Näytä lisätietoa toiminnasta
       'toggleAgilityXp': Estä ketteryyskokemus matkustamisesta
     leaderboardFilter:
@@ -289,18 +291,18 @@ plurals:
   inventory:
     info:
       consumableDuration:
-        one: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
-          askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
-          <c>{actions} toiminnon</c>.
-        other: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
-          askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
-          <c>{actions} toimintoa</c>.
-        zero: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
-          askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
-          <c>{actions} toimintoa</c>.
-        two: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii <c>{steps}</c>
-          askelta per toiminto. Valittu hyödykkeiden määrä riittäisi vahvistamaan
-          <c>{actions} toimintoa</c>.
+        one: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii 
+          <c>{steps}</c> askelta per toiminto. Valittu hyödykkeiden määrä 
+          riittäisi vahvistamaan <c>{actions} toiminnon</c>.
+        other: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii 
+          <c>{steps}</c> askelta per toiminto. Valittu hyödykkeiden määrä 
+          riittäisi vahvistamaan <c>{actions} toimintoa</c>.
+        zero: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii 
+          <c>{steps}</c> askelta per toiminto. Valittu hyödykkeiden määrä 
+          riittäisi vahvistamaan <c>{actions} toimintoa</c>.
+        two: Aktiviteetti <object id="{activity}" alwaysShow="true"/> vaatii 
+          <c>{steps}</c> askelta per toiminto. Valittu hyödykkeiden määrä 
+          riittäisi vahvistamaan <c>{actions} toimintoa</c>.
         few: '-'
         many: '-'
   location:
@@ -331,26 +333,28 @@ plurals:
 singulars:
   achievements:
     info:
-      viewDescription: Avaa saavutuksia ansaitaksesi <hl>saavutuspisteitä</hl>. Kun
-        saavutuspistepalkki täyttyy, voit lunastaa näkymästä palkintoja. Jotkut saavutukset
-        antavat myös palkintoja niiden avaamisesta.
-      collectibleItems: Keräilyesineet ovat harvinaisia esineitä, joita voit löytää
-        pelissä, erityisesti aktiviteeteista. <c i=0>Jokaisesta keräilyesineestä saat</c>
-        <c i=1>yhden</c> <icon i="Achievement Point"/> <c i=1>saavutuspisteen</c>.
-        Keräilyesineet eivät vie repputilaa ja ovat aina hahmosi mukana.
+      viewDescription: Avaa saavutuksia ansaitaksesi <hl>saavutuspisteitä</hl>. 
+        Kun saavutuspistepalkki täyttyy, voit lunastaa näkymästä palkintoja. 
+        Jotkut saavutukset antavat myös palkintoja niiden avaamisesta.
+      collectibleItems: Keräilyesineet ovat harvinaisia esineitä, joita voit 
+        löytää pelissä, erityisesti aktiviteeteista. <c i=0>Jokaisesta 
+        keräilyesineestä saat</c> <c i=1>yhden</c> <icon i="Achievement Point"/>
+        <c i=1>saavutuspisteen</c>. Keräilyesineet eivät vie repputilaa ja ovat 
+        aina hahmosi mukana.
       noCollectibleItems: Sinulla ei ole keräilyesineitä.
-      checkPointUnlocks: Nämä saavutukset ovat lunastettavissa tietyissä saavutuspisteiden
-        määrän etapeissa. Et menetä näitä saavutuksia, vaikka saavutuspisteitä tulisi
-        lisää.
-      totalProgressUnlocks: Saat nämä palkinnot sen mukaan, kuinka paljon saavutuksia
-        olet saavuttanut, ja menetät pääsyn esineisiin, jos saavutuspisteitä tulee
-        lisää ja jäät vaaditun määrän alle.
-      specialItems: Erikoisesineet, kuten <icon i="Collectible"/> <c>keräilyesineet</c>
-        ja <icon i="Lore Item"/> <c>tarinaesineet</c> kertyvät tehdessäsi matkaa WalkScapessa.
-        Voit ihailla löytöjäsi täällä. Keräilyesineet tuottavat sinulle lisäksi saavutuspisteitä.
-      loreItems: Tarinaesineisiin kuuluu esimerkiksi kirjoja, kirjeitä ja muuta kirjallista
-        aineistoa, jonka voit löytää. Ne eivät vie tilaa repussasi, ja voit lukea
-        niitä milloin vain.
+      checkPointUnlocks: Nämä saavutukset ovat lunastettavissa tietyissä 
+        saavutuspisteiden määrän etapeissa. Et menetä näitä saavutuksia, vaikka 
+        saavutuspisteitä tulisi lisää.
+      totalProgressUnlocks: Saat nämä palkinnot sen mukaan, kuinka paljon 
+        saavutuksia olet saavuttanut, ja menetät pääsyn esineisiin, jos 
+        saavutuspisteitä tulee lisää ja jäät vaaditun määrän alle.
+      specialItems: Erikoisesineet, kuten <icon i="Collectible"/> 
+        <c>keräilyesineet</c> ja <icon i="Lore Item"/> <c>tarinaesineet</c> 
+        kertyvät tehdessäsi matkaa WalkScapessa. Voit ihailla löytöjäsi täällä. 
+        Keräilyesineet tuottavat sinulle lisäksi saavutuspisteitä.
+      loreItems: Tarinaesineisiin kuuluu esimerkiksi kirjoja, kirjeitä ja muuta 
+        kirjallista aineistoa, jonka voit löytää. Ne eivät vie tilaa repussasi, 
+        ja voit lukea niitä milloin vain.
       noLoreItems: Sinulla ei ole tarinaesineitä.
     phrases:
       notUnlocked: Lukittu saavutus
@@ -359,8 +363,8 @@ singulars:
       totalProgressUnlocks: Kokonaisetenemisen palkinnot
       checkPointUnlocks: Etappien palkinnot
       unclaimedRewards: 'Lunastamattomat palkinnot: '
-      collectiblesCount: Keräilyesineet <icon i="Achievement Point"/> <c i=0>{count}</c>
-        <c i=1>/ {maxCount}</c>
+      collectiblesCount: Keräilyesineet <icon i="Achievement Point"/> <c 
+        i=0>{count}</c> <c i=1>/ {maxCount}</c>
       collectibles: Keräilyesineet
       loreItemsCount: Tarinaesineet
   crafting:
@@ -374,8 +378,8 @@ singulars:
       rewards: Palkinnot
       noMaterials: Sinulla ei ole tällä hetkellä materiaaleja käsitöihin.
       noServiceRequirements: Ei palveluvaatimuksia.
-      noMaterialsThatCouldBeUsed: Repussasi ei ole materiaaleja, joita voisi käyttää
-        käsityöhön.
+      noMaterialsThatCouldBeUsed: Repussasi ei ole materiaaleja, joita voisi 
+        käyttää käsityöhön.
       showingRecipiesThatUses: Näytetään reseptit, joissa käytetään
       requiresService: Vaatii palvelun.
       allSkills: Kaikki taidot
@@ -388,22 +392,22 @@ singulars:
       recipeNotUnlocked: Tätä reseptiä ei ole vielä löydetty
   inventory:
     info:
-      noItemEquipped: Ei esinettä puettuna. \n\n Voit pukea esineen valitsemalla jonkin
-        alla olevasta luettelosta ja painamalla "pue".
-      noItemSelected: Ei valittua esinettä. \n\n Valitse esine alla olevasta luettelosta,
-        jotta voit verrata sitä nykyiseen esineeseen ja pukea sen.
+      noItemEquipped: Ei esinettä puettuna. \n\n Voit pukea esineen valitsemalla
+        jonkin alla olevasta luettelosta ja painamalla "pue".
+      noItemSelected: Ei valittua esinettä. \n\n Valitse esine alla olevasta 
+        luettelosta, jotta voit verrata sitä nykyiseen esineeseen ja pukea sen.
       noItemsFound: Repustasi ei löytynyt esineitä, jotka sopisivat tähän.
     phrases:
       treasury: Arkut
       dropItems: Pudota esineitä?
-      longPressTip: <c>Vinkki:</c> Esineen pitkä painallus valitsee kaikki samankaltaiset
-        esineet.
+      longPressTip: <c>Vinkki:</c> Esineen pitkä painallus valitsee kaikki 
+        samankaltaiset esineet.
       slots: Repun tila <c>{slots}</c>
       slotsCount: 'Repun tila:'
       selectedStacks: Valittuna <c>{stacks}</c> esinepinoa
       cantEquip: Ei voi pukea.
-      allItemsInUse: Kaikki nämä esineet ovat tällä hetkellä käytössä, eikä niitä
-        voi pudottaa.
+      allItemsInUse: Kaikki nämä esineet ovat tällä hetkellä käytössä, eikä 
+        niitä voi pudottaa.
       oneOrMoreCantBeDropped: Yhtä tai useampaa esinettä ei voi pudottaa.
       attributes: Attribuutit
       abilities: Kyvyt
@@ -415,22 +419,25 @@ singulars:
       noItemEquipped: Ei puettua esinettä
       noItemSelected: Ei valittua esinettä
       duration: Kesto
-      durationInSteps: Aktiivisena <c>{steps}</c> <icon i="Steps" /> askeleen ajan
+      durationInSteps: Aktiivisena <c>{steps}</c> <icon i="Steps" /> askeleen 
+        ajan
       inUse: Käytössä
       selectedConsumable: Valitut hyödykkeet
       consumables: Hyödykkeet
-      noConsumableSelected: Hyödykettä ei ole valittu. Voit valita yhden alla olevista.
+      noConsumableSelected: Hyödykettä ei ole valittu. Voit valita yhden alla 
+        olevista.
       noConsumables: Repussasi ei ole hyödykkeitä.
       cantBeDropped: Esinettä ei voi pudottaa.
       noFoodConsumables: Repussasi ei ole <hl>ruokaa</hl>.
       noPotionConsumables: Repussasi ei ole <hl>rohtoja</hl>.
-      areYouSureToDrop: Oletko varma, että haluat pudottaa esineitä? Esineet katoavat
-        lopullisesti, kun ne on pudotettu.
+      areYouSureToDrop: Oletko varma, että haluat pudottaa esineitä? Esineet 
+        katoavat lopullisesti, kun ne on pudotettu.
       equipToToolSlot: Pue työkalutilaan {id}
       disableWhenChanging: Poista käytöstä aktiviteetin vaihtuessa
-      enableWhenBack: Ota käyttöön aloittaessasi aktiviteetin missä viimeksi käytetty
-      itemsInUse: Olet valinnut esineitä, jotka ovat jo käytössä. Käytössä olevia
-        esineitä ei voi pudottaa tai laittaa pankkiin.
+      enableWhenBack: Ota käyttöön aloittaessasi aktiviteetin missä viimeksi 
+        käytetty
+      itemsInUse: Olet valinnut esineitä, jotka ovat jo käytössä. Käytössä 
+        olevia esineitä ei voi pudottaa tai laittaa pankkiin.
       requirementsNotMet: Vaatimukset eivät täyty.
       checkBank: Pankki
       slotDoesntExist: Tätä esinetilaa ei ole enää olemassa.
@@ -458,7 +465,8 @@ singulars:
       jobs: Työt
       factions: Ryhmittymät
       showingRoutesFrom: Matkustusreitit paikasta <object id="{from}"/>.
-      noRoutesFromLocation: Matkakohteita paikasta <object id="{from}"/> ei löytynyt.
+      noRoutesFromLocation: Matkakohteita paikasta <object id="{from}"/> ei 
+        löytynyt.
       owner: Omistaja
       escape: Pakene
   pfpCreation:
@@ -484,7 +492,8 @@ singulars:
       homeRegion: Kotimaa
       race: Rotu
       selectedVariant: Variantti {index} valittu
-      dynamicBackground: Dynaaminen tausta muuttaa taustakuvaa hahmosi sijainnin mukaan.
+      dynamicBackground: Dynaaminen tausta muuttaa taustakuvaa hahmosi sijainnin
+        mukaan.
       defaultExpression: Perusilme
       colorOptions: Värivaihtoehdot
       variant: Muunnelma {number}
@@ -496,9 +505,10 @@ singulars:
       nextRewardUnlocked: 'Seuraava palkinto avautuu:'
   journal:
     info:
-      jobInfo: Työtehtävät ovat <c>yksinkertaisia ja toistettavia tehtäviä</c>, jotka
-        voit suorittaa palkintoja saadaksesi. Voit ottaa vastaan töitä <c>työpaikkatauluilta</c>
-        eri paikoissa, kuten kaupungeissa. Sinulla voi olla kolme työtehtävää kerrallaan.
+      jobInfo: Työtehtävät ovat <c>yksinkertaisia ja toistettavia tehtäviä</c>, 
+        jotka voit suorittaa palkintoja saadaksesi. Voit ottaa vastaan töitä 
+        <c>työpaikkatauluilta</c> eri paikoissa, kuten kaupungeissa. Sinulla voi
+        olla kolme työtehtävää kerrallaan.
     phrases:
       jobs: Työtehtävät
   jobs:
@@ -516,25 +526,26 @@ singulars:
       noJobsAvailable: 'Tällä hetkellä tässä paikassa ei ole työtehtäviä. Uusia työtehtäviä
         on tulossa saataville:'
       abandonJob: Luovu työtehtävästä
-      acceptedJobs: Tällä hetkellä hyväksytyt työtehtävät <chip><c i=0>{count}</c>/<c
-        i=1>{maxCount}</c></chip>
-      youMustBeInLocation: Sinun on oltava samassa paikassa <object id="{obj}"/> kanssa
-        palauttaaksesi esineet.
+      acceptedJobs: Tällä hetkellä hyväksytyt työtehtävät <chip><c 
+        i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      youMustBeInLocation: Sinun on oltava samassa paikassa <object id="{obj}"/>
+        kanssa palauttaaksesi esineet.
       hasNoBank: Tässä paikassa ei ole pankkia.
-      youMustBeInLocationToCollect: Sinun on oltava samassa paikassa <object id="{obj}"/>
-        kanssa lunastaaksesi palkinnot.
+      youMustBeInLocationToCollect: Sinun on oltava samassa paikassa <object 
+        id="{obj}"/> kanssa lunastaaksesi palkinnot.
       collectRewards: Lunasta palkinnot
       browseJobBoards: Selaa työtehtäviä
       availableJobs: Saatavilla olevat työtehtävät
-      availableJobInfo: Sinun tulee olla työtehtävätaulun kanssa samassa paikassa,
-        jotta voit vastaanottaa työtehtäviä tai lunastaa palkintoja niistä.
+      availableJobInfo: Sinun tulee olla työtehtävätaulun kanssa samassa 
+        paikassa, jotta voit vastaanottaa työtehtäviä tai lunastaa palkintoja 
+        niistä.
       atLocation: Saatavilla kohteessa <object id="{obj}"/>
       youAreAtLocation: Olet tämän työtaulun lähellä.
       travelToJobBoard: Matkusta kohteeseen <object id="{obj}"/>
       cannotAcceptMore: Et voi hyväksyä uusia työtehtäviä.
       complete: Toimita
-      cannotWithdraw: Nykyinen sijaintisi <object id="{obj}"/> on pankiton, joten
-        esineiden nosto pankista työtehtäviin ei ole mahdollista.
+      cannotWithdraw: Nykyinen sijaintisi <object id="{obj}"/> on pankiton, 
+        joten esineiden nosto pankista työtehtäviin ei ole mahdollista.
       currentlyAcceptedJobs: Tällä hetkellä vastaanotetut työt
       jobAlreadyAccepted: Olet ottanut tämän työn vastaan.
       accepted: Hyväksytty
@@ -566,9 +577,9 @@ singulars:
       toAccept: hyväksyäksesi
       toHandIn: toimittaaksesi esineet
       toAbandon: hylätäksesi
-      nothingActionableHere: Täältä käsin et voi tehdä mitään juuri nyt. Voit hyväksyä
-        töitä miltä tahansa taululta jonka luona olet käynyt, mutta joudut palaamaan
-        sen luo luovuttaaksesi esineet työnantajalle.
+      nothingActionableHere: Täältä käsin et voi tehdä mitään juuri nyt. Voit 
+        hyväksyä töitä miltä tahansa taululta jonka luona olet käynyt, mutta 
+        joudut palaamaan sen luo luovuttaaksesi esineet työnantajalle.
       noAcceptedJobs: Sinulla ei ole keskeneräisiä töitä.
       filterAll: Kaikki työt
       deliver: Luovuta esineet
@@ -582,8 +593,8 @@ singulars:
       filterInProgress: Käynnissä
       filters: Suodattimet
       clearFilters: Tyhjennä suodattimet
-      noJobsMatchFilters: Suodattimiisi ei sovi yhtään työtehtäviä. Koeta poistaa
-        niistä joitakin.
+      noJobsMatchFilters: Suodattimiisi ei sovi yhtään työtehtäviä. Koeta 
+        poistaa niistä joitakin.
       sort: Järjestä
       sortByBoard: Työtehtävätaulun mukaan
       sortByProgress: Lähimpänä valmista
@@ -597,8 +608,8 @@ singulars:
     dialogs:
       abandonJob:
         title: Hylkää työtehtävä
-        text: Oletko varma, että haluat luopua tästä työtehtävästä? Menetät kaiken
-          edistymisen ja palkinnot tästä työtehtävästä.
+        text: Oletko varma, että haluat luopua tästä työtehtävästä? Menetät 
+          kaiken edistymisen ja palkinnot tästä työtehtävästä.
     maps:
       rewardKinds:
         "item": Esineet
@@ -616,7 +627,8 @@ singulars:
       workEfficiencyPenalty: Lähtökohtainen työtehokkuus <c>-{penalty}%</c>
       notAffectingTraveling: (ei vaikuta matkustuksen työtehokkuuteen)
       guideTip: Päivän pikkuvinkki
-      activitiesInLocation: Saatavilla olevat aktiviteetit, <object id="{location}"/>
+      activitiesInLocation: Saatavilla olevat aktiviteetit, <object 
+        id="{location}"/>
       requirements: Edellytykset
       rewards: Palkkiot
       levelActivity: Tason <c>{level}</c> <object id="{skill}"/>aktiviteetti
@@ -625,15 +637,16 @@ singulars:
       queueActivity: Lisää aktiviteetti jonoon
       cantStartActivity: Aktiviteetin aloittaminen ei onnistu
       requirementsNotMet: Vaatimuksia on täyttämättä
-      noActivitiesInLocation: Kohteessa <object id="{location}"/> ei ole aktiviteetteja.
-      locationIsUnknown: Sijainti on tuntematon. Kun olet käynyt tässä paikassa, voit
-        nähdä siellä saatavilla olevat aktiviteetit.
+      noActivitiesInLocation: Kohteessa <object id="{location}"/> ei ole 
+        aktiviteetteja.
+      locationIsUnknown: Sijainti on tuntematon. Kun olet käynyt tässä paikassa,
+        voit nähdä siellä saatavilla olevat aktiviteetit.
       savedStepsUsed: Säästettyjä askeleita käytetty
       inputs: Syötteet
       workEfficiency: Työtehokkuus
       maxWorkEfficiency: Maksimityötehokkuus
-      fromOverLevels: Taidot ylittävät vaatimustason <numberProgress current="{current}"
-        max="{max}" />
+      fromOverLevels: Taidot ylittävät vaatimustason <numberProgress 
+        current="{current}" max="{max}" />
       agilityBonus: Ketteryystaso <c>{level}</c>
       fromServices: Bonus paikallisista palveluista
       fromCollectibles: Keräilyesineistä
@@ -648,10 +661,10 @@ singulars:
       fromFineInputs: Oiva syöte
       fromEffects: Aktiiviset vaikutukset
       availableInput: (<c>{quantity}x</c> saatavilla)
-      requiresInputOptional: (Vapaavalintainen) Käyttää <hl>{quantity}x</hl> <object
-        id="{keyword}"/>
-      requiresInputWithLevel: Vaatii <hl>{quantity}x</hl> <object id="{skill}" />
-        tason <c>{level}</c> <object id="{keyword}"/>
+      requiresInputOptional: (Vapaavalintainen) Käyttää <hl>{quantity}x</hl> 
+        <object id="{keyword}"/>
+      requiresInputWithLevel: Vaatii <hl>{quantity}x</hl> <object id="{skill}" 
+        /> tason <c>{level}</c> <object id="{keyword}"/>
       requirementsNotMetForInput: '<object id="{item}"/>: vaatimukset eivät täyty'
       fineInputBenefit: Hyödyt <c>oivista syötteistä</c>
       allAttributes: Näytä kaikki ominaisuudet
@@ -659,27 +672,31 @@ singulars:
       inputAttributes: Hyödyt syötteistä <object id="{item}"/>
       requiresInput: Tarvitaan <hl>{quantity}x</hl> <object id="{keyword}"/>
       inputsNotMet: Syötevaatimukset eivät täyty
-      requiresInputWithLevelOptional: (Vapaavalintainen) Käyttää <hl>{quantity}x</hl>
-        <object id="{skill}" /> tason <c>{level}</c> <object id="{keyword}"/>
+      requiresInputWithLevelOptional: (Vapaavalintainen) Käyttää 
+        <hl>{quantity}x</hl> <object id="{skill}" /> tason <c>{level}</c> 
+        <object id="{keyword}"/>
       noInputOptions: 'Repussasi ei ole tarvittavaa syötettä (<object id="{keyword}"/>)'
     info:
-      consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi aktiviteettiin.
-      savedSteps: Jos keräät askelia kun sinulla ei ole mitään tehtävää käynnissä,
-        askeleesi eivät mene hukkaan vaan ne säästetään. Kun hahmosi tekee taas jotain,
-        kaikki askeleesi lasketaan kaksinkertaisina kunnes säästetyt askeleet on kulutettu
-        loppuun.
-      noActivity: Et ole valinnut mitään aktiviteettia. <hl>Valitse jokin alla olevista</hl>,
-        tai pyyhkäise vasemmalle nähdäksesi kaiken mitä voit tehdä tässä paikassa.
+      consumablesUsage: Voit valita <c>ruoan</c> ja <c>rohdon</c> käytettäväksi 
+        aktiviteettiin.
+      savedSteps: Jos keräät askelia kun sinulla ei ole mitään tehtävää 
+        käynnissä, askeleesi eivät mene hukkaan vaan ne säästetään. Kun hahmosi 
+        tekee taas jotain, kaikki askeleesi lasketaan kaksinkertaisina kunnes 
+        säästetyt askeleet on kulutettu loppuun.
+      noActivity: Et ole valinnut mitään aktiviteettia. <hl>Valitse jokin alla 
+        olevista</hl>, tai pyyhkäise vasemmalle nähdäksesi kaiken mitä voit 
+        tehdä tässä paikassa.
     rewards:
       experience: <bp /><c>{xp} </c><object id="{skill}"/>kokemusta
-      collectibles: <bp /><icon i="Collectibles"/> <c>{count} keräilyesinettä</c>,
-        jotka on mahdollista löytää
+      collectibles: <bp /><icon i="Collectibles"/> <c>{count} 
+        keräilyesinettä</c>, jotka on mahdollista löytää
       reputation: <bp /><object id="{faction}" /> mainetta <c>+{amount}</c>
-      lore: <bp /><icon i="Lore item"/> <c>{count} tarinaesinettä</c> löydettävissä
-      petEggs: <bp /><icon i="Pet egg"/> <c>{count} lemmikkimunia</c> joita sinulla
-        ei vielä ole
-      cosmetics: <bp /><icon i="Wardrobe action"/> <c>{count} kosmeettisia</c> saaliita
+      lore: <bp /><icon i="Lore item"/> <c>{count} tarinaesinettä</c> 
         löydettävissä
+      petEggs: <bp /><icon i="Pet egg"/> <c>{count} lemmikkimunia</c> joita 
+        sinulla ei vielä ole
+      cosmetics: <bp /><icon i="Wardrobe action"/> <c>{count} kosmeettisia</c> 
+        saaliita löydettävissä
     options:
       completeUntilActions: Toista tietty määrä kertoja
       numberOfActions: Toimintojen määrä
@@ -687,7 +704,8 @@ singulars:
     phrases:
       skills: Taidot
       stepsOfLastWeek: Viimeisten 7 päivän askeleet
-      checkOut: Tässä on WalkScape-hahmoni {nimi}. Tsekkaa se!\nhttps://walkscape.app
+      checkOut: Tässä on WalkScape-hahmoni {nimi}. Tsekkaa 
+        se!\nhttps://walkscape.app
       checkOutSubject: Katso edistymiseni WalkScapessa!
       totalLevel: Kokonaistaso
       savePicture: Tallenna kuva
@@ -695,60 +713,63 @@ singulars:
       level: 'Hahmon taso: <c>{level}</c>'
       savePictureDialogTitle: Tallenna hahmon kuva
     info:
-      skillBreakdown: Tässä on hahmosi matkan aikana saavutettujen taitojen kokonaisjakauma.
-        Voit napauttaa mitä tahansa taidoista nähdäksesi niistä lisätietoja ja mitä
-        ne avaavat.
-      eachLevelIncreasesStepBank: Jokainen hahmon taso tason <c>{level}</c> jälkeen
-        lisää säästettyjen askelten maksimimäärää <c>{amount}</c> askeleen verran.
+      skillBreakdown: Tässä on hahmosi matkan aikana saavutettujen taitojen 
+        kokonaisjakauma. Voit napauttaa mitä tahansa taidoista nähdäksesi niistä
+        lisätietoja ja mitä ne avaavat.
+      eachLevelIncreasesStepBank: Jokainen hahmon taso tason <c>{level}</c> 
+        jälkeen lisää säästettyjen askelten maksimimäärää <c>{amount}</c> 
+        askeleen verran.
   permissions:
     phrases:
       pedometerPermission: Askelmittarin lupa
       exactAlarmPermission: Hälytyslupa
-      permissionExplanation: Jotta peli toimii, tarvitsemme lupasi käyttää laitteesi
-        askelmittarin tietoja. Hyväksy tämä lupa jatkaaksesi peliin.
-      youNeedToGivePermissions: Sinun on annettava seuraavat käyttöoikeudet jatkaaksesi
-        peliin. Naputa käyttöoikeuksia myöntääksesi ne.
-      noDeviceFound: Laitteita ei löytynyt. Varmista että olet varmasti painanut ylläolevaa
-        <c>Yhdistä Apple Healthiin</c> ja myöntänyt käyttöoikeuden lukea Apple Health
-        dataa.
-      pedometerPermissionExplanation: Tarvitsemme tämän käyttöoikeuden voidaksemme
-        lukea askelmittarisi dataa.
+      permissionExplanation: Jotta peli toimii, tarvitsemme lupasi käyttää 
+        laitteesi askelmittarin tietoja. Hyväksy tämä lupa jatkaaksesi peliin.
+      youNeedToGivePermissions: Sinun on annettava seuraavat käyttöoikeudet 
+        jatkaaksesi peliin. Naputa käyttöoikeuksia myöntääksesi ne.
+      noDeviceFound: Laitteita ei löytynyt. Varmista että olet varmasti painanut
+        ylläolevaa <c>Yhdistä Apple Healthiin</c> ja myöntänyt käyttöoikeuden 
+        lukea Apple Health dataa.
+      pedometerPermissionExplanation: Tarvitsemme tämän käyttöoikeuden 
+        voidaksemme lukea askelmittarisi dataa.
       connectAppleHealth: Yhdistä Apple Healthiin
       connect: Yhdistä
-      connectAppleHealthExplanation: Sinun tulee yhdistää Apple Healthiin jotta voimme
-        lukea älyrannekkeesi askeleet ja nähäksemme mitkä laitteet olet yhdistänyt
-        Apple Healthiin. Jos pelaat WalkScapea ensimmäistä kertaa, sinulta tullaan
-        pyytämään lupa tietojen lukemiseksi Apple Healthista.
-      continueWillEnable: Jatka-painiketta voi painaa sen jälkeen kun kaikki tarvitut
-        käyttöoikeudet on myönnetty.
-      youCanChangeAnyTime: Voit vaihtaa askelten lähdettä milloin vain <c>pelin Asetuksissa</c>.
+      connectAppleHealthExplanation: Sinun tulee yhdistää Apple Healthiin jotta 
+        voimme lukea älyrannekkeesi askeleet ja nähäksemme mitkä laitteet olet 
+        yhdistänyt Apple Healthiin. Jos pelaat WalkScapea ensimmäistä kertaa, 
+        sinulta tullaan pyytämään lupa tietojen lukemiseksi Apple Healthista.
+      continueWillEnable: Jatka-painiketta voi painaa sen jälkeen kun kaikki 
+        tarvitut käyttöoikeudet on myönnetty.
+      youCanChangeAnyTime: Voit vaihtaa askelten lähdettä milloin vain <c>pelin 
+        Asetuksissa</c>.
       comingSoonToAndroid: Tulossa pian Androidille
       changeStepCountingSource: Vaihda askelten mittauksen lähde
       stepCountingSource: Askelten mittauksen lähde
       connectHealthConnect: Yhdistä Health Connectiin
-      samsungHealthConnectedInfo: Samsung Health on nyt yhdistetty! Askeleesi näkyvät
-        nyt pelissä, tulivat ne sitten päälle puettavista laitteistasi, jotka on kytketty
-        Samsung Healthiin, tai puhelimestasi.
-      connectSamsungHealthExplanation: Jos käytät Samsungin älykelloa tai muita puettavia
-        laitteita, sinun tulee yhdistää Samsung Healthiin, jotta saat laitteiden mittaamat
-        askeleesi näkyviin pelissä. Jos pelaat WalkScapea ensimmäistä kertaa, sinulta
-        kysytään lupa lukea tietoja Samsung Healthissa.
-      noDeviceFoundAndroid: Laitetta ei löytynyt. Ole hyvä ja tarkista että olet painanut
-        <c>Yhdistä Health Connectiin</c> -nappia yllä ja antanut tälle sovellukselle
-        oikeudet lukea Health Connectin tietoja.
+      samsungHealthConnectedInfo: Samsung Health on nyt yhdistetty! Askeleesi 
+        näkyvät nyt pelissä, tulivat ne sitten päälle puettavista laitteistasi, 
+        jotka on kytketty Samsung Healthiin, tai puhelimestasi.
+      connectSamsungHealthExplanation: Jos käytät Samsungin älykelloa tai muita 
+        puettavia laitteita, sinun tulee yhdistää Samsung Healthiin, jotta saat 
+        laitteiden mittaamat askeleesi näkyviin pelissä. Jos pelaat WalkScapea 
+        ensimmäistä kertaa, sinulta kysytään lupa lukea tietoja Samsung 
+        Healthissa.
+      noDeviceFoundAndroid: Laitetta ei löytynyt. Ole hyvä ja tarkista että olet
+        painanut <c>Yhdistä Health Connectiin</c> -nappia yllä ja antanut tälle 
+        sovellukselle oikeudet lukea Health Connectin tietoja.
       connectSamsungHealth: Yhdistä Samsung Healthiin
-      connectHealthConnectExplanation: Sinun tulee yhdistää Google Connectiin, jotta
-        voimme lukea kellosi mittaamat askeleesi, ja jotta yhdistämäsi laitteet näkyvät.
-        Jos pelaat WalkScapea ensimmäistä kertaa, sinulta pyydetään tässä yhteydessä
-        lupaa lukea tietoja Google Connectin kautta.
+      connectHealthConnectExplanation: Sinun tulee yhdistää Google Connectiin, 
+        jotta voimme lukea kellosi mittaamat askeleesi, ja jotta yhdistämäsi 
+        laitteet näkyvät. Jos pelaat WalkScapea ensimmäistä kertaa, sinulta 
+        pyydetään tässä yhteydessä lupaa lukea tietoja Google Connectin kautta.
       installHealthConnect: Asenna Health Connect
-      installHealthConnectExplanation: Health Connect vaaditaan, jotta askelia voidaan
-        lukea päälle puettavista laitteista. Sinun pitää asentaa Health Connect ensin
-        painamalla ylläolevaa nappia, ja sitten yhdistää siihen.
+      installHealthConnectExplanation: Health Connect vaaditaan, jotta askelia 
+        voidaan lukea päälle puettavista laitteista. Sinun pitää asentaa Health 
+        Connect ensin painamalla ylläolevaa nappia, ja sitten yhdistää siihen.
     deviceSource:
       appleWatch: Apple Watch
-      featureDisabled: Askelten lähteiden vaihtaminen on toistaiseksi poistettu käytöstä.
-        Puhelimen askelmittari on oletuksena käytössä.
+      featureDisabled: Askelten lähteiden vaihtaminen on toistaiseksi poistettu 
+        käytöstä. Puhelimen askelmittari on oletuksena käytössä.
       phone: Puhelin
       watch: Muu puettava laite
       watchAndroid: Health Connect
@@ -810,16 +831,17 @@ singulars:
     phrases:
       openChest: Avaa
       openAll: Avaa kaikki
-      noItems: Sinulla ei ole aarteita avattavaksi. Voit saada arkkuja erilaisista
-        aktiviteeteista.
+      noItems: Sinulla ei ole aarteita avattavaksi. Voit saada arkkuja 
+        erilaisista aktiviteeteista.
   abilities:
     info:
-      abilitiesInfo: Kyvyt ovat erikoistoimintoja, joilla voit saada välittömiä etuja
-        pelissä. Kyvyillä on tietty palautumisaika, joka sinun on odotettava, ennen
-        kuin voit käyttää kykyä uudelleen.
-      youHaveNoAbilities: <hl>Sinulla ei ole kykyjä</hl>. Tietyt pelissä olevat varusteet
-        voivat antaa sinulle kykyjä, joita voit käyttää saadaksesi jonkin välittömän
-        hyödyn pelissä, ja jotka tarvitsevat sen jälkeen tietyn palautumisajan.
+      abilitiesInfo: Kyvyt ovat erikoistoimintoja, joilla voit saada välittömiä 
+        etuja pelissä. Kyvyillä on tietty palautumisaika, joka sinun on 
+        odotettava, ennen kuin voit käyttää kykyä uudelleen.
+      youHaveNoAbilities: <hl>Sinulla ei ole kykyjä</hl>. Tietyt pelissä olevat 
+        varusteet voivat antaa sinulle kykyjä, joita voit käyttää saadaksesi 
+        jonkin välittömän hyödyn pelissä, ja jotka tarvitsevat sen jälkeen 
+        tietyn palautumisajan.
     phrases:
       abilities: Kyvyt
       useAbility: Käytä kykyä
@@ -827,10 +849,10 @@ singulars:
       noAction: Ei toimenpidettä
       holdToCast: Pidä pohjassa loihtiaksesi
       holdToUse: Pidä pohjassa käyttääksesi
-      alreadyHere: Nykysijaintisi on jo <object id="{location}"/>. Et voi käyttää
-        kykyä tänne matkustamiseen.
-      cannotUseMore: Et voi käyttää tätä kykyä. Kyvyn vaikutus saattaa olla sinulla
-        jo aktiivisena, ja kertautuisi kestämään liian pitkään.
+      alreadyHere: Nykysijaintisi on jo <object id="{location}"/>. Et voi 
+        käyttää kykyä tänne matkustamiseen.
+      cannotUseMore: Et voi käyttää tätä kykyä. Kyvyn vaikutus saattaa olla 
+        sinulla jo aktiivisena, ja kertautuisi kestämään liian pitkään.
       lastsFor: 'Vaikutuksen kesto:'
   cooldowns:
     phrases:
@@ -848,20 +870,22 @@ singulars:
       inputCharges: 'Latauksia:'
       inputNextCharge: 'Seuraava lataus:'
       inputAtMax: Täysi
-      cooldownCharged: <object id="{ability}"/>-kyky on ladattu, <c>{target}</c> on
-        valmis toimintaan!
-      noInputsAvailable: <object id="{item}"/> tarvitaan tälle palautumisajalle, ja
-        sinulla ei ole yhtään käytettävissäsi.
-      notEnoughCoins: Sinulla ei ole riittävästi kolikoita käytettäväksi tähän palautumiseen.
+      cooldownCharged: <object id="{ability}"/>-kyky on ladattu, <c>{target}</c>
+        on valmis toimintaan!
+      noInputsAvailable: <object id="{item}"/> tarvitaan tälle palautumisajalle,
+        ja sinulla ei ole yhtään käytettävissäsi.
+      notEnoughCoins: Sinulla ei ole riittävästi kolikoita käytettäväksi tähän 
+        palautumiseen.
       coins: Kolikot
     inputs:
-      item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl> </chip>
-        saadaan käyttämällä 1 <object id="{item}" />
-      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
-        </chip> saatu <hl>{coins}</hl> kolikosta
+      item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
+        </chip> saadaan käyttämällä 1 <object id="{item}" />
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  
+        <hl>{amount}</hl> </chip> saatu <hl>{coins}</hl> kolikosta
     info:
-      inputCooldownInfo: Tämä kyky viritetään tavaroilla repustasi. <icon i="input"
-        size="16" vp="3.0" />  <hl>{amount}</hl> tuottaa yhden täyden latauksen.
+      inputCooldownInfo: Tämä kyky viritetään tavaroilla repustasi. <icon 
+        i="input" size="16" vp="3.0" />  <hl>{amount}</hl> tuottaa yhden täyden 
+        latauksen.
   trade:
     phrases:
       total: Yhteensä
@@ -884,12 +908,12 @@ singulars:
       selectedItem: (Valittu esine)
       comparedItem: (Verrattu esine)
     info:
-      gearInfo: Ota käyttöön varusteita, ja parannat hahmosi ominaisuuksia. Kun napautat
-        mitä tahansa varustepaikkaa alla, näet mitä repussasi olevia varusteita voit
-        käyttää siinä paikassa.
-      toolInfo: Käytä työkaluja parantaaksesi hahmosi ominaisuuksia. Aluksi sinulla
-        on yhteensä kolme työkalupaikkaa käytettävissäsi. Voit avata lisää työkalupaikkoja
-        <c>nostamalla hahmosi tasoa</c>.
+      gearInfo: Ota käyttöön varusteita, ja parannat hahmosi ominaisuuksia. Kun 
+        napautat mitä tahansa varustepaikkaa alla, näet mitä repussasi olevia 
+        varusteita voit käyttää siinä paikassa.
+      toolInfo: Käytä työkaluja parantaaksesi hahmosi ominaisuuksia. Aluksi 
+        sinulla on yhteensä kolme työkalupaikkaa käytettävissäsi. Voit avata 
+        lisää työkalupaikkoja <c>nostamalla hahmosi tasoa</c>.
   characterCreation:
     phrases:
       race: Rotu
@@ -899,8 +923,8 @@ singulars:
       characterName: Hahmon nimi
       bodyType: Kehon tyyppi
     info:
-      rememberSwipe: Muista, että voit vaihtaa valittuja vaihtoehtoja milloin tahansa
-        hahmon luomisen aikana pyyhkäisemällä takaisin.
+      rememberSwipe: Muista, että voit vaihtaa valittuja vaihtoehtoja milloin 
+        tahansa hahmon luomisen aikana pyyhkäisemällä takaisin.
   settings:
     categories:
       accessibility:
@@ -918,12 +942,14 @@ singulars:
         title: Kieli
       gameplay:
         title: Pelattavuus
-        stopWhenOverEncumberedDefault: Lopeta aktiviteetti oletuksena repun ylitäyttyessä
+        stopWhenOverEncumberedDefault: Lopeta aktiviteetti oletuksena repun 
+          ylitäyttyessä
       closedBeta:
         clearStepsGraph: Nollaa askelkuvaaja
         title: Suljettu Beta
-        useThisToClear: Käytä tätä, jos haluat nollata askelten kuvaajan. Hyödyllinen,
-          jos olet saanut askelia virheistä ja haluat nollata kuvaajan.
+        useThisToClear: Käytä tätä, jos haluat nollata askelten kuvaajan. 
+          Hyödyllinen, jos olet saanut askelia virheistä ja haluat nollata 
+          kuvaajan.
       notifications:
         title: Ilmoitukset
         stepCountInterval: Ilmoitusväli
@@ -932,39 +958,42 @@ singulars:
       dataSource:
         thisPhone: Tämä puhelin
         changeWarning:
-          description: Huomioi, että tämä toimenpide voi johtaa askelten menettämiseen.
+          description: Huomioi, että tämä toimenpide voi johtaa askelten 
+            menettämiseen.
           title: Vaihda askelten lähde?
         otherSource: Muu lähde
-        requiresPermissionIos: Jos alla olevassa pudotusvalikossa ei näy ainuttakaan
-          laitetta, varmista että olet antanut sovellukselle käyttöoikeuden askeldataasi
-          Apple Healthissa. Voit antaa oikeuden menemällä Asetukset ➤ Tietosuoja &
-          Suojaus ➤ Terveys ➤ (Apit) WalkScape ja että Apple Health on rekisteröinyt
-          askelia laitteestasi viimeisen 7 päivän aikana.
+        requiresPermissionIos: Jos alla olevassa pudotusvalikossa ei näy 
+          ainuttakaan laitetta, varmista että olet antanut sovellukselle 
+          käyttöoikeuden askeldataasi Apple Healthissa. Voit antaa oikeuden 
+          menemällä Asetukset ➤ Tietosuoja & Suojaus ➤ Terveys ➤ (Apit) 
+          WalkScape ja että Apple Health on rekisteröinyt askelia laitteestasi 
+          viimeisen 7 päivän aikana.
         lastSync: 'Viimeinen synkronointi: {timestamp}'
         title: Askelten lähde
       locales:
         title: Kieli
-        chooseALanguageInfo: Paina ylläolevaa painiketta avataksesi kielivalikon.
+        chooseALanguageInfo: Paina ylläolevaa painiketta avataksesi 
+          kielivalikon.
         changeLanguage: Vaihda kieltä
     phrases:
       settings: Asetukset
       exitToCharacterSelection: Poistu hahmon valintaan
-      connectionInfoIos: Jos yllä olevassa listassa ei ole ainuttakaan laitetta, varmista
-        että olet antanut sovellukselle käyttöoikeuden askeldataasi Apple Healthissa.
-        Voit antaa oikeuden menemällä Asetukset ➤ Tietosuoja & Suojaus ➤ Terveys ➤
-        (Apit) WalkScape ja että Apple Health on rekisteröinyt askelia laitteestasi
-        viimeisen 7 päivän aikana.
-      stepSourceInfoDesc: Näe enemmän tietoa eri askelten mittauksen lähteistä ja
-        niiden välisistä eroista painamalla ylläolevaa painiketta.
+      connectionInfoIos: Jos yllä olevassa listassa ei ole ainuttakaan laitetta,
+        varmista että olet antanut sovellukselle käyttöoikeuden askeldataasi 
+        Apple Healthissa. Voit antaa oikeuden menemällä Asetukset ➤ Tietosuoja &
+        Suojaus ➤ Terveys ➤ (Apit) WalkScape ja että Apple Health on 
+        rekisteröinyt askelia laitteestasi viimeisen 7 päivän aikana.
+      stepSourceInfoDesc: Näe enemmän tietoa eri askelten mittauksen lähteistä 
+        ja niiden välisistä eroista painamalla ylläolevaa painiketta.
       stepSourceInfo: Tietoja askelten lähteistä
-      connectionInfoAndroid: Jos puettavat laitteesi eivät näy yllä, varmista, että
-        olet antanut WalkScapelle luvan lukea tietoja Health Connectista - katso puhelimen
-        <c>Asetukset ➤ Tietoturva & Yksityisyys ➤ Yksityisyys ➤ Health Connect ➤ Sovellusten
-        oikeudet </c>, ja että Health Connect näkee laitteiden mittaamia askeleita
-        viimeisen 7 päivän ajalta.
+      connectionInfoAndroid: Jos puettavat laitteesi eivät näy yllä, varmista, 
+        että olet antanut WalkScapelle luvan lukea tietoja Health Connectista - 
+        katso puhelimen <c>Asetukset ➤ Tietoturva & Yksityisyys ➤ Yksityisyys ➤ 
+        Health Connect ➤ Sovellusten oikeudet </c>, ja että Health Connect näkee
+        laitteiden mittaamia askeleita viimeisen 7 päivän ajalta.
       gameVersion: Peliversio {version}
-      comingSoonToAndroid: Älykellotuki Androidille on tulossa pian. Tällä hetkellä
-        vain puhelimen itse laskemat askeleet näkyvät pelissä.
+      comingSoonToAndroid: Älykellotuki Androidille on tulossa pian. Tällä 
+        hetkellä vain puhelimen itse laskemat askeleet näkyvät pelissä.
       updateAvailableSources: Päivitä saatavilla olevat lähteet
       lastCloudSave: 'Viimeisin tallennus palvelimella: {lastSave}'
   worldMap:
@@ -974,7 +1003,8 @@ singulars:
       buildings: Rakennukset
       services: Palvelut
       pointsOfInterest: Mielenkiintoiset kohteet
-      routeFromTo: Paikasta <location i="{fromID}"/> paikkaan <location i="{toID}"/>
+      routeFromTo: Paikasta <location i="{fromID}"/> paikkaan <location 
+        i="{toID}"/>
       route: Reitti
       youreHere: Olet tässä paikassa.
       currentLocation: Nykyinen paikka
@@ -982,13 +1012,13 @@ singulars:
       information: Tiedot
       routeRequirementsNotMet: 'Valitulla reitillä on polkuja joiden vaatimukset eivät
         toteudu:'
-      youHaveNotExplored: Et ole vielä tutkinut tätä paikkaa. Näet tietoa tästä paikasta,
-        kun olet käynyt siellä kerran.
-      changeRouteWarning: Reitin vaihtaminen peruuttaa nykyisen matkasi ja palauttaa
-        sinut aikaisempaan paikkaan. Oletko varma?
-      youAreInspectingFromMap: <c>Tutkit tätä kohdetta maailmankartalta</c> käsin.
-        Jotta voit tehdä jotain täällä oikeasti, avaa kohde Sijainti-näkymästä ollessasi
-        siellä.
+      youHaveNotExplored: Et ole vielä tutkinut tätä paikkaa. Näet tietoa tästä 
+        paikasta, kun olet käynyt siellä kerran.
+      changeRouteWarning: Reitin vaihtaminen peruuttaa nykyisen matkasi ja 
+        palauttaa sinut aikaisempaan paikkaan. Oletko varma?
+      youAreInspectingFromMap: <c>Tutkit tätä kohdetta maailmankartalta</c> 
+        käsin. Jotta voit tehdä jotain täällä oikeasti, avaa kohde 
+        Sijainti-näkymästä ollessasi siellä.
     options:
       hideAll: Piilota kaikki
       regions: Näytä alueet
@@ -1008,17 +1038,21 @@ singulars:
       highestStepsIn24Hours: Suurin askelmäärä 24h aikana
       lastUpdated: 'Viimeisin päivitys: <c>{updatedAt}</c>.'
       reputation: Maine
-      statUpdatesWithDelay: Tämä tilasto päivittyy enintään <c>tunnin</c> viiveellä.
+      statUpdatesWithDelay: Tämä tilasto päivittyy enintään <c>tunnin</c> 
+        viiveellä.
     info:
-      stats: Kokoelma tilastoja jokaisesta askeleesta, jonka olet ottanut Arenumissa.
+      stats: Kokoelma tilastoja jokaisesta askeleesta, jonka olet ottanut 
+        Arenumissa.
       chartWarning:
-        description: Useat pelaajat ovat raportoineet ongelmia askelkaavioissa, jotka
-          aiheutuvat suurista taustalla tapahtuneista muutoksista viime päivityksissä.
-          Jos näet epämääräisyyksiä askelkaaviossa, tämä on todennäköisesti syy sihen.
-          Pelilogiikka toimii kuitenkin kuten pitääkin, ja kaavioon liittyvät ongelmat
-          tullaan korjaamaan tulevissa päivityksissä.
+        description: Useat pelaajat ovat raportoineet ongelmia askelkaavioissa, 
+          jotka aiheutuvat suurista taustalla tapahtuneista muutoksista viime 
+          päivityksissä. Jos näet epämääräisyyksiä askelkaaviossa, tämä on 
+          todennäköisesti syy sihen. Pelilogiikka toimii kuitenkin kuten 
+          pitääkin, ja kaavioon liittyvät ongelmat tullaan korjaamaan tulevissa 
+          päivityksissä.
         title: Kaavioissa on epämääräisyyksiä
-      reputation: Maine mittaa sitä, miten hyvin sinut tunnetaan WalkScapen eri ryhmittymissä.
+      reputation: Maine mittaa sitä, miten hyvin sinut tunnetaan WalkScapen eri 
+        ryhmittymissä.
   tutorial:
     phrases:
       noMoreMessages: Piilota ohjeistusviestit jatkossa
@@ -1031,17 +1065,19 @@ singulars:
       chooseCharacter: Valitse hahmosi tai luo uusi hahmo.
       pleaseWait: Odota...
       deletingCharacter: Hahmosi poistaminen on <hl>peruuttamattomissa</hl>.
-      areYouAbsolutelySure: Oletko aivan varma? Tämän vaiheen jälkeen menetät hahmosi
-        pysyvästi.
+      areYouAbsolutelySure: Oletko aivan varma? Tämän vaiheen jälkeen menetät 
+        hahmosi pysyvästi.
       iAmSure: Olen varma
       createCharacter: Luo uusi hahmo
       downloadingLocalisations: Ladataan päivitettyjä lokalisaatioita
       logOut: Kirjaudu ulos
       noInternet: Ei internet-yhteyttä
-      lostInternet: Laitteesi on menettänyt internet-yhteyden. Odotetaan yhteyttä...
+      lostInternet: Laitteesi on menettänyt internet-yhteyden. Odotetaan 
+        yhteyttä...
       areYouSureYouWantToDelete: Haluatko varmasti poistaa <hl>{name}</hl>?
       dontDoIt: Älä tee sitä, jos et ole varma.
-      ifYouAreSure: Jos olet varma, kirjoita kenttään <c>DELETE</c> ja paina Jatka.
+      ifYouAreSure: Jos olet varma, kirjoita kenttään <c>DELETE</c> ja paina 
+        Jatka.
       deleteWord: DELETE
       downloadingContent: Ladataan uutta pelisisältöä
       email: S-posti / Käyttäjänimi
@@ -1051,8 +1087,8 @@ singulars:
       loadingGame: Ladataan peliä... menee hetki!
       logIn: Kirjaudu sisään
       register: Rekisteröidy
-      welcomeToWalkscape: Tervetuloa WalkScapeen, <hl>vieras</hl>. Ole hyvä ja kirjaudu
-        sisään.
+      welcomeToWalkscape: Tervetuloa WalkScapeen, <hl>vieras</hl>. Ole hyvä ja 
+        kirjaudu sisään.
       pleaseEnterCredentials: Syötä WalkScape-tilisi tunnukset.
       testFlight: Voit ladata uusimman version <c>TestFlightista</c>.
       restart: Käynnistä uudelleen
@@ -1092,7 +1128,8 @@ singulars:
       loadingStepHistoryData: Ladataan otettujen askelten historiatietoja
       loadingSteps: Ladataan askelia
       loadingLocaleState: Ladataan käännöksen tilaa
-      settingUpOnlineSettingsManager: Viritellään asetusten palvelimelle välittämistä
+      settingUpOnlineSettingsManager: Viritellään asetusten palvelimelle 
+        välittämistä
       startingAuthProcess: Käynnistetään käyttäjän tunnistaminen
       spawningIsolate: Luodaan eriö...
       startingErrorManagerProcess: Käynnistetään virheenhallinta
@@ -1129,8 +1166,8 @@ singulars:
       noItemsInventory: Repussasi ei ole esineitä.
       deposit: Talleta
       withdraw: Nosta
-      youAreNotAtABank: <c>Et ole sijainnissa jossa on pankki</c>. Jotta voit käyttää
-        pankkia, matkusta ensin paikkaan jossa on pankin haarakonttori.
+      youAreNotAtABank: <c>Et ole sijainnissa jossa on pankki</c>. Jotta voit 
+        käyttää pankkia, matkusta ensin paikkaan jossa on pankin haarakonttori.
     defaultLayout:
       tabs:
         materials: Materiaalit
@@ -1185,9 +1222,10 @@ singulars:
         petEggs: Lemmikkimunat
         curiosity: Kuriositeetit
     multiSelect:
-      moveHint: Monivalintatilassa voit valita useita erilaisia esineitä yhtä aikaa
-        napauttamalla. Voit raahata niitä järjestääksesi ne muokkaustilassa, tai painaa
-        kontekstivalikkoa luokan otsikkopalkissa siirtääksesi ne eri luokkaan.
+      moveHint: Monivalintatilassa voit valita useita erilaisia esineitä yhtä 
+        aikaa napauttamalla. Voit raahata niitä järjestääksesi ne 
+        muokkaustilassa, tai painaa kontekstivalikkoa luokan otsikkopalkissa 
+        siirtääksesi ne eri luokkaan.
       selectedCount: '{count} valittu'
       withdrawSelected: Nosta
       depositSelected: Talleta
@@ -1243,20 +1281,21 @@ singulars:
       inventoryFilterShowLocked: Näytä lukitut
       filterNoResults: Suodattimiisi ei jäänyt yhtään tuloksia
       searchNoResults: Haku ei löytänyt mitään näytettävää
-      reorderBlockedSearch: Tyhjennä hakukenttä jos haluat laittaa esineitä uuteen
-        järjestykseen
-      reorderBlockedFilter: Poista suodattimet käytöstä jos haluat laittaa esineitä
+      reorderBlockedSearch: Tyhjennä hakukenttä jos haluat laittaa esineitä 
         uuteen järjestykseen
-      reorderBlockedBoth: Tyhjennä hakukenttä ja poista suodattimet käytöstä järjestääksesi
-        esineitä
-      reorderBlockedSort: Poista automaattinen järjestäminen järjestääksesi esineet
-        haluamallasi tavalla
-      reorderBlockedActive: Tyhjennä hakukenttä, suodattimet ja automaattijärjestäminen
+      reorderBlockedFilter: Poista suodattimet käytöstä jos haluat laittaa 
+        esineitä uuteen järjestykseen
+      reorderBlockedBoth: Tyhjennä hakukenttä ja poista suodattimet käytöstä 
         järjestääksesi esineitä
+      reorderBlockedSort: Poista automaattinen järjestäminen järjestääksesi 
+        esineet haluamallasi tavalla
+      reorderBlockedActive: Tyhjennä hakukenttä, suodattimet ja 
+        automaattijärjestäminen järjestääksesi esineitä
       applyWithdrawals: Valmis
       withdrawNotAtBank: Et voi nostaa esineitä, kun et ole pankin lähellä
-      narrowedDragHint: Voit raahata esineitä muihin luokkiin ja välilehtiin. Tyhjennä
-        haku, suodattimet ja järjestäminen jos haluat siirrellä esineitä luokan sisällä.
+      narrowedDragHint: Voit raahata esineitä muihin luokkiin ja välilehtiin. 
+        Tyhjennä haku, suodattimet ja järjestäminen jos haluat siirrellä 
+        esineitä luokan sisällä.
       changesSaved: Muutoksesi on tallennettu
       itemsReassigned: Esineet järjestettiin uudelleen suodattimiesi mukaan
       filterAttributeNames:
@@ -1294,8 +1333,8 @@ singulars:
       depositComplete: Esineet, jotka talletettiin pakkiisi
       depositedAll: Talletettiin kaikki esineet
       processing: "Käsitellään ja tallennetaan tulos pilveen\n\nOdota hetki..."
-      slotsFull: Ulkoasuvaihtoehtoja on jo maksimimäärä. Poista yksi tehdäksesi tilaa
-        uusille.
+      slotsFull: Ulkoasuvaihtoehtoja on jo maksimimäärä. Poista yksi tehdäksesi 
+        tilaa uusille.
       layoutCreated: Ulkoasu luotu
       createFromBlankHint: Yksi tyhjä välilehti kaiken järjestämiseen itse
       deleteLayoutBody: '{name} poistetaan pysyvästi.'
@@ -1359,7 +1398,8 @@ singulars:
         labelRegional: Alueellinen
         labelGlobal: Pelinlaajuinen
       picker:
-        showIfEmptyDesc: Pidä tämä luokka näkyvänä silloinkin, kun siellä ei ole esineitä.
+        showIfEmptyDesc: Pidä tämä luokka näkyvänä silloinkin, kun siellä ei ole
+          esineitä.
         shapeRoundedRect: Pyöristetty
         showIfEmptyLabel: Näytä tyhjänäkin
         preview: Esikatselu
@@ -1381,47 +1421,51 @@ singulars:
         shapeCircle: Ympyrä
         shapeSquare: Neliö
         lockItemsLabel: Lukitse esineet
-        lockItemsDesc: Pidä tämän luokan esineet paikallaan myös automaattisen järjestelyn
-          aikana.
+        lockItemsDesc: Pidä tämän luokan esineet paikallaan myös automaattisen 
+          järjestelyn aikana.
       addTab: Lisää välilehti
       newTab: Uusi välilehti
       uncategorized: Luokittelematon
       addCategory: Lisää luokka
       newCategory: Uusi luokka
       noItemsYet: Ei esineitä (vielä)
-      emptyTab: Täällä ei ole vielä esineitä. Näet ne jahka olet tallettanut jotakin.
+      emptyTab: Täällä ei ole vielä esineitä. Näet ne jahka olet tallettanut 
+        jotakin.
       emptyBank: Pankkisi on tyhjä
       editTab: Muokkaa välilehteä
       deleteTab: Poista välilehti
       options: Valinnat
       editCategory: Muokkaa luokkaa
       discardChangesTitle: Hylkää muutokset?
-      discardChangesBody: Sinulla on tallentamattomia muutoksia pankkisi ulkoasuun.
-        Jos poistut nyt, muutokset peruuntuvat.
+      discardChangesBody: Sinulla on tallentamattomia muutoksia pankkisi 
+        ulkoasuun. Jos poistut nyt, muutokset peruuntuvat.
       exitWithdrawTitle: Poistu nostamatta?
-      exitWithdrawBody: Sinulla on esineitä jonossa nostettavaksi, mutta niitä ei
-        ole vielä nostettu. Jos poistut nyt, ne palaavat pankkiisi.
+      exitWithdrawBody: Sinulla on esineitä jonossa nostettavaksi, mutta niitä 
+        ei ole vielä nostettu. Jos poistut nyt, ne palaavat pankkiisi.
       deleteCategoryTitle: Poista luokka?
       deleteTabTitle: Poista välilehti?
       deleteTabBody: Tämä välilehti poistetaan pankistasi.
       deleteCategoryBody: Esineet tässä luokassa siirretään luokittelemattomiin.
       cannotDeleteTabTitle: Välilehteä ei voi poistaa
-      cannotDeleteTabBody: Vain tyhjät välilehdet voidaan poistaa. Siirrä tai poista
-        sen esineet ensin toisaalle.
+      cannotDeleteTabBody: Vain tyhjät välilehdet voidaan poistaa. Siirrä tai 
+        poista sen esineet ensin toisaalle.
       cannotDeleteLastTabBody: Sinun on pakko säilyttää ainakin yksi välilehti.
-      cannotDeletePrimaryTabBody: Tämä on oletusvälilehti, jonne luokittelemattomat
-        esineet menevät. Sitä ei voi poistaa.
+      cannotDeletePrimaryTabBody: Tämä on oletusvälilehti, jonne 
+        luokittelemattomat esineet menevät. Sitä ei voi poistaa.
       settingsConfirmationsTitle: Vahvistukset
-      settingLockUnfilteredCategories: Lukitse esineet suodattamattomissa luokissa
-      settingAlwaysSaveTransactions: Vahvista transaktiot poistuessa automaattisesti
-      settingAlwaysSaveEdits: Tallenna ulkoasumuutokset automaattisesti poistuessa
+      settingLockUnfilteredCategories: Lukitse esineet suodattamattomissa 
+        luokissa
+      settingAlwaysSaveTransactions: Vahvista transaktiot poistuessa 
+        automaattisesti
+      settingAlwaysSaveEdits: Tallenna ulkoasumuutokset automaattisesti 
+        poistuessa
       clearAllFilters: Tyhjennä kaikki suodattimet
       filterRareEgg: Harvinainen muna
       filterMiscTitle: Sekalaiset
       filterTraveling: Matkustus
       leaveTransactionsTitle: Poistu pankista?
-      leaveTransactionsBody: Sinulla on esineitä valmisteltuna siirtoa varten, mutta
-        siirto ei ole vielä valmis.
+      leaveTransactionsBody: Sinulla on esineitä valmisteltuna siirtoa varten, 
+        mutta siirto ei ole vielä valmis.
       leaveEditsTitle: Hylkää muokkaukset?
       leaveEditsBody: Sinulla on tallentamattomia muutoksia pankkisi ulkoasuun.
       exitEditTitle: Lopeta muokkaaminen?
@@ -1465,17 +1509,18 @@ singulars:
   locales:
     phrases:
       language: Kieli
-      helpToTranslate: WalkScape on <c>yhteisön kääntämä</c>. Voit auttaa meitä kääntämään
-        pelin useammalle kielelle tai parantamaan nykyisiä käännöksiä vierailemalla<a
+      helpToTranslate: WalkScape on <c>yhteisön kääntämä</c>. Voit auttaa meitä 
+        kääntämään pelin useammalle kielelle tai parantamaan nykyisiä käännöksiä
+        vierailemalla<a 
         href="https://wiki.walkscape.app/wiki/Localization">Kääntöohje-sivulla</a>.
         Kaikki apu on erittäin tervetullutta! ❤️
       chooseALanguage: Valitse kieli allaolevasta listasta.
       percentExplanation: '% näyttää kuinka suuri osa kielestä on käännetty.'
       selectGrammaticalGender: Valitse kieliopillinen sukupuoli
-      grammaticalGenderExplanation: Valittu kieliopillinen sukupuoli vaikuttaa siihen
-        miten pelin käyttöliittymän tekstit viittaavat sinuun.
-      youCanChangeAnyTime: Voit vaihtaa kieltä <c>pelin Asetuksista</c> missä tahansa
-        vaiheessa.
+      grammaticalGenderExplanation: Valittu kieliopillinen sukupuoli vaikuttaa 
+        siihen miten pelin käyttöliittymän tekstit viittaavat sinuun.
+      youCanChangeAnyTime: Voit vaihtaa kieltä <c>pelin Asetuksista</c> missä 
+        tahansa vaiheessa.
   gearSets:
     phrases:
       toolSlot: Työkalupaikka
@@ -1508,24 +1553,28 @@ singulars:
       keywordError: 'Varustesetissä on jo: <object id="{keyword}" />'
       duplicateItem: Esine on jo varustesetissä
     info:
-      gearSetManageDesc: Valitse varustesetti minkä haluat pukea alapuolelta. Luodaksesi,
-        tuodaksesi tai muokkaaksesi varustesettejä paina <c i=0>Hallitse</c> painiketta.
-      noGearSetsList: Sinulla ei ole vielä ainuttakaan varustesettiä. Paina <c i=0>Hallitse</c>
-        painiketta luodaksesi tai tuodaksesi uusia varustesettejä.
-      gearSetsListDesc: Voit hallinnoida varustesettejäsi täällä. Jos haluat <c i=0>luoda
-        uuden</c>, paina painiketta alapuolelta. Voit myös <c i=1>kopioida tämähetkiset
-        varusteesi</c> luodessasi uutta varustesettiä.
-      gearSetsDescription: Varustesetit auttavat sinua vaihtamaan nopeasti eri varusteiden
-        välillä.
-      noGearSetsManage: Et ole vielä luonut ainuttakaan varustesettiä. Luo ensimmäinen
-        varustesettisi painamalla alhaalta <c i=0>Luo uusi</c> painiketta.
-      youDontHaveAnyItems: Ei esineitä. Sinulla ei joko ole tai hahmosi ei tiedä ainuttakaan
-        tämän tyyppistä esinettä, tai suodattimesi ei palauttanut yhtäkään esinettä.
+      gearSetManageDesc: Valitse varustesetti minkä haluat pukea alapuolelta. 
+        Luodaksesi, tuodaksesi tai muokkaaksesi varustesettejä paina <c 
+        i=0>Hallitse</c> painiketta.
+      noGearSetsList: Sinulla ei ole vielä ainuttakaan varustesettiä. Paina <c 
+        i=0>Hallitse</c> painiketta luodaksesi tai tuodaksesi uusia 
+        varustesettejä.
+      gearSetsListDesc: Voit hallinnoida varustesettejäsi täällä. Jos haluat <c 
+        i=0>luoda uuden</c>, paina painiketta alapuolelta. Voit myös <c 
+        i=1>kopioida tämähetkiset varusteesi</c> luodessasi uutta varustesettiä.
+      gearSetsDescription: Varustesetit auttavat sinua vaihtamaan nopeasti eri 
+        varusteiden välillä.
+      noGearSetsManage: Et ole vielä luonut ainuttakaan varustesettiä. Luo 
+        ensimmäinen varustesettisi painamalla alhaalta <c i=0>Luo uusi</c> 
+        painiketta.
+      youDontHaveAnyItems: Ei esineitä. Sinulla ei joko ole tai hahmosi ei tiedä
+        ainuttakaan tämän tyyppistä esinettä, tai suodattimesi ei palauttanut 
+        yhtäkään esinettä.
       noGearSets: Et ole luonut vielä yhtään varustesettiä.
-      gearSetManageShortDesc: Paina <c i=0>Hallinnoi</c>-nappia luodaksesi, muokataksesi
-        ja viedäksesi varustesettejäsi.
-      gearSetReorderDesc: Voit järjestellä varustesettisi uu raahaamalla ja pudottamalla
-        niitä allaolevalla listalla.
+      gearSetManageShortDesc: Paina <c i=0>Hallinnoi</c>-nappia luodaksesi, 
+        muokataksesi ja viedäksesi varustesettejäsi.
+      gearSetReorderDesc: Voit järjestellä varustesettisi uu raahaamalla ja 
+        pudottamalla niitä allaolevalla listalla.
   rumors:
     phrases:
       unlockedWalkpediaEntries: Walkpediaan lisätyt sivut
@@ -1540,12 +1589,13 @@ singulars:
       actionCancelled: Toiminto peruttu
       actionsCompleted: Toimintoja suoritettu
       fromProc: Lähteestä <c>{proc}</c>
-      startedActivityNoLocation: Aloitettiin aktiviteetti <object id="{activity}"/>
+      startedActivityNoLocation: Aloitettiin aktiviteetti <object 
+        id="{activity}"/>
       none: Ei yhtään
       fromSource: Lähteestä <object id="{source}"/>
       fromAttribute: Ominaisuudesta {attribute}
-      startedNewActivity: Aloitettiin aktiviteetti <object id="{activity}"/> kohteessa
-        <object id="{location}"/>
+      startedNewActivity: Aloitettiin aktiviteetti <object id="{activity}"/> 
+        kohteessa <object id="{location}"/>
       switchedToPet: Kutsuttu <playerPet id="{pet}"/>
       petDoesNotExist: Tätä lemmikkiä ei ole enää olemassa, kutsu epäonnistui.
       inputsUsed: Käytetyt syötteet
@@ -1560,7 +1610,8 @@ singulars:
       untilInventoryFull: Jatketaan kunnes reppu täyttyy
       switchingToGearSet: Vaihdetaan varustesettiin <c>{name}</c>
       noGearSetFound: Valittua varustesettiä ei löytynyt, oletko poistanut sen?
-      activityInLocation: <object id="{activity}"/> kohteessa <object id="{location}"/>
+      activityInLocation: <object id="{activity}"/> kohteessa <object 
+        id="{location}"/>
       noPathFound: Kohteeseen ei löytynyt reittiä.
       forXActions: Toistetaan <c>{count}</c> kertaa
       inputNotMet: Syötevaatimukset eivät täyty
@@ -1569,19 +1620,20 @@ singulars:
       unknownError: Tuntematon virhe.
     options:
       depositUnlockedItems:
-        desc: Tallettaa kaikki lukitsemattomat esineet repustasi pankkiin, jos sellainen
-          on saatavilla jossakin kohteista, joiden läpi matkustat.
+        desc: Tallettaa kaikki lukitsemattomat esineet repustasi pankkiin, jos 
+          sellainen on saatavilla jossakin kohteista, joiden läpi matkustat.
         text: Talleta lukitsemattomat esineet pankkiin
       cancelGearSetSwitch:
-        desc: Peruuttaa valittuun varustesettiin vaihtamisen tätä toimintoa varten.
+        desc: Peruuttaa valittuun varustesettiin vaihtamisen tätä toimintoa 
+          varten.
         text: Peruuta varustesettiin vaihtaminen
       switchGearSet:
         text: Vaihda varustesettiin
         desc: Vaihda valittuun varustesettiin ennen kuin tämä toiminto alkaa.
       withdrawGearSet:
         text: Nosta varustesetti pankista
-        desc: Nostaa varustesetin pankista, jos sellainen on saatavilla jossakin kohteista,
-          joiden läpi matkustat.
+        desc: Nostaa varustesetin pankista, jos sellainen on saatavilla jossakin
+          kohteista, joiden läpi matkustat.
       removeFromQueue:
         text: Poista jonosta
         desc: Poistaa toiminnon ja kaikki sitä seuraavat toiminnot jonosta.
@@ -1593,17 +1645,17 @@ singulars:
         desc: Kutsuu lemmikkisi ennen toiminnon aloittamista.
     suggestions:
       crafting:
-        onceCertainRarityIsCrafted: Kun saat tietyn harvinaisuusasteen esineen valmistettua
-          tai materiaalisi loppuvat, haluaisitko tehdä jotakin?
-        onceAllItemsAreCrafted: Kun kaikki esineet on valmistettu, haluaisitko tehdä
-          jotakin?
+        onceCertainRarityIsCrafted: Kun saat tietyn harvinaisuusasteen esineen 
+          valmistettua tai materiaalisi loppuvat, haluaisitko tehdä jotakin?
+        onceAllItemsAreCrafted: Kun kaikki esineet on valmistettu, haluaisitko 
+          tehdä jotakin?
       traveling:
-        onceYouArriveTo: Lisätäänkö toiminto jonoon toteutettavaksi kohteessa <object
-          id="{location}"/>?
+        onceYouArriveTo: Lisätäänkö toiminto jonoon toteutettavaksi kohteessa 
+          <object id="{location}"/>?
       activity:
         onceInventoryIsFull: Kun reppusi täyttyy, haluaisitko tehdä jotakin?
-        onceAllActionsAreCompleted: Kun kaikki toiminnot on tehty, haluaisitko tehdä
-          jotakin?
+        onceAllActionsAreCompleted: Kun kaikki toiminnot on tehty, haluaisitko 
+          tehdä jotakin?
     types:
       traveling: Matkustaminen
       crafting: Valmistus
@@ -1618,15 +1670,17 @@ singulars:
       new: Uusi
     info:
       noAnnouncements: Tällä hetkellä tiedotteita ei ole.
-      announcementInfo: Voit löytää täältä <c>tiedotteita</c> kehittäjiltä. Kehittäjäblogit,
-        muutoslokit ja järjestelmätiedotteet pitävät sinut ajan tasalla pelin kehityksen
-        etenemisestä sekä ajoista, jolloin palvelin ei ole saatavilla.
-      noMoreAnnouncements: Olet päässyt tiedotteiden loppuun! Ei muita näytettäviä
-        tiedotteita.
+      announcementInfo: Voit löytää täältä <c>tiedotteita</c> kehittäjiltä. 
+        Kehittäjäblogit, muutoslokit ja järjestelmätiedotteet pitävät sinut ajan
+        tasalla pelin kehityksen etenemisestä sekä ajoista, jolloin palvelin ei 
+        ole saatavilla.
+      noMoreAnnouncements: Olet päässyt tiedotteiden loppuun! Ei muita 
+        näytettäviä tiedotteita.
   download:
     phrases:
       downloadingAssets: Ladataan aineistoja...
-      downloadedFileCount: Ladattu <c i=0>{current}</c> / <c i=1>{total}</c> tiedostoa
+      downloadedFileCount: Ladattu <c i=0>{current}</c> / <c i=1>{total}</c> 
+        tiedostoa
       finalizingAssets: Viimeistellään, odota hetki...
   pets:
     phrases:
@@ -1634,18 +1688,20 @@ singulars:
       maxLevelProgress: Edistyminen maksimitasolle
       hatchingProgress: Hautomisen edistyminen
       requirementsToGainXPNotMet: <c>{name}</c> ei voi kerryttää kokemusta
-      hasHatched: <c>{name}</c> on kuoriutunut ja on nyt <petStage id="{stage}"/>!
+      hasHatched: <c>{name}</c> on kuoriutunut ja on nyt <petStage 
+        id="{stage}"/>!
       pets: Lemmikit
       noPetSelected: Yhtään lemmikkiä ei ole valittuna
       noPetsFound: Hakua vastaavia lemmikkejä ei löytynyt.
       hatching: Hautomo
-      noEggIsHatching: Tällä hetkellä et haudo yhtään lemmikkimunaa. Valitse lemmikkimuna
-        aloittaaksesi <c>hautomisen</c>!
+      noEggIsHatching: Tällä hetkellä et haudo yhtään lemmikkimunaa. Valitse 
+        lemmikkimuna aloittaaksesi <c>hautomisen</c>!
       claimPet: Adoptoi lemmikki
       petEggs: Lemmikkimunat
       chooseEgg: Valitse muna
-      noPetSummoned: Yhtään lemmikkiä ei tällä hetkellä ole kutsuttu. <c>Kutsu lemmikki</c>
-        seuraamaan sinua retkilläsi ja auttamaan sinua kyvyillä ja ominaisuuksillaan!
+      noPetSummoned: Yhtään lemmikkiä ei tällä hetkellä ole kutsuttu. <c>Kutsu 
+        lemmikki</c> seuraamaan sinua retkilläsi ja auttamaan sinua kyvyillä ja 
+        ominaisuuksillaan!
       currentlyHatching: Tällä hetkellä haudottavana
       summonedPet: Kutsuttu lemmikki
       level: Taso <c>{level}</c>
@@ -1683,10 +1739,11 @@ singulars:
       xpToHatch: Kokemus kuoriutumiseen
       isHatching: <c>{name}</c> kuoriutuu!
       isAdvancing: <c>{name}</c> kasvaa!
-      hasEvolved: <c>{name}</c> on kasvanut isoksi ja on nyt <petStage id="{stage}"/>!
+      hasEvolved: <c>{name}</c> on kasvanut isoksi ja on nyt <petStage 
+        id="{stage}"/>!
       noEggs: Sinulla ei ole adoptoituja lemmikkimunia.
-      noPets: Sinulla ei ole lemmikkejä. Voit saada lemmikin löytämällä lemmikkimunan
-        ja hautomalla sen lemmikiksi.
+      noPets: Sinulla ei ole lemmikkejä. Voit saada lemmikin löytämällä 
+        lemmikkimunan ja hautomalla sen lemmikiksi.
       noEggsFound: Hakua vastaavia munia ei löytynyt.
       actionsToNextLevel: Toimintoja seuraavalle tasolle
       actionsToHatch: Toimintoja kuoriutumiseen
@@ -1711,39 +1768,43 @@ singulars:
       noChestSelected: Yhtään arkkua ei ole valittuna.
       purchaseForTokens: Osta merkeillä
     dialogue:
-      greeting: Mukava tavata, <player />! Minulla on <c>harvinaisia esineitä</c>
-        ja <c>palveluja</c>, joista saattaisit olla kiinnostunut. Olen nähnyt sinun
-        seikkailevan Arenumin eri kolkissa, ja pitää sanoa, olet kyllä melkoinen tutkimusretkeilijä.
-        Mitäpä jos kävisimme <c>hieman kauppaa</c>?
-      tradeChestItems: Voin vaihtaa <c>arkuista saamaasi saalista</c> <c>arkkulanteiksi</c>.
-        Voin vaihtaa joitakin lantteja vastaan esineitä, joita olet halunnut saada
-        kyseisistä arkuista. <c>Käypään hintaan</c> tietenkin!
-      chooseChest: Viisas valinta! Mistä arkusta haluaisit <c>vaihtaa esineitä</c>?
-      chestChosen: Ahaa, haluat vaihtaa esineitä, joita <object id="{chest}"/> voi
-        tuottaa? Erinomainen valinta! Kerro seuraavaksi, haluatko vaihtaa esineitä
-        <c>pankista</c> vai <c>repustasi</c>. Tai jos haluat kenties ostaa jotain
-        olemassaolevilla <c>arkkulanteillasi</c>!
+      greeting: Mukava tavata, <player />! Minulla on <c>harvinaisia 
+        esineitä</c> ja <c>palveluja</c>, joista saattaisit olla kiinnostunut. 
+        Olen nähnyt sinun seikkailevan Arenumin eri kolkissa, ja pitää sanoa, 
+        olet kyllä melkoinen tutkimusretkeilijä. Mitäpä jos kävisimme <c>hieman 
+        kauppaa</c>?
+      tradeChestItems: Voin vaihtaa <c>arkuista saamaasi saalista</c> 
+        <c>arkkulanteiksi</c>. Voin vaihtaa joitakin lantteja vastaan esineitä, 
+        joita olet halunnut saada kyseisistä arkuista. <c>Käypään hintaan</c> 
+        tietenkin!
+      chooseChest: Viisas valinta! Mistä arkusta haluaisit <c>vaihtaa 
+        esineitä</c>?
+      chestChosen: Ahaa, haluat vaihtaa esineitä, joita <object id="{chest}"/> 
+        voi tuottaa? Erinomainen valinta! Kerro seuraavaksi, haluatko vaihtaa 
+        esineitä <c>pankista</c> vai <c>repustasi</c>. Tai jos haluat kenties 
+        ostaa jotain olemassaolevilla <c>arkkulanteillasi</c>!
     info:
-      favoritedItem: Olet merkinnyt tämän esineen <icon i="Favorited"/><c>suosikiksesi</c>.
-        Oletko varma, että haluat myydä sen?
+      favoritedItem: Olet merkinnyt tämän esineen <icon 
+        i="Favorited"/><c>suosikiksesi</c>. Oletko varma, että haluat myydä sen?
   currencies:
     phrases:
       currencies: Valuutat
       goldCoins: Kultakolikot
     info:
-      noCurrencies: Sinulla ei tällä hetkellä ole valuuttaa. Voit saada erilaisia
-        vaihdon välineitä <c>killoista</c>, <c>Kummalliselta kauppiaalta</c>, ja muista
-        <c>erikoisista lähteistä</c>.
-      thereAreNoPaidCurrencies: Pelinsisäisiä valuuttoja <c>ei koskaan</c> voi ostaa
-        <c>pelin ulkopuolisella rahalla</c>.
+      noCurrencies: Sinulla ei tällä hetkellä ole valuuttaa. Voit saada 
+        erilaisia vaihdon välineitä <c>killoista</c>, <c>Kummalliselta 
+        kauppiaalta</c>, ja muista <c>erikoisista lähteistä</c>.
+      thereAreNoPaidCurrencies: Pelinsisäisiä valuuttoja <c>ei koskaan</c> voi 
+        ostaa <c>pelin ulkopuolisella rahalla</c>.
   attributeListing:
     phrases:
       allAttributes: Kaikki ominaisuudet
       overlevelingFromAgility: <object id="agility" />tasosta <c>{level}</c>.
       overlevelingWithNumber: Taidon taso on <c>+{level}</c> yli vaaditun.
       noAttributes: Ei aktiivisia ominaisuuksia.
-      noAttributesTip: Sinulla ei ole aktiivisia ominaisuuksia varusteista, työkaluista
-        tai muista lähteistä, tai valitsemasi suodattimet eivät osu sopiviin tuloksiin.
+      noAttributesTip: Sinulla ei ole aktiivisia ominaisuuksia varusteista, 
+        työkaluista tai muista lähteistä, tai valitsemasi suodattimet eivät osu 
+        sopiviin tuloksiin.
       andMoreItems: <bp />ja <c>{count}</c> lisää
     options:
       showInactiveAttributes: Näytä ominaisuudet, jotka eivät ole aktiivisia
@@ -1756,34 +1817,38 @@ singulars:
       alreadyClaimed: Vastaanotettu
       notAtMailbox: Et ole postilaatikon luona
     info:
-      notAtMailbox: Et tällä hetkellä ole paikassa, jossa olisi postilaatikko. Voit
-        vastaanottaa postia vain postilaatikon luona. Kaikissa pankeissa on postilaatikko.
+      notAtMailbox: Et tällä hetkellä ole paikassa, jossa olisi postilaatikko. 
+        Voit vastaanottaa postia vain postilaatikon luona. Kaikissa pankeissa on
+        postilaatikko.
     messages:
       birthday2:
         subject: Hyvää toista syntymäpäivää!
-        text: Taas on kulunut vuosi! Tässä on hieman jotain, jonka avulla voit juhlia
-          toista syntymäpäivääsi!\n\n- Herbert
+        text: Taas on kulunut vuosi! Tässä on hieman jotain, jonka avulla voit 
+          juhlia toista syntymäpäivääsi!\n\n- Herbert
       birthday3:
         subject: Hyvää kolmatta syntymäpäivää!
-        text: Katsohan, kuka täyttää jo kolme vuotta! Älä sorru pimeyteen, tässä on
-          jotain sinulle, ettet anna periksi vallitseville voimille.\n\n -Herbert
+        text: Katsohan, kuka täyttää jo kolme vuotta! Älä sorru pimeyteen, tässä
+          on jotain sinulle, ettet anna periksi vallitseville voimille.\n\n 
+          -Herbert
       birthday1:
         subject: Hyvää ensimmäistä syntymäpäivää!
-        text: Hyvää syntymäpäivää! Tässä on hieman jotain, mikä auttaa sinua juhlistamaan
-          sitä!\n\n- Herbert
+        text: Hyvää syntymäpäivää! Tässä on hieman jotain, mikä auttaa sinua 
+          juhlistamaan sitä!\n\n- Herbert
       tradeCompleted:
         subject: Vaihtokauppa pelaajan {characterName} kanssa on valmis
-        text: Vaihtokauppaneuvottelusi pelaajan <c><bold>{characterName}</bold></c>
-          kanssa ovat valmistuneet onnistuneesti! <action id="receipt">Katso kuittia</action>\n\nTarjoamistasi
-          esineistä vastaanotit seuraavaa
-        textNothingReceived: Vaihtokauppaneuvottelusi pelaajan <c><bold>{characterName}</bold></c>
-          kanssa ovat valmistuneet onnistuneesti! <action id="receipt">Katso kuittia</action>\n\nEt
+        text: Vaihtokauppaneuvottelusi pelaajan 
+          <c><bold>{characterName}</bold></c> kanssa ovat valmistuneet 
+          onnistuneesti! <action id="receipt">Katso 
+          kuittia</action>\n\nTarjoamistasi esineistä vastaanotit seuraavaa
+        textNothingReceived: Vaihtokauppaneuvottelusi pelaajan 
+          <c><bold>{characterName}</bold></c> kanssa ovat valmistuneet 
+          onnistuneesti! <action id="receipt">Katso kuittia</action>\n\nEt 
           saanut mitään vaihdossa.
       tradeRejected:
         subject: Vaihtokauppa pelaajan {characterName} kanssa hylättiin
-        text: Vaihtokauppaneuvottelusi pelaajan <c><bold>{characterName}</bold></c>
-          kanssa ovat päättyneet tuloksettomina; tarjoamasi esineet on palautettu
-          sinulle.
+        text: Vaihtokauppaneuvottelusi pelaajan 
+          <c><bold>{characterName}</bold></c> kanssa ovat päättyneet 
+          tuloksettomina; tarjoamasi esineet on palautettu sinulle.
   party:
     phrases:
       askToJoin: Pyydä liittymään
@@ -1809,9 +1874,10 @@ singulars:
         edistyessä: askeleet, joita olet ottanut, kerätty kokemus, ja tähän mennessä
         löytyneet esineet. Se valmistuu ja siirtyy aiempien tulosten listaan, kun
         aktiviteetti päättyy.'
-      previousResultsInfo: Aiempien <c>viimeaikaisten valmiiden aktiviteettiesi</c>
-        historia. Napauta tuloksia nähdäksesi tarkempi listaus siitä, mitä sait. Merkinnät,
-        joissa lukee <c>Uusi</c>, ovat vielä aiemmin avaamattomia.
+      previousResultsInfo: Aiempien <c>viimeaikaisten valmiiden 
+        aktiviteettiesi</c> historia. Napauta tuloksia nähdäksesi tarkempi 
+        listaus siitä, mitä sait. Merkinnät, joissa lukee <c>Uusi</c>, ovat 
+        vielä aiemmin avaamattomia.
     types:
       activity: Aktiviteetti
       traveling: Matkustaminen
@@ -1869,10 +1935,11 @@ singulars:
       coinsSpentBuying: Kolikoita kulunut ostamalla
   ironfoot:
     phrases:
-      relinquishWarning: Hahmosi on tällä hetkellä <c>Rautajalka</c>. Jos teet vaihtokauppaa
-        muiden pelaajien kanssa, <c>Rautajalka</c>-statuksesi poistuu. Tätä muutosta
-        ei voi perua.
+      relinquishWarning: Hahmosi on tällä hetkellä <c>Rautajalka</c>. Jos teet 
+        vaihtokauppaa muiden pelaajien kanssa, <c>Rautajalka</c>-statuksesi 
+        poistuu. Tätä muutosta ei voi perua.
       selfIronfoot: Hahmosi on <c><bold>Rautajalka</bold></c>
-      cannotTradeWith: <c><bold>Rautajalka</bold></c>-hahmoja ei voi kutsua vaihtokauppaan.
+      cannotTradeWith: <c><bold>Rautajalka</bold></c>-hahmoja ei voi kutsua 
+        vaihtokauppaan.
     buttons:
       relinquish: Luovu Rautajalka-statuksesta
