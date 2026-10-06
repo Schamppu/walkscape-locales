@@ -155,6 +155,8 @@ maps:
         "currency": Valuutat
         "artifact": Artefaktit
         "lore": Tarinaesineet
+        "blueprint": Piirustukset
+        "cosmeticDrop": Kosmeettiset saaliit
   locales:
     grammaticalGender:
       'masculine': Maskuliini
@@ -377,11 +379,13 @@ singulars:
       showingRecipiesThatUses: Näytetään reseptit, joissa käytetään
       requiresService: Vaatii palvelun.
       allSkills: Kaikki taidot
+      specialRecipes: Erikoisreseptejä
     errors:
       notSameQuality: Kaikkien materiaalien on oltava joko oivia tai normaaleja
       noService: Palveluvaatimus ei täyty
       noMaterials: Käsityömateriaaleja puuttuu
       skillRequirementsNotMet: Taitovaatimukset eivät täyty
+      recipeNotUnlocked: Tätä reseptiä ei ole vielä löydetty
   inventory:
     info:
       noItemEquipped: Ei esinettä puettuna. \n\n Voit pukea esineen valitsemalla jonkin
@@ -434,6 +438,8 @@ singulars:
       hatchesInto: Kuoriutuessaan
       inputAttributes: Syötteiden ominaisuudet
       mail: Posti
+      claimBlueprint: Avaa piirrokset
+      claimCosmeticDrop: Avaa kosmeettinen saalis
     options:
       showConsumables: Näytä hyödykkeet
       consenseInventory: Tiivistä reppunäkymä
@@ -531,11 +537,74 @@ singulars:
         esineiden nosto pankista työtehtäviin ei ole mahdollista.
       currentlyAcceptedJobs: Tällä hetkellä vastaanotetut työt
       jobAlreadyAccepted: Olet ottanut tämän työn vastaan.
+      accepted: Hyväksytty
+      boardTitle: Työtehtävätaulu
+      refreshesIn: 'Päivitykseen:'
+      readyToGive: Valmis esineiden luovuttamiseen
+      filterAccepted: Työn alla
+      filterActionable: Saatavilla täällä
+      acceptedJobsHere: <c>{count}</c> luovutettavaksi tänne
+      readyToHandIn: Valmis luovuttamaan esineet
+      travelToHandIn: Luovuta esineet paikan päällä
+      rewardsLabel: Palkinnot
+      stateTravel: Matka
+      needMore: Tarvitaan {count} lisää
+      readyFromBank: Valmis · {count} nostetaan pankista
+      handInAt: Luovutussijainti {location}
+      rewardsLabelCount: Palkkio ({count})
+      rewardLineItem: '{count} × {name}'
+      rewardLineReputation: '{amount} {name}-mainetta'
+      rewardLineCoins: '{amount} kolikkoa'
+      rewardLineXp: '{amount} {name}kokemusta'
+      rewardLineOther: '{name}'
+      notVisited: Ei vielä käyty
+      fromBank: pankista
+      staged: Jonossa
+      unstage: Peruuta
+      clearStaged: Tyhjennä
+      confirmBatch: Vahvista
+      toAccept: hyväksyäksesi
+      toHandIn: toimittaaksesi esineet
+      toAbandon: hylätäksesi
+      nothingActionableHere: Täältä käsin et voi tehdä mitään juuri nyt. Voit hyväksyä
+        töitä miltä tahansa taululta jonka luona olet käynyt, mutta joudut palaamaan
+        sen luo luovuttaaksesi esineet työnantajalle.
+      noAcceptedJobs: Sinulla ei ole keskeneräisiä töitä.
+      filterAll: Kaikki työt
+      deliver: Luovuta esineet
+      difficulty:
+        "easy": Helppo
+        "mediocre": Keskivaikea
+        "hard": Vaikea
+        "extreme": Äärimmäinen
+      filterHere: Täällä
+      filterCanFulfil: Voi täyttää
+      filterInProgress: Käynnissä
+      filters: Suodattimet
+      clearFilters: Tyhjennä suodattimet
+      noJobsMatchFilters: Suodattimiisi ei sovi yhtään työtehtäviä. Koeta poistaa
+        niistä joitakin.
+      sort: Järjestä
+      sortByBoard: Työtehtävätaulun mukaan
+      sortByProgress: Lähimpänä valmista
+      sortHardest: Vaikein ensin
+      sortEasiest: Helpoin ensin
+      rewardsTitle: Palkkiot
+      difficultyTitle: Vaikeus
+      moreRewards: +<c>{count}</c> lisää
+      orInstead: tai
+      alternativeOption: '{count} × {quality}'
     dialogs:
       abandonJob:
         title: Hylkää työtehtävä
         text: Oletko varma, että haluat luopua tästä työtehtävästä? Menetät kaiken
           edistymisen ja palkinnot tästä työtehtävästä.
+    maps:
+      rewardKinds:
+        "item": Esineet
+        "factionReputation": Maine
+        "coins": Kolikot
+        "skillExperience": Kokemus
   activity:
     phrases:
       consumables: Hyödykkeet
@@ -607,6 +676,10 @@ singulars:
         jotka on mahdollista löytää
       reputation: <bp /><object id="{faction}" /> mainetta <c>+{amount}</c>
       lore: <bp /><icon i="Lore item"/> <c>{count} tarinaesinettä</c> löydettävissä
+      petEggs: <bp /><icon i="Pet egg"/> <c>{count} lemmikkimunia</c> joita sinulla
+        ei vielä ole
+      cosmetics: <bp /><icon i="Wardrobe action"/> <c>{count} kosmeettisia</c> saaliita
+        löydettävissä
     options:
       completeUntilActions: Toista tietty määrä kertoja
       numberOfActions: Toimintojen määrä
@@ -775,7 +848,8 @@ singulars:
       inputCharges: 'Latauksia:'
       inputNextCharge: 'Seuraava lataus:'
       inputAtMax: Täysi
-      cooldownCharged: <object id="{ability}"/> on ladattu tavoitetasoon <c>{target}</c>!
+      cooldownCharged: <object id="{ability}"/>-kyky on ladattu, <c>{target}</c> on
+        valmis toimintaan!
       noInputsAvailable: <object id="{item}"/> tarvitaan tälle palautumisajalle, ja
         sinulla ei ole yhtään käytettävissäsi.
       notEnoughCoins: Sinulla ei ole riittävästi kolikoita käytettäväksi tähän palautumiseen.
@@ -923,6 +997,8 @@ singulars:
       locations: Näytä sijainnit
       routes: Näytä reitit
       playerCharacter: Näytä hahmosi
+      serviceIcons: Näytä palvelukuvakkeet
+      cosmeticServiceIcons: Näytä kosmeettiset palvelut
   stats:
     phrases:
       stats: Tilastot
@@ -1041,6 +1117,7 @@ singulars:
       friends: Kaverit
       countResultsFound: '{count} tulosta löytyi'
       enterAtLeastChars: Kirjoita vähintään 3 merkkiä etsiäksesi.
+      anonymousWalker: Nimetön kävelijä
   tools:
     phrases:
       lockedToolSlot: Työkalutila lukittu kunnes <c>hahmon taso on {level}</c>.
@@ -1204,6 +1281,8 @@ singulars:
         noMaterialsConsumed: Materiaaleja ei kuluteta
         doubleItem: Tuplaesine
         travelingDistance: Matkustusetäisyys
+        dropAsFine: Oivien esineiden löytäminen
+        swapItem: Esineiden vaihto
       inventoryTitle: Reppu
       inventoryEmpty: Reppusi on tyhjä
       withdrawAvailable: '{count} pankissa'
@@ -1472,6 +1551,7 @@ singulars:
       inputsUsed: Käytetyt syötteet
       switchedToImportedGearSet: Vaihdettiin tuotuun varustesettiin
       stepsWhileYouWereAway: Poissaollessasi kertyneet askeleet
+      swapConverted: Muunnettu
   queue:
     phrases:
       queuedActions: Jonossa odottavat toiminnot
@@ -1664,6 +1744,7 @@ singulars:
       noAttributes: Ei aktiivisia ominaisuuksia.
       noAttributesTip: Sinulla ei ole aktiivisia ominaisuuksia varusteista, työkaluista
         tai muista lähteistä, tai valitsemasi suodattimet eivät osu sopiviin tuloksiin.
+      andMoreItems: <bp />ja <c>{count}</c> lisää
     options:
       showInactiveAttributes: Näytä ominaisuudet, jotka eivät ole aktiivisia
   mailbox:
@@ -1690,6 +1771,19 @@ singulars:
         subject: Hyvää ensimmäistä syntymäpäivää!
         text: Hyvää syntymäpäivää! Tässä on hieman jotain, mikä auttaa sinua juhlistamaan
           sitä!\n\n- Herbert
+      tradeCompleted:
+        subject: Vaihtokauppa pelaajan {characterName} kanssa on valmis
+        text: Vaihtokauppaneuvottelusi pelaajan <c><bold>{characterName}</bold></c>
+          kanssa ovat valmistuneet onnistuneesti! <action id="receipt">Katso kuittia</action>\n\nTarjoamistasi
+          esineistä vastaanotit seuraavaa
+        textNothingReceived: Vaihtokauppaneuvottelusi pelaajan <c><bold>{characterName}</bold></c>
+          kanssa ovat valmistuneet onnistuneesti! <action id="receipt">Katso kuittia</action>\n\nEt
+          saanut mitään vaihdossa.
+      tradeRejected:
+        subject: Vaihtokauppa pelaajan {characterName} kanssa hylättiin
+        text: Vaihtokauppaneuvottelusi pelaajan <c><bold>{characterName}</bold></c>
+          kanssa ovat päättyneet tuloksettomina; tarjoamasi esineet on palautettu
+          sinulle.
   party:
     phrases:
       askToJoin: Pyydä liittymään
@@ -1773,3 +1867,12 @@ singulars:
       coinsEarnedSelling: Kolikoita tienattu myynnillä
       incomeFromSelling: Tulot myynnistä yhteensä
       coinsSpentBuying: Kolikoita kulunut ostamalla
+  ironfoot:
+    phrases:
+      relinquishWarning: Hahmosi on tällä hetkellä <c>Rautajalka</c>. Jos teet vaihtokauppaa
+        muiden pelaajien kanssa, <c>Rautajalka</c>-statuksesi poistuu. Tätä muutosta
+        ei voi perua.
+      selfIronfoot: Hahmosi on <c><bold>Rautajalka</bold></c>
+      cannotTradeWith: <c><bold>Rautajalka</bold></c>-hahmoja ei voi kutsua vaihtokauppaan.
+    buttons:
+      relinquish: Luovu Rautajalka-statuksesta

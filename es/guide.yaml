@@ -90,25 +90,63 @@ singulars:
       el modo de selección múltiple</c>, lo que te permite seleccionar varias pilas
       a la vez para soltarlas o depositarlas.\n\nEl botón <c i=0>Opciones</c> en la
       parte inferior te permite cambiar cómo se muestran las pilas de objetos.\n\n\
-      <bp /><icon i=\"Deposit\" /> <hl>Depositar</hl>: deposita todos los objetos
-      de tu inventario en el banco, si hay uno disponible en tu ubicación.\n\n<bp
-      /><icon i=\"Bank small\" /> <hl>Banco</hl>: abre tu banco y te permite realizar
-      depósitos o retiros si están disponibles en tu ubicación.\n\n<bp /><icon i=\"\
-      Sort\" /> <hl>Ordenar</hl>: ordena tu inventario.\n"
-    attributeTypes: "<bp /><icon i=\"Gear alt\"/>  <c i=0>Equipo en uso</c>: atributos
-      del equipo actualmente en uso.\n\n<bp /><icon i=\"Tools alt\"/>  <c i=1>Herramientas
-      en uso</c>: atributos de las herramientas actualmente en uso.\n\n<bp /><icon
+      <bp/><icon i=\"Deposit\"/> <hl>Depositar</hl>: deposita todos los objetos de
+      tu inventario en el banco, si hay uno disponible en tu ubicación.\n\n<bp/><icon
+      i=\"Bank small\"/> <hl>Banco</hl>: abre tu banco y te permite realizar depósitos
+      o retiros si están disponibles en tu ubicación.\n\n<bp/><icon i=\"Sort\"/> <hl>Ordenar</hl>:
+      ordena tu inventario.\n"
+    attributeTypes: "<bp/><icon i=\"Gear alt\"/>  <c i=0>Equipo en uso</c>: atributos
+      del equipo actualmente en uso.\n\n<bp/><icon i=\"Tools alt\"/>  <c i=1>Herramientas
+      en uso</c>: atributos de las herramientas actualmente en uso.\n\n<bp/><icon
       i=\"Collectible\"/>  <c i=2>Coleccionable</c>: atributos permanentes de coleccionables.\n\
-      \n<bp /><icon i=\"Dev services\"/>  <c i=3>Servicios</c>: atributos de servicios
-      en tu ubicación actual.\n\n<bp /><icon i=\"Pets\"/>  <c i=4>Mascotas</c>: atributos
-      de tu mascota actual.\n\n<bp /><icon i=\"Fine material\"/>  <c i=5>Bonus de
-      base de calidad</c>: bonus por usar materiales de calidad.\n\n<bp /><icon i=\"\
-      Material\"/>  <c i=6>Material base</c>: atributos de la base seleccionada para
-      una actividad.\n\n<bp /><icon i=\"Consumables\"/>  <c i=7>Consumibles</c>: atributos
-      de los consumibles que se están utilizando.\n\n<bp /><icon i=\"Level up\"/>\
-      \  <c i=8>Nivel de habilidad</c>: atributos de tu nivel de habilidad (p.e. estar
-      por encima del nivel requerido).\n\n<bp /><icon i=\"Abilities\"/>  <c i=9>Talentos</c>:
-      atributos de tus talentos.\n\n<bp /><icon i=\"Player effect\"/>  <c i=10>Efectos
-      activos</c>: atributos de efectos actualmente activos.\n"
+      \n<bp/><icon i=\"Dev services\"/>  <c i=3>Servicios</c>: atributos de servicios
+      en tu ubicación actual.\n\n<bp/><icon i=\"Pets\"/>  <c i=4>Mascotas</c>: atributos
+      de tu mascota actual.\n\n<bp/><icon i=\"Fine material\"/>  <c i=5>Bonus de base
+      de calidad</c>: bonus por usar materiales de calidad.\n\n<bp/><icon i=\"Material\"\
+      />  <c i=6>Material base</c>: atributos de la base seleccionada para una actividad.\n\
+      \n<bp/><icon i=\"Consumables\"/>  <c i=7>Consumibles</c>: atributos de los consumibles
+      que se están utilizando.\n\n<bp/><icon i=\"Level up\"/>  <c i=8>Nivel de habilidad</c>:
+      atributos de tu nivel de habilidad (p.e. estar por encima del nivel requerido).\n\
+      \n<bp/><icon i=\"Abilities\"/>  <c i=9>Talentos</c>: atributos de tus talentos.\n\
+      \n<bp/><icon i=\"Player effect\"/>  <c i=10>Efectos activos</c>: atributos de
+      efectos actualmente activos.\n"
     mailbox: Puedes reclamar objetos que recibas de eventos, comerciar con otros jugadores
       y más a través de tu buzón.
+    worldMapIcons: "<image id=\"bank\"/> <hl>Banco</hl>: deposita y retira objetos.\n\
+      \n<image id=\"deposit\"/> <hl>Caja de depósitos</hl>: solo permite depositar
+      objetos.\n\n<image id=\"store\"/> <hl>Tienda</hl>: ¡compra y vende objetos!\n\
+      \n<image id=\"mysteriousMerchant\"/> <hl>Mercader Misterioso</hl>: un distinguido
+      proveedor de bienes exóticos.\n\n<image id=\"barber\"/> <hl>Barbero</hl> y <image
+      id=\"wardrobe\"/> <hl>Armario</hl>: cambia tu apariencia.\n\n<image id=\"forge\"\
+      /><image id=\"kitchen\"/><image id=\"workshop\"/><image id=\"sawmill\"/><image
+      id=\"loom\"/><image id=\"trinketry\"/> <hl>Estaciones de fabricación</hl>: fabrica
+      recetas de herrería, cocina, fabricación, carpintería, sastrería y joyería.\n\
+      \nEl color del borde de un icono indica el nivel del servicio: <image id=\"\
+      forge\"/> <serviceTier tier=\"basic\"/> o <image id=\"forgeAdvanced\"/> <serviceTier
+      tier=\"advanced\"/>.\n\n<icon path=\"assets/icons/location_badges/unexplored_badge.png\"\
+      \ size=\"16\"/> <hl>Sin explorar</hl>: aún no has visitado esta ubicación.\n\
+      \n<icon path=\"assets/icons/location_badges/rumor_badge.png\" size=\"16\"/>
+      <hl>Rumoreada</hl>: has oído rumores sobre esta ubicación."
+    claimCosmeticDrop: Reclamar un objeto cosmético <c>lo consume</c> y lo desbloquea
+      permanentemente para tu personaje, de modo que puedes equipártelo desde el armario.
+      No se puede deshacer, y un objeto cosmético que ya hayas desbloqueado no volverá
+      a aparecer.
+    claimBlueprint: Reclamar un plano <c>lo consume</c> y desbloquea permanentemente
+      las recetas que enseña. Solo puedes tener una copia de cada plano, y si se reclama
+      no se puede deshacer.
+    swapXpFromEffort: 'Este atributo convierte objetos en experiencia. Esto es lo
+      que obtienes de los distintos objetos:'
+    swapToItemSources: 'Este atributo convierte estos objetos cuando los encuentras:'
+    swapToXpSources: 'Este atributo convierte estos objetos en experiencia cuando
+      los encuentras:'
+    swapToTablesSources: 'Este atributo convierte estos objetos en un artículo especial
+      cuando los encuentras:'
+    trading: "Consulta todos los intercambios activos y su estado.\n<bp/> Puedes comerciar
+      desde cualquier lugar. Los objetos añadidos a un intercambio se depositan desde
+      tu <icon i=\"Bank small\"/> banco y retirar objetos de un intercambio los devuelve
+      allí. Los intercambios se inician seleccionando un personaje en las clasificaciones
+      o en los menús sociales.\n<bp/> Un intercambio se completa cuando ambos participantes
+      han <icon i=\"Accept\"/> aceptado las ofertas. Cualquier cambio realizado por
+      la otra persona hará que tengas que volver a aceptar. Los objetos de un intercambio
+      completado se envían a tu buzón.\n<bp/> Solo puedes tener un intercambio activo
+      con otro jugador a la vez.\n"

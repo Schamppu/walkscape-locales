@@ -141,10 +141,10 @@ singulars:
   mainSkillType:
     text: Kun käytät taitotyyppiä <skillType type="{type}"/>.
   itemQualityEquipped:
-    text: Ylläsi on oltava vähintään <numberProgress current="{current}" max="{max}"
-      /> esinettä, joiden laatu on <itemQuality quality="{quality}" type="{type}"/>.
-    withoutType: Ylläsi on oltava vähintään <numberProgress current="{current}" max="{max}"
-      /> esinettä, joiden laatu on <itemQuality quality="{quality}" type="crafted"/>,
+    text: Pue yllesi vähintään <numberProgress current="{current}" max="{max}" />
+      esinettä kategoriasta <itemQuality quality="{quality}" type="{type}"/>.
+    withoutType: Omista vähintään <numberProgress current="{current}" max="{max}"
+      /> esinettä kategoriasta <itemQuality quality="{quality}" type="crafted"/>,
       tai <itemQuality quality="{quality}" type="loot"/>.
   keywordEquipped:
     text: <object id="{obj}" /> on oltava käytössä.
@@ -216,3 +216,6 @@ singulars:
   totalWealth:
     text: Kerää reipas omaisuus <icon i="money small"/> kolikoissa laskettuna <numberProgress
       current="{current}" max="{max}" />.
+  statValueAt:
+    text: Kun {stat} on vähintään <numberProgress current="{current}" max="{max}"
+      />.
