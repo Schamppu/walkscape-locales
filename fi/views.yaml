@@ -100,6 +100,7 @@ maps:
         Toiminta-näkymässä
       'activityInformationOpen': Näytä lisätietoa toiminnasta
       'toggleAgilityXp': Estä ketteryyskokemus matkustamisesta
+      "showConnectionIndicator": Näytä yhteyden laadun mittari
     leaderboardFilter:
       'everyone': Kaikki
       'friends': Kaverit
@@ -508,7 +509,7 @@ singulars:
       jobInfo: Työtehtävät ovat <c>yksinkertaisia ja toistettavia tehtäviä</c>, 
         jotka voit suorittaa palkintoja saadaksesi. Voit ottaa vastaan töitä 
         <c>työpaikkatauluilta</c> eri paikoissa, kuten kaupungeissa. Sinulla voi
-        olla kolme työtehtävää kerrallaan.
+        olla {count} työtehtävää kerrallaan.
     phrases:
       jobs: Työtehtävät
   jobs:
@@ -589,7 +590,7 @@ singulars:
         "hard": Vaikea
         "extreme": Äärimmäinen
       filterHere: Täällä
-      filterCanFulfil: Voi täyttää
+      filterCanFulfil: Sinulla on tarvittavat esineet
       filterInProgress: Käynnissä
       filters: Suodattimet
       clearFilters: Tyhjennä suodattimet
@@ -605,17 +606,38 @@ singulars:
       moreRewards: +<c>{count}</c> lisää
       orInstead: tai
       alternativeOption: '{count} × {quality}'
+      chooseHandIn: Valitse toimitettavat esineet
+      confirmAndClose: Vahvista & sulje
+      aJob: Työ
     dialogs:
       abandonJob:
         title: Hylkää työtehtävä
         text: Oletko varma, että haluat luopua tästä työtehtävästä? Menetät 
           kaiken edistymisen ja palkinnot tästä työtehtävästä.
+      leaveUnconfirmed:
+        title: Vahvistamattomat muutokset
+        text: Työtehtäviesi muutosta ei ole vielä vahvistettu. Vahvistatko ne 
+          ennen sulkemista, vai perutaanko muutokset?
     maps:
       rewardKinds:
         "item": Esineet
         "factionReputation": Maine
         "coins": Kolikot
         "skillExperience": Kokemus
+    rejections:
+      unknownJob: '{job} ei ole enää työtehtävätaululla, joten se poistettiin.'
+      alreadyAccepted: '{job} on jo hyväksytty.'
+      alreadyTaken: '{job} on jo valmistunut tällä viikolla.'
+      notAccepted: '{job} ei ole enää hyväksytty, joten se poistettiin.'
+      noFreeSlots: '{job} vaatii vapaan paikan listallasi. Keskeytä tai täytä jokin
+        muu työtehtävä ensin.'
+      notEnoughItems: '{job} vaatii enemmän esineitä kuin sinulla on jäljellä.'
+      locationNotVisited: '{job} voidaan ottaa vastaan matkustamalla ensin työtehtävätaululle.'
+      notAtLocation: '{job} vaatii valmistuakseen käynnin työtehtävätaululla esineiden
+        toimittamiseksi.'
+      goalBroken: '{job} vaatii esinettä, jota ei ole enää olemassa.'
+      counterNotMet: '{job} ei ole vielä valmis.'
+      notApplied: '{job} ei suostunut vaihtumaan. Koeta uudelleen.'
   activity:
     phrases:
       consumables: Hyödykkeet
@@ -880,8 +902,8 @@ singulars:
     inputs:
       item: <bp /><chip><icon i="input" size="16" vp="3.0" />  <hl>{amount}</hl>
         </chip> saadaan käyttämällä 1 <object id="{item}" />
-      coins: <bp /><chip><icon i="input" size="16" vp="3.0" />  
-        <hl>{amount}</hl> </chip> saatu <hl>{coins}</hl> kolikosta
+      coins: <bp /><chip><icon i="input" size="16" vp="3.0" /> <hl>{amount}</hl>
+        </chip> saatu <hl>{coins}</hl> kolikosta
     info:
       inputCooldownInfo: Tämä kyky viritetään tavaroilla repustasi. <icon 
         i="input" size="16" vp="3.0" />  <hl>{amount}</hl> tuottaa yhden täyden 
@@ -1315,7 +1337,7 @@ singulars:
         stepsRequired: Askelia vaadittu
         inventorySpace: Repun koko
         randomEncounters: Satunnaisia kohtaamisia
-        fineMaterialOutcome: Oivan materiaalin mahdollisuus
+        fineMaterialOutcome: Oivan reseptituotteen mahdollisuus
         skillLevel: Taitotaso
         noMaterialsConsumed: Materiaaleja ei kuluteta
         doubleItem: Tuplaesine
@@ -1941,5 +1963,14 @@ singulars:
       selfIronfoot: Hahmosi on <c><bold>Rautajalka</bold></c>
       cannotTradeWith: <c><bold>Rautajalka</bold></c>-hahmoja ei voi kutsua 
         vaihtokauppaan.
+      relinquishConfirmWord: Luovu
     buttons:
       relinquish: Luovu Rautajalka-statuksesta
+  connectionQuality:
+    phrases:
+      good: Yhteyden laatu on hyvä.
+      degraded: Hidas yhteys havaittu.
+      poor: Hyvin hidas yhteys havaittu.
+      reconnecting: Uudelleenyhdistetään palvelimeen…
+      offline: Ei yhteyttä palvelimeen.
+      turnOff: Voit poistaa yhteyden laatumittarin näkyvistä asetuksista.
