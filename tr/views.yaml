@@ -63,6 +63,8 @@ maps:
         "artifact": Eserler
         "currency": Paralar
         "lore": Anlatı eşyaları
+        "blueprint": Şablonlar
+        "cosmeticDrop": Kozmetik ödüller
   settings:
     boolSettings:
       'showRecipesServicesAreMet': Hizmet gereksinimleri karşılanıyor
@@ -81,6 +83,7 @@ maps:
       'activityInformationOpen': Daha fazla faaliyet bilgisi göster
       'toggleAgilityXp': Seyahat ederken Çeviklik TP'si kazanmayı devre dışı 
         bırak
+      "showConnectionIndicator": Bağlantı kalitesi göstergesini göster
     languages:
       'pt': Portekizce
       'de': Almanca
@@ -452,10 +455,12 @@ singulars:
         travelingDistance: Seyahat mesafesi
         inventorySpace: Envanter alanı
         randomEncounters: Rastgele karşılaşma
-        fineMaterialOutcome: İyi malzeme bulma
+        fineMaterialOutcome: İyi tarif sonucu
         skillLevel: Beceri seviyesi
         noMaterialsConsumed: Malzeme artırma
         doubleItem: Çifte eşya
+        dropAsFine: İyi bulma
+        swapItem: Eşya değişimi
       settingsDisplayTitle: 'Görünüm'
       settingShowTypeIcons: Eşya türü ikonlarını göster
       applyWithdrawals: Tamamla
@@ -716,11 +721,13 @@ singulars:
       showingRecipiesThatUses: 'Bunu kullanan tarifler:'
       requiresService: Hizmet gerekli.
       allSkills: Tüm beceriler
+      specialRecipes: Özel tarifler
     errors:
       notSameQuality: Malzemelerin tamamı ya iyi ya normal olmalı
       noService: Hizmet gereksinimi karşılanmıyor
       noMaterials: Üretim malzemeleri eksik
       skillRequirementsNotMet: Beceri gereksinimleri karşılanmıyor
+      recipeNotUnlocked: Bu tarif henüz açılmamış
   gear:
     phrases:
       combatModifiers: Savaş nitelikleri
@@ -801,6 +808,8 @@ singulars:
       hatchesInto: 'İçinden çıkan:'
       inputAttributes: Gereç nitelikleri
       mail: Posta
+      claimBlueprint: Şablonu al
+      claimCosmeticDrop: Kozmetik eşyayı al
   leaderboards:
     phrases:
       first: İlk
@@ -1113,13 +1122,15 @@ singulars:
         Etkileşime geçebilmen için bu konumun kendisinde bulunurken konum 
         ekranını kullanman gerekiyor.
     options:
-      hideAll: Tümünü gizle
-      regions: Bölgeleri göster
-      friends: Arkadaşları göster
-      locations: Konumları göster
-      routes: Yolları göster
-      playerCharacter: Karakterini göster
-      labels: Etiketleri göster
+      hideAll: Tümünü Gizle
+      regions: Bölgeleri Göster
+      friends: Arkadaşları Göster
+      locations: Konumları Göster
+      routes: Rotaları Göster
+      playerCharacter: Karakterini Göster
+      labels: Etiketleri Göster
+      serviceIcons: Hizmet İkonlarını Göster
+      cosmeticServiceIcons: Kozmetik Hizmetlerini Göster
   treasury:
     phrases:
       openAll: Tümünü aç
@@ -1161,11 +1172,94 @@ singulars:
       atLocation: <object id="{obj}"/> konumunda mevcut
       cannotWithdraw: Mevcut konumunda (<object id="{obj}"/>) banka bulunmuyor. 
         İşler için bankadan eşya çekilemez.
+      refreshesIn: 'Yenilenme zamanı:'
+      accepted: Kabul edilenler
+      readyToHandIn: Teslim edilmeye hazır
+      travelToHandIn: Yerinde teslim et
+      stateTravel: Seyahat et
+      rewardsLabel: Ödüller
+      needMore: '{count} adet daha gerekli'
+      readyToGive: Teslim etmeye hazır
+      readyFromBank: Bankanda {count} adet hazır
+      handInAt: '{location} konumunda teslim et'
+      rewardsLabelCount: Ödüller ({count})
+      rewardLineItem: '{count} × {name}'
+      rewardLineReputation: '{amount} {name} diyar itibarı'
+      rewardLineCoins: '{amount} akçe'
+      rewardLineXp: '{amount} {name} tecrübesi'
+      rewardLineOther: '{name}'
+      notVisited: Henüz ziyaret edilmemiş
+      fromBank: bankadan
+      unstage: Geri al
+      clearStaged: Temizle
+      confirmBatch: Onayla
+      chooseHandIn: Teslim edilecek eşyaları seç
+      confirmAndClose: Onayla ve kapat
+      nothingActionableHere: Şu anda burada yapabileceğin bir şey bulunmuyor. 
+        Daha önce ziyaret etmiş olduğun yerlerdeki işleri kabul edebilirsin. 
+        Ancak teslim etmek için doğru panoya gitmen gerekir.
+      noAcceptedJobs: Devam etmekte olan bir işin bulunmuyor.
+      filterActionable: Burada mevcut
+      filterAccepted: Devam eden
+      filterAll: Bütün işler
+      deliver: Teslim et
+      difficulty:
+        "easy": Kolay
+        "mediocre": Ortalama
+        "hard": Zor
+        "extreme": Çetin
+      filterInProgress: Devam eden
+      filters: Filtreler
+      clearFilters: Bütün filtreleri kaldır
+      noJobsMatchFilters: Filtrelerine uygun bir iş bulunamadı. Bazı filtreleri 
+        kaldırmayı dene.
+      sort: Sırala
+      sortByBoard: İş panosuna göre
+      sortByProgress: Tamamlamaya en yakın
+      sortHardest: Önce en zor
+      sortEasiest: Önce en kolay
+      rewardsTitle: Ödüller
+      difficultyTitle: Zorluk
+      boardTitle: İş panosu
+      moreRewards: +<c>{count}</c> adet daha
+      orInstead: veya
+      aJob: Bir iş
+      alternativeOption: '{count} × {quality}'
+      toAccept: kabul edilen
+      toHandIn: teslim edilen
+      toAbandon: bırakılan
+      filterHere: Buradakiler
+      filterCanFulfil: Eşyalar Mevcut Olan
+      acceptedJobsHere: Buraya teslim edilecek <c>{count}</c> adet
+      staged: Planlı
     dialogs:
       abandonJob:
         title: İşten vazgeç
         text: Bu işten vazgeçmek istediğine emin misin? Bu işin bütün 
           ilerlemesini ve ödüllerini kaybedeceksin.
+      leaveUnconfirmed:
+        title: Onaylanmamış değişiklikler
+        text: İş değişikliklerin henüz onaylanmadı. Kapatmadan önce 
+          onaylamalısın. Veya değişikliklerden vazgeçilsin mi?
+    maps:
+      rewardKinds:
+        "item": Eşyalar
+        "factionReputation": Diyar itibarı
+        "coins": Akçe
+        "skillExperience": Tecrübe
+    rejections:
+      alreadyAccepted: '{job} zaten kabul edilmiş.'
+      alreadyTaken: '{job} bu hafta zaten tamamlanmış.'
+      noFreeSlots: '{job} için elinde yeterli boşluk bulunmuyor. Öncelikle elindeki
+        işlerden birini tamamla veya bırak.'
+      notEnoughItems: '{job} için teslim etmeye yeterli eşyan bulunmuyor.'
+      locationNotVisited: '{job} işini almadan önce iş panosunu ziyaret et.'
+      notAtLocation: '{job} yalnızca iş panosunun olduğu konumda tamamlanabilir.'
+      goalBroken: '{job} artık mevcut olmayan bir eşya istiyor.'
+      counterNotMet: '{job} henüz tamamlanmamış.'
+      notApplied: '{job} değiştirilemedi. Tekrar dene.'
+      unknownJob: '{job} panoda artık mevcut olmadığı için geri alındı.'
+      notAccepted: '{job} artık kabul edilmediği için geri alındı.'
   activity:
     phrases:
       stopWhenOverEncumbered: Envanter dolup taşınca dur
@@ -1243,6 +1337,10 @@ singulars:
         bulunabilir
       reputation: <bp /><object id="{faction}" /> itibarı <c>+{amount}</c>
       lore: <bp /><icon i="Lore item"/> <c>{count} anlatı eşyası</c> bulunabilir
+      cosmetics: Bulabileceğin <bp /><icon i="Wardrobe action"/><c>{count} adet 
+        kozmetik</c> mevcut
+      petEggs: Yeni bir evcil hayvan bulabileceğin <bp /><icon i="Pet 
+        egg"/><c>{count} adet evcil hayvan yumurtası</c> mevcut
     options:
       completeUntilActions: Belirli sayıda eylem tamamla
       numberOfActions: Eylem sayısı
@@ -1352,6 +1450,7 @@ singulars:
       manageFriends: Sosyal ağını yönet
       enterAtLeastChars: Aramak için en az 3 karakter yazın.
       countResultsFound: '{count} sonuç bulundu'
+      anonymousWalker: Anonim Yürüyen
   gearSets:
     phrases:
       name: İsim
@@ -1453,7 +1552,7 @@ singulars:
       jobInfo: İşler, ödül kazanmak için tamamlayabileceğin <c>basit ve 
         tekrarlanabilir</c> görevlerdir. İşleri şehirler gibi farklı konumlarda 
         bulabileceğin <c>iş panolarından</c> kabul edebilirsin. Aynı anda en 
-        fazla üç aktif işin bulunabilir.
+        fazla {count} adet aktif işin bulunabilir.
     phrases:
       jobs: İşler
   rewards:
@@ -1556,6 +1655,7 @@ singulars:
       inputsUsed: Kullanılan gereçler
       switchedToImportedGearSet: İçe aktarılan teçhizat setine geçildi
       stepsWhileYouWereAway: Sen uzaktayken atılan adım
+      swapConverted: Değiştirilen
   announcements:
     info:
       noMoreAnnouncements: Duyuruların sonuna ulaştın! Gösterecek başka duyuru 
@@ -1703,6 +1803,7 @@ singulars:
         seviye fazla.
       overlevelingFromAgility: <object id="agility" /> seviyesi <c>{level}</c> 
         seviyeden.
+      andMoreItems: <bp />ve <c>{count}</c> adet daha
     options:
       showInactiveAttributes: Aktif olmayan nitelikleri göster
   mailbox:
@@ -1730,6 +1831,18 @@ singulars:
         subject: Üçüncü doğum günün kutlu olsun!
         text: Vay, bakın kim üç olmuş! Karanlığa sakın yenik düşme diye işte 
           büyük kuvvetlere teslim olmamanı hatırlatacak bir şey!\n\n- Herbert
+      tradeCompleted:
+        subject: '{characterName} ile Takas Tamamlandı'
+        text: '<c><bold>{characterName}</bold></c> ile yaptığın pazarlık başarıyla
+          sonuçlandı! <action id="receipt">Makbuzu görüntüle</action>\n\nTeklifin
+          karşılığında aldıkların:'
+        textNothingReceived: <c><bold>{characterName}</bold></c> ile yaptığın 
+          pazarlık başarıyla sonuçlandı! <action id="receipt">Makbuzu 
+          görüntüle</action>\n\nTeklifin karşılığında hiçbir şey almadın.
+      tradeRejected:
+        subject: '{characterName} ile Takas Reddedildi'
+        text: <c><bold>{characterName}</bold></c> ile yaptığın pazarlık 
+          reddedildi ve tekliflerin iade edildi.
   activityHistory:
     phrases:
       startedAt: 'Başlama zamanı: {time}'
@@ -1813,3 +1926,22 @@ singulars:
       coinsSpentBuying: Alımlara harcanan akçe
       incomeFromSelling: Satışlardan elde edilen gelir
       collectionProgress: '{total} eşyanın {owned} tanesi elinde bulunuyor'
+  ironfoot:
+    phrases:
+      relinquishWarning: Karakterin şu anda <c>Demirayak</c> durumunda. Diğer 
+        oyuncularla eşya takas edebilmek için <c>Demirayak</c> durumundan 
+        vazgeçmen gereklidir. Bu işlem geri alınamaz.
+      selfIronfoot: Karakterin <c><bold>Demirayak</bold></c> durumunda
+      cannotTradeWith: <c><bold>Demirayak</bold></c> durumundaki karakterlere 
+        takas daveti gönderilemez.
+      relinquishConfirmWord: Vazgeç
+    buttons:
+      relinquish: Demirayak Durumundan Vazgeç
+  connectionQuality:
+    phrases:
+      good: Bağlantın iyi.
+      degraded: Yavaş bağlantı tespit edildi.
+      poor: Çok yavaş bağlantı tespit edildi.
+      reconnecting: Sunucuya yeniden bağlanılıyor…
+      offline: Sunucuya bağlanılamadı.
+      turnOff: Bağlantı kalitesi göstergesini ayarlardan kapatabilirsin.
