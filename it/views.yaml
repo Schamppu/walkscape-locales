@@ -135,6 +135,8 @@ maps:
       "showDailyTips": Mostra consigli quotidiani
       "toggleAgilityXp": Disabilita il guadagno di XP Agilità derivante dal 
         viaggio
+      "showConnectionIndicator": Mostra l'indicatore della qualità della 
+        connessione
     leaderboardFilter:
       "everyone": Tutti
       "friends": Amici
@@ -969,7 +971,7 @@ singulars:
       jobInfo: Gli incarichi sono <c>attività semplici e ripetibili</c> che puoi
         completare per ottenere ricompense. Puoi accettare incarichi dalle 
         <c>bacheche degli incarichi</c> in varie località, come le città. Puoi 
-        avere tre incarichi attivi contemporaneamente.
+        avere {count} incarichi attivi contemporaneamente.
     phrases:
       jobs: Lavori
   jobs:
@@ -1018,7 +1020,7 @@ singulars:
         "hard": Difficile
         "extreme": Estrema
       filterHere: Qui
-      filterCanFulfil: Completabili
+      filterCanFulfil: Hai gli oggetti
       filterInProgress: In corso
       filters: Filtri
       clearFilters: Rimuovi tutti i filtri
@@ -1065,17 +1067,39 @@ singulars:
       confirmBatch: Conferma
       toAccept: da accettare
       toHandIn: da consegnare
+      chooseHandIn: Scegli quali oggetti consegnare
+      confirmAndClose: Conferma e chiudi
+      aJob: Un incarico
     dialogs:
       abandonJob:
         title: Abbandona l'incarico
         text: Vuoi davvero abbandonare questo incarico? Perderai tutti i 
           progressi e le ricompense di questo incarico.
+      leaveUnconfirmed:
+        title: Modifiche non confermate
+        text: Le modifiche agli incarichi non sono ancora confermate. Vuoi 
+          confermarle prima di chiudere o annullarle?
     maps:
       rewardKinds:
         "item": Oggetti
         "factionReputation": Reputazione
         "coins": Monete
         "skillExperience": Esperienza
+    rejections:
+      unknownJob: '{job} non è più sulla bacheca, quindi è stato ritirato.'
+      alreadyAccepted: '{job} è già stato accettato.'
+      alreadyTaken: '{job} è già stato completato questa settimana.'
+      notAccepted: '{job} non è più accettato, quindi è stato ritirato.'
+      noFreeSlots: Nessuno slot libero per {job}. Prima consegna o abbandona un 
+        incarico.
+      notEnoughItems: Non restano abbastanza oggetti per consegnare {job}.
+      locationNotVisited: Visita la bacheca degli incarichi prima di accettare 
+        {job}.
+      notAtLocation: '{job} può essere consegnato solo presso la sua bacheca degli
+        incarichi.'
+      goalBroken: '{job} richiede un oggetto che non esiste più.'
+      counterNotMet: '{job} non è ancora completato.'
+      notApplied: Impossibile modificare {job}. Riprova.
   mainMenu:
     loadingStates:
       awaitingForRemoveConfig: In attesa di configurazione remota
@@ -1337,7 +1361,7 @@ singulars:
         travelingDistance: Distanza di viaggio
         stepsRequired: Passi richiesti
         inventorySpace: Spazio dell'inventario
-        fineMaterialOutcome: Risultato materiali pregiati
+        fineMaterialOutcome: Risultato pregiato delle ricette
         skillLevel: Livello abilità
         noMaterialsConsumed: Nessun materiale consumato
         doubleItem: Oggetto doppio
@@ -1950,5 +1974,15 @@ singulars:
       selfIronfoot: Il tuo personaggio è un <c><bold>Ironfoot</bold></c>
       cannotTradeWith: I personaggi <c><bold>Ironfoot</bold></c> non possono 
         essere invitati a uno scambio.
+      relinquishConfirmWord: Rinuncia
     buttons:
       relinquish: Rinuncia a Ironfoot
+  connectionQuality:
+    phrases:
+      good: La connessione è buona.
+      degraded: Rilevata una connessione lenta.
+      poor: Rilevata una connessione molto lenta.
+      reconnecting: Riconnessione al server…
+      offline: Nessuna connessione al server.
+      turnOff: Puoi disattivare l'indicatore della qualità della connessione 
+        nelle impostazioni.
