@@ -15,8 +15,9 @@ maps:
       jonka avulla voit seurata kokonaisedistymistäsi.
     "0": Repun ylitäyttyminen hidastaa aktiviteettejasi, muttei vaikuta 
       matkustamiseen.
-    "1": Perustodennäköisyys löytää <hl>oiva</hl> materiaali on <hl>1/100</hl>, 
-      ja voit parantaa sitä paremmilla varusteilla ja työkaluilla.
+    "1": Perustodennäköisyys löytää <itemTag tag="fine"/> materiaali on 
+      <hl>1/100</hl>, ja voit parantaa sitä paremmilla varusteilla ja 
+      työkaluilla.
     "17": <hl>Käsityön laatu</hl> auttaa parantamaan todennäköisyyttä, että 
       valmistat korkealaatuisemman esineen, ja kokonaisjakauman näkee 
       <hl>valmistusnäkymän</hl> <hl>Reseptit</hl>-välilehdeltä.
@@ -59,8 +60,8 @@ maps:
     "24": Syötteitä vaativat metsästysaktiviteetit antavat 
       <hl>tuplapalkkiot</hl> mahdollisten tuottojensa valikoimasta!
     "21": Syötteitä vaativat metsästystoiminnot saavat <hl>bonuksia</hl>, kun 
-      käytät <hl>oivia</hl> syötteitä! Tarkista ominaisuuslistasta, miten niistä
-      hyödyt!
+      syötteesi on <itemTag tag="fine"/>! Tarkista ominaisuuslistasta, miten 
+      niistä hyödyt!
     "22": Haluatko selvittää jonkin tietyn asian? Vilkaise pelin <a 
       href="https://wiki.walkscape.app" c="yellow">wikiä</a> - voit tosin oppia 
       jotain odottamatonta samalla!
@@ -68,6 +69,8 @@ maps:
       href="https://www.patreon.com/WalkScape" c="yellow">Patreonin</a> ja <a 
       href="https://buymeacoffee.com/walkscape" c="yellow">Buy Me A Coffee</a> 
       -palvelun kautta!
+    "25": Samantyyppiset kyvyt jakavat yhteisen palautumisajan, eikä niitä voi 
+      kertauttaa useammalla saman tyypin lähteellä.
   skillTypes:
     "gathering": Keräilytaitoihin kuuluvat <skill skill="foraging"/>, <skill 
       skill="fishing"/>, <skill skill="hunting"/>, <skill skill="mining"/> ja 
@@ -138,17 +141,18 @@ singulars:
       \n<image id=\"deposit\"/> <hl>Tallelokero</hl>: Voit vain tallettaa esineitä.\n\
       \n<image id=\"store\"/> <hl>Kauppa</hl>: Osta ja myy asioita!\n\n<image id=\"\
       mysteriousMerchant\"/> <hl>Kummallinen kauppias</hl>: Laatutietoinen erikoisten
-      asioiden hankkija.\n\n<image id=\"barber\"/> <hl>Parturi</hl> ja <image id=\"\
-      wardrobe\"/> <hl>Vaatekaappi</hl>: Muokkaa ulkonäköäsi.\n\n<image id=\"forge\"\
-      /> <image id=\"kitchen\"/><image id=\"workshop\"/> <image id=\"sawmill\"/><image
-      id=\"loom\"/> <image id=\"trinketry\"/> <hl>Kädentaitojen palvelut</hl>: Valmista
-      taonta-, ruoanlaitto-, käsi-, puu-, ja korutyön sekä vaatturoinnin reseptejä.\n\
-      \nKuvakkeen reunuksen väri paljastaa palvelun tason: <image id=\"forge\"/> <serviceTier
-      tier=\"basic\"/> tai <image id=\"forgeAdvanced\"/> <serviceTier tier=\"advanced\"\
-      />.\n\n<icon path=\"assets/icons/location_badges/unexplored_badge.png\" size=\"\
-      16\"/> <hl>Tutkimaton</hl>: Et ole käynyt tässä sijainnissa vielä.\n\n<icon
-      path=\"assets/icons/location_badges/rumor_badge.png\" size=\"16\"/> <hl>Huhuttu</hl>:
-      Olet kuullut huhuja tästä sijainnista."
+      asioiden hankkija.\n\n<image id=\"jobBoard\"/> <hl>Työtaulu</hl>: Viikottaisia
+      työtehtäviä seikkailijoille, jotka etsivät mainetta ja mammonaa.\n\n<image id=\"\
+      barber\"/> <hl>Parturi</hl> ja <image id=\"wardrobe\"/> <hl>Vaatekaappi</hl>:
+      Muokkaa ulkonäköäsi.\n\n<image id=\"forge\"/> <image id=\"kitchen\"/><image
+      id=\"workshop\"/> <image id=\"sawmill\"/><image id=\"loom\"/> <image id=\"trinketry\"\
+      /> <hl>Kädentaitojen palvelut</hl>: Valmista taonta-, ruoanlaitto-, käsi-, puu-,
+      ja korutyön sekä vaatturoinnin reseptejä.\n\nKuvakkeen reunuksen väri paljastaa
+      palvelun tason: <image id=\"forge\"/> <serviceTier tier=\"basic\"/> tai <image
+      id=\"forgeAdvanced\"/> <serviceTier tier=\"advanced\"/>.\n\n<icon path=\"assets/icons/location_badges/unexplored_badge.png\"\
+      \ size=\"16\"/> <hl>Tutkimaton</hl>: Et ole käynyt tässä sijainnissa vielä.\n\
+      \n<icon path=\"assets/icons/location_badges/rumor_badge.png\" size=\"16\"/>
+      <hl>Huhuttu</hl>: Olet kuullut huhuja tästä sijainnista."
     swapXpFromEffort: 'Tämä ominaisuus muuttaa esineitä kokemukseksi. Saat tällaisia
       palkkioita eri esineistä:'
     swapToItemSources: 'Tämä ominaisuus muokkaa näitä esineitä kun löydät niitä:'
@@ -157,11 +161,16 @@ singulars:
     swapToTablesSources: 'Tämä ominaisuus muuttaa nämä esineet erityislöydöksi kun
       löydät niitä:'
     trading: "Tarkastele kaikkia vaihtokauppoja ja niiden tilaa.\n<bp/> Vaihtokauppoja
-      voi tehdä mistä vain. Esineet, jotka lisätään kauppaan nostetaan <icon i=\"\
-      Bank small\"/> pankistasi, ja niiden poistaminen kaupasta palauttaa ne sinne.
-      Vaihtokaupat aloitetaan valitsemalla hahmo tuloslistoilta tai sosiaalisista
-      valikoista.\n<bp/> Vaihtokauppa valmistuu, kun molemmat osapuolet ovat <icon
-      i=\"Accept\"/> hyväksyneet tarjouksen. Muutokset tarjoukseen vaativat uudelleen
-      hyväksymisen toiseltakin. Valmistuneen vaihtokaupan tulokset lähetetään postilaatikkoosi.\n\
-      <bp/> Sinulla voi olla aktiivisena vain yksi vaihtokauppa kerrallaan tietyn
-      pelaajan kanssa..\n"
+      voi tehdä mistä vain käyttäen esineitä <icon i=\"Bank small\"/> pankistasi.
+      Kauppaan lisätyt esineet siirretään pankistasi, ja niiden poistaminen kaupasta
+      palauttaa ne sinne. \n<bp/>Vaihtokaupat aloitetaan valitsemalla hahmo <socialPage
+      />-sivulta ja lähettämällä hänelle <c>kutsu kaupantekoon</c>.\n<bp/> Vaihtokauppa
+      valmistuu, kun molemmat osapuolet ovat <icon i=\"Accept-small\"/> hyväksyneet
+      tarjouksen. Muutokset tarjoukseen vaativat uudelleen hyväksymisen toiseltakin.\
+      \ \n<bp/>Kun vaihtokauppa on joko <icon i=\"Accept small\"/> hyväksytty ja onnistuneesti
+      valmistunut tai <icon i=\"Cross small\"/> hylätty ja keskeytynyt, sen lopputulokset
+      lähetetään <icon i=\"Mailbox general\"/> postilaatikkoosi.\n<bp/> Sinulla voi
+      olla aktiivisena vain yksi vaihtokauppa kerrallaan toisen pelaajan kanssa.\n\
+      <bp/>Liity <a href=\"https://discord.gg/Kk6VecJFEk\" c=\"lightPurple\">Discord</a>-palvelimellemme,
+      jos kaipaat aputyökaluja kauppaneuvotteluihin tai kertoaksesi, mitä haluat ostaa
+      tai myydä.\n"
