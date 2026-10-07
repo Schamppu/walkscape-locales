@@ -418,6 +418,25 @@ singulars:
         text: Seyahat ederken <stat s="skillLevel"/> seviyesi
         name: <DEĞİŞKEN>
         desc: <DEĞİŞKEN>
+    fineMaterialOutcome:
+      global:
+        text: Genel <stat s="fineMaterialOutcome"/>
+      whileMainSkill:
+        text: <supp k="skill"/> için <stat s="fineMaterialOutcome"/>
+      whileTraveling:
+        text: Seyahat ederken <stat s="fineMaterialOutcome"/>
+      whileMainSkillAndLocationKeyword:
+        text: <supp k="keyword"/> konumunda <supp k="skill"/> için <stat 
+          s="fineMaterialOutcome"/>.
+      whileMainSkillAndRealm:
+        text: <supp k="realm"/> diyarında <supp k="skill"/> için <stat 
+          s="fineMaterialOutcome"/>.
+      whileLocationKeyword:
+        text: <supp k="keyword"/> konumunda genel <stat 
+          s="fineMaterialOutcome"/>.
+      whileSkillGroup:
+        text: Herhangi bir <supp k="skillGroup"/> becerisi için <stat 
+          s="fineMaterialOutcome"/>.
   special:
     findCollectibles:
       whenKeywordSetBonus:
