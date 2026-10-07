@@ -10,8 +10,9 @@ maps:
       massimo di 20 livelli.
     "0": Essere sovraccarichi rallenta solo le tue attività, ma non influisce 
       sui viaggi.
-    "1": La probabilità base di trovare materiali <hl>OTTIMI</hl> è <hl>1%</hl>,
-      ma è possibile aumentarla utilizzando attrezzature e strumenti migliori.
+    "1": La probabilità base di trovare materiali <itemTag tag="fine"/> è 
+      <hl>1/100</hl>, ma puoi aumentarla con equipaggiamento e strumenti 
+      migliori.
     "2": La probabilità base di trovare la maggior parte dei forzieri è 
       <hl>1/250</hl>, che puoi aumentare con attrezzature e strumenti migliori.
     "3": 'Gli attributi che contengono il simbolo di percentuale <hl>%</hl> sono moltiplicativi
@@ -62,8 +63,10 @@ maps:
       c="yellow">Patreon</a> e <a href="https://buymeacoffee.com/walkscape" 
       c="yellow">Buy Me A Coffee</a>!
     "21": Le attività di caccia che richiedono risorse ottengono <hl>bonus</hl> 
-      utilizzando le versioni <hl>PREGIATE</hl> di tali risorse! Controlla 
+      utilizzando le versioni <itemTag tag="fine"/> di tali risorse! Controlla 
       l'interfaccia per scoprire quali vantaggi offrono!
+    "25": Le abilità dello stesso tipo condividono lo stesso tempo di recupero e
+      non si sommano se ne hai più di una dello stesso tipo.
   skillTypes:
     "gathering": Le abilità di raccolta includono <skill 
       skill="foraging"/>,<skill skill="fishing"/>,<skill 
@@ -144,23 +147,28 @@ singulars:
       \n<image id=\"deposit\"/> <hl>Cassetta di deposito</hl>: permette solo di depositare
       oggetti.\n\n<image id=\"store\"/> <hl>Negozio</hl>: compra e vendi di tutto!\n\
       \n<image id=\"mysteriousMerchant\"/> <hl>Mercante Misterioso</hl>: un raffinato
-      fornitore di merci esotiche.\n\n<image id=\"barber\"/> <hl>Barbiere</hl> e <image
-      id=\"wardrobe\"/> <hl>Guardaroba</hl>: cambia il tuo aspetto.\n\n<image id=\"\
-      forge\"/> <image id=\"kitchen\"/><image id=\"workshop\"/> <image id=\"sawmill\"\
-      /><image id=\"loom\"/> <image id=\"trinketry\"/> <hl>Stazioni di creazione</hl>:
-      crea ricette di forgiatura, cucina, artigianato, falegnameria, sartoria e oreficeria.\n\
-      \nIl colore del bordo di un'icona indica il livello del servizio: <image id=\"\
-      forge\"/> <serviceTier tier=\"basic\"/> o <image id=\"forgeAdvanced\"/> <serviceTier
-      tier=\"advanced\"/>.\n\n<icon path=\"assets/icons/location_badges/unexplored_badge.png\"\
-      \ size=\"16\"/> <hl>Inesplorato</hl>: non hai ancora visitato questo luogo.\n\
-      \n<icon path=\"assets/icons/location_badges/rumor_badge.png\" size=\"16\"/>
-      <hl>Voci</hl>: hai sentito delle voci su questo luogo."
+      fornitore di merci esotiche.\n\n<image id=\"jobBoard\"/> <hl>Bacheca degli incarichi</hl>:
+      incarichi settimanali per i camminatori in cerca di ricompense e reputazione.\n\
+      \n<image id=\"barber\"/> <hl>Barbiere</hl> e <image id=\"wardrobe\"/> <hl>Guardaroba</hl>:
+      cambia il tuo aspetto.\n\n<image id=\"forge\"/> <image id=\"kitchen\"/><image
+      id=\"workshop\"/> <image id=\"sawmill\"/><image id=\"loom\"/> <image id=\"trinketry\"\
+      /> <hl>Stazioni di creazione</hl>: crea ricette di forgiatura, cucina, artigianato,
+      falegnameria, sartoria e oreficeria.\n\nIl colore del bordo di un'icona indica
+      il livello del servizio: <image id=\"forge\"/> <serviceTier tier=\"basic\"/>
+      o <image id=\"forgeAdvanced\"/> <serviceTier tier=\"advanced\"/>.\n\n<icon path=\"\
+      assets/icons/location_badges/unexplored_badge.png\" size=\"16\"/> <hl>Inesplorato</hl>:
+      non hai ancora visitato questo luogo.\n\n<icon path=\"assets/icons/location_badges/rumor_badge.png\"\
+      \ size=\"16\"/> <hl>Voci</hl>: hai sentito delle voci su questo luogo."
     trading: "Visualizza tutti gli scambi attivi e il loro stato.\n<bp/> Puoi fare
-      scambi da qualsiasi luogo. Gli oggetti aggiunti a uno scambio vengono prelevati
-      dalla tua <icon i=\"Bank small\"/> banca e, se li rimuovi dallo scambio, vi
-      ritornano. Gli scambi si avviano selezionando un personaggio nelle classifiche
-      o nei menu social.\n<bp/> Uno scambio è completato quando entrambi i partecipanti
-      hanno <icon i=\"Accept\"/> accettato le offerte sul tavolo. Qualsiasi modifica
-      dell'altra parte richiede che tu accetti di nuovo. Gli oggetti di uno scambio
-      completato vengono inviati alla tua casella di posta.\n<bp/> Puoi avere un solo
-      scambio attivo alla volta con ciascun giocatore.\n"
+      scambi da qualsiasi luogo usando gli oggetti nella tua <icon i=\"Bank small\"\
+      /> banca. Gli oggetti aggiunti allo scambio vengono rimossi dalla banca, e quelli
+      tolti dallo scambio vi ritornano.\n<bp/>Gli scambi si avviano selezionando un
+      personaggio nella pagina <socialPage /> e inviandogli un <c>invito allo scambio</c>.\n\
+      <bp/> Uno scambio è completato quando entrambi i partecipanti hanno <icon i=\"\
+      Accept small\"/> accettato le offerte sul tavolo. Qualsiasi modifica dell'altra
+      parte richiede che tu accetti di nuovo. \n<bp/> Gli oggetti di uno scambio <icon
+      i=\"Accept small\"/> completato o <icon i=\"Cross small\"/> rifiutato vengono
+      inviati alla tua <icon i=\"Mailbox general\"/> casella di posta.\n<bp/> Puoi
+      avere un solo scambio attivo alla volta con ciascun personaggio.\n<bp/> Visita
+      il nostro <a href=\"https://discord.gg/Kk6VecJFEk\" c=\"lightPurple\">Discord</a>
+      per farti aiutare a trattare ciò che vuoi comprare o vendere.\n"
