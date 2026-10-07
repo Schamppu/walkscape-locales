@@ -14,203 +14,247 @@ singulars:
   itemAnywhere:
     text: 'Avere l''oggetto <item id="{item}"/>.'
   totalSteps:
-    text: Aver percorso <numberProgress current="{current}" max="{max}" /> passi in
-      totale.
+    text: Aver percorso <numberProgress current="{current}" max="{max}" /> passi
+      in totale.
   unlocked:
     text: Aver sbloccato <object id="{obj}" alwaysShow="true" />.
   exploreRealm:
-    text: Esplora completamente <object id="{obj}" alwaysShow="true" />. <numberProgress
-      current="{current}" max="{max}" />.
+    text: Esplora completamente <object id="{obj}" alwaysShow="true" />. 
+      <numberProgress current="{current}" max="{max}" />.
   mainSkillType:
     text: Mentre si eseguono abilità <skillType type="{type}"/>.
   itemQualityEquipped:
-    withoutType: Avere almeno <numberProgress current="{current}" max="{max}" /> oggetti
-      <itemQuality quality="{quality}" type="crafted"/> o <itemQuality quality="{quality}"
-      type="loot"/> equipaggiati.
-    text: Avere almeno <numberProgress current="{current}" max="{max}" /> oggetti
-      <itemQuality quality="{quality}" type="{type}"/> equipaggiati.
+    withoutType: Avere almeno <numberProgress current="{current}" max="{max}" />
+      oggetti <itemQuality quality="{quality}" type="crafted"/> o <itemQuality 
+      quality="{quality}" type="loot"/> equipaggiati.
+    text: Avere almeno <numberProgress current="{current}" max="{max}" /> 
+      oggetti <itemQuality quality="{quality}" type="{type}"/> equipaggiati.
   keywordEquipped:
     text: Avere <object id="{obj}" /> equipaggiato.
   keywordWithLevelEquipped:
-    text: Avere equipaggiato <object id="{obj}" /> che richiede almeno il livello
-      <numberProgress current="{current}" max="{max}" /> di <skill skill="{skill}"/>.
+    text: Avere equipaggiato <object id="{obj}" /> che richiede almeno il 
+      livello <numberProgress current="{current}" max="{max}" /> di <skill 
+      skill="{skill}"/>.
   distinctItemsEquippedKeyword:
-    text: Richiede <numberProgress current="{current}" max="{max}" /> <object id="{obj}"
-      /> equipaggiato.
+    text: Richiede <numberProgress current="{current}" max="{max}" /> <object 
+      id="{obj}" /> equipaggiato.
   characterLevel:
-    text: Avere livello personaggio <numberProgress current="{current}" max="{max}"
-      />.
-  achievementPoints:
-    text: Avere <icon i="achievement point"/> <numberProgress current="{current}"
-      max="{max}" /> punti obiettivo.
-  achievementPointsPercent:
-    text: Avere <icon i="achievement point"/> <numberProgress current="{current}"
-      max="{max}" /> punti obiettivo ({percentage}% del totale).
-  haveCoins:
-    text: Avere <icon i="money small"/> <numberProgress current="{current}" max="{max}"
-      /> monete.
-  minimumSkillLevel:
-    text: Avere ogni abilità almeno al livello <numberProgress current="{current}"
+    text: Avere livello personaggio <numberProgress current="{current}" 
       max="{max}" />.
+  achievementPoints:
+    text: Avere <icon i="achievement point"/> <numberProgress 
+      current="{current}" max="{max}" /> punti obiettivo.
+  achievementPointsPercent:
+    text: Avere <icon i="achievement point"/> <numberProgress 
+      current="{current}" max="{max}" /> punti obiettivo ({percentage}% del 
+      totale).
+  haveCoins:
+    text: Avere <icon i="money small"/> <numberProgress current="{current}" 
+      max="{max}" /> monete.
+  minimumSkillLevel:
+    text: Avere ogni abilità almeno al livello <numberProgress 
+      current="{current}" max="{max}" />.
   levelUpSkills:
-    text: Migliora le tue abilità <numberProgress current="{current}" max="{max}"
-      /> volte.
+    text: Migliora le tue abilità <numberProgress current="{current}" 
+      max="{max}" /> volte.
   overencumbered:
     text: Avere l'inventario oltre il limite (sovraccarico).
   haveItemStack:
-    text: Avere una pila di <object id="{obj}" alwaysShow="true" /> di dimensione
-      <numberProgress current="{current}" max="{max}" />.
+    text: Avere una pila di <object id="{obj}" alwaysShow="true" /> di 
+      dimensione <numberProgress current="{current}" max="{max}" />.
   haveBankStacks:
-    text: Avere <numberProgress current="{current}" max="{max}" /> pile di oggetti
-      nella tua banca.
+    text: Avere <numberProgress current="{current}" max="{max}" /> pile di 
+      oggetti nella tua banca.
   activityType:
     singleKeyword: Durante l'esecuzione dell'attività <object id="{obj}" />.
   service:
-    text: Richiede il servizio <object id="{obj}" /> di livello <serviceTier tier="{tier}"
-      /> o superiore.
+    text: Richiede il servizio <object id="{obj}" /> di livello <serviceTier 
+      tier="{tier}" /> o superiore.
   realm:
     text: Mentre ti trovi nell'area <realm realm="{realm}" />.
   uniques:
     intermediateCrossCountry: Completa l'attività <object 
       id="activity-cross-country_skiing_(intermediate)-42788047-6cc3-4711-88be-999e9504fc2a"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
-    firewoodMaking: Completa l'attività <object id="activity-firewood_making-407263a4-4ee1-4383-a624-2a7ed70c4b10"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
-    searchTeam: Completa l'attività del Picco Occhio Nero <object id="activity-black_eye_peak_search_team-d1ad835f-0898-4fc7-8f0a-4b0626d95306"
-      alwaysShow="true" /> in <object id="location-horn_of_respite-1661d247-11f1-49eb-b927-6e59c8fd7774"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
-    intermediateShipRepair: Completa l'attività <object id="activity-ship_repair_(intermediate)-44f2f2e7-bef1-437f-ac35-bf64b97cc249"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
+    firewoodMaking: Completa l'attività <object 
+      id="activity-firewood_making-407263a4-4ee1-4383-a624-2a7ed70c4b10" 
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
+    searchTeam: Completa l'attività del Picco Occhio Nero <object 
+      id="activity-black_eye_peak_search_team-d1ad835f-0898-4fc7-8f0a-4b0626d95306"
+      alwaysShow="true" /> in <object 
+      id="location-horn_of_respite-1661d247-11f1-49eb-b927-6e59c8fd7774" 
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
+    intermediateShipRepair: Completa l'attività <object 
+      id="activity-ship_repair_(intermediate)-44f2f2e7-bef1-437f-ac35-bf64b97cc249"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
     beginnerCrossCountry: Completa l'attività <object 
       id="activity-cross-country_skiing_(beginner)-fc421940-d63a-402f-aa50-26cc2efea4d3"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
-    woodCarving: Completa l'attività <object id="activity-wood_carving-af675674-c972-4e2e-80fe-1501b972e353"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
-    wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" alwaysShow="true"
-      />.
-    wreckDiving: Completa l'attività <object id="activity-wreck_diving-12e980cd-058a-42c4-8358-ba7afe1c319c"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
+    woodCarving: Completa l'attività <object 
+      id="activity-wood_carving-af675674-c972-4e2e-80fe-1501b972e353" 
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
+    wraithwaterBankRebuild: <object id="2808f754-9d31-4243-a711-7214a2a1c7b7" 
+      alwaysShow="true" />.
+    wreckDiving: Completa l'attività <object 
+      id="activity-wreck_diving-12e980cd-058a-42c4-8358-ba7afe1c319c" 
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
     notUnderwater: Non trovarti in un luogo <object id="location_underwater" />.
     notAgility: Non praticare <skill skill="agility"/>.
     smeltRecipe: Mentre si eseguono le ricette <object id="recipe_smelting" />.
-    arrowsInInventory: È necessario avere <object id="arrows" /> nel proprio inventario.
+    arrowsInInventory: È necessario avere <object id="arrows" /> nel proprio 
+      inventario.
+    cookingRecipe: Mentre esegui una <object id="recipe_cooking" />.
   gear:
-    swimmingExpert: Aver completato l'attività <object id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
-    tinkering: Aver completato l'attività <object id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e"
-      /> <numberProgress current="{current}" max="{max}" /> volte in <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
+    swimmingExpert: Aver completato l'attività <object 
+      id="activity-swimming_(expert)-95a78afb-79f0-431c-b7aa-062659d9ec87" 
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
+    tinkering: Aver completato l'attività <object 
+      id="activity-tinkering-cb2a8773-06d0-4661-9708-2bef5768119e" /> 
+      <numberProgress current="{current}" max="{max}" /> volte in <object 
+      id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a" 
       alwaysShow="true" />
-    beginnerSkydisc: Aver completato l'attività <object id="activity-frisbee_golfing_(beginner)-0fb41f4d-f46b-4a6d-acdf-f2525654c714"
-      alwaysShow="true" /> in <object id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
-    underwaterBasketweaving: Aver completato l'attività <object id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte
-      in <object id="location-fertile_shallows-6561e4b5-fce3-4307-a641-86ca5aee36d6"
+    beginnerSkydisc: Aver completato l'attività <object 
+      id="activity-frisbee_golfing_(beginner)-0fb41f4d-f46b-4a6d-acdf-f2525654c714"
+      alwaysShow="true" /> in <object 
+      id="location-barbantok-018aaeeb-5b51-4043-94b7-28fa7dcb7b7a" 
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
+    underwaterBasketweaving: Aver completato l'attività <object 
+      id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte in <object 
+      id="location-fertile_shallows-6561e4b5-fce3-4307-a641-86ca5aee36d6" 
       alwaysShow="true" />
-    iceSculpting: Aver completato l'attività <object id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte
-      in <object id="location-frusenholm-5ddb0735-4582-4858-80a0-7489f1b043a2" alwaysShow="true"
-      />
-    sledding: Durante l'attività <object id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148"
-      />.
+    iceSculpting: Aver completato l'attività <object 
+      id="activity-ice_sculpting-2b0be0f5-69d5-4205-922d-c5a02c056cab" 
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte in <object 
+      id="location-frusenholm-5ddb0735-4582-4858-80a0-7489f1b043a2" 
+      alwaysShow="true" />
+    sledding: Durante l'attività <object 
+      id="activity-sledding-290bfd6c-3bb1-47c6-bf60-880c1d4a5148" />.
     intermediateSkydisc: Aver completato l'attività <object 
       id="activity-frisbee_golfing_(intermediate)-ecbf8887-6555-4d43-b044-e8e05eac556c"
-      alwaysShow="true" /> in <object id="location-bilgemont_port-3487fbca-62e3-4a6c-8f91-ceacdc6ea382"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
-    twophointohHunt: Aver completato l'attività <object id="7da101b7-a9f3-423c-82f9-e381f40ca9e8"
-      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> volte.
+      alwaysShow="true" /> in <object 
+      id="location-bilgemont_port-3487fbca-62e3-4a6c-8f91-ceacdc6ea382" 
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
+    twophointohHunt: Aver completato l'attività <object 
+      id="7da101b7-a9f3-423c-82f9-e381f40ca9e8" alwaysShow="true" /> 
+      <numberProgress current="{current}" max="{max}" /> volte.
+    kelpGear: Aver completato l'attività <object 
+      id="activity-merfolk_dancing-7973376d-80f3-4680-aca6-14cc0d1873c3" 
+      alwaysShow="true" /> <numberProgress current="{current}" max="{max}" /> 
+      volte.
   factionReputations:
-    jarvoniaReputation: Avere <numberProgress current="{current}" max="{max}" /> di
-      reputazione con la fazione <realm realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db"
-      />.
-    trellinReputation: Avere <numberProgress current="{current}" max="{max}" /> di
-      reputazione con la fazione <realm realm="faction-trellin-239a0ad8-3812-4f2a-9c11-1c312490249b"
-      />.
-    syrenthiaReputation: Avere <numberProgress current="{current}" max="{max}" />
-      di reputazione con la fazione <realm realm="faction-syrenthia-6e9359fa-597b-4448-9df5-cc3fff9a5108"
-      />.
-    erdwiseReputation: Avere <numberProgress current="{current}" max="{max}" /> di
-      reputazione con la fazione <realm realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb"
-      />.
-    halflingRebelsReputation: Avere <numberProgress current="{current}" max="{max}"
-      /> di reputazione con la fazione <realm realm="faction-halfling_rebels-394eaff8-2749-4473-949c-80da531a415e"
-      />.
+    jarvoniaReputation: Avere <numberProgress current="{current}" max="{max}" />
+      di reputazione con la fazione <realm 
+      realm="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db" />.
+    trellinReputation: Avere <numberProgress current="{current}" max="{max}" /> 
+      di reputazione con la fazione <realm 
+      realm="faction-trellin-239a0ad8-3812-4f2a-9c11-1c312490249b" />.
+    syrenthiaReputation: Avere <numberProgress current="{current}" max="{max}" 
+      /> di reputazione con la fazione <realm 
+      realm="faction-syrenthia-6e9359fa-597b-4448-9df5-cc3fff9a5108" />.
+    erdwiseReputation: Avere <numberProgress current="{current}" max="{max}" /> 
+      di reputazione con la fazione <realm 
+      realm="faction-erdwise-697ae8a6-491e-46fd-8a05-4b744f9630eb" />.
+    halflingRebelsReputation: Avere <numberProgress current="{current}" 
+      max="{max}" /> di reputazione con la fazione <realm 
+      realm="faction-halfling_rebels-394eaff8-2749-4473-949c-80da531a415e" />.
   maps:
     erdwiseMap: Possedere <object id="fa277527-585b-4a1d-bc73-a25fe1195017" />.
     halflingMap: Possedere <object id="f1a9e370-fd69-4a49-92c0-c83475a896ab" />.
-    jarvoniaMap: Possedere <object id="item-map_of_jarvonia-86ba96b3-a845-4f5c-a054-04ec5146fb25"
+    jarvoniaMap: Possedere <object 
+      id="item-map_of_jarvonia-86ba96b3-a845-4f5c-a054-04ec5146fb25" />.
+    syrenthiaMap: Possedere <object id="65979ee2-f98a-41c3-9f12-8858000017a3" 
       />.
-    syrenthiaMap: Possedere <object id="65979ee2-f98a-41c3-9f12-8858000017a3" />.
-    trellinMap: Possedere <object id="item-map_of_gdte-b28951b2-2cac-4e53-b6f1-bc2030590433"
-      />.
+    trellinMap: Possedere <object 
+      id="item-map_of_gdte-b28951b2-2cac-4e53-b6f1-bc2030590433" />.
   locationHasKeywords:
     text: Mentre ti trovi in un luogo <object id="{obj}" />.
   serviceKeywords:
-    text: Richiede il servizio {objects} di livello <serviceTier tier="{tier}" />
-      o superiore.
+    text: Richiede il servizio {objects} di livello <serviceTier tier="{tier}" 
+      /> o superiore.
   petTotalLevels:
-    text: Avere un totale di <numberProgress current="{current}" max="{max}" /> livelli
-      tra tutti i tuoi animali domestici.
+    text: Avere un totale di <numberProgress current="{current}" max="{max}" /> 
+      livelli tra tutti i tuoi animali domestici.
   petHighestLevel:
-    text: Avere un animale domestico con almeno il livello <numberProgress current="{current}"
-      max="{max}" />.
+    text: Avere un animale domestico con almeno il livello <numberProgress 
+      current="{current}" max="{max}" />.
   itemsWithKeywordCrafted:
-    text: Aver creato oggetti <object id="{obj}" />. <numberProgress current="{current}"
-      max="{max}" />.
+    text: Aver creato oggetti <object id="{obj}" />. <numberProgress 
+      current="{current}" max="{max}" />.
   itemsGained:
-    text: Ottieni <object id="{obj}" />. <numberProgress current="{current}" max="{max}"
-      />.
+    text: Ottieni <object id="{obj}" />. <numberProgress current="{current}" 
+      max="{max}" />.
   abilityAvailable:
     text: Avendo a disposizione la funzionalità <object id="{obj}" />.
   petWithKeyword:
-    text: Avere <object id="{obj}" /> animali domestici. <numberProgress current="{current}"
-      max="{max}" />.
-    textDistinct: Avere animali domestici unici <object id="{obj}" />. <numberProgress
+    text: Avere <object id="{obj}" /> animali domestici. <numberProgress 
       current="{current}" max="{max}" />.
+    textDistinct: Avere animali domestici unici <object id="{obj}" />. 
+      <numberProgress current="{current}" max="{max}" />.
   hasPet:
     text: Avere un animale domestico <object id="{obj}" />.
   petAmount:
-    text: Avere <numberProgress current="{current}" max="{max}" /> animali domestici.
+    text: Avere <numberProgress current="{current}" max="{max}" /> animali 
+      domestici.
   totalSkillLevel:
-    text: Avere un livello di abilità totale pari a <numberProgress current="{current}"
-      max="{max}" />.
+    text: Avere un livello di abilità totale pari a <numberProgress 
+      current="{current}" max="{max}" />.
   currentService:
-    text: Richiede il servizio <object id="{obj}" /> di livello <serviceTier tier="{tier}"
-      /> o superiore. Non puoi usare <object id="{currentObj}" icon="false" />.
+    text: Richiede il servizio <object id="{obj}" /> di livello <serviceTier 
+      tier="{tier}" /> o superiore. Non puoi usare <object id="{currentObj}" 
+      icon="false" />.
   currentServiceKeywords:
-    text: Richiede il servizio {objects} di livello <serviceTier tier="{tier}" />
-      o superiore. Non puoi usare <object id="{currentObj}" icon="false" />.
+    text: Richiede il servizio {objects} di livello <serviceTier tier="{tier}" 
+      /> o superiore. Non puoi usare <object id="{currentObj}" icon="false" />.
   recipeType:
     text: Mentre si eseguono le ricette <object id="{obj}" />.
   distinctKeywordItemInInventory:
-    text: Richiede <numberProgress current="{current}" max="{max}" /> <object id="{obj}"
-      /> nel tuo inventario.
+    text: Richiede <numberProgress current="{current}" max="{max}" /> <object 
+      id="{obj}" /> nel tuo inventario.
   skillTypeLevel:
-    text: Avere un livello totale di <skillType type="{type}"/> pari a <numberProgress
-      current="{current}" max="{max}" />.
-    textRelative: Aver raggiunto il {percent}% del livello massimo di <skillType type="{type}"/>
+    text: Avere un livello totale di <skillType type="{type}"/> pari a 
       <numberProgress current="{current}" max="{max}" />.
+    textRelative: Aver raggiunto il {percent}% del livello massimo di <skillType
+      type="{type}"/> <numberProgress current="{current}" max="{max}" />.
   craftingType:
-    text: Durante la creazione di <object id="{obj}" /> <numberProgress current="{current}"
-      max="{max}" />.
-    textSkill: Durante la creazione con l'abilità <skill skill="{skill}" /> <numberProgress
+    text: Durante la creazione di <object id="{obj}" /> <numberProgress 
       current="{current}" max="{max}" />.
+    textSkill: Durante la creazione con l'abilità <skill skill="{skill}" /> 
+      <numberProgress current="{current}" max="{max}" />.
   workEfficiencyAt:
-    text: Mantenendo un'efficienza lavorativa di almeno <numberProgress current="{current}"
-      max="{max}" />%.
-    textMaximum: Mantenendo la massima efficienza lavorativa <numberProgress current="{current}"
-      max="{max}" />.
+    text: Mantenendo un'efficienza lavorativa di almeno <numberProgress 
+      current="{current}" max="{max}" />%.
+    textMaximum: Mantenendo la massima efficienza lavorativa <numberProgress 
+      current="{current}" max="{max}" />.
   petsHatched:
-    text: Avere un qualsiasi <object id="pet_egg" /> <numberProgress current="{current}"
-      max="{max}" />.
+    text: Avere un qualsiasi <object id="pet_egg" /> <numberProgress 
+      current="{current}" max="{max}" />.
   collectiblesOwned:
-    text: Ottieni <icon i="Collectible" /> collezionabili <numberProgress current="{current}"
-      max="{max}" />.
+    text: Ottieni <icon i="Collectible" /> collezionabili <numberProgress 
+      current="{current}" max="{max}" />.
   totalWealth:
-    text: Avere un patrimonio totale di <icon i="money small"/> <numberProgress current="{current}"
-      max="{max}" />.
+    text: Avere un patrimonio totale di <icon i="money small"/> <numberProgress 
+      current="{current}" max="{max}" />.
   creditRating:
     text: Avere un rating creditizio di almeno {rating}.
   statValueAt:
-    text: Avendo {stat} di almeno <numberProgress current="{current}" max="{max}"
-      />.
+    text: Avendo {stat} di almeno <numberProgress current="{current}" 
+      max="{max}" />.
+  ironfoot:
+    text: Solo Ironfoot (temporaneamente disabilitato, verrà rielaborato).
+  notIronfoot:
+    text: Non Ironfoot (temporaneamente disabilitato, verrà rielaborato).
+  never:
+    text: Non disponibile (temporaneamente disabilitato, verrà rielaborato).
