@@ -133,15 +133,15 @@ singulars:
     swapToTablesSources: 'Bu nitelik şu eşyalardan bulduğun zaman onları özel ganimete
       dönüştürür:'
     worldMapIcons: |-
-      <image id="bank"/> <hl>Banka</hl>: Eşya yatırabilir veya çekebilirsin.
+      <image id="bank"/> <hl>Banka</hl>: Bankaya eşya yatırabilir veya bankadan eşya çekebilirsin.
 
-      <image id="deposit"/> <hl>Emanet kasası</hl>: Yalnızca eşya yatırabilirsin.
+      <image id="deposit"/> <hl>Emanet kasası</hl>: Yalnızca bankaya eşya yatırabilirsin.
 
       <image id="store"/> <hl>Market</hl>: Eşya alabilir veya satabilirsin!
 
       <image id="mysteriousMerchant"/> <hl>Esrarengiz Tüccar</hl>: İlgi çekici malların işini bilen satıcısı!
 
-      <image id="jobBoard"/> <hl>İş Panosu</hl>: Ödül ve itibar peşinde yürüyenler için haftalık işler!
+      <image id="jobBoard"/> <hl>İş Panosu</hl>: Ödül ve itibar peşinde yürüyenler için günlük işler!
 
       <image id="barber"/> <hl>Berber</hl> ve <image id="wardrobe"/> <hl>Gardırop</hl>: Görünümünü değiştirebilirsin.
 
@@ -152,3 +152,11 @@ singulars:
       <icon path="assets/icons/location_badges/unexplored_badge.png" size="16"/> <hl>Keşfedilmemiş</hl>: Bu konumu henüz hiç ziyaret etmemişsin.
 
       <icon path="assets/icons/location_badges/rumor_badge.png" size="16"/> <hl>Söylenti</hl>: Bu konumla ilgili söylentiler duymuşsun.
+    trading: |
+      Aktif durumdaki takas işlemlerini görüntüle.
+      <bp/> <icon i="Bank small"/>Bankandaki eşyaları her yerde takas edebilirsin. Takasa eklenen eşyalar bankadan alınır, takastan çıkarılan eşyalar ise bankana geri döner.
+      <bp/>Takas işlemi <socialPage /> sayfasından bir karakteri seçip ona <c>takas daveti</c> gönderilerek başlatılır.
+      <bp/>İki katılımcı da ortaya konan teklifleri <icon i="Accept small"/> kabul ettiği zaman takas tamamlanır. Diğer tarafın yaptığı her değişikliği yeniden kabul etmen gerekir.
+      <bp/> <icon i="Accept small"/>Tamamlanan veya <icon i="Cross small"/> reddedilen takaslardaki eşyalar<icon i="Mailbox general"/> posta kutuna gönderilir.
+      <bp/>Başka bir karakterle aynı anda yalnızca bir aktif takas işlemine devam edebilirsin.
+      <bp/> <a href="https://discord.gg/Kk6VecJFEk" c="lightPurple">Discord</a>'umuzu ziyaret ederek almak ya da satmak istediğin şeylerle ilgili pazarlık etmek için yardım alabilirsin.
