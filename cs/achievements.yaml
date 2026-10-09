@@ -175,8 +175,8 @@ singulars:
       desc: Pouze skutečný znalec dokáže rozlišit obyčejný odpad od kvalitního.
     tasteTheRainbow:
       name: Ochutnejte duhu
-      desc: Říká se, že duha chutná jako prach z rohu jednorožce, ale 
-        nezapomeňte, že je nelegální rozemlít roh jednorožce na prach.
+      desc: Říká se, že duha chutná jako prášek z rohu jednorožce, ale 
+        nezapomeňte, že drtit roh jednorožce je nelegální.
     humanFish:
       desc: Být napůl člověk, napůl ryba může být velmi zábavné. Záleží jen na 
         tom, kterou polovinu si vyberete.
@@ -268,6 +268,7 @@ singulars:
       name: Piráti z Agateanu
     tailorSwiftly:
       desc: Miláčku, jsem noční můra převlečená za sen
+      name: Krejčana Rychlíková
     itsATrap:
       desc: Je jich tady moc.
       name: Je to past!
@@ -278,6 +279,10 @@ singulars:
     bigGameHunter:
       desc: Vždycky je někde větší ryba. Tedy, divoké zvíře.
       name: Mistr lovec
+    enterSandman:
+      desc: Odchází světlo, noci se zleklo, vem mě za ruku - odlétáme do země 
+        hluku!
+      name: Enter Sandman
   requirements:
     activityButterfly: Dokončete aktivitu <object 
       id="activity-butterfly_catching-ddef8fc5-a61e-4689-bacb-e49ee89f09c8" />. 
@@ -329,8 +334,8 @@ singulars:
     exploreJarvonia: Prozkoumejte každé místo v <object 
       id="faction-jarvonia-1b061315-a63d-4dc1-a8ba-10902a83c5db" /> 
       <numberProgress />
-    gainFineMaterial: Získejte "kvalitní" materiál z aktivity. <numberProgress 
-      />
+    gainFineMaterial: Získejte "kvalitní" materiál z <hl>aktivity</hl>. 
+      <numberProgress />
     activityBasket: Dokončete aktivitu <object 
       id="activity-underwater_basket_weaving-7ba725a2-d147-437c-98bf-5a9f58d68b65"
       />. <numberProgress />
@@ -349,15 +354,15 @@ singulars:
     openTreasureChest: Otevřete <object id="chest" /> <numberProgress />
     haveRingsEquipped: Noste obě položky <object id="item_ring" /> na sobě. 
       <numberProgress />
-    gainTrinketFromActivity: Získejte libovolný <object id="item_trinket" /> 
-      jako kořist z aktivity. <numberProgress />
+    gainTrinketFromActivity: Získej libovolný <object id="item_trinket" /> jako 
+      kořist z <hl>aktivity</hl>. <numberProgress />
     mine1kGoldOres: Získejte <object 
       id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f" alwaysShow="true" 
       /> z aktivit. <numberProgress />
     dropItem: Vyhodit předmět. <numberProgress />
     craftPerfectItem: Vytvořte perfektní předmět. <numberProgress />
-    gainTreasureChest: Získejte <object id="chest" /> z jakekoliv aktivity. 
-      <numberProgress />
+    gainTreasureChest: Získejte <object id="chest" /> z jakekoliv 
+      <hl>aktivity</hl>. <numberProgress />
     gainRingWhileFishing: Získejte libovolný <object id="item_ring" /> z <object
       id="activity_fishing" /> <numberProgress />
     collect1kMushrooms: Nazbírejte <object id="mushroom" alwaysShow="true" /> z 
@@ -383,7 +388,7 @@ singulars:
       <numberProgress />
     haveHammerEquipped: Mějte vybavené <object id="smithingHammer" />. 
       <numberProgress />
-    gainFineTrash: Najděte "kvalitní" <object 
+    gainFineTrash: Získej "kvalitní" <object 
       id="item-trash-40c14f4e-3ef2-435a-a5de-123843f824bf" alwaysShow="true" /> 
       z aktivity. <numberProgress />
     have5DifferentGems: Mějte v batohu více druhů <object id="cut_gem" /> 
@@ -406,8 +411,8 @@ singulars:
     gainFineStarPearl: Získejte "kvalitní" <object 
       id="item-star_pearl-d2b3fcd5-a8d2-411c-a829-6eddc878ad81" 
       alwaysShow="true" /> z aktivity. <numberProgress />
-    gainSocksFromActivity: Získejte <object id="item_socks" /> jako kořist z 
-      aktivity. <numberProgress />
+    gainSocksFromActivity: Získej <object id="item_socks" /> jako kořist z 
+      <hl>aktivity</hl>. <numberProgress />
     makeSandwich: Udělejte <object id="sandwich" /> <numberProgress />
     mine10kOres: Vytěžit <object id="ore" /> libovolného typu. <numberProgress 
       />
@@ -468,15 +473,15 @@ singulars:
     ectoCollect: Mějte <object id="c7a75c46-f140-4116-b0b6-f74e5d763ef5" /> 
       nasbírané množství <numberProgress />
     bectoTools: Vytvořte <object id="spectral" /> předměty. <numberProgress />
-    haveJarOfDirt: Mějte <object id="dabc27db-3bc9-4480-a0fd-2d95bc4a6cc8" 
+    haveJarOfDirt: Najdi <object id="dabc27db-3bc9-4480-a0fd-2d95bc4a6cc8" 
       /><numberProgress />
     collect1kPlants: Získejte <object id="plant" alwaysShow="true" /> z aktivit.
       <numberProgress />
     haveAnyEternalSpectralTool: Získejte věčný<object id="spectral" /><object 
-      id="tool" /> <numberProgress />
-    havePirateHat: Vlastněte <object 
-      id="item-pirate_hat-7972e8b6-9060-4ed7-a78e-8541aa530fd8" 
-      /><numberProgress />
+      id="tool" /> (ne obchodováním)<numberProgress />
+    havePirateHat: Získej <object 
+      id="item-pirate_hat-7972e8b6-9060-4ed7-a78e-8541aa530fd8" />(ne z 
+      obchodování)<numberProgress />
     rabbitTrack: Dokončete aktivitu <object 
       id="2250915a-2619-488a-94af-c4008054d7b2" /><numberProgress />
     huntDeer: Dokončete aktivitu <object 
@@ -484,17 +489,18 @@ singulars:
     haveSwashbucklerSword: Mějte <object 
       id="item-swashbuckler_sword-883bd712-2147-47d1-8446-5a7021b01dfd" 
       /><numberProgress />
-    have10UnidentifiedRemains: Nasbírejte <object 
+    have10UnidentifiedRemains: Získej <object 
       id="item-unidentified_remains-8ba4e2a2-487b-45bd-a392-0956765538eb" 
       /><numberProgress />
     have100FineSaltrum: Nasbírejte kvalitní <object 
       id="item-saltrum-f2df867a-21a7-48db-b13b-efea9e46cb5d" /><numberProgress 
       />
     haveAmuletofFinding: Vlastněte <object 
-      id="7a6c5956-7670-4ebe-96a3-8e3d2a721dce" /><numberProgress />
-    haveEyePatch: Vlastněte <object 
-      id="item-eye_patch-5967b3c7-8fc8-494b-af0e-03a74923771f" /><numberProgress
-      />
+      id="7a6c5956-7670-4ebe-96a3-8e3d2a721dce" />(ne z 
+      obchodování)<numberProgress />
+    haveEyePatch: Získej <object 
+      id="item-eye_patch-5967b3c7-8fc8-494b-af0e-03a74923771f" />(ne z 
+      obchodování)<numberProgress />
     boxTrapHunt300: Dokončete aktivitu <object 
       id="c2ef104c-3453-4dce-aa35-8d1b3a1daf58" /><numberProgress />
     craft100BoxTraps: Vytvořte jakýkoliv <object id="huntingTrap" 
@@ -508,3 +514,7 @@ singulars:
     tailorWE: Dosháhněte celkové pracovní efektivity 130%
     hatchMummy: Vlastněte <object id="8b08d737-8426-42f7-88e0-03c14648cff4" 
       /><numberProgress />
+    gain5000Ecto: Získej <object id="c7a75c46-f140-4116-b0b6-f74e5d763ef5" /> 
+      (ne z obchodování) <numberProgress />
+    totalWealth: Vlastněte celkové jmění v hodnotě <icon i="money small"/> 
+      zlatých mincí. <numberProgress />
