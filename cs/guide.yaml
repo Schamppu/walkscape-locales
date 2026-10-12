@@ -8,8 +8,8 @@ maps:
     "10": V <hl>hamburger menu</hl> vpravo dole (nebo vlevo dole v režimu pro 
       leváky) najdete <hl>WalkPedii</hl>, která vám pomůže sledovat váš celkový 
       pokrok.
-    "15": Podívejte se na náš <c c="green">Portál</c>, <c c="red">Reddit</c> a 
-      <c c="purple">Discord</c>, kde najdete oznámení, aktualizace a vývojářské 
+    "15": Podívejte se na náš <c c="green">Portál</a>, <c c="red">Reddit</a> a 
+      <c c="purple">Discord</a>, kde najdete oznámení, aktualizace a vývojářské 
       blogy.
     "17": <hl>Výsledek kvality</hl> pomůže zvýšit šance na kvalitnější předměty 
       zobrazené ve spodní části <hl>receptů</hl> v <hl>řemeslném rozhraní</hl>.
@@ -26,10 +26,10 @@ maps:
       jejich efekty. Většina z nich nefunguje pouze z batohu.
     "14": Pokud probíhá údržba, nebojte se, vaše kroky se obvykle budou počítat 
       i během odstávky. Pro jistotu si prohlédněte oznámení na <c 
-      c="purple">Discordu</c>!
+      c="purple">Discordu</a>!
     "1": Základní šance na nalezení <hl>KVALITNÍHO</hl> materiálu je 
       <hl>1/100</hl>, kterou můžete zvýšit s lepším vybavením a nástroji.
-    "9": Mnoho NPC vám může říct <h1>fámy</h1>, které vám pomohou najít věci ve 
+    "9": Mnoho NPC vám může říct <hl>fámy</hl>, které vám pomohou najít věci ve 
       hře.
     "18": Úroveň dovedností překračující hlavní požadavek na dovednost dané 
       <hl>aktivity</hl> dává +1,25% dodatečné <hl>pracovní efektivity</hl> pro 
@@ -37,7 +37,7 @@ maps:
     "13": Místo v bance je neomezené, pokud se obáváte o využití něčeho, uložte 
       si to!
     "16": Našli jste něco rozbitého nebo máte návrh? Nahlaste nám to na <c 
-      c="purple">Discord</c>! Vaše hlášení pomáhají vylepšit hru!
+      c="purple">Discord</a>! Vaše hlášení pomáhají vylepšit hru!
     "19": Úrovně dovedností překračující hlavní požadavek na dovednost 
       <hl>receptu</hl> v <hl>rozhraní pro tvorbu</hl> poskytuje dodatečný 
       výsledek <hl>Kvality</hl>.
@@ -48,13 +48,21 @@ maps:
       banky.
     "22": Hledáte konkrétní informaci a nevadí Vám spoilery? Koukněte se na <a 
       href="https://wiki.walkscape.app" c="yellow"></a>!
+    "21": Lovecké činnosti, které vyžadují vstupy, získávají <hl>bonusy</hl> za 
+      použití jejich verzí <itemTag tag="fine"/>! Podívejte se do rozhraní, co 
+      přesně přinášejí!
+    "23": Užíváš si hru? Můžeš poděkovat všem podporujícím z platforem <a 
+      href="https://www.patreon.com/WalkScape" c="yellow">Patreon</a> a <a 
+      href="https://buymeacoffee.com/walkscape" c="yellow">Buy Me A Coffee</a>!
+    "25": Schopnosti stejného druhu mají společný cooldown a nelze je kumulovat,
+      i když máte více stejného typu.
   skillTypes:
     "gathering": Sběratelské dovednosti zahrnují <skill skill="foraging"/>, 
-      <skill skill="fishing"/>, <skill skill="mining"/> a <skill 
-      skill="woodcutting"/>.
+      <skill skill="fishing"/>,<skill skill="hunting"/> <skill skill="mining"/> 
+      a <skill skill="woodcutting"/>.
     "artisan": Řemeslné dovednosti zahrnují <skill skill="cooking"/>, <skill 
       skill="crafting"/>, <skill skill="carpentry"/>, <skill skill="smithing"/> 
-      a <skill skill="tinkering"/>.
+      ,<skill skill="tailoring"/>a <skill skill="trinketry"/>.
     "utility": Užitkové dovednosti zahrnují <skill skill="agility"/>.
 singulars:
   info:
@@ -85,3 +93,11 @@ singulars:
     claimPet: Jakmile si svého mazlíčka vyzvednete, bude přidán k vašim 
       mazlíčkům a můžete ho kdykoli vylíhnout a přivolat. Vyzvednuté mazlíčky 
       nelze vyměnit, protože se <c>.připojí k vaší postavě</c>.
+    claimCosmeticDrop: Získáním kosmetického předmětu se tento předmět 
+      <c>spotřebuje</c> a trvale se odemkne pro vaši postavu, takže jej můžete 
+      nosit ze šatníku. Tento krok nelze vzít zpět a kosmetický předmět, který 
+      jste již odemkli, se již znovu neobjeví.
+    swapXpFromEffort: 'TentTento atribut převádí předměty na zkušenosti. Zde je přehled
+      toho, kolik zkušeností získáte z různých předmětů:'
+    mailbox: Předměty, které získáte za události, při obchodování s ostatními 
+      hráči atd., si můžete vyzvednout ze své poštovní schránky.

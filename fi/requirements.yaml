@@ -177,8 +177,9 @@ singulars:
   keywordEquipped:
     text: <object id="{obj}" /> on oltava käytössä.
   keywordWithLevelEquipped:
-    text: Ylläsi on oltava <object id="{obj}" /> joka vaatii vähintään <skill 
-      skill="{skill}"/>tason <numberProgress current="{current}" max="{max}" />.
+    text: Ylläsi on oltava <object id="{obj}" />, jonka vaatimuksissa on 
+      vähintään <skill skill="{skill}"/>taso <numberProgress current="{current}"
+      max="{max}" />.
   serviceKeywords:
     text: Vaatii palvelun tasoa <serviceTier tier="{tier}" /> {objects} tai 
       paremman.
@@ -232,8 +233,9 @@ singulars:
   skillTypeLevel:
     text: <skillType type="{type}"/>taitojen yhteenlasketun tason oltava 
       yhteensä <numberProgress current="{current}" max="{max}" />.
-    textRelative: <skillType type="{type}"/>taitojen yhteenlasketun tason oltava
-      {percent}% maksimista <numberProgress current="{current}" max="{max}" />.
+    textRelative: Edellytyksenä on {percent}% <skillType type="{type}"/>taitojen
+      yhteenlaskettujen tasojen maksimista <numberProgress current="{current}" 
+      max="{max}" />.
   petsHatched:
     text: Vaaditaan <object id="pet_egg" /> <numberProgress current="{current}" 
       max="{max}" />.
