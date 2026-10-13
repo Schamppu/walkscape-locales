@@ -130,20 +130,20 @@ singulars:
     swapToTablesSources: 'Ten atrybut sprawia, że przedmioty stają się wyjątkowym
       znaleziskiem w momencie ich odnalezienia:'
     worldMapIcons: "<image id=\"bank\"/> <hl>Bank</hl>: Pozostawianie i zabieranie
-      przedmiotów.\n\n<image id=\"deposit\"/> <hl>Skrzynka Depozytowa</hl>: Wyłącznie
-      pozostawianie przedmiotów.\n\n<image id=\"store\"/> <hl>Sklep</hl>: Kupowanie
-      i Sprzedawanie rzeczy!\n\n<image id=\"mysteriousMerchant\"/> <hl>Tajemniczy
+      przedmiotów.\n\n<image id=\"deposit\"/> <hl>Skrzynka Depozytowa</hl>: Jak wyżej,
+      możesz jednak tylko zostawiać przedmioty.\n\n<image id=\"store\"/> <hl>Sklep</hl>:
+      Kupowanie i Sprzedawanie rzeczy!\n\n<image id=\"mysteriousMerchant\"/> <hl>Tajemniczy
       Kupiec</hl>: Znakomity dostawca niezwykłych przedmiotów.\n\n<image id=\"barber\"\
       /> <hl>Fryzjer</hl> i <image id=\"wardrobe\"/> <hl>Garderoba</hl>: Zmienianie
       wyglądu.\n\n<image id=\"forge\"/> <image id=\"kitchen\"/><image id=\"workshop\"\
       /> <image id=\"sawmill\"/><image id=\"loom\"/> <image id=\"trinketry\"/> <hl>Usługi
       Wytwarzania</hl>: Wytworzenie czegoś, receptury gotowania, rzemiosła, stolarstwa,
       krawiectwa i jubilerstwa.\n\nKolor ramki ikony pokazuje poziom usługi: <image
-      id=\"forge\"/> <serviceTier tier=\"basic\"/> or <image id=\"forgeAdvanced\"\
+      id=\"forge\"/> <serviceTier tier=\"basic\"/> lub <image id=\"forgeAdvanced\"\
       /> <serviceTier tier=\"advanced\"/>.\n\n<icon path=\"assets/icons/location_badges/unexplored_badge.png\"\
-      \ size=\"16\"/> <hl>Nieodkryte</hl>: Jeszcze nie udało ci się odwiedzić tego
-      miejsca.\n\n<icon path=\"assets/icons/location_badges/rumor_badge.png\" size=\"\
-      16\"/> <hl>Pogłoski</hl>: Gdzieś obiło ci się o uszy o tej lokacji."
+      \ size=\"16\"/> <hl>Nieznane</hl>: Jeszcze nie udało ci się odwiedzić tego miejsca.\n\
+      \n<icon path=\"assets/icons/location_badges/rumor_badge.png\" size=\"16\"/>
+      <hl>Pogłoski</hl>: Gdzieś obiło ci się o uszy o tej lokacji."
     claimCosmeticDrop: Przypisując kosmetyczny przedmiot, który ci wypadł 
       <c>zużywasz go</c> i trwale odblokowujesz ten przedmiot dla swojej 
       postaci, możesz wtedy założyć go w garderobie. Nie można tego cofnąć, a 
@@ -155,6 +155,10 @@ singulars:
       otrzymasz z różnych przedmiotów:'
     trading: |
       Wyświetl wszystkie aktywne wymiany i ich status.
-      <bp/> Wymiany można dokonywać z dowolnego miejsca. Przedmioty dodane do wymiany są pobierane z Twojego <icon i="Bank small"/> banku, a ich usunięcie powoduje ich zwrot do tego miejsca. Wymianę inicjuje się, wybierając postać w rankingach lub menu społecznościowym.
-      <bp/> Wymiana zostaje sfinalizowana, gdy obie strony <icon i="Accept"/> zaakceptują przedstawione oferty. Wszelkie zmiany wprowadzone przez drugą stronę wymagają ponownej akceptacji. Przedmioty z zakończonej wymiany trafiają do Twojej skrzynki pocztowej.
+      <bp/> Wymiany można dokonywać z dowolnego miejsca. Przedmioty dodane do wymiany są pobierane z Twojego <icon i="Bank small"/> banku. Przedmioty dodane do wymiany są pobierane z Twojego banku, a ich usunięcie powoduje ich zwrot do tego miejsca.
+      <bp/> Wymiany są inicjowane przez wybór postaci poprzez stronę <socialPage /> i wysyłając <c>zaproszenie do wymiany</c>.
+      <bp/> Wymiana zostaje sfinalizowana, gdy obie strony <icon i="Accept"/> zaakceptują przedstawione oferty. Wszelkie zmiany wprowadzone przez drugą stronę wymagają ponownej akceptacji.
+
+      <bp/> Przedmioty z wymiany ukończonej <icon i="Accept small"/> lub odrzuconej <icon i="Cross small"/> są wysłane do twojej skrzynki <icon i="Mailbox general"/>.
       <bp/> Z danym graczem możesz prowadzić tylko jedną wymianę jednocześnie.
+      <bp/> Odwiedź nasz <a href="https://discord.gg/Kk6VecJFEk" c="lightPurple">Discord</a>, by pomóc w tworzeniu negocjacji handlowych i ofert sprzedaży lub kupna, których szukasz.
