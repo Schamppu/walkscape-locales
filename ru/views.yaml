@@ -263,6 +263,14 @@ singulars:
       moreRewards: +<c>{count}</c> ещё
       orInstead: или
       alternativeOption: '{count} × {quality}'
+      accepted: Принято
+      rewardsLabel: Награды
+      rewardsLabelCount: Награды ({count})
+      rewardLineCoins: 'монеты: {amount}'
+      rewardLineXp: 'опыт {name}: {amount}'
+      notVisited: Ещё не посещено
+      noAcceptedJobs: У вас нет активных заданий.
+      filterAccepted: В процессе
     dialogs:
       abandonJob:
         title: Бросить работу
@@ -1404,6 +1412,12 @@ singulars:
           для тебя, чтобы ты не покорился темным силам.\n\n— Герберт
       tradeCompleted:
         subject: Сделка с {characterName} завершена
+        text: Переговоры <c><bold>{characterName}</bold></c> закончились 
+          успешно! <action id="receipt">Посмотреть отчëт</action>\n\nВ обмен на 
+          ваше предложение вы получили
+        textNothingReceived: Переговоры <c><bold>{characterName}</bold></c> 
+          закончились успешно! <action id="receipt">Посмотреть 
+          отчëт</action>\n\nВы не получили ничего взамен.
       tradeRejected:
         subject: Сделка с {characterName} отклонена
         text: Переговоры с <c><bold>{characterName}</bold></c> закончились 
@@ -1490,6 +1504,10 @@ singulars:
       coinsEarnedSelling: Заработано монет с продаж
       coinsSpentBuying: Потрачено монет на покупки
       incomeFromSelling: Доход от продаж
+      received: Получено
+      given: Отдано
+      trading: Торговля
+      itemCount: '{count}×'
   ironfoot:
     phrases:
       relinquishWarning: Ваш персонаж в настоящее время является 
@@ -1497,6 +1515,10 @@ singulars:
         отказаться от статуса <c>Ironfoot</c>. Этот процесс необратим.
       cannotTradeWith: Игроков <c><bold>Ironfoot</bold></c> нельзя приглашать к 
         торговле.
+  connectionQuality:
+    phrases:
+      reconnecting: Переподключение к серверу…
+      offline: Нет соединения с сервером.
 plurals:
   inventory:
     info:
