@@ -419,6 +419,25 @@ singulars:
         name: <PLACEHOLDER>
         desc: <PLACEHOLDER>
         text: <stat s="skillLevel"/> уровень в пути
+    fineMaterialOutcome:
+      global:
+        text: Для всех навыков <stat s="fineMaterialOutcome"/>
+      whileMainSkill:
+        text: <stat s="fineMaterialOutcome"/> выполняя <supp k="skill"/>
+      whileTraveling:
+        text: <stat s="fineMaterialOutcome"/> при перемещении
+      whileMainSkillAndLocationKeyword:
+        text: <stat s="fineMaterialOutcome"/> выполняя <supp k="skill"/> в 
+          локации <supp k="keyword"/>.
+      whileMainSkillAndRealm:
+        text: <stat s="fineMaterialOutcome"/> выполняя <supp k="skill"/> в <supp
+          k="realm"/>.
+      whileLocationKeyword:
+        text: Для всех навыков <stat s="fineMaterialOutcome"/> находясь в 
+          локации <supp k="keyword"/>.
+      whileSkillGroup:
+        text: <stat s="fineMaterialOutcome"/> выполняя любой навык <supp 
+          k="skillGroup"/>.
   special:
     findBirdNests:
       whileWoodcutting:
