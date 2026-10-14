@@ -540,6 +540,10 @@ singulars:
       reputation: <bp /><object id="{faction}" /> reputacja <c>+{amount}</c>
       lore: Można odnaleźć <bp /><icon i="Lore item"/> <c>{count} Przedmiotów 
         Fabularnych</c>
+      cosmetics: <bp /><icon i="Wardrobe action"/> <c>{count} przedmiotów 
+        kosmetycznych</c> można znaleźć
+      petEggs: <bp /><icon i="Pet egg"/> <c>{count} jaj pupili</c> z nowymi 
+        pupilami
     options:
       completeUntilActions: Wykonaj konkretną liczbę akcji
       numberOfActions: Liczba akcji
@@ -819,6 +823,16 @@ singulars:
       confirmBatch: Potwierdź
       toAccept: akceptuj
       noAcceptedJobs: Nie masz żadnych zadań w toku.
+      acceptedJobsHere: <c>{count}</c> zleceń do zwrotu
+      needMore: Potrzeba {count} więcej
+      readyFromBank: Gotowe · {count} z twojego banku
+      rewardLineItem: '{count} × {name}'
+      rewardLineReputation: '{amount} {name} reputacji'
+      rewardLineOther: '{name}'
+      chooseHandIn: Wybierz, które przedmioty dostarczyć
+      confirmAndClose: Zatwierdź & zamknij
+      toHandIn: do wręczenia
+      toAbandon: do porzucenia
     dialogs:
       abandonJob:
         title: Porzuć zlecenie
@@ -1913,6 +1927,31 @@ singulars:
       lifetimeReceived: Wartość otrzymana z transkacji
       lifetimeGiven: Wartość dana w transkacjach
       tradeBalancePlayers: Wymiany gracz-z-graczem
+      earnedWealth: Majątek zdobyty
+      usedUp: Majątek wydany
+      netEarnings: Zysk netto
+      earnings: Zyski
+      wealthHistory: Historia majątku
+      tradeBalance: Balans wymiany
+      periodDay: Dzień
+      periodWeek: Tydzień
+      periodMonth: Miesiąc
+      sinceDay: od wczoraj
+      sinceWeek: od tygodnia
+      sinceMonth: od ostatniego miesiąca
+      noChange: Brak zmiany
+      thisDay: Dziś
+      thisWeek: Ten tydzień
+      thisMonth: Ten miesiąc
+      received: Otrzymane
+      given: Dane
+      historyEmpty: Historia twojego majątku jest notowana.
+      trading: Wymiana
+      tradeBalanceNow: Balans wymiany na dzisiejsze ceny
+      coinsTraded: Wymienione monety (netto)
+      topReceived: Największa otrzymana wartość
+      topGiven: Największa wartość dana
+      itemCount: '{count}×'
   ironfoot:
     phrases:
       cannotTradeWith: Postać<c><bold>Żelaznostopy</bold></c> nie może zostać 
