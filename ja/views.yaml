@@ -4,9 +4,9 @@ singulars:
       requirements: 条件
       cantStartActivity: アクティビティを始められない
       guideTip: 今日のヒント
-      options: 設定
+      options: オプション
       savedSteps: 蓄積歩数
-      stopWhenOverEncumbered: 重量過多になればやめる
+      stopWhenOverEncumbered: 重量過多で停止
       savedStepsUsed: 使用された蓄積歩数
       startActivity: アクティビティを始める
       noActivitiesInLocation: <object id="{location}"/>にはアクティビティがない。
@@ -17,10 +17,21 @@ singulars:
       fromPets: ペット
       abilities: 能力
       fromOverencumbered: 重量過多
+      allAttributes: すべての属性を表示
+      workEfficiency: 作業効率
+    info:
+      savedSteps: 
+        蓄積歩数は歩数の無駄を防ぎます。アクティビティを実行していないときに歩くと貯まり、再びアクティビティを始めると、歩いた歩数を2倍にする形で消費されます。
   character:
     phrases:
       stepsOfLastWeek: 過去７日の歩数
       stepsToNextLevel: 次のレベルまでの歩数<c>{steps}</c>
+      skills: スキル
+      totalLevel: 合計スキルレベル
+      savePicture: 画像を保存
+    info:
+      skillBreakdown: 
+        キャラクターがこれまでの旅で上げてきた全スキルの内訳です。スキルをタップすると、詳しい情報と解放される内容を確認できます。
   rewards:
     phrases:
       alreadyClaimed: もう引き取った
@@ -39,7 +50,16 @@ singulars:
         hideSteps: 歩数を表示しない
   stats:
     phrases:
-      totalSteps: 歩数合計
+      totalSteps: 合計歩数
+      reputation: 評判
+      stats: 統計
+      highestStepsIn24Hours: 24時間の最高歩数
+      statUpdatesWithDelay: この統計は最大<c>1時間</c>遅れて更新されます。
+      totalSkillXp: 合計スキルXP
+      recordedFrom: <c>{from}</c>から<c>{to}</c>までの記録です。
+    info:
+      reputation: 評判は、WalkScapeの各派閥でどれだけ名が知られているかを示します。
+      stats: アレヌムの世界で踏みしめてきた一歩一歩から集めた統計です。
   permissions:
     deviceSource:
       watchAndroid: ヘルスコネクト
@@ -53,6 +73,33 @@ singulars:
   leaderboards:
     phrases:
       totalSteps: 歩数合計
+  faction:
+    phrases:
+      openFaction: 派閥を開く
+  location:
+    phrases:
+      activities: アクティビティ
+      factions: 派閥
+      owner: 所有者
+  crafting:
+    phrases:
+      recipes: レシピ
+  jobs:
+    phrases:
+      filters: フィルター
+      browseJobBoards: 依頼を探す
+  inventory:
+    phrases:
+      checkBank: 銀行
+      depositAll: すべて
+      mail: メール
+      treasury: 宝庫
+  journal:
+    phrases:
+      jobs: 依頼
+  attributeListing:
+    phrases:
+      allAttributes: すべての特性
 plurals:
   activity:
     phrases:
@@ -60,12 +107,14 @@ plurals:
         zero: '-'
         many: '-'
         few: '-'
+        other: 残りの合計歩数
       actionsRemaining:
         zero: '-'
         one: '-'
         two: '-'
         few: '-'
         many: '-'
+        other: 残り回数
       stepsUntilArrival:
         few: '-'
         zero: '-'
@@ -73,7 +122,7 @@ plurals:
       stepsRequired:
         one: '-'
         many: '-'
-        other: 必要な歩数
+        other: 所要歩数
         two: '-'
         zero: '-'
         few: '-'
@@ -81,6 +130,7 @@ plurals:
         few: '-'
         zero: '-'
         many: '-'
+        other: レベルアップまでの歩数
       stepsToCraft:
         zero: '-'
         few: '-'
@@ -89,3 +139,18 @@ plurals:
         zero: '-'
         few: '-'
         many: '-'
+        other: レベルアップまでの回数
+  location:
+    phrases:
+      playersHere:
+        other: <c>{}</c>人が滞在中
+      playersDoingActivity:
+        other: <c>{}</c>人が活動中
+maps:
+  skillTypes:
+    "artisan": 生産系
+    "gathering": 採取系
+    "utility": 補助系
+  character:
+    stepsTime:
+      "daily": 日別の歩数
