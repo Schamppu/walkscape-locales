@@ -16,6 +16,10 @@ singulars:
         name: 鉄鉱
       saltCrystal:
         name: 塩の結晶
+      tinOre:
+        name: スズ鉱石
+      opal:
+        name: オパールの原石
     foraging:
       wheat:
         name: 小麦
@@ -31,12 +35,24 @@ singulars:
         name: 草
       snowdrop:
         name: スノードロップ
+      moondaisy:
+        name: ムーンデイジー
+      thistle:
+        name: アザミ
+      flax:
+        name: 亜麻
     rawFish:
       rawShrimp:
         name: 生のエビ
+      rawTrout:
+        name: 生のマス
     misc:
       fishingLine:
         name: 釣り糸
+      trash:
+        name: ゴミ
+      fishbone:
+        name: 魚の骨
     crafting:
       rope:
         name: より糸
@@ -45,24 +61,58 @@ singulars:
         name: シラカバの板材
       pinePlank:
         name: マツの板材
+      oakPlank:
+        name: オークの板材
+      woodScrap:
+        name: 木屑
+    trinketry:
+      spiderTrinket:
+        name: クモの小物
+    smithing:
+      steelBar:
+        name: 鋼インゴット
+      copperBar:
+        name: 銅インゴット
   crafted:
     skilling:
       mining:
         copperPickaxe:
           name: 銅のツルハシ
+          desc: 採掘用の、もろくて軽いツルハシ。仕事はちゃんとこなす。
+        basicPickaxe:
+          name: 初級ツルハシ
       fishing:
         basicFishingPole:
           name: 木の釣り竿
         smallFishingNet:
           name: 初級漁網
+        largeFishingNet:
+          name: 大きな漁網
       tailoring:
         tattyHandwraps:
           name: ぼろの手甲
+        linenCloth:
+          name: リネンの布
+      woodcutting:
+        basicHatchet:
+          name: 初級手斧
+        copperHatchet:
+          name: 銅の手斧
+      hunting:
+        birchHuntingBow:
+          name: シラカバの狩猟弓
+        copperArrows:
+          name: 銅の矢
+      foraging:
+        stoneSickle:
+          name: 初級鎌
   containers:
     skilling:
       regional:
         rustyChest:
           name: 錆びた宝箱
+        jarvoniaChest:
+          name: ジャーボニアの宝箱
       crafting:
         craftingChest:
           name: クラフトの宝箱
@@ -72,15 +122,72 @@ singulars:
       foraging:
         foragingChest:
           name: 採集の宝箱
+        sunkenChest:
+          name: 沈んだ宝箱
       smithing:
         smithingChest:
           name: 鍛冶の宝箱
+      fishing:
+        fishingChest:
+          name: 釣りの宝箱
+      hunting:
+        huntingChest:
+          name: 狩りの宝箱
+      cooking:
+        cookingChest:
+          name: 調理の宝箱
+      tailoring:
+        tailoringChest:
+          name: 裁縫の宝箱
+      woodcutting:
+        woodcuttingChest:
+          name: 伐採の宝箱
+        birdNest:
+          name: 鳥の巣
+      carpentry:
+        carpentryChest:
+          name: 木工の宝箱
+      agility:
+        agilityChest:
+          name: 俊敏性の宝箱
   consumables:
     cooking:
       bread:
         name: パン
+      porridge:
+        name: 麦がゆ
+      saltrum:
+        name: ソルトラム
+      beer:
+        name: ビール
+      wine:
+        name: ワイン
+      potato:
+        name: ジャガイモ
+      tomato:
+        name: トマト
+    cookedFish:
+      cookedShrimp:
+        name: 調理済みのエビ
   looted:
     skilling:
       fishing:
         rustyFishingNet:
           name: 錆びた漁網
+        rustyFishingRod:
+          name: 錆びた釣り竿
+      carpentry:
+        simpleSaw:
+          name: 簡素なのこぎり
+      agility:
+        birchSkis:
+          name: シラカバのスキー板
+    versatile:
+      lifeVest:
+        name: ライフジャケット
+      herbertsCape:
+        name: ハーバートのマント
+      herbertsHat:
+        name: ハーバートの帽子
+      herbertsShirt:
+        name: ハーバートのシャツ
