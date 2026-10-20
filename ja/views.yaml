@@ -19,9 +19,13 @@ singulars:
       fromOverencumbered: 重量過多
       allAttributes: すべての属性を表示
       workEfficiency: 作業効率
+      inputs: 投入物
+      levelActivity: <object id="{skill}"/>レベル<c>{level}</c>のアクティビティ
     info:
       savedSteps: 
         蓄積歩数は歩数の無駄を防ぎます。アクティビティを実行していないときに歩くと貯まり、再びアクティビティを始めると、歩いた歩数を2倍にする形で消費されます。
+    options:
+      completeUntilActions: 指定回数だけ実行
   character:
     phrases:
       stepsOfLastWeek: 過去７日の歩数
@@ -29,6 +33,7 @@ singulars:
       skills: スキル
       totalLevel: 合計スキルレベル
       savePicture: 画像を保存
+      level: キャラクターレベル：<c>{level}</c>
     info:
       skillBreakdown: 
         キャラクターがこれまでの旅で上げてきた全スキルの内訳です。スキルをタップすると、詳しい情報と解放される内容を確認できます。
@@ -48,6 +53,11 @@ singulars:
     categories:
       character:
         hideSteps: 歩数を表示しない
+        exportData: キャラクターデータをクリップボードにエクスポート
+      locales:
+        changeLanguage: 言語を変更
+    phrases:
+      exitToCharacterSelection: キャラクター選択に戻る
   stats:
     phrases:
       totalSteps: 合計歩数
@@ -70,9 +80,13 @@ singulars:
     phrases:
       changeStepCountingSource: 歩を数えるソースを替える
       stepCountingSource: 歩を数えるソース
+      connectAppleHealth: ヘルスケアと連携
   leaderboards:
     phrases:
       totalSteps: 歩数合計
+      first: 先頭
+      last: 末尾
+      me: 自分
   faction:
     phrases:
       openFaction: 派閥を開く
@@ -81,25 +95,101 @@ singulars:
       activities: アクティビティ
       factions: 派閥
       owner: 所有者
+      services: 施設
+      buildings: 建物
   crafting:
     phrases:
       recipes: レシピ
+      materials: 素材
+      allSkills: 全スキル
+      requiresMaterial: 素材が必要です。
+    errors:
+      noMaterials: クラフト素材が足りません
+      noService: 必要な施設の条件を満たしていません
   jobs:
     phrases:
       filters: フィルター
       browseJobBoards: 依頼を探す
+      giveItems: アイテムを渡す
+      acceptedJobs: 受注中の依頼<chip><c i=0>{count}</c>/<c i=1>{maxCount}</c></chip>
+      rewards: 完了報酬
+      openJournal: ジャーナルを開く
+      acceptJob: 依頼を受ける
+    dialogs:
+      abandonJob:
+        text: この依頼を破棄してもよろしいですか？この依頼の進捗と報酬はすべて失われます。
   inventory:
     phrases:
       checkBank: 銀行
       depositAll: すべて
       mail: メール
       treasury: 宝庫
+    info:
+      noItemsFound: 所持品にこの枠に合うアイテムがありません。
   journal:
     phrases:
       jobs: 依頼
+    info:
+      jobInfo: 
+        依頼は、報酬を得るために達成できる<c>シンプルで繰り返し可能なタスク</c>です。依頼は街などの各地にある<c>依頼掲示板</c>で受けられます。同時に受けられる依頼は{count}件までです。
   attributeListing:
     phrases:
       allAttributes: すべての特性
+    options:
+      showInactiveAttributes: 無効な特性を表示
+  bank:
+    phrases:
+      withdraw: 引き出す
+    defaultLayout:
+      categories:
+        gearPrimary: メイン
+        gearSecondary: サブ
+  abilities:
+    phrases:
+      abilities: 能力
+      holdToUse: 長押しで使用
+  gear:
+    phrases:
+      gearSlots: 装備枠
+      toolSlots: ツール枠
+      noItemSelected: 未選択
+  achievements:
+    phrases:
+      showRewards: 報酬を表示
+      rewardProgress: 報酬の進捗
+  ironfoot:
+    buttons:
+      relinquish: アイアンフットを放棄
+  mainMenu:
+    phrases:
+      restart: 再起動
+  gearSets:
+    phrases:
+      gearSets: 装備セット
+      noItemSelected: 未選択
+  currencies:
+    phrases:
+      goldCoins: 金貨
+  worldMap:
+    options:
+      cosmeticServiceIcons: 着せかえ施設を表示
+      friends: フレンドを表示
+      hideAll: すべて非表示
+      labels: ラベルを表示
+      locations: 場所を表示
+      playerCharacter: 自分のキャラクターを表示
+      regions: 地域を表示
+      serviceIcons: 施設アイコンを表示
+  announcements:
+    phrases:
+      unread: 未読
+  locales:
+    phrases:
+      chooseALanguage: 下の一覧から言語を選んでください。
+      language: 言語
+  mailbox:
+    phrases:
+      mailbox: 郵便受け
 plurals:
   activity:
     phrases:
@@ -135,6 +225,7 @@ plurals:
         zero: '-'
         few: '-'
         many: '-'
+        other: 製作に必要な歩数
       actionsToLevelUp:
         zero: '-'
         few: '-'
@@ -154,3 +245,16 @@ maps:
   character:
     stepsTime:
       "daily": 日別の歩数
+  characterCreation:
+    phrases:
+      optionTypes:
+        "outfit": 服装
+  settings:
+    boolSettings:
+      "showRecipesMaterialsAreMet": 素材の条件を満たしている
+      "showRecipesRequirementsAreMet": レベルの条件を満たしている
+      "showRecipesServicesAreMet": 施設の条件を満たしている
+    categories:
+      "accessibility": アクセシビリティ
+      "characterSpecific": キャラクター別
+      "graphics": グラフィック
