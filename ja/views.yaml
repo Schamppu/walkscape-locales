@@ -21,11 +21,20 @@ singulars:
       workEfficiency: 作業効率
       inputs: 投入物
       levelActivity: <object id="{skill}"/>レベル<c>{level}</c>のアクティビティ
+      rewards: 報酬
+      baseEfficiency: 基本効率
+      fromGear: 装備品
+      fromOverLevels: レベル超過<numberProgress current="{current}" max="{max}" />
+      maxWorkEfficiency: 最大作業効率
+      requirementsNotMet: 条件を満たしていません
     info:
       savedSteps: 
         蓄積歩数は歩数の無駄を防ぎます。アクティビティを実行していないときに歩くと貯まり、再びアクティビティを始めると、歩いた歩数を2倍にする形で消費されます。
+      noActivity: 
+        アクティビティが選択されていません。<hl>下から選ぶ</hl>か、左にスワイプしてこの場所で利用できるものをすべて確認してください。
     options:
       completeUntilActions: 指定回数だけ実行
+      numberOfActions: 実行回数
   character:
     phrases:
       stepsOfLastWeek: 過去７日の歩数
@@ -37,6 +46,8 @@ singulars:
     info:
       skillBreakdown: 
         キャラクターがこれまでの旅で上げてきた全スキルの内訳です。スキルをタップすると、詳しい情報と解放される内容を確認できます。
+      eachLevelIncreasesStepBank: 
+        レベル<c>{level}</c>以降、キャラクターレベルが1上がるごとに蓄積歩数の上限が<c>{amount}</c>増えます。
   rewards:
     phrases:
       alreadyClaimed: もう引き取った
@@ -52,12 +63,14 @@ singulars:
   settings:
     categories:
       character:
-        hideSteps: 歩数を表示しない
+        hideSteps: 歩数を非表示
         exportData: キャラクターデータをクリップボードにエクスポート
+        anonOnLeaderboard: リーダーボードで匿名にする
       locales:
         changeLanguage: 言語を変更
     phrases:
       exitToCharacterSelection: キャラクター選択に戻る
+      settings: 設定
   stats:
     phrases:
       totalSteps: 合計歩数
@@ -90,6 +103,7 @@ singulars:
   faction:
     phrases:
       openFaction: 派閥を開く
+      repeatingReward: 繰り返し報酬
   location:
     phrases:
       activities: アクティビティ
@@ -115,6 +129,8 @@ singulars:
       rewards: 完了報酬
       openJournal: ジャーナルを開く
       acceptJob: 依頼を受ける
+      youMustBeInLocation: アイテムを納品するには、<object id="{obj}"/>と同じ場所にいる必要があります。
+      currentlyAcceptedJobs: 受注中の依頼
     dialogs:
       abandonJob:
         text: この依頼を破棄してもよろしいですか？この依頼の進捗と報酬はすべて失われます。
@@ -124,6 +140,7 @@ singulars:
       depositAll: すべて
       mail: メール
       treasury: 宝庫
+      longPressTip: <c>ヒント：</c>アイテムのスタックを長押しすると、同じ種類のスタックをすべて選択できます。
     info:
       noItemsFound: 所持品にこの枠に合うアイテムがありません。
   journal:
@@ -148,15 +165,21 @@ singulars:
     phrases:
       abilities: 能力
       holdToUse: 長押しで使用
+    info:
+      youHaveNoAbilities: 
+        <hl>能力を持っていません</hl>。ゲーム内の一部の装備には能力が付いており、使うと即座に効果を得られます。使用後はクールダウンがあります。
   gear:
     phrases:
       gearSlots: 装備枠
       toolSlots: ツール枠
       noItemSelected: 未選択
+      noItemEquipped: 装備なし
   achievements:
     phrases:
       showRewards: 報酬を表示
       rewardProgress: 報酬の進捗
+      loreItemsCount: 伝承アイテム
+      collectibles: コレクション
   ironfoot:
     buttons:
       relinquish: アイアンフットを放棄
@@ -167,6 +190,7 @@ singulars:
     phrases:
       gearSets: 装備セット
       noItemSelected: 未選択
+      newSetDefaultName: 新しい装備セット
   currencies:
     phrases:
       goldCoins: 金貨
@@ -190,6 +214,21 @@ singulars:
   mailbox:
     phrases:
       mailbox: 郵便受け
+  social:
+    phrases:
+      manageFriends: ソーシャル管理
+  pets:
+    phrases:
+      hatching: 孵化
+      summonPet: ペットを召喚
+  queue:
+    suggestedOptions:
+      startActivity: アクティビティ
+      startCrafting: クラフト
+      startTraveling: 移動
+  rumors:
+    phrases:
+      rumorsFromCharacter: <c>{characterName}</c>から聞いたうわさ
 plurals:
   activity:
     phrases:
@@ -231,6 +270,8 @@ plurals:
         few: '-'
         many: '-'
         other: レベルアップまでの回数
+      stepsRequiredPerAction:
+        other: <icon i="Steps"/><c>1アクションあたり{}歩</c>必要
   location:
     phrases:
       playersHere:
@@ -254,7 +295,23 @@ maps:
       "showRecipesMaterialsAreMet": 素材の条件を満たしている
       "showRecipesRequirementsAreMet": レベルの条件を満たしている
       "showRecipesServicesAreMet": 施設の条件を満たしている
+      "leftHandedMode": 左手モード
+      "shaderOutlineRendering": シェーダーで輪郭線を描画
+      "showConnectionIndicator": 接続品質インジケーターを表示
+      "showDailyTips": 毎日のヒントを表示
+      "showFpsCounter": FPSカウンターを表示
+      "spriteOutlines": 輪郭線を描画
+      "toggleAgilityXp": 移動による俊敏性XPの獲得を無効化
+      "warningBeforeClaimingExperience": 経験値報酬の受け取り前に警告を表示
     categories:
       "accessibility": アクセシビリティ
       "characterSpecific": キャラクター別
       "graphics": グラフィック
+  announcements:
+    categories:
+      "changelog": 更新履歴
+      "devblog": 開発ブログ
+      "update": アップデート
+  abilities:
+    types:
+      "consumable": 消耗品
