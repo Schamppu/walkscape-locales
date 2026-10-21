@@ -20,13 +20,17 @@ singulars:
         name: スズ鉱石
       opal:
         name: オパールの原石
+      starPearl:
+        name: 星真珠の原石
     foraging:
       wheat:
         name: 小麦
       nettle:
         name: イラクサ
+        desc: 背が高くほっそりとした植物で、ハート形の葉と強烈なとげを持つ。
       hemp:
         name: 麻
+        desc: 背が高く葉の茂った植物で、細い茎を持つ。用途の広い繊維と実用性で知られている。
       stone:
         name: 石
       woodenStick:
@@ -41,11 +45,19 @@ singulars:
         name: アザミ
       flax:
         name: 亜麻
+      berries:
+        name: ベリー
     rawFish:
       rawShrimp:
         name: 生のエビ
       rawTrout:
         name: 生のマス
+      rawSalmon:
+        name: 生のサケ
+      rawJellyfish:
+        name: 生のクラゲ
+      rawCarp:
+        name: 生のコイ
     misc:
       fishingLine:
         name: 釣り糸
@@ -53,12 +65,15 @@ singulars:
         name: ゴミ
       fishbone:
         name: 魚の骨
+      seashell:
+        name: 貝殻
     crafting:
       rope:
         name: より糸
     carpentry:
       birchPlank:
         name: シラカバの板材
+        desc: 滑らかで淡い色のシラカバの板材。明るくすっきりとした木肌は、簡素ながら優雅だ。
       pinePlank:
         name: マツの板材
       oakPlank:
@@ -73,6 +88,11 @@ singulars:
         name: 鋼インゴット
       copperBar:
         name: 銅インゴット
+      metalScrap:
+        name: 金属屑
+    cooking:
+      milk:
+        name: ミルク
   crafted:
     skilling:
       mining:
@@ -84,8 +104,10 @@ singulars:
       fishing:
         basicFishingPole:
           name: 木の釣り竿
+          desc: よく言うだろう、湖で過ごす最悪の日も、職場で過ごす最高の日に勝る、と。
         smallFishingNet:
           name: 初級漁網
+          desc: 素朴な漁師のささやかな道具、初級漁網。数本のロープを結び合わせただけの代物にすぎない。
         largeFishingNet:
           name: 大きな漁網
       tailoring:
@@ -103,9 +125,17 @@ singulars:
           name: シラカバの狩猟弓
         copperArrows:
           name: 銅の矢
+        rustyHuntingBow:
+          name: 錆びた狩猟弓
       foraging:
         stoneSickle:
           name: 初級鎌
+    equipmentSets:
+      basic:
+        woodenShield:
+          name: 木の盾
+        woodenSword:
+          name: 木の剣
   containers:
     skilling:
       regional:
@@ -127,6 +157,7 @@ singulars:
       smithing:
         smithingChest:
           name: 鍛冶の宝箱
+          desc: 鉱石を製錬していると、燃え盛る炉の中にこの金床の形をした重い金属の箱があった。誰がこんな所に置いていったのだろう？
       fishing:
         fishingChest:
           name: 釣りの宝箱
@@ -166,9 +197,23 @@ singulars:
         name: ジャガイモ
       tomato:
         name: トマト
+      dynamite:
+        name: ダイナマイト
+      salmonPie:
+        name: サーモンパイ
+      friedFishSandwich:
+        name: 魚フライのサンドイッチ
+      kelpRolls:
+        name: 昆布巻き
+      troutSoup:
+        name: マスのスープ
     cookedFish:
       cookedShrimp:
         name: 調理済みのエビ
+      cookedShark:
+        name: 調理済みのサメ
+      cookedPerch:
+        name: 調理済みのパーチ
   looted:
     skilling:
       fishing:
@@ -176,12 +221,39 @@ singulars:
           name: 錆びた漁網
         rustyFishingRod:
           name: 錆びた釣り竿
+        catchBucket:
+          name: 釣果バケツ
+        squishyFlipFlops:
+          name: ぷにぷにビーチサンダル
       carpentry:
         simpleSaw:
           name: 簡素なのこぎり
       agility:
         birchSkis:
           name: シラカバのスキー板
+        oakSkis:
+          name: オークのスキー板
+        simpleTorch:
+          name: 簡素なたいまつ
+      crafting:
+        simpleWrench:
+          name: 簡素なレンチ
+      mining:
+        iceAxe:
+          name: 氷の斧
+        rustyPickaxe:
+          name: 錆びたツルハシ
+      woodcutting:
+        rustyHatchet:
+          name: 錆びた手斧
+      tailoring:
+        safetyScissors:
+          name: 安全はさみ
+        markingChalk:
+          name: 印つけチャコ
+      smithing:
+        simpleHammer:
+          name: 簡素なハンマー
     versatile:
       lifeVest:
         name: ライフジャケット
@@ -191,3 +263,30 @@ singulars:
         name: ハーバートの帽子
       herbertsShirt:
         name: ハーバートのシャツ
+      fishingLure:
+        name: ルアー
+    achievements:
+      ringOfHomesickness:
+        name: 郷愁の指輪
+      jugglingBalls:
+        name: ジャグリングボール
+      pathfinder:
+        name: 道しるべ
+      runningVisor:
+        name: ランニングバイザー
+      rustySpyglass:
+        name: 錆びた望遠鏡
+      pantsOfHaste:
+        name: 疾風のズボン
+      omniTool:
+        name: オムニツール
+    supporter:
+      stickyFingerShorts:
+        name: 手癖の悪い半ズボン
+  collectibles:
+    fromActivity:
+      jarvonianCrosswordPuzzle:
+        name: ジャーボニアのクロスワードパズル
+  currencies:
+    ectoplasm:
+      name: エクトプラズム
