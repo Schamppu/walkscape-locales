@@ -100,6 +100,7 @@ singulars:
       first: 先頭
       last: 末尾
       me: 自分
+      totalLevel: 合計スキルレベル
   faction:
     phrases:
       openFaction: 派閥を開く
@@ -111,12 +112,15 @@ singulars:
       owner: 所有者
       services: 施設
       buildings: 建物
+      showingRoutesFrom: <object id="{from}"/>からの移動先
   crafting:
     phrases:
       recipes: レシピ
       materials: 素材
       allSkills: 全スキル
       requiresMaterial: 素材が必要です。
+      rewards: 報酬
+      noServiceRequirements: 必要な施設はありません。
     errors:
       noMaterials: クラフト素材が足りません
       noService: 必要な施設の条件を満たしていません
@@ -131,9 +135,11 @@ singulars:
       acceptJob: 依頼を受ける
       youMustBeInLocation: アイテムを納品するには、<object id="{obj}"/>と同じ場所にいる必要があります。
       currentlyAcceptedJobs: 受注中の依頼
+      availableJobs: 受注可能な依頼
     dialogs:
       abandonJob:
         text: この依頼を破棄してもよろしいですか？この依頼の進捗と報酬はすべて失われます。
+        title: 依頼を破棄
   inventory:
     phrases:
       checkBank: 銀行
@@ -157,10 +163,16 @@ singulars:
   bank:
     phrases:
       withdraw: 引き出す
+      youAreNotAtABank: <c>今いる場所には銀行がありません</c>。銀行は、銀行のある場所へ移動すると使えます。
     defaultLayout:
       categories:
         gearPrimary: メイン
         gearSecondary: サブ
+        huntingProducts: 狩猟品
+        ingredients: 食材
+        logs: 丸太
+        plants: 植物
+        processed: 加工品
   abilities:
     phrases:
       abilities: 能力
@@ -180,20 +192,40 @@ singulars:
       rewardProgress: 報酬の進捗
       loreItemsCount: 伝承アイテム
       collectibles: コレクション
+      checkPointUnlocks: チェックポイントの解放
+      totalProgressUnlocks: 総合進捗の解放
   ironfoot:
     buttons:
       relinquish: アイアンフットを放棄
   mainMenu:
     phrases:
       restart: 再起動
+      loadingGame: ゲームを読み込み中…しばらくお待ちください！
+      pleaseWait: お待ちください…
+    loadingStates:
+      awaitingForRemoveConfig: リモート設定を待機中
+      processingStepHistory: 歩数履歴を処理中
   gearSets:
     phrases:
       gearSets: 装備セット
       noItemSelected: 未選択
       newSetDefaultName: 新しい装備セット
+      copyCurrentlyEquippedGear: 現在の装備をコピー
+      tools: ツール
+    info:
+      gearSetsListDesc: ここで装備セットを管理できます。<c 
+        i=0>新しく作成</c>する場合は、下のボタンを押してください。新しい装備セットを作成するときに、<c 
+        i=1>現在の装備をコピー</c>することもできます。
+      noGearSetsManage: 装備セットはまだ作成されていません。下の<c 
+        i=0>新規作成</c>ボタンを押して、最初の装備セットを作成しましょう。
   currencies:
     phrases:
       goldCoins: 金貨
+    info:
+      noCurrencies: 
+        現在、通貨を持っていません。通貨は<c>ギルド</c>、<c>謎の商人</c>、その他の<c>特別な入手元</c>から獲得できます。
+      thereAreNoPaidCurrencies: 
+        ゲーム内通貨が<c>現実のお金で</c>購入できるようになることは<c>決してありません</c>。
   worldMap:
     options:
       cosmeticServiceIcons: 着せかえ施設を表示
@@ -217,10 +249,13 @@ singulars:
   social:
     phrases:
       manageFriends: ソーシャル管理
+      pendingInvites: 保留中の招待
   pets:
     phrases:
       hatching: 孵化
       summonPet: ペットを召喚
+      chooseEgg: 卵を選ぶ
+      pets: ペット
   queue:
     suggestedOptions:
       startActivity: アクティビティ
@@ -229,6 +264,10 @@ singulars:
   rumors:
     phrases:
       rumorsFromCharacter: <c>{characterName}</c>から聞いたうわさ
+  whileAway:
+    phrases:
+      actionsCompleted: 完了した回数
+      whileYouWereAway: 不在中の成果
 plurals:
   activity:
     phrases:
@@ -307,6 +346,13 @@ maps:
       "accessibility": アクセシビリティ
       "characterSpecific": キャラクター別
       "graphics": グラフィック
+      "account": アカウント
+      "character": キャラクター
+      "gameplay": ゲームプレイ
+    visibilitySettings:
+      "friends": フレンドのみ
+      "private": 非公開
+      "public": 公開
   announcements:
     categories:
       "changelog": 更新履歴
@@ -315,3 +361,8 @@ maps:
   abilities:
     types:
       "consumable": 消耗品
+  achievements:
+    phrases:
+      difficulty:
+        "hard": 難しい
+        "easy": 簡単
