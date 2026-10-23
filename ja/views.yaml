@@ -35,6 +35,8 @@ singulars:
     options:
       completeUntilActions: 指定回数だけ実行
       numberOfActions: 実行回数
+    rewards:
+      experience: <bp /><object id="{skill}"/>の経験値<c>{xp}</c>
   character:
     phrases:
       stepsOfLastWeek: 過去７日の歩数
@@ -180,6 +182,8 @@ singulars:
     info:
       youHaveNoAbilities: 
         <hl>能力を持っていません</hl>。ゲーム内の一部の装備には能力が付いており、使うと即座に効果を得られます。使用後はクールダウンがあります。
+      abilitiesInfo: 
+        能力は、ゲーム内で即座に効果を得られる特別なアクションです。能力にはクールダウンがあり、再び使うにはそれが終わるまで待つ必要があります。
   gear:
     phrases:
       gearSlots: 装備枠
@@ -194,9 +198,13 @@ singulars:
       collectibles: コレクション
       checkPointUnlocks: チェックポイントの解放
       totalProgressUnlocks: 総合進捗の解放
+      notUnlocked: 未解除の実績
   ironfoot:
     buttons:
       relinquish: アイアンフットを放棄
+    phrases:
+      relinquishConfirmWord: 放棄
+      selfIronfoot: このキャラクターは<c><bold>アイアンフット</bold></c>です
   mainMenu:
     phrases:
       restart: 再起動
@@ -250,6 +258,7 @@ singulars:
     phrases:
       manageFriends: ソーシャル管理
       pendingInvites: 保留中の招待
+      friends: フレンド
   pets:
     phrases:
       hatching: 孵化
@@ -268,6 +277,13 @@ singulars:
     phrases:
       actionsCompleted: 完了した回数
       whileYouWereAway: 不在中の成果
+  shop:
+    phrases:
+      buying: 購入
+      selling: 売却
+  trade:
+    phrases:
+      trade: 取引
 plurals:
   activity:
     phrases:
@@ -342,6 +358,8 @@ maps:
       "spriteOutlines": 輪郭線を描画
       "toggleAgilityXp": 移動による俊敏性XPの獲得を無効化
       "warningBeforeClaimingExperience": 経験値報酬の受け取り前に警告を表示
+      "alwaysStopWhenInventoryFull": 重量過多時はデフォルトで停止
+      "showStepSourceInActivityView": アクティビティ画面で歩数の取得元選択を表示
     categories:
       "accessibility": アクセシビリティ
       "characterSpecific": キャラクター別
@@ -366,3 +384,5 @@ maps:
       difficulty:
         "hard": 難しい
         "easy": 簡単
+        "normal": 普通
+        "extreme": 至難
