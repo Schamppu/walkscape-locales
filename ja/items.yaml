@@ -5,7 +5,7 @@ singulars:
         name: シラカバの丸太
         desc: 滑らかで淡い白樺の丸太は、品格を伴った簡素さを表している。
       pineLogs:
-        name: 松の丸太
+        name: マツの丸太
         desc: 樹脂質で強い松の丸太は、独特の心地よい香りを放っている。
       coral:
         name: サンゴ
@@ -22,6 +22,7 @@ singulars:
         name: スズ鉱石
       opal:
         name: オパールの原石
+        desc: 生まれた場所の砂と泥にまだ包まれた、繊細な宝石。磨けば現れる炎を内に秘めている。
       starPearl:
         name: 星真珠の原石
       coal:
@@ -45,12 +46,15 @@ singulars:
         desc: 石。これで生き延びるための何かを作れるかもしれない。
       woodenStick:
         name: 木の棒
+        desc: 先のとがった木切れ。これで生き延びるための何かを作れるかもしれない。
       grass:
         name: 草
+        desc: みずみずしい緑の草。
       snowdrop:
         name: スノードロップ
       moondaisy:
         name: ムーンデイジー
+        desc: 闇の深い夜に月明かりを受けて光る、はかない花。
       thistle:
         name: アザミ
       flax:
@@ -58,6 +62,7 @@ singulars:
         desc: 繊細な青い花から丈夫な糸が採れる。リネン作りにぴったりだ。
       berries:
         name: ベリー
+        desc: いざという時にそこそこ腹を満たしてくれる。料理の食材として使ってもいい。
     rawFish:
       rawShrimp:
         name: 生のエビ
@@ -67,6 +72,7 @@ singulars:
         desc: マスの鱗は虹色に輝き、銀色や桃色の色合いと斑点が見事な模様を描いている。
       rawSalmon:
         name: 生のサケ
+        desc: 汁気が多くバターのような身を持つサケは、濃厚でなめらかな食感で舌を楽しませる。
       rawJellyfish:
         name: 生のクラゲ
       rawCarp:
@@ -92,6 +98,7 @@ singulars:
     crafting:
       rope:
         name: より糸
+        desc: サバイバルキットにより糸は欠かせない。基本的な道具を作るのに必須だ。
     carpentry:
       birchPlank:
         name: シラカバの板材
@@ -109,6 +116,10 @@ singulars:
         name: トウヒの板材
       maplePlank:
         name: カエデの板材
+      willowPlank:
+        name: ヤナギの板材
+      teakPlank:
+        name: チークの板材
     trinketry:
       spiderTrinket:
         name: クモの小物
@@ -137,9 +148,13 @@ singulars:
         name: 鉄インゴット
       tarsiliumBar:
         name: タルシリウムインゴット
+      farganiteBar:
+        name: ファーガナイトインゴット
     cooking:
       milk:
         name: ミルク
+      honey:
+        name: ハチの巣
     hunting:
       feather:
         name: 羽根
@@ -149,6 +164,8 @@ singulars:
         name: 黒い羽根
       animalMeat:
         name: 獣肉
+      animalFur:
+        name: 獣の毛皮
   crafted:
     skilling:
       mining:
@@ -176,6 +193,7 @@ singulars:
       tailoring:
         tattyHandwraps:
           name: ぼろの手甲
+          desc: ぼろぼろの布を手に巻いたもの。腕前の怪しい誰かが作った。
         linenCloth:
           name: リネンの布
         basicLeather:
@@ -192,6 +210,8 @@ singulars:
           name: 皮の切れ端
         basicHide:
           name: 初級皮
+        grassknotMitts:
+          name: 草編みのミトン
       woodcutting:
         basicHatchet:
           name: 初級手斧
@@ -214,6 +234,7 @@ singulars:
           desc: これより劣るのは木の枝で作った矢くらいだが、どんな狩人にも始まりはある。
         rustyHuntingBow:
           name: 錆びた狩猟弓
+          desc: かつては見事な金属の弓だったが、今は錆に覆われている。まだ狩りには使えるものの、昔ほどの性能はない。
         quaintQuiver:
           name: 素朴な矢筒
         simpleBowstring:
@@ -222,6 +243,8 @@ singulars:
           name: 昆布の流し網
         oakHuntingBow:
           name: オークの狩猟弓
+        bolsteredQuiver:
+          name: 強化された矢筒
       foraging:
         stoneSickle:
           name: 初級鎌
@@ -229,6 +252,11 @@ singulars:
           name: 銅の鎌
         ironSickle:
           name: 鉄の鎌
+      trinketry:
+        amuletOfTheSpider:
+          name: クモのアミュレット
+        flowerNecklace:
+          name: ジャーボニアの花の首飾り
     equipmentSets:
       basic:
         woodenShield:
@@ -250,6 +278,8 @@ singulars:
           name: ジャーボニアの宝箱
         coinPouch:
           name: 硬貨袋
+        halflingrebelsChest:
+          name: ハーフリング反乱軍の宝箱
       crafting:
         craftingChest:
           name: クラフトの宝箱
@@ -258,6 +288,8 @@ singulars:
         miningChest:
           name: 採掘の宝箱
           desc: 採掘にまつわるアイテムが詰まった、岩のように頑丈な詰め合わせ。
+        gemPouch:
+          name: 宝石袋
       foraging:
         foragingChest:
           name: 採集の宝箱
@@ -298,6 +330,7 @@ singulars:
       agility:
         agilityChest:
           name: 俊敏性の宝箱
+          desc: 運動中、すぐそばに落ちてきた茶色の革のブーツ。周りには誰もいないようだった。よく見ると、中に何かが隠されているようだ。
   consumables:
     cooking:
       bread:
@@ -338,6 +371,8 @@ singulars:
         name: シュニッツェル
       underwaterSalad:
         name: 水中サラダ
+      cremeBrulee:
+        name: クレームブリュレ
     cookedFish:
       cookedShrimp:
         name: 調理済みのエビ
@@ -350,13 +385,18 @@ singulars:
         name: 調理済みのコイ
       cookedSalmon:
         name: 調理済みのサケ
+      cookedSwordfish:
+        name: 調理済みのメカジキ
   looted:
     skilling:
       fishing:
         rustyFishingNet:
           name: 錆びた漁網
+          desc: 錆びつき、ほつれた小さな漁網。今でも漁には使えるので、ないよりはましだ。
         rustyFishingRod:
           name: 錆びた釣り竿
+          desc: 
+            古くてボロボロの釣り竿で、錆びついたうえに糸もかろうじてつながっている程度。今でも釣りには使えるが、アタリすら来ないかもしれない！
         catchBucket:
           name: 釣果バケツ
         squishyFlipFlops:
@@ -370,6 +410,7 @@ singulars:
       agility:
         birchSkis:
           name: シラカバのスキー板
+          desc: 初心者用のスキー板。操作しにくく、あまり速くないが、雪の斜面を歩くよりは早く下りられる。
         oakSkis:
           name: オークのスキー板
         simpleTorch:
@@ -384,6 +425,8 @@ singulars:
           name: 粘土のスカイディスク
         pineSkis:
           name: マツのスキー板
+        medievalSneakers:
+          name: 中世のスニーカー
       crafting:
         simpleWrench:
           name: 簡素なレンチ
@@ -394,11 +437,15 @@ singulars:
           name: 氷の斧
         rustyPickaxe:
           name: 錆びたツルハシ
+          desc: かつては見事なツルハシだったが、すっかり錆びついている。今でも採掘には使えるが、この状態ではうまく掘れない。
         fingerpick:
           name: フィンガーピック
+        goldPan:
+          name: 砂金皿
       woodcutting:
         rustyHatchet:
           name: 錆びた手斧
+          desc: かつては見事な手斧だったが、すっかり錆びついている。今でも伐採には使えるが、全盛期はとうに過ぎている。
         lumberjackSandals:
           name: きこりのサンダル
         lumberjackBoots:
@@ -420,6 +467,10 @@ singulars:
           name: くっつくメジャー
         keenEyeLenses:
           name: 鋭眼レンズ
+        tailorsMoccasins:
+          name: 仕立て屋のモカシン
+        silverScissors:
+          name: 銀のはさみ
       smithing:
         simpleHammer:
           name: 簡素なハンマー
@@ -460,6 +511,10 @@ singulars:
         name: 錆びた潜水胴衣
       warmJacket:
         name: 暖かいジャケット
+      herbertsBoots:
+        name: ハーバートのブーツ
+      herbertsPants:
+        name: ハーバートのズボン
     achievements:
       ringOfHomesickness:
         name: 郷愁の指輪
@@ -480,10 +535,16 @@ singulars:
     supporter:
       stickyFingerShorts:
         name: 手癖の悪い半ズボン
+    equipmentSets:
+      adventurersTools:
+        adventuringSewingNeedle:
+          name: 冒険用の縫い針
   collectibles:
     fromActivity:
       jarvonianCrosswordPuzzle:
         name: ジャーボニアのクロスワードパズル
+      jarOfDirt:
+        name: 土の入った瓶
   currencies:
     ectoplasm:
       name: エクトプラズム
