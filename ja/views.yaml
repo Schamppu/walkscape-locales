@@ -55,10 +55,10 @@ singulars:
       alreadyClaimed: もう引き取った
   wardrobe:
     phrases:
-      noEyeAccessories: 目アクセサリーは持ってない。
-      noBackAccessories: 背中アクセサリーは持ってない。
-      noFaceAccessories: 顔アクセサリーは持ってない。
-      noHeadwear: 帽子は持ってない。
+      noEyeAccessories: 目元アクセサリーを持っていません。
+      noBackAccessories: 背中アクセサリーを持っていません。
+      noFaceAccessories: 顔アクセサリーを持っていません。
+      noHeadwear: 帽子を持っていません。
   popupBubbles:
     phrases:
       arrivedToLocation: <object id={location} />に着いた
@@ -70,9 +70,16 @@ singulars:
         anonOnLeaderboard: リーダーボードで匿名にする
       locales:
         changeLanguage: 言語を変更
+        chooseALanguageInfo: 上のボタンを押すと言語選択メニューが開きます。
+        title: 言語
+      account:
+        visibility: プロフィールの公開設定
     phrases:
       exitToCharacterSelection: キャラクター選択に戻る
       settings: 設定
+      connectionInfoIos: 上のリストにウェアラブル端末が表示されない場合は、<c>設定 ➤ プライバシーとセキュリティ ➤ ヘルスケア 
+        ➤ 
+        （App）WalkScape</c>で、ヘルスケアの歩数データの使用をWalkScapeに許可していること、また過去7日以内にヘルスケアがそのデバイスで歩数を記録していることを確認してください。
   stats:
     phrases:
       totalSteps: 合計歩数
@@ -93,9 +100,11 @@ singulars:
       samsungHealth: サムスン ヘルス
       appleWatch: アップルウォッチ
     phrases:
-      changeStepCountingSource: 歩を数えるソースを替える
+      changeStepCountingSource: 歩数の取得元を変更
       stepCountingSource: 歩を数えるソース
       connectAppleHealth: ヘルスケアと連携
+      connectAppleHealthExplanation: 
+        スマートウォッチで同期された歩数を読み取り、接続しているデバイスを確認するために、ヘルスケアとの連携が必要です。WalkScapeを初めて使う場合は、ヘルスケアのデータを読み取る権限を求められます。
   leaderboards:
     phrases:
       totalSteps: 歩数合計
@@ -138,6 +147,8 @@ singulars:
       youMustBeInLocation: アイテムを納品するには、<object id="{obj}"/>と同じ場所にいる必要があります。
       currentlyAcceptedJobs: 受注中の依頼
       availableJobs: 受注可能な依頼
+      refreshIn: 依頼掲示板の更新まで：
+      cannotWithdraw: 現在地<object id="{obj}"/>には銀行がありません。依頼のためにアイテムを引き出すことはできません。
     dialogs:
       abandonJob:
         text: この依頼を破棄してもよろしいですか？この依頼の進捗と報酬はすべて失われます。
@@ -149,8 +160,10 @@ singulars:
       mail: メール
       treasury: 宝庫
       longPressTip: <c>ヒント：</c>アイテムのスタックを長押しすると、同じ種類のスタックをすべて選択できます。
+      slotsCount: 枠：
     info:
       noItemsFound: 所持品にこの枠に合うアイテムがありません。
+      noItemSelected: アイテムが選択されていません。\n\nリストからアイテムを選ぶと、現在のアイテムと比較して装備できます。
   journal:
     phrases:
       jobs: 依頼
@@ -199,12 +212,15 @@ singulars:
       checkPointUnlocks: チェックポイントの解放
       totalProgressUnlocks: 総合進捗の解放
       notUnlocked: 未解除の実績
+      unclaimedRewards: '未受取の報酬： '
   ironfoot:
     buttons:
       relinquish: アイアンフットを放棄
     phrases:
       relinquishConfirmWord: 放棄
       selfIronfoot: このキャラクターは<c><bold>アイアンフット</bold></c>です
+      relinquishWarning: 
+        このキャラクターは現在<c>アイアンフット</c>です。他のプレイヤーと取引するには、<c>アイアンフット</c>の資格を放棄する必要があります。この操作は元に戻せません。
   mainMenu:
     phrases:
       restart: 再起動
@@ -247,24 +263,36 @@ singulars:
   announcements:
     phrases:
       unread: 未読
+      new: 新着
+    info:
+      announcementInfo: 
+        ここでは開発者による<c>お知らせ</c>を確認できます。開発ブログ、更新履歴、システムのお知らせで、開発の進捗やサーバーメンテナンスの情報をチェックしましょう！
   locales:
     phrases:
       chooseALanguage: 下の一覧から言語を選んでください。
       language: 言語
+      helpToTranslate: WalkScapeは<c>コミュニティによって翻訳</c>されています。<a 
+        href="https://wiki.walkscape.app/wiki/Localization">翻訳ガイド</a>を見て、ゲームをさらに多くの言語に翻訳したり、今ある翻訳を広げたりするのを手伝ってください。ご協力をお待ちしています！❤️
+      percentExplanation: '%は翻訳済みの割合を示します。'
+      youCanChangeAnyTime: 言語は<c>ゲーム設定</c>からいつでも変更できます。
   mailbox:
     phrases:
       mailbox: 郵便受け
+    info:
+      notAtMailbox: 現在地に郵便受けがありません。郵便は郵便受けのある場所でのみ受け取れます。郵便受けはすべての銀行にあります。
   social:
     phrases:
       manageFriends: ソーシャル管理
       pendingInvites: 保留中の招待
       friends: フレンド
+      enterAtLeastChars: 検索するには3文字以上入力してください。
   pets:
     phrases:
       hatching: 孵化
       summonPet: ペットを召喚
       chooseEgg: 卵を選ぶ
       pets: ペット
+      petEggs: ペットの卵
   queue:
     suggestedOptions:
       startActivity: アクティビティ
@@ -371,6 +399,20 @@ maps:
       "friends": フレンドのみ
       "private": 非公開
       "public": 公開
+    leaderboardType:
+      "agility": <c>俊敏性</c>レベル
+      "carpentry": <c>木工</c>レベル
+      "cooking": <c>調理</c>レベル
+      "crafting": <c>クラフト</c>レベル
+      "fishing": <c>釣り</c>レベル
+      "foraging": <c>採集</c>レベル
+      "hunting": <c>狩り</c>レベル
+      "mining": <c>採掘</c>レベル
+      "smithing": <c>鍛冶</c>レベル
+      "tailoring": <c>裁縫</c>レベル
+      "totalLevel": 合計<c>レベル</c>
+      "trinketry": <c>細工</c>レベル
+      "woodcutting": <c>伐採</c>レベル
   announcements:
     categories:
       "changelog": 更新履歴
