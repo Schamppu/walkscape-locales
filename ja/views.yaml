@@ -124,6 +124,8 @@ singulars:
       services: 施設
       buildings: 建物
       showingRoutesFrom: <object id="{from}"/>からの移動先
+      routes: ルート
+      tapToShowRoutes: タップでルートを表示
   crafting:
     phrases:
       recipes: レシピ
@@ -203,6 +205,11 @@ singulars:
       toolSlots: ツール枠
       noItemSelected: 未選択
       noItemEquipped: 装備なし
+    info:
+      gearInfo: 
+        装備を身につけると、キャラクターの特性が向上します。下の装備枠をタップすると、所持品からその枠に装備できるアイテムを確認できます。
+      toolInfo: 
+        ツールを装備すると、キャラクターの特性が向上します。最初はツール枠が3つ使えます。<c>キャラクターのレベルを上げる</c>と、さらにツール枠が解放されます。
   achievements:
     phrases:
       showRewards: 報酬を表示
@@ -213,6 +220,10 @@ singulars:
       totalProgressUnlocks: 総合進捗の解放
       notUnlocked: 未解除の実績
       unclaimedRewards: '未受取の報酬： '
+    info:
+      collectibleItems: コレクションアイテムは、主にアクティビティで手に入るレアドロップです。<c 
+        i=0>コレクション1つにつき</c><icon i="Achievement Point"/><c i=1>実績ポイント</c>を<c 
+        i=1>1</c>獲得できます。コレクションは所持品の枠を使わず、常にキャラクターが持ち歩いています。
   ironfoot:
     buttons:
       relinquish: アイアンフットを放棄
@@ -242,6 +253,7 @@ singulars:
         i=1>現在の装備をコピー</c>することもできます。
       noGearSetsManage: 装備セットはまだ作成されていません。下の<c 
         i=0>新規作成</c>ボタンを押して、最初の装備セットを作成しましょう。
+      gearSetsDescription: 装備セットを使うと、さまざまな装備をすばやく切り替えられます。
   currencies:
     phrases:
       goldCoins: 金貨
@@ -260,6 +272,10 @@ singulars:
       playerCharacter: 自分のキャラクターを表示
       regions: 地域を表示
       serviceIcons: 施設アイコンを表示
+    phrases:
+      buildings: 建物
+      noActivities: この場所でできるアクティビティはありません。
+      services: 施設
   announcements:
     phrases:
       unread: 未読
@@ -293,6 +309,7 @@ singulars:
       chooseEgg: 卵を選ぶ
       pets: ペット
       petEggs: ペットの卵
+      hatch: 孵化
   queue:
     suggestedOptions:
       startActivity: アクティビティ
