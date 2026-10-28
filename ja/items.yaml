@@ -3,7 +3,7 @@ singulars:
     woodcutting:
       birchLogs:
         name: シラカバの丸太
-        desc: 滑らかで淡い白樺の丸太は、品格を伴った簡素さを表している。
+        desc: 滑らかで淡い色のシラカバの丸太。上品で飾り気のない趣がある。
       pineLogs:
         name: マツの丸太
         desc: 樹脂質で強い松の丸太は、独特の心地よい香りを放っている。
@@ -15,6 +15,8 @@ singulars:
         name: 竹の丸太
       spruceLogs:
         name: トウヒの丸太
+      oakLogs:
+        name: オークの丸太
     mining:
       copperOre:
         name: 銅鉱石
@@ -38,6 +40,10 @@ singulars:
         name: トパーズの原石
       wrentmarine:
         name: ウレントマリンの原石
+      goldNugget:
+        name: 金ナゲット
+      silverNugget:
+        name: 銀ナゲット
     foraging:
       wheat:
         name: 小麦
@@ -74,6 +80,12 @@ singulars:
         desc: いざという時にそこそこ腹を満たしてくれる。料理の食材として使ってもいい。
       hardenedKelp:
         name: 硬化昆布
+      seaCabbage:
+        name: 海キャベツ
+      seaSpinach:
+        name: 海ほうれん草
+      underwaterLotus:
+        name: 水中の蓮
     rawFish:
       rawShrimp:
         name: 生のエビ
@@ -95,10 +107,13 @@ singulars:
         desc: ほろりとほぐれる柔らかな身を持つ生のカワカマスは、調理に向いている。
       rawPerch:
         name: 生のパーチ
+        desc: 優美な曲線を描く俊敏なパーチは、釣りを始めたばかりの人にぴったりの魚だ。
       rawSquid:
         name: 生のイカ
       rawShark:
         name: 生のサメ
+      rawCrab:
+        name: 生のカニ
     misc:
       fishingLine:
         name: 釣り糸
@@ -136,6 +151,7 @@ singulars:
         desc: 質の低い木の端材。
       mahoganyPlank:
         name: マホガニーの板材
+        desc: あらゆる頑丈な建造物に使える、高品質な板材。
       sprucePlank:
         name: トウヒの板材
       maplePlank:
@@ -149,14 +165,17 @@ singulars:
     trinketry:
       spiderTrinket:
         name: クモの小物
+        desc: クモの小物は光を受けて明るく輝いている。いつかアミュレットに役立ちそうだ。
       circularRootTrinket:
         name: 輪になった根の小物
       measuringSpoonsTrinket:
         name: 計量スプーンの小物
+        desc: 計量スプーンの小物は光を受けて明るく輝いている。いつかアミュレットに役立ちそうだ。
       beaverTrinket:
         name: ビーバーの小物
       pinkPearlTrinket:
         name: ピンク真珠の小物
+        desc: ピンク真珠の小物は光を受けて明るく輝いている。いつかアミュレットに役立ちそうだ。
       coolingIceTrinket:
         name: ひんやりつららの小物
     smithing:
@@ -211,6 +230,7 @@ singulars:
           desc: 素朴な魅力と揺るぎない力強さを備えた、青銅のツルハシ。
         ironPickaxe:
           name: 鉄のツルハシ
+          desc: 重い頭部をもつこのツルハシは、荒野を切り拓く者や未知に挑む者の頼れる相棒だ。
         steelPickaxe:
           name: 鋼のツルハシ
       fishing:
@@ -222,6 +242,9 @@ singulars:
           desc: 素朴な漁師のささやかな道具、初級漁網。数本のロープを結び合わせただけの代物にすぎない。
         largeFishingNet:
           name: 大きな漁網
+          desc: 海辺の人々が生み出した大きな漁網。絶えず移ろう潮の上に、願いを込めて大きく投げ広げられる。
+        pineFishingRod:
+          name: マツの釣り竿
       tailoring:
         tattyHandwraps:
           name: ぼろの手甲
@@ -233,6 +256,7 @@ singulars:
           name: 初級革
         tattySkirt:
           name: ぼろのスカート
+          desc: 体を覆うぼろぼろの布。動きやすいが、生地のせいで肌がかゆくなる。
         journeymanBreeches:
           name: 職人のズボン
         tattyGarb:
@@ -257,6 +281,8 @@ singulars:
           name: 見習いのズボン
         apprenticeVest:
           name: 見習いのベスト
+        toughLinenCloth:
+          name: 丈夫なリネンの布
       woodcutting:
         basicHatchet:
           name: 初級手斧
@@ -269,8 +295,10 @@ singulars:
           desc: 初心者が木を切り始めるのにちょうどいい。
         steelHatchet:
           name: 鋼の手斧
+          desc: 鋼の手斧は作り手の決意を映して輝き、その意のままに働く時を待っている。
         ironHatchet:
           name: 鉄の手斧
+          desc: 重い刃を持ち、荒野を切り開こうとする者や未知に立ち向かう者の忠実な相棒となる。
       hunting:
         birchHuntingBow:
           name: シラカバの狩猟弓
@@ -283,6 +311,7 @@ singulars:
           desc: かつては見事な金属の弓だったが、今は錆に覆われている。まだ狩りには使えるものの、昔ほどの性能はない。
         quaintQuiver:
           name: 素朴な矢筒
+          desc: 狩猟用の矢を収めておく、小さな革のホルスター。いたってシンプルだ。
         simpleBowstring:
           name: 簡素な弓の弦
         kelpDriftNet:
@@ -293,14 +322,20 @@ singulars:
           name: 強化された矢筒
         bronzeArrows:
           name: 青銅の矢
+        ironArrows:
+          name: 鉄の矢
       foraging:
         stoneSickle:
           name: 初級鎌
           desc: 自然の恵みを刈り取るための基本的な道具。刃が粗く、あまり効率は良くない。
         copperSickle:
           name: 銅の鎌
+          desc: 基本的な植物を刈るのにそこそこの効率を発揮する。
         ironSickle:
           name: 鉄の鎌
+          desc: 頑丈で頼りになり、硬い茎も楽に切り裂く。
+        steelSickle:
+          name: 鋼の鎌
       trinketry:
         amuletOfTheSpider:
           name: クモのアミュレット
@@ -308,9 +343,14 @@ singulars:
           name: ジャーボニアの花の首飾り
         silverRing:
           name: 銀の指輪
+        amuletOfTheShrimp:
+          name: エビのアミュレット
       carpentry:
         pineToolbox:
           name: マツの道具箱
+      upgraded:
+        goldenCuttingMat:
+          name: 金のカッティングマット
     equipmentSets:
       basic:
         woodenShield:
@@ -363,6 +403,7 @@ singulars:
           desc: 採集にまつわる装備やアイテムが詰まった、楽しい詰め合わせ。
         sunkenChest:
           name: 沈んだ宝箱
+          desc: 海の深みから、岸へと流れ着いた宝箱。
       smithing:
         smithingChest:
           name: 鍛冶の宝箱
@@ -425,6 +466,7 @@ singulars:
         name: ダイナマイト
       salmonPie:
         name: サーモンパイ
+        desc: パイに魚、なんてこった！
       friedFishSandwich:
         name: 魚フライのサンドイッチ
       kelpRolls:
@@ -453,6 +495,8 @@ singulars:
         name: キノコカレー
       jellySandwich:
         name: ジャムサンドイッチ
+      sweetCarrotPie:
+        name: 甘いニンジンパイ
     cookedFish:
       cookedShrimp:
         name: 調理済みのエビ
@@ -471,6 +515,8 @@ singulars:
         name: 調理済みのメカジキ
       cookedPike:
         name: 調理済みのカワカマス
+      cookedTrout:
+        name: 調理済みのマス
   looted:
     skilling:
       fishing:
@@ -483,16 +529,26 @@ singulars:
             古くてボロボロの釣り竿で、錆びついたうえに糸もかろうじてつながっている程度。今でも釣りには使えるが、アタリすら来ないかもしれない！
         catchBucket:
           name: 釣果バケツ
+          desc: 釣り上げたばかりの獲物を入れておく、ほどよい大きさのバケツ。
         squishyFlipFlops:
           name: ぷにぷにビーチサンダル
+          desc: 柔らかな布の層が足と焼けた砂のあいだの盾となり、ウレントマークのどれほど暑い浜辺でも平気だ。
         frozenBait:
           name: 冷凍餌
         sturdyFishingRodRest:
           name: 頑丈な竿掛け
+        coolSunglasses:
+          name: かっこいいサングラス
       carpentry:
         simpleSaw:
           name: 簡素なのこぎり
           desc: もっといいものが手に入るまでは、十分に切れるのこぎりだ。
+        woodworkingGlasses:
+          name: 木工用メガネ
+        compressedCharcoal:
+          name: 圧縮木炭
+        protectiveGloves:
+          name: 保護手袋
       agility:
         birchSkis:
           name: シラカバのスキー板
@@ -505,25 +561,37 @@ singulars:
           desc: 木の棒と布、それに燃えやすいものがあれば、持ち運べる明かりの出来上がり。これ以上簡単なものはない。
         goldenFrisbee:
           name: 金のスカイディスク
+          desc: 金メッキにすぎないので、かなり軽いが丈夫だ。投げたら虹色の軌跡が出ることを期待してしまうが、残念ながら出ない。
         toughRope:
           name: 丈夫なロープ
+          desc: この頑丈なロープがあれば、どんなに高い山でも登れる。
         walkingStick:
           name: ウォーキングステッキ
           desc: 握りやすい金属の持ち手が付いた頑丈な木製のステッキ。歩く冒険の支えになってくれる。
         clayFrisbee:
           name: 粘土のスカイディスク
+          desc: かなり重くて壊れやすい。近くにクレー射撃をしている人がいないことを祈ろう！
         pineSkis:
           name: マツのスキー板
+          desc: 頑丈で軽いスキー板。避けようとしているまさにその木から作られている。
         medievalSneakers:
           name: 中世のスニーカー
         waterBottle:
           name: 水筒
+          desc: 新鮮できれいな飲み水を満たしたガラス瓶。水分補給を忘れずに！
+        runningShorts:
+          name: ランニングショーツ
+        mapOfArenum:
+          name: アレヌムの地図
+        runningShirt:
+          name: ランニングシャツ
       crafting:
         simpleWrench:
           name: 簡素なレンチ
           desc: 駆け出しの職人にぴったりの道具。
         simpleChisel:
           name: 簡素なノミ
+          desc: この道具があれば、わずかな手間賃で世界を形作れる。
         craftingPants:
           name: クラフトのズボン
         slideRuler:
@@ -543,6 +611,10 @@ singulars:
           name: 簡素な砂金皿
         steelToeBoots:
           name: 鋼先芯のブーツ
+        handLantern:
+          name: 手提げランタン
+        simpleMiningShovel:
+          name: 軽量の採掘シャベル
       woodcutting:
         rustyHatchet:
           name: 錆びた手斧
@@ -553,6 +625,7 @@ singulars:
             このつま先の開いた靴を履くと、自然とのつながりをより強く感じられる。まるで周囲のエネルギーが足から心臓へと伝わってくるかのようだ。
         lumberjackBoots:
           name: きこりのブーツ
+          desc: 耐久性と実用性を兼ね備えたきこりのブーツは、魔法の森（あるいは魔法の解けた森）の奥地に挑む者たちに愛用されている。
         lumberjackPants:
           name: きこりのズボン
         logBasket:
@@ -577,6 +650,7 @@ singulars:
           name: くっつくメジャー
         keenEyeLenses:
           name: 鋭眼レンズ
+          desc: 裁縫に使う植物を見つけやすくなるといわれるレンズ。少なくとも、流行る前から目をつけていたように見せてはくれる。
         tailorsMoccasins:
           name: 仕立て屋のモカシン
         silverScissors:
@@ -585,25 +659,36 @@ singulars:
           name: 裁縫のガイドブック
         needlecase:
           name: 底なしの針入れ
+        pincushionBeret:
+          name: 針山ベレー帽
       smithing:
         simpleHammer:
           name: 簡素なハンマー
           desc: ごく普通のハンマー。鋼の頭と木の柄が付いている。確かに簡素だが、ハンマーがないよりはましだ。
         forgeBellows:
           name: 鍛冶場のふいご
+        jarvonianPoker:
+          name: ジャーボニアのポーカー
       cooking:
         florasSilverSpoon:
           name: フローラの銀のスプーン
           desc: 特別な銀のスプーン。フローラがいつかキッチンでなくしたのだろう。今やこちらのものだ！
         simplePan:
           name: 簡素なフライパン
+          desc: 焦げつき防止加工はないが、いざという時には役に立つ。
+        chefsHat:
+          name: コック帽
+        sharpKnife:
+          name: 鋭いナイフ
       foraging:
         compassNecklace:
           name: 発見のアミュレット
         smallSack:
           name: 小さな袋
+          desc: 持ち歩ける小さな麻袋で、アイテムを1つ余分に入れられる。
         rustySickle:
           name: 錆びた鎌
+          desc: かつては見事な鎌だったが、すっかり錆びついている。今でも採集には使えるが、昔ほどの切れ味はない。
         halflingsFeetSlippers:
           name: ハーフリングの足スリッパ
         waterproofBoots:
@@ -614,9 +699,22 @@ singulars:
           name: 長いスコップ
         wildernessGuideBook:
           name: 荒野のガイドブック
+        sharpMachete:
+          name: 鋭いマチェーテ
+        foragingShirt:
+          name: 採集のシャツ
+        foragingShorts:
+          name: 採集のショートパンツ
+        nonWaterproofBoots:
+          name: 非防水ブーツ
+        pickersGloves:
+          name: 摘み手の手袋
+        bigBasket:
+          name: でかいかご
       hunting:
         skinnyFieldKnife:
           name: 細身のフィールドナイフ
+          desc: 仕留めたばかりの獲物の皮をはいだり、さばいたりするのに使える細いナイフ。
         camoFacePaint:
           name: 迷彩フェイスペイント
       trinketry:
@@ -639,6 +737,7 @@ singulars:
         name: 錆びた潜水ヘルメット
       rustyDivingBody:
         name: 錆びた潜水胴衣
+        desc: 古い潜水服の上半身部分。着ると重い。
       warmJacket:
         name: 暖かいジャケット
       herbertsBoots:
@@ -653,6 +752,12 @@ singulars:
         name: 頼れるテント
       smellySocks:
         name: くさい靴下
+      simpleAmulet:
+        name: 簡素なアミュレット
+      rabbitEars:
+        name: ウサギの耳
+      mosquitoNethat:
+        name: 蚊よけネット帽
     achievements:
       ringOfHomesickness:
         name: 郷愁の指輪
@@ -678,9 +783,19 @@ singulars:
         name: 宝探しの帽子
       trashGrabber:
         name: ゴミ拾いトング
+      bootsOfSpeed:
+        name: 俊足のブーツ
+      treasureHunterJacket:
+        name: 宝探しのジャケット
+      treasureHunterPants:
+        name: 宝探しのズボン
+      shoesOfEscape:
+        name: 逃走の靴
     supporter:
       stickyFingerShorts:
         name: 手癖の悪い半ズボン
+      woodpucker:
+        name: ウッドパッカー
     equipmentSets:
       adventurersTools:
         adventuringSewingNeedle:
@@ -688,6 +803,9 @@ singulars:
     combat:
       swashbucklerSword:
         name: 荒くれ剣士の曲刀
+    agGuildSpecials:
+      bertssuperskis:
+        name: バートのスーパースキー板
   collectibles:
     fromActivity:
       jarvonianCrosswordPuzzle:
@@ -700,6 +818,8 @@ singulars:
         name: 沼の精髄
       lostTimmysSandShovel:
         name: 迷子のティミーの砂遊びスコップ
+      soupKitchenBadge:
+        name: 煮炊き厨房のバッジ
   currencies:
     ectoplasm:
       name: エクトプラズム
