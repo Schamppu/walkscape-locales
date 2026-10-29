@@ -11,7 +11,7 @@ singulars:
         name: 'トウヒの木を切る'
         desc: ''
       cutMapleTrees:
-        name: ''
+        name: 'カエデの木を切る'
         desc: ''
       cutOakTrees:
         name: 'オークの木を切る'
@@ -30,7 +30,7 @@ singulars:
         desc: ""
       branchTrimming:
         name: '枝を切る'
-        desc: ''
+        desc: '地面近くの枝を払っておけば、このあたりでは森林火災の予防になる。'
     syrenthia:
       coralCutting:
         name: ''
@@ -67,7 +67,7 @@ singulars:
         name: '砂金をすくう'
         desc: ''
       spelunking:
-        name: ''
+        name: '洞窟を探索する'
         desc: ''
       surfaceSaltMining:
         name: '露天で岩塩を採掘する'
@@ -95,8 +95,14 @@ singulars:
         name: ''
         desc: ''
       fossilMining:
-        name: ''
+        name: '化石を採掘する'
         desc: ''
+    wrentmark:
+      mineSilverOre:
+        name: 銀鉱石を採掘する
+    wallisia:
+      mineEctoRocks:
+        name: エクトプラズムの岩を採掘する
   fishing:
     jarvonia:
       pondFishing:
@@ -133,6 +139,9 @@ singulars:
       predatorHunting:
         name: ''
         desc: ''
+    wallisia:
+      floodedRiverFishingRod:
+        name: 増水した川で魚を獲る（釣り竿）
   foraging:
     global:
       litterLooting:
@@ -190,7 +199,7 @@ singulars:
         name: ''
         desc: ''
       merfolkFarmForaging:
-        name: ''
+        name: 'マーフォークの農場で採集する'
         desc: ""
       kelpForaging:
         name: '昆布を採集する'
@@ -256,7 +265,7 @@ singulars:
         desc: ""
       blackEyePeakSearchTeam:
         name: '捜索隊の仕事をする'
-        desc: ''
+        desc: '冒険者ギルド出張所を手伝い、山から戻らない行方不明者の居場所を突き止め、手がかりを集める。'
       blackEyePeakRescueTeam:
         name: '救助隊の仕事をする'
         desc: ''
@@ -349,7 +358,7 @@ singulars:
     jarvonia:
       rabbitTracking:
         name: 'ウサギの追跡をする'
-        desc: ''
+        desc: 'かじられた植物や折れた小枝、地面のウサギの足跡に目を配りながら、小さな獲物を探す。'
       wolfHunting:
         name: 'オオカミ狩りをする'
         desc: ''
@@ -361,6 +370,8 @@ singulars:
         desc: ''
       birdFeeding:
         name: 鳥の餌付けをする
+        desc: 
+          手持ちの植物で地元の鳥をおびき寄せ、観察できるほど近くまで呼び込む。鳥たちは差し出したものをくわえると、散らかった羽根を残して去っていく。
       squirrelHunting:
         name: リス狩りをする
     gdte:
@@ -426,5 +437,8 @@ singulars:
       runForYourLife:
         name: ''
         desc: ''
+    wrentmark:
+      emergencyDesertEscape:
+        name: 砂漠から緊急脱出する
   idle:
     name: 待機中
