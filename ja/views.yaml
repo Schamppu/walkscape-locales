@@ -80,6 +80,8 @@ singulars:
       connectionInfoIos: 上のリストにウェアラブル端末が表示されない場合は、<c>設定 ➤ プライバシーとセキュリティ ➤ ヘルスケア 
         ➤ 
         （App）WalkScape</c>で、ヘルスケアの歩数データの使用をWalkScapeに許可していること、また過去7日以内にヘルスケアがそのデバイスで歩数を記録していることを確認してください。
+      gameVersion: ゲームバージョン{version}
+      lastCloudSave: 最終サーバー保存：{lastSave}
   stats:
     phrases:
       totalSteps: 合計歩数
@@ -225,6 +227,10 @@ singulars:
       collectibleItems: コレクションアイテムは、主にアクティビティで手に入るレアドロップです。<c 
         i=0>コレクション1つにつき</c><icon i="Achievement Point"/><c i=1>実績ポイント</c>を<c 
         i=1>1</c>獲得できます。コレクションは所持品の枠を使わず、常にキャラクターが持ち歩いています。
+      noCollectibleItems: コレクションアイテムを持っていません。
+      noLoreItems: 伝承アイテムを持っていません。
+      totalProgressUnlocks: 
+        これらの報酬は実績の総合進捗に応じて獲得できます。新しい実績が追加されて獲得できるポイントの総数が増えると、進捗率が下がり、アイテムが使えなくなることがあります。
   ironfoot:
     buttons:
       relinquish: アイアンフットを放棄
@@ -233,6 +239,7 @@ singulars:
       selfIronfoot: このキャラクターは<c><bold>アイアンフット</bold></c>です
       relinquishWarning: 
         このキャラクターは現在<c>アイアンフット</c>です。他のプレイヤーと取引するには、<c>アイアンフット</c>の資格を放棄する必要があります。この操作は元に戻せません。
+      cannotTradeWith: <c><bold>アイアンフット</bold></c>のキャラクターは取引に招待できません。
   mainMenu:
     phrases:
       restart: 再起動
@@ -296,6 +303,7 @@ singulars:
   mailbox:
     phrases:
       mailbox: 郵便受け
+      noMessages: 郵便受けにメッセージはありません。
     info:
       notAtMailbox: 現在地に郵便受けがありません。郵便は郵便受けのある場所でのみ受け取れます。郵便受けはすべての銀行にあります。
   social:
@@ -305,6 +313,7 @@ singulars:
       friends: フレンド
       enterAtLeastChars: 検索するには3文字以上入力してください。
       anonymousWalker: 匿名の旅人
+      countResultsFound: '{count}件見つかりました'
   pets:
     phrases:
       hatching: 孵化
@@ -313,6 +322,7 @@ singulars:
       pets: ペット
       petEggs: ペットの卵
       hatch: 孵化
+      noPetSummoned: 召喚中のペットはいません。<c>ペットを召喚</c>すると、ついて来て特性と能力を与えてくれます！
   queue:
     suggestedOptions:
       startActivity: アクティビティ
@@ -335,6 +345,9 @@ singulars:
   trade:
     phrases:
       trade: 取引
+  tools:
+    phrases:
+      lockedToolSlot: <c>キャラクターレベル{level}</c>で解放されるツール枠です。
 plurals:
   activity:
     phrases:
@@ -436,6 +449,15 @@ maps:
       "totalLevel": 合計<c>レベル</c>
       "trinketry": <c>細工</c>レベル
       "woodcutting": <c>伐採</c>レベル
+      "achievementPoints": <c>実績ポイント</c>
+      "totalSteps": 合計<c>歩数</c>
+      "totalXp": 合計<c>経験値</c>
+    enumSettings:
+      "leaderboardFilter": 表示
+      "leaderboardType": リーダーボード
+    leaderboardFilter:
+      "everyone": 全員
+      "friends": フレンド
   announcements:
     categories:
       "changelog": 更新履歴
