@@ -6,6 +6,8 @@ singulars:
         desc: シラカバの素朴な木から、基本的な狩猟弓を作る。
       oakHuntingBow:
         name: オークの狩猟弓を作る
+      bambooHuntingBow:
+        name: 竹の狩猟弓を作る
     arrows:
       simpleBowstring:
         name: 簡素な弓の弦を作る
@@ -21,6 +23,10 @@ singulars:
         name: 鋼の矢を作る
       tarsiliumArrows:
         name: タルシリウムの矢を作る
+    traps:
+      boxtraps:
+        boxtrap:
+          name: 箱罠を作る
   trinketry:
     amulets:
       jarvonianFlowerNecklace:
@@ -43,6 +49,8 @@ singulars:
         name: 銀の星真珠指輪を作る
       goldRing:
         name: 金の指輪を作る
+      goldOpalRing:
+        name: 金のオパール指輪を作る
   carpentry:
     planks:
       birchPlank:
@@ -50,6 +58,7 @@ singulars:
         desc: シラカバの木を慎重に切って、役に立つ用途の広い板材にする。
       pinePlank:
         name: マツの板材を作る
+        desc: マツの木を、頑丈で頼れる板材に変える。
       sprucePlank:
         name: トウヒの板材を作る
       oakPlank:
@@ -60,12 +69,17 @@ singulars:
         name: チークの板材を作る
       willowPlank:
         name: ヤナギの板材を作る
+      bambooPlank:
+        name: 竹の板材を作る
+      coralPlank:
+        name: サンゴの板材を作る
     scrap:
       birchPlankScrap:
         name: シラカバの板材を作る（屑）
         desc: 木屑を慎重に加工して、役に立つ用途の広い板材にする。
       pinePlankScrap:
         name: マツの板材を作る（屑）
+        desc: 木屑を、頑丈で頼れる板材に変える。
       sprucePlankScrap:
         name: トウヒの板材を作る（屑）
       oakPlankScrap:
@@ -94,6 +108,10 @@ singulars:
         name: 調理済みのカワカマスを作る
       cookedTrout:
         name: 調理済みのマスを作る
+      cookedJellyfish:
+        name: 調理済みのクラゲを作る
+      cookedSalmon:
+        name: 調理済みのサケを作る
     consumables:
       nettleTea:
         name: イラクサ茶を作る
@@ -103,6 +121,7 @@ singulars:
         desc: 一から作る手作りパン。小麦粉、水、酵母、塩を合わせてこね、発酵させ、成形し、皮がパリッとしたきつね色になるまで焼く。
       porridge:
         name: 麦がゆを作る
+        desc: ミルクか水で煮て、好みの甘い具やしょっぱい具をのせた、温かくてほっとする麦がゆ。
       pancakes:
         name: パンケーキを作る
       wine:
@@ -123,6 +142,12 @@ singulars:
         name: ミルクを作る
       mushroomCurry:
         name: キノコカレーを作る
+      troutSoup:
+        name: マスのスープを作る
+      mudPie:
+        name: 泥だんごを作る
+      jellySandwich:
+        name: ジャムサンドイッチを作る
   smithing:
     wooden:
       woodenShield:
@@ -144,6 +169,8 @@ singulars:
         name: 金インゴットを作る
       ironBar:
         name: 鉄インゴットを作る
+      steelBar:
+        name: 鋼インゴットを作る
     scrap:
       copperBarScrap:
         name: 銅インゴットを作る（屑）
@@ -158,6 +185,7 @@ singulars:
         desc: 銅インゴットから銅の盾を作る。
       copperSword:
         name: 銅の剣を作る
+        desc: 銅インゴットから銅の剣を作る。
     bronze:
       bronzeShield:
         name: 青銅の盾を作る
@@ -166,6 +194,8 @@ singulars:
     iron:
       ironShield:
         name: 鉄の盾を作る
+      ironSword:
+        name: 鉄の剣を作る
   tailoring:
     clothing:
       tattyHandwraps:
@@ -175,6 +205,8 @@ singulars:
       linen:
         name: リネンの布を作る
         desc: 細い糸を織り上げ、柔らかく丈夫な布にする。
+        activityDesc: 
+          繊維を紡いで細い糸にし、丁寧に織り上げて、柔らかく丈夫なリネンの布にする。どの工程にも根気と正確さが必要だ。こうして素材は用途の広い織物へと姿を変える。
       tattySkirt:
         name: ぼろのスカートを作る
         desc: 簡素なぼろのスカートを作る。
@@ -238,6 +270,8 @@ singulars:
         name: エルダーハイドのチュニックを作る
       elderhideLeather:
         name: エルダーハイドの革を作る
+      toughLinen:
+        name: 丈夫なリネンの布を作る
     tools:
       silverSewingNeedle:
         name: 銀の縫い針を作る
@@ -285,12 +319,17 @@ singulars:
         name: 鉄のツルハシを作る
       steelSickle:
         name: 鋼の鎌を作る
+      steelHatchet:
+        name: 鋼の手斧を作る
+      steelPickaxe:
+        name: 鋼のツルハシを作る
     misc:
       rope:
         name: より糸を作る
         desc: 亜麻を紡いでより糸を作る。
       bagofRocks:
         name: 石の袋を作る
+        desc: 大きな石と頑丈な枝から石の袋を作る。
       trash:
         name: ゴミを再利用する
     fishing:
@@ -299,12 +338,15 @@ singulars:
         desc: より糸で初級漁網を作る。
       basicFishingRod:
         name: 木の釣り竿を作る
+        desc: 板材と釣り糸で木の釣り竿を作る。
       pineFishingRod:
         name: マツの釣り竿を作る
       largeFishingNet:
         name: 大きな漁網を作る
       fishingSpear:
         name: 銛を作る
+      oakFishingRod:
+        name: オークの釣り竿を作る
     diving:
       kelpDivingMask:
         name: 昆布の潜水マスクを作る
@@ -321,3 +363,5 @@ singulars:
       name: 三本竿掛けを作る
     ironChefsHat:
       name: 鉄人のコック帽を作る
+    gemTippedPliers:
+      name: 宝石付きのペンチを作る
