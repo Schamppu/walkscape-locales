@@ -58,7 +58,7 @@ maps:
         'special': Özel
         'tool': Aletler
         'cosmetic': Kozmetikler
-        "egg": Evcil hayvan yumurtaları
+        "egg": Evcil yumurtaları
         "quest": Görev eşyaları
         "artifact": Eserler
         "currency": Paralar
@@ -416,7 +416,7 @@ singulars:
         toolsRegional: Bölgesel
         foods: Yiyecek
         drinks: İçecek
-        petEggs: Evcil Hayvan Yumurtası
+        petEggs: Evcil Yumurtası
         cookedFish: Pişmiş Balık
         fishingBaits: Balık Yemi
         curiosity: Bulgu
@@ -1300,7 +1300,7 @@ singulars:
       abilities: Yetenekler
       baseEfficiency: Esas verim
       fromOverencumbered: Envanter dolup taşmış
-      fromPets: Evcil hayvanlar
+      fromPets: Evciller
       requiresInput: <hl>{quantity}x</hl> <object id="{keyword}"/> gerekli
       requiresInputWithLevelOptional: (Seçmeli) <hl>{quantity}x</hl> <object 
         id="{skill}" /> seviye <c>{level}</c> <object id="{keyword}"/> 
@@ -1339,8 +1339,8 @@ singulars:
       lore: <bp /><icon i="Lore item"/> <c>{count} anlatı eşyası</c> bulunabilir
       cosmetics: Bulabileceğin <bp /><icon i="Wardrobe action"/><c>{count} adet 
         kozmetik</c> mevcut
-      petEggs: Yeni bir evcil hayvan bulabileceğin <bp /><icon i="Pet 
-        egg"/><c>{count} adet evcil hayvan yumurtası</c> mevcut
+      petEggs: Yeni bir evcil bulabileceğin <bp /><icon i="Pet egg"/><c>{count} 
+        adet evcil yumurtası</c> mevcut
     options:
       completeUntilActions: Belirli sayıda eylem tamamla
       numberOfActions: Eylem sayısı
@@ -1575,9 +1575,8 @@ singulars:
       switchingToGearSet: <c>{name}</c> teçhizat seti kuşanılıyor
       forXActions: <c>{count}</c> eylem yapılıyor
       inputNotMet: Gereç gereksinimleri karşılanmıyor
-      petNotFound: Seçilmiş evcil hayvan bulunamadı, vedalaşmış olabilir 
-        misiniz?
-      summoningPet: Evcil hayvanın <playerPet id="{pet}" /> çağrılıyor
+      petNotFound: Seçilmiş evcil bulunamadı, vedalaşmış olabilir misiniz?
+      summoningPet: Evcilin <playerPet id="{pet}" /> çağrılıyor
       unknownError: Bilinmeyen hata.
     suggestedOptions:
       startCrafting: Üretim
@@ -1602,11 +1601,11 @@ singulars:
         text: Teçhizat seti kuşanmayı iptal et
         desc: Bu eylem için seçilmiş teçhizat setini kuşanmayı iptal et.
       summonPet:
-        desc: Bu eyleme başlamadan önce evcil hayvan çağır.
-        text: Evcil hayvan çağır
+        desc: Bu eyleme başlamadan önce bir evcilini çağırır.
+        text: Evcilini çağır
       cancelSummonPet:
-        desc: Bu eylem için evcil hayvan çağırmaktan vazgeç.
-        text: Evcil hayvan çağırmaktan vazgeç
+        desc: Bu eylem için bir evcilini çağırmaktan vazgeçer.
+        text: Evcilini çağırmaktan vazgeç
     suggestions:
       activity:
         onceInventoryIsFull: Envanterin dolunca bir şey yapmak ister misin?
@@ -1651,7 +1650,7 @@ singulars:
       fromAttribute: '{attribute} niteliğinden kaynaklı'
       none: Hiçbir şey
       switchedToPet: <playerPet id="{pet}"/> çağırıldı
-      petDoesNotExist: Bu evcil hayvan artık mevcut değil, çağrılamıyor.
+      petDoesNotExist: Bu evcil artık mevcut değil, çağrılamıyor.
       inputsUsed: Kullanılan gereçler
       switchedToImportedGearSet: İçe aktarılan teçhizat setine geçildi
       stepsWhileYouWereAway: Sen uzaktayken atılan adım
@@ -1685,22 +1684,22 @@ singulars:
       level: Svy. <c>{level}</c>
       requirementsToGainXPNotMet: <c>{name}</c> TP kazanamaz
       chooseEgg: Yumurta seç
-      noPetSummoned: Şu anda çağrılmış bir evcil hayvan bulunmuyor. Peşinden 
-        gelerek nitelikler ve yetenekler sağlaması için <c>bir evcil hayvan 
+      noPetSummoned: Şu anda çağrılmış bir evcil bulunmuyor. Peşinden gelerek 
+        nitelikler ve yetenekler sağlaması için <c>bir evcilini 
         çağırabilirsin</c>!
-      pets: Evcil hayvanlar
-      claimPet: Evcil hayvanı sahiplen
-      petEggs: Evcil hayvan yumurtaları
-      summonedPet: Çağrılmış evcil hayvan
-      summonPet: Evcil hayvan çağır
-      changePet: Evcil hayvanı değiştir
+      pets: Evciller
+      claimPet: Evcili sahiplen
+      petEggs: Evcil yumurtaları
+      summonedPet: Çağrılmış evcil
+      summonPet: Evcil çağır
+      changePet: Evcili değiştir
       abilities: Yetenekler
       attributes: Nitelikler
       maxLevel: Azami seviye
-      pet: Evcil hayvan
+      pet: Evcil
       egg: Yumurta
       noEggSelected: Seçilmiş yumurta bulunmuyor
-      noPetSelected: Seçilmiş evcil hayvan bulunmuyor
+      noPetSelected: Seçilmiş bir evcil bulunmuyor
       retire: Vedalaş
       destroy: Yok et
       totalXp: Toplam TP
@@ -1711,11 +1710,11 @@ singulars:
       nextLevel: Sonraki seviyeye
       hatching: Kuluçka
       noEggIsHatching: Şu anda hiçbir yumurta çatlatılmıyor. <c>Çatlatmaya</c> 
-        başlamak için bir evcil hayvan yumurtası seç!
+        başlamak için bir evcil yumurtası seç!
       currentlyHatching: Şu anda çatlatılan
       canHatch: Çatlamaya hazır
       canEvolve: Büyümeye hazır
-      dismissPet: Evcil hayvanı gönder
+      dismissPet: Evcili gönder
       unlocked: Açılan
       unlockedAt: 'Açılması:'
       evolve: Büyüt
@@ -1723,23 +1722,23 @@ singulars:
       requirementsToHatchNotMet: <c>{name}</c> çatlatılamaz
       requirementsToHatchNeeded: '<c>{name}</c> için çatlama gereksinimi:'
       requirementsToGainXPNeeded: '<c>{name}</c> için TP kazanma gereksinimi:'
-      openPets: Evcil hayvanları aç
+      openPets: Evcilleri aç
       openHatching: Kuluçkayı aç
       isHatching: <c>{name}</c> çatlıyor!
       isAdvancing: <c>{name}</c> büyüyor!
       hasHatched: <c>{name}</c> yumurtadan çıktı ve artık bir <petStage 
         id="{stage}"/>!
       hasEvolved: <c>{name}</c> büyüdü ve artık bir <petStage id="{stage}"/>!
-      noPets: Hiçbir evcil hayvanın bulunmuyor. Evcil hayvan yumurtaları bulup 
-        onları çatlatarak evcil hayvan edinebilirsin.
+      noPets: Hiçbir evcilin bulunmuyor. Evcil yumurtaları bulup onları 
+        çatlatarak evcil edinebilirsin.
       claimedAt: 'Sahiplenme tarihi:'
       hatchedAt: 'Doğum tarihi:'
       xpToHatch: Çatlamaya kalan TP
       hatchingProgress: Kuluçka ilerlemesi
       ownedFor: 'Sahiplik zamanı:'
-      noEggs: Sahiplendiğin evcil hayvan yumurtası bulunmuyor.
+      noEggs: Sahiplendiğin bir evcil yumurtası bulunmuyor.
       noEggsFound: Aramanla eşleşen yumurta bulunamadı.
-      noPetsFound: Aramanla eşleşen evcil hayvan bulunamadı.
+      noPetsFound: Aramanla eşleşen bir evcil bulunamadı.
       actionsToNextLevel: Sonraki seviyeye kalan eylem
       actionsToHatch: Yumurtadan çıkmaya kalan eylem
   currencies:
