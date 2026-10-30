@@ -17,21 +17,29 @@ singulars:
         desc: 銅の矢じりをつけた細身の矢を作る。
       bronzeArrows:
         name: 青銅の矢を作る
+        desc: 青銅の矢じりをつけた頑丈な矢を作る。
       ironArrows:
         name: 鉄の矢を作る
       steelArrows:
         name: 鋼の矢を作る
       tarsiliumArrows:
         name: タルシリウムの矢を作る
+      farganiteArrows:
+        name: ファーガナイトの矢を作る
     traps:
       boxtraps:
         boxtrap:
           name: 箱罠を作る
+      net:
+        kelpDriftNet:
+          name: 昆布の流し網を作る
   trinketry:
     amulets:
       jarvonianFlowerNecklace:
         name: ジャーボニアの花の首飾りを作る
         desc: ムーンデイジーとスノードロップを合わせて花のネックレスにする。
+      amuletOfTheFinding:
+        name: 発見のアミュレットを作る
     gems:
       shapeOpal:
         name: オパールを作る
@@ -40,9 +48,12 @@ singulars:
         name: 星真珠を作る
       shapeWrentmarine:
         name: ウレントマリンを作る
+      shapeTopaz:
+        name: トパーズを作る
     rings:
       silverRing:
         name: 銀の指輪を作る
+        desc: 定番の銀の指輪を作る。
       silverOpalRing:
         name: 銀のオパール指輪を作る
       silverStarPearlRing:
@@ -51,6 +62,10 @@ singulars:
         name: 金の指輪を作る
       goldOpalRing:
         name: 金のオパール指輪を作る
+      silverWrentmarineRing:
+        name: 銀のウレントマリン指輪を作る
+      goldStarPearlRing:
+        name: 金の星真珠指輪を作る
   carpentry:
     planks:
       birchPlank:
@@ -93,6 +108,9 @@ singulars:
     tools:
       pineToolbox:
         name: マツの道具箱を作る
+        desc: 木工の腕を生かして、マツの道具箱を作る。
+      bambooToolbox:
+        name: 竹の道具箱を作る
   cooking:
     fish:
       cookedPerch:
@@ -106,12 +124,15 @@ singulars:
         desc: 淡泊な味とやわらかな身で知られるコイのフライを味わおう。
       cookedPike:
         name: 調理済みのカワカマスを作る
+        desc: ほろりとほぐれるやわらかな身で知られる、カワカマスのフライを味わおう。
       cookedTrout:
         name: 調理済みのマスを作る
       cookedJellyfish:
         name: 調理済みのクラゲを作る
       cookedSalmon:
         name: 調理済みのサケを作る
+      cookedLobster:
+        name: 調理済みのロブスターを作る
     consumables:
       nettleTea:
         name: イラクサ茶を作る
@@ -148,6 +169,14 @@ singulars:
         name: 泥だんごを作る
       jellySandwich:
         name: ジャムサンドイッチを作る
+      dynamite:
+        name: ダイナマイトを作る
+      sweetCarrotPie:
+        name: 甘いニンジンパイを作る
+      kelpRolls:
+        name: 昆布巻きを作る
+      salmonPie:
+        name: サーモンパイを作る
   smithing:
     wooden:
       woodenShield:
@@ -165,6 +194,7 @@ singulars:
         desc: 銀ナゲットか鉱石を製錬して、銀インゴットを作る。
       bronzeBar:
         name: 青銅インゴットを作る
+        desc: 銅とスズを溶かし合わせて、用途の広い青銅インゴットを作る。
       goldBar:
         name: 金インゴットを作る
       ironBar:
@@ -177,8 +207,11 @@ singulars:
         desc: 金属屑を熱して成形し、さまざまな用途に使える頑丈なインゴットにする。
       bronzeBarScrap:
         name: 青銅インゴットを作る（屑）
+        desc: 金属屑を溶かして、用途の広い青銅インゴットを作る。
       ironBarScrap:
         name: 鉄インゴットを作る（屑）
+      steelBarScrap:
+        name: 鋼インゴットを作る（屑）
     copper:
       copperShield:
         name: 銅の盾を作る
@@ -196,6 +229,9 @@ singulars:
         name: 鉄の盾を作る
       ironSword:
         name: 鉄の剣を作る
+    steel:
+      steelShield:
+        name: 鋼の盾を作る
   tailoring:
     clothing:
       tattyHandwraps:
@@ -297,8 +333,10 @@ singulars:
         desc: 効率よく採掘できる、頑丈な銅のツルハシを作る。
       bronzeHatchet:
         name: 青銅の手斧を作る
+        desc: 過酷な伐採に向いた、頑丈な青銅の手斧を作る。
       bronzePickaxe:
         name: 青銅のツルハシを作る
+        desc: 激しい採掘にぴったりな、丈夫な青銅のツルハシを作る。
       bronzeWrench:
         name: 青銅のレンチを作る
       bronzeHammer:
@@ -332,6 +370,9 @@ singulars:
         desc: 大きな石と頑丈な枝から石の袋を作る。
       trash:
         name: ゴミを再利用する
+        desc: ゴミを調べて、何か役に立つものに作り変える。
+      hardenedKelp:
+        name: 硬化昆布を作る
     fishing:
       smallFishingNet:
         name: 初級漁網を作る
@@ -341,12 +382,15 @@ singulars:
         desc: 板材と釣り糸で木の釣り竿を作る。
       pineFishingRod:
         name: マツの釣り竿を作る
+        desc: 板材と釣り糸でマツの釣り竿を作る。
       largeFishingNet:
         name: 大きな漁網を作る
       fishingSpear:
         name: 銛を作る
       oakFishingRod:
         name: オークの釣り竿を作る
+      lobsterPot:
+        name: ロブスターかごを作る
     diving:
       kelpDivingMask:
         name: 昆布の潜水マスクを作る
