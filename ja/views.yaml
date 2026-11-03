@@ -80,6 +80,8 @@ singulars:
       connectionInfoIos: 上のリストにウェアラブル端末が表示されない場合は、<c>設定 ➤ プライバシーとセキュリティ ➤ ヘルスケア 
         ➤ 
         （App）WalkScape</c>で、ヘルスケアの歩数データの使用をWalkScapeに許可していること、また過去7日以内にヘルスケアがそのデバイスで歩数を記録していることを確認してください。
+      gameVersion: ゲームバージョン{version}
+      lastCloudSave: 最終サーバー保存：{lastSave}
   stats:
     phrases:
       totalSteps: 合計歩数
@@ -163,6 +165,7 @@ singulars:
       treasury: 宝庫
       longPressTip: <c>ヒント：</c>アイテムのスタックを長押しすると、同じ種類のスタックをすべて選択できます。
       slotsCount: 枠：
+      cantBeDropped: このアイテムは捨てられません。
     info:
       noItemsFound: 所持品にこの枠に合うアイテムがありません。
       noItemSelected: アイテムが選択されていません。\n\nリストからアイテムを選ぶと、現在のアイテムと比較して装備できます。
@@ -190,6 +193,8 @@ singulars:
         logs: 丸太
         plants: 植物
         processed: 加工品
+    layout:
+      reorder: 並べ替え
   abilities:
     phrases:
       abilities: 能力
@@ -224,6 +229,14 @@ singulars:
       collectibleItems: コレクションアイテムは、主にアクティビティで手に入るレアドロップです。<c 
         i=0>コレクション1つにつき</c><icon i="Achievement Point"/><c i=1>実績ポイント</c>を<c 
         i=1>1</c>獲得できます。コレクションは所持品の枠を使わず、常にキャラクターが持ち歩いています。
+      noCollectibleItems: コレクションアイテムを持っていません。
+      noLoreItems: 伝承アイテムを持っていません。
+      totalProgressUnlocks: 
+        これらの報酬は実績の総合進捗に応じて獲得できます。新しい実績が追加されて獲得できるポイントの総数が増えると、進捗率が下がり、アイテムが使えなくなることがあります。
+      specialItems: <icon i="Collectible"/><c>コレクション</c>や<icon i="Lore 
+        Item"/><c>伝承アイテム</c>などの特別なアイテムは、WalkScapeの旅の中で集まっていきます。ここで確認できます。コレクションを集めると実績ポイントが進みます。
+      viewDescription: 
+        実績を解除すると<hl>実績ポイント</hl>を獲得できます。実績ポイントが一定量に達すると、特別な報酬が解放されます。実績の中には、解除するだけで報酬がもらえるものもあります。
   ironfoot:
     buttons:
       relinquish: アイアンフットを放棄
@@ -232,6 +245,7 @@ singulars:
       selfIronfoot: このキャラクターは<c><bold>アイアンフット</bold></c>です
       relinquishWarning: 
         このキャラクターは現在<c>アイアンフット</c>です。他のプレイヤーと取引するには、<c>アイアンフット</c>の資格を放棄する必要があります。この操作は元に戻せません。
+      cannotTradeWith: <c><bold>アイアンフット</bold></c>のキャラクターは取引に招待できません。
   mainMenu:
     phrases:
       restart: 再起動
@@ -247,6 +261,7 @@ singulars:
       newSetDefaultName: 新しい装備セット
       copyCurrentlyEquippedGear: 現在の装備をコピー
       tools: ツール
+      reorderGearSets: 装備セットを並べ替え
     info:
       gearSetsListDesc: ここで装備セットを管理できます。<c 
         i=0>新しく作成</c>する場合は、下のボタンを押してください。新しい装備セットを作成するときに、<c 
@@ -294,6 +309,7 @@ singulars:
   mailbox:
     phrases:
       mailbox: 郵便受け
+      noMessages: 郵便受けにメッセージはありません。
     info:
       notAtMailbox: 現在地に郵便受けがありません。郵便は郵便受けのある場所でのみ受け取れます。郵便受けはすべての銀行にあります。
   social:
@@ -302,6 +318,8 @@ singulars:
       pendingInvites: 保留中の招待
       friends: フレンド
       enterAtLeastChars: 検索するには3文字以上入力してください。
+      anonymousWalker: 匿名の旅人
+      countResultsFound: '{count}件見つかりました'
   pets:
     phrases:
       hatching: 孵化
@@ -310,6 +328,9 @@ singulars:
       pets: ペット
       petEggs: ペットの卵
       hatch: 孵化
+      noPetSummoned: 召喚中のペットはいません。<c>ペットを召喚</c>すると、ついて来て特性と能力を与えてくれます！
+      noEggIsHatching: 孵化中のペットの卵はありません。ペットの卵を選んで<c>孵化を始めましょう</c>！
+      noPets: ペットがいません。ペットの卵を見つけて孵化させると、ペットを手に入れられます。
   queue:
     suggestedOptions:
       startActivity: アクティビティ
@@ -318,6 +339,8 @@ singulars:
   rumors:
     phrases:
       rumorsFromCharacter: <c>{characterName}</c>から聞いたうわさ
+      backToRumors: うわさに戻る
+      unlockedWalkpediaEntries: 解放されたウォークペディアの項目
   whileAway:
     phrases:
       actionsCompleted: 完了した回数
@@ -326,9 +349,16 @@ singulars:
     phrases:
       buying: 購入
       selling: 売却
+      buyBack: 買い戻す
+      bought: 購入済み
+      resetTrade: 取引をリセット
+      sold: 売却済み
   trade:
     phrases:
       trade: 取引
+  tools:
+    phrases:
+      lockedToolSlot: <c>キャラクターレベル{level}</c>で解放されるツール枠です。
 plurals:
   activity:
     phrases:
@@ -378,6 +408,10 @@ plurals:
         other: <c>{}</c>人が滞在中
       playersDoingActivity:
         other: <c>{}</c>人が活動中
+  achievements:
+    phrases:
+      achievementPoint:
+        other: 実績ポイント{}
 maps:
   skillTypes:
     "artisan": 生産系
@@ -430,6 +464,15 @@ maps:
       "totalLevel": 合計<c>レベル</c>
       "trinketry": <c>細工</c>レベル
       "woodcutting": <c>伐採</c>レベル
+      "achievementPoints": <c>実績ポイント</c>
+      "totalSteps": 合計<c>歩数</c>
+      "totalXp": 合計<c>経験値</c>
+    enumSettings:
+      "leaderboardFilter": 表示
+      "leaderboardType": リーダーボード
+    leaderboardFilter:
+      "everyone": 全員
+      "friends": フレンド
   announcements:
     categories:
       "changelog": 更新履歴
@@ -445,3 +488,11 @@ maps:
         "easy": 簡単
         "normal": 普通
         "extreme": 至難
+  shop:
+    phrases:
+      itemType:
+        "material": 素材
+        "tool": ツール
+  pets:
+    stages:
+      "adult": 成体

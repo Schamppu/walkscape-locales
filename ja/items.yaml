@@ -3,7 +3,7 @@ singulars:
     woodcutting:
       birchLogs:
         name: シラカバの丸太
-        desc: 滑らかで淡い白樺の丸太は、品格を伴った簡素さを表している。
+        desc: 滑らかで淡い色のシラカバの丸太。上品で飾り気のない趣がある。
       pineLogs:
         name: マツの丸太
         desc: 樹脂質で強い松の丸太は、独特の心地よい香りを放っている。
@@ -11,18 +11,32 @@ singulars:
         name: サンゴ
       sturdyBranch:
         name: 頑丈な枝
+        desc: 異様なほど頑丈な枝。
       bambooLogs:
         name: 竹の丸太
+      spruceLogs:
+        name: トウヒの丸太
+      oakLogs:
+        name: オークの丸太
+      mangroveLogs:
+        name: マングローブの丸太
+      mapleLogs:
+        name: カエデの丸太
+      root:
+        name: 根
     mining:
       copperOre:
         name: 銅鉱石
         desc: 赤みを帯びた色の銅鉱石は、ひときわ目を引く鉱物だ。
       ironOre:
         name: 鉄鉱石
+        desc: 鉄鉱石はざらりとして密度が高く、頑丈で荒削りな性質をよく表している。
       saltCrystal:
         name: 塩の結晶
+        desc: 細かく砕けばさまざまに使え、原石のままでは複雑で美しい形をしている。
       tinOre:
         name: スズ鉱石
+        desc: 簡素で飾り気のないスズ鉱石は、素朴な鉱物の成り立ちをそのまま見せている。
       opal:
         name: オパールの原石
         desc: 生まれた場所の砂と泥にまだ包まれた、繊細な宝石。磨けば現れる炎を内に秘めている。
@@ -30,10 +44,27 @@ singulars:
         name: 星真珠の原石
       coal:
         name: 石炭
+        desc: 控えめで飾らない石炭は、欠かせないエネルギー資源としての実用性を物語っている。
       ruby:
         name: ルビーの原石
+        desc: 岩の内側から深紅の鉱物が突き出ている。その美しさと素朴さに目を奪われる。
       topaz:
         name: トパーズの原石
+        desc: ほのかに金色を帯びた原石。まばゆい宝石へとカットされる時を待っている。
+      wrentmarine:
+        name: ウレントマリンの原石
+      goldNugget:
+        name: 金ナゲット
+      silverNugget:
+        name: 銀ナゲット
+      largeStone:
+        name: 大きな石
+      sunStone:
+        name: 太陽石の原石
+      tarsiliumOre:
+        name: タルシリウム鉱石
+      farganiteOre:
+        name: ファーガナイト鉱石
     foraging:
       wheat:
         name: 小麦
@@ -68,6 +99,20 @@ singulars:
       berries:
         name: ベリー
         desc: いざという時にそこそこ腹を満たしてくれる。料理の食材として使ってもいい。
+      hardenedKelp:
+        name: 硬化昆布
+      seaCabbage:
+        name: 海キャベツ
+      seaSpinach:
+        name: 海ほうれん草
+      underwaterLotus:
+        name: 水中の蓮
+      sweetKelp:
+        name: 甘い昆布
+      saltyHops:
+        name: 塩ホップ
+      cattail:
+        name: ガマ
     rawFish:
       rawShrimp:
         name: 生のエビ
@@ -89,30 +134,51 @@ singulars:
         desc: ほろりとほぐれる柔らかな身を持つ生のカワカマスは、調理に向いている。
       rawPerch:
         name: 生のパーチ
+        desc: 優美な曲線を描く俊敏なパーチは、釣りを始めたばかりの人にぴったりの魚だ。
       rawSquid:
         name: 生のイカ
+        desc: イカは姿をくらます芸当で人を驚かせる。
       rawShark:
         name: 生のサメ
+      rawCrab:
+        name: 生のカニ
+      rawAnglerfish:
+        name: 生のアンコウ
+      rawLobster:
+        name: 生のロブスター
     misc:
       fishingLine:
         name: 釣り糸
         desc: これを自然から回収したことで、動物の命が救われたかもしれない。
       trash:
         name: ゴミ
+        desc: 役に立たない、価値のない物の寄せ集め。なぜこんな物を拾ったのか？
       fishbone:
         name: 魚の骨
+        desc: 少し気味が悪く、かなり臭うが、見た目はなかなか格好いい。
       seashell:
         name: 貝殻
+        desc: きっと浜辺で誰かが売っていたものだ。
       unidentifiedRemains:
         name: 身元不明の遺骸
       adventurersPin:
         name: 冒険者のピンバッジ
+        desc: 冒険者ギルドの紋章が入ったピンバッジ。少し錆びているが、まだ輝いている。冒険者ギルド出張所に返せば喜ばれるだろう。
       nameTag:
         name: 名札
+        desc: とうの昔にいなくなった冒険者の名前が書かれた名札。冒険者ギルド出張所が興味を持つかもしれない。
+      pearls:
+        name: 真珠
+      glacierMap:
+        name: 謎の北方地図
+      clam:
+        name: 二枚貝の殻
     crafting:
       rope:
         name: より糸
         desc: サバイバルキットにより糸は欠かせない。基本的な道具を作るのに必須だ。
+      kelpRope:
+        name: 昆布のより糸
     carpentry:
       birchPlank:
         name: シラカバの板材
@@ -122,32 +188,52 @@ singulars:
         desc: 温かみのある土色が特徴のマツの板材は、自然な木目模様で素朴な魅力を放っている。
       oakPlank:
         name: オークの板材
+        desc: 豊かな土色と、くっきりとした複雑な木目模様が特徴の、木工作品の定番となる板材。
       woodScrap:
         name: 木屑
         desc: 質の低い木の端材。
       mahoganyPlank:
         name: マホガニーの板材
+        desc: あらゆる頑丈な建造物に使える、高品質な板材。
       sprucePlank:
         name: トウヒの板材
+        desc: きめ細かな木目を持つトウヒの板材は、すっきりとした古典的な見た目で優雅さを感じさせる。
       maplePlank:
         name: カエデの板材
+        desc: 美しく心惹かれるカエデの板材は、滑らかで明るい色の表面を持ち、どんな作品にも洗練された趣を添える。
       willowPlank:
         name: ヤナギの板材
       teakPlank:
         name: チークの板材
       mangrovePlank:
         name: マングローブの板材
+      coralPlank:
+        name: サンゴの板材
+      bambooPlank:
+        name: 竹の板材
     trinketry:
       spiderTrinket:
         name: クモの小物
+        desc: クモの小物は光を受けて明るく輝いている。いつかアミュレットに役立ちそうだ。
       circularRootTrinket:
         name: 輪になった根の小物
       measuringSpoonsTrinket:
         name: 計量スプーンの小物
+        desc: 計量スプーンの小物は光を受けて明るく輝いている。いつかアミュレットに役立ちそうだ。
       beaverTrinket:
         name: ビーバーの小物
+        desc: ビーバーの小物は光を受けて明るく輝いている。いつかアミュレットに役立ちそうだ。
       pinkPearlTrinket:
         name: ピンク真珠の小物
+        desc: ピンク真珠の小物は光を受けて明るく輝いている。いつかアミュレットに役立ちそうだ。
+      coolingIceTrinket:
+        name: ひんやりつららの小物
+      batTrinket:
+        name: コウモリの小物
+      shrimpTrinket:
+        name: エビの小物
+      compassTrinket:
+        name: コンパスの小物
     smithing:
       steelBar:
         name: 鋼インゴット
@@ -156,33 +242,45 @@ singulars:
         desc: 赤みがかった橙色の光沢を放つ銅インゴット。金属としての強さを備え、さまざまな用途に使える。
       metalScrap:
         name: 金属屑
+        desc: 質の低い金属の端材。
       silverBar:
         name: 銀インゴット
+        desc: ナゲットを使っても鉱石を使っても、銀インゴットは銀の標準純度92.5%に達する。
       bronzeBar:
         name: 青銅インゴット
+        desc: ドワーフの鍛冶場の遺物である青銅インゴットは、素朴な魅力と耐久性を漂わせ、熟練の手で溶け合わされた銅とスズの秘密を宿している。
       goldBar:
         name: 金インゴット
       ironBar:
         name: 鉄インゴット
+        desc: 重く揺るがない、大地の芯の強さを示す証だ。
       tarsiliumBar:
         name: タルシリウムインゴット
       farganiteBar:
         name: ファーガナイトインゴット
+      hydriliumBar:
+        name: ハイドリリウムインゴット
     cooking:
       milk:
         name: ミルク
         desc: 牛やヤギ、ラクダから搾りたて。それとも木の実から搾ったもの？どこで見つけたかは本人だけが知っている。
       honey:
         name: ハチの巣
+      mushroom:
+        name: キノコ
     hunting:
       feather:
         name: 羽根
+        desc: 美しく軽く、空気をよく切る鳥の羽根。
       bones:
         name: 骨
+        desc: 骨のかけらがいくつか。
       darkfeather:
         name: 黒い羽根
+        desc: 鳥の黒い羽根。おそらくカラスやワタリガラス、またはほかの黒い鳥のものだ。
       animalMeat:
         name: 獣肉
+        desc: 肉食は殺生だ。
       animalFur:
         name: 獣の毛皮
   crafted:
@@ -199,6 +297,7 @@ singulars:
           desc: 素朴な魅力と揺るぎない力強さを備えた、青銅のツルハシ。
         ironPickaxe:
           name: 鉄のツルハシ
+          desc: 重い頭部をもつこのツルハシは、荒野を切り拓く者や未知に挑む者の頼れる相棒だ。
         steelPickaxe:
           name: 鋼のツルハシ
       fishing:
@@ -210,6 +309,13 @@ singulars:
           desc: 素朴な漁師のささやかな道具、初級漁網。数本のロープを結び合わせただけの代物にすぎない。
         largeFishingNet:
           name: 大きな漁網
+          desc: 海辺の人々が生み出した大きな漁網。絶えず移ろう潮の上に、願いを込めて大きく投げ広げられる。
+        pineFishingRod:
+          name: マツの釣り竿
+        fishingSpear:
+          name: 銛
+        oakFishingRod:
+          name: オークの釣り竿
       tailoring:
         tattyHandwraps:
           name: ぼろの手甲
@@ -219,18 +325,23 @@ singulars:
           desc: 基本的な布地で、駆け出しの仕立て屋が服を作るのによく使う。
         basicLeather:
           name: 初級革
+          desc: 加工すれば、もっと役立つものに仕立てられる一枚の革。
         tattySkirt:
           name: ぼろのスカート
+          desc: 体を覆うぼろぼろの布。動きやすいが、生地のせいで肌がかゆくなる。
         journeymanBreeches:
           name: 職人のズボン
         tattyGarb:
           name: ぼろの衣服
+          desc: 胴に巻くぼろぼろの布。農民や貧しい人々がよく身につけている。
         silverSewingNeedle:
           name: 銀の縫い針
         hideScraps:
           name: 皮の切れ端
+          desc: 傷んだ皮の切れ端。つなぎ合わせれば使える素材になる。
         basicHide:
           name: 初級皮
+          desc: 丈夫さと独特の質感で知られる天然素材。
         grassknotMitts:
           name: 草編みのミトン
         grassknotChaps:
@@ -243,6 +354,32 @@ singulars:
           name: 見習いの作業手袋
         apprenticeBreeches:
           name: 見習いのズボン
+        apprenticeVest:
+          name: 見習いのベスト
+        toughLinenCloth:
+          name: 丈夫なリネンの布
+        shadowquillBracers:
+          name: 影羽の腕当て
+        spikescaleMitts:
+          name: 棘鱗のミトン
+        shadowquillShorts:
+          name: 影羽のショートパンツ
+        spikescaleChaps:
+          name: 棘鱗のチャップス
+        shadowquillPlastron:
+          name: 影羽の胸当て
+        spikescaleTunic:
+          name: 棘鱗のチュニック
+        rootweaveMitts:
+          name: 根編みのミトン
+        rootweaveChaps:
+          name: 根編みのチャップス
+        rootweaveTunic:
+          name: 根編みのチュニック
+        journeymanHandwear:
+          name: 職人の作業手袋
+        journeymanVest:
+          name: 職人のベスト
       woodcutting:
         basicHatchet:
           name: 初級手斧
@@ -255,8 +392,12 @@ singulars:
           desc: 初心者が木を切り始めるのにちょうどいい。
         steelHatchet:
           name: 鋼の手斧
+          desc: 鋼の手斧は作り手の決意を映して輝き、その意のままに働く時を待っている。
         ironHatchet:
           name: 鉄の手斧
+          desc: 重い刃を持ち、荒野を切り開こうとする者や未知に立ち向かう者の忠実な相棒となる。
+        tarsiliumHatchet:
+          name: タルシリウムの手斧
       hunting:
         birchHuntingBow:
           name: シラカバの狩猟弓
@@ -269,24 +410,40 @@ singulars:
           desc: かつては見事な金属の弓だったが、今は錆に覆われている。まだ狩りには使えるものの、昔ほどの性能はない。
         quaintQuiver:
           name: 素朴な矢筒
+          desc: 狩猟用の矢を収めておく、小さな革のホルスター。いたってシンプルだ。
         simpleBowstring:
           name: 簡素な弓の弦
+          desc: 弓矢に欠かせない部品で、矢を放つのに必要な張りを生み出す。
         kelpDriftNet:
           name: 昆布の流し網
+          desc: 水中の昆布で作られた、果てしなく大きな流し網。
         oakHuntingBow:
           name: オークの狩猟弓
+          desc: オーク材で作られた狩猟弓。狩人の間で人気の品だ。
         bolsteredQuiver:
           name: 強化された矢筒
+          desc: そこそこの大きさで、ずっしりとした矢筒。狩猟用の矢はもちろん、ほかに何を詰め込んでも持ち歩ける。
         bronzeArrows:
           name: 青銅の矢
+          desc: 青銅は長持ちが求められる武器の素材には向かないが、こうした矢ならかなりよく機能する。
+        ironArrows:
+          name: 鉄の矢
+        steelArrows:
+          name: 鋼の矢
+        tarsiliumArrows:
+          name: タルシリウムの矢
       foraging:
         stoneSickle:
           name: 初級鎌
           desc: 自然の恵みを刈り取るための基本的な道具。刃が粗く、あまり効率は良くない。
         copperSickle:
           name: 銅の鎌
+          desc: 基本的な植物を刈るのにそこそこの効率を発揮する。
         ironSickle:
           name: 鉄の鎌
+          desc: 頑丈で頼りになり、硬い茎も楽に切り裂く。
+        steelSickle:
+          name: 鋼の鎌
       trinketry:
         amuletOfTheSpider:
           name: クモのアミュレット
@@ -294,6 +451,48 @@ singulars:
           name: ジャーボニアの花の首飾り
         silverRing:
           name: 銀の指輪
+        amuletOfTheShrimp:
+          name: エビのアミュレット
+        silverOpalRing:
+          name: 銀のオパール指輪
+        bronzeChisel:
+          name: 青銅のノミ
+        silverWrentmarineRing:
+          name: 銀のウレントマリン指輪
+        goldRing:
+          name: 金の指輪
+        goldStarPearlRing:
+          name: 金の星真珠指輪
+        silverStarPearlRing:
+          name: 銀の星真珠指輪
+        goldTopazRing:
+          name: 金のトパーズ指輪
+        goldWrentmarineRing:
+          name: 金のウレントマリン指輪
+        silverJadeRing:
+          name: 銀のヒスイ指輪
+        silverTopazRing:
+          name: 銀のトパーズ指輪
+      carpentry:
+        pineToolbox:
+          name: マツの道具箱
+          desc: 職人の道具を持ち運ぶための、マツ材で作られた便利な道具箱。
+        bronzeSaw:
+          name: 青銅ののこぎり
+      upgraded:
+        goldenCuttingMat:
+          name: 金のカッティングマット
+        comfyFishingChair:
+          name: 快適な釣り椅子
+      crafting:
+        bronzeWrench:
+          name: 青銅のレンチ
+      smithing:
+        bronzeHammer:
+          name: 青銅のハンマー
+      cooking:
+        bronzePan:
+          name: 青銅のフライパン
     equipmentSets:
       basic:
         woodenShield:
@@ -305,11 +504,26 @@ singulars:
       copper:
         shield:
           name: 銅の盾
+          desc: 軽い盾。
         sword:
           name: 銅の剣
+          desc: 軽い剣。
       bronze:
         shield:
           name: 青銅の盾
+        sword:
+          name: 青銅の剣
+      iron:
+        sword:
+          name: 鉄の剣
+        shield:
+          name: 鉄の盾
+      steel:
+        sword:
+          name: 鋼の剣
+      tarsilium:
+        shield:
+          name: タルシリウムの盾
   containers:
     skilling:
       regional:
@@ -325,6 +539,12 @@ singulars:
           name: ハーフリング反乱軍の宝箱
         trellinChest:
           name: トレリンの宝箱
+        erdwiseChest:
+          name: エルドワイズの宝箱
+        adventureGuildChest:
+          name: 冒険者ギルドの宝箱
+        syrenthiaChest:
+          name: スレンティアの宝箱
       crafting:
         craftingChest:
           name: クラフトの宝箱
@@ -335,12 +555,14 @@ singulars:
           desc: 採掘にまつわるアイテムが詰まった、岩のように頑丈な詰め合わせ。
         gemPouch:
           name: 宝石袋
+          desc: 貴重な宝石が詰まった小さな袋。手に持つと、宝石の重みがずしりと伝わってくる。
       foraging:
         foragingChest:
           name: 採集の宝箱
           desc: 採集にまつわる装備やアイテムが詰まった、楽しい詰め合わせ。
         sunkenChest:
           name: 沈んだ宝箱
+          desc: 海の深みから、岸へと流れ着いた宝箱。
       smithing:
         smithingChest:
           name: 鍛冶の宝箱
@@ -361,6 +583,7 @@ singulars:
       tailoring:
         tailoringChest:
           name: 裁縫の宝箱
+          desc: この巨大な紡錘には鍵がかかっている。こじ開ければ、役に立つ裁縫のアイテムが入っているかもしれない！
       woodcutting:
         woodcuttingChest:
           name: 伐採の宝箱
@@ -386,6 +609,7 @@ singulars:
         desc: 立派な朝食だ！ほかに本当に何も見つからなければ、だが……
       saltrum:
         name: ソルトラム
+        desc: 魚さえ酔わせる、強い蒸留酒。
       beer:
         name: ビール
         desc: 発酵は、火よりも偉大な発見だったのかもしれない。
@@ -402,18 +626,21 @@ singulars:
         name: ダイナマイト
       salmonPie:
         name: サーモンパイ
+        desc: パイに魚、なんてこった！
       friedFishSandwich:
         name: 魚フライのサンドイッチ
       kelpRolls:
         name: 昆布巻き
       troutSoup:
         name: マスのスープ
+        desc: かなりマスマスしいスープ。
       spicyPumpkinJuice:
         name: スパイスパンプキンジュース
       jarvonianPastry:
         name: ジャーボニア風ペストリー
       nettleTea:
         name: イラクサ茶
+        desc: 寒い場所で飲む温かい飲み物。
       schnitzel:
         name: シュニッツェル
       underwaterSalad:
@@ -422,6 +649,24 @@ singulars:
         name: クレームブリュレ
       pancake:
         name: パンケーキ
+        desc: トッピング次第で無限に楽しめる土台。
+      chocolate:
+        name: チョコレート
+      mushroomCurry:
+        name: キノコカレー
+        desc: 香辛料とキノコの香り高い組み合わせ。しっかり食べたいときにぴったりだ。
+      jellySandwich:
+        name: ジャムサンドイッチ
+      sweetCarrotPie:
+        name: 甘いニンジンパイ
+      bagel:
+        name: ベーグル
+      chocolateMilk:
+        name: チョコレートミルク
+      egg:
+        name: 卵
+      mudPie:
+        name: 泥だんご
     cookedFish:
       cookedShrimp:
         name: 調理済みのエビ
@@ -433,12 +678,23 @@ singulars:
         desc: フライパンで焼いても網で焼いても、ほろりとほぐれる身と、穏やかでほのかに甘い味わいが楽しめる。軽い食事にぴったりだ。
       cookedCarp:
         name: 調理済みのコイ
+        desc: 調理しても穏やかな風味はそのまま。焼いても揚げても、さまざまな料理に使える。柔らかな身は、料理人の腕の見せどころだ。
       cookedSalmon:
         name: 調理済みのサケ
+        desc: バターのようになめらかな身と濃厚な風味を持つ、贅沢なごちそう。魚介好きに人気の一品だ。
       cookedSwordfish:
         name: 調理済みのメカジキ
       cookedPike:
         name: 調理済みのカワカマス
+        desc: 網焼きでも焼き目をつけても、ほろりとほぐれる身と、穏やかでほのかに甘い味わいが楽しめる。いろいろな料理に使える万能な魚だ。
+      cookedTrout:
+        name: 調理済みのマス
+      cookedLobster:
+        name: 調理済みのロブスター
+      cookedJellyfish:
+        name: 調理済みのクラゲ
+      cookedSquid:
+        name: 調理済みのイカ
   looted:
     skilling:
       fishing:
@@ -451,14 +707,65 @@ singulars:
             古くてボロボロの釣り竿で、錆びついたうえに糸もかろうじてつながっている程度。今でも釣りには使えるが、アタリすら来ないかもしれない！
         catchBucket:
           name: 釣果バケツ
+          desc: 釣り上げたばかりの獲物を入れておく、ほどよい大きさのバケツ。
         squishyFlipFlops:
           name: ぷにぷにビーチサンダル
+          desc: 柔らかな布の層が足と焼けた砂のあいだの盾となり、ウレントマークのどれほど暑い浜辺でも平気だ。
         frozenBait:
           name: 冷凍餌
+        sturdyFishingRodRest:
+          name: 頑丈な竿掛け
+          desc: 地面に突き刺して釣り竿を支え、水中の仕掛けの位置を保てる。辛抱が尽きかけたときに便利だ。
+        coolSunglasses:
+          name: かっこいいサングラス
+          desc: とてもおしゃれなサングラスで、夕暮れの浜辺での釣りがぐっと快適になる。
+        breezyShirt:
+          name: 風通しのいいシャツ
+          desc: この軽いシャツを着れば、どんな浜辺でも目立つこと間違いなしだ。
+        eyePatch:
+          name: 眼帯
+        fishermansHat:
+          name: 漁師の帽子
+        babyPenguinIceLure:
+          name: 子ペンギンの氷ルアー
+        iceNetRod:
+          name: 氷の網竿
+        fishermansTrousers:
+          name: 漁師のズボン
+        wadingShoes:
+          name: ウェーディングシューズ
       carpentry:
         simpleSaw:
           name: 簡素なのこぎり
           desc: もっといいものが手に入るまでは、十分に切れるのこぎりだ。
+        woodworkingGlasses:
+          name: 木工用メガネ
+          desc: このメガネをかけると、あらゆる板材に秘められた複雑な模様と物語が見えてくる。
+        compressedCharcoal:
+          name: 圧縮木炭
+          desc: 厚みのある木炭のかけらで、寸法を測ったり切ったりする際に木に印をつけるのにぴったりだ。
+        protectiveGloves:
+          name: 保護手袋
+          desc: のこぎりで指を切り落とす可能性は、0%に減らしておくに越したことはない。
+        simpleRuler:
+          name: ぺらぺらの定規
+          desc: 木の定規で、大工の道具箱には欠かせない。ものを測ったり、まっすぐな線を引いたりできる。
+        protractor:
+          name: 分度器
+        preciseRuler:
+          name: 精密な定規
+        protectiveGlasses:
+          name: 保護メガネ
+        handsaw:
+          name: 手のこぎり
+        protectiveShirt:
+          name: 保護シャツ
+        protectivePants:
+          name: 保護ズボン
+        dullChisel:
+          name: なまくらノミ
+        carpentersClogs:
+          name: 大工の木靴
       agility:
         birchSkis:
           name: シラカバのスキー板
@@ -468,58 +775,157 @@ singulars:
           desc: 重いスキー板で、そのぶんスピードは出るが曲がりにくい。少なくとも頑丈なので、転んでも簡単には折れない！
         simpleTorch:
           name: 簡素なたいまつ
+          desc: 木の棒と布、それに燃えやすいものがあれば、持ち運べる明かりの出来上がり。これ以上簡単なものはない。
         goldenFrisbee:
           name: 金のスカイディスク
+          desc: 金メッキにすぎないので、かなり軽いが丈夫だ。投げたら虹色の軌跡が出ることを期待してしまうが、残念ながら出ない。
         toughRope:
           name: 丈夫なロープ
+          desc: この頑丈なロープがあれば、どんなに高い山でも登れる。
         walkingStick:
           name: ウォーキングステッキ
+          desc: 握りやすい金属の持ち手が付いた頑丈な木製のステッキ。歩く冒険の支えになってくれる。
         clayFrisbee:
           name: 粘土のスカイディスク
+          desc: かなり重くて壊れやすい。近くにクレー射撃をしている人がいないことを祈ろう！
         pineSkis:
           name: マツのスキー板
+          desc: 頑丈で軽いスキー板。避けようとしているまさにその木から作られている。
         medievalSneakers:
           name: 中世のスニーカー
+          desc: 一歩ごとに、静かで軽やかな足取りをもたらす。古代と現代の世界をまたぎ、時代の隔たりに橋を架ける一足だ。
         waterBottle:
           name: 水筒
+          desc: 新鮮できれいな飲み水を満たしたガラス瓶。水分補給を忘れずに！
+        runningShorts:
+          name: ランニングショーツ
+          desc: 着心地がよくて履きやすい！鮮やかな青色なので、周りからも目立つ。
+        mapOfArenum:
+          name: アレヌムの地図
+        runningShirt:
+          name: ランニングシャツ
+          desc: 走りに出かけるときは、きちんとした服装がとても大事だ。こんなシャツは欠かせない。
+        simpleRope:
+          name: 簡素なロープ
+        parkourGloves:
+          name: パルクールの手袋
+        mapOfJarvonia:
+          name: ジャーボニアの地図
+        toeShoes:
+          name: 五本指シューズ
+        ironThermos:
+          name: 鉄の魔法瓶
+        mapOfHalfling:
+          name: ハーフリング反乱軍の地図
+        mapOfTrellin:
+          name: トレリンの地図
+        stepring:
+          name: ステップリング
       crafting:
         simpleWrench:
           name: 簡素なレンチ
+          desc: 駆け出しの職人にぴったりの道具。
         simpleChisel:
           name: 簡素なノミ
+          desc: この道具があれば、わずかな手間賃で世界を形作れる。
         craftingPants:
           name: クラフトのズボン
+          desc: ゆったりしたズボンで、クラフトの腕をより快適に振るえる。
         slideRuler:
           name: 計算尺
+        craftingShirt:
+          name: クラフトのシャツ
+        wireSaw:
+          name: ワイヤーソー
+        craftingBoots:
+          name: クラフトのブーツ
       mining:
         iceAxe:
           name: 氷の斧
+          desc: 触れると焼けつくように痛い。手袋をはめること！
         rustyPickaxe:
           name: 錆びたツルハシ
           desc: かつては見事なツルハシだったが、すっかり錆びついている。今でも採掘には使えるが、この状態ではうまく掘れない。
         fingerpick:
           name: フィンガーピック
+          desc: いちばん小さな石のための、いちばん小さなツルハシ。
         goldPan:
           name: 砂金皿
         simpleGoldPan:
           name: 簡素な砂金皿
+          desc: この皿があれば、川で金を見つけやすくなる。
+        steelToeBoots:
+          name: 鋼先芯のブーツ
+          desc: トロッコに足の指を潰されるどころか、このブーツならトロッコのほうを脱線させてしまう。
+        handLantern:
+          name: 手提げランタン
+          desc: 予備のマッチを持ってきているといいのだが。洞窟の奥深くでろうそくが消えたら、一巻の終わりだ。
+        simpleMiningShovel:
+          name: 軽量の採掘シャベル
+          desc: これで鉱石だらけの地面から瓦礫を少し取り除けば、貴重な鉱物を見つけやすくなる。
+        minersMagnet:
+          name: 鉱夫の磁石
+        miningHelm:
+          name: 採掘ヘルメット
+        miningCartpack:
+          name: 採掘トロッコパック
+          desc: 背負えるように改造されたトロッコ。まさに革新を前へと押し進める発明だ。
+        minersShirt:
+          name: 鉱夫のシャツ
+        minersPants:
+          name: 鉱夫のズボン
+        simpleMagnet:
+          name: 簡素な磁石
+        minersBeard:
+          name: 鉱夫のひげ
+        heavyPickHandle:
+          name: 重いツルハシの柄
       woodcutting:
         rustyHatchet:
           name: 錆びた手斧
           desc: かつては見事な手斧だったが、すっかり錆びついている。今でも伐採には使えるが、全盛期はとうに過ぎている。
         lumberjackSandals:
           name: きこりのサンダル
+          desc: 
+            このつま先の開いた靴を履くと、自然とのつながりをより強く感じられる。まるで周囲のエネルギーが足から心臓へと伝わってくるかのようだ。
         lumberjackBoots:
           name: きこりのブーツ
+          desc: 耐久性と実用性を兼ね備えたきこりのブーツは、魔法の森（あるいは魔法の解けた森）の奥地に挑む者たちに愛用されている。
         lumberjackPants:
           name: きこりのズボン
+          desc: 夜はぐっすり眠り、昼はしっかり働くきこりのためのズボン。なかなかOKな一着だ。
+        logBasket:
+          name: 丸太かご
+          desc: 持ち手の付いた木製の台。丸太を運ぶのにぴったりだが、ほかのアイテムにも使える。たとえば、別の丸太かごとか。
+        lumberjackHat:
+          name: きこりの帽子
+          desc: 伐採の冒険にふさわしい帽子。
+        heavyAxeHandle:
+          name: 重い斧の柄
+        logSplitter:
+          name: 薪割り斧
+        forestersPants:
+          name: 森番のズボン
+        forestersFlannelShirt:
+          name: 森番のネルシャツ
+        forestersHat:
+          name: 森番の帽子
+        forestersBoots:
+          name: 森番のブーツ
+        lumberjackShirt:
+          name: きこりのシャツ
+        woodcuttingGuidebook:
+          name: 伐採のガイドブック
       tailoring:
         safetyScissors:
           name: 安全はさみ
+          desc: 正しい使い方を覚えるまで手を切らないよう、刃をあまり鋭くしていないはさみ。
         markingChalk:
           name: 印つけチャコ
+          desc: 布用の、時間がたつと消える印つけチャコ。生地を傷めずに正確な線を引ける。
         simpleSewingNeedle:
           name: 簡素な縫い針
+          desc: 基本的な縫い物に使える、ごく簡素な針。
         precisionPins:
           name: 精密待ち針
         practicePins:
@@ -530,78 +936,225 @@ singulars:
           name: くっつくメジャー
         keenEyeLenses:
           name: 鋭眼レンズ
+          desc: 裁縫に使う植物を見つけやすくなるといわれるレンズ。少なくとも、流行る前から目をつけていたように見せてはくれる。
         tailorsMoccasins:
           name: 仕立て屋のモカシン
         silverScissors:
           name: 銀のはさみ
         sewingGuidebook:
           name: 裁縫のガイドブック
+        needlecase:
+          name: 底なしの針入れ
+        pincushionBeret:
+          name: 針山ベレー帽
       smithing:
         simpleHammer:
           name: 簡素なハンマー
+          desc: ごく普通のハンマー。鋼の頭と木の柄が付いている。確かに簡素だが、ハンマーがないよりはましだ。
+        forgeBellows:
+          name: 鍛冶場のふいご
+          desc: 鍛冶場に空気を送り込み、文字どおり熱を上げるために使う。
+        jarvonianPoker:
+          name: ジャーボニアのポーカー
+          desc: カードゲームではなく、火かき棒だ。服は脱がなくていい。
+        smithsPants:
+          name: 鍛冶師のズボン
+          desc: かなり暑いが、一日中炉の前にいても脚が焼けずに済む。
+        metalworkingGloves:
+          name: 金属加工の手袋
+        wolfJawTongs:
+          name: 狼あごのトング
+        smithsApron:
+          name: 鍛冶師のエプロン
+        smeltingGoggles:
+          name: 製錬ゴーグル
       cooking:
         florasSilverSpoon:
           name: フローラの銀のスプーン
           desc: 特別な銀のスプーン。フローラがいつかキッチンでなくしたのだろう。今やこちらのものだ！
         simplePan:
           name: 簡素なフライパン
+          desc: 焦げつき防止加工はないが、いざという時には役に立つ。
+        chefsHat:
+          name: コック帽
+        sharpKnife:
+          name: 鋭いナイフ
+        dullKnife:
+          name: なまくらナイフ
+          desc: なまくらナイフほど危ないものはない。……と、よく言われる。
+        ovenMittens:
+          name: オーブンミトン
+          desc: ほどよく温かいが、これが必要になるものほど熱くはない。
+        cuttingBoard:
+          name: まな板
+        flippySpatula:
+          name: くるくるフライ返し
+        sturdyWhisk:
+          name: 頑丈な泡立て器
       foraging:
         compassNecklace:
           name: 発見のアミュレット
         smallSack:
           name: 小さな袋
+          desc: 持ち歩ける小さな麻袋で、アイテムを1つ余分に入れられる。
         rustySickle:
           name: 錆びた鎌
+          desc: かつては見事な鎌だったが、すっかり錆びついている。今でも採集には使えるが、昔ほどの切れ味はない。
         halflingsFeetSlippers:
           name: ハーフリングの足スリッパ
+          desc: ハーフリングの毛深い足をまねた、暖かくて愛らしいスリッパ。小さな足の指や遊び心あふれる細部まで再現されている。
         waterproofBoots:
           name: 防水ブーツ
+          desc: カナリアのように黄色い長靴で、靴下を乾いたまま保ってくれる。濡れた靴下ほど不快なものはそうない。
         dullMachete:
           name: なまくらマチェーテ
+          desc: 刃はひどい状態で、まるでいくつもの森をこれで切り開いてきたかのようだ。
         longSpade:
           name: 長いスコップ
+          desc: 頑丈な木の柄とステンレス鋼の刃を備えた、どっしりしたスコップ。これなら大きな穴も掘れるだろう。
         wildernessGuideBook:
           name: 荒野のガイドブック
+          desc: 動物、植物、水源などを網羅した、荒野で生き抜くための知恵が詰まっている。
+        sharpMachete:
+          name: 鋭いマチェーテ
+          desc: 剃刀のように鋭い刃のおかげで、生い茂る草木をかき分けて進むのも朝飯前だ。
+        foragingShirt:
+          name: 採集のシャツ
+          desc: 暑い場所で採集するときは涼しく、寒い場所では暖かく保ってくれる。
+        foragingShorts:
+          name: 採集のショートパンツ
+          desc: 丈夫で快適なショートパンツ。どんな地形での採集にもぴったりだ。
+        nonWaterproofBoots:
+          name: 非防水ブーツ
+          desc: 採集中の風や険しい地形からはある程度守ってくれるが、足が濡れない保証はない。
+        pickersGloves:
+          name: 摘み手の手袋
+          desc: 着け心地のよい革の手袋。草木に隠れた宝を探すとき、トゲやそのほかの自然の防衛機構から手を守ってくれる。
+        bigBasket:
+          name: でかいかご
+        camouflageCape:
+          name: 葉っぱのマント
+          desc: 葉っぱだけで作られたマントで、採集にどっぷり没頭できる。燃えやすそうだが、葉っぱりやめられない。
+        pointyShears:
+          name: 尖った剪定ばさみ
+          desc: これを使えば、茂みや草木にすっかり覆われてしまった宝が見つかるかもしれない。
+        wildernessPants:
+          name: 荒野のズボン
+        wildernessShirt:
+          name: 荒野のシャツ
+        gardeningGloves:
+          name: 園芸用の手袋
+          desc: 滑りにくく水を通さない手袋で、植え付け、水やり、剪定、草取りなど、あらゆる園芸作業にぴったりだ。
+        simpleBugCatchingNet:
+          name: 簡素な虫取り網
       hunting:
         skinnyFieldKnife:
           name: 細身のフィールドナイフ
+          desc: 仕留めたばかりの獲物の皮をはいだり、さばいたりするのに使える細いナイフ。
+        camoFacePaint:
+          name: 迷彩フェイスペイント
+          desc: 顔に塗っても肌が荒れにくいはずの迷彩塗料。見えにくいので、どうせ目に入ってしまうだろう。
+        trappersCape:
+          name: 罠師のマント
+        scentMaskingSpray:
+          name: 匂い消しスプレー
       trinketry:
         roughSandpaper:
           name: 粗い紙ヤスリ
+          desc: 強く握りすぎると、この粗い紙ヤスリで手の皮がむけそうだ。
+        prettyPliers:
+          name: おしゃれなペンチ
     versatile:
       lifeVest:
         name: ライフジャケット
+        desc: このジャケットの使命は命を守ること。守護天使だと思えばいい。
       herbertsCape:
         name: ハーバートのマント
+        desc: 少しほこりをかぶっていて、ハーバートが長いこと使っていないのがわかる。第二の人生を与えてやれるかもしれない。
       herbertsHat:
         name: ハーバートの帽子
+        desc: 耳まで温めてくれる茶色の毛糸帽。古いのではない、ヴィンテージなのだ。
       herbertsShirt:
         name: ハーバートのシャツ
+        desc: 赤い長袖のシャツで、襟は立てられる。ボタンがいくつか取れているが、とりあえず着られはする。
       fishingLure:
         name: ルアー
+        desc: 腕利きの職人による手作りで、日差しを受けると虹色の鱗のように色と模様がきらめく。
       warmBeanie:
         name: 暖かいニット帽
       rustyDivingHelm:
         name: 錆びた潜水ヘルメット
       rustyDivingBody:
         name: 錆びた潜水胴衣
+        desc: 古い潜水服の上半身部分。着ると重い。
       warmJacket:
         name: 暖かいジャケット
       herbertsBoots:
         name: ハーバートのブーツ
+        desc: よく履きこまれた革のブーツ。少し磨いたほうがよさそうだが、作業用としては十分だ。
       herbertsPants:
         name: ハーバートのズボン
+        desc: 古いジーンズで、ワンサイズ大きい。幸い革のベルトがついているので問題ない。
       zippyKicksled:
         name: 快速キックスレッド
       simpleLifeVest:
         name: 簡素なライフジャケット
+      trustyTent:
+        name: 頼れるテント
+      smellySocks:
+        name: くさい靴下
+        desc: しもべ妖精を自由にするのにぴったりの靴下。
+      simpleAmulet:
+        name: 簡素なアミュレット
+        desc: 真鍮色のネックレスに、同じような色のペンダントがついている。ペンダントには、もっと明るい色の意味不明な模様が描かれている。
+      rabbitEars:
+        name: ウサギの耳
+        desc: これをつけていると、動物たちの見る目が少し変わるようだ。少し身軽になった気がする。かわいさも増す。
+      mosquitoNethat:
+        name: 蚊よけネット帽
+      properCape:
+        name: 本格マント
+      simpleRing:
+        name: 簡素な指輪
+      kelpDivingMask:
+        name: 昆布の潜水マスク
+      kelpDivingLegs:
+        name: 昆布の潜水パンツ
+      kelpDivingBody:
+        name: 昆布の潜水シャツ
+      backpack:
+        name: リュック
+      properBoots:
+        name: 本格ブーツ
+      oldCopperRing:
+        name: 古い銅の指輪
+      oldSilverRing:
+        name: 古い銀の指輪
+      properHat:
+        name: 本格帽子
+      treeScalingClaws:
+        name: 木登り爪
+      oldGoldRing:
+        name: 古い金の指輪
+      properShirt:
+        name: 本格シャツ
+      finGloves:
+        name: ヒレ手袋
+      rustyDivingLegs:
+        name: 錆びた潜水レギンス
+      properPants:
+        name: 本格パンツ
+      screwdriver:
+        name: ドライバー
     achievements:
       ringOfHomesickness:
         name: 郷愁の指輪
+        desc: この指輪を見ると、やっぱりおうちがいちばんだと思い出す。
       jugglingBalls:
         name: ジャグリングボール
       pathfinder:
         name: 道しるべ
+        desc: 首飾りには、最短ルートを示すミニチュアの地図が付いている。
       runningVisor:
         name: ランニングバイザー
       rustySpyglass:
@@ -616,20 +1169,93 @@ singulars:
         name: 欲張りなブタの貯金箱
       trekkingPoles:
         name: トレッキングポール
+      treasureHunterHat:
+        name: 宝探しの帽子
+      trashGrabber:
+        name: ゴミ拾いトング
+      bootsOfSpeed:
+        name: 俊足のブーツ
+      treasureHunterJacket:
+        name: 宝探しのジャケット
+      treasureHunterPants:
+        name: 宝探しのズボン
+      shoesOfEscape:
+        name: 逃走の靴
+        desc: この靴を履くと、ときどきものすごく速く走れる。
+      conservationistHat:
+        name: 自然保護官の帽子
+      absorbingAmulet:
+        name: 吸収のアミュレット
+      conservationistBoots:
+        name: 自然保護官のブーツ
+      conservationistShirt:
+        name: 自然保護官のシャツ
+      treasureGrabber:
+        name: お宝マジックハンド
     supporter:
       stickyFingerShorts:
         name: 手癖の悪い半ズボン
+      woodpucker:
+        name: ウッドパッカー
+      theKakesWalkingStick:
+        name: 旅心のウォーキングステッキ
+      alienSqueakyToy:
+        name: エイリアンのピーピーおもちゃ
     equipmentSets:
       adventurersTools:
         adventuringSewingNeedle:
           name: 冒険用の縫い針
+        adventuringSickle:
+          name: 冒険用の鎌
+          desc: 刃に冒険者ギルドの紋章が刻まれた鎌。薬草などの植物の収穫に使える。
+        adventuringHatchet:
+          name: 冒険用の手斧
+          desc: 冒険者ギルドの紋章が入った手斧。刃は鋭く、柄は頑丈だ。
+        adventuringPickaxe:
+          name: 冒険用のツルハシ
+          desc: 冒険者ギルドの紋章がついた頑丈な柄のツルハシ。岩を砕き、鉱石を採掘するのにうってつけだ。
+        adventuringFishingPole:
+          name: 冒険用の釣り竿
+        adventuringHuntingBow:
+          name: 冒険用の狩猟弓
+        adventuringSaw:
+          name: 冒険用ののこぎり
     combat:
       swashbucklerSword:
         name: 荒くれ剣士の曲刀
+    agGuildSpecials:
+      bertssuperskis:
+        name: バートのスーパースキー板
+        desc: このスキー板は、スーパー雪の上で使うと最速だ。
+      zorresDesertGourdpack:
+        name: ゾーレの砂漠ひょうたんパック
+    regional:
+      jarvonia:
+        frostTouchedBoots:
+          name: 霜纏いのブーツ
+          desc: 銀色の金属のブーツが、青い光を帯びてきらめく。
+        frostTouchedGauntlets:
+          name: 霜纏いの籠手
+        frostTouchedLeggings:
+          name: 霜纏いのレギンス
+      trellin:
+        lindenLeafBoots:
+          name: 菩提樹の葉のブーツ
+          desc: これを履くと、両足に葉っぱの茂みをくっつけているように見える。
+        lindenLeafGloves:
+          name: 菩提樹の葉の手袋
+        lindenLeafShorts:
+          name: 菩提樹の葉の半ズボン
+      halfling:
+        bogwoodBoots:
+          name: 沼木のブーツ
+          desc: 頑丈で、ぬかるんだ場所で作業するときも快適に履けるよう作られたブーツ。
   collectibles:
     fromActivity:
       jarvonianCrosswordPuzzle:
         name: ジャーボニアのクロスワードパズル
+        desc: 
+          季節に一度、ジャーボニアの人々の間で作成、複製、配布されるクロスワードパズル。最初に解いた者には賞金が出るため、競争は激しい。ヨコの鍵1：採掘遠征隊が消息を絶った山（9マス）
       jarOfDirt:
         name: 土の入った瓶
       sigilOfTheOrdained:
@@ -638,6 +1264,18 @@ singulars:
         name: 沼の精髄
       lostTimmysSandShovel:
         name: 迷子のティミーの砂遊びスコップ
+        desc: 少年まで迷子になったのかどうかは定かではない。
+      soupKitchenBadge:
+        name: 煮炊き厨房のバッジ
+    visas:
+      westernContinentBoatPass:
+        name: 西大陸の乗船券
+      blackEyePeakWildernessPermit:
+        name: 黒眼峰の秘境立入許可証
+      underwaterMapI:
+        name: 水中地図
+      jarvonianLetterOfPassage:
+        name: ジャーボニアの通行証
   currencies:
     ectoplasm:
       name: エクトプラズム
@@ -646,3 +1284,9 @@ singulars:
   eggs:
     goldenFrog:
       name: 金のカエルの卵
+    pixieEgg:
+      name: ピクシーの卵
+    camelEgg:
+      name: ラクダの卵
+    geckoEgg:
+      name: ヤモリの卵

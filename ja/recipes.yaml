@@ -6,6 +6,9 @@ singulars:
         desc: シラカバの素朴な木から、基本的な狩猟弓を作る。
       oakHuntingBow:
         name: オークの狩猟弓を作る
+        desc: オークの心材から頑丈な狩猟弓を作る。
+      bambooHuntingBow:
+        name: 竹の狩猟弓を作る
     arrows:
       simpleBowstring:
         name: 簡素な弓の弦を作る
@@ -15,26 +18,65 @@ singulars:
         desc: 銅の矢じりをつけた細身の矢を作る。
       bronzeArrows:
         name: 青銅の矢を作る
+        desc: 青銅の矢じりをつけた頑丈な矢を作る。
       ironArrows:
         name: 鉄の矢を作る
+        desc: 鉄の矢じりをつけた頑丈な矢を作る。
       steelArrows:
         name: 鋼の矢を作る
+      tarsiliumArrows:
+        name: タルシリウムの矢を作る
+      farganiteArrows:
+        name: ファーガナイトの矢を作る
+    traps:
+      boxtraps:
+        boxtrap:
+          name: 箱罠を作る
+      net:
+        kelpDriftNet:
+          name: 昆布の流し網を作る
   trinketry:
     amulets:
       jarvonianFlowerNecklace:
         name: ジャーボニアの花の首飾りを作る
         desc: ムーンデイジーとスノードロップを合わせて花のネックレスにする。
+      amuletOfTheFinding:
+        name: 発見のアミュレットを作る
+      amuletOfTheEel:
+        name: ウナギのアミュレットを作る
+      amuletOfTheHeron:
+        name: サギのアミュレットを作る
     gems:
       shapeOpal:
         name: オパールを作る
         desc: 原石から炎のように輝くオパールを切り出す。
       shapeStarPearl:
         name: 星真珠を作る
+        desc: 星真珠を削り、内部の繊細な構造をあらわにする。
+      shapeWrentmarine:
+        name: ウレントマリンを作る
+      shapeTopaz:
+        name: トパーズを作る
+      shapeJade:
+        name: ヒスイを作る
     rings:
       silverRing:
         name: 銀の指輪を作る
+        desc: 定番の銀の指輪を作る。
       silverOpalRing:
         name: 銀のオパール指輪を作る
+      silverStarPearlRing:
+        name: 銀の星真珠指輪を作る
+      goldRing:
+        name: 金の指輪を作る
+      goldOpalRing:
+        name: 金のオパール指輪を作る
+      silverWrentmarineRing:
+        name: 銀のウレントマリン指輪を作る
+      goldStarPearlRing:
+        name: 金の星真珠指輪を作る
+      silverTopazRing:
+        name: 銀のトパーズ指輪を作る
   carpentry:
     planks:
       birchPlank:
@@ -42,23 +84,50 @@ singulars:
         desc: シラカバの木を慎重に切って、役に立つ用途の広い板材にする。
       pinePlank:
         name: マツの板材を作る
+        desc: マツの木を、頑丈で頼れる板材に変える。
       sprucePlank:
         name: トウヒの板材を作る
+        desc: 強さと用途の広さで知られるトウヒの板材を作る。
       oakPlank:
         name: オークの板材を作る
+        desc: 丈夫さと美しさで重宝されるオークの板材を作る。
+      maplePlank:
+        name: カエデの板材を作る
+      teakPlank:
+        name: チークの板材を作る
+      willowPlank:
+        name: ヤナギの板材を作る
+      bambooPlank:
+        name: 竹の板材を作る
+      coralPlank:
+        name: サンゴの板材を作る
+      mangrovePlank:
+        name: マングローブの板材を作る
     scrap:
       birchPlankScrap:
         name: シラカバの板材を作る（屑）
         desc: 木屑を慎重に加工して、役に立つ用途の広い板材にする。
       pinePlankScrap:
         name: マツの板材を作る（屑）
+        desc: 木屑を、頑丈で頼れる板材に変える。
       sprucePlankScrap:
         name: トウヒの板材を作る（屑）
+        desc: 強さと用途の広さで知られるトウヒの板材を作る。
       oakPlankScrap:
         name: オークの板材を作る（屑）
+        desc: 丈夫さと美しさで重宝されるオークの板材を作る。
+      maplePlankScrap:
+        name: カエデの板材を作る（屑）
+      teakPlankScrap:
+        name: チークの板材を作る（屑）
+      willowPlankScrap:
+        name: ヤナギの板材を作る（屑）
     tools:
       pineToolbox:
         name: マツの道具箱を作る
+        desc: 木工の腕を生かして、マツの道具箱を作る。
+      bambooToolbox:
+        name: 竹の道具箱を作る
   cooking:
     fish:
       cookedPerch:
@@ -69,32 +138,74 @@ singulars:
         desc: 揚げたエビの味を堪能しよう。うれしい海の幸のごちそうだ。
       cookedCarp:
         name: 調理済みのコイを作る
+        desc: 淡泊な味とやわらかな身で知られるコイのフライを味わおう。
       cookedPike:
         name: 調理済みのカワカマスを作る
+        desc: ほろりとほぐれるやわらかな身で知られる、カワカマスのフライを味わおう。
       cookedTrout:
         name: 調理済みのマスを作る
+      cookedJellyfish:
+        name: 調理済みのクラゲを作る
+      cookedSalmon:
+        name: 調理済みのサケを作る
+      cookedLobster:
+        name: 調理済みのロブスターを作る
+      cookedSwordfish:
+        name: 調理済みのメカジキを作る
     consumables:
       nettleTea:
         name: イラクサ茶を作る
         desc: 生または乾燥のイラクサの葉を湯に浸して作る、風味豊かで体によいかもしれないお茶。
       bread:
         name: パンを作る
+        desc: 一から作る手作りパン。小麦粉、水、酵母、塩を合わせてこね、発酵させ、成形し、皮がパリッとしたきつね色になるまで焼く。
       porridge:
         name: 麦がゆを作る
+        desc: ミルクか水で煮て、好みの甘い具やしょっぱい具をのせた、温かくてほっとする麦がゆ。
       pancakes:
         name: パンケーキを作る
+        desc: 軽くてふわふわのパンケーキは、おいしい朝食にぴったり。メープルシロップやバター、好きなトッピングと一緒にどうぞ。
       wine:
         name: ワインを作る
+        desc: 果物を発酵させて作る奥深い飲み物。甘い果汁が、独特の風味と香りをもつ酒へと変わる。
       cookedMeat:
         name: 調理済みの肉を作る
+        desc: 完璧なステーキを焼くための定番の技法。
       crabRolls:
         name: カニロールを作る
       beer:
         name: ビールを作る
+        desc: 麦芽を使って風味豊かな酒を造る、複雑な工程。
       chocolateMilk:
         name: チョコレートミルクを作る
       bagel:
         name: ベーグルを作る
+      pickles:
+        name: ピクルスを作る
+      milk:
+        name: ミルクを作る
+      mushroomCurry:
+        name: キノコカレーを作る
+      troutSoup:
+        name: マスのスープを作る
+      mudPie:
+        name: 泥だんごを作る
+      jellySandwich:
+        name: ジャムサンドイッチを作る
+      dynamite:
+        name: ダイナマイトを作る
+      sweetCarrotPie:
+        name: 甘いニンジンパイを作る
+      kelpRolls:
+        name: 昆布巻きを作る
+      salmonPie:
+        name: サーモンパイを作る
+      underwaterSalad:
+        name: 水中サラダを作る
+      roastedBellPepper:
+        name: ローストパプリカを作る
+      saltrum:
+        name: ソルトラムを作る
   smithing:
     wooden:
       woodenShield:
@@ -109,27 +220,57 @@ singulars:
         desc: 銅を熱して成形し、さまざまな用途に使える頑丈なインゴットにする。
       silverBar:
         name: 銀インゴットを作る
+        desc: 銀ナゲットか鉱石を製錬して、銀インゴットを作る。
       bronzeBar:
         name: 青銅インゴットを作る
+        desc: 銅とスズを溶かし合わせて、用途の広い青銅インゴットを作る。
       goldBar:
         name: 金インゴットを作る
+        desc: 金ナゲットか鉱石を製錬して、金インゴットを作る。
+      ironBar:
+        name: 鉄インゴットを作る
+      steelBar:
+        name: 鋼インゴットを作る
+      tarsiliumBar:
+        name: タルシリウムインゴットを作る
     scrap:
       copperBarScrap:
         name: 銅インゴットを作る（屑）
         desc: 金属屑を熱して成形し、さまざまな用途に使える頑丈なインゴットにする。
       bronzeBarScrap:
         name: 青銅インゴットを作る（屑）
+        desc: 金属屑を溶かして、用途の広い青銅インゴットを作る。
+      ironBarScrap:
+        name: 鉄インゴットを作る（屑）
+      steelBarScrap:
+        name: 鋼インゴットを作る（屑）
     copper:
       copperShield:
         name: 銅の盾を作る
         desc: 銅インゴットから銅の盾を作る。
       copperSword:
         name: 銅の剣を作る
+        desc: 銅インゴットから銅の剣を作る。
     bronze:
       bronzeShield:
         name: 青銅の盾を作る
+        desc: 青銅インゴットから青銅の盾を作る。
       bronzeSword:
         name: 青銅の剣を作る
+        desc: 青銅インゴットから青銅の剣を作る。
+    iron:
+      ironShield:
+        name: 鉄の盾を作る
+      ironSword:
+        name: 鉄の剣を作る
+    steel:
+      steelShield:
+        name: 鋼の盾を作る
+      steelSword:
+        name: 鋼の剣を作る
+    other:
+      reinforcedBellows:
+        name: 補強されたふいごを作る
   tailoring:
     clothing:
       tattyHandwraps:
@@ -139,17 +280,23 @@ singulars:
       linen:
         name: リネンの布を作る
         desc: 細い糸を織り上げ、柔らかく丈夫な布にする。
+        activityDesc: 
+          繊維を紡いで細い糸にし、丁寧に織り上げて、柔らかく丈夫なリネンの布にする。どの工程にも根気と正確さが必要だ。こうして素材は用途の広い織物へと姿を変える。
       tattySkirt:
         name: ぼろのスカートを作る
         desc: 簡素なぼろのスカートを作る。
       tattyGarb:
         name: ぼろの衣服を作る
+        desc: 簡素なぼろの衣服を作る。
       basicLeather:
         name: 初級革を作る
+        desc: 簡素ながら丈夫な革を作る。
       grassknotMitts:
         name: 草編みのミトンを作る
+        desc: 草を編み込んだ、暖かく実用的なミトンを一組作る。
       grassknotChaps:
         name: 草編みのチャップスを作る
+        desc: 草を編み込んだ、丈夫な脚覆いを一組作る。
       grassknotTunic:
         name: 草編みのチュニックを作る
       apprenticeHandware:
@@ -188,6 +335,22 @@ singulars:
         name: エアロフィブリルのショートパンツを作る
       aerofibrilPlastron:
         name: エアロフィブリルの胸当てを作る
+      spectralHandwear:
+        name: 霊体の作業手袋を作る
+      spectralBreeches:
+        name: 霊体のズボンを作る
+      elderhideMitts:
+        name: エルダーハイドのミトンを作る
+      elderhideChaps:
+        name: エルダーハイドのチャップスを作る
+      elderhideTunic:
+        name: エルダーハイドのチュニックを作る
+      elderhideLeather:
+        name: エルダーハイドの革を作る
+      toughLinen:
+        name: 丈夫なリネンの布を作る
+      spectralVest:
+        name: 霊体のベストを作る
     tools:
       silverSewingNeedle:
         name: 銀の縫い針を作る
@@ -213,40 +376,73 @@ singulars:
         desc: 効率よく採掘できる、頑丈な銅のツルハシを作る。
       bronzeHatchet:
         name: 青銅の手斧を作る
+        desc: 過酷な伐採に向いた、頑丈な青銅の手斧を作る。
       bronzePickaxe:
         name: 青銅のツルハシを作る
+        desc: 激しい採掘にぴったりな、丈夫な青銅のツルハシを作る。
       bronzeWrench:
         name: 青銅のレンチを作る
+        desc: 青銅のコーティングでレンチを改良する。
       bronzeHammer:
         name: 青銅のハンマーを作る
+        desc: 簡素なハンマーを青銅のハンマーに改良する。
       bronzePan:
         name: 青銅のフライパンを作る
+        desc: 青銅の金属コーティングでフライパンを改良する。
       bronzeSaw:
         name: 青銅ののこぎりを作る
+        desc: 簡素なのこぎりを青銅で補強して改良する。
       theKakesWalkingStick:
         name: 旅心のウォーキングステッキを作る
+        desc: ウォーキングステッキに銀をあしらって改良し、旅の相棒として新たな個性を与える。
       bronzeChisel:
         name: 青銅のノミを作る
       ironSickle:
         name: 鉄の鎌を作る
+      ironHatchet:
+        name: 鉄の手斧を作る
+      ironPickaxe:
+        name: 鉄のツルハシを作る
+      steelSickle:
+        name: 鋼の鎌を作る
+      steelHatchet:
+        name: 鋼の手斧を作る
+      steelPickaxe:
+        name: 鋼のツルハシを作る
+      jadeTippedSteelPan:
+        name: ヒスイ付きの鋼のフライパンを作る
+      jellyfishingNet:
+        name: クラゲ取り網を作る
     misc:
       rope:
         name: より糸を作る
         desc: 亜麻を紡いでより糸を作る。
       bagofRocks:
         name: 石の袋を作る
+        desc: 大きな石と頑丈な枝から石の袋を作る。
       trash:
         name: ゴミを再利用する
+        desc: ゴミを調べて、何か役に立つものに作り変える。
+      hardenedKelp:
+        name: 硬化昆布を作る
     fishing:
       smallFishingNet:
         name: 初級漁網を作る
         desc: より糸で初級漁網を作る。
       basicFishingRod:
         name: 木の釣り竿を作る
+        desc: 板材と釣り糸で木の釣り竿を作る。
       pineFishingRod:
         name: マツの釣り竿を作る
+        desc: 板材と釣り糸でマツの釣り竿を作る。
       largeFishingNet:
         name: 大きな漁網を作る
+      fishingSpear:
+        name: 銛を作る
+      oakFishingRod:
+        name: オークの釣り竿を作る
+      lobsterPot:
+        name: ロブスターかごを作る
     diving:
       kelpDivingMask:
         name: 昆布の潜水マスクを作る
@@ -259,5 +455,12 @@ singulars:
       name: 超器用ズボンを作る
     comfyFishingChair:
       name: 快適な釣り椅子を作る
+      desc: 板材と革で、釣りの冒険のための椅子を作る。
     tripleRodRest:
       name: 三本竿掛けを作る
+    ironChefsHat:
+      name: 鉄人のコック帽を作る
+    gemTippedPliers:
+      name: 宝石付きのペンチを作る
+    tintedWoodworkingGlasses:
+      name: 色付きの木工用メガネを作る
