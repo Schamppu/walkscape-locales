@@ -40,6 +40,20 @@ singulars:
     smeltRecipe: <object id="recipe_smelting" /> tarifi uygularken.
     arrowsInInventory: Envanterinde <object id="arrows" /> bulundur.
     cookingRecipe: <object id="recipe_cooking" /> yaparken.
+    litterLooting: <object 
+      id="activity-litter_looting-41fbf4b2-2e61-405e-beb1-c223d22ac156" 
+      alwaysShow="true" /> faaliyetini <numberProgress current="{current}" 
+      max="{max}" /> kere tamamla.
+    erdwiseDumpster: <object 
+      id="activity-dumpster_diving-ec967851-8cee-44a6-bf25-1e70be61fda7" 
+      alwaysShow="true" /> faaliyetini <numberProgress current="{current}" 
+      max="{max}" /> kere tamamla.
+    trellinDumpster: <object 
+      id="activity-dumpster_diving-d087c88a-d857-4d91-83ac-fc77e3956886" 
+      alwaysShow="true" /> faaliyetini <numberProgress current="{current}" 
+      max="{max}" /> kere tamamla.
+    gain100kOre: <object id="ore" /> kazan. (Takastan sayılmaz.) <numberProgress
+      />
   mainSkill:
     text: <skill skill="{skill}"/> yaparken.
   itemAnywhereWithYou:
@@ -249,11 +263,27 @@ singulars:
     text: En az <numberProgress current="{current}" max="{max}" /> {stat} 
       sahibiyken.
   ironfoot:
-    text: Sadece Demirayak (geçici olarak devre dışı - ileride değişecek).
+    text: Yalnızca Demirayak
   notIronfoot:
-    text: Demirayak değil (geçici olarak devre dışı - ileride değişecek).
+    text: Demirayak değil
   never:
     text: Mevcut değil (geçici olarak devre dışı, ileride değişecek).
   earnedWealth:
     text: <icon i="money small"/> <numberProgress current="{current}" 
       max="{max}" /> değerinde servet kazan.
+  supporterTier:
+    text: WalkScape'i {tier} veya daha yüksek düzeyde destekle.
+  closedBetaTester:
+    text: Kapalı betanın parçası olmuş.
+  lifetimeSupporter:
+    text: WalkScape'i desteklemiş.
+  hasTitle:
+    text: '{title} ünvanına sahip ol.'
+  highestSupporterTier:
+    text: WalkScape'i {tier} veya daha yüksek düzeyde desteklemiş.
+  supporterLifetimeMonths:
+    text: WalkScape'i <numberProgress current="{current}" max="{max}" /> ay 
+      boyunca desteklemiş.
+  supporterLifetimeValue:
+    text: WalkScape'i <numberProgress current="{current}" max="{max}" /> USD 
+      kadar desteklemiş.
