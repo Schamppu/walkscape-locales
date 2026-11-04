@@ -571,7 +571,7 @@ singulars:
       withdrawOnConfirm: Withdrawn on confirm
       infoAccept: Accept. Works from any board you've visited.
       infoHandIn: Hand in. Only at the job's board.
-      infoWithdraw: Accept and take the missing items from your bank. Shows at a bank when you have them all.
+      infoWithdraw: Takes the items the job needs out of your bank, taking the job if needed. Shows at a bank.
       infoAbandon: Give the job up.
       infoStanding: Your level with each faction.
       infoBank: Your bank only counts at boards that have one.
@@ -597,6 +597,13 @@ singulars:
       handInWithin: "Hand in within"
       weekUnavailable: "This week's jobs couldn't be loaded."
       retry: Try again
+      handInAll: "Hand in all ({count})"
+      withdrawAll: "Withdraw all ({count})"
+      lockedJobs: "<c>{count}</c> more jobs open at level {level} with {faction}."
+      visitToUnlock: "Visit {location} to see and take this board's jobs."
+      jobsThisWeek: "<c>{count}</c> jobs this week"
+      allBoards: All boards
+      bankHere: Your bank counts at this board.
     maps:
       rewardKinds:
         "item": Items
@@ -624,6 +631,34 @@ singulars:
       leaveUnconfirmed:
         title: Unconfirmed changes
         text: Your job changes are not confirmed yet. Confirm them before closing, or discard them?
+    help:
+      title: How jobs work
+      intro: "Job boards post new jobs every week. Take a job, bring what it asks for to its board, and get paid."
+      stepsTitle: The basics
+      step1: "Take a job from any board you've visited. You can have <c>{count}</c> at once."
+      step2: Gather the items. Carry them, or keep them in your bank.
+      step3: Hand them in at the job's board to get paid.
+      cardTitle: Reading a job
+      cardAsk: The item the job asks for. Tap it to see where to get it.
+      cardCount: "How many you have of what it asks. A grey <icon i=\"Bank small\"/> shows bank items that don't count at this board."
+      cardRewards: What it pays. Tap a reward to see what it is.
+      cardBar: How close the job is to done.
+      buttonsTitle: Buttons
+      acceptTitle: Accept
+      accept: "Takes the job. Works from any board you've visited."
+      handInTitle: Hand in
+      handIn: "Hands the items over at the job's board. On a job you haven't taken, it takes the job and hands it in at once, without using a slot."
+      withdrawTitle: Withdraw
+      withdraw: Takes the items the job needs out of your bank, so you can carry them to its board. Shows at a bank.
+      abandonTitle: Give up
+      abandon: Gives the job up and frees its slot.
+      itemsTitle: Where items count
+      itemsCarried: Items you carry count at every board.
+      itemsBank: "Your bank counts only at boards with a bank. For the others, withdraw the items at any bank and carry them there."
+      levelsTitle: Levels
+      levelsText: "Some jobs need a higher level with the board's faction, and pay more. They wait at the end of each board. Boards you haven't visited stay locked until you go there."
+      confirmTitle: Confirm
+      confirmText: "Your changes show at once, but only Confirm sends them. Closing the jobs asks before dropping anything unconfirmed."
   shop:
     phrases:
       bought: Bought
