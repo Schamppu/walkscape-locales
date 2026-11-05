@@ -3,71 +3,73 @@ singulars:
     home:
       info:
         title: WalkPedia
-        description: WalkPedia es el diario personal de tu personaje. Aquí puedes
-          ver el progreso de lo que aprende tu personaje, sus estadísticas y navegar
-          el juego con facilidad.
+        description: WalkPedia es el diario personal de tu personaje. Aquí 
+          puedes ver el progreso de lo que aprende tu personaje, sus 
+          estadísticas y navegar el juego con facilidad.
         tabText: Inicio
     itemList:
       info:
         title: Objetos
-        description: Los objetos pueden ser recolectados, usados o vendidos. Se pueden
-          encontrar en el mundo, comprar a vendedores o fabricar por los jugadores.
+        description: Los objetos pueden ser recolectados, usados o vendidos. Se 
+          pueden encontrar en el mundo, comprar a vendedores o fabricar por los 
+          jugadores.
         tabText: Lista de objetos
     locationList:
       info:
         title: Ubicaciones
-        description: Las ubicaciones son lugares en el mundo que puedes visitar. Contienen
-          actividades y servicios con los que interactuar.
+        description: Las ubicaciones son lugares en el mundo que puedes visitar.
+          Contienen actividades y servicios con los que interactuar.
         tabText: Lista de ubicaciones
     skillList:
       info:
         title: Habilidades
-        description: Las habilidades suben de nivel mientras completas actividades
-          relacionadas a ellas. Desbloquean nuevo contenido y te hacen más eficiente.
+        description: Las habilidades suben de nivel mientras completas 
+          actividades relacionadas a ellas. Desbloquean nuevo contenido y te 
+          hacen más eficiente.
         tabText: Lista de Habilidades
     activityList:
       info:
         title: Actividades
-        description: Las actividades son tareas repetitivas que se pueden completar
-          en el juego caminando en la vida real. Son la forma principal para conseguir
-          objetos y subir de nivel tus habilidades.
+        description: Las actividades son tareas repetitivas que se pueden 
+          completar en el juego caminando en la vida real. Son la forma 
+          principal para conseguir objetos y subir de nivel tus habilidades.
         tabText: Lista de actividades
     serviceList:
       info:
         title: Servicios
-        description: Los servicios te otorgan beneficios según la ubicación. Lo más
-          normal es que te permitan fabricar objetos.
+        description: Los servicios te otorgan beneficios según la ubicación. Lo 
+          más normal es que te permitan fabricar objetos.
         tabText: Lista de servicios
     recipeList:
       info:
         title: Recetas
-        description: Las recetas sirven para aprender a fabricar objetos. Normalmente
-          requieren materiales y un servicio.
+        description: Las recetas sirven para aprender a fabricar objetos. 
+          Normalmente requieren materiales y un servicio.
         tabText: Lista de recetas
     characterList:
       info:
         title: Personajes
-        description: Los personajes son la gente que te puedes encontrar en el mundo.
-          Pueden darte misiones, venderte objetos y más.
+        description: Los personajes son la gente que te puedes encontrar en el 
+          mundo. Pueden darte misiones, venderte objetos y más.
         tabText: Lista de personajes
     buildingList:
       info:
         title: Edificios
-        description: Los edificios son estructuras que hay por el mundo con tiendas
-          y servicios, como por ejemplo un banco.
+        description: Los edificios son estructuras que hay por el mundo con 
+          tiendas y servicios, como por ejemplo un banco.
         tabText: Lista de edificios
     shopList:
       info:
         title: Tiendas
-        description: Las tiendas son lugares donde puedes comprar y vender objetos.
-          Normalmente se encuentran en edificios.
+        description: Las tiendas son lugares donde puedes comprar y vender 
+          objetos. Normalmente se encuentran en edificios.
         tabText: Lista de tiendas
     keywordList:
       info:
         title: Palabras clave
-        description: Las palabras clave se utilizan en muchos objetos, ubicaciones,
-          servicios y actividades. Puedes consultar fácilmente desde aquí, por ejemplo,
-          qué objetos cuentan como fuentes de luz.
+        description: Las palabras clave se utilizan en muchos objetos, 
+          ubicaciones, servicios y actividades. Puedes consultar fácilmente 
+          desde aquí, por ejemplo, qué objetos cuentan como fuentes de luz.
         tabText: Lista de palabras clave
       phrases:
         referencedByConsumables: Consumibles con esta palabra clave
@@ -97,7 +99,8 @@ singulars:
         ofTotalSteps: '% del total de pasos'
         nextUnlock: Próximo desbloqueo
         unlocks: Todos los desbloqueos
-        unlocksDesc: Mira qué contenido se desbloquea al subir de nivel en esta habilidad.
+        unlocksDesc: Mira qué contenido se desbloquea al subir de nivel en esta 
+          habilidad.
         fromLevelToLevel: Del nivel <c>{from}</c> al nivel <c>{to}</c>
         guide: Guía
         level: Nivel
@@ -271,6 +274,9 @@ singulars:
       requirements: Requisitos
       activitySources: Fuentes de actividad
       chestSources: Fuentes de cofre
+      receivedInTrades: Recibido en intercambios
+      givenInTrades: Entregado en intercambios
+      fromRewards: De recompensas
     activity:
       maxWorkEfficiency: Máxima eficiencia del trabajo
       stepsWalked: Pasos caminados
@@ -287,8 +293,8 @@ singulars:
       realm: Reino
       activities: Actividades
     common:
-      unknown: Este contenido aún es desconocido para tu personaje. ¡Sigue explorando
-        para descubrir todos sus detalles!
+      unknown: Este contenido aún es desconocido para tu personaje. ¡Sigue 
+        explorando para descubrir todos sus detalles!
       rumors: Rumores conocidos
     keyword:
       requiresThisKeyword: Contenido que requiere esta palabra clave
@@ -307,6 +313,10 @@ maps:
         "egg": Huevos de mascota
         "currency": Divisas
         "lore": Objetos de lore
+        "artifact": Artefactos
+        "quest": Objetos de misión
+        "cosmeticDrop": Recompensas cosméticas
+        "blueprint": Planos
   dataTypes:
     "activity": Actividad
     "location": Ubicación
