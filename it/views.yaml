@@ -309,6 +309,13 @@ plurals:
         one: <c>{}</c> giocatore presente
         many: '-'
         zero: '-'
+      players:
+        zero: '-'
+        one: <c>{}</c> giocatore
+        two: <c>{}</c> giocatori
+        few: '-'
+        many: '-'
+        other: <c>{}</c> giocatori
   inventory:
     info:
       consumableDuration:
@@ -367,7 +374,7 @@ singulars:
       notUnlocked: Obiettivo bloccato
       rewardProgress: Punti Ricompensa
       showRewards: Mostra ricompense
-      unclaimedRewards: 'Premi non reclamati: '
+      unclaimedRewards: 'Premi non riscattati: '
       collectiblesCount: Collezionabili <icon i="Achievement Point"/> <c 
         i=0>{count}</c> <c i=1>/ {maxCount}</c>
       checkPointUnlocks: Sblocco dei checkpoint
@@ -396,7 +403,7 @@ singulars:
         normale
       noService: Requisiti di servizio non soddisfatti
       noMaterials: Mancano i materiali per la creazione
-      skillRequirementsNotMet: I requisiti di competenza non sono soddisfatti
+      skillRequirementsNotMet: I requisiti di abilità non sono soddisfatti
       recipeNotUnlocked: Questa ricetta non è sbloccata
   inventory:
     info:
@@ -518,7 +525,7 @@ singulars:
     phrases:
       consumables: Consumabili
       noActivity: Nessuna attività
-      savedSteps: Passi Accumulati
+      savedSteps: Passi salvati
       inventoryIsOverLimit: L'inventario è pieno!
       notAffectingTraveling: (non ha effetto sull'efficienza di viaggio)
       options: Opzioni
@@ -623,7 +630,7 @@ singulars:
         text: Deposita gli oggetti sbloccati
       withdrawGearSet:
         text: Ritirare il set di equipaggiamento
-        desc: Ritira un set di equipaggiamento dalla banca se ne è disponibile 
+        desc: Preleva un set di equipaggiamento dalla banca se ne è disponibile 
           uno in una delle località che attraversi.
       removeFromQueue:
         text: Rimuovi dalla coda
@@ -755,7 +762,8 @@ singulars:
       phone: Telefono
       appleWatch: Apple watch
       watch: Altri dispositivi indossabili
-      watchAndroid: Health connect
+      watchAndroid: Health Connect
+      healthConnectPhone: Telefono (Health Connect)
     deviceInfo:
       watch: "WalkScape legge i tuoi passi da <c>Apple Health</c>, dove vengono sincronizzati
         dal tuo <icon i=\"Watch small\" /> <c>orologio</c>. A seconda del produttore,
@@ -850,7 +858,7 @@ singulars:
     phrases:
       openFaction: Apri fazione
       nextRewardUnlocked: 'Prossima ricompensa sbloccata:'
-      unclaimedRewards: Ricompense non reclamate {count}
+      unclaimedRewards: Ricompense non riscattate {count}
       repeatingReward: Ricompensa ricorrente
   abilities:
     phrases:
@@ -907,7 +915,7 @@ singulars:
       noSkillSelected: Nessuna abilità selezionata
       noStatSelected: Nessuna statistica selezionata
     errors:
-      duplicateItem: L'articolo esiste già nel set di equipaggiamento
+      duplicateItem: L'oggetto è già presente nel set di equipaggiamento
       keywordError: 'Il set di equipaggiamento ha già : <object id="{keyword}" />'
     info:
       gearSetsListDesc: Qui puoi gestire i tuoi set di equipaggiamento. Se 
@@ -968,10 +976,8 @@ singulars:
         </chip> ottenuto da <hl>{coins}</hl> monete
   journal:
     info:
-      jobInfo: Gli incarichi sono <c>attività semplici e ripetibili</c> che puoi
-        completare per ottenere ricompense. Puoi accettare incarichi dalle 
-        <c>bacheche degli incarichi</c> in varie località, come le città. Puoi 
-        avere {count} incarichi attivi contemporaneamente.
+      jobInfo: Attività semplici e ripetibili dalle <c>bacheche degli 
+        incarichi</c>. Puoi averne {count} in corso contemporaneamente.
     phrases:
       jobs: Lavori
   jobs:
@@ -990,8 +996,8 @@ singulars:
       acceptJob: Accetta incarico
       abandonJob: Abbandona l'incarico
       openJournal: Apri il diario
-      itemsFromInventory: Articoli dall'inventario
-      itemsFromBank: Articoli dalla banca
+      itemsFromInventory: Oggetti dall'inventario
+      itemsFromBank: Oggetti dalla banca
       hasNoItemsInBank: Non ci sono oggetti idonei nella tua banca.
       collectRewards: Raccogli ricompense
       giveItems: Consegna oggetti
@@ -1070,6 +1076,32 @@ singulars:
       chooseHandIn: Scegli quali oggetti consegnare
       confirmAndClose: Conferma e chiudi
       aJob: Un incarico
+      filterUnavailable: Mostra non disponibili
+      newJobsUnlocked: Nuovi incarichi sbloccati
+      tabAvailable: Disponibili
+      tabDone: Completati
+      nextLevelOpens: Il livello {level} sblocca altri incarichi presso 
+        {boards}.
+      allJobsOpen: Tutti gli incarichi di queste bacheche sono disponibili per 
+        te.
+      withdrawOnConfirm: Prelevati alla conferma
+      infoAccept: Accetta. Funziona da qualsiasi bacheca che hai visitato.
+      infoHandIn: Consegna. Solo presso la bacheca dell'incarico.
+      infoWithdraw: Accetta e preleva dalla banca gli oggetti mancanti. Compare 
+        presso una banca quando li hai tutti.
+      infoAbandon: Rinuncia all'incarico.
+      infoStanding: Il tuo livello con ciascuna fazione.
+      infoBank: La tua banca conta solo presso le bacheche che ne hanno una.
+      infoUnavailable: Gli incarichi <c>non disponibili</c> richiedono un 
+        livello di fazione più alto. Le bacheche che non hai visitato sono 
+        bloccate.
+      noJobsDone: Non hai consegnato nessun incarico questa settimana.
+      unlocksAtLevel: Si sblocca al livello {level} con {faction}. 
+        <numberProgress current="{current}" max="{max}" /> di reputazione.
+      handInWithin: Consegna entro
+      weekUnavailable: Non è stato possibile caricare gli incarichi di questa 
+        settimana.
+      retry: Riprova
     dialogs:
       abandonJob:
         title: Abbandona l'incarico
@@ -1100,6 +1132,9 @@ singulars:
       goalBroken: '{job} richiede un oggetto che non esiste più.'
       counterNotMet: '{job} non è ancora completato.'
       notApplied: Impossibile modificare {job}. Riprova.
+      levelTooLow: Raggiungi un livello più alto con la fazione della bacheca 
+        per accettare {job}.
+      expired: '{job} ha superato il tempo di consegna, quindi è stato ritirato.'
   mainMenu:
     loadingStates:
       awaitingForRemoveConfig: In attesa di configurazione remota
@@ -1199,6 +1234,7 @@ singulars:
       account:
         title: Profilo
         visibility: Visibilità del profilo
+        supporterVisibility: Visibilità sostenitore
       closedBeta:
         useThisToClear: Utilizza questa opzione se desideri azzerare il grafico 
           dei tuoi passi. Utile se hai guadagnato passi a causa di bug e 
@@ -1269,7 +1305,7 @@ singulars:
         bars: Barre
         rawFish: Pesce crudo
         gems: Gemme
-        huntingProducts: Articoli per la caccia
+        huntingProducts: Prodotti della caccia
         logs: Tronchi
         ingredients: Ingredienti
         ores: Minerali
@@ -1697,7 +1733,7 @@ singulars:
   tutorial:
     phrases:
       noMoreMessages: Messaggi tutorial terminati
-      youWillGain: Selezionando questa opzione otterrai i seguenti articoli.
+      youWillGain: Selezionando questa opzione otterrai i seguenti oggetti.
   social:
     phrases:
       manageFriends: Gestione social
@@ -1706,6 +1742,9 @@ singulars:
       pendingInvites: Inviti in sospeso
       friends: Amici
       anonymousWalker: Camminatore anonimo
+      noPlayersHere: Nessun giocatore qui al momento.
+      noFriendsHere: Nessuno dei tuoi amici è qui al momento.
+      playersNotLoaded: Non è stato possibile caricare i giocatori.
   pets:
     phrases:
       noPetSummoned: Al momento non è stato evocato alcun animale domestico. 
@@ -1721,7 +1760,7 @@ singulars:
       isAdvancing: <c>{name}</c> sta crescendo!
       pets: Animali domestici
       hatching: Cova
-      claimPet: Reclama animale domestico
+      claimPet: Riscatta animale domestico
       petEggs: Uova di animali domestici
       chooseEgg: Scegli l'uovo
       noEggIsHatching: Al momento non ci sono uova di animali domestici in fase 
@@ -1766,7 +1805,7 @@ singulars:
       isHatching: <c>{name}</c> sta per schiudersi!
       hasHatched: <c>{name}</c> è nato ed è ora <petStage id="{stage}"/>!
       hasEvolved: <c>{name}</c> è cresciuto ed è ora <petStage id="{stage}"/>!
-      noEggs: Non hai uova di animali domestici reclamate.
+      noEggs: Non hai uova di animali domestici riscattate.
       noEggsFound: Non sono state trovate uova corrispondenti alla tua ricerca.
       noPetsFound: Non sono stati trovati animali domestici corrispondenti alla 
         tua ricerca.
@@ -1811,27 +1850,27 @@ singulars:
       ownedCurrency: Valuta posseduta
       sellingPrice: '{rarity} prezzo di vendita'
       buyingPrice: '{rarity} prezzo di acquisto'
-      totalSellingPrice: Totale per la vendita di <c>{amount}</c> x articoli
-      totalBuyingPrice: Totale per l'acquisto di <c>{amount}</c> x articoli
+      totalSellingPrice: Totale per la vendita di <c>{amount}</c> x oggetti
+      totalBuyingPrice: Totale per l'acquisto di <c>{amount}</c> x oggetti
       sell: Vendere
       buy: Comprare
-      buyItems: Comprare articoli
-      sellItems: Vendere articoli
+      buyItems: Comprare oggetti
+      sellItems: Vendere oggetti
       noChestSelected: Nessun forziere selezionato.
       purchaseForTokens: Acquista con i token
     info:
-      favoritedItem: Hai aggiunto questo articolo ai <icon i="Favorited"/> 
+      favoritedItem: Hai aggiunto questo oggetto ai <icon i="Favorited"/> 
         <c>preferiti</c>.\nSei sicuro di volerlo vendere?
   rumors:
     phrases:
-      unlockedWalkpediaEntries: Voci Walkpedia sbloccate
+      unlockedWalkpediaEntries: Voci WalkPedia sbloccate
       rumorsFromCharacter: Voci da <c>{characterName}</c>
       backToRumors: Torna alle voci
   attributeListing:
     phrases:
       allAttributes: Tutti gli attributi
-      overlevelingWithNumber: Il livello di competenza è <c>+{level}</c> 
-        superiore al requisito.
+      overlevelingWithNumber: Il livello di abilità è <c>+{level}</c> superiore 
+        al requisito.
       overlevelingFromAgility: Dal livello <c>{level}</c> di <object 
         id="agility" />.
       noAttributes: Nessun attributo attivo.
@@ -1953,15 +1992,15 @@ singulars:
       creditRating: Rating creditizio
       nextTier: 'Successivo: {tier}'
       nextTierLabel: Prossimo
-      collectionProgress: '{owned} su {total} articoli posseduti'
+      collectionProgress: '{owned} su {total} oggetti posseduti'
       gearRarity: Equipaggiamento e strumenti per rarità
       maxTier: Raggiunto il livello più alto!
       wealthComposition: Composizione del patrimonio
-      itemTypes: Tipi di articoli in possesso
+      itemTypes: Tipi di oggetti posseduti
       collection: Collezione
       statistics: Statistiche
       mostValuable: L'oggetto di maggior valore
-      itemsOwned: Totale articoli posseduti
+      itemsOwned: Totale oggetti posseduti
       uniqueItems: Oggetti unici in mio possesso
       coinsEarnedSelling: Monete guadagnate con la vendita
       coinsSpentBuying: Monete spese per acquisti
@@ -2018,3 +2057,77 @@ singulars:
       offline: Nessuna connessione al server.
       turnOff: Puoi disattivare l'indicatore della qualità della connessione 
         nelle impostazioni.
+  characterCard:
+    phrases:
+      idle: Accumulo passi... (inattivo)
+      username: Nome utente
+      currentActivity: Attività attuale
+      title: Titolo
+  titles:
+    info:
+      viewDescription: Il tuo titolo viene mostrato insieme al tuo nome, a te e 
+        agli altri giocatori, e il suo colore tinge il tuo nome. I titoli 
+        <c>esclusivi</c> si ottengono sostenendo WalkScape o con eventi speciali
+        e restano finché ne soddisfi i requisiti. I titoli <c>sbloccati</c> 
+        restano tuoi una volta ottenuti. I titoli di <c>fazione</c> sono i 
+        livelli di reputazione che hai raggiunto.
+      secret: Continua a giocare per scoprire questo titolo.
+    phrases:
+      pageTitle: Titoli
+      buttonCount: Titoli <c i=0>{owned}</c> <c i=1>/ {total}</c>
+      exclusive: Esclusivi
+      unlocked: Sbloccati
+      factions: Fazioni
+      apply: Applica
+      revert: Annulla modifiche
+      applyFailedTitle: Titolo non cambiato
+      applyFailed: Non è stato possibile cambiare il tuo titolo. Riprova.
+      leaveTitle: Uscire senza applicare?
+      leaveText: Le modifiche al tuo titolo non sono state applicate.
+      requirements: Requisiti
+      preview: Anteprima
+      heldWhile: Mantieni questo titolo solo finché ne soddisfi i requisiti.
+      noWayYet: Al momento non c'è modo di ottenere questo titolo.
+      factionTier: Livello {tier} con <c>{faction}</c>
+      factionTierRequirement: Livello {tier} con {faction}. <numberProgress 
+        current="{current}" max="{max}" /> di reputazione.
+      rewardFromAchievement: Ricompensa dell'obiettivo {achievement}
+      recentlyUnlocked: Sbloccati di recente
+      allTitles: Tutti i titoli
+      secretTitle: Titolo segreto
+      unknownTitle: Titolo sconosciuto
+      titleGained: Nuovo titolo
+      noTitles: Nessun titolo corrispondente.
+      filters: Filtri
+      resetFilters: Ripristina
+      statusLabel: Mostra
+      statusAll: Tutti
+      statusOwned: Posseduti
+      statusLocked: Bloccati
+      sortLabel: Ordina per
+      sortName: Nome
+      sortFaction: Fazione e livello
+      sortUnlockDate: Data di sblocco
+      sortSource: Origine
+      sourceLabel: Origine
+    sources:
+      requirements: Requisiti
+      achievement: Obiettivi
+      achievementPoints: Punti obiettivo
+      factionReputation: Reputazione di fazione
+      factionRepeatingReward: Ricompense di fazione
+      defaultUnlock: Titolo iniziale
+    sourceLines:
+      achievement: Ricompensa dell'obiettivo <c>{name}</c>.
+      achievementPoints: Ricompensa del percorso dei punti obiettivo.
+      factionReputation: Ricompensa al livello {tier} di reputazione con 
+        <c>{faction}</c>.
+      factionRepeatingReward: Ricompensa ricorrente di <c>{faction}</c>.
+      defaultUnlock: Assegnato a ogni nuovo personaggio.
+    tiers:
+      none: Nessuno
+      walker: Camminatore
+      seriousWalker: Camminatore Serio
+      superSeriousWalker: Camminatore Super Serio
+      cultFollower: Seguace del Culto
+      cultLeader: Capo del Culto
