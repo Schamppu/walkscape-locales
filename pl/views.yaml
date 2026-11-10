@@ -534,7 +534,7 @@ singulars:
       fromInputAttributes: Atrybuty wkładów
       fromFineInputs: Świetne wkłady
     rewards:
-      experience: <bp /><c>{xp} </c>doświadczenia w <object id="{skill}"/>
+      experience: <bp /><c>{xp} </c> doświadczenia w <object id="{skill}"/>
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} znajdźki</c>, 
         które można znaleźć
       reputation: <bp /><object id="{faction}" /> reputacja <c>+{amount}</c>
@@ -1169,14 +1169,14 @@ singulars:
       emptyToolSlot: Pusty slot na narzędzie
       noToolEquipped: Brak narzędzi założonych na ten slot.
       lockedToolSlot: Slot na narzędzie będzie dostępny po osiągnięciu 
-        <c>{level}</c> poziomu postaci.
+        <c>poziomu postaci {level}</c>.
   bank:
     phrases:
       noItemsInventory: Brak przedmiotów w ekwipunku.
       noItemsBank: Brak przedmiotów w banku.
       deposit: Zdeponuj
       withdraw: Wyjmij
-      youAreNotAtABank: <c>Nie znajdujesz się w lokacji z dostępnym bankiem.</c>
+      youAreNotAtABank: <c>Nie znajdujesz się w lokacji z dostępnym bankiem</c>.
         Możesz korzystać z banku tylko w lokacji, która go posiada.
     defaultLayout:
       categories:
@@ -1498,10 +1498,8 @@ singulars:
     phrases:
       jobs: Zlecenia
     info:
-      jobInfo: Zlecenia to <c>proste i powtarzalne zadania</c>, które możesz 
-        wykonać, aby zdobyć zapłatę. Możesz akceptować zlecenia z <c>tablic 
-        zleceń</c> w różnych lokalizacjach, takich jak miasta. Możesz mieć 
-        aktywne trzy zlecenia w tym samym czasie.
+      jobInfo: Proste, powtarzalne zlecenia z <c>tablic ogłoszeń</c>. W tym 
+        samym czasie możesz mieć {count} zadań w toku.
   faction:
     phrases:
       openFaction: Otwórz frakcję
