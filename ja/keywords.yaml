@@ -4,6 +4,29 @@ singulars:
       regional:
         snowy:
           name: 雪原
+        desert:
+          name: 砂漠
+        gdte:
+          name: 大公国
+        jarvonia:
+          name: ジャーボニア
+        wrentmark:
+          name: ウレントマーク
+        erdwise:
+          name: エルドワイズ
+        halfling:
+          name: ハーフリング反乱軍
+        swamp:
+          name: 沼地
+        syrenthia:
+          name: スレンティア
+        trellin:
+          name: トレリン
+        wallisia:
+          name: ワリシア
+      consumables:
+        potion:
+          name: ポーション
     skills:
       foraging:
         name: 採集
@@ -23,6 +46,18 @@ singulars:
         name: 移動
       trinketry:
         name: 細工
+      carpentry:
+        name: 木工
+      crafting:
+        name: クラフト
+      artisan:
+        name: 生産系
+      gathering:
+        name: 採取系
+      smithing:
+        name: 鍛冶
+      utility:
+        name: 補助系
   services:
     sawmill:
       name: 製材所
@@ -30,6 +65,12 @@ singulars:
       name: 細工台
     kitchen:
       name: キッチン
+    forge:
+      name: 鍛冶場
+    loom:
+      name: 織機
+    workshop:
+      name: ワークショップ
   tools:
     carpentryTool:
       name: 木工ツール
@@ -77,6 +118,56 @@ singulars:
       name: はさみ
     skillBook:
       name: スキルの書
+    fishingCage:
+      name: 漁かご
+    wrench:
+      name: レンチ
+    saw:
+      name: のこぎり
+    smithingTool:
+      name: 鍛冶ツール
+    chisel:
+      name: ノミ
+    cookingPan:
+      name: フライパン
+    cookingTool:
+      name: 調理ツール
+    fishingSpear:
+      name: 銛
+    huntingNet:
+      name: 狩猟網
+    goldPan:
+      name: 砂金皿
+    ruler:
+      name: 定規
+    cookingKnife:
+      name: 包丁
+    fishingLure:
+      name: ルアー
+    fishingRodRest:
+      name: 竿掛け
+    localMap:
+      name: 周辺地図
+    logSplitter:
+      name: 薪割り斧
+    pliers:
+      name: ペンチ
+    toolbox:
+      name: 道具箱
+    cookingPot:
+      name: 鍋
+    cookingSpices:
+      name: 香辛料
+    cuttingBoard:
+      name: まな板
+    magnifyingLense:
+      name: 虫眼鏡
+    screwdriver:
+      name: ドライバー
+    agilityTool:
+      name: 俊敏性ツール
+    trinketryTool:
+      name: 細工ツール
   general:
     lightSource:
       name: 光源
@@ -85,6 +176,14 @@ singulars:
       name: 潜水装備
     adventuringTools:
       name: 冒険道具セット
+    advancedDivingGear:
+      name: 上級潜水装備
+    expertDivingGear:
+      name: 達人級潜水装備
+    treasureHunter:
+      name: 宝探しセット
+    properGear:
+      name: 本格装備
   gear:
     ring:
       name: 指輪
@@ -108,6 +207,12 @@ singulars:
       name: 虫取り網
     weapon:
       name: 武器
+    lifeVest:
+      name: ライフジャケット
+    basket:
+      name: かご
+    bellows:
+      name: ふいご
   consumables:
     food:
       name: 食べ物
@@ -115,6 +220,16 @@ singulars:
       name: 酒
     memosphere:
       name: 経験値オーブ
+    beverage:
+      name: 飲み物
+    cookedFish:
+      name: 調理済みの魚
+    water:
+      name: 水
+    fishingBait:
+      name: 釣り餌
+    fruit:
+      name: 果物
   materials:
     plant:
       name: 植物
@@ -138,6 +253,28 @@ singulars:
       name: その他
     processed:
       name: 加工品
+    gem:
+      name: 宝石
+    bar:
+      name: インゴット
+    crustacean:
+      name: 甲殻類
+    roughGem:
+      name: 原石
+    mushroom:
+      name: キノコ
+    hide:
+      name: 皮
+    huntingProduct:
+      name: 狩猟品
+    leather:
+      name: 革
+    logs:
+      name: 丸太
+    offcut:
+      name: 端材
+    nugget:
+      name: ナゲット
   misc:
     spectral:
       name: 霊体
@@ -145,6 +282,12 @@ singulars:
       name: 強化可能
     trash:
       name: ゴミ
+    curiosity:
+      name: 珍品
+    currency:
+      name: 通貨
+    cursed:
+      name: 呪い
   containers:
     chest:
       name: 宝箱
@@ -155,6 +298,8 @@ singulars:
   eggs:
     petEgg:
       name: ペットの卵
+    egg:
+      name: 卵
   recipes:
     products:
       sandwich:
@@ -162,17 +307,37 @@ singulars:
     skills:
       cooking:
         name: 調理レシピ
+      smithing:
+        smelting:
+          name: 製錬
   activities:
     woodcuttingTrees:
       name: 樹木の伐採
     fishing:
       name: 釣り
+    foragingPlants:
+      name: 植物の採集
+    miningOres:
+      name: 鉱石の採掘
   locations:
     ghostly:
       name: 幽霊
+    regional:
+      name: 地域
   weight:
     light:
       name: 軽量
+    ultraLight:
+      name: 超軽量
+    heavy:
+      name: 重量
+    medium:
+      name: 中量
   achievements:
     reward:
       name: 実績報酬
+    percentage:
+      name: 実績達成率
+  faction:
+    reward:
+      name: 派閥報酬
