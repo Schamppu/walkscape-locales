@@ -237,6 +237,9 @@ singulars:
         Item"/><c>伝承アイテム</c>などの特別なアイテムは、WalkScapeの旅の中で集まっていきます。ここで確認できます。コレクションを集めると実績ポイントが進みます。
       viewDescription: 
         実績を解除すると<hl>実績ポイント</hl>を獲得できます。実績ポイントが一定量に達すると、特別な報酬が解放されます。実績の中には、解除するだけで報酬がもらえるものもあります。
+      checkPointUnlocks: 
+        これらの実績は、実績ポイントが特定のチェックポイントに達すると獲得できます。獲得可能な実績ポイントが増えても、使えなくなることはありません。
+      loreItems: 伝承アイテムは、本や手紙など、見つけることのできる書き物です。所持品の枠を使わず、いつでも読むことができます。
   ironfoot:
     buttons:
       relinquish: アイアンフットを放棄
@@ -254,6 +257,7 @@ singulars:
     loadingStates:
       awaitingForRemoveConfig: リモート設定を待機中
       processingStepHistory: 歩数履歴を処理中
+      startingToLoadGame: ゲームの読み込みを開始
   gearSets:
     phrases:
       gearSets: 装備セット
@@ -269,6 +273,7 @@ singulars:
       noGearSetsManage: 装備セットはまだ作成されていません。下の<c 
         i=0>新規作成</c>ボタンを押して、最初の装備セットを作成しましょう。
       gearSetsDescription: 装備セットを使うと、さまざまな装備をすばやく切り替えられます。
+      gearSetReorderDesc: 下のリストでドラッグ＆ドロップすると、装備セットを並べ替えられます。
   currencies:
     phrases:
       goldCoins: 金貨
@@ -331,6 +336,7 @@ singulars:
       noPetSummoned: 召喚中のペットはいません。<c>ペットを召喚</c>すると、ついて来て特性と能力を与えてくれます！
       noEggIsHatching: 孵化中のペットの卵はありません。ペットの卵を選んで<c>孵化を始めましょう</c>！
       noPets: ペットがいません。ペットの卵を見つけて孵化させると、ペットを手に入れられます。
+      noEggs: 受け取ったペットの卵がありません。
   queue:
     suggestedOptions:
       startActivity: アクティビティ
@@ -356,6 +362,7 @@ singulars:
   trade:
     phrases:
       trade: 取引
+      restockIn: '入荷まで： '
   tools:
     phrases:
       lockedToolSlot: <c>キャラクターレベル{level}</c>で解放されるツール枠です。
