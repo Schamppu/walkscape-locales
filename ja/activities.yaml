@@ -3,19 +3,19 @@ singulars:
     jarvonia:
       cutPineTrees:
         name: 'マツの木を切る'
-        desc: ''
+        desc: '斧を力強く振るい、決意を胸にマツの木を切り倒していく。'
       cutBirchTrees:
         name: 'シラカバの木を切る'
         desc: '渾身の力で斧を振るい、そびえ立つシラカバの木を切り倒そうと挑む。'
       cutSpruceTrees:
         name: 'トウヒの木を切る'
-        desc: ''
+        desc: '斧をしっかりと握りしめ、全身の力を込めて、そびえ立つトウヒの木に打ち込む。'
       cutMapleTrees:
         name: 'カエデの木を切る'
         desc: ''
       cutOakTrees:
         name: 'オークの木を切る'
-        desc: ""
+        desc: "そびえ立つオークの木に、黙々と斧を打ち込んでいく。大きく広がる枝は、まるで自然が腕を広げて抱きしめているかのようだ。"
       cutTeakTrees:
         name: 'チークの木を切る'
         desc: ''
@@ -24,10 +24,10 @@ singulars:
         desc: ''
       cutMangroveTrees:
         name: 'マングローブの木を切る'
-        desc: ''
+        desc: '絡み合う根につまずかないよう気をつけながら、この不思議な形の木から丸太を取ろうと奮闘する。'
       firewoodMaking:
         name: '薪を割る'
-        desc: ""
+        desc: "忍耐と汗と努力、そして頼れる手斧で、丸太を容赦なく割っていく。素手で割れたらいいのに。そんなことができるのは、控えめに言ってもスーパーヒーローくらいだろう。"
       branchTrimming:
         name: '枝を切る'
         desc: '地面近くの枝を払っておけば、このあたりでは森林火災の予防になる。'
@@ -39,6 +39,10 @@ singulars:
       cutBambooLogs:
         name: '竹を切る'
         desc: ''
+      cutEctoTrees:
+        name: エクトプラズムの木を切る
+      cutYewTrees:
+        name: イチイの木を切る
   mining:
     global:
       mineCopperOre:
@@ -49,7 +53,7 @@ singulars:
         desc: 'ツルハシの音が採掘場に響き渡る。休むことなく岩を削り、発見を待つスズ鉱石の隠れた鉱脈を掘り当てていく。'
       mineIronOre:
         name: '鉄鉱石を採掘する'
-        desc: ''
+        desc: 'ツルハシを振るうたびに、鉄鉱石の素朴な美しさが姿を現す。幅広い用途を持つ、頼れる資源だ。'
       mineCoal:
         name: '石炭を採掘する'
         desc: "頼れるツルハシを打ち込むたびに、石炭の鉱脈が現れる。王国を守る武器や鎧を鍛える鍛冶屋たちにとって、欠かせない燃料だ。"
@@ -57,15 +61,15 @@ singulars:
         name: 'タルシリウム鉱石を採掘する'
         desc: ''
       mineFarganiteOre:
-        name: ''
+        name: 'ファーガナイト鉱石を採掘する'
         desc: ''
       mineTarsiliumOreUnderwater:
-        name: ''
+        name: 'タルシリウム鉱石を採掘する（水中）'
         desc: ""
     jarvonia:
       goldPanning:
         name: '砂金をすくう'
-        desc: ''
+        desc: '川の堆積物を利用した、原始的な金の採取法だ。まず皿を川底の砂に沈める。次に手で揺すって砂利をほぐしていくと、最後には砂と、運がよければ金ナゲットだけが残る。'
       spelunking:
         name: '洞窟を探索する'
         desc: ''
@@ -103,6 +107,10 @@ singulars:
         name: 銀鉱石を採掘する
       mineGoldOre:
         name: 金鉱石を採掘する
+      mineCrystalShards:
+        name: 水晶炭を採掘する
+      mineAdamantOre:
+        name: アダマント鉱石を採掘する
     wallisia:
       mineEctoRocks:
         name: エクトプラズムの岩を採掘する
@@ -125,26 +133,32 @@ singulars:
         desc: ''
       cleaningTheHolyFountain:
         name: 聖なる泉を掃除する
+        desc: 
+          神殿の指導者たちは、聖なる泉の手入れを任せるほど信頼を寄せてくれている。水をきれいに保つため、網で泉の中をさらうことを許され、彼らの敬意を勝ち取っていく。
     gdte:
       magnetFishing:
         name: '磁石で釣りをする'
         desc: ''
       bogFishingNet:
-        name: ''
+        name: '沼で魚を獲る（漁網）'
         desc: ''
       bogFishingSpear:
-        name: ''
+        name: '沼で魚を獲る（銛）'
         desc: ''
     syrenthia:
       seaFishingSpear:
         name: '海で魚を獲る（銛）'
         desc: ''
       predatorHunting:
-        name: ''
+        name: '捕食魚を獲る（銛）'
         desc: ''
     wallisia:
       floodedRiverFishingRod:
         name: 増水した川で魚を獲る（釣り竿）
+      ectoFishing:
+        name: エクトプラズムの魚を獲る
+      isthmusSeaFishingNet:
+        name: 地峡の海で魚を獲る（漁網）
   foraging:
     global:
       litterLooting:
@@ -156,7 +170,7 @@ singulars:
         desc: "冬の森の中、鋭い目を光らせて歩き回り、雪の下に隠れた宝物を探して採集する。自然の恵みを見つける喜びを味わう。"
       cliffForaging:
         name: '崖で採集する'
-        desc: ''
+        desc: 'そびえ立つ崖のふちに身を置き、険しい地形を慎重に探る。野生の山菜や、たくましいキノコなど、この高地で育つ食べられる宝物を探していく。'
       plainsForaging:
         name: '平原で採集する'
         desc: '平原をゆったり歩くたび、自然の恵みに包まれる。足もとの土で育った野生のベリー、種、やわらかな新芽を摘み集めていく。'
@@ -174,7 +188,7 @@ singulars:
         desc: ""
       hornOfRespiteTreasureHunt:
         name: '宝探しをする'
-        desc: ""
+        desc: "冒険者ギルドが、安息の角笛の周辺で特別なアイテムを探し出すという課題を出している。すべて見つけるまでに、どれくらいかかるだろうか？"
     gdte:
       butterflyCatching:
         name: 'チョウを採集する'
@@ -195,7 +209,7 @@ singulars:
         name: '沼地で採集する'
         desc: ''
       summerCaveForaging:
-        name: ''
+        name: '夏の洞窟で採集する'
         desc: ""
     syrenthia:
       seashellForaging:
@@ -215,6 +229,8 @@ singulars:
         name: 墓地で採集する
       floodedFieldScavenging:
         name: 冠水した畑で採集する
+      dragonflyCatching:
+        name: トンボを採集する
   agility:
     global:
       traveling:
@@ -222,9 +238,9 @@ singulars:
         desc: ''
       sledding:
         name: 'そり滑りをする'
-        desc: ""
+        desc: "そりの取っ手を握って地面を蹴ると、アドレナリンが全身を駆けめぐる。周りの景色がぼやけ、その一瞬だけは、雪に覆われた丘を制する冬のスピードスターだ。"
       guardDuty:
-        name: ''
+        name: '見張り番をする'
         desc: ""
       sandcastleBuilding:
         name: '砂の城作りをする'
@@ -233,11 +249,11 @@ singulars:
         name: ''
         desc: ''
       birdWatching:
-        name: ''
+        name: '野鳥観察をする'
         desc: ''
       frisbeeGolfingBeginner:
         name: 'ジャーボニアコースでスカイディスクゴルフをする'
-        desc: ""
+        desc: "スカイディスクゴルフの初心者にとって、一投一投が新しい発見だ。風を読み、木々をよけることを覚え、ゲームのシンプルさと、ディスクがバスケットへ舞い上がっていくのを見る喜びを味わう。"
       frisbeeGolfingIntermediate:
         name: '大公国コースでスカイディスクゴルフをする'
         desc: ""
@@ -246,7 +262,7 @@ singulars:
         desc: ''
       crossCountrySkiingBeginner:
         name: 'クラシカルスキーをする'
-        desc: ''
+        desc: '初心者のクロスカントリースキーの旅では、ひと滑りごとに驚きがある。雪の小道は遊び場だ。スキーのリズムを覚え、冬の森の穏やかな美しさに浸る。'
       crossCountrySkiingIntermediate:
         name: 'スケーティングスキーをする'
         desc: ''
@@ -259,7 +275,7 @@ singulars:
     jarvonia:
       mountainClimbingBeginner:
         name: '登山をする'
-        desc: ''
+        desc: '登山の準備をする。日差しがあって風もない、よく晴れた日だ。それでも、ゆっくり登っていくうちに片足を滑らせ、心臓が跳ね上がる。肝が冷えた！ついに頂上にたどり着き、足元に広がる世界を誇らしげに見下ろす。'
       mountainClimbingIntermediate:
         name: '岩稜登りをする'
         desc: ''
@@ -271,7 +287,7 @@ singulars:
         desc: '冒険者ギルド出張所を手伝い、山から戻らない行方不明者の居場所を突き止め、手がかりを集める。'
       blackEyePeakRescueTeam:
         name: '救助隊の仕事をする'
-        desc: ''
+        desc: '捜索隊の情報をもとに、自ら現場へ向かって救助活動を行う。'
     gdte:
       kayaking:
         name: 'カヤックをする'
@@ -283,7 +299,7 @@ singulars:
         name: 'ボディサーフィンをする'
         desc: ""
       rooftopJumpingIntermediate:
-        name: ''
+        name: '家の屋根駆けをする'
         desc: ''
       treetopJumping:
         name: ''
@@ -299,12 +315,17 @@ singulars:
         name: 'マーフォークダンスをする'
         desc: ""
       exploreUnderwaterCave:
-        name: ''
+        name: '海中洞窟の探索をする'
         desc: ''
     bats:
       springBatTracking:
         name: '春のコウモリの追跡をする'
         desc: ''
+    wallisia:
+      ghostTag:
+        name: 幽霊と鬼ごっこをする
+      shorelineScramble:
+        name: 海岸線の岩場渡りをする
   cooking:
     jarvonia:
       vegetableChopping:
@@ -316,7 +337,7 @@ singulars:
     gdte:
       wineGrapeStomping:
         name: 'ワイン用のブドウ踏みをする'
-        desc: ''
+        desc: '種をつぶさないよう、裸足でブドウを踏む。圧搾桶の中央から端へと移動していくことで発酵を促す。果実に圧力をかけると、発酵を担う酵母と触れ合うからだ。'
   smithing:
     jarvonia:
       flameStoking:
@@ -329,18 +350,20 @@ singulars:
     jarvonia:
       shipRepairBeginner:
         name: 'ブリッグ船の修理をする'
-        desc: ''
+        desc: '小型船の傷みや消耗の修理に加わる。木材、釘、索具、金具、ロープが自由に使える。親方が指示を出し、それを見事にこなしていく。いつかは自分が指示を出す側になるかもしれない。'
       woodCarving:
         name: '木彫りをする'
-        desc: ''
+        desc: 'ナイフのような鋭い道具で木を形づくる木彫りは、古くから伝わる職人技だ。小さな人形やおもちゃから、儀式用や戦の仮面、大きなモザイクやそびえ立つトーテムポールまで、作品や図像は多種多様だ。'
       iceSculpting:
         name: 氷の彫刻をする
+        desc: 
+          氷を削る道具とのこぎりを手に、氷の塊を実用品や芸術品へと生まれ変わらせる。この芸術のはかなさは周りの気温しだいで、数分で消えることもあれば、溶けずに残り続けることもある。
     gdte:
       shipRepairIntermediate:
         name: '船体の修理をする'
         desc: ''
       underwaterAqueductConstruction:
-        name: ''
+        name: '水中水道橋の建設をする'
         desc: ''
   crafting:
     jarvonia:
@@ -364,7 +387,7 @@ singulars:
         desc: 'かじられた植物や折れた小枝、地面のウサギの足跡に目を配りながら、小さな獲物を探す。'
       wolfHunting:
         name: 'オオカミ狩りをする'
-        desc: ''
+        desc: '地面に残る大きな足跡をたどり、森のあちこちに潜む狩人、オオカミを探す。弓に矢をつがえ、いつでも一頭を仕留められるよう構えている。'
       bearHunting:
         name: 'クマ狩りをする'
         desc: ''
@@ -390,6 +413,8 @@ singulars:
         desc: ''
       alligatorHunting:
         name: ワニ狩りをする
+      halfmawTracking:
+        name: ハーフモーの追跡をする
     syrenthia:
       driftNetHunting:
         name: '流し網猟をする'
@@ -397,7 +422,7 @@ singulars:
     global:
       crabTracking:
         name: 'カニの追跡をする'
-        desc: ''
+        desc: '浜辺を歩きながら、近くにいるカニの手がかりを探す。カニは砂に独特の足跡を残すが、あいにく潮の満ち引きで洗い流されてしまうことが多い。'
       birdhouseTrappingBeginner:
         name: ''
         desc: ''
@@ -407,6 +432,11 @@ singulars:
       boxTrapping:
         name: '箱罠猟をする'
         desc: ''
+    wallisia:
+      ectoSlimeHunting:
+        name: エクトプラズムスライム狩りをする
+      unicornHunting:
+        name: ユニコーン狩りをする
   tailoring:
     jarvonia:
       sailRepairBeginner:
@@ -419,30 +449,36 @@ singulars:
   trinketry:
     gdte:
       antiqueMarketAssessor:
-        name: ''
+        name: '骨董市で鑑定をする'
         desc: ''
   misc:
     emergencySwimEscape:
       name: '泳いで緊急脱出する'
-      desc: ""
+      desc: "潜水装備をなくし、空気も残り少ない。できるだけ早く岸まで泳がなければならないが、パニックになってはいけない。急いで浮上しすぎると、減圧症になるおそれがあるのはわかっている。"
     gdte:
       swampEmergencySwimEscape:
         name: '泳いで緊急脱出する（沼地）'
-        desc: ""
+        desc: "潜水装備をなくし、空気も残り少ない。できるだけ早く岸まで泳がなければならないが、パニックになってはいけない。急いで浮上しすぎると、減圧症になるおそれがあるのはわかっている。"
       swampEmergencyDarkEscape:
         name: '暗闇から緊急脱出する（沼地）'
-        desc: ''
+        desc: '光源をなくし、暗闇の中で今いる場所からの出口を探さなければならない。影に潜んでいるかもしれない危険な生き物を避けながら、慎重に抜け出す必要がある。'
       ventureIntoTheBog:
-        name: ''
+        name: '沼に分け入る'
         desc: ''
       ventureIntoTheWoods:
-        name: ''
+        name: '森に分け入る'
         desc: ''
       runForYourLife:
-        name: ''
+        name: '必死に逃げる'
         desc: ''
+      ventureIntoTheHideout:
+        name: 隠れ家に分け入る
     wrentmark:
       emergencyDesertEscape:
         name: 砂漠から緊急脱出する
+        desc: ラクダをなくし、このままでは砂漠の過酷さにやられてしまう。どうにかして、この厳しい環境からさまよい出なければならない。
+    wallisia:
+      repairwraithwaterBankRebuild:
+        name: 銀行を修理する
   idle:
     name: 待機中
