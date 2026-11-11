@@ -546,6 +546,7 @@ singulars:
       confirmBatch: Confirm
       chooseHandIn: Choose which items to hand in
       confirmAndClose: Confirm & close
+      confirmAndContinue: Confirm & continue
       toAccept: to accept
       toHandIn: to hand in
       toAbandon: to abandon
@@ -610,6 +611,9 @@ singulars:
       handInAllLabel: Hand in all
       withdrawAllLabel: Withdraw all
       handedInTitle: Jobs handed in
+      readyHereTitle: Ready to hand in here
+      giveUp: Give up
+      finishJobChanges: Confirm or cancel your job changes first.
     maps:
       rewardKinds:
         "item": Items
@@ -637,6 +641,7 @@ singulars:
       leaveUnconfirmed:
         title: Unconfirmed changes
         text: Your job changes are not confirmed yet. Confirm them before closing, or discard them?
+        textLeave: Your job changes are not confirmed yet. Confirm them before you go, or discard them?
     help:
       title: How jobs work
       intro: "Job boards post new jobs every week. Take a job, bring what it asks for to the job board location, and get paid."
@@ -652,7 +657,7 @@ singulars:
       qualitiesTitle: Better qualities
       qualitiesText: "A job that asks for a crafted item also takes a better quality of it instead, and usually needs fewer of them. Hand in one quality for the whole job: you can't mix them. A quality you have enough of is filled in."
       fineTitle: Fine items
-      fineText: "<itemTag tag=\"fine\"/> items are kept apart from normal ones, even when they have the same name. A job that asks for a Fine item only takes Fine ones, and one that asks for a normal item doesn't take Fine ones."
+      fineText: "<itemTag tag=\"fine\"/> items only count for jobs that ask for Fine.\n<bp/>Find them while gathering. The odds are 1 in 100 by default.\n<bp/><stat s=\"fineMaterialFind\"/> on your gear and tools improves those odds."
       buttonsTitle: Buttons
       acceptTitle: Accept
       accept: "Accepts the job. You don't need to be at the job board location, as long as you've visited it."
