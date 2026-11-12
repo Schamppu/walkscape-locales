@@ -322,6 +322,13 @@ plurals:
         few: '-'
         many: '-'
         other: <c>{}</c> pelaajaa tekee tätä
+      players:
+        zero: '-'
+        one: <c>{}</c> pelaaja
+        two: <c>{}</c> pelaajaa
+        few: '-'
+        many: '-'
+        other: <c>{}</c> pelaajaa
   gearSets:
     phrases:
       selected:
@@ -506,10 +513,9 @@ singulars:
       nextRewardUnlocked: 'Seuraava palkinto avautuu:'
   journal:
     info:
-      jobInfo: Työtehtävät ovat <c>yksinkertaisia ja toistettavia tehtäviä</c>, 
-        jotka voit suorittaa palkintoja saadaksesi. Voit ottaa vastaan töitä 
-        <c>työpaikkatauluilta</c> eri paikoissa, kuten kaupungeissa. Sinulla voi
-        olla {count} työtehtävää kerrallaan.
+      jobInfo: Työtehtävät ovat <c>yksinkertaisia ja toistettavia tehtäviä</c> 
+        <c>työpaikkatauluilta</c>. Sinulla voi olla {count} työtehtävää 
+        kerrallaan.
     phrases:
       jobs: Työtehtävät
   jobs:
@@ -609,6 +615,32 @@ singulars:
       chooseHandIn: Valitse toimitettavat esineet
       confirmAndClose: Vahvista & sulje
       aJob: Työ
+      filterUnavailable: Näytä saavuttamattomat
+      newJobsUnlocked: Uusia töitä saatavilla
+      tabAvailable: Saatavilla
+      tabDone: Tehty
+      nextLevelOpens: Taso {level} avaa lisää työtehtäviä tauluilla {boards}.
+      allJobsOpen: Jokainen työtehtävä näillä tauluilla on vastaanotettavissa.
+      withdrawOnConfirm: Nostetaan vahvistettaessa
+      infoAccept: Hyväksy. Toimii miltä tahansa taululta, jonka luona olet 
+        käynyt.
+      infoHandIn: Toimita. Voidaan tehdä vain työtehtävätaulun luona.
+      infoWithdraw: Hyväksy ja nosta puuttuvat esineet pankistasi. Näkyy pankin 
+        kohdalla, kun sinulla on jotain sopivaa nostettavaa.
+      infoAbandon: Luovuta työtehtävän suhteen.
+      infoStanding: Tasosi eri ryhmittymissä.
+      infoBank: Pankkivarantosi otetaan huomioon vain työtehtävätauluilla, 
+        joilla on pankki.
+      infoUnavailable: Työt jotka ovat <c>eivät ole saatavilla</c> vaativat 
+        korkeamman tason ryhmittymässä. Työtehtävätaulut joiden luona et ole 
+        käynyt ovat lukossa.
+      noJobsDone: Et ole hoitanut työtehtäviä tällä viikolla.
+      unlocksAtLevel: Saavutettavissa, kun taso {level} saavutetaan 
+        ryhmittymässä {faction}. <numberProgress current="{current}" max="{max}"
+        /> mainetta.
+      handInWithin: Toimita luona
+      weekUnavailable: Tämän viikon työtehtäviä ei voitu ladata.
+      retry: Yritä uudelleen
     dialogs:
       abandonJob:
         title: Hylkää työtehtävä
@@ -638,6 +670,9 @@ singulars:
       goalBroken: '{job} vaatii esinettä, jota ei ole enää olemassa.'
       counterNotMet: '{job} ei ole vielä valmis.'
       notApplied: '{job} ei suostunut vaihtumaan. Koeta uudelleen.'
+      levelTooLow: Nouse korkeammalle tasolle työtehtävätaulun ryhmittymässä, 
+        jotta voit ottaa vastaan työtehtävän {job}.
+      expired: '{job} on ohittanut palautuspäivänsä, joten se on vedetty pois.'
   activity:
     phrases:
       consumables: Hyödykkeet
@@ -796,6 +831,7 @@ singulars:
       watch: Muu puettava laite
       watchAndroid: Health Connect
       samsungHealth: Samsung Health
+      healthConnectPhone: Puhelin (Health Connect)
     deviceInfo:
       appleWatch: "<icon i=\"Apple watch small\" /> <c>Apple Watch</c> eroaa joistakin
         muista <icon i=\"Watch small\" /> <c>kelloista</c> siten, että se synkronoi
@@ -955,6 +991,7 @@ singulars:
       account:
         title: Tili
         visibility: Profiilin näkyvyys
+        supporterVisibility: Tukijanäkyvyys
       character:
         title: Hahmo
         anonOnLeaderboard: Anonymisoi tulostaulukossa
@@ -1177,6 +1214,9 @@ singulars:
       countResultsFound: '{count} tulosta löytyi'
       enterAtLeastChars: Kirjoita vähintään 3 merkkiä etsiäksesi.
       anonymousWalker: Nimetön kävelijä
+      noPlayersHere: Täällä ei ole tällä hetkellä pelaajia.
+      noFriendsHere: Yhtään ystävistäsi ei ole täällä juuri nyt.
+      playersNotLoaded: Pelaajia ei voitu ladata.
   tools:
     phrases:
       lockedToolSlot: Työkalutila lukittu kunnes <c>hahmon taso on {level}</c>.
@@ -2005,3 +2045,79 @@ singulars:
       reconnecting: Uudelleenyhdistetään palvelimeen…
       offline: Ei yhteyttä palvelimeen.
       turnOff: Voit poistaa yhteyden laatumittarin näkyvistä asetuksista.
+  characterCard:
+    phrases:
+      idle: Säästää askelia... (joutilas)
+      username: Käyttäjänimi
+      currentActivity: Nykyaktiviteetti
+      title: Titteli
+  titles:
+    info:
+      viewDescription: Tittelisi näkyy nimesi vieressä sinulle ja muille 
+        pelaajille, ja sen väri värjää myös nimesi. <c>Tukijatittelit</c> 
+        tulevat WalkScapen tai erityistapahtumien tukemisesta, ja pysyvät 
+        mukanasi niin kauan kun niiden ehdot täyttyvät. <c>Avatut</c> tittelit 
+        saat pitää kun olet ne kerran saanut. <c>Ryhmittymätittelit</c> saavutat
+        maineesi kertyessä.
+      secret: Pelaa peliä löytääksesi tämän tittelin.
+    phrases:
+      pageTitle: Tittelit
+      buttonCount: Tittelit <c i=0>{owned}</c> <c i=1>/ {total}</c>
+      exclusive: Tukijat
+      unlocked: Saavutetut
+      factions: Ryhmittymät
+      apply: Käytä
+      revert: Palauta
+      applyFailedTitle: Titteliä ei muutettu
+      applyFailed: Titteliäsi ei voitu muuttaa juuri nyt. Ole hyvä ja yritä 
+        uudelleen.
+      leaveTitle: Poistu tallentamatta muutoksia?
+      leaveText: Muutoksia titteliisi ei tallennettu.
+      requirements: Vaatimukset
+      preview: Esikatselu
+      heldWhile: Pidät tämän tittelin vain niin kauan, kun täytät sen 
+        vaatimukset.
+      noWayYet: Tätä titteliä ei voi vielä saada.
+      factionTier: Taso {tier} ryhmittymässä <c>{faction}</c>
+      factionTierRequirement: Taso {tier} ryhmittymässä {faction}. 
+        <numberProgress current="{current}" max="{max}" /> mainetta.
+      rewardFromAchievement: Palkkio saavutuksesta {achievement}
+      recentlyUnlocked: Tuoreeltaan saavutetut
+      allTitles: Kaikki tittelit
+      secretTitle: Salainen titteli
+      unknownTitle: Tuntematon titteli
+      titleGained: Uusi titteli
+      noTitles: Ei täsmääviä titteleitä.
+      filters: Suodattimet
+      resetFilters: Tyhjennä
+      statusLabel: Näytä
+      statusAll: Kaikki
+      statusOwned: Omistettu
+      statusLocked: Lukittu
+      sortLabel: Lajitteluperuste
+      sortName: Nimi
+      sortFaction: Ryhmittymä ja taso
+      sortUnlockDate: Saavuttamisen päivämäärä
+      sortSource: Lähde
+      sourceLabel: Lähde
+    sources:
+      requirements: Vaatimukset
+      achievement: Saavutukset
+      achievementPoints: Saavutuspisteet
+      factionReputation: Ryhmittymämaine
+      factionRepeatingReward: Ryhmittymäpalkinnot
+      defaultUnlock: Aloitustitteli
+    sourceLines:
+      achievement: Palkinto saavutuksesta <c>name}</c>.
+      achievementPoints: Palkinto saavutuspisteiden palkintopalkista.
+      factionReputation: Palkinto ryhmittymän <c>{faction}</c> mainetasosta 
+        {tier}.
+      factionRepeatingReward: Toistuva palkinto ryhmittymästä <c>{faction}</c>.
+      defaultUnlock: Annetaan jokaiselle uudelle hahmolle.
+    tiers:
+      none: Ei mitään
+      walker: Kävelijä
+      seriousWalker: Vakavasti otettava kävelijä
+      superSeriousWalker: Todella vakavasti otettava kävelijä
+      cultFollower: Kultin jäsen
+      cultLeader: Kultinjohtaja

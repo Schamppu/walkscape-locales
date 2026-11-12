@@ -534,7 +534,7 @@ singulars:
       fromInputAttributes: Atrybuty wkładów
       fromFineInputs: Świetne wkłady
     rewards:
-      experience: <bp /><c>{xp} </c>doświadczenia w <object id="{skill}"/>
+      experience: <bp /><c>{xp} </c> doświadczenia w <object id="{skill}"/>
       collectibles: <bp /><icon i="Collectibles"/> <c>{count} znajdźki</c>, 
         które można znaleźć
       reputation: <bp /><object id="{faction}" /> reputacja <c>+{amount}</c>
@@ -627,6 +627,7 @@ singulars:
       watch: Inne urządzenia do noszenia
       samsungHealth: Samsung Health
       watchAndroid: Health Connect
+      healthConnectPhone: Telefon (Health Connect)
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> <c>Telefon</c> jest podstawowym i rekomendowanym
         źródłem zliczania kroków w WalkScape. Do intensywnych sportów zalecamy użycie
@@ -833,6 +834,14 @@ singulars:
       confirmAndClose: Zatwierdź & zamknij
       toHandIn: do wręczenia
       toAbandon: do porzucenia
+      nothingActionableHere: Nic do roboty w tym miejscu aktualnie. Możesz 
+        zaakceptować zlecenia z innych tablic, które odwiedzasz, ale musisz 
+        odwiedzić konkretną tablicę, by wręczyć przedmioty.
+      filterUnavailable: Pokaż niedostępne
+      newJobsUnlocked: Odblokowane nowe prace
+      tabAvailable: Dostępne
+      tabDone: Wykonaj
+      nextLevelOpens: Poziom {level} otwiera więcej zleceń na {boards}.
     dialogs:
       abandonJob:
         title: Porzuć zlecenie
@@ -1160,14 +1169,14 @@ singulars:
       emptyToolSlot: Pusty slot na narzędzie
       noToolEquipped: Brak narzędzi założonych na ten slot.
       lockedToolSlot: Slot na narzędzie będzie dostępny po osiągnięciu 
-        <c>{level}</c> poziomu postaci.
+        <c>poziomu postaci {level}</c>.
   bank:
     phrases:
       noItemsInventory: Brak przedmiotów w ekwipunku.
       noItemsBank: Brak przedmiotów w banku.
       deposit: Zdeponuj
       withdraw: Wyjmij
-      youAreNotAtABank: <c>Nie znajdujesz się w lokacji z dostępnym bankiem.</c>
+      youAreNotAtABank: <c>Nie znajdujesz się w lokacji z dostępnym bankiem</c>.
         Możesz korzystać z banku tylko w lokacji, która go posiada.
     defaultLayout:
       categories:
@@ -1489,10 +1498,8 @@ singulars:
     phrases:
       jobs: Zlecenia
     info:
-      jobInfo: Zlecenia to <c>proste i powtarzalne zadania</c>, które możesz 
-        wykonać, aby zdobyć zapłatę. Możesz akceptować zlecenia z <c>tablic 
-        zleceń</c> w różnych lokalizacjach, takich jak miasta. Możesz mieć 
-        aktywne trzy zlecenia w tym samym czasie.
+      jobInfo: Proste, powtarzalne zlecenia z <c>tablic ogłoszeń</c>. W tym 
+        samym czasie możesz mieć {count} zadań w toku.
   faction:
     phrases:
       openFaction: Otwórz frakcję
@@ -1952,6 +1959,7 @@ singulars:
       topReceived: Największa otrzymana wartość
       topGiven: Największa wartość dana
       itemCount: '{count}×'
+      netWorth: Wartość netto
   ironfoot:
     phrases:
       cannotTradeWith: Postać<c><bold>Żelaznostopy</bold></c> nie może zostać 
@@ -1962,3 +1970,77 @@ singulars:
         Stopy</c>. Ten proces jest nieodwracalny.
     buttons:
       relinquish: Zrzeknij się Żelaznej Stopy
+  characterCard:
+    phrases:
+      idle: Zapisywanie kroków... (bezczynnie)
+      username: Nazwa użytkownika
+      currentActivity: Aktualna aktywność
+      title: Tytuł
+  titles:
+    info:
+      viewDescription: Twój tytuł jest pokazany wraz z nazwą, dla ciebie oraz 
+        innych graczy oraz kolorem, który podkreśla nazwę. <c>Ekskluzywne</c> 
+        tytuły zdobyte są poprzez wspieranie WalkScape lub przez specjalne 
+        wydarzenia oraz pozostają, gdy się do nich kwalifikujesz. 
+        <c>Odblokowane</c> tytuły są twoje, gdy je zdobędziesz. <c>Frakcyjne</c>
+        tytuły to poziomy reputacji, które w nich osiągasz.
+      secret: Graj dalej, by odkryć ten tytuł.
+    phrases:
+      pageTitle: Tytuły
+      buttonCount: Tytuły <c i=0>{owned}</c> <c i=1>/ {total}</c>
+      exclusive: Ekskluzywne
+      unlocked: Odblokowane
+      factions: Frakcyjne
+      apply: Nadaj
+      revert: Cofnij
+      applyFailedTitle: Tytuł nie został zmieniony
+      applyFailed: Twój tytuł nie może być teraz zmieniony. Spróbuj ponownie.
+      leaveTitle: Wyjść bez nadawania?
+      leaveText: Zmiany twojego tytułu nie zostały nadane.
+      requirements: Wymagania
+      preview: Podgląd
+      heldWhile: Zachowujesz ten tytuł tylko wtedy, gdy spełniasz wymagania.
+      noWayYet: Na razie nie ma możliwości zdobycia tego tytułu.
+      factionTier: Poziom {tier} we frakcji <c>{faction}</c>
+      factionTierRequirement: Poziom {tier} w frakcji {faction{. <numberProgress
+        current="{current}" max="{max}" /> reputacji.
+      rewardFromAchievement: Nagroda z osiągnięcia {achievement}
+      recentlyUnlocked: Niedawno odblokowane
+      allTitles: Wszystkie tytuły
+      secretTitle: Sekretny tytuł
+      unknownTitle: Nieznany tytuł
+      titleGained: Nowy tytuł
+      noTitles: Brak pasujących tytułów.
+      filters: Filtry
+      resetFilters: Reset
+      statusLabel: Pokaż
+      statusAll: Wszystkie
+      statusOwned: Posiadane
+      statusLocked: Zablokowane
+      sortLabel: Sortuj od
+      sortName: Nazwa
+      sortFaction: Frakcja i poziom
+      sortUnlockDate: Data odblokowania
+      sortSource: Źródło
+      sourceLabel: Źródło
+    sources:
+      requirements: Wymagania
+      achievement: Osiągnięcia
+      achievementPoints: Punkty osiągnięć
+      factionReputation: Reputacja frakcji
+      factionRepeatingReward: Nagrody frakcji
+      defaultUnlock: Początkowy tytuł
+    sourceLines:
+      achievement: Nagroda z osiągnięcia <c>{name}</c>.
+      achievementPoints: Nagroda za punkty osiągnięć.
+      factionReputation: Nagroda we frakcji <c>{faction}</c> za poziom reputacji
+        {tier}.
+      factionRepeatingReward: Powtarzalna nagroda z frakcji <c>{faction}</c>.
+      defaultUnlock: Nadawana każdej nowej postaci.
+    tiers:
+      none: Brak
+      walker: Dreptacz
+      seriousWalker: Poważny Dreptacz
+      superSeriousWalker: Super Poważny Dreptacz
+      cultFollower: Podążający za Kultem
+      cultLeader: Lider Kultu

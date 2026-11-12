@@ -2,16 +2,105 @@ singulars:
   custom:
     trashTable:
       text: ランダムなゴミを<hl>1</hl>個見つける確率
+    findEcto:
+      text: <object id="c7a75c46-f140-4116-b0b6-f74e5d763ef5" 
+        />を<hl>1</hl>個見つける確率
+    findBirdNest:
+      text: <object id="item-bird_nest-c459d244-4ef3-41c1-a911-01e18efaeec1" 
+        />を<hl>1</hl>個見つける確率
+    findCrustacean:
+      text: <object id="crustacean" />を<hl>1</hl>個見つける確率
+    findFiberPlant:
+      text: 普通の<object id="fibrousPlant" />を<hl>1</hl>個見つける確率
+    findFishingBait:
+      text: 釣り餌を<hl>1</hl>個見つける確率
+    findGoldNugget:
+      text: <object id="item-gold_ore-549788bf-8087-4d66-aed2-5bd75078625f" 
+        />を<hl>1</hl>個見つける確率
+    findTreasureChest:
+      text: <object id="skillingChest" />を<hl>1</hl>個見つける確率
+    gainAdventurersGuildToken:
+      text: <object 
+        id="item-adventurer's_guild_token-dad84ad7-050a-4ec2-9bc7-7f2dae5c4a08" 
+        />を<hl>1</hl>個見つける確率
+    gainCoinPouch:
+      text: <object id="item-coin_pouch-6bd55382-c174-46dd-a559-11c97335f479" 
+        />を<hl>1</hl>個見つける確率
+    gainSeashells:
+      text: <object id="item-sea_shell-cca66264-23a4-4c86-96f5-eb9ff16abf36" 
+        />を<hl>1</hl>〜<hl>10</hl>個見つける確率
+    gainZeroToTenMoney:
+      text: コインを<hl>1</hl>〜<hl>10</hl>枚見つける確率
+    rollGemPouchTable:
+      text: <object id="rough_gem" />を<hl>1</hl>個見つける確率
   skilling:
     craftingOutcome:
       whileMainSkill:
         text: <supp k="skill"/>中の<stat s="craftingOutcome"/>
+      global:
+        text: 全般の<stat s="craftingOutcome"/>
     doubleRewards:
       whileMainSkill:
         text: <supp k="skill"/>中の<stat s="doubleRewards"/>
+      global:
+        text: 全般の<stat s="doubleRewards"/>
     noMaterialsConsumed:
       whileMainSkill:
         text: <supp k="skill"/>中の<stat s="noMaterialsConsumed"/>
+      global:
+        text: 全般の<stat s="noMaterialsConsumed"/>
     workEfficiency:
       whileMainSkill:
         text: <supp k="skill"/>中の<stat s="workEfficiency"/>
+      global:
+        text: 全般の<stat s="workEfficiency"/>
+      whileTraveling:
+        text: 移動中の<stat s="workEfficiency"/>
+    chestFind:
+      global:
+        text: 全般の<stat s="chestFind"/>
+      whileMainSkill:
+        text: <supp k="skill"/>中の<stat s="chestFind"/>
+      whileTraveling:
+        text: 移動中の<stat s="chestFind"/>
+    doubleAction:
+      whileMainSkill:
+        text: <supp k="skill"/>中の<stat s="doubleAction"/>
+      global:
+        text: 全般の<stat s="doubleAction"/>
+      whileTraveling:
+        text: 移動中の<stat s="doubleAction"/>
+    experience:
+      global:
+        text: 全般の<stat s="bonusExperience"/>
+      whileMainSkill:
+        text: <supp k="skill"/>中の<stat s="bonusExperience"/>
+      whileTraveling:
+        text: 移動中の<stat s="bonusExperience"/>
+    fineMaterialFind:
+      global:
+        text: 全般の<stat s="fineMaterialFind"/>
+      whileMainSkill:
+        text: <supp k="skill"/>中の<stat s="fineMaterialFind"/>
+    inventorySpace:
+      global:
+        text: <stat s="inventorySpace"/>
+    stepsRequired:
+      whileMainSkill:
+        text: <supp k="skill"/>中の<stat s="stepsRequired"/>
+      whileTraveling:
+        text: 移動中の<stat s="stepsRequired"/>
+      global:
+        text: 全般の<stat s="stepsRequired"/>
+  special:
+    findCollectibles:
+      global:
+        text: 全般の<stat s="findCollectibles">コレクションドロップ率</stat>
+      whileMainSkill:
+        text: <supp k="skill"/>中の<stat s="findCollectibles"/>
+    findBirdNests:
+      whileWoodcutting:
+        text: <supp k="skill"/>中の<stat s="findBirdNests">鳥の巣ドロップ率</stat>
+    findGems:
+      whileMining:
+        text: <supp k="skill"/>中の<stat s="findGems">宝石ドロップ率</stat>

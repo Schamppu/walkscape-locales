@@ -312,6 +312,13 @@ plurals:
         zero: '-'
         few: '-'
         many: '-'
+      players:
+        zero: '-'
+        few: '-'
+        many: '-'
+        one: <c>{}</c> oyuncu
+        two: <c>{}</c> oyuncu
+        other: <c>{}</c> oyuncu
   gearSets:
     phrases:
       selected:
@@ -984,6 +991,7 @@ singulars:
         Telefonun varsayılan adımsayarı kullanılacak.
       samsungHealth: Samsung Health
       watchAndroid: Health Connect
+      healthConnectPhone: Telefon (Health Connect)
     deviceInfo:
       phone: "<icon i=\"Phone small\" /> <c>Telefon</c> WalkScape için önerilen varsayılan
         adım kaynağıdır. Yoğun efor isteyen spor faaliyetleri için adım kaynağı olarak
@@ -1232,6 +1240,26 @@ singulars:
       filterCanFulfil: Eşyalar Mevcut Olan
       acceptedJobsHere: Buraya teslim edilecek <c>{count}</c> adet
       staged: Planlı
+      tabAvailable: Mevcut
+      filterUnavailable: Mevcut olmayanları göster
+      retry: Tekrar dene
+      newJobsUnlocked: Yeni işler açıldı
+      infoAbandon: İşten vazgeç.
+      weekUnavailable: Bu haftanın işleri yüklenemedi.
+      nextLevelOpens: '{level}. seviye {boards} için daha fazla iş seçeneği açar.'
+      infoAccept: Kabul et. Ziyaret etmiş olduğun her panoda kullanılabilir.
+      infoHandIn: Teslim et. Yalnızca doğru iş panosundayken.
+      noJobsDone: Bu hafta hiçbir iş için teslimat yapmadın.
+      tabDone: Tamam
+      allJobsOpen: Bu panodaki bütün işler sana açık durumda.
+      infoStanding: Her diyardaki seviyen.
+      infoUnavailable: <c>Mevcut olmayan</c> işler daha yüksek diyar seviyesi 
+        gerektirir. Hiç ziyaret etmemiş olduğun panolar ise kilitlidir.
+      infoWithdraw: Kabul et ve eksik eşyaları bankandan al. Tamamına sahipsen 
+        bankalarda görünür.
+      infoBank: Bankan yalnızca banka bulunan pano konumlarında sayılır.
+      unlocksAtLevel: '{level}. seviye {faction} diyarıyla açılır. <numberProgress
+        current="{current}" max="{max}" /> diyar itibarı.'
     dialogs:
       abandonJob:
         title: İşten vazgeç
@@ -1260,6 +1288,9 @@ singulars:
       notApplied: '{job} değiştirilemedi. Tekrar dene.'
       unknownJob: '{job} panoda artık mevcut olmadığı için geri alındı.'
       notAccepted: '{job} artık kabul edilmediği için geri alındı.'
+      levelTooLow: '{job} işini almak için panonun diyarında daha yüksek seviyeye
+        ulaş.'
+      expired: '{job} işinin teslimat süresi geçtiği için iş geri alındı.'
   activity:
     phrases:
       stopWhenOverEncumbered: Envanter dolup taşınca dur
@@ -1374,6 +1405,7 @@ singulars:
       account:
         visibility: Profil görünürlüğü
         title: Hesap
+        supporterVisibility: Destekçi görünürlüğü
       character:
         title: Karakter
         hideSteps: Adımları gizle
@@ -1451,6 +1483,9 @@ singulars:
       enterAtLeastChars: Aramak için en az 3 karakter yazın.
       countResultsFound: '{count} sonuç bulundu'
       anonymousWalker: Anonim Yürüyen
+      noPlayersHere: Şu anda burada oyuncu bulunmuyor.
+      playersNotLoaded: Oyuncular yüklenemedi.
+      noFriendsHere: Şu anda burada hiçbir arkadaşın bulunmuyor.
   gearSets:
     phrases:
       name: İsim
@@ -1549,10 +1584,8 @@ singulars:
       noEyeAccessories: Herhangi bir göz aksesuarın bulunmuyor.
   journal:
     info:
-      jobInfo: İşler, ödül kazanmak için tamamlayabileceğin <c>basit ve 
-        tekrarlanabilir</c> görevlerdir. İşleri şehirler gibi farklı konumlarda 
-        bulabileceğin <c>iş panolarından</c> kabul edebilirsin. Aynı anda en 
-        fazla {count} adet aktif işin bulunabilir.
+      jobInfo: <c>İş panolarından</c> edinebileceğin basit, tekrarlanabilir 
+        görevler. Aynı anda {count} adet aktif işin bulunabilir.
     phrases:
       jobs: İşler
   rewards:
@@ -1975,3 +2008,78 @@ singulars:
       reconnecting: Sunucuya yeniden bağlanılıyor…
       offline: Sunucuya bağlanılamadı.
       turnOff: Bağlantı kalitesi göstergesini ayarlardan kapatabilirsin.
+  titles:
+    tiers:
+      walker: Yürüyen
+      seriousWalker: Ciddi Yürüyen
+      superSeriousWalker: Aşırı Ciddi Yürüyen
+      none: Hiç
+      cultFollower: Tarikatçı
+      cultLeader: Tarikat Lideri
+    phrases:
+      pageTitle: Ünvanlar
+      exclusive: Özel
+      unlocked: Açılan
+      factions: Diyarlar
+      apply: Uygula
+      revert: Geri al
+      requirements: Gereksinimler
+      preview: Ön izleme
+      filters: Filtreler
+      resetFilters: Sıfırla
+      statusLabel: Göster
+      statusAll: Tümü
+      statusOwned: Sahip olunan
+      statusLocked: Kilitli
+      sortName: İsim
+      sortSource: Kaynak
+      sourceLabel: Kaynak
+      recentlyUnlocked: Yakın zamanda açılan
+      allTitles: Bütün ünvanlar
+      secretTitle: Gizli ünvan
+      unknownTitle: Bilinmeyen ünvan
+      titleGained: Yeni ünvan
+      sortLabel: Sıralama
+      sortUnlockDate: Açılma zamanı
+      applyFailedTitle: Ünvan değiştirilmedi
+      leaveTitle: Uygulama yapılmadan ayrılınsın mı?
+      noTitles: Eşleşen ünvan bulunmuyor.
+      sortFaction: Diyar ve kademesi
+      factionTier: <c>{faction}</c> diyarında {tier}. seviye
+      rewardFromAchievement: '{achievement} başarımı ödülü'
+      buttonCount: Ünvanlar <c i=0>{owned}</c> <c i=1>/ {total}</c>
+      leaveText: Ünvan değişikliğin uygulanmadı.
+      applyFailed: Ünvanın şu anda değiştirilemedi. Lütfen tekrar dene.
+      heldWhile: Bu ünvanı gereksinimlerini karşıladığın müddetçe 
+        kullanabilirsin.
+      noWayYet: Henüz bu ünvanı kazanmanın bir yolu bulunmuyor.
+      factionTierRequirement: '{faction} diyarında {tier}. seviye. <numberProgress
+        current="{current}" max="{max}" /> itibar.'
+    sources:
+      requirements: Gereksinimler
+      achievement: Başarımlar
+      achievementPoints: Başarım puanları
+      factionReputation: Diyar itibarı
+      factionRepeatingReward: Diyar ödülü
+      defaultUnlock: Başlangıç ünvanı
+    sourceLines:
+      factionRepeatingReward: <c>{faction}</c> diyarından tekrarlı ödül.
+      achievement: <c>{name}</c> başarımı ödülü.
+      defaultUnlock: Bütün yeni karakterlere verilir.
+      achievementPoints: Başarım puanı yolu ödülü.
+      factionReputation: <c>{faction}</c> diyarında {tier}. itibar kademesi 
+        ödülü.
+    info:
+      secret: Bu ünvanı keşfetmek için oynamaya devam et.
+      viewDescription: Ünvanın, sana ve diğer oyunculara adının yanında 
+        gösterilerek ismine renk katar. <c>Özel</c> ünvanlar WalkScape'i 
+        destekleyerek veya özel etkinliklerden kazanılabilir ve hak ettiğin 
+        müddetçe sende kalırlar. <c>Açılan</c> ünvanlar bir kez kazanılınca 
+        kalıcı olarak sende kalırlar. <c>Diyar</c> ünvanları ise erişmiş olduğun
+        itibar kademelerinden oluşur.
+  characterCard:
+    phrases:
+      username: Kullanıcı adı
+      title: Ünvan
+      currentActivity: Mevcut faaliyet
+      idle: Adımlar kaydediliyor... (boşta)
