@@ -545,6 +545,7 @@ singulars:
       clearStaged: Clear
       confirmBatch: Confirm
       chooseHandIn: Choose which items to hand in
+      chooseWithdraw: Choose which items to withdraw
       confirmAndClose: Confirm & close
       confirmAndContinue: Confirm & continue
       toAccept: to accept
@@ -572,7 +573,7 @@ singulars:
       withdrawOnConfirm: Withdrawn on confirm
       infoAccept: Accept. Works from any board you've visited.
       infoHandIn: Hand in. Only at the job board location.
-      infoWithdraw: Takes the items the job needs out of your bank, taking the job if needed. Shows at a bank.
+      infoWithdraw: Takes the items the job needs out of your bank, without taking the job. Shows at a bank away from the job board.
       infoAbandon: Give the job up.
       infoStanding: Your level with each faction.
       infoBank: Your bank only counts at boards that have one.
@@ -614,6 +615,14 @@ singulars:
       readyHereTitle: Ready to hand in here
       giveUp: Give up
       finishJobChanges: Confirm or cancel your job changes first.
+      readyToComplete: Ready to complete
+      rewardsPrefix: "Rewards:"
+      requiredTitle: Required
+      substitutesTitle: Substitutes
+      rewardNameReputation: "{name} reputation"
+      rewardNameXp: "{name} experience"
+      rewardNameCoins: Coins
+      handInAllTitle: "Hand in {count} jobs?"
     maps:
       rewardKinds:
         "item": Items
@@ -642,6 +651,33 @@ singulars:
         title: Unconfirmed changes
         text: Your job changes are not confirmed yet. Confirm them before closing, or discard them?
         textLeave: Your job changes are not confirmed yet. Confirm them before you go, or discard them?
+    protection:
+      warnTitle: Hand in protected items?
+      handInAnyway: Hand in anyway
+      handInAll: Hand in all
+      skipThese: Skip these
+      blockedTitle: Can't hand this in
+      blockedLocked: Locked items are never handed in. Unlock the item from its details to hand it in.
+      blockedSetting: Your job board settings protect the items this job needs.
+      openSettings: Open settings
+      reasonLocked: Locked
+      reasonFavourited: Favourited
+      reasonQuality: "{quality} or better"
+      reasonKeep: Leaves you fewer than {count}
+      skipProtected: Skip protected
+    settings:
+      title: Job board settings
+      protectTitle: Protect items when handing in
+      chooseTitle: Choosing items
+      qualityLevelInfo: Protects crafted items of a high quality from being handed in for jobs. Ask first asks before one is handed in; Never keeps them out of hand-ins.
+      qualityFromInfo: Crafted items of the chosen quality and every better one are protected from being handed in for jobs, as set above. This includes jobs that ask for exactly that quality.
+      keepLevelInfo: Keeps a reserve of every item when you hand in jobs. Ask first asks before going below it; Never stops a hand-in that would.
+      keepCountInfo: How many to keep, counting your bag and bank together. Each quality, and Fine items, count apart.
+      qualityChoiceInfo: When more than one quality could pay a job, for handing in and withdrawing. Always ask lets you choose; Use the lowest takes the lowest that fits.
+      fixedRules: Locked items are never handed in. Favourited items always ask first.
+      dismissedTitle: Dismissed jobs
+      dismissedInfo: Dismissed jobs are hidden from the boards. Each week's new jobs start shown.
+      showDismissed: "Show dismissed jobs again ({count})"
     help:
       title: How jobs work
       intro: "Job boards post new jobs every week. Take a job, bring what it asks for to the job board location, and get paid."
@@ -651,25 +687,30 @@ singulars:
       step3: Go to the job board location and hand the items in to collect your rewards.
       cardTitle: Reading a job
       cardAsk: The item the job asks for. Tap it to see where you can find it.
-      cardCount: "How many you have, out of how many the job asks for. <icon i=\"Bank small\"/> shows how many of those are in your bank. When it's grey, the job board location has no bank, so you'll need to carry them there."
-      cardRewards: What you get for finishing the job. Tap a reward to see what it is.
-      cardBar: Shows how close an accepted job is to being ready to hand in.
+      cardCount: "How many you have, out of how many the job asks for."
+      cardLabel: "The quality the job asks for, or <itemTag tag=\"fine\"/> when it asks for a Fine item. Other qualities don't count, except the better ones the job takes as substitutes."
+      cardBank: "How many your bank holds. Tap it to see what you own of the quality required and of every substitute."
+      cardRewards: What the job pays. Tap the job to see every reward and the qualities it takes.
+      cardStrip: "A green edge means the job is ready: you can hand it in at its job board with what you have. A brown one means you've taken it, but it still needs items."
       qualitiesTitle: Better qualities
-      qualitiesText: "A job that asks for a crafted item also takes a better quality of it instead, and usually needs fewer of them. Hand in one quality for the whole job: you can't mix them. A quality you have enough of is filled in."
+      qualitiesText: "A job that asks for a crafted item can also take a better quality of it instead. Hand in one quality for the whole job: you can't mix them. A quality you have enough of is ticked."
       fineTitle: Fine items
       fineText: "<itemTag tag=\"fine\"/> items only count for jobs that ask for Fine.\n<bp/>Find them while gathering. The odds are 1 in 100 by default.\n<bp/><stat s=\"fineMaterialFind\"/> on your gear and tools improves those odds."
       buttonsTitle: Buttons
       acceptTitle: Accept
       accept: "Accepts the job. You don't need to be at the job board location, as long as you've visited it."
       handInTitle: Hand in
-      handIn: "Hands the items in at the job board location and collects your rewards. If you haven't accepted the job yet, it's accepted and handed in at once, without using a job slot."
+      handIn: "Hands the items in at the job board location and collects your rewards."
       withdrawTitle: Withdraw
-      withdraw: Takes the items the job needs out of your bank, so you can carry them to the job board location. Appears at a bank when the job board location has no bank.
+      withdraw: Takes the items the job needs out of your bank, so you can carry them to the job board location.
       abandonTitle: Give up
       abandon: Gives up the job and frees its slot for another one.
-      itemsTitle: Where items count
-      itemsCarried: Items in your inventory count at every job board location.
-      itemsBank: "Items in your bank only count at job board locations that have a bank. For the others, withdraw them at any bank and carry them there."
+      dismissButtonTitle: Dismiss
+      dismissButton: "Hides a job you haven't taken from the boards."
+      locked: "The job needs items you've protected: a locked item, or one your job board settings keep. Tap it to see why."
+      handInAllText: "Hands in every job that's ready at this board at once. You see a dialog first of the items you're handing in."
+      dismissedTitle: Dismissed jobs
+      dismissedText: "Dismiss a job you don't want and it's hidden from the boards. You can bring them back from job board settings."
       levelsTitle: Faction levels
       levelsText: "Some jobs need a higher level with the board's faction, but they also pay more. They're listed at the end of each board, grouped by the level they need. Boards you haven't visited stay locked until you go there."
       confirmTitle: Confirm
@@ -1741,6 +1782,11 @@ maps:
       "leaderboardFilter": Show
       "leaderboardType": Leaderboards
       "stepDataTime": Timeframe
+      "jobProtectQualityLevel": Protect high qualities
+      "jobProtectQualityFrom": Protect from
+      "jobProtectKeepLevel": Keep a reserve
+      "jobProtectKeepCount": Reserved count
+      "jobQualityChoice": When several qualities fit
     custom:
       "dataSource": Step data source
     stepCountNotifications:
@@ -1773,6 +1819,18 @@ maps:
     leaderboardFilter:
       "everyone": Everyone
       "friends": Friends
+    protectionLevel:
+      "off": "Off"
+      "warn": Ask first
+      "never": Never
+    keepCount:
+      "one": "1"
+      "two": "2"
+      "five": "5"
+      "ten": "10"
+    jobQualityChoice:
+      "alwaysAsk": Always ask
+      "lowest": Use the lowest
     leaderboardType:
       "totalLevel": Total <c>level</c>
       "totalXp": Total <c>experience</c>
