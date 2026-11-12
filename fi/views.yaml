@@ -513,7 +513,7 @@ singulars:
       nextRewardUnlocked: 'Seuraava palkinto avautuu:'
   journal:
     info:
-      jobInfo: Työtehtävät ovat <c>yksinkertaisia ja toistettavia tehtäviä</c> 
+      jobInfo: Työtehtävät ovat yksinkertaisia ja toistettavia tehtäviä 
         <c>työpaikkatauluilta</c>. Sinulla voi olla {count} työtehtävää 
         kerrallaan.
     phrases:
@@ -558,17 +558,17 @@ singulars:
       accepted: Hyväksytty
       boardTitle: Työtehtävätaulu
       refreshesIn: 'Päivitykseen:'
-      readyToGive: Valmis esineiden luovuttamiseen
+      readyToGive: Valmis esineiden toimittamiseen
       filterAccepted: Työn alla
       filterActionable: Saatavilla täällä
-      acceptedJobsHere: <c>{count}</c> luovutettavaksi tänne
-      readyToHandIn: Valmis luovuttamaan esineet
-      travelToHandIn: Luovuta esineet paikan päällä
+      acceptedJobsHere: <c>{count}</c> toimitettavaksi tänne
+      readyToHandIn: Valmis toimittamaan esineet
+      travelToHandIn: Toimita esineet paikan päällä
       rewardsLabel: Palkinnot
       stateTravel: Matka
       needMore: Tarvitaan {count} lisää
       readyFromBank: Valmis · {count} nostetaan pankista
-      handInAt: Luovutussijainti {location}
+      handInAt: 'Toimituspaikka: {location}'
       rewardsLabelCount: Palkkio ({count})
       rewardLineItem: '{count} × {name}'
       rewardLineReputation: '{amount} {name}-mainetta'
@@ -586,10 +586,10 @@ singulars:
       toAbandon: hylätäksesi
       nothingActionableHere: Täältä käsin et voi tehdä mitään juuri nyt. Voit 
         hyväksyä töitä miltä tahansa taululta jonka luona olet käynyt, mutta 
-        joudut palaamaan sen luo luovuttaaksesi esineet työnantajalle.
+        joudut palaamaan sen luo toimittaaksesi esineet.
       noAcceptedJobs: Sinulla ei ole keskeneräisiä töitä.
       filterAll: Kaikki työt
-      deliver: Luovuta esineet
+      deliver: Toimita esineet
       difficulty:
         "easy": Helppo
         "mediocre": Keskivaikea
@@ -625,8 +625,8 @@ singulars:
       infoAccept: Hyväksy. Toimii miltä tahansa taululta, jonka luona olet 
         käynyt.
       infoHandIn: Toimita. Voidaan tehdä vain työtehtävätaulun luona.
-      infoWithdraw: Hyväksy ja nosta puuttuvat esineet pankistasi. Näkyy pankin 
-        kohdalla, kun sinulla on jotain sopivaa nostettavaa.
+      infoWithdraw: Nostaa työn vaatimat esineet pankistasi, ja vastaanottaa 
+        työn lennosta tarvittaessa. Näkyy sijainnissa, jossa on pankki.
       infoAbandon: Luovuta työtehtävän suhteen.
       infoStanding: Tasosi eri ryhmittymissä.
       infoBank: Pankkivarantosi otetaan huomioon vain työtehtävätauluilla, 
@@ -641,6 +641,27 @@ singulars:
       handInWithin: Toimita luona
       weekUnavailable: Tämän viikon työtehtäviä ei voitu ladata.
       retry: Yritä uudelleen
+      confirmAndContinue: Vahvista & jatka
+      bankInCount: Nostetaan pankistasi kun toimitat työtehtävän esineet.
+      infoReset: Jäljellä oleva aika siihen, että kaikki työtaulut näyttävät 
+        uudet työtehtävät.
+      handInAll: Toimita kaikki ({count})
+      withdrawAll: Nosta kaikki ({count})
+      lockedJobs: <c>{count}</c> työtehtävää lisää saatavilla tasolla {level} 
+        tässä ryhmittymässä ({faction}).
+      visitToUnlock: Vieraile sijainnissa {location}, jotta näet ja voit 
+        vastaanottaa tämän työtehtävätaulun töitä.
+      jobsThisWeek: <c>{count}</c> työtä tällä viikolla
+      allBoards: Kaikki taulut
+      bankHere: Pankkisi otetaan huomioon tämän taulun luona.
+      noBoardHere: Täällä ei ole työtehtävätaulua. Valitse taulu nähdäksesi sen 
+        työtehtävät.
+      handInAllLabel: Toimita kaikki
+      withdrawAllLabel: Nosta kaikki
+      handedInTitle: Työtehtävät, jotka on toimitettu
+      readyHereTitle: Valmis toimittamaan paikan päällä
+      giveUp: Anna periksi
+      finishJobChanges: Vahvista tai peruuta työtehtävämuutoksesi ensin.
     dialogs:
       abandonJob:
         title: Hylkää työtehtävä
@@ -650,6 +671,8 @@ singulars:
         title: Vahvistamattomat muutokset
         text: Työtehtäviesi muutosta ei ole vielä vahvistettu. Vahvistatko ne 
           ennen sulkemista, vai perutaanko muutokset?
+        textLeave: Työtehtävämuutoksiasi ei ole vielä vahvistettu. 
+          Vahvistetaanko ne ennen poistumista, vai perutaanko ne?
     maps:
       rewardKinds:
         "item": Esineet
@@ -665,14 +688,83 @@ singulars:
         muu työtehtävä ensin.'
       notEnoughItems: '{job} vaatii enemmän esineitä kuin sinulla on jäljellä.'
       locationNotVisited: '{job} voidaan ottaa vastaan matkustamalla ensin työtehtävätaululle.'
-      notAtLocation: '{job} vaatii valmistuakseen käynnin työtehtävätaululla esineiden
-        toimittamiseksi.'
+      notAtLocation: '{job} voidaan toimittaa vain työtehtävätaulunsa luona.'
       goalBroken: '{job} vaatii esinettä, jota ei ole enää olemassa.'
       counterNotMet: '{job} ei ole vielä valmis.'
       notApplied: '{job} ei suostunut vaihtumaan. Koeta uudelleen.'
       levelTooLow: Nouse korkeammalle tasolle työtehtävätaulun ryhmittymässä, 
         jotta voit ottaa vastaan työtehtävän {job}.
       expired: '{job} on ohittanut palautuspäivänsä, joten se on vedetty pois.'
+    help:
+      title: Miten työtehtävät toimivat
+      intro: Työtehtävätauluille ilmestyy uusia tehtäviä joka viikko. Vastaanota
+        tehtävä, tuo sen pyytämät esineet työtehtävätaulun luokse, ja saa 
+        palkinto.
+      stepsTitle: Perusteet
+      step1: Ota työtehtävä vastaan miltä tahansa työtehtävätaululta, jonka 
+        luona olet käynyt. Sinulla voi olla <c>{count}</c> työtehtävää 
+        kerrallaan.
+      step2: Kerää esineet. Kanna ne mukanasi, tai kokoa ne pankkiin, jos 
+        työtehtävätaulun sijainnissakin on pankki.
+      step3: Mene työtehtävätaulun sijaintiin ja toimita esineet 
+        vastaanottaaksesi palkkion.
+      cardTitle: Työtehtävän lukeminen
+      cardAsk: Tätä esinettä työtehtävässä pyydetään. Napauta esinettä, jotta 
+        näet mistä sellaisia voi löytää.
+      cardCount: Montako esinettä sinulla on, ja montako työ pyytää. <icon 
+        i="Bank small"/> näyttää, moniko näistä on pankissasi. Kun se on harmaa,
+        työtehtävätaulun sijainnissa ei ole pankkia, joten esineet pitää kantaa 
+        paikan päälle.
+      cardRewards: Palkkio työtehtävän toimittamisesta. Napauta palkkiota 
+        nähdäksesi, mikä se on.
+      cardBar: Näyttää, kuinka lähellä hyväksytty työtehtävä on 
+        toimittamisvalmista.
+      qualitiesTitle: Parempilaatuiset esineet
+      qualitiesText: Työtehtävä, joka pyytää valmistettua esinettä, hyväksyy 
+        myös parempilaatuisia versioita, ja yleensä tarvitsee niitä vähemmän. 
+        Koko työtehtävän toimituksen tulee olla tasalaatuista, et voi 
+        esimerkiksi sekoittaa hyvälaatuista mainion kanssa. Nostaessa suositaan 
+        laatua, jota sinulla on riittävästi.
+      fineTitle: Oivat esineet
+      fineText: |-
+        Esine, joka on <itemTag tag="fine"/>, kelpaa vain työtehtävissä jotka pyytävät oivia esineitä.
+        <bp/>Oivia esineitä voi löytää keräillessä. Oletustodennäköisyys oivan esineen löytämiseksi on 1/100..
+        <bp/>Varusteiden ominaisuus <stat s="fineMaterialFind"/> parantaa todennäköisyyksiä.
+      buttonsTitle: Napit
+      acceptTitle: Hyväksy
+      accept: Hyväksyy työn. Sinun ei tarvitse tätä varten olla työtehtävätaulun
+        sijainnissa, kunhan olet käynyt siellä joskus.
+      handInTitle: Toimita
+      handIn: Toimittaa esineet työtehtävätaulun luona, ja vastaanottaa 
+        palkkiosi. Jos et ole hyväksynyt työtä vielä, se hyväksytään ja 
+        toimitetaan samanaikaisesti, eivätkä yhtäaikaisten työtehtävien 
+        kokonaismäärän rajoitukset vaikuta siihen silloin.
+      withdrawTitle: Nosta
+      withdraw: Nostaa tarvittavat esineet pankistasi, jotta voit kantaa ne 
+        työtehtävätaulun sijainnin luokse. Tämä nappi ilmestyy näkyviin pankin 
+        luona silloin, kun työtehtävätaulun sijainnissa ei ole pankkia.
+      abandonTitle: Anna periksi
+      abandon: Luopuu työtehtävästä ja vapauttaa sinut ottamaan sen sijaan 
+        jonkin toisen työtehtävän.
+      itemsTitle: Missä esineet lasketaan
+      itemsCarried: Esineet, jotka ovat repussasi, lasketaan kaikkien 
+        työtehtävätaulujen luona.
+      itemsBank: Esineet, jotka ovat pankissasi, lasketaan vain sellaisten 
+        työtehtävätaulujen luona, joiden yhteydessä on pankki. Muiden osalta 
+        esineet on nostettava ensin jostakin pankista, ja kannettava paikan 
+        päälle.
+      levelsTitle: Ryhmittymien tasot
+      levelsText: Jotkin työtehtävät vaativat korkeamman mainetason taulun 
+        ryhmittymässä, mutta niiden palkkiotkin ovat vastaavasti paremmat. 
+        Työtehtävät listataan jokaisella taululla, ja ne ryhmitellään vaaditun 
+        tason mukaan. Työtehtävätaulut, joiden luona et ole käynyt, säilyvät 
+        lukittuina, kunnes käyt niiden luona.
+      confirmTitle: Vahvista
+      confirmText: Muutoksesi näkyvät välittömästi, mutta mitään ei lähetetä 
+        eteenpäin ennen kuin painat Vahvista. Jos suljet työtehtävätaulut ennen 
+        muutosten vahvistamista, sinulta kysytään, haluatko vahvistaa muutoksesi
+        vai perua ne.
+      example: Esimerkki
   activity:
     phrases:
       consumables: Hyödykkeet
@@ -2121,3 +2213,5 @@ singulars:
       superSeriousWalker: Todella vakavasti otettava kävelijä
       cultFollower: Kultin jäsen
       cultLeader: Kultinjohtaja
+  help:
+    relatedTitle: Katso myös
