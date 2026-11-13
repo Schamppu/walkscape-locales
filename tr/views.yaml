@@ -122,6 +122,7 @@ maps:
       'leaderboardFilter': Göster
       'leaderboardType': Liderlik Tablosu
       'stepDataTime': Zaman dilimi
+      "jobProtectQualityLevel": Yüksek kalitelileri koru
     custom:
       'dataSource': Adım verisi kaynağı
     notificationImportance:
@@ -145,6 +146,18 @@ maps:
       'cooking': <c>Aşçılık</c> seviyesi
       "hunting": <c>Avcılık</c> seviyesi
       "tailoring": <c>Terzilik</c> seviyesi
+    protectionLevel:
+      "off": Kapalı
+      "warn": Önce sor
+      "never": Asla
+    keepCount:
+      "one": '1'
+      "two": '2'
+      "five": '5'
+      "ten": '10'
+    jobQualityChoice:
+      "alwaysAsk": Daima sor
+      "lowest": En düşüğünü kullan
   character:
     stepsTime:
       'hourly': Saatlik adım
@@ -1205,7 +1218,7 @@ singulars:
       confirmAndClose: Onayla ve kapat
       nothingActionableHere: Şu anda burada yapabileceğin bir şey bulunmuyor. 
         Daha önce ziyaret etmiş olduğun yerlerdeki işleri kabul edebilirsin. 
-        Ancak teslim etmek için doğru panoya gitmen gerekir.
+        Ancak teslimat yapmak için doğru iş panosu konumunda bulunman gerekir.
       noAcceptedJobs: Devam etmekte olan bir işin bulunmuyor.
       filterActionable: Burada mevcut
       filterAccepted: Devam eden
@@ -1248,18 +1261,46 @@ singulars:
       weekUnavailable: Bu haftanın işleri yüklenemedi.
       nextLevelOpens: '{level}. seviye {boards} için daha fazla iş seçeneği açar.'
       infoAccept: Kabul et. Ziyaret etmiş olduğun her panoda kullanılabilir.
-      infoHandIn: Teslim et. Yalnızca doğru iş panosundayken.
+      infoHandIn: Teslim et. Yalnızca iş panosu konumundayken.
       noJobsDone: Bu hafta hiçbir iş için teslimat yapmadın.
       tabDone: Tamam
       allJobsOpen: Bu panodaki bütün işler sana açık durumda.
       infoStanding: Her diyardaki seviyen.
       infoUnavailable: <c>Mevcut olmayan</c> işler daha yüksek diyar seviyesi 
         gerektirir. Hiç ziyaret etmemiş olduğun panolar ise kilitlidir.
-      infoWithdraw: Kabul et ve eksik eşyaları bankandan al. Tamamına sahipsen 
-        bankalarda görünür.
+      infoWithdraw: İş için gereken eşyaları işi kabul etmeden bankadan çek. İş 
+        panosundan uzaktaki bankalarda görünür.
       infoBank: Bankan yalnızca banka bulunan pano konumlarında sayılır.
       unlocksAtLevel: '{level}. seviye {faction} diyarıyla açılır. <numberProgress
         current="{current}" max="{max}" /> diyar itibarı.'
+      chooseWithdraw: Hangi eşyaları çekeceğini seç
+      confirmAndContinue: Onayla ve devam et
+      bankInCount: İş için teslimat yaparken bankandan alınır.
+      infoReset: Bütün panoların yeni işler için yenilenmesine kalan süre.
+      handInAll: Tümünü teslim et ({count})
+      withdrawAll: Tümünü çek ({count})
+      lockedJobs: '{level}. seviye {faction} ile <c>{count}</c> iş daha açılır.'
+      visitToUnlock: Bu panodaki işleri görüp kabul edebilmek için {location} 
+        konumunu ziyaret et.
+      jobsThisWeek: Bu hafta <c>{count}</c> iş
+      allBoards: Tüm panolar
+      bankHere: Bankandakiler bu pano için geçerli.
+      noBoardHere: Burada iş panosu bulunmuyor. İşleri görebilmek için bir pano 
+        seç.
+      handInAllLabel: Tümünü teslim et
+      withdrawAllLabel: Tümünü çek
+      handedInTitle: Teslim edilen işler
+      readyHereTitle: Burada teslim edilmeye hazır
+      giveUp: Vazgeç
+      finishJobChanges: Öncelikle iş değişikliklerini onayla veya iptal et.
+      readyToComplete: Tamamlamaya hazır
+      rewardsPrefix: 'Ödüller:'
+      requiredTitle: Gerekenler
+      substitutesTitle: İkame seçenekler
+      rewardNameReputation: '{name} itibarı'
+      rewardNameXp: '{name} tecrübesi'
+      rewardNameCoins: Akçe
+      handInAllTitle: '{count} adet iş için teslimat yapılsın mı?'
     dialogs:
       abandonJob:
         title: İşten vazgeç
@@ -1269,6 +1310,8 @@ singulars:
         title: Onaylanmamış değişiklikler
         text: İş değişikliklerin henüz onaylanmadı. Kapatmadan önce 
           onaylamalısın. Veya değişikliklerden vazgeçilsin mi?
+        textLeave: İş değişikliklerin henüz onaylanmadı. Ayrılmadan önce onları 
+          onayla. Ya da iptal edilsinler mi?
     maps:
       rewardKinds:
         "item": Eşyalar
@@ -1291,6 +1334,78 @@ singulars:
       levelTooLow: '{job} işini almak için panonun diyarında daha yüksek seviyeye
         ulaş.'
       expired: '{job} işinin teslimat süresi geçtiği için iş geri alındı.'
+    protection:
+      warnTitle: Korunan eşyalar teslim edilsin mi?
+      handInAnyway: Yine de teslim et
+      handInAll: Tümünü teslim et
+      skipThese: Bunları atla
+      blockedLocked: Kilitli eşyalar asla teslim edilemez. Teslim edebilmek için
+        eşya detaylarından kilidini açmalısın.
+      blockedSetting: İş panosu ayarların bu işin gerektirdiği eşyaları koruyor.
+      openSettings: Ayarları aç
+      reasonLocked: Kilitli
+      reasonFavourited: Favori
+      reasonQuality: '{quality} veya daha iyisi'
+      skipProtected: Korunanları atla
+    settings:
+      title: İş panosu ayarları
+      chooseTitle: Eşya seçimi
+      qualityLevelInfo: Yüksek kaliteli ürünleri işler için teslim ederken 
+        korur. "Önce sor" seçiliyse sorulduktan sonra teslim edilir. "Asla" 
+        seçiliyse hiçbir şekilde teslim edilmez.
+      qualityFromInfo: Seçilmiş kalite ve daha iyisi olan ürünleri yukarıdaki 
+        ayar doğrultusunda korur. Tam olarak o kalitedeki ürünleri isteyen işler
+        de dahildir.
+      keepLevelInfo: İşler için teslimat yaparken her eşyadan kenara ayrılır. 
+        "Önce sor" seçiliyse o sayının altına inilirken sorar. "Asla" seçiliyse 
+        o sayının altına inilen teslimatlar durdurulur.
+      keepCountInfo: Çantan ve bankandakiler dahil olmak üzere eşyalardan ne 
+        kadarının kenara ayrılacağı. Her kalitedeki ürünler ve iyi eşyalar ayrı 
+        ayrı sayılır.
+      fixedRules: Kilitli eşyalar asla teslim edilmez. Favori eşyalar teslim 
+        edilirken tekrar sorulur.
+      dismissedTitle: Gizlenen işler
+      dismissedInfo: Gizlenen işler panolarda görünmezler. Her haftanın yeni 
+        işleri tekrar görünürler.
+      showDismissed: Gizlenen ({count}) işi tekrar göster
+    help:
+      title: İşler nasıl yürür
+      intro: İş panolarında her hafta yeni işler yayınlanır. Bir işi kabul et, 
+        istediği şeyi iş panosu konumuna götür, karşılığını kazan.
+      stepsTitle: Temel bilgiler
+      step1: Ziyaret etmiş olduğun her panodaki işleri kabul edebilirsin. Aynı 
+        anda <c>{count}</c> adet işi kabul edebilirsin.
+      step2: Eşyaları topla. Onları ya panoya götür ya da pano konumunda banka 
+        bulunuyorsa banka hesabında bulundur.
+      step3: İş panosu konumuna gidip eşyaları teslim ederek ödüllerini al.
+      cardTitle: İşin anlaşılması
+      cardAsk: İş için gereken eşya. Nereden elde edebileceğini görmek için 
+        üzerine dokun.
+      cardCount: Sahip olduğun eşya sayısı ve iş için gereken eşya sayısı.
+      cardStrip: Yeşil kenar işin hazır olduğunu ve iş panosuna giderek 
+        elindekilerle teslimatı yapabileceğini gösterir. Kahverengi kenar ise 
+        işi kabul ettiğini ancak gereken eşyalara hala ihtiyacın olduğunu 
+        gösterir.
+      qualitiesTitle: Daha kaliteliler
+      fineTitle: İyi eşyalar
+      buttonsTitle: Düğmeler
+      acceptTitle: Kabul et
+      accept: İşi kabul eder. Daha önce ziyaret etmiş olduğun sürece iş panosu 
+        konumunda bulunman gerekmez.
+      handInTitle: Teslim et
+      handIn: İş panosu konumunda eşyaları teslim ederek ödülleri alır.
+      withdrawTitle: Çek
+      withdraw: İş panosu konumuna götürebilmen için gereken eşyaları bankandan 
+        çeker.
+      abandonTitle: Vazgeç
+      abandon: İşten vazgeçerek başka işler kabul edebilmen için iş yuvasında 
+        yer açar.
+      dismissButtonTitle: Gizle
+      dismissButton: Henüz kabul etmemiş olduğun bir işi panodan gizler.
+      dismissedTitle: Gizlenen işler
+      levelsTitle: Diyar seviyeleri
+      confirmTitle: Onayla
+      example: Örnek
   activity:
     phrases:
       stopWhenOverEncumbered: Envanter dolup taşınca dur
