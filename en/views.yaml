@@ -147,6 +147,7 @@ singulars:
       lore: '<bp /><icon i="Lore item"/> <c>{count} lore items</c> that can be found'
       cosmetics: '<bp /><icon i="Wardrobe action"/> <c>{count} cosmetics</c> that can be found'
       petEggs: '<bp /><icon i="Pet egg"/> <c>{count} pet eggs</c> with a new pet'
+      rarePetEggs: '<bp /><icon i="Pet egg"/> <c>{count} rare pet eggs</c> with a new pet'
     options:
       completeUntilActions: Complete for a number of actions
       numberOfActions: Number of actions
@@ -367,6 +368,10 @@ singulars:
       claimAllSummary: "{count} achievements unlocked"
       claimAllRewards: "{count} rewards claimed"
       achievementPointsLabel: Achievement points
+      achievementFinished: Achievement unlocked
+      achievementProgress: Achievement progress
+      claimInAchievements: Claim it in Achievements
+      moreRequirements: "+{count} more requirements"
   titles:
     info:
       viewDescription: Your title is shown with your name, to you and to other players, and its colour tints your name. <c>Exclusive</c> titles come from supporting WalkScape or special events, and stay while you qualify. <c>Unlocked</c> titles are yours to keep once earned. <c>Faction</c> titles are the reputation tiers you have reached.
@@ -461,6 +466,9 @@ singulars:
       noAction: No action
       holdToCast: Hold to cast
       holdToUse: Hold to use
+      holdToUseAll: Hold to use all
+      useAll: Use all
+      useAllInfo: Uses every <object id="{keyword}"/> you carry at once.
       alreadyHere: You are already in <object id="{location}"/>. Ability cannot be used to travel here.
       cannotUseMore: You cannot use this ability. You might be already under the effect of this ability and would exceed the maximum length.
       lastsFor: "Effect lasts for:"
@@ -636,6 +644,7 @@ singulars:
       rewardNameXp: "{name} experience"
       rewardNameCoins: Coins
       handInAllTitle: "Hand in {count} jobs?"
+      withdrawAllTitle: "Withdraw for {count} jobs?"
     maps:
       rewardKinds:
         "item": Items
@@ -666,10 +675,13 @@ singulars:
         textLeave: Your job changes are not confirmed yet. Confirm them before you go, or discard them?
     protection:
       warnTitle: Hand in protected items?
+      warnWithdrawTitle: Withdraw protected items?
+      withdrawAnyway: Withdraw anyway
       handInAnyway: Hand in anyway
       handInAll: Hand in all
       skipThese: Skip these
       blockedTitle: Can't hand this in
+      blockedShort: Protected
       blockedLocked: Locked items are never handed in. Unlock the item from its details to hand it in.
       blockedSetting: Your job board settings protect the items this job needs.
       openSettings: Open settings
@@ -680,11 +692,11 @@ singulars:
       skipProtected: Skip protected
     settings:
       title: Job board settings
-      protectTitle: Protect items when handing in
+      protectTitle: Protect items when handing in or withdrawing
       chooseTitle: Choosing items
-      qualityLevelInfo: Protects crafted items of a high quality from being handed in for jobs. Ask first asks before one is handed in; Never keeps them out of hand-ins.
+      qualityLevelInfo: Protects crafted items of a high quality, and other items of a high rarity, from being handed in or withdrawn for jobs. Ask first asks before one is used; Always keeps them out.
       qualityFromInfo: Crafted items of the chosen quality and every better one are protected from being handed in for jobs, as set above. This includes jobs that ask for exactly that quality.
-      keepLevelInfo: Keeps a reserve of every item when you hand in jobs. Ask first asks before going below it; Never stops a hand-in that would.
+      keepLevelInfo: Keeps a reserve of every item when you hand in or withdraw for jobs. Ask first asks before going below it; Always stops a hand-in or withdrawal that would.
       keepCountInfo: How many to keep, counting your bag and bank together. Each quality, and Fine items, count apart.
       qualityChoiceInfo: When more than one quality could pay a job, for handing in and withdrawing. Always ask lets you choose; Use the lowest takes the lowest that fits.
       fixedRules: Locked items are never handed in. Favourited items always ask first.
@@ -1796,7 +1808,7 @@ maps:
       "achievementFilter": Show achievements
       "leaderboardType": Leaderboards
       "stepDataTime": Timeframe
-      "jobProtectQualityLevel": Protect high qualities
+      "jobProtectQualityLevel": Protect high qualities and rarities
       "jobProtectQualityFrom": Protect from
       "jobProtectKeepLevel": Keep a reserve
       "jobProtectKeepCount": Reserved count
@@ -1836,7 +1848,7 @@ maps:
     protectionLevel:
       "off": "Off"
       "warn": Ask first
-      "never": Never
+      "never": Always
     keepCount:
       "one": "1"
       "two": "2"
