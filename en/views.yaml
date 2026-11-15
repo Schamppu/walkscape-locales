@@ -620,6 +620,7 @@ singulars:
       accepted: Accepted
       acceptedJobsHere: <c>{count}</c> to hand in here
       readyToHandIn: Ready to hand in
+      ready: Ready
       travelToHandIn: Hand in on location
       stateTravel: Travel
       rewardsLabel: Rewards
@@ -709,6 +710,7 @@ singulars:
       handedInTitle: Jobs handed in
       readyHereTitle: Ready to hand in here
       giveUp: Give up
+      dismiss: Dismiss
       finishJobChanges: Confirm or cancel your job changes first.
       readyToComplete: Ready to complete
       rewardsPrefix: "Rewards:"
@@ -802,6 +804,8 @@ singulars:
       handIn: "Hands the items in at the job board location and collects your rewards."
       withdrawTitle: Withdraw
       withdraw: Takes the items the job needs out of your bank, so you can carry them to the job board location.
+      withdrawSomeTitle: Withdraw some
+      withdrawSome: "Shows instead of Withdraw when you don't have everything a job needs. Takes what your bank has toward it, so you can carry it to the job board location."
       abandonTitle: Give up
       abandon: Gives up the job and frees its slot for another one.
       dismissButtonTitle: Dismiss
@@ -1219,6 +1223,8 @@ singulars:
       bodyTypeA: A
       bodyTypeB: B
       characterName: Character name
+      startsOutIn: Your journey begins in <c>{location}</c>.
+      typeAName: Please type in a name
     info:
       rememberSwipe: Remember that you can swipe back to change chosen options at any time during character creation.
   settings:
@@ -1324,6 +1330,36 @@ singulars:
       showingRoutesFrom: Travel destinations from <object id="{from}"/>.
       noRoutesFromLocation: No travel destinations from <object id="{from}"/>.
       escape: Escape
+  pfpEditor:
+    buttons:
+      undo: Undo
+      reset: Reset
+      browseAll: Browse all
+    help:
+      barber: Change your hairstyle, face, colours and facepaint. Every style is here to try, and the new look costs {price} coins when you buy it.
+      wardrobe: Wear any cosmetics you own, for free. Locked ones show where they can be found.
+      browse: Tap one to try it on. Locked ones show where they can be found.
+    sources:
+      shop: Shop
+      achievement: Achievement
+      rewardTrack: Reward track
+    phrases:
+      noneOwned: You don't own any of these yet.
+      browseToFind: Browse to see where to find them.
+      switchedOff: Turn it on above to wear it and change it.
+      newLook: New look
+      unsavedLook: Your new look is not saved yet.
+    newLookLines:
+      fashion: "{name} is on top of fashion!"
+      better: "{name} has never looked better!"
+      heads: Heads will turn wherever {name} walks.
+      sharp: "Looking sharp, {name}!"
+      runway: "{name} is ready for the runway."
+      mirror: "Even the mirror is impressed, {name}."
+      trend: "{name} just started a new trend."
+      realm: The whole realm will be talking about {name}.
+      whoIsThat: "Who is that? Oh, it's {name}!"
+      compliments: "{name} will hear compliments all day."
   pfpCreation:
     buttons:
       randomize: Randomize
