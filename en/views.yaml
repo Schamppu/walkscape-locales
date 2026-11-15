@@ -109,6 +109,7 @@ singulars:
       cantTravelThere: "Can't travel there from here"
       cantStartActivity: "Cannot start activity"
       requirementsNotMet: "Requirements not met"
+      requirementsNotMetWarning: "You don't meet all of this activity's requirements, so it won't start until you do."
       inputsNotMet: "Input requirements not met"
       noActivitiesInLocation: 'There are no activities in <object id="{location}"/>.'
       locationIsUnknown: "Location is unknown. Once you have explored this location, you will be able to see activities here."
@@ -173,6 +174,10 @@ singulars:
       unknownError: Unknown error.
       bankVisit: Bank visit at <object id="{location}"/>, then wear the best gear
       bankVisitDeposit: Bank visit at <object id="{location}"/>, deposit your inventory, then wear the best gear
+      depositOnTheWay: Deposit unlocked items at the first bank on the way
+      depositOnTheWayGear: Deposit unlocked items, spare gear and tools too, at the first bank on the way
+      depositAt: Deposit unlocked items at <object id="{location}"/>
+      depositAtGear: Deposit unlocked items, spare gear and tools too, at <object id="{location}"/>
     options:
       switchGearSet:
         text: Switch to gear set
@@ -180,6 +185,9 @@ singulars:
       depositUnlockedItems:
         text: Deposit unlocked items
         desc: Deposits all unlocked items from your inventory to the bank if one is available in any of the locations you go through.
+      cancelDeposit:
+        text: Cancel deposit
+        desc: Nothing goes into the bank on the way.
       withdrawGearSet:
         text: Withdraw gear set
         desc: Withdraws a gear set from the bank if one is available in any of the locations you go through.
@@ -214,9 +222,14 @@ singulars:
   autoGear:
     phrases:
       equipAndStart: Equip & start
+      headerAt: Equip & start at <object id="{location}"/>
       goal: Goal
       bank: Bank
       changes: What changes
+      summary: Summary
+      attributeChanges: Attribute changes
+      itemChanges: Item changes
+      depositGear: Gear and tools
       noChanges: You're already wearing your best gear for this.
       working: Finding your best gear...
       retry: Try again
@@ -228,13 +241,42 @@ singulars:
       noBank: No bank you can reach from here.
       nothingFromBank: Nothing to take out of the bank, so you'll go straight there.
       depositInventory: Deposit inventory
-      depositInfo: Puts everything that isn't locked into the bank, except what this needs.
       replacesQueue: This replaces your queue.
       fromBank: From the bank
       craftAmount: Crafts
       craftsLimitedByBag: Only <c>{count}</c> fit in your bag.
       craftsLimitedByMaterials: You have materials for <c>{count}</c>.
+      bagOverflow: Crafting this many may fill your bag past its space. You'd be overencumbered and slower until you make room.
+      inventorySize: Inventory size
+      otherSources: Other sources
+      noStatsHere: Gives nothing here.
+      craftStack: +1 stack
       emptySlot: Empty
+    plan:
+      route: Route
+      steps: "{steps} steps"
+      totalSteps: Steps
+      visit: Bank visit
+      bankAt: Bank at <object id="{location}"/>
+      deposit: Deposit
+      bagAfter: Bag after
+      takenOff: Gear taken off
+      nothingDeposited: Nothing goes into the bank.
+      start: Start <object id="{target}"/>
+      craft: Craft <object id="{target}"/>
+      estimate: Estimate
+      endless: Nothing this drops fills your bag, so it runs until you stop it.
+      limits:
+        crafts: Crafts
+        actions: Actions
+        bagFull: Actions until your bag is full
+      xpAtLeast: "{skill} XP, at least"
+      level: "{skill} level"
+    outcome:
+      items: Items made
+      steps: Steps
+      xp: XP
+      saved: Crafts that use no materials
     problems:
       unknown: Couldn't work out your gear.
       targetGone: This can't be done any more.
@@ -244,6 +286,19 @@ singulars:
       missingInputs: You don't have what this uses.
       missingMaterials: You don't have the materials.
       noBankReachable: What you need is in the bank, and no bank can be reached from here.
+    findGoals:
+      chests:
+        name: Find chests
+        desc: Find more chests, and the other finds after.
+      gems:
+        name: Find gems
+        desc: Find more gems, and the other finds after.
+      birdNests:
+        name: Find bird nests
+        desc: Find more bird nests, and the other finds after.
+      collectibles:
+        name: Find collectibles
+        desc: Find the collectibles you're missing sooner.
     goals:
       balanced:
         name: Balanced
@@ -254,6 +309,8 @@ singulars:
       moreLoot:
         name: More loot
         desc: Get the most loot for your steps.
+        craftName: More items
+        craftDesc: Make the most items for your steps.
       moreXp:
         name: More XP
         desc: Level up faster.
@@ -277,6 +334,14 @@ singulars:
       xpPerStep: XP per step
       fineChance: Fine chance
       findsPerThousandSteps: Finds per 1,000 steps
+      short:
+        stepsPerAction: per action
+        xpPerStep: per step
+      findsPer:
+        chests: Chests per 1,000 steps
+        gems: Gems per 1,000 steps
+        birdNests: Bird nests per 1,000 steps
+        collectibles: Find collectibles
       expectedQuality: Average quality
       noMaterialsConsumed: No materials used
   character:
@@ -1914,6 +1979,7 @@ maps:
       "toggleAgilityXp": Disable Agility XP gain from Travelling
       "autoGearVisitBank": Equip & start visits a bank first
       "autoGearDepositInventory": Equip & start deposits your inventory
+      "autoGearDepositGear": Equip & start deposits gear and tools too
     enumSettings:
       "language": Language
       "leaderboardFilter": Show
@@ -1927,6 +1993,7 @@ maps:
       "jobQualityChoice": When several qualities fit
       "autoGearActivityGoal": Equip & start goal for activities
       "autoGearRecipeGoal": Equip & start goal for recipes
+      "autoGearFindFocus": Equip & start finds to look for first
     custom:
       "dataSource": Step data source
     stepCountNotifications:
