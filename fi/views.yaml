@@ -116,6 +116,11 @@ maps:
       'leaderboardFilter': Näytä
       'leaderboardType': Tulostaulukot
       'stepDataTime': Ajanjakso
+      "jobProtectQualityLevel": Suojaa korkealaatuisia esineitä
+      "jobProtectQualityFrom": Suojaa lähtien tasosta
+      "jobProtectKeepLevel": Säilytä varanto
+      "jobProtectKeepCount": Varannon koko
+      "jobQualityChoice": Kun useat laatutasot sopivat
     custom:
       'dataSource': Askelten lähde
     leaderboardType:
@@ -135,6 +140,18 @@ maps:
       'achievementPoints': <c>Saavutuspisteet</c>
       "tailoring": <c>Vaatturointi</c>taso
       "hunting": <c>Metsästys</c>taso
+    protectionLevel:
+      "off": Älä suojaa
+      "warn": Kysy ensin
+      "never": Älä käytä
+    keepCount:
+      "one": '1'
+      "two": '2'
+      "five": '5'
+      "ten": '10'
+    jobQualityChoice:
+      "alwaysAsk": Kysy aina
+      "lowest": Käytä matalinta sallittua laatua
   character:
     stepsTime:
       'hourly': Askeleet tunneittain
@@ -625,8 +642,9 @@ singulars:
       infoAccept: Hyväksy. Toimii miltä tahansa taululta, jonka luona olet 
         käynyt.
       infoHandIn: Toimita. Voidaan tehdä vain työtehtävätaulun luona.
-      infoWithdraw: Nostaa työn vaatimat esineet pankistasi, ja vastaanottaa 
-        työn lennosta tarvittaessa. Näkyy sijainnissa, jossa on pankki.
+      infoWithdraw: Nostaa työn vaatimat esineet pankistasi, muttei vastaanota 
+        työtehtävää. Näkyy sijainnissa, jossa on pankki muttei kyseistä 
+        työtehtävätaulua.
       infoAbandon: Luovuta työtehtävän suhteen.
       infoStanding: Tasosi eri ryhmittymissä.
       infoBank: Pankkivarantosi otetaan huomioon vain työtehtävätauluilla, 
@@ -662,6 +680,15 @@ singulars:
       readyHereTitle: Valmis toimittamaan paikan päällä
       giveUp: Anna periksi
       finishJobChanges: Vahvista tai peruuta työtehtävämuutoksesi ensin.
+      chooseWithdraw: Valitse nostettavat esineet
+      readyToComplete: Toimitusvalmis
+      rewardsPrefix: 'Palkkiot:'
+      requiredTitle: Vaaditaan
+      substitutesTitle: Korvaavat
+      rewardNameReputation: mainetta ryhmittymässä {name}
+      rewardNameXp: '{name}kokemus'
+      rewardNameCoins: Kolikot
+      handInAllTitle: Toimitetaanko {count} työtehtävän esineet?
     dialogs:
       abandonJob:
         title: Hylkää työtehtävä
@@ -711,20 +738,18 @@ singulars:
       cardTitle: Työtehtävän lukeminen
       cardAsk: Tätä esinettä työtehtävässä pyydetään. Napauta esinettä, jotta 
         näet mistä sellaisia voi löytää.
-      cardCount: Montako esinettä sinulla on, ja montako työ pyytää. <icon 
-        i="Bank small"/> näyttää, moniko näistä on pankissasi. Kun se on harmaa,
-        työtehtävätaulun sijainnissa ei ole pankkia, joten esineet pitää kantaa 
-        paikan päälle.
-      cardRewards: Palkkio työtehtävän toimittamisesta. Napauta palkkiota 
-        nähdäksesi, mikä se on.
+      cardCount: Montako esinettä sinulla on, ja montako työ pyytää.
+      cardRewards: Palkkio työtehtävän toimittamisesta. Napauta työtehtävää 
+        nähdäksesi, mitä sen palkkiot ovat ja minkä laatutason esineitä se 
+        kelpuuttaa.
       cardBar: Näyttää, kuinka lähellä hyväksytty työtehtävä on 
         toimittamisvalmista.
       qualitiesTitle: Parempilaatuiset esineet
       qualitiesText: Työtehtävä, joka pyytää valmistettua esinettä, hyväksyy 
-        myös parempilaatuisia versioita, ja yleensä tarvitsee niitä vähemmän. 
-        Koko työtehtävän toimituksen tulee olla tasalaatuista, et voi 
-        esimerkiksi sekoittaa hyvälaatuista mainion kanssa. Nostaessa suositaan 
-        laatua, jota sinulla on riittävästi.
+        myös parempilaatuisia versioita. Koko työtehtävän toimituksen tulee olla
+        tasalaatuista, et voi esimerkiksi sekoittaa hyvälaatuista mainion 
+        kanssa. Vihreällä tarkistusmerkillä merkitään laatu, jota sinulla on 
+        riittävästi.
       fineTitle: Oivat esineet
       fineText: |-
         Esine, joka on <itemTag tag="fine"/>, kelpaa vain työtehtävissä jotka pyytävät oivia esineitä.
@@ -736,13 +761,10 @@ singulars:
         sijainnissa, kunhan olet käynyt siellä joskus.
       handInTitle: Toimita
       handIn: Toimittaa esineet työtehtävätaulun luona, ja vastaanottaa 
-        palkkiosi. Jos et ole hyväksynyt työtä vielä, se hyväksytään ja 
-        toimitetaan samanaikaisesti, eivätkä yhtäaikaisten työtehtävien 
-        kokonaismäärän rajoitukset vaikuta siihen silloin.
+        palkkiosi.
       withdrawTitle: Nosta
       withdraw: Nostaa tarvittavat esineet pankistasi, jotta voit kantaa ne 
-        työtehtävätaulun sijainnin luokse. Tämä nappi ilmestyy näkyviin pankin 
-        luona silloin, kun työtehtävätaulun sijainnissa ei ole pankkia.
+        työtehtävätaulun sijainnin luokse.
       abandonTitle: Anna periksi
       abandon: Luopuu työtehtävästä ja vapauttaa sinut ottamaan sen sijaan 
         jonkin toisen työtehtävän.
@@ -765,6 +787,70 @@ singulars:
         muutosten vahvistamista, sinulta kysytään, haluatko vahvistaa muutoksesi
         vai perua ne.
       example: Esimerkki
+      cardLabel: Työn pyytämä laatu, tai <itemTag tag="fine"/> jos se pyytää 
+        oivaa esinettä. Muita laatuja ei lasketa, paitsi parempilaatuisia 
+        esineitä, joita työhön kelpuutetaan korvaavina toimituksina.
+      cardBank: Montako esinettä pankissasi on. Napauta numeroa nähdäksesi, mitä
+        omistat, vaadittu laatutaso, ja kaikki mahdolliset korvaavat laatutasot.
+      cardStrip: Vihreä reunus tarkoittaa, että työtehtävä on valmis; saat sen 
+        täytettyä työtehtävätaululla jo omistamillasi esineillä. Ruskea reunus 
+        kertoo, että olet vastaanottanut työn, mutta se tarvitsee lisää 
+        esineitä.
+      dismissButtonTitle: Ohita
+      dismissButton: Piilottaa työtehtävän, jota et ole vastaanottanut, 
+        työtehtävätauluilta.
+      locked: 'Tämä työ tarvitsee esineitä, jotka olet suojannut: lukittuja esineitä,
+        tai jotakin, mitä työtehtävätaulujen asetuksesi suojaavat. Napauta työtehtävää
+        nähdäksesi tarkemmin, mistä on kyse.'
+      handInAllText: Toimittaa kerralla kaikki tämän työtehtävätaulun valmiit 
+        työtehtävät. Näet ensin luettelon esineistä, joita olet toimittamassa.
+      dismissedTitle: Ohitetut työtehtävät
+      dismissedText: Ohita työtehtävä, jota et halua, ja se piilotetaan 
+        työtehtävätauluilta. Voit palauttaa tehtävän näkyväksi 
+        työtehtävätaulujen asetuksista.
+    protection:
+      warnTitle: Toimitetaanko suojamerkittyjä esineitä?
+      handInAnyway: Toimita niistä huolimatta
+      handInAll: Toimita kaikki
+      skipThese: Älä toimita näitä
+      blockedTitle: Ei voi toimittaa tätä
+      blockedLocked: Lukittuja esineitä ei koskaan toimiteta. Avaa lukitus 
+        esineen kuvausnäkymästä toimittaaksesi sen.
+      blockedSetting: Työtauluasetuksesi suojaavat esineitä, joita tämä työ 
+        tarvitsee.
+      openSettings: Avaa asetukset
+      reasonLocked: Lukittu
+      reasonFavourited: Suosikki
+      reasonQuality: Laatutaso {quality} tai parempi
+      reasonKeep: Sinulle jäisi vähemmän kuin {count} esinettä
+      skipProtected: Ohita suojatut
+    settings:
+      title: Työtauluasetukset
+      protectTitle: Suojaa esineet, kun niitä toimitetaan
+      chooseTitle: Esineiden valinta
+      qualityLevelInfo: Suojaa valmistettuja korkean laadun esineitä 
+        työtehtäviin toimittamiselta. "Kysy ensin" kysyy ennen kuin esine 
+        toimitetaan, "Älä käytä" varmistaa, ettei niitä toimiteta.
+      qualityFromInfo: Valmistetut esineet, jotka ovat valittua laatutasoa tai 
+        sitä parempia, suojataan työtehtäviin tarjoamiselta ylläolevan asetuksen
+        mukaisesti. Tämä vaikuttaa myös töihin, jotka vaativat tätä tiettyä 
+        laatua.
+      keepLevelInfo: Pitää yllä varantoa esineitä, joita toimitat työtehtäviin. 
+        "Kysy ensin" kysyy vahvistusta ennen rajan alittamista; "Älä käytä" 
+        estää toimituksen joka ylittäisi varannon alarajan.
+      keepCountInfo: Montako esinettä pidetään varalla, mukaanlukien repun ja 
+        pankin sisältämät esineet yhteensä. Jokainen laatuluokka ja oivat 
+        esineet lasketaan erikseen.
+      qualityChoiceInfo: Kun useampi kuin yksi laatuluokka kelpaisi 
+        työtehtävään, "Kysy aina" antaa sinun valita kumpia nostetaan tai 
+        luovutetaan, "Käytä alinta" ottaa alimman luokan esineet, joita sinulla 
+        on.
+      fixedRules: Lukittuja esineitä ei koskaan toimiteta. Suosikeista kysytään 
+        aina ensin.
+      dismissedTitle: Ohitetut työtehtävät
+      dismissedInfo: Ohitetut työtehtävät piilotetaan työtehtävätauluilta. Joka 
+        viikon uudet työtehtävät näkyvät aluksi.
+      showDismissed: Näytä ohitetut työtehtävät ({count})
   activity:
     phrases:
       consumables: Hyödykkeet
