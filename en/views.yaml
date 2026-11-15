@@ -253,20 +253,26 @@ singulars:
       craftStack: +1 stack
       emptySlot: Empty
     plan:
+      title: Plan
       route: Route
       steps: "{steps} steps"
-      totalSteps: Steps
+      legSteps: "+{steps} steps"
+      through: "Through {count} stops"
+      inGearNow: In the gear you wear now
+      inNewGear: In your new gear
+      routeStart: You start here
+      routeBank: The bank
+      routeEnd: Where it's done
       visit: Bank visit
       bankAt: Bank at <object id="{location}"/>
-      deposit: Deposit
-      bagAfter: Bag after
-      takenOff: Gear taken off
-      nothingDeposited: Nothing goes into the bank.
-      start: Start <object id="{target}"/>
-      craft: Craft <object id="{target}"/>
+      intoBank: Into the bank
+      outOfBank: Out of the bank
+      nothing: Nothing
+      bagAfter: Your bag after
       estimate: Estimate
+      stepsRange: "{low} to {high}, as double actions fall"
       endless: Nothing this drops fills your bag, so it runs until you stop it.
-      limits:
+      ends:
         crafts: Crafts
         actions: Actions
         bagFull: Actions until your bag is full
