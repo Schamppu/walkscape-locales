@@ -106,6 +106,7 @@ singulars:
       startActivity: "Start activity"
       queueActivity: "Queue activity"
       travelAndStartActivity: "Travel and start activity"
+      cantTravelThere: "Can't travel there from here"
       cantStartActivity: "Cannot start activity"
       requirementsNotMet: "Requirements not met"
       inputsNotMet: "Input requirements not met"
@@ -170,6 +171,8 @@ singulars:
       petNotFound: "Chosen pet not found, have you retired it?"
       summoningPet: 'Summoning pet <playerPet id="{pet}" />'
       unknownError: Unknown error.
+      bankVisit: Bank visit at <object id="{location}"/>, then wear the best gear
+      bankVisitDeposit: Bank visit at <object id="{location}"/>, deposit your inventory, then wear the best gear
     options:
       switchGearSet:
         text: Switch to gear set
@@ -192,6 +195,9 @@ singulars:
       cancelSummonPet:
         text: Cancel summoning pet
         desc: Cancels the pet summoning for this action.
+      cancelBankVisit:
+        text: Cancel bank visit
+        desc: Walks on without depositing, swapping gear or taking anything out.
     suggestedOptions:
       startActivity: Activity
       startCrafting: Crafting
@@ -205,6 +211,74 @@ singulars:
       crafting:
         onceAllItemsAreCrafted: Once all items are crafted, would you like to do something?
         onceCertainRarityIsCrafted: Once you've crafted a certain rarity or used all materials, would you like to do something?
+  autoGear:
+    phrases:
+      equipAndStart: Equip & start
+      goal: Goal
+      bank: Bank
+      changes: What changes
+      noChanges: You're already wearing your best gear for this.
+      working: Finding your best gear...
+      retry: Try again
+      visitBank: Visit a bank first
+      bankRequired: Some of the items you need are in the bank.
+      bankRoute: 'Nearest bank: <object id="{location}"/>, <c>+{steps}</c> steps'
+      bankOnTheWay: 'Nearest bank: <object id="{location}"/>, on your way'
+      atBank: You're at a bank, so items come straight from it.
+      noBank: No bank you can reach from here.
+      nothingFromBank: Nothing to take out of the bank, so you'll go straight there.
+      depositInventory: Deposit inventory
+      depositInfo: Puts everything that isn't locked into the bank, except what this needs.
+      replacesQueue: This replaces your queue.
+      fromBank: From the bank
+      craftAmount: Crafts
+      craftsLimitedByBag: Only <c>{count}</c> fit in your bag.
+      craftsLimitedByMaterials: You have materials for <c>{count}</c>.
+      emptySlot: Empty
+    problems:
+      unknown: Couldn't work out your gear.
+      targetGone: This can't be done any more.
+      requirementsNotMet: You don't meet the requirements for this.
+      targetUnreachable: You can't travel there from where you are.
+      missingGear: You don't have the gear this needs.
+      missingInputs: You don't have what this uses.
+      missingMaterials: You don't have the materials.
+      noBankReachable: What you need is in the bank, and no bank can be reached from here.
+    goals:
+      balanced:
+        name: Balanced
+        desc: Reaches full work efficiency first, then a bit of everything. Pick this if you're not sure.
+      fasterActions:
+        name: Faster actions
+        desc: Finish actions in fewer steps.
+      moreLoot:
+        name: More loot
+        desc: Get the most loot for your steps.
+      moreXp:
+        name: More XP
+        desc: Level up faster.
+      fineMaterials:
+        name: Fine materials
+        desc: Find more Fine materials.
+      finds:
+        name: Finds
+        desc: Find more chests, gems, bird nests and collectibles.
+      betterQuality:
+        name: Better quality
+        desc: Craft higher quality items.
+      saveMaterials:
+        name: Save materials
+        desc: Use up fewer materials.
+    metrics:
+      stepsPerAction: Steps per action
+      workEfficiency: Work efficiency
+      doubleAction: Double action
+      doubleRewards: Double rewards
+      xpPerStep: XP per step
+      fineChance: Fine chance
+      findsPerThousandSteps: Finds per 1,000 steps
+      expectedQuality: Average quality
+      noMaterialsConsumed: No materials used
   character:
     info:
       skillBreakdown: Here is the total breakdown of all of the skills your character has leveled up throughout your journey. Tap on any of the skills to see more detailed information about them and what they unlock.
@@ -1802,6 +1876,8 @@ maps:
       "activityInformationOpen": Show more activity information
       "showConnectionIndicator": Show connection quality indicator
       "toggleAgilityXp": Disable Agility XP gain from Travelling
+      "autoGearVisitBank": Equip & start visits a bank first
+      "autoGearDepositInventory": Equip & start deposits your inventory
     enumSettings:
       "language": Language
       "leaderboardFilter": Show
@@ -1813,6 +1889,8 @@ maps:
       "jobProtectKeepLevel": Keep a reserve
       "jobProtectKeepCount": Reserved count
       "jobQualityChoice": When several qualities fit
+      "autoGearActivityGoal": Equip & start goal for activities
+      "autoGearRecipeGoal": Equip & start goal for recipes
     custom:
       "dataSource": Step data source
     stepCountNotifications:
