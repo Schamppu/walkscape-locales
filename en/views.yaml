@@ -109,7 +109,8 @@ singulars:
       cantTravelThere: "Can't travel there from here"
       cantStartActivity: "Cannot start activity"
       requirementsNotMet: "Requirements not met"
-      requirementsNotMetWarning: "You don't meet all of this activity's requirements, so it won't start until you do."
+      requirementsNotMetTravel: "You'll travel there, but the activity won't start until you meet its requirements."
+      requirementsNotMetQueue: "It goes into your queue, but won't start until you meet its requirements."
       inputsNotMet: "Input requirements not met"
       noActivitiesInLocation: 'There are no activities in <object id="{location}"/>.'
       locationIsUnknown: "Location is unknown. Once you have explored this location, you will be able to see activities here."
@@ -224,6 +225,8 @@ singulars:
       equipAndStart: Equip & start
       headerAt: Equip & start at <object id="{location}"/>
       goal: Goal
+      focus: Focus
+      additionalOptions: Additional options
       bank: Bank
       changes: What changes
       summary: Summary
@@ -235,7 +238,7 @@ singulars:
       retry: Try again
       visitBank: Visit a bank first
       bankRequired: Some of the items you need are in the bank.
-      bankRoute: 'Nearest bank: <object id="{location}"/>, <c>+{steps}</c> steps'
+      bankRoute: 'Nearest bank: <object id="{location}"/> <steps n="{steps}" sign="+"/>'
       bankOnTheWay: 'Nearest bank: <object id="{location}"/>, on your way'
       atBank: You're at a bank, so items come straight from it.
       noBank: No bank you can reach from here.
@@ -252,6 +255,49 @@ singulars:
       noStatsHere: Gives nothing here.
       craftStack: +1 stack
       emptySlot: Empty
+    help:
+      focus: What your gear is picked for. Balanced suits most activities, and the others push one thing as far as your gear allows.
+      additionalOptions: Extra rules for picking gear. Most players never need them.
+      visitBank: Stops at a bank on the way to take out the gear and items the plan needs.
+      depositInventory: Leaves your bag's items at the bank to make room. What the activity uses, locked items, and gear and tools stay with you.
+      depositGear: Gear and tools go to the bank too, including what you take off. Any the activity's requirements could use stay with you.
+      summary: How the new gear changes the activity. Its stats, steps per action, XP per step, and the items that change.
+      goal: When the activity ends, and a consumable to use for it.
+      plan: Every step Equip & Start queues, in order, with the steps each takes. Tap one for details.
+      craftAmount: How many to craft. Materials your bag lacks are taken out of the bank.
+    goal:
+      ends:
+        bagFull: Until your bag is full
+        actions: Complete actions
+        steps: Spend steps
+        consumables: Until consumables run out
+      short:
+        bagFull: Until full
+        actions: Actions
+        steps: Steps
+        consumables: Until used up
+      consumable:
+        none: No consumable
+        title: Consumable
+        auto: Best for your focus
+        autoDesc: Picked for your focus, as many as the run takes
+        autoNone: None of yours helps here
+        amount: How many
+      actionsAbout: "~{actions} actions"
+      fillsFirst: "Your bag fills after about {actions} actions. The activity keeps going, as Always stop when inventory is full is off."
+      fullFirst: "Your bag fills after about {actions} actions, which ends the activity first."
+    niches:
+      keepBagSpace:
+        name: Keep bag space
+        desc: Never a smaller bag than now, and a bigger one when nothing else tells gear apart.
+      fewerSwaps:
+        name: Fewer swaps
+        desc: Keeps what you wear unless a change helps by more than 5%.
+      pickConsumable:
+        name: Pick a consumable
+        desc: Uses the consumable that helps your focus most, as many as the run takes. Tap the row under it to choose one yourself.
+      unmet:
+        keepBagSpace: No gear you have keeps your bag this big here, so this plan doesn't.
     plan:
       title: Plan
       route: Route
@@ -264,6 +310,7 @@ singulars:
       routeBank: The bank
       routeEnd: Where it's done
       visit: Bank visit
+      visitRow: Visit a bank
       bankAt: Bank at <object id="{location}"/>
       intoBank: Into the bank
       outOfBank: Out of the bank
@@ -271,10 +318,15 @@ singulars:
       bagAfter: Your bag after
       estimate: Estimate
       stepsRange: "{low} to {high}, as double actions fall"
+      stepsAverage: steps on average
+      luck: From a lucky run to an unlucky one, as double actions fall
+      stops: Stops on the way
       endless: Nothing this drops fills your bag, so it runs until you stop it.
       ends:
         crafts: Crafts
         actions: Actions
+        steps: Actions in those steps
+        consumables: Actions until it runs out
         bagFull: Actions until your bag is full
       xpAtLeast: "{skill} XP, at least"
       level: "{skill} level"
@@ -1986,6 +2038,9 @@ maps:
       "autoGearVisitBank": Equip & start visits a bank first
       "autoGearDepositInventory": Equip & start deposits your inventory
       "autoGearDepositGear": Equip & start deposits gear and tools too
+      "autoGearKeepBagSpace": Equip & start keeps your bag's space
+      "autoGearFewerSwaps": Equip & start swaps less
+      "autoGearPickConsumable": Equip & start picks a consumable
     enumSettings:
       "language": Language
       "leaderboardFilter": Show
