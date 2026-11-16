@@ -123,6 +123,10 @@ maps:
       'leaderboardType': Liderlik Tablosu
       'stepDataTime': Zaman dilimi
       "jobProtectQualityLevel": Yüksek kalitelileri koru
+      "jobProtectQualityFrom": Bundan itibaren koru
+      "jobProtectKeepLevel": Birazını kenara ayır
+      "jobProtectKeepCount": Kenara ayırma adedi
+      "jobQualityChoice": Birden fazla kalite uygunsa
     custom:
       'dataSource': Adım verisi kaynağı
     notificationImportance:
@@ -157,7 +161,7 @@ maps:
       "ten": '10'
     jobQualityChoice:
       "alwaysAsk": Daima sor
-      "lowest": En düşüğünü kullan
+      "lowest": En düşük kaliteliyi kullan
   character:
     stepsTime:
       'hourly': Saatlik adım
@@ -1249,7 +1253,7 @@ singulars:
       toAccept: kabul edilen
       toHandIn: teslim edilen
       toAbandon: bırakılan
-      filterHere: Buradakiler
+      filterHere: Burası
       filterCanFulfil: Eşyalar Mevcut Olan
       acceptedJobsHere: Buraya teslim edilecek <c>{count}</c> adet
       staged: Planlı
@@ -1301,6 +1305,8 @@ singulars:
       rewardNameXp: '{name} tecrübesi'
       rewardNameCoins: Akçe
       handInAllTitle: '{count} adet iş için teslimat yapılsın mı?'
+      withdrawOnConfirm: Onaylanınca çekilecek
+      handInWithin: 'Şuraya teslim et:'
     dialogs:
       abandonJob:
         title: İşten vazgeç
@@ -1347,6 +1353,8 @@ singulars:
       reasonFavourited: Favori
       reasonQuality: '{quality} veya daha iyisi'
       skipProtected: Korunanları atla
+      blockedTitle: 'Şuraya teslim edilemez:'
+      reasonKeep: Elinde {count} adetten daha az kalıyor
     settings:
       title: İş panosu ayarları
       chooseTitle: Eşya seçimi
@@ -1368,6 +1376,11 @@ singulars:
       dismissedInfo: Gizlenen işler panolarda görünmezler. Her haftanın yeni 
         işleri tekrar görünürler.
       showDismissed: Gizlenen ({count}) işi tekrar göster
+      protectTitle: Eşyaları teslim ederken koru
+      qualityChoiceInfo: Bir iş için birden fazla kalitedeki eşya teslim 
+        edilebiliyor veya bankadan çekilebiliyorsa. "Her zaman" senin seçmene 
+        izin verir, "En düşük kaliteliyi kullan" uygun olan en düşük kaliteliyi 
+        seçer.
     help:
       title: İşler nasıl yürür
       intro: İş panolarında her hafta yeni işler yayınlanır. Bir işi kabul et, 
@@ -1406,6 +1419,32 @@ singulars:
       levelsTitle: Diyar seviyeleri
       confirmTitle: Onayla
       example: Örnek
+      cardRewards: İşin mükafatı. Bütün ödülleri ve gerekenlerin detaylarını 
+        görmek için işin üzerine dokun.
+      cardBank: Bankanda kaç adet bulunduğu. Gereken kaliteyi ve ikame 
+        seçenekleri görmek için üzerine dokun.
+      locked: Bu iş korunan eşyaların teslimini gerektiriyor. Kilitli bir eşya 
+        veya iş panosu ayarların nedeniyle olabilir. Nedenini görmek için dokun.
+      dismissedText: İstemediğin bir işi gizleyerek panolardan kaldırabilirsin. 
+        Gizlediğin işleri iş panosu ayarlarından geri getirebilirsin.
+      cardLabel: İşin gerektirdiği eşyanın kalitesi veya iyi bir eşya 
+        gerekiyorsa <itemTag tag="fine"/> etiketi. İş için kabul edilen daha 
+        yüksek kaliteli eşyalar haricinde diğer eşyalar kabul edilmez.
+      qualitiesText: Ürün teslimatı gerektiren işler istenilen ürünün daha 
+        yüksek kalitelisini de kabul edebilir. Her iş için tek bir kalite 
+        düzeyinde teslimat yapabilir, farklı olanları birbirine karıştıramazsın.
+        Yeterli sayıda sahip olduğun seçenekler işaretli olurlar.
+      fineText: |-
+        <itemTag tag="fine"/> eşyalar yalnızca iyi eşya isteyen işler için teslim edilebilir.
+        <bp/>Bu eşyaları kendin toplayabilirsin. Varsayılan bulma ihtimal %1'dir.
+        <bp/>Teçhizat ve aletlerindeki <stat s="fineMaterialFind"/> niteliği bu ihtimali arttırır.
+      handInAllText: Bu panoya teslim etmek için hazır olan her şeyi tek seferde
+        teslim eder. Teslim ettiğin eşyalarla ilgili bir pencere açılır.
+      levelsText: Bazı işler, iş panosu diyarında daha yüksek bir mertebede 
+        bulunmayı gerektirir. Ödülleri de daha fazla olan bu işler her panonun 
+        en alt kısmında bulunur ve diyar seviyesine göre sıralanır. Henüz 
+        ziyaret etmemiş olduğun panolar sen orayı ziyaret edene kadar kilitli 
+        kalır.
   activity:
     phrases:
       stopWhenOverEncumbered: Envanter dolup taşınca dur
@@ -2198,3 +2237,5 @@ singulars:
       title: Ünvan
       currentActivity: Mevcut faaliyet
       idle: Adımlar kaydediliyor... (boşta)
+  help:
+    relatedTitle: Ayrıca bak
