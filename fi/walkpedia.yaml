@@ -87,6 +87,13 @@ singulars:
         description: Avainsanoja käytetään erilaisista esineistä, sijainneista, 
           palveluista ja aktiviteeteista. Voit tarkistaa täältä helposti 
           esimerkiksi mitkä esineet ovat valonlähteitä.
+    petList:
+      info:
+        title: Lemmikit
+        description: Lemmikit kuoriutuvat löytämistäsi munista, kun kävelet. 
+          Kävele niiden kanssa, jotta näet niiden kasvavan, ja kutsu ne avuksesi
+          saadaksesi hyötyä niiden kyvyistä ja ominaisuuksista.
+        tabText: Lemmikkien lista
   contentPages:
     item:
       info:
@@ -277,6 +284,7 @@ singulars:
       stepsToLevelUp: 'Askelta tason nostamiseen:'
       cosmeticsAvailable: Kosmeettisia löytämättä
       petEggsAvailable: Uusia lemmikkejä jäljellä
+      rewardRolls: Palkkioheitot
     item:
       inInventory: Repussa
       inBank: Pankissa
@@ -299,6 +307,7 @@ singulars:
       fromSpecial: Erityislöydöistä
       receivedInTrades: Vastaanotettu vaihtokaupasta
       givenInTrades: Annettu vaihtokaupassa
+      found: Löydetty
     location:
       realm: Valtakunta
       activities: Aktiviteetit
@@ -310,6 +319,37 @@ singulars:
       requiresThisKeyword: Missä tätä avainsanaa tarvitaan
     loading:
       loading: Ladataan WalkPedian tietoja...
+    pet:
+      eggsFound: Munia löydetty
+      timesHatched: Haudottu
+      owned: Omistuksessa
+      highestLevel: Korkein taso
+      levels: Tasot
+      xpRequirements: Kokemusvaatimukset
+      howToGet: Kuinka sen saa
+      yourPets: Lemmikkisi
+      looks: Ulkonäköerot
+      noNormalOwned: Et omista tämän tyyppistä tavallista lemmikkiä.
+      noRareOwned: Et omista tämän tyyppistä harvinaista lemmikkiä.
+      noSources: Ei tunnettua lähdettä
+      hatchesInto: Kuoriutuessaan
+    recipe:
+      timesCrafted: Valmistuskerrat
+      itemsMade: Esineitä tehty
+      stepsPerCraft: Askelia valmistusta kohti
+      xpPerCraft: Kokemuspisteet valmistusta kohti
+      materials: Materiaalit
+      result: Tulos
+      qualitiesMade: Laatuja valmistettu
+      craftingRequirements: Valmistusvaatimukset
+      requirementsToCraft: 'Seuraavat asiat vaaditaan, jotta voidaan valmistaa <c>{name}</c>:'
+      whereToCraft: Mahdollinen valmistuspaikka
+      craftAnywhere: Ei vaadi palveluja, joten voidaan valmistaa missä vain.
+      or: tai
+      usedIn: Käytetään reseptissä
+    service:
+      requirementsToUse: 'Seuraavat vaatimukset tulee täyttää, jotta <c>{name}</c>
+        on käytettävissä:'
 maps:
   phrases:
     item:
