@@ -116,11 +116,12 @@ maps:
       'leaderboardFilter': Näytä
       'leaderboardType': Tulostaulukot
       'stepDataTime': Ajanjakso
-      "jobProtectQualityLevel": Suojaa korkealaatuisia esineitä
+      "jobProtectQualityLevel": Suojaa korkealaatuisia ja harvinaisia esineitä
       "jobProtectQualityFrom": Suojaa lähtien tasosta
       "jobProtectKeepLevel": Säilytä varanto
       "jobProtectKeepCount": Varannon koko
       "jobQualityChoice": Kun useat laatutasot sopivat
+      "achievementFilter": Näytä saavutukset
     custom:
       'dataSource': Askelten lähde
     leaderboardType:
@@ -143,7 +144,7 @@ maps:
     protectionLevel:
       "off": Älä suojaa
       "warn": Kysy ensin
-      "never": Älä käytä
+      "never": Aina
     keepCount:
       "one": '1'
       "two": '2'
@@ -392,6 +393,25 @@ singulars:
         i=0>{count}</c> <c i=1>/ {maxCount}</c>
       collectibles: Keräilyesineet
       loreItemsCount: Tarinaesineet
+      filterAll: Kaikki
+      filterReady: Valmis
+      filterInProgress: Edistyy
+      filterCompleted: Valmistunut
+      unlocked: Avattu
+      emptyReady: Mitään ei ole avaamatta juuri nyt. Kun saat saavutuksen 
+        vaatimukset valmiiksi, se ilmestyy tänne.
+      emptyInProgress: Kaikki saavutukset täällä ovat valmiita!
+      emptyCompleted: Ei valmistuneita saavutuksia. Avaa yksi ja ota vastaan sen
+        palkinnot saadaksesi sen näkymään täällä.
+      skipToEnd: Hyppää loppuun
+      tapForNext: Napauta nähdäksesi seuraavan kortin
+      claimAllSummary: '{count} saavutusta avattu'
+      claimAllRewards: '{count} palkintoa vastaanotettu'
+      achievementPointsLabel: Saavutuspisteet
+      achievementFinished: Saavutus avattu
+      achievementProgress: Saavutuksen edistyminen
+      claimInAchievements: Vastaanota Saavutuksissa
+      moreRequirements: +{count} vaatimusta lisää
   crafting:
     phrases:
       materials: Materiaalit
@@ -689,6 +709,9 @@ singulars:
       rewardNameXp: '{name}kokemus'
       rewardNameCoins: Kolikot
       handInAllTitle: Toimitetaanko {count} työtehtävän esineet?
+      ready: Valmis
+      dismiss: Ohita
+      withdrawAllTitle: Nosta {count} työtehtävää varten?
     dialogs:
       abandonJob:
         title: Hylkää työtehtävä
@@ -808,6 +831,10 @@ singulars:
       dismissedText: Ohita työtehtävä, jota et halua, ja se piilotetaan 
         työtehtävätauluilta. Voit palauttaa tehtävän näkyväksi 
         työtehtävätaulujen asetuksista.
+      withdrawSomeTitle: Nosta osa
+      withdrawSome: Näkyy Nosta-painikkeen sijaan, kun sinulla ei ole kaikkia 
+        työtehtävän tarvitsemia esineitä. Ottaa pankista ne esineet, mitä 
+        sinulla on, jotta voit kantaa ne työtehtävätaulun luo.
     protection:
       warnTitle: Toimitetaanko suojamerkittyjä esineitä?
       handInAnyway: Toimita niistä huolimatta
@@ -824,20 +851,24 @@ singulars:
       reasonQuality: Laatutaso {quality} tai parempi
       reasonKeep: Sinulle jäisi vähemmän kuin {count} esinettä
       skipProtected: Ohita suojatut
+      warnWithdrawTitle: Nosta suojattuja esineitä?
+      withdrawAnyway: Nosta silti
+      blockedShort: Suojattu
     settings:
       title: Työtauluasetukset
-      protectTitle: Suojaa esineet, kun niitä toimitetaan
+      protectTitle: Suojaa esineet, kun niitä toimitetaan tai nostetaan
       chooseTitle: Esineiden valinta
-      qualityLevelInfo: Suojaa valmistettuja korkean laadun esineitä 
-        työtehtäviin toimittamiselta. "Kysy ensin" kysyy ennen kuin esine 
-        toimitetaan, "Älä käytä" varmistaa, ettei niitä toimiteta.
+      qualityLevelInfo: Suojaa valmistettuja korkean laadun esineitä ja muita 
+        korkean harvinaisuuden esineitä työtehtäviin toimittamiselta tai 
+        pankista työtehtäviä varten nostamiselta. "Kysy ensin" kysyy ennen kuin 
+        esine toimitetaan, "Aina" varmistaa, ettei niitä toimiteta.
       qualityFromInfo: Valmistetut esineet, jotka ovat valittua laatutasoa tai 
         sitä parempia, suojataan työtehtäviin tarjoamiselta ylläolevan asetuksen
         mukaisesti. Tämä vaikuttaa myös töihin, jotka vaativat tätä tiettyä 
         laatua.
-      keepLevelInfo: Pitää yllä varantoa esineitä, joita toimitat työtehtäviin. 
-        "Kysy ensin" kysyy vahvistusta ennen rajan alittamista; "Älä käytä" 
-        estää toimituksen joka ylittäisi varannon alarajan.
+      keepLevelInfo: Pitää yllä varantoa esineitä, joita toimitat tai nostat 
+        työtehtäviin. "Kysy ensin" kysyy vahvistusta ennen rajan alittamista; 
+        "Aina" estää toimituksen tai noston joka ylittäisi varannon alarajan.
       keepCountInfo: Montako esinettä pidetään varalla, mukaanlukien repun ja 
         pankin sisältämät esineet yhteensä. Jokainen laatuluokka ja oivat 
         esineet lasketaan erikseen.
@@ -932,6 +963,8 @@ singulars:
         sinulla ei vielä ole
       cosmetics: <bp /><icon i="Wardrobe action"/> <c>{count} kosmeettisia</c> 
         saaliita löydettävissä
+      rarePetEggs: <bp /><icon i="Pet egg"/> <c>{count} x harvinainen 
+        lemmikkimuna</c> joita sinulla ei vielä ole
     options:
       completeUntilActions: Toista tietty määrä kertoja
       numberOfActions: Toimintojen määrä
@@ -1090,6 +1123,11 @@ singulars:
       cannotUseMore: Et voi käyttää tätä kykyä. Kyvyn vaikutus saattaa olla 
         sinulla jo aktiivisena, ja kertautuisi kestämään liian pitkään.
       lastsFor: 'Vaikutuksen kesto:'
+      holdToUseAll: Pidä pohjassa käyttääksesi kaikki
+      useAll: Käytä kaikki
+      useAllInfo: Käyttää kaikki repussasi olevat <object 
+        id="{keyword}"/>-esineet.
+      useAllCompleted: Tunnet olevasi taitavampi.
   cooldowns:
     phrases:
       followingMustBeTrueToTick: 'Seuraavien täytyy olla totta jotta palautumisaika
@@ -1158,6 +1196,8 @@ singulars:
       bodyTypeB: B
       characterName: Hahmon nimi
       bodyType: Kehon tyyppi
+      startsOutIn: Matkasi aloituspaikka on <c>{location}</c>.
+      typeAName: Ole hyvä ja anna hahmollesi nimi
     info:
       rememberSwipe: Muista, että voit vaihtaa valittuja vaihtoehtoja milloin 
         tahansa hahmon luomisen aikana pyyhkäisemällä takaisin.
@@ -2301,3 +2341,38 @@ singulars:
       cultLeader: Kultinjohtaja
   help:
     relatedTitle: Katso myös
+  pfpEditor:
+    buttons:
+      undo: Peru
+      reset: Palauta aiempaan
+      browseAll: Selaa kaikkia
+    help:
+      barber: Muuta hiustyyliäsi, kasvojasi, värejäsi ja kasvomaalausta. 
+        Jokaista tyyliä voi kokeilla täällä, ja uusi tyyli maksaa {price} 
+        kolikkoa, kun ostat sen käyttöösi.
+      wardrobe: Pue päällesi omistamiasi kosmeettisia esineitä ilmaiseksi. 
+        Lukituista esineistä näytetään, mistä ne voi löytää.
+      browse: Napauta kosmeettista elementtiä sovittaaksesi sitä. Lukituista 
+        näet, mistä niitä voi löytää.
+    sources:
+      shop: Kauppa
+      achievement: Saavutus
+      rewardTrack: Palkintopalkki
+    phrases:
+      noneOwned: Et omista mitään näistä vielä.
+      browseToFind: Selaa nähdäksesi, mistä ne voi löytää.
+      switchedOff: Laita asetus päälle yltä laittaaksesi sen yllesi tai 
+        vaihtaaksesi sitä.
+      newLook: Uusi ulkonäkö
+      unsavedLook: Uutta ulkoasuasi ei ole vielä tallennettu.
+    newLookLines:
+      fashion: '{name} on muodin huipulla!'
+      better: '{name} ei ole koskaan näyttänyt päheämmältä!'
+      heads: Missä {name} kävelee ohi, päät kääntyvät katsomaan.
+      sharp: Näytätpä kolealta, {name}!
+      runway: '{name} on valmis muotinäytökseen.'
+      mirror: Peilisikin on vaikuttunut, {name}.
+      trend: '{name} aloitti juuri uuden trendin.'
+      realm: '{name} on puheenaiheena joka maailman kolkassa.'
+      whoIsThat: Kuka tuo on? Ai, sehän on {name}!
+      compliments: '{name} kuulee kehuja kaiken päivää.'
