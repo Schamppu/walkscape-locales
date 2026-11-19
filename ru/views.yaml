@@ -243,7 +243,7 @@ singulars:
       youAreAtLocation: Вы находитесь у этой доски заданий.
       travelToJobBoard: Отправиться в <object id="{obj}"/>
       cannotAcceptMore: Вы не можете принять больше заданий.
-      complete: Завершить
+      complete: Завершено
       availableJobs: Доступные задания
       cannotWithdraw: Ваше текущее местоположение <object id="{obj}"/> не имеет 
         банка. Получение предметов для заданий невозможно.
@@ -271,6 +271,19 @@ singulars:
       notVisited: Ещё не посещено
       noAcceptedJobs: У вас нет активных заданий.
       filterAccepted: В процессе
+      rewardLineReputation: '{amount} репутации {name}'
+      clearStaged: Очистить
+      confirmBatch: Подтвердить
+      confirmAndClose: Подтвердить и закрыть
+      confirmAndContinue: Подтвердить и продолжить
+      filterActionable: Доступны здесь
+      filterHere: Здесь
+      rewardsPrefix: 'Награды:'
+      jobsThisWeek: <c>{count}</c> заданий на этой неделе
+      tabDone: Выполнено
+      tabAvailable: Доступно
+      allBoards: Все доски заданий
+      allJobsOpen: Все задания на этой доске вам открыты.
     dialogs:
       abandonJob:
         title: Бросить работу
@@ -281,6 +294,21 @@ singulars:
         "factionReputation": Репутация
         "coins": Монеты
         "skillExperience": Опыт
+    rejections:
+      alreadyTaken: '{job} выполнено на этой неделе.'
+    help:
+      fineTitle: Качественные материалы
+      buttonsTitle: Кнопки
+      acceptTitle: Принять
+      withdrawTitle: Снять
+      abandonTitle: Отменить
+      levelsTitle: Уровни фракции
+      confirmTitle: Подтвердить
+      example: Пример
+      qualitiesTitle: Лучшее качество
+      title: Как задания работают
+    settings:
+      title: Настройки для досок заданий
   character:
     phrases:
       skills: Навыки
@@ -1507,6 +1535,12 @@ singulars:
       given: Отдано
       trading: Торговля
       itemCount: '{count}×'
+      periodDay: День
+      periodWeek: Неделя
+      periodMonth: Месяц
+      sinceDay: за сутки
+      sinceWeek: за неделю
+      sinceMonth: за месяц
   ironfoot:
     phrases:
       relinquishWarning: Ваш персонаж в настоящее время является 
@@ -1521,6 +1555,7 @@ singulars:
   characterCard:
     phrases:
       currentActivity: Текущая активность
+      title: Титул
   titles:
     info:
       secret: Играйте дальше — откроете титул.
@@ -1542,8 +1577,14 @@ singulars:
       sortSource: Источник
       sourceLabel: Источник
       statusLocked: Не получен
+      pageTitle: Титулы
+      buttonCount: Титулы <c i=0>{owned}</c> <c i=1>/ {total}</c>
+      apply: Применить
+      requirements: Требования
+      factionTier: '{tier} ур.для <c>{faction}</c>'
+      rewardFromAchievement: Награда за {achievement}
     sourceLines:
-      achievement: Награда за <c>{name}</c> достижение.
+      achievement: Награда за достижение <c>{name}</c> .
       factionReputation: Награда за {tier} ур. во фракции <c>{faction}</c>.
       defaultUnlock: Выдается каждому новому персонажу.
       achievementPoints: Награда за очки достижений.
@@ -1554,6 +1595,8 @@ singulars:
       achievementPoints: Очки достижений
       achievement: Достижения
       requirements: Требования
+  help:
+    relatedTitle: См. также
 plurals:
   inventory:
     info:
