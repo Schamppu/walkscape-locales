@@ -1,0 +1,117 @@
+# The guides of WalkPedia: how the game works. One group per guide, by its id
+# in assets/wiki/guides.json. Every guide has a title and a summary; the rest
+# are its blocks' own texts.
+singulars:
+  gettingStarted:
+    title: Getting started
+    summary: Your first steps in the game
+    intro: "WalkScape is played by walking. You pick an activity for your character, and the steps you take in real life complete its actions."
+    stepsTitle: First steps
+    step1: "On the location page, visit <hl>Helpful Herbert's Hut</hl> and ask for help. He has a starter gift for you."
+    step2: "Pick a gathering activity under the location's picture, and start walking."
+    step3: "Craft a basic tool from what you gathered, and equip it. Basic tools need no service."
+    step4: "Tap the minimap to open the world map, and travel to the next place."
+    tip: "Steps you take with no activity chosen are kept as saved steps. They are never lost."
+    more: "Read on: <action id=\"guide/activities\">Activities and actions</action>, <action id=\"guide/steps\">How steps are counted</action> and <action id=\"guide/skills\">Skills and levels</action>."
+  steps:
+    title: How steps are counted
+    summary: Where your steps come from, and saved steps
+    intro: "The game reads your steps from your phone or from a health app, and turns them into actions when you open it."
+    sourcesTitle: Step sources
+    sources: "<li><hl>Phone</hl> The default. Steps update live, and you must carry the phone.</li><li><hl>Apple Watch</hl> Syncs to Apple Health every now and then, so steps may arrive late.</li><li><hl>Android watch</hl> Needs an app that syncs its steps to Health Connect.</li><li><hl>Samsung Health</hl> Reads the steps Samsung Health has.</li>"
+    change: "You can change the source at any time in the game's settings."
+    savedTitle: Saved steps
+    saved: "<li>Steps taken with no activity go to your saved steps.</li><li>While you have some, they pay half of each action, so your steps count double until they run out.</li><li>Changing or stopping an activity gives the steps of its unfinished action back as saved steps.</li><li>You can keep 10,000 of them up to character level 10, then 1,000 for each level, and 100,000 at level 99.</li>"
+    away: "Steps you took while the game was closed load when you open it, and a summary shows what they did."
+  activities:
+    title: Activities and actions
+    summary: What your character does while you walk
+    intro: "An activity is what your character does while you walk. Each action of it takes a number of steps, gives experience and rolls for its drops."
+    points: "<li>Gathering activities repeat until you stop them. Crafting and travelling end when their work is done.</li><li><stat s=\"workEfficiency\"/> makes an action take fewer steps, down to the activity's least.</li><li>Each skill level above what an activity asks for adds 1.25% work efficiency, for up to 20 levels.</li><li>A full inventory slows every activity except travelling.</li>"
+    queueTitle: What to do next
+    queue: "You can queue what your character does next. A queued action can switch your gear set, put your items in the bank or summon a pet as it starts."
+    needs: "An activity may ask for a skill level, a tool or an item of some kind. Its page lists what it needs and what it drops."
+  skills:
+    title: Skills and levels
+    summary: Levelling, and what levels open
+    intro: "You level a skill by doing its activities and recipes. Levels open new activities, recipes and gear. The highest level is 99."
+    character: "Your character level rises with all the experience you earn. It opens more tool slots, and lets you keep more saved steps."
+    allTitle: Every skill
+  gear:
+    title: Gear, tools and attributes
+    summary: What you wear, and what it does
+    intro: "Gear and tools give attributes, such as <stat s=\"workEfficiency\"/> or <stat s=\"chestFind\"/>. An item only works while it is equipped."
+    points: "<li>You start with three tool slots, and get one more at character levels 20, 50 and 80.</li><li>Many attributes work for one skill only, or only in some places. The item's page says when.</li><li>A percentage multiplies the base chance. 10% more <stat s=\"fineMaterialFind\"/> turns 1 in 100 into 1.1 in 100.</li><li>A gear set switches everything you wear at once. Equipping one at a bank takes its items out for you.</li>"
+    othersTitle: Where else attributes come from
+    others: "Collectibles, services, pets, consumables, skill levels and abilities give attributes too."
+  qualities:
+    title: Item qualities and Fine
+    summary: Better crafts, and Fine materials
+    intro: "Crafted items come in six qualities: Normal, Good, Great, Excellent, Perfect and Eternal. A better quality has better attributes."
+    points: "<li>Each skill level above what a recipe asks for raises your chances of a better quality.</li><li><stat s=\"qualityOutcome\"/> raises them further.</li><li>Fine materials raise them too.</li>"
+    fineTitle: Fine
+    fine: "<itemTag tag=\"fine\"/> materials and consumables are a better kind of the same item. Gathering finds one in 100 by default, and <stat s=\"fineMaterialFind\"/> improves the odds."
+    finePoints: "<li>A recipe made from Fine materials only gives a Fine result.</li><li>Normal and Fine materials can't be mixed in one craft.</li><li><stat s=\"fineMaterialOutcome\"/> gives each one made from normal materials a chance to come out Fine.</li>"
+    eggs: "Pet eggs have a rare kind too: about one egg in ten."
+  crafting:
+    title: Crafting and services
+    summary: Recipes, and where they are made
+    intro: "A recipe turns materials into an item. Most recipes need a service, such as a forge or a kitchen, so you craft them where one stands."
+    points: "<li>A service is <serviceTier tier=\"basic\"/> or <serviceTier tier=\"advanced\"/>. The border of its icon on the world map shows which.</li><li>Basic tools need no service.</li><li>Crafting takes steps like any activity, and ends when the amount you chose is made.</li><li>Claiming a blueprint opens its recipes.</li>"
+    page: "A recipe's page lists its materials, what it makes and every place you have found that can craft it."
+  travelling:
+    title: Travelling
+    summary: Getting from place to place
+    intro: "You travel by walking. Pick a place on the world map, and your steps carry you along the route."
+    points: "<li>A longer route takes more steps.</li><li>Levels of <skill skill=\"agility\"/> make travelling quicker.</li><li>A full inventory does not slow travelling.</li><li>A place you have only heard of shows as rumoured on the map until you visit it.</li>"
+  locations:
+    title: Locations and buildings
+    summary: What a place can offer
+    intro: "Each location has its own activities, buildings and services. Swipe on the location page to see what it offers."
+    points: "<li><hl>Banks</hl> keep your items. A deposit box only takes them in.</li><li><hl>Shops</hl> buy and sell items.</li><li><hl>Job boards</hl> post weekly jobs for rewards and reputation.</li><li><hl>Services</hl>, such as forges, sawmills, kitchens and workshops, let you craft.</li><li><hl>Barbers and wardrobes</hl> change how your character looks.</li>"
+  bank:
+    title: Bank and inventory
+    summary: Carrying and storing items
+    intro: "Your inventory has 28 slots and travels with you. Your bank has no limit, but you reach it only where a bank stands."
+    points: "<li><stat s=\"inventorySpace\"/> adds slots.</li><li>A full inventory slows your actions, except travelling.</li><li>Long press deposit or withdraw to move up to 1,000 items at once.</li><li>A favourite item is not dropped or sold by accident. A locked item can't be sold, dropped or deposited, and is never handed in for a job.</li><li>Every bank has a mailbox.</li>"
+  pets:
+    title: Pets and eggs
+    summary: Hatching and growing pets
+    intro: "Pets hatch from eggs found while walking. Walk with a pet to see it grow, and summon one to gain its attributes and abilities."
+    points: "<li>One egg can hatch at a time, and one pet can be summoned at a time.</li><li>The steps of every action you finish go to the egg and to the summoned pet.</li><li>Once one has walked enough, you hatch or grow it yourself.</li><li>A pet grows from juvenile to adult, and gains attributes and abilities on the way.</li><li>About one egg in ten is a rare egg.</li><li>A claimed pet is bound to your character and can't be traded.</li>"
+  consumables:
+    title: Consumables and abilities
+    summary: Food, potions and special actions
+    intro: "Food and potions give attributes for a while. You can have one food and one potion in use while doing activities."
+    points: "<li>A consumable lasts for a number of steps or actions. Using more of them adds up.</li><li>It can pause when you change activity, and start again when you come back.</li>"
+    abilitiesTitle: Abilities
+    abilities: "Abilities are special actions with an instant benefit. After using one you wait for its cooldown."
+    abilityPoints: "<li>Gear, pets and some activities give abilities.</li><li>Abilities of the same kind share a cooldown and don't stack.</li>"
+  jobs:
+    title: How jobs work
+    summary: Job boards, hand-ins and rewards
+    step1: "Take a job from any board you've visited. You can have five at once."
+    weeks: "New jobs are posted every week. A job you took can still be handed in for four weeks after its week ends."
+  factions:
+    title: Factions and reputation
+    summary: Reputation, tiers and their rewards
+    intro: "Reputation is how well a faction knows you. Jobs and some rewards raise it."
+    points: "<li>Each tier of reputation gives rewards, and a title to wear.</li><li>Harder jobs ask for a higher tier with the board's faction, and pay more.</li><li>Past the last tier, some factions keep giving a reward every few points.</li>"
+  achievements:
+    title: Achievements and titles
+    summary: Points, rewards and titles
+    intro: "Finish an achievement and claim it to earn achievement points. At certain amounts of points you unlock rewards."
+    points: "<li>Easy, normal, hard and extreme achievements give 1, 3, 5 and 10 points.</li><li>Each collectible you own gives one point.</li><li>Points count once the achievement is claimed.</li><li>Some rewards follow your share of all points, and are lost when the game gains more points than you have earned. Checkpoint rewards stay.</li>"
+  trading:
+    title: Trading and mail
+    summary: Swapping items with other players
+    intro: "You trade with another player from your bank. Invite them from the Social page."
+    points: "<li>Both sides must accept. A change to the offer asks both to accept again.</li><li>You can have one trade open with each character.</li><li>What you get from a trade, and what comes back from one that was turned down, goes to your mailbox.</li><li>You claim mail where a mailbox stands. Every bank has one.</li>"
+  completion:
+    title: Completion in WalkPedia
+    summary: Goals, steps and what counts
+    intro: "WalkPedia counts what you have found and done. Every entry has goals, and each goal is reached in small steps."
+    stepsTitle: Steps of a goal
+    points: "<li>A skill has a step every ten levels.</li><li>An activity has a step for each of its drops, and for doing it 10, 100 and 1,000 times.</li><li>A crafted item has a step for each quality you make it at.</li><li>A faction has a step for each tier of reputation.</li>"
+    choiceTitle: Choosing what counts
+    choice: "<li>Open Completion on the front page to see every kind's share.</li><li>Turn a goal off there and it stops counting, on every page.</li><li>Pin an entry to keep it on the front page.</li>"

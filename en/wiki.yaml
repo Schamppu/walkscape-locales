@@ -10,6 +10,14 @@ singulars:
     recipe: Recipes
     service: Services
     keyword: Keywords
+    achievement: Achievements
+    faction: Factions
+    ability: Abilities
+    board: Job boards
+    shop: Shops
+    building: Buildings
+    character: Characters
+    guide: Guides
   blocks:
     collected: Collected
     whereToGet: Where to get it
@@ -32,6 +40,15 @@ singulars:
     materials: Materials
     craftedAt: Crafted at
     locations: Where to find it
+    rewards: Rewards
+    earnedFrom: Earned from
+    reputation: Reputation
+    comesFrom: Comes from
+    whereItIs: Where it is
+    sells: Sells
+    owner: Run by
+    buildings: Buildings
+    guides: Related guides
   facts:
     value: Value
     stepsPerAction: Steps per action
@@ -71,6 +88,21 @@ singulars:
     itemsMade: Items made
     fineMade: Fine ones made
     placesNotFound: Places not found yet
+    difficulty: Difficulty
+    points: Achievement points
+    progressPercent: Progress (%)
+    reputation: Reputation
+    charges: Charges
+    jobsDone: Jobs handed in
+  factionTypes:
+    realm: Realms
+    guild: Guilds
+    faction: Factions
+  guideGroups:
+    basics: The basics
+    items: Items and crafting
+    world: The world
+    wiki: WalkPedia
   rates:
     ofActions: "{percent}% of actions"
     ofOpened: "{percent}% of chests opened"
@@ -129,6 +161,25 @@ singulars:
   sources:
     gained: Got {count} here
     notYet: None from here yet
+  # What a goal's next step asks for, by the goal's id. {step} is the step
+  # itself: a number, a quality, a tier.
+  goalNext:
+    found: Find it
+    crafted: Craft it once
+    earned: Finish it and claim it
+    fine: Get one as Fine
+    rareEgg: Find its rare egg
+    everyQuality: Craft it at {step} quality
+    level99: Reach level {step}
+    everyDrop: Find a drop you have not had from it
+    timesDone: Do it {step} times
+    everyActivity: Do an activity here for the first time
+    maxLevel: Grow one to level {step}
+    bothForms: See its rare form
+    timesCrafted: Craft it {step} times
+    everyLocation: Find another place that offers it
+    tiers: Reach {step}
+    jobsDone: Hand in {step} jobs here
   # The wiki views' own words: one per field of WikiStrings, by its name.
   words:
     wiki: "WalkPedia"
@@ -228,10 +279,6 @@ singulars:
     showAll: "Show all"
     clearSearch: "Clear search"
     onlyFoundSearched: "Only what you have found is searched."
-    nextSteps: "To complete it"
-    fineHint: "Get one as Fine"
-    qualityHint: "Craft it at {quality} quality"
-    rareEggHint: "Find its rare egg"
     collection: "Collected"
     rumours: "Rumours"
     compared: "Compared"
@@ -285,5 +332,13 @@ singulars:
     goalBothForms: "Seen in both forms"
     goalEveryLook: "Every look owned"
     goalMaxLevel: "Grown to its last level"
-    goalLevel99: "Level 99"
+    goalLevel99: "Levels reached"
     goalEveryObject: "Everything with it found"
+    goalTimesDone: "Times done"
+    goalTimesCrafted: "Times crafted"
+    goalEarned: "Earned"
+    goalTiers: "Reputation"
+    goalJobsDone: "Jobs handed in"
+    more: "More to find"
+    guides: "Guides"
+    guidesCount: "{count} guides"
