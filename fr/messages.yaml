@@ -2,13 +2,13 @@ plurals:
   dialogs:
     deleteClass:
       text:
-        one: La suppression d'objets n'est pas réversible. L'objet est référencé dans
-          d'autres objets {n} fois.
-        other: La suppression d'objets n'est pas réversible. L'objet est référencé
+        one: La suppression d'objets n'est pas réversible. L'objet est référencé
           dans d'autres objets {n} fois.
+        other: La suppression d'objets n'est pas réversible. L'objet est 
+          référencé dans d'autres objets {n} fois.
         many: '-'
-        two: Supprimer des objets est irréversible. Cet objet est référencé dans d'autres
-          objets {} fois.
+        two: Supprimer des objets est irréversible. Cet objet est référencé dans
+          d'autres objets {} fois.
         few: '-'
         zero: '-'
       title: Êtes-vous sûr de vouloir supprimer ?
@@ -18,30 +18,33 @@ singulars:
       text: Vos modifications ont été sauvegardées avec succès.
       title: Sauvegarde réussie !
     saveUnsuccesfullLootTables:
-      text: La table de butin contient une ou plusieurs lignes qui ne sont pas associées
-        à un objet.
+      text: La table de butin contient une ou plusieurs lignes qui ne sont pas 
+        associées à un objet.
       title: Sauvegarde non réussie.
     workInProgress:
-      text: Cette fonctionnalité est encore en développement et bon nombre d'éléments
-        <hl>ne sont pas encore disponibles</hl>. Cependant, vous pouvez déjà l'essayer
-        et revenir plus tard lorsqu'elle sera entièrement implémentée !
+      text: Cette fonctionnalité est encore en développement et bon nombre 
+        d'éléments <hl>ne sont pas encore disponibles</hl>. Cependant, vous 
+        pouvez déjà l'essayer et revenir plus tard lorsqu'elle sera entièrement 
+        implémentée !
       title: En développement
     comingSoon:
       title: Bientôt disponible
-      text: Ce contenu <hl>n'est pas disponible</hl> dans la version actuelle de WalkScape.
+      text: Ce contenu <hl>n'est pas disponible</hl> dans la version actuelle de
+        WalkScape.
     disabled:
       title: Désactivé
-      text: Cette fonctionnalité a été <hl>temporairement désactivée</hl>. Visitez
-        Portal, Reddit ou Discord pour plus d'information.
+      text: Cette fonctionnalité a été <hl>temporairement désactivée</hl>. 
+        Visitez Portal, Reddit ou Discord pour plus d'information.
     stepsNotCountedRealTime:
       title: Les pas ne sont pas comptés en temps réel
-      textIOS: Si vous utilisez une autre source de pas que votre <icon i="Phone small"
-        /><c>Téléphone</c>, les pas ne sont pas comptés en temps réel. Selon l'appareil
-        que vous portez, vous devrez peut-être synchroniser manuellement vos pas depuis
-        une autre application ou ouvrir Apple Health pour synchroniser vos pas dans
-        le jeu. Ce message disparaîtra quand vous aurez synchronisé au moins <c>5
-        000</c> pas depuis votre appareil. Vous pouvez choisir votre <icon i="Phone
-        small" /><c>Téléphone</c> comme source de pas dans les <c>Paramètres</c>.
+      textIOS: Si vous utilisez une autre source de pas que votre <icon i="Phone
+        small" /><c>Téléphone</c>, les pas ne sont pas comptés en temps réel. 
+        Selon l'appareil que vous portez, vous devrez peut-être synchroniser 
+        manuellement vos pas depuis une autre application ou ouvrir Apple Health
+        pour synchroniser vos pas dans le jeu. Ce message disparaîtra quand vous
+        aurez synchronisé au moins <c>5 000</c> pas depuis votre appareil. Vous 
+        pouvez choisir votre <icon i="Phone small" /><c>Téléphone</c> comme 
+        source de pas dans les <c>Paramètres</c>.
   popups:
     achievementUnlocked:
       rewards: Récompenses
@@ -51,30 +54,34 @@ singulars:
     inactiveSteps:
       stepsWhileInactive: Pas gagnés lorsque le jeu était inactif
     skillLevel:
-      newItem: <chip><stext><c>Objet débloqué </c></stext></chip> <item id="{item}"/>
-        peut être équipé.
-      newRecipe: <chip><stext><c i="0">Nouvelle recette déverrouillée</c></stext></chip>
-        Vous pouvez préparer <c i="1">{recipeName}</c>.
-      newDrop: <chip><stext><c i="0">Nouveau butin</c></stext></chip> Vous pouvez
-        obtenir <c i="1">{itemName}</c> lors de l'activité <c>{activityName}</c>.
-      newRoute: <chip><stext><c i="0">Nouvelle route déverrouillée</c></stext></chip>
-        <c i="1"><location id="{fromID}" /><c>{from}</c>-<location id="{toID}" /><c>{to}</c>.
+      newItem: <chip><stext><c>Objet débloqué </c></stext></chip> <item 
+        id="{item}"/> peut être équipé.
+      newRecipe: <chip><stext><c i="0">Nouvelle recette 
+        déverrouillée</c></stext></chip> Vous pouvez préparer <c 
+        i="1">{recipeName}</c>.
+      newDrop: <chip><stext><c i="0">Nouveau butin</c></stext></chip> Vous 
+        pouvez obtenir <c i="1">{itemName}</c> lors de l'activité 
+        <c>{activityName}</c>.
+      newRoute: <chip><stext><c i="0">Nouvelle route 
+        déverrouillée</c></stext></chip> <c i="1"><location id="{fromID}" 
+        /><c>{from}</c>-<location id="{toID}" /><c>{to}</c>.
       skillLevelUp: '{skillName} monte de niveau'
       unlocks: Nouveautés
       noNewUnlocks: Aucune nouveauté pour ce niveau.
-      newActivity: <chip><stext><c>Nouvelle activité </c></stext></chip> <c>{activityName}</c>
-        disponible.
+      newActivity: <chip><stext><c>Nouvelle activité </c></stext></chip> 
+        <c>{activityName}</c> disponible.
     idleSteps:
-      gainedExperience: <skill skill="{skill}" /> a gagné <c>+{exp}</c> d'expérience.
-      skillLeveledUp: Le niveau de <skill skill="{skill}" /> a augmenté de <c i="0">{from}</c>
-        à <c i="1">{to}</c>.
+      gainedExperience: <skill skill="{skill}" /> a gagné <c>+{exp}</c> 
+        d'expérience.
+      skillLeveledUp: Le niveau de <skill skill="{skill}" /> a augmenté de <c 
+        i="0">{from}</c> à <c i="1">{to}</c>.
       gainedItem: Obtenu <c>+{amount}</c> <item id="{item}" />
       craftedItem: Fabriqué <c>+{amount}</c> <item id="{item}" />
       gainedMoney: Obtenu <c i="0">+{amount}</c> <c i="1">pièces</c>
       characterGained: Obtenu <c>+{amount}</c> d'expérience de personnage
       arrivedAt: Arrivée à <location /> <c>{location}</c>.
-      characterLeveledUpFrom: Le niveau de personnage a augmenté de <c i="0">{from}</c>
-        à <c i="1">{to}</c>.
+      characterLeveledUpFrom: Le niveau de personnage a augmenté de <c 
+        i="0">{from}</c> à <c i="1">{to}</c>.
       stepsWhileAway: Pas effectués pendant que le jeu était fermé
       whileYouWereAway: Pendant votre absence...
       nothingHappened: Rien de spécial ne s'est produit.
@@ -86,8 +93,9 @@ singulars:
     game:
       equipGearSetSomeFailed:
         title: L'ajout d'objets à l'ensemble d'équipements a échoué
-        text: Certains objets de l'ensemble d'équipements n'ont pas pu être équipés.
-          Vérifiez l'ensemble et les conditions requises pour équiper ces objets.
+        text: Certains objets de l'ensemble d'équipements n'ont pas pu être 
+          équipés. Vérifiez l'ensemble et les conditions requises pour équiper 
+          ces objets.
       withdrawTooFew:
         text: Vous n'avez pas suffisamment d'objets pour effectuer ce retrait.
         title: Le retrait a échoué
@@ -95,204 +103,220 @@ singulars:
         title: L'équipement de l'objet a échoué
         text: L'objet n'a pas pu être équipé. Veuillez réessayer.
       changingActivityFailed:
-        text: Impossible de changer d'activité. Soit vous effectuez déjà cette activité
-          soit celle-ci n'est pas disponible.
+        text: Impossible de changer d'activité. Soit vous effectuez déjà cette 
+          activité soit celle-ci n'est pas disponible.
         title: Le changement d'activité a échoué
       withdrawZero:
         title: Le retrait a échoué
         text: Vous ne pouvez pas faire un retrait comportant moins d'un objet.
       withdrawDidNotExist:
-        text: L'objet que vous essayez de retirer n'existe pas. Fermer et rouvrir
-          la banque devrait résoudre le problème.
+        text: L'objet que vous essayez de retirer n'existe pas. Fermer et 
+          rouvrir la banque devrait résoudre le problème.
         title: Le retrait a échoué
       withdrawFailed:
         title: Le retrait a échoué
         text: Le retrait a échoué. Veuillez réessayer.
       equipGearSetFailed:
         title: L'équipement de l'ensemble a échoué
-        text: Il est possible que l'ensemble d'équipements que vous avez choisi soit
-          invalide ou endommagé et n'a pas pu être équipé.
+        text: Il est possible que l'ensemble d'équipements que vous avez choisi 
+          soit invalide ou endommagé et n'a pas pu être équipé.
       importGearSetFailed:
         title: L'ensemble d'équipements n'a pas pu être importé
-        text: Une erreur est survenue pendant l'importation de l'ensemble d'équipements.
-          Les données de l'ensemble peuvent être endommagées ou invalides.
+        text: Une erreur est survenue pendant l'importation de l'ensemble 
+          d'équipements. Les données de l'ensemble peuvent être endommagées ou 
+          invalides.
       importGearSetTooManyTools:
         title: L'ensemble d'équipements comporte trop d'outils
-        text: L'ensemble d'équipements comporte plus d'outils que la limite autorisée.
+        text: L'ensemble d'équipements comporte plus d'outils que la limite 
+          autorisée.
       buybackFailed:
         title: Échec du rachat
-        text: Échec du rachat. Vous n'avez pas les objets requis dans votre inventaire
-          pour effectuer le rachat.
+        text: Échec du rachat. Vous n'avez pas les objets requis dans votre 
+          inventaire pour effectuer le rachat.
       noPathFound:
         title: Pas d'itinéraire trouvé
-        text: Pas d'itinéraire trouvé vers la destination choisie. Veuillez-vous assurer
-          qu'il est possible de voyager vers la destination choisie.
+        text: Pas d'itinéraire trouvé vers la destination choisie. Veuillez-vous
+          assurer qu'il est possible de voyager vers la destination choisie.
       queueLimitReached:
         title: Limite de la queue atteinte
-        text: Vous ne pouvez pas mettre en queue plus de 3 actions à la fois. Veuillez
-          compléter ou annuler certaines actions avant d'en remettre en queue.
+        text: Vous ne pouvez pas mettre en queue plus de 3 actions à la fois. 
+          Veuillez compléter ou annuler certaines actions avant d'en remettre en
+          queue.
       cannotQueueMoreThanOneActivity:
         title: Impossible de mettre en queue plus d'activités
-        text: Vous pouvez mettre en queue plusieurs actions de voyage, mais une seule
-          activité à la fois. Veuillez compléter ou annuler l'activité en cours avant
-          d'en mettre en queue une autre.
+        text: Vous pouvez mettre en queue plusieurs actions de voyage, mais une 
+          seule activité à la fois. Veuillez compléter ou annuler l'activité en 
+          cours avant d'en mettre en queue une autre.
   errors:
     characterValidation:
       nameTooShort: Le nom du personnage doit contenir au moins 3 caractères.
-      nameContainsleadingTrailingSpaces: Les espaces en début ou fin de chaîne ne
-        sont pas autorisés.
-      nameContaintsConsecutiveSpaces: Les espaces consécutifs ne sont pas autorisés.
-      nameTooShortWithSpacesRemoved: Sans les espaces, le nom du personnage doit contenir
-        au moins 3 caractères.
-      nameContainsSpecialCharacters: Le nom de personnage contient des caractères
-        spéciaux. Seuls les lettres, les chiffres et les espaces sont autorisés.
+      nameContainsleadingTrailingSpaces: Les espaces en début ou fin de chaîne 
+        ne sont pas autorisés.
+      nameContaintsConsecutiveSpaces: Les espaces consécutifs ne sont pas 
+        autorisés.
+      nameTooShortWithSpacesRemoved: Sans les espaces, le nom du personnage doit
+        contenir au moins 3 caractères.
+      nameContainsSpecialCharacters: Le nom de personnage contient des 
+        caractères spéciaux. Seuls les lettres, les chiffres et les espaces sont
+        autorisés.
     serverError:
       noInternetConnection:
-        text: Échec de la connexion au serveur WalkScape. Il se peut que vous n'ayez
-          pas de connexion internet, que le serveur soit indisponible ou qu'un pare-feu
-          bloque la connexion. Merci de vérifier votre connexion internet, puis de
-          réessayer.
+        text: Échec de la connexion au serveur WalkScape. Il se peut que vous 
+          n'ayez pas de connexion internet, que le serveur soit indisponible ou 
+          qu'un pare-feu bloque la connexion. Merci de vérifier votre connexion 
+          internet, puis de réessayer.
         title: Impossible de se connecter au serveur WalkScape
       newClientUpdate:
-        text: Votre jeu n'est plus à jour, une nouvelle version est disponible. Merci
-          de télécharger la dernière version du jeu pour continuer a jouer.
+        text: Votre jeu n'est plus à jour, une nouvelle version est disponible. 
+          Merci de télécharger la dernière version du jeu pour continuer a 
+          jouer.
         title: Nouvelle mise à jour client disponible
       noClosedBetaAccess:
-        text: Votre accès à la <c i=0>Bêta Fermée de WalkScape</c> a expiré. Vous
-          pouvez regagner l'accès en postulant à la Bêta Fermée et en étant accepté
-          lors de la prochaine vague d'admissions, ou immédiatement en soutenant le
-          jeu sur <c i=1>Patreon</c> ou <c i=1>Buy Me a Coffee</c>.\n\nSi vous décidez
-          de soutenir le jeu, liez votre compte Patreon ou Buy Me a Coffee sur votre
-          <c i=1>Page de Compte sur le Portail WalkScape</c> pour retrouver votre
-          accès au jeu. Vous pouvez aussi <c i=1>postuler pour la Bêta Fermée</c>
-          depuis la Page de Compte.
+        text: Votre accès à la <c i=0>Bêta Fermée de WalkScape</c> a expiré. 
+          Vous pouvez regagner l'accès en postulant à la Bêta Fermée et en étant
+          accepté lors de la prochaine vague d'admissions, ou immédiatement en 
+          soutenant le jeu sur <c i=1>Patreon</c> ou <c i=1>Buy Me a 
+          Coffee</c>.\n\nSi vous décidez de soutenir le jeu, liez votre compte 
+          Patreon ou Buy Me a Coffee sur votre <c i=1>Page de Compte sur le 
+          Portail WalkScape</c> pour retrouver votre accès au jeu. Vous pouvez 
+          aussi <c i=1>postuler pour la Bêta Fermée</c> depuis la Page de 
+          Compte.
         title: Accès à la bêta fermée expiré
       bannedUser:
         title: Vous avez été banni de manière permanente de WalkScape
-        text: Vous avez été banni de manière permanente de WalkScape. Si vous pensez
-          qu'il s'agit d'une erreur et que vous souhaitez contester cette décision,
-          vous pouvez nous contacter en envoyant un mail à <c i=1>contact@walkscape.app</c>.
+        text: Vous avez été banni de manière permanente de WalkScape. Si vous 
+          pensez qu'il s'agit d'une erreur et que vous souhaitez contester cette
+          décision, vous pouvez nous contacter en envoyant un mail à <c 
+          i=1>contact@walkscape.app</c>.
       serverOffline:
         title: Serveur WalkScape hors-ligne
-        text: Le serveur du jeu est hors-ligne. Cela peut être dû à une maintenance,
-          ou à un problème avec le serveur du jeu. Merci de réessayer ultérieurement.
+        text: Le serveur du jeu est hors-ligne. Cela peut être dû à une 
+          maintenance, ou à un problème avec le serveur du jeu. Merci de 
+          réessayer ultérieurement.
       serverMaintenance:
         title: Serveur WalkScape en maintenance
-        text: Le serveur WalkScape est en cours de maintenance. Merci de réessayer
-          ultérieurement.
+        text: Le serveur WalkScape est en cours de maintenance. Merci de 
+          réessayer ultérieurement.
       newUpdate:
         title: Nouvelle mise à jour
-        text: Le jeu a été mis à jour. Veuillez relancer le jeu pour télécharger la
-          nouvelle mise à jour.
+        text: Le jeu a été mis à jour. Veuillez relancer le jeu pour télécharger
+          la nouvelle mise à jour.
       unknownError:
         title: Erreur inconnue.
         text: Erreur inconnue.
       failureToUpdateContent:
-        text: Le client de jeu a échoué à mettre à jour le contenu. Merci de signaler
-          ceci aux développeurs sur Discord, en incluant des détails sur l'erreur
-          et l'appareil que vous utilisez. Vous pouvez également tenter de fermer
-          le jeu et de l'ouvrir à nouveau.
+        text: Le client de jeu a échoué à mettre à jour le contenu. Merci de 
+          signaler ceci aux développeurs sur Discord, en incluant des détails 
+          sur l'erreur et l'appareil que vous utilisez. Vous pouvez également 
+          tenter de fermer le jeu et de l'ouvrir à nouveau.
         title: Échec de mise à jour du contenu
       unauthorized:
         title: Non autorisé
         text: Vous n'êtes pas autorisé. Veuillez vous reconnecter.
       invalidSession:
         title: Session invalide
-        text: Votre session est invalide. Merci de rouvrir le jeu et de vous authentifier
-          à nouveau.
+        text: Votre session est invalide. Merci de rouvrir le jeu et de vous 
+          authentifier à nouveau.
       connectionError:
         title: Erreur de connexion
-        text: Une erreur s'est produite lors de la connexion au serveur. Merci de
-          vérifier votre connexion internet, puis de réessayer.
+        text: Une erreur s'est produite lors de la connexion au serveur. Merci 
+          de vérifier votre connexion internet, puis de réessayer.
       tempBannedUser:
         title: Vous avez été temporairement banni de WalkScape
-        text: Vous avez été temporairement banni de Walkscape jusqu'à <c i=0>{bannedUntil}</c>.
-        noTimeFound: Pas de date de fin trouvée, veuillez nous contacter par mail
-          à l'adresse contact@walkscape.app.
+        text: Vous avez été temporairement banni de Walkscape jusqu'à <c 
+          i=0>{bannedUntil}</c>.
+        noTimeFound: Pas de date de fin trouvée, veuillez nous contacter par 
+          mail à l'adresse contact@walkscape.app.
       userBannedTemporarily:
         title: Vous avez été banni temporairement de WalkScape
-        text: Vous avez été banni temporairement de Walkscape jusqu'à <c i=0>{bannedUntil}</c>.
-          Si vous souhaitez faire appel de cette décision, vous pouvez nous contacter
-          en envoyant un e-mail à {email}.
-        noTimeFound: Aucune heure de fin trouvée, veuillez nous contacter en envoyant
-          un e-mail à {email}
+        text: Vous avez été banni temporairement de Walkscape jusqu'à <c 
+          i=0>{bannedUntil}</c>. Si vous souhaitez faire appel de cette 
+          décision, vous pouvez nous contacter en envoyant un e-mail à {email}.
+        noTimeFound: Aucune heure de fin trouvée, veuillez nous contacter en 
+          envoyant un e-mail à {email}
       userBannedPermanently:
         title: Vous avez été définitivement banni de WalkScape
-        text: Vous avez été banni définitivement de WalkScape. Si vous pensez qu'il
-          s'agit d'une erreur et souhaitez faire appel de cette décision, vous pouvez
-          nous contacter en envoyant un e-mail à {email}.
+        text: Vous avez été banni définitivement de WalkScape. Si vous pensez 
+          qu'il s'agit d'une erreur et souhaitez faire appel de cette décision, 
+          vous pouvez nous contacter en envoyant un e-mail à {email}.
     gameError:
       stepLoadingFailed:
-        text: Le client de jeu a échoué à charger les pas. Merci de signaler ceci
-          aux développeurs sur Discord, en incluant des détails sur l'erreur et l'appareil
-          que vous utilisez. Vous pouvez également tenter de fermer le jeu et de l'ouvrir
-          à nouveau.
+        text: Le client de jeu a échoué à charger les pas. Merci de signaler 
+          ceci aux développeurs sur Discord, en incluant des détails sur 
+          l'erreur et l'appareil que vous utilisez. Vous pouvez également tenter
+          de fermer le jeu et de l'ouvrir à nouveau.
         title: Échec de chargement des pas
       initializingGameFailed:
-        text: Le client de jeu a échoué à s'initialiser. Merci de signaler ceci aux
-          développeurs sur Discord, en incluant des détails sur l'erreur et l'appareil
-          que vous utilisez. Vous pouvez également tenter de fermer le jeu et de l'ouvrir
-          à nouveau.
+        text: Le client de jeu a échoué à s'initialiser. Merci de signaler ceci 
+          aux développeurs sur Discord, en incluant des détails sur l'erreur et 
+          l'appareil que vous utilisez. Vous pouvez également tenter de fermer 
+          le jeu et de l'ouvrir à nouveau.
         title: Échec d'initialisation du jeu
       loadingPlayerFailed:
         title: Échec de chargement du joueur
-        text: Données de joueur incorrectes. Échec du chargement. Merci de contacter
-          les développeurs via Discord ou par mail.
+        text: Données de joueur incorrectes. Échec du chargement. Merci de 
+          contacter les développeurs via Discord ou par mail.
       stepLoadingInterruped:
         title: Chargement des pas interrompu
-        text: Le jeu a été mis en arrière-plan ou interrompu pendant le chargement
-          des pas. Veuillez essayer d'ouvrir le jeu à nouveau pour charger les pas.
+        text: Le jeu a été mis en arrière-plan ou interrompu pendant le 
+          chargement des pas. Veuillez essayer d'ouvrir le jeu à nouveau pour 
+          charger les pas.
       stepsNotLoadedDueToBan:
         title: Pas non chargés du fait de votre bannissement
-        text: Vos pas n'ont pas été chargés car vous avez été banni de WalkScape.
-          À partir de maintenant, vos pas seront comptés normalement.
+        text: Vos pas n'ont pas été chargés car vous avez été banni de 
+          WalkScape. À partir de maintenant, vos pas seront comptés normalement.
       couldNotGetServerTime:
         title: Impossible de récupérer l'heure du serveur
-        text: Le client du jeu n'a pas réussi à récupérer l'heure du serveur. Veuillez
-          vérifier votre connexion Internet et réessayer.
+        text: Le client du jeu n'a pas réussi à récupérer l'heure du serveur. 
+          Veuillez vérifier votre connexion Internet et réessayer.
     fatalError:
-      error: Nous sommes désolés pour cette erreur. N'oubliez pas que le jeu est en
-        bêta fermée, et que les données des joueurs sont sauvegardées quotidiennement.
+      error: Nous sommes désolés pour cette erreur. N'oubliez pas que le jeu est
+        en bêta fermée, et que les données des joueurs sont sauvegardées 
+        quotidiennement.
     activityCancelled:
       title: Activité annulée
-      stepsAreInfinite: L'activité en cours a été annulée car vous ne remplissez plus
-        les prérequis pour la compléter.
+      stepsAreInfinite: L'activité en cours a été annulée car vous ne remplissez
+        plus les prérequis pour la compléter.
   confirmations:
     changingStepSource:
-      text: Changer la source de comptage de pas peut entraîner la perte des pas qui
-        n'ont pas encore été synchronisés. Assurez-vous que vos pas soient synchronisés
-        avant de changer la source.
+      text: Changer la source de comptage de pas peut entraîner la perte des pas
+        qui n'ont pas encore été synchronisés. Assurez-vous que vos pas soient 
+        synchronisés avant de changer la source.
       title: Changer la source de comptage de pas ?
       lastSyncText: Pas synchronisés à {time}.
       neverSyncedText: Les pas n'ont jamais été synchronisés.
     editCurrentRouteAndResetQueue:
-      text: Voulez-vous modifier votre itinéraire actuel vers le lieu choisi et annuler
-        toutes les actions suivantes dans votre file d'attente ?
+      text: Voulez-vous modifier votre itinéraire actuel vers le lieu choisi et 
+        annuler toutes les actions suivantes dans votre file d'attente ?
       title: Modifier la route actuelle et remettre à zéro la file d'attente ?
     doYouWantToClaimExperience:
       title: Êtes-vous sûr de vouloir réclamer le gain d'expérience ?
-      text: L'option "M'avertir avant de réclamer un gain d'expérience" est activée.
-        Êtes-vous sûrs de vouloir réclamer le gain d'expérience ?
+      text: L'option "M'avertir avant de réclamer un gain d'expérience" est 
+        activée. Êtes-vous sûrs de vouloir réclamer le gain d'expérience ?
     changeRoute:
       title: Changer de route ?
-      text: Changer de route annulera votre voyage actuel et vous fera revenir au
-        lieu précédent. Êtes vous sûr ?
+      text: Changer de route annulera votre voyage actuel et vous fera revenir 
+        au lieu précédent. Êtes vous sûr ?
     travelAndStartActivity:
       title: Voyager d'abord puis commencer l'activité ?
-      text: Vous n'êtes pas au bon endroit pour commencer cette activité. Voulez-vous
-        d'abord voyager vers le bon lieu puis commencer l'activité ?
+      text: Vous n'êtes pas au bon endroit pour commencer cette activité. 
+        Voulez-vous d'abord voyager vers le bon lieu puis commencer l'activité ?
     downloadLanguage:
       title: Sélectionner et télécharger une langue ?
-      text: Pour changer la langue du jeu, vous devez télécharger des données supplémentaires.
-        Voulez-vous continuer ?
+      text: Pour changer la langue du jeu, vous devez télécharger des données 
+        supplémentaires. Voulez-vous continuer ?
     sellHighValueItems:
       title: Vendre des objets de grande valeur ?
-      text: Vous êtes sur le point de <c>vendre des objets de grande valeur que vous
-        pourriez regretter</c> ! Êtes-vous sûr de vouloir vendre ces objets ?
+      text: Vous êtes sur le point de <c>vendre des objets de grande valeur que 
+        vous pourriez regretter</c> ! Êtes-vous sûr de vouloir vendre ces objets
+        ?
     droppingHighValueItems:
       title: Jeter des objets de grande valeur ?
     claimPet:
       title: Réclamer le familier ?
+      text: Vous êtes sur le point de réclamer un familier. Une fois réclamé, 
+        celui-ci vous sera attribué de manière définitive et ne pourra plus être
+        échangé. Êtes-vous sûr de vouloir réclamer ce familier ?
     retirePet:
       title: Mettre le familier à la retraite ?
     destroyEgg:
