@@ -49,6 +49,8 @@ singulars:
     owner: Run by
     buildings: Buildings
     guides: Related guides
+    requirements: What it asks for
+    compare: Against what you wear
   facts:
     value: Value
     stepsPerAction: Steps per action
@@ -161,6 +163,12 @@ singulars:
   sources:
     gained: Got {count} here
     notYet: None from here yet
+    sold: Sold here
+  tracks:
+    heading: Point rewards
+    points: "{count} achievement points"
+    share: "{count}% of all achievement points"
+    progress: "You have <numberProgress current=\"{current}\" max=\"{max}\" /> of the achievement points it asks for."
   # What a goal's next step asks for, by the goal's id. {step} is the step
   # itself: a number, a quality, a tier.
   goalNext:
@@ -172,7 +180,6 @@ singulars:
     everyQuality: Craft it at {step} quality
     level99: Reach level {step}
     everyDrop: Find a drop you have not had from it
-    timesDone: Do it {step} times
     everyActivity: Do an activity here for the first time
     maxLevel: Grow one to level {step}
     bothForms: See its rare form
@@ -334,7 +341,6 @@ singulars:
     goalMaxLevel: "Grown to its last level"
     goalLevel99: "Levels reached"
     goalEveryObject: "Everything with it found"
-    goalTimesDone: "Times done"
     goalTimesCrafted: "Times crafted"
     goalEarned: "Earned"
     goalTiers: "Reputation"
