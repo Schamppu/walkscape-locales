@@ -366,6 +366,25 @@ singulars:
         i=0>{count}</c> <c i=1>/ {maxCount}</c>
       collectibles: Znajdźki
       loreItemsCount: Przedmioty Fabularne
+      filterAll: Wszystkie
+      filterReady: Gotowe
+      filterInProgress: W trakcie
+      filterCompleted: Ukończone
+      unlocked: Odblokowane
+      emptyReady: Na razie brak odblokowań. Ukończ wymagania Osiągnięć, by je tu
+        znaleźć.
+      emptyInProgress: Każde osiągnięcie tutaj jest ukończone!
+      emptyCompleted: Na razie brak ukończonych osiągnięć. Odblokuj jedno i 
+        odbierz nagrodę, by zobaczyć je tutaj.
+      skipToEnd: Przeskocz do końca
+      tapForNext: Dotknij po następną kartę
+      claimAllSummary: '{count} osiągnięć odblokowanych'
+      claimAllRewards: '{count} odebranych nagród'
+      achievementPointsLabel: Punktów Osiągnięć
+      achievementFinished: Odblokowane osiągnięcia
+      achievementProgress: Progres osiągnięcia
+      claimInAchievements: Odbierz w Osiągnięciach
+      moreRequirements: +{count} kolejnych wymagań
   crafting:
     phrases:
       materials: Materiały
@@ -544,6 +563,8 @@ singulars:
         kosmetycznych</c> można znaleźć
       petEggs: <bp /><icon i="Pet egg"/> <c>{count} jaj pupili</c> z nowymi 
         pupilami
+      rarePetEggs: <bp /><icon i="Pet egg"/> <c>{count} rzadkich jaj pupili</c> 
+        z nowym pupilem
     options:
       completeUntilActions: Wykonaj konkretną liczbę akcji
       numberOfActions: Liczba akcji
@@ -704,6 +725,11 @@ singulars:
       cannotUseMore: Nie możesz użyć tej zdolności. Możesz już być pod wpływem 
         tej zdolności i wyczerpano jej maksymalny czas trwania.
       lastsFor: 'Efekt utrzymuje się:'
+      holdToUseAll: Trzymaj, by użyć wszystkie
+      useAll: Użyj wszystkie
+      useAllInfo: Używa wszystkich <object id="{keyword}"/>, które masz przy 
+        sobie na raz.
+      useAllCompleted: Czujesz większe doświadczenie.
   cooldowns:
     phrases:
       followingMustBeTrueToUse: 'Wymagania do użycia nie są spełnione:'
@@ -823,7 +849,7 @@ singulars:
       clearStaged: Wyczyść
       confirmBatch: Potwierdź
       toAccept: akceptuj
-      noAcceptedJobs: Nie masz żadnych zadań w toku.
+      noAcceptedJobs: Nie masz żadnych zleceń w toku.
       acceptedJobsHere: <c>{count}</c> zleceń do zwrotu
       needMore: Potrzeba {count} więcej
       readyFromBank: Gotowe · {count} z twojego banku
@@ -845,17 +871,124 @@ singulars:
       chooseWithdraw: Wybierz przedmioty do wyjęcia
       confirmAndContinue: Potwierdź & kontynuuj
       allJobsOpen: Każde zlecenie na tych tablicach jest dla ciebie otwarte.
+      ready: Gotowe
+      withdrawOnConfirm: Wyjmij z potwierdzeniem
+      infoAccept: Akceptowanie. Działa z każdej tablicy, którą odwiedzono.
+      infoHandIn: Wręczenie. Tylko w lokacji z tablicą zleceń.
+      infoWithdraw: Wyjmuje przedmioty potrzebne do zlecenia z twojego banku, 
+        bez brania samego zlecenia. Widoczne w banku z dala od tablicy zleceń.
+      infoAbandon: Poddaj zlecenie.
+      infoStanding: Twój poziom w związku z każdą frakcją.
+      infoBank: Twój bank liczy się przy tablicach, które bank mają.
+      bankInCount: Zabrane z twojego banku, gdy wręczasz ukończone zlecenie.
+      infoReset: Czas, który musi upłynąć do resetu nowych zleceń.
+      infoUnavailable: <c>Niedostępne</c> zlecenia wymagają wyższego poziomu 
+        frakcji. Tablice nieodwiedzone są zablokowane.
+      noJobsDone: Nie masz ukończonych żadnych zleceń w tym tygodniu.
+      unlocksAtLevel: Odblokowane na poziomie {level} w frakcji {faction}. 
+        <numberProgress current="{current}" max="{max}" /> reputacji.
+      aJob: Zlecenie
+      alternativeOption: '{count} × {quality}'
+      handInWithin: Wręcz w
+      weekUnavailable: Zlecenia w tym tygodniu nie mogły być wczytane.
+      retry: Spróbuj ponownie
+      handInAll: Wręcz wszystkie ({count})
+      withdrawAll: Wyjmij wszystkie ({count})
+      lockedJobs: <c>{count}</c> więcej otwartych zleceń na poziomie {level} 
+        frakcji {faction}.
+      visitToUnlock: Odwiedź {location}, by zobaczyć i przyjąć zlecenia z tej 
+        tablicy.
+      jobsThisWeek: <c>{count}</c> zleceń w tym tygodniu
+      allBoards: Wszystkie tablice
+      bankHere: Twój bank zalicza się na tej tablicy.
+      noBoardHere: W tym miejscu nie ma tablicy zleceń. Wybierz jedną, by 
+        zobaczyć zlecenia.
+      handInAllLabel: Wręcz wszystko
+      withdrawAllLabel: Wyjmij wszystko
+      handedInTitle: Zlecenia wręczone
+      readyHereTitle: Gotowe do wręczenia tutaj
+      giveUp: Poddaj
+      dismiss: Odrzuć
+      finishJobChanges: Najpierw wotwierdź lub anuluj zmiany w zleceniach.
+      readyToComplete: Gotowe do oddania
+      rewardsPrefix: 'Nagrody:'
+      requiredTitle: Wymagane
+      substitutesTitle: Zamienniki
+      rewardNameReputation: Reputacja w {name}
+      rewardNameXp: Doświadczenia w {name}
+      rewardNameCoins: Monet
+      handInAllTitle: Wręczyć {count} zleceń?
+      withdrawAllTitle: Wyjąć dla {count} zleceń?
     dialogs:
       abandonJob:
         title: Porzuć zlecenie
         text: Na pewno chcesz porzucić to zlecenie? Stracisz cały postęp oraz 
           nagrody z tego zlecenia.
+      leaveUnconfirmed:
+        title: Niepotwierdzone zmiany
+        text: Zmiany w twoim zleceniu nie są jeszcze potwierdzone. Potwierdzić 
+          je przed zamknięciem, czy porzucić zmiany?
+        textLeave: Zmiany w twoim zleceniu nie są jeszcze potwierdzone. 
+          Potwierdzić je, czy porzucić zmianę?
     maps:
       rewardKinds:
         "item": Przedmioty
         "factionReputation": Reputacja
         "coins": Monety
         "skillExperience": Doświadczenie
+    rejections:
+      unknownJob: '{job} nie jest już na tablicy, dlatego zlecenie zwrócono.'
+      alreadyAccepted: '{job} jest już zaakceptowane.'
+      alreadyTaken: '{job} już wykonano w tym tygodniu.'
+      notAccepted: '{job} nie jest już dostępne, dlatego zostało zwrócone.'
+      noFreeSlots: Brak wolnego slota na zlecenie {job}. Ukończ jedno lub porzuć
+        któreś najpierw.
+      notEnoughItems: Pozostała niewystarczająca liczba przedmiotów, by wręczyć 
+        zlecenie {job}.
+      locationNotVisited: Odwiedź tablicę zleceń przed akceptacją zlecenia 
+        {job}.
+      levelTooLow: Osiągnij wyższy poziom z frakcją z tej tablicy, by przyjąć 
+        zlecenie {job}.
+      notAtLocation: Zlecenie {job} może być wręczone tylko przez tablicę tego 
+        zlecenia w jej lokacji.
+      goalBroken: Zlecenie {job} wymaga przedmiotu, który już nie istnieje.
+      counterNotMet: Zlecenie {job} nie jest jeszcze ukończone.
+      expired: Czas na zlecenie {job} upłynął, zostało zwrócone.
+      notApplied: Zlecenie {job} nie może być zmienione. Spróbuj ponownie.
+    protection:
+      warnTitle: Wręczyć zabezpieczone przedmioty?
+      warnWithdrawTitle: Wyjąć zabezpieczone przedmioty?
+      withdrawAnyway: Wyjąć mimo to
+      handInAnyway: Wręczyć mimo to
+      handInAll: Wręczyć wszystko
+      skipThese: Pomiń zabezpieczone
+      blockedTitle: Nie można tego wręczyć
+      blockedShort: Zabezpieczone
+      blockedLocked: Zabezpieczone przedmioty nie są możliwe do wręczania. 
+        Odblokuj te przedmioty w ich szczegółach, by je wręczyć.
+      blockedSetting: Ustawienia twojej tablicy zleceń zabezpieczają przedmioty,
+        które ta tablica wymaga.
+      openSettings: Otwórz ustawienia
+      reasonLocked: Zabezpieczone
+      reasonFavourited: Ulubione
+      reasonQuality: '{quality} lub lepszy'
+      reasonKeep: Pozostawia ci mniej niż {count}
+      skipProtected: Pomiń zabezpieczone
+    settings:
+      title: Ustawienia tablicy zleceń
+      protectTitle: Zabezpiecz przedmioty w chwili oddawania lub wyjmowania
+      chooseTitle: Wybierając przedmioty
+      qualityLevelInfo: Zabezpiecza wytworzone przedmioty wysokiej jakości oraz 
+        inne przedmioty wysokiej rzadkości, by te nie były wręczone lub wyjęte 
+        na potrzeby zleceń. Wpierw zapytaj, nim zostaną wykorzystane; zawsze 
+        zachowuje je bezpiecznie.
+      qualityFromInfo: Wytworzone przedmioty wybranej jakości lub lepsze będą 
+        zabezpieczone przed wręczeniem do zleceń, jak ustawiono wyżej. To wlicza
+        zlecenia, które wymagają dokładnie tej jakości przedmiotów.
+      keepLevelInfo: Zachowuje rezerwy każdych przedmiotów, które wręczasz lub 
+        wyjmujesz do wykonania zleceń. Gra zapyta najpierw nim zejdziesz poniżej
+        wartości; zawsze wstrzymuje wręczenie lub wyjęcie, które mogłoby wartość
+        przekroczyć.
   settings:
     categories:
       notifications:
