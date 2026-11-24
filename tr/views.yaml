@@ -122,11 +122,12 @@ maps:
       'leaderboardFilter': Göster
       'leaderboardType': Liderlik Tablosu
       'stepDataTime': Zaman dilimi
-      "jobProtectQualityLevel": Yüksek kalitelileri koru
+      "jobProtectQualityLevel": Yüksek kalite ve nadirlikteki eşyaları koru
       "jobProtectQualityFrom": Bundan itibaren koru
       "jobProtectKeepLevel": Birazını kenara ayır
       "jobProtectKeepCount": Kenara ayırma adedi
       "jobQualityChoice": Birden fazla kalite uygunsa
+      "achievementFilter": Başarımları göster
     custom:
       'dataSource': Adım verisi kaynağı
     notificationImportance:
@@ -153,7 +154,7 @@ maps:
     protectionLevel:
       "off": Kapalı
       "warn": Önce sor
-      "never": Asla
+      "never": Daima
     keepCount:
       "one": '1'
       "two": '2'
@@ -383,6 +384,25 @@ singulars:
         i=0>{count}</c> <c i=1>/ {maxCount}</c>
       loreItemsCount: Anlatı eşyaları
       collectibles: Koleksiyonluklar
+      filterAll: Tümü
+      filterReady: Hazır
+      filterInProgress: Devam eden
+      filterCompleted: Tamamlanmış
+      unlocked: Açılmış
+      emptyReady: Şu anda açılacak bir şey bulunmuyor. Gereksinimlerini yerine 
+        getirdiğin başarımlar burada görünür.
+      emptyInProgress: Buradaki bütün başarımlar tamamlanmış!
+      emptyCompleted: Henüz tamamlanmış bir başarım bulunmuyor. Bir başarımı 
+        açıp ödülünü aldıktan sonra onu burada görebilirsin.
+      skipToEnd: Sonuna geç
+      tapForNext: Sonraki kart için dokun
+      claimAllSummary: '{count} başarım açıldı'
+      claimAllRewards: '{count} ödül alındı'
+      achievementPointsLabel: Başarım puanı
+      achievementFinished: Başarım açıldı
+      achievementProgress: Başarım ilerlemesi
+      claimInAchievements: Başarımlardan ödülünü al
+      moreRequirements: +{count} gereksinim daha
   bank:
     phrases:
       noItemsBank: Bankanda eşya bulunmuyor.
@@ -517,7 +537,7 @@ singulars:
       filterTypesTitle: Eşya türleri
       filterQualityTitle: Kalite
       filterHighestQuality: Yalnızca en yüksek kalite
-      filterRareEgg: Nadir yumurta
+      filterRareEgg: Ender yumurta
       filterMiscTitle: Çeşitli
       filterTraveling: Seyahat
       inventoryFilterTitle: Envanteri filtrele
@@ -729,6 +749,8 @@ singulars:
       characterName: Karakter adı
       chooseABodyType: Bir vücut tipi seç
       race: Irk
+      startsOutIn: Serüvenin <c>{location}</c> konumunda başlıyor.
+      typeAName: Lütfen bir isim yaz
   crafting:
     phrases:
       materials: Malzemeler
@@ -1307,6 +1329,9 @@ singulars:
       handInAllTitle: '{count} adet iş için teslimat yapılsın mı?'
       withdrawOnConfirm: Onaylanınca çekilecek
       handInWithin: 'Şuraya teslim et:'
+      ready: Hazır
+      dismiss: Gizle
+      withdrawAllTitle: Eşyalar {count} iş için çekilsin mi?
     dialogs:
       abandonJob:
         title: İşten vazgeç
@@ -1355,18 +1380,22 @@ singulars:
       skipProtected: Korunanları atla
       blockedTitle: 'Şuraya teslim edilemez:'
       reasonKeep: Elinde {count} adetten daha az kalıyor
+      warnWithdrawTitle: Korunan eşyalar çekilsin mi?
+      withdrawAnyway: Yine de çek
+      blockedShort: Korunan
     settings:
       title: İş panosu ayarları
       chooseTitle: Eşya seçimi
-      qualityLevelInfo: Yüksek kaliteli ürünleri işler için teslim ederken 
-        korur. "Önce sor" seçiliyse sorulduktan sonra teslim edilir. "Asla" 
-        seçiliyse hiçbir şekilde teslim edilmez.
+      qualityLevelInfo: Yüksek kaliteli ürünleri veya diğer eşyaları işler için 
+        teslim ederken ya da bankadan çekerken korur. "Önce sor" seçiliyse 
+        kullanmadan önce sorulur. "Daima" seçiliyse hiçbir şekilde seçilmezler.
       qualityFromInfo: Seçilmiş kalite ve daha iyisi olan ürünleri yukarıdaki 
         ayar doğrultusunda korur. Tam olarak o kalitedeki ürünleri isteyen işler
         de dahildir.
-      keepLevelInfo: İşler için teslimat yaparken her eşyadan kenara ayrılır. 
-        "Önce sor" seçiliyse o sayının altına inilirken sorar. "Asla" seçiliyse 
-        o sayının altına inilen teslimatlar durdurulur.
+      keepLevelInfo: İşler için teslimat yaparken veya bankadan çekerken her 
+        eşyanın birazı kenara ayrılır. "Önce sor" seçiliyse o sayının altına 
+        inilirken sorulur. "Daima" seçiliyse o sayının altına inilen teslimatlar
+        ve çekimler durdurulur.
       keepCountInfo: Çantan ve bankandakiler dahil olmak üzere eşyalardan ne 
         kadarının kenara ayrılacağı. Her kalitedeki ürünler ve iyi eşyalar ayrı 
         ayrı sayılır.
@@ -1376,7 +1405,7 @@ singulars:
       dismissedInfo: Gizlenen işler panolarda görünmezler. Her haftanın yeni 
         işleri tekrar görünürler.
       showDismissed: Gizlenen ({count}) işi tekrar göster
-      protectTitle: Eşyaları teslim ederken koru
+      protectTitle: Eşyaları teslim ederken veya bankadan çekerken koru
       qualityChoiceInfo: Bir iş için birden fazla kalitedeki eşya teslim 
         edilebiliyor veya bankadan çekilebiliyorsa. "Her zaman" senin seçmene 
         izin verir, "En düşük kaliteliyi kullan" uygun olan en düşük kaliteliyi 
@@ -1449,6 +1478,9 @@ singulars:
         düğmesine basılana kadar kaydolmazlar. Onaylanmamış değişiklikler varken
         iş panosunu kapatırsan değişikliklerini onaylaman veya iptal etmen 
         istenecektir.
+      withdrawSomeTitle: Birazını çek
+      withdrawSome: İş için lazım olan her şeye sahip olmadığında görünür. 
+        Bankanda lazım olan ne varsa iş panosuna götürebilmen için çeker.
   activity:
     phrases:
       stopWhenOverEncumbered: Envanter dolup taşınca dur
@@ -1530,6 +1562,8 @@ singulars:
         kozmetik</c> mevcut
       petEggs: Yeni bir evcil bulabileceğin <bp /><icon i="Pet egg"/><c>{count} 
         adet evcil yumurtası</c> mevcut
+      rarePetEggs: Yeni bir evcil bulabileceğin <bp /><icon i="Pet 
+        egg"/><c>{count} adet ender evcil yumurtası</c> mevcut
     options:
       completeUntilActions: Belirli sayıda eylem tamamla
       numberOfActions: Eylem sayısı
@@ -1627,6 +1661,10 @@ singulars:
       lastsFor: 'Etkilerin süresi:'
       cannotUseMore: Bu yeteneği kullanamazsın. Zaten bu yeteneğin etkisi 
         altında ve azami etki süresini aşıyor olabilirsin.
+      holdToUseAll: Tümünü kullanmak için basılı tut
+      useAll: Tümünü kullan
+      useAllInfo: Taşıdığın bütün <object id="{keyword}"/> topluca kullanılır.
+      useAllCompleted: Daha becerikli hissediyorsun.
   faction:
     phrases:
       openFaction: Diyara bak
@@ -2243,3 +2281,38 @@ singulars:
       idle: Adımlar kaydediliyor... (boşta)
   help:
     relatedTitle: Ayrıca bak
+  pfpEditor:
+    buttons:
+      undo: Geri al
+      reset: Sıfırla
+      browseAll: Tümüne bak
+    help:
+      barber: Saç modelini, yüzünü, renklerini ve yüz boyanı değiştir. Buradaki 
+        modelleri deneyebilirsin. Yeni bir görünüm almak {price} akçe 
+        tutacaktır.
+      wardrobe: Sahip olduğun bütün kozmetikleri hiçbir ücret ödemeden istediğin
+        gibi kullanabilirsin. Kilitli olanlar onları nereden bulabileceğini 
+        gösterir.
+      browse: Seç ve birini dene. Kilitli olanlar onları nereden bulabileceğini 
+        gösterir.
+    sources:
+      shop: Dükkan
+      achievement: Başarım
+      rewardTrack: Ödül yolu
+    phrases:
+      noneOwned: Bunların hiçbirine henüz sahip değilsin.
+      browseToFind: Nerede bulabileceğini öğrenmek için bak.
+      switchedOff: Giyip değiştirmek için yukarıdan aç.
+      newLook: Yeni görünüm
+      unsavedLook: Yeni görünümün henüz kaydedilmedi.
+    newLookLines:
+      fashion: '{name} modanın zirvesinde!'
+      better: '{name} hiç bu kadar iyi görünmemişti!'
+      heads: '{name} yürüyünce bütün bakışları üzerine çekecek.'
+      sharp: Yakıyosun, {name}!
+      runway: '{name} podyuma çıkmaya hazır.'
+      mirror: Ayna bile hayran kaldı, {name}.
+      trend: '{name} yeni bir akım başlattı.'
+      realm: Bütün diyar {name} hakkında konuşacak.
+      whoIsThat: Bu da kim? Vay, bizim {name} bu!
+      compliments: '{name} gün boyunca iltifat yağmuruna tutulacak.'
