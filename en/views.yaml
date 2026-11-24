@@ -741,6 +741,10 @@ singulars:
       handInAllText: "Hands in every job that's ready at this board at once. You see a dialog first of the items you're handing in."
       dismissedTitle: Dismissed jobs
       dismissedText: "Dismiss a job you don't want and it's hidden from the boards. You can bring them back from job board settings."
+      marksTitle: Item marks
+      markLocked: "Locked. A locked item is never handed in or withdrawn for a job."
+      markInUse: "In use by your current crafting, activity or food."
+      markFavorite: "Favourited. A job asks before handing it in."
       levelsTitle: Faction levels
       levelsText: "Some jobs need a higher level with the board's faction, but they also pay more. They're listed at the end of each board, grouped by the level they need. Boards you haven't visited stay locked until you go there."
       confirmTitle: Confirm
@@ -763,6 +767,7 @@ singulars:
       noItemsFound: No items found from your inventory that would fit this slot.
     phrases:
       claimBlueprint: Claim blueprint
+      recipeLearned: New recipe learned
       claimCosmeticDrop: Claim cosmetic
       treasury: Treasury
       longPressTip: <c>Tip:</c> Long pressing on an item stack selects all similar stacks.
@@ -809,6 +814,17 @@ singulars:
       showMaterials: Show materials
       showGear: Show gear
       showConsumables: Show consumables
+    blueprintLearnedLines:
+      newRecipe: "{name} learned a new recipe!"
+      studied: "{name} studied the blueprint from cover to cover."
+      clever: "Clever, {name}! A new recipe to try."
+      notes: "{name} scribbled down every last note."
+      onTheWay: Something new is on the way, {name}.
+      memorised: "{name} has the steps memorised."
+      bright: "A bright idea for {name}'s next craft!"
+      knowHow: "{name} picked up some fresh know-how."
+      makers: "Makers everywhere would envy {name} now."
+      tryIt: "{name} can't wait to try this one out!"
   gear:
     phrases:
       combatModifiers: Combat modifiers
@@ -1442,6 +1458,7 @@ singulars:
       accountDeleted: Your account is deleted. Thank you for walking with us.
       languageApplying: "Getting {language} ready..."
       languageFailed: Could not download the language. Check your connection and try again.
+      loadFailed: The character could not be loaded. Try again.
       languageDownloaded: On this device
       translatedPercent: "{percent}%"
       downloadSize: "{done} / {total}"
@@ -1472,6 +1489,8 @@ singulars:
         changeAtRenewal: Change at renewal
         completed: Thank you for supporting WalkScape!
         changesAtRenewal: Your new tier starts when the current one renews.
+        booked: At renewal
+        checking: Checking the purchase with the server…
         through:
           store: You support WalkScape through Google Play. Thank you! You can change your tier below.
           patreon: You support WalkScape through Patreon. Thank you!
@@ -1762,6 +1781,7 @@ singulars:
       reconnecting: Reconnecting to the server…
       offline: No connection to the server.
       turnOff: You can turn off the connection quality indicator in the settings.
+    latency: "{ms} ms"
     short:
       unknown: Checking
       good: Good
@@ -1949,6 +1969,7 @@ maps:
       "showDailyTips": Show daily tips
       "activityInformationOpen": Show more activity information
       "showConnectionIndicator": Show connection quality indicator
+      "haptics": Haptic feedback
       "toggleAgilityXp": Disable Agility XP gain from Travelling
     enumSettings:
       "language": Language
