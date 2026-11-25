@@ -780,7 +780,6 @@ singulars:
       requirementsNotMet: Requirements are not met.
       cantEquip: Can't equip.
       checkBank: Bank
-      slotDoesntExist: This item slot no longer exists.
       allItemsInUse: All of these items are currently in use, and cannot be dropped.
       cantBeDropped: Item cannot be dropped.
       oneOrMoreCantBeDropped: One or more items cannot be dropped.
@@ -1460,9 +1459,17 @@ singulars:
       languageFailed: Could not download the language. Check your connection and try again.
       loadFailed: The character could not be loaded. Try again.
       languageDownloaded: On this device
+      languageDownloadsWhenPicked: Downloads when picked
       translatedPercent: "{percent}%"
       downloadSize: "{done} / {total}"
       downloadFiles: "{done} of {total} files"
+      purchaseFailures:
+        unavailable: Google Play purchases aren't available on this device or account. Check you're signed in to Google Play and installed WalkScape from Google Play.
+        notResponding: Google Play isn't responding right now. Try again in a moment.
+        network: Couldn't reach Google Play. Check your connection and try again.
+        outdated: This version of Google Play doesn't support subscriptions. Update Google Play and try again.
+        tierUnavailable: This tier isn't available for your account or country right now.
+        generic: Something went wrong with this purchase. Nothing was charged. Try again later, or contact us if it keeps happening.
       access:
         perMonth: a month
         perYear: a year
@@ -1475,6 +1482,9 @@ singulars:
         waitlist:
           title: Join the waitlist
           body: We e-mail you when you are in.
+          joined: You have joined the waitlist. You'll receive an email once you've been accepted to the Closed Beta.
+          joinedTitle: You've joined the waitlist
+          joinedBody: You'll receive an email once you've been accepted to the Closed Beta.
         supporterBenefits: Supporter benefits
         benefits:
           instantAccess: Play right away
@@ -1485,8 +1495,8 @@ singulars:
         body: Supporting keeps WalkScape walking. Pick a tier, paid monthly or yearly.
         owned: "You support WalkScape as {tier}. Thank you!"
         current: Current
-        changeNow: Change now
-        changeAtRenewal: Change at renewal
+        changeNow: Changes now
+        changeAtRenewal: Changes at renewal
         completed: Thank you for supporting WalkScape!
         changesAtRenewal: Your new tier starts when the current one renews.
         booked: At renewal
@@ -1498,6 +1508,12 @@ singulars:
           elsewhere: You support WalkScape. Thank you!
       stepSource:
         connected: Connected
+        phoneCounter: Phone step counter
+        phoneCounterInfo: The steps your phone counts. Every source needs it.
+        appInfo: Reads the steps your watch syncs to it.
+        devices: Devices
+        devicesLook: Update available sources to see the devices it has steps from.
+        devicesNone: No device found. Check your watch's app syncs steps to Health Connect, then update again.
       deletionConsequences:
         characters: Every character and its progress
         purchases: Your supporter status. Deleting the account does not cancel a Google Play subscription, so cancel it in Google Play first.
