@@ -170,7 +170,7 @@ singulars:
         свайпните влево, чтобы увидеть всё, доступное в данной локации.
       consumablesUsage: Вы можете выбрать <c>еду</c> и <c>зелье</c>, 
         используемые во время активности.
-      savedSteps: Когда активность не запущена, шаги не пропадают — они 
+      savedSteps: Когда активность не запущена, шаги не пропадают — они 
         сохраняются в запасе. Во время ходьбы без задачи этот запас пополняется.
         Но если вы снова запустите активность, каждый пройденный вами шаг будет 
         списывать дополнительно один шаг из накопленного запаса. Получается, что
@@ -210,6 +210,8 @@ singulars:
       cannotUseMore: Вы не можете использовать эту способность. Возможно, вы уже
         находитесь под её действием, и повторное применение превысит 
         максимальную длительность.
+      holdToUseAll: Зажмите, чтобы использовать
+      useAllCompleted: Ваши навыки выросли.
   jobs:
     phrases:
       acceptedJobs: Задания, принятые в данный момент <chip><c 
@@ -309,6 +311,8 @@ singulars:
       title: Как задания работают
     settings:
       title: Настройки для досок заданий
+    protection:
+      reasonQuality: '{quality} или лучше'
   character:
     phrases:
       skills: Навыки
@@ -715,7 +719,7 @@ singulars:
       deleteTab: Удалить вкладку
       options: Параметры
       picker:
-        preview: Предпросмотр
+        preview: Просмотр
         confirm: Подтвердить
         valueNone: Нет
         rowName: Название
@@ -1541,6 +1545,7 @@ singulars:
       sinceDay: за сутки
       sinceWeek: за неделю
       sinceMonth: за месяц
+      thisWeek: Эта неделя
   ironfoot:
     phrases:
       relinquishWarning: Ваш персонаж в настоящее время является 
@@ -1581,10 +1586,12 @@ singulars:
       buttonCount: Титулы <c i=0>{owned}</c> <c i=1>/ {total}</c>
       apply: Применить
       requirements: Требования
-      factionTier: '{tier} ур.для <c>{faction}</c>'
+      factionTier: '{tier} ур. для <c>{faction}</c>'
       rewardFromAchievement: Награда за {achievement}
+      recentlyUnlocked: Недавно полученные
+      preview: Просмотр
     sourceLines:
-      achievement: Награда за достижение <c>{name}</c> .
+      achievement: Награда за достижение <c>{name}</c>.
       factionReputation: Награда за {tier} ур. во фракции <c>{faction}</c>.
       defaultUnlock: Выдается каждому новому персонажу.
       achievementPoints: Награда за очки достижений.
