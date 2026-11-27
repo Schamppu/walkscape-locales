@@ -226,6 +226,11 @@ singulars:
     phrases:
       equipAndStart: Equip & start
       equipAndTravel: Equip & travel
+      advanced: Advanced
+      optionsOn: "{count} more options on"
+      itemsChange: "{count} items change"
+      bankNeeded: What this needs is in the bank, so a bank visit comes first.
+      gearForTheWay: The way there asks for other gear. It is put on for the walk and swapped back when you arrive.
       noChangesWalk: Your gear already walks this way best. Nothing changes.
       travelHeader: Travel there, in the gear for the way
       walk: The walk
@@ -263,6 +268,24 @@ singulars:
       noStatsHere: Gives nothing here.
       craftStack: +1 stack
       emptySlot: Empty
+    helpPage:
+      title: How Equip & start works
+      intro: Equip & start picks the best gear you own for an activity or a craft, puts it on and starts. It takes what it needs out of a bank on the way, and walks there in gear that opens the way.
+      stepsTitle: What it does
+      step1: Pick an activity or a recipe, and press Equip & start under its Start.
+      step2: It picks gear from what you wear, carry and keep in the bank, for the focus you chose.
+      step3: When something is only in the bank, it walks to the nearest bank first and takes it out.
+      step4: It walks there, puts the gear on and starts. You see each step in the queue.
+      focusTitle: The focus
+      focusText: Balanced suits most activities. The others push one thing as far as your gear allows, like faster actions, more loot or more XP. The summary shows what the new gear changes.
+      bankTitle: The bank
+      bankText: Visit a bank first takes out the gear and items the plan needs. You can also leave your inventory there to make room. At a bank, items come straight from it.
+      wayTitle: Gear for the way
+      wayText: Some ways ask for gear, like light sources in the dark or diving gear under water. Equip & start puts it on for the walk, from your inventory or a bank, and swaps back to the best gear when you arrive. Turn on Gear for a faster walk to also wear what cuts the walk's steps.
+      travelTitle: Travel
+      travelText: Travel on the world map opens the same sheet for the walk alone. Press Travel to go as you are, or let it put on the gear the way asks for.
+      modesTitle: Simple and Advanced
+      modesText: Simple shows the focus, one summary line and the button. Advanced shows every option, like when the activity ends, the bank and extra rules for picking gear. Your choice is remembered.
     help:
       focus: What your gear is picked for. Balanced suits most activities, and the others push one thing as far as your gear allows.
       additionalOptions: Extra rules for picking gear. Most players never need them.
@@ -1880,6 +1903,7 @@ singulars:
       whileYouWereAway: While you were away...
       stepsWhileYouWereAway: Steps while you were away
       switchedToGearSet: Switched to gear set <c>{name}</c>
+      autoGearSwitched: Equip & start changed <c>{count}</c> items for <object id="{target}"/>
       switchedToImportedGearSet: Switched to imported gear set
       gearSetDoesNotExist: The gear set no longer exists
       consumablesUsed: Consumable used
