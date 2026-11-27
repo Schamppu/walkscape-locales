@@ -109,7 +109,8 @@ singulars:
       cantTravelThere: "Can't travel there from here"
       cantStartActivity: "Cannot start activity"
       requirementsNotMet: "Requirements not met"
-      requirementsNotMetWarning: "You don't meet all of this activity's requirements, so it won't start until you do."
+      requirementsNotMetTravel: "You'll travel there, but the activity won't start until you meet its requirements."
+      requirementsNotMetQueue: "It goes into your queue, but won't start until you meet its requirements."
       inputsNotMet: "Input requirements not met"
       noActivitiesInLocation: 'There are no activities in <object id="{location}"/>.'
       locationIsUnknown: "Location is unknown. Once you have explored this location, you will be able to see activities here."
@@ -224,6 +225,8 @@ singulars:
       equipAndStart: Equip & start
       headerAt: Equip & start at <object id="{location}"/>
       goal: Goal
+      focus: Focus
+      additionalOptions: Additional options
       bank: Bank
       changes: What changes
       summary: Summary
@@ -235,7 +238,7 @@ singulars:
       retry: Try again
       visitBank: Visit a bank first
       bankRequired: Some of the items you need are in the bank.
-      bankRoute: 'Nearest bank: <object id="{location}"/>, <c>+{steps}</c> steps'
+      bankRoute: 'Nearest bank: <object id="{location}"/> <steps n="{steps}" sign="+"/>'
       bankOnTheWay: 'Nearest bank: <object id="{location}"/>, on your way'
       atBank: You're at a bank, so items come straight from it.
       noBank: No bank you can reach from here.
@@ -252,6 +255,49 @@ singulars:
       noStatsHere: Gives nothing here.
       craftStack: +1 stack
       emptySlot: Empty
+    help:
+      focus: What your gear is picked for. Balanced suits most activities, and the others push one thing as far as your gear allows.
+      additionalOptions: Extra rules for picking gear. Most players never need them.
+      visitBank: Stops at a bank on the way to take out the gear and items the plan needs.
+      depositInventory: Leaves your bag's items at the bank to make room. What the activity uses, locked items, and gear and tools stay with you.
+      depositGear: Gear and tools go to the bank too, including what you take off. Any the activity's requirements could use stay with you.
+      summary: How the new gear changes the activity. Its stats, steps per action, XP per step, and the items that change.
+      goal: When the activity ends, and a consumable to use for it.
+      plan: Every step Equip & Start queues, in order, with the steps each takes. Tap one for details.
+      craftAmount: How many to craft. Materials your bag lacks are taken out of the bank.
+    goal:
+      ends:
+        bagFull: Until your bag is full
+        actions: Complete actions
+        steps: Spend steps
+        consumables: Until consumables run out
+      short:
+        bagFull: Until full
+        actions: Actions
+        steps: Steps
+        consumables: Until used up
+      consumable:
+        none: No consumable
+        title: Consumable
+        auto: Best for your focus
+        autoDesc: Picked for your focus, as many as the run takes
+        autoNone: None of yours helps here
+        amount: How many
+      actionsAbout: "~{actions} actions"
+      fillsFirst: "Your bag fills after about {actions} actions. The activity keeps going, as Always stop when inventory is full is off."
+      fullFirst: "Your bag fills after about {actions} actions, which ends the activity first."
+    niches:
+      keepBagSpace:
+        name: Keep bag space
+        desc: Never a smaller bag than now, and a bigger one when nothing else tells gear apart.
+      fewerSwaps:
+        name: Fewer swaps
+        desc: Keeps what you wear unless a change helps by more than 5%.
+      pickConsumable:
+        name: Pick a consumable
+        desc: Uses the consumable that helps your focus most, as many as the run takes. Tap the row under it to choose one yourself.
+      unmet:
+        keepBagSpace: No gear you have keeps your bag this big here, so this plan doesn't.
     plan:
       title: Plan
       route: Route
@@ -264,6 +310,7 @@ singulars:
       routeBank: The bank
       routeEnd: Where it's done
       visit: Bank visit
+      visitRow: Visit a bank
       bankAt: Bank at <object id="{location}"/>
       intoBank: Into the bank
       outOfBank: Out of the bank
@@ -271,10 +318,15 @@ singulars:
       bagAfter: Your bag after
       estimate: Estimate
       stepsRange: "{low} to {high}, as double actions fall"
+      stepsAverage: steps on average
+      luck: From a lucky run to an unlucky one, as double actions fall
+      stops: Stops on the way
       endless: Nothing this drops fills your bag, so it runs until you stop it.
       ends:
         crafts: Crafts
         actions: Actions
+        steps: Actions in those steps
+        consumables: Actions until it runs out
         bagFull: Actions until your bag is full
       xpAtLeast: "{skill} XP, at least"
       level: "{skill} level"
@@ -471,6 +523,40 @@ singulars:
 
 
         <bp /> Only steps that are reported by Samsung Health are recorded in the game.
+  rules:
+    title: Game rules
+    intro: WalkScape is for walkers. Please read the rules and accept them to play.
+    changed: The game rules have changed. Please read them and accept them again.
+    accept: I accept
+    scrollToAccept: Read to the end
+    reportOnDiscord: Report on Discord
+    items:
+      realSteps:
+        title: Real steps only
+        text: In WalkScape, steps are generated by walking with your legs. We strongly oppose any non-walking methods of generating steps and discourage promoting them in our community (Reddit, Portal, Discord). The only exceptions are situations where the leg is naturally moving in ways that count as steps (such as cycling), and only as long as the step rate is low enough to not be abusable.
+      oneDevice:
+        title: 1 device = 1 account = 1 person
+        text: We expect one player to play on one account on one device. Do not share your device or account with anyone else. Use of emulators or playing on multiple devices at the same time is not allowed. Do not have multiple instances of the game running on the same device.
+      reportExploits:
+        title: Report exploits and misbehaviour
+        text: Do not share or encourage cheating or use of exploits with other players. If you find serious bugs or exploits in the game, report them to the team through official reporting channels or by pinging a team member directly.
+      officialOnly:
+        title: Official distributions only
+        text: Only play versions distributed through official channels. Do not try to create your own bundles, builds or distributions of the game, or download or share unofficial builds distributed by someone else.
+      playNice:
+        title: Play nice :)
+        text: WalkScape is a social game, played in a virtual world, but with real people. We expect all Walkers to treat each other with respect, whether it be in the game, on our social media or in real life. All forms of harassment and discrimination are absolutely prohibited.
+  downloadAsk:
+    title: Download update?
+    languageTitle: Download language?
+    content: The game needs to download <c>{size}</c> of new game content.
+    language: This language needs to be downloaded before it can be used.
+    dontAskAgain: Don't ask again
+    changeInSettings: You can change this in the settings.
+    notNow: Not now
+    download: Download
+    neededTitle: Update needed
+    neededText: This update (<c>{size}</c>) is needed to play. Download it to continue.
   rewards:
     phrases:
       alreadyClaimed: Already claimed
@@ -630,6 +716,7 @@ singulars:
       holdToUseAll: Hold to use all
       useAll: Use all
       useAllInfo: Uses every <object id="{keyword}"/> you carry at once.
+      useAllCompleted: You feel more skilled.
       alreadyHere: You are already in <object id="{location}"/>. Ability cannot be used to travel here.
       cannotUseMore: You cannot use this ability. You might be already under the effect of this ability and would exceed the maximum length.
       lastsFor: "Effect lasts for:"
@@ -901,6 +988,10 @@ singulars:
       handInAllText: "Hands in every job that's ready at this board at once. You see a dialog first of the items you're handing in."
       dismissedTitle: Dismissed jobs
       dismissedText: "Dismiss a job you don't want and it's hidden from the boards. You can bring them back from job board settings."
+      marksTitle: Item marks
+      markLocked: "Locked. A locked item is never handed in or withdrawn for a job."
+      markInUse: "In use by your current crafting, activity or food."
+      markFavorite: "Favourited. A job asks before handing it in."
       levelsTitle: Faction levels
       levelsText: "Some jobs need a higher level with the board's faction, but they also pay more. They're listed at the end of each board, grouped by the level they need. Boards you haven't visited stay locked until you go there."
       confirmTitle: Confirm
@@ -923,6 +1014,7 @@ singulars:
       noItemsFound: No items found from your inventory that would fit this slot.
     phrases:
       claimBlueprint: Claim blueprint
+      recipeLearned: New recipe learned
       claimCosmeticDrop: Claim cosmetic
       treasury: Treasury
       longPressTip: <c>Tip:</c> Long pressing on an item stack selects all similar stacks.
@@ -935,7 +1027,6 @@ singulars:
       requirementsNotMet: Requirements are not met.
       cantEquip: Can't equip.
       checkBank: Bank
-      slotDoesntExist: This item slot no longer exists.
       allItemsInUse: All of these items are currently in use, and cannot be dropped.
       cantBeDropped: Item cannot be dropped.
       oneOrMoreCantBeDropped: One or more items cannot be dropped.
@@ -969,6 +1060,17 @@ singulars:
       showMaterials: Show materials
       showGear: Show gear
       showConsumables: Show consumables
+    blueprintLearnedLines:
+      newRecipe: "{name} learned a new recipe!"
+      studied: "{name} studied the blueprint from cover to cover."
+      clever: "Clever, {name}! A new recipe to try."
+      notes: "{name} scribbled down every last note."
+      onTheWay: Something new is on the way, {name}.
+      memorised: "{name} has the steps memorised."
+      bright: "A bright idea for {name}'s next craft!"
+      knowHow: "{name} picked up some fresh know-how."
+      makers: "Makers everywhere would envy {name} now."
+      tryIt: "{name} can't wait to try this one out!"
   gear:
     phrases:
       combatModifiers: Combat modifiers
@@ -1361,6 +1463,8 @@ singulars:
       gameVersion: Game version {version}
       lastCloudSave: "Last Server Save at {lastSave}"
       updateAvailableSources: Update available sources
+      manageSupport: Manage your support
+      exported: Character data copied to the clipboard.
   gearSets:
     phrases:
       gearSets: Gear sets
@@ -1539,6 +1643,128 @@ singulars:
       totalExperience: Total experience
       achievementPoints: Achievement points
   mainMenu:
+    newMenu:
+      loadingCharacter: "Loading {name}..."
+      loginFailed: Could not log in. Check your e-mail and password.
+      charactersNotRefreshed: Could not reach the server, so your characters may be out of date.
+      tooManyRequests: Too many requests. Try again in a few minutes.
+      play: Play
+      steps: "{steps} steps"
+      deleteCharacter: "Delete {name}"
+      unsupported: This version of the game cannot show this screen. Update the game to go on.
+      noAccount: No account yet?
+      forgotPassword: Forgot your password?
+      registerTitle: Create your WalkScape account
+      emailOnly: E-mail
+      username: Username
+      passwordRule: "At least {count} characters"
+      acceptTerms: I accept the terms of service and the privacy policy
+      readTerms: Read them
+      createAccount: Create account
+      haveAccount: Already have an account?
+      emailTaken: This e-mail already has an account. Log in, or reset your password.
+      usernameTaken: This username is taken. Try another one.
+      weakPassword: This password is too easy to guess. Try a longer one.
+      emailInvalid: Check your e-mail address.
+      verifyTitle: Check your e-mail
+      verifyBody: "We sent a link to <hl>{email}</hl>. Open it to verify your account, then come back here."
+      verified: I have opened it
+      resend: Send it again
+      resent: Sent again. Look in your spam folder too.
+      notVerified: Your e-mail is not verified yet. Open the link we sent you, then try again.
+      verifiedNoAccess: Your account is ready, but it has no closed beta access yet.
+      resendNeedsEmail: Log in with your e-mail address to get a new link.
+      resetTitle: Reset your password
+      resetBody: Write the e-mail of your account, and we send you a link to set a new password.
+      sendLink: Send the link
+      resetSent: "We sent a link to {email}. It works for an hour."
+      backToLogIn: Back to log in
+      resetFailed: Could not send the link. You can also reset your password at portal.walkscape.app.
+      tryAgain: Try again
+      accessNoneTitle: You are not in the closed beta yet
+      accessNoneBody: Join the waitlist, or support WalkScape to play right away.
+      accessWaitlistedTitle: You are on the waitlist
+      accessInvitedTitle: You are in!
+      accessInvitedBody: Your closed beta access is ready.
+      accessExpiredTitle: Your closed beta access has ended
+      accessExpiredBody: Support WalkScape to keep playing, or join the waitlist again.
+      applyForBeta: Join the waitlist
+      redeemCode: Redeem a code
+      purchasePending: Waiting for the store...
+      purchaseCompleted: Thank you! Your access is ready.
+      purchaseCancelled: The purchase was cancelled. Nothing was charged.
+      purchaseFailed: The purchase did not go through.
+      alreadySupporter: You support WalkScape already. Restore your purchases to play.
+      restorePurchases: Restore purchases
+      managePurchases: Manage subscriptions
+      deleteAccount: Delete account
+      deleteAccountTitle: Delete your account?
+      deleteAccountBody: "This deletes your account and everything in it, on every device:"
+      deleteAccountType: "Type {word} to delete your account."
+      accountDeleted: Your account is deleted. Thank you for walking with us.
+      languageApplying: "Getting {language} ready..."
+      languageFailed: Could not download the language. Check your connection and try again.
+      loadFailed: The character could not be loaded. Try again.
+      languageDownloaded: On this device
+      languageDownloadsWhenPicked: Downloads when picked
+      translatedPercent: "{percent}%"
+      downloadSize: "{done} / {total}"
+      downloadFiles: "{done} of {total} files"
+      purchaseFailures:
+        unavailable: Google Play purchases aren't available on this device or account. Check you're signed in to Google Play and installed WalkScape from Google Play.
+        notResponding: Google Play isn't responding right now. Try again in a moment.
+        network: Couldn't reach Google Play. Check your connection and try again.
+        outdated: This version of Google Play doesn't support subscriptions. Update Google Play and try again.
+        tierUnavailable: This tier isn't available for your account or country right now.
+        generic: Something went wrong with this purchase. Nothing was charged. Try again later, or contact us if it keeps happening.
+      access:
+        perMonth: a month
+        perYear: a year
+        monthly: Monthly
+        yearly: Yearly
+        renews: Renews until you cancel it in Google Play.
+        storeUnreachable: Google Play cannot be reached right now, so the supporter tiers are not shown. Try again in a moment.
+        storeEmpty: The supporter tiers are not on sale in Google Play yet.
+        ownedByOtherAccount: This Google Play subscription belongs to another WalkScape account. Log in to that account to use it.
+        waitlist:
+          title: Join the waitlist
+          body: We e-mail you when you are in.
+          joined: You have joined the waitlist. You'll receive an email once you've been accepted to the Closed Beta.
+          joinedTitle: You've joined the waitlist
+          joinedBody: You'll receive an email once you've been accepted to the Closed Beta.
+        supporterBenefits: Supporter benefits
+        benefits:
+          instantAccess: Play right away
+          title: Your tier's title, and every title below it
+          discord: A supporters-only Discord channel
+          studio: Back an independent studio from Finland
+      support:
+        body: Supporting keeps WalkScape walking. Pick a tier, paid monthly or yearly.
+        owned: "You support WalkScape as {tier}. Thank you!"
+        current: Current
+        changeNow: Changes now
+        changeAtRenewal: Changes at renewal
+        completed: Thank you for supporting WalkScape!
+        changesAtRenewal: Your new tier starts when the current one renews.
+        booked: At renewal
+        checking: Checking the purchase with the server…
+        through:
+          store: You support WalkScape through Google Play. Thank you! You can change your tier below.
+          patreon: You support WalkScape through Patreon. Thank you!
+          googlePlay: You support WalkScape through Google Play. Thank you!
+          buyMeACoffee: You support WalkScape through Buy Me a Coffee. Thank you!
+      stepSource:
+        connected: Connected
+        phoneCounter: Phone step counter
+        phoneCounterInfo: The steps your phone counts. Every source needs it.
+        appInfo: Reads the steps your watch syncs to it.
+        devices: Devices
+        devicesLook: Update available sources to see the devices it has steps from.
+        devicesNone: No device found. Check your watch's app syncs steps to Health Connect, then update again.
+      deletionConsequences:
+        characters: Every character and its progress
+        purchases: Your supporter status. Deleting the account does not cancel a Google Play subscription, so cancel it in Google Play first.
+        name: Your account name, which is freed for others
     phrases:
       authenticating: Authenticating...
       chooseCharacter: Choose your character, or create a new one.
@@ -1818,6 +2044,14 @@ singulars:
       reconnecting: Reconnecting to the server…
       offline: No connection to the server.
       turnOff: You can turn off the connection quality indicator in the settings.
+    latency: "{ms} ms"
+    short:
+      unknown: Checking
+      good: Good
+      degraded: Slow
+      poor: Very slow
+      reconnecting: Reconnecting
+      offline: Offline
 plurals:
   inventory:
     info:
@@ -1998,10 +2232,15 @@ maps:
       "showDailyTips": Show daily tips
       "activityInformationOpen": Show more activity information
       "showConnectionIndicator": Show connection quality indicator
+      "haptics": Haptic feedback
+      "askBeforeDownloads": Ask before downloading updates
       "toggleAgilityXp": Disable Agility XP gain from Travelling
       "autoGearVisitBank": Equip & start visits a bank first
       "autoGearDepositInventory": Equip & start deposits your inventory
       "autoGearDepositGear": Equip & start deposits gear and tools too
+      "autoGearKeepBagSpace": Equip & start keeps your bag's space
+      "autoGearFewerSwaps": Equip & start swaps less
+      "autoGearPickConsumable": Equip & start picks a consumable
     enumSettings:
       "language": Language
       "leaderboardFilter": Show
