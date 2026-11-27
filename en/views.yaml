@@ -175,6 +175,8 @@ singulars:
       unknownError: Unknown error.
       bankVisit: Bank visit at <object id="{location}"/>, then wear the best gear
       bankVisitDeposit: Bank visit at <object id="{location}"/>, deposit your inventory, then wear the best gear
+      gearOnArrival: On arrival, change from travel gear to the best gear
+      gearOnTheWay: Change travel gear for the rest of the way
       depositOnTheWay: Deposit unlocked items at the first bank on the way
       depositOnTheWayGear: Deposit unlocked items, spare gear and tools too, at the first bank on the way
       depositAt: Deposit unlocked items at <object id="{location}"/>
@@ -223,6 +225,12 @@ singulars:
   autoGear:
     phrases:
       equipAndStart: Equip & start
+      equipAndTravel: Equip & travel
+      noChangesWalk: Your gear already walks this way best. Nothing changes.
+      travelHeader: Travel there, in the gear for the way
+      walk: The walk
+      wayNeedsGear: The way asks for gear you aren't wearing. It is put on for the walk.
+      travelBagShort: Your inventory has no room for the gear taken off for the walk. It stays behind, and your gear is picked again when you arrive.
       headerAt: Equip & start at <object id="{location}"/>
       goal: Goal
       focus: Focus
@@ -296,6 +304,9 @@ singulars:
       pickConsumable:
         name: Pick a consumable
         desc: Uses the consumable that helps your focus most, as many as the run takes. Tap the row under it to choose one yourself.
+      fasterWalk:
+        name: Gear for a faster walk
+        desc: Also wears gear that cuts the walk's steps, not only what the way asks for. More to carry, swapped back when you arrive. Food that counts as diving gear is taken along when you have plenty.
       unmet:
         keepBagSpace: No gear you have keeps your bag this big here, so this plan doesn't.
     plan:
@@ -306,9 +317,13 @@ singulars:
       through: "Through {count} stops"
       inGearNow: In the gear you wear now
       inNewGear: In your new gear
+      travelGear: Worn for this walk
+      swapHere: Travel gear changes here
+      arrivalSwap: your best gear goes on
       routeStart: You start here
       routeBank: The bank
       routeEnd: Where it's done
+      routeEndWalk: Where you're going
       visit: Bank visit
       visitRow: Visit a bank
       bankAt: Bank at <object id="{location}"/>
@@ -2242,6 +2257,8 @@ maps:
       "autoGearDepositGear": Equip & start deposits gear and tools too
       "autoGearKeepBagSpace": Equip & start keeps your bag's space
       "autoGearFewerSwaps": Equip & start swaps less
+      "autoGearFasterWalk": Equip & start wears gear for a faster walk
+      "autoGearAdvanced": Equip & start shows every option
       "autoGearPickConsumable": Equip & start picks a consumable
     enumSettings:
       "language": Language
